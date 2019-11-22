@@ -1,5 +1,5 @@
 ---
-title: Depurar XAML en Blend | Microsoft Docs
+title: Debug XAML in Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434099"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298323"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
 - Un elemento XAML está en una ubicación no permitida.  
   
-  Para obtener más información sobre la sintaxis común de XAML, consulte [Guía de sintaxis XAML básica](http://go.microsoft.com/fwlink/?LinkId=329942).  
+  Para obtener más información sobre la sintaxis común de XAML, consulte [Guía de sintaxis XAML básica](https://go.microsoft.com/fwlink/?LinkId=329942).  
   
   También puedes identificar y resolver errores de sintaxis simples del código subyacente, errores de compilación y errores en tiempo de ejecución en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Pero puede que te resulte más fácil identificar y resolver los errores del código subyacente en Visual Studio.  
   
@@ -55,11 +55,11 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
     En el cuadro de diálogo **Nuevo proyecto**, aparece a la izquierda una lista de tipos de proyecto. Cuando hagas clic en un tipo de proyecto, las plantillas de proyecto asociadas a ese tipo aparecerán a la derecha.  
   
-2. En la lista de tipos de proyecto, haga clic en **XAML (Windows Store)**.  
+2. In the list of project types, click **XAML (Windows Store)** .  
   
-3. En la lista de plantillas de proyecto, haga clic en **aplicación vacía**.  
+3. In the list of project templates, click **Blank App**.  
   
-4. En el **nombre** cuadro de texto, escriba `DebuggingSample`.  
+4. In the **Name** text box, type `DebuggingSample`.  
   
 5. En el cuadro de texto **Ubicación**, compruebe la ubicación del proyecto.  
   
@@ -106,24 +106,24 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
 ##### <a name="to-resolve-the-xaml-errors"></a>Para resolver los errores de XAML  
   
-1. Haz doble clic en el primer error de la lista. La descripción es "el valor ' <' no es válido en un atributo." Al hacer doble clic en el error, el puntero busca la ubicación correspondiente en el código. El elemento `<` que aparece delante de `Button` es válido, y no es un atributo como se indica en el mensaje de error. Si examinas la línea de código anterior, observarás que faltan las comillas de cierre del atributo `Top`. Escribe las comillas de cierre. Observe que la lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
+1. Haz doble clic en el primer error de la lista. The description is "The value '<' is not valid in an attribute." Al hacer doble clic en el error, el puntero busca la ubicación correspondiente en el código. El elemento `<` que aparece delante de `Button` es válido, y no es un atributo como se indica en el mensaje de error. Si examinas la línea de código anterior, observarás que faltan las comillas de cierre del atributo `Top`. Escribe las comillas de cierre. Observe que la lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
   
-2. Haga doble clic en la descripción "'0' no es válido al principio de un nombre." `Margin="0,149,0,0"` parece ser correcto. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
+2. Double-click the description "'0' is not valid at the start of a name." `Margin="0,149,0,0"` appears to be well formed. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
   
 3. Haz doble clic en el otro error: "La etiqueta XML de cierre 'Button' no tiene una etiqueta de apertura correspondiente". El puntero se coloca en la etiqueta **Cuadrícula** de cierre (`</Grid>`), lo que sugiere que el error está dentro del objeto `Grid`. Observa que al segundo objeto `Button` le falta la etiqueta de cierre. Cuando agregue la `/` de cierre, la lista del panel **Resultados** se actualizará. Ahora que se han resuelto estos errores iniciales, se han identificado dos errores más.  
   
 4. Haz doble clic en "No se reconoce o no se puede tener acceso al miembro 'content'". La c `c` de `content` debería estar en mayúsculas. Sustituye la "c" minúscula por una "c" mayúscula.  
   
-5. Haga doble clic en "la propiedad 'Mame' no existe en el '<http://schemas.microsoft.com/winfx/2006/xaml>' espacio de nombres." La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
+5. Double-click "The property 'Mame' does not exist in the '<https://schemas.microsoft.com/winfx/2006/xaml>' namespace." La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
   
-    ![Depurar XAML en Blend para Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![Debugging XAML in Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     Presiona Ctrl+Mayús+B para compilar el proyecto y confirmar que no queda ningún error.  
   
 ## <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio  
  Puede abrir proyectos de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio para depurar el código de su aplicación más fácilmente. Para abrir un proyecto de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio, haga clic con el botón derecho en el proyecto en el panel **Proyectos** y, después, en **Editar en Visual Studio**. Cuando termine la sesión de depuración en Visual Studio, presione Ctrl+Mayús+S para guardar todos los cambios y después vuelva a [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Se te preguntará si deseas recargar el proyecto. Haga clic en **Sí a todo** para continuar trabajando en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Para obtener más información sobre cómo depurar la aplicación, consulte [Debug Windows Store apps en Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).  
+ For more information about debugging your app, see [Debug Windows Store apps in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
   
 ## <a name="getting-help"></a>Obtener ayuda  
- Si necesita más ayuda para depurar su [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, puede buscar el [foros de la Comunidad de Windows Store app](http://go.microsoft.com/fwlink/?LinkId=280308) entradas relacionadas con su problema o publicar una pregunta.
+ If you need more help debugging your [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, you can search the [Windows Store app community forums](https://go.microsoft.com/fwlink/?LinkId=280308) for posts related your issue or post a question.

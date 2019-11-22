@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667143"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296929"
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Si nunca ha utilizado Visual Studio, descubra los aspectos básicos con nuestros
 Para obtener información sobre las nuevas características de Visual Studio 2015, vea [Novedades de Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Instalación de Visual Studio
- Puede averiguar qué edición de Visual Studio es adecuada para usted en [Ediciones de Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Puede averiguar qué edición de Visual Studio es adecuada para usted en [Ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/).
 
- Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si necesita más información sobre el proceso de instalación, vea [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si necesita más información sobre el proceso de instalación, vea [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Conceptos básicos del IDE
  La siguiente imagen muestra el IDE de Visual Studio con un proyecto abierto, la ventana Explorador de soluciones para desplazarse por los archivos de proyecto y la ventana de Team Explorer para navegar por el código fuente y controlar los elementos de trabajo. A continuación se explican con más detalle las características de la barra de título mencionadas.

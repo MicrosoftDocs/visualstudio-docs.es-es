@@ -1,5 +1,5 @@
 ---
-title: Enlazar métodos abreviados de teclado a elementos de menú | Microsoft Docs
+title: Binding Keyboard Shortcuts to Menu Items | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405640"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295621"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Enlace de métodos abreviados de teclado a elementos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para enlazar un método abreviado de teclado a un comando de menú personalizado, simplemente agregue una entrada para el archivo .vsct para el paquete. En este tema se explica cómo asignar un método abreviado de teclado a un botón personalizado, el elemento de menú o el comando de barra de herramientas y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlos a un editor personalizado.  
+To bind a keyboard shortcut to a custom menu command, just add an entry to the .vsct file for the package. This topic explains how to map a keyboard shortcut to a custom button, menu item, or toolbar command, and how to apply the keyboard mapping in the default editor or limit it to a custom editor.  
   
- Para asignar métodos abreviados de teclado a elementos de menú de Visual Studio existentes, consulte [identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ To assign keyboard shortcuts to existing Visual Studio menu items, see [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## <a name="choosing-a-key-combination"></a>Elegir una combinación de teclas  
- Ya se usan muchos métodos abreviados de teclado en Visual Studio. No debe asignar el mismo método abreviado a más de un comando como enlaces duplicados son difíciles de detectar y también pueden producir resultados imprevisibles. Por lo tanto, es una buena idea comprobar la disponibilidad de un acceso directo antes de asignarlo.  
+## <a name="choosing-a-key-combination"></a>Choosing a Key Combination  
+ Many keyboard shortcuts are already used in Visual Studio. You should not assign the same shortcut to more than one command because duplicate bindings are hard to detect and may also cause unpredictable results. Therefore, it is a good idea to verify the availability of a shortcut before you assign it.  
   
-#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Para comprobar la disponibilidad de un método abreviado de teclado  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>To verify the availability of a keyboard shortcut  
   
-1. En el **herramientas / opciones / entorno** ventana, seleccione **teclado**.  
+1. In the **Tools / Options / Environment** window, select **Keyboard**.  
   
-2. Asegúrese de que **usar nuevo método abreviado en** está establecido en **Global**.  
+2. Make sure that **Use new shortcut in** is set to **Global**.  
   
-3. En el **presione las teclas de método abreviado** , escriba el método abreviado de teclado que desea usar.  
+3. In the **Press shortcut keys** box, type the keyboard shortcut that you want to use.  
   
-    Si el acceso directo ya se usa en Visual Studio, el **método abreviado lo utiliza actualmente** cuadro mostrará el comando que llama el acceso directo a actualmente.  
+    If the shortcut is already used in Visual Studio, the **Shortcut currently used by** box will show the command that the shortcut currently calls.  
   
-4. Probar diferentes combinaciones de claves hasta que encuentre uno que no está asignado.  
+4. Try different combinations of keys until you find one that is not mapped.  
   
    > [!NOTE]
-   > Métodos abreviados de teclado que use ALT pueden abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado lo utiliza actualmente** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye ALT. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
+   > Keyboard shortcuts that use ALT may open a menu and not directly execute a command. Therefore, the **Shortcut currently used by** box may be blank when you type a shortcut that includes ALT. You can verify that the shortcut does not open a menu by closing the **Options** dialog box and then pressing the keys.  
   
-   El siguiente procedimiento se supone que tiene un VSPackage existente con un comando de menú. Si necesita ayuda sobre cómo hacerlo, eche un vistazo a [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   The following procedure assumes that you have an existing VSPackage with a menu command. If you need help doing that, take a look at [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Para asignar un método abreviado de teclado a un comando  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>To assign a keyboard shortcut to a command  
   
-1. Abra el archivo .vsct para el paquete.  
+1. Open the .vsct file for your package.  
   
-2. Crear vacío `<KeyBindings>` sección después de la `<Commands>` si aún no está presente.  
+2. Create an empty `<KeyBindings>` section after the `<Commands>` if it is not already present.  
   
    > [!WARNING]
-   > Para obtener más información acerca de los enlaces de teclado, consulte [Keybinding](../extensibility/keybinding-element.md).  
+   > For more information about key bindings, see [Keybinding](../extensibility/keybinding-element.md).  
   
-    En el `<KeyBindings>` , debe crearse un `<KeyBinding>` entrada.  
+    In the `<KeyBindings>` section, create a `<KeyBinding>` entry.  
   
-    Establecer el `guid` y `id` atributos a los del comando que desea invocar.  
+    Set the `guid`  and  `id` attributes to those of the command you want to invoke.  
   
-    Establecer el `mod1` atributo **Control**, **Alt**, o **MAYÚS**.  
+    Set the `mod1` attribute to **Control**, **Alt**, or **Shift**.  
   
-    La sección de enlaces de teclado debe tener un aspecto similar al siguiente:  
+    The KeyBindings section should look something like this:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
    ```  
   
-   Si el método abreviado de teclado requiere más de dos claves, establezca el `mod2` y `key2` atributos.  
+   If your keyboard shortcut requires more than two keys, set the `mod2` and `key2` attributes.  
   
-   En la mayoría de los casos, **MAYÚS** no debe usarse sin un segundo modificador porque presionarlo ya hace que la mayoría de teclas alfanumérica escriba una letra mayúscula o un símbolo.  
+   In most situations, **Shift** should not be used without a second modifier because pressing it already causes most alphanumeric keys to type an uppercase letter or a symbol.  
   
-   Códigos de teclas virtuales le permiten acceder a las teclas especiales que no tienen un carácter asociado con ellos, por ejemplo, las teclas de función y el **retroceso** clave. Para obtener más información, consulte [códigos de tecla Virtual](http://go.microsoft.com/fwlink/?LinkID=105932).  
+   Virtual-key codes let you access special keys that do not have a character associated with them, for example, function keys and the **BACKSPACE** key. For more information, see [Virtual-Key Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   Para que el comando esté disponible en Visual Studio editor, establezca el `editor` atributo `guidVSStd97`.  
+   To make the command available in the Visual Studio editor, set the `editor` attribute to `guidVSStd97`.  
   
-   Para que el comando esté disponible solo en un editor personalizado, establezca la `editor` atributo por el nombre del editor personalizado que fue generado por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de paquete al crear el VSPackage que incluye el editor personalizado. Para encontrar el valor de nombre, busque en el `<Symbols>` sección un `<GuidSymbol>` nodo cuyo `name` atributo termina en "`editorfactory`." Este es el nombre del editor personalizado.  
+   To make the command available only in a custom editor, set the `editor` attribute to the name of the custom editor that was generated by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template when you created the VSPackage that includes the custom editor. To find the name value, look in the `<Symbols>` section for a `<GuidSymbol>` node whose `name` attribute ends in "`editorfactory`." This is the name of the custom editor.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se enlaza el método abreviado de teclado CTRL + ALT + C para un comando llamado `cmdidMyCommand` en un paquete denominado `MyPackage`.  
+ This example binds the keyboard shortcut CTRL+ALT+C to a command named `cmdidMyCommand` in a package named `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 ```  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo enlaza el método abreviado de teclado CTL + B con un comando llamado `cmdidBold` en un proyecto denominado `TestEditor`. El comando está disponible únicamente en el editor personalizado y no en otros editores.  
+ This example binds the keyboard shortcut CTL+B to a command named `cmdidBold` in a project named `TestEditor`. The command is available only in the custom editor and not in other editors.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

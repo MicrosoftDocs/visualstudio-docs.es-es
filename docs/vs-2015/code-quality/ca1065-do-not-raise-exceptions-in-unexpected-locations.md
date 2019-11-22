@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: no producir excepciones en ubicaciones inesperadas | Microsoft Docs'
+title: 'CA1065: Do not raise exceptions in unexpected locations | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663599"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295940"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,108 +29,108 @@ ms.locfileid: "72663599"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |Identificador de comprobación|CA1065|
-|Categoría|Microsoft. Design|
+|Categoría|Microsoft.Design|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
  Un método que no se espera que produzca excepciones inicia una excepción.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los métodos que no se espera que produzcan excepciones se pueden categorizar de la manera siguiente:
+ Methods that are not expected to throw exceptions can be categorized as follows:
 
-- Métodos Get de propiedad
+- Property Get Methods
 
 - Métodos de descriptor de acceso de eventos
 
-- Equals (métodos)
+- Equals Methods
 
-- GetHashCode (métodos)
+- GetHashCode Methods
 
-- ToString (métodos)
+- ToString Methods
 
 - Constructores estáticos
 
 - Finalizadores
 
-- Métodos Dispose
+- Dispose Methods
 
 - Operadores de igualdad
 
-- Operadores de conversión implícita
+- Implicit Cast Operators
 
-  En las secciones siguientes se describen estos tipos de método.
+  The following sections discuss these method types.
 
-### <a name="property-get-methods"></a>Métodos Get de propiedad
- Las propiedades son básicamente campos inteligentes. Por lo tanto, deben comportarse como un campo lo máximo posible. Los campos no producen excepciones y no tienen ninguna propiedad. Si tiene una propiedad que inicia una excepción, considere la posibilidad de convertirla en un método.
+### <a name="property-get-methods"></a>Property Get Methods
+ Properties are basically smart fields. Therefore, they should behave like a field as much as possible. Fields do not throw exceptions and neither should properties. If you have a property that throws an exception, consider making it a method.
 
- Se permite que se inicien las siguientes excepciones desde un método get de propiedad:
+ The following exceptions are allowed to be thrown from a property get method:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
 
-- <xref:System.ArgumentException?displayProperty=fullName> (solo desde Get indizado)
+- <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (solo desde Get indizado)
+- <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
 
 ### <a name="event-accessor-methods"></a>Métodos de descriptor de acceso de eventos
- Los descriptores de acceso de eventos deben ser operaciones simples que no inician excepciones. Un evento no debe producir una excepción al intentar agregar o quitar un controlador de eventos.
+ Event accessors should be simple operations that do not throw exceptions. An event should not throw an exception when you try to add or remove an event handler.
 
- Se permite que se inicien las siguientes excepciones desde un decedidor de eventos:
+ The following exceptions are allowed to be thrown from an event accesor:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
 
-- <xref:System.ArgumentException> y derivados
+- <xref:System.ArgumentException> and derivatives
 
-### <a name="equals-methods"></a>Equals (métodos)
- Los siguientes métodos **Equals** no deben producir excepciones:
+### <a name="equals-methods"></a>Equals Methods
+ The following **Equals** methods should not throw exceptions:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  Un método **Equals** debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si se pasan dos tipos no coincidentes, solo se debe devolver `false` en lugar de producir un <xref:System.ArgumentException>.
+  An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
 
-### <a name="gethashcode-methods"></a>GetHashCode (métodos)
- Los siguientes métodos **GetHashCode** normalmente no deben producir excepciones:
+### <a name="gethashcode-methods"></a>GetHashCode Methods
+ The following **GetHashCode** methods should usually not throw exceptions:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
-  **GetHashCode** siempre debe devolver un valor. De lo contrario, puede perder elementos en la tabla hash.
+  **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
 
-  Las versiones de **GetHashCode** que toman un argumento pueden producir una <xref:System.ArgumentException>. Sin embargo, **Object. GetHashCode** nunca debe producir una excepción.
+  The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
 
-### <a name="tostring-methods"></a>ToString (métodos)
- El depurador utiliza <xref:System.Object.ToString%2A?displayProperty=fullName> para ayudar a mostrar información sobre los objetos en formato de cadena. Por lo tanto, **ToString** no debe cambiar el estado de un objeto y no debe producir excepciones.
+### <a name="tostring-methods"></a>ToString Methods
+ The debugger uses <xref:System.Object.ToString%2A?displayProperty=fullName> to help display information about objects in string format. Therefore, **ToString** should not change the state of an object and it should not throw exceptions.
 
 ### <a name="static-constructors"></a>Constructores estáticos
- Producir excepciones desde un constructor estático hace que el tipo sea inutilizable en el dominio de aplicación actual. Debe tener una buena razón (por ejemplo, un problema de seguridad) para iniciar una excepción desde un constructor estático.
+ Throwing exceptions from a static constructor causes the type to be unusable in the current application domain. You should have a very good reason (such as a security issue) for throwing an exception from a static constructor.
 
 ### <a name="finalizers"></a>Finalizadores
- Producir una excepción desde un finalizador hace que el CLR genere un error rápido, lo que anula el proceso. Por consiguiente, siempre debe evitarse la generación de excepciones en un finalizador.
+ Throwing an exception from a finalizer causes the CLR to fail fast, which tears down the process. Therefore, throwing exceptions in a finalizer should always be avoided.
 
-### <a name="dispose-methods"></a>Métodos Dispose
- Un método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> no debe producir una excepción. Dispose a menudo se llama como parte de la lógica de limpieza en una cláusula `finally`. Por consiguiente, iniciar explícitamente una excepción desde Dispose obliga al usuario a agregar el control de excepciones dentro de la cláusula `finally`.
+### <a name="dispose-methods"></a>Dispose Methods
+ A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method should not throw an exception. Dispose is often called as part of the clean up logic in a `finally` clause. Therefore, explicitly throwing an exception from Dispose forces the user to add exception handling inside the `finally` clause.
 
- La ruta de acceso del código **Dispose (false)** nunca debe iniciar excepciones, ya que casi siempre se llama desde un finalizador.
+ The **Dispose(false)** code path should never throw exceptions, because this is almost always called from a finalizer.
 
-### <a name="equality-operators--"></a>Operadores de igualdad (= =,! =)
- Al igual que los métodos Equals, los operadores de igualdad deben devolver `true` o `false` y no deben producir excepciones.
+### <a name="equality-operators--"></a>Equality Operators (==, !=)
+ Like Equals methods, equality operators should return either `true` or `false` and should not throw exceptions.
 
-### <a name="implicit-cast-operators"></a>Operadores de conversión implícita
- Dado que el usuario a menudo no es consciente de que se ha llamado a un operador de conversión implícito, una excepción iniciada por el operador de conversión implícita es totalmente inesperada. Por lo tanto, no se debe producir ninguna excepción desde los operadores de conversión implícitos.
+### <a name="implicit-cast-operators"></a>Implicit Cast Operators
+ Because the user is often unaware that an implicit cast operator has been called, an exception thrown by the implicit cast operator is completely unexpected. Therefore, no exceptions should be thrown from implicit cast operators.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- En el caso de captadores de propiedades, cambie la lógica para que ya no tenga que producir una excepción, o bien cambie la propiedad a un método.
+ For property getters, either change the logic so that it no longer has to throw an exception, or change the property into a method.
 
- En el caso de todos los demás tipos de método enumerados anteriormente, cambie la lógica para que ya no sea necesario producir una excepción.
+ For all other method types listed previously, change the logic so that it no longer must throw an exception.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si la infracción se debe a una declaración de excepción en lugar de a una excepción iniciada.
+ It is safe to suppress a warning from this rule if the violation was caused by an exception declaration instead of a thrown exception.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2219: No producir excepciones en cláusulas de excepción](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)

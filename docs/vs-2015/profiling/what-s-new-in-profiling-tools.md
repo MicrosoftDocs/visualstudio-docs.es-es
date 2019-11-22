@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261635"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300629"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Novedades en las herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Para obtener información sobre todas las novedades en materia de depuración y 
  Para obtener información sobre todas las novedades en depuración y diagnósticos de Visual Studio 2015, vea las [notas de la versión de Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   
 ## <a name="whats-new-in-update-1"></a>Novedades de Update 1  
- A partir de Visual Studio 2015 Update 1, puede ver un desglose por función del uso de CPU sin salir del depurador. Para más información, consulte [Generar CPU en el depurador en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+ A partir de Visual Studio 2015 Update 1, puede ver un desglose por función del uso de CPU sin salir del depurador. Para más información, consulte [Generar CPU en el depurador en Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- Se agregaron opciones de búsqueda y filtrado en la ficha **Eventos** de la ventana **Herramientas de diagnóstico** . Para más información, consulte [Debugger-integrated profiling](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) (Generación de perfiles integrados en el depurador) y [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx) (Búsqueda y filtrado de la pestaña Eventos de la ventana Herramientas de diagnóstico).  
+ Se agregaron opciones de búsqueda y filtrado en la ficha **Eventos** de la ventana **Herramientas de diagnóstico** . Para más información, consulte [Debugger-integrated profiling](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) (Generación de perfiles integrados en el depurador) y [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Búsqueda y filtrado de la pestaña Eventos de la ventana Herramientas de diagnóstico).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Cambios en la interfaz y las teclas de acceso rápido de Diagnóstico con depuración  
  Ahora puede ejecutar herramientas de diagnóstico durante la depuración con la nueva ventana **Herramientas de diagnóstico** . La ventana aparece automáticamente, pero también se puede abrir con el nuevo elemento de menú **Mostrar herramientas de diagnóstico** (método abreviado **Ctrl + Alt + F2**).  
@@ -43,5 +43,5 @@ Para obtener información sobre todas las novedades en materia de depuración y 
   
  Las herramientas de análisis de aplicaciones de Windows Phone están disponibles en **Depurar / Generador de perfiles / Herramientas de análisis de aplicaciones de Windows Phone** (o **ALT + F1**).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Herramientas de generación de perfiles](../profiling/profiling-tools.md)

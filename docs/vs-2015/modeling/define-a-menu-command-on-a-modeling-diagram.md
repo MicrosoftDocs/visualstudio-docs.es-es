@@ -1,5 +1,5 @@
 ---
-title: Definir un comando de menú en un diagrama de modelado | Microsoft Docs
+title: Define a menu command on a modeling diagram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87acbb53fd8fe5eae744aa4ef72c808da8eb6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663476"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299268"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir un comando de menú en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede definir elementos de menú adicionales en los menús contextuales de un diagrama UML. Puede controlar si el comando de menú aparece y está habilitado en el menú contextual de cualquier elemento del diagrama, y puede escribir código que se ejecute cuando el usuario elija el elemento de menú. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
+En Visual Studio, puede definir elementos de menú adicionales en los menús contextuales de un diagrama UML. Puede controlar si el comando de menú aparece y está habilitado en el menú contextual de cualquier elemento del diagrama, y puede escribir código que se ejecute cuando el usuario elija el elemento de menú. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
 
 ## <a name="requirements"></a>Requisitos
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -31,9 +31,9 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
 ## <a name="defining-the-menu-command"></a>Definir el comando de menú
  Para crear un comando de menú para un diseñador UML, debe crear una clase que defina el comportamiento del comando e incrustarla en una extensión de integración de Visual Studio (VSIX). Las extensiones VSIX actúan como contenedores que instalan el comando. Hay dos métodos para definir un comando de menú:
 
-- **Cree un comando de menú en su propio VSIX mediante una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar los comandos de menú con otros tipos de extensión, como las extensiones de validación, los elementos de cuadro de herramientas personalizados o los controladores de gestos.
+- **Create a menu command in its own VSIX using a project template.** Este es el método más rápido. Utilícelo si no desea combinar los comandos de menú con otros tipos de extensión, como las extensiones de validación, los elementos de cuadro de herramientas personalizados o los controladores de gestos.
 
-- **Crear un comando de menú y proyectos VSIX independientes.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.
+- **Create separate menu command and VSIX projects.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Para crear un comando de menú en una VSIX
 
@@ -47,7 +47,7 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
 
 4. Pruebe el comando de menú presionando F5. Para obtener más información, vea [Ejecutar el comando de menú](#Executing).
 
-5. Instale el comando de menú en otro equipo copiando el archivo **bin \\ \* \\ \*. vsix** compilado por el proyecto. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).
+5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).
 
    A continuación se muestra el procedimiento alternativo:
 
@@ -70,9 +70,9 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Defina los componentes mediante [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Leer y modificar las propiedades de los elementos del modelo.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Crear elementos del modelo y modificar formas en los diagramas.                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[versión]                                                                                  | Definir controladores de eventos del modelo.<br /><br /> Encapsular series de cambios en el modelo. Para obtener más información, vea [vincular actualizaciones del modelo UML mediante transacciones](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[versión]                                                                                  | Definir controladores de eventos del modelo.<br /><br /> Encapsular series de cambios en el modelo. For more information, see [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]<br /><br /> (no siempre es necesario)                                                             |                                                                                   Obtener acceso a elementos del diagrama adicionales para controladores de gestos.                                                                                   |
-   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Solo se requiere para los comandos en diagramas de capas. Para obtener más información, vea [extender diagramas de capas](../modeling/extend-layer-diagrams.md). |                                                                                             Definir los comandos en un diagrama de capas.                                                                                              |
+   | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Solo se requiere para los comandos en diagramas de capas. For more information, see [Extend layer diagrams](../modeling/extend-layer-diagrams.md). |                                                                                             Definir los comandos en un diagrama de capas.                                                                                              |
 
 3. Agregue un archivo de clase al proyecto y establezca su contenido en el código siguiente.
 
@@ -166,13 +166,13 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
 
          **Proyecto** = *Su proyecto de biblioteca de clases*
 
-## <a name="Implementing"></a>Implementar el comando de menú
+## <a name="Implementing"></a> Implementing the Menu Command
  La clase del comando de menú implementa los métodos necesarios para <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
 
 |||
 |-|-|
 |`string Text { get; }`|Devuelve la etiqueta del elemento de menú.|
-|`void QueryStatus(IMenuCommand command);`|Se llama cuando el usuario hace clic con el botón secundario del mouse en el diagrama.<br /><br /> Este método no debería cambiar el modelo.<br /><br /> Utilice `DiagramContext.CurrentDiagram.SelectedShapes` para especificar si desea que el comando aparezca y esté habilitado.<br /><br /> Establezca:<br /><br /> -    `command.Visible` para `true` si el comando debe aparecer en el menú cuando el usuario hace clic con el botón derecho en el diagrama<br />-    `command.Enabled` para `true` si el usuario puede hacer clic en el comando en el menú<br />-    `command.Text` para establecer la etiqueta del menú dinámicamente|
+|`void QueryStatus(IMenuCommand command);`|Se llama cuando el usuario hace clic con el botón secundario del mouse en el diagrama.<br /><br /> Este método no debería cambiar el modelo.<br /><br /> Utilice `DiagramContext.CurrentDiagram.SelectedShapes` para especificar si desea que el comando aparezca y esté habilitado.<br /><br /> Establezca:<br /><br /> -   `command.Visible` to `true` if the command must appear in the menu when the user right-clicks in the diagram<br />-   `command.Enabled` to `true` if the user can click the command in the menu<br />-   `command.Text` to set the menu label dynamically|
 |`void Execute (IMenuCommand command);`|Se llama cuando el usuario hace clic en el elemento de menú, siempre que esté visible y habilitado.|
 
 ### <a name="accessing-the-model-in-code"></a>Tener acceso al modelo en el código
@@ -196,20 +196,20 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 ```
 
 ### <a name="navigating-and-updating-the-model"></a>Navegar y actualizar el modelo
- Los elementos del modelo UML están todos disponibles a través de la API. Desde la selección actual o la raíz del modelo, puede tener acceso a todos los demás elementos. Para obtener más información, vea [navegar por el modelo UML](../modeling/navigate-the-uml-model.md) y [programar con la API de UML](../modeling/programming-with-the-uml-api.md).
+ Los elementos del modelo UML están todos disponibles a través de la API. Desde la selección actual o la raíz del modelo, puede tener acceso a todos los demás elementos. For more information, see [Navigate the UML model](../modeling/navigate-the-uml-model.md) and [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
 
- Si está tratando con un diagrama de secuencia, vea también [Editar diagramas de secuencia UML mediante la API de UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
+ If you are dealing with a sequence diagram, see also [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md).
 
  La API también le permite cambiar las propiedades de los elementos, eliminar elementos y relaciones, y crear nuevos elementos y relaciones.
 
- De forma predeterminada, cada cambio que efectúe en el método Execute se realizará en una transacción independiente. El usuario podrá deshacer cada cambio independientemente. Si desea agrupar los cambios en una única transacción, use una <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> tal y como se describe en [vincular las actualizaciones del modelo UML mediante transacciones](../modeling/link-uml-model-updates-by-using-transactions.md).
+ De forma predeterminada, cada cambio que efectúe en el método Execute se realizará en una transacción independiente. El usuario podrá deshacer cada cambio independientemente. If you want to group the changes into a single transaction, use a <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction> as described in [Link UML model updates by using transactions](../modeling/link-uml-model-updates-by-using-transactions.md).
 
 ### <a name="use-the-ui-thread-for-updates"></a>Usar el subproceso de la interfaz de usuario en las actualizaciones
  En ciertos casos, puede resultar útil hacer actualizaciones en el modelo desde un subproceso en segundo plano. Por ejemplo, si el comando carga datos de un recurso que es lento, puede realizar la carga en un subproceso en segundo plano para que el usuario pueda ver los cambios mientras se producen y cancelar la operación si fuera necesario.
 
- Sin embargo, debe tener en cuenta que el almacén de modelos no es seguro para subprocesos. Siempre debe usar el subproceso de la interfaz de usuario para realizar las actualizaciones y, si es posible, evitar que el usuario realice modificaciones mientras la operación en segundo plano está en curso. Para obtener un ejemplo, vea [actualizar un modelo UML a partir de un subproceso en segundo plano](../modeling/update-a-uml-model-from-a-background-thread.md).
+ Sin embargo, debe tener en cuenta que el almacén de modelos no es seguro para subprocesos. Siempre debe usar el subproceso de la interfaz de usuario para realizar las actualizaciones y, si es posible, evitar que el usuario realice modificaciones mientras la operación en segundo plano está en curso. For an example, see [Update a UML model from a background thread](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="Executing"></a>Ejecutar el comando de menú
+## <a name="Executing"></a> Executing the Menu Command
  A efectos de prueba, ejecute el comando en modo de depuración.
 
 #### <a name="to-test-the-menu-command"></a>Para probar el comando de menú
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.
 
-    - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **depurar** . Asegúrese de que la cadena del campo **programa externo de inicio** es el nombreruta completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:
+    - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -236,11 +236,11 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Los parámetros de los atributos `Import` e `Export` son válidos.
 
-    - El método `QueryStatus` no está estableciendo el `command`. `Enabled` o `Visible` en `false`.
+    - The `QueryStatus` method is not setting the `command`.`Enabled` o `Visible` en `false`.
 
     - El tipo de diagrama del modelo que está usando (secuencia, clases UML, etc.) se muestra como uno de los atributos de la clase del comando de menú `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` etc.
 
-## <a name="Installing"></a>Instalación y desinstalación de una extensión
+## <a name="Installing"></a> Installing and uninstalling an extension
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.
 
 #### <a name="to-install-an-extension"></a>Para instalar una extensión
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.
 
-    2. Busque el archivo **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.
 
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versión] \Extensions**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="MenuExample"></a> Ejemplo
  En el ejemplo siguiente se muestra el código de un comando de menú que intercambiará los nombres de dos elementos en un diagrama de clases. Este código debe compilarse en un proyecto de extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e instalarse tal y como se describió en las secciones anteriores.
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Vea también
- [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [extender modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definir un elemento personalizado del cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restricciones de validación para los modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [Editar Diagramas de secuencia UML mediante la programación de la API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) de UML [con la API de UML](../modeling/programming-with-the-uml-api.md) [ejemplo: comando para alinear formas en un diagrama UML](http://go.microsoft.com/fwlink/?LinkID=213809)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Edit UML sequence diagrams by using the UML API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md) [Sample: Command to Align Shapes on a UML Diagram](https://go.microsoft.com/fwlink/?LinkID=213809)

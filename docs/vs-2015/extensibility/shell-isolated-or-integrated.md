@@ -1,5 +1,5 @@
 ---
-title: Shell (aislado o integrado) | Documentos de Microsoft
+title: Shell (Isolated or Integrated) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,48 +14,48 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447221"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300488"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (aislado o integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear su propia aplicación basada en Visual Studio en modo integrado o aislado. En el modo integrado, muchas características de Visual Studio están disponibles además de su aplicación. En el modo aislado, elegir un subconjunto de características de Visual Studio que desea distribuir junto con su propia extensión.  
+You can create your own Visual Studio-based application in either integrated or isolated mode. In integrated mode, many Visual Studio features are available in addition to your application. In the isolated mode, you choose a subset of Visual Studio features that you wish to distribute along with your own extension.  
   
-## <a name="integrated-mode"></a>Modo integrado  
- El modo integrado permite a los usuarios usar las características estándar de Visual Studio junto con sus herramientas personalizadas. El shell integrado está pensado principalmente para hospedar los lenguajes de programación y herramientas de desarrollo de software.  
+## <a name="integrated-mode"></a>Integrated Mode  
+ Integrated mode enables your users to use standard Visual Studio features along with your custom tools. The integrated shell is intended primarily for hosting programming languages and software development tools.  
   
- Herramientas personalizadas que se generan automáticamente en el shell integrado de mezcla con cualquier otra edición de Visual Studio que está instalado en el mismo equipo. Puede proporcionar una versión redistribuible del shell integrado de Visual Studio si ya no está instalado Visual Studio.  
+ Custom tools that are built on the integrated shell automatically merge with any other edition of Visual Studio that is installed on the same computer. You can provide a redistributable version of the Visual Studio integrated shell if Visual Studio is not already installed.  
   
- La versión redistribuible del shell integrado de Visual Studio no incluye lenguajes de programación y las características que admiten sus sistemas de proyecto respectivos.  
+ The redistributable version of the Visual Studio integrated shell does not include programming languages and the features that support their respective project systems.  
   
 > [!NOTE]
-> El modo integrado de shell de Visual Studio se puede instalar junto con todas las ediciones de Visual Studio, excepto las ediciones Express.  
+> The Visual Studio shell integrated mode can be installed together with all editions of Visual Studio except the Express editions.  
   
- Para obtener más información, consulte [Visual Studio Shell (integrado)](../extensibility/visual-studio-shell-integrated.md).  
+ For more information, see [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md).  
   
-## <a name="isolated-mode"></a>Modo aislado  
- Modo aislado permite crear herramientas personalizadas que se ejecutan en paralelo con otras versiones de Visual Studio. Se está diseñado principalmente para las herramientas que pueden tener acceso a servicios de Visual Studio sin según todas las características estándar de Visual Studio. Puede personalizar la apariencia de las aplicaciones basadas en el shell aislado de Visual Studio. Puede desactivar fácilmente las características y los grupos de comandos de menú que no desea que aparezca junto con la aplicación.  
+## <a name="isolated-mode"></a>Isolated Mode  
+ Isolated mode allows you to create custom tools that run side-by-side with other versions of Visual Studio. It is intended primarily for tools that can access Visual Studio services without depending on all the standard Visual Studio features. You can customize the appearance of applications built on the Visual Studio isolated shell. You can easily turn off the features and menu command groups that you do not wish to appear together with your application.  
   
- Para obtener más información, consulte [Visual Studio Shell aislado](../extensibility/visual-studio-isolated-shell.md).  
+ For more information, see [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md).  
   
-## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Distribuir la aplicación de Shell integrado o aislado  
- Con el fin de distribuir la aplicación de shell integrado o aislado, deberá incluir la aplicación, un especial shell integrado o aislado redistribuible y un programa de instalación. Para obtener más información acerca de la distribución e instalación, consulte [distribuir aplicaciones de Shell aislado](../extensibility/distributing-isolated-shell-applications.md).  
+## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Distributing your Integrated or Isolated Shell Application  
+ In order to distribute your integrated or isolated shell application, you need to include your application, a special integrated or isolated shell redistributable, and an installation program. For more information about distribution and installation, see [Distributing Isolated Shell Applications](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
-> El [contrato de licencia de usuario final (CLUF)](https://www.visualstudio.com/support/legal/mt171552) integrado y aislado de Visual Studio shells incluye una sección acerca de la recopilación de datos (**sección 3. Datos**).  Describe los datos de uso de cliente que se pueden recopilar mediante Microsoft de los usuarios de que el software de shell integrado o aislado que se genera en la aplicación. Para obtener más información, consulte [Microsoft Visual Studio declaración familia de productos privacidad](https://www.visualstudio.com/dn948229).  
+> The [End User License Agreement (EULA)](https://www.visualstudio.com/support/legal/mt171552) for the Visual Studio integrated and isolated shells includes a section on data collection (**Section 3. Data**).  It describes the customer usage data that may be collected by Microsoft from users of either the integrated or isolated shell software that you build into your application. For more information, see [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).  
 > 
-> Si recopila datos de uso independiente de sus clientes a través de la aplicación, debe proporcionar aviso adecuado a los usuarios de la aplicación de lo que recopila.  Al distribuir el software de shell aislado o integrado como parte de la aplicación, según la licencia del Kit de desarrollo de Software de Visual Studio, debe incluir uno de los siguientes:  
+> If you collect separate usage data from your customers through your application, you must provide appropriate notice to users of your application of what you collect.  When you distribute either the isolated or integrated shell software as part of your application, according to the Visual Studio Software Development Kit license, you must include one of the following:  
 > 
-> - el contrato de licencia de usuario final como parte de su licencia de aplicación  
-> - sus propios términos de licencia que requiere que los clientes que acepten los términos que protección la Visual Studio integrado o aislado shell al menos tanta como los términos de licencia de usuario final de Microsoft para el software de shell  
+> - the End User License Agreement as part of your application license  
+> - your own EULA that requires your customers to agree to terms that protect the Visual Studio integrated or isolated shell at least as much as the Microsoft End User License Terms for the shell software  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
- Para obtener más información acerca de los paquetes redistribuibles, consulte el [descargas de Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) sitio Web.  
+ For more information about redistributable packages, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) Web site.  
   
 ## <a name="see-also"></a>Vea también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

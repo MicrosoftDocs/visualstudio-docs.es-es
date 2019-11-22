@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62f81e6a697089d7a352f652ad9f77d279faac0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bc65e58aa5bdea786aba05236b6fa684780ccae2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660821"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296087"
 ---
 # <a name="convert-dialog-box"></a>Convertir (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-El cuadro de diálogo **Convertir** le permite seleccionar una herramienta de conversión para crear un proyecto a partir de uno anterior, como cuando se crea un proyecto de [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] a partir de un proyecto de Visual Basic 6. También puede usar el [Convertidor de proyectos de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), disponible en el sitio web de CodePlex, para actualizar los proyectos creados en versiones anteriores de Visual Studio.
+El cuadro de diálogo **Convertir** le permite seleccionar una herramienta de conversión para crear un proyecto a partir de uno anterior, como cuando se crea un proyecto de [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] a partir de un proyecto de Visual Basic 6. También puede usar el [Convertidor de proyectos de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=246465), disponible en el sitio web de CodePlex, para actualizar los proyectos creados en versiones anteriores de Visual Studio.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

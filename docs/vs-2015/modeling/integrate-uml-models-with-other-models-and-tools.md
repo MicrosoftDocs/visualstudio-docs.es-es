@@ -1,5 +1,5 @@
 ---
-title: Integrar modelos UML con otros modelos y herramientas | Microsoft Docs
+title: Integrate UML models with other models and tools | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f511a96f94ab98a93144938529a05d07bb6ed26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669579"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301467"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrar modelos UML con otros modelos y herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,47 +32,47 @@ En un elemento UML se pueden almacenar vínculos a otros elementos UML, archivos
 
  Hay dos formas de almacenar cadenas y otros datos de cualquier elemento:
 
-- **Propiedades de estereotipo.** Se puede definir un perfil UML en el que se establezca un estereotipo que agregue propiedades a determinadas clases de elementos UML. Por ejemplo, podría definir un perfil que agregue una propiedad denominada **másdetalle** a una acción de UML. Si se desea escribir código de extensión que almacene datos de vínculo en una acción, hay que aplicar el estereotipo a la acción y, después, almacenar los datos en la propiedad.
+- **Stereotype properties.** Se puede definir un perfil UML en el que se establezca un estereotipo que agregue propiedades a determinadas clases de elementos UML. For example, you could define a profile that adds a property named **MoreDetail** to a UML action. Si se desea escribir código de extensión que almacene datos de vínculo en una acción, hay que aplicar el estereotipo a la acción y, después, almacenar los datos en la propiedad.
 
    El usuario puede ver el estereotipo y sus propiedades en la ventana Propiedades.
 
    Para implementar esta extensión, empaquete la definición de perfil y el código de extensión en una única extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-   Para obtener más información, vea [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md).
+   For more information, see [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Para ver un proyecto de ejemplo en el que se implementa un perfil junto con los comandos de menú y los controladores de gestos, vea [ejemplo: perfiles de UML](http://go.microsoft.com/fwlink/?LinkID=213811).
+   For a sample project in which a profile is deployed together with menu commands and gesture handlers, see [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811).
 
-- **A.** Un conjunto de cadenas se puede adjuntar a cualquier elemento UML. Se puede escribir código que almacene la información como un nombre de archivo o el GUID de otro elemento. Para ello no es necesario proporcionar definiciones adicionales. El usuario no puede ver directamente las referencias.
+- **References.** Un conjunto de cadenas se puede adjuntar a cualquier elemento UML. Se puede escribir código que almacene la información como un nombre de archivo o el GUID de otro elemento. Para ello no es necesario proporcionar definiciones adicionales. El usuario no puede ver directamente las referencias.
 
-   Para obtener más información, vea [adjuntar cadenas de referencia a elementos del modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Para obtener un ejemplo, vea [vincular elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+   For more information, see [Attach reference strings to UML model elements](../modeling/attach-reference-strings-to-uml-model-elements.md). For a sample, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
 
   Hay dos formas de codificar las referencias a elementos de modelo:
 
-- **GUID y nombre** del elemento del modelo de destino y el modelo que lo contiene, o un diagrama determinado que lo muestra.
+- **GUID and Filename** of the target model element and the model that contains it, or a particular diagram that displays it.
 
-   Para obtener un ejemplo, vea [vincular elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+   For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
 
-- **Referencias de ModelBus.** ModelBus es un marco para la creación y resolución de referencias entre modelos. Incluye el selector ModelBus Picker, que permite al usuario seleccionar un elemento en un modelo. También ayuda al usuario a resolver las referencias que se pierden debido a cambios en el modelo de destino.
+- **ModelBus References.** ModelBus es un marco para la creación y resolución de referencias entre modelos. Incluye el selector ModelBus Picker, que permite al usuario seleccionar un elemento en un modelo. También ayuda al usuario a resolver las referencias que se pierden debido a cambios en el modelo de destino.
 
-   Para obtener más información, vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+   For more information, see [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
   Propague los cambios de un modelo a otro.
   Por ejemplo, puede sincronizar el nombre de un elemento con el nombre del diagrama vinculado, por lo que si el usuario cambia uno, el otro también cambia. Existen dos mecanismos para hacerlo:
 
-1. **Las reglas de VMSDK** se pueden usar para propagar los cambios dentro del mismo modelo.
+1. **VMSDK Rules** can be used to propagate changes inside the same model.
 
-    Para obtener un ejemplo, vea [vincular elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+    For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
 
-2. **Los eventos VMSDK** se pueden usar para propagar los cambios fuera del modelo; por ejemplo, para cambiar el nombre de archivo de un documento vinculado o para cambiar un elemento de otro modelo.
+2. **VMSDK Events** can be used to propagate changes outside the model – for example, to change the filename of a linked document, or to change an element in another model.
 
-   Para obtener información acerca de estos dos mecanismos, vea [Cómo: responder a cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
+   For information about both these mechanisms, see [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md).
 
-   Arrastre los elementos para copiarlos de un modelo a otro. puede permitir que el usuario cree elementos arrastrando los elementos a un diagrama UML. El elemento creado no tiene por qué ser una copia del original. Por ejemplo, puede permitir que el usuario arrastre un diagrama de actividades desde el Explorador de soluciones hasta otro diagrama de actividades con el fin de crear una nueva acción.
+   Drag elements to copy them from one model to another You can let the user create elements by dragging items onto a UML diagram. El elemento creado no tiene por qué ser una copia del original. Por ejemplo, puede permitir que el usuario arrastre un diagrama de actividades desde el Explorador de soluciones hasta otro diagrama de actividades con el fin de crear una nueva acción.
 
-   Para obtener más información, vea [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) y [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
+   For more information see [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) and [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="samples"></a>Ejemplos
- Vea el ejemplo de código [vincular elementos UML a diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813). El ejemplo permite a los usuarios arrastrar un archivo a cualquier elemento UML y después abrir el archivo haciendo doble clic en el elemento. Por ejemplo, se puede vincular un diagrama de actividades a un elemento de casos de uso. Un icono muestra los elementos que tienen vínculos.
+ Please see the code sample [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813). El ejemplo permite a los usuarios arrastrar un archivo a cualquier elemento UML y después abrir el archivo haciendo doble clic en el elemento. Por ejemplo, se puede vincular un diagrama de actividades a un elemento de casos de uso. Un icono muestra los elementos que tienen vínculos.
 
  En este ejemplo de código se muestran las técnicas siguientes:
 
@@ -80,7 +80,7 @@ En un elemento UML se pueden almacenar vínculos a otros elementos UML, archivos
 
    En el código de ejemplo se almacenan las rutas de archivo y los GUID de elemento en las cadenas de referencia que están asociadas con el elemento.
 
-- Cómo agregar decoradores a elementos UML. Para obtener información general sobre los elementos Decorator, vea [personalizar los campos de texto e imagen](../modeling/customizing-text-and-image-fields.md).
+- Cómo agregar decoradores a elementos UML. For general information about decorators, see [Customizing Text and Image Fields](../modeling/customizing-text-and-image-fields.md).
 
    En el ejemplo se agrega un decorador de imagen a las formas UML.
 
@@ -94,7 +94,7 @@ En un elemento UML se pueden almacenar vínculos a otros elementos UML, archivos
 
    En el ejemplo se muestra cómo controlar los elementos arrastrados desde el Explorador de Windows (o el Explorador de archivos), el Explorador de soluciones y otros elementos UML.
 
-  Para obtener un ejemplo en el que un DSL Lee un modelo UML, vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
+  For an example in which a UML model is be read by a DSL, see [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="see-also"></a>Vea también
- [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [Cómo: responder a cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [ejemplo: los perfiles de UML](http://go.microsoft.com/fwlink/?LinkID=213811) [vinculan elementos UML a Diagramas u otros archivos](http://go.microsoft.com/fwlink/?LinkId=213813)
+ [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811) [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813)

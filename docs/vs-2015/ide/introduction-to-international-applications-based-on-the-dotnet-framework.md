@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8243b2f735fb15f5c4e2fe841721696b87590997
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670434"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291377"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introducción a aplicaciones internacionales basadas en .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], hay dos partes para crear una a
 
  El modelo de localización de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] consta de un ensamblado principal que contiene el código de aplicación y los recursos de reserva (cadenas, imágenes y otros objetos del lenguaje en que se ha programado originalmente la aplicación). Cada aplicación localizada tendrá ensamblados satélite o ensamblados que contienen solo los recursos localizados. Dado que el ensamblado principal contiene siempre los recursos de reserva, si un recurso no se encuentra en el ensamblado satélite localizado, el <xref:System.Resources.ResourceManager> intentará cargarlo de forma jerárquica y usará finalmente el recurso de reserva del ensamblado principal. El sistema de reserva de recursos se explica con mayor detalle en [Organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Un recurso de localización que debería usar es el glosario de todos los productos localizados de Microsoft. Este archivo CSV contiene más de 12.000 términos en inglés y las traducciones de los términos en hasta 59 idiomas diferentes. El glosario está disponible para su descarga en la página web [Microsoft Terminology Translations](http://go.microsoft.com/fwlink/?LinkId=128146) (Traducciones de terminología de Microsoft).
+ Un recurso de localización que debería usar es el glosario de todos los productos localizados de Microsoft. Este archivo CSV contiene más de 12.000 términos en inglés y las traducciones de los términos en hasta 59 idiomas diferentes. El glosario está disponible para su descarga en la página web [Microsoft Terminology Translations](https://go.microsoft.com/fwlink/?LinkId=128146) (Traducciones de terminología de Microsoft).
 
  El sistema de proyectos para aplicaciones de Windows Forms puede generar archivos de recursos para el recurso de reserva y para todos los idiomas de interfaz de usuario adicionales que quiera. El archivo de recursos de reserva se compila en el ensamblado principal y los archivos de recursos específicos de la referencia cultural se compilan después en ensamblados satélite, uno para cada idioma de interfaz de usuario. Al compilar un proyecto, los archivos de recursos se compilan desde el formato XML de Visual Studio (.resx) en un formato binario intermedio (.resources), que se inserta después en ensamblados satélite.
 
