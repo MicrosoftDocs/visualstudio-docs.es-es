@@ -1,5 +1,5 @@
 ---
-title: Introducción con lenguajes específicos de dominio | Microsoft Docs
+title: Getting Started with Domain-Specific Languages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,342 +9,342 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666067"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300917"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tema se explican los conceptos básicos de la definición y el uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado para Visual Studio.
+This topic explains the basic concepts in defining and using a domain-specific language (DSL) created with the Modeling SDK for Visual Studio.
 
- Si no está familiarizado con los DSL, le recomendamos que trabaje en el **laboratorio de herramientas de DSL**, que puede encontrar en este sitio: [SDK and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) .
+ If you are new to DSLs, we recommend that you work through the **DSL Tools Lab**, which you can find in this site: [Visualizaton and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
-## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?
- Un lenguaje específico de dominio es una notación, normalmente gráfica, que está diseñada para usarse con un fin determinado. Por el contrario, los lenguajes como UML son de uso general. En un DSL, puede definir los tipos de elemento de modelo y sus relaciones, y cómo se presentan en la pantalla.
+## <a name="what-can-you-do-with-a-domain-specific-language"></a>What can you do with a Domain-Specific Language?
+ A domain-specific language is a notation, usually graphical, that is designed to be used for a particular purpose. By contrast, languages such as UML are general-purpose. In a DSL, you can define the types of model element and their relationships, and how they are presented on the screen.
 
- Una vez que haya diseñado un DSL, puede distribuirlo como parte de un paquete de extensión de integración de Visual Studio (VSIX). Los usuarios trabajan con el DSL en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ When you have designed a DSL, you can distribute it as part of a Visual Studio Integration Extension (VSIX) package. Users work with the DSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
- ![Diagrama de árbol de familia, cuadro de herramientas y explorador](../modeling/media/familyt-instance.png "FamilyT_Instance")
+ ![Family tree diagram, toolbox, and explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
- La notación solo es parte de un DSL. Junto con la notación, el paquete VSIX incluye herramientas que los usuarios pueden aplicar para ayudarles a editar y generar material a partir de sus modelos.
+ The notation is only part of a DSL. Together with the notation, your VSIX package includes tools that users can apply to help them edit and generate material from their models.
 
- Una de las aplicaciones principales de DSL es generar código de programa, archivos de configuración y otros artefactos. Especialmente en proyectos grandes y líneas de productos, donde se crearán varias variantes de un producto, la generación de muchos de los aspectos variables de los DSL puede proporcionar un aumento considerable de la confiabilidad y una respuesta muy rápida a los cambios en los requisitos.
+ One of the principal applications of DSLs is to generate program code, configuration files, and other artifacts. Especially in large projects and product lines, where several variants of a product will be created, generating many of the variable aspects from DSLs can provide a large increase in reliability and a very rapid response to requirements changes.
 
- El resto de esta información general es un tutorial que presenta las operaciones básicas de creación y uso de un lenguaje específico de dominio en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ The rest of this overview is a walkthrough that introduces the basic operations of creating and using a domain-specific language in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de modelado para Visual Studio|[Descargar MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Modeling SDK for Visual Studio|[Download MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
-## <a name="creating-a-dsl-solution"></a>Crear una solución DSL
- Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante la plantilla de proyecto de lenguaje específico del dominio.
+## <a name="creating-a-dsl-solution"></a>Creating a DSL Solution
+ To create a new domain-specific language, you create a new [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution by using the Domain-Specific Language project template.
 
 #### <a name="to-create-a-dsl-solution"></a>Para crear una solución de DSL
 
 1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
-2. En **tipos de proyecto**, expanda el nodo **otros tipos de proyectos** y haga clic en **extensibilidad**.
+2. Under **Project types**, expand the **Other Project Types** node, and click **Extensibility**.
 
-3. Haga clic en **Diseñador de lenguaje específico de dominio**.
+3. Click **Domain-Specific Language Designer**.
 
-    ![Cuadro de diálogo crear DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+    ![Create DSL dialog](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. En el cuadro **nombre** , escriba **familytree**. Haga clic en **Aceptar**.
+4. In the **Name** box, type **FamilyTree**. Haga clic en **Aceptar**.
 
-    Se abre el **Asistente para lenguaje específico de dominio** y muestra una lista de las soluciones DSL de plantilla.
+    The **Domain-Specific Language Wizard** opens, and displays a list of template DSL solutions.
 
-    Haga clic en cada plantilla para ver una descripción.
+    Click each template to see a description,
 
-    Las plantillas son puntos de partida útiles. Cada una de ellas proporciona un DSL de trabajo completo que puede editar para satisfacer sus necesidades. Normalmente, elegiría la plantilla más cercana a lo que desea crear.
+    The templates are useful starting points. Each of them provides a complete working DSL, which you can edit to suit your needs. Ordinarily, you would choose the template nearest what you want to create.
 
-5. Para este tutorial, elija la plantilla de **idioma mínima** .
+5. For this walkthrough, choose the **Minimal Language** template.
 
 6. Escriba una extensión de nombre de archivo para su DSL en la página del asistente correspondiente. Esta es la extensión que usarán los archivos que contienen instancias de su DSL.
 
-   - Elija una extensión que no esté asociada a ninguna aplicación del equipo o en cualquier equipo en el que desee instalar el DSL. Por ejemplo, **docx** y **htm** serían extensiones de nombre de archivo no aceptables.
+   - Choose an extension that is not associated with any application in your computer, or in any computer where you want to install the DSL. For example, **docx** and **htm** would be unacceptable file name extensions.
 
-   - El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
+   - El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
 
-7. Inspeccione las demás páginas y, a continuación, haga clic en **Finalizar**.
+7. Inspect the other pages and then click **Finish**.
 
-    Se genera una solución que contiene dos proyectos. Se denominan DSL y DslPackage. Se abre un archivo de diagrama denominado DslDefinition. DSL.
+    A solution is generated that contains two projects. They are named Dsl and DslPackage. A diagram file opens that is named DslDefinition.dsl.
 
    > [!NOTE]
-   > La mayor parte del código que se puede ver en las carpetas de los dos proyectos se genera a partir de DslDefinition. DSL. Por esta razón, la mayoría de las modificaciones en el DSL se realizan en este archivo.
+   > Most of the code that you can see in the folders in the two projects is generated from DslDefinition.dsl. For this reason, most modifications to your DSL are made in this file.
 
    Ahora, la interfaz de usuario es similar a la imagen siguiente.
 
-   ![diseñador DSL](../modeling/media/dsl-designer.png "dsl_designer")
+   ![diseñador dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
-   Esta solución define un lenguaje específico de dominio. Para obtener más información, vea [información general sobre la interfaz de usuario de herramientas del lenguaje específico de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   Esta solución define un lenguaje específico de dominio. For more information, see [Overview of the Domain-Specific Language Tools User Interface](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-## <a name="the-important-parts-of-the-dsl-solution"></a>Partes importantes de la solución DSL
- Tenga en cuenta los siguientes aspectos de la nueva solución.
+## <a name="the-important-parts-of-the-dsl-solution"></a>The important parts of the DSL solution
+ Notice the following aspects of the new solution.
 
-- **Dsl\DslDefinition.DSL** Este es el archivo que se ve cuando se crea una solución DSL. La mayoría del código de la solución se genera a partir de este archivo, y la mayoría de los cambios que se realizan en una definición de DSL se realizan aquí. Para obtener más información, vea el apartado sobre cómo trabajar con el diagrama de la [definición de DSL](../modeling/working-with-the-dsl-definition-diagram.md).
+- **Dsl\DslDefinition.dsl** This is the file that you see when you create a DSL solution. Almost all the code in the solution is generated from this file, and most of the changes that you make to a DSL definition are made here. For more information, see Working with the [Working with the DSL Definition Diagram](../modeling/working-with-the-dsl-definition-diagram.md).
 
-- **Proyecto DSL** Este proyecto contiene código que define el lenguaje específico del dominio.
+- **Dsl project** This project contains code that defines the domain-specific language.
 
-- **Proyecto DslPackage** Este proyecto contiene código que permite abrir y editar instancias de DSL en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- **DslPackage project** This project contains code that allows instances of the DSL to be opened and edited in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="Debugging"></a>Ejecutar el DSL
- Puede ejecutar la solución DSL en cuanto la cree. Posteriormente, puede modificar la definición de DSL gradualmente y ejecutar la solución de nuevo después de cada cambio.
+## <a name="Debugging"></a> Running the DSL
+ You can run the DSL solution as soon as you have created it. Later, you can modify the DSL definition gradually, running the solution again after each change.
 
-#### <a name="to-experiment-with-the-dsl"></a>Para experimentar con el DSL
+#### <a name="to-experiment-with-the-dsl"></a>To experiment with the DSL
 
-1. Haga clic en **transformar todas las plantillas** en la barra de herramientas explorador de soluciones. Esto regenera la mayor parte del código fuente de DslDefinition. DSL.
+1. Click **Transform All Templates** in the Solution Explorer toolbar. This regenerates most of the source code from DslDefinition.dsl.
 
    > [!NOTE]
-   > Siempre que cambie DslDefinition. DSL, debe hacer clic en **transformar todas las plantillas** antes de recompilar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar la transformación de todas las plantillas](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+   > Whenever you change DslDefinition.dsl, you must click **Transform All Templates** before you rebuild the solution. Este paso se puede automatizar. For more information, see [How to Automate Transform All Templates](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
 
-2. Presione F5 o, en el menú **depurar** , haga clic en **iniciar depuración**.
+2. Press F5, or on the **Debug** menu, click **Start Debugging**.
 
-    El DSL se compila y se instala en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    The DSL builds and is installed in the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-    Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . La instancia experimental toma su configuración de un subárbol independiente del registro, donde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensiones se registran con fines de depuración. Las instancias normales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no tienen acceso a las extensiones registradas en ella.
+    Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . The experimental instance takes its settings from a separate subtree of the registry, where [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions are registered for debugging purposes. Normal instances of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do not have access to extensions registered there.
 
-3. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra el archivo de modelo denominado **Test** desde **Explorador de soluciones**.
+3. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open the model file named **Test** from **Solution Explorer**.
 
     \- o -
 
-    Haga clic con el botón secundario en el proyecto de depuración, elija **Agregar**y, a continuación, haga clic en **elemento**. En el cuadro de diálogo **Agregar elemento** , seleccione el tipo de archivo de su DSL.
+    Right-click the Debugging project, point to **Add**, and then click **Item**. In the **Add Item** dialog box, select the file type of your DSL.
 
-    El archivo de modelo se abre como un diagrama en blanco.
+    The model file opens as a blank diagram.
 
-    El cuadro de herramientas se abre y muestra las herramientas apropiadas para el tipo de diagrama.
+    The toolbox opens and displays tools appropriate to the diagram type.
 
-4. Use las herramientas de para crear formas y conectores en el diagrama.
+4. Use the tools to create shapes and connectors on the diagram.
 
-   1. Para crear formas, arrastre desde el herramienta Forma de ejemplo hasta el diagrama.
+   1. To create shapes, drag from the Example Shape tool onto the diagram.
 
-   2. Para conectar dos formas, haga clic en la herramienta conector de ejemplo, haga clic en la primera forma y, a continuación, haga clic en la segunda forma.
+   2. To connect two shapes, click the Example Connector tool, click the first shape, and then click the second shape.
 
-5. Haga clic en las etiquetas de las formas para cambiarlas.
+5. Click the labels of the shapes to change them.
 
-   El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimental será similar al ejemplo siguiente:
+   Your experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] will resemble the following example:
 
    ![](../modeling/media/dsl-min.png "DSL_min")
 
-### <a name="the-content-of-a-model"></a>El contenido de un modelo
- El contenido de un archivo que es una instancia de DSL se denomina *modelo*. El modelo contiene los *elementos del modelo* y los *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínima, hay un tipo de elemento de modelo y un tipo de vínculo.
+### <a name="the-content-of-a-model"></a>The Content of a Model
+ The content of a file that is an instance of a DSL is called a *model*. The model contains *model elements* and *links* between the elements. The DSL definition specifies what types of model elements and links can exist in the model. For example, in a DSL created from the Minimal Language template, there is one type of model element, and one type of link.
 
- La definición de DSL puede especificar cómo aparece el modelo en un diagrama. Puede elegir entre diversos estilos de formas y conectores. Puede especificar que algunas formas aparezcan dentro de otras formas.
+ The DSL definition can specify how the model appears on a diagram. You can choose from a variety of styles of shapes and connectors. You can specify that some shapes appear inside other shapes.
 
- Puede ver un modelo como un árbol en la vista del **Explorador** mientras edita un modelo. A medida que se agregan formas al diagrama, los elementos del modelo también aparecen en el explorador. Se puede usar el explorador aunque no haya ningún diagrama.
+ You can view a model as a tree in the **Explorer** view while you are editing a model. As you add shapes to the diagram, the model elements also appear in the explorer. The explorer can be used even if there is no diagram.
 
- Si no puede ver el explorador en la instancia de depuración de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en *\<Your idioma >* **Explorador**.
+ If you cannot see the Explorer in the debugging instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **View** menu point to **Other Windows**, and then click *\<Your Language>* **Explorer**.
 
-### <a name="the-api-of-your-dsl"></a>La API de su DSL
- El DSL genera una API que le permite leer y actualizar modelos que son instancias de DSL. Una aplicación de la API es generar archivos de texto a partir de un modelo. Para obtener más información, vea [generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+### <a name="the-api-of-your-dsl"></a>The API of your DSL
+ Your DSL generates an API that allows you to read and update models that are instances of the DSL. One application of the API is to generate text files from a model. For more information, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
- En la solución de depuración, abra los archivos de plantilla con la extensión ". TT". En estos ejemplos se muestra cómo puede generar texto a partir de modelos y le permite probar la API de su DSL. Uno de los ejemplos se escribe en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], el otro en [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+ In the Debugging solution, open the template files with extension ".tt". These samples demonstrate how you can generate text from models, and allow you to test the API of your DSL. One of the samples is written in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], the other in [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
- En cada archivo de plantilla se encuentra el archivo que genera. Expanda el archivo de plantilla en Explorador de soluciones y abra el archivo generado.
+ Under each template file is the file that it generates. Expand the template file in Solution Explorer, and open the generated file.
 
- El archivo de plantilla contiene un pequeño segmento de código que enumera todos los elementos del modelo.
+ The template file contains a short segment of code that lists all the elements in the model.
 
- El archivo generado contiene el resultado.
+ The generated file contains the result.
 
- Al cambiar un archivo de modelo, verá los cambios correspondientes en los archivos generados después de volver a generar los archivos.
+ When you change a model file, you will see corresponding changes in generated files after you regenerate the files.
 
-##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Para volver a generar archivos de texto después de cambiar el archivo de modelo
+##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>To regenerate text files after you change the model file
 
-1. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], guarde el archivo de modelo.
+1. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], save the model file.
 
-2. Asegúrese de que el parámetro de nombre de archivo de cada archivo. TT hace referencia al archivo de modelo que está usando para los experimentos. Guarde el archivo. TT.
+2. Make sure that the file name parameter in each .tt file refers to the model file that you are using for experiments. Save the .tt file.
 
-3. Haga clic en **transformar todas las plantillas** en la barra de herramientas de **Explorador de soluciones**.
+3. Click **Transform All Templates** in the toolbar of **Solution Explorer**.
 
     \- o -
 
-    Haga clic con el botón secundario en las plantillas que desee regenerar y, a continuación, haga clic en **Ejecutar herramienta personalizada**.
+    Right-click the templates that you want to regenerate and then click **Run Custom Tool**.
 
-   Puede agregar cualquier número de archivos de plantilla de texto a un proyecto. Cada plantilla genera un archivo de resultados.
+   You can add any number of text template files to a project. Each template generates one result file.
 
 > [!NOTE]
-> Cuando cambie la definición de DSL, el código de la plantilla de texto de ejemplo no funcionará, a menos que lo actualice.
+> When you change the DSL definition, the sample text template code will not work, unless you update it.
 
- Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+ For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md) and [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personalizar el DSL
- Si desea modificar la definición de DSL, cierre la instancia experimental y actualice la definición en la instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] principal.
+ When you want to modify the DSL definition, close the experimental instance and update the definition in the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance.
 
 > [!NOTE]
-> Una vez modificada la definición de DSL, podría perder información en los modelos de prueba creados con versiones anteriores.  Por ejemplo, la solución de depuración contiene un archivo denominado Sample, que contiene algunas formas y conectores. Después de empezar a desarrollar la definición de DSL, no estarán visibles y se perderán cuando guarde el archivo.
+> After you have modified the DSL definition, you might lose information in the test models that you have created by using earlier versions.  For example, the debugging solution contains a file that is named Sample, which contains some shapes and connectors. After you start to develop your DSL definition, they will not be visible, and they will be lost when you save the file.
 
- Puede crear una amplia variedad de extensiones para el DSL. Los ejemplos siguientes le darán una impresión de las posibilidades.
+ You can make a wide variety of extensions to your DSL. The following examples will give you an impression of the possibilities.
 
- Después de cada cambio, guarde la definición de DSL, haga clic en **transformar todas las plantillas** en **Explorador de soluciones**y, a continuación, presione **F5** para experimentar con el DSL cambiado.
+ After each change, save the DSL definition, click **Transform All Templates** in **Solution Explorer**, and then press **F5** to experiment with the changed DSL.
 
-### <a name="rename-the-types-and-tools"></a>Cambiar el nombre de los tipos y las herramientas
- Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejemplo, a partir de una definición de DSL creada a partir de la plantilla de idioma mínima, puede realizar las siguientes operaciones de cambio de nombre para que el DSL represente árboles de familia.
+### <a name="rename-the-types-and-tools"></a>Rename the Types and Tools
+ Rename the existing domain classes and relationships. For example, starting from a Dsl Definition created from the Minimal Language template, you could perform the following renaming operations, to make the DSL represent family trees.
 
-##### <a name="to-rename-domain-classes-relationships-and-tools"></a>Para cambiar el nombre de las clases de dominio, las relaciones y las herramientas
+##### <a name="to-rename-domain-classes-relationships-and-tools"></a>To rename domain classes, relationships and tools
 
-1. En el diagrama DslDefinition, cambie el nombre de **ExampleModel** a **FamilyTreeModel**, **ExampleElement** a **Person**, **destinos** a **elementos primarios**y **orígenes** a **elementos secundarios**. Puede hacer clic en cada etiqueta para cambiarla.
+1. In the DslDefinition diagram, rename **ExampleModel** to **FamilyTreeModel**, **ExampleElement** to **Person**, **Targets** to **Parents**, and **Sources** to **Children**. You can click each label to change it.
 
-     ![Modelo de árbol &#45; de familia de diagramas de definición de DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+     ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt-person.png "FamilyT_Person")
 
-2. Cambie el nombre del elemento y de las herramientas del conector.
+2. Rename the element and connector tools.
 
-    1. Abra la ventana Explorador de DSL haciendo clic en la ficha situada debajo de Explorador de soluciones. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas** y, a continuación, haga clic en **Explorador de DSL**. DSL Explorer solo es visible cuando el diagrama de definición de DSL es la ventana activa.
+    1. Open the DSL Explorer window by clicking the tab under Solution Explorer. If you cannot see it, on the **View** menu point to **Other Windows** and then click **DSL Explorer**. DSL Explorer is visible only when the DSL Definition diagram is the active window.
 
-    2. Abra el ventana Propiedades y colóquelo para poder ver las propiedades y el explorador de DSL al mismo tiempo.
+    2. Open the Properties window and position it so that you can see DSL Explorer and Properties at the same time.
 
-    3. En el explorador de DSL, expanda **Editor**, **pestañas del cuadro de herramientas**, *\<your > de DSL*y, a continuación, **herramientas**.
+    3. In DSL Explorer, expand **Editor**, **Toolbox Tabs**, *\<your DSL>* , and then **Tools**.
 
-    4. Haga clic en **ExampleElement**. Este es el elemento del cuadro de herramientas que se usa para crear elementos.
+    4. Click **ExampleElement**. This is the toolbox item that is used to create elements.
 
-    5. En el ventana Propiedades, cambie la propiedad **nombre** a **persona**.
+    5. In the Properties window, change the **Name** property to **Person**.
 
-         Observe que la propiedad **Caption** también cambia.
+         Notice that the **Caption** property also changes.
 
-    6. Del mismo modo, cambie el nombre de la herramienta **ExampleConnector** a **ParentLink**. Modifique la propiedad **Caption** para que no sea una copia de la propiedad Name. Por ejemplo, escriba **vínculo primario**.
+    6. In the same manner, change the name of the **ExampleConnector** tool to **ParentLink**. Alter the **Caption** property so that it is not a copy of the Name property. For example, enter **Parent Link**.
 
-3. Vuelva a generar el DSL.
+3. Rebuild the DSL.
 
-    1. Guarde el archivo de definición de DSL.
+    1. Save the DSL Definition file.
 
-    2. Haga clic en **transformar todas las plantillas** en la barra de herramientas de explorador de soluciones
+    2. Click **Transform All Templates** in the toolbar of Solution Explorer
 
-    3. Presione F5. Espere hasta que aparezca la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    3. Presione F5. Wait until the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] appears.
 
-4. En la solución de depuración en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de prueba. Arrastre los elementos a él desde el cuadro de herramientas. Observe que los títulos de herramienta y los nombres de tipo en DSL Explorer han cambiado.
+4. In the Debugging solution in the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open a test model file. Drag elements onto it from the toolbox. Notice that the tool captions and the type names in DSL Explorer have changed.
 
-5. Guarde el archivo de modelo.
+5. Save the model file.
 
-6. Abra un archivo. TT y reemplace las apariciones del tipo y los nombres de propiedad anteriores por los nuevos nombres.
+6. Open a .tt file and replace occurrences of the old type and property names with the new names.
 
-7. Asegúrese de que el nombre de archivo que se especifica en el archivo. TT especifica el modelo de prueba.
+7. Make sure that the file name that is specified in the .tt file specifies your test model.
 
-8. Guarde el archivo. TT. Abra el archivo generado para ver el resultado de la ejecución del código en el archivo. TT. Compruebe que es correcta.
+8. Save the .tt file. Open the generated file to see the result of running the code in the .tt file. Verify that it is correct.
 
-### <a name="add-domain-properties-to-classes"></a>Agregar propiedades de dominio a clases
- Agregue propiedades a una clase de dominio, por ejemplo, para representar los años de nacimiento y muerte de una persona.
+### <a name="add-domain-properties-to-classes"></a>Add Domain Properties to Classes
+ Add properties to a domain class, for example to represent the years of birth and death of a Person.
 
- Para que las nuevas propiedades estén visibles en el diagrama, debe agregar elementos *Decorator* a la forma que muestra el elemento de modelo. También debe asignar las propiedades a los elementos Decorator.
+ To make the new properties visible on the diagram, you must add *decorators* to the shape that displays the model element. You must also map the properties to the decorators.
 
-##### <a name="to-add-properties-and-display-them"></a>Para agregar propiedades y mostrarlas
+##### <a name="to-add-properties-and-display-them"></a>To add properties and display them
 
-1. Agregue las propiedades.
+1. Add the properties.
 
-   1. En el diagrama de definición de DSL, haga clic con el botón secundario en la clase de dominio **Person** , seleccione **Agregar**y, a continuación, haga clic en **propiedad de dominio**.
+   1. In the DSL Definition diagram, right-click the **Person** domain class, point to **Add**, and then click **Domain Property**.
 
-   2. Escriba una lista de nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **entrar** después de cada uno de ellos.
+   2. Type a list of new property names, such as **Birth** and **Death**. Press **Enter** after each one.
 
-2. Agregue elementos Decorator que mostrarán las propiedades de la forma.
+2. Add decorators that will display the properties in the shape.
 
-   1. Siga la línea gris que se extiende desde la clase de dominio person al otro lado del diagrama. Se trata de una asignación de elemento de diagrama. Vincula la clase de dominio a una clase de forma.
+   1. Follow the gray line that extends from the Person domain class to the other side of the diagram. This is a diagram element map. It links the domain class to a shape class.
 
-   2. Haga clic con el botón secundario en esta clase de forma, seleccione **Agregar**y, a continuación, haga clic en **Decorator de texto**.
+   2. Right-click this shape class, point to **Add**, and then click **Text Decorator**.
 
-   3. Agregue dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.
+   3. Add two decorators with names such as **BirthDecorator** and **DeathDecorator**.
 
-   4. Seleccione cada nuevo elemento Decorator y, en el ventana Propiedades, establezca el campo **posición** . Esto determina dónde se mostrará el valor de la propiedad de dominio en la forma. Por ejemplo, establezca **InnerBottomLeft** y **InnerBottomRight**.
+   4. Select each new decorator, and in the Properties window, set the **Position** field. This determines where the domain property value will be displayed on the shape. For example, set **InnerBottomLeft** and **InnerBottomRight**.
 
-        ![Definición de la forma de compartimiento](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
+        ![Compartment shape definition](../modeling/media/familyt-compartment.png "FamilyT_Compartment")
 
-3. Asigne los elementos Decorator a las propiedades.
+3. Map the decorators to the properties.
 
-   1. Abra la ventana detalles de DSL. Normalmente, se encuentra en una pestaña junto a la ventana de salida. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en **detalles de DSL**.
+   1. Open the DSL Details window. It is usually in a tab next to the Output window. If you cannot see it, on the **View** menu, point to **Other Windows**, and then click **DSL Details**.
 
-   2. En el diagrama de definición de DSL, haga clic en la línea que conecta la clase de dominio **Person** con la clase Shape.
+   2. On the DSL definition diagram, click the line that connects the **Person** domain class to the shape class.
 
-   3. En **detalles de DSL**, en la pestaña **asignaciones de Decorator** , haga clic en la casilla de un elemento Decorator sin asignar. En la **propiedad Mostrar**, seleccione la propiedad de dominio a la que desea asignarla. Por ejemplo, asigne **BirthDecorator** a **Birth**.
+   3. In **DSL Details**, on the **Decorator Maps** tab, click the check box on an unmapped decorator. In **Display Property**, select the domain property to which you want it mapped. For example, map **BirthDecorator** to **Birth**.
 
-4. Guarde el DSL, haga clic en transformar todas las plantillas y presione F5.
+4. Save the DSL, click Transform All Templates, and press F5.
 
-5. En un diagrama de modelo de ejemplo, compruebe que ahora puede hacer clic en las posiciones que eligió y escribir valores en ellas. Además, al seleccionar una forma **persona** , el ventana Propiedades muestra las nuevas propiedades nacimiento y muerte.
+5. In a sample model diagram, verify that you can now click the positions you chose and type values into them. In addition, when you select a **Person** shape, the Properties window displays the new properties Birth and Death.
 
-6. En un archivo. TT, puede agregar código que obtenga las propiedades de cada persona.
+6. In a .tt file, you can add code that obtains the properties of each person.
 
-   ![Diagrama de árbol de familia, cuadro de herramientas y explorador](../modeling/media/familyt-instance.png "FamilyT_Instance")
+   ![Family tree diagram, toolbox, and explorer](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
-### <a name="define-new-classes"></a>Definir clases nuevas
- Puede Agregar clases de dominio y relaciones a un modelo. Por ejemplo, podría crear una nueva clase para representar ciudades y una nueva relación para representar que una persona ha vivido en una ciudad.
+### <a name="define-new-classes"></a>Define New Classes
+ You can add domain classes and relationships to a model. For example, you could create a new class to represent towns, and a new relationship to represent that a person lived in a town.
 
- Para que los distintos tipos sean distintos en un diagrama del modelo, puede asignar las clases de dominio a distintos tipos de formas o a formas con diferentes colores y geometría.
+ To make the different types distinct on a model diagram, you can map the domain classes to different kinds of shape, or to shapes with different geometry and colors.
 
-##### <a name="to-add-and-display-a-new-domain-class"></a>Para agregar y mostrar una nueva clase de dominio
+##### <a name="to-add-and-display-a-new-domain-class"></a>To add and display a new domain class
 
-1. Agregue una clase de dominio y conviértalo en un elemento secundario de la raíz del modelo.
+1. Add a domain class and make it a child of the model root.
 
-    1. En el diagrama de definición de DSL, haga clic en la herramienta **incrustar relación** , haga clic en la clase raíz **FamilyTreeModel**y, a continuación, haga clic en una parte vacía del diagrama.
+    1. In the DSL Definition diagram, click the **Embedding Relationship** tool, click the root class **FamilyTreeModel**, and then click in an empty part of the diagram.
 
-         Aparece una nueva clase de dominio que está conectada a FamilyTreeModel con una relación de incrustación.
+         A new domain class appears, that is connected to the FamilyTreeModel with an embedding relationship.
 
-         Establezca su nombre, por ejemplo, **ciudad**.
-
-        > [!NOTE]
-        > Cada clase de dominio, excepto la raíz del modelo, debe ser el destino de al menos una relación de incrustación, o debe heredar de una clase que sea el destino de una inserción. Por esta razón, a menudo es conveniente crear una clase de dominio mediante la herramienta de relación de incrustación.
-
-    2. Agregue una propiedad de dominio a la nueva clase, por ejemplo **nombre**.
-
-2. Agregue una relación de referencia entre persona y ciudad.
-
-    1. Haga clic en la herramienta **relación de referencia** , haga clic en persona y, a continuación, en ciudad.
-
-         ![Fragmento de definición de DSL: raíz del árbol de familia](../modeling/media/familyt-root.png "FamilyT_Root")
+         Set its name, for example **Town**.
 
         > [!NOTE]
-        > Las relaciones de referencia representan referencias cruzadas de una parte del árbol del modelo a otra.
+        > Every domain class except the root of the model must be the target of at least one embedding relationship, or it must inherit from a class that is the target of an embedding. For this reason, it is frequently convenient to create a domain class by using the Embedding Relationship tool.
 
-3. Agregue una forma para representar ciudades en los diagramas del modelo.
+    2. Add a domain property to the new class, for example **Name**.
 
-    1. Arrastre una **forma de geometría** desde el cuadro de herramientas al diagrama y cambie su nombre, por ejemplo **TownShape**.
+2. Add a reference relationship between Person and Town.
 
-    2. En el ventana Propiedades, establezca los campos de apariencia de la nueva forma, como color de relleno y geometría.
+    1. Click the **Reference Relationship** tool, click Person and then click Town.
 
-    3. Agregue un elemento Decorator para mostrar el nombre de la ciudad y asígnele el nombre NameDecorator. Establezca su propiedad posición.
+         ![DSL definition fragment: family tree root](../modeling/media/familyt-root.png "FamilyT_Root")
 
-4. Asigne la clase de dominio ciudad a TownShape.
+        > [!NOTE]
+        > Reference relationships represent cross-references from one part of the model tree to another.
 
-    1. Haga clic en la herramienta **mapa de elementos de diagrama** , haga clic en la clase de dominio ciudad y, a continuación, en la clase de forma TownShape.
+3. Add a shape to represent towns on the model diagrams.
 
-    2. En la pestaña asignaciones de elemento **Decorator** de la ventana **detalles de DSL** con el conector de mapas seleccionado, Active NameDecorator y establezca la **propiedad display** en Name.
+    1. Drag a **Geometry Shape** from the toolbox to the diagram and rename it, for example **TownShape**.
 
-5. Cree un conector para mostrar la relación entre person y ciudades.
+    2. In the Properties window, set the Appearance fields of the new shape, such as Fill Color and Geometry.
 
-    1. Arrastre un conector desde el cuadro de herramientas hasta el diagrama. Cambie su nombre y establezca sus propiedades de apariencia.
+    3. Add a Decorator to display the name of the town, and rename it NameDecorator. Set its Position property.
 
-    2. Use la herramienta de **asignación de elementos de diagrama** para vincular el nuevo conector a la relación entre persona y ciudad.
+4. Map the Town domain class to the TownShape.
 
-         ![Definición del árbol de familia con el mapa de formas agregado](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
+    1. Click the **Diagram Element Map** tool, then click the Town domain class, and then the TownShape shape class.
 
-6. Cree una herramienta de elemento para crear una nueva ciudad.
+    2. In the **Decorator Maps** tab of the **DSL Details** window with the map connector selected, check NameDecorator and set **Display Property** to Name.
 
-    1. En **DSL Explorer**, expanda **Editor** y, a continuación, **pestañas del cuadro de herramientas**.
+5. Create a connector to display the relationship between Person and Towns.
 
-    2. Haga clic con el botón secundario en *\<your > DSL* y haga clic en **Agregar nuevo elemento herramienta**.
+    1. Drag a Connector from the toolbox to the diagram. Rename it and set its appearance properties.
 
-    3. Establezca la propiedad **nombre** de la nueva herramienta y establezca su propiedad **clase** en ciudad.
+    2. Use the **Diagram Element Map** tool to link the new connector to the relationship between Person and Town.
 
-    4. Establezca la propiedad **icono del cuadro de herramientas** . Haga clic en **[...]** y, en el campo **nombre de archivo** , seleccione un archivo de icono.
+         ![Family Tree definition with added shape map](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")
 
-7. Cree una herramienta de conector para crear un vínculo entre ciudades y People.
+6. Create an element tool for making a new Town.
 
-    1. Haga clic con el botón secundario en *\<your > DSL* y haga clic en **Agregar nueva herramienta de conector**.
+    1. In **DSL Explorer**, expand **Editor** then **Toolbox Tabs**.
 
-    2. Establezca la propiedad nombre de la nueva herramienta.
+    2. Right-click *\<your DSL>* and then click **Add New Element Tool**.
 
-    3. En la propiedad **ConnectionBuilder** , seleccione el generador que contiene el nombre de la relación persona-ciudad.
+    3. Set the **Name** property of the new tool, and set its **Class** property to Town.
 
-    4. Establezca el **icono del cuadro de herramientas**.
+    4. Set the **Toolbox Icon** property. Click **[...]** and in the **File name** field, select an icon file.
 
-8. Guarde la definición de DSL, haga clic en **transformar todas las plantillas**y, a continuación, presione **F5**.
+7. Create a connector tool for making a link between towns and people.
 
-9. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de prueba. Use las nuevas herramientas para crear ciudades y vínculos entre ciudades y persons. Tenga en cuenta que solo puede crear vínculos entre los tipos de elemento correctos.
+    1. Right-click *\<your DSL>* and then click **Add New Connector Tool**.
 
-10. Cree código que muestre la ciudad en la que vive cada persona. Las plantillas de texto son una de las ubicaciones donde puede ejecutar este código. Por ejemplo, puede modificar el archivo Sample.tt existente en la solución de depuración para que contenga el código siguiente:
+    2. Set the Name property of the new tool.
+
+    3. In the **ConnectionBuilder** property, select the builder that contains the name of the Person-Town relationship.
+
+    4. Set the **Toolbox Icon**.
+
+8. Save the DSL Definition, click **Transform All Templates**, and then press **F5**.
+
+9. In the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], open a test model file. Use the new tools to create towns and links between towns and persons. Notice that you can only create links between the correct types of element.
+
+10. Create code that lists the town in which each person lives. Text templates are one of the places where you can run such code. For example, you could modify the existing Sample.tt file in the Debugging solution so that it contains the following code:
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -369,34 +369,34 @@ En este tema se explican los conceptos básicos de la definición y el uso de un
 
     ```
 
-     Al guardar el archivo *. TT, se creará un archivo subsidiario que contiene la lista de personas y sus residencias. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
+     When you save the *.tt file, it will create a subsidiary file that contains the list of people and their residences. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
-## <a name="validation-and-commands"></a>Validación y comandos
- También podría desarrollar este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir, que se aseguran de que el modelo se encuentre en un estado correcto. Por ejemplo, puede definir una restricción para asegurarse de que la fecha de nacimiento de un elemento secundario es posterior a la de sus elementos primarios. La característica de validación muestra una advertencia si el usuario de DSL intenta guardar un modelo que interrumpe cualquiera de las restricciones. Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
+## <a name="validation-and-commands"></a>Validation and Commands
+ You could develop this DSL further by adding validation constraints. These constraints are methods that you can define, that make sure that the model is in a correct state. For example, you could define a constraint to make sure that the birth date of a child is later than that of its parents. The validation feature displays a warning if the DSL user tries to save a model that breaks any of the constraints. For more information, see [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
 
- También puede definir comandos de menú que el usuario puede invocar. Los comandos pueden modificar el modelo. También pueden interactuar con otros modelos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y con recursos externos. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ You can also define menu commands that the user can invoke. Commands can modify the model. They can also interact with other models in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] and with external resources. For more information, see [How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
-## <a name="deploying-the-dsl"></a>Implementación de DSL
- Para permitir a otros usuarios usar el lenguaje específico de dominio, distribuya un archivo de extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Esto se crea al compilar la solución DSL.
+## <a name="deploying-the-dsl"></a>Deploying the DSL
+ To allow other users to use the domain-specific language, you distribute a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) file. This is created when you build the DSL solution.
 
- Busque el archivo. vsix en la carpeta bin de la solución. Cópielo en el equipo en el que desea instalarlo. En ese equipo, haga doble clic en el archivo VSIX. El DSL puede usarse en todas las instancias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de ese equipo.
+ Locate the .vsix file in the bin folder of your solution. Copy it to the computer on which you want to install it. On that computer, double-click the VSIX file. The DSL can be used in all instances of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] on that computer.
 
- Puede usar el mismo procedimiento para instalar el DSL en su propio equipo, de modo que no tenga que usar la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ You can use the same procedure to install the DSL on your own computer so that you do not have to use the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="Reset"></a>Quitar DSL experimentales anteriores
- Si ha creado DSL experimentales que ya no desea, puede quitarlos del equipo restableciendo el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia experimental.
+## <a name="Reset"></a> Removing old Experimental DSLs
+ If you have created experimental DSLs that you no longer want, you can remove them from your computer by resetting the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Experimental instance.
 
- Esto quitará del equipo todos los DSL experimentales y otras extensiones experimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se trata de extensiones que se han ejecutado en modo de depuración.
+ This will remove from your computer all experimental DSLs and other experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. These are extensions that have been executed in debugging mode.
 
- Este procedimiento no quita los DSL ni otras extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que se hayan instalado por completo ejecutando el archivo VSIX.
+ This procedure does not remove DSLs or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions that have been fully installed by executing the VSIX file.
 
-#### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para restablecer la instancia experimental de Visual Studio
+#### <a name="to-reset-the-visual-studio-experimental-instance"></a>To reset the Visual Studio Experimental instance
 
-1. Haga clic en **Inicio**, **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**.
+1. Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
 
-2. Recompile cualquier DSL experimental u otras extensiones experimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que desee usar.
+2. Rebuild any experimental DSLs or other experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions that you still want to use.
 
 ## <a name="see-also"></a>Vea también
- [Descripción de los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md) [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [SDK y el SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Understanding Models, Classes and Relationships](../modeling/understanding-models-classes-and-relationships.md) [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

@@ -1,5 +1,5 @@
 ---
-title: Administración de excepciones con el depurador | Documentos de Microsoft
+title: Managing Exceptions with the Debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690506"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301091"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
  En la ventana **Configuración de excepciones** , expanda el nodo de una categoría de excepciones (por ejemplo, **Excepciones de Common Language Runtime**, es decir, las excepciones. NET) y active la casilla de una excepción concreta dentro de esa categoría (por ejemplo **System.AccessViolationException**). También puede seleccionar una categoría de excepciones completa.  
   
- ![Comprobar AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  Si activa una determinada excepción, la ejecución del depurador se interrumpirá siempre que se produzca la excepción, independientemente de si está controlada o no. En este punto, la excepción se denomina primera excepción. A continuación se muestran un par de escenarios de ejemplo:  
   
@@ -135,13 +135,13 @@ Una excepción es una indicación de estado de error que se produce mientras se 
    }  
    ```  
   
-    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()**.  
+    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()** .  
   
    Si desea restaurar la configuración de excepciones a los valores predeterminados, haga clic en el botón **Restaurar** de la barra de herramientas:  
   
-   ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
+### <a name="BKMK_UserUnhandled"></a> Setting the debugger to continue on user-unhandled exceptions  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
 1. En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
@@ -150,9 +150,9 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
 3. Esta configuración se puede cambiar para excepciones concretas (seleccione la excepción, haga clic con el botón derecho y active o desactive **Continuar si no está controlada en el código de usuario**) o para toda una categoría de excepciones (por ejemplo, todas las excepciones de Common Language Runtime).  
   
-   Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
+   Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
   
-   ![se interrumpe en usuario&#45;excepción unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Agregar y eliminar excepciones  
  Las excepciones se pueden agregar y eliminar. Puede eliminar cualquier tipo de excepción de cualquier categoría; para ello, seleccione la excepción y haga clic en el botón **Eliminar** (el signo menos) de la barra de herramientas de **Configuración de excepciones** , o haga clic con el botón derecho en la excepción y seleccione **Eliminar** en el menú contextual. Eliminar una excepción tiene el mismo efecto que no activar la excepción: el depurador no se interrumpirá cuando se produzca la excepción.  
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  Puede agregar la excepción a **Configuración de excepciones** del modo siguiente:  
   
- ![Agregar excepción genérica](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
   
 ## <a name="see-also"></a>Vea también  
- [Continuar la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)   
- [Cómo: Examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)   
- [Uso de tiempo de ejecución comprueba sin la biblioteca de tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Asistente de excepciones](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
+ [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
+ [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [Exception Assistant](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

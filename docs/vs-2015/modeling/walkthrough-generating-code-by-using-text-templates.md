@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: generar código mediante plantillas de texto | Microsoft Docs'
+title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659251"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295498"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La generación de código permite producir código de programa que está fuertem
  En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.
 
 > [!NOTE]
-> La aplicación [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
+> La aplicación [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
 
  Este es el archivo de ejemplo:
 
@@ -421,4 +421,4 @@ namespace MyProject
  Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Vea también
- [Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
+ [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)

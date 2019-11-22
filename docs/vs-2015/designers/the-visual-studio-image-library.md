@@ -1,5 +1,5 @@
 ---
-title: Biblioteca de imágenes | Microsoft Docs
+title: Image Library | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -17,19 +17,19 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c86506395ee388c7481fa8a5e9ee32320a63c030
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dca65fdfdfa6ad4ea27aa97033a95b4ed27e81ca
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664092"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300827"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteca de imágenes de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La biblioteca de imágenes de Visual Studio contiene imágenes de aplicación que aparecen en Microsoft Visual Studio, Microsoft Windows, Office System y otro software de Microsoft. Este conjunto de más de 1000 imágenes se puede utilizar para crear aplicaciones que tengan una apariencia coherente con el software de Microsoft.
 
- [Descargar la biblioteca de imágenes de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+ [Descargar la biblioteca de imágenes de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=275090)
 
  La biblioteca de imágenes se divide en cinco categorías: Elementos comunes, Acciones, Anotaciones, Iconos y Objetos. Se incluyen archivos Léame en formato PDF para los tipos Elementos comunes e Iconos. Estos archivos contienen información sobre el uso adecuado de estas imágenes en las aplicaciones.
 

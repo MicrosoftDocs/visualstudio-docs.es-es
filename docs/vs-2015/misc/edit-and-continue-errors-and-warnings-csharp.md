@@ -1,5 +1,5 @@
 ---
-title: Editar y continuar de errores y advertencias (C#) | Documentos de Microsoft
+title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822969"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299286"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errores y advertencias de Editar y continuar (C#)
 Ha realizado una edición en una sección de código que no se permite en Editar y continuar de Visual C#.  
@@ -75,13 +75,13 @@ Ha realizado una edición en una sección de código que no se permite en Editar
   
  Las modificaciones del código declarativo que afectan a la estructura pública de una clase suelen estar prohibidas, y no se permiten algunas modificaciones que se podrían hacer en un método, cuerpo de propiedad o declaraciones privadas en una clase. Siempre que es posible, Editar y continuar marca el código que no se puede editar en gris claro y muestra un mensaje de error.  
   
- Para obtener más información sobre las ediciones compatibles con la característica Editar y continuar de [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], vea [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Si necesita más información sobre una advertencia o error específico, puede buscar o publicar en el [foro de IDE de Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)de MSDN.  
+ Para obtener más información sobre las ediciones compatibles con la característica Editar y continuar de [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], vea [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Si necesita más información sobre una advertencia o error específico, puede buscar o publicar en el [foro de IDE de Visual C#](https://go.microsoft.com/fwlink/?LinkId=214693)de MSDN.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 1. En el menú **Depurar** , elija **Deshacer** para deshacer el cambio.  
   
-     -o bien-  
+     o bien  
   
 2. Detenga la sesión de depuración, realice las tareas de edición e inicie una nueva sesión de depuración.  
   

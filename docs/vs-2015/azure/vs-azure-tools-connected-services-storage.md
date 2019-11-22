@@ -1,5 +1,5 @@
 ---
-title: Adición de Azure Storage con servicios conectados
+title: Add Azure Storage by using Connected Services
 description: Adición de Azure Storage a la aplicación mediante el cuadro de diálogo Agregar servicios conectados de Visual Studio
 author: ghogen
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: e68f7503ecc75c03e9f4beda2003415d3175ee7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963896"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300173"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adición de almacenamiento de Azure mediante Servicios conectados de Visual Studio
 Con Visual Studio, puede conectar cualquiera de lo siguiente a Azure Storage mediante el uso del cuadro de diálogo **Add Connected Services** (Agregar servicios conectados):
@@ -63,12 +63,12 @@ Cuando se completa, el cuadro de diálogo **Add Connected Services** (Agregar se
 ## <a name="how-your-project-is-modified"></a>¿Cómo se modifica el proyecto?
 Cuando haya terminado con el cuadro de diálogo, Visual Studio agrega referencias y modifica determinados archivos de configuración. Los cambios específicos dependen del tipo de proyecto:
 
-- Proyecto de ASP.NET - [¿Qué ha ocurrido? - Proyectos de ASP.NET](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- Proyecto de ASP.NET Core - [¿Qué ha ocurrido? - Proyectos de ASP.NET 5](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Proyecto de servicio en la nube (roles web y roles de trabajo) - [¿Qué ha ocurrido? - Proyectos de servicios en la nube](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- Proyecto de ASP.NET - [¿Qué ha ocurrido? - Proyectos de ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- Proyecto de ASP.NET Core - [¿Qué ha ocurrido? - Proyectos de ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- Proyecto de servicio en la nube (roles web y roles de trabajo) - [¿Qué ha ocurrido? - Proyectos de servicios en la nube](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - Proyecto de trabajo web - [¿Qué ha ocurrido? - Proyectos de trabajo web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Foro de MSDN: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Blog del equipo de Microsoft Azure Storage](http://blogs.msdn.com/b/windowsazurestorage/)
+- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Blog del equipo de Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Documentación de Azure Storage](https://docs.microsoft.com/azure/storage/)

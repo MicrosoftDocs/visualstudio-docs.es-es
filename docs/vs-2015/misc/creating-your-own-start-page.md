@@ -1,5 +1,5 @@
 ---
-title: Crear su propia página de inicio | Documentos de Microsoft
+title: Creating Your Own Start Page | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432300"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299322"
 ---
 # <a name="creating-your-own-start-page"></a>Crear su propia página de inicio
 Puede crear una página de inicio personalizada con la plantilla de proyecto de página de inicio o mediante la creación de una página de inicio en blanco.  
@@ -28,10 +28,10 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Para crear una página de inicio personalizada mediante la plantilla de proyecto de página de inicio  
   
-1. Descargue e instale la [plantilla de proyecto de página de inicio](http://go.microsoft.com/fwlink/?LinkId=186204) desde la Galería de Visual Studio.  
+1. Descargue e instale la [plantilla de proyecto de página de inicio](https://go.microsoft.com/fwlink/?LinkId=186204) desde la Galería de Visual Studio.  
   
     > [!WARNING]
-    > En este momento no se ha actualizado la plantilla de proyecto de página de inicio de Visual Studio 2010. Para obtener información sobre cómo actualizar esta plantilla, vea [Cómo: Actualizar una página de inicio personalizada de Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > En este momento no se ha actualizado la plantilla de proyecto de página de inicio de Visual Studio 2010. For information about how to upgrade this template, see [How to: Upgrade a Visual Studio Custom Start Page](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Después de haber instalado la plantilla, cree un nuevo proyecto de página de inicio con ella.  
   
@@ -78,7 +78,7 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
     Debe mantener los archivos .vsix y .pkgdef para fines de implementación.  
   
-   Como alternativa, puede crear una página de inicio en blanco mediante la creación de un archivo XAML con la estructura de etiquetas correcta para que la reconozca Visual Studio. Después, puede agregar marcado y código subyacente para obtener la apariencia y funcionalidad deseadas. Para obtener más información, consulte [creación de una página de inicio personalizada](../extensibility/creating-a-custom-start-page.md).  
+   Como alternativa, puede crear una página de inicio en blanco mediante la creación de un archivo XAML con la estructura de etiquetas correcta para que la reconozca Visual Studio. Después, puede agregar marcado y código subyacente para obtener la apariencia y funcionalidad deseadas. For more information, see [Creating a Custom Start Page](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Probar y aplicar la página de inicio personalizada  
  No establezca la instancia principal para ejecutar la página de inicio personalizada hasta que compruebe que no se bloquea. Cuando haya probado su página de inicio personalizada, puede aplicarla al sistema repitiendo los tres últimos pasos de este procedimiento en la instancia principal de Visual Studio.  
@@ -97,8 +97,8 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
     Se muestra la página de inicio en funcionamiento. Debe cerrar la instancia experimental, volver a copiar los archivos modificados y, luego, volver a abrir la instancia experimental para ver los nuevos cambios.  
   
-   Puede compartir su página de inicio personalizada si carga el archivo .vsix del directorio bin\debug para la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sitio Web o a otro sitio Web o intranet un recurso compartido. Para obtener más información, consulta [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   You can share your custom Start Page by uploading the .vsix file from your bin\debug directory to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, or to another Web site or intranet share. Para obtener más información, consulta [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Personalizar la página principal](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Tutorial: Agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Customizing the Start Page](../ide/customizing-the-start-page-for-visual-studio.md)   
+ [Tutorial: adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

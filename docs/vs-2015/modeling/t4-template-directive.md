@@ -1,5 +1,5 @@
 ---
-title: Directiva de plantilla T4 | Microsoft Docs
+title: T4 Template Directive | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658554"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298145"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se inicia con una directiva `template`, que especifica cómo se debería procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
 
- Para obtener información general sobre cómo escribir plantillas de texto, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+ For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Usar la directiva de plantilla
 
@@ -34,7 +34,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="compileroptions-attribute"></a>compilerOptions (atributo)
  Ejemplo: `compilerOptions="optimize+"`
 
- Valores válidos: cualquier opción de compilador válida. Para obtener más información, vea [ C# opciones del compilador por categoría](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) y [Visual Basic opciones del compilador enumeradas por categoría](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valid values: Any valid compiler options. For more information, see [C# Compiler Options Listed by Category](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) and [Visual Basic Compiler Options Listed by Category](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Se omite para plantillas (preprocesadas) en tiempo de ejecución.
 
@@ -43,7 +43,7 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="culture-attribute"></a>culture (atributo)
  Ejemplo: `culture="de-CH"`
 
- Valores válidos: "", la referencia cultural de todos los idiomas, que es el valor predeterminado.
+ Valid values: "", the invariant culture, which is the default.
 
  Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, vea <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
@@ -56,13 +56,13 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
 debug="true"
 ```
 
- Valores válidos: `true, false`. False es la opción predeterminada.
+ Valid values: `true, false`. False es la opción predeterminada.
 
  Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
- En el caso de las plantillas en tiempo de diseño, el archivo de código intermedio se escribirá en el directorio **% temp%** .
+ For design-time templates the intermediate code file will be written to your **%TEMP%** directory.
 
- Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, abra el menú contextual de la plantilla de texto en Explorador de soluciones y elija **depurar plantilla T4**.
+ To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.
 
 ## <a name="hostspecific-attribute"></a>hostspecific (atributo)
  Ejemplo:
@@ -71,11 +71,11 @@ debug="true"
 hostspecific="true"
 ```
 
- Valores válidos: `true, false, trueFromBase`. False es la opción predeterminada.
+ Valid values: `true, false, trueFromBase`. False es la opción predeterminada.
 
- Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. La propiedad es una referencia al host del motor de transformación y se declara como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.
+ Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. The property is a reference to the host of the transformation engine, and is declared as [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.
 
- Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. Es aplicable a [las plantillas en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pero no a [las plantillas en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. It’s applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Si `hostspecific` es `true` y está utilizando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede convertir `this.Host` a IServiceProvider para tener acceso a las características de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
 
@@ -104,11 +104,11 @@ Content of myFile is:
 ## <a name="language-attribute"></a>language (atributo)
  Ejemplo: `language="VB"`
 
- Valores válidos: `C#` (valor predeterminado)
+ Valid values: `C#` (default)
 
  `VB`
 
- El atributo Language especifica el lenguaje ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)]) que se va a usar para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
+ The language attribute specifies the language ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../includes/csprcs-md.md)]) to use for the source code in statement and expression blocks. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.
 
  Por ejemplo:
 
@@ -131,7 +131,7 @@ Squares of numbers:
  Puede especificar que el código de programa de su plantilla puede heredar de otra clase, que también se puede generar a partir de una plantilla de texto.
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Herencia en una plantilla de texto (preprocesada) en tiempo de ejecución
- Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Las plantillas en tiempo de ejecución son aquellas que tienen la propiedad **herramienta personalizada** establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, vea [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Si no especifica un atributo `inherits`, se generan una clase base y una clase derivada en la plantilla de texto. Al especificar un atributo `inherits`, únicamente se genera la clase derivada. Puede escribir una clase base a mano, pero debe proporcionar los métodos que utiliza la clase derivada.
 
@@ -207,16 +207,16 @@ This is the common footer.
 > Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique hostspecific="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herencia en una plantilla de texto en tiempo de diseño
- Una plantilla de texto en tiempo de diseño es un archivo para el que la **herramienta personalizada** está establecida en **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte de su proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.
+ A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte de su proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.
 
  Para una plantilla de texto en tiempo de diseño, puede especificar cualquier clase base que se derive de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilice la directiva `<#@assembly#>` para cargar el ensamblado o proyecto que contiene la clase base.
 
- Para obtener más información, vea ["herencia en las plantillas de texto" en el blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+ For more information, see ["Inheritance in Text Templates" in Gareth Jones’ Blog](https://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Atributo LinePragmas
  Ejemplo: `linePragmas="false"`
 
- Valores válidos: `true` (valor predeterminado)
+ Valid values: `true` (default)
 
  `false`
 
@@ -227,7 +227,7 @@ This is the common footer.
 ## <a name="visibility-attribute"></a>Atributo visibility
  Ejemplo: `visibility="internal"`
 
- Valores válidos: `public` (valor predeterminado)
+ Valid values: `public` (default)
 
  `internal`
 

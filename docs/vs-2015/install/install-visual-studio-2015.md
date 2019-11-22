@@ -19,18 +19,18 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a31bc328c20aada21b05edeef61886d57e914165
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433018"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298046"
 ---
 # <a name="install-visual-studio-2015"></a>Instalación de Visual Studio 2015
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En esta página se incluye información detallada para ayudarle con la instalación de **Visual Studio 2015**, nuestro conjunto integrado de herramientas de productividad para desarrolladores. También hemos incluido vínculos para ayudarle a obtener rápidamente información sobre [características](https://www.visualstudio.com/news/vs2015-vs.aspx), [ediciones](http://go.microsoft.com/fwlink/?LinkID=242142), [requisitos del sistema](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [descargas](http://go.microsoft.com/fwlink/?LinkId=517106)y mucho más.
+En esta página se incluye información detallada para ayudarle con la instalación de **Visual Studio 2015**, nuestro conjunto integrado de herramientas de productividad para desarrolladores. También hemos incluido vínculos para ayudarle a obtener rápidamente información sobre [características](https://www.visualstudio.com/news/vs2015-vs.aspx), [ediciones](https://go.microsoft.com/fwlink/?LinkID=242142), [requisitos del sistema](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs), [descargas](https://go.microsoft.com/fwlink/?LinkId=517106)y mucho más.
 
 ## <a name="quick-links"></a>Vínculos rápidos
 
@@ -38,17 +38,17 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 
 |||
 |------------------|----------------|
-|![Descargar Visual Studio](../install/media/downloads.png "descargas") |**Descargas de**: Para instalar Visual Studio 2015, puede descargar un archivo ejecutable de producto desde la [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) página (se requiere suscripción), o bien los medios de instalación de la caja del producto. [Más información sobre cómo descargar las versiones actuales o anteriores de Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
-|![Más información sobre características](../install/media/features.png "características") |**Características**: Para obtener más información acerca de las características de Visual Studio 2015, vea las notas de [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), y [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Conozca las novedades en cada SKU](../install/media/sku.png "SKU") |**SKU**: Para obtener información sobre el contenido disponible en cada edición de Visual Studio de 2015, vea nuestra página [Comparación de las ofertas de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=242142).|
-|![Ver los requisitos del sistema](../install/media/system-requirements.png "requisitos del sistema") |**Requisitos del sistema**: Para ver los requisitos del sistema de cada edición de Visual Studio 2015, vea la página [Compatibilidad de Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs).|
-|![Busque la clave de producto](../install/media/product-keys.png "las claves de producto") |**Las claves de producto**: Para encontrar la clave de producto, vea el [Cómo: Busque la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) tema.|
-|![Obtenga información sobre las licencias](../install/media/licensing.png "Licensing") |**Licencias**: Para obtener información sobre las opciones para clientes individuales o empresariales, vea las notas del producto [Licencias de Visual Studio y MSDN](https://www.microsoft.com/download/details.aspx?id=13350).|
+|![Descarga de Visual Studio](../install/media/downloads.png "Descargas") |**Downloads**: To install Visual Studio 2015, you can download a product executable file from the  [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) page (subscription required), or use the installation media from the boxed product. [Learn more about how to download current or previous versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
+|![Learn more about features](../install/media/features.png "Características") |**Features**: To learn  more about the features in Visual Studio 2015, see the release notes for [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), and [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Find out what's in each SKU](../install/media/sku.png "SKU") |**SKU**: Para obtener información sobre el contenido disponible en cada edición de Visual Studio de 2015, vea nuestra página [Comparación de las ofertas de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=242142).|
+|![View system requirements](../install/media/system-requirements.png "Requisitos del sistema") |**System Requirements**: To view the system requirements for each edition of Visual Studio 2015, see the [Visual Studio 2015 Compatibility](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) page.|
+|![Locate your Product Key](../install/media/product-keys.png "Claves de producto") |**Product Keys**: To locate your product key, see the [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) topic.|
+|![Find out about licensing](../install/media/licensing.png "Licencias") |**Licensing**: To find out about licensing options for both individuals or enterprise customers, see  the [Visual Studio and MSDN Licensing](https://www.microsoft.com/download/details.aspx?id=13350) white paper.|
 
-## <a name="custom"></a> Instalación predeterminada frente a Instalación personalizada
+## <a name="custom"></a> Default vs. Custom Setup
  Cuando se instala Visual Studio de 2015, puede incluir o excluir componentes que usaría diariamente. Esto significa que la instalación predeterminada suele ocupar menos espacio e instalarse más rápido que una instalación personalizada. También significa que muchos componentes instalados de forma predeterminada en versiones anteriores ahora se consideran componentes personalizados que se deben seleccionar de forma explícita en esta versión.
 
- ![Cuadro de diálogo programa de instalación de Visual Studio 2015](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Visual Studio 2015 Setup Dialog](../ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
  Entre los componentes personalizados se incluye Visual C++, Visual F#, SQL Server Data Tools, herramientas y SDK móviles multiplataforma y SDK y extensiones. Puede instalar cualquiera de los componentes personalizados más adelante si no los selecciona durante la configuración inicial.
 
@@ -57,17 +57,17 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 
  La lista completa de componentes personalizados es la siguiente:
 
-|Conjuntos de características|Componentes|
+|Feature Sets|Componentes|
 |------------------|----------------|
 |**Actualizaciones**|Visual Studio 2015 Update 3|
 |**Lenguajes de programación**|Visual C++<br />Visual F#<br />Python Tools para Visual Studio|
-|**Desarrollo de Web y de Windows**|Herramientas de publicación de ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools para Visual Studio (3ª parte)<br />Kit de desarrollo de Silverlight<br />Herramientas de desarrollo de aplicaciones universales de Windows<br />SDK y herramientas de Windows 10<br />Herramientas de Windows 8.1 y Windows Phone 8.0/8.1<br />SDK y herramientas de Windows 8.1|
-|**Desarrollo móvil multiplataforma**|C# / .NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Desarrollo móvil de Visual C++ para iOS y Android<br />Clang con Microsoft CodeGen|
-|**Herramientas comunes y Kits de desarrollo de Software**|Kit de desarrollo nativo de Android (3ª parte)<br /> SDK de Android [parte 3ª]<br />Las API de instalación de Android SDK (3ª parte)<br />Apache Ant (3ª parte)<br /> Kit de desarrollo de Java SE (3ª parte)<br /> Joyent Node.js (3ª parte)|
-|**Herramientas comunes**|GIT para Windows (3ª parte)<br />Extensión de GitHub para Visual Studio (3ª parte)<br /> Herramientas de extensibilidad de Visual Studio|
+|**Desarrollo de Web y de Windows**|Herramientas de publicación de ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (3rd Party)<br />Kit de desarrollo de Silverlight<br />Herramientas de desarrollo de aplicaciones universales de Windows<br />SDK y herramientas de Windows 10<br />Herramientas de Windows 8.1 y Windows Phone 8.0/8.1<br />SDK y herramientas de Windows 8.1|
+|**Desarrollo móvil multiplataforma**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Desarrollo móvil de Visual C++ para iOS y Android<br />Clang con Microsoft CodeGen|
+|**Common Tools and Software Development Kits**|Android Native Development Kit (3rd Party)<br /> Android SDK [3rd Party]<br />Android SDK Setup APIs (3rd Party)<br />Apache Ant (3rd Party)<br /> Java SE Development Kit (3rd Party)<br /> Joyent Node.js (3rd Party)|
+|**Herramientas comunes**|Git for Windows (3rd Party)<br />GitHub Extension for Visual Studio (3rd Party)<br /> Herramientas de extensibilidad de Visual Studio|
 
 ## <a name="installing"></a> Instalación de Visual Studio
- Puede instalar Visual Studio mediante el uso de medios de instalación (DVD), mediante el uso de su servicio de suscripción de Visual Studio desde el [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) sitio Web, mediante la descarga un instalador web desde el [Visual Studio Descargas de](http://go.microsoft.com/fwlink/?LinkId=517106) sitio Web, o mediante la creación de un diseño de instalación sin conexión (consulte la [crear una sin conexión instalación de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página para obtener más detalles).
+ You can install Visual Studio by using installation media (DVDs), by using your Visual Studio subscription service from the [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) website, by downloading  a web installer from the [Visual Studio Downloads](https://go.microsoft.com/fwlink/?LinkId=517106) website, or by creating an offline installation layout (see the [Create an Offline Installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) page for more details).
 
 > [!IMPORTANT]
 > Necesita credenciales de administrador para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sin embargo, no las necesita para usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] después de su instalación.
@@ -82,7 +82,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 
  Para obtener más información sobre este requisito de la cuenta de administrador local, vea el artículo de Knowledge Base [Se produce un error en la instalación de SQL Server si la cuenta de instalación no tiene ciertos derechos de usuario](https://support.microsoft.com/kb/2000257).
 
-### <a name="BKMK_Media"></a> Uso de medios de instalación
+### <a name="BKMK_Media"></a> Using installation media
  Para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el directorio raíz del disco de instalación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ejecute el archivo de instalación de la edición que desee:
 
 |Edición|Archivo de instalación|
@@ -91,33 +91,33 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 |Visual Studio Professional|vs_professional.exe|
 |Comunidad de Visual Studio|vs_community.exe|
 
-### <a name="BKMK_Website"></a> Descargar desde el sitio Web del producto
- Visite el [descargas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) página y seleccione la edición de Visual Studio que desee.
+### <a name="BKMK_Website"></a> Downloading from the product website
+ Visit the [Visual Studio Downloads](https://go.microsoft.com/fwlink/?LinkId=517106) page, and select the edition of Visual Studio that you want.
 
-### <a name="downloading-from-your-subscription-service"></a>Descargar desde su servicio de suscripción
- Visite el [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) página y seleccione la edición de Visual Studio que desee.
+### <a name="downloading-from-your-subscription-service"></a>Downloading from your subscription service
+ Visit  the [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) page, and select the edition of Visual Studio that you want.
 
-### <a name="BKMK_Offline"></a> Crear un diseño de instalación sin conexión
- Si no tienes el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] medios de instalación, o no tiene una suscripción de Visual Studio, o no desea instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con el instalador web, puede realizar una instalación "desconectada" creando lo que se conoce como sin conexión diseño de instalación. Para obtener más información, consulte el [crear una sin conexión instalación de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página.
+### <a name="BKMK_Offline"></a> Creating an offline installation layout
+ If you do not have the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installation media, or you do not have a Visual Studio subscription,  or you do not want to install [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] by using the web installer, you can perform a "disconnected" installation by creating what is known as an offline installation layout. For more information, see the [Create an Offline Installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) page.
 
-## <a name="enterprise"></a> Implementación de Visual Studio en una empresa
- Para obtener información sobre cómo implementar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a través de una red, vea el [Guía del Administrador de Visual Studio](../install/visual-studio-administrator-guide.md).
+## <a name="enterprise"></a> Deploying Visual Studio in an Enterprise
+ For information about how to deploy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] over a network, see the [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
-### <a name="BKMK_Virtualized"></a> Instalar Visual Studio en un entorno virtualizado.
+### <a name="BKMK_Virtualized"></a> Installing Visual Studio in a virtualized environment
  **Problemas de vídeo con Hyper-V**
 
  Si ejecuta Windows Server 2008 R2 con Hyper-V habilitado y un adaptador de gráficos acelerado, el sistema puede funcionar despacio.
 
- Para obtener más información, vea las siguientes páginas del sitio web de Microsoft [Rendimiento de vídeo puede disminuir cuando un equipo con Windows Server 2008 o equipo basada en Windows Server 2008 R2 tiene habilitado el rol de Hyper-V y un adaptador de pantalla acelerado](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Para obtener más información, vea la página siguiente en el sitio web de Microsoft: [El rendimiento de vídeo puede disminuir cuando un equipo basado en Windows Server 2008 o Windows Server 2008 R2 tiene habilitado el rol de Hyper-V y tiene instalado un adaptador de pantalla acelerado](https://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Emulación de dispositivos con Hyper-V**
 
  Al instalar Visual Studio 2015 en hardware real sin virtualización, puede elegir características que habilitan la emulación de dispositivos Windows y Android mediante Hyper-V. Al instalar en Hyper-V, no podrá emular los dispositivos Windows o Android. Esto es así porque los emuladores son máquinas virtuales y actualmente no es posible hospedar una máquina virtual dentro de otra. La solución alternativa consiste en disponer de dispositivos reales Windows o Android en los que pueda implementar directamente la aplicación y depurarla.
 
-## <a name="optionalComponents"></a> Instalar componentes opcionales
- Si desea instalar los componentes que no haya seleccionado durante la instalación original, utilice el procedimiento siguiente.
+## <a name="optionalComponents"></a> Installing optional components
+ If you want to install components that you might not have selected during your original installation, use the following procedure.
 
-#### <a name="to-install-optional-components"></a>Para instalar componentes opcionales
+#### <a name="to-install-optional-components"></a>To install optional components
 
 1. En el **Panel de control**, en la página **Programas y características** , elija la edición del producto a la que desea agregar uno o más componentes y, a continuación, elija **Cambiar**.
 
@@ -140,10 +140,10 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 
 5. Haga clic en el botón **Actualizar**.
 
-   Para obtener más información acerca de cómo instalar o implementar la Ayuda sin conexión, consulte el [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).
+   For more information about how to install or deploy offline Help, see the [Help Viewer Administrator Guide](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="serviceReleases"></a> Búsqueda de versiones Service Release y actualizaciones del producto
- Visual Studio no actualiza automáticamente las extensiones al realizar la actualización desde versiones anteriores porque no todas las extensiones son compatibles. Debe reinstalar las extensiones desde la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o desde el Editor de software.
+ Visual Studio no actualiza automáticamente las extensiones al realizar la actualización desde versiones anteriores porque no todas las extensiones son compatibles. You must reinstall the extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) or from the software publisher.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Para comprobar automáticamente si hay actualizaciones Service Release
 
@@ -167,32 +167,32 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 
 2. En el Asistente para la instalación, elija **Reparar**, elija **Siguiente**y siga las instrucciones restantes.
 
-#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>Para reparar Visual Studio en los modos silencioso o pasivos (es decir, reparar desde el origen)
+#### <a name="to-repair-visual-studio-in-silent-or-passive-modes-that-is-to-repair-from-source"></a>To repair Visual Studio in silent or passive modes (that is, to repair from source)
 
 1. En el equipo donde está instalado Visual Studio, abra el símbolo del sistema de Windows.
 
 2. Escriba los parámetros siguientes:
 
-     *DVDRoot* \\< archivo de instalación\> \</quiet&#124;/passive > [/norestart] /Repair
+     *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/Repair
 
-## <a name="troubleshooting"></a> Solución de problemas de instalación
+## <a name="troubleshooting"></a> Troubleshooting an installation
  Use estos recursos para obtener ayuda con los problemas de instalación y configuración:
 
-- [Foro sobre la configuración e instalación de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=151190) . Consulte las preguntas y respuestas de otras personas en la comunidad de Visual Studio. Si no encuentra lo que necesita, haga sus propias preguntas.
+- [Foro sobre la configuración e instalación de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=151190) . Consulte las preguntas y respuestas de otras personas en la comunidad de Visual Studio. Si no encuentra lo que necesita, haga sus propias preguntas.
 
-- [Sitio web Soporte de Microsoft para Visual Studio](http://go.microsoft.com/fwlink/?LinkID=251019) . Lea los artículos de Knowledge Base (KB) y póngase en contacto con el servicio de soporte técnico de Microsoft para obtener información sobre los problemas con la instalación de Visual Studio.
+- [Sitio web Soporte de Microsoft para Visual Studio](https://go.microsoft.com/fwlink/?LinkID=251019) . Lea los artículos de Knowledge Base (KB) y póngase en contacto con el servicio de soporte técnico de Microsoft para obtener información sobre los problemas con la instalación de Visual Studio.
 
 ## <a name="relatedTopics"></a> Temas relacionados
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
-|[Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Describe cómo instalar Visual Studio cuando no están conectados a Internet.
+|[Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Describes how to install Visual Studio when you are not connected to the Internet.
 |[Instalar distintas versiones de Visual Studio en paralelo](../install/install-visual-studio-versions-side-by-side.md)|Proporciona información sobre cómo instalar varias versiones de Visual Studio en el mismo equipo.|
-|[Usar parámetros de la línea de comandos para instalar Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Muestra los parámetros de línea de comandos que puede usar al instalar Visual Studio desde un símbolo del sistema.|
-|[Desinstalar Visual Studio](../install/uninstall-visual-studio.md)|Describe cómo desinstalar Visual Studio.|
+|[Usar parámetros de la línea de comandos para instalar Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Lists the command-line parameters that you can use when you install Visual Studio from a command prompt.|
+|[Desinstalar Visual Studio](../install/uninstall-visual-studio.md)|Describes how to uninstall Visual Studio.|
 |[Guía del administrador de Visual Studio](../install/visual-studio-administrator-guide.md)|Proporciona información sobre las opciones de implementación de Visual Studio.|
 |[Biblioteca de imágenes de Visual Studio](../designers/the-visual-studio-image-library.md)|Proporciona información sobre cómo instalar gráficos que se pueden utilizar en las aplicaciones de Visual Studio.|
-|[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Incluye información y vínculos que pueden ayudarle a usar Visual Studio de forma más eficaz.|
+|[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|Includes information and links that can help you use Visual Studio more effectively.|
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Firma&gt; elemento (implementación ClickOnce) | Microsoft Docs'
+title: '&lt;Signature&gt; Element (ClickOnce Deployment) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df18b63ff306525cba74ef0932c97edd64eee797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68198119"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295078"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (implementación ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; Element (ClickOnce Deployment)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.  
@@ -37,12 +37,12 @@ Contiene la información necesaria para firmar digitalmente este manifiesto de i
 ```  
   
 ## <a name="remarks"></a>Comentarios  
- Firmar un manifiesto de implementación mediante una firma con doble cifrado es opcional pero recomendado. Para obtener más información acerca de la firma XML archivos vea la World Wide Web Consortium recomendación, "XML-Signature Syntax and Processing," se describe en [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Signing a deployment manifest using an envelope signature is optional, but recommended. For more information about signing XML files see the World Wide Web Consortium Recommendation, "XML-Signature Syntax and Processing," described at [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
   
- Si desea firmar el manifiesto, se deben proporcionar valores hash para todos los archivos. No se puede firmar un manifiesto con archivos que no se aplica un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de este tipo de archivos.  
+ If you want to sign your manifest, hashes must be provided for all files. A manifest with files that are not hashed cannot be signed, because users cannot verify the contents of unhashed files.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se ilustra un `Signature` elemento en un manifiesto de implementación que se usa en un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación.  
+ The following code example illustrates a `Signature` element in a deployment manifest used in a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

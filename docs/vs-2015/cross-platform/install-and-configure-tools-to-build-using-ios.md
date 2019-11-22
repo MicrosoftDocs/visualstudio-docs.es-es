@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434145"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299810"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
+Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
   
 > [!NOTE]
 > Para obtener información sobre el uso de servicios Mac hospedados en la nube en lugar de en un equipo Mac, vea [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Las instrucciones sirven para compilar con Visual Studio Tools para Apache Cordova. Para usar las instrucciones y compilar con Visual C++ para el desarrollo móvil multiplataforma, sustituya vcremote por vs-mda-remote.  
@@ -69,7 +69,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
      Para obtener información detallada sobre la creación de perfiles de aprovisionamiento, vea [Creación de perfiles de aprovisionamiento mediante el centro de miembros](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) en la biblioteca de desarrolladores de iOS.  
   
-- [Node.js](http://nodejs.org/)  
+- [Node.js](https://nodejs.org/en/)  
   
 - Versión actualizada de npm.  
   
@@ -78,7 +78,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> Instalar al agente remoto para iOS  
- Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.  
+ Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.  
   
  Antes de instalar el agente remoto, asegúrese de se cumplen los [Requisitos previos](#Prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
@@ -88,9 +88,9 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   El conmutador de instalación global (**-g**) es recomendable, pero no obligatorio.  
+   El conmutador de instalación global ( **-g**) es recomendable, pero no obligatorio.  
   
-   Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](http://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils.  
+   Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](https://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils.  
   
   > [!NOTE]
   > Para instalar Homebrew, debe disponer de acceso sudo (administrador). Si necesita instalar vcremote sin sudo, puede instalar Homebrew manualmente en una ubicación usr/local y agregar su carpeta bin a la ruta de acceso. Para obtener más información, vea la [documentación de Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente el modo de desarrollador, escriba este comando en la aplicación Terminal: `DevToolsSecurity –enable`  
@@ -149,7 +149,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 3. En la barra de menús de Visual Studio, elija **Herramientas**, **Opciones**.  
   
-4. En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++**, **iOS**.  
+4. En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++** , **iOS**.  
   
 5. En los campos **Nombre de host** y **Puerto** , escriba los valores especificados por el agente remoto cuando se inició. El nombre de host puede ser el nombre DNS o dirección IP de su equipo Mac. El puerto predeterminado es 3030.  
   
@@ -158,9 +158,9 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 6. Si usa el agente remoto en el modo de conexión segura predeterminado, active la casilla **Seguro** y, a continuación, escriba el valor de PIN especificado por el agente remoto en el campo **Pin** . Si usa el agente remoto en el modo de conexión no segura, desactive la casilla **Seguro** y deje el campo **Pin** en blanco.  
   
-7. Pulse **Emparejar** para habilitar el emparejamiento.  
+7. Elija **Emparejar** para habilitar el emparejamiento.  
   
-    ![Configurar conexión de vcremote para compilaciones de iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Configurar la conexión de vcremote para compilaciones de iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
     El emparejamiento continúa hasta que se cambie el nombre de host o el puerto. Si cambia el nombre de host o del puerto en el cuadro de diálogo **Opciones** , para deshacer el cambio, elija el botón **Revertir** para volver al emparejamiento anterior.  
   
@@ -240,4 +240,4 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
      Donde *config_file_path* es la ruta de acceso a un archivo de configuración en formato JSON. Las opciones de inicio y sus valores no deben incluir guiones.  
   
 ## <a name="see-also"></a>Vea también  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Instalar Visual C++ para desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

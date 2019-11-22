@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740182"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300025"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
  Las siguientes tablas identifican qué características ALM de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles tienen limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.  
   
 ## <a name="agile-tools"></a>Herramientas de Agile  
- Vínculo de referencia: **[Trabajo](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** de (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
+ Vínculo de referencia: **[Trabajar](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
   
  Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.  
   
@@ -67,27 +67,27 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)|Sí|Excepto en los límites específicos de la plataforma donde la implementación no se resuelve hasta el tiempo de ejecución.|  
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||  
   
-## <a name="build"></a>Compilación  
- Vínculo de referencia: **[Versión](/azure/devops/pipelines/index)**  
+## <a name="build"></a>Compilar  
+ Vínculo de referencia: **[Compilar](/azure/devops/pipelines/index)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
-|Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Configuring TFS for Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sitio web de Xamarin).|  
+|Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Configuring TFS for Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sitio web de Xamarin).|  
 |Servidor de compilación local vinculado a Visual Studio Team Services|Sí|Vea [Build server (Servidor de compilación)](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obtener instrucciones.|  
 |Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Crear su aplicación de Xamarin).|  
 |Compilar definiciones con scripts anteriores y posteriores|Sí||  
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
 ## <a name="testing"></a>Pruebas  
- Vínculo de referencia: **[Probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Vínculo de referencia: **[Testing the application (Probar la aplicación)](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
 |Planear pruebas, crear casos de prueba y organizar conjuntos de pruebas|Sí||  
 |Pruebas manuales|Sí||  
 |Administrador de pruebas (grabar y reproducir pruebas)|Sí|Dispositivos Windows y emuladores de Android únicamente de Visual Studio. Con la [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder) es posible grabar en todos los dispositivos.|  
-|Cobertura de código|N/D||  
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Configuring TFS for Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sitio web de Xamarin).|  
+|Cobertura de código|no disponible||  
+|[Hacer una prueba unitaria del código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Configuring TFS for Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sitio web de Xamarin).|  
 |[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La grabadora de pruebas de interfaz de usuario de Visual Studio es solo para Windows. Para todas las plataformas, vea [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código  
@@ -98,17 +98,17 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sí||  
 |[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sí||  
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sí||  
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|Sin|Use [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) a través de Xamarin Studio en su lugar. Tenga en cuenta que el generador de perfiles de Xamarin está actualmente en vista previa y aún no funciona para destinos de Windows.|  
-|[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Sin|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|  
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use [Xamarin Profiler](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) a través de Xamarin Studio en su lugar. Tenga en cuenta que el generador de perfiles de Xamarin está actualmente en vista previa y aún no funciona para destinos de Windows.|  
+|[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|  
   
 ## <a name="release-management"></a>Administración de versiones  
- Vínculo de referencia: **[Automatización de implementaciones con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
 |Administrar procesos de versión|Sí||  
 |Implementar en servidores para la instalación de prueba mediante scripts|Sí||  
-|Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Cargar a la tienda de aplicaciones|Partial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Supervisión con HockeyApp  
  Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net/features/)**  

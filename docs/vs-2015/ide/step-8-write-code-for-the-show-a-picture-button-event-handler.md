@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aaa522efe5cb69dd9334a2cc3db7fc2846b1af7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646896"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300006"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
 
   El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla TAB para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.
 
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 4 o el](http://go.microsoft.com/fwlink/?LinkId=205215) [tutorial 1: C# crear un visor de imágenes en-vídeo 4](http://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](https://go.microsoft.com/fwlink/?LinkId=205215) or [Tutorial 1: Create a Picture Viewer in C# - Video 4](https://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen
 
 1. Vaya al Diseñador de Windows Forms y haga doble clic en el botón **Mostrar una imagen**. El IDE va inmediatamente al diseñador de código y mueve su cursor de modo para situarlo dentro del método `showButton_Click()` que agregó previamente.
 
-2. Escriba una `i` en la línea vacía entre las dos llaves { }. (En Visual Basic, escriba en la línea vacía entre sub privado... y End Sub). Se abre una ventana de **IntelliSense** , tal como se muestra en la siguiente imagen.
+2. Escriba una `i` en la línea vacía entre las dos llaves { }. (In Visual Basic, type on the empty line between Private Sub… and End Sub.) An **IntelliSense** window opens, as shown in the following picture.
 
-     ![IntelliSense con código de&#35; visual c++](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense con C# código Visual
+     ![IntelliSense with Visual C&#35; code](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense with Visual C# code
 
-3. La ventana **IntelliSense** debe mostrar resaltada la palabra **if**. (Si no es así, escriba una `f` en minúsculas y lo hará). Observe cómo un pequeño cuadro de *información sobre herramientas* situado junto a la ventana **IntelliSense** aparece con la descripción, **fragmento de código para la instrucción If**. (En Visual Basic, la información sobre herramientas también indica que se trata de un fragmento de código, pero con un texto ligeramente diferente). Quiere usar ese fragmento de código, así que elija la tecla TAB para **insertarlo** en el código. Pulse de nuevo la tecla TAB para usar el fragmento de código **if**. (Si ha hecho clic en alguna otra parte y ha desaparecido la ventana **IntelliSense**, borre la **i** con la tecla de retroceso y vuelva a escribirla; se volverá a abrir la ventana **IntelliSense**).
+3. La ventana **IntelliSense** debe mostrar resaltada la palabra **if**. (If not, enter a lowercase `f`, and it will.) Notice how a little *tooltip* box next to the **IntelliSense** window appears with the description, **Code snippet for if statement**. (In Visual Basic, the tooltip also states that this is a snippet, but with slightly different wording.) You want to use that snippet, so choose the TAB key to insert **if** into your code. Pulse de nuevo la tecla TAB para usar el fragmento de código **if**. (Si ha hecho clic en alguna otra parte y ha desaparecido la ventana **IntelliSense**, borre la **i** con la tecla de retroceso y vuelva a escribirla; se volverá a abrir la ventana **IntelliSense**).
 
      ![Código de Visual C&#35;](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Código de Visual C#
 
@@ -49,16 +49,16 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
 
          Para obtener más información sobre `OpenFileDialog`, vea [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
 
-    3. Escriba un punto (`.`) (muchos programadores llaman a este punto). Dado que escribió un punto justo después de **OpenFileDialog1**, se abre una ventana de **IntelliSense** , rellenada con todos los métodos y propiedades del componente **OpenFileDialog** . Se trata de las mismas propiedades que aparecen en la ventana **Propiedades** cuando selecciona este componente en el Diseñador de Windows Forms. También puede elegir métodos que indiquen al componente que realice acciones (como abrir un cuadro de diálogo).
+    3. Type a period (`.`) (Many programmers call this a dot.) Because you typed a dot right after **openFileDialog1**, an **IntelliSense** window opens, filled in with all of the **OpenFileDialog** component's properties and methods. Se trata de las mismas propiedades que aparecen en la ventana **Propiedades** cuando selecciona este componente en el Diseñador de Windows Forms. También puede elegir métodos que indiquen al componente que realice acciones (como abrir un cuadro de diálogo).
 
         > [!NOTE]
         > La ventana **IntelliSense** puede mostrar propiedades y métodos. Para determinar qué se está mostrando, fíjese en el icono del lado izquierdo de cada elemento de la ventana **IntelliSense**. Se muestra una imagen de un bloque junto a cada método y una imagen de una llave inglesa (o fija) junto a cada propiedad. Además, aparece un icono de rayo junto a cada evento. Estas imágenes se muestran como sigue.
 
-         ![Icono de método](../ide/media/express-iconmethod.png "Express_IconMethod") Icono de método
+         ![Method icon](../ide/media/express-iconmethod.png "Express_IconMethod") Method icon
 
-         ![Icono de propiedad](../ide/media/express-iconproperty.png "Express_IconProperty") Icono de propiedad
+         ![Property icon](../ide/media/express-iconproperty.png "Express_IconProperty") Property icon
 
-         ![Icono de evento](../ide/media/express-iconevent.png "Express_IconEvent") Icono de evento
+         ![Event icon](../ide/media/express-iconevent.png "Express_IconEvent") Event icon
 
     4. Empiece a escribir `ShowDialog` (el uso de mayúsculas o minúsculas no es significativo en IntelliSense). El método `ShowDialog()` mostrará el cuadro de diálogo **Abrir archivo**. Cuando la ventana haya resaltado **ShowDialog**, pulse la tecla TAB. También puede resaltar “ShowDialog” y elegir la tecla F1 para obtener ayuda sobre ella.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: invocar el depurador de flujo de trabajo | Microsoft Docs'
+title: 'How to: Invoke the Workflow Debugger | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,36 +9,36 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34c5cdae4b8730c9058a87061456d5ab6d186c53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603667"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292898"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Invocar el depurador de flujo de trabajo
 Generalmente, los flujos de trabajo se depuran de la misma manera que los programas escritos otros lenguajes de programación de Visual Studio. Puede iniciar el depurador de flujo de trabajo de las siguientes maneras:
 
-- Seleccione **asociar al proceso** en el menú **depurar** para seleccionar el proceso de host en ejecución para la instancia de flujo de trabajo. Este procedimiento es igual que el que se utiliza para adjuntar a un proceso de host en código administrado.
+- Select **Attach to Process** on the **Debug** menu to select the running host process for your workflow instance. Este procedimiento es igual que el que se utiliza para adjuntar a un proceso de host en código administrado.
 
-- Presione **F5** para iniciar la ejecución de una instancia del flujo de trabajo o para continuar con la ejecución después de que se haya alcanzado un punto de interrupción.
+- Press **F5** to start running an instance of the workflow, or to continue to run after a breakpoint has been hit.
 
-- Usar depuración remota. Para obtener información sobre cómo usar la depuración remota, vea [Cómo: habilitar la depuración remota](http://go.microsoft.com/fwlink/?LinkId=196257).
+- Usar depuración remota. For information on using remote debugging, see [How to: Enable Remote Debugging](https://go.microsoft.com/fwlink/?LinkId=196257).
 
     > [!NOTE]
-    > Si la aplicación de flujo de trabajo tiene como destino la arquitectura x86 y se hospeda en un equipo que ejecuta un sistema operativo de 64 bits, la depuración remota no funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] esté instalado en el equipo remoto o se cambie el destino de la aplicación de flujo de trabajo a  **Cualquier CPU**.
+    > If the workflow application targets the x86 architecture and is hosted on a machine running a 64 bit operating system, then remote debugging will not work unless [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] is installed on the remote machine or the target for the workflow application is changed to **Any CPU**.
 
 ### <a name="stepping-through-code"></a>Ejecución paso a paso del código
 
-- **Paso en**: puede entrar en una actividad mediante **F11**. El depurador avanza paso a paso por todos los controladores definidos. Si no hay ningún controlador definido, puede ejecutar la actividad paso a paso o, en las actividades compuestas, que contienen otras actividades, puede entrar en la primera actividad en ejecución.
+- **Step In**: You can step into an activity using **F11**. El depurador avanza paso a paso por todos los controladores definidos. Si no hay ningún controlador definido, puede ejecutar la actividad paso a paso o, en las actividades compuestas, que contienen otras actividades, puede entrar en la primera actividad en ejecución.
 
-- **Paso a paso para salir:** Puede salir de una actividad mediante **Shift-F11**. Al salir paso a paso de una actividad, se ejecutan hasta el final la actividad actual y todas sus actividades del mismo nivel. A continuación, el depurador se interrumpe en el elemento primario de la actividad actual. Al salir paso a paso de un controlador del código, el depurador se interrumpe en la actividad a la que está asociado el controlador.
+- **Step Out:** You can step out of an activity using **Shift-F11**. Al salir paso a paso de una actividad, se ejecutan hasta el final la actividad actual y todas sus actividades del mismo nivel. A continuación, el depurador se interrumpe en el elemento primario de la actividad actual. Al salir paso a paso de un controlador del código, el depurador se interrumpe en la actividad a la que está asociado el controlador.
 
-- **Paso a paso por procedimientos**: puede recorrer una actividad mediante **F10**. Al ejecutar paso a paso por procedimientos una actividad compuesta, el depurador se interrumpe en el primer elemento secundario ejecutable de la actividad compuesta. Al ejecutar paso a paso por procedimientos una actividad no compuesta, como <xref:System.Activities.Statements.Assign>, el depurador ejecuta la actividad y sus controladores asociados y se interrumpe en la actividad siguiente. Si la actividad que se ejecuta es la última actividad secundaria de una actividad compuesta, después de la ejecución el depurador se interrumpe en la actividad primaria.
+- **Step Over**: You can step over an activity using **F10**. Al ejecutar paso a paso por procedimientos una actividad compuesta, el depurador se interrumpe en el primer elemento secundario ejecutable de la actividad compuesta. Al ejecutar paso a paso por procedimientos una actividad no compuesta, como <xref:System.Activities.Statements.Assign>, el depurador ejecuta la actividad y sus controladores asociados y se interrumpe en la actividad siguiente. Si la actividad que se ejecuta es la última actividad secundaria de una actividad compuesta, después de la ejecución el depurador se interrumpe en la actividad primaria.
 
 ### <a name="debugging-with-f5"></a>Depurar con F5
 
-- Si va a compilar un proyecto de aplicación de consola de flujos de trabajo, simplemente presione **F5** para iniciar la depuración en la aplicación y el flujo de trabajo. Si está compilando una biblioteca de actividades por sí sola, es preciso que disponga de una aplicación host ejecutable como proyecto de inicio. Para establecer un proyecto de inicio en **Explorador de soluciones**, haga clic con el botón derecho en el nombre del proyecto y seleccione **establecer como proyecto de inicio**.
+- If you are building a Workflow Console Application project, simply press **F5** to begin debugging into your application and workflow. Si está compilando una biblioteca de actividades por sí sola, es preciso que disponga de una aplicación host ejecutable como proyecto de inicio. To set a startup project in **Solution Explorer**, right-click the project name of the host and select **Set as StartUp Project**.
 
 ## <a name="see-also"></a>Vea también
- [Cómo: establecer puntos de interrupción en flujos de trabajo](../workflow-designer/how-to-set-breakpoints-in-workflows.md) [Depurar flujos de trabajo con el diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+ [How to: Set Breakpoints in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md) [Debugging Workflows with the Workflow Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

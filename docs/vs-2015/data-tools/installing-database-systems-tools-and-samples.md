@@ -1,5 +1,5 @@
 ---
-title: Instalación de sistemas de base de datos, herramientas y ejemplos | Microsoft Docs
+title: Installing database systems, tools, and samples | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -17,41 +17,41 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6f260af17a2fab142c5f5fa58e4ed267dc469d9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 091338e411369e40f19e028cd19b6cb2e697718c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651505"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299610"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalación de sistemas de base de datos, herramientas y ejemplos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio no incluye ningún sistema de bases de datos que no sea el que usa internamente. Para desarrollar una aplicación conectada a datos en Visual Studio, normalmente se instala el sistema de base de datos en el equipo de desarrollo local y, después, se implementa la aplicación y la base de datos en un entorno de producción cuando están listos. Para que el sistema de base de datos sea accesible desde aplicaciones .NET y para que esté visible en las ventanas de Visual Studio Data Tools, debe tener un proveedor de datos ADO.NET. Un proveedor debe admitir específicamente Entity Framework Si tiene previsto utilizar Entity Data models en la aplicación .NET.     Muchos proveedores se ofrecen a través del administrador de paquetes NuGet o a través de la galería de Visual Studio.
+Visual Studio itself does not include any database systems other than those it uses internally. To develop a data-connected application in Visual Studio, you typically install the database system on your local development machine, and then deploy the application and database to a production environment when they are ready. For the database system to be accessible from .NET applications and to be visible in Visual Studio data tools windows, it must have an ADO.NET data provider. A provider must specifically support Entity Framework if you plan to use Entity data models in your .NET application.     Many providers are offered through the NuGet Package Manager or through the Visual Studio Gallery.
 
- Para el desarrollo de SQL, asegúrese de que ha instalado SQL Server Data Tools en Visual Studio. Haga clic en el menú **Ver** . Si no ve Explorador de objetos de SQL Server, vaya a panel de control y cambie Visual Studio. En el instalador, seleccione **Microsoft SQL Server Data Tools**.
+ For SQL development, ensure that you have SQL Server Data Tools installed in Visual Studio. Click the **View** menu. If you don't see SQL Server Object Explorer, go to Control Panel and change Visual Studio. In the installer, select **Microsoft SQL Server Data Tools**.
 
- Si usa Azure Storage API, instale los emuladores de Azure Storage en el equipo local durante el desarrollo con el fin de evitar cargos hasta que esté listo para realizar la implementación en producción. Para obtener más información, vea [usar el emulador de Azure Storage para desarrollo y pruebas](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
+ If you are using Azure Storage APIs,   install the Azure storage emulators on your local machine during development in order to avoid charges until you are ready to deploy to production. For more information, see [Use the Azure Storage Emulator for Development and Testing](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
 
- La lista siguiente incluye algunos de los sistemas de base de datos más populares que se pueden usar en los proyectos de Visual Studio. La lista no es exhaustiva. Para obtener una lista de proveedores de terceros que ofrecen proveedores de datos de ADO.NET que permiten una integración profunda con las herramientas de Visual Studio, consulte [proveedores de datos de ADO.net](https://msdn.microsoft.com/library/dd363565.aspx).
+ The following list includes some of the more popular database systems that can be used in Visual Studio projects. The list is not exhaustive. For a list of third-party vendors that offer ADO.NET data providers that enable deep integration with Visual Studio tooling, see [ADO.NET Data Providers](https://msdn.microsoft.com/library/dd363565.aspx).
 
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server
- SQL Server es la oferta de base de datos insignia de Microsoft. SQL Server 2016 ofrece un rendimiento innovador, seguridad avanzada y informes y análisis enriquecidos e integrados. Se distribuye en varias ediciones diseñadas para distintos usos: desde análisis de negocios altamente escalables y de alto rendimiento, para usar en un solo equipo. SQL Server Express es una edición completa de SQL Server diseñada para la redistribución e inserción.  LocalDB es una edición simplificada de SQL Server Express que no requiere ninguna configuración y que se ejecuta en el proceso de la aplicación. Puede descargar uno o ambos productos desde [la página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Muchos de los ejemplos de SQL de esta sección usan SQL Server LocalDB. SQL Server Management Studio (SSMS) es una aplicación de administración de bases de datos independiente que tiene más funcionalidad de la que se proporciona en Visual Studio Explorador de objetos de SQL Server. Puede obtener SSMS desde el vínculo anterior.
+ SQL Server is the Microsoft flagship database offering. SQL Server 2016 delivers breakthrough performance, advanced security, and rich, integrated reporting and analytics. It ships in various editions that are designed for different uses: from highly scalable, high-performance business analytics, to use on a single computer. SQL Server Express is a full-featured edition of SQL Server that is tailored for redistribution and embedding.  LocalDB is a simplified edition of SQL Server Express that requires no configuration and runs in your application's process. You can download either or both products from [the SQL Server Express download page](https://www.microsoft.com/sql-server/sql-server-editions-express). Many of the SQL examples in this section use SQL Server LocalDB. SQL Server Management Studio (SSMS) is a stand-alone database management application that has more functionality than what is provided in Visual Studio SQL Server Object Explorer. You can get SSMS from the previous link.
 
 ### <a name="oracle"></a>Oracle
- Puede descargar una edición de pago o gratuita de la base de datos de Oracle desde la página de la [red de tecnología de Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . En cuanto a la compatibilidad en tiempo de diseño para Entity Framework y TableAdapters, necesitará el [herramientas de desarrollo de Oracle para Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Otros productos oficiales de Oracle, incluido Oracle Instant Client, están disponibles a través del administrador de paquetes NuGet.  Puede descargar los esquemas de ejemplo de Oracle siguiendo las instrucciones de la [documentación en pantalla de Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+ You can download a paid or free edition of the Oracle database from the [Oracle Technology Network](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) page. For design-time support for Entity Framework and TableAdapters, you will need the [Oracle Developer Tools for Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Other official Oracle products, including the Oracle Instant Client, are available through the NuGet Package Manager.  You can download Oracle sample schemas by following the instructions in the [Oracle Online Documentation](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ### <a name="mysql"></a>MySQL
- MySQL es un conocido sistema de base de datos de código abierto que se usa ampliamente en empresas y sitios Web. Las descargas para MySQL, MySQL para Visual Studio y productos relacionados están en [MySQL en Windows](http://www.mysql.com/why-mysql/windows/).  Otros fabricantes ofrecen varias extensiones de Visual Studio y aplicaciones de administración independientes para MySQL. Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**).
+ MySQL is a popular open-source database system that is widely used in enterprises and websites. Downloads for MySQL, MySQL for Visual Studio, and related products are at [MySQL on Windows](https://www.mysql.com/why-mysql/windows/).  Third parties offer various Visual Studio extensions and stand-alone management applications for MySQL. You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**).
 
 ### <a name="postgresql"></a>PostgreSQL
- PostgreSQL es un sistema de base de datos relacional de objetos de código abierto y gratuito. Para instalarlo en Windows, puede descargarlo desde la [Página de descarga de PostgreSQL](http://www.postgresql.org/download/windows/).  También puede crear PostgreSQL a partir del código fuente.  El sistema principal de PostgreSQL incluye una interfaz de lenguaje C. Muchos terceros proporcionan paquetes NuGet para usar PostgreSQL desde aplicaciones .NET.  Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**). Quizás el paquete más popular lo proporciona [npgsql.org](http://www.npgsql.org).
+ PostgreSQL is a free, open-source object relational database system. To install it on Windows, you can download it from the [PostgreSQL download page](http://www.postgresql.org/download/windows/).  You can also build PostgreSQL from the source code.  The PostgreSQL core system includes a C language interface. Many third parties provide NuGet packages for using PostgreSQL from .NET applications.  You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**). Perhaps the most popular package is provided by [npgsql.org](http://www.npgsql.org/).
 
 ### <a name="sqlite"></a>SQLite
- SQLite es un motor de base de datos de SQL incrustado que se ejecuta en el propio proceso de la aplicación. Puede descargarlo desde la [Página de descarga de SQLite](http://www.sqlite.org/download.html). También están disponibles muchos paquetes NuGet de terceros para SQLite. Puede examinar las ofertas en el administrador de paquetes NuGet (**herramientas**  > **Administrador de paquetes Nuget**  > **administrar paquetes Nuget para la solución**).
+ SQLite is an embedded SQL database engine that runs in the application's own process. You can download it from the [SQLite download page](http://www.sqlite.org/download.html). Many third-party NuGet packages for SQLite are also available. You can browse the offerings in the NuGet Package Manager (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**).
 
 ### <a name="firebird"></a>Firebird
- Firebird es un sistema de base de datos SQL de código abierto. Puede descargarlo desde la [Página de descarga de Firebird](http://firebirdsql.org/en/downloads/). Un proveedor de datos ADO.NET está disponible a través del administrador de paquetes NuGet.
+ Firebird is an open-source SQL database system. You can download it from the [Firebird download page](http://firebirdsql.org/en/downloads/). An ADO.NET data provider is available through the NuGet Package Manager.
 
 ## <a name="see-also"></a>Vea también
- [Cómo determinar la versión y la edición de SQL Server y sus componentes](http://support.microsoft.com/kb/321185)
+ [Cómo determinar la versión y la edición de SQL Server y sus componentes](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

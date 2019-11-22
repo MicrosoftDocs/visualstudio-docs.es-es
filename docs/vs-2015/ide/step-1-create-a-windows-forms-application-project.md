@@ -9,25 +9,25 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9cf0177efe373933f8c34e1600658160f489a64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667350"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295784"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Paso 1: Crear un proyecto de aplicación de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto de aplicación de Windows Forms.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](http://go.microsoft.com/fwlink/?LinkId=205209) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Para crear un proyecto de Aplicación de Windows Forms
 
 1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**. El cuadro de diálogo debe tener un aspecto similar al que se muestra a continuación.
 
-     ![Cuadro de diálogo nuevo proyecto](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Cuadro de diálogo nuevo proyecto
+     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
 
 2. Seleccione **Visual C#** o **Visual Basic** en la lista **Plantillas instaladas**.
 
@@ -40,7 +40,7 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
     > [!NOTE]
     > El diseño de la ventana puede no ser exactamente igual que el de la ilustración. El diseño exacto de la ventana depende de la versión de Visual Studio, el lenguaje de programación utilizado y otros factores. No obstante, debe comprobar que aparezcan las tres ventanas.
 
-     ![Ventana del IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") Ventana del IDE
+     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
 
      La interfaz contiene tres ventanas: una ventana principal, el **Explorador de soluciones** y la ventana **Propiedades**.
 
@@ -61,7 +61,7 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
 
      Si quiere, también puede pulsar el botón **Guardar todo** de la barra de herramientas que se muestra en la ilustración siguiente.
 
-     ![Botón guardar todo](../ide/media/express-iconsaveall.png "Express_IconSaveAll") de la barra de herramientas Botón guardar todo de la barra de herramientas
+     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
 
      Visual Studio rellena automáticamente el nombre de la carpeta y el nombre del proyecto, y después guarda el proyecto en la carpeta de proyectos.
 

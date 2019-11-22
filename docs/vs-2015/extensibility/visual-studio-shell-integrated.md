@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell (integrado) | Documentos de Microsoft
+title: Visual Studio Shell (Integrated) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 78ccba3ab8c2dda531614fa791eac3100813840a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690928"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299698"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (IDE), el depurador y la integración de control de código fuente. No se incluye ningún lenguaje de programación. Sin embargo, el shell integrado proporcionan un marco que le permite agregar lenguajes de programación.  
+The Visual Studio integrated shell includes the integrated development environment (IDE), debugger, and source control integration. No programming language is included. However, the integrated shell does provide a framework that allows you to add programming languages.  
   
- El shell integrado de Visual Studio es realmente una combinación de la shell aislado de Visual Studio más de una instalación adicional que incluir componentes específicos de shell integrado.  La aplicación de shell integrado debe incluir tanto el shell aislado paquete redistribuible de [paquete redistribuible de Microsoft Visual Studio Shell (aislado)](http://go.microsoft.com/fwlink/?LinkId=616022) , así como el paquete redistribuible de shell integrado desde [Microsoft Visual Studio Shell (integrado) paquete redistribuible](http://go.microsoft.com/fwlink/?LinkId=616021).  
+ The Visual Studio integrated shell is actually a combination of the Visual Studio isolated shell plus an additional install which include integrated shell specific components.  Your integrated shell application should include both the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022) as well as the integrated shell redistributable package from [Microsoft Visual Studio Shell (Integrated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
-> Antes de que puede tener acceso a los paquetes redistribuibles del shell integrado y aislado, se le pedirá que rellene una breve encuesta de cliente.  Después de completar la encuesta, se le dirigirá a una página de Visual Studio Connect con vínculos de descarga del paquete redistribuible.  Puede encontrar los vínculos de descarga en visitas posteriores al sitio de Visual Studio Connect en el **programas &#124; VISUAL STUDIO 2015 integrado y aislado SHELL** ficha.  
+> Before you can access the isolated and integrated shell redistributable packages, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
   
- Si instala la aplicación de shell integrado en el mismo equipo que una versión completa de Visual Studio, componentes de la aplicación se integrarán directamente en Visual Studio.  
+ If you install your integrated shell application on the same computer as a full version of Visual Studio, your application’s components will be integrated directly into Visual Studio.  
   
-## <a name="features-in-the-integrated-shell"></a>Características en el Shell integrado  
+## <a name="features-in-the-integrated-shell"></a>Features in the Integrated Shell  
   
 |||  
 |-|-|  
 |Área de características|Característica|  
-|Compatibilidad con lenguajes|-None|  
-|IDE|<ul><li>Configuración<br /><br /> <ul><li>Crear una configuración</li><li>Importar y exportar configuraciones</li><li>Restablecer la configuración</li></ul></li><li>**Cuadro de herramientas** integración</li><li>**Lista de tareas** integración</li><li>Integración de la Ayuda</li><li>**Opciones de** cuadro de diálogo</li><li>Administración de fuentes y colores</li><li>**Salida** ventana</li><li>**Comando** ventana</li><li>Administración de ventanas</li><li>Los enlaces de teclado, menús y comandos</li><li>En tiempo de ejecución de lenguaje específico de dominio (DSL)</li></ul>|  
-|Sistema de proyectos y tipos de proyecto|-Soluciones y las carpetas de soluciones<br />: Administrador de configuración de la solución<br />: Administración de elementos<br />-Proyecto único y varios proyectos de soluciones<br />-Diseñador de aplicaciones (propiedades del proyecto simplificada)<br />-Agregar referencia Web<br />-Agregar referencia de servicio<br />Proyecto único<br />: Tipos de proyecto de sitio Web de<br />: Proyectos de aplicación web|  
-|Compilar|-Pasos de compilación personalizada en el IDE<br />-Precompilación para protección de la propiedad intelectual (IP)<br />: Firma de código<br />     MSBuild|  
-|Editor|-(Búsqueda unificada, definición de origen, herencia) de herramientas de exploración de código<br />: Navegación de código<br />-   IntelliSense<br />-   SmartTags<br />-Refactorización<br />-Lista descriptiva<br />: Filtrado de IntelliSense<br />-   **Definición de código** ventana|  
-|Diseñador|-Diseñador Windows Presentation Foundation<br />-Diseñador de formularios de Windows<br />-Editor de HTML y diseñador web|  
-|Datos|-   **Explorador de servidores** (simplificado: sólo los datos). Vea la Nota 1.<br />-   **Orígenes de datos** ventana<br />-Todo el conjunto de controles de datos<br />-XML Editor<br />-Data enlaza al origen de datos local (. MDF o. MDB)<br />: Enlace de datos objeto<br />-Enlazar datos al servicio Web<br />-Data enlaza al servidor de base de datos local<br />-Data enlaza al servidor de base de datos remota<br />-Herramientas DDL para los datos remotos<br />-   **Explorador de servidores** extensibilidad ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ejemplos)|  
-|instantáneas|-Depuración local. Vea la nota 2.<br />-Depuración administrada<br />-Depuración local<br />-Adjuntar al proceso local<br />-Adjuntar al proceso remoto<br />-Delegado anónimo<br />: Dominios de aplicación<br />-Depuración ASPX<br />-Attributes<br />-Interrumpir durante la función eval<br />: Los puntos de interrupción<br />: Restricciones de punto de interrupción<br />: Pila de llamadas<br />-   **Comando** ventana<br />-Depuración entre subprocesos<br />: Sugerencias de datos<br />: Visualizador de datos<br />-Compatibilidad del depurador con asistentes para la depuración administradas (MDA)<br />-Compatibilidad con el depurador reenviador de tipos<br />-Compatibilidad con DTEEvents OTB<br />-JMC motor paso a paso<br />-Prueba de AppID debugger (DBGCLR)<br />: Perfil del depurador<br />-Herramientas y opciones del depurador<br />-Iteradores de depuración<br />-Evaluación de expresiones tiempo de diseño<br />-El evaluador de expresiones C#<br />-Desensamblado<br />-Editar y continuar<br />-Ventanas de evaluador de expresiones (inspección, variables locales, automático)<br />: Aplicación auxiliar de excepciones<br />: Excepciones<br />: Ejecución<br />- Genéricos<br />-Obtener el código fuente correcto<br />-Depuración de clúster HPC y de<br />-Depuración de varios idiomas integrada<br />-Depuración interoperabilidad<br />-Depuración just-in-time<br />-Depuración local<br />-Depuración administrada<br />-Control manual (ventana de procesos)<br />-Memoria<br />-Compatibilidad con minivolcado<br />-Modules<br />-Depuración de varios procesos<br />-Depuración nativa<br />-Nueva compatibilidad del motor de depuración<br />-Depuración de código optimizado<br />-Filtrado de windows output<br />-Proceso de hospedaje para la depuración administrada<br />-Procesos<br />-Inspección rápida<br />: Registra<br />-Registros de pila<br />-Depuración remota<br />: Valores devueltos de<br />: Depuración de scripts<br />-Compatibilidad con el servicio origen<br />-Seguridad<br />Side-by-side<br />-SQL<br />: Servidor de símbolos<br />: Puntos de seguimiento<br />: Subprocesos<br />-Visualizaciones<br />-Depurador de extensible Stylesheet Language Transformations (XSLT)|  
-|compatibilidad con 64 bits|-depuración de 64 bits para código administrado y nativo, todos los idiomas<br />-admite x64 nativo|  
-|Control de código fuente (SCC)|-Integración de SCC básica. Vea la Nota 3.<br />-Las herramientas y opciones de comprobación|  
-|Extensibilidad|-Consumir los componentes MEF y VSPackages|  
+|Compatibilidad con lenguajes|-   None|  
+|IDE|<ul><li>Configuración<br /><br /> <ul><li>Create settings</li><li>Import and export settings</li><li>Restablecer la configuración</li></ul></li><li>**Toolbox** integration</li><li>**Task List** integration</li><li>Help integration</li><li>**Options** dialog box</li><li>Fonts and colors management</li><li>**Output** window</li><li>**Command** window</li><li>Administración de ventanas</li><li>Commands, menus, and key bindings</li><li>Domain-specific language (DSL) runtime</li></ul>|  
+|Project System and Project Types|-   Solutions and solution folders<br />-   Solution configuration manager<br />-   Item management<br />-   Single-project and multi-project solutions<br />-   Application Designer (simplified project properties)<br />-   Add Web Reference<br />-   Add Service Reference<br />-   Single-project<br />-   Web site project types<br />-   Web application projects|  
+|Compilar|-   Custom build steps in IDE<br />-   Pre-compilation for intellectual property (IP) protection<br />-   Code signing<br />     MSBuild|  
+|Editor|-   Code browsing tools (unified find, source definition, inheritance)<br />-   Code navigation<br />-   IntelliSense<br />-   SmartTags<br />-   Refactoring<br />-   Pretty listing<br />-   IntelliSense filtering<br />-   **Code Definition** window|  
+|Diseñador|-   Windows Presentation Foundation Designer<br />-   Windows Forms Designer<br />-   Web Designer and HTML Editor|  
+|Datos|-   **Server Explorer** (Simplified: data only). Vea la Nota 1.<br />-   **Data Sources** window<br />-   Full set of data controls<br />-   XML Editor<br />-   Data bind to local data source (.MDF or .MDB)<br />-   Data bind to object<br />-   Data bind to Web service<br />-   Data bind to local database server<br />-   Data bind to remote database server<br />-   DDL tools for remote data<br />-   **Server Explorer** extensibility ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] samples)|  
+|instantáneas|-   Local debugging. See Note 2.<br />-   Managed debugging<br />-   Local debugging<br />-   Attach to local process<br />-   Attach to remote process<br />-   Anonymous delegate<br />-   Application domains<br />-   ASPX Debugging<br />-   Attributes<br />-   Break during Func-eval<br />-   Breakpoints<br />-   Breakpoint constraints<br />-   Callstack<br />-   **Command** window<br />-   Cross-thread debugging<br />-   Data Tips<br />-   Data visualizer<br />-   Debugger support for managed debugging assistants (MDAs)<br />-   Debugger support for type forwarder<br />-   DTEEvents support for OTB<br />-   JMC Stepper<br />-   Debugger AppID test (DBGCLR)<br />-   Debugger profile<br />-   Debugger tools and options<br />-   Debugging iterator<br />-   Design-time expression evaluation<br />-   C# Expression Evaluator<br />-   Disassembly<br />-   Edit and Continue<br />-   Expression evaluator windows (Watch, Locals, Autos)<br />-   Exception Helper<br />-   Exceptions<br />-   Execution<br />- Genéricos<br />-   Getting right source<br />-   HPC/Cluster debugging<br />-   Integrated multi-language debugging<br />-   InterOp debugging<br />-   Just-in-time debugging<br />-   Local debugging<br />-   Managed debugging<br />-   Manual control (Processes window)<br />-   Memory<br />-   MiniDump support<br />-   Modules<br />-   Multi-process debugging<br />-   Native debugging<br />-   New debug engine support<br />-   Optimized code debugging<br />-   Output windows filtering<br />-   Process hosting for managed debugging<br />-   Processes<br />-   Quickwatch<br />-   Registers<br />-   Registers in stack<br />-   Remote debugging<br />-   Return values<br />-   Script debugging<br />-   Source service support<br />-   Security<br />-   Side-by-side<br />-   SQL<br />-   Symbol server<br />-   Trace points<br />-   Thread<br />-   Visualizations<br />-   Extensible Stylesheet Language Transformations (XSLT) debugger|  
+|64-bit Support|-   64-bit debugging for both managed and native code, all languages<br />-   x64 native support|  
+|Source Code Control (SCC)|-   Basic SCC integration. Vea la Nota 3.<br />-   Tools and options verification|  
+|Extensibilidad|-   Consume VSPackages and MEF components|  
   
 ## <a name="notes"></a>Notas  
   
-#### <a name="1-data-tools"></a>1. Herramientas de datos  
- El shell integrado incluye herramientas de desarrollo de base de datos como la compatibilidad de extensibilidad de datos y la simplificada **el Explorador de soluciones**. Sin embargo, SQL Server Express, SQL Reporting y Crystal Reports no se incluyen en el shell integrado.  
+#### <a name="1-data-tools"></a>1. Data Tools  
+ The integrated shell includes database development tools such as data extensibility support and the simplified **Solution Explorer**. However, SQL Server Express, SQL Reporting, and Crystal Reports are not included in the integrated shell.  
   
-#### <a name="2-debugging-support"></a>2. Capacidad de depuración  
- El shell integrado incluye el mismo motor de depuración que se incluye en la versión de comunidad de Visual Studio. El motor de depuración incluye al depurador para código administrado así como las características relacionadas, comunes, como ejecutar, adjuntar, establecer punto de interrupción, editar y continuar y otros. Sin embargo, el motor de depuración no admite la depuración de base de datos de SQL Server.  
+#### <a name="2-debugging-support"></a>2. Debugging Support  
+ The integrated shell includes the same debugging engine that is included in the Community version of Visual Studio. The debugging engine includes the common debugger for managed code, and also related features, such as Run, Attach, Set Breakpoint, Edit and Continue, and others. However, the debugging engine does not support SQL Server database debugging.  
   
- Aunque admite la depuración nativa está incluida en el paquete básico de depurador, no se puede extender para admitir idiomas adicionales.  
+ Although support for native debugging is included in the basic debugger package, you cannot extend it to support additional languages.  
   
-#### <a name="3-source-code-control-integration"></a>3. Integración del Control de código fuente  
- El shell integrado proporciona API para implementar el control de código fuente (SCC) y para proporcionar el control de código fuente comunes en función de MSSCCI componentes de integración.  
+#### <a name="3-source-code-control-integration"></a>3. Source Code Control Integration  
+ The integrated shell provides APIs for implementing source-code control (SCC) and for providing the MSSCCI-based common source control integration components.  
   
- Aunque la integración de SCC no es una característica habitual de la edición Pro de Visual Studio, se proporciona integración de SCC en el shell integrado.  
+ Although SCC integration is not a regular feature of the Pro edition of Visual Studio, SCC integration is provided in the integrated shell.  
   
-#### <a name="4-build-support"></a>4. Compatibilidad de compilación  
- El shell integrado proporciona compatibilidad con la compilación. Puede encontrar información sobre las compilaciones en el [referencia de MSBuild](../msbuild/msbuild-reference.md).  
+#### <a name="4-build-support"></a>4. Build Support  
+ The integrated shell provides build support. You can find information about builds in the [MSBuild Reference](../msbuild/msbuild-reference.md).  
   
-## <a name="features-not-included-in-the-integrated-shell"></a>Características no incluidas en el Shell integrado  
- La siguiente es una lista de características que no están incluidos en el shell integrado:  
+## <a name="features-not-included-in-the-integrated-shell"></a>Features Not Included in the Integrated Shell  
+ The following is a list of features that are not included in the integrated shell:  
   
 - Diseñador de clases  
   
@@ -76,7 +76,7 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
   
 - VSHost  
   
-- Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
+- No Visual Studio languages or their associated project templates or project item templates, are included in the integrated shell. No language-specific implementations of other features are included, for example Visual Basic code snippets.  
   
 ## <a name="see-also"></a>Vea también  
- [Ampliación de introducción a Visual Studio](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Extending Visual Studio Overview](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

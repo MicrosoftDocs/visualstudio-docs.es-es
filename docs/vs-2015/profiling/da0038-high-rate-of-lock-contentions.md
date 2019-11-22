@@ -1,5 +1,5 @@
 ---
-title: 'DA0038: Alta frecuencia de contenciones de bloqueo | Microsoft Docs'
+title: 'DA0038: Tasa alta de contenciones de bloqueo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,24 +13,24 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a9d809c901458782a8f7f9f3fff2c8e14069083
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e3f96303d69d394f3e24021ddea530d44a8ab718
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444041"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300084"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta frecuencia de contenciones de bloqueo
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Tasa alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio, consulte [DA0038: Alta tasa de contenciones de bloqueo](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions).  
+For the latest documentation on Visual Studio, see [DA0038: High Rate of Lock contentions](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions).  
   
 |||  
 |-|-|  
 |Identificador de regla|DA0038|  
 |Categoría|Uso de .NET Framework|  
 |Método de generación de perfiles|Muestreo<br /><br /> Instrumentación<br /><br /> Memoria de .NET|  
-|Mensaje|Se está produciendo una tasa alta de contenciones de bloqueo de .NET. Ejecute un perfil de simultaneidad para investigar la razón de esta contención de bloqueo.|  
+|Mensaje|Se está produciendo una tasa alta de contenciones de bloqueo de .NET. Investigue la razón de esta contención de bloqueo ejecutando un perfil de simultaneidad.|  
 |Tipo de regla|Información|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  
@@ -39,9 +39,9 @@ Para obtener la documentación más reciente de Visual Studio, consulte [DA0038:
  Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa considerablemente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- Los bloqueos se utilizan para proteger las secciones críticas de código que un subproceso debe ejecutar en serie a la vez en una aplicación con múltiples subprocesos. Common Language Run-time (CLR) de Microsoft .NET proporciona un conjunto completo de sincronización y primitivas de bloqueo. Por ejemplo, el lenguaje C# admite una instrucción de bloqueo (SyncLock en Visual Basic). Una aplicación administrada puede llamar a la `Monitor.Enter` y `Monitor.Exit` métodos en el espacio de nombres System.Threading para adquirir y liberar un bloqueo directamente. .NET Framework admite sincronización adicional y primitivas de bloqueo, incluidas las clases que admiten las exclusiones mutuas, ReaderWriterLock y semáforos. Para obtener más información, consulte [Información general sobre las primitivas de sincronización](http://go.microsoft.com/fwlink/?LinkId=177867) en la Guía del desarrollador de .NET Framework en el sitio web de MSDN. Las clases de .NET Framework están superpuestas a los servicios de sincronización de nivel inferior integrados en el sistema operativo Windows. Estos incluyen objetos de sección crítica y muchas funciones de espera y señalización de eventos diferentes. Para obtener más información, consulte la sección [Sincronización](http://go.microsoft.com/fwlink/?LinkId=177869) de Desarrollo para Win32 y COM en MSDN Library  
+ Los bloqueos se utilizan para proteger las secciones críticas de código que un subproceso debe ejecutar en serie a la vez en una aplicación con múltiples subprocesos. Common Language Run-time (CLR) de Microsoft .NET proporciona un conjunto completo de sincronización y primitivas de bloqueo. Por ejemplo, el lenguaje C# admite una instrucción de bloqueo (SyncLock en Visual Basic). A managed application can call the `Monitor.Enter` and `Monitor.Exit` methods in the System.Threading namespace to acquire and release a lock directly. .NET Framework admite sincronización adicional y primitivas de bloqueo, incluidas las clases que admiten las exclusiones mutuas, ReaderWriterLock y semáforos. Para obtener más información, consulte [Información general sobre las primitivas de sincronización](https://go.microsoft.com/fwlink/?LinkId=177867) en la Guía del desarrollador de .NET Framework en el sitio web de MSDN. Las clases de .NET Framework están superpuestas a los servicios de sincronización de nivel inferior integrados en el sistema operativo Windows. Estos incluyen objetos de sección crítica y muchas funciones de espera y señalización de eventos diferentes. Para obtener más información, consulte la sección [Sincronización](https://go.microsoft.com/fwlink/?LinkId=177869) de Desarrollo para Win32 y COM en MSDN Library  
   
- Subyacentes a las clases de .NET Framework y los objetos nativos de Windows que se usan para la sincronización y el bloqueo, se encuentran ubicaciones de memoria compartida que se deben cambiar mediante operaciones de bloqueo. Las operaciones de bloqueo utilizan instrucciones específicas del hardware que operan en ubicaciones de memoria compartida para cambiar su estado mediante operaciones atómicas. Se garantiza que las operaciones atómicas sean coherentes en todos los procesadores del equipo. Los bloqueos y WaitHandles son objetos .NET que utilizan automáticamente las operaciones de bloqueo cuando se establecen o restablecen. Puede haber otras estructuras de datos de memoria compartida en la aplicación que también requieran que utilice operaciones de bloqueo para que se actualicen de una manera segura para subprocesos. Para obtener más información, consulte [Operaciones de bloqueo](http://go.microsoft.com/fwlink/?LinkId=177870) en la sección de .NET Framework de MSND Library  
+ Subyacentes a las clases de .NET Framework y los objetos nativos de Windows que se usan para la sincronización y el bloqueo, se encuentran ubicaciones de memoria compartida que se deben cambiar mediante operaciones de bloqueo. Las operaciones de bloqueo utilizan instrucciones específicas del hardware que operan en ubicaciones de memoria compartida para cambiar su estado mediante operaciones atómicas. Se garantiza que las operaciones atómicas sean coherentes en todos los procesadores del equipo. Los bloqueos y WaitHandles son objetos .NET que utilizan automáticamente las operaciones de bloqueo cuando se establecen o restablecen. Puede haber otras estructuras de datos de memoria compartida en la aplicación que también requieran que utilice operaciones de bloqueo para que se actualicen de una manera segura para subprocesos. Para obtener más información, consulte [Operaciones de bloqueo](https://go.microsoft.com/fwlink/?LinkId=177870) en la sección de .NET Framework de MSND Library  
   
  La sincronización y el bloqueo son mecanismos utilizados para garantizar que las aplicaciones multi-threading se ejecuten correctamente. Cada subproceso de una aplicación multi-threading es una unidad de ejecución independiente programada de forma independiente por el sistema operativo. Cada vez que un subproceso que intenta adquirir un bloqueo se retrasa porque otro subproceso está reteniendo el bloqueo, se produce una contención de bloqueo.  
   
@@ -50,9 +50,9 @@ Para obtener la documentación más reciente de Visual Studio, consulte [DA0038:
  Esta regla se desencadena cuando las mediciones tomadas durante una generación de perfiles indican que hay una cantidad excesivamente alta de contención de bloqueo. Las contenciones de bloqueo retrasan la ejecución de subprocesos que están esperando para adquirir el bloqueo. Deberían investigarse incluso las cantidades bastante pequeñas de contención de bloqueo en pruebas unitarias o en pruebas de carga que se ejecuten en hardware de gama baja.  
   
 > [!NOTE]
-> Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es excesivamente alta, se desencadena el mensaje de advertencia [DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje informativo.  
+> Cuando la tasa de contenciones de bloqueo en los datos de generación de perfiles es excesivamente alta, se muestra el mensaje de advertencia [DA0039: alta frecuencia de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje de información.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.  
   
- Esta regla solo se desencadena cuando no está utilizando el método de generación de perfiles de simultaneidad. El método de generación de perfiles de simultaneidad es la mejor herramienta para diagnosticar problemas de rendimiento relacionados con la contención de bloqueo en la aplicación. Recopile datos de generación de perfiles de simultaneidad para comprender el comportamiento de bloqueo de la aplicación. Esto incluye entender qué bloqueos compiten fuertemente, cuánto se retrasa el tiempo de ejecución de subprocesos a la espera de los bloqueos que compiten y qué código concreto hay implicado. Perfiles de simultaneidad recopilan datos en todas las contenciones de bloqueo, incluidos el comportamiento de bloqueo de las instalaciones de Windows nativas, las clases de .NET Framework y cualquier otra biblioteca de terceros las referencias de la aplicación. Para obtener información sobre la generación de perfiles de simultaneidad del IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Recopilar datos de simultaneidad de subprocesos y procesos](../profiling/collecting-thread-and-process-concurrency-data.md). Para acceder a los vínculos para obtener información sobre la generación de perfiles de simultaneidad desde la línea de comandos, consulte la sección **Uso del método de simultaneidad para recopilar datos de contención de recursos y actividad de subprocesos** de [Uso de métodos de generación de perfiles desde la línea de comandos](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
+ Esta regla solo se desencadena cuando no está utilizando el método de generación de perfiles de simultaneidad. El método de generación de perfiles de simultaneidad es la mejor herramienta para diagnosticar problemas de rendimiento relacionados con la contención de bloqueo en la aplicación. Recopile datos de generación de perfiles de simultaneidad para comprender el comportamiento de bloqueo de la aplicación. Esto incluye entender qué bloqueos compiten fuertemente, cuánto se retrasa el tiempo de ejecución de subprocesos a la espera de los bloqueos que compiten y qué código concreto hay implicado. Concurrency profiles collect data on all lock contentions, including the locking behavior of native Windows facilities, .NET Framework classes, and any other third-party libraries your application references. Para obtener información sobre la generación de perfiles de simultaneidad del IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Recopilar datos de simultaneidad de subprocesos y procesos](../profiling/collecting-thread-and-process-concurrency-data.md). Para acceder a los vínculos para obtener información sobre la generación de perfiles de simultaneidad desde la línea de comandos, consulte la sección **Uso del método de simultaneidad para recopilar datos de contención de recursos y actividad de subprocesos** de [Uso de métodos de generación de perfiles desde la línea de comandos](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).

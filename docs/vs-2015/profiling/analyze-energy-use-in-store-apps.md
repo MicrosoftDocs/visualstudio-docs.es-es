@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697004"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299376"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizar el uso de energía en las aplicaciones de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
   
 - *Energía* mide la cantidad total de potencia, bien como capacidad o como potencial, como en la capacidad de potencia de una batería, o como el total de potencia gastada en un período de tiempo. La unidad de energía es un vatio-hora, la cantidad de potencia de un vatio aplicada constantemente durante una hora. En el **Resumen de uso de energía**, las unidades se muestran en milivatios-hora **mW-h**.  
   
-  ![Capacidad energética, potencia usada, energía total usada](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Energy capacity, power used, total energy used](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
   Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.  
   
@@ -63,8 +63,6 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
 > - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en C# y VB) cuando haya finalizado con un canal de registro.  
 >   - Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
   
- Consulte el [ejemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) en el Windows SDK.  
-  
  **Agregar marcas a código de JavaScript**  
   
  Para agregar marcas de usuario, agrega el código siguiente en los puntos del código que desees marcar:  
@@ -77,7 +75,7 @@ if (performance && performance.mark) {
   
  *markDescription* es una cadena que contiene el mensaje que se va a mostrar en la información sobre herramientas de la marca de usuario.  
   
-## <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurar el entorno para la generación de perfiles  
+## <a name="BKMK_Configure_your_environment_for_profiling"></a> Configuración del entorno para la generación de perfiles  
  Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Consulte [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para obtener más información.  
   
 > [!TIP]
@@ -89,7 +87,7 @@ if (performance && performance.mark) {
   
 1. En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.  
   
-     ![Elegir Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Elección de Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
 2. Elija **Consumo de energía** y, a continuación, **Iniciar**.  
   
@@ -100,7 +98,7 @@ if (performance && performance.mark) {
   
 4. Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
   
-     ![Detener la recopilación de datos](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
+     ![Detección de la recopilación de datos](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analiza los datos recopilados y muestra los resultados.  
   
@@ -138,7 +136,7 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> Optimizar el uso de energía  
  Además de transmitir datos, las conexiones de red incurren en ciertos costos de energía para inicializar, mantener y cerrar la conexión. Algunas redes mantienen la conexión durante un período de tiempo después de que los datos se hayan enviado o recibido para permitir que se transmitan más datos en una única conexión. Puedes utilizar el panel **Recursos (activados/desactivados)** para examinar la manera en que la aplicación interactúa con la conexión.  
   
- ![Panel recursos &#40;activados&#47;desactivados&#41;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![Panel Recursos &#40;On&#47;Off&#41;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  Si las barras **Red** y **Transferencia de datos** muestran que la conexión está abierta durante largos períodos para transmitir intermitentemente una serie de pequeños paquetes de datos, puedes procesar por lotes los datos para enviarlos en una transmisión, reduciendo así el tiempo que la red está abierta y los costos energéticos.  
   

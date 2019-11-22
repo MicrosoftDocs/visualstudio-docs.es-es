@@ -1,5 +1,5 @@
 ---
-title: Vistas de actividad (heredado) | Microsoft Docs
+title: Activity Views (Legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,29 +13,29 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7d8a13890814b56865200acf95c8e0565b52b5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b65a46d5d0061eeaf3ad707affea1423e5fca5d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655206"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297538"
 ---
 # <a name="activity-views-legacy"></a>Vistas de actividad (Heredado)
-Muchas de las actividades proporcionadas por [!INCLUDE[wf](../includes/wf-md.md)], a partir de las que se crean flujos de trabajo, disponen de varias vistas de diseño en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Al arrastrar un diseñador de actividad desde el **cuadro de herramientas** a la superficie de diseño y, después, siempre que seleccione la actividad, puede cambiar entre las diferentes vistas de diseño mediante el menú **flujo de trabajo** o haciendo clic con el botón secundario en la opción seleccionada. proceso. Además, si mueve el puntero sobre el nombre de una actividad seleccionada, aparece un conjunto desplegable de pestañas, que puede utilizar para pasar de una vista a otra.
+Muchas de las actividades proporcionadas por [!INCLUDE[wf](../includes/wf-md.md)], a partir de las que se crean flujos de trabajo, disponen de varias vistas de diseño en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. When you drag an activity designer from the **Toolbox** onto the design surface, and thereafter whenever you select the activity, you can switch between the different design views by using either the **Workflow** menu or by right-clicking the selected activity. Además, si mueve el puntero sobre el nombre de una actividad seleccionada, aparece un conjunto desplegable de pestañas, que puede utilizar para pasar de una vista a otra.
 
- Cada actividad tiene al menos una vista; Esta es la vista predeterminada que se muestra al arrastrar un diseñador de actividad desde el **cuadro de herramientas** hasta la superficie de diseño. Esta vista predeterminada de la actividad está disponible como la opción **ver [tipo de actividad]** en los menús y la pestaña; por ejemplo, **ver en paralelo**. La mayoría de las actividades tienen vistas adicionales y distintas actividades pueden tener vistas diferentes. Por ejemplo, la actividad [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) tiene la vista compensación y la actividad [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) tiene una vista eventos. Muchas de las actividades que se incluyen en Windows Workflow Foundation tienen vistas de diseño de la **vista cancelar** y **ver los errores** de vista para ver el [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) y un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) asociado a ellos.
+ Every activity has at least one view; this is the default view shown when you drag an activity designer from the **Toolbox** onto the design surface. This activity default view is available as the **View [activity type]** option on the menus and tab, for example, **View Parallel**. La mayoría de las actividades tienen vistas adicionales y distintas actividades pueden tener vistas diferentes. For example, the [TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093) activity has the compensation view and the [EventHandlingScopeActivity](https://go.microsoft.com/fwlink?LinkID=65030) activity has an events view. Many of the activities that come with Windows Workflow Foundation have **View Cancel Handler** and **View Faults** design views to view the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) and a [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) associated with them.
 
  En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
 
 |Opción de menú o pestaña|Descripción|
 |----------------------|-----------------|
-|**Ver [tipo de actividad]**|Seleccione esta opción de menú o pestaña para ver la representación gráfica predeterminada de la actividad seleccionada.|
-|**Ver controlador de cancelación**|Seleccione esta opción de menú o pestaña para ver el [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) asociado con la actividad seleccionada.|
-|**Ver controlador de errores**|Seleccione esta opción de menú o pestaña para ver el [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) asociado con la actividad seleccionada.|
-|**Ver el controlador de compensación**|Seleccione esta opción de menú o pestaña para ver el [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) asociado con la actividad [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)seleccionada.|
-|**Ver controlador de eventos**|Seleccione esta opción de menú o pestaña para ver el [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) asociado al [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030)seleccionado.|
+|**View [activity type]**|Seleccione esta opción de menú o pestaña para ver la representación gráfica predeterminada de la actividad seleccionada.|
+|**View Cancel Handler**|Select this menu or tab option view to view the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) associated with the selected activity.|
+|**View Fault Handler**|Select this menu or tab option view to view the [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) associated with the selected activity.|
+|**View Compensation Handler**|Select this menu or tab option view to view the [CompensationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65053) associated with the selected [TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093).|
+|**View Events Handler**|Select this menu or tab option view to view the [EventHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65018) associated with the selected the [EventHandlingScopeActivity](https://go.microsoft.com/fwlink?LinkID=65030).|
 
- Para obtener información sobre vistas similares, consulte [vistas de flujo de trabajo secuenciales (heredado)](../workflow-designer/sequential-workflow-views-legacy.md).
+ For information about similar views, see [Sequential Workflow Views (Legacy)](../workflow-designer/sequential-workflow-views-legacy.md).
 
 ## <a name="see-also"></a>Vea también
- [Vistas de flujo de trabajo secuenciales](../workflow-designer/sequential-workflow-views-legacy.md) de actividades de flujo de trabajo [heredadas](../workflow-designer/legacy-workflow-activities.md)
+ [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md) [Sequential Workflow Views (Legacy)](../workflow-designer/sequential-workflow-views-legacy.md)

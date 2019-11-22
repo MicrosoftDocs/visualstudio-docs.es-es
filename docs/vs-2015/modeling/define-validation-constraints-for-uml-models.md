@@ -1,5 +1,5 @@
 ---
-title: Definir restricciones de validación para modelos UML | Microsoft Docs
+title: Define validation constraints for UML models | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,19 +11,19 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669895"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295846"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede definir restricciones de validación que prueben si el modelo cumple una condición especificada. Por ejemplo, puede definir una restricción para asegurarse de que un usuario no crea ningún bucle de relaciones de herencia. La restricción se invoca cuando el usuario intenta abrir o guardar el modelo, aunque también se puede invocar manualmente. Si se produce un error en la restricción, se agrega un mensaje de error que se haya definido a la ventana de error. Puede empaquetar estas restricciones en una extensión de integración de Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
+Puede definir restricciones de validación que prueben si el modelo cumple una condición especificada. Por ejemplo, puede definir una restricción para asegurarse de que un usuario no crea ningún bucle de relaciones de herencia. La restricción se invoca cuando el usuario intenta abrir o guardar el modelo, aunque también se puede invocar manualmente. Si se produce un error en la restricción, se agrega un mensaje de error que se haya definido a la ventana de error. Puede empaquetar estas restricciones en una extensión de integración de Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
 
- También puede definir restricciones que validan el modelo respecto a recursos externos como bases de datos. Si desea validar el código de programa con un diagrama de capas, vea [agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+ También puede definir restricciones que validan el modelo respecto a recursos externos como bases de datos. If you want to validate program code against a layer diagram, see [Add custom architecture validation to layer diagrams](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -37,14 +37,14 @@ Puede definir restricciones de validación que prueben si el modelo cumple una c
 
  Los errores de validación se notifican en la ventana de errores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y puede hacer doble clic en el error para seleccionar los elementos del modelo que tienen un error.
 
- Para obtener más información sobre cómo aplicar la validación, vea [validar el modelo UML](../modeling/validate-your-uml-model.md).
+ For more information about applying validation, see [Validate your UML model](../modeling/validate-your-uml-model.md).
 
 ## <a name="defining-a-validation-extension"></a>Definir extensiones de validación
  Para crear una extensión de validación para un diseñador UML, se debe crear una clase que defina las restricciones de validación e incrustarla en una extensión de integración de Visual Studio (VSIX). Las extensiones VSIX actúan como contenedores que instalan la restricción. Hay dos métodos alternativos de definir una extensión de validación:
 
-- **Cree una extensión de validación en su propio VSIX mediante una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar las restricciones de validación con otros tipos de extensiones, como comandos de menú, elementos de cuadro de herramientas personalizados o controladores de gestos. Puede definir varias restricciones en una clase.
+- **Create a validation extension in its own VSIX using a project template.** Este es el método más rápido. Utilícelo si no desea combinar las restricciones de validación con otros tipos de extensiones, como comandos de menú, elementos de cuadro de herramientas personalizados o controladores de gestos. Puede definir varias restricciones en una clase.
 
-- **Cree clases de validación y proyectos VSIX independientes.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.
+- **Create separate validation class and VSIX projects.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Para crear una extensión de validación en una VSIX propia
 
@@ -63,7 +63,7 @@ Puede definir restricciones de validación que prueben si el modelo cumple una c
 
 4. Pruebe las restricciones presionando F5. Para obtener más información, vea [Ejecutar una restricción de validación](#Executing).
 
-5. Instale el comando de menú en otro equipo copiando el archivo **bin \\ \* \\ \*. vsix** compilado por el proyecto. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).
+5. Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).
 
    Cuando se agregan otros archivos **.cs** , normalmente se requieren las siguientes instrucciones `using` :
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="Executing"></a>Ejecutar una restricción de validación
+## <a name="Executing"></a> Executing a Validation Constraint
  A efectos de prueba, ejecute los métodos de validación en modo de depuración.
 
 #### <a name="to-test-the-validation-constraint"></a>Para probar la restricción de validación
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.
 
-    - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **depurar** . Asegúrese de que la cadena del campo **programa externo de inicio** es el nombreruta completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:
+    - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], typically:
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Los atributos `Export` y `ValidationMethod` correctos están adjuntados a los métodos de validación.
 
-    - `ValidationCategories.Menu` se incluye en el argumento para el atributo `ValidationMethod` y se compone de otros valores mediante el operador lógico OR (&#124;).
+    - `ValidationCategories.Menu` is included in the argument for the `ValidationMethod` attribute, and it is composed with other values using Logical OR (&#124;).
 
     - Los parámetros de todos los atributos `Import` y `Export` son válidos.
 
-## <a name="Implementing"></a>Evaluación de la restricción
+## <a name="Implementing"></a> Evaluating the Constraint
  El método de validación debe determinar si la restricción de validación que desea aplicar es true o false. Si es true, no debería hacer nada. Si es false, debería notificar un error utilizando los métodos proporcionados por el parámetro `ValidationContext` .
 
 > [!NOTE]
@@ -259,7 +259,7 @@ public void ValidateSomething
 |||
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Define el método como una restricción de validación utilizando Managed Extensibility Framework (MEF).|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Especifica cuándo se ejecutará la validación. Use OR bit a&#124;bit () Si desea combinar más de una opción.<br /><br /> `Menu` = invocado por el menú Validar.<br /><br /> `Save` = invocado al guardar el modelo.<br /><br /> `Open` = invocado al abrir el modelo. `Load` = invocado al guardar el modelo, pero en caso de una contravención advierte al usuario que puede que no sea posible volver a abrir el modelo. También se invoca durante la carga, antes de que se analice el modelo.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Especifica cuándo se ejecutará la validación. Use bitwise OR (&#124;) if you want to combine more than one option.<br /><br /> `Menu` = invocado por el menú Validar.<br /><br /> `Save` = invocado al guardar el modelo.<br /><br /> `Open` = invocado al abrir el modelo. `Load` = invocado al guardar el modelo, pero en caso de una contravención advierte al usuario que puede que no sea posible volver a abrir el modelo. También se invoca durante la carga, antes de que se analice el modelo.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Reemplace el segundo parámetro `IElement` por el tipo de elemento al que desea aplicar la restricción. El método restricción se invocará en todos los elementos del tipo especificado.<br /><br /> El nombre del método es indiferente.|
 
  Puede definir tantos métodos de validación como desee, con diferentes tipos en el segundo parámetro. Cuando se invoca la validación, se llamará a cada método de validación en cada elemento del modelo que se ajusta al tipo de parámetro.
@@ -282,7 +282,7 @@ public void ValidateSomething
 
  Cada método de validación se aplica a cada elemento que se ajusta al tipo de su segundo parámetro. Esto significa que si, por ejemplo, define un método de validación con un segundo parámetro de `IUseCase` y otro con su supertipo `IElement`, ambos métodos se aplicarán a cada caso de uso en el modelo.
 
- La jerarquía de tipos se resume en [tipos de elementos del modelo UML](../modeling/uml-model-element-types.md).
+ The hierarchy of types is summarized in [UML model element types](../modeling/uml-model-element-types.md).
 
  También puede tener acceso a los elementos siguiendo las relaciones. Por ejemplo, si fuera a definir un método de validación en `IClass`, podría recorrer sus propias propiedades:
 
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="ContextCache"></a>Coordinación de varias validaciones
+### <a name="ContextCache"></a> Coordinating Multiple Validations
  Cuando se invoca la validación, por ejemplo, a través de un usuario desde un menú de diagrama, cada método de validación se aplica a cada elemento del modelo. Esto significa que, en una única invocación del marco de validación, el mismo método se puede aplicar muchas veces a distintos elementos.
 
  Esto presenta un problema para las validaciones que se encargan de las relaciones entre elementos. Puede escribir una validación que se inicie, por ejemplo, en un caso de uso y recorra las relaciones de **include** para comprobar que no hay ningún bucle. Sin embargo, cuando el método se aplica a cada caso de uso de un modelo que tiene muchos vínculos **include** , es probable que procese repetidamente las mismas áreas del modelo.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Obtiene un valor.|
 |`Context.GetValue<T>()`|Obtiene un valor del tipo especificado.|
 
-## <a name="Installing"></a>Instalación y desinstalación de una extensión
+## <a name="Installing"></a> Installing and uninstalling an extension
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.
 
 #### <a name="to-install-an-extension"></a>Para instalar una extensión
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.
 
-    2. Busque el archivo **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Seleccione la extensión y, a continuación, elija **Desinstalar**.
 
-   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de la siguiente ubicación en la que *% LocalAppData%* suele \\ ser el nombre de*usuario* *\AppData\Local:*
+   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versión] \Extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="Example"></a> Ejemplo
  En este ejemplo se buscan bucles en la relación de dependencia entre los elementos.
@@ -474,4 +474,4 @@ private bool NoDependencyLoops(ValidationContext context,
 ```
 
 ## <a name="see-also"></a>Vea también
- [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [programar con la API de UML](../modeling/programming-with-the-uml-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Programming with the UML API](../modeling/programming-with-the-uml-api.md)

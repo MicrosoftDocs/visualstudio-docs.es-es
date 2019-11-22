@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d057296e38cbba38651bb9228b8cd837f21deaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645546"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290317"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizar y localizar aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Si planea distribuir la aplicación a un público internacional, deberá tener v
  Visual Studio se ha diseñado desde el principio para facilitar el desarrollo para un público internacional al aprovechar los servicios integrados en [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. En las páginas siguientes, se le presentarán las características de internacionalización integradas en Visual Studio.
 
 ## <a name="in-this-section"></a>En esta sección
- [Introducción a las aplicaciones internacionales basadas en el .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Presenta los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Studio y el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Introduces the concepts related to developing software for an international market using Visual Studio and the [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- [Localizar aplicaciones](../ide/localizing-applications.md) Proporciona vínculos a páginas sobre la personalización de aplicaciones para una referencia cultural determinada.
+ [Localizing Applications](../ide/localizing-applications.md) Provides links to pages about customizing applications for a given culture.
 
- [Globalizar aplicaciones](../ide/globalizing-applications.md) Proporciona vínculos a páginas sobre la creación de aplicaciones que admiten varias referencias culturales.
+ [Globalizing Applications](../ide/globalizing-applications.md) Provides links to pages about creating applications that support multiple cultures.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Globalizar la aplicación (aplicaciones de la tienda Windows con JavaScript y HTML)](http://go.microsoft.com/fwlink/?LinkId=258266) Contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar la aplicación [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] compilada con JavaScript y HTML.
+ [Globalizing your app (Windows Store apps using JavaScript and HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using JavaScript and HTML.
 
- [Globalizar la aplicación (aplicaciones de la tienda C#WindowsC++ con/VB/y XAML)](http://go.microsoft.com/fwlink/?LinkId=258267) contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar su [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicación compilada C#con XAML y visual, C++Visual Basic o visual.
+ [Globalizing your app (Windows Store apps using C#/VB/C++ and XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) Contains how-to topics and guidelines to help you globalize and localize your [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app built using XAML and Visual C#, Visual Basic, or Visual C++.
 
- [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Proporciona información general sobre la programación de un público internacional.
+ [Best Practices for Developing World-Ready Applications](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Provides background information on programming for an international audience.
 
- [Información general sobre la biblioteca de clases](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Presenta las clases, las interfaces y los tipos de valor que agilizan y optimizan el proceso de desarrollo y proporcionan acceso a la funcionalidad del sistema.
+ [Class Library Overview](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157) Introduces the classes, interfaces, and value types that expedite and optimize the development process and provide access to system functionality.
 
- <xref:System.Globalization> señala las clases de este espacio de nombres, que definen la información relativa a la referencia cultural, incluidos el idioma, el país o la región, los calendarios en uso, los modelos de formato de fechas, monedas y números, y el criterio de ordenación de las cadenas.
+ <xref:System.Globalization> Points out the classes in this namespace, which define culture-related information, including the language, the country/region, the calendars in use, the format patterns for dates, currency and numbers, and the sort order for strings.
 
- <xref:System.Resources> señala las clases e interfaces de este espacio de nombres, lo que permite a los desarrolladores crear, almacenar y administrar diversos recursos específicos de la referencia cultural que se usan en una aplicación.
+ <xref:System.Resources> Points out the classes and interfaces in this namespace, which allows developers to create, store, and manage various culture-specific resources used in an application.

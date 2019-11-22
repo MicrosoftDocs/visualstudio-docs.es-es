@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Empaquetar manualmente una extensión (implementación VSIX) | Microsoft Docs
+title: 'How to: Manually Package an Extension (VSIX Deployment) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a615aea75ec00e49ee4d2837b8b4e2b1d20d3306
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293620"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedimiento Empaquetar manualmente una extensión (implementación VSIX)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedimiento: empaquetar manualmente una extensión (implementación VSIX)
 Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la implementación. Puede crear el paquete de tres formas distintas:  
   
 - Crear un proyecto de paquete VSIX mediante una de las plantillas de extensibilidad que se incluyen en el SDK de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Esta es la opción más sencilla para la mayoría de los escenarios.  
@@ -29,7 +29,7 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
  Para empaquetar manualmente una extensión, agregue un archivo extension.manifest y un archivo [Content_Types].xml al proyecto de extensión. A continuación, colóquelos en un archivo comprimido junto con el resultado de la compilación y cambie el nombre del archivo comprimido para que tenga una extensión de nombre de archivo .vsix. La extensión que se debe empaquetar debe ser de un tipo compatible con el [esquema VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
-> Los nombres de archivos en paquetes VSIX no puede contener espacios ni caracteres reservados en identificadores de recursos uniforme (URI), como se definen en [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> The names of files in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Para crear manualmente un paquete VSIX  
   
@@ -41,7 +41,7 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
   
 4. Cree un segundo archivo XML y asígnele el nombre `[Content_Types].xml`.  
   
-5. Rellene el archivo de [Content_Types] .xml como se especifica en [la estructura de la Content_types\]archivo .xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Fill in the [Content_Types].xml file as specified in [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
 6. Coloque ambos archivos XML en un directorio junto con la extensión que se va a implementarse.  
   
@@ -49,11 +49,11 @@ Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../
   
      En los demás casos, coloque los archivos XML en el mismo directorio que el del resultado de la compilación.  
   
-7. En el Explorador de Windows, haga clic con el botón secundario en la carpeta que contiene el contenido de la extensión y los dos archivos XML, haga clic en **Enviar a**, y luego en **Carpeta comprimida (zip)**.  
+7. En el Explorador de Windows, haga clic con el botón secundario en la carpeta que contiene el contenido de la extensión y los dos archivos XML, haga clic en **Enviar a**, y luego en **Carpeta comprimida (zip)** .  
   
 8. Cambie el nombre del archivo .zip resultante a *Nombre de archivo*.vsix, donde *Nombre de archivo* corresponde al nombre del archivo redistribuible que instala el paquete.  
   
 ## <a name="see-also"></a>Vea también  
- [Extensiones de Visual Studio de trasvase de registros](../extensibility/shipping-visual-studio-extensions.md)   
- [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Elemento PackageManifest (elemento Root, esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Shipping Visual Studio Extensions](../extensibility/shipping-visual-studio-extensions.md)   
+ [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
+ [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

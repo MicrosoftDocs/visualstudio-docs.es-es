@@ -13,25 +13,25 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194947"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301112"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id. de regla | DA0018 |  
-| Categoría | Uso de herramientas de generación de perfiles |  
-| Método de generación de perfiles | Muestreo |  
-| Mensaje | Administrar las asignaciones de memoria que se está acercando al límite predeterminado para un proceso de 32 bits. Puede que la aplicación esté enlazada a la memoria.|  
-| Tipo de regla | Advertencia |  
+Rule Id|DA0018|  
+|Category|Profiling Tools Usage|  
+|Profiling method|Sampling|  
+|Message|Managed memory allocations approaching the default limit for a 32-bit process. Puede que la aplicación esté enlazada a la memoria.|  
+|Rule type|Warning|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Causa  
+## <a name="cause"></a>Motivo  
  Los datos del sistema recopilados durante la ejecución de generación de perfiles indican que los montones de memoria de .NET Framework se aproximaron al tamaño máximo que los montones administrados pueden alcanzar en un proceso de 32 bits. Este tamaño máximo es un valor predeterminado. Se basa en la cantidad total de espacio de direcciones de proceso que se puede asignar para los bytes privados. El valor notificado es el valor máximo observado de los montones mientras estaba activo el proceso del que se generaron perfiles. Considere la posibilidad de volver a generar perfiles mediante el método de generación de perfiles de memoria de .NET y optimizar el uso de recursos administrados por la aplicación.  
   
  Cuando el tamaño de los montones administrados se aproxima al límite predeterminado, tal vez deba invocarse el proceso de recolección de elementos no utilizados automática con más frecuencia. Esto aumenta la sobrecarga de administración de memoria.  
@@ -54,7 +54,7 @@ Id. de regla | DA0018 |
   
 - optimizar el uso de la aplicación de recursos de memoria administrada  
   
-   -o bien-  
+   o bien  
   
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
   
@@ -64,7 +64,7 @@ Id. de regla | DA0018 |
   
   Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
   
-  Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=177946) en el sitio web de MSDN.  
+  Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](https://go.microsoft.com/fwlink/?LinkId=177946) en el sitio web de MSDN.  
   
   Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.  
   

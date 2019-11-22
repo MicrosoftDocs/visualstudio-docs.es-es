@@ -1,5 +1,5 @@
 ---
-title: Editar modelos y diagramas UML | Microsoft Docs
+title: Edit UML models and diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669726"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295523"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,69 +35,69 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- En este tema se describen las técnicas para modificar el modelo que son comunes entre los diferentes tipos de diagramas. Para obtener más información sobre los tipos concretos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
+ En este tema se describen las técnicas para modificar el modelo que son comunes entre los diferentes tipos de diagramas. For more information that is specific to particular types of diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
 ## <a name="in-this-topic"></a>En este tema
 
-- [Los diagramas de UML son vistas de un modelo UML](#Views)
+- [UML Diagrams are Views of a UML Model](#Views)
 
-- [Crear diagramas de modelado UML](#Creating)
+- [Creating UML Modeling Diagrams](#Creating)
 
-- [Dibujar diagramas de modelado UML](#Drawing)
+- [Drawing UML Modeling Diagrams](#Drawing)
 
-- [Editar formas y conectores](#Editing)
+- [Editing Shapes and Connectors](#Editing)
 
-- [Deshacer cambios en el modelo](#Undo)
+- [Undoing Changes to the Model](#Undo)
 
-- [Compartir elementos entre diagramas](#Sharing)
+- [Sharing Elements between Diagrams](#Sharing)
 
-- [Copiar elementos y grupos de elementos relacionados](#Copying)
+- [Copying Elements and Groups of Related Elements](#Copying)
 
-- [Eliminar un elemento de modelo o sus vistas](#Deleting)
+- [Deleting a Model Element or its Views](#Deleting)
 
-- [Buscar texto en un diagrama](#Searching)
+- [Searching text in a diagram](#Searching)
 
-- [Preparar un diagrama para la presentación](#presentation)
+- [Preparing a Diagram for Presentation](#presentation)
 
-- [Extender los diseñadores de UML](#extensions)
+- [Extending the UML Designers](#extensions)
 
-## <a name="Views"></a>Los diagramas de UML son vistas de un modelo UML
- Puede crear y usar diagramas de UML solo en proyectos de modelado. Para obtener más información acerca de cómo crear diagramas y proyectos, vea [crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
+## <a name="Views"></a> UML Diagrams are Views of a UML Model
+ Puede crear y usar diagramas de UML solo en proyectos de modelado. For more information about how to create diagrams and projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 - Un proyecto de modelado contiene un solo modelo UML. Cada diagrama de UML del proyecto es una vista del modelo UML.
 
-- Puede ver el modelo en el **Explorador de modelos UML**. En el menú **arquitectura** , elija **ventanas**y, a continuación, haga clic en **Explorador de modelos UML**.
+- You can see the model in **UML Model Explorer**. On the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
 
 - Cada forma de un diagrama es una vista de un elemento en el modelo. Cuando se coloca una forma nueva en un diagrama, se crea un nuevo elemento en el modelo.
 
-- Al guardar un diagrama, Visual Studio guarda todo el modelo, todos sus diagramas y el archivo del proyecto de modelado.
+- When you save any diagram, Visual Studio saves the whole model, all its diagrams, and the modeling project file.
 
-## <a name="Creating"></a>Crear diagramas de modelado UML
+## <a name="Creating"></a> Creating UML Modeling Diagrams
 
-1. En el menú **arquitectura** de Visual Studio, haga clic en **nuevo diagrama de UML o de capas**.
+1. On the **Architecture** menu in Visual Studio, click **New UML or Layer Diagram**.
 
 2. Seleccione el diagrama y asígnele un nombre.
 
-3. En **Agregar a proyecto de modelado**, seleccione un proyecto de modelado existente o seleccione **crear un nuevo proyecto de modelado**.
+3. In **Add to modeling project**, select an existing modeling project, or select **Create a new modeling project**.
 
    > [!NOTE]
    > Los diagramas de modelado solo pueden existir dentro de un proyecto de modelado.
 
-   También puede agregar un diagrama a un proyecto de modelado existente en el Explorador de soluciones. Haga clic con el botón secundario en el proyecto de modelado, elija **Agregar**y, a continuación, haga clic en **nuevo elemento**.
+   También puede agregar un diagrama a un proyecto de modelado existente en el Explorador de soluciones. Right-click the modeling project, point to **Add**, and then click **New Item**.
 
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Para crear un proyecto de modelado UML vacío
 
-- En el menú **archivo** , seleccione **nuevo**, haga clic en **proyecto**y, en el cuadro de diálogo **nuevo proyecto** , haga doble clic en **proyectos de modelado**.
+- On the **File** menu, point to **New**, click **Project**, and in the **New Project** dialog box, double-click **Modeling Projects**.
 
-  Para obtener más información sobre cómo administrar proyectos de modelado, vea [crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
+  For more information about how to manage modeling projects, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="Drawing"></a>Dibujar diagramas de modelado UML
+## <a name="Drawing"></a> Drawing UML Modeling Diagrams
  Un diagrama de modelado muestra una colección de elementos del modelo vinculados mediante relaciones. Cada elemento se muestra como una forma y cada relación se muestra como un conector entre dos formas.
 
- Hay dos tipos de herramientas: una para los elementos y otra para las relaciones. Por ejemplo, en el cuadro de herramientas Diagrama de clases UML, la **clase** es una herramienta de elemento y la **Asociación** es una herramienta de relación.
+ Hay dos tipos de herramientas: una para los elementos y otra para las relaciones. For example, in the UML class diagram Toolbox, **Class** is an element tool, and **Association** is a relationship tool.
 
 > [!NOTE]
-> Si desea información específica de los tipos de diagramas concretos, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
+> If you want information that is specific to particular diagram types, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Para crear elementos y relaciones en un diagrama de modelado UML
 
@@ -106,43 +106,43 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
     En algunos casos, puede colocar un nuevo elemento dentro de otro elemento. Por ejemplo, en un diagrama de clases UML, puede colocar una clase dentro de un paquete.
 
    > [!NOTE]
-   > Si no puede ver el cuadro de herramientas, haga clic en **cuadro de herramientas** en el menú **Ver** .
+   > If you cannot see the toolbox, click **Toolbox** on the **View** menu.
 
 2. Para crear una relación, haga clic en una herramienta de relación, haga clic en el elemento donde desea que inicie la relación y, a continuación, haga clic en el elemento donde desea que finalice.
 
     Distintos tipos de relaciones pueden iniciar o finalizar en distintos tipos de elementos. Por ejemplo, en un diagrama de clases UML, una relación de asociación no puede iniciar o finalizar en un elemento de comentario.
 
    > [!NOTE]
-   > Para usar la misma herramienta varias veces, haga doble clic en la herramienta. Cuando haya terminado, haga clic en la herramienta **puntero** .
+   > Para usar la misma herramienta varias veces, haga doble clic en la herramienta. When you have finished, click the **Pointer** tool.
 
    En algunos tipos de diagramas, también puede dibujar formas simples. Estas formas no son parte del modelo, pero puede usarlas para llamar la atención sobre los elementos del diagrama o para dividirlo en áreas diferentes.
 
-## <a name="Editing"></a>Editar formas y conectores
+## <a name="Editing"></a> Editing Shapes and Connectors
  Al cambiar el tamaño o color de una forma o reenrutar un conector, no hay ningún efecto en el modelo subyacente. Sin embargo, cuando al cambiar el nombre de una forma en el diagrama o en el Explorador de modelos UML, se cambia el nombre del elemento correspondiente en el Explorador de modelos UML y en cualquier otro diagrama que presente ese elemento.
 
 > [!NOTE]
-> Hay una forma sencilla de crear nuevos elementos de cuadro de herramientas desde los que puede crear grupos de elementos o elementos con su propia elección de propiedades. Para obtener más información, vea [definir un elemento personalizado del cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md).
+> Hay una forma sencilla de crear nuevos elementos de cuadro de herramientas desde los que puede crear grupos de elementos o elementos con su propia elección de propiedades. For more information, see [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md).
 
  En la siguiente ilustración se muestra cómo cambiar el tamaño de una forma o su nombre.
 
- ![Ajustar un elemento del modelo](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
+ ![Adjusting a model element](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
 
 > [!TIP]
-> Los comandos integrados no incluyen un comando para alinear las formas perfectamente. Sin embargo, puede crear fácilmente su propio comando de alineación copiando el código del ejemplo en [Mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).
+> Los comandos integrados no incluyen un comando para alinear las formas perfectamente. However, you can easily create your own alignment command by copying the code in the example in [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
 
  En la siguiente ilustración se muestra cómo ajustar la ruta y la posición de un conector o de sus etiquetas.
 
- ![Ajuste de un conector](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![Adjusting a connector](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Para mover un extremo de un conector a otra forma
 
 1. Realice una de las siguientes acciones:
 
-   - Presione **Ctrl** y mueva el final.
+   - Press **CTRL** and move the end.
 
      \- o -
 
-   - Haga clic con el botón secundario en el conector y haga clic en **volver a conectar**.
+   - Right-click the connector and then click **Reconnect**.
 
 2. Haga clic en el extremo del conector que desea mover.
 
@@ -150,55 +150,55 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Para cambiar el color u otras propiedades de un elemento, relación o diagrama
 
-- Haga clic en el elemento y establezca los campos en la ventana **propiedades** .
+- Click the element and set the fields in the **Properties** window.
 
-     Si no puede ver la ventana **propiedades** , haga clic con el botón secundario en el elemento y, a continuación, haga clic en **propiedades.**
+     If you cannot see the **Properties** window, right-click the element, and then click **Properties.**
 
 #### <a name="to-zoom-in-and-out-on-a-modeling-diagram"></a>Para acercar y alejar en un diagrama de modelado
 
-- Mantenga presionada la tecla **Ctrl** mientras gira la rueda del mouse.
+- Press and hold the **CTRL** key while you rotate the mouse wheel.
 
      \- o -
 
-- Mantenga presionada la **tecla Ctrl + Mayús**y, a continuación, haga clic en el botón primario o secundario del mouse.
+- Press and hold **CTRL+SHIFT**, and then click the left or right mouse button.
 
      \- o -
 
-- En la barra de herramientas **diseñadores de arquitectura** , haga clic en el signo más ( **+** ) o en el signo menos ( **-** ) o elija un nivel de zoom.
+- On the **Architecture Designers** toolbar, click the plus sign ( **+** ) or minus sign ( **-** ), or choose a zoom level.
 
-## <a name="Searching"></a>Buscar en un diagrama
- La función de búsqueda rápida busca elementos en un diagrama. Debe establecer **Buscar en:** en el **documento actual**.
+## <a name="Searching"></a> Searching in a Diagram
+ La función de búsqueda rápida busca elementos en un diagrama. You must set **Look in:** to **Current Document**.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>Para buscar texto en un diagrama de modelado
 
-1. Presione **Ctrl + F**.
+1. Press **CTRL+F**.
 
      \- o -
 
-     En el menú **edición** , seleccione **Buscar y reemplazar**y, a continuación, haga clic en **búsqueda rápida**.
+     On the **Edit** menu, point to **Find and Replace**, and then click **Quick Find**.
 
     > [!NOTE]
-    > En el cuadro de diálogo **Buscar y reemplazar** , debe dejar el campo **Buscar en** establecido en **documento actual**. No se admiten las demás opciones.
+    > In the **Find and Replace** dialog box, you must leave the **Look in** field set to **Current Document**. No se admiten las demás opciones.
 
-2. Escriba el texto que desea buscar y, a continuación, haga clic en **Buscar siguiente**.
+2. Type the text that you want to find, and then click **Find Next**.
 
     > [!NOTE]
-    > Si el texto que desea buscar está dentro de una forma contraída, la forma aparecerá resaltada. Expanda la forma y haga clic de nuevo en **Buscar siguiente** .
+    > Si el texto que desea buscar está dentro de una forma contraída, la forma aparecerá resaltada. Expand the shape, and then click **Find Next** again.
 
-## <a name="Undo"></a>Deshacer cambios en el modelo
- Puede deshacer y rehacer los cambios realizados en el modelo y los diagramas mediante los comandos **Deshacer** y **rehacer** en el menú **edición** .
+## <a name="Undo"></a> Undoing Changes to the Model
+ You can undo and redo changes that you have made to the model and diagrams by using the **Undo** and **Redo** commands on the **Edit** menu.
 
- **Cada proyecto de modelado tiene una sola pila de cambios.** Todos los cambios que realiza en el modelo y los diagramas se mantienen en esta pila. La pila también incluye cambios de foco de un diagrama a otro. El comando Deshacer revierte los cambios de esta pila.
+ **Each modeling project has a single stack of changes.** Todos los cambios que realiza en el modelo y los diagramas se mantienen en esta pila. La pila también incluye cambios de foco de un diagrama a otro. El comando Deshacer revierte los cambios de esta pila.
 
  Por ejemplo, supongamos que realiza las siguientes operaciones: realizar un cambio en Diagrama1, cambiar el foco en Diagrama 2, cambiar Diagrama2. Al deshacer los cambios, la primera vez se revertirá el último cambio, la siguiente vez se volverá a cambiar el foco a Diagrama 1 y la tercera vez se revertirá el cambio en Diagrama1.
 
- **Al cerrar un diagrama, se trunca la pila de cambios.** Si cierra un diagrama, no podrá deshacer los cambios que realizó en dicho diagrama y no podrá deshacer los cambios anteriores en el modelo o cualquiera de sus diagramas.
+ **Closing a diagram truncates the stack of changes.** Si cierra un diagrama, no podrá deshacer los cambios que realizó en dicho diagrama y no podrá deshacer los cambios anteriores en el modelo o cualquiera de sus diagramas.
 
- **No se puede deshacer mientras se edita una propiedad.** Mientras se edita una propiedad en la ventana Propiedades, o en una etiqueta de un diagrama, solo se pueden deshacer los cambios realizados en esa propiedad. Complete el cambio en la propiedad presionando ENTRAR o cancélelo presionando la tecla ESC. A continuación, podrá deshacer los cambios en el modelo y los diagramas.
+ **You cannot undo while you are editing a property.** Mientras se edita una propiedad en la ventana Propiedades, o en una etiqueta de un diagrama, solo se pueden deshacer los cambios realizados en esa propiedad. Complete el cambio en la propiedad presionando ENTRAR o cancélelo presionando la tecla ESC. A continuación, podrá deshacer los cambios en el modelo y los diagramas.
 
- **Cerrar un diagrama sin guardar puede no tener el efecto esperado.** Si realiza algunos cambios y luego cierra un diagrama sin guardarlo, todavía se conservarán los cambios en el modelo. Se recomienda cerrar todo el modelo si desea hacerlo sin guardarlo.
+ **Closing a diagram without saving might not have the effect you expect.** Si realiza algunos cambios y luego cierra un diagrama sin guardarlo, todavía se conservarán los cambios en el modelo. Se recomienda cerrar todo el modelo si desea hacerlo sin guardarlo.
 
-## <a name="Sharing"></a>Compartir elementos entre diagramas
+## <a name="Sharing"></a> Sharing Elements between Diagrams
  Puede hacer que una instancia específica de un elemento de modelo aparezca más de una vez en los diagramas. Esto se aplica a las clases, interfaces, componentes, casos de uso y actores.
 
  Esto resulta útil si desea mostrar distintos grupos de relaciones en distintos diagramas. Por ejemplo, en un diagrama, puede mostrar las asociaciones entre las clases de dirección y cliente. En otro diagrama puede mostrar de nuevo la clase de dirección con su asociación al área postal.
@@ -209,36 +209,36 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-uml-model-explorer"></a>Para agregar una nueva vista de un elemento de modelo mediante el Explorador de modelos UML
 
-1. Para abrir el **Explorador de modelos UML**, en el menú **arquitectura** , elija **ventanas**y, a continuación, haga clic en **Explorador de modelos UML**.
+1. To open **UML Model Explorer**, on the **Architecture** menu, point to **Windows**, and then click **UML Model Explorer**.
 
-2. Arrastre el elemento de modelo desde el **Explorador de modelos UML** hasta un diagrama compatible en el mismo proyecto.
+2. Drag the model element from **UML Model Explorer** to a compatible diagram in the same project.
 
      Aparece una forma que proporciona una vista del elemento del modelo, además de las vistas en otros diagramas o en el mismo diagrama.
 
     > [!NOTE]
-    > El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. Para obtener más información, vea [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).
+    > El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. For more information, see [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Para agregar una nueva vista de un elemento de modelo mediante Pegar referencia
 
-1. Haga clic con el botón secundario en un elemento existente y, a continuación, haga clic en **copiar**.
+1. Right-click an existing element, and then click **Copy**.
 
-    - Puede copiar varios elementos al mismo tiempo. Mantenga presionada la tecla CTRL mientras hace clic en cada elemento, haga clic con el botón secundario en uno de ellos y, a continuación, haga clic en **copiar**.
+    - Puede copiar varios elementos al mismo tiempo. Hold down the CTRL key while you click each element, right-click one of them, and then click **Copy**.
 
-2. Haga clic con el botón secundario en una parte vacía de un diagrama compatible y, a continuación, haga clic en **pegar referencia**.
+2. Right-click an empty part of a compatible diagram, and then click **Paste Reference**.
 
      Aparecerá otra vista del mismo elemento.
 
     > [!NOTE]
-    > Esto difiere del comando **pegar** , que crea un nuevo elemento en el modelo. Para obtener más información, vea [copiar elementos y grupos de elementos relacionados](#Copying).
+    > This differs from the **Paste** command, which creates a new element in the model. For more information, see [Copying Elements and Groups of Related Elements](#Copying).
 
 > [!NOTE]
 > Si agrega a un diagrama vistas de dos elementos de modelo que ya están conectados por una relación, también aparecerá una vista de la relación en el diagrama. Para eliminar esta vista, simplemente quite uno de los elementos del diagrama o elimine la relación del modelo.
 
-## <a name="Copying"></a>Copiar elementos y grupos de elementos relacionados
+## <a name="Copying"></a> Copying Elements and Groups of Related Elements
  Puede copiar y pegar elementos del modelo, y puede copiar y pegar grupos de elementos junto con las relaciones entre ellos.
 
 > [!NOTE]
-> Los comandos **pegar** y **pegar referencia** tienen efectos diferentes. **Pegar** crea nuevos elementos cuyas propiedades son similares a las de los elementos copiados. **Pegar referencia** crea nuevas vistas de los mismos elementos.
+> The **Paste** and **Paste Reference** commands have different effects. **Paste** creates new elements whose properties are like those of the copied elements. **Paste Reference** creates new views of the same elements.
 
 #### <a name="to-copy-elements-and-their-relationships"></a>Para copiar elementos y sus relaciones
 
@@ -247,11 +247,11 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
     > [!NOTE]
     > No puede copiar relaciones, excepto como parte de un grupo de elementos.
 
-2. En el menú **edición** , haga clic en **copiar**.
+2. On the **Edit** menu, click **Copy**.
 
 3. Si desea copiar los elementos en otro diagrama, cree el nuevo diagrama o abra el diagrama existente.
 
-4. En el menú **edición** , haga clic en **pegar**.
+4. On the **Edit** menu, click **Paste**.
 
     - Aparecerán las copias de los elementos, junto con las copias de las relaciones que se vinculan entre ellos.
 
@@ -270,29 +270,29 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 
    No se puede replicar un diagrama copiando y pegando en el Explorador de soluciones.
 
-## <a name="Deleting"></a>Eliminar un elemento de modelo o sus vistas
- Algunos tipos de elementos, especialmente los clasificadores, se pueden quitar de un diagrama sin eliminarlos del modelo. Los clasificadores son los elementos principales que se muestran en los diagramas de clases, diagramas de componentes y diagramas de casos de uso. Pueden aparecer en más de un diagrama. Para estos tipos de elementos, hay dos comandos independientes: **quitar del diagrama** y **eliminar del modelo**.
+## <a name="Deleting"></a> Deleting a Model Element or its Views
+ Algunos tipos de elementos, especialmente los clasificadores, se pueden quitar de un diagrama sin eliminarlos del modelo. Los clasificadores son los elementos principales que se muestran en los diagramas de clases, diagramas de componentes y diagramas de casos de uso. Pueden aparecer en más de un diagrama. For these types of elements, there are two separate commands: **Remove from Diagram** and **Delete from Model**.
 
  Por el contrario, cuando se elimina una relación de un diagrama, siempre se elimina del modelo.
 
 > [!NOTE]
-> Ciertos tipos de elementos en un diagrama UML tienen etiquetas. Al seleccionar estos elementos dibujando un rectángulo en torno a ellos, es posible seleccionar las etiquetas, pero no los elementos que poseen esas etiquetas. No es posible eliminar un subconjunto de los elementos seleccionados de esta manera. Para seleccionar un subconjunto de estos elementos, mantenga presionada la tecla **Ctrl** mientras hace clic en cada elemento.
+> Ciertos tipos de elementos en un diagrama UML tienen etiquetas. Al seleccionar estos elementos dibujando un rectángulo en torno a ellos, es posible seleccionar las etiquetas, pero no los elementos que poseen esas etiquetas. No es posible eliminar un subconjunto de los elementos seleccionados de esta manera. To select a subset of these elements, press and hold the **CTRL** key while you click each element.
 
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Para quitar una vista de clasificador de un diagrama
 
-- Haga clic con el botón secundario en el elemento del diagrama y, a continuación, haga clic en **quitar del diagrama**.
+- Right-click the element on the diagram, and then click **Remove from Diagram**.
 
   \- o -
 
-- Haga clic en el elemento del diagrama y, a continuación, presione la tecla **Supr** .
+- Click the element on the diagram and then press the **DELETE** key.
 
-  - Esta vista del elemento desaparece. Sin embargo, el elemento permanece en el modelo y todavía puede encontrarlo en el **Explorador de modelos UML**. También permanecen las demás vistas del mismo elemento.
+  - Esta vista del elemento desaparece. However, the element remains in the model, and you can still find it in **UML Model Explorer**. También permanecen las demás vistas del mismo elemento.
 
-  - Todos los conectores que terminan en esta forma se quitan del diagrama, pero la relación que representa se mantiene en el modelo. Puede ver la relación en el **Explorador de modelos UML** en **relaciones**, bajo cada elemento al que se conecta.
+  - Todos los conectores que terminan en esta forma se quitan del diagrama, pero la relación que representa se mantiene en el modelo. You can see the relationship in **UML Model Explorer** under **Relationships**, under each element that it connects.
 
 #### <a name="to-delete-an-element-from-the-model"></a>Para eliminar un elemento del modelo
 
-- Haga clic con el botón secundario en el elemento en el **Explorador de modelos UML** o en un diagrama y, a continuación, haga clic en **eliminar del modelo**.
+- Right-click the element either in **UML Model Explorer** or on a diagram, and then click **Delete from Model**.
 
   - El elemento se elimina de todos los diagramas en los que aparece.
 
@@ -300,43 +300,31 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 
 #### <a name="to-delete-a-relationship-from-the-model"></a>Para eliminar una relación del modelo
 
-- Haga clic con el botón secundario en la relación en un diagrama o en el **Explorador de modelos UML**y, a continuación, haga clic en **eliminar del modelo**.
+- Right-click the relationship on a diagram or in **UML Model Explorer**, and then click **Delete from Model**.
 
     > [!CAUTION]
     > No se puede quitar una relación de un diagrama sin quitarla del modelo.
 
      La relación se elimina del modelo y se elimina de todos los diagramas en los que aparece.
 
-## <a name="presentation"></a>Preparar un diagrama para la presentación
+## <a name="presentation"></a> Preparing a Diagram for Presentation
  Las siguientes características le ayudarán a llamar la atención sobre partes específicas del diagrama, agregar explicaciones o dividir un diagrama en distintas áreas de interés.
 
-- Puede copiar cualquier parte de un diagrama en Word, PowerPoint u otro documento. Seleccione las formas y los conectores que desee, haga clic con el botón secundario y, a continuación, haga clic en **copiar**.
+- Puede copiar cualquier parte de un diagrama en Word, PowerPoint u otro documento. Select the shapes and connectors you want, right-click and then click **Copy**.
 
-- Se puede cambiar el color de cualquier forma o conector. Seleccione una o varias formas y cambie la propiedad **color** . Si no ve la ventana **Propiedades**, presione **F4**.
+- Se puede cambiar el color de cualquier forma o conector. Select one or more shapes and change the **Color** property. Si no ve la ventana **Propiedades**, presione **F4**.
 
-- En los diagramas de algunos tipos, puede dibujar líneas, rectángulos y puntos suspensivos en la sección **formas simples** del cuadro de herramientas. Estas formas no forman parte del modelo UML.
+- On diagrams of some kinds, you can draw lines, rectangles and ellipses from the **Simple Shapes** section of the Toolbox. Estas formas no forman parte del modelo UML.
 
-- Para etiquetar un área, puede arrastrar un comentario desde el cuadro de herramientas y, a continuación, establecer su propiedad **transparente** en **true**. Al igual que las formas simples, los comentarios no forman parte del modelo UML y no aparecen en el Explorador de modelos UML.
+- To label an area, you can drag a Comment from the Toolbox and then set its **Transparent** property to **True**. Al igual que las formas simples, los comentarios no forman parte del modelo UML y no aparecen en el Explorador de modelos UML.
 
 - Para agregar notas y explicaciones a los elementos del modelo, puede crear comentarios y, a continuación, vincularlos a los elementos.
 
-- Para alinear perfectamente las formas de una columna o fila en el diagrama, puede instalar el comando Alinear formas. Está disponible como extensión UML de ejemplo: [UML: comando para alinear formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>Para exportar un diagrama como imagen
- Para obtener más información, vea [exportar diagramas como imágenes](../modeling/export-diagrams-as-images.md).
+ For more information, see [Export diagrams as images](../modeling/export-diagrams-as-images.md).
 
-## <a name="extensions"></a>Extender los diseñadores de UML
- Puede agregar nuevas funcionalidades a las herramientas de UML y adaptar la notación del diagrama a sus propias necesidades. Para obtener más información, vea [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md).
-
- Hay varios ejemplos de extensiones disponibles. Simplemente puede instalarlos y usarlos, o bien puede usar su código fuente como base para sus propias extensiones. Entre los ejemplos se incluye:
-
-|||
-|-|-|
-|[Alinear formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|Comando de menú que ayuda a ordenar un diagrama.|
-|[Vínculo a docs](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|Vincule cualquier elemento UML a encabezados de Word, diapositivas de PowerPoint, archivos de cualquier tipo, diagramas UML u otros elementos UML. El vínculo se puede crear simplemente arrastrando el elemento. Más adelante, puede hacer doble clic en el elemento para ver el elemento vinculado. Por ejemplo, puede vincular casos de uso a las especificaciones de Word o diagramas de actividades detallados y acciones para crear diapositivas de guiones gráficos.|
-|[Entrada rápida](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|Cree un modelo rápidamente mediante entrada de texto. Resulta útil para capturar ideas en las reuniones.|
-|[Color por estereotipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Clases de colores según un estereotipo. Puede ampliar fácilmente el código para que funcione con sus propios estereotipos.|
-|[Modelado de dominios](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|Valores predeterminados convenientes para los modelos de negocios. De manera predeterminada se muestran las asociaciones sin flechas y las operaciones no aparecen en las clases.|
+## <a name="extensions"></a> Extending the UML Designers
+ Puede agregar nuevas funcionalidades a las herramientas de UML y adaptar la notación del diagrama a sus propias necesidades. For more information, see [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md).
 
 ## <a name="see-also"></a>Vea también
- [Crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md) [analizar y modelar arquitectura](../modeling/analyze-and-model-your-architecture.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
+ [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md) [Analyzing and Modeling Architecture](../modeling/analyze-and-model-your-architecture.md) [Create models for your app](../modeling/create-models-for-your-app.md)

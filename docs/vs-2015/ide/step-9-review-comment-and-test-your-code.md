@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7fc6f29246f90c47a4c59a5ae6bb1999ceac72bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646904"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299968"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita ningún punto y coma en Visual Basic). La instrucción anterior indica al control `PictureBox` que cargue el archivo que el usuario seleccionó con el componente **OpenFileDialog** .
+   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
 
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 5 o el](http://go.microsoft.com/fwlink/?LinkId=205216) [tutorial 1: C# crear un visor de imágenes en-vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-comments"></a>Para agregar comentarios
 
@@ -66,13 +66,13 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
 2. Guarde el programa antes de ejecutarlo, para ello, elija el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.
 
-     ![Botón guardar todo](../ide/media/express-iconsaveall.png "Express_IconSaveAll") de la barra de herramientas Botón guardar todo
+     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
 
      Si quiere, para guardar el programa, elija **Archivo**, **Guardar todo** en la barra de menús. El procedimiento recomendado consiste en guardar desde el principio y a menudo.
 
      Mientras se ejecuta, el programa debería parecerse a la siguiente imagen.
 
-     ![Visor de imágenes](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Visor de imágenes
+     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
 
 ### <a name="to-test-your-program"></a>Para probar el programa
 

@@ -1,5 +1,5 @@
 ---
-title: Implementar aplicaciones, servicios y componentes | Documentos de Microsoft
+title: Deploying Applications, Services, and Components | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260684"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289811"
 ---
 # <a name="deploying-applications-services-and-components"></a>Implementar aplicaciones, servicios y componentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ Al implementar una aplicación, servicio o componente, se distribuye para su ins
   
 |Escenario de implementación|Contenido adicional|  
 |-------------------------|------------------------|  
-|**Publicar en la nube:** Se pueden ofrecer aplicaciones, servicios y datos desde cualquier parte mediante Visual Studio para implementarlos en Microsoft Azure.|[Publicar aplicaciones en Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Publicar una aplicación de Windows Store:** Puede compilar fácilmente, enviar y vender las aplicaciones desde el Store de Windows para clientes de todo el mundo.|[Empaquetado, implementación y consulta de aplicaciones de Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Publicar un Windows Phone app:** Puede enviar una nueva aplicación o una actualización a una aplicación existente para la certificación en el centro de desarrollo de Windows Phone.|[Publicar una aplicación de Windows Phone](http://dev.windowsphone.com/publish)|  
-|**Implementar una aplicación ASP.NET o servicio:** Puede implementar aplicaciones ASP.NET y servicios en una de varias maneras diferentes.|[Implementación de aplicaciones web ASP.NET y servicios](http://www.asp.net/aspnet/overview/deployment)|  
-|**Implementar una aplicación o servicio LightSwitch:** Después de crear aplicaciones y servicios OData mediante LightSwitch, puede implementar en un servidor web o en Microsoft Azure.|[Implementar aplicaciones LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**Publicar una aplicación para SharePoint:** Puede publicar una aplicación para SharePoint en el Store de Office o en un catálogo de aplicaciones para una organización interna.|[Publicar una aplicación para SharePoint mediante Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Publicar una aplicación para Office:** Puede publicar una aplicación de Office en el Store de Office o en un catálogo de aplicaciones para una organización interna.|[Publicar la aplicación de Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Implementar un servicio WCF:** Otras aplicaciones pueden usar los servicios RIA de WCF que se implementen en un servidor web.|[Soluciones de servicios de implementación de RIA de WCF](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Implementar un servicio de OData:** Otras aplicaciones pueden utilizar los servicios de OData que se implementen en un servidor web.|[Implementar un servicio de OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Implementar una aplicación de escritorio:** Mediante el uso de la implementación de ClickOnce, puede publicar una aplicación de escritorio en un servidor web o un recurso compartido de red. A continuación, los usuarios podrán instalar la aplicación con un solo clic.|[Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Crear un programa de instalación:** Puede crear un programa de instalación mediante InstallShield Limited Edition, que es gratuito.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Mantener un programa de instalación existente:** Seguir usando un programa de instalación creado en una versión anterior de Visual Studio al instalar la extensión de proyectos de instalador de Visual Studio.|[Extensión de proyectos de instalador de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Aquí encontrará documentación sobre los proyectos de instalador: [Implementación del instalador de Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Implementar una aplicación de Visual C++:** Puede implementar el runtime de Visual C++ con una aplicación mediante el uso de la implementación central, implementación local o vinculación estática.|[Implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**Implementar una aplicación para pruebas:** Puede habilitar un desarrollo y pruebas más sofisticados si implementa las aplicaciones en entornos virtuales.|[Ejecutar pruebas en un entorno de laboratorio](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Instalar requisitos previos:** Puede instalar los componentes de requisitos previos para las aplicaciones de escritorio si configura un instalador genérico, lo que se conoce como programa previo.|[Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)|
+|**Publish to the cloud:** You can make applications, services, and data available from anywhere by using Visual Studio to deploy them to Microsoft Azure.|[Publishing Applications to Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Publish a Windows Store app:** You can easily build, submit, and sell your apps from the Windows Store to customers around the world.|[Packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Publish a Windows Phone app:** You can submit a new app or an update to an existing app for certification on the Windows Phone Dev Center.|[Publish a Windows Phone App](https://developer.microsoft.com/)|  
+|**Deploy an ASP.NET application or service:** You can deploy ASP.NET applications and services in a number of different ways.|[Deploying ASP.NET web applications and services](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Deploy a LightSwitch application or service:** After you create applications and OData services by using LightSwitch, you can deploy them to a web server or to Microsoft Azure.|[Implementar aplicaciones LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**Publish an app for SharePoint:** You can publish an app for SharePoint to the Office Store or to an app catalog for an internal organization.|[Publish an app for SharePoint by using Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Publish an app for Office:** You can publish an app for Office to the Office Store or to an app catalog for an internal organization.|[Publishing your app for Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|**Deploy a WCF service:** Other applications can use WCF RIA services that you deploy to a web server.|[Deploying WCF RIA Services Solutions](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|**Deploy an OData service:** Other applications can use OData services that you deploy to a web server.|[Deploy an OData Service](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|**Deploy a desktop application:** By using ClickOnce deployment, you can publish a desktop application to a web server or a network file share. A continuación, los usuarios podrán instalar la aplicación con un solo clic.|[Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
+|**Create a setup program:** You can create a setup program by using InstallShield Limited Edition, which is free.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|**Maintain an existing setup program:** Continue using a setup program created in an earlier version of Visual Studio by installing the Visual Studio Installer Projects Extension.|[Visual Studio Installer Projects Extension](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> Documentation for installer projects is available here: [Visual Studio Installer Deployment](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
+|**Deploy a Visual C++ application:** You can deploy the Visual C++ runtime with an application by using central deployment, local deployment, or static linking.|[Implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Deploy an application for testing:** You can enable more sophisticated development and testing by deploying your applications into virtual environments.|[Ejecutar pruebas en un entorno de laboratorio](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|**Install prerequisites:** You can install prerequisite components for desktop applications by configuring a generic installer, which is known as a bootstrapper.|[Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)|

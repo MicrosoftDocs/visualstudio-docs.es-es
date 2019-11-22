@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6976d7c0e32739348ec0d78603e6b6d47d01477b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661586"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298091"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabajar con activos 3D para juegos y aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ En este documento, se describen las herramientas de [!INCLUDE[vsprvs](../include
  Puede usar el Diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que es una herramienta de diseño de sombreadores basada en gráficos, para crear efectos visuales personalizados sin conocer la programación de HLSL.
 
 > [!NOTE]
-> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para más información sobre cómo depurar una aplicación basada en DirectX, vea [Graphics Diagnostics (Debugging DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md) [Diagnóstico de gráficos (depurar gráficos de DirectX)].
+> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633). Para más información sobre cómo depurar una aplicación basada en DirectX, vea [Graphics Diagnostics (Debugging DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md) [Diagnóstico de gráficos (depurar gráficos de DirectX)].
 
 ## <a name="directx-version-compatibility"></a>Compatibilidad de versiones de DirectX
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa DirectX para representar activos 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) [Guía de Windows Advanced Rasterization Platform (WARP)].
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa DirectX para representar activos 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) Guide](https://go.microsoft.com/fwlink/p/?LinkId=224634) [Guía de Windows Advanced Rasterization Platform (WARP)].
 
 ## <a name="related-topics"></a>Temas relacionados
 

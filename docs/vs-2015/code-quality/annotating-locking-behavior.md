@@ -1,5 +1,5 @@
 ---
-title: Anotar comportamiento de bloqueo | Microsoft Docs
+title: Annotating Locking Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -33,88 +33,88 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157112"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295827"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.  
+To avoid concurrency bugs in your multithreaded program, always follow an appropriate locking discipline and use SAL annotations.  
   
- Los errores de simultaneidad son considerablemente difíciles de reproducir, diagnosticar y depurar porque son no deterministas. Resulta más difícil razonar sobre la intercalación de subprocesos y pasa a ser práctico cuando se diseña un cuerpo de código que tiene más de unos pocos subprocesos. Por lo tanto, es recomendable a seguir una disciplina de bloqueo en los programas multiproceso. Por ejemplo, seguir un orden de bloqueo mientras adquirir varios bloqueos ayuda a evitar los interbloqueos y adquirir el bloqueo de protección adecuado antes de acceder a un recurso compartido le ayuda a evitar las condiciones de carrera.  
+ Concurrency bugs are notoriously hard to reproduce, diagnose, and debug because they are non-deterministic. Reasoning about thread interleaving is difficult at best, and becomes impractical when you are designing a body of code that has more than a few threads. Therefore, it's good practice to follow a locking discipline in your multithreaded programs. For example, obeying a lock order while acquiring multiple locks helps avoid deadlocks, and acquiring the proper guarding lock before accessing a shared resource helps prevent race conditions.  
   
- Por desgracia, aparentemente simples reglas de bloqueos pueden ser sorprendentemente difíciles de seguir en la práctica. Una limitación fundamental en compiladores y lenguajes de programación de hoy en día es que no admite directamente la especificación y el análisis de los requisitos de simultaneidad. Los programadores tienen que depender de comentarios del código informal para expresar sus intenciones acerca de cómo usan bloqueos.  
+ Unfortunately, seemingly simple locking rules can be surprisingly hard to follow in practice. A fundamental limitation in today’s programming languages and compilers is that they do not directly support the specification and analysis of concurrency requirements. Programmers have to rely on informal code comments to express their intentions about how they use locks.  
   
- Anotaciones de SAL de simultaneidad están diseñadas para ayudarle a especificar bloqueos efectos secundarios, el bloqueo de responsabilidad, tutela de datos, jerarquía de orden de bloqueo y otros comportamientos de bloqueo esperado. Mediante la realización de las reglas implícitas explícitas, las anotaciones de SAL simultaneidad proporcionan una manera coherente para documentar cómo el código usa las reglas de bloqueos. Las anotaciones de simultaneidad también mejoran la capacidad de herramientas de análisis de código para encontrar las condiciones de carrera, interbloqueos, las operaciones de sincronización no coincidentes y otros errores sutiles de simultaneidad.  
+ Concurrency SAL annotations are designed to help you specify locking side effects, locking responsibility, data guardianship, lock order hierarchy, and other expected locking behavior. By making implicit rules explicit, SAL concurrency annotations provide a consistent way for you to document how your code uses locking rules. Concurrency annotations also enhance the ability of code analysis tools to find race conditions, deadlocks, mismatched synchronization operations, and other subtle concurrency errors.  
   
-## <a name="general-guidelines"></a>Directrices generales  
- Mediante el uso de anotaciones, puede indicar los contratos que están implícitos en las definiciones de función entre implementaciones (destinatarios) y los clientes (llamadores) y las invariantes express y otras propiedades del programa que puede mejoran el análisis.  
+## <a name="general-guidelines"></a>Instrucciones generales  
+ By using annotations, you can state the contracts that are implied by function definitions between implementations (callees) and clients (callers), and express invariants and other properties of the program that can further improve analysis.  
   
- SAL admite muchos tipos diferentes de primitivas de bloqueo, por ejemplo, secciones críticas, exclusiones mutuas, bloqueos de giro y otros objetos de recursos. Muchas de las anotaciones de simultaneidad toman una expresión de bloqueo como un parámetro. Por convención, se indica un bloqueo mediante la expresión de ruta de acceso del objeto subyacente de bloqueo.  
+ SAL supports many different kinds of locking primitives—for example, critical sections, mutexes, spin locks, and other resource objects. Many concurrency annotations take a lock expression as a parameter. By convention, a lock is denoted by the path expression of the underlying lock object.  
   
- Algunas reglas de la propiedad de subprocesos debe tener en cuenta:  
+ Some thread ownership rules to keep in mind:  
   
-- Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.  
+- Spin locks are uncounted locks that have clear thread ownership.  
   
-- Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.  
+- Mutexes and critical sections are counted locks that have clear thread ownership.  
   
-- Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.  
+- Semaphores and events are counted locks that do not have clear thread ownership.  
   
-## <a name="locking-annotations"></a>Anotaciones de bloqueos  
- En la tabla siguiente se enumera las anotaciones de bloqueos.  
+## <a name="locking-annotations"></a>Locking Annotations  
+ The following table lists the locking annotations.  
   
-|Anotación|DESCRIPCIÓN|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|Anota una función e indica que en la entrada de estado de la función aumenta en uno el recuento de bloqueo exclusivo del objeto de bloqueo que se denomina por `expr`.|  
-|`_Acquires_lock_(expr)`|Anota una función e indica que en la entrada de estado de la función aumenta en uno el recuento de bloqueos del objeto de bloqueo que se denomina por `expr`.|  
-|`_Acquires_nonreentrant_lock_(expr)`|El bloqueo que se denomina por `expr` se adquiere.  Se notifica un error si ya se mantiene el bloqueo.|  
-|`_Acquires_shared_lock_(expr)`|Anota una función e indica que en la entrada de estado de la función aumenta en uno el recuento de bloqueos compartidos del objeto de bloqueo que se denomina por `expr`.|  
-|`_Create_lock_level_(name)`|Una instrucción que declara el símbolo `name` sea un nivel de bloqueo para que se pueden usar en las anotaciones `_Has_Lock_level_` y `_Lock_level_order_`.|  
-|`_Has_lock_kind_(kind)`|Anota cualquier objeto para restringir la información de tipo de un objeto de recurso. A veces se usa un tipo común para los diferentes tipos de recursos y el tipo sobrecargado no es suficiente para distinguir entre varios recursos de los requisitos de semánticos. Esta es una lista de predefinidos `kind` parámetros:<br /><br /> `_Lock_kind_mutex_`<br /> Tipo Id. de bloqueo para las exclusiones mutuas.<br /><br /> `_Lock_kind_event_`<br /> Identificador de tipo para los eventos de bloqueo.<br /><br /> `_Lock_kind_semaphore_`<br /> Id. de tipo para los semáforos de bloqueo.<br /><br /> `_Lock_kind_spin_lock_`<br /> Tipo Id. de bloqueo para bloqueos de giro.<br /><br /> `_Lock_kind_critical_section_`<br /> Tipo Id. de bloqueo para las secciones críticas.|  
-|`_Has_lock_level_(name)`|Anota un objeto de bloqueo y le asigna el nivel de bloqueo de `name`.|  
-|`_Lock_level_order_(name1, name2)`|Una instrucción que proporciona el bloqueo de ordenación entre `name1` y `name2`.|  
-|`_Post_same_lock_(expr1, expr2)`|Anota una función y se indica en la entrada de estado los dos bloqueos, `expr1` y `expr2`, se tratan como si fueran el mismo objeto de bloqueo.|  
-|`_Releases_exclusive_lock_(expr)`|Anota una función e indica que en post estado disminuye de la función en uno el recuento de bloqueo exclusivo del objeto de bloqueo que se denomina por `expr`.|  
-|`_Releases_lock_(expr)`|Anota una función e indica que en post estado disminuye de la función en uno el recuento de bloqueos del objeto de bloqueo que se denomina por `expr`.|  
-|`_Releases_nonreentrant_lock_(expr)`|El bloqueo que se denomina por `expr` se libera. Se notifica un error si no se mantiene actualmente el bloqueo.|  
-|`_Releases_shared_lock_(expr)`|Anota una función e indica que en post estado disminuye de la función en uno el recuento de bloqueos compartidos del objeto de bloqueo que se denomina por `expr`.|  
-|`_Requires_lock_held_(expr)`|Anota una función e indica que en pre estado, el recuento de bloqueos del objeto que recibe el nombre de `expr` como mínimo.|  
-|`_Requires_lock_not_held_(expr)`|Anota una función e indica que en pre estado, el recuento de bloqueos del objeto que recibe el nombre de `expr` es cero.|  
-|`_Requires_no_locks_held_`|Anota una función e indica que los recuentos de bloqueo de todos los bloqueos que se sabe que el Comprobador de cero.|  
-|`_Requires_shared_lock_held_(expr)`|Anota una función e indica que en pre estado, el recuento de bloqueos compartidos del objeto que recibe el nombre de `expr` como mínimo.|  
-|`_Requires_exclusive_lock_held_(expr)`|Anota una función e indica que en pre estado, el recuento de bloqueo exclusivo del objeto que recibe el nombre de `expr` como mínimo.|  
+|`_Acquires_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Acquires_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the lock count of the lock object that's named by `expr`.|  
+|`_Acquires_nonreentrant_lock_(expr)`|The lock that's named by `expr` is acquired.  An error is reported if the lock is already held.|  
+|`_Acquires_shared_lock_(expr)`|Annotates a function and indicates that in post state the function increments by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Create_lock_level_(name)`|A statement that declares the symbol `name` to be a lock level so that it may be used in the annotations `_Has_Lock_level_` and `_Lock_level_order_`.|  
+|`_Has_lock_kind_(kind)`|Annotates any object to refine the type information of a resource object. Sometimes a common type is used for different kinds of resources and the overloaded type is not sufficient to distinguish the semantic requirements among various resources. Here's a list of pre-defined `kind` parameters:<br /><br /> `_Lock_kind_mutex_`<br /> Lock kind ID for mutexes.<br /><br /> `_Lock_kind_event_`<br /> Lock kind ID for events.<br /><br /> `_Lock_kind_semaphore_`<br /> Lock kind ID for semaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> Lock kind ID for spin locks.<br /><br /> `_Lock_kind_critical_section_`<br /> Lock kind ID for critical sections.|  
+|`_Has_lock_level_(name)`|Annotates a lock object and gives it the lock level of `name`.|  
+|`_Lock_level_order_(name1, name2)`|A statement that gives the lock ordering between `name1` and `name2`.|  
+|`_Post_same_lock_(expr1, expr2)`|Annotates a function and indicates that in post state the two locks, `expr1` and `expr2`, are treated as if they are the same lock object.|  
+|`_Releases_exclusive_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the exclusive lock count of the lock object that's named by `expr`.|  
+|`_Releases_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the lock count of the lock object that's named by `expr`.|  
+|`_Releases_nonreentrant_lock_(expr)`|The lock that's named by `expr` is released. An error is reported if the lock is not currently held.|  
+|`_Releases_shared_lock_(expr)`|Annotates a function and indicates that in post state the function decrements by one the shared lock count of the lock object that's named by `expr`.|  
+|`_Requires_lock_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_lock_not_held_(expr)`|Annotates a function and indicates that in pre state the lock count of the object that's named by `expr` is zero.|  
+|`_Requires_no_locks_held_`|Annotates a function and indicates that the lock counts of all locks that are known to the checker are zero.|  
+|`_Requires_shared_lock_held_(expr)`|Annotates a function and indicates that in pre state the shared lock count of the object that's named by `expr` is at least one.|  
+|`_Requires_exclusive_lock_held_(expr)`|Annotates a function and indicates that in pre state the exclusive lock count of the object that's named by `expr` is at least one.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrínsecos de SAL para objetos de bloqueo no expuestos  
- Ciertos objetos de bloqueo no se exponen mediante la implementación de las funciones de bloqueos asociadas.  En la tabla siguiente se enumera las variables intrínsecas de SAL que habilitan las anotaciones en las funciones que operan en los objetos de bloqueo no expuestos.  
+ Certain lock objects are not exposed by the implementation of the associated locking functions.  The following table lists SAL intrinsic variables that enable annotations on functions that operate on those unexposed lock objects.  
   
-|Anotación|DESCRIPCIÓN|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
-|`_Global_cancel_spin_lock_`|Describe el bloqueo de giro de cancelación.|  
-|`_Global_critical_region_`|Describe la región crítica.|  
-|`_Global_interlock_`|Describe las operaciones de interbloqueos.|  
-|`_Global_priority_region_`|Describe la región de prioridad.|  
+|`_Global_cancel_spin_lock_`|Describes the cancel spin lock.|  
+|`_Global_critical_region_`|Describes the critical region.|  
+|`_Global_interlock_`|Describes interlocked operations.|  
+|`_Global_priority_region_`|Describes the priority region.|  
   
-## <a name="shared-data-access-annotations"></a>Anotaciones de acceso de datos compartidos  
- En la tabla siguiente se enumera las anotaciones para el acceso a datos compartidos.  
+## <a name="shared-data-access-annotations"></a>Shared Data Access Annotations  
+ The following table lists the annotations for shared data access.  
   
-|Anotación|DESCRIPCIÓN|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|Anota una variable e indica que cada vez que se accede a la variable, el recuento de bloqueos del objeto de bloqueo que se denomina por `expr` como mínimo.|  
-|`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|  
-|`_Interlocked_operand_`|El parámetro de función anotado es el operando de destino de una de las distintas funciones Interlocked.  Los operandos deben tener propiedades adicionales específicas.|  
-|`_Write_guarded_by_(expr)`|Anota una variable e indica que cada vez que la variable se modifica, el recuento de bloqueos del objeto de bloqueo que se denomina por `expr` como mínimo.|  
+|`_Guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is accessed, the lock count of the lock object that's named by `expr` is at least one.|  
+|`_Interlocked_`|Annotates a variable and is equivalent to `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_operand_`|The annotated function parameter is the target operand of one of the various Interlocked functions.  Those operands must have specific additional properties.|  
+|`_Write_guarded_by_(expr)`|Annotates a variable and indicates that whenever the variable is modified, the lock count of the lock object that's named by `expr` is at least one.|  
   
 ## <a name="see-also"></a>Vea también  
- [Utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Introducción a SAL](../code-quality/understanding-sal.md)   
- [Anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Anotar comportamiento de la función](../code-quality/annotating-function-behavior.md)   
- [Anotar las clases y estructuras](../code-quality/annotating-structs-and-classes.md)   
- [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Funciones intrínsecas](../code-quality/intrinsic-functions.md)   
- [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)   
- [Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Understanding SAL](../code-quality/understanding-sal.md)   
+ [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
+ [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+ [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)   
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)

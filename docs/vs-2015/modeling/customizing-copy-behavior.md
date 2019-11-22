@@ -1,5 +1,5 @@
 ---
-title: Personalizar el comportamiento de copia | Microsoft Docs
+title: Customizing Copy Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdd45a1de7e2882626d9b12db9be4b0c7a36eb38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655052"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301183"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "72655052"
 En un lenguaje específico de dominio (DSL) creado con el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede alterar lo que sucede cuando el usuario copia y pega elementos.
 
 ## <a name="standard-copy-and-paste-behavior"></a>Comportamiento estándar de copiar y pegar
- Para habilitar la copia, establezca la propiedad **Habilitar copiar pegar** del nodo **Editor** en DSL Explorer.
+ To enable copying, set the **Enable Copy Paste** property of the **Editor** node in DSL Explorer.
 
  De forma predeterminada, cuando el usuario copia elementos al portapapeles, también se copian los siguientes elementos:
 
@@ -32,7 +32,7 @@ En un lenguaje específico de dominio (DSL) creado con el SDK de visualización 
 
   Esta regla se aplica repetidamente a los elementos y vínculos copiados.
 
-  ![Elementos copiados y pegados](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+  ![Copied and pasted elements](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
 
   Los elementos y vínculos copiados se serializan y almacenan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que se coloca en el portapapeles.
 
@@ -41,19 +41,19 @@ En un lenguaje específico de dominio (DSL) creado con el SDK de visualización 
   El usuario puede pegar los elementos copiados en un destino que pueda aceptar los elementos de acuerdo con la definición de DSL. Por ejemplo, en un DSL generado a partir de la plantilla de solución de componentes, el usuario puede pegar puertos en los componentes, pero no en el diagrama, y puede pegar componentes en el diagrama, pero no en otros componentes.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Personalizar el comportamiento de copiar y pegar
- Para obtener más información sobre cómo personalizar el modelo usando código de programa, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Habilitar o deshabilitar copiar, cortar y pegar.**
-En DSL Explorer, establezca la propiedad **enable Copy Paste** del nodo **Editor** .
+ **Enable or disable copy, cut, and paste.**
+In DSL Explorer, set the **Enable Copy Paste** property of the **Editor** node.
 
- **Copiar vínculos al mismo destino.** Por ejemplo, para tener un cuadro de comentario copiado vinculado al mismo elemento de asunto.
-Establezca la propiedad **Propagate Copy** del rol para **propagar la copia solo al vínculo**. Para obtener más información, vea personalizar el comportamiento de la [copia de vínculos](#customizeLinks).
+ **Copy links to the same target.** For example, to have a copied comment box linked to the same subject element.
+Set the **Propagates Copy** property of the role to **Propagate copy to link only**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
 
  Copiar elementos vinculados. Por ejemplo, cuando se copia un nuevo elemento, también se realizan copias de los cuadros de comentarios vinculados.
-Establezca la propiedad **Propagate Copy** del rol para **propagar la copia al vínculo y el encargado de rol opuesto**. Para obtener más información, vea personalizar el comportamiento de la [copia de vínculos](#customizeLinks).
+Set the **Propagates Copy** property of the role to **Propagate copy to link and opposite role player**. For more information, see [Customizing Link Copy Behavior](#customizeLinks).
 
- **Duplique los elementos rápidamente copiando y pegando.** Normalmente, el elemento que acaba de copiar todavía está seleccionado y no se puede pegar el mismo tipo de elemento en él.
-Agregue una directiva de combinación de elementos a la clase de dominio y establézcala para que reenvíe las combinaciones a la clase primaria. Esto tendrá el mismo efecto en las operaciones de arrastrar. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
+ **Rapidly duplicate elements by copying and pasting.** Normally, the item you just copied is still selected, and you cannot paste the same type of element onto it.
+Agregue una directiva de combinación de elementos a la clase de dominio y establézcala para que reenvíe las combinaciones a la clase primaria. Esto tendrá el mismo efecto en las operaciones de arrastrar. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
 
  \- o -
 
@@ -77,21 +77,21 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Cree vínculos adicionales cuando el usuario pegue en un destino seleccionado.** Por ejemplo, cuando se pega un cuadro de comentario en un elemento, se crea un vínculo entre ellos.
-Agregue una directiva de combinación de elementos a la clase de dominio de destino y establézcala para que procese la combinación agregando vínculos. Esto tendrá el mismo efecto en las operaciones de arrastrar. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
+ **Create additional links when the user pastes onto a selected target.** For example, when a comment box is pasted onto an element, a link is made between them.
+Agregue una directiva de combinación de elementos a la clase de dominio de destino y establézcala para que procese la combinación agregando vínculos. Esto tendrá el mismo efecto en las operaciones de arrastrar. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).
 
  \- o -
 
  Invalide `ClipboardCommandSet.ProcessOnPasteCommand()` para crear vínculos adicionales después de llamar al método base.
 
- **Personalizar los formatos en los que se pueden copiar elementos** en aplicaciones externas, por ejemplo, para agregar un borde al formulario de mapa de bits.
-Invalide *midsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` en el proyecto DslPackage.
+ **Customize the formats in which elements can be copied** to external applications – for example, to add a border to the bitmap form.
+Override *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` in the DslPackage project.
 
- **Personalizar el modo en que los elementos se copian en el portapapeles mediante el comando copy, pero no en una operación de arrastre.**
-Invalide *midsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` en el proyecto DslPackage.
+ **Customize how elements are copied to the clipboard by the copy command, but not in a drag operation.**
+Override *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` in the DslPackage project.
 
- **Conservar el diseño de la forma mediante copiar y pegar.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Preserve shape layout through copy and paste.**
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Para lograr este efecto, agregue las formas y conectores al ElementGroupPrototype copiado. El método más cómodo para invalidar es ElementOperations.CreateElementGroupPrototype(). Para ello, agregue el siguiente código al proyecto Dsl:
 
@@ -147,8 +147,8 @@ partial class MyDslDiagram // EDIT NAME
 
 ```
 
- **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Paste shapes in a chosen location, such as the current cursor position.**
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. This technique is demonstrated by the example at [VMSDK: Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Para lograr este efecto, invalide `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar la versión específica de la ubicación de `ElementOperations.Merge()`. Para ello, agregue el siguiente código al proyecto DslPackage:
 
@@ -214,13 +214,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   }
 ```
 
- **Permite al usuario arrastrar y colocar elementos.**
-Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
+ **Let the user drag and drop elements.**
+See [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizeLinks"></a>Personalizar el comportamiento de la copia de vínculos
- Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. En la definición de DSL, seleccione un rol en un lado de una relación y, en el ventana Propiedades establezca el valor de propagación de la **copia** .
+## <a name="customizeLinks"></a> Customizing Link Copy Behavior
+ Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. In the DSL Definition, select a role at one side of a relationship and in the Properties window set the **Propagates Copy** value.
 
- ![Propaga la propiedad de copia del rol de dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propagates Copy property of domain role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
  Existen tres valores:
 
@@ -230,7 +230,7 @@ Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
 
 - Propagate copy to link and opposite role player (Propagar copia a vínculo y encargado de rol opuesto): el grupo copiado incluye una copia del elemento en el otro extremo del vínculo.
 
-  ![Efecto de copiar con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+  ![Effect of copying with PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
 
   Los cambios que haga afectarán a los elementos y a la imagen que se copie.
 
@@ -238,17 +238,17 @@ Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
  Muchos aspectos del comportamiento de un DSL con relación a las operaciones de copiar, pegar, crear y eliminar objetos se rigen por una instancia de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplada al diagrama. Para modificar el comportamiento del DSL, puede derivar su propia clase de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e invalidar la propiedad <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> de su clase de diagrama.
 
 > [!TIP]
-> Para obtener más información sobre cómo personalizar el modelo usando código de programa, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> For more information about customizing the model by using program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagrama de secuencia para la operación de copia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Sequence diagram for the Copy operation](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
 
- ![Diagrama de secuencia de la operación de pegar](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Sequence diagram of Paste operation](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
 
 #### <a name="to-define-your-own-elementoperations"></a>Para definir sus propias ElementOperations
 
 1. En un nuevo archivo del proyecto de DSL, cree una clase que derive de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Agregue una definición de clase parcial para su diagrama de clase. El nombre de esta clase se puede encontrar en **Dsl\GeneratedCode\Diagrams.CS**.
+2. Agregue una definición de clase parcial para su diagrama de clase. The name of this class can be found in **Dsl\GeneratedCode\Diagrams.cs**.
 
     En la clase de diagrama, invalide <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para devolver una instancia de su subclase ElementOperations. Debe devolver la misma instancia en cada llamada.
 
@@ -287,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Recibir elementos arrastrados de otros modelos
- ElementOperations también se puede usar para definir el comportamiento de copiar, mover, eliminar y arrastrar y colocar. Para demostrar el uso de ElementOperations, el ejemplo que se proporciona define un comportamiento de arrastrar y colocar personalizado. Sin embargo, para ese propósito podría considerar el enfoque alternativo que se describe en [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md), que es más extensible.
+ ElementOperations también se puede usar para definir el comportamiento de copiar, mover, eliminar y arrastrar y colocar. Para demostrar el uso de ElementOperations, el ejemplo que se proporciona define un comportamiento de arrastrar y colocar personalizado. However, for that purpose you might consider the alternative approach described in [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md), which is more extensible.
 
  Defina dos métodos en su clase ElementOperations:
 
@@ -375,9 +375,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportamiento estándar de copiar
  El código de esta sección muestra los métodos que puede invalidar para alterar el comportamiento de copiar. Para ayudarle a ver cómo conseguir sus propias personalizaciones, esta sección muestra el código que invalida los métodos implicados en la copia, pero no cambia el comportamiento estándar.
 
- Cuando el usuario presiona CTRL+C o usa el comando de menú Copiar, se llama al método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Puede ver cómo se configura en **DslPackage\Generated Code\CommandSet.CS**. Para obtener más información sobre cómo se configuran los comandos, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Cuando el usuario presiona CTRL+C o usa el comando de menú Copiar, se llama al método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. You can see how this is set up in **DslPackage\Generated Code\CommandSet.cs**. For more information about how commands are set up, see [How to: Add a Command to the Shortcut Menu](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Puede invalidar ProcessOnMenuCopyCommand agregando una definición de clase parcial de *midsl* `ClipboardCommandSet` en el proyecto DslPackage.
+ You can override ProcessOnMenuCopyCommand by adding a partial class definition of *MyDsl*`ClipboardCommandSet` in the DslPackage project.
 
 ```csharp
 using System.Collections.Generic;
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Vea también
- [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizar](../modeling/customizing-deletion-behavior.md) el control de comportamiento de eliminación [: ejemplo de diagramas de circuitos de VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+ [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [Customizing Deletion Behavior](../modeling/customizing-deletion-behavior.md) [Sample: VMSDK Circuit Diagrams sample](https://go.microsoft.com/fwlink/?LinkId=213879)

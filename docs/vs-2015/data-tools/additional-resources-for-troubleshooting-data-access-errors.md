@@ -1,5 +1,5 @@
 ---
-title: Recursos adicionales para la solución de problemas de errores de acceso a datos | Microsoft Docs
+title: Additional resources for troubleshooting data access errors | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673030"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299448"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Recursos adicionales para la solución de problemas de errores de acceso a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). En la tabla siguiente se enumeran los foros relacionados con datos disponibles en MSDN.
 
- [Windows Forms controles de datos y DataBinding](http://go.microsoft.com/fwlink/?LinkId=160179) Proporciona un foro para preguntas y debate en general sobre el acceso a los datos en Windows Forms.
+ [Windows Forms Data Controls and Databinding](https://go.microsoft.com/fwlink/?LinkId=160179) Provides a forum for questions about and general discussions of data access in Windows Forms.
 
- [Foro de ADO.net DataSet](http://go.microsoft.com/fwlink/?LinkId=160180) Proporciona un foro para preguntas y debate en general sobre los conjuntos de valores.
+ [ADO.NET DataSet Forum](https://go.microsoft.com/fwlink/?LinkId=160180) Provides a forum for questions about and general discussions of Datasets.
 
- [Entity Framework ADO.net y LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) Proporciona un foro para preguntas y debate en general sobre Entity Framework aplicaciones y el lenguaje LINQ to Entities.
+ [ADO.NET Entity Framework and LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Provides a forum for questions about and general discussions of Entity Framework applications and the LINQ to Entities language.
 
- [Foro de WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181) Proporciona un foro para preguntas y debate en general sobre los servicios de datos.
+ [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=160181) Provides a forum for questions about and general discussions of data services.
 
- [SQL Server Foro de acceso a datos](http://go.microsoft.com/fwlink/?LinkID=160184) Proporciona un foro para preguntas y debate en general sobre el acceso a los datos en Microsoft SQL Server.
+ [SQL Server Data Access Forum](https://go.microsoft.com/fwlink/?LinkID=160184) Provides a forum for questions about and general discussions of accessing data in Microsoft SQL Server.
 
- [Foro de LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) Proporciona un foro para preguntas y debate en general de LINQ to SQL.
+ [Linq to SQL Forum](https://go.microsoft.com/fwlink/?LinkId=160183) Provides a forum for questions about and general discussions of Linq to SQL.
 
- [Foro de proveedores de datos de ADO.net](http://go.microsoft.com/fwlink/?LinkId=160182) Proporciona un foro para preguntas y debate en general sobre los distintos proveedores de datos de .NET Framework.
+ [ADO.NET Data Providers Forum](https://go.microsoft.com/fwlink/?LinkId=160182) Provides a forum for questions about and general discussions of the different .NET Framework Data Providers.
 
- Para obtener información sobre cómo solucionar problemas de conectividad con SQL Server, consulte [cómo solucionar problemas de conexión al motor de base de datos de SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+ For information about how to troubleshoot connectivity to SQL Server, see [How to Troubleshoot Connecting to the SQL Server Database Engine](https://go.microsoft.com/fwlink/?LinkID=246151).
 
 ## <a name="see-also"></a>Vea también
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

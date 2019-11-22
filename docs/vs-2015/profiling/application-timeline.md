@@ -9,19 +9,19 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 63673dd42987154d69346505c8e1f80b3b4789e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696891"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297748"
 ---
 # <a name="application-timeline"></a>Escala de tiempo de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  
   
- **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Debug / Performance Profiler...**.  
+ **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Debug / Performance Profiler...** .  
   
  Esta herramienta reemplaza a **Capacidad de respuesta de la IU de XAML** , que formaba parte del conjunto de herramientas de diagnóstico de Visual Studio 2013.  
   
@@ -38,10 +38,10 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 5. Windows 7  
   
 > [!NOTE]
-> Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . Consulte [ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Recopilar datos de la escala de tiempo de aplicación  
- Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. Consulte [ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Si es posible, ejecute la aplicación directamente en el dispositivo. El rendimiento de la aplicación observado en el simulador o a través de una conexión a escritorio remoto puede no ser igual al rendimiento real en el dispositivo. Por otro lado, la recopilación de datos mediante el uso de Herramientas remotas para Visual Studio no afecta a los datos de rendimiento.  
@@ -50,7 +50,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
 1. Abra la aplicación XAML.  
   
-2. Haga clic en **Debug / Performance Profiler...**. Debería ver una lista de herramientas de generación de perfiles en la ventana .diagsession.  
+2. Click **Debug / Performance Profiler...** . You should see a list of profiling tools in the .diagsession window.  
   
 3. Seleccione **Escala de tiempo de aplicación** y luego haga clic en **Iniciar** en la parte inferior de la ventana.  
   
@@ -63,7 +63,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
      Visual Studio analiza los datos recopilados y muestra los resultados.  
   
-     ![Informe del generador de perfiles de la escala de tiempo](../profiling/media/timeline-base.png "TIMELINE_Base")  
+     ![Timeline profiler report](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
 ## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizar datos de generación de perfiles de escala de tiempo  
  Después de obtener los datos de la generación de perfiles, puede seguir estos pasos para iniciar el análisis:  
@@ -76,14 +76,14 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
  La herramienta **Escala de tiempo de aplicación** muestra datos de tiempo para escenarios, categorías y eventos relacionados con el rendimiento de XAML.  
   
 ### <a name="BKMK_Diagnostic_session_timeline"></a> Escala de tiempo de la sesión de diagnóstico  
- ![Escala de tiempo de rendimiento y diagnósticos](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+ ![Performance and Diagnostics timeline](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  La regla que aparece en la parte superior de la página muestra la escala de tiempo para la información cuyo perfil se ha generado. Esta escala de tiempo se aplica a los gráficos **Utilización del subproceso de IU** y **Rendimiento visual** . Puedes restringir el ámbito del informe arrastrando las barras de navegación en la escala de tiempo para seleccionar un segmento de esta.  
   
  La escala de tiempo también muestra cualquier marca de usuario que haya insertado, así como los eventos del ciclo de vida de activación de la aplicación.  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilización del subproceso de IU  
- ![Gráfico de utilización de CPU](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
+ ![Gráfico de uso de la CPU](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  El gráfico **Utilización del subproceso de UI (%)** es un gráfico de barras que muestra la cantidad relativa de tiempo empleado en una categoría durante un intervalo de la colección.  
   
@@ -115,11 +115,11 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 |||  
 |-|-|  
 |**Ordenar por**|Ordenar por hora de inicio o longitud de los eventos.|  
-|![Agrupar eventos por fotograma](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|  
-|![Filtrar la lista de detalles de la escala de tiempo](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Filtra la lista por categorías seleccionadas y la longitud de los eventos.|  
-|![Personalizar la información de detalles de la escala de tiempo](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Permite especificar las anotaciones de eventos.|  
+|![Group events by frame](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|  
+|![Filter Timeline details list](../profiling/media/timeline-filter.png "TIMELINE_Filter")|Filtra la lista por categorías seleccionadas y la longitud de los eventos.|  
+|![Customize Timeline details information](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Permite especificar las anotaciones de eventos.|  
   
 ## <a name="see-also"></a>Vea también  
- [Blog del equipo WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para las aplicaciones WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones de WPF)](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
  [Procedimientos recomendados para la Tienda Windows con C++, C# y Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimizar WPF: Rendimiento de aplicaciones](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Optimizar el rendimiento de la aplicación WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
