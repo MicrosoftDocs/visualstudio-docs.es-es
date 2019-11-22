@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones de depuración Store
+title: Debug Store apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1f8824000c56fbd74f6ca069eb0535559698bf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68202553"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298330"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ El depurador de Visual Studio permite controlar la ejecución de un programa y e
 |-|-|
 |[Iniciar una sesión de depuración (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|Iniciar una sesión de depuración describe distintas opciones para configurar e iniciar una sesión de depuración de una aplicación de JavaScript.|
 |[Controlar la ejecución en una sesión de depuración (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|Navegación del depurador le guía por una aplicación sencilla que muestra cómo iniciar y detener la depuración, cómo navegar por el código y cómo ver el estado del programa.|
-|[Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)|Depurar HTML y CSS muestra cómo depurar de forma interactiva una aplicación de JavaScript mediante herramientas de inspección DOM activas para ver y modificar HTML y CSS.|
-|[Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Depurar JavaScript mediante la consola muestra cómo depurar de forma interactiva una aplicación JavaScript usando [JavaScript Console commands](../debugger/javascript-console-commands.md).|
+|[Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)|Depurar HTML y CSS muestra cómo depurar de forma interactiva una aplicación de JavaScript mediante herramientas de inspección DOM activas para ver y modificar HTML y CSS.|
+|[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Debug JavaScript using the console shows you how to interactively debug a JavaScript app using [JavaScript Console commands](../debugger/javascript-console-commands.md).|
 |[Iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|Iniciar una sesión de depuración (Visual C++, Visual C# y Visual Basic) describe distintas opciones para configurar e iniciar una sesión de depuración de una aplicación escrita con Visual C++, Visual C# o Visual Basic.|
 |[Navegar por una sesión de depuración (XAML y C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|Navegación del depurador le guía por una aplicación sencilla que muestra cómo iniciar y detener la depuración, cómo navegar por el código y cómo ver y cambiar el estado del programa.|
 |[Desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|El depurador deshabilita eventos de la Administración de la duración de los procesos (PLM) de Windows que suspenden, continúan y finalizan aplicaciones. Puede desencadenar estos eventos desde la barra de herramientas del depurador.<br /><br /> Las tareas en segundo plano permiten realizar importantes operaciones aun cuando la aplicación se haya suspendido. El depurador permite iniciar y depurar estas tareas en segundo plano.|
 
 ## <a name="see-also"></a>Vea también
- [Depuración en Visual Studio (en MSDN Library)](http://go.microsoft.com/fwlink/?LinkID=226896)
+ [Debugging in Visual Studio (in the MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)

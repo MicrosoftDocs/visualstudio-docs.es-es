@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657108"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302053"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 12. Seleccione el control Checkbox. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
 
-     ![Aplicación WPF sencilla](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. Haga doble clic en el control de botón para agregar un controlador de evento Click.
 
@@ -147,11 +147,11 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 8. Elija **Iniciar grabación** en UIMap – Generador de pruebas de IU codificadas.
 
-     ![Iniciar grabación](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![Start recording](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      Puede pausar la grabación si es necesario, por ejemplo, si tiene que encargarse del correo entrante.
 
-     ![Pausar la grabación](../test/media/cuit.png "CUIT")
+     ![Pause the recording](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.
@@ -369,22 +369,22 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="videos"></a>Vídeos
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-Episode1-gettingstarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Laboratorio de prácticas
- [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Foro
- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Vea también
- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [Introducción con las](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configuraciones y plataformas compatibles con WPF Designer para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Getting Started with the WPF Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662606"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296212"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Trabajar con código de Visual C++ (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
 - Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.
 
 ### <a name="troubleshooting-other-error-messages"></a>Solucionar problemas de otros mensajes de error
- Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Vea el [foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+ Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Vea el [foro del Diseñador de clases de Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a> Limitaciones de los elementos de código C++
 
@@ -107,4 +107,4 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
 - El Diseñador de clases no puede mostrar tipos que sean de tipo void o que deriven de un tipo void.
 
 ## <a name="see-also"></a>Otras referencias
- [Diseñar y ver clases y tipos](../ide/designing-and-viewing-classes-and-types.md) [trabajar con clases y otros tipos (diseñador de clases)](../ide/working-with-classes-and-other-types-class-designer.md) [trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md) [información adicional sobre Diseñador de clases errores](../ide/additional-information-about-class-designer-errors.md) [clases C++ visuales en Diseñador de clases](../ide/visual-cpp-classes-in-class-designer.md) [estructuras C++ visuales en diseñador de clases](../ide/visual-cpp-structures-in-class-designer.md) [enumeraciones visuales C++ en diseñador de clases](../ide/visual-cpp-enumerations-in-class-designer.md) definiciones de tipos [visuales C++ en diseñador de clases](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Diseñar y ver clases y tipos](../ide/designing-and-viewing-classes-and-types.md) [trabajar con clases y otros tipos (diseñador de clases)](../ide/working-with-classes-and-other-types-class-designer.md) [trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md) [información adicional sobre los errores de diseñador de clases](../ide/additional-information-about-class-designer-errors.md) [clases visuales C++ en diseñador de clases](../ide/visual-cpp-classes-in-class-designer.md) [estructuras visuales C++ en diseñador de clases](../ide/visual-cpp-structures-in-class-designer.md) [enumeraciones visuales C++ en diseñador de clases](../ide/visual-cpp-enumerations-in-class-designer.md) [ C++ definiciones](../ide/visual-cpp-typedefs-in-class-designer.md) de tipo visual en diseñador de clases

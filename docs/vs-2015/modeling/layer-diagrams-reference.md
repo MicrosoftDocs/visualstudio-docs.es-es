@@ -1,5 +1,5 @@
 ---
-title: 'Diagramas de capas: referencia | Microsoft Docs'
+title: 'Layer Diagrams: Reference | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,17 +22,17 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8a0654936ac102891981ecbee43430172487628
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646117"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301612"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de capas: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede usar un *Diagrama de capas* para visualizar la arquitectura lógica de alto nivel del sistema. Un diagrama de capas organiza los artefactos físicos del sistema en grupos lógicos abstractos denominados *capas*. Estas capas describen las tareas principales que realizan los artefactos o los componentes principales del sistema. Cada capa también puede contener capas anidadas que describen tareas más detalladas.
+In Visual Studio, you can use a *layer diagram* to visualize the high-level, logical architecture of your system. A layer diagram organizes the physical artifacts in your system into logical, abstract groups called *layers*. Estas capas describen las tareas principales que realizan los artefactos o los componentes principales del sistema. Cada capa también puede contener capas anidadas que describen tareas más detalladas.
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -48,22 +48,22 @@ En Visual Studio, puede usar un *Diagrama de capas* para visualizar la arquitect
 
 - Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
 
-  En este tema se describen los elementos que puede usar en un diagrama de capas. Para obtener información más detallada sobre cómo crear y dibujar diagramas de capas, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+  En este tema se describen los elementos que puede usar en un diagrama de capas. For more detailed information about how to create and draw layer diagrams, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md). For more information about layering patterns, visit the [Patterns & Practices site](https://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-layer-diagrams"></a>Leer diagramas de capas
- ![Elementos en diagramas de capas](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
+ ![Elements on layer diagrams](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
 
  En la tabla siguiente se describen los elementos que puede usar en un diagrama de capas.
 
-|**Forma**|**Element**|**Descripción**|
+|**Shape**|**Element**|**Descripción**|
 |---------------|-----------------|---------------------|
-|1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir el **Explorador de capas**.<br /><br /> Para obtener más información, vea [Explorador de capas](#Explorer).<br /><br /> -    las**dependencias de espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **espacios de nombres necesarios** : especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|
-|2|**Pendiente**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
-|3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
+|1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> To see the artifacts that are linked to a layer, open the shortcut menu for the layer, and then choose **View Links** to open **Layer Explorer**.<br /><br /> For more information, see [Layer Explorer](#Explorer).<br /><br /> -   **Forbidden Namespace Dependencies** - Specifies that artifacts associated with this layer cannot depend on the specified namespaces.<br />-   **Forbidden Namespaces** - Specifies that artifacts associated with this layer must not belong to the specified namespaces.<br />-   **Required Namespaces** - Specifies that artifacts associated with this layer must belong to one of the specified namespaces.|
+|2|**Dependency**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
+|3|**Bidirectional Dependency**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> -   **Direction** - Specifies the direction of the dependency.|
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
-|5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|
+|5|**Comment Link**|Se usa para vincular comentarios a elementos del diagrama.|
 
-## <a name="Explorer"></a>Explorador de capas
+## <a name="Explorer"></a> Layer Explorer
  Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra la cantidad de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:
 
 - Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
@@ -80,18 +80,18 @@ En Visual Studio, puede usar un *Diagrama de capas* para visualizar la arquitect
 
 #### <a name="to-examine-the-linked-artifacts"></a>Para examinar los artefactos vinculados
 
-- En el diagrama de capas, abra el menú contextual de una o varias capas y, a continuación, elija **ver vínculos**.
+- On the layer diagram, open the shortcut menu for one or more layers, and then choose **View Links**.
 
-     El **Explorador de capas** se abre y muestra los artefactos que están vinculados a las capas seleccionadas. El **Explorador de capas** tiene una columna que muestra cada una de las propiedades de los vínculos de artefacto.
+     **Layer Explorer** opens and shows the artifacts that are linked to the selected layers. **Layer Explorer** has a column that shows each of the properties of the artifact links.
 
     > [!NOTE]
-    > Si no puede ver todas estas propiedades, expanda la ventana **Explorador de capas** .
+    > If you cannot see all of these properties, expand the **Layer Explorer** window.
 
-    |**Columna en el explorador de capas**|**Descripción**|
+    |**Column in Layer Explorer**|**Descripción**|
     |----------------------------------|---------------------|
-    |**Categorías**|Tipo de artefacto, como una clase, espacio de nombres, archivo de código fuente, etcétera|
+    |**Categories**|Tipo de artefacto, como una clase, espacio de nombres, archivo de código fuente, etcétera|
     |**Layer**|Capa que se vincula al artefacto|
-    |**Admite la validación**|Si **es true**, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias de este elemento o de este.<br /><br /> Si **es false**, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md).|
+    |**Supports Validation**|If **True**, then the layer validation process can verify that the project conforms to dependencies to or from this element.<br /><br /> If **False**, then the link does not participate in the layer validation process.<br /><br /> For more information, see [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md).|
     |**Identificador**|Referencia al artefacto vinculado|
 
 ## <a name="see-also"></a>Vea también

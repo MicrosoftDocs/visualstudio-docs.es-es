@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661613"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297779"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para obtener más información, consulte [Controles de entrada HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxis declarativa del control de servidor HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Cómo: Establecer un control TextBox de servidor Web para escribir contraseñas](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) y [Tutorial: Validar los datos introducidos por el usuario en una página de formularios Web Forms](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Entrada (casilla)** ![opción de casilla cuadro de herramientas de página web html](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -186,7 +186,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Información general sobre los controles de servidor web Table, TableRow y TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> y <xref:System.Web.UI.WebControls.Table>.
 
- ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de **imagen**
+ **** ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de imagen
 
  Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.
 
@@ -224,7 +224,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Control de regla horizontal HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de **div**
+ **** ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de div
 
  Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.
 

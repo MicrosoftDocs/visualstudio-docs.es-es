@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660564"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302562"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 
   En esta sección se presenta una extensión de prueba de IU codificada que puede grabar y reproducir pruebas para hojas de cálculo de Excel. Cada parte de la extensión se explica en esta sección y en los comentarios de código para los desarrolladores que desean crear este tipo de extensión.
 
-  ![Arquitectura de pruebas de IU](../test/media/ui-testarch.png "UI_TestArch") Información general sobre la arquitectura
+  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
 
 ## <a name="download-the-sample"></a>Descargar el ejemplo
  El ejemplo está compuesto por cuatro proyectos en la solución `CodedUIExtensibilitySample.sln`:
@@ -39,7 +39,7 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 
 - SampleTestProject
 
-  Obtenga el ejemplo de esta [publicación de blog](http://go.microsoft.com/fwlink/?LinkID=185592).
+  Obtenga el ejemplo de esta [publicación de blog](https://go.microsoft.com/fwlink/?LinkID=185592).
 
 > [!NOTE]
 > El ejemplo está pensado para usarse con Microsoft Excel 2010. El ejemplo puede funcionar en otras versiones de Microsoft Excel, pero actualmente no se admite.

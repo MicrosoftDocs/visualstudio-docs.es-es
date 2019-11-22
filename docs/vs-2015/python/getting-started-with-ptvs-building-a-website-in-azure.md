@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551005"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300587"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Introducción a PTVS: Compilar un sitio web en Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Puede empezar a compilar rápidamente un sitio web de Python en Azure.
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
- Comience con el cuadro de diálogo Nuevo proyecto... y, en proyectos de Python, elija el proyecto web Bottle.  Esta plantilla [Bottle](http://bottlepy.org/docs/dev/index.html) es un sitio de inicio basado en la [plataforma de Bootstrap](http://getbootstrap.com/).  Cuando cree el proyecto, Visual Studio le pedirá que instale las dependencias (en este caso, Bottle) en un entorno virtual.  Dado que está realizando la implementación en un sitio web de Azure, deberá agregar las dependencias a un entorno virtual para implementar los bits necesarios para el correcto funcionamiento del sitio.  También deberá basar su entorno en Python 2.7 o 3.4 de 32 bits.  Una vez creado el proyecto, presione F5 para iniciar la ejecución de su sitio localmente.  
+ Comience con el cuadro de diálogo Nuevo proyecto... y, en proyectos de Python, elija el proyecto web Bottle.  Esta plantilla [Bottle](http://bottlepy.org/docs/dev/index.html) es un sitio de inicio basado en la [plataforma de Bootstrap](https://getbootstrap.com/).  Cuando cree el proyecto, Visual Studio le pedirá que instale las dependencias (en este caso, Bottle) en un entorno virtual.  Dado que está realizando la implementación en un sitio web de Azure, deberá agregar las dependencias a un entorno virtual para implementar los bits necesarios para el correcto funcionamiento del sitio.  También deberá basar su entorno en Python 2.7 o 3.4 de 32 bits.  Una vez creado el proyecto, presione F5 para iniciar la ejecución de su sitio localmente.  
   
  Es fácil probar el sitio en Azure.  Si no tiene una suscripción a Azure, puede usar [try.azurewebsites.net](https://trywebsites.azurewebsites.net/).  Este sitio ofrece una manera sencilla de probar Azure Websites durante una hora de cada vez con solo un inicio de sesión social.  No se necesita ninguna tarjeta de crédito.  Elija la plantilla Sitio vacío en la lista desplegable Cambiar idioma y elija Crear.  En "Trabajar con la aplicación web", elija Descargar perfil de publicación y guarde el archivo para usarlo con Visual Studio.  También puede realizar la implementación con GIT desde cualquier sistema operativo.  
   
@@ -33,6 +33,6 @@ Puede empezar a compilar rápidamente un sitio web de Python en Azure.
   
  Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

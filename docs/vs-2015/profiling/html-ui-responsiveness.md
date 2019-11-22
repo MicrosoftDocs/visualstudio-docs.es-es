@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824837"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299667"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
      En la ilustración siguiente se muestra el gráfico de uso de CPU con un área de interés resaltada.  
   
-     ![Gráfico de utilización de CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+     ![Gráfico de uso de la CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Use la [Ver detalles de la escala de tiempo](#TimelineDetails) para obtener información detallada sobre los eventos que se ejecutan con demasiada frecuencia o tardan demasiado en completarse. Por ejemplo, busca lo siguiente:  
   
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  La medida de la duración aparece como un evento de **medida de usuario** en la vista de detalles de la escala de tiempo y muestra información detallada cuando se selecciona.  
   
- ![Utilizar el evento de medición en la vista de detalles de la escala de tiempo](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![Evento de medida de usuario en la vista de detalles de la escala de tiempo](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ## <a name="AnalyzeData"></a> Analizar datos  
  En las secciones siguientes se proporciona información para ayudar a interpretar los datos que aparecen en el generador de perfiles.  
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  En este ejemplo se muestra el aspecto del gráfico de uso de CPU:  
   
- ![Gráfico de utilización de CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+ ![Gráfico de uso de la CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
  Utiliza este gráfico para:  
   
@@ -227,7 +227,7 @@ if (performance.mark && performance.measure) {
   
   En este ejemplo se muestra el aspecto del gráfico de rendimiento visual:  
   
-  ![Gráfico de rendimiento Visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Gráfico de rendimiento visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
   Utiliza el gráfico de rendimiento visual para:  
   
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  En este ejemplo se muestra el aspecto del gráfico de detalles de la escala de tiempo cuando se selecciona el agente de escucha de eventos para un evento clic de DOM:  
   
- ![Gráfico de detalles de escala de tiempo](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![Gráfico de detalles de la escala de tiempo](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  En esta ilustración, el controlador de eventos **spinAction** en la columna **Nombre del evento** es un vínculo que, cuando se selecciona, te permite acceder al controlador de eventos en el código fuente. En el panel derecho, la propiedad **Función de devolución de llamada** ofrece el mismo vínculo al código fuente. Otras propiedades también proporcionan información sobre el evento, como el elemento DOM asociado.  
   
@@ -279,7 +279,7 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo  
  Puedes filtrar la vista de detalles de escala de tiempo de un evento concreto si seleccionas **Filtro para evento** en el menú contextual de ese evento. Cuando eliges esta opción, el ámbito de la escala de tiempo y la cuadrícula se ajusta al evento seleccionado. La selección del gráfico de uso de CPU también limita su ámbito a ese evento específico.  
   
- ![Filtrado de escala de tiempo para un evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Filtrado de la escala de tiempo a un evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ### <a name="FilterEvents"></a> Filtrar eventos  
  Puedes filtrar algunos eventos del gráfico de detalles de la escala de tiempo para reducir el ruido de los datos o para eliminar datos que no sean de interés para el escenario de rendimiento. Puede filtrar por nombre o duración del evento, o bien por los filtros específicos descritos aquí.  
@@ -300,11 +300,11 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> Agrupar eventos por fotograma  
  Puede agrupar eventos que aparecen en la vista de detalles de la escala de tiempo en fotogramas individuales. Estos eventos de fotogramas son eventos generados por la herramienta y representan contenedores de eventos de nivel superior para todo el trabajo del subproceso de interfaz de usuario que tiene lugar entre eventos de pintar. Para habilitar esta vista, seleccione **Agrupar eventos de nivel superior por fotogramas**.  
   
- ![Agrupar eventos de nivel superior por fotogramas](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Agrupación de eventos de nivel superior por fotograma](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Al agrupar eventos por fotogramas, cada evento de nivel superior de la vista de detalles de la escala de tiempo representa un fotograma.  
   
- ![Eventos de escala de tiempo agrupados por fotograma](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![Eventos de la escala de tiempo agrupados por fotograma](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
 ## <a name="SaveSession"></a> Guardar una sesión de diagnóstico  
  En Visual Studio, puedes guardar una sesión de diagnóstico al cerrar la pestaña asociada con dicha sesión. Las sesiones guardadas se pueden volver a abrir en otro momento.  
@@ -330,7 +330,7 @@ if (performance.mark && performance.measure) {
   
   En esta tabla se muestran los eventos y sus descripciones:  
   
-|Evento|Categoría de eventos|Se produce cuando|  
+|evento|Categoría de eventos|Se produce cuando|  
 |-----------|--------------------|-----------------|  
 |Análisis de CSS|Carga|Se encontró nuevo contenido de CSS y se intentó analizarlo.|  
 |Análisis de HTML|Carga|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|  
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> Información adicional  
   
-- Vea [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el generador de perfiles de capacidad de respuesta de la interfaz de usuario.  
+- Vea [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el generador de perfiles de capacidad de respuesta de la interfaz de usuario.  
   
 - Lee las sugerencias para mejorar el rendimiento para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. Para obtener más información, consulte [Procedimientos recomendados de rendimiento para las aplicaciones de la Tienda Windows con JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   

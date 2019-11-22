@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705757"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300315"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
  Las rutas de acceso de los archivos .exe y .dll se almacenan en el archivo de seguimiento cuando se recopila el seguimiento.  El cambio de este parámetro no afecta a los seguimientos recopilados previamente.  
   
 ## <a name="buffering"></a>Almacenamiento en búfer  
- El Visualizador de simultaneidad utiliza el Seguimiento de eventos para Windows (ETW) cuando recopila un seguimiento.  ETW utiliza varios búferes a medida que almacena eventos.  Puede que la configuración del búfer de ETW predeterminada no sea óptima en todos los casos y, eventualmente, podrían producirse problemas, tales como eventos perdidos.  Puede utilizar la pestaña Almacenamiento en búfer para configurar los valores del búfer de ETW. Para obtener más información, vea [Event Tracing](http://go.microsoft.com/fwlink/?LinkId=234579) (Seguimiento de eventos) y [EVENT_TRACE_PROPERTIES structure](http://go.microsoft.com/fwlink/?LinkId=234580) (Estructura de EVENT_TRACE_PROPERTIES).  
+ El Visualizador de simultaneidad utiliza el Seguimiento de eventos para Windows (ETW) cuando recopila un seguimiento.  ETW utiliza varios búferes a medida que almacena eventos.  Puede que la configuración del búfer de ETW predeterminada no sea óptima en todos los casos y, eventualmente, podrían producirse problemas, tales como eventos perdidos.  Puede utilizar la pestaña Almacenamiento en búfer para configurar los valores del búfer de ETW. Para obtener más información, vea [Event Tracing](https://go.microsoft.com/fwlink/?LinkId=234579) (Seguimiento de eventos) y [EVENT_TRACE_PROPERTIES structure](https://go.microsoft.com/fwlink/?LinkId=234580) (Estructura de EVENT_TRACE_PROPERTIES).  
   
 ## <a name="filter"></a>Filtro  
  En la pestaña Filtro, puede seleccionar el conjunto de eventos que recopila el Visualizador de simultaneidad. La selección de un subconjunto de eventos limita los tipos de datos que se presentan en los informes y, además, reduce el tamaño de cada seguimiento y el tiempo necesario para procesarlos.  
@@ -86,6 +86,6 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
   
   Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **Eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis** se reduce la cantidad de datos de seguimiento que se almacenan en el disco.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Solo mi código](../profiling/just-my-code-threads-view.md)   
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

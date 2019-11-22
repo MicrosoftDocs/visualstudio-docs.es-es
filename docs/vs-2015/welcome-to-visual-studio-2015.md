@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657045"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297574"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 >
 > Haga clic aquí para obtener las notas de la versión para [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Descargue [Comunidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)).
+ Descargue [Comunidad de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/)).
 
  Póngase manos a la obra de inmediato: cree un nuevo proyecto y empiece a escribir código. Elija el tipo de aplicación que desea crear. También puede [darse un paseo](./ide/visual-studio-ide.md) por el IDE de Visual Studio para familiarizarse con las herramientas.
 
  Y no olvide explorar nuestra [galería de código](https://code.msdn.microsoft.com/) para buscar ejemplos que le ayuden a escribir la aplicación más rápidamente.
 
- Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para obtener más información sobre el proceso de instalación, vea [instalar Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio
  Agregue su propia extensión de Visual Studio para incluir una herramienta o script que usa con frecuencia al codificar. Puede crear elementos de menú y ventanas de herramientas personalizados para integrar sus propias herramientas en el IDE de Visual Studio. Puede ampliar el editor de Visual Studio para analizar y corregir el código, o agregar un nuevo tipo de proyecto para incluir exactamente lo que necesita.
@@ -74,7 +74,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 - Integre las API de REST de Office 365 en su aplicación para conectarse a los datos almacenados en la nube. Para obtener más información, consulte [estos ejemplos](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Escribir excelentes aplicaciones web con ASP.NET
- [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) es una actualización principal para MVC, WebAPI y SignalR, y se ejecuta en Windows, Mac y Linux.  ASP.NET 5 se diseñó desde la base para ofrecer una pila de .NET eficiente y que admite composición, con el fin de compilar servicios y aplicaciones web modernos basados en la nube.
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) es una actualización principal para MVC, WebAPI y SignalR, y se ejecuta en Windows, Mac y Linux.  ASP.NET 5 se diseñó desde la base para ofrecer una pila de .NET eficiente y que admite composición, con el fin de compilar servicios y aplicaciones web modernos basados en la nube.
 
 ## <a name="build-test-and-manage-your-code"></a>Crear, probar y administrar el código
 

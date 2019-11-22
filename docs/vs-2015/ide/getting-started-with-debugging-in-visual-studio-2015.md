@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300201"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introducción a la depuración en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
 
  ![Punto de interrupción condicional de Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- Para obtener más información sobre cómo declarar las expresiones que se han usado para evaluar los puntos de interrupción condicionales, vea el vídeo de Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiencia de configuración de puntos de interrupción en Visual Studio 2015).
+ Para obtener más información sobre cómo declarar las expresiones que se han usado para evaluar los puntos de interrupción condicionales, vea el vídeo de Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiencia de configuración de puntos de interrupción en Visual Studio 2015).
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspeccionar el código en tiempo de ejecución
  Cuando el código en ejecución alcanza un punto de interrupción y se detiene, puede inspeccionar las variables y las pilas de llamadas para determinar qué está sucediendo. ¿Los valores están dentro de los intervalos que esperaba? ¿Las llamadas se están realizando en el orden correcto?

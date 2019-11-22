@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670476"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300740"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 ### <a name="UserDefined"></a> Variables, funciones y objetos definidos por el usuario
  Al cambiar un archivo JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina los documentos que están abiertos y a los que se hace referencia con el fin de identificar todos los recursos de código disponibles. Esto incluye las variables, funciones y objetos que haya creado. Posteriormente, estos recursos se ponen a disposición de IntelliSense para JavaScript.
 
- Para más información sobre variables, funciones y objetos definidos por el usuario, consulte [Crear objetos (JavaScript)](http://go.microsoft.com/fwlink/?LinkId=108671) en el sitio web de MSDN.
+ Para más información sobre variables, funciones y objetos definidos por el usuario, consulte [Crear objetos (JavaScript)](https://go.microsoft.com/fwlink/?LinkId=108671) en el sitio web de MSDN.
 
 ### <a name="External"></a> Referencias a archivos externos
  Puede incluir diferentes tipos de referencias a archivos externos para lograr la compatibilidad con IntelliSense en el código. Las referencias a archivos externos pueden ser referencias de script, directivas de referencia o se pueden especificar mediante grupos de referencia.
@@ -283,6 +283,6 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 - [Extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md)
 - [Finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-- [Acerca del modelo de objetos DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [Acerca del modelo de objetos DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Lista de miembros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Atributo SRC &#124; src (propiedad)](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [Atributo SRC &#124; src (propiedad)](https://go.microsoft.com/fwlink/?LinkId=92345)

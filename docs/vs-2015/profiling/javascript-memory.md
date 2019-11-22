@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a71de3e425896c5f4394f28ecbf7f90866f383e7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825459"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302774"
 ---
 # <a name="javascript-memory"></a>Memoria de JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  En esta ilustración se muestra la vista Tipos en un detalle de instantánea, con los datos de uso de memoria ordenados por tamaño retenido.  
   
- ![Vista de detalles de instantánea que muestra posibles problemas](../profiling/media/js-mem-snapshot-details.png "JS_Mem_Snapshot_Details")  
+ ![Vista de detalles de instantánea con posibles problemas](../profiling/media/js-mem-snapshot-details.png "JS_Mem_Snapshot_Details")  
   
  En la vista de detalles de instantánea, puedes revisar los datos de uso de memoria por tipo, raíz o dominador mediante la elección de una opción de la barra de herramientas:  
   
@@ -299,7 +299,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 ## <a name="FoldObjects"></a> Ver objetos por dominador  
  En las vistas Tipos y Dominadores, puede elegir si desea ver los objetos incluidos en los dominadores (esta es la vista predeterminada en la pestaña Dominadores). Al seleccionar esta vista, solo se muestran los dominadores en la vista de nivel superior de los objetos. (Los objetos que son descendientes de objetos no globales se ocultan en la vista de nivel superior). Para algunas aplicaciones, esto puede aclarar qué objetos causan una pérdida de memoria mediante la reducción del ruido en los datos.  
   
- Para alternar la vista de los objetos por dominador, elija el botón **Incluir objetos por dominador** . ![Doblar objetos en los dominadores](../profiling/media/js-mem-fold-objects.png "JS_Mem_Fold_Objects")  
+ Para alternar la vista de los objetos por dominador, elija el botón **Incluir objetos por dominador** . ![Incorporación de objetos en sus dominadores](../profiling/media/js-mem-fold-objects.png "JS_Mem_Fold_Objects")  
   
  Para obtener más información sobre los dominadores, consulte [Ver detalles de la instantánea](#SnapshotDetails).  
   
@@ -370,7 +370,7 @@ if (performance && performance.mark) {
   
  A continuación se incluye un gráfico de memoria con varias marcas de usuario e información sobre herramientas para la marca de usuario seleccionada, para la que el argumento de cadena `performance.mark` está establecido en "datos generados":  
   
- ![Mediante una marca de perfil](../profiling/media/js-mem-performance-marks.png "JS_Mem_Performance_Marks")  
+ ![Uso de una marca de perfil](../profiling/media/js-mem-performance-marks.png "JS_Mem_Performance_Marks")  
   
 ## <a name="Tips"></a> Sugerencias para identificar problemas de memoria  
   
@@ -388,7 +388,7 @@ if (performance && performance.mark) {
 
   - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
-- Mira la última parte de [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
+- Mira la última parte de [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
   
 - Lee cómo [administrar la memoria en aplicaciones de la Tienda Windows](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   

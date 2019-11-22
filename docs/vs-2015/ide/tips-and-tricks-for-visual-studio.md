@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d17a053a5620996f3462e2c79e0b68bd374adccd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654836"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299916"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 
@@ -143,6 +143,6 @@ Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y T
 
 ## <a name="see-also"></a>Otras referencias
 
-- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) (Blog de Visual Studio)
-- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)
-- [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)
+- [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/) (Blog de Visual Studio)
+- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.microsoft.com/zainnab/) (Blog de sugerencias y trucos de Visual Studio)
+- [Visual Studio Toolbox on Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb8fc6b62d7b4085b5ee2bd153070de3e27df51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9d476cfc4ce742d3300c78f2219c0b3797130c8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670253"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301302"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,29 +40,29 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 - [Para obtener más información](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
-> La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
+> La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
 
 ## <a name="windows"></a> Características de accesibilidad de Windows
- El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o usar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para obtener más información acerca de estas características, consulte la Ayuda de Windows y el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+ El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o usar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para obtener más información acerca de estas características, consulte la Ayuda de Windows y el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Tutoriales paso a paso gratuitos
  Microsoft ofrece una serie de tutoriales paso a paso que proporcionan los procedimientos detallados para definir las opciones de accesibilidad y la configuración del equipo. Esta información se presenta en un formato en columnas que permite aprender a utilizar el teclado, el mouse o una combinación de ambos.
 
- Para encontrar los tutoriales paso a paso de los productos de Microsoft, consulte el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Para encontrar los tutoriales paso a paso de los productos de Microsoft, consulte el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Productos de tecnología de asistencia para Windows
- Está disponible una amplia variedad de productos de tecnología de asistencia para facilitar el uso de los equipos por parte de usuarios con discapacidades. Encontrará un catálogo de los productos de tecnología de asistencia que funcionan con Windows en el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Está disponible una amplia variedad de productos de tecnología de asistencia para facilitar el uso de los equipos por parte de usuarios con discapacidades. Encontrará un catálogo de los productos de tecnología de asistencia que funcionan con Windows en el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431).
 
  Si usa tecnología de ayuda, asegúrese de ponerse en contacto con el proveedor de esta tecnología antes de actualizar el software o el hardware para ver si existen posibles problemas de compatibilidad.
 
 ## <a name="altfortmats"></a> Documentación en formatos alternativos
- Si tiene dificultades para leer o manipular material impreso, puede conseguir la documentación de muchos productos de Microsoft en formatos más accesibles. Puede ver un índice de la documentación de productos accesibles en el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Si tiene dificultades para leer o manipular material impreso, puede conseguir la documentación de muchos productos de Microsoft en formatos más accesibles. Puede ver un índice de la documentación de productos accesibles en el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431).
 
  Además, puede obtener otras publicaciones de Microsoft adicionales de Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D distribuye estos documentos a los miembros registrados de su servicio de distribución. Para obtener información acerca de la disponibilidad de la documentación de productos de Microsoft y libros de Microsoft Press, póngase en contacto con:
 
 |Learning Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Sitio web de Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Sitio web de Learning Ally: [http://www.learningally.org](https://learningally.org/).|
 
  Las direcciones web pueden cambiar, por lo que quizás no pueda conectarse al sitio o los sitios web aquí mencionados.
 
@@ -76,7 +76,7 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones vigentes en el momento en que se presta el servicio.
 
 ## <a name="moreinfo"></a> Para obtener más información
- Para obtener más información acerca de cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, consulte el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Para obtener más información acerca de cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, consulte el [Sitio web de accesibilidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ## <a name="see-also"></a>Otras referencias
  [Recursos para diseñar aplicaciones accesibles](../../ide/reference/resources-for-designing-accessible-applications.md) [características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

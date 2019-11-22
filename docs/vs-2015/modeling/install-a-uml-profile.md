@@ -1,5 +1,5 @@
 ---
-title: Instalar un perfil UML | Microsoft Docs
+title: Install a UML profile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669593"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298907"
 ---
 # <a name="install-a-uml-profile"></a>Instalar un perfil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Puede extender Visual Studio con un perfil UML. Un perfil permite agregar estere
 
  Si recibe un modelo UML que se haya creado con perfiles, algunas propiedades no se mostrarán a menos que instale los mismos perfiles.
 
- Los perfiles se distribuyen dentro de una extensión de Visual Studio. Una extensión también puede contener otras características, como comandos de menú. Para obtener más información, consulte [Administración de extensiones de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160728).
+ Los perfiles se distribuyen dentro de una extensión de Visual Studio. Una extensión también puede contener otras características, como comandos de menú. For more information, see [Managing Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160728).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Para instalar un perfil UML en el equipo
 
@@ -35,15 +35,15 @@ Puede extender Visual Studio con un perfil UML. Un perfil permite agregar estere
 
 2. En el Explorador de Windows (o Explorador de archivos) haga doble clic en el archivo `.vsix` o ábralo en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-3. Haga clic en **instalar** en el cuadro de diálogo que aparece.
+3. Click **Install** in the dialog box that appears.
 
-4. Para desinstalar o deshabilitar temporalmente la extensión, abra el **Administrador de extensiones** en el menú **herramientas** .
+4. To uninstall or temporarily disable the extension, open **Extension Manager** from the **Tools** menu.
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Para desinstalar o deshabilitar una extensión de perfil
 
-1. En el menú **herramientas** de Visual Studio, haga clic en **Administrador de extensiones**.
+1. On the Visual Studio **Tools** menu, click **Extension Manager**.
 
-2. Haga clic en la extensión que desea quitar y, a continuación, haga clic en **deshabilitar** o **desinstalar**.
+2. Click the extension that you want to remove, and then click **Disable** or **Uninstall**.
 
 ## <a name="see-also"></a>Vea también
- [Personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md)
+ [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md)
