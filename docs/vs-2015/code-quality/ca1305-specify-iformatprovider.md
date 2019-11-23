@@ -44,9 +44,9 @@ ms.locfileid: "72661437"
 ## <a name="rule-description"></a>Descripción de la regla
  Cuando no se proporciona un objeto <xref:System.Globalization.CultureInfo?displayProperty=fullName> o <xref:System.IFormatProvider>, es posible que el valor predeterminado proporcionado por el miembro sobrecargado no tenga el efecto deseado en todas las configuraciones regionales. Además, los miembros de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] eligen la referencia cultural y el formato predeterminados en función de las suposiciones que podrían no ser correctas para el código. Para asegurarse de que el código funciona según lo previsto en los escenarios, debe proporcionar información específica de la referencia cultural según las siguientes directrices:
 
-- Si el valor se va a mostrar al usuario, use la referencia cultural actual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+- Si el valor se va a mostrar al usuario, use la referencia cultural actual. Vea <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
-- Si el valor se almacenará y tendrá acceso a él el software (almacenado en un archivo o base de datos), use la referencia cultural de todos los idiomas. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Si el valor se almacenará y tendrá acceso a él el software (almacenado en un archivo o base de datos), use la referencia cultural de todos los idiomas. Vea <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
 - Si no conoce el destino del valor, haga que el consumidor de datos o el proveedor especifiquen la referencia cultural.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72661437"
  Es seguro suprimir una advertencia de esta regla cuando está seguro de que el proveedor de formato o referencia cultural predeterminado es la opción correcta y donde el mantenimiento del código no es una prioridad de desarrollo importante.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, `BadMethod` provoca dos infracciones de esta regla. `GoodMethod` corrige la primera infracción pasando la referencia cultural de todos los idiomas a <xref:System.String.Compare%2A> y corrige la segunda infracción pasando la referencia cultural actual a <xref:System.String.ToLower%2A> porque `string3` se muestra al usuario.
+ En el ejemplo siguiente, `BadMethod` provoca dos infracciones de esta regla. `GoodMethod` corrige la primera infracción pasando la referencia cultural de todos los idiomas a <xref:System.String.Compare%2A>y corrige la segunda infracción pasando la referencia cultural actual a <xref:System.String.ToLower%2A> porque `string3` se muestra al usuario.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,8 +72,8 @@ ms.locfileid: "72661437"
 
  Este ejemplo produce el siguiente resultado:
 
- **6/4/1900 12:15:12 PM** 
-**06/04/1900 12:15:12**
+ **4/6/1900 12:15:12 PM**
+ **/06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1304: Especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 

@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573789"
 ---
 # <a name="javascript-object-expected"></a>Se esperaba un objeto JavaScript
-Se intentó pasar un objeto no [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a una función integrada que espera un objeto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Varias funciones integradas requieren objetos definidos en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (en lugar de los objetos definidos por el host, o un componente externo, como un control).  
+Se intentó pasar un objeto no[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a una función integrada que espera un objeto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Varias funciones integradas requieren objetos definidos en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (en lugar de los objetos definidos por el host, o un componente externo, como un control).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

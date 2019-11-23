@@ -1,5 +1,5 @@
 ---
-title: 'Idebugapplication (:: RemoveStackFrameSniffer | Microsoft Docs'
+title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  El método `RemoveStackFrameSniffer` quita un proveedor de enumerador de marcos de pila de esta aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Idebugapplication (:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+   de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
  [IDebugStackFrameSniffer (Interfaz)](../../winscript/reference/idebugstackframesniffer-interface.md)

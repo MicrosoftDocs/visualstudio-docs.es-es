@@ -103,7 +103,7 @@ Controle los controles en una página de aplicación de la misma forma que lo ha
 
      El archivo de código de la página de la aplicación se abre en el editor de código.
 
-2. Agregue el método siguiente a la clase `SearchItems`. Este código controla el evento de <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> del <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
+2. Agregue el método siguiente a la clase `SearchItems`: Este código controla el evento de <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> del <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +113,12 @@ Controle los controles en una página de aplicación de la misma forma que lo ha
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Agregue el método siguiente a la clase `SearchItems`. Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
+4. Agregue el método siguiente a la clase `SearchItems`: Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Agregue el método siguiente a la clase `SearchItems`. Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
+5. Agregue el método siguiente a la clase `SearchItems`: Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -154,4 +154,4 @@ Puede obtener más información sobre cómo diseñar el contenido de una página
 ## <a name="see-also"></a>Vea también
 
 [Cómo: crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)
-[tipo de página _ layouts de aplicación](/previous-versions/office/aa979604(v=office.14))
+[tipo de página _layouts de aplicación](/previous-versions/office/aa979604(v=office.14))

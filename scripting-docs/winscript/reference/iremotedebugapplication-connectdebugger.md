@@ -51,5 +51,5 @@ HRESULT ConnectDebugger(
  Una aplicación solo puede tener un depurador conectado a la vez. Este método produce un error si ya hay un depurador conectado.  
   
 ## <a name="see-also"></a>Vea también  
- [Iremotedebugapplication (:: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

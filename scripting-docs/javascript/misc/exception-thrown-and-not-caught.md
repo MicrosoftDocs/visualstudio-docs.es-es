@@ -33,6 +33,6 @@ Incluyó una instrucción `throw` en el código, pero no estaba incluida en un b
 - Si se vuelve a producir la excepción, asegúrese de que hay otra instrucción Catch correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de Error](../../javascript/reference/error-object-javascript.md)    
- [instrucción throw](../../javascript/reference/throw-statement-javascript.md)    
+ [Objeto de Error](../../javascript/reference/error-object-javascript.md)   
+ [instrucción throw](../../javascript/reference/throw-statement-javascript.md)   
  [Try...Catch...Finally (Instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

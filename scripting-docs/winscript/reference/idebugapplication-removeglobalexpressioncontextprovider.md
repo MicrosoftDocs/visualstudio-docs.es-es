@@ -50,5 +50,5 @@ HRESULT RemoveGlobalExpressionContextProvider(
  El método `RemoveGlobalExpressionContextProvider` quita un proveedor de contexto de expresión global de esta aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Idebugapplication (:: AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+ [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

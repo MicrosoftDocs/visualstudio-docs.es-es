@@ -54,6 +54,6 @@ HRESULT RemoveApplication(
  El administrador de depuración de proceso llama a este método cada vez que se llama a `IProcessDebugManager::RemoveApplication`.  
   
 ## <a name="see-also"></a>Vea también  
- [Imachinedebugmanagercookie (:: AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
- @No__t_1 de la [interfaz imachinedebugmanagercookie (](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
+   de la [interfaz imachinedebugmanagercookie (](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

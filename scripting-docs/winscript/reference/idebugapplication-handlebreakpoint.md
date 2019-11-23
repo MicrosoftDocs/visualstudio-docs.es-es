@@ -59,7 +59,7 @@ HRESULT HandleBreakPoint(
  Este método hace que se llame a `IApplicationDebugger::onHandleBreakPoint`.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
- [Iapplicationdebugger (:: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
- @No__t_1 [enumeración breakreason (](../../winscript/reference/breakreason-enumeration.md)  
+   de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
+ [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
+   [enumeración breakreason (](../../winscript/reference/breakreason-enumeration.md)  
  [BREAKRESUMEACTION (Enumeración)](../../winscript/reference/breakresumeaction-enumeration.md)

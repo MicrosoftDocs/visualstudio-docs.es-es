@@ -17,7 +17,7 @@ ms.lasthandoff: 10/19/2019
 ms.locfileid: "72603849"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo
-[!INCLUDE[net_v45](../includes/net-v45-md.md)] incluye un nuevo diseñador estándar para la actividad <xref:System.Activities.Statements.InvokeDelegate>. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
+[!INCLUDE[net_v45](../includes/net-v45-md.md)] incluye un nuevo diseñador integrado para la actividad <xref:System.Activities.Statements.InvokeDelegate>. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
 ### <a name="define-an-activity-delegate"></a>Definir un delegado de actividad
 
@@ -27,7 +27,7 @@ ms.locfileid: "72603849"
 
 3. En el diseñador de flujo de trabajo, haga clic en la pestaña **argumentos** .
 
-4. Haga clic en **crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
+4. Haga clic en **Crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
 
 5. En la columna **tipo de argumento** , seleccione **matriz de [T]** .
 
@@ -37,7 +37,7 @@ ms.locfileid: "72603849"
 
 8. En la columna tipo de argumento, seleccione **Buscar tipos..** .
 
-9. En el explorador de tipos, escriba **ActivityAction** en el campo **nombre de tipo** . Seleccione **ActivityAction \<T >** en la vista de árbol. Seleccione **objeto** en la lista desplegable que parece asignar el tipo **ActivityAction \<Object >** al argumento.
+9. En el explorador de tipos, escriba **ActivityAction** en el campo **nombre de tipo** . Seleccione **ActivityAction\<t >** en la vista de árbol. Seleccione **objeto** en la lista desplegable que parece asignar el tipo **ActivityAction\<objeto >** al argumento.
 
 10. Arrastre una actividad <xref:System.Activities.Statements.While> desde la sección **flujo de control** del cuadro de herramientas hasta la superficie del diseñador.
 
@@ -79,5 +79,5 @@ ms.locfileid: "72603849"
 
    Cuando se ejecuta el flujo de trabajo, la consola mostrará lo siguiente:
 
-   **1** 
-   **ABC**
+   **1**
+   **abc**

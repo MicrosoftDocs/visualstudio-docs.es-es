@@ -25,14 +25,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574628"
 ---
-# <a name="prerequisites-for-remote-debugging-web-applications"></a>Requisitos previos para la depuración remota de aplicaciones Web
+# <a name="prerequisites-for-remote-debugging-web-applications"></a>Requisitos previos para la depuración remota de aplicaciones web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede depurar una aplicación web de modo transparente en el equipo local o en un servidor remoto. Esto significa que el depurador funciona del mismo modo y permite usar las mismas características en cualquiera de los dos equipos. No obstante, para que la depuración remota funcione correctamente, se deben cumplir algunos requisitos previos.  
   
 - Los componentes de depuración remota de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se deben instalar en el servidor que desee depurar. Para obtener más información, consulte Configuración de la [depuración remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
-- De forma predeterminada, el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se ejecuta como un proceso de usuario de ASPNET. Por lo tanto, debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para depurarlo. El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulta [Cómo: Buscar el nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+- De forma predeterminada, el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se ejecuta como un proceso de usuario de ASPNET. Por lo tanto, debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para depurarlo. El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulte [Cómo: Buscar el nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   

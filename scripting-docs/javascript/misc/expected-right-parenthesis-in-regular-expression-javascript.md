@@ -29,8 +29,8 @@ Se intentó crear una captura de expresión regular, una aserción o un grupo, p
 - Agregue los paréntesis de cierre situados más a la derecha.  
   
     > [!NOTE]
-    > Si desea buscar coincidencias con un solo paréntesis, haga una marca de escape con una barra diagonal inversa \\ (-de modo que no se interprete como un carácter especial en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Si desea buscar coincidencias con un solo paréntesis, haga una marca de escape con una barra diagonal inversa \\(-de modo que no se interprete como un carácter especial en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

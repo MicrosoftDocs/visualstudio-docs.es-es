@@ -34,5 +34,5 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
 - Use solo caracteres individuales para crear el juego de caracteres de la expresión regular y asegúrese de que están en el orden correcto.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

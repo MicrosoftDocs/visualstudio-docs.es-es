@@ -47,5 +47,5 @@ Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `
     ```  
   
 ## <a name="see-also"></a>Vea también  
- Objeto de [objeto](../../javascript/reference/object-object-javascript.md)    
+ Objeto de [objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)

@@ -37,6 +37,6 @@ if (denominator == 0) {
 - Asegúrese de que la palabra clave `throw` y la expresión que se va a producir aparecen en la misma línea.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de Error](../../javascript/reference/error-object-javascript.md)    
- [instrucción throw](../../javascript/reference/throw-statement-javascript.md)    
+ [Objeto de Error](../../javascript/reference/error-object-javascript.md)   
+ [instrucción throw](../../javascript/reference/throw-statement-javascript.md)   
  [Try...Catch...Finally (Instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

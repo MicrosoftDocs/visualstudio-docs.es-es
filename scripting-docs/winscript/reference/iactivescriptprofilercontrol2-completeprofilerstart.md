@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  La llamada a `IActiveScriptProfilerControl2::CompleteProfilerStart` garantiza que se envíen los eventos de las funciones que ya se encuentran en la pila de llamadas. Se debe llamar a este método después de que se inicie la generación de perfiles en cualquier motor de scripting que esté en la pestaña actual. Se puede llamar al método para cualquier motor de scripting.  
   
 ## <a name="see-also"></a>Vea también  
- [Iactivescriptprofilercontrol2 (::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2 (Interfaz)](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

@@ -50,5 +50,5 @@ HRESULT RemoveApplication(
  Este método quita una aplicación de la lista de aplicaciones en ejecución.  
   
 ## <a name="see-also"></a>Vea también  
- [IProcessDebugManager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+ [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager (Interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)

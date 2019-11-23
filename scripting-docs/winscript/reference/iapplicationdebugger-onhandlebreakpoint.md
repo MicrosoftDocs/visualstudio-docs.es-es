@@ -45,7 +45,7 @@ HRESULT onHandleBreakPoint(
  de Motivo del punto de interrupción.  
   
  `pError`  
- de Información de error en tiempo de ejecución, proporcionada cuando el valor de `br` es BREAKREASON_ERROR.  
+ de Información de error en tiempo de ejecución, que se proporciona cuando se BREAKREASON_ERROR el valor de `br`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -60,7 +60,7 @@ HRESULT onHandleBreakPoint(
  La aplicación permanecerá suspendida hasta que el IDE del depurador llame a `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz iapplicationdebugger (](../../winscript/reference/iapplicationdebugger-interface.md)  
- [Idebugapplication (:: HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
- [Iremotedebugapplication (:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+   de la [interfaz iapplicationdebugger (](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON (Enumeración)](../../winscript/reference/breakreason-enumeration.md)

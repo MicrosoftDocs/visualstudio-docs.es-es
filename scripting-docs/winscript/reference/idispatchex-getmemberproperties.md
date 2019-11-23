@@ -59,9 +59,9 @@ HRESULT GetMemberProperties(
 |fdexPropCanGet|El miembro se puede obtener mediante DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|No se puede obtener el miembro mediante DISPATCH_PROPERTYGET.|  
 |fdexPropCanPut|El miembro se puede establecer mediante DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|No se puede establecer el miembro mediante DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|El miembro no se puede establecer mediante DISPATCH_PROPERTYPUT.|  
 |fdexPropCanPutRef|El miembro se puede establecer mediante DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|No se puede establecer el miembro mediante DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|El miembro no se puede establecer mediante DISPATCH_PROPERTYPUTREF.|  
 |fdexPropNoSideEffects|El miembro no tiene efectos secundarios. Por ejemplo, un depurador podría obtener o establecer de forma segura este miembro sin cambiar el estado del script que se está depurando.|  
 |fdexPropDynamicType|El miembro es dinámico y puede cambiar durante la vigencia del objeto.|  
 |fdexPropCanCall|Se puede llamar al miembro como un método mediante DISPATCH_METHOD.|  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

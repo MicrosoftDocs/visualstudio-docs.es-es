@@ -29,5 +29,5 @@ Se intentó crear un literal de expresión regular, pero no se incluía una de l
 - Inserte una barra diagonal de terminación para marcar el final de la expresión regular.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

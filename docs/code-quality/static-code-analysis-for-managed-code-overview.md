@@ -26,15 +26,15 @@ El análisis de código para código administrado analiza los ensamblados admini
 La herramienta de análisis representa las comprobaciones que realiza durante un análisis como mensajes de advertencias. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
 > [!NOTE]
-> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar a **error: CA0055 : No se pudo identificar la plataforma para @no__t -0your. dll >** . Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
+> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar al **siguiente: CA0055: no se pudo identificar la plataforma para \<la >. dll**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
 Puede ejecutar el análisis de código en el proyecto de forma manual o automática.
 
-Para ejecutar el análisis de código cada vez que compile un proyecto, seleccione la opción en la página de propiedades **análisis de código** del proyecto. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Para ejecutar el análisis de código cada vez que compile un proyecto, seleccione la opción en la página de propiedades **análisis de código** del proyecto. Para obtener más información, vea [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<project >** .
+Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<proyecto >** .
 
 ## <a name="rule-sets"></a>Conjuntos de reglas
 
@@ -68,7 +68,7 @@ Para obtener más información, vea [suprimir advertencias](../code-quality/in-s
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **compilación y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **compilar y suprimir problemas activos**.
 
 ::: moniker-end
 

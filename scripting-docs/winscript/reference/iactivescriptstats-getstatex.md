@@ -53,14 +53,14 @@ HRESULT GetStatEx(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|No se ha implementado el método.|  
+|`E_NOTIMPL`|El método no está implementado.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este método permite a un motor de scripts personalizado devolver estadísticas significativas para un host personalizado.  
   
 > [!NOTE]
-> Este método no está implementado actualmente.  
+> Este método no se encuentra implementado actualmente.  
   
 ## <a name="see-also"></a>Vea también  
- [Iactivescriptstats (:: GetStat](../../winscript/reference/iactivescriptstats-getstat.md)    
+ [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats (Interfaz)](../../winscript/reference/iactivescriptstats-interface.md)

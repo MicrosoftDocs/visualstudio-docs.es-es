@@ -42,10 +42,10 @@ typedef DWORD SCRIPTTHREADID;
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Todos los subprocesos.|  
   
 ## <a name="remarks"></a>Comentarios  
- @No__t_1, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` y `IActiveScript::InterruptScriptThread` utilizan el tipo de `SCRIPTTHREADID`, pero las constantes solo las pueden usar `IActiveScript::GetScriptThreadState` y `IActiveScript::InterruptScriptThread`.  
+ `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`y `IActiveScript::InterruptScriptThread`utilizan el tipo de `SCRIPTTHREADID`, pero las constantes solo las pueden usar `IActiveScript::GetScriptThreadState` y `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+ [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

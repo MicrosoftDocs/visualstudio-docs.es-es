@@ -29,5 +29,5 @@ Ha intentado realizar una operación en un miembro de datos de un objeto, pero e
 - Asegúrese de que escribió correctamente el nombre del miembro de datos.  
   
 ## <a name="see-also"></a>Vea también  
- Objeto de [objeto](../../javascript/reference/object-object-javascript.md)    
+ Objeto de [objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)

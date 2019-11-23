@@ -51,5 +51,5 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
  Algunas marcas especifican que los motores de idioma se deben interrumpir en la siguiente oportunidad, mientras que otros marcadores especifican el modo de ejecución del depurador.  
   
 ## <a name="see-also"></a>Vea también  
- [Constantes, enumeraciones y estructuras de Active script debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+ [Constantes, enumeraciones y estructuras de Active script debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON (Enumeración)](../../winscript/reference/breakreason-enumeration.md)

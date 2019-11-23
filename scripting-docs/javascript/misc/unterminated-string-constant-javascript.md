@@ -32,5 +32,5 @@ No finalizó la constante de cadena con una comilla de cierre. Las constantes de
 - Agregue la comilla de cierre al final de la cadena.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto String](../../javascript/reference/string-object-javascript.md)    
+ [Objeto String](../../javascript/reference/string-object-javascript.md)   
  [toString (Método, Object)](../../javascript/reference/tostring-method-object-javascript.md)

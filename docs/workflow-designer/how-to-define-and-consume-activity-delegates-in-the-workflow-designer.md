@@ -26,13 +26,13 @@ ms.locfileid: "72650338"
    > [!NOTE]
    > Si no ve las plantillas de proyecto de **flujo de trabajo** , instale primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalación de Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccione **Agregar**  > **nuevo elemento**. Seleccione la categoría **flujo de trabajo** y, a continuación, seleccione la plantilla elemento de **actividad** . Asigne a la nueva actividad el nombre el **deforeach. Xaml** y, a continuación, seleccione **Aceptar**.
+3. Haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccione **Agregar** > **nuevo elemento**. Seleccione la categoría **flujo de trabajo** y, a continuación, seleccione la plantilla elemento de **actividad** . Asigne a la nueva actividad el nombre el **deforeach. Xaml** y, a continuación, seleccione **Aceptar**.
 
    La actividad se abre en el diseñador de flujo de trabajo.
 
 4. En el Diseñador de flujo de trabajo, haga clic en la pestaña **argumentos** .
 
-5. Haga clic en **crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
+5. Haga clic en **Crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
 
 6. En la columna **tipo de argumento** , seleccione **matriz de [T]** .
 
@@ -42,7 +42,7 @@ ms.locfileid: "72650338"
 
 9. En la columna tipo de argumento, seleccione **Buscar tipos** .
 
-10. En el explorador de tipos, escriba **ActivityAction** en el campo **nombre de tipo** . Seleccione **ActivityAction \<T >** en la vista de árbol. Seleccione **objeto** en la lista desplegable que parece asignar el tipo **ActivityAction \<Object >** al argumento.
+10. En el explorador de tipos, escriba **ActivityAction** en el campo **nombre de tipo** . Seleccione **ActivityAction\<t >** en la vista de árbol. Seleccione **objeto** en la lista desplegable que parece asignar el tipo **ActivityAction\<objeto >** al argumento.
 
 11. Arrastre una actividad <xref:System.Activities.Statements.While> desde la sección **flujo de control** del cuadro de herramientas hasta la superficie del diseñador.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72650338"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Usar la actividad personalizada en un flujo de trabajo
 
-1. Compile el proyecto presionando **Ctrl** +**MAYÚS** +**B**.
+1. Compile el proyecto presionando **Ctrl**+**MAYÚS**+**B**.
 
 2. En **Explorador de soluciones**, Abra **Workflow1. Xaml** en el diseñador.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72650338"
 
 Cuando se ejecuta el flujo de trabajo, la consola muestra el siguiente resultado:
 
-**1** 
-**ABC**
+**1**
+**abc**

@@ -44,9 +44,9 @@ ms.locfileid: "72661469"
 ## <a name="rule-description"></a>Descripción de la regla
  Cuando no se proporciona un objeto <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=fullName>, es posible que el valor predeterminado proporcionado por el miembro sobrecargado no tenga el efecto deseado en todas las configuraciones regionales. Además, los miembros de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] eligen la referencia cultural y el formato predeterminados en función de las suposiciones que podrían no ser correctas para el código. Para asegurarse de que el código funciona según lo previsto en los escenarios, debe proporcionar información específica de la referencia cultural según las siguientes directrices:
 
-- Si el valor se va a mostrar al usuario, use la referencia cultural actual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+- Si el valor se va a mostrar al usuario, use la referencia cultural actual. Vea <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
-- Si el valor se almacenará y tendrá acceso a él mediante software, es decir, se conserva en un archivo o base de datos, use la referencia cultural de todos los idiomas. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Si el valor se almacenará y tendrá acceso a él mediante software, es decir, se conserva en un archivo o base de datos, use la referencia cultural de todos los idiomas. Vea <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
 - Si no conoce el destino del valor, haga que el consumidor de datos o el proveedor especifiquen la referencia cultural.
 
@@ -72,8 +72,8 @@ ms.locfileid: "72661469"
 
  Este ejemplo produce el siguiente resultado:
 
- **6/4/1900 12:15:12 PM** 
-**06/04/1900 12:15:12**
+ **4/6/1900 12:15:12 PM**
+ **/06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1305: Especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 

@@ -29,6 +29,6 @@ La estructura de la cadena de búsqueda infringe una o varias reglas gramaticale
 - Asegúrese de que la estructura de la cadena de búsqueda de expresiones regulares se adhiere a la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sintaxis de expresiones regulares.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
- [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile (Método, Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

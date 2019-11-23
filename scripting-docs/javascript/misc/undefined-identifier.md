@@ -35,5 +35,5 @@ Ha intentado utilizar un identificador que el compilador [!INCLUDE[javascript](.
 - Declare la variable con una instrucción **var** (como en `var` x;).  
   
 ## <a name="see-also"></a>Vea también  
- [Variables](../../javascript/variables-javascript.md)    
+ [Variables](../../javascript/variables-javascript.md)   
  [Ámbito de variable](../../javascript/advanced/variable-scope-javascript.md)

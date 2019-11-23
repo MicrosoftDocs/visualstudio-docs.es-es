@@ -74,8 +74,8 @@ HRESULT GetScriptTextAttributes(
  Este método para los bloques de scripts; el método `GetScriptletTextAttributes` es para scriptlets.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz iactivescriptdebug (](../../winscript/reference/iactivescriptdebug-interface.md)  
- [Iactivescriptdebug (:: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
- @No__t_1 de la [interfaz IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
- [IDebugDocumentText:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
+   de la [interfaz iactivescriptdebug (](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
+   de la [interfaz IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

@@ -36,5 +36,5 @@ break labelname;
   
 ## <a name="see-also"></a>Vea también  
  [break (Instrucción)](../../javascript/reference/break-statement-javascript.md)   
- [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)    
+ [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
  [Solución de problemas de los scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

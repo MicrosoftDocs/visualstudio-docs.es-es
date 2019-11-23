@@ -58,6 +58,6 @@ HRESULT AddApplication(
  El administrador de depuración de proceso llama a este método cada vez que se llama a `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz imachinedebugmanagercookie (](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
- [Imachinedebugmanagercookie (:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
+   de la [interfaz imachinedebugmanagercookie (](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

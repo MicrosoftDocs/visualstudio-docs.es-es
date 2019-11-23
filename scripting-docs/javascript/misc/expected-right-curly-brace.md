@@ -29,5 +29,5 @@ No incluyó la llave de cierre que marca el final del cuerpo de la función, el 
 - Agregue la llave de cierre que marca el final de la función, el bucle, el bloque o el inicializador de objeto.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de función](../../javascript/reference/function-object-javascript.md)    
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)   
  [Control del flujo del programa](../../javascript/controlling-program-flow-javascript.md)

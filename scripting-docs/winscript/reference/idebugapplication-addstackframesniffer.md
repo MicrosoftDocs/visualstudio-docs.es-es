@@ -1,5 +1,5 @@
 ---
-title: 'Idebugapplication (:: AddStackFrameSniffer | Microsoft Docs'
+title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -54,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Aunque los motores de lenguaje normalmente llaman a este método para exponer sus marcos de pila al depurador, es posible que otras entidades expongan marcos de pila.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
- [Idebugapplication (:: RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+   de la [interfaz idebugapplication (](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [IDebugStackFrameSniffer (Interfaz)](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::D eleteMemberByDispID | Microsoft Docs
+title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -37,7 +37,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parámetros  
  `id`  
- Identificador de miembro. Utiliza `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
+ Identificador del miembro. Utiliza `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los valores siguientes:  
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

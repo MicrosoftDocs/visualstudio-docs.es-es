@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Lista de parámetros del método de llamada.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Lista global.|  
   
- El tipo SCRIPT_CMPL_GLOBALLIST se trata como un elemento de finalización predeterminado que se puede combinar mediante el operador OR con otros elementos de finalización. El motor de creación de script intenta primero rellenar la información de tipo para otros elementos de lista de finalización. Si se produce un error, el motor se rellena para SCRIPT_CMPL_GLOBALLIST.  
+ El tipo de SCRIPT_CMPL_GLOBALLIST se trata como un elemento de finalización predeterminado que se puede combinar mediante el operador OR con otros elementos de finalización. El motor de creación de script intenta primero rellenar la información de tipo para otros elementos de lista de finalización. Si se produce un error, el motor se rellena para SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  enuncia Tipo de lista proporcionado.  

@@ -36,5 +36,5 @@ var x = example();           // Try and call example as if it were a function.
 - Asegúrese de usar el operador de llamada de función `()` para llamar solo a funciones.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de función](../../javascript/reference/function-object-javascript.md)    
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)   
  [prototype (Propiedad, Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -39,7 +39,7 @@ Al redactar el patrón de búsqueda de expresiones regulares, se creó un elemen
 |*|Cero o más repeticiones|  
 |+|Una o más repeticiones|  
 |?|Cero o una repetición|  
-|n|n repeticiones|  
+|{n}|n repeticiones|  
 |{n,}|n o más repeticiones|  
 |{n, m}|De n a m repeticiones, inclusive|  
   
@@ -48,5 +48,5 @@ Al redactar el patrón de búsqueda de expresiones regulares, se creó un elemen
 - Asegúrese de que el elemento de patrón de búsqueda solo contiene factores de repetición legales.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

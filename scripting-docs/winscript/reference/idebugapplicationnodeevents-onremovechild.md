@@ -52,6 +52,6 @@ HRESULT onRemoveChild(
  Los implementadores de la interfaz `IDebugApplicationNode` producen este evento.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz idebugapplicationnodeevents (](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [Idebugapplicationnodeevents (:: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
+   de la [interfaz idebugapplicationnodeevents (](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

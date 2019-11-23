@@ -70,6 +70,6 @@ HRESULT DefineScriptBlock(
  Se debe llamar al método `DefineScriptBlock` después de que se haya agregado el texto (por ejemplo, mediante el método `IDebugDocumentHelper::AddDBCSText`) pero antes de que se haya analizado el bloque de script (por ejemplo, mediante el método `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+   de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

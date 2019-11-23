@@ -29,5 +29,5 @@ Intentó invocar el método **Number. prototype. ToString** o **Number. prototyp
 - Solo se invocan los métodos **Number. prototype. ToString** o **Number. prototype. valueto** en objetos de tipo **Number**.  
   
 ## <a name="see-also"></a>Vea también  
- [Number (objeto](../../javascript/reference/number-object-javascript.md) )    
+ [Number (objeto](../../javascript/reference/number-object-javascript.md) )   
  [number (Propiedad, Error)](../../javascript/reference/number-property-error-javascript.md)

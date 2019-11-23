@@ -1,5 +1,5 @@
 ---
-title: Se esperaba ' @ ' | Microsoft Docs
+title: Se esperaba '@' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576509"
 ---
-# <a name="expected-"></a>Se esperaba ' \@ '
+# <a name="expected-"></a>Se esperaba '\@'
 Ha intentado crear una variable que se va a usar con instrucciones de compilación condicional mediante la instrucción `@set`, pero no ha colocado una arroba " **@** " antes del nombre de la variable.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
@@ -33,6 +33,6 @@ Ha intentado crear una variable que se va a usar con instrucciones de compilaci�
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [@set instrucción](../../javascript/reference/at-set-statement-javascript.md)    
- @No__t_1 de [compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [@set instrucción](../../javascript/reference/at-set-statement-javascript.md)   
+   de [compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)
