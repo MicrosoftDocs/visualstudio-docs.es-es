@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574599"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La función no tiene un objeto prototipo válido
-Se intentó utilizar **instanceof** para determinar si un objeto se derivó de una clase de función determinada, pero se ha redefinido la propiedad `prototype` del objeto como `null` o como un tipo de objeto externo (ambos objetos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] no válidos). Un objeto externo puede ser un objeto del modelo de objetos host (por ejemplo, un documento o un objeto de ventana de Internet Explorer) o un objeto COM externo.  
+Se intentó utilizar **instanceof** para determinar si un objeto se derivó de una clase de función determinada, pero se ha redefinido la propiedad `prototype` del objeto como `null`o como un tipo de objeto externo (ambos objetos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] no válidos). Un objeto externo puede ser un objeto del modelo de objetos host (por ejemplo, un documento o un objeto de ventana de Internet Explorer) o un objeto COM externo.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 - Asegúrese de que la propiedad `prototype` de la función hace referencia a un objeto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] válido.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de función](../../javascript/reference/function-object-javascript.md)    
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)   
  [prototype (Propiedad, Object)](../../javascript/reference/prototype-property-object-javascript.md)

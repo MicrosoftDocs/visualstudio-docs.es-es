@@ -64,6 +64,6 @@ HRESULT Init(
  Este documento no aparece en el árbol hasta que se llama a `IDebugDocumentHelper::Attach`.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- @No__t_1 de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+   de la [interfaz IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR (Constantes)](../../winscript/reference/text-doc-attr-constants.md)

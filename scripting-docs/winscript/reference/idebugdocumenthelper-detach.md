@@ -47,5 +47,5 @@ HRESULT Detach();
  Este método quita este documento del árbol de documentos.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

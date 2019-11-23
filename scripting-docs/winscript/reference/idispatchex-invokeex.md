@@ -57,7 +57,7 @@ HRESULT InvokeEx(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|DISPATCH_METHOD|El miembro se invoca como un método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto esta marca como la marca DISPATCH_PROPERTYGET (definida por `IDispatch`).|  
+|DISPATCH_METHOD|El miembro se invoca como un método. Si una propiedad tiene el mismo nombre, se pueden establecer tanto esta marca como la DISPATCH_PROPERTYGET (definida por `IDispatch`).|  
 |DISPATCH_PROPERTYGET|El miembro se recupera como una propiedad o miembro de datos (definido por `IDispatch`).|  
 |DISPATCH_PROPERTYPUT|El miembro se cambia como una propiedad o miembro de datos (definido por `IDispatch`).|  
 |DISPATCH_PROPERTYPUTREF|Una asignación de referencia cambia el miembro en lugar de una asignación de valores. Esta marca solo es válida cuando la propiedad acepta una referencia a un objeto (definido por `IDispatch`).|  
@@ -81,7 +81,7 @@ HRESULT InvokeEx(
 |-|-|  
 |DISPATCH_CONSTRUCT|Indica que el elemento se utiliza como un constructor.|  
 |`pspCaller`|El `pspCaller` permite que el objeto tenga acceso a los servicios proporcionados por el llamador. Los servicios específicos pueden ser controlados por el propio llamador o delegados a los llamadores más arriba en la cadena de llamadas. Por ejemplo, si un motor de scripts dentro de un explorador realiza una llamada `InvokeEx` a un objeto externo, el objeto puede seguir la cadena de `pspCaller` para obtener servicios del motor de script o del explorador. (Tenga en cuenta que la cadena de llamadas no es la misma que la cadena de creación, también conocida como cadena de contenedores o cadena de sitios. La cadena de creación puede estar disponible a través de otro mecanismo, como `IObjectWithSite`).|  
-|Puntero `this`|Cuando DISPATCH_METHOD se establece en `wFlags`, puede haber un "parámetro con nombre" para el valor "this". El DISPID será DISPID_THIS y debe ser el primer parámetro con nombre.|  
+|Puntero `this`|Cuando se establece DISPATCH_METHOD en `wFlags`, puede haber un "parámetro con nombre" para el valor "this". El DISPID se DISPID_THIS y debe ser el primer parámetro con nombre.|  
   
  Se ha quitado el parámetro `riid` sin usar de `IDispatch::Invoke`.  
   
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

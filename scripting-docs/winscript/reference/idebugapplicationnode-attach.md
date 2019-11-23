@@ -50,5 +50,5 @@ HRESULT Attach(
  Este método agrega este nodo de aplicación al árbol del proyecto, utilizando `pdanParent` como elemento primario. Si `pdanParent` es `NULL`, este nodo de aplicación será el nodo de nivel superior.  
   
 ## <a name="see-also"></a>Vea también  
- [Idebugapplicationnode (::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+ [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

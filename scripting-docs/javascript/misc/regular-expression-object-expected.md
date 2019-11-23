@@ -29,5 +29,5 @@ Intentó invocar el método **RegExp. prototype. ToString** o **RegExp. prototyp
 - Solo se invocan los métodos **RegExp. prototype. ToString** o **RegExp. prototype. valueto** en objetos de tipo `RegExp`.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

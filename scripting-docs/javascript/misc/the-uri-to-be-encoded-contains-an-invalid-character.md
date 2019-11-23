@@ -33,5 +33,5 @@ Ha intentado codificar una cadena como un URI (identificador uniforme de recurso
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [encodeURI (función](../../javascript/reference/encodeuri-function-javascript.md) )    
+ [encodeURI (función](../../javascript/reference/encodeuri-function-javascript.md) )   
  [encodeURIComponent (Función)](../../javascript/reference/encodeuricomponent-function-javascript.md)

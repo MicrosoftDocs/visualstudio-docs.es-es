@@ -31,5 +31,5 @@ Usó el bloque **try** del control de excepciones, pero no escribió la instrucc
 - Pruebe a usar un bloque **Finally** en lugar de un bloque **catch** .  
   
 ## <a name="see-also"></a>Vea también  
- [try... detectar... Finally (instrucción](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md) )    
+ [try... detectar... Finally (instrucción](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md) )   
  [Error (Objeto)](../../javascript/reference/error-object-javascript.md)

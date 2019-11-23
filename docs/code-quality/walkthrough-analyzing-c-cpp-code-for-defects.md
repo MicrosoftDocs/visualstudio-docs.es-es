@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Analizar código de C/C++ en busca de defectos'
+title: 'Tutorial: Analizar código de C/C++ en previsión de defectos'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018344"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en busca de defectos
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 
 En este tutorial se muestra cómo analizar CC++ /code para detectar posibles defectos de código mediante la herramienta de análisis deC++ código para C/Code.
 
@@ -61,11 +61,11 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 1. En el menú **Ver** , haga clic en **lista de errores**.
 
-     Según el perfil de desarrollador elegido en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], es posible que tenga que seleccionar **otras ventanas** en el menú **Ver** y, a continuación, hacer clic en **lista de errores**.
+     Según el perfil de desarrollador elegido en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], es posible que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, hacer clic en **lista de errores**.
 
 2. En el **lista de errores**, haga doble clic en la siguiente ADVERTENCIA:
 
-     C6230 de ADVERTENCIA: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.
+     ADVERTENCIA C6230: conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.
 
      El editor de código muestra la línea que causó la advertencia en la función `bool ProcessDomain()`. Esta advertencia indica que se está usando un HRESULT en una instrucción ' if ' en la que se espera un resultado booleano.
 
@@ -77,7 +77,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 4. En el **lista de errores**, haga doble clic en la siguiente ADVERTENCIA:
 
-     C6282 de ADVERTENCIA: Operador incorrecto: asignación a la constante en el contexto de prueba. Was = = ¿está previsto?
+     ADVERTENCIA C6282: operador incorrecto: asignación a la constante en el contexto de prueba. Was = = ¿está previsto?
 
 5. Corrija esta advertencia comprobando si son iguales. El código debe ser similar al código siguiente:
 
@@ -119,7 +119,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 6. En el **lista de errores**, haga doble clic en la siguiente ADVERTENCIA:
 
-     C6011 de ADVERTENCIA: Desreferenciando el puntero NULL ' newNode '.
+     ADVERTENCIA C6011: desreferenciando el puntero nulo ' newNode '.
 
      Esta advertencia indica que el llamador no pudo comprobar el valor devuelto. En este caso, una llamada a **AllocateNode** puede devolver un valor null (vea el archivo de encabezado Annotations. h para la declaración de función para AllocateNode).
 
@@ -156,7 +156,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 3. En el **lista de errores**, haga doble clic en la siguiente ADVERTENCIA:
 
-     C6011 de ADVERTENCIA: Desreferenciando el puntero NULL ' node '.
+     ADVERTENCIA C6011: desreferenciando el puntero NULL ' node '.
 
      Esta advertencia indica que el nodo pasado a la función puede ser null e indica el número de línea donde se produjo la advertencia.
 
@@ -178,4 +178,5 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 ## <a name="see-also"></a>Vea también
 
-[Tutorial: Analizar código administrado para los defectos de código @ no__t-0 @ no__t-1[análisis de códigoC++ para C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Tutorial: analizar código administrado para defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[análisis de código paraC++ C/](../code-quality/code-analysis-for-c-cpp-overview.md)

@@ -29,8 +29,8 @@ Se intentó crear una clase de caracteres para una coincidencia de expresión re
 - Agregue el corchete de cierre a la expresión regular.  
   
     > [!NOTE]
-    > Si desea buscar una coincidencia con un solo corchete, haga una escape con una barra diagonal inversa \\ [-por lo que no se interpreta como un carácter especial en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Si desea buscar una coincidencia con un solo corchete, haga una escape con una barra diagonal inversa \\[-por lo que no se interpreta como un carácter especial en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)    
+ [Objeto de expresión Regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxis de expresiones regulares (JavaScript)](https://msdn.microsoft.com/library/1400241x)

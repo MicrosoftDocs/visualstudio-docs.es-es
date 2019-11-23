@@ -56,7 +56,7 @@ HRESULT GetScriptletTextAttributes(
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Identificar los identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de puntos que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identifique el objeto actual que tiene el atributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Identifique el contenido de la cadena y el texto del comentario que tenga el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Identifique el contenido de la cadena y el texto del comentario que tenga el SOURCETEXT_ATTR_HUMANTEXT atributo.|  
   
  `pattr`  
  [in, out, size_is (`cch`)] La información de color para el código Scriptlet.  
@@ -71,6 +71,6 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
- [Iactivescriptauthor (:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+   de la [interfaz iactivescriptauthor (](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

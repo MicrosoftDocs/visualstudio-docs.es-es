@@ -29,6 +29,6 @@ No proporcionó una matriz como argumento. Este error solo se aplica al método 
 - Especifique un `Array` o un objeto **arguments** como segundo argumento.  
   
 ## <a name="see-also"></a>Vea también  
- [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)    
- [Apply (método, Function)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)   
+ [Apply (método, Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funciones](../../javascript/functions-javascript.md)

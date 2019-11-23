@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Este método devuelve el depurador actual conectado a la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Iremotedebugapplication (:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+ [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

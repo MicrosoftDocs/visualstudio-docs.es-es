@@ -51,7 +51,7 @@ HRESULT Start(
  Este método hace que se llame a `IDebugSyncOperation::Execute` de forma asincrónica en el subproceso Obtenido de `IDebugSyncOperation::GetTargetThread`. Solo se debe llamar a este método desde dentro del subproceso del depurador; de lo contrario, no se devolverá hasta que se complete la operación.  
   
 ## <a name="see-also"></a>Vea también  
- [Idebugasyncoperation (:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- @No__t_1 de la [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md)  
- [Idebugsyncoperation (:: execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+   de la [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

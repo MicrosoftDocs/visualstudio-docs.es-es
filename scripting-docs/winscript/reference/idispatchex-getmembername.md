@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+ [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

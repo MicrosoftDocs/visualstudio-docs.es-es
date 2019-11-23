@@ -37,5 +37,5 @@ Ha intentado descodificar un URI formado incorrectamente (identificador uniforme
 - Asegúrese de que está intentando descodificar solo los URI válidos. No se pueden descodificar cadenas de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] normales, ya que pueden contener caracteres no válidos.  
   
 ## <a name="see-also"></a>Vea también  
- [decodeURI (función](../../javascript/reference/decodeuri-function-javascript.md) )    
+ [decodeURI (función](../../javascript/reference/decodeuri-function-javascript.md) )   
  [DecodeURIComponent (Función)](../../javascript/reference/decodeuricomponent-function-javascript.md)

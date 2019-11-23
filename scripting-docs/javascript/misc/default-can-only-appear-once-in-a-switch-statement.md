@@ -29,6 +29,6 @@ Ha intentado usar la instrucción **predeterminada** más de una vez dentro de u
 - Quite las instrucciones Case **predeterminadas** adicionales de la instrucción `switch` (use como máximo una instrucción Case predeterminada en la instrucción switch).  
   
 ## <a name="see-also"></a>Vea también  
- [Switch (instrucción](../../javascript/reference/switch-statement-javascript.md) )    
- [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)    
+ [Switch (instrucción](../../javascript/reference/switch-statement-javascript.md) )   
+ [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
  [Palabras reservadas de JavaScript](../../javascript/reference/javascript-reserved-words.md)

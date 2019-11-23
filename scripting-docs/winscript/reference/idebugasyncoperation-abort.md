@@ -48,6 +48,6 @@ HRESULT Abort();
  Normalmente, se llama a este método desde el subproceso del depurador para cancelar una operación que no responde. Este método hace que se llame al método `InProgressAbort` del objeto `IDebugSyncOperation`.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md)  
- [Idebugasyncoperation (:: Start](../../winscript/reference/idebugasyncoperation-start.md)    
+   de la [interfaz idebugasyncoperation (](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

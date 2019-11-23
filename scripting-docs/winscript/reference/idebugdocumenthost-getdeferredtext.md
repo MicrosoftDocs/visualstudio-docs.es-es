@@ -61,7 +61,7 @@ HRESULT GetDeferredText(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|No se ha implementado el método.|  
+|`E_NOTIMPL`|El método no está implementado.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este método puede devolver `E_NOTIMPL`, si el host no llama a `IDebugDocumentHelper::AddDeferredText`.  
@@ -70,6 +70,6 @@ HRESULT GetDeferredText(
 > Este método devuelve el texto del documento original. El host no realiza un seguimiento de las ediciones u otros cambios en el documento.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de la [interfaz IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

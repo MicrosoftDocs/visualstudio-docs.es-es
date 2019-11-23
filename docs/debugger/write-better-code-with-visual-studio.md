@@ -42,7 +42,7 @@ El código siguiente tiene algunos errores que puede corregir mediante el IDE de
 
 Para crear la aplicación:
 
-1. Abra Visual Studio y elija **archivo** > **nuevo** > **proyecto**. En **Visual C#** , elija **escritorio de Windows** o **.net Core**y, a continuación, en el panel central, elija una **aplicación de consola**.
+1. Abra Visual Studio y elija **archivo** > **nuevo** **proyecto**de > . En **Visual C#** , elija **escritorio de Windows** o **.net Core**y, a continuación, en el panel central, elija una **aplicación de consola**.
 
     > [!NOTE]
     > Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core**, y después elija **Modificar**.
@@ -184,15 +184,15 @@ Para corregir este error, verá otra característica del IDE, representada por e
 
 ## <a name="check-the-light-bulb"></a>Compruebe la bombilla.
 
-El primer subrayado ondulado de color rojo representa un error en tiempo de compilación. Mantenga el puntero sobre él y verá el mensaje ```The name `Encoding` does not exist in the current context```.
+El primer subrayado ondulado de color rojo representa un error en tiempo de compilación. Mantenga el mouse sobre ella y verá el mensaje ```The name `Encoding` does not exist in the current context```.
 
-Tenga en cuenta que este error muestra un icono de bombilla hacia la parte inferior izquierda. Junto con el icono de destornillador ![screwdriver Icon @ no__t-1, el icono de bombilla ![light icono de bombilla @ no__t-3 representa acciones rápidas que pueden ayudarle a corregir o refactorizar el código en línea. La bombilla representa los problemas que se *deben* corregir. El destornillador es para los problemas que puede elegir corregir. Use la primera corrección sugerida para resolver este error; para ello, haga clic en **usar System. Text** a la izquierda.
+Tenga en cuenta que este error muestra un icono de bombilla hacia la parte inferior izquierda. Junto con el icono de destornillador ![icono de destornillador](../ide/media/screwdriver-icon.png), el icono de bombilla ![icono de bombilla](../ide/media/light-bulb-icon.png) representa acciones rápidas que pueden ayudarle a corregir o refactorizar el código en línea. La bombilla representa los problemas que se *deben* corregir. El destornillador es para los problemas que puede elegir corregir. Use la primera corrección sugerida para resolver este error; para ello, haga clic en **usar System. Text** a la izquierda.
 
 ![Usar la bombilla para corregir el código](../debugger/media/write-better-code-missing-include.png)
 
 Al hacer clic en este elemento, Visual Studio agrega la instrucción `using System.Text` en la parte superior del archivo *Program.CS* y desaparece el subrayado ondulado de color rojo. (Si no está seguro de lo que hará una corrección sugerida, elija el vínculo **vista previa de los cambios** de la derecha antes de aplicar la corrección).
 
-El error anterior es común que normalmente se corrige agregando una nueva instrucción `using` al código. Hay varios errores comunes similares a este, como ```The type or namespace `Name` cannot be found.```. estos tipos de errores pueden indicar que falta una referencia de ensamblado (haga clic con el botón derecho en el proyecto, elija **Agregar** **referencia**de  > ), un nombre mal escrito o una biblioteca que falta. para agregar (para C#, haga clic con el botón derecho en el proyecto y elija **administrar paquetes NuGet**).
+El error anterior es común que normalmente se corrige agregando una nueva instrucción `using` al código. Hay varios errores comunes similares a este, como ```The type or namespace `Name` cannot be found.``` estos tipos de errores pueden indicar que falta una referencia de ensamblado (haga clic con el botón derecho en el proyecto, elija **Agregar** **referencia**de > ), un nombre mal escrito o una biblioteca que falta para agregar ( C#para, haga clic con el botón derecho en el proyecto y elija **administrar paquetes NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Corregir los errores y advertencias restantes
 
@@ -202,7 +202,7 @@ Hay unos cuantos más subrayados en este código. Aquí se muestra un error de c
 
 Dado que el analizador de código no puede adivinar su intención, no hay bombillas para ayudarle en este momento. Para corregir este error, debe conocer la intención del código. En este ejemplo, no es demasiado difícil ver que `points` debe ser un valor numérico (entero), ya que está intentando agregar `points` a `totalpoints`.
 
-Para corregir este error, cambie el miembro `points` de la clase `User` de esta:
+Para corregir este error, cambie el `points` miembro de la clase `User` de este:
 
 ```csharp
 [DataMember]
@@ -275,7 +275,7 @@ catch (SerializationException)
 }
 ```
 
-Un bloque `try/catch` tiene algún costo de rendimiento, por lo que solo deseará usarlos cuando realmente los necesite, es decir, donde (a) pueden aparecer en la versión de lanzamiento de la aplicación, y donde (b) la documentación del método indica que debe comprobar la excepción (como suming se ha completado la documentación. En muchos casos, puede controlar una excepción de forma adecuada y el usuario nunca tendrá que conocerla.
+Un bloque de `try/catch` tiene algún costo de rendimiento, por lo que solo querrá usarlos cuando realmente los necesite, es decir, donde (a) pueden aparecer en la versión de lanzamiento de la aplicación, y donde (b) la documentación del método indica que debe comprobar la excepción (suponiendo que la documentación se ha completado). En muchos casos, puede controlar una excepción de forma adecuada y el usuario nunca tendrá que conocerla.
 
 A continuación se muestran un par de sugerencias importantes para el control de excepciones:
 
@@ -300,13 +300,13 @@ Para la aplicación de ejemplo, corrija el `SerializationException` en el métod
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Clarificar la intención del código mediante Assert
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas Depuración (**Ctrl** + **Mayús**  +  **F5**). Esto reiniciará la aplicación en menos pasos. Verá el siguiente resultado en la ventana de la consola.
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**). Esto reiniciará la aplicación en menos pasos. Verá el siguiente resultado en la ventana de la consola.
 
 ![Valor null en la salida](../debugger/media/write-better-code-using-assert-null-output.png)
 
 Puede ver algo en esta salida que no es correcto. el **nombre** y el **Apellido** del tercer registro están en blanco.
 
-Este es un buen momento para hablar acerca de una práctica de codificación útil, a menudo infrautilizada, que consiste en usar instrucciones `assert` en las funciones. Al agregar el código siguiente, se incluye una comprobación en tiempo de ejecución para asegurarse de que `firstname` y `lastname` no `null`. Reemplace el código siguiente en el método `UpdateRecords`:
+Este es un buen momento para hablar acerca de una práctica de codificación útil, a menudo infrautilizada, que consiste en usar instrucciones de `assert` en las funciones. Al agregar el código siguiente, se incluye una comprobación en tiempo de ejecución para asegurarse de que `firstname` y `lastname` no se `null`. Reemplace el código siguiente en el método `UpdateRecords`:
 
 ```csharp
 if (existingUser == false)
@@ -329,26 +329,26 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Al agregar instrucciones `assert` como esta a las funciones durante el proceso de desarrollo, puede ayudar a especificar la intención del código. En el ejemplo anterior, se especifica lo siguiente:
+Al agregar `assert` instrucciones como esta a las funciones durante el proceso de desarrollo, puede ayudar a especificar la intención del código. En el ejemplo anterior, se especifica lo siguiente:
 
 * Se requiere una cadena válida para el nombre
 * Se requiere una cadena válida para el apellido
 
-Al especificar la intención de esta manera, se aplican los requisitos. Se trata de un método sencillo y práctico que puede usar para exponer errores durante el desarrollo. (las instrucciones `assert` también se usan como el elemento principal en las pruebas unitarias).
+Al especificar la intención de esta manera, se aplican los requisitos. Se trata de un método sencillo y práctico que puede usar para exponer errores durante el desarrollo. (`assert` instrucciones también se usan como el elemento principal en las pruebas unitarias).
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas Depuración (**Ctrl** + **Mayús**  +  **F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**).
 
 > [!NOTE]
-> El código `assert` solo está activo en una compilación de depuración.
+> El código de `assert` solo está activo en una compilación de depuración.
 
 Al reiniciar, el depurador se detiene en la instrucción `assert`, porque la expresión `users[i].firstname != null` se evalúa como `false` en lugar de `true`.
 
 ![Assert se resuelve como false](../debugger/media/write-better-code-using-assert.png)
 
-El error `assert` le indica que hay un problema que debe investigar. `assert` puede abarcar muchos escenarios en los que no es necesario ver una excepción. En este ejemplo, el usuario no verá una excepción y se agregará un valor `null` como `firstname` en la lista de registros. Esto puede producir problemas más adelante (como se ve en la salida de la consola) y puede ser más difícil de depurar.
+En el `assert` error se indica que hay un problema que debe investigar. `assert` puede abarcar muchos escenarios en los que no es necesario ver una excepción. En este ejemplo, el usuario no verá una excepción y se agregará un valor `null` como `firstname` en la lista de registros. Esto puede producir problemas más adelante (como se ve en la salida de la consola) y puede ser más difícil de depurar.
 
 > [!NOTE]
-> En escenarios en los que se llama a un método en el valor `null`, se produce un `NullReferenceException`. Normalmente querrá evitar el uso de un bloque @no__t 0 para una excepción general, es decir, una excepción que no esté asociada a la función de biblioteca específica. Cualquier objeto puede iniciar una `NullReferenceException`. Si no está seguro, consulte la documentación de la función de la biblioteca.
+> En escenarios en los que se llama a un método en el valor de `null`, `NullReferenceException` resultados. Normalmente, desea evitar el uso de un bloque `try/catch` para una excepción general, es decir, una excepción que no está asociada a la función de biblioteca específica. Cualquier objeto puede producir una `NullReferenceException`. Si no está seguro, consulte la documentación de la función de la biblioteca.
 
 Durante el proceso de depuración, es conveniente mantener una determinada instrucción `assert` hasta que sepa que necesita reemplazarla por una corrección de código real. Supongamos que decide que el usuario puede encontrarse con la excepción en una versión de lanzamiento de la aplicación. En ese caso, debe refactorizar el código para asegurarse de que la aplicación no produzca una excepción grave o de que se produzca algún otro error. Por lo tanto, para corregir este código, reemplace el código siguiente:
 
@@ -368,7 +368,7 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
 
 Con este código, cumplirá los requisitos de código y asegúrese de que no se agrega a los datos un registro con un valor `firstname` o `lastname` de `null`.
 
-En este ejemplo, se han agregado las dos instrucciones `assert` dentro de un bucle. Normalmente, cuando se usa `assert`, es mejor agregar instrucciones `assert` en el punto de entrada (a partir de) de una función o un método. Está examinando el método `UpdateRecords` en la aplicación de ejemplo. En este método, sabe que tiene problemas si alguno de los argumentos del método es `null`, por lo que debe comprobarlos con una instrucción `assert` en el punto de entrada de la función.
+En este ejemplo, se han agregado las dos instrucciones `assert` dentro de un bucle. Normalmente, cuando se usa `assert`, es mejor agregar instrucciones de `assert` en el punto de entrada (a partir de) de una función o método. Está examinando el método de `UpdateRecords` en la aplicación de ejemplo. En este método, sabe que tiene problemas si alguno de los argumentos del método es `null`, por lo que debe comprobarlos con una instrucción `assert` en el punto de entrada de la función.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -377,9 +377,9 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-En el caso de las instrucciones anteriores, su intención es que cargue los datos existentes (`db`) y recupere los datos nuevos (`users`) antes de actualizar nada.
+En el caso de las instrucciones anteriores, su intención es que cargue los datos existentes (`db`) y recupere nuevos datos (`users`) antes de actualizar nada.
 
-Puede usar `assert` con cualquier tipo de expresión que se resuelva en `true` o `false`. Por lo tanto, por ejemplo, puede Agregar una instrucción `assert` como esta.
+Puede usar `assert` con cualquier tipo de expresión que se resuelva como `true` o `false`. Por lo tanto, por ejemplo, puede Agregar una instrucción `assert` como esta.
 
 ```csharp
 Debug.Assert(users[0].points > 0);

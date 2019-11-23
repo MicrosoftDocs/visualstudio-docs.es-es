@@ -29,5 +29,5 @@ Hizo referencia a un elemento de matriz, pero no incluía el corchete de cierre.
 - Agregue el corchete de cierre a la expresión que hace referencia al elemento de la matriz.  
   
 ## <a name="see-also"></a>Vea también  
- [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)    
+ [Usar matrices](../../javascript/advanced/using-arrays-javascript.md)   
  [Array (Objeto)](../../javascript/reference/array-object-javascript.md)

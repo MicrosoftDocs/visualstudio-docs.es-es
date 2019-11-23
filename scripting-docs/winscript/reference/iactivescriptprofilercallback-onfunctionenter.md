@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptprofilercallback (:: OnFunctionEnter | Microsoft Docs'
+title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -47,5 +47,5 @@ HRESULT OnFunctionEnter(
  En el caso de las llamadas DOM, el motor de scripting llama a [iactivescriptprofilercallback2 (:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) en lugar de `IActiveScriptProfilerCallback::OnFunctionEnter`. Esto se debe a un gran número de propiedades y métodos únicos en el DOM.  
   
 ## <a name="see-also"></a>Vea también  
- [Iactivescriptprofilercallback (:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
+ [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

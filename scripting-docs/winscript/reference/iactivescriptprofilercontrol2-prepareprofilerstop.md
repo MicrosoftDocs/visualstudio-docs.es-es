@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol2 (::P repareProfilerStop | Microsoft Docs
+title: IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,5 +46,5 @@ HRESULT PrepareProfilerStop();
  La llamada a `IActiveScriptProfilerControl2::PrepareProfilerStop` garantiza que se envíen los eventos de las funciones de la pila de llamadas. Se debe llamar a este método antes de detener la generación de perfiles en cualquier motor de scripting que esté en la pestaña actual. Se puede llamar al método para cualquier motor de scripting.  
   
 ## <a name="see-also"></a>Vea también  
- [Iactivescriptprofilercontrol2 (:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+ [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2 (Interfaz)](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

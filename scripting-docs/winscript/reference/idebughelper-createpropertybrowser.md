@@ -62,6 +62,6 @@ HRESULT CreatePropertyBrowser(
  Este método devuelve un explorador de propiedades que ajusta una variante.  
   
 ## <a name="see-also"></a>Vea también  
- [Idebughelper (:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
- @No__t_1 de la [interfaz idebughelper (](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+   de la [interfaz idebughelper (](../../winscript/reference/idebughelper-interface.md)  
  [IDebugProperty (Interfaz)](../../winscript/reference/idebugproperty-interface.md)

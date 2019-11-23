@@ -43,7 +43,7 @@ ms.locfileid: "72666012"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para solucionar la vulnerabilidad de seguridad que se identifica mediante esta regla, no confíe en el contenido de una matriz de solo lectura a la que se pueda tener acceso públicamente. Se recomienda encarecidamente que use uno de los procedimientos siguientes:
 
-- Reemplace la matriz por una colección fuertemente tipada que no se pueda cambiar. Para obtener más información, vea <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Reemplace la matriz por una colección fuertemente tipada que no se pueda cambiar. Para obtener más información, consulta <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
 - Reemplace el campo público por un método que devuelva un clon de una matriz privada. Dado que el código no se basa en el clon, no hay ningún riesgo si se modifican los elementos.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666012"
 
  La salida de este ejemplo es:
 
- **Antes de la alteración: calificaciones: 90, 90, 90 calificaciones privadas: 90, 90, 90 notas seguras, 90, 90, 90** 
- después de la**manipulación: calificaciones: 90, 555, 90 notas privadas: 90, 555, 90 notas seguras, 90, 90, 90**
+ **Antes de la alteración: calificaciones: 90, 90, 90 calificaciones privadas: 90, 90, 90 notas seguras, 90, 90, 90**
+después de la **manipulación: calificaciones: 90, 555, 90 notas privadas: 90, 555, 90 notas seguras, 90, 90, 90**
 ## <a name="see-also"></a>Vea también
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

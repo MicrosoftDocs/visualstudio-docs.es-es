@@ -29,5 +29,5 @@ Intentó invocar el método **String. prototype. ToString** o **String. prototyp
 - Solo se invocan los métodos **String. prototype. ToString** o **String. prototype. valueto** en objetos de tipo `String`.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto String](../../javascript/reference/string-object-javascript.md)    
+ [Objeto String](../../javascript/reference/string-object-javascript.md)   
  [toString (Método, Object)](../../javascript/reference/tostring-method-object-javascript.md)

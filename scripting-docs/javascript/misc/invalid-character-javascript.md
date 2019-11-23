@@ -35,6 +35,6 @@ Ha compuesto un identificador con un carácter (o caracteres) que el compilador 
 - Evite el uso de caracteres que no formen parte de la definición del lenguaje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vea también  
- [Variables](../../javascript/variables-javascript.md)    
- [Caracteres especiales](../../javascript/advanced/special-characters-javascript.md)    
+ [Variables](../../javascript/variables-javascript.md)   
+ [Caracteres especiales](../../javascript/advanced/special-characters-javascript.md)   
  [Tipos de datos](../../javascript/data-types-javascript.md)

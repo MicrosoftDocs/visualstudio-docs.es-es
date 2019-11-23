@@ -33,5 +33,5 @@ Ha especificado una propiedad o un método que no existe para este objeto. Hay o
 - Consulte la documentación del objeto para obtener más información.  
   
 ## <a name="see-also"></a>Vea también  
- Objeto de [objeto](../../javascript/reference/object-object-javascript.md)    
+ Objeto de [objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos de JavaScript](../../javascript/reference/javascript-objects.md)

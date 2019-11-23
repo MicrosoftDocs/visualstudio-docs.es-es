@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Este método controla las llamadas para ejecutar código en el subproceso del depurador.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz idebugthreadcall (](../../winscript/reference/idebugthreadcall-interface.md)  
- [Idebugapplication (:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+   de la [interfaz idebugthreadcall (](../../winscript/reference/idebugthreadcall-interface.md)  
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

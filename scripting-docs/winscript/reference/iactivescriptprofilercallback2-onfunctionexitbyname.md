@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptprofilercallback2 (:: OnFunctionExitByName | Microsoft Docs'
+title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -37,7 +37,7 @@ HRESULT OnFunctionExitByName(
  de Nombre de la función en la que el motor de scripting terminó de ejecutarse.  
   
  `scriptType`  
- de Tipo de la función. Para obtener descripciones de valores válidos, consulte [enumeración PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ de Tipo de la función. Para obtener descripciones de valores válidos, consulte [enumeración de PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Valor devuelto  
  El motor de scripting omite el valor devuelto de este método.  
@@ -46,5 +46,5 @@ HRESULT OnFunctionExitByName(
  En el caso de las llamadas DOM, el motor de scripting llama a este método en lugar de llamar a [iactivescriptprofilercallback (:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Esto se debe a un gran número de propiedades y métodos únicos en el DOM.  
   
 ## <a name="see-also"></a>Vea también  
- [Iactivescriptprofilercallback2 (:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2 (Interfaz)](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

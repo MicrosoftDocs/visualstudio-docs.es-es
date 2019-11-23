@@ -29,5 +29,5 @@ No incluyó la condición `while` en un bucle de `do...while`. Una instrucción 
 - Incluya la instrucción test de `while` después de la llave de cierre.  
   
 ## <a name="see-also"></a>Vea también  
- [While (instrucción](../../javascript/reference/while-statement-javascript.md) )    
+ [While (instrucción](../../javascript/reference/while-statement-javascript.md) )   
  [Control del flujo del programa](../../javascript/controlling-program-flow-javascript.md)

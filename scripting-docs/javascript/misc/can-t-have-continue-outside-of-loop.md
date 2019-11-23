@@ -45,6 +45,6 @@ Ha intentado usar la instrucción **continue** fuera de un bucle. La instrucció
   - bucle **for/in** .  
   
 ## <a name="see-also"></a>Vea también  
- [Continue (instrucción](../../javascript/reference/continue-statement-javascript.md) )    
- [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)    
+ [Continue (instrucción](../../javascript/reference/continue-statement-javascript.md) )   
+ [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
  [Solución de problemas de los scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
