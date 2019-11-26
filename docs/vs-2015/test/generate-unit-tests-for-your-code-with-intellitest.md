@@ -36,15 +36,15 @@ IntelliTest explora el código .NET para generar datos de prueba y un conjunto d
 
 2. Haga clic con el botón derecho en un método del código y genere las pruebas unitarias para el código del método haciendo clic en **Ejecutar IntelliTest** .
 
-     ![Right&#45;click in your method to generate unit tests](../test/media/runpex.png "RunPEX")
+     ![Haga&#45;clic con el botón derecho en el método para generar pruebas unitarias.](../test/media/runpex.png "RunPEX")
 
      IntelliTest ejecuta el código muchas veces con diferentes entradas. Cada ejecución se representa en la tabla que muestra los datos de las pruebas entrantes y la salida o excepción resultante.
 
-     ![Exploration Results window is displayed with tests](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![La ventana Resultados de exploración se muestra con las pruebas](../test/media/pexexplorationresults.png "PEXExplorationResults")
 
      Para generar pruebas unitarias para todos los métodos públicos en una clase, simplemente haga clic con el botón secundario en la clase en lugar del método específico. A continuación, elija **Ejecutar IntelliTest**. Use la lista desplegable en la ventana Resultados de exploración para visualizar las pruebas unitarias y los datos entrantes para cada método en la clase.
 
-     ![Select the test results to view from the list](../test/media/selectpextest.png "SelectPEXTest")
+     ![Seleccione los resultados de pruebas que desea ver en la lista](../test/media/selectpextest.png "SelectPEXTest")
 
      En cuanto a las pruebas superadas, compruebe que los resultados de los cuales se informa en la columna de resultados coincidan con sus expectativas con respecto a su código. Si algunas pruebas generan un error, corrija el código según corresponda. Después vuelva a ejecutar IntelliTest para validar las correcciones.
 
@@ -52,11 +52,11 @@ IntelliTest explora el código .NET para generar datos de prueba y un conjunto d
 
 1. Seleccione las filas de datos que desea guardar con la prueba unitaria parametrizada en un proyecto de pruebas.
 
-     ![Select tests; right&#45;click and choose Save](../test/media/savepextests.png "SavePEXTests")
+     ![Seleccionar pruebas; haga&#45;clic con el botón derecho y elija guardar.](../test/media/savepextests.png "SavePEXTests")
 
      Puede ver el proyecto de prueba y la prueba unitaria parametrizada que se ha creado: las pruebas unitarias individuales correspondientes a cada una de las filas se guardan en el archivo .g.cs del proyecto de prueba y, la prueba unitaria parametrizada, en el archivo .cs correspondiente. Puede ejecutar las pruebas unitarias y ver los resultados desde el Explorador de pruebas, tal como lo haría con cualquier prueba unitaria que haya creado manualmente.
 
-     ![Open class file in test method to view unit test](../test/media/testmethodpex.png "TestMethodPEX")
+     ![Abrir el archivo de clase en el método de prueba para ver la prueba unitaria](../test/media/testmethodpex.png "TestMethodPEX")
 
      También se agregan al proyecto de pruebas todas las referencias necesarias.
 
@@ -68,11 +68,11 @@ IntelliTest explora el código .NET para generar datos de prueba y un conjunto d
 
      Vea las advertencias para decidir qué quiere hacer.
 
-     ![View warnings](../test/media/pexviewwarning.png "PEXViewWarning")
+     ![Ver ADVERTENCIAS](../test/media/pexviewwarning.png "PEXViewWarning")
 
 2. Tras investigar el código e identificar qué desea probar, puede corregir la advertencia para elegir las clases con las que se debe probar la interfaz.
 
-     ![Right&#45;click the warning and choose Fix](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![Haga&#45;clic con el botón derecho en la advertencia y elija corregir.](../test/media/pexfixwarning.png "PEXFixWarning")
 
      Esta opción se agrega en el archivo PexAssemblyInfo.cs.
 
@@ -80,7 +80,7 @@ IntelliTest explora el código .NET para generar datos de prueba y un conjunto d
 
 3. Ahora puede volver a ejecutar IntelliTest para generar una prueba unitaria parametrizada y datos de pruebas, solo con el uso de la clase que corrigió.
 
-     ![Rerun IntelliTest to generate the test data](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![Volver a ejecutar IntelliTest para generar los datos de prueba](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
 
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Especificar: use IntelliTest para validar las propiedades de corrección especificadas en el código
  Especifique la relación general entre entradas y salidas que deben validar las pruebas unitarias generadas. Esta especificación se encapsula en un método similar a un método de prueba, aunque está cuantificado de forma universal. Este es el método de prueba unitaria parametrizada. Las aserciones que se realicen deberán resultar válidas para todos los valores de entrada posibles que IntelliTest pueda generar.
@@ -120,16 +120,16 @@ IntelliTest explora el código .NET para generar datos de prueba y un conjunto d
 ### <a name="NoRun"></a> P: ¿puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
  **A:** Sí, haga clic con el botón secundario en la clase o método y elija **crear IntelliTest**.
 
- ![Right&#45;click editor, choose Create IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![Haga&#45;clic con el botón derecho en editor y elija crear IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
 
  Acepte el formato predeterminado para generar las pruebas o cambie la denominación del proyecto y las pruebas. Puede crear un nuevo proyecto de prueba o guardar las pruebas en un proyecto existente.
 
- ![Create IntelliTest with MSTest default](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![Crear IntelliTest con MSTest predeterminado](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>P: ¿Puedo usar otros marcos de pruebas unitarias con IntelliTest?
- **A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio y volver a abrir la solución, haga clic con el botón secundario en la clase o método y elija **Crear IntelliTest**. Seleccione su marco instalado aquí:
+ **R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio y volver a abrir la solución, haga clic con el botón secundario en la clase o método y elija **Crear IntelliTest**. Seleccione su marco instalado aquí:
 
- ![Select other unit test framework for IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+ ![Seleccione otro marco de pruebas unitarias para IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 
  A continuación, ejecute IntelliTest para generar pruebas unitarias individuales en sus correspondientes archivos .g.cs.
 

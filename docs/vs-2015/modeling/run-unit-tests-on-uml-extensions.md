@@ -1,5 +1,5 @@
 ---
-title: Run unit tests on UML extensions | Microsoft Docs
+title: Ejecutar pruebas unitarias en extensiones UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,25 +19,25 @@ ms.locfileid: "74292535"
 # <a name="run-unit-tests-on-uml-extensions"></a>Ejecutar pruebas unitarias en extensiones UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, consulta [Unit Test Your Code](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:
+Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:
 
-- [Setting up a Unit Test for VSIX Extensions](#Host)
+- [Configurar una prueba unitaria para las extensiones VSIX](#Host)
 
    Ejecute las pruebas con el adaptador host del IDE de VS. Anteponga `[HostType("VS IDE")]`a cada método de prueba. Este adaptador host inicia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando las pruebas se ejecutan.
 
-- [Accessing DTE and ModelStore](#DTE)
+- [Acceso a DTE y ModelStore](#DTE)
 
    Normalmente, deberá abrir un modelo y sus diagramas y acceder a `IModelStore` en la inicialización de pruebas.
 
-- [Opening a Model Diagram](#Opening)
+- [Abrir un diagrama del modelo](#Opening)
 
    Puede convertir `EnvDTE.ProjectItem` en `IDiagramContext`y viceversa.
 
-- [Performing Changes in the UI Thread](#UiThread)
+- [Realizar cambios en el subproceso de la interfaz de usuario](#UiThread)
 
    Las pruebas que realizan cambios en el almacén del modelo se deben realizar en el subproceso de la interfaz de usuario. Para ello, puede usar `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .
 
-- [Testing commands, gestures and other MEF components](#MEF)
+- [Comandos de prueba, gestos y otros componentes de MEF](#MEF)
 
    Para probar los componentes MEF, debe conectar explícitamente sus propiedades importadas a valores.
 
@@ -48,18 +48,18 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="Host"></a> Setting up a Unit Test for VSIX Extensions
+## <a name="Host"></a>Configurar una prueba unitaria para las extensiones VSIX
  Los métodos de las extensiones de modelado suelen funcionar con un diagrama que ya está abierto. Los métodos usan importaciones MEF como **IDiagramContext** y **ILinkedUndoContext**. Su entorno de prueba debe tener este contexto configurado antes de ejecutar las pruebas.
 
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Para configurar una prueba unitaria que se ejecuta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Cree el proyecto de extensión UML y el proyecto de prueba unitaria.
 
-    1. **A UML extension project.** Se suele crear mediante el comando, el gesto o las plantillas de proyecto de validación. For example, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+    1. **Un proyecto de extensión UML.** Se suele crear mediante el comando, el gesto o las plantillas de proyecto de validación. Por ejemplo, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **A unit test project.** Para obtener más información, consulta [Unit Test Your Code](../test/unit-test-your-code.md).
+    2. **Un proyecto de prueba unitaria.** Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).
 
-2. Cree una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contenga un proyecto de modelado UML. Usará esta solución como el estado inicial de las pruebas. Debe ser independiente de la solución en la que escribe la extensión UML y las pruebas unitarias. For more information, see [Create UML modeling projects and diagrams](../modeling/create-uml-modeling-projects-and-diagrams.md).
+2. Cree una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contenga un proyecto de modelado UML. Usará esta solución como el estado inicial de las pruebas. Debe ser independiente de la solución en la que escribe la extensión UML y las pruebas unitarias. Para obtener más información, vea [crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 3. **En el proyecto de extensión UML**, edite el archivo .csproj como texto y asegúrese de que las siguientes líneas muestran `true`:
 
@@ -78,25 +78,25 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
 
 5. **En el proyecto de prueba unitaria**, agregue las siguientes referencias de ensamblado:
 
-    - *Your UML extension project*
+    - *El proyecto de extensión UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. UML. interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Anteponga el atributo `[HostType("VS IDE")]` a cada método de prueba, incluidos los métodos de inicialización.
 
      Esto garantizará que la prueba se ejecute en una instancia experimental de Visual Studio.
 
-## <a name="DTE"></a> Accessing DTE and ModelStore
+## <a name="DTE"></a>Acceso a DTE y ModelStore
  Escriba un método para abrir un proyecto de modelado en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Normalmente, es conveniente abrir una solución solo una vez en cada ejecución de pruebas. Para ejecutar el método solo una vez, anteponga el atributo `[AssemblyInitialize]` en el método. No olvide que también necesita el atributo [HostType("VS IDE")] en cada método de prueba.  Por ejemplo:
 
 ```csharp
@@ -162,9 +162,9 @@ namespace UnitTests
 
 ```
 
- If an instance of <xref:EnvDTE.Project?displayProperty=fullName> represents a modeling project, then you can cast it to and from [IModelingProject](/previous-versions/ee789474(v=vs.140)).
+ Si una instancia de <xref:EnvDTE.Project?displayProperty=fullName> representa un proyecto de modelado, puede convertirla a y desde [IModelingProject](/previous-versions/ee789474(v=vs.140)).
 
-## <a name="Opening"></a> Opening a Model Diagram
+## <a name="Opening"></a>Abrir un diagrama del modelo
  En cada prueba o clase de pruebas probablemente le interese trabajar con un diagrama abierto. En el siguiente ejemplo se usa el atributo `[ClassInitialize]` , que ejecuta este método antes que otros métodos de esta clase de prueba. Una vez más, no olvide que también necesita el atributo [HostType("VS IDE")] en cada método de prueba:
 
 ```csharp
@@ -209,7 +209,7 @@ public class MyTestClass
 
 ```
 
-## <a name="UiThread"></a> Perform Model Changes in the UI Thread
+## <a name="UiThread"></a>Realizar cambios en el modelo en el subproceso de la interfaz de usuario
  Si las pruebas o los métodos en pruebas realizan cambios en el almacén de modelos, deberá ejecutarlos en el subproceso de la interfaz de usuario. Si no hace esto, puede que surja una `AccessViolationException`. Inserte el código del método de prueba en una llamada a Invoke:
 
 ```
@@ -229,7 +229,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }
 ```
 
-## <a name="MEF"></a> Testing command, gesture and other MEF components
+## <a name="MEF"></a>Comando de prueba, gestos y otros componentes de MEF
  Los componentes MEF usan las declaraciones de propiedad que tienen el atributo `[Import]` y cuyos valores son establecidos por sus hosts. Estas propiedades suelen englobar IDiagramContext, SVsServiceProvider y ILinkedUndoContext. Cuando se prueba un método que usa alguna de estas propiedades, hay que establecer sus valores antes de ejecutar el método en cuestión. Por ejemplo, si ha escrito una extensión de comando parecida a este código:
 
 ```
@@ -324,7 +324,7 @@ using System.ComponentModel.Composition;
 ## <a name="access-from-tests-to-private-methods-and-variables"></a>Acceso desde las pruebas a métodos y variables privados
  Hay veces en las que querrá probar un método que es privado, o confirmar el estado de un campo privado, antes y después de ejecutar un método en pruebas. Esto supone una dificultad, porque las pruebas están en un ensamblado independiente de las clases en pruebas. Hay varias tácticas que se pueden considerar, como las siguientes:
 
- Test only by using public and internal items Write your tests so that they use only public (or internal) classes and members. Este es el mejor método. Las pruebas seguirán funcionando aunque se refactorice la implementación interna del ensamblado en pruebas. Si aplica las mismas pruebas antes y después de confirmar los cambios, puede estar seguro de que los cambios no han modificado el comportamiento del ensamblado.
+ Probar solo mediante elementos públicos e internos escriba las pruebas de modo que usen solo clases y miembros públicos (o internos). Este es el mejor método. Las pruebas seguirán funcionando aunque se refactorice la implementación interna del ensamblado en pruebas. Si aplica las mismas pruebas antes y después de confirmar los cambios, puede estar seguro de que los cambios no han modificado el comportamiento del ensamblado.
 
  Para que esto sea posible, puede que tenga que reestructurar el código. Por ejemplo, puede que necesite separar algunos métodos en otra clase.
 
@@ -336,7 +336,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- Define a test interface Define an interface that includes both the public members of a class to be tested, and additional properties and methods for the private members that you want the tests to be able to use. Agregue esta interfaz al proyecto que se va a probar. Por ejemplo:
+ Defina una interfaz de prueba defina una interfaz que incluya los miembros públicos de una clase que se va a probar y otras propiedades y métodos para los miembros privados que desea que las pruebas puedan usar. Agregue esta interfaz al proyecto que se va a probar. Por ejemplo:
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -374,7 +374,7 @@ testInstance.PublicMethod1();
 Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 ```
 
- Define accessors by using reflection This is the way that we recommend least. Las versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporcionaban una utilidad que creaba automáticamente un método de descriptor de acceso para cada método privado. Aunque esto resulta cómodo, la experiencia nos dice que tiende a producir pruebas unitarias que se acoplan estrechamente a la estructura interna de la aplicación que están probando. Esto supone un trabajo extra cuando los requisitos o la arquitectura cambian, porque las pruebas tienen que modificarse junto con la implementación. Además, cualquier suposición errónea en el diseño de implementación también se integra en las pruebas, de modo que las pruebas no encuentran errores.
+ Definir los descriptores de acceso mediante la reflexión esta es la manera en que se recomienda menos. Las versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporcionaban una utilidad que creaba automáticamente un método de descriptor de acceso para cada método privado. Aunque esto resulta cómodo, la experiencia nos dice que tiende a producir pruebas unitarias que se acoplan estrechamente a la estructura interna de la aplicación que están probando. Esto supone un trabajo extra cuando los requisitos o la arquitectura cambian, porque las pruebas tienen que modificarse junto con la implementación. Además, cualquier suposición errónea en el diseño de implementación también se integra en las pruebas, de modo que las pruebas no encuentran errores.
 
 ## <a name="see-also"></a>Vea también
- [Anatomy of a Unit Test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

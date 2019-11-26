@@ -23,7 +23,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
  Si usa Microsoft Monitoring Agent para controlar IntelliTrace, también necesitará configurar la supervisión de rendimiento de la aplicación en el servidor web. Esto registra eventos de diagnóstico mientras se ejecuta la aplicación y guarda los eventos en un archivo de registro de IntelliTrace. Después, puede consultar los eventos en Visual Studio Enterprise (pero no en las versiones Professional ni Community), ir al código donde se produjo un evento, ver los valores registrados en ese momento y avanzar o retroceder en el código ejecutado. Después de identificar y corregir el problema, repita el ciclo para compilar, lanzar y supervisar la aplicación con el objetivo de solucionar posibles problemas futuros con mayor rapidez.  
   
- ![Code, build, release, monitor, diagnose, fix](../debugger/media/ffr-cycle.png "FFR_Cycle")  
+ ![Codificar, compilar, liberar, supervisar, diagnosticar, corregir](../debugger/media/ffr-cycle.png "FFR_Cycle")  
   
  **Necesitará:**  
   
@@ -42,19 +42,19 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  Configure la definición de compilación para agregar las ubicaciones del código fuente, la compilación y los símbolos al manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.  
   
-1. [Edit your build definition or create a new build definition.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Edite la definición de compilación o cree una nueva definición de compilación.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-    ![View build definition in TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![Ver la definición de compilación en TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
 2. Elija la plantilla predeterminada (TfvcTemplate.12.xaml) o su propia plantilla personalizada.  
   
-    ![Choose build process template &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![Elegir la plantilla &#45; de proceso de compilación TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3. Especifique dónde guardar el archivo de símbolos (PDB) para indizar el origen automáticamente.  
   
     Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen. Posteriormente, podrá agregar un argumento de MSBuild para especificar dónde quiere guardar los archivos de símbolos.  
   
-    ![Set up symbols path in build definition TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![Configurar la ruta de acceso de símbolos en la definición de compilación TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
     Para obtener más información sobre los símbolos, vea [Publicar datos de símbolos](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
@@ -68,7 +68,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
     **/p:BuildSymbolStorePath=** \<*ruta a símbolos*>  
   
-    ![Include build server info in build def TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![Incluir información del servidor de compilación en la compilación Def TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
     Y agregue estas líneas al archivo de proyecto web (.csproj, .vbproj):  
   
@@ -158,21 +158,21 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
 1. Abra el registro de IntelliTrace (archivo .iTrace) en Visual Studio Enterprise. O bien, haga doble clic en el archivo si tiene Visual Studio Enterprise en el mismo equipo.  
   
-2. Elija **Abrir solución** para hacer que Visual Studio abra automáticamente la solución o el proyecto correspondiente, si el proyecto no se compiló como parte de una solución. [Q: The IntelliTrace log is missing information about my deployed app. Why did this happen? What do I do?](#InvalidConfigFile)  
+2. Elija **Abrir solución** para hacer que Visual Studio abra automáticamente la solución o el proyecto correspondiente, si el proyecto no se compiló como parte de una solución. [P: en el registro de IntelliTrace falta información sobre la aplicación implementada. ¿Por qué ocurre esto? ¿Qué hago?](#InvalidConfigFile)  
   
      Visual Studio aplaza automáticamente los cambios pendientes al abrir la solución o proyecto correspondiente. Para obtener más detalles sobre este conjunto de cambios aplazados, consulte la ventana **Salida** o **Team Explorer**.  
   
      Antes de realizar cambios, confirme que tiene el código fuente correcto. Si usa bifurcaciones, podría estar trabajando en una bifurcación distinta de donde Visual Studio encuentra el código fuente correspondiente, como su bifurcación de versión.  
   
-     ![Open solution from IntelliTrace log](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![Abrir solución desde el registro de IntelliTrace](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
   
      Si tiene un área de trabajo asignada a esta solución o proyecto, Visual Studio seleccionará dicha área de trabajo para colocar el código fuente encontrado.  
   
-     ![Open from source control to mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![Abrir desde el control de código fuente hasta el área de trabajo asignada](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
   
      De lo contrario, elija otra área de trabajo o cree una nueva. Visual Studio asignará la bifurcación completa a esta área de trabajo.  
   
-     ![Open from source control &#45; create new workspace](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Abrir desde el control &#45; de código fuente crear nuevo área de trabajo](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
   
      Para crear un área de trabajo con asignaciones específicas o un nombre distinto al del equipo, elija **Administrar**.  
   
@@ -184,7 +184,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
 1. En **Infracciones de rendimiento**, consulte los eventos de rendimiento registrados, el tiempo de ejecución total y otra información del evento. A continuación, profundice más en los métodos que se llamaron durante un evento de rendimiento específico.  
   
-     ![View performance event details](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Ver detalles del evento de rendimiento](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      También puede hacer doble clic en el evento.  
   
@@ -194,13 +194,13 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
      Expanda esa llamada para revisar todas las llamadas anidadas y los valores que se registraron en ese punto en el tiempo. Después, inicie la depuración desde esa llamada.  
   
-     ![Start debugging from method call](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Iniciar la depuración desde la llamada al método](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      También puede hacer simplemente doble clic en la llamada.  
   
      Si el método está en el código de aplicación, Visual Studio va a ese método.  
   
-     ![Go to application code from performance event](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Ir al código de la aplicación a partir del evento de rendimiento](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Ahora puede revisar otros valores registrados, la pila de llamadas, recorrer el código o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros métodos](../debugger/intellitrace.md) a los que se llamó durante este evento de rendimiento. [¿Qué son todos los eventos e información que aparecen en el registro de IntelliTrace?](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[¿Desea más información sobre los eventos de rendimiento?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
   
@@ -208,13 +208,13 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
 1. En **Datos de excepción**, revise los eventos de excepciones registrados, sus tipos, mensajes y cuándo se produjeron las excepciones. Para profundizar en el código, inicie la depuración desde el evento más reciente de un grupo de excepciones.  
   
-     ![Start debugging from exception event](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Iniciar la depuración desde un evento de excepción](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      También puede hacer doble clic en el evento.  
   
      Si se produjo una excepción en el código de la aplicación, Visual Studio va al lugar donde se ha producido la excepción.  
   
-     ![Go to application code from an exception event](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Ir al código de la aplicación desde un evento de excepción](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      Ahora puede revisar otros valores registrados, la pila de llamadas o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros eventos registrados](../debugger/intellitrace.md), código relacionado y los valores registrados en esos puntos en el tiempo. [¿Qué son todos los eventos e información que aparecen en el registro de IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
   
@@ -222,13 +222,13 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
 - [Más información sobre este código](../ide/find-code-changes-and-other-history-with-codelens.md). Para buscar referencias a este código, su historial de cambios, errores relacionados, elementos de trabajo, revisiones de código o pruebas unitarias (todo ello sin salir del editor de código), use los indicadores de CodeLens en el editor.  
   
-     ![CodeLens &#45; View references to this code](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![Codelens &#45; ver referencias a este código](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
-     ![CodeLens &#45; View change history for this code](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![El historial de &#45; cambios de la vista codelens para este código](../debugger/media/ffr-itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
   
 - [Asignar su lugar en el código durante la depuración.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Para realizar un seguimiento visual de los métodos llamados durante la sesión de depuración, asigne la pila de llamadas.  
   
-     ![Map the call stack while debugging](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
+     ![Asignar la pila de llamadas durante la depuración](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
 ### <a name="FAQ"></a> Preguntas y respuestas  
   
@@ -344,14 +344,14 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 #### <a name="IneligibleWorkspace"></a> P: ¿Por qué dice Visual Studio que el área de trabajo seleccionada no es válida?  
  **R:** El área de trabajo seleccionada no tiene ninguna asignación entre la carpeta de control de código fuente y una carpeta local. Para crear una asignación para esta área de trabajo, elija **Administrar**. De lo contrario, elija un área de trabajo ya asignada o cree una nueva.  
   
- ![Open from source control with no mapped workspace](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
+ ![Abrir desde el control de código fuente sin área de trabajo asignada](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
 #### <a name="ChooseTeamProject"></a> P: ¿Por qué no se puede continuar hasta elegir una colección de equipo o una colección distinta?  
  **R:** Esto puede ocurrir por cualquiera de las siguientes razones:  
   
 - Visual Studio no está conectado a TFS.  
   
-     ![Open from source control &#45; not connected](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Abrir desde el control &#45; de código fuente no conectado](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
   
 - Visual Studio no encontró la solución o el proyecto en la colección de equipo actual.  
   
@@ -361,12 +361,12 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
      Puede que el servidor TFS especificado ya no tenga el código fuente coincidente o que este ni siquiera exista, quizá porque se migró a un nuevo servidor TFS. Si el servidor TFS especificado no existe, puede que Visual Studio agote el tiempo de espera tras un minuto aproximadamente y después le pida que se conecte a otra colección. Para continuar, conéctese al servidor TFS correcto.  
   
-     ![Open from source control &#45; migrated](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Abrir desde el control &#45; de código fuente migrado](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> P: ¿Qué es un área de trabajo?  
  **R:** El [área de trabajo almacena una copia del código fuente](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) para poder desarrollarlo y probarlo por separado antes de proteger el trabajo. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.  
   
 #### <a name="UntrustedSymbols"></a> P: ¿Por qué aparece un mensaje sobre símbolos que no son de confianza?  
- ![Debug with untrusted symbols path?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![¿Depurar con símbolos que no son de confianza?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
  **R:** este mensaje aparece cuando la ruta de acceso a los símbolos en el archivo de manifiesto de compilación (\<*nombreDelProyecto*>.BuildInfo.config) no se incluye en la lista de rutas de acceso de símbolos de confianza. Puede agregar la ruta de acceso a dicha lista en las opciones del depurador.

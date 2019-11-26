@@ -1,5 +1,5 @@
 ---
-title: Graphics Frame Analysis | Microsoft Docs
+title: Análisis de fotogramas de gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300507"
 ---
-# <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
+# <a name="graphics-frame-analysis"></a>Análisis de fotogramas de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
@@ -39,12 +39,12 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
   Aunque el análisis de fotogramas está diseñado principalmente para ayudarle a conseguir un rendimiento de la representación más rápido, también le puede ayudar a conseguir una mejor calidad visual para un objetivo de rendimiento determinado o reducir el consumo de energía de la GPU.  
   
-  To see a demonstration of what Frame Analysis can do for your app, you can watch the [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video on Channel 9.  
+  Para ver una demostración de lo que puede hacer el análisis de fotogramas para su aplicación, puede ver el vídeo de [análisis de fotogramas de gráficos de Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) en Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso de Análisis de fotogramas  
  Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. Luego, en la ventana del documento de registro de gráficos (.vsglog), seleccione la pestaña **Análisis de fotogramas**.  
   
- ![Select the Frame Analysis tab.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
+ ![Seleccione la pestaña Análisis de fotogramas.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  Al completarse el análisis, se muestran los resultados. La parte superior de la pestaña de análisis de fotogramas muestra la escala de tiempo y la tabla de resumen. La parte inferior muestra las tablas de detalles. Si se generan errores o advertencias durante la reproducción, se resumen encima de la escala de tiempo. Desde allí, puede seguir los vínculos para obtener más información sobre los errores y las advertencias.  
   
@@ -77,14 +77,14 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="timeline"></a>Escala de tiempo  
  La escala de tiempo muestra una vista general de los cronometrajes de llamada a draw relativos a otro. Como las barras más largas se corresponden con tiempos de dibujo más prolongados, puede usarlo para ubicar rápidamente en el fotograma las llamadas a draw más caras. Cuando el fotograma capturado contiene una gran cantidad de llamadas a draw, se combinan varias llamadas a draw en una barra cuya longitud sea la suma de esas llamadas a draw.  
   
- ![The timeline shows draw&#45;call costs.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![La escala de tiempo&#45;muestra los costos de las llamadas a Draw.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Puede colocar el puntero en una barra para ver a qué evento de llamada a draw corresponde. Al seleccionar la barra, la lista de eventos se sincroniza con este evento.  
   
 #### <a name="table"></a>Table  
  La tabla de números de debajo de la escala de tiempo muestra el rendimiento relativo de cada variante de representación para cada llamada a draw con respecto a la representación predeterminada de la aplicación. Cada columna muestra una variante de representación diferente y cada fila representa una llamada a draw diferente que está identificada en la columna del punto de conexión izquierdo; desde aquí puede seguir un vínculo al evento de la ventana de Lista de eventos gráficos.  
   
- ![The summary table shows different varients.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
+ ![En la tabla de resumen se muestran diferentes variaciones.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
  La segunda columna por la izquierda de la Tabla de resumen muestra el tiempo de representación de línea base de la aplicación, es decir, el tiempo que tarda la representación predeterminada de la aplicación en completar la llamada a draw. Las columnas restantes muestran el rendimiento relativo de cada variante de representación como un porcentaje de la línea base para que sea más fácil ver si el rendimiento mejora. Los porcentajes superiores al 100 por cien han tardado más que la línea base, es decir, el rendimiento ha empeorado, y los inferiores al 100 por cien han tardado menos: el rendimiento ha mejorado.  
   
@@ -93,14 +93,14 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="hot-draw-calls"></a>Llamadas a draw "activas"  
  Para llamar la atención sobre llamadas a draw que consumen una mayor proporción del tiempo de representación general o que puedan ser inusualmente lentas por motivos que se pueden evitar, la fila que contiene estas llamadas a draw "activas" se sombrea en rojo cuando su control del tiempo de la línea base es superior a una desviación estándar más larga que el promedio de tiempo de la línea base de todas las llamadas a draw del fotograma.  
   
- ![This DrawIndexed call has hot and cold varients.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
+ ![Esta llamada a DrawIndexed tiene variacioness en frío e inactivas.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Significación estadística  
  Para llamar la atención sobre las variantes de representación que son más significativas, el Análisis de fotogramas determina la significación estadística de cada variante de representación y muestra las más significativas en negrita. Muestra en verde las que mejoran el rendimiento y en rojo las que lo emporan. Muestra resultados que no son estadísticamente significativos como tipo normal.  
   
- ![The statistical relevance of the draw call variant](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![Relevancia estadística de la variante de llamada a Draw](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- To determine statistical relevance, Frame Analysis uses the [Student's t-test](https://en.wikipedia.org/wiki/Student's_t-test).  
+ Para determinar la relevancia estadística, el análisis de fotogramas usa la [prueba t de Student](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>Tabla de detalles  
  Debajo de la Tabla de resumen está la Tabla de detalles, que está contraída de manera predeterminada. El contenido de la Tabla de detalles depende de la plataforma de hardware de la máquina de reproducción. Para obtener información sobre las plataformas de hardware admitidas, vea [Compatibilidad de hardware](#HardwareSupport).  
@@ -108,12 +108,12 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plataformas que no admiten contadores de hardware  
  La mayoría de plataformas no admiten completamente contadores GPU de hardware, entre los que se incluyen todas las GPU ofrecidas actualmente por Intel, AMD y nVidia. Cuando no se pueden recopilar contadores de hardware, solo se muestra la Tabla de detalles, que contiene el control de tiempo absoluto promedio de todas las variantes.  
   
- ![The details table and some playback varients.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
+ ![La tabla de detalles y algunos variaciones de reproducción.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plataformas que admiten contadores de hardware  
  Para las plataformas que admiten contadores GPU de hardware, el SoC nVidia T40 SOC y todos los SoC Qualcomm, por ejemplo, se muestran varias Tablas de detalles, una para cada variante. Cada contador de hardware disponible se recopila para cada variante de representación y se muestra en su propia Tabla de detalles.  
   
- ![Hardware counters are displayed when supported.](../debugger/media/pix-frame.png "pix_frame")  
+ ![Los contadores de hardware se muestran cuando se admiten.](../debugger/media/pix-frame.png "pix_frame")  
   
  La información de contador de hardware ofrece una vista muy detallada del comportamiento específico de la plataforma de hardware para cada llamada a draw, que le puede ayudar a identificar la causa de los cuellos de botella en el rendimiento de manera muy precisa.  
   
@@ -191,10 +191,10 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 |**0x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
 |**2x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
 |**4x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](../debugger/0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|  
-|**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtro de textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtro de textura anisotrópico**|Establece el modo de filtro en `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` en `16` (16 veces el filtro de textura anisotrópico) para todas las muestras de textura adecuadas.<br /><br /> For more information, see [Point, Bilinear, Trilinear, and Anisotropic Texture Filtering Variants](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtro de textura anisotrópico**|Establece el modo de filtro en `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` en `16` (16 veces el filtro de textura anisotrópico) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Formato de destino de presentación 16bpp**|Establece el formato de píxeles en `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos los objetivos de representación y superficies del búfer.<br /><br /> Para obtener más información, vea [16bpp Render Target Format Variant](../debugger/16bpp-render-target-format-variant.md) (Variante de formato de destino de representación 16bpp).|  
 |**Generación de asignación de MIP**|Habilita la asignación de MIP en todas las texturas que no son objetivos de representación.<br /><br /> Para obtener más información, vea [Mip-map Generation Variant](../debugger/mip-map-generation-variant.md) (Variante Generación de asignación de MIP).|  
 |**Dimensiones de textura media**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a la mitad del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 128x64 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](../debugger/half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|  

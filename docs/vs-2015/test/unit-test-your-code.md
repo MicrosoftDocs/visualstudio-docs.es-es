@@ -41,7 +41,7 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="key-tasks"></a>Tareas clave
  Utilice los temas siguientes para facilitar la comprensión y la creación de pruebas unitarias:
 
-|Tareas|Temas relacionados|
+|Tareas|Temas asociados|
 |-----------|-----------------------|
 |**Guías rápidas y tutoriales**: utilice los siguientes temas para aprender a hacer pruebas unitarias en Visual Studio a partir de ejemplos de código.|-   [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Pruebas unitarias de código nativo con el Explorador de pruebas](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**Hacer pruebas unitarias con el Explorador de pruebas**: aprenda cómo el Explorador de pruebas puede ayudar a crear pruebas unitarias más productivas y eficaces.|-   [Conceptos básicos de las pruebas unitarias](../test/unit-test-basics.md)<br />-   [Crear un proyecto de prueba unitaria](../test/create-a-unit-test-project.md)<br />-   [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)<br />-   [Actualizar pruebas unitarias desde Visual Studio 2010](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -64,9 +64,9 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
  Proporciona vínculos a información sobre cómo utilizar Visual Studio en oposición a utilizar [!INCLUDE[TCMext](../includes/tcmext-md.md)] para ejecutar las pruebas automatizadas.
 
 ## <a name="reference"></a>Referencia
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> describe el espacio de nombres UnitTesting, que proporciona los atributos, excepciones, aserciones y otras clases que admiten las pruebas unitarias.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> describe el espacio de nombres UnitTesting. Web, que extiende el espacio de nombres UnitTesting proporcionando compatibilidad para las pruebas unitarias de servicios web y [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].
 
 ## <a name="external-resources"></a>Recursos externos
 
@@ -76,11 +76,11 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ### <a name="forums"></a>Foros
  [Prueba unitaria de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Guía
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="reference"></a>Referencia
  [Content Index for Unit Tests](https://go.microsoft.com/fwlink/?LinkID=254719) (Índice de contenido para las pruebas unitarias)
 
 ## <a name="see-also"></a>Vea también
- [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
+ [Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

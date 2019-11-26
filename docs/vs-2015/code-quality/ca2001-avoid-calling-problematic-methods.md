@@ -1,5 +1,5 @@
 ---
-title: 'CA2001: Avoid calling problematic methods | Microsoft Docs'
+title: 'CA2001: evitar llamar a métodos problemáticos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -36,23 +36,23 @@ ms.locfileid: "74298486"
  Un miembro llama a un método potencialmente peligroso o problemático.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Avoid making unnecessary and potentially dangerous method calls.
+ Evite realizar llamadas a métodos innecesarias y potencialmente peligrosas.
 
- A violation of this rule occurs when a member calls one of the following methods.
+ Una infracción de esta regla se produce cuando un miembro llama a uno de los métodos siguientes.
 
 |Método|Descripción|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|Calling GC.Collect can significantly affect application performance and is rarely necessary. For more information, see the [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=169256) blog entry on MSDN.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend and Thread.Resume have been deprecated because of their unpredictable behavior.  Use other classes in the <xref:System.Threading> namespace, such as <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, and <xref:System.Threading.Semaphore> to synchronize threads or protect resources.|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|The DangerousGetHandle method poses a security risk because it can return a handle that is not valid. See the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> and the <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> methods for more information about how to use the DangerousGetHandle method safely.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|These methods can load assemblies from unexpected locations. For example, see Suzanne Cook's .NET CLR Notes blog posts [LoadFile vs. LoadFrom](https://go.microsoft.com/fwlink/?LinkId=164450) and [Choosing a Binding Context](https://go.microsoft.com/fwlink/?LinkId=164451) on the MSDN Web site for information about methods that load assemblies.|
-|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|By the time the user code starts executing in a managed process, it is too late to reliably call CoSetProxyBlanket. The common language runtime (CLR) takes initialization actions that may prevent the users P/Invoke from succeeding.<br /><br /> If you do have to call CoSetProxyBlanket for a managed application, we recommend that you start the process by using a native code (C++) executable, call CoSetProxyBlanket in the native code, and then start your managed code application in process. (Be sure to specify a runtime version number.)|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|Llamando a GC. Collect puede afectar significativamente al rendimiento de la aplicación y rara vez es necesario. Para obtener más información, consulte la entrada de blog de [noticias muy interesantes de rendimiento de rico mariani's performance](https://go.microsoft.com/fwlink/?LinkId=169256) en MSDN.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend y Thread. resume están en desuso debido a su comportamiento imprevisible.  Use otras clases en el espacio de nombres <xref:System.Threading>, como <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>y <xref:System.Threading.Semaphore> para sincronizar los subprocesos o proteger los recursos.|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|El método DangerousGetHandle supone un riesgo para la seguridad porque puede devolver un identificador no válido. Vea los métodos <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> y <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> para obtener más información sobre cómo usar el método DangerousGetHandle de forma segura.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Estos métodos pueden cargar ensamblados desde ubicaciones inesperadas. Por ejemplo, vea [las entradas de](https://go.microsoft.com/fwlink/?LinkId=164450) blog sobre las notas de .net CLR de Suzanne Cook [en el](https://go.microsoft.com/fwlink/?LinkId=164451) sitio web de MSDN para obtener información sobre los métodos que cargan los ensamblados.|
+|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (ole32)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (ole32)|En el momento en que el código de usuario empieza a ejecutarse en un proceso administrado, es demasiado tarde para llamar a CoSetProxyBlanket de forma confiable. El Common Language Runtime (CLR) realiza acciones de inicialización que pueden impedir que los usuarios P/Invoke se ejecuten correctamente.<br /><br /> Si tiene que llamar a CoSetProxyBlanket para una aplicación administrada, se recomienda que inicie el proceso con un ejecutable de código nativo (C++), llame a CoSetProxyBlanket en el código nativo y, a continuación, inicie la aplicación de código administrado en proceso. (Asegúrese de especificar un número de versión en tiempo de ejecución).|
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- To fix a violation of this rule, remove or replace the call to the dangerous or problematic method.
+ Para corregir una infracción de esta regla, quite o reemplace la llamada al método peligroso o problemático.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- You should suppress messages from this rule only when no alternatives to the problematic method are available.
+ Solo debe suprimir los mensajes de esta regla cuando no estén disponibles alternativas al método problemático.
 
 ## <a name="see-also"></a>Vea también
  [Advertencias de confiabilidad](../code-quality/reliability-warnings.md)

@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299914"
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imagen
+# <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:
@@ -39,18 +39,18 @@ En este tutorial, compilará un programa que carga una imagen de un archivo y la
 
   ![Imagen que creará en este tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Imagen que creará en este tutorial
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [How Do I: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) or [How Do I: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, consulte [Cómo: crear un visor de imágenes en Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) o [Cómo: crear un visor de imágenes en C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
 >
-> To see code for Visual Basic, choose the **VB** tab at the top of code blocks, and to see code for Visual C#, choose the **C#** tab. If you're interested in learning about Visual C++, see [Getting Started](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) and [C++ Language Tutorial](http://www.cplusplus.com/doc/tutorial/).
+> Para ver el código de Visual Basic, elija la pestaña **VB** en la parte superior de los bloques de código y para ver C#el código para **C#** visual, elija la pestaña. Si está interesado en obtener más información sobre C++visual, vea el [ C++ tutorial](http://www.cplusplus.com/doc/tutorial/)de [Introducción](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) y lenguaje.
 >
 > Si quiere obtener más información sobre cómo escribir aplicaciones en Visual C# o Visual Basic para la Tienda Windows, vea [Crear la primera aplicación de la Tienda Windows con C# o Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Para obtener información sobre cómo crear aplicaciones JavaScript para la Tienda Windows, vea [Crear la primera aplicación de la Tienda Windows con JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Empezar a crear un proyecto de aplicación de Windows Forms.|
 |[Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md)|Ejecutar el programa de aplicación de Windows Forms que se creó en el paso anterior.|

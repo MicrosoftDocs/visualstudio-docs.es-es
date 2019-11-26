@@ -1,5 +1,5 @@
 ---
-title: Get Started Developing | Microsoft Docs
+title: Introducción al desarrollo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -33,7 +33,7 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](https://visual
 
 - **[Crear aplicaciones móviles multiplataforma en C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : empiece a usar Visual Studio y Tools for Xamarin para crear aplicaciones móviles que se ejecutan en la Plataforma universal de Windows, iOS y Android desde una base de código compartido.
 
-     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     Cargar un ejemplo: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (interfaz de usuario nativa) o el [ejemplo de Xamarin Forms todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaz &#124;de usuario compartida de Xamarin. Forms) [realizar un tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [examinar los documentos](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [ver un vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[Crear bibliotecas y aplicaciones multiplataforma nativas en C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Vaya aquí para empezar a crear bibliotecas y aplicaciones C++ que se ejecutan en Android, iOS y la Plataforma universal de Windows.
 
@@ -55,7 +55,7 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](https://visual
 
      [Cargar una muestra](https://github.com/microsoft/windows-classic-samples) &#124;                     [ Realizar un tutorial](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [Examinar los documentos](https://dev.windows.com/desktop)
 
-- **[Make Office applications](https://msdn.microsoft.com/library/fp161347.aspx)** : Get started creating Office applications that extend and customize Word, Excel, Outlook and PowerPoint with Office 365 services.
+- **[Crear aplicaciones de Office](https://msdn.microsoft.com/library/fp161347.aspx)** : Introducción a la creación de aplicaciones de Office que amplían y personalizan Word, Excel, Outlook y PowerPoint con Office 365 Services.
 
      [Cargar una muestra](https://code.msdn.microsoft.com/office365/) &#124;                       [ Realizar un tutorial](https://developer.microsoft.com/graph) &#124;                              [Examinar los documentos](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [Ver un vídeo](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 

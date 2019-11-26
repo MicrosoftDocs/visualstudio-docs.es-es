@@ -50,4 +50,4 @@ Puede usar **Inicio rápido** para buscar y ejecutar acciones rápidamente para 
  Para conocer las últimas sugerencias y trucos para usar el **Inicio rápido**, vea el [blog de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Vea también
- [General User Interface Elements (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)
+ [Elementos generales de la interfaz de usuario (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [cuadro de diálogo Opciones de entorno](../../ide/reference/environment-options-dialog-box.md)

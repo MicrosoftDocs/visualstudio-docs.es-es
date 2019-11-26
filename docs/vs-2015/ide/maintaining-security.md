@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651409"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294234"
 ---
 # <a name="maintaining-security"></a>Mantener la seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Suele decirse que para obtener seguridad no hay que bajar la guardia. A pesar de
 
  Además, no sólo debe supervisar su propia aplicación sino que también debe mantenerse al día en relación con nuevas amenazas y errores en el sistema de seguridad de la plataforma en la que se ejecuta la aplicación y de otros productos de los que dependa la aplicación.
 
- [Seguridad, privacidad y cuentas](http://go.microsoft.com/fwlink/?LinkId=72881) Obtenga ayuda con la seguridad, la privacidad y las cuentas de usuario, incluida información sobre virus, contraseñas, controles parentales, firewalls y cifrado de unidad.
+ [Seguridad, privacidad y cuentas](https://go.microsoft.com/fwlink/?LinkId=72881) Obtenga ayuda con la seguridad, la privacidad y las cuentas de usuario, incluida información sobre virus, contraseñas, controles parentales, firewalls y cifrado de unidad.
 
  [Búsqueda de boletines de seguridad de Microsoft](/security-updates/) Esta página facilita la búsqueda de Boletines publicados anteriormente. Dirigidos a los profesionales informáticos (IT), los boletines de seguridad proporcionan información detallada relativa a las actualizaciones de seguridad.
 

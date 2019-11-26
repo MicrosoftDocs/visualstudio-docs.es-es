@@ -23,18 +23,18 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
   
 - Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  
   
-- También puede comparar (diff) dos instantáneas de una aplicación para buscar las áreas del código que generen un aumento del uso de la memoria con el tiempo.  
+- También puede comparar (diferencias) dos instantáneas de una aplicación para buscar las áreas del código que generen un aumento del uso de la memoria con el tiempo.  
   
   En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
   
-  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![DiagnosticTools&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
   Aunque puede recopilar instantáneas de memoria en cualquier momento en la herramienta **Uso de memoria** , puede usar el depurador de Visual Studio para controlar cómo se ejecuta la aplicación mientras investiga los problemas de rendimiento. Las acciones del depurador como establecer puntos de interrupción, ejecutar paso a paso e interrumpir todos, entre otras, pueden ayudarle a centrarse en las investigaciones de rendimiento en las rutas de acceso de código que son más importantes. Si realiza esas acciones mientras la aplicación se ejecuta, puede eliminar el ruido del código que no le interesa y reducir considerablemente la cantidad de tiempo necesario para diagnosticar un problema.  
   
   También puede usar la herramienta de memoria fuera del depurador. Vea [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
-> **Compatibilidad con el asignador personalizado** El generador de perfiles de memoria nativa funciona mediante la recopilación de datos de asignación de eventos de [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) que se emiten en tiempo de ejecución.  Los asignadores de CRT y Windows SDK se han anotado en el nivel de origen para que se pueden capturar los datos de asignación.  Si escribe sus propios asignadores, las funciones que devuelven un puntero a la memoria de montón recientemente asignada se pueden decorar con [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), tal como se muestra en este ejemplo para myMalloc:  
+> **Compatibilidad con el asignador personalizado** El generador de perfiles de memoria nativa funciona mediante la recopilación de datos de asignación de eventos de [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) que se emiten en tiempo de ejecución.  Los asignadores de CRT y Windows SDK se han anotado en el nivel de origen para que se pueden capturar los datos de asignación.  Si escribe sus propios asignadores, que las funciones que devuelven un puntero a la memoria de montón recientemente asignada se pueden decorar con [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), tal como se muestra en este ejemplo para myMalloc:  
 >   
 > `__declspec(allocator) void* myMalloc(size_t size)`  
   
@@ -43,13 +43,13 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 > [!NOTE]
 > Dado que la recopilación de datos de memoria puede afectar al rendimiento de depuración de las aplicaciones nativas o de modo mixto, las instantáneas de memoria están deshabilitadas de forma predeterminada. Para habilitar las instantáneas de aplicaciones nativas o de modo mixto, inicie una sesión de depuración (tecla de método abreviado: **F5**). Cuando aparezca la ventana **Herramientas de diagnóstico** , seleccione la pestaña Uso de memoria y, a continuación, elija **Habilitar instantáneas**.  
 >   
-> ![Enable snapshots](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Habilitar instantáneas](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
 > Detenga la depuración (tecla de método abreviado: **Mayús + F5**) y reiníciela.  
   
  Cada vez que desee capturar el estado de memoria, elija **Tomar instantánea** en la barra de herramientas reducida **Uso de memoria** .  
   
- ![Take snapshot](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
+ ![Tomar instantánea](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
 > - Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
@@ -66,7 +66,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
   
 - Cuando se toman varias instantáneas, las celdas de la tabla de resumen incluyen el cambio de valor entre la instantánea de la fila y la instantánea anterior.  
   
-   ![Memory summary table cell](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+   ![Celda de tabla de Resumen de memoria](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
   
   **Para ver un informe de detalles:**  
   
@@ -81,7 +81,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 ### <a name="managed-types-reports"></a>Informes de tipos administrados  
  Elija el vínculo actual de una celda **Objetos administrados** o **Tamaño del montón administrado** de la tabla de resumen Uso de memoria.  
   
- ![Debugger managed type report &#45; Paths to Root](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Rutas de acceso del informe &#45; de tipo administrado del depurador a raíz](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  El panel superior muestra el número y el tamaño de los tipos en la instantánea, incluido el tamaño de todos los objetos a los que hace referencia el tipo (**Tamaño inclusivo**).  
   
@@ -89,44 +89,44 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
   
  El árbol **Tipos a los que se hace referencia** muestra las referencias que se incluyen en el tipo seleccionado en el panel superior.  
   
- ![Managed eferenced types report view](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Vista de informes de tipos adminstrados administrados](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- To display the instances of a selected type in the upper pane, choose the ![Instance icon](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") icon.  
+ Para mostrar las instancias de un tipo seleccionado en el panel superior, elija el icono ![icono de instancia](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") .  
   
- ![Instances view](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![Vista de instancias](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
  La vista **Instancias** muestra las instancias del objeto seleccionado en la instantánea en el panel superior. Los paneles Rutas de acceso al nodo raíz y Objetos a los que se hace referencia muestran los objetos que hacen referencia a la instancia seleccionada y los tipos a los que hace referencia la instancia seleccionada. Cuando el depurador se detiene en el punto donde se tomó la instantánea, puede desplazar el puntero sobre la celda Valor para mostrar los valores del objeto en la información sobre herramientas.  
   
 ### <a name="native-type-reports"></a>Informes de tipo nativo  
  Elija el vínculo actual de una celda **Asignaciones nativas** o **Tamaño de montón nativo** en la tabla de resumen Uso de memoria de la ventana **Herramientas de diagnóstico** .  
   
- ![Native Type View](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Vista de tipo nativo](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
  La **Vista de tipos** muestra el número y el tamaño de los tipos de la instantánea.  
   
-- Choose the instances icon (![The instance icon in the Object Type column](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) of a selected type to display information about the objects of the selected type in the snapshot.  
+- Elija el icono de instancias (![el icono de instancia en la columna tipo de objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) de un tipo seleccionado para mostrar información sobre los objetos del tipo seleccionado en la instantánea.  
   
      La vista **Instancias** muestra cada instancia del tipo seleccionado. Al seleccionar una instancia se muestra la pila de llamadas que produjo la creación de la instancia en el panel **Pila de llamadas de asignación** .  
   
-     ![Instances view](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Vista de instancias](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
 - Elija **Vista de pilas** en la lista **Modo de vista** para ver la pila de asignación del tipo seleccionado.  
   
-     ![Stacks View](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Vista de pilas](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>Informes de cambios (diferencias)  
   
 - Elija el vínculo de cambio en una celda de la tabla de resumen de la pestaña **Uso de memoria** en la ventana **Herramientas de diagnóstico** .  
   
-   ![Choose a change &#40;dif&#41;f report](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Elegir un informe &#40;de&#41;cambio de DIF f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 - Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.  
   
-   ![Choose a snapshot from the Compare To list](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Elegir una instantánea de la lista Comparar con](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
   El informe de cambios agrega columnas (marcadas con **(Dif.)** ) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:  
   
-  ![Native Types Diff Veiw](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Tipos nativos diff nativos](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs y vídeos  
  [Ventana del depurador de Herramientas de diagnóstico en Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  

@@ -131,7 +131,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 
     La creación de la clave del Registro en el nodo HKEY_LOCAL_MACHINE permite que todos los usuarios vean los ensamblados de la ubicación especificada en el cuadro de diálogo **Agregar referencia**. Crear la clave del Registro en el nodo HKEY_CURRENT_USER únicamente afecta a la configuración del usuario actual.
 
-    Abra de nuevo el cuadro de diálogo **Agregar referencia**. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
+    Abra de nuevo el cuadro de diálogo **Agregar referencia**. Los ensamblados deben aparecer en la pestaña **.net** . Si no es así, asegúrese de que los ensamblados se encuentren en el directorio *AssemblyLocation* especificado, reinicie Visual Studio e inténtelo de nuevo.
 
 ## <a name="com-tab"></a>Pestaña COM
  La pestaña COM muestra todos los componentes COM a los que se puede hacer referencia. Si desea agregar una referencia a una DLL COM registrada que contiene un manifiesto interno, quite primero la DLL del Registro. Si no lo hace, Visual Studio agregará la referencia del ensamblado como un control ActiveX, en lugar de como una DLL nativa.
@@ -141,7 +141,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ## <a name="solution-tab"></a>Pestaña Solución
  La pestaña Solución muestra todos los proyectos compatibles de la solución actual, en la subpestaña Proyectos.
 
- Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para más información, vea [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Un proyecto que tenga como destino [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] es incompatible con un proyecto que tenga como destino [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].
 
@@ -188,7 +188,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ## <a name="browse-button"></a>Botón Examinar
  Puede usar el botón **Examinar** para buscar un componente en el sistema de archivos.
 
- Un proyecto puede hacer referencia a un componente con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear una aplicación que tuviera como destino .NET Framework 4 Client Profile 4, que hiciera referencia a un componente que tuviera como destino .NET Framework 2. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un proyecto puede hacer referencia a un componente con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear una aplicación que tuviera como destino .NET Framework 4 Client Profile 4, que hiciera referencia a un componente que tuviera como destino .NET Framework 2. Para más información, vea [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo **Administrador de referencias** para crear referencias entre proyectos. Esta táctica facilita el trabajo de desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 
@@ -209,11 +209,11 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
     > [!NOTE]
     > Si agrega la propiedad, es posible que la compilación se ejecute más lentamente.
 
-## <a name="recent"></a>Reciente
+## <a name="recent"></a>Recientes
  Los grupos Ensamblados, COM, Windows y Examinar tienen cada uno una pestaña Recientes, que muestra una lista de los componentes que se agregaron recientemente a proyectos.
 
 ## <a name="search"></a>Buscar
  La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe “System” en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga “system”.
 
 ## <a name="see-also"></a>Vea también
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)
+ [NIB cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Administración de referencias en un proyecto](../ide/managing-references-in-a-project.md)

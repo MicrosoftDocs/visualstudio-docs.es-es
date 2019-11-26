@@ -23,11 +23,11 @@ ms.locfileid: "74300454"
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Promedio de bytes privados asignados al proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0505|  
-|Category|Resource Management|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. El contador de bytes privados del proceso mide la memoria virtual asignada por el proceso del que está generando perfiles. El valor notificado es el promedio calculado de todos los intervalos de medición.|  
-|Rule type|Information|  
+Identificador de regla | DA0505 |  
+| Categoría | Administración de recursos |  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Esta información se recopiló solo como información. El contador de bytes privados del proceso mide la memoria virtual asignada por el proceso del que está generando perfiles. El valor notificado es el promedio calculado de todos los intervalos de medición.|  
+| Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   

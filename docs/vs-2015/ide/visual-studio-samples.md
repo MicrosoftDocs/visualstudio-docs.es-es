@@ -1,5 +1,5 @@
 ---
-title: Samples | Microsoft Docs
+title: Ejemplos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296847"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio Samples
+# <a name="visual-studio-samples"></a>Ejemplos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede encontrar ejemplos de Visual Studio en el sitio web [Galería de código de MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) .

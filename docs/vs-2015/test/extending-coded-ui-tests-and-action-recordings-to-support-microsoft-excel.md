@@ -26,7 +26,7 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 
   En esta sección se presenta una extensión de prueba de IU codificada que puede grabar y reproducir pruebas para hojas de cálculo de Excel. Cada parte de la extensión se explica en esta sección y en los comentarios de código para los desarrolladores que desean crear este tipo de extensión.
 
-  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
+  ![Arquitectura de pruebas de IU](../test/media/ui-testarch.png "UI_TestArch") Información general sobre la arquitectura
 
 ## <a name="download-the-sample"></a>Descargar el ejemplo
  El ejemplo está compuesto por cuatro proyectos en la solución `CodedUIExtensibilitySample.sln`:
@@ -76,6 +76,6 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -1,5 +1,5 @@
 ---
-title: Nesting Shapes | Microsoft Docs
+title: Anidar formas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,4 +19,4 @@ ms.locfileid: "74296054"
 # <a name="nesting-shapes"></a>Anidar formas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-See [Jean-Marc Prieur’s blog](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)
+Consulte [el blog de Jean-Marc Prieur](https://blogs.msdn.microsoft.com/jmprieur/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1/)

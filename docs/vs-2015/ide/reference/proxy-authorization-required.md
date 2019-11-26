@@ -16,30 +16,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297815"
 ---
-# <a name="proxy-authorization-required"></a>Se necesita autorización de proxy
+# <a name="proxy-authorization-required"></a>se necesita autorización del Proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The **Proxy authorization required** error generally occurs when users are connected to Visual Studio online resources through a proxy server, and the proxy server blocks the calls.
+Normalmente, el error de **autorización de proxy** se produce cuando los usuarios están conectados a recursos de Visual Studio online a través de un servidor proxy y el servidor proxy bloquea las llamadas.
 
-To correct this error, try one or more of the following steps:
+Para corregir este error, pruebe uno o varios de los pasos siguientes:
 
 - Reinicie Visual Studio. Debe aparecer un cuadro de diálogo de autenticación de proxy. Escriba sus credenciales en el cuadro de diálogo.
 
-- Si el paso anterior no resuelve el problema, puede que el servidor proxy no pida credenciales para direcciones https://go.microsoft.com, pero que sí lo haga para direcciones *.visualStudio.com. For these servers, you need to add the following URLs to the allow list to unblock all sign-in scenarios in Visual Studio:
+- Si el paso anterior no resuelve el problema, puede que el servidor proxy no pida credenciales para direcciones https://go.microsoft.com, pero que sí lo haga para direcciones *.visualStudio.com. Para estos servidores, debe agregar las siguientes direcciones URL a la lista de permitidos para desbloquear todos los escenarios de inicio de sesión en Visual Studio:
 
   - *.windows.net
 
   - *.microsoftonline.com
 
-  - *.visualstudio.com
+  - *.visualStudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- You can remove the https://go.microsoft.com address from the allow list so that the proxy authentication dialog shows up for both the https://go.microsoft.com address and the server endpoints when Visual Studio is restarted.
+- Puede quitar la dirección https://go.microsoft.com de la lista de permitidos para que se muestre el cuadro de diálogo de autenticación de proxy para la dirección https://go.microsoft.com y los puntos de conexión del servidor cuando se reinicie Visual Studio.
 
-- If you want to use your default credentials with your proxy, do the following:
+- Si desea usar las credenciales predeterminadas con el proxy, haga lo siguiente:
 
    1. Busque devenv.exe.config (el archivo de configuración de devenv.exe) en: **%Archivos de programa%\Microsoft Visual Studio 14.0\Common7\IDE** (o en **%Archivos de programa (x86)%\Microsoft Visual Studio 14.0\Common7\IDE**).
 
@@ -51,6 +51,6 @@ To correct this error, try one or more of the following steps:
       </defaultProxy>
       ```
 
-      Insert the correct proxy address for your network in `proxyaddress="<http://<yourproxy:port#>`.
+      Inserte la dirección de proxy correcta para la red en `proxyaddress="<http://<yourproxy:port#>`.
 
-- Follow the instructions in [this blog post](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) to add code that allows you to use the proxy.
+- Siga las instrucciones de [esta entrada de blog](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) para agregar código que le permita usar el proxy.

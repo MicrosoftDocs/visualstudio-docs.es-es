@@ -1,5 +1,5 @@
 ---
-title: 'How to: Troubleshoot Unsuccessful Project Upgrades | Microsoft Docs'
+title: 'Cómo: solucionar problemas de actualizaciones de proyecto incorrectas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -28,7 +28,7 @@ ms.locfileid: "74300350"
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A veces, Visual Studio no puede convertir totalmente un proyecto de una versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. If the tips in the following sections do not resolve your specific problem, you might be able to find more information on the TechNet [Wiki: Development Portal](https://go.microsoft.com/fwlink/?LinkId=254808).
+A veces, Visual Studio no puede convertir totalmente un proyecto de una versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si las sugerencias de las secciones siguientes no resuelven su problema específico, es posible que pueda encontrar más información en TechNet [wiki: portal de desarrollo](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>El proyecto no se ejecuta porque no se encuentran los archivos
  Un archivo de proyecto contiene rutas de acceso codificadas de forma rígida que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliza para ejecutar el proyecto al presionar F5. Estas rutas pueden incluir la ubicación de devenv.exe y otros archivos necesarios. En una versión actualizada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], las rutas de acceso de estos archivos pueden haber cambiado.
@@ -57,4 +57,4 @@ A veces, Visual Studio no puede convertir totalmente un proyecto de una versión
    Si desea que el proyecto se ejecute en la versión actualizada de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], debe actualizar las referencias del proyecto, así como cualquier instrucción `Imports` o `Using` que llame a las referencias. Si el proyecto se carga en el IDE, puede actualizar las referencias mediante el **Explorador de soluciones** o el cuadro de diálogo **Administrador de referencias**.
 
 ## <a name="see-also"></a>Vea también
- [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [Converting to ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [convertir a ASP.net 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
