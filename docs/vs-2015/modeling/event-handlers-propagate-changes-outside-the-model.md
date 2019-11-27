@@ -1,5 +1,5 @@
 ---
-title: Event Handlers Propagate Changes Outside the Model | Microsoft Docs
+title: Los controladores de eventos propagan los cambios fuera del modelo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,29 +22,29 @@ ms.locfileid: "74295510"
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visualization and Modeling SDK, you can define store event handlers to propagate changes to resources outside the store, such as non-store variables, files, models in other stores, or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. Store event handlers are executed after the end of the transaction in which the triggering event occurred. They are also executed in an Undo or Redo operation. Therefore, unlike store rules, store events are most useful for updating values that are outside the store. Unlike .NET events, store event handlers are registered to listen to a class: you do not have to register a separate handler for each instance. For more information about how to choose between different ways to handle changes, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).
+En el SDK de visualización y modelado, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera del almacén, como las variables que no son de almacén, los archivos, los modelos de otros almacenes u otras extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los controladores de eventos de almacenamiento se ejecutan después del final de la transacción en la que se produjo el evento de desencadenamiento. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia de las reglas de almacenamiento, los eventos de almacén son más útiles para actualizar los valores que están fuera del almacén. A diferencia de los eventos de .NET, los controladores de eventos de almacén se registran para escuchar una clase: no es necesario registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes maneras de controlar los cambios, consulte [responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md).
 
- The graphical surface and other user interface controls are examples of external resources that can be handled by store events.
+ La superficie gráfica y otros controles de interfaz de usuario son ejemplos de recursos externos que los eventos de almacenamiento pueden controlar.
 
-### <a name="to-define-a-store-event"></a>To define a store event
+### <a name="to-define-a-store-event"></a>Para definir un evento de almacén
 
-1. Choose the type of event that you want to monitor. For a full list, look at the properties of <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Each property corresponds to a type of event. The most frequently used event types are:
+1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad corresponde a un tipo de evento. Los tipos de evento que se usan con más frecuencia son:
 
-   - `ElementAdded` – triggered when a model element, relationship link, shape or connector is created.
+   - `ElementAdded`: se desencadena cuando se crea un elemento de modelo, un vínculo de relación, una forma o un conector.
 
-   - ElementPropertyChanged – triggered when the value of a `Normal` domain property is changed. The event is triggered only if the new and old values are not equal. The event cannot be applied to calculated and custom storage properties.
+   - ElementPropertyChanged: se desencadena cuando cambia el valor de una propiedad de dominio `Normal`. El evento se desencadena solo si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.
 
-        It cannot be applied to the role properties that correspond to relationship links. Instead, use `ElementAdded` to monitor the domain relationship.
+        No se puede aplicar a las propiedades de rol que corresponden a los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.
 
-   - `ElementDeleted` – triggered after a model element, relationship, shape or connector has been deleted. You can still access the property values of the element, but it will have no relationships to other elements.
+   - `ElementDeleted`: se desencadena después de que se haya eliminado un elemento de modelo, una relación, una forma o un conector. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.
 
-2. Add a partial class definition for _YourDsl_**DocData** in a separate code file in the **DslPackage** project.
+2. Agregue una definición de clase parcial para _sudsl_**en un archivo de código** independiente del proyecto **DslPackage** .
 
-3. Write the code of the event as a method, as in the following example. It can be `static`, unless you want to access `DocData`.
+3. Escriba el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.
 
-4. Override `OnDocumentLoaded()` to register the handler. If you have more than one handler, you can register them all in the same place.
+4. Invalide `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, puede registrarlos todos en el mismo lugar.
 
-   The location of the registration code is not critical. `DocView.LoadView()` is an alternative location.
+   La ubicación del código de registro no es crítica. `DocView.LoadView()` es una ubicación alternativa.
 
 ```
 using System;
@@ -93,12 +93,12 @@ namespace Company.MusicLib
 
 ```
 
-## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Using Events to Make Undoable Adjustments in the Store
- Store events are not normally used for propagating changes inside the store, because the event handler executes after the transaction is committed. Instead, you would use a store rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Uso de eventos para realizar ajustes que se puedan deshacer en el almacén
+ Normalmente, los eventos de almacén no se usan para propagar los cambios dentro del almacén, ya que el controlador de eventos se ejecuta después de confirmar la transacción. En su lugar, usaría una regla de almacén. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
- However, you could use an event handler to make additional updates to the store, if you want the user to be able to undo the additional updates separately from the original event. For example, suppose that lower case characters are the usual convention for album titles. You could write a store event handler that corrects the title to lower case after the user has typed it in upper case. But the user could use the Undo command to cancel your correction, restoring the upper case characters. A second Undo would remove the user’s change.
+ Sin embargo, puede usar un controlador de eventos para realizar actualizaciones adicionales en el almacén, si desea que el usuario pueda deshacer las actualizaciones adicionales por separado del evento original. Por ejemplo, supongamos que los caracteres en minúsculas son la Convención habitual de los títulos de álbumes. Podría escribir un controlador de eventos de almacén que corrija el título a minúsculas después de que el usuario lo hubiera escrito en mayúsculas. Pero el usuario podría usar el comando Deshacer para cancelar la corrección y restaurar los caracteres en mayúsculas. Una segunda operación de deshacer quitaría el cambio del usuario.
 
- By contrast, if you wrote a store rule to do the same thing, the user’s change and your correction would be in the same transaction, so that the user could not undo the adjustment without losing the original change.
+ Por el contrario, si ha escrito una regla de almacén para hacer lo mismo, el cambio del usuario y la corrección estarán en la misma transacción, por lo que el usuario no pudo deshacer el ajuste sin perder el cambio original.
 
 ```
 
@@ -164,27 +164,27 @@ private static void AlbumTitleAdjuster(object sender,
 
 ```
 
- If you write an event that updates the store:
+ Si escribe un evento que actualiza el almacén:
 
-- Use `store.InUndoRedoOrRollback` to avoid making changes to model elements in Undo. The transaction manager will set everything in the store back to its original state.
+- Utilice `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la operación de deshacer. El administrador de transacciones volverá a establecer todo en el almacén en su estado original.
 
-- Use `store.InSerializationTransaction` to avoid making changes while the model is being loaded from file.
+- Use `store.InSerializationTransaction` para evitar realizar cambios mientras el modelo se carga desde el archivo.
 
-- Your changes will cause further events to be triggered. Make sure that you avoid an infinite loop.
+- Los cambios provocarán que se desencadenen otros eventos. Asegúrese de evitar un bucle infinito.
 
-## <a name="store-event-types"></a>Store Event types
- Each event type corresponds to a collection in Store.EventManagerDirectory. You can add or remove event handlers at any time, but it is usual to add them when the document is loaded.
+## <a name="store-event-types"></a>Almacenar tipos de eventos
+ Cada tipo de evento corresponde a una colección en Store. EventManagerDirectory. Puede Agregar o quitar controladores de eventos en cualquier momento, pero es habitual agregarlos cuando se carga el documento.
 
-|`EventManagerDirectory` Property name|Executed when|
+|`EventManagerDirectory` nombre de propiedad|Se ejecuta cuando|
 |-------------------------------------------|-------------------|
-|ElementAdded|An instance of a domain class, domain relationship, shape, connector or diagram is created.|
-|ElementDeleted|A model element has been removed from the store’s element directory and is no longer the source or target of any relationship. The element is not actually deleted from memory, but is retained in case of a future Undo.|
-|ElementEventsBegun|Invoked at the end of an outer transaction.|
-|ElementEventsEnded|Invoked when all other events have been processed.|
-|ElementMoved|A model element has been moved from one store partition to another.<br /><br /> This is not related to the location of a shape on the diagram.|
-|ElementPropertyChanged|The value of a domain property has changed. This is executed only if the old and new values are unequal.|
-|RolePlayerChanged|One of the two roles (ends) of a relationship references a new element.|
-|RolePlayerOrderChanged|In a role with multiplicity greater than 1, the sequence of links has changed.|
+|ElementAdded|Se crea una instancia de una clase de dominio, relación de dominio, forma, conector o diagrama.|
+|ElementDeleted|Un elemento de modelo se ha quitado del directorio de elementos del almacén y ya no es el origen ni el destino de ninguna relación. En realidad, el elemento no se elimina de la memoria, sino que se conserva en el caso de una operación de deshacer futura.|
+|ElementEventsBegun|Se invoca al final de una transacción externa.|
+|ElementEventsEnded|Se invoca cuando se han procesado todos los demás eventos.|
+|ElementMoved|Un elemento de modelo se ha pasado de una partición de almacén a otra.<br /><br /> Esto no está relacionado con la ubicación de una forma en el diagrama.|
+|ElementPropertyChanged|El valor de una propiedad de dominio ha cambiado. Solo se ejecuta si los valores antiguos y nuevos no son iguales.|
+|RolePlayerChanged|Uno de los dos roles (extremos) de una relación hace referencia a un nuevo elemento.|
+|RolePlayerOrderChanged|En un rol con una multiplicidad mayor que 1, la secuencia de vínculos ha cambiado.|
 |TransactionBeginning||
 |TransactionCommitted||
 |TransactionRolledBack||

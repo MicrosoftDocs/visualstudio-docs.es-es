@@ -1,5 +1,5 @@
 ---
-title: Annotating Function Parameters and Return Values | Microsoft Docs
+title: Anotar parámetros de función y valores devueltos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -136,76 +136,76 @@ ms.locfileid: "74295859"
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This article describes typical uses of annotations for simple function parameters—scalars, and pointers to structures and classes—and most kinds of buffers.  This article also shows common usage patterns for annotations. For additional annotations that are related to functions, see [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)  
+En este artículo se describen los usos habituales de las anotaciones para parámetros de funciones simples, escalares y punteros a estructuras y clases, y la mayoría de los tipos de búferes.  En este artículo también se muestran patrones de uso comunes para las anotaciones. Para obtener más anotaciones relacionadas con las funciones, consulte [anotar el comportamiento](../code-quality/annotating-function-behavior.md) de la función  
   
-## <a name="pointer-parameters"></a>Pointer Parameters  
- For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null.  This applies to pointers and to any data item that's pointed to.  
+## <a name="pointer-parameters"></a>Parámetros de puntero  
+ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámetro de puntero, el analizador informa de un error si el puntero es NULL.  Esto se aplica a los punteros y a cualquier elemento de datos al que se señale.  
   
- **Annotations and Descriptions**  
+ **Anotaciones y descripciones**  
   
 - `_In_`  
   
-     Annotates input parameters that are scalars, structures, pointers to structures and the like.  Explicitly may be used on simple scalars.  The parameter must be valid in pre-state and will not be modified.  
+     Anota los parámetros de entrada que son escalares, estructuras, punteros a estructuras y similares.  Se puede usar explícitamente en escalares simples.  El parámetro debe ser válido en el estado anterior y no se modificará.  
   
 - `_Out_`  
   
-     Annotates output parameters that are scalars, structures, pointers to structures and the like.  Do not apply this to an object that cannot return a value—for example, a scalar that's passed by value.  The parameter does not have to be valid in pre-state but must be valid in post-state.  
+     Anota los parámetros de salida que son escalares, estructuras, punteros a estructuras y similares.  No se aplica a un objeto que no puede devolver un valor, por ejemplo, un valor escalar que se pasa por valor.  No es necesario que el parámetro sea válido en el estado anterior, pero debe ser válido en post-State.  
   
 - `_Inout_`  
   
-     Annotates a parameter that will be changed by the function.  It must be valid in both pre-state and post-state, but is assumed to have different values before and after the call. Must apply to a modifiable value.  
+     Anota un parámetro que la función va a cambiar.  Debe ser válido en el estado anterior y posterior, pero se supone que tiene valores distintos antes y después de la llamada. Debe aplicarse a un valor modificable.  
   
 - `_In_z_`  
   
-     A pointer to a null-terminated string that's used as input.  The string must be valid in pre-state.  Variants of `PSTR`, which already have the correct annotations, are preferred.  
+     Puntero a una cadena terminada en null que se usa como entrada.  La cadena debe ser válida en el estado anterior.  Se prefieren las variantes de `PSTR`, que ya tienen las anotaciones correctas.  
   
 - `_Inout_z_`  
   
-     A pointer to a null-terminated character array that will be modified.  It must be valid before and after the call, but the value is assumed to have changed.  The null terminator may be moved, but only the elements up to the original null terminator may be accessed.  
+     Puntero a una matriz de caracteres terminada en null que se va a modificar.  Debe ser válido antes y después de la llamada, pero se supone que el valor ha cambiado.  Se puede moverse el terminador null, pero solo se puede tener acceso a los elementos hasta el terminador null original.  
   
 - `_In_reads_(s)`  
   
      `_In_reads_bytes_(s)`  
   
-     A pointer to an array, which is read by the function.  The array is of size `s` elements, all of which must be valid.  
+     Puntero a una matriz, que es leída por la función.  La matriz tiene un tamaño `s` elementos, todos ellos deben ser válidos.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_In_reads_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  
+     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  
   
 - `_In_reads_or_z_(s)`  
   
-     A pointer to an array that is null-terminated or has a known size, or both. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  (Used for the `strn` family.)  
+     Puntero a una matriz terminada en null o tiene un tamaño conocido, o ambos. Los elementos hasta el terminador null (o `s` si no hay ningún terminador nulo) deben ser válidos en el estado anterior.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  (Se usa para la familia de `strn`).  
   
 - `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
-     A pointer to an array of `s` elements (resp. bytes) that will be written by the function.  The array elements do not have to be valid in pre-state, and the number of elements that are valid in post-state is unspecified.  If there are annotations on the parameter type, they are applied in post-state. Por ejemplo, considere el fragmento de código siguiente:  
+     Puntero a una matriz de `s` elementos (resp. bytes) que escribirá la función.  Los elementos de la matriz no tienen que ser válidos en el estado anterior y el número de elementos que son válidos en post-State no está especificado.  Si hay anotaciones en el tipo de parámetro, se aplican en el estado posterior. Por ejemplo, considere el fragmento de código siguiente:  
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In this example, the caller provides a buffer of `size` elements for `p1`.  `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state.  In this way, the number of valid elements is still well-defined, but a specific element count is not required.  
+     En este ejemplo, el autor de la llamada proporciona un búfer de `size` elementos para `p1`.  `MyStringCopy` hace que algunos de esos elementos sean válidos. Lo que es más importante, la anotación `_Null_terminated_` en `PWSTR` significa que `p1` termina en null en el estado post.  De esta manera, el número de elementos válidos sigue siendo bien definido, pero no se requiere un recuento específico de elementos.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_Out_writes_z_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up through the null terminator—which must be present—must be valid.  If the size is known in bytes, scale `s` by the element size.  
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En el estado posterior, los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos.  Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  
   
 - `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
-     A pointer to an array, which is both read and written to in the function.  It is of size `s` elements, and valid in pre-state and post-state.  
+     Puntero a una matriz, que se lee y se escribe en la función.  Es de tamaño `s` elementos y válido en estado anterior y posterior.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos en el estado anterior y posterior.  Se supone que el valor de post-State es diferente del valor en el estado anterior; Esto incluye la ubicación del terminador null. Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -215,11 +215,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el elemento `c`-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  Por ejemplo:  
+     En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado posterior.  Por ejemplo:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -227,13 +227,13 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     Puntero a una matriz, que es leída y escrita por la función.  Es de tamaño `s` elementos, todos ellos deben ser válidos en el estado anterior y los elementos `c` deben ser válidos en post-State.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Puntero a una matriz terminada en NULL y tiene un tamaño conocido. Los elementos hasta el terminador nulo (que debe estar presente) deben ser válidos en el estado anterior y posterior.  Se supone que el valor de post-State es diferente del valor en el estado anterior; Esto incluye la ubicación del terminador null. Si el tamaño se conoce en bytes, la escala `s` por el tamaño del elemento.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -243,11 +243,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el elemento `c`-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  Por ejemplo:  
+     En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado posterior.  Por ejemplo:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -255,72 +255,72 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     Puntero a una matriz, que es leída y escrita por la función.  Es de tamaño `s` elementos, todos ellos deben ser válidos en el estado anterior y los elementos `c` deben ser válidos en post-State.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_Inout_updates_all_(s)`  
   
      `_Inout_updates_bytes_all_(s)`  
   
-     A pointer to an array, which is both read and written by the function of size `s` elements. Defined as equivalent to:  
+     Puntero a una matriz, que es leída y escrita por la función de size `s` elementos. Definido como equivalente a:  
   
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.  
+     En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado anterior y posterior.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     La variante `_bytes_` proporciona el tamaño en bytes en lugar de los elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas usarían el `_bytes_` Variant solo si se tratara de una función similar que use `wchar_t`.  
   
 - `_In_reads_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     Un puntero a una matriz para la que la expresión `p` – `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.  
   
 - `_In_reads_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     Un puntero a una matriz terminada en null para la que la expresión `p` – `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.  
   
 - `_Out_writes_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     Un puntero a una matriz para la que la expresión `p` – `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.  
   
 - `_Out_writes_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     Un puntero a una matriz terminada en null para la que la expresión `p` – `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.  
   
-## <a name="optional-pointer-parameters"></a>Optional Pointer Parameters  
- When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation performs the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:  
+## <a name="optional-pointer-parameters"></a>Parámetros de puntero opcionales  
+ Cuando una anotación de parámetro de puntero incluye `_opt_`, indica que el parámetro puede ser null. De lo contrario, la anotación realiza la misma forma que la versión que no incluye `_opt_`. Esta es una lista de las variantes `_opt_` de las anotaciones de parámetros de puntero:  
   
 ||||  
 |-|-|-|  
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|  
   
-## <a name="output-pointer-parameters"></a>Output Pointer Parameters  
- Output pointer parameters require special notation to disambiguate null-ness on the parameter and the pointed-to location.  
+## <a name="output-pointer-parameters"></a>Parámetros de puntero de salida  
+ Los parámetros de puntero de salida requieren una notación especial para eliminar la ambigüedad nula en el parámetro y la ubicación señalada.  
   
- **Annotations and Descriptions**  
+ **Anotaciones y descripciones**  
   
 - `_Outptr_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location cannot be null and must be valid.  
+   El parámetro no puede ser NULL y en el estado posterior la ubicación señalada no puede ser NULL y debe ser válida.  
   
 - `_Outptr_opt_`  
   
-   Parameter may be null, but in the post-state the pointed-to location cannot be null and must be valid.  
+   El parámetro puede ser null, pero en el estado posterior la ubicación señalada no puede ser NULL y debe ser válida.  
   
 - `_Outptr_result_maybenull_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location can be null.  
+   El parámetro no puede ser NULL y en el estado posterior la ubicación señalada puede ser null.  
   
 - `_Outptr_opt_result_maybenull_`  
   
-   Parameter may be null, and in the post-state the pointed-to location can be null.  
+   El parámetro puede ser NULL y en el estado posterior la ubicación señalada puede ser null.  
   
-  In the following table, additional substrings are inserted into the annotation name to further qualify the meaning of the annotation.  The various substrings are `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, and `_to_`.  
+  En la tabla siguiente, se insertan subcadenas adicionales en el nombre de la anotación para calificar más el significado de la anotación.  Las diversas subcadenas son `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`y `_to_`.  
   
 > [!IMPORTANT]
-> If the interface that you are annotating is COM, use the COM form of these annotations. Do not use the COM annotations with any other type interface.  
+> Si la interfaz que va a anotar es COM, utilice el formulario COM de estas anotaciones. No use las anotaciones COM con ninguna otra interfaz de tipo.  
   
- **Annotations and Descriptions**  
+ **Anotaciones y descripciones**  
   
 - `_Outptr_result_z_`  
   
@@ -330,7 +330,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Ouptr_opt_result_maybenull_z_`  
   
-   The returned pointer has the `_Null_terminated_` annotation.  
+   El puntero devuelto tiene la `_Null_terminated_` anotación.  
   
 - `_COM_Outptr_`  
   
@@ -340,7 +340,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_COM_Outptr_opt_result_maybenull_`  
   
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.  
+   El puntero devuelto tiene semántica de COM y, por consiguiente, lleva una `_On_failure_` condición posterior de que el puntero devuelto sea NULL.  
   
 - `_Outptr_result_buffer_(s)`  
   
@@ -350,7 +350,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_(s)`  
   
-   The returned pointer points to a valid buffer of size `s` elements or bytes.  
+   El puntero devuelto apunta a un búfer válido de tamaño `s` elementos o bytes.  
   
 - `_Outptr_result_buffer_to_(s, c)`  
   
@@ -360,102 +360,102 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-   The returned pointer points to a buffer of size `s` elements or bytes, of which the first `c` are valid.  
+   El puntero devuelto apunta a un búfer de tamaño `s` elementos o bytes, de los cuales los primeros `c` son válidos.  
   
-  Certain interface conventions presume that output parameters are nullified on failure.  Except for explicitly COM code, the forms in the following table are preferred.  For COM code, use the corresponding COM forms that are listed in the previous section.  
+  Ciertas convenciones de interfaz suponen que los parámetros de salida se anulan en caso de error.  A excepción del código COM explícito, se prefieren los formularios de la tabla siguiente.  En el caso de código COM, use los formularios COM correspondientes que se enumeran en la sección anterior.  
   
-  **Annotations and Descriptions**  
+  **Anotaciones y descripciones**  
   
 - `_Result_nullonfailure_`  
   
-   Modifies other annotations. The result is set to null if the function fails.  
+   Modifica otras anotaciones. El resultado se establece en NULL si se produce un error en la función.  
   
 - `_Result_zeroonfailure_`  
   
-   Modifies other annotations. The result is set to zero if the function fails.  
+   Modifica otras anotaciones. El resultado se establece en cero si se produce un error en la función.  
   
 - `_Outptr_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a non-optional parameter.  
+   El puntero devuelto apunta a un búfer válido si la función se ejecuta correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro no opcional.  
   
 - `_Outptr_opt_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for an optional parameter.  
+   El puntero devuelto apunta a un búfer válido si la función se ejecuta correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro opcional.  
   
 - `_Outref_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a reference parameter.  
+   El puntero devuelto apunta a un búfer válido si la función se ejecuta correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro de referencia.  
   
-## <a name="output-reference-parameters"></a>Output Reference Parameters  
- A common use of the reference parameter is for output parameters.  For simple output reference parameters—for example, `int&`—`_Out_` provides the correct semantics.  However, when the output value is a pointer—for example `int *&`—the equivalent pointer annotations like `_Outptr_ int **` don’t provide the correct semantics.  To concisely express the semantics of output reference parameters for pointer types, use these composite annotations:  
+## <a name="output-reference-parameters"></a>Parámetros de referencia de salida  
+ Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples, por ejemplo, `int&`,`_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:  
   
- **Annotations and Descriptions**  
+ **Anotaciones y descripciones**  
   
 - `_Outref_`  
   
-     Result must be valid in post-state and cannot be null.  
+     El resultado debe ser válido en post-State y no puede ser null.  
   
 - `_Outref_result_maybenull_`  
   
-     Result must be valid in post-state, but may be null in post-state.  
+     El resultado debe ser válido en post-State, pero puede ser null en post-State.  
   
 - `_Outref_result_buffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` elements.  
+     El resultado debe ser válido en post-State y no puede ser null. Señala a un búfer válido de tamaño `s` elementos.  
   
 - `_Outref_result_bytebuffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` bytes.  
+     El resultado debe ser válido en post-State y no puede ser null. Apunta a un búfer válido de tamaño `s` bytes.  
   
 - `_Outref_result_buffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` elements, of which the first `c` are valid.  
+     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de `s` elementos, de los cuales los primeros `c` son válidos.  
   
 - `_Outref_result_bytebuffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` bytes of which the first `c` are valid.  
+     El resultado debe ser válido en post-State y no puede ser null. Apunta al búfer de `s` bytes de los que son válidos los primeros `c`.  
   
 - `_Outref_result_buffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` valid elements.  
+     El resultado debe ser válido en post-State y no puede ser null. Apunta a un búfer válido de tamaño `s` elementos válidos.  
   
 - `_Outref_result_bytebuffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of `s` bytes of valid elements.  
+     El resultado debe ser válido en post-State y no puede ser null. Señala a un búfer válido de `s` bytes de elementos válidos.  
   
 - `_Outref_result_buffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` elements.  
+     El resultado debe ser válido en post-State, pero puede ser null en post-State. Señala a un búfer válido de tamaño `s` elementos.  
   
 - `_Outref_result_bytebuffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` bytes.  
+     El resultado debe ser válido en post-State, pero puede ser null en post-State. Apunta a un búfer válido de tamaño `s` bytes.  
   
 - `_Outref_result_buffer_to_maybenull_(s, c)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to buffer of `s` elements, of which the first `c` are valid.  
+     El resultado debe ser válido en post-State, pero puede ser null en post-State. Apunta al búfer de `s` elementos, de los cuales los primeros `c` son válidos.  
   
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to buffer of `s` bytes of which the first `c` are valid.  
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta al búfer de `s` bytes de los que son válidos los primeros `c`.  
   
 - `_Outref_result_buffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of size `s` valid elements.  
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Apunta a un búfer válido de tamaño `s` elementos válidos.  
   
 - `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of `s` bytes of valid elements.  
+     El resultado debe ser válido en post-State, pero puede ser null en post State. Señala a un búfer válido de `s` bytes de elementos válidos.  
   
 ## <a name="return-values"></a>Valores devueltos  
- The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result.  For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.  
+ El valor devuelto de una función es similar a un parámetro `_Out_` pero está en un nivel diferente de desreferenciado, y no tiene que tener en cuenta el concepto de puntero al resultado.  En el caso de las anotaciones siguientes, el valor devuelto es el objeto anotado: un escalar, un puntero a una estructura o un puntero a un búfer. Estas anotaciones tienen la misma semántica que la anotación de `_Out_` correspondiente.  
   
 |||  
 |-|-|  
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|  
   
-## <a name="other-common-annotations"></a>Other Common Annotations  
- **Annotations and Descriptions**  
+## <a name="other-common-annotations"></a>Otras anotaciones comunes  
+ **Anotaciones y descripciones**  
   
 - `_In_range_(low, hi)`  
   
@@ -471,36 +471,36 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Field_range_(low, hi)`  
   
-     The parameter, field, or result is in the range (inclusive) from `low` to `hi`.  Equivalent to `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     El parámetro, el campo o el resultado está en el intervalo (inclusivo) de `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que se aplica al objeto anotado junto con las condiciones apropiadas de estado previo o posterior.  
   
     > [!IMPORTANT]
-    > Although the names contain "in" and "out", the semantics of `_In_` and `_Out_` do **not** apply to these annotations.  
+    > Aunque los nombres contienen "in" y "out", la semántica de `_In_` y `_Out_` **no** se aplican a estas anotaciones.  
   
 - `_Pre_equal_to_(expr)`  
   
      `_Post_equal_to_(expr)`  
   
-     The annotated value is exactly `expr`.  Equivalent to `_Satisfies_(_Curr_ == expr)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     El valor anotado es exactamente `expr`.  Equivalente a `_Satisfies_(_Curr_ == expr)` que se aplica al objeto anotado junto con las condiciones apropiadas de estado previo o posterior.  
   
 - `_Struct_size_bytes_(size)`  
   
-     Applies to a struct or class declaration.  Indicates that a valid object of that type may be larger than the declared type, with the number of bytes being given by `size`.  Por ejemplo:  
+     Se aplica a una declaración de clase o struct.  Indica que un objeto válido de ese tipo puede ser mayor que el tipo declarado, con el número de bytes que proporciona `size`.  Por ejemplo:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
-     The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:  
+     El tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se toma entonces como:  
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog del equipo de análisis de código](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
 ## <a name="see-also"></a>Vea también  
- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Understanding SAL](../code-quality/understanding-sal.md)   
- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)   
- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+ [Uso de anotaciones sal para reducir defectos deC++ C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Descripción de SAL](../code-quality/understanding-sal.md)   
+ [Anotar el comportamiento](../code-quality/annotating-function-behavior.md) de la función   
+ [Anotar Structs y clases](../code-quality/annotating-structs-and-classes.md)   
+ [Anotar el comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)   
+ [Especificar Cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Funciones intrínsecas](../code-quality/intrinsic-functions.md)   
  [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)

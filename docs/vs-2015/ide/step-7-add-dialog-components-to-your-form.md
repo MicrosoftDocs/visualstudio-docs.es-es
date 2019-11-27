@@ -23,7 +23,7 @@ Para que el programa abra archivos de imagen y para elegir un color de fondo, en
 
  En algunos sentidos, un componente es como un control. El Cuadro de herramientas se usa para agregar un componente al formulario, y las propiedades se establecen mediante la ventana **Propiedades**. Sin embargo, a diferencia de un control, al agregar un componente al formulario no se agrega un elemento visible que el usuario puede ver. En cambio, se proporcionan determinados comportamientos que se pueden desencadenar mediante código. Un componente es lo que abre un cuadro de diálogo **Abrir archivo**.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 3](https://go.microsoft.com/fwlink/?LinkId=205213) or [Tutorial 1: Create a Picture Viewer in C# - Video 3](https://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 3 o el](https://go.microsoft.com/fwlink/?LinkId=205213) [tutorial 1: C# crear un visor de imágenes en-vídeo 3](https://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-dialog-components-to-your-form"></a>Para agregar componentes de cuadro de diálogo al formulario
 
@@ -32,9 +32,9 @@ Para que el programa abra archivos de imagen y para elegir un color de fondo, en
     > [!NOTE]
     > El grupo **Cuadros de diálogo** del Cuadro de herramientas tiene componentes que abren automáticamente muchos cuadros de diálogo de gran utilidad y que se pueden usar para abrir y guardar archivos, examinar carpetas y elegir fuentes o colores. En este proyecto se usan dos componentes de cuadro de diálogo: **OpenFileDialog** y **ColorDialog**.
 
-2. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el Cuadro de herramientas. (You use that one in the next tutorial step.) You should see an area at the bottom of Windows Forms Designer (beneath the Picture Viewer form) that has an icon for each of the two dialog components that you added, as shown in the following picture.
+2. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el Cuadro de herramientas. (Se usa en el siguiente paso del tutorial). Debería ver un área en la parte inferior de Diseñador de Windows Forms (bajo el formulario del visor de imágenes) que tiene un icono para cada uno de los dos componentes de cuadro de diálogo que agregó, tal como se muestra en la siguiente imagen.
 
-     ![Dialog components](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Dialog components
+     ![Componentes de cuadro de diálogo](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Componentes de cuadro de diálogo
 
 3. Elija el icono **openFileDialog1** del área de la parte inferior del Diseñador de Windows Forms. Establezca dos propiedades:
 

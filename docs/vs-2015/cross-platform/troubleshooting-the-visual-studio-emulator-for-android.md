@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Emulator for Android | Microsoft Docs
+title: Solución de problemas del emulador para Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -23,7 +23,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!WARNING]
 > Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
- En este tema se incluyen las siguientes secciones.
+ Este tema contiene las siguientes secciones.
 
 - [Antes de empezar](#BeforeYouStart)
 
@@ -47,7 +47,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 - [No se puede conectar el depurador a un proyecto Xamarin](#Skylake)
 
-- [El emulador no puede ejecutar la aplicación que usa Google Play Services](#GooglePlay)
+- [El emulador no puede ejecutar la aplicación que usa los servicios de Google Play](#GooglePlay)
 
 - [La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona](#DragAndDrop)
 
@@ -221,13 +221,13 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      - Programador de paquetes QoS
 
-     - Compartir impresoras y archivos para redes Microsoft
+     - Uso compartido de archivos e impresoras para redes de Microsoft
 
      - Controlador de protocolo LLDP de Microsoft
 
-     - Controlador de E/S del asignador de detección de topologías de nivel de vínculo
+     - Controlador de E/S del asignador de topología de nivel de vínculo
 
-     - Respondedor de detección de topologías de nivel de vínculo
+     - Respondedor de detección de topología de nivel de vínculo
 
      - Protocolo de Internet versión 6 (TCP/IPv6)
 
@@ -293,7 +293,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 6. Reinicie el servicio (en **Acciones**) e inténtelo de nuevo.
 
-## <a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services
+## <a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa los servicios de Google Play
  El emulador no se distribuye con las bibliotecas de los servicios de Google Play. Sin embargo, el emulador no admite la instalación de archivos zip con memoria Flash mediante arrastrar y soltar.
 
 ## <a name="DragAndDrop"></a> La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona

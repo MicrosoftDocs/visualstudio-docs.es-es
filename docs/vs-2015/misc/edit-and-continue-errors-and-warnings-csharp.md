@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue Errors and Warnings (C#) | Microsoft Docs
+title: Errores y advertencias de editar y continuarC#() | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -81,7 +81,7 @@ Ha realizado una edición en una sección de código que no se permite en Editar
   
 1. En el menú **Depurar** , elija **Deshacer** para deshacer el cambio.  
   
-     o bien  
+     O bien,  
   
 2. Detenga la sesión de depuración, realice las tareas de edición e inicie una nueva sesión de depuración.  
   

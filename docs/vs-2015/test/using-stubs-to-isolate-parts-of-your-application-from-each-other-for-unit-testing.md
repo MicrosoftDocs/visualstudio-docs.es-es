@@ -15,10 +15,10 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301391"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso de códigos auxiliares para aislar entre sí las partes de la aplicación y realizar pruebas unitarias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los tipos de código auxiliar** son una de las dos tecnologías que el marco Microsoft Fakes proporciona para permitir aislar fácilmente un componente que se está probando desde otros componentes a los que llama. El código auxiliar es un fragmento de código que ocupa el lugar de otro componente durante las pruebas. La ventaja de utilizar código auxiliar es que devuelve resultados coherentes, haciendo que la prueba sea más fácil de escribir. Y se pueden ejecutar pruebas aun cuando los otros componentes no estén funcionando todavía.
+Los tipos de código auxiliar** son una de las dos tecnologías que el marco Microsoft Fakes proporciona para permitir aislar fácilmente un componente que se está probando desde otros componentes a los que llama. Un código auxiliar es un pequeño fragmento de código que sustituye a otro componente durante las pruebas. La ventaja de usar un código auxiliar es que devuelve resultados coherentes, por lo que resulta más fácil escribir las pruebas. Y se pueden ejecutar pruebas aun cuando los otros componentes no estén funcionando todavía.
 
  Para obtener una visión general y una guía de inicio rápido de Fakes, vea [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -26,7 +26,7 @@ Los tipos de código auxiliar** son una de las dos tecnologías que el marco Mic
 
  En el diagrama, el componente StockAnalyzer es el que deseamos probar. Utiliza normalmente otro componente, RealStockFeed. Pero RealStockFeed devuelve resultados diferentes cada vez que se llama a sus métodos, lo que hace que sea difícil probar StockAnalyzer.  Durante la prueba, se reemplaza con otra clase, StubStockFeed.
 
- ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Las clases real y de código auxiliar se ajustan a una interfaz.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como System.dll, utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
@@ -471,7 +471,7 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Guía
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vea también

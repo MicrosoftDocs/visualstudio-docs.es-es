@@ -23,11 +23,11 @@ ms.locfileid: "74300053"
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Promedio de conjuntos de trabajo en bytes para el proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0503|  
-|Category|Resource Monitoring|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. El contador del espacio de trabajo del proceso mide el uso de memoria física que hace el proceso del que está generando perfiles. El valor notificado es el promedio calculado de todos los intervalos de medición.|  
-|Rule type|Information|  
+Identificador de regla | DA0503 |  
+| Categoría | Supervisión de recursos |  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Esta información se recopiló solo como información. El contador del espacio de trabajo del proceso mide el uso de memoria física que hace el proceso del que está generando perfiles. El valor notificado es el promedio calculado de todos los intervalos de medición.|  
+| Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   

@@ -16,7 +16,7 @@ ms.locfileid: "74299768"
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tema le dirige a material de información general que le ayudará a comprender el desarrollo aplicaciones móviles multiplataforma con Xamarin. Si aún no tiene instalado Visual Studio y Xamarin, inicie primero el proceso [Configuración e instalación](../cross-platform/setup-and-install.md) y, después, regrese aquí para trabajar con estos recursos mientras se ejecutan los instaladores.  
+Este tema le dirige a material de información general que le ayudará a comprender el desarrollo aplicaciones móviles multiplataforma con Xamarin. Si aún no tiene instalado Visual Studio y Xamarin, inicie primero el proceso [Setup and install](../cross-platform/setup-and-install.md) y, después, regrese aquí para trabajar con estos recursos mientras se ejecutan los instaladores.  
   
 > [!NOTE]
 > A menos que se indique lo contrario, se recomienda leer inicialmente solo aquellas páginas vinculadas directamente aquí y no página subsidiarias. Si el proceso de instalación sigue ejecutándose después de completar esta lista, puede volver atrás y explorar otros temas.  
@@ -39,7 +39,7 @@ Este tema le dirige a material de información general que le ayudará a compren
   
   A continuación se ilustran estas relaciones y puede obtener información sobre el uso de aplicaciones de iOS en [Introduction to Xamarin.iOS for Visual Studio](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio) (Introducción a Xamarin.iOS con Visual Studio) en xamarin.com.  
   
-  ![The relationship between Windows and Mac dev computers in a Xamarin environment](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![La relación entre los equipos de desarrollo de Windows y Mac en un entorno de Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Conceptos básicos: cómo se estructuran los proyectos  
  *10-30 minutos*  
@@ -63,7 +63,7 @@ Este tema le dirige a material de información general que le ayudará a compren
   
 - Use una variedad de funcionalidades de personalización de Xamarin.Forms para ajustar la interfaz de usuario según la plataforma. Se incluyen la API OnPlatform que puede usarse tanto desde código como desde XAML, la creación de una vista personalizada, la extensión de un representador existente y la creación de un representador personalizado.  
   
-- Si es necesario, use Xamarin Native para compilar pantallas que usen características de interfaz de usuario únicas de cada plataforma; por ejemplo, una pantalla que use la captura de cámara y la manipulación de imágenes nativas.  
+- Si es necesario, utilice Xamarin Native para compilar pantallas que utilicen características de interfaz de usuario únicas de cada plataforma; por ejemplo, una pantalla que use la captura de cámara y la manipulación de imágenes nativas.  
   
   Se recomienda que comience siempre a partir de una solución de Xamarin.Forms para configurar el uso compartido del código de la interfaz de usuario entre plataformas y la utilización de las capacidades de personalización para realizar ajustes específicos de la plataforma. En los casos en que necesite pantallas completamente específicas de la plataforma, puede agregarlas individualmente con Xamarin Native.  
   

@@ -1,5 +1,5 @@
 ---
-title: Use models in your development process | Microsoft Docs
+title: Usar modelos en el proceso de desarrollo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -21,20 +21,20 @@ ms.locfileid: "74298255"
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos. See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
+En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos. Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="how-to-use-models"></a>Cómo usar modelos
  Los modelos pueden ayudarle de varias maneras:
 
-- Dibujar diagramas de modelado le ayuda a clarificar los conceptos implicados en los requisitos, la arquitectura y el diseño de alto nivel. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
+- Dibujar diagramas de modelado le ayuda a clarificar los conceptos implicados en los requisitos, la arquitectura y el diseño de alto nivel. Para obtener más información, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
 - Trabajar con modelos puede servirle de ayuda para poner de manifiesto las incoherencias que pudiera haber en los requisitos.
 
-- La comunicación con modelos le permite transmitir conceptos importantes con una ambigüedad menor que la del lenguaje natural. For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
+- La comunicación con modelos le permite transmitir conceptos importantes con una ambigüedad menor que la del lenguaje natural. Para obtener más información, vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).
 
-- A veces puede usar modelos para generar código u otros artefactos como documentos o esquemas de base de datos. Por ejemplo, los componentes de modelado de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] se generan a partir de un modelo.  For more information, see [Generate and configure your app from models](../modeling/generate-and-configure-your-app-from-models.md).
+- A veces puede usar modelos para generar código u otros artefactos como documentos o esquemas de base de datos. Por ejemplo, los componentes de modelado de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] se generan a partir de un modelo.  Para obtener más información, vea [generar y configurar la aplicación a partir de modelos](../modeling/generate-and-configure-your-app-from-models.md).
 
   Puede usar modelos en una gran variedad de procesos, desde los extremadamente ágiles hasta los muy elaborados.
 
@@ -45,7 +45,7 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 
  Si el proyecto es grande y participan equipos que se encuentran en distintas partes del mundo, puede usar modelos que le ayuden a transmitir los requisitos y la arquitectura de forma más eficaz que a través de un documento de texto sin formato.
 
- En ambos casos, la creación de un modelo casi siempre reduce significativamente las incoherencias y las ambigüedades. Los participantes en el proyecto a menudo tienen concepciones distintas del mundo empresarial en el que trabaja el sistema y los desarrolladores suelen tener ideas distintas sobre el funcionamiento del sistema. Cuando se usa un modelo como eje central de una conversación, suelen salir a la luz estas diferencias. For more information about how to use a model to reduce inconsistencies, see [Model user requirements](../modeling/model-user-requirements.md).
+ En ambos casos, la creación de un modelo casi siempre reduce significativamente las incoherencias y las ambigüedades. Los participantes en el proyecto a menudo tienen concepciones distintas del mundo empresarial en el que trabaja el sistema y los desarrolladores suelen tener ideas distintas sobre el funcionamiento del sistema. Cuando se usa un modelo como eje central de una conversación, suelen salir a la luz estas diferencias. Para obtener más información sobre cómo usar un modelo para reducir las incoherencias, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Usar modelos con otros artefactos
  Un modelo no constituye por sí mismo una arquitectura ni una especificación de requisitos. Es una herramienta que permite expresar algunos aspectos de estos elementos con mayor claridad, pero no se pueden expresar todos los conceptos que se requieren durante el diseño de software. Los modelos, por tanto, deben usarse con otros medios de comunicación, como páginas o párrafos de OneNote, documentos de Microsoft Office, elementos de trabajo de [!INCLUDE[esprfound](../includes/esprfound-md.md)] o notas adhesivas en la pared de la sala del proyecto. A excepción de este último, todos estos tipos de objetos pueden vincularse a elementos del modelo.
@@ -93,20 +93,20 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 - Con un poco de ayuda por su parte, el personal no técnico que participa en el proyecto no tendrá problemas para comprender los diagramas de UML.
 
 #### <a name="link-model-to-work-items"></a>Vincular el modelo a elementos de trabajo
- Después del taller de requisitos, elabore los detalles del modelo de requisitos y vincule el modelo a las tareas de desarrollo. Para ello, vincule los elementos de trabajo de [!INCLUDE[esprfound](../includes/esprfound-md.md)] a los elementos del modelo. To learn how to do this, see [Link model elements and work items](../modeling/link-model-elements-and-work-items.md).
+ Después del taller de requisitos, elabore los detalles del modelo de requisitos y vincule el modelo a las tareas de desarrollo. Para ello, vincule los elementos de trabajo de [!INCLUDE[esprfound](../includes/esprfound-md.md)] a los elementos del modelo. Para obtener información sobre cómo hacerlo, vea [vincular elementos de modelo y elementos de trabajo](../modeling/link-model-elements-and-work-items.md).
 
  Puede vincular cualquier elemento a los elementos de trabajo, pero los elementos más útiles son estos:
 
 - Casos de uso. Puede vincular un caso de uso a las tareas de desarrollo que lo van a implementar.
 
-- Extensiones de casos de uso. Si solo se va a implementar un aspecto de un caso de uso en una iteración, puede separarlo en un caso de uso base junto con una o varias extensiones. Las extensiones son casos de uso vinculados al caso base con la relación “extender”. For more information about use case extension, see [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md).
+- Extensiones de casos de uso. Si solo se va a implementar un aspecto de un caso de uso en una iteración, puede separarlo en un caso de uso base junto con una o varias extensiones. Las extensiones son casos de uso vinculados al caso base con la relación “extender”. Para obtener más información sobre la extensión de casos de uso, vea [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md).
 
-- Comentarios en los que se describan reglas de negocio o requisitos de calidad de servicio. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
+- Comentarios en los que se describan reglas de negocio o requisitos de calidad de servicio. Para obtener más información, vea [requisitos de usuario de modelo](../modeling/model-user-requirements.md).
 
 #### <a name="link-model-to-tests"></a>Vincular el modelo a las pruebas
  Use el modelo de requisitos para dirigir el diseño de las pruebas de aceptación. Cree estas pruebas al mismo tiempo que el trabajo de desarrollo.
 
- To learn more about this technique, see [Develop tests from a model](../modeling/develop-tests-from-a-model.md).
+ Para obtener más información sobre esta técnica, vea [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md).
 
 #### <a name="estimate-remaining-work"></a>Calcular el trabajo restante
  Un modelo de requisitos puede ayudar a calcular el tamaño total del proyecto frente al tamaño de cada iteración. Evaluar el número y la complejidad de los casos de uso y las clases puede ayudar a calcular el trabajo de desarrollo que será necesario. Después de completar las primeras iteraciones, una comparación de los requisitos cubiertos y de los requisitos que quedan por cubrir puede proporcionar una idea aproximada del costo y el ámbito del resto del proyecto.
@@ -116,26 +116,26 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 ## <a name="levels-of-abstraction"></a>Niveles de abstracción
  El nivel de abstracción de los modelos varía en función del software. Los modelos más concretos representan directamente el código del programa y los modelos más abstractos representan conceptos del negocio que pueden o no estar representados en el código.
 
- Un modelo puede verse a través de distintos tipos de diagramas. For information about models and diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
+ Un modelo puede verse a través de distintos tipos de diagramas. Para obtener información sobre los modelos y los diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
 
  Los distintos tipos de diagramas resultan útiles para describir el diseño con diferentes niveles de abstracción. Muchos de los tipos de diagramas resultan útiles para varios niveles. En esta tabla se muestra cómo puede usar cada tipo de diagrama.
 
 |Nivel de diseño|Tipos de diagramas|
 |------------------|-------------------|
-|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-   Activity diagrams describe the flow of work between people and systems to achieve business goals.<br />-   Conceptual class diagrams describe the business concepts used within the business process.|
-|Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-   Use case diagrams summarize the interactions that the users and other external systems have with the system that you are developing. Puede adjuntar otros documentos a cada caso de uso para describirlo en detalle.<br />-   UML class diagrams describe the types of information that the users and system communicate about.<br />-   Business rules and quality of service requirements can be described in separate documents.|
-|Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|-   Layer Diagrams describe how the system is structured into interdependent parts. Puede validar el código del programa con los diagramas de capas para asegurarse de que respetan la arquitectura.<br />-   Component diagrams show the interfaces of the parts, specifying the messages and services that are provided and required by each component.<br />-   Sequence diagrams show how the components communicate to implement each use case.<br />-   UML class diagrams describe the interfaces of the components and the types of data passed between the components.|
-|Modelos de diseño<br /><br /> Convenciones y métodos para problemas de diseño que se usan en todos los elementos del diseño.|-   UML class diagrams describe the structures of a pattern<br />-   Sequence or activity diagrams show the interactions and algorithms|
-|Análisis de código<br /><br /> Se pueden generar varios tipos de diagrama a partir del código.|-   Sequence diagrams show the interaction between objects in the code.<br />-   Layer diagrams show the dependencies between classes. El código actualizado se puede validar con un diagrama de capas.<br />-   Class diagrams show the classes in the code.|
+|Proceso empresarial<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de actividades describen el flujo de trabajo entre las personas y los sistemas para lograr los objetivos empresariales.<br />-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
+|Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Los diagramas de casos de uso resumen las interacciones que los usuarios y otros sistemas externos tienen con el sistema que está desarrollando. Puede adjuntar otros documentos a cada caso de uso para describirlo en detalle.<br />-Los diagramas de clases de UML describen los tipos de información sobre los que los usuarios y el sistema se comunican.<br />-Las reglas de negocios y los requisitos de calidad de servicio se pueden describir en documentos independientes.|
+|Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|: Los diagramas de capas describen cómo se estructura el sistema en partes interdependientes. Puede validar el código del programa con los diagramas de capas para asegurarse de que respetan la arquitectura.<br />-Los diagramas de componentes muestran las interfaces de los elementos, especificando los mensajes y servicios que cada componente proporciona y requiere.<br />-Los diagramas de secuencia muestran cómo se comunican los componentes para implementar cada caso de uso.<br />-Los diagramas de clases de UML describen las interfaces de los componentes y los tipos de datos que se pasan entre los componentes.|
+|Modelos de diseño<br /><br /> Convenciones y métodos para problemas de diseño que se usan en todos los elementos del diseño.|-Los diagramas de clases de UML describen las estructuras de un patrón<br />-Los diagramas de secuencia o de actividades muestran las interacciones y los algoritmos|
+|Análisis de código<br /><br /> Se pueden generar varios tipos de diagrama a partir del código.|-Los diagramas de secuencia muestran la interacción entre los objetos del código.<br />: Los diagramas de capas muestran las dependencias entre las clases. El código actualizado se puede validar con un diagrama de capas.<br />-Los diagramas de clases muestran las clases del código.|
 
 ## <a name="external-resources"></a>Recursos externos
 
 |**Categoría**|**Links**|
 |------------------|---------------|
-|**Vídeos**|![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML with Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [vídeos de procedimientos de MSDN: Cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![vínculo al canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [sobre la serie de procedimientos de MSDN: extensibilidad y herramientas UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Orientación para las herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Vea también
- [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Develop tests from a model](../modeling/develop-tests-from-a-model.md) [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)
+ [Usar modelos en desarrollo ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [crear modelos para los](../modeling/create-models-for-your-app.md) [requisitos de usuario del modelo](../modeling/model-user-requirements.md) de aplicación [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [desarrollar pruebas a partir de una](../modeling/develop-tests-from-a-model.md) estructura de modelo de [la solución de modelado](../modeling/structure-your-modeling-solution.md)

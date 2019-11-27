@@ -1,5 +1,5 @@
 ---
-title: Define and install a modeling extension | Microsoft Docs
+title: Definir e instalar una extensión de modelado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -42,7 +42,7 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para crear un proyecto de biblioteca de clases para los comandos de menú, los controladores de gestos o la validación
 
-1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
 2. En **Plantillas instaladas**, seleccione **Visual C#** o **Visual Basic**y, a continuación, elija **Biblioteca de clases**.
 
@@ -74,10 +74,10 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
         |||
         |-|-|
-        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
-        |**Source** =|**A project in current solution**|
-        |**Project** =|*Your class library project*|
-        |**Embed in this folder** =|*(empty)*|
+        |**Escribir** =|**Microsoft. VisualStudio. MefComponent**|
+        |**Source** =|**Proyecto en la solución actual**|
+        | = del **proyecto**|*Su proyecto de biblioteca de clases*|
+        |**Inserte en esta carpeta** =|*vacía*|
 
          Para otros tipos de componentes, vea los vínculos de la sección siguiente.
 
@@ -109,14 +109,14 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
 3. Si usó **Iniciar sin depurar** pero desea utilizar el depurador, vuelva a la instancia principal de Visual Studio. En el menú **Depurar** , haga clic en **Asociar al proceso**. En el cuadro de diálogo, seleccione la instancia experimental de Visual Studio, que tiene el nombre de programa **devenv**.
 
-## <a name="Installing"></a> Installing and uninstalling an extension
+## <a name="Installing"></a>Instalación y desinstalación de una extensión
  Realice los pasos siguientes para ejecutar la extensión en la instancia principal de Visual Studio en su propio equipo o en otros equipos.
 
 1. En el equipo, busque el archivo **.vsix** que el proyecto de extensión compiló.
 
     1. En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Abrir carpeta en el Explorador de Windows**.
 
-    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
+    2. Busque el archivo **bin\\\*\\** _YourProject_ **. vsix**
 
 2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.
 
@@ -136,9 +136,9 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
 3. Seleccione la extensión y, a continuación, haga clic **Desinstalar**.
 
-   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
+   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de la siguiente ubicación en la que *% LocalAppData%* suele\\ser el nombre de *usuario* *\AppData\Local:*
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[versión] \Extensions**
 
 ## <a name="see-also"></a>Vea también
- [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md) [definir un elemento del cuadro de herramientas de modelado personalizado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

@@ -26,7 +26,7 @@ Del mismo modo que [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=5250
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Visual Studio 2015 with the [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2015 con el [Microsoft Azure SDK para .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Cuenta de Microsoft Azure: si todavía no tiene ninguna cuenta, puede [registrarse para una evaluación gratuita](https://go.microsoft.com/fwlink/?LinkId=623901) o [activar las ventajas de suscriptor de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Isolated Shell | Microsoft Docs
+title: Shell aislado de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -24,44 +24,44 @@ ms.locfileid: "74299721"
 # <a name="visual-studio-isolated-shell"></a>Shell aislado de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The Visual Studio isolated shell allows you to create stand-alone applications that can run side-by-side with other versions of Visual Studio. It is used primarily to host specialized tools that can use Visual Studio services but also have a customized appearance and branding. Visual Studio features and menu command groups can be easily turned on and off. Application titles, application icons, and splash screens are fully customizable. For a list of customizable features, see [Customizing the Isolated Shell](../extensibility/customizing-the-isolated-shell.md).  
+El shell aislado de Visual Studio permite crear aplicaciones independientes que se pueden ejecutar en paralelo con otras versiones de Visual Studio. Se usa principalmente para hospedar herramientas especializadas que pueden usar los servicios de Visual Studio, pero que también tienen una apariencia y una marca personalizadas. Las características de Visual Studio y los grupos de comandos de menú se pueden activar y desactivar fácilmente. Los títulos de las aplicaciones, los iconos de la aplicación y las pantallas de presentación son totalmente personalizables. Para obtener una lista de características personalizables, vea [personalizar el shell aislado](../extensibility/customizing-the-isolated-shell.md).  
   
- To work with an isolated shell project, you must install the Visual Studio SDK. Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Para trabajar con un proyecto de Shell aislado, debe instalar el SDK de Visual Studio. A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- To create an isolated shell application, start with a Visual Studio Shell Isolated project. This project contains everything that you need to develop and test your own isolated shell application. When you are ready to write the setup program that deploys your application, you must get the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022).  
-  
-> [!NOTE]
-> Before you can access the isolated shell redistributable package, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
+ Para crear una aplicación de Shell aislado, empiece con un proyecto aislado de Visual Studio Shell. Este proyecto contiene todo lo que necesita para desarrollar y probar su propia aplicación de Shell aislado. Cuando esté listo para escribir el programa de instalación que implementa la aplicación, debe obtener el paquete redistribuible de Shell aislado de [Microsoft Visual Studio Shell (aislado) paquete redistribuible](https://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
-> For more information about how to deploy an isolated shell-based application, see [Walkthrough: Creating a Basic Isolated Shell Application](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Antes de poder acceder al paquete redistribuible de Shell aislado, se le pedirá que rellene una breve encuesta de clientes.  Después de rellenar la encuesta, se le dirigirá a una página de Visual Studio Connect con vínculos de descarga de paquetes redistribuibles.  Puede encontrar los vínculos de descarga en visitas posteriores al sitio de Visual Studio Connect en la **pestaña &#124; programas integrados y Shell aislado de Visual Studio 2015** .  
   
-## <a name="working-with-the-isolated-shell"></a>Working with the isolated shell  
- A Visual Studio isolated shell application has full access to Visual Studio services and supports special customization and branding. There are several ways you can customize an isolated shell application:  
+> [!NOTE]
+> Para obtener más información sobre cómo implementar una aplicación basada en Shell aislado, vea [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
-- You can use VSPackages and Managed Extensibility Framework (MEF) component parts to extend an isolated shell application just as you would use them in any other Visual Studio extension. For more information, see [Extending the Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
+## <a name="working-with-the-isolated-shell"></a>Trabajar con el shell aislado  
+ Una aplicación de Shell aislado de Visual Studio tiene acceso completo a los servicios de Visual Studio y admite personalización y personalización de marca especiales. Hay varias maneras de personalizar una aplicación de Shell aislado:  
   
-- To make Visual Studio features and menu command groups available or unavailable, update the .vsct file in the user interface (UI) project of the application.  
+- Puede usar fragmentos de componentes de VSPackages y Managed Extensibility Framework (MEF) para extender una aplicación de Shell aislado de la misma manera que usaría en cualquier otra extensión de Visual Studio. Para obtener más información, vea [extender el shell aislado](../extensibility/extending-the-isolated-shell.md).  
   
-- To remove **Options** pages or other Visual Studio shell components from the application, update the .pkgundef file of the application.  
+- Para que las características de Visual Studio y los grupos de comandos de menú estén disponibles o no disponibles, actualice el archivo. Vsct en el proyecto de la interfaz de usuario (UI) de la aplicación.  
   
-- To modify other aspects of the appearance or behavior of the shell, update the .pkgdef file of the application.  
+- Para quitar las páginas de **Opciones** u otros componentes de Visual Studio Shell de la aplicación, actualice el archivo. pkgundef de la aplicación.  
   
-- Some aspects of the shell can also be specified when the application is started. To do this, update the parameters in the call to the Start entry point of the appenvstub.dll.  
+- Para modificar otros aspectos de la apariencia o el comportamiento del shell, actualice el archivo. pkgdef de la aplicación.  
   
-  For more information about the different elements that you can customize, see [Elements of the Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
+- Algunos aspectos del shell también se pueden especificar cuando se inicia la aplicación. Para ello, actualice los parámetros en la llamada al punto de entrada de inicio de appenvstub. dll.  
   
-## <a name="standard-features-of-the-isolated-shell"></a>Standard Features of the Isolated Shell  
- The following features are standard to all editions of Visual Studio.  
+  Para obtener más información sobre los distintos elementos que se pueden personalizar, vea [elementos del shell aislado](../extensibility/elements-of-the-isolated-shell.md).  
+  
+## <a name="standard-features-of-the-isolated-shell"></a>Características estándar del shell aislado  
+ Las siguientes características son estándar para todas las ediciones de Visual Studio.  
   
 |Categoría de característica|Característica|  
 |----------------------|-------------|  
-|IDE Features|Import/Export Settings<br /><br /> Toolbox Control Installer<br /><br /> Task List & Error List<br /><br /> Resultados (Ventana)<br /><br /> Página de inicio<br /><br /> Propiedades (ventana)<br /><br /> Cuadro de herramientas<br /><br /> Explorador de soluciones<br /><br /> Marcador (Ventana)<br /><br /> Vista de clases<br /><br /> Examinador de objetos<br /><br /> Ventana Comandos<br /><br /> Esquema del documento<br /><br /> Resource View<br /><br /> External Tool<br /><br /> Windows Communication Foundation (WCF) Add Service Reference<br /><br /> Language Integrated Query (LINQ) Support|  
-|Editor/Designer|Code browsing tools (unified find, source definition, inheritance)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Administrador de fragmentos de código<br /><br /> Fragmentos de código<br /><br /> Refactoring<br /><br /> Pretty listing<br /><br /> IntelliSense Filtering<br /><br /> Definición de código (Ventana)<br /><br /> Diseñador de aplicaciones<br /><br /> Diseñador de Windows Forms<br /><br /> Windows Presentation Foundation (WPF) Designer|  
-|Depuración|C# Expression Evaluator<br /><br /> Local debugging<br /><br /> Managed debugging<br /><br /> Editar y continuar<br /><br /> Cross-thread debugging<br /><br /> Visualizations<br /><br /> Información sobre datos<br /><br /> Native debugging<br /><br /> Script debugging<br /><br /> Interop debugging<br /><br /> Just-in-time (JIT) debugging<br /><br /> Multi-process debugging<br /><br /> Depuración de XSLT<br /><br /> Attach to local process<br /><br /> Puntos de seguimiento<br /><br /> Breakpoint Constraints|  
-|Datos|Server Explorer (Simplified - Data Only)<br /><br /> Data bind to local data (.MDF or .MDB)<br /><br /> Data bind to object<br /><br /> Data bind to Web service<br /><br /> Full set of data controls<br /><br /> Editor XML<br /><br /> Data bind to local database server<br /><br /> Ventana de orígenes de datos|  
-|Web|Editor de HTML<br /><br /> Explorador web<br /><br /> Diseñador de formularios Web Forms<br /><br /> Web Site Project<br /><br /> Web Application Project|  
-|Extensibilidad|Consumes VSPackages and MEF components|  
+|Características del IDE|Importar o exportar configuraciones<br /><br /> Instalador de controles del cuadro de herramientas<br /><br /> Lista de tareas & Lista de errores<br /><br /> Resultados (ventana)<br /><br /> Página de inicio<br /><br /> Ventana Propiedades<br /><br /> Cuadro de herramientas<br /><br /> Explorador de soluciones<br /><br /> Marcador (Ventana)<br /><br /> Vista de clases<br /><br /> Explorador de objetos<br /><br /> Ventana Comandos<br /><br /> Esquema del documento<br /><br /> Vista de recursos<br /><br /> Herramienta externa<br /><br /> Windows Communication Foundation (WCF) Agregar referencia de servicio<br /><br /> Compatibilidad con Language Integrated Query (LINQ)|  
+|Editor/Diseñador|Herramientas de exploración de código (búsqueda unificada, definición de origen, herencia)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Administrador de fragmentos de código<br /><br /> Fragmentos de código<br /><br /> Refactorización<br /><br /> Lista descriptiva<br /><br /> Filtrado de IntelliSense<br /><br /> Definición de código (Ventana)<br /><br /> Diseñador de aplicaciones<br /><br /> Diseñador de Windows Forms<br /><br /> Diseñador de Windows Presentation Foundation (WPF)|  
+|Depuración|C#Evaluador de expresiones<br /><br /> Depuración local<br /><br /> Depuración administrada<br /><br /> Editar y continuar<br /><br /> Depuración entre subprocesos<br /><br /> Visualizaciones<br /><br /> Información sobre datos<br /><br /> Depuración nativa<br /><br /> Depuración de scripts<br /><br /> Depuración de interoperabilidad<br /><br /> Depuración Just-in-Time (JIT)<br /><br /> Depuración de varios procesos<br /><br /> Depuración de XSLT<br /><br /> Asociar al proceso local<br /><br /> Puntos de seguimiento<br /><br /> Restricciones de punto de interrupción|  
+|Datos|Explorador de servidores (solo datos simplificados)<br /><br /> Enlazar datos a datos locales (. MDF o. MDB<br /><br /> Enlazar datos a objeto<br /><br /> Enlazar datos al servicio Web<br /><br /> Conjunto completo de controles de datos<br /><br /> Editor XML<br /><br /> Enlazar datos a un servidor de base de datos local<br /><br /> Ventana de orígenes de datos|  
+|Web|Editor HTML<br /><br /> Explorador web<br /><br /> Diseñador de formularios Web Forms<br /><br /> Proyecto de sitio web<br /><br /> Proyecto de aplicación Web|  
+|Extensibilidad|Consume los componentes VSPackages y MEF|  
   
 ## <a name="see-also"></a>Vea también  
  [Shell (aislado o integrado)](../extensibility/shell-isolated-or-integrated.md)

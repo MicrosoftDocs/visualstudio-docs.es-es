@@ -38,7 +38,7 @@ Visual C++ para el desarrollo móvil multiplataforma](https://go.microsoft.com/f
   
   Existen algunos requisitos adicionales para la compilación de aplicaciones para plataformas de dispositivo específicas:  
   
-- Los emuladores de Windows Phone y el emulador de Microsoft Visual Studio para Android requieren un equipo que pueda ejecutar Hyper-V. Debe habilitarse la característica de Hyper-V en Windows antes de poder instalar y ejecutar los emuladores. Para obtener más información, vea los [requisitos del sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)del emulador.  
+- Los emuladores de Windows Phone y el emulador de Microsoft Visual Studio para Android requieren un equipo que pueda ejecutar Hyper-V. Debe habilitarse la característica de Hyper-V en Windows antes de poder instalar y ejecutar los emuladores. Para más información, vea los [requisitos del sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) del emulador.  
   
 - Los emuladores de Android x86 que vienen con el SDK de Android funcionan mejor en equipos que pueden ejecutar el controlador HAXM de Intel. Este controlador requiere un procesador Intel x64 compatible con VT-x y Execute Disable Bit. Para obtener más información, vea [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
@@ -62,7 +62,7 @@ Visual C++ para el desarrollo móvil multiplataforma](https://go.microsoft.com/f
   
 2. En Seleccionar características, expanda **Desarrollo móvil multiplataforma** y seleccione **Desarrollo móvil de Visual C++** .  
   
-     ![Select Visual C&#43;&#43; Mobile Development](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Seleccionar desarrollo móvil&#43; &#43; de Visual C](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
      De forma predeterminada, cuando se selecciona **Desarrollo móvil de Visual C++** , la opción **Lenguajes de programación** se establece para instalar **Visual C++** y las opciones **Kits de desarrollo de software y herramientas comunes** se establecen para instalar los componentes de terceros necesarios. Puede elegir componentes adicionales si los necesita. De forma predeterminada, también se selecciona el **Emulador de Microsoft Visual Studio para Android**. Los componentes que ya están instalados aparecen inactivos en la lista.  
   
@@ -134,5 +134,5 @@ Visual C++ para el desarrollo móvil multiplataforma](https://go.microsoft.com/f
 4. Elija **Aceptar** para guardar las ubicaciones de carpeta de la herramienta personalizada.  
   
 ## <a name="see-also"></a>Vea también  
- [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Desarrollo móvil multiplataforma de Visual Studio C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

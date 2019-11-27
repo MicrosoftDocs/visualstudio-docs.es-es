@@ -1,5 +1,5 @@
 ---
-title: 'Error: The web server is not configured correctly | Microsoft Docs'
+title: 'Error: el servidor Web no está configurado correctamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

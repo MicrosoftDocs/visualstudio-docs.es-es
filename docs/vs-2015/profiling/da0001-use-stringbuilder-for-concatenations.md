@@ -24,15 +24,15 @@ ms.locfileid: "74295960"
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizar StringBuilder para las concatenaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [DA0001: Use StringBuilder for concatenations](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Para obtener la documentación más reciente sobre Visual Studio, vea [DA0001: Use StringBuilder para las concatenaciones](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
-|Identificador de regla|DA0001|  
+|Id. de regla|DA0001|  
 |Categoría|Uso de .NET Framework|  
 |Métodos de generación de perfiles|Muestreo<br /><br /> Instrumentación|  
 |Mensaje|Considere la posibilidad de utilizar StringBuilder para concatenaciones de cadena|  
-|Tipo de mensaje|Advertencia|  
+|Tipo de mensaje|advertencia|  
   
 ## <a name="cause"></a>Motivo  
  Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas de varios segmentos.  

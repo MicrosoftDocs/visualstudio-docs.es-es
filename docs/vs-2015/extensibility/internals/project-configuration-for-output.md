@@ -1,5 +1,5 @@
 ---
-title: Project Configuration for Output | Microsoft Docs
+title: Configuración del proyecto para la salida | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -20,34 +20,34 @@ ms.locfileid: "74300673"
 # <a name="project-configuration-for-output"></a>Configuración del proyecto para la salida
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Every configuration can support a set of build processes that produce output items such as executable or resource files. These output items are private to the user and can be placed in groups that link related types of output such as executable files (.exe, .dll, .lib) and source files (.idl, .h files).  
+Cada configuración puede admitir un conjunto de procesos de compilación que producen elementos de salida, como archivos ejecutables o de recursos. Estos elementos de salida son privados para el usuario y se pueden colocar en grupos que vinculan tipos de salida relacionados, como archivos ejecutables (. exe,. dll,. lib) y archivos de código fuente (archivos. idl,. h).  
   
- Output items can be made available through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> methods and enumerated with the <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> methods. When you want to group output items, your project should also implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interface.  
+ Los elementos de salida se pueden poner a disposición a través de los métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> y enumerados con los métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>. Si desea agrupar los elementos de salida, el proyecto también debe implementar la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>.  
   
- The construct developed by implementing `IVsOutputGroup` allows projects to group outputs according to usage. For instance, a DLL might be grouped with its program database (PDB).  
+ La construcción desarrollada al implementar `IVsOutputGroup` permite a los proyectos agrupar las salidas según el uso. Por ejemplo, un archivo DLL se puede agrupar con su base de datos de programa (PDB).  
   
 > [!NOTE]
-> A PDB file contains debugging information and it is created when 'Generate Debug Info' option is specified when building the .dll or .exe. The .pdb file is usually generated for Debug project configuration only.  
+> Un archivo PDB contiene información de depuración y se crea cuando se especifica la opción "generar información de depuración" al compilar el archivo. dll o. exe. El archivo. pdb se genera normalmente solo para la configuración del proyecto de depuración.  
   
- The project must return the same number of groups for each configuration that it supports, even though the number of outputs contained within a group may vary from configuration to configuration. For example, the project Matt's DLL might include mattd.dll and mattd.pdb in Debug configuration, but only include matt.dll in Retail configuration.  
+ El proyecto debe devolver el mismo número de grupos para cada configuración que admita, aunque el número de salidas contenidas dentro de un grupo puede variar de una configuración a una configuración. Por ejemplo, la DLL del proyecto Matt puede incluir mattd. dll y matted. pdb en la configuración de depuración, pero solo incluye Matt. dll en configuración de venta directa.  
   
- The groups also have the same identifier information, such as canonical name, display name, and group information, from configuration to configuration within a project. This consistency allows deployment and packaging to continue to operate even if configurations change.  
+ Los grupos también tienen la misma información de identificador, como el nombre canónico, el nombre para mostrar y la información de grupo, de la configuración de en un proyecto. Esta coherencia permite que la implementación y el empaquetado sigan funcionando incluso si cambian las configuraciones.  
   
- Groups can also have a key output that allows packaging shortcuts to point to something meaningful. Any group might be empty in a given configuration, so no assumptions should be made about the size of a group. The size (number of outputs) of each group in any configuration can be different from the size of another group in the same configuration. It can also be different from the size of the same group in another configuration.  
+ Los grupos también pueden tener una salida de clave que permita que los accesos directos de empaquetado señalen a algo significativo. Cualquier grupo podría estar vacío en una configuración determinada, por lo que no se debe realizar ninguna suposición sobre el tamaño de un grupo. El tamaño (número de salidas) de cada grupo en cualquier configuración puede ser diferente del tamaño de otro grupo en la misma configuración. También puede ser diferente del tamaño del mismo grupo en otra configuración.  
   
- ![Output Groups graphic](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![Gráfico de grupos de resultados](../../extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Grupos de resultados  
   
- The primary use of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interface is to provide access to build, deploy and debug management objects and allow projects the freedom to group outputs. For more information on the use of this interface, see [Project Configuration Object](../../extensibility/internals/project-configuration-object.md).  
+ El uso principal de la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> es proporcionar acceso a los objetos de administración de compilación, implementación y depuración, y permite a los proyectos la libertad de agrupar las salidas. Para obtener más información sobre el uso de esta interfaz, consulte [objeto de configuración del proyecto](../../extensibility/internals/project-configuration-object.md).  
   
- In the previous diagram, Group Built has a key output across configurations (either bD.exe or b.exe) so the user can create a shortcut to Built and know that the shortcut will work regardless of the configuration deployed. Group Source does not have a key output, so the user cannot create a shortcut to it. If the Debug Group Built has a key output, but the Retail Group Built does not, that would be an incorrect implementation. It follows, then, that if any configuration has a group that contains no outputs, and, as a result, no key file, then other configurations with that group that do contain outputs cannot have key files. The installer editors assume that canonical names and display names of groups, plus the existence of a key file, do not change based in configurations.  
+ En el diagrama anterior, el grupo compilado tiene una salida de clave en las configuraciones (ya sea bD. exe o b. exe) para que el usuario pueda crear un acceso directo a compilado y sepa que el acceso directo funcionará independientemente de la configuración implementada. El origen del grupo no tiene una salida de clave, por lo que el usuario no puede crear un acceso directo a él. Si el grupo de depuración compilado tiene una salida de clave, pero el grupo comercial compilado no es una implementación incorrecta. Después, que si alguna configuración tiene un grupo que no contiene salidas y, como resultado, ningún archivo de clave, otras configuraciones con ese grupo que contengan salidas no podrán tener archivos de clave. Los editores del instalador suponen que los nombres canónicos y los nombres para mostrar de los grupos, además de la existencia de un archivo de clave, no cambian en función de las configuraciones.  
   
- Note that if a project has an `IVsOutputGroup` that it does not want to package or deploy, it is sufficient to not put that output in a group. The output can still be enumerated normally by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> method that returns all of a configuration's outputs regardless of grouping.  
+ Tenga en cuenta que si un proyecto tiene una `IVsOutputGroup` que no desea empaquetar o implementar, es suficiente no incluir esa salida en un grupo. La salida todavía se puede enumerar normalmente implementando el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> que devuelve todas las salidas de configuración independientemente de la agrupación.  
   
- For more information, see the implementation of `IVsOutputGroup` in the Custom Project sample at [MPF for Projects](https://archive.codeplex.com/?p=mpfproj12).  
+ Para obtener más información, vea la implementación de `IVsOutputGroup` en el ejemplo de proyecto personalizado en [MPF para proyectos de](https://archive.codeplex.com/?p=mpfproj12).  
   
 ## <a name="see-also"></a>Vea también  
- [Managing Configuration Options](../../extensibility/internals/managing-configuration-options.md)   
- [Project Configuration for Building](../../extensibility/internals/project-configuration-for-building.md)   
- [Project Configuration Object](../../extensibility/internals/project-configuration-object.md)   
+ [Administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md)   
+ [Configuración del proyecto para Compilar](../../extensibility/internals/project-configuration-for-building.md)   
+ [Objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md)   
  [Configuración de soluciones](../../extensibility/internals/solution-configuration.md)

@@ -68,7 +68,7 @@ En esta sección, aprenderá a instalar Visual Studio Tools para Unity y a confi
   
  De lo contrario, si no está familiarizado con Unity, empiece poco a poco con un tutorial básico. Visite la página Unity Learn, donde podrá acceder a tutoriales con ejemplos de proyectos para empezar y lecciones para aprender a crear su propio juego con Unity. La página Unity Learn tiene tutoriales fáciles de seguir para diversos juegos.  
   
- [Tutoriales: Página de aprendizaje de Unity](https://learn.unity.com/tutorials)  
+ [Tutoriales: página de aprendizaje de Unity](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Configure el Editor de Unity para que utilice Visual Studio Tools para Unity  
  Para habilitar el proyecto para usar Visual Studio Tools para Unity, simplemente establezca Visual Studio como su editor de script externo. En el Editor de Unity, en el menú principal, elija **Editar, Preferencias**; a continuación, en el cuadro de diálogo **Preferencias de Unity** , elija **Herramientas externas**. A continuación, establezca la propiedad **External Script Editor** a la versión de Visual Studio que desea usar (Visual Studio Tools para Unity debe estar instalado para esta versión de Visual Studio) y asegúrese de que la propiedad **Editor Attaching** está establecida.  
@@ -77,7 +77,7 @@ En esta sección, aprenderá a instalar Visual Studio Tools para Unity y a confi
   
  Por último, asegúrese de que ha establecido un destino de compilación a través de la página **Configuración de generación** y de que la opción **Depuración de scripts** esté habilitada.  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Establezca la configuración de compilación de Unity para la depuración.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-the-unity-editor"></a>3\. Inicie Visual Studio desde el Editor de Unity  
  A partir de Unity 5.2, el menú de extensión **Visual Studio Tools** ya no es necesario para iniciar Visual Studio o para configurar Visual Studio Tools para Unity. En su lugar, una vez que Visual Studio está configurado como editor de script externo, elija el archivo de script desde el editor de Unity y el código se abrirá en Visual Studio.  
@@ -90,26 +90,26 @@ En esta sección, aprenderá a instalar Visual Studio Tools para Unity y a confi
   
  De lo contrario, si no está familiarizado con Unity, empiece poco a poco con un tutorial básico. Visite la página Unity Learn, donde podrá acceder a tutoriales con ejemplos de proyectos para empezar y lecciones para aprender a crear su propio juego con Unity. La página Unity Learn tiene tutoriales fáciles de seguir para diversos juegos.  
   
- [Tutoriales: Página de aprendizaje de Unity](https://learn.unity.com/tutorials)  
+ [Tutoriales: página de aprendizaje de Unity](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2\. Configure el Editor de Unity para que utilice Visual Studio Tools para Unity  
  Si se va a basar en un proyecto de Unity existente o si no importó unitypackage de Visual Studio Tools cuando creó el proyecto, deberá importar unitypackage ahora. En el menú principal del Editor de Unity elija **Activos, Importar paquete, Visual Studio Tools 2015** (debería ver una opción para la versión de Visual Studio que haya instalado).  
   
- ![Import the VSTU package into your Unity project.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
+ ![Importe el paquete VSTU en el proyecto de Unity.](../cross-platform/media/vstu-configure-unity-import-vstu.png "vstu_configure_unity_import_vstu")  
   
  Por último, asegúrese de que ha establecido un destino de compilación a través de la página **Configuración de generación** y de que la opción **Depuración de scripts** esté habilitada.  
   
- ![Configure the Unity build settings for debugging.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+ ![Establezca la configuración de compilación de Unity para la depuración.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3\. Inicie Visual Studio desde el Editor de Unity  
  El último paso consiste en iniciar Visual Studio desde Unity. Esto crea una solución de Visual Studio para el proyecto y, a continuación, la abre en Visual Studio.  
   
  En el menú principal del Editor de Unity, elija **Visual Studio Tools, Abrir en Visual Studio**.  
   
- ![Open your unity project in Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
+ ![Abra el proyecto de Unity en Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Para obtener información sobre el uso y la depuración de su proyecto Unity en Visual Studio, vea [Using Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
+ Para obtener información sobre el uso y la depuración de su proyecto Unity en Visual Studio, vea [Uso de Visual Studio Tools para Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Página principal de Unity](https://unity.com/)

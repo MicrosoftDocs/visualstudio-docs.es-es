@@ -31,7 +31,7 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
  Después de usar las herramientas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear activos 3D, el paso siguiente consiste en utilizarlos en la aplicación. Pero antes de poder usarlos, los activos tienen que transformarse en un formato que DirectX pueda entender. Para ayudarle a transformar los activos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona personalizaciones de compilación para cada clase de activo que puede generar. Para incluir los activos en la compilación, basta con configurar el proyecto para que use las personalizaciones de compilación, agregar los activos al proyecto y configurar los activos para que usen la personalización de compilación correcta. Después, puede cargar los activos en la aplicación y usarlos creando y rellenando los recursos de DirectX igual que haría en cualquier otra aplicación DirectX.
 
 ## <a name="configuring-your-project"></a>Configurar el proyecto
- Para poder implementar los activos 3D como parte de la compilación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tiene que conocer las clases de activos que se desea implementar. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ya conoce muchos tipos de archivo comunes, pero puesto que solo ciertas clases de aplicaciones utilizan activos 3D, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no supone que un proyecto compilará estas clases de archivos. Puede indicar a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que la aplicación usa estas clases de recursos mediante las *personalizaciones de compilación* (archivos que indican a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cómo procesar los distintos tipos de archivos de una manera útil) proporcionadas para cada tipo de recurso. Como estas personalizaciones se aplican por proyecto, basta con agregar las personalizaciones adecuadas al proyecto.
+ Para poder implementar los activos 3D como parte de la compilación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tiene que conocer las clases de activos que se desea implementar. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ya conoce muchos tipos de archivo comunes, pero dado que solo determinados tipos de aplicaciones utilizan activos 3D, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no supone que un proyecto generará estos tipos de archivos. Puede indicar a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que la aplicación usa estas clases de recursos mediante las *personalizaciones de compilación* (archivos que indican a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cómo procesar los distintos tipos de archivos de una manera útil) proporcionadas para cada tipo de recurso. Como estas personalizaciones se aplican por proyecto, basta con agregar las personalizaciones adecuadas al proyecto.
 
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Para agregar las personalizaciones de compilación al proyecto
 
@@ -67,7 +67,7 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
 
 |Tipo de elemento|Tipos de archivo de código fuente|Formato del archivo de salida|
 |---------------|-----------------------|------------------------|
-|**Canalización de contenido de la imagen**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> DirectDraw Surface (.dds)<br /><br /> Formato de intercambio de gráficos (.gif)<br /><br /> Mapa de bits (.bmp, .dib)<br /><br /> Formato de archivo de imagen etiquetado (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
+|**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics)(.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> DirectDraw Surface (.dds)<br /><br /> Formato de intercambio de gráficos (.gif)<br /><br /> Mapa de bits (.bmp, .dib)<br /><br /> Formato de archivo de imagen etiquetado (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
 |**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk (.fbx)<br /><br /> Archivo DAE de Collada (.dae)<br /><br /> Archivo OBJ de Wavefront (.obj)|Archivo 3D de malla (.cmo)|
 |**Canalización de contenido del sombreador**|Gráfico de sombreador visual (.dgsl)|Resultado del sombreador compilado (.cso)|
 
@@ -87,7 +87,7 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
 ### <a name="image-content-pipeline-configuration"></a>Configuración de la canalización de contenido de imagen
  Cuando se utiliza la herramienta de canalización de contenido de la imagen para compilar un activo de textura, se puede comprimir la textura de varias maneras, indicar si se deben generar niveles de MIP en tiempo de compilación y cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|
@@ -97,14 +97,14 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
 ### <a name="mesh-content-pipeline-configuration"></a>Configuración de la canalización de contenido de mallas
  Cuando se utiliza la herramienta de canalización de contenido de mallas para compilar un activo de malla, se puede cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuración de la canalización de contenido del sombreador
  Cuando se utiliza la herramienta de canalización de contenido del sombreador para compilar un activo de sombreador, se puede cambiar el nombre del archivo de salida.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
@@ -200,7 +200,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|
 |[Cómo: Exportar una textura que tiene alfa premultiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|

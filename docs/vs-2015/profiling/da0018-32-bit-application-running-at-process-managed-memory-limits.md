@@ -23,11 +23,11 @@ ms.locfileid: "74301112"
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0018|  
-|Category|Profiling Tools Usage|  
-|Profiling method|Sampling|  
-|Message|Managed memory allocations approaching the default limit for a 32-bit process. Puede que la aplicación esté enlazada a la memoria.|  
-|Rule type|Warning|  
+Identificador de regla | DA0018 |  
+| Categoría | Uso de Herramientas de generación de perfiles |  
+| Método de generación de perfiles | Muestreo |  
+| Mensaje | Las asignaciones de memoria administrada se aproximan al límite predeterminado para un proceso de 32 bits. Puede que la aplicación esté enlazada a la memoria.|  
+| Tipo de regla | ADVERTENCIA |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
@@ -54,7 +54,7 @@ Rule Id|DA0018|
   
 - optimizar el uso de la aplicación de recursos de memoria administrada  
   
-   o bien  
+   O bien,  
   
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
   

@@ -25,7 +25,7 @@ Al programar aplicaciones que usan Microsoft Azure, debe seguir algunas práctic
 La herramienta de análisis de código de Azure usa la siguientes reglas para marcar automáticamente su código de Azure cuando encuentra problemas conocidos que influyen en el rendimiento. Los problemas detectados aparecen como advertencias o errores del compilador. Con frecuencia, las correcciones de código o sugerencias para resolver la advertencia o el error se proporcionan con un icono de bombilla.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Evite usar el modo de estado de sesión predeterminado (en proceso)
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP0000
 
 ### <a name="description"></a>Descripción
@@ -36,13 +36,13 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 De forma predeterminada, el modo de estado de sesión especificado en el archivo web.config es en proceso. Además, si no hay ninguna entrada especificada en el archivo de configuración, el modo de estado de sesión pasa de forma predeterminada a en proceso. El modo en proceso almacena el estado de sesión en memoria en el servidor web. Cuando se reinicia una instancia o se usa una nueva para el equilibrio de carga o para el soporte contra conmutaciones por error, no se guarda el estado de sesión almacenado en memoria en el servidor web. Esta situación impide que la aplicación sea escalable en la nube.
 
-ASP.NET session state supports several different storage options for session state data: InProc, StateServer, SQLServer, Custom, and Off. Se recomienda usar el modo personalizado para hospedar datos en un almacén de estado de sesión externo, como el [Proveedor de estado de sesión de Azure para Redis](https://go.microsoft.com/fwlink/?LinkId=401521).
+El estado de sesión ASP.NET admite varias opciones de almacenamiento diferentes para los datos de estado de sesión: INPROC, StateServer, SQLServer, personalizado y desactivado. Se recomienda usar el modo personalizado para hospedar datos en un almacén de estado de sesión externo, como el [Proveedor de estado de sesión de Azure para Redis](https://go.microsoft.com/fwlink/?LinkId=401521).
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Una solución recomendada es almacenar el estado de sesión en un servicio de caché administrado. Aprenda a usar el [Proveedor de estado de sesión de Azure para Redis](https://go.microsoft.com/fwlink/?LinkId=401521) para almacenar el estado de sesión. También puede almacenar el estado de sesión en otros lugares para garantizar que su aplicación sea escalable en la nube. Para obtener más información acerca de soluciones alternativas, lea [Modos de estado de sesión](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>El método de ejecución no debe ser asincrónico
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP1000
 
 ### <a name="description"></a>Descripción
@@ -53,7 +53,7 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 Si se llama a métodos asincrónicos desde el método [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , el tiempo de ejecución del servicio en la nube recicla el rol de trabajo. Cuando se inicia un rol de trabajo, toda la ejecución del programa tiene lugar dentro del método [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Cuando se sale del método [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , el rol de trabajo se reinicia. Cuando el tiempo de ejecución del rol de trabajo alcanza el método asincrónico, distribuye todas las operaciones posteriores al método asincrónico y luego regresa. Esto hace que el rol de trabajo salga del método [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) y se reinicie. En la siguiente iteración de la ejecución, el rol de trabajo vuelve a alcanzar el método asincrónico y se reinicia, por lo que el rol de trabajo también se vuelve a reciclar.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Coloque todas las operaciones asincrónicas fuera del método [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Luego, llame al método asincrónico refactorizado desde el método [[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , como RunAsync().wait. La herramienta de análisis de código de Azure puede ayudarle a arreglar este problema.
 
 El siguiente fragmento de código muestra la corrección de código para este problema:
@@ -87,7 +87,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Use la autenticación con firma de acceso compartido de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP2000
 
 ### <a name="description"></a>Descripción
@@ -98,7 +98,7 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 Para mejorar la seguridad, Azure Active Directory está sustituyendo la autenticación ACS por la autenticación SAS. Consulte el blog [Azure Active Directory is the future of ACS](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) (Azure Active Directory es el futuro de ACS) para obtener información sobre el plan de transición.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Use la autenticación SAS en sus aplicaciones. El ejemplo siguiente muestra cómo usar un token SAS para acceder a un espacio de nombres o entidad de Bus de servicio.
 
 ```csharp
@@ -113,7 +113,7 @@ Para más información, consulte los temas siguientes.
 * [Usar la autenticación con firma de acceso compartido con Service Bus](https://msdn.microsoft.com/library/dn205161.aspx)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Considere usar el método OnMessage para evitar un "bucle de recepción"
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP2002
 
 ### <a name="description"></a>Descripción
@@ -128,7 +128,7 @@ La ventaja de usar **OnMessage** en comparación con **Receive** es que los usua
 
 Si llama a **Receive** sin usar su valor predeterminado, asegúrese de que el valor *ServerWaitTime* es superior a un minuto. La configuración de *ServerWaitTime* en un valor superior a un minuto evita que el servidor agote el tiempo de espera antes de que el mensaje se reciba completamente.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Consulte los ejemplos de código siguientes para usos recomendados. Para obtener más detalles, consulte [Método QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) y [Método QueueClient.Receive (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
 
 Para mejorar el rendimiento de la infraestructura de mensajería de Azure, consulte el modelo de diseño [Manual de mensajería asincrónica](https://msdn.microsoft.com/library/dn589781.aspx).
@@ -217,7 +217,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Considere usar los métodos asincrónicos de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP2003
 
 ### <a name="description"></a>Descripción
@@ -228,13 +228,13 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 Usar métodos asincrónicos permite la simultaneidad de programas de aplicación porque ejecutar cada llamada no bloquea el subproceso principal. Cuando se usan los métodos de mensajería de Service Bus, realizar una operación (enviar, recibir, eliminar, etc.) lleva tiempo. Este tiempo incluye el procesamiento de la operación por el servicio Service Bus, además de la latencia de la solicitud y la respuesta. Para aumentar el número de operaciones por tiempo, las operaciones deberán ejecutarse simultáneamente. Para más información, consulte [Prácticas recomendadas para mejorar el rendimiento mediante la mensajería asíncrona de Service Bus](https://msdn.microsoft.com/library/azure/hh528527.aspx).
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Consulte [Clase QueueClient (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) para obtener información sobre cómo usar el método asincrónico recomendado.
 
 Para mejorar el rendimiento de la infraestructura de mensajería de Azure, consulte el modelo de diseño [Manual de mensajería asincrónica](https://msdn.microsoft.com/library/dn589781.aspx).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Considere crear particiones de temas y colas de Service Bus
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP2004
 
 ### <a name="description"></a>Descripción
@@ -245,7 +245,7 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 La partición de temas y colas de Service Bus aumenta el rendimiento y la disponibilidad de servicios porque el rendimiento general de una cola o tema particionado ya no está limitado por el rendimiento de un solo agente de mensajes o almacén de mensajería. Además, una interrupción temporal de un almacén de mensajería no hace que una cola o tema particionado deje de estar disponible. Para obtener más información, consulte [Particionamiento de entidades de mensajería](https://msdn.microsoft.com/library/azure/dn520246.aspx).
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 El fragmento de código siguiente muestra cómo crear particiones de las entidades de mensajería.
 
 ```csharp
@@ -259,7 +259,7 @@ ns.CreateTopic(td);
 Para más información, consulte [Partitioned Service Bus Queues and Topics](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) (Temas y colas de Service Bus con particiones) del blog de Microsoft Azure y consulte el ejemplo de [Microsoft Azure Service Bus Partitioned Queue](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) (Cola con particiones de Microsoft Azure Service Bus).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>No establezca SharedAccessStartTime
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP3001
 
 ### <a name="description"></a>Descripción
@@ -272,7 +272,7 @@ La sincronización de relojes provoca una ligera diferencia de tiempo entre los 
 
 Para obtener instrucciones sobre cómo usar la firma de acceso compartido en Azure Storage, consulte [Introducción a SAS (firma de acceso compartido) de tabla, SAS de fila y actualización a SAS de blob - Blog del equipo de Microsoft Azure Storage - Página principal del sitio - Blogs de MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Quite la instrucción que establece el tiempo de inicio de la directiva de acceso compartido. La herramienta de análisis de código de Azure proporciona una corrección para este problema. Para obtener más información sobre la administración de seguridad, consulte el modelo de diseño [Patrón de clave valet](https://msdn.microsoft.com/library/dn568102.aspx).
 
 El siguiente fragmento de código muestra la corrección de código para este problema.
@@ -291,7 +291,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>El tiempo de expiración de la directiva de acceso compartido debe ser superior a cinco minutos.
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP3002
 
 ### <a name="description"></a>Descripción
@@ -304,7 +304,7 @@ Los centros de datos en diferentes ubicaciones de todo el mundo se sincronizan p
 
 Para obtener más información acerca de cómo usar la firma de acceso compartido en el almacenamiento de Azure, consulte [Introducción a SAS (firma de acceso compartido) de tabla, SAS de fila y actualización a SAS de blob - Blog del equipo de Microsoft Azure Storage - Página principal del sitio - Blogs de MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Para obtener más información sobre la administración de seguridad, consulte el modelo de diseño [Patrón de clave valet](https://msdn.microsoft.com/library/dn568102.aspx).
 
 El siguiente es un ejemplo de no especificar una hora de inicio a la directiva de acceso compartido.
@@ -341,7 +341,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Para obtener más información, consulte [Crear y usar una firma de acceso compartido](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Use CloudConfigurationManager
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP4000
 
 ### <a name="description"></a>Descripción
@@ -350,14 +350,14 @@ El uso de la clase [ConfigurationManager](https://msdn.microsoft.com/library/sys
 Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Motivo
-CloudConfigurationManager lee el archivo de configuración adecuado para el entorno de aplicación.
+CloudConfigurationManager lee el archivo de configuración apropiado para el entorno de aplicación.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Refactorice el código para que use la [Clase CloudConfigurationManager+](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). La herramienta de análisis de código de Azure proporciona una corrección para este problema.
 
-El siguiente fragmento de código muestra la corrección de código para este problema. Reemplazar
+El siguiente fragmento de código muestra la corrección de código para este problema. Cambie
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
@@ -378,7 +378,7 @@ Este es un ejemplo de cómo almacenar la configuración en un archivo App.config
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Evite usar cadenas de conexión codificadas de forma rígida
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP4001
 
 ### <a name="description"></a>Descripción
@@ -389,17 +389,17 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 Codificar las cadenas de conexión de forma rígida es una práctica incorrecta porque presenta problemas cuando las cadenas de conexión deben cambiarse rápidamente. Además, si el proyecto debe protegerse en el control de código fuente, las cadenas de conexión codificadas de forma rígida incorporan vulnerabilidades de seguridad, ya que las cadenas se pueden ver en el código fuente.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Almacene las cadenas de conexión en los archivos de configuración o entornos de Azure.
 
 * Para aplicaciones independientes, use app.config para almacenar la configuración de las cadenas de conexión.
 * Para aplicaciones web hospedadas en IIS, use web.config para almacenar cadenas de conexión.
 * Para aplicaciones ASP.NET vNext, use configuration.json para almacenar cadenas de conexión.
 
-Para obtener información sobre el uso de archivos de configuración como web.config o app.config, consulte [Directrices de configuración web de ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). For information on how Azure environment variables work, see [Azure Web Sites: How Application Strings and Connection Strings Work](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obtener información sobre cómo almacenar la cadena de conexión en el control de código fuente, consulte [Evitar colocar información confidencial, como cadenas de conexión, en archivos que se almacenan en el repositorio de código fuente.](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)
+Para obtener información sobre el uso de archivos de configuración como web.config o app.config, consulte [Directrices de configuración web de ASP.NET](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Para obtener información sobre cómo funcionan las variables de entorno de Azure, consulte [sitios web de Azure: Cómo funcionan las cadenas de aplicación y las cadenas de conexión](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Para obtener información sobre cómo almacenar la cadena de conexión en el control de código fuente, consulte [Evitar colocar información confidencial, como cadenas de conexión, en archivos que se almacenan en el repositorio de código fuente.](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control)
 
 ## <a name="use-diagnostics-configuration-file"></a>Uso del archivo de configuración de diagnóstico
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP5000
 
 ### <a name="description"></a>Descripción
@@ -408,23 +408,23 @@ En lugar de configurar opciones de diagnóstico en el código como mediante la A
 Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Motivo
-Antes de Azure SDK 2.5 (que usa el diagnóstico de Azure 1.3), Diagnósticos de Azure (WAD) puede configurarse mediante varios métodos diferentes: puede agregarlos al blob de configuración en el almacenamiento, o usar código imperativo, configuración declarativa o la configuración predeterminada. Pero la mejor manera de configurar los diagnósticos es usar un archivo de configuración XML (diagnostics.wadcfg o diagnostics.wadcfgx para SDK 2.5 y versiones posteriores) en el proyecto de aplicación. En este enfoque, el archivo diagnostics.wadcfg define completamente la configuración y se puede actualizar y volver a implementar según se quiera. Mixing the use of the diagnostics.wadcfg configuration file with the programmatic methods of setting configurations by using the [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)or [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) classes can lead to confusion. Consulte [Inicializar o cambiar la configuración de Diagnósticos de Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) para obtener más información.
+Antes de Azure SDK 2.5 (que usa el diagnóstico de Azure 1.3), Diagnósticos de Azure (WAD) puede configurarse mediante varios métodos diferentes: puede agregarlos al blob de configuración en el almacenamiento, o usar código imperativo, configuración declarativa o la configuración predeterminada. Pero la mejor manera de configurar los diagnósticos es usar un archivo de configuración XML (diagnostics.wadcfg o diagnostics.wadcfgx para SDK 2.5 y versiones posteriores) en el proyecto de aplicación. En este enfoque, el archivo diagnostics.wadcfg define completamente la configuración y se puede actualizar y volver a implementar según se quiera. La mezcla del uso del archivo de configuración Diagnostics. wadcfg con los métodos de configuración de las configuraciones mediante el uso de las clases [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)o [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) puede llevar a confusión. Consulte [Inicializar o cambiar la configuración de Diagnósticos de Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) para obtener más información.
 
 A partir de WAD 1.3 (incluido con Azure SDK 2.5), ya no es posible usar código para configurar los diagnósticos. Como resultado, solo puede proporcionar la configuración al aplicar o actualizar la extensión de diagnósticos.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Use el diseñador de configuración de diagnósticos para mover la configuración de diagnóstico al archivo de configuración de diagnósticos (diagnostics.wadcfg o diagnostics.wadcfgx para SDK 2.5 y versiones posteriores). También se recomienda que instale [Azure SDK 2.5](https://go.microsoft.com/fwlink/?LinkId=513188) y use la característica de diagnóstico más reciente.
 
 1. En el menú contextual del rol que quiere configurar, elija Propiedades, y luego elija la pestaña Configuración.
 2. En la sección **Diagnósticos**, asegúrese de que la casilla **Habilitar diagnósticos** está seleccionada.
-3. Elija el botón **Configurar** .
+3. Elija el botón **Configurar**.
 
-   ![Acceso a la opción de habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![Acceso a la opción Habilitar diagnósticos](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Consulte [Configuración de los diagnósticos para Azure Cloud Services y Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) para obtener más información.
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Evite declarar objetos DbContext como estáticos
-### <a name="id"></a>Id.
+### <a name="id"></a>ID.
 AP6000
 
 ### <a name="description"></a>Descripción
@@ -435,7 +435,7 @@ Comparta sus ideas y comentarios en [Comentarios de análisis de código de Azur
 ### <a name="reason"></a>Motivo
 Los objetos DBContext contienen los resultados de consulta de cada llamada. Los objetos DBContext estáticos no se eliminan hasta que se descarga el dominio de aplicación. Por lo tanto, un objeto DBContext estático puede consumir grandes cantidades de memoria.
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 Declare DBContext como un campo de instancia variable o no estático, úselo para una tarea y, luego, deje que se elimine después de usarlo.
 
 El ejemplo siguiente de clase de controlador MVC muestra cómo usar el objeto DBContext.

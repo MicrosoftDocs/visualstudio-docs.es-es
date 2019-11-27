@@ -1,5 +1,5 @@
 ---
-title: 'How to: Install a Visualizer | Microsoft Docs'
+title: 'Cómo: instalar un visualizador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,35 +28,35 @@ ms.locfileid: "74491306"
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
 
 > [!NOTE]
-> In UWP apps, only the standard text, HTML, XML, and JSON visualizers are supported. No se admiten los visualizadores personalizados (creados por el usuario).
+> En las aplicaciones para UWP, solo se admiten los visualizadores estándar de texto, HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).
 
-### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>To install a visualizer for Visual Studio 2019
+### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Para instalar un visualizador para Visual Studio 2019
   
 1. Busque el archivo DLL que contiene el visualizador que ha compilado.
 
-2. Copy the [Debugger Side](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL to either of the following locations:
+2. Copie el archivo dll [del lado depurador](create-custom-visualizers-of-data.md#to-create-the-debugger-side) en cualquiera de las siguientes ubicaciones:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copy the [Debuggee Side](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) DLL to either of the following locations:
+3. Copie la dll del [lado depurado](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) en cualquiera de las siguientes ubicaciones:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers\` *Framework*
 
-    Where *Framework* is either:
-    - `net2.0` for debuggees running the `.NET Framework` runtime.
-    - `netstandard2.0` for debuggees using a runtime that supports `netstandard 2.0` (`.NET Framework v4.6.1+` or `.NET Core 2.0+`).
-    - `netcoreapp` for debuggees running the `.NET Core` runtime. (supports `.NET Core 2.0+`)
+    Donde *Framework* es:
+    - `net2.0` para depuraciones que ejecutan el tiempo de ejecución de `.NET Framework`.
+    - `netstandard2.0` para depurar a través de un tiempo de ejecución que admite `netstandard 2.0` (`.NET Framework v4.6.1+` o `.NET Core 2.0+`).
+    - `netcoreapp` para depuraciones que ejecutan el tiempo de ejecución de `.NET Core`. (admite `.NET Core 2.0+`)
 
 4. Reinicie la sesión de depuración.
 
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>To install a visualizer for Visual Studio 2017 and older
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Para instalar un visualizador para Visual Studio 2017 y versiones anteriores
 
 > [!IMPORTANT]
-> Only .NET Framework visualizers are supported in Visual Studio 2017 and older
+> Solo se admiten los visualizadores de .NET Framework en Visual Studio 2017 y versiones anteriores
 
 1. Busque el archivo DLL que contiene el visualizador que ha compilado.
 

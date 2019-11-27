@@ -20,24 +20,24 @@ ms.locfileid: "74291051"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Acceso a Azure Virtual Machines desde el Explorador de servidores
 
-Si tiene máquinas virtuales hospedadas por Azure, puede acceder a ellas en el Explorador de servidores. Primero debe iniciar una sesión en su suscripción de Azure para ver los servicios móviles. Para iniciar sesión, abra el menú contextual del nodo de Azure en el Explorador de servidores y elija **Conectar a Microsoft Azure**.
+Si tiene Máquinas virtuales hospedadas por Azure, puede tener acceso a ellas en el Explorador de servidores. Primero debe iniciar una sesión en su suscripción de Azure para ver los servicios móviles. Para iniciar sesión, abra el menú contextual del nodo de Azure en el Explorador de servidores y elija **Conectar a Microsoft Azure**.
 
 1. En Cloud Explorer, elija una máquina virtual y, a continuación, presione la tecla F4 para mostrar su ventana de propiedades.
 
     La siguiente tabla muestra las propiedades que están disponibles, pero son todas de solo lectura. Utilice el [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) para cambiarlas.
 
-   | Propiedad. | Descripción |
+   | Propiedad | Descripción |
    | --- | --- |
    | Nombre DNS |La dirección URL con la dirección de Internet de la máquina virtual. |
    | Entorno |En el caso de una máquina virtual, el valor de esta propiedad siempre es Production. |
-   | Name |El nombre de la máquina virtual. |
+   | Name |Nombre de la máquina virtual. |
    | Tamaño |El tamaño de la máquina virtual, que refleja la cantidad de memoria y espacio en disco disponibles. Para más información, consulte los [tamaños de máquina virtual](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
-   | Situación |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). |
-   | SubscriptionID |El Id. de suscripción de la cuenta de Azure. Esta información se puede mostrar en [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) mediante la visualización de las propiedades de una suscripción. |
-2. Seleccione un nodo de extremo y, a continuación, vea la ventana **Propiedades** .
+   | Estado |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). |
+   | Id. de suscripción |El Id. de suscripción de la cuenta de Azure. Esta información se puede mostrar en [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) mediante la visualización de las propiedades de una suscripción. |
+2. Elija un nodo de extremo y, a continuación, vea la ventana **Propiedades**.
 3. La tabla siguiente describe las propiedades disponibles de los extremos, pero son de solo lectura. Para agregar o editar los puntos de conexión de una máquina virtual, use [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
-   | Propiedad. | Descripción |
+   | Propiedad | Descripción |
    | --- | --- |
    | Name |Un identificador para el extremo. |
    | Private Port |El puerto del acceso de red interno de la aplicación. |

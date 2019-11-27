@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Debugging Samples | Microsoft Docs
+title: Ejemplos de depuración de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,8 +22,8 @@ ms.locfileid: "74295991"
 # <a name="visual-studio-debugging-samples"></a>Ejemplos de depuración de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Two samples show how to extend the Visual Studio debugger using [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+En dos ejemplos se muestra cómo ampliar el depurador de Visual Studio mediante [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- The Debugger Expression Evaluator Sample, for managed languages, is included in the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] window, click the **Samples** tab, click **All** or **C#** in the list of languages, and then click **Debugger**.  
+- El ejemplo de evaluador de expresiones del depurador, para los lenguajes administrados, se incluye en el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. En la ventana de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], haga clic en la pestaña **ejemplos** , **C#** haga clic en **todos** o en la lista de idiomas y, a continuación, haga clic en **depurador**.  
   
-- The Visual Studio Debug Engine Sample, for native languages, is available on MSDN Code Gallery. For more information, see this page on the Microsoft Web site: [Visual Studio Debug Engine Sample](https://go.microsoft.com/fwlink/?LinkId=150236).
+- El ejemplo de motor de depuración de Visual Studio, para lenguajes nativos, está disponible en la galería de código de MSDN. Para obtener más información, vea esta página en el sitio web de Microsoft: [ejemplo de motor de depuración de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).

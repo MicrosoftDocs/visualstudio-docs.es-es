@@ -1,5 +1,5 @@
 ---
-title: Add Azure Storage by using Connected Services
+title: Agregar Azure Storage mediante Servicios conectados
 description: Adición de Azure Storage a la aplicación mediante el cuadro de diálogo Agregar servicios conectados de Visual Studio
 author: ghogen
 manager: jillfra
@@ -69,6 +69,6 @@ Cuando haya terminado con el cuadro de diálogo, Visual Studio agrega referencia
 - Proyecto de trabajo web - [¿Qué ha ocurrido? - Proyectos de trabajo web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Foro de MSDN: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog del equipo de Microsoft Azure Storage](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Documentación de Azure Storage](https://docs.microsoft.com/azure/storage/)

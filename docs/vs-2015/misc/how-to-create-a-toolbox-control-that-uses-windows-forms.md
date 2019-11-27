@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Toolbox Control That Uses Windows Forms | Microsoft Docs'
+title: 'Cómo: crear un control Toolbox que use Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -29,11 +29,11 @@ La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vs
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para crear un proyecto de Control de cuadro de herramientas de Windows Forms  
   
-1. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
+1. En el menú **Archivo**, haga clic en **Nuevo** y, después, en **Proyecto**.  
   
 2. En el cuadro de diálogo **Nuevo proyecto** , en **Plantillas instaladas**, haga clic en el nodo para elegir su lenguaje de programación preferido y luego haga clic en **Extensibilidad**. En la lista de tipos de proyecto, seleccione **Control Toolbox de Windows Forms**.  
   
-3. En el cuadro **Nombre** , escriba el nombre que desea utilizar para el proyecto. Haga clic en **Aceptar**.  
+3. En el cuadro **Nombre** , escriba el nombre que desee usar para el proyecto. Haga clic en **Aceptar**.  
   
      Visual Studio crea una solución que contiene un control de usuario, un atributo para colocar el control en el **Cuadro de herramientas**, y el manifiesto de VSIX para la implementación.  
   
@@ -87,7 +87,7 @@ La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vs
   
 2. Cargue el archivo .vsix en una red o en un sitio web.  
   
-     If you upload the file to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, other users can use **Extension Manager** in Visual Studio to find the control and install it.  
+     Si carga el archivo en el sitio web de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , otros usuarios pueden usar el **Administrador de extensiones** en Visual Studio para buscar el control e instalarlo.  
   
 ## <a name="see-also"></a>Vea también  
  [Creación de un control de cuadro de herramientas de WPF](../extensibility/creating-a-wpf-toolbox-control.md)

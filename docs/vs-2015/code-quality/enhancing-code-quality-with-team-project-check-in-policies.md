@@ -1,5 +1,5 @@
 ---
-title: Enhancing Code Quality with Team Project Check-in Policies | Microsoft Docs
+title: Mejorar la calidad del código con directivas de inserción en el repositorio del proyecto de equipo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301088"
 ---
-# <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Mejorar la calidad del código con directivas de protección de equipo
+# <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Mejorar la calidad del código con directivas de protección del proyecto de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear directivas de protección para los proyectos de equipo. Aplicación de prácticas que permitan obtener un código mejor y un desarrollo del grupo más eficaz. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.
@@ -50,10 +50,10 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear dir
 |----------|------------------------|
 |**Configurar el entorno de desarrollo:** antes de crear o modificar el código, debe configurar los entornos de desarrollo y pruebas usando el código fuente adecuado. Si trabaja con bases de datos, debe tener acceso a su representación sin conexión.|[Configuración de entornos de desarrollo](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|
 |**Usar análisis de código en el proceso de desarrollo:** los miembros del equipo ejecutan análisis de código en sus equipos de desarrollo. En Visual Studio, los desarrolladores configuran y ejecutan series de análisis de código en proyectos de código concretos, ven y analizan los problemas que surgen en las ejecuciones y crean elementos de trabajo para las advertencias.|[Analizar la calidad de la aplicación](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**Crear y ejecutar pruebas unitarias:** las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma rápida de buscar errores lógicos en los métodos de clases de proyectos de C#, Visual Basic .NET y C++. Una prueba unitaria se puede crear una vez y ejecutarse cada vez que se cambia el código fuente, a fin de asegurarse de que no se incluye ningún error.|[Hacer una prueba unitaria del código](../test/unit-test-your-code.md)|
-|**Seguimiento de elementos de trabajo y defectos:** puede usar elementos de trabajo para llevar a cabo el seguimiento y la administración del trabajo y la información del proyecto de equipo. Un elemento de trabajo es un registro de base de datos que [!INCLUDE[esprfound](../includes/esprfound-md.md)] usa para seguir la asignación y el progreso del trabajo. Se pueden usar diferentes tipos de elementos de trabajo para seguir diversos tipos de trabajo, como requisitos del cliente, errores del producto y tareas de desarrollo.|[Track work and manage workflow &#91;redirected&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
+|**Crear y ejecutar pruebas unitarias:** las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma rápida de buscar errores lógicos en los métodos de clases de proyectos de C#, Visual Basic .NET y C++. Una prueba unitaria se puede crear una vez y ejecutarse cada vez que se cambia el código fuente, a fin de asegurarse de que no se incluye ningún error.|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|
+|**Seguimiento de elementos de trabajo y defectos:** puede usar elementos de trabajo para llevar a cabo el seguimiento y la administración del trabajo y la información del proyecto de equipo. Un elemento de trabajo es un registro de base de datos que [!INCLUDE[esprfound](../includes/esprfound-md.md)] usa para seguir la asignación y el progreso del trabajo. Se pueden usar diferentes tipos de elementos de trabajo para seguir diversos tipos de trabajo, como requisitos del cliente, errores del producto y tareas de desarrollo.|[Realizar un seguimiento del trabajo &#91;y administrar el flujo de trabajo Redirigido&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Guía
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)

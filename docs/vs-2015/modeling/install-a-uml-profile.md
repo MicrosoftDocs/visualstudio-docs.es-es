@@ -1,5 +1,5 @@
 ---
-title: Install a UML profile | Microsoft Docs
+title: Instalar un perfil UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,7 +25,7 @@ Puede extender Visual Studio con un perfil UML. Un perfil permite agregar estere
 
  Si recibe un modelo UML que se haya creado con perfiles, algunas propiedades no se mostrarán a menos que instale los mismos perfiles.
 
- Los perfiles se distribuyen dentro de una extensión de Visual Studio. Una extensión también puede contener otras características, como comandos de menú. For more information, see [Managing Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160728).
+ Los perfiles se distribuyen dentro de una extensión de Visual Studio. Una extensión también puede contener otras características, como comandos de menú. Para obtener más información, consulte [Administración de extensiones de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Para instalar un perfil UML en el equipo
 
@@ -35,15 +35,15 @@ Puede extender Visual Studio con un perfil UML. Un perfil permite agregar estere
 
 2. En el Explorador de Windows (o Explorador de archivos) haga doble clic en el archivo `.vsix` o ábralo en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-3. Click **Install** in the dialog box that appears.
+3. Haga clic en **instalar** en el cuadro de diálogo que aparece.
 
-4. To uninstall or temporarily disable the extension, open **Extension Manager** from the **Tools** menu.
+4. Para desinstalar o deshabilitar temporalmente la extensión, abra el **Administrador de extensiones** en el menú **herramientas** .
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Para desinstalar o deshabilitar una extensión de perfil
 
-1. On the Visual Studio **Tools** menu, click **Extension Manager**.
+1. En el menú **herramientas** de Visual Studio, haga clic en **Administrador de extensiones**.
 
-2. Click the extension that you want to remove, and then click **Disable** or **Uninstall**.
+2. Haga clic en la extensión que desea quitar y, a continuación, haga clic en **deshabilitar** o **desinstalar**.
 
 ## <a name="see-also"></a>Vea también
- [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md)
+ [Personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir un perfil para ampliar UML](../modeling/define-a-profile-to-extend-uml.md)

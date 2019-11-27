@@ -101,21 +101,21 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  *¿Qué más debería saber?*
  **Notas**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
+- ![Requisito previo](../test/media/prereq.png "Prereq") No se admite el explorador Web Apple Safari.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
+- ![Requisito previo](../test/media/prereq.png "Prereq") La acción de iniciar el explorador Web debe formar parte de la prueba de IU codificada.
 
    Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
+- ![Requisito previo](../test/media/prereq.png "Prereq") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.
 
   **Sugerencias**
 
-- ![Tip](../test/media/tip.png "Sugerencia") You can configure the output to include screenshots in the coded UI logs. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantallas en los registros de IU codificada. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
-   Establezca los siguientes valores:
+   Defina los siguientes valores:
 
   - `EqtTraceLevel` en la sección `system.diagnostics`.
 
@@ -138,7 +138,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 
  [Solucionar problemas debidos a errores de pruebas en varios exploradores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Guía
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
  [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
@@ -152,4 +152,4 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  [Pruebas de automatización de IU de Visual Studio (incluyen pruebas automatizadas de IU)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Vea también
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Usar la automatización de la interfaz de usuario para probar las](../test/use-ui-automation-to-test-your-code.md) [configuraciones y plataformas compatibles con el código para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analizar pruebas de IU codificadas mediante los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

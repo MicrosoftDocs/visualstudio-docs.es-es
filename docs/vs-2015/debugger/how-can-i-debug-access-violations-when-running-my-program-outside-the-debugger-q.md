@@ -33,10 +33,10 @@ ms.locfileid: "74299259"
 Descripción del problema  
  El programa funciona bien en el entorno de Visual Studio, pero cuando se ejecuta de forma independiente en el sistema operativo Windows, produce una infracción de acceso. ¿Cómo se puede depurar este problema?  
   
-## <a name="solution"></a>Soluciones  
+## <a name="solution"></a>Solución  
  Establezca la opción [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) y ejecute el programa de forma independiente hasta que se produzca la infracción de acceso. A continuación, en el cuadro de diálogo **Infracción de acceso**, se puede hacer clic en **Cancelar** para iniciar el depurador.  
   
- Vea también el artículo Q133174 de Knowledge Base, "How to Locate Where a General Protection (GP) Fault Occurs". You can find Knowledge Base articles on the MSDN Library CD or by searching [http://support.microsoft.com/](https://support.microsoft.com/).  
+ Vea también el artículo Q133174 de Knowledge Base, "How to Locate Where a General Protection (GP) Fault Occurs". Puede encontrar artículos de Knowledge base en el CD de MSDN Library o en [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>Vea también  
  [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   

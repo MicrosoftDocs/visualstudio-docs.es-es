@@ -31,7 +31,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 1. Abra el proyecto en Visual Studio.  
   
-2. On the  menu, click **Debug / Performance Profiler...** . Choose **Network**, and then choose **Start**.  
+2. En el menú, haga clic en **depurar/generador de perfiles de rendimiento..** .. Elija **red**y, a continuación, elija **iniciar**.  
   
 3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -74,6 +74,6 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 3. El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
 ## <a name="see-also"></a>Vea también  
- [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blog: Introducing Visual Studio’s network inspector](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Blog de Visual Studio: presentación del inspector de red de Visual studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297708"
@@ -20,7 +20,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
  Para trabajar con Xamarin en un Mac, necesitará lo siguiente:  
   
-- Una cuenta de Xamarin. Go to [https://www.xamarin.com/](https://www.xamarin.com/) and click **Sign In** on the upper right of the page, then click **Create a new account** on the page that appears. Seleccione una dirección de correo y una contraseña para su cuenta de Xamarin.  
+- Una cuenta de Xamarin. Vaya a [https://www.xamarin.com/](https://www.xamarin.com/) , haga clic en **iniciar sesión** en la parte superior derecha de la página y, a continuación, haga clic en **crear una cuenta nueva** en la página que aparece. Seleccione una dirección de correo y una contraseña para su cuenta de Xamarin.  
   
 - Un Mac con OSX Yosemite (10.10) o superior, con Xcode 7 y Xamarin 4 instalado.  
   
@@ -56,13 +56,13 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
 2. En el instalador, seleccione una instalación **Personalizada** :  
   
-     ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+     ![Elegir la opción personalizada en la instalación de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Instalación de Xamarin entre varios forros 1")  
   
 3. Active o desactive las casillas siguientes:  
   
     1. Active **Desarrollo móvil multiplataforma > C#/.NET (Xamarin)** . Al hacerlo, también se seleccionarán automáticamente las distintas herramientas de Android en Kits de desarrollo de software y herramientas comunes.  
   
-         ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+         ![Seleccionar la opción Xamarin en desarrollo&#45;móvil multiplataforma](../cross-platform/media/cross-plat-xamarin-setup-2.png "Instalación de Xamarin de varios forros 2")  
   
     2. Desactive **Desarrollo móvil multiplataforma > Emulador de Microsoft Visual Studio para Android**.  
   
@@ -70,7 +70,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
 5. Una vez completada la instalación, inicie Visual Studio e inicie sesión con su cuenta de Microsoft si se le solicita (es decir, la misma cuenta que usa con Windows). Después, busque actualizaciones de Xamarin a través de **Herramientas > Opciones > Xamarin** o **Herramientas > Opciones > Xamarin > Otras**, donde encontrará el vínculo **Comprobar ahora**:  
   
-     ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+     ![Comprobar las actualizaciones de Xamarin en las opciones de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Instalación entre varios forros de Xamarin 3")  
   
     > [!NOTE]
     > Asegúrese de actualizar Xamarin a la versión 4.0.3.214 o superior para evitar problemas con las licencias de Xamarin anteriores.  Si intenta buscar actualizaciones y ve un error sobre las herramientas de compilación de Microsoft, vea la conversación en los [foros de Xamarin](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
@@ -83,7 +83,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
 ### <a name="xamarin-studio"></a>Xamarin Studio  
  En primer lugar, al navegar a los vínculos proporcionados, asegúrese de que **Xamarin Studio** esté seleccionado en la esquina superior derecha para ver la versión correcta de la documentación de Xamarin:  
   
- ![Selecting Xamarin Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
+ ![Selección de Xamarin Studio para ver la documentación correcta en Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
  **Android**  
   
@@ -97,10 +97,10 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
 4. Valide la depuración en el simulador de iOS a través de la [documentación de Debugging in the Simulator](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (Depuración en el simulador) en xamarin.com.  
   
-### <a name="visual-studio"></a>Programa para la mejora  
+### <a name="visual-studio"></a>Visual Studio  
  En primer lugar, al navegar a los vínculos proporcionados, asegúrese de que **Visual Studio** esté seleccionado en la esquina superior derecha para ver la versión correcta de la documentación de Xamarin:  
   
- ![Selecting Visual Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
+ ![Selección de Visual Studio para ver la documentación correcta en Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
   
  También inicie sesión en su cuenta de Xamarin a través de **Herramientas > Cuenta de Xamarin...**  
   
@@ -128,8 +128,8 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
    2. Seleccione el destino **iPhoneSimulator** del menú desplegable de la compilación de Visual Studio, como se muestra a continuación. Si no aparece ningún simulador, inicie Xcode en el Mac, seleccione **Xcode -> Preferencias** y haga clic en **Descargar**. Bajo **Componentes** debería ver las versiones del simulador que están disponibles para descargar. Encontrará instrucciones adicionales para la depuración en la página [Depuración](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (Depuración) de Xamarin en xamarin.com.  
   
-        ![Selecting the iPhoneSimulator build target](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+        ![Seleccionar el destino de compilación de iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
    3. Seleccione un destino de iPhone del menú desplegable de depuración de Visual Studio, tal como se muestra a continuación y presione F5 para iniciar el depurador. Se inicia el simulador en el Mac, donde podrá interactuar con la aplicación mientras se lleva a cabo la depuración en Visual Studio.  
   
-        ![Selecting an iPhone debug target](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+        ![Selección de un destino de depuración de iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")

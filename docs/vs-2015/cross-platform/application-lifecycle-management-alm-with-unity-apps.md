@@ -91,9 +91,9 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Planear pruebas, crear casos de prueba y organizar conjuntos de pruebas|Sí||  
 |Pruebas manuales|Sí||  
 |Administrador de pruebas (grabar y reproducir pruebas)|Dispositivos Windows y emuladores de Android únicamente||  
-|Cobertura de código|no disponible|No aplicable, ya que las pruebas unitarias tienen lugar en Unity y no en Visual Studio, vea más adelante.|  
-|[Hacer una prueba unitaria del código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools (Herramientas de pruebas de Unity)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Tienda de activos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|  
-|[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|  
+|Cobertura de código|N/D|No aplicable, ya que las pruebas unitarias tienen lugar en Unity y no en Visual Studio, vea más adelante.|  
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools (Herramientas de pruebas de Unity)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Tienda de activos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|  
+|[Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|  
   
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código  
  Vínculo de referencia: **[Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -113,7 +113,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |-------------|--------------------------|-------------------------|  
 |Administrar procesos de versión|Sí||  
 |Implementar en servidores para la instalación de prueba mediante scripts|Sí||  
-|Cargar a la tienda de aplicaciones|Partial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Supervisión con HockeyApp  
  Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net/features/)**  

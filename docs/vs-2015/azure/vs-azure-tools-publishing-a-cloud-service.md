@@ -33,23 +33,23 @@ Use los siguientes procedimientos para publicar su aplicación de Azure y para a
 
 Cuando publica su aplicación de Azure, puede realizar una de las siguientes tareas:
 
-- Create a service package: You can use this package and the service configuration file to publish your application to a deployment environment from the [Azure portal](https://portal.azure.com).
+- Crear un paquete de servicio: puede usar este paquete y el archivo de configuración de servicio para publicar la aplicación en un entorno de implementación desde el [Azure portal](https://portal.azure.com).
 
-- Publish your Azure project from Visual Studio: To publish your application directly to Azure, you use the Publish Wizard. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
+- Publicar el proyecto de Azure de Visual Studio: para publicar la aplicación directamente a Azure, use el Asistente para publicación. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Para crear un paquete de servicios de Visual Studio
 
-1. Cuando esté preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
+1. Cuando está preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
 
 1. Para crear solo un paquete de servicios, siga estos pasos:
 
    a. En el menú contextual del proyecto de Azure, elija **Empaquetar**.
 
-   b. En el cuadro de diálogo **Empaquetar aplicación de Azure** , elija la configuración del servicio para el que desea crear un paquete y, después, elija la configuración de compilación.
+   b. En el cuadro de diálogo **Empaquetar aplicación de Azure**, elija la configuración del servicio para el que desea crear un paquete y, a continuación, elija la configuración de compilación.
 
    c. (opcional) Para activar el Escritorio remoto para el servicio en la nube después de haberlo publicado, seleccione **Habilitar Escritorio remoto para todos los roles** y luego seleccione **Configuración** para configurar las credenciales del Escritorio remoto. Para más información, vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-      Si quiere depurar el servicio en la nube después de publicarlo, seleccione **Habilitar Depurador remoto para todos los roles**para activar la depuración remota.
+      Si quiere depurar el servicio en la nube después de publicarlo, seleccione **Habilitar Depurador remoto para todos los roles** para activar la depuración remota.
 
    d. Para crear el paquete, elija el vínculo **Paquete** .
 
@@ -69,15 +69,15 @@ Si la infraestructura back-end de su aplicación es estable, pero los roles web 
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisitos para utilizar Web Deploy
 
-- **For development and testing purposes only**: The changes are made directly to the virtual machine where the web role is running. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
+- **Solo con fines de desarrollo y prueba**: los cambios se realizan directamente en la máquina virtual en la que se está ejecutando el rol Web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
 
-- **Only web roles can be updated**: Worker roles can’t be updated. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
+- **Solo se pueden actualizar los roles web**: los roles de trabajo no se pueden actualizar. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
 
-- **Can only support a single instance of a web role**: You can’t have multiple instances of any web role in your deployment environment. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
+- **Solo puede admitir una única instancia de un rol Web**: no puede tener varias instancias de ningún rol Web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
 
-- **Enable remote desktop connections**: This requirement allows Web Deploy to use the user and password to connect to the virtual machine to deploy the changes to the server that’s running Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
+- **Habilitar conexiones de escritorio remoto**: este requisito permite a web deploy usar el usuario y la contraseña para conectarse a la máquina virtual con el fin de implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
 
-En el siguiente procedimiento se supone que usa el asistente **Publicar aplicación de Azure** .
+En el siguiente procedimiento se supone que utiliza el asistente **Publicar aplicación de Azure**.
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Habilitación de Web Deploy al publicar la aplicación
 
@@ -96,9 +96,9 @@ En el siguiente procedimiento se supone que usa el asistente **Publicar aplicaci
 
 ### <a name="update-your-web-role-by-using-web-deploy"></a>Actualización del rol web mediante Web Deploy
 
-1. Para usar Web Deploy, debe realizar cambios en el código del proyecto para cualquiera de sus roles web en Visual Studio que quiera publicar, y luego haga clic con el botón derecho en el nodo de este proyecto en su solución y apunte a **Publicar**. Aparece el cuadro de diálogo **Publicación web** .
+1. Para utilizar Web Deploy, debe realizar cambios en el código del proyecto para cualquiera de sus roles web en Visual Studio que quiera publicar, y luego haga clic con el botón secundario en el nodo de este proyecto en su solución y apunte a **Publicar**. Aparece el cuadro de diálogo **Publicación web**.
 
-1. (Opcional) Si agregó un certificado SSL de confianza para usarlo para las conexiones remotas de IIS, puede desactivar la casilla **Permitir certificado que no es de confianza** . Para más información sobre cómo agregar un certificado para proteger Web Deploy, consulte la sección **Protección de Web Deploy** más adelante en este artículo.
+1. (Opcional) Si agregó un certificado SSL de confianza para utilizarlo para las conexiones remotas de IIS, puede desactivar la casilla **Permitir certificado que no es de confianza**. Para más información sobre cómo agregar un certificado para proteger Web Deploy, consulte la sección **Protección de Web Deploy** más adelante en este artículo.
 
 1. Para usar Web Deploy, el mecanismo de publicación necesita el nombre de usuario y la contraseña que configuró para su conexión de Escritorio remoto cuando publicó el paquete por primera vez.
 
@@ -134,26 +134,26 @@ Puede que deba incluir archivos específicos en su paquete de servicio para que 
 1. Para agregar un ensamblado a un paquete del servicio, siga estos pasos:
 
    a. En el **Explorador de soluciones** abra el nodo del proyecto al que le falta el ensamblado de referencia.
-   b. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **Referencias** y elija **Agregar referencia**. Aparece el cuadro de diálogo Agregar referencia.
-   c. Elija la referencia que quiere agregar y, después, elija **Aceptar**. La referencia se agrega a la lista en la carpeta **Referencias** .
-   d. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana **Propiedades** .
+   b. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **References** y luego elija **Agregar referencia**. Aparece el cuadro de diálogo Agregar referencia.
+   c. Elija la referencia que quiere agregar y, después, elija **Aceptar**. La referencia se agrega a la lista en la carpeta **References**.
+   d. Abra al menú contextual del ensamblado que agregó y elija **Propiedades**. Aparece la ventana **Propiedades**.
 
       Para incluir este ensamblado en el Service Pack en la lista **Copia local**, elija **True**.
-1. En el **Explorador de soluciones** abra el nodo del proyecto al que le falta el ensamblado de referencia.
+1. En el **Explorador de soluciones** abra el nodo del proyecto al que le falta en ensamblado referenciado.
 
-1. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **Referencias** y elija **Agregar referencia**. Aparece el cuadro de diálogo **Agregar referencia** .
+1. Para agregar el ensamblado al proyecto, abra el menú contextual de la carpeta **References** y luego elija **Agregar referencia**. Aparece el cuadro de diálogo **Agregar referencia** .
 
-1. Elija la referencia que quiere agregar y, después, elija el botón **Aceptar** .
+1. Elija la referencia que quiere agregar y luego elija el botón **Aceptar**.
 
-    La referencia se agrega a la lista en la carpeta **Referencias** .
+    La referencia se agrega a la lista en la carpeta **References**.
 
-1. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana Propiedades.
+1. Abra al menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana Propiedades.
 
 1. Para incluir este ensamblado en el paquete del servicio en la lista **Copia local**, elija **True**.
 
-1. Para incluir archivos en el paquete del servicio que se agregaron al proyecto de rol web, abra el menú contextual del archivo y elija **Propiedades**. En la ventana **Propiedades**, elija **Contenido** de la lista **Acción de generación**.
+1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol web, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades**, elija **Contenido** de la lista **Acción de generación**.
 
-1. Para incluir archivos en el paquete del servicio que se agregaron al proyecto de rol de trabajo, abra el menú contextual del archivo y elija **Propiedades**. En la ventana **Propiedades**, elija **Copiar si es posterior** en la lista **Copiar en el directorio de resultados**.
+1. Para incluir archivos en el paquete del servicio que se han agregado al proyecto de rol de trabajo, abra el menú contextual del archivo y elija **Propiedades**. De la ventana **Propiedades**, elija **Copiar si es posterior** de la lista **Copiar en el directorio de resultados**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

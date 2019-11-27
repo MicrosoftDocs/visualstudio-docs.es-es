@@ -31,9 +31,9 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
 
 ### <a name="c-and-visual-basic"></a>C# y Visual Basic
 
-En C#, Visual Basic y otro código administrado, use el proveedor predeterminado llamando a los métodos de la clase [Marcadores](/previous-versions/hh694099(v=vs.140)). It exposes four methods for generating markers: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)), and [WriteAlert](/previous-versions/hh694180(v=vs.140)). Existen varias sobrecargas de estas funciones, según si quiere utilizar valores predeterminados para las propiedades.  La sobrecarga más simple toma solo un parámetro de cadena que especifica la descripción del evento. La descripción se muestra en los informes del visualizador de simultaneidad.
+En C#, Visual Basic y otro código administrado, use el proveedor predeterminado llamando a los métodos de la clase [Marcadores](/previous-versions/hh694099(v=vs.140)). Expone cuatro métodos para generar marcadores: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))y [WriteAlert](/previous-versions/hh694180(v=vs.140)). Existen varias sobrecargas de estas funciones, según si quiere utilizar valores predeterminados para las propiedades.  La sobrecarga más simple toma solo un parámetro de cadena que especifica la descripción del evento. La descripción se muestra en los informes del visualizador de simultaneidad.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Add SDK support to a C# or Visual Basic project
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Agregar compatibilidad con SDK a C# un proyecto de o Visual Basic
 
 1. En la barra de menús, elija **Analizar**, **Visualizador de simultaneidad** y **Agregar SDK al proyecto**.
 
@@ -84,7 +84,7 @@ En C#, Visual Basic y otro código administrado, use el proveedor predeterminad
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Para utilizar un nuevo proveedor de marcadores en un proyecto de C++ o C
 
-1. Use la función `CvInitProvider` para inicializar un PCV_PROVIDER. The constructor takes a GUID* and PCV_PROVIDER\*.
+1. Use la función `CvInitProvider` para inicializar un PCV_PROVIDER. El constructor toma un GUID * y PCV_PROVIDER\*.
 
 2. Para registrar el proveedor, abra el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) del visualizador de simultaneidad. Seleccione la pestaña **Marcadores** y, a continuación, elija el botón **Agregar un nuevo proveedor**. En este cuadro de diálogo, escriba el GUID que se utilizó para crear el proveedor y una descripción del proveedor.
 
@@ -123,9 +123,9 @@ En C#, Visual Basic y otro código administrado, use el proveedor predeterminad
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
-|[Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|
+|[Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|
 |[Referencia de la biblioteca C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|
 |[Instrumentación](/previous-versions/hh694104(v=vs.140))|Describe la API del visualizador de simultaneidad del código administrado.|
 |[Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)|Información de referencia para las vistas y los informes de archivos de datos de generación de perfiles generados mediante el método de simultaneidad y que incluyen datos de ejecución de subprocesos.|

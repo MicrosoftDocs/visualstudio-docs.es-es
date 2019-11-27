@@ -1,5 +1,5 @@
 ---
-title: Support for Project and Configuration Properties | Microsoft Docs
+title: Compatibilidad con propiedades de configuración y de proyecto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,18 +21,18 @@ ms.locfileid: "74301065"
 # <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-The **Properties** window in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrated development environment (IDE) can display project and configuration properties. You can provide a property page for your own project type so that the user can set properties for your application.  
+La ventana **propiedades** del entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede mostrar las propiedades de configuración y del proyecto. Puede proporcionar una página de propiedades para su propio tipo de proyecto, de modo que el usuario pueda establecer las propiedades de la aplicación.  
   
- By selecting a project node in **Solution Explorer** and then clicking **Properties** on the **Project** menu, you can open a dialog box that includes project and configuration properties. In [!INCLUDE[csprcs](../../includes/csprcs-md.md)] and [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], and project types derived from these languages, this dialog box appears as a tabbed page in the [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). For more information, see [Not in Build: Walkthrough: Exposing Project and Configuration Properties (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Al seleccionar un nodo de proyecto en **Explorador de soluciones** y, a continuación, hacer clic en **propiedades** en el menú **proyecto** , puede abrir un cuadro de diálogo que incluye propiedades de configuración y de proyecto. En [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], y los tipos de proyecto derivados de estos lenguajes, este cuadro de diálogo aparece como una página con pestañas en el [cuadro de diálogo general, entorno, opciones](../../ide/reference/general-environment-options-dialog-box.md). Para obtener más información, vea [no está en la compilación: Tutorial: exponer propiedades de configuraciónC#y de proyecto ()](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. You can find the source code and compilation instructions at [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+ Managed Package Framework for Projects (MPFProj) proporciona clases auxiliares para crear y administrar el nuevo sistema del proyecto. Puede encontrar el código fuente y las instrucciones de compilación en [MPF para proyectos-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
-## <a name="persistence-of-project-and-configuration-properties"></a>Persistence of Project and Configuration Properties  
- Project and configuration properties are persisted in a project file that has an file name extension associated with the project type, for example, .csproj, .vbproj, and .myproj. Language projects typically use a template file to generate the project file. However, there are actually several ways to associate project types and templates. For more information, see [NIB: Visual Studio Templates](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) and [Template Directory Description (.Vsdir) Files](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+## <a name="persistence-of-project-and-configuration-properties"></a>Persistencia de las propiedades de configuración y de proyecto  
+ Las propiedades de configuración y de proyecto se guardan en un archivo de proyecto que tiene una extensión de nombre de archivo asociada al tipo de proyecto, por ejemplo,. csproj,. vbproj y. MyProj. Los proyectos de lenguaje suelen usar un archivo de plantilla para generar el archivo de proyecto. Sin embargo, hay varias formas de asociar tipos y plantillas de proyecto. Para obtener más información, vea [NIB: plantillas de Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) y [Descripción del directorio de plantillas (. Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Project and configuration properties are created by adding items to the template file. These properties are then available to any project created by using the project type that uses this template. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projects and the MPFProj both use the [Not in Build: MSBuild Overview](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) schema for template files. These files have a PropertyGroup section for each configuration. Properties of projects are typically persisted in the first PropertyGroup section, which has a Configuration argument set to a null string.  
+ Las propiedades de configuración y de proyecto se crean agregando elementos al archivo de plantilla. Estas propiedades están disponibles para cualquier proyecto creado con el tipo de proyecto que usa esta plantilla. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] proyectos y los MPFProj usan el esquema [Not in Build: información general de MSBuild](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) para los archivos de plantilla. Estos archivos tienen una sección PropertyGroup para cada configuración. Las propiedades de los proyectos se conservan normalmente en la primera sección de PropertyGroup, que tiene un argumento de configuración establecido en una cadena nula.  
   
- The following code shows the start of a basic MSBuild project file.  
+ En el código siguiente se muestra el inicio de un archivo de proyecto básico de MSBuild.  
   
 ```  
 <Project MSBuildVersion="2.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -48,54 +48,54 @@ The **Properties** window in the [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]
     <Optimize>true</Optimize>  
 ```  
   
- In this project file, `<Name>` and `<SchemaVersion>` are project properties, and `<Optimize>` is a configuration property.  
+ En este archivo de proyecto, `<Name>` y `<SchemaVersion>` son propiedades del proyecto y `<Optimize>` es una propiedad de configuración.  
   
- It is the responsibility of the project to persist the project and configuration properties of the project file.  
+ Es responsabilidad del proyecto conservar el proyecto y las propiedades de configuración del archivo de proyecto.  
   
 > [!NOTE]
-> A project can optimize persistence by persisting only property values that differ from their default values.  
+> Un proyecto puede optimizar la persistencia conservando únicamente los valores de propiedad que difieren de sus valores predeterminados.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración  
- The `Microsoft.VisualStudio.Package.SettingsPage` class implements project and configuration property pages. The default implementation of `SettingsPage` offers public properties to a user in a generic property grid. The `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` method selects classes derived from `SettingsPage` for project property grids. The `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` method selects classes derived from `SettingsPage` for configuration property grids. Your project type should override these methods to select the appropriate property pages.  
+ La clase `Microsoft.VisualStudio.Package.SettingsPage` implementa las páginas de propiedades de configuración y de proyecto. La implementación predeterminada de `SettingsPage` ofrece propiedades públicas a un usuario en una cuadrícula de propiedades genérica. El método `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` selecciona clases derivadas de `SettingsPage` para las cuadrículas de propiedades del proyecto. El método `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` selecciona clases derivadas de `SettingsPage` para las cuadrículas de propiedades de configuración. El tipo de proyecto debe invalidar estos métodos para seleccionar las páginas de propiedades apropiadas.  
   
- The `SettingsPage` class and the `Microsoft.VisualStudio.Package.ProjectNode` class offer these methods to persist project and configuration properties:  
+ La clase `SettingsPage` y la clase `Microsoft.VisualStudio.Package.ProjectNode` ofrecen estos métodos para conservar las propiedades de configuración y del proyecto:  
   
-- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` and `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` persist project properties.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` y `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` conservar las propiedades del proyecto.  
   
-- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` and `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persist configuration properties.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` y `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` conservan las propiedades de configuración.  
   
   > [!NOTE]
-  > The implementations of the `Microsoft.VisualStudio.Package.SettingsPage` and `Microsoft.VisualStudio.Package.ProjectNode` classes use the `Microsoft.Build.BuildEngine` (MSBuild) methods to get and set project and configuration properties from the project file.  
+  > Las implementaciones de las clases `Microsoft.VisualStudio.Package.SettingsPage` y `Microsoft.VisualStudio.Package.ProjectNode` usan los métodos `Microsoft.Build.BuildEngine` (MSBuild) para obtener y establecer las propiedades de proyecto y configuración del archivo de proyecto.  
   
-  The class you derive from `SettingsPage` must implement `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` and `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` to persist project or configuration properties of the project file.  
+  La clase que se deriva de `SettingsPage` debe implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` y `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para conservar las propiedades de configuración o de proyecto del archivo de proyecto.  
   
-## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute and Registry Path  
- Classes derived from `SettingsPage` are designed to be shared across VSPackages. To make it possible for a VSPackage to create a class derived from `SettingsPage`, add a `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` to a class derived from `Microsoft.VisualStudio.Shell.Package`.  
+## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute y ruta de acceso del registro  
+ Las clases derivadas de `SettingsPage` están diseñadas para compartirse entre los VSPackages. Para que un VSPackage pueda crear una clase derivada de `SettingsPage`, agregue un `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` a una clase derivada de `Microsoft.VisualStudio.Shell.Package`.  
   
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs#1)]
  [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb#1)]  
   
- The VSPackage to which the attribute is attached is unimportant. When a VSPackage is registered with [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], the class id (CLSID) of any object that can be created is registered so that a call to <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> can create it.  
+ El VSPackage al que está asociado el atributo no es importante. Cuando se registra un VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], se registra el identificador de clase (CLSID) de cualquier objeto que se pueda crear para que una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> pueda crearlo.  
   
- The registry path of an object that can be created is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, the word, CLSID, and the guid of the object type. If `MyProjectPropertyPage` class has a guid of {3c693da2-5bca-49b3-bd95-ffe0a39dd723} and the UserRegistryRoot is HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, then the registry path would be HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\{3c693da2-5bca-49b3-bd95-ffe0a39dd723}.  
+ La ruta de acceso del registro de un objeto que se puede crear se determina mediante la combinación de <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, la palabra, CLSID y el GUID del tipo de objeto. Si `MyProjectPropertyPage` clase tiene un GUID de {3c693da2-5bca-49b3-bd95-ffe0a39dd723} y UserRegistryRoot es HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0Exp, la ruta de acceso del registro sería HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0Exp\CLSID\\{3c693da2-5bca-49b3-bd95-ffe0a39dd723}.  
   
-## <a name="project-and-configuration-property-attributes-and-layout"></a>Project and Configuration Property Attributes and Layout  
- The <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, and <xref:System.ComponentModel.DescriptionAttribute> attributes determine the layout, labeling, and description of project and configuration properties in a generic property page. These attributes determine the category, display name, and description of the option, respectively.  
+## <a name="project-and-configuration-property-attributes-and-layout"></a>Diseño y atributos de la propiedad de configuración y del proyecto  
+ Los atributos <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>y <xref:System.ComponentModel.DescriptionAttribute> determinan el diseño, el etiquetado y la descripción de las propiedades de configuración y del proyecto en una página de propiedades genérica. Estos atributos determinan la categoría, el nombre para mostrar y la descripción de la opción, respectivamente.  
   
 > [!NOTE]
-> Equivalent attributes, SRCategory, LocDisplayName, and SRDescription, use string resources for localization and are defined in [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+> Los atributos equivalentes, SRCategory, LocDisplayName y SRDescription, usan recursos de cadena para la localización y se definen en [MPF para proyectos-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
  Observe el fragmento de código siguiente:  
   
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs#2)]
  [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb#2)]  
   
- The `MyConfigProp` configuration property appears on the configuration property page as **My Config Property** in the category, **My Category**. If the option is selected, the description, **My Description**, appears in the description panel.  
+ La propiedad de configuración `MyConfigProp` aparece en la página de propiedades configuración como **mi propiedad config** en la categoría, **mi categoría**. Si la opción está seleccionada, la descripción, **mi Descripción**, aparece en el panel Descripción.  
   
 ## <a name="see-also"></a>Vea también  
- [Not in Build: Walkthrough: Exposing Project and Configuration Properties (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
- [Adding and Removing Property Pages](../../extensibility/adding-and-removing-property-pages.md)   
- [VSPackage State](../../misc/vspackage-state.md)   
- [Projects](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio Templates](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [No está en la compilación: Tutorial: exponer propiedades de configuración yC#de proyecto ()](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Agregar y quitar páginas de propiedades](../../extensibility/adding-and-removing-property-pages.md)   
+   de [Estado de VSPackage](../../misc/vspackage-state.md)  
+ [Proyectos](../../extensibility/internals/projects.md)   
+ [NIB: plantillas de Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [Archivos de descripción del directorio de plantilla (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

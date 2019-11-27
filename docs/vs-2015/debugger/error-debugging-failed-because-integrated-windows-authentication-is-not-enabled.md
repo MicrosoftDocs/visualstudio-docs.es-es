@@ -1,5 +1,5 @@
 ---
-title: 'Error: Debugging Failed Because Integrated Windows Authentication Is Not Enabled | Microsoft Docs'
+title: 'Error: no se pudo realizar la depuración porque la autenticación integrada de Windows no está habilitada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -71,7 +71,7 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
   
 2. Active Autenticación de Windows y Compatibilidad con la administración de II6 si no lo hizo previamente; para ello, siga estos pasos:  
   
-    1. Click **Start**, click **Control Panel** and then click **Programs**.  
+    1. Haga clic en **Inicio**y en **Panel de control** ; a continuación, haga clic en **programas**.  
   
     2. En **Programas y características**, haga clic en **Activar o desactivar las características de Windows**.  
   
@@ -118,6 +118,6 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
 10. Cierre la ventana **Administrador de Internet Information Services (IIS)** .  
   
 ## <a name="see-also"></a>Vea también  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Autenticación implícita de Microsoft](https://go.microsoft.com/fwlink/?LinkId=77938)   
- [Running Web Applications on Windows Vista with IIS 7.0 and Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Ejecutar aplicaciones web en Windows Vista con IIS 7,0 y Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
