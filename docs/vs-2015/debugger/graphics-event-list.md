@@ -1,5 +1,5 @@
 ---
-title: Graphics Event List | Microsoft Docs
+title: Lista de eventos gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,14 +18,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297333"
 ---
-# <a name="graphics-event-list"></a>Lista de eventos gráficos
+# <a name="graphics-event-list"></a>Lista de eventos de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.  
   
  Esta es la lista de eventos:  
   
- ![A list of events that have "Index" in their name.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Una lista de eventos que tienen "índice" en su nombre.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Uso de la lista de eventos  
  Cuando selecciona un evento de la lista de eventos, se refleja en la información que muestran otras herramientas de análisis de gráficos. Si usa la lista en sintonía con estas otras herramientas, puede examinar un problema de representación en detalle para determinar su causa. Para obtener más información sobre cómo solucionar problemas de presentación usando la lista de eventos junto con otras herramientas de Análisis de gráficos, consulte [Ejemplos](../debugger/graphics-diagnostics-examples.md).  
@@ -56,7 +56,7 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
   
 - En la ventana **Lista de eventos gráficos** , encima de la lista de eventos, busque el cuadro desplegable **Vista** y elija entre la vista de **Escala de tiempo** o la de **Llamadas de dibujo** .  
   
-### <a name="filtering-events"></a>Filtrado de eventos  
+### <a name="filtering-events"></a>Filtrar eventos  
  Puede utilizar el Cuadro de búsqueda, situado en la esquina superior derecha de la ventana **Lista de eventos gráficos** , para filtrar la lista de eventos de modo que incluya solo los eventos cuyo nombre contenga determinadas palabras clave. Puede especificar una palabra clave, como `Vertex`(como se muestra en la ilustración anterior), o varias palabras clave separadas por un punto y coma, como `Draw;Primitive`, lo que mostrará eventos que tengan tanto `Draw` como `Primitive` en sus nombres. Las búsquedas distinguen los espacios (por ejemplo, `VSSet` y `VS Set` son búsquedas diferentes, de modo que debe efectuarlas con cuidado).  
   
 ### <a name="moving-between-draw-calls"></a>Cómo moverse entre llamadas de dibujo  
@@ -68,12 +68,12 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 ## <a name="kinds-of-events-and-event-markers"></a>Tipos y marcadores de eventos  
  Los eventos que se muestran en la lista de eventos se organizan en cuatro categorías: eventos generales, eventos de dibujo, grupos de eventos definidos por el usuario y marcadores de eventos definidos por el usuario. Excepto los eventos generales, cada evento se muestra junto con un icono que indica la categoría a la que pertenece.  
   
-|Iconos|Descripción del evento|  
+|Icono|Descripción del evento|  
 |----------|-----------------------|  
 |(sin icono)|Evento general<br /> Cualquier evento que no sea un evento definido por el usuario, un grupo de eventos definido por el usuario o un evento de dibujo.|  
-|![The draw event icon](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|  
-|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|  
-|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|  
+|![Icono de evento de dibujo](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|  
+|![Icono de&#45;marcador de eventos definido por el usuario](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|  
+|![Icono de&#45;marcador de eventos definido por el usuario](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marcar eventos definidos por el usuario en la aplicación  
  Los eventos definidos por el usuario son específicos de la aplicación. Puede utilizarlos para correlacionar eventos importantes que ocurren en su aplicación con eventos de la Lista de eventos gráficos. Por ejemplo, puede crear grupos de eventos definidos por el usuario para organizar eventos relacionados, como los que presentan la interfaz de usuario, en grupos o jerarquías, para poder examinar la lista de eventos más fácilmente o crear marcadores cuando se dibujan ciertos tipos de objetos y así poder encontrar fácilmente sus eventos de gráficos en la lista de eventos.  

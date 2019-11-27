@@ -1,5 +1,5 @@
 ---
-title: More Debugging Features | Microsoft Docs
+title: Más características de depuración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -47,7 +47,7 @@ Esta sección contiene características adicionales que puede usar con el depura
  [Editar y continuar](../debugger/edit-and-continue.md)  
  Describe Editar y continuar, una herramienta que permite cambiar el código fuente mientras el programa se encuentra en modo de interrupción y aplicar los cambios sin tener que terminar la sesión de depuración y compilar de nuevo el programa; e incluye instrucciones para habilitar o deshabilitar esta característica.  
   
- [Using Dump Files](../debugger/using-dump-files.md) Describes dump files, including instructions on saving and opening. Los archivos de volcado de memoria contienen una instantánea del estado de su programa en algún momento determinado, normalmente después de un bloqueo. Si prueba el programa en un equipo que no tiene instalados los archivos de código fuente o PDB, puede guardar un archivo de volcado de memoria cuando se produzca un bloqueo y utilizarlo para depurar el bloqueo en el equipo de compilación que contiene los archivos de código fuente y PDB. 
+ [Usar archivos de volcado](../debugger/using-dump-files.md) de memoria Describe los archivos de volcado de memoria, incluidas las instrucciones para guardar y abrir. Los archivos de volcado de memoria contienen una instantánea del estado de su programa en algún momento determinado, normalmente después de un bloqueo. Si prueba el programa en un equipo que no tiene instalados los archivos de código fuente o PDB, puede guardar un archivo de volcado de memoria cuando se produzca un bloqueo y utilizarlo para depurar el bloqueo en el equipo de compilación que contiene los archivos de código fuente y PDB. 
   
  [Cómo: Restaurar los comandos ocultos del depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Describe cómo hacer que estén visibles los comandos del depurador que la configuración predeterminada del IDE ha ocultado.

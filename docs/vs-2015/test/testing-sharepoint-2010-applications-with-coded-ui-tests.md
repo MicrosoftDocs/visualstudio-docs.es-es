@@ -29,14 +29,14 @@ Incluir pruebas de IU codificadas en una aplicación de SharePoint permite compr
 
  **Notas**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
+- ![Requisito previo](../test/media/prereq.png "Prereq") Las pruebas de IU codificadas para aplicaciones de SharePoint solo se admiten con SharePoint 2010.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
+- ![Requisito previo](../test/media/prereq.png "Prereq") No se admiten los controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Crear una prueba de IU codificada para la aplicación de SharePoint
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
 
- ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![Elementos Web de SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > Si se graba una acción, validar las acciones antes de generar código. Como hay varios comportamientos asociados con el desplazamiento del mouse, esta característica está activada de manera predeterminada. Tenga cuidado al quitar desplazamientos redundantes de las pruebas de IU codificadas. Puede hacerlo modificando el código de la prueba o usando el [editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Índice de contenido para la prueba de IU codificada](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Orientación
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+### <a name="guidance"></a>Guía
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196) (Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema)
 
 ### <a name="forum"></a>Foro
  [Blog de Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
 
 ## <a name="see-also"></a>Vea también
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Usar la automatización de la interfaz de usuario para probar el](../test/use-ui-automation-to-test-your-code.md) [rendimiento web de código y probar la carga de las aplicaciones de sharepoint 2010 y 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [crear soluciones de SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [comprobar y depurar](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) la [creación y depuración](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) de código de SharePoint soluciones de SharePoint generar [perfiles del rendimiento de las aplicaciones de SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

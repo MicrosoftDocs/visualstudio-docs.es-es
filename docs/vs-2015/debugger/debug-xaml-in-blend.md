@@ -1,5 +1,5 @@
 ---
-title: Debug XAML in Blend | Microsoft Docs
+title: Depurar XAML en Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -55,11 +55,11 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
     En el cuadro de diálogo **Nuevo proyecto**, aparece a la izquierda una lista de tipos de proyecto. Cuando hagas clic en un tipo de proyecto, las plantillas de proyecto asociadas a ese tipo aparecerán a la derecha.  
   
-2. In the list of project types, click **XAML (Windows Store)** .  
+2. En la lista de tipos de proyecto, haga clic en **XAML (tienda Windows)** .  
   
-3. In the list of project templates, click **Blank App**.  
+3. En la lista de plantillas de proyecto, haga clic en **aplicación en blanco**.  
   
-4. In the **Name** text box, type `DebuggingSample`.  
+4. En el cuadro de texto **nombre** , escriba `DebuggingSample`.  
   
 5. En el cuadro de texto **Ubicación**, compruebe la ubicación del proyecto.  
   
@@ -106,24 +106,24 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
 ##### <a name="to-resolve-the-xaml-errors"></a>Para resolver los errores de XAML  
   
-1. Haz doble clic en el primer error de la lista. The description is "The value '<' is not valid in an attribute." Al hacer doble clic en el error, el puntero busca la ubicación correspondiente en el código. El elemento `<` que aparece delante de `Button` es válido, y no es un atributo como se indica en el mensaje de error. Si examinas la línea de código anterior, observarás que faltan las comillas de cierre del atributo `Top`. Escribe las comillas de cierre. Observe que la lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
+1. Haz doble clic en el primer error de la lista. La descripción es "el valor ' < ' no es válido en un atributo". Al hacer doble clic en el error, el puntero busca la ubicación correspondiente en el código. El elemento `<` que aparece delante de `Button` es válido, y no es un atributo como se indica en el mensaje de error. Si examinas la línea de código anterior, observarás que faltan las comillas de cierre del atributo `Top`. Escribe las comillas de cierre. Observe que la lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
   
-2. Double-click the description "'0' is not valid at the start of a name." `Margin="0,149,0,0"` appears to be well formed. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
+2. Haga doble clic en la descripción "' 0 ' no es válido al principio de un nombre". `Margin="0,149,0,0"` parece tener el formato correcto. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores del panel **Resultados** se actualiza para reflejar los cambios.  
   
 3. Haz doble clic en el otro error: "La etiqueta XML de cierre 'Button' no tiene una etiqueta de apertura correspondiente". El puntero se coloca en la etiqueta **Cuadrícula** de cierre (`</Grid>`), lo que sugiere que el error está dentro del objeto `Grid`. Observa que al segundo objeto `Button` le falta la etiqueta de cierre. Cuando agregue la `/` de cierre, la lista del panel **Resultados** se actualizará. Ahora que se han resuelto estos errores iniciales, se han identificado dos errores más.  
   
 4. Haz doble clic en "No se reconoce o no se puede tener acceso al miembro 'content'". La c `c` de `content` debería estar en mayúsculas. Sustituye la "c" minúscula por una "c" mayúscula.  
   
-5. Double-click "The property 'Mame' does not exist in the '<https://schemas.microsoft.com/winfx/2006/xaml>' namespace." La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
+5. Haga doble clic en "la propiedad ' MAME ' no existe en el espacio de nombres '<https://schemas.microsoft.com/winfx/2006/xaml>'". La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
   
-    ![Debugging XAML in Blend for Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![Depurar XAML en Blend para Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     Presiona Ctrl+Mayús+B para compilar el proyecto y confirmar que no queda ningún error.  
   
 ## <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio  
  Puede abrir proyectos de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio para depurar el código de su aplicación más fácilmente. Para abrir un proyecto de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio, haga clic con el botón derecho en el proyecto en el panel **Proyectos** y, después, en **Editar en Visual Studio**. Cuando termine la sesión de depuración en Visual Studio, presione Ctrl+Mayús+S para guardar todos los cambios y después vuelva a [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Se te preguntará si deseas recargar el proyecto. Haga clic en **Sí a todo** para continuar trabajando en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- For more information about debugging your app, see [Debug Windows Store apps in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Para obtener más información sobre cómo depurar la aplicación, vea [depurar aplicaciones de la tienda Windows en Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
   
-## <a name="getting-help"></a>Obtener ayuda  
- If you need more help debugging your [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, you can search the [Windows Store app community forums](https://go.microsoft.com/fwlink/?LinkId=280308) for posts related your issue or post a question.
+## <a name="getting-help"></a>Obtención de ayuda  
+ Si necesita más ayuda para depurar la aplicación [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], puede buscar en los foros de la comunidad de aplicaciones de la [tienda Windows](https://go.microsoft.com/fwlink/?LinkId=280308) las entradas relacionadas con su problema o publicar una pregunta.

@@ -43,9 +43,9 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
+   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita ningún punto y coma en Visual Basic). La instrucción anterior indica al control `PictureBox` que cargue el archivo que el usuario seleccionó con el componente **OpenFileDialog** .
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 5 o el](https://go.microsoft.com/fwlink/?LinkId=205216) [tutorial 1: C# crear un visor de imágenes en-vídeo 5](https://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-comments"></a>Para agregar comentarios
 
@@ -66,13 +66,13 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
 2. Guarde el programa antes de ejecutarlo, para ello, elija el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
+     ![Botón guardar todo](../ide/media/express-iconsaveall.png "Express_IconSaveAll") de la barra de herramientas Botón guardar todo
 
      Si quiere, para guardar el programa, elija **Archivo**, **Guardar todo** en la barra de menús. El procedimiento recomendado consiste en guardar desde el principio y a menudo.
 
      Mientras se ejecuta, el programa debería parecerse a la siguiente imagen.
 
-     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
+     ![Visor de imágenes](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Visor de imágenes
 
 ### <a name="to-test-your-program"></a>Para probar el programa
 

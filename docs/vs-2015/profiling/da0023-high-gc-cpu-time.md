@@ -23,11 +23,11 @@ ms.locfileid: "74300106"
 # <a name="da0023-high-gc-cpu-time"></a>DA0024: Tiempo elevado de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0023|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|% Time in GC is fairly high. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación usa mejor.|  
-|Rule type|Informational|  
+Identificador de regla | DA0023 |  
+| Categoría |. Uso de .NET Framework |  
+| Método de generación de perfiles | Todo |  
+| El mensaje |% de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación usa mejor.|  
+| Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   

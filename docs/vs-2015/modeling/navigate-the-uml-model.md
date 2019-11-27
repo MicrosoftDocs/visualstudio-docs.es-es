@@ -1,5 +1,5 @@
 ---
-title: Navigate the UML model | Microsoft Docs
+title: Navegar por el modelo UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -24,15 +24,15 @@ ms.locfileid: "74289848"
 En este tema se presentan los principales tipos del modelo UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Modelo, elementos del modelo y almacén de modelos
- The types defined in the assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** correspond to the types defined in the [UML Specification, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ Los tipos definidos en el ensamblado **Microsoft. VisualStudio. UML. interfaces. dll** corresponden a los tipos definidos en la [especificación de UML, versión 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
- Los tipos de la especificación de UML se realizan como interfaces en Visual Studio. La letra 'I' se antepone al nombre de cada tipo. For example: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ Los tipos de la especificación de UML se realizan como interfaces en Visual Studio. La letra 'I' se antepone al nombre de cada tipo. Por ejemplo: [IElement](/previous-versions/dd516035(v=vs.140)), [iclass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
  Todos los tipos excepto IElement heredan las propiedades de uno o varios supertipos.
 
-- For a summary of the model types, see [UML model element types](../modeling/uml-model-element-types.md).
+- Para obtener un resumen de los tipos de modelo, vea [tipos de elementos del modelo UML](../modeling/uml-model-element-types.md).
 
-- For full details of the API, see [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md).
+- Para obtener detalles completos de la API, vea [referencia de API para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ### <a name="relationships"></a>Relaciones
  Las propiedades y relaciones que se definen en la especificación de UML se implementan como propiedades .NET.
@@ -45,18 +45,18 @@ En este tema se presentan los principales tipos del modelo UML.
 
  Si elimina un elemento del modelo, se elimina automáticamente cualquier relación de la que forme parte y se actualiza la propiedad situada en el otro extremo.
 
- Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. A multiplicity with maximum greater than 1 means that the .NET property has the type: `IEnumerable<`*Type*`>`.
+ Si la especificación de UML asigna una multiplicidad de 0..1 a una propiedad, puede tener el valor `null`. Una multiplicidad con un valor máximo mayor que 1 significa que la propiedad .NET tiene el tipo: `IEnumerable<`*tipo*`>`.
 
- For more information about traversing relationships, see [Navigate relationships with the UML API](../modeling/navigate-relationships-with-the-uml-api.md).
+ Para obtener más información sobre cómo recorrer las relaciones, vea [navegar por las relaciones con la API de UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Árbol de propiedad
- A model contains a tree of [IElement](/previous-versions/dd516035(v=vs.140)) objects. Cada elemento tiene las propiedades `OwnedElements` y `Owner`.
+ Un modelo contiene un árbol de objetos [IElement](/previous-versions/dd516035(v=vs.140)) . Cada elemento tiene las propiedades `OwnedElements` y `Owner`.
 
- En la mayoría de los casos, también existen referencias a los destinos de las propiedades `Owner` y `OwnedElements` en otras propiedades que tienen nombres más específicos. Por ejemplo, cada una de las operaciones de UML pertenece a una clase UML. Therefore [IOperation](/previous-versions/dd481186(v=vs.140)) has a property named [IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29), and in every [IOperation](/previous-versions/dd481186(v=vs.140)) object, `Class == Owner`.
+ En la mayoría de los casos, también existen referencias a los destinos de las propiedades `Owner` y `OwnedElements` en otras propiedades que tienen nombres más específicos. Por ejemplo, cada una de las operaciones de UML pertenece a una clase UML. Por lo tanto, [IOperation](/previous-versions/dd481186(v=vs.140)) tiene una propiedad denominada [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)y en cada objeto [IOperation](/previous-versions/dd481186(v=vs.140)) , `Class == Owner`.
 
- The topmost element of the tree, which has no Owner, is an `AuxiliaryConstructs.IModel`. The IModel is contained within a `IModelStore`, in which it is the [IModelStore.Root](/previous-versions/ee789368(v=vs.140)).
+ El elemento de nivel superior del árbol, que no tiene propietario, es un `AuxiliaryConstructs.IModel`. Objeto imodel se encuentra dentro de un `IModelStore`, en el que es [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
- Cada elemento del modelo se crea con un propietario. For more information, see [Create elements and relationships in UML models](../modeling/create-elements-and-relationships-in-uml-models.md).
+ Cada elemento del modelo se crea con un propietario. Para obtener más información, vea [crear elementos y relaciones en modelos UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
  ![Diagrama de clases: modelo, diagrama, forma y elemento](../modeling/media/uml-mm1.png)
 
@@ -67,7 +67,7 @@ En este tema se presentan los principales tipos del modelo UML.
 
  Las formas están organizadas en un árbol. Los bordes del árbol se representan mediante las propiedades ParentShape y ChildShapes. Los diagramas son las únicas formas que no tienen elementos primarios. Las formas de la superficie de un diagrama se crean a partir de elementos más pequeños. Por ejemplo, la forma de una clase tiene compartimientos para los atributos y las operaciones.
 
- For more information about shapes, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
+ Para obtener más información acerca de las formas, vea [Mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).
 
 ## <a name="access-to-the-model-in-extensions"></a>Acceso al modelo en las extensiones
  En las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] definidas como componentes MEF, puede declarar propiedades que importen información a partir del contexto en el que se ejecuta la extensión.
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Tener acceso a otro modelo o diagramas
  Puede realizar lo siguiente:
 
-- Use Model Bus de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear vínculos entre elementos de modelos diferentes. For more information, see [Integrate UML models with other models and tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+- Use Model Bus de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear vínculos entre elementos de modelos diferentes. Para obtener más información, vea [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- Cargue un proyecto y diagramas de modelado en el modo de solo lectura sin hacerlo visible en la interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. For more information, see [Read a UML model in program code](../modeling/read-a-uml-model-in-program-code.md).
+- Cargue un proyecto y diagramas de modelado en el modo de solo lectura sin hacerlo visible en la interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, vea [leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md).
 
-- Abra un proyecto de modelado y sus diagramas en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, tenga acceso al contenido. For more information, see [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+- Abra un proyecto de modelado y sus diagramas en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, tenga acceso al contenido. Para obtener más información, vea [abrir un modelo UML mediante la API de Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
 ## <a name="see-also"></a>Vea también
 

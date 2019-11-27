@@ -51,7 +51,7 @@ En este documento, se describen las herramientas de [!INCLUDE[vsprvs](../include
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con imágenes y texturas.|
 |[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con modelos 3D.|

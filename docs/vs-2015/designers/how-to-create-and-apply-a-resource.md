@@ -26,7 +26,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
  Siempre que crea un recurso a partir de una propiedad existente, [Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) o `ControlTemplate`, el cuadro de diálogo **Crear recurso** permite definir el recurso en el nivel de aplicación, nivel de documento o nivel de elemento. Estos niveles determinan dónde se puede usar el recurso. Por ejemplo, si define el recurso en el nivel de elemento, solo se podrá aplicar el recurso al elemento para el que lo creó. También puede almacenar el recurso en un diccionario de recursos: un archivo independiente que puede volver a usar en otro proyecto.
 
-### <a name="to-create-a-new-resource"></a>Para crear un recurso nuevo
+### <a name="to-create-a-new-resource"></a>Para crear un nuevo recurso
 
 1. Con un archivo XAML abierto en el diseñador XAML, cree un elemento o elija uno en la ventana Esquema del documento.
 
@@ -34,7 +34,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:
 
-     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Cuadro de diálogo crear recurso](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. En el cuadro **Nombre (clave)** , escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.
 

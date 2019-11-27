@@ -23,11 +23,11 @@ ms.locfileid: "74291176"
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0506|  
-|Category|Resource Monitoring|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. El contador de bytes privados del proceso mide la memoria virtual asignada por el proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.|  
-|Rule type|Information|  
+Identificador de regla | DA0506 |  
+| Categoría | Supervisión de recursos |  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Esta información se recopiló solo como información. El contador de bytes privados del proceso mide la memoria virtual asignada por el proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.|  
+| Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   

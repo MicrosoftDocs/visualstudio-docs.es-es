@@ -21,7 +21,7 @@ ms.locfileid: "74295746"
 
 Después, se usa la ventana **Propiedades** para cambiar la apariencia del formulario.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://go.microsoft.com/fwlink/?LinkId=205209) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Para establecer las propiedades del formulario
 
@@ -34,7 +34,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 
 3. Una vez seleccionado el formulario, busque la propiedad **Texto** en la ventana **Propiedades**. En función del orden de la lista, puede que deba desplazarse hacia abajo. Elija **Texto**, escriba **Visor de imágenes** y elija ENTRAR.  Ahora, el formulario debería tener el texto **Visor de imágenes** en la barra de título y la ventana **Propiedades** debería parecerse a la siguiente.
 
-    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Properties window
+    ![Ventana Propiedades](../ide/media/express-edittextproperty.png "Express_EditTextProperty") ventana Propiedades
 
    > [!NOTE]
    > Las propiedades se pueden ordenar en vistas por categorías o alfabética. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista alfabética.
@@ -55,7 +55,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 
    - En la barra de herramientas, elija el botón **Iniciar depuración**, que es similar al siguiente.
 
-      ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
+      ![Botón de la barra de herramientas iniciar depuración](../ide/media/express-icondebug.png "Express_IconDebug") Botón de la barra de herramientas iniciar depuración
 
      Exactamente igual que antes, el IDE compila y ejecuta el programa, y aparece una ventana.
 

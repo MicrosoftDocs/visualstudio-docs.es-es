@@ -1,5 +1,5 @@
 ---
-title: 'Error: Ensure that DNS is Correctly Configured on the Target Computer | Microsoft Docs'
+title: 'Error: Asegúrese de que DNS esté configurado correctamente en el equipo de destino | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -38,4 +38,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Para obtener más información, vaya al [sitio web de Microsoft Windows](https://go.microsoft.com/fwlink/?LinkId=252720) y busque **Cambiar la configuración de TCP/IP**.  
   
-  Si no puede resolver el problema de DNS, intente ejecutar el depurador remoto con una cuenta diferente. Este error solo se produce cuando se ejecuta el depurador remoto con el sistema local o cuenta de servicio de red. Si ejecuta el depurador remoto con otra cuenta, puede que la cuenta use la autenticación NTLM, que no requiere DNS. . For the procedure, see [Error: The Visual Studio Remote Debugger service on the target computer cannot connect back to this computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Si no puede resolver el problema de DNS, intente ejecutar el depurador remoto con una cuenta diferente. Este error solo se produce cuando se ejecuta el depurador remoto con el sistema local o cuenta de servicio de red. Si ejecuta el depurador remoto con otra cuenta, puede que la cuenta use la autenticación NTLM, que no requiere DNS. . Para el procedimiento, consulte [error: el servicio Visual Studio Remote Debugger del equipo de destino no se puede volver a conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

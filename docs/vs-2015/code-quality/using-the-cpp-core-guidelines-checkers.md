@@ -1,5 +1,5 @@
 ---
-title: Using the C++ Core Guidelines checkers | Microsoft Docs
+title: Usar los C++ comprobadores de directrices principales | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
@@ -19,44 +19,44 @@ ms.locfileid: "74291235"
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers.  Visual Studio now supports add-in packages that create additional rules for the code analysis tools to check your code for compliance with the C++ Core Guidelines and suggest improvements.  
+Las C++ instrucciones básicas son un conjunto portátil de directrices, reglas y prácticas recomendadas sobre la codificación C++ en creadas C++ por expertos y diseñadores.  Visual Studio ahora admite paquetes de complementos que crean reglas adicionales para las herramientas de análisis de código con el fin de comprobar el C++ cumplimiento del código con las directrices básicas y sugerir mejoras.  
   
-## <a name="the-c-core-guidelines-project"></a>The C++ Core Guidelines Project  
- Created by Bjarne Stroustrup and others, the C++ Core Guidelines are a guide to using modern C++ safely and effectively. The Guidelines emphasize static type safety and resource safety. They identify ways to eliminate or minimize the most error-prone parts of the language, and suggest how to  make your code simpler and more performant in a reliable way. These guidelines are maintained by the Standard C++ Foundation. To learn more, see the documentation, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), and access the C++ Core Guidelines documentation project files on [GitHub](https://github.com/isocpp/CppCoreGuidelines).  
+## <a name="the-c-core-guidelines-project"></a>Proyecto C++ de directrices básicas  
+ Creado por Bjarne Stroustrup y otros, las C++ directrices principales son una guía para el uso C++ moderno y seguro de forma segura. Las instrucciones resaltan la seguridad de tipos estáticos y la seguridad de los recursos. Identifican maneras de eliminar o minimizar las partes más propensas a errores del lenguaje y sugieren cómo hacer que el código sea más sencillo y más eficaz de forma confiable. Estas instrucciones las mantiene la base estándar C++ . Para obtener más información, consulte la documentación, C++ [ C++ las directrices principales](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)y el acceso a los archivos de proyecto de documentación de directrices básicas en [GitHub](https://github.com/isocpp/CppCoreGuidelines).  
   
- Microsoft supports the C++ Core Guidelines effort by making C++ Core Check code analysis rule sets that you can add to your projects by using a Nuget package. The package is named Microsoft.CppCoreCheck, and it is available at [https://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.  
+ Microsoft admite el C++ esfuerzo de las directrices básicas C++ mediante el uso de conjuntos de reglas de análisis de código de comprobación básica que puede Agregar a los proyectos mediante un paquete Nuget. El paquete se denomina Microsoft. CppCoreCheck y está disponible en [https://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que haya al menos Visual Studio 2015 con Update 1 instalado.  
   
- The package also installs another package as a dependency, a header-only Guideline Support Library (GSL). The GSL is also available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ El paquete también instala otro paquete como una dependencia, una biblioteca de compatibilidad de instrucciones solo de encabezado (GSL). GSL también está disponible en GitHub en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
   
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Enable the C++ Core Check guidelines in Code Analysis  
- To enable the C++ Core Check code analysis tools, install the Microsoft.CppCoreCheck NuGet package into each C++ project that you want to check within Visual Studio.  
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar las C++ directrices de la comprobación básica en el análisis de código  
+ Para habilitar las C++ herramientas de análisis de código de comprobación básica, instale el paquete NuGet Microsoft. C++ CppCoreCheck en cada proyecto que desee comprobar en Visual Studio.  
   
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>To add the Microsoft.CppCoreCheck package to your project  
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Para agregar el paquete Microsoft. CppCoreCheck al proyecto  
   
-1. In **Solution Explorer**, right-click to open the context menu of your Project in the Solution that you want to add the package to. Choose **Manage NuGet Packages** to open the **NuGet Package Manager**.  
+1. En **Explorador de soluciones**, haga clic con el botón derecho para abrir el menú contextual del proyecto en la solución a la que desea agregar el paquete. Elija **administrar paquetes Nuget** para abrir el **Administrador de paquetes Nuget**.  
   
-2. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.  
+2. En la ventana **Administrador de paquetes NuGet** , busque Microsoft. CppCoreCheck.  
   
-    ![Nuget Package Manager window shows CppCoreCheck package](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![La ventana Administrador de paquetes Nuget muestra el paquete CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.  
+3. Seleccione el paquete Microsoft. CppCoreCheck y, a continuación, elija el botón **instalar** para agregar las reglas al proyecto.  
   
-   The NuGet package adds an additional MSBuild .targets file to your project that is invoked when you enable code analysis on your project. This .targets file adds the C++ Core Check rules as an additional extension to the Visual Studio code analysis tool.  
+   El paquete NuGet agrega un archivo MSBuild. targets adicional al proyecto que se invoca cuando se habilita el análisis de código en el proyecto. Este archivo. targets agrega C++ las reglas de comprobación básicas como extensión adicional a la herramienta de análisis de código de Visual Studio.  
   
-   You can enable code analysis on your project by selecting the **Enable Code Analysis on Build** checkbox in the **Code Analysis** section of the **Property Pages** dialog for your project.  
+   Puede habilitar el análisis de código en el proyecto activando la casilla **Habilitar análisis de código al compilar** en la sección **análisis de código** del cuadro de diálogo **páginas de propiedades** del proyecto.  
   
-   ![Property page for Code Analysis General settings](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Página de propiedades de la configuración general de análisis de código](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
-   The C++ Core Check rules become part of the default rule sets that run when code analysis is enabled. Because the C++ Core Check rules are under development, some rules may not be ready for use on all code, but may be informative during development. These rules are released as experimental. You can choose whether to run the released or experimental rules in the properties for your project.  
+   Las C++ reglas de comprobación básicas forman parte de los conjuntos de reglas predeterminados que se ejecutan cuando se habilita el análisis de código. Dado que C++ las reglas de comprobación básica están en desarrollo, algunas reglas pueden no estar listas para su uso en todo el código, pero pueden ser informativas durante el desarrollo. Estas reglas se publican como experimentales. Puede elegir si desea ejecutar las reglas publicadas o experimentales en las propiedades del proyecto.  
   
-   ![Property page for Code Analysis Extensions settings](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Página de propiedades de la configuración de extensiones de análisis de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   To enable or disable the C++ Core Check rule sets, open the **Property Pages** dialog for your project. Under **Configuration Properties**, expand  **Code Analysis**, **Extensions**. In the dropdown control next to **Enable C++ Core Check (Released)** or **Enable C++ Core Check (Experimental)** ,  choose **Yes** or **No**. Choose **OK** or **Apply** to save your changes.  
+   Para habilitar o deshabilitar C++ los conjuntos de reglas de comprobación básica, abra el cuadro de diálogo **páginas de propiedades** del proyecto. En **propiedades de configuración**, expanda **análisis de código**, **extensiones**. En el control desplegable situado **junto C++ a habilitar comprobación básica (lanzamiento)** o **habilitar C++ comprobación básica (experimental)** , elija **sí** o **no**. Elija **Aceptar** o **aplicar** para guardar los cambios.  
   
-## <a name="check-types-bounds-and-lifetimes"></a>Check Types, Bounds, and Lifetimes  
- The C++ Core Check package currently contains checkers for the [Type safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [Bounds safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), and [Lifetime safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profiles.  
+## <a name="check-types-bounds-and-lifetimes"></a>Comprobar tipos, límites y duraciones  
+ El C++ paquete de comprobación básica contiene actualmente los comprobadores de los perfiles [seguridad de tipos](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), seguridad de los [límites](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)y seguridad de la [duración](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
   
- Here’s an example of the kind of issues that the C++ Core Check rules can find:  
+ Este es un ejemplo del tipo de problemas que pueden encontrar C++ las reglas de comprobación básicas:  
   
 ```cpp  
 // CoreCheckExample.cpp  
@@ -77,31 +77,31 @@ int main()
 }  
 ```  
   
- This example demonstrates a few of the warnings that the C++ Core Check rules can find:  
+ En este ejemplo se muestran algunas de las advertencias que C++ las reglas de comprobación básicas pueden encontrar:  
   
-- C26494 is rule Type.5: Always initialize an object.  
+- C26494 es el tipo de regla. 5: inicializar siempre un objeto.  
   
-- C26485 is rule Bounds.3: No array-to-pointer decay.  
+- C26485 es un límite de reglas. 3: no hay decadencia de matriz a puntero.  
   
-- C26481 is rule Bounds.1: Don’t use pointer arithmetic. Utilice `span` en su lugar.  
+- C26481 es un límite de regla. 1: no se usa aritmética de punteros. Utilice `span` en su lugar.  
   
-  If the C++ Core Check code analysis rulesets are installed and enabled when you compile this code, the first two warnings are output, but the third is suppressed. Here's the build output from the example code:  
+  Si los C++ conjuntos de herramientas de análisis de código de comprobación básica se instalan y se habilitan al compilar este código, se generan las dos primeras advertencias, pero se suprime la tercera. Este es el resultado de la compilación del código de ejemplo:  
   
-**1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 --**  
+**1 >------compilación iniciada: proyecto: CoreCheckExample, configuración: depurar Win32--**  
 **----**  
-**1>  CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample. cpp**  
+**1 > CoreCheckExample. vcxproj-> C:\Users\username\documents\visual Studio 2015 \ P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
-**c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitializ**  
-**ed. Always initialize an object. (type.5: https://go.microsoft.com/fwlink/p/?Link**  
-**ID=620421)**  
-**c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to**  
-**pointer decay. (bounds.3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========** The C++ Core Guidelines are there to help you write better and safer code. However, if you have an instance where a rule or a profile shouldn’t be applied, it’s easy to suppress it directly in the code. You can use the `gsl::suppress` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number.  
+**1 > CoreCheckExample. vcxproj-> C:\Users\username\documents\visual Studio 2015 \ P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
+**c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
+**ckexample\corecheckexample.cpp (6): ADVERTENCIA C26494: la variable ' ARR ' es uninitializ**  
+**Ed. inicializar siempre un objeto. (tipo. 5: https://go.microsoft.com/fwlink/p/?Link**  
+**ID = 620421)**  
+**c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
+**ckexample\corecheckexample.cpp (7): ADVERTENCIA C26485: expresión ' ARR ': no hay matriz a**  
+**caída del puntero. (Bounds. 3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  
+= = = = = = = = = **= Compilación: 1 correcta, 0 con errores, 0 actualizados, 0 omitidos = =** = = = = = = = = Aquí C++ encontrará instrucciones básicas que le ayudarán a escribir código mejor y más seguro. Sin embargo, si tiene una instancia de en la que no se debe aplicar una regla o un perfil, es fácil suprimirla directamente en el código. Puede usar el atributo `gsl::suppress` para mantener C++ la comprobación principal de detectar e informar de cualquier infracción de una regla en el siguiente bloque de código. Puede marcar instrucciones individuales para suprimir reglas específicas. Incluso puede suprimir el perfil de límite completo escribiendo `[[gsl::suppress(bounds)]]` sin incluir un número de regla específico.  
   
-## <a name="use-the-guideline-support-library"></a>Use the Guideline Support Library  
- The Microsoft.CppCoreCheck NuGet package also installs a package that contains Microsoft’s implementation of the Guideline Support Library (GSL). The GSL is also available in standalone form at [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). This library is helpful if you want to follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is open source, so if you want to take a look at the library sources, comment, or contribute, the project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+## <a name="use-the-guideline-support-library"></a>Usar la biblioteca de compatibilidad de directrices  
+ El paquete NuGet Microsoft. CppCoreCheck también instala un paquete que contiene la implementación de Microsoft de la biblioteca de compatibilidad de instrucciones (GSL). GSL también está disponible en formato independiente en [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Esta biblioteca es útil si desea seguir las directrices básicas. GSL incluye definiciones que permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un par `T*, length` de parámetros con el tipo `span<T>`. El GSL es de código abierto, por lo que si desea echar un vistazo a los orígenes de biblioteca, comentarios o contribuir, el proyecto se puede encontrar en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).

@@ -86,9 +86,9 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |Planear pruebas, crear casos de prueba y organizar conjuntos de pruebas|Sí||  
 |Pruebas manuales|Sí||  
 |Administrador de pruebas (grabar y reproducir pruebas)|Sí|Dispositivos Windows y emuladores de Android únicamente de Visual Studio. Con la [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder) es posible grabar en todos los dispositivos.|  
-|Cobertura de código|no disponible||  
-|[Hacer una prueba unitaria del código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Configuring TFS for Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sitio web de Xamarin).|  
-|[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La grabadora de pruebas de interfaz de usuario de Visual Studio es solo para Windows. Para todas las plataformas, vea [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
+|Cobertura de código|N/D||  
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Configuring TFS for Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sitio web de Xamarin).|  
+|[Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La grabadora de pruebas de interfaz de usuario de Visual Studio es solo para Windows. Para todas las plataformas, vea [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código  
  Vínculo de referencia: **[Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -108,7 +108,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |-------------|----------------------------|-------------------------|  
 |Administrar procesos de versión|Sí||  
 |Implementar en servidores para la instalación de prueba mediante scripts|Sí||  
-|Cargar a la tienda de aplicaciones|Partial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Supervisión con HockeyApp  
  Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net/features/)**  

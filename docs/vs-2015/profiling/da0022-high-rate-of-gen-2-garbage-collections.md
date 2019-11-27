@@ -23,11 +23,11 @@ ms.locfileid: "74300115"
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0022|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|There is a fairly high rate of Gen 2 garbage collections occurring. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
-|Rule type|Warning|  
+Identificador de regla | DA0022 |  
+| Categoría |. Uso de .NET Framework |  
+| Método de generación de perfiles | Todo |  
+| Mensaje | Hay una frecuencia bastante alta de recolección de elementos no utilizados de gen 2. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
+| Tipo de regla | ADVERTENCIA |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
@@ -42,7 +42,7 @@ Rule Id|DA0022|
  Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. En las aplicaciones .NET Framework que exhiben un buen comportamiento, la recolección de elementos no utilizados de la generación 1 se producirá 5 veces más que la colección de la generación 2. (Un factor 10x es probablemente ideal).  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **% de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
+ Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **Porcentaje de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
   
  Una proporción alta de recolección de elementos no utilizados de la generación 2 no siempre es un problema. Podría ser por diseño. Una aplicación que asigne estructuras de datos grandes que deban permanecer activas durante largos períodos durante la ejecución puede desencadenar esta regla. Cuando este tipo de aplicación está bajo presión de memoria, podría verse obligada a realizar con frecuencia la recolección de elementos no utilizados. Si la recolección de elementos no utilizados de las generaciones 0 y 1, menos costosa, puede reclamar solo una pequeña cantidad de memoria administrada, se programará con mayor frecuencia la recolección de elementos no utilizados de la generación 2.  
   

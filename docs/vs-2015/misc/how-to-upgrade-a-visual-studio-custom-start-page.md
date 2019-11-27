@@ -1,5 +1,5 @@
 ---
-title: 'How to: Upgrade a Custom Start Page | Microsoft Docs'
+title: 'Cómo: actualizar una página de inicio personalizada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp

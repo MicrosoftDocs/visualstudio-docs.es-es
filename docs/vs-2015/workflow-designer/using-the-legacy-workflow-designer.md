@@ -1,5 +1,5 @@
 ---
-title: Using the Legacy Workflow Designer | Microsoft Docs
+title: Usar el Diseñador de flujo de trabajo heredado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,22 +21,22 @@ ms.locfileid: "74302781"
 # <a name="using-the-legacy-workflow-designer"></a>Usar el Diseñador de flujo de trabajo heredado
 El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)] se puede usar para tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- It is accessed by selecting either the **.NET Framework 3.0** option or the **.NET Framework 3.5** option in the drop down list at the top of the **New Project** window. The default option in [!INCLUDE[vs2010](../includes/vs2010-md.md)] is **.NET Framework 4** which is used to create [!INCLUDE[wf](../includes/wf-md.md)] applications that target the [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+ Se tiene acceso a él seleccionando la opción **.NET Framework 3,0** o la opción **.NET Framework 3,5** de la lista desplegable de la parte superior de la ventana **nuevo proyecto** . La opción predeterminada en [!INCLUDE[vs2010](../includes/vs2010-md.md)] es **.NET Framework 4** , que se usa para crear [!INCLUDE[wf](../includes/wf-md.md)] aplicaciones destinadas al [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] proporciona una manera de crear gráficamente aplicaciones de [!INCLUDE[wf](../includes/wf-md.md)] mediante la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[wf](../includes/wf-md.md)] las aplicaciones de flujo de trabajo están formadas por pasos de proceso de flujo de trabajo denominados actividades. To create a workflow, compose activities on the design surface by dragging their respective activity designers from **Toolbox** onto the design surface.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] proporciona una manera de crear gráficamente aplicaciones de [!INCLUDE[wf](../includes/wf-md.md)] mediante la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[wf](../includes/wf-md.md)] las aplicaciones de flujo de trabajo están formadas por pasos de proceso de flujo de trabajo denominados actividades. Para crear un flujo de trabajo, cree actividades en la superficie de diseño arrastrando sus diseñadores de actividad respectivos desde el **cuadro de herramientas** hasta la superficie de diseño.
 
  En la siguiente tabla se enumeran las características clave de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para Windows Workflow Foundation.
 
 |Característica|Descripción|
 |-------------|-----------------|
-|Arrastrar y colocar actividad|Drag activities from the **Toolbox** onto the design surface to create a workflow.|
-|Examinador de propiedades|The standard **Properties** window in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] is used to configure the properties of an activity.|
-|Zoom|The binoculars **Zoom Level** icon is located below the vertical scroll bar on the right side of the design surface. Click the binoculars and select a zoom percentage to cause the workflow graphic to zoom in or out. You can also use the **Pan** icon magnifying glass cursor options to zoom in and out.|
-|Movimiento panorámico|The **Pan** icon, a circle that contains four crossed arrows pointing in four directions, is located below the vertical scroll bar on the right side of the design surface just below the binoculars zoom icon. Si hace clic en el icono de panorámica, aparece un menú emergente con las opciones de cursor siguientes:<br /><br /> -   The **Zoom In** magnifying glass cursor lets you zoom in by clicking the design surface.<br />-   The **Zoom Out** magnifying glass cursor lets you zoom out by clicking the design surface.<br />-   The **Navigation Tool** hand cursor lets you "grab" and shift the view of a workflow in the design surface.<br />-   The **Default** arrow cursor lets you switch from the other cursors back to the default arrow cursor.|
+|Arrastrar y colocar actividad|Arrastre actividades desde el **cuadro de herramientas** hasta la superficie de diseño para crear un flujo de trabajo.|
+|Examinador de propiedades|La ventana **propiedades** estándar de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se utiliza para configurar las propiedades de una actividad.|
+|Zoom|El icono de **nivel de zoom** prismáticos se encuentra debajo de la barra de desplazamiento vertical en el lado derecho de la superficie de diseño. Haga clic en los prismáticos y seleccione un porcentaje de zoom para que el gráfico de flujo de trabajo acercar o alejar. También puede usar las opciones de cursor de lupa del icono de **panorámica** para acercar y alejar.|
+|Panorámica|El icono de **panorámica** , un círculo que contiene cuatro flechas cruzadas que apuntan a cuatro direcciones, se encuentra debajo de la barra de desplazamiento vertical en el lado derecho de la superficie de diseño justo debajo del icono de zoom de prismáticos. Si hace clic en el icono de panorámica, aparece un menú emergente con las opciones de cursor siguientes:<br /><br /> -El **zoom en** el cursor de lupa le permite acercar haciendo clic en la superficie de diseño.<br />-El **cursor de lupa alejar** le permite alejar haciendo clic en la superficie de diseño.<br />-El cursor de mano de la **herramienta de navegación** le permite "captar" y desplazar la vista de un flujo de trabajo en la superficie de diseño.<br />-El cursor de flecha **predeterminado** permite cambiar de otro cursor al cursor de flecha predeterminado.|
 |Desplazamiento automático|Si tiene un flujo de trabajo grande, podría desear colocar una actividad más allá de la presentación visible del área de superficie de diseño. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le permite arrastrar una actividad hacia el borde de la superficie de diseño más cercano al lugar donde desea colocar la actividad. La vista de superficie de diseño se desplaza automáticamente en esa dirección.|
-|Etiquetas inteligentes|Las actividades que no se configuran totalmente o cuya configuración no sea válida se marcan con un icono de signo de exclamación. Puede hacer clic en el icono y ver una lista desplegable con las necesidades de configuración de la actividad. You can then use the **Properties** window to configure the activity appropriately. Cuando todas las propiedades son válidas para la actividad, el icono de signo de exclamación desaparece.|
+|Etiquetas inteligentes|Las actividades que no se configuran totalmente o cuya configuración no sea válida se marcan con un icono de signo de exclamación. Puede hacer clic en el icono y ver una lista desplegable con las necesidades de configuración de la actividad. Después, puede usar la ventana **propiedades** para configurar la actividad de forma adecuada. Cuando todas las propiedades son válidas para la actividad, el icono de signo de exclamación desaparece.|
 
-## <a name="in-this-section"></a>En esta sección
+## <a name="in-this-section"></a>Esta sección
  [Ventanas de flujo de trabajo de Visual Studio (heredado)](../workflow-designer/visual-studio-workflow-windows-legacy.md)
 
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)
@@ -54,4 +54,4 @@ El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado proporcionado por [!INCLUDE
  [Ayuda de la interfaz de usuario del diseñador heredado para Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Vea también
- [Developing Workflows](https://go.microsoft.com/fwlink?LinkID=65010)
+ [Desarrollo de flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65010)

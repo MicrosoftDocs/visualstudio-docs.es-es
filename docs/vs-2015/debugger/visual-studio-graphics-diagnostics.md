@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Graphics Diagnostics | Microsoft Docs
+title: Diagnóstico de gráficos de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,19 +21,19 @@ ms.locfileid: "74296896"
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio*Graphics Diagnostics* is a set of tools for recording and then analyzing rendering and performance problems in Direct3D apps. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
+Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para grabar y analizar los problemas de representación y rendimiento en las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
   
- El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Capture sessions can be initiated and controlled manually from Visual Studio or with the command-line capture tool **dxcap.exe**. Capture sessions can also be initiated and controlled programmatically by using the Graphics Diagnostics capture APIs.  
+ El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Las sesiones de captura se pueden iniciar y controlar manualmente desde Visual Studio o con la herramienta de captura de línea de comandos **dxcap. exe**. Las sesiones de captura también se pueden iniciar y controlar mediante programación con las API de captura de Diagnóstico de gráficos.  
   
- Cuando una sesión de captura registra su contenido, puede reproducirse siempre que se quiera con el *Analizador de gráficos* de Visual Studio, volviendo a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que usa la aplicación. Then, using the tools provided in the Graphics Analyzer window, any of the captured frames can be analyzed in detail. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa principal en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
+ Cuando una sesión de captura registra su contenido, puede reproducirse siempre que se quiera con el *Analizador de gráficos* de Visual Studio, volviendo a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que usa la aplicación. A continuación, con las herramientas proporcionadas en la ventana del analizador de gráficos, se puede analizar en detalle cualquiera de los fotogramas capturados. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa principal en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
   
  Para diagnosticar problemas de rendimiento, un fotograma capturado se puede analizar con la herramienta *Análisis de fotogramas*. Esta herramienta explora las posibles optimizaciones del rendimiento cambiando automáticamente la forma en que la aplicación usa Direct3D y realizando automáticamente pruebas comparativas de todas las variaciones. En el pasado, tendría que crear y realizar manualmente pruebas comparativas de este tipo de cambios solo para averiguar cuáles marcaban la diferencia. Con Análisis de fotogramas, solo es necesario que realice los cambios que ya sabe que se amortizarán.  
   
  Diagnóstico de gráficos ayuda a que su aplicación Direct3D con abundantes gráficos tenga mejor aspecto y se ejecute lo mejor posible.  
   
- Continue to [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md) to learn more about what Visual Studio Graphics Diagnostics offers.  
+ Continúe con la [información general](../debugger/overview-of-visual-studio-graphics-diagnostics.md) para obtener más información sobre lo que ofrece Visual Studio diagnóstico de gráficos.  
   
-## <a name="in-this-section"></a>En esta sección  
+## <a name="in-this-section"></a>Esta sección  
  [Información general](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Introduce el flujo de trabajo y las herramientas de Diagnóstico de gráficos.  
   
@@ -81,7 +81,7 @@ Visual Studio*Graphics Diagnostics* is a set of tools for recording and then ana
   
 ## <a name="related-sections"></a>Secciones relacionadas  
   
-|Title|Descripción|  
+|Título|Descripción|  
 |-----------|-----------------|  
 |[Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce la función de depuración en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[DirectX Graphics and Gaming](https://go.microsoft.com/fwlink/?LinkId=256498)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|
+|[Gráficos y juegos de DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|

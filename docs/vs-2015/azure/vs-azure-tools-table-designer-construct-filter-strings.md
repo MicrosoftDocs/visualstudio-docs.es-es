@@ -35,8 +35,8 @@ Los siguientes operadores lógicos se admiten para todos los tipos de propiedade
 | lt |Menor que |Precio lt 20 |
 | le |Menor o igual que |Precio le 100 |
 | ne |No igual |Ciudad ne 'Londres' |
-| y |y |Precio le 200 and Precio gt 3,5 |
-| o |O bien |Precio 3,5 or Precio gt 200 |
+| y |Y |Precio le 200 and Precio gt 3,5 |
+| o |O |Precio 3,5 or Precio gt 200 |
 | not |not |not isAvailable |
 
 Al construir una cadena de filtro, las siguientes reglas son importantes:

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Architecture Tooling Guidance | Microsoft Docs
+title: Guía de herramientas de arquitectura de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -16,11 +16,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301327"
 ---
-# <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
+# <a name="visual-studio-architecture-tooling-guidance"></a>Orientación para las herramientas de arquitectura de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This Architecture Tooling Guidance is a downloadable package of practical guidance about the use of the modeling tools in Visual Studio 2010. It presents a high-level view of how to use all the modeling tools in an integrated manner, and discusses the most common scenarios in which the tools are used.
+Architecture Tooling Guidance es un paquete descargable de consejos prácticos sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una visión general de cómo usar las herramientas de modelado de forma integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
- The content was created by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, a special group that has members from the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Product Team, Microsoft Services, Microsoft Most Valued Professionals (MVPs), and [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Community Leads.
+ El contenido fue creado por los [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Rangers de ALM, un grupo especial que tiene miembros del equipo del producto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], servicios de Microsoft, profesionales más valorados de Microsoft (MVP) y [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] responsables de la comunidad.
 
- [Click here to download the Architecture Tooling Guidance.](https://go.microsoft.com/fwlink/?LinkID=191984).
+ [Haga clic aquí para descargar la guía de herramientas de arquitectura.](https://go.microsoft.com/fwlink/?LinkID=191984)

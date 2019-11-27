@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Help Viewer | Microsoft Docs
+title: Solución de problemas del visor de ayuda | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -47,7 +47,7 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
 
 - Para enviar comentarios, vea [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) en el sitio web de Microsoft o envíe un correo a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- For more information, see the [Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) forum and [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) blog.
+- Para obtener más información, consulte la [documentación para desarrolladores y el foro del sistema de ayuda](https://go.microsoft.com/fwlink/?LinkId=232741) y el blog de [Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) .
 
 ## <a name="see-also"></a>Vea también
  [Guía del administrador del Visor de Ayuda 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)

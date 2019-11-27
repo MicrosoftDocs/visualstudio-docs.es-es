@@ -32,7 +32,7 @@ A partir del SDK de Azure 2.7, también puede usar Cloud Explorer para ver y adm
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visualización y administración de recursos de almacenamiento en Visual Studio
 
-El Explorador de servidores muestra automáticamente una lista de blobs, colas y tablas en la cuenta del emulador de almacenamiento. La cuenta del emulador de almacenamiento aparece en el Explorador de servidores bajo el nodo **Storage** como el nodo **Desarrollo**.
+El Explorador de servidores muestra automáticamente una lista con los blobs, las colas y las tablas en la cuenta del emulador de almacenamiento. La cuenta del emulador de almacenamiento aparece en el Explorador de servidores bajo el nodo **Storage** como el nodo **Desarrollo**.
 
 Para ver los recursos de la cuenta del emulador de almacenamiento, expanda el nodo **Desarrollo** . Si el emulador de almacenamiento aún no está iniciado cuando expanda el nodo **Desarrollo**, se inicia automáticamente. Este proceso puede tardar varios segundos. Puede continuar trabajando en otras zonas de Visual Studio mientras se inicia el emulador de almacenamiento.
 
@@ -78,11 +78,11 @@ Puede realizar las siguientes operaciones en blobs mediante los botones de la es
 
 1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)** .
 
-   ![Cargar un archivo en una carpeta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Cargando un archivo en una carpeta de blobs](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    Puede agregar subcarpetas en carpetas de contenedor siguiendo el mismo paso. Si no especifica un nombre de carpeta, el archivo se carga en el nivel superior del contenedor de blobs. El archivo aparece en la carpeta especificada en el contenedor.
 
-   ![Carpeta agregada a un contenedor de blobs](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Se ha agregado una carpeta a un contenedor de blobs](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. Haga doble clic en la carpeta o presione Entrar para ver el contenido de la carpeta. Cuando esté en la carpeta del contenedor, puede volver a la raíz del contenedor mediante la selección del botón **Abrir directorio primario** (flecha arriba).
 
@@ -110,7 +110,7 @@ En Cloud Explorer, use cualquiera de los métodos siguientes:
 * Elija el nombre del blob y luego seleccione el botón **Abrir**.
 * Haga doble clic en el nombre del blob.
 
-Puede ver el progreso de la descarga del blob en la ventana **Registro de actividad de Microsoft Azure** .
+El progreso de descarga de un blob se muestra en la ventana **Registro de actividad de Azure**.
 
 El blob se abre en el editor predeterminado para ese tipo de archivo. Si el sistema operativo reconoce el tipo de archivo, el archivo se abre en una aplicación instalada localmente. En caso contrario, se le pedirá que elija una aplicación que sea adecuada para el tipo de archivo del blob. El archivo local que se crea cuando descarga un blob está marcado como de solo lectura.
 
@@ -142,11 +142,11 @@ El archivo se descarga en una ubicación temporal y se abre en el equipo local. 
 
 ## <a name="work-with-queue-resources"></a>Uso de recursos de cola
 
-Las colas de servicios de almacenamiento se hospedan en una cuenta de Azure Storage. Puede usarlas para permitir que los roles de servicio en la nube se comuniquen entre sí y con otros servicios mediante un mecanismo de paso de mensajes. Puede acceder a la cola mediante programación a través de un servicio en la nube y a través de un servicio web para los clientes externos. También puede acceder a la cola directamente mediante el Explorador de servidores en Visual Studio.
+Las colas de servicios de almacenamiento se hospedan en una cuenta de Azure Storage. Puede usarlas para permitir que los roles de servicio en la nube se comuniquen entre sí y con otros servicios mediante un mecanismo de paso de mensajes. Puede acceder a la cola mediante programación a través de un servicio en la nube y a través de un servicio web para los clientes externos. También puede tener acceso a la cola directamente utilizando el Explorador de servidores en Visual Studio.
 
 Cuando se desarrolla un servicio en la nube que use colas, es recomendable usar Visual Studio para crear colas y trabajar con ellas de forma interactiva mientras desarrolla y prueba el código.
 
-En el Explorador de servidores, puede ver las colas de una cuenta de almacenamiento, crear y eliminar colas, abrir una cola para ver sus mensajes y agregar mensajes a una cola. Cuando se abre una cola para verla, puede ver los mensajes individuales y puede realizar las siguientes acciones en la cola mediante los botones de la esquina superior izquierda:
+En el Explorador de servidores, puede ver las colas de una cuenta de almacenamiento, crear y eliminar las colas, abrir una cola para ver sus mensajes y agregar mensajes a una cola. Cuando se abre una cola para verla, puede ver los mensajes individuales y puede realizar las siguientes acciones en la cola mediante los botones de la esquina superior izquierda:
 
 * Actualizar la vista de la cola.
 * Agregue un mensaje a la cola.
@@ -185,7 +185,7 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 En el Diseñador de tablas, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y seleccione **Editar**.
 
-![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Agregar o editar una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 No es necesario que las entidades de una sola tabla compartan el mismo conjunto de propiedades (columnas). Tenga en cuenta las siguientes restricciones sobre la visualización y la edición de los datos de tabla:
 
@@ -200,7 +200,7 @@ No es necesario que las entidades de una sola tabla compartan el mismo conjunto 
 
     ![Botón Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. En el cuadro de diálogo **Agregar entidad**, escriba los valores de las propiedades **PartitionKey** y **RowKey**.
+1. En el cuadro de diálogo **Agregar entidad**, introduzca los valores de las propiedades **PartitionKey** y **RowKey**.
 
     ![Cuadro de diálogo Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Puede personalizar el conjunto de entidades que aparecen en una tabla si usa el 
 1. Para abrir el generador de consultas, abra una tabla para su visualización.
 1. Seleccione el botón **Generador de consultas** en la barra de herramientas de la vista de tabla.
 
-    Aparece el cuadro de diálogo **Generador de consultas** . En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
+    Aparece el cuadro de diálogo **Generador de consultas**. En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
 
     ![Generador de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Cuando haya terminado de generar la consulta, cierre el cuadro de diálogo. El formato de texto de la consulta resultante aparece en un cuadro de texto como un filtro de WCF Data Services.
@@ -227,7 +227,7 @@ En la siguiente ilustración se muestra un ejemplo de una cadena de filtro váli
 
 ## <a name="refresh-storage-data"></a>Actualización de los datos de almacenamiento
 
-Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u obtiene datos de ella, la operación puede tardar hasta un minuto en completarse. If Server Explorer can’t connect, the operation might time out. While data is retrieved, you can continue to work in other parts of Visual Studio. Para cancelar la operación si está tardando demasiado, seleccione el botón **Detener actualización** en la barra de herramientas del Explorador de servidores.
+Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u obtiene datos de ella, la operación puede tardar hasta un minuto en completarse. Si Explorador de servidores no se puede conectar, la operación podría agotar el tiempo de espera. Mientras se recuperan los datos, puede continuar trabajando en otras partes de Visual Studio. Para cancelar la operación si está tardando demasiado, seleccione el botón **Detener actualización** en la barra de herramientas del Explorador de servidores.
 
 ### <a name="to-refresh-blob-container-data"></a>Para actualizar los datos del contenedor de blobs
 
@@ -249,7 +249,7 @@ Elija el nombre de la cuenta y después seleccione el botón **Actualizar** en l
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>Adición de cuentas de almacenamiento mediante el Explorador de servidores
 
-Existen dos formas de agregar cuentas de almacenamiento mediante el Explorador de servidores. Puede crear una nueva cuenta de almacenamiento en su suscripción de Azure o puede asociar una cuenta de almacenamiento existente.
+Hay dos maneras de agregar cuentas de almacenamiento a través del Explorador de servidores. Puede crear una nueva cuenta de almacenamiento en su suscripción de Azure o puede asociar una cuenta de almacenamiento existente.
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Para crear una nueva cuenta de almacenamiento mediante el Explorador de servidores, siga estos pasos:
 
@@ -259,7 +259,7 @@ Existen dos formas de agregar cuentas de almacenamiento mediante el Explorador d
 
    * Suscripción de Azure a la que desee agregar la cuenta de almacenamiento.
    * Nombre que quiere usar para la nueva cuenta de almacenamiento.
-   * La región o el grupo de afinidad (por ejemplo, Oeste de EE. UU. o Asia oriental).
+   * La región o grupo de afinidad (por ejemplo, Oeste de EE. UU. o Este de Asia).
    * El tipo de replicación que quiere usar para la cuenta de almacenamiento, por ejemplo, redundancia local.
 
    ![Creación de una cuenta de Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
@@ -272,12 +272,12 @@ La nueva cuenta de almacenamiento aparecerá en la lista **Almacenamiento** del 
 
 1. En el Explorador de servidores, abra el menú contextual del nodo **Storage** de Azure y después seleccione **Asociar almacenamiento externo**.
 
-    ![Agregar una cuenta de almacenamiento existente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
+    ![Adición de una cuenta de almacenamiento existente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. En el cuadro de diálogo **Crear cuenta de almacenamiento**, seleccione o escriba la información siguiente:
 
    * El nombre de la cuenta de almacenamiento existente que quiere asociar.
    * La clave para la cuenta de almacenamiento seleccionada. Este valor normalmente se proporciona automáticamente cuando se selecciona una cuenta de almacenamiento. Si desea que Visual Studio recuerde la clave de la cuenta de almacenamiento, active la casilla **Recordar clave de cuenta**.
-   * El protocolo que se va a usar para conectarse a la cuenta de almacenamiento, como HTTP, HTTPS o un extremo personalizado. Consulte [Configuración de las cadenas de conexión de Azure Storage](https://msdn.microsoft.com/library/azure/ee758697.aspx) para más información sobre los puntos de conexión personalizados.
+   * El protocolo que se usará para conectar con la cuenta de almacenamiento, como HTTP, HTTPS o un extremo personalizado. Consulte [Configuración de las cadenas de conexión de Azure Storage](https://msdn.microsoft.com/library/azure/ee758697.aspx) para más información sobre los puntos de conexión personalizados.
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para ver los extremos secundarios
 
@@ -295,4 +295,4 @@ Si elimina una cuenta de almacenamiento del Explorador de servidores, ni la cuen
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-To learn more about how to use Azure storage services, see [Introduction to Azure Storage](/azure/storage/common/storage-introduction).
+Para más información sobre cómo usar los servicios de almacenamiento de Azure, consulte [Introducción a Azure Storage](/azure/storage/common/storage-introduction).

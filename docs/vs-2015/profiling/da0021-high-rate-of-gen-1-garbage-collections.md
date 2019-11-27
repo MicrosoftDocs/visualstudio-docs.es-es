@@ -23,11 +23,11 @@ ms.locfileid: "74300147"
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Alta frecuencia de recolección de elementos no utilizados de gen 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0021|  
-|Category|.NET Framework Usage|  
-|Profiling methods|All|  
-|Message|There is a fairly high rate of Gen 1 garbage collections occurring. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
-|Rule type|Information|  
+Identificador de regla | DA0021 |  
+| Categoría |. Uso de .NET Framework |  
+| Métodos de generación de perfiles | Todo |  
+| Mensaje | Hay una frecuencia bastante alta de recolección de elementos no utilizados de gen 1. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que usa la aplicación.|  
+| Tipo de regla | Información |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
@@ -42,7 +42,7 @@ Rule Id|DA0021|
  Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 1. Si hay demasiados objetos de relativamente corta duración que sobreviven a la colección de la generación 0, pero después pueden recopilarse en una colección de la generación 1, el coste de administración de memoria puede ser excesivo. Para obtener más información, consulte la publicación [Crisis de vida media](https://go.microsoft.com/fwlink/?LinkId=177835) en los alicientes de rendimiento de Rico Mariani en el sitio web de MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **% de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
+ Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **Porcentaje de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
   
  Para entender el patrón de uso de memoria administrada de la aplicación, vuelva a generar perfiles de la aplicación mediante una ejecución de generación de perfiles de asignación de memoria de .NET y solicite mediciones de duración de objetos.  
   

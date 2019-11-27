@@ -64,13 +64,13 @@ Si tiene problemas con Xamarin después de realizar esta configuración e instal
   
 2. (Solo para instalaciones nuevas) En el instalador, seleccione una instalación **Personalizada**:  
   
-    ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![Elegir la opción personalizada en la instalación de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Instalación de Xamarin entre varios forros 1")  
   
 3. Active las siguientes casillas:  
   
    1. **Desarrollo móvil multiplataforma > C#/.NET (Xamarin)** . Al hacerlo, también se seleccionarán automáticamente las distintas herramientas de Android en Kits de desarrollo de software y herramientas comunes. Esta opción también debe actualizar cualquier instalación de Xamarin existente.  
   
-        ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![Seleccionar la opción Xamarin en desarrollo&#45;móvil multiplataforma](../cross-platform/media/cross-plat-xamarin-setup-2.png "Instalación de Xamarin de varios forros 2")  
   
    2. Para Windows 8 y versiones posteriores: **Desarrollo móvil multiplataforma > Emulador de Microsoft Visual Studio para Android**. Nota: si usa un equipo con Windows 7 o anterior, o ejecuta Windows en un Mac, asegúrese de que esta opción esté *desactivada*. Vea "Nota sobre los emuladores en equipos Windows" después del paso 5. También puede dejar esta opción desactivada si piensa depurar únicamente en dispositivos Android físicos.  
   
@@ -80,7 +80,7 @@ Si tiene problemas con Xamarin después de realizar esta configuración e instal
   
 5. Una vez completada la instalación, inicie Visual Studio e inicie sesión con su cuenta de Microsoft si se le solicita (es decir, la misma cuenta que usa con Windows). Después, busque actualizaciones de Xamarin a través de **Herramientas > Opciones > Xamarin** o **Herramientas > Opciones > Xamarin > Otras**, donde encontrará el vínculo **Comprobar ahora**:  
   
-    ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![Comprobar las actualizaciones de Xamarin en las opciones de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Instalación entre varios forros de Xamarin 3")  
   
    > [!NOTE]
    > Como se indicó anteriormente, asegúrese de actualizar Xamarin a la versión 4.0.3.214 o superior para evitar problemas con las licencias de Xamarin anteriores.  

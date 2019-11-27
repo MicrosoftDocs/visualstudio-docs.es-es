@@ -1,5 +1,5 @@
 ---
-title: Sign in to Visual Studio 2015 | Microsoft Docs
+title: Iniciar sesión en Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -46,7 +46,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
  Después de proporcionar la configuración, se inicia Visual Studio, y ya ha iniciado sesión y está listo para empezar. Para comprobar si ha iniciado sesión, busque su nombre en la esquina superior derecha del entorno de Visual Studio.
 
- ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Usuario que ha iniciado sesión en Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión automáticamente y todos los cambios realizados en la configuración sincronizada se aplican automáticamente. Para cerrar sesión, elija la flecha abajo situada junto al nombre del perfil en el entorno de Visual Studio, elija el comando **Configuración de la cuenta** y, a continuación, elija el vínculo **Cerrar sesión** . Para volver a iniciar sesión, elija el comando **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
 

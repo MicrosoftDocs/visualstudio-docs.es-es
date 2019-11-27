@@ -46,7 +46,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Launch  
+## <a name="launch"></a>Inicie  
  Esta configuración le permite seleccionar de una lista de binarios y especificar el orden de inicio de los binarios.  
   
  Para obtener más información, consulte [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md)  

@@ -1,5 +1,5 @@
 ---
-title: Creating Bootstrapper Packages | Microsoft Docs
+title: Creando paquetes de programa previo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|Propiedad.|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>Vea también  
  [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Cuadro de diálogo Requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
- [Product and Package Schema Reference](../deployment/product-and-package-schema-reference.md)   
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)   
  [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://go.microsoft.com/fwlink/?LinkId=107537)

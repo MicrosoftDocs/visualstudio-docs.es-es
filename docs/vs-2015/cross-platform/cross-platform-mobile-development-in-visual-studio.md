@@ -39,7 +39,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 - [Compilar un juego multiplataforma para Android, iOS y Windows con Visual Studio Tools para Unity](#Unity)
 
 ## <a name="NET"></a> Compilar una aplicación para Android, iOS y Windows (.NET Framework)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
  Con Xamarin, puede tener como destino Android, iOS y Windows en la misma solución, compartir código e incluso la interfaz de usuario.
 
@@ -49,7 +49,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Obtener información acerca de Xamarin en Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN Library)|
 |[Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN Library)|
-|[Obtener información sobre las aplicaciones Windows universales en Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Obtener información acerca de las aplicaciones Windows universales en Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Obtener información acerca de las similitudes entre Swift y C#](https://aka.ms/scposter) (download.microsoft.com)|
 |[Obtener información acerca del emulador de Visual Studio para Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
@@ -95,7 +95,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Migrar aplicaciones a la Plataforma universal de Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Compilar una aplicación para Android, iOS y Windows (HTML/JavaScript)
- ![Devices](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
  Si es un desarrollador web familiarizado con HTML y JavaScript, puede usar Visual Studio Tools para Apache Cordova para crear una aplicación que tenga como destino iOS, Android y Windows. Estas aplicaciones pueden destinarse a las tres plataformas y puede crearlas con las habilidades y los procesos con los que esté más familiarizado.
 
@@ -103,7 +103,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  Como estas API son multiplataforma, puede compartir la mayor parte de lo que escriba entre las tres plataformas. Esto reduce los costos de desarrollo y mantenimiento. Además, no es necesario empezar desde cero. Si creó otros tipos de aplicaciones web, puede compartir esos archivos con la aplicación Cordova sin tener que modificarlas ni rediseñarlas de forma alguna.
 
- ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Aplicaciones&#45;híbridas para varios dispositivos](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  Para empezar, instale Visual Studio 2015 y elija la característica **HTML/JavaScript (Apache Cordova)** durante la instalación. Si usa Visual Studio 2013, instale la extensión de Visual Studio Tools para Apache Cordova. En cualquier caso, las herramientas de Cordova instalan automáticamente todo el software de terceros necesario para crear una aplicación multiplataforma.
 
@@ -126,7 +126,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  Si necesita compilar una aplicación para Android que requiere algún tipo de manipulación de gráficos avanzada, como un juego, puede hacerlo con C++. Comience con el proyecto **Aplicación de actividad nativa (Android)** . Este proyecto es totalmente compatible con la cadena de herramientas Clang.
 
- ![Plantilla de proyecto native-activity](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
+ ![Plantilla de proyecto native-activity](../cross-platform/media/cross-plat-cpp-native.png "Plat_CPP_Native cruzadas")
 
  Cuando esté listo para ejecutar la aplicación y ver su aspecto, use el emulador de Visual Studio para Android. Es rápido, fiable y fácil de instalar y configurar.
 
@@ -147,7 +147,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Obtener información acerca de cómo usar C++ para múltiples plataformas de destino.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Instalar lo necesario y crear una aplicación de actividad nativa para Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
 |[Obtener información acerca del emulador de Visual Studio para Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
-|[Más información sobre cómo compartir código de C++ con aplicaciones Android y Windows](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
+|[Obtener información acerca de cómo compartir código de C++ con aplicaciones Android y Windows](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/) (VisualStudio.com)|
 |[Ejemplos de desarrollo móvil multiplataforma para C++](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Ejemplos adicionales de desarrollo móvil multiplataforma para C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -156,7 +156,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  ![Entorno de desarrollo de VSTU](../cross-platform/media/vstu-overview.png "VSTU_Overview")
 
- Con Visual Studio Tools para Unity (VSTU), puede usar Visual Studio para escribir scripts de editor y juegos en C# y, a continuación, usar su eficaz depurador para buscar y corregir errores. La versión más reciente de VSTU aporta compatibilidad con Unity 5 e incluye colores de sintaxis del lenguaje de sombreado de ShaderLab de Unity, una mejor sincronización con Unity, una depuración más completa y una generación de código mejorada para el asistente de MonoBehavior. VSTU también integra los archivos de proyecto de Unity, los mensajes de la consola y la capacidad de iniciar el juego en Visual Studio, de modo que pueda dedicar menos tiempo a conmutar con el editor de Unity al escribir código.
+ Con Visual Studio Tools para Unity (VSTU), puede usar Visual Studio para escribir scripts de juegos y editor en C# y, a continuación, usar su potente depurador para buscar y corregir errores. La versión más reciente de VSTU aporta compatibilidad con Unity 5 e incluye colores de sintaxis del lenguaje de sombreado de ShaderLab de Unity, una mejor sincronización con Unity, una depuración más completa y una generación de código mejorada para el asistente de MonoBehavior. VSTU también integra los archivos de proyecto de Unity, los mensajes de la consola y la capacidad de iniciar el juego en Visual Studio, de modo que pueda dedicar menos tiempo a conmutar con el editor de Unity al escribir código.
 
  Empiece hoy mismo a crear su juego con Unity y Visual Studio Tools para Unity.
 

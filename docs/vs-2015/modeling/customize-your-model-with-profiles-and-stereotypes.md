@@ -1,5 +1,5 @@
 ---
-title: Customize your model with profiles and stereotypes | Microsoft Docs
+title: Personalizar el modelo con perfiles y estereotipos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,7 +23,7 @@ ms.locfileid: "74301194"
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar el modelo con perfiles y estereotipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las clases y los componentes, para personalizarlos con fines específicos. You can apply a *stereotype* to a model element that can change the element's list of properties. Stereotypes are defined within collections called *profiles*.
+En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las clases y los componentes, para personalizarlos con fines específicos. Puede aplicar un *estereotipo* a un elemento de modelo que puede cambiar la lista de propiedades del elemento. Los estereotipos se definen dentro de las colecciones denominados *perfiles*.
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -31,14 +31,14 @@ En Visual Studio, puede adaptar los elementos del modelo UML estándar, como las
 
  Los estereotipos se pueden establecer en la lista de propiedades de un elemento. En el caso de los tipos de forma principales de un diagrama, los estereotipos aplicados aparecen también en la forma, como se muestra en el ejemplo.
 
- ![A UML class with a stereotype.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
+ ![Una clase UML con un estereotipo.](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")
 
 > [!NOTE]
 > Si usa un perfil para crear un modelo y, a continuación, comparte el modelo con otra persona, esta no podrá ver los estereotipos a menos que tenga instalado el mismo perfil en el equipo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Colocar un elemento del modelo en un paquete, vincular el paquete a un perfil y aplicar un estereotipo al elemento.|
 |[Estereotipos estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)|Los perfiles estándar UML L2 y L3 se instalan con Visual Studio, y cada modelo está vinculado a ellos de forma predeterminada. Proporcionan estereotipos que puede usar para anotar los modelos.<br /><br /> Por ejemplo, puede aplicar el estereotipo “Especificación” a una clase para indicar que está pensada únicamente para definir el comportamiento visible externamente de sus instancias|

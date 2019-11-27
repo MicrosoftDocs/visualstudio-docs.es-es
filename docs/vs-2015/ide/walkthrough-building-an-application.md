@@ -44,7 +44,7 @@ Este tema contiene las siguientes secciones:
 
 3. Especifique `Introduction` en el cuadro de búsqueda para buscar el ejemplo.
 
-    ![Extensions and Updates dialog box](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
+    ![Extensiones y actualizaciones (cuadro de diálogo)](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
 4. En la lista de resultados, elija **Introduction to Building WPF Applications (Visual C#)** o **Introduction to Building WPF Applications (Visual Basic)** .
 
@@ -62,13 +62,13 @@ Este tema contiene las siguientes secciones:
 
 3. Asigne a la solución el nombre `IntroWPFcsharp` para Visual C#.
 
-     ![New Project dialog box, Installed Samples](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![Cuadro de diálogo nuevo proyecto, ejemplos instalados](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     O
+     O BIEN
 
      Asigne a la solución el nombre `IntroWPFvb` para Visual Basic.
 
-     ![New Project dialog box, Visual Basic Sample](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
+     ![Cuadro de diálogo nuevo proyecto, Visual Basic ejemplo](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
 4. Elija el botón **Aceptar** .
 
@@ -82,29 +82,29 @@ Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadr
 
 1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-    ![Build menu, Configuration Manager command](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![Menú compilar, comando Configuration Manager](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. En la lista **Configuración de soluciones activas**, elija **Nueva**.
 
 3. En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de depuración existente y luego elija el botón **Aceptar**.
 
-    ![New Solution Configuration Dialog Box](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+    ![Cuadro de diálogo Nueva configuración de soluciones](../ide/media/buildwalk-newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 4. En la lista **Plataforma de soluciones activas**, elija **Nueva**.
 
 5. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.
 
-    ![New Solution Platform Dialog Box](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+    ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
 6. Elija el botón **Aceptar** .
 
    La configuración de soluciones activa ha cambiado a Prueba y la plataforma de soluciones activas se ha establecido en x64.
 
-   ![Configuration Manager with Test configuration](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager con configuración de prueba](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    Puede comprobar o cambiar rápidamente la configuración de soluciones activas mediante la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar**.
 
-   ![Solution Configuration option Standard Toolbar](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+   ![Barra de herramientas estándar de opciones de configuración de soluciones](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
 ## <a name="BKMK_building"></a> Compilar la aplicación
 
@@ -118,11 +118,11 @@ A continuación, compilará la solución con la configuración de compilación p
 
   Figura 1: advertencias de Visual Basic
 
-  ![Output Window Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![Ventana de salida Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   Figura 2: advertencias de Visual C#
 
-  ![Output Window Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![Ventana de salida Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> Ocultar advertencias del compilador
 
@@ -138,7 +138,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. Elija la página **Compilación** y después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia `1762`.
 
-     ![Build page, Project Designer](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
+     ![Página compilar, diseñador de proyectos](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -146,7 +146,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
      La ventana **Salida** solo muestra información de resumen de la compilación.
 
-     ![Output Window, Visual C&#35; Build Warnings](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Ventana de salida, advertencias de&#35; compilación de Visual C](../ide/media/buildwalk-visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
 
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Para suprimir todas las advertencias de compilación de Visual Basic
 
@@ -158,7 +158,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-    ![Compile page, Project Designer](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
+    ![Página compilar, diseñador de proyectos](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")
 
     Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -166,7 +166,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
    La ventana **Salida** solo muestra información de resumen de la compilación.
 
-   ![Output Window, Visual Basic Build Warnings](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+   ![Ventana de salida, Visual Basic advertencias de compilación](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
    Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -212,7 +212,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 1. Abra el **Diseñador de proyectos**.
 
-     ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menú Ver, comando páginas de propiedades](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Elija la página **Compilación**.
 
@@ -227,15 +227,15 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
     > [!IMPORTANT]
     > Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, elija el botón **Aceptar** en el cuadro de mensaje.
 
-6. Compile la aplicación.
+6. Genere la aplicación.
 
      ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>To specify a release build for Visual C\#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Para especificar una compilación de versión para Visual C\#
 
 1. Abra el **Diseñador de proyectos**.
 
-    ![View menu, Property Pages command](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
+    ![Menú Ver, comando páginas de propiedades](../ide/media/buildwalk-viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 2. Seleccione la página **Compilación**.
 
@@ -250,7 +250,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
    > [!IMPORTANT]
    > Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, elija el botón **Aceptar** en el cuadro de mensaje.
 
-6. Compile la aplicación.
+6. Genere la aplicación.
 
     ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 

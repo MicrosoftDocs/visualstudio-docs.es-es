@@ -1,5 +1,5 @@
 ---
-title: Specify Symbol (.pdb) and Source Files in the Debugger | Microsoft Docs
+title: Especificar archivos de código fuente y símbolos (. pdb) en el depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -43,7 +43,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
  Antes de Visual Studio 2012, para depurar código administrado en un dispositivo remoto, era necesario colocar los archivos de símbolos en el equipo remoto. Pero esto ya no es así. Todos los archivos de símbolos deben encontrarse en el equipo local o en una ubicación especificada en la página **Herramientas / Opciones / Depuración / Símbolos** .
 
-## <a name="BKMK_Find_symbol___pdb__files"></a> Where the debugger searches for .pdb files
+## <a name="BKMK_Find_symbol___pdb__files"></a>Dónde busca el depurador los archivos. pdb
 
 1. La ubicación que se especifica dentro del archivo DLL o el archivo ejecutable.
 
@@ -58,14 +58,14 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 ### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> ¿Por qué los archivos de símbolos deben coincidir exactamente con los archivos ejecutables?
  El depurador solo cargará un archivo .pdb de un archivo ejecutable que coincida exactamente con el archivo .pdb creado cuando se compiló el archivo ejecutable (es decir, el archivo .pdb debe ser el original o una copia del archivo .pdb original). Dado que el compilador está optimizado para acelerar la compilación además de su tarea principal de crear un código correcto y eficaz, el diseño real de un archivo ejecutable puede cambiar aunque el propio código no haya cambiado. Para obtener más información, consulte [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)(¿Por qué Visual Studio requiere que los archivos de símbolos del depurador coincidan exactamente con los archivos binarios con los que se compilaron?).
 
-### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Specify symbol locations and loading behavior
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>Especificar las ubicaciones de símbolos y el comportamiento de carga
  Cuando se depura un proyecto en el IDE de VS, el depurador carga automáticamente los archivos de símbolos que se encuentran en el directorio del proyecto. Puede especificar rutas de acceso de búsqueda alternativas y servidores de símbolos de Microsoft, Windows o componentes de terceros en **Herramientas / Opciones / Depuración / Símbolos**. También puede especificar módulos concretos para los que quiere que el depurador cargue símbolos automáticamente. Y posteriormente puede cambiar esta configuración manualmente mientras está depurando de manera activa.
 
 1. En Visual Studio, abra la página **Herramientas / Opciones / Depuración / Símbolos** .
 
-    ![Tools &#45; Options &#45; Debugging &#45; Symbols page](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
+    ![Opciones &#45; &#45; de herramientas ( &#45; página de símbolos de depuración)](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
 
-2. Choose the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. En el cuadro **Ubicaciones del archivo de símbolos (.pdb)** , aparece texto modificable.
+2. Elija las ![herramientas&#47; de carpeta&#47; opciones de&#47;depuración](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icono de carpeta de símbolos icono. En el cuadro **Ubicaciones del archivo de símbolos (.pdb)** , aparece texto modificable.
 
 3. Escriba la dirección URL o la ruta de acceso del directorio del servidor de símbolos o de la ubicación del símbolo. La finalización de instrucciones le será de ayuda para especificar el formato correcto.
 
@@ -74,7 +74,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
    > [!NOTE]
    > No coloque la memoria caché de símbolos en una carpeta protegida (como la carpeta C:\Windows o una de sus subcarpetas). Utilice una carpeta de lectura y escritura en su lugar.
 
-   **Specify symbol loading behavior**
+   **Especificar el comportamiento de carga de símbolos**
 
    Puede especificar los archivos que desea cargar automáticamente desde ubicaciones del cuadro **Ubicaciones de archivos de símbolos (.pdb)** cuando inicie la depuración. Los archivos de símbolos del directorio del proyecto siempre se cargan.
 
@@ -82,15 +82,15 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 6. Elija la opción **Solo los módulos especificados** y, a continuación, seleccione **Especificar módulos** para enumerar los archivos de símbolos de los módulos que desee cargar automáticamente. Los archivos de símbolos de otros módulos se omiten.
 
-   **Specify additional symbol options**
+   **Especificar opciones de símbolos adicionales**
 
    También puede establecer las siguientes opciones en la página **Herramientas / Opciones / Depuración / Símbolos** :
 
-   **Warn if no symbols on launch (native only)**
+   **Advertir si no hay símbolos al iniciar (solo nativo)**
 
    Cuando se selecciona esta opción, se muestra un cuadro de diálogo de advertencia al intentar depurar un programa para el que el depurador no tiene información simbólica.
 
-   **Load DLL exports**
+   **Cargar exportaciones de DLL**
 
    Cuando se selecciona esta opción, se cargan las tablas de exportación de archivos DLL. La información simbólica de las tablas de exportación de archivos DLL puede resultar útil si se trabaja con mensajes de Windows, procedimientos de Windows (WindowProc), objetos COM, cálculo de referencias o cualquier archivo DLL para el que no disponga de símbolos. La lectura de la información de exportación de archivos DLL implica cierta sobrecarga. Por lo tanto, esta funcionalidad está desactivada de forma predeterminada.
 
@@ -135,7 +135,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
    Cuando se produce uno de estos eventos, el depurador muestra la página **No se cargaron símbolos** para ayudar a encontrar y cargar los símbolos necesarios.
 
-   ![No Symbols Loaded page](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
+   ![Página no se cargaron símbolos](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
 
 - Para cambiar las rutas de acceso de búsqueda, elija una ruta de acceso no seleccionada o elija **Nuevo** y escriba una nueva ruta de acceso. Elija **Cargar** para buscar de nuevo las rutas de acceso y cargar el archivo de símbolos si se encuentra.
 
@@ -147,7 +147,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 - Para mostrar siempre el desensamblado cuando no se encuentren los archivos de código fuente o de símbolos, elija el vínculo **Cuadro de diálogo Opciones** y seleccione **Habilitar la depuración de nivel de dirección** y **Mostrar desensamblado si el código fuente no está disponible**.
 
-   ![Options &#47; Debugging  &#47; General disassembly options](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
+   ![Opciones &#47; de depuración &#47; generales opciones de desensamblado](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
 
   **Cambiar opciones de símbolo desde el menú contextual**
 
@@ -175,7 +175,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 - proyecto.pdb   Este archivo almacena toda la información de depuración del archivo .exe. En C/C++, este archivo reside en el subdirectorio \debug.
 
-  Cada vez que crea un archivo OBJ, el compilador de C/C++ combina la información de depuración en VC*x*.pdb. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función. So even if every source file includes common header files such as \<windows.h>, the typedefs from those headers are stored only once, rather than being in every OBJ file.
+  Cada vez que crea un archivo OBJ, el compilador de C/C++ combina la información de depuración en VC*x*.pdb. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función. Por lo tanto, aunque cada archivo de código fuente incluya archivos de encabezado comunes como \<Windows. h >, las definiciones de tipo de esos encabezados solo se almacenan una vez, en lugar de estar en cada archivo OBJ.
 
   El vinculador crea el archivo proyecto.pdb, que contiene información de depuración del archivo EXE del proyecto. El archivo proyecto.pdb contiene toda la información de depuración, incluidos los prototipos de función, y no solo la información de tipo que se encuentra en VC*x*.pdb. Ambos archivos .pdb permiten actualizaciones incrementales. El vinculador también incrusta la ruta de acceso al archivo .pdb en el archivo .exe o .dll que crea.
 
@@ -214,7 +214,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 2. Bajo el nodo **Propiedades comunes** , elija **Depurar archivos de código fuente**.
 
-3. Click the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. En la lista **Directorios que contienen código fuente** , aparece texto modificable.
+3. Haga clic en ![el&#47; icono&#47; herramientas de&#47;carpeta opciones de depuración](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icono de la carpeta símbolos. En la lista **Directorios que contienen código fuente** , aparece texto modificable.
 
 4. Agregue la ruta de acceso que desee buscar.
 
@@ -238,7 +238,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 4. Active la casilla **Habilitar compatibilidad de servidor de origen** .
 
-     ![Enable source server options](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
+     ![Habilitar opciones del servidor de origen](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
 5. (Opcional) Elija las opciones secundarias que desee.
 

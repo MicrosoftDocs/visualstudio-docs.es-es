@@ -24,11 +24,11 @@ ms.locfileid: "74300978"
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evite utilizar excepciones para el flujo de control
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0007|  
-|Category|.NET Framework Usage|  
-|Profiling methods|All|  
-|Message|A high number of exceptions are consistently being thrown. Considere la posibilidad de reducir el uso de excepciones en la lógica del programa.|  
-|Message type|Warning|  
+Identificador de regla | DA0007 |  
+| Categoría |. Uso de .NET Framework |  
+| Métodos de generación de perfiles | Todo |  
+| Mensaje | Se produce un gran número de excepciones. Considere la posibilidad de reducir el uso de excepciones en la lógica del programa.|  
+| Tipo de mensaje | ADVERTENCIA |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  
   

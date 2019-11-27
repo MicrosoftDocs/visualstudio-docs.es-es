@@ -40,7 +40,7 @@ Puede generar los scripts de publicación para una máquina virtual que hospeda 
 
 ## <a name="scripts-that-visual-studio-generates"></a>Scripts que genera Visual Studio
 
-Visual Studio genera una carpeta de nivel de solución denominada **PublishScripts** que contiene dos archivos de Windows PowerShell, un script de publicación para su máquina virtual o sitio web, y un módulo que contiene funciones que puede usar en los scripts. Visual Studio también genera un archivo en el formato JSON que especifica los detalles del proyecto que va a implementar.
+Visual Studio genera una carpeta de nivel de solución denominada **PublishScripts** que contiene dos archivos de Windows PowerShell, un script de publicación para su máquina virtual o sitio web, y un módulo que contiene funciones que puede utilizar en los scripts. Visual Studio también genera un archivo en el formato JSON que especifica los detalles del proyecto que va a implementar.
 
 ### <a name="windows-powershell-publish-script"></a>Script de publicación de Windows PowerShell
 
@@ -52,7 +52,7 @@ El módulo de Windows PowerShell que Visual Studio genera contiene funciones que
 
 ### <a name="json-configuration-file"></a>Archivo de configuración de JSON
 
-El archivo JSON se crea en la carpeta **Configuraciones** y contiene datos de configuración que especifican exactamente qué recursos se implementarán en Azure. El nombre del archivo que Visual Studio genera es project-name-WAWS-dev.json si ha creado un sitio web o  project name-VM-dev.json, si ha creado una máquina virtual. Este es un ejemplo de un archivo de configuración de JSON que se genera al crear un sitio web. La mayor parte de los valores se explican por sí solos. El nombre del sitio web se genera por Azure, por lo que es posible que no coincida con el nombre del proyecto.
+El archivo JSON se crea en la carpeta **Configurations** y contiene los datos de configuración que indican exactamente los recursos que deben implementarse en Azure. El nombre del archivo que Visual Studio genera es project-name-WAWS-dev.json si ha creado un sitio web o  project name-VM-dev.json, si ha creado una máquina virtual. Este es un ejemplo de un archivo de configuración de JSON que se genera al crear un sitio web. La mayor parte de los valores se explican por sí solos. El nombre del sitio web se genera por Azure, por lo que es posible que no coincida con el nombre del proyecto.
 
 ```json
 {
@@ -144,7 +144,7 @@ Cuando crea una máquina virtual, el archivo de configuración de JSON es simila
 
 Puede editar la configuración de JSON para cambiar lo que ocurre al ejecutar los scripts de publicación. Las secciones `cloudService` y `virtualMachine` son necesarias, pero puede eliminar la sección `databases` si no la necesita. Las propiedades que están vacías en el archivo de configuración predeterminado que Visual Studio genera son opcionales; se requieren las que tienen valores en el archivo de configuración predeterminado.
 
-Si tiene un sitio web que cuenta con varios entornos de implementación (conocidos como ranuras) en lugar de un único sitio de producción en Azure, puede incluir el nombre de la ranura en el nombre del sitio web en el archivo de configuración de JSON. Por ejemplo, si tiene un sitio web llamado **mysite** y una ranura para él llamada **test**, el URI es `mysite-test.cloudapp.net`, pero el nombre correcto que se usará en el archivo de configuración es mysite(test). Solo puede hacerlo si el sitio web y las ranuras ya existen en su suscripción. De no ser así, cree el sitio web ejecutando el script sin especificar la ranura y luego créela en [Azure Portal](https://portal.azure.com/); después ejecute el script con el nombre del sitio web modificado. Para obtener más información sobre las ranuras de implementación para las aplicaciones web, vea [Configuración de entornos de ensayo para aplicaciones web en Azure App Service](/azure/app-service/web-sites-staged-publishing).
+Si tiene un sitio web que cuenta con varios entornos de implementación (conocidos como ranuras) en lugar de un único sitio de producción en Azure, puede incluir el nombre de la ranura en el nombre del sitio web en el archivo de configuración de JSON. Por ejemplo, si tiene un sitio web llamado **mysite** y un espacio llamado **test**, el URI es `mysite-test.cloudapp.net`, pero el nombre correcto que se debe usar en el archivo de configuración es mysite(test). Solo puede hacerlo si el sitio web y las ranuras ya existen en su suscripción. De no ser así, cree el sitio web ejecutando el script sin especificar la ranura y luego créela en [Azure Portal](https://portal.azure.com/); después ejecute el script con el nombre del sitio web modificado. Para obtener más información sobre las ranuras de implementación para las aplicaciones web, vea [Configuración de entornos de ensayo para aplicaciones web en Azure App Service](/azure/app-service/web-sites-staged-publishing).
 
 ## <a name="how-to-run-the-publish-scripts"></a>Cómo ejecutar los scripts de publicación
 
@@ -156,7 +156,7 @@ Si nunca ha ejecutado un script de Windows PowerShell antes, debe establecer pri
 
    ![Crear paquete de implementación web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   For more information, see [How to: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
+   Para obtener más información, vea [Cómo: crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
 
 1. En el **Explorador de soluciones**, abra el menú contextual para el script y luego elija **Abrir con PowerShell ISE**.
 1. Si ejecuta scripts de Windows PowerShell en este equipo por primera vez, abra una ventana de símbolo del sistema con privilegios de administrador y escriba el siguiente comando:
@@ -244,7 +244,7 @@ Para automatizar la creación de su proyecto, agregue código que llame a MSBuil
     }
     ```
 
-1. Reemplace `New-WebDeployPackage` por el código siguiente y reemplace los marcadores de posición en la construcción de la línea `$msbuildCmd`. This code is for Visual Studio 2015. If you're using Visual Studio 2017, change the **VisualStudioVersion** property to `15.0` (`12.0` for Visual Studio 2013).
+1. Reemplace `New-WebDeployPackage` por el código siguiente y reemplace los marcadores de posición en la construcción de la línea `$msbuildCmd`. Este código es para Visual Studio 2015. Si utiliza Visual Studio 2017, cambie la propiedad **VisualStudioVersion** a `15.0` (`12.0` para Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -324,7 +324,7 @@ Para obtener ayuda para las funciones que puede usar en el símbolo del sistema 
 | Find-AzureVM |Obtiene la máquina virtual de Azure especificada. |
 | Format-DevTestMessageWithTime |Antepone la fecha y la hora a un mensaje. Esta función está diseñada para mensajes escritos en las secuencias de Error y Detallado. |
 | Get-AzureSQLDatabaseConnectionString |Ensambla una cadena de conexión para conectarse a una base de datos SQL de Azure. |
-| Get-AzureVMStorage |Returns the name of the first storage account with the name pattern "devtest *" (case insensitive) in the specified location or affinity group. If the "devtest*" storage account doesn't match the location or affinity group, the function ignores it. Especifique una ubicación o un grupo de afinidad. |
+| Get-AzureVMStorage |Devuelve el nombre de la primera cuenta de almacenamiento con el patrón de nombre "devtest *" (no distingue mayúsculas de minúsculas) en la ubicación especificada o en el grupo de afinidad. Si la cuenta de almacenamiento "devtest*" no coincide con la ubicación o el grupo de afinidad, la función la omite. Especifique una ubicación o un grupo de afinidad. |
 | Get-MSDeployCmd |Devuelve un comando para ejecutar la herramienta MsDeploy.exe. |
 | New-AzureVMEnvironment |Busca o crea una máquina virtual en la suscripción que coincida con los valores del archivo de configuración de JSON. |
 | Publish-WebPackage |Usa MsDeploy.exe y un archivo .zip de paquete de publicación web para implementar recursos en un sitio web. Esta función no genera ninguna salida. Si se produce un error en la llamada a MSDeploy.exe, la función genera una excepción. Para obtener una salida más detallada, use la opción **-Verbose** . |

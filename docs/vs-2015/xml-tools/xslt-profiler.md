@@ -1,5 +1,5 @@
 ---
-title: XSLT Profiler | Microsoft Docs
+title: Generador de perfiles XSLT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -21,11 +21,11 @@ ms.locfileid: "74300956"
 
 El generador de perfiles XSLT es una herramienta de generador de perfiles de análisis de rendimiento que ayuda a desarrollar y depurar documentos XSLT. Este generador de perfiles permite a los programadores de software medir y evaluar los problemas relacionados con el rendimiento en el código XSLT mediante la creación de informes de rendimiento de XSLT detallados. El generador de perfiles XSLT incluye sugerencias útiles para la optimización de la hoja de estilos XSL y XSLT, que son esenciales para las aplicaciones basadas en XSLT que exigen el máximo rendimiento.
 
- The XSLT Profiler is part of Visual Studio 2010 and is available from the Visual Studio **XML** menu.
+ El generador de perfiles XSLT forma parte de Visual Studio 2010 y está disponible en el menú **XML** de Visual Studio.
 
  ![Generador de perfiles XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- El generador de perfiles XSLT se presentó por primera vez como complemento de Visual Studio 2008. For more information, see the Related Resources section on the [XSLT Profiler for Visual Studio Feb 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) page.
+ El generador de perfiles XSLT se presentó por primera vez como complemento de Visual Studio 2008. Para obtener más información, consulte la sección recursos relacionados en la página del [generador de perfiles XSLT para Visual Studio de febrero de 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) .
 
 > [!NOTE]
 > La apariencia de algunas pantallas en estos documentos quizá sea distinta en Visual Studio 2010 ya que a partir de Visual Studio 2008 se cambiaron algunos elementos viduales.

@@ -1,5 +1,5 @@
 ---
-title: Anatomy of a VSIX Package | Microsoft Docs
+title: Anatomía de un paquete VSIX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,41 +22,41 @@ ms.locfileid: "74295647"
 # <a name="anatomy-of-a-vsix-package"></a>Anatomía de un paquete VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A VSIX package is a .vsix file that contains one or more Visual Studio extensions, together with the metadata Visual Studio uses to classify and install the extensions. That metadata is contained in the VSIX manifest and the [Content_Types].xml file. A VSIX package may also contain one or more Extension.vsixlangpack files to provide localized setup text, and may contain additional VSIX packages to install dependencies.  
+Un paquete VSIX es un archivo. vsix que contiene una o varias extensiones de Visual Studio, junto con los metadatos que Visual Studio usa para clasificar e instalar las extensiones. Esos metadatos se incluyen en el manifiesto de VSIX y en el archivo [Content_Types]. Xml. Un paquete VSIX también puede contener uno o más archivos Extension. vsixlangpack para proporcionar el texto de instalación localizado y puede contener paquetes VSIX adicionales para instalar las dependencias.  
   
- The VSIX package format follows the Open Packaging Conventions (OPC) standard. The package contains binaries and supporting files, together with a [Content_Types].xml file and a .vsix manifest file. One VSIX package may contain the output of multiple projects, or even multiple packages that have their own manifests.  
+ El formato de paquete VSIX sigue el estándar de convenciones de empaquetado abierto (OPC). El paquete contiene archivos binarios y archivos auxiliares, junto con un archivo [Content_Types]. XML y un archivo de manifiesto. vsix. Un paquete VSIX puede contener la salida de varios proyectos, o incluso varios paquetes que tienen sus propios manifiestos.  
   
 > [!NOTE]
-> The names of the files included in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> Los nombres de los archivos incluidos en los paquetes VSIX no deben incluir espacios ni caracteres que estén reservados en los identificadores uniformes de recursos (URI), tal como se define en [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
-## <a name="the-vsix-manifest"></a>The VSIX Manifest  
- The VSIX manifest contains information about the extension to be installed, and follows the VSX Schema. For more information, see [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). For an example VSIX manifest, see [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+## <a name="the-vsix-manifest"></a>El manifiesto de VSIX  
+ El manifiesto de VSIX contiene información sobre la extensión que se va a instalar y sigue el esquema VSX. Para obtener más información, vea [Referencia del esquema de extensión VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para obtener un ejemplo de manifiesto VSIX, vea [elemento PackageManifest (elemento root, esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
- The VSIX manifest must be named `extension.vsixmanifest` when it is included in a .vsix file.  
+ El manifiesto de VSIX se debe denominar `extension.vsixmanifest` cuando se incluye en un archivo. vsix.  
   
-## <a name="the-content"></a>The Content  
- A VSIX package may contain templates, toolbox items, VSPackages, or any other kind of extension that is supported by Visual Studio.  
+## <a name="the-content"></a>El contenido  
+ Un paquete VSIX puede contener plantillas, elementos del cuadro de herramientas, VSPackages o cualquier otro tipo de extensión compatible con Visual Studio.  
   
-## <a name="language-packs"></a>Paquetes de idioma  
- A VSIX package may contain once or more Extension.vsixlangpack files to provide localized text during installation. For more information, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md).  
+## <a name="language-packs"></a>Language Packs  
+ Un paquete VSIX puede contener uno o más archivos Extension. vsixlangpack para proporcionar texto localizado durante la instalación. Para obtener más información, consulte [localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md).  
   
-## <a name="dependencies-and-references"></a>Dependencies and References  
- A VSIX package may contain other VSIX packages as references. Each of these other packages must include its own VSIX manifest.  
+## <a name="dependencies-and-references"></a>Dependencias y referencias  
+ Un paquete VSIX puede contener otros paquetes VSIX como referencias. Cada uno de estos otros paquetes debe incluir su propio manifiesto de VSIX.  
   
- If a user tries to install an extension that has dependencies, the installer verifies that the required assemblies are installed on the user system. If the required assemblies are not found, **Extensions and Updates** displays a list of the missing assemblies.  
+ Si un usuario intenta instalar una extensión que tiene dependencias, el instalador comprueba que los ensamblados necesarios están instalados en el sistema del usuario. Si no se encuentran los ensamblados necesarios, **extensions and updates** muestra una lista de los ensamblados que faltan.  
   
- If the extension manifest includes one or more [Reference](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elements, **Extensions and Updates** compares the manifest of each reference to the extensions that are installed on the system, and installs the referenced extension if it is not already installed. If an earlier version of a referenced extension is installed, the newer version replaces it.  
+ Si el manifiesto de la extensión incluye uno o más elementos de [referencia](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) , las **extensiones y actualizaciones** comparan el manifiesto de cada referencia con las extensiones que están instaladas en el sistema e instala la extensión a la que se hace referencia si aún no está instalada. Si se instala una versión anterior de una extensión a la que se hace referencia, la versión más reciente la reemplaza.  
   
- If a project in a multi-project solution includes a reference to another project in the same solution, the VSIX package includes the dependencies of that project. You can override this behavior by clicking the reference for the internal project, and then, in the **Properties** window, setting the **Output Groups Included in VSIX** property to `BuiltProjectOutputGroup`.  
+ Si un proyecto de una solución de varios proyectos incluye una referencia a otro proyecto en la misma solución, el paquete VSIX incluye las dependencias de ese proyecto. Para invalidar este comportamiento, haga clic en la referencia del proyecto interno y, a continuación, en la ventana **propiedades** , establezca los **grupos de salida incluidos en** la propiedad VSIX en `BuiltProjectOutputGroup`.  
   
- To include satellite DLLs from referenced assemblies in the VSIX package, add `SatelliteDllsProjectOutputGroup` to the **Output Groups Included in VSIX** property.  
+ Para incluir los archivos dll satélite de los ensamblados a los que se hace referencia en el paquete VSIX, agregue `SatelliteDllsProjectOutputGroup` a los **grupos de salida incluidos en** la propiedad VSIX.  
   
 ## <a name="installation-location"></a>Ubicación de instalación  
- During installation, **Extensions and Updates** looks for the contents of the VSIX package in a folder under %LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
+ Durante la instalación, **extensions and updates** busca el contenido del paquete VSIX en una carpeta en%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- By default, the installation applies only to the current user, because %LocalAppData% is a user-specific directory. However, if you set the [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) element of the manifest to `True`, the extension will be installed under ..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions and will be available to all users of the computer.  
+ De forma predeterminada, la instalación solo se aplica al usuario actual, ya que% LocalAppData% es un directorio específico del usuario. Sin embargo, si establece el elemento [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) del manifiesto en `True`, la extensión se instalará en.\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions y estarán disponibles para todos los usuarios del equipo.  
   
-## <a name="content_typesxml"></a>[Content_Types].xml  
- The [Content_Types].xml file identifies the file types in the expanded .vsix file. Visual Studio uses this file during installation of the package but does not install the file itself. For more information about this file, see [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+## <a name="content_typesxml"></a>[Content_Types]. XML  
+ El archivo [Content_Types]. XML identifica los tipos de archivo en el archivo. vsix expandido. Visual Studio usa este archivo durante la instalación del paquete, pero no instala el propio archivo. Para obtener más información acerca de este archivo, consulte [la estructura del archivo Content_types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- A [Content_Types].xml file is required by the Open Packaging Conventions (OPC) standard. For more information about OPC, see [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207) on the MSDN Web site.
+ El estándar de convenciones de empaquetado abierto (OPC) requiere un archivo [Content_Types]. Xml. Para obtener más información acerca de OPC, consulte [OPC: un nuevo estándar para empaquetar los datos](https://go.microsoft.com/fwlink/?LinkID=148207) en el sitio web de MSDN.

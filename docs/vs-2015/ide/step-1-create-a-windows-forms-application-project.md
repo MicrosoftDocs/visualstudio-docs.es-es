@@ -21,13 +21,13 @@ ms.locfileid: "74295784"
 
 Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto de aplicación de Windows Forms.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://go.microsoft.com/fwlink/?LinkId=205209) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Para crear un proyecto de Aplicación de Windows Forms
 
 1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**. El cuadro de diálogo debe tener un aspecto similar al que se muestra a continuación.
 
-     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
+     ![Cuadro de diálogo nuevo proyecto](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Cuadro de diálogo nuevo proyecto
 
 2. Seleccione **Visual C#** o **Visual Basic** en la lista **Plantillas instaladas**.
 
@@ -40,7 +40,7 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
     > [!NOTE]
     > El diseño de la ventana puede no ser exactamente igual que el de la ilustración. El diseño exacto de la ventana depende de la versión de Visual Studio, el lenguaje de programación utilizado y otros factores. No obstante, debe comprobar que aparezcan las tres ventanas.
 
-     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
+     ![Ventana del IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") Ventana del IDE
 
      La interfaz contiene tres ventanas: una ventana principal, el **Explorador de soluciones** y la ventana **Propiedades**.
 
@@ -61,7 +61,7 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
 
      Si quiere, también puede pulsar el botón **Guardar todo** de la barra de herramientas que se muestra en la ilustración siguiente.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
+     ![Botón guardar todo](../ide/media/express-iconsaveall.png "Express_IconSaveAll") de la barra de herramientas Botón guardar todo de la barra de herramientas
 
      Visual Studio rellena automáticamente el nombre de la carpeta y el nombre del proyecto, y después guarda el proyecto en la carpeta de proyectos.
 

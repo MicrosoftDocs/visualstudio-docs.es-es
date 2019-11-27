@@ -21,7 +21,7 @@ ms.locfileid: "74295727"
 
 En este paso, se agregan controles, como un control `PictureBox` y un control `CheckBox`, al formulario. A continuación, se agregan botones al formulario.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) or [Tutorial 1: Create a Picture Viewer in C# - Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 2 o el](https://go.microsoft.com/fwlink/?LinkId=205211) [tutorial 1: C# crear un visor de imágenes en-vídeo 2](https://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Para agregar controles al formulario
 
@@ -33,7 +33,7 @@ En este paso, se agregan controles, como un control `PictureBox` y un control `C
 
 4. Elija el nuevo control PictureBox para seleccionarlo y, a continuación, elija el triángulo negro de este control para mostrar la lista de tareas, tal y como se muestra en la imagen siguiente.
 
-     ![PictureBox tasks](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox tasks
+     ![Tareas de PictureBox](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") Tareas de PictureBox
 
     > [!NOTE]
     > Si agrega accidentalmente un tipo equivocado de control a TableLayoutPanel, puede eliminarlo. Haga clic con el botón derecho en el control y, después, pulse **Eliminar** en el menú contextual. También puede quitar controles del formulario mediante la barra de menús. En la barra de menús, pulse **Editar**, **Deshacer** o **Editar**, **Eliminar**.
@@ -47,7 +47,7 @@ En este paso, se agregan controles, como un control `PictureBox` y un control `C
 
 7. Seleccione el control TableLayoutPanel del formulario y, después, agregue un control **CheckBox** al formulario. Haga doble clic en el elemento **CheckBox** del cuadro de herramientas para agregar un nuevo control CheckBox a la siguiente celda libre de la tabla. Como el control PictureBox ocupa las dos primeras celdas del control TableLayoutPanel, el control CheckBox se agrega en la celda inferior izquierda. Seleccione la propiedad **Text** y escriba la palabra **Stretch**, como se muestra en la imagen siguiente.
 
-     ![TextBox control with Stretch property](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox control with Stretch property
+     ![Control TextBox con la propiedad Stretch](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") Control TextBox con la propiedad Stretch
 
 8. Seleccione el control TableLayoutPanel del formulario, vaya al grupo **Contenedores** del cuadro de herramientas (donde ha obtenido el control TableLayoutPanel) y haga doble clic en el elemento **FlowLayoutPanel** para agregar un nuevo control a la última celda de PictureBox (en la parte inferior derecha). Después, acople el control FlowLayoutPanel en TableLayoutPanel (para ello, pulse **Acoplar en contenedor primario** en la lista de tareas del triángulo negro de FlowLayoutPanel o establezca la propiedad **Dock** de FlowLayoutPanel en **Fill**).
 
@@ -70,9 +70,9 @@ En este paso, se agregan controles, como un control `PictureBox` y un control `C
     > [!NOTE]
     > Si los botones siguen en orden incorrecto, puede arrastrarlos alrededor de FlowLayoutPanel para reorganizarlos en cualquier orden. Puede elegir un botón y arrastrarlo a la izquierda o a la derecha.
 
-5. Pulse el botón **Cerrar** para seleccionarlo. Mantenga presionada la tecla CTRL y elija los otros tres botones para que todos estén seleccionados. Mientras todos los botones están seleccionados, vaya a la ventana **Propiedades** y desplácese hacia arriba hasta la propiedad **AutoSize**. Esta propiedad indica al botón que cambie el tamaño automáticamente para ajustarse al texto que contiene. Establézcala en **true**. Ahora, los botones deberían tener el tamaño y orden correctos. (As long as all four buttons are selected, you can change all four **AutoSize** properties at the same time.) The following picture shows the four buttons.
+5. Pulse el botón **Cerrar** para seleccionarlo. Mantenga presionada la tecla CTRL y elija los otros tres botones para que todos estén seleccionados. Mientras todos los botones están seleccionados, vaya a la ventana **Propiedades** y desplácese hacia arriba hasta la propiedad **AutoSize**. Esta propiedad indica al botón que cambie el tamaño automáticamente para ajustarse al texto que contiene. Establézcala en **true**. Ahora, los botones deberían tener el tamaño y orden correctos. (Siempre y cuando los cuatro botones estén seleccionados, puede cambiar las cuatro propiedades **AutoSize** al mismo tiempo). En la imagen siguiente se muestran los cuatro botones.
 
-     ![Picture Viewer with four buttons](../ide/media/express-autosize.png "Express_AutoSize") Picture Viewer with four buttons
+     ![Visor de imágenes con cuatro botones](../ide/media/express-autosize.png "Express_AutoSize") Visor de imágenes con cuatro botones
 
 6. Ahora, ejecute de nuevo el programa para ver el formulario que acaba de diseñar. Al elegir los botones y la casilla todavía no sucede nada, pero funcionarán pronto.
 

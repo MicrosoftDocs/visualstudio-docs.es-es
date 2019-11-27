@@ -33,7 +33,7 @@ ms.locfileid: "74297313"
 Descripción del problema  
  El programa produce una infracción de acceso. ¿Cómo se puede depurar este error?  
   
-## <a name="solution"></a>Soluciones  
+## <a name="solution"></a>Solución  
  Si se produce una infracción de acceso en una línea de código que desreferencia varios punteros, puede ser difícil averiguar qué puntero produjo la infracción de acceso. A partir de Visual Studio 2015 Update 1, el cuadro de diálogo de excepción ahora indica explícitamente el puntero que produjo la infracción de acceso.  
   
  Por ejemplo, con el siguiente código, debería obtener una infracción de acceso:  

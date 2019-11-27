@@ -29,7 +29,7 @@ ms.locfileid: "74296837"
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas/Administrador de fragmentos de código**).
 
 > [!TIP]
-> For information about how to write code snippets more easily, search the CodePlex website for community tools such as [Snippet Editor](https://go.microsoft.com/fwlink/?LinkId=251033).
+> Para obtener información sobre cómo escribir fragmentos de código más fácilmente, busque en el sitio web de CodePlex herramientas de la comunidad como el [Editor de fragmentos](https://go.microsoft.com/fwlink/?LinkId=251033)de código.
 
 ## <a name="snippet-template"></a>Plantilla de fragmento de código
  Esta es la plantilla básica de fragmento de código:
@@ -56,7 +56,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 1. Cree un archivo XML en Visual Studio y agregue la plantilla que se ha mostrado anteriormente.
 
-2. Fill in the title of the snippet, e.g. "Hello World VB", in the Title element.
+2. Rellene el título del fragmento de código, por ejemplo, "Hola mundo VB", en el elemento title.
 
 3. Rellene el lenguaje del fragmento de código en el atributo Languages del elemento Code. En este ejemplo, use "VB".
 
@@ -85,13 +85,13 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`
 
-6. Pruebe el fragmento de código. Para ello, abra un proyecto de Visual Basic y abra un archivo de código. In the file click **Insert Snippet** on the context menu, then **My Code Snippets**. Debería ver un fragmento de código denominado **My Visual Basic Code Snippet** (Mi fragmento de código de Visual Basic). Haga doble clic en ella.
+6. Pruebe el fragmento de código. Para ello, abra un proyecto de Visual Basic y abra un archivo de código. En el archivo, haga clic en **Insertar fragmento** de código en el menú contextual y luego en **mis fragmentos de código**. Debería ver un fragmento de código denominado **My Visual Basic Code Snippet** (Mi fragmento de código de Visual Basic). Haga doble clic en ella.
 
-7. You should see `Console.WriteLine("Hello, World!")` inserted in the code.
+7. Debería ver `Console.WriteLine("Hello, World!")` insertado en el código.
 
 ### <a name="adding-description-and-shortcut-fields"></a>Agregar campos de descripción y de acceso directo
 
-1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que ha agregado; para ello, abra el archivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
 
 2. Agregue elementos Author y Description al elemento Header y rellénelos.
 
@@ -122,11 +122,11 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 6. Guarde de nuevo el archivo de fragmento de código.
 
-7. Para probar el acceso directo, abra un proyecto de Visual Basic y abra un archivo de código. Type `hello` in the file and press TAB. The snippet code should be inserted.
+7. Para probar el acceso directo, abra un proyecto de Visual Basic y abra un archivo de código. Escriba `hello` en el archivo y presione la tecla TAB. Se debe insertar el código del fragmento de código.
 
 ### <a name="to-add-references-and-imports"></a>Para agregar referencias e importaciones
 
-1. With Visual Basic snippets you can add a reference to a project by using the References element, and add an Imports declaration by using the Imports element. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.
+1. Con los fragmentos de Visual Basic puede Agregar una referencia a un proyecto mediante el elemento References y agregar una declaración de importaciones mediante el elemento Imports. (Los fragmentos de código de otros lenguajes no tienen esta característica). Por ejemplo, si cambia `Console.WriteLine` en el ejemplo de código a `MessageBox.Show`, puede que necesite agregar el ensamblado System. Windows. Forms. dll al proyecto.
 
 2. Abra el fragmento de código.
 
@@ -248,7 +248,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 8. Abra un proyecto de Visual Basic y agregue el fragmento de código.
 
-9. El código debe ser similar al siguiente, donde los reemplazos `SQL connection string` y `dcConnection` se resaltan en color naranja claro. Press TAB to navigate from one to the other.
+9. El código debe ser similar al siguiente, donde los reemplazos `SQL connection string` y `dcConnection` se resaltan en color naranja claro. Presione TAB para desplazarse de uno a otro.
 
     ```
     Dim daCustomers As SqlDataAdapter

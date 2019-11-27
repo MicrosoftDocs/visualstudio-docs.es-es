@@ -1,5 +1,5 @@
 ---
-title: Select Rule Set Dialog Box (Legacy) | Microsoft Docs
+title: Cuadro de diálogo Seleccionar conjunto de reglas (heredado) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -21,27 +21,27 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301449"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Seleccionar conjunto de reglas (Cuadro de diálogo) (Heredado)
-This topic describes how use the **Select Rule Set** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+En este tema se describe cómo usar el cuadro de diálogo **seleccionar conjunto de reglas** en el [!INCLUDE[wfd1](../includes/wfd1-md.md)]heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- The **Select Rule Set** dialog box is used to select a rule set that you can use with a [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) activity. For information about how to access the **Select Rule Set** dialog box, see [How to: Create a PolicyActivity Rule Set (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ El cuadro de diálogo **seleccionar conjunto de reglas** se usa para seleccionar un conjunto de reglas que se puede usar con una actividad [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Para obtener información sobre cómo acceder al cuadro de diálogo **seleccionar conjunto de reglas** , consulte [Cómo: crear un conjunto de reglas de PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- The following table describes the user interface (UI) elements of the **Select Rule Set** dialog box.
+ En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) del cuadro de diálogo **seleccionar conjunto de reglas** .
 
 |Elemento de la interfaz de usuario|Descripción|
 |----------------|-----------------|
-|**New…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to create a new rule condition.|
-|**Edit…**|Click to open the [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) to edit the selected rule condition.|
-|**Rename…**|Haga clic en esta opción para abrir un cuadro de diálogo usado para cambiar el nombre del conjunto de reglas seleccionado.|
+|**Nuevo...**|Haga clic para abrir el [cuadro de diálogo Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) para crear una nueva condición de regla.|
+|**Editar...**|Haga clic en esta opción para abrir el [cuadro de diálogo Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) para editar la condición de regla seleccionada.|
+|**Cambiar nombre...**|Haga clic en esta opción para abrir un cuadro de diálogo usado para cambiar el nombre del conjunto de reglas seleccionado.|
 |**Eliminar**|Haga clic en esta opción para eliminar el conjunto de reglas seleccionado.|
-|**Rule Set Preview**|Muestra las reglas del conjunto de reglas seleccionado.|
-|**OK**|Click to assign the selected rule set to the **PolicyActivity** activity.|
+|**Vista previa del conjunto de reglas**|Muestra las reglas del conjunto de reglas seleccionado.|
+|**Vale**|Haga clic para asignar el conjunto de reglas seleccionado a la actividad **PolicyActivity** .|
 
- For more information about how to create and edit rule sets, see [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+ Para obtener más información sobre cómo crear y editar conjuntos de reglas, vea [cuadro de diálogo Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
 > El editor de reglas del [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado que se usa para tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] no es compatible con múltiples versiones.
 
- For more information about conditions, see [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Para obtener más información sobre las condiciones, vea [uso de condiciones en flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Vea también
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Rule Set Editor Dialog Box (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Using the PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Using Conditions in Workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [cuadro de diálogo Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [uso de la actividad PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [uso de condiciones en flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65009)

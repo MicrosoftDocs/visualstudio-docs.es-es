@@ -158,7 +158,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 6. Si usa el agente remoto en el modo de conexión segura predeterminado, active la casilla **Seguro** y, a continuación, escriba el valor de PIN especificado por el agente remoto en el campo **Pin** . Si usa el agente remoto en el modo de conexión no segura, desactive la casilla **Seguro** y deje el campo **Pin** en blanco.  
   
-7. Elija **Emparejar** para habilitar el emparejamiento.  
+7. Pulse **Emparejar** para habilitar el emparejamiento.  
   
     ![Configurar la conexión de vcremote para compilaciones de iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
@@ -240,4 +240,4 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
      Donde *config_file_path* es la ruta de acceso a un archivo de configuración en formato JSON. Las opciones de inicio y sus valores no deben incluir guiones.  
   
 ## <a name="see-also"></a>Vea también  
- [Instalar Visual C++ para desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

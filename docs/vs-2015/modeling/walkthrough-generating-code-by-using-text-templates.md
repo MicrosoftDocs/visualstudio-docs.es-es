@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
+title: 'Tutorial: generar código mediante plantillas de texto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -421,4 +421,4 @@ namespace MyProject
  Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Vea también
- [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)
+ [Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

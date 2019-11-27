@@ -1,5 +1,5 @@
 ---
-title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
+title: 'CA3075: procesamiento de DTD no seguro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -35,31 +35,31 @@ ms.locfileid: "74300972"
 
 - Se ha establecido la propiedad <xref:System.Xml.XmlNode.InnerXml%2A> del XML.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propiedad está establecida en Parse.
 
 - Las entradas que no son de confianza se procesan mediante <xref:System.Xml.XmlResolver> en lugar de con <xref:System.Xml.XmlSecureResolver> .
 
-- The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> el método se invoca con una instancia de <xref:System.Xml.XmlReaderSettings> no segura o sin ninguna instancia.
 
-- <xref:System.Xml.XmlReader> is created with insecure default settings or values    .
+- <xref:System.Xml.XmlReader> se crea con valores o configuraciones predeterminados no seguros.
 
   En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
+- Detecte y procese todas las excepciones de XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.
+- Use el <xref:System.Xml.XmlSecureResolver> para restringir los recursos a los que puede tener acceso XmlTextReader.
 
-- Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.
+- No permita que el <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlResolver> en **null**.
 
 - Asegúrese de que la propiedad <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> se asigne desde un origen de confianza.
 
   .NET 3.5 y versiones anteriores
 
-- Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .
+- Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> en **true** .
 
-- La clase XmlTextReader tiene una petición de herencia de plena confianza. See [Inheritance Demands](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .
+- La clase XmlTextReader tiene una petición de herencia de plena confianza. Vea [peticiones de herencia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obtener más información.
 
   .NET 4 y versiones posteriores
 
@@ -96,7 +96,7 @@ class TestClass
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.IO;
@@ -137,7 +137,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.Xml;
@@ -193,7 +193,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.Xml;
@@ -227,7 +227,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.IO;
@@ -266,7 +266,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.Xml;
@@ -299,7 +299,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.Xml;
@@ -365,7 +365,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System.Xml;
