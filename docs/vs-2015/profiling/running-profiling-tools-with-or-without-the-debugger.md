@@ -45,13 +45,13 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
 2. La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.  
   
-3. Ejecute los escenarios cuyos datos desea recopilar.  
+3. Ejecute los escenarios para los que quiere recopilar datos.  
   
     Mientras se ejecuta la sesión, puede ver información sobre eventos, memoria de procesos y uso de CPU.  
   
     En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. Puede elegir si ve el **Uso de memoria** o el **Uso de CPU** (o ambos) con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas / Opciones / IntelliTrace**.  
   
@@ -74,11 +74,11 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
 1. Abra el proyecto en Visual Studio.  
   
-2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
+2. En el menú **depurar** , elija **generador de perfiles de rendimiento...** (tecla de método abreviado: Alt + F2).  
   
 3. En la página de inicio de diagnóstico, elija una o varias herramientas para ejecutarlas en la sesión. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Al elegir una herramienta de diagnóstico, se deshabilitan las selecciones de las herramientas que no se pueden ejecutar en la misma sesión de diagnóstico. Este es el aspecto que podrían tener las opciones para una aplicación universal de Windows en C#:  
   
-    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Seleccionar las herramientas de diagnóstico](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.  
   
@@ -86,7 +86,7 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
     Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de inicio de las herramientas de diagnóstico.  
   
-    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Recopilación de datos en el rendimiento y diagnóstico pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.  
   
@@ -94,34 +94,34 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
    También puede abrir archivos de sesión .diagnostic guardados de la lista abierta recientemente en la página de inicio de las herramientas de diagnóstico.  
   
-   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Abrir un archivo de sesión de diagnóstico guardado](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>El informe de generación de perfiles  
- ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Informe de herramientas de diagnóstico](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
-|![Paso 1](../profiling/media/procguid-1.png "ProcGuid_1")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
-|![Paso 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|  
+|![Paso 1](../profiling/media/procguid-1.png "ProcGuid_1")|La escala de tiempo muestra la duración de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
+|![Paso 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puede restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de la escala de tiempo.|  
 |![Paso 3](../profiling/media/procguid-3.png "ProcGuid_3")|Una herramienta muestra uno o varios gráficos maestros. Si la sesión de diagnóstico se crea con varias herramientas, se muestran todos los gráficos maestros.|  
-|![Paso 4](../profiling/media/procguid-4.png "ProcGuid_4")|Puede contraer y expandir los gráficos individuales.|  
-|![Paso 5](../profiling/media/procguid-6.png "ProcGuid_6")|Si los datos incluyen información de varias herramientas, los detalles de la herramienta se recopilan bajo pestañas.|  
-|![Paso 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Una herramienta puede tener una o varias vistas de detalle. La vista se filtra por la región seleccionada de la escala de tiempo.|  
+|![Paso 4](../profiling/media/procguid-4.png "ProcGuid_4")|Puede contraer y expandir cada uno de los gráficos.|  
+|![Paso 5](../profiling/media/procguid-6.png "ProcGuid_6")|Cuando los datos incluyen información de varias herramientas, los detalles de la herramienta se recopilan en pestañas.|  
+|![Paso 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Una herramienta puede tener una o varias vistas de detalles. La vista se filtra por la región seleccionada de la escala de tiempo.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Establecer el destino del análisis a otro dispositivo  
  Además de iniciar la aplicación desde el proyecto de Visual Studio, también puede ejecutar sesiones de diagnóstico en destinos alternativos. Por ejemplo, puede que le interese diagnosticar problemas de rendimiento en una versión de la aplicación que se instaló desde la Tienda de aplicaciones Windows.  
   
- ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Elegir destino de análisis de herramientas de diagnóstico](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Puede iniciar las aplicaciones que ya están instaladas en un dispositivo o puede asociar las herramientas de diagnóstico a algunas aplicaciones que se están ejecutando. Cuando elige **Aplicación en ejecución** o **Aplicación instalada**, selecciona la aplicación de una lista que muestra las aplicaciones en el destino de implementación especificado.  
   
- ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Elegir una aplicación instalada o en ejecución para el diagnóstico](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Al elegir **Internet Explorer**, puede especificar la dirección URL y cambiar el destino de implementación del teléfono.  
   
- ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Especificar la dirección URL que se mostrará en Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Remote Debugging  
+## <a name="remote-debugging"></a>Depuración remota  
  Ejecutar una sesión de diagnóstico en un equipo remoto o una tableta requiere instalar en el destino remoto las herramientas remotas de Visual Studio. Para aplicaciones de escritorio, consulte [Depuración remota](../debugger/remote-debugging.md).  Para aplicaciones universales de Windows, consulte [Ejecutar aplicaciones de la Tienda Windows de ejecución en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Entradas de blog y artículos de MSDN del equipo de desarrollo de diagnóstico  

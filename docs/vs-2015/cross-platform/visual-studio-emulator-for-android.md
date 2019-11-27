@@ -24,7 +24,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  Puede probar la aplicación en un perfil de dispositivo único para cada una de las plataformas Android, resoluciones de pantalla y otras propiedades de hardware compatibles con el Emulador de Visual Studio para Android.  
   
- En este tema se incluyen las siguientes secciones.  
+ Este tema contiene las siguientes secciones.  
   
 - [Instalación y desinstalación](#Installing)  
   
@@ -112,4 +112,4 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
 ## <a name="see-also"></a>Vea también  
  [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Solución de problemas del emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

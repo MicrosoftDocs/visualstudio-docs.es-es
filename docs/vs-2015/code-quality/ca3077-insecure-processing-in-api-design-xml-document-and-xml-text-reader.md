@@ -1,5 +1,5 @@
 ---
-title: 'CA3077: Insecure Processing in API Design, XML Document and XML Text Reader | Microsoft Docs'
+title: 'CA3077: procesamiento inseguro en el diseño de la API, documento XML y lector de texto XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -31,15 +31,15 @@ ms.locfileid: "74300475"
 ## <a name="rule-description"></a>Descripción de la regla
  Una [definición de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](https://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , lo que puede provocar ataques por [denegación de servicio (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regla se desencadena cuando:
 
-- <xref:System.Xml.XmlDocument> or <xref:System.Xml.XmlTextReader> classes use default resolver values for DTD processing    .
+- <xref:System.Xml.XmlDocument> o <xref:System.Xml.XmlTextReader> clases usan valores de resolución predeterminados para el procesamiento de DTD.
 
 - No se ha definido ningún constructor para las clases derivadas XmlDocument o XmlTextReader o no se usa ningún valor seguro para <xref:System.Xml.XmlResolver>.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .
+- Detecte y procese todas las excepciones de XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use <xref:System.Xml.XmlSecureResolver>instead of XmlResolver to restrict the resources the XmlTextReader can  access.
+- Use <xref:System.Xml.XmlSecureResolver>en lugar de XmlResolver para restringir los recursos a los que puede tener acceso XmlTextReader.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```csharp
 using System;

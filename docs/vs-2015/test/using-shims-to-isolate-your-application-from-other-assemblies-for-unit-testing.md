@@ -18,9 +18,9 @@ ms.locfileid: "74301417"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los tipos de correcciones de compatibilidad (shim)** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando. Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. De esta forma, es mucho más fácil escribir las pruebas.
+Los tipos de correcciones de compatibilidad (shim)** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando. Las correcciones de compatibilidad desvían las llamadas a determinados métodos y las dirigen al código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. Así, es mucho más sencillo escribir las pruebas.
 
- Utilice las correcciones de compatibilidad para aislar el código de los ensamblados que no forman parte de la solución. Para aislar los componentes de la solución, se recomienda que use códigos auxiliares.
+ Utilice correcciones de compatibilidad para aislar el código respecto de los ensamblados que no forman parte de su solución. Para aislar los componentes de su solución entre sí, le recomendamos que use códigos auxiliares.
 
  Para obtener una visión general y una guía de inicio rápido, vea [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -503,8 +503,8 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientación
+### <a name="guidance"></a>Guía
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vea también
- [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+ [Aislar el código sometido a prueba con Microsoft se falsifica](../test/isolating-code-under-test-with-microsoft-fakes.md) el [blog de Peter Provost sobre: vídeo de las correcciones de compatibilidad de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(16m): probar el código que no se pueda comprobar con falsificaciones en Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

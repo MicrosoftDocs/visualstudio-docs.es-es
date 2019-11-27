@@ -23,11 +23,11 @@ ms.locfileid: "74300094"
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tiempo excesivo de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0024|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|% Time in GC is very high. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.|  
-|Rule type|Warning|  
+Identificador de regla | DA0024 |  
+| Categoría |. Uso de .NET Framework |  
+| Método de generación de perfiles | Todo |  
+| El mensaje |% de tiempo del GC es muy alto. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.|  
+| Tipo de regla | ADVERTENCIA |  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   

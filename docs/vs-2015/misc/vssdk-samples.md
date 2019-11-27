@@ -1,5 +1,5 @@
 ---
-title: VSSDK Samples | Microsoft Docs
+title: Ejemplos de VSSDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp

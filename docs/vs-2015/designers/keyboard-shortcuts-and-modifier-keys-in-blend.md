@@ -25,13 +25,13 @@ Los métodos abreviados de teclado pueden agilizar el trabajo al reducir una acc
 
    Para usar las teclas de acceso, presione primero ALT o F10 para que aparezca el carácter de subrayado y, a continuación, presione la letra correspondiente en dicho menú o cuadro de diálogo. También puede desplazarse por un menú o un cuadro de diálogo con la tecla TAB o con las teclas de dirección. Por ejemplo, si presiona ALT en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], aparecerá un subrayado debajo de la letra**A** del menú **Archivo** que la identifica como tecla de acceso. Para abrir un proyecto, puede mantener presionada la tecla ALT, presionar A y, a continuación, presionar B.
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Access keys that appear with an underscore after you press ALT
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Teclas de acceso que aparecen con un carácter de subrayado después de presionar ALT
 
 - **Teclas de método abreviado** Puede usar estas teclas para realizar una acción (como seleccionar un comando de menú o modificar el comportamiento de una herramienta) si presiona un método abreviado de teclado.
 
    Es fácil identificar a la mayoría de los métodos abreviados de teclado en la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], ya que aparecen a la derecha de los comandos de menú. Por ejemplo, el comando de menú **Abrir proyecto** del menú **Archivo** incluye el método abreviado de teclado CTRL+MAYÚS+O. Para ver las teclas de método abreviado de una herramienta en el panel **Herramientas**, mantenga el puntero sobre la herramienta.
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Shortcut keys that appear next to menu items that have shortcuts
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Teclas de método abreviado que aparecen junto a los elementos de menú que tienen accesos directos
 
   Para obtener más información sobre la accesibilidad y sus características, vea [Accesibilidad en Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069).
 

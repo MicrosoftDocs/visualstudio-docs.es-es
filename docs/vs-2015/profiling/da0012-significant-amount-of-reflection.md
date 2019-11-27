@@ -24,11 +24,11 @@ ms.locfileid: "74300306"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad significativa de reflexión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
-|Category|.NET Framework Usage|  
-|Profiling methods|Sampling|  
-|Message|You may be using Reflection excessively. Es una operación que consume muchos recursos.|  
-|Rule type|Warning|  
+Identificador de regla | DA0012 |  
+| Categoría |. Uso de .NET Framework |  
+| Métodos de generación de perfiles | Muestreo |  
+| Mensaje | Es posible que esté utilizando la reflexión en exceso. Es una operación que consume muchos recursos.|  
+| Tipo de regla | ADVERTENCIA |  
   
 ## <a name="cause"></a>Motivo  
  Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado a los métodos de ensamblados dependientes.  

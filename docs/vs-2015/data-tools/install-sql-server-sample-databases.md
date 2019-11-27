@@ -1,5 +1,5 @@
 ---
-title: Install SQL Server sample databases | Microsoft Docs
+title: Instalación de SQL Server bases de datos de ejemplo | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.date: 11/15/2016
@@ -19,21 +19,21 @@ ms.locfileid: "74299627"
 # <a name="install-sql-server-sample-databases"></a>Instalación de bases de datos de ejemplo de SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sample databases are useful for experimenting with SQL and LINQ queries, databinding,  Entity Framework modeling, and so on.  Each database product has its own sample databases. Northwind and AdventureWorks are two popular SQL Server sample databases.
+Las bases de datos de ejemplo son útiles para experimentar con consultas SQL y LINQ, el enlace de datos, el modelado de Entity Framework, etc.  Cada producto de base de datos tiene sus propias bases de datos de ejemplo. Northwind y AdventureWorks son dos conocidas SQL Server bases de datos de ejemplo.
 
- **AdventureWorks** is the current sample database provided for SQL Server products. You can download it as an .mdf file from the [AdventureWorks page on Codeplex](https://archive.codeplex.com/?p=msftdbprodsamples). There are regular and lightweight (LT) versions of the database available here. For most scenarios, the LT version is preferred because it is less complex.
+ **AdventureWorks** es la base de datos de ejemplo actual proporcionada para SQL Server productos. Puede descargarlo como un archivo. MDF de la [Página de AdventureWorks en Codeplex](https://archive.codeplex.com/?p=msftdbprodsamples). Hay versiones normales y ligeras (LT) de la base de datos disponibles aquí. Para la mayoría de los escenarios, se prefiere la versión LT porque es menos compleja.
 
- **Northwind** is a relatively simple SQL Server database that has been used for many years. You can download it as a .bak file from the [Northwind database page on CodePlex](https://northwinddatabase.codeplex.com/). To avoid permissions issues, unzip the file into a new folder that is not under your user folder.
+ **Northwind** es una base de datos de SQL Server relativamente sencilla que se ha usado durante muchos años. Puede descargarlo como un archivo. bak desde la [Página de base de datos Northwind en Codeplex](https://northwinddatabase.codeplex.com/). Para evitar problemas de permisos, descomprima el archivo en una carpeta nueva que no esté bajo su carpeta de usuario.
 
-#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>To restore a database from a .bak file in Visual Studio
+#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar una base de datos desde un archivo. bak en Visual Studio
 
-1. When you back up a Microsoft SQL Server database, the result is a .bak file. To make the .bak file usable again as a database file, it must be *restored*. On the main menu, select **View** > **SQL Server Object Explorer**. If you don't see it, you might need to install it. Go to **Control Panel** > **Programs and Features**, find Microsoft Visual Studio 2015, and click the **Change** button. When the list of installed components appears in the installer window, select the **SQL Server Object Explorer** check box and then continue with the installation.
+1. Al realizar una copia de seguridad de una base de datos de Microsoft SQL Server, el resultado es un archivo. bak. Para que el archivo. bak se pueda volver a usar como un archivo de base de datos, debe *restaurarse*. En el menú principal, seleccione **ver** > **Explorador de objetos de SQL Server**. Si no lo ve, es posible que tenga que instalarlo. Vaya al **Panel de Control** > **programas y características**, busque Microsoft Visual Studio 2015 y haga clic en el botón **cambiar** . Cuando aparezca la lista de componentes instalados en la ventana del instalador, active la casilla **Explorador de objetos de SQL Server** y, a continuación, continúe con la instalación.
 
-2. In SQL Server Object Explorer, right-click any SQL Server database engine(for example, localdb), and select**New Query**.
+2. En Explorador de objetos de SQL Server, haga clic con el botón secundario en cualquier motor de base de datos SQL Server (por ejemplo, LocalDB) y seleccione**nueva consulta**.
 
-     ![SQL Server Object Explorer New Query](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server Object Explorer New Query")
+     ![Explorador de objetos de SQL Server nueva consulta](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata Explorador de objetos de SQL Server nueva consulta")
 
-3. First, you need the logical names of the database and log files inside the .bak file. To get it, enter this query into the SQL Query Editor and then select the green **Run** button at the top of the window. Modify the file path if necessary to point to the .bak file.
+3. En primer lugar, necesita los nombres lógicos de la base de datos y los archivos de registro dentro del archivo. bak. Para obtenerla, escriba esta consulta en el editor de consultas de SQL y, a continuación, seleccione el botón verde **Ejecutar** situado en la parte superior de la ventana. Modifique la ruta de acceso del archivo, si es necesario, para que apunte al archivo. bak.
 
     ```
     RESTORE FILELISTONLY
@@ -41,9 +41,9 @@ Sample databases are useful for experimenting with SQL and LINQ queries, databin
     GO
     ```
 
-     Write down the logical names that appear in the results window.  For the Northwind database, the two logical names are Northwind and Northwind_log.
+     Anote los nombres lógicos que aparecen en la ventana resultados.  En la base de datos Northwind, los dos nombres lógicos son Northwind y Northwind_log.
 
-4. Now run this query to create the database. Substitute your own source and destination paths, logical database names, and physical file names for Northwind as appropriate. Keep the .mdf and .ldf file extensions.
+4. Ahora ejecute esta consulta para crear la base de datos. Sustituya las rutas de acceso de origen y de destino, los nombres de base de datos lógicos y los nombres de archivo físicos de Northwind según corresponda. Mantenga las extensiones de archivo. MDF y. ldf.
 
     ```
     RESTORE DATABASE Northwind
@@ -52,14 +52,14 @@ Sample databases are useful for experimenting with SQL and LINQ queries, databin
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'
     ```
 
-5. In SQL Server Object Explorer, right-click on the **Databases** node, and you should see the Northwind database node. If not, then right-click on Databases and select **Add New Database**. Enter the name and the location of the .mdf file that you just created.
+5. En Explorador de objetos de SQL Server, haga clic con el botón secundario en el nodo **bases** de datos y debería ver el nodo base de datos Northwind. Si no es así, haga clic con el botón derecho en bases de datos y seleccione **Agregar nueva base de datos**. Escriba el nombre y la ubicación del archivo. MDF que acaba de crear.
 
-6. The database is now ready to use as a data source in Visual Studio.
+6. La base de datos ya está lista para usarse como origen de datos en Visual Studio.
 
-#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>To restore a database from a .bak file in SQL Server Management Studio
+#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Para restaurar una base de datos desde un archivo. bak en SQL Server Management Studio
 
-1. Download SQL Server Management Studio from the download site.
+1. Descargue SQL Server Management Studio del sitio de descarga.
 
-2. In the SSMS **Object Explorer** window, right-click the **Databases** node, select**Restore Database**, and provide the location of the .bak file.
+2. En la ventana **Explorador de objetos** de SSMS, haga clic con el botón secundario en el nodo **bases** de datos, seleccione**restaurar base de datos**y proporcione la ubicación del archivo. bak.
 
-     ![SSMS Restore Database](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS Restore Database")
+     ![Base de datos de restauración de SSMS](../data-tools/media/raddata-ssms-restore-database.png "Base de datos de restauración de raddata SSMS")

@@ -1,5 +1,5 @@
 ---
-title: Debug layout using DOM Explorer | Microsoft Docs
+title: Depurar el diseño mediante el explorador DOM | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,14 +28,14 @@ ms.locfileid: "74298386"
 # <a name="debug-layout-using-dom-explorer"></a>Depurar el diseño mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "windows_and_phone_content")  
+Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content. png "windows_and_phone_content")  
   
  La pestaña **Diseño** del explorador DOM muestra el [Modelo de cuadros CSS](https://go.microsoft.com/fwlink/?LinkID=238778) para el elemento seleccionado en una aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , una aplicación de la Tienda de Windows Phone o una aplicación creada con Visual Studio Tools para Apache Cordova. Puedes utilizar esta representación visual del modelo de cuadros para identificar y modificar los valores relacionados con el diseño que afectan a la apariencia de los elementos.  
   
 > [!TIP]
 > Los cambios que realizas en la pestaña **Diseño** no son permanentes. Puede hacer cambios permanentes en el código fuente y, después, actualizar la aplicación con el botón **Actualizar aplicación de Windows** (solo aplicaciones de la Tienda Windows y de la Tienda de Windows Phone) de la barra de herramientas Depurar. De esta manera, puedes evitar tener que reiniciar el depurador.  
   
- To use DOM Explorer to modify aspects of layout that aren’t shown in the box model, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md) and [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Para usar el explorador DOM para modificar aspectos del diseño que no se muestran en el modelo de cuadro, vea [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar estilos CSS mediante el explorador Dom](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Ejemplo de corrección de un problema de diseño  
  En este ejemplo, vemos cómo seleccionar un elemento de lista en la plantilla Hub/Pivot, interpretaremos los valores del modelo de cuadros que aparecen en la pestaña **Diseño** y, luego, cambiaremos uno de los valores de propiedad para solucionar un problema de diseño.  
@@ -69,7 +69,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 5. En función del proyecto de inicio, elija **Emulator 8.1 WVGA 4 512MB(ES)** o **Simulador** en la lista desplegable de la barra de herramientas Depurar (el valor predeterminado es**Equipo local** ).  
   
-     ![Selecting a debug target](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Seleccionar un destino de depuración](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Presiona F5 para ejecutar la aplicación en modo de depuración.  
   
@@ -83,11 +83,11 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 8. Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic.  
   
     > [!TIP]
-    > También puede usar las teclas de dirección u otros métodos para seleccionar elementos HTML directamente en el Explorador DOM. For more info on selecting elements, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > También puede usar las teclas de dirección u otros métodos para seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, consulte [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. En el emulador de Windows Phone o en el simulador, seleccione la parte derecha de color gris de una de las imágenes cortadas por la mitad. Aparecerá el resaltado alrededor del elemento seleccionado, tal como se muestra en el emulador de Windows Phone:  
   
-     ![Selecting a DOM element](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![Seleccionar un elemento DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > Con el simulador, es posible mantener el mouse sobre los elementos DOM para que aparezca el resaltado del cuadro alrededor de ellos antes de seleccionarlos. En cambio, el emulador de Windows Phone no es compatible con esta acción.  
@@ -99,13 +99,13 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
     </img>  
     ```  
   
-10. Click the **Layout** tab. This tab shows the box model of the selected element, as shown here in the Windows Phone Emulator.  
+10. Haga clic en la pestaña **diseño** . Esta pestaña muestra el modelo de cuadros del elemento seleccionado, como se muestra aquí en el emulador de Windows Phone.  
   
-     ![Layout tab of DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Pestaña diseño del explorador DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Esta vista proporciona información útil sobre el elemento:  
   
-    - Los colores corresponden al resaltado del cuadro que aparece en el simulador cuando se mantiene el mouse sobre los elementos. The blue color represents the \<img> element dimensions. El color tostado representa los valores de margen.  
+    - Los colores corresponden al resaltado del cuadro que aparece en el simulador cuando se mantiene el mouse sobre los elementos. El color azul representa las dimensiones del elemento \<IMG >. El color tostado representa los valores de margen.  
   
     - Se establece el margen izquierdo (margin-left), que indica la causa del problema ya que coincide con el síntoma (negro en el margen izquierdo de la imágenes).  
   
@@ -114,7 +114,7 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
 11. Para ver cómo se aplica la regla margin-left, haga clic en la pestaña **Calculado** y examine la regla margin-left. Puede ver que esta regla se ha definido con un valor de 5em, pero el valor calculado es de 66,66 px o 146,66 px, en función del dispositivo de destino.  
   
     > [!TIP]
-    > The **Computed** tab shows that the margin-left rule is set in the `..hubpage .hub. section4 .sub-image-row img` CSS selector, found in hub.css. En esta aplicación de demostración, es ahí donde debe realizarse la corrección.  
+    > La pestaña **calculado** muestra que la regla margin-left está establecida en el selector de CSS `..hubpage .hub. section4 .sub-image-row img`, que se encuentra en Hub. CSS. En esta aplicación de demostración, es ahí donde debe realizarse la corrección.  
   
      Puedes utilizar la pestaña **Diseño** para probar las modificaciones en los valores de diseño.  
   
@@ -122,11 +122,11 @@ Applies to Windows and Windows Phone](../Image/windows_and_phone_content.png "wi
   
 13. Escribe `0` y presiona Intro. (También puedes usar las teclas Flecha arriba y Flecha abajo para cambiar el valor).  
   
-14. Select the other \<img> elements in DOM Explorer and change their margin-left values to 0.  
+14. Seleccione el otro \<IMG > elementos en el explorador DOM y cambie sus valores margin-left a 0.  
   
 15. Cambie al emulador o al simulador de Windows Phone. Los valores margin-left actualizados se han aplicado a las imágenes de la sección 4. Estos valores también se han actualizado en la pestaña **Calculado** bajo la regla margin-left.  
   
 ## <a name="see-also"></a>Vea también  
- [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Debug CSS styles using DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Depurar estilos CSS mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Ver agentes de escucha de eventos DOM](../debugger/view-dom-event-listeners.md)

@@ -24,11 +24,11 @@ ms.locfileid: "74300982"
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Reemplazar Equals() para tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
-|Category|.NET Framework Usage|  
-|Profiiling methods|Sampling|  
-|Message|Override Equals and equality operator on value types.|  
-|Messge type|Warning|  
+Identificador de regla | DA0006 |  
+| Categoría |. Uso de .NET Framework |  
+| Métodos de generación | Muestreo |  
+| Mensaje | Invalide Equals y el operador de igualdad en los tipos de valor. |  
+| Tipo de los | ADVERTENCIA |  
   
 ## <a name="cause"></a>Motivo  
  Las llamadas al método Equals o a los operadores de igualdad de un tipo de valor público constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de implementar un método más eficaz.  

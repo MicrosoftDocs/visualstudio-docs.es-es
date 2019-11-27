@@ -15,7 +15,7 @@ ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297574"
@@ -36,7 +36,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
  Y no olvide explorar nuestra [galería de código](https://code.msdn.microsoft.com/) para buscar ejemplos que le ayuden a escribir la aplicación más rápidamente.
 
- Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
+ Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para obtener más información sobre el proceso de instalación, vea [instalar Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio
  Agregue su propia extensión de Visual Studio para incluir una herramienta o script que usa con frecuencia al codificar. Puede crear elementos de menú y ventanas de herramientas personalizados para integrar sus propias herramientas en el IDE de Visual Studio. Puede ampliar el editor de Visual Studio para analizar y corregir el código, o agregar un nuevo tipo de proyecto para incluir exactamente lo que necesita.
@@ -81,13 +81,13 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ### <a name="check-in-your-code"></a>Comprobar el código
  Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información sobre qué sistema de control de versiones es más adecuado para sus necesidades: [Usar el control de versiones](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
-### <a name="build-your-app"></a>Compilar la aplicación
+### <a name="build-your-app"></a>Crear una aplicación
  También puede [compilar la aplicación localmente](./ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. A continuación, use las [herramientas de depuración](./debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código.
 
 ### <a name="test-your-app"></a>Probar la aplicación
  [Cree pruebas unitarias](./test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.
 
- Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez
  Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.

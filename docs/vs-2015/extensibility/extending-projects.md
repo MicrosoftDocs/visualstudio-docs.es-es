@@ -1,5 +1,5 @@
 ---
-title: Extending Projects | Microsoft Docs
+title: Ampliar proyectos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74295980"
 # <a name="extending-projects"></a>Ampliación de proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Projects and solutions are the ways Visual Studio organizes code and resource files into compilation and deployment units. You can find more information about projects in [Projects (Visual Studio SDK)](../extensibility/extending-projects.md).  
+Los proyectos y las soluciones son las formas en que Visual Studio organiza los archivos de código y de recursos en unidades de compilación e implementación. Puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- You can create your own project types with the Visual Studio SDK and the Managed Package Framework for Projects, which you can download at [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). To understand how custom projects are implemented, see [New Project Generation: Under the Hood, Part One](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) and [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para proyectos, que puede descargar en [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). Para entender cómo se implementan los proyectos personalizados, vea [nueva generación de proyectos: debajo del capó, parte uno](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: debajo del capó, parte dos](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- The topics in this section describe how to create custom projects and how to manage different types of Visual Studio solution.  
+ En los temas de esta sección se describe cómo crear proyectos personalizados y cómo administrar distintos tipos de soluciones de Visual Studio.  
   
-## <a name="in-this-section"></a>En esta sección  
+## <a name="in-this-section"></a>Esta sección  
  [Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md)  
- Describes how to create a custom project system.  
+ Describe cómo crear un sistema de proyectos personalizado.  
   
  [Creación de un sistema de proyectos básico, parte 2](../extensibility/creating-a-basic-project-system-part-2.md)  
- Describes how to create a custom project system.  
+ Describe cómo crear un sistema de proyectos personalizado.  
   
  [Guardado de datos en archivos de proyecto](../extensibility/saving-data-in-project-files.md)  
- Explains how add to project (.*proj) files.  
+ Explica cómo agregar archivos a proyectos (. * proj).  
   
  [Comprobación de subtipos de un proyecto en tiempo de ejecución](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
- Explains how to verify the subtype of a project at run time.  
+ Explica cómo comprobar el subtipo de un proyecto en tiempo de ejecución.  
   
  [Adición y eliminación de páginas de propiedades](../extensibility/adding-and-removing-property-pages.md)  
- Explains how to customize the property pages for your custom project.  
+ Explica cómo personalizar las páginas de propiedades del proyecto personalizado.  
   
  [Adición de un atributo a un elemento de proyecto](../extensibility/adding-an-attribute-to-a-project-item.md)  
- Explains how to add an attribute to a custom project item.  
+ Explica cómo agregar un atributo a un elemento de proyecto personalizado.  
   
  [Conservación de la propiedad de un elemento de proyecto](../extensibility/persisting-the-property-of-a-project-item.md)  
- Explains how to persist the properties of a custom project item.  
+ Explica cómo conservar las propiedades de un elemento de proyecto personalizado.  
   
  [Administración de proyectos de Windows universal](../extensibility/managing-universal-windows-projects.md)  
- Explains how to manage universal projects.  
+ Explica cómo administrar proyectos universales.  
   
 ## <a name="related-sections"></a>Secciones relacionadas

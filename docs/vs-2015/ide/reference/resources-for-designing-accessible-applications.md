@@ -34,7 +34,7 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
 
 - **Understanding SAMI 1.0 (Descripción de SAMI 1.0)**  La tecnología Intercambio multimedia accesible sincronizado (SAMI) de Microsoft proporciona una manera para que los desarrolladores subtitulen el contenido de audio de elementos multimedia para equipos. Para obtener más información, vea [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).
 
-## <a name="windows-applications"></a>Aplicaciones para Windows
+## <a name="windows-applications"></a>Aplicaciones Windows
 
 - [Tutorial: Crear una aplicación accesible basada en Windows](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) Este tema proporciona instrucciones paso a paso para cumplir los cinco requisitos de accesibilidad del logotipo Certificado para Windows en una aplicación de Windows de ejemplo.
 

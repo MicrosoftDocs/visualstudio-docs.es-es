@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue (Visual C++) | Microsoft Docs
+title: Editar y continuar (visual C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.locfileid: "74301061"
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar Editar y continuar en proyectos de Visual C++. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
+Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios admitidos enC++el código ()](../debugger/supported-code-changes-cpp.md) para obtener información sobre las limitaciones de editar y continuar.  
   
- Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
+ A partir de Visual Studio 2015 Update 1, ahora puede usar editar y continuar en aplicaciones de C++ la tienda Windows y aplicaciones de DirectX, ya que ahora admite el modificador **/Zi** del compilador con el modificador **/bigobj** . También puede usar editar y continuar con binarios compilados con el modificador **/FASTLINK**  
   
- Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ Otras mejoras de la actualización 1 incluyen un cuadro de diálogo de espera nuevo que se puede cancelar y una notificación cuando un archivo no admite Editar y continuar. Para obtener más información acerca de las mejoras de Update 1, consulte [mejoras C++ de editar y continuar en Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  La opción de compilador [/Zo (Mejorar la depuración optimizada)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) que se introdujo en Visual Studio 2013 actualización 3 agrega información adicional a los archivos .pdb (símbolo) para los archivos binarios que se compilan sin la opción [/Od (Deshabilitar (Depurar))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/Zo** disables Edit and Continue. Consulte [Cómo: Depurar código optimizado](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** deshabilita editar y continuar. Consulte [Cómo: Depurar código optimizado](../debugger/how-to-debug-optimized-code.md).  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar o deshabilitar Editar y continuar  
  Quizá quiera deshabilitar la invocación automática de Editar y continuar si realiza modificaciones en el código que no quiere aplicar durante la sesión de depuración actual. También puede volver a habilitar la invocación automática de Editar y continuar.  

@@ -33,19 +33,19 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
 1. Cree un proyecto.
 
-     ![Create a coded UI test project](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![Crear un proyecto de prueba de IU codificada](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. Elija la opción de grabar las acciones.
 
-     ![Choose to record the actions](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Elegir grabar las acciones](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. Abra la aplicación Calculadora y empiece a grabar la prueba.
 
-     ![Record actions](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Grabar acciones](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.
 
-     ![Generate test method](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generar método de prueba](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      Cierre el generador de pruebas. El método se agrega a la prueba:
 
@@ -67,15 +67,15 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
      Asigne el control de texto de la calculadora que muestre la suma.
 
-     ![Map the UI text control](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Asignar el control de texto de la interfaz de usuario](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
 
-     ![Configure the assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+     ![Configurar la aserción](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
 8. Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.
 
-     ![Generate the assertion method](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Generar el método de aserción](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.
 
@@ -98,7 +98,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
 1. Agregue al proyecto dataDrivenSample un archivo de texto llamado `data.csv`.
 
-     ![Add a comma seperated value file to the project](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. Llene el archivo .csv con los siguientes datos:
 
@@ -110,13 +110,13 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
      Después de agregar los datos, el archivo debería ser similar al siguiente:
 
-     ![Populate the .CSV file with data](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Rellene el. Archivo CSV con datos](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, elija **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.
 
 4. El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.
 
-     ![Deploy the .CSV file](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Implemente el. Archivo CSV](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      Ahora que hemos creado el conjunto de datos, vamos a enlazar los datos a la prueba.
 
@@ -185,15 +185,15 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
     - Abra el archivo UIMap.uitest.
 
-         ![Open the Coded UI Test Editor](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Abrir el editor de pruebas de IU codificadas](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Usar el editor de pruebas de IU codificadas para ayudar con el código](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - En la ventana Propiedades, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.
 
-         ![Use the search properties to assist in coding](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Usar las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. Guarde la solución.
 
@@ -254,7 +254,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

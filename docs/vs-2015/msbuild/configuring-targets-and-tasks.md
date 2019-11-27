@@ -21,7 +21,7 @@ ms.locfileid: "74298343"
 
 Puede configurar los destinos y las tareas de MSBuild para que se ejecuten en modo inactivo con MSBuild y así poder tener como destinos contextos diferentes del que se está ejecutando. Por ejemplo, puede tener como destino una aplicación de 32 bits de .NET Framework 2.0 mientras el equipo de desarrollo se ejecuta en un sistema operativo de 64 bits de .NET Framework 4.5. El destino también pueden ser equipos que se ejecuten con .NET Framework 4 o versiones anteriores. La combinación del valor de bits 32 o 64 y la versión específica de .NET Framework se denomina *contexto de destino*.  
   
-## <a name="installation"></a>Instalación  
+## <a name="installation"></a>Installation  
  .NET Framework 4.5 y 4.5.1 reemplazan el Common Language Runtime (CLR), los destinos, las tareas y las herramientas de .NET Framework 4 sin cambiarles el nombre. .NET Framework 4.5.1 se instala como parte de [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
  Si quiere instalar MSBuild independientemente de Visual Studio, puede descargar el paquete de instalación desde la página de [descarga de MSBuild](https://go.microsoft.com/fwlink/?LinkId=309745). También debe instalar las versiones de .NET Framework que desea usar.  

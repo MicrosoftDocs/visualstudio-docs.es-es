@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
+title: Excepciones de la Directiva de ciclo de vida de Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -24,7 +24,7 @@ Visual Studio incluye una colección de compiladores, lenguajes, tiempos de ejec
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Componentes externos que siguen una directiva de ciclo de vida distinta de la directiva de Visual Studio  
  La tabla siguiente muestra los componentes de la plataforma de Microsoft que puedan estar incluidos con Visual Studio (según la edición específica del software de Visual Studio) y que están sujetos a sus propias directivas de soporte técnico y plazos de tiempo.  
   
-|FAMILIA DE PRODUCTOS|NOMBRE EXTERNO|  
+|FAMILIA DE PRODUCTOS|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|SDK DE .NET 3.5<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|SDK DE .NET 4.5|  
@@ -49,4 +49,4 @@ Visual Studio incluye una colección de compiladores, lenguajes, tiempos de ejec
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|SDK de Windows 7|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|SDK de Windows 8|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|SDK de Windows 8.1<br /><br /> Biblioteca de Windows para JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|SDK de servicios móviles de Microsoft Azure<br /><br /> Herramientas de servicios móviles de Microsoft Azure|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> Vea también: [Directiva de ciclo de vida en línea](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|SDK de servicios móviles de Microsoft Azure<br /><br /> Herramientas de servicios móviles de Microsoft Azure|

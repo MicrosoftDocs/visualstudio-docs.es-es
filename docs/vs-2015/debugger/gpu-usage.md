@@ -23,7 +23,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
  Esta es la ventana del **informe de Uso de GPU**:  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![El informe de uso de GPU, con escalas de tiempo de CPU y GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Requisitos  
  Además de los requisitos de diagnóstico de gráficos, para usar la herramienta Uso de GPU deben cumplirse los requisitos siguientes:  
@@ -44,7 +44,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
   
-    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Elija las herramientas de diagnóstico que quiera usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
@@ -63,15 +63,15 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 1. Seleccione el vínculo **Detener colección** en la parte inferior de la ventana de sesión de diagnóstico, o presione **Detener** en la esquina superior izquierda.  
   
-    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Recopile información de tiempo de la GPU y la CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. Puede realizar una selección de tres segundos como máximo. Las secciones más largas se truncan al principio.  
   
-    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Publicar&#45;recopilación, seleccione un intervalo para ver los detalles](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (… haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
   
-    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Publicar&#45;colección, con el intervalo seleccionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Se abrirá un nuevo documento con fichas que contiene el informe. El informe de uso de la GPU permite ver cuándo se inicia un evento de gráficos en la CPU, cuando este llega a la GPU y cuánto tiempo precisa la GPU para ejecutarlo. Esta información puede ayudarle a identificar los cuellos de botella y las oportunidades para incrementar el paralelismo del código.  
   
@@ -82,7 +82,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
  Esta es la ventana de **informe de Uso de GPU**:  
   
- ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![El informe de uso de GPU, con escalas de tiempo de CPU y GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  Si se selecciona uno de los eventos de la parte inferior del informe, se situará un marcador en los eventos correspondientes de las escalas de tiempo relevantes (por lo general, un evento en un subproceso de CPU que representa la llamada API, y otro evento en una de las escalas de tiempo de GPU que representa el momento en que la GPU ha completado la tarea). Del mismo modo, si se selecciona uno de los eventos en una escala de tiempo, se resaltará el evento correspondiente en la parte inferior del informe. En la medida en que se vaya alejando de las escalas de tiempo de la parte superior del informe, solo permanecerán visibles los eventos que precisen más tiempo. Para ver los eventos de menor duración, acérquese a las escalas de tiempo con Ctrl + rueda (del dispositivo señalador), o con el control de escalado de la esquina inferior izquierda del panel superior. También puede arrastrar el contenido del panel de la escala de tiempo para desplazarse por los eventos registrados.  
   
@@ -106,7 +106,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 |**Inicio de CPU (ns)**|El momento en el que se ha iniciado el evento en la CPU con una llamada a la API de Direct3D. El tiempo se mide en nanosegundos, con relación al momento en que se ha iniciado la aplicación.|  
 |**Inicio de GPU (ns)**|El momento en el que se ha iniciado el evento en la GPU. El tiempo se mide en nanosegundos, con relación al momento en que se ha iniciado la aplicación.|  
 |**Duración de GPU (ns)**|El tiempo que tardó el evento en completarse en la GPU, en nanosegundos.|  
-|**Nombre de proceso**|El nombre de la aplicación de la que procede el evento.|  
+|**Nombre del proceso**|El nombre de la aplicación de la que procede el evento.|  
 |**Identificador de subproceso**|El identificador de subproceso del que procede el evento.|  
   
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 3. En **GPU Profiling Configuration** (Configuración de generación de perfiles de GPU), vaya a la página de propiedades **General** y desactive la casilla **Begin profiling at app start** (Comenzar la generación de perfiles al iniciar la aplicación) para posponer la generación de perfiles.  
   
-     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configurar Cuándo se inicia la recopilación de uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > La generación de perfiles no se puede posponer en las aplicaciones de Direct3D 12.  
@@ -133,7 +133,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 ## <a name="hwsupport"></a> Compatibilidad de hardware y controladores  
  Se admiten el hardware y los controladores de GPU siguientes:  
   
-|Vendor|Descripción de GPU|Versión del controlador necesaria|  
+|Consola|Descripción de GPU|Versión del controlador necesaria|  
 |------------|---------------------|-----------------------------|  
 |Intel®|Procesadores Intel® Core de cuarta generación ("Haswell")<br /><br /> - Intel® HD Graphics (GT1)<br />- Intel® HD Graphics 4200 (GT2)<br />- Intel® HD Graphics 4400 (GT2)<br />- Intel® HD Graphics 4600 (GT2)<br />- Intel® HD Graphics P4600 (GT2)<br />- Intel® HD Graphics P4700 (GT2)<br />- Intel® HD Graphics 5000 (GT3)<br />- Intel® Iris™ Graphics 5100 (GT3)<br />- Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (Usar los últimos controladores)|  
 |AMD®|La mayoría desde AMD Radeon™ HD serie 7000 (excepto AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ y aceleradores de GPU AMD FirePro con arquitectura de Graphics Core Next (GCN)<br /><br /> Unidades de procesamiento acelerado (APU) de AMD® serie E y AMD serie A, con arquitectura de Graphics Core Next (GCN) ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14.7 RC3 o versiones posteriores|  
