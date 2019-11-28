@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bec6c997a73d0b163ec0857ddd3a3380f26793bf
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630960"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538532"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -125,4 +125,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ## <a name="see-also"></a>Vea también
 
 - [Buscar cambios en el código y otro historial con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Managing server configuration with TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) (Administración de la configuración del servidor con TFSConfig)
+- [Managing server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) (Administración de la configuración del servidor con TFSConfig)

@@ -7,15 +7,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
-  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/14/2019
-  ms.locfileid: "74087248"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316436"
 landingContent:
 - title: Abrir o crear un proyecto
   linkLists:

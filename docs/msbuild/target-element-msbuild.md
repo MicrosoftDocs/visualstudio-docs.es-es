@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
+ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141174"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491620"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial.
@@ -41,7 +41,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
         BeforeTargets="Targets"
         AfterTargets="Targets"
         DependsOnTargets="DependentTarget"
-        Condition="'String A' == 'String B'">
+        Condition="'String A' == 'String B'"
         Label="Label">
     <Task>... </Task>
     <PropertyGroup>... </PropertyGroup>
