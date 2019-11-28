@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024834"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538952"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -95,7 +95,7 @@ Esto es lo que se ve cuando se usa el Control de versiones de Team Foundation (T
 
 ![CodeLens: Obtener el historial de cambios del código de TFVC](../ide/media/codelens-code-changes.png)
 
-El período de tiempo predeterminado son los últimos 12 meses. Si el código se almacena en Team Foundation Server, puede cambiar el periodo de tiempo ejecutando el [comando TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) junto con el [comando CodeIndex](../ide/codeindex-command.md) y la marca **/indexHistoryPeriod**.
+El período de tiempo predeterminado son los últimos 12 meses. Si el código se almacena en Team Foundation Server, puede cambiar el periodo de tiempo ejecutando el [comando TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) junto con el [comando CodeIndex](../ide/codeindex-command.md) y la marca **/indexHistoryPeriod**.
 
 Para ver un historial detallado de todos los cambios, incluidos los de hace más de un año, elija **Mostrar todos los cambios de archivo**:
 
@@ -266,7 +266,7 @@ Active o desactive los indicadores de nivel de archivo de CodeLens con los icono
 
 - Asegúrese de que CodeLens esté activado. Vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens**.
 
-- Si el código está almacenado en TFS, asegúrese de que la indización de código esté activada. Para ello, use el [comando CodeIndex](../ide/codeindex-command.md) con el [comando TSF Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+- Si el código está almacenado en TFS, asegúrese de que la indización de código esté activada. Para ello, use el [comando CodeIndex](../ide/codeindex-command.md) con el [comando TSF Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 - Los indicadores relacionados con DevOps aparecen solo cuando los elementos de trabajo se vinculan al código y cuando tiene permisos para abrir los elementos de trabajo vinculados. Confirme que tiene [permisos de miembro del equipo](/azure/devops/organizations/security/view-permissions?view=vsts).
 
@@ -348,7 +348,7 @@ Para usar el teclado:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: ¿Puedo administrar la forma en que CodeLens procesa código para mostrar el historial y los elementos vinculados?
 
-**R:** Sí. Si el código está en TFS, use el [comando CodeIndex](../ide/codeindex-command.md) con el comando [TSF Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+**R:** Sí. Si el código está en TFS, use el [comando CodeIndex](../ide/codeindex-command.md) con el comando [TSF Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: Los indicadores de prueba de CodeLens ya no aparecen en el archivo cuando abro la solución por primera vez. ¿Cómo puedo cargarlos?
 
