@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297558"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538984"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novedades de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
 
 Esta página destaca algunas de las funciones más importantes que son nuevas a partir de Visual Studio 2013 RTM, incluidas funciones que se introdujeron en una de las actualizaciones de Visual Studio 2013. Para obtener la lista completa de las novedades de Visual Studio 2015, vea las [Notas de la versión](https://www.visualstudio.com/news/vs2015-vs).
 
-Para obtener más información sobre las numerosas mejoras y las nuevas características de Visual Studio ALM, consulte [novedades de TFS 2015](/tfs/server/whats-new?view=vsts#tfs-2015-rtm).
+Para obtener más información sobre las numerosas mejoras y las nuevas características de Visual Studio ALM, consulte [novedades de TFS 2015](/azure/devops/server/whats-new#tfs-2015).
 
 ## <a name="a-new-setup-experience"></a>Una nueva experiencia de instalación
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -139,7 +139,7 @@ Para obtener información sobre las novedades de los diagnósticos, consulte [no
 
 Las herramientas siguientes se han introducido o mejorado para realizar diferentes tipos de diagnóstico y análisis en el código:
 
-### <a name="perftips"></a>PerfTips
+### <a name="perftips"></a>Sugerencias de rendimiento
  Las sugerencias de rendimiento muestran el tiempo de ejecución de los métodos durante la depuración, lo que le permite detectar rápidamente los cuellos de botella sin tener que invocar al generador de perfiles. Para empezar, vea [PerfTips: información de rendimiento de un vistazo mientras se depura con Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).
 
 ### <a name="error-list"></a>Lista de errores
@@ -177,7 +177,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
  ![Elemento de menú de diseño personalizado de Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>Centro de notificaciones
- La interfaz de usuario del centro de notificaciones se optimizó para que resulte más fácil analizar rápidamente. Se agregaron otros tipos de notificaciones, incluidos problemas de rendimiento, problemas de representación y bloqueos, y ahora se le puede indicar a Visual Studio que deje de mostrar una notificación. Para obtener más información, vea [Notificaciones de Visual Studio](./ide/visual-studio-notifications.md).
+ La interfaz de usuario del centro de notificaciones se optimizó para que resulte más fácil analizar rápidamente. Se agregaron otros tipos de notificaciones, incluidos problemas de rendimiento, problemas de representación y bloqueos, y ahora se le puede indicar a Visual Studio que deje de mostrar una notificación. Para obtener más información, consulte [Notificaciones de Visual Studio](./ide/visual-studio-notifications.md).
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: detecte qué ocurrió con el código (solo en las ediciones Enterprise y Professional)
  No pierda de vista su trabajo mientras busca información sobre el código sin salir del editor. Puede revisar los cambios y el historial de elementos de trabajo, errores, revisiones de código y demás para el código que se almacena en Visual Studio Team Services (VSTS) o en Team Foundation Server (TFS).
@@ -247,7 +247,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 ## <a name="please-give-feedback"></a>Proporcione comentarios.
  ¿Por qué enviar comentarios al equipo de Visual Studio? Porque tomamos los comentarios de los clientes muy en serio. De hecho, revisamos detalladamente todos los comentarios que ingresan en nuestro sistema de comentarios. Sus comentarios impulsan muchas de nuestras acciones.
 
-### <a name="send-a-smile"></a>Enviar una sonrisa
+### <a name="send-a-smile"></a>Envíe una sonrisa.
  Sus comentarios acerca de lo que le gusta nos ayudan a entender cuándo cumplimos o superamos sus expectativas. Cuando diseñamos e implementamos nuevas características, usamos la información acerca de las características que le gustan como ayuda para nuestras decisiones de diseño. Por eso, si le gusta alguna característica de Visual Studio, cuéntenos. Es fácil y puede hacerlo directamente desde el IDE.
 
  Solo haga clic en la cara sonriente amarilla en la barra de título, díganos qué le gustó y luego haga clic en el botón **Enviar una sonrisa** .
@@ -257,7 +257,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 ### <a name="send-a-frown"></a>Envíe una desaprobación
  Sus comentarios acerca de todo lo que necesitamos mejorar en los productos nos ayuda a administrar nuestro trabajo, al enfocarnos principalmente en aquellas cosas que son más importantes para nuestros clientes. Si hay algo que le molesta, cuéntenos a través de la función **Enviar una desaprobación** directamente desde el IDE. También hemos hecho que este proceso sea muy sencillo:
 
- Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar una desaprobación. Para obtener más información, vea [Hable con nosotros](./ide/talk-to-us.md).
+ Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar una desaprobación. Para obtener más información, consulta [Talk to Us](./ide/talk-to-us.md).
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Informe bloqueos, caídas y problemas de rendimiento.
  En ocasiones, solo una nota rápida en una desaprobación no es suficiente para describir el impacto total de algo que no le gusta. En aquellos casos en los que experimenta un bloqueo, una caída o algún problema de rendimiento, puede compartir fácilmente pasos de reproducción, volcados de memoria y archivos de seguimiento, al usar el cuadro de diálogo que aparece luego de que envía una desaprobación.
