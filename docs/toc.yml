@@ -1410,6 +1410,8 @@
         - name: Estados de un problema notificado y preguntas frecuentes
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: Aumento de la probabilidad de resolución de un problema de rendimiento
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: Creación de minivolcados para un proceso de Visual Studio con todas las pilas de llamadas
           displayName: Create minidumps with call stacks
           href: ide/report-a-problem-minidumps.md

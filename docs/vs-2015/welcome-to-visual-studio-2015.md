@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297574"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537958"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ### <a name="test-your-app"></a>Probar la aplicación
  [Cree pruebas unitarias](./test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.
 
- Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez
  Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.
@@ -96,7 +96,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 |||||
 |-|-|-|-|
-|[Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novedades de Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novedades de .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novedades de ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novedades de Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novedades de .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novedades de ALM](/azure/devops/server/whats-new)|
 |[Novedades de C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novedades de Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novedades de JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
