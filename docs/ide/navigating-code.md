@@ -1,6 +1,6 @@
 ---
 title: Comandos de navegación por el código
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667008"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316465"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -124,6 +124,15 @@ Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl**+**F12**.
 **Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
+
+## <a name="go-to-base"></a>Ir a base
+
+Con Ir a base, puede desplazarse hacia arriba por la cadena de herencia del elemento seleccionado. Si hay varios resultados, aparecen en la ventana **Ir a base**:
+
+Entrada | Función
+------------ | ---
+**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Alt**+**Inicio**.
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a base**.
 
 ## <a name="call-hierarchy"></a>Jerarquía de llamadas
 

@@ -5,13 +5,13 @@ ms.author: lank
 manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
-description: Obtenga información sobre la responsabilidad de los administradores de administrar las suscripciones de equipos de gran tamaño, así como de contratistas externos.
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+description: Obtenga información sobre la responsabilidad de los administradores de administrar las suscripciones de equipos grandes y de contratistas externos.
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493346"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491696"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipos grandes y contratistas externos
 Los administradores de suscripciones de Visual Studio se encargan de garantizar que cada usuario que interactúa con el software con licencia de Visual Studio tenga una licencia acorde a su propia suscripción de Visual Studio.
@@ -35,7 +35,7 @@ Los contratistas externos pueden traer licencias para interaccionar con el entor
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
-- [Introducción a las responsabilidades del administrador](admin-responsibilities.md)
+- [Responsabilidades del administrador](admin-responsibilities.md)
 - [Inventario de entorno de preproducción](admin-inventory.md)
 - [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra

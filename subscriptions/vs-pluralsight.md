@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161961"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491296"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -78,7 +78,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: ¿Tengo una suscripción de Visual Studio Enterprise, pero no se ve el icono de Pluralsight en la página de beneficios. ¿Qué ocurre?
-R: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio de Pluralsight.  Consulte la [tabla de elegibilidad](#eligibility) para ver si su suscripción puede optar a ellos.
+R: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio de Pluralsight.  Vea la [tabla de elegibilidad](#eligibility) para saber si la suscripción puede optar a él.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: ¿Tengo acceso a cualquier lista de reproducción de aprendizaje o canal personalizados?
 R: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como parte de la ventaja de aprendizaje de Pluralsight. Estos canales han sido seleccionados especialmente por expertos de Microsoft y están orientados específicamente al aprendizaje de las áreas de. NET, Azure, DevOps y Mobility. Active la ventaja de Pluralsight a través del portal de suscripción de Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obtener acceso a estos canales en la página de aterrizaje de Pluralsight:

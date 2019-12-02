@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: 961cd646ecf0ed9c34c734292491c5f3a8e67480
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816381"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491264"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -81,7 +81,7 @@ R: No, no puede usar su [crédito individual mensual de Azure DevTest](https://
 Antes de realizar alguna compra, deberá [quitar el límite de gasto](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: ¿Cuál es la diferencia entre suscripciones de nube anuales y mensuales?
-R:  Las suscripciones de nube mensuales abarcan Visual Studio, además del uso de Azure DevOps Services y TFS. Las suscripciones de nube anuales incluyen esto también, pero además tienen otras ventajas de suscriptor como, por ejemplo, poder usar Windows y otro software de Microsoft para instalar y ejecutar aplicaciones de desarrollo y prueba, un crédito individual mensual de Azure DevTest que se puede dedicar a experimentar con servicios de Azure y a realizar tareas de desarrollo y pruebas en la nube, cursos, soporte técnico y mucho más.
+R:  Las suscripciones de nube mensuales abarcan Visual Studio, además del uso de Azure DevOps Services y TFS. Las suscripciones de nube anuales también incluyen esto, pero además tienen ventajas de suscriptor como el uso de Windows y otro software de Microsoft para instalar y ejecutar para desarrollo y pruebas, un crédito individual mensual de Azure DevTest para experimentar con servicios de Azure y realizar tareas de desarrollo y pruebas en la nube, cursos, soporte técnico, etc.
 [Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: ¿Obtendré nuevas versiones de Visual Studio si adquiero una suscripción de nube de Visual Studio?

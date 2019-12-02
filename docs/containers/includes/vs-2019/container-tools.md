@@ -7,14 +7,14 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142218"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485448"
 ---
-Con Visual Studio, es muy fácil compilar, depurar y ejecutar aplicaciones ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o su propio registro de contenedor. En este artículo, realizaremos la publicación en ACR.
+Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -73,26 +73,6 @@ Seleccione **Docker** en la lista desplegable de depuración de la barra de herr
 
 La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar.
 
-Abra la **Consola del Administrador de paquetes** (PMC) desde el menú **Herramientas** > Administrador de paquetes NuGet, **Consola del Administrador de paquetes**.
-
-Seguidamente, se aplica la etiqueta *dev* a la imagen de Docker resultante de la aplicación. La imagen se basa en la etiqueta *2.2-aspnetcore-runtime* de la imagen base *microsoft/dotnet*. Ejecute el comando `docker images` en la ventana **Consola del Administrador de paquetes** (PMC). Se muestran las imágenes en la máquina:
-
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
-
-> [!NOTE]
-> La imagen **dev** no contiene los archivos binarios de la aplicación ni otro contenido, ya que las configuraciones de **Depurar** usan el montaje de volumen para proporcionar la experiencia de depuración y edición iterativa. Para crear una imagen de producción que contenga todo el contenido, use la configuración de **Liberar**.
-
-Ejecute el comando `docker ps` en la PMC. Tenga en cuenta que la aplicación se ejecuta mediante el contenedor:
-
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
-
 ## <a name="containers-window"></a>Ventana Contenedores
 
 Si tiene la versión 16.4 u otra posterior de Visual Studio 2019, puede usar la ventana **Contenedores** para consultar los contenedores en ejecución en la máquina, así como las imágenes disponibles.
@@ -102,6 +82,8 @@ Abra la ventana **Contenedores** mediante el cuadro de búsqueda del IDE (**Ctrl
 Puede colocar la ventana **Contenedores** en un lugar fácilmente accesible, como debajo del editor; para ello, muévala siguiendo las guías de colocación de ventanas.
 
 En la ventana, busque el contenedor y recorra cada pestaña para ver las variables de entorno, las asignaciones de puertos, los registros y el sistema de archivos.
+
+![Captura de pantalla de la ventana Contenedores](../../media/overview/vs-2019/container-tools-window.png)
 
 Para obtener más información, vea [Visualización y diagnóstico de contenedores e imágenes en Visual Studio](../../view-and-diagnose-containers.md).
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174115"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491283"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -19,7 +19,7 @@ Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Vis
 ## <a name="activation-steps"></a>Pasos para la activación
 Para usar la cuenta de desarrollador de Windows, será necesario configurar una cuenta o iniciar sesión con una ya existente.
 
-Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "incógnita".  En Internet Explorer, cree una ventana "InPrivate".
+Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "de incógnito".  En Internet Explorer, cree una ventana "InPrivate".
 
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Busque el icono de la cuenta de desarrollador de Windows en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.  Copie el código en el Portapapeles y haga clic en **Activar**.

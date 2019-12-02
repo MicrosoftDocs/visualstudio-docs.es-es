@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816571"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491670"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -73,7 +73,7 @@ En una suscripción de Visual Studio ofrecida a través de MPN, es preciso que e
 
 - [MPN Program Administrator Guide](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guía del administrador de programas de MPN): incluye instrucciones sobre cómo asignar suscripciones de Visual Studio a empleados de MPN.
 - [Administración de las suscripciones a Visual Studio incluidas con los programas de Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
-- [Condiciones de uso](http://www.microsoft.com/useterms/): las suscripciones de Visual Studio ofrecidas a través de MPN están sujetas al EULA de las suscripciones de Visual Studio no para reventa (NFR).
+- [Condiciones de uso](https://www.microsoft.com/useterms/): las suscripciones de Visual Studio ofrecidas a través de MPN están sujetas al EULA de las suscripciones de Visual Studio no para reventa (NFR).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

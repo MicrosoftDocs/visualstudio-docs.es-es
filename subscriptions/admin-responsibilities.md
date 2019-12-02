@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5ebdc3cb2448815ee5193020808c51630c5f1c17
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415616"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491532"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, puede administrar suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -33,7 +33,7 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 | Instalaciones ilimitadas                  | Cada usuario con licencia podrá instalar y usar el software en cualquier número de dispositivos para diseñar, desarrollar, probar, evaluar y demostrar el software. La excepción es Microsoft Office, cuya licencia se otorga para un escritorio. El software de Visual Studio con licencia se puede instalar y usar en el trabajo, el hogar, el centro educativo y en dispositivos de la oficina de un cliente o en un hardware dedicado hospedado por terceros.                                                                                                                                                                                                                                  |
 | No está diseñado para entornos de producción | No se otorgan licencias de software mediante suscripciones de Visual Studio para entornos de producción, incluido cualquier entorno al que accedan usuarios finales para otras acciones además de pruebas de aceptación o envío de comentarios, entornos que se conecten a una base de datos de producción, que permitan la recuperación ante desastres o la copia de seguridad de producción, o que se usen para producción durante períodos de actividad punta. Entre las excepciones a lo anterior se incluyen beneficios específicos para determinados niveles de suscripción, tal y como se describe en las [Notas del producto de licencias de Visual Studio](https://aka.ms/vslicensing).                                                                                            |
 | Reasignación de licencias                     | Cuando un usuario abandona un equipo y ya no requiere una licencia, puede volver a asignar esa licencia transcurridos 90 días. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
-| Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal sea diseñar, desarrollar o probar el software se califique también como “usuario final”. |
+| Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal es diseñar, desarrollar o probar el software se califique también como “usuario final”. |
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
