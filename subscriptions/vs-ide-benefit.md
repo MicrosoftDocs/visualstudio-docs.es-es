@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099635"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491591"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>La ventaja de Visual Studio 2019
 
@@ -43,7 +43,7 @@ Para descargar el IDE:
 
 10. Haga clic en **Instalar**.
 
-11. Una vez completada la instalación, tendrá la opción de modificarla o iniciar Visual Studio.  Haga clic en **Iniciar** para empezar.  Si tiene varias versiones instaladas, se mostrarán aquí.
+11. Una vez completada la instalación, tendrá la opción de modificarla o iniciar Visual Studio.  Haga clic en **Iniciar** para empezar.  Si tiene varias versiones instaladas, se muestran aquí.
     > [!div class="mx-imgBorder"]
     > ![Inicio de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 

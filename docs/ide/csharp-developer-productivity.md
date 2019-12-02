@@ -1,21 +1,21 @@
 ---
 title: Aumento de la productividad de desarrollo de .NET
 description: Información general sobre la navegación, el análisis de código, las pruebas unitarias y otras características para ayudarle a escribir código .NET mejor y más rápido.
-author: kuhlenh
-ms.author: jillfra
+author: mikadumont
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652590"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491641"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -47,6 +47,7 @@ Estos son accesos directos populares de Visual Studio:
 | **F12** (también **CTRL**+**clic**) | Ir a definición | Navegar hasta donde se define un símbolo |
 | **CTRL**+**F12** | Ir a implementación | Navegar desde cualquier tipo base o miembro a sus distintas implementaciones |
 | **MAYÚS**+**F12** | Buscar todas las referencias | Ver todas las referencias de símbolos o literales |
+| **Alt**+**Inicio** | Ir a base | Navegar hacia arriba por la cadena de herencia |
 | **Ctrl**+ **.** (también **Alt**+**Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
 | **Ctrl**+**D** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **Visual Studio 2017, versión 15.6** y posteriores) |
 | **Mayús**+**Alt**+ **+** / **-** | Expandir o contraer la selección | Expande o contrae la selección actual en el editor (disponible en **Visual Studio 2017 versión 15.5** y posteriores). |
@@ -95,6 +96,10 @@ Puede usar un archivo Editorconfig para codificar las convenciones de codificaci
 ::: moniker-end
 
 - La [característica de inferencia de código](/visualstudio/intellicode/code-style-inference) de IntelliCode para Visual Studio infiere los estilos de código del código existente. A continuación, crea un archivo EditorConfig no vacío con sus preferencias de estilo de código ya definidas.
+
+- Configure el nivel de gravedad de una regla de estilo de código directamente a través del editor. Si en este momento no tiene un archivo .editorconfig, se genera uno automáticamente. Coloque el cursor sobre el error, la advertencia o la sugerencia y escriba **Ctrl**+ **.** para abrir el menú Acciones rápidas y refactorizaciones. Seleccione **Configurar o suprimir incidencias**. Después, seleccione la regla y elija el nivel de gravedad que desea configurar para esa regla. Esto actualizará la instancia existente de EditorConfig con la nueva gravedad de la regla.
+
+   ![Configuración del nivel de gravedad de una regla de estilo de código directamente en el editor](../ide/media/configure-severity-level.png)
 
 Consulte las documentación de las [opciones de convención de codificación de .NET](editorconfig-code-style-settings-reference.md), que también contiene un ejemplo de un archivo EditorConfig completo.
 

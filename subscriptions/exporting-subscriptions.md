@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605570"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491737"
 ---
 # <a name="export-subscription-information"></a>Información sobre la exportación de suscripciones
-En el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com), puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV y se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.
+En el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio, puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV y se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.
 
 Tener toda la información del suscriptor en un solo lugar puede ayudarle a hacer cosas como:
 - Obtener una visión general de cuáles son las suscripciones que están en uso por equipo o ubicación en la organización

@@ -1,7 +1,7 @@
 ---
 title: Publicar una aplicación de Node.js en App Service de Linux
 description: Puede publicar aplicaciones de Node.js creadas en Visual Studio en App Service de Linux en Azure
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695918"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474017"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar una aplicación de Node.js en Azure (App Service de Linux)
 
@@ -130,15 +130,17 @@ Para configurar GitHub para Visual Studio:
     > [!WARNING]
     > El proceso de implementación de App Service usa un conjunto de técnicas heurísticas para determinar qué tipo de aplicación se va a probar y ejecutar. Si se detecta un archivo .*sln* en el contenido distribuido, asume que se va a implementar un proyecto basado en MSBuild. El valor agregado arriba reemplaza esta lógica y especifica explícitamente que se trata de una aplicación de Node.js. Sin este valor, la aplicación de Node.js no se implementa si el archivo .*sln* forma parte del repositorio que se va a implementar en App Service.
 
-7. Una vez implementada, abra la instancia de App Service y seleccione **Opciones de implementación**.
+7. En **Configuración de la aplicación**, agregue otro valor con el nombre `WEBSITE_NODE_DEFAULT_VERSION` y un valor de `8.9.0`.
+
+8. Una vez implementada, abra la instancia de App Service y seleccione **Opciones de implementación**.
 
     ![Opciones de implementación](../javascript/media/azure-deployment-options.png)
 
-8. Haga clic en **Elegir origen**, elija **GitHub** y luego configure los permisos necesarios.
+9. Haga clic en **Elegir origen**, elija **GitHub** y luego configure los permisos necesarios.
 
     ![Permisos de GitHub](../javascript/media/azure-choose-source.png)
 
-9. Seleccione el repositorio y la rama que se van a publicar y, luego, haga clic en **Aceptar**.
+10. Seleccione el repositorio y la rama que se van a publicar y, luego, haga clic en **Aceptar**.
 
     ![Publicación en App Service de Linux](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ Para configurar GitHub para Visual Studio:
 * Si se produce un problema en el proceso de node.exe (es decir, se produce una excepción no controlada), el contenedor se reinicia.
 * Cuando se reinicia el contenedor, se ejecuta por medio de diferentes técnicas heurísticas para determinar cómo iniciar el proceso de Node.js. Los detalles de la implementación pueden verse en [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
 * Puede conectarse al contenedor en ejecución a través de SSH para investigar. Esto se hace fácilmente con Azure Portal. Seleccione la instancia de App Service y desplácese hacia abajo en la lista de herramientas hasta alcanzar **SSH** en la sección **Herramientas de desarrollo**.
-* Para ayudar a solucionar problemas, vaya a la opción **Registros de diagnóstico** de App Service y cambie la opción **Registro de contenedor de Docker** de **Desactivado** a **Sistema de archivos**. Los registros se crean en el contenedor en */home/LogFiles/*_docker.log* y se puede acceder a ellos en el cuadro mediante SSH o FTP (S).
+* Para ayudar a solucionar problemas, vaya a la opción **Registros de diagnóstico** de App Service y cambie la opción **Registro de contenedor de Docker** de **Desactivado** a **Sistema de archivos**. Los registros se crean en el contenedor en */home/LogFiles/* _docker.log* y se puede acceder a ellos en el cuadro mediante SSH o FTP (S).
 * Puede asignar un nombre de dominio personalizado al sitio, en lugar de la dirección URL *.azurewebsites.net asignada de forma predeterminada. Para obtener más detalles, vea el tema [Asignación de un dominio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Se recomienda implementar en un sitio de ensayo para realizar más pruebas antes de pasar a producción. Para obtener detalles sobre cómo configurarlo, vea el tema [Creación de entornos de ensayo](/azure/app-service/web-sites-staged-publishing).
 * Vea [Preguntas más frecuentes sobre Azure App Service en Linux](/azure/app-service/containers/app-service-linux-faq) para leer las preguntas más frecuentes.

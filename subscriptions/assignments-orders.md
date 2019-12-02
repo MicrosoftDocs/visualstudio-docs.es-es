@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar un seguimiento de las asignaciones de usuarios y las tramitaciones de pedidos.
-ms.openlocfilehash: ab2a19fc94be27e8eaf90290b50820d58e919297
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420536"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491603"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
 Los administradores de suscripciones de Visual Studio deberán realizar un seguimiento del uso de Visual Studio y tramitar pedidos para cualquier incremento en el uso según la programación descrita en su Contrato de licencia por volumen o en el Contrato de productos y servicios de Microsoft. El nuevo Portal de administración de suscripciones de Visual Studio ha simplificado esta tarea con una útil herramienta de seguimiento que muestra las licencias disponibles y las usadas.
@@ -28,7 +28,7 @@ La obligación de compra completa viene determinada por el número máximo de su
 - Los administradores de suscripciones de Visual Studio suscripciones pueden volver a asignar las suscripciones de un suscriptor a otro si han transcurrido 90 días desde el momento de la asignación original. 
     > [!NOTE]
     > Para evitar un nivel artificialmente alto de uso máximo, haga esto siempre al quitar primero la suscripción existente y después agregar la nueva. 
-- Para ayudar a supervisar el uso máximo de la organización, hay un informe [Uso máximo](maximum-usage.md) en el [portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio. 
+- Para ayudar a supervisar el uso máximo de la organización, hay un informe [Uso máximo](maximum-usage.md) en el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio. 
 
 ## <a name="cloud-subscriptions-open-license-or-open-value"></a>Suscripciones de nube, Open License u Open Value
 Las suscripciones se pueden asignar a través de un programa como las suscripciones de Microsoft Cloud, Open License u Open Value. Si usa estos programas, debe procesar su pedido para los usuarios adicionales durante el mes en el que los usuarios (empleados o contratistas externos) empiezan a interactuar con el software con licencia de Visual Studio.
@@ -38,7 +38,7 @@ Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibili
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
-- [Introducción a las responsabilidades del administrador](admin-responsibilities.md)
+- [Responsabilidades del administrador](admin-responsibilities.md)
 - [Inventario de entorno de preproducción](admin-inventory.md)
 - [Administración de equipos grandes y contratistas externos](manage-teams.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra
