@@ -9,14 +9,15 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779212"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
 

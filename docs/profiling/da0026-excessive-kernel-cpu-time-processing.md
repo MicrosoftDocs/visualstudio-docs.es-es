@@ -10,14 +10,15 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906d24513982917a455fb7fc59940446c89dae45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936389"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777494"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel
 

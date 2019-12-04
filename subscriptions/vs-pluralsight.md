@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491296"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706999"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -83,14 +83,14 @@ R: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: ¿Tengo acceso a cualquier lista de reproducción de aprendizaje o canal personalizados?
 R: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como parte de la ventaja de aprendizaje de Pluralsight. Estos canales han sido seleccionados especialmente por expertos de Microsoft y están orientados específicamente al aprendizaje de las áreas de. NET, Azure, DevOps y Mobility. Active la ventaja de Pluralsight a través del portal de suscripción de Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obtener acceso a estos canales en la página de aterrizaje de Pluralsight:
 
-•   Scott Hanselmann (.Net, Azure): [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+•   Scott Hanselmann (.Net, Azure): [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-•   Donovan Brown (DevOps): [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+•   Donovan Brown (DevOps): [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-•   James Montemagno (Mobility): [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+•   James Montemagno (Mobility): [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: ¿Qué ocurre cuando se agote mi suscripción a Pluralsight?
-R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](http://www.pluralsight.com) para obtener toda la información.
+R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](https://www.pluralsight.com) para obtener toda la información.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.
@@ -98,6 +98,6 @@ R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscr
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
-Una vez que haya creado la cuenta, tendrá todo listo para iniciar el aprendizaje.  Visite [https://www.pluralsight.com](http://www.pluralsight.com) y pulse **Iniciar sesión** en la esquina superior derecha de la página para iniciar un nuevo curso, o vuelva a un curso que ya se ha iniciado.
+Una vez que haya creado la cuenta, tendrá todo listo para iniciar el aprendizaje.  Visite [https://www.pluralsight.com](https://www.pluralsight.com) y pulse **Iniciar sesión** en la esquina superior derecha de la página para iniciar un nuevo curso, o vuelva a un curso que ya se ha iniciado.
 
 Para usar su propio espacio aislado de desarrollo, active sus [crédito individual de Azure DevTest](vs-azure.md). 

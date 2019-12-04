@@ -6,14 +6,15 @@ ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539278"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778770"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento
 

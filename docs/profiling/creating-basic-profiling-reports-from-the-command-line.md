@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777795"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creación de informes básicos de generación de perfiles desde la línea de comandos
 En este artículo se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.*csv*) a partir de un archivo de datos de generación de perfiles .*vsp* o .*vsps*. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).
@@ -23,7 +24,7 @@ En este artículo se describen los comandos básicos de VSPerfReport que generan
 
  **VSPerfReport** `VSPFile` **/Summary:All** Genera todos los informes disponibles para el archivo .*vsp* o .*vsps*.
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] Genera los tipos de informe especificados.
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] Genera los tipos de informe especificados.
 
  **VSPerfReport** `VSPFile` **/CallTrace** Genera un informe que enumera cada evento de la colección de datos. Solamente en instrumentación.
 

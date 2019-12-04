@@ -11,14 +11,15 @@ ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936592"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779433"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: CompareTo que consume muchos recursos
 

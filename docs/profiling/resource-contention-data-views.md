@@ -9,14 +9,15 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798442"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771535"
 ---
 # <a name="resource-contention-data-views"></a>Vistas de datos de contención de recursos
 Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.
