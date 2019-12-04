@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/21/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1001fe2e22a924c9e47dc4188c45ba2a7674363e
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: e6bcfc5501ace51b0d4c15c991633a83701982d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316451"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777964"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | Release | 3 de diciembre de 2019 | 16.4.29519.181 |
 | 16.4.0 | Versión preliminar 6 | 21 de noviembre de 2019 | 16.4.29519.161 |
 | 16.3.10 | Release | 20 de noviembre de 2019 | 16.3.29519.87 |
 | 16.4.0 | Versión preliminar 5 | 14 de noviembre de 2019 | 16.4.29512.175 |
