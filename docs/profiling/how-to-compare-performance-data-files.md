@@ -11,14 +11,15 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973908"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779004"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparar archivos de datos de rendimiento
 Puede crear un informe o una vista de comparación ("Diff") para comparar los resultados de dos archivos de datos de generador de perfiles diferentes (.*vsp* o .*vsps*). La comparación muestra las diferencias, reducciones de rendimiento y mejoras producidas de una sesión de generación de perfiles a la otra.

@@ -6,14 +6,15 @@ ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28ba7d36afa8ff100dfd928797fc634a13924790
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c738a5183a7708c967192cf201e38a4f9384710e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778874"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo mediante la línea de comandos del generador de perfiles
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio nativo (C/C++) y recopilar datos de control de tiempo detallados.

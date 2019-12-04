@@ -6,14 +6,15 @@ ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: fb6228592115091dc538dbe59c227a180e75aa10
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261367"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775423"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) y recopilar estadísticas de rendimiento utilizando el método de muestreo.
@@ -49,7 +50,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
@@ -59,14 +60,14 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     Puede utilizar una o más de las opciones siguientes con la opción **/launch**.
 
-   |Opción|Descripción|
+   |Opción|DESCRIPCIÓN|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica una cadena que contiene los argumentos de la línea de comandos que se van a pasar a la aplicación de destino.|
    |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|
 
     De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos. Esto equivale aproximadamente a una vez cada 10 segundos en un procesador de 1 GHz. Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj o especificar otro evento de muestreo.
 
-   |Evento de muestreo|Descripción|
+   |Evento de muestreo|DESCRIPCIÓN|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo por el número de ciclos de reloj no detenidos especificados mediante `Interval`.|
    |[/pf](../profiling/pf.md)[ **:** `Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|
@@ -80,7 +81,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
@@ -95,7 +96,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     - Cierre la aplicación de destino.
 
-         o bien
+         O bien
 
     - Escriba **VSPerfCmd /detach**
 

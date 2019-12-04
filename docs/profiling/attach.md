@@ -6,14 +6,15 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440297"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773744"
 ---
 # <a name="attach"></a>Attach
 La opción **Attach** de *VSPerfCmd.exe* comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).
@@ -48,7 +49,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Opciones de intervalo
  Se puede especificar una de las siguientes opciones de intervalo de muestreo en la línea de comandos de Attach. El intervalo de muestreo predeterminado es 10 000 000 ciclos de reloj de procesador.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Especifica el número y tipo del intervalo de muestreo.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] Especifica el número y tipo del intervalo de muestreo.
 
 - **Timer**: muestrea cada `Cycles` ciclos de reloj de procesador. Si no se especifica `Cycles`, se usan 10 000 000 ciclos.
 

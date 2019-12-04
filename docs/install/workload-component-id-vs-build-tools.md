@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56c12d939bb98d55d7122577e0b83a4da4fca37c
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5ad3ce0b494e93c06e23d3e50cb51c4873aa7b59
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211437"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797293"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Directorio de componentes de Visual Studio Build Tools
 

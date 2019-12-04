@@ -6,14 +6,15 @@ ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032939"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775417"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].

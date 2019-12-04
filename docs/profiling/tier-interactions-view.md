@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3bf4f5fd7ab18efb13e1c52847daf647e908b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968781"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778146"
 ---
 # <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
 
@@ -36,7 +37,7 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 ## <a name="master-pane"></a>Panel principal
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|- Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />- Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|
@@ -48,7 +49,7 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Texto de comando**|La consulta SQL de la solicitud.|
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|

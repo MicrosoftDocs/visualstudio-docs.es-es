@@ -7,14 +7,15 @@ ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa054367ee8953c433512b6c4bcb0964637a1b74
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 94ea4f38ccebc1015419e2254b06033fa17a09a8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746298"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777036"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
 En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.
@@ -70,7 +71,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
    > [!NOTE]
    > Normalmente, las opciones **/user** y **/crosssession** son necesarias para servicios.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otros inicios de sesión. Esta opción es necesaria si la aplicación ASP.NET se ejecuta en otra sesión. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
@@ -95,7 +96,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
 
 - Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
@@ -110,7 +111,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
 
     - Detenga el servicio.
 
-         o bien
+         O bien
 
     - Escriba **VSPerfCmd /detach**
 

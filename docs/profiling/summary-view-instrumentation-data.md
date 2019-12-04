@@ -8,14 +8,15 @@ ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d53eef12c1c2dc59d8c442a040f721af75e7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557055"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778224"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vista Resumen: datos de instrumentación
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluida una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).
@@ -28,7 +29,7 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
 
  La **Ruta de acceso activa** incluye los siguientes datos para cada función:
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|Nombre de la función.|
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función y en funciones a las que llamó.|
@@ -39,7 +40,7 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
 
  **Funciones que realizan la mayor parte de trabajo individual** incluye los siguientes datos para cada función:
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|Nombre de la función.|
 |**Porcentaje de tiempo exclusivo**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función. No se incluye el tiempo dedicado a funciones a las que llamó la función.|

@@ -8,21 +8,22 @@ ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829962"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772732"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Vista Módulos: datos de muestreo de memoria de .NET
 La vista Módulos de los datos de asignación de memoria de .NET recopilados con el método de muestro agrupa los datos de memoria por los módulos que se ejecutaron durante la generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo se enumeran bajo el nodo de módulo.
 
  Los números de línea del archivo de origen de las instrucciones que asignan memoria se enumeran bajo el nodo de función y las direcciones de las instrucciones que realizan la asignación se enumeran bajo el nodo de línea. Los valores inclusivos y exclusivos siempre son los mismos para los datos de línea y de instrucción.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|El nombre del módulo, función, número de línea o dirección de instrucción.|
 |**Id. de proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|

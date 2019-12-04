@@ -8,14 +8,15 @@ ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d05809d7d2c3c0c93044eee4d44603eac2bffec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776815"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779771"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vista Árbol de llamadas: datos de muestreo de memoria de .NET
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de asignación de memoria de .NET de esas llamadas a funciones.
@@ -30,7 +31,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Puede restablecer el nodo raíz en el nodo que estaba viendo; para ello, haga clic con el botón derecho en la ventana de la vista Árbol de llamadas y seleccione **Restablecer raíz**.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
 |**Nombre de proceso**|Nombre del proceso.|

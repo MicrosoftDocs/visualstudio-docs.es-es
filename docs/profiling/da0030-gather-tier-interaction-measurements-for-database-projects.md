@@ -10,14 +10,15 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a554eae05d02dda57fe29b2c627f261ba10b89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936019"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777481"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilar medidas de interacción de capas para proyectos de base de datos
 

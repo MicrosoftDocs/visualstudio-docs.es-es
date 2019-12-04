@@ -6,14 +6,15 @@ ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ce7b02be682d825205fc5fa50d07c1ca817a24d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439136"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776419"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procedimiento Crear un informe ETW de herramientas de generación de perfiles
 El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW registrados en una sesión de rendimiento de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los datos ETW se recopilan en un archivo binario (.*etl*). Para obtener más información sobre este informe, vea [Informe Seguimiento de eventos para Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).

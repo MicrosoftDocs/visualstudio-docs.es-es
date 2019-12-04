@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779043"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 
@@ -77,7 +78,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
 5. En el cuadro **¿Qué dirección URL o ruta de acceso ejecutará la aplicación web?** de la tercera página del asistente, escriba la dirección URL a la página de inicio de la aplicación y haga clic en **Siguiente**.
 
-   - Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **<`http://localhost/MySite/default.aspx`>**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.
+   - Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **<`http://localhost/MySite/default.aspx`>** . Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.
 
    - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en c:\webSites\MySite y que la página `http://localhost:nnnn/MySite/default.aspx` se inicie en Internet Explorer para iniciar la sesión.
 

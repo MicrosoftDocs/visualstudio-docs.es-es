@@ -10,14 +10,15 @@ ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f9601a39e755c1a3886f7049abd592d793fb4b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: de6d6325b1e518146768798c773754c091861aa8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261346"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775919"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedimiento Excluir o incluir funciones cortas en la instrumentación
 De forma predeterminada, las herramientas de generación de perfiles excluyen *funciones pequeñas* de la instrumentación. Las funciones pequeñas son funciones cortas que no realizan ninguna llamada de función. Excluir estas funciones pequeñas proporciona menos sobrecarga de instrumentación y, por consiguiente, mejora la velocidad de instrumentación. La exclusión de las funciones pequeñas también reduce el tamaño del archivo de datos de generación de perfiles de rendimiento (.*vsp*) y el tiempo necesario para el análisis. Si se excluyen las funciones pequeñas, el tiempo que se emplea en ellas se descuenta del tiempo inclusivo y exclusivo de sus funciones primarias. Las funciones pequeñas se pueden incluir o excluir de la instrumentación, como se describe en el siguiente procedimiento.
@@ -32,7 +33,7 @@ De forma predeterminada, las herramientas de generación de perfiles excluyen *f
 
 3. Para excluir funciones cortas de la instrumentación, seleccione **Excluir funciones cortas de la instrumentación**. Ésta es la configuración predeterminada.
 
-     o bien
+     O bien
 
      Para incluir funciones cortas en la instrumentación, seleccione **Incluir funciones cortas en la instrumentación**.
 

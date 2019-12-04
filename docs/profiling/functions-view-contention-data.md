@@ -8,21 +8,22 @@ ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcea1097b33c612094c4a7eb35b240c28f8bde0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969750"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780057"
 ---
 # <a name="functions-view---contention-data"></a>Vista Funciones: datos de contención
 La vista de informe Funciones de datos de contención enumera las funciones en la ejecución de generación de perfiles a las que se les ha impedido la ejecución durante la ejecución de generación de perfiles.
 
  En la tabla siguiente, se explican los valores que se muestran en la vista Funciones de un archivo de datos de generación de perfiles recopilado con el método de simultaneidad.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Tiempo de bloqueo exclusivo**|Tiempo durante el cual esta función no pudo ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|
 |**Porcentaje de tiempo de bloqueo exclusivo**|Porcentaje de tiempo de bloqueo exclusivo de esta función con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|

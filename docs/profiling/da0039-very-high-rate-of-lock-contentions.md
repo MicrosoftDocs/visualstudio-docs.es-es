@@ -10,14 +10,15 @@ ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6185b080967c83be827e34baddfe5b37554398ff
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: f64f717bf87fb4636c7c2f4e6f11a08236d08ada
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024684"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779368"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frecuencia muy alta de contenciones de bloqueo
 

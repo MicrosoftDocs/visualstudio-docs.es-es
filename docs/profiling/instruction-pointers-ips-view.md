@@ -15,14 +15,15 @@ ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995363"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778640"
 ---
 # <a name="instruction-pointers-ips-view"></a>Vista Punteros de instrucciones (IP)
 La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutan durante la generación de perfiles de muestreo.

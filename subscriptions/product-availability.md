@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Obtenga más información sobre la disponibilidad de productos en descargas de software para suscripciones de Visual Studio
-ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681693"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706811"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidad de productos para descargas de software en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -25,12 +25,12 @@ Son varios los motivos por los que algunos productos no pueden estar disponibles
 - **El producto no está incluido en su nivel de suscripción o programa.** [Obtenga más información](https://visualstudio.microsoft.com/vs/pricing/) sobre el software y las prestaciones disponibles con su suscripción o [descargue](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) la lista completa de productos disponibles según el nivel de suscripción. Algunos programas, como [Microsoft Partner Network](https://partner.microsoft.com/), proporcionan suscripciones de Visual Studio como parte de sus prestaciones.  Esas suscripciones no abarcan todos los productos incluidos en las suscripciones de Visual Studio adquiridas. Los suscriptores a estos programas deben dirigir las preguntas sobre la disponibilidad de las descargas de productos a los equipos dedicados de soporte técnico de dichos programas.
 - **El producto no está incluido en suscripciones.** Algunos productos de Microsoft no están incluidos en suscripciones debido a términos especiales de licencias, restricciones técnicas o relevancia del desarrollador. Si quiere sugerir que un producto se agregue a la suscripción, envíe un correo electrónico al Centro de [atención al cliente](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - **El producto se encuentra disponible al público.** Algunas herramientas, SDK, DDK y Service Pack están disponibles para el público en el [Centro de descarga de Microsoft](https://www.microsoft.com/download). Es posible que algunos productos de este tipo no se publiquen en Descargas.
-- **El producto aún no se ha lanzado.**  Muchas versiones preliminares (beta) y candidatos de versión comercial están disponibles en Descargas, pero no se pueden incluir todas las versiones beta, ya que algunas de ellas tienen requisitos especiales de registro o elegibilidad. Para más información sobre programas técnicos beta, visite [Microsoft Connect](http://connect.microsoft.com/).
+- **El producto aún no se ha lanzado.**  Muchas versiones preliminares (beta) y candidatos de versión comercial están disponibles en Descargas, pero no se pueden incluir todas las versiones beta, ya que algunas de ellas tienen requisitos especiales de registro o elegibilidad. Para más información sobre programas técnicos beta, visite [Microsoft Connect](https://connect.microsoft.com/).
 - **Este producto no está disponible en su país.** Algunos productos de Microsoft no están disponibles debido a restricciones regionales.
 - **Software redundante.** Las claves de producto y descargas del conjunto de aplicaciones de Office seleccionado y de los productos independientes de Office ya no están disponibles en las suscripciones que incluyen Office. Las claves de producto y descargas están disponibles para la misma versión de la serie Office más actualizada correspondiente.  Por ejemplo, si busca PowerPoint 2010, la búsqueda no arrojará ningún resultado.  Sin embargo, puede buscar Office 2010 (que es el conjunto de Office que contenía PowerPoint 2010) y descargar el conjunto.
 
 ## <a name="what-do-i-get"></a>¿Qué se obtiene?
-El número y tipo de descargas dependen del nivel de la suscripción y las inscripciones a programas.  Los usuarios con suscripciones estándar de Visual Studio Enterprise, por ejemplo, pueden tener disponibles descargas distintas a las de los usuarios que obtienen sus suscripciones a través de una suscripción al programa BizSpark o Microsoft Partner Network.  Para más información sobre qué descargas están disponibles según el nivel de suscripción, descargue la lista [Products By Benefit Level](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx), en la que se indican los productos por nivel de prestaciones.
+El número y tipo de descargas dependen del nivel de la suscripción y las inscripciones a programas.  Los usuarios con suscripciones estándar de Visual Studio Enterprise, por ejemplo, pueden tener disponibles descargas distintas a las de los usuarios que obtienen sus suscripciones a través de una suscripción al programa BizSpark o Microsoft Partner Network.  Para más información sobre qué descargas están disponibles según el nivel de suscripción, descargue la lista [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx), en la que se indican los productos por nivel de prestaciones.
 
 > [!NOTE]
 > Si tiene varias suscripciones asociadas a la misma dirección de correo electrónico, los títulos de software disponibles vienen determinados por el nivel de suscripción **más alto** que tenga.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y otra de Visual Studio Test Professional, tiene acceso a los títulos de software incluidos con la suscripción de Visual Studio Enterprise, independientemente de qué suscripción esté usando actualmente en el portal de suscripciones. 

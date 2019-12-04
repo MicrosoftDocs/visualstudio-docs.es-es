@@ -6,14 +6,15 @@ ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a63cfca8e06d999c585793fabdce627d4896d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778185"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 La opción **Sys** de *VSPerfCmd.exe* establece el evento de generación de perfiles que se muestrea para eventos de llamada del sistema (llamadas de función desde la aplicación de la que se ha generado el perfil al sistema operativo) y, opcionalmente, cambia el número de llamadas del sistema en un intervalo de muestreo a partir del valor 10 predeterminado.
@@ -43,13 +44,13 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="invalid-options"></a>Opciones no válidas
  Las opciones siguientes no se pueden especificar en la misma línea de comandos que **Sys**.
 
- **PF**[**:**`Events`] Establece el evento de muestreo en los errores de página y, opcionalmente, establece el intervalo del muestreo en `Events`. El intervalo PF predeterminado es 10.
+ **PF**[ **:** `Events`] Establece el evento de muestreo en los errores de página y, opcionalmente, establece el intervalo del muestreo en `Events`. El intervalo PF predeterminado es 10.
 
- **Timer**[**:**`Cycles`] Establece el evento de muestreo en los ciclos de reloj de procesador y, opcionalmente, establece el intervalo del muestreo en `Cycles`. El intervalo de Timer predeterminado es 10 000 000.
+ **Timer**[ **:** `Cycles`] Establece el evento de muestreo en los ciclos de reloj de procesador y, opcionalmente, establece el intervalo del muestreo en `Cycles`. El intervalo de Timer predeterminado es 10 000 000.
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] Establece el evento de muestreo en el contador de rendimiento de la CPU especificado por `Name` y establece el intervalo de muestreo en `Reload`.
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] Recopila datos de la memoria de .NET. Mediante la opción (**Allocation**) predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Recopila datos de la memoria de .NET. Mediante la opción (**Allocation**) predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se muestra cómo establecer el evento de muestreo del generador de perfiles en llamadas al sistema y cómo establecer el intervalo de muestreo en 20 llamadas por muestra.

@@ -13,14 +13,15 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87692c938462f166f93b4cfb8b223a45e2553ada
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926492"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771593"
 ---
 # <a name="summary-view"></a>Vista Resumen
 En la vista Resumen se muestra información sobre las funciones o los objetos más exigentes en una generación de perfiles. Esta vista proporciona un gráfico de escala de tiempo y dos o más listas de las funciones o los objetos más exigentes según las métricas de rendimiento del método de generación de perfiles. Los datos de esta vista dependen del método de generación de perfiles utilizado (muestreo, instrumentación o simultaneidad) y de si se ha recopilado la asignación de memoria de .NET.

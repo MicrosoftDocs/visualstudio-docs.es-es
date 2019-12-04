@@ -8,14 +8,15 @@ ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830068"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780018"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.
@@ -24,7 +25,7 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
 
  En la tabla siguiente se describen los valores de las columnas de la vista Módulos de datos de contención.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Tiempo de bloqueo exclusivo**|-   Para una función, el tiempo durante el cual esta función no ha podido ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />-   Para un módulo, la suma de tiempo de bloqueo exclusivo de las funciones del módulo.<br />-   Para una línea o una instrucción, el tiempo durante el que dicha línea o instrucción no ha podido ejecutarse.|
 |**Porcentaje de tiempo de bloqueo exclusivo**|-   Para una función o un módulo, el porcentaje de tiempo de bloqueo exclusivo de esta función o módulo con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.<br />-   Para una línea o una instrucción, el porcentaje del tiempo de bloqueo total de la ejecución de generación de perfiles durante el que dicha línea o instrucción no ha podido ejecutarse.|

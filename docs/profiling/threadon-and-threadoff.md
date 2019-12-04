@@ -6,14 +6,15 @@ ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965237"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778159"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
 Los subcomandos **ThreadOff** y **ThreadOn** de *VSPerfCmd.exe* solo están disponibles en las sesiones de generación de perfiles de la línea de comandos en las que se usa el método de instrumentación. **ThreadOff** y **ThreadOn** pausan y reanudan la generación de perfiles para el subproceso especificado. **ThreadOff** detiene la generación de perfiles del subproceso y **ThreadOn** la inicia.
@@ -47,7 +48,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  **GlobalOff**&#124;**GlobalOn** Detiene o inicia la generación de perfiles para todos los procesos en una sesión de generación de perfiles de línea de comandos.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID` Detiene o inicia la generación de perfiles para el proceso especificado.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID` Detiene o inicia la generación de perfiles para el proceso especificado.
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo, se usa el subcomando **ThreadOff** para detener la recopilación de datos de generación de perfiles para que solo se recopilen los datos de inicio de la aplicación.

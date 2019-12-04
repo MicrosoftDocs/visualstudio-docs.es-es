@@ -7,14 +7,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980920"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778822"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 
@@ -28,7 +29,7 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 3. Elija **Instrumentación** como el método de generación de perfiles y después haga clic en **Siguiente**.
 
-4. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?**, seleccione el nombre del proyecto .*dll* y después haga clic en **Siguiente**.
+4. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?** , seleccione el nombre del proyecto .*dll* y después haga clic en **Siguiente**.
 
 5. Haga clic en **Finalizar** para salir del asistente y mostrar la nueva sesión de rendimiento en la ventana **Explorador de rendimiento**.
 
@@ -46,7 +47,7 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 2. En el menú **Analizar**, seleccione **Iniciar Asistente de rendimiento**.
 
-3. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?**, seleccione **Generar perfiles de una biblioteca de vínculos dinámicos (.DLL)** y después haga clic en **Siguiente**.
+3. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?** , seleccione **Generar perfiles de una biblioteca de vínculos dinámicos (.DLL)** y después haga clic en **Siguiente**.
 
 4. En la segunda página del asistente, realice los siguientes pasos:
 

@@ -6,14 +6,15 @@ ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: effc29e0f66cc298ec7a5e281c83df0ccad968d9
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 4a52c65f8a53d62edde42c26fafef9940046ba5d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032963"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775404"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de simultaneidad de procesos y de subprocesos.

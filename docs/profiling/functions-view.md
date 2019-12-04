@@ -13,14 +13,15 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969685"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779199"
 ---
 # <a name="functions-view"></a>Vista Funciones
 La vista Funciones muestra las funciones que se llaman durante la generación de perfiles.

@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad67acae549f67e16b34eb352cdebe5937c8de4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794245"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778484"
 ---
 # <a name="performance-explorer"></a>Explorador de rendimiento
 

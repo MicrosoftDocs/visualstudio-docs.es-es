@@ -9,14 +9,15 @@ ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9e8d9fde00a2390793ae8efe05b684e73caca321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263542"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773064"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Recopilación de datos de memoria de una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de asignación de memoria y de duración de objetos para una aplicación web ASP.NET mediante la herramienta de línea de comandos **VSPerfCmd**.

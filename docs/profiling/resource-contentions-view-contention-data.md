@@ -10,14 +10,15 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797913"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778341"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
 La vista Contenciones del recurso muestra datos de contención de recursos que son el origen de eventos de contención. Un evento de contención se produce cuando una función en un subproceso se ve obligada a esperar para obtener acceso al recurso porque una función en otro subproceso ha adquirido acceso exclusivo al recurso. Cada recurso es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a los eventos de contención.
@@ -39,7 +40,7 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
 
 ## <a name="navigating-the-resource-allocation-view"></a>Navegar por la vista Asignación de recursos
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|El nombre del recurso o la función.|
 |**Tiempo de bloqueo exclusivo**|-   Para un recurso, el tiempo total durante el que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   En una función, el tiempo durante el que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|

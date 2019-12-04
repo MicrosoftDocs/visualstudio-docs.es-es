@@ -6,14 +6,15 @@ ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 440401f8c46a3920fce6c8e0d29f630a24103f65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bf89469c4137052247b5a1fdfee7f8dc694fbcc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999988"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773999"
 ---
 # <a name="mark"></a>Marca
 La opción **Mark** (marca) de *VSPerfCmd.exe* inserta la información especificada en el archivo de datos de generación de perfiles. La marca puede incluirse en un informe de VSPerfReport independiente o en la vista de informe de marca de la interfaz de usuario del generador de perfiles. **Mark** se puede usar para especificar los puntos inicial y final en los filtros de informe y vista.

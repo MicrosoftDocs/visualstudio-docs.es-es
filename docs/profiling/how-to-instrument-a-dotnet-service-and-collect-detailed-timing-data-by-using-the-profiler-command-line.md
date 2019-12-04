@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f3e03a35719e6dd1cbfa7514a304539dc4f0ca1
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: af801d2b30c48deb1a88800f67ff4d3efef412b4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032050"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778900"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio .NET y recopilar datos detallados de control de tiempo mediante la línea de comandos del generador de perfiles
 

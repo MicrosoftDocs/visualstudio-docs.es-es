@@ -6,14 +6,15 @@ ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faa47183040d376724de48fb71f07710cfe51f8f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 705e55363f4f8657da20fe66cd4369188f133cdb
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033070"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776613"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio nativo para recopilar datos de simultaneidad mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio nativo (C/C++) y recopilar datos de simultaneidad de procesos y subprocesos mediante el método de muestreo.

@@ -14,14 +14,15 @@ ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ddc7462b703ef28a52b531aa379b46198516df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936475"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779415"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Uso intenso de String.Split o String.Substring
 

@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972421"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778393"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn y ProcessOff
 Los subcomandos **ProcessOff** y **ProcessOn** de VSPerfCmd.exe pausan y reanudan la generación de perfiles para el proceso especificado en una sesión de generación de perfiles de línea de comandos. **ProcessOff** detiene el proceso de generación de perfiles y **ProcessOn** inicia el proceso de generación de perfiles.
@@ -41,7 +42,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Identificador de entero del proceso que se va a iniciar o detener. Los identificadores de proceso se muestran en la pestaña **Proceso** del Administrador de tareas de Windows.
 
 ## <a name="required-subcommands"></a>Subcomandos necesarios
- Ninguna
+ None
 
 ## <a name="valid-subcommands"></a>Subcomandos válidos
  **ProcessOn** y **ProcessOff** se pueden especificar en líneas de comandos que también contienen los subcomandos siguientes.
@@ -54,7 +55,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  **GlobalOff**&#124;**GlobalOn** Detiene o inicia la generación de perfiles para todos los procesos en una sesión de generación de perfiles de línea de comandos.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Detiene o inicia la generación de perfiles para el subproceso especificado (solo método de instrumentación).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Detiene o inicia la generación de perfiles para el subproceso especificado (solo método de instrumentación).
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo, el subcomando **ProcessOff** se usa para recopilar datos de generación de perfiles para el inicio de la aplicación.

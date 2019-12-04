@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407562"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777847"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo .*vsp*. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:
 
-|Enumerador|Descripción|
+|Enumerador|DESCRIPCIÓN|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|

@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98291051a135a95ab72b4c3bfa09743d9620b94e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973986"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776376"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedimiento Recopilar datos de contadores de CPU
 

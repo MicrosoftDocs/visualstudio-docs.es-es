@@ -11,14 +11,15 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405780"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777873"
 ---
 # <a name="configure-performance-sessions"></a>Configurar sesiones de rendimiento
 Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede recopilar una gran variedad de datos de rendimiento para un gran número de tipos de aplicaciones. En esta sección se muestra cómo utilizar las propiedades del Asistente de rendimiento, las propiedades de la sesión de rendimiento y el binario de destino para configurar las herramientas de generación de perfiles para recopilar los datos que le interesen. Las propiedades de configuración de las herramientas de generación de perfiles también pueden emplearse para controlar la cantidad de datos recopilados en una ejecución de generación de perfiles. Para más información, vea [Control de la recopilación de datos](../profiling/controlling-data-collection.md).

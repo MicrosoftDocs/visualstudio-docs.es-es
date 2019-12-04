@@ -11,14 +11,15 @@ ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e068771ba0fcc9b044ba7ff5243a75ceb3161e03
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425483"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779420"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco
 

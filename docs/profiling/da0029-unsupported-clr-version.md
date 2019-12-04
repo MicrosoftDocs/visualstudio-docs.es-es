@@ -13,14 +13,15 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936301"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777520"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR no admitida
 

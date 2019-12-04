@@ -9,14 +9,15 @@ ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fde17ace877d9c2fe0ce6c98a64963d82550c3ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405692"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772836"
 ---
 # <a name="command-line-profiling-of-services"></a>Generación de perfiles de servicio desde la línea de comandos
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento de servicios de Windows mediante las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde la línea de comandos.

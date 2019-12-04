@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910146"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772207"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 

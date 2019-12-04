@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539190"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774594"
 ---
 # <a name="how-to-set-permissions"></a>Procedimiento Establecer permisos
 
@@ -69,7 +70,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 4. Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.
 
-5. En el cuadro **Permisos para \<nombre de usuario >**, seleccione la casilla **Control total**.
+5. En el cuadro **Permisos para \<nombre de usuario >** , seleccione la casilla **Control total**.
 
 6. Haga clic en **Aceptar**.
 

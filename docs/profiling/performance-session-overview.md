@@ -9,14 +9,15 @@ ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189348"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778471"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.

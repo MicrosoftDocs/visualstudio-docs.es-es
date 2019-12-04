@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c80749080e4abc41412ed6c5df8421976054e68e
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996791"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706867"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.
@@ -153,7 +153,7 @@ En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elem
 
     <Target Name="ShowMessage">
         <Message
-            Text = "Identity: "%(Identity)" -- Items in ExampColl: @(ExampColl)"/>
+            Text = "Identity: '%(Identity)' -- Items in ExampColl: @(ExampColl)"/>
     </Target>
 
 </Project>
@@ -161,13 +161,13 @@ En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elem
 
 [Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:
 
-```
-Identity: "Item1" -- Items in ExampColl: Item1
-Identity: "Item2" -- Items in ExampColl: Item2
-Identity: "Item3" -- Items in ExampColl: Item3
-Identity: "Item4" -- Items in ExampColl: Item4
-Identity: "Item5" -- Items in ExampColl: Item5
-Identity: "Item6" -- Items in ExampColl: Item6
+```output
+Identity: 'Item1' -- Items in ExampColl: Item1
+Identity: 'Item2' -- Items in ExampColl: Item2
+Identity: 'Item3' -- Items in ExampColl: Item3
+Identity: 'Item4' -- Items in ExampColl: Item4
+Identity: 'Item5' -- Items in ExampColl: Item5
+Identity: 'Item6' -- Items in ExampColl: Item6
 ```
 
 ## <a name="filter-item-lists"></a>Filtro de elementos en listas

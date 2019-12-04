@@ -6,14 +6,15 @@ ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a6d31d15f7f7ed533d73683a3c12d152bd7046
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f28d7271fdf33822475a663debed269bb515959
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552907"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777782"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Creación de informes del generador de perfiles desde la línea de comandos
 La herramienta de línea de comandos **VSPerfReport** permite crear informes .*xml* o de valores separados por comas (.*csv*) a partir de archivos de datos de generación de perfiles (.*vsp*). Los tipos de informes VSPerfReport coinciden estrechamente con las vistas basadas en las tablas de la interfaz para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede filtrar el informe para mostrar solo su código y mostrar solo un segmento del archivo de datos de generación de perfiles. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).

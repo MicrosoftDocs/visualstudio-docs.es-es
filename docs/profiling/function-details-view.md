@@ -11,14 +11,15 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969763"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779264"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 La ventana de **Vista Detalles de la función** muestra la siguiente información:
@@ -70,7 +71,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ## <a name="function-performance-details"></a>Detalles de rendimiento de la función
  La tabla Detalles de rendimiento de la función proporciona datos de resumen de las métricas de rendimiento de la función seleccionada. Aparecen el valor y el porcentaje. Se especifican los datos de generación de perfiles que aparecen en el gráfico y la tabla de detalles en la lista **Métrica de rendimiento**.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Exclusivo**|- La cantidad de la métrica de rendimiento que se produjo en la ejecución del cuerpo de la función.|
 |**Llamadas entrantes**|- La cantidad de la métrica de rendimiento que se produjo en las funciones a las que llamó la función seleccionada.|

@@ -7,14 +7,15 @@ ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9b77d4e27edd470d83941e29d5d7a2314cd2a8e1
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: a95e907379db19d88fd7204e8410038ddb881d3b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746270"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779121"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio .NET para recopilar datos de simultaneidad mediante la línea de comandos
 En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar datos de simultaneidad de procesos y subprocesos mediante el método de muestreo.
@@ -56,7 +57,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
     > [!NOTE]
     > Normalmente, las opciones **/user** y **/crosssession** son necesarias para servicios.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
     |[/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna **Nombre de usuario** de la pestaña **Procesos** del Administrador de tareas de Windows.|
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si el servicio se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna **Id. de sesión** de la pestaña **Procesos** del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**.|
@@ -81,7 +82,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
 
 - Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
@@ -98,7 +99,7 @@ En este artículo se explica cómo usar las herramientas de línea de comandos d
 
     - Detenga el servicio.
 
-         o bien
+         O bien
 
     - Escriba **VSPerfCmd /detach**.
 

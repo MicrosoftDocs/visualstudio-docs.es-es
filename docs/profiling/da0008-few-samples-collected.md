@@ -11,14 +11,15 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936623"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779446"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Pocos ejemplos recolectados
 

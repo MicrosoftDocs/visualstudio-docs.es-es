@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377799"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706852"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
@@ -39,7 +39,7 @@ Pero si intenta registrarse en una aplicación de Microsoft que admite cuentas p
    > ![Se admiten cuentas profesionales o educativas](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>¿Se ven afectadas las cuentas existentes?
-El bloqueo de registro descrito aquí solo impide la creación de nuevas cuentas. No tiene ningún impacto en los usuarios que ya tienen una cuenta Microsoft con una dirección de correo electrónico profesional o educativa. Si ya están en esta situación, hemos facilitado el proceso de cambiar el nombre de una cuenta Microsoft personal. Este [artículo de soporte técnico](http://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) proporciona instrucciones paso a paso sencillas. Cambiar el nombre de la cuenta Microsoft personal implica cambiar el nombre de usuario y no afecta a su correo electrónico profesional o a cómo inicia sesión en servicios para la empresa, como Office 365. Tampoco afecta a su información personal, solo cambia la manera de iniciar sesión en ella. Puede usar otra dirección de correo electrónico (personal), obtener una nueva dirección de correo electrónico de @outlook.com de Microsoft, o usar su número de teléfono como un nuevo nombre de usuario.
+El bloqueo de registro descrito aquí solo impide la creación de nuevas cuentas. No tiene ningún impacto en los usuarios que ya tienen una cuenta Microsoft con una dirección de correo electrónico profesional o educativa. Si ya están en esta situación, hemos facilitado el proceso de cambiar el nombre de una cuenta Microsoft personal. Este [artículo de soporte técnico](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) proporciona instrucciones paso a paso sencillas. Cambiar el nombre de la cuenta Microsoft personal implica cambiar el nombre de usuario y no afecta a su correo electrónico profesional o a cómo inicia sesión en servicios para la empresa, como Office 365. Tampoco afecta a su información personal, solo cambia la manera de iniciar sesión en ella. Puede usar otra dirección de correo electrónico (personal), obtener una nueva dirección de correo electrónico de @outlook.com de Microsoft, o usar su número de teléfono como un nuevo nombre de usuario.
 
 > [!NOTE]
 > Si el departamento de TI le pide que cree una cuenta Microsoft personal con su correo electrónico profesional o educativo, por ejemplo, para obtener acceso a servicios para la empresa de Microsoft como soporte técnico Premier, hable con su equipo de administración antes de cambiar el nombre de su cuenta.

@@ -6,14 +6,15 @@ ms.assetid: 8059d4b2-af61-4a47-a6c2-8da5c0741c74
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 501818d000b2db69b0744649d8e4a472cb87a55b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24379a720ccaa3405cbe5c127f3b8abaf12e49aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982598"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771914"
 ---
 # <a name="querycounters"></a>QueryCounters
 La opción **QueryCounters** enumera los contadores de rendimiento de CPU (hardware) que están disponibles en el equipo.
@@ -27,7 +28,7 @@ VSPerfCmd.exe /QueryCounters
 ```
 
 #### <a name="parameters"></a>Parámetros
- Ninguna
+ None
 
 ## <a name="remarks"></a>Comentarios
  Cuando se utiliza el método de instrumentación, el generador de perfiles puede recopilar los valores de uno o varios contadores de rendimiento de CPU en cada evento de recopilación de datos. Cuando se utiliza el método de generación de perfiles de muestreo, puede especificar un evento de contador y el número de repeticiones del evento que se usará como el intervalo de muestreo.

@@ -12,14 +12,15 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 049e1163f54dfcdfe2338faa59ae8c37c3114fa7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422037"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778042"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Uso de las Herramientas de generación de perfiles desde la línea de comandos
 Puede utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para generar perfiles de aplicaciones en el símbolo del sistema y automatizar la generación de perfiles mediante archivos por lotes y scripting. También puede generar archivos de informe en un símbolo del sistema. Puede utilizar el generador de perfiles independiente ligero para recopilar datos en los equipos que no tienen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado.

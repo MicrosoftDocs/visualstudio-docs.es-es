@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 97644776f4197e2f3286d29cbd3f746f7ecd0b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cbe03f52b31664c59cb7e59d448db7c6b96b6487
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809657"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772883"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Recopilar estadísticas de rendimiento mediante el muestreo
 
@@ -26,7 +27,7 @@ De manera predeterminada, el método de muestreo de las Herramientas de generaci
 
 Puede especificar el método de muestreo mediante uno de los procedimientos siguientes:
 
-- En la primera página del Asistente de generación de perfiles, haga clic en **Muestreo de la CPU (recomendado)**.
+- En la primera página del Asistente de generación de perfiles, haga clic en **Muestreo de la CPU (recomendado)** .
 - En la barra de herramientas **Explorador de rendimiento**, en la lista **Método**, haga clic en **Muestreo**.
 - En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, haga clic en **Muestreo**.
 

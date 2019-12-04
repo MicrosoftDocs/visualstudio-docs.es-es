@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a8c5d431b7be54c4c5bc1a1c37619deb67de751
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535468"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779589"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Recopilar datos de asignación y duración de memoria de .NET
 

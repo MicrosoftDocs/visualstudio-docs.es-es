@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681134"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771697"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 

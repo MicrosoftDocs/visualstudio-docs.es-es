@@ -10,14 +10,15 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432017"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772237"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.
