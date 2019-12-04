@@ -7,14 +7,15 @@ ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9084f2d1dd784172735c66d38da785dffb74d82c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261605"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779186"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a una aplicación independiente de .NET Framework y recopilar estadísticas de la aplicación mediante la línea de comandos
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación independiente de .NET Framework en ejecución (cliente) y recopilar estadísticas de rendimiento mediante el método de muestreo.
@@ -52,7 +53,7 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
      Puede usar cualquiera de las opciones siguientes con la opción **/start:sample**.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el nombre de usuario y el dominio opcional de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si la aplicación perfilada se ha iniciado como un usuario diferente del que inició la sesión. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otros inicios de sesión. **/CS** se puede especificar como una abreviatura de **/crosssession**. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. |
@@ -74,7 +75,7 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
    |||
    |-|-|
-   |Evento de muestreo|Descripción|
+   |Evento de muestreo|DESCRIPCIÓN|
    |[/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo por el número de ciclos de reloj no detenidos especificados mediante `Interval`.|
    |[/pf](../profiling/pf.md) [ **:** `Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|
    |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo (llamadas syscall). Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro. El valor predeterminado es 10.|
@@ -87,7 +88,7 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recopilación de datos para el proceso especificado por `PID`.|
@@ -102,7 +103,7 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
     - Escriba **VSPerfCmd /detach**
 
-         o bien
+         O bien
 
     - Cierre la aplicación de destino.
 
