@@ -9,21 +9,22 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793986"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778459"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 La ventana **Filtro de vista Informe de rendimiento** se encuentra en la parte superior de la ventana **Informe de generador de perfiles**. Si no la ve, haga clic en el botón **Mostrar filtro**.
 
  Puede modificar cada cláusula de filtro para restringir los resultados. Las siguientes columnas están disponibles en el generador de filtros.
 
-|Elemento de filtro|Descripción|
+|Elemento de filtro|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Y/O|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|
 |Campo|Seleccione el campo que se utilizará en la cláusula de filtro de la lista de campos de datos que están disponibles en el archivo de informe actual.|

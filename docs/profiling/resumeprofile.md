@@ -8,14 +8,15 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814103"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778315"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 El método `ResumeProfile` reduce el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:
 
-|Enumerador|Descripción|
+|Enumerador|DESCRIPCIÓN|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:
 
-|Enumerador|Descripción|
+|Enumerador|DESCRIPCIÓN|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|El id. del elemento de generación de perfiles no existe.|
 |PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|

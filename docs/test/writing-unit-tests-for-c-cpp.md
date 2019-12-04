@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189100"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688857"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -79,7 +79,7 @@ Para permitir que el código de prueba tenga acceso a las funciones en el proyec
 
 ### <a name="link-to-object-or-library-files"></a>Vinculación con archivos de objeto o biblioteca
 
-Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Vea [Para vincular las pruebas a los archivos de biblioteca u objeto](how-to-use-microsoft-test-framework-for-cpp.md).
+Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Vea [Para vincular las pruebas a los archivos de biblioteca u objeto](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Agregar directivas #include de archivos de encabezado
 

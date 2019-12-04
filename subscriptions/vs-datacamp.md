@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199878"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706879"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -50,7 +50,7 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
    > [!div class="mx-imgBorder"]
    > ![Introducción a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  Solo tiene que ir a [http://www.datacamp.com](http://www.datacamp.com) e iniciar sesión.  Aparecerá su panel y podrá reanudar el curso justo donde lo dejó. Bastará con que haga clic en **Continue Track** (Continuar pista).
+Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  Solo tiene que ir a [https://www.datacamp.com](https://www.datacamp.com) e iniciar sesión.  Aparecerá su panel y podrá reanudar el curso justo donde lo dejó. Bastará con que haga clic en **Continue Track** (Continuar pista).
 
 > [!div class="mx-imgBorder"]
 > ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)

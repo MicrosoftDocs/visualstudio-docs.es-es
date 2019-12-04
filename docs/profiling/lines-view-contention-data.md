@@ -8,14 +8,15 @@ ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000621"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778601"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 La vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles. En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.
@@ -38,7 +39,7 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
 
   En la siguiente tabla se describen las columnas del informe de vista de líneas.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Tiempo de bloqueo exclusivo**|La cantidad de tiempo durante el cual esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluye el tiempo de bloqueo de las funciones a las que llamó la instrucción.|
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo exclusivo de la instrucción.|
@@ -50,7 +51,7 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
 |**Porcentaje de tiempo de bloqueo inclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo inclusivo de la instrucción.|
 |**Contenciones inclusivas**|El número de veces que se bloqueó la ejecución de esta instrucción y las funciones a las que llamó la instrucción.|
 |**Porcentaje de contenciones inclusivas**|El porcentaje de todos los eventos de contención en el proceso que eran contenciones inclusivas de esta instrucción.|
-|**Nombre de línea**|Un identificador generado por el generador de perfiles de la línea. El identificador utiliza la siguiente sintaxis:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Nombre de línea**|Un identificador generado por el generador de perfiles de la línea. El identificador utiliza la siguiente sintaxis:`SourceFile` **;[** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
 |**Nombre del módulo**|Nombre del módulo que contiene la instrucción.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la instrucción.|

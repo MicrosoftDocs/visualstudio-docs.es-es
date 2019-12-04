@@ -9,14 +9,15 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b346047ff52c994e76a322a5afa0494259277163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438476"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778211"
 ---
 # <a name="summary-view---sampling-data"></a>Vista Resumen: datos de muestreo
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).
@@ -32,7 +33,7 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
 
  La **Ruta de acceso activa** incluye los siguientes datos para cada función:
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|Nombre de la función.|
 |**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras que se produjeron cuando se estaba ejecutando esta función o una función a la que llamó.|
@@ -45,7 +46,7 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
 
  **Funciones que realizan la mayor parte de trabajo individual** incluye los siguientes datos para cada función:
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Name**|Nombre de la función.|
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras que se recopilaron durante la generación de perfiles mientras la función ejecutaba código en el cuerpo de la función. El porcentaje excluye las muestras recopiladas cuando se estaban ejecutando las funciones a las que llamó esta función.|

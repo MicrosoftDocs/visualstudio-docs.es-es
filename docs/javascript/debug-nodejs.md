@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913000"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777938"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -111,7 +111,7 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
 
     Para buscar el código específico en un archivo transpilado, presione **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 
-    En el código del lado cliente, para alcanzar un punto de interrupción en un archivo de TypeScript o JSX, normalmente es necesario usar [mapas de origen](#generate_source_maps). Un mapa de origen debe estar configurado correctamente para admitir la depuración en Visual Studio.
+    En el código del lado cliente, para alcanzar un punto de interrupción en un archivo de TypeScript, *.vue* o JSX, normalmente es necesario usar [mapas de origen](#generate_source_maps). Un mapa de origen debe estar configurado correctamente para admitir la depuración en Visual Studio.
 
 2. Seleccione el explorador de destino como destino de depuración en Visual Studio y después presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
 
@@ -127,7 +127,6 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
     > A partir de Visual Studio 2017, una vez que se siguen estos pasos para asociar al proceso la primera vez, puede volver a asociar rápidamente al mismo proceso si selecciona **Depurar** > **Reasociar al proceso**.
 
 4. En el cuadro de diálogo **Asociar al proceso**, obtendrá una lista filtrada de las instancias del explorador a las que se puede asociar.
-
     ::: moniker range=">=vs-2019"
     En Visual Studio 2019, elija el depurador correcto para el explorador de destino, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge - Chromium)** en el campo **Asociar a:** , escriba **chrome** o **edge** en el cuadro de filtro para filtrar los resultados de la búsqueda.
     ::: moniker-end

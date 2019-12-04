@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744724"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776350"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedimiento Elegir métodos de recopilación
 
@@ -30,7 +31,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 - En la primera página del asistente, seleccione una de las siguientes opciones:
 
-| Opción | Descripción |
+| Opción | DESCRIPCIÓN |
 |----------------------------| - |
 | **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
 | **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |

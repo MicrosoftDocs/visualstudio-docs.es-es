@@ -6,14 +6,15 @@ ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c699f7d3bc1a74383da5eef481ee080c6d85e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9088f5c7516c7daa82087e0f797addfaaa068c33
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996159"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774542"
 ---
 # <a name="how-to-view-performance-warnings"></a>Procedimiento Ver advertencias de rendimiento
 Las advertencias de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] indican problemas en una aplicación para la que se han generado perfiles que pueden ralentizar la ejecución de programas. Las advertencias también pueden indicar que puede ser conveniente cambiar los métodos de recopilación para recopilar datos más útiles. Las advertencias de rendimiento se generan automáticamente en una sesión de generación de perfiles y aparecen en la ventana **Lista de errores** cuando se abre un archivo de datos de generación de perfiles en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

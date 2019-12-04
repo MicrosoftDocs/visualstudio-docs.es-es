@@ -13,14 +13,15 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581279"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777990"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .*csv*.
@@ -47,10 +48,10 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Opciones generales de informe
  En la tabla siguiente se describen las opciones generales de formato del informe y las opciones que seleccionan los datos de los que se va a informar.
 
-|Opciones|Descripción|
+|Opciones|DESCRIPCIÓN|
 |-------------|-----------------|
 |**U**|El informe de resultados y la salida de la consola redirigida se escriben como Unicode. Esta debe ser la primera opción especificada.|
-|**Summary:**[*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|
+|**Summary:** [*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|
 |**Xml**|Informe de resultados en formato XML.|
 |**CallTrace**|Crea una lista de entradas y salidas de la función, eventos ETW y marcas.|
 |**ClearPackedSymbols**|Quita los símbolos insertados previamente de un archivo de datos del generador de perfiles. Ejecute este comando antes de ejecutar PackSymbols por segunda vez.|
@@ -67,26 +68,26 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Opciones de filtro
  En la tabla siguiente se describen las opciones para filtrar los datos disponibles.
 
-|Opciones|Descripción|
+|Opciones|DESCRIPCIÓN|
 |-------------|-----------------|
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Solo se muestran las llamadas a funciones de aplicación de usuario; se ocultan las llamadas al sistema.<br /><br /> - Ningún parámetro: se ocultan todas las funciones del sistema.<br />-   `caller`: se muestra un nivel de las funciones del sistema que llaman a las funciones de aplicación.<br />-   `callee`: se muestra un nivel de las funciones del sistema invocadas por las funciones de aplicación de usuario.|
-|**StartTime:**[*value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|
-|**EndTime:**[*value*]|Solo muestra los datos recopilados antes del valor (en milisegundos).|
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|Solo se muestran las llamadas a funciones de aplicación de usuario; se ocultan las llamadas al sistema.<br /><br /> - Ningún parámetro: se ocultan todas las funciones del sistema.<br />-   `caller`: se muestra un nivel de las funciones del sistema que llaman a las funciones de aplicación.<br />-   `callee`: se muestra un nivel de las funciones del sistema invocadas por las funciones de aplicación de usuario.|
+|**StartTime:** [*value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|
+|**EndTime:** [*value*]|Solo muestra los datos recopilados antes del valor (en milisegundos).|
 |**FilterFile:** `VSPFFile`|Especifica la ubicación de un archivo de filtro que se generó en la ventana Informe de rendimiento de Visual Studio.|
-|**MsFilter:**[*starttime,duration*]|Solo se muestran los datos de `starttime` hasta la longitud de `duration` (en milisegundos).|
-|**Process:**[*pid*]|Solo muestra los datos del proceso especificado.|
-|**Thread:**[*threadid*]|Solo muestra los datos del subproceso especificado.|
-|**Thread:**[*threadid,processid*]|Solo muestra los datos del subproceso especificado asociado al proceso especificado.|
+|**MsFilter:** [*starttime,duration*]|Solo se muestran los datos de `starttime` hasta la longitud de `duration` (en milisegundos).|
+|**Process:** [*pid*]|Solo muestra los datos del proceso especificado.|
+|**Thread:** [*threadid*]|Solo muestra los datos del subproceso especificado.|
+|**Thread:** [*threadid,processid*]|Solo muestra los datos del subproceso especificado asociado al proceso especificado.|
 
 ## <a name="difference-report-options"></a>Opciones del informe de diferencias
  En la tabla siguiente se describen las opciones para comparar archivos de informe.
 
-|Opciones|Descripción|
+|Opciones|DESCRIPCIÓN|
 |-------------|-----------------|
 |**Diff**  `vspfile1 vspfile2`|Se comparan dos archivos de informe (.*vsp* o .*vsps*). Las opciones de resumen se omitirán mediante la opción diff.|
-|**Diff:**[*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|
-|**DiffTable:**[*tablename*]|Use esta tabla concreta para comparar archivos. El valor predeterminado es la tabla de funciones.|
-|**DiffColumn:**[*columnname*]|Use estos valores de comparación de columna específicos. El valor predeterminado es la columna de porcentaje de muestras exclusivas.|
+|**Diff:** [*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|
+|**DiffTable:** [*tablename*]|Use esta tabla concreta para comparar archivos. El valor predeterminado es la tabla de funciones.|
+|**DiffColumn:** [*columnname*]|Use estos valores de comparación de columna específicos. El valor predeterminado es la columna de porcentaje de muestras exclusivas.|
 |**QueryDiffTables**|Muestra las tablas y columnas válidas para los dos archivos de informe proporcionados.|
 
 ## <a name="see-also"></a>Vea también

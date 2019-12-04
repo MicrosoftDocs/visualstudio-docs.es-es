@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777874"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779875"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
@@ -31,7 +32,7 @@ La generación de perfiles de interacción de capas se puede recopilar con cualq
 
 **Recopilación de datos de TIP en un equipo remoto**
 
-Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
+Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs_profiler\_** _\<plataforma>_ **\_** _\<lenguaje>_ **.exe** de la carpeta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
 
 **Informes TIP**
 

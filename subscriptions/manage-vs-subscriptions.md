@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493359"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706969"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -43,7 +43,7 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 ## <a name="renewing-my-subscriptions"></a>Renovar las suscripciones
 
 **Suscripciones estándar**
-- Microsoft Store: si ha comprado la suscripción a través de [Microsoft Store](http://www.microsoft.com/store), también la puede renovar desde ahí.
+- Microsoft Store: si ha comprado la suscripción a través de [Microsoft Store](https://www.microsoft.com/store), también la puede renovar desde ahí.
 - Licencia por volumen:  si su empresa compra suscripciones a través de una licencia por volumen, el administrador debe ponerse en contacto con un distribuidor para renovar las suscripciones.
 
 **Suscripciones de nube:**  no es necesario renovar las suscripciones de nube. Siempre y cuando pague la suscripción, esta se mantendrá activa.

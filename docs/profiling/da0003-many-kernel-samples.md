@@ -11,14 +11,15 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd12b4944da36e480aa44f312b44133c657365f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69cd81943641e4e0585a67127c70d35a601a5396
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970688"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777743"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Muchas muestras de kernel
 

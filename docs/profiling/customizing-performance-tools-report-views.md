@@ -9,14 +9,15 @@ ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb3b0e56351e9da0af799db40a29721df5df6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552832"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777769"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personalización de las vistas de informes de las herramientas de rendimiento
 En esta sección se describe cómo personalizar los informes que se generan con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

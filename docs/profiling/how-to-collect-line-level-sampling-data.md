@@ -8,14 +8,15 @@ ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834593"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776363"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedimiento Recopilar datos de muestreo en el nivel de línea
 El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar en qué punto del código de una función de uso intensivo del procesador, como una función con muestras muy exclusivas, el procesador tiene que dedicar más tiempo.
@@ -53,7 +54,7 @@ El muestreo en el nivel de línea es la capacidad del generador de perfiles para
 
      o
 
-- Al iniciar una aplicación, escriba **VSPerfCmd /lineoff \<other arguments>**.
+- Al iniciar una aplicación, escriba **VSPerfCmd /lineoff \<other arguments>** .
 
 ## <a name="see-also"></a>Vea también
 - [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

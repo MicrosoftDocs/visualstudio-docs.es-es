@@ -14,14 +14,15 @@ ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a68a2a9f0ca96b943c0b09da5c60268963bc6a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973674"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772181"
 ---
 # <a name="process-view"></a>Vista Proceso
 La vista Proceso muestra los datos de generación de perfiles de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.
@@ -32,7 +33,7 @@ La vista Proceso muestra los datos de generación de perfiles de los procesos y 
 
  Las columnas de la vista Proceso son las mismas para los datos generados mediante los métodos de instrumentación y muestreo y para los datos que incluyen los datos de memoria de .NET. En la siguiente tabla se describen estos valores de columna.
 
-|Columna|Descripción|
+|Columna|DESCRIPCIÓN|
 |------------|-----------------|
 |**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|
 |**Id.**|El identificador generado por el sistema del proceso o subproceso.|

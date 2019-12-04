@@ -9,14 +9,15 @@ ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 411459cb55c54c96fb54000249f733d492e45820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa184667e5d569bc2662052a29b25bfea6e470a7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440200"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779576"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Generación de perfiles mediante línea de comandos de aplicaciones web ASP.NET
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento de aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante el uso de herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde la línea de comandos.
