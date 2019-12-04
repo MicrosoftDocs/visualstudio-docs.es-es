@@ -11,14 +11,15 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422863"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774918"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedimiento Hacer referencia a información de símbolos de Windows
 Las herramientas de generación de perfiles de Visual Studio usan archivos de símbolos (.*pdb*) para resolver nombres simbólicos como los nombres de función en los archivos binarios del programa. Puede seguir estos pasos para descargar y actualizar automáticamente los archivos .*pdb* correctos para la versión de Windows en el equipo local.
@@ -38,13 +39,13 @@ Las herramientas de generación de perfiles de Visual Studio usan archivos de s�
 
 3. Expanda el árbol **Depuración** y después haga clic en **Símbolos**.
 
-4. En **Ubicaciones de archivos de símbolos (.pdb)**, seleccione **Servidores de símbolos de Microsoft**
+4. En **Ubicaciones de archivos de símbolos (.pdb)** , seleccione **Servidores de símbolos de Microsoft**
 
 5. En **Almacenar símbolos en caché desde los servidores de símbolos a este directorio**, escriba la ruta de acceso de la carpeta que creó en el paso 1, por ejemplo:
 
      **C:\SymbolCache**
 
-     También puede hacer clic en el botón de puntos suspensivos (**...**) y después seleccionar un directorio en el cuadro de diálogo **Buscar carpeta**.
+     También puede hacer clic en el botón de puntos suspensivos ( **...** ) y después seleccionar un directorio en el cuadro de diálogo **Buscar carpeta**.
 
 ## <a name="see-also"></a>Vea también
 - [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
