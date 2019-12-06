@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747049"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879261"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 
@@ -45,7 +45,7 @@ Puede anotar los miembros de struct y de clase mediante anotaciones que actúan 
 
      Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como lo especifica `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como se especifica en `size`, y el `count` de esos elementos (bytes) que se pueden leer.
 
@@ -81,11 +81,9 @@ Puede anotar los miembros de struct y de clase mediante anotaciones que actúan 
 
 ```cpp
 #include <sal.h>
-// For FIELD_OFFSET macro
-#include <windows.h>
 
 // This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
-_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+_Struct_size_bytes_(__builtin_offsetof(MyBuffer, buffer) + bufferSize * sizeof(int))
 struct MyBuffer
 {
     static int MaxBufferSize;
@@ -99,8 +97,9 @@ struct MyBuffer
 
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
+    
     _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
-    int buffer[0];
+    int buffer[]; // Using C99 Flexible array member
 };
 ```
 
