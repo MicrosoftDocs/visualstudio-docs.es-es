@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806809"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879274"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describen los usos habituales de las anotaciones para parámetros de funciones simples, escalares y punteros a estructuras y clases, y la mayoría de los tipos de búferes.  En este artículo también se muestran patrones de uso comunes para las anotaciones. Para obtener más anotaciones relacionadas con las funciones, consulte [anotar el comportamiento](../code-quality/annotating-function-behavior.md)de la función.
@@ -185,7 +185,10 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
      Puntero a una matriz de `s` elementos (resp. bytes) que escribirá la función.  Los elementos de la matriz no tienen que ser válidos en el estado anterior y el número de elementos que son válidos en post-State no está especificado.  Si hay anotaciones en el tipo de parámetro, se aplican en el estado posterior. Por ejemplo, considere el fragmento de código siguiente:
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
      En este ejemplo, el autor de la llamada proporciona un búfer de `size` elementos para `p1`.  `MyStringCopy` hace que algunos de esos elementos sean válidos. Lo que es más importante, la anotación `_Null_terminated_` en `PWSTR` significa que `p1` termina en null en el estado post.  De esta manera, el número de elementos válidos sigue siendo bien definido, pero no se requiere un recuento específico de elementos.
 
@@ -215,13 +218,14 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
      `_Out_writes_bytes_all_(s)`
 
-     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el elemento `c`-TH deben ser válidos.  Si el tamaño se conoce en bytes, escale `s` y `c` por el tamaño del elemento o use la variante `_bytes_`, que se define como:
+     Puntero a una matriz de elementos `s`.  Los elementos no tienen que ser válidos en el estado anterior.  En post-State, los elementos hasta el elemento `c`-TH deben ser válidos.  La variante de `_bytes_` se puede utilizar si se conoce el tamaño en bytes en lugar de en el número de elementos.
+     
+     Por ejemplo:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     En otras palabras, cada elemento que existe en el búfer hasta `s` en el estado anterior es válido en el estado posterior.  Por ejemplo:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
@@ -245,19 +249,24 @@ En el caso de las anotaciones de la tabla siguiente, cuando se anota un parámet
 
 - `_In_reads_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Puntero a una matriz para la que `p - _Curr_` (es decir, `p` menos `_Curr_`) es una expresión válida.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+
+    Por ejemplo:
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
+     Puntero a una matriz terminada en null para la que la expresión `p - _Curr_` (es decir, `p` menos `_Curr_`) es una expresión válida.  Los elementos anteriores a `p` deben ser válidos en el estado anterior.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Un puntero a una matriz para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Puntero a una matriz para la que `p - _Curr_` (es decir, `p` menos `_Curr_`) es una expresión válida.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Un puntero a una matriz terminada en null para la que la expresión `p` - `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar de lenguaje adecuado.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
+     Puntero a una matriz terminada en null para la que `p - _Curr_` (es decir, `p` menos `_Curr_`) es una expresión válida.  Los elementos anteriores a `p` no tienen que ser válidos en el estado anterior y deben ser válidos en post-State.
 
 ## <a name="optional-pointer-parameters"></a>Parámetros de puntero opcionales
 
@@ -361,7 +370,7 @@ Los parámetros de puntero de salida requieren una notación especial para elimi
 
 ## <a name="output-reference-parameters"></a>Parámetros de referencia de salida
 
-Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples, por ejemplo, `int&`,`_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero (por ejemplo `int *&`), las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
+Un uso común del parámetro de referencia es para los parámetros de salida.  En el caso de los parámetros de referencia de salida simples como `int&`, `_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero como `int *&`, las anotaciones de puntero equivalentes como `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de manera concisa la semántica de los parámetros de referencia de salida para los tipos de puntero, use estas anotaciones compuestas:
 
 **Anotaciones y descripciones**
 

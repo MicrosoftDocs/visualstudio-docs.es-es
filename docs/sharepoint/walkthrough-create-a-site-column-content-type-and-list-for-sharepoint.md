@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985014"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879363"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: crear una columna de sitio, un tipo de contenido y una lista para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También se muestra cómo crear una lista que usa el nuevo tipo de contenido.
@@ -54,33 +54,48 @@ ms.locfileid: "72985014"
 #### <a name="to-create-the-project"></a>Para crear el proyecto
 
 1. En el menú **archivo** de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija nuevo **proyecto**de > .
+::: moniker range="=vs-2017"
+2. En el cuadro de diálogo **nuevo proyecto** , en **Visual C#**  o en **Visual Basic**, expanda el nodo **Office/SharePoint** y, a continuación, seleccione **soluciones de SharePoint**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , en **Visual C#**  o en **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija **2010**.
+3. En el panel **plantillas** , elija el **proyecto vacío de SharePoint** para la versión concreta de SharePoint que ha instalado. Por ejemplo, si tiene instalado SharePoint 2016, seleccione la plantilla **de proyecto sharepoint 2016-Empty** .  
 
-3. En el panel **plantillas** , elija **proyecto de SharePoint 2010**, cambie el nombre del proyecto a **Clinic**y, a continuación, elija el botón **Aceptar** .
+4. Cambie el nombre del proyecto a **Clinic**y, a continuación, elija el botón **Aceptar** .
 
-     La plantilla de proyecto de SharePoint 2010 es un proyecto vacío que se usa en este ejemplo para contener columnas de sitio y otros elementos de proyecto que se agregan más adelante.
+5. En el cuadro de diálogo **especificar el sitio y el nivel de seguridad para la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada (`http://<`*SystemName*`>/)`.
 
-4. En la página **especifique el sitio y el nivel de seguridad de la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada (`http://<`*SystemName*`>/)`.
+6. En la sección **¿cuál es el nivel de confianza de esta solución de SharePoint?** , use el valor predeterminado **implementar como una solución en espacio aislado**.
+
+     Para obtener más información sobre las soluciones en espacio aislado y las soluciones de granja, consulte [consideraciones sobre soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
+
+7. Elija el botón **Finalizar** . El proyecto se muestra ahora en **Explorador de soluciones**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+2.  En el cuadro de diálogo **crear un nuevo proyecto** , seleccione el **proyecto vacío de SharePoint** para la versión concreta de SharePoint que ha instalado. Por ejemplo, si tiene instalado SharePoint 2016, seleccione la plantilla **de proyecto sharepoint 2016-Empty** .
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
+
+3. Cambie el nombre del proyecto a **Clinic**y, a continuación, elija el botón **crear** .
+
+4. En el cuadro de diálogo **especificar el sitio y el nivel de seguridad para la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada (`http://<`*SystemName*`>/)`.
 
 5. En la sección **¿cuál es el nivel de confianza de esta solución de SharePoint?** , use el valor predeterminado **implementar como una solución en espacio aislado**.
 
      Para obtener más información sobre las soluciones en espacio aislado y las soluciones de granja, consulte [consideraciones sobre soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
 6. Elija el botón **Finalizar** . El proyecto se muestra ahora en **Explorador de soluciones**.
+::: moniker-end
 
 #### <a name="to-add-site-columns"></a>Para agregar columnas de sitio
 
-1. Agregue una nueva columna de sitio. Para ello, en **Explorador de soluciones**, abra el menú contextual de **Clinic**y, a continuación, elija **Agregar** > **nuevo elemento**.
+1. Agregue una nueva columna de sitio. Para ello, en **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **Clinic** y, a continuación, elija **Agregar** > **nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , elija **columna de sitio**, cambie el nombre a **patient Name**y, a continuación, elija el botón **Agregar** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** , elija **columna de sitio**, cambie el nombre a **PatientName**y, a continuación, elija el botón **Agregar** .
 
-3. En el archivo *Elements. XML* de la columna de sitio, deje la configuración de **tipo** como **texto**y cambie la configuración de **Grupo** a **columnas de sitio**de la sesión. Cuando haya finalizado, el archivo *Elements. XML* de la columna del sitio debe ser similar al ejemplo siguiente.
+3. En el archivo *Elements. XML* de la columna de sitio, deje la configuración de **tipo** como **texto**, cambie la configuración de **Grupo** a **columnas de sitio**de la sesión. Cuando haya finalizado, el archivo *Elements. XML* de la columna del sitio debe ser similar al ejemplo siguiente.
 
     ```xml
     <Field
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"
-         Name="Clinic - Patient Name"
+         Name="PatientName"
          DisplayName="Patient Name"
          Type="Text"
          Required="FALSE"
@@ -88,7 +103,11 @@ ms.locfileid: "72985014"
     </Field>
     ```
 
-4. Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **patient ID** (Type = "integer") y **doctor Name** (Type = "Text"). Establezca su valor de grupo en **columnas de sitio**de la sesión.
+    > [!TIP]
+    > Si usa la grafía Camel en el nombre de la columna de sitio, Visual Studio agregará automáticamente un espacio en la DisplayName.
+    > Se recomienda no usar espacios en el nombre de la columna del sitio, ya que puede causar problemas al intentar implementar la solución en SharePoint.
+
+4. Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **PatientID** (Type = "integer") y **DoctorName** (Type = "Text"). Establezca su valor de grupo en **columnas de sitio**de la sesión.
 
 ## <a name="create-a-custom-content-type"></a>Crear un tipo de contenido personalizado
  A continuación, cree un tipo de contenido, basado en el tipo de contenido contactos, que incluya las columnas del sitio que creó en el procedimiento anterior. Al basar un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para su uso en el nuevo tipo de contenido.
@@ -133,11 +152,11 @@ ms.locfileid: "72985014"
 
 2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
 
-3. En **Visual C#**  o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
+3. En  **C# visual** o en **Visual Basic**, expanda el nodo **SharePoint** .
 
 4. En el panel **plantillas** , elija la plantilla **lista** , cambie el nombre a **pacientes**y, a continuación, elija el botón **Agregar** .
 
-5. Deje la opción **personalizar la lista según** el valor **predeterminado (en blanco)** y, a continuación, elija el botón **Finalizar** .
+5. Deje la opción **personalizar la lista según** la configuración **predeterminada (lista personalizada)** y, a continuación, elija el botón **Finalizar** .
 
 6. En el diseñador de listas, elija el botón **tipos de contenido** para mostrar el cuadro de diálogo Configuración de **tipo de contenido** .
 
@@ -153,7 +172,7 @@ ms.locfileid: "72985014"
 
     - Teléfono particular
 
-    - Por
+    - Correo electrónico
 
     - Nombre del doctor
 
@@ -170,7 +189,7 @@ ms.locfileid: "72985014"
 
 10. Junto a los cuadros ID. de **paciente** y **nombre del paciente** , active la casilla **requerido** .
 
-11. En la pestaña **vistas** , elija una fila vacía para crear una vista. Escriba los **detalles del paciente**.
+11. En la pestaña **vistas** , elija una fila vacía para crear una vista. Escriba los **detalles del paciente** en una fila en blanco en la columna Nombre de **vista** .
 
      En la pestaña **vistas** , puede especificar las columnas que desea que aparezcan en la lista de SharePoint.
 
@@ -186,11 +205,11 @@ ms.locfileid: "72985014"
 
     - Teléfono particular
 
-    - Por
+    - Correo electrónico
 
     - Nombre del doctor
 
-    - Urgencia
+    - Hospital
 
     - Comentarios
 
