@@ -1,3 +1,11 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Programa para la mejora
+      tocHref: /visualstudio/products/
+      topicHref: /visualstudio/products
+      items:
+        - name: Suscripciones
+          tocHref: /visualstudio/subscriptions/
+          topicHref: /visualstudio/subscriptions
