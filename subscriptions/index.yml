@@ -1,0 +1,118 @@
+### YamlMime:Hub
+title: Documentación de las suscripciones de Visual Studio
+summary: Algunas de las ventajas de las suscripciones de Visual Studio son el acceso a herramientas para desarrolladores, servicios en la nube y software, el aprendizaje y el respaldo de las necesidades de desarrollo y pruebas.
+brand: visual-studio
+metadata:
+  title: Suscripciones de Visual Studio
+  description: Las suscripciones de Visual Studio son un conjunto de recursos completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux. Entre las ventajas de las suscripciones, se incluyen el acceso a herramientas de desarrollo, servicios en la nube, software, aprendizaje y soporte técnico para sus necesidades de desarrollo y pruebas.
+  ms.topic: hub-page
+  author: evanwindom
+  ms.author: lank
+  manager: lank
+  ms.date: 12/04/2019
+  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
+  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 12/06/2019
+  ms.locfileid: "74883837"
+highlightedContent:
+  items:
+  - title: Novedades de las suscripciones de Visual Studio
+    itemType: whats-new
+    url: ~/whats-new-in-subscriptions.md
+  - title: Uso del portal del suscriptor
+    itemType: how-to-guide
+    url: ~/using-the-subscriber-portal.md
+  - title: Uso del portal de administración
+    itemType: how-to-guide
+    url: ~/using-admin-portal.md
+conceptualContent:
+  title: Primeros pasos
+  items:
+  - title: Uso de las ventajas
+    links:
+    - text: Crédito de Azure
+      url: ~/vs-azure.md
+      itemType: get-started
+    - text: Descargas de software
+      url: ~/software-download-list.md
+      itemType: get-started
+    footerLink:
+      url: ~/vs-azure.md
+      text: Ver más
+  - title: Recursos conocidos
+    links:
+    - text: Comparación de opciones y precios
+      url: https://visualstudio.microsoft.com/vs/pricing
+      itemType: overview
+    - text: Compatibilidad con la administración y las suscripciones de Visual Studio
+      url: https://visualstudio.microsoft.com/support/support-overview-vs
+      itemType: overview
+  - title: Acceso al portal de suscripciones
+    links:
+    - text: Suscriptores
+      url: https://my.visualstudio.com/
+      itemType: get-started
+    - text: Administradores
+      url: https://manage.visualstudio.com/
+      itemType: get-started
+tools:
+  title: Productos disponibles
+  summary: Estos son solo algunos de los productos disponibles mediante las suscripciones de Visual Studio
+  items:
+  - title: Azure
+    imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
+    url: /azure/
+  - title: IDE de Visual Studio
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+    url: /visualstudio/windows/
+  - title: Azure DevOps Services
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+    url: /azure/devops/
+  - title: Visual Studio Code
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+    url: https://code.visualstudio.com/docs
+  - title: Visual Studio para Mac
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+    url: /visualstudio/mac/
+  - title: Centro de aplicaciones de Visual Studio
+    imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
+    url: /appcenter/
+additionalContent:
+  sections:
+  - title: Detalles de las ventajas
+    summary: 'La suscripción puede incluir estas ventajas:'
+    items:
+    - title: Herramientas para desarrolladores
+      links:
+      - text: Programa para la mejora
+        url: ~/vs-ide-benefit.md
+        note: (que incluye Visual Studio para Mac)
+    - title: Servicios en la nube
+      links:
+      - text: Desarrollo/pruebas de Azure
+        url: ~/vs-azure-payg.md
+      - text: Centro de aplicaciones de Visual Studio
+        url: ~/vs-visual-studio-app-center.md
+      - text: Azure DevOps Server y CAL
+        url: ~/vs-vsts.md
+      - text: Suscripción a Office 365 Developer
+        url: ~/vs-office-dev.md
+      - text: Cuenta de desarrollador de Windows
+        url: ~/vs-windows-dev.md
+    - title: Aprendizaje y soporte técnico
+      links:
+      - text: LinkedIn Premium
+        url: ~/vs-linkedin-learning.md
+        note: (contenido empresarial, técnico y creativo)
+      - text: Pluralsight
+        url: ~/vs-pluralsight.md
+        note: (nube, diseño, móvil y datos)
+      - text: Data Camp
+        url: ~/vs-datacamp.md
+        note: (ciencia de datos e inteligencia artificial)
+      - text: Incidentes de soporte técnico profesional de Microsoft
+        url: ~/vs-tech-support.md
+      - text: Comunidad Azure
+        url: ~/vs-azure-community.md
