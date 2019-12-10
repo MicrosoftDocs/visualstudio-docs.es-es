@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985643"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955054"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.
@@ -40,45 +40,38 @@ ms.locfileid: "72985643"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrar complementos de VSTO para el usuario actual frente a todos los usuarios
  Cuando se instala un complemento de VSTO, se puede registrar de dos formas:
 
-- Solo para el usuario actual (es decir, solo está disponible para el usuario que ha iniciado sesión en el equipo cuando está instalado el complemento de VSTO). En este caso, las entradas del registro se crean en **HKEY_CURRENT_USER**.
+- Solo para el usuario actual (es decir, solo está disponible para el usuario que ha iniciado sesión en el equipo cuando está instalado el complemento de VSTO). En este caso, las entradas del registro se crean en el **HKEY_CURRENT_USER**.
 
 - Para todos los usuarios (es decir, cualquier usuario que inicie sesión en el equipo puede usar el complemento de VSTO). En este caso, las entradas del registro se crean en **HKEY_LOCAL_MACHINE**.
 
   Todos los complementos de VSTO que cree mediante Visual Studio pueden registrarse para el usuario actual. Sin embargo, los complementos de VSTO pueden registrarse para todos los usuarios solo en determinados escenarios. Estos escenarios dependen de la versión de Microsoft Office del equipo y de cómo se implementó el complemento de VSTO.
 
-### <a name="microsoft-office-version"></a>Versión de Microsoft Office
- Las aplicaciones de Office pueden cargar complementos de VSTO que están registrados en **HKEY_LOCAL_MACHINE** o **HKEY_CURRENT_USER**.
-
- Para cargar los complementos de VSTO que están registrados en **HKEY_LOCAL_MACHINE**, los equipos deben tener instalado el paquete de actualización 976477. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
-
 ### <a name="deployment-type"></a>Tipo de implementación
  Si usa ClickOnce para implementar un complemento de VSTO, el complemento de VSTO se puede registrar únicamente para el usuario actual. Esto se debe a que ClickOnce solo admite la creación de claves en **HKEY_CURRENT_USER**. Si desea registrar un complemento de VSTO para todos los usuarios de un equipo, debe usar Windows Installer para implementarlo. Para obtener más información sobre estos tipos de implementación, vea [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Entradas del registro
- Las entradas necesarias del registro del complemento de VSTO se encuentran en la siguiente clave del registro para todas las aplicaciones excepto Visio, donde la *raíz* es **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE**.
+ Las entradas necesarias del registro del complemento de VSTO se encuentran en las siguientes claves del registro, donde la *raíz* es **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE** en función de si la instalación es para el usuario actual o para todos los usuarios.
 
- **Todas las aplicaciones excepto Visio**
+|Aplicación de Office|Ruta de acceso de configuración|
+|------------------|------------------|
+|Visio|\Software\Microsoft *raíz*\\*Visio*\Addins\\*identificador de complemento*|
+|Todas las demás|*Raíz*\Software\Microsoft\Office\\*nombre de aplicación de Office*\Addins\\*identificador de complemento*|
 
-|Versión de Office|Ruta de acceso de configuración|
-|--------------------|------------------------|
-|32 bits|*Raíz*\Software\Microsoft\Office\\*nombre de aplicación*\Addins\\*identificador de complemento*|
-|64 bits|*Raíz*\Software\Wow6432Node\Microsoft\Office\\*nombre de aplicación*\Addins\\*identificador de complemento*|
-
- **Visio**
-
-|Versión de Office|Ruta de acceso de configuración|
-|--------------------|------------------------|
-|32 bits|*Identificador de complemento de*\\*raíz*\Software\Microsoft\Visio\Addins|
-|64 bits|*Identificador de complemento de*\\*raíz*\Software\Wow6432Node\Visio\Addins|
+> [!NOTE]
+> Si el instalador está destinado a todos los usuarios de Windows de 64 bits, se recomienda que incluya dos entradas del registro, una en el HKEY_LOCAL_MACHINE \Software\Microsoft y otra en la HKEY_LOCAL_MACHINE \Software\\**WOW6432Node**\Microsoft Hive. Esto se debe a que los usuarios pueden usar versiones de Office de 32 bits o de 64 bits en el equipo.
+>
+>Si el instalador tiene como destino el usuario actual, no es necesario instalarlo en WOW6432Node porque la ruta de acceso HKEY_CURRENT_USER \Software está compartida.
+>
+>Para obtener más información, vea [datos de aplicación de 32 bits y de 64 bits en el registro](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  En la tabla siguiente se enumeran las entradas que figuran en esta clave del Registro.
 
-|Entrada|Type|Valor|
+|Entrada|Tipo de|{2&gt;Value&lt;2}|
 |-----------|----------|-----------|
-|**Descripción**|REG_SZ|Requerido. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|
-|**FriendlyName**|REG_SZ|Requerido. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|
-|**LoadBehavior**|REG_DWORD|Requerido. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [valores de LoadBehavior](#LoadBehavior). **Nota:**  Si un usuario deshabilita el complemento de VSTO, esa acción modifica el valor **LoadBehavior** en el subárbol del registro **HKEY_CURRENT_USER** . Para cada usuario, el valor del valor **LoadBehavior** en el subárbol HKEY_CURRENT_USER invalida el **LoadBehavior** predeterminado definido en el subárbol **HKEY_LOCAL_MACHINE** .|
-|**Manifiesto**|REG_SZ|Requerido. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe anexar la cadena  **&#124;vstolocal** (es decir, el carácter **&#124;** de barra vertical seguido de **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, vea [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio anexa automáticamente la  **&#124;cadena vstolocal** a esta entrada del registro.|
+|**Descripción**|REG_SZ|Obligatoria. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|
+|**FriendlyName**|REG_SZ|Obligatoria. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|
+|**LoadBehavior**|REG_DWORD|Obligatoria. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [valores de LoadBehavior](#LoadBehavior). **Nota:**  Si un usuario deshabilita el complemento de VSTO, esa acción modifica el valor **LoadBehavior** en el subárbol del registro de **HKEY_CURRENT_USER** . Para cada usuario, el valor del valor **LoadBehavior** en el HKEY_CURRENT_USER Hive invalida el valor de **LoadBehavior** predeterminado definido en el subárbol **HKEY_LOCAL_MACHINE** .|
+|**Manifiesto**|REG_SZ|Obligatoria. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe anexar la cadena  **&#124;vstolocal** (es decir, el carácter **&#124;** de barra vertical seguido de **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, vea [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:**  Al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio anexa automáticamente la  **&#124;cadena vstolocal** a esta entrada del registro.|
 
 ### <a name="OutlookEntries"></a>Entradas del registro para las áreas de formulario de Outlook
  Si crea un área del formulario personalizada en un complemento de VSTO para Outlook, se usarán entradas del registro adicionales para registrar dicha área en Outlook. Estas entradas se crean en una clave del Registro diferente para cada clase de mensaje que sea compatible con el área del formulario. Estas claves del registro se encuentran en la siguiente ubicación, donde *raíz* es **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE**.
