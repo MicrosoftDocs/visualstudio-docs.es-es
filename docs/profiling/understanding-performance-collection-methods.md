@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821240"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778094"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 
@@ -25,7 +26,7 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Método|Descripción|
+|Método|DESCRIPCIÓN|
 |------------|-----------------|
 |[Muestreo](#sampling)|Recopila datos estadísticos sobre el trabajo realizado por una aplicación.|
 |[Instrumentación](#instrumentation)|Recopila información de tiempo detallada sobre cada llamada a una función.|
@@ -121,7 +122,7 @@ La generación de perfiles de memoria de .NET se puede utilizar en el modo de mu
 
 La generación de perfiles de interacción de capas agrega información a un archivo de datos de generación de perfiles sobre llamadas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] sincrónicas entre una página de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] u otra aplicación y una base de datos de [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. Los datos incluyen el número y tiempo de llamadas y los tiempos máximo y mínimo. Los datos de interacción de capas se pueden agregar a los datos de generación de perfiles recopilados con los métodos de muestreo, instrumentación, memoria de .NET o simultaneidad.
 
-![Datos de generación de perfiles de interacción de capas](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Datos de perfiles de interacción de capas](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Datos de interacción de capas recopilados por las Herramientas de generación de perfiles
 

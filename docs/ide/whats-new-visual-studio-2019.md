@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211335"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777923"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
-**Actualizado para la [versión 16.3](/visualstudio/releases/2019/release-notes/)**
+**Actualizado para la [versión 16.4](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -108,9 +108,9 @@ Para obtener más información, consulte la entrada de blog [Better multi-monito
 
    ![Captura de pantalla que muestra las mejoras de la interfaz de usuario en el Explorador de pruebas](media/vs-2019/test-explorer-ui.png)
 
-### <a name="net-core"></a>Núcleo de .NET
+### <a name="net-core"></a>.NET Core
 
-**Novedades en 16.3**: hemos incluido compatibilidad con .NET Core 3.0, de código abierto, multiplataforma y totalmente compatible con Microsoft. 
+**Novedades en 16.3**: hemos incluido compatibilidad con .NET Core 3.0, de código abierto, multiplataforma y totalmente compatible con Microsoft.
 
 Para obtener más información, consulte la entrada de blog [Anuncio de .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/).
 
@@ -195,6 +195,12 @@ Para más información, vea la página [Depuración de aplicaciones de Azure de 
 **Novedades de la versión 16.2**: Puede establecer un punto de interrupción en una aplicación de JavaScript e iniciar una sesión de depuración mediante el explorador [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Al hacerlo, Visual Studio abre una nueva ventana del explorador con la depuración habilitada, que puede usar para recorrer el código JavaScript de la aplicación en Visual Studio.
 
    ![Captura de pantalla que muestra la representación de código JavaScript en un explorador](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Herramienta para anclar propiedades
+
+**Novedades en 16.4**: Ahora, es más fácil identificar objetos por sus propiedades durante la depuración con la nueva herramienta para anclar propiedades. Simplemente mantenga el cursor sobre la propiedad que desea mostrar en la ventana del depurador de las ventanas Inspección, Automático y Variables locales, haga clic en el icono de anclaje y vea inmediatamente la información que busca en la parte superior de la ventana.
+
+   ![Animación que muestra cómo anclar propiedades en el depurador de Visual Studio mediante la herramienta para anclar propiedades](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>Pasos adicionales
 

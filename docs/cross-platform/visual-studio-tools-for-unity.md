@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777694"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797139"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 
@@ -47,6 +47,12 @@ Visual Studio Tools para Unity admite las sólidas características de [depuraci
 * Evalúe las expresiones complejas en la ventana Inspección.
 * Inspeccione y modifique el valor de variables y argumentos.
 * Profundice en complejas estructuras de datos y objetos.
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnósticos de Roslyn y correcciones rápidas para Unity
+
+Escriba un código mejor que capture los procedimientos recomendados con el conocimiento profundo de Visual Studio de los proyectos de Unity.
+
+![Comparación de cadenas de refactorización de Visual Studio con CompareTag](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

@@ -3,14 +3,14 @@ title: Visual Studio for Mac Tools for Unity
 description: Introducción a la extensión de Visual Studio Tools para Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691869"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797247"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
@@ -47,6 +47,12 @@ Visual Studio for Mac Tools for Unity es compatible con todas las característic
 ### <a name="powerful-refactoring-and-context-actions"></a>Eficaces acciones de refactorización y contexto
 
 Escriba código más útil con menús rápidos y métodos abreviados de teclado para [acciones de contexto, refactorización y cambio de nombre](refactoring.md).
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnósticos de Roslyn y correcciones rápidas para Unity
+
+Escriba un código mejor que capture los procedimientos recomendados con el conocimiento profundo de Visual Studio para Mac de los proyectos de Unity. 
+
+![Comparación de cadenas de refactorización de Visual Studio para Mac con CompareTag](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>Examen y adición de nuevos archivos
 

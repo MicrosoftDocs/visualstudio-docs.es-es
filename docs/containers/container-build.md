@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549954"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706795"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Compilación y depuración de aplicaciones en contenedores con Visual Studio o la línea de comandos
+# <a name="how-visual-studio-builds-containerized-apps"></a>Compilación de aplicaciones en contenedores con Visual Studio
 
-Tanto si va a compilar desde el IDE de Visual Studio como si va a configurar una compilación de línea de comandos, debe conocer la forma en que las compilaciones de Visual Studio usan el archivo Dockerfile para compilar los proyectos.  Por motivos de rendimiento, Visual Studio sigue un proceso especial para las aplicaciones en contenedores. Entender cómo Visual Studio compila los proyectos es particularmente importante al personalizar el proceso de compilación modificando el archivo Dockerfile.
+Tanto si va a compilar desde el IDE de Visual Studio como si va a configurar una compilación de línea de comandos, debe conocer la forma en que Visual Studio usa el archivo Dockerfile para compilar los proyectos.  Por motivos de rendimiento, Visual Studio sigue un proceso especial para las aplicaciones en contenedores. Entender cómo Visual Studio compila los proyectos es particularmente importante al personalizar el proceso de compilación modificando el archivo Dockerfile.
 
 Cuando Visual Studio compila un proyecto que no usa contenedores de Docker, invoca a MSBuild en el equipo local y genera los archivos de salida en una carpeta (normalmente `bin`) dentro de la carpeta de local de la solución. Sin embargo, en un proyecto en contenedores el proceso de compilación tiene en cuenta las instrucciones del archivo Dockerfile para compilar la aplicación en contenedores. El archivo Dockerfile que usa Visual Studio se divide en varias fases. Este proceso se basa en la característica de *compilación de varias fases* de Docker.
 
@@ -99,7 +99,7 @@ La *preparación del proyecto* se refiere a una serie de pasos que se producen c
 - Extraer las imágenes de la primera fase del Dockerfile (la fase `base` en la mayoría de Dockerfiles).  
 - Compilar el Dockerfile e iniciar el contenedor.
 
-La preparación solo se produce en el modo **Rápido**, por lo que el contenedor en ejecución tiene el volumen de la carpeta de la aplicación montado y cualquier cambio en la aplicación no debe invalidar el contenedor. Esto mejora considerablemente el rendimiento de depuración y reduce el tiempo de espera de las tareas de larga duración, como la extracción de imágenes de gran tamaño.
+La preparación solo se produce en el modo **Rápido**, por lo que el contenedor en ejecución tiene el volumen de la carpeta de la aplicación montado. Esto significa que cualquier cambio en la aplicación no debe invalidar el contenedor. Esto mejora considerablemente el rendimiento de depuración y reduce el tiempo de espera de las tareas de larga duración, como la extracción de imágenes de gran tamaño.
 
 ## <a name="volume-mapping"></a>Asignación de volúmenes
 

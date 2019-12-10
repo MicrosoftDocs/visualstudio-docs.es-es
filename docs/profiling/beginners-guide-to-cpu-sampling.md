@@ -13,14 +13,15 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128217"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779810"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar datos de **muestreo**.

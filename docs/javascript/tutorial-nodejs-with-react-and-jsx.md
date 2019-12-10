@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636554"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777951"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -400,6 +400,10 @@ Para este escenario, use Chrome.
    Otras instancias del explorador pueden impedir que el explorador se abra con la depuración habilitada. (Puede que las extensiones de explorador estén en ejecución e impidan el modo de depuración completa, por lo que es posible que tenga que abrir el Administrador de tareas para encontrar instancias inesperadas de Chrome).
 
    ::: moniker range=">=vs-2019"
+   En el caso de Microsoft Edge (Chromium), cierre también todas las instancias de Chrome. Como los dos exploradores comparten el código base de Chromium, se obtiene el mejor resultado.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    En el caso de Microsoft Edge (Chromium), cierre también todas las instancias de Chrome. Como los dos exploradores usan el código base de chromium, se obtiene el mejor resultado.
    ::: moniker-end
 
@@ -513,7 +517,6 @@ Para este escenario, use Chrome.
       * Ha cerrado todas las instancias del explorador, incluidas las extensiones de Chrome (mediante el Administrador de tareas), para que pueda ejecutar el explorador en modo de depuración. Asegúrese de iniciar el explorador en modo de depuración.
 
       * Asegúrese de que el archivo de mapa de origen incluye una referencia a *./app.tsx* y no a *webpack:///./app.tsx*, lo que impide que el depurador de Visual Studio encuentre *app.tsx*.
-
        Como alternativa, si tiene que interrumpir el código en un archivo *app.tsx* y no puede hacerlo, intente usar la instrucción `debugger;` de *app.tsx* o, en su lugar, establezca puntos de interrupción en las herramientas de desarrollo de Chrome (o las Herramientas de F12 para Microsoft Edge).
 
    * Si tiene que interrumpir el código en *app-bundle.js* y no puede hacerlo, quite el archivo de mapa de origen, *app-bundle.js.map*.
