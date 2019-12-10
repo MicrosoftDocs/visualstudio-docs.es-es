@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706782"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="4420"></a>4.4.2.0
+
+Fecha de publicación: 3 de diciembre de 2019
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Diagnósticos corregidos con interfaces definidas por el usuario.
+
+  - Información sobre herramientas rápida corregida con expresiones con formato incorrecto.
+
+## <a name="4410"></a>4.4.1.0
+
+Fecha de publicación: 6 de noviembre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado compatibilidad con los procesos en segundo plano de Unity. (El depurador puede conectarse automáticamente al proceso principal en lugar de a un proceso secundario).
+  
+  - Se ha agregado una información sobre herramientas rápida para mensajes de Unity que muestran la documentación asociada.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se ha corregido el analizador de comparación de etiquetas `UNT0002` con expresiones binarias y de invocación avanzadas.
+
+### <a name="deprecated-features"></a>Características en desuso
+
+- **Integración:**
+
+  - A partir de ahora, Visual Studio Tools para Unity solo admitirá Visual Studio 2017+.
+
+## <a name="4400"></a>4.4.0.0
+
+Fecha de publicación: 15 de octubre de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se ha agregado un supresor para `IDE0060` (parámetro sin usar) para todos los mensajes de Unity.
+  
+  - Se ha agregado una información sobre herramientas rápida para los campos etiquetados con `TooltipAttribute`. (Esto funcionará para un descriptor de acceso get sencillo mediante este campo también).
 
 ## <a name="4330"></a>4.3.3.0
 

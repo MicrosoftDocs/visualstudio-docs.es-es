@@ -1,18 +1,18 @@
 ---
 title: Configuración de pruebas unitarias con un archivo .runsettings
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665141"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771516"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -38,11 +38,52 @@ El archivo aparece en el menú Configuración de pruebas, y puede seleccionarlo 
 
 ::: moniker range=">=vs-2019"
 
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019, versión 16.3 y anteriores
+
 Para especificar un archivo de parámetros de ejecución en el IDE, seleccione **Prueba** > **Seleccionar archivo de configuración**. Busque y seleccione el archivo *.runsettings*.
 
 ![Selección del menú del archivo de configuración de pruebas en Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
 El archivo aparece en el menú Prueba, y puede seleccionarlo o anular su selección. Mientras está seleccionado, el archivo de parámetros de ejecución se aplica siempre que seleccione **Analizar cobertura de código**.
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019, versión 16.4 y posteriores
+
+Hay tres formas de especificar un archivo de parámetros de ejecución en la versión 16.4 de Visual Studio 2019 y versiones posteriores:
+
+- Agregue una propiedad de compilación a un proyecto mediante el archivo de proyecto o un archivo Directory.Build.props. El archivo de parámetros de ejecución de un proyecto se especifica mediante la propiedad **RunSettingsFilePath**. 
+
+    - Los parámetros de ejecución de nivel de proyecto se admiten actualmente en proyectos C#, VB, C++ y F#.
+    - Un archivo especificado para un proyecto invalida cualquier otro archivo de parámetros de ejecución especificado en la solución.
+
+    Ejemplo de cómo especificar un archivo *.runsettings* para un proyecto:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- Coloque un archivo de parámetros de ejecución denominado ".runsettings" en la raíz de la solución.
+
+  Si está habilitada la detección automática de archivos de parámetros de ejecución, la configuración de este archivo se aplica a todas las pruebas ejecutadas. Puede activar la detección automática de archivos runsettings desde dos lugares:
+  
+    - **Tools** > **Options** > **Test** > **Auto Detect runsettings Files** (Herramientas > Opciones > Probar > Detectar archivos runsettings automáticamente)
+
+      ![Opción Auto Detect runsettings File (Detectar archivos runsettings automáticamente) en Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **Test** > **Configure Run Settings** > **Auto Detect runsettings Files** (Probar > Configurar parámetros de ejecución > Detectar archivos runsettings automáticamente)
+    
+      ![Menú Auto Detect runsettings Files (Detectar archivos runsettings automáticamente) en Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- En el IDE, seleccione **Test** > **Configure Run Settings** > **Select Solution Wide runsettings File** (Probar > Configurar parámetros de ejecución > Seleccionar archivo runsettings en toda la solución) y, después, seleccione el archivo *.runsettings*.
+
+   ![Menú Select Solution Wide runsettings File (Seleccionar archivo runsettings en toda la solución) de prueba en Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+      
+   - Este archivo invalida el archivo ".runsettings" en la raíz de la solución, si existe, y se aplica en todas las pruebas ejecutadas.  
+   - Esta selección del archivo solo se conserva localmente. 
 
 ::: moniker-end
 

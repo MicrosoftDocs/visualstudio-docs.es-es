@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604712"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797373"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
@@ -41,7 +41,8 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
    > [!div class="mx-imgBorder"]
    > ![Elección del botón Agregar](media/add-button.png)
 
-4. Después de agregar el suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento si selecciona el suscriptor y hace clic en el botón **Reenviar** en el menú superior.
+## <a name="resend-assignment-emails"></a>Reenvío de correos electrónicos de asignación
+Después de agregar un suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento si selecciona el suscriptor y hace clic en el botón **Reenviar** en el menú superior.  Para reenviar correos electrónicos a varios usuarios, mantenga presionada la tecla **Ctrl** mientras selecciona los suscriptores.  Al hacer clic en el botón **Reenviar**, verá un cuadro de diálogo que le pedirá que confirme que desea volver a enviar a los suscriptores.  
 
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Tiene que agregar muchos usuarios?  Aprenda a asignar suscripciones a [varios suscriptores](assign-license-bulk.md).

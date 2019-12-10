@@ -7,14 +7,15 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 023681b263e6e70048ec7d82d2cee741672989ff
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979915"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773947"
 ---
 # <a name="set-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 
@@ -39,7 +40,7 @@ El método de recolección base se establece mediante la selección de una opci�
 
  Al comenzar a generar perfiles de una aplicación, aparece una página de la sesión de generación de perfiles en la que se puede pausar, reanudar y detener la generación de perfiles.
 
- ![Página de la sesión de generación de perfiles](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![Página de sesión de generación de perfiles](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 ## <a name="set-profiling-data-file-options"></a>Establecimiento de opciones del archivo de datos de generación de perfiles
 
