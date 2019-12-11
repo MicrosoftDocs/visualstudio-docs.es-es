@@ -5,16 +5,16 @@ brand: visual-studio
 metadata:
   title: Documentación de Visual Studio para Mac | Microsoft Docs
   description: En este artículo se presentan las características de Visual Studio para Mac.
-  author: asb3993
-  ms.author: amburns
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: a5fbbf15cc9d753ef5c47a584ac25a9ca7ef7ca8
-  ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+  ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
+  ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74829961"
+  ms.lasthandoff: 12/10/2019
+  ms.locfileid: "74985047"
 highlightedContent:
   items:
   - title: Instalación de Visual Studio para Mac

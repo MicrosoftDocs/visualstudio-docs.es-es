@@ -1,16 +1,16 @@
 ---
 title: Compilar y generar
 description: En este artículo se explica cómo compilar y generar proyectos y soluciones en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0165594b4c2d77005c2a9ef921cce457f6f2d0f6
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933079"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983607"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilar y generar en Visual Studio para Mac
 

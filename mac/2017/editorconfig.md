@@ -1,17 +1,17 @@
 ---
 title: EditorConfig
 description: Utilizar un archivo de editorconfig para permitir estilos de codificación de proyectos coherente en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8132a7f92986b853ffc2b20b93d0db34f7ac1880
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: be8f508a0055d4cd7cbacf1c728e6d73c8b281f7
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715895"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984721"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 

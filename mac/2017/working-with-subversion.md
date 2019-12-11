@@ -1,16 +1,16 @@
 ---
 title: Trabajar con Subversion
 description: Empleo de Subversion en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985549"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983523"
 ---
 # <a name="working-with-subversion"></a>Trabajar con Subversion
 

@@ -3,14 +3,14 @@ title: Métodos abreviados de teclado predeterminados
 description: En este artículo se muestran los métodos abreviados de teclado predeterminados de Visual Studio para Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: crdun
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872244"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983627"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 

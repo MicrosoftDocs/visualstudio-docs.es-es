@@ -1,16 +1,16 @@
 ---
 title: Acciones de compilación
 description: En este artículo se describen las diversas acciones de compilación que se pueden realizar para los proyectos de C#
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: d55ab6aea15dbad7f1cbd718136fba261dfa1c69
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715853"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983248"
 ---
 # <a name="build-actions"></a>Acciones de compilación
 
