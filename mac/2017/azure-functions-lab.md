@@ -1,17 +1,17 @@
 ---
 title: 'Tutorial: Comprobación de'
 description: Uso de Azure Functions en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 43720947d36fec1ee64c81a48f7bc3eb7466d034
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108009"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983365"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 

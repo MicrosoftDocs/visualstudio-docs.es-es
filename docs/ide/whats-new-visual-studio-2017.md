@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189605"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955041"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -332,7 +332,7 @@ Incluido con todas las ediciones de Visual Studio 2017:
 
 Para más información, consulte la entrada de blog [Redgate Data Tools en Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/).
 
-### <a name="net-core"></a>Núcleo de .NET
+### <a name="net-core"></a>.NET Core
 
 .NET Core es una implementación de .NET Standard para uso general, modular, multiplataforma y de código abierto, y contiene muchas de las mismas API que .NET Framework.
 
@@ -389,6 +389,6 @@ A veces, un mensaje no es suficiente para transmitir el impacto completo de un p
 * [Novedades de Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
-* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novedades de Team Foundation Server](/azure/devops/server/whats-new)
 * [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novedades de Visual Studio 2019](whats-new-visual-studio-2019.md)

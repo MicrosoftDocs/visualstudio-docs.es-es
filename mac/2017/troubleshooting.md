@@ -2,16 +2,16 @@
 title: Solucionar problemas
 description: Problemas comunes y soluciones para usuarios de Visual Studio para Mac.
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987000"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985162"
 ---
 # <a name="troubleshooting"></a>Solución de problemas
 

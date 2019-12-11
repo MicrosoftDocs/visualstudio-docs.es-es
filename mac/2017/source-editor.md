@@ -1,16 +1,16 @@
 ---
 title: Editor de código fuente
 description: Empleo del editor de código fuente de Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987658"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985210"
 ---
 # <a name="source-editor"></a>Editor de código fuente
 

@@ -8,14 +8,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951122"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853521"
 ---
-# <a name="overview-suggest-a-feature"></a>Información general: Sugerencia de una característica
+# <a name="suggest-a-feature-for-visual-studio"></a>Sugerir una característica para Visual Studio
 
 Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
 

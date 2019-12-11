@@ -1,16 +1,16 @@
 ---
 title: Administración de recursos de aplicación
 description: Este artículo contiene vínculos a diversas guías que describen cómo administrar los recursos de las aplicaciones para una amplia variedad de plataformas en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997183"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985277"
 ---
 # <a name="managing-app-resources"></a>Administración de recursos de aplicación
 

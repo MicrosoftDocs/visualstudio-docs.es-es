@@ -2,15 +2,15 @@
 title: Uso de VoiceOver con Visual Studio para Mac
 description: Uso de la navegación con VoiceOver de macOS con Visual Studio para Mac
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
-ms.openlocfilehash: 0645d0f00445c70d8d6b768063b3e9be219a0a83
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71275248"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985067"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Uso de VoiceOver con Visual Studio para Mac
 
