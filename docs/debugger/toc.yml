@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: Solución de problemas de puntos de interrupción
           href: troubleshooting-breakpoints.md
+        - name: 'Solución de problemas de puntos de interrupción de datos de C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Inspección de datos
       items:
         - name: Inspección de datos en ventanas del depurador
