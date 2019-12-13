@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188998"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829991"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -132,6 +132,8 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
    ![Ventana de código en la que se muestra el código de Cómo te llamas](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. Use el botón verde **Inicio** o presione **F5** para compilar y ejecutar la primera aplicación.
+
 1. Cuando se abra la ventana de consola, escriba su nombre. La ventana de consola debe ser similar a la captura de pantalla siguiente:
 
    ![Ventana de consola en la que se muestra What Is Your Name (Cómo te llamas), la fecha y hora, y el mensaje Press any key to continue (Presione cualquier tecla para continuar)](media/vb-console-what-name.png)
@@ -156,6 +158,8 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
     Este código reemplaza las instrucciones <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> y <xref:System.Console.ReadKey%2A> existentes.
 
    ![Ventana de código en la que se muestra el código de Cómo te llamas](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Use el botón verde **Inicio** o presione **F5** para compilar y ejecutar la primera aplicación.
 
 1. Cuando se abra la ventana de consola, escriba su nombre. La ventana de consola debe ser similar a la captura de pantalla siguiente:
 

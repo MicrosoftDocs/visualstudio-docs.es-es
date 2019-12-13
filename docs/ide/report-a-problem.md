@@ -1,5 +1,5 @@
 ---
-title: Notificar un problema
+title: 'Notificación de un problema: estados y preguntas frecuentes'
 description: Proporciona información general sobre la herramienta Notificar un problema e incluye definiciones y estados de problemas
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925984"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853508"
 ---
-# <a name="overview-report-a-problem"></a>Información general: Notificar un problema
+# <a name="report-a-problem-states-and-faq"></a>Notificación de un problema: estados y preguntas frecuentes
 
 La herramienta Notificar un problema permite a la Comunidad de desarrolladores de Visual Studio enviar problemas. Cada uno de sus informes de problemas se convierte en un elemento de trabajo en nuestro sistema de ingeniería principal, lo que le permite interactuar directamente con nuestros equipos de producto para ayudarnos a identificar y resolver problemas de gran impacto. Los comentarios enviados con información de diagnóstico muy completa son fundamentales para mejorar la familia de productos de Visual Studio. Agradecemos que dedique tiempo a notificar los problemas.
 

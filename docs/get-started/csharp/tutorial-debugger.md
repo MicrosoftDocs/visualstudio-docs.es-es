@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98238aeee0662f61e8edc3b1f155dafd09e2301a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 1c7237d8d8bf66273078049a41a3193af0026792
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180453"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830022"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
@@ -68,7 +68,7 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
 1. Abra Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Framework]). En el cuadro de diálogo que se abre, escriba un nombre como **get-started-debugging** y luego elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y, luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Core]) o **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Framework]). En el cuadro de diálogo que se abre, escriba un nombre como **get-started-debugging** y luego elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** . Luego, escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
@@ -78,14 +78,11 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
 
     Visual Studio crea el proyecto.
 
-1. En *Program.cs*, reemplace el código siguiente
+1. En *Program.cs*, reemplace todo el código predeterminado
 
     ```csharp
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    // ...
 
     namespace get_started_debugging
     {
@@ -185,7 +182,7 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
 
 ## <a name="start-the-debugger"></a>Inicio del depurador
 
-1. Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../../debugger/media/dbg-tour-start-debugging.png "Start Debugging") en la barra de herramientas de depuración.
+1. Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas de depuración.
 
      Al pulsar **F5**, la aplicación se inicia con el depurador activado para analizar los procesos. Como de momento no hemos hecho nada especial para examinar el código, la aplicación solo se carga y se muestra la salida de la consola.
 
@@ -200,7 +197,7 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
 
      En este tutorial, analizaremos con más profundidad el uso de esta aplicación junto con el depurador y veremos las características del depurador.
 
-2. Para detener el depurador, presione el botón de detención rojo ![Detener depuración](../../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging").
+2. Para detener el depurador, presione el botón de detención rojo ![Detener depuración](../../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración").
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
@@ -212,7 +209,7 @@ Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, vaya a **
 
     Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
-2. Presione **F5** o el botón **Iniciar depuración** ![Iniciar depuración](../../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración"). La aplicación se iniciará y el depurador se ejecutará en la línea de código en la que haya establecido el punto de interrupción.
+2. Presione **F5** o el botón **Iniciar depuración** ![Iniciar depuración](../../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración"). La aplicación se inicia y el depurador se ejecuta en la línea de código en la que haya establecido el punto de interrupción.
 
     ![Establecimiento y uso de los puntos de interrupción](../csharp/media/get-started-set-breakpoint.gif)
 
@@ -228,13 +225,13 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
 1. Mientras esté en pausa en la llamada de método `shape.Draw` en el método `Main`, presione **F11**, o bien elija **Depurar > Depurar paso a paso por instrucciones**, para avanzar en el código de la clase `Rectangle`.
 
-     ![Uso de F11 para depurar código paso a paso por instrucciones](../csharp/media/get-started-f11.png "Depurar paso a paso por instrucciones con F11")
+     ![Uso de F11 para depurar código paso a paso por instrucciones](../csharp/media/get-started-f11.png "Paso a paso por instrucciones F11")
 
      F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. F11 es una buena forma de examinar el flujo de ejecución con más detalle. Más adelante le mostraremos otras opciones para moverse más rápido por el código. De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../../debugger/just-my-code.md)).
 
 2. Presione varias veces **F10**, o bien elija **Depurar > Depurar paso a paso por procedimientos**, hasta que el depurador se detenga en la llamada de método `base.Draw` y, después, vuelva a presionar **F10**.
 
-     ![Uso de F10 para saltar código](../csharp/media/get-started-step-over.png "Saltar con F10")
+     ![Uso de F10 para depurar código paso a paso por procedimientos](../csharp/media/get-started-step-over.png "Paso a paso por procedimientos F10")
 
      En este caso, tenga en cuenta que el depurador no depura el método `Draw` de la clase base (`Shape`) paso a paso por instrucciones. **F10** hace avanzar el depurador sin depurar las funciones o los métodos en el código de la aplicación paso a paso por instrucciones (el código todavía se ejecuta). Al presionar **F10** en la llamada de método `base.Draw` (en vez de **F11**), se omite el código de implementación de `base.Draw` (algo que quizás no nos interese en este momento).
 
@@ -242,7 +239,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
 1. En el editor de código, desplácese hacia abajo y mantenga el puntero sobre el método `Console.WriteLine` de la clase `Triangle` hasta que aparezca el botón verde **Ejecutar hasta clic** ![Ejecutar hasta clic](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") a la izquierda. La información sobre herramientas del botón muestra "Ejecutar hasta aquí".
 
-     ![Uso de la característica Ejecutar hasta clic](../csharp/media/get-started-run-to-click.png "Ejecutar hasta clic")
+     ![Uso de la característica Ejecutar hasta clic](../csharp/media/get-started-run-to-click.png "Icono para ejecutar hasta la línea")
 
    > [!NOTE]
    > El botón **Ejecutar hasta clic** es una novedad de [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Si no ve el botón con la flecha verde, use **F11** en este ejemplo para hacer avanzar el depurador hasta el lugar correcto.
@@ -251,7 +248,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
     Usar este botón es similar a establecer un punto de interrupción temporal. La característica **Ejecutar hasta clic** es útil para desplazarse rápidamente por un área visible del código de la aplicación (puede hacer clic en cualquier archivo abierto).
 
-    El depurador avanzará hasta la implementación del método `Console.WriteLine` de la clase `Triangle`.
+    El depurador avanzará hasta la implementación del método `Console.WriteLine` de la clase `Triangle`. (Si el depurador se detiene primero en el punto de interrupción que estableció anteriormente, use **Ejecutar hasta clic** de nuevo para hacer avanzar el depurador hasta `Console.WriteLine`).
 
     Imagine que, mientras está en pausa, detecta una falta de ortografía. O que el texto "Drawing a trangle" está mal escrito. Pues lo podemos corregir aquí directamente mientras la aplicación se ejecuta en el depurador.
 
@@ -272,11 +269,11 @@ Supongamos que ha terminado de examinar el método `Draw` de la clase `Triangle`
 
      Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurador) hasta que se devuelve la función actual.
 
-     Debería volver a estar en el bucle `foreach` del método `Main`.
+     Debería volver a estar en el bucle `foreach` del método `Main`. Si no, presione **Mayús** + **F11** una segunda vez.
 
 ## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../../debugger/media/dbg-tour-restart.png "RestartApp") en la barra de herramientas de depuración (**Ctrl** + **Mayús** + **F5**).
 
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
@@ -294,7 +291,7 @@ Las características que le permiten inspeccionar las variables son una de las m
 
 1. Vuelva a mantener el mouse sobre el objeto de forma y esta vez verá que tiene un objeto nuevo con un tipo `Triangle`.
 
-     ![Ver información sobre datos](../csharp/media/get-started-data-tip.gif "View a Data Tip")
+     ![Visualización de una sugerencia de datos](../csharp/media/get-started-data-tip.gif "Visualización de una sugerencia de datos")
 
     A menudo, al realizar una depuración, queremos una forma rápida de comprobar los valores de las propiedades de las variables para ver si se almacenan los valores correspondientes, y las sugerencias de datos son una buena forma de verlo.
 
@@ -306,7 +303,7 @@ Las características que le permiten inspeccionar las variables son una de las m
 
 1. Expanda el objeto `shapes`.
 
-     ![Inspección de las variables en la ventana Automático](../csharp/media/get-started-autos-window.png "Ventana Automático")
+     ![Inspección de variables en la ventana Automático](../csharp/media/get-started-autos-window.png "Ventana Automático")
 
     En la ventana **Automático** puede ver las variables y su valor actual. En la ventana **Automático** se muestran todas las variables que se usan en la línea actual o en la anterior. Para consultar el comportamiento específico de los lenguajes, vea la documentación.
 
@@ -330,7 +327,7 @@ Las características que le permiten inspeccionar las variables son una de las m
 
 2. Presione **F11** varias veces hasta que vea que el depurador se detenga en el método `Base.Draw` para la clase `Triangle` en el editor de código. Eche un vistazo a la ventana **Pila de llamadas**.
 
-    ![Examinar la pila de llamadas](../csharp/media/get-started-call-stack.png "ExamineCallStack")
+    ![Examen de la pila de llamadas](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
     En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. En la línea superior se muestra la función actual (el método `Triangle.Draw` en esta aplicación). En la segunda línea se mostrará que se ha llamado a `Triangle.Draw` desde el método `Main`, y así sucesivamente.
 

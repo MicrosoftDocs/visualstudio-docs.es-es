@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528539"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903999"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Cómo aumentar la probabilidad de resolución de un problema de rendimiento
 
@@ -116,9 +116,9 @@ Como se ha descrito en la sección correspondiente sobre bloqueos, en el caso de
 **Falta de respuesta desconocida**
 
 Si una falta de respuesta se manifiesta de un modo imprevisible, en la siguiente repetición inicie una nueva instancia de Visual Studio y notifique un problema desde esa instancia.
-En la [pantalla "Grabar"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), asegúrese de seleccionar la sesión de Visual Studio que está bloqueada.
+En la [pantalla "Grabar"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), asegúrese de seleccionar la sesión de Visual Studio que no responde.
 
-Si la instancia de Visual Studio que está bloqueada se ha iniciado en modo de administrador, la segunda instancia también debe iniciarse en modo de administrador.
+Si la instancia de Visual Studio que no responde se ha iniciado en modo de administrador, la segunda instancia también debe iniciarse en este modo.
 
 >[!NOTE] 
 > **Comentarios más valiosos:** en este caso, la información más valiosa es el volcado del montón capturado en el momento de la falta de respuesta.
