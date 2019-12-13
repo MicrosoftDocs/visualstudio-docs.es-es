@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983764"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810043"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -74,6 +74,9 @@ R:  El envío de un incidente de soporte técnico desde Azure Portal es un proce
 3. Envíe un incidente de soporte técnico.
 
 Consulte la documentación de [Soporte técnico](vs-tech-support.md) para obtener información detallada.
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>P: ¿Quién posee la propiedad intelectual que se crea con el crédito individual de Azure DevTest?
+R:  La propiedad intelectual producida por un empleado que se crea sobre los recursos proporcionados por esa empresa es, por tanto, propiedad intelectual de la empresa que proporciona el recurso. Por consiguiente, si ha recibido su suscripción de Visual Studio a través de su empleador, se aplicarán las directivas de propiedad intelectual de este. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: He recibido un mensaje en que se indica que el acceso a Azure terminará pronto.  ¿Qué puedo hacer para seguir usando Azure?
 R:  Recibe este correo electrónico porque utiliza la ventaja de Azure asociada a su suscripción de Visual Studio y dicha suscripción ha expirado o se ha quitado.  Para seguir usando Azure, tiene varias opciones:

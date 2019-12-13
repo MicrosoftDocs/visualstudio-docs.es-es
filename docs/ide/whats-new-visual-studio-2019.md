@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777923"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810119"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -198,7 +198,7 @@ Para más información, vea la página [Depuración de aplicaciones de Azure de 
 
 ### <a name="pinnable-properties-tool"></a>Herramienta para anclar propiedades
 
-**Novedades en 16.4**: Ahora, es más fácil identificar objetos por sus propiedades durante la depuración con la nueva herramienta para anclar propiedades. Simplemente mantenga el cursor sobre la propiedad que desea mostrar en la ventana del depurador de las ventanas Inspección, Automático y Variables locales, haga clic en el icono de anclaje y vea inmediatamente la información que busca en la parte superior de la ventana.
+**Novedades en 16.4**: Ahora, es más fácil identificar objetos por sus propiedades durante la depuración con la nueva herramienta para anclar propiedades. Simplemente mantenga el cursor sobre la propiedad que quiere mostrar en la ventana del depurador de las ventanas Inspección, Automático y Variables locales, seleccione el icono de anclaje y verá inmediatamente la información que busca en la parte superior de la ventana.
 
    ![Animación que muestra cómo anclar propiedades en el depurador de Visual Studio mediante la herramienta para anclar propiedades](media/vs-2019/debugger-pinnable-properties.gif)
 

@@ -1,7 +1,7 @@
 ---
 title: Opciones de comentarios
 description: Nos interesan sus ideas sobre cómo mejorar nuestros productos y nuestra documentación; a continuación le mostramos cómo puede enviarnos comentarios.
-ms.date: 04/25/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.custom: seoapril2019
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919084"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853495"
 ---
 # <a name="visual-studio-feedback-options"></a>Opciones de comentarios de Visual Studio
 
@@ -34,7 +34,7 @@ Si experimenta problemas con Visual Studio &mdash;como bloqueos, rendimiento len
 
 ![Icono Enviar comentarios del IDE de Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
 
-A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+A continuación, Visual Studio abre la interfaz de [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,38 +44,34 @@ Si experimenta problemas con Visual Studio &mdash;como bloqueos, rendimiento len
 
 ![Icono Enviar comentarios del IDE de Visual Studio 2019](./media/send-feedback-icon.png)
 
-A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+A continuación, Visual Studio abre la interfaz de [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para informar del problema. Para más información, vea [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
-## <a name="make-a-suggestion"></a>Hacer una sugerencia
+## <a name="suggest-a-feature"></a>Sugerir una característica
 
 ::: moniker range="vs-2019"
 
-Si hay algo que podamos agregar o mejorar, infórmenos de ello mediante la herramienta **Sugerir una característica**. En Visual Studio, elija el icono de comentarios situado en el extremo superior derecho, o bien elija **Ayuda** > **Enviar comentarios** > **Sugerir una característica** en la barra de menús.
+Si tiene alguna idea o sugerencia para mejorar Visual Studio, puede hacérnosla llegar mediante la herramienta **Sugerir una característica**. En Visual Studio, elija el icono de comentarios situado en el extremo superior derecho, o bien elija **Ayuda** > **Enviar comentarios** > **Sugerir una característica** en la barra de menús.
 
-A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
+A continuación, Visual Studio abre la interfaz [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Si hay algo que podamos agregar o mejorar, infórmenos de ello mediante la herramienta **Proporcionar una sugerencia**. En Visual Studio, haga clic en el icono de comentarios que se encuentra junto al cuadro de búsqueda o elija **Ayuda** > **Enviar comentarios** > **Proporcionar una sugerencia** en la barra de menús.
+Si tiene alguna idea o sugerencia para mejorar Visual Studio, puede hacérnosla llegar mediante la herramienta **Proporcionar una sugerencia**. En Visual Studio, haga clic en el icono de comentarios que se encuentra junto al cuadro de búsqueda o elija **Ayuda** > **Enviar comentarios** > **Proporcionar una sugerencia** en la barra de menús.
 
-A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
+A continuación, Visual Studio abre la página [Developer Community](https://developercommunity.visualstudio.com), donde puede iniciar sesión para compartir su idea. Para más información, consulte [Sugerir una característica para Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
-
-### <a name="rate-this-product"></a>Valorar este producto
-
-Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que las versiones publicadas del producto no tienen. Use el elemento de menú **Valorar este producto** para enviar comentarios sobre la calidad de la compilación de versión preliminar que está ejecutando.
 
 ## <a name="improve-the-documentation"></a>Mejora de la documentación
 
 Existen dos formas de ayudarnos a mejorar la documentación:
 
-* Elija el botón de comentarios **¿Le resultó útil esta página?** ubicado en la parte inferior de la página. Encontrará este botón en todas nuestras páginas de documentación.
-* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](/visualstudio/). Para ello, elija el botón **Enviar comentario sobre**  > **esta página**, que también está situado en la parte inferior de la página.
+* Use la herramienta de respuesta **¿Le ha resultado útil esta página?** que se encuentra en la parte superior derecha de cualquier página de documentación.
+* Use su cuenta de GitHub para proporcionar comentarios sobre cualquier página de Visual Studio en [docs.microsoft.com](/visualstudio/). Para ello, elija el botón **Envíe sus comentarios sobre** > **Esta página**, que también está situado en la parte inferior de cualquier página de documentación.
 
 ## <a name="contact-microsoft-support"></a>Ponerse en contacto con el soporte técnico de Microsoft
 
@@ -94,12 +90,11 @@ Los servicios de soporte técnico de Microsoft están sujetos a los precios, té
 
 Si quiere compartir preguntas y respuestas con otros desarrolladores, le recomendamos que se ponga en contacto con ellos en los sitios de la comunidad que hay a continuación:
 
-* [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) de Visual Studio
 * [Foros de MSDN](https://social.msdn.microsoft.com/Forums/home)
 * Visual Studio en [Reddit](https://www.reddit.com/r/VisualStudio/)
 * [Desbordamiento de pila](https://stackoverflow.com/search?q=visual+studio+-code)
 
-También puede ver el código de otros desarrolladores y compartir sus propios ejemplos en el sitio de [ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/).
+También puede ver el código de otros desarrolladores y compartir sus propios ejemplos en la página [Browse code samples](/samples/browse/) (Examinar ejemplos de código).
 
 ## <a name="see-also"></a>Vea también
 
