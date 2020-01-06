@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648233"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586346"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 Para buscar registros específicos en un conjunto de registros, use el método `FindBy` en DataTable, escriba su propia instrucción foreach para recorrer la colección Rows de la tabla o use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,13 +70,13 @@ En esta página se proporcionan ejemplos de uso de conjuntos de DataSet con tipo
 > [!NOTE]
 > Si está trabajando en una aplicación Windows Forms y usa las características de enlace de datos para mostrar los datos, el formulario generado por el diseñador podría proporcionar la funcionalidad suficiente para la aplicación. Para obtener más información, vea [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En concreto, vea [relaciones en conjuntos de valores](relationships-in-datasets.md).
 
-En los siguientes ejemplos de código se muestra cómo desplazarse por las relaciones hacia arriba y hacia abajo en conjuntos de tipos de DataSet. En los ejemplos de código se usa <xref:System.Data.DataRow>s con tipo (`NorthwindDataSet.OrdersRow`) y los métodos de FindBy*PrimaryKey* (`FindByCustomerID`) generados para buscar una fila deseada y devolver los registros relacionados. Los ejemplos se compilan y ejecutan correctamente solo si tiene:
+En los siguientes ejemplos de código se muestra cómo desplazarse por las relaciones hacia arriba y hacia abajo en conjuntos de tipos de DataSet. En los ejemplos de código se usan <xref:System.Data.DataRow>s con tipo (`NorthwindDataSet.OrdersRow`) y los métodos de FindBy*PrimaryKey* (`FindByCustomerID`) generados para buscar una fila deseada y devolver los registros relacionados. Los ejemplos se compilan y ejecutan correctamente solo si tiene:
 
 - Una instancia de un conjunto de información denominado `NorthwindDataSet` con una tabla de `Customers`.
 
 - Tabla de `Orders`.
 
-- Una relación denominada `FK_Orders_Customers`relating las dos tablas.
+- Una relación llamada `FK_Orders_Customers`relaciona las dos tablas.
 
 Además, ambas tablas deben rellenarse con datos para que se devuelvan los registros.
 

@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586112"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
 Un conjunto de datos con tipo es un conjunto de datos que se deriva primero de la clase base <xref:System.Data.DataSet> y, a continuación, usa información del **Diseñador de DataSet**, que se almacena en un archivo. xsd, para generar una nueva clase de conjunto de datos fuertemente tipado. La información del esquema (tablas, columnas, etc.) se genera y compila en esta nueva clase de conjunto de datos como un conjunto de propiedades y objetos de primera clase. Dado que un conjunto de datos con tipo hereda de la clase <xref:System.Data.DataSet> base, la clase con tipo asume toda la funcionalidad de la clase <xref:System.Data.DataSet> y se puede usar con métodos que toman una instancia de una clase <xref:System.Data.DataSet> como parámetro.

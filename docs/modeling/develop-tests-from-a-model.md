@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e58883e671dea242e0c69aee0ce6cf8b911371
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596663"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.

@@ -3,17 +3,17 @@ title: 'Cómo: Guardar y editar cadenas de conexión'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a78194ae6e4f462ec732e1ae2a1981aa8d857978
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed0f0105383667e1122d6636a3baab3aa925a742
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586463"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedimiento para guardar y editar cadenas de conexión
 Las cadenas de conexión de las aplicaciones de Visual Studio se guardan en el archivo de configuración de la aplicación (también conocido como configuración de la aplicación) o se codifican de forma rígida directamente en la aplicación. Si guarda las cadenas de conexión en el archivo de configuración de la aplicación, se simplifica la tarea de mantenimiento de la aplicación. Si la cadena de conexión debe modificarse, se puede actualizar en el archivo de configuración de la aplicación (cosa que no sucede si hubiera que cambiarla en el código fuente y tener que recompilar la aplicación).
@@ -52,7 +52,7 @@ Puede modificar la información de conexión de cada TableAdapter en un conjunto
 1. En la ventana **propiedades** , expanda el **nodo conexión**.
 1. Para modificar rápidamente la cadena de conexión, edite la propiedad **ConnectionString** o haga clic en la flecha hacia abajo en la propiedad de **conexión** y elija **nueva conexión**.
 
-## <a name="security"></a>Seguridad
+## <a name="security"></a>de seguridad
 Almacenar información confidencial (como una contraseña) en la cadena de conexión puede afectar la seguridad de la aplicación. El uso de la seguridad integrada de Windows es una forma más segura de controlar el acceso a una base de datos.
 Para más información, consulte [Proteger la información de conexión](/dotnet/framework/data/adonet/protecting-connection-information).
 

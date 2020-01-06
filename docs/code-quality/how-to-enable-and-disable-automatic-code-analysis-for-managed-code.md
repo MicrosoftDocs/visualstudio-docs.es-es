@@ -2,15 +2,15 @@
 title: Deshabilitar análisis de código heredado
 ms.date: 10/04/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41d7a598801567809893bfb80e38fee0a1134595
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 42d981505817a4de72ed60b896742d4551ca0ee4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587503"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de código binario para código administrado
 

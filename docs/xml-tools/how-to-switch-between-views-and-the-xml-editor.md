@@ -3,17 +3,17 @@ title: 'Cómo: cambiar entre las vistas y el editor XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601879"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592637"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Cómo: cambiar entre las vistas y el editor XML
 
@@ -33,6 +33,6 @@ En este tema se muestra cómo cambiar entre las vistas del diseñador de esquema
 
 5. Para cambiar a la vista inicio desde la vista modelo de contenido mediante la barra de herramientas, haga clic en el botón **iniciar vista** de la barra de herramientas xsd.
 
-6. Para alternar entre las vistas mediante las teclas de inicio de teclas, presione **ctrl** +**1** para la vista Inicio, **Ctrl** +**2** para la vista gráfico y **Ctrl** +**3** para la vista modelo de contenido.
+6. Para alternar entre las vistas mediante las teclas de inicio de teclas, presione **ctrl**+**1** para la vista Inicio, **Ctrl**+**2** para la vista gráfico y **Ctrl**+**3** para la vista modelo de contenido.
 
 7. Para ir al editor XML desde la vista modelo de contenido, haga clic con el botón secundario en el nodo y seleccione **Ver código** en el menú contextual.

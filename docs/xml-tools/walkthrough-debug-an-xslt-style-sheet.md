@@ -3,17 +3,17 @@ title: Depurar hojas de estilos XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604611"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592482"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: depurar una hoja de estilos XSLT
 
@@ -26,7 +26,7 @@ Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](
 
 ## <a name="start-debugging"></a>Iniciar depuración
 
-1. En el menú **archivo** , elija **abrir** **archivo**de  > .
+1. En el menú **archivo** , elija **abrir** **archivo**de > .
 
 2. Busque el archivo *below-Average. xsl* y elija **abrir**.
 
@@ -44,11 +44,11 @@ Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](
 
    - Haga clic en cualquier parte de la línea 12 y, a continuación, presione **F9**.
 
-   - Haga clic con el botón derecho en la etiqueta de inicio de `xsl:if` y, a continuación, elija **punto de interrupción**  > **Insertar punto de interrupción**.
+   - Haga clic con el botón derecho en la etiqueta de inicio de `xsl:if` y, a continuación, elija **punto de interrupción** > **Insertar punto de interrupción**.
 
       ![Insertar punto de interrupción en un archivo XSL en Visual Studio](media/insert-breakpoint.PNG)
 
-6. En la barra de menús, elija **XML**  > **iniciar depuración de XSLT** (o presione **Alt** +**F5**).
+6. En la barra de menús, elija **XML** > **iniciar depuración de XSLT** (o presione **Alt**+**F5**).
 
    Se inicia el proceso de depuración.
 
@@ -56,11 +56,11 @@ Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](
 
    Las ventanas **automático**, **variables locales**e **inspección 1** aparecen en la parte inferior de la ventana de Visual Studio. La ventana **variables locales** muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.
 
-## <a name="watch-window"></a>Ventana Inspección
+## <a name="watch-window"></a>Ventana de inspección
 
 Vamos a agregar dos variables a la ventana **inspección 1** para que podamos examinar sus valores a medida que se procesa el archivo de entrada. (También puede usar la ventana **variables locales** para examinar los valores si las variables que desea inspeccionar ya están allí).
 
-1. En el menú **depurar** , elija **Windows**  > **Ver**  > **inspección 1**.
+1. En el menú **depurar** , elija **Windows** > **Ver** > **inspección 1**.
 
    La ventana **inspección 1** se vuelve visible.
 
@@ -70,7 +70,7 @@ Vamos a agregar dos variables a la ventana **inspección 1** para que podamos ex
 
 3. En la línea siguiente, escriba `self::node()` en el campo **nombre** y, a continuación, presione **entrar**.
 
-   `self::node()` es una expresión XPath que se evalúa para el nodo de contexto actual. El valor de la expresión XPath `self::node()` es el primer nodo de libro. Esto cambia a medida que progresamos en la transformación.
+   `self::node()` es una expresión XPath que se evalúa como el nodo de contexto actual. El valor de la expresión XPath `self::node()` es el primer nodo de libro. Esto cambia a medida que progresamos en la transformación.
 
 4. Expanda el nodo `self::node()` y, a continuación, expanda el nodo que tiene el valor `price`.
 
@@ -96,11 +96,11 @@ Vamos a agregar dos variables a la ventana **inspección 1** para que podamos ex
 
    Dado que se ha satisfecho la condición de `xsl:if`, el tercer libro se agrega al archivo de salida *below-Average. XML* . Todos los libros del documento XML se han procesado y el depurador se detiene.
 
-## <a name="sample-files"></a>Archivos de ejemplo
+## <a name="sample-files"></a>Archivos de muestra
 
 El tutorial utiliza los dos siguientes archivos de ejemplo.
 
-### <a name="below-averagexsl"></a>below-Average. xsl
+### <a name="below-averagexsl"></a>below-average.xsl
 
 ```xml
 <?xml version='1.0'?>

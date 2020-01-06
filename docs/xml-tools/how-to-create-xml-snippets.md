@@ -3,17 +3,17 @@ title: Crear fragmentos de código XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645935"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592755"
 ---
 # <a name="how-to-create-xml-snippets"></a>Cómo: crear fragmentos de código XML
 
@@ -58,7 +58,7 @@ El editor admite dos tipos de fragmentos:
 
 El tipo de `Expansion` determina si el fragmento de código aparece al invocar el comando **Insertar fragmento** . El tipo de `SurroundsWith` determina si el fragmento de código aparece al invocar el comando **rodear con** .
 
-### <a name="code-element"></a>elemento Code
+### <a name="code-element"></a>elemento de código
 
 El elemento `Code` define el texto XML que se insertará cuando se invoque el fragmento.
 

@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597118"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 
-En la ventana **propiedades** , los cuadros de diálogo o los diseñadores, como el diseñador de variables, al seleccionar **Buscar tipos** en una lista de tipos de datos, es el cuadro de diálogo **examinar y seleccionar un tipo .net** (al que se hace referencia en forma abreviada como "tipo" explorador "). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.
+En la ventana **propiedades** , los cuadros de diálogo o los diseñadores, como el diseñador de variables, al seleccionar **Buscar tipos** en una lista de tipos de datos, es el cuadro de diálogo **examinar y seleccionar un tipo .net** (al que se hace referencia en forma abreviada como "explorador de tipos"). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.
 
 Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual incluye lo siguiente:
 
@@ -39,7 +39,7 @@ Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual inclu
 
 1. En el cuadro **nombre de tipo** , escriba el nombre del tipo que desea utilizar.
 
-2. Realice una de las siguientes acciones:
+2. Siga uno de los procedimientos que se describen a continuación:
 
     - Una vez que el nombre del tipo que desea utilizar aparece en el árbol en el cuadro **nombre de tipo** , haga doble clic en el tipo para seleccionarlo.
 

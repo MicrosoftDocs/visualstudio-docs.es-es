@@ -3,17 +3,17 @@ title: Crear un esquema XML
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592781"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Cómo: crear un esquema XML a partir de un documento XML
 
@@ -33,7 +33,7 @@ Para obtener más información sobre el motor de inferencia de esquema, vea [inf
 
 1. Abra un archivo XML en Visual Studio.
 
-2. En la barra de menús, elija **XML**  > **crear esquema**.
+2. En la barra de menús, elija **XML** > **crear esquema**.
 
    Se crea y se abre un documento de esquema XML para cada espacio de nombres que se encuentra en el archivo XML. Cada esquema se abre como un archivo de varios temporal. Los esquemas se pueden guardar en un disco, agregarse a un proyecto o descartarse.
 

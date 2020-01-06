@@ -3,17 +3,17 @@ title: Caché de esquema del editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668741"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592495"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 
@@ -23,25 +23,25 @@ El editor XML también puede buscar esquemas ubicados en la solución, esquemas 
 
 En la tabla siguiente se describen los esquemas que se instalan con el editor XML.
 
-| Filename | Descripción |
+| Nombre de archivo | Descripción |
 |-| - |
-| *Catalog. xsd* | Esquema para archivos de catálogo de esquema del Editor XML. Para obtener información acerca de los catálogos de esquema, consulte a continuación. |
-| *DotNetConfig. xsd* | Esquema para los archivos Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild. xsd* | Esquema de los archivos make de MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *msdata. xsd* | Esquema para las anotaciones XSD que agrega la clase <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
-| *msxsl. xsd* | Esquema para las extensiones de bloque de script XSLT de Microsoft, urn:schemas-microsoft-com:xslt. |
-| *SnippetFormat. xsd* | Esquema para los archivos XML de fragmento de código. Para obtener ejemplos, vea *% VSInstallDir%VC#\ \Expansions*. |
-| *SOAP 1.1. xsd* | Esquema para el Protocolo simple de acceso a objetos (SOAP) 1,1, http://schemas.xmlsoap.org/soap/envelope/. |
-| *SOAP 1.2. xsd* | Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.2. |
-| *SiteMapSchema. xsd* | Esquema para el archivo XML del mapa del sitio de ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL. xsd* | Esquema para el lenguaje de Descripción del servicio Web, http://schemas.xmlsoap.org/wsdl/. |
-| *xenc. xsd* | Esquema para el cifrado XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML. xsd* | Esquema para http://www.w3.org/1999/xhtml XHTML. |
-| *XLink. xsd* | Esquema de XLink 1.0, http://www.w3.org/1999/xlink. |
-| *XML. xsd* | Esquema que describe los atributos XML: Space y XML: lang http://www.w3.org/XML/1998/namespace. |
-| *xmlsig. xsd* | Esquema para firmas digitales XML, http://www.w3.org/2000/09/xmldsig#. |
-| *xsdschema. xsd* | Esquema que describe el propio XSD, http://www.w3.org/2001/XMLSchema. |
-| *XSLT. xsd* | Esquema para las transformaciones XML, http://www.w3.org/1999/XSL/Transform. |
+| *catalog.xsd* | Esquema para archivos de catálogo de esquema del Editor XML. Para obtener información acerca de los catálogos de esquema, consulte a continuación. |
+| *DotNetConfig.xsd* | Esquema para los archivos Web. config, `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
+| *msbuild.xsd* | Esquema para los archivos make de MSBuild, `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *msdata.xsd* | Esquema para las anotaciones XSD que agrega la clase <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
+| *msxsl.xsd* | Esquema para las extensiones de bloque de script XSLT de Microsoft, urn:schemas-microsoft-com:xslt. |
+| *SnippetFormat.xsd* | Esquema para los archivos XML de fragmento de código. Para obtener ejemplos, vea *% VSInstallDir%VC#\ \Expansions*. |
+| *Soap1.1.xsd* | Esquema para el Protocolo simple de acceso a objetos (SOAP) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
+| *Soap1.2.xsd* | Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.2. |
+| *SiteMapSchema.xsd* | Esquema para el archivo XML del mapa del sitio de ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
+| *wsdl.xsd* | Esquema para el lenguaje de Descripción del servicio Web, `http://schemas.xmlsoap.org/wsdl/`. |
+| *xenc.xsd* | Esquema para el cifrado XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xhtml.xsd* | Esquema para `http://www.w3.org/1999/xhtml`XHTML. |
+| *xlink.xsd* | Esquema de XLink 1.0, `http://www.w3.org/1999/xlink`. |
+| *xml.xsd* | Esquema que describe los atributos XML: Space y XML: lang `http://www.w3.org/XML/1998/namespace`. |
+| *xmlsig.xsd* | Esquema para firmas digitales XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xsdschema.xsd* | Esquema que describe el propio XSD, `http://www.w3.org/2001/XMLSchema`. |
+| *xslt.xsd* | Esquema para las transformaciones XML, `http://www.w3.org/1999/XSL/Transform`. |
 
 ## <a name="update-schemas-in-the-cache"></a>Actualizar esquemas en la memoria caché
 
@@ -64,7 +64,7 @@ El atributo `href` puede ser cualquier ruta de acceso de archivo o dirección UR
 
 - VSInstallDir
 
-- Sistema
+- System
 
 - ProgramFiles
 
@@ -110,7 +110,7 @@ Puede personalizar la ubicación de la caché de esquema mediante la Página opc
 
 ### <a name="to-change-the-schema-cache-location"></a>Para cambiar la ubicación de la caché de esquema
 
-1. En el menú **herramientas** , seleccione **Opciones**.
+1. En el menú **Herramientas** , seleccione **Opciones**.
 
 2. Expanda **Editor de texto**, **XML**y, a continuación, haga clic en **varios**.
 

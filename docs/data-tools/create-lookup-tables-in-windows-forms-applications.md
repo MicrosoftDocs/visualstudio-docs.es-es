@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642242"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586775"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Crear tablas de búsqueda en aplicaciones de Windows Forms
 
@@ -28,7 +28,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 ## <a name="to-databind-a-lookup-control"></a>Para enlazar con datos un control de búsqueda
 
-1. Con el proyecto abierto, abra la **ventana orígenes de datos** eligiendo **Ver**  > **otras ventanas**  > **orígenes de datos**.
+1. Con el proyecto abierto, abra la **ventana orígenes de datos** eligiendo **Ver** > **otras ventanas** > **orígenes de datos**.
 
     > [!NOTE]
     > Las tablas de búsqueda requieren que dos tablas u objetos relacionados estén disponibles en la ventana **Orígenes de datos**. Para obtener más información, vea [relaciones en conjuntos de](relationships-in-datasets.md)datos.
@@ -50,7 +50,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
      En este momento se establecen los enlaces de búsqueda. Consulte en la tabla siguiente las propiedades específicas que se establecieron en el control.
 
-    |Propiedad.|Explicación del parámetro|
+    |La propiedad|Explicación del parámetro|
     |--------------| - |
     |**DataSource**|Visual Studio establece esta propiedad en el elemento <xref:System.Windows.Forms.BindingSource> creado para la tabla que ha arrastrado al control (a diferencia del elemento <xref:System.Windows.Forms.BindingSource> creado al mismo tiempo que el control).<br /><br /> Si necesita efectuar un ajuste, establézcalo en la <xref:System.Windows.Forms.BindingSource> de la tabla con la columna que desea mostrar.|
     |**DisplayMember**|Visual Studio establece esta propiedad en la primera columna tras la clave principal que tiene un tipo de datos String para la tabla que ha arrastrado al control.<br /><br /> Si necesita efectuar un ajuste, establézcalo en el nombre de columna que desea mostrar.|

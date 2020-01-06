@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568840"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587477"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -24,7 +24,7 @@ Puede generar datos de métricas de código de tres maneras:
 
 - Mediante la instalación de [analizadores de FxCop](#fxcop-analyzers-code-metrics-rules) y la habilitación de las cuatro reglas de métricas de código (mantenimiento) que contiene.
 
-- Al elegir el comando de menú [ **analizar**  > **calcular métricas de código** ](#calculate-code-metrics-menu-command) en Visual Studio.
+- Al elegir el comando de menú [ **analizar** > **calcular métricas de código** ](#calculate-code-metrics-menu-command) en Visual Studio.
 
 - Desde la [línea](#command-line-code-metrics) de comandos C# para los proyectos de y Visual Basic.
 
@@ -48,7 +48,7 @@ Estas reglas están deshabilitadas de forma predeterminada, pero se pueden habil
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Configuración
+### <a name="configuration"></a>Configuración de
 
 Puede configurar los umbrales en los que se activan las reglas de métricas de código en el paquete de analizadores de FxCop.
 
@@ -72,13 +72,13 @@ Puede configurar los umbrales en los que se activan las reglas de métricas de c
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando de menú calcular métricas de código
 
-Genere métricas de código para uno o todos los proyectos abiertos en el IDE mediante el menú **analizar**  > **calcular métricas de código** .
+Genere métricas de código para uno o todos los proyectos abiertos en el IDE mediante el menú **analizar** > **calcular métricas de código** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generar resultados de métricas de código para una solución completa
 
 Puede generar resultados de métricas de código para una solución completa de cualquiera de las maneras siguientes:
 
-- En la barra de menús, elija **analizar**  > **calcular métricas de código**  >  para la**solución**.
+- En la barra de menús, elija **analizar** > **calcular métricas de código** > para la **solución**.
 
 - En **Explorador de soluciones**, haga clic con el botón secundario en la solución y elija **calcular métricas de código**.
 
@@ -90,7 +90,7 @@ Los resultados se generan y se muestra la ventana **resultados de métricas de c
 
 1. En **Explorador de soluciones**, seleccione uno o varios proyectos.
 
-1. En la barra de menús, elija **analizar**  > **calcular métricas de código**  >  para los**proyectos seleccionados**.
+1. En la barra de menús, elija **analizar** > **calcular métricas de código** > para los **proyectos seleccionados**.
 
 Los resultados se generan y se muestra la ventana **resultados de métricas de código** . Para ver los detalles de los resultados, expanda el árbol de la **jerarquía**.
 
@@ -265,5 +265,5 @@ Otras métricas como `CyclomaticComplexity` y `MaintainabilityIndex` usan las mi
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar la ventana Resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
+- [Utilice la ventana de resultados de las métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)

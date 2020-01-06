@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648500"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586658"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Los datos de las tablas de datos se modifican de forma muy similar a como se modifican los datos de una tabla en cualquier base de datos. El proceso puede incluir la inserción, actualización y eliminación de registros en la tabla. En un formulario enlazado a datos, puede especificar qué campos son editables por el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan devolver a la base de datos más adelante. Si realiza modificaciones en los datos mediante programación y pretende enviarlos de nuevo a la base de datos, debe utilizar los objetos y métodos que realizan el seguimiento de cambios.
@@ -70,7 +70,7 @@ Cuando se realizan cambios en los registros de un conjunto de datos, se almacena
 
 Se realiza un seguimiento de los cambios de dos maneras en cada fila de datos:
 
-- Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> o <xref:System.Data.DataRowState.Unchanged>).
+- Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>o <xref:System.Data.DataRowState.Unchanged>).
 
 - Cada fila de datos cambiada contiene varias versiones de esa fila (<xref:System.Data.DataRowVersion>), la versión original (antes de los cambios) y la versión actual (después de los cambios). Durante el período en el que hay un cambio pendiente (el momento en que se puede responder al evento <xref:System.Data.DataTable.RowChanging>), también está disponible una tercera versión (la versión propuesta).
 
@@ -98,7 +98,7 @@ En el ejemplo siguiente se muestra cómo comprobar un conjunto de filas denomina
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Para buscar las filas que tienen errores
-Al trabajar con columnas y filas de datos individuales, es posible que se produzcan errores. Puede comprobar la propiedad `HasErrors` para determinar si existen errores en una <xref:System.Data.DataSet>, <xref:System.Data.DataTable> o <xref:System.Data.DataRow>.
+Al trabajar con columnas y filas de datos individuales, es posible que se produzcan errores. Puede comprobar la propiedad `HasErrors` para determinar si existen errores en una <xref:System.Data.DataSet>, <xref:System.Data.DataTable>o <xref:System.Data.DataRow>.
 
 1. Compruebe la propiedad `HasErrors` para ver si hay errores en el conjunto de DataSet.
 

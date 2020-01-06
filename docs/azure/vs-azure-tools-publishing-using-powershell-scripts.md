@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911744"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573318"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso de scripts de Windows PowerShell para publicar en entornos de desarrollo y prueba
 
@@ -154,7 +154,7 @@ Si nunca ha ejecutado un script de Windows PowerShell antes, debe establecer pri
 
    ![Crear paquete de implementación web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obtener más información, vea [Cómo: crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
+   Para obtener más información, vea [Cómo crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
 
 1. En el **Explorador de soluciones**, abra el menú contextual para el script y luego elija **Abrir con PowerShell ISE**.
 1. Si ejecuta scripts de Windows PowerShell en este equipo por primera vez, abra una ventana de símbolo del sistema con privilegios de administrador y escriba el siguiente comando:
@@ -250,7 +250,7 @@ Para automatizar la creación de su proyecto, agregue código que llame a MSBuil
         #Write a function to build and package your web application
     ```
 
-    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte la referencia de línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
+    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte [referencia de la línea de comandos de MSBuild](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'

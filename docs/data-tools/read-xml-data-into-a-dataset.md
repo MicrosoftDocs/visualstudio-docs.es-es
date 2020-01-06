@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586333"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
@@ -113,9 +113,9 @@ Dado que este tutorial se centra en la lectura de datos XML en un conjunto de da
 
 La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
-- @No__t_0 control que muestra el contenido del archivo XML como datos.
+- <xref:System.Windows.Forms.DataGridView> control que muestra el contenido del archivo XML como datos.
 
-- @No__t_0 control que muestra el esquema XML del archivo XML.
+- <xref:System.Windows.Forms.TextBox> control que muestra el esquema XML del archivo XML.
 
 - Dos controles <xref:System.Windows.Forms.Button>.
 
@@ -137,13 +137,13 @@ La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
 3. Establezca las siguientes propiedades:
 
-    |Control|Propiedad.|Parámetro|
+    |Control|La propiedad|Configuración de|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Vertical**|
-    |`Button1`|**Nombre**|`ReadXmlButton`|
+    |`Button1`|**Name**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
-    |`Button2`|**Nombre**|`ShowSchemaButton`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
     ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Crear el conjunto de datos que recibe los datos XML
@@ -158,7 +158,7 @@ En este paso, creará un nuevo conjunto de DataSet denominado `authors`. Para ob
 
      **DataSet1** se agrega a la bandeja de componentes.
 
-4. En la ventana **propiedades** , establezca las propiedades **Name** y <xref:System.Data.DataSet.DataSetName%2A> para `AuthorsDataSet`.
+4. En la ventana **propiedades** , establezca las propiedades **Name** y <xref:System.Data.DataSet.DataSetName%2A> para`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Crear el controlador de eventos para leer el archivo XML en el conjunto de archivos
 
@@ -179,7 +179,7 @@ El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continua
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Crear el controlador de eventos para mostrar el esquema en el cuadro de texto
 
-El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que se rellena con el esquema y se muestra en el <xref:System.Windows.Forms.TextBox>control.
+El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que se rellena con el esquema y se muestra en el control <xref:System.Windows.Forms.TextBox>.
 
 1. En **Explorador de soluciones**, seleccione **Form1**y, a continuación, seleccione el botón **Diseñador de vistas** .
 

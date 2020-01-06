@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648599"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586788"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 
@@ -82,7 +82,7 @@ En el ejemplo siguiente se muestra cómo llamar a una consulta adicional denomin
 
 1. Abra su conjunto de datos en el **Diseñador de Dataset**.
 
-2. Si va a crear una nueva consulta, arrastre un objeto de **consulta** desde la pestaña **DataSet** del **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o bien seleccione **Agregar consulta** en el menú contextual del TableAdapter. También puede arrastrar un objeto de **consulta** hasta un área vacía del **Diseñador de DataSet**, que crea un TableAdapter sin un <xref:System.Data.DataTable> asociado. Estas consultas solo pueden devolver valores únicos (escalares) o ejecutar comandos UPDATE, INSERT o DELETE en la base de datos.
+2. Si va a crear una nueva consulta, arrastre un objeto de **consulta** desde la pestaña **DataSet** del **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o bien seleccione **Agregar consulta** en el menú contextual del TableAdapter. También puede arrastrar un objeto de **consulta** hasta un área vacía del **Diseñador de DataSet**, que crea un TableAdapter sin un <xref:System.Data.DataTable>asociado. Estas consultas solo pueden devolver valores únicos (escalares) o ejecutar comandos UPDATE, INSERT o DELETE en la base de datos.
 
 3. En la pantalla **elegir la conexión de datos** , seleccione o cree la conexión que usará la consulta.
 

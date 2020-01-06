@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636533"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587386"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Instalar .NET Compiler Platform analizadores de código
 
@@ -33,7 +33,7 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
    > [!NOTE]
    > La página www.nuget.org de cada paquete de analizador muestra el comando para pegar en la **consola del administrador de paquetes**. Hay incluso un botón práctico para copiar el texto en el portapapeles.
 
-   Los ensamblados del analizador se instalan y aparecen en **Explorador de soluciones** en **referencias**  > **analizadores**.
+   Los ensamblados del analizador se instalan y aparecen en **Explorador de soluciones** en **referencias** > **analizadores**.
 
 ## <a name="to-install-vsix-analyzers"></a>Para instalar analizadores VSIX
 
@@ -81,13 +81,13 @@ Visual Studio incluye un conjunto básico de analizadores de .NET Compiler Platf
 
 ::: moniker range="vs-2017"
 
-Si desea comprobar si la extensión está instalada, seleccione **herramientas**  > **extensiones y actualizaciones**. En el cuadro de diálogo **extensiones y actualizaciones** , seleccione la categoría **instalado** a la izquierda y, a continuación, busque la extensión por nombre.
+Si desea comprobar si la extensión está instalada, seleccione **herramientas** > **extensiones y actualizaciones**. En el cuadro de diálogo **extensiones y actualizaciones** , seleccione la categoría **instalado** a la izquierda y, a continuación, busque la extensión por nombre.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Si desea comprobar si la extensión está instalada, seleccione **extensiones**  > **administrar extensiones**. En el cuadro de diálogo **administrar extensiones** , seleccione la categoría **instalado** a la izquierda y, a continuación, busque la extensión por nombre.
+Si desea comprobar si la extensión está instalada, seleccione **extensiones** > **administrar extensiones**. En el cuadro de diálogo **administrar extensiones** , seleccione la categoría **instalado** a la izquierda y, a continuación, busque la extensión por nombre.
 
 ::: moniker-end
 

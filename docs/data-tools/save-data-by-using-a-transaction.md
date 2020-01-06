@@ -11,17 +11,17 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641313"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586281"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento para guardar datos mediante una transacción
 
@@ -37,7 +37,7 @@ Para revertir la transacción, inicie una excepción antes de llamar al método 
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia a System. Transactions. dll
 
-1. En el menú **proyecto** , seleccione **Agregar referencia**.
+1. En el menú **Proyecto**, seleccione **Agregar referencia**.
 
 2. En la pestaña **.net** (pestaña**SQL Server** para proyectos de SQL Server), seleccione **System. Transactions**y, después, haga clic en **Aceptar**.
 

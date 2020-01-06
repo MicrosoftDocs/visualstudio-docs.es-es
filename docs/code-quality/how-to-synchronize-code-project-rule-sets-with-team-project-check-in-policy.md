@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649383"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587412"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Cómo: sincronizar conjuntos de reglas del proyecto de código con una directiva de inserción en el repositorio del proyecto DevOps de Azure
 
@@ -31,9 +31,9 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar un conjunto de reglas estándar de Microsoft
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+1. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
-2. Haga clic en **análisis de código**.
+2. Haga clic en **Análisis de código**.
 
 ::: moniker range="vs-2017"
 
@@ -51,19 +51,19 @@ Puede sincronizar la configuración de análisis de código para los proyectos d
 
 1. Si es necesario, realice una operación get en el archivo de conjunto de reglas que especifica la Directiva de inserción en el repositorio.
 
-2. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto de código y, a continuación, haga clic en **propiedades**.
+2. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.
 
-3. Haga clic en **análisis de código**.
+3. Haga clic en **Análisis de código**.
 
 ::: moniker range="vs-2017"
 
-4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<Browse >** .
+4. En la lista **ejecutar este conjunto de reglas** , haga clic en **\<examinar >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. En la lista **reglas activas** , haga clic en **\<Browse >** .
+4. En la lista **reglas activas** , haga clic en **\<examinar >** .
 
 ::: moniker-end
 

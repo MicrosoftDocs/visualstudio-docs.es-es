@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641160"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586216"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 
-En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos mediante una llamada a los métodos individuales `Insert`, `Update` y `Delete` según sea necesario para la aplicación (en contraposición al método sobrecargado `Update` que realiza la actualización, INSERT y ELIMINAn todas las instrucciones en una llamada).
+En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos llamando a los métodos individuales `Insert`, `Update`y `Delete` según sea necesario para la aplicación (en lugar del método `Update` sobrecargado que realiza las instrucciones UPDATE, INSERT y DELETE en una llamada).
 
 Durante este tutorial aprenderá a:
 
@@ -61,7 +61,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear una **aplicación Windows Forms**.
 
-1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -89,7 +89,7 @@ En este paso se usa el **Asistente para configuración de orígenes de datos** p
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         o bien
+         O bien,
 
     - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
@@ -109,7 +109,7 @@ Cree los controles enlazados a datos arrastrando elementos desde la ventana **Or
 
 Para crear controles enlazados a datos en Windows Forms, arrastre el nodo de la **región** principal desde la ventana **orígenes de datos** hasta el formulario.
 
-En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.
+En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>y <xref:System.Windows.Forms.BindingNavigator>.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para agregar botones que llamarán a los métodos DbDirect de TableAdapter
 

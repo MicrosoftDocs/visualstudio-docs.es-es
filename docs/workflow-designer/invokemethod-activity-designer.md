@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 593ec198cdfdd8acd1967abb046384711e1fa9ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650168"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593205"
 ---
 # <a name="invokemethod-activity-designer"></a>Diseñador de actividades InvokeMethod
 
@@ -33,15 +33,15 @@ Obtenga acceso al diseñador de actividades **InvokeMethod** en la categoría **
 
 En la tabla siguiente se muestran las propiedades de <xref:System.Activities.Statements.InvokeMethod> y se describe cómo se usan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades y algunas se pueden editar en Diseñador de flujo de trabajo superficie.
 
-|Nombre de la propiedad|Requerido|Uso|
+|Nombre de la propiedad|Requerido|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeMethod>. El valor predeterminado es InvokeMethod.<br /><br /> Aunque el <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, es mejor usar uno.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|El nombre del método que se va a llamar cuando se ejecute la actividad. El método al que se llama debe declararse como **público**. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|La colección de parámetros del método al que se ha llamado. Los parámetros se deben agregar a la colección en el mismo orden que aparecen en la firma de método. Para mostrar el cuadro de diálogo **parámetros** donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos del campo **parámetros** de la cuadrícula de propiedades. Haga clic en el botón **crear argumento** para agregar los parámetros.|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|El valor devuelto de la llamada al método.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|Especifica si el método se llama de forma asincrónica. El valor predeterminado es **false**.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Objeto que contiene el método al que se va a llamar. Esta propiedad se puede editar en la superficie del diseñador.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> son obligatorias para que se establezcan.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propiedad se puede editar en la superficie del diseñador. Esta propiedad solo se debe establecer si el método llamado es estático.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeMethod>. El valor predeterminado es InvokeMethod.<br /><br /> Aunque el <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesario, es mejor usar uno.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Verdadero|El nombre del método que se va a llamar cuando se ejecute la actividad. El método al que se llama debe declararse como **público**. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Falso|La colección de parámetros del método al que se ha llamado. Los parámetros se deben agregar a la colección en el mismo orden que aparecen en la firma de método. Para mostrar el cuadro de diálogo **parámetros** donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos del campo **parámetros** de la cuadrícula de propiedades. Haga clic en el botón **crear argumento** para agregar los parámetros.|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Falso|El valor devuelto de la llamada al método.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Verdadero|Especifica si el método se llama de forma asincrónica. El valor predeterminado es **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falso|Objeto que contiene el método al que se va a llamar. Esta propiedad se puede editar en la superficie del diseñador.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> son obligatorias para que se establezcan.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falso|Tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propiedad se puede editar en la superficie del diseñador. Esta propiedad solo se debe establecer si el método llamado es estático.|
 
 Para pasar parámetros C# como parámetro **out** (por ejemplo, `Method1(out myParam))`, use **outargument** en lugar de **InOutArgument**
 
@@ -61,7 +61,7 @@ Esta restricción no se aplica a <xref:System.Activities.Statements.InvokeMethod
 
 ## <a name="see-also"></a>Vea también
 
-- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

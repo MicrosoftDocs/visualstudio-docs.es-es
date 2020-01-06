@@ -2,19 +2,19 @@
 title: Maneras de depurar código XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6f4a1ce60f04bcea6e21b52db9347a95292dab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592859"
 ---
 # <a name="debugging-xslt"></a>Depuración de XSLT
 
@@ -33,7 +33,7 @@ Puede iniciar el depurador de si tiene una hoja de estilos o un archivo XML de e
 
 1. Abra la hoja de estilos o el archivo XML en Visual Studio.
 
-1. Seleccione **iniciar depuración XSLT** en el menú **XML** o presione **Alt** +**F5**.
+1. Seleccione **iniciar depuración XSLT** en el menú **XML** o presione **Alt**+**F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Depurar desde una aplicación que usa XSLT
 
@@ -76,7 +76,7 @@ namespace ConsoleApplication
       XslCompiledTransform xslt = new XslCompiledTransform(true);
 
       // Compile the style sheet.
-      xslt.Load(stylesheet)
+      xslt.Load(stylesheet);
 
       // Execute the XSLT transform.
       FileStream outputStream = new FileStream(outputFile, FileMode.Append);

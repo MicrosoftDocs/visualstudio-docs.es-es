@@ -3,17 +3,17 @@ title: Menús contextuales en el explorador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651204"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592898"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (explorador de esquemas XML)
 
@@ -28,7 +28,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar los elementos raíz más probables**|Busca y resalta todos los elementos globales a los que no hacen referencia más elementos globales que ellos mismos.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales existentes en el esquema establecido.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el esquema establecido.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-namespace"></a>Tipo de nodo: espacio de nombres
 En la tabla siguiente se describen las opciones disponibles para un nodo de espacio de nombres.
@@ -39,7 +39,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de espa
 |**Mostrar todas las referencias salientes**|Para cada archivo del espacio de nombres seleccionado, busca y resalta lo siguiente:<br /><br /> -Todos los espacios de nombres a los que se hace referencia en instrucciones Import sin un atributo `schemaLocation`.<br />-Todos los archivos en espacios de nombres distintos del seleccionado que se especifican en el `schemaLocation` atributo en las instrucciones Import e include.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales existentes en el espacio de nombres seleccionado.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el espacio de nombres seleccionado.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-file"></a>Tipo de nodo: archivo
 En la tabla siguiente se describen las opciones disponibles para un nodo de archivo.
@@ -51,7 +51,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de arch
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales de este archivo.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales de este archivo.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de esquemas XML también se seleccionará en el editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="all-global-node-types"></a>Todos los tipos de nodos globales
 En la tabla siguiente se describen las opciones disponibles para todos los nodos globales.
@@ -61,7 +61,7 @@ En la tabla siguiente se describen las opciones disponibles para todos los nodos
 |**Mostrar en la vista gráfico**|Abre la vista Gráfico. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
 |**Mostrar en la vista modelo de contenido**|Abre la vista Modelo de contenido. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de esquemas XML también se seleccionará en el editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-element"></a>Tipo de nodo: elemento
 Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de elemento tiene las siguientes opciones:

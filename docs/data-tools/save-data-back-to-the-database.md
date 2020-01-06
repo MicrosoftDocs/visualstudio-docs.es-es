@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648225"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586294"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 
@@ -73,21 +73,21 @@ Al combinar conjuntos de valores, se puede pasar un argumento booleano (`preserv
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
 | - | - | - |
 |Original|James Wilson|James C. Wilson|
-|Current|Jim Wilson|James C. Wilson|
+|Actual|Jim Wilson|James C. Wilson|
 
 La llamada al método <xref:System.Data.DataSet.Merge%2A> en la tabla anterior con `preserveChanges=false targetDataset.Merge(sourceDataset)` produce los datos siguientes:
 
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
 | - | - | - |
 |Original|James C. Wilson|James C. Wilson|
-|Current|James C. Wilson|James C. Wilson|
+|Actual|James C. Wilson|James C. Wilson|
 
 Al llamar al método <xref:System.Data.DataSet.Merge%2A> con `preserveChanges = true targetDataset.Merge(sourceDataset, true)`, se generan los datos siguientes:
 
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
 | - | - | - |
 |Original|James C. Wilson|James C. Wilson|
-|Current|Jim Wilson|James C. Wilson|
+|Actual|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > En el escenario de `preserveChanges = true`, si se llama al método <xref:System.Data.DataSet.RejectChanges%2A> en un registro del conjunto de datos de destino, se revierte a los datos originales del conjunto de datos de *origen* . Esto significa que, si intenta actualizar el origen de datos original con el conjunto de datos de destino, es posible que no pueda encontrar la fila original que se va a actualizar. Puede evitar una infracción de simultaneidad rellenando otro conjunto de datos con los registros actualizados del origen de datos y, a continuación, realizando una combinación para evitar una infracción de simultaneidad. (Una infracción de simultaneidad se produce cuando otro usuario modifica un registro del origen de datos después de que se ha rellenado el conjunto de datos.)
@@ -96,14 +96,14 @@ Al llamar al método <xref:System.Data.DataSet.Merge%2A> con `preserveChanges = 
 
 Para realizar cambios en una fila de datos existente, agregue o actualice los datos de las columnas individuales. Si el conjunto de registros contiene restricciones (como claves externas o restricciones que no aceptan valores NULL), es posible que el registro esté temporalmente en un estado de error cuando lo actualice. Es decir, puede estar en un estado de error después de terminar de actualizar una columna, pero antes de llegar a la siguiente.
 
-Para impedir que se produzcan infracciones de restricciones prematuras, puede suspender temporalmente las restricciones de actualización. Esta suspensión tiene dos fines:
+Para impedir que se produzcan infracciones de restricciones prematuras, puede suspender temporalmente las restricciones de actualización. Con esto se consiguen dos fines:
 
 - Impide que se produzca un error después de que haya terminado de actualizar una columna pero no haya empezado a actualizar otra.
 
 - Impide que se generen determinados eventos de actualización (eventos que se suelen usar para la validación).
 
 > [!NOTE]
-> En Windows Forms, la arquitectura de enlace de datos integrada en el control DataGrid suspende la comprobación de restricciones hasta que el foco sale de una fila y no es necesario llamar explícitamente a los métodos <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> o <xref:System.Data.DataRow.CancelEdit%2A>.
+> En Windows Forms, la arquitectura de enlace de datos integrada en el control DataGrid suspende la comprobación de restricciones hasta que el foco sale de una fila y no es necesario llamar explícitamente a los métodos <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>o <xref:System.Data.DataRow.CancelEdit%2A>.
 
 Las restricciones se deshabilitan automáticamente cuando se invoca el método <xref:System.Data.DataSet.Merge%2A> en un conjunto de datos. Una vez completada la combinación, si hay alguna restricción en el conjunto de DataSet que no se pueda habilitar, se produce una <xref:System.Data.ConstraintException>. En esta situación, la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> se establece en `false,` y todas las infracciones de las restricciones se deben resolver antes de restablecer la propiedad <xref:System.Data.DataSet.EnforceConstraints%2A> a `true`.
 
@@ -259,7 +259,7 @@ Sin embargo, para la segunda fila, el método `Update` invoca automáticamente e
    > [!NOTE]
    > Si la propiedad `UpdateCommand` del TableAdapter se ha establecido en el nombre de un procedimiento almacenado, el adaptador no construye una instrucción SQL. En su lugar, invoca al procedimiento almacenado pasando los parámetros correspondientes.
 
-## <a name="pass-parameters"></a>Pasar parámetros
+## <a name="pass-parameters"></a>Paso de parámetros
 
 Normalmente, se usan parámetros para pasar los valores de los registros que se van a actualizar en la base de datos. Cuando el método `Update` del TableAdapter ejecuta una instrucción UPDATE, debe rellenar los valores de los parámetros. Dichos valores los obtiene de la colección `Parameters` del comando de datos correspondiente, en este caso, el objeto `UpdateCommand` de TableAdapter.
 
@@ -278,5 +278,5 @@ En una instrucción UPDATE, debe especificar los valores nuevos (los que se escr
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validar datos](validate-data-in-datasets.md)
+- [Validación de datos](validate-data-in-datasets.md)
 - [Procedimiento para agregar, modificar y eliminar entidades (servicios de datos WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

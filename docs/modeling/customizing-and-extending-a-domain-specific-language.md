@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597170"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalización y extensión de lenguajes específicos de dominio
 
@@ -41,7 +41,7 @@ El SDK de modelado y visualización de Visual Studio (VMSDK) proporciona varios 
 |Establecer una imagen de fondo en cualquier forma|Reemplace InitializeInstanceResources () para agregar un ImageField delimitado.|
 |Anidar formas en cualquier profundidad|Configure un árbol de incrustación recursiva. Defina formas boundsrules para que contenga las formas.|
 |Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
-|Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).|
+|Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar los cambios entre los elementos del modelo o entre las formas|Consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagar los cambios a recursos como otras extensiones de Visual Studio fuera del almacén.|Vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |La ventana de propiedades muestra las propiedades de un elemento relacionado.|Configurar el reenvío de propiedades. Vea [personalizar la ventana Propiedades](../modeling/customizing-the-properties-window.md).|
@@ -51,9 +51,9 @@ El SDK de modelado y visualización de Visual Studio (VMSDK) proporciona varios 
 |Habilitar copiar, cortar y pegar|Establezca la propiedad **Habilitar copiar pegar** del nodo **Editor** en DSL Explorer.|
 |Copiar los vínculos de referencia y sus destinos cada vez que se copia un elemento. Por ejemplo, copie los comentarios adjuntos a un elemento.|Establezca la propiedad **Propagate Copy** del rol de origen (representada por la línea en un lado de la relación de dominio en el diagrama de definición de DSL).<br /><br /> Escriba código para invalidar ProcessOnCopy para lograr efectos más complejos.<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
 |Eliminar, Reenlazar o volver a vincular elementos relacionados cuando se elimina un elemento.|Establezca **propaga** el valor de eliminación de un rol de relación. Para efectos más complejos, invalide `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en la clase `MyDslDeleteClosure`, definidos en **DomainModel.CS**.|
-|Conservar el diseño y el aspecto de la forma en copiar y arrastrar y colocar.|Agregue las formas y conectores al `ElementGroupPrototype` copiado. El método más cómodo para invalidar es `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
+|Conservar el diseño y el aspecto de la forma en copiar y arrastrar y colocar.|Agregue las formas y conectores al `ElementGroupPrototype`copiado. El método más cómodo para invalidar es `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalide `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
-|Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Habilitar arrastrar y colocar desde este diagrama, otros elementos DSL y Windows|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Permite arrastrar una forma o herramienta a una forma secundaria, como un puerto, como si se arrastrara al elemento primario.|Defina una directiva de combinación de elementos en la clase de objeto de destino para reenviar el objeto colocado al elemento primario. Vea [personalizar la creación y el movimiento de un elemento](../modeling/customizing-element-creation-and-movement.md).|
 |Permite arrastrar una forma o herramienta a una forma y hacer que se creen objetos o vínculos adicionales. Por ejemplo, para permitir que un comentario se coloque en un elemento al que se va a vincular.|Defina una directiva de combinación de elementos en la clase de dominio de destino y defina los vínculos que se van a generar. En casos complejos, puede agregar código personalizado. Vea [personalizar la creación y el movimiento de un elemento](../modeling/customizing-element-creation-and-movement.md).|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610841"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587789"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 
@@ -33,7 +33,7 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 |[CA0052](ca0052.md)|No se seleccionó ningún destino para analizar.|
 |[CA0053](ca0053.md)|No se pudo cargar el ensamblado de regla.|
 |[CA0054](ca0054.md)|Un ensamblado de regla personalizado tiene recursos XML no válidos.|
-|[CA0055](ca0055.md)|No se pudo cargar el archivo: \<path >|
+|[CA0055](ca0055.md)|No se pudo cargar el archivo:\<ruta de acceso >|
 |[CA0056](ca0056.md)|Un archivo de proyecto tiene una versión incorrecta de la herramienta de análisis.|
 |[CA0057](ca0057.md)|No se pueden asignar infracciones al conjunto actual de destinos y reglas.|
 |[CA0058](ca0058.md)|No se pueden cargar los ensamblados a los que se hace referencia.|
@@ -58,5 +58,5 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-- [Errores de las directivas de análisis de código](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)

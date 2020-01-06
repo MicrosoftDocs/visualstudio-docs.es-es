@@ -3,17 +3,17 @@ title: Vista Inicio del Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608499"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592534"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -35,15 +35,15 @@ En el panel **detalles del conjunto de esquemas** se enumeran los tipos de nodo 
 
 Puede desplazarse entre la vista Inicio, la vista [modelo de contenido](../xml-tools/content-model-view.md) y la [vista gráfico](../xml-tools/graph-view.md) en la barra de herramientas del diseñador de esquemas XML.
 
-![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdstartviewtoolbar.gif)
+![Barra de tareas del Diseñador de esquemas XSD](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Los siguientes botones están habilitados en la barra de herramientas del Diseñador XML cuando está activa la vista Inicio:
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista Inicio**|Cambia a la vista Inicio. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**2**.|
-|**Mostrar vista de gráfico**|Cambia a la vista Gráfico. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**3**.|
+|**Mostrar vista Inicio**|Cambia a la vista Inicio. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista de gráfico**|Cambia a la vista Gráfico. Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vea también
 

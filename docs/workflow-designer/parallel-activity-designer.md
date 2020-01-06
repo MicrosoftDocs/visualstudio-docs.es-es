@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650103"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593166"
 ---
 # <a name="parallel-activity-designer"></a>Diseñador de actividades Parallel
 
@@ -39,11 +39,11 @@ Para agregar una actividad a la colección de <xref:System.Activities.Statements
 
 En la tabla siguiente se muestran las propiedades de la actividad Parallel y se describe cómo se usan en el diseñador.
 
-|Nombre de la propiedad|Requerido|Uso|
+|Nombre de la propiedad|Requerido|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **Parallel**. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contiene la colección de actividades secundarias que se van a ejecutar.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Se evalúa cuando se completa una bifurcación. Si se evalúa como **true**, se cancelan las bifurcaciones pendientes programadas. Si esta propiedad no se establece o se evalúa como **false**, la actividad se completa cuando se han completado todas sus actividades secundarias. El valor predeterminado es **null**.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **Parallel**. El valor se puede editar opcionalmente en la cuadrícula de **propiedades** o directamente en el encabezado del diseñador de actividad.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Verdadero|Contiene la colección de actividades secundarias que se van a ejecutar.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Se evalúa cuando se completa una bifurcación. Si se evalúa como **true**, se cancelan las bifurcaciones pendientes programadas. Si esta propiedad no se establece o se evalúa como **false**, la actividad se completa cuando se han completado todas sus actividades secundarias. El valor predeterminado es **null**.|
 
 ## <a name="see-also"></a>Vea también
 

@@ -3,17 +3,17 @@ title: 'Cómo: Generar un fragmento XML a partir de un esquema XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645381"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592690"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: generar un fragmento de código XML a partir de un esquema XML
 
@@ -90,7 +90,7 @@ En los pasos de esta sección se muestra cómo usar la característica de fragme
 
 4. Presione **Tab** para generar datos XML para el elemento `Contact` basado en la información del esquema.
 
-## <a name="input"></a>Entrada
+## <a name="input"></a>Input
 
 El tutorial utiliza el siguiente archivo de esquema.
 

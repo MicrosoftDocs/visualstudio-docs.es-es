@@ -3,17 +3,17 @@ title: Falta o no es correcta la propiedad de conexión del archivo de configura
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2619b5826002944bd728a7744e0b2507cb493dc4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23a5d9a149fb39b763df71e0dabb21314a5143a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586203"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 

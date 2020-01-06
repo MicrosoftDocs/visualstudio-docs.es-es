@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648270"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586385"
 ---
 # <a name="n-tier-data-applications-overview"></a>Introducción a las aplicaciones de datos de n niveles
 Las aplicaciones *de datos con N niveles* son aplicaciones de datos que se dividen en varios *niveles*. Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor. Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.
@@ -57,16 +57,16 @@ El *nivel intermedio* es la capa que el nivel de presentación y la capa de dato
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.
 
-componentes del nivel ![Middle ](../data-tools/media/ntiermid.png) nivel intermedio
+![componentes de nivel intermedio](../data-tools/media/ntiermid.png) nivel intermedio
 
 El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.
 
 ## <a name="data-tier"></a>Capa de datos
-La *capa de datos* es básicamente el servidor que almacena los datos de una aplicación (por ejemplo, un servidor que ejecuta SQL Server).
+Básicamente, el *nivel de datos* es el servidor que almacena los datos de una aplicación (por ejemplo, un servidor que ejecuta SQL Server).
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.
 
-componentes del nivel ![Data ](../data-tools/media/ntierdatatier.png) capa de datos
+![componentes de capa de datos](../data-tools/media/ntierdatatier.png) capa de datos
 
 No se puede obtener acceso a la capa de datos directamente desde el cliente en el nivel de presentación. En su lugar, el componente de acceso a datos en el nivel intermedio se utiliza para la comunicación entre las capas de datos y la presentación.
 

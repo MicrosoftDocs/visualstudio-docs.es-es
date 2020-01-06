@@ -11,17 +11,17 @@ helpviewer_keywords:
 - web services, as data sources
 - web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75efb8656d54c02f3126493504506c913a7e0f4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01ad796faa8c722ba088143da814305844136aa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642023"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586528"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento para conectarse a datos de un servicio
 

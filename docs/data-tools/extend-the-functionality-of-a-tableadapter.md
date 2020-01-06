@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648490"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586645"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Ampliar la funcionalidad de un TableAdapter
 
@@ -34,7 +34,7 @@ Las clases parciales permiten que el código de una clase específica se divida 
 
 Aunque los TableAdapters están diseñados con el **Diseñador de DataSet**, las clases de TableAdapter que se generan no son clases anidadas de <xref:System.Data.DataSet>. Los TableAdapters se encuentran en un espacio de nombres basado en el nombre del conjunto de objetos asociado del TableAdapter. Por ejemplo, si la aplicación contiene un conjunto de objetos denominado `HRDataSet`, los TableAdapters se encontrarían en el espacio de nombres `HRDataSetTableAdapters`. (La convención de nomenclatura sigue este patrón: *DatasetName* + `TableAdapters`).
 
-En el ejemplo siguiente se presupone que un TableAdapter denominado `CustomersTableAdapter`is en un proyecto con `NorthwindDataSet`.
+En el ejemplo siguiente se supone que un TableAdapter denominado `CustomersTableAdapter`está en un proyecto con `NorthwindDataSet`.
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Para crear una clase parcial para un TableAdapter
 

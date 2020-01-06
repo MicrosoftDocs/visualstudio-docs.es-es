@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593179"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Utilizar el diseñador de variables
 
@@ -31,7 +31,7 @@ El diseñador variables se utiliza para crear variables con el fin de utilizarla
 
 3. Abra el diseñador de variables haciendo clic en el botón **variables** en la esquina inferior izquierda del lienzo de diseño. Aparecerá el diseñador de variables.
 
-4. Haga clic en la fila vacía con la etiqueta **crear variable**. Esto agregará una nueva fila con una nueva variable con los siguientes valores predeterminados: variablex para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de variable únicos, **cadena** para la **variable. Escriba**y **Sequence** para el **ámbito**. No se agrega ningún valor para el valor **predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
+4. Haga clic en la fila vacía con la etiqueta **crear variable**. Esto agregará una nueva fila con una nueva variable con los siguientes valores predeterminados: variablex para el **nombre** , donde x es un entero con un valor inicial de 1 que se incrementa automáticamente para crear nombres de variable únicos, una **cadena** para el **tipo de variable**y una **secuencia** para el **ámbito**. No se agrega ningún valor para el valor **predeterminado**. Podrá cambiar estos valores en cualquier momento durante el proceso de diseño del flujo de trabajo.
 
     > [!NOTE]
     > Para eliminar una variable, seleccione la variable haciendo clic en ella y, a continuación, presione la tecla **Supr** .

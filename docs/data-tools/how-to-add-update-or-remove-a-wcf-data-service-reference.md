@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586593"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedimiento para agregar, actualizar o eliminar una referencia de servicio de datos WCF
 Una *referencia de servicio* permite a un proyecto tener acceso a uno o más [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilice el cuadro de diálogo **Agregar referencia de servicio** para buscar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] en la solución actual, localmente, en una red de área local o en Internet.

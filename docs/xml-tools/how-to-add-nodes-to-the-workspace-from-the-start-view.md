@@ -3,17 +3,17 @@ title: Agregar nodos al área de trabajo desde la vista Inicio en el diseñador 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f1471f03dac54b484e37b2319e15380055661e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fa3ecf986b77ed2ca93cf182d442156a11d0530
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646007"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592833"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Cómo: agregar nodos al área de trabajo desde la vista Inicio
 

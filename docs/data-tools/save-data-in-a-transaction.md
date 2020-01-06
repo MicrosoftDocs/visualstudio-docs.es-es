@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641096"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586242"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
@@ -50,7 +50,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 El primer paso es crear una **aplicación Windows Forms**.
 
-1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -74,7 +74,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         o bien
+         O bien,
 
     - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.
 
@@ -96,7 +96,7 @@ Puede crear los controles enlazados a datos arrastrando elementos desde la venta
 
 2. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
-   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.
+   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>y <xref:System.Windows.Forms.BindingNavigator>.
 
 3. Arrastre el nodo **Orders** relacionado (no el nodo **Orders** principal, pero el nodo de tabla secundaria relacionado que se encuentra debajo de la columna **fax** ) al formulario situado debajo de **CustomersDataGridView**.
 
@@ -108,7 +108,7 @@ Las transacciones usan el espacio de nombres <xref:System.Transactions>. De form
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para agregar una referencia al archivo DLL System.Transactions
 
-1. En el menú **proyecto** , seleccione **Agregar referencia**.
+1. En el menú **Proyecto**, seleccione **Agregar referencia**.
 
 2. Seleccione **System. Transactions** (en la pestaña **.net** ) y, después, haga clic en **Aceptar**.
 

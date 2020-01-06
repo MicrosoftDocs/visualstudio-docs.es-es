@@ -6,20 +6,20 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593491"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
-Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
+Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<HTML >..." y todas las demás partes estándar de una página HTML. Inserted en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
 
  Esta estructura hace que una plantilla sea fácil de desarrollar, porque se puede comenzar con un prototipo del archivo generado e incrementalmente insertar bloques de control que modifican el resultado.
 
@@ -178,7 +178,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Utilizar definiciones externas
 
-### <a name="assemblies"></a>Ensamblados
+### <a name="assemblies"></a>Assemblies
  Los bloques de código de la plantilla pueden utilizar tipos que se definen en los ensamblados de uso más frecuente de .NET, como System.dll. Además, puede hacer referencia a otros ensamblados .NET o a sus propios ensamblados. Puede proporcionar un nombre de ruta de acceso o el nombre seguro de un ensamblado:
 
 ```
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Espacios de nombres
+### <a name="namespaces"></a>Espacios de nombres de
  La directiva de importación es igual que la cláusula `using` en C# o la cláusula `imports` en Visual Basic. Permite hacer referencia a tipos del código sin utilizar un nombre completo:
 
 ```

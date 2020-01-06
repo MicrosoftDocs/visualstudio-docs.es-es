@@ -3,17 +3,17 @@ title: Vista Gráfico del Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b19f8f64bc4fe63d111f4d5c61e96d6fff88a14b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592872"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -56,7 +56,7 @@ En la tabla siguiente se describen las opciones disponibles para todos los nodos
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
 |**Seleccionar todo**|Selecciona todos los nodos de la superficie de diseño.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de **esquemas XML** también se selecciona en el editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 Además de las opciones comunes descritas anteriormente, el menú contextual para los elementos globales también tiene las opciones siguientes:
 
@@ -97,26 +97,26 @@ Use el menú contextual (clic con el botón derecho) para abrir inicialmente la 
 
 Cuando está activa la vista Gráfico, los botones siguientes de la barra de herramientas de XSD están habilitados.
 
-![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
+![Barra de tareas del Diseñador de esquemas XSD](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la [vista modelo de contenido](../xml-tools/content-model-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**2**.|
-|**Mostrar vista de gráfico**|Cambia a la [vista gráfico](../xml-tools/graph-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**3**.|
+|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la [vista modelo de contenido](../xml-tools/content-model-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista de gráfico**|Cambia a la [vista gráfico](../xml-tools/graph-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**3**.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar del área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
 |**Quitar todo excepto la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
-|**De izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt** +**flecha derecha**.|
-|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt** +**flecha izquierda**.|
-|**De arriba abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt** +**flecha abajo**.|
-|**De abajo arriba**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt** +**flecha arriba**.|
+|**De izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha derecha**.|
+|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha izquierda**.|
+|**De arriba abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha abajo**.|
+|**De abajo arriba**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha arriba**.|
 
 ## <a name="panscroll"></a>Panorámica/desplazamiento
 
 Puede desplazar la superficie de diseño mediante las barras de desplazamiento o manteniendo presionada la tecla **Ctrl** mientras hace clic y arrastra el mouse. Cuando se obtiene una panorámica de la superficie de diseño usando el método de hacer clic y arrastrar, el cursor cambiará a cuatro flechas en cruz que señalan en cuatro direcciones.
 
-## <a name="undoredo"></a>Deshacer/rehacer
+## <a name="undoredo"></a>Deshacer/Rehacer
 
 La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:
 

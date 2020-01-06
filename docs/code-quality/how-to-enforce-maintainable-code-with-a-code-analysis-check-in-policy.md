@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5a165d2f0f3c17a91775d2d37eadf32307d248
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2de2322b42be2591fa0f6cdcfc49572322dcd140
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649422"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587490"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: exigir código mantenible con una directiva de protección de análisis de código
 

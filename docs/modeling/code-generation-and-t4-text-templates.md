@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748506"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597222"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generación de código y plantillas de texto T4
 

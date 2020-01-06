@@ -3,17 +3,17 @@ title: 'Cómo: Editar archivos XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592742"
 ---
 # <a name="how-to-edit-xml-files"></a>Cómo: editar archivos XML
 
@@ -36,7 +36,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Agregar un archivo XML existente a un proyecto
 
-1. En el menú **proyecto** , seleccione **Agregar elemento existente**.
+1. En el menú **Proyecto**, seleccione **Agregar elemento existente**.
 
    Aparece el cuadro de diálogo **Agregar elemento existente** .
 
@@ -46,7 +46,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 1. En el menú **archivo** , seleccione **nuevo**.
 
-   Aparecerá el cuadro de diálogo **nuevo archivo** .
+   Aparece el cuadro de diálogo **Nuevo archivo** .
 
 2. Seleccione **archivo XML** para crear un nuevo archivo XML. o bien, seleccione **archivo XSLT** para crear una nueva hoja de estilos XSLT.
 
@@ -56,7 +56,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 ::: moniker range="vs-2017"
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En el menú **archivo** , seleccione **nuevo** **proyecto**de >.
 
    Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
@@ -68,7 +68,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 ::: moniker range=">=vs-2019"
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En el menú **archivo** , seleccione **nuevo** **proyecto**de >.
 
 2. Escriba **proyecto vacío** en el cuadro de búsqueda de plantillas, seleccione la plantilla **proyecto vacío (.NET Framework)** y, a continuación, haga clic en **siguiente**.
 

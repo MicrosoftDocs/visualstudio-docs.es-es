@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df019157b6a8bd6199b01a093efb422792804b3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f221efea08444a4dc3e31ade2a081753eb77242c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650266"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593192"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
 

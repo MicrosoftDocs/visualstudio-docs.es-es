@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639444"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586034"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Tutorial: crear un conjunto de DataSet con el Diseñador de DataSet
 
@@ -44,7 +44,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-a-new-windows-forms-application-project"></a>Crear un nuevo proyecto de aplicación de Windows Forms
 
-1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -113,4 +113,4 @@ En esta sección se explica cómo agregar tablas al conjunto de DataSet.
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validar datos](../data-tools/validate-data-in-datasets.md)
+- [Validación de datos](../data-tools/validate-data-in-datasets.md)
