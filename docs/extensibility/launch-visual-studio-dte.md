@@ -3,17 +3,17 @@ title: Inicio de Visual Studio con DTE
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590636"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Inicio de Visual Studio con DTE
 
@@ -21,7 +21,7 @@ A partir de Visual Studio 2017, el mecanismo para iniciar Visual Studio con DTE 
 
 En el resto de este artículo se muestra el código que puede usar para iniciar Visual Studio 2019 con DTE.
 
-## <a name="set-up-the-project"></a>Configurar el proyecto
+## <a name="set-up-the-project"></a>Configuración del proyecto
 
 Para ver el código de inicio en acción, cree un proyecto siguiendo estos pasos.
 

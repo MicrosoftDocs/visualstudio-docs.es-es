@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658411"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590246"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 
@@ -72,23 +72,23 @@ Observe que la opción es sobre la definición de los requisitos, y que esto es 
 
 Para obtener más información, consulte los temas siguientes:
 
-|Más información|Leer|
+|Para obtener información acerca de|Lectura|
 |-|-|
 |Cómo desarrollar código que cumple las reglas de negocio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Existen varias categorías de requisito de calidad de servicio. Entre esos tipos se incluyen los siguientes:
+Existen varias categorías de requisito de calidad de servicio. Incluyen los siguientes:
 
 - Rendimiento
 
-- Seguridad
+- de seguridad
 
 - Facilidad de uso
 
 - Confiabilidad
 
-- Solidez
+- Potencia
 
 Puede incluir algunos de estos requisitos en las descripciones de casos de uso concretos. Otros requisitos no son específicos de los casos de uso y resulta más eficaz incluirlos en un documento independiente. Cuando sea posible, resulta útil ajustarse al vocabulario definido en el modelo de requisitos. En el ejemplo siguiente, observe que las principales palabras que se usan en el requisito son los títulos de los actores, los casos de uso y las clases de las ilustraciones anteriores:
 

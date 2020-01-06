@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660306"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595376"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -53,9 +53,9 @@ El uso de una plantilla en la aplicación facilita la visualización de la forma
 
 ### <a name="to-create-a-run-time-text-template"></a>Para crear una plantilla de texto en tiempo de ejecución
 
-1. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**  > **nuevo elemento**.
+1. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto en tiempo de ejecución**. (En Visual Basic mire en **elementos comunes**  > **General**).
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto en tiempo de ejecución**. (En Visual Basic mire en **elementos comunes** > **General**).
 
 3. Escriba un nombre para el archivo de plantilla.
 
@@ -80,7 +80,7 @@ Una buena manera de crear una plantilla es convertir un ejemplo existente de la 
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para convertir un archivo de texto existente en una plantilla en tiempo de ejecución
 
-1. Incluya el archivo en el proyecto de Visual Studio. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**  > **elemento existente**.
+1. Incluya el archivo en el proyecto de Visual Studio. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar** > **elemento existente**.
 
 2. Establezca la propiedad **herramientas personalizadas** del archivo en **TextTemplatingFilePreprocessor**. En Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.
 

@@ -2,17 +2,17 @@
 title: Implementación mediante MSI y VSIX de un DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984447"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590194"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
 Puede instalar un lenguaje específico de dominio en su propio equipo o en otros equipos. Visual Studio ya debe estar instalado en el equipo de destino.
@@ -35,7 +35,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
    1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **DslPackage** y, a continuación, haga clic en **Abrir carpeta en el explorador de archivos**.
 
-   2. Busque el archivo **\\ \* \\** _YourProject_ **. DslPackage. vsix**
+   2. Busque el archivo **\\\*\\** _YourProject_ **. DslPackage. vsix**
 
 2. Copie el archivo **. vsix** en el equipo de destino en el que desea instalar el DSL. Puede tratarse de su propio equipo o de otro.
 
@@ -90,7 +90,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
        - Descripción
 
-       - Versión
+       - Version
 
    - Haga clic en el nodo **Editor** y, en el ventana Propiedades, haga clic en **icono**. Establezca el valor para que haga referencia a un archivo de icono en **DslPackage\Resources**, como **archivo. ico.**
 
@@ -102,11 +102,11 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
     Visual Studio creará un archivo denominado **CreateMsiSetupProject. vdproj**.
 
-6. En el explorador de Windows, copie DSL \\ *. vdproj en una nueva carpeta denominada Setup.
+6. En el Explorador de Windows, copie Dsl\\\*.vdproj a una carpeta nueva denominada el programa de instalación.
 
     (Si lo desea, ahora puede excluir CreateMsiSetupProject.tt del proyecto DSL).
 
-7. En **Explorador de soluciones**, agregue el **programa de instalación \\ \*. vdproj** como un proyecto existente.
+7. En **Explorador de soluciones**, agregue el **programa de instalación\\\*. vdproj** como un proyecto existente.
 
 8. En el menú **proyecto** , haga clic en **dependencias del proyecto**.
 
@@ -120,7 +120,7 @@ Cuando este método instala DSL, el usuario puede abrir un archivo DSL desde Vis
 
      Copie el archivo MSI en un equipo en el que desee instalar el DSL. Haga doble clic en el archivo MSI. El instalador se ejecuta.
 
-11. En el equipo de destino, cree un nuevo archivo que tenga la extensión de archivo de su DSL. Compruebe que:
+11. En el equipo de destino, cree un nuevo archivo que tenga la extensión de archivo de su DSL. Compruebe lo siguiente:
 
     - En la vista de lista del explorador de Windows, el archivo aparece con el icono y la descripción que ha definido.
 

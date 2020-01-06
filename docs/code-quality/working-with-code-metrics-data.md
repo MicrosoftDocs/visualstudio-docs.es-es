@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648994"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587087"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar la ventana Resultados de métricas de código
 
@@ -30,9 +30,9 @@ La ventana **resultados de métricas de código** se muestra automáticamente cu
 
 Puede mostrar la ventana Resultados de métricas de código mediante una de las siguientes secuencias de menús:
 
-- En el menú **analizar** , elija **Windows**  > **resultados de métricas de código**.
+- En el menú **analizar** , elija **Windows** > **resultados de métricas de código**.
 
-- En el menú **Ver** , elija **otras ventanas**  > **resultados de métricas de código**.
+- En el menú **Ver** , elija **otras ventanas** > **resultados de métricas de código**.
 
 Se abre la ventana **resultados de métricas de código** , aunque no contenga ningún resultado.
 

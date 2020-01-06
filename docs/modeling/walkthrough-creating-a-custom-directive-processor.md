@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666984"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596494"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
 
@@ -84,9 +84,9 @@ End Property
 
 2. Agregue referencias a estos ensamblados:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. Reemplace el código de **Class1** por el código siguiente. Este código define una clase CustomDirectiveProcessor que hereda de la clase <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa los métodos necesarios.
 
@@ -607,7 +607,7 @@ End Property
 
 ### <a name="build-the-project"></a>Compilar el proyecto
 
-Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
+Generar el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="register-the-directive-processor"></a>Registrar el procesador de directivas
 
@@ -637,9 +637,9 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
 1. Ejecute el comando `regedit` mediante el menú Inicio o la línea de comandos.
 
-2. Vaya a la ubicación **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**y haga clic en el nodo.
+2. Vaya a la ubicación **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**y haga clic en el nodo.
 
-   En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+   En los sistemas de 64 bits, use **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
 
 3. Agregue una nueva clave con el nombre CustomDirectiveProcessor.
 
@@ -654,15 +654,15 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
      La clave del Registro debe tener los siguientes valores:
 
-   | Name | Type | Datos |
+   | Name | Tipo de | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path a la solución ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | CodeBase | REG_SZ | <strong>\<ruta de acceso a la solución ></strong> CustomDP\bin\Debug\CustomDP.dll |
 
      Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:
 
-   | Name | Type | Datos |
+   | Name | Tipo de | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -877,7 +877,7 @@ Después de probar el procesador de directivas personalizado, es posible que des
 1. Reemplace el código de *TestDP.TT* por lo siguiente. El HTML se resalta. Asegúrese de reemplazar la cadena `YOUR PATH` por la ruta de acceso al archivo *. XML* .
 
     > [!NOTE]
-    > Las etiquetas adicionales Open \< # y Close # > separan el código de instrucción de las etiquetas HTML.
+    > Las etiquetas adicionales Open \<# y Close # > separan el código de instrucción de las etiquetas HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

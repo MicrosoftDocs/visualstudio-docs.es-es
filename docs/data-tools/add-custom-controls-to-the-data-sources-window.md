@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648915"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587113"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 
@@ -39,7 +39,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
 2. En la ventana **orígenes de datos** , haga clic en un elemento que forme parte de un origen de datos que haya agregado a la ventana y, a continuación, haga clic en el menú desplegable del elemento.
 
    > [!TIP]
-   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **ver**  > **otras ventanas**  > **orígenes de datos**.
+   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **ver** > **otras ventanas** > **orígenes de datos**.
 
 3. En el menú desplegable, haga clic en **personalizar**. Se abre uno de los cuadros de diálogo siguientes:
 
@@ -76,7 +76,7 @@ Para agregar controles a la lista de controles asociados:
 
      El control debe tener uno de los siguientes atributos:
 
-    |Atributo|Descripción|
+    |Attribute|Descripción|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, como un <xref:System.Windows.Forms.TextBox>.|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, como un <xref:System.Windows.Forms.DataGridView>.|

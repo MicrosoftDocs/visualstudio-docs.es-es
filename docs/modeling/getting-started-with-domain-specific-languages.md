@@ -2,17 +2,17 @@
 title: Introducción a los lenguajes específicos de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985051"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596572"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -147,7 +147,7 @@ La definición de DSL puede especificar cómo aparece el modelo en un diagrama. 
 
 Puede ver un modelo como un árbol en la vista del **Explorador** mientras edita un modelo. A medida que se agregan formas al diagrama, los elementos del modelo también aparecen en el explorador. Se puede usar el explorador aunque no haya ningún diagrama.
 
-Si no puede ver el explorador en la instancia de depuración de Visual Studio, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en *\<Your Language >* **Explorer**.
+Si no puede ver el explorador en la instancia de depuración de Visual Studio, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en *\<el explorador de > de idioma*.
 
 ### <a name="the-api-of-your-dsl"></a>La API de su DSL
 
@@ -209,7 +209,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
     2. Abra el ventana Propiedades y colóquelo para poder ver las propiedades y el explorador de DSL al mismo tiempo.
 
-    3. En el explorador de DSL, expanda **Editor**, **pestañas del cuadro de herramientas**, *\<your > de DSL*y, a continuación, **herramientas**.
+    3. En el explorador de DSL, expanda **Editor**, **pestañas del cuadro de herramientas** *\<la > DSL*y, a continuación, **herramientas**.
 
     4. Haga clic en **ExampleElement**. Este es el elemento del cuadro de herramientas que se usa para crear elementos.
 
@@ -264,7 +264,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 3. Asigne los elementos Decorator a las propiedades.
 
-   1. Abra la ventana detalles de DSL. Normalmente, se encuentra en una pestaña junto a la ventana de salida. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en **detalles de DSL**.
+   1. Abra la ventana DSL Details (Detalles de DSL). Normalmente, se encuentra en una pestaña junto a la ventana de salida. Si no lo ve, en el menú **Ver** , seleccione **otras ventanas**y, a continuación, haga clic en **detalles de DSL**.
 
    2. En el diagrama de definición de DSL, haga clic en la línea que conecta la clase de dominio **Person** con la clase Shape.
 
@@ -333,7 +333,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
     1. En **DSL Explorer**, expanda **Editor** y, a continuación, **pestañas del cuadro de herramientas**.
 
-    2. Haga clic con el botón secundario en *\<your > DSL* y haga clic en **Agregar nuevo elemento herramienta**.
+    2. Haga clic con el botón secundario en *\<el > DSL* y, a continuación, haga clic en **Agregar nuevo elemento**.
 
     3. Establezca la propiedad **nombre** de la nueva herramienta y establezca su propiedad **clase** en ciudad.
 
@@ -341,7 +341,7 @@ Cambiar el nombre de las clases de dominio y las relaciones existentes. Por ejem
 
 7. Cree una herramienta de conector para crear un vínculo entre ciudades y People.
 
-    1. Haga clic con el botón secundario en *\<your > DSL* y haga clic en **Agregar nueva herramienta de conector**.
+    1. Haga clic con el botón derecho en *\<el > DSL* y, a continuación, haga clic en **Agregar nueva herramienta de conector**.
 
     2. Establezca la propiedad nombre de la nueva herramienta.
 

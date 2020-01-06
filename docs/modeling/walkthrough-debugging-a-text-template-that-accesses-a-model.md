@@ -2,17 +2,17 @@
 title: 'Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344a9331ed63d2da27379770305905ecf5edee77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593530"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
 Al modificar o agregar plantillas de texto en una solución de lenguaje específico de dominio, es posible que se produzcan errores cuando el motor transforme la plantilla en código fuente o cuando compile el código generado. En el siguiente tutorial se muestran algunas de las cosas que puede hacer para depurar una plantilla de texto.
@@ -45,7 +45,7 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 3. Asegúrese de que la propiedad **herramienta personalizada** de DebugTest.TT está establecida en `TextTemplatingFileGenerator`.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Directivas de depuración que obtienen acceso a un modelo desde una plantilla de texto
- Para poder tener acceso a un modelo desde las instrucciones y expresiones de una plantilla de texto, primero debe llamar a un procesador de directivas generado. La llamada al procesador de directivas generado hace que las clases del modelo estén disponibles para el código de plantilla de texto como propiedades. Para obtener más información, consulte [acceso a los modelos desde plantillas de texto](../modeling/accessing-models-from-text-templates.md).
+ Para poder tener acceso a un modelo desde las instrucciones y expresiones de una plantilla de texto, primero debe llamar a un procesador de directivas generado. La llamada al procesador de directivas generado hace que las clases del modelo estén disponibles para el código de plantilla de texto como propiedades. Para obtener más información, consulte [acceso a los modelos de plantillas de texto](../modeling/accessing-models-from-text-templates.md).
 
  En los siguientes procedimientos, depurará un nombre de directiva incorrecto y un nombre de propiedad incorrecto.
 
@@ -157,11 +157,11 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
      (C#)
 
-     **Compilando transformación: Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation ' no contiene una definición para ' ExampleModel '**
+     **Compilando transformación: Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation ' no contiene una definición para ' ExampleModel '**
 
      (Visual Basic)
 
-     **Compilando transformación: ' ExampleModel ' no es un miembro de ' Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation'.**
+     **Compilando transformación: ' ExampleModel ' no es un miembro de ' Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation'.**
 
      En este caso, el código de la plantilla de texto contiene un nombre de propiedad incorrecto. Ha especificado `ExampleModel` como el nombre de la propiedad, pero el nombre de propiedad correcto es `LibraryModel`. Puede encontrar el nombre de propiedad correcto en el parámetro proporciona, tal y como se muestra en el código siguiente:
 

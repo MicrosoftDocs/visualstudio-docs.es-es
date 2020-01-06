@@ -2,17 +2,17 @@
 title: 'Cómo: ... con plantillas de texto'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fc29b7daa65a9aa0b0c45ae5bc90a4f845dedff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605625"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594661"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Las plantillas de texto de Visual Studio proporcionan una manera útil de generar texto de cualquier tipo. Puede usar plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar parte del código del proyecto. En este tema se resume el "Cómo...?" más frecuente. las.
@@ -35,7 +35,7 @@ Las plantillas de texto de Visual Studio proporcionan una manera útil de genera
 
 - Si desea generar a partir de plantillas que solo están disponibles en tiempo de ejecución, puede usar plantillas de texto estándar. Si está escribiendo una extensión de Visual Studio, puede invocar el servicio de plantillas de texto. Para obtener más información, consulte [invocar la transformación de texto en una extensión de vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). En otros contextos, puede usar el motor de plantillas de texto. Para obtener más información, vea <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Use la Directiva \< # @parameter # > para pasar parámetros a estas plantillas. Para obtener más información, consulte [la Directiva de parámetros T4](../modeling/t4-parameter-directive.md).
+     Use la Directiva \<#@parameter# > para pasar parámetros a estas plantillas. Para obtener más información, consulte [la Directiva de parámetros T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Leer otro archivo de proyecto de una plantilla
  Para leer un archivo del mismo proyecto de Visual Studio que la plantilla:
@@ -48,7 +48,7 @@ Las plantillas de texto de Visual Studio proporcionan una manera útil de genera
 
 Si los métodos ya existen, por ejemplo, en las clases de .NET:
 
-- Use la Directiva \< # @assembly # > para cargar el ensamblado y use \< # @import # > para establecer el contexto del espacio de nombres. Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
+- Use la Directiva \<#@assembly# > para cargar el ensamblado y use \<#@import# > para establecer el contexto del espacio de nombres. Para obtener más información, vea [Directiva de importación T4](../modeling/t4-import-directive.md).
 
    Si usa con frecuencia el mismo conjunto de directivas de ensamblado e importación, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos del modelo y establecer el contexto del espacio de nombres. Para obtener más información, vea [crear procesadores de directivas de plantillas de texto T4 personalizadas](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -94,7 +94,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Ejecutar plantillas de texto en el proceso de compilación
 
-- Para obtener más información, vea [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+- Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="more-general-questions"></a>Preguntas más generales
 

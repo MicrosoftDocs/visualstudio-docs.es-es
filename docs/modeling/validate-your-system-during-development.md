@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328b600a21adf274d1d016f595438eb5622ee853
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594037"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 
@@ -35,7 +35,7 @@ Use las tareas siguientes para validar el software:
 
 |**Categoría**|**Links**|
 |-|-|
-|**Vídeos**|![link al vídeo ](../data-tools/media/playvideo.gif) [Channel 9: Doug siete: Descripción del código y diseño de sistemas con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link al vídeo ](../data-tools/media/playvideo.gif) [Channel 9: diseño de una aplicación](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
+|**Vídeos**|![vínculo al vídeo](../data-tools/media/playvideo.gif) [Channel 9: Doug siete: comprensión del código y diseño del sistema con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![vínculo al vídeo](../data-tools/media/playvideo.gif) [Channel 9: diseño de una aplicación](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
 |**Foros**|- [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />extensibilidad de - [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>Vea también

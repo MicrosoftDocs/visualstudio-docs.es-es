@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590623"
 ---
 # <a name="access-models-from-text-templates"></a>Acceder a los modelos desde plantillas de texto
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Cargar modelos dinámicamente
  Si desea determinar en tiempo de ejecución qué modelos se van a cargar, puede cargar dinámicamente un archivo de modelo en el código del programa, en lugar de usar la Directiva específica de DSL.
 
- Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar **\<assembly >** y \<import directivas de **>** para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
+ Sin embargo, una de las funciones de la Directiva específica de DSL es importar el espacio de nombres DSL para que el código de plantilla pueda usar las clases de dominio definidas en ese DSL. Dado que no está utilizando la Directiva, debe agregar **\<> de ensamblado** y **\<importar** directivas de > para todos los modelos que puede cargar. Esto es fácil si los diferentes modelos que puede cargar son todas las instancias del mismo DSL.
 
- Para cargar el archivo, el método más eficaz es mediante el uso de Visual Studio ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la manera habitual. Ese modelo contiene referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo al que se hace referencia y obtener acceso a un elemento determinado. Para obtener más información, vea [usar Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Para cargar el archivo, el método más eficaz es mediante el uso de Visual Studio ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la manera habitual. Ese modelo contiene referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo al que se hace referencia y obtener acceso a un elemento determinado. Para obtener más información, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que solo tenga un nombre de archivo y que no esté en el proyecto actual de Visual Studio. En este caso, puede abrir el archivo mediante la técnica descrita en [Cómo: abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` invoca `LoopTemplate.t4` y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
+ `LoopSplitter.tt` invoca `LoopTemplate.t4`y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, ya que no lee el modelo.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

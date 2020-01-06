@@ -3,17 +3,17 @@ title: Conjunto de reglas Reglas de seguridad para código administrado
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea23186ff03ccdb0ff7678380eadc866b63654f2
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587230"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
 
@@ -86,4 +86,4 @@ Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis
 |[CA3010](../code-quality/ca3010.md)|Revisión de código en busca de vulnerabilidades de inyección de XAML|
 |[CA3011](../code-quality/ca3011.md)|Revisión de código en busca de vulnerabilidades de inyección de DLL|
 |[CA3012](../code-quality/ca3012.md)|Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares|
-|[CA5403](../code-quality/ca5403.md)|No codificar certificado de forma rígida|
+|[CA5403](../code-quality/ca5403.md)|No codificar el certificado de forma rígida|

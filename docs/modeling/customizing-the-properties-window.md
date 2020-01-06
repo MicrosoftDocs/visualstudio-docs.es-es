@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589700"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar el ventana Propiedades
 
@@ -40,7 +40,7 @@ Algunas de las características dinámicas de los elementos gráficos se pueden 
 
 Haga clic con el botón secundario en una clase de forma en definición de DSL, elija **Agregar exposición**y, a continuación, elija una característica.
 
-En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores puede exponer el **Color** `,` propiedades**textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
+En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores puede exponer el **Color**`,`propiedades **textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío: mostrar las propiedades de los elementos relacionados
 
@@ -62,7 +62,7 @@ Cuando el usuario selecciona una forma o un conector, o un elemento en el explor
 
 ### <a name="add-property-forwarding"></a>Agregar reenvío de propiedades
 
-Para reenviar una propiedad, se define un descriptor de tipo de dominio. Si tiene una relación de dominio entre dos clases de dominio, puede utilizar un descriptor de tipo de dominio para establecer una propiedad de dominio de la primera clase en el valor de una propiedad de dominio en la segunda clase de dominio. Por ejemplo, si tiene una relación entre una clase de dominio de **libro** y una clase de dominio de **autor** , puede utilizar un descriptor de tipo de dominio para que la propiedad de **nombre** del **autor** de un libro aparezca en el ventana Propiedades cuando el usuario selecciona el libro.
+Para reenviar una propiedad, se define un descriptor de tipo de dominio. Si tiene una relación de dominio entre dos clases de dominio, puede utilizar un descriptor de tipo de dominio para establecer una propiedad de dominio de la primera clase en el valor de una propiedad de dominio en la segunda clase de dominio. Por ejemplo, si tiene una relación entre una clase de dominio de **libro** y una clase de dominio de **autor** , puede utilizar un descriptor de tipo de dominio para que la propiedad de **nombre** del **autor** de un libro aparezca en el ventana Propiedades cuando el usuario seleccione el libro.
 
 > [!NOTE]
 > El reenvío de propiedades solo afecta al ventana Propiedades cuando el usuario está editando un modelo. No define una propiedad de dominio en la clase receptora. Si desea tener acceso a la propiedad de dominio reenviado en otras partes de la definición de DSL o en el código del programa, debe tener acceso al elemento de reenvío.
@@ -183,7 +183,7 @@ Para definir un editor, escriba una clase que se derive de <xref:System.Drawing.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor abrirá un cuadro de diálogo o proporcionará un menú desplegable.
 
-También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported` y `PaintValue`.  Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
+También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`y `PaintValue`.  Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Agregue el código en un archivo de código independiente en el proyecto **DSL** .

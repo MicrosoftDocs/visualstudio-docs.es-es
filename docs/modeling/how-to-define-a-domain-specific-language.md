@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985154"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594687"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), se crea una solución de Visual Studio a partir de una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
@@ -66,7 +66,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
    - Seleccione el **idioma mínimo** en otros casos o si no está seguro.
 
-   - Seleccione el **Diseñador de WinForm mínimo** o el **Diseñador de WPF mínimo** para crear un DSL que se muestre en una superficie de Windows Forms o WPF. Tendrá que escribir código para definir el editor. Para obtener más información, vea los temas siguientes:
+   - Seleccione el **Diseñador de WinForm mínimo** o el **Diseñador de WPF mínimo** para crear un DSL que se muestre en una superficie de Windows Forms o WPF. Tendrá que escribir código para definir el editor. Para obtener más información, consulta los temas siguientes:
 
         [Crear lenguajes específicos de dominio basados en Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -190,7 +190,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
  Haga clic en **propiedades de dominio** en la clase, presione la tecla entrar y, a continuación, escriba el nombre de una propiedad. El tipo predeterminado de una propiedad de dominio es String. Si desea cambiar el tipo, seleccione la propiedad dominio y establezca el **tipo** en la ventana **propiedades** . Si el tipo que desea no está en la lista desplegable, vea [agregar tipos de propiedad](#addTypes).
 
- **Establezca una propiedad de nombre de elemento.** Seleccione una propiedad de dominio que se pueda usar para identificar elementos en el explorador de lenguajes. Por ejemplo, en la clase de dominio Song que pueda seleccionar la propiedad de dominio Title (Título). En la ventana **propiedades** , establezca **el nombre del elemento** en `true`.
+ **Establezca una propiedad de nombre de elemento.** Seleccione una propiedad de dominio que se pueda usar para identificar los elementos en el explorador del lenguaje. Por ejemplo, en la clase de dominio Song que pueda seleccionar la propiedad de dominio Title (Título). En la ventana **propiedades** , establezca **el nombre del elemento** en `true`.
 
 ### <a name="create-derived-domain-classes"></a>Crear clases de dominio derivadas
  Si quiere que una clase de dominio tenga variantes que hereden sus propiedades y relaciones, cree clases que deriven de ella. Por ejemplo, Album podría tener las clases derivadas WMA y MP3.
@@ -344,7 +344,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
  **Ajuste las multiplicidades de cada rol**, si es necesario. Si quiere que cada persona tenga al menos un director, establezca la multiplicidad que aparece debajo de la etiqueta Director en el diagrama a 0..1.
 
- **Agregar propiedades de dominio a la relación.** En la ilustración, la relación artista-álbum tiene una propiedad de rol.
+ **Agregar propiedades de dominio a la relación.** En la figura, la relación Artist-Album tiene una propiedad de rol.
 
  **Establezca la propiedad permite duplicados de la relación,** si puede haber más de un vínculo de la misma clase entre el mismo par de elementos de modelo. Por ejemplo, podría permitir que un Profesor enseñe más de una Asignatura al mismo Estudiante.
 
@@ -396,7 +396,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
 5. **Cree conexiones** entre las formas. Haga clic en la herramienta de conector, en una forma y, después, en otra forma.
 
-6. **Compruebe que no puede crear conexiones entre clases inadecuadas.** Por ejemplo, si la relación se encuentra entre álbumes y artistas, compruebe que no puede vincular artistas a artistas.
+6. **Compruebe que no puede crear conexiones entre clases inadecuadas.** Por ejemplo, si su relación es entre Albums y Artists, compruebe que no puede vincular Artists con Artists.
 
 7. **Compruebe que las multiplicidades son correctas. Por ejemplo, compruebe que no puede conectar una persona a más de un administrador.**
 
@@ -606,7 +606,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 
  Vea también [Cómo: cambiar el espacio de nombres de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Solución
+## <a name="trouble"></a> Solucionar problemas
  En la tabla siguiente se enumeran algunos de los problemas más comunes que se encuentran al diseñar un DSL, además de sugerencias para solucionarlos. Encontrará más consejos en el [Foro de extensibilidad de herramientas de visualización](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problema | Sugerencia |

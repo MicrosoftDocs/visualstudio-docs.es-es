@@ -2,17 +2,17 @@
 title: 'Cómo: Usar transacciones para actualizar el modelo'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a08ea67477f42008c35b6f141351beaeee03d27b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661135"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594609"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Cómo: Usar transacciones para actualizar el modelo
 Las transacciones garantizan que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan se pueden confirmar o revertir como una sola unidad.
@@ -88,7 +88,7 @@ catch (Exception ex)
 
  Esto es especialmente útil para transferir información entre reglas.
 
-## <a name="transaction-state"></a>Estado de la transacción
+## <a name="transaction-state"></a>Estado de las transacciones
  En algunos casos, debe evitar propagar un cambio si el cambio se debe a deshacer o rehacer una transacción. Esto puede ocurrir, por ejemplo, si escribe un controlador de valores de propiedad que puede actualizar otro valor en el almacén. Dado que la operación de deshacer restablece todos los valores del almacén a sus Estados anteriores, no es necesario calcular los valores actualizados. Use este código:
 
 ```csharp

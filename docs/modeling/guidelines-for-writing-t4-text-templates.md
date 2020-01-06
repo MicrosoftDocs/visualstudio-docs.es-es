@@ -2,17 +2,17 @@
 title: Instrucciones para escribir plantillas de texto T4
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667288"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596546"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 
@@ -115,7 +115,7 @@ En **MyReportText-Methods.CS**:
 
 Permitir código personalizado: proporcione puntos de extensión.
 
-Considere la posibilidad de generar métodos virtuales en \< n.º de bloques de características de clase # + >. Esto permite usar una única plantilla en muchos contextos sin modificarla. En lugar de modificar la plantilla, puede construir una clase derivada que proporcione la lógica adicional mínima. La clase derivada puede ser código normal o puede ser una plantilla en tiempo de ejecución.
+Considere la posibilidad de generar métodos virtuales en \<n.º de bloques de características de clase # + >. Esto permite usar una única plantilla en muchos contextos sin modificarla. En lugar de modificar la plantilla, puede construir una clase derivada que proporcione la lógica adicional mínima. La clase derivada puede ser código normal o puede ser una plantilla en tiempo de ejecución.
 
 Por ejemplo, en MyStandardRunTimeTemplate.tt:
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Recopilación de datos independientes de la generación de texto.
 
-Intente evitar mezclar el cálculo y los bloques de texto. En cada plantilla de texto, use el primer \< # Code Block # > para establecer variables y realizar cálculos complejos. En el primer bloque de texto hasta el final de la plantilla o la primera \< bloque # + de características de clase # >, evite expresiones largas y evite bucles y condicionales a menos que contengan bloques de texto. Esta práctica facilita la lectura y el mantenimiento de la plantilla.
+Intente evitar mezclar el cálculo y los bloques de texto. En cada plantilla de texto, use el primer \<# Code Block # > para establecer variables y realizar cálculos complejos. En el primer bloque de texto hasta el final de la plantilla o la primera \<bloque # + de características de clase # >, evite expresiones largas y evite bucles y condicionales a menos que contengan bloques de texto. Esta práctica facilita la lectura y el mantenimiento de la plantilla.
 
 No use `.tt` para archivos de inclusión.
 

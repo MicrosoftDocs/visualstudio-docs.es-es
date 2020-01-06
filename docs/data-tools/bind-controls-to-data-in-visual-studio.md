@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587035"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
 
@@ -36,7 +36,7 @@ En el contexto del enlace de datos, un origen de datos representa los datos en m
 | Entity Data Model | Sí<sup>1</sup> | Sí | Sí |
 | Clases LINQ to SQL | No<sup>2</sup> | No<sup>2</sup> | No<sup>2</sup> |
 | Servicios como [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servicios WCF y servicios Web | Sí | Sí | Sí |
-| Object | Sí | Sí | Sí |
+| Objeto de | Sí | Sí | Sí |
 | SharePoint | Sí | Sí | Sí |
 
 1. Genere el modelo con el Asistente para **Entity Data Model** y, a continuación, arrastre esos objetos al diseñador.
@@ -45,7 +45,7 @@ En el contexto del enlace de datos, un origen de datos representa los datos en m
 
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
 
-Los orígenes de datos están disponible para su proyecto como elementos en la ventana **Orígenes de datos**. Esta ventana está visible cuando una superficie de diseño de un formulario es la ventana activa del proyecto, o puede abrirla (cuando un proyecto está abierto) eligiendo **ver**  >  otros**orígenes de datos**de**Windows**  > . Puede arrastrar elementos desde esta ventana para crear controles enlazados a los datos subyacentes, y también puede configurar los orígenes de datos haciendo clic con el botón secundario.
+Los orígenes de datos están disponible para su proyecto como elementos en la ventana **Orígenes de datos**. Esta ventana está visible cuando una superficie de diseño de un formulario es la ventana activa del proyecto, o puede abrirla (cuando un proyecto está abierto) eligiendo **ver** > otros **orígenes de datos**de **Windows** > . Puede arrastrar elementos desde esta ventana para crear controles enlazados a los datos subyacentes, y también puede configurar los orígenes de datos haciendo clic con el botón secundario.
 
 ![Ventana de orígenes de datos](../data-tools/media/raddata-data-sources-window.png)
 
@@ -57,7 +57,7 @@ En la tabla siguiente se enumeran algunas de las tareas más comunes que se real
 
 |Tarea|Más información|
 |----------| - |
-|Abra la ventana **Orígenes de datos**.|Abra una superficie de diseño en el editor y elija **ver**  > **orígenes de datos**.|
+|Abra la ventana **Orígenes de datos**.|Abra una superficie de diseño en el editor y elija **ver** > **orígenes de datos**.|
 |Agregue un origen de datos al proyecto.|[Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)|
 |Establezca el control que se crea cuando se arrastra un elemento de la ventana **Orígenes de datos** al diseñador.|[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifique la lista de controles que están asociados a elementos en la ventana **Orígenes de datos**.|[Agregar controles personalizados a la ventana Orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a57236d42ed38070d79843ecf4097c3af80239a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 004f10600df3ed2f9c1f62557e0915638482877e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649076"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587217"
 ---
 # <a name="security-warnings"></a>Advertencias de seguridad
 
@@ -102,7 +102,7 @@ Las advertencias de seguridad son compatibles con las bibliotecas y aplicaciones
 |[CA3012: revisar el código para detectar vulnerabilidades de inyección de Regex](../code-quality/ca3012.md)|Al trabajar con una entrada que no es de confianza, tenga en cuentan los ataques por inyección de Regex. Un atacante puede usar la inyección de Regex para modificar de forma malintencionada una expresión regular, para hacer que el regex coincida con los resultados imprevistos o para hacer que la expresión regular consuma una CPU excesiva, lo que produce un ataque de denegación de servicio.|
 |[CA3061: no agregar esquema por dirección URL](../code-quality/ca3061.md)|No use la sobrecarga no segura del método Add porque puede provocar referencias externas peligrosas.|
 |[CA3075: Insecure DTD Processing (Procesamiento no seguro de la DTD)](../code-quality/ca3075.md)|Si usa instancias de DTDProcessing inseguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.|
-|[CA3076: Insecure XSLT Script Execution (Ejecución del script XSLT no segura)](../code-quality/ca3076.md)|Si ejecuta el lenguaje de transformación basado en hojas de estilo (XSLT) en aplicaciones .NET de forma insegura, el procesador podría resolver referencias URI que no sean de confianza y que podrían revelar información confidencial a atacantes, dando lugar a ataques de denegación de servicio y entre sitios.|
+|[CA3076: Insecure XSLT Script Execution (Ejecución del script XSLT no segura)](../code-quality/ca3076.md)|Si ejecuta el lenguaje de transformación basado en hojas de estilo (XSLT) en aplicaciones .NET de forma no segura, el procesador podría resolver referencias URI que no sean de confianza y que podrían revelar información confidencial a atacantes, lo que daría lugar a ataques de denegación de servicio y entre sitios.|
 |[CA3077: procesamiento inseguro en el diseño de una API, documento XML y lector de texto XML](../code-quality/ca3077.md)|Al diseñar una API derivada de XMLDocument y XMLTextReader, tenga en cuenta la propiedad DtdProcessing. El uso de instancias de DTDProcessing inseguras al hacer referencia a orígenes de entidades externas o resolverlos, o la definición de valores inseguros en el lenguaje XML puede provocar la divulgación de información.|
 |[CA3147: Marque los controladores de verbo con ValidateAntiForgeryToken](../code-quality/ca3147.md)|Al diseñar un controlador ASP.NET MVC, tenga en cuentan los ataques de falsificación de solicitudes entre sitios. Un ataque de falsificación de solicitudes entre sitios puede enviar solicitudes malintencionadas de un usuario autenticado a su controlador ASP.NET MVC.|
 |[CA5122: Las declaraciones P/Invoke no deben ser críticas para la seguridad](../code-quality/ca5122.md)|Los métodos se marcan como SecuritySafeCritical cuando realizan una operación que afecta a la seguridad pero también son seguros para su uso en código transparente. El código transparente nunca puede llamar a código nativo a través de P/Invoke. Por consiguiente, aunque se marque P/Invoke como crítico para la seguridad y disponible desde código transparente no permitirá que se llame desde código transparente llamarlo, y es erróneo para los análisis de seguridad.|

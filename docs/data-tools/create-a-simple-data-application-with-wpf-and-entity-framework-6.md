@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642922"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586905"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 
@@ -26,7 +26,7 @@ Este artículo se centra en el uso de herramientas de datos en Visual Studio y n
 
 En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind. Si el proveedor de datos ADO.NET para ese producto es compatible con Entity Framework, debería funcionar también con otros productos de SQL Database.
 
-1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la carga de trabajo de **desarrollo de escritorio de .net** o como un componente individual.
+1. Si no tiene SQL Server Express LocalDB, instálelo desde la [Página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o a través de la **instalador de Visual Studio**. En el **Instalador de Visual Studio**, puede instalar LocalDB de SQL Server Express como parte de la carga de trabajo de **desarrollo de escritorio de .NET** o como un componente individual.
 
 2. Instale la base de datos de ejemplo Northwind siguiendo estos pasos:
 
@@ -46,7 +46,7 @@ En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo 
 
 1. En Visual Studio, cree un nuevo C# proyecto de **aplicación de WPF** .
 
-2. Agregue el paquete de NuGet para Entity Framework 6. En **Explorador de soluciones**, seleccione el nodo del proyecto. En el menú principal, elija **proyecto**  > **administrar paquetes NuGet**.
+2. Agregue el paquete de NuGet para Entity Framework 6. En **Explorador de soluciones**, seleccione el nodo del proyecto. En el menú principal, elija **proyecto** > **administrar paquetes NuGet**.
 
      ![Elemento de menú administrar paquetes NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo 
 
 ## <a name="create-the-model"></a>Creación del modelo
 
-1. Haga clic con el botón derecho en el nodo del proyecto en **Explorador de soluciones** y elija **Agregar**  > **nuevo elemento**. En el panel izquierdo, en el C# nodo, elija **datos** y, en el panel central, elija **ADO.NET Entity Data Model**.
+1. Haga clic con el botón derecho en el nodo del proyecto en **Explorador de soluciones** y elija **Agregar** > **nuevo elemento**. En el panel izquierdo, en el C# nodo, elija **datos** y, en el panel central, elija **ADO.NET Entity Data Model**.
 
    ![Modelo de Entity Framework nuevo elemento](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -86,7 +86,7 @@ En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo 
 
    - Reemplace la única aparición de <xref:System.Collections.Generic> (en torno a la línea 431) con <xref:System.Collections.ObjectModel>.
 
-7. Presione **Ctrl** +**MAYÚS** +**B** para compilar el proyecto. Cuando finaliza la compilación, las clases del modelo son visibles para el Asistente para orígenes de datos.
+7. Presione **Ctrl**+**MAYÚS**+**B** para compilar el proyecto. Cuando finaliza la compilación, las clases del modelo son visibles para el Asistente para orígenes de datos.
 
 Ahora ya puede enlazar este modelo a la página XAML para que pueda ver, navegar y modificar los datos.
 
@@ -94,7 +94,7 @@ Ahora ya puede enlazar este modelo a la página XAML para que pueda ver, navegar
 
 Es posible escribir su propio código de enlace de la propiedad, pero es mucho más fácil dejar que Visual Studio lo haga automáticamente.
 
-1. En el menú principal, elija **proyecto**  > **Agregar nuevo origen de datos** para abrir el **Asistente para configuración de orígenes de datos**. Elija **objeto** porque está enlazando a las clases del modelo, no a la base de datos:
+1. En el menú principal, elija **proyecto** > **Agregar nuevo origen de datos** para abrir el **Asistente para configuración de orígenes de datos**. Elija **objeto** porque está enlazando a las clases del modelo, no a la base de datos:
 
      ![Asistente para configuración de orígenes de datos con origen de objeto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ Es posible escribir su propio código de enlace de la propiedad, pero es mucho m
         </Grid.RowDefinitions>
     ```
 
-5. Ahora Abra *MainWindow. Xaml* para que lo esté viendo en el diseñador. Esto hace que la ventana **orígenes de datos** aparezca como una opción en el margen de la ventana de Visual Studio junto al **cuadro de herramientas**. Haga clic en la pestaña para abrir la ventana, o bien presione **mayús** +**Alt** +**D** o elija **Ver**  > **otras ventanas**  > **orígenes de datos**. Vamos a mostrar cada propiedad en la clase customers en su propio cuadro de texto individual. En primer lugar, haga clic en la flecha en el cuadro combinado **clientes** y elija **detalles**. A continuación, arrastre el nodo hasta la parte central de la superficie de diseño para que el diseñador sepa que desea que aparezca en la fila central. Si la coloca mal, puede especificar la fila manualmente más adelante en el código XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlos como desee en el formulario. Por ejemplo, puede que tenga sentido poner el cuadro de texto **nombre** en la parte superior, encima de la dirección. En la aplicación de ejemplo de este artículo se reordenan los campos y se reorganizan en dos columnas.
+5. Ahora Abra *MainWindow. Xaml* para que lo esté viendo en el diseñador. Esto hace que la ventana **orígenes de datos** aparezca como una opción en el margen de la ventana de Visual Studio junto al **cuadro de herramientas**. Haga clic en la pestaña para abrir la ventana, o bien presione **mayús**+**Alt**+**D** o elija **Ver** > **otras ventanas** > **orígenes de datos**. Vamos a mostrar cada propiedad en la clase customers en su propio cuadro de texto individual. En primer lugar, haga clic en la flecha en el cuadro combinado **clientes** y elija **detalles**. A continuación, arrastre el nodo hasta la parte central de la superficie de diseño para que el diseñador sepa que desea que aparezca en la fila central. Si la coloca mal, puede especificar la fila manualmente más adelante en el código XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlos como desee en el formulario. Por ejemplo, puede que tenga sentido poner el cuadro de texto **nombre** en la parte superior, encima de la dirección. En la aplicación de ejemplo de este artículo se reordenan los campos y se reorganizan en dos columnas.
 
      ![Enlace de origen de datos de los clientes a controles individuales](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -417,7 +417,7 @@ Hay cuatro partes en la lógica de comandos: (1) los comandos, (2) los enlaces, 
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Agregar controladores de comandos a la clase MainWindow
 
-El código subyacente es mínimo, a excepción de los métodos Add y DELETE. La navegación se realiza llamando a métodos en la propiedad View del CollectionViewSource. En el `DeleteOrderCommandHandler` se muestra cómo realizar una eliminación en cascada en un pedido. Primero tenemos que eliminar el Order_Details que está asociado a él. El `UpdateCommandHandler` agrega un nuevo cliente o pedido a la colección, o bien simplemente actualiza un cliente o pedido existente con los cambios que el usuario realizó en los cuadros de texto.
+El código subyacente es mínimo, a excepción de los métodos Add y DELETE. La navegación se realiza llamando a métodos en la propiedad View del CollectionViewSource. En el `DeleteOrderCommandHandler` se muestra cómo realizar una eliminación en cascada en un pedido. Primero tenemos que eliminar los Order_Details asociados a él. El `UpdateCommandHandler` agrega un nuevo cliente o pedido a la colección, o bien simplemente actualiza un cliente o pedido existente con los cambios que el usuario realizó en los cuadros de texto.
 
 Agregue estos métodos de controlador a la clase MainWindow en *MainWindow.Xaml.CS*. Si el CollectionViewSource de la tabla Customers tiene un nombre diferente, debe ajustar el nombre en cada uno de estos métodos:
 

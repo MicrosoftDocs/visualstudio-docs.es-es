@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736706"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404357"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No se puede iniciar la depuración en el servidor Web
 
@@ -52,6 +52,7 @@ El mensaje `Unable to start debugging on the Web server` es genérico. Normalmen
 - [No se pudo iniciar la depuración de ASP.NET](#aspnet)
 - [El depurador no se puede conectar al equipo remoto](#cannot_connect)
 - [Busque en la ayuda los errores de configuración comunes. Ejecución de la página Web fuera del depurador puede proporcionar más información.](#see_help)
+- [Operación no admitida. Error desconocido: *númeroerror*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS no muestra un sitio web que coincida con la dirección URL de inicio
 
@@ -76,7 +77,7 @@ El mensaje `Unable to start debugging on the Web server` es genérico. Normalmen
 ## <a name="msvsmon"></a> El Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no parece estar ejecutándose en el equipo remoto
 
 - Si realiza la depuración en un equipo remoto, asegúrese de que ha [instalado y ejecuta el depurador remoto](../debugger/remote-debugging.md). Si el mensaje menciona un firewall, asegúrese de que estén abiertos los [puertos correctos en el Firewall](../debugger/remote-debugger-port-assignments.md) , especialmente si usa un firewall de terceros.
-- Si está utilizando un archivo de hosts, asegúrese de que está configurado correctamente. Por ejemplo, si se depura con **F5** (en lugar de **asociar al proceso**), el archivo de hosts debe incluir la misma dirección URL del proyecto que en las propiedades del proyecto, **propiedades > servidores > Web** o **Propiedades > depurar**, dependiendo de el tipo de proyecto.
+- Si está utilizando un archivo de hosts, asegúrese de que está configurado correctamente. Por ejemplo, si se depura con **F5** (en lugar de **asociar al proceso**), el archivo de hosts debe incluir la misma dirección URL del proyecto que en las propiedades del proyecto, **propiedades > servidores > Web** o **Propiedades > depurar**, dependiendo del tipo de proyecto.
 
 ## <a name="server_error"></a>El servidor remoto devolvió un error
 
@@ -106,6 +107,10 @@ Además, si está usando un archivo de hosts, asegúrese de que está configurad
 
 - Si eso no funciona o está depurando de forma remota, siga los pasos descritos en [comprobar la configuración de IIS](#vxtbshttpservererrorsthingstocheck).
 
+## <a name="operation_not_supported"></a>Operación no admitida. Error desconocido: *númeroerror*
+
+Si va a realizar reescrituras de direcciones URL, pruebe un archivo Web. config básico sin reescritura de direcciones URL. Vea la **Nota** sobre el módulo URL Rewrite en [comprobar la configuración de IIS](#vxtbshttpservererrorsthingstocheck).
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Comprobar la configuración de IIS
 
 Después de seguir los pasos detallados aquí para resolver el problema y antes de volver a intentar la depuración, es posible que también necesite restablecer IIS. Para ello, abra un símbolo del sistema con privilegios elevados y escriba `iisreset`.
@@ -125,7 +130,7 @@ Después de seguir los pasos detallados aquí para resolver el problema y antes 
 
 * Compruebe que la carpeta de la aplicación web tiene los permisos adecuados.
 
-    Asegúrese de proporcionar a IIS_IUSRS, IUSR o el usuario específico asociado al [grupo de aplicaciones](/iis/manage/configuring-security/application-pool-identities) derechos de lectura y ejecución para la carpeta de la aplicación Web. Corrija el problema y reinicie el grupo de aplicaciones.
+    Asegúrese de proporcionar IIS_IUSRS, IUSR o el usuario específico asociado con el [grupo de aplicaciones](/iis/manage/configuring-security/application-pool-identities) derechos de lectura y ejecución para la carpeta de la aplicación Web. Corrija el problema y reinicie el grupo de aplicaciones.
 
 * Asegúrese de que la versión correcta de ASP.NET está instalada en IIS.
 

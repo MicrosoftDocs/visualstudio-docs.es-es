@@ -2,17 +2,17 @@
 title: Directiva de ensamblado T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591897"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 
@@ -36,7 +36,7 @@ En una plantilla de texto en tiempo de diseño de Visual Studio, la Directiva `a
 
 - La ruta de acceso absoluta del ensamblado
 
-  Puede usar la sintaxis de `$(variableName)` para hacer referencia a variables de Visual Studio como `$(SolutionDir)` y `%VariableName%` para hacer referencia a variables de entorno. Por ejemplo:
+  Puede usar la sintaxis de `$(variableName)` para hacer referencia a variables de Visual Studio como `$(SolutionDir)`y `%VariableName%` para hacer referencia a variables de entorno. Por ejemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

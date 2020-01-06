@@ -9,29 +9,29 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587191"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 
 Las advertencias de uso admiten el uso correcto de .NET.
 
-## <a name="in-this-section"></a>En esta sección
+## <a name="in-this-section"></a>Esta sección
 
 |Regla|Descripción|
 |----------|-----------------|
 |[CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801.md)|Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método.|
 |[CA1806: No omitir resultados del método](../code-quality/ca1806.md)|Se crea un nuevo objeto pero nunca se utiliza, o se llama a un método que crea y devuelve una nueva cadena y esta nunca se utiliza, o un método COM o P/Invoke devuelve un código de error o HRESULT que nunca se utiliza.|
-|[CA1816: Llame a GC.SuppressFinalize correctamente](../code-quality/ca1816.md)|Un método que es una implementación de Dispose no llama a GC. SuppressFinalize o un método que no es una implementación de Dispose llama a GC. SuppressFinalize o un método llama a GC. SuppressFinalize y pasa algo distinto de This (me en Visual Basic).|
+|[CA1816: Llame a GC.SuppressFinalize correctamente](../code-quality/ca1816.md)|Un método que es una implementación de Dispose no llama a GC. SuppressFinalize; o un método que no es una implementación de Dispose llama a GC. SuppressFinalize; o un método llama a GC. SuppressFinalize y pasa un valor distinto de esto (Me en Visual Basic).|
 |[CA2200: Reiniciar para mantener los detalles de la pila](../code-quality/ca2200.md)|Se vuelve a producir una excepción y se especifica explícitamente en la instrucción throw. Si se vuelve a producir una excepción especificándola en la instrucción throw, se pierde la lista de llamadas al método entre el método original que produjo la excepción y el método actual.|
 |[CA2201: No provocar tipos de excepción reservados](../code-quality/ca2201.md)|Esto hace que el error original sea difícil de detectar y depurar.|
 |[CA2202: No usar Dispose varias veces en objetos](../code-quality/ca2202.md)|La implementación de un método contiene rutas de acceso del código que podrían provocar varias llamadas a System.IDisposable.Dispose o a un equivalente de Dispose (como un método Close() en algunos tipos) en el mismo objeto.|

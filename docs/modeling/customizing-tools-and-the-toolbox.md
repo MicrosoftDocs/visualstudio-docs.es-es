@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589726"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 
@@ -69,7 +69,7 @@ La propiedad del **generador de conexiones** de una herramienta de conexión hac
 
 3. Establezca la propiedad **icono del cuadro de herramientas** para que haga referencia a un mapa de bits de 16x16.
 
-     Si desea definir un nuevo icono, cree un archivo de mapa de bits en Explorador de soluciones en la carpeta **Dsl\Resources** . El archivo debe tener los siguientes valores de propiedad: **acción de compilación**  = **contenido**; **Copiar en el directorio de salida**  =  no**copiar**.
+     Si desea definir un nuevo icono, cree un archivo de mapa de bits en Explorador de soluciones en la carpeta **Dsl\Resources** . El archivo debe tener los siguientes valores de propiedad: **acción de compilación** = **contenido**; **Copiar en el directorio de salida** = no **copiar**.
 
 4. **Para una herramienta de elemento:** Establezca la propiedad **clase** de la herramienta para que haga referencia a una clase de dominio concreta que está asignada a una forma.
 
@@ -154,12 +154,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Los generadores de conexiones contienen una o varias directivas de conexión de vínculo, que especifican la relación de dominio y los elementos de origen y destino. Por ejemplo, en la plantilla de solución flujo de tareas, puede ver **CommentReferencesSubjectsBuilder** en el **Explorador de DSL**. Este generador de conexiones contiene una directiva de conexión de vínculo denominada **CommentReferencesSubjects**, que se asigna a la relación de dominio **CommentReferencesSubjects**. Esta directiva de conexión de vínculo contiene una directiva de rol de origen que apunta a la clase de dominio `Comment`, y una directiva de rol de destino que apunta a la clase de dominio `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Usar generadores de conexiones para restringir los roles de origen y destino
- Puede usar generadores de conexiones para restringir la aparición de determinadas clases en el rol de origen o en el rol de destino de una relación de dominio determinada. Por ejemplo, puede que tenga una clase de dominio base que tiene una relación de dominio con otra clase de dominio, pero quizás no quiera que todas las clases derivadas de la clase base tengan los mismos roles en esa relación. En la solución flujo de tareas, hay cuatro clases de dominio concretas (**StartPoint**, **Endpoint**, **MergeBranch**y **Synchronization**) que heredan directamente de la clase de dominio Abstract **FlowElement**y dos clases de dominio (**Task** y **ObjectInState**) que heredan de él indirectamente. También hay una relación de referencia de **flujo** que toma las clases de dominio de **FlowElement** en el rol de origen y en el rol de destino. Sin embargo, una instancia de una clase de dominio de **extremo** no debe ser el origen de una instancia de una relación de **flujo** ni una instancia de una clase **StartPoint** es el destino de una instancia de una relación de **flujo** . El generador de conexiones **FlowBuilder** tiene una directiva de conexión de vínculo denominada **Flow** que especifica qué clases de dominio pueden reproducir el rol de origen (**Task**, **MergeBranch**, **StartPoint**y **Synchronization**) y qué puede reproducir el rol de destino (**MergeBranch**, **punto de conexión**y **sincronización**).
+ Puede usar generadores de conexiones para restringir la aparición de determinadas clases en el rol de origen o en el rol de destino de una relación de dominio determinada. Por ejemplo, puede que tenga una clase de dominio base que tiene una relación de dominio con otra clase de dominio, pero quizás no quiera que todas las clases derivadas de la clase base tengan los mismos roles en esa relación. En la solución Task Flow, hay cuatro clases de dominio concretas (**StartPoint**, **Endpoint**, **MergeBranch**y **Synchronization**) que heredan directamente de la clase de dominio Abstract **FlowElement**y dos clases de dominio concretas (**Task** y **ObjectInState**) que heredan indirectamente de ella. También hay una relación de referencia de **flujo** que toma las clases de dominio de **FlowElement** en el rol de origen y en el rol de destino. Sin embargo, una instancia de una clase de dominio de **extremo** no debe ser el origen de una instancia de una relación de **flujo** ni una instancia de una clase **StartPoint** es el destino de una instancia de una relación de **flujo** . El generador de conexiones **FlowBuilder** tiene una directiva de conexión de vínculo denominada **Flow** que especifica qué clases de dominio pueden reproducir el rol de origen (**Task**, **MergeBranch**, **StartPoint**y **Synchronization**) y que pueden desempeñar el rol de destino (**MergeBranch**, **Endpoint**y **Synchronization**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Generadores de conexiones con varias directivas de conexión de vínculo
  Puede agregar más de una directiva de conexión de vínculo a un generador de conexiones. Esto puede ayudarle a ocultar algunas de las complejidades del modelo de dominio de los usuarios y evitar que el **cuadro de herramientas** esté demasiado abarrotado. Puede agregar directivas de conexión de vínculo para varias relaciones de dominio diferentes a un único generador de conexiones. Sin embargo, debe combinar las relaciones de dominio cuando realicen aproximadamente la misma función.
 
- En la solución Task Flow (flujo de tareas), la herramienta de conexión de **flujo** se usa para dibujar instancias de las relaciones de dominio **Flow** y **ObjectFlow** . El generador de conexiones **FlowBuilder** tiene, además de la Directiva de conexión de vínculo de **flujo** descrita anteriormente, dos directivas de conexión de vínculo denominadas **ObjectFlow**. Estas directivas especifican que se puede dibujar una instancia de una relación de **ObjectFlow** entre las instancias de la clase de dominio **ObjectInState** o una instancia de un **ObjectInState** a una instancia de una **tarea**, pero no entre dos instancias de una **tarea**o de una instancia de una **tarea** a una instancia de un **ObjectInState**. Sin embargo, una instancia de una relación de **flujo** se puede dibujar entre dos instancias de una **tarea**. Si compila y ejecuta la solución flujo de tareas, puede ver que al dibujar un **flujo** desde una instancia de un **ObjectInState** a una instancia de una **tarea** se crea una instancia de un **ObjectFlow**, pero se dibuja un **flujo** entre dos instancias. de una **tarea** crea una instancia de un **flujo**.
+ En la solución Task Flow (flujo de tareas), la herramienta de conexión de **flujo** se usa para dibujar instancias de las relaciones de dominio **Flow** y **ObjectFlow** . El generador de conexiones **FlowBuilder** tiene, además de la Directiva de conexión de vínculo de **flujo** descrita anteriormente, dos directivas de conexión de vínculo denominadas **ObjectFlow**. Estas directivas especifican que se puede dibujar una instancia de una relación de **ObjectFlow** entre instancias de la clase de dominio **ObjectInState** , o desde una instancia de un **ObjectInState** a una instancia de una **tarea**, pero no entre dos instancias de una **tarea**, o desde una instancia de una **tarea** a una instancia de un **ObjectInState**. Sin embargo, una instancia de una relación de **flujo** se puede dibujar entre dos instancias de una **tarea**. Si compila y ejecuta la solución flujo de tareas, puede ver que al dibujar un **flujo** desde una instancia de un **ObjectInState** a una instancia de una **tarea** se crea una instancia de un **ObjectFlow**, pero al dibujar un **flujo** entre dos instancias de una **tarea** se crea una instancia de un **flujo**.
 
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para generadores de conexiones
  Hay cuatro casillas en la interfaz de usuario que definen los diferentes tipos de personalización de los generadores de conexiones:

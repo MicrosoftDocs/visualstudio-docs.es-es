@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658337"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595896"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y extender las clases generadas
 
@@ -76,11 +76,11 @@ Un punto de extensión marcado es un lugar en la definición de DSL en el que pu
 
 En cada caso, al establecer la marca y volver a generar el código, se producirá un error de compilación. Haga doble clic en el error para ver un comentario que explica lo que debe proporcionar.
 
-### <a name="rules"></a>Reglas
+### <a name="rules"></a>reglas
 
 El administrador de transacciones permite definir reglas que se ejecutan antes del final de una transacción en la que se ha producido un evento designado, como un cambio en una propiedad. Las reglas se utilizan normalmente para mantener synchronism entre distintos elementos del almacén. Por ejemplo, las reglas se usan para asegurarse de que el diagrama muestra el estado actual del modelo.
 
-Las reglas se definen por clase, por lo que no es necesario tener código que registre la regla para cada objeto. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+Las reglas se definen por clase, por lo que no es necesario tener código que registre la regla para cada objeto. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Almacenar eventos
 

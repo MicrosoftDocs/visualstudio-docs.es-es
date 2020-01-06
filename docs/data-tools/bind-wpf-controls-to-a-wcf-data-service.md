@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924551"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586970"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -72,7 +72,7 @@ Para exponer datos a una aplicación mediante un servicio de datos de WCF, debe 
 
 2. En la lista Plantillas instaladas, haga clic en **Datos** y seleccione el elemento de proyecto **ADO.NET Entity Data Model**.
 
-3. Cambie el nombre a `AdventureWorksModel.edmx` y haga clic en **Agregar**.
+3. Cambie el nombre a `AdventureWorksModel.edmx`y haga clic en **Agregar**.
 
      Se abre el **Asistente para Entity Data Model**.
 
@@ -98,7 +98,7 @@ Cree un servicio de datos de WCF para exponer los datos de la Entity Data Model 
 
 2. En la lista **Plantillas instaladas**, haga clic en **Web** y seleccione el elemento de proyecto **Servicio de datos de WCF**.
 
-3. En el cuadro **nombre** , escriba `AdventureWorksService.svc` y haga clic en **Agregar**.
+3. En el cuadro **nombre** , escriba `AdventureWorksService.svc`y haga clic en **Agregar**.
 
      Visual Studio agrega el `AdventureWorksService.svc` al proyecto.
 
@@ -173,7 +173,7 @@ Agregue varios botones a la ventana modificando el código XAML en WPF Designer.
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compile el proyecto.
+3. Generar el proyecto.
 
 ## <a name="create-the-data-bound-controls"></a>Crear los controles enlazados a datos
 
@@ -265,7 +265,7 @@ Compile y ejecute la aplicación para comprobar que puede ver y actualizar los r
 
 1. En el menú **compilar** , haga clic en **compilar solución**. Compruebe que la solución se compila sin errores.
 
-2. Presione **Ctrl** +**F5**.
+2. Presione **Ctrl**+**F5**.
 
      Visual Studio inicia el proyecto **AdventureWorksService** sin depurarlo.
 

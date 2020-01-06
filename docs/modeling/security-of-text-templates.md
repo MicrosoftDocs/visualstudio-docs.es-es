@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660086"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591975"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Las plantillas de texto tienen los siguientes problemas de seguridad:
@@ -24,7 +24,7 @@ Las plantillas de texto tienen los siguientes problemas de seguridad:
 - Si el mecanismo que usa el host para buscar un procesador de directivas no es seguro, se podría ejecutar un procesador de directivas malintencionados.
 
 ## <a name="arbitrary-code"></a>Código arbitrario
- Al escribir una plantilla, puede colocar cualquier código dentro de las etiquetas \< # # >. Esto permite ejecutar código arbitrario desde una plantilla de texto.
+ Al escribir una plantilla, puede colocar cualquier código dentro de las etiquetas \<# # >. Esto permite ejecutar código arbitrario desde una plantilla de texto.
 
  Asegúrese de obtener plantillas de fuentes de confianza. Asegúrese de advertir a los usuarios finales de la aplicación que no ejecuten plantillas que no provienen de orígenes de confianza.
 

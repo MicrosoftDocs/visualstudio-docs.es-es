@@ -2,17 +2,17 @@
 title: Conjunto de reglas Reglas recomendadas mixtas
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0daaf22f3e944dd76802060c53c64d40a4da04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fc3f3480e33d2689053053343339690315d574
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649218"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587321"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 
@@ -139,7 +139,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C6705](../code-quality/c6705.md)|El número esperado de argumentos para la anotación no coincide con el número real de argumentos para la anotación|
 |[C6706](../code-quality/c6706.md)|Error inesperado de la anotación|
 |[C6995](../code-quality/c6995.md)|No se pudo guardar el archivo de registro XML|
-|[C26100](../code-quality/c26100.md)|Condición de carrera|
+|[C26100](../code-quality/c26100.md)|Condición de anticipación|
 |[C26101](../code-quality/c26101.md)|No se puede usar la operación de interbloqueo correctamente|
 |[C26110](../code-quality/c26110.md)|El autor de la llamada no puede contener el bloqueo|
 |[C26111](../code-quality/c26111.md)|No se pudo liberar el bloqueo del autor de la llamada|
@@ -151,7 +151,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28020](../code-quality/c28020.md)|La expresión no es true en esta llamada|
 |[C28021](../code-quality/c28021.md)|El parámetro que se va a anotar debe ser un puntero|
 |[C28022](../code-quality/c28022.md)|Las clases de función de esta función no coinciden con las clases de función de la definición de tipo que se usa para definirla.|
-|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar debe tener una \_Function \_class \_ anotación para al menos una de las clases.|
+|[C28023](../code-quality/c28023.md)|La función que se va a asignar o pasar debe tener una \_función\_clase\_ anotación para al menos una de las clases.|
 |[C28024](../code-quality/c28024.md)|El puntero de función al que se asigna se anota con la clase de función, que no está incluida en la lista de clases de función.|
 |[C28039](../code-quality/c28039.md)|El tipo de parámetro real debe coincidir exactamente con el tipo|
 |[C28112](../code-quality/c28112.md)|Siempre se debe tener acceso a una variable a la que se tiene acceso a través de una función de interbloqueo a través de una función de interbloqueo.|
@@ -169,14 +169,14 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28196](../code-quality/c28196.md)|No se cumple el requisito. (La expresión no se evalúa como true).|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|\_Success \_ o \_On \_failure \_ utiliza en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_correcto\_ o \_en\_error\_ usado en un contexto no válido|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
 |[C28209](../code-quality/c28209.md)|La declaración del símbolo tiene una declaración en conflicto|
 |[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|El \_Use \_decl \_annotations anotación de \_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|La \_usar\_las anotaciones decl\_\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
@@ -219,7 +219,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro que se va a \_Macro \_value \_ es null|
+|[C28275](../code-quality/c28275.md)|El parámetro para \_\_de valor de la macro\_ es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|

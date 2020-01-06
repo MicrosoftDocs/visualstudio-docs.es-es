@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567cba4be2d225985b5a6d690f0d8264f24190f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747501"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566142"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 Los elementos Decorator son iconos, texto o cheurones de expansión/contracción que pueden aparecer en formas o conectores en el diagrama. En las tablas siguientes se muestran las propiedades de los tres tipos de Decorator. Algunas de las propiedades solo aparecen en los decoradores de forma o solo en los elementos Decorator del conector.
@@ -23,7 +23,7 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="expandcollapse-decorator"></a>Expandir o contraer Decorator
 
-|Propiedad.|Descripción|Predeterminado|
+|La propiedad|Descripción|Predeterminado|
 |-|-|-|
 |DisplayName|Nombre del elemento Decorator que se mostrará en el diseñador generado.|Expandir decorador de contracción|
 |Name|Nombre del elemento Decorator.|ExpandCollapseDecorator|
@@ -36,7 +36,7 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="icon-decorator"></a>Icono Decorator
 
-|Propiedad.|Descripción|Predeterminado|
+|La propiedad|Descripción|Predeterminado|
 |-|-|-|
 |DefaultIcon|Ruta de acceso del archivo de icono o imagen que se va a mostrar.|\<none>|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Icono Decorator|
@@ -50,12 +50,12 @@ Los elementos Decorator son iconos, texto o cheurones de expansión/contracción
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Propiedad.|Descripción|Predeterminado|
+|La propiedad|Descripción|Predeterminado|
 |-|-|-|
 |DefaultText|Texto predeterminado que se va a mostrar.|Etiqueta|
 |DisplayName|Nombre del elemento Decorator que se va a mostrar en el diseñador generado.|Etiqueta|
 |FontSize|Tamaño de fuente para el texto que se muestra en el elemento Decorator.|8|
-|FontStyle|Estilo de fuente para el texto que se muestra en el elemento Decorator.|Estándar|
+|FontStyle|Estilo de fuente para el texto que se muestra en el elemento Decorator.|Regular|
 |Name|Nombre del elemento Decorator.|Etiqueta|
 |Notas|Notas informales asociadas al elemento Decorator.|\<none>|
 |HorizontalOffset|Desplazamiento horizontal, en pulgadas, relativo a la posición predeterminada del elemento Decorator. (Solo en formas).|0|

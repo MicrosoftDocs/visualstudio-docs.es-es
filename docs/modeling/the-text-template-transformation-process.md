@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565869"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar plantillas de texto para generar Visual Basic o C# código, o puede generar un informe HTML.
@@ -23,11 +23,11 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 
  El proceso de transformación de plantillas de texto se realiza en dos pasos. En primer lugar, el motor crea una clase temporal, que se conoce como la clase de transformación generada. Esta clase contiene el código generado por las directivas y los bloques de control. Después, el motor compila y ejecuta la clase de transformación generada para generar el archivo de salida.
 
-## <a name="components"></a>Componentes
+## <a name="components"></a>Components
 
 |Componente|Descripción|Personalizable (sí/no)|
 |-|-|-|
-|Motor|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
+|Engine|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
 |administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
 |Procesadores de directivas|Los procesadores de directivas son clases que controlan directivas en plantillas de texto. Puede utilizar directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizados.|
 

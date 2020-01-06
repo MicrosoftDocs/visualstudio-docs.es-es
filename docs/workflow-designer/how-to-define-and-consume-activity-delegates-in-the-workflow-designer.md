@@ -3,17 +3,17 @@ title: 'Diseñador de flujo de trabajo: definir y consumir delegados de activida
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650338"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593907"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo
 
@@ -32,7 +32,7 @@ ms.locfileid: "72650338"
 
 4. En el Diseñador de flujo de trabajo, haga clic en la pestaña **argumentos** .
 
-5. Haga clic en **Crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
+5. Haga clic en **crear argumento**. Asigne un nombre a los nuevos **elementos**de argumento.
 
 6. En la columna **tipo de argumento** , seleccione **matriz de [T]** .
 
