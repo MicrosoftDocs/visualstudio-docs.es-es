@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924548"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586983"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 
@@ -60,7 +60,7 @@ Cree un nuevo proyecto de WPF para mostrar los registros de productos.
 
 1. Abra Visual Studio.
 
-2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+2. En el menú **archivo** , seleccione **nuevo** **proyecto**de >.
 
 3. Expanda **Visual Basic** o **Visual C#** y después seleccione **Windows**.
 
@@ -112,7 +112,7 @@ Antes de crear controles enlazados a datos, debe definir un modelo de datos para
 
    Visual Studio agrega un nuevo archivo de `AdventureWorksLTDataSet.xsd` al proyecto y agrega un elemento **AdventureWorksLTDataSet** correspondiente a la ventana **orígenes de datos** . El archivo `AdventureWorksLTDataSet.xsd` define un conjunto de tipos denominado `AdventureWorksLTDataSet` y un TableAdapter denominado `ProductTableAdapter`. Más adelante, en este tutorial, usará `ProductTableAdapter` para rellenar con datos el conjunto de datos y guardar los cambios de nuevo en la base de datos.
 
-9. Compile el proyecto.
+9. Generar el proyecto.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Editar el método de relleno predeterminado de TableAdapter
 
@@ -154,7 +154,7 @@ Agregue varios botones a la ventana modificando el código XAML en WPF Designer.
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compile el proyecto.
+3. Generar el proyecto.
 
 ## <a name="create-data-bound-controls"></a>Crear controles enlazados a datos
 

@@ -1,27 +1,27 @@
 ---
-title: Vista Modelo de contenido del Diseñador de esquemas XML
+title: Vista Modelo de contenido del Diseñador de esquemas XM
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661528"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592918"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
-La vista Modelo de contenido proporciona una representación gráfica de los nodos de esquema globales y locales con sus componentes, incluidos los tipos simples y complejos, elementos, grupos de modelo, atributos y grupos de atributos. Los comentarios y las instrucciones de procesamiento XML no se pueden ver en el vista Modelo de contenido. La vista modelo de contenido contiene dos paneles: un panel de **área de trabajo** que contiene una lista de los nodos en el área de trabajo del [Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md)y la superficie de diseño donde puede ver el modelo de contenido de los nodos de esquema seleccionados en el **área de trabajo** panel. La vista Modelo de contenido también incluye la barra de herramientas del Diseñador de esquemas XML y la barra de ruta de navegación.
+La vista Modelo de contenido proporciona una representación gráfica de los nodos de esquema globales y locales con sus componentes, incluidos los tipos simples y complejos, elementos, grupos de modelo, atributos y grupos de atributos. Los comentarios y las instrucciones de procesamiento XML no se pueden ver en el vista Modelo de contenido. La vista modelo de contenido contiene dos paneles: un panel de **área de trabajo** que contiene una lista de los nodos en el área de trabajo del [Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md)y la superficie de diseño donde puede ver el modelo de contenido de los nodos de esquema que están seleccionados en el panel del **área de trabajo** . La vista Modelo de contenido también incluye la barra de herramientas del Diseñador de esquemas XML y la barra de ruta de navegación.
 
 En la siguiente imagen, el panel **área de trabajo** contiene seis nodos de esquema. El nodo `purchaseOrder` se selecciona en el panel **área de trabajo** y se muestra en la superficie de diseño.
 
-![Vista Modelo de contenido del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
+![Vista Modelo de contenido del Diseñador de esquemas XM](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panel área de trabajo
 
@@ -53,7 +53,7 @@ Al hacer clic con el botón secundario en un elemento en la superficie de diseñ
 |**Mostrar documentación**|Muestra u oculta el contenido del nodo Anotación/Documentación.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de **esquemas XML** también se selecciona en el editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 En la tabla siguiente se describen las opciones disponibles para el panel **área de trabajo** .
 
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las opciones disponibles para el panel **áre
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Seleccionar todo**|Selecciona todos los nodos del panel **área de trabajo** .|
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de **esquemas XML** también se selecciona en el editor XML.|
-|**Ventana Propiedades**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="properties-window"></a>Propiedades (ventana)
 
@@ -77,13 +77,13 @@ Use el menú contextual para abrir inicialmente la ventana **propiedades** . De 
 
 Los siguientes botones de la barra de herramientas de Diseñador XSD están habilitados cuando está activa la vista Modelo de contenido.
 
-![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
+![Barra de tareas del Diseñador de esquemas XSD](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la [vista modelo de contenido](../xml-tools/content-model-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**2**.|
-|**Mostrar vista de gráfico**|Cambia a la [vista gráfico](../xml-tools/graph-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl** +**3**.|
+|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la [vista modelo de contenido](../xml-tools/content-model-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista de gráfico**|Cambia a la [vista gráfico](../xml-tools/graph-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**3**.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar del área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
 |**Quitar todo excepto la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
@@ -93,7 +93,7 @@ Los siguientes botones de la barra de herramientas de Diseñador XSD están habi
 
 Puede desplazar la superficie de diseño mediante las barras de desplazamiento o manteniendo presionada la tecla **Ctrl** mientras hace clic y arrastra el mouse. Al desplazar la superficie de diseño mediante hacer clic y arrastrar, el cursor cambia a cuatro flechas cruzadas que apuntan a cuatro direcciones.
 
-## <a name="undoredo"></a>Deshacer/rehacer
+## <a name="undoredo"></a>Deshacer/Rehacer
 
 La capacidad de deshacer/rehacer está habilitada en la vista Modelo de contenido para las siguientes acciones:
 

@@ -1,6 +1,6 @@
 ---
 title: Extensiones cargadas automáticamente y sincrónicamente
-ms.date: 02/16/2019
+ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: madskristensen
@@ -8,48 +8,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316714"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406639"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensiones cargadas automáticamente y sincrónicamente
 
-Sincrónicamente autocargado extensiones tienen un impacto negativo en el rendimiento de Visual Studio y se deben convertir para utilizar autoload asincrónica en su lugar. A partir de Visual Studio 2019 Preview 2, los usuarios reciben notificaciones cuando una extensión se está autocargado sincrónicamente. La extensión cargará y funcionan con normalidad.
+Las extensiones autocargadas de forma sincrónica tienen un impacto negativo en el rendimiento de Visual Studio y deben convertirse para usar la carga asincrónica asincrónica en su lugar. De forma predeterminada, Visual Studio 2019 bloquea los paquetes cargados de forma sincrónica desde cualquier extensión y notifica al usuario.
 
-![Advertencia de compatibilidad de extensión](media/extension-compatibility-warning.png)
+![ADVERTENCIA de compatibilidad de extensión](media/extension-compatibility-warning-16-1.png.png)
 
-Los usuarios pueden:
+Puede:
 
-- Haga clic en **más** para acceder a esta página de información.
+- Haga clic en **permitir autocargas sincrónicas** para permitir la carga de las extensiones. Para cambiar esta configuración en opciones de Visual Studio, haga clic en entorno, haga clic en extensiones y, a continuación, active la casilla "permitir autocargas sincrónicas de extensiones". 
 
-- Haga clic en **administrar el rendimiento** para abrir el [cuadro de diálogo Administrador de rendimiento](#performance-manager-dialog) que muestran los problemas de rendimiento con las extensiones y ventanas de herramientas.
+- Haga clic en **administrar rendimiento** para abrir el [cuadro de diálogo Administrador de rendimiento](#performance-manager-dialog) que muestra los problemas de rendimiento de las ventanas de herramientas y extensiones.
 
-- Haga clic en **no volver a mostrar este mensaje** para descartarla. Si elige esta opción también impide que todas las notificaciones futuras de forma sincrónica autocargado extensiones. Los usuarios seguirán recibiendo notificaciones otras características de Visual Studio.
+- Haga clic en **no mostrar este mensaje para las extensiones actuales** para descartar la notificación y evitar las futuras notificaciones de las extensiones instaladas existentes. Si agrega una nueva extensión que se carga de forma sincrónica, esta notificación se volverá a mostrar. Seguirá recibiendo notificaciones sobre otras características de Visual Studio.
 
 ## <a name="performance-manager-dialog"></a>Cuadro de diálogo Administrador de rendimiento
 
-![cuadro de diálogo de administrador de rendimiento](media/performance-manager.png)
+![cuadro de diálogo Administrador de rendimiento](media/performance-manager.png)
 
-Todas las extensiones que cargó sincrónicamente todos los paquetes en las sesiones de usuario aparecen en la **API en desuso** ficha.
+Todas las extensiones que cargan de forma sincrónica los paquetes de cualquier sesión de usuario aparecen en la pestaña **API en desuso** .
 
-* Los usuarios pueden hacer clic en el **para obtener más información sobre este problema** para recopilar más información acerca de las API en desuso.
-* Los usuarios pueden ponerse en contacto con sus proveedores de extensión para ver el progreso de la migración.
+* Haga clic en **más información sobre este problema** para recopilar más información sobre las API en desuso.
+* Póngase en contacto con sus proveedores de extensión para el progreso de la migración.
 
-Los autores de extensiones pueden encontrar instrucciones para migrar paquetes de carga asincrónica automática en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar la configuración sincrónica de carga asincrónica mediante la Directiva de grupo
 
-## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar la configuración autoload sincrónica mediante la directiva de grupo
-
-A partir de Visual Studio 2019 Update 1, de forma predeterminada, la carga automática sincrónica bloques instalación de Visual Studio. Cuando se habilita la directiva de grupo, puede configurar Visual Studio para permitir autoload sincrónico en equipos individuales. Para ello, establezca una directiva basada en el Registro en la siguiente clave:
+Los administradores pueden habilitar una directiva de grupo para permitir la carga asincrónica sincrónica. Para ello, establezca una directiva basada en el Registro en la siguiente clave:
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
-Entrada = **permitido**
+Entry = **permitido**
 
 Value = (DWORD)
-* **0** autoload sincrónica no está permitido
-* **1** se permite autoload sincrónica
+* **0** no se permite la carga automático sincrónica
+* **1** se permite la carga automático sincrónica
 
-Para obtener más información acerca de la configuración autoload sincrónico 2019 de Visual Studio Update 1, consulte el [comportamiento Autoload sincrónico](https://aka.ms/AA52xzw) página.
+## <a name="extension-authors"></a>Autores de extensiones
+Los autores de extensiones pueden encontrar instrucciones para migrar paquetes a la carga asincrónica asincrónica en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="see-also"></a>Vea también
+Para obtener más información sobre la configuración de la carga asincrónica sincrónica en Visual Studio 2019, vea la página [comportamiento de carga asincrónica sincrónica](https://aka.ms/AA52xzw) .

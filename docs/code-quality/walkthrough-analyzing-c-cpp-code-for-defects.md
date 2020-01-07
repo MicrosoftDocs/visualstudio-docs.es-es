@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018344"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401020"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 
@@ -49,7 +49,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
      Se muestra el cuadro de diálogo **páginas de propiedades de CodeDefects** .
 
-5. Haga clic en **análisis de código**.
+5. Haga clic en **Análisis de código**.
 
 6. Active la casilla **Habilitar análisis de código paraC++ C/al compilar** .
 
@@ -59,7 +59,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 ### <a name="to-analyze-code-defect-warnings"></a>Para analizar las advertencias de defectos de código
 
-1. En el menú **Ver** , haga clic en **lista de errores**.
+1. En el menú **Ver** , haga clic en **Lista de errores**.
 
      Según el perfil de desarrollador elegido en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], es posible que tenga que señalar a **otras ventanas** en el menú **Ver** y, a continuación, hacer clic en **lista de errores**.
 
@@ -67,9 +67,9 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
      ADVERTENCIA C6230: conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.
 
-     El editor de código muestra la línea que causó la advertencia en la función `bool ProcessDomain()`. Esta advertencia indica que se está usando un HRESULT en una instrucción ' if ' en la que se espera un resultado booleano.
+     El editor de código muestra la línea que causó la advertencia en la función `bool ProcessDomain()`. Esta advertencia indica que se está usando un `HRESULT` en una instrucción ' if ' en la que se espera un resultado booleano.  Esto suele ser un error porque, cuando el `S_OK` HRESULT se devuelve de la función, indica que se ha realizado correctamente, pero cuando se convierte en un valor booleano, se evalúa como `false`.
 
-3. Corrija esta advertencia mediante la macro SUCCEEDED. El código debe ser similar al código siguiente:
+3. Corrija esta advertencia mediante el uso de la macro `SUCCEEDED`, que se convierte en `true` cuando un valor devuelto de `HRESULT` indica que la operación se ha realizado correctamente. El código debe ser similar al código siguiente:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
      Se muestra el cuadro de diálogo **páginas de propiedades de anotaciones** .
 
-3. Haga clic en **análisis de código**.
+3. Haga clic en **Análisis de código**.
 
 4. Active la casilla **Habilitar análisis de código paraC++ C/al compilar** .
 
@@ -128,11 +128,11 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 8. Para corregir esta advertencia, utilice una instrucción ' if ' para probar el valor devuelto. El código debe ser similar al código siguiente:
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 ### <a name="to-use-source-code-annotation"></a>Para utilizar la anotación del código fuente
 
-1. Anote los parámetros formales y el valor devuelto de la función `AddTail` mediante las condiciones pre y post, tal como se muestra en este ejemplo:
+1. Anote los parámetros formales y el valor devuelto de la función `AddTail` para indicar que los valores de puntero pueden ser NULL:
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Recompilar proyecto de anotaciones.
@@ -160,21 +156,18 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
      Esta advertencia indica que el nodo pasado a la función puede ser null e indica el número de línea donde se produjo la advertencia.
 
-4. Para corregir esta advertencia, utilice una instrucción ' if ' para probar el valor devuelto. El código debe ser similar al código siguiente:
+4. Para corregir esta advertencia, use una instrucción ' if ' al principio de la función para probar el valor que se ha pasado. El código debe ser similar al código siguiente:
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Recompilar proyecto de anotaciones.
 
-     El proyecto se compila sin advertencias ni errores.
+     El proyecto se compila ahora sin advertencias ni errores.
 
 ## <a name="see-also"></a>Vea también
 

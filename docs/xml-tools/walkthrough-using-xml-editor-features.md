@@ -3,17 +3,17 @@ title: 'Tutorial: usar las características del editor XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604458"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592469"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: usar las características del editor XML
 
@@ -64,7 +64,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. En el t
 
 3. Escriba en el **archivo XML de prueba**.
 
-4. En una nueva línea, escriba `<` y seleccione **empleado** en la lista de miembros.
+4. En una nueva línea, escriba `<`y seleccione **empleado** en la lista de miembros.
 
      El editor agrega el comienzo de un elemento XML, `<employee`. Llegados a este punto, puede agregar atributos al elemento o bien cerrar la etiqueta de apertura escribiendo `>`.
 
@@ -96,7 +96,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. En el t
 
 ## <a name="to-format-the-xml-document"></a>Para dar formato al documento XML
 
-- Seleccione el botón **dar formato al documento** en la barra de herramientas del editor XML o presione **Ctrl** +**E**,**D**.
+- Seleccione el botón **dar formato al documento** en la barra de herramientas del editor XML o presione **Ctrl**+**E**,**D**.
 
    ![Botón formato de documento XML en Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. En el t
 
 ## <a name="to-save-the-xml-document"></a>Para guardar el documento XML
 
-1. En el menú **archivo** , seleccione **Guardar como**.
+1. En el menú **Archivo** , seleccione **Guardar como**.
 
      Se muestra el cuadro de diálogo **Guardar archivo como** . El nombre de archivo predeterminado es *"XMLFile1"* .
 

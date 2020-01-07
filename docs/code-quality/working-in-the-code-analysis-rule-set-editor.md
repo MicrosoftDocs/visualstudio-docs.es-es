@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649012"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587139"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
@@ -25,8 +25,8 @@ En la tabla siguiente se muestran las opciones de gravedad:
 
 |Acción (gravedad)|Descripción|
 |-|-|
-|Advertencia|Genera una advertencia en el **lista de errores** y también en el momento de la compilación.|
-|Error|Genera un error en el **lista de errores** y también en el momento de la compilación.|
+|advertencia|Genera una advertencia en el **lista de errores** y también en el momento de la compilación.|
+|Error de :|Genera un error en el **lista de errores** y también en el momento de la compilación.|
 |Info|Genera un mensaje en el **lista de errores**.|
 |Hidden|La infracción no es visible para el usuario. No obstante, el IDE recibe una notificación de la infracción.|
 |Ninguno|Se suprime la regla. El comportamiento es el mismo que si se quitara la regla del conjunto de reglas.|
@@ -52,7 +52,7 @@ En la tabla siguiente se describen los controles de la barra de herramientas del
 |---------------------|-----------------|
 |**Expandir todo**|Muestra las reglas de todos los grupos.|
 |**Contraer todo**|Oculta las reglas de todos los grupos.|
-|**Group By**|Especifica el campo por el que se agrupan las reglas. Haga clic en **\<None >** para mostrar las reglas sin grupos.|
+|**Group By**|Especifica el campo por el que se agrupan las reglas. Haga clic en **\<ninguno >** para mostrar las reglas sin grupos.|
 |**Opciones de columna**|Especifica los campos de regla que se van a mostrar.|
 |**Ocultar reglas que no se aplican a la solución actual**|Muestra u oculta reglas que no son del mismo tipo de destino que la solución.|
 |**Mostrar reglas que pueden generar errores de análisis de código**|Muestra u oculta las reglas a las que se ha asignado la acción de error.|
@@ -69,9 +69,9 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 
 |Campo|Descripción|
 |-----------|-----------------|
-|**ID**|Identificador de la regla.|
+|**Id.**|El identificador de la regla.|
 |**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nombre**|Título de la regla.|
+|**Name**|Título de la regla.|
 |**Namespace**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|

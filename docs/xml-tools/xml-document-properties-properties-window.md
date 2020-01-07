@@ -3,17 +3,17 @@ title: Propiedades de documentos XML, Ventana Propiedades
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604153"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592430"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propiedades de documento XML, ventana Propiedades
 
@@ -28,7 +28,7 @@ La codificación de caracteres del archivo. Si cambia esta propiedad también ca
 
 **Entrada**
 
-El documento de entrada asociado con la hoja de estilos XSLT. Los comandos **Start XSLT** lo usan, por ejemplo, **XML**  > **iniciar XSLT sin depurar**. Se puede seleccionar un documento mediante el botón Examinar ( **...** ).
+El documento de entrada asociado con la hoja de estilos XSLT. Los comandos **Start XSLT** lo usan, por ejemplo, **XML** > **iniciar XSLT sin depurar**. Se puede seleccionar un documento mediante el botón Examinar ( **...** ).
 
 Esta propiedad solo es visible cuando un archivo XSLT está abierto en el editor.
 

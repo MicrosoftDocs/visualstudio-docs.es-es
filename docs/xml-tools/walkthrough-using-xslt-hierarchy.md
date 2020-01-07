@@ -2,15 +2,15 @@
 title: 'Tutorial: Usar la herramienta Jerarquía XSLT'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604441"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592456"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: uso de la jerarquía de XSLT
 
@@ -107,7 +107,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
 
 5. Inicie la depuración.
 
-6. Cuando el depurador se detenga en el `<xsl:include href="xslincludefile.xsl" />` de instrucciones, presione el botón **paso a paso** por instrucciones. La depuración puede continuar en la hoja de estilos a la que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
+6. Cuando el depurador se detenga en el `<xsl:include href="xslincludefile.xsl" />`de instrucciones, presione el botón **paso a paso** por instrucciones. La depuración puede continuar en la hoja de estilos a la que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
 
 ## <a name="see-also"></a>Vea también
 

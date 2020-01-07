@@ -13,17 +13,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648431"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586606"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -67,7 +67,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 Empiece por crear una nueva aplicación de Windows Forms:
 
-1. En Visual Studio, en el menú **archivo** , seleccione **nuevo** **proyecto**de  > .
+1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
@@ -122,7 +122,7 @@ Ahora es posible comprobar el formulario para asegurarse de que se comporta de l
 
      El formulario aparece con un control <xref:System.Windows.Forms.DataGridView> en él que se rellena con los datos de la tabla customers.
 
-2. En el menú **depurar** , seleccione **detener depuración**.
+2. En el menú **Depurar**, seleccione **Detener depuración**.
 
 ## <a name="handle-concurrency-errors"></a>Control de errores de simultaneidad
 
@@ -191,7 +191,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 2. Después de que el formulario aparezca, ejecútelo y cambie al IDE de Visual Studio.
 
-3. En el menú **Ver** , elija **Explorador de servidores**.
+3. En el menú **Ver**, elija **Explorador de servidores**.
 
 4. En el **Explorador de servidores**, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.
 

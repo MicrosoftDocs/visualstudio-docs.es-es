@@ -2,17 +2,17 @@
 title: 'Cómo: Abrir un modelo desde un archivo en el código del programa'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594622"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
 
@@ -41,7 +41,7 @@ Agregue estas referencias al proyecto de aplicación de Visual Studio:
 
   - Si no lo ve en la pestaña **.net** del cuadro de diálogo **Agregar referencias** , haga clic en la pestaña **examinar** y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
-- El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre tiene normalmente el siguiente formato: *suempresa*. @No__t_2 *YourProject* .
+- El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre tiene normalmente el siguiente formato: *suempresa*.`.Dsl.dll`*YourProject* .
 
 ## <a name="important-classes-in-the-dsl"></a>Clases importantes en DSL
 
@@ -51,9 +51,9 @@ Estas son las clases que debe identificar:
 
 - *YourDslRootClass* : es el nombre de la clase raíz en el `DslDefinition.dsl`.
 
-- @No__t_1 *sunombrededsl* : esta clase se define en `SerializationHelper.cs` en el proyecto DSL.
+- `SerializationHelper` *sunombrededsl* : esta clase se define en `SerializationHelper.cs` en el proyecto DSL.
 
-- @No__t_1 *sunombrededsl* : esta clase se define en `DomainModel.cs` en el proyecto DSL.
+- `DomainModel` *sunombrededsl* : esta clase se define en `DomainModel.cs` en el proyecto DSL.
 
 ## <a name="read-from-a-file"></a>Leer de un archivo
 

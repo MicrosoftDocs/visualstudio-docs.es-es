@@ -7,17 +7,17 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924519"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586866"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar a datos de una base de datos de Access
 
@@ -33,7 +33,7 @@ Conéctese a las bases de datos creadas con Office 365, Access 2013, Access 2010
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. Para abrir la **ventana orígenes de datos** , en el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
+2. Para abrir la **ventana orígenes de datos** , en el menú **Ver** , seleccione **otras ventanas** > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Conéctese a las bases de datos creadas con Access 2000-2003 mediante el procedi
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
-2. En el menú **Ver** , seleccione **otras ventanas**  > **orígenes de datos**.
+2. En el menú **Ver** , seleccione **otras ventanas** > **orígenes de datos**.
 
    ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 

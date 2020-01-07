@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189448"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565947"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 
@@ -70,7 +70,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
  (En la solución de componentes de ejemplo, uno de los generadores de conexiones se llama ConnectionBuilder. Esto es una coincidencia porque la relación de dominio se llama Connection).
 
- La relación se crea en el método *relationship* `Builder.Connect()`. La versión predeterminada comprueba que los elementos de modelo de origen y destino son aceptables y, después, crea una instancia de la relación. Por ejemplo:
+ La relación se crea en el método *relationship*`Builder.Connect()`. La versión predeterminada comprueba que los elementos de modelo de origen y destino son aceptables y, después, crea una instancia de la relación. Por ejemplo:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ Presione **F5** y experimente si no está familiarizado con esta plantilla de so
 
 - Métodos de controlador de Prototipo de grupo de elementos (EGP). Son necesarios si el usuario puede *combinar* (agregar) otro elemento en las instancias de esta clase. Para hacerlo, normalmente el usuario arrastra desde una herramienta de elemento u otra forma, o realiza una operación de pegar.
 
-   En el DSL de ejemplo, se puede combinar un puerto de entrada o de salida con un componente. Además, se pueden combinar componentes y comentarios en el modelo. A la clase
+   En el DSL de ejemplo, se puede combinar un puerto de entrada o de salida con un componente. Además, se pueden combinar componentes y comentarios en el modelo. La .
 
    Los métodos del controlador de EGP en la clase Component permiten a un componente aceptar puertos pero no comentarios. El controlador de EGP en la clase raíz del modelo acepta comentarios y componentes, pero no puertos.
 

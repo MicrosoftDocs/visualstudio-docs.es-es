@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649446"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587516"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado
 
@@ -32,9 +32,9 @@ En la imagen siguiente se muestran los resultados de la misma solución después
 
 ## <a name="toggle-full-solution-analysis"></a>Alternancia del análisis de la solución completa
 
-1. Para abrir el cuadro de diálogo **Opciones** , en la barra de menús de Visual Studio, elija **herramientas**  > **Opciones**.
+1. Para abrir el cuadro de diálogo **Opciones** , en la barra de menús de Visual Studio, elija **herramientas** > **Opciones**.
 
-1. En el cuadro de diálogo **Opciones** , **Elija Editor** de**C#** texto  >  o **básico**  > **avanzado**.
+1. En el cuadro de diálogo **Opciones** , **Elija Editor** de **C#** texto > o **básico** > **avanzado**.
 
 1. Active la casilla habilitar el análisis de la **solución completa** para habilitar el análisis completo de la solución o desactive la casilla para deshabilitarlo. Elija **Aceptar** cuando haya terminado.
 
@@ -44,4 +44,4 @@ En la imagen siguiente se muestran los resultados de la misma solución después
 
 Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponible, deshabilita automáticamente el análisis completo de la solución (y otras características) si está habilitada. Si esto ocurre, aparecerá una alerta que le informa de que Visual Studio ha deshabilitado algunas características. Un botón le permite volver A habilitar el análisis completo de la solución si lo desea.
 
-![Texto de alerta que suspende el análisis completo de la solución](../code-quality/media/fsa_alert.png)
+![Suspender el análisis de la solución completa de texto de alerta](../code-quality/media/fsa_alert.png)

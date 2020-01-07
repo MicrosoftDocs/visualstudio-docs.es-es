@@ -3,17 +3,17 @@ title: Ventanas del depurador XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646086"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592885"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 
@@ -25,7 +25,7 @@ Para obtener más información, vea la referencia de la [interfaz de usuario de 
 
 La ventana Locales muestra información acerca de las variables definidas en la hoja de estilos. Contiene tres columnas de información:
 
-**Nombre**
+**Name**
 
 Esta columna contiene los nombres de todas las variables locales del ámbito actual. Los conjuntos de nodos tienen un control de árbol que puede explorar en profundidad para ver sus subcarpetas.
 
@@ -33,7 +33,7 @@ Esta columna contiene los nombres de todas las variables locales del ámbito act
 
 Esta columna muestra el valor que contiene cada variable. Los nodos de atributo, instrucción de procesamiento, comentario, texto y CData muestran el valor de texto del nodo. Los nodos de espacio de nombres muestran el URI del espacio de nombres.
 
-**ype**
+**Type**
 
 Esta columna identifica el tipo de datos de cada variable enumerada en la columna **nombre** .
 
@@ -45,7 +45,7 @@ La ventana Locales muestra también las variables de contexto predefinidas que r
 |`position()`|La posición, o número de índice, del nodo de contexto, con respecto al tamaño del contexto.|
 |`self::node()`|El valor del nodo de contexto.|
 
-## <a name="output-window"></a>Resultados (ventana)
+## <a name="output-window"></a>Ventana Resultados
 
 La Ventana de salida muestra los mensajes de error o las excepciones de seguridad que se producen durante la depuración. También muestra la salida del depurador.
 
@@ -58,13 +58,13 @@ El **lista de tareas** incluye cualquier error que se produzca en los bloques de
 > [!NOTE]
 > El depurador de XSLT no tiene ninguna advertencia, por lo que nunca aparecen en el **lista de tareas**.
 
-## <a name="breakpoints-window"></a>ventana Puntos de interrupción
+## <a name="breakpoints-window"></a>Ventana Puntos de interrupción
 
 La ventana Puntos de interrupción muestra todos los puntos de interrupción definidos en el proyecto actual. Si se agrega un punto de interrupción mientras la ventana está a la vista, ésta se actualiza automáticamente para mostrar el nuevo punto de interrupción.
 
 La ventana Puntos de interrupción debe tener el mismo comportamiento que otros depuradores de Visual Studio.
 
-## <a name="watch-window"></a>Ventana Inspección
+## <a name="watch-window"></a>Ventana de inspección
 
 La ventana Inspección se utiliza para evaluar variables. y cambiar sus valores.
 

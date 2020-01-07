@@ -3,17 +3,17 @@ title: Procedimiento para configurar la herencia mediante O-R Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641927"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586515"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento para configurar la herencia mediante Object Relational Designer
 El **Object Relational Designer** (**Object**Relational Designer) admite el concepto de herencia de tabla única, ya que se suele implementar en sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
@@ -35,7 +35,7 @@ La creación de un modelo de objetos que use la herencia (y que corresponda a da
     > [!NOTE]
     > Haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse, haga clic en la segunda copia de la clase creada en el paso 3 y haga clic en la primera clase creada en el paso 2. La flecha en la línea de herencia apunta a la primera clase.
 
-5. En cada clase, elimine las propiedades de objeto que no desee que aparezcan y que no se utilicen para asociaciones. Recibirá un error si intenta eliminar las propiedades de objeto utilizadas para las asociaciones: [no se puede eliminar la propiedad \<property nombre > porque participa en el nombre \<association de la asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. En cada clase, elimine las propiedades de objeto que no desee que aparezcan y que no se utilicen para asociaciones. Recibirá un error si intenta eliminar propiedades de objeto utilizadas para las asociaciones: [no se puede eliminar la propiedad \<nombre de propiedad > porque participa en la asociación \<nombre de asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Dado que una clase derivada hereda las propiedades definidas en su clase base, no se pueden definir las mismas columnas en cada clase. (Las columnas se implementan como propiedades). Puede habilitar la creación de columnas en la clase derivada estableciendo el modificador de herencia en la propiedad de la clase base. Para obtener más información, vea [conceptos básicos de herencia (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -48,7 +48,7 @@ La creación de un modelo de objetos que use la herencia (y que corresponda a da
 
 9. Establezca la propiedad **Valor de discriminador de clase base** en el valor que designa el registro como tipo base. (Este es el valor que se almacena en la columna discriminadora y se usa para designar la clase base).
 
-10. De manera opcional, también puede establecer la propiedad **Predeterminado de herencia** para designar un tipo en una jerarquía de herencia que se va a usar cuando se carguen filas que no coinciden con ningún código de herencia definido. En otras palabras, si un registro tiene un valor en su columna discriminadora que no coincide con el valor de las propiedades valor de **discriminador de clase derivada** o **valor de discriminador de clase base** , el registro se carga en el tipo designado como  **Valor predeterminado de herencia**.
+10. De manera opcional, también puede establecer la propiedad **Predeterminado de herencia** para designar un tipo en una jerarquía de herencia que se va a usar cuando se carguen filas que no coinciden con ningún código de herencia definido. En otras palabras, si un registro tiene un valor en su columna discriminadora que no coincide con el valor de las propiedades valor de **discriminador de clase derivada** o **valor de discriminador de clase base** , el registro se carga en el tipo designado como **predeterminado de herencia**.
 
 ## <a name="see-also"></a>Vea también
 

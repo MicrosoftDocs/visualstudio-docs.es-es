@@ -3,17 +3,17 @@ title: Características de IntelliSense del editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592391"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del editor XML
 
@@ -87,7 +87,7 @@ Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la q
 
 ## <a name="brace-matching"></a>Coincidencia de llaves
 
-El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede usar el método abreviado de teclado (**Ctrl** + **]** ) para saltar de una llave a la llave correspondiente.
+El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede usar el método abreviado de teclado (**Ctrl**+ **]** ) para saltar de una llave a la llave correspondiente.
 
 El Editor XML realiza esta acción en los siguientes elementos:
 
@@ -107,7 +107,7 @@ El Editor XML realiza esta acción en los siguientes elementos:
 
 ## <a name="modify-the-intellisense-options"></a>Modificar las opciones de IntelliSense
 
-Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto modificando las **herramientas**  >  configuración de**Opciones** .
+Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto modificando las **herramientas** > configuración de **Opciones** .
 
 La sección **inserción automática** de la página **varios** controla el comportamiento siguiente:
 

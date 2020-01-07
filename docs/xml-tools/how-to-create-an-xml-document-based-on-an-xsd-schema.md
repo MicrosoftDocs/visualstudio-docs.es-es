@@ -3,17 +3,17 @@ title: 'Cómo: Crear un documento XML basado en un esquema XSD'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645976"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592807"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Cómo: crear un documento XML basado en un esquema XSD
 
@@ -31,11 +31,11 @@ Esta característica suele generar documentos XML válidos. Sin embargo, si el e
 
 - Las restricciones de identidad `xs:key`, `xs:keyref` y `xs:unique`.
 
-- Facetas `xs:pattern`.
+- `xs:pattern` aspectos.
 
 - Enumeraciones del tipo `xs:QName`.
 
-- Los tipos `xs:ENTITY`, `xs:ENTITIES` y `xs:NOTATION`.
+- tipos de `xs:ENTITY`, `xs:ENTITIES`y `xs:NOTATION`.
 
 Además, observe que el contenido de `xs:base64Binary` solo se generará si aparecen enumeraciones en el esquema para ese tipo.
 

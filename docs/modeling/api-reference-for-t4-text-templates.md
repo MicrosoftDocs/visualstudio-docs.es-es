@@ -2,23 +2,23 @@
 title: Referencia de API para plantillas de texto T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea5bb78951b144c60b76677f399f74bea4ab51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597220"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referencia de API para plantillas de texto T4
 
 La API de plantillas de texto permite invocar y personalizar la transformación de [plantillas de texto](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="namespaces"></a>Espacios de nombres
+## <a name="namespaces"></a>Espacios de nombres de
 
 |Espacio de nombres|Finalidad|
 |-|-|

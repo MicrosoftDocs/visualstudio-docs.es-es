@@ -11,17 +11,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b046eaa4244d08c9fff9e2412471d018203de42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e3ad2cfc2690c27e4e26e51f6b40d7afd79f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648809"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586996"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Enlazar objetos como orígenes de datos en Visual Studio
 
@@ -126,7 +126,7 @@ Para mostrar los datos de los objetos a los usuarios, cree un origen de datos de
 
 Para editar los datos de los objetos personalizados que están enlazados a datos a controles Windows Forms, simplemente edite los datos en el control enlazado (o directamente en las propiedades del objeto). La arquitectura de enlace de datos actualiza los datos del objeto.
 
-Si su aplicación requiere el seguimiento de los cambios y la reversión de los cambios propuestos a sus valores originales, debe implementar esta funcionalidad en el modelo de objetos. Para ver ejemplos de cómo las tablas de datos realizan un seguimiento de los cambios propuestos, vea <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A> y <xref:System.Data.DataTable.GetChanges%2A>.
+Si su aplicación requiere el seguimiento de los cambios y la reversión de los cambios propuestos a sus valores originales, debe implementar esta funcionalidad en el modelo de objetos. Para ver ejemplos de cómo las tablas de datos realizan un seguimiento de los cambios propuestos, vea <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>y <xref:System.Data.DataTable.GetChanges%2A>.
 
 ### <a name="save-data-in-objects-back-to-the-database"></a>Volver a guardar los datos de los objetos en la base de datos
 
@@ -137,7 +137,7 @@ Visual Studio crea métodos DBDirect que se pueden ejecutar directamente en la b
 |Método de TableAdapter DBDirect|Descripción|
 | - |-----------------|
 |`TableAdapter.Insert`|Agrega nuevos registros a una base de datos, lo que permite pasar valores de columna individuales como parámetros de método.|
-|`TableAdapter.Update`|Actualiza los registros existentes en una base de datos. El método Update toma los valores de columna originales y nuevos como parámetros de método. Los valores originales se utilizan para buscar el registro original y los nuevos valores se usan para actualizar el registro.<br /><br /> El método `TableAdapter.Update` también se utiliza para reconciliar los cambios de un conjunto de datos en la base de datos, tomando un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> o una matriz de <xref:System.Data.DataRow>s como parámetros de método.|
+|`TableAdapter.Update`|Actualiza los registros existentes en una base de datos. El método Update toma los valores de columna originales y nuevos como parámetros de método. Los valores originales se utilizan para buscar el registro original y los nuevos valores se usan para actualizar el registro.<br /><br /> El método `TableAdapter.Update` también se utiliza para reconciliar los cambios de un conjunto de datos en la base de datos, tomando un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>o una matriz de <xref:System.Data.DataRow>s como parámetros de método.|
 |`TableAdapter.Delete`|Elimina los registros existentes de la base de datos en función de los valores de columna originales pasados como parámetros de método.|
 
 Para guardar datos de una colección de objetos, recorra en iteración la colección de objetos (por ejemplo, usando un bucle for-Next). Envíe los valores de cada objeto a la base de datos mediante los métodos DBDirect del TableAdapter.

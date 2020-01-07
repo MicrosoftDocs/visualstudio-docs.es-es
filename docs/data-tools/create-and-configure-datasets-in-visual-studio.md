@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642404"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586918"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Cómo: crear y configurar conjuntos de objetos en Visual Studio
 
@@ -26,7 +26,7 @@ Puede crear una clase de <xref:System.Data.DataSet> con tipo en Visual Studio en
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Crear un nuevo conjunto de datos mediante el Asistente para la configuración de orígenes de datos
 
-1. Abra el proyecto en Visual Studio y, a continuación, elija **proyecto**  > **Agregar nuevo origen de datos** para iniciar el Asistente para la **configuración de orígenes de datos**.
+1. Abra el proyecto en Visual Studio y, a continuación, elija **proyecto** > **Agregar nuevo origen de datos** para iniciar el Asistente para la **configuración de orígenes de datos**.
 
 2. Elija el tipo de origen de datos al que se va a conectar.
 
@@ -84,7 +84,7 @@ En este procedimiento se muestra cómo agregar una tabla de la misma base de dat
 
 2. Arrastre una clase <xref:System.Data.DataTable> desde la pestaña **DataSet** del **cuadro de herramientas** hasta el **Diseñador de DataSet**.
 
-3. Agregue columnas para definir su tabla de datos. Haga clic con el botón derecho en la tabla y elija **agregar**  > **columna**. Utilice la ventana **propiedades** para establecer el tipo de datos de la columna y una clave, si es necesario.
+3. Agregue columnas para definir su tabla de datos. Haga clic con el botón derecho en la tabla y elija **agregar** > **columna**. Utilice la ventana **propiedades** para establecer el tipo de datos de la columna y una clave, si es necesario.
 
 Las tablas independientes necesitan implementar `Fill` lógica en tablas independientes para que pueda rellenarlas con datos. Para obtener información sobre cómo rellenar tablas de datos independientes, vea [rellenar un conjunto de datos desde un DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

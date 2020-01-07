@@ -3,9 +3,6 @@ title: Buscar pérdidas de memoria con la biblioteca de CRT | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829946"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404979"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Búsqueda de fugas de memoria con la biblioteca de CRT
 
 Las fugas de memoria se encuentran entre los errores más sutiles y difíciles de detectar enC++ C/apps. Las pérdidas de memoria son consecuencia de un error al desasignar correctamente la memoria que se asignó previamente. Es posible que no se detecte una pequeña pérdida de memoria al principio, pero con el tiempo puede provocar síntomas que van desde un rendimiento deficiente hasta el bloqueo cuando la aplicación se queda sin memoria. Una aplicación con pérdida de memoria que utilice toda la memoria disponible puede hacer que se bloqueen otras aplicaciones y crear confusión en cuanto a qué aplicación es responsable. Incluso las pérdidas de memoria inocuas podrían indicar otros problemas que se deben corregir.
 
- El depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y la biblioteca en tiempo de ejecución de C (CRT) pueden ayudarle a detectar e identificar las pérdidas de memoria.
+El depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y la biblioteca en tiempo de ejecución de C (CRT) pueden ayudarle a detectar e identificar las pérdidas de memoria.
 
 ## <a name="enable-memory-leak-detection"></a>Habilitar la detección de pérdidas de memoria
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>Comparar Estados de memoria
- Otra técnica para localizar pérdidas de memoria requiere tomar instantáneas del estado de la memoria de la aplicación en determinados puntos clave. Para tomar una instantánea del estado de la memoria en un punto determinado de la aplicación, cree una estructura de `_CrtMemState` y pásela a la función `_CrtMemCheckpoint`.
+
+Otra técnica para localizar pérdidas de memoria requiere tomar instantáneas del estado de la memoria de la aplicación en determinados puntos clave. Para tomar una instantánea del estado de la memoria en un punto determinado de la aplicación, cree una estructura de `_CrtMemState` y pásela a la función `_CrtMemCheckpoint`.
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 Una técnica para buscar pérdidas de memoria comienza colocando `_CrtMemCheckpoint` llamadas al principio y al final de la aplicación y usando `_CrtMemDifference` para comparar los resultados. Si `_CrtMemDifference` muestra una pérdida de memoria, puede agregar más `_CrtMemCheckpoint` llamadas para dividir el programa mediante una búsqueda binaria hasta que haya aislado el origen de la pérdida.
 
 ## <a name="false-positives"></a>Falsos positivos
+
  `_CrtDumpMemoryLeaks` puede proporcionar indicaciones falsas de pérdidas de memoria si una biblioteca marca las asignaciones internas como bloques normales en lugar de bloques de CRT o bloques de cliente. En tal caso, `_CrtDumpMemoryLeaks` no puede distinguir entre las asignaciones del usuario y las asignaciones de la biblioteca internas. Si los destructores globales de las asignaciones de biblioteca se ejecutan después del punto donde se llamó a `_CrtDumpMemoryLeaks`, cada asignación interna de la biblioteca se notifica como pérdida de memoria. Las versiones de la biblioteca de plantillas estándar anteriores a Visual Studio .NET pueden hacer que `_CrtDumpMemoryLeaks` informe de estos falsos positivos.
 
 ## <a name="see-also"></a>Vea también
+
 - [Detalles del montón de depuración de CRT](../debugger/crt-debug-heap-details.md)
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Depuración de código nativo](../debugger/debugging-native-code.md)

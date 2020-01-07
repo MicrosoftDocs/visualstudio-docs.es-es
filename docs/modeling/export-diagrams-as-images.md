@@ -6,17 +6,17 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645713"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596624"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
 

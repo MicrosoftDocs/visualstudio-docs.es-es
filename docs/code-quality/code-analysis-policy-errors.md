@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6ff6000f0eab60e17642bf2bd8257154e54a9d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745953"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587750"
 ---
 # <a name="code-analysis-policy-errors"></a>Errores de las directivas de análisis de código
 
@@ -29,7 +29,7 @@ No se cumplieron los requisitos de análisis de código en el control de código
 
 - El análisis de código no está habilitado en la compilación para todos los proyectos de la solución.
 
-- El conjunto de reglas local para el proyecto en Visual Studio tiene un valor de **acción** menos restrictivo que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en **acción** =**error** en el servidor tiene su **acción** establecida en **ADVERTENCIA** o **Ninguno** en el conjunto de reglas que se ejecuta en Visual Studio).
+- El conjunto de reglas local para el proyecto en Visual Studio tiene una configuración de **acción** menos restrictiva que el conjunto de reglas del proyecto, por ejemplo, una regla que se establece en **acción**=**error** en el servidor tiene su **acción** establecida en **ADVERTENCIA** o en **ninguna** en el conjunto de reglas que se ejecuta en Visual Studio.
 
 - El conjunto de reglas especificado en Visual Studio no contiene todas las reglas que se especifican en el conjunto de reglas especificado en la Directiva de protección del análisis de código para el proyecto.
 
@@ -45,13 +45,13 @@ La directiva de análisis de código requiere que todos los archivos que se est�
 
 La directiva de análisis de código requiere que todos los archivos que se están protegiendo estén en la solución actualmente abierta. Este error se produce cuando hay una solución abierta pero algunos archivos de la vista "inserción en el repositorio pendiente" no forman parte de la solución actualmente abierta. Para corregir este error, abra la solución que contiene el archivo que se va a proteger.
 
-**La versión de ' {0} ' no es correcta. El nombre seguro especificado en la Directiva es ' {1} '.**
+**La versión de '{0}' no es correcta. El nombre seguro especificado en la Directiva es '{1}'.**
 
-Este error se aplica a los proyectos de .NET. Un archivo .dll de regla requerido por la directiva de análisis de código existe en el equipo local, pero la versión/clave pública no coincide. Para corregir este error, el creador de la Directiva debe actualizar los archivos. dll en el directorio *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* del equipo.
+Este error se aplica a los proyectos de .NET. Un archivo .dll de regla requerido por la directiva de análisis de código existe en el equipo local, pero la versión/clave pública no coincide. Para corregir este error, el creador de la Directiva debe actualizar los archivos. dll en el directorio *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* del equipo.
 
-**el ensamblado ' {0} ' especificado en la Directiva no existe.**
+**el ensamblado '{0}' especificado en la Directiva no existe.**
 
-Este error se aplica a los proyectos de .NET. Una regla requerida por la directiva de análisis de código no tiene el archivo dll correspondiente instalado en el equipo cliente. Para corregir este error, el creador de la Directiva debe actualizar el archivo dll en *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* Directory en su equipo.
+Este error se aplica a los proyectos de .NET. Una regla requerida por la directiva de análisis de código no tiene el archivo dll correspondiente instalado en el equipo cliente. Para corregir este error, el creador de la Directiva debe actualizar el archivo dll en *c:\Archivos de Programa\microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\* Directory en su equipo.
 
 **La configuración de las reglas del proyecto {0} no cumple la Directiva de análisis de código.**
 

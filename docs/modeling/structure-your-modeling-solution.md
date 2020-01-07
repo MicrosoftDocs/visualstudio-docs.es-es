@@ -2,17 +2,17 @@
 title: Estructurar la solución de modelado
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985216"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591949"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -72,7 +72,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usar un paquete independiente para cada capa
 
-1. En la solución para cada capa, agregue el proyecto de modelado de arquitectura. En **Explorador de soluciones**, haga clic con el botón secundario en el nodo de la solución, seleccione **Agregar**y, a continuación, haga clic en **proyecto existente**. Ahora, se puede acceder al proyecto de modelado desde cada solución: el proyecto de la arquitectura y el proyecto de desarrollo de cada capa.
+1. En la solución para cada capa, agregue el proyecto de modelado de arquitectura. En **el Explorador de soluciones**, haga clic en el nodo de solución, seleccione **agregar**y, a continuación, haga clic en **proyecto existente**. Ahora, se puede acceder al proyecto de modelado desde cada solución: el proyecto de la arquitectura y el proyecto de desarrollo de cada capa.
 
 2. En el modelo compartido, cree un paquete para cada capa: en **Explorador de soluciones**, seleccione el proyecto de modelado. En el **Explorador de modelos UML**, haga clic con el botón secundario en el nodo raíz del modelo, seleccione **Agregar**y, a continuación, haga clic en **paquete**.
 
@@ -102,7 +102,7 @@ Por ejemplo, si usa soluciones que tienen capas de presentación, negocio y dato
 
 4. Siga las instrucciones del asistente, seleccione los proyectos que quiere incluir en la plantilla, proporcione un nombre y una descripción para la plantilla y especifique una ubicación de salida.
 
-## <a name="watch-a-video"></a>Ver un vídeo
+## <a name="watch-a-video"></a>Puedes ver un vídeo
 
 [Organice y administre sus modelos](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 

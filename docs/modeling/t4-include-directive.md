@@ -2,17 +2,17 @@
 title: Directiva Include T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606391"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591858"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 
@@ -24,7 +24,7 @@ En una plantilla de texto de Visual Studio, puede incluir texto de otro archivo 
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` pueden se absoluto o relativo al archivo de plantilla actual.
+- `filePath` puede ser absoluta o relativa al archivo de plantilla actual.
 
    Además, las extensiones de Visual Studio específicas pueden especificar sus propios directorios para buscar archivos de inclusión. Por ejemplo, si ha instalado el SDK de visualización y modelado (herramientas de DSL), se agrega la siguiente carpeta a la lista de inclusión: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **En textfile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

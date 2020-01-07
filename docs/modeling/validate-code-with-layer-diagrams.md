@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981131"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594024"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -218,7 +218,7 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 
 |**Sintaxis**|**Descripción**|
 |-|-|
-|*Artefacton*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de dependencia.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de dependencia.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
 |*NamespaceNameN*|Nombre de un espacio de nombres.|
 |*LayerNameN*|El nombre de una capa en el diagrama de dependencia.|
 |*DependencyType*|El tipo de relación de dependencia entre *artefacto 1* y *artefacto 2*. Por ejemplo, *artefacto 1* tiene una relación de **llamadas** con *artefacto 2*.|
@@ -229,6 +229,8 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 | DV1001: **nombre de espacio de nombres no válido** | Este problema se indica en un elemento de código asociado a una capa que la propiedad "nombres de espacios de nombres permitidos" no contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la sintaxis de "nombres de espacios de nombres permitidos" es una lista de espacios de nombres de punto y coma en la que se permite definir elementos de código asociados con. |
 | DV1002: **dependencia en un espacio de nombres sin referencia** | Este problema se indica en un elemento de código asociado a una capa y que hace referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "espacio de nombres sin referencia" de la capa. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "espacios de nombres sin referencias" se define como una lista separada por punto y coma de los espacios de nombres a los que no se debe hacer referencia en los elementos de código asociados a esta capa. |
 | DV1003: **nombre de espacio de nombres no permitido** | Este problema se indica en un elemento de código asociado a una capa que contiene la propiedad "nombres de espacios de nombres no permitidos" que contiene el espacio de nombres en el que está definido este elemento de código. Se trata de una infracción de la restricción de nomenclatura. Tenga en cuenta que la propiedad "nombre de espacio de nombres no permitido" se define como una lista de espacios de nombres separados por punto y coma en la que no se deben definir los elementos de código asociados a esta capa. |
+| DV2001: **presencia de diagrama de capas** | Este problema se indica en un proyecto que no incluye un archivo de diagrama de dependencias, pero que hace referencia a los analizadores de validación de dependencias. Si no se ha utilizado la validación de dependencias, puede quitar "Microsoft. DependencyValidation. analizadores" directamente de Explorador de soluciones o suprimir esta advertencia. Para agregar un diagrama de dependencia, vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md). |
+| DV2002: **base de tipos no asignados** | Este problema se genera cuando un elemento de código no se asigna a ninguna capa. |
 | DV3001: **falta un vínculo** | La capa '*LayerName*' está vinculada a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
 | DV9001: el **análisis arquitectónico encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
 

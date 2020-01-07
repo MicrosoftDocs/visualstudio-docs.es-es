@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639574"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586099"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 
@@ -101,7 +101,7 @@ También puede modificar una conexión SQL Server Express para usar LocalDB; par
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para que SQL Server Express el motor de base de datos predeterminado
 
-1. En la barra de menús, seleccione **herramientas**  > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. En el cuadro de diálogo **Opciones** , expanda las opciones **herramientas de base** de **datos**y, a continuación, seleccione conexiones de datos.
 

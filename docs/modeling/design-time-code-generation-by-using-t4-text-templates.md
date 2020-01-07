@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748420"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589635"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -41,7 +41,7 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre con la extensión **. TT**.
 
-    Para ello, en **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar**  > **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto** en el panel central.
+    Para ello, en **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar** > **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto** en el panel central.
 
     Observe que la propiedad **herramienta personalizada** del archivo es **TextTemplatingFileGenerator**.
 
@@ -134,7 +134,7 @@ Para depurar una plantilla de texto:
    La plantilla se ejecuta y se detiene en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
-> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto insertando más directivas de numeración de líneas en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
+> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
 >
 > Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
@@ -325,7 +325,7 @@ Si ha instalado el SDK de modelado de Visual Studio, puede hacer que todas las p
 
 ::: moniker-end
 
-Para obtener más información, vea [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Notificación de errores
 
@@ -342,7 +342,7 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
-1. En el proyecto de Visual Studio, agregue un archivo del tipo que desee generar, como un `.cs`, `.vb` o `.resx` archivo.
+1. En el proyecto de Visual Studio, agregue un archivo del tipo que desee generar, como un `.cs`, `.vb`o `.resx` archivo.
 
 2. Pruebe el nuevo archivo para asegurarse de que funciona.
 

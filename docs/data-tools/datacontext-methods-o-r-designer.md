@@ -3,17 +3,17 @@ title: Métodos DataContext (Object Relational Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e81f2337931f565e0068a852bf9b8284350690c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648538"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586710"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext (Métodos) (Object Relational Designer)
 
@@ -26,7 +26,7 @@ La clase <xref:System.Data.Linq.DataContext> es una clase de [!INCLUDE[vbtecdlin
 <xref:System.Data.Linq.DataContext> métodos que se asignan a los procedimientos almacenados y funciones se muestran en el panel **métodos** de Object Relational **Designer**. El panel **Métodos** es el situado junto al panel **Entidades** (la principal superficie de diseño). En el panel **métodos** se enumeran todos los métodos de <xref:System.Data.Linq.DataContext> creados mediante Object Relational **Designer**. De forma predeterminada, el panel **métodos** está vacío; Arrastre los procedimientos almacenados o las funciones desde **Explorador de servidores** o **Explorador de bases de datos** a Object Relational **Designer** para crear <xref:System.Data.Linq.DataContext> métodos y rellenar el panel de **métodos** . Para obtener más información, vea [Cómo: crear métodos de DataContext asignados a funciones y procedimientos almacenados (Object](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)Relational Designer).
 
 > [!NOTE]
-> Abra y cierre el panel de métodos; para ello, haga clic con el botón secundario en **Object Relational Designer** y, a continuación, haga clic en **ocultar** el panel métodos o **Mostrar métodos**, o use el método abreviado de teclado **Ctrl** +**1**.
+> Abra y cierre el panel de métodos; para ello, haga clic con el botón secundario en **Object Relational Designer** y, a continuación, haga clic en **ocultar** el panel métodos o **Mostrar métodos**, o use el método abreviado de teclado **Ctrl**+**1**.
 
 ## <a name="two-types-of-datacontext-methods"></a>Dos tipos de métodos de DataContext
 
@@ -34,7 +34,7 @@ Los métodos de DataContext son los que se asignan a los procedimientos almacena
 
 - Métodos de <xref:System.Data.Linq.DataContext> que devuelven uno o varios conjuntos de resultados:
 
-   Cree este tipo de método de <xref:System.Data.Linq.DataContext> cuando la aplicación solamente necesite ejecutar los procedimientos almacenados y funciones en la base de datos y devolver los resultados. Para obtener más información, vea [Cómo: crear métodos de DataContext asignados a funciones y procedimientos almacenados (Object](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)Relational Designer), System. Data. Linq. ISingleResult \<T > y <xref:System.Data.Linq.IMultipleResults>.
+   Cree este tipo de método de <xref:System.Data.Linq.DataContext> cuando la aplicación solamente necesite ejecutar los procedimientos almacenados y funciones en la base de datos y devolver los resultados. Para obtener más información, vea [Cómo: crear métodos de DataContext asignados a funciones y procedimientos almacenados (Object](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)Relational Designer), System. Data. Linq. ISingleResult\<t > y <xref:System.Data.Linq.IMultipleResults>.
 
 - Métodos de <xref:System.Data.Linq.DataContext> que no devuelven conjuntos de resultados, como Inserts, Updates y Deletes para una clase de entidad concreta.
 

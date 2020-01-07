@@ -5,23 +5,23 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aff5654214809cf2f57767005153ba557df487c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650269"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584548"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
 
 El editor de expresiones es un control de Diseñador de flujo de trabajo que se usa en muchas actividades de flujo de trabajo para especificar y evaluar expresiones. El editor de expresiones proporciona una experiencia de edición de IDE completa, como IntelliSense, coloración, ParamInfo, subrayados ondulados de errores, entre otras características. El compilador valida la expresión una vez que se ha escrito. Si la expresión no es válida, se muestra un icono de error. El editor también puede abrirse como un cuadro de diálogo del **Editor de expresiones** .
 
-Las expresiones son valores literales o de código de Visual Basic enlazadas a argumentos o propiedades. Contienen elementos de valor (por ejemplo, variables, constantes, literales, propiedades) que se combinan con operaciones para producir un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que el uso de mayúsculas no importa, la comparación se realiza mediante un único signo igual ("=" en lugar de "= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "& &" y "| |", y no se utiliza **nada** en lugar de **null.** . Para obtener más información sobre las expresiones y los operadores de Visual Basic y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Las expresiones son valores literales o de código de Visual Basic enlazadas a argumentos o propiedades. Contienen elementos de valor (por ejemplo, variables, constantes, literales, propiedades) que se combinan con operaciones para producir un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que no importa las mayúsculas y minúsculas, la comparación se realiza mediante un solo signo igual ("=" en lugar de "= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "& &" y "| |", y no se utiliza **nada** en lugar de **null**. Para obtener más información sobre las expresiones y los operadores de Visual Basic y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 El **Editor de expresiones** se comporta de la siguiente manera:
 
@@ -45,7 +45,7 @@ El **Editor de expresiones** se comporta de la siguiente manera:
 
 3. Haga clic en el editor de expresiones de la izquierda en el diseñador de actividades para la actividad <xref:System.Activities.Statements.Assign>.
 
-     Las cadenas de marca de agua gris **\<To >** y **\<Enter una expresión de VB >** son las cadenas de texto predeterminadas para los editores de expresiones en la actividad <xref:System.Activities.Statements.Assign>.
+     Las cadenas de marca de agua gris **\<a >** y **\<escriba una expresión de VB >** son las cadenas de texto predeterminadas para los editores de expresiones en la actividad <xref:System.Activities.Statements.Assign>.
 
 4. Escriba su expresión. Si escribe una cadena, asegúrese de colocar comillas dobles en torno a la cadena. Si decide enlazar el argumento de expresión a una variable, no ponga las comillas dobles.
 

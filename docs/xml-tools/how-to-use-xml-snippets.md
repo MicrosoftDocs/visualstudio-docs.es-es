@@ -3,17 +3,17 @@ title: Cómo usar fragmentos de código XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601795"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592612"
 ---
 # <a name="how-to-use-xml-snippets"></a>Cómo: usar fragmentos de código XML
 
@@ -26,7 +26,7 @@ Una vez que el fragmento XML se ha agregado al editor, todos los campos editable
 En los procedimientos siguientes se describe cómo obtener acceso al comando **Insertar fragmento de código** .
 
 > [!NOTE]
-> El comando **Insertar fragmento de código** también está disponible a través del método abreviado de teclado (**Ctrl** +**K**y, a continuación, **Ctrl** +**X**).
+> El comando **Insertar fragmento de código** también está disponible a través del método abreviado de teclado (**Ctrl**+**K**y, a continuación, **Ctrl**+**X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para insertar fragmentos desde el menú contextual
 
@@ -52,7 +52,7 @@ En los procedimientos siguientes se describe cómo obtener acceso al comando **I
 
 1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.
 
-2. Comience a escribir el fragmento XML que desea agregar al archivo. Si la finalización automática está activada, se muestra la lista de palabras completas de IntelliSense. Si no aparece, presione **Ctrl** +**espacio** para activarlo.
+2. Comience a escribir el fragmento XML que desea agregar al archivo. Si la finalización automática está activada, se muestra la lista de palabras completas de IntelliSense. Si no aparece, presione **Ctrl**+**espacio** para activarlo.
 
 3. Seleccione el fragmento XML de la lista de palabras completas.
 
@@ -76,7 +76,7 @@ En los procedimientos siguientes se describe cómo obtener acceso al comando **I
 En los procedimientos siguientes se describe cómo tener acceso al comando **envolver con** .
 
 > [!NOTE]
-> El comando **rodear con** también está disponible a través del método abreviado de teclado (**Ctrl** +**K**y, a continuación, **Ctrl** +**S**).
+> El comando **rodear con** también está disponible a través del método abreviado de teclado (**Ctrl**+**K**y, a continuación, **Ctrl**+**S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar el delimitar con en el menú contextual
 
@@ -102,7 +102,7 @@ En los procedimientos siguientes se describe cómo tener acceso al comando **env
 
 Una vez elegido un fragmento XML, el texto del fragmento de código se inserta automáticamente en la posición del cursor. Todos los campos editables del fragmento se resaltan y el primero de estos campos se selecciona automáticamente. Al campo actualmente seleccionado se le aplica la conversión boxing.
 
-Cuando se selecciona un campo, puede escribir un nuevo valor para el mismo. Al presionar **Tab** , se recorren los campos editables del fragmento de código. al presionar **mayús** +**Tab** se recorren en orden inverso. Al hacer clic en un campo, el cursor se coloca en dicho campo, y al hacer doble clic en él se selecciona. Cuando un campo está resaltado, podría mostrarse información sobre herramientas, que ofrece una descripción del campo.
+Cuando se selecciona un campo, puede escribir un nuevo valor para el mismo. Al presionar **Tab** , se recorren los campos editables del fragmento de código. al presionar **mayús**+**Tab** se recorren en orden inverso. Al hacer clic en un campo, el cursor se coloca en dicho campo, y al hacer doble clic en él se selecciona. Cuando un campo está resaltado, podría mostrarse información sobre herramientas, que ofrece una descripción del campo.
 
 Solo es editable la primera ocurrencia de un campo dado. Cuando ese campo está resaltado, las demás ocurrencias de dicho campo se destacan. Si cambia el valor de un campo editable, ese campo cambia en cualquier parte en la que se utilice en el fragmento.
 

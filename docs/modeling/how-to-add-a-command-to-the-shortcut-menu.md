@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985128"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594739"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: agregar un comando al menú contextual
 
@@ -145,7 +145,7 @@ Use el método de este tema si:
 
 ## <a name="CommandSet"></a>Definir el comportamiento del comando
 
-Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. Normalmente, el nombre de la clase es *\<YourDslName >* `CommandSet`. Es útil comenzar comprobando el nombre de la clase e inspeccionando su contenido.
+Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. Normalmente, el nombre de la clase es *\<sunombrededsl >* `CommandSet`. Es útil comenzar comprobando el nombre de la clase e inspeccionando su contenido.
 
 La clase de conjunto de comandos deriva de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Los siguientes fragmentos suelen resultar útiles en los métodos OnStatus:
 
-- `this.CurrentSelection`Operador La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
+- `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()`  -  `true` si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true` si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`: el usuario no seleccionó varios objetos.
+- `this.IsSingleSelection()`: el usuario no seleccionó varios objetos
 
-- `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.
+- `this.SingleSelection`: la forma o el diagrama en el que el usuario hizo clic con el botón secundario
 
-- `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.
+- `shape.ModelElement as MyLanguageElement`: el elemento de modelo representado por una forma.
 
 Como regla general, haga que la propiedad `Visible` dependa de lo que se ha seleccionado y haga que la propiedad `Enabled` dependa del estado de los elementos seleccionados.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Si cambia la sección Symbols del archivo VSCT, debe cambiar también estas declaraciones para que coincidan. También debe incrementar el número de versión en Package.tt
 
- Registre los comandos de menú como parte de este conjunto de comandos. Se llama a `GetMenuCommands()` una vez cuando el diagrama se inicializa:
+ Registre los comandos de menú como parte de este conjunto de comandos. se llama a `GetMenuCommands()` una vez cuando se inicializa el diagrama:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

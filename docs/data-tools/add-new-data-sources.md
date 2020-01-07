@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648896"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587061"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 
@@ -37,7 +37,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 > [!NOTE]
 > Si no está utilizando características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, no se aplica el concepto de "origen de datos". Solo tiene que conectarse directamente a la base de datos mediante los objetos SQLCommand y comunicarse directamente con la base de datos.
 
-Los orígenes de datos se crean y editan mediante el **Asistente para la configuración de orígenes de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Por Entity Framework, cree primero las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto**  > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
+Los orígenes de datos se crean y editan mediante el **Asistente para la configuración de orígenes de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Por Entity Framework, cree primero las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto** > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).
 
 ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ Los orígenes de datos se crean y editan mediante el **Asistente para la configu
 Después de crear un origen de datos, este aparece en la ventana de herramientas **orígenes de datos** .
 
 > [!TIP]
-> Para abrir la **ventana orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **mayús** +**Alt** +**D** o elija **Ver**  > **otras ventanas**  > **orígenes de datos**.
+> Para abrir la **ventana orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **mayús**+**Alt**+**D** o elija **Ver** > **otras ventanas** > **orígenes de datos**.
 
 Puede arrastrar un origen de datos desde la ventana **orígenes de datos** hasta una superficie de diseño de formulario o un control. Esto hace que se genere código reutilizable que muestra los datos del almacén de datos.
 
@@ -60,13 +60,13 @@ Puede crear un conjunto de datos o un modelo de Entity Framework para usarlo com
 
 ### <a name="dataset"></a>Conjunto de datos
 
-Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para la configuración de orígenes de datos** seleccionando **proyecto**  > **Agregar nuevo origen de datos**. Elija el tipo de origen de datos Data-Source y siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base **de datos.**
+Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para la configuración de orígenes de datos** seleccionando **proyecto** > **Agregar nuevo origen de datos**. Elija el tipo de origen de datos Data-Source y siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base **de datos.**
 
 ### <a name="entity-classes"></a>Clases de entidad
 
 Para crear un modelo de Entity Framework como un origen de datos:
 
-1. Ejecute el **Asistente para Entity Data Model** para crear las clases de entidad. Seleccione **proyecto**  > **agregar nuevo elemento**  > **ADO.NET Entity Data Model**.
+1. Ejecute el **Asistente para Entity Data Model** para crear las clases de entidad. Seleccione **proyecto** > **agregar nuevo elemento** > **ADO.NET Entity Data Model**.
 
    ![Nuevo elemento de proyecto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -90,7 +90,7 @@ Puede crear un origen de datos a partir de los siguientes tipos de servicios:
 
 - [Servicios WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- servicios Web
+- Servicios web
 
     > [!NOTE]
     > Los elementos que aparecen en la ventana **orígenes de datos** dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, en la ventana **orígenes de datos** no aparece ningún elemento cuando se completa el asistente. Esto se debe a que los conjuntos de datos sin tipo no proporcionan un esquema y, por lo tanto, el asistente no tiene suficiente información para crear el origen de datos.

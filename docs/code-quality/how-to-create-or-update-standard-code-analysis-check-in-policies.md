@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649473"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587542"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -39,7 +39,7 @@ Después de especificar una directiva de inserción en el repositorio para el c�
 
 1. En el cuadro de diálogo **control de código fuente** , seleccione la pestaña **Directiva de inserción en el repositorio** .
 
-1. Realice una de las siguientes acciones:
+1. Siga uno de los procedimientos que se describen a continuación:
 
     - Haga clic en **Agregar** para crear una nueva Directiva de inserción en el repositorio.
 
@@ -61,7 +61,7 @@ En la lista **ejecutar este conjunto de reglas** , use uno de los métodos sigui
 
 - Seleccione un conjunto de reglas estándar de Microsoft.
 
-- Seleccione un conjunto de reglas personalizado haciendo clic en **\<Select conjunto de reglas del control de código fuente... >** . A continuación, escriba la ruta de acceso de control de versiones del conjunto de reglas en el explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
+- Seleccione un conjunto de reglas personalizado haciendo clic en **\<seleccionar conjunto de reglas en el control de código fuente... >** . A continuación, escriba la ruta de acceso de control de versiones del conjunto de reglas en el explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ Para obtener más información sobre cómo crear e implementar un conjunto de re
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear y usar directivas de protección de análisis de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Implementar directivas de protección de análisis de código personalizadas para el código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

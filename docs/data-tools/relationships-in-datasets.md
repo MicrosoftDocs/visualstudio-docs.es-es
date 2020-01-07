@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648256"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586320"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Los conjuntos de datos que contienen tablas de datos relacionadas usan <xref:System.Data.DataRelation> objetos para representar una relación de elementos primarios y secundarios entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para la configuración de orígenes de datos**, o la **Diseñador de DataSet**, crea y configura el objeto <xref:System.Data.DataRelation>.
@@ -55,7 +55,7 @@ Como parte de la restricción FOREIGN KEY, puede especificar reglas de integrida
 
 Las reglas que puede crear se especifican en la enumeración <xref:System.Data.Rule> y se muestran en la tabla siguiente.
 
-|Regla de restricción FOREIGN KEY|Acción|
+|Regla de restricción FOREIGN KEY|Acción de|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|El cambio (actualización o eliminación) realizado en el Registro primario también se realiza en los registros relacionados de la tabla secundaria.|
 |<xref:System.Data.Rule.SetNull>|Los registros secundarios no se eliminan, pero la clave externa de los registros secundarios está establecida en <xref:System.DBNull>. Con esta configuración, los registros secundarios se pueden dejar como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** El uso de esta regla puede dar lugar a datos no válidos en la tabla secundaria.|
@@ -92,7 +92,7 @@ Las relaciones entre las tablas de datos aparecen como líneas en el **Diseñado
 
 7. Seleccione si desea crear una relación, una restricción o ambas.
 
-8. Active o desactive el cuadro **relación anidada** . Al seleccionar esta opción, se establece la propiedad <xref:System.Data.DataRelation.Nested%2A> en `true` y hace que las filas secundarias de la relación se aniden dentro de la columna primaria cuando dichas filas se escriben como datos XML o se sincronizan con <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte anidamiento de objetos [DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Active o desactive el cuadro **relación anidada** . Al seleccionar esta opción, se establece la propiedad <xref:System.Data.DataRelation.Nested%2A> en `true`y hace que las filas secundarias de la relación se aniden dentro de la columna primaria cuando dichas filas se escriben como datos XML o se sincronizan con <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte anidamiento de objetos [DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
 9. Establezca las reglas que se aplicarán al realizar cambios en los registros de estas tablas. Para obtener más información, vea <xref:System.Data.Rule>.
 

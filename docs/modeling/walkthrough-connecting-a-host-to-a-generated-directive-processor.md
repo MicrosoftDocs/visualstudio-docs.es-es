@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984424"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593985"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
@@ -45,7 +45,7 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 |-|-|
 | Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
-| SDK de Visual Studio de visualización y modelado | |
+| SDK de visualización y modelado de Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -94,19 +94,19 @@ Después de generar el procesador de directivas, conecte el procesador de direct
 
      Se abrirá el cuadro de diálogo **Agregar referencia** con la pestaña **.net** mostrada.
 
-3. Agregue las referencias siguientes:
+3. Agregue las siguientes referencias:
 
-    - Microsoft. VisualStudio. Modeling. SDK. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. SDK. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. En la parte superior de Program.cs o Module1. VB, agregue la siguiente línea de código:
 
@@ -118,7 +118,7 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     Imports Microsoft.Win32
     ```
 
-5. Busque el código de la propiedad `StandardAssemblyReferences` y reemplácelo por el código siguiente:
+5. Busque el código de la propiedad `StandardAssemblyReferences`y reemplácelo por el código siguiente:
 
     > [!NOTE]
     > En este paso, agregará referencias a los ensamblados necesarios para el procesador de directivas generado que el host admitirá.
@@ -154,7 +154,7 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     }
     ```
 
-6. Busque el código de la función `ResolveDirectiveProcessor` y reemplácelo por el código siguiente:
+6. Busque el código de la función `ResolveDirectiveProcessor`y reemplácelo por el código siguiente:
 
     > [!IMPORTANT]
     > Este código contiene referencias codificadas de forma rígida al nombre del procesador de directivas generado al que desea conectarse. Podría hacerlo con facilidad, en cuyo caso busca todos los procesadores de directivas que aparecen en el registro e intenta encontrar una coincidencia. En ese caso, el host funcionaría con cualquier procesador de directivas generado.
@@ -312,13 +312,13 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
     #>
     ```
 
-3. En el código, reemplace \<YOUR ruta de acceso > por la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
+3. En el código, reemplace \<la ruta de acceso > con la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
 
 4. Guarde y cierre el archivo.
 
 ### <a name="test-the-custom-host"></a>Probar el host personalizado
 
-1. Abra una ventana de símbolo del sistema.
+1. Abra una ventana Símbolo del sistema.
 
 2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 

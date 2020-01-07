@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639505"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586060"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools para C++
 
@@ -41,7 +41,7 @@ Para aprovechar las ventajas de la funcionalidad personalizada en SQL Server 200
 
 4. Descargue el ejemplo de Windows SDK ODBC y descomprimalo en una nueva ubicación. Este ejemplo muestra los comandos ODBC básicos que se usan para conectarse a una base de datos y emitir consultas y comandos. Puede obtener más información sobre esas funciones en [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). La primera vez que se carga la solución (se encuentra C++ en la carpeta), Visual Studio le ofrecerá la actualización de la solución a la versión actual de Visual Studio. Haga clic en **Sí**.
 
-5. Para usar Native Client, necesita el archivo de *encabezado* y el archivo *lib* . Estos archivos contienen funciones y definiciones específicas de SQL Server, más allá de las funciones ODBC definidas en SQL. h. En **Project**  > **propiedades**  > **directorios de VC + +** , agregue el siguiente directorio de inclusión:
+5. Para usar Native Client, necesita el archivo de *encabezado* y el archivo *lib* . Estos archivos contienen funciones y definiciones específicas de SQL Server, más allá de las funciones ODBC definidas en SQL. h. En **Project** > **propiedades** > **directorios de VC + +** , agregue el siguiente directorio de inclusión:
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,13 +58,13 @@ Para aprovechar las ventajas de la funcionalidad personalizada en SQL Server 200
 
     Tenga en cuenta que el ejemplo no utiliza realmente ninguna funcionalidad de Native Client, por lo que los pasos anteriores no son necesarios para que se compile y se ejecute. Pero el proyecto ya está configurado para que use esta funcionalidad. Para más información, vea [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client) (Programación de SQL Server Native Client).
 
-7. Especifique el controlador que se va a usar en el subsistema ODBC. En el ejemplo se pasa el atributo de cadena de conexión del controlador en como un argumento de la línea de comandos. En  > **propiedades** del **proyecto**  > **depuración**, agregue este argumento de comando:
+7. Especifique el controlador que se va a usar en el subsistema ODBC. En el ejemplo se pasa el atributo de cadena de conexión del controlador en como un argumento de la línea de comandos. En > **propiedades** del **proyecto** > **depuración**, agregue este argumento de comando:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Presione **F5** para compilar y ejecutar la aplicación. Debería ver un cuadro de diálogo del controlador que le pide que escriba una base de datos. Escriba `(localdb)\MSSQLLocalDB` y active la casilla **Usar conexión de confianza**. Haga clic en **Aceptar**. Debería ver una consola con mensajes que indican una conexión correcta. También debería ver un símbolo del sistema en el que puede escribir una instrucción SQL. En la pantalla siguiente se muestra una consulta de ejemplo y los resultados:
+8. Presione **F5** para compilar y ejecutar la aplicación. Debería ver un cuadro de diálogo del controlador que le pide que escriba una base de datos. Escriba `(localdb)\MSSQLLocalDB`y active la casilla **Usar conexión de confianza**. Haga clic en **Aceptar**. Debería ver una consola con mensajes que indican una conexión correcta. También debería ver un símbolo del sistema en el que puede escribir una instrucción SQL. En la pantalla siguiente se muestra una consulta de ejemplo y los resultados:
 
    ![Resultado de la consulta de ejemplo de ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 

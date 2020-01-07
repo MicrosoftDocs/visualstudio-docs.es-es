@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, maintainability warnings
 - maintainability warnings
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2efe3e8d2d8c00a4fb016250f06943db46120c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5dad282bfc1c539216b55e41d77d7743808311d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587373"
 ---
 # <a name="maintainability-warnings"></a>Advertencias de mantenimiento
 

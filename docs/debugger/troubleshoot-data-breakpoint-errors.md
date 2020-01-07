@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: a61a3181f47af4a660641ef02ce4ba1b31eedc46
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951931"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404083"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solucionar errores de puntos de interrupción de datos
 Esta página le guiará a través de la resolución de errores comunes que se muestran al usar "interrumpir cuando el valor cambia".
@@ -83,5 +83,5 @@ La arquitectura (configuración de plataforma) en la que se ejecuta el programa 
 Si tiene algún problema o sugerencias sobre esta característica, háganoslo saber a través de la ayuda > Enviar comentarios > [notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) en el IDE o en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
 
 ## <a name="see-also"></a>Vea también
-- [Usar "interrumpir cuando cambie el valor" en .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+- [Usar "interrumpir cuando cambie el valor" en .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog: interrumpir cuando el valor cambia: puntos de interrupción de datos para .NET Core en Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

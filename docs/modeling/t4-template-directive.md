@@ -2,17 +2,17 @@
 title: Directiva de plantilla T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983703"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591845"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
@@ -34,7 +34,7 @@ Ejemplo:
 
 `compilerOptions="optimize+"`
 
-Valores válidos:
+Los valores válidos son:
 
 Cualquier opción del compilador válida.
 
@@ -48,7 +48,7 @@ Ejemplo:
 
 `culture="de-CH"`
 
-Valores válidos:
+Los valores válidos son:
 
 "", la referencia cultural, que es la predeterminada.
 
@@ -64,11 +64,11 @@ Ejemplo:
 debug="true"
 ```
 
-Valores válidos:
+Los valores válidos son:
 
 `true`
 
-`false` (valor predeterminado)
+`false` (predeterminado)
 
 Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
@@ -84,11 +84,11 @@ Ejemplo:
 hostspecific="true"
 ```
 
-Valores válidos:
+Los valores válidos son:
 
 `true`
 
-`false` (valor predeterminado)
+`false` (predeterminado)
 
 `trueFromBase`
 
@@ -126,9 +126,9 @@ Ejemplo:
 
 `language="VB"`
 
-Valores válidos:
+Los valores válidos son:
 
-`C#` (valor predeterminado)
+`C#` (predeterminado)
 
 `VB`
 
@@ -243,9 +243,9 @@ Ejemplo:
 
 `linePragmas="false"`
 
-Valores válidos:
+Los valores válidos son:
 
-`true` (valor predeterminado)
+`true` (predeterminado)
 
 `false`
 
@@ -259,9 +259,9 @@ Ejemplo:
 
 `visibility="internal"`
 
-Valores válidos:
+Los valores válidos son:
 
-`public` (valor predeterminado)
+`public` (predeterminado)
 
 `internal`
 

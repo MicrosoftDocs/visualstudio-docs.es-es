@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654200"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590558"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
 
@@ -51,7 +51,7 @@ Si [el servidor de compilación](/azure/devops/pipelines/agents/agents) se ejecu
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
 
 > [!TIP]
-> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados de Roslyn se encuentren en un directorio denominado *Roslyn* que esté en el mismo directorio que el ejecutable de compilación (por ejemplo,  *MSBuild. exe*).
+> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados Roslyn se encuentren en un directorio denominado *Roslyn* que se encuentre en el mismo directorio que el ejecutable de compilación (por ejemplo, *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Edición del archivo del proyecto
 
@@ -252,7 +252,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
+> `ResolveParameterValue` obtiene los datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
 
 ## <a name="msbuild"></a>Usar las propiedades del proyecto en las directivas de inclusión y ensamblado
 

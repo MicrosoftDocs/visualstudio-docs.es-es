@@ -16,17 +16,17 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f370e55c600baa3f017f6bbb58feab38c23e51ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed115e851e9c2291dfc9d00f4bb36f670a7f3e00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648111"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586073"
 ---
 # <a name="validate-data-in-datasets"></a>Validar datos en conjuntos de datos
 La validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos cumplen las restricciones del esquema de un conjunto de datos. El proceso de validación también confirma que estos valores siguen las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número potencial de recorridos de ida y vuelta entre una aplicación y la base de datos.
@@ -35,7 +35,7 @@ Puede confirmar que los datos que se escriben en un conjunto de datos son válid
 
 El mejor lugar para agregar la validación a la aplicación es el archivo de clase parcial del conjunto de aplicaciones. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], abra el **Diseñador de DataSet** y haga doble clic en la columna o la tabla para la que desea crear la validación. Esta acción crea automáticamente un controlador de eventos <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging>.
 
-## <a name="validate-data"></a>Validar datos
+## <a name="validate-data"></a>Validación de datos
 La validación dentro de un conjunto de DataSet se realiza de las siguientes maneras:
 
 - Mediante la creación de su propia validación específica de la aplicación que puede comprobar los valores de una columna de datos individual durante los cambios. Para obtener más información, vea [Cómo: validar datos durante los cambios de columna](validate-data-in-datasets.md).
@@ -44,7 +44,7 @@ La validación dentro de un conjunto de DataSet se realiza de las siguientes man
 
 - Mediante la creación de claves, restricciones UNIQUE, etc. como parte de la definición de esquema real del conjunto de datos.
 
-- Mediante el establecimiento de las propiedades del <xref:System.Data.DataColumn> del objeto, como <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A> y <xref:System.Data.DataColumn.Unique%2A>.
+- Mediante el establecimiento de las propiedades del <xref:System.Data.DataColumn> del objeto, como <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>y <xref:System.Data.DataColumn.Unique%2A>.
 
 El objeto <xref:System.Data.DataTable> genera varios eventos cuando se produce un cambio en un registro:
 
@@ -60,11 +60,11 @@ El evento que elija dependerá de la granularidad que desee para la validación.
 
 Cuando se actualizan los registros, el objeto <xref:System.Data.DataTable> desencadena eventos a los que se puede responder a medida que se producen cambios y después de que se realicen cambios.
 
-Si la aplicación utiliza un conjunto de un DataSet con tipo, puede crear controladores de eventos fuertemente tipados. Esto agrega cuatro eventos con tipo adicionales para los que se pueden crear controladores: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting` y `dataTableNameRowDeleted`. Estos controladores de eventos con tipo pasan un argumento que incluye los nombres de columna de la tabla que facilitan la escritura y la lectura del código.
+Si la aplicación utiliza un conjunto de un DataSet con tipo, puede crear controladores de eventos fuertemente tipados. Esto agrega cuatro eventos con tipo adicionales para los que se pueden crear controladores: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`y `dataTableNameRowDeleted`. Estos controladores de eventos con tipo pasan un argumento que incluye los nombres de columna de la tabla que facilitan la escritura y la lectura del código.
 
 ## <a name="data-update-events"></a>Eventos de actualización de datos
 
-|evento|Descripción|
+|Event|Descripción|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Se está cambiando el valor de una columna. El evento le pasa la fila y la columna, junto con el nuevo valor propuesto.|
 |<xref:System.Data.DataTable.ColumnChanged>|Se ha cambiado el valor de una columna. El evento le pasa la fila y la columna, junto con el valor propuesto.|
@@ -73,7 +73,7 @@ Si la aplicación utiliza un conjunto de un DataSet con tipo, puede crear contro
 |<xref:System.Data.DataTable.RowDeleting>|Se está eliminando una fila. El evento le pasa la fila, junto con un valor que indica qué tipo de acción (eliminar) se está llevando a cabo.|
 |<xref:System.Data.DataTable.RowDeleted>|Se ha eliminado una fila. El evento le pasa la fila, junto con un valor que indica qué tipo de acción (eliminar) se está llevando a cabo.|
 
-Los eventos <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowDeleting> se generan durante el proceso de actualización. Puede utilizar estos eventos para validar datos o realizar otros tipos de procesamiento. Dado que la actualización está en curso durante estos eventos, puede cancelarla iniciando una excepción, lo que evita que finalice la actualización.
+Los eventos <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>y <xref:System.Data.DataTable.RowDeleting> se generan durante el proceso de actualización. Puede utilizar estos eventos para validar datos o realizar otros tipos de procesamiento. Dado que la actualización está en curso durante estos eventos, puede cancelarla iniciando una excepción, lo que evita que finalice la actualización.
 
 Los eventos <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> y <xref:System.Data.DataTable.RowDeleted> son eventos de notificación que se producen cuando la actualización ha finalizado correctamente. Estos eventos son útiles cuando se desea realizar otras acciones en función de una actualización correcta.
 

@@ -3,17 +3,17 @@ title: Introducción al Object Relational Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648292"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586398"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Herramientas de LINQ to SQL en Visual Studio
 
@@ -27,7 +27,7 @@ En Visual Studio, se crean LINQ to SQL clases que representan tablas SQL mediant
 
 ## <a name="open-the-or-designer"></a>Apertura de Object Relational Designer
 
-Para agregar un LINQ to SQL modelo de entidad al proyecto, elija **proyecto**  > **Agregar nuevo elemento**y, a continuación, seleccione **clases de LINQ to SQL** de la lista de elementos de proyecto:
+Para agregar un LINQ to SQL modelo de entidad al proyecto, elija **proyecto** > **Agregar nuevo elemento**y, a continuación, seleccione **clases de LINQ to SQL** de la lista de elementos de proyecto:
 
 ![Clases LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 

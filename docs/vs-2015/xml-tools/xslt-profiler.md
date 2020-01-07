@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1316602d900fb122567b5ad50edf8e7b90c79bd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300956"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406727"
 ---
 # <a name="xslt-profiler"></a>Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ El generador de perfiles XSLT es una herramienta de generador de perfiles de an�
 
  ![Generador de perfiles XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- El generador de perfiles XSLT se presentó por primera vez como complemento de Visual Studio 2008. Para obtener más información, consulte la sección recursos relacionados en la página del [generador de perfiles XSLT para Visual Studio de febrero de 08 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) .
+ El generador de perfiles XSLT se presentó por primera vez como complemento de Visual Studio 2008. Para obtener más información, vea [complemento del generador de perfiles XSLT](https://marketplace.visualstudio.com/items?itemName=SinanUssakli-MSFT.XSLTProfilerAddin).
 
 > [!NOTE]
 > La apariencia de algunas pantallas en estos documentos quizá sea distinta en Visual Studio 2010 ya que a partir de Visual Studio 2008 se cambiaron algunos elementos viduales.
