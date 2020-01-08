@@ -3,17 +3,17 @@ title: 'Tutorial: Usar XSLT de IntelliSense'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604376"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592443"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT de IntelliSense
 
@@ -152,7 +152,7 @@ Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los val
     </xsl:stylesheet>
     ```
 
-2. Inserte el cursor después de `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` y presione **entrar**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
+2. Inserte el cursor después de `<xsl:stylesheet version="1.0">` y presione **entrar**. A continuación, comience a escribir el elemento `xsl:namespace-alias` siguiente:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
