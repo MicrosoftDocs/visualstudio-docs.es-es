@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565986"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo de proyecto de MSBuild desde cero
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.
@@ -400,7 +400,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.
 
 ### <a name="code"></a>Código
@@ -438,7 +438,7 @@ Su archivo del proyecto debe ser ahora similar al código siguiente:
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>DESCRIPCIÓN
+### <a name="description"></a>Descripción
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.
 
 ### <a name="code"></a>Código
