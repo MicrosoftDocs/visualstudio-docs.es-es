@@ -11,17 +11,17 @@ helpviewer_keywords:
 - FindAppConfigFile task [MSBuild]
 - MSBuild, FindAppConfigFile task
 ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0033bcb21922d6f7e0204b1555fa2c46f8d91d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de2b36f1003515a47774eaa40fda390728940324
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591156"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (tarea)
 Busca el archivo *app.config*, si hay alguno, en las listas proporcionadas.

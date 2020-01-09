@@ -8,15 +8,15 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594791"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -49,7 +49,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 2. En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Controller** y, a continuación, elija **Detener**.
 
-     O bien
+     o bien
 
      Abra un símbolo del sistema con privilegios elevados y ejecute el comando siguiente:
 
@@ -95,7 +95,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 2. En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Agent** y, a continuación, elija **Detener**.
 
-     O bien
+     o bien
 
      Abra un símbolo del sistema con privilegios elevados y ejecute el comando siguiente:
 

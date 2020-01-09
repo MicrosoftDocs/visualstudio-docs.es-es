@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938874"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594934"
 ---
 # <a name="trackedvctooltask-base-class"></a>Clase base TrackedVCToolTask
 
@@ -30,21 +30,21 @@ En la tabla siguiente se describen los parámetros de la clase base **TrackedVCT
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parámetro **bool** opcional.|
 |**EnableExecuteTool**|Parámetro **bool** opcional.|
-|**ExcludedInputPaths**|Parámetro opcional de tipo **ITaskItem[]**.|
+|**ExcludedInputPaths**|Parámetro opcional de tipo **ITaskItem[]** .|
 |**MinimalRebuildFromTracking**|Parámetro **bool** opcional.|
 |**PathOverride**|Parámetro **string** opcional.|
 |**PostBuildTrackingCleanup**|Parámetro **bool** opcional.|
 |**RootSource**|Parámetro **string** opcional.|
 |**SkippedExecution**|Parámetro de salida **bool** opcional.|
-|**SourcesCompiled**|Parámetro de salida opcional de tipo **ITaskItem[]**.|
+|**SourcesCompiled**|Parámetro de salida opcional de tipo **ITaskItem[]** .|
 |**TLogCommandFile**|Parámetro **ITaskItem** opcional.|
-|**TLogReadFiles**|Parámetro opcional de tipo **ITaskItem[]**.|
-|**TLogWriteFiles**|Parámetro opcional de tipo **ITaskItem[]**.|
+|**TLogReadFiles**|Parámetro opcional de tipo **ITaskItem[]** .|
+|**TLogWriteFiles**|Parámetro opcional de tipo **ITaskItem[]** .|
 |**ToolArchitecture**|Parámetro **string** opcional.|
 |**TrackCommandLines**|Parámetro **bool** opcional.|
 |**TrackFileAccess**|Parámetro **bool** opcional.|
-|**TrackedInputFilesToIgnore**|Parámetro opcional de tipo **ITaskItem[]**.|
-|**TrackedOutputFilesToIgnore**|Parámetro opcional de tipo **ITaskItem[]**.|
+|**TrackedInputFilesToIgnore**|Parámetro opcional de tipo **ITaskItem[]** .|
+|**TrackedOutputFilesToIgnore**|Parámetro opcional de tipo **ITaskItem[]** .|
 |**TrackerFrameworkPath**|Parámetro **string** opcional.|
 |**TrackerSdkPath**|Parámetro **string** opcional.|
 

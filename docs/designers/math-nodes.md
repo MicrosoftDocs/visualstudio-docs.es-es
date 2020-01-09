@@ -3,17 +3,17 @@ title: Nodos matemáticos
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594adb7f726c29c9344dbd437479e74ef484118c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75c1b3b9c515defde9eceac1a370f40b0acbd2c8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589401"
 ---
 # <a name="math-nodes"></a>Nodos matemáticos
 

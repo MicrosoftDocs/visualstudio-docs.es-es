@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595129"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
 Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -31,7 +31,7 @@ Crea un ensamblado de serialización XML para los tipos del ensamblado especific
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea `SGen` .
 
-| Parámetro | DESCRIPCIÓN |
+| Parámetro | Descripción |
 |-----------------------------| - |
 | `BuildAssemblyName` | Parámetro `String` requerido.<br /><br /> Ensamblado para el que se debe generar código de serialización. |
 | `BuildAssemblyPath` | Parámetro `String` requerido.<br /><br /> Ruta de acceso al ensamblado para el que se debe generar código de serialización. |

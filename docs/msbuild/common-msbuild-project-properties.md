@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747367"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596195"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
@@ -32,7 +32,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propiedades y parámetros comunes
 
-| Nombre de propiedad o parámetro | DESCRIPCIÓN |
+| Nombre de propiedad o parámetro | Descripción |
 |------------------------------------| - |
 | AdditionalLibPaths | Especifica carpetas adicionales en las que los compiladores deben buscar ensamblados de referencia. |
 | AddModules | Hace que el compilador facilite toda la información de tipos presente en los archivos especificados al proyecto que se está compilando. Esta propiedad es equivalente al modificador `/addModules` del compilador. |

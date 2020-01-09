@@ -14,17 +14,17 @@ helpviewer_keywords:
 - documents, searching
 - files, searching
 - Find in Files tab, Find and Replace window
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc3b0d72f29e3a9c67ef9905667a0dd66f5f889
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652230"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595480"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 

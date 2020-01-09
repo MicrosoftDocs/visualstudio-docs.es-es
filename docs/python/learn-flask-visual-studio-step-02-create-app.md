@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985195"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678966"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Flask con vistas y plantillas de página
 
@@ -204,10 +204,6 @@ Respuesta: Aunque las plantillas normalmente se guardan en archivos HTML indepen
 Respuesta: La extensión *.html* para los archivos de plantilla de página es completamente opcional, ya que siempre puede identificar la ruta de acceso exacta relativa al archivo en el primer argumento de la función `render_template`. Pero Visual Studio (y otros editores) normalmente ofrecen características como la finalización de código y el coloreado de sintaxis con archivos *.html*, lo que compensa con creces el hecho de que las plantillas de página no sean estrictamente HTML.
 
 De hecho, cuando está trabajando con un proyecto de Flask, Visual Studio detecta automáticamente si el archivo HTML que está editando es realmente una plantilla de Flask y proporciona algunas características de autocompletar. Por ejemplo, al comenzar a escribir un comentario de plantilla de página de Flask, `{#`, Visual Studio proporciona automáticamente los caracteres `#}` de cierre. Los comandos **Selección con comentarios** y **Selección sin comentarios** (en el menú **Editar** > **Opciones avanzadas** y en la barra de herramientas) también utilizan comentarios de plantilla en lugar de comentarios HTML.
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. Cuando ejecuto el proyecto, aparece un error que indica que no se encuentra la plantilla. ¿Qué ocurre?
-
-Respuesta: Si ve errores que indican que no se encuentra la plantilla, asegúrese de haber agregado la aplicación al archivo *settings.py* del proyecto de Flask en la lista `INSTALLED_APPS`. Sin esa entrada, Flask no sabe que ha de buscar en la carpeta *templates* de la aplicación.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Las plantillas se pueden organizar en más subcarpetas?
 

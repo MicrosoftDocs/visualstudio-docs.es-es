@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659861"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585644"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 

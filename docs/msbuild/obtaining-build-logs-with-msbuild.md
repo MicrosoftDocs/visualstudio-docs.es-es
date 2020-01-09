@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963772"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594895"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 
@@ -35,7 +35,7 @@ Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de d
 
 - Un resumen de la compilación.
 
-Mediante el uso del modificador **-verbosity** (**-v**), puede controlar la cantidad de datos que aparecen en el registro de salida. Para solucionar el problema, utilice un nivel de detalle del `detailed` (`d`) o `diagnostic` (`diag`), que proporciona más información.
+Mediante el uso del modificador **-verbosity** ( **-v**), puede controlar la cantidad de datos que aparecen en el registro de salida. Para solucionar el problema, utilice un nivel de detalle del `detailed` (`d`) o `diagnostic` (`diag`), que proporciona más información.
 
 El proceso de compilación puede ser más lento cuando **-verbosity** se establece en `detailed` e incluso más lento al establecer **-verbosity** en `diagnostic`.
 

@@ -19,17 +19,17 @@ helpviewer_keywords:
 - MSBUILD (C++), MT task
 - MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad0b3ddf57167c6721371ae5f8e11f5b7a4c13
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911237"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595035"
 ---
 # <a name="mt-task"></a>MT (tarea)
 Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información, consulte [Mt.exe](/windows/desktop/SbsCs/mt-exe).
@@ -40,7 +40,7 @@ Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información,
 > [!NOTE]
 > La documentación de *mt.exe* usa un guion ( **-** ) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal ( **/** ). Se aceptan ambos prefijos.
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|Parámetro **String[]** opcional.<br /><br /> Especifica el nombre de uno o varios archivos de manifiesto.<br /><br /> Para más información, consulte la opción **/manifest** de [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de la línea de comandos. Por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **MT**.<br /><br /> Para más información, consulte [Mt.exe](/windows/desktop/SbsCs/mt-exe).|

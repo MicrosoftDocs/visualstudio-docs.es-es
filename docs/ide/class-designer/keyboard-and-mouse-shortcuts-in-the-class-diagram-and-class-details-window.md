@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188972"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590766"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase
 
@@ -28,7 +28,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 Se admiten las siguientes acciones del mouse en los diagramas de clases:
 
-|Combinación del mouse|Contexto|DESCRIPCIÓN|
+|Combinación del mouse|Contexto|Descripción|
 | - |-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
 |Doble clic|Conector de círculo|Expandir o contraer el círculo.|
@@ -56,7 +56,7 @@ Puede usar un mouse para cambiar la apariencia de la ventana **Detalles de clase
 
 Se admiten las siguientes acciones del teclado en los diagramas de clases:
 
-|Key|Contexto|DESCRIPCIÓN|
+|Key|Contexto|Descripción|
 |---------|-------------|-----------------|
 |**Teclas de dirección**|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
 |**Teclas de dirección**|Formas de nivel superior|Mover las formas en el diagrama.|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665345"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591286"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
@@ -34,7 +34,7 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 
 La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
 
-|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
+|Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
 |Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:**  Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|

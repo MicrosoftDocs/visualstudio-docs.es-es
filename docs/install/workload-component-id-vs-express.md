@@ -3,8 +3,8 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Express
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d3d8e78d2a36d9a295fc114784a76641929b7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818965"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588452"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Directorio de componentes de Visual Studio Express para escritorio
 
@@ -46,7 +46,7 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Obligatorio
 Microsoft.Component.HelpViewer | Visor de Ayuda | 15.6.27323.2 | Obligatorio
@@ -87,7 +87,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | nombre | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 N/D | N/D | N/D
 

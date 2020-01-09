@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CreateProperty task [MSBuild]
 - MSBuild, CreateProperty task
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cac0af3371a5c4ae385cc19367b360b8e8f608fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778266"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590064"
 ---
 # <a name="createproperty-task"></a>CreateProperty (tarea)
 Rellena las propiedades con los valores pasados. Esto permite que los valores se copien de una propiedad o cadena a otra.

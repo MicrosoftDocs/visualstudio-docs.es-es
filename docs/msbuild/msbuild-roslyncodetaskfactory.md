@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443416"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585904"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tareas insertadas de MSBuild con RoslynCodeTaskFactory
 De forma similar a [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory usa los compiladores de Roslyn multiplataforma para generar ensamblados de la tarea en memoria para su uso como tareas insertadas.  Las tareas RolynCodeTaskFactory establecen como destino .NET Standard y pueden funcionar en los runtimes de .NET Framework y .NET Core, así como con otras plataformas como Linux y Mac OS.

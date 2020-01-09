@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), CustomBuild task
 - CustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748111"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595350"
 ---
 # <a name="custombuild-task"></a>Tarea CustomBuild
 
@@ -32,7 +32,7 @@ Incluye la herramienta del compilador de Microsoft C++, cmd.exe. Esta clase deri
 
 En la tabla siguiente se describen los parámetros de la tarea**CustomBuild**.
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |**BuildSuffix**|Parámetro **string** opcional.|
 |**Sources**|Parámetro obligatorio de tipo **ITaskItem[]** .|

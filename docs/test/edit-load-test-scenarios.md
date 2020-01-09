@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665037"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593244"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 
@@ -37,7 +37,7 @@ Los escenarios contienen los componentes siguientes:
 |-|-|
 |Combinación de exploradores|Simula que los usuarios virtuales acceden a un sitio web a través de diversos exploradores web.|
 |Modelo de carga|Especifica el número de usuarios virtuales que están activos durante una prueba de carga y la tasa con que se inician nuevos usuarios. Por ejemplo: de pasos, constante y basada en objetivos.|
-|Modelo de combinación de pruebas|Especifica la probabilidad de que un usuario virtual ejecute una prueba determinada en un escenario de prueba de carga. Por ejemplo:  20 % de posibilidades de ejecutar la PruebaA y 80 % de ejecutar la PruebaB. El modelo de combinación de pruebas debe reflejar los objetivos de la prueba para un escenario determinado.|
+|Modelo de combinación de pruebas|Especifica la probabilidad de que un usuario virtual ejecute una prueba determinada en un escenario de prueba de carga. Por ejemplo: 20 % de posibilidades de ejecutar la PruebaA y 80 % de ejecutar la PruebaB. El modelo de combinación de pruebas debe reflejar los objetivos de la prueba para un escenario determinado.|
 |Combinación de pruebas|La combinación de pruebas es la selección de pruebas unitarias y de rendimiento web que constituyen el escenario, así como la distribución de esas pruebas.|
 |Combinación de redes|Simula que los usuarios virtuales acceden a un sitio web a mediante una serie de conexiones de red. La combinación de redes ofrece opciones que incluyen LAN, módem por cable y otras.|
 

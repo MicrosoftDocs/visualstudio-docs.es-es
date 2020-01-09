@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654638"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593790"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
@@ -52,7 +52,7 @@ De forma predeterminada, el elemento especificado se busca en todos los elemento
 
 Para limitar la búsqueda a un tipo específico de elemento de código, puede especificar un prefijo en el cuadro de búsqueda o seleccionar uno de los cinco iconos de filtro:
 
-Prefijo | Iconos | Acceso directo | DESCRIPCIÓN
+Prefijo | Iconos | Acceso directo | Descripción
 :-: | - | - | -
 :| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir al número de línea especificado
 f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
@@ -65,7 +65,7 @@ m| ![Icono de miembros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl
 
 Para restringir la búsqueda a una ubicación específica, use uno de los dos iconos de documento:
 
-Iconos | DESCRIPCIÓN
+Iconos | Descripción
 ---- | ---
 ![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
 ![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
@@ -80,7 +80,7 @@ Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el códig
 
 Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) puede cambiar el funcionamiento de esta característica:
 
-Parámetro | DESCRIPCIÓN
+Parámetro | Descripción
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
 Mostrar detalles | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana

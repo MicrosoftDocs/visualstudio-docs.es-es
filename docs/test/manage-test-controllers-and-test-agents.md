@@ -2,17 +2,17 @@
 title: Administrar controladores de pruebas y agentes de pruebas
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652923"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584418"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -114,7 +114,7 @@ Para poder quitar un agente de prueba, es necesario que esté sin conexión.
 
 El agente de prueba puede encontrarse en uno de los siguientes estados:
 
-|Situación|DESCRIPCIÓN|
+|Situación|Descripción|
 |-|-----------------|
 |Ejecutando prueba|Ejecutar pruebas|
 |Listo|Disponible para la ejecución de pruebas y para la recopilación de datos y diagnósticos.|
@@ -140,7 +140,7 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 
 1. Cambie las siguientes propiedades de agente de prueba según corresponda:
 
-|Propiedad del agente de prueba|DESCRIPCIÓN|
+|Propiedad del agente de prueba|Descripción|
 |-|-----------------|
 |**Peso**|Sirve para distribuir la carga cuando se utilizan agentes de prueba con diferentes niveles de rendimiento. Por ejemplo, un agente de prueba con un peso de 100 recibe dos veces la carga de un agente de prueba con un peso de 50.|
 |**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:**  Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar de forma automática una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|

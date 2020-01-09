@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445293"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567299"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 
@@ -38,14 +38,14 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 1. Abra Visual Studio y cree un proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **winforms** y, después, elija **Crear una nueva aplicación de Windows Forms (.NET Framework)**. En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **winforms** y, después, elija **Crear una nueva aplicación de Windows Forms (.NET Framework)** . En el cuadro de diálogo que se abre, elija **Crear**.
 
-    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Acepte los valores predeterminados de **Solución**, **Nombre de la solución** (**BuildApp**) y **Marco**.
+    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Solución**, **Nombre de la solución** (**BuildApp**) y **Marco**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** > **Escritorio de Windows** y, a continuación, elija **Aplicación de Windows Forms (.NET Framework)**. Después, elija **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**  > **Escritorio de Windows** y, a continuación, elija **Aplicación de Windows Forms (.NET Framework)** . Después, elija **Aceptar**.
 
-    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** (**BuildApp**).
+    En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** (**BuildApp**).
     ::: moniker-end
 
 1. Haga clic en **Aceptar** o **Crear** para crear el archivo del proyecto.

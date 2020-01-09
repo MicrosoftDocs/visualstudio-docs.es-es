@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Error task [MSBuild]
 - MSBuild, Error task
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821140"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596364"
 ---
 # <a name="error-task"></a>Error (tarea)
 Detiene una compilación y registra un error basándose en una instrucción condicional evaluada.

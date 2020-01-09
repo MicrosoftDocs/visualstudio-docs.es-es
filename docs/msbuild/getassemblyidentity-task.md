@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GetAssemblyIdentity task
 - GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7aaa963da3f17265da6ebeaed4d30cfe75aa533c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593270"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tarea)
 Recupera las identidades de ensamblado de los archivos especificados y genera la información de identidad.

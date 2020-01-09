@@ -2,17 +2,17 @@
 title: IntelliSense de C++
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461703"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594219"
 ---
 # <a name="visual-c-intellisense-features"></a>Características de IntelliSense de Visual C++
 
@@ -90,7 +90,7 @@ Si cambia el proyecto activo a Android, cambiarán los subrayados ondulados:
 
 ## <a name="intellisense-for-stand-alone-files"></a>IntelliSense para archivos independientes
 
-Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas de IntelliSense en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  >  **Avanzado**. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque la sección **IntelliSense y exploración para archivos que no forman parte de proyectos**.
+Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas de IntelliSense en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  > **Avanzado**. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque la sección **IntelliSense y exploración para archivos que no forman parte de proyectos**.
 
 ![Archivo único de IntelliSense de Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 

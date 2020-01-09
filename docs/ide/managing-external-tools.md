@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652385"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591299"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -61,7 +61,7 @@ Puede agregar una herramienta externa para que aparezca en el menú **Herramient
 
 Lo siguiente es una lista completa de los argumentos que se pueden utilizar al definir una herramienta externa:
 
-|Name|Argumento|DESCRIPCIÓN|
+|NOMBRE|Argumento|Descripción|
 |----------|--------------|-----------------|
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|
