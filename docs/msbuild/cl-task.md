@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747356"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593361"
 ---
 # <a name="cl-task"></a>CL (tarea)
 Incluye la herramienta del compilador de Microsoft C++, *cl.exe*. El compilador genera archivos ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o archivos de módulos de códigos ( *.netmodule*). Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).
@@ -186,7 +186,7 @@ Incluye la herramienta del compilador de Microsoft C++, *cl.exe*. El compilador 
 
   - **Safe** -  **/clr:safe**
 
-  - **OldSyntax** -   **/CLR: oldSyntax**
+  - **OldSyntax** -  **/CLR: oldSyntax**
 
     Para obtener más información, vea [/clr (Compilación de Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -208,9 +208,9 @@ Incluye la herramienta del compilador de Microsoft C++, *cl.exe*. El compilador 
 
   - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase** -   **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** -   **/Zi**
+  - **EditAndContinue** -  **/Zi**
 
     Para obtener más información, vea [/Z7, /Zi, /ZI (Formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 

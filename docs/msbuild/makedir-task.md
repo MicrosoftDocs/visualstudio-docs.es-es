@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MakeDir task [MSBuild]
 - MSBuild, MakeDir task
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011cc16dd965b952aa382c46f01d09fcc41bc02e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855931"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592170"
 ---
 # <a name="makedir-task"></a>MakeDir (tarea)
 Crea directorios y, si es preciso, cualquier directorio primario.

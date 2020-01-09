@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565180"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de pruebas de carga
 
@@ -50,7 +50,7 @@ Para ordenar la mayoría de las tablas, puede elegir el título de la columna se
 
 La tabla siguiente muestra las tablas que están disponibles para analizar ejecuciones de prueba de carga.
 
-|Nombre de la tabla|DESCRIPCIÓN|
+|Nombre de la tabla|Descripción|
 |-|-|
 |Errores|Muestra una lista de errores producidos durante la ejecución de la prueba de carga. Para obtener más información, vea la [tabla Errores](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) en este tema, así como [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Páginas|Muestra una lista de páginas a las que se obtiene acceso durante la ejecución de una prueba de carga. Algunos datos de esta tabla sólo están disponibles después de que finalice una prueba de carga. Para obtener más información, vea [Cómo: Ver la respuesta de las páginas web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
@@ -72,7 +72,7 @@ La tabla **Solicitudes** muestra los detalles para las solicitudes individuales 
 
 La tabla siguiente muestra las columnas de la tabla **Solicitudes**:
 
-|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
+|Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |**Solicitud**|Dirección URL de la solicitud. Por ejemplo, *home.html* u *orange-arrow.gif*.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -94,7 +94,7 @@ La tabla **Pruebas** muestra los detalles para las pruebas individuales ejecutad
 
 La tabla siguiente muestra las columnas de la tabla **Pruebas**.
 
-|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
+|Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |**Prueba**|Nombre de la prueba.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -118,7 +118,7 @@ La tabla siguiente muestra las columnas de la tabla **Transacciones**.
 > [!NOTE]
 > Para ver todas las columnas, debe habilitar la propiedad Almacenamiento de detalles de tiempo con los parámetros de ejecución activos. Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Columna|DESCRIPCIÓN|Visible sin detalles de tiempo|
+|Columna|Descripción|Visible sin detalles de tiempo|
 |-|-|-|
 |**Transacción**|Nombre de la transacción.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
@@ -144,7 +144,7 @@ La tabla de errores agrupa los errores que se produjeron durante una prueba de c
 
 La tabla de errores contiene las columnas siguientes:
 
-|Columna|DESCRIPCIÓN|Visible de forma predeterminada|
+|Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |Tipo|Tipo del error. Por ejemplo, HttpError.|Sí|
 |Subtipo|Subtipo del error. Por ejemplo, LoadTestException.|Sí|
@@ -162,7 +162,7 @@ La tabla de errores agrupa los errores por tipo y subtipo de error. Para ver una
 
 La tabla **Errores de prueba de carga** contiene las columnas siguientes:
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |-|-|
 |**Tiempo**|Hora durante la prueba de carga en la que se produjo el error.|
 |**Agent**|Nombre del equipo agente en el que se produjo el error. Esto es importante al ejecutar pruebas de carga usando controladores de pruebas y agentes de prueba. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).|

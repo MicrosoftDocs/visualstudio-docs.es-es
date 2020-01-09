@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild (C++), tasks
 - SetEnv task (MSBuild (C++))
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ec3170c9662cd9ef67521addfdf0d0095bd23b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 59523e3f6b12eb5921235efcf15d7937a14e7247
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595103"
 ---
 # <a name="setenv-task"></a>Tarea SetEnv
 Establece o elimina el valor de una variable de entorno especificada.
@@ -32,7 +32,7 @@ Establece o elimina el valor de una variable de entorno especificada.
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla, se describen los parámetros de la tarea **SetEnv**.
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |**Name**|Parámetro obligatorio de tipo **String**.<br /><br /> Nombre de una variable de entorno.|
 |**OutputEnvironmentVariable**|Parámetro de salida de tipo **String** opcional.<br /><br /> Contiene el valor que se asigna a la variable de entorno especificada por el parámetro **Name**.|

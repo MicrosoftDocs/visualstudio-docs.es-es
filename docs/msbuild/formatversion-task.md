@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdd6fa3517402dbd9c1e85a84f762f9aa7dd17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b36c4eb63c503132aaf434c64249e4a5fdd3872
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816888"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595259"
 ---
 # <a name="formatversion-task"></a>Tarea FormatVersion
 Anexa el número de revisión al número de versión.

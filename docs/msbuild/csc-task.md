@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888028"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595389"
 ---
 # <a name="csc-task"></a>Csc (tarea)
 Contiene *csc.exe* y genera archivos ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o archivos de módulos de códigos ( *.netmodule*). Para obtener más información sobre *csc.exe*, vea [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -31,7 +31,7 @@ Contiene *csc.exe* y genera archivos ejecutables ( *.exe*), archivos de bibliote
 ## <a name="parameters"></a>Parámetros
 En la siguiente tabla se describen los parámetros de la tarea `Csc` .
 
-| Parámetro | DESCRIPCIÓN |
+| Parámetro | Descripción |
 |------------------------------| - |
 | `AdditionalLibPaths` | Parámetro `String[]` opcional.<br /><br /> Especifica más directorios donde buscar referencias. Para obtener más información, vea [-lib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Parámetro `String` opcional.<br /><br /> Especifica uno o varios módulos que formarán parte del ensamblado. Para obtener más información, vea [-addmodule (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |

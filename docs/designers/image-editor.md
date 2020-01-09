@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635319"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589323"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 
@@ -111,7 +111,7 @@ Los comandos que influyen en el estado del **Editor de imágenes** se encuentran
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de imágenes** y se muestran en el orden en que aparecen de izquierda a derecha:
 
-|Elemento de la barra de herramientas|DESCRIPCIÓN|
+|Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Seleccionar**|Permite seleccionar una región rectangular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
 |**Selección irregular**|Permite seleccionar una región irregular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
@@ -135,7 +135,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Edit
 
 En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de imágenes**, en el orden en que aparecen de arriba abajo:
 
-|Elemento de la barra de herramientas|DESCRIPCIÓN|
+|Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Lápiz**|Utiliza la selección de color activa para dibujar el trazo de un alias. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|
 |**Pincel**|Utiliza la selección de color activa para dibujar un trazo suavizado. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|
@@ -158,7 +158,7 @@ Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten la transp
 
 En esta table se describen el modo en que diferentes tipos de herramientas controlan cómo se aplica la transparencia:
 
-|Herramienta|DESCRIPCIÓN|
+|Herramienta|Descripción|
 |----------|-----------------|
 |**Lápiz**, **Pincel**, **Aerógrafo**, **Línea**, **Rectángulo**, **Rectángulo redondeado**, **Elipse**, **Texto**|Para combinar la selección de color activa con la imagen, en la ventana **Propiedades**, expanda el grupo de propiedades **Canales**, establezca la casilla de verificación **Dibujar** en el canal  **Alfa** y, a continuación, dibuje normalmente.<br /><br /> Para dibujar con la selección de color activa y dejar el valor alfa de la imagen en su lugar, desactive la casilla de verificación **Dibujar** del canal **Alfa** y, después, dibuje normalmente.|
 |**Relleno**|Para combinar la selección de color activa con la imagen, elija el área que se deba rellenar.<br /><br /> Para utilizar la selección de color activa, incluido el valor del canal alfa, para sobrescribir la imagen, mantenga presionada la tecla **Mayús** y, después, elija el área que se deba rellenar.|
@@ -169,7 +169,7 @@ Puede utilizar la ventana **Propiedades** para especificar distintas propiedades
 
 En la tabla siguiente se describen las propiedades de la imagen:
 
-|Propiedad.|DESCRIPCIÓN|
+|Propiedad.|Descripción|
 |--------------|-----------------|
 |Ancho|El ancho de la imagen.|
 |Alto|El alto de la imagen.|
@@ -214,7 +214,7 @@ Después de seleccionar una región, puede cambiar su tamaño o el contenido de 
 
 En la tabla siguiente se describen las combinaciones válidas de teclas modificadoras que devuelven:
 
-|Ctrl|Shift|Alt|DESCRIPCIÓN|
+|Ctrl|Shift|Alt|Descripción|
 |----------|-----------|---------|-----------------|
 ||||Cambia el tamaño del contenido de la región seleccionada.|
 ||**Mayús**||Cambia proporcionalmente el tamaño del contenido de la región seleccionada.|
@@ -286,7 +286,7 @@ En la tabla siguiente se describen las propiedades de las herramientas:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que puede utilizar en Visual Studio para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de Visual Studio para trabajar con modelos 3D.|

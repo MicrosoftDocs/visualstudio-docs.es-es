@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188986"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588842"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedimiento Agregar diagramas de clases a proyectos
 
@@ -59,7 +59,7 @@ Para agregar varios diagramas de clases, repita los pasos de este procedimiento.
 
 En el **Explorador de soluciones**, abra el menú contextual (botón derecho) del archivo de clases y elija **Ver diagrama de clases**.
 
-O bien
+o bien
 
 En **Vista de clases**, abra el menú contextual del espacio de nombres o del tipo y, después, elija **Ver diagrama de clases**.
 

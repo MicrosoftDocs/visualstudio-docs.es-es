@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635027"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589856"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -86,7 +86,7 @@ A continuación, se muestra la barra de herramientas **Modo Editor de modelos**:
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de modelos**; se muestran en el orden en que aparecen de izquierda a derecha.
 
-|Elemento de la barra de herramientas|DESCRIPCIÓN|
+|Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Seleccionar**|Habilita la selección de puntos, bordes, caras u objetos de la escena, dependiendo del modo de selección activo.|
 |**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
@@ -114,7 +114,7 @@ Esta es la barra de herramientas **Editor de modelos**:
 
 En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de modelos**, en el orden en que aparecen de arriba abajo.
 
-|Elemento de la barra de herramientas|DESCRIPCIÓN|
+|Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Trasladar**|Mueve la selección.|
 |**Escalar**|Cambia el tamaño de la selección.|
@@ -132,7 +132,7 @@ La escena 3D se presenta de acuerdo con la vista, que se puede considerar una c�
 
 En la tabla siguiente se describen los controles de la vista primaria.
 
-|Control de vista|DESCRIPCIÓN|
+|Control de vista|Descripción|
 |------------------|-----------------|
 |**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
 |**Zoom**|Habilita la presentación de más o menos detalles en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto de la escena y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras mantiene presionada la tecla **Ctrl**.|
@@ -141,7 +141,7 @@ En la tabla siguiente se describen los controles de la vista primaria.
 
 La vista la establece la cámara virtual, pero también se define mediante una proyección. La proyección define cómo se traducen las formas y los objetos de la vista en píxeles en la superficie de diseño. En la barra de herramientas **Editor de modelos**, puede elegir la proyección **Perspectiva** u **Ortográfica**.
 
-|Proyección|DESCRIPCIÓN|
+|Proyección|Descripción|
 |----------------|-----------------|
 |**Perspectiva**|En la proyección de perspectiva, los objetos que están más alejados del punto de vista aparecen más pequeños y convergen finalmente en un punto en la distancia.|
 |**Ortográfica**|En la proyección ortográfica, los objetos parecen del mismo tamaño, con independencia de la distancia desde el punto de vista. No se muestra convergencia. Cuando se habilita la proyección **Ortográfica**, no se puede utilizar el modo **Orbital** para colocar la vista arbitrariamente.|
@@ -241,7 +241,7 @@ El aspecto de un objeto lo determinan la interacción de la iluminación de la e
 
 El Editor de modelos proporciona estos materiales predeterminados:
 
-|Material|DESCRIPCIÓN|
+|Material|Descripción|
 |--------------|-----------------|
 |**Sin iluminación**|Presenta una superficie sin iluminación simulada.|
 |**Lambert**|Presenta una superficie con iluminación ambiente simulada e iluminación difusa.|
@@ -251,7 +251,7 @@ Cada uno de estos materiales aplica una textura a la superficie de un objeto. Es
 
 Para modificar el modo en que un objeto determinado reacciona ante las distintas fuentes de luz de la escena, cambie las propiedades de iluminación del material independientemente de los demás objetos que utilizan el material. En esta tabla se describen las propiedades comunes de la iluminación:
 
-|Propiedad Lighting|DESCRIPCIÓN|
+|Propiedad Lighting|Descripción|
 | - |-----------------|
 |**Ambiente**|Describe cómo afecta a la superficie la iluminación ambiente.|
 |**Difusa**|Describe cómo afecta a la superficie las luces direccionales y puntuales.|
@@ -334,7 +334,7 @@ Para quitar la asociación elemento primario-elemento secundario entre dos objet
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que puede usar para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|

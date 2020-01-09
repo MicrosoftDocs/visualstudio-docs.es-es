@@ -3,15 +3,15 @@ title: Extender Visual Studio para Mac
 description: Puede extender las características y las funciones de Visual Studio para Mac con módulos denominados paquetes de extensión. En la primera parte de esta guía, se crea un paquete de extensión simple de Visual Studio para Mac para insertar la fecha y hora en un documento. En la segunda parte de esta guía, se presentan los conceptos básicos del sistema de paquetes de extensión y algunas de las API principales que conforman la base de Visual Studio para Mac.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/07/2019
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 76f8f4945542d1b2fd4dce230d750db4c965af76
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983269"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735836"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -72,10 +72,10 @@ Las extensiones de comando se definen mediante la adición de entradas al punto 
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
@@ -92,7 +92,7 @@ En el siguiente fragmento de código se muestra una extensión de CommandItem qu
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 
@@ -180,13 +180,13 @@ Antes de entrar en los detalles de la extensión de Visual Studio para Mac, es 
 * [Servicio de lenguaje y puntos de extensión del editor](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Vídeo de introducción a la arquitectura de editor](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Con esos recursos, los conceptos principales con los que debe estar familiarizado son [ `ITextBuffer` ](/dotnet/api/microsoft.visualstudio.text.itextbuffer) y [ `ITextView` ](/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+Con esos recursos, los conceptos principales con los que debe estar familiarizado son [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) y [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview):
 
 * `ITextBuffer` es una representación en memoria de texto que se puede cambiar con el tiempo. La propiedad `CurrentSnapshot` en `ITextBuffer` devuelve una representación *inmutable* del contenido actual del búfer, una instancia de `ITextSnapshot`. Cuando se realiza una modificación en el búfer, la propiedad CurrentSnapshot se actualiza a la versión más reciente. Los analizadores pueden inspeccionar la instantánea de texto en cualquier subproceso y, así, se garantiza que su contenido nunca cambie.
 
 * `ITextView` es la representación de la interfaz de usuario de cómo `ITextBuffer` se representa en la pantalla en el control del editor. Tiene una referencia a su búfer de texto, así como `Caret`, `Selection` y otros conceptos relacionados con la interfaz de usuario.
 
-Para una determinada propiedad [ `MonoDevelop.Ide.Gui.Document` ](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), puede recuperar la propiedad `ITextBuffer` subyacente y `ITextView` a través de `Document.GetContent<ITextBuffer>()` y `Document.GetContent<ITextView>()` respectivamente.
+Para una determinada propiedad [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), puede recuperar la propiedad `ITextBuffer` subyacente y `ITextView` a través de `Document.GetContent<ITextBuffer>()` y `Document.GetContent<ITextView>()` respectivamente.
 
 ## <a name="additional-information"></a>Información adicional
 

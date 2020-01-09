@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681109"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595207"
 ---
 # <a name="resolvecomreference-task"></a>Tarea ResolveComReference
 
@@ -33,7 +33,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 
  En la siguiente tabla se describen los parámetros de la tarea `ResolveCOMReference` .
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`DelaySign`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, coloca la clave pública en el ensamblado. Si `false`, firma completamente el ensamblado.|
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan a spawned *tlbimp.exe* y *aximp.exe* y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva.|
@@ -57,7 +57,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibNames`.
 
-|Metadatos|DESCRIPCIÓN|
+|Metadatos|Descripción|
 |--------------|-----------------|
 |`GUID`|Metadatos de elementos necesarios.<br /><br /> GUID de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|
 |`VersionMajor`|Metadatos de elementos necesarios.<br /><br /> La versión principal de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|
@@ -70,7 +70,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibFiles`.
 
-|Metadatos|DESCRIPCIÓN|
+|Metadatos|Descripción|
 |--------------|-----------------|
 |`EmbedInteropTypes`|Parámetro `Boolean` opcional.<br /><br />  Si `true`, inserte los tipos de interoperabilidad de esta referencia directamente en el ensamblado en lugar de generar un archivo DLL de interoperabilidad.|
 |`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: Use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|

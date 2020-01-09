@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594778"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedimiento para recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
 
@@ -73,7 +73,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 5. Elija la pestaña **General**. Seleccione **Solo eventos de IntelliTrace** para que se registren los eventos de diagnóstico significativos con un impacto mínimo en el rendimiento durante las pruebas.
 
-     O bien
+     o bien
 
      Seleccione **Información de llamadas y eventos de IntelliTrace** para registrar los eventos de diagnóstico y la traza de los métodos con información de las llamadas. Este nivel de traza podría afectar al rendimiento durante la ejecución de las pruebas.
 
@@ -81,7 +81,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 7. Elija la pestaña **Módulos**. Seleccione **Recopilar datos de todos los módulos excepto los siguientes** y use **Agregar** para agregarlos a la lista de módulos, o bien haga clic en **Quitar** para quitar un módulo. Esta opción permite incluir todos los módulos que se ejecutan en el sistema excepto los módulos especificados.
 
-     O bien
+     o bien
 
      Seleccione **Recopilar datos solo de los siguientes módulos** y haga clic en **Agregar** para agregarlos a la lista de módulos, o bien haga clic en **Quitar** para quitar un módulo. Esta opción permite especificar exactamente los módulos deseados.
 
@@ -90,7 +90,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 8. Elija la pestaña **Procesos**. Seleccione **Recopilar datos de todos los procesos excepto los siguientes** y haga clic en **Agregar** para agregarlos a la lista de procesos, o bien haga clic en el botón **Quitar** para quitar un proceso. Esta opción permite incluir todos los procesos que se ejecutan en el sistema excepto los procesos especificados.
 
-     O bien
+     o bien
 
      Seleccione **Recopilar datos solo de los procesos especificados** y haga clic en **Agregar** para agregarlos a la lista de procesos, o bien haga clic en **Quitar** para quitar un proceso. Esta opción permite especificar exactamente los procesos deseados.
 

@@ -3,17 +3,17 @@ title: Un paseo por el IDE de Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596975"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
@@ -155,7 +155,7 @@ El cuadro de búsqueda es una manera rápida y sencilla de navegar prácticament
 
 1. Presione **Ctrl**+**Q** para activar el cuadro de búsqueda en la parte superior del IDE.
 
-2. Escriba **detalle** en el cuadro de búsqueda. En los resultados que se muestran, elija **Change MSBuild verbosity** (Cambiar el nivel de detalle de MSBuild).
+2. Escriba **nivel de detalle** en el cuadro de búsqueda. En los resultados que se muestran, elija **Change MSBuild verbosity** (Cambiar el nivel de detalle de MSBuild).
 
    ![Cuadro de búsqueda de Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 

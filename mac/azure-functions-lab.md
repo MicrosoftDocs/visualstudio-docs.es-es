@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108145"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398171"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -27,7 +27,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 ## <a name="requirements"></a>Requisitos
 
 - Visual Studio para Mac 7.5 o posterior.
-- Una suscripción de Azure (disponible gratis desde [https://azure.com/free](https://azure.com/free)).
+- Una suscripción de Azure (disponible gratis desde [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Ejercicio 1: Creación de un proyecto de Azure Functions
 

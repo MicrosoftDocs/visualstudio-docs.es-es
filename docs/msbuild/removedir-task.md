@@ -13,17 +13,17 @@ helpviewer_keywords:
 - RemoveDir task [MSBuild]
 - MSBuild, RemoveDir task
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2e3e629102b3ce1cfab1a998b18842c69666c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0827e05b2c295df2922c5f58d6a47d52e9a50e3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974610"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596000"
 ---
 # <a name="removedir-task"></a>RemoveDir (tarea)
 Quita los directorios especificados y todos sus archivos y subdirectorios.

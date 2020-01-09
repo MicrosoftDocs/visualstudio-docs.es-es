@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65cfdde84e0a0e2bb1aa28e9d4b96e2505a93a57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665025"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593231"
 ---
 # <a name="edit-load-tests"></a>Editar pruebas de carga
 

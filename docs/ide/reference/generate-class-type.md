@@ -2,8 +2,8 @@
 title: Generación de una clase o tipo
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660075"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595636"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 
@@ -70,11 +70,11 @@ Esta generación de código se aplica a:
 
    ![Generar tipo](media/class-newtype-cs.png)
 
-   Selección | DESCRIPCIÓN
+   Selección | Descripción
    --- | ---
    Access | Configure el tipo para que tenga acceso *Predeterminado*, *Interno* o *Público*.
    Kind | Esta propiedad puede establecerse como *clase* o *struct*.
-   Name | No se puede cambiar y será el nombre que ya ha escrito.
+   NOMBRE | No se puede cambiar y será el nombre que ya ha escrito.
    Proyecto | Si hay varios proyectos en la solución, puede elegir dónde desea que resida la clase/estructura.
    Nombre de archivo | Puede crear un nuevo archivo o agregar el tipo a un archivo existente.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591273"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 
@@ -38,7 +38,7 @@ Se proporcionan varios gráficos integrados. Puede utilizar estos gráficos inte
 
 En la tabla siguiente se muestran los gráficos integrados disponibles para analizar resultados de pruebas de carga.
 
-|Nombre del gráfico|DESCRIPCIÓN|
+|Nombre del gráfico|Descripción|
 |-|-|
 |Indicadores clave|Contadores que describen aspectos básicos del rendimiento de la prueba, como carga del usuario, rendimiento y tiempo de respuesta.|
 |Tiempo de respuesta de la prueba|Datos sobre el tiempo que tardan las pruebas en ejecutarse.|

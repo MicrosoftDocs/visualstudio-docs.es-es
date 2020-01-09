@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590441"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -70,7 +70,7 @@ Empezaremos creando un archivo y agregándole código.
 
 Visual Studio proporciona *fragmentos de código* muy prácticos que pueden servir para generar bloques de código de uso común de forma rápida y sencilla. Existen [fragmentos de código](../../ide/code-snippets.md) disponibles para diferentes lenguajes de programación, como C#, Visual Basic y C++. Vamos a agregar el fragmento de código de C# `void Main` a nuestro archivo.
 
-1. Coloque el cursor justo encima de la llave de cierre final **}** en el archivo y escriba los caracteres `svm` (que es el acrónimo de `static void Main` &mdash;no se preocupe demasiado si no sabe lo que significa).
+1. Coloque el cursor justo encima de la llave de cierre final **}** en el archivo y escriba los caracteres `svm` (que es el acrónimo de `static void Main`&mdash;no se preocupe demasiado si no sabe lo que significa).
 
    Aparece un cuadro de diálogo emergente con información sobre el fragmento de código `svm`.
 

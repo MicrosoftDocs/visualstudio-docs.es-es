@@ -8,15 +8,15 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653321"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594765"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
@@ -28,7 +28,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 
 - Controlador de pruebas: *QTController.exe.config*
 
-    |Nombre de clave|DESCRIPCIÓN|Valor|
+    |Nombre de clave|Descripción|Valor|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Número de segundos que se va a esperar la solicitud de ping del agente antes de que la conexión se considere perdida.|"n" segundos.|
     |AgentSyncTimeoutInSeconds|Al iniciar una ejecución de pruebas de sincronización, número de segundos que se va a esperar para que todos los agentes se sincronicen antes de anular la ejecución.|"n" segundos.|
@@ -37,7 +37,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 
 - Agente de pruebas: *QTAgentService.exe.config*
 
-    |Nombre de clave|DESCRIPCIÓN|Valor|
+    |Nombre de clave|Descripción|Valor|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Número de segundos entre los intentos de conectarse al controlador.|"n" segundos. Predeterminado: "30" (treinta segundos).|
     |RemotingTimeoutSeconds|Tiempo máximo que puede durar una llamada de comunicación remota en segundos.|"n" segundos. Predeterminado: "600" (diez minutos).|
@@ -68,7 +68,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `AgentInitializeTimeout` en la sección `<appSettings>` y especificar un valor de cinco minutos:
 
@@ -102,7 +102,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `RemotingTimeoutSeconds` en la sección `<appSettings>` y especificar un valor de quince minutos:
 

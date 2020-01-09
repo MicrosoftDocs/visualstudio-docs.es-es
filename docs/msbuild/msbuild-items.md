@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251711"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590649"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 Los elementos de MSBuild son entradas del sistema de compilación y suelen representar archivos (los archivos se especifican en el atributo `Include`). Se agrupan en tipos de elemento de acuerdo con sus nombres de elemento. Los tipos de elemento son listas de elementos con nombre que se pueden usar como parámetros de las tareas. Las tareas utilizan los valores de los elementos para llevar a cabo los pasos del proceso de compilación.
@@ -157,7 +157,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
  Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md).
 
 ## <a name="item-definitions"></a>Definiciones de elementos
- A partir de .NET Framework 3.5, puede agregar metadatos predeterminados a cualquier tipo de elemento mediante el [elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Al igual que los metadatos conocidos, los metadatos predeterminados están asociados a todos los elementos del tipo de elemento que especifique. Puede invalidar explícitamente los metadatos predeterminados en una definición de elemento. Por ejemplo, el siguiente código XML proporciona a los elementos de `Compile` *one.cs* y *three.cs* los metadatos `BuildDay` con el valor "Monday". El código proporciona al elemento *two.cs* los metadatos `BuildDay` con el valor "Tuesday".
+ A partir de .NET Framework 3.5, puede agregar metadatos predeterminados a cualquier tipo de elemento mediante el [elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Al igual que los metadatos conocidos, los metadatos predeterminados están asociados a todos los elementos del tipo de elemento que especifique. Puede invalidar explícitamente los metadatos predeterminados en una definición de elemento. Por ejemplo, el siguiente código XML proporciona a los elementos de `Compile`*one.cs* y *three.cs* los metadatos `BuildDay` con el valor "Monday". El código proporciona al elemento *two.cs* los metadatos `BuildDay` con el valor "Tuesday".
 
 ```xml
 <ItemDefinitionGroup>

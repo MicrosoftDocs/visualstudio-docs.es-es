@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0b2b0c4cee2a372bccb8ad461ed195fc5519d7
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: c881b1a59e8e434dee33d99d81d0c8ac20909f5f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593842"
 ---
 # <a name="msbuild-task"></a>tareas de MSBuild
 
@@ -33,7 +33,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 
  En la siguiente tabla se describen los parámetros de la tarea `MSBuild` .
 
-| Parámetro | DESCRIPCIÓN |
+| Parámetro | Descripción |
 |-----------------------------------| - |
 | `BuildInParallel` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, los proyectos especificados en el parámetro `Projects` se compilan en paralelo, si es posible. El valor predeterminado es `false`. |
 | `Projects` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos del proyecto que se van a compilar. |

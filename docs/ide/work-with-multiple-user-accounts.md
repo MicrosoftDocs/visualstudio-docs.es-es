@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647076"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590662"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -97,7 +97,7 @@ En algunos casos, no se puede iniciar sesión ni agregar una cuenta de la forma 
 
 Para iniciar sesión mediante el flujo de código del dispositivo:
 
-1. Abra la página [ **Cuentas**](reference/accounts-environment-options-dialog-box.md) desde **Herramientas** > **Opciones** > **Entorno** y, después, seleccione **Habilitar el flujo de código del dispositivo al agregar o volver a autenticar una cuenta**. Seleccione **Aceptar** para cerrar las páginas de opciones.
+1. Abra la página [**Cuentas**](reference/accounts-environment-options-dialog-box.md) desde **Herramientas** > **Opciones** > **Entorno** y, después, seleccione **Habilitar el flujo de código del dispositivo al agregar o volver a autenticar una cuenta**. Seleccione **Aceptar** para cerrar las páginas de opciones.
 
 1. Elija **Archivo** > **Configuración de la cuenta** para abrir la página de administración de cuentas.
 
