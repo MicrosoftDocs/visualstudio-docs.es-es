@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415761"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776121"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depuración de aplicaciones de ASP.NET en vivo en Azure Virtual Machines y Azure Virtual Machines Scale Sets con Snapshot Debugger
 
@@ -43,6 +43,9 @@ En este tutorial va a:
   * Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
   * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
 
+  > [!NOTE]
+  >  Visual Studio Enterprise que se ejecutan en Windows de 32 bits no podrán ver las instantáneas.
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Apertura del proyecto e inicio de Snapshot Debugger
 
 1. Abra el proyecto de cuya depuración desea realizar una instantánea.
@@ -50,7 +53,7 @@ En este tutorial va a:
     > [!IMPORTANT]
     > Para la depuración de instantáneas, debe abrir la *misma versión del código fuente* que se publica en el servicio de conjunto de escalado de máquinas virtuales de Azure Machine\Virtual.
 
-1. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione el conjunto de escalado de máquinas virtuales Machine\Virtual de Azure en el que se implementa la aplicación web y una cuenta de almacenamiento de Azure y, después, haga clic en asociar. Snapshot Debugger también es compatible con [Azure Kubernetes Service](debug-live-azure-kubernetes.md) y [Azure App Service](debug-live-azure-applications.md).
+1. Elija **Depurar > Adjuntar Snapshot Debugger..** .. Seleccione el conjunto de escalado de máquinas virtuales Machine\Virtual de Azure en el que se implementa la aplicación web y una cuenta de almacenamiento de Azure y, después, haga clic en **asociar**. Snapshot Debugger también es compatible con [Azure Kubernetes Service](debug-live-azure-kubernetes.md) y [Azure App Service](debug-live-azure-applications.md).
 
     ![Inicio de Snapshot Debugger desde el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -70,7 +73,7 @@ En este tutorial va a:
     > [!NOTE]
     > En el caso de VMSS, el usuario debe actualizar manualmente las instancias en su Virtual Machine Scale Sets después de adjuntar el Snapshot Debugger por primera vez.
 
-    La ventana **módulos** muestra Cuándo se han cargado todos los módulos para el conjunto de escalado de máquinas virtuales Machine\Virtual de Azure (elija depurar **> módulos de Windows >** para abrir esta ventana).
+    La ventana **módulos** muestra Cuándo se han cargado todos los módulos para el conjunto de escalado de máquinas virtuales Machine\Virtual de Azure (elija **depurar > módulos de Windows >** para abrir esta ventana).
 
     ![Comprobación de la ventana Módulos](../debugger/media/snapshot-modules.png)
 
@@ -87,7 +90,7 @@ En este tutorial va a:
     > [!TIP]
     > No puede detenerse al visualizar una instantánea, pero puede colocar varios puntos de instantánea en el código para seguir la ejecución en diferentes líneas de código. Si tiene varios puntos de instantánea en el código, Snapshot Debugger garantiza que las instantáneas correspondientes sean de la misma sesión de usuario final. Snapshot Debugger hace esto aunque muchos usuarios visiten la aplicación.
 
-## <a name="take-a-snapshot"></a>Realización de una instantánea
+## <a name="take-a-snapshot"></a>Tomar una instantánea
 
 Una vez que se establece un acoplamiento, puede generar manualmente una instantánea en la vista de explorador del sitio web y ejecutar la línea de código marcada o esperar a que los usuarios generen uno a partir de su uso del sitio.
 
