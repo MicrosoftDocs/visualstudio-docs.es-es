@@ -20,6 +20,8 @@
       href: tutorial-nodejs.md
     - name: Creación de una aplicación Node.js con React
       href: tutorial-nodejs-with-react-and-jsx.md
+    - name: Crear una aplicación ASP.NET Core con TypeScript
+      href: tutorial-aspnet-with-typescript.md
     - name: Publicar una aplicación de Node.js en App Service de Linux
       href: publish-nodejs-app-azure.md
 - name: Guías de procedimientos
