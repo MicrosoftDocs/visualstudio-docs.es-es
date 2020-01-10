@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651123"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596455"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 
@@ -61,7 +61,7 @@ Puede reorganizar los elementos de una pestaña del **Cuadro de herramientas**, 
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>Crear y distribuir controles personalizados del cuadro de herramientas
 
-Puede crear controles personalizados del **Cuadro de herramientas**, iniciando con una plantilla de proyecto basada en [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) o en [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Después, puede distribuir el control personalizado a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del Cuadro de herramientas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Puede crear controles personalizados del **Cuadro de herramientas**, iniciando con una plantilla de proyecto basada en [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) o en [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Después, puede distribuir el control personalizado a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del Cuadro de herramientas](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
 
 ## <a name="help-on-toolbox-tabs"></a>Ayuda acerca de las pestañas del Cuadro de herramientas
 

@@ -2,17 +2,17 @@
 title: Métodos abreviados de teclado predeterminados para comandos de uso frecuente
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652520"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596728"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de uso frecuente para Visual Studio
 

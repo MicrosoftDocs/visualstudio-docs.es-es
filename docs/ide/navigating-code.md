@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: mikadumont
-ms.author: midumont
+author: TerryGLee
+ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585826"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 

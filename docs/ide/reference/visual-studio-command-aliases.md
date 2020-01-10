@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56161e1fd89ce29924368b6029ee12c17e75a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747700"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596416"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

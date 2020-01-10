@@ -13,17 +13,17 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079364"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596169"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
 
@@ -71,7 +71,7 @@ Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear
 4. Escriba la contraseña para acceder al archivo de claves y seleccione **ENTRAR**.
 
 > [!NOTE]
-> El archivo *.pfx* no puede incluir información de encadenamiento de certificados. Si lo hace, se producirá el siguiente error de importación: **No se encuentra el certificado y la clave privada para el descifrado**. Para quitar la información de encadenamiento de certificados, puede usar *Certmgr.msc* y [deshabilitar la opción](/previous-versions/aa730868(v=vs.80)) **Incluir todos los certificados** al exportar el archivo *.pfx.
+> El archivo *.pfx* no puede incluir información de encadenamiento de certificados. Si lo hace, se producirá el siguiente error de importación: **No se encuentra el certificado y la clave privada para el descifrado**. Para quitar la información de encadenamiento de certificados, puede usar *Certmgr.msc* y [deshabilitar la opción](/previous-versions/aa730868(v=vs.80))**Incluir todos los certificados** al exportar el archivo *.pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Inicio de sesión con un certificado de prueba
 

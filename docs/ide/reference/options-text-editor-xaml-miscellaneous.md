@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189556"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568209"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios
 

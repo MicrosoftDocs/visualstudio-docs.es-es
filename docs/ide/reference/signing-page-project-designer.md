@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461286"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597339"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 
@@ -102,7 +102,7 @@ Tenga en cuenta que un proyecto con firma retardada no se ejecutará y no se pue
 
 - [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)
 - [Administrar la firma de ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md)
-- [Uso de Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Uso de Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Uso de Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)

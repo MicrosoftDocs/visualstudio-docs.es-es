@@ -2,17 +2,17 @@
 title: Implementar una interfaz
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595558"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 

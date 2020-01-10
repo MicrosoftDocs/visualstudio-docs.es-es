@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647400"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585891"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -47,7 +47,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 En la tabla siguiente se muestran los parámetros de plantilla reservados que se pueden usar en cualquier plantilla:
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |clrversion|Versión actual del Common Language Runtime (CLR).|
 |ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo: `ext_safeprojectname`.|

@@ -2,8 +2,8 @@
 title: Refactorización de extracción de una interfaz
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654415"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595675"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
@@ -58,7 +58,7 @@ Esta refactorización se aplica a lo siguiente:
 
    ![Extraer interfaz](media/extractinterface-dialog-same-file.png)
 
-   | Campo | DESCRIPCIÓN |
+   | Campo | Descripción |
    | - | - |
    | **Nuevo nombre de interfaz** | Nombre de la interfaz que se va a crear. El nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. |
    | **Nuevo nombre de archivo** | Nombre del archivo generado que va a incluir la interfaz. Al igual que el nombre de interfaz, el nombre predeterminado es I*ClassName*, donde *ClassName* es el nombre de la clase seleccionada anteriormente. También puede seleccionar la opción **Agregar al archivo actual**. |
