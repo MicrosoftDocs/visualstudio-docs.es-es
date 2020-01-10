@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301417"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851166"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Los tipos de correcciones de compatibilidad (shim)** son una de las dos tecnolog
 
 - Visual Studio Enterprise
 
-  Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
+  Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Ejemplo: El error Y2K
  Consideremos un método que produce una excepción el 1 de enero de 2000:
@@ -503,8 +503,8 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Guía
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vea también
- [Aislar el código sometido a prueba con Microsoft se falsifica](../test/isolating-code-under-test-with-microsoft-fakes.md) el [blog de Peter Provost sobre: vídeo de las correcciones de compatibilidad de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(16m): probar el código que no se pueda comprobar con falsificaciones en Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
+ [Aislar el código sometido a prueba con Microsoft se falsifica](../test/isolating-code-under-test-with-microsoft-fakes.md) el [blog de Peter Provost sobre: vídeo de las correcciones de compatibilidad de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(16m): probar el código que no se pueda comprobar con falsificaciones en Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

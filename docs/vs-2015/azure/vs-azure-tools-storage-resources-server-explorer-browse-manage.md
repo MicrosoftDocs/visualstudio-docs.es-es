@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291232"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849871"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Información general del
 
 Si ha instalado Azure Tools para Microsoft Visual Studio, puede ver datos de blob, cola y tabla desde las cuentas de almacenamiento de Azure. El nodo de Azure **Storage** en el Explorador de servidores muestra datos que están en la cuenta del emulador de almacenamiento local y las otras cuentas de Azure Storage.
 
@@ -110,7 +110,7 @@ En Cloud Explorer, use cualquiera de los métodos siguientes:
 * Elija el nombre del blob y luego seleccione el botón **Abrir**.
 * Haga doble clic en el nombre del blob.
 
-El progreso de descarga de un blob se muestra en la ventana **Registro de actividad de Azure**.
+Puede ver el progreso de la descarga del blob en la ventana **Registro de actividad de Microsoft Azure** .
 
 El blob se abre en el editor predeterminado para ese tipo de archivo. Si el sistema operativo reconoce el tipo de archivo, el archivo se abre en una aplicación instalada localmente. En caso contrario, se le pedirá que elija una aplicación que sea adecuada para el tipo de archivo del blob. El archivo local que se crea cuando descarga un blob está marcado como de solo lectura.
 
@@ -122,7 +122,7 @@ De forma predeterminada, el blob se descarga en un directorio temporal. Para des
 
 Para cargar blobs, seleccione el botón **Cargar blob** cuando el contenedor esté abierto para verlo en la vista del contenedor de blobs.
 
-Puede elegir uno o varios archivos para cargar, así como cargar archivos de cualquier tipo. En la ventana **Registro de actividad de Azure** se muestra el progreso de la carga. Para más información sobre cómo trabajar con datos de blob, consulte [Uso de Azure Blob Storage en .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
+Puede elegir uno o varios archivos para cargar, así como cargar archivos de cualquier tipo. En la ventana **Registro de actividad de Azure** se muestra el progreso de la carga. Para más información sobre cómo trabajar con datos de blob, consulte [Uso de Azure Blob Storage en .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Para ver los registros transferidos a blobs
 
@@ -157,7 +157,7 @@ En la siguiente imagen se muestra una cola que contiene dos mensajes:
 
 ![Visualización de una cola](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Para más información sobre las colas de servicios de almacenamiento, consulte [Introducción a Azure Queue Storage mediante .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Para obtener información sobre el servicio web para colas de servicios de almacenamiento, vea [Conceptos del servicio Cola](https://go.microsoft.com/fwlink/?LinkId=264788). Para obtener información acerca de cómo enviar mensajes a una cola de servicios de almacenamiento mediante Visual Studio, vea [Enviar mensajes a una cola de servicios de almacenamiento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Para más información sobre las colas de servicios de almacenamiento, consulte [Introducción a Azure Queue Storage mediante .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Para obtener información sobre el servicio web para colas de servicios de almacenamiento, vea [Conceptos del servicio Cola](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Para obtener información acerca de cómo enviar mensajes a una cola de servicios de almacenamiento mediante Visual Studio, vea [Enviar mensajes a una cola de servicios de almacenamiento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Las colas de servicios de almacenamiento son distintas de las colas de Azure Service Bus. Para más información sobre las colas de Service Bus, consulte [Colas, temas y suscripciones de Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -185,7 +185,7 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 En el Diseñador de tablas, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y seleccione **Editar**.
 
-![Agregar o editar una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Adición o edición de una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 No es necesario que las entidades de una sola tabla compartan el mismo conjunto de propiedades (columnas). Tenga en cuenta las siguientes restricciones sobre la visualización y la edición de los datos de tabla:
 
@@ -200,7 +200,7 @@ No es necesario que las entidades de una sola tabla compartan el mismo conjunto 
 
     ![Botón Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. En el cuadro de diálogo **Agregar entidad**, introduzca los valores de las propiedades **PartitionKey** y **RowKey**.
+1. En el cuadro de diálogo **Agregar entidad**, escriba los valores de las propiedades **PartitionKey** y **RowKey**.
 
     ![Cuadro de diálogo Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Puede personalizar el conjunto de entidades que aparecen en una tabla si usa el 
 1. Para abrir el generador de consultas, abra una tabla para su visualización.
 1. Seleccione el botón **Generador de consultas** en la barra de herramientas de la vista de tabla.
 
-    Aparece el cuadro de diálogo **Generador de consultas**. En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
+    Aparece el cuadro de diálogo **Generador de consultas** . En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
 
     ![Generador de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Cuando haya terminado de generar la consulta, cierre el cuadro de diálogo. El formato de texto de la consulta resultante aparece en un cuadro de texto como un filtro de WCF Data Services.

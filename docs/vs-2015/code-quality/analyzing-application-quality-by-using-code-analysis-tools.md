@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291199"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849881"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analizar la calidad de la aplicación mediante herramientas de análisis del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ En esta sección, [analizar la calidad del código administrado](../code-quality
 
  [Analizar la calidad de los controladores mediante herramientas de análisis de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) El análisis de código para controladores es una herramienta de comprobación estática en tiempo de compilación que detecta errores de codificación C++ básica en C y programas e incluye un módulo especializado diseñado para detectar errores en el código de controlador de modo kernel (principalmente). El comprobador de controladores estático (Static Driver Verifier, SDV) es una herramienta de comprobación estática que analiza sistemáticamente el código fuente de los controladores en modo kernel de Windows. El SDV determina si el controlador interactúa correctamente con el kernel del sistema operativo de Windows.
 
- [Advertencias de análisis de código para controladores](https://go.microsoft.com/fwlink/?LinkId=225920) Describe las advertencias que el análisis de código para los controladores genera cuando detecta un posible error en el código del controlador.
+ [Advertencias de análisis de código para controladores](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Describe las advertencias que el análisis de código para los controladores genera cuando detecta un posible error en el código del controlador.
 
 ## <a name="related-tasks"></a>Tareas relacionadas
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Inserte aquí la descripción.

@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297961"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851213"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 
     2. Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.
 
-## <a name="generate"></a> *No se ve la opción para cambiar BrowserWindow.CurrentBrowser en la prueba automatizada de IU.*
+## <a name="generate"></a>*No veo la opción de cambiar BrowserWindow. CurrentBrowser en la prueba de IU codificada.*
  Puede que esté usando una versión de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] que no admite pruebas de IU codificadas en distintos exploradores web. Para usar estas pruebas de IU, debe usar Visual Studio Enterprise.
 
  *¿Qué más debería saber?*
@@ -138,18 +138,18 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 
  [Solucionar problemas debidos a errores de pruebas en varios exploradores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Guía
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Foro
- [Pruebas de automatización de IU de Visual Studio (incluyen pruebas automatizadas de IU)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Pruebas de automatización de IU de Visual Studio (incluyen pruebas automatizadas de IU)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vea también
  [Usar la automatización de la interfaz de usuario para probar las](../test/use-ui-automation-to-test-your-code.md) [configuraciones y plataformas compatibles con el código para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analizar pruebas de IU codificadas mediante los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297137"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845658"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 - Un archivo .iTrace de uno de estos orígenes:  
   
-    |**Origen**|**Vea**|  
+    |**Source**|**Vea**|  
     |----------------|-------------|  
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|  
     |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -71,7 +71,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 ## <a name="Understand"></a> Obtener información sobre el registro de IntelliTrace  
  Algunas de las secciones siguientes del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, desde Test Manager o desde aplicaciones de SharePoint.  
   
-|**Sección**|**Contiene**|**Origen de la recopilación**|  
+|**Section**|**Contiene**|**Origen de la recopilación**|  
 |-----------------|------------------|---------------------------|  
 |[Infracciones de rendimiento](#Performance)|Eventos de rendimiento con llamadas de función que superan el umbral configurado|Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager para aplicaciones web ASP.NET hospedadas en IIS|  
 |[Datos de excepción](#ExceptionData)|Excepciones, incluida la pila de llamadas completa de cada excepción|Todos los orígenes|  
@@ -194,7 +194,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |**Identificador de categoría**|**Identificador de categoría**|  
     |**Categoría**|**Categoría**|  
     |**Área**|**Producto**|  
-    |**Salida**|**Mensaje**|  
+    |**Resultado**|**Mensaje**|  
     |**Id. de correlación**|**Id. de correlación**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar la depuración desde una excepción no controlada  
@@ -225,7 +225,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|  
 |----------------|-------------------|  
 |**Id.**|El número de identificador del subproceso|  
-|**Nombre**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|  
+|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|  
 |**Hora de inicio**|La hora en que se creó el subproceso|  
 |**Hora de finalización**|La hora en que se completó el subproceso|  
   
@@ -270,7 +270,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Foros  
- [Depurador de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Depurador de Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
-#### <a name="guidance"></a>Guía  
- [Pruebas para la distribución continua con Visual Studio 2012 – Capítulo 6: Cuadro de herramientas de pruebas](https://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Orientación  
+ [Pruebas para la distribución continua con Visual Studio 2012 – Capítulo 6: Cuadro de herramientas de pruebas](https://msdn.microsoft.com/library/jj159337.aspx)

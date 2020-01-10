@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9e8b53c5bd4d6045d7582c24be865ae216f1114
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296879"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851088"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
 > La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino. No puede elegir como destino versiones de .NET Framework anteriores a la versión 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Seleccionar una versión de .NET Framework de destino
- Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**. La lista de plantillas de proyecto disponibles se filtra según la selección. En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**. La lista de plantillas de proyecto disponibles se filtra según la selección. En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, vea [Cómo: usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 > En las ediciones Express de Visual Studio, no se puede establecer el marco de destino en el cuadro de diálogo **Nuevo proyecto**.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Resolver referencias de ensamblado de usuario y sistema
- Para elegir como destino una versión de .NET Framework, primero debe instalar las referencias de ensamblado adecuadas. Las referencias de ensamblado de las versiones de .NET Framework 2.0, 3.0 y 3.5 se incluyen en .NET Framework 3.5 SP1, que puede descargar desde el [Centro de descarga de Microsoft, en el sitio web de Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). Las referencias de ensamblado de .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile y Silverlight también están disponibles en el sitio web [Descargas de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=179687).
+ Para elegir como destino una versión de .NET Framework, primero debe instalar las referencias de ensamblado adecuadas. Las referencias de ensamblado de las versiones de .NET Framework 2.0, 3.0 y 3.5 se incluyen en .NET Framework 3.5 SP1, que puede descargar desde el [Centro de descarga de Microsoft, en el sitio web de Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). Las referencias de ensamblado de .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile y Silverlight también están disponibles en el sitio web [Descargas de Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx).
 
 > [!NOTE]
 > Un perfil de cliente de .NET Framework es un subconjunto de .NET Framework que proporciona un conjunto limitado de bibliotecas y características. Para obtener más información sobre perfiles de cliente, consulte [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
@@ -76,9 +76,9 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
  Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Habilitar LINQ
- Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, consulte [Cómo: Crear un proyecto de LINQ](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, vea [Cómo: crear un proyecto de LINQ](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 [Compatibilidad con múltiples versiones](../msbuild/msbuild-multitargeting-overview.md)
 [.NET Framework Multi-Targeting for ASP.NET Web Projects (Compatibilidad con múltiples versiones de .NET Framework para proyectos web de ASP.NET)](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
 [Requisitos del sistema y compatibilidad de la plataforma](/visualstudio/productinfo/vs2015-compatibility-vs)

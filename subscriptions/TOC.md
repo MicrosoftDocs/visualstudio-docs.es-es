@@ -2,7 +2,7 @@
 # [Novedades](whats-new-in-subscriptions.md)
 # Suscripciones
 ## Comprar suscripciones
-### [Minoristas](https://visualstudio.microsoft.com/vs/pricing)
+### [Venta minorista](https://visualstudio.microsoft.com/vs/pricing)
 ### Nube 
 #### [Información general](vscloud-overview.md)
 #### [P+F sobre facturación](vscloud-billing-faq.md)
@@ -31,7 +31,7 @@
 #### [Resaltado de CAST](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
-#### [Microsoft 365](vs-m365.md)
+#### [Microsoft 365](vs-m365.md)
 #### [Suscripción de Office 365](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
@@ -88,7 +88,7 @@
 ### [Suscriptores con inicio de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ### [Administración de Visual Studio con GitHub Enterprise](assign-github.md)
 # Recursos
-## [Notas sobre la concesión de licencias de Visual Studio](https://aka.ms/vslicensing)
+## [Notas sobre la concesión de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Comparación de opciones de suscripción y precios](https://visualstudio.microsoft.com/vs/pricing)
 ## [Comparación de las características de los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ## [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
