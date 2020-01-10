@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 53e3c5fe30acf3221d52b0f6bd0e85aa9bb01085
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537958"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851204"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 >
 > Haga clic aquí para obtener las notas de la versión para [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Descargue [Comunidad de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/)).
+ Descargue [Comunidad de Visual Studio](https://visualstudio.microsoft.com/downloads/) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/)).
 
  Póngase manos a la obra de inmediato: cree un nuevo proyecto y empiece a escribir código. Elija el tipo de aplicación que desea crear. También puede [darse un paseo](./ide/visual-studio-ide.md) por el IDE de Visual Studio para familiarizarse con las herramientas.
 
@@ -69,7 +69,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 - [Servicios móviles de Azure](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Almacenamiento de Azure](https://azure.microsoft.com/documentation/services/storage/)
+- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
 - Integre las API de REST de Office 365 en su aplicación para conectarse a los datos almacenados en la nube. Para obtener más información, consulte [estos ejemplos](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -90,7 +90,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
  Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez
- Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.
+ Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Consulte [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.
 
 ## <a name="whats-new"></a>Novedades
 

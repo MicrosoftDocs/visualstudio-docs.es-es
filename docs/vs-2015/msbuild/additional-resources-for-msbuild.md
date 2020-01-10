@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d82531bcde6e0a03485ac6bf77965b5c5744f23
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8ede112706cfc0291d2523424192f123c9929771
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300449"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846966"
 ---
 # <a name="additional-resources-for-msbuild"></a>Recursos adicionales de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,16 +31,16 @@ Los siguientes sitios web y foros pueden ayudarle a encontrar respuestas a pregu
 ## <a name="microsoft-resources"></a>Recursos de Microsoft  
   
 ### <a name="on-the-web"></a>En la web  
- [Sitio web de MSBuild Channel 9](https://go.microsoft.com/fwlink/?LinkId=243092)  
+ [Sitio web de MSBuild Channel 9](https://channel9.msdn.com/tags/MSBuild/)  
  Contiene información sobre [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] y vínculos a otros sitios de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] en Internet.  
   
- [Blog de MSBuild Team](https://go.microsoft.com/fwlink/?LinkId=65846)  
+ [Blog de MSBuild Team](https://blogs.msdn.com/msbuild/)  
  Contiene información, vínculos y actualizaciones escritas por el equipo de producto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Foro de MSBuild de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=48931)  
+ [Foro de MSBuild de Visual Studio](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
  Un foro de la comunidad dedicado a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Vea también  
  [MSBuild](msbuild.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)

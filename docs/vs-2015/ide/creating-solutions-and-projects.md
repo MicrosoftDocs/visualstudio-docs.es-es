@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300601"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850565"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
  Para obtener acceso a versiones anteriores a la 4, debe tener instalado .NET Framework 3.5 en su sistema.
 
 ## <a name="downloading-sample-solutions"></a>Descargar soluciones de ejemplo
- Puede usar Visual para descargar e instalar soluciones de ejemplo desde la [Galería de código de MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
+ Puede usar Visual para descargar e instalar soluciones de ejemplo desde la [Galería de código de MSDN](https://code.msdn.microsoft.com/).
 
  Puede descargar los ejemplos individualmente o puede descargar un Sample Pack, que contiene ejemplos relacionados que comparten una tecnología o un tema. Recibirá una notificación cuando se publiquen cambios en el código fuente de cualquier ejemplo que descargue.
 
@@ -93,5 +93,5 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
 
 3. Seleccione el directorio que contiene la solución y presione Supr.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md) [NIB cómo: crear soluciones de varios proyectos](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
