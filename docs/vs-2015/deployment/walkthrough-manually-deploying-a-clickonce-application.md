@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294677"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844936"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Si no puede usar Visual Studio para implementar la aplicación [!INCLUDE[ndptecc
   
 - Instale Mage. exe y MageUI. exe.  
   
-     Mage. exe y MageUI. exe forman parte de la [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Debe tener el [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] instalado o la versión de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] incluido en Visual Studio. Para obtener más información, vea [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) en MSDN.  
+     Mage. exe y MageUI. exe forman parte de la [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Debe tener el [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] instalado o la versión de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] incluido en Visual Studio. Para obtener más información, vea [Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) en MSDN.  
   
 - Proporcione una aplicación para implementar.  
   
@@ -61,7 +61,7 @@ Si no puede usar Visual Studio para implementar la aplicación [!INCLUDE[ndptecc
   
 - Asegúrese de que la aplicación no tiene un manifiesto con información de UAC.  
   
-     Debe determinar si la aplicación contiene un manifiesto con información de control de cuentas de usuario (UAC), como un elemento `<dependentAssembly>`. Para examinar un manifiesto de aplicación, puede usar la utilidad [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) de Windows Sysinternals.  
+     Debe determinar si la aplicación contiene un manifiesto con información de control de cuentas de usuario (UAC), como un elemento `<dependentAssembly>`. Para examinar un manifiesto de aplicación, puede usar la utilidad [Sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) de Windows Sysinternals.  
   
      Si la aplicación contiene un manifiesto con detalles de UAC, debe volver a compilarlo sin la información de UAC. Para un C# proyecto en Visual Studio, abra las propiedades del proyecto y seleccione la pestaña aplicación. En la lista desplegable **manifiesto** , seleccione **crear aplicación sin un manifiesto**. Para un proyecto de Visual Basic en Visual Studio, abra las propiedades del proyecto, seleccione la pestaña aplicación y haga clic en **Ver configuración de UAC**. En el archivo de manifiesto abierto, quite todos los elementos incluidos en el único elemento de `<asmv1:assembly>`.  
   
@@ -207,7 +207,7 @@ Si no puede usar Visual Studio para implementar la aplicación [!INCLUDE[ndptecc
   
 ## <a name="see-also"></a>Vea también  
  [Mage.exe (Herramienta de generación y edición de manifiestos)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

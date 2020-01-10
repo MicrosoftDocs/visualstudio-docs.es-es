@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c92b4431c21c27bc1fe2ff86b24c850cc34694
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302781"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846081"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Usar el Diseñador de flujo de trabajo heredado
 El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado proporcionado por [!INCLUDE[vs2010](../includes/vs2010-md.md)] se puede usar para tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -54,4 +54,4 @@ El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado proporcionado por [!INCLUDE
  [Ayuda de la interfaz de usuario del diseñador heredado para Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Vea también
- [Desarrollo de flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65010)
+ [Desarrollo de flujos de trabajo](https://msdn2.microsoft.com/library/bb628448.aspx)

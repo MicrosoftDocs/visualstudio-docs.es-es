@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299567"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850214"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] es un marco unificado para la creación de aplicaciones distribuidas seguras, de confianza, de transacciones e interoperables. Reemplaza tecnologías de comunicación entre procesos anteriores, como los servicios web ASMX, .NET Remoting, Enterprise Services (DCOM) y MSMQ. WCF reúne la funcionalidad de todas esas tecnologías en un modelo de programación unificado. Esto simplifica la experiencia de desarrollo de aplicaciones distribuidas.
 
 #### <a name="what-are-wcf-data-services"></a>Qué son WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] es una implementación del estándar del protocolo Open Data (OData).  WCF Data Services le permite exponer datos tabulares como un conjunto de API de REST, lo que le permite devolver datos mediante verbos HTTP estándar como GET, POST, PUT o DELETE. En el lado del servidor, WCF Data Services se reemplazan por [ASP.net web API](https://dotnet.microsoft.com/apps/aspnet/apis) para crear nuevos servicios de oData. La biblioteca de cliente de WCF Data Services sigue siendo una buena opción para consumir servicios OData en una aplicación .NET desde Visual Studio (**Project &#124; Agregar referencia de servicio**). Para obtener más información, vea [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] es una implementación del estándar del protocolo Open Data (OData).  WCF Data Services le permite exponer datos tabulares como un conjunto de API de REST, lo que le permite devolver datos mediante verbos HTTP estándar como GET, POST, PUT o DELETE. En el lado del servidor, WCF Data Services se reemplazan por [ASP.net web API](https://dotnet.microsoft.com/apps/aspnet/apis) para crear nuevos servicios de oData. La biblioteca de cliente de WCF Data Services sigue siendo una buena opción para consumir servicios OData en una aplicación .NET desde Visual Studio (**Project &#124; Agregar referencia de servicio**). Para obtener más información, vea [WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx).
 
 ### <a name="wcf-programming-model"></a>Modelo de programación de WCF
  El modelo de programación de WCF se basa en la comunicación entre dos entidades: un servicio WCF y un cliente WCF. El modelo de programación se encapsula en el espacio de nombres <xref:System.ServiceModel> en el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
@@ -232,7 +232,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |[Tutorial: Crear un servicio WCF sencillo en Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Proporciona una demostración paso a paso de la creación y el uso de servicios WCF en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Proporciona una demostración paso a paso de cómo crear y usar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

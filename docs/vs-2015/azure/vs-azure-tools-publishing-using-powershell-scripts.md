@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5af4fc76fa20148495ca44cc7e9b74d4b95ecb7c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6d6611c8ce8bdb09023794b5eca029b6b972afb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298096"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849987"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso de scripts de Windows PowerShell para publicar en entornos de desarrollo y prueba
 
@@ -26,13 +26,13 @@ Mediante estos scripts, puede aprovisionar versiones personalizadas (también co
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* SDK de Azure 2.3 o posterior. Vea las [descargas de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=624384). (No necesita Azure SDK para generar los scripts para proyectos web. Esta característica es para proyectos web, no para los roles web de Cloud Services).
+* SDK de Azure 2.3 o posterior. Vea las [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/). (No necesita Azure SDK para generar los scripts para proyectos web. Esta característica es para proyectos web, no para los roles web de Cloud Services).
 * Azure PowerShell 0.7.4 o posterior. Consulte [Instalación y configuración de Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) o posterior.
 
 ## <a name="additional-tools"></a>Herramientas adicionales
 
-Tiene a su disposición herramientas y recursos adicionales para trabajar con PowerShell en Visual Studio para el desarrollo de Azure. Vea [Herramientas de PowerShell para Visual Studio](https://go.microsoft.com/fwlink/?LinkId=404012).
+Tiene a su disposición herramientas y recursos adicionales para trabajar con PowerShell en Visual Studio para el desarrollo de Azure. Vea [Herramientas de PowerShell para Visual Studio](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597).
 
 ## <a name="generating-the-publish-scripts"></a>Generación de los scripts de publicación
 
@@ -40,7 +40,7 @@ Puede generar los scripts de publicación para una máquina virtual que hospeda 
 
 ## <a name="scripts-that-visual-studio-generates"></a>Scripts que genera Visual Studio
 
-Visual Studio genera una carpeta de nivel de solución denominada **PublishScripts** que contiene dos archivos de Windows PowerShell, un script de publicación para su máquina virtual o sitio web, y un módulo que contiene funciones que puede utilizar en los scripts. Visual Studio también genera un archivo en el formato JSON que especifica los detalles del proyecto que va a implementar.
+Visual Studio genera una carpeta de nivel de solución denominada **PublishScripts** que contiene dos archivos de Windows PowerShell, un script de publicación para su máquina virtual o sitio web, y un módulo que contiene funciones que puede usar en los scripts. Visual Studio también genera un archivo en el formato JSON que especifica los detalles del proyecto que va a implementar.
 
 ### <a name="windows-powershell-publish-script"></a>Script de publicación de Windows PowerShell
 
@@ -52,7 +52,7 @@ El módulo de Windows PowerShell que Visual Studio genera contiene funciones que
 
 ### <a name="json-configuration-file"></a>Archivo de configuración de JSON
 
-El archivo JSON se crea en la carpeta **Configurations** y contiene los datos de configuración que indican exactamente los recursos que deben implementarse en Azure. El nombre del archivo que Visual Studio genera es project-name-WAWS-dev.json si ha creado un sitio web o  project name-VM-dev.json, si ha creado una máquina virtual. Este es un ejemplo de un archivo de configuración de JSON que se genera al crear un sitio web. La mayor parte de los valores se explican por sí solos. El nombre del sitio web se genera por Azure, por lo que es posible que no coincida con el nombre del proyecto.
+El archivo JSON se crea en la carpeta **Configuraciones** y contiene datos de configuración que especifican exactamente qué recursos se implementarán en Azure. El nombre del archivo que Visual Studio genera es project-name-WAWS-dev.json si ha creado un sitio web o  project name-VM-dev.json, si ha creado una máquina virtual. Este es un ejemplo de un archivo de configuración de JSON que se genera al crear un sitio web. La mayor parte de los valores se explican por sí solos. El nombre del sitio web se genera por Azure, por lo que es posible que no coincida con el nombre del proyecto.
 
 ```json
 {
@@ -144,7 +144,7 @@ Cuando crea una máquina virtual, el archivo de configuración de JSON es simila
 
 Puede editar la configuración de JSON para cambiar lo que ocurre al ejecutar los scripts de publicación. Las secciones `cloudService` y `virtualMachine` son necesarias, pero puede eliminar la sección `databases` si no la necesita. Las propiedades que están vacías en el archivo de configuración predeterminado que Visual Studio genera son opcionales; se requieren las que tienen valores en el archivo de configuración predeterminado.
 
-Si tiene un sitio web que cuenta con varios entornos de implementación (conocidos como ranuras) en lugar de un único sitio de producción en Azure, puede incluir el nombre de la ranura en el nombre del sitio web en el archivo de configuración de JSON. Por ejemplo, si tiene un sitio web llamado **mysite** y un espacio llamado **test**, el URI es `mysite-test.cloudapp.net`, pero el nombre correcto que se debe usar en el archivo de configuración es mysite(test). Solo puede hacerlo si el sitio web y las ranuras ya existen en su suscripción. De no ser así, cree el sitio web ejecutando el script sin especificar la ranura y luego créela en [Azure Portal](https://portal.azure.com/); después ejecute el script con el nombre del sitio web modificado. Para obtener más información sobre las ranuras de implementación para las aplicaciones web, vea [Configuración de entornos de ensayo para aplicaciones web en Azure App Service](/azure/app-service/web-sites-staged-publishing).
+Si tiene un sitio web que cuenta con varios entornos de implementación (conocidos como ranuras) en lugar de un único sitio de producción en Azure, puede incluir el nombre de la ranura en el nombre del sitio web en el archivo de configuración de JSON. Por ejemplo, si tiene un sitio web llamado **mysite** y una ranura para él llamada **test**, el URI es `mysite-test.cloudapp.net`, pero el nombre correcto que se usará en el archivo de configuración es mysite(test). Solo puede hacerlo si el sitio web y las ranuras ya existen en su suscripción. De no ser así, cree el sitio web ejecutando el script sin especificar la ranura y luego créela en [Azure Portal](https://portal.azure.com/); después ejecute el script con el nombre del sitio web modificado. Para obtener más información sobre las ranuras de implementación para las aplicaciones web, vea [Configuración de entornos de ensayo para aplicaciones web en Azure App Service](/azure/app-service/web-sites-staged-publishing).
 
 ## <a name="how-to-run-the-publish-scripts"></a>Cómo ejecutar los scripts de publicación
 
@@ -156,7 +156,7 @@ Si nunca ha ejecutado un script de Windows PowerShell antes, debe establecer pri
 
    ![Crear paquete de implementación web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obtener más información, vea [Cómo: crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
+   Para obtener más información, vea [Cómo crear un paquete de implementación web en Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). También puede automatizar la creación de su paquete de Web Deploy, como se describe en [Personalización y ampliación de los scripts de publicación](#customizing-and-extending-the-publish-scripts).
 
 1. En el **Explorador de soluciones**, abra el menú contextual para el script y luego elija **Abrir con PowerShell ISE**.
 1. Si ejecuta scripts de Windows PowerShell en este equipo por primera vez, abra una ventana de símbolo del sistema con privilegios de administrador y escriba el siguiente comando:
@@ -252,7 +252,7 @@ Para automatizar la creación de su proyecto, agregue código que llame a MSBuil
         #Write a function to build and package your web application
     ```
 
-    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte la referencia de línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](https://go.microsoft.com/fwlink/?LinkId=391339)
+    Para compilar la aplicación web, utilice MsBuild.exe. Para obtener ayuda, consulte la referencia de línea de comandos de MSBuild en: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'

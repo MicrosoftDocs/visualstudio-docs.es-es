@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297912"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850745"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,5 +75,5 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 ## <a name="see-also"></a>Vea también  
  [Ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog de Visual Studio: presentación del inspector de red de Visual studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog de Visual Studio: presentación del inspector de red de Visual studio](https://blogs.msdn.com/b/visualstudio/)   
  [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

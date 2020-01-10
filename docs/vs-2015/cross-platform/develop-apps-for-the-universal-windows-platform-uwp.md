@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299840"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844368"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ Con la Plataforma universal de Windows y nuestro núcleo de Windows, puede ejecu
 
  Sencillamente es una colección de contratos y versiones. Estos le permiten definir dónde se puede ejecutar la aplicación. Ya no se establece un sistema operativo como destino. Ahora el destino de la aplicación son una o varias familias de dispositivos. Obtenga información más detallada de esta [Guía de la plataforma](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos de
  Las herramientas de desarrollo de aplicaciones Windows universales incluyen emuladores que puede usar para ver el aspecto de la aplicación en diferentes dispositivos. Si quiere usar estos emuladores, debe instalar este software en un equipo físico. El equipo físico debe ejecutar Windows 8.1 (x 64) Professional Edition o superior y disponer de un procesador compatible con Cliente Hyper-V y Traducción de direcciones de segundo nivel (SLAT). Los emuladores no se pueden usar cuando Visual Studio está instalado en una máquina virtual.
 
  Esta es la lista del software que necesita:
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Asegúrese de que las Herramientas de desarrollo de aplicaciones de Windows universales estén seleccionadas en la lista de características opcionales. Sin estas herramientas no podrá crear aplicaciones universales.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Asegúrese de que las Herramientas de desarrollo de aplicaciones de Windows universales estén seleccionadas en la lista de características opcionales. Sin estas herramientas no podrá crear aplicaciones universales.
 
   Después de instalar este software, necesitará [Habilitar el dispositivo Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) para el desarrollo. (Ya no necesita una licencia de desarrollador para cada dispositivo Windows 10).
 

@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291872"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848463"
 ---
 # <a name="understanding-sal"></a>Introducción a SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El lenguaje de anotación de código fuente (SAL) de Microsoft proporciona un conjunto de anotaciones que puede usar para describir cómo una función usa sus parámetros, las suposiciones que hace sobre ellos y las garantías que realiza cuando finaliza. Las anotaciones se definen en el archivo de encabezado `<sal.h>`. El análisis de código de C++ Visual Studio para utiliza anotaciones sal para modificar su análisis de funciones. Para obtener más información sobre SAL 2,0 para el desarrollo de controladores de Windows, consulte [anotaciones de sal 2,0 para controladores de Windows](https://go.microsoft.com/fwlink/?LinkId=250979).  
+El lenguaje de anotación de código fuente (SAL) de Microsoft proporciona un conjunto de anotaciones que puede usar para describir cómo una función usa sus parámetros, las suposiciones que hace sobre ellos y las garantías que realiza cuando finaliza. Las anotaciones se definen en el archivo de encabezado `<sal.h>`. El análisis de código de C++ Visual Studio para utiliza anotaciones sal para modificar su análisis de funciones. Para obtener más información sobre SAL 2,0 para el desarrollo de controladores de Windows, consulte [anotaciones de sal 2,0 para controladores de Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  De forma nativa, C C++ y proporcionan solo maneras limitadas para que los desarrolladores expresen sistemáticamente la intención y la invarianza. Mediante el uso de anotaciones SAL, puede describir las funciones con mayor detalle para que los desarrolladores que las utilizan puedan comprender mejor cómo usarlas.  
   
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  En esta sección se muestran ejemplos de código para las anotaciones de SAL básicas.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Uso de la herramienta de análisis de Visual Studio Code para encontrar defectos  
- En los ejemplos, la herramienta de análisis de Visual Studio Code se usa junto con anotaciones SAL para encontrar defectos de código. Aquí se explica cómo hacerlo.  
+ En los ejemplos, la herramienta de análisis de Visual Studio Code se usa junto con anotaciones SAL para encontrar defectos de código. Aquí te mostramos cómo hacerlo.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Para usar las herramientas de análisis de código de Visual Studio y SAL  
   
@@ -409,7 +409,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   O bien, puede anotar todos los parámetros para que su intención resulte clara en todo y para facilitar la comprobación de que se han realizado anotaciones.  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog del equipo de análisis de código](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Blog del equipo de análisis de código](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Vea también  
  [Uso de anotaciones sal para reducir defectos deC++ C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

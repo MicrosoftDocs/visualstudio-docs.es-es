@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296837"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845579"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296837"
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas/Administrador de fragmentos de código**).
 
 > [!TIP]
-> Para obtener información sobre cómo escribir fragmentos de código más fácilmente, busque en el sitio web de CodePlex herramientas de la comunidad como el [Editor de fragmentos](https://go.microsoft.com/fwlink/?LinkId=251033)de código.
+> Para obtener información sobre cómo escribir fragmentos de código más fácilmente, busque en el sitio web de CodePlex herramientas de la comunidad como el [Editor de fragmentos](https://snippeteditor.codeplex.com/)de código.
 
 ## <a name="snippet-template"></a>Plantilla de fragmento de código
  Esta es la plantilla básica de fragmento de código:

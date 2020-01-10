@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296008"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849480"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Mostrar un modelo UML en diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Vea también
- [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegar por el ejemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinear formas en un comando de menú de diagrama](https://go.microsoft.com/fwlink/?LinkId=213809) [ejemplo: crear elementos, formas y estereotipos](https://go.microsoft.com/fwlink/?LinkId=213811)
+ [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegar por el ejemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinear formas en un comando de menú de diagrama](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ejemplo: crear elementos, formas y estereotipos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

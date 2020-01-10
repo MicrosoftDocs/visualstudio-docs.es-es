@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299810"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844473"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
+Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](https://www.npmjs.com/package/vcremote)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
   
 > [!NOTE]
 > Para obtener información sobre el uso de servicios Mac hospedados en la nube en lugar de en un equipo Mac, vea [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Las instrucciones sirven para compilar con Visual Studio Tools para Apache Cordova. Para usar las instrucciones y compilar con Visual C++ para el desarrollo móvil multiplataforma, sustituya vcremote por vs-mda-remote.  
@@ -78,7 +78,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> Instalar al agente remoto para iOS  
- Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.  
+ Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://www.npmjs.com/package/vcremote), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.  
   
  Antes de instalar el agente remoto, asegúrese de se cumplen los [Requisitos previos](#Prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   

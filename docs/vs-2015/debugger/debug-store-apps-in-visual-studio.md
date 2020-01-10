@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298330"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850508"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ El depurador de Visual Studio permite controlar la ejecución de un programa y e
 |[Desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|El depurador deshabilita los eventos de administración del ciclo de vida de los procesos (PLM) de Windows que suspenden, reanudan y finalizan las aplicaciones. Puede desencadenar estos eventos desde la barra de herramientas del depurador.<br /><br /> Las tareas en segundo plano permiten realizar importantes operaciones incluso si la aplicación se ha suspendido. El depurador permite iniciar y depurar estas tareas en segundo plano.|
 
 ## <a name="see-also"></a>Vea también
- [Depurar en Visual Studio (en MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)
+ [Depurar en Visual Studio (en MSDN Library)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0839c69a95df4419781ece2a163071ae0e3e6930
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293690"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851453"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -38,7 +38,7 @@ La cadena de conexión funciona de manera diferente en algunos aspectos clave en
 * En Azure SDK 2.4 y versiones anteriores, la cadena de conexión se usa como sistema de tiempo de ejecución mediante el complemento de diagnóstico para obtener la información de la cuenta de almacenamiento para la transferencia de registros de diagnóstico.
 * En Azure SDK 2.6 y versiones posteriores, Visual Studio usa la cadena de conexión de diagnóstico para configurar la extensión de Azure Diagnostics con la información de la cuenta de almacenamiento adecuada durante la publicación. Puede usar la cadena de conexión para definir cuentas de almacenamiento diferentes para distintas configuraciones de servicio que Visual Studio usa durante la publicación. Sin embargo, dado que el complemento de diagnóstico ya no está disponible después de Azure SDK 2.5, el archivo .cscfg por sí solo no puede configurar la extensión de diagnósticos. Debe configurar la extensión por separado mediante herramientas como Visual Studio o PowerShell.
 * Para simplificar el proceso de configuración de la extensión de diagnósticos con PowerShell, la salida del paquete de Visual Studio también incluye el XML de configuración pública para la extensión de diagnósticos para cada rol. Visual Studio usa la cadena de conexión de diagnósticos para rellenar la información de la cuenta de almacenamiento en la configuración pública. Los archivos de configuración pública se crean en la carpeta Extensions. Los archivos de configuración pública usan el patrón de nomenclatura PaaSDiagnostics.&lt;nombre de rol\>.PubConfig.xml. Cualquier implementación basada en PowerShell puede usar este patrón para asignar cada configuración a un rol.
-* [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) usa la cadena de conexión en el archivo .cscfg para tener acceso a los datos de diagnóstico. Los datos aparecen en la pestaña **supervisión** . La cadena de conexión es necesaria para establecer el servicio de modo que muestre los datos de supervisión detallados en el portal.
+* [Azure Portal](https://portal.azure.com/) usa la cadena de conexión en el archivo .cscfg para tener acceso a los datos de diagnóstico. Los datos aparecen en la pestaña **supervisión** . La cadena de conexión es necesaria para establecer el servicio de modo que muestre los datos de supervisión detallados en el portal.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migración de proyectos a Azure SDK 2.6 y versiones posteriores
 Al migrar de Azure SDK 2.5 a Azure SDK 2.6 o versiones posteriores, si tenía una cuenta de almacenamiento de diagnósticos especificada en el archivo .wadcfgx, permanece allí. Para aprovechar la flexibilidad del uso de cuentas de almacenamiento diferentes para distintas configuraciones de almacenamiento, agregue manualmente la cadena de conexión al proyecto. Si va a migrar un proyecto de Azure SDK 2.4 o una versión anterior a Azure SDK 2.6, se conservan las cadenas de conexión de diagnóstico. Sin embargo, tenga en cuenta los cambios en el modo en que se tratan las cadenas de conexión en Azure SDK 2.6, que se describen en la sección anterior.
@@ -82,7 +82,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para roles que se ejecut
    * Si selecciona **Emulador de Microsoft Azure Storage**, la cadena de conexión se establece en `UseDevelopmentStorage=true`.
    * Si selecciona **Su suscripción**, puede elegir la suscripción de Azure que quiere usar y escribir un nombre de cuenta. Para administrar las suscripciones de Azure, seleccione **Administrar cuentas**.
    * Si selecciona **Credenciales escritas manualmente**, se le pedirá que escriba el nombre y la clave de la cuenta de Azure que quiere usar.
-5. Para ver el cuadro de diálogo **Configuración de diagnóstico**, seleccione **Configurar**. Excepto para **General** y **Directorios de registro**, cada pestaña representa un origen de datos de diagnóstico que puede recopilar. La pestaña **General** predeterminada ofrece las siguientes opciones de recopilación de datos de diagnóstico: **solo errores**, **toda la información**y **plan personalizado**. La opción predeterminada **Solo errores** usa la cantidad mínima de almacenamiento porque no transfiere advertencias ni mensajes de seguimiento. La opción **Toda la información** transfiere la mayor parte de la información, usa el máximo almacenamiento y, por tanto, es la opción más cara.
+5. Para ver el cuadro de diálogo **Configuración de diagnóstico**, seleccione **Configurar**. Excepto para **General** y **Directorios de registro**, cada pestaña representa un origen de datos de diagnóstico que puede recopilar. La pestaña **General** predeterminada le ofrece las siguientes opciones de recopilación de datos de diagnóstico: **Solo errores**, **Toda la información** y **Plan personalizado**. La opción predeterminada **Solo errores** usa la cantidad mínima de almacenamiento porque no transfiere advertencias ni mensajes de seguimiento. La opción **Toda la información** transfiere la mayor parte de la información, usa el máximo almacenamiento y, por tanto, es la opción más cara.
 
    > [!NOTE]
    > El tamaño mínimo admitido de "Cuota de disco en MB" es de 4 GB. Sin embargo, si va a recopilar volcados de memoria, aumente a un valor superior, como 10 GB.
@@ -101,7 +101,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
 ### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>Para activar el diagnóstico en máquinas virtuales de Azure
 
 1. En el Explorador de servidores, elija el nodo de Azure y luego conéctese a su suscripción de Azure, si aún no está conectado.
-2. Expanda el nodo **Virtual Machines**. Puede crear una nueva máquina virtual o seleccionar una que ya exista.
+2. Expanda el nodo **Máquinas virtuales** . Puede crear una nueva máquina virtual o seleccionar una que ya exista.
 3. En el menú contextual para la máquina virtual que le interese, seleccione **Configurar**. Aparece el cuadro de diálogo de configuración de la máquina virtual.
 
     ![Configuración de una máquina virtual de Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
@@ -120,9 +120,9 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
 
     ![Habilitar configuración y diagnóstico de Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    La pestaña predeterminada, **General**, le ofrece las siguientes opciones de recopilación de datos de diagnóstico: **solo errores**, **toda la información**y **plan personalizado**. La opción predeterminada, **Solo errores**, ocupa la menor cantidad de almacenamiento porque no transfiere avisos ni mensajes de error. La opción **Toda la información** transfiere la mayor cantidad de información y es, por tanto, la opción más cara en términos de almacenamiento.
-7. En este ejemplo, seleccione la opción **Plan personalizado** para poder personalizar los datos recopilados.
-8. El cuadro **Cuota de disco en MB** especifica cuánto espacio quiere asignar en la cuenta de almacenamiento para datos de diagnóstico. Puede cambiar el valor predeterminado si lo desea.
+    La pestaña predeterminada, **General**, le ofrece las siguientes opciones de colección de datos de diagnóstico: **Solo errores**, **Toda la información** y **Plan personalizado**. La opción predeterminada **Solo errores**toma la cantidad mínima de almacenamiento porque no transfiere advertencias o mensajes de seguimiento. La opción **Toda la información** transfiere la mayoría de la información y, por tanto, es la opción más cara en términos de almacenamiento.
+7. En este ejemplo, seleccione la opción **Plan personalizado** para que pueda personalizar los datos recopilados.
+8. El cuadro **Cuota de disco en MB** especifica la cantidad de espacio que quiere asignar en su cuenta de almacenamiento de datos de diagnóstico. Puede cambiar el valor predeterminado si lo desea.
 9. En cada pestaña de datos de diagnóstico que quiera recopilar, active su casilla **Habilitar la transferencia de \<tipo de registro\>** .
 
     Por ejemplo, si desea recopilar registros de aplicación, active la casilla **Habilitar la transferencia de registros de aplicación** en la pestaña **registros de aplicaciones** . Además, especifique cualquier otra información necesaria para cada tipo de datos de diagnóstico. Para consultar la información de configuración de cada pestaña, vea la sección **Configuración de orígenes de datos de diagnósticos** más adelante en este artículo.
@@ -135,7 +135,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
 Cuando habilite la recopilación de datos de diagnóstico, puede elegir exactamente qué orígenes de datos quiere recopilar y qué información se recopila. En las secciones siguientes se describen las pestañas del cuadro de diálogo **Configuración de diagnósticos** y lo que significa cada opción de configuración.
 
 ### <a name="application-logs"></a>Registros de aplicación
-Los registros de aplicación contienen información de diagnóstico generada por una aplicación web. Si quiere capturar registros de la aplicación, seleccione la casilla **Habilitar transferencia de registros de la aplicación**. Para aumentar o disminuir el intervalo entre la transferencia de registros de aplicación a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** . También puede cambiar la cantidad de información que se captura en el registro estableciendo el valor **Nivel de registro**. Por ejemplo, seleccione **Detallado** para más información o **Crítico** para capturar solo los errores críticos. Si tiene un proveedor de diagnósticos específico que emite registros de aplicación, puede capturarlos agregando el GUID del proveedor en el cuadro **GUID de proveedor** .
+Los registros de aplicación contienen información de diagnóstico generada por una aplicación web. Si quiere capturar registros de aplicación, active la casilla **Habilitar la transferencia de registros de aplicación** . Para aumentar o disminuir el intervalo entre la transferencia de registros de aplicación a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** . También puede cambiar la cantidad de información que se captura en el registro estableciendo el valor **Nivel de registro**. Por ejemplo, seleccione **Detallado** para más información o **Crítico** para capturar solo los errores críticos. Si tiene un proveedor de diagnósticos específico que emite registros de aplicación, puede capturarlos agregando el GUID del proveedor en el cuadro **GUID de proveedor** .
 
   ![Registros de aplicación](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
@@ -196,7 +196,7 @@ En la captura de pantalla siguiente, se muestran los procesos de los que se est�
 
 ![Volcados de memoria](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Para obtener más información, consulte [tomar el control del registro y el seguimiento en Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) y [Microsoft Azure Diagnostics parte 4: componentes de registro personalizados y cambios Azure Diagnostics 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Para más información, vea [Tome el control de registro y seguimiento en Windows Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) y [Microsoft Azure Diagnostics. Parte 4: Componentes de registro personalizados y cambios de Azure Dignostics 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Ver los datos de diagnóstico
 Cuando haya recopilado los datos de diagnóstico para un servicio en la nube o una máquina virtual, podrá verlos.
@@ -218,7 +218,7 @@ Cuando haya recopilado los datos de diagnóstico para un servicio en la nube o u
     En Cloud Explorer o en el Explorador de servidores, abra la cuenta de almacenamiento asociada a la implementación.
 3. Abra las tablas de diagnósticos en el visor de tablas y luego revise los datos que ha recopilado. Para los registros de IIS y los registros personalizados, puede abrir un contenedor de blobs. En la tabla siguiente se enumeran las tablas o contenedores de blobs que contienen los datos para los diferentes archivos de registro. Además de los datos para ese archivo de registro, las entradas de tabla contienen **EventTickCount**, **DeploymentId**, **Role** y **RoleInstance** para ayudarle a identificar qué máquina virtual y rol generó los datos y cuándo.
 
-   | Datos de diagnóstico | Descripción | Location |
+   | Datos de diagnóstico | Descripción | Ubicación |
    | --- | --- | --- |
    | Registros de aplicación |Registros que su código genera llamando a métodos de la clase **System.Diagnostics.Trace**. |WADLogsTable |
    | Registros de eventos |Datos que proceden de los registros de eventos de Windows en las máquinas virtuales. Windows almacena información en estos registros, pero las aplicaciones y los servicios también los usan para informar de errores o información de registro. |WADWindowsEventLogsTable |
@@ -274,8 +274,8 @@ El período de transferencia es el tiempo que transcurre entre las capturas de d
 Las marcas de tiempo se encuentran en la zona horaria local del centro de datos que hospeda el servicio en la nube. Se usan las siguientes tres columnas de marca de tiempo en las tablas de registro:
 
 * **PreciseTimeStamp**: marca de tiempo de ETW del evento. Es decir, el tiempo en que se registra el evento del cliente.
-* **Timestamp**: el valor de **PreciseTimeStamp** redondeado hacia abajo hasta el límite de la frecuencia de carga. Por ejemplo, si su frecuencia de carga es de 5 minutos y la hora del evento es 00:17:12, TIMESTAMP es 00:15:00.
-* **Timestamp**: la marca de tiempo en la que se creó la entidad en la tabla de Azure.
+* **TIMESTAMP**: el valor de **PreciseTimeStamp** redondeado hacia abajo hasta el límite de la frecuencia de carga. Por ejemplo, si su frecuencia de carga es de 5 minutos y la hora del evento es 00:17:12, TIMESTAMP es 00:15:00.
+* **Timestamp**: marca de tiempo en que se creó la entidad en la tabla de Azure.
 
 **¿Cómo administrar los costos al recopilar información de diagnóstico?**
 
@@ -285,7 +285,7 @@ La configuración predeterminada (**Nivel de registro** establecido en **Error**
 
 De forma predeterminada, IIS no recopila registros de solicitud con error. Puede configurar IIS para recopilar registros de solicitudes con error editando el archivo web.config para su rol web.
 
-**No obtengo información de seguimiento de métodos de RoleEntryPoint como OnStart. ¿Qué pasa?**
+**No estoy obteniendo información de seguimiento desde métodos RoleEntryPoint como OnStart. ¿Cuál es el problema?**
 
 A los métodos de **RoleEntryPoint** se les llama en el contexto de WAIISHost.exe, no en IIS. No se aplica la información de configuración de archivo web.config que normalmente habilita el seguimiento. Para resolver este problema, agregue un archivo .config a su proyecto de rol web y asigne un nombre al archivo que coincida con el ensamblado de salida que contiene el código **RoleEntryPoint**. En el proyecto de rol Web predeterminado, el nombre del archivo. config debe ser WAIISHost. exe. config. Agregue las líneas siguientes a este archivo:
 

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296906"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847806"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Preparación del equipo para el uso de la captura mediante programación  
  La API de captura mediante programación utiliza Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ofrecer la funcionalidad de captura. El equipo en el que se ejecuta la aplicación debe tener instaladas las herramientas remotas, incluso si utiliza la captura mediante programación en el ordenador local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no tiene que estar ejecutándose cuando realiza la captura mediante programación en un equipo local.  
   
- Para utilizar las API de captura remota en una aplicación que se ejecuta en un equipo, primero debe instalar las Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en ese equipo. Cada versión de las herramientas remotas admite diferentes plataformas de hardware. Para más información sobre cómo instalar las herramientas remotas, vea la [página de descargas de herramientas remotas](https://go.microsoft.com/fwlink/p/?LinkId=246691) en el sitio web de descargas de Microsoft.  
+ Para utilizar las API de captura remota en una aplicación que se ejecuta en un equipo, primero debe instalar las Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en ese equipo. Cada versión de las herramientas remotas admite diferentes plataformas de hardware. Para más información sobre cómo instalar las herramientas remotas, vea la [página de descargas de herramientas remotas](https://visualstudio.microsoft.com/downloads#remote-tools) en el sitio web de descargas de Microsoft.  
   
  Otra opción es que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instale los componentes necesarios para realizar la captura remota para aplicaciones de 32 bits.  
   

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 71ba7e8ee1b847137386c7714745f6668be4cabc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406639"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848737"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensiones cargadas automáticamente y sincrónicamente
 
@@ -54,4 +54,4 @@ Value = (DWORD)
 Los autores de extensiones pueden encontrar instrucciones para migrar paquetes a la carga asincrónica asincrónica en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
 
 ## <a name="see-also"></a>Vea también
-Para obtener más información sobre la configuración de la carga asincrónica sincrónica en Visual Studio 2019, vea la página [comportamiento de carga asincrónica sincrónica](https://aka.ms/AA52xzw) .
+Para obtener más información sobre la configuración de la carga asincrónica sincrónica en Visual Studio 2019, vea la página [comportamiento de carga asincrónica sincrónica](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) .

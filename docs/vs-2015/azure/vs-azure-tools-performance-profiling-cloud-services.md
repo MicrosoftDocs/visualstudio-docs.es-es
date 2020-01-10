@@ -11,19 +11,19 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 35593f4164ed024db19b5fa3503b2d7589a7ac2b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289764"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851897"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Prueba del rendimiento de un servicio en la nube
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Información general del
 Puede probar el rendimiento de un servicio en la nube de las maneras siguientes:
 
-* Use Diagnósticos de Azure para recopilar información acerca de solicitudes y conexiones y revisar estadísticas del sitio que muestran el rendimiento del servicio desde una perspectiva del cliente. Para comenzar, consulte [Configuración de Diagnósticos en Azure Cloud Services y Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=623009).
-* Utilice el generador de perfiles de Visual Studio para obtener un análisis exhaustivo de los aspectos de cálculo de cómo se ejecuta el servicio. Como se describe en este tema, puede utilizar el generador de perfiles para medir el rendimiento a medida que un servicio se ejecuta en Azure. Para obtener información acerca de cómo usar el generador de perfiles para medir el rendimiento a medida que un servicio se ejecuta localmente en un emulador de proceso, consulte [Prueba del rendimiento de un servicio en la nube de manera local en el emulador de Azure Compute con el generador de perfiles de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Use Diagnósticos de Azure para recopilar información acerca de solicitudes y conexiones y revisar estadísticas del sitio que muestran el rendimiento del servicio desde una perspectiva del cliente. Para comenzar, consulte [Configuración de Diagnósticos en Azure Cloud Services y Virtual Machines](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* Utilice el generador de perfiles de Visual Studio para obtener un análisis exhaustivo de los aspectos de cálculo de cómo se ejecuta el servicio. Como se describe en este tema, puede utilizar el generador de perfiles para medir el rendimiento a medida que un servicio se ejecuta en Azure. Para obtener información acerca de cómo usar el generador de perfiles para medir el rendimiento a medida que un servicio se ejecuta localmente en un emulador de proceso, consulte [Prueba del rendimiento de un servicio en la nube de manera local en el emulador de Azure Compute con el generador de perfiles de Visual Studio](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Elección de un método de prueba de rendimiento
 ### <a name="use-azure-diagnostics-to-collect"></a>Use Diagnósticos de Azure para recopilar:
@@ -79,18 +79,18 @@ La siguiente ilustración muestra cómo configurar sus valores de generación de
 ![Configuración de generación de perfiles](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Para habilitar la casilla **Habilitar generación de perfiles**, debe tener instalado el generador de perfiles en el equipo local que está utilizando para publicar su servicio en la nube. De forma predeterminada, el generador de perfiles se instala al instalar Visual Studio.
+> Para activar la casilla **Habilitar generación de perfiles** debe tener instalado el generador de perfiles en el equipo local que está usando para publicar su servicio en la nube. De forma predeterminada, el generador de perfiles se instala al instalar Visual Studio.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Para configurar opciones de generación de perfiles
-1. En el Explorador de soluciones, abra el menú contextual de su proyecto de Azure y, a continuación, elija **Publicar**. Para obtener pasos detallados acerca de cómo publicar un servicio en la nube, consulte [Publicar un servicio en la nube mediante Azure Tools](https://go.microsoft.com/fwlink/p?LinkId=623012).
+1. En el Explorador de soluciones, abra el menú contextual de su proyecto de Azure y, a continuación, elija **Publicar**. Para obtener pasos detallados acerca de cómo publicar un servicio en la nube, consulte [Publicar un servicio en la nube mediante Azure Tools](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
 2. En el cuadro de diálogo **Publicar aplicación de Azure**, elija la pestaña **Configuración avanzada**.
-3. Para habilitar la generación de perfiles, active la casilla **Habilitar generación de perfiles**.
-4. Para configurar sus valores de generación de perfiles, elija el hipervínculo **Configuración**. Aparece el cuadro de diálogo Configuración de generación de perfiles.
+3. Para habilitar la generación de perfiles, seleccione la casilla **Habilitar generación de perfiles** .
+4. Para configurar sus opciones de generación de perfiles, elija el hipervínculo **Configuración** . Aparece el cuadro de diálogo Configuración de generación de perfiles.
 5. En los botones de opción **¿Qué método de generación de perfiles desea usar?** , elija el tipo de generación de perfiles que necesita.
-6. Para recopilar los datos de generación de perfiles de interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa**.
-7. Para guardar la configuración, elija el botón **Aceptar**.
+6. Para recopilar los datos de generación de perfiles de interacción de capa, seleccione la casilla **Habilitar generación de perfiles de interacción de capa** .
+7. Para guardar la configuración, elija el botón **Aceptar** .
    
     Al publicar esta aplicación, esta configuración se usa para crear la sesión de generación de perfiles para cada rol.
 
@@ -102,7 +102,7 @@ Se crea una sesión de generación de perfiles para cada instancia de un rol en 
 ### <a name="to-view-profiling-reports"></a>Para ver informes de generación de perfiles
 1. Para ver la ventana del Explorador de servidores en Visual Studio, en la barra de menús elija Ver, Explorador de servidores.
 2. Elija el nodo Cálculo de Azure y, a continuación, elija el nodo de implementación de Azure para el servicio en la nube que seleccionó para generar perfiles cuando publicó en Visual Studio.
-3. Para ver los informes de generación de perfiles de una instancia, elija el rol en el servicio, a continuación, abra el menú contextual de una instancia concreta y, después, elija **Ver informe de generación de perfiles**.
+3. Para ver los informes de generación de perfiles para una instancia, elija el rol en el servicio, abra el menú contextual para una instancia específica y, a continuación, elija **Ver el informe de generación de perfiles**.
    
     El informe, un archivo .vsp, se descarga desde Azure y el estado de la descarga aparece en el registro de actividades de Azure. Al completarse la descarga, el informe de generación de perfiles aparece en una pestaña en el editor de Visual Studio denominada <nombre de rol\> *<número de instancia\>* <identificador\>.vsp. Aparecen datos de resumen del informe.
 4. Para mostrar diferentes vistas del informe, en la lista Vista actual, elija el tipo de vista que desea. Para obtener más información, consulte [Vistas de informes de las herramientas de generación de perfiles](https://msdn.microsoft.com/library/azure/bb385755.aspx).

@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302602"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851852"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
    **Orientación**
 
-   Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](https://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+   Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](https://msdn.microsoft.com/library/jj159340.aspx) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="q--a"></a>Preguntas y respuestas
 

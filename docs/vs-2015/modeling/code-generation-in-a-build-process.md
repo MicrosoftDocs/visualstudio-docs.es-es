@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297935"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850711"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,5 +284,5 @@ Si actualiza un archivo incluido, u otro archivo leído por la plantilla, Visual
 Hay una buena guía en la plantilla de T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
-- [SDK de visualización y modelado de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [SDK de visualización y modelado de Visual Studio](https://www.visualstudio.com/)
 - [Oleg Sych: Descripción de T4: integración de MSBuild](https://github.com/olegsych/T4Toolbox)

@@ -11,28 +11,28 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 00e13c6f217c54b99dfe103b86f1e775e36fd62a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b1617ab8bd61857b29d78dc800ca70e26a7c8ff2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293538"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852273"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depuración de un servicio en la nube de Azure publicado con Visual Studio e IntelliTrace
 Con IntelliTrace, puede registrar información de depuración amplia para una instancia de rol cuando se ejecuta en Azure. Si necesita encontrar la causa de un problema, puede utilizar los registros de IntelliTrace para recorrer su código desde Visual Studio como si se estuviera ejecutando en Azure. De hecho, IntelliTrace graba datos de entorno y ejecución de código de clave  cuando su aplicación de Azure se ejecuta como servicio en la nube en Azure y le permite reproducir los datos grabados desde Visual Studio. 
 
 Puede utilizar IntelliTrace si tiene Visual Studio Enterprise instalado y su aplicación de Azure tiene como destino .NET Framework 4 o una versión posterior. IntelliTrace recopila información para sus roles de Azure. Las máquinas virtuales para estos roles siempre ejecutan sistemas operativos de 64 bits.
 
-Como alternativa, puede usar la [depuración remota](https://go.microsoft.com/fwlink/p/?LinkId=623041) para conectarse directamente a un servicio en la nube que se ejecuta en Azure.
+Como alternativa, puede usar la [depuración remota](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debugging-cloud-services-overview?view=vs-2019) para conectarse directamente a un servicio en la nube que se ejecuta en Azure.
 
 > [!IMPORTANT]
 > IntelliTrace está pensado solo para escenarios de depuración y no debe usarse para una implementación de producción.
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configuración de una aplicación de Azure para IntelliTrace
-Para habilitar IntelliTrace para una aplicación de Azure, debe crear y publicar la aplicación desde un proyecto de Azure de Visual Studio. Debe configurar IntelliTrace para su aplicación de Azure antes de su publicación en Azure. Si publica la aplicación sin configurar IntelliTrace, deberá volver a publicar el proyecto. Para más información, consulte cómo [publicar proyectos de servicios en la nube de Azure con Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623012).
+Para habilitar IntelliTrace para una aplicación de Azure, debe crear y publicar la aplicación desde un proyecto de Azure de Visual Studio. Debe configurar IntelliTrace para su aplicación de Azure antes de su publicación en Azure. Si publica la aplicación sin configurar IntelliTrace, deberá volver a publicar el proyecto. Para más información, consulte cómo [publicar proyectos de servicios en la nube de Azure con Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
 
-1. Cuando esté preparado para implementar la aplicación de Azure, compruebe que los destinos de compilación del proyecto estén establecidos en **Depurar**.
+1. Cuando esté preparado para implementar su aplicación de Azure, compruebe que sus destinos de compilación del proyecto se establecen en **Depurar**.
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y, en el menú contextual, seleccione **Publicar**.
    
@@ -46,7 +46,7 @@ Para habilitar IntelliTrace para una aplicación de Azure, debe crear y publicar
 
     ![Vínculo de configuración de IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
    
-1. En el cuadro de diálogo de **configuración de IntelliTrace**, puede especificar qué eventos se van a registrar, si se va a recopilar información de llamada, para qué módulos y procesos se van a recopilar registros y cuánto espacio se va a asignar a la grabación. Para obtener más información sobre IntelliTrace, consulte [Depuración con IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=214468).
+1. En el cuadro de diálogo de **configuración de IntelliTrace**, puede especificar qué eventos se van a registrar, si se va a recopilar información de llamada, para qué módulos y procesos se van a recopilar registros y cuánto espacio se va a asignar a la grabación. Para obtener más información sobre IntelliTrace, consulte [Depuración con IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
    
     ![Configuración de IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298935"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850422"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Cómo: Agregar un controlador para arrastrar y colocar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Haga que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus pueda acceder al DSL de origen:
 
-    1. Si aún no lo ha hecho, descargue e instale la extensión Visual Studio ModelBus. Para obtener más información, vea [SDK de visualización y modelado](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Si aún no lo ha hecho, descargue e instale la extensión Visual Studio ModelBus. Para obtener más información, consulte [SDK de visualización y modelado](https://www.visualstudio.com/).
 
-    2. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic con el botón secundario en la superficie de diseño y haga clic en **Habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.
+    2. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic en la superficie de diseño y, a continuación, haga clic en **habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.
 
     3. Haga clic en **transformar todas las plantillas** y Recompile la solución.
 

@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297985"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851266"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener orientación adicional, consulte el [capítulo 5 sobre automatización de las pruebas del sistema en la guía sobre pruebas para entrega continua con Visual Studio 2012 (en inglés)](https://go.microsoft.com/fwlink/?LinkID=255196). Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener orientación adicional, consulte el [capítulo 5 sobre automatización de las pruebas del sistema en la guía sobre pruebas para entrega continua con Visual Studio 2012 (en inglés)](https://msdn.microsoft.com/library/jj159335.aspx). Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Guía
-- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Preguntas más frecuentes
-- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Foro
-- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vea también
 

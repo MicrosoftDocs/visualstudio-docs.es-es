@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290109"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848167"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
 ## <a name="general"></a>General  
  Estas opciones le permiten seleccionar el método de generación de perfiles, agregar la colección de objetos .NET y datos de duración, y especificar la ubicación predeterminada del informe y las convenciones de nomenclatura.  
   
- Para obtener más información, consulte:  
+ Para obtener más información, vea:  
   
  [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
   
@@ -77,7 +77,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
 ## <a name="instrumentation"></a>Instrumentación  
  Esta configuración permite recopilar datos de rendimiento de código JScript en páginas web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y especificar cualquier evento **anterior a la instrumentación** y **posterior a la instrumentación** que desee que se produzcan.  
   
- Para obtener más información, consulte:  
+ Para obtener más información, vea:  
   
  [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -89,9 +89,9 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
  Para obtener más información, consulte [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Eventos de Windows  
- Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos VSPerfReport.exe. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](https://go.microsoft.com/fwlink/?linkid=90752).  
+ Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos VSPerfReport.exe. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Para obtener más información, consulte:  
+ Para obtener más información, vea:  
   
  [Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
@@ -105,13 +105,13 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
 ## <a name="advanced"></a>Avanzadas  
  Esta configuración permite agregar opciones al proceso de instrumentación mediante la especificación de una o más opciones de la herramienta de generación de perfiles de línea de comandos [VSInstr](../profiling/vsinstr.md). También puede especificar la versión de Common Runtime de la que quiere generar perfiles cuando utiliza más de una versión de la aplicación.  
   
- Para obtener más información, consulte:  
+ Para obtener más información, vea:  
   
  [Cómo: Especificar el tiempo de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [Cómo: Especificar opciones de instrumentación adicional](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Temas de introducción](../profiling/overviews-performance-tools.md)   
+ [Información general](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

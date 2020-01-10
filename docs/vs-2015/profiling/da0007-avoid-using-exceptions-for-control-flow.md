@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a800d83e10b1c47096876fb3f9181a4db2f7a2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8bae47d5fd759de66777c4e1472603d3bf4a193d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300978"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843936"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evite utilizar excepciones para el flujo de control
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Identificador de regla | DA0007 |
 ## <a name="rule-description"></a>Descripción de la regla  
  Aunque el uso de controladores de excepciones para detectar errores y otros eventos que interrumpen la ejecución del programa es una buena práctica, el uso del controlador de excepciones como parte de la lógica de ejecución de programa normal puede ser costoso y debe evitarse. En la mayoría de los casos, las excepciones se deben utilizar solo en circunstancias que se producen con poca frecuencia y no se esperan. Las excepciones no deben utilizarse para devolver valores como parte del flujo del programa normal. En muchos casos, puede evitar generar excepciones si valida los valores y utiliza la lógica condicional para detener la ejecución de las instrucciones que provocan el problema.  
   
- Para obtener más información, consulte la sección [Administración de excepciones](https://go.microsoft.com/fwlink/?LinkID=177825) sección de **Capítulo 5: Mejorar el rendimiento de código administrado** en el volumen **Mejorar el rendimiento y la escalabilidad de las aplicaciones .NET** de la biblioteca **Patrones y prácticas de Microsoft** de MSDN.  
+ Para obtener más información, consulte la sección [Administración de excepciones](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) sección de **Capítulo 5: Mejorar el rendimiento de código administrado** en el volumen **Mejorar el rendimiento y la escalabilidad de las aplicaciones .NET** de la biblioteca **Patrones y prácticas de Microsoft** de MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Haga doble clic en el mensaje de la ventana Lista de errores para navegar a la vista Marcas. Busque la columna que contiene las medidas **Excepciones de .NET CLR(@ProcessInstance)\\número de excepciones producidas por segundo**. Determine si hay fases concretas de ejecución del programa en que el control de excepciones sea más frecuente que en otras. Mediante un perfil de muestreo, intente identificar las instrucciones Throw y los bloques Try/Catch que generan excepciones frecuentes. Si es necesario, agregue lógica a los bloques Catch para entender mejor qué excepciones se controlan con más frecuencia. Siempre que sea posible, reemplace las instrucciones Throw o los bloques Catch que se ejecutan con frecuencia con lógica de control de flujo simple o código de validación.  

@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f5d58533f6f2207d1b07883ab741eb900cdfbbf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300006"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851111"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
 
   El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla TAB para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.
 
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 4 o el](https://go.microsoft.com/fwlink/?LinkId=205215) [tutorial 1: C# crear un visor de imágenes en-vídeo 4](https://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 4 o el](https://msdn.microsoft.com/vbasic/gg315355.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 4](https://msdn.microsoft.com/vcsharp/gg278412.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen
 
@@ -67,14 +67,14 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
     5. Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Así pues, especifique los paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Debe tener la apariencia siguiente: "openFileDialog1.ShowDialog()".
 
         > [!NOTE]
-        > Los métodos constituyen una parte importante de cualquier programa. En este tutorial se han mostrado varias maneras de utilizarlos. Se puede llamar al método de un componente para ordenarle que haga algo, por ejemplo, como cuando llamó al método **del componente**OpenFileDialog`ShowDialog()`. Puede crear sus propios métodos para que los programas realicen acciones, como el que estamos construyendo ahora, que se denomina método `showButton_Click()` y que abre un cuadro de diálogo y una imagen cuando un usuario elige en un botón.
+        > Los métodos constituyen una parte importante de cualquier programa. En este tutorial se han mostrado varias maneras de utilizarlos. Se puede llamar al método de un componente para ordenarle que haga algo, por ejemplo, como cuando llamó al método `ShowDialog()` del componente **OpenFileDialog**. Puede crear sus propios métodos para que los programas realicen acciones, como el que estamos construyendo ahora, que se denomina método `showButton_Click()` y que abre un cuadro de diálogo y una imagen cuando un usuario elige en un botón.
 
     6. Para Visual C#, agregue un espacio y, después, agregue dos signos igual (`==`). Para Visual Basic, agregue un espacio y, después, use un solo signo igual (`=`). (Visual C# y Visual Basic utilizan distintos operadores de igualdad.)
 
     7. Agregue otro espacio. En cuanto lo haga, se abrirá otra ventana **IntelliSense**. Empiece a escribir `DialogResult` y pulse la tecla TAB para agregarlo.
 
         > [!NOTE]
-        > Cuando se escribe código para llamar a un método, a veces devuelve un valor. En este caso, el método **del componente**OpenFileDialog`ShowDialog()` devuelve un valor DialogResult. DialogResult es un valor especial que le indica lo que ha sucedido en un cuadro de diálogo. Un componente **OpenFileDialog** puede dar lugar a que el usuario pulse **Aceptar** o **Cancelar**, de modo que el método `ShowDialog()` devuelva DialogResult.OK o DialogResult.Cancel.
+        > Cuando se escribe código para llamar a un método, a veces devuelve un valor. En este caso, el método `ShowDialog()` del componente **OpenFileDialog** devuelve un valor DialogResult. DialogResult es un valor especial que le indica lo que ha sucedido en un cuadro de diálogo. Un componente **OpenFileDialog** puede dar lugar a que el usuario pulse **Aceptar** o **Cancelar**, de modo que el método `ShowDialog()` devuelva DialogResult.OK o DialogResult.Cancel.
 
     8. Escriba un punto para abrir la ventana **IntelliSense** del valor DialogResult. Escriba la letra `O` y pulse la tecla TAB para insertar **Aceptar**.
 

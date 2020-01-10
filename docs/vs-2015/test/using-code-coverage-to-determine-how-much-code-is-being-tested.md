@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297970"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851247"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 
 1. En el menú **Prueba**, elija **Analizar cobertura de código**.
 
-2. Para ver qué líneas se han ejecutado, elija ![Mostrar icono de color de cobertura de código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar color de cobertura de código**.
+2. Para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar colores en cobertura de código**.
 
      Para modificar los colores o utilizar la negrita, elija **Herramientas**, **Opciones**, **Entorno**, **Fuentes y colores**, **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
 
@@ -81,7 +81,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 
  Por ejemplo, suponga que al ejecutar una prueba con la entrada “2", se detecta que el 50 % de una determinada función está cubierto. Al ejecutar la prueba una segunda vez con la entrada “-2" se observa en la vista de color de destino que el otro 50 % de la función está cubierto. Ahora se fusionan mediante combinación los resultados de las dos series de pruebas y tanto el informe como la vista de color de cobertura muestran que el 100 % de la función se ha analizado.
 
- Use el ![icono del botón combinar en la ventana cobertura de código](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**combinar resultados** de la cobertura de código para hacerlo. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.
+ Use ![Icono para el botón Combinar en la ventana de cobertura de código](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Combinar resultados de la cobertura de código** para ello. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.
 
  Utilice **Exportar resultados de la cobertura de código** para guardar los resultados de una operación Merge.
 
@@ -221,7 +221,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Use las macros siguientes:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+ `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *functionname* `");`
 
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Guía
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vea también
  [Personalización del análisis de cobertura de código](../test/customizing-code-coverage-analysis.md) [solución de problemas](../test/troubleshooting-code-coverage.md) [de pruebas unitarias de código código](../test/unit-test-your-code.md)

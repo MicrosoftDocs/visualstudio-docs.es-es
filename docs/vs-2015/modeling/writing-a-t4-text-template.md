@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301115"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850737"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -203,7 +203,7 @@ private void WriteSquareLine(int i)
 
  Para obtener más información, vea [Directiva de ensamblado T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Espacios de nombres
+### <a name="namespaces"></a>Espacios de nombres de
  La directiva de importación es igual que la cláusula `using` en C# o la cláusula `imports` en Visual Basic. Permite hacer referencia a tipos del código sin utilizar un nombre completo:
 
 ```
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](https://go.microsoft.com/fwlink/?LinkId=178765) para crear un conjunto de clases con las que puede leer los datos XML.
+ **Cargar un archivo como modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede utilizar [xsd. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para crear un conjunto de clases con las que puede leer los datos XML.
 
  **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../includes/dsl-md.md)] proporciona herramientas que permiten editar un modelo como un diagrama o Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../includes/dsl-md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, vea [generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).
 

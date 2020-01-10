@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296896"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847827"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para gra
   
 ## <a name="related-sections"></a>Secciones relacionadas  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce la función de depuración en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Gráficos y juegos de DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|
+|[Gráficos y juegos DirectX](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|

@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295621"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852216"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Enlace de métodos abreviados de teclado a elementos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
    En la mayoría de los casos, no se debe usar **Shift** sin un segundo modificador, ya que si se presiona, la mayoría de las claves alfanuméricas se escriben con una letra mayúscula o un símbolo.  
   
-   Los códigos de tecla virtual permiten tener acceso a las teclas especiales que no tienen un carácter asociado, por ejemplo, las teclas de función y la tecla **retroceso** . Para obtener más información, consulte [códigos de tecla virtual](https://go.microsoft.com/fwlink/?LinkID=105932).  
+   Los códigos de tecla virtual permiten tener acceso a las teclas especiales que no tienen un carácter asociado, por ejemplo, las teclas de función y la tecla **retroceso** . Para obtener más información, consulte [códigos de tecla virtual](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
    Para que el comando esté disponible en el editor de Visual Studio, establezca el atributo `editor` en `guidVSStd97`.  
   

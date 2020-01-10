@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298131"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846556"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script de Windows PowerShell)
 ## <a name="syntax"></a>Sintaxis
@@ -32,7 +32,7 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuración
+## <a name="configuration"></a>Configuración de
 La ruta de acceso al archivo de configuración JSON que describe los detalles de la implementación.
 
 | Parámetro | Valor predeterminado |
@@ -57,7 +57,7 @@ Nombre de la suscripción de Azure en la que desea crear el sitio web.
 | ¿Aceptar caracteres comodín? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-La ruta de acceso al paquete de implementación web para publicar en el sitio web. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Para obtener más información, consulte [Introducción a Azure Cloud Services y ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+La ruta de acceso al paquete de implementación web para publicar en el sitio web. Puede crear este paquete mediante el Asistente de publicación web en Visual Studio. Para obtener más información, consulte [Introducción a Azure Cloud Services y ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019).
 
 | Parámetro | Valor predeterminado |
 | --- | --- |
@@ -92,7 +92,7 @@ Si es true, imprimir mensajes del script a la secuencia de salida.
 | ¿Aceptar la entrada de la canalización? |false |
 | ¿Aceptar caracteres comodín? |false |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Notas
 Para obtener una explicación completa de cómo usar el script para crear entornos de desarrollo y pruebas, consulte [Usar scripts de Windows PowerShell para la publicación en entornos de desarrollo y pruebas](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 El archivo de configuración JSON especifica los detalles de lo que va a implementarse. Incluye la información que especificó cuando creó el proyecto, como el nombre y el nombre de usuario para el sitio web. También incluye la base de datos que se va a aprovisionar, si la hubiera. El código siguiente muestra un archivo de configuración de JSON de ejemplo:

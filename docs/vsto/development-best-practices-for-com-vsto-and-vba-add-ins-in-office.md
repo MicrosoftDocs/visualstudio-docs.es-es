@@ -1,5 +1,5 @@
 ---
-title: 'Prácticas recomendadas de desarrollo: Complementos COM, VSTO & VBA en Office'
+title: 'Prácticas recomendadas de desarrollo: COM, VSTO, & complementos VBA en Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254641"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846358"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Prácticas recomendadas de desarrollo para complementos COM, VSTO y VBA en Office
   Si va a desarrollar complementos COM, VSTO o VBA para Office, siga las prácticas recomendadas de desarrollo descritas en este artículo.   Esto le ayudará a garantizar:
@@ -25,13 +25,13 @@ ms.locfileid: "71254641"
 - Reducción de la complejidad de la implementación de complementos para los usuarios y los administradores de ti.
 - No se producen errores de instalación no intencionada o de tiempo de ejecución del complemento.
 
->Nota: No se admite el uso del [puente de escritorio](/windows/uwp/porting/desktop-to-uwp-root) para preparar el complemento com, VSTO o VBA para la tienda Windows. Los complementos COM, VSTO y VBA no se pueden distribuir en la tienda Windows ni en la tienda Office.
+>Nota: no se admite el uso del [puente de escritorio](/windows/uwp/porting/desktop-to-uwp-root) para preparar el complemento com, VSTO o VBA para la tienda Windows. Los complementos COM, VSTO y VBA no se pueden distribuir en la tienda Windows ni en la tienda Office.
 
 ## <a name="do-not-check-for-office-during-installation"></a>No buscar Office durante la instalación
  No se recomienda que el complemento detecte si Office se instala durante el proceso de instalación del complemento. Si Office no está instalado, puede instalar el complemento y el usuario podrá tener acceso a él una vez instalado Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Usar tipos de interoperabilidad incrustados (NoPIA)
-Si la solución usa .NET 4,0 o una versión posterior, use tipos de interoperabilidad incrustados (NoPIA) en lugar de, en función del redistribuible de ensamblados de interoperabilidad primarios (PIA) de Office. El uso de la inserción de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad futura. Office 2010 era la última versión de Office que incluía el PIA Redistributable. Para obtener más información, vea [Tutorial: Incrustar información de tipos de](https://msdn.microsoft.com/library/ee317478.aspx) ensamblados de Microsoft Office y [tipos de interoperabilidad incrustados](/windows/uwp/porting/desktop-to-uwp-root).
+Si la solución usa .NET 4,0 o una versión posterior, use tipos de interoperabilidad incrustados (NoPIA) en lugar de, en función del redistribuible de ensamblados de interoperabilidad primarios (PIA) de Office. El uso de la inserción de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad futura. Office 2010 era la última versión de Office que incluía el PIA Redistributable. Para obtener más información, vea [Tutorial: incrustar información de tipos de ensamblados de Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) y [tipos de interoperabilidad incrustados](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si la solución usa una versión anterior de .NET, se recomienda que actualice la solución para usar .NET 4,0 o posterior. El uso de .NET 4,0 o posterior reduce los requisitos previos de tiempo de ejecución en las versiones más recientes de Windows.
 
@@ -46,7 +46,7 @@ Al escribir código VBA, use instrucciones de declaración seguras de 64 bits y 
 ## <a name="support-restricted-environments"></a>Compatibilidad con entornos restringidos
 La solución no debe requerir privilegios de administrador o elevación de la cuenta de usuario. Además, la solución no debe depender de establecer o modificar:
 
-- Directorio de trabajo actual.
+- El directorio de trabajo actual.
 - Directorios de carga de archivos DLL.
 - Variable de ruta de acceso.
 
@@ -61,7 +61,7 @@ Los clientes están pidiendo a los ISV que proporcionen instrucciones de soporte
 
 Para proporcionar instrucciones de soporte técnico para las aplicaciones cliente de Office (por ejemplo, Word o Excel), compruebe primero que los complementos se ejecutan en la versión actual de Office y, a continuación, confirme para proporcionar actualizaciones si el complemento se interrumpe en una versión futura. No es necesario probar los complementos cuando Microsoft publica una nueva compilación o una actualización de Office. Microsoft no suele cambiar la plataforma de extensibilidad COM, VSTO y VBA en Office, y estos cambios se documentan bien.
 
->Importante: Microsoft mantiene una lista de complementos admitidos para los informes de disponibilidad e información de contacto de ISV. Para obtener la lista de complementos, vea [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Importante: Microsoft mantiene una lista de complementos admitidos para los informes de disponibilidad e información de contacto de ISV. Para obtener la lista de complementos, consulte [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Usar el monitor de procesos para ayudar a depurar problemas de instalación o carga
 Si el complemento tiene problemas de compatibilidad durante la instalación o la carga, pueden estar relacionados con problemas con el acceso al registro o al archivo. Use el [monitor de procesos](/sysinternals/downloads/procmon) o una herramienta de depuración similar para registrar y comparar el comportamiento en un entorno de trabajo para ayudar a identificar el problema.

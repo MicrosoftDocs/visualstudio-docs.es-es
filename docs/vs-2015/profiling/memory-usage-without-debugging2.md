@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295691"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850817"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memoria sin depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Página de información general de Uso de memoria](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
- El gráfico de escala de tiempo muestra las fluctuaciones de memoria de la aplicación mientras se ejecuta. Los picos del gráfico suelen indicar que hay código recopilando o creando datos que luego descarta una vez que termina el procesamiento. Los picos acusados indican áreas que se podrían optimizar. Más preocupante es un aumento del consumo de memoria que no se devuelve porque puede indicar un uso de memoria ineficaz o incluso una fuga de memoria.  
+ El gráfico de escala de tiempo muestra las fluctuaciones de memoria de la aplicación mientras se ejecuta. Los picos del gráfico suelen indicar que hay código recopilando o creando datos que luego descarta una vez que termina el procesamiento. Los picos acusados indican áreas que se podrían optimizar. Más preocupante es un aumento del consumo de memoria que no se devuelve porque puede indicar un uso de memoria ineficaz o incluso una pérdida de memoria.  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> Cerrar una sesión de supervisión  
  ![Detener colección](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
@@ -137,7 +137,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
 |||  
 |-|-|  
-|**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
+|**Tipo de objeto**|El nombre de la instancia de tipo o de objeto.|  
 |**Recuento**|El número de instancias de objeto del tipo. El número siempre es 1 para una instancia.|  
 |**Tamaño (bytes)**|Para un tipo, el tamaño de todas las instancias del tipo de la instantánea de memoria, sin incluir el tamaño de los objetos incluidos en las instancias.<br /><br /> Para una instancia, tipo, tamaño del objeto sin incluir el tamaño de objetos incluidos en la instancia. instancias.|  
 |**Tamaño inclusivo (bytes)**|El tamaño de las instancias del tipo o el tamaño de una única instancia, incluido el tamaño de los objetos contenidos.|  
@@ -156,8 +156,8 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
 |||  
 |-|-|  
-|**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
-|**Tamaño (bytes)**|Para un tipo, el tamaño de todas las instancias del tipo, excepto el tamaño de los objetos contenidos en el tipo.<br /><br /> Para una instancia, tamaño del objeto sin incluir el tamaño de objetos incluidos en el objeto.|  
+|**Tipo o instancia de objeto**|El nombre de la instancia de tipo o de objeto.|  
+|**Tamaño (bytes)**|Para un tipo, el tamaño de todas las instancias del tipo, excepto el tamaño de los objetos contenidos en el tipo.<br /><br /> Para una instancia, el tamaño del objeto, excepto el tamaño de los objetos contenidos en el objeto.|  
 |**Tamaño inclusivo (bytes)**|El tamaño total de las instancias del tipo o el tamaño de la instancia, incluidos el tamaño de los objetos contenidos.|  
   
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Informes de diferencias de instantánea  
@@ -178,7 +178,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
 |||  
 |-|-|  
-|**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
+|**Tipo de objeto**|El nombre de la instancia de tipo o de objeto.|  
 |**Recuento**|El número de instancias de un tipo en la instantánea primaria. **Recuento** siempre es 1 para una instancia.|  
 |**Diferencia de recuento**|Para un tipo, la diferencia en el número de instancias del tipo entre la instantánea primaria y la instantánea anterior. El campo está en blanco para una instancia.|  
 |**Tamaño (bytes)**|El tamaño de los objetos de la instantánea primaria, excepto el tamaño de los objetos contenidos en los objetos. Para un tipo, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)** son los totales de los tamaños de las instancias del tipo.|  
@@ -198,8 +198,8 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
 |||  
 |-|-|  
-|**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
-|**Tamaño (bytes)**|Para una instancia, el tamaño del objeto en la instantánea primaria, excepto el tamaño de los objetos contenidos en la instancia.<br /><br /> Para un tipo, tamaño total de las instancias del tipo en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.|  
+|**Tipo o instancia de objeto**|El nombre de la instancia de tipo o de objeto.|  
+|**Tamaño (bytes)**|Para una instancia, el tamaño del objeto en la instantánea primaria, excepto el tamaño de los objetos contenidos en la instancia.<br /><br /> Para un tipo, el tamaño total de las instancias del tipo en la instantánea primaria, excepto el tamaño de los objetos contenidos en la instancia.|  
 |**Tamaño inclusivo (bytes)**|El tamaño de los objetos de la instantánea primaria, incluido el tamaño de los objetos contenidos en los objetos.|  
   
 ## <a name="see-also"></a>Vea también  
@@ -207,4 +207,4 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
  [Analizar el rendimiento de las aplicaciones](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Ejecutar herramientas de rendimiento y diagnósticos](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Procedimientos recomendados para la Tienda Windows con C++, C# y Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)

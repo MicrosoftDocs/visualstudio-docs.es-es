@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300735"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845521"
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|Propiedad|Descripción|  
+|La propiedad|Descripción|  
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -128,4 +128,4 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Cuadro de diálogo Requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)   
- [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://msdn.microsoft.com/magazine/cc163899.aspx)

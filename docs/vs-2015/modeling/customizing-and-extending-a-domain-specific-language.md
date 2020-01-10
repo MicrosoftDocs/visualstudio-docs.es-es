@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299349"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852413"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ El SDK de modelado y visualización de Visual Studio (VMSDK) proporciona varios 
 |El icono de la forma cambia para indicar el estado.|Establezca la visibilidad de la asignación de Decorator en la ventana detalles de DSL. Busque varios decoradores de imagen en la misma posición. Consulte [Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> O bien, invalide `ImageField.GetDisplayImage()`. Vea el ejemplo de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Establecer una imagen de fondo en cualquier forma|Reemplace InitializeInstanceResources () para agregar un ImageField delimitado. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
 |Anidar formas en cualquier profundidad|Configure un árbol de incrustación recursiva. Defina formas boundsrules para que contenga las formas. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
-|Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](https://go.microsoft.com/fwlink/?LinkID=186128).|
-|Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).|
+|Adjunte conectores en puntos fijos en el límite de un elemento.|Definir elementos terminales incrustados, representados por puertos pequeños en el diagrama. Use formas boundsrules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuitos en [SDK de visualización y modelado](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).|
+|Campo de texto muestra un valor derivado de otros valores.|Asigne el elemento Decorator de texto a una propiedad de dominio de almacenamiento calculada o personalizada. Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar los cambios entre los elementos del modelo o entre las formas|Consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagar los cambios a recursos como otras extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fuera del almacén.|Vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |La ventana de propiedades muestra las propiedades de un elemento relacionado.|Configurar el reenvío de propiedades. Vea [personalizar la ventana Propiedades](../modeling/customizing-the-properties-window.md).|

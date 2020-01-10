@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298929"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847216"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 - **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**  
   
-   Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015, una versión anterior de Visual Studio Ultimate o [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) que se ejecuta en modo de **seguimiento** .  
+   Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015, una versión anterior de Visual Studio Ultimate o [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) que se ejecuta en modo de **seguimiento** .  
   
    Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.  
   
@@ -186,7 +186,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
  [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogs  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Foros  
- [Diagnósticos de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnósticos de Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

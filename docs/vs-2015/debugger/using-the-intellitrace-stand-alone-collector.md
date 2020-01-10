@@ -13,19 +13,19 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40a61ef8c8b3f389af97024475fab9a625131a44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02639b91ce07ade97e9023dee3de7cfdaf10a07e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297119"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847969"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar el recopilador independiente de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El **recolector independiente IntelliTrace** permite recopilar datos de diagnóstico de IntelliTrace para las aplicaciones en servidores de producción o en otros entornos sin instalar Visual Studio en el equipo de destino y sin cambiar el entorno del sistema de destino. El recolector independiente IntelliTrace funciona en aplicaciones web, de Sharepoint, de WPF y de Windows Forms. Cuando la recolección de datos haya terminado, basta con eliminar el recolector para desinstalarlo.
 
- Eche un vistazo a IntelliTrace en acción: [Recopilación y análisis de datos en un entorno de producción (vídeo de Channel 9)](https://go.microsoft.com/fwlink/?LinkID=251851)
+ Eche un vistazo a IntelliTrace en acción: [Recopilación y análisis de datos en un entorno de producción (vídeo de Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
@@ -128,7 +128,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
          Por ejemplo:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID >* `":F`
 
     2. Dé permisos de lectura y ejecución en el directorio del recolector al grupo de aplicaciones de la aplicación web o la aplicación de SharePoint.
 
@@ -226,7 +226,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
     |||
     |-|-|
     |*grupoAplicaciones*|Nombre del grupo de aplicaciones donde la aplicación se ejecuta.|
-    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en aplicaciones web y aplicaciones de SharePoint:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace y eventos de SharePoint, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=227871) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
+    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en aplicaciones web y aplicaciones de SharePoint:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace y eventos de SharePoint, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
     |*rutaAccesoCompletaDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace. **Nota de seguridad:**  Proporcione la ruta de acceso completa, no una ruta de acceso relativa.|
 
      El recolector se conecta al grupo de aplicaciones y empieza a recopilar datos.
@@ -265,7 +265,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
     |||
     |-|-|
     |*rutaAccesoCompletaEjecutableIntelliTraceCollector*|Ruta de acceso completa al archivo ejecutable del recolector, IntelliTraceSC.exe.|
-    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en las aplicaciones administradas:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=227871) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
+    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en las aplicaciones administradas:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
     |*rutaAccesoCompletaNombreArchivoYDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace y el nombre del archivo .iTrace con la extensión **.itrace** . **Nota de seguridad:**  Proporcione la ruta de acceso completa, no una ruta de acceso relativa.|
     |*rutaAccesoNombreArchivoYArchivoEjecutableAplicación*|Ruta de acceso y nombre de archivo de la aplicación administrada.|
 
@@ -288,7 +288,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
     > Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes en el equipo de desarrollo. Vea [diagnosticar problemas después](../debugger/diagnose-problems-after-deployment.md)de la implementación.
 
 ## <a name="Minimizing"></a> ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?
- IntelliTrace puede recopilar una gran cantidad de datos, por lo que el impacto en el rendimiento de la aplicación depende de los datos que IntelliTrace recopile y el tipo de código que analice. Vea [Optimizar la recolección de IntelliTrace en servidores de producción](https://go.microsoft.com/fwlink/?LinkId=255233)
+ IntelliTrace puede recopilar una gran cantidad de datos, por lo que el impacto en el rendimiento de la aplicación depende de los datos que IntelliTrace recopile y el tipo de código que analice. Vea [Optimizar la recolección de IntelliTrace en servidores de producción](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)
 
  A continuación, se muestran algunas maneras de obtener la mayoría de los datos sin ralentizar la aplicación:
 
@@ -391,16 +391,16 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
  [IntelliTrace](../debugger/intellitrace.md)
 
 ### <a name="blogs"></a>Blogs
- [Uso del recopilador independiente de IntelliTrace de manera remota](https://go.microsoft.com/fwlink/?LinkId=262277)
+ [Uso del recopilador independiente de IntelliTrace de manera remota](https://blogs.msdn.com/b/visualstudioalm/archive/2012/07/09/using-the-intellitrace-standalone-collector-remotely.aspx)
 
- [Crear y personalizar planes de recolección de IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=227871)
+ [Crear y personalizar planes de recolección de IntelliTrace](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx)
 
- [Optimizar la recolección de IntelliTrace en servidores de producción](https://go.microsoft.com/fwlink/?LinkId=255233)
+ [Optimizar la recolección de IntelliTrace en servidores de producción](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)
 
- [Visual Studio ALM + blog de TFS](https://go.microsoft.com/fwlink/?LinkID=201340)
+ [Visual Studio ALM + blog de TFS](https://blogs.msdn.com/b/visualstudioalm)
 
 ### <a name="forums"></a>Foros
- [Depurador de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Depurador de Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)
 
 ### <a name="videos"></a>Vídeos
- [Vídeo de Channel 9: Recopilación y análisis de datos de IntelliTrace](https://go.microsoft.com/fwlink/?LinkID=251851)
+ [Vídeo de Channel 9: Recopilación y análisis de datos de IntelliTrace](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)

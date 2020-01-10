@@ -12,21 +12,21 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299311"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850487"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga doble clic o arrastre elementos hasta un diagrama de UML. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
+En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga doble clic o arrastre elementos hasta un diagrama de UML. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) y distribuirla a otros usuarios de Visual Studio.
 
  Si ya hay un comportamiento integrado por el tipo de diagrama y el tipo de elemento que desea arrastrar, quizás no pueda agregar o invalidar este comportamiento.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos de
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -56,7 +56,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 1. Cree un proyecto de biblioteca de clases en una nueva solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o en una solución existente.
 
-   1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
+   1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
 
    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, elija **Biblioteca de clases**.
 

@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301021"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851463"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Enlazar a una&#39;propiedad de Activity (cuadro de diálogo) (heredado)
 En este tema se describe cómo usar el cuadro de diálogo **enlazar a la propiedad de una actividad** en el [!INCLUDE[wfd1](../includes/wfd1-md.md)]heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Un tipo de instancia de propiedad de dependencia se puede enlazar con la propiedad pública o evento de otra actividad. Para obtener más información sobre el enlace de actividades, vea [usar propiedades de dependencia](https://go.microsoft.com/fwlink?LinkID=65007).
+ Un tipo de instancia de propiedad de dependencia se puede enlazar con la propiedad pública o evento de otra actividad. Para obtener más información sobre el enlace de actividades, vea [usar propiedades de dependencia](https://msdn2.microsoft.com/library/bb675255.aspx).
 
  Puede seleccionar una propiedad para enlazarla mediante el cuadro de diálogo **enlazar con la propiedad de una actividad** . Para abrir este cuadro de diálogo, haga clic en el botón de puntos suspensivos **[...]** al final del cuadro de texto de la propiedad seleccionada en la ventana **propiedades** o haga clic en el icono de signo de exclamación azul que aparece junto al nombre de la propiedad en el explorador de propiedades.
 
@@ -35,4 +35,4 @@ En este tema se describe cómo usar el cuadro de diálogo **enlazar a la propied
 |**Enlazar a un nuevo miembro**|Cree un nuevo campo de miembro o propiedad con el que enlazar. Escriba un **nuevo nombre de miembro**. Elija si desea crear una propiedad de dependencia o un campo público seleccionando **crear campo** o **crear propiedad**. Haga clic en **Aceptar** para crear el nuevo miembro.|
 
 ## <a name="see-also"></a>Vea también
- [Usar las propiedades de la actividad](https://go.microsoft.com/fwlink?LinkID=65013) [mediante propiedades](https://go.microsoft.com/fwlink?LinkID=65007) [de dependencia diseñador heredado para Windows Workflow Foundation ayuda de la interfaz de usuario](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Usar las propiedades de la actividad](https://msdn2.microsoft.com/library/bb628510.aspx) [mediante propiedades](https://msdn2.microsoft.com/library/bb675255.aspx) [de dependencia diseñador heredado para Windows Workflow Foundation ayuda de la interfaz de usuario](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

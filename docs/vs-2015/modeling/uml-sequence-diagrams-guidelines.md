@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297147"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850124"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de secuencia UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -261,8 +261,8 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 |**Para este propósito**|**Usar este formato**|
 |--------------------------|-------------------------|
-|Instancia anónima de un tipo.<br /><br /> Úselo si tiene solo una línea de vida de cada tipo.|*nombreDeTipo*|
-|Instancia con nombre de un tipo.<br /><br /> Úselo si desea mostrar una secuencia que implica más de una instancia del mismo tipo.|*objectname*:*TypeName*|
+|Instancia anónima de un tipo.<br /><br /> Úselo si tiene solo una línea de vida de cada tipo.|*typeName*|
+|Instancia con nombre de un tipo.<br /><br /> Úselo si desea mostrar una secuencia que implica más de una instancia del mismo tipo.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Crear líneas de vida a partir de tipos
  Puede crear nuevas líneas de vida de las clases que ya definió, por ejemplo, en un diagrama de clases.
@@ -372,7 +372,7 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 
 - Haga clic con el botón secundario en el mensaje que desea desplace y, a continuación, haga clic en **cambiar a diagrama**.
 
-  Visual Studio:
+  Visual Studio:
 
   - Reemplaza con un uso de interacción el mensaje seleccionado y sus mensajes secundarios.
 
@@ -443,4 +443,4 @@ En Visual Studio, puede dibujar un *Diagrama de secuencia* para mostrar una inte
 5. Para agregar nuevos mensajes a un fragmento, use las herramientas de mensajes o copiar y pegar.
 
 ## <a name="see-also"></a>Vea también
- [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de casos de uso de UML:](../modeling/uml-use-case-diagrams-reference.md) referencia [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md) diagramas de [componentes de UML:](../modeling/uml-component-diagrams-reference.md) vídeo de referencia: [esbozar interacciones mediante diagramas de secuencia](https://go.microsoft.com/fwlink/?LinkId=201113)
+ [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md) [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [diagramas de casos de uso de UML:](../modeling/uml-use-case-diagrams-reference.md) referencia [diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md) diagramas de [componentes de UML:](../modeling/uml-component-diagrams-reference.md) vídeo de referencia: [esbozar interacciones mediante diagramas de secuencia](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

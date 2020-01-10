@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299806"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844325"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar Visual C++ para el desarrollo móvil multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ Visual C++ para el desarrollo móvil multiplataforma](https://go.microsoft.com/f
   
 - Los emuladores de Windows Phone y el emulador de Microsoft Visual Studio para Android requieren un equipo que pueda ejecutar Hyper-V. Debe habilitarse la característica de Hyper-V en Windows antes de poder instalar y ejecutar los emuladores. Para más información, vea los [requisitos del sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) del emulador.  
   
-- Los emuladores de Android x86 que vienen con el SDK de Android funcionan mejor en equipos que pueden ejecutar el controlador HAXM de Intel. Este controlador requiere un procesador Intel x64 compatible con VT-x y Execute Disable Bit. Para obtener más información, vea [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Los emuladores de Android x86 que vienen con el SDK de Android funcionan mejor en equipos que pueden ejecutar el controlador HAXM de Intel. Este controlador requiere un procesador Intel x64 compatible con VT-x y Execute Disable Bit. Para obtener más información, vea [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://github.com/intel/haxm).  
   
 - La compilación de código para iOS requiere un ID de Apple, una cuenta del programa de desarrolladores de iOS y un equipo Mac que permita la ejecución de [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) o una versión posterior en OS X Mavericks o versiones posteriores. Para obtener pasos de instalación sencillos, vea [Install tools for iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a> Obtener las herramientas  
- Visual C++ para desarrollo móvil multiplataforma es un componente instalable incluido en las ediciones Professional y Enterprise de Visual Studio Community. Para obtener Visual Studio, vaya a la página [Descargas de Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) y descargue Visual Studio 2015 con la actualización 2 o una versión posterior.  
+ Visual C++ para desarrollo móvil multiplataforma es un componente instalable incluido en las ediciones Professional y Enterprise de Visual Studio Community. Para obtener Visual Studio, vaya a la página [Descargas de Visual Studio 2015](https://visualstudio.microsoft.com/downloads/) y descargue Visual Studio 2015 con la actualización 2 o una versión posterior.  
   
 ## <a name="InstallTheTools"></a> Instalar las herramientas  
  El instalador de Visual Studio 2015 incluye una opción para instalar Visual C++ para el desarrollo móvil multiplataforma. Esto instala las herramientas, plantillas y componentes del lenguaje C++ requeridos para Visual Studio, los conjuntos de herramientas de GCC y Clang necesarios para las compilaciones y depuraciones en Android, y los componentes para la comunicación con un equipo Mac para el desarrollo de iOS. También instala todas las herramientas de terceros y los kits de desarrollo de software necesarios para admitir el desarrollo de aplicaciones iOS y Android. La mayoría de estas herramientas de terceros son aplicaciones de código abierto necesarias para la compatibilidad con la plataforma Android.  

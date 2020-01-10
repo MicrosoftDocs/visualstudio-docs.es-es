@@ -11,23 +11,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f6ccc19ccc21b7cabcd553e9d040d20a89ed6ccb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298079"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850007"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Administración de los recursos asociados con las cuentas de Azure en Cloud Explorer de Visual Studio
 
 Cloud Explorer le permite consultar sus recursos y grupos de recursos de Azure, inspeccionar sus propiedades y realizar acciones de diagnóstico de desarrollador clave desde dentro de Visual Studio.
 
-Del mismo modo que [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer se basa en la pila de Azure Resource Manager. Por lo tanto, Cloud Explorer entiende de recursos como, grupos de recursos de Azure, y de servicios de Azure, como aplicaciones lógicas y aplicaciones de API. Además, admite [control de acceso basado en rol](/azure/role-based-access-control/role-assignments-portal) (RBAC).
+Del mismo modo que [Azure Portal](https://portal.azure.com/), Cloud Explorer se basa en la pila de Azure Resource Manager. Por lo tanto, Cloud Explorer entiende de recursos como, grupos de recursos de Azure, y de servicios de Azure, como aplicaciones lógicas y aplicaciones de API. Además, admite [control de acceso basado en rol](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 * Visual Studio 2015 con el [Microsoft Azure SDK para .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
-* Cuenta de Microsoft Azure: si todavía no tiene ninguna cuenta, puede [registrarse para una evaluación gratuita](https://go.microsoft.com/fwlink/?LinkId=623901) o [activar las ventajas de suscriptor de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=623901).
+* Cuenta de Microsoft Azure: si todavía no tiene ninguna cuenta, puede [registrarse para una evaluación gratuita](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) o [activar las ventajas de suscriptor de Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
 > Para ver Cloud Explorer, seleccione **Ver** > **Cloud Explorer** en la barra de menús.
@@ -78,7 +78,7 @@ Para ver los recursos de Azure, puede elegir la vista **Tipos de recursos** o **
 
 1. En el menú contextual, seleccione la vista deseada:
 
-   * Vista **Tipos de recursos**: la vista común que se usa en [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). Muestra los recursos de Azure clasificados según su tipo, como aplicaciones web, cuentas de almacenamiento y máquinas virtuales.
+   * Vista **Tipos de recursos**: la vista común que se usa en [Azure Portal](https://portal.azure.com/). Muestra los recursos de Azure clasificados según su tipo, como aplicaciones web, cuentas de almacenamiento y máquinas virtuales.
    * Vista **Grupos de recursos**: clasifica los recursos de Azure según el grupo de recursos de Azure al que están asociados. Un grupo de recursos es una agrupación de recursos de Azure, normalmente usados por una aplicación específica. Para más información sobre los grupos de recursos de Azure, consulte [Información general de Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
    La imagen siguiente muestra una comparación de ambas vistas de recursos:
@@ -97,7 +97,7 @@ La imagen siguiente muestra un ejemplo de comparación de lo que ve en cada pest
 
   ![Captura de pantalla de Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-Cada recurso tiene la acción **Abrir en el portal**. Cuando se selecciona esta acción, Cloud Explorer muestra el recurso seleccionado en el [Portal de Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). La característica **Abrir en el portal** es especialmente útil para navegar a los recursos profundamente anidados.
+Cada recurso tiene la acción **Abrir en el portal**. Cuando se selecciona esta acción, Cloud Explorer muestra el recurso seleccionado en el [Portal de Azure](https://portal.azure.com/). La característica **Abrir en el portal** es especialmente útil para navegar a los recursos profundamente anidados.
 
 También pueden aparecer acciones adicionales y valores de propiedad basados en el recurso de Azure. Por ejemplo, las aplicaciones web y lógicas también tienen las acciones **Abrir en el explorador** y **Adjuntar depurador**, además de **Abrir en el portal**. Cuando se elige un blob, una cola o una tabla de cuenta de almacenamiento, aparecen acciones para abrir editores. Las aplicaciones de Azure tienen las propiedades **URL** y **Status**, mientras que los recursos de almacenamiento tienen propiedades de cadena de conexión y de clave.
 

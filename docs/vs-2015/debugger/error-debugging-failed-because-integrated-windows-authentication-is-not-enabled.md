@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299788"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851926"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: La depuración produjo un error porque no está habilitada la autenticación de Windows integrada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,5 +119,5 @@ La autenticación del usuario que solicita la depuración no pudo realizarse deb
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticación implícita de Microsoft](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Autenticación implícita de Microsoft](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Ejecutar aplicaciones web en Windows Vista con IIS 7,0 y Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

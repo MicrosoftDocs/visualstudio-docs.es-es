@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300811"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850154"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Métodos abreviados de teclado y teclas modificadoras en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Los métodos abreviados de teclado pueden agilizar el trabajo al reducir una acc
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Teclas de método abreviado que aparecen junto a los elementos de menú que tienen accesos directos
 
-  Para obtener más información sobre la accesibilidad y sus características, vea [Accesibilidad en Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069).
+  Para obtener más información sobre la accesibilidad y sus características, vea [Accesibilidad en Microsoft](https://www.microsoft.com/enable).
 
 ## <a name="modifier-keys"></a>Teclas modificadoras
  Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descubrirlos. En los siguientes temas se proporcionan los métodos abreviados de teclado que modifican el comportamiento de las herramientas, o que modifican una acción como, por ejemplo, cambiar el tamaño de un objeto:

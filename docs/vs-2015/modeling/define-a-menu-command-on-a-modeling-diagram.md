@@ -11,19 +11,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299268"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850462"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir un comando de menú en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede definir elementos de menú adicionales en los menús contextuales de un diagrama UML. Puede controlar si el comando de menú aparece y está habilitado en el menú contextual de cualquier elemento del diagrama, y puede escribir código que se ejecute cuando el usuario elija el elemento de menú. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
+En Visual Studio, puede definir elementos de menú adicionales en los menús contextuales de un diagrama UML. Puede controlar si el comando de menú aparece y está habilitado en el menú contextual de cualquier elemento del diagrama, y puede escribir código que se ejecute cuando el usuario elija el elemento de menú. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) y distribuirla a otros usuarios de Visual Studio.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos de
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -55,7 +55,7 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
 
 1. Cree un proyecto de biblioteca de clases en una nueva solución de Visual Studio o en una solución existente.
 
-   1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
+   1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
 
    2. En **Plantillas instaladas**, seleccione **Visual C#** o **Visual Basic**. En la columna central, elija **Biblioteca de clases**.
 
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Vea también
- [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [extender modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definir un elemento personalizado del cuadro de herramientas](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [Editar diagramas de secuencia UML mediante el uso de la](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) API de UML [programación con la API de UML](../modeling/programming-with-the-uml-api.md) [ejemplo: comando para alinear formas en un diagrama UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [extender modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definir un elemento personalizado del cuadro de herramientas](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [Editar diagramas de secuencia UML mediante el uso de la](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) API de UML [programación con la API de UML](../modeling/programming-with-the-uml-api.md) [ejemplo: comando para alinear formas en un diagrama UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

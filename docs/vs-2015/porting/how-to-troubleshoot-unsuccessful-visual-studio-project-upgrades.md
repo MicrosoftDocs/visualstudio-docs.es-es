@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300350"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844450"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A veces, Visual Studio no puede convertir totalmente un proyecto de una versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si las sugerencias de las secciones siguientes no resuelven su problema específico, es posible que pueda encontrar más información en TechNet [wiki: portal de desarrollo](https://go.microsoft.com/fwlink/?LinkId=254808).
+A veces, Visual Studio no puede convertir totalmente un proyecto de una versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si las sugerencias de las secciones siguientes no resuelven su problema específico, es posible que pueda encontrar más información en TechNet [wiki: portal de desarrollo](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>El proyecto no se ejecuta porque no se encuentran los archivos
  Un archivo de proyecto contiene rutas de acceso codificadas de forma rígida que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliza para ejecutar el proyecto al presionar F5. Estas rutas pueden incluir la ubicación de devenv.exe y otros archivos necesarios. En una versión actualizada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], las rutas de acceso de estos archivos pueden haber cambiado.

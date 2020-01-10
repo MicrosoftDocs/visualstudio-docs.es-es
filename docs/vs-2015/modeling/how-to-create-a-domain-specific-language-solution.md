@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301406"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850433"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|SDK de Visual Studio de visualización y modelado|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|SDK de visualización y modelado de Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje específico de dominio
 
@@ -44,7 +44,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 
    1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
-   2. Aparece el cuadro de diálogo **Nuevo proyecto**.
+   2. Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
    3. En **tipos de proyecto**, expanda el nodo **otros tipos de proyectos** y haga clic en **extensibilidad**.
 
@@ -127,7 +127,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  **Usar clave de nombre seguro existente** Utilice esta opción si desea integrar el DSL con otro ensamblado.
 
- Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](https://go.microsoft.com/fwlink/?LinkId=186073).
+ Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN).
 
 ## <a name="see-also"></a>Vea también
  [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [herramientas del lenguaje específico de dominio Glosario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302803"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844913"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
   Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Información más detallada sobre cómo crear casos de uso|[Diagramas de casos de uso de UML: instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Elementos de un diagrama de casos de uso|[Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md)|
@@ -132,13 +132,13 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
   Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Información más detallada sobre cómo buscar clases de requisitos|[Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementos de un diagrama de clases conceptuales|[Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|
 |Cómo desarrollar código a partir de clases conceptuales|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
 
- En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real. La siguiente extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] convierte las flechas no direccionales en los valores predeterminados: [ejemplo de características de modelado de dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849).
+ En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real. La siguiente extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] convierte las flechas no direccionales en los valores predeterminados: [ejemplo de características de modelado de dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.
@@ -155,7 +155,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
  Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Información más detallada sobre cómo buscar y registrar reglas de negocio estáticas|[Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementos de un diagrama de clases conceptuales|[Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|
@@ -166,7 +166,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
 - Rendimiento
 
-- Seguridad
+- de seguridad
 
 - Facilidad de uso
 
@@ -180,7 +180,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
   Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Asociar documentos adicionales a los casos de uso|[Vincular un caso de uso a documentos y diagramas](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |Cómo desarrollar código que cumpla los requisitos de calidad de servicio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
@@ -200,7 +200,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
  Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Más información sobre cómo definir los flujos de trabajo empresariales|[Diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
 |Elementos de un diagrama de actividades|[Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)|
@@ -217,7 +217,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 
  Para obtener más información, consulte los temas siguientes:
 
-|Para obtener información acerca de|Leer|
+|Para obtener información acerca de|Lectura|
 |--------------------|----------|
 |Más información sobre cómo definir las interacciones|[Diagramas de secuencia de UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
 |Elementos de un diagrama de secuencia|[Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)|
@@ -239,4 +239,4 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
   Al examinar las relaciones entre las vistas que proporcionan los diferentes diagramas, podrá reconocer fácilmente los principales conceptos con los que trabajan los usuarios y ayudarles a entender lo que necesitan del sistema. También podrá conocer mejor los requisitos que las partes interesadas tienen menos claros. Puede planear el desarrollo de esas características, al menos de forma simplificada, en una fase temprana del proyecto para que los usuarios puedan experimentar con ellas.
 
 ## <a name="see-also"></a>Vea también
- [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md) [usar modelos en el modelo de proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [la extensión de ejemplo de arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [: características de modelado de dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849) [extensión](https://go.microsoft.com/fwlink/?LinkID=213841) de vs extensión de vs extensión: [alinear formas en un diagrama de UML](https://go.microsoft.com/fwlink/?LinkID=213809) [vídeo](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain) : [vincular elementos UML a diagramas, archivos y otros elementos](https://go.microsoft.com/fwlink/?LinkID=213813) extensión de vs extensión
+ [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md) [usar modelos en el modelo de proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [la extensión de ejemplo de arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [: características de modelado de dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [extensión](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) de vs extensión de vs extensión: [alinear formas en un diagrama de UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [vídeo](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain) : [vincular elementos UML a diagramas, archivos y otros elementos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) extensión de vs extensión

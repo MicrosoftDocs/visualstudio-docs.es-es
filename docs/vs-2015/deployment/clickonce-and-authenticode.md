@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298272"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847783"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * es una tecnología de Microsoft que usa la criptografía estánda
 ## <a name="authenticode-and-code-signing"></a>Authenticode y la firma de código  
  Un *certificado digital* es un archivo que contiene un par de claves pública y privada criptográficas, junto con metadatos que describen el publicador para el que se emitió el certificado y la entidad que emitió el certificado.  
   
- Existen distintos tipos de certificados de Authenticode, cada uno de los cuales está configurado para distintos tipos de firma. Para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , debe tener un certificado de Authenticode que sea válido para la firma de código. Si intenta iniciar sesión en una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con otro tipo de certificado, como un certificado digital de correo electrónico, no funcionará. Para obtener más información, consulte [Introduction to Code Signing](https://go.microsoft.com/fwlink/?LinkId=179452)(Introducción a la firma de código).  
+ Existen distintos tipos de certificados de Authenticode, cada uno de los cuales está configurado para distintos tipos de firma. Para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , debe tener un certificado de Authenticode que sea válido para la firma de código. Si intenta iniciar sesión en una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con otro tipo de certificado, como un certificado digital de correo electrónico, no funcionará. Para obtener más información, consulte [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)(Introducción a la firma de código).  
   
  Puede obtener un certificado de firma de código de tres maneras:  
   
@@ -65,7 +65,7 @@ Authenticode * es una tecnología de Microsoft que usa la criptografía estánda
   
 - Desinstale la aplicación e instale una versión nueva con un certificado válido.  
   
-- Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](https://go.microsoft.com/fwlink/?LinkId=179454)encontrará información detallada sobre este proceso.  
+- Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](https://support.microsoft.com/kb/925521)encontrará información detallada sobre este proceso.  
   
 ### <a name="storing-certificates"></a>Almacenar certificados  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301612"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850614"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de capas: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ En Visual Studio, puede usar un *Diagrama de capas* para visualizar la arquitect
 
 - Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.
 
-  En este tema se describen los elementos que puede usar en un diagrama de capas. Para obtener información más detallada sobre cómo crear y dibujar diagramas de capas, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
+  En este tema se describen los elementos que puede usar en un diagrama de capas. Para obtener información más detallada sobre cómo crear y dibujar diagramas de capas, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite el [sitio patterns & Practices](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Leer diagramas de capas
  ![Elementos en diagramas de capas](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -58,7 +58,7 @@ En Visual Studio, puede usar un *Diagrama de capas* para visualizar la arquitect
 |**Forma**|**Element**|**Descripción**|
 |---------------|-----------------|---------------------|
 |1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir el **Explorador de capas**.<br /><br /> Para obtener más información, vea [Explorador de capas](#Explorer).<br /><br /> -   las **dependencias de espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **espacios de nombres prohibidos** : especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **espacios de nombres necesarios** : especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|
-|2|**Pendiente**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
+|2|**Dependencia**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
 |3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> **dirección** -   : especifica la dirección de la dependencia.|
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
 |5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|

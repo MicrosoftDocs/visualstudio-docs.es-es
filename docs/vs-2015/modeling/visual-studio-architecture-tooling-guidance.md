@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301327"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851384"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Orientación para las herramientas de arquitectura de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,4 +23,4 @@ Architecture Tooling Guidance es un paquete descargable de consejos prácticos s
 
  El contenido fue creado por los [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Rangers de ALM, un grupo especial que tiene miembros del equipo del producto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], servicios de Microsoft, profesionales más valorados de Microsoft (MVP) y [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] responsables de la comunidad.
 
- [Haga clic aquí para descargar la guía de herramientas de arquitectura.](https://go.microsoft.com/fwlink/?LinkID=191984)
+ [Haga clic aquí para descargar la guía de herramientas de arquitectura.](https://archive.codeplex.com/?p=vsarchitectureguide)

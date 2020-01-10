@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298724"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850452"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar una extensión de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio, puede definir extensiones para diagramas de modelado. De este modo, puede adaptar los diagramas y modelos a sus propias necesidades. Puede definir, por ejemplo, comandos de menú, perfiles de UML, restricciones de validación y elementos de cuadros de herramientas. Puede definir varios componentes en una única extensión. También puede distribuir estas extensiones a otros usuarios de Visual Studio en forma de [extensión de integración de Visual Studio (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780). Puede crear una extensión VSIX usando un proyecto VSIX en Visual Studio.
+En Visual Studio, puede definir extensiones para diagramas de modelado. De este modo, puede adaptar los diagramas y modelos a sus propias necesidades. Puede definir, por ejemplo, comandos de menú, perfiles de UML, restricciones de validación y elementos de cuadros de herramientas. Puede definir varios componentes en una única extensión. También puede distribuir estas extensiones a otros usuarios de Visual Studio en forma de [extensión de integración de Visual Studio (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). Puede crear una extensión VSIX usando un proyecto VSIX en Visual Studio.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos de
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para crear un proyecto de biblioteca de clases para los comandos de menú, los controladores de gestos o la validación
 
-1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
+1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
 
 2. En **Plantillas instaladas**, seleccione **Visual C#** o **Visual Basic**y, a continuación, elija **Biblioteca de clases**.
 
@@ -74,10 +74,10 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
         |||
         |-|-|
-        |**Escribir** =|**Microsoft. VisualStudio. MefComponent**|
+        |**Escriba** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Proyecto en la solución actual**|
-        | = del **proyecto**|*Su proyecto de biblioteca de clases*|
-        |**Inserte en esta carpeta** =|*vacía*|
+        |**Project** =|*Su proyecto de biblioteca de clases*|
+        |**Inserte en esta carpeta** =|*(empty)*|
 
          Para otros tipos de componentes, vea los vínculos de la sección siguiente.
 
@@ -97,7 +97,7 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
 
 #### <a name="to-run-an-extension-during-its-development"></a>Para ejecutar una extensión durante su desarrollo
 
-1. En el menú [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Depurar** , elija **Start Depurarging**.
+1. En el [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] menú **depurar** , elija **iniciar depuración**.
 
      El proyecto se compila y se inicia una nueva instancia de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en modo experimental.
 

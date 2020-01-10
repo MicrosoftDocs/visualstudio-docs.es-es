@@ -12,29 +12,29 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 859fa44b44a295dc3e9f27fc168092a9fe2beebf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 76d357c1f6ebc770d0e625e60bae237e37e0a6aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292362"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846217"
 ---
 # <a name="sequential-workflow-views-legacy"></a>Vistas de flujos de trabajo secuenciales (Heredado)
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] proporciona un [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que se puede usar para tener como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o el [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  [!INCLUDE[wfd2](../includes/wfd2-md.md)] proporciona una manera de crear gráficamente aplicaciones de [!INCLUDE[wf](../includes/wf-md.md)] mediante la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[wf](../includes/wf-md.md)] las aplicaciones de flujo de trabajo están formadas por pasos de proceso de flujo de trabajo denominados actividades. Para crear un flujo de trabajo, cree actividades en la superficie de diseño arrastrando sus diseñadores de actividad respectivos desde el **cuadro de herramientas** hasta la superficie de diseño.
 
- Cuando se crea un flujo de trabajo secuencial, que es un [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), están disponibles tres vistas del flujo de trabajo. Estas vistas son accesibles desde el menú **flujo de trabajo** y desde el menú contextual en la superficie de diseño.
+ Cuando se crea un flujo de trabajo secuencial, que es un [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx), están disponibles tres vistas del flujo de trabajo. Estas vistas son accesibles desde el menú **flujo de trabajo** y desde el menú contextual en la superficie de diseño.
 
  En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
 
 |Opción de menú o pestaña|Descripción|
 |----------------------|-----------------|
 |**Ver SequentialWorkflow**|Haga clic con el botón secundario en la superficie de diseño y seleccione la opción **Ver SequentialWorkflow** en el menú contextual para mostrar la vista **flujo de trabajo secuencial** , que muestra la representación gráfica basada en actividad del flujo de trabajo secuencial. O bien, seleccione **Ver SequentialWorkflow** en el menú **flujo de trabajo** .|
-|**Ver controlador de cancelación**|Haga clic con el botón secundario en la superficie de diseño y seleccione la opción **Ver controlador de cancelación** en el menú contextual para mostrar la vista **flujo de trabajo secuencial** , que muestra la actividad [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) asociada al flujo de trabajo. O bien, seleccione **Ver controlador de cancelación** en el menú **flujo de trabajo** .|
-|**Ver controlador de errores**|Haga clic con el botón secundario en la superficie de diseño y seleccione la opción **Ver controlador de errores** en el menú contextual para mostrar la vista **errores** , que muestra la actividad [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) asociada al flujo de trabajo. O bien, seleccione **Ver controlador de errores** en el menú **flujo de trabajo** .|
+|**Ver controlador de cancelación**|Haga clic con el botón secundario en la superficie de diseño y seleccione la opción **Ver controlador de cancelación** en el menú contextual para mostrar la vista **flujo de trabajo secuencial** , que muestra la actividad [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) asociada al flujo de trabajo. O bien, seleccione **Ver controlador de cancelación** en el menú **flujo de trabajo** .|
+|**Ver controlador de errores**|Haga clic con el botón secundario en la superficie de diseño y seleccione la opción **Ver controlador de errores** en el menú contextual para mostrar la vista **errores** , que muestra la actividad [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) asociada al flujo de trabajo. O bien, seleccione **Ver controlador de errores** en el menú **flujo de trabajo** .|
 
  Para obtener más información sobre vistas similares, consulte [vistas de actividad (heredado)](../workflow-designer/activity-views-legacy.md).
 
 ## <a name="see-also"></a>Vea también
- [Vistas de actividad (heredado)](../workflow-designer/activity-views-legacy.md) [creación de proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md) [modos de creación de flujos](https://go.microsoft.com/fwlink?LinkID=65014) de trabajo
+ [Vistas de actividad (heredado)](../workflow-designer/activity-views-legacy.md) [creación de proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md) [modos de creación de flujos](https://msdn2.microsoft.com/library/bb628440.aspx) de trabajo

@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300488"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850229"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (aislado o integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear su propia aplicación basada en Visual Studio en modo integrado o aislado. En el modo integrado, muchas características de Visual Studio están disponibles además de la aplicación. En el modo aislado, puede elegir un subconjunto de características de Visual Studio que desea distribuir junto con su propia extensión.  
+Puede crear su propia aplicación basada en Visual Studio en modo integrado o aislado. En el modo integrado, muchas características de Visual Studio están disponibles además de su aplicación. En el modo aislado, debe eligir el subconjunto de características de Visual Studio que quiere distribuir con su propia extensión.  
   
 ## <a name="integrated-mode"></a>Modo integrado  
  El modo integrado permite a los usuarios usar las características estándar de Visual Studio junto con las herramientas personalizadas. El shell integrado está diseñado principalmente para hospedar lenguajes de programación y herramientas de desarrollo de software.  
@@ -55,7 +55,7 @@ Puede crear su propia aplicación basada en Visual Studio en modo integrado o ai
 > - su propio CLUF que requiere que los clientes acepten los términos que protegen el shell integrado o aislado de Visual Studio al menos tanto como los términos de licencia del usuario final de Microsoft para el software de Shell.  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
- Para obtener más información acerca de los paquetes redistribuibles, vea el sitio web de [descargas de extensibilidad de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Para obtener más información acerca de los paquetes redistribuibles, vea el sitio web de [descargas de extensibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="see-also"></a>Vea también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

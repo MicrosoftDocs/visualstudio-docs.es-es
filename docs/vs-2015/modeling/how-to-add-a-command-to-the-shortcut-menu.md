@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300885"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850414"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando a un menú contextual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
 
 3. [Escriba los métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y para definir lo que desea que haga el comando.
 
-   Para obtener ejemplos, vea el [sitio web del SDK de visualización y modelado](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Para obtener ejemplos, vea el [sitio web del SDK de visualización y modelado](https://www.visualstudio.com/).
 
 > [!NOTE]
 > También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, vea [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).

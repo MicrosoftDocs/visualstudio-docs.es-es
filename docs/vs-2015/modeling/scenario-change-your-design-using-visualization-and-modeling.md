@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296024"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850909"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 - [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -242,7 +242,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |**Mapa o diagrama**|**Qué muestra**|
 |------------------------|---------------|
 |*Mapa de código*<br /><br /> Vea:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />-   [personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dependencias y otras relaciones en el código.<br /><br /> Por ejemplo, Dinner Now puede empezar revisando los mapas de código de ensamblado para obtener información general de los ensamblados y de sus dependencias. Dinner Now puede profundizar en los mapas para explorar los espacios de nombres y las clases de esos ensamblados.<br /><br /> Dinner Now también puede crear mapas para explorar áreas particulares y otros tipos de relaciones en el código. Mediante el Explorador de soluciones, buscan y seleccionan las áreas y las relaciones de interés.|
-|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
+|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
 
  Por ejemplo, el desarrollador crea un mapa de código y ajusta su ámbito para centrarse en las áreas que se verán afectadas por el nuevo escenario. Estas áreas se seleccionan y se resaltan en el mapa:
 
@@ -264,7 +264,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |------------------|-------------------|
 |*Diagrama de actividades (UML)*<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|El flujo de pasos que se producen cuando el sistema detecta que un cliente vuelve a realizar un pedido en un restaurante y le pide que escriba una opinión.|
 |*Diagrama de clases (UML)*<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Las clases lógicas y sus relaciones. Por ejemplo, se agrega una nueva clase para describir una **Opinión** (Review) y sus relaciones con otras entidades, como **Restaurante**(Restaurant), **Menú**(Menu) y **Cliente**(Customer).<br /><br /> Para poder asociar opiniones a un cliente, el sistema debe almacenar detalles del cliente. Un diagrama de clases UML puede ayudar a aclarar esos detalles.|
-|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
+|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
 |*Diagrama de componentes (UML)*<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|Las partes de alto nivel del sistema, como el sitio web de Dinner Now, y sus interfaces. En estas interfaces se define cómo interactúan entre sí los componentes a través de los métodos o servicios que proporcionan y consumen.|
 |*Diagrama de secuencia (UML)*<br /><br /> Vea:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|La secuencia de interacciones entre instancias.|
 
@@ -363,7 +363,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
 
-- [Usar el control de versiones](https://go.microsoft.com/fwlink/?LinkID=525605)
+- [Usar el control de versiones](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Compilar la aplicación](/azure/devops/pipelines/index)
 
@@ -665,7 +665,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 |Diagrama de capas|La arquitectura lógica del sistema. Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar las capas existentes o las previstas, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de capas, vea:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de componentes|Los componentes, sus interfaces y sus relaciones.<br /><br /> Para identificar los componentes, cree un mapa de código y agrupe los elementos según su función en el sistema.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
 |Diagrama de clases (UML)|Las clases, sus atributos y operaciones, y sus relaciones.<br /><br /> Para ayudarle a identificar estos elementos, cree un diagrama de clases UML que muestre esos elementos.<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
-|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DescribeSequence"></a>Describir las interacciones: diagramas de secuencia
  Los diagramas de secuencia describen una serie de interacciones entre los elementos de un sistema. Los elementos pueden ser de cualquier escala, desde objetos individuales de un programa a grandes subsistemas o actores externos. Las interacciones pueden ser de cualquier escala y tipo, desde mensajes individuales a transacciones extendidas, y pueden ser llamadas a funciones o mensajes del servicio web.
@@ -784,7 +784,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
 
-- [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Resumen: Ventajas de los diagramas de clases
  Los diagramas de clases le ayudan a definir lo siguiente:
@@ -882,7 +882,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 |**Categoría**|**Links**|
 |------------------|---------------|
-|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>Vea también
  [Visualizar el código](../modeling/visualize-code.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [usar modelos en el desarrollo ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md) [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

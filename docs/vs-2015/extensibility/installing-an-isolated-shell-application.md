@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301165"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851709"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalación de una aplicación de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Para instalar una aplicación de Shell debe realizar los pasos siguientes.
   
 - Cree un programa previo de instalación.  
   
-  Todo el código de ejemplo de este documento procede del [ejemplo de implementación de Shell](https://go.microsoft.com/fwlink/?LinkId=262245), que puede descargar de la galería de código en el sitio web de MSDN. En el ejemplo se muestran los resultados de realizar cada uno de estos pasos.  
+  Todo el código de ejemplo de este documento procede del [ejemplo de implementación de Shell](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7), que puede descargar de la galería de código en el sitio web de MSDN. En el ejemplo se muestran los resultados de realizar cada uno de estos pasos.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para realizar los procedimientos descritos en este tema, se deben instalar las siguientes herramientas en el equipo.  
   
 - El SDK de Visual Studio  
   
-- La versión del [conjunto de herramientas de Windows Installer XML](https://go.microsoft.com/fwlink/?LinkId=82720) 3,6  
+- La versión del [conjunto de herramientas de Windows Installer XML](http://wix.sourceforge.net/) 3,6  
   
   El ejemplo también requiere el SDK de visualización y modelado de Microsoft, que no requieren todos los shells.  
   
@@ -54,7 +54,7 @@ Para instalar una aplicación de Shell debe realizar los pasos siguientes.
 2. En cada proyecto que contenga un manifiesto VSIX, edite las tareas de compilación para generar el contenido en la ubicación desde la que se instalará el archivo MSI. Incluya el manifiesto VSIX en la salida de la compilación, pero no cree un archivo. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Creación de un archivo MSI para el shell  
- Para compilar el paquete MSI, se recomienda usar el [conjunto de herramientas de Windows Installer XML](https://go.microsoft.com/fwlink/?LinkId=82720) porque proporciona mayor flexibilidad que un proyecto de instalación estándar.  
+ Para compilar el paquete MSI, se recomienda usar el [conjunto de herramientas de Windows Installer XML](http://wix.sourceforge.net/) porque proporciona mayor flexibilidad que un proyecto de instalación estándar.  
   
  En el archivo product. WXS, establezca los bloques de detección y el diseño de los componentes de Shell.  
   
@@ -178,8 +178,8 @@ Para instalar una aplicación de Shell debe realizar los pasos siguientes.
   
     |*NombreDeProyecto*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE de Fotostudio"|\<RegistryKey ID = ' DteClsidRegKey ' root = ' HKCR ' clave = ' $ (var. DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<ID. de tipo = ' cadena ' name = ' @ ' valor = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' clave = ' $ (var. DteClsidRegKey) \LocalServer32 ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<ID. de tipo = ' cadena ' name = ' @ ' valor = ' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE de Fotostudio"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<ID. de tipo = ' cadena ' name = ' @ ' valor = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      En este ejemplo, var. DteClsidRegKey se resuelve en la clave del registro de la fila superior. Var. ShortProductName se resuelve como `PhotoStudio`.  
   

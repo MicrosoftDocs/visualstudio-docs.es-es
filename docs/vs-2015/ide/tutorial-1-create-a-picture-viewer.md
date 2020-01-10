@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299914"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851316"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ En este tutorial, compilará un programa que carga una imagen de un archivo y la
 
   ![Imagen que creará en este tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Imagen que creará en este tutorial
 
-  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, consulte [Cómo: crear un visor de imágenes en Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) o [Cómo: crear un visor de imágenes en C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, consulte [Cómo: crear un visor de imágenes en Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) o [Cómo: crear un visor de imágenes en C#?](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
@@ -50,7 +50,7 @@ En este tutorial, compilará un programa que carga una imagen de un archivo y la
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Empezar a crear un proyecto de aplicación de Windows Forms.|
 |[Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md)|Ejecutar el programa de aplicación de Windows Forms que se creó en el paso anterior.|

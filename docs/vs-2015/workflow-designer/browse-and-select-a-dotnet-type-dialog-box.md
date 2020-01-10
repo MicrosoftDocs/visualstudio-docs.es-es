@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297614"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851421"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 En la ventana **propiedades** , los cuadros de diálogo o los diseñadores como el diseñador de variables, al seleccionar **Buscar tipos..** . en una lista de tipos de datos, es el cuadro de diálogo **examinar y seleccionar un tipo .net** (al que se hace referencia en forma abreviada como "explorador de tipos"). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.
@@ -31,7 +31,7 @@ En la ventana **propiedades** , los cuadros de diálogo o los diseñadores como 
 - Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Vea [matrices escalonadas](https://go.microsoft.com/fwlink/?LinkId=195226) y [matrices multidimensionales](https://go.microsoft.com/fwlink/?LinkId=195227) para obtener más información.
+> El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Vea [matrices escalonadas](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) y [matrices multidimensionales](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) para obtener más información.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Seleccionar un tipo de valor y de referencia en el explorador de tipo
 
@@ -39,7 +39,7 @@ En la ventana **propiedades** , los cuadros de diálogo o los diseñadores como 
 
 1. En el cuadro **nombre de tipo** , escriba el nombre del tipo que desea utilizar.
 
-2. Realice una de las siguientes acciones:
+2. Siga uno de los procedimientos que se describen a continuación:
 
     - Una vez que el nombre del tipo que desea utilizar aparece en el árbol en el cuadro **nombre de tipo** , haga doble clic en el tipo para seleccionarlo.
 

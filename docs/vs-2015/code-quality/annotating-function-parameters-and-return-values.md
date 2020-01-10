@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295859"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852391"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -493,7 +493,7 @@ En este artículo se describen los usos habituales de las anotaciones para pará
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog del equipo de análisis de código](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog del equipo de análisis de código](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Vea también  
  [Uso de anotaciones sal para reducir defectos deC++ C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

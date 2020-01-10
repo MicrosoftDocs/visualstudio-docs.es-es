@@ -17,14 +17,14 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294687"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847707"
 ---
-# <a name="trusted-application-deployment-overview"></a>Información general sobre la implementación de aplicaciones de confianza
+# <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.  
@@ -39,7 +39,7 @@ En este tema se proporciona información general sobre cómo implementar aplicac
   
 |Objeto o rol|Descripción|  
 |--------------------|-----------------|  
-|administrador|Entidad de la empresa responsable de la actualización y mantenimiento de los equipos cliente.|  
+|Administrador de|Entidad de la empresa responsable de la actualización y mantenimiento de los equipos cliente.|  
 |administrador de confianza|Subsistema dentro de Common Language Runtime (CLR) responsable de hacer cumplir la seguridad de la aplicación cliente.|  
 |publisher|Entidad que escribe y mantiene la aplicación.|  
 |implementador|Entidad que empaqueta y distribuye la aplicación a los usuarios.|  
@@ -74,7 +74,7 @@ En este tema se proporciona información general sobre cómo implementar aplicac
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Agregar el editor al almacén de editores de confianza  
  Para que la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reciba un mayor nivel de confianza, deberá agregar el certificado como editor de confianza a cada uno de los equipos cliente donde vaya a ejecutarse la aplicación. La realización de esta tarea se compone de una única configuración. Una vez realizada, podrá implementar todas las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmadas que desee con el certificado del editor, y todas ellas se ejecutarán con un alto nivel de confianza.  
   
- Si está implementando la aplicación en un entorno de escritorio administrado —por ejemplo, una intranet empresarial donde se ejecute el sistema operativo Windows—, podrá agregar editores de confianza al almacén de un cliente creando una nueva lista de certificados de confianza (CTL) con la directiva de grupo. Para obtener más información, consulte [Create a certificate trust list for a Group Policy object](https://go.microsoft.com/fwlink/?LinkId=102576)(Crear una lista de certificados de confianza para un objeto de directiva de grupo).  
+ Si está implementando la aplicación en un entorno de escritorio administrado —por ejemplo, una intranet empresarial donde se ejecute el sistema operativo Windows—, podrá agregar editores de confianza al almacén de un cliente creando una nueva lista de certificados de confianza (CTL) con la directiva de grupo. Para obtener más información, consulte [Create a certificate trust list for a Group Policy object](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)(Crear una lista de certificados de confianza para un objeto de directiva de grupo).  
   
  Si no está implementando la aplicación en un entorno de escritorio administrado, dispone de las siguientes opciones para agregar un certificado al almacén de editores de confianza:  
   

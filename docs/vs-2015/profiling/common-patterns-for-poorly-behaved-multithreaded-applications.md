@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300670"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852162"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
   
  Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.  
   
- Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](https://go.microsoft.com/fwlink/?LinkID=160569) en el sitio web del blog de MSDN.  
+ Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](https://blogs.msdn.com/hshafi) en el sitio web del blog de MSDN.  
   
  ![Contención de bloqueo](../profiling/media/lockcontention-2.png "LockContention_2")  
   

@@ -9,17 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a15767454c83604de2844e4c0a9f2e121a9a1a4f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297461"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846124"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integración de los literales XML con el Explorador de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic admite literales XML, lo que significa que puede incorporar fragmentos XML directamente en el código de Visual Basic. Para obtener más información, vea [información general sobre literales XML](https://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic admite literales XML, lo que significa que puede incorporar fragmentos XML directamente en el código de Visual Basic. Para obtener más información, vea [información general sobre literales XML](https://msdn.microsoft.com/library/bb384629.aspx).
 
  Si un archivo XSD del proyecto de Visual Basic incluye un literal XML, puede ver el conjunto de esquemas XML en el Explorador de esquemas XML. Para ver el conjunto de esquemas asociado a un literal XML, haga clic con el botón secundario en un nodo XML de un literal XML o una importación de espacio de nombres XML y seleccione **Mostrar en el explorador de esquemas**.
 
