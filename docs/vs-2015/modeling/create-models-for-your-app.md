@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300247"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852008"
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas que tiene sobre su código y los requisitos del usuario que el sistema de software debe satisfacer. Por ejemplo, para describir y transmitir los requisitos de los usuarios, puede usar diagramas de casos de uso, de actividades, de clases y de secuencia del Lenguaje unificado de modelado (UML). Para describir y transmitir la funcionalidad del sistema, puede usar los diagramas de componentes, clases, actividades y secuencia de UML.
 
- Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Puede crear los siguientes diagramas de UML en esta versión:
 
@@ -73,7 +73,7 @@ Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas q
 
 ## <a name="common-tasks"></a>Tareas comunes
 
-|**Relacionados**|**Task**|
+|**Tema**|**Task**|
 |---------------|--------------|
 |[Crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Crear modelos** y agregar diagramas.|
 |[Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Dibuje diagramas** para editar el modelo.|
@@ -85,7 +85,7 @@ Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas q
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
-|**Relacionados**|**Task**|
+|**Tema**|**Task**|
 |---------------|--------------|
 |[Visualizar el código](../modeling/visualize-code.md)|Crear mapas de código y diagramas de capas para entender el código con el que no se está familiarizado.|
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|
@@ -98,4 +98,4 @@ Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas q
 
 |**Categoría**|**Links**|
 |------------------|---------------|
-|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

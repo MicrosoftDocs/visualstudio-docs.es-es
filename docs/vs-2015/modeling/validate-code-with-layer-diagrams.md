@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301358"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845438"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar código con diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
   **Requisitos**
 
-- Visual Studio
+- Programa para la mejora
 
 - Visual Studio en el servidor de Team Foundation Build para validar código automáticamente con Team Foundation Build
 
@@ -53,7 +53,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
   Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de capas](https://go.microsoft.com/fwlink/?LinkID=252073).
+  Puede validar código manualmente desde un diagrama de capas abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de capas](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Si desea ejecutar la validación de capa con Team Foundation Build, debe instalar también la misma versión de Visual Studio en el servidor de compilación.
@@ -227,7 +227,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 
 |**Sintaxis**|**Descripción**|
 |----------------|---------------------|
-|*Artefacton*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de capas.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefacton* es un artefacto que está asociado a una capa del diagrama de capas.<br /><br /> *ArtifactTypeN* es el tipo de *artefacton*, como una **clase** o un **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
 |*NamespaceNameN*|Nombre de un espacio de nombres.|
 |*LayerNameN*|Nombre de una capa del diagrama de capas.|
 |*DependencyType*|El tipo de relación de dependencia entre *artefacto 1* y *artefacto 2*. Por ejemplo, *artefacto 1* tiene una relación de **llamadas** con *artefacto 2*.|
@@ -241,7 +241,7 @@ Para asegurarse de que el código no entre en conflicto con el diseño, puede va
 |AV3001: falta un vínculo: la capa '*LayerName*' contiene vínculos a '*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vincula a un artefacto que no se puede encontrar. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|
 |AV9001: El análisis de arquitectura encontró errores internos. Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información.|Vea el registro de eventos de compilación o la ventana de salida para obtener más información.|
 
-## <a name="security"></a>Seguridad
+## <a name="security"></a>de seguridad
 
 ## <a name="see-also"></a>Vea también
  [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)

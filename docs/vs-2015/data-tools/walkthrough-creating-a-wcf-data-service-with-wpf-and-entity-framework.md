@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299618"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844271"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ En este tutorial se muestra cómo crear un [!INCLUDE[ss_data_service](../include
 
 - Base de datos de ejemplo Northwind.
 
-     Si no dispone de esta base de datos en el equipo de desarrollo, puede descargarla del [Centro de descarga de Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Para obtener instrucciones, consulte [Descargar bases de datos de ejemplo](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Si no dispone de esta base de datos en el equipo de desarrollo, puede descargarla del [Centro de descarga de Microsoft](https://www.microsoft.com/downloads). Para obtener instrucciones, consulte [Descargar bases de datos de ejemplo](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Crear el servicio web
  Para crear un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], agregará un proyecto web, creará un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] y, a continuación, creará el servicio a partir del modelo.
@@ -146,7 +146,7 @@ En este tutorial se muestra cómo crear un [!INCLUDE[ss_data_service](../include
 
 2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual Basic** o **Visual C#**  y elija el nodo **Windows** y, a continuación, elija **Windows Forms aplicación**.
 
-3. En el cuadro de diálogo **Nombre**, escriba `NorthwindClient` y elija el botón **Aceptar**.
+3. En el cuadro de texto **Nombre**, escriba `NorthwindClient` y elija el botón **Aceptar**.
 
 4. En el **Explorador de soluciones**, elija el nodo de proyecto **NorthwindClient**.
 

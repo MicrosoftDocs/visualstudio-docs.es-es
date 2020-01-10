@@ -13,25 +13,25 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b097baaa882b42f1569244992bd28f30093ffb58
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301453"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846190"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Seleccionar condición (Cuadro de diálogo) (Heredado)
 En este tema se describe cómo usar el cuadro de diálogo **seleccionar condición** en el [!INCLUDE[wfd1](../includes/wfd1-md.md)]heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  El cuadro de diálogo **seleccionar condición** se usa para seleccionar una condición de regla declarativa que se va a asignar a la propiedad de condición de una actividad. Estas condiciones de reglas se exponen como propiedades en las actividades predefinidas de Windows Workflow Foundation:
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
   Para obtener información sobre cómo tener acceso al cuadro de diálogo **seleccionar condición** , consulte [Cómo: crear una condición de regla declarativa (heredada)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
@@ -44,11 +44,11 @@ En este tema se describe cómo usar el cuadro de diálogo **seleccionar condici�
 |**Cambiar nombre...**|Haga clic en esta opción para abrir un cuadro de diálogo usado para cambiar el nombre de la condición seleccionada.|
 |**Eliminar**|Haga clic en esta opción para eliminar la condición de regla seleccionada.|
 |**Vista previa de condiciones**|Muestra la expresión de condición de la condición de regla seleccionada.|
-|**Vale**|Haga clic en esta opción para asignar la condición de regla seleccionada a la condición de la actividad.|
+|**ACEPTAR**|Haga clic en esta opción para asignar la condición de regla seleccionada a la condición de la actividad.|
 
  Para obtener más información sobre la creación y edición de condiciones de regla, vea [cuadro de diálogo Editor de condiciones de reglas (heredado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
- Para obtener más información sobre las condiciones, vea [uso de condiciones en flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65009).
+ Para obtener más información sobre las condiciones, vea [uso de condiciones en flujos de trabajo](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Vea también
- [Cuadro de diálogo Editor de condiciones de reglas (heredado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Cómo: crear una condición de regla declarativa (heredada)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [usar condiciones en flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65009) [usar la actividad ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [usar la actividad IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65075) [usar](https://go.microsoft.com/fwlink?LinkID=65080) la actividad ReplicatorActivity usar el diseñador heredado de la [actividad WhileActivity](https://go.microsoft.com/fwlink?LinkID=65091) [para obtener Windows Workflow Foundation ayuda de la interfaz de usuario](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Cuadro de diálogo Editor de condiciones de reglas (heredado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Cómo: crear una condición de regla declarativa (heredada)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [usar condiciones en flujos de trabajo](https://msdn2.microsoft.com/library/bb628447.aspx) [usar la actividad ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [usar la actividad IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) [usar](https://msdn2.microsoft.com/library/bb628544.aspx) la actividad ReplicatorActivity usar el diseñador heredado de la [actividad WhileActivity](https://msdn2.microsoft.com/library/bb628552.aspx) [para obtener Windows Workflow Foundation ayuda de la interfaz de usuario](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

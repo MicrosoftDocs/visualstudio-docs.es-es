@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292898"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849268"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Invocar el depurador de flujo de trabajo
 Generalmente, los flujos de trabajo se depuran de la misma manera que los programas escritos otros lenguajes de programación de Visual Studio. Puede iniciar el depurador de flujo de trabajo de las siguientes maneras:
@@ -23,7 +23,7 @@ Generalmente, los flujos de trabajo se depuran de la misma manera que los progra
 
 - Presione **F5** para iniciar la ejecución de una instancia del flujo de trabajo o para continuar con la ejecución después de que se haya alcanzado un punto de interrupción.
 
-- Usar depuración remota. Para obtener información sobre cómo usar la depuración remota, vea [Cómo: habilitar la depuración remota](https://go.microsoft.com/fwlink/?LinkId=196257).
+- Usar depuración remota. Para obtener información sobre cómo usar la depuración remota, vea [Cómo: habilitar la depuración remota](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
     > Si la aplicación de flujo de trabajo tiene como destino la arquitectura x86 y se hospeda en un equipo que ejecuta un sistema operativo de 64 bits, la depuración remota no funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] esté instalado en el equipo remoto o el destino de la aplicación de flujo de trabajo se cambie a **cualquier CPU**.

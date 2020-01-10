@@ -11,23 +11,23 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295846"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849738"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede definir restricciones de validación que prueben si el modelo cumple una condición especificada. Por ejemplo, puede definir una restricción para asegurarse de que un usuario no crea ningún bucle de relaciones de herencia. La restricción se invoca cuando el usuario intenta abrir o guardar el modelo, aunque también se puede invocar manualmente. Si se produce un error en la restricción, se agrega un mensaje de error que se haya definido a la ventana de error. Puede empaquetar estas restricciones en una extensión de integración de Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.
+Puede definir restricciones de validación que prueben si el modelo cumple una condición especificada. Por ejemplo, puede definir una restricción para asegurarse de que un usuario no crea ningún bucle de relaciones de herencia. La restricción se invoca cuando el usuario intenta abrir o guardar el modelo, aunque también se puede invocar manualmente. Si se produce un error en la restricción, se agrega un mensaje de error que se haya definido a la ventana de error. Puede empaquetar estas restricciones en una extensión de integración de Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) y distribuirla a otros usuarios de Visual Studio.
 
  También puede definir restricciones que validan el modelo respecto a recursos externos como bases de datos. Si desea validar el código de programa con un diagrama de capas, vea [agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos de
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.
 
-    1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
+    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
 
     2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, elija **Biblioteca de clases**.
 

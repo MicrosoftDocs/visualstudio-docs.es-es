@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299509"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849890"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Puede tener asociados varios programas mientras realiza la depuración, pero só
 
 Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
-En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Services), en la lista **Procesos disponibles** no aparecerán todos los procesos disponibles. Si se ejecuta Visual Studio como usuario que tiene una cuenta de usuario limitada, la lista **Procesos disponibles** no mostrará los procesos que se estén ejecutando en la sesión 0, la cual se usa para los servicios y otros procesos de servidor, incluido w3wp.exe. Para resolver el problema, ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con una cuenta de administrador o ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] desde la consola de servidor en lugar de una sesión de Terminal Services. Si ninguna de estas dos soluciones es posible, existe una tercera opción que consiste en asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p` *ProcessId* en la línea de comandos de Windows. Puede determinar el identificador de proceso mediante tlist.exe. Para obtener el archivo tlist.exe, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](https://go.microsoft.com/fwlink/?LinkId=168279).
+En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Services), en la lista **Procesos disponibles** no aparecerán todos los procesos disponibles. Si se ejecuta Visual Studio como usuario que tiene una cuenta de usuario limitada, la lista **Procesos disponibles** no mostrará los procesos que se estén ejecutando en la sesión 0, la cual se usa para los servicios y otros procesos de servidor, incluido w3wp.exe. Para resolver el problema, ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con una cuenta de administrador o ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] desde la consola de servidor en lugar de una sesión de Terminal Services. Si ninguna de estas soluciones es posible, una tercera opción es asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p` *ProcessId* desde la línea de comandos de Windows. Puede determinar el identificador de proceso mediante tlist.exe. Para obtener el archivo tlist.exe, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
 ## <a name="BKMK_Scenarios"></a>Escenarios comunes de depuración
 
@@ -127,11 +127,11 @@ Para algunos tipos de aplicaciones (como las aplicaciones de la tienda Windows),
 |Depurar una aplicación administrada o nativa en el equipo local|Usar asociar al proceso o [depuración estándar](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Para obtener acceso rápidamente al cuadro de diálogo, use **Ctrl + Alt + P** y, a continuación, escriba la primera letra del nombre del proceso.|
 |Depurar aplicaciones de ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Usar asociar al proceso|iiexpress.exe|Esto puede resultar útil para agilizar la carga de la aplicación, como (por ejemplo,) al generar perfiles. |
 |Depuración remota ASP.NET 4 o 4,5 en un servidor IIS|Usar herramientas remotas y asociar al proceso|w3wp.exe|Consulte [depuración remota ASP.net en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|ASP.NET Core de depuración remota en un servidor IIS|Usar herramientas remotas y asociar al proceso|DNX. exe|Para la implementación de aplicaciones, vea [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, consulte [depuración remota ASP.net en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET Core de depuración remota en un servidor IIS|Usar herramientas remotas y asociar al proceso|dnx.exe|Para la implementación de aplicaciones, vea [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, consulte [depuración remota ASP.net en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Usar herramientas remotas (si el servidor es remoto) y asociar al proceso|iexplore. exe u otros procesos|Si es necesario, use el administrador de tareas para ayudar a identificar el proceso. Vea la sección [depuración remota](../debugger/remote-debugging.md) y versiones posteriores de este tema.|
-|Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas y F5|N/D| Vea [depuración remota](../debugger/remote-debugging.md)|
-|Depuración remota de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/D|Usar depurar **/otros destinos de depuración/depurar paquete de aplicaciones instalado** en lugar de **asociar al proceso**|
-|Depuración de una aplicación Windows universal (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/D|Usar depurar **/otros destinos de depuración/depurar paquete de aplicaciones instalado** en lugar de **asociar al proceso**|
+|Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas y F5|N/A| Vea [depuración remota](../debugger/remote-debugging.md)|
+|Depuración remota de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/A|Usar depurar **/otros destinos de depuración/depurar paquete de aplicaciones instalado** en lugar de **asociar al proceso**|
+|Depuración de una aplicación Windows universal (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/A|Usar depurar **/otros destinos de depuración/depurar paquete de aplicaciones instalado** en lugar de **asociar al proceso**|
 
 > [!WARNING]
 > Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.

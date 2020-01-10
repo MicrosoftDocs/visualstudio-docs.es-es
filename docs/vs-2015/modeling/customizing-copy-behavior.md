@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301183"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845288"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ En un lenguaje específico de dominio (DSL) creado con el SDK de visualización 
  **Habilitar o deshabilitar copiar, cortar y pegar.**
 En DSL Explorer, establezca la propiedad **enable Copy Paste** del nodo **Editor** .
 
- **Copiar vínculos al mismo destino.** Por ejemplo, para tener un cuadro de comentario copiado vinculado al mismo elemento de asunto.
+ **Copiar vínculos al mismo destino.** Por ejemplo, para vincular un cuadro de comentarios copiado al mismo elemento de asunto.
 Establezca la propiedad **Propagate Copy** del rol para **propagar la copia solo al vínculo**. Para obtener más información, vea personalizar el comportamiento de la [copia de vínculos](#customizeLinks).
 
  Copiar elementos vinculados. Por ejemplo, cuando se copia un nuevo elemento, también se realizan copias de los cuadros de comentarios vinculados.
 Establezca la propiedad **Propagate Copy** del rol para **propagar la copia al vínculo y el encargado de rol opuesto**. Para obtener más información, vea personalizar el comportamiento de la [copia de vínculos](#customizeLinks).
 
- **Duplique los elementos rápidamente copiando y pegando.** Normalmente, el elemento que acaba de copiar todavía está seleccionado y no se puede pegar el mismo tipo de elemento en él.
+ **Duplique los elementos rápidamente copiando y pegando.** Normalmente, el elemento que acaba de copiar sigue seleccionado y no puede pegar el mismo tipo de elemento en él.
 Agregue una directiva de combinación de elementos a la clase de dominio y establézcala para que reenvíe las combinaciones a la clase primaria. Esto tendrá el mismo efecto en las operaciones de arrastrar. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
  \- o -
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Cree vínculos adicionales cuando el usuario pegue en un destino seleccionado.** Por ejemplo, cuando se pega un cuadro de comentario en un elemento, se crea un vínculo entre ellos.
+ **Cree vínculos adicionales cuando el usuario pegue en un destino seleccionado.** Por ejemplo, cuando un cuadro de comentarios se pega en un elemento, se crea un vínculo entre ellos.
 Agregue una directiva de combinación de elementos a la clase de dominio de destino y establézcala para que procese la combinación agregando vínculos. Esto tendrá el mismo efecto en las operaciones de arrastrar. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
  \- o -
@@ -91,7 +91,7 @@ Invalide *midsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` en el proyecto 
 Invalide *midsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` en el proyecto DslPackage.
 
  **Conservar el diseño de la forma mediante copiar y pegar.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Para lograr este efecto, agregue las formas y conectores al ElementGroupPrototype copiado. El método más cómodo para invalidar es ElementOperations.CreateElementGroupPrototype(). Para ello, agregue el siguiente código al proyecto Dsl:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Para lograr este efecto, invalide `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar la versión específica de la ubicación de `ElementOperations.Merge()`. Para ello, agregue el siguiente código al proyecto DslPackage:
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Vea también
- [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizar](../modeling/customizing-deletion-behavior.md) el control de comportamiento de eliminación [: ejemplo de diagramas de circuitos de VMSDK](https://go.microsoft.com/fwlink/?LinkId=213879)
+ [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizar](../modeling/customizing-deletion-behavior.md) el control de comportamiento de eliminación [: ejemplo de diagramas de circuitos de VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

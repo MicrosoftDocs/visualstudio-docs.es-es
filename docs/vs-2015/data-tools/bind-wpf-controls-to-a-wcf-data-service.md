@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299409"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850140"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://codeplex.com/SqlServerSamples).
 
   El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 
-- Data Services de WCF. Para obtener más información, vea [información general](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- Data Services de WCF. Para más información, consulte [Información general](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Modelos de datos en [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
@@ -76,7 +76,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
 
 4. Seleccione la plantilla de proyecto **Aplicación web ASP.NET**.
 
-5. En el cuadro **nombre** , escriba `AdventureWorksService` y haga clic en **Aceptar**.
+5. En el cuadro **Nombre**, escriba `AdventureWorksService` y haga clic en **Aceptar**.
 
      Visual Studio crea el proyecto de `AdventureWorksService`.
 

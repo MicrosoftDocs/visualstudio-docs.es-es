@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301428"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851257"
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 |**Utilizar cobertura de código para identificar qué proporción del código del proyecto se prueba utilizando pruebas unitarias:** obtenga información sobre la característica de cobertura de código de las herramientas de prueba de [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)].|-   [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Realice análisis de esfuerzo y rendimiento usando pruebas de carga para las pruebas unitarias**: puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación. **Nota:** La creación y el uso de pruebas de carga requiere Visual Studio Enterprise.|-   [Crear y editar pruebas de carga](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Cómo: Agregar pruebas de rendimiento web y pruebas unitarias a un escenario de prueba de carga](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Cómo: eliminar pruebas de web y pruebas unitarias desde un escenario de prueba de carga](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**Establezca y exija puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de proteger el código para ayudar a garantizar la calidad del código.|-   [Establecer y aplicar pruebas de calidad](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**Extienda el tipo de prueba unitaria:** puede agregar funcionalidad que no esté en el marco de pruebas unitarias. Por ejemplo, puede agregar una propiedad para especificar si una prueba se debe ejecutar como un usuario normal o no. O puede extender el marco para agregar atributos de fila a un método y utilizar los datos de esa fila dentro de la prueba.|Para ver ejemplos de código para extender el marco de pruebas unitarias, vea el siguiente [sitio web de Microsoft](https://go.microsoft.com/fwlink/?LinkId=185591).|
+|**Extienda el tipo de prueba unitaria:** puede agregar funcionalidad que no esté en el marco de pruebas unitarias. Por ejemplo, puede agregar una propiedad para especificar si una prueba se debe ejecutar como un usuario normal o no. O puede extender el marco para agregar atributos de fila a un método y utilizar los datos de esa fila dentro de la prueba.|Para ver ejemplos de código para extender el marco de pruebas unitarias, vea el siguiente [sitio web de Microsoft](https://msdn.microsoft.com/vstudio/ff420671.aspx).|
 |**Establecer opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>Tareas relacionadas
@@ -71,16 +71,16 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="videos"></a>Vídeos
- [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Foros
- [Prueba unitaria de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Prueba unitaria de Visual Studio](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
-### <a name="guidance"></a>Guía
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="reference"></a>Referencia
- [Content Index for Unit Tests](https://go.microsoft.com/fwlink/?LinkID=254719) (Índice de contenido para las pruebas unitarias)
+ [Content Index for Unit Tests](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx) (Índice de contenido para las pruebas unitarias)
 
 ## <a name="see-also"></a>Vea también
  [Mejorar la calidad del código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

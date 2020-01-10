@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299940"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851062"
 ---
 # <a name="talk-to-us"></a>Hable con nosotros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No pod
  Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que le permite enviar comentarios sobre la calidad de la compilación que está ejecutando. No verá esta opción en versiones publicadas del producto.
 
 ## <a name="i-need-help"></a>Necesito ayuda
- Vea el [Soporte técnico de Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obtener ayuda en línea.
+ Vea el [Soporte técnico de Microsoft](https://support.microsoft.com/) para obtener ayuda en línea.
 
  El soporte técnico fuera de Estados Unidos y Canadá puede variar. Para obtener una lista de contactos regionales, vea [Sitios de Microsoft en todo el mundo](https://www.microsoft.com/worldwide/).
 
  Para obtener más opciones, vea [Introducción al soporte técnico](https://visualstudio.microsoft.com/support/).
 
- Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas Premier Support. Para obtener más información, vea [Soporte técnico Premier de servicios Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+ Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas Premier Support. Para obtener más información, vea [Soporte técnico Premier de servicios Microsoft](https://www.microsoft.com/industry/services/support).
 
  Si el producto viniera instalado con un nuevo equipo o dispositivo, el fabricante del hardware proporciona soporte técnico y ayuda para este software. Ponerse en contacto directamente con el fabricante para saber si es compatible.
 

@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299573"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850240"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Tutorial: Mostrar datos relacionados en una aplicación WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://codeplex.com/SqlServerSamples).
 
   El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 
@@ -102,9 +102,9 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
 6. En la página **Elija los objetos de base de datos** , expanda **tablas**y, a continuación, seleccione las tablas siguientes:
 
-   - **SalesOrderHeader**
-
    - **SalesOrderDetail**
+
+   - **SalesOrderHeader**
 
 7. Haga clic en **Finalizar**.
 
@@ -143,7 +143,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de las tabla
 
    - **TaxAmt**
 
-   - **Marítimo**
+   - **Freight**
 
    - **rowguid**
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295808"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849568"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ La API de inmutabilidad del SDK de visualización y modelado de [!INCLUDE[vsprvs
 > [!NOTE]
 > Se puede eludir una directiva de bloqueo mediante la reflexión. Proporciona un límite claro a los desarrolladores de terceros, pero no proporciona seguridad segura.
 
- Puede encontrar más información y ejemplos en el sitio web del [SDK de visualización y modelado](https://go.microsoft.com/fwlink/?LinkId=186128) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Puede encontrar más información y ejemplos en el sitio web del [SDK de visualización y modelado](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="setting-and-getting-locks"></a>Establecer y obtener bloqueos
  Puede establecer bloqueos en el almacén, en una partición o en un elemento individual. Por ejemplo, esta instrucción impedirá que se elimine un elemento de modelo y también impedirá que se cambien sus propiedades:
@@ -55,7 +55,7 @@ partition.SetLocks(Locks.Delete);
 
  Un bloqueo que se establece en el almacén se aplica a todos sus elementos, independientemente de la configuración de ese bloqueo en las particiones y los elementos.
 
-### <a name="using-locks"></a>Usar bloqueos
+### <a name="using-locks"></a>Uso de los bloqueos
  Puede usar bloqueos para implementar esquemas como los ejemplos siguientes:
 
 - No permitir los cambios en todos los elementos y relaciones excepto en los que representan Comentarios. Esto permite a los usuarios anotar un modelo sin cambiarlo.
@@ -77,11 +77,11 @@ partition.SetLocks(Locks.Delete);
 
   No se puede establecer un bloqueo en una partición o un almacén y, al mismo tiempo, deshabilitar el bloqueo en un elemento individual.
 
-|Valor|Significado si `IsLocked(Value)` es true|
+|{2&gt;Value&lt;2}|Significado si `IsLocked(Value)` es true|
 |-----------|------------------------------------------|
 |Ninguno|Sin restricción.|
-|Propiedad|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
-|Add|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No se aplica a `ModelElement`.|
+|La propiedad|No se pueden cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|
+|Agregar|No se pueden crear nuevos elementos y vínculos en una partición o almacén.<br /><br /> No se aplica a `ModelElement`.|
 |Mover|No se puede desplazar el elemento entre particiones si `element.IsLocked(Move)` es true o si `targetPartition.IsLocked(Move)` es true.|
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos en los que se propagará la eliminación, como elementos y formas incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|
 |Reordenar|No se puede cambiar el orden de los vínculos en un roleplayer.|

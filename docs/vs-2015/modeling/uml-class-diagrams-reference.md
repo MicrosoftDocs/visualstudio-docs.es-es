@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 06e83e254cad77d4ede9716a18a51f6476fb51ad
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297219"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850180"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramas de clases de UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74297219"
 En los diagramas de clases de UML se describen el objeto y las estructuras de información que se usan en la aplicación, tanto de forma interna como en la comunicación con los usuarios. Esta información se describe sin hacer referencia a ninguna implementación concreta. Las clases y relaciones se pueden implementar de muchas maneras, por ejemplo, en tablas de bases de datos, en nodos XML o en composiciones de objetos de software.
 
 > [!NOTE]
-> En este tema se analizan los diagramas de clases de UML. Hay otro tipo de diagrama de clases, el diagrama de clases de .NET, que se usa para visualizar el código de programa. Para obtener más información, vea [diseñar y ver clases y tipos](https://go.microsoft.com/fwlink/?LinkId=142231).
+> En este tema se analizan los diagramas de clases de UML. Hay otro tipo de diagrama de clases, el diagrama de clases de .NET, que se usa para visualizar el código de programa. Para obtener más información, vea [diseñar y ver clases y tipos](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
  Para crear un diagrama de clases de UML, en el menú **arquitectura** , elija **nuevo diagrama de UML o de capas**. Para obtener más información sobre cómo dibujar diagramas de clases UML, vea [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md). Para obtener más información sobre cómo crear y dibujar diagramas de modelado, vea [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md).
 
@@ -62,10 +62,10 @@ En los diagramas de clases de UML se describen el objeto y las estructuras de in
 |     1     |        Clasificador        |                                                                                                             Nombre general de una clase, interfaz o enumeración. Los componentes, casos de uso y actores también son clasificadores.                                                                                                             |
 |     2     | Control de contraer o expandir |                                                                                         Si no puede ver los detalles de un clasificador, haga clic en el botón de expansión situado en la parte superior izquierda del clasificador. También tendrá que hacer clic en el icono [+] de cada segmento.                                                                                         |
 |     3     |      **Attribute**       |   Valor con tipo que se asocia a cada instancia de un clasificador.<br /><br /> Para agregar un atributo, haga clic en la sección **atributos** y, a continuación, presione **entrar**. Escriba la firma del atributo. Para obtener más información, vea [propiedades de los atributos de diagramas de clases de UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
-|     4     |      **Sesión**       | Método o función que pueden realizar las instancias de un clasificador. Para agregar una operación, haga clic en la sección **operaciones** y, a continuación, presione **entrar**. Escriba la firma de la operación. Para obtener más información, vea [propiedades de las operaciones en diagramas de clases de UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     4     |      **Operación**       | Método o función que pueden realizar las instancias de un clasificador. Para agregar una operación, haga clic en la sección **operaciones** y, a continuación, presione **entrar**. Escriba la firma de la operación. Para obtener más información, vea [propiedades de las operaciones en diagramas de clases de UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **Asociación**      |                                                                  Relación entre los miembros de dos clasificadores. Para obtener más información, vea [propiedades de las asociaciones de diagramas de clases de UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
 |    5a     |     **Agregación**      |                                                                                                    Asociación que representa una relación de propiedad compartida. La propiedad **Aggregation** del rol Owner está establecida en **Shared**.                                                                                                     |
-|    5b     |     **Boletin**      |                                                                                                      Asociación que representa una relación parte/todo. La propiedad **Aggregation** del rol Owner está establecida en **composite**.                                                                                                      |
+|    5b     |     **Composición**      |                                                                                                      Asociación que representa una relación parte/todo. La propiedad **Aggregation** del rol Owner está establecida en **composite**.                                                                                                      |
 |     6     |   **Nombre de asociación**   |                                                                                                                                         Nombre de una asociación. Puede dejarse vacío.                                                                                                                                          |
 |     7     |      **Nombre de rol**       |                       Nombre de un rol, es decir, un extremo de una asociación. Puede usarse para hacer referencia al objeto asociado. En la ilustración anterior, cualquier pedido `O`, tiene `O.ChosenMenu` como menú asociado.<br /><br /> Cada rol tiene sus propias propiedades, que se muestran bajo las propiedades de la asociación.                       |
 |     8     |     **Multiplicidad**     |                                         Indica cuántos de los objetos de este extremo se pueden vincular a cada objeto del otro. En el ejemplo, cada pedido debe vincularse exactamente a un solo menú.<br /><br /> **\\** \* significa que no hay ningún límite superior para el número de vínculos que se pueden realizar.                                         |
@@ -79,7 +79,7 @@ En los diagramas de clases de UML se describen el objeto y las estructuras de in
 |11|**Enumeración**|Clasificador que se compone de un conjunto de valores literales.|
 |12|**Paquete**|Grupo de clasificadores, asociaciones, acciones, líneas de vida, componentes y otros paquetes. En un diagrama de clases lógicas se muestra que los paquetes y clasificadores de miembros están incluidos dentro del paquete.<br /><br /> Los nombres están dentro del ámbito de los paquetes para que **Class1** dentro de **package1** sea distinto de **Class1** fuera de ese paquete. El nombre del paquete aparece como parte de las propiedades de **nombre completo** de su contenido.<br /><br /> Puede establecer la propiedad **paquete vinculado** de cualquier diagrama UML para que haga referencia a un paquete. Todos los elementos que cree en ese diagrama formarán parte del paquete. Aparecerán en el paquete, en el **Explorador de modelos UML**.|
 |13|**Import**|Relación entre paquetes que indica que un paquete incluye todas las definiciones de otro.|
-|14|**Pendiente**|La definición o implementación del clasificador dependiente podría cambiar si el clasificador situado en el extremo con la punta de flecha se modifica.|
+|14|**Dependencia**|La definición o implementación del clasificador dependiente podría cambiar si el clasificador situado en el extremo con la punta de flecha se modifica.|
 
  ![Realización que se muestra con el conector y el círculo](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
 

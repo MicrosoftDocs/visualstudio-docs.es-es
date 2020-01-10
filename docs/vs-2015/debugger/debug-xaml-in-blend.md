@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298323"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850516"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
   
 - Un elemento XAML está en una ubicación no permitida.  
   
-  Para obtener más información sobre la sintaxis común de XAML, consulte [Guía de sintaxis XAML básica](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Para obtener más información sobre la sintaxis común de XAML, consulte [Guía de sintaxis XAML básica](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   También puedes identificar y resolver errores de sintaxis simples del código subyacente, errores de compilación y errores en tiempo de ejecución en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Pero puede que te resulte más fácil identificar y resolver los errores del código subyacente en Visual Studio.  
   
@@ -123,7 +123,7 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
 ## <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio  
  Puede abrir proyectos de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio para depurar el código de su aplicación más fácilmente. Para abrir un proyecto de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] en Visual Studio, haga clic con el botón derecho en el proyecto en el panel **Proyectos** y, después, en **Editar en Visual Studio**. Cuando termine la sesión de depuración en Visual Studio, presione Ctrl+Mayús+S para guardar todos los cambios y después vuelva a [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Se te preguntará si deseas recargar el proyecto. Haga clic en **Sí a todo** para continuar trabajando en [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Para obtener más información sobre cómo depurar la aplicación, vea [depurar aplicaciones de la tienda Windows en Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Para obtener más información sobre cómo depurar la aplicación, vea [depurar aplicaciones de la tienda Windows en Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Obtención de ayuda  
- Si necesita más ayuda para depurar la aplicación [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], puede buscar en los foros de la comunidad de aplicaciones de la [tienda Windows](https://go.microsoft.com/fwlink/?LinkId=280308) las entradas relacionadas con su problema o publicar una pregunta.
+ Si necesita más ayuda para depurar la aplicación [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], puede buscar en los foros de la comunidad de aplicaciones de la [tienda Windows](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) las entradas relacionadas con su problema o publicar una pregunta.

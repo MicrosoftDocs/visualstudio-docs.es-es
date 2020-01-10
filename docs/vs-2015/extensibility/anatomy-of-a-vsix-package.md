@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295647"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852284"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomía de un paquete VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +59,4 @@ Un paquete VSIX es un archivo. vsix que contiene una o varias extensiones de Vis
 ## <a name="content_typesxml"></a>[Content_Types]. XML  
  El archivo [Content_Types]. XML identifica los tipos de archivo en el archivo. vsix expandido. Visual Studio usa este archivo durante la instalación del paquete, pero no instala el propio archivo. Para obtener más información acerca de este archivo, consulte [la estructura del archivo Content_types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- El estándar de convenciones de empaquetado abierto (OPC) requiere un archivo [Content_Types]. Xml. Para obtener más información acerca de OPC, consulte [OPC: un nuevo estándar para empaquetar los datos](https://go.microsoft.com/fwlink/?LinkID=148207) en el sitio web de MSDN.
+ El estándar de convenciones de empaquetado abierto (OPC) requiere un archivo [Content_Types]. Xml. Para obtener más información acerca de OPC, consulte [OPC: un nuevo estándar para empaquetar los datos](https://msdn.microsoft.com/magazine/cc163372.aspx) en el sitio web de MSDN.

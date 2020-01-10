@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291263"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850347"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: crear una aplicación básica de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
   
 2. Quite la marca de comentario de la línea siguiente:  
   
-     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Recompile la solución e inicie la depuración del shell aislado. Abra un archivo XML, por ejemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Compruebe que las palabras clave XML del archivo no están coloreadas y que al escribir "<" en una línea no se muestra la información sobre herramientas XML.  
   
@@ -163,7 +163,7 @@ En este tutorial se muestra cómo crear una solución de Shell aislado, personal
 6. Recompile la solución e inicie la depuración del shell aislado. El cuadro ayuda/acerca de debe ser aproximadamente cuadrado.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Antes de implementar la aplicación de Shell aislado  
- La aplicación de Shell aislado se puede instalar en cualquier equipo que tenga el paquete redistribuible de Visual Studio Shell (aislado). Para obtener más información sobre el paquete redistribuible, vea el sitio web de [descargas de extensibilidad de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ La aplicación de Shell aislado se puede instalar en cualquier equipo que tenga el paquete redistribuible de Visual Studio Shell (aislado). Para obtener más información sobre el paquete redistribuible, vea el sitio web de [descargas de extensibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Implementar la aplicación de Shell aislado  
  La aplicación de Shell aislado se implementa en un equipo de destino mediante la creación de un proyecto de instalación. Debe especificar estos elementos:  

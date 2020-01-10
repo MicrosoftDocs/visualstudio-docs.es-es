@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300712"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851902"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Este artículo contiene las siguientes tareas para los integradores del visor de
 
   Controles compatibles con el paquete de personalización de marca de Visual Studio:
 
-- Vínculos
+- vínculos
 
 - CodeSnippet
 
@@ -312,13 +312,13 @@ some F# code
 
    - Para sistemas operativos de 32 bits:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "ubicación" = "sin conexión"
 
    - Para sistemas operativos de 64 bits:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "ubicación" = "sin conexión"
 
@@ -432,7 +432,7 @@ some F# code
 
   Nota: las variables indicadas por "{n}" tienen dependencias de código; si se quitan o se cambian estos valores, se producirán errores y posiblemente se bloqueará la aplicación. Los identificadores de localización (ejemplo _locID = "CodeSnippet. n") se incluyen en el paquete de personalización de marca de Visual Studio.
 
-  **Personalización de marca. XML**
+  **Branding.xml**
 
 |||
 |-|-|
@@ -445,20 +445,20 @@ some F# code
 |Use:|Texto del control del fragmento de código.  Nota: el contenido del fragmento de código con espacio "no problemático" se cambiará a espacio.|
 |**Element**|**Valor**|
 |CopyToClipboard|Copiar en el Portapapeles|
-|ViewColorizedText|Ver con color|
+|ViewColorizedText|Ver texto coloreado|
 |CombinedVBTabDisplayLanguage|Visual Basic (ejemplo)|
 |VBDeclaration|Declaración|
-|VBUsage|Uso|
+|VBUsage|Usage|
 |Característica:|**Comentarios, pies de página y logotipo**|
 |Use:|Proporcionar un control de comentarios para que el cliente proporcione comentarios sobre el tema actual por correo electrónico.  Texto de copyright para el contenido.  Definición del logotipo.|
 |**Element**|**Valor (estas cadenas se pueden modificar para satisfacer la necesidad de que el contenido adopte).**|
-|SSoftware|© 2013 Microsoft Corporation. Todos los derechos reservados.|
+|SSoftware|© 2013 Microsoft Corporation. Reservados todos los derechos.|
 |SendFeedback|\<a href = "{0}" {1}> Enviar comentarios\</a > de este tema a Microsoft.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
-|Característica:|**Ausencia**|
+|Característica:|**Declinación de responsabilidades**|
 |Use:|Conjunto de notificaciones de declinación de mayúsculas y minúsculas para el contenido traducido de la máquina.|
 |**Element**|**Valor**|
 |MT_Editable|Este artículo se ha traducido a la máquina. Si tiene una conexión a Internet, seleccione "ver este tema en línea" para ver esta página en modo editable con el contenido original en inglés al mismo tiempo.|
@@ -473,7 +473,7 @@ some F# code
 |LinkTableTitle|Vincular tabla|
 |TopicEnuLinkText|Vea la versión inglesa\</a > de este tema que está disponible en el equipo.|
 |TopicOnlineLinkText|Vea este tema \<a href = "{0}" {1}> en línea\</a >|
-|OnlineText|En línea|
+|OnlineText|Online|
 |Característica:|**Control de audio de vídeo**|
 |Use:|Mostrar elementos y texto para el contenido de vídeo|
 |**Element**|**Valor**|
@@ -512,14 +512,14 @@ some F# code
 |HomePageHelpSettingsText|\<p > la configuración actual es la ayuda local. El visor de ayuda muestra el contenido que ha instalado en el equipo.\<br/> para cambiar el origen del contenido de la ayuda, en la barra de menús de Visual Studio, elija \<span style = "{0}" > ayuda, establecer preferencias de la ayuda\</span >.\<br/>\</p >|
 |MegaByte|MB|
 
- **Personalización de marca. js**
+ **branding.js**
 
  El archivo branding. js contiene JavaScript que usan los elementos de personalización de marca del visor de ayuda de Visual Studio.  A continuación se muestra una lista de los elementos de personalización de marca y la función de JavaScript auxiliar.  Todas las cadenas que se van a localizar para este archivo se definen en la sección "cadenas localizables" en la parte superior de este archivo.  El archivo ICL se ha creado para las cadenas de ubicación dentro del archivo branding. js.
 
 ||||
 |-|-|-|
 |**Característica de personalización de marca**|**Función de JavaScript**|**Descripción**|
-|Var...||Definir variables|
+|Var...||Definición de variables|
 |Obtención del idioma del código de usuario|setUserPreferenceLang|asigna un índice # al lenguaje de código|
 |Establecer y obtener valores de cookie|getCookie, setCookie||
 |Miembro heredado|changeMembersLabel|Expandir o contraer miembro heredado|
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Archivo**|**Realice**|**Origen de contenido mostrado**|
+|**Archivo**|**Uso**|**Origen de contenido mostrado**|
 |homepage.htm|Se trata de una página que muestra contenido instalado actualmente, así como cualquier otro mensaje adecuado para presentar al usuario sobre su contenido.  Este archivo tiene el atributo de metadatos adicional "Microsoft.Help.Id" Content = "-1", que coloca este contenido en la parte superior de la TDC del contenido local.||
 ||<META_HOME_PAGE_TITLE_ADD />|Branding. XML, Tag \<HomePageTitle >|
 ||HOME_PAGE_INTRODUCTION_SECTION_ADD de </>|Branding. XML, Tag \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Archivo**|**Realice**|**Ejemplos**|
+|**Archivo**|**Uso**|**Ejemplos**|
 |borrar. gif|Se usa para representar el área contraíble||
 |footer_slice.gif|Presentación de pie de página||
 |info_icon. gif|Se usa al Mostrar información|Declinación de responsabilidades|
@@ -824,4 +824,4 @@ Para la API en tiempo de ejecución, consulte [API de ayuda de Windows](https://
 
 Para obtener más información sobre cómo aprovechar la API de ayuda, vea [ejemplos de código del visor de ayuda](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Para obtener actualizaciones sobre problemas problemáticos, consulte el [archivo Léame del visor de ayuda](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409).
+Para obtener actualizaciones sobre problemas problemáticos, consulte el [archivo Léame del visor de ayuda](https://go.microsoft.com/fwlink/?LinkId=255960).

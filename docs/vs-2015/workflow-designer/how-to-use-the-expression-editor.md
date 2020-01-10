@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300935"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849232"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
 El Editor de expresiones es un control de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que se utiliza en muchas actividades de flujo de trabajo como un medio para especificar y evaluar estas expresiones. El Editor de expresiones proporciona una experiencia de edición IDE completa, que incluye IntelliSense, el uso de distintos colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión una vez se ha escrito. Si la expresión no es válida, se muestra un icono de error. El editor también puede abrirse como un cuadro de diálogo del **Editor de expresiones** .
 
- Las expresiones son valores literales o de código de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que no importa las mayúsculas y minúsculas, la comparación se realiza utilizando un signo igual ("=") en lugar de ("= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "&#124;&#124;& &" y "", y no se utiliza **nada** en lugar de **null**. Para obtener más información sobre las expresiones y los operadores de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
+ Las expresiones son valores literales o de código de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que no importa las mayúsculas y minúsculas, la comparación se realiza utilizando un signo igual ("=") en lugar de ("= ="), los operadores booleanos son las palabras "and" y "or" en lugar de los símbolos "&#124;&#124;& &" y "", y no se utiliza **nada** en lugar de **null**. Para obtener más información sobre las expresiones y los operadores de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y para algunos ejemplos, vea [operadores y expresiones en Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  El **Editor de expresiones** se comporta de la siguiente manera:
 

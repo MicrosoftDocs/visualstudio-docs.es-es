@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300430"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850326"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Cómo: Crear un control Toolbox que use formularios Windows Forms
 La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] le permite crear controles de formularios Windows Forms que se agregan automáticamente a **Toolbox** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control **Toolbox** , que se puede distribuir a otros usuarios.  
   
 > [!NOTE]
-> Para obtener información sobre cómo descargar Visual Studio SDK, vea [Extensión de Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) en el sitio web de MSDN.  
+> Para obtener información sobre cómo descargar Visual Studio SDK, vea [Extensión de Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) en el sitio web de MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Crear un control Toolbox  
  Utilice la plantilla de control Toolbox de Windows Forms para crear el proyecto y, a continuación, cree una interfaz de usuario (IU) en el diseñador.  
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para crear un proyecto de Control de cuadro de herramientas de Windows Forms  
   
-1. En el menú **Archivo**, haga clic en **Nuevo** y, después, en **Proyecto**.  
+1. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
   
 2. En el cuadro de diálogo **Nuevo proyecto** , en **Plantillas instaladas**, haga clic en el nodo para elegir su lenguaje de programación preferido y luego haga clic en **Extensibilidad**. En la lista de tipos de proyecto, seleccione **Control Toolbox de Windows Forms**.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297826"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851820"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
 
  **Depurador para iniciar** Especifica el host predeterminado para el depurador.
 
-- Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](https://go.microsoft.com/fwlink/?LinkId=234912).
+- Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx).
 
-- Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](https://go.microsoft.com/fwlink/?LinkId=234913).
+- Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx).
 
-- Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](https://go.microsoft.com/fwlink/?LinkId=234914).
+- Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx).
 
   **Iniciar aplicación** Especifica si se inicia la aplicación al presionar F5 o hacer clic en **depurar**, **iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.
 

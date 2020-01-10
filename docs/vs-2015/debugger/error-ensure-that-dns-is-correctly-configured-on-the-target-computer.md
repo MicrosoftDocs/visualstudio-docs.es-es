@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6815e21d0fe7af3a24f2fc36a4f448ec420c89de
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 35c258a018bec8bd38f8b43690c18b37ee9d6c39
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299748"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851934"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Error: Asegúrese de que DNS está bien configurado en el equipo de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +36,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Para obtener información sobre cómo ver la configuración de DNS en Windows 8.1, Vista, Windows 7, Windows Server 2012, Windows Server 2008 o Windows Server 2008 R2, haga esto: en el menú **Inicio**, elija **Ayuda y soporte técnico** y después busque **Cambiar la configuración de TCP/IP**.  
   
-- Para obtener más información, vaya al [sitio web de Microsoft Windows](https://go.microsoft.com/fwlink/?LinkId=252720) y busque **Cambiar la configuración de TCP/IP**.  
+- Para obtener más información, vaya al [sitio web de Microsoft Windows](https://windows.microsoft.com/) y busque **Cambiar la configuración de TCP/IP**.  
   
   Si no puede resolver el problema de DNS, intente ejecutar el depurador remoto con una cuenta diferente. Este error solo se produce cuando se ejecuta el depurador remoto con el sistema local o cuenta de servicio de red. Si ejecuta el depurador remoto con otra cuenta, puede que la cuenta use la autenticación NTLM, que no requiere DNS. . Para el procedimiento, consulte [error: el servicio Visual Studio Remote Debugger del equipo de destino no se puede volver a conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

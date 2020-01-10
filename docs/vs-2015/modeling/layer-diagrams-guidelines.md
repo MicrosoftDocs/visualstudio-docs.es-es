@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299463"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850634"
 ---
-# <a name="layer-diagrams-guidelines"></a>Diagrama de capas: Instrucciones
+# <a name="layer-diagrams-guidelines"></a>Diagramas de capas: instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Describa la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de capas* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de capas. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de capas](https://go.microsoft.com/fwlink/?LinkID=252073).
+Describa la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de capas* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de capas. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseñar y validar la arquitectura mediante diagramas de capas](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -66,7 +66,7 @@ Describa la arquitectura de la aplicación en un nivel alto mediante la creació
 ## <a name="CreateLayers"></a>Definir capas para representar áreas funcionales o componentes
  Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Se pueden crear capas a partir de artefactos de proyectos de Visual C# .NET y Visual Basic .NET, o bien se pueden adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.
 
- Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794).
+ Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 > [!TIP]
 > Existen ciertos tipos de artefactos que se pueden vincular a capas, pero que no admiten la validación con el diagrama de capas. Para ver si el artefacto admite la validación, abra el **Explorador de capas** para examinar la propiedad **Supports Validation** del vínculo de artefacto. Consulte [detectar dependencias existentes entre capas](#Generate).
@@ -115,7 +115,7 @@ Describa la arquitectura de la aplicación en un nivel alto mediante la creació
 ## <a name="NewAreas"></a>Diseñar nuevas áreas de la aplicación
  Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.
 
-- Si es posible, **muestre patrones arquitectónicos identificables** en los diagramas de capas. Por ejemplo, un diagrama de capas en el que se describa una aplicación de escritorio puede incluir capas como Presentación, Lógica del dominio y Almacén de datos. Un diagrama de capas que abarque una única característica de una aplicación puede tener las capas Modelo, Ver y Controlador. Para obtener más información sobre estos patrones, consulte [patterns & Practices: arquitectura](https://go.microsoft.com/fwlink/?LinkId=145794)de la aplicación.
+- Si es posible, **muestre patrones arquitectónicos identificables** en los diagramas de capas. Por ejemplo, un diagrama de capas en el que se describa una aplicación de escritorio puede incluir capas como Presentación, Lógica del dominio y Almacén de datos. Un diagrama de capas que abarque una única característica de una aplicación puede tener las capas Modelo, Ver y Controlador. Para obtener más información sobre estos patrones, consulte [patterns & Practices: arquitectura](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)de la aplicación.
 
      Si genera a menudo modelos similares, cree una herramienta personalizada. Vea [definir un elemento personalizado del cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md).
 

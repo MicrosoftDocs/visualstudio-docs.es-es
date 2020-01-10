@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295667"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850481"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir un perfil para ampliar UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 6. Envíe el archivo de extensión a otros usuarios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que lo instalen en sus equipos.
 
 ## <a name="AddProfile"></a>Cómo agregar un perfil a una extensión de Visual Studio
- Para instalar y poder enviar un perfil a otros usuarios, debe agregar el perfil a una extensión de Visual Studio. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Para instalar y poder enviar un perfil a otros usuarios, debe agregar el perfil a una extensión de Visual Studio. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Para definir un perfil en una nueva extensión de Visual Studio
 
@@ -196,7 +196,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
     > [!NOTE]
     > Si está compilando la extensión utilizando un proyecto de extensión de Visual Studio, utilice el Explorador de soluciones para agregar una nueva carpeta al proyecto.
 
-3. Cambie el nombre del nuevo directorio al código abreviado ISO de la referencia cultural adaptada, como `bg` para búlgaro o `fr` para francés. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, vea [método CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), que proporciona una lista completa de códigos de referencia cultural.
+3. Cambie el nombre del nuevo directorio al código abreviado ISO de la referencia cultural adaptada, como `bg` para búlgaro o `fr` para francés. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, vea [método CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que proporciona una lista completa de códigos de referencia cultural.
 
 4. Agregue una copia de su perfil predeterminado al nuevo directorio. No cambie el nombre de archivo.
 
@@ -220,7 +220,7 @@ Puede definir un *Perfil de UML* para personalizar los elementos del modelo est�
 7. Para compilar la extensión de Visual Studio, compile el proyecto de extensión o comprima todos los archivos, tal y como se describe en las secciones anteriores.
 
 ## <a name="Schema"></a>La estructura de un perfil
- El archivo XSD para los perfiles UML se puede encontrar en el ejemplo siguiente: [establecer el valor XSD para los perfiles y estereotipos](https://go.microsoft.com/fwlink/?LinkID=213811). Como ayuda para modificar los archivos de perfil, instale el archivo `.xsd` en:
+ El archivo XSD para los perfiles UML se puede encontrar en el ejemplo siguiente: [establecer el valor XSD para los perfiles y estereotipos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Como ayuda para modificar los archivos de perfil, instale el archivo `.xsd` en:
 
  **%ProgramFiles%\Microsoft Visual Studio [versión] \Xml\Schemas**
 
@@ -365,4 +365,4 @@ Tiene que seleccionar el perfil en un paquete o modelo. A continuación, los est
 6. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Vea también
- [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [estereotipos estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md) [ejemplo: colores de elementos UML por estereotipo](https://go.microsoft.com/fwlink/?LinkID=213841) [ejemplo: establecer estereotipos, XSD de perfiles](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Agregar estereotipos a elementos del modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizar el modelo con perfiles y estereotipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [estereotipos estándar para modelos UML](../modeling/standard-stereotypes-for-uml-models.md) [ejemplo: colores de elementos UML por estereotipo](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ejemplo: establecer estereotipos, XSD de perfiles](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

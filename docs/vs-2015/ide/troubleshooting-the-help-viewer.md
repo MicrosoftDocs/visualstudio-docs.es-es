@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299892"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851077"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solución de problemas del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
 ## <a name="additional-resources"></a>Recursos adicionales
  Puede obtener más información y proporcionar comentarios sobre el Visor de Ayuda mediante los siguientes recursos:
 
-- Para enviar comentarios, vea [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) en el sitio web de Microsoft o envíe un correo a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Para enviar comentarios, vea [Microsoft Connect](https://connect.microsoft.com/) en el sitio web de Microsoft o envíe un correo a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Para obtener más información, consulte la [documentación para desarrolladores y el foro del sistema de ayuda](https://go.microsoft.com/fwlink/?LinkId=232741) y el blog de [Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) .
+- Para obtener más información, consulte la [documentación para desarrolladores y el foro del sistema de ayuda](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) y el blog de [Help Guy](https://blogs.msdn.com/b/thehelpguy/) .
 
 ## <a name="see-also"></a>Vea también
- [Guía del administrador del Visor de Ayuda 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)
+ [Guía del administrador del Visor de Ayuda 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

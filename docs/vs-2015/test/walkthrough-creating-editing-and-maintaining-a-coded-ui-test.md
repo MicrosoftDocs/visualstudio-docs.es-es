@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302053"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851232"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 1. En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
-     Aparece el cuadro de diálogo **Nuevo proyecto**.
+     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
 2. En el panel **Instalado**, expanda **Visual C#** y después seleccione **Escritorio de Windows**.
 
@@ -369,22 +369,22 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="videos"></a>Vídeos
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-Episode1-gettingstarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-Episode1-gettingstarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-MaintainenceAndDebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![vínculo a](../data-tools/media/playvideo.gif "PlayVideo") las [pruebas de IU codificadas de vídeo: coded UI-tests-HandCoding](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Laboratorio de prácticas
- [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Foro
- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vea también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [Introducción con las](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configuraciones y plataformas compatibles con WPF Designer para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

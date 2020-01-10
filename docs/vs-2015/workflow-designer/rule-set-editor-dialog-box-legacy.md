@@ -13,17 +13,17 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83cdd4f549655be524abdd2a4708b316f6747b3e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8010bbbc38dee980ebe89dc60ccb513379103a26
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302760"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846314"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 En este tema se describe cómo usar el cuadro de diálogo **Editor de conjunto de reglas** en la [!INCLUDE[wfd1](../includes/wfd1-md.md)]heredada. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- El cuadro de diálogo **Editor de conjunto de reglas** se usa para crear y modificar conjuntos de reglas de [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) , que se serializan en un archivo. rules.
+ El cuadro de diálogo **Editor de conjunto de reglas** se usa para crear y modificar conjuntos de reglas de [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) , que se serializan en un archivo. rules.
 
 > [!NOTE]
 > Si desea abrir el archivo. rules con el **Editor XML con codificación**, primero debe cerrar la ventana del diseñador asociada para el flujo de trabajo o la actividad.
@@ -39,21 +39,21 @@ En este tema se describe cómo usar el cuadro de diálogo **Editor de conjunto d
 |----------------|-----------------|
 |**Agregar regla**|Agrega una definición de regla al conjunto de reglas.|
 |**Eliminar**|Elimina la regla seleccionada del conjunto de reglas.|
-|**Encadenamiento**|Especifica qué tipo de encadenamiento hacia delante se debe utilizar con el conjunto de reglas. Las opciones disponibles son:<br /><br /> -   **encadenamiento completo**, que especifica que se usen todos los mecanismos de encadenamiento de reenvío: implícito, atribución de métodos y explícito usando una función de **actualización** .<br />-   **secuenciales**, que especifica que no se use ningún encadenamiento hacia delante.<br />-   **solo actualización explícita**, que especifica que solo se realice el encadenamiento hacia delante en las acciones de **actualización** .<br /><br /> Para obtener más información sobre el encadenamiento hacia delante, vea [uso de la actividad PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).|
-|**Nombre**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por nombre.|
-|**Prior**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por prioridad.|
+|**Encadenamiento**|Especifica qué tipo de encadenamiento hacia delante se debe utilizar con el conjunto de reglas. Las opciones disponibles son:<br /><br /> -   **encadenamiento completo**, que especifica que se usen todos los mecanismos de encadenamiento de reenvío: implícito, atribución de métodos y explícito usando una función de **actualización** .<br />-   **secuenciales**, que especifica que no se use ningún encadenamiento hacia delante.<br />-   **solo actualización explícita**, que especifica que solo se realice el encadenamiento hacia delante en las acciones de **actualización** .<br /><br /> Para obtener más información sobre el encadenamiento hacia delante, vea [uso de la actividad PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).|
+|**Name**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por nombre.|
+|**Priority**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por prioridad.|
 |**Reevaluación**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por tipo de reevaluación.|
 |**Vista previa de reglas**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por la vista previa de la condición y las acciones de una regla.|
 |**Name:**|Se usa para escribir el nombre de la regla.|
-|**Prior**|Escriba una prioridad para la regla. La prioridad predeterminada es 0.|
+|**Priority:**|Escriba una prioridad para la regla. La prioridad predeterminada es 0.|
 |**Reevaluación**|Especifica qué tipo de reevaluación de regla se debe utilizar con la regla. Las opciones disponibles son:<br /><br /> -   **siempre**, lo que hace que la regla se vuelva a evaluar según sea necesario.<br />-   **nunca**, lo que hace que la regla no se vuelva a evaluar nunca. En este caso una regla se ejecuta sólo una vez.|
 |**Active**|Se selecciona para hacer que la regla esté activa.|
-|**Cumple**|Escriba una expresión para la condición de la regla. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
+|**Condición:**|Escriba una expresión para la condición de la regla. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
 |**Después, acciones:**|Escriba una expresión para las acciones Then. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
 |**Acciones Else:**|Escriba una expresión para las acciones Else. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
-|**Vale**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|
+|**ACEPTAR**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|
 
- Para obtener más información sobre los conjuntos de reglas, vea [uso de la actividad PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Para obtener más información sobre los conjuntos de reglas, vea [uso de la actividad PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).
 
 ## <a name="entering-condition-and-action-expressions"></a>Escribir expresiones de condiciones y de acciones
  Escriba las expresiones de la condición y las acciones then y else como texto en sus respectivos cuadros de texto en el cuadro de diálogo **Editor de conjunto de reglas** . Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos utilizados en el flujo de trabajo, mediante un tipo de menú de IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede llamar a métodos estáticos en tipos a los que se hace referencia escribiendo el nombre de la clase seguido por el nombre del método.
@@ -88,7 +88,7 @@ Update(this.Address.State)
 Update("this/Address/State")
 ```
 
- Para obtener más información sobre el uso de **Update** con el encadenamiento hacia delante, vea [uso de la actividad PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).
+ Para obtener más información sobre el uso de **Update** con el encadenamiento hacia delante, vea [uso de la actividad PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).
 
 ## <a name="see-also"></a>Vea también
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [cuadro de diálogo Seleccionar conjunto de reglas (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [uso de la actividad PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [uso de condiciones en flujos de trabajo](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [cuadro de diálogo Seleccionar conjunto de reglas (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [uso de la actividad PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [uso de condiciones en flujos de trabajo](https://msdn2.microsoft.com/library/bb628447.aspx)

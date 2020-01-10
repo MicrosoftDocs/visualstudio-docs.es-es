@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1121058d38d129b417cbd79b685e5bd549353a7c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290317"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845256"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizar y localizar aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ Si planea distribuir la aplicación a un público internacional, deberá tener v
  [Globalizar aplicaciones](../ide/globalizing-applications.md) Proporciona vínculos a páginas sobre la creación de aplicaciones que admiten varias referencias culturales.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Globalizar la aplicación (aplicaciones de la tienda Windows con JavaScript y HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar la aplicación [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] compilada con JavaScript y HTML.
+ [Globalizar la aplicación (aplicaciones de la tienda Windows con JavaScript y HTML)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx) Contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar la aplicación [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] compilada con JavaScript y HTML.
 
- [Globalizar la aplicación (aplicaciones de la tienda C#WindowsC++ con/VB/y XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar su [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicación compilada C#con XAML y visual, C++Visual Basic o visual.
+ [Globalizar la aplicación (aplicaciones de la tienda C#WindowsC++ con/VB/y XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx) contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar su [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicación compilada C#con XAML y visual, C++Visual Basic o visual.
 
  [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Proporciona información general sobre la programación de un público internacional.
 

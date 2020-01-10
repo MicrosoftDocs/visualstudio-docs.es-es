@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299421"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852154"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT desde el [sitio web de CodePlex](https://codeplex.com/SqlServerSamples).
 
   El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 
@@ -70,7 +70,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
 
 4. Seleccione la plantilla de proyecto **Aplicación WPF**.
 
-5. En el cuadro **nombre** , escriba `AdventureWorksProductsEditor` y haga clic en **Aceptar**.
+5. En el cuadro **Nombre**, escriba `AdventureWorksProductsEditor` y haga clic en **Aceptar**.
 
      Visual Studio crea el proyecto de `AdventureWorksProductsEditor`.
 

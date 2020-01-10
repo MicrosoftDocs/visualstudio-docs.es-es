@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bacf2c5d1650da91093c92c67e6b67bbbc73a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0dee8364ac16becc538fa6fc8c6f90d955c078
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633504"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848136"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos. Los proyectos aparecen como elementos secundarios de soluciones en el **Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar código fuente y crear referencias a servicios Web, bases de datos y otros recursos.
@@ -35,7 +35,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
  En este tutorial se muestra cómo crear un tipo de proyecto con la extensión de nombre de archivo de proyecto *. MyProj*. En este tutorial se toma prestado del sistema C# de proyectos visual existente.
 
 > [!NOTE]
-> Para obtener más ejemplos de proyectos de extensión, vea [ejemplos de VSSDK](https://aka.ms/vs2015sdksamples).
+> Para obtener más ejemplos de proyectos de extensión, vea [ejemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
  En este tutorial se enseña cómo realizar estas tareas:
 
@@ -61,7 +61,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
  También debe descargar el código fuente de [Managed Package Framework para los proyectos de](https://github.com/tunnelvisionlabs/MPFProj10). Extraiga el archivo en una ubicación que sea accesible para la solución que va a crear.
 
 ## <a name="create-a-basic-project-type"></a>Crear un tipo de proyecto básico
- Cree un C# Proyecto VSIX denominado **SimpleProject**. (**Archivo**  > **nuevo** **proyecto**  >  y, a continuación,**extensibilidad** **Visual C#**   >   > **Proyecto VSIX**). Agregue una plantilla de elemento de proyecto de paquete de Visual Studio (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  > **nuevo elemento**y, a continuación, vaya a **extensibilidad**  > **paquete de Visual Studio**). Asigne al archivo el nombre *SimpleProjectPackage*.
+ Cree un C# Proyecto VSIX denominado **SimpleProject**. (**Archivo** > **nuevo** **proyecto** > y, a continuación, **extensibilidad** **Visual C#**  >  > **Proyecto VSIX**). Agregue una plantilla de elemento de proyecto de paquete de Visual Studio (en el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar** > **nuevo elemento**y, a continuación, vaya a **extensibilidad** > **paquete de Visual Studio**). Asigne al archivo el nombre *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Crear una plantilla de proyecto básica
  Ahora, puede modificar este VSPackage básico para implementar el nuevo tipo de proyecto *. MyProj* . Para crear un proyecto basado en el tipo de proyecto *. MyProj* , Visual Studio tiene que saber qué archivos, recursos y referencias se van a agregar al nuevo proyecto. Para proporcionar esta información, coloque los archivos de proyecto en una carpeta de plantillas de proyecto. Cuando un usuario usa el proyecto *. MyProj* para crear un proyecto, los archivos se copian en el nuevo proyecto.
@@ -154,7 +154,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 
 11. Guarde el archivo.
 
-12. En la ventana **propiedades** , establezca la **acción de compilación** de *AssemblyInfo.CS*, *Program.CS*, *SimpleProject. ico*y *SimpleProject. MyProj* en **Content**, y establezca sus propiedades **include en VSIX** . en **true**.
+12. En la ventana **propiedades** , establezca la **acción de compilación** de *AssemblyInfo.CS*, *Program.CS*, *SimpleProject. ico*y *SimpleProject. MYPROJ* en **Content**, y establezca su **include en** las propiedades VSIX en **true**.
 
     Esta plantilla de proyecto describe un proyecto C# visual básico que tiene una configuración de depuración y una configuración de versión. El proyecto incluye dos archivos de código fuente, *AssemblyInfo.CS* y *Program.CS*, y varias referencias de ensamblado. Cuando se crea un proyecto a partir de la plantilla, el valor de ProjectGuid se reemplaza automáticamente por un nuevo GUID.
 
@@ -175,7 +175,7 @@ Templates
 
 ### <a name="to-create-a-basic-project-factory"></a>Para crear un generador de proyectos básico
 
-1. Cree GUID para el generador de proyectos (en el menú **herramientas** , haga clic en **crear GUID**) o use uno en el ejemplo siguiente. Agregue los GUID a la clase `SimpleProjectPackage` cerca de la sección con el `PackageGuidString` ya definido. Los GUID deben estar en formato de GUID y de cadena. El código resultante debe ser similar al ejemplo siguiente.
+1. Cree GUID para el generador de proyectos (en el menú **herramientas** , haga clic en **crear GUID**) o use uno en el ejemplo siguiente. Agregue los GUID a la clase `SimpleProjectPackage` cerca de la sección con el `PackageGuidString`ya definido. Los GUID deben estar en formato de GUID y de cadena. El código resultante debe ser similar al ejemplo siguiente.
 
    ```csharp
        public sealed class SimpleProjectPackage : Package
@@ -190,7 +190,7 @@ Templates
 
 2. Agregue una clase a la carpeta Top *SimpleProject* denominada *SimpleProjectFactory.CS*.
 
-3. Agregue las siguientes directivas Using:
+3. Agregue lo siguiente mediante directivas:
 
    ```csharp
    using System.Runtime.InteropServices;
@@ -244,7 +244,7 @@ Templates
 
     1. Descargue el proyecto SimpleProject (en **Explorador de soluciones**, seleccione el nodo del proyecto y, en el menú contextual, haga clic en **descargar el proyecto**) y abra el archivo del proyecto en el editor XML.
 
-    2. Agregue los siguientes bloques al archivo de proyecto (justo encima de los bloques de > de \<Import). Establezca `ProjectBasePath` en la ubicación del archivo *ProjectBase. files* en el código de Managed Package Framework que acaba de descargar. Es posible que tenga que agregar una barra diagonal inversa al directorio. Si no lo hace, es posible que el proyecto no encuentre el código fuente de Managed Package Framework.
+    2. Agregue los siguientes bloques al archivo de proyecto (justo encima de la \<> los bloques de importación). Establezca `ProjectBasePath` en la ubicación del archivo *ProjectBase. files* en el código de Managed Package Framework que acaba de descargar. Es posible que tenga que agregar una barra diagonal inversa al directorio. Si no lo hace, es posible que el proyecto no encuentre el código fuente de Managed Package Framework.
 
         ```
         <PropertyGroup>
@@ -506,19 +506,19 @@ Templates
 
    Durante la construcción estática, `SimpleProjectNode` recupera el mapa de bits del nodo del proyecto a partir de los recursos del manifiesto del ensamblado y lo almacena en caché en un campo privado para su uso posterior. Observe la sintaxis de la ruta de acceso de la imagen <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>. Para ver los nombres de los recursos del manifiesto insertados en un ensamblado, use el método <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>. Cuando este método se aplica a la `SimpleProject` ensamblado, los resultados deberían ser los siguientes:
 
-- *SimpleProject. Resources. Resources*
+- *SimpleProject.Resources.resources*
 
-- *VisualStudio. Project. Resources*
+- *VisualStudio.Project.resources*
 
-- *SimpleProject. VSPackage. Resources*
+- *SimpleProject.VSPackage.resources*
 
 - *Resources. ImageList. bmp*
 
 - *Microsoft. VisualStudio. Project. DontShowAgainDialog. Resources*
 
-- *Microsoft. VisualStudio. Project. SecurityWarningDialog. Resources*
+- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*
 
-- *SimpleProject. Resources. SimpleProjectNode. bmp*
+- *SimpleProject.Resources.SimpleProjectNode.bmp*
 
   Durante la construcción de la instancia, la clase base `ProjectNode` carga *los recursos. ImageList. bmp*, en los que se utilizan habitualmente 16 x 16 mapas de bits de *Resources\imagelis.bmp*. Esta lista de mapas de bits se pone a disposición de `SimpleProjectNode` como `ImageHandler.ImageList`. `SimpleProjectNode` anexa el mapa de bits del nodo de proyecto a la lista. El desplazamiento del mapa de bits del nodo de proyecto en la lista de imágenes se almacena en caché para su uso posterior como el valor de la propiedad `ImageIndex` pública. Visual Studio usa esta propiedad para determinar qué mapa de bits se debe mostrar como el icono del nodo de proyecto.
 
@@ -533,7 +533,7 @@ Templates
 
      ![Nuevo nodo de proyecto de proyecto simple](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3. Abra *Program.CS* en el editor de código. Debería ver el código fuente similar al código siguiente.
+3. Abra el archivo *Program.cs* en el editor de código. Debería ver el código fuente similar al código siguiente.
 
     ```csharp
     using System;
@@ -601,7 +601,7 @@ Templates
 
 3. Examine los valores de los parámetros `nameSpace` y `className`.
 
-   - `nameSpace` se proporciona el valor del elemento > \<RootNamespace en el archivo de plantilla de proyecto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . En este caso, el valor es `MyRootNamespace`.
+   - `nameSpace` recibe el valor del elemento \<RootNamespace > en el archivo de plantilla de proyecto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . En este caso, el valor es `MyRootNamespace`.
 
    - `className` recibe el valor del nombre del archivo de código fuente de la clase, sin la extensión de nombre de archivo. En este caso, el primer archivo que se va a copiar en la carpeta de destino es *AssemblyInfo.CS*; por lo tanto, el valor de className es `AssemblyInfo`.
 
@@ -609,7 +609,7 @@ Templates
 
     Visual Studio debe terminar de crear un proyecto.
 
-5. Abra *Program.CS* en el editor de código. Debería ver el código fuente similar al código siguiente.
+5. Abra el archivo *Program.cs* en el editor de código. Debería ver el código fuente similar al código siguiente.
 
    ```csharp
    using System;
@@ -632,7 +632,7 @@ Templates
 
     Observe que el espacio de nombres ahora es `MyRootNamespace` y que el nombre de la clase ahora es `Program`.
 
-6. Iniciar la depuración del proyecto. El nuevo proyecto debe compilarse, ejecutarse y mostrar "Hello VSX!!!" en la ventana de la consola.
+6. Inicie la depuración del proyecto. El nuevo proyecto debe compilarse, ejecutarse y mostrar "Hello VSX!!!" en la ventana de la consola.
 
     ![Comando de proyecto simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 

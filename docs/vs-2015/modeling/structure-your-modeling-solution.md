@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298163"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850803"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -34,7 +34,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 #### <a name="to-divide-an-application-into-layers"></a>Para dividir una aplicación en capas
 
-1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
 
 2. Cree una solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a la que llamaremos solución de arquitectura. Esta solución se usará para crear el diseño general del sistema. Contendrá modelos, pero ningún código.
 
@@ -100,7 +100,7 @@ Por ejemplo, si usa soluciones que tienen capas de presentación, negocio y dato
 
 #### <a name="to-create-a-solution-template"></a>Para crear una plantilla de solución
 
-1. [Descargue e instale el Asistente para exportar plantillas](https://go.microsoft.com/fwlink/?LinkId=196686), si aún no lo ha hecho.
+1. [Descargue e instale el Asistente para exportar plantillas](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard), si aún no lo ha hecho.
 
 2. Cree la estructura de solución que quiere usar como punto de partida para proyectos futuros.
 
@@ -109,7 +109,7 @@ Por ejemplo, si usa soluciones que tienen capas de presentación, negocio y dato
 4. Siga las instrucciones del asistente, seleccione los proyectos que quiere incluir en la plantilla, proporcione un nombre y una descripción para la plantilla y especifique una ubicación de salida.
 
 > [!NOTE]
-> El material de este tema se ha extraído y parafraseado a partir de la guía para las herramientas de arquitectura de Visual Studio, escrita por Visual Studio ALM Rangers, una colaboración entre los profesionales más valorados (MVP), los Servicios de Microsoft y el equipo de producto y los escritores de Visual Studio. [Haga clic aquí para descargar el paquete de orientación completo.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> El material de este tema se ha extraído y parafraseado a partir de la guía para las herramientas de arquitectura de Visual Studio, escrita por Visual Studio ALM Rangers, una colaboración entre los profesionales más valorados (MVP), los Servicios de Microsoft y el equipo de producto y los escritores de Visual Studio. [Haga clic aquí para descargar el paquete de orientación completo.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Material relacionado
 

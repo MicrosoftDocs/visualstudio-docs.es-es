@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25320da07249abee0ab0cddd48662585a7a809dd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745993"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846744"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Uso de Clang-ordenado en Visual Studio
 
@@ -28,7 +28,7 @@ Clang: se ejecuta después de la compilación correcta; es posible que tenga que
 
 ## <a name="msbuild"></a>MSBuild
 
-Puede configurar Clang-ordenado para que se ejecute como parte del análisis de código y compilar en la página **análisis de código**  > **General** en el ventana Propiedades del proyecto. Las opciones para configurar la herramienta se pueden encontrar en el submenú Clang-ordenado.
+Puede configurar Clang-ordenado para que se ejecute como parte del análisis de código y compilar en la página **análisis de código** > **General** en el ventana Propiedades del proyecto. Las opciones para configurar la herramienta se pueden encontrar en el submenú Clang-ordenado.
 
 Para obtener más información, vea [Cómo: establecer propiedades de análisis de código paraC++ proyectos de C/](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
@@ -44,7 +44,7 @@ Si no se especifica ninguna de las opciones "habilitar", Visual Studio seleccion
 
 ## <a name="warning-display"></a>Pantalla de advertencia
 
-Clang: las ejecuciones no ordenadas provocan que se muestren advertencias en el Lista de errores y como líneas de subrayado en el editor bajo las secciones de código pertinentes. Use la columna "categoría" en el Lista de errores para ordenar y organizar las advertencias de Clang. Puede configurar las advertencias en el editor activando la opción "deshabilitar subrayados de análisis de código" en **herramientas**  > **Opciones**.
+Clang: las ejecuciones no ordenadas provocan que se muestren advertencias en el Lista de errores y como líneas de subrayado en el editor bajo las secciones de código pertinentes. Use la columna "categoría" en el Lista de errores para ordenar y organizar las advertencias de Clang. Puede configurar las advertencias en el editor activando la opción "deshabilitar subrayados de análisis de código" en **herramientas** > **Opciones**.
 
 ## <a name="clang-tidy-configuration"></a>Clang: configuración ordenada
 
@@ -52,5 +52,5 @@ Puede configurar las comprobaciones que Clang se ejecuta dentro de Visual Studio
 
 ## <a name="see-also"></a>Vea también
 
-- [Compatibilidad de Clang/LLVM con proyectos de MSBuild](https://aka.ms/cpp/clangmsbuild)
-- [Compatibilidad de Clang/LLVM con proyectos de CMake](https://aka.ms/cpp/clangcmake)
+- [Compatibilidad de Clang/LLVM con proyectos de MSBuild](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [Compatibilidad de Clang/LLVM con proyectos de CMake](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)

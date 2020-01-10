@@ -9,25 +9,25 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295781"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851572"
 ---
 # <a name="step-2-run-your-program"></a>Paso 2: Ejecutar el programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al crear una solución, en realidad compiló un programa que se ejecuta. Todavía no hace gran cosa; se limita a mostrar una ventana vacía en la que se ve **Form1** en la barra de título. Pero se ejecuta, como vamos a comprobar a continuación.
 
- ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://go.microsoft.com/fwlink/?LinkId=205209) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [tutorial 1: crear un visor de imágenes en Visual Basic-vídeo 1 o el](https://msdn.microsoft.com/vbasic/gg315352.aspx) [tutorial 1: C# crear un visor de imágenes en-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ### <a name="to-run-your-program"></a>Para ejecutar el programa
 
 1. Utilice uno de los métodos siguientes para ejecutar el programa.
 
-    - Presione la tecla **F5**.
+    - Elija la tecla **F5**.
 
     - En la barra de menús, seleccione **Depurar**, **Iniciar depuración**.
 

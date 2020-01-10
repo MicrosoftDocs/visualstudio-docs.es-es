@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300897"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850684"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Cómo: Ampliar el diseñador de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede crear extensiones para el diseñador que se utiliza para editar definiciones de DSL. Entre los tipos de extensión que puede realizar se incluyen agregar comandos de menú, agregar controladores para los gestos de arrastrar y doble clic, y reglas que se desencadenan cuando cambian determinados tipos de valores o relaciones. Las extensiones se pueden empaquetar como una extensión de integración de Visual Studio (VSIX) y distribuirse a otros usuarios.
 
- Para obtener código de ejemplo y más información acerca de esta característica, vea el [sitio web del SDK de visualización y modelado de Visual Studio (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Para obtener código de ejemplo y más información acerca de esta característica, vea el [sitio web del SDK de visualización y modelado de Visual Studio (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Configuración de la solución
  Configure un proyecto que contenga el código de la extensión y un proyecto VSIX que exporte el proyecto. La solución puede contener otros proyectos incorporados en el mismo VSIX.
@@ -71,7 +71,7 @@ Puede crear extensiones para el diseñador que se utiliza para editar definicion
 
  Para implementar las extensiones en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principal y en otros equipos, siga estos pasos:
 
-1. Busque el archivo de instalación VSIX, en el Proyecto VSIX en bin\\*\\\*. vsix
+1. Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix
 
 2. Copie este archivo en el equipo de destino y, a continuación, en el explorador de Windows (o el explorador de archivos), haga doble clic en él.
 

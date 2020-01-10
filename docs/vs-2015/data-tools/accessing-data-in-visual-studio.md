@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299431"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846665"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acceso a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ En Visual Studio, puede crear aplicaciones que se conecten a datos en prácticam
 
 ||||
 |-|-|-|
-|SQL Database|DocumentDB|Almacenamiento (blobs, tablas, colas, archivos)|
+|Base de datos SQL|DocumentDB|Almacenamiento (blobs, tablas, colas, archivos)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
  Y mucho más...
@@ -70,7 +70,7 @@ En Visual Studio, puede crear aplicaciones que se conecten a datos en prácticam
  Muchos proveedores de bases de datos y terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o a través del administrador de paquetes NuGet en Visual Studio (**herramientas** > **Administrador de paquetes Nuget** > **administrar paquetes Nuget para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión.   Puede examinar estas ofertas en la galería de Visual Studio; para ello, vaya a **herramientas** > **extensiones y actualizaciones** y, a continuación, seleccione **en línea** en el panel izquierdo del cuadro de diálogo.  Para obtener más información, vea [instalar sistemas de base de datos, herramientas y ejemplos](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> El soporte extendido para SQL Server 2005 finalizó el 12 de abril de 2016.   No hay ninguna garantía de que las herramientas de datos de Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005 después de esta fecha. Para obtener más información, consulte el [anuncio de final de soporte técnico para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> El soporte extendido de SQL Server 2005 finalizó el 12 de abril de 2016.   No hay ninguna garantía de que las herramientas de datos de Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005 después de esta fecha. Para obtener más información, consulte el [anuncio de final de soporte técnico para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>Lenguajes .NET
  Todo el acceso a datos de .NET, incluido en .NET Core, se basa en ADO.NET, un conjunto de clases que define una interfaz para tener acceso a cualquier tipo de origen de datos, tanto relacionales como no relacionales. Visual Studio tiene varias herramientas y diseñadores que funcionan con ADO.NET para ayudarle a conectarse a bases de datos, manipular los datos y presentar los datos al usuario. En la documentación de esta sección se describe cómo usar esas herramientas. También puede programar directamente con los objetos de comando ADO.NET. Para obtener más información sobre cómo llamar a las API de ADO.NET directamente, vea [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) en MSDN Library.
@@ -112,7 +112,7 @@ En Visual Studio, puede crear aplicaciones que se conecten a datos en prácticam
 ### <a name="javascript"></a>JavaScript
  [JavaScript en Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) es un lenguaje de primera clase para compilar aplicaciones multiplataforma, aplicaciones para UWP, servicios en la nube, sitios web y aplicaciones Web. Puede usar Bower, impesado, Gulp, NPM y NuGet desde Visual Studio para instalar sus bibliotecas de JavaScript y productos de base de datos favoritos. Para conectarse a Azure Storage y a los servicios, descargue los SDK desde el [sitio web de Azure](https://azure.microsoft.com/).  Edge. js es una biblioteca que conecta JavaScript del lado servidor (node. js) con los orígenes de datos de ADO.NET.
 
-### <a name="python"></a>Python
+### <a name="python"></a>Plantillas de
  Instale [herramientas de Python para Visual Studio](http://microsoft.github.io/PTVS/) junto con su marco de Python favorito para crear aplicaciones de CPython o IronPython (.net).  El sitio web de Herramientas de Python para Visual Studio tiene varios tutoriales sobre la conexión a datos, como [Django y SQL Database en Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django y MySQL en Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) y [en biberón y MongoDB en Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
 ## <a name="in-this-section"></a>En esta sección
@@ -133,7 +133,7 @@ En Visual Studio, puede crear aplicaciones que se conecten a datos en prácticam
 
  [Entity Framework ADO.net](https://msdn.microsoft.com/data/ef) Describe cómo crear aplicaciones de datos que permiten a los programadores programar con un modelo conceptual en lugar de hacerlo directamente en una base de datos relacional.
 
- [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Describe cómo usar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] para implementar servicios de datos en Internet o en una intranet que implementa el [Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Describe cómo usar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] para implementar servicios de datos en Internet o en una intranet que implementa el [Open Data Protocol (OData)](https://www.odata.org/).
 
  [Datos en soluciones de Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Contiene vínculos a temas que explican cómo funcionan los datos en las soluciones de Office. Se incluye información sobre la programación orientada a esquema, el almacenamiento de datos en caché y el acceso a datos en el servidor.
 

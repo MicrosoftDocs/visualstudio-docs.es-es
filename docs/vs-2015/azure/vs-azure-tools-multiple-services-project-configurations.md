@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299023"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851371"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración del proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
@@ -37,7 +37,7 @@ Para obtener información acerca de los esquemas subyacentes para los archivos d
 
 Seleccione a qué archivo `ServiceConfiguration.*.cscfg` afectan los cambios. De forma predeterminada, están las variantes Local y Nube, y puede usar el comando **Administrar...** para copiar y eliminar archivos de configuración y cambiarles el nombre. Estos archivos se agregan a su proyecto de servicio en la nube y aparecen en el **Explorador de soluciones**. Sin embargo, el cambio de nombre o la eliminación de la configuración solo se puede realizar con este control.
 
-### <a name="instances"></a>Instancias
+### <a name="instances"></a>Instancias de
 
 Establezca la propiedad **Número de instancias** en el número de instancias que el servicio debe ejecutar para este rol
 
@@ -57,7 +57,7 @@ De manera predeterminada, la funcionalidad de diagnóstico está habilitada para
 
 ## <a name="settings-page"></a>Página Configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de sus valores de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](https://go.microsoft.com/fwlink?LinkID=171026), en particular, el método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de sus valores de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx), en particular, el método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 

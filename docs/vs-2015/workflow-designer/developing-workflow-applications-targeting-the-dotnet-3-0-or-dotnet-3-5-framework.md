@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300921"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843875"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Desarrollar aplicaciones de flujo de trabajo que tienen como destino .NET 3.0 o .NET 3.5 Framework
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] proporciona el [!INCLUDE[wfd1](../includes/wfd1-md.md)] para crear [!INCLUDE[wf](../includes/wf-md.md)] aplicaciones destinadas a la [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. El diseñador usa la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la creación gráfica y la depuración de aplicaciones de flujo de trabajo.
@@ -29,4 +29,4 @@ ms.locfileid: "74300921"
  [Depurar flujos de trabajo heredados](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Guía de programación de Windows Workflow Foundation](https://go.microsoft.com/fwlink?LinkID=65012)
+ [Guía de programación de Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)

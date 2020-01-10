@@ -12,17 +12,17 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302637"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851843"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
+el editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
 
  **Requisitos**
 
@@ -65,7 +65,7 @@ El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo d
 > Al seleccionar una acción de la interfaz de usuario ubicada en un método del panel **Acciones de IU** , el control correspondiente queda resaltado. También puede modificar la acción de la interfaz de usuario o las propiedades de los controles.
 
  *No veo* el editor de pruebas de IU codificadas.
-Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El editor de pruebas de IU codificadas también estaba disponible en el Feature Pack 2 de Visual Studio 2010 con una suscripción a MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
+Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El editor de pruebas de IU codificadas también estaba disponible en el Feature Pack 2 de Visual Studio 2010 con una suscripción a MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar las propiedades de las acciones de la interfaz de usuario y sus propiedades de control correspondientes
  Con el editor de pruebas de IU codificadas puede localizar y ver rápidamente todas las acciones de la interfaz de usuario en los métodos de prueba. Al seleccionar la acción de la interfaz de usuario en el editor, se resalta automáticamente el control correspondiente. Del mismo modo, si selecciona un control, se resaltan las acciones de la interfaz de usuario asociadas. Al seleccionar una acción de la interfaz de usuario o un control, es muy sencillo usar la ventana Propiedades para modificar las propiedades correspondientes.
@@ -194,7 +194,7 @@ Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El
  *¿Qué más debería saber?*
  **Notas**
 
-- ![Requisito previo](../test/media/prereq.png "Prereq") Si necesita asegurarse de que un control concreto está disponible antes de una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado a su método de prueba mediante el método UITestControl. WaitForControlXXX () adecuado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+- ![Requisito previo](../test/media/prereq.png "Prereq") Si necesita asegurarse de que un control concreto está disponible antes de una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado a su método de prueba mediante el método UITestControl. WaitForControlXXX () adecuado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Hacer que la prueba automatizada de IU espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
   **Sugerencias**
 
@@ -202,16 +202,16 @@ Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Guía
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Orientación
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Foro
- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Vea también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [crear una prueba de IU codificada controlada por datos](../test/creating-a-data-driven-coded-ui-test.md) [generar una prueba de IU codificada a partir de una grabación de acciones existente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Tutorial: crear, editar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

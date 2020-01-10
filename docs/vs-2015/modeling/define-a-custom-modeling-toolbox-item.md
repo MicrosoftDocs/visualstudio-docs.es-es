@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299287"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851519"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir un elemento personalizado en un cuadro de herramientas de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 > Si empieza a usar un archivo .tbxinfo después de experimentar con archivos de diagrama en solitario, es posible que el cuadro de herramientas contenga la versión anterior y la versión nueva de un cuadro de herramientas. Esto también puede producirse si el nombre del archivo de diagrama se escribió incorrectamente en el archivo .tbxinfo. Si esto ocurre, en el menú contextual del cuadro de herramientas, elija **restablecer cuadro de herramientas**. Los elementos de cuadro de herramientas personalizados desaparecerán. Reinicie Visual Studio y aparecerán los elementos personalizados correctos.
 
 ## <a name="Extension"></a>Cómo distribuir elementos del cuadro de herramientas en una extensión de Visual Studio
- Puede distribuir los elementos del cuadro de herramientas a otros usuarios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si los empaqueta en una extensión de Visual Studio (VSIX). Puede empaquetar comandos, perfiles y otras extensiones en el mismo archivo VSIX. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Puede distribuir los elementos del cuadro de herramientas a otros usuarios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si los empaqueta en una extensión de Visual Studio (VSIX). Puede empaquetar comandos, perfiles y otras extensiones en el mismo archivo VSIX. Para obtener más información, consulte [implementación de extensiones de Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  La manera habitual de compilar una extensión de Visual Studio es usar la plantilla de proyecto de VSIX. Para ello, debe tener instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -155,7 +155,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
      Defina un nuevo proyecto de extensión de Visual Studio.
 
-    1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
+    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
 
     2. En el cuadro de diálogo **nuevo proyecto** , en **plantillas instaladas**, elija **Visual C#** , **extensibilidad**, **Proyecto VSIX**.
 
@@ -170,7 +170,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
      **Copiar en el directorio de salida** = **copiar siempre**
 
-     **Contenido** de la **acción de compilación** = 
+     **Acción de compilación** = **Contenido**
 
      **Incluir en VSIX** = **true**
 
@@ -220,7 +220,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 
 3. Coloque cada ensamblado adicional en una carpeta cuyo nombre sea el código de referencia cultural del idioma. Por ejemplo, coloque una versión en francés del ensamblado dentro de una carpeta denominada **fr**.
 
-4. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, vea [método CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), que proporciona una lista completa de códigos de referencia cultural.
+4. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, vea [método CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que proporciona una lista completa de códigos de referencia cultural.
 
 5. Compile la extensión de Visual Studio y distribúyala.
 

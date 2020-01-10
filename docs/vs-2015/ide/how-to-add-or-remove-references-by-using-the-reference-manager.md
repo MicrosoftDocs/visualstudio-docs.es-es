@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300158"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852087"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento para agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 - Examinar, con el subgrupo Recientes.
 
 ## <a name="assemblies-tab"></a>Pestaña Ensamblados
- En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](https://go.microsoft.com/fwlink/?LinkId=238512).
+ En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Al agregar manualmente una referencia a cualquiera de los espacios de nombres EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a o EnvDTE100), establezca la propiedad Incrustar tipos de interoperabilidad de la referencia en False en la ventana Propiedades. Si establece esta propiedad en True, se pueden producir problemas de compilación debido a ciertas propiedades EnvDTE que no se pueden insertar.
 
@@ -141,7 +141,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ## <a name="solution-tab"></a>Pestaña Solución
  La pestaña Solución muestra todos los proyectos compatibles de la solución actual, en la subpestaña Proyectos.
 
- Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para más información, vea [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Un proyecto que tenga como destino [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] es incompatible con un proyecto que tenga como destino [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].
 
@@ -188,7 +188,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ## <a name="browse-button"></a>Botón Examinar
  Puede usar el botón **Examinar** para buscar un componente en el sistema de archivos.
 
- Un proyecto puede hacer referencia a un componente con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear una aplicación que tuviera como destino .NET Framework 4 Client Profile 4, que hiciera referencia a un componente que tuviera como destino .NET Framework 2. Para más información, vea [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un proyecto puede hacer referencia a un componente con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear una aplicación que tuviera como destino .NET Framework 4 Client Profile 4, que hiciera referencia a un componente que tuviera como destino .NET Framework 2. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo **Administrador de referencias** para crear referencias entre proyectos. Esta táctica facilita el trabajo de desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 

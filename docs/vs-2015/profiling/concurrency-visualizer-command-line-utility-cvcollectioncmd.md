@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300652"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850266"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
   
  **CvCollectionCmd /?**  
   
-|Opción|Descripción|Parámetros|Valores devueltos|  
+|Opción|Descripción|Parameters|Valores devueltos|  
 |------------|-----------------|----------------|-------------------|  
 |Consulta|Devuelve si la recolección se puede iniciar.|Ninguno|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
 |Inicie|Ejecuta el proceso especificado en el Visualizador de simultaneidad.|Ruta de acceso del archivo ejecutable.|0 si la ejecución se realizó correctamente.<br /><br /> 1 si se produjo un error en la ejecución porque no se pudo iniciar la aplicación de destino.<br /><br /> 13 si se produjo un error en la ejecución porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
-|Attach|Comienza a recopilar un seguimiento de todo el sistema; de lo contrario, se asocia a un proceso si se ha especificado uno.|Ninguno.|0 si la asociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la asociación porque el proceso especificado no era válido o era ambiguo.<br /><br /> 13 si se produjo un error en la asociación porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
-|Desasociar|Detiene la recolección.|Ninguno.|0 si la desasociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la desasociación porque la recolección no estaba actualmente en curso.<br /><br /> 2 si se produjo un error en la desasociación porque no se pudo detener la recolección.|  
+|Attach|Comienza a recopilar un seguimiento de todo el sistema; de lo contrario, se asocia a un proceso si se ha especificado uno.|Ninguna.|0 si la asociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la asociación porque el proceso especificado no era válido o era ambiguo.<br /><br /> 13 si se produjo un error en la asociación porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
+|Desasociar|Detiene la recolección.|Ninguna.|0 si la desasociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la desasociación porque la recolección no estaba actualmente en curso.<br /><br /> 2 si se produjo un error en la desasociación porque no se pudo detener la recolección.|  
 |Analizar|Analiza el seguimiento especificado.|Ruta de acceso completa del archivo CVTrace.|0 si el análisis se realizó correctamente.<br /><br /> 1 si el análisis no puede comenzar porque el seguimiento especificado abarca todo el sistema, pero no se especificó ningún proceso de destino.<br /><br /> 2 si el análisis no puede comenzar porque el seguimiento no abarcaba todo el sistema y se especificó un proceso.<br /><br /> 3 si se produjo un error en el análisis porque el proceso especificado no es válido.<br /><br /> 4 si se produjo un error en el análisis porque el archivo CVTrace especificado no es válido.|  
-|LaunchArgs|Especifica los argumentos del archivo ejecutable de destino. Esta opción es aplicable solo al comando Launch.|Argumentos de la línea de comandos para la aplicación.|Ninguno.|  
-|Outdir|Especifica el directorio en el que se guardarán los archivos de seguimiento. Se aplica a los comandos Launch y Attach.|Ruta de acceso del directorio o relativa.|Ninguno.|  
-|Proceso|Especifica el proceso al que asociar cuando se ejecuta el comando Attach o el proceso en un seguimiento que analizar cuando se ejecuta el comando Analyze. Se aplica a los comandos Attach y Analyze.|PID o nombre del proceso.|Ninguno.|  
-|Configuración|Especifica la ruta de acceso del archivo de configuración si quiere que la configuración de la recolección sea distinta de la predeterminada.   Se aplica a los comandos Launch, Attach y Analyze.|Ruta de acceso del directorio o relativa del archivo de configuración XML.|Ninguno.|  
+|LaunchArgs|Especifica los argumentos del archivo ejecutable de destino. Esta opción es aplicable solo al comando Launch.|Argumentos de la línea de comandos para la aplicación.|Ninguna.|  
+|Outdir|Especifica el directorio en el que se guardarán los archivos de seguimiento. Se aplica a los comandos Launch y Attach.|Ruta de acceso del directorio o relativa.|Ninguna.|  
+|Process|Especifica el proceso al que asociar cuando se ejecuta el comando Attach o el proceso en un seguimiento que analizar cuando se ejecuta el comando Analyze. Se aplica a los comandos Attach y Analyze.|PID o nombre del proceso.|Ninguna.|  
+|Configuración|Especifica la ruta de acceso del archivo de configuración si quiere que la configuración de la recolección sea distinta de la predeterminada.   Se aplica a los comandos Launch, Attach y Analyze.|Ruta de acceso del directorio o relativa del archivo de configuración XML.|Ninguna.|  
   
 ## <a name="customizing-configuration-settings"></a>Personalización de las opciones de configuración  
  Si utiliza CVCollectionCmd para recopilar seguimientos y desea personalizar las opciones de configuración, use un archivo de configuración para especificarlos.  
@@ -71,12 +71,12 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 |MinorVersion|Especifica la versión secundaria del archivo de configuración.|Debe ser 0 para los proyectos de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Si no es 0, la utilidad no funcionará.|  
 |IncludeEnvSymbolPath|Establece un valor que determina si se usa la ruta de acceso de símbolo de entorno (_NT_SYMBOL_PATH).|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Establece un valor que determina si se eliminan los archivos ETL cuando se completa el análisis.|-   True<br />-   False|  
-|SymbolPath|Especifica la ruta de acceso del servidor de símbolos. Para más información, vea [Utilizar el servidor de símbolos de Microsoft para obtener archivos de símbolos de depuración](https://go.microsoft.com/fwlink/?LinkID=149389).|Nombre de directorio o dirección URL.|  
-|Markers|Contiene la lista de proveedores de marcadores.|Puede contener cero o más elementos MarkerProvider.|  
+|SymbolPath|Especifica la ruta de acceso del servidor de símbolos. Para más información, vea [Utilizar el servidor de símbolos de Microsoft para obtener archivos de símbolos de depuración](https://support.microsoft.com/kb/311503).|Nombre de directorio o dirección URL.|  
+|Marcadores|Contiene la lista de proveedores de marcadores.|Puede contener cero o más elementos MarkerProvider.|  
 |MarkerProvider|Especifica un proveedor de marcadores único.|Debe contener estos elementos:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Puede contener estos elementos:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Level|Establece el nivel de importancia de un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
 |GUID|Identificador único global del proveedor de marcadores ETW.|Un GUID.|  
-|Name|Especifica la descripción del proveedor de marcadores.|una cadena.|  
+|Name|Especifica la descripción del proveedor de marcadores.|Una cadena.|  
 |Categorías|Especifica las categorías recopiladas por el proveedor de marcadores.|Cadena delimitada por comas de números o intervalos de números.|  
 |IsEnabled|Establece un valor que determina si el proveedor de marcadores está habilitado para la recolección.|-   True<br />-   False|  
 |FilterConfig|Especifica la lista de opciones de configuración de los eventos ETW que se filtran de la recolección.|Puede contener estos elementos:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  
