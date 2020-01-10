@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666309"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596247"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Cuadro de diálogo Opciones: Editor de texto\> C# \> Estilo de código \> Formato
 
@@ -40,7 +40,7 @@ Para acceder a esta página de opciones, seleccione **Herramientas** > **Opcione
 
 Esta configuración afecta al *momento* en que el editor de código aplica las opciones de formato al código.
 
-|Etiqueta|DESCRIPCIÓN|
+|Etiqueta|Descripción|
 |-----------|-----------------|
 |**Dar formato automáticamente al escribir**|Si está desactivada, las opciones **Dar formato automáticamente a la instrucción al introducir ;** y **Dar formato automáticamente al bloque al introducir }** están desactivadas.|
 |**Dar formato automáticamente a la instrucción al introducir ;**|Si está activada, da formato a las instrucciones a su finalización según las opciones de formato seleccionadas para el editor.|
@@ -60,7 +60,7 @@ Si anteriormente aplicó configuración de estilo de código para archivos de C#
 
 Estos valores configuran el comando **Dar formato al documento** para realizar la limpieza de código adicional en un archivo. Para más información sobre cómo se aplican estas opciones, vea [Dar formato al documento](../code-styles-and-code-cleanup.md#apply-code-styles).
 
-|Etiqueta|DESCRIPCIÓN|EditorConfig correspondiente y Herramientas > Reglas de opciones|
+|Etiqueta|Descripción|EditorConfig correspondiente y Herramientas > Reglas de opciones|
 |-----------|-----------------|-----------------|-----------------|
 |**Aplicar todas las reglas de formato de C# (sangría, ajuste, espaciado)**|El comando **Dar formato al documento** siempre corrige problemas de formato. No se puede cambiar esta opción.| [Opciones de EditorConfig Core](../../ide/create-portable-custom-editor-options.md)<br/>[Opciones de formato de .NET EditorConfig](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#**  > **Formato** > [**Sangría** o **Nuevas líneas** o **Espaciado** o **Ajuste de texto**]|
 |**Realizar limpieza de código adicional durante la aplicación de formato**|Cuando se selecciona, se aplican revisiones para las reglas especificadas a continuación en el comando **Edit.FormatDocument**.| N/D |

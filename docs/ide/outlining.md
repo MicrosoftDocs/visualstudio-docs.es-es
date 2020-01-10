@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748867"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585761"
 ---
 # <a name="outlining"></a>esquematizar
 

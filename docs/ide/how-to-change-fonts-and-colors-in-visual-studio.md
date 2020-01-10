@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4527592b5638b171aa39f88e254bd8adf5c73b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 592b8bb11fa5ea9cf18cfbd5f28aad4c487bedee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588881"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento para cambiar fuentes y colores en Visual Studio
 
@@ -27,7 +27,7 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Cambiar el tema de color del IDE
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 1. En la lista de opciones, elija **Entorno** > **General**.
 
@@ -52,7 +52,7 @@ Puede cambiar la fuente y el tamaño del texto de todas las ventanas y cuadros d
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Para cambiar el tamaño y la fuente del texto del IDE
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 1. En la lista de opciones, elija **Entorno** > **Fuentes y colores**.
 

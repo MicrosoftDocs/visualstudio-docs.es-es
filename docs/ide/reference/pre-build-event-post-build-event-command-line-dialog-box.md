@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461319"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567923"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 
@@ -55,7 +55,7 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
 Contiene los eventos que se van a ejecutar, ya sean anteriores o posteriores a la compilación.
 
 > [!NOTE]
-> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Macros**
 
@@ -73,7 +73,7 @@ Inserta en el cuadro de edición de la línea de comandos la macro seleccionada 
 
 Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.
 
-|Macro|DESCRIPCIÓN|
+|Macro|Descripción|
 |-----------|-----------------|
 |`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|
 |`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|
@@ -99,5 +99,5 @@ Puede usar cualquiera de estas macros para especificar las ubicaciones de los ar
 
 - [Especificar eventos de compilación personalizados en Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Uso de Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Uso de Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622117"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596403"
 ---
 # <a name="visual-studio-commands"></a>comandos de Visual Studio
 
@@ -43,7 +43,7 @@ El símbolo de intercalación funciona igual tanto si está dentro como fuera de
 
 Los siguientes comandos toman argumentos o modificadores:
 
-| Nombre de comando | DESCRIPCIÓN |
+| Nombre de comando | Descripción |
 | - | - |
 | [Agregar elemento existente](../../ide/reference/add-existing-item-command.md) | Agrega un archivo existente a la solución actual y lo abre. |
 | [Agregar proyecto existente](../../ide/reference/add-existing-project-command.md) | Agrega un proyecto existente a la solución actual. |

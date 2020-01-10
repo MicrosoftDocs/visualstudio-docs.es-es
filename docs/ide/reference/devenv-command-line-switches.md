@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661645"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595714"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -62,7 +62,7 @@ Las reglas de sintaxis de los modificadores de `devenv` son similares a las de o
 
 Los siguientes modificadores de línea de comandos muestran el IDE y realizan la tarea descrita.
 
-|Modificador de la línea de comandos|DESCRIPCIÓN|
+|Modificador de la línea de comandos|Descripción|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carga un archivo ejecutable de C++ bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de Visual Basic o C#. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -79,7 +79,7 @@ Los siguientes modificadores de línea de comandos muestran el IDE y realizan la
 
 Los siguientes modificadores de línea de comandos no muestran el IDE.
 
-|Modificador de la línea de comandos|DESCRIPCIÓN|
+|Modificador de la línea de comandos|Descripción|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Muestra la ayuda para los modificadores de `devenv` en la **ventana del símbolo del sistema**.<br /><br /> Este modificador no toma ningún argumento.|
 |[/Build](build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> `devenv mysln.sln /build`|
