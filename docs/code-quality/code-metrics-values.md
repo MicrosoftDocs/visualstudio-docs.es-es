@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ece5c08ca3aa4a9f5e5329dbf6d5fd6c9087d085
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587710"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886414"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -36,10 +36,19 @@ En la lista siguiente se muestra el código de los resultados de las métricas q
 
 - **Acoplamiento de clases** -mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos. Para obtener más información, consulte la entrada de blog de [acoplamiento de clases](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
 
+::: moniker range=">=vs-2019"
+
+- **Líneas de código fuente** : indica el número exacto de líneas de código fuente que se encuentran en el archivo de código fuente, incluidas las líneas en blanco. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. métricas (2.9.5).
+
+- **Líneas de código ejecutable** : indica el número aproximado de operaciones o líneas de código ejecutable. Se trata de un recuento del número de operaciones en el código ejecutable. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. métricas (2.9.5). Normalmente, el valor es una coincidencia aproximada con la métrica anterior, **líneas de código**, que es la métrica basada en instrucciones de MSIL utilizada en el modo heredado.
+::: moniker-end
+::: moniker range="vs-2017"
+
 - **Líneas de código** -indica el número aproximado de líneas del código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un recuento alto puede indicar que un tipo o un método está intentando realizar demasiado trabajo y debe dividirse. También podría indicar que el tipo o método podría ser difícil de mantener.
 
    > [!NOTE]
    > El [versión de línea de comandos](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) del código herramienta métricas recuentos reales líneas de código ya que analiza el código fuente en lugar de IL.
+::: moniker-end
 
 ## <a name="anonymous-methods"></a>Métodos anónimos
 
