@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297779"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851662"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  **Puntero** ![ASP.net del diseñador móvil la](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
- Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, consulte [Cómo: Administrar la ventana Cuadro de herramientas](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular fichas del cuadro de herramientas](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+ Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, vea [Cómo: Administrar la ventana Cuadro de herramientas](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) y [Cómo: Manipular las fichas del cuadro de herramientas](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
  **Entrada (botón)** ![botón Página Web html](../../ide/reference/media/vxbutton.gif "|::ref2::|")
 
@@ -52,7 +52,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Para obtener más información, consulte [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (Asignación de contenido a los controles del servidor web de botón), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> y <xref:System.Web.UI.WebControls.Button>.
+ Para obtener más información, consulte [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Procedimiento Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf) (Mapa de contenido de controles de servidor web de botón), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> y <xref:System.Web.UI.WebControls.Button>.
 
  Captura de pantalla de **entrada (restablecer)** ![HTMLpageResetButton](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 <input id="Password1" type="password" name="Password1">
 ```
 
- Para obtener más información, consulte [Controles de entrada HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxis declarativa del control de servidor HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Cómo: Establecer un control TextBox de servidor Web para escribir contraseñas](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) y [Tutorial: Validar los datos introducidos por el usuario en una página de formularios Web Forms](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Para obtener más información, consulte [HTML Input Controls](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [How to: Set a TextBox Web Server Control for Password Entry](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) (Procedimiento para establecer un control de servidor web TextBox para la escritura de contraseñas), y [Walkthrough: Validating User Input in a Web Forms Page](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436) (Tutorial: Validación de la entrada del usuario en una página de Web Forms).
 
 > [!IMPORTANT]
-> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Entrada (casilla)** ![opción de casilla cuadro de herramientas de página web html](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -186,7 +186,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table, TableRow, and TableCell Web Server Control Overview](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a) (Información general sobre los controles de servidor web Table, TableRow y TableCell), <xref:System.Web.UI.HtmlControls.HtmlTable> y <xref:System.Web.UI.WebControls.Table>.
 
- **** ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de imagen
+ ![Elemento de imagen de página html](../../ide/reference/media/vximage.gif "|::ref13::|") de **imagen**
 
  Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.
 
@@ -210,7 +210,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para crear un elemento `select` multilínea, aumente el valor de la propiedad Size.
 
- Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (Información general de control de servidor web DropDownList), [ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (Información general de control de servidor web ListBox), <xref:System.Web.UI.HtmlControls.HtmlSelect> y <xref:System.Web.UI.WebControls.DropDownList>.
+ Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Procedimiento Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d) (Creación de scripts y edición de controladores de eventos), [DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608) (Información general sobre el control de servidor web DropDownList), [ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97) (Información general sobre el control de servidor web ListBox), <xref:System.Web.UI.HtmlControls.HtmlSelect> y <xref:System.Web.UI.WebControls.DropDownList>.
 
  ![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "|::ref15::|") de **regla horizontal**
 
@@ -224,7 +224,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [Control de regla horizontal HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de div
+ ![Etiqueta de página html](../../ide/reference/media/vxlabel.gif "|::ref16::|") de **div**
 
  Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.
 
@@ -236,5 +236,5 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 
  Para obtener más información, consulte [HTML Div Control](https://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995) (Control de división HTML), [Label Web Server Control Overview](https://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) (Información general del control de servidor web Label) y <xref:System.Web.UI.WebControls.Label>.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Cuadro de herramientas](../../ide/reference/toolbox.md) [estándar (pestaña),](https://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870) [controles HTML](https://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be) del cuadro de herramientas
