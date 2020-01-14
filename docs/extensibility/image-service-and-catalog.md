@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848919"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917620"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Este manual contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes introducidos en Visual Studio 2015.
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Actualice el código para usar el servicio de imágenes para solicitar monikers a través de la asignación actualizada. (Esto podría significar actualizar a **CrispImages** para código administrado o solicitar HBITMAPs o HICONs desde el servicio de imágenes y pasarlos para código nativo).
 
 ## <a name="testing-your-images"></a>Prueba de las imágenes
- Puede usar la herramienta Visor de la biblioteca de imágenes para probar los manifiestos de imagen con el fin de asegurarse de que todo se ha creado correctamente. Puede encontrar la herramienta en el [SDK de Visual Studio 2015](visual-studio-sdk.md). La documentación de esta herramienta y otras se pueden encontrar [aquí](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).
+ Puede usar la herramienta Visor de la biblioteca de imágenes para probar los manifiestos de imagen con el fin de asegurarse de que todo se ha creado correctamente. Puede encontrar la herramienta en el [SDK de Visual Studio 2015](visual-studio-sdk.md). La documentación de esta herramienta y otras se pueden encontrar [aquí](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

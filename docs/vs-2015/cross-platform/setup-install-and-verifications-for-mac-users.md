@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 5a3a05e50cfa17432bb2f31274c9b62c6b843687
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538938"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917960"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configuración, instalación y comprobaciones para usuarios de Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
 2. Descargue e instale Xcode desde [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).  
   
-3. Descargue e instale Xamarin siguiendo las instrucciones de [Installing and Configuring Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (Instalación y configuración de Xamarin.iOS) en xamarin.com.  
+3. Descargue e instale Xamarin siguiendo las instrucciones de [Installing and Configuring Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (Instalación y configuración de Xamarin.iOS) en xamarin.com.  
   
 4. Cuando complete la instalación de Xamarin en los equipos Windows y Mac, siga las instrucciones de [Connecting to the Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (Conexión al Mac con XMA) en xamarin.com para poder trabajar con iOS y Mac desde Visual Studio en el equipo Windows.  
   
@@ -112,7 +112,7 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
   
    - Si se muestra un error similar a "El SDK de Android instalado es demasiado antiguo", haga clic en **Abrir el SDK de Android** en ese mensaje y seleccione la versión del SDK más reciente disponible. Tenga en cuenta que debe estar ejecutando Visual Studio como administrador para actualizar el SDK.  
   
-3. Compruebe que puede conectarse desde Visual Studio al emulador que está instalado en el Mac.  El resultado de esto es que verá el reproductor de Xamarin en la lista de los emuladores que seleccione en Visual Studio para la depuración.  To do this, follow the instructions on [Connecting Visual Studio to the Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Conexión de Visual Studio a Xamarin Android Player) en xamarin.com.  
+3. Compruebe que puede conectarse desde Visual Studio al emulador que está instalado en el Mac.  El resultado de esto es que verá el reproductor de Xamarin en la lista de los emuladores que seleccione en Visual Studio para la depuración.  To do this, follow the instructions on [Connecting Visual Studio to the Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Conexión de Visual Studio a Xamarin Android Player) en xamarin.com.  
   
    **iOS**  
   

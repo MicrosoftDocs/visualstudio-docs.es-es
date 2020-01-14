@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c227748e1808aecabd9554b0e6b398a7c6c6df1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986192"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918783"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Ensamblados en el Visual Studio Tools para Office Runtime
   Al crear un proyecto de Office, Visual Studio agrega automáticamente las referencias a los ensamblados [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] correspondientes al tipo de proyecto y la versión de .NET Framework de destino del proyecto. Hay ensamblados distintos en las extensiones de Office para .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], y [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener más información acerca de las extensiones de Office, vea [información general de Visual Studio Tools para Office Runtime](visual-studio-tools-for-office-runtime-overview.md).
@@ -55,7 +55,7 @@ ms.locfileid: "72986192"
 |Microsoft.Office.Tools.Excel.v9.0.dll|Proporciona elementos host y controles host para las soluciones de Excel. Para obtener más información, vea [automatizar Excel con objetos extendidos](automating-excel-by-using-extended-objects.md).|
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Proporciona clases que puede usar para crear áreas de formulario personalizadas en complementos de VSTO de Outlook.|
 |Microsoft.Office.Tools.Word.v9.0.dll|Proporciona elementos host y controles host para las soluciones de Word. Para obtener más información, vea [automatizar Word con objetos extendidos](automating-word-by-using-extended-objects.md).|
-|Microsoft.Office.Tools.v9.0.dll|Proporciona los tipos siguientes.<br /><br /> -La clase [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) , que proporciona las funciones de enlace de datos para los controles host en las personalizaciones de nivel de documento.<br />-Otros tipos que forman parte de la Visual Studio Tools para la infraestructura de tiempo de ejecución de Office y no están diseñados para usarse directamente desde el código.|
+|Microsoft.Office.Tools.v9.0.dll|Proporciona los tipos siguientes.<br /><br /> -La clase [RemoteBindableComponent](/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) , que proporciona las funciones de enlace de datos para los controles host en las personalizaciones de nivel de documento.<br />-Otros tipos que forman parte de la Visual Studio Tools para la infraestructura de tiempo de ejecución de Office y no están diseñados para usarse directamente desde el código.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Proporciona los tipos siguientes.<br /><br /> -El <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atributo y <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> interfaz, que puede usar para almacenar en memoria caché los objetos de datos en una personalización de nivel de documento. Para obtener más información, vea [almacenar datos en caché](caching-data.md).<br />: Excepciones que puede producir el Visual Studio Tools para Office Runtime.<br />-Otros tipos que forman parte de la Visual Studio Tools para la infraestructura de tiempo de ejecución de Office y no están diseñados para usarse directamente desde el código.|
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Proporciona la interfaz <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction>, que puede implementar para ejecutar pasos de instalación adicionales como último paso del instalador de ClickOnce para una solución de Office. Para obtener más información, vea [implementación avanzada de soluciones de Office](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Proporciona los tipos siguientes.<br /><br /> -La clase <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>, que se puede usar para adjuntar mediante programación los ensamblados de personalización a los documentos y para tener acceso a los datos almacenados en caché en documentos. Para obtener más información, vea [administrar documentos en un servidor mediante la clase ServerDocument](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Varias clases que representan la jerarquía de los datos almacenados en caché en una personalización de nivel de documento. Para obtener más información, vea [obtener acceso a los datos de documentos en el servidor](accessing-data-in-documents-on-the-server.md).|

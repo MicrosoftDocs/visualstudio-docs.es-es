@@ -15,17 +15,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669194"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919231"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [CA1709: los identificadores deben tener mayúsculas y minúsculas correctamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
+Para obtener la documentación más reciente sobre Visual Studio, vea [CA1709: los identificadores deben tener mayúsculas y minúsculas correctamente](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
 |||
 |-|-|

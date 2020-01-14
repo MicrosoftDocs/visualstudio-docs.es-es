@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911756"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915951"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicación de un servicio en la nube con Visual Studio
 
@@ -31,13 +31,13 @@ Use los siguientes procedimientos para publicar su aplicación de Azure y para a
 
 Cuando publica su aplicación de Azure, puede realizar una de las siguientes tareas:
 
-- Crear un paquete de servicio: puede usar este paquete y el archivo de configuración de servicio para publicar la aplicación en un entorno de implementación desde el [Azure portal](https://portal.azure.com).
+- Crear un paquete de servicio: puede usar este paquete y el archivo de configuración de servicio para publicar su aplicación en un entorno de implementación desde [Azure Portal](https://portal.azure.com).
 
-- Publicar su proyecto de Azure desde Visual Studio: para publicar la aplicación directamente en Azure, use el Asistente para publicación. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
+- Publicar el proyecto de Azure de Visual Studio: para publicar la aplicación directamente a Azure, use el Asistente para publicación. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Para crear un paquete de servicios de Visual Studio
 
-1. Cuando esté preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
+1. Cuando está preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
 
 1. Para crear solo un paquete de servicios, siga estos pasos:
 
@@ -67,13 +67,13 @@ Si la infraestructura back-end de su aplicación es estable, pero los roles web 
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisitos para utilizar Web Deploy
 
-- **Solo con fines de desarrollo y prueba**: los cambios se realizan directamente en la máquina virtual en la que se está ejecutando el rol Web. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
+- **Solo con fines de desarrollo y prueba**: los cambios se realizan directamente en la máquina virtual en la que el rol web se está ejecutando. Si esta máquina virtual tiene que ser reciclada, se pierden los cambios porque el paquete original que publicó se usa para volver a crear la máquina virtual del rol. Vuelva a publicar la aplicación para obtener los últimos cambios del rol web.
 
 - **Solo se pueden actualizar los roles web**: los roles de trabajo no se pueden actualizar. Además, no puede actualizar `RoleEntryPoint` en `web role.cs`.
 
-- **Solo puede admitir una única instancia de un rol Web**: no puede tener varias instancias de ningún rol Web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
+- **Solo puede admitir una instancia de un rol web**: no puede tener varias instancias de ningún rol web en su entorno de implementación. Sin embargo, se admiten varios roles web cada uno con solo una instancia.
 
-- **Habilitar conexiones de escritorio remoto**: este requisito permite a web deploy usar el usuario y la contraseña para conectarse a la máquina virtual con el fin de implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
+- **Habilite las conexiones de Escritorio remoto**: este requisito permite que Web Deploy utilice el usuario y la contraseña para conectar con la máquina virtual e implementar los cambios en el servidor que ejecuta Internet Information Services (IIS). Además, podría necesitar conectar a la máquina virtual para agregar un certificado de confianza a IIS en esta máquina virtual. (Este certificado asegura que la conexión remota de IIS que usa Web Deploy sea segura).
 
 En el siguiente procedimiento se supone que usa el asistente **Publicar aplicación de Azure** .
 
@@ -120,7 +120,7 @@ En el siguiente procedimiento se supone que usa el asistente **Publicar aplicaci
 
    a. Para conectarse a la máquina virtual que está ejecutando el rol web, seleccione la instancia del rol web en **Cloud Explorer** o en el **Explorador de servidores** y después elija **Conectar utilizando Escritorio remoto**. Para obtener pasos detallados sobre cómo conectarse a la máquina virtual, consulte [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). El explorador le pedirá que descargue un archivo `.rdp`.
 
-   b. Para agregar un certificado SSL, abra el servicio de administración en el Administrador de IIS. En el Administrador de IIS, habilite SSL abriendo el vínculo **Enlaces** en el panel **Acción**. Aparecerá el cuadro de diálogo **Agregar enlace de sitio** . Elija **Agregar** y, después, seleccione HTTPS en la lista desplegable **Tipo**. En la lista de **certificados SSL**, elija el certificado SSL que obtuvo, firmado por una entidad de certificación y que cargó en Azure Portal. Para obtener más información, consulte [Configurar los valores de conexión para el servicio de administración](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Para agregar un certificado SSL, abra el servicio de administración en el Administrador de IIS. En el Administrador de IIS, habilite SSL abriendo el vínculo **Enlaces** en el panel **Acción**. Aparecerá el cuadro de diálogo **Agregar enlace de sitio** . Elija **Agregar** y, después, seleccione HTTPS en la lista desplegable **Tipo**. En la lista de **certificados SSL**, elija el certificado SSL que obtuvo, firmado por una entidad de certificación y que cargó en Azure Portal. Para obtener más información, consulte [Configurar los valores de conexión para el servicio de administración](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Si agrega un certificado SSL de confianza, el triángulo de advertencia amarillo ya no aparece en el **Asistente para publicación**.
@@ -145,7 +145,7 @@ Puede que deba incluir archivos específicos en su paquete de servicio para que 
 
     La referencia se agrega a la lista en la carpeta **Referencias** .
 
-1. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana Propiedades.
+1. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Aparece la ventana Propiedades.
 
 1. Para incluir este ensamblado en el paquete del servicio en la lista **Copia local**, elija **True**.
 

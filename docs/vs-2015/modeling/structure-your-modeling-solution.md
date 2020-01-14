@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850803"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917314"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -34,7 +34,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 #### <a name="to-divide-an-application-into-layers"></a>Para dividir una aplicación en capas
 
-1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
+1. Base la estructura de las soluciones en la estructura de la aplicación, como la aplicación web, aplicación de servicio o aplicación de escritorio. En la guía de arquitectura de aplicaciones de Microsoft se describe una variedad de arquitecturas comunes en [la aplicación arquetipos](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Cree una solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a la que llamaremos solución de arquitectura. Esta solución se usará para crear el diseño general del sistema. Contendrá modelos, pero ningún código.
 

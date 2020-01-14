@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296789"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917785"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 
  ![Cuadro de diálogo de autenticación de cambio para ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Para obtener más información sobre los diferentes tipos de autenticación en ASP.NET, consulte [Creating ASP.NET Web Projects in Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (la información sobre autenticación sigue siendo pertinente para Visual Studio 2015).
+ Para obtener más información sobre los diferentes tipos de autenticación en ASP.NET, consulte [Creating ASP.NET Web Projects in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (la información sobre autenticación sigue siendo pertinente para Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Obtener acceso a la cuenta de Visual Studio Team Services
  En el menú principal, seleccione **Equipo > Conectar con Team Foundation Server** para mostrar la ventana **Team Explorer**. Haga clic en **Seleccionar proyectos de equipo**y luego, en el cuadro de lista, en **Seleccionar Team Foundation Server**, debería ver la dirección URL de su cuenta de Visual Studio Team Services. Cuando seleccione la dirección URL, se iniciará sesión sin tener que volver a escribir las credenciales.

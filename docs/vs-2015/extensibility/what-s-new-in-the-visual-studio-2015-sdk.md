@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299682"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917329"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novedades&#39;de Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A partir de Visual Studio 2017, ya no se realizará el análisis de las plantill
  A partir del SDK de Visual Studio 2015, tiene distintas opciones para crear extensiones, dependiendo del lenguaje de programación que esté usando.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# y Visual Basic
- Para C# y Visual Basic, hay una gama completa de plantillas de elementos de proyecto que le permiten crear VSPackages, comandos de menú, ventanas de herramientas, clasificadores de editor, elementos gráficos del editor y extensiones de margen del editor. Puede agregar cualquiera de ellos al Proyecto VSIX estándar. Para obtener más información, consulte:
+ Para C# y Visual Basic, hay una gama completa de plantillas de elementos de proyecto que le permiten crear VSPackages, comandos de menú, ventanas de herramientas, clasificadores de editor, elementos gráficos del editor y extensiones de margen del editor. Puede agregar cualquiera de ellos al Proyecto VSIX estándar. Para obtener más información, vea:
 
 - [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ A partir de Visual Studio 2017, ya no se realizará el análisis de las plantill
  En C++, el Asistente para VSPackage admite comandos de menú, ventanas de herramientas y editores personalizados. Búsquelo en el cuadro de diálogo **nuevo proyecto** en **Visual C++ /Extensibility**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK referencia a ensamblados a través de NuGet
- Para aumentar la portabilidad y el uso compartido de proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia del SDK de VS.  Están disponibles en [Nuget.org](https://www.nuget.org/) publicados por [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) y se pueden agregar fácilmente a su proyecto o solución a través del cuadro de diálogo referencias de Visual Studio **/administrar paquetes Nuget** . Puede Agregar referencias individuales a ensamblados de extensibilidad específicos o agregar a la vez todos los ensamblados de referencias del SDK de VS mediante el [metapaquete](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)del SDK de vs. Para más información sobre NuGet, consulte [información general de Nuget](https://docs.microsoft.com/nuget/) y [Administración de paquetes NuGet mediante el cuadro de diálogo](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+ Para aumentar la portabilidad y el uso compartido de proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia del SDK de VS.  Están disponibles en [Nuget.org](https://www.nuget.org/) publicados por [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) y se pueden agregar fácilmente a su proyecto o solución a través del cuadro de diálogo referencias de Visual Studio **/administrar paquetes Nuget** . Puede Agregar referencias individuales a ensamblados de extensibilidad específicos o agregar a la vez todos los ensamblados de referencias del SDK de VS mediante el [metapaquete](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)del SDK de vs. Para más información sobre NuGet, consulte [información general de Nuget](/nuget/) y [Administración de paquetes NuGet mediante el cuadro de diálogo](/nuget/consume-packages/install-use-packages-visual-studio).
 
  Cuando se usan las versiones de NuGet de los ensamblados de referencia del SDK de VS, no es necesario que otro usuario instale el SDK de VS para abrir y compilar el proyecto.  Los ensamblados de referencia de NuGet y las herramientas de compilación del SDK de VS se instalarán automáticamente en su equipo para ese proyecto.
 

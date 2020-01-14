@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297719"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917045"
 ---
 # <a name="setup-and-install"></a>Configuración e instalación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,8 +97,8 @@ Si tiene problemas con Xamarin después de realizar esta configuración e instal
   
 2. Descargue e instale Xcode desde [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) y agregue el ID de Apple tal y como se describe en [Adding Your Account to XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Agregar su cuenta a XCode) en apple.com.  
   
-3. Descargue e instale Xamarin siguiendo las instrucciones de [Installing and Configuring Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (Instalación y configuración de Xamarin.iOS) en xamarin.com.  
+3. Descargue e instale Xamarin siguiendo las instrucciones de [Installing and Configuring Xamarin.iOS](/xamarin/ios/get-started/installation/mac) (Instalación y configuración de Xamarin.iOS) en xamarin.com.  
   
-4. Cuando complete la instalación de Xamarin en los equipos Windows y Mac, siga las instrucciones de [Connecting to the Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Conexión al Mac) en xamarin.com para poder trabajar con iOS y Mac desde Visual Studio en el equipo Windows.  
+4. Cuando complete la instalación de Xamarin en los equipos Windows y Mac, siga las instrucciones de [Connecting to the Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Conexión al Mac) en xamarin.com para poder trabajar con iOS y Mac desde Visual Studio en el equipo Windows.  
   
      Tenga en cuenta que ambos equipos deben estar en la misma red local.

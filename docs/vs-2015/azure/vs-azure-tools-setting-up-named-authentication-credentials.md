@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961955"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917365"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configuración de credenciales de autenticación con nombre
 
@@ -39,7 +39,7 @@ Si desea crear un certificado por sí mismo, puede consultar las instrucciones d
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Introducción general sobre Web Apps](https://docs.microsoft.com/azure/app-service/)
-- [Documentación de implementación de Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Implementar trabajos web con Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Crear e implementar un servicio en la nube](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Introducción general sobre Web Apps](/azure/app-service/)
+- [Documentación de implementación de Azure App Service](/azure/app-service/app-service-deploy-local-git) 
+- [Implementar trabajos web con Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Crear e implementar un servicio en la nube](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

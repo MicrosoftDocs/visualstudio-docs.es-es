@@ -22,17 +22,17 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b8c0a4269dcc2b7e647effb10432a984396f395d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847216"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918008"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema se puede encontrar en [IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace) .  
+La versión más reciente de este tema se puede encontrar en [IntelliTrace](/visualstudio/debugger/intellitrace) .  
   
 Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTrace para registrar y realizar un seguimiento del historial de ejecución del código. Los errores se detectan fácilmente ya que IntelliTrace le permite:  
   

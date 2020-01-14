@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431678"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916445"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 A continuación, se muestran los cuadros de diálogo de advertencia y errores que se pueden encontrar mientras se depura una aplicación.
 
-## <a name="in-this-section"></a>En esta sección
+## <a name="in-this-section"></a>Esta sección
  [Cuadro de diálogo Error de aserción](../debugger/assertion-failed-dialog-box.md)
 
  [Cuadro de diálogo No se puede cambiar el valor](../debugger/cannot-change-value-dialog-box.md)
@@ -63,9 +63,9 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
 
  [Errores de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [Errores de asociación](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [Errores de asociación](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [Solución de problemas de la instalación de la depuración de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [Solución de problemas de la instalación de la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [P+F sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)
 

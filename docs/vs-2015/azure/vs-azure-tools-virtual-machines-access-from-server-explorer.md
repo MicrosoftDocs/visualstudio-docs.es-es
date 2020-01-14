@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849938"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917095"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Acceso a Azure Virtual Machines desde el Explorador de servidores
 
@@ -31,7 +31,7 @@ Si tiene Máquinas virtuales hospedadas por Azure, puede tener acceso a ellas en
    | Nombre DNS |La dirección URL con la dirección de Internet de la máquina virtual. |
    | Entorno |En el caso de una máquina virtual, el valor de esta propiedad siempre es Production. |
    | Name |Nombre de la máquina virtual. |
-   | Tamaño de la |El tamaño de la máquina virtual, que refleja la cantidad de memoria y espacio en disco disponibles. Para más información, consulte los [tamaños de máquina virtual](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Tamaño de la |El tamaño de la máquina virtual, que refleja la cantidad de memoria y espacio en disco disponibles. Para más información, consulte los [tamaños de máquina virtual](/azure/cloud-services/cloud-services-sizes-specs). |
    | Situación |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](https://portal.azure.com/). |
    | Id. de suscripción |El Id. de suscripción de la cuenta de Azure. Esta información se puede mostrar en [Azure Portal](https://portal.azure.com/) mediante la visualización de las propiedades de una suscripción. |
 2. Seleccione un nodo de extremo y, a continuación, vea la ventana **Propiedades** .

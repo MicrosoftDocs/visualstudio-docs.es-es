@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738112"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916320"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparación de la depuración: C++ tipos de proyecto
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -47,13 +47,13 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propiedades &#124; de configuración nodoC++ &#124; de C/optimización
 
-|Nombre de la propiedad|Parámetro|
+|Nombre de la propiedad|Configuración de|
 |-------------------|-------------|
 |**Optimization**|Establezca esta opción como **Deshabilitado (/0d)** . El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que solo aparece en código optimizado, active esta configuración, pero recuerde que el código mostrado en la ventana **Desensamblado** se genera a partir del código optimizado, que posiblemente no coincida con lo que aparece en las ventanas de código fuente. Es posible que otras características, como la ejecución paso a paso, no funcionen como se espera.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propiedades &#124; de configuración ( &#124; nodo de depuración del vinculador)
 
-|Nombre de la propiedad|Parámetro|
+|Nombre de la propiedad|Configuración de|
 |-------------------|-------------|
 |**Generar información de depuración**|Siempre debería establecer esta opción en **Sí (/DEBUG)** para crear los símbolos de depuración y archivos necesarios para depurar. Cuando la aplicación entra en modo de producción, puede desactivarla.|
 
@@ -97,7 +97,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
    [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicaciones de Windows Forms (.NET)
- La plantilla **Aplicación de Windows Forms (.NET)** crea una aplicación de Windows Forms de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obtener más información, consulta [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ La plantilla **Aplicación de Windows Forms (.NET)** crea una aplicación de Windows Forms de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para más información, consulte [Cómo: Crear un proyecto de aplicación para Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es similar a la depuración en aplicaciones de Windows Forms administradas.
 
@@ -114,4 +114,4 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
 - [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Asociación del depurador a un programa o programas en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Cómo: Crear un proyecto de aplicación para Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [Cómo: Crear un proyecto de aplicación para Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

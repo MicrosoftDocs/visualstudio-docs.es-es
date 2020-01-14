@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 526f0333cc4a233996c00576e3439bac4593c29f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669218"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919176"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Los identificadores no deberían contener subrayado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [CA1707: los identificadores no deben contener guiones bajos](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
+Para obtener la documentación más reciente sobre Visual Studio, vea [CA1707: los identificadores no deben contener guiones bajos](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
 |||
 |-|-|

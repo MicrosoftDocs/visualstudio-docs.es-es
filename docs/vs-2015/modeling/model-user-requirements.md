@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844913"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918268"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 |Elementos de un diagrama de clases conceptuales|[Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|
 |Cómo desarrollar código a partir de clases conceptuales|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
 
- En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real. La siguiente extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] convierte las flechas no direccionales en los valores predeterminados: [ejemplo de características de modelado de dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+ En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.
@@ -239,4 +239,4 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
   Al examinar las relaciones entre las vistas que proporcionan los diferentes diagramas, podrá reconocer fácilmente los principales conceptos con los que trabajan los usuarios y ayudarles a entender lo que necesitan del sistema. También podrá conocer mejor los requisitos que las partes interesadas tienen menos claros. Puede planear el desarrollo de esas características, al menos de forma simplificada, en una fase temprana del proyecto para que los usuarios puedan experimentar con ellas.
 
 ## <a name="see-also"></a>Vea también
- [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md) [usar modelos en el modelo de proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [la extensión de ejemplo de arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [: características de modelado de dominio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [extensión](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) de vs extensión de vs extensión: [alinear formas en un diagrama de UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [vídeo](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain) : [vincular elementos UML a diagramas, archivos y otros elementos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) extensión de vs extensión
+ [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [modelo del vídeo de arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [: modelado del dominio empresarial](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

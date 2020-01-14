@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297923"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918342"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (aplicación sencilla con una pantalla)
 >   - [Hello, Android multiscreen](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplicación con navegación entre pantallas)
->   - [Android Fragments WalkThrough](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (Tutorial de fragmentos de Android, que se usa para las pantallas maestra o de detalles, entre otras cosas)
+>   - [Android Fragments WalkThrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (Tutorial de fragmentos de Android, que se usa para las pantallas maestra o de detalles, entre otras cosas)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Aplicaciones Xamarin con Xamarin.Forms (interfaz de usuario compartida)
@@ -59,7 +59,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 1. En Visual Studio, cree una nueva solución de **Aplicación en blanco (nativa portátil)** con el nombre **WeatherApp**. Puede encontrar esta plantilla con mayor facilidad si escribe **Nativa portátil** en el campo de búsqueda.
 
-    Si no la encuentra, es posible que tenga que instalar Xamarin o habilitar la característica de Visual Studio 2015. Vea [Configuración e instalación](../cross-platform/setup-and-install.md).
+    Si no la encuentra, es posible que tenga que instalar Xamarin o habilitar la característica de Visual Studio 2015; consulte [Setup and install](../cross-platform/setup-and-install.md).
 
 2. Después de hacer clic en Aceptar para crear la solución, tendrá un número de proyectos individuales:
 
@@ -230,7 +230,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 1. En el **Explorador de soluciones**, expanda la carpeta **WeatherApp.Droid**>**Recursos**>**diseño** y abra **Main.axml**. Esto abre el archivo en el diseñador visual. (Si aparece un error relacionado con Java, vea esta [entrada de blog](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    > Hay muchos otros archivos en el proyecto. La descripción de estos archivos está fuera del alcance de este tema, pero si quiere profundizar un poco más en la estructura de un proyecto de Android, vea [Part 2 Deep Dive (Documentación exhaustiva Parte 2)](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) en el tema Hello Android en xamarin.com.
+    > Hay muchos otros archivos en el proyecto. La descripción de estos archivos está fuera del alcance de este tema, pero si quiere profundizar un poco más en la estructura de un proyecto de Android, vea [Part 2 Deep Dive (Documentación exhaustiva Parte 2)](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) en el tema Hello Android en xamarin.com.
 
 2. Seleccione y elimine el botón predeterminado que aparece en el diseñador.
 
@@ -247,9 +247,9 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 7. En la ventana **Propiedades**, establezca estas propiedades (puede ordenar la lista alfabéticamente con el botón de ordenación de la barra de herramientas de la ventana Propiedades):
 
-    |Propiedad|Valor|
+    |La propiedad|{2&gt;Value&lt;2}|
     |--------------|-----------|
-    |**text**|**Buscar por código postal**|
+    |**texto**|**Buscar por código postal**|
     |**identificador**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -279,9 +279,9 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 9. En la ventana **Propiedades** , establezca estas propiedades:
 
-    |Propiedad|Valor|
+    |La propiedad|{2&gt;Value&lt;2}|
     |--------------|-----------|
-    |**text**|**Código postal**|
+    |**texto**|**Código postal**|
     |**identificador**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
@@ -301,7 +301,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 10. Desde el **Cuadro de herramientas**, arrastre un control **Number** hasta **RelativeLayout** y colóquelo debajo de la etiqueta **Código postal**. Después, establezca las siguientes propiedades:
 
-    |Propiedad|Valor|
+    |La propiedad|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**identificador**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -324,10 +324,10 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
 11. Desde el **Cuadro de herramientas**, arrastre un **Botón** hasta el control **RelativeLayout** y colóquelo a la derecha del control zipCodeEntry. Después, establezca estas propiedades:
 
-    |Propiedad|Valor|
+    |La propiedad|{2&gt;Value&lt;2}|
     |--------------|-----------|
     |**identificador**|`@+id/weatherBtn`|
-    |**text**|**Obtener el tiempo**|
+    |**texto**|**Obtener el tiempo**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -636,11 +636,11 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
 
  Amplíe este ejemplo agregando una interfaz e usuario nativa para iOS. Para esto, tendrá que conectarse a un equipo Mac en la red local que tenga instalados Xcode y Xamarin. Después, puede usar el diseñador de iOS directamente en Visual Studio. Vea el [repositorio mobile-samples en GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) para obtener una aplicación completa.
 
- Vea también el tutorial [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Tenga en cuenta que en esta página, debe asegurarse de que "Visual Studio" está seleccionado en la esquina superior derecha de las páginas en xamarin.com, para que aparezca el conjunto correcto de instrucciones.
+ Vea también el tutorial [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Tenga en cuenta que en esta página, debe asegurarse de que "Visual Studio" está seleccionado en la esquina superior derecha de las páginas en xamarin.com, para que aparezca el conjunto correcto de instrucciones.
 
  **Agregar código específico de la plataforma en el proyecto compartido**
 
- El código compartido en una PCL es independiente de la plataforma, porque la PCL se compila una vez y se incluye en cada paquete de aplicaciones específico de la plataforma. Si quiere escribir código compartido que use la compilación condicional para aislar el código específico de la plataforma, puede usar un proyecto *compartido*. Para obtener más detalles, vea [Code Sharing Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Opciones de uso compartido de código) (xamarin.com).
+ El código compartido en una PCL es independiente de la plataforma, porque la PCL se compila una vez y se incluye en cada paquete de aplicaciones específico de la plataforma. Si quiere escribir código compartido que use la compilación condicional para aislar el código específico de la plataforma, puede usar un proyecto *compartido*. Para obtener más detalles, vea [Code Sharing Options](/xamarin/cross-platform/app-fundamentals/code-sharing) (Opciones de uso compartido de código) (xamarin.com).
 
 ## <a name="see-also"></a>Vea también
- [Póster de Xamarin y referencia rápida del centro C# de desarrollo de](https://aka.ms/scposter) [Windows](https://dev.windows.com/en-us) para [Xamarin Developer](https://docs.microsoft.com/xamarin/)
+ [Póster de Xamarin y referencia rápida del centro C# de desarrollo de](https://aka.ms/scposter) [Windows](https://dev.windows.com/en-us) para [Xamarin Developer](/xamarin/)

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844996"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918817"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
  Con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], puede realizar descargas que utilicen la compresión HTTP, una tecnología de servidor Web que usa el algoritmo GZIP para comprimir un flujo de datos antes de enviar la secuencia al cliente. El cliente (en este caso, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]) descomprime la secuencia antes de leer los archivos.  
   
  Si utiliza IIS, puede habilitar fácilmente la compresión HTTP. Sin embargo, cuando se habilita la compresión HTTP, solo se habilita para determinados tipos de archivo, es decir, archivos HTML y de texto. Para habilitar la compresión de ensamblados (. dll), XML (. xml), manifiestos de implementación (. Application) y manifiestos de aplicación (. manifest), debe agregar estos tipos de archivo a la lista de tipos para que IIS los comprima. Hasta que agregue los tipos de archivo a la implementación, solo se comprimirán los archivos de texto y HTML.  
-  
- Para obtener instrucciones detalladas para IIS, vea [Cómo especificar tipos de documentos adicionales para la compresión http](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Vea también  
  [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850433"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918821"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|SDK de visualización y modelado de Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|SDK de visualización y modelado de Visual Studio|[Descarga del SDK de modelado](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje específico de dominio
 
@@ -127,7 +127,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  **Usar clave de nombre seguro existente** Utilice esta opción si desea integrar el DSL con otro ensamblado.
 
- Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN).
+ Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Vea también
- [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [herramientas del lenguaje específico de dominio Glosario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [herramientas del lenguaje específico de dominio Glosario](/previous-versions/bb126564(v=vs.100))

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955054"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919130"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.
@@ -62,7 +62,7 @@ ms.locfileid: "74955054"
 >
 >Si el instalador tiene como destino el usuario actual, no es necesario instalarlo en WOW6432Node porque la ruta de acceso HKEY_CURRENT_USER \Software está compartida.
 >
->Para obtener más información, vea [datos de aplicación de 32 bits y de 64 bits en el registro](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
+>Para obtener más información, vea [datos de aplicación de 32 bits y de 64 bits en el registro](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  En la tabla siguiente se enumeran las entradas que figuran en esta clave del Registro.
 
