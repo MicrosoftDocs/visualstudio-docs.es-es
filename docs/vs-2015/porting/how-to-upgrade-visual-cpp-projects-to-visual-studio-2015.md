@@ -1,5 +1,5 @@
 ---
-title: 'Procedimiento: Actualización de proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs'
+title: Procedimiento Actualización de proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300378"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850332"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedimiento Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte [Guía de migración y actualización de Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -51,7 +51,7 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
 - En el caso de proyectos de [!INCLUDE[cppcli](../includes/cppcli-md.md)] , cambia TargetFrameworkVersion a .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Seguir trabajando con un valor de PlatformToolset personalizado
- Si desea seguir trabajando con un valor de PlatformToolset personalizado en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], el conjunto de herramientas debe estar en %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ en un equipo x86 o en %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ si se trata de un equipo x64. Para obtener información sobre cómo crear un valor de PlatformToolset personalizado, vea [Compatibilidad nativa con múltiples versiones (multi-targeting) de C++](https://go.microsoft.com/fwlink/?LinkId=248587) en el blog del equipo de Visual C++.
+ Si desea seguir trabajando con un valor de PlatformToolset personalizado en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], el conjunto de herramientas debe estar en %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ en un equipo x86 o en %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ si se trata de un equipo x64. Para obtener información sobre cómo crear un valor de PlatformToolset personalizado, vea [Compatibilidad nativa con múltiples versiones (multi-targeting) de C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) en el blog del equipo de Visual C++.
 
-## <a name="see-also"></a>Otras referencias
- [Guía de migración y actualización de Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+## <a name="see-also"></a>Vea también
+ [Guía C++ de migración y actualización visual](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) de la guía [de migración, migración y actualización de proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

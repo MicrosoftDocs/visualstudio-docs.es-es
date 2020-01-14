@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300395"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851830"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -266,7 +266,7 @@ attribute of the Assembly element in the .fakes:
 |-----------|-------------------------|
 |Un **tipo**`T`|T<br /><br /> Se quitan el espacio de nombres, la estructura anidada y las marcas genéricas.|
 |Un **parámetro de salida**`out T`|`TOut`|
-|Un **parámetro de referencia**`ref T`|`TRef`|
+|Un **parámetro de referencia** `ref T`|`TRef`|
 |Un **tipo de matriz**`T[]`|`TArray`|
 |Un tipo de **matriz multidimensional**`T[ , , ]`|`T3`|
 |Un tipo de **puntero**`T*`|`TPtr`|
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> Recursos externos
 
 ### <a name="BKMK_Guidance"></a> Orientación
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
