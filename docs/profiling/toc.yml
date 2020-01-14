@@ -30,6 +30,8 @@
       items:
         - name: Analizar el uso de memoria
           href: analyze-memory-usage.md
+        - name: Analizar el uso de memoria para objetos .NET
+          href: dotnet-alloc-tool.md
         - name: Eventos de montón ETW nativos personalizados
           href: custom-native-etw-heap-events.md
         - name: Uso de memoria sin el depurador

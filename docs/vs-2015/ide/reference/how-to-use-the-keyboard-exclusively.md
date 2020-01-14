@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Usar el teclado exclusivamente | Microsoft Docs'
+title: Procedimiento Usar el teclado exclusivamente | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852375"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
+# <a name="how-to-use-the-keyboard-exclusively"></a>Procedimiento Usar exclusivamente el teclado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona muchas combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE). Para obtener un listado completo de las teclas de método abreviado que se usan en Visual Studio, vea [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre los métodos abreviados de teclado disponibles para otros productos de Microsoft, vea [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona muchas combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE). Para obtener un listado completo de las teclas de método abreviado que se usan en Visual Studio, vea [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre los métodos abreviados de teclado disponibles para otros productos de Microsoft, vea [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -96,5 +96,5 @@ ms.locfileid: "74297887"
 
      La ventana de herramientas se ajusta en la nueva ubicación de acoplamiento.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Identificar y personalizar los métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [sugerencias de accesibilidad y trucos](../../ide/reference/accessibility-tips-and-tricks.md) [métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

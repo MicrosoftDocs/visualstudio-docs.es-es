@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300740"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848382"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 ### <a name="UserDefined"></a> Variables, funciones y objetos definidos por el usuario
  Al cambiar un archivo JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina los documentos que están abiertos y a los que se hace referencia con el fin de identificar todos los recursos de código disponibles. Esto incluye las variables, funciones y objetos que haya creado. Posteriormente, estos recursos se ponen a disposición de IntelliSense para JavaScript.
 
- Para más información sobre variables, funciones y objetos definidos por el usuario, consulte [Crear objetos (JavaScript)](https://go.microsoft.com/fwlink/?LinkId=108671) en el sitio web de MSDN.
+ Para más información sobre variables, funciones y objetos definidos por el usuario, consulte [Crear objetos (JavaScript)](https://msdn.microsoft.com/library/202863ha.aspx) en el sitio web de MSDN.
 
 ### <a name="External"></a> Referencias a archivos externos
  Puede incluir diferentes tipos de referencias a archivos externos para lograr la compatibilidad con IntelliSense en el código. Las referencias a archivos externos pueden ser referencias de script, directivas de referencia o se pueden especificar mediante grupos de referencia.
@@ -157,7 +157,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 </asp:ScriptManager>
 ```
 
- IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para más información sobre los recursos de script insertados, consulte [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) (Tutorial: Inserción de un archivo de JavaScript como un recurso en un ensamblado).
+ IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para más información sobre cómo utilizar recursos de script incrustados, consulte [Tutorial: Inserción de un archivo de JavaScript como un recurso en un ensamblado](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Directivas de referencia
  Con una directiva `reference`, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede establecer una relación entre el script que está modificando actualmente y otros scripts. La directiva `reference` le permite incluir un archivo de script en el contexto de scripting del archivo de script actual. Esto habilita IntelliSense para poder hacer referencias, mientras programa, a las funciones, tipos y campos definidos externamente.
@@ -277,12 +277,12 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 
 - La ventana de salida muestra las referencias que no se cargaron.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 - [Usar IntelliSense](../ide/using-intellisense.md)
 - [Crear comentarios de documentación XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md)
 - [Finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-- [Acerca del modelo de objetos DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [Acerca del modelo de objetos DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
 - [Lista de miembros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Atributo SRC &#124; src (propiedad)](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [Atributo SRC &#124; src (propiedad)](https://msdn2.microsoft.com/library/ms534642.aspx)

@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295884"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850991"
 ---
 # <a name="link-task"></a>Vincular tarea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.  
   
-   Para obtener más información, consulte [/MANIFESTDEPENDENCY (Especificar las dependencias de manifiesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte también "Archivos de configuración del publicador" en el sitio web de [MSDN](https://go.microsoft.com/fwlink/?LinkId=737).  
+   Para obtener más información, consulte [/MANIFESTDEPENDENCY (Especificar las dependencias de manifiesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte también "Archivos de configuración del publicador" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   
@@ -246,7 +246,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
   - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** -   **/DRIVER: WDM**  
+  - **WDM** -  **/DRIVER: WDM**  
   
     Para obtener más información, consulte [/DRIVER (Controlador de modo kernel de Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -926,5 +926,5 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Para obtener más información, consulte [/VERSION (Información sobre la versión)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
