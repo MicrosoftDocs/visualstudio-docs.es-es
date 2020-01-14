@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586671"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916737"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools en Visual Studio
 
@@ -43,7 +43,7 @@ Estas son las herramientas específicas que componen Entity Framework herramient
 
 Las herramientas generan o modifican un archivo *. edmx* . Este archivo *. edmx* contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, vea [EDMX](/ef/ef6/).
 
-[Entity Framework herramientas avanzadas](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) le ayudan a crear aplicaciones que usan el Entity Data Model. Las herramientas avanzadas pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contengan clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [vistas de asignación previamente generadas](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
+[Entity Framework herramientas avanzadas](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) le ayudan a crear aplicaciones que usan el Entity Data Model. Las herramientas avanzadas pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contengan clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [vistas de asignación previamente generadas](/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Temas relacionados
 

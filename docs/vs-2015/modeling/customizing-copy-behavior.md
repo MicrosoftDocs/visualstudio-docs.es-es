@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845288"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918921"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Invalide *midsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` en el proyecto 
 Invalide *midsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` en el proyecto DslPackage.
 
  **Conservar el diseño de la forma mediante copiar y pegar.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. 
 
  Para lograr este efecto, agregue las formas y conectores al ElementGroupPrototype copiado. El método más cómodo para invalidar es ElementOperations.CreateElementGroupPrototype(). Para ello, agregue el siguiente código al proyecto Dsl:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo que se encuentra en [VMSDK: ejemplo de diagramas de circuitos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen.
 
  Para lograr este efecto, invalide `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar la versión específica de la ubicación de `ElementOperations.Merge()`. Para ello, agregue el siguiente código al proyecto DslPackage:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Vea también
- [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizar](../modeling/customizing-deletion-behavior.md) el control de comportamiento de eliminación [: ejemplo de diagramas de circuitos de VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md) [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)
+ 

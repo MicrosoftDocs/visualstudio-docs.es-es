@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850613"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917279"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solucionar problemas de errores específicos de las implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ En este tema se enumeran los siguientes errores comunes que pueden producirse al
  Si está publicando con una dirección URL, asegúrese de que el equipo de destino tiene Extensiones de servidor de FrontPage habilitado.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: no se puede crear el sitio web '\<sitio > '. Los componentes para comunicarse con Extensiones de servidor de FrontPage no están instalados.  
- Asegúrese de que tiene instalado el componente de creación Web Microsoft Visual Studio en el equipo desde el que se va a publicar. En el caso de los usuarios de Express, este componente no se instala de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
+ Asegúrese de que tiene instalado el componente de creación Web Microsoft Visual Studio en el equipo desde el que se va a publicar. En el caso de los usuarios de Express, este componente no se instala de forma predeterminada.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: no se encontró el archivo ' Microsoft. Windows. Common-Controls, version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32 '  
  Este mensaje de error aparece al intentar publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: publicar una aplicación WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851486"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919248"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novedades de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -129,7 +129,7 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 
 - **C# / Xamarin**. Use [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para compilar aplicaciones nativas para Windows, iOS y Android en Visual Studio con C#.
 
-     [Depuración](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) y [Depurar en dispositivo](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) en las [Guías para desarrolladores de Xamarin](https://docs.microsoft.com/xamarin/) describen la experiencia de depuración.
+     [Depuración](/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) y [Depurar en dispositivo](/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) en las [Guías para desarrolladores de Xamarin](/xamarin/) describen la experiencia de depuración.
 
 - **C++ / Android**. Use las plantillas de [Visual C++ para el desarrollo móvil multiplataforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) junto con herramientas de terceros como el [NDK de Android](https://developer.android.com/tools/sdk/ndk/index.html) para crear aplicaciones nativas para Windows y Android.
 

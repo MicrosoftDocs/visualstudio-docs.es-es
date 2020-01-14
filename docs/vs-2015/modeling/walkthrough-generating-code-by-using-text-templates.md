@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849927"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918578"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La generación de código permite producir código de programa que está fuertem
  En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.
 
 > [!NOTE]
-> La aplicación [xsd.exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
+> La aplicación [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
 
  Este es el archivo de ejemplo:
 

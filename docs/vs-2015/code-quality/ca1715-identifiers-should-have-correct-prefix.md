@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669116"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919187"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deberían tener el prefijo correcto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [CA1715: los identificadores deberían tener el prefijo correcto](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+Para obtener la documentación más reciente sobre Visual Studio, vea [CA1715: los identificadores deberían tener el prefijo correcto](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
 |||
 |-|-|
@@ -37,7 +37,7 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1715: l
 ## <a name="cause"></a>Motivo
  El nombre de una interfaz visible externamente no empieza por una ' I ' mayúscula.
 
- o bien
+ O bien,
 
  El nombre de un parámetro de tipo genérico en un tipo o método visible externamente no empieza con una mayúscula ' t '.
 

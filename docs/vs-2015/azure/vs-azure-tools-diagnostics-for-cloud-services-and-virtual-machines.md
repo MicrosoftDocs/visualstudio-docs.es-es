@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851453"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915654"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -110,7 +110,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
     ![Instalación de una extensión de máquina virtual de Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > Hay otras extensiones de diagnóstico disponibles para las máquinas virtuales. Para obtener más información, consulte [Características y extensiones de las máquinas virtuales para Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > Hay otras extensiones de diagnóstico disponibles para las máquinas virtuales. Para obtener más información, consulte [Características y extensiones de las máquinas virtuales para Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Para agregar la extensión y ver su cuadro de diálogo **Configuración de diagnóstico**, seleccione **Agregar**.

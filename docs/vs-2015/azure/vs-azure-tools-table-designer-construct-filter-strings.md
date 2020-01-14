@@ -11,16 +11,16 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849957"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917598"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construcción de cadenas de filtro para el Diseñador de tablas
 ## <a name="overview"></a>Información general del
-Para filtrar los datos de una tabla de Azure que se muestra en el **Diseñador de tablas**de Visual Studio, es preciso construir una cadena de filtro y especificar en el campo de filtro. La sintaxis de la cadena de filtro la define servicios de datos de WCF y es similar a una cláusula WHERE de SQL, pero se envía a Table service a través de una solicitud HTTP. El **Diseñador de tablas** administra la codificación adecuada para el usuario, por lo que para filtrar por un valor de propiedad deseado, solo necesita escribir el nombre de la propiedad, el operador de comparación, los valores de los criterios y opcionalmente, el operador booleano en el campo de filtro. No es preciso incluir la opción de consulta $filter como lo haría si fuera a construir una dirección URL para realizar consultas en la tabla a través de la [referencia de la API REST de servicios de almacenamiento](https://msdn.microsoft.com/library/dd179355.aspx).
+Para filtrar los datos de una tabla de Azure que se muestra en el **Diseñador de tablas**de Visual Studio, es preciso construir una cadena de filtro y especificar en el campo de filtro. La sintaxis de la cadena de filtro la define servicios de datos de WCF y es similar a una cláusula WHERE de SQL, pero se envía a Table service a través de una solicitud HTTP. El **Diseñador de tablas** administra la codificación adecuada para el usuario, por lo que para filtrar por un valor de propiedad deseado, solo necesita escribir el nombre de la propiedad, el operador de comparación, los valores de los criterios y opcionalmente, el operador booleano en el campo de filtro. No es preciso incluir la opción de consulta $filter como lo haría si fuera a construir una dirección URL para realizar consultas en la tabla a través de la [referencia de la API REST de servicios de almacenamiento](/rest/api/storageservices).
 
 WCF Data Services se basa en [Open Data Protocol](https://www.odata.org/) (OData). Para obtener más información sobre la opción de consulta del sistema de filtro ( **$filter**), consulte las [especificaciones de las convenciones del URI de OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
@@ -43,7 +43,7 @@ Al construir una cadena de filtro, las siguientes reglas son importantes:
 
 * Use los operadores lógicos para comparar una propiedad con un valor. Tenga en cuenta que no es posible comparar una propiedad con un valor dinámico; uno de los lados de la expresión debe ser una constante.
 * Todas las partes de la cadena de filtro distinguen mayúsculas de minúsculas.
-* Para que el filtro devuelva resultados válidos, el valor constante debe ser del mismo tipo de datos que la propiedad. Para obtener más información sobre los tipos de propiedades que se admiten, consulte [Introducción al modelo de datos del servicio Tabla](https://msdn.microsoft.com/library/dd179338.aspx).
+* Para que el filtro devuelva resultados válidos, el valor constante debe ser del mismo tipo de datos que la propiedad. Para obtener más información sobre los tipos de propiedades que se admiten, consulte [Introducción al modelo de datos del servicio Tabla](/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 ## <a name="filtering-on-string-properties"></a>Filtro por propiedades de cadena
 Al filtrar por propiedades de cadena, la constante de la cadena se escribe entre comillas simples.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtro por propiedades de fecha y hora
-Para filtrar por un valor de fecha y hora, especifique la palabra clave **datetime** , seguida de la constante de fecha y hora, entre comillas simples. La constante de fecha y hora debe estar en formato UTC combinado, como se describe en [Formato de los valores de la propiedad DateTime](https://msdn.microsoft.com/library/azure/dd894027.aspx).
+Para filtrar por un valor de fecha y hora, especifique la palabra clave **datetime** , seguida de la constante de fecha y hora, entre comillas simples. La constante de fecha y hora debe estar en formato UTC combinado, como se describe en [Formato de los valores de la propiedad DateTime](/rest/api/storageservices/Formatting-DateTime-Property-Values).
 
 El siguiente ejemplo devuelve las entidades en las que la propiedad CustomerSince es igual a 10 de julio de 2008:
 

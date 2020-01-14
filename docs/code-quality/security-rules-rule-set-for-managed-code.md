@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587230"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929222"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
 
@@ -86,4 +86,5 @@ Utilice el conjunto de reglas reglas de seguridad de Microsoft para el análisis
 |[CA3010](../code-quality/ca3010.md)|Revisión de código en busca de vulnerabilidades de inyección de XAML|
 |[CA3011](../code-quality/ca3011.md)|Revisión de código en busca de vulnerabilidades de inyección de DLL|
 |[CA3012](../code-quality/ca3012.md)|Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares|
+|[CA5358](../code-quality/ca5358.md)|No usar modos de cifrado no seguros|
 |[CA5403](../code-quality/ca5403.md)|No codificar el certificado de forma rígida|

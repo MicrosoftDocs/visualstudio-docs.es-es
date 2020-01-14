@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f005ea0fce0ccf33902b6ebfd6822640782ef20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292056"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917591"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introducción al desarrollo con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](https://visual
 
 - **[Crear aplicaciones web](https://www.visualstudio.com/features/modern-web-tooling-vs):** herramientas para crear e implementar aplicaciones web modernas.
 
-     [Realizar un tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Examinar los documentos](https://docs.asp.net/) &#124;                                   [Ver un vídeo](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)
+     [Realizar un tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Examinar los documentos](https://docs.asp.net/) &#124;                                   [Ver un vídeo](/aspnet/core/?view=aspnetcore-3.0)
 
-- **[Crear aplicaciones móviles multiplataforma en HTML/JavaScript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova es un entorno multiplataforma de código abierto que se basa en HTML, CSS y JavaScript.  El código JavaScript se ejecuta en un contenedor que tiene como destino una plataforma específica y permite acceder a todas las funciones de hardware del dispositivo. Desarrolle aplicaciones para Apple Store, la Tienda Android y la Tienda Windows.
+- **[Crear aplicaciones móviles multiplataforma en HTML/JavaScript (Apache Cordova)](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova es un entorno multiplataforma de código abierto que se basa en HTML, CSS y JavaScript.  El código JavaScript se ejecuta en un contenedor que tiene como destino una plataforma específica y permite acceder a todas las funciones de hardware del dispositivo. Desarrolle aplicaciones para Apple Store, la Tienda Android y la Tienda Windows.
 
-     [Cargar una muestra](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [ Realizar un tutorial](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [Examinar los documentos](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [Ver un vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
+     [Cargar una muestra](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [ Realizar un tutorial](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                               [Examinar los documentos](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) &#124;                                [Ver un vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
 - **[Crear aplicaciones móviles multiplataforma en C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : empiece a usar Visual Studio y Tools for Xamarin para crear aplicaciones móviles que se ejecutan en la Plataforma universal de Windows, iOS y Android desde una base de código compartido.
 

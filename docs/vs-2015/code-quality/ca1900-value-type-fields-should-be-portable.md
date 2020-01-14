@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23b5705b7ee81e56945050fe63dd2f086894bd08
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661102"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917934"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipos de valor deberían ser portátiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [CA1900: los campos de tipo de valor deben ser portátiles](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+Para obtener la documentación más reciente sobre Visual Studio, vea [CA1900: los campos de tipo de valor deben ser portátiles](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
 
 |||
 |-|-|

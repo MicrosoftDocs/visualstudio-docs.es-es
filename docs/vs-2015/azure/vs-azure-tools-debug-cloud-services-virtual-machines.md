@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850394"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919163"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depuración de una máquina virtual o un servicio en la nube de Azure en Visual Studio
 
@@ -50,7 +50,7 @@ Para depurar un servicio en la nube desde un equipo remoto, debe habilitar esta 
 Si habilita la depuración remota para un servicio en la nube, este no mostrará un rendimiento inferior ni incurrirá en cargos adicionales. No use la depuración remota en un servicio de producción, porque podría perjudicar a los clientes que usan el servicio.
 
 > [!NOTE]
-> Al publicar un servicio en la nube en Visual Studio, puede habilitar **IntelliTrace** para los roles de ese servicio cuyo destino sea .NET Framework 4 o .NET Framework 4.5. Con **IntelliTrace**, puede examinar eventos que se produjeron en una instancia de rol en el pasado y reproducir el contexto a partir de ese momento. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) y [Uso de IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Al publicar un servicio en la nube en Visual Studio, puede habilitar **IntelliTrace** para los roles de ese servicio cuyo destino sea .NET Framework 4 o .NET Framework 4.5. Con **IntelliTrace**, puede examinar eventos que se produjeron en una instancia de rol en el pasado y reproducir el contexto a partir de ese momento. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](vs-azure-tools-intellitrace-debug-published-cloud-services.md) y [Uso de IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Para habilitar la depuración remota para un servicio en la nube
 
@@ -150,7 +150,7 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
     > [!NOTE]
     > Se le pedirá que inicie sesión en la cuenta de Azure si todavía no lo ha hecho.
 
-3. Seleccione los distintos valores de configuración de la máquina virtual y después seleccione **Aceptar**. Consulte [Máquinas virtuales](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) para obtener más información.
+3. Seleccione los distintos valores de configuración de la máquina virtual y después seleccione **Aceptar**. Consulte [Máquinas virtuales](/previous-versions/azure/jj156003(v=azure.100)) para obtener más información.
 
     El nombre que escriba en Nombre DNS será el nombre de la máquina virtual.
 
@@ -188,6 +188,6 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* Use **IntelliTrace** para recopilar un registro de llamadas y eventos de un servidor de versión. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Use **IntelliTrace** para recopilar un registro de llamadas y eventos de un servidor de versión. Consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Use **Diagnósticos de Azure** para registrar información detallada del código que se ejecuta en los roles, bien sea en el entorno de desarrollo o en Azure. Consulte [Recopilación de datos de registro mediante Diagnósticos de Azure](https://msdn.microsoft.com/library/gg433048.aspx).

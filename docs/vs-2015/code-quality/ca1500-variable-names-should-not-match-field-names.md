@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607937"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919049"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente sobre Visual Studio, vea [CA1500: los nombres de variables no deben coincidir con los nombres de campo](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
+Para obtener la documentación más reciente sobre Visual Studio, vea [CA1500: los nombres de variables no deben coincidir con los nombres de campo](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
 |||
 |-|-|

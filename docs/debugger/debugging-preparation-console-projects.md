@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738130"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916275"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparación de la depuración:C#proyectos C++de consola ( F#,, Visual Basic,)
 
-Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto de Windows, con algunas consideraciones adicionales, como establecer argumentos de la línea de comandos y cómo pausar la aplicación para la depuración. Para obtener más información, consulte [aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), y [preparar la depuración: Aplicaciones de Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
+Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto de Windows, con algunas consideraciones adicionales, como establecer argumentos de la línea de comandos y cómo pausar la aplicación para la depuración. Para obtener más información, consulte [aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), y [preparar la depuración: Aplicaciones de Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
 
 - C#, Visual Basic y F# aplicación de consola
 
@@ -43,13 +43,13 @@ Es posible que necesite especificar argumentos de línea de comandos para la apl
 
 Al igual que todas las propiedades del proyecto, estos argumentos se conservan entre sesiones de depuración y entre sesiones de Visual Studio. Por lo tanto, si la aplicación de consola es una aplicación que ya ha depurado anteriormente, recuerde que puede haber argumentos de sesiones anteriores escritos en el cuadro de diálogo **\<Proyecto > Páginas de propiedades**.
 
-## <a name="start-the-application"></a>Iniciar la aplicación
+## <a name="start-the-application"></a>Inicio de la aplicación
 
  Cuando se inician algunas aplicaciones de consola, se ejecutan hasta su finalización y después salen. Este comportamiento podría no proporcionar suficiente tiempo para interrumpir la ejecución y la depuración. Para poder depurar una aplicación, utilice uno de los siguientes procedimientos para iniciar la aplicación:
 
 - Establezca un punto de interrupción en el código e inicie la aplicación.
 
-- Inicie la aplicación con **F10** (**depurar**  > **paso a paso por procedimientos**) o **F11** (**depurar**  > **paso a paso por instrucciones**) y, a continuación, desplácese por el código usando otras opciones, como **ejecutar hasta clic**.
+- Inicie la aplicación con **F10** (**depurar** > **paso a paso por procedimientos**) o **F11** (**depurar** > **paso a paso por instrucciones**) y, a continuación, desplácese por el código usando otras opciones, como **ejecutar hasta clic**.
 
 - En el editor de código, haga clic con el botón secundario en una línea y seleccione **ejecutar hasta el cursor**.
 

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289811"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917555"
 ---
 # <a name="deploying-applications-services-and-components"></a>Implementación de aplicaciones, servicios y componentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Al implementar una aplicación, servicio o componente, se distribuye para su ins
 |**Publicar en la nube:** Puede hacer que las aplicaciones, los servicios y los datos estén disponibles desde cualquier lugar mediante Visual Studio para implementarlos en Microsoft Azure.|[Publicación de aplicaciones en Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Publicar una aplicación de la tienda Windows:** Puede compilar, enviar y vender fácilmente sus aplicaciones de la tienda Windows a clientes de todo el mundo.|[Empaquetado, implementación y consulta de aplicaciones de la tienda Windows](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Publicación de una aplicación Windows Phone:** Puede enviar una nueva aplicación o una actualización a una aplicación existente para su certificación en el centro de desarrollo de Windows Phone.|[Publicación de una aplicación Windows Phone](https://developer.microsoft.com/)|  
-|**Implementar una aplicación o servicio de ASP.net:** Puede implementar aplicaciones y servicios de ASP.NET de varias maneras diferentes.|[Implementación de aplicaciones y servicios Web de ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Implementar una aplicación o servicio de ASP.net:** Puede implementar aplicaciones y servicios de ASP.NET de varias maneras diferentes.|[Implementación de aplicaciones y servicios Web de ASP.NET](/aspnet/mvc/overview/deployment/)|  
 |**Implementar una aplicación o servicio de LightSwitch:** Después de crear aplicaciones y servicios OData mediante LightSwitch, puede implementarlos en un servidor web o en Microsoft Azure.|[Implementar aplicaciones LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
 |**Publicar una aplicación para SharePoint:** Puede publicar una aplicación para SharePoint en la tienda Office o en un catálogo de aplicaciones para una organización interna.|[Publicación de una aplicación para SharePoint mediante Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**Publicación de una aplicación para Office:** Puede publicar una aplicación para Office en la tienda Office o en un catálogo de aplicaciones para una organización interna.|[Publicación de la aplicación para Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

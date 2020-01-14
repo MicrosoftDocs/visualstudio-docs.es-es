@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851709"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944261"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalación de una aplicación de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Para instalar una aplicación de Shell debe realizar los pasos siguientes.
   
 - El SDK de Visual Studio  
   
-- La versión del [conjunto de herramientas de Windows Installer XML](http://wix.sourceforge.net/) 3,6  
+- La versión del [conjunto de herramientas de Windows Installer XML](https://documentation.help/WiX-Toolset/index.html/) 3,6  
   
   El ejemplo también requiere el SDK de visualización y modelado de Microsoft, que no requieren todos los shells.  
   
@@ -54,7 +54,7 @@ Para instalar una aplicación de Shell debe realizar los pasos siguientes.
 2. En cada proyecto que contenga un manifiesto VSIX, edite las tareas de compilación para generar el contenido en la ubicación desde la que se instalará el archivo MSI. Incluya el manifiesto VSIX en la salida de la compilación, pero no cree un archivo. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Creación de un archivo MSI para el shell  
- Para compilar el paquete MSI, se recomienda usar el [conjunto de herramientas de Windows Installer XML](http://wix.sourceforge.net/) porque proporciona mayor flexibilidad que un proyecto de instalación estándar.  
+ Para compilar el paquete MSI, se recomienda usar el [conjunto de herramientas de Windows Installer XML](https://documentation.help/WiX-Toolset/index.html) porque proporciona mayor flexibilidad que un proyecto de instalación estándar.  
   
  En el archivo product. WXS, establezca los bloques de detección y el diseño de los componentes de Shell.  
   
