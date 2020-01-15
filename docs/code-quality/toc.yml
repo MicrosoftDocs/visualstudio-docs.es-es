@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147: Marcar los controladores de verbo con ValidateAntiForgeryToken'
                   href: ca3147.md
+                - name: 'CA5358: No usar modos de cifrado inseguro'
+                  href: ca5358.md
                 - name: 'CA5361: No deshabilitar el uso de cifrado seguro de SChannel'
                   href: ca5361.md
                 - name: 'CA5363: No deshabilitar la validación de solicitudes'
