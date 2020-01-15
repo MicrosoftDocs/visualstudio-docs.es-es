@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a36aa17207affa257cdbb2caec0f2d6d9392285b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 019acd338ab49dd08255e3dc5d174cf2e371b71e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590012"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918412"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 
@@ -64,7 +64,7 @@ Muchos de estos métodos también se pueden usar para exigir [fechas límite de 
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
+[assemblies]:  /dotnet/standard/assembly-format
 [uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
 [xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 

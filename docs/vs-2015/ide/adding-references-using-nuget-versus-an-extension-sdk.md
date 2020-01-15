@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852226"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917347"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede proporcionar un paquete para el consumo en proyectos de Visual Studio mediante la extensión NuGet para Visual Studio o un kit de desarrollo de software (SDK). Este tema puede ayudarle a elegir el mejor método para su tarea, ya que describe las similitudes y las diferencias entre los dos mecanismos.
 
-- NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](https://docs.microsoft.com/nuget/what-is-nuget) (Introducción a NuGet).
+- NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](/nuget/what-is-nuget) (Introducción a NuGet).
 
 - Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra el cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 

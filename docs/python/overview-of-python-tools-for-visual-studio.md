@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061165"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845673"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
@@ -305,17 +305,17 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 1. La compatibilidad de Git para Visual Studio 2012 está disponible en la extensión Visual Studio Tools para Git, disponible en [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. La implementación del sitio Web de Azure requiere [Azure SDK para .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Las versiones más recientes no son compatibles con Visual Studio 2010.
+1. La implementación del sitio Web de Azure requiere [Azure SDK para .NET 2.1 - Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids). Las versiones más recientes no son compatibles con Visual Studio 2010.
 
-1. La compatibilidad con el rol web y de trabajo de Azure requiere el [SDK de Azure SDK para .NET 2.3 - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) o una versión posterior.
+1. La compatibilidad con el rol web y de trabajo de Azure requiere el [SDK de Azure SDK para .NET 2.3 - VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) o una versión posterior.
 
-1. La compatibilidad con el rol web y de trabajo de Azure requiere el [SDK de Azure SDK para .NET 2.3 - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+1. La compatibilidad con el rol web y de trabajo de Azure requiere el [SDK de Azure SDK para .NET 2.3 - VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) o una versión posterior.
 
 1. El editor de plantillas de Django en Visual Studio 2013 tiene algunos problemas conocidos que se resuelven mediante la instalación de Update 2.
 
-1. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo **Asociar al proceso**, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando **Adjuntar depurador (Python)** en el **Explorador de servidores**. La depuración remota requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+1. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo **Asociar al proceso**, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando **Adjuntar depurador (Python)** en el **Explorador de servidores**. La depuración remota requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) o una versión posterior.
 
-1. Requiere Windows 8 o una versión posterior. El comando **Adjuntar depurador (Python)** del **Explorador de servidores** requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+1. Requiere Windows 8 o una versión posterior. El comando **Adjuntar depurador (Python)** del **Explorador de servidores** requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) o una versión posterior.
 
 1. Requiere Windows 8 o una versión posterior.
 ::: moniker-end

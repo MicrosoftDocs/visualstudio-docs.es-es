@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427591"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915825"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Entrenar un modelo de TensorFlow en la nube
 
-En este tutorial, entrenaremos un modelo de TensorFlow con el [conjunto de datos MNIST](http://yann.lecun.com/exdb/mnist/) en una máquina virtual de [aprendizaje profundo](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) de Azure.
+En este tutorial, entrenaremos un modelo de TensorFlow con el [conjunto de datos MNIST](http://yann.lecun.com/exdb/mnist/) en una máquina virtual de [aprendizaje profundo](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) de Azure.
 
 La base de datos MNIST tiene un conjunto de entrenamiento de 60 000 ejemplos y un conjunto de pruebas de 10 000 ejemplos de dígitos escritos a mano.
 
@@ -31,7 +31,7 @@ Antes de comenzar, asegúrese de que tener instalado y configurado lo siguiente:
 > [!NOTE]
 > Establezca **Tipo de SO** en Linux.
 
-[Aquí](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) encontrará instrucciones para configurar la máquina virtual de aprendizaje profundo.
+[Aquí](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) encontrará instrucciones para configurar la máquina virtual de aprendizaje profundo.
 
 ### <a name="remove-comment-in-parens"></a>Quitar comentario entre paréntesis
 

@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777463"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915967"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
 
 Visual Studio Tools para AI es una extensión que sirve para compilar, probar e implementar soluciones de AI/aprendizaje profundo. Se integra perfectamente con Azure Machine Learning para proporcionar capacidades de experimentación muy eficaces como, entre otras, el envío transparente de trabajos de preparación de datos y entrenamiento de modelos a diferentes destinos de procesamiento. Además, admite métricas personalizadas y el seguimiento del historial de ejecución, lo que da cabida a la auditoría y reproducibilidad de ciencia de datos. La colaboración destinada a empresas permite trabajar en un proyecto con más gente sin ningún tipo de riesgo.
 
-Adéntrese hoy mismo en el mundo del aprendizaje profundo con [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) o cualquier otro marco de aprendizaje profundo.
+Adéntrese hoy mismo en el mundo del aprendizaje profundo con [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) o cualquier otro marco de aprendizaje profundo.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Desarrollo, depuración e implementación de modelos de aprendizaje profundo y soluciones de IA
 Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales.

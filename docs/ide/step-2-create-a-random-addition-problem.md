@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3100ed6951a0130824f4643086cff88a45c40ef8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f19c7854f2fb3d24010a5ee0e983b8efe4209997
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776037"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
 
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
-> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para crear un problema de suma aleatoria
 

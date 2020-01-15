@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 0d9bc44cb945b8df3ca444ce09b1b5c39795d3bc
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314118"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776079"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 
 En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Control.Enter> controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba. Este código seleccionará y borrará el valor actual de cada uno de los controles <xref:System.Windows.Forms.NumericUpDown> en cuanto el jugador lo elija y comience a escribir un valor diferente.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
-> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>Para comprobar el comportamiento predeterminado
 

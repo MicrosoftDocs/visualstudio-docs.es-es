@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594544"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845899"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -30,7 +30,7 @@ Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 
-- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) para obtener más información
+- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) para obtener más información
 
 - **Sincronización de la configuración de Visual Studio**: la configuración que ha personalizado, como los enlaces de teclado, el diseño de ventana y el tema de color, se aplica inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

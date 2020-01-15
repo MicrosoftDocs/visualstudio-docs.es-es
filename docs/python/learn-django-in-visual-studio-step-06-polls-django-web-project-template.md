@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254382"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755580"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6: Uso de la plantilla de proyecto web de Django de sondeos
 
@@ -160,7 +160,7 @@ Para ver el efecto, ejecute la aplicación primero para ver que no existe todav�
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible inicializar la base de datos con la utilidad administrativa de Django?
 
-Respuesta: Sí, se puede usar el [comando django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) para realizar la misma tarea que la página de inicialización de la aplicación. Cuando se trabaja en una aplicación web completa, puede usar una combinación de los dos métodos: inicializar una base de datos desde la línea de comandos y, a continuación, convertir la página de inicialización aquí en una API a la que puede enviar cualquier otro JSON arbitrario en lugar de confiar en un archivo codificado de forma rígida.
+Respuesta: Sí, se puede usar el [comando django-admin loaddata](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) para realizar la misma tarea que la página de inicialización de la aplicación. Cuando se trabaja en una aplicación web completa, puede usar una combinación de los dos métodos: inicializar una base de datos desde la línea de comandos y, a continuación, convertir la página de inicialización aquí en una API a la que puede enviar cualquier otro JSON arbitrario en lugar de confiar en un archivo codificado de forma rígida.
 
 ## <a name="step-6-3-use-migrations"></a>Paso 6-3: Uso de migraciones
 

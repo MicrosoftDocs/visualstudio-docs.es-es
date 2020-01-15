@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74485448"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75927774"
 ---
 Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.
 
@@ -97,12 +97,12 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 1. Elija **Crear una instancia de Azure Container Registry** y haga clic en **Publicar**.
 1. Rellene los valores deseados en el **Create a new Azure Container Registry** (Crear una nueva instancia de Azure Container Registry).
 
-    | Parámetro      | Valor sugerido  | DESCRIPCIÓN                                |
+    | Parámetro      | Valor sugerido  | Descripción                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefijo de DNS** | Nombre único globalmente | Nombre que identifica de forma única el nuevo registro de contenedor. |
     | **Suscripción** | Elija una suscripción | La suscripción de Azure que se va a usar. |
     | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nombre del grupo de recursos en el que se va a crear el registro de contenedor. Elija **Nuevo** para crear un grupo de recursos nuevo.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
     | **Ubicación del registro** | Una ubicación cercana a usted | Elija una ubicación en una [región](https://azure.microsoft.com/regions/) cercana a usted o a otros servicios que usarán el registro de contenedor. |
 
     ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio][0]

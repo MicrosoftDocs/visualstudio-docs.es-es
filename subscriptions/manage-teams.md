@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de administrar las suscripciones de equipos grandes y de contratistas externos.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491696"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850049"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipos grandes y contratistas externos
 Los administradores de suscripciones de Visual Studio se encargan de garantizar que cada usuario que interactúa con el software con licencia de Visual Studio tenga una licencia acorde a su propia suscripción de Visual Studio.
@@ -29,7 +29,7 @@ Aunque cada organización es diferente, una lista típica de equipos implicados 
 Los contratistas externos pueden traer licencias para interaccionar con el entorno de Visual Studio con licencia. Los miembros de Microsoft Certified Partners podrán recibir unas pocas suscripciones gratuitas de Visual Studio para uso interno. Sin embargo, estas suscripciones no abarcan actividades lucrativas, como desarrollar software personalizado para un cliente. Pida a los socios que le envíen una carta certificada en la que se explique qué licencias están proporcionando y cuáles necesitan que usted adquiera.
 
 ## <a name="resources"></a>Recursos
-- [Notas sobre la concesión de licencias de Visual Studio](https://aka.ms/vslicensing)
+- [Notas sobre la concesión de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

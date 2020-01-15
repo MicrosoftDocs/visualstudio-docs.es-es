@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594492"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849591"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio
 
@@ -127,11 +127,11 @@ Para obtener más información sobre cómo resolver incidencias con una [instala
 
 Los registros de instalación son necesarios para solucionar la mayoría de los problemas de instalación. Cuando se envía un problema mediante el uso de [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) del Instalador de Visual Studio, estos registros se incluyen automáticamente en el informe.
 
-Si se pone en contacto con el Soporte técnico de Microsoft, puede que necesite proporcionar estos registros de instalación mediante la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://aka.ms/vscollect). La herramienta de recopilación de registros recopila registros de instalación de todos los componentes instalados por Visual Studio, incluido .NET Framework, Windows SDK y SQL Server. También recopila información del equipo, un inventario de Windows Installer y la información de registro de eventos de Windows para el Instalador de Visual Studio, Windows Installer y Restaurar sistema.
+Si se pone en contacto con el Soporte técnico de Microsoft, puede que necesite proporcionar estos registros de instalación mediante la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://www.microsoft.com/download/details.aspx?id=12493). La herramienta de recopilación de registros recopila registros de instalación de todos los componentes instalados por Visual Studio, incluido .NET Framework, Windows SDK y SQL Server. También recopila información del equipo, un inventario de Windows Installer y la información de registro de eventos de Windows para el Instalador de Visual Studio, Windows Installer y Restaurar sistema.
 
 Para recopilar los registros:
 
-1. [Descargue la herramienta](https://aka.ms/vscollect).
+1. [Descargue la herramienta](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Abra un símbolo del sistema administrativo.
 3. Ejecute `Collect.exe` desde el directorio donde guardó la herramienta.
 4. Busque el archivo `vslogs.zip` resultante en el directorio `%TEMP%`, por ejemplo, `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.

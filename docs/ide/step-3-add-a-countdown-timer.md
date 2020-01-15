@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c445c8fa5b1b4c9b2e4a45025b161223bfa6de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 97188d7dcaff2133c22f4954146ba5e977ab2c6d
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588738"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776061"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
 
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.
 
 > [!NOTE]
-> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.
-> - Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Para descargar una versión completa del código, consulte [Ejemplo completo del tutorial de cuestionario de matemáticas](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Para agregar un temporizador de cuenta atrás
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta de GitHub.
-ms.openlocfilehash: 6279c9399a42bc07579f48c887987b4b662da9da
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315376"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944201"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta de GitHub 
 
@@ -49,7 +49,7 @@ R:  No todos los productos de Microsoft pueden acceder a GitHub.com desde su pá
 R:  No, en absoluto. Esto no cambia la contraseña de GitHub; solo dispone de otra manera de iniciar sesión en la cuenta Microsoft. Cada vez que inicie sesión con la dirección de correo electrónico, se le va a ofrecer la posibilidad de iniciar sesión con la contraseña de la cuenta Microsoft o de ir a GitHub para iniciar sesión. Se recomienda encarecidamente que, en caso de necesitar agregar una contraseña, se asegure de que es diferente de la contraseña de la cuenta de GitHub.
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>P: Quiero agregar la aplicación Authenticator a la cuenta que he creado mediante GitHub.  ¿Puedo hacerlo?
-R:  No hay ningún problema: simplemente descargue la aplicación e inicie sesión con la dirección de correo electrónico. Cuando inicia sesión con la dirección de correo electrónico, se le pide que elija la [aplicación Authenticator](https://go.microsoft.com/fwlink/?linkid=2090219) o GitHub como credencial.
+R:  No hay ningún problema: simplemente descargue la aplicación e inicie sesión con la dirección de correo electrónico. Cuando inicia sesión con la dirección de correo electrónico, se le pide que elija la [aplicación Authenticator](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) o GitHub como credencial.
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>P: He habilitado la autenticación en dos fases en las cuentas de GitHub y Microsoft (MSA), pero cuando inicio sesión en mi MSA, todavía se me pide que me autentique dos veces.  ¿Por qué?
 R: Debido a las restricciones de seguridad, Microsoft cuenta el inicio de sesión con GitHub como una verificación de un solo factor, aunque tenga habilitada la verificación en dos pasos. Por lo tanto, tiene que volver a autenticarse para la cuenta Microsoft. 
