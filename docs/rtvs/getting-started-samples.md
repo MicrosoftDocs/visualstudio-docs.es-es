@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950483"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843822"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Proyectos de ejemplo de Herramientas de R para Visual Studio
 
@@ -65,7 +65,7 @@ Como con todos los ejemplos, abra el archivo, coloque el cursor en la parte supe
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>¿Qué diferencia hay entre Microsoft R Open y Microsoft ML Server?
 
-[Microsoft R Open](https://aka.ms/rtvs-r-open), la distribución de Microsoft de R, se diferencia de [CRAN R](https://cran.r-project.org/) en dos aspectos importantes:
+[Microsoft R Open](https://mran.revolutionanalytics.com/download/), la distribución de Microsoft de R, se diferencia de [CRAN R](https://cran.r-project.org/) en dos aspectos importantes:
 
 1. [Mejor rendimiento de cálculo](https://mran.revolutionanalytics.com/rro/#intelmkl1) cuando se usa con bibliotecas [Intel Math Kernel Library](https://software.intel.com/intel-mkl). Las bibliotecas se pueden descargar de forma gratuita desde Microsoft para su uso con Microsoft R Open.
 
@@ -81,7 +81,7 @@ La siguiente comparación muestra que MLS y MRO con MKL tienen un rendimiento de
 
 ![Comparación de MLS y MRO con MKL y R y MRO sin MKL](media/samples-speed-comparison.png)
 
-Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
+Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
 
 En la siguiente ilustración se compara el tiempo transcurrido en segundos empleado en la creación de modelos de regresión logística para predecir retrasos en vuelos de más de 15 minutos.  El tiempo transcurrido empleado en CRAN R aumenta significativamente al agregar un número pequeño de filas, mientras que en MLS solo aumenta aproximadamente el doble. Para obtener detalles de esta prueba comparativa, consulte el ejemplo de *Benchmarks/rxGlm_benchmark.R*.
 

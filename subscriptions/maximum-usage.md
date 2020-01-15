@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Más información sobre cómo consultar el número máximo de suscripciones asignadas en el portal de administración
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491721"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852338"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Empleo de la característica Uso máximo para realizar un seguimiento del número de suscripciones asignadas
 Esta nueva característica del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de sus contratos. 
@@ -42,7 +42,7 @@ Por ejemplo, en la tabla anterior, puede ver que el día 13/12/2018 había 123 s
 R:  En la información general se muestran las asignaciones *actuales* y las suscripciones disponibles para cada nivel de suscripción.  Estos datos pueden ser muy diferentes del número máximo de suscripciones asignadas para el acuerdo durante el año actual o la duración del acuerdo.  La característica Uso máximo permite ver cuándo se han alcanzado los niveles de asignación máximos y cuáles han sido esos niveles.  Se trata de una distinción importante, puesto que la facturación de suscripciones correspondiente al recuento ajustado se basa en el número máximo de suscripciones asignadas en cualquier momento del año. 
 
 ## <a name="resources"></a>Recursos
-- [Notas sobre la concesión de licencias de Visual Studio](https://aka.ms/vslicensing)
+- [Notas sobre la concesión de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

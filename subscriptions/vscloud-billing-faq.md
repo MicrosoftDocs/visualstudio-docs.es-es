@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491264"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851413"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -37,7 +37,7 @@ R: La forma más sencilla de saber si tiene los privilegios adecuados consiste e
 Deberá seleccionar una suscripción de Azure (que es una cuenta de facturación) de una lista que se abre con las suscripciones de Azure que están vinculadas actualmente a su nombre de usuario.
 Dado que el nombre de la suscripción de Azure se establece de forma predeterminada en el tipo de cuenta de facturación que se posea ("Pago por uso", "Contrato Enterprise", etc.), suele quedar claro si la suscripción de Azure forma parte de su Contrato Enterprise.
 
-Otro método consiste en intentar tener acceso a [Azure Enterprise Portal](https://ea.azure.com).  Si puede tener acceso a este portal correctamente, significa que ya tiene el rol de administrador de la organización o de propietario de la cuenta. Solo los propietarios de cuentas pueden configurar nuevas cuentas de facturación de Azure en un Contrato Enterprise. Si no puede tener acceso a Azure Enterprise Portal, pregunte en su empresa para averiguar quién es el administrador de la organización y pida a esa persona que lo agregue como propietario de la cuenta en Azure Enterprise Portal.  Si no encuentra a esta persona, puede [cursar un vale de soporte](https://aka.ms/AzureEntSupport) y solicitar la información de contacto.  Para el vale de soporte necesitará el nombre de su organización y el número de inscripción de Contrato Enterprise.
+Otro método consiste en intentar tener acceso a [Azure Enterprise Portal](https://ea.azure.com).  Si puede tener acceso a este portal correctamente, significa que ya tiene el rol de administrador de la organización o de propietario de la cuenta. Solo los propietarios de cuentas pueden configurar nuevas cuentas de facturación de Azure en un Contrato Enterprise. Si no puede tener acceso a Azure Enterprise Portal, pregunte en su empresa para averiguar quién es el administrador de la organización y pida a esa persona que lo agregue como propietario de la cuenta en Azure Enterprise Portal.  Si no encuentra a esta persona, puede [cursar un vale de soporte](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) y solicitar la información de contacto.  Para el vale de soporte necesitará el nombre de su organización y el número de inscripción de Contrato Enterprise.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: ¿Puedo usar el crédito del compromiso monetario de Azure de mi Contrato Enterprise para adquirir una suscripción de nube de Visual Studio?
 R: No, estos fondos de prepago no son aptos para adquirir suscripciones de nube de Visual Studio. Cuando se usa una suscripción de Azure creada para un Contrato Enterprise para comprar suscripciones de nube de Visual Studio, estos cargos aparecerán reflejados en su próxima factura de uso por encima del límite. Esto suele suceder mensualmente, pero según la experiencia previa de algunos clientes de Contrato Enterprise, es posible que no se emita una factura de uso por encima del límite durante varios meses. Acuda a un especialista en licencias de Contrato Enterprise si necesita saber qué cantidad de compras extra (compras que no son viables con el crédito del compromiso monetario de Azure) van a desembocar en una factura de uso por encima del límite.

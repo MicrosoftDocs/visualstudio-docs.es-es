@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
-ms.openlocfilehash: 119c257ef2c1120e8c97995c1fad076bae093ac0
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: cb6f9e3a41236d10b0558a508c2531b08ec7fe13
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983495"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845818"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Solución del problema: ¿Por qué no puedo ver todas las plantillas disponibles?
 
@@ -27,4 +27,4 @@ En el cuadro de diálogo Nuevo proyecto, solo se ven las plantillas de los compo
 |Mac     |macOS (Cocoa)         |
 |.NET Core     |.NET Core         |
 
-Ejecute de nuevo VisualStudioForMacInstaller.dmg para instalar los componentes. Si ya no lo tiene, puede descargarlo desde la página web de [Visual Studio para Mac](https://aka.ms/vsmac).
+Ejecute de nuevo VisualStudioForMacInstaller.dmg para instalar los componentes. Si ya no lo tiene, puede descargarlo desde la página web de [Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/).

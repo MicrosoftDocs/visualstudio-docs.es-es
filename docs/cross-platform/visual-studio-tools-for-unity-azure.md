@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818377"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916824"
 ---
 # <a name="program-with-unity-and-azure"></a>Programa con Unity y Azure
 
@@ -30,12 +30,12 @@ Azure ofrece una solución escalable para almacenar telemetría y otros datos de
 
 Visite [The Sandbox](/sandbox/) para probar los siguientes SDK de Azure experimentales con Unity:
 
-* [Azure Storage SDK for Unity](https://aka.ms/azstoragegamedev) (SDK de Azure Storage para Unity)
-* [Azure Storage SDK for Unity](https://aka.ms/azeventhubsgamedev) (SDK de Event Hubs de Azure para Unity)
-* [Azure Mobile Apps SDK for Unity](https://aka.ms/azmobileappsgamedev) (SDK de Mobile Apps de Azure para Unity)
+* [Azure Storage SDK for Unity](/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek) (SDK de Azure Storage para Unity)
+* [Azure Storage SDK for Unity](/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek) (SDK de Event Hubs de Azure para Unity)
+* [Azure Mobile Apps SDK for Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek) (SDK de Mobile Apps de Azure para Unity)
 
 ## <a name="azure-sdk-sample"></a>Ejemplo de SDK de Azure
 
-También hay un [juego de ejemplo sencillo](https://aka.ms/azmobileappsracer) en el que se utiliza el SDK de tablas fáciles de Azure y Unity. En este juego se usa el almacenamiento de datos de tablas fáciles de Azure para realizar el seguimiento de la tabla de clasificación de alta puntuación y la telemetría del juego, y está disponible para su [descarga desde GitHub](https://aka.ms/azsamples-unity).
+También hay un [juego de ejemplo sencillo](/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer) en el que se utiliza el SDK de tablas fáciles de Azure y Unity. En este juego se usa el almacenamiento de datos de tablas fáciles de Azure para realizar el seguimiento de la tabla de clasificación de alta puntuación y la telemetría del juego, y está disponible para su [descarga desde GitHub](https://github.com/BrianPeek/AzureSamples-Unity).
 
 ![Captura de pantalla de juego de ejemplo](media/vstu_azure-test-sample-game-image2.png)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787745"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851399"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 Los partners que participen en el programa [Proveedor de soluciones en la nube (CSP)](https://partner.microsoft.com/cloud-solution-provider) pueden adquirir suscripciones de nube de Visual Studio Enterprise y de Professional de Visual Studio para sus clientes.
@@ -68,7 +68,7 @@ Para ver los precios de Visual Studio para partners CSP, inicie sesión en el [C
 
 Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 
-| Meter category    |   nombre                 |  Unidades                                |           Qué es                          |
+| Meter category    |   NOMBRE                 |  Unidades                                |           Qué es                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Programa para la mejora     | Empresa             |  Suscripción                         | Suscripción mensual de Visual Studio Enterprise   |
 | Programa para la mejora     | Profesional           |  Suscripción                         | Suscripción mensual de Visual Studio Professional |
@@ -103,5 +103,5 @@ Estos descuentos aparecen reflejados en los datos de precios del [Centro de part
 R:  No, los precios de las suscripciones de Visual Studio son fijos. El precio es el mismo tanto para las suscripciones nuevas como para las que sigan renovándose.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: ¿Existen opciones de precios de desarrollo/pruebas de Azure para CSP?
-R: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://aka.ms/azuredevtestpricing), pero no tenemos algo que sea específico para CSP.
+R: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://azure.microsoft.com/pricing/dev-test/), pero no tenemos algo que sea específico para CSP.
 

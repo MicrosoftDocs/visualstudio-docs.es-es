@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853495"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847461"
 ---
 # <a name="visual-studio-feedback-options"></a>Opciones de comentarios de Visual Studio
 
@@ -75,12 +75,12 @@ Existen dos formas de ayudarnos a mejorar la documentación:
 
 ## <a name="contact-microsoft-support"></a>Ponerse en contacto con el soporte técnico de Microsoft
 
-Para información sobre soporte técnico de Visual Studio, consulte la página sobre [mantenimiento y ciclo de vida del producto](/visualstudio/releases/2019/servicing/). Para otros servicios y productos de Microsoft, vea [Soporte técnico de Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obtener ayuda en línea.
+Para información sobre soporte técnico de Visual Studio, consulte la página sobre [mantenimiento y ciclo de vida del producto](/visualstudio/releases/2019/servicing/). Para otros servicios y productos de Microsoft, vea [Soporte técnico de Microsoft](https://support.microsoft.com/) para obtener ayuda en línea.
 
 > [!NOTE]
 > El soporte técnico fuera de Estados Unidos y Canadá puede variar. Para obtener una lista de contactos regionales, vea [Sitios de Microsoft en todo el mundo](https://www.microsoft.com/worldwide/).
 
-Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas de soporte técnico empresarial. Para más información, consulte las [soluciones de soporte técnico empresarial de Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+Para las organizaciones grandes que requieren compatibilidad administrada de Microsoft directamente, los contratos están disponibles a través de las ofertas de soporte técnico empresarial. Para más información, consulte las [soluciones de soporte técnico empresarial de Microsoft](https://www.microsoft.com/industry/services/support).
 
 Si el producto viniera instalado con un nuevo equipo o dispositivo, el fabricante del hardware proporciona soporte técnico y ayuda para este software. Ponerse en contacto directamente con el fabricante para saber si es compatible.
 

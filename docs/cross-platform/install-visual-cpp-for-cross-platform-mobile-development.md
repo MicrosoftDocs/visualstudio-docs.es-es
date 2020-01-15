@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588884"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916480"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalación del desarrollo móvil multiplataforma con C++
 
@@ -98,7 +98,7 @@ Si decide no instalar una o más dependencias de terceros mediante el Instalador
 
 Puede volver a ejecutar la aplicación de administrador de SDK en el directorio del SDK de Android para actualizar el SDK e instalar herramientas opcionales y niveles de API adicionales. Las actualizaciones pueden no instalarse correctamente si no usa la opción **Ejecutar como administrador** para ejecutar la aplicación SDK Manager. Si tiene problemas para crear una aplicación Android, compruebe el SDK Manager por si hay actualizaciones para los SDK instalados.
 
-Para usar algunos de los emuladores de Android que vienen con Android SDK, puede que tenga que instalar la aceleración de hardware. Para más información, vea [Aceleración de hardware para el rendimiento del emulador (Hyper-V y HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Para usar algunos de los emuladores de Android que vienen con Android SDK, puede que tenga que instalar la aceleración de hardware. Para más información, vea [Aceleración de hardware para el rendimiento del emulador (Hyper-V y HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 En la mayoría de los casos, Visual Studio puede detectar las configuraciones del software de terceros que haya instalado y mantiene las rutas de instalación en variables de entorno internas. Puede reemplazar las rutas de acceso predeterminadas de estas herramientas de desarrollo multiplataforma en el IDE de Visual Studio.
 
@@ -117,4 +117,4 @@ En la mayoría de los casos, Visual Studio puede detectar las configuraciones de
 ## <a name="see-also"></a>Vea también
 
 - [Instalar y configurar herramientas para compilar con iOS](install-and-configure-tools-to-build-using-ios.md)
-- [Desarrollo móvil multiplataforma de Visual Studio C++](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Desarrollo móvil multiplataforma de Visual Studio C++](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

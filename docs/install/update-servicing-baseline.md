@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590961"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776186"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
 
@@ -62,7 +62,7 @@ Otra opción para controlar las actualizaciones en un cliente es [desactivar las
 
 Cuando hay una actualización para una línea base de mantenimiento, se publican los archivos del programa previo de versión no editable para la actualización de mantenimiento en [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-En el caso de los administradores que implementan mediante una instalación de diseño en red, el administrador debe actualizar la [ubicación del diseño](update-a-network-installation-of-visual-studio.md). Los clientes que instalaron desde la ubicación recibirán notificaciones de actualización. Si la actualización debe implementarse en los clientes, siga [estas instrucciones](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Si modifica el archivo "response.json" de una actualización, no agregue más cargas de trabajo, componentes ni lenguajes. La administración de esta configuración debe realizarse como una implementación de tipo "modify" después de actualizar el producto.
+En el caso de los administradores que implementan mediante una instalación de diseño en red, el administrador debe actualizar la [ubicación del diseño](update-a-network-installation-of-visual-studio.md). Los clientes que instalaron desde la ubicación recibirán notificaciones de actualización. Si la actualización debe implementarse en los clientes, siga [estas instrucciones](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Si modifica el archivo "response.json" de una actualización, no agregue más cargas de trabajo, componentes ni lenguajes. La administración de esta configuración debe realizarse como una implementación de tipo "modify" después de actualizar el producto.
 
 En el caso de una instalación basada en Internet, ejecute el nuevo programa previo de versión no editable con el parámetro `--channelUri` que apunte a un manifiesto de canal no existente en el cliente. Si la actualización se implementa en modo silencioso o pasivo, use dos comandos independientes:
 

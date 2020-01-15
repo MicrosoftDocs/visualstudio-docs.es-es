@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188723"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846941"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visualización y diagnóstico de contenedores e imágenes en Visual Studio
 
@@ -21,7 +21,7 @@ Puede ver lo que está ocurriendo dentro de los contenedores que hospedan la apl
 ## <a name="prerequisites"></a>Requisitos previos
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 versión 16.4 Preview 2](https://visualstudio.microsoft.com/downloads) o posterior, o bien, si usa una versión anterior de Visual Studio 2019, instale la [extensión de ventana de contenedores](https://aka.ms/vscontainerspreview).
+- [Visual Studio 2019 versión 16.4 Preview 2](https://visualstudio.microsoft.com/downloads) o posterior, o bien, si usa una versión anterior de Visual Studio 2019, instale la [extensión de ventana de contenedores](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Visualización de información acerca de los contenedores
 
