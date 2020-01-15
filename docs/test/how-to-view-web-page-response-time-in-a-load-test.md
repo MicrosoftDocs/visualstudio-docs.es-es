@@ -84,7 +84,7 @@ Para ver los datos de tiempo de respuesta en un gráfico:
 
     Los datos se agregan al gráfico.
 
-7. (Opcional) Repita el paso anterior para Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
+7. (Opcional) Repita el paso anterior para  **Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
 
    > [!NOTE]
    > **Objetivo de tiempo de respuesta** es constante.
