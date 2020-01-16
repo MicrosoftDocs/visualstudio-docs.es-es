@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986292"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115057"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
@@ -122,7 +122,7 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 
 |Nivel de diseño|Tipos de diagramas|
 |-|-|
-|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
+|Proceso empresarial<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
 |Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Las reglas de negocios y los requisitos de calidad de servicio se pueden describir en documentos independientes.|
 |Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|-Los diagramas de dependencia describen cómo se estructura el sistema en partes interdependientes. Puede validar el código de programa con los diagramas de dependencia para asegurarse de que se adhiere a la arquitectura.|
 |Análisis de código<br /><br /> Los diagramas se pueden generar a partir del código.|-Los diagramas de dependencia muestran las dependencias entre las clases. El código actualizado se puede validar con un diagrama de dependencia.<br />-Los diagramas de clases muestran las clases del código.|

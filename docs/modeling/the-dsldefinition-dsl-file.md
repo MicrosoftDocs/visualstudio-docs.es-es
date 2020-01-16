@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605987"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114920"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Los ejemplos de este tema se toman de la plantilla de solución Diagrama de comp
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Secciones del archivo DslDefinition.dsl
 
-El elemento raíz es \<Dsl >, y sus atributos identifican el nombre del lenguaje específico de dominio, el espacio de nombres y los números de versión principal y secundaria para el control de versiones. El esquema `DslDefinitionModel` define el contenido y la estructura de un archivo DslDefinition.dsl válido.
+El elemento raíz es \<> DSL, y sus atributos identifican el nombre del lenguaje específico de dominio, el espacio de nombres y los números de versión principal y secundaria para el control de versiones. El esquema `DslDefinitionModel` define el contenido y la estructura de un archivo DslDefinition.dsl válido.
 
-Los elementos secundarios del \<Dsl elemento raíz > son los siguientes:
+Los elementos secundarios del elemento raíz \<DSL > son los siguientes:
 
 ### <a name="classes"></a>Clases
 
@@ -40,7 +40,7 @@ En esta sección se define cada relación del modelo. El origen y el destino rep
 
 ### <a name="types"></a>Tipos
 
-En esta sección se define cada tipo y su espacio de nombres. Las propiedades de dominio tienen dos tipos. `DomainEnumerations` se definen en el modelo y generan tipos en DomainModel.cs. `ExternalTypes` hacen referencia a los tipos que se definen en otras partes (como `String` o `Int32`) y no generan nada.
+En esta sección se define cada tipo y su espacio de nombres. Las propiedades de dominio tienen dos tipos. `DomainEnumerations` se definen en el modelo y generan tipos en DomainModel.cs. `ExternalTypes` hacen referencia a los tipos que se definen en otra parte (como `String` o `Int32`) y no generan nada.
 
 ### <a name="shapes"></a>Formas
 
@@ -66,7 +66,7 @@ En esta sección se define un generador de conexiones para cada herramienta de c
 
 En esta sección se define un diagrama y se usa para especificar propiedades, como el color de fondo, y la clase raíz. (La clase raíz es la clase de dominio representada por el diagrama en conjunto). La sección Diagram también contiene elementos ShapeMap y ConnectorMap, que especifican la forma o el conector que representa cada clase o relación de dominio.
 
-### <a name="designer"></a>Diseñador
+### <a name="designer"></a>Diseñador de
 
 En esta sección se define un diseñador (editor), que reúne un **cuadro de herramientas**, la configuración de validación, un diagrama y un esquema de serialización. En la sección Designer también se define la clase raíz del modelo, que normalmente es también la clase raíz del diagrama.
 
@@ -148,7 +148,7 @@ Cada clase tiene un conjunto de propiedades y podría tener una clase base. En e
 </DomainClass>
 ```
 
-`NamedElement` es la base de varias de las demás clases, como `Component`, que tiene sus propias propiedades además de la propiedad `Name`, que heredó de `NamedElement`. El nodo secundario BaseClass contiene una referencia de moniker. Como la clase referenciada está en el mismo espacio de nombres, en el moniker solo se necesita su nombre.
+`NamedElement` es la base de varias de las otras clases, como `Component`, que tiene sus propias propiedades además de la propiedad `Name`, que hereda de `NamedElement`. El nodo secundario BaseClass contiene una referencia de moniker. Como la clase referenciada está en el mismo espacio de nombres, en el moniker solo se necesita su nombre.
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -170,11 +170,11 @@ Todas las clases de dominio (incluidas relaciones, formas, conectores y diagrama
 
 - **Nombre y espacio de nombres.** Estos atributos especifican el nombre y el espacio de nombres de la clase en el código generado. Juntos deben ser únicos en el lenguaje específico de dominio.
 
-- **InheritanceModifier.** Este atributo es "abstract", "Sealed" o ninguno.
+- **InheritanceModifier.** Este atributo es "abstract", "sealed" o "none".
 
 - **Mostrar.** Este atributo es el nombre que aparece en la ventana **propiedades** . El atributo DisplayName puede contener espacios y otros signos de puntuación.
 
-- **GeneratesDoubleDerived.** Si este atributo se establece en true, se generan dos clases y una es una subclase de la otra. Todos los métodos generados están en la clase base y los constructores están en la subclase. Al establecer este atributo puede invalidar los métodos generados en el código personalizado.
+- **GeneratesDoubleDerived.** Si este atributo se establece en True, se generan dos clases y una es una subclase de la otra. Todos los métodos generados están en la clase base y los constructores están en la subclase. Al establecer este atributo puede invalidar los métodos generados en el código personalizado.
 
 - **HasCustomConstructor**. Si este atributo se establece en True, el constructor se omite del código generado para que pueda escribir su propia versión.
 
@@ -212,7 +212,7 @@ Cada propiedad de dominio puede tener también estos atributos:
 
 - **IsElementName**. Si este atributo se establece en True, su valor se establece automáticamente en un valor único cuando se crea una instancia de la clase primaria. Este atributo se puede establecer en True solo para una propiedad en cada clase, que debe tener un tipo String. En el ejemplo Component Diagram (Diagrama de componentes), la propiedad `Name` de `NamedElement` tiene `IsElementName` establecido en True. Siempre que un usuario crea un elemento `Component` (que hereda de `NamedElement`), el nombre se inicializa automáticamente en algo como "Component6".
 
-- `DefaultValue`Operador Si ha especificado este atributo, el valor que especificó se asigna a este atributo para las nuevas instancias de esta clase. Si `IsElementName` está establecido, el atributo DefaultValue especifica la parte inicial de la nueva cadena.
+- `DefaultValue`. Si ha especificado este atributo, el valor que especificó se asigna a este atributo para las nuevas instancias de esta clase. Si `IsElementName` está establecido, el atributo DefaultValue especifica la parte inicial de la nueva cadena.
 
 - **Categoría** es el encabezado en el que la propiedad aparecerá en la ventana **propiedades** .
 
@@ -498,7 +498,7 @@ El archivo DslDefinition.dsl es un archivo serializado conforme a la definición
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators es la relación de incrustación entre `Connector` y `Decorator`. `UseFullForm` se ha establecido de manera que el nombre de la relación aparezca con su lista de propiedades para cada vínculo desde el objeto Connector. Sin embargo, `OmitElement` también se ha establecido para ningún `RoleElementName` contenga varios vínculos que están incrustados dentro de `Connector`:
+- ConnectorHasDecorators es la relación de incrustación entre `Connector` y `Decorator`. `UseFullForm` se ha establecido para que el nombre de la relación aparezca con la lista de propiedades de cada vínculo del objeto de conector. Sin embargo, `OmitElement` también se ha establecido para ningún `RoleElementName` contenga varios vínculos que están incrustados dentro de `Connector`:
 
 ```xml
 <Connector Name="AssociationLink" ...>
