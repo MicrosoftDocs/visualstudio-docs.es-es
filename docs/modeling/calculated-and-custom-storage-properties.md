@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748541"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115200"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador de lenguajes, y se puede tener acceso a ellas mediante el código del programa. Sin embargo, las propiedades se diferencian en la forma en que se almacenan sus valores.
@@ -26,7 +26,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 |-|-|
 |**Estándar** (predeterminado)|Propiedad de dominio que se guarda en el *almacén* y se serializa en el archivo.|
 |**Previamente**|Propiedad de dominio de solo lectura que no se guarda en el almacén, pero que se calcula a partir de otros valores.<br /><br /> Por ejemplo, `Person.Age` podría calcularse a partir de `Person.BirthDate`.<br /><br /> Debe proporcionar el código que realiza el cálculo. Normalmente, el valor se calcula desde otras propiedades de dominio. Sin embargo, también puede usar recursos externos.|
-|**Almacenamiento personalizado**|Propiedad de dominio que no se guarda directamente en el almacén, pero que puede ser get y set.<br /><br /> Debe proporcionar los métodos que obtienen y establecen el valor.<br /><br /> Por ejemplo, `Person.FullAddress` podría almacenarse en `Person.StreetAddress`, `Person.City` y `Person.PostalCode`.<br /><br /> También puede tener acceso a recursos externos, por ejemplo, para obtener y establecer los valores de una base de datos.<br /><br /> El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` sea true. Vea [transacciones y establecedores personalizados](#setters).|
+|**Almacenamiento personalizado**|Propiedad de dominio que no se guarda directamente en el almacén, pero que puede ser get y set.<br /><br /> Debe proporcionar los métodos que obtienen y establecen el valor.<br /><br /> Por ejemplo, `Person.FullAddress` podría almacenarse en `Person.StreetAddress`, `Person.City`y `Person.PostalCode`.<br /><br /> También puede tener acceso a recursos externos, por ejemplo, para obtener y establecer los valores de una base de datos.<br /><br /> El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` sea true. Vea [transacciones y establecedores personalizados](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Proporcionar el código para una propiedad de almacenamiento calculada o personalizada
  Si establece el tipo de una propiedad de dominio en almacenamiento calculado o personalizado, tiene que proporcionar métodos de acceso. Al compilar la solución, un informe de errores le indicará lo que es necesario.
@@ -52,7 +52,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
     > [!NOTE]
     > Este archivo se genera a partir de DslDefinition. DSL. Si edita este archivo, los cambios se perderán la próxima vez que haga clic en **transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
 
-6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, CustomCode \\*YourDomainClass*. cs.
+6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, CustomCode\\*YourDomainClass*. cs.
 
      Asegúrese de que el espacio de nombres es el mismo que en el código generado.
 
