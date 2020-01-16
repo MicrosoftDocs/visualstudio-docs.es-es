@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748380"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114524"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Cómo: Interceptar un clic en una forma o decorador
 Los procedimientos siguientes muestran cómo interceptar un clic en una forma o un decorador de icono. Puede interceptar clics, hacer doble clic, arrastrar y otros gestos y hacer que el elemento responda.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Para interceptar los clics en formas
- En el proyecto DSL, en un archivo de código que es independiente de los archivos de código generados, escriba una definición de clase parcial para la clase Shape. Invalide `OnDoubleClick()` o uno de los otros métodos cuyo nombre empieza por `On...`. Por ejemplo:
+ En el proyecto DSL, en un archivo de código que es independiente de los archivos de código generados, escriba una definición de clase parcial para la clase Shape. Invalide `OnDoubleClick()` o uno de los otros métodos cuyo nombre comienza por `On...`. Por ejemplo:
 
 ```csharp
 public partial class MyShape // change

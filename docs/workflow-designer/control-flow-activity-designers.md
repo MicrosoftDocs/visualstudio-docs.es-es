@@ -3,17 +3,17 @@ title: Diseñadores de actividad de flujo de control de Diseñador de flujo de t
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189766"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114674"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 
@@ -55,7 +55,7 @@ Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 
- [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
+ [Primitives](../workflow-designer/primitives-activity-designers.md)
 
  [Transacción](../workflow-designer/transaction-activity-designers.md)
 

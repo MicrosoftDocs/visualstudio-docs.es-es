@@ -3,17 +3,17 @@ title: Diseñadores de actividades de control de errores de Diseñador de flujo 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fe4546ec9e16af07b522af3a94ac72923766ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eb8aee0048ae861aa460c7a8286f168bf150bd9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650502"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111319"
 ---
 # <a name="error-handling-activity-designers"></a>Diseñadores de actividades de control de errores
 

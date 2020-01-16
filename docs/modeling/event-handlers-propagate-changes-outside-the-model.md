@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f35c94004a76e5671585969686798c38e5f750e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747560"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114592"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Usar eventos para realizar ajustes que se puedan deshacer en el almacén
 
-Normalmente, los eventos de almacén no se usan para propagar los cambios dentro del almacén, ya que el controlador de eventos se ejecuta después de confirmar la transacción. En su lugar, usaría una regla de almacén. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+Normalmente, los eventos de almacén no se usan para propagar los cambios dentro del almacén, ya que el controlador de eventos se ejecuta después de confirmar la transacción. En su lugar, usaría una regla de almacén. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
 Sin embargo, puede usar un controlador de eventos para realizar actualizaciones adicionales en el almacén, si desea que el usuario pueda deshacer las actualizaciones adicionales por separado del evento original. Por ejemplo, supongamos que los caracteres en minúsculas son la Convención habitual de los títulos de álbumes. Podría escribir un controlador de eventos de almacén que corrija el título a minúsculas después de que el usuario lo hubiera escrito en mayúsculas. Pero el usuario podría usar el comando Deshacer para cancelar la corrección y restaurar los caracteres en mayúsculas. Una segunda operación de deshacer quitaría el cambio del usuario.
 
@@ -175,7 +175,7 @@ Cada tipo de evento corresponde a una colección en Store. EventManagerDirectory
 |ElementAdded|Se crea una instancia de una clase de dominio, relación de dominio, forma, conector o diagrama.|
 |ElementDeleted|Un elemento de modelo se ha quitado del directorio de elementos del almacén y ya no es el origen ni el destino de ninguna relación. En realidad, el elemento no se elimina de la memoria, sino que se conserva en el caso de una operación de deshacer futura.|
 |ElementEventsBegun|Se invoca al final de una transacción externa.|
-|Evento elementeventsended|Se invoca cuando se han procesado todos los demás eventos.|
+|ElementEventsEnded|Se invoca cuando se han procesado todos los demás eventos.|
 |ElementMoved|Un elemento de modelo se ha pasado de una partición de almacén a otra.<br /><br /> Esto no está relacionado con la ubicación de una forma en el diagrama.|
 |ElementPropertyChanged|El valor de una propiedad de dominio ha cambiado. Solo se ejecuta si los valores antiguos y nuevos no son iguales.|
 |RolePlayerChanged|Uno de los dos roles (extremos) de una relación hace referencia a un nuevo elemento.|

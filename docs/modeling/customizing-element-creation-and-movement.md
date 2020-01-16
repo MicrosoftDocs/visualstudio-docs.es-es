@@ -6,23 +6,23 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747612"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114246"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
 Puede permitir que un elemento se arrastre en otro, ya sea desde el cuadro de herramientas o en una operación de pegar o mover. Los elementos que se han desconectado se pueden vincular a los elementos de destino mediante las relaciones que se especifiquen.
 
-Una directiva de combinación de elementos (EMD) especifica lo que ocurre cuando un elemento de modelo se *combina* en otro elemento de modelo. Esto sucede cuando:
+Una directiva de combinación de elementos (EMD) especifica lo que ocurre cuando un elemento de modelo se *combina* en otro elemento de modelo. Esto ocurre cuando:
 
 - El usuario arrastra desde el cuadro de herramientas hasta el diagrama o una forma.
 
@@ -71,7 +71,7 @@ Puede agregar código personalizado a las directivas de combinación:
 > [!NOTE]
 > Si escribe código de combinación personalizado, solo afectará a las combinaciones realizadas mediante este EMD. Si hay otros EMDs que combinen el mismo tipo de objeto, o si hay otro código personalizado que cree estos objetos sin usar EMD, no se verán afectados por el código de combinación personalizado.
 >
-> Si desea asegurarse de que el código personalizado siempre procese un nuevo elemento o una nueva relación, considere la posibilidad de definir una `AddRule` en la relación de incrustación y una `DeleteRule` en la clase de dominio del elemento. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+> Si desea asegurarse de que el código personalizado siempre procese un nuevo elemento o una nueva relación, considere la posibilidad de definir una `AddRule` en la relación de incrustación y una `DeleteRule` en la clase de dominio del elemento. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Ejemplo: definir un EMD sin código personalizado
 
@@ -109,7 +109,7 @@ Los usuarios también pueden pegar elementos en otros elementos.
 
       Puede usar la herramienta de navegación ruta de acceso para crear cada ruta de acceso:
 
-      1. En **procesar combinación creando vínculos en rutas**de acceso, haga clic en **\<add ruta de acceso >** .
+      1. En **procesar combinación creando vínculos en rutas**de acceso, haga clic en **\<agregar ruta de acceso >** .
 
       2. Haga clic en la flecha desplegable situada a la derecha del elemento de lista. Aparece una vista de árbol.
 
@@ -214,7 +214,7 @@ En el código de combinación personalizado, puede definir lo que ocurre cuando 
 
 2. Invalide el método `MergeRelate` y, opcionalmente, el método `MergeDisconnect`. Para ello, debe establecer la propiedad **genera Double derived** de la clase de dominio. El código puede llamar al código de combinación generado en la clase base. Utilice esta opción si desea realizar operaciones adicionales después de que se haya realizado la combinación.
 
-   Estos enfoques solo afectan a las combinaciones que se realizan mediante este EMD. Si desea influir en todas las formas en que se puede crear el elemento combinado, una alternativa es definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinado. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   Estos enfoques solo afectan a las combinaciones que se realizan mediante este EMD. Si desea influir en todas las formas en que se puede crear el elemento combinado, una alternativa es definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinado. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="to-override-mergerelate"></a>Para invalidar MergeRelate
 
@@ -272,7 +272,7 @@ En el código de combinación personalizado, puede definir lo que ocurre cuando 
 
 4. Escriba los métodos en una definición de clase parcial en un archivo de código independiente. Los ejemplos que inspeccionó anteriormente deberían sugerir lo que necesita.
 
-   El código de combinación personalizado no afectará al código que crea objetos y relaciones directamente, y no afectará a otros EMDs. Para asegurarse de que se implementan los cambios adicionales con independencia de cómo se cree el elemento, considere la posibilidad de escribir un `AddRule` y un `DeleteRule` en su lugar. Para obtener más información, vea [propagar los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   El código de combinación personalizado no afectará al código que crea objetos y relaciones directamente, y no afectará a otros EMDs. Para asegurarse de que se implementan los cambios adicionales con independencia de cómo se cree el elemento, considere la posibilidad de escribir un `AddRule` y un `DeleteRule` en su lugar. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Redirigir una operación Merge
 
@@ -304,7 +304,7 @@ Puede crear una directiva de combinación hacia delante en la solución modelo d
 
     La nueva ruta de acceso debe ser similar a esta:
 
-    **Componente ComponentHasPorts. Component/!**
+    **ComponentHasPorts.Component/!Component**
 
 9. Guarde la solución y, a continuación, transforme las plantillas haciendo clic en el botón situado más a la derecha en la barra de herramientas **Explorador de soluciones** .
 
