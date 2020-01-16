@@ -3,17 +3,17 @@ title: Procedimiento para ampliar el código generado con O-R Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89410d224adf0980e51c691dbf581655cc2ff3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 588eb0f61dbc16fb1625752417ac5257bf48320f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648358"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113688"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedimiento para ampliar el código generado con Object Relational Designer
 El código generado por **Object** Relational Designer se vuelve a generar cuando se realizan cambios en las clases de entidad y otros objetos en la superficie del diseñador. Debido a esta regeneración del código, cualquier código que se agregue al código generado se suele sobrescribir cuando el diseñador vuelve a generar el código. Object Relational **Designer** proporciona la capacidad de generar archivos de clase parcial en los que se puede agregar código que no se sobrescribe. Un ejemplo de cómo agregar su propio código al código generado por Object Relational **Designer** es agregar la validación de datos a clases LINQ to SQL (entidad). Para obtener más información, consulte [Cómo: agregar validación a clases de entidad](../data-tools/how-to-add-validation-to-entity-classes.md).

@@ -2,17 +2,17 @@
 title: Compartir clases entre DSL mediante una biblioteca DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747404"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111368"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
 En el SDK de visualización y modelado de Visual Studio, puede crear una definición de DSL incompleta que se puede importar en otro DSL. Esto le permite factorizar partes comunes de modelos similares.
@@ -37,11 +37,11 @@ En el SDK de visualización y modelado de Visual Studio, puede crear una definic
 
 4. Puede Agregar personalizaciones que requieran código adicional, como restricciones de validación.
 
-5. Haga clic en **transformar todas las plantillas**.
+5. Haga clic en **Transformar todas las plantillas**.
 
-6. Compile el proyecto.
+6. Generar el proyecto.
 
-7. Al distribuir el DSL para que lo usen otras personas, debe proporcionar el ensamblado compilado (DLL) y el `DslDefinition.dsl` de archivos. Puede encontrar el ensamblado compilado en una carpeta en `Dsl\bin\*`
+7. Al distribuir el DSL para que lo usen otras personas, debe proporcionar el ensamblado compilado (DLL) y el `DslDefinition.dsl`de archivos. Puede encontrar el ensamblado compilado en una carpeta en `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL
 
@@ -53,7 +53,7 @@ En el SDK de visualización y modelado de Visual Studio, puede crear una definic
 
 3. Puede utilizar las clases importadas como clases base. Cree una clase de dominio en el ADSL de importación y, en el ventana Propiedades, establezca **clase base** en una clase importada.
 
-4. Haga clic en transformar todas las plantillas.
+4. Haga clic en Transformar todas las plantillas.
 
 5. Agregue al proyecto DSL una referencia al ensamblado (DLL) compilado por el proyecto de biblioteca DSL.
 

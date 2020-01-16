@@ -8,17 +8,17 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648566"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113660"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
@@ -26,13 +26,13 @@ Cuando se arrastran elementos desde la [ventana orígenes de datos](add-new-data
 
 ::: moniker range="vs-2017"
 
-Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0 \Data** clave del registro de los diseñadores.
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores de **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en la clave del registro de **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0 \Data** clave del registro de los diseñadores.
+Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores de **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en la clave del registro de **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\data Designers** .
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ En la tabla siguiente se muestra la configuración predeterminada interna de est
 |**SmartCaptionSuffix**|**:**|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo lo hace `Company Name:`|
 
 > [!CAUTION]
-> Tenga mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Utilice el editor del registro bajo su responsabilidad.
+> Tenga mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Utilice el Editor del Registro bajo su responsabilidad.
 >
 > Para obtener información sobre la copia de seguridad, la edición y la restauración del registro, consulte [información del registro de Windows para usuarios avanzados](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
@@ -68,7 +68,7 @@ En la tabla siguiente se muestra la configuración predeterminada interna de est
 
 2. Escriba `regedit` en el cuadro de diálogo **Ejecutar** y haga clic en **Aceptar**.
 
-3. Expanda el nodo **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
+3. Expanda el nodo **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ En la tabla siguiente se muestra la configuración predeterminada interna de est
 
 2. Escriba `regedit` en el cuadro de diálogo **Ejecutar** y haga clic en **Aceptar**.
 
-3. Expanda el nodo **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
+3. Expanda el nodo **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 

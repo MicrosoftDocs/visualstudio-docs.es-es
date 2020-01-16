@@ -2,17 +2,17 @@
 title: Crear lenguajes específicos de dominio basados en Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654106"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114883"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en Windows Forms
 
@@ -33,13 +33,13 @@ La plantilla DSL del **Diseñador de WinForm mínima** crea un DSL mínimo que p
    | | |
    |-|-|
    | Nombre de solución y DSL | FarmApp |
-   | Espacio de nombres | Company. FarmApp |
+   | Espacio de nombres | Company.FarmApp |
 
 2. Experimente con el ejemplo inicial que proporciona la plantilla:
 
    1. Transformar todas las plantillas.
 
-   2. Compile y ejecute el ejemplo (**Ctrl** +**F5**).
+   2. Compile y ejecute el ejemplo (**Ctrl**+**F5**).
 
    3. En la instancia experimental de Visual Studio, abra el archivo `Sample` en el proyecto de depuración.
 
@@ -53,7 +53,7 @@ La plantilla DSL del **Diseñador de WinForm mínima** crea un DSL mínimo que p
 
 - `DslDefinition.dsl` no contiene elementos de diagrama. Esto se debe a que no usará diagramas DSL para ver modelos de instancia de este DSL. En su lugar, enlazará un Windows Form al modelo y los elementos del formulario mostrarán el modelo.
 
-- Además de los proyectos de `Dsl` y `DslPackage`, la solución contiene un tercer proyecto denominado `UI.` proyecto de**interfaz de usuario** contiene la definición de un control de Windows Forms. `DslPackage` depende de `UI` y `UI` depende de `Dsl`.
+- Además de los proyectos de `Dsl` y `DslPackage`, la solución contiene un tercer proyecto denominado `UI.`proyecto de **interfaz de usuario** contiene la definición de un control de Windows Forms. `DslPackage` depende de `UI`y `UI` depende de `Dsl`.
 
 - En el proyecto de `DslPackage`, `UI\DocView.cs` contiene el código que muestra el control de Windows Forms que se define en el proyecto de `UI`.
 
@@ -162,7 +162,7 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
      Establezca la propiedad **DataMember** en **animales** o **campos**.
 
-10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding` y de `FieldGridView` en `FieldBinding`.
+10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding`y de `FieldGridView` en `FieldBinding`.
 
 11. Ajuste el diseño del control de la granja de servidores a su gusto.
 
@@ -174,7 +174,7 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
 - Garantiza que, cuando el usuario selecciona una fila, el ventana Propiedades muestra las propiedades del elemento de modelo correspondiente, en lugar de la fila de la cuadrícula de datos.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) esquema de vínculos entre orígenes de datos y vistas.
+  ![DslWpf4](../modeling/media/dslwpf4.png) esquema de vínculos entre orígenes de datos y vistas.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Completar los enlaces a la DSL
 
