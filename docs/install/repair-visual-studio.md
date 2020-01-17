@@ -5,19 +5,19 @@ description: Obtenga información sobre cómo reparar una instalación de Visual
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 255995f7ca660d36ae40a6a8fead4b3ea5d70424
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681345"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594557"
 ---
 # <a name="repair-visual-studio"></a>Repare Visual Studio.
 
@@ -53,7 +53,7 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
 
      Por ejemplo, en un equipo que ejecuta Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
 
-     ![Apertura del Instalador de Visual Studio](media/vs-2019/vs-installer-windows-start.png "Apertura del Instalador de Visual Studio")
+     ![Apertura del Instalador de Visual Studio](media/vs-2019/vs-installer-windows-start.png "Apertura del Instalador de Visual Studio")
 
      > [!NOTE]
      > También pude encontrar el instalador de Visual Studio en la siguiente ubicación:
@@ -64,7 +64,7 @@ En ocasiones, una instalación de Visual Studio resulta dañada. Una reparación
 
 1. En el instalador, busque la edición de Visual Studio que tenga instalada. A continuación, elija **Más** y, luego, **Reparar**.
 
-     ![Reparación de Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Repair Visual Studio 2019")
+     ![Reparación de Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Reparación de Visual Studio 2019")
 
    > [!NOTE]
    > Al reparar Visual Studio, se restablece el entorno. Se eliminan las personalizaciones locales, como las extensiones por usuario instaladas sin elevación, la configuración de usuario y los perfiles. La configuración sincronizada, como temas, colores o enlaces de teclado, se restaura.

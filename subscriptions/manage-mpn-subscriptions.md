@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605454"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492905"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administración de suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -53,7 +53,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 
 ## <a name="resources-and-references"></a>Recursos y referencias
 - Detalles relativos a la [suscripción a Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) de Microsoft Partner Network.
-- [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guía del administrador de programas para los beneficios de software y servicios en línea) de Microsoft Partner Network
+- [Program Administrator Guide to Software and Online Services Benefits](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits) (Guía del administrador de programas para los beneficios de software y servicios en línea) de Microsoft Partner Network
   - Pág 6: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Asignar roles de contacto y suscripciones de Visual Studio para Action Pack)
   > [!NOTE]
   > Se requiere el rol Contacto técnico para las suscripciones de Visual Studio.
@@ -61,3 +61,5 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 
 ## <a name="next-steps"></a>Pasos siguientes
 Los suscriptores y los administradores de programas deben trabajar directamente con el equipo de soporte técnico de Microsoft Partner Network para resolver los problemas de acceso a las suscripciones por parte de los suscriptores. Visite la página de [soporte técnico para socios](https://partner.microsoft.com/support) para obtener ayuda (Se necesitan sus credenciales de inicio de sesión de MPN).
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-

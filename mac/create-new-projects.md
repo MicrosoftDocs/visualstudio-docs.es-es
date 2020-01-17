@@ -5,23 +5,23 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693065"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678911"
 ---
-# <a name="creating-a-new-project"></a>Crear un proyecto nuevo
+# <a name="create-a-new-project"></a>Crear un nuevo proyecto
 
 ## <a name="opening-the-project-creation-dialog"></a>Apertura del cuadro de diálogo Creación de proyecto
 
-Hay varias maneras de crear un proyecto en Visual Studio para Mac. Al abrir por primera vez Visual Studio para Mac, se muestra la pantalla de inicio. Desde ahí se puede elegir **Nuevo**, que lleva a la pantalla Creación de proyecto.
+Hay varias maneras de crear un proyecto en Visual Studio para Mac. Al abrir por primera vez Visual Studio para Mac, se muestra la ventana de inicio. Desde ahí se puede elegir **Nuevo**, que lleva a la pantalla Creación de proyecto.
 
 > [!TIP]
-> Además, desde la pantalla de inicio también se pueden abrir y buscar proyectos y soluciones recientes. También puede abrir proyectos recientes si va a la barra de menús y selecciona **Archivo > Soluciones recientes**
+> Además, desde la ventana de inicio también se pueden abrir y buscar proyectos y soluciones recientes. También puede abrir proyectos recientes si va a la barra de menús y selecciona **Archivo > Soluciones recientes**
 
-![Pantalla de inicio con Crear nuevo proyecto](media/first-run-project.png)
+![Ventana de inicio con Crear nuevo proyecto](media/first-run-project.png)
 
 Si Visual Studio para Mac ya está abierto con una solución cargada, puede crear una nueva solución si va a la barra de menús y selecciona **Archivo > Nueva solución**. Al crear una nueva solución de este modo se cierra la solución que ya estaba cargada.
 

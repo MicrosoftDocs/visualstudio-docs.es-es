@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446640"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398422"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -70,6 +70,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
     ![Opciones de desarrollo de Python en el instalador de Visual Studio 2019](media/installation-python-options-2019.png)
     ::: moniker-end
 
+    ::: moniker range="<=vs-2017"
     | Opción | Descripción |
     | --- | --- |
     | Distribuciones de Python | Elija cualquier combinación de las opciones disponibles, como las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Miniconda, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Vea [La ventana Entornos de Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
@@ -78,6 +79,17 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
     | **Compatibilidad con IoT de Python** | Admite el desarrollo de Windows IoT Core con Python. |
     | **Herramientas de desarrollo nativo de Python** | Instala el compilador de C++ y otros componentes necesarios para desarrollar extensiones nativas para Python. Vea [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). Instale también la carga de trabajo **Desarrollo para el escritorio con C++** para disfrutar de una compatibilidad plena. |
     | **Herramientas principales de Azure Cloud Services** | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de servicio de nube de Azure](python-azure-cloud-service-project-template.md). |
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    | Opción | Descripción |
+    | --- | --- |
+    | Distribuciones de Python | Elija cualquier combinación de las opciones disponibles, como las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Miniconda, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Vea [La ventana Entornos de Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
+    | **Compatibilidad con plantillas de Cookiecutter** | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
+    | **Compatibilidad web con Python** | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
+    | **Herramientas de desarrollo nativo de Python** | Instala el compilador de C++ y otros componentes necesarios para desarrollar extensiones nativas para Python. Vea [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). Instale también la carga de trabajo **Desarrollo para el escritorio con C++** para disfrutar de una compatibilidad plena. |
+    | **Herramientas principales de Azure Cloud Services** | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de servicio de nube de Azure](python-azure-cloud-service-project-template.md). |
+    ::: moniker-end
 
 1. Después de la instalación, el instalador proporciona opciones para modificar, iniciar, reparar o desinstalar Visual Studio. El botón **Modificar** cambia a **Actualizar** cuando hay actualizaciones de Visual Studio disponibles para alguno de los componentes instalados. (Después, la opción **Modificar** está disponible en el menú desplegable). También puede iniciar Visual Studio y el instalador desde el menú **Inicio** de Windows mediante la búsqueda de "Visual Studio".
 
@@ -109,9 +121,8 @@ Si encuentra problemas al instalar o ejecutar Python en Visual Studio, pruebe lo
 
 1. Instale la versión adecuada de Herramientas de Python para Visual Studio para su versión de Visual Studio:
 
-    - Visual Studio 2013: [PTVS 2.2 para Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). En el cuadro de diálogo **Archivo** > **Nuevo proyecto** de Visual Studio 2013 se ofrece un acceso directo a este proceso.
-    - Visual Studio 2012: [PTVS 2.1 para Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010: [PTVS 2.1 para Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013: [PTVS 2.2.2 para Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2.2). En el cuadro de diálogo **Archivo** > **Nuevo proyecto** de Visual Studio 2013 se ofrece un acceso directo a este proceso.
+    - Visual Studio 2010 y 2012: [PTVS 2.1.1 para Visual Studio 2010 y 2012](https://github.com/Microsoft/PTVS/releases/v2.1.1)
 
 1. [Instale un intérprete de Python de su elección](installing-python-interpreters.md). Si ya tiene instalado un intérprete y Visual Studio no lo detecta de manera automática, consulte [Identificación manual de un entorno existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
@@ -137,8 +148,8 @@ donde:
   - 12.0 para Visual Studio 2013
   - 11.0 para Visual Studio 2012
   - 10.0 para Visual Studio 2010
-- &lt;PTVS_ver&gt; es un número de versión, como 2.2, 2.1, 2.0, 1.5, 1.1 o 1.0.
+- &lt;PTVS_ver&gt; es un número de versión, como 2.2.2, 2.1.1, 2.0, 1.5, 1.1 o 1.0.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Instalaciones específicas de usuario (1.5 y anteriores)
 
-Herramientas de Python para Visual Studio 1.5 y las versiones anteriores permitían una instalación solo para el usuario actual, en cuyo caso la ruta de instalación es *%LocalAppData%\Microsoft\VisualStudio\\<VS_ver>\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*, donde &lt;VS_ver&gt; y &lt;PTVS_ver&gt; se corresponden con las mismas versiones indicadas anteriormente.
+Herramientas de Python para Visual Studio 1.5 y las versiones anteriores permitían una instalación solo para el usuario actual, en cuyo caso la ruta de instalación es *%LocalAppData%\Microsoft\VisualStudio\\<VS_ver>\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>* , donde &lt;VS_ver&gt; y &lt;PTVS_ver&gt; se corresponden con las mismas versiones indicadas anteriormente.

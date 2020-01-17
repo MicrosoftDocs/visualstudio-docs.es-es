@@ -3,15 +3,15 @@ title: Paseo por Visual Studio para Mac
 description: Visual Studio para Mac proporciona un entorno de desarrollo integrado para compilar aplicaciones .NET en macOS, incluidos sitios web de ASP.NET Core y proyectos de Xamarin para iOS, Android, Mac y Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984704"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405828"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Paseo por Visual Studio 2019 para Mac
 
@@ -123,7 +123,7 @@ Visual Studio para Mac proporciona dos formas útiles de refactorizar el código
 
 ## <a name="debugging"></a>Depuración
 
-Visual Studio para Mac tiene un depurador nativo que proporciona compatibilidad de depuración con aplicaciones Xamarin.iOS, Xamarin.Mac y Xamarin.Android. Visual Studio para Mac usa Mono Soft Debugger, que está implementado en el entorno de ejecución Mono, lo que permite al IDE depurar código administrado en todas las plataformas. Para más información sobre la depuración, visite el artículo [Depuración](/visualstudio/mac/debugging).
+Visual Studio para Mac tiene depuradores compatibles con los proyectos de .NET Core, .NET Framework, Unity y Xamarin. Visual Studio para Mac usa el depurador de .NET Core y Mono Soft Debugger, que permiten al IDE depurar código administrado en todas las plataformas. Para más información sobre la depuración, visite el artículo [Depuración](/visualstudio/mac/debugging).
 
 El depurador contiene visualizadores completos para tipos especiales, como cadenas, colores y direcciones URL, además de tamaños, coordenadas y curvas de Bézier.
 

@@ -3,17 +3,17 @@ title: 'Tutorial: Creación de una aplicación'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647171"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594154"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Creación de una aplicación
 
@@ -154,7 +154,7 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
      La información de compilación incluye la hora a la que se inició la compilación (situada al principio) y el orden en el que se procesaron los archivos. Esta información también incluye la sintaxis real del compilador que Visual Studio ejecuta durante la compilación.
 
-     Por ejemplo, en la compilación de C#, la opción [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) muestra el código de advertencia, **1762**, que ha especificado anteriormente en este tema, junto con otras tres advertencias.
+     Por ejemplo, en la compilación de C#, la opción [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) muestra el código de advertencia, **0168**, que ha especificado anteriormente en este tema, junto con otras tres advertencias.
 
      En la compilación de Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) no contiene advertencias concretas para excluir, por lo que no aparece ninguna advertencia.
 

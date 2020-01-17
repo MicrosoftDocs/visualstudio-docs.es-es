@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652809"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588634"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 
@@ -136,7 +136,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_qualification_for_field |
+| **Nombre de regla** | dotnet_style_qualification_for_field |
 | **Identificador de la regla** | IDE0003 e IDE0009 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que los campos estén precedidos por `this.` en C# o `Me.` en Visual Basic.<br /><br />`false`: se prefiere que los campos _no_ estén precedidos por `this.` o `Me.`. |
@@ -164,7 +164,7 @@ capacity = 0
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_qualification_for_property |
+| **Nombre de regla** | dotnet_style_qualification_for_property |
 | **Identificador de la regla** | IDE0003 e IDE0009 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que las propiedades estén precedidas por `this.` en C# o `Me.` en Visual Basic.<br /><br />`false`: se prefiere que las propiedades _no_ estén precedidas por `this.` o `Me.`. |
@@ -192,7 +192,7 @@ ID = 0
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_qualification_for_method |
+| **Nombre de regla** | dotnet_style_qualification_for_method |
 | **Identificador de la regla** | IDE0003 e IDE0009 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que los métodos estén precedidos por `this.` en C# o `Me.` en Visual Basic.<br /><br />`false`: se prefiere que los métodos _no_ estén precedidos por `this.` o `Me.`. |
@@ -220,7 +220,7 @@ Display()
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_qualification_for_event |
+| **Nombre de regla** | dotnet_style_qualification_for_event |
 | **Identificador de la regla** | IDE0003 e IDE0009 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que los eventos estén precedidos por `this.` en C# o `Me.` en Visual Basic.<br /><br />`false`: se prefiere que los eventos _no_ estén precedidos por `this.` o `Me.`. |
@@ -261,7 +261,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_predefined_type_for_locals_parameters_members |
+| **Nombre de regla** | dotnet_style_predefined_type_for_locals_parameters_members |
 | **Identificador de la regla** | IDE0012 e IDE0014 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere la palabra clave del lenguaje para las variables locales, parámetros de métodos y miembros de clases, en lugar del nombre de tipo, para los tipos que tienen una palabra clave para representarlos.<br /><br />`false`: se prefiere el nombre de tipo para las variables locales, parámetros de métodos y miembros de clases, en lugar de la palabra clave del lenguaje. |
@@ -289,7 +289,7 @@ Private _member As Int32
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_predefined_type_for_member_access |
+| **Nombre de regla** | dotnet_style_predefined_type_for_member_access |
 | **Identificador de la regla** | IDE0013 e IDE0015 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere la palabra clave del lenguaje para las expresiones de acceso a miembros, en lugar del nombre de tipo, para los tipos que tienen una palabra clave para representarlos.<br /><br />`false`: se prefiere el nombre de tipo para las expresiones de acceso a miembros, en lugar de la palabra clave del lenguaje. |
@@ -338,7 +338,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_require_accessibility_modifiers |
+| **Nombre de regla** | dotnet_style_require_accessibility_modifiers |
 | **Identificador de la regla** | IDE0040 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `always`: se prefiere que los modificadores de accesibilidad se especifiquen.<br /><br />`for_non_interface_members`: se prefiere que los modificadores de accesibilidad se declaren, excepto para los miembros de la interfaz pública. (Esto equivale a **always** y se ha agregado para las pruebas futuras si C# agrega métodos de interfaz predeterminados).<br /><br />`never`: no se prefiere que se especifiquen los modificadores de accesibilidad.<br /><br />`omit_if_default`: se prefiere que se especifiquen los modificadores de accesibilidad, excepto si se trata del modificador predeterminado. |
@@ -366,7 +366,7 @@ class MyClass
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_preferred_modifier_order |
+| **Nombre de regla** | csharp_preferred_modifier_order |
 | **Identificador de la regla** | IDE0036 |
 | **Lenguajes aplicables** | C# |
 | **Valores** | Uno o más C# modificadores, como `public`, `private`, y `protected` |
@@ -390,7 +390,7 @@ class MyClass
 
 |||
 |-|-|
-| **Nombre de la regla** | visual_basic_preferred_modifier_order |
+| **Nombre de regla** | visual_basic_preferred_modifier_order |
 | **Identificador de la regla** | IDE0036 |
 | **Lenguajes aplicables** | Visual Basic |
 | **Valores** | Uno o varios modificadores de Visual Basic, como `Partial`, `Private` y `Public` |
@@ -413,7 +413,7 @@ End Class
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_readonly_field |
+| **Nombre de regla** | dotnet_style_readonly_field |
 | **Identificador de la regla** | IDE0044 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que los campos se marquen con `readonly` (C#) o `ReadOnly` (Visual Basic) si solo se van a asignar en línea, o dentro de un constructor.<br /><br />`false`: no se especifica ninguna preferencia sobre si los campos se deben marcar con `readonly` (C#) o `ReadOnly` (Visual Basic). |
@@ -456,7 +456,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_parentheses_in_arithmetic_binary_operators |
+| **Nombre de regla** | dotnet_style_parentheses_in_arithmetic_binary_operators |
 | **Identificador de la regla** | IDE0047 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `always_for_clarity`: se prefieren los paréntesis para clarificar la prioridad del operador aritmético (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`).<br /><br />`never_if_unnecessary`: se prefiere no tener paréntesis cuando la prioridad del operador aritmético (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) es obvia. |
@@ -485,7 +485,7 @@ Dim v = a + b * c
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_parentheses_in_relational_binary_operators |
+| **Nombre de regla** | dotnet_style_parentheses_in_relational_binary_operators |
 | **Identificador de la regla** | IDE0047 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `always_for_clarity`: se prefieren los paréntesis para clarificar la prioridad del operador relacional (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`).<br /><br />`never_if_unnecessary`: se prefiere no tener paréntesis cuando la prioridad del operador relacional (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) es obvia. |
@@ -514,7 +514,7 @@ Dim v = a < b = c > d
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_parentheses_in_other_binary_operators |
+| **Nombre de regla** | dotnet_style_parentheses_in_other_binary_operators |
 | **Identificador de la regla** | IDE0047 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `always_for_clarity`: se prefieren los paréntesis para clarificar la prioridad de otro operador binario (`&&`, `||`, `??`).<br /><br />`never_if_unnecessary`: se prefiere no tener paréntesis cuando la prioridad del operador binario (`&&`, `||`, `??`) es obvia. |
@@ -543,7 +543,7 @@ Dim v = a OrElse b AndAlso c
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_parentheses_in_other_operators |
+| **Nombre de regla** | dotnet_style_parentheses_in_other_operators |
 | **Identificador de la regla** | IDE0047 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `always_for_clarity`: se prefieren los paréntesis para clarificar la prioridad del operador.<br /><br />`never_if_unnecessary`: se prefiere no tener paréntesis cuando la prioridad del operador aritmético es obvia. |
@@ -592,7 +592,7 @@ dotnet_style_prefer_compound_assignment = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_object_initializer |
+| **Nombre de regla** | dotnet_style_object_initializer |
 | **Identificador de la regla** | IDE0017 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que los objetos se inicialicen con inicializadores de objeto siempre que sea posible.<br /><br />`false`: se prefiere que los objetos *no* se inicialicen con inicializadores de objeto. |
@@ -622,7 +622,7 @@ c.Age = 21
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_collection_initializer |
+| **Nombre de regla** | dotnet_style_collection_initializer |
 | **Identificador de la regla** | IDE0028 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que las colecciones se inicialicen con inicializadores de colección siempre que sea posible.<br /><br />`false`: se prefiere que las colecciones *no* se inicialicen con inicializadores de colección. |
@@ -656,7 +656,7 @@ list.Add(3)
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_explicit_tuple_names |
+| **Nombre de regla** | dotnet_style_explicit_tuple_names |
 | **Identificador de la regla** | IDE0033 |
 | **Lenguajes aplicables** | C# 7.0+ y Visual Basic 15+ |
 | **Valores** | `true`: se prefieren los nombres de tupla a propiedades ItemX.<br /><br />`false`: se prefieren las propiedades ItemX a nombres de tupla. |
@@ -688,7 +688,7 @@ Dim name = customer.Item1
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_inferred_tuple_names |
+| **Nombre de regla** | dotnet_style_prefer_inferred_tuple_names |
 | **Identificador de la regla** | IDE0037 |
 | **Lenguajes aplicables** | C# 7.1+ y Visual Basic 15+ |
 | **Valores** | `true`: se prefieren los nombres de elementos de tupla inferidos.<br /><br />`false`: se prefieren los nombres de elementos de tupla explícitos. |
@@ -717,7 +717,7 @@ Dim tuple = (name:=name, age:=age)
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_inferred_anonymous_type_member_names |
+| **Nombre de regla** | dotnet_style_prefer_inferred_anonymous_type_member_names |
 | **Identificador de la regla** | IDE0037 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefieren nombres de miembros de tipo anónimo inferidos.<br /><br />`false`: se prefieren nombres de miembros de tipo anónimo explícitos. |
@@ -746,7 +746,7 @@ Dim anon = New With {.name = name, .age = age}
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_auto_properties |
+| **Nombre de regla** | dotnet_style_prefer_auto_properties |
 | **Identificador de la regla** | IDE0032 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefieren propiedades automáticas antes que campos de respaldo privados.<br /><br />`false`: se prefieren propiedades con campos de respaldo privados antes que propiedades automáticas. |
@@ -789,7 +789,7 @@ End Property
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **Nombre de regla** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Identificador de la regla** | IDE0041 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere usar una comprobación de NULL con coincidencia de patrones antes que `object.ReferenceEquals`.<br /><br />`false`: se prefiere `object.ReferenceEquals` en lugar de una comprobación de NULL con coincidencia de patrones. |
@@ -824,7 +824,7 @@ End If
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_conditional_expression_over_assignment |
+| **Nombre de regla** | dotnet_style_prefer_conditional_expression_over_assignment |
 | **Identificador de la regla** | IDE0045 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefieren asignaciones con un condicional ternario en lugar de una instrucción if-else.<br /><br />`false`: se prefieren asignaciones con una instrucción if-else en lugar de un condicional ternario. |
@@ -866,7 +866,7 @@ End If
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_conditional_expression_over_return |
+| **Nombre de regla** | dotnet_style_prefer_conditional_expression_over_return |
 | **Identificador de la regla** | IDE0046 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere que las instrucciones de devolución utilicen un condicional ternario en lugar de una instrucción if-else.<br /><br />`false`: se prefiere que las instrucciones de devolución utilicen una instrucción if-else en lugar de un condicional ternario. |
@@ -906,7 +906,7 @@ End If
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_prefer_compound_assignment |
+| **Nombre de regla** | dotnet_style_prefer_compound_assignment |
 | **Identificador de la regla** | IDE0054 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefieren expresiones de [asignación compuesta](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)<br /><br />`false`: no se prefieren expresiones de asignación compuesta |
@@ -947,7 +947,7 @@ dotnet_style_null_propagation = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_coalesce_expression |
+| **Nombre de regla** | dotnet_style_coalesce_expression |
 | **Identificador de la regla** | IDE0029 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `true`: se prefiere la expresión de fusión NULL a la comprobación del operador ternario.<br /><br />`false`: Se prefiere la comprobación del operador ternario a la expresión de fusión NULL. |
@@ -977,7 +977,7 @@ Dim v = If(x IsNot Nothing, x, y)
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_style_null_propagation |
+| **Nombre de regla** | dotnet_style_null_propagation |
 | **Identificador de la regla** | IDE0031 |
 | **Lenguajes aplicables** | C# 6.0+ y Visual Basic 14+ |
 | **Valores** | `true`: Se prefiere usar el operador condicional NULL siempre que sea posible.<br /><br />`false`: Se prefiere usar la comprobación NULL ternaria siempre que sea posible. |
@@ -1026,7 +1026,7 @@ dotnet_code_quality_unused_parameters = all:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | dotnet_code_quality_unused_parameters |
+| **Nombre de regla** | dotnet_code_quality_unused_parameters |
 | **Identificador de la regla** | IDE0060 |
 | **Lenguajes aplicables** | C# y Visual Basic |
 | **Valores** | `all`: se marcan métodos con cualquier accesibilidad que contengan parámetros no usados<br /><br />`non_public`: solo se marcan métodos no públicos que contengan parámetros no usados |
@@ -1115,7 +1115,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_var_for_built_in_types |
+| **Nombre de regla** | csharp_style_var_for_built_in_types |
 | **Identificador de la regla** | IDE0007 e IDE0008 |
 | **Lenguajes aplicables** | C#  |
 | **Valores** | `true`: se prefiere usar `var` para declarar variables con tipos de sistema integrados como `int`.<br /><br />`false`: se prefiere el tipo explícito sobre `var` para declarar variables con tipos de sistema integrados como `int`. |
@@ -1135,7 +1135,7 @@ int x = 5;
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_var_when_type_is_apparent |
+| **Nombre de regla** | csharp_style_var_when_type_is_apparent |
 | **Identificador de la regla** | IDE0007 e IDE0008 |
 | **Lenguajes aplicables** | C#  |
 | **Valores** | `true`: se prefiere `var` cuando el tipo ya se ha mencionado en el lateral derecho de una expresión de declaración.<br /><br />`false`: se prefiere el tipo explícito en vez de `var` cuando el tipo ya se ha mencionado en el lateral derecho de una expresión de declaración. |
@@ -1155,7 +1155,7 @@ Customer obj = new Customer();
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_var_elsewhere |
+| **Nombre de regla** | csharp_style_var_elsewhere |
 | **Identificador de la regla** | IDE0007 e IDE0008 |
 | **Lenguajes aplicables** | C#  |
 | **Valores** | `true`: se prefiere `var` a un tipo explícito en todos los casos, a menos que se reemplace por otra regla de estilo de código.<br /><br />`false`: se prefiere el tipo explícito en vez de `var` en todos los casos, a no ser que otra regla de estilo de código lo reemplace. |
@@ -1194,7 +1194,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_methods |
+| **Nombre de regla** | csharp_style_expression_bodied_methods |
 | **Identificador de la regla** | IDE0022 |
 | **Lenguajes aplicables** | C# 6.0+  |
 | **Valores** | `true`: se prefieren cuerpos de expresión para los métodos<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los métodos cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los métodos. |
@@ -1214,7 +1214,7 @@ public int GetAge() { return this.Age; }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_constructors |
+| **Nombre de regla** | csharp_style_expression_bodied_constructors |
 | **Identificador de la regla** | IDE0021 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para los constructores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los constructores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los constructores. |
@@ -1234,7 +1234,7 @@ public Customer(int age) { Age = age; }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_operators |
+| **Nombre de regla** | csharp_style_expression_bodied_operators |
 | **Identificador de la regla** | IDE0023 e IDE0024 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para los operadores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los operadores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los operadores. |
@@ -1256,7 +1256,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_properties |
+| **Nombre de regla** | csharp_style_expression_bodied_properties |
 | **Identificador de la regla** | IDE0025 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para las propiedades<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las propiedades cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las propiedades. |
@@ -1276,7 +1276,7 @@ public int Age { get { return _age; }}
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_indexers |
+| **Nombre de regla** | csharp_style_expression_bodied_indexers |
 | **Identificador de la regla** | IDE0026 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para los indizadores<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los indizadores cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los indexadores. |
@@ -1296,7 +1296,7 @@ public T this[int i] { get { return _values[i]; } }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_accessors |
+| **Nombre de regla** | csharp_style_expression_bodied_accessors |
 | **Identificador de la regla** | IDE0027 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para los descriptores de acceso<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para los descriptores de acceso cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para los descriptores de acceso. |
@@ -1316,7 +1316,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_lambdas |
+| **Nombre de regla** | csharp_style_expression_bodied_lambdas |
 | **Identificador de la regla** | IDE0053 |
 | **Valores** | `true`: se prefieren cuerpos de expresión para las expresiones lambda<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las expresiones lambda cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las expresiones lambda |
 | **Valor predeterminado de Visual Studio** | `true:silent` |
@@ -1337,7 +1337,7 @@ A partir de C# 7.0, C# admite [funciones locales](/dotnet/csharp/programming-gui
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_expression_bodied_local_functions |
+| **Nombre de regla** | csharp_style_expression_bodied_local_functions |
 | **Identificador de la regla** | IDE0061 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren cuerpos de expresión para las funciones locales<br /><br />`when_on_single_line`: se prefieren cuerpos de expresión para las funciones locales cuando van a ser una sola línea<br /><br />`false`: se prefieren cuerpos de bloque para las funciones locales |
@@ -1381,7 +1381,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_pattern_matching_over_is_with_cast_check |
+| **Nombre de regla** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **Identificador de la regla** | IDE0020 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren la coincidencia de patrones en lugar de expresiones `is` con conversiones de tipo.<br /><br />`false`: se prefieren expresiones `is` con conversiones de tipo en lugar de la coincidencia de patrones. |
@@ -1401,7 +1401,7 @@ if (o is int) {var i = (int)o; ... }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_pattern_matching_over_as_with_null_check |
+| **Nombre de regla** | csharp_style_pattern_matching_over_as_with_null_check |
 | **Identificador de la regla** | IDE0019 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere la coincidencia de patrones en lugar de expresiones `as` con comprobaciones NULL para determinar si algo es de un tipo determinado.<br /><br />`false`: se prefieren expresiones `as` con comprobaciones NULL en lugar de la coincidencia de patrones para determinar si algo es de un tipo determinado. |
@@ -1426,7 +1426,7 @@ Esta regla de estilo se aplica a si las variables `out` se declaran como alinead
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_inlined_variable_declaration |
+| **Nombre de regla** | csharp_style_inlined_variable_declaration |
 | **Identificador de la regla** | IDE0018 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere que las variables `out` se declaren como alineadas en la lista de argumentos de una llamada de método, siempre que sea posible.<br /><br />`false`: se prefiere que las variables `out` se declaren antes de la llamada al método. |
@@ -1469,7 +1469,7 @@ Esta regla de estilo se aplica al uso del [literal `default` para las expresione
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_prefer_simple_default_expression |
+| **Nombre de regla** | csharp_prefer_simple_default_expression |
 | **Identificador de la regla** | IDE0034 |
 | **Lenguajes aplicables** | C# 7.1+  |
 | **Valores** | `true`: se prefiere `default` sobre `default(T)`.<br /><br />`false`: se prefiere `default(T)` sobre `default`. |
@@ -1502,7 +1502,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_throw_expression |
+| **Nombre de regla** | csharp_style_throw_expression |
 | **Identificador de la regla** | IDE0016 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere el uso de expresiones `throw` en lugar de instrucciones `throw`.<br /><br />`false`: se prefiere el uso de instrucciones `throw` en lugar de expresiones `throw`. |
@@ -1523,7 +1523,7 @@ this.s = s;
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_conditional_delegate_call |
+| **Nombre de regla** | csharp_style_conditional_delegate_call |
 | **Identificador de la regla** | IDE0041 |
 | **Lenguajes aplicables** | C# 6.0+  |
 | **Valores** | `true`: se prefiere usar el operador de incorporación condicional (`?.`) al invocar una expresión lambda, en lugar de realizar una comprobación de NULL.<br /><br />`false`: se prefiere realizar una comprobación de NULL antes de invocar una expresión lambda en lugar de usar el operador de fusión condicional (`?.`). |
@@ -1555,7 +1555,7 @@ csharp_prefer_braces = true:silent
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_prefer_braces |
+| **Nombre de regla** | csharp_prefer_braces |
 | **Identificador de la regla** | IDE0011 |
 | **Lenguajes aplicables** | C# |
 | **Valores** | `true`: se prefieren las llaves incluso para una línea de código.<br /><br />`false`: no se prefieren las llaves aunque estén permitidas. |
@@ -1588,7 +1588,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_unused_value_expression_statement_preference |
+| **Nombre de regla** | csharp_style_unused_value_expression_statement_preference |
 | **Identificador de la regla** | IDE0058 |
 | **Lenguajes aplicables** | C# |
 | **Valores** | `discard_variable`: se prefiere asignar una expresión no usada a un [descarte](/dotnet/csharp/discards) <br /><br />`unused_local_variable`: se prefiere asignar una expresión no usada a una variable local |
@@ -1613,7 +1613,7 @@ var unused = Convert.ToInt32("35");
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_unused_value_assignment_preference |
+| **Nombre de regla** | csharp_style_unused_value_assignment_preference |
 | **Identificador de la regla** | IDE0059 |
 | **Lenguajes aplicables** | C# |
 | **Valores** | `discard_variable`: se prefiere usar un [descarte](/dotnet/csharp/discards) al asignar un valor que no se usa<br /><br />`unused_local_variable`: se prefiere usar una variable local al asignar un valor que no se usa |
@@ -1654,7 +1654,7 @@ csharp_style_prefer_range_operator = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_prefer_index_operator |
+| **Nombre de regla** | csharp_style_prefer_index_operator |
 | **Identificador de la regla** | IDE0056 |
 | **Lenguajes aplicables** | C# 8.0+ |
 | **Valores** | `true`: se prefiere usar el operador `^` al calcular un índice del final de una colección<br /><br />`false`: no se prefiere usar el operador `^` al calcular un índice del final de una colección |
@@ -1676,7 +1676,7 @@ var index = names[names.Length - 1];
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_prefer_range_operator |
+| **Nombre de regla** | csharp_style_prefer_range_operator |
 | **Identificador de la regla** | IDE0057 |
 | **Lenguajes aplicables** | C# 8.0+ |
 | **Valores** | `true`: se prefiere usar el operador de rango `..` al extraer un "segmento" de una colección<br /><br />`false`: no se prefiere usar el operador de rango `..` al extraer un "segmento" de una colección |
@@ -1715,7 +1715,7 @@ csharp_style_prefer_switch_expression = true:suggestion
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_deconstructed_variable_declaration |
+| **Nombre de regla** | csharp_style_deconstructed_variable_declaration |
 | **Identificador de la regla** | IDE0042 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefiere la declaración de variable deconstruida.<br /><br />`false`: no se prefiere la deconstrucción de las declaraciones de variable. |
@@ -1745,7 +1745,7 @@ A partir de C# 7.0, C# admite [funciones locales](/dotnet/csharp/programming-gui
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_pattern_local_over_anonymous_function |
+| **Nombre de regla** | csharp_style_pattern_local_over_anonymous_function |
 | **Identificador de la regla** | IDE0039 |
 | **Lenguajes aplicables** | C# 7.0+ |
 | **Valores** | `true`: se prefieren las funciones locales sobre las funciones anónimas.<br /><br />`false`: se prefieren las funciones anónimas sobre las funciones locales. |
@@ -1772,7 +1772,7 @@ fibonacci = (int n) =>
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_using_directive_placement |
+| **Nombre de regla** | csharp_using_directive_placement |
 | **Identificador de la regla** | IDE0065 |
 | **Lenguajes aplicables** | C# |
 | **Valores** | `outside_namespace`: se prefiere colocar las directivas `using` fuera del espacio de nombres<br /><br />`inside_namespace`: se prefiere colocar las directivas `using` dentro del espacio de nombres |
@@ -1801,7 +1801,7 @@ namespace Conventions
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_prefer_static_local_function |
+| **Nombre de regla** | csharp_prefer_static_local_function |
 | **Identificador de la regla** | IDE0062 |
 | **Lenguajes aplicables** | C# 8.0+ |
 | **Valores** | `true`: se prefiere marcar las funciones locales como `static`<br /><br />`false`: no se prefiere marcar las funciones locales como `static` |
@@ -1835,10 +1835,10 @@ void M()
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_prefer_simple_using_statement |
+| **Nombre de regla** | csharp_prefer_simple_using_statement |
 | **Identificador de la regla** | IDE0063 |
 | **Lenguajes aplicables** | C# 8.0+ |
-| **Valores** | `true`: se prefiere usar una instrucción `using` *simple*<br /><br />`false`: no se prefiere usar una instrucción `using` *simple* |
+| **Valores** | `true`: se prefiere usar una instrucción `using`*simple*<br /><br />`false`: no se prefiere usar una instrucción `using`*simple* |
 | **Valor predeterminado de Visual Studio** | `true:suggestion` |
 
 Ejemplos de código:
@@ -1855,7 +1855,7 @@ using (var a = b) { }
 
 |||
 |-|-|
-| **Nombre de la regla** | csharp_style_prefer_switch_expression |
+| **Nombre de regla** | csharp_style_prefer_switch_expression |
 | **Identificador de la regla** | IDE0066 |
 | **Lenguajes aplicables** | C# 8.0+ |
 | **Valores** | `true`: prefiera usar una expresión `switch` (introducida con C# 8.0)<br /><br />`false`: prefiera usar una [instrucción switch](/dotnet/csharp/language-reference/keywords/switch) |

@@ -2,22 +2,22 @@
 title: Números de compilación y fechas de lanzamiento de Visual Studio
 titleSuffix: ''
 description: Una lista de las versiones de lanzamiento y los números de compilación de Visual Studio, ordenados por fecha.
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.date: 12/10/2019
+ms.date: 12/17/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
-ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
+ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000269"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590909"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.2 | Release | 17 de diciembre de 2019 | 16.4.29613.14 |
 | 16.4.1 | Release | 10 de diciembre de 2019 | 16.4.29609.76 |
 | 16.0.10 | Release | 10 de diciembre de 2019 | 16.0.28803.631 |
 | 16.5.0 | Versión preliminar 1 | 3 de diciembre de 2019 | 16.5.29521.150 |
@@ -118,6 +119,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.0.28 | Release | 11 de diciembre de 2019 | 15.0.26228.102 |
 | 15.9.18 | Release | 10 de diciembre de 2019 | 15.9.28307.960 |
 | 15.9.17 | Release | 15 de octubre de 2019 | 15.9.28307.905 |
 | 15.9.16 | Release | 10 de septiembre de 2019 | 15.9.28307.858 |

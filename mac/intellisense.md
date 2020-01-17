@@ -4,12 +4,12 @@ description: Información sobre el uso de IntelliSense en Visual Studio para Mac
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026574"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405808"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -23,10 +23,10 @@ Cuando escriba en un archivo compatible, como un archivo de código de C#, las f
 
 La ventana de finalización también permite filtrar las finalizaciones incluidas por tipo. Por ejemplo, es posible limitar los miembros de la lista para que solo se representen tipos como clases o delegados. Para habilitar este proceso de filtrado, se puede hacer clic en el icono que representa el tipo que se filtrará o bien usar los métodos abreviados de teclado correspondientes al tipo determinado. Los iconos, que se encuentran en la parte inferior de la ventana de finalización, son los siguientes:
 
-| Iconos                         | nombre          | Palabra clave    | Tecla de acceso rápido |
+| Iconos                         | NOMBRE          | Palabra clave    | Tecla de acceso rápido |
 | -----------------------------|---------------| -----------|--------|
 | ![Icono Clases](media/classes-icon.png)  | clase         | `class`    |  ⌥C
-| ![Icono Constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
+| ![Icono Constante](media/constant-icon.png) | constante      | `const`    |  ⌥O
 | ![Icono Delegado](media/delegate-icon.png) | delegado      | `delegate` |  ⌥D
 | ![Icono Enumeración](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Icono Evento](media/event-icon.png)    | evento         |            |  ⌥V
@@ -36,22 +36,12 @@ La ventana de finalización también permite filtrar las finalizaciones incluida
 | ![Icono Método](media/method-icon.png)   | método        |            |  ⌥M
 | ![Icono Espacio de nombres](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![Icono Propiedades](media/props-icon.png)    | propiedad      |            |  ⌥P
-| ![Icono Fragmento de código](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
+| ![Icono Fragmento de código](media/snippet-icon.png)  | fragmento de código       | `class`    |  ⌥S
 | ![Icono Estructura](media/struct-icon.png)   | estructura     | `struct`   |  ⌥S
 
 Al hacer clic en cualquiera de los iconos, o al presionar las teclas de acceso rápido correspondientes, la lista de finalización se limitará a los tipos definidos en el conjunto de filtros.  
 
 ![Filtrado de tipos de IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Visualización de elementos de importación
-
-De forma predeterminada, la finalización de IntelliSense solo mostrará las finalizaciones de las bibliotecas que se hayan importado en el proyecto. Por ejemplo, si no ha importado `System.Collections.Generic` mediante `using`, no tendrá una finalización de `List<>`. Para mostrar finalizaciones de bibliotecas que no se han importado, debe habilitar **Show Import Items** (Mostrar elementos de importación) en las preferencias de Visual Studio para Mac. Esta opción se encuentra en **Preferencias > Editor de texto >IntelliSense**:
-
-![Opción de IntelliSense para mostrar elementos de importación](media/intellisense-showimport.png)
-
-Una vez habilitada la opción **Show Import Items** (Mostrar elementos de importación), la lista de finalización incluirá finalizaciones que todavía no se han importado. Al seleccionar un elemento que se corresponde con una biblioteca no declarada, la instrucción `using` de esa biblioteca se agregará automáticamente al encabezado del archivo de código. También se muestra el nombre de la biblioteca a la que pertenece la finalización junto con la propia finalización.
-
-![Lista de visualización de los elementos de importación](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Ventana de parámetros
 

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126092"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75399755"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -28,6 +28,7 @@ En este tutorial se aprende a administrar más de un contenedor y a comunicarse 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
 * [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
+* [Herramientas de desarrollo de .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) para el desarrollo con .NET Core 3.1
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Creación de un proyecto de aplicación web
@@ -54,7 +55,7 @@ No seleccione **Habilitar compatibilidad con Docker**. Esta se agrega más adela
 
 ## <a name="create-a-web-api-project"></a>Creación de un proyecto de API web
 
-Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Seleccione **API** como tipo de proyecto y desactive la casilla de **Configure for HTTPS** (Configurar para HTTPS). En este diseño solo se usa SSL para la comunicación con el cliente, no para la comunicación entre contenedores de la misma aplicación web. Solo `WebFrontEnd` necesita HTTPS.
+Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Seleccione **API** como tipo de proyecto y desactive la casilla de **Configure for HTTPS** (Configurar para HTTPS). En este diseño solo se usa SSL para la comunicación con el cliente, no para la comunicación entre contenedores de la misma aplicación web. Solo `WebFrontEnd` necesita HTTPS y en el código de los ejemplos se supone que ha desactivado esa casilla.
 
 ::: moniker range="vs-2017"
    ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -76,12 +77,15 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://mywebapi/api/values/1");
+          // request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
+          request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
+
+   Para .NET Core 3.1 en Visual Studio 2019 o posterior, la plantilla de API web usa WeatherForecast API, por lo que debe quitar la marca de comentario de esa línea y comentar la línea para ASP.NET 2.x.
 
 1. En el archivo *Index.cshtml*, agregue una línea para mostrar `ViewData["Message"]` para que el archivo sea similar al código siguiente:
     
@@ -99,7 +103,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
       </div>
       ```
 
-1. Ahora, en el proyecto de API web, agregue código al controlador Valores para personalizar el mensaje devuelto por la API para la llamada agregada desde *webfrontend*.
+1. (ASP.NET 2.x solo) Ahora, en el proyecto de API web, agregue código al controlador de valores para personalizar el mensaje devuelto por la API para la llamada agregada desde *webfrontend*.
     
       ```csharp
         // GET api/values/5
@@ -109,6 +113,12 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
             return "webapi (with value " + id + ")";
         }
       ```
+
+    Con .NET Core 3.1, no es necesario, ya que puede usar WeatherForecast API que ya existe. Sin embargo, debe marcar como comentario la llamada a `UseHttpsRedirections` en el método `Configure` en *Startup.cs*, porque este código usa HTTP no HTTPS para llamar a la API web.
+
+    ```csharp
+                //app.UseHttpsRedirection();
+    ```
 
 1. En el proyecto `WebFrontEnd`, seleccione **Agregar > Compatibilidad con el orquestador de contenedores**. Aparece el cuadro de diálogo **Opciones de soporte técnico de Docker**.
 
@@ -163,15 +173,17 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Ejecute el sitio localmente ahora (F5 o Ctrl + F5) para comprobar que funciona según lo previsto. Si todo está configurado correctamente, aparece el mensaje "Hello from webfrontend and webapi (with value 1)" (Hola desde webfrontend y webapi [con valor 1]).
+1. Ejecute el sitio localmente ahora (F5 o Ctrl + F5) para comprobar que funciona según lo previsto. Si todo está configurado correctamente con la versión .NET Core 2.x, aparece el mensaje "Hello from webfrontend and webapi (with value 1)" (Hola desde webfrontend y webapi [con valor 1]).  Con .NET Core 3, verá los datos de previsión meteorológica.
 
    El primer proyecto que se usa al agregar la orquestación de contenedores está configurado para iniciarse al ejecutar o depurar. Puede configurar la acción de inicio en las **Propiedades del proyecto** del proyecto docker-compose.  En el nodo del proyecto docker-compose, haga clic con el botón derecho para abrir el menú contextual y luego seleccione **Propiedades** o use Alt + Entrar.  En la captura de pantalla siguiente se muestran las propiedades deseables para la solución que se usa aquí.  Por ejemplo, puede cambiar la página que se carga mediante la personalización de la propiedad **URL de servicio**.
 
    ![Captura de pantalla de las propiedades del proyecto docker-compose](media/tutorial-multicontainer/launch-action.png)
 
-   Esto es lo que se ve cuando se inicia:
+   Esto es lo que se ve cuando se inicia (en la versión .NET Core 2.x):
 
    ![Captura de pantalla de la aplicación web en ejecución](media/tutorial-multicontainer/webfrontend.png)
+
+   La aplicación web para .NET 3.1 muestra los datos meteorológicos en formato JSON.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, CreateVisualBasicManifestResourceName task
 - CreateVisualBasicManifestResourceName task [MSBuild]
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0afa597a11207d4e4cb843356cf36d199b460f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 636cd4a7d287f60235f3827837050efa1e15eb90
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779329"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596923"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName (tarea)
 Crea el nombre de un manifiesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] a partir del nombre de un archivo *.resx* determinado u otro recurso.

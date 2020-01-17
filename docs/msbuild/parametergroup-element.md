@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999774"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596741"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup (Elemento)
 Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`. Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
@@ -44,7 +44,7 @@ Contiene una lista opcional de parámetros que estarán presentes en la tarea ge
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Parameter](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`. El nombre del elemento es el nombre del parámetro.|
+|[Parameter](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask` `TaskFactory`. El nombre del elemento es el nombre del parámetro.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 

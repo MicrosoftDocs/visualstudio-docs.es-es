@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CreateItem task [MSBuild]
 - MSBuild, CreateItem task
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6b722604249b9c395f06bb038102d731fafe2efc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590077"
 ---
 # <a name="createitem-task"></a>CreateItem (tarea)
 Rellena las colecciones de elementos con los elementos de entrada. Esto permite copiar los elementos de una lista en otra.
@@ -36,7 +36,7 @@ Rellena las colecciones de elementos con los elementos de entrada. Esto permite 
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|`AdditionalMetadata`|Parámetro de matriz `String` opcional.<br /><br /> Especifica los metadatos adicionales que se adjuntarán a los elementos de salida.  Especifique el nombre y valor de los metadatos para el elemento empleando la siguiente sintaxis:<br /><br /> *nombreDeMetadatos*  `=` *valorDeMetadatos*<br /><br /> En caso de múltiples pares de nombre/valor de metadatos, se deberán separar con un punto y coma. Si el nombre o el valor contiene un punto y coma o cualquier otro carácter especial, deben ser de escape. Para obtener más información, vea [Cómo: Usar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|
+|`AdditionalMetadata`|Parámetro de matriz `String` opcional.<br /><br /> Especifica los metadatos adicionales que se adjuntarán a los elementos de salida.  Especifique el nombre y valor de los metadatos para el elemento empleando la siguiente sintaxis:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> En caso de múltiples pares de nombre/valor de metadatos, se deberán separar con un punto y coma. Si el nombre o el valor contiene un punto y coma o cualquier otro carácter especial, deben ser de escape. Para obtener más información, vea [Cómo: Usar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|
 |`Exclude`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se excluirán de la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín. Para obtener más información, vea [Elementos](../msbuild/msbuild-items.md) y [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).|
 |`Include`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]`obligatorio.<br /><br /> Especifica los elementos que se incluirán en la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín.|
 |`PreserveExistingMetadata`|Parámetro `Boolean` opcional.<br /><br /> Si es `True`, solo se aplican los metadatos adicionales si no existen ya.|

@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919127"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589791"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -72,7 +72,7 @@ La configuración del editor EditorConfig se admiten en todos los lenguajes comp
 
 ## <a name="add-and-remove-editorconfig-files"></a>Incorporación y eliminación de los archivos EditorConfig
 
-Cuando se agrega un archivo EditorConfig al proyecto o código base, las nuevas líneas de código que escribe se formatean según este archivo. Aun así, el hecho de agregar un archivo EditorConfig no convertirá los estilos existentes en los nuevos mientras no aplique formato al documento o ejecute la [Limpieza de código](../ide/code-styles-and-code-cleanup.md). Por ejemplo, si tiene sangrías en el archivo cuyo formato se realizó con tabulaciones y agrega un archivo EditorConfig que aplica sangrías con espacios, los caracteres de sangría no se convierten automáticamente en espacios. Cuando aplica formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl** + **K**, **Ctrl**+**D**), se aplica la configuración de espacio en blanco del archivo EditorConfig a las líneas de código existentes.
+Cuando se agrega un archivo EditorConfig al proyecto o código base, las nuevas líneas de código que escribe se formatean según este archivo. Aun así, el hecho de agregar un archivo EditorConfig no convertirá los estilos existentes en los nuevos mientras no aplique formato al documento o ejecute la [Limpieza de código](../ide/code-styles-and-code-cleanup.md). Por ejemplo, si tiene sangrías en el archivo cuyo formato se realizó con tabulaciones y agrega un archivo EditorConfig que aplica sangrías con espacios, los caracteres de sangría no se convierten automáticamente en espacios. Cuando aplica formato al documento (**Editar** > **Opciones avanzadas** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D**), se aplica la configuración de espacio en blanco del archivo EditorConfig a las líneas de código existentes.
 
 Si quita un archivo EditorConfig del proyecto o código base y quiere dar formato a nuevas líneas de código de acuerdo con la configuración global del editor, debe cerrar y volver a abrir los archivos de código abiertos.
 

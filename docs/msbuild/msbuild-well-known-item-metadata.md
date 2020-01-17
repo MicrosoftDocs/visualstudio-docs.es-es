@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, item metadata
 - MSBuild, well-known item metadata
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bbd0ab4ce0d27a270f3672e55173a1488e5910
+ms.sourcegitcommit: f28172c78745d14570e733db5d424f5fae98d139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963941"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "75606663"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadatos de los elementos conocidos de MSBuild
 En la tabla siguiente se describen los metadatos asignados a cada elemento en el momento de su creación. En cada ejemplo, se usó la siguiente declaración de elementos para incluir el archivo *C:\MyProject\Source\Program.cs* en el proyecto.
@@ -38,7 +38,7 @@ En la tabla siguiente se describen los metadatos asignados a cada elemento en el
 |%(RootDir)|Contiene el directorio raíz del elemento. Por ejemplo:<br /><br /> *C:\\*|
 |%(Filename)|Contiene el nombre de archivo del elemento, sin la extensión. Por ejemplo:<br /><br /> *Program*|
 |%(Extension)|Contiene la extensión de nombre de archivo del elemento. Por ejemplo:<br /><br /> *.cs*|
-|%(RelativeDir)|Contiene la ruta de acceso especificada en el atributo `Include`, hasta la última barra diagonal inversa (\\). Por ejemplo:<br /><br /> *Source\\*|
+|%(RelativeDir)|Contiene la ruta de acceso especificada en el atributo `Include`, hasta la última barra diagonal inversa (\\). Por ejemplo:<br /><br /> *Source\\*<br /><br /> Si el atributo `Include` es una ruta de acceso completa, `%(RelativeDir)` comienza por el directorio raíz `%(RootDir)`.  Por ejemplo: <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contiene el directorio del elemento, sin el directorio raíz. Por ejemplo:<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|Si el atributo `Include` contiene el carácter comodín \*\*, este metadato especifica la parte de la ruta de acceso que reemplaza el carácter comodín. Para obtener más información sobre los caracteres comodín, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si la carpeta *C:\MySolution\MyProject\Source\\* contiene el archivo *Program.cs* y si el archivo de proyecto contiene este elemento:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> entonces el valor de `%(MyItem.RecursiveDir)` sería *MySolution\MyProject\Source\\* .|
 |%(Identity)|El elemento especificado en el atributo `Include`. Por ejemplo:<br /><br /> *Source\Program.cs*|

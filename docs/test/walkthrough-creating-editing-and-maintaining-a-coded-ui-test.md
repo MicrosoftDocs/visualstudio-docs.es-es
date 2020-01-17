@@ -2,17 +2,17 @@
 title: Creación de una prueba automatizada de IU
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592066"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 

@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590155"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selección de las ubicaciones de instalación en Visual Studio
 
@@ -46,11 +46,11 @@ Puede reducir la huella de instalación de Visual Studio en la unidad del sistem
 
 1. Cuando instale Visual Studio, elija la pestaña **Ubicaciones de instalación**.
 
-   ![Selección de la ubicación de instalación de Visual Studio 2017](media/vs-installation-locations.png "Seleccione la ubicación de instalación.")
+   ![Visual Studio 2017: selección de la ubicación de instalación](media/vs-installation-locations.png "Seleccione la ubicación de la instalación.")
 
 1. En la sección **IDE de Visual Studio**, acepte el valor predeterminado. Visual Studio instala el producto principal e incluye los archivos que son específicos de esta versión de Visual Studio.
 
-   ![Sección IDE de Visual Studio de la pestaña Ubicaciones de instalación](media/vs-installation-locations-ide.png "Acepte el valor predeterminado de la sección IDE de Visual Studio de la pestaña Ubicaciones de instalación.")
+   ![Sección IDE de Visual Studio de la pestaña Ubicaciones de instalación](media/vs-installation-locations-ide.png "Acepte el valor predeterminado de la sección IDE de Visual Studio de la pestaña Ubicación de instalaciones.")
 
    > [!TIP]
    > Si la unidad del sistema es una unidad de estado sólido (SSD), se recomienda aceptar la ubicación predeterminada en la unidad del sistema. ¿El motivo? Al desarrollar con Visual Studio, se lee desde y se escribe en una gran cantidad de archivos, lo que aumenta la actividad de E/S del disco. Es mejor que elija la unidad más rápida para que administre la carga.
@@ -72,7 +72,7 @@ Puede reducir la huella de instalación de Visual Studio en la unidad del sistem
 
 1. En la sección **Shared components, tools, and SDKs** (Componentes compartidos, herramientas y SDK), especifique la unidad donde quiere almacenar los archivos compartidos en paralelo por las instalaciones de Visual Studio. Los SDK y las herramientas también se almacenan en este directorio.
 
-   ![Sección Componentes compartidos, herramientas y SDK de la pestaña Ubicaciones de instalación](media/vs-installation-locations-shared.png "Especifique la ubicación donde quiere almacenar los componentes compartidos, las herramientas y los SDK.")
+   ![Sección de componentes compartidos, herramientas y SDK de la pestaña Ubicaciones de instalación](media/vs-installation-locations-shared.png "Especifique la ubicación donde desea almacenar los componentes, herramientas y SDK compartidos.")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Puede reducir la huella de instalación de Visual Studio en la unidad del sistem
 
 1. Cuando instale Visual Studio, elija la pestaña **Ubicaciones de instalación**.
 
-   ![Visual Studio 2019 - Selección de la ubicación de instalación](media/vs-2019/vs-installer-installation-locations.png "Seleccione la ubicación de instalación.")
+   ![Visual Studio 2019: selección de la ubicación de instalación](media/vs-2019/vs-installer-installation-locations.png "Seleccione la ubicación de la instalación.")
 
 1. En la sección **IDE de Visual Studio**, acepte el valor predeterminado. Visual Studio instala el producto principal e incluye los archivos que son específicos de esta versión de Visual Studio.
 

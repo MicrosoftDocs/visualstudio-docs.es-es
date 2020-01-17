@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585605"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -282,13 +282,13 @@ Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*.
 
    ::: moniker range="vs-2017"
 
-   En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.
+   En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   En el menú **Inicio** de Windows, elija **Visual Studio 2019** > **Símbolo del sistema para desarrolladores de VS 2019**.
+   En el menú **Inicio** de Windows, elija **Visual Studio 2019** > **Símbolo del sistema para desarrolladores de VS 2019**.
 
    ::: moniker-end
 

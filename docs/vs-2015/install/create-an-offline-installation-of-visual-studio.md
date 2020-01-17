@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bf11519ec500082304fde431122d05ee65db54
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186016"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124522"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Crear una instalación sin conexión de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,28 +62,28 @@ Esta página describe cómo instalar Visual Studio 2015 cuando no está conectad
 | Componente o paquete | Soluciones |
 |-|-|
 | Dotfuscator y Analytics Community Edition 5.19.1 (para las ediciones Community, Professional y Enterprise de Visual Studio, tal y como se instala en **Windows 7 SP1** y **Windows Server 2008 R2**) | Si la máquina sin conexión ejecuta **Windows 7 SP1** o **Windows Server 2008 R2**, debe realizar los pasos siguientes antes de instalar Visual Studio 2015:<br /><br /> 1.  Configure un archivo o servidor web para descargar los archivos CTL.<br /><br /> 2.    Redirija la dirección URL de actualización automática de Microsoft para un entorno desconectado.<br /><br /> Para obtener más información, consulte la página [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/library/dn265983.aspx) (Configuración de raíces de confianza y certificados no permitidos) en el sitio de Microsoft TechNet. |
-| Programa de instalación de Android SDK (nivel de API) | Debe tener una conexión a Internet para instalar paquetes de Android SDK (nivel de API). Si está en una red restringida, debe permitir el acceso a las siguientes direcciones URL cuando instale Visual Studio:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Para obtener información sobre cómo resolver posibles problemas con la configuración de proxy, vea la publicación del blog [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Errores de instalación de Visual Studio 2015 [Instalación de Android SDK] detrás de un proxy). |
-| Plantillas de elemento de extensibilidad de Visual Studio<br /><br /> Extensión de GitHub para Visual Studio<br /><br /> Herramientas de PowerShell para Visual Studio | Si no tiene conexión a Internet al instalar Visual Studio 2015, puede utilizar una fuente sin conexión especial para generar el diseño de instalación sin conexión. **Nota:** Esta fuente especial incluye las actualizaciones más recientes para Visual Studio 2015. <br /><br /> Para crear la fuente sin conexión especial, ejecute el comando siguiente: /layout *Unidad:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> Por ejemplo, para una fuente sin conexión especial en inglés de Visual Studio 2015 Enterprise, ejecute:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Para obtener una lista completa de las direcciones URL que puede usar para crear una fuente sin conexión especial en el idioma que prefiera, vea la tabla siguiente. |
+| Programa de instalación de Android SDK (nivel de API) | Debe tener una conexión a Internet para instalar paquetes de Android SDK (nivel de API). Si está en una red restringida, debe permitir el acceso a las siguientes direcciones URL cuando instale Visual Studio:<br /><br /> -   https://dl.google.com:443<br />-   https://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Para obtener información sobre cómo resolver posibles problemas con la configuración de proxy, vea la publicación del blog [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Errores de instalación de Visual Studio 2015 [Instalación de Android SDK] detrás de un proxy). |
+| Plantillas de elemento de extensibilidad de Visual Studio<br /><br /> Extensión de GitHub para Visual Studio<br /><br /> Herramientas de PowerShell para Visual Studio | Si no tiene conexión a Internet al instalar Visual Studio 2015, puede utilizar una fuente sin conexión especial para generar el diseño de instalación sin conexión. **Nota:**  Esta fuente especial incluye las actualizaciones más recientes para Visual Studio 2015. <br /><br /> Para crear la fuente sin conexión especial, ejecute el comando siguiente: /layout *Unidad:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> Por ejemplo, para una fuente sin conexión especial en inglés de Visual Studio 2015 Enterprise, ejecute:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Para obtener una lista completa de las direcciones URL que puede usar para crear una fuente sin conexión especial en el idioma que prefiera, vea la tabla siguiente. |
 
  Use las direcciones URL siguientes para crear una fuente sin conexión especial específica de un idioma, como se describe en la tabla anterior.
 
 |       Lenguaje        |                            Resolución                            |
 |-----------------------|-----------------------------------------------------------|
-| Chino (simplificado)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| Chino (tradicional) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
-|         Checo         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
-|        Alemán         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
-|        Inglés        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
-|        Español        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
-|        Francés         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
-|        Italiano        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
-|       Japonés        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
-|        Coreano         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
-|        Polaco         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      Portugués       | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
-|        Ruso        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
-|        Turco        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
+| Chino (simplificado)  | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
+| Chino (tradicional) | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+|         Checo         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
+|        Alemán         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
+|        Inglés        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
+|        Español        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0xC0A |
+|        Francés         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x40C |
+|        Italiano        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x410 |
+|       Japonés        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
+|        Coreano         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
+|        Polaco         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
+|      Portugués       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|        Ruso        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
+|        Turco        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
 
 - [Instalar Visual Studio](install-visual-studio-2015.md)

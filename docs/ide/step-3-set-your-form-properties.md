@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118961"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591754"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 
@@ -33,7 +33,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 1. Una vez seleccionado el formulario, busque la propiedad **Texto** en la ventana **Propiedades**. En función del orden de la lista, puede que deba desplazarse hacia abajo. Elija **Texto**, escriba **Visor de imágenes** y elija **Entrar**.  Ahora, el formulario debería tener el texto **Visor de imágenes** en la barra de título y la ventana **Propiedades** debería parecerse a la captura de pantalla siguiente.
 
     ![Ventana Propiedades](../ide/media/express_edittextproperty.png)<br>
-   ***Ventana*** *Propiedades*
+   *Ventana* ***Propiedades***
 
    > [!NOTE]
    > Las propiedades se pueden ordenar en vistas **por categorías** o **alfabéticamente**. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista **alfabética**.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec6c997a73d0b163ec0857ddd3a3380f26793bf
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538532"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591169"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 

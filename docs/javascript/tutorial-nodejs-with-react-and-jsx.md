@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
+ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777951"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622570"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -85,10 +85,12 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Aplicación web en blanco de Node.js** (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js** y, a continuación, elija **Aplicación web en blanco de Node.js: JavaScript** (aunque en este tutorial se usa el compilador de TypeScript, los pasos requieren que empiece con la plantilla de **JavaScript**).
+    
+    En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y haga clic en **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación web en blanco de Node.js**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 
@@ -418,7 +420,7 @@ Para este escenario, use Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    o bien,
+    o bien
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end

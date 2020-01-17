@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516684"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588855"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 
@@ -30,7 +30,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
 ::: moniker range="vs-2017"
 
-1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 1. Elija **Visual C#** o **Visual Basic** en la parte izquierda del cuadro de diálogo **Nuevo proyecto** y, a continuación, elija **Escritorio de Windows**.
 

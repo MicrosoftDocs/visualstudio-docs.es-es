@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653650"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589157"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedimiento Creación de un archivo de configuración de pruebas para una prueba de carga distribuida
 
@@ -124,7 +124,7 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
     |**Emulación de red:** puede especificar que quiere colocar una carga de red artificial en la prueba mediante una configuración de pruebas. La emulación de la red afecta a la comunicación hacia y desde el equipo, emulando una velocidad de conexión de red determinada, como la conexión de acceso telefónico. **Nota:**  La emulación de la red no se puede usar para aumentar la velocidad de conexión de la red.|Las pruebas de carga omiten el adaptador Emulación de red. En su lugar, las pruebas de carga usan la configuración especificada en la combinación de redes del escenario de prueba de carga.<br /><br /> Para obtener más información, vea [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Información del sistema:** se puede establecer una configuración de pruebas para incluir información del sistema sobre los equipos en los que se ejecuta el recopilador de datos y diagnósticos de información del sistema. La información del sistema se especifica en los resultados de pruebas mediante una configuración de pruebas.|![Icono de información](../test/media/vc364f4.gif)<br /><br /> Puede recopilar información del sistema de los agentes de carga y del sistema sometido a prueba.|No es necesaria ninguna configuración para recopilar esta información.|
     |**Impacto en las pruebas:** puede recopilar información sobre los métodos de código de aplicaciones que se usaron al ejecutar un caso de prueba. Dicha información se puede usar junto con los cambios realizados por los desarrolladores en el código de la aplicación para determinar qué pruebas resultaron afectadas por esos cambios de desarrollo.|Las pruebas de carga no recopilan datos de impacto en las pruebas.||
-    |**Grabadora de vídeo:** puede crear una grabación de vídeo de la sesión de escritorio mientras ejecuta una prueba automatizada. Esto puede ser útil para ver las acciones del usuario para una prueba de IU codificada. El vídeo puede ayudar a otros miembros del equipo a aislar problemas de la aplicación que son difíciles de reproducir. **Nota:**  Cuando se ejecutan pruebas de manera remota, la grabadora de vídeo no funcionará a menos que el agente se ejecute en modo de proceso interactivo.|![Icono importante](../test/media/vc364f3.gif) **Advertencia:**  No se recomienda el uso del adaptador Grabadora de vídeo para las pruebas de carga.|[Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Grabadora de vídeo:** puede crear una grabación de vídeo de la sesión de escritorio mientras ejecuta una prueba automatizada. Esto puede ser útil para ver las acciones del usuario para una prueba de IU codificada. El vídeo puede ayudar a otros miembros del equipo a aislar problemas de la aplicación que son difíciles de reproducir. **Nota:**  Cuando se ejecutan pruebas de manera remota, la grabadora de vídeo no funcionará a menos que el agente se ejecute en modo de proceso interactivo.|![Icono Importante](../test/media/vc364f3.gif) **Advertencia:**  No se recomienda el uso del adaptador Grabadora de vídeo para las pruebas de carga.|[Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Elija **Implementación**.
 

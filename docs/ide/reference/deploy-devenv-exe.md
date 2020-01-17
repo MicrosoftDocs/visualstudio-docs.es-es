@@ -8,17 +8,17 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], after build
 - /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff5f79b2482c2e025957872892a585e08bbfa8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661658"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570133"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 

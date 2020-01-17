@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823258"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593439"
 ---
 # <a name="assigntargetpath-task"></a>Tarea AssignTargetPath
 Esta tarea acepta una lista de archivos y agrega atributos `<TargetPath>` si aún no se han especificado.

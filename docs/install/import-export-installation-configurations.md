@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849034"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596858"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importación o exportación de configuraciones de instalación
 

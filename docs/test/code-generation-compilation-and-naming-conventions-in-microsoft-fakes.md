@@ -2,17 +2,17 @@
 title: 'Microsoft Fakes: generación y compilación de código; convenciones de nomenclatura'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665251"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589336"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -257,7 +257,7 @@ attribute of the Assembly element in the .fakes:
 |-|-|
 |Un **tipo**`T`|T<br /><br /> Se quitan el espacio de nombres, la estructura anidada y las marcas genéricas.|
 |Un **parámetro de salida**`out T`|`TOut`|
-|Un **parámetro de referencia**`ref T`|`TRef`|
+|Un **parámetro de referencia** `ref T`|`TRef`|
 |Un **tipo de matriz**`T[]`|`TArray`|
 |Un tipo de **matriz multidimensional**`T[ , , ]`|`T3`|
 |Un tipo de **puntero**`T*`|`TPtr`|

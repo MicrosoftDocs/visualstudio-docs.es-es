@@ -1,6 +1,6 @@
 ---
 title: Implementación de contenedor de Docker de ASP.NET en el registro de ACR
-description: Aprenda a usar las herramientas de contenedor de Visual Studio para implementar una aplicación web de ASP.NET Core en un registro de contenedor
+description: Aprenda a usar las herramientas de contenedor de Visual Studio para implementar una aplicación web de ASP.NET Core o de ASP.NET en un registro de contenedor.
 author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: b3b012bfe3b9fc359a8c9688c52aa5bfc27fd2c7
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: cfed918633f62700f464ee5f9911fbbfc6463c36
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126146"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916914"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Implementación de un contenedor ASP.NET en un registro de contenedor con Visual Studio
 
@@ -38,7 +38,7 @@ Para realizar este tutorial:
 * Instalar [Docker para Windows](https://docs.docker.com/docker-for-windows/install/)
 
 ## <a name="create-an-aspnet-core-web-app"></a>Crear una aplicación web de ASP.NET Core
-Los siguientes pasos le guían en el proceso de creación de una aplicación ASP.NET Core básica que se usará en este tutorial.
+Los siguientes pasos le guían en el proceso de creación de una aplicación ASP.NET Core básica que se usará en este tutorial. Si ya tiene un proyecto, puede omitir este paso.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -53,12 +53,12 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
 3. Elija **New Azure Container Registry** (Nueva instancia de Azure Container Registry) y haga clic en **Publish** (Publicar).
 4. Rellene los valores deseados en el **Create a new Azure Container Registry** (Crear una nueva instancia de Azure Container Registry).
 
-    | Parámetro      | Valor sugerido  | DESCRIPCIÓN                                |
+    | Parámetro      | Valor sugerido  | Descripción                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefijo de DNS** | Nombre único globalmente | Nombre que identifica de forma única el nuevo registro de contenedor. |
     | **Suscripción** | Elija una suscripción | La suscripción de Azure que se va a usar. |
     | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nombre del grupo de recursos en el que se va a crear el registro de contenedor. Elija **Nuevo** para crear un grupo de recursos nuevo.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
     | **Ubicación del registro** | Una ubicación cercana a usted | Elija una ubicación en una [región](https://azure.microsoft.com/regions/) cercana a usted o a otros servicios que usarán el registro de contenedor. |
 
     ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
@@ -66,3 +66,7 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
 5. Haga clic en **Crear**
 
 Ahora puede extraer el contenedor del registro a cualquier host capaz de ejecutar imágenes de Docker, por ejemplo [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
+
+## <a name="see-also"></a>Vea también
+
+[Inicio rápido: Implementación de una instancia de contenedor en Azure mediante la CLI de Azure](/azure/container-instances/container-instances-quickstart)

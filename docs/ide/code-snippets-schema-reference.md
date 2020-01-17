@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631114"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585436"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -36,7 +36,7 @@ El valor de texto del elemento **Assembly** puede ser bien el nombre descriptivo
 </Assembly>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Contiene información sobre las referencias de ensamblado requeridas por el fragmento de código.|
 
@@ -52,7 +52,7 @@ Especifica el nombre del autor del fragmento. El **Administrador de fragmentos d
 </Author>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene información general sobre el fragmento de código.|
 
@@ -110,7 +110,7 @@ Hay tres atributos disponibles para el elemento Code:
 
 - **Language**: atributo _obligatorio_ que especifica el lenguaje del fragmento de código. El valor puede ser uno de los siguientes:
 
-   |Valor|DESCRIPCIÓN|
+   |Valor|Descripción|
    |-----|-----------|
    |`VB`|Identifica un fragmento de código de Visual Basic.|
    |`CSharp`|Identifica un fragmento de código de C#.|
@@ -123,7 +123,7 @@ Hay tres atributos disponibles para el elemento Code:
 
 - **Kind**: atributo _opcional_ que especifica el tipo de código que contiene el fragmento de código. El valor puede ser uno de los siguientes:
 
-   |Valor|DESCRIPCIÓN|
+   |Valor|Descripción|
    |-----|-----------|
    |`method body`|Especifica que el fragmento de código es un cuerpo de método y, por consiguiente, se debe insertar dentro de una declaración de método.|
    |`method decl`|Especifica que el fragmento de código es un método y, por consiguiente, se debe insertar dentro de una clase o módulo.|
@@ -135,7 +135,7 @@ Hay tres atributos disponibles para el elemento Code:
 
 ### <a name="parent-element"></a>Elemento primario
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
 
@@ -150,16 +150,16 @@ Permite especificar un encabezado y varios fragmentos de código de IntelliSense
 </CodeSnippet>
 ```
 
-|Atributo|DESCRIPCIÓN|
+|Atributo|Descripción|
 |---------------|-----------------|
 |`Format`|Atributo necesario. Especifica la versión del esquema del fragmento de código. El atributo de formato debe ser una cadena en la sintaxis de x.x.x, donde cada "x" representa un valor numérico del número de versión. Visual Studio omitirá los fragmentos de código con atributos `Format` que no sea capaz de interpretar.|
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Elemento necesario. Contiene información general sobre el fragmento de código. En un fragmento de código debe haber uno y solo un elemento `Header`.|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Elemento necesario. Contiene el código que insertará Visual Studio. En un fragmento de código debe haber uno y solo un elemento `Snippet`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets-element)|Elemento raíz del esquema XML del fragmento de código.|
 
@@ -173,7 +173,7 @@ Agrupa elementos [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnip
 </CodeSnippets>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento opcional. Elemento primario de todos los datos del fragmento de código. Puede haber cero o más elementos `CodeSnippet` en un elemento `CodeSnippets`.|
 
@@ -188,12 +188,12 @@ Especifica los literales y los objetos que componen las partes de un fragmento d
 </Declarations>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Elemento opcional. Define los literales del fragmento de código que puede editar. Puede haber cero o más elementos `Literal` en un elemento `Declarations`.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Elemento opcional. Define los objetos del fragmento de código modificable. Puede haber cero o más elementos `Object` en un elemento `Declarations`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
 
@@ -207,7 +207,7 @@ Especifica el valor predeterminado del literal o del objeto para un fragmento de
 </Default>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define los campos literales del fragmento de código que se pueden editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define los campos del objeto del fragmento de código que se pueden editar.|
@@ -224,7 +224,7 @@ Especifica información descriptiva acerca del contenido de un fragmento de cód
 </Description>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene información general sobre el fragmento de código.|
 
@@ -243,7 +243,7 @@ Especifica una función que se ejecutará cuando un literal o un objeto reciba f
 </Function>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define los campos literales del fragmento de código que se pueden editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define los campos del objeto del fragmento de código que se pueden editar.|
@@ -266,7 +266,7 @@ Especifica información general acerca del fragmento de código de IntelliSense.
 </Header>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Author](../ide/code-snippets-schema-reference.md#author-element)|Elemento opcional. El nombre de la persona o compañía que creó el fragmento de código. Puede haber cero o un elemento `Author` en un elemento `Header`.|
 |[Elemento Description](../ide/code-snippets-schema-reference.md#description-element)|Elemento opcional. Descripción del fragmento de código. Puede haber cero o un elemento `Description` en un elemento `Header`.|
@@ -276,7 +276,7 @@ Especifica información general acerca del fragmento de código de IntelliSense.
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Elemento opcional. Agrupa los elementos `SnippetType`. Puede haber cero o un elemento `SnippetTypes` en un elemento `Header`. Si no hay ningún elemento `SnippetTypes`, el fragmento de código siempre es válido.|
 |[Elemento Title](../ide/code-snippets-schema-reference.md#title-element)|Elemento necesario. Nombre descriptivo del fragmento de código. Debe haber uno y solo un elemento `Title` en un elemento `Header`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento primario de todos los datos del fragmento de código.|
 
@@ -293,7 +293,7 @@ Especifica una dirección URL que proporciona más información acerca de un fra
 </HelpUrl>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene información general sobre el fragmento de código.|
 
@@ -309,7 +309,7 @@ Especifica un identificador único para un elemento `Literal` u `Object`. Dos li
 </ID>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define los campos literales del fragmento de código que se pueden editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define los campos del objeto del fragmento de código que se pueden editar.|
@@ -326,11 +326,11 @@ Especifica los espacios de nombres importados utilizados por un fragmento de có
 </Import>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Namespace](../ide/code-snippets-schema-reference.md#namespace-element)|Elemento necesario. Especifica el espacio de nombres utilizado por el fragmento de código. Debe haber uno y solo un elemento `Namespace` en un elemento `Import`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento grouping de los elementos **Import**.|
 
@@ -344,11 +344,11 @@ Agrupa los elementos `Import` individuales.
 </Imports>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Elemento opcional. Contiene los espacios de nombres importados para el fragmento de código. Puede haber cero o más elementos **Import** en un elemento `Imports`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
 
@@ -362,7 +362,7 @@ Especifica una palabra clave personalizada para el fragmento de código. Visual 
 </Keyword>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Agrupa los elementos `Keyword` individuales.|
 
@@ -379,11 +379,11 @@ Agrupa los elementos `Keyword` individuales. Visual Studio utiliza las palabras 
 </Keywords>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Keyword](../ide/code-snippets-schema-reference.md#keyword-element)|Elemento opcional. Contiene palabras clave individuales para el fragmento de código. Puede haber cero o más elementos `Keyword` en un elemento `Keywords`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene información general sobre el fragmento de código.|
 
@@ -402,18 +402,18 @@ Los literales y objetos no pueden contener un elemento **ID** con un valor selec
 </Literal>
 ```
 
-|Atributo|DESCRIPCIÓN|
+|Atributo|Descripción|
 |---------------|-----------------|
 |`Editable`|Atributo `Boolean` opcional. Especifica si puede o no editar el literal después de insertar el fragmento de código. El valor predeterminado de este atributo es `true`.|
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento necesario. Especifica el valor predeterminado del literal cuando inserta el fragmento de código. Debe haber uno y solo un elemento `Default` en un elemento `Literal`.|
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento opcional. Especifica una función que se ejecuta cuando el literal recibe el foco en Visual Studio. Puede haber cero o un elemento `Function` en un elemento `Literal`.|
 |[Elemento ID](../ide/code-snippets-schema-reference.md#id-element)|Elemento necesario. Especifica un identificador único para el literal. Debe haber uno y solo un elemento `ID` en un elemento `Literal`.|
 |[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento opcional. Describe el valor esperado y el uso del literal. Puede haber cero o un elemento **Tooltip** en un elemento `Literal`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contiene los literales y objetos de un fragmento de código que se pueden editar.|
 
@@ -427,7 +427,7 @@ Especifica el espacio de nombres que se debe importar para compilar y ejecutar e
 </Namespace>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Importa el espacio de nombres especificado.|
 
@@ -447,11 +447,11 @@ Define los objetos del fragmento de código modificable. El elemento `Object` se
 </Object>
 ```
 
-|Atributo|DESCRIPCIÓN|
+|Atributo|Descripción|
 |---------------|-----------------|
 |`Editable`|Atributo `Boolean` opcional. Especifica si puede o no editar el literal después de insertar el fragmento de código. El valor predeterminado de este atributo es `true`.|
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento necesario. Especifica el valor predeterminado del literal cuando inserta el fragmento de código. Debe haber uno y solo un elemento `Default` en un elemento `Literal`.|
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento opcional. Especifica una función que se ejecuta cuando el literal recibe el foco en Visual Studio. Puede haber cero o un elemento `Function` en un elemento `Literal`.|
@@ -459,7 +459,7 @@ Define los objetos del fragmento de código modificable. El elemento `Object` se
 |[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento opcional. Describe el valor esperado y el uso del literal. Puede haber cero o un elemento **Tooltip** en un elemento `Literal`.|
 |[Elemento Type](../ide/code-snippets-schema-reference.md#type-element)|Elemento necesario. Especifica el tipo del objeto. Debe haber uno y solo un elemento `Type` en un elemento `Object`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contiene los literales y objetos de un fragmento de código que se pueden editar.|
 
@@ -474,12 +474,12 @@ Especifica información sobre las referencias a ensamblados que requiere el frag
 </Reference>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Assembly](../ide/code-snippets-schema-reference.md#assembly-element)|Elemento necesario. Contiene el nombre del ensamblado al que hace referencia el fragmento de código. Debe haber uno y solo un elemento `Assembly` en un elemento `Reference`.|
 |[Elemento Url](../ide/code-snippets-schema-reference.md#url-element)|Elemento opcional. Contiene una dirección URL que proporciona más información sobre el ensamblado al que se hace referencia. Puede haber cero o un elemento `Url` en un elemento `Reference`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento de agrupación de los elementos `Reference`.|
 
@@ -493,20 +493,20 @@ Agrupa los elementos `Reference` individuales.
 </References>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Elemento opcional. Contiene información sobre referencias de ensamblado para el fragmento de código. Puede haber cero o más elementos `Reference` en un elemento `References`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
 
 ## <a name="shortcut-element"></a>Elemento Shortcut
 
-Especifica el texto de acceso directo utilizado para insertar el fragmento de código. El valor de texto de un elemento `Shortcut` sólo puede contener caracteres alfanuméricos, guiones ( - ) y caracteres de subrayado ( _ ).
+Especifica el texto de acceso directo utilizado para insertar el fragmento de código. El valor de texto de un elemento `Shortcut` solo puede contener caracteres alfanuméricos, guiones ( - ) y caracteres de subrayado ( _ ).
 
 > [!CAUTION]
-> _ y - no son caracteres admitidos en accesos directos de fragmentos de código de C++.
+> El subrayado (_) no es un carácter admitido en accesos directos de fragmentos de código de C++.
 
 ```xml
 <Shortcut>
@@ -514,7 +514,7 @@ Especifica el texto de acceso directo utilizado para insertar el fragmento de c�
 </Shortcut>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contiene información general sobre el fragmento de código.|
 
@@ -533,14 +533,14 @@ Especifica las referencias, las importaciones, las declaraciones y el código pa
 </Snippet>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento necesario. Especifica el código que desea insertar en un archivo de documentación. Debe haber uno y solo un elemento `Code` en un elemento `Snippet`.|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento opcional. Especifica los literales y los objetos que componen las partes de un fragmento de código que puede editar. Puede haber cero o un elemento `Declarations` en un elemento `Snippet`.|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento opcional. Agrupa los elementos `Import` individuales. Puede haber cero o un elemento `Imports` en un elemento `Snippet`.|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento opcional. Agrupa los elementos `Reference` individuales. Puede haber cero o un elemento `References` en un elemento `Snippet`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Permite especificar un encabezado y varios fragmentos de código de IntelliSense, que puede insertar en los archivos de código de Visual Studio.|
 
@@ -554,7 +554,7 @@ Especifica la manera en que Visual Studio inserta el fragmento de código.
 </SnippetType>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Agrupa los elementos `SnippetType`.|
 
@@ -577,11 +577,11 @@ Agrupa los elementos `SnippetType` individuales. Si el elemento `SnippetTypes` n
 </SnippetTypes>
 ```
 
-|Elemento secundario|DESCRIPCIÓN|
+|Elemento secundario|Descripción|
 |-------------------|-----------------|
 |[Elemento SnippetType](../ide/code-snippets-schema-reference.md#snippettype-element)|Elemento opcional. Especifica la manera en que Visual Studio inserta el fragmento en el código. Puede haber cero o más elementos `SnippetType` en un elemento `SnippetTypes`.|
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Especifica información general sobre el fragmento de código.|
 
@@ -595,7 +595,7 @@ Especifica el título del fragmento de código. El título almacenado en el elem
 </Title>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Especifica información general sobre el fragmento de código.|
 
@@ -611,7 +611,7 @@ Describe el valor y el uso esperados de un literal o de un objeto de un fragment
 </ToolTip>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define los campos literales del fragmento de código que se pueden editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define los campos del objeto del fragmento de código que se pueden editar.|
@@ -628,7 +628,7 @@ Especifica el tipo del objeto. El elemento `Object` se utiliza para identificar 
 </Type>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define los campos del objeto del fragmento de código que se pueden editar.|
 
@@ -651,7 +651,7 @@ Especifica una dirección URL que proporciona más información acerca del ensam
 </Url>
 ```
 
-|Elemento primario|DESCRIPCIÓN|
+|Elemento primario|Descripción|
 | - |-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Especifica las referencias a ensamblados que requiere el fragmento de código.|
 

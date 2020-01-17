@@ -1,7 +1,7 @@
 ---
 title: Aumento de la productividad de desarrollo de .NET
 description: Información general sobre la navegación, el análisis de código, las pruebas unitarias y otras características para ayudarle a escribir código .NET mejor y más rápido.
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491641"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567507"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -41,7 +41,7 @@ Algunas extensiones también ofrecen combinaciones de teclado:
 
 Estos son accesos directos populares de Visual Studio:
 
-| Métodos abreviados (todos los perfiles) | Comando | DESCRIPCIÓN |
+| Métodos abreviados (todos los perfiles) | Comando | Descripción |
 |-|-|-|
 | **Ctrl**+**T** | Ir a todo | Navegar a cualquier declaración de archivo, tipo, miembro o símbolo |
 | **F12** (también **CTRL**+**clic**) | Ir a definición | Navegar hasta donde se define un símbolo |

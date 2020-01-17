@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646642"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585449"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -83,7 +83,7 @@ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo 
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 ::: moniker range="vs-2017"
-|Botón|DESCRIPCIÓN|
+|Botón|Descripción|
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
@@ -134,12 +134,12 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 ### <a name="group-tests-in-the-test-list"></a>Agrupar pruebas en la lista de pruebas
 
 ::: moniker range="vs-2017"
-Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por** ![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
+Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por**![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
 
 ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-El Explorador de pruebas le permite agrupar las pruebas en una jerarquía. La agrupación de jerarquías predeterminada es **Proyecto**, **Espacio de nombres** y, luego, **Clase**. Para cambiar la manera en que se organizan las pruebas, elije el botón **Agrupar por** ![botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
+El Explorador de pruebas le permite agrupar las pruebas en una jerarquía. La agrupación de jerarquías predeterminada es **Proyecto**, **Espacio de nombres** y, luego, **Clase**. Para cambiar la manera en que se organizan las pruebas, elije el botón **Agrupar por**![botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
 
 ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -151,7 +151,7 @@ Puede definir sus propios niveles de la jerarquía y del grupo por **Estado** y,
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
 ::: moniker range="vs-2017"
-|Agrupar|DESCRIPCIÓN|
+|Agrupar|Descripción|
 |-|-----------------|
 |**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
 |**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
@@ -159,7 +159,7 @@ Puede definir sus propios niveles de la jerarquía y del grupo por **Estado** y,
 |**Proyecto**|Agrupa las pruebas por el nombre de los proyectos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Agrupar|DESCRIPCIÓN|
+|Agrupar|Descripción|
 |-|-----------------|
 |**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
 |**Estado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**, **Pruebas superadas**, **No ejecutadas**.|
@@ -177,7 +177,7 @@ Por lo general, un rasgo es un par nombre-valor de categoría, pero también pue
 
 En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:
 
-|Rasgo|DESCRIPCIÓN|
+|Rasgo|Descripción|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|
@@ -266,7 +266,7 @@ Para filtrar por otros criterios:
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
 
 ::: moniker range="vs-2017"
-|Calificador:|DESCRIPCIÓN|
+|Calificador:|Descripción|
 |-|-----------------|
 |**Rasgo**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
@@ -277,7 +277,7 @@ Para filtrar por otros criterios:
 |**Resultado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Calificador:|DESCRIPCIÓN|
+|Calificador:|Descripción|
 |-|-----------------|
 |**Estado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
 |**Rasgos**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|

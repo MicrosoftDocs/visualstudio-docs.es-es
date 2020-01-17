@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118909"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589960"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 
@@ -32,7 +32,7 @@ En algunos sentidos, un componente es como un control. El **cuadro de herramient
 
 1. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el **cuadro de herramientas**. (Este se utiliza en el siguiente paso del tutorial.) Debería aparecer un área en la parte inferior del **Diseñador de Windows Forms** (bajo el formulario del **Visor de imágenes**), con un icono para cada uno de los dos componentes de cuadro de diálogo agregados, como se muestra en la imagen siguiente.
 
-     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>*Componentes de* ***cuadro de diálogo***
+     ![Componentes de cuadro de diálogo](../ide/media/express_dialogsadded.png)<br>***Componentes*** de *cuadro de diálogo*
 
 1. Elija el icono **openFileDialog1** del área de la parte inferior del **Diseñador de Windows Forms**. Establezca dos propiedades:
 

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: aa01cb77e8a003438721984da13f46de350104ea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845545"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918996"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 |Depuración|Depurar aplicaciones que se ejecutan con permisos elevados.|[Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)|
 ||Depurar aplicaciones que se ejecutan bajo una cuenta de usuario diferente, como sitios web ASP.NET.|[Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Depuración en zona para Aplicaciones XAML del explorador (XBAP).|[WPF Host (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
+||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)|
 ||Configurar un firewall para depuración remota.|[Configurar las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|
 |Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Implementar una aplicación web ASP.NET en un proveedor de hospedaje mediante Visual Studio o Visual Web Developer: Implementación en IIS como entorno de prueba](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
@@ -71,4 +71,4 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
 ## <a name="see-also"></a>Vea también
- [Trasladar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [instalar Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)

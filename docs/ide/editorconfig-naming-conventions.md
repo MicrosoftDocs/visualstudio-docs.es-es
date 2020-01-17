@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650911"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588608"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
-Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los métodos asincrónicos deben terminar en "Async". Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la **lista de errores** o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
+Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los campos privados deben comenzar por `_`. Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la **lista de errores** o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
 
 Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
 

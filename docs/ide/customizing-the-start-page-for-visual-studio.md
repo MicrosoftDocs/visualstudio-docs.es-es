@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652548"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567221"
 ---
 # <a name="customize-startup"></a>Personalizar el inicio
 
@@ -32,7 +32,7 @@ También puede mostrar una página principal personalizada, que es una página X
 
 ## <a name="to-change-the-startup-item"></a>Para cambiar la pantalla de inicio
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y después elija **Inicio**.
 
@@ -58,7 +58,7 @@ Para instalar una página de inicio personalizada, abra el archivo *.vsix* o cop
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Para seleccionar la página de inicio personalizada que se va a mostrar
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 1. Expanda **Entorno** y después elija **Inicio**.
 

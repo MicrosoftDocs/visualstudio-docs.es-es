@@ -13,17 +13,17 @@ helpviewer_keywords:
 - UsingTask element [MSBuild]
 - <UsingTask> element [MSBuild]
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565271"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/task-element-msbuild.md) al ensamblado que contiene la implementación de la tarea.
@@ -40,7 +40,7 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 ```
 
 > [!NOTE]
-> A diferencia de las propiedades y los elementos, se usará el *primer* elemento `UsingTask` que se aplica a un `TaskName`; para invalidar tareas, debe definir un nuevo elemento `UsingTask` *antes* del ya existente.
+> A diferencia de las propiedades y los elementos, se usará el *primer* elemento `UsingTask` que se aplica a un `TaskName`; para invalidar tareas, debe definir un nuevo elemento `UsingTask`*antes* del ya existente.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
@@ -57,14 +57,14 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ### <a name="child-elements"></a>Elementos secundarios
 
-|Elemento|DESCRIPCIÓN|
+|Elemento|Descripción|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Conjunto de parámetros que aparecen en la tarea que se genera mediante el objeto `TaskFactory` especificado.|
 |[Task](../msbuild/task-element-msbuild.md)|Datos que se pasan a `TaskFactory` para generar una instancia de la tarea.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-| Elemento | DESCRIPCIÓN |
+| Elemento | Descripción |
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
