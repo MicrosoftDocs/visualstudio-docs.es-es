@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706795"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916942"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Compilación de aplicaciones en contenedores con Visual Studio
 
@@ -103,7 +103,7 @@ La preparación solo se produce en el modo **Rápido**, por lo que el contenedor
 
 ## <a name="volume-mapping"></a>Asignación de volúmenes
 
-Para que la depuración funcione en contenedores, Visual Studio usa la asignación de volúmenes a fin de asignar el depurador y las carpetas de NuGet desde el equipo host. Estos son los volúmenes que se montan en el contenedor:
+Para que la depuración funcione en contenedores, Visual Studio usa la asignación de volúmenes a fin de asignar el depurador y las carpetas de NuGet desde el equipo host. La asignación de volúmenes se describe en la documentación de Docker [aquí](https://docs.docker.com/storage/volumes/). Estos son los volúmenes que se montan en el contenedor:
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ En el caso de las aplicaciones web ASP.NET Core, puede haber dos carpetas adicio
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>Aplicaciones ASP.NET Core habilitadas para SSL
 
-Las herramientas de contenedor de Visual Studio admiten la depuración de una aplicación ASP.NET Core habilitada para SSL con un certificado de desarrollo, de la misma manera que cabría esperar que funcionase sin contenedores. Para que esto suceda, Visual Studio agrega un par de pasos más para exportar el certificado y ponerlo a disposición del contenedor. Este es el flujo:
+Las herramientas de contenedor de Visual Studio admiten la depuración de una aplicación ASP.NET Core habilitada para SSL con un certificado de desarrollo, de la misma manera que cabría esperar que funcionase sin contenedores. Para que esto suceda, Visual Studio agrega un par de pasos más para exportar el certificado y ponerlo a disposición del contenedor. Este es el flujo que Visual Studio controla automáticamente durante la depuración en el contenedor:
 
-1. Asegúrese de que el certificado de desarrollo local esté presente y sea de confianza en el equipo host mediante la herramienta `dev-certs`.
-2. Exporte el certificado a %APPDATA%\ASP.NET\Https con una contraseña segura que esté almacenada en el almacén de secretos de usuario de esta aplicación en concreto.
-3. Monte el volumen en los directorios siguientes:
+1. Garantiza que el certificado de desarrollo local esté presente y sea de confianza en el equipo host mediante la herramienta `dev-certs`.
+2. Exporta el certificado a %APPDATA%\ASP.NET\Https con una contraseña segura que esté almacenada en el almacén de secretos de usuario de esta aplicación en concreto.
+3. Monta el volumen en los directorios siguientes:
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core busca un certificado que coincida con el nombre de ensamblado de la
 }
 ```
 
-Para obtener más información sobre el uso de SSL con aplicaciones ASP.NET Core en contenedores, vea [Hospedaje de imágenes de ASP.NET Core con Docker a través de HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
+Si la configuración admite tanto compilaciones ubicadas en contenedores como compilaciones que no lo están, debe usar las variables del entorno, ya que las rutas de acceso son específicas del entorno de contenedor.
+
+Para obtener más información sobre el uso de SSL con aplicaciones ASP.NET Core en contenedores, vea [Hospedaje de imágenes de ASP.NET Core con Docker a través de HTTPS](/aspnet/core/security/docker-https).
 
 ## <a name="debugging"></a>Depuración
 

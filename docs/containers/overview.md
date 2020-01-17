@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127192"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916566"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
 
@@ -31,7 +31,7 @@ La compatibilidad con Docker está disponible para proyectos ASP.NET, proyectos 
 
 La compatibilidad con Docker en Visual Studio ha cambiado a lo largo de una serie de versiones en respuesta a las necesidades del cliente. Hay dos niveles de compatibilidad con Docker que puede agregar a un proyecto, y las opciones admitidas varían según el tipo de proyecto y la versión de Visual Studio. Con algunos tipos de proyectos admitidos, si simplemente quiere un contenedor para un único proyecto, sin usar la orquestación, puede hacerlo si agrega compatibilidad con Docker.  El siguiente nivel es la compatibilidad con la orquestación de contenedores, que agrega los archivos de compatibilidad adecuados para el orquestador determinado que elija.  
 
-Con Visual Studio 2017, puede usar Docker Compose y Service Fabric como servicios de orquestación de contenedores.  También puede usar Kubernetes si instala [Visual Studio Tools para Kubernetes](https://aka.ms/get-vsk8stools).
+Con Visual Studio 2017, puede usar Docker Compose y Service Fabric como servicios de orquestación de contenedores.  También puede usar Kubernetes si instala [Visual Studio Tools para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 
 > [!NOTE]
 > Si usa una versión de Visual Studio 2017 anterior a la 15.8 o bien utiliza la plantilla de proyecto de .NET Framework (no .NET Core), al agregar compatibilidad con Docker se agrega automáticamente compatibilidad con la orquestación con Docker Compose. La compatibilidad con la orquestación de contenedores, mediante Docker Compose, se agrega automáticamente en las versiones de Visual Studio 2017 15.0 a 15.7 y para los proyectos de .NET Framework.
@@ -44,7 +44,7 @@ Con Visual Studio 2017, puede usar Docker Compose y Service Fabric como servicio
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
-* [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
+* [Herramientas de desarrollo de .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) para el desarrollo con .NET Core.
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="docker-support-in-visual-studio"></a>Compatibilidad con Docker en Visual Studio
@@ -56,7 +56,7 @@ La compatibilidad con Docker en Visual Studio ha cambiado a lo largo de una seri
 Con Visual Studio 2019, puede usar Docker Compose, Kubernetes y Service Fabric como servicios de orquestación de contenedores.
 
 > [!NOTE]
-> Si va a usar la plantilla completa del proyecto de consola de .NET Framework, al agregar compatibilidad con Docker se agrega automáticamente compatibilidad con la orquestación mediante Docker Compose.
+> Si va a usar la plantilla completa del proyecto de consola de .NET Framework, la opción admitida es **Agregar compatibilidad con el orquestador de contenedores** después de la creación del proyecto, con opciones para usar Service Fabric o Docker Compose. La adición de compatibilidad durante la creación del proyecto y la **adición de compatibilidad con Docker** para un único proyecto sin orquestación no son opciones disponibles.
 
 Las versiones 16.4 y posteriores de Visual Studio 2019 incluyen la ventana **Contenedores**, en la que puede ver los contenedores en ejecución, examinar las imágenes disponibles, ver las variables de entorno, los registros y las asignaciones de puertos, inspeccionar el sistema de archivos, adjuntar un depurador o abrir una ventana de terminal dentro del entorno de un contenedor. Vea [Visualización y diagnóstico de contenedores e imágenes en Visual Studio](view-and-diagnose-containers.md).
 
@@ -116,7 +116,7 @@ Repita el proceso con los otros proyectos que quiera controlar mediante Docker C
 ## <a name="kubernetes-support"></a>Compatibilidad con Kubernetes
 
 ::: moniker range="vs-2017"
-Para agregar compatibilidad con Kubernetes, instale [Visual Studio Tools para Kubernetes](https://aka.ms/get-vsk8stools).
+Para agregar compatibilidad con Kubernetes, instale [Visual Studio Tools para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
 Con la compatibilidad con Kubernetes, puede habilitar una conexión entre su proyecto local y un clúster de Kubernetes que se ejecuta en [Azure Kubernetes Service (AKS)](/azure/aks) y, por tanto, modificar y depurar los servicios que se ejecutan en AKS con Visual Studio.  Este servicio se proporciona mediante [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces también le permite configurar ramas distintas de servicios de Kubernetes llamadas *dev spaces* para fines de desarrollo, de esta manera puede aislar de forma eficaz servicios de producción de las versiones que se usan para desarrollo y mantener las distintas modificaciones claramente separadas unas de otras.

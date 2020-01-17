@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596273"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775893"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -81,7 +81,7 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
   - Archivo de volcado de memoria
 
 > [!NOTE]
-> Los archivos de registro, las instantáneas y los datos de registro se envían a Microsoft solo cuando se proporciona el permiso; para ello, se envía el informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" (vea la captura de pantalla incluida en esta nota). Los registros y archivos recopilados se almacenan en la carpeta %temp% y se limpian periódicamente y después de cada carga. Si no quiere incluir un registro en el informe de problemas, elimine el archivo de la carpeta %temp% antes de enviar el informe.
+> Los archivos de registro, las capturas de pantalla y los datos de grabación que envíe pueden aumentar significativamente la capacidad de Microsoft para comprender su problema y atenderlo.  Por lo tanto, se recomienda incluirlos. Para proteger su privacidad, los archivos de registro, las instantáneas y los datos de registro adjuntos se envían a Microsoft solo cuando se proporciona el permiso; para ello, se envía el informe de problemas con el que se incluyen. Puede ver los archivos que se incluyen en el paso "Resumen" de la ventana "Notificar un problema" antes de enviar el informe. Para excluir los archivos de registro del sistema del informe, desactive "Asociar registros del sistema" en el paso "Resumen". Como referencia, vea la siguiente captura de pantalla. 
   > ![Notificar un problema: resumen de los registros recopilados](media/report-a-problem-logs-collected.png)
 
 

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777470"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915807"
 ---
 # <a name="installation"></a>Instalación
 
@@ -24,7 +24,7 @@ Visual Studio Tools para AI se puede instalar en sistemas operativos Windows de 
 
 Esta extensión funciona con Visual Studio 2015 y 2017, Community Edition o superior.
 
-Puede descargar las herramientas desde [Visual Studio Marketplace](https://aka.ms/vstoolsforai) o desde Visual Studio:
+Puede descargar las herramientas desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) o desde Visual Studio:
 
 1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > Actualmente, no admite macOS.
 
-Para instalar el paquete de Python de CNTK, consulte [cómo instalar CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Para instalar el paquete de Python de CNTK, consulte [cómo instalar CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -156,7 +156,7 @@ Vaya [aquí](https://caffe2.ai/docs/getting-started.html) para crearlo a partir 
 
 ### <a name="mxnet"></a>MXNet
 
-[MXNet Apache (en proceso de creación)](https://mxnet.incubator.apache.org/) es un marco de aprendizaje profundo diseñado para ser eficaz y flexible. Permite **combinar** [la programación simbólica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) para disparar la eficacia y la productividad.
+[MXNet Apache (en proceso de creación)](https://mxnet.incubator.apache.org/) es un marco de aprendizaje profundo diseñado para ser eficaz y flexible. Permite **combinar** la [programación simbólica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) para maximizar la eficacia y la productividad.
 
 Para instalar MXNet, ejecute el siguiente comando en un terminal:
 

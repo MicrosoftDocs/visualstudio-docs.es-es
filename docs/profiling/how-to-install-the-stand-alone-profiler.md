@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: b0b461fa812d6fff8c4d6a258cb9dabf8b04f6db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778926"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852295"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedimiento Instalar el generador de perfiles independiente
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona un generador de perfiles independiente basado en la línea de comandos que se puede ejecutar sin tener que instalar el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta situación se da si un equipo no tiene o no puede tener instalado un entorno de desarrollo. Por ejemplo, no debe instalar un entorno de desarrollo en un servidor web de producción.
@@ -31,7 +31,7 @@ ms.locfileid: "74778926"
 
 1. Busque el instalador de perfiles independiente (*vs_standaloneprofiler.exe*) donde haya descargado las herramientas de rendimiento y ejecútelo.
 
-2. Agregue las rutas de acceso de *vsintr.exe* y *msdis150.dll* a la ruta de acceso del sistema.
+2. Agregue la ruta de acceso para *vsinstr. exe* a la ruta de acceso del sistema.
 
    > [!NOTE]
    > Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
@@ -41,7 +41,7 @@ ms.locfileid: "74778926"
    > [!NOTE]
    > Si se muestra la información de uso de vsinstr.exe, quiere decir que todo está configurado correctamente. Si ve un error que indica que no se encuentra vsinstr.exe o una de sus dependencias, asegúrese de que las rutas de acceso estén correctamente configuradas como se describe en el paso 2.
 
-4. Configure el servidor de símbolos estableciendo la variable **_NT_SYMBOL_PATH** en **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** .
+4. Configure el servidor de símbolos estableciendo la variable **_NT_SYMBOL_PATH** en **symsrv\*symsrv.dll\*c:\localcache\*https://msdl.microsoft.com/download/symbols** .
 
 5. Una vez configurado el servidor de símbolos con las variables de entorno del sistema, ejecute las herramientas del generador de perfiles de línea de comandos en un nuevo símbolo del sistema. De esta forma, las nuevas variables de entorno surtirán efecto. En la ventana del símbolo del sistema, escriba el siguiente comando:
 

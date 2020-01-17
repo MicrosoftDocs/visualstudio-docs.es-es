@@ -9,19 +9,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c562d6f750db7096e37b863c46d6330eb484912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588829"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844314"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
 El comando **Crear pruebas unitarias** crea códigos auxiliares de método de pruebas unitarias. Esta característica permite una configuración sencilla de un proyecto de prueba, la clase de prueba y el código auxiliar de método de pruebas de su interior.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > El comando de menú **Crear pruebas unitarias** solo está disponible para el código administrado que tiene como destino .NET Framework (pero no .NET Core).
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> El comando de menú **Crear pruebas unitarias** solo está disponible para el código administrado.
+::: moniker-end
 
 El comando de menú **Crear pruebas unitarias** es extensible y puede utilizarse para generar pruebas de MSTest, MSTest V2, NUnit y xUnit.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815487"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916807"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos de sistema del Emulador de Visual Studio para Android
 
@@ -71,7 +71,7 @@ Requisitos de Hyper-V
 
 Para comprobar los requisitos de RAM y de Windows, vaya al Panel de control, elija Sistema y seguridad y, a continuación, elija Sistema.
 
-![Comprobar los requisitos del sistema](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
+![Comprobación de los requisitos del sistema](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
 ## <a name="network-requirements"></a>Requisitos de red
 
@@ -107,7 +107,7 @@ Una vez que el equipo y el BIOS están configurados para admitir Hyper-V, el pro
 
 |Requisito|Cómo comprobar y habilitar este requisito|
 |-----------------|----------------------------------------------|
-|Hyper-V debe estar instalado|Siga las mismas instrucciones que las que se usan [habilitar Hyper-V para el emulador de Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Compruebe el estado del servicio **Administración de máquinas virtuales de Hyper-V** en el complemento Servicios.|
+|Hyper-V debe estar instalado|Siga las mismas instrucciones que las que se usan [habilitar Hyper-V para el emulador de Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Compruebe el estado del servicio **Administración de máquinas virtuales de Hyper-V** en el complemento Servicios.|
 |Hyper-V debe estar ejecutándose.|Para obtener más información sobre la administración de servicios, vea los temas siguientes:<br /><br /> -   [Iniciar, detener, pausar, reanudar o reiniciar un servicio](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurar cómo se inicia un servicio](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Debe ser miembro del grupo local Administradores de Hyper-V.
@@ -119,7 +119,7 @@ Una vez que el equipo y el BIOS están configurados para admitir Hyper-V, el pro
 > [!IMPORTANT]
 > Después de unirse al grupo, cierre la sesión o reinicie el equipo para que el cambio surta efecto.
 
- ![Unirse al grupo de seguridad Administradores de Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Unión al grupo de seguridad de Administradores de Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Para agregarse a un grupo manualmente, abra el complemento Grupos y usuarios locales.
 

@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254546"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846820"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>¿Dónde se agrupa por rasgos en Visual Studio 2019?
-Esta agrupación de rasgos se ha movido a una columna. Con la jerarquía de varios niveles y personalizable de la versión 16.2 de Visual Studio 2019, pensamos que incluir rasgos como una agrupación creaba una complejidad visual innecesaria. Queremos conocer su opinión sobre este diseño. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+Esta agrupación de rasgos se ha movido a una columna. Con la jerarquía de varios niveles y personalizable de la versión 16.2 de Visual Studio 2019, pensamos que incluir rasgos como una agrupación creaba una complejidad visual innecesaria. Queremos conocer su opinión sobre este diseño. [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
 
 Por ahora, puede hacer clic con el botón derecho en la columna en el Explorador de pruebas y seleccionar Columnas. Marque la columna Rasgos y aparecerá en el Explorador de pruebas. Ahora puede filtrar esta columna por los rasgos que le interesen.
 
@@ -43,7 +43,7 @@ Compile el proyecto para ejecutar la detección basada en ensamblados.
 ::: moniker range="vs-2017"
 Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas** > **Opciones** > **Prueba**.
 ::: moniker-end
-La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc., porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones 15.6 y posteriores de Visual Studio 2017, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan pruebas definidas dinámicamente después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
+La [detección de pruebas en tiempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc., porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones 15.6 y posteriores de Visual Studio 2017, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan pruebas definidas dinámicamente después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
 
 ## <a name="test-explorer--plus-symbol"></a>Signo "+" (más) en el Explorador de pruebas
 
@@ -67,13 +67,13 @@ Vaya a **Herramientas** > **Opciones** > **Prueba** y active la casilla **Detect
 
 **Ahora aparecen pruebas en el Explorador de pruebas mientras escribo, sin tener que compilar el proyecto. ¿Qué ha cambiado?**
 
-Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados, vea [Detección de pruebas dinámicas](#dynamic-test-discovery).
+Esta característica se denomina [Detección de pruebas en tiempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Usa un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que se compile el proyecto. Para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados, vea [Detección de pruebas dinámicas](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidad de la detección de pruebas en tiempo real
 
 **¿Los lenguajes y marcos de pruebas pueden utilizar la detección de pruebas en tiempo real?**
 
-La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) solo funciona con los lenguajes administrados (C# y Visual Basic), porque se ha compilado mediante el compilador Roslyn. Por ahora, la detección de pruebas en tiempo real solo funciona con los marcos xUnit, NUnit y MSTest.
+La [detección de pruebas en tiempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) solo funciona con los lenguajes administrados (C# y Visual Basic), porque se ha compilado mediante el compilador Roslyn. Por ahora, la detección de pruebas en tiempo real solo funciona con los marcos xUnit, NUnit y MSTest.
 
 ## <a name="test-explorer-logs"></a>Registros del Explorador de pruebas
 

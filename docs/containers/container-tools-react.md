@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516447"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916749"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -47,9 +47,9 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
    ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs2017/new-react-project.png)
 
-1. Haga clic derecho en el nodo del proyecto y elija **Agregar** > **Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
+1. Haga clic con el botón derecho en el nodo del proyecto y elija **Agregar**>**Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
 
-   ![Agregue compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adición de compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Seleccione el tipo de contenedor y haga clic en **Aceptar**.
 ::: moniker-end
@@ -59,9 +59,9 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
    ![Captura de pantalla del nuevo proyecto React.js](media/container-tools-react/vs2019/new-react-project.png)
 
-1. Haga clic derecho en el nodo del proyecto y elija **Agregar** > **Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
+1. Haga clic con el botón derecho en el nodo del proyecto y elija **Agregar**>**Compatibilidad con Docker** para agregar un archivo Dockerfile al proyecto.
 
-   ![Agregue compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adición de compatibilidad con Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Seleccione el tipo de contenedor.
 ::: moniker-end
@@ -222,12 +222,12 @@ Una vez completado el ciclo de desarrollo y depuración de la aplicación, puede
 1. Elija **Crear una instancia de Azure Container Registry** y haga clic en **Publicar**.
 1. Rellene los valores deseados en el **Create a new Azure Container Registry** (Crear una nueva instancia de Azure Container Registry).
 
-    | Parámetro      | Valor sugerido  | DESCRIPCIÓN                                |
+    | Parámetro      | Valor sugerido  | Descripción                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefijo de DNS** | Nombre único globalmente | Nombre que identifica de forma única el nuevo registro de contenedor. |
     | **Suscripción** | Elija una suscripción | La suscripción de Azure que se va a usar. |
     | **[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nombre del grupo de recursos en el que se va a crear el registro de contenedor. Elija **Nuevo** para crear un grupo de recursos nuevo.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Estándar | Nivel de servicio del registro de contenedor  |
     | **Ubicación del registro** | Una ubicación cercana a usted | Elija una ubicación en una [región](https://azure.microsoft.com/regions/) cercana a usted o a otros servicios que usarán el registro de contenedor. |
 
     ![Cuadro de diálogo Crear Azure Container Registry de Visual Studio][0]

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189414"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929244"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -38,7 +38,7 @@ La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar
 
 ## <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
-La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimiento de la aplicación. Le proporcionará más información sobre los recursos de CPU que consume la aplicación. Para obtener un tutorial más detallado de la herramienta Uso de CPU, vea [Beginner's Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Guía básica para la generación de perfiles de rendimiento).
+La herramienta Uso de CPU es un buen lugar para empezar a analizar el rendimiento de la aplicación. Le proporcionará más información sobre los recursos de CPU que consume la aplicación. Para ver un tutorial más detallado de la herramienta Uso de CPU, consulte [Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 En la vista **Resumen** de Herramientas de diagnóstico, seleccione **Habilitar generación de perfiles de CPU** (debe estar en una sesión de depuración).
 
