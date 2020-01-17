@@ -12,17 +12,17 @@ helpviewer_keywords:
 - MSBuild, command line reference
 - msbuild.exe
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: e8cd04d16f35ae2cc1edaf43ae9f8803c3e424ba
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589258"
 ---
 # <a name="msbuild-command-line-reference"></a>Referencia de la línea de comandos de MSBuild
 Si usa *MSBuild.exe* para compilar un archivo de proyecto o solución, puede incluir varios modificadores para especificar distintos aspectos del proceso.
@@ -37,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ## <a name="arguments"></a>Argumentos
 
-|Argumento|DESCRIPCIÓN|
+|Argumento|Descripción|
 |--------------|-----------------|
 |`ProjectFile`|Crea los destinos en el archivo de proyecto especificado. Si no se especifica un archivo de proyecto, MSBuild busca en el directorio de trabajo actual una extensión de nombre de archivo que termine en *proj* y usa ese archivo. También puede especificar un archivo de solución de Visual Studio para este argumento.|
 
 ## <a name="switches"></a>Modificadores
 
-|Modificador|Forma abreviada|DESCRIPCIÓN|
+|Modificador|Forma abreviada|Descripción|
 |------------|----------------|-----------------|
 |-help|/? o -h|Muestra información de uso. El comando siguiente muestra un ejemplo:<br /><br /> `msbuild.exe -?`|
 |-detailedsummary|-ds|Muestra información detallada al final del registro de compilación sobre las configuraciones que se compilaron y cómo se programaron en los nodos.|
@@ -64,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>Modificadores para registradores
 
-|Modificador|Forma abreviada|DESCRIPCIÓN|
+|Modificador|Forma abreviada|Descripción|
 |------------|----------------|-----------------|
 |-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Pasa los parámetros especificados al registrador de la consola, lo que muestra información de compilación en la ventana de la consola. Puede especificar los parámetros siguientes:<br /><br /> -   **PerformanceSummary**. Muestra el tiempo empleado en tareas, destinos y proyectos.<br />-   **Summary**. Muestra un resumen de errores y advertencias al final.<br />-   **NoSummary**. No muestra un resumen de errores y advertencias al final.<br />-   **ErrorsOnly**. Muestra solo errores.<br />-   **WarningsOnly**. Muestra solo advertencias.<br />-   **NoItemAndPropertyList**. No muestra la lista de elementos y propiedades que aparecerían al principio de cada compilación del proyecto si se estableciera el nivel de detalle en `diagnostic`.<br />-   **ShowCommandLine**. Muestra los mensajes de `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Muestra la marca de tiempo como un prefijo en los mensajes.<br />-   **ShowEventId**. Muestra el identificador de evento para los eventos iniciados, los eventos finalizados y los mensajes.<br />-   **ForceNoAlign**. No alinea el texto al tamaño del búfer de la consola.<br />-   **DisableConsoleColor**. Usa los colores de consola predeterminados para todos los mensajes de registro.<br />-   **DisableMPLogging**. Deshabilita el estilo de registro de resultados de multiprocesador al ejecutarse en el modo de no multiprocesador.<br />-   **EnableMPLogging**. Habilita el estilo de registro de multiprocesador aunque se ejecute en el modo de no multiprocesador. Este estilo de registro está habilitado de forma predeterminada.<br />-   **Verbosity**. Invalida el valor **-verbosity** para este registrador.<br /><br /> Use un punto y coma para separar varios parámetros, como se muestra en el ejemplo siguiente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|Registra los resultados de la compilación de cada nodo de MSBuild en su propio archivo. La ubicación inicial de estos archivos es el directorio actual. De forma predeterminada, los archivos se denominan *MSBuild\<NodeId>.log*. Puede usar el modificador **-fileLoggerParameters** para especificar la ubicación de estos archivos y otros parámetros de fileLogger.<br /><br /> Si asigna un nombre a un archivo de registro mediante el modificador **-fileLoggerParameters**, el registrador distribuido usará ese nombre como plantilla y anexará el identificador del nodo a dicho nombre al crear un archivo de registro para cada nodo.|

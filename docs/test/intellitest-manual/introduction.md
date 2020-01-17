@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653173"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591608"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
 
@@ -77,6 +77,9 @@ Una vez que se haya compilado y ejecutado, IntelliTest genera un conjunto de pru
 6. "Hello\0\0"
 7. "Hello\0World!"
 8. "Hello World!"
+
+> [!NOTE]
+> Para problemas de compilación, pruebe a reemplazar las referencias de Microsoft.VisualStudio.TestPlatform.TestFramework y Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions por una referencia a Microsoft.VisualStudio.QualityTools.UnitTestFramework.
 
 Lea [Generar pruebas unitarias con IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) para saber dónde se guardan las pruebas generadas. El código de prueba generado debe incluir una prueba como la siguiente:
 

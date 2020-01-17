@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577777"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591143"
 ---
 # <a name="vbc-task"></a>Vbc (tarea)
-Incluye *vbc.exe*, que genera ejecutables (*.exe*), archivos de biblioteca de vínculos dinámicos (*.dll*) o módulos de código (*.netmodule*). Para obtener más información sobre*vbc.exe*, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
+Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o módulos de código ( *.netmodule*). Para obtener más información sobre*vbc.exe*, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea `Vbc` .

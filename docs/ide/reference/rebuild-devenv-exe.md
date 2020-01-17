@@ -9,17 +9,17 @@ helpviewer_keywords:
 - /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da73d37542bbdd7babd956a64ed78c714be7101
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655627"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565622"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 

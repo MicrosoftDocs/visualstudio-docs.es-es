@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653001"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588894"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 
@@ -79,7 +79,7 @@ A continuación se indican las opciones que se pueden configurar:
 
 ## <a name="start-pause-and-stop"></a>Iniciar, pausar y detener
 
-Para habilitar Live Unit Testing, seleccione **Prueba** > **Live Unit Testing** > **Iniciar** en el menú de Visual Studio de nivel superior. Cuando Live Unit Testing se habilita, las opciones disponibles en el menú **Live Unit Testing** pasan de un elemento único, **Iniciar**, a **Pausar**, **Detener** y **Reiniciar**:
+Para habilitar Live Unit Testing, seleccione **Prueba** > **Live Unit Testing** > **Iniciar** en el menú de Visual Studio de nivel superior. Cuando Live Unit Testing se habilita, las opciones disponibles en el menú **Live Unit Testing** pasan de un elemento único (**Iniciar**) a **Pausar** y **Detener**:
 
 - **Pausar** suspende temporalmente Live Unit Testing.
 
@@ -87,10 +87,8 @@ Para habilitar Live Unit Testing, seleccione **Prueba** > **Live Unit Testing** 
 
 - **Detener** para completamente Live Unit Testing. Live Unit Testing descarta todos los datos que ha recopilado.
 
-- **Reiniciar** detiene Live Unit Testing, elimina los datos persistentes y entonces reinicia Live Unit Testing.
-
 > [!NOTE]
-> Si inicia Live Unit Testing en una solución que no incluye ningún proyecto de prueba unitaria, las opciones **Pausar**, **Detener** y **Reiniciar** aparecen en el menú **Live Unit Testing**, pero Live Unit Testing no se inicia. En la ventana **Salida** se muestra un mensaje que comienza por "No supported test adapters are referenced by this solution..." ("Esta solución no hace referencia a ningún adaptador de prueba compatible...").
+> Si inicia Live Unit Testing en una solución que no incluye ningún proyecto de prueba unitaria, las opciones **Pausar** y **Detener** aparecen en el menú **Live Unit Testing**, pero Live Unit Testing no se inicia. En la ventana **Salida** se muestra un mensaje que comienza por "No supported test adapters are referenced by this solution..." ("Esta solución no hace referencia a ningún adaptador de prueba compatible...").
 
 Live Unit Testing puede pausarse temporalmente o detenerse por completo en cualquier momento. Puede hacerlo, por ejemplo, si está en curso una refactorización y sabe que las pruebas se interrumpirán durante un tiempo.
 
@@ -156,7 +154,7 @@ Hay algunas diferencias entre la ejecución y actualización automáticas de res
 Si la solución tiene 10 o más proyectos, Visual Studio muestra el siguiente cuadro de diálogo cuando:
 
 - Inicia Live Unit Testing y no hay datos persistentes.
-- Selecciona **Prueba** > **Live Unit Testing** > **Reiniciar**.
+- Selecciona **Herramientas** > **Opciones** > **Live Unit Testing** > **Delete Persisted Data** (Eliminar datos persistentes).
 
 ![Cuadro de diálogo de Live Unit Testing para proyectos de gran tamaño](media/lut-large-project.png)
 

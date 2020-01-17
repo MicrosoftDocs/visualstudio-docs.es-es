@@ -7,19 +7,19 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983983"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404948"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
 Para empezar a desarrollar aplicaciones .NET nativas y multiplataforma en macOS, instale Visual Studio 2019 para Mac siguiendo los pasos que encontrará a continuación.
 
  > [!div class="button"]
- > [Descargar Visual Studio para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [Descargar Visual Studio para Mac](https://aka.ms/vsmac)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 ||Solo Android|Seleccione la plataforma **Android**.|Tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes.|
 ||Solo Mac|Seleccione la plataforma **macOS (Cocoa)** .|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
 |**Aplicaciones .NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
-|**Aplicaciones web de ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Aplicaciones web ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
 |**Funciones de Azure**|         |Seleccione la plataforma **.NET Core**.|         |
 |**Desarrollo de juegos multiplataforma de Unity**|         |No es necesario instalar plataformas adicionales más allá de Visual Studio para Mac.| Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.|
 

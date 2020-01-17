@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646678"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566415"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
@@ -46,7 +46,7 @@ En esta sección, vamos a crear un proyecto de prueba de carga de C#. También p
 
 1. Abra Visual Studio.
 
-2. Elija **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
+2. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 

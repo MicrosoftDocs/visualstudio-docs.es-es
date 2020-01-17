@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777938"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678979"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -44,7 +44,7 @@ Puede depurar código JavaScript y TypeScript con Visual Studio. Puede establece
 ## <a name="debug-client-side-script"></a>Depurar scripts de cliente
 
 ::: moniker range=">=vs-2019"
-Visual Studio proporciona compatibilidad con la depuración del lado cliente solo para Chrome y Microsoft Edge (Chromium). En algunos escenarios, el depurador alcanza automáticamente los puntos de interrupción en los códigos JavaScript y TypeScript y en scripts insertados en archivos HTML. Para depurar scripts del lado cliente en aplicaciones ASP.NET, vea la entrada de blog sobre [depuración de JavaScript en Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) y esta [publicación para Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Visual Studio proporciona compatibilidad con la depuración del lado cliente solo para Chrome y Microsoft Edge (Chromium). En algunos escenarios, el depurador alcanza automáticamente los puntos de interrupción en los códigos JavaScript y TypeScript y en scripts insertados en archivos HTML. Para depurar scripts del lado cliente en aplicaciones ASP.NET, vea la entrada de blog sobre [depuración de JavaScript en Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) y esta [publicación para Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Para depurar TypeScript en ASP.NET Core, consulte también [Crear una aplicación ASP.NET Core con TypeScript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio proporciona compatibilidad con la depuración del lado cliente solo para Internet Explorer y Chrome. En algunos escenarios, el depurador alcanza automáticamente los puntos de interrupción en los códigos JavaScript y TypeScript y en scripts insertados en archivos HTML. Para depurar scripts del lado cliente en aplicaciones ASP.NET, vea la entrada de blog sobre [depuración del lado cliente de proyectos de ASP.NET en Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -86,7 +86,7 @@ Para este escenario, use Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    o bien,
+    o bien
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end

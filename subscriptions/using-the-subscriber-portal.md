@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
-ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74705826"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546231"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del Portal de suscriptor: my.visualstudio.com
 
 El Portal de suscripciones de Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), es el recurso que incluye todas las opciones para sacar partido del amplio abanico de ventajas que ofrece su suscripción a Visual Studio.
 
-El uso del portal requiere el inicio de sesión con la identidad asociada a su suscripción.  Puede ser una cuenta Microsoft (MSA) o una dirección de correo electrónico que le haya proporcionado una organización, como su empresa o institución educativa.  Obtenga información acerca del [inicio de sesión](signing-in.md).
+El uso del portal requiere el inicio de sesión con la identidad asociada a su suscripción.  Puede ser una cuenta de Microsoft (MSA) o una dirección de correo electrónico que le haya proporcionado una organización, como su empresa o institución educativa.  Obtenga información acerca del [inicio de sesión](signing-in.md).
 
 El portal está organizado en seis páginas.  Cada una de ellas proporciona acceso a los diferentes productos o servicios incluidos con su suscripción.  Las seis páginas son Beneficios, Descargas, Claves de producto, Suscripciones, Soporte técnico y Marketplace.
 

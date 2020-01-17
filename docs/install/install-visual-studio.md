@@ -2,7 +2,7 @@
 title: Instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo instalar Visual Studio, paso a paso.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018855"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590129"
 ---
 # <a name="install-visual-studio"></a>Instalar Visual Studio
 
@@ -139,7 +139,7 @@ Una vez instalado el Instalador, puede usarlo para personalizar la instalación 
 
  ::: moniker range="vs-2017"
 
-1. Busque la carga de trabajo que quiera en la pantalla **Instalando Visual Studio**.
+1. Busque la carga de trabajo que quiera en la pantalla **Instalador de Visual Studio**.
 
    ![Visual Studio 2017: Instalación de una carga de trabajo](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ Una vez instalado el Instalador, puede usarlo para personalizar la instalación 
 
 ::: moniker range="vs-2019"
 
-1. Después de que se instalen los nuevos componentes y cargas de trabajo, elija **Iniciar**.
+1. Busque la carga de trabajo que quiera en la pantalla **Instalador de Visual Studio**.
 
    ![Visual Studio 2019: Instalación de una carga de trabajo](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -174,13 +174,13 @@ Si no quiere usar la característica Cargas de trabajo para personalizar la inst
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Instalar componentes individuales](media/vs-installer-installing-components.png "Instalar componentes individuales de Visual Studio")
+  ![Visual Studio 2017: instalar componentes individuales](media/vs-installer-installing-components.png "Instalación de componentes individuales de Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019: Instalación de componentes individuales](media/vs-2019/vs-installer-individual-components.png "Instalación de componentes individuales de Visual Studio")
+  ![Visual Studio 2019: instalar componentes individuales](media/vs-2019/vs-installer-individual-components.png "Instalación de componentes individuales de Visual Studio")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ De manera predeterminada, el programa instalador intenta hacer coincidir el idio
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Instalar paquetes de idioma](media/vs-installer-installing-language-packs.png "Instalar paquetes de idioma de Visual Studio")
+  ![Visual Studio 2017: instalar paquetes de idioma](media/vs-installer-installing-language-packs.png "Instalación de paquetes de idioma de Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019: Instalación de paquetes de idioma](media/vs-2019/vs-installer-language-packs.png "Instalación de paquetes de idioma de Visual Studio")
+  ![Visual Studio 2019: instalar paquetes de idioma](media/vs-2019/vs-installer-language-packs.png "Instalación de paquetes de idioma de Visual Studio")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ Otra manera de cambiar el idioma predeterminado es mediante la ejecución del in
 
 **Novedad de la versión 15.7**: ahora puede reducir la superficie de instalación de Visual Studio en la unidad del sistema. Puede mover la caché de descarga, los componentes compartidos, SDK y herramientas a distintas unidades y mantener Visual Studio en la unidad que lo ejecuta más rápido.
 
-  ![Visual Studio 2017: Cambio de la ubicación de instalación](media/installation-options-by-location.png "Cambio de la ubicación de instalación")
+  ![Visual Studio 2017: cambio de las ubicaciones de instalación](media/installation-options-by-location.png "Cambio de la ubicación de la instalación")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Otra manera de cambiar el idioma predeterminado es mediante la ejecución del in
 
 Puede reducir la superficie de memoria de instalación de Visual Studio en la unidad del sistema. Puede mover la caché de descarga, los componentes compartidos, SDK y herramientas a distintas unidades y mantener Visual Studio en la unidad que lo ejecuta más rápido.
 
-  ![Selección de ubicaciones de instalación de Visual Studio 2019](media/vs-2019/vs-installer-installation-locations.png "Seleccione la ubicación de instalación")
+  ![Visual Studio 2019: cambio de las ubicaciones de instalación](media/vs-2019/vs-installer-installation-locations.png "Selección de la ubicación de la instalación")
 
 ::: moniker-end
 

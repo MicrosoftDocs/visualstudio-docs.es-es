@@ -2,16 +2,16 @@
 title: Deshabilitación del reconocimiento de PPP en Visual Studio
 description: Aquí se describen las limitaciones del Diseñador de Windows Forms en monitores HDPI y el procedimiento para ejecutar Visual Studio como un proceso sin reconocimiento de PPP.
 ms.date: 04/05/2019
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637410"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589570"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deshabilitación del reconocimiento de PPP en Visual Studio
 

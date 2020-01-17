@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416424"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596533"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 
@@ -67,7 +67,7 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.
 

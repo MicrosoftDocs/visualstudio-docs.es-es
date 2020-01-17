@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645890"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591052"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Buscar y organizar plantillas de proyecto y elemento
 
@@ -120,7 +120,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Cree un proyecto o abra uno existente. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
-   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado**>**Elementos de Visual C#** .
+   La categoría **HelloWorld** aparecerá en el cuadro de diálogo **Agregar nuevo elemento**, en **Instalado** > **Elementos de Visual C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Visualización de plantillas en categorías primarias
 

@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 276eff442891f70b9eea76e9167b07f798af2d6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974249"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591468"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deshabilitación o traslado de la caché de paquetes
 

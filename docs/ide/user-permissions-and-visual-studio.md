@@ -1,36 +1,36 @@
 ---
 title: Ejecutar como administrador
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647348"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718641"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
-Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal siempre que sea posible.
+Por motivos de seguridad, debe ejecutar Visual Studio como un usuario típico siempre que sea posible.
 
 > [!WARNING]
 > También debe asegurarse de no compilar, iniciar ni depurar ninguna solución de Visual Studio que no proceda de una persona o una ubicación de confianza.
 
-En el IDE de Visual Studio puede hacerlo prácticamente todo como un usuario normal. Necesita permisos de administrador para completar las tareas siguientes:
+En el IDE de Visual Studio puede hacerlo prácticamente todo como un usuario típico. Necesita permisos de administrador para completar las tareas siguientes:
 
 |Área|Tarea|Para obtener más información|
 |----------|----------| - |
-|Instalación|Instalar Visual Studio.|[Instalar Visual Studio](../install/install-visual-studio.md)|
+|Instalación|Instale o modifique Visual Studio.|[Instalar Visual Studio](../install/install-visual-studio.md), [Modificar Visual Studio](../install/modify-visual-studio.md)|
 ||Instalar, actualizar o quitar contenido local de Ayuda.|[Instalar y administrar el contenido local de Ayuda](../help-viewer/install-manage-local-content.md)|
 |Cuadro de herramientas|Agregar controles COM clásicos al **Cuadro de herramientas**.|[Cuadro de herramientas](../ide/reference/toolbox.md)|
 |Compilación|Utilizar eventos posteriores a la compilación que registran un componente.|[Descripción de los pasos de compilación personalizada y los eventos de compilación](/cpp/build/understanding-custom-build-steps-and-build-events)|
@@ -55,7 +55,7 @@ Si tiene que ejecutar Visual Studio como administrador, siga estos pasos para ab
 
 1. Abra el menú **Inicio** y desplácese hasta Visual Studio 2017.
 
-1. En el menú contextual de **Visual Studio 2017**, seleccione **Más**>**Ejecutar como administrador**.
+1. En el menú contextual o que aparece al hacer clic con el botón derecho de **Visual Studio 2017**, seleccione **Más** > **Ejecutar como administrador**.
 
    Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
@@ -65,7 +65,7 @@ Si tiene que ejecutar Visual Studio como administrador, siga estos pasos para ab
 
 1. Abra el menú **Inicio** y vaya a Visual Studio 2019.
 
-1. En el menú contextual de **Visual Studio 2019**, seleccione **Más**>**Ejecutar como administrador**.
+1. En el menú contextual o que aparece al hacer clic con el botón derecho de **Visual Studio 2019**, seleccione **Más** > **Ejecutar como administrador**.
 
    Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 

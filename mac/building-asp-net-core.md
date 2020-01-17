@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717274"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398283"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Compilación de aplicaciones de ASP.NET Core en Visual Studio para Mac
 
@@ -73,9 +73,9 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image8.png)
 
-7. También hay una variedad de archivos de configuración que sirven para administrar el proyecto, sus paquetes y la aplicación en tiempo de ejecución. Por ejemplo, la [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en **appsettings.json**. Pero puede invalidar algunos o todos estos valores de forma individual en cada entorno, por ejemplo, proporcionando un archivo **appsettings.Development.json** para el entorno **Desarrollo**.
+7. También hay una variedad de archivos de configuración que sirven para administrar el proyecto, sus paquetes y la aplicación en tiempo de ejecución. Por ejemplo, la [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en **appsettings.json**. El archivo **appsettings.Development.json** está anidado bajo el archivo appsettings.json. En este caso, puede invalidar algunos o todos estos valores en cada entorno. Visual Studio para Mac anidará archivos de esta manera con la misma lógica que Visual Studio para Windows, de modo que los archivos a los que necesita tener acceso con más frecuencia estén en primer plano. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarea 3: Descripción de cómo se hospeda la aplicación
 

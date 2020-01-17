@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950716"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588751"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Paso 2: Ejecución de la aplicación de visor de imágenes
 
@@ -32,7 +32,7 @@ Aquí se muestra cómo ejecutar la aplicación.
     - En la barra de herramientas, elija el botón **Iniciar depuración**, que aparece de esta forma:
 
       ![Botón de la barra de herramientas Iniciar depuración](../ide/media/express_icondebug.png)<br>
-      *Botón de la barra de herramientas* ***Iniciar depuración***
+      ***Botón de la barra de herramientas*** *Iniciar depuración*
 
 1. Visual Studio ejecuta la aplicación y aparece una ventana denominada **Form1**. En la captura de pantalla siguiente se muestra la aplicación que acaba de crear. La aplicación está en ejecución y pronto la ampliará.
 
@@ -42,7 +42,7 @@ Aquí se muestra cómo ejecutar la aplicación.
 1. Vuelva al entorno de desarrollo integrado (IDE) de Visual Studio y examine la nueva barra de herramientas. Al ejecutar una aplicación, aparecen botones adicionales en la barra de herramientas. Estos botones permiten hacer cosas como detener e iniciar la aplicación, y ayudan a realizar el seguimiento de los errores que pueda haber. En este ejemplo, se usa para iniciar y detener la aplicación.
 
      ![Barra de herramientas Depuración](../ide/media/express_debugtoolbar.png)<br>
-*Barra de herramientas* ***Depuración***
+***Barra de herramientas*** *Depuración*
 
 1. Use uno de los métodos siguientes para detener la aplicación:
 

@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913325"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404995"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -118,9 +118,9 @@ Puede configurar los delegados mediante los métodos `Run`, `Map` y `Use` en `IA
 
 El método `Configure` de la plantilla predefinida está diseñado para realizar una serie de acciones. En primer lugar, configura una página de control de excepciones para su uso durante el desarrollo. Después, envía una respuesta a la página web que realiza la solicitud con un simple "Hello World".
 
-Este sencillo proyecto Hello, World se puede ejecutar ahora sin necesidad de agregar más código. Para ejecutar la aplicación y verla en el explorador, pulse el botón Reproducir (el botón triangular) en la barra de herramientas:
+Este sencillo proyecto Hello, World se puede ejecutar ahora sin necesidad de agregar más código. Para ejecutar la aplicación, puede seleccionar el explorador en el que desea ejecutar la aplicación mediante la lista desplegable situada a la derecha del botón de reproducción o simplemente presionar el botón Reproducir (el botón triangular) para usar el explorador predeterminado:
 
-![Ejecutar la aplicación](media/asp-net-core-2019-run-debug.png)
+![Ejecución del explorador](media/asp-net-web-picker.png)
 
 Visual Studio para Mac usa un puerto aleatorio para iniciar el proyecto web. Para averiguar qué puerto es, abra la salida de la aplicación, que aparece en **Vista > Paneles**. La salida debería parecerse a la que se muestra a continuación:
 

@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659894"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590506"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -120,7 +120,7 @@ Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto 
 
 **Para agregar un proyecto de prueba unitaria a una solución:**
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución y elija **Agregar** > **Nuevo** **proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución y elija **Agregar** > **Nuevo** **Proyecto**.
 
 ::: moniker range="vs-2017"
 
@@ -273,7 +273,7 @@ Si las pruebas individuales no tienen ninguna dependencia que impida que se ejec
 
 ::: moniker range="vs-2017"
 
-|Botón|DESCRIPCIÓN|
+|Botón|Descripción|
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
@@ -299,7 +299,7 @@ Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del **Explorad
 ![Categorías de filtro de búsqueda](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|Botón|DESCRIPCIÓN|
+|Botón|Descripción|
 |-|-|
 |![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png)|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
 

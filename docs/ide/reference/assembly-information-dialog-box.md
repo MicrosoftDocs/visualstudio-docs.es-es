@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Assembly Information dialog box
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d86c077cf129632c78d6266e7c8146325b78fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651905"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595792"
 ---
 # <a name="assembly-information-dialog-box"></a>Cuadro de diálogo Información de ensamblado
 

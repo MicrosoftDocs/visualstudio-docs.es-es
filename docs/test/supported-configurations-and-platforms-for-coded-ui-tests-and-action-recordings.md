@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cf70ad5e28286d3906b1d670303e5fdfad4cbbe2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982946"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594063"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones
 

@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567273"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 
@@ -49,7 +49,7 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
 
 1. Abra Visual Studio.
 
-1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús superior, elija **Archivo** > **Nuevo**  > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -113,7 +113,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , tiene que instalar la *carga de trabajo* **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , tiene que instalar la *carga de trabajo***Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
    >
    > ![Vínculo Abrir el instalador de Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
 

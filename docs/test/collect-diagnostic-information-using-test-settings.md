@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, configuring run settings
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e0d769385ff5d77fb92cabfc00801233454d7c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6bf82ee72d4398095f25de2493c28c5155456b55
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665231"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588868"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Recopilar información de diagnóstico con la configuración de pruebas
 

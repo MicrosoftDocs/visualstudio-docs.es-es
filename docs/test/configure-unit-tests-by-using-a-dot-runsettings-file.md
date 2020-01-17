@@ -2,17 +2,17 @@
 title: Configuración de pruebas unitarias con un archivo .runsettings
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771516"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593257"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -70,15 +70,15 @@ Hay tres formas de especificar un archivo de parámetros de ejecución en la ver
 
   Si está habilitada la detección automática de archivos de parámetros de ejecución, la configuración de este archivo se aplica a todas las pruebas ejecutadas. Puede activar la detección automática de archivos runsettings desde dos lugares:
   
-    - **Tools** > **Options** > **Test** > **Auto Detect runsettings Files** (Herramientas > Opciones > Probar > Detectar archivos runsettings automáticamente)
+    - **Herramientas** > **Opciones** > **Probar** > **Detectar archivos runsettings automáticamente**
 
       ![Opción Auto Detect runsettings File (Detectar archivos runsettings automáticamente) en Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
       
-    - **Test** > **Configure Run Settings** > **Auto Detect runsettings Files** (Probar > Configurar parámetros de ejecución > Detectar archivos runsettings automáticamente)
+    - **Probar** > **Configurar parámetros de ejecución** > **Detectar archivos runsettings automáticamente**
     
       ![Menú Auto Detect runsettings Files (Detectar archivos runsettings automáticamente) en Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
-- En el IDE, seleccione **Test** > **Configure Run Settings** > **Select Solution Wide runsettings File** (Probar > Configurar parámetros de ejecución > Seleccionar archivo runsettings en toda la solución) y, después, seleccione el archivo *.runsettings*.
+- En el IDE, seleccione **Probar** > **Configurar parámetros de ejecución** > **Seleccionar archivo runsettings en toda la solución** y, después, seleccione el archivo *.runsettings*.
 
    ![Menú Select Solution Wide runsettings File (Seleccionar archivo runsettings en toda la solución) de prueba en Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
       

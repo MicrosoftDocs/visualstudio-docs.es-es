@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913182"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75575931"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 El proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos *.targets* de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -56,7 +56,7 @@ Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al q
 
 En la tabla siguiente se muestran todos los destinos incluidos en los destinos comunes que puede reemplazar de forma segura.
 
-|Nombre de destino|DESCRIPCIÓN|
+|Nombre de destino|Descripción|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de que se realice la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
 |`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:**  Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|
@@ -120,7 +120,7 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propiedades DependsOn que normalmente se reemplazan
 
-|Nombre de la propiedad|DESCRIPCIÓN|
+|Nombre de la propiedad|Descripción|
 |-------------------|-----------------|
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|

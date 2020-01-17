@@ -11,17 +11,17 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574787"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedimiento Hacer referencia al nombre o la ubicación del archivo de proyecto
 Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto sin tener que crear su propia propiedad. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona propiedades reservadas que hacen referencia al nombre de archivo del proyecto y a otras propiedades relacionadas con el proyecto. Para obtener más información sobre las propiedades reservadas, vea [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -40,6 +40,8 @@ Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto
   ```
 
   Una ventaja de utilizar una propiedad reservada es que cualquier cambio en el nombre del archivo del proyecto se incorpora automáticamente. La próxima vez que compile el proyecto, el archivo de salida tendrá el nuevo nombre, sin que tenga que hacer nada más.
+
+  Para obtener más información sobre el uso de caracteres especiales en las referencias de archivo o proyecto, vea [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Las propiedades reservadas no se pueden volver a definir en el archivo del proyecto.

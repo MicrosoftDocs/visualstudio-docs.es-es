@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962804"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75679005"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
 
@@ -38,7 +38,7 @@ Las características de depuración en modo mixto incluyen las siguientes opcion
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 minutos 09 segundos). El vídeo se aplica a Visual Studio 2015 y 2017. |
+| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 minutos 09 segundos). El vídeo se aplica a Visual Studio 2015 y 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitación de la depuración en modo mixto en un proyecto de Python
 
@@ -69,6 +69,9 @@ Visual Studio (2017 versión 15.5 y posteriores) admite la depuración en modo 
 1. Haga clic en la pestaña **Depuración**, **Depuración nativa/Python** en **Depurador para iniciar** y haga clic en **Aceptar**.
 
     ![Selección del depurador nativo o de Python en un proyecto de C o C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Si no tiene la opción de seleccionar **Depuración nativa/Python**, debe instalar en primer lugar las **herramientas de desarrollo nativo de Python** mediante el instalador de Visual Studio. Lo encontrará como opción en la carga de trabajo de desarrollo de Python. Para obtener información adicional, consulte [Instalación de la compatibilidad con Python en Visual Studio en Windows](installing-python-support-in-visual-studio.md).
 
 Con este método, tenga en cuenta que no se puede depurar el propio iniciador *py.exe*, ya que genera un proceso secundario *python.exe* al que no se asocia el depurador. Si quiere iniciar *python.exe* directamente con argumentos, cambie la opción **Comando** de las propiedades de **Depuración nativa/Python** (se muestra en la imagen anterior) para especificar la ruta de acceso completa a *python.exe*. Luego especifique los argumentos en **Argumentos de comandos**.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958230"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678992"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
@@ -59,7 +59,7 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 | **tests.py** | Un archivo de Python que contiene la estructura básica de las pruebas unitarias. |
 | **views.py** | Las vistas son lo que se suele considerar páginas web, que toman una solicitud HTTP y devuelven una respuesta HTTP. Las vistas suelen representarse como código HTML que los exploradores web saben cómo mostrar, pero una vista no tiene necesariamente que ser visible (por ejemplo, un formulario intermedio). Una vista se define mediante una función de Python cuya responsabilidad es representar el código HTML que se enviará al explorador. El archivo *views.py* es una ubicación predeterminada para crear vistas, e inicialmente contiene solo la instrucción, `from django.shortcuts import render`. |
 
-El contenido de *app.py* aparece del modo siguiente cuando se usa el nombre "HelloDjangoApp":
+El contenido de *apps.py* aparece del modo siguiente cuando se usa el nombre "HelloDjangoApp":
 
 ```python
 from django.apps import AppConfig

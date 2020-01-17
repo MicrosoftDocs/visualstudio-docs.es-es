@@ -2,26 +2,26 @@
 title: Desinstalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo desinstalar Visual Studio, paso a paso.
-ms.date: 07/31/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a895d9a94ada22ecce340488c6ba00662a599969
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74809668"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594479"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
@@ -98,10 +98,13 @@ Para quitar todas las instalaciones de Visual Studio 2019 y el Instalador de V
 
 ::: moniker-end
 
+## <a name="remove-all-files"></a>Eliminación de todos los archivos
+
+Si se produce un error muy grave y no se puede desinstalar Visual Studio mediante las instrucciones anteriores, existe una opción de "último recurso" cuyo uso puede considerar en su lugar. Para obtener más información sobre cómo quitar completamente todos los archivos de instalación de Visual Studio y la información de producto, consulte la página [Quitar Visual Studio](remove-visual-studio.md).
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
 
 * [Modificar Visual Studio](modify-visual-studio.md)
 * [Actualizar Visual Studio](update-visual-studio.md)
-* [Desinstalación de Visual Studio para Mac](/visualstudio/mac/uninstall)
