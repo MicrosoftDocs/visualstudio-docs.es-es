@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594063"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845808"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones
 
@@ -54,7 +54,7 @@ En la tabla siguiente se enumeran las configuraciones y plataformas compatibles 
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | No se admite. |
 | Chrome<br /><br /> Firefox | No se admite la grabación de pasos de acción. Las pruebas de IU codificadas pueden reproducirse en Chrome y exploradores de Firefox con Visual Studio 2012 Update 4 o posterior. Haga clic [aquí](using-different-web-browsers-with-coded-ui-tests.md) para obtener más detalles. |
 | Opera<br /><br /> Safari | No se admite. |
-| Silverlight | No se admite.<br /><br /> Para Visual Studo 2013, en cambio, puede descargar el [Complemento de prueba de interfaz de usuario codificada de Microsoft Visual Studio 2013 para Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) desde la Galería de Visual Studio. |
+| Silverlight | No se admite.<br /><br /> Para Visual Studo 2013, en cambio, puede descargar el [Complemento de prueba de interfaz de usuario codificada de Microsoft Visual Studio 2013 para Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) desde la Galería de Visual Studio. |
 | Flash/Java | No se admite. |
 | Windows Forms 2.0 y versiones posteriores | Totalmente compatible. **Nota:**  Los controles de NetFx son totalmente compatibles, pero hay controles de otros fabricantes que no lo son. |
 | WPF 3.5 y posterior. | Totalmente compatible.<br /><br /> **Nota** Los controles NetFx son totalmente compatibles, pero hay controles de otros fabricantes que no lo son. |

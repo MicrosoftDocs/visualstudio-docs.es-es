@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590506"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846930"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -91,13 +91,16 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
    ::: moniker range="vs-2017"
    ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![Desde la ventana del editor, vea el menú contextual](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > El comando de menú **Crear pruebas unitarias** solo está disponible en el caso de código administrado que tiene como destino .NET Framework (pero no .NET Core).
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Desde la ventana del editor, vea el menú contextual](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > El comando de menú **Crear pruebas unitarias** solo está disponible para el código administrado.
+   ::: moniker-end
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
