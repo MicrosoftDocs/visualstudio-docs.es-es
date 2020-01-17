@@ -9,16 +9,16 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563888"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915769"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Entrenar modelos de AI en Azure Batch AI
 
-Batch AI es un servicio administrado que permite a los científicos de datos y a los investigadores de AI entrenar modelos de AI y otros modelos de Machine Learning en clústeres de máquinas virtuales de Azure, incluidas las máquinas virtuales compatibles con GPU. Para ello, es necesario describir los requisitos del trabajo y dónde encontrar las entradas y almacenar las salidas. Batch AI se encargará del resto del proceso. [Más información sobre Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview).
+Batch AI es un servicio administrado que permite a los científicos de datos y a los investigadores de AI entrenar modelos de AI y otros modelos de Machine Learning en clústeres de máquinas virtuales de Azure, incluidas las máquinas virtuales compatibles con GPU. Para ello, es necesario describir los requisitos del trabajo y dónde encontrar las entradas y almacenar las salidas. Batch AI se encargará del resto del proceso. [Más información sobre Azure Batch AI](/azure/batch-ai/overview).
 
 Se integra con Visual Studio Tools para AI, lo que le permitirá escalar dinámicamente modelos de entrenamiento en Azure.  Después de haber [instalado Visual Studio Tools para IA](installation.md), podrá crear un proyecto de Python muy fácilmente con las recetas ya preparadas de la galería de ejemplos de Azure Machine Learning.
 
@@ -51,7 +51,7 @@ Se integra con Visual Studio Tools para AI, lo que le permitirá escalar dinámi
 
     ![Galería de ejemplos](media/train-model/mnist-startup.png)
 
-8. <strong>Haga clic con el botón derecho en **Proyecto de MNIST** > **Enviar trabajo**</strong>.
+8. <strong>Haga clic con el botón derecho en **Proyecto de MNIST,** **Enviar trabajo**</strong>.
 
     ![Galería de ejemplos](media/train-model/submit-job.png)
 9. Seleccione el clúster **Azure Batch AI** y haga clic en **Importar**. Seleccione el archivo `AzureBatchAI_TF_MNIST.json` para rellenar rápidamente algunos valores predeterminados, como qué imagen de Docker usar. Luego, haga clic en **Enviar**.

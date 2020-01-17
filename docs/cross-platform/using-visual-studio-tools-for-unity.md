@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253038"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916581"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -83,17 +83,17 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
 6. Seleccione el botón **Aceptar** para salir del asistente e insertar los métodos en el código.
 
-   ![El cuadro de diálogo del asistente de MonoBehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Cuadro de diálogo del asistente de Monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Explorador de proyectos de Unity
 
-![La ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 El Explorador de proyectos de Unity muestra todos los archivos de proyecto y directorios de Unity de la misma manera que el Editor de Unity. La experiencia es diferente a navegar por los scripts de Unity con el Explorador de soluciones de Visual Studio normal, que los organiza en proyectos y una solución generada por Visual Studio.
 
 - En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Método abreviado de teclado: **Alt**+**Mayús**+**E**
 
-   ![Ver la ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Ver la ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Depuración de Unity
 
@@ -151,11 +151,11 @@ Puede depurar las compilaciones de desarrollo de varios reproductores de Unity c
 
 - En el menú principal de Visual Studio, elija **Depurar > Asociar depurador de Unity**.
 
-   ![Asociar el depurador de Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Asocie el depurador de Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    En el cuadro de diálogo **Seleccionar instancia de Unity** se muestra información sobre cada instancia de Unity a la que puede conectarse.
 
-   ![Seleccione una instancia de Unity a la que conectarse.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Elija una instancia de Unity a la que conectarse.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Proyecto**
 
@@ -192,7 +192,7 @@ Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuen
 > [!NOTE]
 > Lo siguiente solo es necesario si usa el entorno de ejecución heredado de Unity. Si usa el nuevo entorno de ejecución de Unity, ya no necesita usar los perfiles 3.5 dedicados. Use un perfil .NET 4.x compatible con su versión de Unity.
 
-   ![Establecer el marco de destino del DLL en el marco de Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Establezca como plataforma de destino de DLL la plataforma Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copie el archivo DLL en la carpeta Activos del proyecto de Unity. En Unity, son activos los archivos que se empaquetan e implementan junto con la aplicación de Unity para que se puedan cargar en tiempo de ejecución. Puesto que los archivos DLL se vinculan en tiempo de ejecución, se deben implementar como recursos. Para que los archivos DLL se implementen como activos, el Editor de Unity necesita que se coloquen en la carpeta Activos del proyecto Unity. Puede hacer esto de dos formas:
 
@@ -202,7 +202,7 @@ Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuen
 
    Los archivos PDB son necesarios para la depuración porque contienen símbolos de depuración de los archivos DLL y asignan el código del archivo DLL a su forma de código fuente. Si tiene como destino el entorno de ejecución heredado, Visual Studio Tools para Unity usará información de los archivos DLL y PDB para crear un archivo DLL.MDB, que es el formato de símbolo de depuración utilizado por el motor de scripting heredado de Unity. Si tiene como destino el entorno de ejecución nuevo y usa archivos PDB portátiles, Visual Studio Tools para Unity no intentará realizar ninguna conversión de símbolo, porque el entorno de ejecución de Unity nuevo puede consumir archivos PDB portátiles de manera nativa.
 
-   Puede encontrar más información sobre la generación de PDB [aquí](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si tiene como destino el entorno de ejecución nuevo, asegúrese de que la opción "Información de depuración" esté establecida en "Portátil" para así generar de manera adecuada archivos PDB portátiles. Si tiene como destino el entorno de ejecución heredado, debe usar "Full" (Completo).
+   Puede encontrar más información sobre la generación de PDB [aquí](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si tiene como destino el entorno de ejecución nuevo, asegúrese de que la opción "Información de depuración" esté establecida en "Portátil" para así generar de manera adecuada archivos PDB portátiles. Si tiene como destino el entorno de ejecución heredado, debe usar "Full" (Completo).
 
 4. Depure el código que ha creado. Ahora puede depurar el código fuente de archivos DLL junto con el código fuente del proyecto de Unity y utilizar todas las características de depuración a las que está acostumbrado, como los puntos de interrupción y ejecutar código paso a paso.
 

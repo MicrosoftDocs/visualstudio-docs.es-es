@@ -1,17 +1,17 @@
 ---
 title: Configuración de compilación de Docker Compose en las herramientas de contenedor de Visual Studio
 author: ghogen
-description: Información general del proceso de compilación de las herramientas de contenedor
+description: Información general del proceso de compilación en las herramientas de contenedor
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072721"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916929"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -33,9 +33,9 @@ Puede agregar el valor de la propiedad a un elemento `PropertyGroup` existente o
 
 En la tabla siguiente se muestran las propiedades de MSBuild disponibles para proyectos de Docker Compose.
 
-| Nombre de la propiedad | Ubicación | DESCRIPCIÓN | Valor predeterminado  |
+| Nombre de la propiedad | Ubicación | Descripción | Valor predeterminado  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|Esta opción permite especificar archivos de composición adicionales en una lista delimitada por signos de punto y coma que se envía a docker-compose.exe para todos los comandos. Se permiten las rutas de acceso relativas del archivo de proyecto docker-compose (dcproj).|-|
+|AdditionalComposeFilePaths|dcproj|Esta opción permite especificar archivos de composición adicionales en una lista delimitada por signos de punto y coma que se envía a docker-compose.exe para todos los comandos. Se permiten las rutas de acceso relativas del archivo de proyecto docker-compose (dcproj).|-|
 |DockerComposeBaseFilePath|dcproj|Permite especificar la primera parte de los nombres de archivo de los archivos docker-compose, sin la extensión *.yml*. Por ejemplo: <br>1.  DockerComposeBaseFilePath = null/undefined: use la ruta de acceso del archivo base *docker-compose*; los archivos se denominarán *docker-compose.yml* y *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: los archivos se denominarán *mydockercompose.yml* y *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: los archivos se subirán un nivel. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose build`. Por ejemplo, `--parallel --pull`. |
 |DockerComposeDownArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose down`. Por ejemplo, `--timeout 500`.|-|  
@@ -103,7 +103,7 @@ services:
 
 Use comillas dobles alrededor de los valores, como en el ejemplo anterior, y use la barra diagonal inversa como carácter de escape para las barras diagonales inversas en las rutas de acceso.
 
-|Un nombre de etiqueta|DESCRIPCIÓN|
+|Un nombre de etiqueta|Descripción|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|Los argumentos que se pasan al programa al iniciar la depuración. En el caso de las aplicaciones de .NET Core, estos argumentos normalmente son rutas de búsqueda adicionales para los paquetes NuGet, seguidas de la ruta de acceso al ensamblado de salida del proyecto.|
 |com.microsoft.visualstudio.debuggee.killprogram|Este comando se usa para detener el programa de depurado que se ejecuta dentro del contenedor (si es necesario).|

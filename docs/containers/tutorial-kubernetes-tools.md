@@ -8,18 +8,18 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188761"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916949"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools para Kubernetes
 
 Visual Studio Tools para Kubernetes ayuda a simplificar el desarrollo de aplicaciones en contenedor destinadas a Kubernetes. Visual Studio puede crear automáticamente los archivos de configuración como código necesarios para admitir la implementación de Kubernetes, como Dockerfiles y gráficos de Helm. Puede depurar el código en un clúster activo de Azure Kubernetes Service (AKS) mediante Azure Dev Spaces o bien publicar directamente en un clúster de AKS desde Visual Studio.
 
-En este tutorial se trata el uso de Visual Studio para agregar compatibilidad con Kubernetes a un proyecto y publicar en AKS. Si su principal interés es usar [Azure Dev Spaces](https://aka.ms/get-azds) para depurar y probar el proyecto que se ejecuta en AKS, puede ir directamente al [tutorial de Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
+En este tutorial se trata el uso de Visual Studio para agregar compatibilidad con Kubernetes a un proyecto y publicar en AKS. Si su principal interés es usar [Azure Dev Spaces](/azure/dev-spaces/) para depurar y probar el proyecto que se ejecuta en AKS, puede ir directamente al [tutorial de Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -30,7 +30,7 @@ Para aprovechar esta nueva funcionalidad, necesita:
 - [Visual Studio Tools para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), disponible como descarga independiente.
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con la carga de trabajo de *ASP.NET y desarrollo web*.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con la carga de trabajo *ASP.NET y desarrollo web*.
 ::: moniker-end
 - [Docker Desktop](https://store.docker.com/editions/community/docker-ce-desktop-windows) instalado en la estación de trabajo de desarrollo (es decir, donde se ejecuta Visual Studio) si quiere compilar imágenes de Docker, depurar contenedores de Docker que se ejecutan localmente o publicar en AKS. (Docker *no* es necesario para compilar y depurar contenedores de Docker en AKS mediante Azure Dev Spaces).
 ::: moniker range="vs-2017"
@@ -38,7 +38,7 @@ Para aprovechar esta nueva funcionalidad, necesita:
 
     1. Las [herramientas de publicación de AKS](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes), disponibles como descarga independiente.
 
-    1. Un clúster de Azure Kubernetes Service. Para obtener más información, vea [Creación de un clúster de AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Asegúrese de [conectarse al clúster](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) desde la estación de trabajo de desarrollo.
+    1. Clúster de Azure Kubernetes Service. Para obtener más información, vea [Creación de un clúster de AKS](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Asegúrese de [conectarse al clúster](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) desde la estación de trabajo de desarrollo.
 
     1. CLI de Helm instalada en la estación de trabajo de desarrollo. Para obtener más información, vea [Instalación de Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
@@ -121,13 +121,13 @@ Los archivos agregados son:
 
 - un gráfico de Helm y una carpeta *charts*. Estos archivos yaml componen el gráfico de Helm de la aplicación, que puede usar para implementar en Kubernetes. Para obtener más información sobre Helm, vea [https://www.helm.sh](https://www.helm.sh).
 
-- *azds.yaml*. Contiene la configuración de Azure Dev Spaces, que proporciona una experiencia de depuración rápida e iterativa en Azure Kubernetes Service. Para obtener más información, vea la [documentación de Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. Contiene la configuración de Azure Dev Spaces, que proporciona una experiencia de depuración rápida e iterativa en Azure Kubernetes Service. Para obtener más información, vea la [documentación de Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
 ::: moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publicación en Azure Kubernetes Service (AKS)
 
-Con todos estos archivos en su lugar, puede usar el IDE de Visual Studio para escribir y depurar el código de aplicación como siempre lo ha hecho. También puede usar [Azure Dev Spaces](https://aka.ms/get-azds) para ejecutar y depurar rápidamente el código que se ejecuta en vivo en un clúster de AKS. Para obtener más información, vea el [tutorial de Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Con todos estos archivos en su lugar, puede usar el IDE de Visual Studio para escribir y depurar el código de aplicación como siempre lo ha hecho. También puede usar [Azure Dev Spaces](/azure/dev-spaces/) para ejecutar y depurar rápidamente el código que se ejecuta en vivo en un clúster de AKS. Para obtener más información, vea el [tutorial de Azure Dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Una vez que el código se esté ejecutando de la manera deseada, puede publicar directamente desde Visual Studio en un clúster de AKS.
 
@@ -171,4 +171,4 @@ Para ello, primero debe comprobar que ha instalado todo lo indicado en la secci�
 
 Para obtener más información sobre el desarrollo de Kubernetes en Azure, lea la [documentación de AKS](/azure/aks).
 
-Para obtener más información sobre Azure Dev Spaces, lea la [documentación de Azure Dev Spaces](https://aka.ms/get-azds)
+Para obtener más información sobre Azure Dev Spaces, lea la [documentación de Azure Dev Spaces](/azure/dev-spaces/)

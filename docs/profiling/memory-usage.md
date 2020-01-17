@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254610"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929230"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -22,7 +22,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 
 En el gráfico siguiente se muestra la ventana **Herramientas de diagnóstico** (disponible en Visual Studio 2015 Update 1 y versiones posteriores):
 
-![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Herramientas de diagnóstico: actualización 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 Aunque puede recopilar instantáneas de memoria en cualquier momento en la herramienta **Uso de memoria** , puede usar el depurador de Visual Studio para controlar cómo se ejecuta la aplicación mientras investiga los problemas de rendimiento. Las acciones del depurador como establecer puntos de interrupción, ejecutar paso a paso e interrumpir todos, entre otras, pueden ayudarle a centrarse en las investigaciones de rendimiento en las rutas de acceso de código que son más importantes. Si realiza esas acciones mientras la aplicación se ejecuta, puede eliminar el ruido del código que no le interesa y reducir considerablemente la cantidad de tiempo necesario para diagnosticar un problema.
 
@@ -54,24 +54,24 @@ En este tutorial va a:
 
 4. Elija **Uso de memoria** con la opción **Seleccionar herramientas** en la barra de herramientas.
 
-     ![Mostrar herramientas de diagnóstico](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
+     ![Visualización de las Herramientas de diagnóstico](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5. Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
-     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Pestaña de resumen de Herramientas de diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      > Dado que la recopilación de datos de memoria puede afectar al rendimiento de depuración de las aplicaciones nativas o de modo mixto, las instantáneas de memoria están deshabilitadas de forma predeterminada. Para habilitar las instantáneas en aplicaciones nativas o de modo mixto, inicie una sesión de depuración (tecla de método abreviado: **F5**). Cuando aparezca la ventana **Herramientas de diagnóstico**, seleccione la pestaña **Uso de memoria** y luego elija **Generación de perfiles de montón**.
      >
-     >  ![Habilitar las instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
+     >  ![Habilitación de las instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  Detenga (tecla de método abreviado: **Mayús**+**F5**) y reinicie la depuración.
 
 6. Para tomar una instantánea al comienzo de la sesión de depuración, elija **Instantánea** en la barra de herramientas reducida **Uso de memoria**. (Puede ser útil para establecer un punto de interrupción aquí también.)
 
-    ![Tomar instantánea](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![Toma de instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.
@@ -113,17 +113,17 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 ### <a name="managed-types-reports"></a>Informes de tipos administrados
  Elija el vínculo actual de una celda **Objetos (dif.)** o **Asignaciones (dif.)** de la tabla de resumen Uso de memoria.
 
- ![Informe de tipo de depurador administrado&#45; rutas de acceso la raíz](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Informe de tipo de depurador administrado: rutas de acceso al nodo raíz](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  El panel superior muestra el número y el tamaño de los tipos en la instantánea, incluido el tamaño de todos los objetos a los que hace referencia el tipo (**Tamaño inclusivo**).
 
  El árbol **Rutas de acceso al nodo raíz** en el panel inferior muestra los objetos que hacen referencia al tipo seleccionado en el panel superior. El recolector de elementos no utilizados de .NET Framework limpia la memoria de un objeto solo cuando se libera el último tipo que hace referencia a él.
 
- El árbol **Tipos a los que se hace referencia** muestra las referencias que se incluyen en el tipo seleccionado en el panel superior.
+ El árbol **Objetos a los que se hace referencia** muestra las referencias que se incluyen en el tipo seleccionado en el panel superior.
 
- ![Vista de informe de tipos de referencia administrados](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Vista de informe de objetos de referencia administrados](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Para mostrar las instancias de un tipo seleccionado en el panel superior, seleccione el icono ![Icono de instancia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
+ Para mostrar las instancias de un tipo seleccionado en el panel superior, elija el icono ![Instancia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
 
  ![Vista de instancias](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
@@ -150,11 +150,11 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
 - Elija el vínculo de cambio en una celda de la tabla de resumen de la pestaña **Uso de memoria** en la ventana **Herramientas de diagnóstico** .
 
-   ![Elegir un informe de cambio &#40;diff&#41;](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Elección de un informe de diferencias de cambios](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.
 
-   ![Elegir una instantánea en la lista Comparar con](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![Elección de una instantánea en la lista Comparar con](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 El informe de cambios agrega columnas (marcadas con **(Dif.)** ) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:
 

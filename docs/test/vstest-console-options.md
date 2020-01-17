@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590428"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919026"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -25,6 +25,8 @@ ms.locfileid: "75590428"
 > El adaptador de MSTest de Visual Studio también funciona en modo heredado (lo que equivale a ejecutar pruebas con *mstest.exe*) por motivos de compatibilidad. En el modo heredado no puede aprovechar la característica TestCaseFilter. El adaptador puede cambiar al modo heredado cuando se especifica un archivo *testsettings*, **forcelegacymode** se establece en **true** en un archivo *runsettings* o se usan atributos como **HostType**.
 >
 > Para ejecutar pruebas automatizadas en un equipo basado en la arquitectura ARM, debe usar *VSTest.Console.exe*.
+
+Abra un [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) para usar la herramienta de línea de comandos. También encontrará la herramienta en *%Archivos de programa(x86)%\Microsoft Visual Studio\\<versión\>\\<edición\>\common7\ide\CommonExtensions\\<Plataforma | Microsoft>* .
 
 ## <a name="general-command-line-options"></a>Opciones generales de la línea de comandos
 
@@ -44,7 +46,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
-|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=\<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=\<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
+|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas de Visual Studio (TRX), utilice<br />**/Logger:trx**<br />**[;LogFileName=\<Valor predeterminado: nombre de archivo único>]**<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=\<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=\<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**<br />Nota: El registrador de TfsPublisher está en desuso en Visual Studio 2017 y no se admite en versiones posteriores de Visual Studio. En estos escenarios, use un registrador personalizado en su lugar. Este registrador cambia el registrador al modo heredado.|
 |**/ListTests:[*nombre de archivo*]**|Muestra las pruebas detectadas del contenedor de pruebas especificado.|
 |**/ListDiscoverers**|Muestra los programas de detección de pruebas instalados.|
 |**/ListExecutors**|Muestra los programas de ejecución de pruebas instalados.|
@@ -55,7 +57,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/ResultsDirectory:[*ruta de acceso*]**|Si no existe, el directorio de los resultados de la prueba se creará en la ruta de acceso especificada.<br />Ejemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|Identificador del proceso principal responsable de iniciar el proceso actual.|
 |**/Port:[*puerto*]**|El puerto para la conexión de socket y la recepción de mensajes de eventos.|
-|**/Collect:[*dataCollector friendlyName*]**|Habilita el recopilador de datos para la ejecución de pruebas. [Más información](https://aka.ms/vstest-collect).|
+|**/Collect:[*dataCollector friendlyName*]**|Habilita el recopilador de datos para la ejecución de pruebas. [Más información](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > Las opciones y los valores no distinguen mayúsculas de minúsculas.

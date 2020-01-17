@@ -1,6 +1,6 @@
 ---
-title: Depurar ASP.NET
-description: Depure ASP.NET con el depurador de Visual Studio
+title: Depuración de ASP.NET Core
+description: Depuración de ASP.NET Core con el depurador de Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679258"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847874"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Inicio rápido: Depuración de ASP.NET Core con el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
@@ -31,7 +31,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **Plantillas** y luego, **Crear una aplicación web ASP.NET Core**. En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Web** y luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Web** y luego, en el panel central, **Aplicación web ASP.NET Core**. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
 
     En el cuadro de diálogo que aparece, elija **Aplicación web** en el panel central y luego haga clic en **Aceptar**.
 
@@ -127,7 +127,7 @@ Si identifica un cambio que quiere probar en el código a mitad de una sesión d
 
 1. Presione **F10** (o **Depurar > Saltar**) varias veces para que el depurador avance y ejecute el código editado.
 
-    ![Editar y continuar](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Edit and continue")
+    ![Editar y continuar](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Editar y continuar")
 
     **F10** hace que el depurador avance de instrucción en instrucción, pero que se salte las funciones en lugar de depurarlas (el código que se omite se sigue ejecutando).
 

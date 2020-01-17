@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 774e189306345187ac6a0c29b7060cb5537e8adb
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594440"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776171"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -28,17 +28,20 @@ Se puede actualizar un diseño de instalación de red de Visual Studio con las a
 
 ## <a name="how-to-update-a-network-layout"></a>Actualización de un diseño de red
 
+> [!IMPORTANT]
+> En estas instrucciones se da por hecho que ya se ha creado previamente un diseño de instalación de red. Para más información sobre cómo hacerlo, vea la página [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md).
+
 Para actualizar el recurso compartido de instalación de red de forma que incluya las actualizaciones más recientes, ejecute el comando `--layout` para descargar paquetes actualizados de forma incremental.
 
 ::: moniker range="vs-2017"
 
-**Novedad de la versión 15.3**: Si ha seleccionado un diseño parcial al crear el diseño de red, esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique. Pero, si está usando un diseño de una versión anterior, debe usar los mismos parámetros de la línea de comandos que utilizó cuando creó el diseño de instalación de red por primera vez (en otras palabras, las mismas cargas de trabajo y los mismos lenguajes) para actualizar su contenido.
+**Novedad de la versión 15.3**: Si ha seleccionado un diseño parcial al [crear el diseño de red](create-a-network-installation-of-visual-studio.md), esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique. Pero, si está usando un diseño de una versión anterior, debe usar los mismos parámetros de la línea de comandos que utilizó cuando creó el diseño de instalación de red por primera vez (en otras palabras, las mismas cargas de trabajo y los mismos lenguajes) para actualizar su contenido.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Si ha seleccionado un diseño parcial al crear el diseño de red, esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique.
+Si ha seleccionado un diseño parcial al [crear el diseño de red](create-a-network-installation-of-visual-studio.md), esas opciones se guardan. Cualquier comando de diseño futuro usa las opciones anteriores además de las nuevas que especifique.
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ Veamos unos cuantos ejemplos de cómo crear y actualizar un diseño:
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>Implementación de una actualización en máquinas cliente
+## <a name="deploy-an-update-to-client-machines"></a>Implementación de una actualización en máquinas cliente
 
 En función de cómo esté configurado el entorno de red, una actualización puede ser implementada por un administrador de empresa o se puede iniciar desde una máquina cliente.
 
@@ -111,7 +114,7 @@ En función de cómo esté configurado el entorno de red, una actualización pue
 > [!TIP]
 > Para más información sobre cómo controlar cuándo se presentan notificaciones de actualización a los usuarios, consulte [Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md) (Control de actualizaciones a implementaciones de Visual Studio basadas en red).
 
-## <a name="how-to-verify-a-layout"></a>Cómo comprobar un diseño
+## <a name="verify-a-layout"></a>Comprobación de un diseño
 
 Use `--verify` para realizar la comprobación en la caché sin conexión proporcionada. Comprueba si los archivos de paquetes están disponibles o no son válidos. Al finalizar la comprobación, imprime la lista de los archivos que faltan y que no son válidos.
 
@@ -129,7 +132,7 @@ Microsoft publica actualizaciones de Visual Studio periódicamente, por lo que e
 > [!NOTE]
 > La comprobación solo funciona para la versión más reciente de una versión secundaria específica de Visual Studio. En cuanto se lance una nueva versión, no funcionará la comprobación de anteriores versiones de nivel de revisión de la misma versión secundaria.
 
-## <a name="how-to-fix-a-layout"></a>Cómo corregir un diseño
+## <a name="fix-a-layout"></a>Corrección de un diseño
 
 Use `--fix` para realizar la misma comprobación que `--verify` y también intente corregir los problemas identificados. El proceso `--fix` necesita una conexión a Internet, por lo que asegúrese de que su máquina esté conectada a Internet antes de invocar `--fix`.
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 vs_enterprise.exe puede invocarse dentro de layoutDir.
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>Cómo quitar versiones anteriores de un diseño
+## <a name="remove-older-versions-from-a-layout"></a>Eliminación de versiones anteriores de un diseño
 
 Después de realizar actualizaciones de diseño en una caché sin conexión, la carpeta de la caché de diseño puede tener algunos paquetes obsoletos que la última instalación de Visual Studio ya no necesita. Puede usar la opción `--clean` para quitar paquetes obsoletos de una carpeta de caché sin conexión.
 
@@ -165,7 +168,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 Cuando ejecuta este comando, la instalación analiza la carpeta de caché sin conexión para buscar la lista de archivos que quitará. Después, tendrá la oportunidad de revisar los archivos que van a eliminarse y confirmar su eliminación.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>Obtención de soporte técnico para el instalador sin conexión
+
+Si experimenta un problema con la instalación sin conexión, queremos saberlo. La mejor manera para hacérnoslo saber es usar la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md). Con esta herramienta puede enviarnos la telemetría y los registros que necesitamos para ayudarnos a diagnosticar y corregir el problema.
+
+También dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
+
+Tenemos también otras opciones de soporte técnico disponibles. Para obtener una lista, consulte nuestra página [Comentarios](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Vea también
 
