@@ -7,19 +7,19 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404948"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851951"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
 Para empezar a desarrollar aplicaciones .NET nativas y multiplataforma en macOS, instale Visual Studio 2019 para Mac siguiendo los pasos que encontrará a continuación.
 
  > [!div class="button"]
- > [Descargar Visual Studio para Mac](https://aka.ms/vsmac)
+ > [Descargar Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -32,7 +32,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 
 ## <a name="installation-instructions"></a>Instrucciones de instalación
 
-1. Descargue el instalador en la [página de descarga de Visual Studio para Mac](https://aka.ms/vsmac).
+1. Descargue el instalador en la [página de descarga de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/).
 2. Una vez completada la descarga, haga clic en **VisualStudioforMacInstaller.dmg** para montar el instalador y ejecútelo haciendo doble clic en el logotipo de flecha:
 
     [![Haga clic en la flecha grande para comenzar la instalación.](media/install-installer-sml.png)](media/install-installer.png#lightbox)
