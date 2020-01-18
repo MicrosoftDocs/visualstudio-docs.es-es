@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632523"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269078"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Tutorial: Mostrar la finalización de instrucciones
 Puede implementar la finalización de instrucciones basada en el lenguaje si define los identificadores para los que desea proporcionar la finalización y, a continuación, desencadenar una sesión de finalización. Puede definir la finalización de instrucciones en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y tipo de contenido y, a continuación, Mostrar la finalización solo para ese tipo. O bien, puede desencadenar la finalización de un tipo de contenido existente (por ejemplo, "Plaintext"). En este tutorial se muestra cómo desencadenar la finalización de instrucciones para el tipo de contenido "Plaintext", que es el tipo de contenido de los archivos de texto. El tipo de contenido "texto" es el antecesor de todos los demás tipos de contenido, incluidos los archivos de código y XML.
@@ -42,17 +42,17 @@ Puede implementar la finalización de instrucciones basada en el lenguaje si def
 
 4. Agregue las siguientes referencias al proyecto y asegúrese de que **CopyLocal** está establecido en `false`:
 
-     Microsoft. VisualStudio. Editor
+     Microsoft.VisualStudio.Editor
 
      Microsoft.VisualStudio.Language.Intellisense
 
      Microsoft.VisualStudio.OLE.Interop
 
-     Microsoft. VisualStudio. Shell. 14.0
+     Microsoft. VisualStudio. Shell. 15.0
 
-     Microsoft. VisualStudio. Shell. immutable. 10.0
+     Microsoft.VisualStudio.Shell.Immutable.10.0
 
-     Microsoft. VisualStudio. TextManager. Interop
+     Microsoft.VisualStudio.TextManager.Interop
 
 ## <a name="implement-the-completion-source"></a>Implementar el origen de finalización
  El origen de finalización es responsable de recopilar el conjunto de identificadores y de agregar el contenido a la ventana de finalización cuando un usuario escribe un desencadenador de finalización, como las primeras letras de un identificador. En este ejemplo, los identificadores y sus descripciones están codificados de forma rígida en el método <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>. En la mayoría de los usos del mundo real, se usaría el analizador del lenguaje para obtener los tokens para rellenar la lista de finalización.
@@ -133,7 +133,7 @@ Puede implementar la finalización de instrucciones basada en el lenguaje si def
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importe el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite la conversión de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> y un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que permite el acceso a los servicios estándar de Visual Studio.
+4. Importe el <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que permite la conversión de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> a un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>y un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que permite el acceso a los servicios estándar de Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]

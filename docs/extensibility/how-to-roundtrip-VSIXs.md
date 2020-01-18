@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316491"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269063"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Cómo: hacer que las extensiones sean compatibles con Visual Studio 2017 y Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Cómo: hacer que las extensiones sean compatibles con Visual Studio 2019/2017 y Visual Studio 2015
 
-En este documento se explica cómo realizar un recorrido de ida y vuelta de proyectos de extensibilidad entre Visual Studio 2015 y Visual Studio 2017. Después de completar esta actualización, un proyecto podrá abrir, compilar, instalar y ejecutar en Visual Studio 2015 y Visual Studio 2017. Como referencia, algunas extensiones que pueden realizarse entre Visual Studio 2015 y Visual Studio 2017 se pueden encontrar en los ejemplos de [extensibilidad del SDK de vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+En este documento se explica cómo realizar un recorrido de ida y vuelta de proyectos de extensibilidad entre Visual Studio 2015 y Visual Studio 2019 o Visual Studio 2017. Después de completar esta actualización, un proyecto podrá abrir, compilar, instalar y ejecutar en Visual Studio 2015 y Visual Studio 2019 o 2017. Como referencia, algunas extensiones que pueden llevarse a cabo entre Visual Studio 2015 y Visual Studio 2019 o 2017 se pueden encontrar en los [ejemplos de extensibilidad del SDK de vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Si solo tiene previsto compilar en Visual Studio 2017, pero quiere que el resultado de la extensión VSIX se ejecute en Visual Studio 2015 y Visual Studio 2017, consulte el [documento de migración](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)de la extensión.
+Si solo tiene previsto compilar en Visual Studio 2019/2017, pero quiere que el resultado de la extensión VSIX se ejecute en Visual Studio 2015 y Visual Studio 2019/2017, consulte el [documento de migración](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)de la extensión.
 
 > [!NOTE]
 > Debido a los cambios en Visual Studio entre versiones, algunas cosas que funcionaban en una versión no funcionan en otro. Asegúrese de que las características a las que está intentando obtener acceso están disponibles en ambas versiones o que la extensión tendrá resultados inesperados.
@@ -43,11 +43,11 @@ A continuación se muestra un resumen de los pasos que debe completar en este do
 En este documento se da por supuesto que tiene lo siguiente instalado en el equipo:
 
 * Visual Studio 2015 con el SDK de VS instalado
-* Visual Studio 2017 con la carga de trabajo de extensibilidad instalada
+* Visual Studio 2019 o 2017 con la carga de trabajo de extensibilidad instalada
 
 ## <a name="recommended-approach"></a>Enfoque recomendado
 
-Se recomienda encarecidamente iniciar esta actualización con Visual Studio 2015, en lugar de con Visual Studio 2017. La principal ventaja de desarrollar en Visual Studio 2015 es asegurarse de que no se hace referencia a ensamblados que no están disponibles en Visual Studio 2015. Si realiza el desarrollo en Visual Studio 2017, hay un riesgo de que pueda introducir una dependencia en un ensamblado que solo existe en Visual Studio 2017.
+Se recomienda encarecidamente iniciar esta actualización con Visual Studio 2015, en lugar de Visual Studio 2019 o 2017. La principal ventaja de desarrollar en Visual Studio 2015 es asegurarse de que no se hace referencia a ensamblados que no están disponibles en Visual Studio 2015. Si realiza el desarrollo en Visual Studio 2019 o 2017, existe un riesgo de que se pueda introducir una dependencia en un ensamblado que solo existe en Visual Studio 2019 o 2017.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia a Project. JSON
 
@@ -67,12 +67,12 @@ Si el proyecto contiene un archivo *Project. JSON* :
 
 Tenemos que asegurarnos de agregar herramientas de compilación que nos permitan compilar y depurar de forma adecuada. Microsoft ha creado un ensamblado para este llamado Microsoft. VisualStudio. SDK. BuildTasks.
 
-Para compilar e implementar un VSIXv3 en Visual Studio 2015 y 2017, necesitará los siguientes paquetes NuGet:
+Para compilar e implementar un VSIXv3 en Visual Studio 2015 y 2019/2017, necesitará los siguientes paquetes NuGet:
 
-Versión | Herramientas integradas
+Version | Herramientas integradas
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2019 o 2017 | Microsoft.VSSDK.BuildTool
 
 Para ello:
 
@@ -112,7 +112,7 @@ Para hacerlo manualmente:
 * Guarde y cierre el archivo.
 
 > [!NOTE]
-> Es posible que tenga que editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017. Esto se debe a que el diseñador insertará la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0). Sin embargo, dado que otros usuarios pueden tener una versión anterior, querrá editarlo manualmente en 15,0.
+> Es posible que tenga que editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2019 o 2017. Esto se debe a que el diseñador insertará la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0). Sin embargo, dado que otros usuarios pueden tener una versión anterior, querrá editarlo manualmente en 15,0.
 
 En este momento, el archivo de manifiesto debería tener un aspecto similar al siguiente:
 
@@ -195,9 +195,10 @@ Por ejemplo:
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Guarde el archivo csproj y ciérrelo.
+* Guarde el archivo csproj y ciérrelo. 
+  * Tenga en cuenta que si usa más de un proyecto en la solución, establezca este proyecto como proyecto de inicio mediante "establecer como proyecto de inicio" en el menú contextual del proyecto. Esto garantiza que Visual Studio vuelva a abrir este proyecto después de descargarlo.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Prueba de las instalaciones de la extensión en Visual Studio 2015 y Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Prueba de las instalaciones de la extensión en Visual Studio 2015 y Visual Studio 2019 o 2017
 
 En este momento, el proyecto debe estar listo para compilar un VSIXv3 que se pueda instalar en Visual Studio 2015 y Visual Studio 2017.
 
@@ -205,7 +206,7 @@ En este momento, el proyecto debe estar listo para compilar un VSIXv3 que se pue
 * Compile el proyecto y confirme en la salida que un VSIX se compila correctamente.
 * Navegue hasta el directorio del proyecto.
 * Abra la carpeta *\bin\debug* .
-* Haga doble clic en el archivo VSIX e instale su extensión en Visual Studio 2015 y Visual Studio 2017.
+* Haga doble clic en el archivo VSIX e instale su extensión en Visual Studio 2015 y Visual Studio 2019/2017.
 * Asegúrese de que puede ver la extensión en **herramientas** > **extensiones y actualizaciones** en la sección **instalado** .
 * Intente ejecutar o usar la extensión para comprobar que funciona.
 
