@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400915"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916519"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Depurar aplicaciones en un contenedor de Docker local
 
@@ -60,6 +60,28 @@ Si tiene un proyecto y ha agregado la compatibilidad con Docker, tal como se des
 Para iterar cambios rápidamente, puede iniciar la aplicación en un contenedor. Luego siga realizando cambios y viéndolos como haría con IIS Express.
 
 1. Asegúrese de que Docker está configurado para usar el tipo de contenedor (Linux o Windows) que está usando. Haga clic con el botón derecho en el icono de Docker en la barra de tareas y elija **Switch to Linux containers** (Cambiar a contenedores de Linux) o **Cambiar a contenedores de Windows** (Cambiar a contenedores de Windows) según corresponda.
+
+1. (Solo .NET Core 3 y versiones posteriores) La edición del código y la actualización del sitio de ejecución tal y como se describe en esta sección no están habilitadas en las plantillas predeterminadas en NET Core 3.0 y versiones posteriores. Para habilitarlas, agregue el paquete NuGet [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). En *Startup.cs*, agregue una llamada al método de extensión `IMvcBuilder.AddRazorRuntimeCompilation` al código del método `ConfigureServices`. Solo necesita que se habilite en el modo de depuración, por lo que se debe codificar de la siguiente manera:
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   Para más información, vea [Compilación de archivos de Razor en ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
 
 1. Establezca **Configuración de solución** en **Depurar**. Luego presione **Ctrl**+**F5** para compilar la imagen de Docker y ejecutarla localmente.
 
@@ -138,6 +160,6 @@ Para obtener más detalles, lea [Compilación de aplicaciones en contenedores co
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Más información sobre Docker con Visual Studio, Windows y Azure
 
 * Obtenga más información sobre el [desarrollo de contenedores con Visual Studio](/visualstudio/containers).
-* Para compilar e implementar un contenedor de Docker, vea [Integración de Docker para Azure Pipelines](https://aka.ms/dockertoolsforvsts).
-* Para obtener un índice de artículos de Windows Server y Nano Server, vea [Contenedores en la documentación de Windows](https://aka.ms/containers).
+* Para compilar e implementar un contenedor de Docker, vea [Integración de Docker para Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
+* Para obtener un índice de artículos de Windows Server y Nano Server, vea [Contenedores en la documentación de Windows](/virtualization/windowscontainers/).
 * Obtenga información sobre [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) y vea la [documentación de Azure Kubernetes Service](/azure/aks).
