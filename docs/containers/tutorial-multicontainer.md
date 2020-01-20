@@ -3,15 +3,15 @@ title: Tutorial sobre aplicaciones de varios contenedores con Docker Compose y A
 author: ghogen
 description: Aprenda a usar varios contenedores con Docker Compose
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399755"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916511"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -98,7 +98,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
@@ -114,7 +114,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
         }
       ```
 
-    Con .NET Core 3.1, no es necesario, ya que puede usar WeatherForecast API que ya existe. Sin embargo, debe marcar como comentario la llamada a `UseHttpsRedirections` en el método `Configure` en *Startup.cs*, porque este código usa HTTP no HTTPS para llamar a la API web.
+    Con .NET Core 3.1, no es necesario, ya que puede usar WeatherForecast API que ya existe. Sin embargo, debe marcar como comentario la llamada a <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> en el método `Configure` en *Startup.cs*, porque este código usa HTTP, no HTTPS, para llamar a la API web.
 
     ```csharp
                 //app.UseHttpsRedirection();
