@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
-  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
+  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2019
-  ms.locfileid: "74474007"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76256481"
 highlightedContent:
   items:
   - title: Configuración e instalación
@@ -178,7 +178,7 @@ additionalContent:
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Desarrollo de Office/SharePoint
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: Escritorio y móviles
       links:
       - text: Desarrollo de escritorio de .NET
         url: /dotnet/framework/develop-client-apps
@@ -186,17 +186,17 @@ additionalContent:
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: Desarrollo de Windows con C++
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: Móvil y juegos
-      links:
       - text: Desarrollo para dispositivos móviles con .NET (Xamarin)
         url: /xamarin/
-      - text: Desarrollo de juegos con Unity
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: Desarrollo móvil con C++
+        url: /visualstudio/cross-platform/
       - text: Desarrollo móvil con JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Solo Visual Studio 2017 y 2015)
-      - text: Desarrollo móvil con C++
-        url: /visualstudio/cross-platform/
+    - title: Juegos
+      links:
+      - text: Desarrollo de juegos con Unity
+        url: ../cross-platform/visual-studio-tools-for-unity.md
       - text: Desarrollo de juegos con C++
         url: /windows/uwp/gaming/e2e
     - title: Otros conjuntos de herramientas
