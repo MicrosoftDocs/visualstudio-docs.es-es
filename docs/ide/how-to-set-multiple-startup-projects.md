@@ -6,17 +6,17 @@ helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cfa0b7a94b4bec07e313ce7d6e031f9e1a2a56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a1eec02adf0a643d7ac7e0da8a75da5328c601b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588348"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115141"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedimiento Establecimiento de varios proyectos de inicio
 

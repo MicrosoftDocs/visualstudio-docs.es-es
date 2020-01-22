@@ -2,19 +2,19 @@
 title: Identificadores de componentes y cargas de trabajo de Visual Studio Build Tools 2017
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176895"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159627"
 ---
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "68176895"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.6.27406.0 | Obligatorio
@@ -68,7 +68,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo par
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.6.27406.0 | Se recomienda
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.6.27406.0 | Se recomienda
@@ -89,7 +89,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de anális
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obligatorio
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | compilador de F# | 15.8.27825.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 15.6.27309.0 | Obligatorio
@@ -145,7 +145,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.1 | Herramientas de desarrollo de .NET Core 2.1 | 15.8.27924.0 | Obligatorio
 Microsoft.NetCore.BuildTools.ComponentGroup | Herramientas de compilación de .NET Core | 15.8.27906.1 | Obligatorio
@@ -161,7 +161,7 @@ Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Soporte de MSBuild para Node.js | 15.8.27825.0 | Obligatorio
 Microsoft.VisualStudio.Component.TypeScript.3.1 | SDK de TypeScript 3.1 | 15.0.28218.60 | Obligatorio
@@ -174,7 +174,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | SDK de TypeScript 3.1 | 15.0.2
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce.MSBuild | Herramientas de compilación de ClickOnce | 15.7.27617.1 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
@@ -214,7 +214,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo par
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Obligatorio
@@ -249,7 +249,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Características principales de Visual C++ Build Tools | 15.8.27729.1 | Obligatorio
@@ -295,7 +295,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obligatorio
@@ -321,7 +321,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 d
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.6.27406.0 | Obligatorio
@@ -366,7 +366,7 @@ Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Obligatorio
@@ -380,7 +380,7 @@ Component.OpenJDK | Distribución de Microsoft OpenJDK | 15.9.28125.51 | Optiona
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | nombre | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 Microsoft.VisualStudio.Component.TypeScript.2.0 | SDK de TypeScript 2.0 | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.1 | SDK de TypeScript 2.1 | 15.8.27729.1

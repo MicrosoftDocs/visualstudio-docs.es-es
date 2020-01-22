@@ -10,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24f64cdaa52b923e288d704a10cb7a7438b028b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591442"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115126"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
 

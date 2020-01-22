@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c10ea49dfd1398b8271f959cb498c311d98a4ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a286a84d01c6a49b32445106488688ba5b489be
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595285"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114540"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedimiento Creación y eliminación de dependencias del proyecto
 

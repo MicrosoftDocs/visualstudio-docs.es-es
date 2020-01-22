@@ -3,8 +3,8 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Test Ag
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para ejecutar pruebas automatizadas y pruebas de carga de manera remota
 keywords: ''
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 23e835c3165af848179147a7e145d995ea0e07b8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bec1795b831ffc522b42984b74320505a774acb9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594453"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114353"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Directorio de componentes de Visual Studio Test Agent
 
