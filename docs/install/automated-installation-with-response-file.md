@@ -9,19 +9,19 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 43a4212a9faf0b7fef3395a847e8c614507e56df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588541"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115232"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Definición de la configuración en un archivo de respuesta
 

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4281315c8d18388cfbd4cf9bbe6b321e9e07c32b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416718"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114451"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedimiento Configuración de proyectos para destinarlos a varias plataformas
 

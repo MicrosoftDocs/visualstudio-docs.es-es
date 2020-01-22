@@ -3,19 +3,19 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Enterpr
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6006689e67e41c774030ccf646658ca31a1e214f
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177642"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159661"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Editor de núcleo de Visual Studio (incluido con Visual Studio Enterprise 2017)
 
@@ -25,7 +25,7 @@ ms.locfileid: "68177642"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 15.0.27128.1 | Optional
@@ -38,7 +38,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Herramientas de Microsoft Azure WebJobs | 15.7.27617.1 | Obligatorio
@@ -134,7 +134,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Se recomienda
@@ -197,7 +197,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Anaconda3.x64 | Anaconda3 64 bits (5.2.0) | 5.2.0 | Se recomienda
 Microsoft.Component.CookiecutterTools | Compatibilidad con plantillas de Cookiecutter | 15.0.26621.2 | Se recomienda
@@ -242,7 +242,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.6.27406.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
@@ -325,7 +325,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 15.6.27406.0 | Obligatorio
 Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.6.27406.0 | Obligatorio
@@ -345,7 +345,7 @@ Component.UnityEngine.x86 | Editor Unity 5.6 de 32 bits | 15.6.27406.0 | Se rec
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.MDD.Linux | Visual C++ para desarrollo de aplicaciones para Linux | 15.6.27406.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.6.27406.0 | Obligatorio
@@ -365,7 +365,7 @@ Component.MDD.Linux.GCC.arm | Desarrollo incrustado e IoT | 15.6.27309.0 | Optio
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
 Microsoft.VisualStudio.Component.ClassDesigner | Diseñador de clases | 15.0.26208.0 | Obligatorio
@@ -428,7 +428,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.6.27406.0 | Obligatorio
@@ -487,7 +487,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Android.SDK19.Private | Instalación de Android SDK (nivel de API 19) (instalación local para desarrollo móvil con JavaScript o C++) | 15.9.28107.0 | Obligatorio
 Component.Android.SDK21.Private | Instalación de Android SDK (nivel de API 21) (instalación local para desarrollo móvil con JavaScript o C++) | 15.9.28016.0 | Obligatorio
@@ -518,7 +518,7 @@ Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 15.0.26621.2 | Op
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Obligatorio
@@ -589,7 +589,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Xamarin | Xamarin | 15.8.27906.1 | Obligatorio
 Component.Xamarin.RemotedSimulator | Simulador remoto de Xamarin | 15.6.27323.2 | Obligatorio
@@ -639,7 +639,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataform
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Obligatorio
@@ -736,7 +736,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.8.27729.1 | Obligatorio
@@ -762,7 +762,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 d
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 15.8.27705.0 | Obligatorio
@@ -830,7 +830,7 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 15.0.26823.1 | Obligatorio
 Component.CPython3.x64 | Python 3 64 bits (3.6.6) | 3.6.6 | Se recomienda
@@ -917,7 +917,7 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Requisitos previos de her
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Obligatorio
@@ -987,7 +987,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.8.27825.0 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Obligatorio
@@ -1031,7 +1031,7 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Herramientas d
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.CordovaToolset.6.3.1 | Conjunto de herramientas de Cordova 6.3.1 | 15.7.27625.0 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
@@ -1062,7 +1062,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataform
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | nombre | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 Component.Android.Emulator | Emulador de Visual Studio para Android | 15.6.27413.0
 Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.14

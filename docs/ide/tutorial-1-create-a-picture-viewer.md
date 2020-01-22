@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516620"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115094"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
@@ -46,7 +46,7 @@ Cuando termine, la aplicación debe ser similar a la de la imagen siguiente:
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
 
-|Title|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Para empezar, cree un proyecto de aplicación de Windows Forms.|
 |[Paso 2: Ejecución de la aplicación de visor de imágenes](../ide/step-2-run-your-program.md)|Ejecute el proyecto de aplicación de Windows Forms que ha creado en el paso anterior.|

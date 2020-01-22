@@ -3,17 +3,17 @@ title: Supresión de las advertencias del compilador para proyectos y paquetes N
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591429"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114511"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 

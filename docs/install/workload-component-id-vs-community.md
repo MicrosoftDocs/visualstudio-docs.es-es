@@ -3,8 +3,8 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Communi
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79fddeaae88f98cd8ef40a7179a28fd8ded7fa5d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2291076c68a128a398d9d6db255b86bb1fbdcdf7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588426"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114035"
 ---
 # <a name="visual-studio-community-component-directory"></a>Directorio de componentes de Visual Studio Community
 

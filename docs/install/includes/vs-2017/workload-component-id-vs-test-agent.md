@@ -3,19 +3,19 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Test Ag
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para ejecutar pruebas automatizadas y pruebas de carga de manera remota
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 0a1661b885db877f216c0c9d3d8363825ea5f8eb
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: e3dda1867ee4f54588456c668639e51652d7f8e1
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177548"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159569"
 ---
 ## <a name="test-agent"></a>Test Agent
 
@@ -25,7 +25,7 @@ ms.locfileid: "68177548"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | 15.0.27019.1 | Obligatorio
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características pri
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | nombre | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 N/D | N/D | N/D

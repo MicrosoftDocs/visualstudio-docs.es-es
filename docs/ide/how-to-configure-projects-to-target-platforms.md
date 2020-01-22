@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba79bb199bba6c606ac603816cadc2dd2042057
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595324"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112547"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedimiento Configuración de proyectos para plataformas de destino
 
