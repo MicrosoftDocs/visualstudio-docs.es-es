@@ -2,22 +2,21 @@
 title: Números de compilación y fechas de lanzamiento de Visual Studio
 titleSuffix: ''
 description: Una lista de las versiones de lanzamiento y los números de compilación de Visual Studio, ordenados por fecha.
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/15/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590909"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114182"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +28,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.3 | Release | 14 de enero de 2020 | 16.4.29709.97 |
+| 16.0.11 | Release | 14 de enero de 2020 | 16.0.28803.653 |
 | 16.4.2 | Release | 17 de diciembre de 2019 | 16.4.29613.14 |
 | 16.4.1 | Release | 10 de diciembre de 2019 | 16.4.29609.76 |
 | 16.0.10 | Release | 10 de diciembre de 2019 | 16.0.28803.631 |
@@ -119,6 +120,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | Release | 14 de enero de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Release | 11 de diciembre de 2019 | 15.0.26228.102 |
 | 15.9.18 | Release | 10 de diciembre de 2019 | 15.9.28307.960 |
 | 15.9.17 | Release | 15 de octubre de 2019 | 15.9.28307.905 |

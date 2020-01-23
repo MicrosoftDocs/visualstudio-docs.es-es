@@ -3,19 +3,19 @@ title: Identificadores de componente y carga de trabajo de Visual Studio Enterpr
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 58c7d8775a1db09d2628eb6946924ae3543b80e4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9edadea9109fcd3c543ca3bd3cd777fbd488351a
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74796117"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159062"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Editor principal de Visual Studio (incluido con Visual Studio Enterprise 2019)
 
@@ -25,7 +25,7 @@ ms.locfileid: "74796117"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 16.1.28811.260 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 16.0.28315.86 | Optional
@@ -38,7 +38,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 16.0.28714.129 | Obligatorio
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Herramientas de Azure WebJobs | 16.0.28714.129 | Obligatorio
@@ -124,7 +124,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 16.0.28714.129 | Se recomienda
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 16.0.28315.86 | Se recomienda
@@ -179,7 +179,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 16.4.29429.68 | Se recomienda
 Microsoft.Component.PythonTools.Minicondax64 | Miniconda de Python | 16.2.29003.222 | Se recomienda
@@ -198,7 +198,7 @@ Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarro
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de C++ | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 16.4.29429.68 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.24) | 16.4.29409.204 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para x64/x86 (v14.24) | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK de Windows 10 (10.0.18362.0) | 16.1.28829.92 | Optional
 
@@ -210,7 +210,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK de Windows 10 (10.0.1
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Obligatorio
 Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.0.28517.75 | Obligatorio
@@ -289,7 +289,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 16.0.28517.75 | Obligatorio
 Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.0.28517.75 | Obligatorio
@@ -308,7 +308,7 @@ Component.UnityEngine.x86 | Editor Unity 5.6 de 32 bits | 16.1.28811.260 | Se r
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.MDD.Linux | C++ for Linux Development | 16.4.29511.114 | Obligatorio
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Obligatorio
@@ -325,7 +325,7 @@ Component.MDD.Linux.GCC.arm | Herramientas de desarrollo insertadas e IoT | 16.4
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Obligatorio
 Microsoft.VisualStudio.Component.ClassDesigner | Diseñador de clases | 16.0.28528.71 | Obligatorio
@@ -350,7 +350,7 @@ Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de CMake en C++
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 16.4.29429.68 | Se recomienda
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Test Adapter para Boost.Test | 16.0.28517.75 | Se recomienda
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Test Adapter para Google Test | 16.0.28517.75 | Se recomienda
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.24) | 16.4.29409.204 | Se recomienda
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para x64/x86 (v14.24) | 16.4.29409.204 | Se recomienda
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK de Windows 10 (10.0.18362.0) | 16.1.28829.92 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake | Editor JSON | 16.3.29207.166 | Se recomienda
 Component.Incredibuild | IncrediBuild: Aceleración de compilación | 16.0.28528.71 | Optional
@@ -379,12 +379,12 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Herramientas de
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de C++ | 16.0.28625.61 | Obligatorio
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Actualización de C++ 2019 Redistributable | 16.4.29429.68 | Obligatorio
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.24) | 16.4.29409.204 | Obligatorio
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para x64/x86 (v14.24) | 16.4.29409.204 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 16.4.29409.204 | Obligatorio
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 16.0.28625.61 | Se recomienda
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.4.29429.68 | Se recomienda
@@ -426,7 +426,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Android.SDK25.Private | Programa de instalación de Android SDK (nivel de API 25) (instalación local para desarrollo móvil con C++) | 16.0.28625.61 | Obligatorio
 Component.OpenJDK | OpenJDK (distribución de Microsoft) | 16.1.28811.260 | Obligatorio
@@ -450,7 +450,7 @@ Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 16.0.28517.75 | O
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 16.0.28714.129 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 16.0.28315.86 | Obligatorio
@@ -517,7 +517,7 @@ Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging | Instancias de MSIX Packag
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.OpenJDK | OpenJDK (distribución de Microsoft) | 16.1.28811.260 | Obligatorio
 Component.Xamarin | Xamarin | 16.4.29409.204 | Obligatorio
@@ -547,7 +547,7 @@ Component.Android.SDK28 | Instalación de Android SDK (nivel de API 28) | 16.2.2
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 16.0.28714.129 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 16.0.28315.86 | Obligatorio
@@ -636,7 +636,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 16.0.28517.75 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 16.4.29409.204 | Obligatorio
@@ -659,7 +659,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 16.0.28714.129 | Obligatorio
 Component.Microsoft.Web.LibraryManager | Administrador de bibliotecas | 16.0.28315.86 | Obligatorio
@@ -721,7 +721,7 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 16.4.29429.68 | Obligatorio
 Component.CPython3.x64 | Python 3 64 bits (3.7.5) | 3.7.5 | Se recomienda
@@ -784,7 +784,7 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Requisitos previos de her
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.NetFX.Native | .NET Native | 16.4.29429.68 | Obligatorio
 Microsoft.ComponentGroup.Blend | Blend para Visual Studio | 16.0.28315.86 | Obligatorio
@@ -841,7 +841,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | Herramientas de la Plataform
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | Obligatorio
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 16.0.28517.75 | Obligatorio
@@ -865,7 +865,7 @@ Microsoft.VisualStudio.Component.DslTools | SDK de modelado | 16.0.28315.86 | Op
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | Name | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 Component.GitHub.VisualStudio | Extensión de GitHub para Visual Studio | 2.5.9.5485
 Component.Xamarin.Inspector | Xamarin Inspector | 16.0.28315.86
