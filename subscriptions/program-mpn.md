@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491670"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281703"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -47,7 +47,7 @@ Independientemente de cuántas competencias obtenga un asociado, el número de s
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Suscripciones para partners que adquieren el Action Pack
 
-Los partners con una competencia no pueden adquirir el Action Pack. Solo se puede adquirir un Action Pack por partner.
+Los partners con una competencia pueden adquirir el Action Pack. Solo se puede adquirir un Action Pack por partner.
 
 Con el Action Pack, el partner obtiene **tres suscripciones de Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) es una oferta personalizada que carece de equivalente disponible comercialmente en el mercado. Incluye lo siguiente:
 

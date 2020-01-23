@@ -7,31 +7,28 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d583553c0382598681ab3aa52ca3a41a27ed2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585501"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269102"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-Al compilar código fuente, el motor de compilación crea ensamblados y aplicaciones ejecutables. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece en lenguajes de programación como C#, Visual Basic, C++ y F#.
-
-Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y semánticos, al compilar y ejecutar versiones de depuración del código.
-
-Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.yml) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
+Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilación de una aplicación](walkthrough-building-an-application.md).
 
 Puede usar cualquiera de los siguientes métodos para compilar una aplicación: el IDE de Visual Studio, las herramienta de línea de comandos de MSBuild y Azure Pipelines:
 
 | Método de compilación | Ventajas |
 | --- |--- | --- |
 | IDE |- Crear compilaciones inmediatamente y probarlas en un depurador.<br />- Ejecutar compilaciones multiprocesador para proyectos de C++ y C#.<br />- Personalizar aspectos diferentes del sistema de compilación. |
+| CMake | - Compilar proyectos con la herramienta CMake<br />- Usar el mismo sistema de compilación en plataformas Windows y Linux. |
 | Línea de comandos de MSBuild| - Compilar proyectos sin instalar Visual Studio.<br />- Ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Personalizar la mayoría de las áreas del sistema de compilación.|
 | Azure Pipelines | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|
 
@@ -60,3 +57,4 @@ De ahí en adelante, puede explorar otras tareas:
 
 - [Compilar proyectos de sitios web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Compilar y generar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
+- [Proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio)
