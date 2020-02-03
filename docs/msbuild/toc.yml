@@ -1,4 +1,4 @@
-- name: MsBuild
+- name: MSBuild
   items:
     - name: MsBuild
       href: msbuild.md
@@ -8,7 +8,8 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Conceptos de MSBuild
       items:
-        - name: 'Conceptos de MSBuild: Introducción'
+        - name: Información general
+          displayName: msbuild concepts
           href: msbuild-concepts.md
         - name: Propiedades
           items:
@@ -134,15 +135,16 @@
               href: resolving-assemblies-at-design-time.md
             - name: Configuración de destinos y tareas
               items:
-                - name: Configurar destinos y tareas
+                - name: Información general
                   href: configuring-targets-and-tasks.md
                 - name: Configurar destinos y tareas
                   href: how-to-configure-targets-and-tasks.md
-            - name: Solucionar problemas de versión de .NET Framework de destino
+            - name: "Solución de problemas de la versión de .NET\_Framework de destino"
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Seguimiento de archivos
           items:
-            - name: 'Seguimiento de archivos: Introducción'
+            - name: Información general
+              displayName: file tracking
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -168,7 +170,8 @@
           href: msbuild-best-practices.md
     - name: Registro
       items:
-        - name: 'Registro de MSBuild: Introducción'
+        - name: Información general
+          displayName: logging
           href: logging-in-msbuild.md
         - name: Obtener registros de compilación con MSBuild
           href: obtaining-build-logs-with-msbuild.md
@@ -186,63 +189,67 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Referencia de MSBuild
       items:
-        - name: 'Referencia de MSBuild: Introducción'
+        - name: Información general
+          displayName: msbuild reference
           href: msbuild-reference.md
         - name: Referencia de esquemas del archivo de proyecto MSBuild
           items:
-            - name: 'Referencia de esquemas del archivo del proyecto MSBuild: Introducción'
+            - name: Información general
+              displayName: Project File Schema Reference
               href: msbuild-project-file-schema-reference.md
-            - name: Elemento Choose (MSBuild)
+            - name: Elemento Choose
               href: choose-element-msbuild.md
-            - name: Elemento Import (MSBuild)
+            - name: Elemento Import
               href: import-element-msbuild.md
             - name: Elemento ImportGroup
               href: importgroup-element.md
-            - name: Elemento Item (MSBuild)
+            - name: Elemento Item
               href: item-element-msbuild.md
-            - name: Elemento ItemDefinitionGroup (MSBuild)
+            - name: Elemento ItemDefinitionGroup
               href: itemdefinitiongroup-element-msbuild.md
-            - name: Elemento ItemGroup (MSBuild)
+            - name: Elemento ItemGroup
               href: itemgroup-element-msbuild.md
-            - name: Elemento ItemMetadata (MSBuild)
+            - name: Elemento ItemMetadata
               href: itemmetadata-element-msbuild.md
-            - name: Elemento OnError (MSBuild)
+            - name: Elemento OnError
               href: onerror-element-msbuild.md
-            - name: Elemento Otherwise (MSBuild)
+            - name: Elemento Otherwise
               href: otherwise-element-msbuild.md
-            - name: Elemento Output (MSBuild)
+            - name: Elemento Output
               href: output-element-msbuild.md
             - name: Parameter (Elemento)
               href: parameter-element.md
             - name: ParameterGroup (Elemento)
               href: parametergroup-element.md
-            - name: Elemento Project (MSBuild)
+            - name: Elemento Project
               href: project-element-msbuild.md
-            - name: Elemento ProjectExtensions (MSBuild)
+            - name: Elemento ProjectExtensions
               href: projectextensions-element-msbuild.md
-            - name: Elemento Property (MSBuild)
+            - name: Elemento Property
               href: property-element-msbuild.md
-            - name: Elemento PropertyGroup (MSBuild)
+            - name: Elemento PropertyGroup
               href: propertygroup-element-msbuild.md
-            - name: Elemento Sdk (MSBuild)
+            - name: Elemento Sdk
               href: sdk-element-msbuild.md
-            - name: Elemento Target (MSBuild)
+            - name: Elemento Target
               href: target-element-msbuild.md
-            - name: Elemento de tarea (MSBuild)
+            - name: Elemento Task
               href: task-element-msbuild.md
-            - name: TaskBody (Elemento) (MSBuild)
+            - name: Elemento TaskBody
               href: taskbody-element-msbuild.md
-            - name: Elemento UsingTask (MSBuild)
+            - name: Elemento UsingTask
               href: usingtask-element-msbuild.md
-            - name: Elemento When (MSBuild)
+            - name: Elemento When
               href: when-element-msbuild.md
         - name: Referencia de tareas
           items:
-            - name: 'Referencia de tareas de MSBuild: Introducción'
+            - name: Información general
+              displayName: Task Reference
               href: msbuild-task-reference.md
-            - name: Tareas específicas de Visual C++
+            - name: Tareas específicas de C++
               items:
-                - name: 'Tareas de MSBuild específicas de Visual C++: Introducción'
+                - name: Información general
+                  displayName: C++ tasks
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake (Tarea)
                   href: bscmake-task.md
@@ -442,13 +449,15 @@
           href: msbuild-response-files.md
         - name: Referencia de WPF
           items:
-            - name: 'Referencia de MSBuild para WPF: Introducción'
+            - name: Información general
+              displayName: WPF MSBuild Reference
               href: wpf-msbuild-reference.md
             - name: Archivos .Targets de WPF
               href: wpf-dot-targets-files.md
             - name: Referencia de tareas de WPF
               items:
-                - name: 'Referencia de tareas de MSBuild para WPF: Introducción'
+                - name: Información general
+                  displayName: WPF MSBuild Task Reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier (Tarea)
                   href: fileclassifier-task.md
@@ -472,9 +481,10 @@
           href: special-characters-to-escape.md
     - name: Uso de MSBuild mediante programación
       items:
-        - name: Uso de MSBuild mediante programación
+        - name: Información general
+          displayName: Use MSBuild Programmatically
           href: msbuild-api.md
-        - name: Actualización a MSBuild 15
+        - name: "Actualización a MSBuild\_15"
           href: updating-an-existing-application.md
     - name: Glosario de MSBuild
       href: msbuild-glossary.md
