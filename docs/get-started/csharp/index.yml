@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: b364716f87999272030e48a88af5a06cbff012e4
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+  ms.openlocfilehash: 0e5519756bebafd91b72186e001ca6af7f53c254
+  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/19/2019
-  ms.locfileid: "74188639"
+  ms.lasthandoff: 02/01/2020
+  ms.locfileid: "76923123"
 landingContent:
 - title: Primeros pasos
   linkLists:
@@ -61,6 +61,8 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
+    - text: Ejecutar un programa
+      url: run-program.md
     - text: Abrir código desde un repositorio
       url: ../tutorial-open-project-from-repo.md
     - text: Escribir y editar código
