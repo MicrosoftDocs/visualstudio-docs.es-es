@@ -4,19 +4,19 @@ description: Obtenga información sobre cómo ampliar una evaluación gratuita d
 ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: db0f75b3e4c2f066b7a9d79976a50efd3364d7bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591377"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027581"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Ampliar una versión de prueba o actualizar una licencia
 

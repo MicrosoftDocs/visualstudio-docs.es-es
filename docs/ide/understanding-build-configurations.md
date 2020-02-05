@@ -1,6 +1,6 @@
 ---
 title: Descripción de las configuraciones de compilación
-ms.date: 11/04/2016
+ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269143"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027616"
 ---
 # <a name="understand-build-configurations"></a>Descripción de las configuraciones de compilación
 
