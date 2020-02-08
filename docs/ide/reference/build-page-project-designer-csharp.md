@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596871"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923267"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 
@@ -65,6 +65,12 @@ Define TRACE como un símbolo en todos los archivos de código fuente de la apli
 Especifica el procesador que será el destino del archivo de salida. Elija **x86** para cualquier procesador compatible con Intel de 32 bits; elija **x64** para cualquier procesador compatible con Intel de 64 bits; elija **ARM** para procesadores ARM; o elija **Cualquier CPU** para especificar que se aceptan todos los procesadores. **Cualquier CPU** es el valor predeterminado para los proyectos, ya que permite que la aplicación se ejecute en la gran mayoría del hardware.
 
 Para obtener más información, consulte [/platform (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Admisión de valores NULL**
+
+Especifica el contexto de C# que admite un valor NULL en todo el proyecto. Esta opción de la interfaz de usuario se presentó en Visual Studio 16.5 y solo está habilitada para los proyectos en los que se usa C# 8.0 o una versión posterior.
+
+Para más información, vea [Contextos que admiten un valor NULL](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferencia de 32 bits**
 

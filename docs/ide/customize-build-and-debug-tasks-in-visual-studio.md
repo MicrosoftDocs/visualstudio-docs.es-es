@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567442"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542690"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -224,6 +224,8 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
 |`${fileExtname}`| La extensión del archivo seleccionado (por ejemplo, *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configuración de la depuración con launch.vs.json
+
+Para configurar proyectos de CMake para la depuración, vea [Configuración de sesiones de depuración de CMake](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Para configurar el código base para realizar la depuración, en el **Explorador de soluciones**, elija el elemento de menú **Configuración de depuración e inicio** con un clic con el botón derecho o con el menú contextual del archivo ejecutable.
 

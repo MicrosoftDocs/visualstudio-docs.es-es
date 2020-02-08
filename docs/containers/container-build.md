@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916942"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027262"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Compilación de aplicaciones en contenedores con Visual Studio
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Las líneas del Dockerfile comienzan con la imagen de Nano Server de Microsoft Container Registry (mcr.microsoft.com) y crean una imagen intermedia `base` que expone los puertos 80 y 443 y establece el directorio de trabajo en `/app`.
+Las líneas en el Dockerfile comienzan con la imagen Debian del Registro de contenedor de Microsoft (mcr.microsoft.com) y crean una imagen intermedia `base` que expone los puertos 80 y 443, y establece el directorio de trabajo en `/app`.
 
 La siguiente fase es `build`, que se muestra de la siguiente manera:
 

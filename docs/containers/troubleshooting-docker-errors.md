@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "71125960"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027279"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Solución de problemas de desarrollo de Visual Studio con Docker
 
@@ -80,6 +80,18 @@ net localgroup docker-users DOMAIN\username /add
 ```
 
 En PowerShell, use la función [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember).
+
+## <a name="low-disk-space"></a>Espacio de disco bajo
+
+De forma predeterminada, Docker almacena imágenes en la carpeta *%ProgramData%/Docker/* , que normalmente se encuentra en la unidad del sistema, *C:\ProgramData\Docker\*. Para evitar que las imágenes ocupen espacio valioso en la unidad del sistema, puede cambiar la ubicación de la carpeta de imágenes.  Desde el icono de Docker en la barra de tareas, abra la configuración de Docker, elija **Demonio** y cambie de **Básico** a **Avanzado**. En el panel de edición, agregue la configuración de la propiedad `graph` con el valor de la ubicación deseada para las imágenes de Docker:
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Captura de pantalla de la configuración de ubicación de las imágenes de Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Haga clic en **Aplicar** para reiniciar Docker. En estos pasos se modifica el archivo de configuración que se encuentra en *%ProgramData%\docker\config\daemon.json*. Las imágenes compiladas previamente no se mueven.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repositorio de GitHub de Microsoft/DockerTools
 

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916929"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826463"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -109,6 +109,20 @@ Use comillas dobles alrededor de los valores, como en el ejemplo anterior, y use
 |com.microsoft.visualstudio.debuggee.killprogram|Este comando se usa para detener el programa de depurado que se ejecuta dentro del contenedor (si es necesario).|
 |com.microsoft.visualstudio.debuggee.program|El programa que se inicia al iniciar la depuración. En el caso de las aplicaciones de .NET Core, este valor suele ser **dotnet**.|
 |com.microsoft.visualstudio.debuggee.workingdirectory|El directorio que se usa como directorio de inicio al iniciar la depuración. Este valor suele ser */app* para los contenedores de Linux o *C:\app* para los contenedores de Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Personalización del proceso de inicio de la aplicación
+
+Puede ejecutar un comando o un script personalizado antes de iniciar la aplicación mediante el valor `entrypoint` y hacer que dependa de la configuración. Por ejemplo, si tiene que configurar un certificado solo en modo **Depuración** mediante la ejecución de `update-ca-certificates`, pero no en modo **Versión**, podría agregar el código siguiente solo en *docker-compose.vs.debug.yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Si omite el archivo *docker-compose.vs.release.yml* o *docker-compose.vs.debug.yml*, Visual Studio genera uno en función de la configuración predeterminada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

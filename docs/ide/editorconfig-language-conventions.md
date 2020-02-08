@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588634"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542664"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 
@@ -117,7 +117,7 @@ Las reglas de estilo de esta sección son aplicables a C# y Visual Basic.
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
 
-### Calificadores <a name="this-and-me"></a>"This." y "Me."
+### <a name="this-and-me"></a>"This." y "Me."
 
 Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos. Un valor **true** significa que prefiere que el símbolo de código esté precedido por `this.` en C# o `Me.` en Visual Basic. Un valor **false** significa que prefiere que el elemento de código _no_ esté precedido por `this.` o `Me.`.
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Nombre de regla** | csharp_prefer_braces |
 | **Identificador de la regla** | IDE0011 |
 | **Lenguajes aplicables** | C# |
-| **Valores** | `true`: se prefieren las llaves incluso para una línea de código.<br /><br />`false`: no se prefieren las llaves aunque estén permitidas. |
+| **Valores** | `true`: se prefieren las llaves incluso para una línea de código.<br /><br />`false`: no se prefieren las llaves aunque estén permitidas.<br /><br />`when_multiline`: se prefieren las llaves en varias líneas. |
 | **Valor predeterminado de Visual Studio** | `true:silent` |
 
 Ejemplos de código:

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar un seguimiento de las asignaciones de usuarios y las tramitaciones de pedidos.
-ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491603"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967335"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
 Los administradores de suscripciones de Visual Studio deberán realizar un seguimiento del uso de Visual Studio y tramitar pedidos para cualquier incremento en el uso según la programación descrita en su Contrato de licencia por volumen o en el Contrato de productos y servicios de Microsoft. El nuevo Portal de administración de suscripciones de Visual Studio ha simplificado esta tarea con una útil herramienta de seguimiento que muestra las licencias disponibles y las usadas.
@@ -30,11 +30,11 @@ La obligación de compra completa viene determinada por el número máximo de su
     > Para evitar un nivel artificialmente alto de uso máximo, haga esto siempre al quitar primero la suscripción existente y después agregar la nueva. 
 - Para ayudar a supervisar el uso máximo de la organización, hay un informe [Uso máximo](maximum-usage.md) en el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio. 
 
-## <a name="cloud-subscriptions-open-license-or-open-value"></a>Suscripciones de nube, Open License u Open Value
-Las suscripciones se pueden asignar a través de un programa como las suscripciones de Microsoft Cloud, Open License u Open Value. Si usa estos programas, debe procesar su pedido para los usuarios adicionales durante el mes en el que los usuarios (empleados o contratistas externos) empiezan a interactuar con el software con licencia de Visual Studio.
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>Suscripciones mensuales, Open License u Open Value
+Puede asignar suscripciones a través de programas como Open License y Open Value, o mediante Visual Studio Marketplace mensualmente. Si usa estos programas, debe procesar su pedido para los usuarios adicionales durante el mes en el que los usuarios (empleados o contratistas externos) empiezan a interactuar con el software con licencia de Visual Studio.
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA y Select
-Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido “true up” anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
+Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido "true up" anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
@@ -42,3 +42,8 @@ Obtenga más información sobre las responsabilidades de los administradores:
 - [Inventario de entorno de preproducción](admin-inventory.md)
 - [Administración de equipos grandes y contratistas externos](manage-teams.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
