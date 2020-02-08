@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400861"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542599"
 ---
 # <a name="container-tools-launch-settings"></a>Configuración de inicio de las herramientas de contenedor
 
@@ -53,7 +53,7 @@ El valor commandName identifica que esta sección se aplica a las herramientas d
 |Nombre de valor|Versión|Ejemplo|Descripción|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Indica si se debe iniciar el explorador después de iniciar correctamente el proyecto.|
-|launchUrl|Visual Studio 2017|"launchUrl": "\<scheme>://\<serviceHost>:\<servicePort>"|Esta dirección URL se usa al iniciar el explorador.  Los tokens de reemplazo admitidos para esta cadena son:<br>   \<scheme> - se reemplaza por "http" o "https" en función de si se usa SSL.<br>   \<serviceHost> - normalmente se reemplaza por "localhost". Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por la dirección IP del contenedor.<br>   \<servicePort> - normalmente se reemplaza por sslPort o httpPort, en función de si se usa SSL.  Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por "443" o "80", en función de si se usa SSL.|
+|launchUrl|Visual Studio 2017|"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"|Esta dirección URL se usa al iniciar el explorador.  Los tokens de reemplazo admitidos para esta cadena son:<br>   {Scheme}: se reemplaza por "http" o "https" en función de si se usa SSL.<br>   {ServiceHost}: normalmente se reemplaza por "localhost". Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por la dirección IP del contenedor.<br>   {ServicePort}: normalmente se reemplaza por sslPort o httpPort, en función de si se usa SSL.  Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por "443" o "80", en función de si se usa SSL.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ El valor commandName identifica que esta sección se aplica a las herramientas d
 | httpPort             | "httpPort": 24051                                     | Este puerto del host se asigna al puerto 80 del contenedor al iniciar el contenedor.                                |
 |                      |                                                       | Si no se especifica, el valor se toma del valor iisSettings.                                                          |
 | launchBrowser        | "launchBrowser": true                                 | Indica si se debe iniciar el explorador después de iniciar correctamente el proyecto.                                       |
-| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Esta dirección URL se usa al iniciar el explorador. Los tokens de reemplazo admitidos para esta cadena son:                          |
-|                      |                                                       | - <scheme>: se reemplaza por "http" o "https" en función de si se usa SSL.                                   |
-|                      |                                                       | - <serviceHost>: normalmente se reemplaza por "localhost".                                                                    |
+| launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}" | Esta dirección URL se usa al iniciar el explorador. Los tokens de reemplazo admitidos para esta cadena son:                          |
+|                      |                                                       | - {Scheme}: se reemplaza por "http" o "https" en función de si se usa SSL.                                   |
+|                      |                                                       | - {ServiceHost}: normalmente se reemplaza por "localhost".                                                                    |
 |                      |                                                       | Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por la dirección IP del contenedor.           |
-|                      |                                                       | - <servicePort>: normalmente se reemplaza por sslPort o httpPort, en función de si se usa SSL.                   |
+|                      |                                                       | - {ServicePort}: normalmente se reemplaza por sslPort o httpPort, en función de si se usa SSL.                   |
 |                      |                                                       | Cuando el destino son los contenedores de Windows en Windows 10 RS3 o versiones anteriores, se reemplaza por "443" u "80",         |
 |                      |                                                       | dependiendo de si se usa SSL.                                                                                       |
 | sslPort              | "sslPort": 44381                                      | Este puerto del host se asigna al puerto 443 del contenedor al iniciar el contenedor.                               |

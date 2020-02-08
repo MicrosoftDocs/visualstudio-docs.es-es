@@ -2,8 +2,7 @@
 title: Modificar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
-ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/19/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 07aa8afbb4e4ca3970a0f082ec6649a90bfaf2ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112700"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922880"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -144,6 +143,9 @@ Esta es la manera de hacerlo.
 ## <a name="modify-individual-components"></a>Modificar componentes individuales
 
 Si no quiere usar cargas de trabajo para personalizar la instalación de Visual Studio, elija la pestaña **Componentes individuales** del Instalador de Visual Studio, seleccione los componentes que quiera y, después, siga las indicaciones.
+
+>[!TIP]
+> Para más información sobre SQL Server Data Tools (SSDT), vea [Descarga e instalación de SQL Server Data Tools (SSDT) para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
 
 ## <a name="modify-language-packs"></a>Modificación de paquetes de idioma
 

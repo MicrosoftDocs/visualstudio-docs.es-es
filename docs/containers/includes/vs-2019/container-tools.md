@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools para Docker con ASP.NET Core
+title: Visual Studio Tools para Docker con ASP.NET
 author: ghogen
 description: Aprenda a usar las herramientas de Visual Studio 2019 y Docker para Windows
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927774"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922983"
 ---
 Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.
 
@@ -20,7 +20,7 @@ Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, 
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con las cargas de trabajo **Desarrollo web**, **Azure Tools** o **Desarrollo multiplataforma de .NET Core** instaladas
-* [Herramientas de desarrollo de .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) para el desarrollo con .NET Core 2.2
+* [Herramientas de desarrollo de .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) para el desarrollo con .NET Core
 * Para publicar en Azure Container Registry, una suscripción de Azure. [Regístrese para obtener una evaluación gratuita](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Instalación y configuración
@@ -29,10 +29,12 @@ Para instalar Docker, primero revise la información de [Docker Desktop for Wind
 
 ## <a name="add-a-project-to-a-docker-container"></a>Agregar un proyecto a un contenedor de Docker
 
-1. Cree un nuevo proyecto con la plantilla **Aplicación web ASP.NET Core**.
+1. Cree un proyecto con la plantilla **Aplicación web ASP.NET Core**, o bien, si quiere usar .NET Framework en lugar de .NET Core, elija **Aplicación web ASP.NET (.NET Framework)** .
 1. Seleccione **Aplicación web** y asegúrese de que la casilla **Habilitar compatibilidad con Docker** esté activada.
 
    ![Casilla Habilitar compatibilidad con Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   En la captura de pantalla se muestra .NET Core; si usa .NET Framework, tendrá un aspecto distinto.
 
 1. Seleccione el tipo de contenedor que quiera (Windows o Linux) y haga clic en **Crear**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-El elemento *Dockerfile* anterior se basa en la imagen [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e incluye instrucciones para modificar la imagen base mediante la creación del proyecto y la adición al contenedor.
+El elemento *Dockerfile* anterior se basa en la imagen [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e incluye instrucciones para modificar la imagen base mediante la creación del proyecto y la adición al contenedor. Si usa .NET Framework, la imagen base será distinta.
 
 Si la casilla **Configurar para HTTPS** del cuadro de diálogo del nuevo proyecto está marcada, el *Dockerfile* expondrá dos puertos. Uno se utiliza para el tráfico HTTP, mientras que el otro se emplea para HTTPS. Si la casilla no está marcada, se expondrá un único puerto (80) para el tráfico HTTP.
 
@@ -71,7 +73,7 @@ Si la casilla **Configurar para HTTPS** del cuadro de diálogo del nuevo proyect
 
 Seleccione **Docker** en la lista desplegable de depuración de la barra de herramientas y empiece a depurar la aplicación. Es posible que vea un mensaje que pregunte sobre cómo confiar en un certificado; elija la opción de confiar en el certificado para continuar.
 
-La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar.
+La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar. La primera vez, puede tardar unos minutos en descargar la imagen base, pero es mucho más rápido en ejecuciones posteriores.
 
 ## <a name="containers-window"></a>Ventana Contenedores
 

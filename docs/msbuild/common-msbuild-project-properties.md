@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596195"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027629"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
@@ -83,6 +83,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | OptionExplicit | Valor booleano que, cuando se establece en `true`, requiere la declaración explícita de variables en el código fuente. Esta propiedad es equivalente al modificador `/optionexplicit` del compilador. |
 | OptionInfer | Valor booleano que, cuando se establece en `true`, permite la inferencia de tipos de variables. Esta propiedad es equivalente al modificador `/optioninfer` del compilador. |
 | OptionStrict | Valor booleano que, cuando se establece en `true`, hace que la tarea de compilación exija una semántica de tipos estricta para restringir las conversiones de tipos implícitas. Esta propiedad es equivalente al modificador `/optionstrict` del compilador de *vbc.exe*. |
+| OutDir | Indica la ubicación de salida final del proyecto o la solución. Al compilar una solución, OutDir se puede usar para recopilar varios resultados del proyecto en una ubicación. Además, OutDir se incluye en AssemblySearchPaths, que se usa para resolver referencias. Por ejemplo, *bin\Debug*. |
 | OutputPath | Especifica la ruta de acceso al directorio de salida con respecto al directorio del proyecto, por ejemplo, *bin\Debug*. |
 | OutputType | Especifica el formato del archivo de salida. Este parámetro puede tener uno de los valores siguientes:<br /><br /> -   Library. Crea una biblioteca de códigos. (Valor predeterminado).<br />-   Exe. Crea una aplicación de consola.<br />-   Module. Crea un módulo.<br />-   Winexe. Crea un programa de Windows.<br /><br /> Esta propiedad es equivalente al modificador `/target` del compilador de *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valor booleano que indica si desea que la compilación sobrescriba los archivos de solo lectura o produzca un error. |

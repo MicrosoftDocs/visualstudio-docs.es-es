@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188794"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027286"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implementación de un contenedor de ASP.NET Core en Azure App Service mediante Visual Studio
 
@@ -29,7 +29,7 @@ Para realizar este tutorial:
 - Instalar la versión más reciente de [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con la carga de trabajo "ASP.NET y desarrollo web"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con la carga de trabajo de *ASP.NET y desarrollo web*.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con la carga de trabajo *ASP.NET y desarrollo web*.
 ::: moniker-end
 - Instalar [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
@@ -53,13 +53,13 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
 1. Seleccione **Aplicación web**.
 1. Decida si quiere o no compatibilidad de SSL mediante la casilla **Configure for HTTPS** (Configurar para HTTPS).
 1. Marque la casilla **Enable Docker Support** (Habilitar compatibilidad con Docker).
-1. Seleccione el tipo de contenedor **Linux** y haga clic en **Crear**. Los contenedores de Windows no se admiten para implementar en Azure App Service como contenedor.
+1. Seleccione el tipo de contenedor y haga clic en **Crear**. Los contenedores de Windows no se admiten para implementar en Azure App Service como contenedor.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Implementación del contenedor en Azure
 
 1. Haga clic con el botón derecho en el **Explorador de soluciones** y elija **Publicar**.
-1. En el cuadro de diálogo de destino de publicación, seleccione **App Service Linux**.
+1. En el cuadro de diálogo de destino de publicación, seleccione **App Service Linux** o **App Service**. Este es el sistema operativo que hospedará el servidor web.
 1. Puede publicar solo en App Service o en App Service y Azure Container Registry (ACR). Para publicar el contenedor en Azure Container Registry (ACR), seleccione **Create new App Service for containers** (Crear App Service para contenedores) y haga clic en **Publicar**.
 
    ![Captura de pantalla del cuadro de diálogo de publicación](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ Los siguientes pasos le guían en el proceso de creación de una aplicación ASP
    ![Captura de pantalla de la aplicación web](media/deploy-app-service/web-application-running.png)
 
 1. El perfil de publicación se guarda con todos los detalles seleccionados, como el grupo de recursos y el registro de contenedor.
+
 1. Para volver a implementar con el mismo perfil de publicación, use el botón **Publicar**, el botón **Publicar** de la ventana **Actividad de publicación web** o haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione el elemento **Publicar** en el menú contextual.
+
+## <a name="view-container-settings"></a>Visualización de la configuración del contenedor
+
+En [Azure Portal](https://portal.azure.com), puede abrir la instancia de App Service implementada.
+
+Para ver la configuración de la instancia implementada de App Service, abra el menú **Configuración del contenedor* (si usa Visual Studio 2019, versión 16.4 o posterior).
+
+![Captura de pantalla del menú Configuración del contenedor en Azure Portal](media/deploy-app-service/container-settings-menu.png)
+
+Desde allí, puede ver la información del contenedor, ver o descargar registros, o bien configurar la implementación continua. Vea [CI/CD continua en Azure App Service](/azure/app-service/containers/app-service-linux-ci-cd).
 
 ## <a name="clean-up-resources"></a>Limpiar los recursos
 
@@ -89,7 +100,7 @@ En Azure Portal, seleccione **Grupos de recursos** y luego el grupo de recursos 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Configure la integración y entrega continuas (CI/CD) con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Obtenga más información sobre [Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="see-also"></a>Vea también
 
