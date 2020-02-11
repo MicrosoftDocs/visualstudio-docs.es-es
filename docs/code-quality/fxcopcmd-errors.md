@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: jillfra
+ms.author: mikejo
 author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649559"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091774"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta FxCopCmd
 
@@ -25,9 +25,9 @@ En la tabla siguiente se describen los códigos de error devueltos por FxCopCmd:
 
 |Error|Valor numérico|
 |-----------|-------------------|
-|Sin errores|0X0|
+|Sin errores|0x0|
 |Error de análisis|0x1|
-|Excepciones de regla|0X2|
+|Excepciones de regla|0x2|
 |Error de carga del proyecto|0x4|
 |Error de carga de ensamblado|0x8|
 |Error de carga de la biblioteca de reglas|0x10|
@@ -52,6 +52,6 @@ Se devuelve un **error de análisis** de errores irrecuperables. Indica que no s
 > [!NOTE]
 > El ensamblado del código de retorno de FxCopCmd **hace referencia a error** 0x200 por sí solo es una advertencia en lugar de un error. Este código de retorno indica que faltan referencias indirectas, pero que FxCopCmd pudo controlarlas. La ADVERTENCIA significa que hay una posibilidad de que algunos resultados del análisis puedan estar en peligro. El tratamiento de **las referencias de ensamblado** es un error cuando se combina con cualquier otro código de retorno.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Errores de la aplicación de análisis de código](../code-quality/code-analysis-application-errors.md)

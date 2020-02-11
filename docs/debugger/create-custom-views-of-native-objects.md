@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405209"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091789"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Crear vistas personalizadas de C++ objetos en el depurador mediante el marco Natvis
 
@@ -690,3 +690,9 @@ Cada tipo definido en el archivo *. natvis* debe mostrar explícitamente los vis
 Es mucho más trabajo escribir un visualizador personalizado que una definición Natvis de XML, pero está libre de restricciones sobre lo que Natvis hace o no es compatible. Los visualizadores personalizados tienen acceso al conjunto completo de API de extensibilidad del depurador, que pueden consultar y modificar el proceso de depuración o comunicarse con otras partes de Visual Studio.
 
  Puede usar los atributos `Condition`, `IncludeView`y `ExcludeView` en elementos de `CustomVisualizer`.
+
+ ## <a name="limitations"></a>Limitaciones
+
+Las personalizaciones de Natvis funcionan con clases y Structs, pero no con definiciones de tipos.
+
+Natvis no admite Visualizadores para tipos primitivos (por ejemplo, `int`, `bool`) o para punteros a tipos primitivos. En este escenario, una opción es usar el [especificador de formato](../debugger/format-specifiers-in-cpp.md) adecuado para su caso de uso. Por ejemplo, si usa `double* mydoublearray` en el código, puede usar un especificador de formato de matriz en la ventana **inspección** del depurador, como la expresión `mydoublearray, [100]`, que muestra los primeros 100 elementos.
