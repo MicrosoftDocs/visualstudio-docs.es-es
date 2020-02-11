@@ -10,16 +10,16 @@ helpviewer_keywords:
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f717c4bdccd662764b73530d3ae416f8b95b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1eb65f52df4b27837c00b7557db0c5e15e6c187
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649282"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091761"
 ---
 # <a name="interoperability-warnings"></a>advertencias de interoperabilidad
 
@@ -35,7 +35,7 @@ Las advertencias de interoperabilidad admiten la interacción con clientes COM.
 | [CA1403: Los tipos de diseño automático no deben ser visibles para COM](../code-quality/ca1403.md) | Un tipo de valor visible para COM se marca con el atributo System. Runtime. InteropServices. StructLayoutAttribute establecido en LayoutKind. auto. El diseño de estos tipos puede cambiar entre las versiones de .NET, lo que interrumpirá a los clientes COM que esperan un diseño específico. |
 | [CA1404: Llame a GetLastError inmediatamente después de P/Invoke](../code-quality/ca1404.md) | Se realiza una llamada al método Marshal. GetLastWin32Error o a la función GetLastError [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] equivalente, y la llamada anterior inmediatamente no es a un método de invocación de plataforma. |
 | [CA1405: Los tipos base de tipos visibles para COM deben ser visibles para COM](../code-quality/ca1405.md) | Un tipo visible a través de COM se deriva de un tipo no visible a través de COM. |
-| [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406.md) | Los clientes COM de Visual Basic 6 no pueden tener acceso a enteros de 64 bits. |
+| [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406.md) | Los clientes COM de Visual Basic 6 no pueden tener acceso a los enteros de 64 bits. |
 | [CA1407: Evite miembros estáticos en tipos visibles para COM](../code-quality/ca1407.md) | COM no es compatible con métodos estáticos. |
 | [CA1408: No utilizar AutoDual ClassInterfaceType](../code-quality/ca1408.md) | Los tipos que utilizan una interfaz dual permiten a los clientes enlazarse a un diseño de interfaz concreto. Cualquier cambio que se introduzca en una versión futura en el diseño del tipo o en cualquier tipo base provocará un error en los clientes COM que están enlazados a la interfaz. De forma predeterminada, si no se especifica el atributo ClassInterfaceAttribute, se utiliza una interfaz solo de envío. |
 | [CA1409: Los tipos visibles COM se deben poder crear](../code-quality/ca1409.md) | Un tipo de referencia marcado específicamente como visible para COM contiene un constructor parametrizado público pero no contiene un constructor (sin parámetros) predeterminado público. Un tipo sin un constructor predeterminado público no se puede crear mediante clientes COM. |
