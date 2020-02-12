@@ -1,48 +1,52 @@
 ---
-title: Ventaja de Office 365 | Microsoft Docs
+title: Ventaja de Office 365 Pro Plus | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
-description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
-ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+description: Obtenga información sobre la ventaja de Office 365 Pro Plus que se incluye en algunas suscripciones de Visual Studio.
+ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967349"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036730"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 en suscripciones de Visual Studio
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus en suscripciones de Visual Studio
 
-Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
+Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 Pro Plus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
 
 > [!NOTE]
-> La suscripción a Visual Studio le da derecho a utilizar Office 365 para su uso en producción.  
+> La suscripción a Visual Studio le da derecho a utilizar Office 365 Pro Plus para su uso en producción.  
 
-## <a name="getting-started-with-office-365"></a>Introducción a Office 365 
+> [!IMPORTANT]
+> Se ha informado de un problema con la obtención de claves de producto para Office 365 Pro Plus.  Estamos trabajando en el problema y le proporcionaremos una actualización cuando se resuelva el problema. 
 
-Siga estos pasos para descargar y activar Office 365:
+
+## <a name="getting-started-with-office-365-pro-plus"></a>Introducción a Office 365 Pro Plus
+
+Siga estos pasos para descargar y activar Office 365 Pro Plus:
 1. Inicie sesión en su suscripción de Visual Studio Enterprise.
 2. Haga clic en la pestaña **Descargas**.
-3. Verá una lista de las descargas destacadas. En la lista de Office, elija **Office 365**.
+3. Verá una lista de las descargas destacadas. En la lista de Office, elija **Office 365 Pro Plus**.
    > [!div class="mx-imgBorder"]
-   > ![Descargas de Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Para instalar Office 365, necesitará una clave de producto.  Haga clic en el vínculo **Obtener clave** debajo de la lista de Office 365.
+   > ![Descargas de Office 365 Pro Plus](_img/vs-office365/vs-office365-downloads.png)
+0. Para instalar Office 365 ProPlus, necesitará una clave de producto.  Haga clic en el vínculo **Obtener clave** debajo de la lista de Office 365 Pro Plus.
    > [!div class="mx-imgBorder"]
-   > ![Obtener clave del producto de Office 365](_img/vs-office365/vs-office365-get-key.png)
+   > ![Obtención de la clave de producto de Office 365 Pro Plus](_img/vs-office365/vs-office365-get-key.png)
 0. Una ventana emergente le mostrará las claves que ya ha reclamado, así como las que están disponibles para usted.  Para obtener una nueva clave, haga clic en **Reclamar clave** en la lista **Office Professional Plus 2019**.
    > [!div class="mx-imgBorder"]
-   > ![Reclamar clave de producto de Office 365](_img/vs-office365/vs-office365-claim-key.png)
+   > ![Reclamación de la clave de producto de Office 365 Pro Plus](_img/vs-office365/vs-office365-claim-key.png)
 0. Anote la clave que acaba de reclamar. (Siempre puede volver a ver esta lista otra vez).
 0. Cierre la ventana emergente.
 0. Haga clic en el botón **Descargar**.
    > [!div class="mx-imgBorder"]
-   > ![Iniciar descarga de Office 365](_img/vs-office365/vs-office365-download-button.png)
+   > ![Inicio de descarga de Office 365 Pro Plus](_img/vs-office365/vs-office365-download-button.png)
 0. Inicie sesión con su cuenta de Microsoft. (Si ya inició sesión, haga clic en **Siguiente**).
 0. Escriba la clave del producto, el país o la región, y el idioma y haga clic en **Siguiente**.
    > [!div class="mx-imgBorder"]
-   > ![Escriba la clave del producto de Office 365](_img/vs-office365/vs-office365-enter-key.png)
+   > ![Especificación de la clave de producto de Office 365 Pro Plus](_img/vs-office365/vs-office365-enter-key.png)
 0. Vuelva a hacer clic en **Siguiente**.
 0. Haga clic en **Instalar** para instalar las aplicaciones de Office.
 
@@ -77,3 +81,9 @@ Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su su
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédito individual de Azure DevTest](vs-azure.md) Si planea desarrollar aplicaciones para Office, querrá activar la [suscripción de Office Developer](vs-office-dev.md)
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)
