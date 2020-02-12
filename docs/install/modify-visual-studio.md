@@ -2,7 +2,7 @@
 title: Modificar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922880"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125356"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -123,6 +123,9 @@ Esta es la manera de hacerlo.
 ::: moniker range="vs-2019"
 
  Las cargas de trabajo contienen las características que necesita para el lenguaje de programación o la plataforma que está usando. Use cargas de trabajo para modificar Visual Studio de manera que admita el trabajo que quiere realizar, cuando quiera.
+
+ > [!TIP]
+>Para más información sobre qué herramientas y paquetes de componentes necesita para el desarrollo, consulte [Cargas de trabajo de Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. En el Instalador de Visual Studio, elija la pestaña **Cargas de trabajo** y, a continuación, seleccione o anule la selección de las cargas de trabajo que desee.
 

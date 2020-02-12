@@ -10,16 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573825"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091826"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 
 Las compilaciones incrementales son compilaciones que se optimizan para que no se ejecuten los destinos que tienen archivos de salida que están actualizados con respecto a sus archivos de entrada correspondientes. Un elemento de destino puede tener un atributo `Inputs`, que indica qué elementos el destino espera como entrada, y un atributo `Outputs`, que indica qué elementos genera como salida. MSBuild intenta buscar una asignación 1 a 1 entre los valores de estos atributos. Si existe una asignación 1 a 1, MSBuild compara la marca de tiempo de cada elemento de entrada con la marca de tiempo de su elemento de salida correspondiente. Los archivos de salida que no tienen ninguna asignación 1 a 1 se comparan con todos los archivos de entrada. Un elemento se considera actualizado si su archivo de salida tiene una antigüedad igual o inferior a la de su archivo o archivos de entrada.
+
+> [!NOTE]
+> Cuando MSBuild evalúa los archivos de entrada, solo se tiene en cuenta el contenido de la lista en la ejecución actual. Los cambios que se realicen en la lista desde la última compilación no harán que un destino se desproteja automáticamente.
 
 Si todos los elementos de salida están actualizados, MSBuild omite el destino. Esta *compilación incremental* del destino puede mejorar significativamente la velocidad de compilación. Si solo están actualizados algunos archivos, MSBuild ejecuta el destino pero omite los elementos actualizados, actualizando de ese modo todos los elementos. Este proceso se conoce como *compilación incremental parcial*.
 
