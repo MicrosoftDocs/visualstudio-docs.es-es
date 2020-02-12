@@ -257,7 +257,7 @@ Existen dos formas de agregar cuentas de almacenamiento mediante el Explorador d
 
    * Suscripción de Azure a la que desee agregar la cuenta de almacenamiento.
    * Nombre que quiere usar para la nueva cuenta de almacenamiento.
-   * La región o el grupo de afinidad (por ejemplo, Oeste de EE. UU. o Asia oriental).
+   * La región o el grupo de afinidad (por ejemplo, Oeste de EE. UU. o Este de Asia).
    * El tipo de replicación que quiere usar para la cuenta de almacenamiento, por ejemplo, redundancia local.
 
    ![Creación de una cuenta de Azure Storage](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
