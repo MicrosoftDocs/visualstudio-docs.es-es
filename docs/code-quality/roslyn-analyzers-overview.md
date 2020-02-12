@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587282"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144769"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Información general de los analizadores de código fuente
 
@@ -28,7 +28,7 @@ Los analizadores de código de .NET Compiler Platform ("Roslyn") revisan el esti
 - Puede instalar más analizadores como un paquete NuGet o una extensión de Visual Studio. Por ejemplo:
 
   - [Analizadores de FxCop](../code-quality/install-fxcop-analyzers.md), que son los analizadores de calidad de código que Microsoft recomienda
-  - Analizadores de terceros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), los [analizadores de XUnit](https://www.nuget.org/packages/xunit.analyzers/) o el [analizador Sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - Analizadores de terceros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), los [analizadores de XUnit](https://www.nuget.org/packages/xunit.analyzers/) o el [analizador Sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 Si un analizador detecta infracciones de reglas, se notifican en el editor de código (como un *subrayado ondulado* bajo el código infractor) y en la ventana Lista de errores.
 

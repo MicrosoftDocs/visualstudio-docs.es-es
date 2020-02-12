@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027377"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091813"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C++ con Visual Studio
 
@@ -74,9 +74,11 @@ En primer lugar, creará un proyecto de aplicación de consola de C++. En el tip
 
 3. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual C++** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de consola de Windows**. Después, asigne el nombre *get-started-debugging* al proyecto.
 
-     Si no ve la plantilla de proyecto **Aplicación de consola**, seleccione el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**.
+     Si no ve la plantilla de proyecto **Aplicación de consola**, seleccione el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-     Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
+4. Haga clic en **Aceptar**.
+
+   Visual Studio se abre en el nuevo proyecto.
 
 ::: moniker-end
 
