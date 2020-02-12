@@ -364,7 +364,7 @@
                   href: ide/reference/convert-foreach-linq.md
                 - name: Convertir una consulta LINQ en una instrucción foreach
                   href: ide/reference/convert-linq-to-foreach.md
-                - name: Conversión de una instrucción switch en una expresión switch
+                - name: Convertir una instrucción switch en una expresión switch
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
                 - name: Encapsular campo
                   href: ide/reference/encapsulate-field.md
@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Invertir instrucción if
                   href: ide/reference/invert-if-statement.md
+                - name: Opciones de refactorización de funciones locales estáticas
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Acercar declaración a referencia
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Trasladar tipo a archivo coincidente
