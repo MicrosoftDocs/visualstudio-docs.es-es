@@ -78,7 +78,7 @@ Para este escenario, use Chrome.
 2. Inicie el explorador con la depuración habilitada.
 
     ::: moniker range=">=vs-2019"
-    A partir de Visual Studio 2019, puede establecer la marca `--remote-debugging-port=9222` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, establece la marca en el campo **Argumentos**. Use otro nombre descriptivo para el explorador, como **Edge con depuración** o **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](/visualstudio/releases/2019/release-notes-v16.2).
+    A partir de Visual Studio 2019, puede establecer la marca `--remote-debugging-port=9222` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, establece la marca en el campo **Argumentos**. Use otro nombre descriptivo para el explorador, como **Microsoft Edge con depuración** o **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Establezca el explorador para que se abra con la depuración habilitada.](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
