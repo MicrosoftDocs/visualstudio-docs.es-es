@@ -2,17 +2,17 @@
 title: Usar los comprobadores de C++ Core Guidelines
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807072"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271770"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -55,11 +55,11 @@ int main()
 
 En este ejemplo se muestran algunas de las advertencias que C++ las reglas de comprobación básicas pueden encontrar:
 
-- C26494 es el tipo de regla. 5: Inicialice siempre un objeto.
+- C26494 es el tipo de regla. 5: Siempre debe inicializarse un objeto.
 
 - C26485 es el límite de reglas. 3: No hay decadencia de matriz a puntero.
 
-- C26481 es el límite de reglas. 1: No utilice aritmética de punteros. Utilice `span` en su lugar.
+- C26481 es el límite de reglas. 1: No usar aritmética de puntero. Utilice `span` en su lugar.
 
 Si los C++ conjuntos de herramientas de análisis de código de comprobación básica se instalan y se habilitan al compilar este código, se generan las dos primeras advertencias, pero se suprime la tercera. Este es el resultado de la compilación del código de ejemplo:
 
@@ -80,7 +80,7 @@ A medida que se agregan nuevas C++ reglas al comprobador de directrices básicas
 Los temas de referencia de la mayoría de las reglas se encuentran en [referencia de Visual C++ Studio Core check](code-analysis-for-cpp-corecheck.md).
 
 A partir de la versión 15,3 de Visual Studio 2017, los conjuntos de reglas admitidos son:
-- **Las reglas de puntero de propietario** aplican [comprobaciones de administración de recursos relacionadas C++ con el propietario \<T > de las directrices básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Las reglas de puntero de propietario** aplican [comprobaciones de administración de recursos relacionadas con C++ el propietario\<t > de las directrices básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Las reglas const** aplican [comprobaciones relacionadas con C++ const de las instrucciones básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -97,7 +97,7 @@ A partir de la versión 15,3 de Visual Studio 2017, los conjuntos de reglas admi
 - **Reglas de clase** Algunas reglas que se centran en el uso correcto de las funciones miembro especiales y las especificaciones virtuales. Este es un subconjunto de las comprobaciones recomendadas para [las clases y las jerarquías](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)de clases.
 - **Reglas de simultaneidad** Una sola regla, que detecta objetos de protección mal declarados. Para obtener más información, consulte las [instrucciones relacionadas con la simultaneidad](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
 - **Reglas de declaración** Un par de reglas de las [instrucciones](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) de las interfaces que se centran en cómo se declaran las variables globales.
-- **Reglas de función** Dos comprobaciones que ayudan con la adopción del especificador `noexcept`. Esta es una parte de las instrucciones para el [diseño y la implementación de funciones claras](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
+- **Reglas de función** Dos comprobaciones que ayudan en la adopción del especificador de `noexcept`. Esta es una parte de las instrucciones para el [diseño y la implementación de funciones claras](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
 - **Reglas de puntero compartidas** Como parte del cumplimiento de las directrices de [Administración de recursos](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) , se han agregado algunas reglas específicas de cómo se pasan los punteros compartidos a funciones o se usan de forma local.
 - **Reglas de estilo** Una comprobación simple pero importante, que prohíbe el uso de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Este es el primer paso para mejorar el estilo de codificación y el uso de expresiones e C++instrucciones en.
 
@@ -223,15 +223,15 @@ Si usa un sistema de compilación que no se basa en MSBuild, puede ejecutar el c
 Tiene que establecer algunas variables de entorno y usar las opciones de línea de comandos adecuadas para el compilador. Es mejor trabajar en el entorno de "símbolo del sistema de herramientas nativas" para que no tenga que buscar rutas de acceso específicas para el compilador, directorios de inclusión, etc.
 
 1. **Variables de entorno**
-   - `set esp.extensions=cppcorecheck.dll` indica al motor que cargue el C++ módulo Core Guidelines.
-   - `set esp.annotationbuildlevel=ignore` deshabilita la lógica que procesa las anotaciones SAL. Las anotaciones no afectan al análisis de código C++ en el comprobador de directrices básicas, pero su procesamiento lleva tiempo (a veces una hora larga). Esta configuración es opcional, pero se recomienda encarecidamente.
-   - `set caexcludepath=%include%` se recomienda encarecidamente deshabilitar las advertencias que se activan en los encabezados estándar. Aquí puede agregar más rutas de acceso, por ejemplo, la ruta de acceso a los encabezados comunes del proyecto.
+   - `set esp.extensions=cppcorecheck.dll` esto indica al motor que cargue el C++ módulo Core Guidelines.
+   - `set esp.annotationbuildlevel=ignore` Esto deshabilita la lógica que procesa las anotaciones de SAL. Las anotaciones no afectan al análisis de código C++ en el comprobador de directrices básicas, pero su procesamiento lleva tiempo (a veces una hora larga). Esta configuración es opcional, pero se recomienda encarecidamente.
+   - `set caexcludepath=%include%` es muy recomendable deshabilitar las advertencias que se activan en los encabezados estándar. Aquí puede agregar más rutas de acceso, por ejemplo, la ruta de acceso a los encabezados comunes del proyecto.
 2. **Opciones de la línea de comandos**
    - `/analyze` habilita el análisis de código (considere usar también/Analyze: Only y/Analyze: Quiet).
    - `/analyze:plugin EspXEngine.dll` esta opción carga el motor de extensiones de análisis de código en la velocidad rápida. Este motor, a su vez, carga C++ el comprobador de directrices básicas.
 
 ## <a name="use-the-guideline-support-library"></a>Usar la biblioteca de compatibilidad de directrices
-La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las directrices básicas. GSL incluye definiciones que permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un par `T*, length` de parámetros con el tipo `span<T>`. El GSL está disponible en [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es de código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto se puede encontrar en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las directrices básicas. GSL incluye definiciones que permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un par `T*, length` de parámetros con el tipo `span<T>`. GSL está disponible en [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es de código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto se puede encontrar en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Usar las C++ directrices de comprobación básica en proyectos de Visual Studio 2015
 
