@@ -73,7 +73,7 @@ Cuando haya entendido el problema, podrá resolverlo en el código. Después, vu
 
 ## <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
-En ocasiones es posible que decida no corregir una advertencia de análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en el Lista de errores.
+A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en el Lista de errores.
 
 Para suprimir una advertencia:
 
@@ -101,7 +101,7 @@ La característica de seguimiento de elemento de trabajo permite registrar error
 
 ## <a name="search-and-filter-code-analysis-results"></a>Buscar y filtrar resultados del análisis de código
 
-Puede buscar listas largas de mensajes de advertencia y filtrar las advertencias en soluciones de varios proyectos.
+Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
 - **Para filtrar las advertencias por título o ID**. de ADVERTENCIA: escriba la palabra clave en el cuadro de búsqueda.
 
