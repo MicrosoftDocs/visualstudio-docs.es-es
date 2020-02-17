@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Aspectos básicos de SAL  
  SAL define cuatro tipos básicos de parámetros, que se clasifican por patrón de uso.  
   
-|Category|Anotación de parámetro|Descripción|  
+|Categoría|Anotación de parámetro|Descripción|  
 |--------------|--------------------------|-----------------|  
 |**Entrada a la función llamada**|`_In_`|Los datos se pasan a la función llamada y se tratan como de solo lectura.|  
 |**Entrada a la función llamada y salida al llamador**|`_Inout_`|Los datos que se pueden usar se pasan a la función y es posible que se modifiquen.|  
