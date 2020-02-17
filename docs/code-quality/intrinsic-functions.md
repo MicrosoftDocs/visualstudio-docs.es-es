@@ -10,22 +10,22 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 18d21706037eb4b047e4058d4cd71d0324a2236a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745907"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271633"
 ---
 # <a name="intrinsic-functions"></a>Funciones intrínsecas
 Una expresión en SAL puede ser una expresión CC++ o siempre que se trata de una expresión que no tiene efectos secundarios; por ejemplo, + +,--, y las llamadas a función tienen efectos secundarios en este contexto.  Sin embargo, SAL proporciona algunos objetos similares a funciones y algunos símbolos reservados que se pueden usar en las expresiones SAL. Estas se conocen como *funciones intrínsecas*.
 
-## <a name="general-purpose"></a>De uso general
+## <a name="general-purpose"></a>Uso general
 Las siguientes anotaciones de la función intrínsecas proporcionan una utilidad general para SAL.
 
 |Anotación|Descripción|
@@ -34,7 +34,7 @@ Las siguientes anotaciones de la función intrínsecas proporcionan una utilidad
 |`_Inexpressible_(expr)`|Expresa una situación en la que el tamaño de un búfer es demasiado complejo para representarlo mediante una expresión de anotación; por ejemplo, cuando se calcula examinando un conjunto de datos de entrada y contando a continuación los miembros seleccionados.|
 |`_Nullterm_length_(param)`|`param` es el número de elementos en el búfer hasta, pero sin incluir un terminador null. Se puede aplicar a cualquier búfer de tipo no agregado, no void.|
 |`_Old_(expr)`|Cuando se evalúa en condición previa, `_Old_` devuelve el valor de entrada `expr`.  Cuando se evalúa en una condición posterior, devuelve el valor `expr` tal y como se habría evaluado en condición previa.|
-|`_Param_(n)`|@No__t_0th parámetro a una función, contando entre 1 y `n` y `n` es una constante entera literal. Si el parámetro se denomina, esta anotación es idéntica a tener acceso al parámetro por su nombre. **Nota:** `n` puede hacer referencia a los parámetros posicionales definidos por puntos suspensivos o que se pueden usar en prototipos de función donde no se usan nombres.|
+|`_Param_(n)`|El parámetro `n`TH para una función, contando entre 1 y `n`, y `n` es una constante entera literal. Si el parámetro se denomina, esta anotación es idéntica a tener acceso al parámetro por su nombre. **Nota:** `n` puede hacer referencia a los parámetros posicionales definidos por puntos suspensivos o que se pueden usar en prototipos de función donde no se usan nombres.|
 |`return`|La palabra claveC++ C/reserved `return` se puede usar en una expresión sal para indicar el valor devuelto de una función.  El valor solo está disponible en post State; se trata de un error de sintaxis para usarlo en el estado anterior.|
 
 ## <a name="string-specific"></a>Específico de cadena
@@ -46,7 +46,7 @@ Las siguientes anotaciones de función intrínseca permiten la manipulación de 
 |`strlen(param)`|`param` es el número de elementos de la cadena hasta, pero sin incluir un terminador nulo. Esta anotación se reserva para su uso en matrices de caracteres y se parece a la función en tiempo de ejecución de C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 |`wcslen(param)`|`param` es el número de elementos de la cadena hasta un terminador null (pero sin incluirlo). Esta anotación se reserva para su uso en matrices de caracteres anchos y se parece a la función de tiempo de ejecución de C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)

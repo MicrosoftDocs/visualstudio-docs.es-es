@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar información de código adicional mediante __analysis_assume | Microsoft Docs
+title: 'Cómo: especificar información de código adicional mediante __analysis_assume | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277977"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Cómo: Especificar información de código adicional mediante __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:  
+Puede proporcionar sugerencias a la herramienta de análisis de código para C/C++ Code que le ayudará en el proceso de análisis y reducirá las advertencias. Para proporcionar información adicional, utilice la siguiente función:  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` -cualquier expresión que se supone que se evalúe como true.  
+ `expr`: cualquier expresión que se supone que se evalúa como true.  
   
- La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.  
+ La herramienta de análisis de código supone que la condición representada por la expresión es true en el punto en el que aparece la función y sigue siendo true hasta que se modifica la expresión, por ejemplo, mediante asignación a una variable.  
   
 > [!NOTE]
-> `__analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `__analysis_assume` se define como una operación inefectiva.  
+> `__analysis_assume` no afecta a la optimización del código. Fuera de la herramienta de análisis de código, `__analysis_assume` se define como una operación no operativa.  
   
 ## <a name="example"></a>Ejemplo  
- El siguiente código utiliza `__analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):  
+ En el código siguiente se usa `__analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  
@@ -58,5 +58,5 @@ void test( )
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [__assume](https://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)

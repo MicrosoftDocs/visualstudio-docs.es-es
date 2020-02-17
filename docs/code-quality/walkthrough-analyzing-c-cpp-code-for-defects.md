@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401020"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271815"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 
@@ -28,7 +28,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 - Tratar ADVERTENCIA como un error.
 - Anote el código fuente para mejorar el análisis del defecto de código.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - Una copia del [ejemplo demo](../code-quality/demo-sample.md).
 - Conocimientos básicos de C/C++.
@@ -45,7 +45,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 3. En **Explorador de soluciones**, seleccione el proyecto CodeDefects.
 
-4. En el menú **Proyecto**, haga clic en **Propiedades**.
+4. En el menú **Proyecto** , haga clic en **Propiedades**.
 
      Se muestra el cuadro de diálogo **páginas de propiedades de CodeDefects** .
 
@@ -107,7 +107,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
 1. En Explorador de soluciones, seleccione el proyecto Annotations.
 
-2. En el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el menú **Proyecto** , haga clic en **Propiedades**.
 
      Se muestra el cuadro de diálogo **páginas de propiedades de anotaciones** .
 
@@ -169,7 +169,7 @@ En este tutorial se muestra cómo analizar CC++ /code para detectar posibles def
 
      El proyecto se compila ahora sin advertencias ni errores.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Tutorial: analizar código administrado para defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [análisis de código paraC++ C/](../code-quality/code-analysis-for-c-cpp-overview.md)

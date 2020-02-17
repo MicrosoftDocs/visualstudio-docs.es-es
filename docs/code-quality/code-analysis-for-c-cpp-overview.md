@@ -16,17 +16,17 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4991a72b2761e96e143bfa33e0b55f9a4e9467c6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806311"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271215"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
 
@@ -64,7 +64,7 @@ Puede que sea necesario exigir que todas las inserciones en el repositorio de c�
 
 Puede usar las características integradas del sistema de compilación para ejecutar la herramienta de análisis como parte del proceso de compilación de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Inicio rápido: Análisis de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Tutorial: analizar C/C++ code para detectar defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)

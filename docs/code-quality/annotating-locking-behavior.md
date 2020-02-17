@@ -27,17 +27,17 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ae15230557ee0c415082f981a7ad3588694eadea
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265134"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siga siempre una disciplina de bloqueo adecuada y use anotaciones SAL.
@@ -48,7 +48,7 @@ Desafortunadamente, las reglas de bloqueo aparentemente simples pueden ser sorpr
 
 Las anotaciones de SAL de simultaneidad están diseñadas para ayudarle a especificar efectos secundarios de bloqueo, responsabilidad de bloqueo, tutela de datos, jerarquía de pedidos de bloqueos y otro comportamiento de bloqueo esperado. Al hacer que las reglas implícitas sean explícitas, las anotaciones de simultaneidad de SAL proporcionan una manera coherente de documentar el modo en que el código utiliza las reglas de bloqueo. Las anotaciones de simultaneidad también mejoran la capacidad de las herramientas de análisis de código para buscar condiciones de carrera, interbloqueos, operaciones de sincronización no coincidentes y otros errores de simultaneidad sutiles.
 
-## <a name="general-guidelines"></a>Instrucciones generales
+## <a name="general-guidelines"></a>Directrices generales
 Mediante el uso de anotaciones, puede indicar los contratos que están implícitos en las definiciones de función entre implementaciones (destinatarios) y clientes (llamadores), y expresar invariantes y otras propiedades del programa que pueden mejorar aún más el análisis.
 
 SAL admite muchos tipos diferentes de primitivas de bloqueo, por ejemplo, secciones críticas, exclusiones mutuas, bloqueos de giro y otros objetos de recursos. Muchas anotaciones de simultaneidad toman una expresión de bloqueo como parámetro. Por Convención, la expresión de ruta de acceso del objeto de bloqueo subyacente denota un bloqueo.
@@ -64,7 +64,7 @@ Algunas reglas de propiedad de subprocesos que se deben tener en cuenta:
 ## <a name="locking-annotations"></a>Bloquear anotaciones
 En la tabla siguiente se enumeran las anotaciones de bloqueo.
 
-|Annotation|Descripción|
+|Anotación|Descripción|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos exclusivos del objeto de bloqueo denominado `expr`.|
 |`_Acquires_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos del objeto de bloqueo denominado `expr`.|
@@ -88,7 +88,7 @@ En la tabla siguiente se enumeran las anotaciones de bloqueo.
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrínsecos de SAL para objetos de bloqueo no expuestos
 Ciertos objetos de bloqueo no se exponen mediante la implementación de las funciones de bloqueo asociadas.  En la tabla siguiente se enumeran las variables intrínsecas SAL que habilitan las anotaciones en las funciones que operan en esos objetos de bloqueo no expuestos.
 
-|Annotation|Descripción|
+|Anotación|Descripción|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Describe el bloqueo de giro de cancelación.|
 |`_Global_critical_region_`|Describe la región crítica.|
@@ -98,7 +98,7 @@ Ciertos objetos de bloqueo no se exponen mediante la implementación de las func
 ## <a name="shared-data-access-annotations"></a>Anotaciones de acceso a datos compartidos
 En la tabla siguiente se enumeran las anotaciones para el acceso a datos compartidos.
 
-|Annotation|Descripción|
+|Anotación|Descripción|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Anota una variable e indica que cada vez que se tiene acceso a la variable, el recuento de bloqueos del objeto de bloqueo denominado por `expr` es al menos uno.|
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|
@@ -108,7 +108,7 @@ En la tabla siguiente se enumeran las anotaciones para el acceso a datos compart
 ## <a name="smart-lock-and-raii-annotations"></a>Anotaciones Smart Lock y RAII
 Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y administran su duración. En la tabla siguiente se enumeran las anotaciones que se pueden usar con los bloqueos inteligentes y los patrones de codificación de RAII con compatibilidad con la semántica de `move`.
 
-|Annotation|Descripción|
+|Anotación|Descripción|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indica al analizador que asuma que se ha adquirido un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
 |`_Analysis_assume_smart_lock_released_`|Indica al analizador que asuma que se ha lanzado un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
@@ -117,7 +117,7 @@ Normalmente, los bloqueos inteligentes encapsulan los bloqueos nativos y adminis
 |`_Swaps_locks_(left, right)`|Describe el comportamiento de `swap` estándar, que presupone que los objetos `left` y `right` intercambiar su estado. El estado intercambiado incluye el recuento de bloqueos y el destino de alias, si está presente. Los alias que apuntan a los objetos `left` y `right` permanecen inalterados.|
 |`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite la desasociación con su recurso contenido. Esto es similar a cómo funciona `std::unique_ptr` con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. `std::unique_lock` admite una lógica similar y se puede implementar en contenedores de bloqueo personalizados. El bloqueo separado conserva su estado (recuento de bloqueos y destino de alias, si existe), mientras que el contenedor se restablece para que contenga un recuento de bloqueos cero y ningún destino de alias, mientras se conservan sus propios alias. No hay ninguna operación en los recuentos de bloqueos (liberación y adquisición). Esta anotación se comporta exactamente como `_Moves_lock_`, salvo que el argumento desasociado debe ser `return` en lugar de `this`.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)

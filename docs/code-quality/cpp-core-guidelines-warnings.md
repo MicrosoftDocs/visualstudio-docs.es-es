@@ -3,17 +3,17 @@ title: C++Advertencias de Core Guidelines
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
-author: mblome
-ms.author: mblome
+author: corob
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4bcd32d633c2b88bba53aa79b670a59bda1ebef3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807120"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271397"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -64,7 +64,7 @@ En este ejemplo se muestran algunas de las advertencias que C++ las reglas de co
 
 - C26485 es un límite de reglas. 3: no hay decadencia de matriz a puntero.
 
-- C26481 es un límite de regla. 1: no se usa aritmética de punteros. Utilice `span` en su lugar.
+- C26481 es un límite de regla. 1: no se usa aritmética de punteros. En su lugar, use `span`.
 
 Si los C++ conjuntos de herramientas de análisis de código de comprobación básica se instalan y se habilitan al compilar este código, se generan las dos primeras advertencias, pero se suprime la tercera. Este es el resultado de la compilación del código de ejemplo:
 
@@ -84,7 +84,7 @@ Aquí C++ encontrará instrucciones básicas que le ayudarán a escribir código
 
 A medida que se agregan nuevas C++ reglas al comprobador de directrices básicas, puede aumentar el número de advertencias que se producen para el código existente previamente. Puede usar conjuntos de reglas predefinidos para filtrar los tipos de reglas que se van a habilitar. A partir de la versión 15,3 de Visual Studio 2017, los conjuntos de reglas admitidos son:
 
-- **Las reglas de puntero de propietario** aplican [comprobaciones de administración de recursos relacionadas C++ con el propietario \<T > de las directrices básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Las reglas de puntero de propietario** aplican [comprobaciones de administración de recursos relacionadas con C++ el propietario\<t > de las directrices básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Las reglas const** aplican [comprobaciones relacionadas con C++ const de las instrucciones básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
