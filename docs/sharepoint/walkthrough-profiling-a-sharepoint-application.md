@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189126"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277653"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
 
  En este tutorial se muestran las siguientes tareas:
 
-- [Addg una característica y un receptor de eventos de características](#add-a-feature-and-feature-event-receiver).
+- [Agregar una característica y un receptor de eventos de características](#add-a-feature-and-feature-event-receiver).
 
 - [Configurar e implementar la aplicación de SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,19 +37,19 @@ ms.locfileid: "73189126"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+## <a name="prerequisites"></a>Prerequisites
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Operador
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Crear un proyecto de SharePoint
  Primero, cree un proyecto de SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint
 
-1. En la barra de menús, elija **archivo**  > **nuevo**  > **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
+1. En la barra de menús, elija **archivo** > **nuevo** > **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
 2. Expanda el nodo **SharePoint** en **Visual C#**  o en **Visual Basic**y, a continuación, elija el nodo **2010** .
 
@@ -272,8 +272,7 @@ ms.locfileid: "73189126"
 
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
-## <a name="see-also"></a>Vea también
-- [Explorador de rendimiento](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Consulte también
 - [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
 - [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
 - [Buscar cuellos de botella en la aplicación con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
