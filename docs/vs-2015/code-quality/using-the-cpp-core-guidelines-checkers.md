@@ -6,15 +6,15 @@ ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ccc44b77c4524e7d707ce3fe407d204d729017ff
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 946b46bfb5101154832e10b61cd861b0c104dc14
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291235"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275301"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ int main()
   
 - C26485 es un límite de reglas. 3: no hay decadencia de matriz a puntero.  
   
-- C26481 es un límite de regla. 1: no se usa aritmética de punteros. Utilice `span` en su lugar.  
+- C26481 es un límite de regla. 1: no se usa aritmética de punteros. En su lugar, use `span`.  
   
   Si los C++ conjuntos de herramientas de análisis de código de comprobación básica se instalan y se habilitan al compilar este código, se generan las dos primeras advertencias, pero se suprime la tercera. Este es el resultado de la compilación del código de ejemplo:  
   

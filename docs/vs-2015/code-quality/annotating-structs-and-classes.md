@@ -21,44 +21,44 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157075"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271580"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Miembros de clase y struct se pueden anotar utilizando las anotaciones que actúan como invariables, que se supone que cumplirse en cualquier llamada de función o de entrada/salida de la función que implica la estructura envolvente como un parámetro o un valor de resultado.  
+Puede anotar los miembros de struct y de clase mediante anotaciones que actúan como invariantes; se supone que son verdaderos en cualquier llamada de función o entrada y salida de función que implique la estructura de inclusión como un parámetro o un valor de resultado.  
   
-## <a name="struct-and-class-annotations"></a>Anotaciones de clase y struct  
+## <a name="struct-and-class-annotations"></a>Anotaciones de estructuras y clases  
   
 - `_Field_range_(low, high)`  
   
-     El campo está en el intervalo (inclusivo) desde `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado al objeto anotado utilizando las condiciones pre o post adecuadas.  
+     El campo está en el intervalo (inclusivo) de `low` a `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado al objeto anotado utilizando las condiciones previas o posteriores adecuadas.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     Un campo que tiene un tamaño de lectura de elementos (o bytes) como especificado por `size`.  
+     Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como lo especifica `size`.  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     Un campo que tiene un tamaño de lectura de elementos (o bytes) como especificado por `size`y el `count` de los elementos (bytes) que son legibles.  
+     Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como se especifica en `size`, y el `count` de esos elementos (bytes) que se pueden leer.  
   
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     Un campo que tiene el tamaño de lectura y escritura en elementos (o bytes) como especificado por `size`.  
+     Campo que tiene un tamaño de lectura y escritura en los elementos (o bytes) especificados por `size`.  
   
 - `_Struct_size_bytes_(size)`  
   
-     Un campo que tiene el tamaño de lectura y escritura en elementos (o bytes) como especificado por `size`.  
+     Campo que tiene un tamaño de lectura y escritura en los elementos (o bytes) especificados por `size`.  
   
-     Se aplica a la declaración de clase o estructura.  Indica que un objeto válido de ese tipo puede ser mayor que el tipo declarado, con el número de bytes especificado por `size`.  Por ejemplo:  
+     Se aplica a la declaración de clase o struct.  Indica que un objeto válido de ese tipo puede ser mayor que el tipo declarado, con el número de bytes especificado por `size`.  Por ejemplo:  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ Miembros de clase y struct se pueden anotar utilizando las anotaciones que actú
   
     ```  
   
-     El tamaño del búfer en bytes de un parámetro `pM` de tipo `MyStruct *` , a continuación, se convierte en:  
+     El tamaño de búfer en bytes de un parámetro `pM` de tipo `MyStruct *` se toma entonces como:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>Vea también  
- [Utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Introducción a SAL](../code-quality/understanding-sal.md)   
- [Anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Anotar comportamiento de la función](../code-quality/annotating-function-behavior.md)   
- [Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)   
- [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+## <a name="see-also"></a>Consulte también  
+ [Uso de anotaciones sal para reducir defectos deC++ C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Descripción de SAL](../code-quality/understanding-sal.md)   
+ [Anotar parámetros de función y valores Devueltos](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Anotar el comportamiento](../code-quality/annotating-function-behavior.md) de la función   
+ [Anotar el comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)   
+ [Especificar Cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funciones intrínsecas](../code-quality/intrinsic-functions.md)   
  [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)

@@ -19,17 +19,17 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 0ebcd88df8508ae534ab51289016261193f54380
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879261"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271036"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
 
@@ -45,7 +45,7 @@ Puede anotar los miembros de struct y de clase mediante anotaciones que actúan 
 
      Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como lo especifica `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Campo que tiene un tamaño de escritura en elementos (o bytes) tal y como se especifica en `size`, y el `count` de esos elementos (bytes) que se pueden leer.
 
@@ -105,11 +105,11 @@ struct MyBuffer
 
 Notas para este ejemplo:
 
-- `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
+- `_Field_z_` equivale a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
 - `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusivos).
 - Los resultados finales de las anotaciones `_Struct_size_bytes_` y `_Field_size_` son equivalentes. En el caso de estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que la anotación `_Struct_size_bytes_` equivalente. `_Field_size_` no requiere conversión al tamaño de bytes. Si el tamaño de bytes es la única opción, por ejemplo, para un campo de puntero void, se puede usar `_Field_size_bytes_`. Si hay `_Struct_size_bytes_` y `_Field_size_` existen, ambos estarán disponibles para las herramientas. Depende de la herramienta qué hacer si las dos anotaciones están en desacuerdo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)

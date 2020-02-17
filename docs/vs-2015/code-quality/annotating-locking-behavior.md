@@ -30,15 +30,15 @@ f1_keywords:
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850171"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271594"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siga siempre u
   
  Las anotaciones de SAL de simultaneidad están diseñadas para ayudarle a especificar efectos secundarios de bloqueo, responsabilidad de bloqueo, tutela de datos, jerarquía de pedidos de bloqueos y otro comportamiento de bloqueo esperado. Al hacer que las reglas implícitas sean explícitas, las anotaciones de simultaneidad de SAL proporcionan una manera coherente de documentar el modo en que el código utiliza las reglas de bloqueo. Las anotaciones de simultaneidad también mejoran la capacidad de las herramientas de análisis de código para buscar condiciones de carrera, interbloqueos, operaciones de sincronización no coincidentes y otros errores de simultaneidad sutiles.  
   
-## <a name="general-guidelines"></a>Instrucciones generales  
+## <a name="general-guidelines"></a>Directrices generales  
  Mediante el uso de anotaciones, puede indicar los contratos que están implícitos en las definiciones de función entre implementaciones (destinatarios) y clientes (llamadores), y expresar invariantes y otras propiedades del programa que pueden mejorar aún más el análisis.  
   
  SAL admite muchos tipos diferentes de primitivas de bloqueo, por ejemplo, secciones críticas, exclusiones mutuas, bloqueos de giro y otros objetos de recursos. Muchas anotaciones de simultaneidad toman una expresión de bloqueo como parámetro. Por Convención, la expresión de ruta de acceso del objeto de bloqueo subyacente denota un bloqueo.  
@@ -67,7 +67,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siga siempre u
 ## <a name="locking-annotations"></a>Bloquear anotaciones  
  En la tabla siguiente se enumeran las anotaciones de bloqueo.  
   
-|Annotation|Descripción|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos exclusivos del objeto de bloqueo denominado `expr`.|  
 |`_Acquires_lock_(expr)`|Anota una función e indica que en post State la función incrementa en uno el recuento de bloqueos del objeto de bloqueo denominado `expr`.|  
@@ -91,7 +91,7 @@ Para evitar errores de simultaneidad en el programa multiproceso, siga siempre u
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrínsecos de SAL para objetos de bloqueo no expuestos  
  Ciertos objetos de bloqueo no se exponen mediante la implementación de las funciones de bloqueo asociadas.  En la tabla siguiente se enumeran las variables intrínsecas SAL que habilitan las anotaciones en las funciones que operan en esos objetos de bloqueo no expuestos.  
   
-|Annotation|Descripción|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Describe el bloqueo de giro de cancelación.|  
 |`_Global_critical_region_`|Describe la región crítica.|  
@@ -101,14 +101,14 @@ Para evitar errores de simultaneidad en el programa multiproceso, siga siempre u
 ## <a name="shared-data-access-annotations"></a>Anotaciones de acceso a datos compartidos  
  En la tabla siguiente se enumeran las anotaciones para el acceso a datos compartidos.  
   
-|Annotation|Descripción|  
+|Anotación|Descripción|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Anota una variable e indica que cada vez que se tiene acceso a la variable, el recuento de bloqueos del objeto de bloqueo denominado por `expr` es al menos uno.|  
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|  
 |`_Interlocked_operand_`|El parámetro de función anotado es el operando de destino de una de las diversas funciones entrelazadas.  Esos operandos deben tener propiedades adicionales específicas.|  
 |`_Write_guarded_by_(expr)`|Anota una variable e indica que, cada vez que se modifica la variable, el recuento de bloqueos del objeto de bloqueo denominado por `expr` es al menos uno.|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Uso de anotaciones sal para reducir defectos deC++ C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Descripción de SAL](../code-quality/understanding-sal.md)   
  [Anotar parámetros de función y valores Devueltos](../code-quality/annotating-function-parameters-and-return-values.md)   

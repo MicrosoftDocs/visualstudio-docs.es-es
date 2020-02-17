@@ -15,17 +15,17 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b77379d0bb9dbd80f01eadf5209353b3fd12eb1c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 48a8e8fb123f13753266939b6d0e8c5b19a582f8
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446311"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265176"
 ---
 # <a name="annotating-function-behavior"></a>Anotar el comportamiento de funciones
 Además de anotar [parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md), puede anotar las propiedades de toda la función.
@@ -51,9 +51,9 @@ Una función puede producir un error y, cuando lo hace, sus resultados pueden es
 |`_Always_(anno_list)`|Equivalente a `anno_list _On_failure_(anno_list)`; es decir, las anotaciones de `anno_list` aplican si la función se realiza correctamente o no.|
 |`_On_failure_(anno_list)`|Para usarse solo cuando `_Success_` se usa también para anotar la función, ya sea de forma explícita o implícita a través de `_Return_type_success_` en una definición de tipo. Cuando la anotación `_On_failure_` está presente en un parámetro de función o en un valor devuelto, cada anotación de `anno_list` (anno) se comporta como si estuviera codificada como `_When_(!expr, anno)`, donde `expr` es el parámetro de la anotación `_Success_` requerida. Esto significa que la aplicación implícita de `_Success_` a todas las condiciones posteriores no se aplica a `_On_failure_`.|
 |`_Return_type_success_(expr)`|Se puede aplicar a una definición de tipo. Indica que todas las funciones que devuelven ese tipo y no tienen `_Success_` explícitamente se anotan como si hubieran `_Success_(expr)`. no se puede usar `_Return_type_success_` en una función o en una definición de tipo de puntero de función.|
-|`_Success_(expr)`|`expr` es una expresión que produce un valor r. Cuando la anotación `_Success_` está presente en una declaración o definición de función, cada anotación (`anno`) en la función y en la condición posterior se comporta como si estuviera codificada como `_When_(expr, anno)`. La anotación `_Success_` solo se puede usar en una función, no en sus parámetros o tipo de valor devuelto. Puede haber como máximo una `_Success_` anotación en una función y no puede estar en ningún `_When_`, `_At_` o `_Group_`. Para obtener más información, vea [especificar Cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Success_(expr)`|`expr` es una expresión que produce un valor r. Cuando la anotación `_Success_` está presente en una declaración o definición de función, cada anotación (`anno`) en la función y en la condición posterior se comporta como si estuviera codificada como `_When_(expr, anno)`. La anotación `_Success_` solo se puede usar en una función, no en sus parámetros o tipo de valor devuelto. Puede haber como máximo una `_Success_` anotación en una función y no puede estar en ningún `_When_`, `_At_`o `_Group_`. Para obtener más información, vea [especificar Cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)

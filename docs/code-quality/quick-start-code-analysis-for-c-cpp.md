@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445637"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272321"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 
@@ -73,7 +73,7 @@ Cuando haya entendido el problema, podrá resolverlo en el código. Después, vu
 
 ## <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
-A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en el Lista de errores.
+En ocasiones es posible que decida no corregir una advertencia de análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales de modo que ya no aparezcan en el Lista de errores.
 
 Para suprimir una advertencia:
 
@@ -101,12 +101,12 @@ La característica de seguimiento de elemento de trabajo permite registrar error
 
 ## <a name="search-and-filter-code-analysis-results"></a>Buscar y filtrar resultados del análisis de código
 
-Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
+Puede buscar listas largas de mensajes de advertencia y filtrar las advertencias en soluciones de varios proyectos.
 
 - **Para filtrar las advertencias por título o ID**. de ADVERTENCIA: escriba la palabra clave en el cuadro de búsqueda.
 
 - **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignada una gravedad de **ADVERTENCIA**. Puede asignar la gravedad de uno o más mensajes como **error** en un conjunto de reglas personalizado. En la columna **gravedad** del **lista de errores**, elija la flecha desplegable y, a continuación, el icono de filtro. Elija **ADVERTENCIA** o **error** para mostrar solo los mensajes a los que se ha asignado la gravedad respectiva. Elija **seleccionar todo** para mostrar todos los mensajes.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Análisis de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

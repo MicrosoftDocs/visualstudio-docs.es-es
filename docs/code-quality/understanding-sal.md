@@ -3,17 +3,17 @@ title: Introducción a SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807090"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271829"
 ---
 # <a name="understanding-sal"></a>Introducción a SAL
 
@@ -82,7 +82,7 @@ Esta implementación contiene un error común sin conexión. Afortunadamente, el
 ### <a name="sal-basics"></a>Aspectos básicos de SAL
 SAL define cuatro tipos básicos de parámetros, que se clasifican por patrón de uso.
 
-|Categoría|Anotación de parámetro|Descripción|
+|Category|Anotación de parámetro|Descripción|
 |--------------|--------------------------|-----------------|
 |**Entrada a la función llamada**|`_In_`|Los datos se pasan a la función llamada y se tratan como de solo lectura.|
 |**Entrada a la función llamada y salida al llamador**|`_Inout_`|Los datos que se pueden usar se pasan a la función y es posible que se modifiquen.|
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-El análisis de Visual Studio Code valida que los llamadores pasan un puntero no nulo a un búfer inicializado para `pInt` y que, antes de la devolución, `pInt` sigue siendo no NULL y se inicializa el búfer.
+El análisis de Visual Studio Code valida que los llamadores pasan un puntero no nulo a un búfer inicializado para `pInt`y que, antes de la devolución, `pInt` sigue siendo no NULL y se inicializa el búfer.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Ejemplo: la anotación \_INOUT\_OPC\_
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-El análisis de Visual Studio Code valida que el autor de la llamada pasa un puntero no nulo para `*pInt` y que la función inicializa el búfer antes de que se devuelva.
+El análisis de Visual Studio Code valida que el autor de la llamada pasa un puntero no nulo para `*pInt`y que la función inicializa el búfer antes de que se devuelva.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Ejemplo: la anotación \_Outptr\_OPC\_
 
@@ -404,7 +404,7 @@ O bien, puede anotar todos los parámetros para que su intención resulte clara 
 
 [Blog del equipo de análisis de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md)

@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445614"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271784"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar C++ las reglas que se van a ejecutar
 
@@ -36,9 +36,9 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
    - Elija el conjunto de reglas que desea personalizar.
 
-     \- o -
+     \- O bien
 
-   - Elija **\<Browse... >** para especificar un conjunto de reglas existente que no está en la lista.
+   - Elija **\<examinar... >** para especificar un conjunto de reglas existente que no está en la lista.
 
 4. Elija **abrir** para mostrar las reglas en el editor de conjuntos de reglas.
 
@@ -66,7 +66,7 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 - Para contraer las reglas de todos los grupos, elija **contraer todo**.
 
-- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas no agrupadas, elija **\<None >** .
+- Para cambiar el campo por el que se agrupan las reglas, elija el campo en la lista **Agrupar por** . Para mostrar las reglas sin agrupar, elija **\<ninguno >** .
 
 - Para agregar o quitar campos en columnas de regla, elija **Opciones de columna**.
 

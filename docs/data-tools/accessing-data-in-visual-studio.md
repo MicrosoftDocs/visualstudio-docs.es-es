@@ -1,5 +1,5 @@
 ---
-title: Acceso a datos y herramientas
+title: Trabajar con datos en Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,39 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916720"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272089"
 ---
-# <a name="access-data-in-visual-studio"></a>Acceder a datos en Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Trabajar con datos en Visual Studio
 
 En Visual Studio, puede crear aplicaciones que se conecten a datos en prácticamente cualquier producto o servicio de base de datos, en cualquier formato y en cualquier lugar: en un equipo local, en una red de área local o en una nube pública, privada o híbrida.
 
 En el caso de las aplicaciones de JavaScript, Python, PHP C++, Ruby o, se conecta a los datos de la misma forma que hace nada más, mediante la obtención de bibliotecas y la escritura de código. En el caso de las aplicaciones .NET, Visual Studio proporciona herramientas que puede usar para explorar orígenes de datos, crear modelos de objetos para almacenar y manipular datos en memoria y enlazar datos a la interfaz de usuario. Microsoft Azure proporciona SDK para .NET, Java, node. js, PHP, Python, Ruby y Mobile Apps, y herramientas de Visual Studio para conectarse a Azure Storage.
 
+::: moniker range="vs-2017"
 En las listas siguientes se muestran solo algunos de los diversos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. Las ofertas [Microsoft Azure](https://azure.microsoft.com/) son servicios de datos que incluyen todo el aprovisionamiento y la administración del almacén de datos subyacente. La carga de trabajo de **desarrollo de Azure** en [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+En las listas siguientes se muestran solo algunos de los diversos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. Las ofertas [Microsoft Azure](https://azure.microsoft.com/) son servicios de datos que incluyen todo el aprovisionamiento y la administración del almacén de datos subyacente. La carga de trabajo de **desarrollo de Azure** en [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio.
+::: moniker-end
 
-![Carga de trabajo Desarrollo de Azure](media/azure-development-workload.png)
+![Carga de trabajo de desarrollo de Azure](media/azure-development-workload.png)
 
 La mayoría de los demás productos de base de datos SQL y NoSQL que se enumeran aquí se pueden hospedar en un equipo local, en una red local o en Microsoft Azure en una máquina virtual. Si hospeda la base de datos en una máquina virtual Microsoft Azure, es responsable de administrar la propia base de datos.
 
 **Microsoft Azure**
 
-- Base de datos SQL
+- SQL Database
 - Azure Cosmos DB
 - Almacenamiento (blobs, tablas, colas, archivos)
 - SQL Data Warehouse
 - SQL Server Stretch Database
 - StorSimple
-- Y mucho más...
+- Y mucho más.
 
 **SQL**
 
@@ -50,7 +55,7 @@ La mayoría de los demás productos de base de datos SQL y NoSQL que se enumeran
 - Oracle
 - PostgreSQL
 - SQLite
-- Y mucho más...
+- Y mucho más.
 
 **NoSQL**
 
@@ -61,7 +66,7 @@ La mayoría de los demás productos de base de datos SQL y NoSQL que se enumeran
 - OrientDB|
 - RavenDB
 - VelocityDB
-- Y mucho más...
+- Y mucho más.
 
 ::: moniker range="vs-2017"
 
@@ -122,7 +127,7 @@ Para obtener más información sobre cómo conectarse a bases de C++ datos desde
 
 [JavaScript en Visual Studio](/scripting/javascript/javascript-language-reference) es un lenguaje de primera clase para compilar aplicaciones multiplataforma, aplicaciones para UWP, servicios en la nube, sitios web y aplicaciones Web. Puede usar Bower, impesado, Gulp, NPM y NuGet desde Visual Studio para instalar sus bibliotecas de JavaScript y productos de base de datos favoritos. Para conectarse a Azure Storage y a los servicios, descargue los SDK desde el [sitio web de Azure](https://azure.microsoft.com/). Edge. js es una biblioteca que conecta JavaScript del lado servidor (node. js) con los orígenes de datos de ADO.NET.
 
-## <a name="python"></a>Plantillas de
+## <a name="python"></a>Python
 
 Instale la [compatibilidad con Python en Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) para crear aplicaciones de Python. La documentación de Azure incluye varios tutoriales sobre la conexión a datos, entre los que se incluyen los siguientes:
 

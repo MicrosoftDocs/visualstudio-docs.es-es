@@ -1,5 +1,5 @@
 ---
-title: Ejemplo de demostración | Documentos de Microsoft
+title: Ejemplo de demostración | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201429"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277886"
 ---
 # <a name="demo-sample"></a>Ejemplo de demostración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisis de código de C/c ++ en previsión de defectos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). El procedimiento crea:  
+En los procedimientos siguientes se muestra cómo crear el ejemplo para el [Tutorial: analizar CC++ /code para detectar defectos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). El procedimiento crea:  
   
-- Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución denominada CppDemo.  
+- Una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] denominada CppDemo.  
   
 - Un proyecto de biblioteca estática denominado CodeDefects.  
   
 - Un proyecto de biblioteca estática denominado Annotations.  
   
-  Los procedimientos también proporcionan el código para los archivos de encabezado y .cpp para las bibliotecas estáticas.  
+  Los procedimientos también proporcionan el código para los archivos de encabezado y. cpp de las bibliotecas estáticas.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Crear la solución CppDemo y el proyecto CodeDefects  
   
@@ -66,7 +66,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 3. En el cuadro **Nombre**, escriba **Bug.cpp** y haga clic en **Agregar**.  
   
-4. Copie el código siguiente y péguelo en el **Bug.cpp** de archivos en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie el código siguiente y péguelo en el archivo **bug. cpp** en el editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <windows.h>  
@@ -94,7 +94,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 7. En el cuadro **Nombre**, escriba **Bug.cpp** y haga clic en **Agregar**.  
   
-8. Copie el código siguiente y péguelo en el archivo Bug.h del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie el código siguiente y péguelo en el archivo bug. h en el editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <stdlib.h>  
@@ -180,7 +180,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 3. En el cuadro **Nombre**, escriba **annotations.h** y haga clic en **Agregar**.  
   
-4. Copie el código siguiente y péguelo en el **annotations.h** de archivos en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie el código siguiente y péguelo en el archivo **Annotations. h** en el editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -203,7 +203,7 @@ El procedimiento siguiente muestra cómo crear el ejemplo de [Tutorial: Análisi
   
 7. En el cuadro **Nombre**, escriba **annotations.cpp** y haga clic en **Agregar**.  
   
-8. Copie el código siguiente y péguelo en el **annotations.cpp** de archivos en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie el código siguiente y péguelo en el archivo **Annotations. cpp** en el editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
