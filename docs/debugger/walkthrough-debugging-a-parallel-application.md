@@ -1,7 +1,7 @@
 ---
 title: Depurar una aplicación paralela | Microsoft Docs
 description: Depurar mediante las ventanas tareas paralelas y pilas paralelas en Visual Studio
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728597"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416430"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: depurar una aplicación paralela en Visual StudioC#(, Visual Basic C++,)
 
@@ -64,25 +64,37 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
 1. Abra Visual Studio y cree un nuevo proyecto.
 
-    ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Console** (o **c++** ), elija **plantillas**y, a continuación:
+   ::: moniker range=">=vs-2019"
 
-    - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** para C# o Visual Basic. En el cuadro de diálogo que se abre, elija **Crear**.
-    - En C++, elija **crear nuevo proyecto de aplicación** de C++consola para. En el cuadro de diálogo que se abre, elija **Crear**.
+   Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana Inicio**.
 
-    A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **crear**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **nuevo proyecto** , elija lo siguiente:
+   En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-    - En el C# caso de una aplicación, en **C#visual**, elija **escritorio de Windows**y, a continuación, en el panel central, elija aplicación de **consola (.NET Framework)** .
-    - En el caso de una aplicación Visual Basic, en **Visual Basic**, elija **escritorio de Windows**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
-    - En el C++ caso de una aplicación, en **C++visual**, elija **escritorio de Windows**y, a continuación, elija aplicación de consola de **Windows**.
+   En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. A continuación, **C#** elija **C++** , o **Visual Basic** en la lista de idiomas y, a continuación, elija **Windows** en la lista de plataformas. 
 
-    A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **Aceptar**.
-    ::: moniker-end
+   Después de aplicar los filtros de idioma y plataforma, elija la **aplicación de consola (.net Core)** o C++, para, plantilla de **aplicación de consola** y, a continuación, elija **siguiente**.
 
-    Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   > [!NOTE]
+   > Si no ve la plantilla correcta, vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+
+   En la ventana **configurar el nuevo proyecto** , escriba un nombre o utilice el nombre predeterminado en el cuadro **nombre del proyecto** . Luego, elija **Crear**.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **nuevo proyecto** , elija lo siguiente:
+
+   - En el C# caso de una aplicación, en **C#visual**, elija **escritorio de Windows**y, a continuación, en el panel central, elija aplicación de **consola (.NET Framework)** .
+   - En el caso de una aplicación Visual Basic, en **Visual Basic**, elija **escritorio de Windows**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
+   - En el C++ caso de una aplicación, en **C++visual**, elija **escritorio de Windows**y, a continuación, elija aplicación de consola de **Windows**.
+
+   Si no ve la **aplicación de consola (.net Core)** o, para C++, la plantilla de proyecto de **aplicación de consola** , vaya a **herramientas** > **obtener herramientas y características...** , que abre el instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+
+   A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **Aceptar**.
+
+   Seleccione **Aceptar**.
+   ::: moniker-end
+
+   Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparece un archivo de código fuente.
 
 1. Abra el archivo de código .cpp, .cs o .vb del proyecto. Elimine su contenido para crear un archivo de código vacío.
 
@@ -92,14 +104,14 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. En el menú **Archivo**, haga clic en **Guardar todo**.
+1. En el menú **Archivo** , haga clic en **Guardar todo**.
 
 1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
     Observe que hay cuatro llamadas a `Debugger.Break` (`DebugBreak` en el ejemplo de C++). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizar la ventana Pilas paralelas: vista de subprocesos
- En el menú **Depurar**, haga clic en **Iniciar depuración**. Espere a que se alcance el primer punto de interrupción.
+ En el menú **Depurar** , haga clic en **Iniciar depuración**. Espere a que se alcance el primer punto de interrupción.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para ver la pila de llamadas de un subproceso
 
@@ -244,7 +256,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
      ![Dos tareas en espera en la ventana tareas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2. (Haga clic con el botón derecho en la fila de encabezado y elija **columnas**  > **asignación de subprocesos** para ver el valor de asignación de subprocesos para la tarea 2).
+     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2. (Haga clic con el botón derecho en la fila de encabezado y elija **columnas** > **asignación de subprocesos** para ver el valor de asignación de subprocesos para la tarea 2).
 
      ![Tarea en espera e información sobre herramientas en la ventana tareas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
