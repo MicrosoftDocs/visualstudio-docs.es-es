@@ -28,7 +28,7 @@ ms.locfileid: "77271205"
 # <a name="code-analysis-for-cc-warnings"></a>Advertencias de análisis de código de C/C++
 En esta sección se enumeran las advertencias de análisis de código C/C++ excepto las que generan los [ C++ comprobadores de directrices principales](code-analysis-for-cpp-corecheck.md). Para obtener información sobre el análisis de código, vea [/Analyze (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [Inicio rápido: análisisC++de código para C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Analizar la calidad de código de C/C++ mediante el análisis de código](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

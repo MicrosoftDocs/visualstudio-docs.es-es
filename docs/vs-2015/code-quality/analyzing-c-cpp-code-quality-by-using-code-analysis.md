@@ -29,7 +29,7 @@ ms.locfileid: "77271346"
 
 Puede mejorar el código de C/C++ mediante el análisis de código en Visual Studio para buscar y corregir defectos de código.  
   
-## <a name="in-this-section"></a>En esta sección  
+## <a name="in-this-section"></a>Esta sección  
   
 |||  
 |-|-|  

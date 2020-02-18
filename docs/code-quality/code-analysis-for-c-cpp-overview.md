@@ -64,7 +64,7 @@ Puede que sea necesario exigir que todas las inserciones en el repositorio de c�
 
 Puede usar las características integradas del sistema de compilación para ejecutar la herramienta de análisis como parte del proceso de compilación de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Inicio rápido: Análisis de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Tutorial: analizar C/C++ code para detectar defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)

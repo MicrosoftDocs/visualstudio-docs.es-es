@@ -37,12 +37,12 @@ ms.locfileid: "77277653"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Necesitará los componentes siguientes para completar este tutorial:
+## <a name="prerequisites"></a>Requisitos previos
+ Necesita los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Operador
 
 ## <a name="create-a-sharepoint-project"></a>Crear un proyecto de SharePoint
  Primero, cree un proyecto de SharePoint.
@@ -65,7 +65,7 @@ ms.locfileid: "77277653"
 
     De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información sobre las soluciones en espacio aislado frente a las soluciones de granja, consulte [consideraciones sobre soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Elija el botón **Finalizar** . El proyecto aparece en **Explorador de soluciones**.
+7. Elija el botón **Finalizar**. El proyecto aparece en **Explorador de soluciones**.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Agregar una característica y un receptor de eventos de características
  A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.
@@ -272,7 +272,7 @@ ms.locfileid: "77277653"
 
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
 - [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
 - [Buscar cuellos de botella en la aplicación con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

@@ -528,7 +528,7 @@ El valor devuelto de una función es similar a un parámetro `_Out_` pero está 
 
 [Blog del equipo de análisis de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)

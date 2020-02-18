@@ -83,7 +83,7 @@ int main()
   
 - C26485 es un límite de reglas. 3: no hay decadencia de matriz a puntero.  
   
-- C26481 es un límite de regla. 1: no se usa aritmética de punteros. En su lugar, use `span`.  
+- C26481 es un límite de regla. 1: no se usa aritmética de punteros. Utilice `span` en su lugar.  
   
   Si los C++ conjuntos de herramientas de análisis de código de comprobación básica se instalan y se habilitan al compilar este código, se generan las dos primeras advertencias, pero se suprime la tercera. Este es el resultado de la compilación del código de ejemplo:  
   

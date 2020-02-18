@@ -235,7 +235,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 En este ejemplo, `_Out_opt_` indica que el puntero puede ser NULL como parte de la condición previa. Sin embargo, las condiciones previas no se pueden aplicar al valor devuelto. En este caso, la anotación correcta es `_Ret_maybenull_`.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
 [Introducción a SAL](../code-quality/understanding-sal.md)  
