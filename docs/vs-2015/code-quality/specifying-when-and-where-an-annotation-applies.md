@@ -29,7 +29,7 @@ Cuando una anotación es condicional, puede requerir que otras anotaciones lo es
 ## <a name="structural-annotations"></a>Anotaciones estructurales  
  Para controlar cuándo y dónde se aplican las anotaciones, utilice las siguientes anotaciones estructurales.  
   
-|Anotación|Descripción|  
+|Annotation|Descripción|  
 |----------------|-----------------|  
 |`_At_(expr, anno-list)`|`expr` es una expresión que produce un valor l. Las anotaciones de `anno-list` se aplican al objeto denominado `expr`. Para cada anotación de `anno-list`, `expr` se interpreta en condición previa si la anotación se interpreta en condición previa y, en la condición posterior, si la anotación se interpreta en condición posterior.|  
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` es una expresión que produce un valor l. Las anotaciones de `anno-list` se aplican al objeto denominado `expr`. Para cada anotación de `anno-list`, `expr` se interpreta en condición previa si la anotación se interpreta en condición previa y en condición posterior si la anotación se interpreta en condición posterior.<br /><br /> `iter` es el nombre de una variable cuyo ámbito es la anotación (incluido `anno-list`). `iter` tiene un tipo implícito `long`. Las variables con el mismo nombre en cualquier ámbito de inclusión se ocultan de la evaluación.<br /><br /> `elem-count` es una expresión que se evalúa como un entero.|  
