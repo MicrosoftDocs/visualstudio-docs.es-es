@@ -3,15 +3,15 @@ title: Descarga de títulos de software en suscripciones de Visual Studio | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/18/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095404"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439171"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
@@ -51,3 +51,9 @@ Para obtener una clave de producto para la descarga, puede hacer clic en la llav
 Para obtener más información sobre cómo buscar, reclamar y exportar claves de producto, vea la documentación sobre claves de producto:
 - [Introducción a las claves de producto](product-keys.md)
 - [Búsqueda y reclamación de claves](find-keys.md)
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)

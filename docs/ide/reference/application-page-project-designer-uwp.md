@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114407"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173087"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propiedades de Aplicación (proyectos UWP)
 
@@ -38,7 +38,7 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 **Información de ensamblado**&mdash;Al hacer clic en este botón se muestra el [cuadro de diálogo Información de ensamblado](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifiesto del paquete**&mdash;Al elegir este botón se abre el diseñador de manifiestos. También es posible acceder al diseñador de manifiestos por medio del archivo _Package.appxmanifest_ en el **Explorador de soluciones**. Para obtener más información, consulte [Configurar un paquete con el diseñador de manifiestos](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)
+**Manifiesto del paquete**&mdash;Al elegir este botón se abre el diseñador de manifiestos. También es posible acceder al diseñador de manifiestos por medio del archivo _Package.appxmanifest_ en el **Explorador de soluciones**. Para obtener más información, consulte [Configurar un paquete con el diseñador de manifiestos](/windows/msix/package/packaging-uwp-apps#configure-your-project)
 
 ## <a name="targeting-section"></a>Sección de selección de destino
 
