@@ -5,8 +5,8 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461479"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278813"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solución de problemas y creación de registros para MSBuild
 
@@ -69,7 +69,7 @@ El valor de "MyMetadata" para el elemento "MyFile.txt" se evaluará en "B" duran
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>La compilación incremental está compilando más de lo que debería
 
-Si MSBuild está volviendo a compilar innecesariamente un proyecto o un elemento de proyecto, cree un registro de compilación detallado o binario. Puede buscar en el registro el archivo que se creó o compiló innecesariamente. El resultado es parecido a este:
+Si MSBuild está volviendo a compilar innecesariamente un proyecto o un elemento de proyecto, cree un registro de compilación detallado o binario. Puede buscar en el registro el archivo que se creó o compiló innecesariamente. La salida tendrá un aspecto similar a este:
 
 ```output
   Task "CL"

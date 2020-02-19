@@ -1,22 +1,22 @@
 ---
-title: 'Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++'
+title: Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+author: corob-msft
+ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661909"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275430"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimientos para: Escribir pruebas unitarias para archivos DLL de C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 
-En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Los pasos básicos son los siguientes:
+En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:
 
 1. [Crear un proyecto de prueba nativo](#create_test_project). El proyecto de prueba está en la misma solución que el proyecto de DLL.
 
@@ -36,7 +36,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 ## <a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
      **Visual Studio 2017 y versiones anteriores**: Expanda **Instalado** > **Plantillas** > **Visual C++**  > **Prueba**.
      **Visual Studio 2019**: Establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda.
@@ -49,7 +49,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      ![Proyecto de prueba con TEST&#95;CLASS y TEST&#95;METHOD](../test/media/utecpp2.png)
 
-     Tenga en lo siguiente:
+     Tenga en cuenta que:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 

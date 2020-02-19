@@ -19,15 +19,15 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 caps.latest.revision: 27
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740234"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275361"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
