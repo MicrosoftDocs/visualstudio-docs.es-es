@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: Depuración de una aplicación de C++
       href: quickstart-debug-with-cplusplus.md
-    - name: Depurar una aplicación ASP.NET
+    - name: Depuración de una aplicación de ASP.NET
       href: quickstart-debug-aspnet.md
 - name: Tutoriales
   items:

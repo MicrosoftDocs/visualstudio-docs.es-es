@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: Análisis del uso de CPU (nativo)
       href: quickstart-cpu-usage-native.md
-    - name: Análisis del uso de CPU (ASP.NET)
+    - name: Análisis del uso de CPU (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: Tutoriales
   items:
