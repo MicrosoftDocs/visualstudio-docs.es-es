@@ -105,11 +105,11 @@ struct MyBuffer
 
 Notas para este ejemplo:
 
-- `_Field_z_` equivale a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
+- `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el campo nombre especifica que el campo nombre es una cadena terminada en NULL.
 - `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusivos).
 - Los resultados finales de las anotaciones `_Struct_size_bytes_` y `_Field_size_` son equivalentes. En el caso de estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que la anotación `_Struct_size_bytes_` equivalente. `_Field_size_` no requiere conversión al tamaño de bytes. Si el tamaño de bytes es la única opción, por ejemplo, para un campo de puntero void, se puede usar `_Field_size_bytes_`. Si hay `_Struct_size_bytes_` y `_Field_size_` existen, ambos estarán disponibles para las herramientas. Depende de la herramienta qué hacer si las dos anotaciones están en desacuerdo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Introducción a SAL](../code-quality/understanding-sal.md)
