@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657440"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476919"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) hasta el diseñador de Windows Forms, se produce una consideración especial: los nombres de columna de las etiquetas de título se vuelven a formatear en una cadena más legible cuando se encuentran concatenadas dos o más palabras. forma. Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** clave del registro de los diseñadores de datos.
+Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) hasta el diseñador de Windows Forms, se produce una consideración especial: los nombres de columna de las etiquetas de título se vuelven a formatear en una cadena más legible cuando dos o más palabras se encuentran concatenadas. Puede personalizar la forma en que se crean estas etiquetas estableciendo los valores de **SmartCaptionExpression**, **SmartCaptionReplacement**y **SmartCaptionSuffix** en la clave del registro de **HKEY_CURRENT_USER \software\microsoft\visualstudio\10.0\data Designers** .
 
 > [!NOTE]
 > Esta clave del registro no existe hasta que se crea.
@@ -49,14 +49,12 @@ Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.micros
 
 |Elemento del registro|Valor predeterminado|Explicación|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Coincide con un carácter en minúscula seguido de un carácter en mayúsculas o un carácter de subrayado.|
 |**SmartCaptionReplacement**|$1 $2|$1 representa los caracteres coincidentes en los primeros paréntesis de la expresión y el $2 representa los caracteres coincidentes en el segundo paréntesis. El reemplazo es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
 |**SmartCaptionSuffix**|:|Representa un carácter anexado a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo lo hace `Company Name:`|
 
 > [!CAUTION]
 > Debe tener mucho cuidado al realizar cualquier acción en el editor del registro. Realice una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el editor del registro, puede ocasionar problemas graves que pueden requerir la reinstalación del sistema operativo. Microsoft no garantiza que se puedan resolver los problemas que se produzcan con el editor del registro de forma incorrecta. Utilice el editor del registro bajo su responsabilidad.
->
-> El siguiente artículo de KnowledgeBase contiene instrucciones para realizar copias de seguridad, editar y restaurar el registro: [Descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-US; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar el comportamiento de los subtítulos inteligentes de la ventana orígenes de datos
 
@@ -126,5 +124,5 @@ Al arrastrar elementos desde la [ventana orígenes de datos](https://msdn.micros
 
      La próxima vez que arrastre elementos desde la ventana **orígenes de datos** , las etiquetas de título se crearán con títulos sin modificar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
