@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670613"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477085"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Cómo: Solucionar problemas de plantillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
 5. Compruebe que el XML del archivo .vstemplate cumple el esquema de plantilla de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información sobre el esquema .vstemplate, vea [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) (Referencia de esquema de plantillas de Visual Studio).
 
     > [!NOTE]
-    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo .vstemplate, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Para obtener compatibilidad con IntelliSense mientras se crea el archivo .vstemplate, agregue un atributo `xmlns` al elemento `VSTemplate` y asígnele un valor de `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 6. Guarde y cierre el archivo .vstemplate.
 
-7. Seleccione los archivos incluidos en la plantilla, haga clic con el botón derecho, seleccione **Enviar a** y haga clic en **Carpeta comprimida (en zip)** . Los archivos seleccionados se comprimen en un archivo .zip.
+7. Seleccione los archivos incluidos en la plantilla, haga clic con el botón derecho, seleccione **Enviar a** y haga clic en **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo .zip.
 
 8. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.
 
@@ -62,5 +62,5 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
 
 4. Haga doble clic en un evento de plantilla para ver el error.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md) [crear plantillas de proyecto y de elemento referencia de esquema de plantillas de](../ide/creating-project-and-item-templates.md) [Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

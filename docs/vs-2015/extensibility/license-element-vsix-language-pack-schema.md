@@ -1,5 +1,5 @@
 ---
-title: Elemento (esquema del paquete de idioma VSIX) de la licencia | Documentos de Microsoft
+title: License (elemento, esquema del paquete de idioma VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680591"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477076"
 ---
-# <a name="license-element-vsix-language-pack-schema"></a>Elemento License (esquema del paquete de idioma VSIX)
+# <a name="license-element-vsix-language-pack-schema"></a>License (elemento, esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opcional. La ruta de acceso de una versión localizada del archivo de licencia para la extensión.  
+Opcional. La ruta de acceso de una versión localizada del archivo de licencia de la extensión.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,36 +33,36 @@ Opcional. La ruta de acceso de una versión localizada del archivo de licencia p
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|Ninguna||  
+|None||  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Ninguna||  
+|None||  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatorio. Proporciona el elemento raíz para un paquete de idioma VSIX.|  
+|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Necesario. Proporciona el elemento raíz de un paquete de idioma de VSIX.|  
   
 ## <a name="text-value"></a>Valor de texto  
- La ruta de acceso relativa del archivo de licencia localizados que se mostrará.  
+ Ruta de acceso relativa del archivo de licencia localizado que se va a mostrar.  
   
-## <a name="remarks"></a>Comentarios  
- Si el `License` elemento está definido, a continuación, se muestra el texto del archivo de licencia designada durante la instalación y el usuario debe aceptar la licencia para continuar.  
+## <a name="remarks"></a>Observaciones  
+ Si se define el elemento `License`, el texto del archivo de licencia designado se muestra durante la instalación y el usuario debe aceptar la licencia para continuar.  
   
 ## <a name="element-information"></a>Información de elemento  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Espacio de nombres    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Nombre de esquema   |                 Esquema del paquete de idioma VSIX                 |
+|    Espacio de nombres    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nombre del esquema   |                 Esquema del paquete de idioma VSIX                 |
 | Archivo de validación |                VSIXLanguagePackSchema.xsd                 |
-|  Puede estar vacío   |                      No es aplicable                       |
+|  Puede estar vacío   |                      No aplicable                       |
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquema del paquete de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)   
- [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+## <a name="see-also"></a>Consulte también  
+ [Referencia del esquema del paquete de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Referencia del esquema de extensión VSIX 1,0](/previous-versions/dd393700(v=vs.110))

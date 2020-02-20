@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Habilitar la depuración de aplicaciones de ASP.NET | Microsoft Docs
+title: 'Cómo: habilitar la depuración para aplicaciones ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703661"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477007"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Procedimiento Habilitar la depuración de aplicaciones de ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Cómo: Habilitar la depuración de aplicaciones de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para habilitar la depuración, debe habilitarla en la página **Propiedades del proyecto** y en el archivo de configuración web.config de la aplicación.  
   
 > [!NOTE]  
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que ve podrían diferir de aquellos que se describen en la Ayuda en función de la edición o configuración activa. Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Para habilitar la depuración ASP.NET en las propiedades del proyecto (Visual Basic/C #)  
   
@@ -48,7 +48,7 @@ Para habilitar la depuración, debe habilitarla en la página **Propiedades del 
     > [!NOTE]  
     > Sin embargo, no se puede tener acceso al archivo en modo remoto utilizando un explorador web. Por motivos de seguridad, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS para impedir el acceso directo del explorador a los archivos Web.config. Si intenta obtener acceso a un archivo de configuración utilizando un explorador, obtendrá el error de acceso 403 de HTTP (prohibido).  
   
-2. Web.config es un archivo XML, por lo que contiene secciones anidadas marcadas por etiquetas. Busque el elemento `configuration/system.web/compilation` . Si el elemento compilation no existe, créelo.  
+2. Web.config es un archivo XML, por lo que contiene secciones anidadas marcadas por etiquetas. Busque el elemento `configuration/system.web/compilation`. Si el elemento compilation no existe, créelo.  
   
 3. Si el elemento `compilation` no tiene un atributo `debug` , agregue el atributo al elemento.  
   
@@ -83,9 +83,9 @@ El archivo web.config debe ser similar al del ejemplo siguiente. Tenga en cuenta
   
 Un sitio web puede contener varios directorios y subdirectorios virtuales, y pueden haber archivos Web.config en cada uno de ellos. Las aplicaciones [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] heredan los valores de los archivos Web.config ubicados en niveles superiores de la ruta de acceso de la dirección URL. Los archivos de configuración jerárquicos permiten cambiar la configuración de varias aplicaciones [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] simultáneamente, por ejemplo de todas las aplicaciones que se encuentren por debajo en la jerarquía. Sin embargo, si se establece el atributo `debug` en un archivo inferior en la jerarquía, reemplazará el valor más alto.  
   
-De este modo, puede especificar `debug="true"` en www.microsoft.com/aaa/Web.config y todas las aplicaciones de la carpeta aaa y todas las subcarpetas de aaa heredarán esa configuración. Por tanto, si la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] está en www.microsoft.com/aaa/bbb, heredará dicha configuración, al igual que cualquier aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd, etc. La única excepción es si una de esas aplicaciones reemplaza la configuración por medio de su propio archivo Web.config inferior.  
+Por ejemplo, puede especificar `debug="true"` en `www.microsoft.com/aaa/Web.config`y cualquier aplicación de la carpeta AAA o de cualquier subcarpeta de AAA heredará esa configuración. Por tanto, si la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] está en `www.microsoft.com/aaa/bbb`, heredará esa configuración, al igual que cualquier [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicaciones de `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`, etc. La única excepción es si una de esas aplicaciones reemplaza la configuración por medio de su propio archivo Web.config inferior.  
   
 Si se habilita el modo de depuración, afectará enormemente al rendimiento de la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . No olvide deshabilitar el modo de depuración antes de implementar la aplicación o realizar controles de rendimiento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
 [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
