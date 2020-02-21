@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0fe3000804971c8bd8cbf896a592bd11b875bfa8
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352473"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506382"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Establece la ruta de acceso o rutas de acceso que se buscan los símbolos de depuración.
+Establece la ruta de acceso o rutas de acceso en las que se buscan símbolos de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Parámetros
 
 `szSymbolSearchPath`\
-[in] Cadena que contiene la ruta de acceso de búsqueda de símbolos o rutas de acceso. Para obtener más información, vea "Comentarios". No puede ser NULL.
+de Cadena que contiene las rutas de acceso de búsqueda de símbolos. Consulte "Comentarios" para obtener más información. No puede ser null.
 
 `szSymbolCachePath`\
-[in] Cadena que contiene la ruta de acceso local donde se pueden almacenar en caché los símbolos. No puede ser NULL.
+de Cadena que contiene la ruta de acceso local donde se pueden almacenar en caché los símbolos. No puede ser null.
 
 `Flags`\
-[in] No se usa; siempre se establece en 0.
+de No se utiliza; siempre se establece en 0.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- La cadena `szSymbolSearchPath` es una lista de una o varias rutas separadas por punto y coma, buscar símbolos. Estas rutas de acceso pueden ser una ruta de acceso local, una ruta de acceso de estilo UNC o una dirección URL. Estas rutas de acceso también pueden ser una combinación de distintos tipos. Si la ruta de acceso UNC (por ejemplo, \\\Symserver\Symbols), a continuación, el motor de depuración debe determinar si la ruta de acceso es un servidor de símbolos y debe ser capaz de cargar símbolos desde ese servidor, almacenarlos en memoria caché en la ruta de acceso especificada por `szSymbolCachePath`.
+## <a name="remarks"></a>Observaciones
+ La cadena `szSymbolSearchPath` es una lista de una o más rutas de acceso, separadas por punto y coma, para buscar símbolos. Estas rutas de acceso pueden ser una ruta de acceso local, una ruta de acceso de estilo UNC o una dirección URL. Estas rutas de acceso también pueden ser una combinación de tipos diferentes. Si la ruta de acceso es UNC (por ejemplo, \\\Symserver\Symbols), el motor de depuración debe determinar si la ruta de acceso es a un servidor de símbolos y debe poder cargar los símbolos desde ese servidor, Caching en la ruta de acceso especificada por `szSymbolCachePath`.
 
- La ruta de acceso de símbolos también puede contener una o varias ubicaciones de memoria caché. Las memorias caché se enumeran en orden de prioridad, con la caché de prioridad más alta en primer lugar y separadas por * símbolos. Por ejemplo:
+ La ruta de acceso de símbolos también puede contener una o varias ubicaciones de caché. Las cachés se muestran en orden de prioridad, con la caché de prioridad más alta primero y separadas por * símbolos. Por ejemplo:
 
 ```
-\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com
+\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- El [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) método realiza la carga real de los símbolos.
+ El método [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) realiza la carga real de los símbolos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

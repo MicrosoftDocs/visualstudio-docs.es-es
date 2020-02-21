@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587542"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506505"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -29,7 +29,7 @@ Las directivas de protección de análisis de código se establecen en la config
 
 - En el caso de código administrado, establezca la Directiva de inserción en el repositorio especificando un *conjunto de reglas* que contenga un subconjunto de las reglas de análisis de código.
 
-- En el casoC++ de C/Code, en la versión 15,6 y anteriores de Visual Studio 2017, la Directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede Agregar directivas de preprocesador para deshabilitar las reglas específicas para los proyectos de código individuales en el proyecto DevOps de Azure. En 15,7 y versiones posteriores, puede usar **/Analyze: ruleset** para especificar las reglas que se van a ejecutar. Para obtener más información, vea [usar conjuntos de reglas para C++ especificar las reglas que se van a ejecutar](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- En el casoC++ de C/Code, en la versión 15,6 y anteriores de Visual Studio 2017, la Directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede Agregar directivas de preprocesador para deshabilitar las reglas específicas para los proyectos de código individuales en el proyecto DevOps de Azure. En 15,7 y versiones posteriores, puede usar **/Analyze: ruleset** para especificar las reglas que se van a ejecutar. Para obtener más información, vea [usar conjuntos de reglas para C++ especificar las reglas que se van a ejecutar](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 Después de especificar una directiva de inserción en el repositorio para el código administrado, los miembros del equipo pueden sincronizar la configuración de análisis de código de los proyectos de código con la configuración de la Directiva del proyecto DevOps de Azure.
 
@@ -39,7 +39,7 @@ Después de especificar una directiva de inserción en el repositorio para el c�
 
 1. En el cuadro de diálogo **control de código fuente** , seleccione la pestaña **Directiva de inserción en el repositorio** .
 
-1. Siga uno de los procedimientos que se describen a continuación:
+1. Realice una de las siguientes acciones:
 
     - Haga clic en **Agregar** para crear una nueva Directiva de inserción en el repositorio.
 
@@ -67,6 +67,6 @@ En la lista **ejecutar este conjunto de reglas** , use uno de los métodos sigui
 
 Para obtener más información sobre cómo crear e implementar un conjunto de reglas de directivas de protección personalizadas, vea [implementar directivas de protección personalizadas para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Implementar directivas de protección de análisis de código personalizadas para el código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

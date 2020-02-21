@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144783"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506511"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generar código fuente a partir de ensamblados .NET durante la depuración
 
@@ -82,13 +82,13 @@ Al depurar código que se descompiló de un ensamblado que se compiló mediante 
 - Es posible que las variables locales no tengan nombres precisos.
 - Es posible que algunas variables no estén disponibles para su evaluación.
 
-Puede encontrar más detalles en el problema de GitHub: [integración de IChsarpCompiler. descompilador en el depurador de vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+Puede encontrar más detalles en el problema de GitHub: [integración de ICSharpCode. descompilador en el depurador de vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Confiabilidad de descompilación
 
 Un porcentaje relativamente pequeño de intentos de descompilación puede producir un error. Esto se debe a un error de referencia nula de punto de secuencia en ILSpy.  Hemos mitigado el error detectando estos problemas y produciendo correctamente el intento de descompilación.
 
-Puede encontrar más detalles en el problema de GitHub: [integración de IChsarpCompiler. descompilador en el depurador de vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+Puede encontrar más detalles en el problema de GitHub: [integración de ICSharpCode. descompilador en el depurador de vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="limitations-with-async-code"></a>Limitaciones del código asincrónico
 
