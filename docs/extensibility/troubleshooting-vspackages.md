@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718710"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506396"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 A continuación se indican los problemas comunes que podría tener con el VSPackage y sugerencias para resolverlos.
@@ -66,7 +66,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
    1. Busque el CLSID del VSPackage en la sección paquetes del registro:
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<versión >* \Packages
 
    2. Compruebe que la ruta de acceso proporcionada por la subclave SatelliteDll es correcta.
 
@@ -76,7 +76,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
      Los buenos puntos de partida para la depuración son el constructor y el método de inicialización. También puede establecer puntos de interrupción en el área que desea evaluar, como un comando de menú. Para habilitar los puntos de interrupción, debe ejecutar en el depurador.
 
-    1. En el menú **Proyecto**, haga clic en **Propiedades**.
+    1. En el menú **Proyecto** , haga clic en **Propiedades**.
 
     2. En el cuadro de diálogo **páginas de propiedades** , seleccione la pestaña **depurar** .
 
@@ -99,7 +99,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
     2. Agregue esta **Ubicación de archivo de símbolos (. pdb)** :
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Para mejorar el rendimiento, especifique una carpeta de caché de símbolos, por ejemplo:
 
@@ -111,7 +111,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
 1. En el caso de código administrado, asegúrese de que las rutas de acceso de referencia son correctas.
 
-   1. En el menú **Proyecto**, haga clic en **Propiedades**.
+   1. En el menú **Proyecto** , haga clic en **Propiedades**.
 
    2. Seleccione la pestaña **referencias** en el cuadro de diálogo **páginas de propiedades** y asegúrese de que todas las rutas de acceso son correctas. Como alternativa, puede usar la **Examinador de objetos** para buscar los objetos a los que se hace referencia.
 
@@ -119,9 +119,9 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
 2. En el caso de código no administrado, busque el CLSID del VSPackage en el nodo del registro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<versión >* \CLSID
 
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)
