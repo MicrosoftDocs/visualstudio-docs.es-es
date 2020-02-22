@@ -466,9 +466,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentar un componente de .NET Framework independiente y recopilar datos de memoria con el generador de perfiles mediante la línea de comandos
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'Tutorial: Generación de perfiles mediante muestreo desde la línea de comandos'
-                  href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Aplicaciones web ASP.NET
+            - name: aplicaciones web ASP.NET
               items:
                 - name: Generación de perfiles de línea de comandos de aplicaciones web ASP.NET
                   href: command-line-profiling-of-aspnet-web-applications.md
