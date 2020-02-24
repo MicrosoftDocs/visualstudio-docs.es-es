@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Agregar parámetro al método
                   href: ide/reference/add-parameter.md
+                - name: Generar campo privado desde constructor
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Generar invalidación
                   href: ide/reference/generate-override.md
                 - name: Generar invalidaciones de los métodos Equals y GetHashCode
@@ -374,7 +376,9 @@
                   href: ide/reference/extract-interface.md
                 - name: Extraer método
                   href: ide/reference/extract-method.md
-                - name: Generación del parámetro
+                - name: Extraer función local
+                  href: ide/reference/extract-local-function.md
+                - name: Generación de parámetros
                   href: ide/reference/generate-parameter.md
                 - name: Variable temporal en línea
                   href: ide/reference/inline-temporary-variable.md
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Opciones de refactorización de funciones locales estáticas
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Convertir miembro en estático
+                  href: ide/reference/make-member-static.md
                 - name: Acercar declaración a referencia
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Trasladar tipo a archivo coincidente
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Parámetros, variables y asignaciones de valor sin usar'
                   href: ide/reference/unused-values-parameters.md
-                - name: Encapsulado y alineación de cadenas de llamada
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Encapsulado, sangría y alineación de parámetros'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Ajustar, aplicar sangría y alinear refactorizaciones'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'Tutorial: Generación de código a partir del uso'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
