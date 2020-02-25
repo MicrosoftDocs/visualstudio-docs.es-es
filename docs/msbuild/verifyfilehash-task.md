@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481976"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439131"
 ---
 # <a name="verifyfilehash-task"></a>Tarea VerifyFileHash
 
-Comprueba que un archivo coincide con el hash de archivo esperado.
+Comprueba que un archivo coincide con el hash de archivo esperado. Si el hash no coincide, se producirá un error en la tarea.
 
 Esta tarea se agregó en la versión 15.8, pero requiere una [solución alternativa](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) para usarla en versiones de MSBuild anteriores a la 16.0.
 
@@ -32,7 +32,7 @@ Esta tarea se agregó en la versión 15.8, pero requiere una [solución alternat
 
  En la siguiente tabla se describen los parámetros de la tarea `VerifyFileHash` .
 
-|Parámetro|DESCRIPCIÓN|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`File`|Parámetro `String` requerido.<br /><br />Archivo al que se va a aplicar el algoritmo hash y se va a validar.|
 |`Hash`|Parámetro `String` requerido.<br /><br />Hash esperado del archivo.|
@@ -59,6 +59,30 @@ En el ejemplo siguiente se usa la tarea `VerifyFileHash` para comprobar su propi
                     Hash="$(ExpectedHash)" />
   </Target>
 </Project>
+```
+
+En MSBuild 16.5 y versiones posteriores, si no quiere que la compilación genere errores cuando no coincida el hash (por ejemplo, al utilizar la comparación de hash como condición para el flujo de control), puede reducir la importancia del mensaje para que deje de mostrarse como advertencia con el código siguiente:
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
 ```
 
 ## <a name="see-also"></a>Vea también

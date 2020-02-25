@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476908"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557991"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Cómo: Especificar la ubicación desde la que instalarán los usuarios finales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Al publicar una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 2. Haga clic en la pestaña **Publicar**.  
   
-3. En el campo dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato https://www.microsoft.com/ApplicationName, o una ruta de acceso UNC con el formato \\\Server\ApplicationName.  
+3. En el campo dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato `https://www.contoso.com/ApplicationName`, o una ruta de acceso UNC con el formato `\\Server\ApplicationName`.  
   
 ## <a name="see-also"></a>Consulte también  
  [Cómo: Especificar dónde Visual Studio copia los archivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

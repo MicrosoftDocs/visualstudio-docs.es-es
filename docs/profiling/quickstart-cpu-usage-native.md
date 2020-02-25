@@ -1,7 +1,7 @@
 ---
 title: Análisis de datos de uso de CPU (C++)
 description: Medición del rendimiento de aplicación en C++ con la herramienta de diagnóstico de uso de CPU
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128181"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279226"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Analizar datos de uso de CPU en Visual Studio (C++)
 
@@ -30,17 +30,34 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
+1. Abra Visual Studio y cree el proyecto.
 
-2. Bajo **Visual C++** , seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
+   ::: moniker range="vs-2017"
+   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual C++** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de consola de Windows**. Después, asigne al proyecto el nombre *Diagnostics_Get_Started_Native*.
 
-3. Escriba un nombre como **Diagnostics_Get_Started_Native** y haga clic en **Aceptar**.
+   Si no ve la plantilla de proyecto **Aplicación de consola de Windows**, haga clic en el vínculo **Abrir el Instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana Inicio**.
 
-    Visual Studio crea el proyecto.
+   En la ventana de inicio, elija **Crear un proyecto nuevo**.
 
-4. En *MyDbgApp.cpp*, reemplace el código siguiente:
+   En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. A continuación, elija **C++** en la lista de lenguajes y, luego, **Windows** en la lista de plataformas.
+
+   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola** y, luego, **Siguiente**.
+
+   > [!NOTE]
+   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo para el escritorio con C++** .
+
+   En la ventana **Configurar el nuevo proyecto**, escriba *Diagnostics_Get_Started_Native* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+
+   ::: moniker-end
+
+   Visual Studio se abre en el nuevo proyecto.
+
+1. En *Diagnostics_Get_Started_Native*, sustituya el código siguiente
 
     ```c++
     int main()
@@ -123,7 +140,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 2. Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `main`:
 
-     ![Establecer puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Establecer puntos de interrupción para la generación de perfiles")
+     ![Establecimiento de puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Establecer puntos de interrupción para la generación de perfiles")
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
@@ -158,7 +175,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 1. En la lista de funciones, examine las funciones que realizan la mayor parte del trabajo.
 
-     ![Herramientas de diagnóstico para la pestaña Uso de CPU](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
+     ![Pestaña Uso de CPU de herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
 
     > [!TIP]
     > Las funciones aparecen en orden, comenzando por las que realizan la mayor parte del trabajo (no están en orden de llamada). Esto ayuda a identificar rápidamente las funciones que se ejecutan durante más tiempo.
@@ -167,7 +184,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
     Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda.
 
-    ![Herramientas de diagnóstico para la vista Llamador y destinatario](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+    ![Vista Llamador de herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
     En esta vista, la función seleccionada se muestra en el título y en el cuadro **Función actual** (en este ejemplo, `getNumber`). La función que llamó a la función actual se muestra a la izquierda en **Función llamadora**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
 

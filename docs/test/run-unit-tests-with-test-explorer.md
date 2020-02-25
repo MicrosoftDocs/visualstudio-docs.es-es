@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585449"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278524"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -311,7 +311,7 @@ Se puede usar el Explorador de pruebas para iniciar una sesión de depuración p
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de rendimiento del método de prueba
 
-Para diagnosticar por qué tarda demasiado un método de prueba, selecciónelo en el Explorador de pruebas y, luego, elija **Profile Selected Test** (Prueba seleccionada de perfil) en el menú contextual. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
+Para diagnosticar por qué tarda demasiado un método de prueba, selecciónelo en el Explorador de pruebas y, luego, elija **Profile Selected Test** (Prueba seleccionada de perfil) en el menú contextual. Vea [Informe de generación de perfiles de instrumentación](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizar la cobertura de código de prueba unitaria
 

@@ -3,15 +3,15 @@ title: Posible error en el inicio de sesión en suscripciones de Visual Studio a
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: 392b86699b1116f45ca75df3b611fff6a2aebc62
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378023"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77276623"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -19,131 +19,94 @@ Según el tipo de cuenta utilizada para iniciar sesión, es posible que las susc
 ## <a name="what-is-aliasing"></a>¿Qué es el uso de alias?
 El concepto "uso de alias" hace referencia a los usuarios que tienen diferentes identidades para iniciar sesión en Windows (o su Active Directory) y acceder al correo electrónico.
 
-Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como "JohnD@contoso.com", pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como "John.Doe@contoso.com". Muchos usuarios que administran sus suscripciones a través del Centro de servicios de licencias por volumen de Microsoft podrían experimentar un inicio de sesión incorrecto, dado que la dirección de correo electrónico proporcionada ("John.Doe@contoso.com") no coincide con la dirección de directorio ("JohnD@contoso.com") requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".
+Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como "olivia@contoso.com", pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como "OliviaG@contoso.com". Asegúrese de que sus usuarios inicien sesión mediante "Dirección de correo electrónico de inicio de sesión" tal como se indica en el portal de administración de las suscripciones de Visual Studio en https://manage.visualstudio.com para acceder a sus suscripciones.
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Como administrador, ¿qué opciones tengo?
-Como administrador, dispone de dos opciones para asegurarse de que los suscriptores pueden iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
-- La primera de ellas (la recomendada) es aprovechar la cuenta de directorio como dirección asignada en Microsoft Business Center. Consulte la sección [Asignación de suscriptores a una cuenta de directorio](#assigning-subscribers-to-a-directory-account) de este artículo para obtener más detalles.
-- La segunda opción (menos segura) consiste en permitir que los suscriptores asocien su dirección de correo electrónico "profesional o educativa" a una cuenta "personal" (conocida como cuenta Microsoft o MSA). Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account) de este artículo para obtener más detalles.
 
-> [!NOTE]
-> Una vez que la empresa migra al nuevo [portal de administración](https://manage.visualstudio.com) de suscripciones de Visual Studio, puede aprovechar la nueva experiencia de administración que permite especificar tanto direcciones de correo electrónico como de directorio en el perfil del suscriptor. Obtenga más información sobre la [migración](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+En función del tipo de cuenta del suscriptor, vea la solución aplicable a continuación:
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Asignación de suscriptores a una cuenta de directorio
-En todos los casos, el administrador de suscripciones de Microsoft Business Center tendrá que usar la dirección del directorio para los nuevos suscriptores, o actualizar la dirección de correo electrónico para los suscriptores "existentes". Es importante tener en cuenta que el uso de la dirección de directorio implicará que los nuevos suscriptores no reciban un correo electrónico de bienvenida, y el administrador deberá notificar al suscriptor que se le ha asignado una suscripción. Después de seguir estos pasos, no dude en utilizar la [plantilla](#notifying-your-subscribers-with-directory-addresses) de correo electrónico para la enviar la notificación a los usuarios y ayudarles en el proceso de inicio de sesión.
+### <a name="work-or-school-account-upn-mismatch-issue"></a>Error de coincidencia de UPN de cuenta profesional o educativa
 
-### <a name="adding-new-subscribers"></a>Incorporación de nuevos suscriptores
-Siga estos pasos para agregar un nuevo suscriptor con una cuenta de directorio.
+Un error de coincidencia de Nombre principal de usuario (UPN) puede producirse cuando una empresa tiene Active Directory configurado con un UPN que no coincide con la dirección SMTP principal. 
 
-1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
-2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
+#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>Procedimiento para detectar si la dirección de inicio de sesión de un usuario tiene un error de coincidencia de UPN
 
-    > [!div class="mx-imgBorder"]
-    > ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
+Haga que el usuario realice los siguientes pasos:
 
-3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
+1. Inicie sesión en https://my.visualstudio.com con la dirección de inicio de sesión mencionada en su correo electrónico de asignación de la suscripción.  
 
-    > [!div class="mx-imgBorder"]
-    > ![Selección de contrato](_img/vlsc/vlsc-agreement.png)
+    > [!NOTE]
+    > Si no tiene su correo electrónico de asignación de la suscripción, puede volver a enviársela desde el portal de administración.  
 
-4. Haga clic en **Asignar suscripción**.
-5. Seleccione el **Nivel de suscripción** deseado.
-6. Compruebe que tiene suscripciones disponibles para asignar y haga clic en **Siguiente**.
-7. Escriba los detalles de suscriptor y la dirección del directorio en el campo Dirección de correo electrónico y haga clic en **Siguiente**.
-8. Compruebe la información del suscriptor y haga clic en **Finalizar**.
-9. Informe al suscriptor de que la suscripción se ha aprovisionado mediante la siguiente [plantilla](#notifying-your-subscribers-with-directory-addresses).
+2. Haga clic en la pestaña **Suscripciones**.
+3. Compruebe que la dirección de correo electrónico que se muestra en la parte superior derecha donde dice "Ha iniciado sesión como..." coincida con la dirección de correo electrónico de inicio de sesión del correo electrónico de asignación de la suscripción.  Si no es así, no podrá acceder a las ventajas de su suscripción. 
 
-### <a name="updating-an-existing-subscriber"></a>Actualización de un suscriptor existente
-Siga estos pasos para actualizar un suscriptor existente añadiéndole una cuenta de directorio.
+   > [!div class="mx-imgBorder"]
+   > ![Página Suscripciones](_img/aliasing/aliasing-subscriptions-page.png)
 
-1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
-2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
-3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
-4. Haga clic en la **flecha abajo** en la barra de búsqueda.
-5. Busque el suscriptor mediante el campo "Dirección de correo electrónico".
-6. En la lista de resultados, haga clic en el **Apellido** del suscriptor.
-7. Haga clic en **Editar**.
-8. Cambie el campo Dirección de correo electrónico a la dirección de directorio que desee y haga clic en **Guardar**.
-9. Informe al suscriptor de que la suscripción se ha aprovisionado mediante la siguiente plantilla de correo electrónico.
+#### <a name="how-to-correct-the-upn-mismatch"></a>Procedimiento para corregir el error de coincidencia de UPN
 
-### <a name="notifying-your-subscribers-with-directory-addresses"></a>Notificación a los suscriptores con direcciones de directorio
-Dado que el correo electrónico de bienvenida no llegará correctamente al suscriptor, copie y pegue el siguiente mensaje en un correo electrónico y envíelo al suscriptor. Sustituya las palabras entre % por la información pertinente de cada suscriptor.
+1. Acceda al portal de administración de Visual Studio en https://manage.visualstudio.com. 
 
-```
------------ Copy Below (Ctrl+C) -----------
+2. Encuentre al usuario que tiene el error de coincidencia de UPN.  La característica [Filtro](search-license.md) puede facilitar esta tarea si tiene muchas suscripciones. 
 
-Hello %SUBSCRIBER NAME%
+3. Cambie la dirección de correo electrónico de inicio de sesión por el UPN del usuario.
 
-You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
+4. Guarde los cambios. 
 
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
+5. Pida al usuario que cierre sesión en el portal de suscriptores y vuelva a iniciar sesión con el UPN.   
 
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
+### <a name="personal-account-aliasing-issue"></a>Incidencia sobre alias en una cuenta personal
 
------------ End Copy -----------
-```
+Las incidencias sobre alias también pueden afectar a las cuentas personales. 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definición de una cuenta profesional o educativa como cuenta personal
-Siga las instrucciones descritas en la sección [Asignación de suscriptores a una cuenta de directorio](#assigning-subscribers-to-a-directory-account) para agregar un nuevo usuario o actualizar la dirección de correo electrónico de un usuario en Microsoft Business Center.  En aquellos casos en que el directorio no reconoce la dirección de correo electrónico, el usuario deberá seguir paso a paso el proceso de creación de una nueva cuenta para definir la dirección de correo electrónico como cuenta personal.  A corto plazo, el equipo de suscripciones de Visual Studio ha concedido una exención a la directiva de identidad que se define a continuación, pero estamos viendo la manera de quitar dicha directiva.
+#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>Procedimiento para detectar si una cuenta personal tiene una incidencia sobre alias
 
-> [!WARNING]
-> Microsoft no recomienda combinar la identidad "profesional o educativa" con la identidad "personal".  Esto provoca que la organización pierda la propiedad y el control de la cuenta, y el empleado puede seguir teniendo acceso a determinados productos o servicios incluso después de dejar la empresa.  
+1. Inicie sesión en https://my.visualstudio.com.
 
-### <a name="defining-an-email-address-as-a-personal-account"></a>Definición de una dirección de correo electrónico como una cuenta personal
-Una vez que se asigna una suscripción al suscriptor, este recibirá un correo electrónico en el que se le pide que visite [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para aprovechar las ventajas de la suscripción.  Al intentar iniciar sesión, el inicio de sesión en la suscripción de Visual Studio informará de un error por el cual no se reconoce la cuenta.  Antes de iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), pida a los suscriptores que sigan estas instrucciones.  Si es necesario, puede utilizar esta [plantilla](#notifying-your-subscribers-using-personal-accounts) para informar al suscriptor después de que se le haya asignado una suscripción.
+2. Haga clic en la pestaña **Suscripciones** y compruebe la dirección con la que ha iniciado sesión. 
 
-1. Vaya a https://my.visualstudio.com y haga clic en **Crear nueva cuenta de Microsoft**.
+3. Si la dirección de correo electrónico que tiene iniciada la sesión no coincide con la dirección de correo electrónico utilizada para acceder al sitio web, existe un conflicto entre su cuenta y el alias. 
 
-2. Complete los campos:
-   - Escriba la dirección de correo electrónico en la que recibió el correo electrónico de bienvenida en el cuadro Someone@example.com.
-   - Cree la contraseña.
-   - Elija la configuración de la promoción.
-   - Haga clic en **Siguiente**.
+#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>Procedimiento para solucionar una incidencia sobre alias en una cuenta personal
 
-3. Complete los pasos de validación y haga clic en **Siguiente**.
+La plataforma de suscripciones de Visual Studio da prioridad al alias principal para mostrar los detalles de la suscripción.  Para solucionar la incidencia, debe convertir otro alias de correo electrónico en el alias principal para iniciar sesión. 
 
-4. Es posible que los usuarios nuevos tengan que completar el perfil de Visual Studio.
+1. Vaya a [Administrar el modo de iniciar sesión en Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842796).
+2. Inicie sesión en su cuenta Microsoft si se le solicita que lo haga. 
+3. En Alias de cuenta, seleccione **Convertir en principal** junto a la dirección de correo electrónico utilizada para asignar la suscripción. 
+4. En Alias de cuenta, seleccione Convertir en principal junto a la dirección de correo electrónico utilizada para asignar la suscripción. 
+5. Cierre sesión en el portal de suscriptores de Visual Studio (https://my.visualstudio.com) ). 
+6. Vuelva a acceder al portal con el nuevo alias principal. 
 
-5. La suscripción y las ventajas ahora deben ser visibles.
+### <a name="ensure-a-successful-experience-for-your-users"></a>Una experiencia correcta para los usuarios
 
-### <a name="notifying-your-subscribers-using-personal-accounts"></a>Notificación a los suscriptores con cuentas personales
-En el escenario descrito anteriormente, el suscriptor recibirá un "correo electrónico de bienvenida", pero debido al uso de alias es posible que no pueda iniciar sesión.  Puede usar el siguiente texto para informar a los suscriptores de los pasos anteriores y recomendar las opciones de soporte técnico si fuera necesario.  Sustituya las palabras entre % por la información pertinente de cada suscriptor.
+Como administrador, dispone de dos opciones para asegurarse de que los suscriptores puedan iniciar sesión correctamente en https://my.visualstudio.com. 
 
-```
------------ Copy Below (Ctrl+C) -----------
+- La primera opción (recomendada) es aprovechar la cuenta de directorio como dirección de inicio de sesión en https://manage.visualstudio.com.
+- La segunda opción, que es menos segura, consiste en permitir a sus suscriptores iniciar sesión con una dirección de correo electrónico distinta a la del directorio.
 
-Hello %SUBSCRIBER NAME%
+Ambas opciones se configuran en el portal de administración completando los pasos siguientes:
 
-You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
-1. Visit https://my.visualstudio.com
+1. Inicie sesión en https://manage.visualstudio.com. 
 
-2. Click Create new Microsoft Account on the right hand side
+2. Si va a modificar un solo usuario, selecciónelo en la tabla y haga clic con el botón derecho para editarlo. De este modo, se abrirá un panel en el que podrá modificar la dirección de correo electrónico de inicio de sesión.  
 
-3. Complete the Form:
-   - Use your corporate email address in the someone@example.com box
-   - Enter a password
-   - Select your promotional preference
-   - Click Next
+3. Realice los cambios necesarios en el campo de dirección de correo electrónico de inicio de sesión. 
 
-4. Complete the account validation steps
+4. Haga clic en Guardar y se aplicarán los cambios.  
+Si necesita realizar estos cambios para una gran cantidad de usuarios, puede usar la característica de edición en masa. Lea la sección **Edición en masa de varios suscriptores** de nuestro artículo [Edición de suscripciones]](edit-license.md) para obtener más información sobre este proceso.  
 
-5. If necessary, complete the Visual Studio profile
+## <a name="next-steps"></a>Pasos siguientes
+Obtenga más información sobre la administración de suscripciones de Visual Studio.
+- [Asignación de suscripciones individuales](assign-license.md)
+- [Asignación de varias suscripciones](assign-license-bulk.md)
+- [Editar suscripciones](edit-license.md)
+- [Eliminar suscripciones](delete-license.md)
+- [Determinación del uso máximo](maximum-usage.md)
 
-6. You should now see your benefits
-
-Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
-
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
-
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
-
------------ End Copy -----------
-```
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](/visualstudio/)
+- [Documentación de Azure DevOps](/azure/devops/)
+- [Documentación de Azure](/azure/)
+- [Documentación de Microsoft 365](/microsoft-365/)

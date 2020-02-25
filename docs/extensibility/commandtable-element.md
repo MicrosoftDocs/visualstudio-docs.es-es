@@ -1,5 +1,5 @@
 ---
-title: CommandTable (elemento) | Microsoft Docs
+title: Elemento CommandTable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f577b52ad2a9b1fd66ed9c24fb2737621aa8554c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341807"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557781"
 ---
-# <a name="commandtable-element"></a>CommandTable (elemento)
-CommandTable es el elemento raíz de la *.vsct* archivo. Este es el archivo que define el diseño real y el tipo de los comandos que un paquete VSPackage proporciona al IDE. Los comandos pueden incluir elementos de menú, barras de herramientas, menús y cuadros combinados. Para obtener más información, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+# <a name="commandtable-element"></a>Elemento CommandTable
+CommandTable es el elemento raíz del archivo *. Vsct* . Este es el archivo que define el diseño y el tipo reales de los comandos que proporciona un VSPackage al IDE. Los comandos pueden incluir elementos de menú, menús, barras de herramientas y cuadros combinados. Para obtener más información, vea [archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,34 +40,34 @@ CommandTable es el elemento raíz de la *.vsct* archivo. Este es el archivo que 
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
+ En las secciones siguientes se describen atributos, elementos secundarios y elementos primarios.
 
 ### <a name="attributes"></a>Atributos
 
 | Atributo | Descripción |
 |-----------| - |
-| xmlns | Obligatorio. Espacios de nombres XML:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
-| lenguaje | Opcional. El atributo language puede utilizarse para especificar el idioma predeterminado de todos los \<cadenas > elementos en la tabla de comandos.  Si no se especifica el idioma, se usará el idioma del proceso actual:<br /><br /> language="en-us" |
+| xmlns | Necesario. Espacios de nombres XML:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: XS = "<http://www.w3.org/2001/XMLSchema>" |
+| language | Opcional. El atributo Language se puede usar para especificar el idioma predeterminado de todas las cadenas de \<> elementos de la tabla de comandos.  Si no se especifica el idioma, se usará el idioma del proceso actual:<br /><br /> Language = "en-US" |
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Extern (elemento)](../extensibility/extern-element.md)|Opcional. Contiene las directivas de preprocesador para el compilador.|
-|[Elemento de inclusión](../extensibility/include-element.md)|Opcional. Contiene las rutas de acceso a los archivos que se incluyen en la compilación.|
-|[Definir el elemento](../extensibility/define-element.md)|Opcional. Define un símbolo dado su nombre y valor.|
-|[Elemento Commands](../extensibility/commands-element.md)|Opcional. El elemento primario que define todos los comandos para el VSPackage que contiene todos los demás elementos.|
-|[CommandPlacements (elemento)](../extensibility/commandplacements-element.md)|Opcional. Define donde en la barra de comandos, los comandos se va a colocar.|
-|[VisibilityConstraints (elemento)](../extensibility/visibilityconstraints-element.md)|Opcional. Determina la visibilidad de los comandos y las barras de herramientas estática.|
-|[KeyBindings (elemento)](../extensibility/keybindings-element.md)|Opcional. Especifica las combinaciones de teclas de método abreviado, si existe, para los comandos.|
-|[UsedCommands (elemento)](../extensibility/usedcommands-element.md)|Opcional. Permite que un paquete VSPackage opcionalmente, puede implementar su propia versión de funcionalidad compatible originalmente con otros VSPackages.|
-|[Symbols (elemento)](https://www.microsoft.com/download/details.aspx?id=55984)|Opcional. Contiene los datos de símbolos--GUID, identificadores y así sucesivamente, para que el compilador.|
+|[Extern (elemento)](../extensibility/extern-element.md)|Opcional. Contiene directivas de preprocesador para el compilador.|
+|[Elemento include](../extensibility/include-element.md)|Opcional. Contiene las rutas de acceso a los archivos que se van a incluir en la compilación.|
+|[Elemento define](../extensibility/define-element.md)|Opcional. Define un símbolo a partir de su nombre y valor.|
+|[Commands, elemento](../extensibility/commands-element.md)|Opcional. Elemento primario que define todos los comandos para el VSPackage que contiene todos los demás elementos.|
+|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Opcional. Define dónde se colocarán los comandos en la barra de comandos.|
+|[Elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Opcional. Determina la visibilidad estática de los comandos y las barras de herramientas.|
+|[KeyBindings (elemento)](../extensibility/keybindings-element.md)|Opcional. Especifica las combinaciones de teclas de método abreviado, si las hay, para los comandos.|
+|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Opcional. Permite que un VSPackage implemente opcionalmente su propia versión de funcionalidad admitida originalmente por otros VSPackages.|
+|[Elemento Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Opcional. Contiene datos de símbolos (GUID, identificadores, etc.) para el compilador.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Ninguna||
+|None||
 
-## <a name="see-also"></a>Vea también
-- [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

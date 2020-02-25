@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727908"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557634"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Cómo: Incluir requisitos previos mediante una aplicación ClickOnce
 Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Si publica una aplicación y elige **Descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **Packages**.
@@ -31,10 +31,10 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 
 3. En el Bloc de notas, abra el archivo *Package.xml*.
 
-4. Busque el elemento **Name** que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.
+4. Busque el elemento **Name** que contiene `http://go.microsoft.com/fwlink`y copie la dirección URL. Incluya a la parte **LinkID**.
 
    > [!NOTE]
-   > Si ningún elemento de **nombre** contiene **http://go.microsoft.com/fwlink** , abra el archivo **product. XML** en la carpeta raíz del requisito previo y busque la cadena **fwlink** .
+   > Si ningún elemento de **nombre** contiene `http://go.microsoft.com/fwlink`, abra el archivo **product. XML** en la carpeta raíz del requisito previo y busque la cadena **fwlink** .
 
    > [!IMPORTANT]
    > Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.
@@ -49,5 +49,5 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 
     Ahora puede distribuir el paquete del instalador con la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

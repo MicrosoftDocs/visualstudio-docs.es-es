@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
-ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
+ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67342378"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416365"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -28,7 +28,7 @@ Visual Studio permite habilitar más de un tipo de depurador en una sesión de d
 
 En él se muestra cómo depurar código nativo desde una aplicación administrada, además de cómo [depurar código administrado desde una aplicación nativa](../debugger/how-to-debug-in-mixed-mode.md). El depurador también admite otros tipos de depuración en modo mixto, como la depuración de [Python y código nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), y el empleo del depurador de scripts en tipos de aplicaciones como ASP.NET.
 
-En este tutorial, aprenderá lo siguiente:
+En este tutorial va a:
 
 > [!div class="checklist"]
 > * Crear una DLL nativa simple
@@ -55,21 +55,15 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 1. Abra Visual Studio y cree un proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Proyecto vacío**, elija **Plantillas** y luego, **Create new Empty Project project** (Crear proyecto vacío) para C++. En el cuadro de diálogo que se abre, elija **Crear**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Proyecto vacío**, elija **Plantillas** y, luego, **Proyecto vacío** para C++. En el cuadro de diálogo que se abre, elija **Crear**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++** , elija **Otros** y luego, en el panel central, **Proyecto vacío**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++** , elija **Otros** y luego, en el panel central, **Proyecto vacío**. Luego, escriba un nombre como **Mixed_Mode_Debugging** y haga clic en **Aceptar**.
     ::: moniker-end
 
     Si no ve la plantilla de proyecto **Proyecto vacío**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
     Visual Studio crea el proyecto.
-
-1. En el cuadro de diálogo **Nuevo proyecto**, en **Visual C++** , seleccione **Otro** y luego **Proyecto vacío** en el panel central.
-
-1. En el campo **Nombre**, escriba **Mixed_Mode_Debugging** y seleccione **Aceptar**.
-
-   Visual Studio crea el proyecto vacío y lo muestra en el **Explorador de soluciones**.
 
 1. En el **Explorador de soluciones**, seleccione **Archivos de código fuente** y luego **Proyecto** > **Agregar nuevo elemento**. O bien, haga clic con el botón derecho en **Archivos de código fuente** y seleccione **Agregar** > **Nuevo elemento**.
 
@@ -132,12 +126,12 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Framework) project** (Crear proyecto de aplicación de consola [.NET Framework]) para C#. En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y, luego, **Aplicación de consola (.NET Core)** o **Aplicación de consola (.NET Framework)** para C#. En el cuadro de diálogo que se abre, elija **Crear**.
 
     Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)** .
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)** .
 
     Luego, escriba un nombre como **Mixed_Mode_Calling_App** y haga clic en **Aceptar**.
     ::: moniker-end
@@ -255,7 +249,7 @@ En la mayoría de las versiones de Visual Studio a partir de Visual Studio 201
 
 1. Presione **F5** o seleccione la flecha verde para seguir depurando la aplicación.
 
-Felicidades. Ha completado el tutorial sobre la depuración en modo mixto.
+¡Enhorabuena! Ha completado el tutorial sobre la depuración en modo mixto.
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -1,8 +1,8 @@
 ---
 title: Análisis de datos de uso de CPU (ASP.NET)
-description: Medición del rendimiento de aplicación en aplicaciones ASP.NET con la herramienta de diagnóstico de uso de CPU
+description: Medición del rendimiento de aplicación en aplicaciones de ASP.NET con la herramienta de diagnóstico de uso de CPU
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128170"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275071"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Inicio rápido: Análisis de los datos de uso de la CPU en Visual Studio (ASP.NET Core)
 
 Visual Studio proporciona muchas características eficaces para ayudar a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos una herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
@@ -29,17 +29,37 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
+1. Abra Visual Studio y cree el proyecto.
 
-1. En **Visual C#** , seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)** .
+   ::: moniker range="vs-2017"
+   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-    Si no ve la plantilla de proyecto **Aplicación web de ASP.NET**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
+   En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y seleccione **Web**. En el panel central, elija **Aplicación web de ASP.NET (.NET Core)** . Después, asigne al proyecto el nombre *MyProfilingApp_MVC*.
 
-1. Escriba un nombre como **MyProfilingApp_MVC** y haga clic en **Aceptar**.
+   > [!NOTE]
+   > Si no ve la plantilla de proyecto **Aplicación web de ASP.NET (.NET Core)** , haga clic en el vínculo **Abrir el Instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después haga clic en **Modificar**.
 
-1. En el cuadro de diálogo que aparece, seleccione **MVC** en el panel central y, después, haga clic en **Aceptar**.
+   En el cuadro de diálogo que aparece, seleccione **MVC** en el panel central y, después, haga clic en **Aceptar**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana Inicio**.
 
-    Visual Studio crea el proyecto. En el Explorador de soluciones (el panel de la derecha) se muestran los archivos de proyecto.
+   En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+   En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *asp.net*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas.
+
+   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación web de ASP.NET (.NET Core)** y, luego, **Siguiente**.
+
+   > [!NOTE]
+   > Si no ve la plantilla **Aplicación web de ASP.NET (.NET Core)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo de ASP.NET y web**.
+
+   En la ventana **Configurar el nuevo proyecto**, escriba *MyProfilingApp_MVC* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+
+   En la ventana que aparece, elija **Aplicación web (Modelo-Vista-Controlador)** y, después, **Crear**.
+
+   ::: moniker-end
+
+   Visual Studio se abre en el nuevo proyecto.
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en la carpeta de modelos y elija **Agregar** > **Clase**.
 
@@ -131,6 +151,8 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. En el Explorador de soluciones, abra *Controller/HomeControllers.cs* y reemplace el código siguiente:
 
+   ::: moniker range="vs-2017"
+
     ```csharp
     public ActionResult About()
     {
@@ -153,6 +175,30 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     }
     ```
 
+    ::: moniker-end
+    ::: moniker range="vs-2019"
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+    ```
+
+    con este código:
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        Models.Simple s = new Models.Simple();
+
+        return View(s.GetData());
+    }
+    ```
+
+    ::: moniker-end
+
+
 ## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 
 1. En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en el constructor `Simple`:
@@ -172,7 +218,14 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
 1. Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
-1. Cuando la aplicación termine de cargarse, haga clic en el vínculo **Acerca de** en la parte superior de la página web para empezar a ejecutar el código nuevo.
+1. Cuando la aplicación termine de cargarse, haga clic en el vínculo correspondiente de la parte superior de la página web para empezar a ejecutar el código nuevo.
+
+   ::: moniker range="vs-2017"
+   En Visual Studio 2017, haga clic en el vínculo **Acerca de** para ejecutar el código.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   En Visual Studio 2019, haga clic en el vínculo **Privacidad** para ejecutar el código.
+   ::: moniker-end
 
 1. Mire la vista **Resumen** de las Herramientas de diagnóstico que aparece.
 

@@ -4,8 +4,8 @@ ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - minidumps for Visual Studio issues"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 7b3be91e5d0d2e1f14724dd647670fc4885bcd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271188"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Creación de minivolcados para un proceso de Visual Studio con todas las pilas de llamadas
 

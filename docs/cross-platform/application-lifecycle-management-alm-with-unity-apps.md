@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777733"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272266"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -105,7 +105,7 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 |[Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
+|[Herramientas de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](https://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
 |[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
 
 ## <a name="release-management"></a>Administración de versiones

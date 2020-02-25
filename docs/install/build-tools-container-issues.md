@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a43c5dd9bec88ca7e972b4d681bc25c47a86bf0d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115203"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453387"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conocidos de contenedores
 
@@ -54,7 +54,11 @@ Es posible que se produzcan los siguientes problemas conocidos al usar un conten
 
 * Es posible que IntelliTrace no funcione en [algunos escenarios](https://github.com/Microsoft/vstest/issues/940) dentro de un contenedor.
 * En versiones anteriores de Docker para Windows, el tamaño de la imagen del contenedor predeterminado es de solo 20 GB y no cabrá en Build Tools. Siga las [instrucciones para cambiar el tamaño de la imagen](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) a 127 GB o más.
-
+Para confirmar una incidencia de espacio en disco, compruebe los archivos de registro para obtener más información. Si se queda sin espacio en disco, su archivo `vslogs\dd_setup_<timestamp>_errors.log` incluirá lo siguiente: 
+```
+Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
+Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
+```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también

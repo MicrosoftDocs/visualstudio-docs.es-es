@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112531"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275435"
 ---
 # <a name="warnings-and-errors"></a>Advertencias y errores
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112531"
 * **Solución de restricciones**
   * [No se puede concretizar la solución](#cannot-concretize-solution)
 
-* **Dominios**
+* **Dominios o entorno de ejecución**
   * [Se necesita ayuda para construir el objeto](#help-construct)
   * [Se necesita ayuda para buscar tipos](#help-types)
   * [Tipo utilizable estimado](#usable-type-guessed)

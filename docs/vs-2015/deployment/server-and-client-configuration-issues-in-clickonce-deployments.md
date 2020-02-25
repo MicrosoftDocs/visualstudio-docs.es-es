@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f8e5054b4da0122c40c3ad62cfebcace973f7b20
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918817"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558007"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce y autenticación de proxy  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] proporciona compatibilidad con la autenticación de proxy integrada de Windows a partir de .NET Framework 3,5. No se requieren directivas Machine. config específicas. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] no proporciona compatibilidad con otros protocolos de autenticación como Basic o Digest.  
   
- También puede aplicar una revisión a .NET Framework 2,0 para habilitar esta característica. Para obtener más información, vea https://go.microsoft.com/fwlink/?LinkId=158730.  
+ También puede aplicar una revisión a .NET Framework 2,0 para habilitar esta característica. Para obtener más información, consulte [corrección: mensaje de error al intentar instalar una aplicación ClickOnce creada en el .NET Framework 2,0 en un equipo cliente que está configurado para usar un servidor proxy: "se requiere autenticación proxy"](https://support.microsoft.com/en-in/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that). 
   
  Para obtener más información, vea [\<elemento > defaultProxy (configuración de red)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -121,7 +121,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
 - Si crea un tipo MIME con la extensión "*" y el tipo MIME "application/octet-stream", permitirá que se descarguen los archivos de tipo de archivo desbloqueado. (Sin embargo, los tipos de archivos bloqueados como. aspx y. asmx no se pueden descargar).  
   
-  Para obtener instrucciones específicas sobre cómo configurar tipos MIME en Windows Server, consulte el artículo de Microsoft Knowledge Base KB326965, "IIS 6,0 no atiende tipos MIME desconocidos" en [https://support.microsoft.com/default.aspx?scid=kb; en-US; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Para obtener instrucciones específicas sobre cómo configurar tipos MIME en Windows Server, consulte [Cómo agregar un tipo MIME a un sitio web o aplicación](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).  
   
 ## <a name="content-type-mappings"></a>Asignaciones de tipos de contenido  
  Al publicar a través de HTTP, el tipo de contenido (también conocido como tipo MIME) para el archivo. Application debe ser "application/x-MS-Application". Si tiene [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] instalado en el servidor, se establecerá automáticamente. Si no está instalado, debe crear una asociación de tipo MIME para la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vroot de la aplicación (o el servidor completo).  
@@ -133,7 +133,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
  Si utiliza IIS, puede habilitar fácilmente la compresión HTTP. Sin embargo, cuando se habilita la compresión HTTP, solo se habilita para determinados tipos de archivo, es decir, archivos HTML y de texto. Para habilitar la compresión de ensamblados (. dll), XML (. xml), manifiestos de implementación (. Application) y manifiestos de aplicación (. manifest), debe agregar estos tipos de archivo a la lista de tipos para que IIS los comprima. Hasta que agregue los tipos de archivo a la implementación, solo se comprimirán los archivos de texto y HTML.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)

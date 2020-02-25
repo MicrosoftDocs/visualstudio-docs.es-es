@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476992"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557976"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
   
     1. Busque el CLSID del VSPackage en la sección paquetes del registro:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<versión >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\ *\<versión >* \Packages  
   
     2. Compruebe que la ruta de acceso proporcionada por la subclave SatelliteDll es correcta.  
   
@@ -99,15 +99,13 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
   
     1. En el menú **herramientas/opciones** , desplácese hasta el cuadro de diálogo **depuración/símbolos** .  
   
-    2. Agregue esta **Ubicación de archivo de símbolos (. pdb)**:  
+    2. Agregue esta **Ubicación de archivo de símbolos (. pdb)** :  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Para mejorar el rendimiento, especifique una carpeta de caché de símbolos, por ejemplo:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Para solucionar problemas de un VSPackage que falta o de una de sus dependencias  
   
@@ -117,11 +115,11 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
   
    2. Seleccione la pestaña **referencias** en el cuadro de diálogo **páginas de propiedades** y asegúrese de que todas las rutas de acceso son correctas. Como alternativa, puede usar la **Examinador de objetos** para buscar los objetos a los que se hace referencia.  
   
-        En el caso de código administrado, puede usar [Fuslogvw. exe (visor de registro de enlaces de ensamblados)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para mostrar los detalles de las cargas de ensamblado con errores.  
+        En el caso de código administrado, puede usar [Fuslogvw. exe (visor de registro de enlaces de ensamblados)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para mostrar los detalles de las cargas de ensamblado con errores.  
   
 2. En el caso de código no administrado, busque el CLSID del VSPackage en el nodo del registro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<versión >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\ *\<versión >* \CLSID  
   
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.  
   

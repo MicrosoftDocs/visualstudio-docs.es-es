@@ -2,7 +2,7 @@
 title: 'Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core'
 description: Agregue una API web a la aplicación web de ASP.NET Core con este tutorial en vídeo y con instrucciones detalladas.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 02/13/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d3887c7cf665f9fd8d2789d460cc1a595e2bff
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553879"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271507"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core
 
@@ -187,7 +187,7 @@ Por último, se usa una ruta `[HttpDelete]` con un identificador para eliminar u
 
 ## <a name="adding-swagger"></a>Adición de Swagger
 
-Swagger es una herramienta de pruebas y documentación de API que se puede agregar como un conjunto de servicios y middleware a una aplicación de ASP.NET Core. Para ello, haga clic con el botón derecho en el proyecto y elija **Administrar paquetes NuGet**. Haga clic en **Examinar** y busque `Swashbuckle.AspNetCore` e instale el paquete correspondiente.
+Swagger es una herramienta de pruebas y documentación de API que se puede agregar como un conjunto de servicios y middleware a una aplicación de ASP.NET Core. Para ello, haga clic con el botón derecho en el proyecto y elija **Administrar paquetes NuGet**. A continuación, haga clic en **Examinar**, y busque `Swashbuckle.AspNetCore` e instale la versión 4.0.1.
 
 ![Agregar Swashbuckle desde Nuget en Visual Studio 2019](media/vs-2019/vs2019-nuget-swashbuckle.png)
 
