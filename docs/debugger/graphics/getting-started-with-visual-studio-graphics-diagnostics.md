@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735703"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557921"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.
@@ -35,11 +35,11 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 
 1. En buscar, escriba **aplicaciones y características** y, a continuación, abra la configuración **aplicaciones & características** .
 
-2. En el lado derecho del cuadro de diálogo **aplicaciones & características** , elija **administrar características opcionales** (en **aplicaciones & características**).
+2. En el lado derecho de la configuración de **las características de las aplicaciones &** , elija **características opcionales** (en **aplicaciones & características**).
 
-   Aparece el cuadro de diálogo **Administrar características opcionales**.
+   Aparecen las opciones de configuración de **características opcionales** .
 
-3. En el cuadro de diálogo **Administrar características opcionales**, elija **Agregar una característica**. Aparece una lista de las características opcionales que se pueden instalar.
+3. En la configuración de **características opcionales** , elija **Agregar una característica**. Aparece una lista de las características opcionales que se pueden instalar.
 
 4. Seleccione **Herramientas de gráficos** en la lista de características y luego elija **Instalar**.
 
@@ -49,7 +49,7 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 > La característica opcional Herramientas de gráficos de Windows 10 proporciona la funcionalidad de captura y reproducción ligera (por ejemplo, el programa de captura de línea de comandos **dxcap.exe**) que se puede usar en escenarios de compatibilidad, pruebas y diagnóstico en máquinas donde no están instaladas las herramientas de desarrollador. Para obtener más información, vea el tema [Herramienta de captura de línea de comandos](command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Usar el diagnóstico de gráficos por primera vez
- Ahora que tienen todo lo que necesita, ya puede empezar a usar el diagnóstico de gráficos. Tan solo tiene que seguir estos pasos:
+ Ahora que tienen todo lo que necesita, ya puede empezar a usar el diagnóstico de gráficos. Simplemente, siga estos pasos:
 
 ### <a name="1---create-a-direct3d-app"></a>1: Crear una aplicación de Direct3D
  Si ya tiene su propia aplicación de Direct3D para explorar Diagnóstico de gráficos con, excelente. En caso contrario, utilice una de las siguientes opciones:
@@ -87,5 +87,5 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 
  Para obtener más información sobre cómo usar las herramientas del analizador de gráficos juntas, vea los [ejemplos](graphics-diagnostics-examples.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Gráficos de Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

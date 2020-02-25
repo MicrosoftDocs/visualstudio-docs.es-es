@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Incluir requisitos previos mediante una aplicación ClickOnce | Documentos de Microsoft
+title: 'Cómo: incluir requisitos previos con una aplicación ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697665"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557677"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedimiento Incluir requisitos previos con una aplicación ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Cómo: Incluir requisitos previos mediante una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Al publicar una aplicación y elija **descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si no se encuentran los paquetes del instalador en el **paquetes** carpeta.  
+Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], primero debe descargar los paquetes del instalador para esos requisitos previos en el equipo de desarrollo. Al publicar una aplicación y elegir **descargar los requisitos previos desde la misma ubicación que mi aplicación**, se producirá un error si los paquetes del instalador no están en la carpeta **paquetes** .  
   
 > [!NOTE]
-> Para agregar un paquete de instalador para .NET Framework, vea [Guía de implementación de .NET Framework para desarrolladores](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Para agregar un paquete de instalador para el .NET Framework, consulte [Guía de implementación de .NET Framework para desarrolladores](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
 ## <a name="Package"></a> Para agregar un paquete del instalador mediante Package.xml  
   
@@ -34,10 +34,10 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
   
 3. En el Bloc de notas, abra el archivo **Package.xml**.  
   
-4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.  
+4. Busque el elemento **Name** que contiene `http://go.microsoft.com/fwlink`y copie la dirección URL. Incluya a la parte **LinkID**.  
   
     > [!NOTE]
-    > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink** , abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.  
+    > Si ningún elemento de **nombre** contiene `http://go.microsoft.com/fwlink`, abra el archivo **product. XML** en la carpeta raíz del requisito previo y busque la cadena **fwlink** .  
   
     > [!IMPORTANT]
     > Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.  
@@ -52,5 +52,5 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
   
      Ahora puede distribuir el paquete del instalador con la aplicación.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Instalación de requisitos previos con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>Consulte también  
+ [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

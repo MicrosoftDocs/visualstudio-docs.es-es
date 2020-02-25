@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706999"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192421"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -60,15 +60,15 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 meses    | Sí<sup>2</sup> |
 |         Visual Studio Professional (estándar)          | Licencia por volumen, Azure, venta directa |   3 meses    | Sí<sup>2</sup> |
 |         Visual Studio Professional con GitHub Enterprise          | VL  |   3 meses    | Sí<sup>2</sup> |
-|              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   3 meses    | Sí<sup>2</sup>  |
-|                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   3 meses    | Sí<sup>2</sup>  |
+|              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   No disponible    | NA  |
+|                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   No disponible    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
 ||
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *La ventana de Pluralsight en determinadas suscripciones de Visual Studio se renueva al renovar la suscripción. Por ejemplo, si tiene una suscripción anual que se renueva cada año, tiene a su disposición la ventaja cada año que renueve. Si tiene una suscripción de varios años, tiene a su disposición la ventaja de Pluralsight una vez durante la vigencia de la suscripción.  Si renueva una suscripción de varios años, la ventaja estará disponible de nuevo tras la renovación.*
+<sup>2</sup>  *La ventaja de Pluralsight en determinadas suscripciones de Visual Studio se renueva al renovar la suscripción. Por ejemplo, si tiene una suscripción anual que se renueva cada año, tiene a su disposición la ventaja cada año que renueve. Si tiene una suscripción de varios años, tiene a su disposición la ventaja de Pluralsight una vez durante la vigencia de la suscripción.  Si renueva una suscripción de varios años, la ventaja estará disponible de nuevo tras la renovación.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

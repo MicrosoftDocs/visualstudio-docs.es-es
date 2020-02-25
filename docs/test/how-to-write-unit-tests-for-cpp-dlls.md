@@ -2,17 +2,17 @@
 title: Escritura de pruebas unitarias para archivos DLL de C++
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279273"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
@@ -58,7 +58,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
       ::: moniker range="vs-2019"
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+      1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
 
       ::: moniker-end
 
@@ -90,7 +90,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
       ::: moniker range="vs-2019"
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+      1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
 
       ::: moniker-end
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189168"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557844"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1
   Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint. Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto. En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.
@@ -40,12 +40,12 @@ ms.locfileid: "73189168"
 > [!NOTE]
 > Para obtener una serie de flujos de trabajo de ejemplo, vea [ejemplos de flujo de trabajo de SharePoint](/sharepoint/dev/general-development/sharepoint-workflow-samples).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows, SharePoint y [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- El parámetro de cadena de consulta [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189168"
 
    - Agrega elementos `ProjectItem` para cada uno de los archivos que se incluyen en cada instancia de proyecto.
 
-   - Utiliza el espacio de nombres "<http://schemas.microsoft.com/developer/vstemplate/2005>". Otros archivos de proyecto de esta solución usan el espacio de nombres "<http://schemas.microsoft.com/developer/msbuild/2003>". Por consiguiente, los mensajes de advertencia del esquema XML se generarán, pero puede pasarlos por alto en este tutorial.
+   - Utiliza el espacio de nombres `http://schemas.microsoft.com/developer/vstemplate/2005`. Otros archivos de proyecto de esta solución usan el espacio de nombres `http://schemas.microsoft.com/developer/msbuild/2003`. Por consiguiente, los mensajes de advertencia del esquema XML se generarán, pero puede pasarlos por alto en este tutorial.
 
      Para obtener más información sobre el contenido de los archivos *. vstemplate* , vea [referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -702,7 +702,7 @@ ms.locfileid: "73189168"
 
 6. En **Explorador de soluciones**, elija el nodo **Campo1** y, a continuación, elija la tecla **F4** .
 
-     Se abrirá la ventana **propiedades** .
+     Se abre la ventana **Propiedades**.
 
 7. En la lista propiedades, compruebe que aparece la **propiedad ejemplo** de propiedad.
 
@@ -752,7 +752,7 @@ ms.locfileid: "73189168"
 ## <a name="next-steps"></a>Pasos siguientes
  Después de completar este tutorial, puede agregar un asistente a la plantilla de proyecto. Cuando un usuario crea un proyecto de columnas de sitio, el asistente pide al usuario la dirección URL del sitio que se va a usar para depurar, le pregunta si la nueva solución es de espacio aislado y configura el nuevo proyecto con esta información. El Asistente también recopila información sobre la columna (por ejemplo, el tipo base y el grupo en el que se va a mostrar la columna en la galería de columnas del sitio) y agrega esta información al archivo *Elements. XML* del nuevo proyecto. Para obtener más información, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [Definir tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
