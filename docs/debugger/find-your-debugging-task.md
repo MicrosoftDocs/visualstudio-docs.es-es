@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599295"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578771"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Buscar la tarea de depuración en Visual Studio
 
@@ -75,7 +75,7 @@ Para ello, [establezca un punto de interrupción en la ventana Desensamblado](us
 
 Para obtener más información, vea [navegar por el código con el depurador](navigating-through-code-with-the-debugger.md).
 
-## <a name="inspect-data"></a>Inspeccionar datos
+## <a name="inspect-data"></a>Inspección de los datos
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Comprobar el valor de las variables durante la ejecución de la aplicación
 
@@ -130,3 +130,7 @@ Vea [asociar a un proceso en ejecución](attach-to-running-processes-with-the-vi
 ### <a name="debug-multithreaded-applications"></a>Depuración de aplicaciones multiproceso
 
 Consulte [depuración de aplicaciones multiproceso](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Corregir problemas de rendimiento
+
+Vea [el primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md)
