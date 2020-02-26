@@ -3,15 +3,15 @@ title: Exportación de la información de suscripción | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
-ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: ddf466e314190b8c91d35aad522da14f4c4af69f
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491737"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520857"
 ---
 # <a name="export-subscription-information"></a>Información sobre la exportación de suscripciones
 En el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio, puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV y se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.
@@ -36,3 +36,9 @@ Para realizar la exportación, siga estos pasos:
     - [Sobreasignaciones](handle-overclaimed-license.md)
     - [Uso máximo](maximum-usage.md)
 - ¿Necesita ayuda con cualquier aspecto de la administración de suscripciones?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)

@@ -3,15 +3,15 @@ title: Anonimización de datos de suscriptor de Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
-ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
+ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936912"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77520844"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.
@@ -42,4 +42,10 @@ R:  Hay dos maneras de impedir la incidencia:
 - Asocie las identidades de AAD y MSA a través de los inquilinos. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-Obtenga información sobre cómo evitar la anonimización [asociando las identidades de AAD y MSA](/azure/active-directory/b2b/add-users-administrator).
+Obtenga información sobre cómo evitar la anonimización [asociando las identidades de AAD y MSA](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
