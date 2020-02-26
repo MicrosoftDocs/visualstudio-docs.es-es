@@ -13,17 +13,17 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778331"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578193"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referencia de tareas de MSBuild para WPF
 El proceso de compilación de Windows Presentation Foundation (WPF) amplía Microsoft Build Engine (MSBuild) con un conjunto adicional de tareas de compilación, incluidas tareas para compilar marcado y procesar recursos.
@@ -55,7 +55,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Inserta uno o varios recursos (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
+ Inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -63,7 +63,7 @@ El proceso de compilación de Windows Presentation Foundation (WPF) amplía Micr
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación (*\<nombreproyecto>.exe.manifest*) cuando se compila un proyecto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+ Agrega el elemento **\<hostInBrowser />** al manifiesto de aplicación ( *\<nombreproyecto>.exe.manifest*) cuando se compila un proyecto [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
 ## <a name="see-also"></a>Vea también
 - [MSBuild](../msbuild/msbuild.md)

@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910349"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578349"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
 La herramienta **Uso de memoria** supervisa el uso de memoria de la aplicación. Puede usar la herramienta para estudiar los efectos en la memoria en tiempo real de los escenarios que esté desarrollando en Visual Studio. Puede tomar instantáneas detalladas de los estados de memoria de la aplicación y compararlas para determinar las causas de los problemas de memoria.
 
 La herramienta **Uso de memorial** puede ejecutarse con o sin el depurador. En las siguientes instrucciones se muestra cómo usar la herramienta **Uso de memoria** sin el depurador en el **Generador de perfiles de rendimiento** de Visual Studio.
-
->[!NOTE]
->- Para medir el uso de memoria de una aplicación .NET Core, debe usar la herramienta **Uso de memoria** con el depurador. Para obtener instrucciones, vea [Uso de memoria de perfil en Visual Studio](memory-usage.md).
->- Para analizar el uso de memoria en aplicaciones de JavaScript o de UWP HTML, use la herramienta [Memoria de JavaScript](../profiling/javascript-memory.md) en **Generador de perfiles de rendimiento**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesiones de diagnóstico de uso de memoria
 
