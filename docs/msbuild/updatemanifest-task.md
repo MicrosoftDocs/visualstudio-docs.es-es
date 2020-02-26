@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, UpdateManifest task
 - UpdateManifest task [MSBuild]
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dd2ddfdbe784a45badfd0138b41b1f5dbff8ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 215092d7fbcee8ec30210dd8332bc6ae5b7ad412
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954471"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578277"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (tarea)
 Actualiza las propiedades seleccionadas en un manifiesto y se retira.

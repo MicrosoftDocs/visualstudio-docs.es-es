@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589986"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579797"
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 
@@ -31,7 +31,7 @@ Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **but
 
 ## <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón
 
-1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)**. (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la captura de pantalla siguiente.
+1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla **Esc** para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)** . (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la captura de pantalla siguiente.
 
     ![Ventana Propiedades mostrando el nombre closeButton](../ide/media/express_setnameproperty.png)<br>Ventana ***Propiedades*** *mostrando el* *nombre* ***closeButton***
 
@@ -46,7 +46,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
    En esta pestaña se muestra el archivo de código subyacente del formulario, como se muestra en la captura de pantalla siguiente.
 
     ![Pestaña Form1.cs con código de Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-***Pestaña *** *Form1.cs con código de C#*
+***Pestaña***  *Form1.cs con código de C#*
 
     > [!NOTE]
     > En su lugar, es posible que la pestaña Form1.cs o Form1.vb muestre **showButton** como **ShowButton**.
@@ -69,7 +69,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
 
    Lo que ve es el código llamado `showButton_Click()` (o `ShowButton_Click()`). El IDE lo agregó al código del formulario cuando abrió el archivo de código del botón **showButton** . En tiempo de diseño, cuando abra el archivo de código de un control de un formulario, se generará el código del control si este aún no existe. Este código, conocido como *método*, se ejecuta cuando ejecuta la aplicación y elige el control: en este caso, el botón **Mostrar una imagen**.
 
-1. Vuelva a elegir la pestaña del **Diseñador de Windows Forms** (**Form1.cs [Diseño]**) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.
+1. Vuelva a elegir la pestaña del **Diseñador de Windows Forms** (**Form1.cs [Diseño]** ) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.
 
 1. Si desea agregar varios métodos, abra el archivo de código del control **CheckBox** en el **Diseñador de Windows Forms** para hacer que el IDE agregue un método `checkBox1_CheckedChanged()`. Cada vez que el usuario activa o desactiva la casilla, se llama a este método.
 
@@ -99,7 +99,7 @@ Puede comprobar los nombres eligiendo la lista desplegable de selección de cont
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* Para ir al siguiente paso del tutorial, vea **[Paso 7: Adición de componentes de cuadro de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md)**.
+* Para ir al siguiente paso del tutorial, vea **[Paso 7: Adición de componentes de cuadro de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md)** .
 
 * Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
 
