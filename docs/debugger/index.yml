@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: c98bb7851b2b959e078c954cd8f11b1d4151ce0b
-  ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+  ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
+  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/15/2019
-  ms.locfileid: "72349691"
+  ms.lasthandoff: 02/25/2020
+  ms.locfileid: "77579268"
 landingContent:
 - title: Acerca de la depuración
   linkLists:
@@ -72,8 +72,8 @@ landingContent:
       url: debug-live-azure-applications.md
     - text: Cómo indicar al depurador qué mostrar
       url: using-the-debuggerdisplay-attribute.md
-    - text: Depuración remota
-      url: remote-debugging.md
+    - text: Depuración de problemas de rendimiento >>
+      url: ../profiling/profiling-feature-tour.md
 - title: Colaborar
   linkLists:
   - linkListType: tutorial
