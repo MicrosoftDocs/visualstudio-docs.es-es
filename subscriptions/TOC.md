@@ -28,6 +28,7 @@
 #### [Crédito individual de Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Pago por uso de Azure DevTest](vs-azure-payg.md)
+#### [Azure EA DevTest](azure-ea-devtest.md)
 #### [Resaltado de CAST](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
