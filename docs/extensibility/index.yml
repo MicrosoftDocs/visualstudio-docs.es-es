@@ -1,0 +1,78 @@
+### YamlMime:Landing
+title: Extensibilidad de Visual Studio
+summary: Más información acerca de extensibilidad de Visual Studio
+metadata:
+  title: Extensibilidad de Visual Studio
+  description: Muestra cómo extender Visual Studio.
+  ms.topic: landing-page
+  ms.date: 02/24/2020
+  author: madskristensen
+  ms.author: madsk
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.openlocfilehash: e37a713b133d76bbd3d0e3fa4363238d58407ce4
+  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77910865"
+landingContent:
+- title: Primeros pasos
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Instalar Visual Studio SDK
+      url: /visualstudio/extensibility/installing-the-visual-studio-sdk/
+  - linkListType: overview
+    links:
+    - text: Escribir extensiones de Visual Studio
+      url: https://devblogs.microsoft.com/visualstudio/getting-started-writing-visual-studio-extensions
+  - linkListType: tutorial
+    links:
+    - text: 'Crear la primera extensión: Hello World'
+      url: /visualstudio/extensibility/extensibility-hello-world
+- title: Ampliar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Menús y comandos
+      url: /visualstudio/extensibility/extending-menus-and-commands
+    - text: Ventanas de herramientas
+      url: /visualstudio/extensibility/extending-and-customizing-tool-windows
+    - text: Editor e idiomas
+      url: /visualstudio/extensibility/editor-and-language-service-extensions
+    - text: Protocolo de servidor de lenguaje
+      url: /visualstudio/extensibility/language-server-protocol
+    - text: Configuración y opciones
+      url: /visualstudio/extensibility/extending-user-settings-and-options
+- title: Recursos
+  linkLists:
+  - linkListType: sample
+    links:
+    - text: Ejemplos de extensibilidad de Visual Studio
+      url: https://github.com/Microsoft/VSSDK-Extensibility-Samples
+  - linkListType: learn
+    links:
+    - text: Comunidad de ExtendVS en Gitter
+      url: https://gitter.im/Microsoft/extendvs
+    - text: Blog sobre extensibilidad en Visual Studio
+      url: https://devblogs.microsoft.com/visualstudio/tag/extensions/
+- title: Enviar extensiones
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Publicación de una extensión
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension
+    - text: Publicación de línea de comandos
+      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension-via-command-line
+    - text: Galerías privadas
+      url: https://devblogs.microsoft.com/visualstudio/create-a-private-gallery-for-self-hosted-visual-studio-extensions
+- title: Descubrir las novedades
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: SDK de Visual Studio 2019
+      url: /visualstudio/extensibility/whats-new-visual-studio-2019-sdk
+    - text: SDK de Visual Studio 2017
+      url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk
