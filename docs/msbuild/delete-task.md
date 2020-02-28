@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567468"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557958"
 ---
 # <a name="delete-task"></a>Delete (tarea)
 Elimina los archivos especificados.
@@ -39,6 +39,9 @@ En la siguiente tabla se describen los parámetros de la tarea `Delete` .
 
 ## <a name="remarks"></a>Comentarios
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+> [!WARNING]
+> Tenga cuidado al usar comodines con la tarea `Delete`. Puede eliminar fácilmente los archivos equivocados con expresiones como `$(SomeProperty)\**\*.*` o `$(SomeProperty)/**/*.*`, especialmente si la propiedad se evalúa como una cadena vacía, en cuyo caso el parámetro `Files` puede evaluarse como raíz de la unidad y eliminar mucho más de lo que se quiere.
 
 ## <a name="example"></a>Ejemplo
 En el ejemplo siguiente se elimina el archivo *MyApp.pdb*.

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647517"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579334"
 ---
 # <a name="step-5-add-label-references"></a>Paso 5: Agregar referencias a etiquetas
 El programa necesita realizar un seguimiento de los controles Label que elige el jugador. De momento, el programa muestra todas las etiquetas elegidas por el jugador. Pero vamos a cambiar eso. Después de que se haga elegido la primera etiqueta, el programa debería mostrar el icono correspondiente. Una vez elegida la segunda etiqueta, el programa debe mostrar ambos iconos durante un breve período de tiempo y después ocultar ambos iconos de nuevo. El programa realizará ahora un seguimiento del control Label elegido en primer lugar y del control elegido en segundo lugar mediante *variables de referencia*.

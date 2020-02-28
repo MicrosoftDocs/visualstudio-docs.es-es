@@ -1,6 +1,6 @@
 ---
 title: Introducción a proyectos y soluciones
-ms.date: 07/22/2019
+ms.date: 02/24/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c130f7f55409bd24520dd55e949d20e8d5bbb97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567273"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579978"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 
@@ -92,7 +92,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
-   > Si no ve **Visual C#** en el panel izquierdo del cuadro de diálogo, debe instalar la *carga de trabajo* de **desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera sencilla de instalar una nueva carga de trabajo es hacer clic en el vínculo **Abrir el instalador de Visual Studio** en la esquina inferior izquierda del cuadro de diálogo **Agregar nuevo proyecto**. Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   > Si no ve **Visual C#** en el panel izquierdo del cuadro de diálogo, debe instalar la carga de trabajo **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que se lleva a cabo. Una manera sencilla de instalar una nueva carga de trabajo es hacer clic en el vínculo **Abrir el instalador de Visual Studio** en la esquina inferior izquierda del cuadro de diálogo **Agregar nuevo proyecto**. Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
    >
    > ![Vínculo Abrir el instalador de Visual Studio](media/tutorial-projects-open-installer.png)
 
@@ -113,7 +113,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado QuickDate aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado *App.config*.
 
    > [!NOTE]
-   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , tiene que instalar la *carga de trabajo***Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
+   > Si no ve la plantilla **Proyecto vacío (.NET Framework)** , debe instalar la carga de trabajo **Desarrollo de escritorio de .NET** de Visual Studio. Visual Studio usa la instalación basada en la carga de trabajo para instalar únicamente los componentes necesarios para el tipo de desarrollo que se lleva a cabo. Una manera fácil de instalar una nueva carga de trabajo al crear un nuevo proyecto es seleccionar el vínculo **Instalar más herramientas y características** debajo del texto que indica **¿No encuentra lo que busca?** . Una vez que se abra el Instalador de Visual Studio, elija la carga de trabajo de **desarrollo de escritorio de .NET** y luego haga clic en el botón **Modificar**.
    >
    > ![Vínculo Abrir el instalador de Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -127,7 +127,7 @@ Hay un proyecto vacío. Vamos a agregar un archivo de código.
 
    Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
-1. Expanda **Elementos de Visual C#** y elija **Código**. En el panel central, elija la plantilla de proyecto **Clase**. Ponga el nombre **Calendar** a la clase y luego haga clic en el botón **Agregar**.
+1. Expanda **Elementos de Visual C#** y elija **Código**. En el panel central, seleccione la plantilla de elemento **Clase**. Ponga el nombre **Calendar** a la clase y luego haga clic en el botón **Agregar**.
 
    Un archivo denominado *Calendar.cs* se agrega al proyecto. El fragmento *.cs* del final es la extensión de archivo que tienen los archivos de código de C#. El archivo aparece en la jerarquía visual del proyecto en el **Explorador de soluciones** y su contenido se abre en el editor.
 
@@ -197,7 +197,7 @@ Usaremos el nuevo proyecto de prueba unitaria para probar nuestro método en el 
 
    Se abre el cuadro de diálogo **Administrador de referencias**.
 
-1. En el panel izquierdo, expanda **Proyectos** y elija **Solución**. En el panel central, active la casilla situada junto a **QuickDate** y luego seleccione **Aceptar.
+1. En el panel izquierdo, expanda **Proyectos** y elija **Solución**. En el panel central, active la casilla situada junto a **QuickDate** y, luego, seleccione **Aceptar**.
 
    Se agrega una referencia al proyecto **QuickDate**.
 
@@ -257,8 +257,19 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ![Explorador de pruebas de Visual Studio que muestra una prueba correcta](media/tutorial-projects-test-explorer.png)
 
+::: moniker range="vs-2017"
+
 > [!TIP]
 > Si la ventana **Explorador de pruebas** no se abre automáticamente, ábrala al elegir **Prueba** > **Windows** > **Explorador de pruebas** en la barra de menús.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Si el **Explorador de pruebas** no se abre automáticamente, ábralo seleccionando **Prueba** > **Explorador de pruebas** en la barra de menús.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

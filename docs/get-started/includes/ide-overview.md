@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632448"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590764"
 ---
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
@@ -218,7 +218,7 @@ Vamos a profundizar y crear un programa sencillo.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Vuelva a ejecutar la aplicación mediante la selección de **Depurar** > **Iniciar sin depurar** o presionando **Ctrl**+**F5**.
+1. Vuelva a ejecutar la aplicación seleccionando **Depurar** > **Iniciar sin depurar** o presionando **Ctrl**+**F5**.
 
    Visual Studio recompila la aplicación y se abre una ventana de consola que le solicita su nombre.
 
@@ -287,7 +287,7 @@ Vamos a profundizar y crear un programa sencillo.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Vuelva a ejecutar la aplicación mediante la selección de **Depurar** > **Iniciar sin depurar** o presionando **Ctrl**+**F5**.
+1. Vuelva a ejecutar la aplicación seleccionando **Depurar** > **Iniciar sin depurar** o presionando **Ctrl**+**F5**.
 
    Visual Studio recompila la aplicación y se abre una ventana de consola que le solicita su nombre.
 
@@ -413,7 +413,7 @@ Puede personalizar la interfaz de usuario de Visual Studio, incluso cambiar el t
 
 ::: moniker range="vs-2017"
 
-2. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
+2. En la página de opciones **Entorno** > **General**, cambie la selección **Tema de color** a **Oscuro** y, después, seleccione **Aceptar**.
 
    El tema de color para todo el IDE se cambia a **Oscuro**.
 
@@ -423,7 +423,7 @@ Puede personalizar la interfaz de usuario de Visual Studio, incluso cambiar el t
 
 ::: moniker range=">=vs-2019"
 
-2. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
+2. En la página de opciones **Entorno** > **General**, cambie la selección **Tema de color** a **Oscuro** y, después, seleccione **Aceptar**.
 
    El tema de color para todo el IDE se cambia a **Oscuro**.
 

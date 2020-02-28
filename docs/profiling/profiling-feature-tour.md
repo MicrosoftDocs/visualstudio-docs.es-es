@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929244"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578083"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -58,7 +58,7 @@ Si hace doble clic en una función que le interese, verá una vista de "mariposa
 
 La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Para instrucciones más detalladas sobre el análisis de la memoria, vea [Analyze Memory Usage](../profiling/memory-usage.md) (Análisis del uso de memoria).
 
-Para analizar el uso de memoria, debe tomar al menos una instantánea de memoria durante la depuración. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
+Para analizar el uso de memoria mientras se realiza la depuración, se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
 
 ![Toma de una instantánea en Herramientas de diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Tomar instantáneas en Herramientas de diagnóstico")
 
@@ -81,21 +81,21 @@ En el editor de código también se muestran los mismos eventos, que puede ver c
 
 ![Sugerencias de rendimiento en Paseo por la generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en Paseo por la generación de perfiles")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
-
-En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
-
-![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
-
 ## <a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
 
-Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pueden usarse con el depurador (vea las secciones anteriores) o bien se pueden ejecutar herramientas de generación d perfiles pos-mortem mediante el Generador de perfiles de rendimiento, que está diseñado para proporcionar el análisis de compilaciones de **Versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador).
+Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pueden usarse con el depurador (vea las secciones anteriores) o bien se pueden ejecutar herramientas de generación d perfiles pos-mortem mediante el Generador de perfiles de rendimiento, que está diseñado para proporcionar el análisis de compilaciones de **Versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). En el Generador de perfiles de rendimiento también hay disponibles otras herramientas, como la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 
 ![Generador de perfiles de rendimiento](../profiling/media/prof-tour-performance-profiler.png "Generador de perfiles de rendimiento")
 
 Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento**.
 
-La ventana le permitirá seleccionar varias herramientas de generación de perfiles en algunos escenarios. Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis.
+La ventana le permitirá seleccionar varias herramientas de generación de perfiles en algunos escenarios. Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis. También puede usar el [generador de perfiles de la línea de comandos](../profiling/profile-apps-from-command-line.md) para habilitar escenarios con varias herramientas de generación de perfiles.
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
+
+En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
+
+![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
 
 ## <a name="analyze-resource-consumption-xaml"></a>Análisis del consumo de recursos (XAML)
 
@@ -105,7 +105,7 @@ Los valores de framerate bajos en el gráfico **Rendimiento visual** podrían co
 
 ![Herramienta de generación de perfiles de Escala de tiempo de la aplicación](../profiling/media/prof-tour-application-timeline.gif "Escala de tiempo de la aplicación en Paseo por la generación de perfiles")
 
-En la vista Detalles de la escala de tiempo, encontrará información como el tipo de actividad (o el elemento de la interfaz de usuario implicado) junto con la duración de la actividad. Por ejemplo, en la ilustración, un evento de **Diseño** para un control de cuadrícula tarda 57,53 ms.
+En la vista Detalles de la escala de tiempo, puede encontrar información como el tipo de actividad (o el elemento de la interfaz de usuario implicado) junto con la duración de la actividad. Por ejemplo, en la ilustración, un evento de **Diseño** para un control de cuadrícula tarda 57,53 ms.
 
 Para obtener más información, vea [Application Timeline](../profiling/application-timeline.md) (Escala de tiempo de la aplicación).
 
@@ -149,7 +149,13 @@ Para obtener más información, vea [Network Usage](../profiling/network-usage.m
 
 ## <a name="analyze-performance-legacy-tools"></a>Análisis de rendimiento (herramientas heredadas)
 
+::: moniker range="vs-2017"
 Si necesita características que no están actualmente presentes en las herramientas Uso de CPU o Uso de memoria, como la instrumentación, y ejecuta aplicaciones ASP.NET o de escritorio, puede usar el Explorador de rendimiento para la generación de perfiles. (No se admite en aplicaciones UWP). Para más información, vea [Explorador de rendimiento](../profiling/performance-explorer.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+En Visual Studio 2019, el Explorador de rendimiento heredado y las herramientas de generación de perfiles relacionadas, como el Asistente de rendimiento, se han incorporado al Generador de perfiles de rendimiento, que se puede abrir mediante **Depurar** > **Generador de perfiles de rendimiento**. En el Generador de perfiles de rendimiento, las herramientas de diagnóstico disponibles dependen del destino elegido y del proyecto de inicio abierto actual. La herramienta Uso de CPU proporciona la capacidad de muestreo anteriormente admitida en el Asistente de rendimiento. La herramienta Instrumentación proporciona la capacidad de generación de perfiles instrumentada (para recuentos y duraciones de llamadas precisos) que se encontraba en el Asistente de rendimiento. En el Generador de perfiles de rendimiento, además, aparecen otras herramientas de memoria.
+::: moniker-end
 
 ![Herramienta Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
 
@@ -162,6 +168,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |----------------------|---------------------|-------------|-------------|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|

@@ -11,12 +11,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610889"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544545"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Agregar instrucciones Using que faltan en Visual Studio
 
@@ -26,7 +26,7 @@ Esta generación de código se aplica a:
 
 **Qué:** Permite agregar inmediatamente las directivas import o [using](/dotnet/csharp/language-reference/keywords/using-directive) necesarias del código copiado y pegado.
 
-**Cuándo:** Es habitual copiar código de distintos lugares del proyecto u otros orígenes y pegarlo en el nuevo código. Esta acción rápida busca las directivas de importaciones que faltan en el código copiado y pegado y, luego, le pide que las agregue.
+**Cuándo:** Es habitual copiar código de distintos lugares del proyecto u otros orígenes y pegarlo en el nuevo código. Esta acción rápida busca las directivas de importaciones que faltan en el código copiado y pegado y, luego, le pide que las agregue. Esta corrección de código también puede agregar referencias de proyecto a proyecto.
 
 **Por qué:** Dado que la acción rápida agrega automáticamente las importaciones necesarias, no es necesario copiar manualmente las directivas `using` que necesita el código.
 

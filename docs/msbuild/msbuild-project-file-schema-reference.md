@@ -15,19 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def9edb232a37bc58a56ffd1ec9a16bcb1b75092
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590324"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557807"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referencia de esquemas del archivo del proyecto MSBuild
+
 Proporciona una tabla de todos los elementos de esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con los atributos disponibles y elementos secundarios.
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza archivos del proyecto para indicar al motor de compilación qué y cómo debe compilar. Los archivos del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] son archivos XML que cumplen el esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. En esta sección se documenta el archivo de definición de esquema XML ( *.xsd*) para [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
+El vínculo de esquema de un archivo de proyecto de MSBuild no es necesario en Visual Studio 2017 y versiones posteriores. Si está presente, debe ser ` http://schemas.microsoft.com/developer/msbuild/2003` independientemente de la versión de Visual Studio.
+
 ## <a name="msbuild-xml-schema-elements"></a>Elementos de esquema XML de MSBuild
+
  En la tabla siguiente se enumeran todos los elementos de esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] junto con sus elementos secundarios y atributos.
 
 |Elemento|Elementos secundarios|Atributos|
@@ -56,6 +60,7 @@ Proporciona una tabla de todos los elementos de esquema XML [!INCLUDE[vstecmsbui
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Elegir<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condición|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Condiciones](../msbuild/msbuild-conditions.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

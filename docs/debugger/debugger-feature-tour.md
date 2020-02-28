@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599299"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578960"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -33,7 +33,7 @@ Si tiene un archivo abierto en el editor de código, puede establecer un punto d
 
 ![Establecimiento de un punto de interrupción](../debugger/media/dbg-tour-set-a-breakpoint.gif "Establecer un punto de interrupción")
 
-Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas de depuración para que el depurador se ejecute hasta el primer punto de interrupción que encuentre. Si la aplicación todavía no se está ejecutando, F5 inicia el depurador y lo detiene en el primer punto de interrupción.
+Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración**![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas de depuración para que el depurador se ejecute hasta el primer punto de interrupción que encuentre. Si la aplicación todavía no se está ejecutando, F5 inicia el depurador y lo detiene en el primer punto de interrupción.
 
 Los puntos de interrupción son una característica de utilidad cuando se conoce la línea o la sección de código que se quiere examinar en detalle.
 
@@ -93,7 +93,7 @@ Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurado
 
 ## <a name="run-to-cursor"></a>Ejecutar hasta el cursor
 
-Para detener el depurador, presione el botón rojo **Detener depuración** ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración") o **Mayús** + **F5**.
+Para detener el depurador, presione el botón rojo **Detener depuración**![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración") o **Mayús** + **F5**.
 
 Haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
 
@@ -110,7 +110,7 @@ Este comando resulta útil cuando se edita código y se quiere establecer rápid
 
 ## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Reiniciar aplicación") de la barra de herramientas de depuración (**Ctrl + Mayús +F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "Reiniciar aplicación") de la barra de herramientas de depuración (**Ctrl+Mayús+F5**).
 
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
@@ -208,7 +208,7 @@ Puede configurar el proyecto para que se compile como una [configuración de dep
 
 Las propiedades de depuración son específicas de cada tipo de proyecto. Por ejemplo, puede especificar un argumento que se pasa a la aplicación cuando se inicia. Para acceder a las propiedades específicas del proyecto, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y seleccione **Propiedades**. Las propiedades de depuración suelen aparecer en la pestaña **Compilar** o **Depurar**, en función del tipo de proyecto específico.
 
-![Propiedades del proyecto](../debugger/media/dbg-tour-project-properties.png "Propiedades del proyecto")
+![Propiedades de proyecto](../debugger/media/dbg-tour-project-properties.png "Propiedades del proyecto")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicaciones ASP.NET activas en Azure App Service
 
@@ -229,6 +229,10 @@ Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a 
 ![Botones Retroceder paso a paso y Avanzar paso a paso](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
 Para obtener más información, vea la página [Inspeccionar el estado de aplicación anterior mediante step-back de IntelliTrace en Visual Studio](../debugger/view-historical-application-state.md).
+
+## <a name="debug-performance-issues"></a>Depuración de problemas de rendimiento
+
+Si la aplicación se ejecuta con demasiada lentitud o usa demasiada memoria, es posible que deba probarla con las herramientas de generación de perfiles en una fase temprana. Para obtener más información sobre herramientas de generación de perfiles como Uso de CPU y Analizador de memoria, vea [un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

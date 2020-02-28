@@ -2,25 +2,25 @@
 title: 'Tutorial: Creación de una aplicación de consola de C# sencilla'
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830010"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580016"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -46,7 +46,7 @@ Para empezar, crearemos un proyecto de aplicación de C#. En el tipo de proyecto
 
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
    (Como alternativa, presione **Ctrl**+**Mayús**+**N**).
 
 3. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **C#** y elija **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne el nombre ***Calculator*** al archivo.
@@ -69,7 +69,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opción 2: Uso de la barra del menú Herramientas
 
-1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas**>**Obtener herramientas y características...**
+1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas** > **Obtener herramientas y características**.
 
 1. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
@@ -133,6 +133,9 @@ Empecemos con algunos cálculos básicos de enteros en C#.
     ```
 
     Tenga en cuenta que, al hacerlo, la función IntelliSense en Visual Studio le ofrece la opción de autocompletar la entrada.
+
+    > [!NOTE]
+    > La animación siguiente no está pensada para duplicar el código anterior. Su único fin es mostrar cómo funciona la característica Autocompletar.
 
     ![Animación de código de cálculos de enteros que muestra la función autocompletar de IntelliSense en el IDE de Visual Studio](./media/integer-math-intellisense.gif)
 
@@ -242,7 +245,7 @@ Vamos a corregir el código de forma que dé cabida a los decimales.
 
 1. Cambie cada instancia de la variable `int` por `float`.
 
-   Asegúrese de que alterna **Coincidir mayúsculas y minúsculas** (**Alt**+**C**) y **Solo palabras completas** (**Alt** + **W**) en el control **Buscar y reemplazar**.
+   Asegúrese de que alterna **Coincidir mayúsculas y minúsculas** (**Alt**+**C**) y **Solo palabras completas** (**Alt**+**W**) en el control **Buscar y reemplazar**.
 
     ![Animación del control Buscar y reemplazar donde se muestra cómo cambiar la variable int a float](./media/find-replace-control-animation.gif)
 
@@ -268,18 +271,21 @@ Sin embargo, la aplicación genera solo un resultado decimal. Vamos a hacer algu
 
 Hemos mejorado nuestra aplicación de calculadora básica, pero todavía carece de notificaciones de error que permitan controlar excepciones, como los errores que los usuarios cometen al escribir.
 
-Por ejemplo, si intentamos dividir un número entre cero o introducir un carácter alfanumérico cuando la aplicación espera un carácter numérico (o viceversa), la aplicación deja de funcionar y devuelve un error.
+Por ejemplo, si se intenta dividir un número por cero o especificar un carácter alfanumérico cuando la aplicación espera uno numérico (o viceversa), la aplicación puede dejar de funcionar, devolver un error o devolver un resultado no numérico inesperado.
 
-Vamos a ver algunos errores comunes de entradas de usuario, localizarlos en el depurador y corregirlos en el código.
+Vamos a ver algunos errores comunes de entrada de usuario, a localizarlos en el depurador si aparecen allí y a corregirlos en el código.
 
->[!TIP]
->Para más información sobre el depurador y cómo funciona, vea la página [Primer vistazo al depurador de Visual Studio](../../debugger/debugger-feature-tour.md).
+> [!TIP]
+> Para más información sobre el depurador y cómo funciona, vea la página [Primer vistazo al depurador de Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Corregir el error "división entre cero"
 
-Cuando intentamos dividir un número entre cero, la aplicación de consola se congela. Luego, Visual Studio señala qué es incorrecto en el editor de código.
+Al intentar dividir un número por cero, es posible que la aplicación de consola se inmovilice y, luego, muestre el problema en el editor de código.
 
    ![Editor de código de Visual Studio que muestra el error de división entre cero](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> A veces, la aplicación no se inmoviliza ni el depurador muestra un error de división por cero, sino que la aplicación puede devolver un resultado no numérico inesperado, como un símbolo de infinito. La corrección de código siguiente sigue siendo válida.
 
 Vamos a cambiar el código para controlar este error.
 

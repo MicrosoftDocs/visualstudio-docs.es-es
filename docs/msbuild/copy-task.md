@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed57982fb177a49ed89bbe601d753fe155aba22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596091"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558168"
 ---
 # <a name="copy-task"></a>Copy (tarea)
 Copia los archivos en una nueva ubicación del sistema de archivos.
@@ -36,7 +36,7 @@ En la siguiente tabla se describen los parámetros de la tarea `Copy` .
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|`CopiedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos que se copiaron correctamente.|
+|`CopiedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos que se han copiado correctamente, *incluidos* aquellos que no se han copiado realmente, sino que se han omitido porque ya estaban actualizados y `SkipUnchangedFiles` era `true`.|
 |`DestinationFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la lista de archivos en la que se copiarán los archivos de código fuente. Se espera que esta lista sea una asignación unívoca con la lista especificada en el parámetro `SourceFiles`. Es decir, el primer archivo especificado en `SourceFiles` se copiará en la primera ubicación especificada en `DestinationFiles`, etc.|
 |`DestinationFolder`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el directorio en el que desea copiar los archivos. Este debe ser un directorio, no un archivo. Si el directorio no existe, se crea automáticamente.|
 |`OverwriteReadOnlyFiles`|Parámetro `Boolean` opcional.<br /><br /> Sobrescribe los archivos aunque estén marcados como archivos de solo lectura|

@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829991"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579938"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -67,7 +67,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , puede
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opción 2: Uso de la barra del menú Herramientas
 
-1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas**>**Obtener herramientas y características...**
+1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas** > **Obtener herramientas y características**.
 
 1. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
@@ -173,7 +173,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 
 ::: moniker range="vs-2017"
 
-1. Abra Visual Studio 2017 y, en la barra de menús superior, seleccione **Archivo**>**Nuevo**>**Proyecto**.
+1. Abra Visual Studio 2017 y, en la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)** . Después, asigne el nombre *CalculateThis* al archivo.
 
