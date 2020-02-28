@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984564"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567977"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
@@ -20,6 +20,13 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 
 > [!TIP]
 > Los métodos abreviados de teclado que se muestran en este documento y las preferencias de enlaces de teclado de Visual Studio para Mac se presentan con los símbolos comúnmente usados en macOS. Si no está seguro de lo que significa un símbolo, revise la [tabla de búsqueda de los símbolos de teclas de macOS](#macos-key-symbols-lookup).
+
+## <a name="downloadable-quick-ref-pdfs"></a>Archivos PDF descargables de referencia rápida
+
+Se han compilado los métodos abreviados de teclado más usados y prácticos en un archivo PDF descargable. Hay dos versiones: una que muestra accesos directos de Visual Studio para Mac y otra que muestra accesos directos de Visual Studio en paralelo para los usuarios que cuentan con experiencia previa con Visual Studio al usar Windows.
+
+ - [Referencia rápida de métodos abreviados de teclado de Visual Studio para Mac](https://aka.ms/vsm-keys)
+ - [Referencia rápida de métodos abreviados de teclado de Visual Studio y Visual Studio para Mac](https://aka.ms/vsm-vs-keys)
 
 ## <a name="code-navigation"></a>Navegación por el código
 

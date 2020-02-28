@@ -8,21 +8,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98382cdcde1e8413d7b6592b52aaee09e6c4274c
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923332"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578165"
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
-Utilice la herramienta de diagnóstico **Uso de memoria** con depurador integrado para buscar usos ineficaces y fugas de memoria. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, ASP.NET, nativas o de modo mixto (.NET y nativas).
 
-- Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.
+Para detectar fugas y usos ineficaces de memoria, puede usar utilidades como la herramienta de diagnóstico Uso de memoria integrada en el depurador o herramientas del Generador de perfiles de rendimiento como la herramienta Asignación de objetos .NET y la herramienta Uso de memoria final. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, ASP.NET, nativas o de modo mixto (.NET y nativas). 
 
-- También puede comparar (diff) dos instantáneas de una aplicación para buscar las áreas del código que generen un aumento del uso de la memoria con el tiempo.
+La herramienta **Uso de memoria** puede ejecutarse en un proyecto abierto de Visual Studio, en una aplicación instalada de Microsoft Store o asociada a una aplicación o un proceso en ejecución. Puede ejecutar la herramienta en equipos locales o remotos, o en un simulador o emulador. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Para obtener instrucciones detalladas, vea el tutorial [Análisis del uso de memoria](../profiling/memory-usage.md).  Actualmente, para medir el uso de memoria de una aplicación .NET Core, debe usar la herramienta con el depurador adjunto. Para otras aplicaciones administradas y nativas, puede usar la herramienta ya sea con o sin el depurador adjunto.
+Puede ejecutar la herramienta **Uso de memoria** con o sin depuración. En el depurador, puede activar y desactivar la generación de perfiles de memoria y ver un desglose por objeto de uso de memoria. Puede ver los resultados de uso de memoria mientras la ejecución está en pausa, por ejemplo, en un punto de interrupción.
+
+La herramienta **Asignación de objetos .NET** solo se ejecuta como herramienta final.
+
+Para obtener instrucciones detalladas en las que se explica cómo usar las herramientas de uso de memoria, vea el tutorial [Analizar el uso de memoria](../profiling/memory-usage.md) y la herramienta [Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 
 Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 

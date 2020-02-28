@@ -1,8 +1,8 @@
 ---
-title: Medir el uso de CPU desde la línea de comandos
-description: Mida el rendimiento de la CPU de la aplicación desde la línea de comandos.
+title: Medición del rendimiento desde la línea de comandos
+description: Mida el rendimiento de la CPU y el uso de memoria administrada de la aplicación desde la línea de comandos.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972426"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558123"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir el rendimiento de la aplicación desde la línea de comandos
 
@@ -74,7 +74,7 @@ Por comodidad, puede almacenar esa información en un archivo de configuración 
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * Configuraciones de CpuUsage (Base/Alta/Baja), que corresponden a los datos recopilados de la herramienta de generación de perfiles [Uso de CPU](../profiling/cpu-usage.md).
-* Configuraciones de DotNetObjectAlloc (Base/Baja), que corresponden a los datos recopilados de la [herramienta de asignación de objetos .NET](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling).
+* Configuraciones de DotNetObjectAlloc (Base/Baja), que corresponden a los datos recopilados de la [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 
 Las configuraciones Base/Baja/Alta hacen referencia a la velocidad de muestreo. Por ejemplo, Baja es 100 muestras por segundo y Alta es 4000 muestras por segundo.
 

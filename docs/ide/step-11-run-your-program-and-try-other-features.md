@@ -5,17 +5,17 @@ ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118801"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579893"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Paso 11: Ejecutar el visor de imágenes y probar otras características
 

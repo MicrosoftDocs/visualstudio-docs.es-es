@@ -9,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: ba8a29a75b21351d94c818837f07ff22785a07b5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864808"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579986"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -62,11 +62,11 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 ::: moniker range="vs-2017"
 
-1. Cree un nuevo proyecto. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. Cree un nuevo proyecto. En la barra de menús, seleccione **Archivo**  > **Nuevo** > **Proyecto**.
 
-     ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png "Captura de pantalla de la barra de menús cuando se elige Archivo, Nuevo, Proyecto")
+     ![En la barra de menús, seleccione Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png "Captura de pantalla de la barra de menús donde se selecciona Archivo, Nuevo, Proyecto")
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual C#**  > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual C#**  > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newprojectcsharp.png "Captura de pantalla de la plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto")
 
@@ -78,24 +78,24 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 1. En la ventana de inicio, elija **Crear proyecto**.
 
-   ![Ver la ventana "Crear un proyecto nuevo"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana \"Crear un proyecto nuevo\"")
+   ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/start-window-create-new-project.png "Captura de pantalla de la ventana "Crear un proyecto"")
 
 1. En la pantalla **Crear un proyecto nuevo**, busque "WPF", elija **Aplicación WPF (.NET Core)** y después seleccione **Siguiente**.
 
-   ![Plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto nuevo"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de pantalla de la plantilla de aplicación de WPF en el cuadro de diálogo \"Crear un proyecto nuevo\"")
+   ![Plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Captura de pantalla de la plantilla de aplicación de WPF en el cuadro de diálogo "Crear un proyecto"")
 
    > [!NOTE]
    > Es posible que encuentre dos plantillas de escritorio de WPF, una para .NET Framework y otra para .NET Core. La plantilla de .NET Core está disponible en la versión 16.3 de Visual Studio 2019 y versiones posteriores. Puede usar cualquiera de ellas para este tutorial, pero se recomienda .NET Core para el desarrollo nuevo.
 
 1. En la pantalla siguiente, asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Crear**.
 
-   ![Asignarle al proyecto el nombre "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png "Captura de pantalla de la ventana donde se le asigna un nombre al proyecto")
+   ![Proyecto denominado "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png "Captura de pantalla de la ventana donde se asigna nombre al proyecto")
 
 ::: moniker-end
 
 Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML.
 
-![Solución y proyecto de WPF en el IDE](media/exploreide-wpfproject-cs.png "Captura de pantalla de la solución y el proyecto de WPF en el IDE")
+![Proyecto y solución de WPF en el IDE](media/exploreide-wpfproject-cs.png "Captura de pantalla del proyecto y la solución de WPF en el IDE")
 
 > [!NOTE]
 > Para más información sobre XAML (eXtensible Application Markup Language), consulte la página [Información general XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
@@ -120,13 +120,13 @@ Agregaremos tres tipos de controles a esta aplicación: un control <xref:System.
 
 1. En el **Cuadro de herramientas**, expanda el nodo **Controles WPF comunes** para ver el control TextBlock.
 
-     ![Cuando de herramientas con el control TextBlock resaltado](../media/exploreide-textblocktoolbox.png "Captura de pantalla de la ventana Cuadro de herramientas con el control TextBlock resaltado")
+     ![Cuadro de herramientas con el control TextBlock resaltado](../media/exploreide-textblocktoolbox.png "Captura de pantalla de la ventana Cuadro de herramientas con el control TextBlock resaltado")
 
 1. Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana. En Visual Studio 2019 y versiones posteriores, puede usar las guías de color rojo para centrar el control.
 
     La ventana debería ser similar a la siguiente ilustración:
 
-    ![Control TextBlock en el formulario Greetings](../media/exploreide-greetingswithtextblockonly.png "Captura de pantalla del control TextBlock en el formulario Greetings")
+    ![Control TextBlock del formulario Greetings](../media/exploreide-greetingswithtextblockonly.png "Captura de pantalla del control TextBlock en el formulario Greetings")
 
    El marcado XAML debe tener un aspecto similar al siguiente ejemplo:
 
@@ -269,7 +269,7 @@ En este paso, buscará el error que se ha producido anteriormente al cambiar el 
 
    Aparece la ventana **Modo de interrupción** y en la ventana **Salida** se indica que se ha producido una excepción IOException: No se encuentra el recurso "mainwindow.xaml".
 
-   ![Mensaje IOException](../media/exploreide-ioexception.png "Captura de pantalla del mensaje IOException")
+   ![Mensaje de IOException](../media/exploreide-ioexception.png "Captura de pantalla del mensaje IOException")
 
 1. Detenga el depurador. Para ello, elija **Depurar** > **Detener depuración**.
 
