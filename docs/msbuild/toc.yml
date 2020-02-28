@@ -1,6 +1,6 @@
 - name: MSBuild
   items:
-    - name: MsBuild
+    - name: MSBuild
       href: msbuild.md
     - name: Novedades de MSBuild 16.0
       href: whats-new-msbuild-16-0.md
@@ -13,11 +13,11 @@
           href: msbuild-concepts.md
         - name: Propiedades
           items:
-            - name: Propiedades de MSBuild
+            - name: propiedades de MSBuild
               href: msbuild-properties.md
-            - name: Usar variables de entorno al compilar
+            - name: Usar variables de entorno en una compilación
               href: how-to-use-environment-variables-in-a-build.md
-            - name: Hacer referencia al nombre o a la ubicación del archivo de proyecto
+            - name: Hacer referencia al nombre o la ubicación del archivo de proyecto
               href: how-to-reference-the-name-or-location-of-the-project-file.md
             - name: Compilar los mismos archivos de código fuente con diferentes opciones
               href: how-to-build-the-same-source-files-with-different-options.md
@@ -35,35 +35,35 @@
               href: how-to-display-an-item-list-separated-with-commas.md
             - name: Definiciones de elementos
               href: item-definitions.md
-            - name: Funciones de elementos
+            - name: funciones de elementos
               href: item-functions.md
         - name: Destinos
           items:
-            - name: Objetivos de MSBuild
+            - name: Destinos de MSBuild
               href: msbuild-targets.md
             - name: Orden de compilación de destinos
               href: target-build-order.md
             - name: Compilaciones incrementales
               href: incremental-builds.md
-            - name: Especificar qué destino se compila primero
+            - name: Especificar qué destino usar primero al compilar
               href: how-to-specify-which-target-to-build-first.md
             - name: Usar el mismo destino en varios archivos de proyecto
               href: how-to-use-the-same-target-in-multiple-project-files.md
             - name: Compilar destinos específicos en soluciones mediante MSBuild.exe
               href: how-to-build-specific-targets-in-solutions-by-using-msbuild-exe.md
-            - name: Compilar de forma incremental
+            - name: Compilación de forma incremental
               href: how-to-build-incrementally.md
             - name: Limpiar una compilación
               href: how-to-clean-a-build.md
-            - name: Hacer referencia a un SDK de un proyecto de MSBuild
+            - name: Referencia a un SDK de un proyecto de MSBuild
               href: how-to-use-project-sdk.md
         - name: Tareas
           items:
-            - name: Tareas de MSBuild
+            - name: tareas de MSBuild
               href: msbuild-tasks.md
             - name: Escribir tareas
               href: task-writing.md
-            - name: Pasar por alto errores de las tareas
+            - name: Pasar errores por alto en las tareas
               href: how-to-ignore-errors-in-tasks.md
             - name: Compilar un proyecto que tiene recursos
               href: how-to-build-a-project-that-has-resources.md
@@ -71,7 +71,7 @@
               items:
                 - name: Tareas insertadas de MSBuild
                   href: msbuild-inline-tasks.md
-                - name: 'Tutorial: Crear una tarea en línea'
+                - name: 'Tutorial: Creación de una tarea insertada'
                   href: walkthrough-creating-an-inline-task.md
             - name: Tareas insertadas de MSBuild con RoslynCodeTaskFactory
               href: msbuild-roslyncodetaskfactory.md
@@ -95,15 +95,15 @@
               href: msbuild-batching.md
             - name: Metadatos de elementos en el procesamiento por lotes de tareas
               href: item-metadata-in-task-batching.md
-            - name: Metadatos de elementos en procesamiento por lotes de destinos
+            - name: Metadatos de elementos en el procesamiento por lotes de destinos
               href: item-metadata-in-target-batching.md
         - name: Transformaciones de MSBuild
           href: msbuild-transforms.md
-        - name: Integración de Visual Studio
+        - name: integración de Visual Studio
           items:
             - name: Integración de Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
-            - name: Extender el proceso de compilación de Visual Studio
+            - name: para ampliar el proceso de compilación de Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
             - name: Iniciar una compilación desde el IDE
               href: starting-a-build-from-within-the-ide.md
@@ -119,7 +119,7 @@
               href: using-memory-efficiently-when-you-build-large-projects.md
         - name: Compatibilidad con múltiples versiones (multi-targeting)
           items:
-            - name: Información general sobre compatibilidad con múltiples versiones (multi-targeting) de MSBuild
+            - name: Introducción a la compatibilidad con múltiples versiones (multi-targeting) de MSBuild
               href: msbuild-multitargeting-overview.md
             - name: Conjunto de herramientas (ToolsVersion)
               items:
@@ -127,11 +127,11 @@
                   href: msbuild-toolset-toolsversion.md
                 - name: Configuraciones de conjuntos de herramientas estándar y personalizados
                   href: standard-and-custom-toolset-configurations.md
-                - name: Invalidar el valor de la versión de herramientas
+                - name: Invalidar la configuración de ToolsVersion
                   href: overriding-toolsversion-settings.md
-            - name: Plataforma de destino de MSBuild
+            - name: Versión de .NET Framework de destino y plataforma de destino de MSBuild
               href: msbuild-target-framework-and-target-platform.md
-            - name: Resolver ensamblados en tiempo de diseño
+            - name: Resolución de ensamblados en tiempo de diseño
               href: resolving-assemblies-at-design-time.md
             - name: Configuración de destinos y tareas
               items:
@@ -139,7 +139,7 @@
                   href: configuring-targets-and-tasks.md
                 - name: Configurar destinos y tareas
                   href: how-to-configure-targets-and-tasks.md
-            - name: "Solución de problemas de la versión de .NET\_Framework de destino"
+            - name: Solucionar problemas de versión de .NET Framework de destino
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Seguimiento de archivos
           items:
@@ -192,7 +192,7 @@
         - name: Información general
           displayName: msbuild reference
           href: msbuild-reference.md
-        - name: Referencia de esquemas del archivo de proyecto MSBuild
+        - name: Referencia de esquemas del archivo del proyecto MSBuild
           items:
             - name: Información general
               displayName: Project File Schema Reference
@@ -217,11 +217,11 @@
               href: otherwise-element-msbuild.md
             - name: Elemento Output
               href: output-element-msbuild.md
-            - name: Parameter (Elemento)
+            - name: Elemento Parameter
               href: parameter-element.md
             - name: ParameterGroup (Elemento)
               href: parametergroup-element.md
-            - name: Elemento Project
+            - name: Elemento de proyecto
               href: project-element-msbuild.md
             - name: Elemento ProjectExtensions
               href: projectextensions-element-msbuild.md
@@ -231,7 +231,7 @@
               href: propertygroup-element-msbuild.md
             - name: Elemento Sdk
               href: sdk-element-msbuild.md
-            - name: Elemento Target
+            - name: 'Target, elemento'
               href: target-element-msbuild.md
             - name: Elemento Task
               href: task-element-msbuild.md
@@ -244,28 +244,28 @@
         - name: Referencia de tareas
           items:
             - name: Información general
-              displayName: Task Reference
+              displayName: task reference
               href: msbuild-task-reference.md
             - name: Tareas específicas de C++
               items:
                 - name: Información general
                   displayName: C++ tasks
                   href: msbuild-tasks-specific-to-visual-cpp.md
-                - name: BscMake (Tarea)
+                - name: Tarea BscMake
                   href: bscmake-task.md
-                - name: CL (Tarea)
+                - name: CL (tarea)
                   href: cl-task.md
-                - name: CPPClean (Tarea)
+                - name: Tarea CPPClean
                   href: cppclean-task.md
-                - name: ClangCompile (Tarea)
+                - name: Tarea ClangCompile
                   href: clangcompile-task.md
-                - name: CustomBuild (Tarea)
+                - name: Tarea CustomBuild
                   href: custombuild-task.md
-                - name: FXC (Tarea)
+                - name: Tarea FXC
                   href: fxc-task.md
-                - name: GetOutOfDateItems (Tarea)
+                - name: Tarea GetOutOfDateItems
                   href: getoutofdateitems-task.md
-                - name: GetOutputFileName (Tarea)
+                - name: Tarea GetOutputFileName
                   href: getoutputfilename-task.md
                 - name: LIB (tarea)
                   href: lib-task.md
@@ -273,159 +273,159 @@
                   href: link-task.md
                 - name: MIDL (tarea)
                   href: midl-task.md
-                - name: MT (Tarea)
+                - name: MT (tarea)
                   href: mt-task.md
-                - name: MultiTool (Tarea)
+                - name: Tarea MultiTool
                   href: multitooltask-task.md
-                - name: ParallelCustomBuild (Tarea)
+                - name: Tarea ParallelCustomBuild
                   href: parallelcustombuild-task.md
-                - name: RC (Tarea)
+                - name: RC (tarea)
                   href: rc-task.md
-                - name: SetEnv (Tarea)
+                - name: Tarea SetEnv
                   href: setenv-task.md
-                - name: TrackedVCToolTask (Clase base)
+                - name: Clase base TrackedVCToolTask
                   href: trackedvctooltask-base-class.md
-                - name: VCMessage (Tarea)
+                - name: VCMessage (tarea)
                   href: vcmessage-task.md
-                - name: VCToolTask (Clase base)
+                - name: Clase base VCToolTask
                   href: vctooltask-base-class.md
-                - name: XDCMake (Tarea)
+                - name: XDCMake (tarea)
                   href: xdcmake-task.md
                 - name: XSD (tarea)
                   href: xsd-task.md
-            - name: Task Base (Clase)
+            - name: Clase base Task
               href: task-base-class.md
-            - name: TaskExtension (Clase base)
+            - name: Clase base TaskExtension
               href: taskextension-base-class.md
-            - name: ToolTaskExtension (Clase base)
+            - name: Clase base ToolTaskExtension
               href: tooltaskextension-base-class.md
             - name: Diagnóstico de errores de tareas
               href: diagnosing-task-failures.md
             - name: 'AL (Assembly Linker, Tarea)'
               href: al-assembly-linker-task.md
-            - name: AspNetCompiler (Tarea)
+            - name: AspNetCompiler (tarea)
               href: aspnetcompiler-task.md
-            - name: AssignCulture (Tarea)
+            - name: AssignCulture (tarea)
               href: assignculture-task.md
             - name: AssignProjectConfiguration (Tarea)
               href: assignprojectconfiguration-task.md
-            - name: AssignTargetPath (Tarea)
+            - name: Tarea AssignTargetPath
               href: assigntargetpath-task.md
-            - name: CallTarget (Tarea)
+            - name: CallTarget (tarea)
               href: calltarget-task.md
-            - name: CombinePath (Tarea)
+            - name: CombinePath (tarea)
               href: combinepath-task.md
-            - name: ConvertToAbsolutePath (Tarea)
+            - name: ConvertToAbsolutePath (tarea)
               href: converttoabsolutepath-task.md
-            - name: Copy (Tarea)
+            - name: Copy (tarea)
               href: copy-task.md
-            - name: CreateCSharpManifestResourceName (Tarea)
+            - name: CreateCSharpManifestResourceName (tarea)
               href: createcsharpmanifestresourcename-task.md
-            - name: CreateItem (Tarea)
+            - name: CreateItem (tarea)
               href: createitem-task.md
-            - name: CreateProperty (Tarea)
+            - name: CreateProperty (tarea)
               href: createproperty-task.md
-            - name: CreateVisualBasicManifestResourceName (Tarea)
+            - name: CreateVisualBasicManifestResourceName (tarea)
               href: createvisualbasicmanifestresourcename-task.md
-            - name: Csc (Tarea)
+            - name: Csc (tarea)
               href: csc-task.md
-            - name: Delete (Tarea)
+            - name: Delete (tarea)
               href: delete-task.md
-            - name: Tarea DownloadFile
+            - name: DownloadFile (Tarea)
               href: downloadfile-task.md
-            - name: Error (Tarea)
+            - name: Error (tarea)
               href: error-task.md
-            - name: Exec (Tarea)
+            - name: Exec (tarea)
               href: exec-task.md
-            - name: FindAppConfigFile (Tarea)
+            - name: FindAppConfigFile (tarea)
               href: findappconfigfile-task.md
-            - name: FindInList (Tarea)
+            - name: FindInList (tarea)
               href: findinlist-task.md
-            - name: FindUnderPath (Tarea)
+            - name: FindUnderPath (tarea)
               href: findunderpath-task.md
-            - name: FormatUrl (Tarea)
+            - name: FormatUrl (tarea)
               href: formaturl-task.md
-            - name: FormatVersion (Tarea)
+            - name: Tarea FormatVersion
               href: formatversion-task.md
-            - name: GenerateApplicationManifest (Tarea)
+            - name: GenerateApplicationManifest (tarea)
               href: generateapplicationmanifest-task.md
-            - name: GenerateBootstrapper (Tarea)
+            - name: GenerateBootstrapper (tarea)
               href: generatebootstrapper-task.md
-            - name: GenerateDeploymentManifest (Tarea)
+            - name: GenerateDeploymentManifest (tarea)
               href: generatedeploymentmanifest-task.md
-            - name: GenerateResource (Tarea)
+            - name: GenerateResource (tarea)
               href: generateresource-task.md
-            - name: GenerateTrustInfo (Tarea)
+            - name: GenerateTrustInfo (tarea)
               href: generatetrustinfo-task.md
-            - name: GetAssemblyIdentity (Tarea)
+            - name: GetAssemblyIdentity (tarea)
               href: getassemblyidentity-task.md
             - name: Tarea GetFileHash
               href: getfilehash-task.md
-            - name: GetFrameworkPath (Tarea)
+            - name: GetFrameworkPath (tarea)
               href: getframeworkpath-task.md
-            - name: GetFrameworkSdkPath (Tarea)
+            - name: GetFrameworkSdkPath (tarea)
               href: getframeworksdkpath-task.md
             - name: GetReferenceAssemblyPaths (Tarea)
               href: getreferenceassemblypaths-task.md
-            - name: LC (Tarea)
+            - name: LC (tarea)
               href: lc-task.md
-            - name: MakeDir (Tarea)
+            - name: MakeDir (tarea)
               href: makedir-task.md
-            - name: Message (Tarea)
+            - name: Message (tarea)
               href: message-task.md
-            - name: Move (Tarea)
+            - name: Move (tarea)
               href: move-task.md
-            - name: MSBuild (Tarea)
+            - name: tareas de MSBuild
               href: msbuild-task.md
-            - name: ReadLinesFromFile (Tarea)
+            - name: ReadLinesFromFile (tarea)
               href: readlinesfromfile-task.md
-            - name: RegisterAssembly (Tarea)
+            - name: RegisterAssembly (tarea)
               href: registerassembly-task.md
-            - name: RemoveDir (Tarea)
+            - name: RemoveDir (tarea)
               href: removedir-task.md
-            - name: RemoveDuplicates (Tarea)
+            - name: RemoveDuplicates (tarea)
               href: removeduplicates-task.md
-            - name: RequiresFramework35SP1Assembly (Tarea)
+            - name: RequiresFramework35SP1Assembly (tarea)
               href: requiresframework35sp1assembly-task.md
-            - name: ResolveAssemblyReference (Tarea)
+            - name: ResolveAssemblyReference (tarea)
               href: resolveassemblyreference-task.md
-            - name: ResolveComReference (Tarea)
+            - name: Tarea ResolveComReference
               href: resolvecomreference-task.md
-            - name: ResolveKeySource (Tarea)
+            - name: ResolveKeySource (tarea)
               href: resolvekeysource-task.md
-            - name: ResolveManifestFiles (Tarea)
+            - name: ResolveManifestFiles (tarea)
               href: resolvemanifestfiles-task.md
-            - name: ResolveNativeReference (Tarea)
+            - name: ResolveNativeReference (tarea)
               href: resolvenativereference-task.md
-            - name: ResolveNonMSBuildProjectOutput (Tarea)
+            - name: ResolveNonMSBuildProjectOutput (tarea)
               href: resolvenonmsbuildprojectoutput-task.md
-            - name: SGen (Tarea)
+            - name: SGen (tarea)
               href: sgen-task.md
-            - name: SignFile (Tarea)
+            - name: SignFile (tarea)
               href: signfile-task.md
-            - name: Touch (Tarea)
+            - name: Touch (tarea)
               href: touch-task.md
-            - name: UnregisterAssembly (Tarea)
+            - name: UnregisterAssembly (tarea)
               href: unregisterassembly-task.md
             - name: Tarea Unzip
               href: unzip-task.md
-            - name: UpdateManifest (Tarea)
+            - name: UpdateManifest (tarea)
               href: updatemanifest-task.md
-            - name: Vbc (Tarea)
+            - name: Vbc (tarea)
               href: vbc-task.md
             - name: Tarea VerifyFileHash
               href: verifyfilehash-task.md
-            - name: Warning (Tarea)
+            - name: Warning (tarea)
               href: warning-task.md
-            - name: WriteCodeFragment (Tarea)
+            - name: WriteCodeFragment (tarea)
               href: writecodefragment-task.md
-            - name: WriteLinesToFile (Tarea)
+            - name: WriteLinesToFile (tarea)
               href: writelinestofile-task.md
-            - name: XmlPeek (Tarea)
+            - name: XmlPeek (tarea)
               href: xmlpeek-task.md
-            - name: XmlPoke (Tarea)
+            - name: XmlPoke (tarea)
               href: xmlpoke-task.md
-            - name: XslTransformation (Tarea)
+            - name: XslTransformation (tarea)
               href: xsltransformation-task.md
             - name: Tarea ZipDirectory
               href: zipdirectory-task.md
@@ -441,7 +441,7 @@
           href: common-msbuild-project-items.md
         - name: Referencia de la línea de comandos de MSBuild
           href: msbuild-command-line-reference.md
-        - name: Archivos .Targets de MSBuild
+        - name: Archivos .targets de MSBuild
           href: msbuild-dot-targets-files.md
         - name: Metadatos de los elementos conocidos de MSBuild
           href: msbuild-well-known-item-metadata.md
@@ -450,14 +450,14 @@
         - name: Referencia de WPF
           items:
             - name: Información general
-              displayName: WPF MSBuild Reference
+              displayName: WPF MSBuild reference
               href: wpf-msbuild-reference.md
-            - name: Archivos .Targets de WPF
+            - name: Archivos .targets de WPF
               href: wpf-dot-targets-files.md
             - name: Referencia de tareas de WPF
               items:
                 - name: Información general
-                  displayName: WPF MSBuild Task Reference
+                  displayName: WPF MSBuild task reference
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier (Tarea)
                   href: fileclassifier-task.md
@@ -467,7 +467,7 @@
                   href: getwinfxpath-task.md
                 - name: MarkupCompilePass1 (Tarea)
                   href: markupcompilepass1-task.md
-                - name: MarkupCompilePass2 (Tarea)
+                - name: MarkupCompilePass2 (tarea)
                   href: markupcompilepass2-task.md
                 - name: MergeLocalizationDirectives (Tarea)
                   href: mergelocalizationdirectives-task.md
@@ -482,7 +482,7 @@
     - name: Uso de MSBuild mediante programación
       items:
         - name: Información general
-          displayName: Use MSBuild Programmatically
+          displayName: Use MSBuild programmatically
           href: msbuild-api.md
         - name: "Actualización a MSBuild\_15"
           href: updating-an-existing-application.md
