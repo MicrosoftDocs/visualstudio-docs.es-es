@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75775974"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181129"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se esté ejecutando el proceso, seleccione **Depurar** > **adjuntar al proceso** o presione **Ctrl**+**Alt**+**P** en Visual Studio y use el cuadro de diálogo **asociar al proceso** para asociar el depurador al proceso.
@@ -153,6 +153,10 @@ Si ninguna de estas dos soluciones es posible, existe una tercera opción que co
 
 ::: moniker range=">= vs-2019"
 
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Asociación a un proceso de .NET Core que se ejecuta en Linux mediante SSH
+
+Para obtener más información, consulte [depuración remota de .net Core que se ejecuta en Linux con ssh](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
+
 ## <a name="BKMK_Docker_Attach"></a>Asociación a un proceso que se ejecuta en un contenedor de Docker de Linux
 
 Puede adjuntar el depurador de Visual Studio a un proceso que se ejecuta en un contenedor de Docker de Linux .NET Core en el equipo local o remoto mediante el cuadro de diálogo **asociar al proceso** .
@@ -221,14 +225,15 @@ Para seleccionar rápidamente un proceso en ejecución al que adjuntar, en Visua
 |Escenario|Debug (método)|Nombre del proceso|Notas y vínculos|
 |-|-|-|-|
 |Depuración remota ASP.NET 4 o 4,5 en un servidor IIS|Usar herramientas remotas y **asociar al proceso**|*w3wp.exe*|Consulte [depuración remota ASP.net en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|ASP.NET Core de depuración remota en un servidor IIS|Usar herramientas remotas y **asociar al proceso**|*dotnet.exe*|Para la implementación de aplicaciones, vea [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [ASP.net Core de depuración remota en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
+|ASP.NET Core de depuración remota en un servidor IIS|Usar herramientas remotas y **asociar al proceso**|*dotnet. exe* o *AppName. exe*|Para la implementación de aplicaciones, vea [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [ASP.net Core de depuración remota en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar el script del lado cliente en un servidor IIS local, para los tipos de aplicaciones compatibles |Usar **asociar al proceso**|*Chrome. exe*, *MicrosoftEdgeCP. exe*o *iexplore. exe*|La depuración de scripts debe estar habilitada. Para Chrome, también debe ejecutar Chrome en modo de depuración y seleccionar **código WebKit** en el campo **adjuntar a** .|
 |Depuración de una C#aplicación C++ , Visual Basic o en el equipo local|Usar depuración estándar (**F5**) o **asociar al proceso**|*\<nombre_de_la_aplicación>.exe*|En la mayoría de los escenarios, se usa la depuración estándar y no **se asocia al proceso**.|
-|Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/A| Vea [depuración C# remota a o Visual Basic aplicación](../debugger/remote-debugging-csharp.md) o [depuración remota de una C++ aplicación](../debugger/remote-debugging-cpp.md)|
+|Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Vea [depuración C# remota a o Visual Basic aplicación](../debugger/remote-debugging-csharp.md) o [depuración remota de una C++ aplicación](../debugger/remote-debugging-cpp.md)|
+|Depuración de .NET Core en Linux|Usar **asociar al proceso**|*dotnet.exe*|Para usar SSH, consulte [depuración remota .net Core que se ejecuta en Linux con ssh](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para usar un contenedor de Docker de Linux, consulte [asociación a un proceso que se ejecuta en un contenedor de Docker de Linux](#BKMK_Docker_Attach).|
 |Depuración de una aplicación ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Usar **asociar al proceso**|*iiexpress.exe*|Esto puede resultar útil para agilizar la carga de la aplicación, como (por ejemplo,) al generar perfiles. |
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor es remoto, usa herramientas remotas y **asociar al proceso** .|*Chrome. exe*, *iexplore. exe*u otros procesos|Si es necesario, utilice Monitor de recursos para ayudar a identificar el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
-|Depuración remota de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/A|Consulte [depuración de un paquete de aplicaciones instalado](debug-installed-app-package.md) en lugar de usar **asociar al proceso** .|
-|Depuración de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/A|Consulte [depuración de un paquete de aplicaciones instalado](debug-installed-app-package.md) en lugar de usar **asociar al proceso** .|
+|Depuración remota de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/D|Consulte [depuración de un paquete de aplicaciones instalado](debug-installed-app-package.md) en lugar de usar **asociar al proceso** .|
+|Depuración de una aplicación universal de Windows (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/D|Consulte [depuración de un paquete de aplicaciones instalado](debug-installed-app-package.md) en lugar de usar **asociar al proceso** .|
 
 ## <a name="use-debugger-features"></a>Usar las características del depurador
 
@@ -267,7 +272,7 @@ En algunos escenarios de depuración local, puede depurar en Visual Studio sin a
 
     Esta vez se producirá un error en todo el proceso de asociación y aparecerá un mensaje de error específico.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Depuración de varios procesos](../debugger/debug-multiple-processes.md)
 - [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)

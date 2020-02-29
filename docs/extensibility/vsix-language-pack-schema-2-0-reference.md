@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739330"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169344"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia del esquema del paquete de idioma VSIX 2,0
 
@@ -24,21 +24,21 @@ El esquema del paquete de idioma VSIX proporciona información de instalación l
 
 ## <a name="language-pack-schema"></a>Esquema del paquete de idioma
 
-El elemento raíz del archivo de paquete de idioma `<PackageLanguagePackManifest>`es, con un atributo `Version`de, que es la versión del formato del paquete de idioma. En este artículo se describe la versión 2,0 del formato de paquete de idioma, que se especifica en el `Version` manifiesto estableciendo el atributo `Version="2.0.0"`en el valor. El elemento raíz contiene exactamente un elemento `<Metadata>` secundario.
+El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManifest>`, con un atributo de `Version`, que es la versión del formato del paquete de idioma. En este artículo se describe la versión 2,0 del formato de paquete de idioma, que se especifica en el manifiesto estableciendo el atributo `Version` en el valor `Version="2.0.0"`. El elemento raíz contiene exactamente un elemento `<Metadata>` secundario.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
-Dentro del `<PackageLanguagePackManifest>` elemento debe existir el siguiente elemento:
+En el elemento `<PackageLanguagePackManifest>` debe existir el siguiente elemento:
 
-|Título|DESCRIPCIÓN|
+|Título|Descripción|
 |-----------|-----------------|
 |`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizados
 
 ### <a name="metadata-element"></a>Elemento metadata
 
-Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
+En el elemento `<Metadata>` puede tener los elementos siguientes:
 
-|Título|DESCRIPCIÓN|
+|Título|Descripción|
 |-----------|-----------------|
 |`<DisplayName>`|Nombre localizado de la extensión que se va a instalar.|
 |`<Description>`|La descripción localizada de la extensión que se va a instalar.|
@@ -53,7 +53,7 @@ Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>
@@ -63,9 +63,9 @@ Dentro del `<Metadata>` elemento puede tener los elementos siguientes:
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-|Título|DESCRIPCIÓN|
+|Título|Descripción|
 |-----------|-----------------|
 |[Localizar paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Muestra cómo proporcionar compatibilidad con la instalación localizada para un paquete VSIX.|
 |[Referencia del esquema de extensión VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifiesto VSIX describe el contenido de un archivo de implementación *. vsix* . El archivo de implementación permite instalar una extensión de Visual Studio mediante el cuadro de diálogo **extensiones y actualizaciones** .|

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
-author: jillre
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5916121a555531672cf70280051f02a889f611ac
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091774"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167616"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errores de la herramienta FxCopCmd
 
@@ -25,7 +25,7 @@ En la tabla siguiente se describen los códigos de error devueltos por FxCopCmd:
 
 |Error|Valor numérico|
 |-----------|-------------------|
-|Sin errores|0x0|
+|Sin errores|Es 0x0|
 |Error de análisis|0x1|
 |Excepciones de regla|0x2|
 |Error de carga del proyecto|0x4|
