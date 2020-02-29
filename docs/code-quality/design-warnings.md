@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec257d67530692fc885d971e21136c10e7a271f6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587685"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167800"
 ---
 # <a name="design-warnings"></a>Advertencias de diseño
 
-Las advertencias de diseño admiten el cumplimiento de las [directrices de diseño de .net](/dotnet/standard/design-guidelines/).
+Las advertencias de diseño admiten el cumplimiento de las [directrices de diseño de .NET Framework](/dotnet/standard/design-guidelines/).
 
-## <a name="in-this-section"></a>Esta sección
+## <a name="in-this-section"></a>En esta sección
 
 | Regla | Descripción |
 | - | - |
 | [CA1000: No declarar miembros estáticos en tipos genéricos](../code-quality/ca1000.md) | Cuando se llama a un miembro estático de un tipo genérico, se debe especificar el argumento de tipo correspondiente a ese tipo. Cuando se llama a un miembro de instancia genérico que no admite la interferencia, se debe especificar el argumento de tipo para el miembro. En estos dos casos, la sintaxis para especificar el argumento de tipo es diferente y resulta fácil confundirse. |
 | [CA1001: Los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001.md) | Una clase declara e implementa un campo de instancia que es un tipo System. IDisposable y la clase no implementa IDisposable. Una clase que declara un campo IDisposable posee indirectamente un recurso no administrado y debería implementar la interfaz IDisposable. |
-| [CA1002: No exponer listas genéricas](../code-quality/ca1002.md) | System.Collections.Generic.List < (de \<(T >) >) es una colección genérica diseñada para el rendimiento, no para la herencia. Por consiguiente, List no contiene ningún miembro virtual. En su lugar, se debe exponer las colecciones genéricas diseñadas para herencia. |
+| [CA1002: No exponer listas genéricas](../code-quality/ca1002.md) | System. Collections. Generic. List < (de \<(T >) >) es una colección genérica diseñada para el rendimiento, no para la herencia. Por consiguiente, List no contiene ningún miembro virtual. En su lugar, se debe exponer las colecciones genéricas diseñadas para herencia. |
 | [CA1003: Utilizar instancias genéricas de controlador de eventos](../code-quality/ca1003.md) | Un tipo contiene un delegado que devuelve void, cuya firma contiene dos parámetros (el primero es un objeto y el segundo un tipo que se puede asignar a EventArgs) y el ensamblado contenedor tiene como destino .NET Framework 2,0. |
 | [CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004.md) | La inferencia es el modo en que se determina el argumento de tipo de un método genérico partiendo del tipo de argumento pasado al método, en lugar de especificar directamente el argumento de tipo. Para habilitar la inferencia, la firma de parámetro de un método genérico debe incluir un parámetro del mismo tipo que el parámetro type del método. En este caso, no es necesario especificar el argumento de tipo. Cuando se usa la inferencia para todos los parámetros de tipo, la sintaxis para llamar a métodos de instancia genéricos y no genéricos es idéntica; Esto simplifica la facilidad de uso de los métodos genéricos. |
 | [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005.md) | Cuantos más parámetros type contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Normalmente, es obvio con un parámetro de tipo, como en la lista\<T > y en determinados casos con dos parámetros de tipo, como en el Diccionario\<TKey, TValue >. Sin embargo, si hay más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios. |
@@ -88,7 +88,7 @@ Las advertencias de diseño admiten el cumplimiento de las [directrices de dise�
 | [CA1061: No oculte métodos de clases base](../code-quality/ca1061.md) | Un método de un tipo base está oculto por un método del mismo nombre en un tipo derivado cuando la firma del parámetro del método derivado solo se diferencia por tipos derivados de manera más débil que los tipos correspondientes de la firma del parámetro del método base. |
 | [CA1062: Validar argumentos de métodos públicos](../code-quality/ca1062.md) | Todos los argumentos de referencia pasados a métodos visibles externamente se deben comprobar para ver si son null. |
 | [CA1063: Implemente IDisposable correctamente](../code-quality/ca1063.md) | Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente. |
-| [CA1064: Las excepciones deben ser públicas](../code-quality/ca1064.md) | Una excepción interna solo se ve dentro de su propio ámbito interno. Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla. Si la excepción interna se hereda de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, o <xref:System.ApplicationException?displayProperty=fullName>, el código externo no tendrá información suficiente para saber qué hacer con la excepción. |
+| [CA1064: Las excepciones deben ser públicas](../code-quality/ca1064.md) | Una excepción interna solo se ve dentro de su propio ámbito interno. Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla. Si la excepción interna se hereda de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>o <xref:System.ApplicationException?displayProperty=fullName>, el código externo no tendrá información suficiente para saber qué hacer con la excepción. |
 | [CA1065: No producir excepciones en ubicaciones inesperadas](../code-quality/ca1065.md) | Un método que no se espera que produzca excepciones inicia una excepción. |
 | [CA1068: los parámetros de CancellationToken deben aparecer en último lugar](../code-quality/ca1068.md) | Un método tiene un parámetro CancellationToken que no es el último parámetro. |
 | [CA2210: Los ensamblados deben tener nombres seguros válidos](../code-quality/ca2210.md) | El nombre seguro protege los clientes de cargar inconscientemente un ensamblado con el que se ha alterado. Los ensamblados sin nombres seguros sólo deben implementarse en escenarios muy limitados. Si se comparten o se distribuyen ensamblados que no están correctamente firmados, el ensamblado puede manipularse, el Common Language Runtime podría no cargar el ensamblado o el usuario podría deshabilitar la comprobación del equipo. |
