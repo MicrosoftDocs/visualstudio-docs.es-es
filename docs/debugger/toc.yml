@@ -590,9 +590,7 @@
                   items:
                     - name: Depuración de servidores y contenedores COM
                       href: com-server-and-container-debugging.md
-                    - name: Depurar clientes y servidores COM mediante la depuración RPC
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Control ActiveX
+                - name: ActiveX (control)
                   items:
                     - name: Depurar un control ActiveX
                       href: how-to-debug-an-activex-control.md
