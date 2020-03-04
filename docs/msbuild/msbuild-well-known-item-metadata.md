@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93bbd0ab4ce0d27a270f3672e55173a1488e5910
-ms.sourcegitcommit: f28172c78745d14570e733db5d424f5fae98d139
+ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606663"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633101"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadatos de los elementos conocidos de MSBuild
+
 En la tabla siguiente se describen los metadatos asignados a cada elemento en el momento de su creación. En cada ejemplo, se usó la siguiente declaración de elementos para incluir el archivo *C:\MyProject\Source\Program.cs* en el proyecto.
 
 ```xml
@@ -47,6 +48,7 @@ En la tabla siguiente se describen los metadatos asignados a cada elemento en el
 |%(AccessedTime)|Contiene la marca de tiempo correspondiente a la última vez que se tuvo acceso al elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>Vea también
+
 - [Elementos](../msbuild/msbuild-items.md)
 - [Procesamiento por lotes](../msbuild/msbuild-batching.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578713"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634570"
 ---
 # <a name="assignculture-task"></a>AssignCulture (tarea)
+
 Esta tarea acepta una lista de elementos que puede contener una cadena de identificador de referencia cultural .NET válida como parte del nombre de archivo y genera elementos que tengan metadatos con el nombre `Culture` que contiene el correspondiente identificador de referencia cultural. Por ejemplo, el nombre de archivo *Form1.fr-fr.resx* tiene un indicador de referencia cultural "fr-fr" incluido, por lo que esta tarea genera un elemento que tiene el mismo nombre de archivo con los metadatos `Culture` igual a `fr-fr`. La tarea también genera una lista de nombres de archivo con la referencia cultural que se quitó del nombre de archivo.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
+
 En la siguiente tabla se describen los parámetros de la tarea `AssignCulture` .
 
 |Parámetro|Descripción|
@@ -40,9 +42,11 @@ En la siguiente tabla se describen los parámetros de la tarea `AssignCulture` .
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica la lista de archivos con nombres de referencia cultural incluidos a los que se asignará una referencia cultural.|
 
 ## <a name="remarks"></a>Comentarios
+
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
  En el siguiente ejemplo se ejecuta la tarea `AssignCulture` con la recopilación de objetos `ResourceFiles`.
 
 ```xml
@@ -78,5 +82,6 @@ En la siguiente tabla se describe el valor de los elementos de salida después d
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (referencia cultural="fr")<br /><br /> *MyResource2.XX.resx* (sin metadatos adicionales)|
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

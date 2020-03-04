@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578483"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632919"
 ---
 # <a name="rc-task"></a>RC (tarea)
+
 Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos ( *.res*). Para más información, consulte [Compilador de recursos](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea RC. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 |Parámetro|Descripción|
@@ -51,4 +53,5 @@ Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La 
 |**UndefinePreprocessorDefinitions**|Anula la definición de un símbolo de preprocesador.<br /><br /> Para más información, consulte la opción **/u** en [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso de RC [línea de comandos de RC]). Vea también **PreprocessorDefinitions** en esta tabla.|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

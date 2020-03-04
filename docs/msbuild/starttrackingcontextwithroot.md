@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b48529f82a908ea765151561a71c58cd2c7bc5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578422"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632100"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
+
 Inicia un contexto de seguimiento con un archivo de respuesta que especifica un marcador raíz.
 
 ## <a name="syntax"></a>Sintaxis
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>Parámetros
+
 [in] `intermediateDirectory`
 
  El directorio en el que almacenar el registro de seguimiento.
@@ -45,10 +47,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  El nombre de ruta de acceso de un archivo de respuesta que contiene un marcador raíz. El nombre de raíz se usa para agrupar todo el seguimiento de un contexto conjuntamente.
 
 ## <a name="return-value"></a>Valor devuelto
+
  Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento se ha creado.
 
 ## <a name="requirements"></a>Requisitos
+
  **Encabezado**: *FileTracker.h*
 
 ## <a name="see-also"></a>Vea también
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

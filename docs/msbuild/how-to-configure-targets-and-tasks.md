@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596351"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633894"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedimiento Configurar destinos y tareas
+
+Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.
 
 > [!NOTE]
 > Si una tarea de compilación se escribe en un lenguaje .NET, como Visual C# o Visual Basic, y no utiliza recursos o herramientas nativos, se ejecutará en cualquier contexto de destino sin adaptación.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>Atributos UsingTask y parámetros de tareas
+
 Los siguientes atributos de `UsingTask` afectan a todas las operaciones de una tarea en un proceso de compilación determinado:
 
 - El atributo de `Runtime`, si está presente, establece la versión de Common Language Runtime (CLR), y puede tomar cualquiera de estos valores: `CLR2`, `CLR4`, `CurrentRuntime` o `*` (cualquier tiempo de ejecución).
@@ -74,6 +77,7 @@ Antes de que MSBuild ejecute una tarea, busca un valor `UsingTask` coincidente q
 ```
 
 ## <a name="task-factories"></a>Generadores de tareas
+
 Antes de ejecutar una tarea, MSBuild comprueba si está designada para ejecutarse en el contexto actual del software. De ser así, MSBuild la pasa a AssemblyTaskFactory, que la ejecuta en el proceso actual; de lo contrario, MSBuild pasa la tarea a la TaskHostFactory, que la ejecuta en un proceso que coincida con el contexto de destino. Incluso si el contexto actual y el contexto de destino coinciden, puede forzar que una tarea se ejecute fuera de proceso (por motivos de aislamiento, seguridad, o de otra índole) estableciendo `TaskFactory` en `TaskHostFactory`.
 
 ```xml
@@ -84,6 +88,7 @@ Antes de ejecutar una tarea, MSBuild comprueba si está designada para ejecutars
 ```
 
 ## <a name="phantom-task-parameters"></a>Parámetros de tareas fantasma
+
 Al igual que cualquier otro parámetro de tarea, `MSBuildRuntime` y `MSBuildArchitecture` se pueden establecer desde las propiedades de compilación.
 
 ```xml
@@ -108,4 +113,5 @@ Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera 
 > Los parámetros de tareas se evalúan en el contexto del nodo primario, no en el del host de tareas. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación *Archivos de programa*) se evalúan como el valor que coincide con el nodo primario. Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.
 
 ## <a name="see-also"></a>Vea también
+
 - [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)

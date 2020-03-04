@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579582"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632295"
 ---
 # <a name="signfile-task"></a>SignFile (tarea)
 
@@ -74,5 +74,6 @@ Firma un archivo determinado con el certificado especificado.
 > La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza). Si copia y pega la huella digital de los detalles del certificado, asegúrese de que no incluye los caracteres invisibles (3F) adicionales, ya que esto puede impedir que `SignFile` encuentre el certificado.
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

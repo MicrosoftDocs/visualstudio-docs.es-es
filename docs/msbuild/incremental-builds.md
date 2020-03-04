@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091826"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633725"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 
@@ -79,4 +79,5 @@ Debido a la inferencia de salida, se tiene que agregar una tarea `CreateProperty
 Este código crea la propiedad CompileRan y le proporciona el valor `true`, pero solo si se ejecuta el destino. Si el destino se omite, no se crea CompileRan.
 
 ## <a name="see-also"></a>Vea también
+
 - [Destinos](../msbuild/msbuild-targets.md)

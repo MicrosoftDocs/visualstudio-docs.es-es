@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595035"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633062"
 ---
 # <a name="mt-task"></a>MT (tarea)
+
 Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información, consulte [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea **MT**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 > [!NOTE]
@@ -69,4 +71,5 @@ Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información,
 |**VerboseOutput**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, muestra información de depuración detallada.<br /><br /> Para más información, consulte la opción **/verbose** de [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567299"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631086"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 
@@ -192,6 +192,7 @@ La tarea Message toma el valor de cadena del atributo Text como entrada y lo mue
  aparece más adelante en el archivo del proyecto, o en un archivo importado posteriormente en el archivo del proyecto, TargetFrameworkVersion toma el nuevo valor "v3.5".
 
 ## <a name="examine-a-property-value"></a>Examen del valor de una propiedad
+
  Para obtener el valor de una propiedad, utilice la sintaxis siguiente, donde PropertyName es el nombre de la propiedad:
 
 ```xml
@@ -411,6 +412,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude y caracteres comodín
+
  Puede utilizar los caracteres comodín "*", "\*\*" y "?" con el atributo Include para agregar elementos a un tipo de elemento. Por ejemplo,
 
 ```xml
@@ -486,6 +488,7 @@ no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
     ```
 
 ## <a name="item-metadata"></a>Metadatos de elementos
+
  Los elementos pueden contener metadatos además de la información recopilada de los atributos Include y Exclude. Estos metadatos los pueden utilizar las tareas que requieren más información sobre elementos que solo el valor de elemento.
 
  Los metadatos de elementos se declaran en el archivo de proyecto creando un elemento con el nombre de los metadatos como elemento secundario del elemento. Un elemento puede tener cero o varios valores de metadatos. Por ejemplo, el elemento CSFile siguiente tiene los metadatos Culture con un valor de "Fr":

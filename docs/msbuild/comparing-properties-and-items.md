@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596130"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634414"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
+
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.
 
 - Las propiedades son pares de nombre-valor. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).
@@ -25,9 +26,11 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
 - Los elementos son objetos que normalmente representan archivos. Los objetos de elemento pueden tener asociadas colecciones de metadatos. Los metadatos son pares de nombre-valor. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Escalares y vectores
+
 Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.
 
 ### <a name="target-dependency-injection"></a>Inserción de dependencias de destino
+
 Para ver cómo las propiedades pueden representar varios valores, considere la posibilidad de un patrón de uso común para agregar un destino a una lista de destinos que se crea. Esta lista normalmente se representa mediante un valor de propiedad, con los nombres de destino separados por punto y coma.
 
 ```xml
@@ -56,6 +59,7 @@ agrega el destino CustomBuild a la lista de destino, lo que proporciona a `Build
 A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversiones entre cadenas y listas de elementos
+
 MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea necesario. Para ver cómo una lista de elementos puede convertirse en un valor de cadena, considere lo que sucede cuando un tipo de elemento se utiliza como el valor de una propiedad de MSBuild:
 
 ```xml
@@ -70,6 +74,7 @@ MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea
 El tipo de elemento OutputDir tiene un atributo `Include` con el valor "KeyFiles\\;Certificates\\". MSBuild analiza esta cadena en dos elementos: KeyFiles\ y Certificates\\. Cuando se utiliza el tipo de elemento OutputDir como el valor de la propiedad OutputDirList, MSBuild convierte o "reduce" el tipo de elemento en la cadena separada por punto y coma "KeyFiles\\;Certificates\\".
 
 ## <a name="properties-and-items-in-tasks"></a>Propiedades y elementos en tareas
+
 Las propiedades y los elementos se utilizan como entradas y salidas de las tareas de MSBuild. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
 Las propiedades se pasan a las tareas como atributos. Dentro de la tarea, una propiedad de MSBuild está representada por un tipo de propiedad cuyo valor se puede convertir a una cadena y desde una cadena. Los tipos de propiedad admitidos incluyen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` y cualquier tipo que <xref:System.Convert.ChangeType%2A> pueda controlar.
@@ -79,6 +84,7 @@ Los elementos se pasan a las tareas como objetos <xref:Microsoft.Build.Framework
 La lista de elementos de un tipo de elemento se puede pasar como una matriz de objetos `ITaskItem`. Desde la versión .NET Framework 3.5, puede usarse el atributo `Remove` para quitar elementos de una lista en un destino. Dado que pueden quitarse los elementos de una lista de elementos, es posible que un tipo de elemento no tenga ningún elemento. Si se pasa una lista de elementos a una tarea, el código de la tarea debe comprobar esta posibilidad.
 
 ## <a name="property-and-item-evaluation-order"></a>Orden de evaluación de propiedades y elementos
+
 Durante la fase de evaluación de una compilación, los archivos importados se incorporan a la compilación en el orden en que aparecen. Las propiedades y los elementos se definen en tres pasos en el orden siguiente:
 
 - Las propiedades se definen y modifican en el orden en que aparecen.
@@ -104,6 +110,7 @@ Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de
   - Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efectos sutiles del orden de evaluación
+
 En la fase de evaluación de una compilación, la evaluación de propiedades precede a la evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere el script siguiente.
 
 ```xml
@@ -179,4 +186,5 @@ KeyFileVersion: 1.0.0.3
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)

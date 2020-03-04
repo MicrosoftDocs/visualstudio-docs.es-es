@@ -3,15 +3,15 @@ title: Seguimiento de la asignación de usuarios y tramitación de pedidos | Vis
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar un seguimiento de las asignaciones de usuarios y las tramitaciones de pedidos.
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967335"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235230"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
 Los administradores de suscripciones de Visual Studio deberán realizar un seguimiento del uso de Visual Studio y tramitar pedidos para cualquier incremento en el uso según la programación descrita en su Contrato de licencia por volumen o en el Contrato de productos y servicios de Microsoft. El nuevo Portal de administración de suscripciones de Visual Studio ha simplificado esta tarea con una útil herramienta de seguimiento que muestra las licencias disponibles y las usadas.
@@ -36,6 +36,12 @@ Puede asignar suscripciones a través de programas como Open License y Open Valu
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA y Select
 Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido "true up" anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
 - [Responsabilidades del administrador](admin-responsibilities.md)
@@ -43,7 +49,3 @@ Obtenga más información sobre las responsabilidades de los administradores:
 - [Administración de equipos grandes y contratistas externos](manage-teams.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra
 
-## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](/visualstudio/)
-- [Documentación de Azure](/azure/)
-- [Azure DevOps](/azure/devops/)

@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578543"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633595"
 ---
 # <a name="lib-task"></a>LIB (tarea)
+
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *lib.exe*. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para obtener más información, vea [Referencia de LIB](/cpp/build/reference/lib-reference) y [Ejecutar LIB](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea **LIB**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.
 
 |Parámetro|Descripción|
@@ -66,4 +68,5 @@ Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *li
 |**Verbose**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, muestra detalles sobre el progreso de la sesión; esto incluye los nombres de los archivos *.obj* que se van a agregar. La información se envía a la salida estándar y puede redirigirse a un archivo.<br /><br /> Para más información, vea la opción **/VERBOSE** en [Ejecutar LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

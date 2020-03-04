@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593855"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633192"
 ---
 # <a name="msbuild-targets"></a>Destinos de MSBuild
 
@@ -105,6 +105,7 @@ Reference: 4.0
  Si todos los elementos de salida están actualizados, MSBuild omite el destino, lo que mejora significativamente la velocidad de compilación. Esto se denomina una compilación incremental del destino. Si solo están actualizados algunos archivos, MSBuild ejecuta el destino sin los elementos actualizados. Esto se denomina una compilación incremental parcial del destino. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinos de compilación predeterminados
+
 A continuación se muestran los destinos públicos en Microsoft.Common.CurrentVersion.Targets.
 
 ```

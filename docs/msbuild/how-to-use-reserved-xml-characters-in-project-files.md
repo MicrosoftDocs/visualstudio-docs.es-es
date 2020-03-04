@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574332"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633777"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedimiento Usar caracteres XML reservados en archivos de proyecto
+
 Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reservados, por ejemplo, en los valores de propiedad o en los valores de parámetro de la tarea. Sin embargo, algunos caracteres reservados se deben reemplazar por una entidad con nombre para que se pueda analizar el archivo del proyecto.
 
 ## <a name="use-reserved-characters"></a>Usar caracteres reservados
+
  En la tabla siguiente se describen los caracteres XML reservados que se deben reemplazar por la entidad con nombre correspondiente para que se pueda analizar el archivo del proyecto.
 
 |Carácter reservado|Entidad con nombre|
@@ -41,6 +43,7 @@ Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reser
     ```
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo de código siguiente, se utilizan comillas dobles para resaltar el nombre de archivo en el mensaje que el archivo del proyecto genera.
 
 ```xml
@@ -71,5 +74,6 @@ Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reser
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

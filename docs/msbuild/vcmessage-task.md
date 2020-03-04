@@ -19,20 +19,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b1bf1eb222d70c18bfb94c65dddd2903864c68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591117"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631216"
 ---
 # <a name="vcmessage-task"></a>VCMessage (tarea)
+
 Registra mensajes de advertencia y de error durante una compilación.
 
 ## <a name="remarks"></a>Comentarios
+
  Esta tarea ayuda a implementar MSBuild para proyectos de C++ y no está diseñada para que la llame el usuario. Para obtener más información, vea <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Parámetros
+
  En la tabla siguiente se describen los parámetros de la tarea **VCMessage**.
 
 |Parámetro|Descripción|
@@ -42,4 +45,5 @@ Registra mensajes de advertencia y de error durante una compilación.
 |**Type**|Parámetro **String** opcional.<br /><br /> Especifica el tipo de mensaje que se va a emitir. Especifique "Warning" para emitir un mensaje de advertencia o "Error" para emitir un mensaje de error.|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

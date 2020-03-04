@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeb6e43e315aceef5028e77480b2817cd8edb030
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597365"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632906"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (tarea)
+
 Lee una lista de elementos de un archivo de texto.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `ReadLinesFromFile` .
 
 |Parámetro|Descripción|
@@ -37,9 +39,11 @@ Lee una lista de elementos de un archivo de texto.
 |`Lines`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las líneas leídas del archivo.|
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo siguiente se usa la tarea `ReadLinesFromFile` para crear elementos de una lista de un archivo de texto. Los elementos leídos del archivo se almacenan en la colección de elementos `ItemsFromFile`.
 
 ```xml
@@ -62,6 +66,7 @@ Lee una lista de elementos de un archivo de texto.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

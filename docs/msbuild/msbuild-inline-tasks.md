@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593660"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633322"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
+
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
  A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Esto facilita el seguimiento del código fuente y la implementación de la tarea. El código fuente se integra en el script.
 
  En MSBuild 15.8, se ha agregado [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), que puede crear tareas insertadas multiplataforma de .NET Standard.  Si necesita usar tareas insertadas en .NET Core, debe emplear RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Estructura de una tarea insertada
+
  Una tarea insertada está contenida en un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). La tarea insertada y el elemento `UsingTask` que la contiene se suelen incluir en un archivo *.targets* y se importan en otros archivos de proyecto según se requiera. A continuación se muestra una tarea insertada básica. Observe que no se realiza ninguna acción.
 
 ```xml
@@ -68,6 +70,7 @@ Los elementos `Reference` y `Using` son independientes del lenguaje. Las tareas 
 > Los elementos contenidos en el elemento `Task` son específicos del generador de tareas, en este caso, el generador de tareas de código.
 
 ### <a name="code-element"></a>Elemento de código
+
  El último elemento secundario que aparece dentro del elemento `Task` es el elemento `Code`. El elemento `Code` contiene o localiza el código que se desea compilar en una tarea. Lo que se incluye en el elemento `Code` depende de cómo se desea escribir la tarea.
 
  El atributo `Language` especifica el lenguaje en el que se escribe el código. Los valores aceptables son `cs` para C#, `vb` para Visual Basic.
@@ -88,6 +91,7 @@ Alternativamente, puede utilizar el atributo `Source` del elemento `Code` para e
 > Al definir la clase de tarea en el archivo de origen, el nombre de clase debe corresponder al atributo `TaskName` del elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondiente.
 
 ## <a name="helloworld"></a>HelloWorld
+
  A continuación se muestra una tarea insertada más completa. La tarea HelloWorld muestra "Hello, world!" en el dispositivo de registro de errores predeterminado, que suele ser la consola del sistema o la ventana de **salida** de Visual Studio. El elemento `Reference` del ejemplo se incluye solamente a efectos de ilustración.
 
 ```xml
@@ -125,6 +129,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Parámetros de entrada y salida
+
  Los parámetros de las tareas insertadas son elementos secundarios de un elemento `ParameterGroup`. Cada parámetro toma el nombre del elemento que lo define. En el código siguiente se define el parámetro `Text`.
 
 ```xml
@@ -162,6 +167,7 @@ define estos tres parámetros:
 Si el elemento `Code` tiene el atributo `Type` de `Fragment` o `Method`, las propiedades se crean automáticamente para cada parámetro. De lo contrario, las propiedades se deben declarar explícitamente en el código fuente de la tarea y deben coincidir exactamente con sus definiciones de parámetro.
 
 ## <a name="example"></a>Ejemplo
+
  La tarea insertada siguiente reemplaza cada aparición de un token en el archivo determinado por el valor determinado.
 
 ```xml
@@ -190,5 +196,6 @@ File.WriteAllText(Path, content);
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Tutorial: Creación de una tarea insertada](../msbuild/walkthrough-creating-an-inline-task.md)
