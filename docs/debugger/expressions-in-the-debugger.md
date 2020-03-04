@@ -1,6 +1,6 @@
 ---
 title: Expresiones en el depurador | Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736216"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235008"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
@@ -101,10 +101,10 @@ Funciones intrínsecas del depurador:
 |----------|-------------------------|
 |**Longitud de la cadena**|strlen, wcslen, strnlen, wcsnlen|
 |**Comparación de cadena**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Búsqueda de cadena**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Estas funciones requieren el proceso que se depura para ejecutarse en Windows 8. La depuración de archivos de volcado de memoria generados por un dispositivo con Windows 8 también requiere que el equipo de Visual Studio ejecute Windows 8. Sin embargo, si depura un dispositivo con Windows 8 de forma remota, el equipo de Visual Studio puede ejecutar Windows 7.|
-|**Varios**|__log2<br /><br /> Devuelve el logaritmo en base dos de un entero especificado, redondeado al entero más bajo más próximo.|
+|**Búsqueda de cadena**|strchr, wcschr, memchr, wmemchr, strstr, wcsstr|
+|**Win32**|GetLastError, TlsGetValue|
+|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> Estas funciones requieren el proceso que se depura para ejecutarse en Windows 8. La depuración de archivos de volcado de memoria generados por un dispositivo con Windows 8 también requiere que el equipo de Visual Studio ejecute Windows 8. Sin embargo, si depura un dispositivo con Windows 8 de forma remota, el equipo de Visual Studio puede ejecutar Windows 7.|
+|**Varios**|__log2//devuelve la base de registro 2 de un entero especificado, redondeado al entero inferior más próximo.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: Array < >:: Operator [index < >] y Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: Array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: Array < >:: Operator [tiled_index < >] and (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: Operator [index < >] y Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: Operator [tiled_index < >] and (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa un nuevo recorrido de árbol<br /><br />TreeTraverse_Next//devuelve los nodos de un árbol<br /><br />TreeTraverse_Skip//omite los nodos de un recorrido de árbol pendiente '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI: Expresiones no admitidas
 
@@ -204,7 +204,7 @@ No se pueden declarar nuevas variables explícitas en las ventanas del depurador
 
 - Palabras clave de espacio de nombres o de módulo como, por ejemplo, `End Sub` o `Module`.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)
 - [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
 - [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)

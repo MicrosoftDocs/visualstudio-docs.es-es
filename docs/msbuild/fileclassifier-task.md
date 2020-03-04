@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579684"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634193"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier (Tarea)
+
 La tarea <xref:Microsoft.Build.Tasks.Windows.FileClassifier> clasifica un conjunto de recursos de origen como los que se insertarán en un ensamblado. Si un recurso no es localizable, se incrusta en el ensamblado de aplicación principal; de lo contrario, se incrusta en un ensamblado satélite.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
@@ -41,9 +42,11 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.FileClassifier> clasifica un conjun
 |`SourceFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos que se van a clasificar.|
 
 ## <a name="remarks"></a>Comentarios
+
 Si no se establece el valor del parámetro **Culture**, todos los recursos que especifica el parámetro **SourceFiles** no son localizables; de lo contrario, son localizables, a menos que se asocien a un atributo **Localizable** cuyo valor se establezca en **false**.
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo siguiente, se clasifica un archivo origen como recurso y, a continuación, se inserta en un ensamblado satélite para la referencia cultural Francés canadiense (fr-CA).
 
 ```xml
@@ -64,6 +67,7 @@ En el ejemplo siguiente, se clasifica un archivo origen como recurso y, a contin
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566402"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631957"
 ---
 # <a name="task-base-class"></a>Clase base Task
+
 Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Utilities.Task>. Esta clase agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.
 
 ## <a name="parameters"></a>Parámetros
+
  En la tabla siguiente se describen los parámetros de esta clase base.
 
 |Parámetro|Descripción|
@@ -35,5 +37,6 @@ Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Uti
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Parámetro de solo lectura <xref:Microsoft.Build.Utilities.TaskLoggingHelper> opcional.<br /><br /> Objeto del asistente de registro.|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

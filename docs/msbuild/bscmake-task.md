@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0c95c37e24f8c51453a849159073baff8dca0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593426"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634518"
 ---
 # <a name="bscmake-task"></a>Tarea BscMake
+
 > [!IMPORTANT]
 > El IDE de Visual Studio ya no usa BscMake. A partir de Visual Studio 2008, la información de examen se almacena automáticamente en un archivo *.sdf* en la carpeta *Solution*.
 
  Incluye la herramienta Utilidad de mantenimiento de información de examen de Microsoft (*bscmake.exe*).  La herramienta *bscmake.exe* compila un archivo de información de examen ( *.bsc*) a partir de los archivos del explorador de origen ( *.sbr*) que se crean durante la compilación. Use el **Examinador de objetos** para ver un archivo *.bsc*. Para obtener más información, vea [Referencia de BSCMAKE](/cpp/build/reference/bscmake-reference).
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea **BscMake**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.
 
 |Parámetro|Descripción|
@@ -46,4 +48,5 @@ ms.locfileid: "75593426"
 |**TrackerLogDirectory**|Parámetro **String** opcional.<br /><br /> Especifica el directorio de registro de seguimiento.|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

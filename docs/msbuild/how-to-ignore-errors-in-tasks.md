@@ -9,17 +9,19 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574956"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633829"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedimiento Pasar errores por alto en las tareas
+
 A veces, quiere que una compilación tolere errores en determinadas tareas. Si se produce un error en las tareas no críticas, quiere que la compilación continúe porque todavía es posible obtener el resultado esperado. Por ejemplo, si un proyecto utiliza una tarea `SendMail` para enviar un mensaje de correo electrónico después de crear cada componente, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque los servidores de correo electrónico no estén disponibles ni se puedan enviar los mensajes de estado. O bien, por ejemplo, si los archivos intermedios se suelen eliminar durante la compilación, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque no se puedan eliminar esos archivos.
 
 ## <a name="use-the-continueonerror-attribute"></a>Usar el atributo ContinueOnError
+
 El atributo `ContinueOnError` del elemento `Task` controla si una compilación se detiene o continúa cuando se produce un error en la tarea. Este atributo también controla si los errores se tratan como errores o advertencias cuando la compilación continúa.
 
 El atributo `ContinueOnError` puede contener uno de los siguientes valores:
@@ -43,6 +45,7 @@ Utilice el atributo `ContinueOnError` de la tarea. Por ejemplo:
 ```
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo de código siguiente se muestra que el destino `Build` todavía se ejecuta y la compilación se considera un éxito, incluso si se produce un error en la tarea `Delete`.
 
 ```xml
@@ -62,6 +65,7 @@ En el ejemplo de código siguiente se muestra que el destino `Build` todavía se
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

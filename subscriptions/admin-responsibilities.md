@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851878"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235163"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, puede administrar suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -34,6 +34,12 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 | No está diseñado para entornos de producción | No se otorgan licencias de software mediante suscripciones de Visual Studio para entornos de producción, incluido cualquier entorno al que accedan usuarios finales para otras acciones además de pruebas de aceptación o envío de comentarios, entornos que se conecten a una base de datos de producción, que permitan la recuperación ante desastres o la copia de seguridad de producción, o que se usen para producción durante períodos de actividad punta. Entre las excepciones a lo anterior se incluyen beneficios específicos para determinados niveles de suscripción, tal y como se describe en las [Notas del producto de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf).                                                                                            |
 | Reasignación de licencias                     | Cuando un usuario abandona un equipo y ya no requiere una licencia, puede volver a asignar esa licencia transcurridos 90 días. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
 | Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal es diseñar, desarrollar o probar el software se califique también como “usuario final”. |
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:

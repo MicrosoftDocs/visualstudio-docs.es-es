@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592157"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633478"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
+
 Incluye la herramienta de compilación Lenguaje de definición de interfaz de Microsoft (MIDL), *midl.exe*. Para obtener más información, vea [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
 ## <a name="parameters"></a>Parámetros
+
  A continuación se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 - **AdditionalIncludeDirectories**
@@ -416,4 +418,5 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
      Para obtener más información, vea la opción **/W** en [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **WarnAsError** en esta tabla.
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -3,15 +3,15 @@ title: Roles de administrador y superadministrador en el portal de administraci�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre los roles de administrador y superadministrador y sobre la asignación de administradores.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000945"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234842"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
 
@@ -39,6 +39,13 @@ Para asignar nuevos administradores:
 
 ## <a name="resources"></a>Recursos
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Descubra cómo [asignar suscripciones](assign-license.md).

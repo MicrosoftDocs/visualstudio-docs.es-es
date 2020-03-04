@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278352"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632763"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (tarea)
+
 Determina todos los ensamblados que dependen de los ensamblados especificados, incluyendo el segundo y `n`dependencias-ésimo orden.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `ResolveAssemblyReference` .
 
 |Parámetro|Descripción|
@@ -78,6 +80,7 @@ Determina todos los ensamblados que dependen de los ensamblados especificados, i
 |`TargetProcessorArchitecture`|Parámetro `String` opcional.<br /><br /> Arquitectura del procesador de destino preferida. Se usa para resolver referencias de la caché global de ensamblados (GAC).<br /><br /> Este parámetro puede tener un valor de `x86`, `IA64` o `AMD64`.<br /><br /> Si falta este parámetro, la tarea tiene en cuenta primero los ensamblados que coinciden con la arquitectura del proceso que se está ejecutando actualmente. Si no se encuentra ningún ensamblado, la tarea considera los ensamblados de la GAC que tienen el valor `ProcessorArchitecture` de `MSIL` o ningún valor `ProcessorArchitecture` .|
 
 ## <a name="warnings"></a>Advertencias
+
  Se registran las siguientes advertencias:
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ Determina todos los ensamblados que dependen de los ensamblados especificados, i
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

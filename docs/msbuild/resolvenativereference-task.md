@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 417c4536f13aa90505ec5e69b2719219af0d7e81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595168"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632685"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (tarea)
+
 Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Esta clase admite la infraestructura de .NET Framework, que no está diseñada para utilizarse directamente desde el código.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
+
  En la siguiente tabla se describen los parámetros de la tarea `ResolveNativeReference` .
 
 |Parámetro|Descripción|
@@ -43,8 +45,10 @@ Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Task
 |`NativeReferences`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Obtiene o establece las referencias de ensamblado nativas Win32.|
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

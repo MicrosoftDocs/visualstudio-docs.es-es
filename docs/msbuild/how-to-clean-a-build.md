@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585224"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633920"
 ---
 # <a name="how-to-clean-a-build"></a>Procedimiento Limpiar una compilación
-Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).
+
+Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. 
 
 ## <a name="create-a-directory-for-output-items"></a>Crear un directorio de elementos de salida
+
  De forma predeterminada, el archivo *.exe* que se crea cuando se compila un proyecto, se coloca en el mismo directorio que los archivos de proyecto y de código fuente. En cambio, los elementos de salida suelen crearse en un directorio independiente.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida
+### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida
 
 1. Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado *BuiltApp* en el directorio que contiene los archivos de proyecto y de código fuente:
 
@@ -40,6 +42,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
      ```
 
 ## <a name="remove-the-output-items"></a>Quitar los elementos de salida
+
  Antes de crear instancias de los archivos intermedios y de salida, puede que le interese borrar todas las instancias anteriores de los archivos intermedios y de salida. Use la tarea [RemoveDir](../msbuild/removedir-task.md) para eliminar de un disco un directorio y todos los archivos y directorios que contiene.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para quitar un directorio y todos los archivos que contiene
@@ -49,6 +52,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Ejemplo
+
  El siguiente proyecto de ejemplo de código contiene un nuevo destino, `Clean`, que usa la tarea `RemoveDir` para eliminar un directorio y todos los archivos y directorios que contiene. También en este ejemplo, el destino `Compile` crea un directorio independiente para los elementos de salida que se eliminan cuando se limpia la compilación.
 
  `Compile` se define como el destino predeterminado y, por tanto, se usa automáticamente a menos que se especifiquen otros destinos. Use el modificador de la línea de comandos **-target** para especificar un destino diferente. Por ejemplo:
@@ -100,7 +104,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Tarea Exec](../msbuild/exec-task.md)
+
 - [Tarea MakeDir](../msbuild/makedir-task.md)
 - [Tarea RemoveDir](../msbuild/removedir-task.md)
 - [Tarea Csc](../msbuild/csc-task.md)

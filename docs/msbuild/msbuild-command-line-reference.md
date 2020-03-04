@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea7356e81cb5924919f213327816dbd69e0c7b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: bb95da599e6362ad32c0ef94dcf9c184269ddedf
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278404"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633413"
 ---
 # <a name="msbuild-command-line-reference"></a>Referencia de la línea de comandos de MSBuild
 
@@ -85,6 +85,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noConsoleLogger|-noconlog|Deshabilita el registrador de la consola predeterminado y no registra eventos en la consola.|
 
 ## <a name="example"></a>Ejemplo
+
  En el siguiente ejemplo se compila el destino `rebuild` del proyecto *MyProject.proj*.
 
 ```cmd
@@ -92,6 +93,7 @@ MSBuild.exe MyProject.proj -t:rebuild
 ```
 
 ## <a name="example"></a>Ejemplo
+
  Puede usar *MSBuild.exe* para realizar compilaciones más complejas. Por ejemplo, puede utilizarlo para compilar determinados destinos de proyectos específicos de una solución. En el ejemplo siguiente se recompila el proyecto `NotInSolutionFolder` y se limpia el proyecto `InSolutionFolder`, que está en la carpeta de soluciones *NewFolder*.
 
 ```cmd
@@ -99,5 +101,6 @@ msbuild SlnFolders.sln -t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)

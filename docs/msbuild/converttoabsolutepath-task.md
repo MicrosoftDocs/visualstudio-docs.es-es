@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e37c57119f74b9ab5f3157c6b88f9405799a2e82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 32ce6fcad3897443f178c45d84e16f4cff44ab03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596104"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634388"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (tarea)
+
 Convierte una ruta de acceso relativa o una referencia en una ruta de acceso absoluta.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
+
  En la siguiente tabla se describen los parámetros de la tarea `ConvertToAbsolutePath` .
 
 |Parámetro|Descripción|
@@ -37,8 +39,10 @@ Convierte una ruta de acceso relativa o una referencia en una ruta de acceso abs
 |`AbsolutePaths`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Lista de rutas de acceso absolutas de los elementos que se han pasado.|
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

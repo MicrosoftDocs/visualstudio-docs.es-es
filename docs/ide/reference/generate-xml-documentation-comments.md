@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892146"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706404"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedimiento para insertar comentarios XML para la generación de documentación
 
@@ -50,7 +50,7 @@ El archivo XML generado por el compilador se puede distribuir junto con el ensam
 
 Puede usar estilos en comentarios XML que se representarán en Información rápida al mantener el mouse sobre el elemento. Estos estilos incluyen cursiva, negrita, viñetas y un vínculo interactivo.
 
-   ![Comentario completado](media/doc-styles-cs.png) 
+   ![Comentario completado](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Hay un [opción](../../ide/reference/options-text-editor-csharp-advanced.md) para alternar los comentarios de documentación XML después de escribir `///` en C# o `'''` en Visual Basic. En la barra de menús, elija **Herramientas** > **Opciones** para abrir el cuadro de diálogo **Opciones**. Luego, vaya a **Editor de texto** > **C#** o **Basic** > **Avanzado**. En la sección **Ayuda del editor**, busque la opción **Generar comentarios de documentación XML**.

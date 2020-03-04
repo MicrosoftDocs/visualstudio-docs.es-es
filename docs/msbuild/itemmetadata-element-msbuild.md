@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589375"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633621"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
+
 Contiene una clave de metadatos de elemento definida por el usuario que incluye el valor de metadatos del elemento. Un elemento puede tener cualquier número de pares clave-valor de metadatos.
 
  \<Project> \<ItemGroup> \<Item>
@@ -35,6 +36,7 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -44,6 +46,7 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
@@ -53,11 +56,13 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 |[Item](../msbuild/item-element-msbuild.md)|Un elemento definido por el usuario que define las entradas para el proceso de compilación.|
 
 ## <a name="text-value"></a>Valor de texto
+
  El valor de texto es opcional.
 
  Este texto especifica el valor de metadatos del elemento, que puede ser texto o XML.
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo de código siguiente se muestra cómo agregar los metadatos `Culture` con el valor `fr` al elemento `CSFile`.
 
 ```xml
@@ -69,5 +74,6 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementos](../msbuild/msbuild-items.md)

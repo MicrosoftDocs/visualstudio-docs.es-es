@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594805"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634063"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tarea)
+
 Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y archivos *.resources* binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se usa para convertir archivos *.txt* o *.resx* en archivos *.resources*. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Parámetros
+
 En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .
 
 |Parámetro|Descripción|
@@ -61,6 +63,7 @@ En la siguiente tabla se describen los parámetros de la tarea `GenerateResource
 |`UseSourcePath`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica que el directorio del archivo de entrada se utiliza para resolver las rutas de acceso de archivo relativas.|
 
 ## <a name="remarks"></a>Comentarios
+
 Debido a que los archivos *.resx* pueden contener vínculos a otros archivos de recursos, no basta con comparar las marcas de tiempo de los archivos *.resx* y *.resources* para ver si las salidas están actualizadas. En su lugar, la tarea `GenerateResource` sigue los vínculos de los archivos *.resx* y comprueba también las marcas de tiempo de los archivos vinculados. Esto significa que, por lo general, no debe utilizar los atributos `Inputs` y `Outputs` en el destino que contiene la tarea `GenerateResource`, puesto que podría causar que se omitiera cuando tendría que ejecutarse.
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 Cuando se utiliza MSBuild 4.0 para proyectos de .NET 3.5, la compilación puede dar error en los recursos x86. Para evitar este problema, puede compilar el destino como un ensamblado AnyCPU.
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo siguiente se usa la tarea `GenerateResource` para generar archivos *.resources* a partir de los archivos especificados por la colección de elementos `Resx`.
 
 ```xml
@@ -95,5 +99,6 @@ Si se da por hecho que el ensamblado se denomina myAssembly, el siguiente códig
 Sin los metadatos \<LogicalName>, el recurso se denominaría *myAssembly.myResource.resources*.  Este ejemplo solo se aplica al proceso de compilación de Visual Basic y Visual C#.
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

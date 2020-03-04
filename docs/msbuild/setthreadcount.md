@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579592"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632334"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
+
 Establece el recuento de subprocesos globales y asigna ese recuento al subproceso actual.
 
 ## <a name="syntax"></a>Sintaxis
@@ -32,12 +33,15 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>Parámetros
+
 [in] `threadCount`
 
  El número de subprocesos que se va a usar.
 
 ## <a name="return-value"></a>Valor devuelto
+
  Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el recuento de subprocesos se ha actualizado.
 
 ## <a name="requirements"></a>Requisitos
+
  **Encabezado**: *FileTracker.h*

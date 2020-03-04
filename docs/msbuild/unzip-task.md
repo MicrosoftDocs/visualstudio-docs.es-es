@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594908"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631515"
 ---
 # <a name="unzip-task"></a>Tarea Unzip
+
 Descomprime un archivo *.zip* en la ubicación especificada.
 
 >[!NOTE]
 >La tarea `Unzip` solo está disponible en MSBuild 15.8 y versiones posteriores.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `Unzip` .
 
 |Parámetro|Descripción|
@@ -46,9 +48,11 @@ Descomprime un archivo *.zip* en la ubicación especificada.
 |`SourceFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica uno o varios de los archivos para descomprimir. Cuando se especifican varios archivos, se descomprimen en orden en la misma carpeta.|
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
  En el siguiente ejemplo se descomprime un archivo y se sobrescriben los archivos de solo lectura.
 
 ```xml
@@ -66,5 +70,6 @@ Descomprime un archivo *.zip* en la ubicación especificada.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

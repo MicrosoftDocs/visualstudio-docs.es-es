@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590480"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634258"
 ---
 # <a name="downloadfile-task"></a>DownloadFile (Tarea)
+
 Descarga los archivos especificados mediante el Protocolo de transferencia de hipertexto (HTTP).
 
 >[!NOTE]
 >La tarea DownloadFile solo está disponible en MSBuild 15.8 y versiones posteriores.
 
 ## <a name="parameters"></a>Parámetros
+
 En la siguiente tabla se describen los parámetros de la tarea `DownloadFile` .
 
 |Parámetro|Descripción|
@@ -49,9 +51,11 @@ En la siguiente tabla se describen los parámetros de la tarea `DownloadFile` .
 |`SourceUrl`|Parámetro `String` requerido.<br /><br /> Especifica la dirección URL que se va a descargar.|
 
 ## <a name="remarks"></a>Comentarios
+
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
 El ejemplo siguiente descarga un archivo y lo incluye en los elementos `Content` antes de compilar el proyecto.
 
 ```xml
@@ -73,5 +77,6 @@ El ejemplo siguiente descarga un archivo y lo incluye en los elementos `Content`
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596078"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634349"
 ---
 # <a name="cppclean-task"></a>CPPClean (Tarea)
+
 Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto de C++. El proceso que consiste en eliminar archivos de compilación se conoce como *limpieza*.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea **CPPClean**.
 
 |Parámetro|Descripción|
@@ -41,4 +43,5 @@ Elimina los archivos temporales que MSBuild crea cuando se compila un proyecto d
 |**FoldersToClean**|Parámetro `String` requerido.<br /><br /> Especifica una lista delimitada por punto y coma de directorios que se van a limpiar. Puede especificar una ruta de acceso completa o relativa que puede contener el carácter comodín (*).|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
