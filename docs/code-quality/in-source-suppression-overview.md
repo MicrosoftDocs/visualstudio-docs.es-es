@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167629"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408725"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -92,6 +92,8 @@ Las propiedades del atributo incluyen:
 
 - **Target** : un identificador que se usa para especificar el destino en el que se va a suprimir la advertencia. Debe contener un nombre de elemento completo.
 
+Cuando vea advertencias en Visual Studio, puede ver ejemplos de `SuppressMessage` [agregando una supresión al archivo de supresión global](../code-quality/use-roslyn-analyzers.md#suppress-violations). El atributo de supresión y sus propiedades necesarias aparecen en una ventana de vista previa.
+
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage
 
 Las advertencias de análisis de código se suprimen en el nivel al que se aplica el atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Por ejemplo, el atributo se puede aplicar en el nivel de ensamblado, módulo, tipo, miembro o parámetro. La finalidad de esto es acoplar estrechamente la información de supresión en el código donde se produce la infracción.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Código generado
-
-Los compiladores de código administrado y algunas herramientas de terceros generan código para facilitar el desarrollo rápido de código. El código generado por el compilador que aparece en los archivos de código fuente normalmente se marca con el atributo `GeneratedCodeAttribute`.
-
-Puede decidir si desea suprimir los errores y advertencias de análisis de código para el código generado. Para obtener información sobre cómo suprimir estas advertencias y errores, consulte [Cómo: suprimir advertencias para el código generado](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
-
-> [!NOTE]
-> El análisis de código omite `GeneratedCodeAttribute` cuando se aplica a un ensamblado completo o a un solo parámetro.
-
 ## <a name="global-level-suppressions"></a>Supresiones de nivel global
 
 La herramienta de análisis de código administrado examina `SuppressMessage` atributos que se aplican en el nivel de ensamblado, módulo, tipo, miembro o parámetro. También activa las infracciones en los recursos y espacios de nombres. Estas infracciones deben aplicarse en el nivel global y tienen el ámbito y el destino. Por ejemplo, el siguiente mensaje suprime una infracción del espacio de nombres:
@@ -185,6 +178,22 @@ Puede suprimir las infracciones de calidad del código para todo el ensamblado u
 Por ejemplo, el siguiente atributo en el archivo de proyecto de _GlobalSuppressions_ suprimirá la infracción de ConfigureAwait para un proyecto de ASP.net Core:
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>Código generado
+
+Los compiladores de código administrado y algunas herramientas de terceros generan código para facilitar el desarrollo rápido de código. El código generado por el compilador que aparece en los archivos de código fuente normalmente se marca con el atributo `GeneratedCodeAttribute`.
+
+En el caso del análisis de código fuente (analizadores de FxCop), puede suprimir los mensajes en el código generado mediante el archivo [. editorconfig](../code-quality/configure-fxcop-analyzers.md) en la raíz del proyecto o la solución. Use un patrón de archivo para que coincida con el código generado. Por ejemplo, para excluir las advertencias de CS1591 en los archivos * *. Designer.CS* , use esto en el archivo de configuración.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+En el análisis de código heredado, puede elegir si desea suprimir los errores y advertencias de análisis de código para el código generado. Para obtener información sobre cómo suprimir estas advertencias y errores, consulte [Cómo: suprimir advertencias para el código generado](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
+> [!NOTE]
+> El análisis de código omite `GeneratedCodeAttribute` cuando se aplica a un ensamblado completo o a un solo parámetro.
 
 ## <a name="see-also"></a>Consulte también
 
