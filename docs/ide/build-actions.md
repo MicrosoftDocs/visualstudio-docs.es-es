@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254437"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408813"
 ---
 # <a name="build-actions"></a>Acciones de compilación
 
@@ -32,7 +32,7 @@ Para establecer la acción de compilación para un archivo, abra las propiedades
 
 Algunas de las acciones de compilación más comunes para los archivos de proyecto de C# y de Visual Basic son:
 
-|Acción de compilación | Tipos de proyecto | DESCRIPCIÓN |
+|Acción de compilación | Tipos de proyecto | Descripción |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Un archivo de texto que no es parte del código fuente que se pasa al compilador de C# o de Visual Basic como entrada. Esta acción de compilación se usa principalmente para proporcionar entradas a [analizadores](../code-quality/roslyn-analyzers-overview.md) a los que hace referencia un proyecto para comprobar la calidad del código. Para obtener más información, vea [Use additional files](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md) (Usar archivos adicionales).|
 | **ApplicationDefinition** | WPF | El archivo que define la aplicación. La primera vez que crea un proyecto, es *App.xaml*. |
