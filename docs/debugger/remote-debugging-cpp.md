@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730325"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409407"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuración remota C++ de un proyecto en Visual Studio
 Para depurar una aplicación de Visual Studio en otro equipo, instale y ejecute las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto para que se conecte al equipo remoto desde Visual Studio y, a continuación, implemente y ejecute la aplicación.
@@ -67,7 +67,7 @@ El depurador remoto se admite en Windows 7 y versiones más recientes (no en tel
 
 5. Realice los siguientes cambios de las propiedades:
 
-   |Parámetro|Valor|
+   |Configuración|Value|
    |-|-|
    |Comando remoto|C:\remotetemp\mymfc.exe|
    |Directorio de trabajo|C:\remotetemp|
@@ -106,10 +106,10 @@ El depurador remoto se admite en Windows 7 y versiones más recientes (no en tel
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
 - [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
-- [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md)
+- [Asignaciones de puerto del depurador remoto](../debugger/remote-debugger-port-assignments.md)
 - [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
