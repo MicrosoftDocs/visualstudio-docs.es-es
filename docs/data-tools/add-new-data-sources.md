@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587061"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408563"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 
@@ -58,7 +58,7 @@ En la ilustración siguiente se muestra un conjunto de elementos que se ha coloc
 
 Puede crear un conjunto de datos o un modelo de Entity Framework para usarlo como origen de datos para un archivo de base de datos o de base de datos.
 
-### <a name="dataset"></a>Conjunto de datos
+### <a name="dataset"></a>Dataset
 
 Para crear un conjunto de datos como un origen de datos, ejecute el **Asistente para la configuración de orígenes de datos** seleccionando **proyecto** > **Agregar nuevo origen de datos**. Elija el tipo de origen de datos Data-Source y siga las indicaciones para especificar una conexión de base de datos nueva o existente, o un archivo de base **de datos.**
 
@@ -90,7 +90,7 @@ Puede crear un origen de datos a partir de los siguientes tipos de servicios:
 
 - [Servicios WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- Servicios web
+- SERVICIOS WEB
 
     > [!NOTE]
     > Los elementos que aparecen en la ventana **orígenes de datos** dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, en la ventana **orígenes de datos** no aparece ningún elemento cuando se completa el asistente. Esto se debe a que los conjuntos de datos sin tipo no proporcionan un esquema y, por lo tanto, el asistente no tiene suficiente información para crear el origen de datos.
@@ -113,6 +113,6 @@ Si desea enlazar a un objeto de un ensamblado o proyecto que no aparece en la vi
 
 Puede crear un origen de datos a partir de una lista de SharePoint ejecutando el **Asistente para la configuración de orígenes de datos** y seleccionando el tipo de origen de datos de **SharePoint** . SharePoint expone los datos a través de WCF Data Services, por lo que la creación de un origen de datos de SharePoint es la misma que la creación de un origen de datos a partir de un servicio. Al seleccionar el elemento de **SharePoint** en el **Asistente para la configuración de orígenes de datos** , se abre el cuadro de diálogo **Agregar referencia de servicio** , donde se conecta al servicio de datos de SharePoint apuntando al servidor de SharePoint. Esto requiere el SDK de SharePoint.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

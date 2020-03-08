@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846508"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408524"
 ---
-# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicación de un servicio en la nube con Visual Studio
+# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicación de un servicio en la nube mediante Azure Tools
 
 Visual Studio puede publicar una aplicación directamente en Azure, que admite tanto los entornos de almacenamiento provisional como los de producción de un servicio en la nube. Cuando se publica, debe seleccionar el entorno de implementación y una cuenta de almacenamiento que se utiliza temporalmente para el paquete de implementación.
 
@@ -35,11 +35,11 @@ Cuando publica su aplicación de Azure, puede realizar una de las siguientes tar
 
 - Crear un paquete de servicio: puede usar este paquete y el archivo de configuración de servicio para publicar su aplicación en un entorno de implementación desde [Azure Portal](https://portal.azure.com).
 
-- Publicar el proyecto de Azure de Visual Studio: para publicar la aplicación directamente a Azure, use el Asistente para publicación. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
+- Publicar el proyecto de Azure de Visual Studio: para publicar la aplicación directamente en Azure, use el Asistente para publicación. Para obtener información, consulte [Asistente Publicar aplicación de Azure](vs-azure-tools-publish-azure-application-wizard.md)
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Para crear un paquete de servicios de Visual Studio
 
-1. Cuando está preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
+1. Cuando esté preparado para publicar su aplicación, abra el Explorador de soluciones, abra menú contextual del proyecto de Azure que contiene sus roles y elija Publicar.
 
 1. Para crear solo un paquete de servicios, siga estos pasos:
 
@@ -147,7 +147,7 @@ Puede que deba incluir archivos específicos en su paquete de servicio para que 
 
     La referencia se agrega a la lista en la carpeta **Referencias** .
 
-1. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Aparece la ventana Propiedades.
+1. Abra el menú contextual del ensamblado que agregó y elija **Propiedades**. Se muestra la ventana Propiedades.
 
 1. Para incluir este ensamblado en el paquete del servicio en la lista **Copia local**, elija **True**.
 
