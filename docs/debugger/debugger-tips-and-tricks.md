@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188619"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409346"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias y trucos de productividad para el depurador en Visual Studio
 
@@ -86,7 +86,7 @@ Es fácil ver las variables mediante ventanas del depurador, como la ventana **i
 
     ![Crear un identificador de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4. Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
+4. Debería ver el símbolo **$** junto con un número en la ventana **Variables locales** . Esta variable es el identificador de objeto.
 
 5. Haga clic con el botón derecho en la variable de ID. de objeto y elija **Agregar inspección**.
 
@@ -149,7 +149,7 @@ En las aplicaciones UWP, puede analizar las operaciones de red realizadas median
 
 Seleccione una operación en la vista de resumen para ver más detalles.
 
-![Información detallada en la herramienta uso de red](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Información detallada en la herramienta Uso de red](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
 ::: moniker-end
@@ -175,6 +175,6 @@ Para obtener sugerencias y trucos adicionales e información más detallada, con
 - [7 hackers menos conocidos para la depuración en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 gemas ocultas en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Métodos abreviados de teclado](../ide/productivity-shortcuts.md)
