@@ -21,21 +21,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187520"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409299"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errores de la depuración remota y sus soluciones
 
 Puede que se produzcan los siguientes errores al intentar depurar de forma remota.
 
-- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Error: No se puede ir automáticamente al servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [Error: Parece que el Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no se está ejecutando en el equipo remoto.](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [Error: la máquina remota no aparece en el cuadro de diálogo Conexiones remotas](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
@@ -74,4 +74,4 @@ Desea ejecutar el depurador remoto como administrador en varios escenarios:
 **No desea ejecutar** como administrador si desea iniciar procesos, y el proceso que desea iniciar **no** debe ser un administrador de.
 
 ## <a name="see-also"></a>Vea también
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Depuración remota](../debugger/remote-debugging.md)
