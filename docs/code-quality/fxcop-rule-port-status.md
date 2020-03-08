@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587594"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408599"
 ---
 # <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
@@ -27,7 +27,7 @@ La [Página de documentación autogenerada](https://github.com/dotnet/roslyn-ana
 
 A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los [analizadores de FxCop](install-fxcop-analyzers.md) incluye:
 
-Identificador de la regla | Title
+Identificador de la regla | Título
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | No declarar miembros estáticos en tipos genéricos
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Los tipos que poseen campos descartables deben ser descartables
@@ -178,7 +178,7 @@ CA3061 | No agregar esquema por dirección URL
 [CA3147](ca3147.md) | Marcar los controladores de verbos con validar token antifalsificación
 [CA5350](ca5350.md) | No usar algoritmos criptográficos no seguros
 [CA5351](ca5351.md) | No usar algoritmos criptográficos rotos
-CA5358 | No usar modos de cifrado no seguros
+CA5358 | No usar modos de cifrado inseguro
 CA5359 | No deshabilitar la validación de certificados
 CA5360 | No llamar a métodos peligrosos en la deserialización
 CA5361 | No deshabilite el uso de SChannel de cifrado seguro
@@ -342,8 +342,8 @@ Las siguientes reglas de análisis heredado de FxCop están desusadas y no se im
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
 - [CA2233](ca2233.md)
-- [CA5122](ca5122.md)
+- [CA5122:](ca5122.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Reglas de Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

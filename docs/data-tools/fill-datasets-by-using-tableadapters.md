@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586632"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408744"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 
@@ -89,7 +89,7 @@ La clase TableAdapter no es un tipo .NET. Esto significa que no se puede buscar 
 
 A continuación se muestran los métodos y las propiedades de TableAdapters que se usan habitualmente:
 
-|Miembro|Descripción|
+|Member|Descripción|
 |------------|-----------------|
 |`TableAdapter.Fill`|Rellena la tabla de datos asociada del TableAdapter con los resultados del comando `SELECT` del TableAdapter.|
 |`TableAdapter.Update`|Vuelve a enviar los cambios a la base de datos y devuelve un entero que representa el número de filas afectadas por la actualización. Para obtener más información, vea [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,17 +126,17 @@ La clase TableAdapterManager no es un tipo .NET. Por lo tanto, no se puede busca
 
 A continuación se muestran los métodos y las propiedades que se usan con frecuencia de la clase `TableAdapterManager`:
 
-|Miembro|Descripción|
+|Member|Descripción|
 |------------|-----------------|
-|Método `UpdateAll`|Guarda todos los datos de todas las tablas de datos.|
-|Propiedad`BackUpDataSetBeforeUpdate`|Determina si se va a crear una copia de seguridad del conjunto de archivos antes de ejecutar el método `TableAdapterManager.UpdateAll`. Booleano.|
+|Método`UpdateAll`|Guarda todos los datos de todas las tablas de datos.|
+|Propiedad `BackUpDataSetBeforeUpdate`|Determina si se va a crear una copia de seguridad del conjunto de archivos antes de ejecutar el método `TableAdapterManager.UpdateAll`. Booleano.|
 |propiedad *tableName* `TableAdapter`|Representa un TableAdapter. El TableAdapterManager generado contiene una propiedad para cada `TableAdapter` que administra. Por ejemplo, un conjunto de DataSet con una tabla Customers y Orders genera con un TableAdapterManager que contiene `CustomersTableAdapter` y `OrdersTableAdapter` propiedades.|
-|Propiedad`UpdateOrder`|Controla el orden de los comandos de inserción, actualización y eliminación individuales. Establezca este valor en uno de los valores de la enumeración `TableAdapterManager.UpdateOrderOption`.<br /><br /> De forma predeterminada, la `UpdateOrder` se establece en **InsertUpdateDelete**. Esto significa que las inserciones, las actualizaciones y las eliminaciones se realizan para todas las tablas del conjunto de DataSet.|
+|Propiedad `UpdateOrder`|Controla el orden de los comandos de inserción, actualización y eliminación individuales. Establezca este valor en uno de los valores de la enumeración `TableAdapterManager.UpdateOrderOption`.<br /><br /> De forma predeterminada, la `UpdateOrder` se establece en **InsertUpdateDelete**. Esto significa que las inserciones, las actualizaciones y las eliminaciones se realizan para todas las tablas del conjunto de DataSet.|
 
-## <a name="security"></a>de seguridad
+## <a name="security"></a>Seguridad
 
 Al utilizar comandos de datos con una propiedad CommandType establecida en <xref:System.Data.CommandType.Text>, compruebe detenidamente la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Un procedimiento recomendado es usar siempre consultas con parámetros o procedimientos almacenados cuando sea posible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Herramientas de conjunto de datos](../data-tools/dataset-tools-in-visual-studio.md)

@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911490"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409326"
 ---
-# <a name="graphics-event-list"></a>Lista de eventos gráficos
+# <a name="graphics-event-list"></a>Lista de eventos de gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
 
  Esta es la lista de eventos:
@@ -63,7 +63,7 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 ## <a name="kinds-of-events-and-event-markers"></a>Tipos y marcadores de eventos
  Los eventos que se muestran en la lista de eventos se organizan en cuatro categorías: eventos generales, eventos de dibujo, grupos de eventos definidos por el usuario y marcadores de eventos definidos por el usuario. Excepto los eventos generales, cada evento se muestra junto con un icono que indica la categoría a la que pertenece.
 
-|Iconos|Descripción del evento|
+|Icono|Descripción del evento|
 |----------|-----------------------|
 |(sin icono)|Evento general<br /> Cualquier evento que no sea un evento definido por el usuario, un grupo de eventos definido por el usuario o un evento de dibujo.|
 |![Icono de evento de dibujo](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|
@@ -107,11 +107,11 @@ Esta ventana le permite ver el historial del elemento seleccionado en la lista d
 
 | Columna | Descripción |
 |-----------| - |
-| **ype** | Muestra el tipo de la entrada, normalmente *crear*, *leer* y *escribir*. |
+| **Tipo** | Muestra el tipo de la entrada, normalmente *crear*, *leer* y *escribir*. |
 | **Vista** | Muestra una miniatura del recurso en ese momento en el tiempo.  Haga doble clic en la miniatura para abrir una vista de detalles del recurso en ese momento. |
-| **Event** | Muestra la llamada al método que ha generado el evento.  Para ver cualquier historial adicional en elementos individuales, seleccione el icono de inspección ![icono de inspección](media/gfx_watch.png) en la línea adecuada.  Además, se puede seleccionar cualquier elemento que se dibuje en texto azul, como `m_commandList` en la captura de pantalla anterior, para obtener más detalles. |
+| **Evento** | Muestra la llamada al método que ha generado el evento.  Para ver cualquier historial adicional en elementos individuales, seleccione el icono de inspección ![icono de inspección](media/gfx_watch.png) en la línea adecuada.  Además, se puede seleccionar cualquier elemento que se dibuje en texto azul, como `m_commandList` en la captura de pantalla anterior, para obtener más detalles. |
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: Objetos ausentes debido al estado del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
