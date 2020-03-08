@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568961"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408996"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -89,7 +89,7 @@ A veces, querrá permitir que el usuario final Personalice la interfaz de usuari
 
 Visual Studio proporciona un servicio de color de entorno, también denominado servicio VSColor o servicio de color de Shell. Este servicio le permite enlazar los valores de color de los elementos de la interfaz de usuario a un conjunto de colores de nombre y valor que contiene colores para cada tema. El servicio VSColor se debe usar para todos los elementos de la interfaz de usuario, de modo que los colores cambien automáticamente para reflejar el tema seleccionado por el usuario actual, de modo que la interfaz de usuario enlazada al servicio de color del entorno se integre con nuevos temas en versiones futuras de Visual Studio.
 
-### <a name="how-the-service-works"></a>Cómo funciona el servicio
+### <a name="how-the-service-works"></a>Funcionamiento del servicio
 
 El servicio de color del entorno Lee VSColors definido en el archivo. pkgdef para el componente de la interfaz de usuario. A estos VSColors se les hace referencia en el marcado XAML o en el código y se cargan a través de la `IVsUIShell5.GetThemedColor` o una asignación de `DynamicResource`.
 
@@ -326,7 +326,7 @@ Muchos elementos de interfaz de usuario comunes ya tienen colores contraste alto
 | Menú | -Fondo del menú desplegable<br />-Fondo de marca de verificación activada y deshabilitada |
 | MenuText | -Borde del menú desplegable<br />-Marcas de verificación<br />-Glifos de menú<br />-Texto de menú desplegable<br />-Borde del icono seleccionado |
 | Barra de desplazamiento | -La barra de desplazamiento y el fondo de la flecha de la barra de desplazamiento, todos los Estados |
-| Ventana | -Fondo de la pestaña de ocultar automáticamente<br />-Barra de menús y fondo de estante de comando<br />-Fondo de pestaña de la ventana de documento no enfocado o no seleccionado y borde del documento, para las pestañas abrir y provisional<br />-Fondo de la barra de título de la ventana de herramientas sin foco<br />-Fondo de pestaña de la ventana de herramientas, ambos seleccionados y no seleccionados |
+| Periodo | -Fondo de la pestaña de ocultar automáticamente<br />-Barra de menús y fondo de estante de comando<br />-Fondo de pestaña de la ventana de documento no enfocado o no seleccionado y borde del documento, para las pestañas abrir y provisional<br />-Fondo de la barra de título de la ventana de herramientas sin foco<br />-Fondo de pestaña de la ventana de herramientas, ambos seleccionados y no seleccionados |
 | WindowFrame | -Borde del IDE |
 | WindowText | -Ocultar automáticamente el primer plano de la pestaña<br />-Cuadro de la pestaña de la ventana de herramientas seleccionada<br />-Pestaña de la ventana de documento sin foco y no enfocada o no seleccionada en primer plano de la pestaña provisional<br />-Vista de árbol predeterminada en primer plano y mantener el mouse sobre el glifo no seleccionado<br />-Borde de pestaña seleccionado de la ventana de herramientas<br />-Fondo del control de posición de la barra de desplazamiento, borde y glifo |
 
@@ -358,10 +358,10 @@ Construya un tipo especial de entrada de registro de categoría en `[HKLM\SOFTWA
 
 Rellene el registro con dos valores:
 
-| Name | Type | Datos | Descripción |
+| Nombre | Tipo | data | Descripción |
 | --- | --- | --- | --- |
-| Categoría | REG_SZ | GUID | GUID creado para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
+| Category | REG_SZ | GUID | GUID creado para identificar la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
 
  El servicio especificado en el registro debe proporcionar una implementación de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) para la categoría correspondiente.
 
@@ -371,10 +371,10 @@ Construya un tipo especial de entrada de registro de categoría en `[HKLM\SOFTWA
 
 Rellene el registro con dos valores:
 
-| Name | Type | Datos | Descripción |
+| Nombre | Tipo | data | Descripción |
 |--- | --- | --- | --- |
-| Categoría | REG_SZ | GUID | GUID creado para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
+| Category | REG_SZ | GUID | GUID creado para identificar la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio VSPackage que admite la categoría |
 
 El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para el grupo correspondiente.
 
@@ -421,7 +421,7 @@ Para ello, un VSPackage debe:
 
 - **controlar los eventos generados** por el IDE implementando la interfaz [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) . El IDE llama al método adecuado después de las modificaciones del usuario de la página fuentes y colores. Por ejemplo, llama al método [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) si se selecciona una nueva fuente.
 
-  **O**
+  **OR**
 
 - **sondee los cambios en el IDE**. Esto puede realizarse a través de la interfaz [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada por el sistema. Aunque principalmente para la compatibilidad con la persistencia, el método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) puede obtener información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a la configuración de fuente y color almacenados](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
 
