@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595077"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632166"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
+
 Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y herramientas que puede usar para compilar un proyecto de aplicación. MSBuild incluye un conjunto de herramientas estándar, pero también puede crear conjuntos de herramientas personalizados. Para obtener información sobre cómo especificar un conjunto de herramientas, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>Configuraciones del conjunto de herramientas estándar
@@ -59,6 +60,7 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
 |**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 4**|
 
 ### <a name="sub-toolsets"></a>Subconjuntos de herramientas
+
  Si la clave del Registro de la tabla anterior tiene una subclave, MSBuild la usa para determinar si la ruta de acceso de un subconjunto de herramientas puede reemplazar la ruta de acceso del conjunto de herramientas principal. La subclave siguiente muestra un ejemplo:
 
  **\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0**
@@ -71,7 +73,8 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
 > Se recomienda no cambiar esta configuración. No obstante, puede agregar sus propios valores y especificar las definiciones del conjunto de herramientas personalizado para todos los equipos, como se describe en la sección siguiente.
 
 ## <a name="custom-toolset-definitions"></a>Definiciones de conjuntos de herramientas personalizados
- Cuando un conjunto de herramientas estándar no cumple sus requisitos de compilación, puede crear un conjunto de herramientas personalizado. Por ejemplo, puede tener un escenario de laboratorio de compilación en el que necesite un sistema independiente para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Mediante un conjunto de herramientas personalizado, puede asignar valores personalizados al atributo `ToolsVersion` al crear proyectos o ejecutar *MSBuild.exe*. De este modo, también podrá usar la propiedad `$(MSBuildToolsPath)` para importar los archivos *.targets* de ese directorio, así como para definir sus propias propiedades de conjunto de herramientas personalizado que puede usar en cualquier proyecto que utilice ese conjunto de herramientas.
+
+ Cuando un conjunto de herramientas estándar no cumple sus requisitos de compilación, puede crear un conjunto de herramientas personalizado. Por ejemplo, puede tener un escenario de laboratorio de compilación en el que necesite un sistema independiente para compilar proyectos de C++. Mediante un conjunto de herramientas personalizado, puede asignar valores personalizados al atributo `ToolsVersion` al crear proyectos o ejecutar *MSBuild.exe*. De este modo, también podrá usar la propiedad `$(MSBuildToolsPath)` para importar los archivos *.targets* de ese directorio, así como para definir sus propias propiedades de conjunto de herramientas personalizado que puede usar en cualquier proyecto que utilice ese conjunto de herramientas.
 
  Especifique un conjunto de herramientas personalizado en el archivo de configuración de *MSBuild.exe* (o de la herramienta personalizada que hospeda el motor de MSBuild si eso es lo que está usando). Por ejemplo, el archivo de configuración de *MSBuild.exe* podría incluir la siguiente definición de conjunto de herramientas si se deseaba definir un conjunto de herramientas denominado *MyCustomToolset*.
 
@@ -99,7 +102,7 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
 > [!NOTE]
 > Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.
 
- `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración. Al definir las entradas del Registro, puede especificar conjuntos de herramientas para todos los equipos que se aplican a *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y todos los hosts de MSBuild.
+ `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración. Definiendo las entradas del Registro, puede especificar conjuntos de herramientas para todos los equipos que se aplican a *MSBuild.exe*, Visual Studio y todos los hosts de MSBuild.
 
 > [!NOTE]
 > Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.
@@ -113,4 +116,5 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
   También puede agregar propiedades personalizadas específicas de ToolsVersion al archivo de configuración con la misma sintaxis utilizada para agregar la propiedad MSBuildToolsPath. Para que estas propiedades personalizadas están disponibles para el archivo de proyecto, use el mismo nombre que el del valor especificado en el archivo de configuración. En el archivo de configuración se pueden definir conjuntos de herramientas, pero no subconjuntos de herramientas.
 
 ## <a name="see-also"></a>Vea también
+
 - [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

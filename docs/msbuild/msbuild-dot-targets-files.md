@@ -16,17 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc5df9c4eba4195400b6a41fa50a5c88257d70e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566558"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633361"
 ---
 # <a name="msbuild-targets-files"></a>Archivos .targets de MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye varios archivos *.targets* que contienen elementos, propiedades, destinos y tareas para escenarios comunes. Estos archivos se importan automáticamente en la mayoría de los archivos del proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para simplificar el mantenimiento y la legibilidad.
 
- Normalmente, los proyectos importan uno o más archivos *.targets* para definir su proceso de compilación. Por ejemplo, un proyecto de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] creado por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importa *Microsoft.CSharp.targets*, que importa *Microsoft.Common.targets*. El propio proyecto de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] define los elementos y las propiedades específicos de ese proyecto, pero las reglas de compilación estándar de un proyecto de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] se definen en los archivos *.targets* importados.
+MSBuild incluye varios archivos *.targets* que contienen elementos, propiedades, destinos y tareas para escenarios comunes. Estos archivos se importan automáticamente en la mayoría de los archivos del proyecto de Visual Studio para simplificar el mantenimiento y la legibilidad.
+
+ Normalmente, los proyectos importan uno o más archivos *.targets* para definir su proceso de compilación. Por ejemplo, un proyecto de C# creado por Visual Studio importa *Microsoft.CSharp.targets*, que importa *Microsoft.Common.targets*. El propio proyecto de C# define los elementos y las propiedades específicos de ese proyecto, pero las reglas de compilación estándar de un proyecto de C# se definen en los archivos *.targets* importados.
 
  El valor `$(MSBuildToolsPath)` especifica la ruta de acceso de estos archivos *.targets* comunes. Si `ToolsVersion` es 4.0, los archivos están en la siguiente ubicación: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
@@ -37,14 +38,16 @@ ms.locfileid: "75566558"
 
 | Archivo *.targets* | Descripción |
 |---------------------------------| - |
-| *Microsoft.Common.targets* | Define los pasos en el proceso de compilación estándar para proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Importado por los archivos *Microsoft.CSharp.targets* y *Microsoft.VisualBasic.targets*, que incluyen la siguiente instrucción: `<Import Project="Microsoft.Common.targets" />` |
+| *Microsoft.Common.targets* | Define los pasos en el proceso de compilación estándar para proyectos de Visual Basic y C#.<br /><br /> Importado por los archivos *Microsoft.CSharp.targets* y *Microsoft.VisualBasic.targets*, que incluyen la siguiente instrucción: `<Import Project="Microsoft.Common.targets" />` |
 | *Microsoft.CSharp.targets* | Define los pasos en el proceso de compilación estándar para proyectos de Visual C#.<br /><br /> Importado por los archivos de proyecto de Visual C# ( *.csproj*), que incluyen la siguiente instrucción: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
 | *Microsoft.VisualBasic.targets* | Define los pasos en el proceso de compilación estándar para proyectos de Visual Basic.<br /><br /> Importado por los archivos de proyecto de Visual Basic ( *.vbproj*), que incluyen la siguiente instrucción: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
+
 *Directory.Build.targets* es un archivo definido por el usuario que proporciona personalizaciones a proyectos de un directorio. Este archivo se importa automáticamente desde *Microsoft.Common.targets*, a menos que la propiedad **ImportDirectoryBuildTargets** esté establecida en **false**. Para más información, [personalice su compilación](customize-your-build.md).
 
 ## <a name="see-also"></a>Vea también
+
 - [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

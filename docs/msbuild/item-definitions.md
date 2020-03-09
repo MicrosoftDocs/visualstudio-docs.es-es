@@ -10,15 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573786"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633712"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permite la declaración estática de los elementos de archivos de proyecto mediante el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.
+
+MSBuild 2.0 permite la declaración estática de los elementos de archivos de proyecto con el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de MSBuild 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.
 
 El elemento *ItemDefinitionGroup* aparece inmediatamente después del elemento [Project](../msbuild/project-element-msbuild.md) del archivo de proyecto. Las definiciones de elementos proporcionan la funcionalidad siguiente:
 
@@ -33,6 +34,7 @@ El elemento *ItemDefinitionGroup* aparece inmediatamente después del elemento [
 - Se puede utilizar condiciones para controlar la inclusión de metadatos.
 
 ## <a name="item-metadata-default-values"></a>Valores predeterminados de los metadatos de elementos
+
 Los metadatos de elemento definidos en ItemDefinitionGroup son simplemente una declaración de los metadatos predeterminados. Los metadatos no se aplican a menos que defina un elemento que utilice un ItemGroup para contener los valores de los metadatos.
 
 > [!NOTE]
@@ -61,6 +63,7 @@ En este ejemplo, los metadatos predeterminados "m" se aplican al elemento "i" po
 > Los nombres de los elementos y parámetros XML distinguen entre mayúsculas y minúsculas. Los nombres de los metadatos de elemento y los nombres de elementos\/propiedades no distinguen entre mayúsculas y minúsculas. Por consiguiente, los elementos de ItemDefinitionGroup que tienen nombres que sólo difieren en las mayúsculas y minúsculas se deberán tratar como el mismo ItemGroup.
 
 ## <a name="value-sources"></a>Orígenes de los valores
+
 Los valores de los metadatos definidos en ItemDefinitionGroup pueden proceder de muchos orígenes diferentes, como se indica a continuación:
 
 - Propiedad PropertyGroup
@@ -83,6 +86,7 @@ Los valores de los metadatos definidos en ItemDefinitionGroup pueden proceder de
 > Los metadatos de elemento de un ItemGroup no son útiles en una declaración de metadatos de ItemDefinitionGroup porque los elementos de ItemDefinitionGroup se procesan antes que los elementos de ItemGroup.
 
 ## <a name="additive-and-multiple-definitions"></a>Definiciones aditivas y múltiples
+
 Al agregar definiciones o utilizar varios ItemDefinitionGroups, recuerde lo siguiente:
 
 - La especificación de los metadatos adicionales se agrega al tipo.
@@ -143,6 +147,7 @@ Cuando se invalidan los metadatos previamente definidos, la última especificaci
 ```
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Uso de condiciones en ItemDefinitionGroup
+
 Puede utilizar condiciones en un ItemDefinitionGroup para controlar la inclusión de metadatos. Por ejemplo:
 
 ```xml
@@ -189,7 +194,8 @@ En el ejemplo anterior, el elemento "i" hace referencia al elemento "test" de Co
 En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition hace referencia al valor de metadatos de "i" para el elemento "yes".
 
 ## <a name="override-and-delete-metadata"></a>Invalidación y eliminación de metadatos
-Los metadatos definidos en un elemento ItemDefinitionGroup se pueden invalidar en un elemento ItemDefinitionGroup posterior estableciendo los valores de los metadatos en blanco. También puede eliminar eficazmente un elemento de metadatos estableciéndolo en un valor vacío. Por ejemplo:
+
+Los metadatos definidos en un elemento ItemDefinitionGroup se pueden invalidar en un elemento ItemDefinitionGroup posterior estableciendo los valores de los metadatos en otro valor. También puede eliminar eficazmente un elemento de metadatos estableciéndolo en un valor vacío. Por ejemplo:
 
 ```xml
 <ItemDefinitionGroup>
@@ -207,6 +213,7 @@ Los metadatos definidos en un elemento ItemDefinitionGroup se pueden invalidar e
 El elemento "i" aún los metadatos "m" pero, ahora, su valor es vacío.
 
 ## <a name="scope-of-metadata"></a>Ámbito de metadatos
+
 ItemDefinitionGroup tiene un ámbito global en las propiedades definidas y globales, independientemente de donde se definan. Las definiciones de los metadatos predeterminadas en un ItemDefinitionGroup pueden ser de autorreferencia. Por ejemplo, a continuación se utiliza una referencia de metadatos simple:
 
 ```xml
@@ -240,7 +247,7 @@ Sin embargo, el siguiente ejemplo no es válido:
 </ItemDefinitionGroup>
 ```
 
-A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ItemGroups también puede ser de autorreferencia. Por ejemplo:
+A partir de MSBuild 3.5, ItemGroups también puede ser de autorreferencia. Por ejemplo:
 
 ```xml
 <ItemGroup>
@@ -252,4 +259,5 @@ A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Procesamiento por lotes](../msbuild/msbuild-batching.md)

@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949ec0622dd19ef906d4c3a40a2ddadac2b75065
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575905"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634167"
 ---
 # <a name="how-to-build-incrementally"></a>Procedimiento Compilación de forma incremental
-Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).
+
+Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), Microsoft Build Engine (MSBuild) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Definición de entradas y salidas
+
 Es posible compilar un destino de forma incremental si se han especificado las entradas y los resultados en el archivo de proyecto.
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Para especificar las entradas y los resultados de un destino
@@ -35,7 +37,7 @@ Es posible compilar un destino de forma incremental si se han especificado las e
       Outputs="hello.exe">
   ```
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el destino; de lo contrario, se omite:
+MSBuild compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, MSBuild ejecuta el destino; de lo contrario, se omite:
 
 ```xml
 <Target Name="Build"
@@ -51,11 +53,12 @@ Es posible compilar un destino de forma incremental si se han especificado las e
 Cuando las entradas y los resultados están especificados en un destino, puede suceder que cada resultado solo se asigne a una entrada o que no exista ninguna asignación directa entre resultados y entradas. Por ejemplo, en [Csc (Tarea)](../msbuild/csc-task.md) anterior, la salida *hello.exe* no se puede asignar a una única entrada porque depende de todas ellas.
 
 > [!NOTE]
-> Un destino en el que no exista asignación directa entre entradas y resultados se compilará con más frecuencia que un destino en el que cada resultado solo se puede asignar a una entrada. Esto se debe a que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] no puede determinar qué resultados necesitan recompilarse si algunas de las entradas han cambiado.
+> Un destino en el que no exista asignación directa entre entradas y resultados se compilará con más frecuencia que un destino en el que cada resultado solo se puede asignar a una entrada. Esto se debe a que MSBuild no puede determinar qué resultados necesitan recompilarse si algunas de las entradas han cambiado.
 
 Las tareas en las que se puede identificar una asignación directa entre salidas y entradas, como [LC (Tarea)](../msbuild/lc-task.md), son más adecuadas para las compilaciones incrementales que las tareas como [Csc](../msbuild/csc-task.md) y [Vbc](../msbuild/vbc-task.md), que producen un ensamblado de salida a partir de una serie de entradas.
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo siguiente se usa un proyecto que compila archivos de Ayuda para un sistema de Ayuda hipotético. El proyecto convierte archivos *.txt* de origen en archivos *.content* intermedios que, después, se combinan con archivos XML de metadatos para generar el archivo *.help* definitivo que usa el sistema de ayuda. El proyecto usa las tareas hipotéticas siguientes:
 
 - `GenerateContentFiles`: Convierte archivos *.txt* en archivos *.content*.
@@ -67,7 +70,7 @@ El proyecto usa transformaciones para crear una asignación unívoca entre las e
 Este archivo de proyecto contiene los destinos `Convert` y `Build`. Las tareas `GenerateContentFiles` y `BuildHelp` se colocan respectivamente en los destinos `Convert` y `Build` para que se pueda compilar cada destino incrementalmente. Al usar el elemento `Output`, los resultados de la tarea `GenerateContentFiles` se colocan en la lista de elementos `ContentFile`, donde se pueden usar como entradas para la tarea `BuildHelp`. Si usa el elemento `Output` de esta manera, proporcionará automáticamente los resultados de una tarea como entradas para otra tarea y no será necesario enumerar manualmente cada elemento o las listas de elementos de cada tarea.
 
 > [!NOTE]
-> Aunque el destino de `GenerateContentFiles` se puede compilar incrementalmente, todas las salidas de ese destino se requieren siempre como entradas para el destino de `BuildHelp`. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona automáticamente todas las salidas de un destino como entradas para otro destino cuando se usa el elemento `Output`.
+> Aunque el destino de `GenerateContentFiles` se puede compilar incrementalmente, todas las salidas de ese destino se requieren siempre como entradas para el destino de `BuildHelp`. MSBuild proporciona automáticamente todas las salidas de un destino como entradas para otro destino cuando se usa el elemento `Output`.
 
 ```xml
 <Project DefaultTargets="Build"
@@ -102,6 +105,7 @@ Este archivo de proyecto contiene los destinos `Convert` y `Build`. Las tareas `
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Destinos](../msbuild/msbuild-targets.md)
 - [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Transformaciones](../msbuild/msbuild-transforms.md)

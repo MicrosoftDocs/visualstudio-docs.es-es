@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593673"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633348"
 ---
 # <a name="msbuild-glossary"></a>Glosario de MSBuild
 
@@ -161,7 +161,7 @@ targets file\
 Un archivo de destinos es un archivo del proyecto que contiene principalmente los destinos y las tareas que guían la compilación. Por convención, tiene la extensión de archivo *.targets*. Los archivos de destinos se importan normalmente al final de los archivos del proyecto asociados.
 
 task\
-Las tareas son unidades de código ejecutable que se utilizan en proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operaciones de compilación. Por ejemplo, una tarea podría compilar archivos de entrada o ejecutar una herramienta externa. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
+Las tareas son unidades de código ejecutable que se utilizan en proyectos de MSBuild para realizar operaciones de compilación. Por ejemplo, una tarea podría compilar archivos de entrada o ejecutar una herramienta externa. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
 transform\
 Una transformación es una conversión unívoca de una colección de elementos en otra. Además de permitir que un proyecto convierta colecciones de elementos, una transformación permite que un destino identifique una asignación directa entre sus entradas y salidas. Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md).

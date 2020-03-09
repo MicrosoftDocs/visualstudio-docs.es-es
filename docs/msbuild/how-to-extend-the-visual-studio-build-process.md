@@ -14,22 +14,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575931"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633855"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
-El proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos *.targets* de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
+
+El proceso de compilación de Visual Studio se define mediante una serie de archivos *.targets* de MSBuild que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de Visual Studio:
 
 - Reemplazar destinos predefinidos específicos definidos en los destinos comunes (*Microsoft.Common.targets* o los archivos que importa).
 
 - Reemplazar las propiedades "DependsOn" definidas en los destinos comunes.
+## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
 
 ## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
-Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para tener más control sobre el proceso de compilación.
+
+Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, MSBuild llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de MSBuild para tener más control sobre el proceso de compilación.
+Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, MSBuild llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de MSBuild para tener más control sobre el proceso de compilación.
 
 > [!NOTE]
 > Los proyectos de estilo de SDK tienen una importación implícita de destinos *después de la última línea del archivo del proyecto*. Esto significa que no se pueden reemplazar los destinos predeterminados a menos que se especifiquen las importaciones manualmente, tal como se describe en [Cómo: usar SDK de proyecto de MSBuild](how-to-use-project-sdk.md).
@@ -67,7 +71,8 @@ En la tabla siguiente se muestran todos los destinos incluidos en los destinos c
 |`BeforeResGen`, `AfterResGen`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de generar los recursos.|
 
 ## <a name="override-dependson-properties"></a>Reemplazar propiedades DependsOn
-Reemplazar destinos predefinidos es una manera sencilla de extender el proceso de compilación, pero, dado que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] evalúa la definición de destinos secuencialmente, no hay manera de evitar que otro proyecto que importe su proyecto reemplace los destinos que ya ha reemplazado. Por lo tanto, por ejemplo, el último destino `AfterBuild` definido en el archivo del proyecto, después de que se hayan importado todos los demás proyectos, será el que se utiliza durante la compilación.
+
+Reemplazar destinos predefinidos es una manera sencilla de extender el proceso de compilación, pero, dado que MSBuild evalúa la definición de destinos secuencialmente, no hay manera de evitar que otro proyecto que importe su proyecto reemplace los destinos que ya ha reemplazado. Por lo tanto, por ejemplo, el último destino `AfterBuild` definido en el archivo del proyecto, después de que se hayan importado todos los demás proyectos, será el que se utiliza durante la compilación.
 
 Para protegerse de reemplazos de destinos imprevistos, puede reemplazar las propiedades DependsOn que se usan en los atributos `DependsOnTargets` en los destinos comunes. Por ejemplo, el valor del atributo `DependsOnTargets` del destino `Build` es `"$(BuildDependsOn)"`. Tenga en cuenta que:
 
@@ -127,6 +132,7 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 |`CompileDependsOn`|La propiedad que se debe reemplazar si quiere insertar procesos personalizados antes o después del paso de compilación.|
 
 ## <a name="see-also"></a>Vea también
+
 - [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
 - [Archivos .targets](../msbuild/msbuild-dot-targets-files.md)

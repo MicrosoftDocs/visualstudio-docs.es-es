@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594973"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631697"
 ---
 # <a name="tooltaskextension-base-class"></a>Clase base ToolTaskExtension
+
 Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>, la cual a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Esta cadena de herencia agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de las clases base.
 
 | Parámetro | Descripción |
@@ -41,10 +43,11 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Parámetro `String` opcional.<br /><br /> Importancia con la que se va a registrar el texto de la secuencia de salida estándar. |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | Parámetro `Int32` opcional virtual.<br /><br /> Especifica el tiempo en milisegundos después del cual se termina la tarea ejecutable. El valor predeterminado es `Int.MaxValue`, que indica que no hay período de tiempo de espera. Tiempo de espera en milisegundos. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | Parámetro `string` opcional virtual.<br /><br /> Los proyectos pueden implementarlo para invalidar ToolName. Las tareas pueden invalidarlo para conservar ToolName. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Parámetro `string` opcional.<br /><br /> Especifica la ubicación desde donde la tarea carga el archivo ejecutable subyacente. Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión del marco de trabajo que está ejecutando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Parámetro `string` opcional.<br /><br /> Especifica la ubicación desde donde la tarea carga el archivo ejecutable subyacente. Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión del marco de trabajo que está ejecutando MSBuild. |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea crea un archivo por lotes para la línea de comandos y lo ejecuta mediante el procesador de comandos, en lugar de ejecutar el comando directamente. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parámetro `bool` opcional.<br /><br /> Cuando se establece en `true`, esta tarea produce el nodo cuando se ejecuta la tarea. |
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

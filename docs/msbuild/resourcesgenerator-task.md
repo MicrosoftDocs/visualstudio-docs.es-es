@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579603"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632516"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator (Tarea)
-La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
+
+La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos ( *.jpg*, *.ico*, *.bmp*, XAML en formato binario y en otros tipos de extensiones) en un archivo *.resources*.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
@@ -36,6 +37,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o v
 |`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo *.resources* generado.|
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo siguiente, se genera un archivo *.resources* con un solo recurso *.bmp*. El recurso *.bmp* se genera en un directorio que es relativo al directorio raíz del proyecto.
 
 ```xml
@@ -53,6 +55,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o v
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

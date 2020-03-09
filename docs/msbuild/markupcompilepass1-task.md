@@ -17,55 +17,55 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d72b0a63235de4cc93e97f6e85dc5728e5ebbf43
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a847f096edf5e42623cb2cb32cf4fd871a89aad7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579671"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633517"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 (Tarea)
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> convierte archivos de proyecto de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] no localizables en un formato binario compilado.
+La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> convierte archivos de proyecto de XAML no localizables en un formato binario compilado.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 | Parámetro | Descripción |
 | - | - |
 | `AllGeneratedFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene una lista completa de archivos que se generan mediante la tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>. |
-| `AlwaysCompileMarkupFilesInSeparateDomain` | Parámetro **Boolean** opcional.<br /><br /> Especifica si la tarea se va a ejecutar en un <xref:System.AppDomain> independiente. Si este parámetro devuelve el valor **false**, la tarea se ejecuta en el mismo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] y su ejecución es más rápida. Si el parámetro devuelve el valor **true**, la tarea se ejecuta en otro <xref:System.AppDomain> que está aislado de [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] y su ejecución es más lenta. |
-| `ApplicationMarkup` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica el nombre del archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de la definición de aplicación. |
+| `AlwaysCompileMarkupFilesInSeparateDomain` | Parámetro **Boolean** opcional.<br /><br /> Especifica si la tarea se va a ejecutar en un <xref:System.AppDomain> independiente. Si este parámetro devuelve el valor **false**, la tarea se ejecuta en el mismo <xref:System.AppDomain> que MSBuild y su ejecución es más rápida. Si el parámetro devuelve el valor **true**, la tarea se ejecuta en otro <xref:System.AppDomain> que está aislado de MSBuild y su ejecución es más lenta. |
+| `ApplicationMarkup` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica el nombre del archivo XAML de la definición de aplicación. |
 | `AssembliesGeneratedDuringBuild` | Parámetro **String[]** opcional.<br /><br /> Especifica referencias a los ensamblados que cambian durante el proceso de compilación. Por ejemplo, una solución de Visual Studio puede contener un proyecto que haga referencia al resultado compilado de otro proyecto. En este caso, el resultado compilado del segundo proyecto se puede agregar al parámetro **AssembliesGeneratedDuringBuild**.<br /><br /> Nota: El parámetro **AssembliesGeneratedDuringBuild** debe contener referencias al conjunto completo de ensamblados que genera una solución de compilación. |
-| `AssemblyName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto. Por ejemplo, si un proyecto genera un archivo ejecutable de [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] con el nombre *WinExeAssembly.exe*, el parámetro **AssemblyName** tiene el valor **WinExeAssembly**. |
+| `AssemblyName` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto. Por ejemplo, si un proyecto genera un archivo ejecutable de Windows con el nombre *WinExeAssembly.exe*, el parámetro **AssemblyName** tiene el valor **WinExeAssembly**. |
 | `AssemblyPublicKeyToken` | Parámetro **String** opcional.<br /><br /> Especifica el token de la clave pública del ensamblado. |
 | `AssemblyVersion` | Parámetro **String** opcional.<br /><br /> Especifica el número de versión del ensamblado. |
 | `ContentFiles` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos de contenido separados. |
-| `DefineConstants` | Parámetro **String** opcional.<br /><br /> Especifica que se mantiene el valor actual de **DefineConstants**, lo que afecta a la generación del ensamblado de destino. Si se cambia este parámetro, puede que cambie la API pública del ensamblado de destino y se vea afectada la compilación de los archivos [!INCLUDE[TLA2#tla_titlexaml](../msbuild/includes/tla2sharptla_titlexaml_md.md)] que hacen referencia a tipos locales. |
+| `DefineConstants` | Parámetro **String** opcional.<br /><br /> Especifica que se mantiene el valor actual de **DefineConstants**, lo que afecta a la generación del ensamblado de destino. Si se cambia este parámetro, puede que cambie la API pública del ensamblado de destino y se vea afectada la compilación de los archivos XAML que hacen referencia a tipos locales. |
 | `ExtraBuildControlFiles` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica una lista de los archivos que controlan si se va a desencadenar una recompilación cuando se vuelva a ejecutar la tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>; se desencadena una recompilación si cambia alguno de estos archivos. |
-| `GeneratedBamlFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene la lista de archivos generados en formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `GeneratedBamlFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene la lista de archivos generados en formato binario XAML. |
 | `GeneratedCodeFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene la lista de los archivos de código administrado generados. |
-| `GeneratedLocalizationFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene la lista de los archivos de localización que se generaron por cada archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] localizable. |
-| `HostInBrowser` | Parámetro **String** opcional.<br /><br /> Especifica si el ensamblado generado es [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]. Las opciones válidas son **true** y **false**. Si es **true**, se genera código para admitir el hospedaje en el explorador. |
-| `KnownReferencePaths` | Parámetro **String[]** opcional.<br /><br /> Especifica referencias a los ensamblados que no cambian durante el proceso de compilación. Incluye los ensamblados que se encuentran en [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], en un directorio de instalación de [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)], etc. |
+| `GeneratedLocalizationFiles` | Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Contiene la lista de los archivos de localización que se generaron por cada archivo XAML localizable. |
+| `HostInBrowser` | Parámetro **String** opcional.<br /><br /> Especifica si el ensamblado generado es XAML  Browser Application (XBAP). Las opciones válidas son **true** y **false**. Si es **true**, se genera código para admitir el hospedaje en el explorador. |
+| `KnownReferencePaths` | Parámetro **String[]** opcional.<br /><br /> Especifica referencias a los ensamblados que no cambian durante el proceso de compilación. Incluye los ensamblados que se encuentran en la caché global de ensamblados, en un directorio de instalación de .NET, etc. |
 | `Language` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el lenguaje administrado que el compilador admite. Las opciones válidas son **C#** , **VB**, **JScript** y **C++** . |
-| `LanguageSourceExtension` | Parámetro **String** opcional.<br /><br /> Especifica la extensión que se anexa a la extensión del archivo de código administrado generado:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Si el valor del parámetro **LanguageSourceExtension** no se establece en un valor concreto, se utiliza la extensión de nombre de archivo de origen predeterminada de un lenguaje: *.vb* para [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)], *.csharp* para [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]. |
-| `LocalizationDirectivesToLocFile` | Parámetro **String** opcional.<br /><br /> Especifica cómo generar la información de localización para cada archivo de origen de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. Las opciones válidas son **None**, **CommentsOnly** y **All**. |
-| `OutputPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el directorio en el que se generan los archivos de código administrado y los archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `LanguageSourceExtension` | Parámetro **String** opcional.<br /><br /> Especifica la extensión que se anexa a la extensión del archivo de código administrado generado:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Si el valor del parámetro **LanguageSourceExtension** no se establece en un valor concreto, se utiliza la extensión de nombre de archivo de origen predeterminada de un lenguaje: *.vb* para Visual Basic, *.csharp* para C#. |
+| `LocalizationDirectivesToLocFile` | Parámetro **String** opcional.<br /><br /> Especifica cómo generar la información de localización para cada archivo de origen de XAML. Las opciones válidas son **None**, **CommentsOnly** y **All**. |
+| `OutputPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el directorio en el que se generan los archivos de código administrado y los archivos de formato binario XAML. |
 | `OutputType` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el tipo de ensamblado que genera un proyecto. Las opciones válidas son **winexe**, **exe**, **library** y **netmodule**. |
-| `PageMarkup` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica una lista de los archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] que se van a procesar. |
-| `References` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de referencias de los archivos a los ensamblados que contienen los tipos que se usan en los archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
-| `RequirePass2ForMainAssembly` | Parámetro de salida opcional de tipo **Boolean**.<br /><br /> Indica si el proyecto contiene archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] no localizables que hagan referencia a tipos locales insertados en el ensamblado principal. |
-| `RequirePass2ForSatelliteAssembly` | Parámetro de salida opcional de tipo **Boolean**.<br /><br /> Indica si el proyecto contiene archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] localizables que hagan referencia a tipos locales insertados en el ensamblado principal. |
-| `RootNamespace` | Parámetro **String** opcional.<br /><br /> Especifica el espacio de nombres de la raíz de las clases que están dentro del proyecto. **RootNamespace** también se usa como espacio de nombres predeterminado de un archivo de código administrado generado cuando el archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] correspondiente no incluye el atributo `x:Class`. |
+| `PageMarkup` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica una lista de los archivos XAML que se van a procesar. |
+| `References` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de referencias de los archivos a los ensamblados que contienen los tipos que se usan en los archivos XAML. |
+| `RequirePass2ForMainAssembly` | Parámetro de salida opcional de tipo **Boolean**.<br /><br /> Indica si el proyecto contiene archivos XAML no localizables que hagan referencia a tipos locales insertados en el ensamblado principal. |
+| `RequirePass2ForSatelliteAssembly` | Parámetro de salida opcional de tipo **Boolean**.<br /><br /> Indica si el proyecto contiene archivos XAML localizables que hagan referencia a tipos locales insertados en el ensamblado principal. |
+| `RootNamespace` | Parámetro **String** opcional.<br /><br /> Especifica el espacio de nombres de la raíz de las clases que están dentro del proyecto. **RootNamespace** también se usa como espacio de nombres predeterminado de un archivo de código administrado generado cuando el archivo XAML correspondiente no incluye el atributo `x:Class`. |
 | `SourceCodeFiles` | Parámetro opcional de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos de código del proyecto actual. La lista no incluye los archivos de código administrado específicos del lenguaje que se hayan generado. |
-| `UICulture` | Parámetro **String** opcional.<br /><br /> Especifica el ensamblado satélite de la referencia cultural de la interfaz de usuario en la que se insertan los archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] generados. Si no se establece el valor de **UICulture**, los archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] generados se insertan en el ensamblado principal. |
-| `XAMLDebuggingInformation` | Parámetro **Boolean** opcional.<br /><br /> Si el valor es **true**, se genera información de diagnóstico y se incluye en el archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] compilado como ayuda para la depuración. |
+| `UICulture` | Parámetro **String** opcional.<br /><br /> Especifica el ensamblado satélite de la referencia cultural de la interfaz de usuario en la que se insertan los archivos de formato binario XAML generados. Si no se establece el valor de **UICulture**, los archivos de formato binario XAML generados se insertan en el ensamblado principal. |
+| `XAMLDebuggingInformation` | Parámetro **Boolean** opcional.<br /><br /> Si el valor es **true**, se genera información de diagnóstico y se incluye en el archivo XAML compilado como ayuda para la depuración. |
 
 ## <a name="remarks"></a>Comentarios
 
-La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> compila normalmente [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y genera archivos de código. Si un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] contiene referencias a tipos definidos en el mismo proyecto, **MarkupCompilePass1** aplaza su compilación en formato binario a un segundo paso de compilación de marcado (**MarkupCompilePass2**). Estos archivos se deben compilar de forma aplazada porque deben esperar hasta que se compilen los tipos definidos localmente a los que se hace referencia. En cambio, si un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tiene un atributo `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> genera el archivo de código específico del lenguaje para él.
+La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> compila normalmente XAML en formato binario y genera archivos de código. Si un archivo XAML contiene referencias a tipos definidos en el mismo proyecto, **MarkupCompilePass1** aplaza su compilación en formato binario a un segundo paso de compilación de marcado (**MarkupCompilePass2**). Estos archivos se deben compilar de forma aplazada porque deben esperar hasta que se compilen los tipos definidos localmente a los que se hace referencia. En cambio, si un archivo XAML tiene un atributo `x:Class`, <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> genera el archivo de código específico del lenguaje para él.
 
-Un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] es adaptable si contiene elementos que usan el atributo `x:Uid`:
+Un archivo XAML es adaptable si contiene elementos que usan el atributo `x:Uid`:
 
 ```xml
 <Page x:Class="WPFMSBuildSample.Page1"
@@ -77,7 +77,7 @@ Un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)
 </Page>
 ```
 
-Un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] hace referencia a un tipo definido localmente cuando declara un espacio de nombres [!INCLUDE[TLA#tla_xml](../msbuild/includes/tlasharptla_xml_md.md)] que use el valor `clr-namespace` para hacer referencia a un espacio de nombres del proyecto actual:
+Un archivo XAML hace referencia a un tipo definido localmente cuando declara un espacio de nombres XML que use el valor `clr-namespace` para hacer referencia a un espacio de nombres del proyecto actual:
 
 ```xml
 <Page x:Class="WPFMSBuildSample.Page1"
@@ -94,11 +94,11 @@ Un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)
 </Page>
 ```
 
-Si un archivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] es localizable o hace referencia a un tipo definido localmente, se necesita un segundo paso de compilación de marcado, el cual requiere la ejecución de [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) y, a continuación, de [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
+Si un archivo XAML es localizable o hace referencia a un tipo definido localmente, se necesita un segundo paso de compilación de marcado, el cual requiere la ejecución de [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) y, a continuación, de [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo se muestra cómo convertir tres archivos *Page* de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en archivos de formato binarios. *Page1* contiene una referencia a un tipo, `Class1`, que está en el espacio de nombres raíz del proyecto y, por tanto, no se convierte en archivos de formato binarios en este paso de compilación de marcado. En su lugar, se ejecuta [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) y, después, [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
+En el siguiente ejemplo se muestra cómo convertir tres archivos *Page* de XAML en archivos de formato binarios. *Page1* contiene una referencia a un tipo, `Class1`, que está en el espacio de nombres raíz del proyecto y, por tanto, no se convierte en archivos de formato binarios en este paso de compilación de marcado. En su lugar, se ejecuta [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) y, después, [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md).
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

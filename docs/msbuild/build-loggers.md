@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c82b7456e0fc497b753c87f7a4d6808c81d5ab2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593413"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634531"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
+
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, que se define en el ensamblado *Microsoft.Build.Framework.dll*.
 
 Existen dos métodos que se pueden utilizar al implementar un registrador:
@@ -30,24 +31,28 @@ Existen dos métodos que se pueden utilizar al implementar un registrador:
   En este tema se explica cómo escribir un registrador simple que se deriva de <xref:Microsoft.Build.Utilities.Logger> y muestra mensajes en la consola en respuesta a ciertos eventos de compilación.
 
 ## <a name="register-for-events"></a>Registrarse en eventos
+
 El propósito de un registrador consiste en recopilar información relacionada con la progresión del proceso de compilación atendiendo a la notificación del motor de compilación y, a continuación, elaborar informes con dicha información para que resulte útil. Todos los registradores deben invalidar el método <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, que es donde se registra el registrador de eventos. En este ejemplo, el registrador se registra para los eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> y <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]
 
 ## <a name="respond-to-events"></a>Responder a eventos
+
 Ahora que el registrador está registrado para eventos concretos, es necesario controlar dichos eventos cuando se producen. Para los eventos <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> y <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> eventos, el registrador simplemente escribe una frase corta y el nombre del archivo del proyecto implicado en el evento. Todos los mensajes del registrador se escriben en la ventana de la consola.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
 
 ## <a name="respond-to-logger-verbosity-values"></a>Responder a valores de detalle del registrador
+
 En algunos casos, es posible que solo se desee registrar información de un evento si el modificador **-verbosity** de MSBuild.exe contiene un determinado valor. En este ejemplo, el controlador de eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> solo registra un mensaje si la propiedad <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, que se establece mediante el modificador **-verbosity**, es igual a <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>Especificar un registrador
-Cuando el registrador se compila en un ensamblado, es necesario indicar a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que utilice dicho registrador durante las compilaciones. Esto se hace con el modificador **-logger** con *MSBuild.exe*. Para obtener más información sobre los modificadores disponibles para *MSBuild.exe*, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
-La siguiente línea de comandos compila el proyecto *MyProject.csproj* y usa la clase de registrador implementada en *SimpleLogger.dll*. El modificador **-nologo** oculta la pancarta y el mensaje de copyright y el modificador **-noconsolelogger** deshabilita el registrador de consola de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] predeterminado.
+Cuando el registrador se compila en un ensamblado, es necesario indicar a MSBuild que utilice dicho registrador durante las compilaciones. Esto se hace con el modificador **-logger** con *MSBuild.exe*. Para obtener más información sobre los modificadores disponibles para *MSBuild.exe*, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
+
+La siguiente línea de comandos compila el proyecto *MyProject.csproj* y usa la clase de registrador implementada en *SimpleLogger.dll*. El modificador **-nologo** oculta la pancarta y el mensaje de copyright y el modificador **-noconsolelogger** deshabilita el registrador de consola de MSBuild predeterminado.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
@@ -62,19 +67,24 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ## <a name="example"></a>Ejemplo
 
 ### <a name="description"></a>Descripción
+
 El ejemplo siguiente contiene el código completo del registrador.
 
 ### <a name="code"></a>Código
+
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
 ## <a name="example"></a>Ejemplo
 
 ### <a name="description"></a>Descripción
+
 El ejemplo siguiente muestra cómo implementar un registrador que escribe el registro en un archivo en lugar de mostrarlo en la ventana de la consola.
 
 ### <a name="code"></a>Código
+
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Vea también
+
 - [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

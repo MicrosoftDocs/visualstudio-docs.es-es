@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8707371fac876586d38f12a797aaee7228b5f729
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593465"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634583"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tarea)
-La tarea `AspNetCompiler` contiene *aspnet_compiler.exe*, una utilidad que sirve para precompilar aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+La tarea `AspNetCompiler` incluye *aspnet_compiler.exe*, una utilidad para precompilar las aplicaciones de ASP.NET.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
+
 En la siguiente tabla se describen los parámetros de la tarea `AspNetCompiler` .
 
 |Parámetro|Descripción|
@@ -49,10 +51,12 @@ En la siguiente tabla se describen los parámetros de la tarea `AspNetCompiler` 
 |`VirtualPath`|Parámetro `String` opcional.<br /><br /> Ruta de acceso virtual de la aplicación que se va a compilar. Si se especifica `PhysicalPath`, la ruta de acceso física se utiliza para buscar la aplicación. En caso contrario, se utiliza la metabase de IIS y se supone que la aplicación se encuentra en el lugar predeterminado. Este parámetro corresponde al modificador **-v** en *aspnet_compiler.exe*.|
 
 ## <a name="remarks"></a>Comentarios
+
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
-En el siguiente ejemplo de código se utiliza la tarea `AspNetCompiler` para precompilar una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+En el siguiente ejemplo de código se utiliza la tarea `AspNetCompiler` para precompilar una aplicación de ASP.NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,5 +73,6 @@ En el siguiente ejemplo de código se utiliza la tarea `AspNetCompiler` para pre
 ```
 
 ## <a name="see-also"></a>Vea también
+
 * [Tareas](../msbuild/msbuild-tasks.md)
 * [Referencia de tareas](../msbuild/msbuild-task-reference.md)

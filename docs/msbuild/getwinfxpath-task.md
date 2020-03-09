@@ -18,29 +18,32 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894cfe9fd6e116e983a5290e5817211182b073c7
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578619"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633972"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
-La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] actual.
+
+La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del entorno de ejecución de .NET actual.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 | Parámetro | Descripción |
 |-------------------| - |
-| `WinFXPath` | Parámetro de salida de tipo **String** opcional.<br /><br /> Especifica la ruta de acceso real del motor en tiempo de ejecución de [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)]. |
-| `WinFXNativePath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del tiempo de ejecución de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo. |
-| `WinFXWowPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de los ensamblados de [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] del módulo **Windows on Windows** de 32 bits en sistemas de 64 bits. |
+| `WinFXPath` | Parámetro de salida de tipo **String** opcional.<br /><br /> Especifica la ruta de acceso real del entorno de ejecución de .NET. |
+| `WinFXNativePath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del entorno de ejecución de .NET nativo. |
+| `WinFXWowPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de los ensamblados de .NET del módulo **Windows on Windows** de 32 bits en sistemas de 64 bits. |
 
 ## <a name="remarks"></a>Comentarios
+
  Si la tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> se ejecuta en un procesador de 64 bits, el valor del parámetro **WinFXPath** se establece en la ruta de acceso almacenada en el parámetro **WinFXWowPath**; de lo contrario, el valor del parámetro **WinFXPath** se establece en la ruta de acceso almacenada en el parámetro **WinFXNativePath**.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra cómo se utiliza la tarea **GetWinFXPath** para detectar la ruta de acceso nativa del tiempo de ejecución de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].
+
+ En el ejemplo siguiente se muestra cómo se utiliza la tarea **GetWinFXPath** para detectar la ruta de acceso nativa del entorno de ejecución de .NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -57,6 +60,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directori
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

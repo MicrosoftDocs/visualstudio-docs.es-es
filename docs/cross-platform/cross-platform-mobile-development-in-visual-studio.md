@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916876"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234987"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -140,12 +140,12 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
 |**Más información**|
 |--------------------|
-|[Descarga de Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Instalación del desarrollo móvil multiplataforma con C++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Descarga de Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Instalación del desarrollo móvil multiplataforma con C++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[Obtener información acerca de cómo usar C++ para varias plataformas de destino](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Instalar lo necesario y crear una aplicación native-activity para Android](create-an-android-native-activity-app.md)|
+|[Instalar lo necesario y crear una aplicación de actividad nativa para Android](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[Obtener información acerca de cómo compartir código de C++ con aplicaciones Android y Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Ejemplos de desarrollo móvil multiplataforma para C++](cross-platform-mobile-development-examples.md)|
+|[Ejemplos de desarrollo móvil multiplataforma para C++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 

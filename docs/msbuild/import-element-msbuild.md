@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 044c531432de987fc7f3d34ce5344ad0374bcd00
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573998"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633751"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
+
 Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
 \<Project> \<Import>
@@ -38,6 +39,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -49,29 +51,32 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 |`Sdk`| Atributo opcional.<br /><br /> Hace referencia a un SDK de proyecto.|
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  None
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contiene una colección de elementos `Import` agrupados en una condición opcional. |
 
 ## <a name="remarks"></a>Comentarios
+
  Mediante el elemento `Import` , puede reutilizar código común a muchos archivos de proyecto. Esto facilita el mantenimiento del código, ya que las actualizaciones que realice en el código compartido se propagan a todos los proyectos que lo importen.
 
- Por convención, los archivos de proyecto compartidos e importados se guardan como archivos *.targets*, pero son archivos de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] estándar. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] no impide importar un proyecto con una extensión de nombre de archivo diferente, pero se recomienda usar la extensión *.targets* para mantener la coherencia.
+ Por convención, los archivos de proyecto compartidos e importados se guardan como archivos *.targets*, pero son archivos de proyecto de MSBuild estándar. MSBuild no impide importar un proyecto con una extensión de nombre de archivo diferente, pero se recomienda usar la extensión *.targets* para mantener la coherencia.
 
  Las rutas de acceso relativas de los proyectos importados se interpretan en relación con el directorio del proyecto que se importa. Por lo tanto, si un archivo de proyecto se importa en varios archivos de proyecto en ubicaciones diferentes, las rutas de acceso relativas del archivo de proyecto importado se interpretarán de manera diferente para cada proyecto importado.
 
- Se asignan valores basados en el archivo del proyecto que se importa a todas las propiedades reservadas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] relacionadas con el archivo de proyecto (por ejemplo, `MSBuildProjectDirectory` y `MSBuildProjectFile`) a las que se hace referencia en un proyecto importado.
+ Se asignan valores basados en el archivo del proyecto que se importa a todas las propiedades reservadas de MSBuild relacionadas con el archivo de proyecto (por ejemplo, `MSBuildProjectDirectory` y `MSBuildProjectFile`) a las que se hace referencia en un proyecto importado.
 
- Si el proyecto importado no tiene un atributo `DefaultTargets` , los proyectos importados se examinan en el orden en que se importan y se usa el valor del primer atributo `DefaultTargets` detectado. Por ejemplo, si ProyectoA importa ProyectoB y ProyectoC (en ese orden), y ProyectoB importa ProyectoD, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primero busca el atributo `DefaultTargets` especificado en ProyectoA, después en ProyectoB, luego en ProyectoD y, por último, en ProyectoC.
+ Si el proyecto importado no tiene un atributo `DefaultTargets` , los proyectos importados se examinan en el orden en que se importan y se usa el valor del primer atributo `DefaultTargets` detectado. Por ejemplo, si ProyectoA importa ProyectoB y ProyectoC (en ese orden), y ProyectoB importa ProyectoD, MSBuild primero busca el atributo `DefaultTargets` especificado en ProyectoA, después en ProyectoB, luego en ProyectoD y, por último, en ProyectoC.
 
- El esquema de un proyecto importado es idéntico al de un proyecto estándar. Aunque [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede compilar un proyecto importado, es poco probable que lo haga porque un proyecto importado no suele contener información sobre las propiedades que se establecen o el orden en el que se ejecutan los destinos. El proyecto importado depende del proyecto en el que se importa para obtener esa información.
+ El esquema de un proyecto importado es idéntico al de un proyecto estándar. Aunque MSBuild puede compilar un proyecto importado, es poco probable que lo haga porque un proyecto importado no suele contener información sobre las propiedades que se establecen o el orden en el que se ejecutan los destinos. El proyecto importado depende del proyecto en el que se importa para obtener esa información.
 
 ## <a name="wildcards"></a>Caracteres comodín
+
  En .NET Framework 4, MSBuild permite caracteres comodín en el atributo Project. Cuando hay caracteres comodín, se ordenan todas las coincidencias encontradas (para la reproducibilidad) y, después, se importan en ese orden como si dicho orden se hubiera establecido explícitamente.
 
  Esto es útil si quiere ofrecer un punto de extensibilidad para que otra persona pueda importar un archivo sin que usted tenga que agregar explícitamente el nombre del archivo al archivo de importación. Para este propósito, *Microsoft.Common.Targets* contiene la siguiente línea en la parte superior del archivo.
@@ -81,6 +86,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 ```
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo siguiente se muestra un proyecto que tiene varios elementos y propiedades y que importa un archivo de proyecto general.
 
 ```xml
@@ -107,5 +113,6 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Cómo: Usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

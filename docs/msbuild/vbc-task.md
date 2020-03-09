@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591143"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631242"
 ---
 # <a name="vbc-task"></a>Vbc (tarea)
+
 Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de vínculos dinámicos ( *.dll*) o módulos de código ( *.netmodule*). Para obtener más información sobre*vbc.exe*, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `Vbc` .
 
 | Parámetro | Descripción |
@@ -74,12 +76,12 @@ Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de v
 | `RootNamespace` | Parámetro `String` opcional.<br /><br /> Especifica el espacio de nombres de la raíz para todas las declaraciones de tipos. Este parámetro corresponde al modificador [-rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) del compilador de *vbc.exe*. |
 | `SdkPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación de *mscorlib.dll* y *microsoft.visualbasic.dll*. Este parámetro corresponde al modificador [-sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) del compilador de *vbc.exe*. |
 | `Sources` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica uno o varios archivos de origen de Visual Basic. |
-| `TargetCompactFramework` | Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea toma como destino [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]. Este modificador corresponde al modificador [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) del compilador de *vbc.exe*. |
+| `TargetCompactFramework` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea tiene como destino .NET Compact Framework. Este modificador corresponde al modificador [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) del compilador de *vbc.exe*. |
 | `TargetType` | Parámetro `String` opcional.<br /><br /> Especifica el formato del archivo de salida. Este parámetro puede tener un valor de `library`, que crea una biblioteca de código, `exe`, que crea una aplicación de consola, `module`, que crea un módulo, o `winexe`, que crea un programa de Windows. El valor predeterminado es `library`. Este parámetro corresponde al modificador [-target](/dotnet/visual-basic/reference/command-line-compiler/target) del compilador de *vbc.exe*. |
 | `Timeout` | Parámetro `Int32` opcional.<br /><br /> Especifica el tiempo en milisegundos después del cual se termina la tarea ejecutable. El valor predeterminado es `Int.MaxValue`, que indica que no hay período de tiempo de espera. |
-| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente (*vbc.exe*). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `ToolPath` | Parámetro `String` opcional.<br /><br /> Especifica la ubicación desde donde la tarea cargará el archivo ejecutable subyacente (*vbc.exe*). Si no se especifica este parámetro, la tarea usa la ruta de instalación del SDK que se corresponde con la versión de la plataforma que está ejecutando MSBuild. |
 | `TreatWarningsAsErrors` | Parámetro `Boolean` opcional.<br /><br /> Si es `true`, todas las advertencias se tratan como errores. Para obtener más información, vea [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
-| `UseHostCompilerIfAvailable` | Parámetro `Boolean` opcional.<br /><br /> Indica a la tarea que utilice el objeto de compilador en proceso, si está disponible. Se utiliza únicamente por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
+| `UseHostCompilerIfAvailable` | Parámetro `Boolean` opcional.<br /><br /> Indica a la tarea que utilice el objeto de compilador en proceso, si está disponible. Usado solamente por Visual Studio. |
 | `Utf8Output` | Parámetro `Boolean` opcional.<br /><br /> Registra los resultados del compilador mediante la codificación UTF-8. Este parámetro corresponde al modificador [-utf8output](/dotnet/visual-basic/reference/command-line-compiler/utf8output) del compilador de *vbc.exe*. |
 | `Verbosity` | Parámetro `String` opcional.<br /><br /> Especifica el nivel de detalle de los resultados del compilador. El nivel de detalle puede ser `Quiet`, `Normal` (el valor predeterminado) o `Verbose`. |
 | `WarningsAsErrors` | Parámetro `String` opcional.<br /><br /> Especifica una lista de advertencias que se tratarán como errores. Para obtener más información, vea [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Este parámetro invalida el parámetro `TreatWarningsAsErrors`. |
@@ -88,9 +90,11 @@ Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de v
 | `Win32Resources` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res*) en el archivo de salida. Este parámetro corresponde al modificador [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) del compilador de *vbc.exe*. |
 
 ## <a name="remarks"></a>Comentarios
+
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo siguiente se compila un proyecto de Visual Basic.
 
 ```xml
@@ -102,6 +106,7 @@ Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de v
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

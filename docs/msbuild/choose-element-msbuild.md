@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593374"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634479"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
+
 Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.
 
  \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
@@ -41,9 +42,11 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
+
  Ninguno.
 
 ### <a name="child-elements"></a>Elementos secundarios
@@ -58,13 +61,15 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 | Elemento | Descripción |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | Especifica el bloque de código que se ejecutará si las condiciones de todos los elementos `When` se evalúan como `false`. |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 | [When](../msbuild/when-element-msbuild.md) | Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. |
 
 ## <a name="remarks"></a>Comentarios
+
  Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Ejemplo
+
  En el proyecto siguiente se utiliza el elemento `Choose` para seleccionar el conjunto de valores de propiedad de los elementos `When` que desea establecer. Si los atributos `Condition` de ambos elementos `When` se evalúan como `false`, se establecen los valores de propiedad del elemento `Otherwise`.
 
 ```xml
@@ -113,5 +118,6 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

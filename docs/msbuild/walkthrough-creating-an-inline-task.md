@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271176"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631164"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Tutorial: Creación de una tarea insertada
+
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).
 
  En este tutorial se muestra la forma de crear y ejecutar estas tareas insertadas:
@@ -40,13 +41,12 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 3. Utilice la **ventana del símbolo del sistema** para compilar el proyecto y examinar los resultados.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Creación y modificación de un proyecto de MSBuild
+
  El sistema de proyectos de Visual Studio se basa en MSBuild. Por consiguiente, puede crear un archivo del proyecto de compilación utilizando Visual Studio. En esta sección, creará un archivo del proyecto de Visual C#. (En su lugar, puede crear un archivo del proyecto de Visual Basic. En el contexto de este tutorial, la diferencia entre los dos archivos del proyecto es menor).
 
 #### <a name="to-create-and-modify-a-project-file"></a>Para crear y modificar un archivo de proyecto
 
-1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.
-
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
+1. En Visual Studio, cree un nuevo proyecto desde una plantilla de **aplicación de Windows Forms** de C#. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\* . Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
 
 3. Haga clic en **Aceptar** para crear el archivo del proyecto.
 
@@ -57,6 +57,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
      El archivo del proyecto aparece en el editor de código.
 
 ## <a name="add-a-basic-hello-task"></a>Adición de una tarea básica Hello
+
  Ahora, agregue al archivo del proyecto una tarea básica que muestre el mensaje "Hello, world!". Además, agregue un destino TestBuild predeterminado para llamar a la tarea.
 
 #### <a name="to-add-a-basic-hello-task"></a>Para agregar una tarea básica Hello
@@ -88,6 +89,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    Este código crea una tarea insertada que se denomina Hello y no tiene parámetros, referencias o directivas `Using`. La tarea Hello contiene simplemente una línea de código, que muestra un mensaje de saludo en el dispositivo de registro predeterminado, normalmente la ventana de la consola.
 
 ### <a name="run-the-hello-task"></a>Ejecución de la tarea Hello
+
  Ejecute MSBuild utilizando la **ventana del símbolo del sistema** para crear la tarea Hello y procesar el destino TestBuild que la invoca.
 
 ##### <a name="to-run-the-hello-task"></a>Para ejecutar la tarea Hello
@@ -108,6 +110,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    Puede cambiar el archivo del proyecto y ver rápidamente los resultados alternando entre el editor de código y la **ventana del símbolo del sistema**.
 
 ## <a name="define-the-echo-task"></a>Definición de la tarea Echo
+
  Cree una tarea insertada que acepte un parámetro de cadena y muestre la cadena en el dispositivo de registro predeterminado.
 
 #### <a name="to-define-the-echo-task"></a>Para definir la tarea Echo
@@ -139,6 +142,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    Este código define una tarea insertada que se denomina Echo y tiene simplemente un parámetro de entrada necesario Text. De forma predeterminada, los parámetros son de tipo System.String. El valor del parámetro Text se establece cuando el destino TestBuild llama a la tarea Echo.
 
 ## <a name="define-the-adder-task"></a>Definición de una tarea Adder
+
  Cree una tarea insertada que agregue dos parámetros enteros y emita su suma como una propiedad de MSBuild.
 
 #### <a name="to-define-the-adder-task"></a>Para definir la tarea Adder
@@ -175,6 +179,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
    Este código define una tarea insertada que se denomina Adder y tiene dos parámetros de entrada enteros necesarios, A y B, y un parámetro de salida entero, C. La tarea Adder agrega los dos parámetros de entrada y devuelve la suma en el parámetro de salida. La suma se emite como la propiedad `Sum` de MSBuild. Los valores de los parámetros de entrada se establecen cuando el destino TestBuild llama a la tarea Adder.
 
 ## <a name="define-the-regx-task"></a>Definición de la tarea RegX
+
  Cree una tarea insertada que acepte un grupo de elementos y una expresión regular y devuelva una lista de todos los elementos cuyo contenido de archivo coincida con la expresión.
 
 #### <a name="to-define-the-regx-task"></a>Para definir la tarea RegX
@@ -244,6 +249,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
   El valor de los parámetros de entrada se establece cuando el destino TestBuild llama a la tarea RegX. La tarea RegX lee todos los archivos y devuelve la lista de archivos que coincide con la expresión regular. Esta lista se devuelve como el parámetro de salida `Result`, que se emite como el elemento `MatchedFiles` de MSBuild.
 
 ### <a name="handle-reserved-characters"></a>Control de caracteres reservados
+
  El analizador de MSBuild procesa las tareas insertadas como XML. Los caracteres que tienen significado reservado en XML, por ejemplo "\<" y ">", se detectan y controlan como si fueran XML, y no código fuente de .NET. Para incluir los caracteres reservados en expresiones de código como `Files.Length > 0`, escriba el elemento `Code` para que su contenido se incluya en una expresión CDATA, del modo siguiente:
 
  ```xml
@@ -257,6 +263,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas insertadas](../msbuild/msbuild-inline-tasks.md)
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Destinos](../msbuild/msbuild-targets.md)

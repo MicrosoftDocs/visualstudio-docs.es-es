@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596780"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633205"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Versión de .NET Framework de destino y plataforma de destino de MSBuild
+
 Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
 
 > [!IMPORTANT]
 > En este artículo se muestra la forma antigua de especificar una plataforma de destino. Los proyectos de estilo SDK permiten diferentes plataformas de destino, como netstandard. Para más información, consulte [Plataformas de destino](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Marco y perfil de destino
+
  Un marco de destino es la versión concreta de .NET Framework para la que se ha compilado el proyecto. Es necesario especificar una versión del marco de trabajo de destino, ya que esto permite habilitar las características del compilador y las referencias de ensamblado exclusivas de esa versión del marco.
 
  Actualmente, se pueden usar las versiones siguientes de .NET Framework:
 
 - .NET Framework 2.0 (incluido en Visual Studio 2005)
 
-- .NET Framework 3.0 (incluido en [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (incluido en Windows Vista)
 
-- .NET Framework 3.5 (incluido en [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (incluido en Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (incluido en [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (incluido en Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -69,6 +71,7 @@ El marco de trabajo de destino se especifica en la propiedad `TargetFrameworkVer
 ```
 
 ## <a name="target-platform"></a>Plataforma de destino
+
  Una *plataforma* es una combinación de hardware y de software que define un entorno en tiempo de ejecución determinado. Por ejemplo,
 
 - `x86` designa un sistema operativo Windows de 32 bits que se ejecuta en un procesador Intel 80x86 o su equivalente.
@@ -97,4 +100,5 @@ Una *configuración de destino* es un subconjunto de una plataforma de destino. 
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)

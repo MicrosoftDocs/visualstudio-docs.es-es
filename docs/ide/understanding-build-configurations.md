@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027616"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904170"
 ---
 # <a name="understand-build-configurations"></a>Descripción de las configuraciones de compilación
 
@@ -44,7 +44,7 @@ Necesita configuraciones de compilación para compilar los proyectos con otros v
 
 La configuración y el control de plataforma donde se almacenan los archivos de salida compilados. Normalmente, cuando Visual Studio compila el proyecto, la salida se coloca en una subcarpeta del proyecto designada con la configuración activa (por ejemplo, *bin/Debug/x86*), pero se puede cambiar.
 
-Puede crear sus propias configuraciones de compilación en el nivel de solución y proyecto. La configuración de soluciones determina qué proyectos se incluyen en la compilación cuando esa configuración está activa. Solo se compilarán los proyectos que se especifiquen en la configuración de soluciones activa. La configuración del proyecto determina qué opciones del compilador y valores de compilación se usan al compilar el proyecto.
+Puede crear sus propias configuraciones de compilación en el nivel de solución y proyecto. La configuración de soluciones determina qué proyectos se incluyen en la compilación cuando esa configuración está activa. Solo se compilarán los proyectos que se especifiquen en la configuración de soluciones activa. Si se seleccionan varias plataformas de destino en el Administrador de configuración, se compilan todos los proyectos que se aplican a esa plataforma. La configuración del proyecto determina qué opciones del compilador y valores de compilación se usan al compilar el proyecto.
 
 Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación** >  **, Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro de búsqueda. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.
 
@@ -70,6 +70,12 @@ La configuración de soluciones activas también proporciona contexto al IDE. Po
 La configuración y la plataforma a la que se dirige un proyecto se usan conjuntamente para especificar los valores de compilación y las opciones del compilador que se utilizarán al compilar el proyecto. Un proyecto puede tener unos valores diferentes para cada combinación de configuración y plataforma. Para modificar las propiedades de un proyecto, abra el menú contextual del proyecto en el **Explorador de soluciones** y, luego, elija **Propiedades**.  En la parte superior de la pestaña **Compilación** del diseñador de proyectos, elija una configuración activa para editar sus valores de compilación.
 
 ![Configuraciones del diseñador de proyectos](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>Compilación de varias configuraciones
+
+Al compilar una solución con el comando **Compilar** > **Compilar solución**, Visual Studio solo compila la configuración activa. Se compilan todos los proyectos que se especifican en la configuración de la solución y la única configuración de proyecto compilada es la que se especifica en la configuración de la solución activa y en la plataforma de la solución activa, que se muestra en la barra de herramientas de Visual Studio. Por ejemplo, **Depurar** y **x86**. No se compilan otras configuraciones y plataformas definidas.
+
+Si desea compilar varias configuraciones y plataformas en una acción, puede usar la opción **Compilar** > **Compilación por lotes** en Visual Studio. Para obtener acceso a esta característica, presione **Ctrl**+**Q** para abrir el cuadro de búsqueda y escriba `Batch build`. La compilación por lotes no está disponible para todos los tipos de proyectos. Vea [Cómo: Compilación de varias configuraciones simultáneamente](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Cómo asigna Visual Studio las configuraciones de proyecto
 

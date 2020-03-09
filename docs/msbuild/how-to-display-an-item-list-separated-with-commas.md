@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596338"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633907"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedimiento Mostrar una lista de elementos separados por comas
-Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.
+
+Cuando se trabaja con listas de elementos en Microsoft Build Engine (MSBuild), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar los elementos de una lista con comas
-De manera predeterminada, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa signos de punto y coma para separar los elementos de una lista. Por ejemplo, considere un elemento `Message` con el valor siguiente:
+
+De manera predeterminada, MSBuild usa signos de punto y coma para separar los elementos de una lista. Por ejemplo, considere un elemento `Message` con el valor siguiente:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
@@ -43,6 +45,7 @@ El separador puede ser un solo carácter o una cadena y debe incluirse entre com
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Ejemplo
+
 En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo, *Phrases.txt*. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **-c:** , por lo que el separador de elementos `-c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.
 
 En este ejemplo, el comando de línea de comandos equivalente es:
@@ -67,5 +70,6 @@ En este ejemplo, el comando de línea de comandos equivalente es:
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [Elementos](../msbuild/msbuild-items.md)
