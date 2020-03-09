@@ -18,11 +18,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 70cc3c81c426ec55d0afb36360155786ec97d937
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918979"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409992"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
  Para dibujar diagramas de UML y diagramas de capas, cree un proyecto de modelado como parte de una solución nueva o existente. Estos diagramas se deben crear en el proyecto de modelado. Los elementos de los diagramas de UML forman parte de un modelo común y los diagramas de UML son vistas de ese modelo. Los elementos de los diagramas de capas se encuentran en el proyecto de modelado, pero no se almacenan en el modelo común. Los mapas de código y los diagramas de clases de .NET creados a partir de código existen fuera del proyecto de modelado.
 
- Vea:
+ Consulte:
 
 - [Crear proyectos y diagramas de modelado UML](../modeling/create-uml-modeling-projects-and-diagrams.md)
 
@@ -103,7 +103,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 - [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -111,7 +111,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   Ambos equipos también usan la validación de capas para asegurarse de que el código en desarrollo siga siendo coherente con el diseño.
 
-  Vea:
+  Consulte:
 
 - [Coherencia entre código y diseño](#ValidatingCode)
 
@@ -147,7 +147,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   Antes de que los equipos protejan sus cambios, el código se valida con las pruebas y el diseño mediante la ejecución de compilaciones que incluyen validación de capas y pruebas automatizadas. Con esto se garantiza que el código actualizado no está en conflicto con el diseño ni interrumpe funcionalidades que anteriormente no presentaban problemas.
 
-  Vea:
+  Consulte:
 
 - [Descripción del rol del sistema en el proceso empresarial](#UnderstandingBPMandSystemDesign)
 
@@ -168,11 +168,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 ### <a name="UnderstandingBPMandSystemDesign"></a>Descripción del rol del sistema en el proceso empresarial
  Lucerne desea obtener más información acerca del proceso de negocio de Dinner Now. Para ello crean los diagramas siguientes con el fin de mejorar su entendimiento con Dinner Now:
 
-|**Diagram**|**Qué describe**|
+|**Diagrama**|**Qué describe**|
 |-----------------|-------------------|
-|*Diagrama de casos de uso (UML)*<br /><br /> Vea:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|-Las actividades que admite el sistema cena Now<br />-Las personas y los sistemas externos que realizan las actividades<br />-Los principales componentes del sistema que admiten cada actividad<br />-Las partes del proceso de negocio que están fuera del ámbito del sistema actual, por ejemplo, la entrega alimentaria|
-|*Diagrama de actividades (UML)*<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|El flujo de pasos que se producen cuando un cliente crea un pedido|
-|*Diagrama de clases (UML)*<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Las entidades de negocio, los términos usados y las relaciones entre las entidades. Por ejemplo, “pedido” (Order) y “menú” (Menu) forman parte del vocabulario de este escenario.|
+|*Diagrama de casos de uso (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|-Las actividades que admite el sistema cena Now<br />-Las personas y los sistemas externos que realizan las actividades<br />-Los principales componentes del sistema que admiten cada actividad<br />-Las partes del proceso de negocio que están fuera del ámbito del sistema actual, por ejemplo, la entrega alimentaria|
+|*Diagrama de actividades (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|El flujo de pasos que se producen cuando un cliente crea un pedido|
+|*Diagrama de clases (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Las entidades de negocio, los términos usados y las relaciones entre las entidades. Por ejemplo, “pedido” (Order) y “menú” (Menu) forman parte del vocabulario de este escenario.|
 
  Por ejemplo, Lucerne crea el siguiente diagrama de casos de uso para entender las tareas que se realizan en el sitio web de Dinner Now y quién las realiza:
 
@@ -195,11 +195,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 ### <a name="DescribingURM"></a>Descripción de los requisitos de usuario nuevos o actualizados
  Lucerne desea agregar funcionalidad al sistema de Dinner Now para que los clientes puedan leer opiniones sobre restaurantes y aportar las suyas propias. Para ello, actualizan los diagramas siguientes, para que sean capaces de describir y analizar este nuevo requisito con Dinner Now:
 
-|**Diagram**|**Qué describe**|
+|**Diagrama**|**Qué describe**|
 |-----------------|-------------------|
-|*Diagrama de casos de uso (UML)*<br /><br /> Vea:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|Un nuevo caso de uso de “Escribir una opinión de un restaurante” (Write a restaurant review)|
-|*Diagrama de actividades (UML)*<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|Los pasos que se producen cuando un cliente quieren escribir una opinión sobre un restaurante|
-|*Diagrama de clases (UML)*<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Los datos que son necesarios para almacenar una opinión|
+|*Diagrama de casos de uso (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|Un nuevo caso de uso de “Escribir una opinión de un restaurante” (Write a restaurant review)|
+|*Diagrama de actividades (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|Los pasos que se producen cuando un cliente quieren escribir una opinión sobre un restaurante|
+|*Diagrama de clases (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Los datos que son necesarios para almacenar una opinión|
 
  Por ejemplo, el siguiente diagrama de casos de uso incluye un nuevo caso de uso de “Escribir opinión” (Write Review) para representar el nuevo requisito. Para facilitar la identificación, se resalta en color naranja en el diagrama:
 
@@ -230,7 +230,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   A medida que cambian los requisitos y los diagramas se actualizan para reflejar dichos cambios, también se actualizan las pruebas. Un requisito solo se considera completado si se superan las pruebas. Si es posible o práctico, las pruebas se definen y se basan en diagramas de UML antes de iniciar la implementación.
 
-  Vea:
+  Consulte:
 
 - [Desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md)
 
@@ -241,8 +241,8 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 |**Mapa o diagrama**|**Qué muestra**|
 |------------------------|---------------|
-|*Mapa de código*<br /><br /> Vea:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />-   [personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dependencias y otras relaciones en el código.<br /><br /> Por ejemplo, Dinner Now puede empezar revisando los mapas de código de ensamblado para obtener información general de los ensamblados y de sus dependencias. Dinner Now puede profundizar en los mapas para explorar los espacios de nombres y las clases de esos ensamblados.<br /><br /> Dinner Now también puede crear mapas para explorar áreas particulares y otros tipos de relaciones en el código. Mediante el Explorador de soluciones, buscan y seleccionan las áreas y las relaciones de interés.|
-|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
+|*Mapa de código*<br /><br /> Consulte:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />-   [personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dependencias y otras relaciones en el código.<br /><br /> Por ejemplo, Dinner Now puede empezar revisando los mapas de código de ensamblado para obtener información general de los ensamblados y de sus dependencias. Dinner Now puede profundizar en los mapas para explorar los espacios de nombres y las clases de esos ensamblados.<br /><br /> Dinner Now también puede crear mapas para explorar áreas particulares y otros tipos de relaciones en el código. Mediante el Explorador de soluciones, buscan y seleccionan las áreas y las relaciones de interés.|
+|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
 
  Por ejemplo, el desarrollador crea un mapa de código y ajusta su ámbito para centrarse en las áreas que se verán afectadas por el nuevo escenario. Estas áreas se seleccionan y se resaltan en el mapa:
 
@@ -262,11 +262,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 |**Diagramas**|**Qué describe**|
 |------------------|-------------------|
-|*Diagrama de actividades (UML)*<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|El flujo de pasos que se producen cuando el sistema detecta que un cliente vuelve a realizar un pedido en un restaurante y le pide que escriba una opinión.|
-|*Diagrama de clases (UML)*<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Las clases lógicas y sus relaciones. Por ejemplo, se agrega una nueva clase para describir una **Opinión** (Review) y sus relaciones con otras entidades, como **Restaurante**(Restaurant), **Menú**(Menu) y **Cliente**(Customer).<br /><br /> Para poder asociar opiniones a un cliente, el sistema debe almacenar detalles del cliente. Un diagrama de clases UML puede ayudar a aclarar esos detalles.|
-|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
-|*Diagrama de componentes (UML)*<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|Las partes de alto nivel del sistema, como el sitio web de Dinner Now, y sus interfaces. En estas interfaces se define cómo interactúan entre sí los componentes a través de los métodos o servicios que proporcionan y consumen.|
-|*Diagrama de secuencia (UML)*<br /><br /> Vea:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|La secuencia de interacciones entre instancias.|
+|*Diagrama de actividades (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|El flujo de pasos que se producen cuando el sistema detecta que un cliente vuelve a realizar un pedido en un restaurante y le pide que escriba una opinión.|
+|*Diagrama de clases (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|Las clases lógicas y sus relaciones. Por ejemplo, se agrega una nueva clase para describir una **Opinión** (Review) y sus relaciones con otras entidades, como **Restaurante**(Restaurant), **Menú**(Menu) y **Cliente**(Customer).<br /><br /> Para poder asociar opiniones a un cliente, el sistema debe almacenar detalles del cliente. Un diagrama de clases UML puede ayudar a aclarar esos detalles.|
+|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
+|*Diagrama de componentes (UML)*<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|Las partes de alto nivel del sistema, como el sitio web de Dinner Now, y sus interfaces. En estas interfaces se define cómo interactúan entre sí los componentes a través de los métodos o servicios que proporcionan y consumen.|
+|*Diagrama de secuencia (UML)*<br /><br /> Consulte:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|La secuencia de interacciones entre instancias.|
 
  Por ejemplo, en el siguiente diagrama de componentes se muestra el nuevo componente, que forma parte del componente de sitio web de Dinner Now. El componente ReviewProcessing controla la funcionalidad de creación de opiniones y aparece resaltado en color naranja:
 
@@ -283,9 +283,9 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 ### <a name="ValidatingCode"></a> Coherencia entre código y diseño
  Dinner Now debe asegurarse de que el código actualizado mantiene la coherencia con el diseño. Crea diagramas de capas en los que se describen las capas de funcionalidad del sistema, se especifican las dependencias permitidas entre ellas y se asocian artefactos de la solución a esas capas.
 
-|**Diagram**|**Qué describe**|
+|**Diagrama**|**Qué describe**|
 |-----------------|-------------------|
-|*Diagrama de capas*<br /><br /> Vea:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de capas organiza y asigna los artefactos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|
+|*Diagrama de capas*<br /><br /> Consulte:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de capas organiza y asigna los artefactos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|
 
  Por ejemplo, en el siguiente diagrama de capas se describen las dependencias existentes entre capas y el número de artefactos que están asociados con cada capa:
 
@@ -295,7 +295,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
  Para asegurarse de que no haya conflictos con el diseño durante el desarrollo de código, los equipos usan validación de capas en compilaciones que se ejecutan en Team Foundation Build. También crean una tarea MSBuild personalizada para exigir la validación de capas en las operaciones de protección. Para recopilar los errores de validación, usan informes de compilación.
 
- Vea:
+ Consulte:
 
 - [Definir el proceso de compilación](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)
 
@@ -334,7 +334,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - Un *panel de desarrollo* que usa Office Project para mantener informado al equipo sobre aspectos importantes del proyecto.
 
-  Vea:
+  Consulte:
 
 - [Seguimiento del trabajo mediante Visual Studio Online o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
 
@@ -357,7 +357,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   Para asegurarse de que el código se ajusta al diseño, los equipos configuran sus compilaciones en Team Foundation Build para incluir la validación de capas. Si se produce algún conflicto, se genera un informe con los detalles.
 
-  Vea:
+  Consulte:
 
 - [Probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
 
@@ -384,7 +384,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - [Describir la arquitectura lógica: diagramas de capas](#DescribeLayers)
 
-  Vea:
+  Consulte:
 
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 
@@ -417,7 +417,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   **Reajuste Pay restaurante en el diagrama de casos de uso**
 
-  Vea:
+  Consulte:
 
 - [Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md)
 
@@ -438,7 +438,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - *Artefactos* , que vinculan elementos del diagrama a otros diagramas o documentos.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md)
 
@@ -457,11 +457,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Qué describe**|
+|**Diagrama**|**Qué describe**|
 |-----------------|-------------------|
-|Diagrama de actividades|El flujo de pasos de un caso de uso y quiénes realizan esos pasos en dicho caso de uso.<br /><br /> Con frecuencia, los nombres de casos de uso reflejan los pasos de un diagrama de actividades. Los diagramas de actividades admiten elementos como decisiones, combinaciones, entradas y salidas, flujos simultáneos, etc.<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
-|Diagrama de secuencia|La secuencia de interacciones entre los participantes en un caso de uso.<br /><br /> Vea:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Diagrama de clases (UML)|Las entidades o tipos que participan en el caso de uso.<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
+|Diagrama de actividades|El flujo de pasos de un caso de uso y quiénes realizan esos pasos en dicho caso de uso.<br /><br /> Con frecuencia, los nombres de casos de uso reflejan los pasos de un diagrama de actividades. Los diagramas de actividades admiten elementos como decisiones, combinaciones, entradas y salidas, flujos simultáneos, etc.<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
+|Diagrama de secuencia|La secuencia de interacciones entre los participantes en un caso de uso.<br /><br /> Consulte:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Diagrama de clases (UML)|Las entidades o tipos que participan en el caso de uso.<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
 
 ### <a name="UnderstandActivities"></a>Comprender el proceso empresarial: diagramas de actividades
  Los diagramas de actividades describen el flujo de pasos de un proceso de negocio y proporcionan una manera sencilla para la comunicación de flujo de trabajo. Un proyecto de desarrollo puede tener varios diagramas de actividades. Normalmente, una actividad abarca todas las acciones resultantes de una acción externa, por ejemplo, pedir una comida, actualizar un menú o agregar un nuevo restaurante al negocio. Una actividad también puede describir los detalles de una acción compleja.
@@ -478,7 +478,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
  Anteriormente, Dinner Now dibujaba estos diagramas en una pizarra o en PowerPoint. En cambio, ahora también usan Visual Studio para trazar estos diagramas, lo que permite a ambos equipos capturar, comprender y administrar los detalles.
 
- Vea:
+ Consulte:
 
 - [Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)
 
@@ -503,7 +503,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
    Aunque estos nodos son opcionales, resulta útil incluirlos en el diagrama para mostrar dónde finaliza la actividad.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)
 
@@ -514,10 +514,10 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Descripción**|
+|**Diagrama**|**Descripción**|
 |-----------------|---------------------|
-|Diagrama de casos de uso|Resumen de las actividades que realiza cada actor.<br /><br /> Vea:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
-|Diagrama de componentes|Visualización del sistema como una colección de elementos reutilizables que proporcionan o usan el comportamiento a través de un conjunto de interfaces bien definido.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
+|Diagrama de casos de uso|Resumen de las actividades que realiza cada actor.<br /><br /> Consulte:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Diagrama de componentes|Visualización del sistema como una colección de elementos reutilizables que proporcionan o usan el comportamiento a través de un conjunto de interfaces bien definido.<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
 
 ### <a name="DescribeComponents"></a>Describir la estructura del sistema: diagramas de componentes
  Los diagramas de componentes describen un sistema como una colección de elementos separables que proporcionan o usan el comportamiento a través de un conjunto de interfaces bien definido. Los elementos pueden tener cualquier escala y estar conectados de cualquier modo.
@@ -552,7 +552,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   En esta configuración, el componente PaymentProcessing procesa los pagos del cliente. Por lo tanto, debe actualizarse para integrarse con el sistema de pago de Lucerne. En otros escenarios pueden existir varias instancias de un tipo de componente en el mismo componente primario.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)
 
@@ -573,7 +573,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - *Delegaciones* que indican que las partes de un componente controlan los mensajes enviados o recibidos por el componente primario.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)
 
@@ -588,13 +588,13 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Descripción**|
+|**Diagrama**|**Descripción**|
 |-----------------|---------------------|
-|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar los candidatos a componentes, cree un mapa de código y agrupe los elementos según su función en el sistema.<br /><br /> Vea:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)|
-|Diagrama de secuencia|Visualización de la secuencia de interacciones entre los componentes o los elementos dentro de un componente.<br /><br /> Para crear una línea de vida en un diagrama de secuencia a partir de un componente, haga clic con el botón derecho en el componente y, después, haga clic en **Crear línea de vida**.<br /><br /> Vea:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Diagrama de clases (UML)|Definición de las interfaces en los puertos proporcionados o necesarios y las clases que implementan la funcionalidad de los componentes.<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
-|Diagrama de capas|Descripción de la arquitectura lógica del sistema en lo referente a los componentes. Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Vea:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
-|Diagrama de actividades|Visualización del procesamiento interno efectuado por los componentes en respuesta a los mensajes entrantes.<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
+|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar los candidatos a componentes, cree un mapa de código y agrupe los elementos según su función en el sistema.<br /><br /> Consulte:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)|
+|Diagrama de secuencia|Visualización de la secuencia de interacciones entre los componentes o los elementos dentro de un componente.<br /><br /> Para crear una línea de vida en un diagrama de secuencia a partir de un componente, haga clic con el botón derecho en el componente y, después, haga clic en **Crear línea de vida**.<br /><br /> Consulte:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Diagrama de clases (UML)|Definición de las interfaces en los puertos proporcionados o necesarios y las clases que implementan la funcionalidad de los componentes.<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
+|Diagrama de capas|Descripción de la arquitectura lógica del sistema en lo referente a los componentes. Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Consulte:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagrama de actividades|Visualización del procesamiento interno efectuado por los componentes en respuesta a los mensajes entrantes.<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
 
 ### <a name="VisualizeCode"></a> Visualización del código existente: mapas de código
  Los mapas de código muestran la organización y las relaciones actuales del código. Los elementos se representan mediante *nodos* en el mapa y las relaciones mediante *vínculos*. Los mapas de código le ayudan a realizar los siguientes tipos de tareas:
@@ -660,12 +660,12 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Qué describe**|
+|**Diagrama**|**Qué describe**|
 |-----------------|-------------------|
 |Diagrama de capas|La arquitectura lógica del sistema. Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar las capas existentes o las previstas, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de capas, vea:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)|
-|Diagrama de componentes|Los componentes, sus interfaces y sus relaciones.<br /><br /> Para identificar los componentes, cree un mapa de código y agrupe los elementos según su función en el sistema.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
-|Diagrama de clases (UML)|Las clases, sus atributos y operaciones, y sus relaciones.<br /><br /> Para ayudarle a identificar estos elementos, cree un diagrama de clases UML que muestre esos elementos.<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
-|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Diagrama de componentes|Los componentes, sus interfaces y sus relaciones.<br /><br /> Para identificar los componentes, cree un mapa de código y agrupe los elementos según su función en el sistema.<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
+|Diagrama de clases (UML)|Las clases, sus atributos y operaciones, y sus relaciones.<br /><br /> Para ayudarle a identificar estos elementos, cree un diagrama de clases UML que muestre esos elementos.<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
+|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DescribeSequence"></a>Describir las interacciones: diagramas de secuencia
  Los diagramas de secuencia describen una serie de interacciones entre los elementos de un sistema. Los elementos pueden ser de cualquier escala, desde objetos individuales de un programa a grandes subsistemas o actores externos. Las interacciones pueden ser de cualquier escala y tipo, desde mensajes individuales a transacciones extendidas, y pueden ser llamadas a funciones o mensajes del servicio web.
@@ -680,7 +680,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
  Lucerne debe calcular el costo de actualizar su sistema de pago para integrarlo con el sistema de Dinner Now. Para ayudarles en la decisión, también pueden crear mapas de código con los que visualizar el código afectado.
 
- Vea:
+ Consulte:
 
 - [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)
 
@@ -701,7 +701,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 - Utilice <\<crear > mensajes de > para indicar la construcción de objetos por parte de otros objetos. Debe ser el primer mensaje enviado al objeto.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)
 
@@ -716,11 +716,11 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Descripción**|
+|**Diagrama**|**Descripción**|
 |-----------------|---------------------|
-|Diagrama de clases (UML)|Definición de las clases que las líneas de vida representan y de los parámetros y valores devueltos que se usan en los mensajes enviados entre las líneas de vida.<br /><br /> Para crear una clase a partir de una línea de vida, haga clic con el botón derecho en la línea de vida y luego haga clic en **Crear clase** o **Crear interfaz**. Para crear una línea de vida a partir de un tipo en un diagrama de clases, haga clic con el botón derecho en el tipo y, después, elija **Crear línea de vida**.<br /><br /> Vea:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
-|Diagrama de componentes|Descripción de los componentes que las líneas de vida representan y las interfaces que proporcionan y usan el comportamiento representado por los mensajes.<br /><br /> Para crear una línea de vida a partir de un diagrama de componentes, haga clic con el botón derecho en el componente y, después, haga clic en **Crear línea de vida**.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
-|Diagrama de casos de uso|Resumen de las interacciones entre los usuarios y los componentes en un diagrama de secuencia como un caso de uso, que representa el objetivo de un usuario.<br /><br /> Vea:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Diagrama de clases (UML)|Definición de las clases que las líneas de vida representan y de los parámetros y valores devueltos que se usan en los mensajes enviados entre las líneas de vida.<br /><br /> Para crear una clase a partir de una línea de vida, haga clic con el botón derecho en la línea de vida y luego haga clic en **Crear clase** o **Crear interfaz**. Para crear una línea de vida a partir de un tipo en un diagrama de clases, haga clic con el botón derecho en el tipo y, después, elija **Crear línea de vida**.<br /><br /> Consulte:<br /><br /> [diagramas de clases de UML de -   : referencia](../modeling/uml-class-diagrams-reference.md)<br />-   [diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)|
+|Diagrama de componentes|Descripción de los componentes que las líneas de vida representan y las interfaces que proporcionan y usan el comportamiento representado por los mensajes.<br /><br /> Para crear una línea de vida a partir de un diagrama de componentes, haga clic con el botón derecho en el componente y, después, haga clic en **Crear línea de vida**.<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
+|Diagrama de casos de uso|Resumen de las interacciones entre los usuarios y los componentes en un diagrama de secuencia como un caso de uso, que representa el objetivo de un usuario.<br /><br /> Consulte:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
 
 ### <a name="DefineClasses"></a> Definición de un glosario de tipos: diagramas de clases
  Los diagramas de clases definen las entidades, términos o conceptos que participan en el sistema y sus relaciones entre sí. Por ejemplo, estos diagramas se pueden usar durante el desarrollo para describir los atributos y las operaciones de cada clase, independientemente del lenguaje de implementación o el estilo.
@@ -739,7 +739,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
  **Detalles del proceso de pago en el diagrama de clases**
 
- Vea:
+ Consulte:
 
 - [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)
 
@@ -778,13 +778,13 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
   Como punto de partida para explorar y analizar las clases existentes, puede usar el Diseñador de clases para crear diagramas de clases desde el código.
 
-  Vea:
+  Consulte:
 
 - [Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)
 
 - [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
 
-- [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Resumen: Ventajas de los diagramas de clases
  Los diagramas de clases le ayudan a definir lo siguiente:
@@ -797,14 +797,14 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Descripción**|
+|**Diagrama**|**Descripción**|
 |-----------------|---------------------|
-|Diagrama de casos de uso|Definición de los tipos que se usan para describir los objetivos y los pasos de casos de uso.<br /><br /> Vea:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
-|Diagrama de actividades|Definición de los tipos de datos que pasan a través de los nodos de objeto, input pins, output pins y nodos de parámetros de actividad.<br /><br /> Vea:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
-|Diagrama de componentes|Descripción de los componentes, sus interfaces y sus relaciones. Una clase también puede describir un componente completo.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
-|Diagrama de capas|Definición de la arquitectura lógica del sistema en lo referente a las clases.<br /><br /> Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Vea:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
-|Diagrama de secuencia|Definición de los tipos de líneas de vida y las operaciones, parámetros y valores devueltos para todos los mensajes que puede recibir la línea de vida.<br /><br /> Para crear una línea de vida a partir de un tipo en un diagrama de clases, haga clic con el botón derecho en el tipo y, después, elija **Crear línea de vida**.<br /><br /> Vea:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
-|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar las clases, sus relaciones y sus métodos, cree un mapa de código que muestre esos elementos.<br /><br /> Vea:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)|
+|Diagrama de casos de uso|Definición de los tipos que se usan para describir los objetivos y los pasos de casos de uso.<br /><br /> Consulte:<br /><br /> [diagramas de casos de uso de UML de -   : referencia](../modeling/uml-use-case-diagrams-reference.md)<br />[diagramas de casos de uso de UML de -   : instrucciones](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Diagrama de actividades|Definición de los tipos de datos que pasan a través de los nodos de objeto, input pins, output pins y nodos de parámetros de actividad.<br /><br /> Consulte:<br /><br /> [diagramas de actividades de UML de -   : referencia](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)|
+|Diagrama de componentes|Descripción de los componentes, sus interfaces y sus relaciones. Una clase también puede describir un componente completo.<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
+|Diagrama de capas|Definición de la arquitectura lógica del sistema en lo referente a las clases.<br /><br /> Mediante la validación de capas, asegúrese de que el código mantiene la coherencia con el diseño.<br /><br /> Consulte:<br /><br /> -   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de capas de -   : referencia](../modeling/layer-diagrams-reference.md)<br />[diagramas de capas de -   : instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagrama de secuencia|Definición de los tipos de líneas de vida y las operaciones, parámetros y valores devueltos para todos los mensajes que puede recibir la línea de vida.<br /><br /> Para crear una línea de vida a partir de un tipo en un diagrama de clases, haga clic con el botón derecho en el tipo y, después, elija **Crear línea de vida**.<br /><br /> Consulte:<br /><br /> -   [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md)|
+|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar las clases, sus relaciones y sus métodos, cree un mapa de código que muestre esos elementos.<br /><br /> Consulte:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a>Describir la arquitectura lógica: diagramas de capas
  Los diagramas de capas organizan los artefactos de la solución en grupos abstractos, o *capas*, con los que describen la arquitectura lógica de un sistema. Estos artefactos pueden ser muchas cosas: espacios de nombres, proyectos, clases, métodos, etcétera. En las capas se representan y describen los roles o las tareas que realizan los artefactos en el sistema. También puede incluir la validación de capas en la compilación y las operaciones de protección para asegurarse de que el código sigue siendo coherente con el diseño.
@@ -854,7 +854,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
    Para ver las dependencias actuales en el diagrama de capas, haga clic con el botón derecho en la superficie del diagrama y, después, haga clic en **Generar dependencias**. Para describir las dependencias previstas, dibuje unas nuevas.
 
-  Vea:
+  Consulte:
 
 - [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -873,16 +873,16 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
-|**Diagram**|**Descripción**|
+|**Diagrama**|**Descripción**|
 |-----------------|---------------------|
-|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para crear las capas, genere un mapa de código y, después, agrupe los elementos en el mapa como capas potenciales. Arrastre los grupos desde el mapa al diagrama de capas.<br /><br /> Vea:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
-|Diagrama de componentes|Descripción de los componentes, sus interfaces y sus relaciones.<br /><br /> Para visualizar las capas, cree un diagrama de componentes en el que se describa la funcionalidad de los distintos componentes del sistema.<br /><br /> Vea:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
+|Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para crear las capas, genere un mapa de código y, después, agrupe los elementos en el mapa como capas potenciales. Arrastre los grupos desde el mapa al diagrama de capas.<br /><br /> Consulte:<br /><br /> -   [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />-   [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
+|Diagrama de componentes|Descripción de los componentes, sus interfaces y sus relaciones.<br /><br /> Para visualizar las capas, cree un diagrama de componentes en el que se describa la funcionalidad de los distintos componentes del sistema.<br /><br /> Consulte:<br /><br /> [diagramas de componentes de UML de -   : referencia](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes de UML: instrucciones](../modeling/uml-component-diagrams-guidelines.md)|
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoría**|**Links**|
+|**Categoría**|**Vínculos**|
 |------------------|---------------|
-|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Visualizar el código](../modeling/visualize-code.md) [crear modelos para la aplicación](../modeling/create-models-for-your-app.md) [usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md) [usar modelos en el desarrollo ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md) [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
