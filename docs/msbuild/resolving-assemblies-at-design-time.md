@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595155"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632568"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolución de ensamblados en tiempo de diseño
+
 Cuando se agrega una referencia a un ensamblado mediante la pestaña **.NET** del cuadro de diálogo **Agregar referencia**, la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña **.NET** enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.
 
 ## <a name="multi-targeting"></a>Compatibilidad con múltiples versiones
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] permite tener como destino las versiones de .NET Framework que se ejecutan en la versión 2.0 o la versión 4 de Common Language Runtime (CLR). Estas versiones incluyen las versiones de .NET Framework 2.0, 3.0, 3.5, 4, 4.5, and 4.5.1 y las versiones de Silverlight 1.0, 2.0 y 3.0. Si se publica una nueva versión de .NET Framework que está basada en la versión 2.0 o la versión 4 de CLR, Framework se puede instalar utilizando un paquete de destino, que se presentará automáticamente como destino en Visual Studio.
+
+ Visual Studio le permite tener como destino las versiones de .NET Framework que se ejecutan en varias versiones de .NET Framework. Si se publica una nueva versión de .NET Framework, Framework se puede instalar utilizando un paquete de destino, que se presentará automáticamente como destino en Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Cómo funciona la resolución de tipos
+
  En tiempo de ejecución, el CLR resuelve los tipos del ensamblado. Para ello, busca en la caché global de ensamblados, el directorio *bin* y en cualquiera de las rutas de acceso de sondeo. De esto se ocupa el cargador de ensamblados Fusion. Pero, ¿cómo identifica el cargador lo que está buscando? Depende una resolución realizada en tiempo de diseño, cuando se compila la aplicación.
 
  Durante la compilación, el compilador resuelve los tipos de aplicación utilizando los ensamblados de referencia. En las versiones de .NET Framework 2.0, 3.0, 3.5, 4, 4.5 y 4.5.1, los ensamblados de referencia se instalan cuando se instala .NET Framework.

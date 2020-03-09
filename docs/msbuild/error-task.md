@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596364"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634232"
 ---
 # <a name="error-task"></a>Error (tarea)
+
 Detiene una compilación y registra un error basándose en una instrucción condicional evaluada.
 
 ## <a name="parameters"></a>Parámetros
+
 En la siguiente tabla se describen los parámetros de la tarea `Error` .
 
 | Parámetro | Descripción |
@@ -36,16 +38,18 @@ En la siguiente tabla se describen los parámetros de la tarea `Error` .
 | `Code` | Parámetro `String` opcional.<br /><br /> Código de error que se debe asociar con el error. |
 | `File` | Parámetro `String` opcional.<br /><br /> El nombre del archivo que contiene el error. Si no se proporciona ningún nombre de archivo, se utilizará el archivo que contiene la tarea Error. |
 | `HelpKeyword` | Parámetro `String` opcional.<br /><br /> Palabra clave Ayuda que se debe asociar con el error. |
-| `Text` | Parámetro `String` opcional.<br /><br /> El texto de error que registra [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si el parámetro `Condition` se evalúa como `true`. |
+| `Text` | Parámetro `String` opcional.<br /><br /> Texto de error que registra MSBuild si el parámetro `Condition` se evalúa como `true`. |
 
 ## <a name="remarks"></a>Comentarios
-La tarea `Error` permite que los proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emitan el texto de error a los registradores y detengan la ejecución de la compilación.
+
+La tarea `Error` permite que los proyectos de MSBuild emitan el texto de error a los registradores y detengan la ejecución de la compilación.
 
 Si el parámetro `Condition` se evalúa como `true`, la compilación se detiene y se registra un error. Si no existe ningún parámetro `Condition`, el error se registra y se detiene la ejecución de la compilación. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo de código siguiente se comprueba que se hayan establecido todas las propiedades necesarias. Si no están establecidas, el proyecto genera un evento de error y registra el valor del parámetro `Text` de la tarea `Error`.
 
 ```xml
@@ -63,5 +67,6 @@ En el ejemplo de código siguiente se comprueba que se hayan establecido todas l
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)

@@ -15,21 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593829"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633153"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>Tareas de MSBuild específicas de C++
-Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Cuando se instala C++, las tareas siguientes están disponibles, además de las que se instalan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para más información, consulte [Información general sobre MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
+
+Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Cuando se instala C++, las tareas siguientes están disponibles, además de las que se instalan con MSBuild. Para más información, consulte [Información general sobre MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Además de los parámetros específicos de cada tarea, las tareas también tienen los parámetros siguientes.
 
 | Parámetro | Descripción |
 |-------------------| - |
-| `Condition` | Parámetro `String` opcional.<br /><br /> Expresión de tipo `Boolean` que el motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emplea para determinar si se ejecutará esta tarea. Para obtener información sobre las condiciones admitidas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vea [Condiciones](../msbuild/msbuild-conditions.md). |
+| `Condition` | Parámetro `String` opcional.<br /><br /> Expresión de tipo `Boolean` que el motor de MSBuild emplea para determinar si se ejecutará esta tarea. Para obtener información sobre las condiciones admitidas en MSBuild, vea [Condiciones](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Parámetro opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para obtener más información, vea [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ### <a name="related-topics"></a>Temas relacionados

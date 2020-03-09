@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
-ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
+ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622570"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235098"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -74,7 +74,9 @@ webpack empaqueta archivos JavaScript para que puedan ejecutarse en un explorado
 
     Este tutorial se ha probado con la versión 10.16.0.
 
-    Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
+    Si no lo tiene instalado, se recomienda instalar la versión de LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/) para ofrecer una mejor compatibilidad con los marcos y las bibliotecas externos. Node.js se ha compilado para arquitecturas de 32 y 64 bits. Las herramientas de Node.js en Visual Studio, incluidas en la carga de trabajo de Node.js, admiten ambas versiones. Solo se requiere una y el instalador de Node.js solo admite que se instale una a la vez.
+    
+    En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un entorno de ejecución instalado, puede configurar el proyecto para que haga referencia al entorno de ejecución instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto, elija **Propiedades** y establezca la **ruta de acceso de Node.exe**). Puede usar una instalación global de Node.js o puede especificar la ruta de acceso a un intérprete local en cada uno de los proyectos de Node.js. 
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

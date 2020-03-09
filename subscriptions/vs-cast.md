@@ -3,20 +3,21 @@ title: Ventaja de CAST Highlight en las suscripciones de Visual Studio | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983737"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257181"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
-Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio Enterprise pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
+Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
 
-Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gratuita de un mes con todas las características de CAST Highlight para hasta cinco aplicaciones por suscriptor.
+- Los suscriptores de Visual Studio pueden obtener una suscripción gratuita de tres meses con todas las características de CAST Highlight que permite a los usuarios evaluar hasta cinco aplicaciones.
+- Los suscriptores de Visual Studio Professional pueden obtener una suscripción similar que permite evaluar una aplicación durante tres meses.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -26,7 +27,7 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar**. Seguidamente, se le redirigirá a la página de CAST Highlight, donde podrá continuar con el proceso de activación.  (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
+0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar**. (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
 
 0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar**.
 
@@ -40,7 +41,7 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
 
 0. El equipo de CAST evaluará su solicitud y se comunicará con usted para finalizar la creación de su cuenta.
 
-0. También recibirá el siguiente correo electrónico de CAST, en el que se confirma la recepción de la solicitud.
+0. También recibirá el siguiente correo electrónico de CAST, en el que se confirma la recepción de la solicitud.  (Este ejemplo muestra el correo electrónico recibido por los suscriptores de la edición Enterprise).
 
    > *Le agradecemos su solicitud para activar el acceso de 30 días a CAST Highlight, una oferta exclusiva para los clientes de Microsoft Visual Studio Enterprise.*
    >
@@ -75,10 +76,10 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                             |  N/D          |
-| Visual Studio Professional con GitHub Enterprise | VL                                       | No disponible                                                             |  N/D          |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evalúe 5 aplicaciones durante tres meses.|  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Evalúe 5 aplicaciones durante tres meses.|  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Evalúe 1 aplicación durante tres meses.                                                             |  No.  Disponible solo para nuevos suscriptores                  |
+| Visual Studio Professional con GitHub Enterprise | VL                                       | Evalúe 1 aplicación durante tres meses.                                                            |  No.  Disponible solo para nuevos suscriptores                  |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
@@ -98,6 +99,12 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si todavía no ha activado la ventaja de crédito individual de Azure DevTest incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear el crédito individual de Azure DevTest.

@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557807"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263112"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referencia de esquemas del archivo del proyecto MSBuild
 
-Proporciona una tabla de todos los elementos de esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con los atributos disponibles y elementos secundarios.
+Proporciona una tabla de todos los elementos de esquema XML de MSBuild con los atributos y elementos secundarios disponibles.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza archivos del proyecto para indicar al motor de compilación qué y cómo debe compilar. Los archivos del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] son archivos XML que cumplen el esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. En esta sección se documenta el archivo de definición de esquema XML ( *.xsd*) para [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ MSBuild utiliza archivos del proyecto para indicar al motor de compilación qué debe compilar y cómo. Los archivos del proyecto de MSBuild son archivos XML que cumplen el esquema XML de MSBuild. En esta sección se documenta el archivo de definición de esquema XML ( *.xsd*) para MSBuild.
 
 El vínculo de esquema de un archivo de proyecto de MSBuild no es necesario en Visual Studio 2017 y versiones posteriores. Si está presente, debe ser ` http://schemas.microsoft.com/developer/msbuild/2003` independientemente de la versión de Visual Studio.
 
 ## <a name="msbuild-xml-schema-elements"></a>Elementos de esquema XML de MSBuild
 
- En la tabla siguiente se enumeran todos los elementos de esquema XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] junto con sus elementos secundarios y atributos.
+ En la tabla siguiente se enumeran todos los elementos de esquema XML de MSBuild junto con sus elementos secundarios y atributos.
 
 |Elemento|Elementos secundarios|Atributos|
 |-------------|--------------------|----------------|
@@ -54,9 +54,9 @@ El vínculo de esquema de un archivo de proyecto de MSBuild no es necesario en V
 |[Elemento PropertyGroup (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Condición|
 |[Elemento Sdk (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|NOMBRE<br /><br /> Versión|
 |[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Condición<br /><br /> DependsOnTargets<br /><br /> Entradas<br /><br /> KeepDuplicateOutputs<br /><br /> NOMBRE<br /><br /> Salidas<br /><br /> Valores devueltos|
-|[Elemento de tarea (MSBuild)](../msbuild/task-element-msbuild.md)|Salida|Condición<br /><br /> ContinueOnError<br /><br /> *Parameter*|
-|[TaskBody (Elemento) (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|Evaluate|
-|[Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> Condición<br /><br /> TaskFactory<br /><br /> TaskName|
+|[Elemento Task de Target (MSBuild)](../msbuild/task-element-msbuild.md)|Salida|Condición<br /><br /> ContinueOnError<br /><br /> *Parameter*|
+|[Elemento Task de UsingTask (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|Evaluate|
+|[Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Tarea|AssemblyFile<br /><br /> AssemblyName<br /><br /> Condición<br /><br /> TaskFactory<br /><br /> TaskName|
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Elegir<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condición|
 
 ## <a name="see-also"></a>Vea también

@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826593"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633738"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
+
   
 Contiene una colección de elementos `Import` agrupados en una condición opcional. Para obtener más información, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
@@ -42,6 +43,7 @@ Contiene una colección de elementos `Import` agrupados en una condición opcion
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -60,9 +62,10 @@ Contiene una colección de elementos `Import` agrupados en una condición opcion
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo de código siguiente se muestra el elemento `ImportGroup`.
 
 ```xml

@@ -18,28 +18,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c689122ac0ddfd9441122fdead64ecd8049e72
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579625"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633504"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives (Tarea)
-La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combina los atributos y los comentarios de localización de uno o varios archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un solo archivo para todo el ensamblado.
+
+La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combina los atributos y los comentarios de localización de uno o varios archivos de formato binario XAML en un solo archivo para todo el ensamblado.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
 | Parámetro | Descripción |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de los archivos de directivas de localización para los archivos individuales en formato binario de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `GeneratedLocalizationFiles` | Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de los archivos de directivas de localización para los archivos individuales en formato binario de XAML. |
 | `OutputFile` | Parámetro de salida obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de salida del ensamblado de directivas de localización compilado. |
 
 ## <a name="remarks"></a>Comentarios
-Puede agregar atributos y comentarios de localización al contenido de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Con la compatibilidad para la localización incluida en [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], puede quitar los atributos y los comentarios de localización y colocarlos en un archivo *.loc* que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización y **LocalizationPropertyStorage**, vea [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+
+Puede agregar atributos y comentarios de localización al contenido de XAML. Con la compatibilidad para la localización incluida en Windows Presentation Foundation (WPF), puede quitar los atributos y los comentarios de localización y colocarlos en un archivo *.loc* que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización y **LocalizationPropertyStorage**, vea [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Ejemplo
-En el siguiente ejemplo se combinan los comentarios de localización de varios archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de formato binario en un solo archivo *.loc*.
+
+En el siguiente ejemplo se combinan los comentarios de localización de varios archivos XAML de formato binario en un solo archivo *.loc*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +58,7 @@ En el siguiente ejemplo se combinan los comentarios de localización de varios a
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referencia de tareas de MSBuild para WPF](../msbuild/wpf-msbuild-task-reference.md)
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)

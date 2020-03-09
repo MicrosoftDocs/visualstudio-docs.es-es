@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594856"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633036"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
+
 Almacena valores de salida de tarea en elementos y propiedades.
 
  \<Project> \<Target> \<Task> \<Output>
@@ -39,6 +40,7 @@ Almacena valores de salida de tarea en elementos y propiedades.
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -51,15 +53,17 @@ Almacena valores de salida de tarea en elementos y propiedades.
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 | Elemento | Descripción |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea de MSBuild. |
 
 ## <a name="example"></a>Ejemplo
+
  En el siguiente ejemplo de código se muestra la tarea `Csc` que se ejecuta dentro de un elemento `Target`. Los elementos y las propiedades que se pasan a los parámetros de tarea se declaran fuera del ámbito de este ejemplo. El valor del parámetro de salida `OutputAssembly` se almacena en el `FinalAssemblyName` elemento y el valor del parámetro de salida `BuildSucceeded` se almacena en la propiedad `BuildWorked`. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
 ```xml
@@ -80,5 +84,6 @@ Almacena valores de salida de tarea en elementos y propiedades.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Tareas](../msbuild/msbuild-tasks.md)

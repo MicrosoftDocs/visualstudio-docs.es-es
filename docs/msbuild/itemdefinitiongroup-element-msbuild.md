@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573474"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633634"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
+
 El elemento `ItemDefinitionGroup` permite definir un conjunto de definiciones de elementos, que son valores de metadatos que, de forma predeterminada, se aplican a todos los elementos del proyecto. Con ItemDefinitionGroup, ya no es necesario usar [CreateItem (Tarea)](../msbuild/createitem-task.md) ni [CreateProperty (Tarea)](../msbuild/createproperty-task.md). Para obtener más información, vea [Definiciones de elementos](../msbuild/item-definitions.md).
 
 \<Project> \<ItemDefinitionGroup>
@@ -40,6 +41,7 @@ El elemento `ItemDefinitionGroup` permite definir un conjunto de definiciones de
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
 En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -58,9 +60,10 @@ En las siguientes secciones se describen los atributos, los elementos secundario
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo de código siguiente se definen dos elementos de metadatos, m y n, en ItemDefinitionGroup. En este ejemplo, los metadatos predeterminados "m" se aplican al elemento "i" porque los metadatos "m" no están definidos explícitamente por el elemento "i". Sin embargo, los metadatos predeterminados "n" no se aplican al elemento "i" porque los metadatos "n" ya están definidos por el elemento "i".
 
 ```xml
@@ -82,5 +85,6 @@ En el ejemplo de código siguiente se definen dos elementos de metadatos, m y n,
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementos](../msbuild/msbuild-items.md)

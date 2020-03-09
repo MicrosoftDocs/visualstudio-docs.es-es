@@ -22,22 +22,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26891fa67616b1796499722e03a764da2a8fd7d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589271"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633387"
 ---
 # <a name="msbuild-conditional-constructs"></a>Construcciones condicionales de MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un mecanismo para cualquier procesamiento con los elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) y [Otherwise](../msbuild/otherwise-element-msbuild.md).
+
+MSBuild proporciona un mecanismo para cualquier procesamiento con los elementos [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) y [Otherwise](../msbuild/otherwise-element-msbuild.md).
 
 ## <a name="use-the-choose-element"></a>Usar el elemento Choose
+
  El elemento `Choose` contiene una serie de elementos `When` con atributos `Condition` que se prueban en orden de arriba abajo, hasta que uno se evalúe como `true`. Si más de un elemento `When` se evalúa como `true`, se usará solo el primero. Se evaluará un elemento `Otherwise`, en caso de estar presente, si ninguna condición de un elemento `When` se evalúa como `true`.
 
  Los elementos `Choose` se pueden usar como elementos secundarios de los elementos `Project`, `When` y `Otherwise`. Los elementos `When` y `Otherwise` pueden tener elementos secundarios `ItemGroup`, `PropertyGroup` o `Choose`.
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo siguiente se usan los elementos `Choose` y `When` para cualquier procesamiento. Las propiedades y los elementos del proyecto se establecen en función dl valor de la propiedad `Configuration`.
 
 ```xml
@@ -77,6 +80,7 @@ ms.locfileid: "75589271"
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)

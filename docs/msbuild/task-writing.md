@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594999"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631843"
 ---
 # <a name="task-writing"></a>Escribir tareas
-Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para más información sobre la biblioteca de tareas incluida en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).
+
+Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En MSBuild se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para más información sobre la biblioteca de tareas incluida en MSBuild, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).
 
 ## <a name="tasks"></a>Tareas
- Algunos ejemplos de tareas son [Copy](../msbuild/copy-task.md), que copia uno o más archivos, [MakeDir](../msbuild/makedir-task.md), que crea un directorio, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Cada tarea se implementa como una clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ITask>, definida en el ensamblado *Microsoft.Build.Framework.dll*.
+
+ Algunos ejemplos de tareas son [Copy](../msbuild/copy-task.md), que copia uno o más archivos, [MakeDir](../msbuild/makedir-task.md), que crea un directorio, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente de C#. Cada tarea se implementa como una clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ITask>, definida en el ensamblado *Microsoft.Build.Framework.dll*.
 
  Al implementar una tarea, se pueden utilizar dos métodos:
 
@@ -60,7 +62,7 @@ namespace MyTasks
 </Project>
 ```
 
- Mientras se ejecutan las tareas, también pueden recibir entradas del archivo del proyecto si crea las propiedades de .NET en la clase de tarea. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] establece inmediatamente estas propiedades antes de llamar al método `Execute` de la tarea. Para crear una propiedad de cadena, utilice código de tarea como:
+ Mientras se ejecutan las tareas, también pueden recibir entradas del archivo del proyecto si crea las propiedades de .NET en la clase de tarea. MSBuild establece inmediatamente estas propiedades antes de llamar al método `Execute` de la tarea. Para crear una propiedad de cadena, utilice código de tarea como:
 
 ```csharp
 using System;
@@ -92,14 +94,16 @@ namespace MyTasks
 ```
 
 ## <a name="register-tasks"></a>Registro de tareas
- Si un proyecto va a ejecutar una tarea, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe saber cómo localizar el ensamblado que contiene la clase de tarea. Las tareas se registran mediante el [elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- El archivo de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]*Microsoft.Common.Tasks* es un archivo de proyecto que contiene una lista de elementos `UsingTask` que registran todas las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Este archivo se incluye automáticamente al compilar cada proyecto. Si una tarea registrada en *Microsoft.Common.Tasks* también está registrada en el archivo del proyecto actual, este tiene prioridad; es decir, puede reemplazar una tarea predeterminada por una tarea que tenga el mismo nombre.
+ Si un proyecto va a ejecutar una tarea, MSBuild debe saber cómo localizar el ensamblado que contiene la clase de tarea. Las tareas se registran mediante el [elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+
+ El archivo de MSBuild *Microsoft.Common.Tasks* es un archivo de proyecto que contiene una lista de elementos `UsingTask` que registran todas las tareas que se proporcionan con MSBuild. Este archivo se incluye automáticamente al compilar cada proyecto. Si una tarea registrada en *Microsoft.Common.Tasks* también está registrada en el archivo del proyecto actual, este tiene prioridad; es decir, puede reemplazar una tarea predeterminada por una tarea que tenga el mismo nombre.
 
 > [!TIP]
-> Para ver una lista de las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], puede visualizar el contenido de *Microsoft.Common.Tasks*.
+> Para ver una lista de las tareas que se proporcionan con MSBuild, puede visualizar el contenido de *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Generación de eventos de una tarea
+
  Si la tarea se deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>, puede usar cualquiera de los siguientes métodos del asistente en la clase <xref:Microsoft.Build.Utilities.Task> para generar eventos que cualquier registrador registrado detectará y mostrará:
 
 ```csharp
@@ -132,6 +136,7 @@ public class SimpleTask : ITask
 ```
 
 ## <a name="require-task-parameters-to-be-set"></a>Requisito de establecimiento de parámetros de tareas
+
  Puede marcar determinadas propiedades de la tarea como "necesarias", de modo que cualquier archivo del proyecto que ejecute la tarea debe establecer los valores de estas propiedades o se produce un error en la compilación. Aplique el atributo `[Required]` a la propiedad de .NET en la tarea como se indica a continuación:
 
 ```csharp
@@ -141,9 +146,9 @@ public string RequiredProperty { get; set; }
 
  <xref:Microsoft.Build.Framework.RequiredAttribute> define el atributo `[Required]` en el espacio de nombres <xref:Microsoft.Build.Framework>.
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Cómo invoca una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]
+## <a name="how-msbuild-invokes-a-task"></a>Invocación de una tarea por MSBuild
 
-Al invocar una tarea, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primero crea una instancia de la clase de tarea y, después, llama a los establecedores de propiedad de ese objeto para los parámetros de tarea que están establecidos en el elemento Task del archivo de proyecto. Si el elemento Task no especifica un parámetro, o si la expresión especificada en el elemento se evalúa como una cadena vacía, no se llama al establecedor de propiedad.
+Al invocar una tarea, MSBuild primero crea una instancia de la clase de tarea y, después, llama a los establecedores de propiedad de ese objeto para los parámetros de tarea que están establecidos en el elemento Task del archivo de proyecto. Si el elemento Task no especifica un parámetro, o si la expresión especificada en el elemento se evalúa como una cadena vacía, no se llama al establecedor de propiedad.
 
 Por ejemplo, en el proyecto:
 
@@ -163,13 +168,13 @@ Una tarea no debe depender de ningún orden relativo de invocación del establec
 
 ### <a name="task-parameter-types"></a>Tipos de parámetros de tarea
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] controla de forma nativa las propiedades de tipo `string`, `bool`, `ITaskItem` y `ITaskItem[]`. Si una tarea acepta un parámetro de un tipo diferente, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] invoca a <xref:System.Convert.ChangeType%2A> para realizar la conversión de `string` (con todas las referencias de propiedades y elementos expandidas) al tipo de destino. Si se produce un error en la conversión de cualquier parámetro de entrada, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emite un error y no llama al método `Execute()` de la tarea.
+MSBuild controla de forma nativa las propiedades de tipo `string`, `bool`, `ITaskItem` y `ITaskItem[]`. Si una tarea acepta un parámetro de un tipo diferente, MSBuild invoca a <xref:System.Convert.ChangeType%2A> para realizar la conversión de `string` (con todas las referencias de propiedades y elementos expandidas) al tipo de destino. Si se produce un error en la conversión de cualquier parámetro de entrada, MSBuild emite un error y no llama al método `Execute()` de la tarea.
 
 ## <a name="example"></a>Ejemplo
 
 ### <a name="description"></a>Descripción
 
-La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
+La clase C# siguiente muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
 
 ### <a name="code"></a>Código
 
@@ -194,7 +199,7 @@ namespace SimpleTask1
 
 ### <a name="description"></a>Descripción
 
-La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
+La clase C# siguiente muestra una tarea que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.
 
 ### <a name="code"></a>Código
 
@@ -230,7 +235,7 @@ namespace SimpleTask2
 
 ### <a name="description"></a>Descripción
 
-Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.
+Esta clase C# muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.
 
 ### <a name="code"></a>Código
 

@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917810"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634505"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilar varios proyectos en paralelo con MSBuild
+
 Puede usar MSBuild para compilar varios proyectos más rápidamente si los ejecuta en paralelo. Para ejecutar compilaciones en paralelo, use los parámetros siguientes en un equipo con varios procesadores o varios núcleos:
 
 - El modificador `-maxcpucount` en un símbolo del sistema.
@@ -30,6 +31,7 @@ Puede usar MSBuild para compilar varios proyectos más rápidamente si los ejecu
 > El modificador **-verbosity** ( **-v**) en una línea de comandos también puede afectar al rendimiento de la compilación. Es posible que disminuya el rendimiento de la compilación si el nivel de detalle de la información del registro de compilación se establece en "detailed" o "diagnostic", que se usan para solucionar problemas. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) y [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>Modificador -maxcpucount
+
 Si usa el modificador `-maxcpucount`, o `-m` para abreviar, MSBuild puede crear el número especificado de procesos de *MSBuild.exe*, que se pueden ejecutar en paralelo. Estos procesos también se denominan "procesos de trabajo". Cada proceso de trabajo utiliza un núcleo o procesador independiente, si hay alguno disponible, para compilar un proyecto al mismo tiempo ya que los demás procesadores disponibles pueden estar compilando otros proyectos. Por ejemplo, si se establece este modificador en un valor "4", MSBuild creará cuatro procesos de trabajo para compilar el proyecto.
 
 Si incluye el modificador `-maxcpucount` sin especificar un valor, MSBuild podrá usar todos los procesadores de que disponga el equipo.
@@ -43,7 +45,8 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Parámetro de tarea BuildInParallel
-`BuildInParallel` es un parámetro booleano opcional de una tarea de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cuando `BuildInParallel` se establece en `true` (su valor predeterminado es `true`), se generan varios procesos de trabajo para compilar al mismo tiempo el mayor número de proyectos posible. Para que funcione correctamente, el modificador `-maxcpucount` debe establecerse en un valor mayor que 1 y el sistema debe tener al menos dos núcleos o dos o más procesadores.
+
+`BuildInParallel` es un parámetro booleano opcional de una tarea de MSBuild. Cuando `BuildInParallel` se establece en `true` (su valor predeterminado es `true`), se generan varios procesos de trabajo para compilar al mismo tiempo el mayor número de proyectos posible. Para que funcione correctamente, el modificador `-maxcpucount` debe establecerse en un valor mayor que 1 y el sistema debe tener al menos dos núcleos o dos o más procesadores.
 
 A continuación se muestra un ejemplo tomado de *microsoft.common.targets* sobre cómo establecer el parámetro `BuildInParallel`.
 
@@ -70,6 +73,7 @@ A continuación se muestra un ejemplo tomado de *microsoft.common.targets* sobre
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Uso de varios procesadores para compilar proyectos](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Escribir registradores que reconocen varios procesadores](../msbuild/writing-multi-processor-aware-loggers.md)
 - [Tuning C++ build parallelism blog](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/) (Blog sobre la optimización del paralelismo de compilación de C++)

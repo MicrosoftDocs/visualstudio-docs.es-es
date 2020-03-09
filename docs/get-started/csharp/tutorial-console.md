@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580016"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215430"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -329,15 +329,15 @@ La clase `Calculator` controlará la mayor parte del trabajo de cálculo, mientr
 
 Comencemos.
 
-1. Elimine todo el contenido que hay *después* del siguiente bloque de código:
+1. Elimine todo en el espacio de nombres `Calculator` entre las llaves de apertura y cierre:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Después, agregue una nueva clase `Calculator`, como se indica a continuación:

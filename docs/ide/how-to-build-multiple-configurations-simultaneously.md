@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416759"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904092"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedimiento Compilación de varias configuraciones simultáneamente
 
@@ -24,11 +24,13 @@ Puede compilar la mayoría de los tipos de proyectos con varias o incluso todas 
 
 2. Todos los proyectos de Visual Basic.
 
+Si una solución contiene cualquier proyecto de estos dos tipos de proyecto, **Compilación por lotes** no está disponible para esa solución. En ese caso, el comando no aparece en el menú **Compilar**.
+
    Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Para compilar un proyecto en varias configuraciones de compilación
 
-1. En la barra de menús, elija **Compilar** > **Compilación por lotes**.
+1. En la barra de menús, elija **Compilar** > **Compilación por lotes**. O bien, presione **Ctrl**+**Q** para abrir el cuadro de búsqueda y busque `Batch Build`.
 
 2. En la columna **Compilar**, seleccione las casillas de las configuraciones en las que quiere compilar un proyecto.
 

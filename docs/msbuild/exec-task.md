@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aef20a322ad3743ed1cb89955654456dff670e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591455"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634219"
 ---
 # <a name="exec-task"></a>Exec (tarea)
+
 Ejecuta el programa o comando especificado mediante los argumentos especificados.
 
 ## <a name="parameters"></a>Parámetros
+
 En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 
 |Parámetro|Descripción|
@@ -48,13 +50,15 @@ En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 |`WorkingDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio en el que se ejecutará el comando.<br /><br />Predeterminado: Directorio de trabajo actual del proyecto.|
 
 ## <a name="remarks"></a>Comentarios
-Esta tarea es útil cuando una tarea de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica para el trabajo que desea realizar no está disponible. Sin embargo, la tarea `Exec`, a diferencia de una tarea más específica, no puede realizar un procesamiento adicional ni operaciones condicionales en función del resultado de la herramienta o el comando que se ejecuta.
+
+Esta tarea es útil cuando una tarea de MSBuild específica para el trabajo que desea realizar no está disponible. Sin embargo, la tarea `Exec`, a diferencia de una tarea más específica, no puede realizar un procesamiento adicional ni operaciones condicionales en función del resultado de la herramienta o el comando que se ejecuta.
 
 La tarea `Exec` llama a *cmd.exe* en vez de invocar directamente a un proceso.
 
 Además de los parámetros mencionados en este documento, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
 El ejemplo siguiente utiliza la tarea `Exec` para ejecutar un comando.
 
 ```xml
@@ -71,5 +75,6 @@ El ejemplo siguiente utiliza la tarea `Exec` para ejecutar un comando.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

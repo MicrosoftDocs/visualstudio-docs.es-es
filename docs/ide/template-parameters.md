@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585891"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169370"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -61,7 +61,7 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |safeitemrootname|Igual a `safeitemname`.|
 |safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
 |hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
-|specifiedSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `specifiedSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `specifiedSolutionName` está en blanco.|
+|specifiedsolutionname|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `specifiedsolutionname` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `specifiedsolutionname` está en blanco.|
 |userdomain|Dominio del usuario actual.|
 |username|Nombre de usuario actual.|
 |webnamespace|Nombre del sitio web actual. Este parámetro se usa en la plantilla de formulario web para garantizar que los nombres de clase sean únicos. Si el sitio web está en el directorio raíz del servidor web, este parámetro de plantilla se resuelve como el directorio raíz del servidor web.|

@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589310"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634102"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tarea)
-Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.
+
+Genera un manifiesto de aplicación de ClickOnce o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de ClickOnce extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.
 
 ## <a name="parameters"></a>Parámetros
+
 En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicationManifest`.
 
 | Parámetro | Descripción |
@@ -40,7 +42,7 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicat
 | `ConfigFile` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el elemento que contiene el archivo de configuración de la aplicación. Si la tarea va a generar un manifiesto nativo, este parámetro se omite. |
 | `Dependencies` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica una lista de elementos que define el conjunto de ensamblados dependientes para el manifiesto generado. Cada elemento puede describirse con más detalle mediante metadatos de elemento para indicar el estado de implementación adicional y el tipo de dependencia. Para obtener más información, vea [Metadatos de elementos](#item-metadata). |
 | `Description` | Parámetro `String` opcional.<br /><br /> Especifica la descripción para la aplicación o componente. |
-| `EntryPoint` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica un elemento único que indica el punto de entrada para el ensamblado del manifiesto generado.<br /><br /> Para un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], este parámetro especifica el ensamblado que se inicializa cuando se ejecuta la aplicación. |
+| `EntryPoint` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica un elemento único que indica el punto de entrada para el ensamblado del manifiesto generado.<br /><br /> Para un manifiesto de aplicación de ClickOnce, este parámetro especifica el ensamblado que se inicializa cuando se ejecuta la aplicación. |
 | `ErrorReportUrl` | Parámetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante los informes de errores de las instalaciones ClickOnce. |
 | `FileAssociations` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica una lista de uno o varios tipos de archivo asociados al manifiesto de implementación de ClickOnce.<br /><br /> Las asociaciones de archivo son válidas únicamente cuando el destino es .NET Framework 3.5 o posterior. |
 | `Files` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Los archivos que se incluirán en el manifiesto. Especifique la ruta de acceso completa para cada archivo. |
@@ -49,7 +51,7 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicat
 | `InputManifest` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados como la seguridad de la aplicación o las definiciones personalizadas del manifiesto pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1. |
 | `IsolatedComReferences` | Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los componentes COM que se aislarán en el manifiesto generado. Este parámetro permite aislar los componentes COM para la implementación de "COM sin registro". Funciona generando automáticamente un manifiesto con definiciones estándar de registro de COM. Sin embargo, los componentes COM se deben registrar en el equipo de compilación para que funcione correctamente. |
 | `ManifestType` | Parámetro `String` opcional.<br /><br /> Especifica el tipo de manifiesto que se va a generar. Este parámetro puede tener los valores siguientes:<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> Si no se especifica este parámetro, la tarea tiene como valor predefinido `ClickOnce`. |
-| `MaxTargetPath` | Parámetro `String` opcional.<br /><br /> Especifica la longitud máxima permitida de la ruta de acceso de un archivo en una implementación de aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Si se especifica este valor, se comprobará si la longitud de cada ruta de archivo de la aplicación rebasa este límite. Cualquier elemento que supere el límite producirá una advertencia de compilación. Si no se especifica esta entrada o es cero, no se realiza ninguna comprobación. Si la tarea va a generar un manifiesto nativo, este parámetro se omite. |
+| `MaxTargetPath` | Parámetro `String` opcional.<br /><br /> Especifica la longitud máxima permitida de la ruta de acceso de un archivo en una implementación de aplicación de ClickOnce. Si se especifica este valor, se comprobará si la longitud de cada ruta de archivo de la aplicación rebasa este límite. Cualquier elemento que supere el límite producirá una advertencia de compilación. Si no se especifica esta entrada o es cero, no se realiza ninguna comprobación. Si la tarea va a generar un manifiesto nativo, este parámetro se omite. |
 | `OSVersion` | Parámetro `String` opcional.<br /><br /> Especifica la versión mínima del sistema operativo (SO) necesaria para la aplicación. Por ejemplo, el valor "5.1.2600.0" indica que el sistema operativo es Windows XP. Si no se especifica este parámetro, se utiliza el valor "4.10.0.0" que indica Windows 98 Segunda edición, sistema operativo mínimo admitido por .NET Framework. Si la tarea va a generar un manifiesto nativo, este dato se omite. |
 | `OutputManifest` | Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre del archivo de manifiesto de salida generado. Si no se especifica este parámetro, el nombre del archivo de salida se deduce de la identidad del manifiesto generado. |
 | `Platform` | Parámetro `String` opcional.<br /><br /> Especifica la plataforma de destino de la aplicación. Este parámetro puede tener los valores siguientes:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Si no se especifica este parámetro, la tarea tiene como valor predefinido `AnyCPU`. |
@@ -65,6 +67,7 @@ En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicat
 | `UseApplicationTrust` | Parámetro `Boolean` opcional.<br /><br /> Si es true, las propiedades `Product`, `Publisher` y `SupportUrl` se escriben en el manifiesto de aplicación. |
 
 ## <a name="remarks"></a>Comentarios
+
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de los parámetros de la clase Task, vea [Task Base (Clase)](../msbuild/task-base-class.md).
 
 Para obtener información sobre cómo usar la tarea `GenerateDeploymentManifest`, vea [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md).
@@ -82,12 +85,13 @@ Las entradas para las dependencias y archivos se pueden ampliar aún más con me
 |`IsDataFile`|Un valor de metadatos `Boolean` que indica si el archivo es un archivo de datos. Un archivo de datos es especial en cuanto a que migra entre las actualizaciones de la aplicación. Estos metadatos solo son válidos para los archivos. El valor predeterminado es `False`.|
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se utiliza la tarea `GenerateApplicationManifest` para generar un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y la tarea `GenerateDeploymentManifest` para generar un manifiesto de implementación para una aplicación con un único ensamblado. A continuación, utiliza la tarea `SignFile` para firmar los manifiestos.
 
-Esto ilustra el escenario de generación de manifiestos más sencillo posible donde los manifiestos de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se generan para un único programa. Un nombre e identidad predeterminados se deducen del ensamblado para el manifiesto.
+En este ejemplo se utiliza la tarea `GenerateApplicationManifest` para generar un manifiesto de aplicación de ClickOnce y la tarea `GenerateDeploymentManifest` para generar un manifiesto de implementación para una aplicación con un único ensamblado. A continuación, utiliza la tarea `SignFile` para firmar los manifiestos.
+
+Esto ilustra el escenario de generación de manifiestos más sencillo posible donde los manifiestos de ClickOnce se generan para un único programa. Un nombre e identidad predeterminados se deducen del ensamblado para el manifiesto.
 
 > [!NOTE]
-> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de ClickOnce totalmente funcional.
 >
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
@@ -135,12 +139,13 @@ Esto ilustra el escenario de generación de manifiestos más sencillo posible do
 ```
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para una aplicación con un único ensamblado, especificando el nombre y la identidad de los manifiestos.
+
+En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de ClickOnce para una aplicación con un único ensamblado, especificando el nombre y la identidad de los manifiestos.
 
 Este ejemplo es similar al ejemplo anterior, excepto que el nombre y la identidad de los manifiestos están especificados explícitamente. Asimismo, este ejemplo se configura como una aplicación en línea en vez de como una aplicación instalada.
 
 > [!NOTE]
-> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de ClickOnce totalmente funcional.
 >
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
@@ -195,10 +200,11 @@ Este ejemplo es similar al ejemplo anterior, excepto que el nombre y la identida
 ```
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para una aplicación con varios archivos y ensamblados.
+
+En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de ClickOnce para una aplicación con varios archivos y ensamblados.
 
 > [!NOTE]
-> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de ClickOnce totalmente funcional.
 >
 > [!NOTE]
 > Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` de este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).
@@ -313,12 +319,13 @@ En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDepl
 ```
 
 ## <a name="example"></a>Ejemplo
+
 En este ejemplo se usa la tarea `GenerateApplicationManifest` para generar un manifiesto nativo para la aplicación *Test.exe*, que hace referencia al componente *Alpha.dll* nativo y a un componente COM aislado *Bravo.dll*.
 
 En este ejemplo se genera *Test.exe.manifest*, que hace que la aplicación XCOPY se pueda implementar y aprovecha el COM sin registro.
 
 > [!NOTE]
-> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] totalmente funcional.
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de ClickOnce totalmente funcional.
 
 ```xml
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -350,6 +357,7 @@ En este ejemplo se genera *Test.exe.manifest*, que hace que la aplicación XCOPY
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 - [SignFile (Tarea)](../msbuild/signfile-task.md)

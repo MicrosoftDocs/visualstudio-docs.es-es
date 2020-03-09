@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597378"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632932"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
-Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild.md) definidos por el usuario. Cada elemento `Property` utilizado en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe ser un elemento secundario de un elemento `PropertyGroup`.
+
+Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild.md) definidos por el usuario. Cada elemento `Property` que se utiliza en un proyecto de MSBuild debe ser un elemento secundario de un elemento `PropertyGroup`.
 
  \<Project> \<PropertyGroup>
 
@@ -40,6 +41,7 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -58,9 +60,10 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
 ## <a name="example"></a>Ejemplo
+
  En el ejemplo de código siguiente se muestra cómo establecer propiedades basadas en una condición. En este ejemplo, si el valor de la propiedad `CompileConfig` es `DEBUG`, se establecen las propiedades `Optimization`, `Obfuscate` y `OutputPath` dentro del elemento `PropertyGroup`.
 
 ```xml
@@ -72,5 +75,6 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Propiedades de MSBuild](../msbuild/msbuild-properties.md)

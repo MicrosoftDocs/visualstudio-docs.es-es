@@ -3,27 +3,38 @@ title: Eliminación de asignaciones de suscripciones en el Portal de administrac
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Descubra cómo pueden los administradores eliminar asignaciones de suscripción
-ms.openlocfilehash: 8cf90ef15939eec6ec142a076e4a064b9fde7147
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491568"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263256"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminación de asignaciones de suscripciones de Visual Studio
-Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, las ventajas del suscriptor no se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.
+Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, no todas las ventajas del suscriptor se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.  Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight. 
 
 ## <a name="delete-a-subscription-assignment"></a>Eliminación de una asignación de suscripción
-1. Haga clic en el nombre del suscriptor que desea quitar. Para seleccionar varios suscriptores, mantenga presionada la tecla **CTRL** y haga clic en cada suscriptor que desee quitar, o bien presione **CTRL + A** para seleccionar y quitar todos los suscriptores. En la siguiente imagen se muestran tres suscriptores seleccionados.
+1. Haga clic en el nombre del suscriptor que desea quitar. Para seleccionar varios suscriptores para su eliminación, puede hacer clic en el círculo situado a la izquierda del nombre del suscriptor para seleccionar cada uno de ellos.  También puede mantener presionada la tecla **CTRL** y hacer clic en cada suscriptor que desee quitar.  Presione **CTRL+A** para seleccionar y quitar todos los suscriptores. 
 2. Para eliminar los suscriptores seleccionados, haga clic en **Eliminar**.
 3. Cuando aparezca el mensaje que le pide que confirme la eliminación, haga clic en **Aceptar**.
    > [!div class="mx-imgBorder"]
    > ![Eliminar suscriptores](_img/delete-license/delete-subscribers.png)
 
+   > [!NOTE]
+   > La eliminación masiva con una plantilla no está disponible. Para las organizaciones que administran las asignaciones de suscripciones a través de grupos de seguridad de Azure Active Directory, consulte [nuestro artículo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para obtener más información sobre cómo se realizan las eliminaciones.  
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 - ¿Necesita cambiar una suscripción sin eliminarla?  Aprenda a [editar suscripciones](edit-license.md).
 - Si necesita ayuda para encontrar una suscripción determinada, consulte [Búsqueda de suscripciones](search-license.md).
 - ¿Necesita crear una lista de todas las suscripciones?  Consulte [Exportar suscripciones](exporting-subscriptions.md).
+
+

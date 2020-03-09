@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9576bdf06593ae3cde3bc29e2585a7ab475671a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566623"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633374"
 ---
 # <a name="msbuild-conditions"></a>Condiciones de MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] admite un conjunto específico de condiciones que se pueden aplicar allí donde se permita un atributo `Condition`. En la siguiente tabla se explican esas condiciones.
+
+MSBuild admite un conjunto específico de condiciones que se pueden aplicar allá donde se permita un atributo `Condition`. En la siguiente tabla se explican esas condiciones.
 
 |Condición|Descripción|
 |---------------|-----------------|
@@ -40,6 +41,7 @@ ms.locfileid: "75566623"
 |$if$ ( %expression% ), $else$, $endif$|Comprueba si el `%expression%` especificado coincide con el valor de cadena del parámetro de plantilla personalizado pasado. Si la condición `$if$` se evalúa como `true`, sus instrucciones se ejecutan; en caso contrario, se comprueba la condición `$else$`. Si la condición `$else$` es `true`, sus instrucciones se ejecutan; en caso contrario, la condición `$endif$` finaliza la evaluación de expresiones.<br /><br /> Para obtener ejemplos de uso, vea [Visual Studio project/item template parameter logic](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic) (Lógica del parámetro de plantillas de proyecto o elemento de Visual Studio).|
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 - [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)
 - [Tutorial: Crear un archivo de proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

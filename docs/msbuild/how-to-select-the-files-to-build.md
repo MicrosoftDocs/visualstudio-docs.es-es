@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574618"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633816"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
+
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.
 
 ## <a name="specify-inputs"></a>Especificar entradas
+
 Los elementos representan las entradas para una compilación. Para obtener más información sobre los elementos, vea [Elementos](../msbuild/msbuild-items.md).
 
-Para incluir archivos para una compilación, deben estar incluidos en una lista de elementos del archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Es posible agregar varios archivos a las listas de elementos incluyendo cada archivo individualmente o usando comodines para incluir muchos archivos a la vez.
+Para incluir archivos para una compilación, deben estar incluidos en una lista de elementos del archivo de proyecto de MSBuild. Es posible agregar varios archivos a las listas de elementos incluyendo cada archivo individualmente o usando comodines para incluir muchos archivos a la vez.
 
 #### <a name="to-declare-items-individually"></a>Para declarar elementos individualmente
 
@@ -51,6 +53,7 @@ Para incluir archivos para una compilación, deben estar incluidos en una lista 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Especifique entradas con comodines
+
 También se pueden usar comodines para incluir recursivamente todos los archivos o solo archivos concretos de subdirectorios como entradas para una compilación. Para obtener más información sobre los caracteres comodín, vea [Elementos](../msbuild/msbuild-items.md).
 
 Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project*:
@@ -84,6 +87,7 @@ Los ejemplos siguientes están basados en un proyecto que contiene archivos grá
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Pase elementos a una tarea
+
 En un archivo de proyecto, se puede usar la notación @() en las tareas para especificar una lista de elementos completa como entrada de una compilación. Se puede usar esta notación si enumera los archivos de forma separada o si usa comodines.
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos los archivos de Visual C# o Visual Basic como entradas
@@ -97,11 +101,12 @@ En un archivo de proyecto, se puede usar la notación @() en las tareas para esp
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:
+> Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de MSBuild como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo de código siguiente se muestra un proyecto que incluye todos los archivos de entrada de forma independiente.
 
 ```xml
@@ -136,6 +141,7 @@ En el ejemplo de código siguiente se muestra un proyecto que incluye todos los 
 ```
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs*.
 
 ```xml
@@ -170,5 +176,6 @@ En el ejemplo de código siguiente se usa un comodín para incluir todos los arc
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Elementos](../msbuild/msbuild-items.md)

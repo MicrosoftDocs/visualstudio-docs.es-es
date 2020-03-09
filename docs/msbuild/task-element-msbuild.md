@@ -1,5 +1,5 @@
 ---
-title: Elemento Task (MSBuild) | Microsoft Docs
+title: Elemento Task de Target (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566376"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263180"
 ---
-# <a name="task-element-msbuild"></a>Elemento Task (MSBuild)
-Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. El nombre del elemento se determina viene determinado por el nombre de la tarea que se va a crear.
+# <a name="task-element-of-target-msbuild"></a>Elemento Task de Target (MSBuild)
+
+Crea y ejecuta una instancia de una tarea de MSBuild. El nombre del elemento se determina viene determinado por el nombre de la tarea que se va a crear.
 
  \<Project> \<Target>
 
@@ -39,6 +40,7 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -59,14 +61,16 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 
 | Elemento | Descripción |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Target](../msbuild/target-element-msbuild.md) | Elemento Container para tareas de MSBuild. |
 
 ## <a name="remarks"></a>Comentarios
- Un elemento `Task` en un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crea una instancia de una tarea, establece propiedades en ella y la ejecuta. El elemento `Output` almacena los parámetros de salida en propiedades o elementos que se usarán en otro lugar en el archivo de proyecto.
+
+ Un elemento `Task` en un archivo de proyecto de MSBuild crea una instancia de una tarea, establece propiedades en ella y la ejecuta. El elemento `Output` almacena los parámetros de salida en propiedades o elementos que se usarán en otro lugar en el archivo de proyecto.
 
  Si hay algún elemento [OnError](../msbuild/onerror-element-msbuild.md) en el elemento `Target` principal de una tarea, se evaluará si se produce un error en la tarea y `ContinueOnError` tiene un valor de `false`. Para más información sobre las tareas, consulte [Tareas](../msbuild/msbuild-tasks.md).
 
 ## <a name="example"></a>Ejemplo
+
  El ejemplo de código siguiente se crea una instancia de la clase [tarea Csc](../msbuild/csc-task.md), establece seis de las propiedades y ejecuta la tarea. Después de la ejecución, el valor de la propiedad `OutputAssembly` del objeto se coloca en una lista de elementos denominada `FinalAssemblyName`.
 
 ```xml
@@ -84,6 +88,7 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428780"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235085"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
 
@@ -75,7 +75,9 @@ Express es un marco de aplicación web que sirve de marco de trabajo de servidor
 
 * Debe tener instalado el runtime de Node.js.
 
-    Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
+    Si no lo tiene instalado, se recomienda instalar la versión de LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/) para ofrecer una mejor compatibilidad con los marcos y las bibliotecas externos. Node.js se ha compilado para arquitecturas de 32 y 64 bits. Las herramientas de Node.js en Visual Studio, incluidas en la carga de trabajo de Node.js, admiten ambas versiones. Solo se requiere una y el instalador de Node.js solo admite que se instale una a la vez.
+    
+    En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un entorno de ejecución instalado, puede configurar el proyecto para que haga referencia al entorno de ejecución instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto, elija **Propiedades** y establezca la **ruta de acceso de Node.exe**). Puede usar una instalación global de Node.js o puede especificar la ruta de acceso a un intérprete local en cada uno de los proyectos de Node.js. 
 
     Este tutorial se ha probado con Node.js 8.10.0.
 
@@ -93,7 +95,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (JavaScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación básica de Azure Node.js Express 4**, debe agregar la carga de trabajo **Desarrollo de Node.js**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 

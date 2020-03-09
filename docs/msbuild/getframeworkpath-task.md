@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579640"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634011"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (tarea)
+
+Recupera la ruta de acceso a los ensamblados de .NET Framework.
 Recupera la ruta de acceso a los ensamblados de .NET Framework.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
+
 En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath` .
 
 |Parámetro|Descripción|
@@ -41,11 +44,13 @@ En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath
 |`Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de Framework más recientes, si alguno está disponible. De lo contrario, devuelve `null`.|
 
 ## <a name="remarks"></a>Comentarios
-Si hay instaladas varias versiones de .NET Framework, esta tarea devuelve la versión en la que puede ejecutarse [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Si hay instaladas varias versiones de .NET Framework, esta tarea devuelve la versión en la que puede ejecutarse MSBuild.
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
 En el ejemplo siguiente se usa la tarea `GetFrameworkPath` para almacenar la ruta de acceso a .NET Framework en la propiedad `FrameworkPath`.
 
 ```xml
@@ -61,5 +66,6 @@ En el ejemplo siguiente se usa la tarea `GetFrameworkPath` para almacenar la rut
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Tareas](../msbuild/msbuild-tasks.md)
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)

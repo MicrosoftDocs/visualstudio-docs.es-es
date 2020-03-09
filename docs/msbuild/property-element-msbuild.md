@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597430"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632958"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
-Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propiedad que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `PropertyGroup`.
+
+Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propiedad que se utiliza en un proyecto de MSBuild debe especificarse como elemento secundario de un elemento `PropertyGroup`.
 
  \<Project> \<PropertyGroup>
 
@@ -37,6 +38,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -46,6 +48,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
@@ -55,14 +58,17 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamiento de las propiedades.|
 
 ## <a name="text-value"></a>Valor de texto
+
  El valor de texto es opcional.
 
  Este texto especifica el valor de propiedad y puede contener XML.
 
 ## <a name="remarks"></a>Comentarios
+
  Los nombres de propiedad se limitan únicamente a caracteres ASCII. En el proyecto, se hace referencia a los valores de propiedad colocando el nombre de propiedad entre "`$(`" y "`)`". Por ejemplo, `$(builddir)\classes` se resolvería como *build\classes* si la propiedad `builddir` tuviera el valor `build`. Para más información sobre las propiedades, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Ejemplo
+
  El código siguiente establece la propiedad `Optimization` en `false` y la propiedad `DefaultVersion` en `1.0` si la propiedad `Version` está vacía.
 
 ```xml
@@ -73,5 +79,6 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Propiedades de MSBuild](../msbuild/msbuild-properties.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

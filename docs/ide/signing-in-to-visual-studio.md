@@ -10,16 +10,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adda66bbccafa3c1d7f20d60a3f8ee0a4995353c
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 48c3ad98043947d9153c1fb9c406a60e5ae8839a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027595"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904140"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
-Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio estableciendo la cuenta de personalización e iniciando sesión en el IDE.
+Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio iniciando sesión en la cuenta de personalización.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Iniciar sesión en Visual Studio para Mac](/visualstudio/mac/signing-in).
@@ -29,30 +29,37 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede [sincronizar la configuración](synchronized-settings-in-visual-studio.md) de todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc.
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
-
-- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) para obtener más información
-
-- **Sincronización de la configuración de Visual Studio**: la configuración que ha personalizado, como los enlaces de teclado, el diseño de ventana y el tema de color, se aplica inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Extensión del período de prueba de Visual Studio**: puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días. Para ver más información, consulte [Ampliar una versión de prueba o actualizar una licencia](../ide/how-to-unlock-visual-studio.md).
 
 - **Desbloqueo de Visual Studio Community**: si la instalación de la edición Community solicita una licencia, inicie sesión en el IDE para desbloquearse a sí mismo.
 
-- **Extensión del período de prueba de Visual Studio**: puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días.
+- **Desbloqueo de Visual Studio si usa una cuenta asociada con una suscripción de Visual Studio o una organización de Azure DevOps**. Para ver instrucciones detalladas, consulte [Ampliar una versión de prueba o actualizar una licencia](../ide/how-to-unlock-visual-studio.md).
 
-- **Desbloqueo de Visual Studio si usa una cuenta asociada con una suscripción de Visual Studio o una organización de Azure DevOps**. Vea [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) para obtener más información
+
+- **Sincronización de la configuración de Visual Studio**: la configuración que ha personalizado, como los enlaces de teclado, el diseño de ventana y el tema de color, se aplica inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Sincronizar la configuración de Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Conexión automática a distintos servicios, por ejemplo, Azure y Azure DevOps Services**, en el IDE sin que se vuelvan a solicitar las credenciales de la misma cuenta.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
 
-La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. 
+
+![Solicitud de inicio de sesión](../ide/media/vs2019_signinpopup.png)
+
+Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta Microsoft de forma gratuita haciendo clic en el vínculo que aparece debajo del botón de inicio de sesión. Si no lo consigue, vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
 A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante si abre el menú **Herramientas** > **Opciones** en Visual Studio.
 
 Después de proporcionar la configuración, se inicia Visual Studio, y ya ha iniciado sesión y está listo para empezar. Para comprobar si ha iniciado sesión, busque su nombre en la esquina superior derecha del entorno de Visual Studio.
 
-![Usuario actualmente registrado en VS2017](../ide/media/vs2017_username.png)
+![Usuario actualmente registrado en VS2019](../ide/media/vs2019_username.png)
 
-A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión automáticamente y todos los cambios realizados en la configuración sincronizada se aplican automáticamente. Para cerrar sesión, haga clic en la flecha abajo situada junto al nombre del perfil en la esquina superior derecha del entorno de Visual Studio, elija el comando **Configuración de la cuenta** y, después, elija el vínculo **Cerrar sesión**. Para volver a iniciar sesión, elija el comando **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
+Si decide no iniciar sesión cuando abra Visual Studio por primera vez, es fácil hacerlo más adelante. Busque el vínculo **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio. 
+
+![Usuario que no ha iniciado sesión](../ide/media/vs2019_usernotsignedin.png)
+
+A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión automáticamente y todos los cambios realizados en la configuración sincronizada se aplican automáticamente. Para cerrar sesión, haga clic en el icono con el nombre del perfil en la esquina superior derecha del entorno de Visual Studio, elija el comando **Configuración de la cuenta** y, después, elija el vínculo **Cerrar sesión**. Para volver a iniciar sesión, elija el comando **Iniciar sesión** situado en la esquina superior derecha del entorno de Visual Studio.
 
 ## <a name="to-change-your-profile-information"></a>Para cambiar la información del perfil
 
@@ -64,11 +71,11 @@ A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión a
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Si encuentra algún problema al iniciar sesión, vea la página de [soporte técnico de cuentas](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.
+Si encuentra algún problema al iniciar sesión, vea la página de [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.
 
 ## <a name="see-also"></a>Vea también
 
-* [Desbloqueo de Visual Studio](../ide/how-to-unlock-visual-studio.md)
+* [Ampliación de una versión de prueba o actualización de una licencia](../ide/how-to-unlock-visual-studio.md)
 * [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
 * [Iniciar sesión (Visual Studio para Mac)](/visualstudio/mac/signing-in)
 * [Activación (Visual Studio para Mac)](/visualstudio/mac/activation)

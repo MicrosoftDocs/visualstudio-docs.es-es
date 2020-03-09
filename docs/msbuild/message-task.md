@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592183"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633491"
 ---
 # <a name="message-task"></a>Message (tarea)
+
 Registra un mensaje durante una compilación.
 
 ## <a name="parameters"></a>Parámetros
+
  En la siguiente tabla se describen los parámetros de la tarea `Message` .
 
 |Parámetro|Descripción|
@@ -37,7 +39,8 @@ Registra un mensaje durante una compilación.
 |`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|
 
 ## <a name="remarks"></a>Comentarios
- La tarea `Message` permite a los proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enviar mensajes a los registradores en etapas diferentes del proceso de compilación.
+
+ La tarea `Message` permite a los proyectos de MSBuild enviar mensajes a los registradores en etapas diferentes del proceso de compilación.
 
  Si el parámetro `Condition` se evalúa como `true`, se registrará el valor del parámetro `Text` y la compilación seguirá ejecutándose. Si no existe un parámetro `Condition`, se registra el texto del mensaje. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -46,6 +49,7 @@ Registra un mensaje durante una compilación.
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
+
  El siguiente ejemplo de código registra mensajes para todos los registradores registrados.
 
 ```xml
@@ -59,5 +63,6 @@ Registra un mensaje durante una compilación.
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)

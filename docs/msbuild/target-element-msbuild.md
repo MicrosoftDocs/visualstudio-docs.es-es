@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566428"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631983"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
-Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial.
+
+Contiene un conjunto de tareas para que MSBuild las ejecute de manera secuencial.
 
  \<Project> \<Target>
 
@@ -51,6 +52,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -72,7 +74,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 | Elemento | Descripción |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más tareas en un destino. |
+| [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea de MSBuild. Puede haber cero o más tareas en un destino. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contiene un conjunto de elementos `Property` definidos por el usuario. A partir de .NET Framework 3.5, un elemento `Target` puede contener elementos `PropertyGroup`. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contiene un conjunto de elementos `Item` definidos por el usuario. A partir de .NET Framework 3.5, un elemento `Target` puede contener elementos `ItemGroup`. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Hace que uno o varios destinos se ejecuten si el atributo `ContinueOnError` es ErrorAndStop (o `false`) para una tarea con error. Puede haber cero o más elementos `OnError` en un destino. Si hay elementos `OnError` presentes, deben ser los últimos elementos en el elemento `Target`.<br /><br /> Para información sobre el atributo `ContinueOnError`, consulte [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). |
@@ -81,10 +83,11 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
 ## <a name="remarks"></a>Comentarios
- El primer destino que se ejecutará se especifica en tiempo de ejecución. Los destinos pueden tener dependencias en otros destinos. Por ejemplo, un destino para la implementación depende de un destino para la compilación. El motor [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta las dependencias en el orden en que aparecen en el atributo `DependsOnTargets`, de izquierda a derecha. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).
+
+ El primer destino que se ejecutará se especifica en tiempo de ejecución. Los destinos pueden tener dependencias en otros destinos. Por ejemplo, un destino para la implementación depende de un destino para la compilación. El motor de MSBuild ejecuta las dependencias en el orden en que aparecen en el atributo `DependsOnTargets`, de izquierda a derecha. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).
 
  MSBuild depende del orden de importación y la última definición de un destino con un atributo `Name` específico es la definición usada.
 
@@ -101,6 +104,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
  Antes de MSBuild 4, cada vez que un `Target` incluía varias referencias al mismo elemento en su `Outputs`, esos elementos duplicados se registraban. En compilaciones muy grandes que tenían un gran número de salidas y muchas interdependencias del proyecto, esto hacía que se perdiera una gran cantidad de memoria porque los elementos duplicados no tenían ninguna utilidad. Cuando el atributo `KeepDuplicateOutputs` se establece en `true`, estos duplicados se registran.
 
 ## <a name="example"></a>Ejemplo
+
  En el siguiente ejemplo de código se muestra un elemento `Target` que ejecuta la tarea `Csc`.
 
 ```xml
@@ -118,5 +122,6 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 ```
 
 ## <a name="see-also"></a>Vea también
+
 - [Destinos](../msbuild/msbuild-targets.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

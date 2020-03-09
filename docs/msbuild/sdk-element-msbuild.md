@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595142"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632477"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
-Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Hace referencia a un SDK de un proyecto de MSBuild.
 
  \<Project> \<Sdk>
 
@@ -37,6 +38,7 @@ Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/in
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
+
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
@@ -47,15 +49,17 @@ Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/in
 |`Version`|Atributo opcional.<br /><br /> Versión del SDK del proyecto.|
 
 ### <a name="child-elements"></a>Elementos secundarios
+
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 | Elemento | Descripción |
 | - | - |
-| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto de MSBuild. |
 
 ## <a name="see-also"></a>Vea también
+
 - [Cómo: Hacer referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)
