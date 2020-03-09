@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592482"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410115"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: depurar una hoja de estilos XSLT
 
@@ -56,7 +56,7 @@ Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](
 
    Las ventanas **automático**, **variables locales**e **inspección 1** aparecen en la parte inferior de la ventana de Visual Studio. La ventana **variables locales** muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.
 
-## <a name="watch-window"></a>Ventana de inspección
+## <a name="watch-window"></a>Ventana Inspección
 
 Vamos a agregar dos variables a la ventana **inspección 1** para que podamos examinar sus valores a medida que se procesa el archivo de entrada. (También puede usar la ventana **variables locales** para examinar los valores si las variables que desea inspeccionar ya están allí).
 
@@ -96,7 +96,7 @@ Vamos a agregar dos variables a la ventana **inspección 1** para que podamos ex
 
    Dado que se ha satisfecho la condición de `xsl:if`, el tercer libro se agrega al archivo de salida *below-Average. XML* . Todos los libros del documento XML se han procesado y el depurador se detiene.
 
-## <a name="sample-files"></a>Archivos de muestra
+## <a name="sample-files"></a>Archivos de ejemplo
 
 El tutorial utiliza los dos siguientes archivos de ejemplo.
 
