@@ -1,0 +1,40 @@
+---
+title: Migración de análisis heredado (FxCop) al análisis de código fuente (analizadores de FxCop)
+description: Aprenda a analizar el código por primera vez o a migrar desde el análisis binario (FxCop) a la nueva forma de analizar el código administrado mediante el análisis de origen (analizadores de FxCop).
+ms.date: 03/06/2020
+ms.topic: conceptual
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
+helpviewer_keywords:
+- FxCop, migration
+- legacy analysis, migration
+- source code analysis, migration
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
+ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937564"
+---
+# <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migración de análisis heredado (FxCop) al análisis de código fuente (analizadores de FxCop)
+
+El análisis de código fuente por .NET Compiler Platform ("Roslyn") reemplaza el [análisis heredado](../code-quality/code-analysis-for-managed-code-overview.md) de código administrado. En el caso de las plantillas de proyecto más recientes, como .NET Core y proyectos de .NET Standard, el análisis heredado no está disponible.
+
+Muchas de las reglas de análisis heredado (FxCop) ya se han reescrito para los analizadores de FxCop, un conjunto de analizadores de código Roslyn. Los [analizadores de FxCop se instalan como un paquete NuGet](install-fxcop-analyzers.md#nuget-package) al que hace referencia el proyecto o la solución. Los analizadores de FxCop ejecutan análisis basados en código fuente durante la ejecución del compilador. Se notifican los resultados del analizador junto con los del compilador.
+
+Para obtener más información sobre las diferencias entre el análisis heredado y el análisis de código fuente, vea lo siguiente:
+
+- [Análisis de código fuente frente al análisis heredado](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+
+- [Preguntas más frecuentes sobre los analizadores de FxCop](../code-quality/fxcop-analyzers-faq.md)
+
+Para migrar al análisis de código fuente, [Instale los analizadores de FxCop](../code-quality/install-fxcop-analyzers.md). Al igual que las infracciones de las reglas de análisis heredados, las infracciones de análisis de código fuente se muestran en la ventana Lista de errores de Visual Studio. Además, las infracciones de análisis de código fuente también se muestran en el editor de código como *subrayados ondulados* bajo el código infractor. El color del subrayado ondulado depende del [valor de gravedad](../code-quality/use-roslyn-analyzers.md#rule-severity) de la regla. Para ver el estado de las reglas que se han trasladado a los nuevos Analizadores de FxCop, consulte [reglas de puerto y no trasladadas](../code-quality/fxcop-rule-port-status.md).
+
+Para obtener más información sobre cómo configurar los analizadores de FxCop:
+
+- Para configurar los analizadores de FxCop, vea [configurar analizadores de FxCop](../code-quality/configure-fxcop-analyzers.md).
+
+- Para obtener información acerca de cómo configurar analizadores mediante reglas predefinidas con EditorConfig o un archivo de conjunto de reglas, consulte [habilitación de una categoría de reglas](../code-quality/analyzer-rule-sets.md).
