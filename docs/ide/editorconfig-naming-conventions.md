@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588608"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
@@ -42,12 +42,12 @@ Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los símbolos)
-- namespace
+- espacio de nombres
 - clase
 - struct
 - interfaz
 - enum
-- propiedad
+- Propiedad
 - método
 - campo
 - evento
@@ -155,7 +155,7 @@ Los valores permitidos para esta propiedad son:
 > [!NOTE]
 > Debe especificar un estilo de uso de mayúsculas como parte del estilo de nomenclatura; en caso contrario, es posible que el estilo de nomenclatura se ignore.
 
-## <a name="severity"></a>Gravedad
+## <a name="severity"></a>severity
 
 Para describir la gravedad de una infracción de la regla de nomenclatura, especifique una propiedad con el formato siguiente:
 
@@ -163,9 +163,9 @@ Para describir la gravedad de una infracción de la regla de nomenclatura, espec
 
 En la tabla siguiente se muestran los valores de gravedad permitidos y lo que significan:
 
-Gravedad | Efecto
+severity | Efecto
 ------------ | -------------
-ninguna | La regla se suprime por completo.
+None | La regla se suprime por completo.
 refactoring o silent | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
 warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.

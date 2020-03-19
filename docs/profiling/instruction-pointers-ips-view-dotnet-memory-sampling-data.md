@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: aa90262081a693227b4594a4e5b7fe22c8fb1627
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778666"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Vista Punteros de instrucción (IP): datos de muestreo de memoria de .NET
@@ -23,16 +23,16 @@ La vista Punteros de instrucción para los datos de generación de perfiles de a
 
  Solo se muestran los valores exclusivos.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Description|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|El nombre del módulo que contiene la instrucción.|
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene la instrucción.|
-|**Archivo de código fuente**|El archivo de origen que contiene el nombre de la instrucción.|
+|**Archivo de origen**|El archivo de origen que contiene el nombre de la instrucción.|
 |**Nombre de la función**|Nombre de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
-|**Dirección de la función**|La dirección de inicio de la función.|
+|**Dirección de función**|La dirección de inicio de la función.|
 |**Línea de inicio del origen**|Número de línea inicial en el archivo de origen donde se realizó la asignación.|
 |**Línea de finalización del origen**|Número de línea final en el archivo de origen donde se realizó la asignación.|
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se realizó la asignación.|

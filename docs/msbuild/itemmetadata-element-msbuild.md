@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633621"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
@@ -41,7 +41,7 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|
+|Atributo|Description|
 |---------------|-----------------|
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
 
@@ -51,7 +51,7 @@ Contiene una clave de metadatos de elemento definida por el usuario que incluye 
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-|Elemento|Descripción|
+|Elemento|Description|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|Un elemento definido por el usuario que define las entradas para el proceso de compilación.|
 

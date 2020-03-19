@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Recopilar medidas de interacción de capas para proyectos de base de datos | Microsoft Docs'
+title: 'DA0030: Recopilar las medidas de interacción de capas para los proyectos de base de datos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,13 +14,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777481"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilar medidas de interacción de capas para proyectos de base de datos
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Recopilar las medidas de interacción de capas para los proyectos de base de datos
 
 |||
 |-|-|
@@ -41,6 +41,6 @@ ms.locfileid: "74777481"
  Las herramientas de generación de perfiles pueden recopilar información sobre el control de tiempo de las aplicaciones de varias capas que interactúan con un nivel de datos de Microsoft SQL Server mediante llamadas asincrónicas a los servicios ADO.NET. Debe habilitar explícitamente la generación de perfiles de interacción de capas. No está activada de forma predeterminada.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Esta regla solo tiene un fin informativo y es posible que no necesite acción correctora alguna.
+ Esta regla solo tiene un fin informativo y es posible que no necesite acción correctiva alguna.
 
  Para obtener información sobre cómo agregar datos de interacción de capas a los datos de generación de perfiles desde el IDE de Visual Studio, vea [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md). Para obtener información sobre cómo agregar datos de interacción de capas desde la línea de comandos, vea [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md).

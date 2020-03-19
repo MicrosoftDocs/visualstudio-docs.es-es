@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279298"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Cómo usar Google Test para C++ en Visual Studio

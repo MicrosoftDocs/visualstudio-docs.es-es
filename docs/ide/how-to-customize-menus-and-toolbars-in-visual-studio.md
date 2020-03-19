@@ -28,13 +28,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591104"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306828"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedimiento para personalizar menús y barras de herramientas en Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Personalización de menús y barras de herramientas en Visual Studio
 
 Puede personalizar Visual Studio no solo mediante la adición y la eliminación de barras de herramientas y menús de la barra de menús, sino mediante la adición y la eliminación de comandos de cualquier barra de herramientas o menú concreto.
 
@@ -79,7 +79,7 @@ Puede personalizar Visual Studio no solo mediante la adición y la eliminación 
         También puede arrastrar una barra de herramientas por el borde izquierdo para moverla a cualquier parte del área de acoplamiento principal.
 
         > [!NOTE]
-        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad del IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Personalizar un menú o una barra de herramientas</a>
 

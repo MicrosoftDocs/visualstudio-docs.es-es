@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772168"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.
 
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="in-this-section"></a>En esta sección
 - [Vista Resumen](../profiling/summary-view-sampling-data.md)

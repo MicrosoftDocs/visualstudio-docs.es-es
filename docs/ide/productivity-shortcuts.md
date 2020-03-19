@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585735"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Sugerencias de accesos directos para Visual Studio
 
 En Visual Studio se puede navegar más fácilmente gracias a los accesos directos que se indican en este artículo. Entre estos accesos directos se incluyen los accesos directos de teclado y mouse, además de texto que puede escribir para ayudar a realizar una tarea con mayor facilidad.
 
-Para obtener una lista completa de accesos directos de comandos, consulte [Accesos directos de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Para obtener una lista completa de los comandos que tienen métodos abreviados predeterminados, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Métodos abreviados de teclado comunes de Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts).
@@ -39,7 +39,7 @@ Para obtener una lista completa de accesos directos de comandos, consulte [Acces
 |Iniciar nueva instancia|**Win**+**Mayús**+**N**|
 |Cambiar entre ventanas|**Win**+**N**|
 
-## <a name="search"></a>Buscar
+## <a name="search"></a>Search
 
 |Tarea|Acceso directo|
 |-|-|

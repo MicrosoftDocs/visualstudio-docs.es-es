@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569249"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generación de una invalidación en Visual Studio
@@ -22,11 +22,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite generar inmediatamente el código para cualquier método que se puede invalidar en una clase base.
+**Qué:** Le permite generar inmediatamente el código para cualquier método que se puede invalidar en una clase base.
 
-**Cuándo:** Se quiere reemplazar un método de clase base y generar la firma de forma automática.
+**Cuándo:** Desea reemplazar un método de clase base y generar la firma automáticamente.
 
-**Por qué:** Se podría escribir la firma del método manualmente; pero esta característica generará la firma de forma automática.
+**Por qué:** Podría escribir la firma del método manualmente; sin embargo, esta característica generará la firma automáticamente.
 
 ## <a name="how-to"></a>Procedimiento
 

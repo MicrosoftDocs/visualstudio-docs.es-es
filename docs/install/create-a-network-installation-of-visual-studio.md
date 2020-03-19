@@ -16,11 +16,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115375"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307320"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creación de una instalación de red de Visual Studio
 

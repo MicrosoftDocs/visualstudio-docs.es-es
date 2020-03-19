@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569717"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
@@ -27,11 +27,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Permite convertir un campo en una propiedad y actualizar todos los usos de ese campo para usar la propiedad recién creada.
+**Qué:** Le permite convertir un campo en una propiedad y actualizar todos los usos de ese campo para utilizar la propiedad recién creada.
 
-**Cuándo:** Se quiere mover un campo a una propiedad y actualizar todas las referencias a ese campo.
+**Cuándo:** Desea mover un campo a una propiedad y actualizar todas las referencias a ese campo.
 
-**Por qué:** Se quiere proporcionar acceso a un campo a otras clases, pero no que esas clases tengan acceso directo.  Al encapsular el campo en una propiedad, puede escribir código para comprobar el valor que se está asignando, por ejemplo.
+**Por qué:** Desea proporcionar acceso de otras clases a un campo, pero no desea que esas clases tengan acceso directo.  Al encapsular el campo en una propiedad, puede escribir código para comprobar el valor que se está asignando, por ejemplo.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -54,7 +54,7 @@ Esta refactorización se aplica a lo siguiente:
       - Seleccione **Editar > Refactorizar > encapsular campo**.
       - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
 
-   Selección | Descripción
+   Selección | Description
    --------- | -----------
    **Encapsular campo (y usar propiedad)** | Encapsula el campo con una propiedad y actualiza todos los usos del campo para utilizar la propiedad generada
    **Encapsular campo (pero seguir usando el campo)** | Encapsula el campo con una propiedad, pero deja intactos todos los usos del campo

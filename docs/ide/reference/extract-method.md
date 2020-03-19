@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569704"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactorización de extracción de un método
@@ -28,11 +28,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Permite convertir un fragmento de código en su propio método.
+**Qué:** Le permite convertir un fragmento de código en su propio método.
 
-**Cuándo:** Se tiene un fragmento de código existente en algún método al que se debe llamar desde otro método.
+**Cuándo:** Tiene un fragmento de código existente en algún método que debe llamarse desde otro método.
 
-**Por qué:** Se podría copiar y pegar ese código, pero eso provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
+**Por qué:** Podría copiar y pegar ese código, pero esto provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
 
 ## <a name="how-to"></a>Procedimiento
 

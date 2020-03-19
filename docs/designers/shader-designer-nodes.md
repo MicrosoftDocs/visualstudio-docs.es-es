@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72634928"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
@@ -41,7 +41,7 @@ Dado que en última instancia el Diseñador de sombras debe generar código fuen
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|DESCRIPCIÓN|
+|Título|Description|
 |-----------|-----------------|
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|
 |[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|

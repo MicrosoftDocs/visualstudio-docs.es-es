@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75944238"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity

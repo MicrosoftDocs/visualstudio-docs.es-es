@@ -13,13 +13,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588933"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedimiento para especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -67,6 +67,6 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 ## <a name="see-also"></a>Vea también
 
 - [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

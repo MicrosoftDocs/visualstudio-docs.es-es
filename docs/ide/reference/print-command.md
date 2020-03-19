@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567845"
 ---
-# <a name="print-command"></a>Imprimir (Comando)
+# <a name="print-command"></a>Imprimir (comando)
 
 Evalúa una expresión o muestra el texto especificado.
 
@@ -37,7 +37,7 @@ Evalúa una expresión o muestra el texto especificado.
 
 Obligatorio. La expresión para evaluar o el texto para mostrar.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede usar el signo de interrogación (?) como un alias para este comando. Por lo tanto, por ejemplo, el comando
 
@@ -65,4 +65,4 @@ Ambas versiones de este comando devuelven el valor actual de la expresión `expA
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

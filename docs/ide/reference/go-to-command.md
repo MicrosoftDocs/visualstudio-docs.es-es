@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569210"
 ---
 # <a name="go-to-command"></a>Ir a (Comando)
@@ -33,7 +33,7 @@ Edit.GoTo [linenumber]
 `linenumber`\
 Opcional. Entero que representa el número de la línea a la que se debe ir.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 La numeración de líneas empieza por el uno. Si el valor de `linenumber` es menor que uno, se muestra la primera línea. Si el valor de `linenumber` es mayor que el número de la última línea, se muestra la última línea.
 
 Si no se especifica ningún valor para `linenumber`, se muestra el cuadro de diálogo **Ir a la línea**.
@@ -51,4 +51,4 @@ El alias de este comando es GoToLn.
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

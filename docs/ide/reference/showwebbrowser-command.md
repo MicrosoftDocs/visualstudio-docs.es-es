@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747711"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser (Comando)
@@ -44,7 +44,7 @@ Opcional. Especifica que la página aparece en una nueva instancia del explorado
 
 Opcional. Especifica que la página aparece en el explorador web predeterminado fuera del IDE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 El alias del comando **ShowWebBrowser** es **navigate** o **nav**.
 
 ## <a name="example"></a>Ejemplo
@@ -59,4 +59,4 @@ En el ejemplo siguiente se muestra la página principal de Microsoft Docs en un 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

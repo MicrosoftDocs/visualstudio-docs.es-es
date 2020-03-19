@@ -17,10 +17,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113848"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Directorio de componentes de Visual Studio Feedback Client
@@ -34,19 +34,19 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="feedback-client"></a>Feedback Client
 
-**ID:** Microsoft.VisualStudio.Workload.FeedbackClient
+**Id.:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descripción:** Feedback Client permite a los interesados proporcionar comentarios eficaces de Azure DevOps Services o Team Foundation Server.
+**Descripción**: Feedback Client permite a los interesados proporcionar comentarios eficaces de Azure DevOps Services o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | NOMBRE | Versión | Tipo de dependencia
+Id. de componente | Name | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Obligatorio
 
@@ -54,9 +54,9 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | NOMBRE | Versión
+Id. de componente | Name | Versión
 --- | --- | ---
-N/D | N/D | N/D
+no disponible | no disponible | no disponible
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

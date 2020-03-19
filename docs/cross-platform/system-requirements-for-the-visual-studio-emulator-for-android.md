@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272045"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos de sistema del Emulador de Visual Studio para Android
@@ -126,7 +126,7 @@ Una vez que el equipo y el BIOS están configurados para admitir Hyper-V, el pro
  Para agregarse a un grupo manualmente, abra el complemento Grupos y usuarios locales.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>No se admite la ejecución del emulador desde un VHD de arranque
- Si intenta ejecutar una aplicación en el emulador de Visual Studio para Android mientras se ejecuta Windows desde un VHD de arranque, el emulador tardará varios minutos en iniciarse o no se iniciará. Si el emulador no se puede iniciar, verá el mensaje siguiente:  Error al implementar la aplicación. Vuelva a intentarlo.
+ Si intenta ejecutar una aplicación en el emulador de Visual Studio para Android mientras se ejecuta Windows desde un VHD de arranque, el emulador tardará varios minutos en iniciarse o no se iniciará. Si el emulador no se puede iniciar, verá el mensaje siguiente: Error de implementación de la aplicación. Vuelva a intentarlo.
 
  Esta configuración no se admite. Para obtener información sobre problemas relacionados, vea [Solución de problemas del emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 

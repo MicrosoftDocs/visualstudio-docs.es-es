@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594869"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306846"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE de Visual Studio | C\#
 

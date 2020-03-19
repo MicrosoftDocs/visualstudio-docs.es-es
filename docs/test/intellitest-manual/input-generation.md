@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591610"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306996"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -36,7 +36,7 @@ El [solucionador de restricciones](#constraint-solver) de IntelliTest puede trat
 
 * Números [enteros](#integers-and-floats) y [flotantes](#integers-and-floats)
 * [Objects](#objects)
-* [Structs](#structs)
+* [Estructuras](#structs)
 * [Matrices](#arrays-and-strings) y [cadenas](#arrays-and-strings)
 
 IntelliTest filtra las entradas que infringen las hipótesis indicadas.
@@ -113,7 +113,7 @@ Los objetos ficticios parametrizados tienen dos modos de ejecución diferentes:
 
 Use [PexChoose](static-helper-classes.md#pexchoose) para obtener valores para los objetos ficticios parametrizados.
 
-## <a name="structs"></a>Estructuras
+## <a name="structs"></a>Structs
 
 El razonamiento de IntelliTest sobre los valores **struct** es similar a la manera en que trata a los [objetos](#objects).
 

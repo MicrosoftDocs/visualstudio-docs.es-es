@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77579527"
 ---
 # <a name="verifyfilehash-task"></a>Tarea VerifyFileHash
@@ -30,9 +30,9 @@ Esta tarea se agregó en la versión 15.8, pero requiere una [solución alternat
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `VerifyFileHash` .
+ En la siguiente tabla se describen los parámetros de la tarea `VerifyFileHash`.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`File`|Parámetro `String` requerido.<br /><br />Archivo al que se va a aplicar el algoritmo hash y se va a validar.|
 |`Hash`|Parámetro `String` requerido.<br /><br />Hash esperado del archivo.|

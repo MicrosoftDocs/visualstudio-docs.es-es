@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589752"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306798"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -116,7 +116,7 @@ Como ya se ha indicado, también puede abrir archivos de código sin un proyecto
 
 ::: moniker range="vs-2017"
 
-## <a name="create-a-temporary-project"></a>Creación de un proyecto temporal
+## <a name="create-a-temporary-project"></a>Crear un proyecto temporal
 
 (Solo C# y Visual Basic)
 

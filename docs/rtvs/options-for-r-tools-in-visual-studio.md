@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999034"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307068"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opciones de Herramientas de R para Visual Studio
 
@@ -28,10 +28,10 @@ Se obtiene acceso a la configuración a través del menú **Herramientas de R** 
 
 Las opciones y configuraciones específicas de R son accesibles mediante los métodos siguientes. Debe activar la casilla **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo **Opciones** para que aparezcan todas estas secciones.
 
-- Opciones de formato de código (vea [Opciones del editor](editing-r-code-in-visual-studio.md#editor-options)): menú **Herramientas** > **Opciones** y luego seleccione **Editor de texto** > **R** > **Formato**
+- Opciones de formato de código (vea [Opciones del editor](editing-r-code-in-visual-studio.md#editor-options): menú **Herramientas** > **Opciones** y luego seleccione **Editor de texto** > **R** > **Formato**
 - Opciones de linter (vea [Linting](linting-r-code.md)): menú **Herramientas** > **Opciones** y luego seleccione **Editor de texto** > **R** > **Lint**
-- Opciones avanzadas del editor ([descritas en este artículo](#text-editor--r--advanced-options)): menú **Herramientas** > **Opciones** y luego seleccione **Editor de texto** > **R** > **Avanzadas**
-- Opciones de comportamiento ([descritas en este artículo](#r-tools--advanced-options)): menú **Herramientas de R** > **Opciones** o **Herramientas** > **Opciones** y luego vaya a **Herramientas de R**.
+- Opciones avanzadas del editor ([descritas en este artículo](#text-editor--r--advanced-options)): menú **Herramientas** > **Opciones** y luego seleccione **Editor de texto** > **R** > **Opciones avanzadas**
+- Opciones de comportamiento ([descritas en este artículo](#r-tools--advanced-options)): menú **Herramientas de R** > **Opciones** o **Herramientas** > **Opciones** y luego desplácese a **Herramientas de R**.
 
 El comando **Herramientas de R** > **Configuración de ciencia de datos** también afecta a un número de valores distintos de forma general en Visual Studio. Este comando se describe en la siguiente sección.
 
@@ -67,28 +67,28 @@ En las secciones siguientes, se describen las distintas opciones disponibles en 
 
 Estas opciones controlan la forma en la que se tratan los valores en el [Explorador de variables](variable-explorer.md) y en las ventanas del depurador, como Inspección y Variables locales (vea [Depuración de R](debugging-r-in-visual-studio.md)).
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Evaluar enlaces activos | `True` | Cuando es `True`, garantiza que siempre vea el valor más actualizado al inspeccionar variables y propiedades. El riesgo es que evaluar las expresiones puede producir efectos secundarios, dependiendo de cómo se hayan implementado. |
 | Mostrar variables fijadas previamente mediante punto | `False` | Especifica si se muestran las variables fijadas previamente mediante `.`. |
 
 ### <a name="grid-view"></a>Vista de cuadrícula
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Evaluación dinámica | `False` | De forma predeterminada, la función `View(<expression>)` toma una instantánea de los datos como una trama de datos, lo que puede consumir una cantidad de memoria considerable con conjuntos de datos grandes. Establecer esta opción en `True` significa que la expresión se evalúa cuando la cuadrícula se actualiza para capturar solo los datos que se muestran. Pero si la expresión cambia, también cambian los datos, lo que es posible que no sea adecuado para las expresiones de canalización del tipo dplyr. |
 
 ### <a name="help"></a>Ayuda
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Explorador web mediante F1 | `Internal` | Controla la forma en que se muestra la ayuda al buscar un término con **Ctrl**+**F1**. Cuando se establece en `Internal`, la ayuda se representa dentro de una ventana de herramientas en Visual Studio. Cuando se establece en `External`, la ayuda aparece en el explorador web predeterminado. |
 | Cadena de búsqueda en la Web mediante F1 | `R site:stackoverflow.com` | Controla la forma en que se pasan los términos de búsqueda a su motor de búsqueda al presionar **Ctrl**+**F1** en un término en el editor. De forma predeterminada, la cadena es `R site:stackoverflow.com`, que anexa `R` al término de búsqueda. `site:stackoverflow.com` es una directiva para el motor de búsqueda que le indica que el ámbito de la búsqueda está en las páginas del dominio `stackoverflow.com`. |
-| Explorador de ayuda de R | `Automatic` | Controla la forma en la que se muestra la ayuda al buscar en la documentación de R con **F1**, **?** o **??**. Cuando se establece en `Automatic`, la ayuda se representa en la ventana adecuada. Por ejemplo, la ayuda HTML aparece dentro de una ventana de herramientas de Visual Studio, mientras que los documentos PDF aparecen en el programa PDF predeterminado. Cuando se establece en `External`, la ayuda se representa en el explorador web predeterminado. |
+| Explorador de ayuda de R | `Automatic` | Controla la forma en la que se muestra la ayuda al buscar en la documentación de R con **F1**, **?** o **??** . Cuando se establece en `Automatic`, la ayuda se representa en la ventana adecuada. Por ejemplo, la ayuda HTML aparece dentro de una ventana de herramientas de Visual Studio, mientras que los documentos PDF aparecen en el programa PDF predeterminado. Cuando se establece en `External`, la ayuda se representa en el explorador web predeterminado. |
 
 ### <a name="history"></a>Historial
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Guardar siempre el historial | `True` | Controla si RTVS escribe el historial de comandos en un archivo *.RHistory* en el directorio de trabajo cada vez que se cierra el proyecto. El historial se guarda incluso si no guarda el proyecto antes de salir. |
 | Restablecer filtro de búsqueda | `True` | Determina si la ventana Historial puede filtrar el historial de comandos para mostrar solo los comandos de la subcadena con los que coincide el término de filtro en el cuadro de diálogo Historial de R. Esta configuración determina si se debe restablecer el filtro de búsqueda del historial cada vez que ejecuta un comando nuevo o cambia a un nuevo proyecto, lo que desencadena la carga de otro archivo *.RHistory*. El valor predeterminado de `True` reduce la sorpresa cuando ejecuta un comando con un conjunto de filtros y se pregunta por qué este no aparece en el historial. |
@@ -96,32 +96,32 @@ Estas opciones controlan la forma en la que se tratan los valores en el [Explora
 
 ### <a name="html"></a>HTML
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Explorador de páginas HTML | `External` | Determina dónde se representa el contenido, como un trazado `ggvis` o una aplicación `shiny`. `Internal` muestra la salida HTML dentro de una ventana de herramientas de Visual Studio; `External` muestra la salida HTML en el explorador predeterminado. |
 
 ### <a name="logging"></a>Registro
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Registrar eventos | `Normal` | Controla el nivel de detalle del registro usado para el diagnóstico de RTVS. El valor predeterminado de `Normal` crea un archivo de registro en el directorio `TEMP`. Cuando se establece en `Traffic`, RTVS registra todos los comandos y respuestas en la sesión. Estos archivos de registro nunca salen del equipo, pero pueden resultar útiles para diagnosticar problemas en RTVS. |
 
 ### <a name="markdown"></a>Markdown
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Explorador de vista previa de Markdown | `External` | Determina dónde se muestra la salida HTML de RMarkdown. `Internal` muestra el documento HTML de RMarkdown dentro de una ventana de herramientas de Visual Studio; `External` muestra el HTML de RMarkdown mediante el explorador predeterminado. |
 
 ### <a name="r-engine"></a>Motor de R
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Página de códigos | `(OS Default)` | Establece la página de códigos (configuración regional) de R. De manera predeterminada, usa la configuración regional subyacente del sistema operativo. |
 | Reflejo de CRAN | `(Use .Rprofile)` | Establece el reflejo de CRAN predeterminado para las instalaciones de paquetes. El valor predeterminado de `Use .Rprofile` respeta la configuración de reflejo de CRAN en el archivo *.RProfile*. |
 
 ### <a name="workspace"></a>Área de trabajo
 
-| Opción | Valor predeterminado | Descripción |
+| Opción | Valor predeterminado | Description |
 | --- | --- | --- |
 | Cargar área de trabajo al abrir el proyecto | `No` | Si se establece en `Yes`, permite cargar datos de la sesión del archivo *.RData* en el entorno global al abrir el proyecto. |
 | Aviso para guardar el área de trabajo al restablecer | `Yes` | Si se establece en `No`, deshabilita el aviso para guardar el área de trabajo al hacer clic en el botón Restablecer en la ventana interactiva. |

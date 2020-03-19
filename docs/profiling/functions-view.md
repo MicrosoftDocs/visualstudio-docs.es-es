@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779199"
 ---
 # <a name="functions-view"></a>Vista Funciones
@@ -28,7 +28,7 @@ La vista Funciones muestra las funciones que se llaman durante la generación de
 
  De forma predeterminada, las funciones aparecen por nombre. Para ver las funciones por módulo, haga clic con el botón derecho en la ventana de la vista Funciones y seleccione **Mostrar en la vista Módulo**. Esto hará que se muestre la vista Módulo.
 
- Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y seleccione **Agregar o quitar columnas**. Además, puede ordenar los datos haciendo clic en el nombre de una columna. Para obtener más información, vea [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md).
+ Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y seleccione **Agregar o quitar columnas**. Además, puede ordenar los datos haciendo clic en el nombre de una columna. Para obtener más información, vea [Cómo: Personalizar una pestaña integrada](../profiling/how-to-customize-report-view-columns.md).
 
  Las columnas que están disponibles en la vista Funciones dependen del método de generación de perfiles (muestreo o instrumentación) usado para recopilar los datos y de si los datos de memoria de .NET se recopilaron en la ejecución de generación de perfiles.
 

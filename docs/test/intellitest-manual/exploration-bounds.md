@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78169422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307008"
 ---
 # <a name="exploration-bounds"></a>Límites de exploración
 

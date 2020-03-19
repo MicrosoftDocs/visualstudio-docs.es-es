@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588725"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento para cambiar las mayúsculas y minúsculas en el editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
 
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar el binario de inicio | Microsoft Docs
+title: 'Cómo: Especificar el binario de inicio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,13 +15,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778692"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificar el binario de inicio
+# <a name="how-to-specify-the-binary-to-start"></a>Cómo: Especificar el binario de inicio
 
 Para generar perfiles de binarios, como los archivos DLL, debe escribir información en el cuadro de diálogo **\<Destino > Páginas de propiedades**. Esta información indica dónde puede encontrar el proyecto DLL la aplicación que realiza la llamada.
 

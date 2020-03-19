@@ -24,15 +24,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114556"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 
-Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
+Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Compilar y limpiar proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -67,7 +67,7 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 2. En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.
 
@@ -117,7 +117,7 @@ Realice uno de estos pasos:
 - [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)
 - [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)
-- [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).
+- [Definición de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

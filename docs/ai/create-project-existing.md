@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0981a276a21e1b3f816c6a182df29f1c4adb0d1c
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72777453"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Crear un proyecto de IA a partir de código existente
@@ -38,7 +38,7 @@ Una vez que haya [instalado Visual Studio Tools para IA](installation.md), es f�
 5. Para ejecutar el programa, presione **Ctrl**+**F5** or seleccione **Depurar > Iniciar sin depurar**.
 
 > [!div class="nextstepaction"]
-> [Tutorial: Uso de Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+> [Tutorial: Trabajar con Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Vea también
 

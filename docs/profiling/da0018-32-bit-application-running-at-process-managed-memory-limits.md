@@ -14,13 +14,13 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74780070"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
 
 |||
 |-|-|
@@ -55,7 +55,7 @@ ms.locfileid: "74780070"
 
 - optimizar el uso de la aplicación de recursos de memoria administrada
 
-   O bien
+   o bien
 
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits
 
@@ -69,4 +69,4 @@ ms.locfileid: "74780070"
 
   Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.
 
-  Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctora alguna.
+  Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctiva alguna.

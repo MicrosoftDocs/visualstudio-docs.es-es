@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Comparar archivos de datos de rendimiento | Microsoft Docs
+title: 'Cómo: Comparar archivos de datos de rendimiento | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779004"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparar archivos de datos de rendimiento
+# <a name="how-to-compare-performance-data-files"></a>Cómo: Comparar archivos de datos de rendimiento
 Puede crear un informe o una vista de comparación ("Diff") para comparar los resultados de dos archivos de datos de generador de perfiles diferentes (.*vsp* o .*vsps*). La comparación muestra las diferencias, reducciones de rendimiento y mejoras producidas de una sesión de generación de perfiles a la otra.
 
  El informe Diff presenta una vista de tabla de los datos. La tabla presenta el delta o cambio de la línea base. Esto se calcula determinando la diferencia entre el valor anterior, el valor de la línea base y el valor de resultado del nuevo análisis.
 
- Las comparaciones de datos del generador de perfiles pueden basarse en las funciones en el código, los módulos de la aplicación, las líneas, los punteros de instrucción (IP) y los tipos.
+ Las comparaciones de datos del generador de perfiles pueden basarse en las funciones del código, los módulos de la aplicación, las líneas, los punteros de instrucciones (IP) y los tipos.
 
  Se puede establecer un umbral para reducir el ruido y filtrar cualquier dato que aparezca en la vista de tabla de las filas que no han cambiado en una cantidad especificada.
 

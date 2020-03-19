@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585540"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Uso de correcciones de compatibilidad (shim) para aislar la aplicación para pruebas unitarias
@@ -456,7 +456,7 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>simultaneidad
+## <a name="concurrency"></a>Simultaneidad
 
 Los tipos de corrección de compatibilidad se aplican a todos los subprocesos en AppDomain y no tienen afinidad de subprocesos. Este es un hecho importante si piensa usar un ejecutor de pruebas que admita la simultaneidad. Las pruebas que incluyen tipos de corrección de compatibilidad (shim) no se pueden ejecutar simultáneamente. El tiempo de ejecución de Fakes no impone esta propiedad.
 
@@ -524,5 +524,5 @@ Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos d
 ## <a name="see-also"></a>Vea también
 
 - [Aislar el código sometido a prueba con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost's blog: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Blog de Peter Provost: shims de Visual Studio 2012)
-- [Vídeo (1 hora 16 minutos): Testing Un-testable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
+- [Blog de Peter Provost sobre correcciones de compatibilidad (shim) de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)

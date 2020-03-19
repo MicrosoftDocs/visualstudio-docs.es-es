@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585631"
 ---
 # <a name="replace-in-files"></a>Reemplazar en archivos
@@ -36,7 +36,7 @@ Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en ar
 
 2. Pulse **Reemplazar en archivos**.
 
-   o
+   O bien
 
    Si la ventana **Buscar y reemplazar** ya está abierta, en la barra de herramientas, pulse **Reemplazar en archivos**.
 

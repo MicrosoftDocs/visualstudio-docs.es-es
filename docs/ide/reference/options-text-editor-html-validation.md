@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568287"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opciones, Editor, HTML (formularios Web Forms), validación
@@ -27,7 +27,7 @@ Use la página de opciones **Validación** para establecer preferencias en el mo
 
    Un esquema determina qué elementos, atributos y uso de mayúsculas son válidos en ese esquema. También determina las etiquetas y los atributos que están disponibles en IntelliSense.
 
-   Seleccione esta opción si desea que Visual Studio use el contenido de la declaración **<!DOCTYPE>** y el elemento **html** de la página para determinar el esquema. Por ejemplo, si selecciona esta opción y la página tiene la declaración `<!DOCTYPE html>`, Visual Studio usa el esquema HTML5. Sin embargo, si la etiqueta **html** tiene un atributo **xmlns**, como `<html>`, Visual Studio usa el esquema XHTML5.
+   Seleccione esta opción si desea que Visual Studio use el contenido de la declaración **<!DOCTYPE>** y el elemento **html** de la página para determinar el esquema. Por ejemplo, si selecciona esta opción y la página tiene la declaración `<!DOCTYPE html>`, Visual Studio usa el esquema HTML5. Sin embargo, si la etiqueta **html** tiene un atributo **xmlns**, como `<html xmlns="http://www.w3.org/1999/xhtml">`, Visual Studio usa el esquema XHTML5.
 
 - **Destino cuando no se encontró ningún DOCTYPE**
 

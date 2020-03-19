@@ -14,13 +14,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779329"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Conjunto de trabajo máximo en bytes para el proceso que se va a perfilar
 
 |||
 |-|-|

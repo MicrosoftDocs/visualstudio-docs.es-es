@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567221"
 ---
 # <a name="customize-startup"></a>Personalizar el inicio
@@ -32,7 +32,7 @@ También puede mostrar una página principal personalizada, que es una página X
 
 ## <a name="to-change-the-startup-item"></a>Para cambiar la pantalla de inicio
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y después elija **Inicio**.
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774085"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Vista Líneas: datos de muestreo de memoria de .NET
@@ -41,16 +41,16 @@ La vista Líneas para los datos de generación de perfiles de asignación de mem
 
   Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Description|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|Nombre del módulo que contiene la instrucción.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la instrucción.|
-|**Archivo de código fuente**|El archivo de origen que contiene el nombre de la instrucción.|
+|**Archivo de origen**|El archivo de origen que contiene el nombre de la instrucción.|
 |**Nombre de la función**|El nombre de la función que contiene la instrucción.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
-|**Dirección de la función**|La dirección de inicio de la función.|
+|**Dirección de función**|La dirección de inicio de la función.|
 |**Línea de inicio del origen**|Número de línea inicial en el archivo de origen donde se realizó la asignación.|
 |**Línea de finalización del origen**|Número de línea final en el archivo de origen donde se realizó la asignación.|
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se realizó la asignación.|

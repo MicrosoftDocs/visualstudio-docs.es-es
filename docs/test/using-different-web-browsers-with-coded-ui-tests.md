@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 104bdcc7a3f609456d521e710ac6ec2aeda2bb75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585579"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
@@ -38,14 +38,14 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>¿Cómo grabar y reproducir pruebas de IU codificadas en aplicaciones web mediante los exploradores web admitidos?
 
-**Grabación:** Debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para obtener más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+**Grabación**: debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para obtener más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.
 
-**Reproducción con Internet Explorer:** Cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutan en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
+**Reproducción con Internet Explorer:** cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutarán en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
 
-**Reproducción con exploradores web que no son Internet Explorer:** Para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
+**Reproducción con exploradores web que no son Internet Explorer:** para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
 
 Para reproducir pruebas en exploradores web que no son IE, debe instalar los **componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores**.
 
@@ -133,5 +133,5 @@ Para obtener más información, vea [Análisis de pruebas automatizadas de IU me
 ## <a name="see-also"></a>Vea también
 
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Analizar pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

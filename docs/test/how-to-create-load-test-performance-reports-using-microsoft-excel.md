@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589076"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedimiento para crear informes de rendimiento de pruebas de carga con Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel
 
 Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas.
 

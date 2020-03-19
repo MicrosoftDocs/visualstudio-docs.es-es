@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78169383"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento
 
 En este tutorial obtendrá información sobre cómo usar el diagrama de actividad del usuario virtual para aislar errores que se produjeron para los usuarios virtuales individuales que ejecutaron la prueba de carga.
 
@@ -89,7 +89,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
     - **Network**
 
-    - **Hora de inicio**
+    - **Start Time**
 
     - **Duración**
 

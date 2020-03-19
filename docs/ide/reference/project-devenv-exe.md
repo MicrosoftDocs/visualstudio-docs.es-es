@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567780"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -59,7 +59,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 - Se tiene que usar como parte de un comando `devenv`, `/Build`, `/Clean`, `/Rebuild` o `/Deploy`.
 

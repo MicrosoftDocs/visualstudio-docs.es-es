@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779264"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
@@ -71,7 +71,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ## <a name="function-performance-details"></a>Detalles de rendimiento de la función
  La tabla Detalles de rendimiento de la función proporciona datos de resumen de las métricas de rendimiento de la función seleccionada. Aparecen el valor y el porcentaje. Se especifican los datos de generación de perfiles que aparecen en el gráfico y la tabla de detalles en la lista **Métrica de rendimiento**.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Description|
 |------------|-----------------|
 |**Exclusivo**|- La cantidad de la métrica de rendimiento que se produjo en la ejecución del cuerpo de la función.|
 |**Llamadas entrantes**|- La cantidad de la métrica de rendimiento que se produjo en las funciones a las que llamó la función seleccionada.|

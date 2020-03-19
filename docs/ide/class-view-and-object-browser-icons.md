@@ -17,26 +17,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588400"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 
 En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.
 
-|Iconos|Descripción|Iconos|Descripción|
+|Icono|Description|Icono|Description|
 |----------|-----------------|----------|-----------------|
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif)|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif)|Método o función|
-|![Icon Clase](../ide/media/vxclass_icon.gif)|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
-|![Símbolo de la interfaz Lollipop](../ide/media/vxinterface_icon.gif)|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif)|Propiedad.|
+|![Icon Clase](../ide/media/vxclass_icon.gif)|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operator|
+|![Símbolo de la interfaz Lollipop](../ide/media/vxinterface_icon.gif)|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif)|Property|
 |![Símbolo de estructura](../ide/media/vxstruct_icon.gif)|Estructura|![Icono Campo](../ide/media/vxfield_icon.gif)|Campo o variable|
-|![Símbolo de unión](../ide/media/vxunion_icon.gif)|Unión|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
+|![Símbolo de unión](../ide/media/vxunion_icon.gif)|Union|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
 |![Símbolo de enumeración](../ide/media/vxenum_icon.gif)|Enum|![Icono Constante](../ide/media/vxconstant_icon.gif)|Constante|
 |![Símbolo de definición de tipo](../ide/media/vxtypedef_icon.gif)|TypeDef|![Símbolo de elemento de enumeración](../ide/media/vxenumitem_icon.gif)|Elemento de enumeración|
-|![Símbolo de módulo de Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Símbolo de elemento de mapa](../ide/media/vxmapitem_icon.gif)|Elemento de mapa|
+|![Símbolo de módulo de Visual Studio](../ide/media/vxmodule_icon.gif)|Módulo|![Símbolo de elemento de mapa](../ide/media/vxmapitem_icon.gif)|Elemento de mapa|
 |![Símbolo de método de extensión](../ide/media/extensionmethod.gif)|Método de extensión|![Símbolo de declaración](../ide/media/vxmethod_icon.gif)|Declaración externa|
 |![Símbolo de delegado](../ide/media/vxdelegate_icon.gif)|delegado|![Icono de error para Vista de clases y Examinador de objetos](../ide/media/erroricon.gif)|Error|
 |![Símbolo de excepción](../ide/media/vxexception_icon.gif)|Excepción|![Símbolo de plantilla](../ide/media/vxtemplate_icon.gif)|Plantilla|
@@ -47,7 +47,7 @@ En **Vista de clases** y **Examinador de objetos** se muestran iconos que repres
 
 Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.
 
-|Iconos|Descripción|
+|Icono|Description|
 |----------|-----------------|
 |\<Icono Sin señal>|Público. Accesible desde cualquier lugar en este componente y desde cualquier componente que haga referencia a él.|
 |![Símbolo Protected de señal](../ide/media/vxsignal_icon_key.gif)|Protegido. Accesible desde la clase o el tipo contenedor o los derivados de la clase o el tipo contenedor.|

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62819534"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizar archivos de proyecto creados por VSTU
@@ -70,4 +70,4 @@ public class ProjectFileHook
 ```
 
 ## <a name="see-also"></a>Vea también
- [Ejemplo: devolución de llamada de registro](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Ejemplo: Devolución de llamada de registro](../cross-platform/share-the-unity-log-callback-with-vstu.md)

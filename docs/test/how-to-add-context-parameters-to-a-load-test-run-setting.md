@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584483"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedimiento para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Cómo: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -36,9 +36,9 @@ Si asigna el valor del parámetro de contexto Webserver1 a `http://CorporateStag
 
 Además, si asigna valores diferentes a un parámetro de contexto usando el mismo nombre en parámetros de ejecución de pruebas de carga diferentes, puede ejecutar la prueba de carga usando entornos diferentes:
 
-- Parámetro de ejecución Servidor web de ensayo corporativo: El parámetro de contexto que se denomina `WebServer1=http://CorporateStagingWebServer`
+- Parámetro de ejecución Servidor web de ensayo corporativo: el parámetro de contexto se denomina `WebServer1=http://CorporateStagingWebServer`
 
-- Parámetro de ejecución Servidor web de producción corporativo: El parámetro de contexto que se denomina `WebServer1=http://CorporateProductionWebServer`
+- Parámetro de ejecución Servidor web de producción corporativo: el parámetro de contexto se denomina `WebServer1=http://CorporateProductionWebServer`
 
   **Cambiar el parámetro de ejecución desde la línea de comandos**
 

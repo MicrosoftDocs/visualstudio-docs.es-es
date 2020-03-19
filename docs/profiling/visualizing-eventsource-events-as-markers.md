@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422094"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811549"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 El visualizador de simultaneidad puede mostrar eventos EventSource como marcadores, y puede controlar cómo se muestran los marcadores. Para ver los marcadores de EventSource, registre el GUID del proveedor de ETW mediante el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). El visualizador de simultaneidad tiene convenciones predeterminadas para representar eventos de EventSource como [marcadores de marca](../profiling/flag-markers.md), [marcadores de intervalo](../profiling/span-markers.md) y [marcadores de mensaje](../profiling/message-markers.md). Puede personalizar cómo se muestran los eventos EventSource agregando campos personalizados a los eventos. Para obtener más información sobre los marcadores, consulte [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md). Para obtener más información sobre eventos EventSource, consulte <xref:System.Diagnostics.Tracing>.

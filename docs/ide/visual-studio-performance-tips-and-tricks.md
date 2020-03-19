@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944206"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307254"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -131,7 +131,7 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
 CLR usa un sistema de administración de memoria de recopilación de elementos no utilizados. En este sistema, a veces hay objetos que ya no son necesarios pero que usan memoria. Este estado es temporal; el recolector de elementos no utilizados libera esta memoria en función de su rendimiento y heurística de uso de recursos. Puede forzar a CLR a que recopile la memoria sin usar mediante una tecla de acceso rápido en Visual Studio. Si hay una cantidad considerable de elementos no utilizados en espera de recolección y se fuerza esta, debería ver cómo se reduce el uso de memoria del proceso *devenv.exe* en el **Administrador de tareas**. Es raro tener que recurrir a este método. Pero después de que se haya completado una operación costosa (por ejemplo, una compilación completa, una sesión de depuración o un evento de apertura de solución), puede ayudar a determinar cuánta memoria está usando realmente el proceso. Dado que Visual Studio es mixto (administrado y nativo), a veces es posible que el asignador nativo y el recolector de elementos no utilizados compitan por recursos de memoria limitados. En condiciones de elevado uso de memoria, puede ser útil forzar la ejecución del recolector de elementos no utilizados.
 
-Para forzar una recolección de elementos no utilizados, use la tecla de acceso rápido: **Ctrl**+**Alt**+**Mayús**+**F12**, **Ctrl**+**Alt**+**Mayús**+**F12** (presionar dos veces).
+Para forzar una recolección de elementos no utilizados, use este atajo de teclado: **CTRL**+**Alt**+**Mayús**+**F12**, **CTRL**+**Alt**+**Mayús**+**F12** (presione dos veces).
 
 Si la aplicación de la recolección de elementos no utilizados hace que el escenario funcione mejor, rellene un informe a través de la herramienta de comentarios de Visual Studio, ya que este comportamiento probablemente sea un error.
 

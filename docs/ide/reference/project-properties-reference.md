@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567728"
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
@@ -24,11 +24,11 @@ Obtenga más información sobre cómo configurar y personalizar propiedades del 
 
 ## <a name="project-properties-pages"></a>Páginas de propiedades del proyecto
 
-| Title | Descripción |
+| Título | Description |
 | - | - |
-| [Página de aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Página Aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Página de aplicación, Diseñador de proyectos (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
-| [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | Use este panel para especificar las instrucciones de configuración de compilación. |
+| [Página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | Use este panel para especificar las instrucciones de configuración de compilación. |
 | [Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md) | Use este panel para especificar las propiedades de configuración de compilación de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
 | [Página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) | Use esta página para especificar las propiedades de compilación de proyectos de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Página Depuración, Diseñador de proyectos](../../ide/reference/debug-page-project-designer.md) | Use esta página para especificar las propiedades de depuración de un proyecto. |

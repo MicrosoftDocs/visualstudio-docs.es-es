@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569509"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306792"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -22,13 +22,13 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite generar el código de inmediato para un nuevo constructor en una clase.
+**Qué:** Le permite generar el código de inmediato para un nuevo constructor en una clase.
 
-**Cuándo:** Se inserta un nuevo constructor y se quiere declarar adecuadamente de manera automática, o se modifica un constructor existente.
+**Cuándo:** Introduce un nuevo constructor y desea declararlo adecuadamente de manera automática, o modifica un constructor existente.
 
-**Por qué:** Se podría declarar el constructor antes de usarlo, aunque esta característica lo genera, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
+**Por qué:** Podría declarar el constructor antes de usarlo; sin embargo, esta característica lo generará, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
 
-**Cómo**: Hay varias maneras de generar un constructor:
+**Cómo:** Hay varias maneras de generar un constructor:
 
 - [Generación de constructor y selección de miembros](#pick)
 - [Generación de constructor a partir de campos seleccionados](#selection)

@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585761"
 ---
-# <a name="outlining"></a>esquematizar
+# <a name="outlining"></a>Esquematización
 
 Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más ( **+** ). Para expandir una región contraída hay que hacer clic en su signo más. Si prefiere usar el teclado, puede presionar **CTRL**+**M**+**M** para expandir o contraer. También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
 
@@ -51,7 +51,7 @@ El submenú **Edición** > **Esquematización** contiene los siguientes comandos
 |Contraer bloque:\<límite lógico>|(C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
 |Contraer todo el contenido de: \<estructuras lógicas>|(C++) Contrae todas las estructuras dentro de la función.|
 
-También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: Esquematización](../extensibility/walkthrough-outlining.md).
+También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: esquematización](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Vea también
 

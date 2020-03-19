@@ -14,13 +14,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 87e7c6b2d94602eca9e81098bb50bd0330b2bcd9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779394"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Alta frecuencia de paginación de memoria activa en el disco
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Tasas altas de memoria paginada activa en disco
 
 |||
 |-|-|
@@ -38,7 +38,7 @@ ms.locfileid: "74779394"
 ## <a name="rule-description"></a>Descripción de la regla
 
 > [!NOTE]
-> Esta regla informativa se desencadena cuando los niveles de paginación de memoria activa alcanzan una cantidad significativa. Cuando se produce un nivel extremadamente alto de paginación, se desencadena la regla de advertencia [DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
+> Esta regla informativa se desencadena cuando los niveles de paginación de memoria activa alcanzan una cantidad significativa. Cuando se produce un nivel extremadamente alto de paginación, se desencadena en su lugar la regla de advertencia [DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
 
  La paginación excesiva en el disco puede deberse a una escasez de memoria física. Si las operaciones de paginación dominan el uso del disco físico en que reside el archivo de paginación, podrían ralentizar otras operaciones de disco orientadas a aplicaciones en el mismo disco.
 

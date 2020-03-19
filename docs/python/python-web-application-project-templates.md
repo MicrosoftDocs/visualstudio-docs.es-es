@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917380"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307110"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -39,17 +39,17 @@ Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django
 
 Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto con más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo *requirements.txt*.
 
-| Plantilla | Descripción |
+| Plantilla | Description |
 | --- | --- |
 | **Proyecto web de Bottle en blanco** | Genera una aplicación mínima en *app.py* con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante una plantilla de página insertada muy breve. |
 | **Proyecto web de Django en blanco** | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Tutorial: Introducción al marco web de Django en Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado de seguir los pasos detallados en [Inicio rápido: Uso de Visual Studio para crear la primera aplicación web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
+| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo web
 
 Todas las plantillas **Proyecto web de \<marco>** crean una aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos (CSS, JavaScript y fuentes) y usa un mecanismo de plantilla de página adecuado para el marco.
 
-| Plantilla | Descripción |
+| Plantilla | Description |
 | --- | --- |
 | **Proyecto web de Bottle** | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta *static* y se controlan mediante código en *app.py*. El enrutamiento de las páginas individuales se encuentra en *routes.py* y la carpeta *views* contiene las plantillas de página.|
 | **Proyecto web de Django** | Genera un proyecto de Django y una aplicación de Django con tres páginas, compatibilidad con la autenticación y una base de datos de SQLite (pero no hay modelos de datos). Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Paso 4. Usar la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -60,7 +60,7 @@ Todas las plantillas **Proyecto web de \<marco>** crean una aplicación web de i
 
 Las plantillas **Proyecto web de \<marco> de sondeos** crean una aplicación web de inicio con la que los usuarios pueden votar sobre distintas preguntas de sondeo. Cada aplicación se basa en la estructura de las plantillas de proyecto **web** para usar una base de datos para administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo *samples.json*.
 
-| Plantilla | Descripción |
+| Plantilla | Description |
 | --- | --- |
 | **Proyecto web de Bottle de sondeos** | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código de almacén de datos se encuentran en la carpeta *models* y el archivo *settings.py* contiene código para determinar qué almacén de datos se usa. |
 | **Proyecto web de Django de sondeos** | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Paso 6. Usar la plantilla de proyecto web de Django de sondeos](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
@@ -122,7 +122,7 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [**Desde código de Python existente**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
-  - **Puerto del servidor**: 6543 (o lo que se haya configurado en los archivos *.ini*)
+  - **Puerto de servidor**: 6543 (o lo que se haya configurado en los archivos *.ini*)
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
   - Comando: `..\env\scripts\pserve-script.py` (script)

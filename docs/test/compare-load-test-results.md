@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589349"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias
@@ -41,9 +41,9 @@ Además, el archivo de hoja de cálculo se puede compartir con las partes intere
 
 |Tareas|Temas relacionados|
 |-|-|
-|**Creación de un informe de rendimiento y esfuerzo:** puede crear informes en las pruebas de rendimiento web y carga, mediante Microsoft Excel.|- [Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Creación manual de un informe de rendimiento y tensión con Microsoft Word:** puede crear informes manuales de las pruebas de carga y rendimiento web si copia y pega los datos de resumen, tablas y gráficos en un documento de Microsoft Word.|- [Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Crear un informe de rendimiento y esfuerzo:** puede crear informes en las pruebas de rendimiento web y carga, utilizando Microsoft Excel.|- [Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Crear manualmente un informe de rendimiento y tensión con Microsoft Word:** para crear informes de las pruebas de carga y rendimiento web, copie y pegue el resumen, la tabla y los datos del gráfico en un documento de Microsoft Word.|- [Cómo: Crear manualmente informes de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

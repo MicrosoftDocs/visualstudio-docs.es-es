@@ -1,5 +1,5 @@
 ---
-title: 'DA0001: Usar StringBuilder para las concatenaciones | Microsoft Docs'
+title: 'DA0001: Utilizar StringBuilder para las concatenaciones | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,13 +15,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779511"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Usar StringBuilder para las concatenaciones
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizar StringBuilder para las concatenaciones
 
 |||
 |-|-|

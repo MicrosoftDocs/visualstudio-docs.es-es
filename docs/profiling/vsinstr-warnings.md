@@ -16,16 +16,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779953"
 ---
 # <a name="vsinstr-warnings"></a>Advertencias de VSInstr
 En la tabla siguiente se muestran las advertencias emitidas por la herramienta *VSInstr.exe*. Para evitar que aparezca una advertencia, utilice su número con la opción NOWARN.
 
-|Número de advertencia|DESCRIPCIÓN|
+|Número de advertencia|Description|
 |--------------------|-----------------|
 |**VSP1026**|No se admite cobertura en bibliotecas que no hacen referencia a MSCorLib. Por lo general, es el caso de las bibliotecas portátiles.<br /><br />Es necesaria la opción de línea de comandos [/EnableCodeCoverage](../test/vstest-console-options.md) para .NET Core.|
 |**VSP2000**|Error interno No se puede obtener el nombre del archivo de módulo para este archivo ejecutable.|

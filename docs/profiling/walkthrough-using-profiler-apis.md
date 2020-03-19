@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779888"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
@@ -40,9 +40,9 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
 ## <a name="prerequisites"></a>Requisitos previos
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:
 
-- [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+- [Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 
-- [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
  De forma predeterminada, cuando se inicia el generador de perfiles, recopila datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.
 

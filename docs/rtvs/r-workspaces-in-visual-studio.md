@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998839"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307020"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Controlar dónde se ejecuta el código de R con áreas de trabajo
 
@@ -35,7 +35,7 @@ El comando **Herramientas de R** > **Sesión** > **Restablecer** y el botón Res
 
 La lista Áreas de trabajo locales muestra todos los intérpretes de R que se han instalado en el equipo.
 
-Cuando se inicia Visual Studio, este intenta detectar automáticamente todas las versiones de R que se han instalado al revisar la clave del Registro **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Dado que esta comprobación se realiza en el inicio, necesita reiniciar Visual Studio si instala un nuevo intérprete de R.
+Cuando se inicia Visual Studio, este intenta detectar automáticamente todas las versiones de R que se han instalado al revisar la clave del Registro **HKEY_LOCAL_MACHINE\Software\R-Core\\** . Dado que esta comprobación se realiza en el inicio, necesita reiniciar Visual Studio si instala un nuevo intérprete de R.
 
 RTVS podría no detectar un intérprete de R que se instale de forma no estándar (por ejemplo, al copiar simplemente archivos en una carpeta en lugar de ejecutar un instalador). En este caso, cree de forma manual un área de trabajo local de R de la siguiente forma:
 

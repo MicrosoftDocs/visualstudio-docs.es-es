@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68711261"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactorización de cambio de una firma de método
@@ -29,11 +29,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Permite quitar o cambiar el orden de los parámetros de un método.
+**Qué:** Le permite quitar o cambiar el orden de los parámetros de un método.
 
-**Cuándo:** Se quiere mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
+**Cuándo:** Desea mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
 
-**Por qué:** Se podría quitar y cambiar el orden de los parámetros manualmente y, después, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
+**Por qué:** Podría quitar y cambiar el orden de los parámetros manualmente y, a continuación, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -61,7 +61,7 @@ Esta refactorización se aplica a lo siguiente:
 
    ![Cuadro de diálogo para cambiar firma](media/changesignature-dialog-cs.png)
 
-   | Botón | DESCRIPCIÓN
+   | Botón | Description
    | ------ | ---
    | **Up/Down** | Mueve el parámetro seleccionado hacia arriba y hacia abajo en la lista.
    | **Remove** | Quita el parámetro seleccionado de la lista.

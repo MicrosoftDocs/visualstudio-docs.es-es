@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588803"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
@@ -88,4 +88,4 @@ En el *modo Mapa*, cuando hace clic en una ubicación de la barra de desplazamie
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Personalizar la barra de desplazamiento](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Personalización de la barra de desplazamiento](../how-to-track-your-code-by-customizing-the-scrollbar.md)

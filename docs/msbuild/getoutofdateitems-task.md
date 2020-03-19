@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272393"
 ---
 # <a name="getoutofdateitems-task"></a>Tarea GetOutOfDateItems
@@ -32,7 +32,7 @@ Tarea asistente que lee TLog antiguos, escribe TLog nuevos y devuelve un conjunt
 
 En la tabla siguiente se describen los parámetros de la tarea **GetOutOfDateItems**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parámetro **bool** opcional.|
 |**CommandMetadataName**|Parámetro **string** opcional.|

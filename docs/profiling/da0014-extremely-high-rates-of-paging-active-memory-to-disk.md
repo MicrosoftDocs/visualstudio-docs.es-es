@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e068771ba0fcc9b044ba7ff5243a75ceb3161e03
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779420"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco
@@ -42,7 +42,7 @@ ms.locfileid: "74779420"
  Con frecuencia, las páginas se leen desde el disco o se escriben en el disco en operaciones de paginación masivas. El número de páginas de salida por segundo es con frecuencia mucho mayor que el número de páginas escritas por segundo, por ejemplo. Esto se debe a que las páginas de salida por segundo también incluyen páginas de datos cambiados de la caché de archivos de sistema. Sin embargo, no siempre es fácil determinar qué proceso es directamente responsable de la paginación ni por qué.
 
 > [!NOTE]
-> Esta regla se desencadena cuando los niveles de paginación de memoria activa alcanzan una frecuencia muy alta. Cuando el nivel de paginación es considerable, pero no extremo, se desencadena la regla informativa [DA0017: Alta frecuencia de paginación de memoria activa en el disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) en su lugar.
+> Esta regla se desencadena cuando los niveles de paginación de memoria activa alcanzan una frecuencia muy alta. Cuando el nivel de paginación es significativo, pero no extremo, se desencadena en su lugar la regla informativa [DA0017: Alta frecuencia de paginación de memoria activa en el disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Haga doble clic en el mensaje de la ventana Lista de errores para navegar a la vista [Marcas](../profiling/marks-view.md). Busque la columna **Memory\Pages/sec**. Determine si hay fases concretas de ejecución del programa en que la actividad de E/S de paginación sea mayor que en otras.

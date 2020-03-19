@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565882"
 ---
 # <a name="shell-command"></a>Shell (Comando)
@@ -56,7 +56,7 @@ Opcional. Especifica el directorio de trabajo que se establecerá cuando se ejec
 
 Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Salida**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Los modificadores /dir /o /c tienen que especificarse inmediatamente después de `Tools.Shell`. Cualquier elemento especificado después del nombre del ejecutable se pasa como argumentos de línea de comandos.
 
 El alias predefinido `Shell` se puede usar en lugar de `Tools.Shell`.
@@ -90,4 +90,4 @@ El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la car
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Resultados (Ventana)](../../ide/reference/output-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588998"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procedimiento para seleccionar los parámetros de ejecución de una prueba de carga que se van a usar desde la línea de comandos
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Cómo: Seleccionar los parámetros de ejecución de una prueba de carga que se va a usar desde la línea de comandos
 
 Una prueba de carga puede incluir *parámetros de ejecución*, que son propiedades que afectan a la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**. Cuando se ejecuta una prueba de carga, utiliza el parámetro de ejecución que actualmente está definido como activo.
 

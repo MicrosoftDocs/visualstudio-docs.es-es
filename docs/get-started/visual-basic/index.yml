@@ -13,55 +13,49 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
   dev_langs:
-  - VB
-  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
-  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/19/2019
-  ms.locfileid: "74188616"
+    - VB
 landingContent:
-- title: Primeros pasos
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Instalar Visual Studio
-      url: ../../install/install-visual-studio.md
-  - linkListType: get-started
-    links:
-    - text: Iniciar una visita guiada
-      url: visual-studio-ide.md
-  - linkListType: quickstart
-    links:
-    - text: Creación de una aplicación de consola "Hola mundo"
-      url: ../../ide/quickstart-visual-basic-console.md
-- title: Creación de aplicaciones de Visual Basic
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Crear una aplicación de consola
-      url: tutorial-console.md
-    - text: Crear una aplicación de escritorio de Windows
-      url: tutorial-wpf.md
-    - text: Crear una aplicación de Windows Forms
-      url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
-    - text: Más información sobre el lenguaje de Visual Basic
-      url: /dotnet/visual-basic/developing-apps/programming/
-- title: Conocer Visual Studio
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Abrir código desde un repositorio
-      url: ../tutorial-open-project-from-repo.md
-    - text: Escribir y editar código
-      url: tutorial-editor.md
-    - text: Compilar y generar
-      url: ../../ide/compiling-and-building-in-visual-studio.md
-    - text: Depurar el código
-      url: ../csharp/tutorial-debugger.md
-    - text: Probar el código
-      url: ../../test/getting-started-with-unit-testing.md
-  - linkListType: how-to-guide
-    links:
-    - text: Acceder a datos
-      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+  - title: Primeros pasos
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Instalar Visual Studio
+            url: ../../install/install-visual-studio.md
+      - linkListType: get-started
+        links:
+          - text: Iniciar una visita guiada
+            url: visual-studio-ide.md
+      - linkListType: quickstart
+        links:
+          - text: Creación de una aplicación de consola "Hola mundo"
+            url: ../../ide/quickstart-visual-basic-console.md
+  - title: Creación de aplicaciones de Visual Basic
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Crear una aplicación de consola
+            url: tutorial-console.md
+          - text: Crear una aplicación de escritorio de Windows
+            url: tutorial-wpf.md
+          - text: Crear una aplicación de Windows Forms
+            url: ../../ide/create-a-visual-basic-winform-in-visual-studio.md
+          - text: Más información sobre el lenguaje de Visual Basic
+            url: /dotnet/visual-basic/developing-apps/programming/
+  - title: Conocer Visual Studio
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Abrir código desde un repositorio
+            url: ../tutorial-open-project-from-repo.md
+          - text: Escribir y editar código
+            url: tutorial-editor.md
+          - text: Compilar y generar
+            url: ../../ide/compiling-and-building-in-visual-studio.md
+          - text: Depurar el código
+            url: ../csharp/tutorial-debugger.md
+          - text: Probar el código
+            url: ../../test/getting-started-with-unit-testing.md
+      - linkListType: how-to-guide
+        links:
+          - text: Acceder a datos
+            url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

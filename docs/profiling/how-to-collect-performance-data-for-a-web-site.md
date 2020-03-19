@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para recopilar datos de rendimiento de un sitio web | Microsoft Docs
+title: Recopilación de datos de rendimiento de un sitio web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779043"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307188"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Recopilación de datos de rendimiento de un sitio web
 
 Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Puede generar perfiles de una aplicación web que esté abierta en Visual Studio o de un sitio web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se encuentre en el equipo local y que no esté abierto en el IDE de Visual Studio.
 
@@ -58,13 +58,13 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
     - Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .
 
-6. Haga clic en **Siguiente**.
+6. Haga clic en **Next**.
 
 7. En la cuarta página del asistente, haga clic en **Finalizar**.
 
 8. Se creará una sesión de rendimiento para la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.
 
-     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio
 
@@ -92,13 +92,13 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
     - Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript**.
 
-7. Haga clic en **Siguiente**.
+7. Haga clic en **Next**.
 
 8. En la cuarta página del asistente, haga clic en **Finalizar**.
 
 9. Se creará una sesión de rendimiento para la aplicación ASP.NET y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.
 
-     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vea también
 

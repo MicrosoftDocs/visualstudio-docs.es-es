@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566779"
 ---
 # <a name="settings-page-project-designer"></a>Página Configuración, Diseñador de proyectos
@@ -69,7 +69,7 @@ La **cuadrícula Configuración** se usa para configurar la configuración de la
 
 Escriba el nombre de la configuración de la aplicación en este campo.
 
-**Type**
+**ype**
 
 Use la lista desplegable para seleccionar un tipo de configuración. Los tipos utilizados con mayor frecuencia aparecen en la lista desplegable, por ejemplo, **Cadena**, **(Cadena de conexión)** y **System.Drawing.Font**. Puede elegir otro tipo si hace clic en **Examinar** al final de la lista y elige un tipo en el cuadro de diálogo **Select a Type** (Seleccionar un tipo). Después de elegir un tipo, este se agrega a los tipos comunes en la lista desplegable (solo para la solución actual).
 

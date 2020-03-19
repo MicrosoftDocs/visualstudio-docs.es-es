@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592274"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedimiento Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Cómo: Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
 
 En el **Diseñador de clases**, puede cambiar el modo en que el diagrama de clases representa una relación de asociación entre dos tipos de notación de miembro a notación de asociación y viceversa. Los miembros que se muestran como líneas de asociación a menudo ofrecen una visualización útil de cómo se relacionan los tipos.
 
@@ -44,7 +44,7 @@ En el diagrama de clases, haga clic con el botón derecho en la línea de asocia
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md)
+- [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
 - [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)
 - [Cómo: Visualizar una asociación de colecciones](how-to-visualize-a-collection-association.md)

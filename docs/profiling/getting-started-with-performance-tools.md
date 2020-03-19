@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779212"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
@@ -27,7 +27,7 @@ Visual Studio ofrece varias maneras de recopilar, ver y analizar los datos de re
 
 - Los informes de rendimiento proporcionan vistas de diferentes niveles de la estructura, las líneas de código fuente y los procesos de la aplicación. Los informes de rendimiento muestran datos de ejecución de la aplicación, desde las funciones que realizan llamadas y a las que se llama de una función específica en el árbol de llamadas de toda la aplicación.
 
-Para generar rápidamente el perfil de un proyecto, una aplicación o un sitio web de ASP.NET, seleccione **Depurar** > **Generador de perfiles de rendimiento** y elija **Asistente de rendimiento**. Para obtener instrucciones detalladas, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-cpu-sampling.md) y [Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Para generar rápidamente el perfil de un proyecto, una aplicación o un sitio web de ASP.NET, seleccione **Depurar** > **Generador de perfiles de rendimiento** y elija **Asistente de rendimiento**. Para obtener instrucciones detalladas, vea [Guía para principiantes para el muestreo de la CPU](../profiling/beginners-guide-to-cpu-sampling.md) y [Recopilación de datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
 Para especificar y configurar una sesión de generación de perfiles de rendimiento manualmente, seleccione **Depurar** > **Generador de perfiles** > **Explorador de rendimiento**. Use la carpeta **Destinos** y las páginas **Propiedades** en el **Explorador de rendimiento** para configurar las sesiones. Para obtener instrucciones, vea [Cómo: Crear manualmente sesiones de rendimiento](../profiling/how-to-manually-create-performance-sessions.md).
 

@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306960"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -91,7 +91,7 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
 El Explorador de proyectos de Unity muestra todos los archivos de proyecto y directorios de Unity de la misma manera que el Editor de Unity. La experiencia es diferente a navegar por los scripts de Unity con el Explorador de soluciones de Visual Studio normal, que los organiza en proyectos y una solución generada por Visual Studio.
 
-- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Método abreviado de teclado: **Alt**+**Mayús**+**E**
+- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Métodos abreviados de teclado: **Alt**+**Mayús**+**E**
 
    ![Ver la ventana Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 

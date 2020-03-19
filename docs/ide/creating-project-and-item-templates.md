@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589765"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306912"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -27,7 +27,7 @@ Al instalar Visual Studio, se instalan una serie de plantillas de proyecto y ele
 
 Estas plantillas proporcionan a los usuarios un punto de partida para empezar a crear proyectos o ampliar proyectos actuales. Las plantillas de proyecto proporcionan los archivos necesarios para un tipo de proyecto determinado, incluyen referencias de ensamblado estándar y establecen propiedades de proyecto y opciones de compilador predeterminadas. Las plantillas de elemento pueden abarcar desde un único archivo vacío con una determinada extensión de archivo hasta varios archivos de código fuente con código auxiliar, archivos de información de diseñador y recursos incrustados.
 
-Puede usar las plantillas instaladas, crear sus propias plantillas personalizadas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md).
+Puede usar las plantillas instaladas, crear sus propias plantillas personalizadas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenido de una plantilla
 
@@ -65,12 +65,12 @@ Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpe
 
 - Las plantillas de elementos aparecen en la ventana **Agregar nuevo elemento**.
 
-Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
 - [Template tags](template-tags.md) (Etiquetas de plantilla)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)

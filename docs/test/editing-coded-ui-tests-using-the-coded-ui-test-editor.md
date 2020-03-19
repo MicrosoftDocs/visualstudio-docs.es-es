@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589661"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU
 
-el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
+El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -195,4 +195,4 @@ Si necesita asegurarse de que un control determinado está disponible antes de r
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md)
-- [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

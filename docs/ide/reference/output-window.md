@@ -1,5 +1,5 @@
 ---
-title: Resultados (Ventana)
+title: Resultados (ventana)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567988"
 ---
 # <a name="output-window"></a>Resultados (ventana)
@@ -55,7 +55,7 @@ Borra todo el texto del panel **Salida**.
 
 Activa y desactiva la característica de ajuste automático de línea en el panel **Salida**. Cuando el ajuste automático de línea está activado, el texto de entradas largas que se extiende más allá del área de visualización se muestra en la línea siguiente.
 
-## <a name="output-pane"></a>Panel de salida
+## <a name="output-pane"></a>Panel de resultados
 
 El panel de **salida** seleccionado en la lista **Mostrar resultados desde** muestra la salida del origen indicado.
 

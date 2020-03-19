@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Limpiar una compilación | Microsoft Docs
+title: 'Cómo: Limpiar una compilación | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633920"
 ---
-# <a name="how-to-clean-a-build"></a>Procedimiento Limpiar una compilación
+# <a name="how-to-clean-a-build"></a>Cómo: Limpiar una compilación
 
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. 
 

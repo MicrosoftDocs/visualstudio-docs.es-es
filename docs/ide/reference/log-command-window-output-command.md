@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568664"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registrar resultados de la ventana Comandos
@@ -49,7 +49,7 @@ Opcional. Detiene el registro de la ventana **Comandos**.
 /overwrite\
 Opcional. Si el archivo especificado en el argumento `filename` coincide con un archivo existente, se sobrescribe.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no se especifica ningún archivo, se crea el archivo cmdline.log de forma predeterminada. De manera predeterminada, el alias de este comando es Log.
 

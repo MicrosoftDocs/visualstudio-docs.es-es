@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585592"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
@@ -32,7 +32,7 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 
 ## <a name="audio-control"></a>Control de audio
 
-**Control Audio**: Las acciones del control Audio de HTML5 se graban y se reproducen correctamente.
+**Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.
 
 ![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
 
@@ -47,15 +47,15 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 
 Vea [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obtener una lista de propiedades en las que puede agregar una aserción.
 
-**Propiedades de búsqueda**: Las propiedades de búsqueda de `HtmlAudio` son `Id`, `Name` y `Title`.
+**Propiedades de búsqueda:** las propiedades de búsqueda de `HtmlAudio` son `Id`, `Name` y `Title`.
 
-**Propiedades del filtro**: Las propiedades del filtro de `HtmlAudio` son `Src`, `Class`, `ControlDefinition` y `TagInstance`.
+**Propiedades del filtro:** las propiedades del filtro de `HtmlAudio` son `Src`, `Class`, `ControlDefinition` y `TagInstance`.
 
 > [!NOTE]
 > La cantidad de tiempo para buscar y pausar puede ser significativa. Durante la reproducción, la prueba de IU codificada esperará hasta el momento especificado en `(TimeSpan)` antes de pausar el audio. Si por alguna circunstancia especial transcurre el tiempo especificado antes de que se alcance el comando Pausa, se iniciará una excepción.
 
 ## <a name="video-control"></a>Control de vídeo
-**Control Vídeo**: Las acciones del control Vídeo de HTML5 se graban y se reproducen correctamente.
+**Control de vídeo:** las acciones en el control de vídeo de HTML5 se graban y se reproducen correctamente.
 
 ![Control Video de HTML5](../test/media/codedui_html5_video.png)
 
@@ -70,15 +70,15 @@ Vea [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEleme
 
 Vea [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obtener una lista de propiedades en las que puede agregar una aserción.
 
-**Propiedades de búsqueda**: Las propiedades de búsqueda de `HtmlVideo` son `Id`, `Name` y `Title`.
+**Propiedades de búsqueda:** las propiedades de búsqueda de `HtmlVideo` son `Id`, `Name` y `Title`.
 
-**Propiedades del filtro**: Las propiedades del filtro de `HtmlVideo` son `Src`, `Poster`, `Class`, `ControlDefinition` y `TagInstance`.
+**Propiedades del filtro:** las propiedades del filtro de `HtmlVideo` son `Src`, `Poster`, `Class`, `ControlDefinition` y `TagInstance`.
 
 > [!NOTE]
 > Si rebobina o avanza rápidamente el vídeo mediante etiquetas -30s o +30s, se agregarán para buscar en el momento adecuado.
 
 ## <a name="progressbar"></a>ProgressBar
-**ProgressBar (control)** : ProgressBar no es un control con el que se pueda interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control. Para obtener más información, vea [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**Control ProgressBar:** la barra de progreso es un control con el que no se puede interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control. Para obtener más información, vea [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
 ![Control ProgressBar de HTML5](../test/media/codedui_html5_progressbar.png)
 
@@ -87,4 +87,4 @@ Vea [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video
 - [HTML elements](https://developer.mozilla.org/docs/Web/HTML/Element) (Elementos HTML)
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

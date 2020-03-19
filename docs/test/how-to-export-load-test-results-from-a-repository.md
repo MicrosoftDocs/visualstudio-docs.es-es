@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f72dbd687bc9177cd4cfd36416acb23445d30c8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589050"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Procedimiento para exportar resultados de pruebas de carga desde un repositorio
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Cómo: Exportar resultados de pruebas de carga de un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -57,5 +57,5 @@ Puede administrar los resultados de pruebas de carga desde el Editor de pruebas 
 
 - [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Cómo: Eliminar resultados de pruebas de carga de un repositorio](../test/how-to-delete-load-test-results-from-a-repository.md)
-- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Cómo: Importar los resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Cómo: Importar resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)

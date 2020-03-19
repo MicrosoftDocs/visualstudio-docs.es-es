@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar el directorio de salida de compilación
+title: 'Cómo: Cambiar el directorio de salida de compilación'
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37342796f2dd94138136bb837cf6007d19d350c4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114257"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Procedimiento Cambiar el directorio de salida de compilación
+# <a name="how-to-change-the-build-output-directory"></a>Cómo: Cambiar el directorio de salida de compilación
 
 Puede especificar la ubicación de salida generada por el proyecto según la configuración (para depuración, versión o ambos).
 

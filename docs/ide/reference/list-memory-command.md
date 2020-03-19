@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568716"
 ---
 # <a name="list-memory-command"></a>Mostrar memoria (Comando)
@@ -53,7 +53,7 @@ Opcional. Tipo de formato para ver la información de memoria en la ventana **Me
 
 Opcional. Especifica el formato de visualización de números: con signo, sin signo o hexadecimal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando mediante los alias predefinidos con ciertos modificadores preestablecidos en los valores especificados. Por ejemplo, en lugar de especificar:
 
 ```cmd
@@ -88,8 +88,8 @@ A continuación se muestra una lista de los alias disponibles para el comando **
 ## <a name="see-also"></a>Vea también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
-- [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)
+- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

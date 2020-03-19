@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77578349"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador

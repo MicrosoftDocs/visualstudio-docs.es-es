@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772207"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
@@ -35,17 +35,17 @@ Estas opciones le permiten seleccionar el método de generación de perfiles, ag
 
 Para obtener más información, consulte:
 
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 
 [Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Esta configuración le permite seleccionar de una lista de binarios y especificar el orden de inicio de los binarios.
 
-Para obtener más información, vea [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md)
+Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
 
 ## <a name="sampling"></a>Muestreo
 
@@ -57,12 +57,12 @@ Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de m
 - Contadores de rendimiento: para problemas de rendimiento de bajo nivel
 - Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles
 
-Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="binary"></a>Binary
 Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de *My.DLL* y decide no reubicar el binario instrumentado, se crea una copia de seguridad de *My.DLL* denominada *My.Orig.DLL*. Posteriormente, se modifica *My.DLL* insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.
 
-Para obtener más información, vea [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md)
+Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
 
 ## <a name="tier-interactions"></a>Interacciones de capas
 
@@ -76,7 +76,7 @@ Para obtener más información, consulte:
 
 [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Cómo: Especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Especificación de comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Contadores de CPU
 
@@ -86,11 +86,11 @@ Para obtener más información, vea [Cómo: Recopilar datos de contadores de CPU
 
 ## <a name="windows-events"></a>Eventos de Windows
 
-Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos *VSPerfReport.exe*. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](/windows/win32/etw/about-event-tracing).
+Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción *de la herramienta de línea de comandos*VSPerfReport.exe`/calltrace`. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](/windows/win32/etw/about-event-tracing).
 
 Para obtener más información, consulte:
 
-[Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Recopilación de datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
@@ -106,9 +106,9 @@ Esta configuración permite agregar opciones al proceso de instrumentación medi
 
 Para obtener más información, consulte:
 
-[Cómo: Especificar runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Especificación de runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Cómo: Especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Vea también
 

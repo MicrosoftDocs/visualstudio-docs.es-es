@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568209"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios

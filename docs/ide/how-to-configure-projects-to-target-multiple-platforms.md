@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configuración de proyectos para destinarlos a varias plataformas
+title: 'Cómo: Configurar proyectos para múltiples plataformas de destino'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114451"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedimiento Configuración de proyectos para destinarlos a varias plataformas
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
 
 Visual Studio proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.
 
