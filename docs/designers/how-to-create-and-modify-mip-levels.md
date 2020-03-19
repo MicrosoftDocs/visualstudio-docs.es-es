@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear y modificar niveles de MIP
+title: 'Cómo: Crear y modificar niveles de MIP'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113279"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Procedimiento Crear y modificar niveles de MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.
 
 ## <a name="generating-mip-levels"></a>Generar niveles de MIP
@@ -43,4 +43,4 @@ Para lograr efectos especiales o aumentar la calidad de la imagen a niveles de d
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md)
+- [Cómo: crear una textura básica](../designers/how-to-create-a-basic-texture.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568016"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -41,7 +41,7 @@ devenv /Out FileName
 
   Obligatorio. Ruta de acceso y nombre del archivo que recibirá los errores al compilar un ejecutable.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si se especifica un nombre de archivo inexistente, el archivo se creará automáticamente. Si el archivo ya existe, los resultados se anexan al contenido existente del archivo.
 

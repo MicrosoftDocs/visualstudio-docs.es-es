@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926306"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de tiempo de bloqueo
@@ -31,7 +31,7 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.
 
-|Nombre de columna|DESCRIPCIÓN|
+|Nombre de columna|Description|
 |-----------------|-----------------|
 |**Name**|El nombre de la función para cada nivel de la pila de llamadas.|
 |**Instancias**|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|

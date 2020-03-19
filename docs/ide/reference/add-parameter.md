@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595870"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Incorporación de un parámetro a un método mediante una acción rápida
@@ -22,11 +22,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite agregar automáticamente un parámetro a un método, en función del uso.
+**Qué:** le permite agregar automáticamente un parámetro a un método, en función del uso.
 
-**Cuándo:** Necesita agregar un parámetro a un método y quiere declararlo de manera adecuada automáticamente.
+**Cuándo:** necesita agregar un parámetro a un nuevo método y desea declararlo de manera adecuada y automáticamente.
 
-**Por qué:** Podría agregar el parámetro a la declaración del método antes de llamarlo, aunque esta característica lo agrega automáticamente en función de una llamada al método.
+**Por qué:** pudo agregar el parámetro a la declaración del método antes de llamarlo, pero esta característica lo agrega automáticamente según una llamada al método.
 
 ## <a name="how-to-use-it"></a>Cómo se usa
 

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596416"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -35,7 +35,7 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 
 |Nombre de comando|Alias|Nombre completo|
 |------------------|-----------|-------------------|
-|[Imprimir (Comando)](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Comando Imprimir](../../ide/reference/print-command.md)|?|Debug.Print|
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|
 |[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
@@ -85,9 +85,9 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Ventana Memoria 3|Memory3|Debug.Memory3|
 |Ventana Memoria 4|Memory4|Debug.Memory4|
 |[Establecer base (comando)](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Marcador siguiente|NextBook|Edit.NextBookmark|
-|[Nuevo archivo (Comando)](../../ide/reference/new-file-command.md)|nf|File.NewFile|
+|[Comando Nuevo archivo](../../ide/reference/new-file-command.md)|nf|File.NewFile|
 |nuevo proyecto|np NewProj|File.NewProject|
 |[Abrir archivo (comando)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Abrir proyecto (Comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
@@ -116,14 +116,14 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Mosaico vertical|TileV|Window.TileVertically|
 |Alternar marcador|ToggleBook|Edit.ToggleBookmark|
 |Ventana Cuadro de herramientas|cuadro de herramientas|View.Toolbox|
-|[Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
+|[Comando Mostrar desensamblador](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Poner en mayúsculas|Ucase|Edit.MakeUppercase|
 |Undo|undo|Edit.Undo|
 |Quitar tabulación a la selección|Untabify|Edit.UntabifySelection|
 |Ventana Inspección|Watch|Debug.WatchN|
 |Alternar ajuste de línea|WordWrap|Edit.ToggleWordWrap|
 |Mostrar procesos|&#124;|Debug.ListProcesses|
-|[Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Vea también
 

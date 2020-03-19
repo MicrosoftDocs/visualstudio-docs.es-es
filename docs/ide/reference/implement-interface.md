@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595558"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
@@ -22,11 +22,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite generar inmediatamente el código necesario para implementar una interfaz.
+**Qué:** Le permite generar inmediatamente el código necesario para implementar una interfaz.
 
-**Cuándo:** Se quiere heredar de una interfaz.
+**Cuándo:** Desea heredar de una interfaz.
 
-**Por qué:** Se podrían implementar manualmente todas las interfaces una por una, pero esta característica generará de forma automática todas las firmas de método.
+**Por qué:** Podría implementar manualmente todas las interfaces una por una, sin embargo, esta característica generará automáticamente todas las firmas de método de manera automática.
 
 ## <a name="how-to"></a>Procedimiento
 

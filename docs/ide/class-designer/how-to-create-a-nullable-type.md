@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
+title: 'Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,13 +15,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592235"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL en el Diseñador de clases
 
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.
 

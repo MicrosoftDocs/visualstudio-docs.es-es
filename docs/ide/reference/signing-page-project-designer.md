@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597339"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
@@ -41,7 +41,7 @@ Para acceder a la página **Firma**, seleccione un nodo de proyecto en el **Expl
 
 Casilla **Firmar los manifiestos de ClickOnce**
 
-Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para obtener más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Botón **Seleccionar de almacén**
 
@@ -73,9 +73,9 @@ Especifica la dirección de un servidor que marca la firma con un tiempo. Si se 
 
 Casilla **Firmar el ensamblado**
 
-Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 Lista **Elija un archivo de clave de nombre seguro**
 

@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027581"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Ampliar una versión de prueba o actualizar una licencia
@@ -68,7 +68,7 @@ Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de
 
 Si su suscripción ha expirado y ya no tiene derechos de acceso a Visual Studio, debe renovar la suscripción o agregar otra cuenta que tenga una suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo** > **Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo. Para ello, seleccione el vínculo **Agregar una cuenta**.
 
-## <a name="get-support"></a>Obtener soporte técnico
+## <a name="get-support"></a>Obtención de soporte técnico
 
 En ocasiones, algo no sale según lo previsto. Si experimenta un problema, estas son algunas opciones de soporte técnico:
 

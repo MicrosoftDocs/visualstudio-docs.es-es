@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77274447"
 ---
 # <a name="how-to-test-a-c-dll"></a>Prueba de un archivo DLL de C++
@@ -26,7 +26,7 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
 ::: moniker range="vs-2019"
 
-Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Crear un proyecto nuevo** escriba "prueba" en el cuadro de búsqueda y después establezca el valor de **Lenguaje** en C++. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
+Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Crear un proyecto nuevo** escriba "prueba" en el cuadro de búsqueda y después establezca el valor de **Lenguaje** en C++. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
    ![Creación de un proyecto de prueba UWP nuevo](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo*
 
 ::: moniker range="vs-2017"
 
-Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
+Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo*
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Ten en cuenta lo siguiente:
+     Tenga en cuenta lo siguiente:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 

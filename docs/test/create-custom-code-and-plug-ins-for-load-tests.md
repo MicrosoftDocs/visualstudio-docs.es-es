@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590103"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Crear código y complementos personalizados para las pruebas de carga
@@ -28,10 +28,10 @@ Un complemento personalizado usa código que se escribe y adjunta a una prueba d
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Creación de un complemento personalizado para la prueba de carga**: se puede usar la API de prueba de carga para crear un complemento personalizado y agregar mayor funcionalidad a la prueba de carga.|-   [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md)<br />-   [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)|
-|**Creación de un complemento personalizado para la prueba de rendimiento web:** se puede usar la API pruebas de rendimiento web para crear un complemento personalizado y agregar mayor funcionalidad de prueba a la prueba de rendimiento web, incluso en el nivel de solicitud. También puede crear una prueba de servicio web.<br /><br /> Además, puede crear un complemento de grabadora web que puede modificar una prueba de rendimiento web una vez grabada, pero antes de aparecer en el Visor de resultados de pruebas de rendimiento web.|-   [Cómo: Usar la API de prueba de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Cómo: Crear un complemento de nivel de solicitud](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Cómo: Crear una prueba de servicio web](../test/how-to-create-a-web-service-test.md)<br />-   [Cómo: Crear un complemento de grabadora](../test/how-to-create-a-recorder-plug-in.md)|
-|**Adición de características de interfaz de usuario al Visor de resultados de pruebas de rendimiento web:** se pueden agregar más características de interfaz de usuario al Visor de resultados de pruebas de rendimiento web mediante un complemento de Visual Studio.|-   [Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Creación de un editor de cuerpo HTTP personalizado:** puede crear un editor personalizado para modificar las respuestas XML http de tipo binario o de cadena de un servicio web.|-   [Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Crear un complemento personalizado para la prueba de carga**: puede utilizar la API de prueba de carga para crear un complemento personalizado y agregar mayor funcionalidad a la prueba de carga.|-   [Cómo: Utilizar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md)<br />-   [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)|
+|**Crear un complemento personalizado para la prueba de rendimiento web:** puede utilizar la API de rendimiento web para crear un complemento personalizado y agregar mayor funcionalidad de prueba a la prueba de rendimiento web, incluso en el nivel de solicitud. También puede crear una prueba de servicio web.<br /><br /> Además, puede crear un complemento de grabadora web que puede modificar una prueba de rendimiento web una vez grabada, pero antes de aparecer en el Visor de resultados de pruebas de rendimiento web.|-   [Cómo: Usar la API de prueba de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Cómo: Crear un complemento de nivel de solicitud](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Cómo: Crear una prueba de servicios web](../test/how-to-create-a-web-service-test.md)<br />-   [Cómo: Crear un complemento de grabación](../test/how-to-create-a-recorder-plug-in.md)|
+|**Agregar características de UI al Visor de resultados de pruebas de rendimiento web:** puede agregar más características de UI usando un complemento de Visual Studio.|-   [Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Crear un editor del cuerpo HTTP personalizado:** puede crear un editor personalizado para modificar las respuestas de binarios o de cadenas http XML de un servicio web.|-   [Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de prueba de rendimiento web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Referencia
 
@@ -47,5 +47,5 @@ Un complemento personalizado usa código que se escribe y adjunta a una prueba d
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md)

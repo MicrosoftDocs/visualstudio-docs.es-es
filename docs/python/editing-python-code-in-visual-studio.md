@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73024720"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
 Dado que invierte mucho tiempo de desarrollo en el editor de código, la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación.
 
-El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
+El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3: Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
 
 Para obtener documentación general sobre la edición de código en Visual Studio, vea [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Vea también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
 
@@ -188,7 +188,7 @@ Puede ver los fragmentos de código disponibles en el **Administrador de fragmen
 
 ![Administrador de fragmentos de código en Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Para crear fragmentos de código propios, vea [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
+Para crear sus propios fragmentos de código, vea [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
 

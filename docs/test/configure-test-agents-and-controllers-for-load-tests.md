@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597352"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Información general sobre agentes y controladores de pruebas para ejecutar pruebas de carga
@@ -41,15 +41,15 @@ Esta arquitectura proporciona las siguientes ventajas:
 
    **Configuración local:**
 
-  - Equipo1: Visual Studio, controlador, agente.
+  - Máquina1: Visual Studio, controlador, agente.
 
     ![Equipo local que usa controlador y agente](./media/load-test-configa.png)
 
     **Configuración remota típica:**
 
-  - Equipo1 y 2: Visual Studio (varios evaluadores pueden usar el mismo controlador).
+  - Máquina1 y 2: Visual Studio (varios evaluadores pueden utilizar el mismo controlador).
 
-  - Máquina3: controlador (también puede tener agentes instalados).
+  - Máquina3: controlador (puede tener también agentes instalados).
 
   - Máquina4-n: agente o agentes asociados al controlador en Máquina3.
 

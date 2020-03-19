@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777862"
 ---
 # <a name="compare-performance-data-files"></a>Comparar archivos de datos de rendimiento
@@ -35,4 +35,4 @@ Puede establecerse un umbral para reducir el ruido y filtrar los datos en la vis
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)
+[Comparación de archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)

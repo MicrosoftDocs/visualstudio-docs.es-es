@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569668"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
@@ -53,20 +53,20 @@ Hay dos tipos de filtro en dos listas desplegables, una en el lado derecho de la
 
 Puede limitar el ámbito de búsqueda para analizar y actuar en grupos de errores. Por ejemplo, puede que desee centrarse en los errores más importantes que están impidiendo que un proyecto se compile. Entre las opciones para delimitar el ámbito se incluyen las siguientes:
 
-1. **Documentos abiertos**: Muestra los errores, las advertencias y los mensajes de los documentos abiertos.
+1. **Documentos abiertos**: muestra los errores, las advertencias y los mensajes de los documentos abiertos.
 
-2. **Proyecto actual**: Muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en **Explorador de soluciones**.
+2. **Proyecto actual**: muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en el **Explorador de soluciones**.
 
     > [!NOTE]
     > La lista filtrada de errores, advertencias y mensajes cambia si el proyecto del documento seleccionado actualmente es diferente al proyecto seleccionado en el **Explorador de soluciones**.
 
-3. **Documento actual**: Muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en **Editor** o **Explorador de soluciones**.
+3. **Documento actual**: muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en el **Editor** o en el **Explorador de soluciones**.
 
 Si se aplica un filtro actualmente al resultado de la búsqueda, el nombre del filtro aparece en la barra de título de **Lista de errores**. Los botones **Errores**, **Advertencias** y **Mensajes** muestran el número de elementos filtrados mostrados junto con el número total de elementos. Por ejemplo, los botones muestran "x de y errores". Si no se aplica ningún filtro, en la barra de título solo aparece "Lista de errores".
 
 La lista que se muestra en el lado derecho de la barra de herramientas especifica si se muestran los errores desde la compilación (los errores resultantes de una operación de compilación), desde IntelliSense (los errores detectados antes de ejecutar una compilación) o desde ambos.
 
-## <a name="search"></a>Buscar
+## <a name="search"></a>Search
 
 Use el cuadro de texto **Lista de errores de búsqueda** en el lado derecho de la barra de herramientas **Lista de errores** para buscar errores específicos en la lista de errores. Puede buscar en cualquier columna visible de la lista de errores. Los resultados de la búsqueda siempre se ordenan en función de la columna que tenga prioridad de ordenación en lugar de la consulta o el filtro aplicado. Si presiona la tecla **Esc** mientras el foco está en la **Lista de errores**, se borra el término de búsqueda y los resultados filtrados de la búsqueda. También puede hacer clic en la **X** que se muestra en el lado derecho del cuadro de texto para borrarlos.
 
@@ -76,7 +76,7 @@ Puede copiar la lista de errores y guardarla en un archivo. Seleccione los error
 
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
 
-Gravedad
+severity
 
 Muestra los diferentes tipos de entrada de la **Lista de errores** (**Error**, **Mensaje**, **Advertencia**, **Advertencia (activa)** y **Advertencia (inactiva)** .
 
@@ -84,7 +84,7 @@ Código
 
 Muestra el código del error.
 
-Descripción
+Description
 
 Muestra el texto de la entrada.
 

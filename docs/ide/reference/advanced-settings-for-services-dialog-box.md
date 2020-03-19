@@ -1,5 +1,5 @@
 ---
-title: Configuración avanzada de servicios (Cuadro de diálogo)
+title: Cuadro de diálogo Configuración avanzada de servicios
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585683"
 ---
-# <a name="advanced-settings-for-services-dialog-box"></a>Configuración avanzada de servicios (Cuadro de diálogo)
+# <a name="advanced-settings-for-services-dialog-box"></a>Cuadro de diálogo Configuración avanzada de servicios
 Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para configurar los servicios de aplicación cliente. Para obtener más información sobre la página **Servicios**, consulte [Página Servicios, Diseñador de proyectos](../../ide/reference/services-page-project-designer.md).
 
 Use el cuadro de diálogo **Configuración avanzada de servicios** de la página **Servicios** en el **Diseñador de proyectos** para configurar opciones avanzadas de servicios de aplicación cliente. Al usar estas opciones, puede invalidar algunos comportamientos de servicio de aplicación predeterminados para habilitar escenarios menos comunes. Para obtener más información, consulte [Servicios de aplicación cliente](/dotnet/framework/common-client-technologies/client-application-services).
@@ -40,7 +40,7 @@ Para acceder al cuadro de diálogo **Configuración avanzada de servicios**, sel
 
 Cuando se llama al método <xref:System.Web.Security.RolePrincipal.IsInRole%2A>, el proveedor de roles accede a los valores de rol almacenados en caché o al servicio de roles. Para borrar la caché y forzar este método para tener acceso al servicio remoto mediante programación, llame al método <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.
 
- **Usar cadena de conexión personalizada** Especifica si los proveedores de servicios de cliente usan un almacén de datos personalizado para la caché local. De manera predeterminada, los proveedores de servicios usarán el sistema de archivos local para la caché. Al seleccionar esta opción se rellenará de forma automática el cuadro de texto con una cadena de conexión predeterminada. Puede hacer que la cadena de conexión predeterminada genere y use de forma automática una base de datos de SQL Server Compact Edition, o puede especificar una cadena de conexión a una base de datos de SQL Server existente. Para obtener más información, vea [Cómo: Configurar servicios de aplicaciones cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Esta opción se encuentra desactivada de forma predeterminada.
+ **Usar cadena de conexión personalizada** Especifica si los proveedores de servicios de cliente usan un almacén de datos personalizado para la caché local. De manera predeterminada, los proveedores de servicios usarán el sistema de archivos local para la caché. Al seleccionar esta opción se rellenará de forma automática el cuadro de texto con una cadena de conexión predeterminada. Puede hacer que la cadena de conexión predeterminada genere y use de forma automática una base de datos de SQL Server Compact Edition, o puede especificar una cadena de conexión a una base de datos de SQL Server existente. Para obtener más información, consulte [Cómo: Configurar servicios de aplicaciones cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Esta opción se encuentra desactivada de forma predeterminada.
 
 ## <a name="see-also"></a>Vea también
 

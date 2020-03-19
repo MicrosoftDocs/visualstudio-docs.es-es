@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594206"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307284"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
@@ -200,7 +200,7 @@ El menú contextual de la ventana **Definición de código** puede contener los 
 |||
 |-|-|
 |**Acciones rápidas y refactorizaciones**||
-|**Cambiar nombre**||
+|**Cambio de nombre**||
 |**Generar gráfico de archivos de inclusión**||
 |**Ver la definición**||
 |**Ir a definición**|Busca la definición (o definiciones, en el caso de clases parciales) y las muestra en la ventana **Resultados de la búsqueda**.|

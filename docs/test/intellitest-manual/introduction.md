@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591608"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
@@ -103,7 +103,7 @@ En esta sección se describen las limitaciones de IntelliTest:
 * [Simultaneidad](#concurrency)
 * [Código .NET nativo](#native-code)
 * [Plataforma](#platform)
-* [Idioma](#language)
+* [Lenguaje](#language)
 * [Razonamiento simbólico](#symbolic-reasoning)
 * [Seguimientos de la pila](#incorrect-stack-traces)
 
@@ -124,7 +124,7 @@ A veces no es evidente cuando esto sucede. Considere los siguientes ejemplos:
 * La clase **System.Random** usa la hora del sistema actual para proporcionar valores aleatorios reales.
 * La clase **System.DateTime** proporciona la hora actual, que no está bajo el control de IntelliTest.
 
-### <a name="concurrency"></a>simultaneidad
+### <a name="concurrency"></a>Simultaneidad
 
 IntelliTest no controla los programas multiproceso.
 

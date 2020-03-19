@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62811187"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
@@ -23,7 +23,7 @@ El trazado es una parte fundamental del flujo de trabajo de un científico de da
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sobre el trazado con R (2m 02s). |
+| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sobre el trazado con R (2m 02s). |
 
 ## <a name="the-plot-window"></a>La ventana de trazado
 
@@ -45,7 +45,7 @@ Al cambiar el tamaño de una ventana de trazado siempre se vuelve a representar 
 
 La barra de herramientas de la ventana de trazado incluye comandos aplicables, la mayoría de los cuales también están disponibles en el menú **Herramientas de R** > **Trazados**.
 
-| Botón | Comando | Descripción |
+| Botón | Comando | Description |
 | --- | --- | --- |
 | ![Botón Nueva ventana de trazado](media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
 | ![Botón Activar ventana de trazado](media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |
@@ -85,7 +85,7 @@ La duración de su historial de trazado en todas las ventanas está vinculado a 
 
 Puede manipular ventanas de trazado mediante programación desde el código de R, con números de dispositivo para identificar las ventanas de trazado específicas.
 
-- `dev.list()`: Mostrar todos los dispositivos de gráficos en la sesión actual de R.
-- `dev.new()`: Crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).
-- `dev.set(<device number>)`: Establecer el dispositivo de gráficos activo.
-- `dev.off()`: Eliminar el dispositivo activo.
+- `dev.list()`: mostrar todos los dispositivos de gráficos en la sesión actual de R.
+- `dev.new()`: crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).
+- `dev.set(<device number>)`: establecer el dispositivo de gráficos activo.
+- `dev.off()`: eliminar el dispositivo activo.

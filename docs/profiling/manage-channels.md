@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435626"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64779242"
 ---
 # <a name="manage-channels"></a>Administrar canales
 En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar los canales de su proceso para así poder examinar modelos concretos. Para ordenar los canales, desplácelos hacia arriba o abajo y ocúltelos o muéstrelos.
@@ -25,7 +25,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="sort-by"></a>Ordenar por
  Puede utilizar el control de ordenación para ordenar los subprocesos según criterios diferentes, según el nivel de zoom actual. Esto es especialmente útil cuando se busca un patrón determinado. Puede ordenar por estos criterios:
 
-|Criterios|Definición|
+|Criterios|de esquema JSON|
 |--------------|----------------|
 |Hora de inicio|Ordena los subprocesos por sus horas de inicio. Este es el orden predeterminado.|
 |Hora de finalización|Ordena los subprocesos por sus horas de finalización.|
@@ -61,4 +61,4 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="see-also"></a>Vea también
 - [Control de zoom (vista Subprocesos)](../profiling/zoom-control-threads-view.md)
 - [Modo de medida activado/desactivado](../profiling/measure-mode-on-off.md)
-- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569288"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generación de invalidaciones de los métodos Equals y GetHashCode en Visual Studio
@@ -20,9 +20,9 @@ Esta generación de código se aplica a:
 
 - C#
 
-**Qué:** Permite generar métodos **Equals** y **GetHashCode**.
+**Qué:** Le permite generar métodos **Equals** y **GetHashCode**.
 
-**Cuándo:** Genera estas invalidaciones cuando se tiene un tipo que debe compararse por uno o más campos, en lugar de por la ubicación del objeto en la memoria.
+**Cuándo:** Genere estas invalidaciones cuando tenga un tipo que deba compararse por uno o más campos, en lugar de por la ubicación del objeto en la memoria.
 
 **Por qué:**
 

@@ -1,5 +1,5 @@
 ---
-title: Ajuste de línea
+title: ajuste de línea
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569080"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508945"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste de línea en el editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Cómo: Administrar el ajuste de línea en el editor
 
 Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuando se establece esta opción, se muestra la parte de una línea larga que se extiende más allá del ancho actual de la ventana del editor de código en la siguiente línea. Cuando se desactiva esta opción, por ejemplo, para facilitar el uso de numeración de líneas, puede desplazarse a la derecha para ver los finales de las líneas largas.
 
@@ -32,7 +32,7 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 
 2. En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.
 
-     o
+     O bien
 
      Pulse las opciones **General** en la subcarpeta del lenguaje en el que está programando.
 
@@ -50,7 +50,6 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 Si está familiarizado con el ajuste de línea en Notepad++, Sublime Text o Visual Studio Code, tenga en cuenta los siguientes problemas donde Visual Studio se comporta de forma diferente a otros editores:
 
 * [No se selecciona toda la línea al hacer triple clic](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [El comando Cortar no elimina toda la línea](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [Al presionar la tecla Fin dos veces no se mueve el cursor al final de la línea](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Vea también

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634063"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tarea)
@@ -31,9 +31,9 @@ Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y 
 
 ## <a name="parameters"></a>Parámetros
 
-En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .
+En la siguiente tabla se describen los parámetros de la tarea `GenerateResource`.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`AdditionalInputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene entradas adicionales a la comprobación de dependencias realizada por esta tarea. Por ejemplo, los archivos de proyecto y de destino normalmente deben ser entradas de modo que, si se actualizan, se vuelvan a generar todos los recursos.|
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Especifica una matriz de pares nombre-valor de variables de entorno que deben pasarse al ejecutable *resgen.exe* generado, además del bloque de entorno normal (o su invalidación selectiva).|
@@ -45,8 +45,8 @@ En la siguiente tabla se describen los parámetros de la tarea `GenerateResource
 |`OutputResources`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos *.resources*. Si no especifica un nombre, se usa el nombre del archivo de entrada coincidente, y el archivo *.resources* que se crea se coloca en el directorio que contiene el archivo de entrada.|
 |`PublicClass`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea una clase de recurso fuertemente tipada como clase pública.|
 |`References`|Parámetro `String[]` opcional.<br /><br /> Hace referencia a tipos de carga en archivos *.resx*. Los elementos de datos del archivo *.resx* pueden tener un tipo .NET. Cuando se lee el archivo *.resx*, se debe resolver esta situación. Normalmente, se resuelve correctamente utilizando reglas de carga de tipo estándar. Si proporciona los ensamblados en `References`, serán prioritarios.<br /><br /> Este parámetro no se requiere para los recursos fuertemente tipados.|
-|`SdkToolsPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a las herramientas del SDK, tales como *resgen.exe*.|
-|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que se van a convertir. Los elementos pasados a este parámetro deben tener una de las extensiones de archivo siguientes:<br /><br /> -    *.txt*: Especifica la extensión de un archivo de texto que se va a convertir. Los archivos de texto solo pueden contener recursos de cadena.<br />-    *.resx*: Especifica la extensión de un archivo de recursos basado en XML que se va a convertir.<br />-    *.restext*: Especifica el mismo formato que *.txt*. Esta extensión diferente es útil si desea distinguir claramente los archivos de origen que contienen recursos de otros archivos de origen en su proceso de compilación.<br />-    *.resources*: Especifica la extensión de un archivo de recursos que se va a convertir.|
+|`SdkToolsPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a las herramientas del SDK, como *resgen.exe*.|
+|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que se van a convertir. Los elementos pasados a este parámetro deben tener una de las extensiones de archivo siguientes:<br /><br /> -    *.txt*: especifica la extensión de un archivo de texto que se va a convertir. Los archivos de texto solo pueden contener recursos de cadena.<br />-    *.resx*: especifica la extensión de un archivo de recursos basado en XML que se va a convertir.<br />-    *.restext*: especifica el mismo formato que *.txt*. Esta extensión diferente es útil si desea distinguir claramente los archivos de origen que contienen recursos de otros archivos de origen en su proceso de compilación.<br />-    *.resources*: especifica la extensión de un archivo de recursos que se va a convertir.|
 |`StateFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica la ruta de acceso a un archivo de la caché opcional que se usa para acelerar la comprobación de dependencias de vínculos en archivos de entrada *.resx*.|
 |`StronglyTypedClassName`|Parámetro `String` opcional.<br /><br /> Especifica el nombre de clase para la clase de recurso fuertemente tipada. Si no se especifica este parámetro, se utiliza el nombre base del archivo de recursos.|
 |`StronglyTypedFilename`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre de archivo para el archivo de origen. Si no se especifica este parámetro, el nombre de la clase se utiliza como nombre de archivo base, y la extensión depende del lenguaje. Por ejemplo: *MyClass.cs*.|
@@ -62,7 +62,7 @@ En la siguiente tabla se describen los parámetros de la tarea `GenerateResource
 |`TrackFileAccess`|Parámetro <xref:System.Boolean> opcional.<br /><br /> Si es true, el directorio del archivo de entrada se utiliza para resolver rutas de acceso de archivo relativas.|
 |`UseSourcePath`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica que el directorio del archivo de entrada se utiliza para resolver las rutas de acceso de archivo relativas.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debido a que los archivos *.resx* pueden contener vínculos a otros archivos de recursos, no basta con comparar las marcas de tiempo de los archivos *.resx* y *.resources* para ver si las salidas están actualizadas. En su lugar, la tarea `GenerateResource` sigue los vínculos de los archivos *.resx* y comprueba también las marcas de tiempo de los archivos vinculados. Esto significa que, por lo general, no debe utilizar los atributos `Inputs` y `Outputs` en el destino que contiene la tarea `GenerateResource`, puesto que podría causar que se omitiera cuando tendría que ejecutarse.
 

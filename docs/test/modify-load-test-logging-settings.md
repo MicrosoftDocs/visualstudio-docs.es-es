@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566311"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar la configuración de registro de pruebas de carga
@@ -26,7 +26,7 @@ El *controlador de pruebas* pone en cola todos los datos de ejemplo de la prueba
 |Tarea|Temas relacionados|
 |-|-----------------------|
 |**Guardar los registros si se produce un error en una prueba de carga:** puede especificar si quiere guardar el registro de la prueba siempre que se produzca un error en una prueba de carga.|-   [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Especificar el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` en el archivo de configuración XML *QTCcontroller.exe.config*.|
+|**Establecer el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` en el archivo de configuración XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Vea también
 

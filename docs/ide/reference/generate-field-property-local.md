@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595610"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generación de un campo, una propiedad o una variable local en Visual Studio
@@ -22,11 +22,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Permite generar inmediatamente el código para un campo, una propiedad o una variable local no declarados previamente.
+**Qué:** Le permite generar inmediatamente el código para un campo, una propiedad o un valor local no declarados previamente.
 
-**Cuándo:** Se introduce un nuevo campo, propiedad o variable local mientras se escribe, y se quiere declarar de manera adecuada y de inmediato.
+**Cuándo:** Introduce un nuevo campo, propiedad o valor local mientras escribe y desea declararlo de manera adecuada y de inmediato.
 
-**Por qué:** Se podría declarar el campo, la propiedad o la variable local antes de usarlos; pero esta característica generará la declaración y el tipo de forma automática.
+**Por qué:** Podría declarar el campo, la propiedad o el valor local antes de usarlos; sin embargo, esta característica generará la declaración y el tipo automáticamente.
 
 ## <a name="how-to"></a>Procedimiento
 

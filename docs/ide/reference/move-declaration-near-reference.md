@@ -1,20 +1,21 @@
 ---
 title: Acercamiento de la declaración de variable a la referencia
-ms.date: 01/26/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35735009a5b813ca29159f276fe2d5abb734be0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585289"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093987"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactorización de acercamiento de la declaración a la referencia
 
@@ -22,11 +23,13 @@ Esta refactorización se aplica a lo siguiente:
 
 - C#
 
+- Visual Basic
+
 **Qué:** Permite acercar las declaraciones de variable a su uso.
 
-**Cuándo:** Hay declaraciones de variable que pueden estar en un ámbito más restringido.
+**Cuándo:** Tiene declaraciones de variable que pueden estar en un ámbito más restringido.
 
-**Por qué:** Se podría dejar tal cual, pero podría causar problemas de legibilidad u ocultar información. Se trata de una oportunidad de refactorización para mejorar la legibilidad.
+**Por qué:** : Puede dejarlo tal cual, pero podría causar problemas de legibilidad u ocultar información. Se trata de una oportunidad de refactorización para mejorar la legibilidad.
 
 ## <a name="how-to"></a>Procedimiento
 

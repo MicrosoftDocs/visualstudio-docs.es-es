@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748724"
 ---
 # <a name="list-call-stack-command"></a>Mostrar pila de llamadas (Comando)
@@ -85,7 +85,7 @@ Thread:`n`
 
 Opcional. Muestra la pila de llamadas del subproceso `n`. Si no se especifica ningún subproceso, muestra la pila de llamadas del subproceso actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Los cambios realizados en los argumentos o los modificadores se aplican a las invocaciones posteriores de este comando. Si emite el propio Debug.ListCallStackby, se muestra la pila de llamadas completa. Si, por ejemplo, especifica un índice,
 
 ```cmd
@@ -110,9 +110,9 @@ para establecer el marco de pila en el segundo marco.
 
 ## <a name="see-also"></a>Vea también
 
-- [Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)
-- [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)
+- [Comando Mostrar desensamblador](../../ide/reference/list-disassembly-command.md)
+- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exportar un sombreador
+title: 'Cómo: Exportar un sombreador'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589440"
 ---
-# <a name="how-to-export-a-shader"></a>Procedimiento Exportar un sombreador
+# <a name="how-to-export-a-shader"></a>Cómo: Exportar un sombreador
 
 En este artículo se muestra cómo usar el **Diseñador de sombras** para exportar un sombreador del lenguaje DGSL (Directed Graph Shader Language) para poder usarlo en la aplicación.
 
@@ -25,7 +25,7 @@ Después de crear a un sombreador mediante el Diseñador de sombras y antes de p
 
 1. En Visual Studio, abra un archivo **Gráfico de sombreador visual (.dgsl)** .
 
-     Si no tiene ningún archivo **Gráfico de sombreador visual (.dgsl)** para abrirlo, cree uno tal como se explica en [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
+     Si no tiene un archivo **Gráfico de sombreador visual (.dgsl)** para abrir, cree uno como se describe en [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
 
 2. En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
 
@@ -43,5 +43,5 @@ Después de crear a un sombreador mediante el Diseñador de sombras y antes de p
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Cómo: crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

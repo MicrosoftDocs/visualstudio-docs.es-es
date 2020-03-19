@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67587027"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Anidamiento de archivos en el Explorador de soluciones
@@ -28,11 +28,11 @@ El **Explorador de soluciones** anida archivos relacionados para ayudarle a orga
 
 Las opciones disponibles para el anidamiento de archivos no personalizado son:
 
-* **Desactivado**: Esta opción ofrece una lista plana de archivos sin anidamiento.
+* **Desactivado**: esta opción le ofrece una lista plana de archivos sin anidamiento.
 
-* **Predeterminado**: Esta opción proporciona el comportamiento de anidamiento de archivos predeterminado de **Explorador de soluciones**. Si no existe ninguna configuración para un tipo de proyecto determinado, los archivos del proyecto no se anidan. Si existen una configuración, por ejemplo, para un proyecto web, se aplica el anidamiento.
+* **Predeterminado**: esta opción proporciona el comportamiento de anidamiento de archivos predeterminado en el **Explorador de soluciones**. Si no existe ninguna configuración para un tipo de proyecto determinado, los archivos del proyecto no se anidan. Si existen una configuración, por ejemplo, para un proyecto web, se aplica el anidamiento.
 
-* **Web**: Esta opción aplica el comportamiento de anidamiento de archivos **Web** a todos los proyectos de la solución actual. Le animamos a que eche un vistazo a sus numerosas reglas y nos dé su opinión. En la captura de pantalla siguiente se resaltan algunos ejemplos del comportamiento de anidamiento de archivos que se obtiene con esta opción:
+* **Web**: esta opción aplica el comportamiento de anidamiento **Web** a todos los proyectos de la solución actual. Le animamos a que eche un vistazo a sus numerosas reglas y nos dé su opinión. En la captura de pantalla siguiente se resaltan algunos ejemplos del comportamiento de anidamiento de archivos que se obtiene con esta opción:
 
    ![Anidamiento de archivos en el Explorador de soluciones](media/filenesting.png)
 
@@ -48,17 +48,17 @@ Le recomendamos que use la configuración **Web** como punto de partida, ya que 
 
 Centrémonos en el nodo **dependentFileProviders** y en sus nodos secundarios. Cada nodo secundario es un tipo de regla que Visual Studio puede usar para anidar archivos. Por ejemplo, **tener el mismo nombre de archivo, pero otra extensión** es un tipo de regla. Las reglas disponibles son:
 
-* **extensionToExtension**: Use este tipo de regla para anidar *file.js* en *file.ts*
+* **extensionToExtension**: use este tipo de regla para anidar *file.js* en *file.ts*.
 
-* **fileSuffixToExtension**: Use este tipo de regla para anidar *file-vsdoc.js* en *file.js*
+* **fileSuffixToExtension**: use este tipo de regla para anidar *file-vsdoc.js* en *file.js*.
 
-* **addedExtension**: Use este tipo de regla para anidar *file.html.css* en *file.html*
+* **addedExtension**: use este tipo de regla para anidar *file.html.css* en *file.html*.
 
-* **pathSegment**: Use este tipo de regla para anidar *jquery.min.js* en *jquery.js*
+* **pathSegment**: use este tipo de regla para anidar *jquery.min.js* en *jquery.js*.
 
-* **allExtensions**: Use este tipo de regla para anidar *file.* * en *file.js*
+* **allExtensions**: use este tipo de regla para anidar *file.* * en *file.js*.
 
-* **fileToFile**: Use este tipo de regla para anidar *bower.json* en *.bowerrc*
+* **fileToFile**: use este tipo de regla para anidar *bower.json* en *.bowerrc*.
 
 ### <a name="the-extensiontoextension-provider"></a>Proveedor extensionToExtension
 
@@ -158,7 +158,7 @@ Puede crear una configuración específica de la solución y del proyecto desde 
 
 ![Reglas de anidamiento específicas de la solución y el proyecto](media/filenesting_solutionprojectspecific.png)
 
-La configuración específica de la solución y el proyecto se combina con la configuración activa de Visual Studio. Por ejemplo, puede tener un archivo de configuración específica del proyecto en blanco, y que los archivos se sigan anidando en el **Explorador de soluciones**. El comportamiento de anidamiento procede de la configuración específica de la solución o de la configuración de Visual Studio. La prioridad para la combinación de configuraciones de anidamiento de archivos es: Visual Studio > Solución > Proyecto.
+La configuración específica de la solución y el proyecto se combina con la configuración activa de Visual Studio. Por ejemplo, puede tener un archivo de configuración específica del proyecto en blanco, y que los archivos se sigan anidando en el **Explorador de soluciones**. El comportamiento de anidamiento procede de la configuración específica de la solución o de la configuración de Visual Studio. La prioridad para la combinación de las configuraciones de anidamiento de archivos es: Visual Studio > Soluciones > Proyecto.
 
 Puede indicar a Visual Studio que ignore la configuración específica de la solución y la específica del proyecto, incluso si los archivos existen en el disco. Para ello, habilite la opción **Ignorar la configuración de la solución y el proyecto** en **Herramientas** > **Opciones** > **ASP.NET Core** > **Anidamiento de archivos**.
 

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592066"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
@@ -178,7 +178,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 3. Para corregir este problema, puede hacer que la prueba de IU codificada espere a que el control CheckBox esté habilitado antes de continuar en esta línea utilizando el método `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > No modifique el archivo *UIMap.Designer.cs*. Cualquier cambio que se realice en el código se sobrescribirá cada vez que se genere código mediante **UIMap - Generador de pruebas automatizadas de IU**. Si tiene que modificar un método grabado, cópielo en el archivo *UIMap.cs* y cámbiele el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *CodedUITest.cs* y reemplazarlo por el nombre del método cuyo nombre ha cambiado.
+    > No modifique el archivo *UIMap.Designer.cs*. Cualquier cambio que se realice en el código se sobrescribirá cada vez que se genere código mediante **UIMap - Generador de pruebas automatizadas de IU**. Si tiene que modificar un método grabado, cópielo en el archivo *UIMap.cs* y cámbiele el nombre. El archivo *UIMap.cs* se puede utilizar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *CodedUITest.cs* y reemplazarlo por el nombre del método cuyo nombre ha cambiado.
 
 4. En el **Explorador de soluciones**, busque *UIMap.uitest* en el proyecto de prueba automatizada de IU.
 
@@ -340,5 +340,5 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 ## <a name="see-also"></a>Vea también
 
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189540"
 ---
 # <a name="add-tags-to-project-templates"></a>Adición de etiquetas en plantillas de proyecto
@@ -56,7 +56,7 @@ Es posible que quiera agregar o editar etiquetas en el archivo XML *.vstemplate*
 
 Puede usar los siguientes atributos opcionales en escenarios de usuario avanzado:
 
-|Atributo|DESCRIPCIÓN|
+|Atributo|Description|
 |---------------|-----------------|
 |`Package`|Un identificador GUID que especifica el id. paquete de Visual Studio.|
 |`ID`|Especifica el identificador de recurso de Visual Studio.|
@@ -77,7 +77,7 @@ Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-|Elemento|DESCRIPCIÓN|
+|Elemento|Description|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Obligatorio) Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|
 

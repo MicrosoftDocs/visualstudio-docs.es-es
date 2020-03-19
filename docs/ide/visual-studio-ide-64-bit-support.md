@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594141"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
@@ -28,7 +28,7 @@ En [Implementar los requisitos previos para las aplicaciones de 64 bits](../depl
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
 
-[Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
+En [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
 
 ## <a name="debug-a-64-bit-application"></a>Depurar una aplicación de 64 bits
 

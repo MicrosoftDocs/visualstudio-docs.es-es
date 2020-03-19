@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567923"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
@@ -73,7 +73,7 @@ Inserta en el cuadro de edición de la línea de comandos la macro seleccionada 
 
 Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.
 
-|Macro|Descripción|
+|Macro|Description|
 |-----------|-----------------|
 |`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|
 |`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|
@@ -89,7 +89,7 @@ Puede usar cualquiera de estas macros para especificar las ubicaciones de los ar
 |`$(SolutionName)`|El nombre base de la solución.|
 |`$(SolutionFileName)`|El nombre de archivo de la solución (definido como nombre base y extensión de archivo).|
 |`$(SolutionExt)`|La extensión de archivo de la solución. Incluye el "." antes de la extensión de archivo.|
-|`$(TargetDir)`|El directorio del archivo de salida principal de la compilación (definido como unidad y ruta de acceso). Incluye la barra diagonal inversa final "\\".|
+|`$(TargetDir)`|El directorio del archivo de salida principal de la compilación (definido como unidad y ruta de acceso). Incluye la barra diagonal inversa final “\\”.|
 |`$(TargetPath)`|El nombre de ruta de acceso absoluta del archivo de salida principal de la compilación (definido como unidad, ruta de acceso, nombre base y extensión de archivo).|
 |`$(TargetName)`|El nombre base del archivo de salida principal de la compilación.|
 |`$(TargetFileName)`|El nombre de archivo del archivo de salida principal de la generación (definido como nombre base y extensión de archivo).|
@@ -98,6 +98,6 @@ Puede usar cualquiera de estas macros para especificar las ubicaciones de los ar
 ## <a name="see-also"></a>Vea también
 
 - [Especificar eventos de compilación personalizados en Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
-- [Página Eventos de compilación, (Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
+- [Página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
 - [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)

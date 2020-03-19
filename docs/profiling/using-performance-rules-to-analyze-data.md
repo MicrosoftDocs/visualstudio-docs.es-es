@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778068"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Usar reglas de rendimiento para el análisis de datos
@@ -23,11 +23,11 @@ Las advertencias de rendimiento de las herramientas de generación de perfiles d
 > Las advertencias de rendimiento del generador de perfiles son generadas por el análisis dinámico de ejecución de programas y son independientes de las advertencias del análisis de código. El análisis de código también puede generar advertencias de rendimiento para código administrado en función del análisis estático del código fuente. Para obtener más información, vea [Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md) y [Advertencias de rendimiento](../code-quality/performance-warnings.md).
 
 ## <a name="in-this-section"></a>En esta sección
-- [Cómo: Ver advertencias de rendimiento](../profiling/how-to-view-performance-warnings.md)
+- [Visualización de advertencias de rendimiento](../profiling/how-to-view-performance-warnings.md)
 
  Proporciona información sobre cómo abrir la ventana **Lista de errores** para ver las advertencias de rendimiento del generador de perfiles.
 
-- [Cómo: Configurar las reglas de rendimiento](../profiling/how-to-configure-performance-rules.md)
+- [Configuración de las reglas de rendimiento](../profiling/how-to-configure-performance-rules.md)
 
  Proporciona información sobre cómo activar o desactivar las advertencias de rendimiento individuales.
 

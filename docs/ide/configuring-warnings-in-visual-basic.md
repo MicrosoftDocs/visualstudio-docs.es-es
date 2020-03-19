@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114732"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuración de advertencias in Visual Basic
@@ -50,7 +50,7 @@ La lista de advertencias contiene los números de identificación de error de la
 ## <a name="examples"></a>Ejemplos
 En esta tabla de ejemplos de argumentos de línea de comandos se describe qué hace cada argumento.
 
-|Argumento|Descripción|
+|Argumento|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|Especifica que todas las advertencias se deben tratar como errores.|
 |`vbc /warnaserror:42024`|Especifica que la advertencia 42024 se debe tratar como un error.|
@@ -65,57 +65,57 @@ Esta es una lista de advertencias que es posible que quiera tratar como errores.
 ### <a name="implicit-conversion-warning"></a>Advertencia de conversión implícita
 Se genera para instancias de conversión implícita. No incluyen las conversiones implícitas de un tipo numérico intrínseco a una cadena cuando se usa el operador `&`. De manera predeterminada, está desactivada para nuevos proyectos.
 
-Identificador: 42016
+Id.: 42016
 
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Advertencia de resolución de sobrecarga e invocación de método enlazada en tiempo de ejecución
 Se genera para instancias de enlace en tiempo de ejecución. De manera predeterminada, está desactivada para nuevos proyectos.
 
-Identificador: 42017
+Id.: 42017
 
 ### <a name="operands-of-type-object-warnings"></a>Advertencias de operandos de tipo Object
 Se generan cuando se producen operandos de tipo `Object` que crearían un error con **Option Strict On**. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42018 y 42019
+Id.: 42018 y 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>Advertencias de declaraciones que requieren la cláusula "As"
 Se generan cuando una declaración de propiedad, función o variable a la que le falta una cláusula `As` habría creado un error con **Option Strict On**. Las variables que no tienen un tipo asignado se supone que son de tipo `Object`. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42020 (declaración de variable), 42021 (declaración de función) y 42022 (declaración de propiedad).
+Id.: 42020 (declaración de variable), 42021 (declaración de función) y 42022 (declaración de propiedad).
 
 ### <a name="possible-null-reference-exception-warnings"></a>Advertencias de excepción de referencia nula posible
 Se generan cuando se usa una variable antes de que se le asigne un valor. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42104, 42030
+Id.: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Advertencia de variable local sin usar
 Se genera cuando se declara una variable local pero nunca se hace referencia a ella. De manera predeterminada, está activada.
 
-Identificador: 42024
+Id.: 42024
 
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>Advertencia de acceso de miembro compartido mediante una variable de instancia
 Se genera cuando el acceso a un miembro compartido mediante una instancia puede tener efectos secundarios o cuando el acceso a un miembro compartido mediante una variable de instancia no es el lado derecho de una expresión o se pasa como un parámetro. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42025
+Id.: 42025
 
 ### <a name="recursive-operator-or-property-access-warnings"></a>Advertencias de acceso a la propiedad u operador de forma recursiva
 Se genera cuando el cuerpo de una rutina usa el mismo operador o propiedad en que se define. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42004 (operador), 42026 (propiedad)
+Id.: 42004 (operador), 42026 (propiedad)
 
 ### <a name="function-or-operator-without-return-value-warning"></a>Advertencia de función u operador sin valor devuelto
 Se genera cuando la función u operador no tiene un valor devuelto especificado. Esto incluye la omisión de un `Set` a la variable local implícita con el mismo nombre que la función. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42105 (función), 42016 (operador)
+Id.: 42105 (función), 42016 (operador)
 
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Advertencia de modificador Overloads usado en un módulo
 Se genera cuando `Overloads` se usa en un `Module`. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42028
+Id.: 42028
 
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Advertencias de bloques Catch duplicados o superpuestos
 Se genera cuando un bloque `Catch` nunca se alcanza debido a su relación con otros bloques `Catch` que se han definido. De manera predeterminada, está activada para nuevos proyectos.
 
-Identificador: 42029, 42031
+Id.: 42029, 42031
 
 ## <a name="see-also"></a>Vea también
 

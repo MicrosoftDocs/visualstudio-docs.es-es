@@ -9,20 +9,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589024"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedimiento Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 
 En el editor de configuración de Visual Studio, puede configurar el adaptador de datos de diagnóstico que graba la pantalla y la voz del usuario que ejecuta la prueba. Este adaptador de datos de diagnóstico guarda una grabación de pantalla y voz de la sesión de escritorio durante la prueba. La grabación se guarda con el resultado de la prueba o se puede adjuntar a un error. Otros miembros del equipo pueden usar la grabación para aislar defectos de la aplicación que son difíciles de reproducir.
 
 > [!WARNING]
 > Las grabaciones de pantalla y voz no admiten configuraciones de varios monitores.
 
-La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizadas. Por ejemplo, si ejecuta una prueba de IU codificada de forma remota, es posible que desee grabar el escritorio para ver la prueba de IU codificada mientras se ejecuta. Para obtener más información sobre cómo capturar una grabación de pantalla y voz de forma remota, vea [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizadas. Por ejemplo, si ejecuta una prueba de IU codificada de forma remota, es posible que desee grabar el escritorio para ver la prueba de IU codificada mientras se ejecuta. Para obtener más información sobre cómo capturar una grabación de pantalla y de voz de forma remota, vea [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,11 +50,11 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 6. En **Calidad de la grabación de pantalla**, configure las siguientes opciones de lista desplegable:
 
-    1. **Velocidad de fotogramas**: Especifique cuántos fotogramas por segundo quiere usar en la grabación de pantalla y voz. El valor predeterminado es 4 fotogramas por segundo. Se pueden especificar valores entre 2 y 20.
+    1. **Velocidad de fotogramas:** especifica cuántos fotogramas por segundo desea usar en la grabación de pantalla y voz. El valor predeterminado es 4 fotogramas por segundo. Se pueden especificar valores entre 2 y 20.
 
-    2. **Velocidad de bits**: Especifique cuántos kilobytes por segundo se van a usar en las grabaciones de pantalla y voz. El valor predeterminado es 512. Se pueden especificar valores entre 512 y 10.000.
+    2. **Velocidad de bits:** especifique cuántos kilobytes por segundo se usarán en las grabaciones de pantalla y voz. El valor predeterminado es 512. Se pueden especificar valores entre 512 y 10.000.
 
-    3. **Calidad (1-100)** : Puede especificar la calidad de la grabación de pantalla y voz si selecciona un intervalo entre 1 y 100. El valor predeterminado es de 50 (intervalo medio).
+    3. **Calidad (1-100):** puede especificar la calidad de la grabación de pantalla y voz seleccionando un intervalo entre 1 y 100. El valor predeterminado es de 50 (intervalo medio).
 
 7. Elija **Aceptar**. Ahora, la configuración del recopilador de seguimiento de diagnóstico está establecida y guardada para su configuración de pruebas.
 

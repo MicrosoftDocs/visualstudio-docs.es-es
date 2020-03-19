@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263114"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
@@ -44,7 +44,7 @@ Contiene información sobre un parámetro específico para una tarea que se gene
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|
+|Atributo|Description|
 |---------------|-----------------|
 |`ParameterType`|Atributo opcional.<br /><br /> El tipo .NET del parámetro, por ejemplo, `System.String`.|
 |`Output`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro de salida para la tarea. De forma predeterminada, el valor es `false`.|
@@ -56,7 +56,7 @@ Contiene información sobre un parámetro específico para una tarea que se gene
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-|Elemento|Descripción|
+|Elemento|Description|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`.|
 

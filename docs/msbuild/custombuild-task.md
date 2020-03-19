@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595350"
 ---
 # <a name="custombuild-task"></a>Tarea CustomBuild
@@ -32,7 +32,7 @@ Incluye la herramienta del compilador de Microsoft C++, cmd.exe. Esta clase deri
 
 En la tabla siguiente se describen los parámetros de la tarea**CustomBuild**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**BuildSuffix**|Parámetro **string** opcional.|
 |**Sources**|Parámetro obligatorio de tipo **ITaskItem[]** .|

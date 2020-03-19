@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595493"
 ---
 # <a name="list-threads-command"></a>Mostrar subprocesos (Comando)
@@ -35,7 +35,7 @@ Debug.ListThreads [index]
 
 Opcional. Selecciona un subproceso por su índice para que sea el subproceso actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Cuando se especifica, el argumento `index` marca el subproceso indicado como el subproceso actual. Se muestra un asterisco (*) en la lista junto al subproceso actual.
 
 ## <a name="example"></a>Ejemplo
@@ -47,8 +47,8 @@ Cuando se especifica, el argumento `index` marca el subproceso indicado como el 
 ## <a name="see-also"></a>Vea también
 
 - [Mostrar pila de llamadas (Comando)](../../ide/reference/list-call-stack-command.md)
-- [Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)
+- [Comando Mostrar desensamblador](../../ide/reference/list-disassembly-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

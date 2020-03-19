@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c7f947be01500b0d45b81d404206722ac71084a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565414"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
@@ -172,9 +172,9 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
 - Oracle 7.3, 8i, 9i o 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Cómo se usa un archivo de texto de valores separados por comas (CSV) como origen de datos?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Puedo usar un archivo de texto de valores separados por comas (CSV) como origen de datos?
 
-**R:** Esta es la manera de hacerlo:
+**R:** Aquí se explica cómo:
 
 1. Cree una carpeta para organizar los artefactos de base de datos de los proyectos y agregar un elemento.
 
@@ -247,7 +247,7 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
      ![Origen de datos agregado a la prueba](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo puedo usar un archivo XML como origen de datos?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo utilizo un archivo XML como origen de datos?
 
 **R:** Sí.
 
@@ -279,7 +279,7 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
      ![Especificar un nombre y elegir el archivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio web que use SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio Web que use SOAP?
 
 **R:** Sí, debe cambiar manualmente el código XML de SOAP.
 

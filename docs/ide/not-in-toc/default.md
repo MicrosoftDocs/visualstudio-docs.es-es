@@ -10,13 +10,13 @@ manager: jillfra
 author: TerryGLee
 ms.author: tglee
 ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75597014"
 ---
-# <a name="f1-help"></a>Ayuda de F1
+# <a name="f1-help"></a>ayuda F1
 
 Parece que no pudimos encontrar lo que buscaba y lo sentimos. Si quiere ayudarnos a mejorar, déjenos un comentario; para ello, use los botones que encontrará en la parte inferior de esta página.
 

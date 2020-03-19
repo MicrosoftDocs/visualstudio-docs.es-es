@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72668944"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opciones, Editor de texto, F#, Avanzado
@@ -24,11 +24,11 @@ Use la página de opciones **Avanzado** para modificar ciertas configuraciones d
 
 Cuando se selecciona esta opción, aparecen líneas verticales en el editor que se alinean con bloques de código estructurado, lo que permite identificar fácilmente los bloques de código individuales.
 
-## <a name="outlining"></a>esquematizar
+## <a name="outlining"></a>Esquematización
 
 Active esta casilla para esquematizar automáticamente el archivo de código, lo que crea bloques contraíbles de código.
 
 ## <a name="see-also"></a>Vea también
 
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-- [Opciones, editor de texto, todos los lenguajes, pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Opciones, Editor de texto, Todos los lenguajes, Pestañas](../../ide/reference/options-text-editor-all-languages-tabs.md)

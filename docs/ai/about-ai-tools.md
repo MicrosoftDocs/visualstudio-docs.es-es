@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915967"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
@@ -45,5 +45,5 @@ Esta extensión hace que sea muy sencillo entrenar modelos en el equipo local o 
 ## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 Actualmente, esta extensión admite sistemas operativos Windows de 64 bits.
 
-## <a name="support"></a>Soporte técnico
+## <a name="support"></a>Compatibilidad
 La compatibilidad con esta extensión se proporciona en nuestro sitio de [seguimiento de problemas de GitHub](https://github.com/Microsoft/vs-tools-for-ai/issues). Puede enviar un informe de errores o una sugerencia relativa a una característica y participar en debates.

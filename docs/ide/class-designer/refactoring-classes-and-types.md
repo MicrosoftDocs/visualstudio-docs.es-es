@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590753"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactorizar clases y tipos en el Diseñador de clases
@@ -38,8 +38,8 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
 |Tarea|Contenido adicional|
 |----------| - |
 |**Refactorización de clases:** puede utilizar operaciones de refactorización para dividir una clase en clases parciales o para implementar una clase base abstracta.|-   [Cómo: Dividir una clase en clases parciales](how-to-split-a-class-into-partial-classes.md)|
-|**Trabajo con interfaces:** En el Diseñador de clases, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz](how-to-implement-an-interface.md)|
-|**Refactorización de tipos, miembros de tipo y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](#rename-types-and-type-members)<br />-   [Traslado de miembros de tipo de un tipo a otro](#move-type-members-from-one-type-to-another)<br />-   [Cómo: Crear un tipo que acepta valores NULL](how-to-create-a-nullable-type.md)|
+|**Trabajo con interfaces:** en el Diseñador de clases, puede implementar una interfaz en el diagrama de clases conectándola a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz](how-to-implement-an-interface.md)|
+|**Refactorización de tipos, miembros de tipos y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](#rename-types-and-type-members)<br />-   [Traslado de miembros de tipo de un tipo a otro](#move-type-members-from-one-type-to-another)<br />-   [Cómo: Crear un tipo que acepta valores NULL](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Cambio de nombre de tipos y miembros de tipos
 

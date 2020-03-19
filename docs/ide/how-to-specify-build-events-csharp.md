@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificación de eventos de compilación (C#)
+title: 'Cómo: Especificar eventos de compilación (C#)'
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115126"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
+# <a name="how-to-specify-build-events-c"></a>Cómo: Especificar eventos de compilación (C#)
 
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación solo se ejecutan si se alcanzan correctamente esos puntos en el proceso de compilación.
 

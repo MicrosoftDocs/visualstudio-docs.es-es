@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62809562"
 ---
 # <a name="remote-r-service-for-linux"></a>Servicio R remoto para Linux
@@ -97,9 +97,9 @@ En cada caso, el equipo remoto debe tener instalado uno de los intérpretes de R
 1. Realice los cambios deseados en la configuración de la máquina virtual.
 1. Elija un tamaño de máquina virtual, compruebe la configuración y haga clic en **Crear**. Una vez creada la máquina virtual, vaya a la sección siguiente.
 
-#### <a name="configure-the-vm"></a>Configurar la máquina virtual
+#### <a name="configure-the-vm"></a>Configuración de la máquina virtual
 
-1. En la sección **Red** de la máquina virtual, agregue 5444 como puerto de entrada permitido. Para usar otro puerto, cambie la configuración en el archivo de configuración del demonio de RTVS (*/etc/rtvs/rtvsd.config.json*).
+1. En la sección **Red** de la máquina virtual, agregue 5444 como puerto de entrada permitido. Para usar otro puerto, cambie la configuración en el archivo de configuración del demonio de RTVS ( */etc/rtvs/rtvsd.config.json*).
 1. (Opcional) Establezca un nombre DNS; también puede usar la dirección IP.
 1. Conéctese a la máquina virtual mediante un cliente SSH como PuTTY para Windows.
 1. Siga las instrucciones anteriores para una [equipo físico de Ubuntu](#physical-ubuntu-computer).

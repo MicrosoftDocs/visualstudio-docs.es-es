@@ -1,5 +1,5 @@
 ---
-title: Refactorización
+title: Refactoring
 description: Refactorizaciones más populares en Visual Studio con descripciones y ejemplos.
 ms.date: 01/10/2018
 ms.topic: conceptual
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585722"
 ---
 # <a name="refactor-code"></a>Refactorizar código

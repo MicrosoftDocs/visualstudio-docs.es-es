@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador de textura de escala de grises
+title: 'Cómo: Crear un sombreador de textura de escala de grises'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76112615"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Procedimiento Crear un sombreador de textura de escala de grises
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Cómo: Crear un sombreador de textura de escala de grises
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de textura de escala de grises. Este sombreador modifica el valor de color RGB del ejemplo de textura y después lo usa junto con el valor alfa sin modificar para establecer el color final.
 
@@ -25,7 +25,7 @@ Puede implementar un sombreador de textura de escala de grises modificando el va
 
 Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
-1. Cree un sombreador de textura básico, como se explica en [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1. Cree un sombreador de textura básico, como se describe en [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Desconecte el terminal **RGB** del nodo **Muestra de textura** del terminal **RGB** del nodo **Color final**. En el modo **Seleccionar**, elija el terminal **RGB** del nodo **Muestra de textura** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
@@ -49,8 +49,8 @@ Es posible que algunas formas proporcionen mejores vistas previas para algunos s
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Image Editor](../designers/image-editor.md)
+- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Editor de imágenes](../designers/image-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

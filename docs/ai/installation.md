@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915807"
 ---
 # <a name="installation"></a>Instalación
@@ -71,7 +71,7 @@ Para instalar cuDNN, siga estos pasos:
 > [!NOTE]
 > Los marcos de aprendizaje profundo anteriores, como CNTK 2.0 y TensorFlow 1.2.1, necesitan cuDNN v5.1. No obstante, puede tener varias versiones de cuDNN instaladas a la vez.
 
-### <a name="python"></a>Python
+### <a name="python"></a>Plantillas de
 
 Python ha sido el lenguaje de programación principal para las aplicaciones de aprendizaje profundo. Se necesita la distribución de Python de **64 bits** y se recomienda [Python 3.5.4](https://www.python.org/downloads/release/python-354/) para lograr la mejor compatibilidad posible.
 

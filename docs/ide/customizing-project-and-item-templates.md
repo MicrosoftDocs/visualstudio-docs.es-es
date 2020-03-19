@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567559"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalización de plantillas de proyectos y elementos
@@ -33,13 +33,13 @@ Por ejemplo, puede realizar las tareas siguientes:
 
 - Personalizar los asistentes que crean proyectos a partir de plantillas.
 
-   Para obtener más información, vea [Cómo: Usar asistentes con las plantillas de proyectos (extensibilidad)](../extensibility/how-to-use-wizards-with-project-templates.md).
+   Para obtener más información, vea [How to: Use Wizards with Project Templates (Extensibility)](../extensibility/how-to-use-wizards-with-project-templates.md) [Cómo usar asistentes con plantillas de proyecto (Extensibilidad)].
 
 ## <a name="see-also"></a>Vea también
 
 - [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
 - [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

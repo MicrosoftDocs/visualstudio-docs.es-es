@@ -15,11 +15,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585787"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306840"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -59,7 +59,7 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
 
    - **Usar el comportamiento predeterminado:** el comportamiento predeterminado de la ventana de herramientas. Si se mantiene esta opción activada, el rendimiento de inicio no mejorará.
 
-   - **No mostrar ventana al inicio:** la ventana de herramientas especificada está siempre cerrada al abrir Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Cuando lo requiera, podrá abrir la ventana de herramientas desde el menú correspondiente.
+   - **No mostrar la ventana al inicio:** la ventana de herramientas especificada está siempre cerrada al abrir Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Cuando lo requiera, podrá abrir la ventana de herramientas desde el menú correspondiente.
 
    - **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Esta opción es una buena opción si utiliza una ventana de herramientas con frecuencia. La ventana de herramientas todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
 

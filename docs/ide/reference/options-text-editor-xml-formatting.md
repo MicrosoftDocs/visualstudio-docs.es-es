@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568144"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opciones, editor de texto, XML y formato
@@ -23,10 +23,10 @@ Use la página de opciones **Formato** para especificar cómo se aplica formato 
 
 **Preservar el formato manual de atributos**
 
-No cambia el formato de los atributos. Esta opción es el valor predeterminado.
+No vuelve a dar formato a los atributos. Esta opción es el valor predeterminado.
 
 > [!NOTE]
-> Si los atributos están en varias líneas, el editor aplica sangría a cada línea de atributos para que coincida con la sangría del elemento primario.
+> Si los atributos se encuentran en varias líneas, el editor sangra cada línea de atributos para que coincida con el sangrado del elemento primario.
 
 **Alinear los atributos en líneas separadas**
 

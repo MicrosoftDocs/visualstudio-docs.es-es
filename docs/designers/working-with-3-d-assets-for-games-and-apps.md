@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589804"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
@@ -54,9 +54,9 @@ Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede selecc
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Description|
 |-----------|-----------------|
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar Visual Studio para trabajar con imágenes y texturas.|
 |[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar Visual Studio para trabajar con modelos 3D.|
 |[Trabajar con sombreadores](../designers/working-with-shaders.md)|Describe cómo usar el Diseñador de sombras de Visual Studio para crear y modificar efectos de sombreador personalizados.|
-|[Usar activos 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|
+|[Uso de recursos en 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|

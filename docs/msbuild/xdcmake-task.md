@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630657"
 ---
 # <a name="xdcmake-task"></a>XDCMake (tarea)
@@ -32,7 +32,7 @@ Incluye la herramienta Documentación XML (*xdcmake.exe*), que combina archivos 
 
  Se crea un archivo *.xdc* cuando proporciona comentarios de documentación en el código fuente de C++ y compila mediante la opción del compilador [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Para más información, consulte [Referencia de XDCMake](/cpp/build/reference/xdcmake-reference), [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages) y la opción de ayuda de la línea de comandos ( **/?** ) de *xdcmake.exe*.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
  De forma predeterminada, la herramienta *xdcmake.exe* admite algunas opciones de la línea de comandos. Se admiten opciones adicionales al especificar la opción de la línea de comandos **/old**.
 
@@ -40,7 +40,7 @@ Incluye la herramienta Documentación XML (*xdcmake.exe*), que combina archivos 
 
  En la tabla siguiente se describen los parámetros de la tarea **XDCMake**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**AdditionalDocumentFile**|Parámetro **String[]** opcional.<br /><br /> Especifica uno o más archivos *.xdc* adicionales que se van a combinar.<br /><br /> Para más información, consulte la descripción **Archivos de documento adicionales** en [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages). Consulte también las opciones de la línea de comandos **/old** y **/Fs** de *xdcmake.exe*.|
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XDCMake**.<br /><br /> Para más información, consulte [Referencia de XDCMake](/cpp/build/reference/xdcmake-reference), [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/build/reference/xml-document-generator-tool-property-pages) y la ayuda de la línea de comandos ( **/?** ) de *xdcmake.exe*.|

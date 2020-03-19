@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593582"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
@@ -36,7 +36,7 @@ Determina si la configuración de seguridad está habilitada en tiempo de diseñ
 > [!NOTE]
 > Al publicar una aplicación mediante el uso del asistente para **Publicar**, esta opción se habilita automáticamente.
 
-Cuando se selecciona esta opción, existe la opción de seleccionar uno de los dos botones de radio: **Aplicación de plena confianza** o **Esta es una aplicación de confianza parcial**.
+Cuando se selecciona esta opción, puede elegir uno de dos botones de radio: **Aplicación de plena confianza** o **Aplicación de confianza parcial**.
 
 De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está activada.
 
@@ -77,10 +77,10 @@ Abre el cuadro de diálogo [Configuración de seguridad avanzada](../../ide/refe
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
-- [Cómo: Habilitación de la configuración de seguridad ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Cómo: Establecimiento de una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Cómo: Establecimiento de permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Cómo: Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Cómo: Habilitar la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Seguridad e implementación ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)
-- [Configuración de seguridad avanzada (Cuadro de diálogo)](../../ide/reference/advanced-security-settings-dialog-box.md)
+- [Cuadro de diálogo Configuración de seguridad avanzada](../../ide/reference/advanced-security-settings-dialog-box.md)

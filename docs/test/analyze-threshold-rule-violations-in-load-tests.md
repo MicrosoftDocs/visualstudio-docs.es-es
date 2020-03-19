@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591286"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
@@ -34,10 +34,10 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 
 La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
 
-|Columna|Descripción|Visible de forma predeterminada|
+|Columna|Description|Visible de forma predeterminada|
 |-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
-|Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:**  Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
+|Computer|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:** Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
 |Categoría|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Contador|El nombre del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Instancia|La instancia del contador de rendimiento en la que se produjo la infracción.|Sí|
@@ -77,5 +77,5 @@ Para obtener más información, vea [Analizar los resultados de pruebas de carga
 ## <a name="see-also"></a>Vea también
 
 - [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

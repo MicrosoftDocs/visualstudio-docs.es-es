@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633478"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
@@ -39,7 +39,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
 ## <a name="parameters"></a>Parámetros
 
- A continuación se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
+ A continuación se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tareas, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 - **AdditionalIncludeDirectories**
 

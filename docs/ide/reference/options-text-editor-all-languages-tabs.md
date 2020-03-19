@@ -42,10 +42,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594752"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
@@ -59,7 +59,7 @@ Si están seleccionadas diferentes opciones en las páginas de opciones de pesta
 
 ## <a name="indenting"></a>Aplicar sangría
 
-None
+Ninguna
 
 Si está seleccionada esta opción, no se aplicará ninguna sangría a las líneas nuevas. El punto de inserción se coloca en la primera columna de una nueva línea.
 

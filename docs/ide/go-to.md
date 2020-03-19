@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593790"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
@@ -52,7 +52,7 @@ De forma predeterminada, el elemento especificado se busca en todos los elemento
 
 Para limitar la búsqueda a un tipo específico de elemento de código, puede especificar un prefijo en el cuadro de búsqueda o seleccionar uno de los cinco iconos de filtro:
 
-Prefijo | Iconos | Acceso directo | Descripción
+Prefijo | Icono | Acceso directo | Description
 :-: | - | - | -
 :| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir al número de línea especificado
 f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
@@ -65,7 +65,7 @@ m| ![Icono de miembros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl
 
 Para restringir la búsqueda a una ubicación específica, use uno de los dos iconos de documento:
 
-Iconos | Descripción
+Icono | Description
 ---- | ---
 ![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
 ![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
@@ -80,7 +80,7 @@ Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el códig
 
 Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) puede cambiar el funcionamiento de esta característica:
 
-Parámetro | Descripción
+Configuración | Description
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
 Mostrar detalles | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana

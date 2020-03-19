@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593218"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edición de modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
@@ -26,21 +26,21 @@ El *modelo de combinación de pruebas* especifica la probabilidad de que un usua
 
 Puede especificar una de las siguientes opciones de modelo de combinación de pruebas para el escenario de la prueba de carga:
 
-- **A partir del número total de pruebas:** determina la prueba unitaria o de rendimiento web que se va a ejecutar cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción.
+- **Basado en el número total de pruebas:** determina qué prueba unitaria o de rendimiento web se ejecuta cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción.
 
-- **A partir del número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutarán una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada.
+- **Basado en el número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutan una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada.
 
-- **A partir de la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número determinado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga.
+- **Basado en la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número especificado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga.
 
-- **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga.
+- **Basado en el orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga.
 
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Especificar la combinación de pruebas para la prueba de carga:** al crear una prueba de carga, los parámetros se especifican en el **Asistente para prueba de carga nueva**. En el **Asistente para prueba de carga nueva**, elija las pruebas web y unitarias existentes que desee agregar al escenario inicial. Después de haber agregado las pruebas al escenario, especifique la combinación de pruebas para el escenario.<br /><br /> Puede usar opciones de modelos de carga para predecir de forma más precisa el uso real esperado del sitio web o la aplicación cuyas pruebas de carga está realizando. Esto es importante porque una prueba de carga que no se basa en un modelo de carga preciso puede generar resultados engañosos.|-   [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Editar el modelo de combinación de pruebas:** puede cambiar un escenario de prueba de carga para usar uno de los modelos de combinación de pruebas mediante el **Editor de pruebas de carga**.||
-|**Configurar el intervalo de velocidad para un modelo de combinación de pruebas a partir de la velocidad del usuario:** si configura el escenario de prueba de carga para que use el modelo de combinación de pruebas **A partir de la velocidad del usuario**, puede especificar cómo configurar el intervalo de velocidad de la distribución.|-   [Cómo: Aplicar la distribución al retraso del ritmo cuando se usa un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Especificar la combinación de pruebas para la prueba de carga:** cuando cree una prueba de carga, especifique los parámetros en el **Asistente para prueba de carga nueva**. En el **Asistente para prueba de carga nueva**, elija las pruebas web y unitarias existentes que desee agregar al escenario inicial. Después de haber agregado las pruebas al escenario, especifique la combinación de pruebas para el escenario.<br /><br /> Puede usar opciones de modelos de carga para predecir de forma más precisa el uso real esperado del sitio web o la aplicación cuyas pruebas de carga está realizando. Esto es importante porque una prueba de carga que no se basa en un modelo de carga preciso puede generar resultados engañosos.|-   [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Editar el modelo de combinación de pruebas:** puede cambiar un escenario de prueba de carga para usar uno de los modelos de combinación de pruebas con el **Editor de pruebas de carga**.||
+|**Configurar el intervalo de velocidad para un modelo de combinación de pruebas a partir de la velocidad del usuario:** si el escenario de prueba de carga está configurado para usar el modelo de combinación de pruebas **A partir de la velocidad del usuario**, puede especificar cómo quiere configurar el intervalo de velocidad de la distribución.|-   [Cómo: Aplicar la distribución al retraso del ritmo cuando se usa un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Cambiar el modelo de combinación de pruebas en un escenario
 

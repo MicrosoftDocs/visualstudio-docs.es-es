@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926233"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
@@ -73,13 +73,13 @@ Muestra el idioma asociado a la referencia.
 ### <a name="file-type"></a>Tipo de archivo
 Muestra el tipo de archivo de la referencia.
 
-### <a name="file-version"></a>Versión de archivo
+### <a name="file-version"></a>Versión del archivo
 Muestra la versión de archivo de la referencia.
 
-### <a name="identity"></a>identidad
+### <a name="identity"></a>Identidad
 Muestra la identidad de la referencia que se usa en el proyecto, que se almacena en el archivo del proyecto.
 
-### <a name="package"></a>Package
+### <a name="package"></a>Paquete
 Muestra el nombre del manifiesto de paquete asociado con la referencia.
 
 ### <a name="resolved-path"></a>Ruta de acceso resuelta
@@ -96,4 +96,4 @@ Muestra la versión de la referencia.
 
 ## <a name="see-also"></a>Vea también
 
-- [Administrar propiedades de soluciones y proyectos](../../ide/managing-project-and-solution-properties.md)
+- [Administrar propiedades de proyectos y de soluciones](../../ide/managing-project-and-solution-properties.md)

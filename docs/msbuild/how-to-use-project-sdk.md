@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar SDK de proyecto de MSBuild| Microsoft Docs
+title: Referencia a un SDK de un proyecto de MSBuild| Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76826476"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Procedimiento Usar SDK de proyecto de MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Cómo: Usar SDK de proyecto de MSBuild
 
 En MSBuild 15.0 se presentó el concepto de "SDK de proyecto", que simplifica el uso de kits de desarrollo de software en los que es necesario importar propiedades y destinos.
 

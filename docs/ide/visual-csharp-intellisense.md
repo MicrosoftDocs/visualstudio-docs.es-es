@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594180"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307260"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -60,19 +60,19 @@ IntelliSense usa filtros para quitar los miembros innecesarios de la lista de fi
 
 - **Interfaces y clases base**: IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.
 
-- **Atributos**: Cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.
+- **Atributos**: cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.
 
 - **Cláusulas catch**
 
-- **Inicializadores de objeto**: Solo los miembros que se pueden inicializar aparecerán en la lista de finalización.
+- **Inicializadores de objeto**: solo los miembros que se pueden inicializar aparecerán en la lista de finalización.
 
-- **Palabra clave new**: Si se escribe `new` y luego se presiona la **barra espaciadora**, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.
+- **Palabra clave new**: si se escribe `new` y luego se presiona la **barra espaciadora**, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.
 
-- **Palabra clave enum**: Si se presiona la **barra espaciadora** después de un signo igual para una asignación de enumeración, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización después de escribir la palabra clave Return y al realizar una declaración.
+- **Palabra clave enum**: cuando presiona la **barra espaciadora** después de un signo igual para una asignación de enumeración, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización después de escribir la palabra clave Return y al realizar una declaración.
 
-- **Operadores as e is**: Cuando se presiona la **barra espaciadora** después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.
+- **Operadores as e is**: cuando se presiona la **barra espaciadora** después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.
 
-- **Eventos**: al escribir la palabra clave `event`, la lista de finalización solo contiene tipos delegados.
+- **Eventos**: si se escribe la palabra clave `event`, la lista de finalización solo contiene tipos delegados.
 
 - La **ayuda de parámetros** se ordena automáticamente por la primera sobrecarga de método que coincida con los parámetros que se especifican. Si existen varias sobrecargas de método, puede usar las flechas arriba y abajo para desplazarse a la siguiente sobrecarga posible de la lista.
 
@@ -114,7 +114,7 @@ La opción Implementar interfaz genera el número mínimo de códigos auxiliares
 
 IntelliSense proporciona una opción útil para implementar miembros de una clase base abstracta de forma automática mientras se trabaja en el editor de código. Normalmente, la implementación de miembros de una clase base abstracta requiere la creación de una nueva definición de método para cada método de la clase base abstracta en la clase derivada. Con IntelliSense, después de escribir el nombre de una clase base abstracta en una declaración de clase, se muestra una bombilla de **Acciones rápidas**. La bombilla ofrece la opción de implementar los métodos de la clase base automáticamente.
 
-El código auxiliar del método generado por la característica **Implementar clases base abstractas** está modelado por el fragmento de código definido en el archivo *MethodStub.snippet*. Los fragmentos de código son modificables. Para obtener más información, vea [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
+El código auxiliar del método generado por la característica **Implementar clases base abstractas** está modelado por el fragmento de código definido en el archivo *MethodStub.snippet*. Los fragmentos de código son modificables. Para más información, vea [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generar a partir del uso
 

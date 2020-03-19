@@ -1,20 +1,21 @@
 ---
 title: Refactorización del código para convertir un bucle for en una instrucción foreach
-ms.date: 05/10/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094606"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorización para convertir un bucle for en una instrucción foreach y viceversa
 
@@ -27,6 +28,8 @@ Si tiene un bucle [for](/dotnet/csharp/language-reference/keywords/for) en el c�
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 > [!NOTE]
 > La refactorización de acción rápida **Convertir en "foreach"** solo está disponible para bucles [for](/dotnet/csharp/language-reference/keywords/for) que contienen los tres elementos: un inicializador, la condición y el iterador.

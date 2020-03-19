@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590883"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
@@ -40,7 +40,7 @@ Visual Studio actualmente ofrece compatibilidad con el uso de colores para la si
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
+|CoffeeScript|HTML|LESS|Plantillas de|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
 
@@ -74,7 +74,7 @@ Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta s
 
 En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:
 
-|Nombre de carpeta|Descripción|
+|Nombre de carpeta|Description|
 |-----------------|-----------------|
 |\\ *\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
 |*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|
@@ -90,5 +90,5 @@ Para obtener más información sobre cómo crear gramáticas TextMate, vea [Text
 ## <a name="see-also"></a>Vea también
 
 - [Agregar una extensión del protocolo de servidor de lenguaje](../extensibility/adding-an-lsp-extension.md)
-- [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

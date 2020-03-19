@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Administrar las ventanas del editor
+title: 'Cómo: Administrar las ventanas del editor'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591026"
 ---
-# <a name="how-to-manage-editor-windows"></a>Procedimiento Administrar las ventanas del editor
+# <a name="how-to-manage-editor-windows"></a>Cómo: Administrar las ventanas del editor
 
 Puede trabajar con código en varias ubicaciones a la vez. Para ello, divida una ventana del editor o abra varias instancias de ventanas del editor.
 

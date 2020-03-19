@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596455"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
@@ -69,7 +69,7 @@ En los siguientes temas se proporciona más información sobre algunas de las pe
 
 - [Cuadro de herramientas, Datos (Pestaña)](../../ide/reference/toolbox-data-tab.md)
 - [Cuadro de herramientas, Componentes (Pestaña)](../../ide/reference/toolbox-components-tab.md)
-- [Cuadro de herramientas, HTML (Pestaña)](../../ide/reference/toolbox-html-tab.md)
+- [Cuadro de herramientas, Pestaña HTML](../../ide/reference/toolbox-html-tab.md)
 
 ## <a name="see-also"></a>Vea también
 

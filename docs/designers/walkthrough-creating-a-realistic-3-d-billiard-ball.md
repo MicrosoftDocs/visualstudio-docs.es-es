@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589921"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Tutorial: Crear una bola de billar en 3D realista
@@ -209,8 +209,8 @@ El primer paso es crear una textura de mapa de cubo. En muchos tipos de aplicaci
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
-- [Image Editor](../designers/image-editor.md)
+- [Editor de imágenes](../designers/image-editor.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

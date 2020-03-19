@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exclusión de proyectos de una compilación
+title: 'Cómo: Excluir proyectos de una compilación'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114801"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Procedimiento Exclusión de proyectos de una compilación
+# <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
 
 Para compilar una solución no es necesario compilar todos los proyectos que contiene. Por ejemplo, se puede excluir un proyecto que interrumpa la compilación y, a continuación, compilar el proyecto tras haber investigado y resuelto los problemas.
 
@@ -71,4 +71,4 @@ Para averiguar por qué se ha omitido un proyecto, tenga en cuenta la configurac
 
 - [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)
 - [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)
-- [Cómo: Compilación de varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Cómo: Compilar varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

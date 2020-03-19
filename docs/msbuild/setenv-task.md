@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5df538e7eb86a20dfc06e6e6558bded577ba3d2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632386"
 ---
 # <a name="setenv-task"></a>Tarea SetEnv
@@ -34,7 +34,7 @@ Establece o elimina el valor de una variable de entorno especificada.
 
  En la siguiente tabla, se describen los parámetros de la tarea **SetEnv**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**Name**|Parámetro obligatorio de tipo **String**.<br /><br /> Nombre de una variable de entorno.|
 |**OutputEnvironmentVariable**|Parámetro de salida de tipo **String** opcional.<br /><br /> Contiene el valor que se asigna a la variable de entorno especificada por el parámetro **Name**.|

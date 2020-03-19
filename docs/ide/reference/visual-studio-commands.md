@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596403"
 ---
 # <a name="visual-studio-commands"></a>comandos de Visual Studio
@@ -43,7 +43,7 @@ El símbolo de intercalación funciona igual tanto si está dentro como fuera de
 
 Los siguientes comandos toman argumentos o modificadores:
 
-| Nombre de comando | Descripción |
+| Nombre de comando | Description |
 | - | - |
 | [Agregar elemento existente](../../ide/reference/add-existing-item-command.md) | Agrega un archivo existente a la solución actual y lo abre. |
 | [Agregar proyecto existente](../../ide/reference/add-existing-project-command.md) | Agrega un proyecto existente a la solución actual. |
@@ -72,11 +72,11 @@ Los siguientes comandos toman argumentos o modificadores:
 | [Establecer subproceso actual](../../ide/reference/set-current-thread-command.md) | Le permite ver un subproceso determinado. |
 | [Establecer base](../../ide/reference/set-radix-command.md) | Determina el número de bytes que se van a ver. |
 | [Shell](../../ide/reference/shell-command.md) | Inicia programas desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como si el comando se hubiera ejecutado desde el símbolo del sistema. |
-| [ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md) | Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE). |
-| [Iniciar](../../ide/reference/start-command.md) | Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores. |
-| [Ruta de acceso](../../ide/reference/symbol-path-command.md) | Establece la lista de directorios para que el depurador busque símbolos. |
+| [Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md) | Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE). |
+| [Inicio](../../ide/reference/start-command.md) | Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores. |
+| [Path](../../ide/reference/symbol-path-command.md) | Establece la lista de directorios para que el depurador busque símbolos. |
 | [Alternar punto de interrupción](../../ide/reference/toggle-breakpoint-command.md) | Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo. |
-| [Inspección (Comando)](../../ide/reference/watch-command.md) | Crea y abre una instancia especificada de una ventana **Inspección** . |
+| [Comando Inspección](../../ide/reference/watch-command.md) | Crea y abre una instancia especificada de una ventana **Inspección** . |
 
 ## <a name="see-also"></a>Vea también
 

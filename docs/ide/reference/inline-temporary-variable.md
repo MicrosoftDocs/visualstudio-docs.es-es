@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568872"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactorización de inserción de una variable temporal
@@ -25,11 +25,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Permite quitar una variable temporal y reemplazarla por su valor.
+**Qué:** Le permite quitar una variable temporal y reemplazarla por su valor.
 
 **Cuándo:** El uso de la variable temporal dificulta la comprensión del código.
 
-**Por qué:** La eliminación de una variable temporal puede facilitar la lectura del código.
+**Quitar:** El hecho de quitar una variable temporal puede facilitar la lectura del código.
 
 ## <a name="how-to"></a>Procedimiento
 

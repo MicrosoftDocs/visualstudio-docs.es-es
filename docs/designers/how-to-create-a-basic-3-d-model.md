@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un modelo en 3D básico
+title: 'Cómo: Crear un modelo en 3D básico'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589531"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Procedimiento Crear un modelo en 3D básico
+# <a name="how-to-create-a-basic-3d-model"></a>Cómo: Crear un modelo en 3D básico
 
 En este artículo se muestra cómo usar el Editor de modelos para crear un modelo 3D básico. En él se tratan las actividades siguientes:
 
@@ -23,7 +23,7 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
 - Selección de caras y bordes
 
-- Traducir selecciones
+- Trasladar selecciones
 
 - Uso de las herramientas **Subdividir cara** y **Extruir cara**
 
@@ -70,10 +70,10 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
    ![El modelo completado de la casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
-   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener información, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener más información, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
+- [Cómo: modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

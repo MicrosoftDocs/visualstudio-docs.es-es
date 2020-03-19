@@ -1,5 +1,5 @@
 ---
-title: Adición y eliminación de contadores de los gráficos de resultados de pruebas de carga
+title: para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115176"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedimiento para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
 Puede usar el panel **Contadores** para agregar contadores de rendimiento a un gráfico.
 
@@ -28,7 +28,7 @@ Puede usar el panel **Contadores** para agregar contadores de rendimiento a un g
 
 **Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento**
 
-Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
@@ -47,7 +47,7 @@ Hay dos opciones para habilitar la propiedad **Almacenamiento de detalles de tie
 
 La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo podría ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, puesto que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución. Cuando la prueba de carga termina, los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
 
-Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Para mostrar un contador determinado en un gráfico de prueba de carga
 
@@ -71,11 +71,11 @@ Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamie
 
 5. Para quitar los datos del contador de rendimiento del gráfico, haga clic con el botón derecho en el contador de rendimiento en la columna **Contador** de la leyenda y seleccione **Eliminar**.
 
-     \- o -
+     \- O bien
 
      Haga clic con el botón derecho en la línea de datos del gráfico y seleccione **Eliminar**.
 
-     \- o -
+     \- O bien
 
      Elija el contador de rendimiento en la columna **Contador** de la leyenda o en la línea de datos del gráfico y, luego, presione la tecla **Supr**.
 

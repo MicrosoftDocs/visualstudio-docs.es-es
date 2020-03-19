@@ -10,13 +10,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113442"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedimiento para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 
 Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y pegando los datos de la vista de resumen de resultados de pruebas de carga y de la vista de gráficos. Los datos que se presentan en la vista de resumen y de gráficos se aplican en formato HTML cuando se copian.
 
@@ -26,7 +26,7 @@ Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y
 > También puede copiar el texto sin formato de la vista de tablas y las capturas de pantalla de la vista de detalles de Microsoft Word, pero no se aplica en formato HTML, por lo que precisará formato y edición adicionales.
 
 > [!TIP]
-> También puede generar informes organizados de Microsoft Excel automáticamente. Para obtener más información, vea [Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> También puede generar informes organizados de Microsoft Excel automáticamente. Para obtener más información, vea [Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Copiar datos de la vista Resumen
 
@@ -44,7 +44,7 @@ Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y
 
 1. En **Resultados de pruebas de carga**, si no se muestra la vista de gráfico, elija **Gráficos** en la barra de herramientas.
 
-2. (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Control de zoom de la vista de gráficos](../test/media/ltest_zoomcontrol.png)
 

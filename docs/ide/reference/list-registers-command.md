@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568690"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
@@ -55,11 +55,11 @@ Agrega uno o varios valores `register` o `registerGroup` a la lista.
 
 Quita uno o varios valores `register` o `registerGroup` de la lista.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 El alias `r` se puede usar en lugar de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se usa el alias `r` de `Debug.ListRegisters` para mostrar los valores del grupo de registros `Flags`.
+En este ejemplo se usa el alias `Debug.ListRegisters` de `r` para mostrar los valores del grupo de registros `Flags`.
 
 ```cmd
 r /Display Flags
@@ -68,5 +68,5 @@ r /Display Flags
 ## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Fundamentos de la depuración: Ventana Registros](../../debugger/debugging-basics-registers-window.md)
-- [Cómo: Uso de la ventana Registros](../../debugger/how-to-use-the-registers-window.md)
+- [Fundamentos de la depuración: ventana Registros](../../debugger/debugging-basics-registers-window.md)
+- [Cómo: Usar la ventana Registros](../../debugger/how-to-use-the-registers-window.md)

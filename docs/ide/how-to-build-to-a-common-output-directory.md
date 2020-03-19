@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Compilación en un directorio de salida común
+title: 'Cómo: Compilar en un directorio de salida común'
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68416750"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>Procedimiento Compilación en un directorio de salida común
+# <a name="how-to-build-to-a-common-output-directory"></a>Cómo: Compilar en un directorio de salida común
 
 De manera predeterminada, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila cada proyecto en una solución en su propia carpeta dentro de la solución. Puede cambiar las rutas de salida de la compilación de los proyectos para forzar que todos los resultados se almacenen en la misma carpeta.
 
@@ -37,4 +37,4 @@ De manera predeterminada, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 ## <a name="see-also"></a>Vea también
 
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)
-- [Cómo: Cambio del directorio de salida de compilación](../ide/how-to-change-the-build-output-directory.md)
+- [Cómo: Cambiar el directorio de salida de compilación](../ide/how-to-change-the-build-output-directory.md)

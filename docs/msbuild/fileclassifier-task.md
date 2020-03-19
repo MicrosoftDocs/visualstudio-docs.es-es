@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634193"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier (Tarea)
@@ -30,7 +30,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.FileClassifier> clasifica un conjun
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`CLREmbeddedResource`|Sin usar.|
 |`CLRResourceFiles`|Sin usar.|
@@ -41,7 +41,7 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.FileClassifier> clasifica un conjun
 |`SatelliteEmbeddedFiles`|Parámetro de salida opcional de tipo **ITaskItem[]** .<br /><br /> Especifica los archivos localizables que se insertan en el ensamblado satélite para la referencia cultural especificada en el parámetro **Culture**.|
 |`SourceFiles`|Parámetro obligatorio de tipo **ITaskItem[]** .<br /><br /> Especifica la lista de archivos que se van a clasificar.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no se establece el valor del parámetro **Culture**, todos los recursos que especifica el parámetro **SourceFiles** no son localizables; de lo contrario, son localizables, a menos que se asocien a un atributo **Localizable** cuyo valor se establezca en **false**.
 

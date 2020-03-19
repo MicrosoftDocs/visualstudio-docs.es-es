@@ -8,31 +8,31 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279273"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
 Hay varias maneras de probar código de DLL, dependiendo de si dicho código exporta las funciones que quiere probar. Elija una de las siguientes formas:
 
-**Las pruebas unitarias solo llaman a funciones que se exportan desde la DLL:** Agregue un proyecto de prueba independiente como se describe en [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md). En el proyecto de prueba, agregue una referencia al proyecto DLL.
+**Las pruebas unitarias solo llaman a funciones que se exportan desde la DLL:** agregue un proyecto de prueba independiente, como se describe en [Escribir pruebas unitarias para C/C ++](writing-unit-tests-for-c-cpp.md). En el proyecto de prueba, agregue una referencia al proyecto DLL.
 
 Vaya al procedimiento [Para hacer referencia a funciones exportadas del proyecto DLL](#projectRef).
 
-**La DLL se compila como un archivo .exe:** Agregue un proyecto de prueba independiente. Vincúlelo al archivo objeto de salida.
+**La DLL se compila como un archivo .exe:** agregue un proyecto de prueba independiente. Vincúlelo al archivo objeto de salida.
 
 Vaya al procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
 
-**Las pruebas unitarias llaman a funciones que no son miembro y que no se exportan desde la DLL, y la DLL se puede compilar como una biblioteca estática:** Cambie el proyecto DLL para que se compile como un archivo *.lib*. Agregue un proyecto de prueba independiente que haga referencia al proyecto en pruebas.
+**Las pruebas unitarias llaman a funciones que no son miembro y que no se exportan desde la DLL, y la DLL se puede compilar como una biblioteca estática:** cambie el proyecto de DLL para que se compile en un archivo *.lib*. Agregue un proyecto de prueba independiente que haga referencia al proyecto en pruebas.
 
 Este método tiene la ventaja de permitir que las pruebas usen miembros no exportados, pero sigue manteniendo las pruebas en un proyecto independiente.
 
 Vaya al procedimiento [Para cambiar la DLL a una biblioteca estática](#staticLink).
 
-**Las pruebas unitarias deben llamar a funciones que no son miembro y que no se han exportado, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** Agregue las pruebas unitarias en el mismo proyecto que el código de producto.
+**Las pruebas unitarias deben llamar a funciones que no son miembro y que no se han exportado, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):** agregue pruebas unitarias en el mismo proyecto que el código de producto.
 
 Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sameProject).
 
@@ -58,7 +58,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
       ::: moniker range="vs-2019"
 
-      1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
 
       ::: moniker-end
 
@@ -90,7 +90,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
       ::: moniker range="vs-2019"
 
-      1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
 
       ::: moniker-end
 
@@ -126,7 +126,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
    3. Edite los directorios de inclusión y de biblioteca:
 
-       |Directorio|Propiedad.|
+       |Directorio|Property|
        |-|-|
        |**Directorios de archivos de inclusión** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Directorios de archivos de bibliotecas** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -167,13 +167,13 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
 1. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
 
-1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
+1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga doble clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
 
 ## <a name="see-also"></a>Vea también
 
 - [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Depuración del código nativo](../debugger/debugging-native-code.md)
-- [Tutorial: Creación y uso de una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Tutorial: Crear y usar una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importar y exportar](/cpp/build/importing-and-exporting)
 - [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)

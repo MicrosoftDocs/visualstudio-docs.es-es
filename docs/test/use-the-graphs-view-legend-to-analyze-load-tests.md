@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590805"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Gráficos para analizar pruebas de carga
@@ -28,21 +28,21 @@ La siguiente información se incluye en la leyenda:
 
 - **Mostrar en gráfico:** use las casillas para especificar si la línea de un contador determinado, como **Carga del usuario** o **Errores por segundo**, se traza en el gráfico. Active una casilla si desea trazar la línea en el gráfico. Desactive una casilla para quitar la línea del gráfico. Cuando se quita una línea del trazado, las estadísticas del contador continúan mostrándose en la leyenda.
 
-- **Intervalo:** en esta columna se muestra el intervalo del eje Y del contador de rendimiento. De forma predeterminada, este valor se ajustará automáticamente cuando cambie el intervalo de los datos de ejemplo. Un intervalo ajustado automáticamente siempre será la potencia siguiente de 10 mayor que el valor máx; incluye potencias negativas de diez. Un gráfico puede contener varios contadores, cada uno con un intervalo diferente. Por consiguiente, el eje Y no se etiqueta con un intervalo concreto, sino que se etiqueta con valores de 0-100 que representan un porcentaje del intervalo total de cada contador. Por ejemplo, para un contador con un intervalo de 1000, un punto de datos de 60 en el eje Y corresponde a un valor de 600 del contador.
+- **Intervalo:** esta columna muestra el intervalo del eje Y del contador de rendimiento. De forma predeterminada, este valor se ajustará automáticamente cuando cambie el intervalo de los datos de ejemplo. Un intervalo ajustado automáticamente siempre será la potencia siguiente de 10 mayor que el valor máx; incluye potencias negativas de diez. Un gráfico puede contener varios contadores, cada uno con un intervalo diferente. Por consiguiente, el eje Y no se etiqueta con un intervalo concreto, sino que se etiqueta con valores de 0-100 que representan un porcentaje del intervalo total de cada contador. Por ejemplo, para un contador con un intervalo de 1000, un punto de datos de 60 en el eje Y corresponde a un valor de 600 del contador.
 
     > [!NOTE]
     > Puede desactivar el ajuste del valor del rango automático bloqueando el intervalo en un valor concreto. Cuando se bloquea el intervalo, los valores que superen el intervalo se muestran como el valor máximo que especificó en la parte superior del gráfico. Use el cuadro de diálogo **Opciones de trazado** para bloquear el intervalo en un valor concreto.
 
 - **Contador:** las cuatro columnas denominadas **Contador**, **Instancia**, **Categoría** y **Equipo** identifican el contador de rendimiento de manera única.
 
-- **Color:** en la columna **Color** se muestra el color y el estilo de la línea trazada para el contador de rendimiento. Use el cuadro de diálogo **Opciones de trazado** para cambiar el color o el estilo de línea de un contador de rendimiento en el gráfico. El cuadro de diálogo **Opciones de trazado** está disponible en el menú contextual de la leyenda.
+- **Color:** la columna **Color** muestra el color y el estilo de la línea trazada para el contador de rendimiento. Use el cuadro de diálogo **Opciones de trazado** para cambiar el color o el estilo de línea de un contador de rendimiento en el gráfico. El cuadro de diálogo **Opciones de trazado** está disponible en el menú contextual de la leyenda.
 
-- **Estadísticas:** en las columnas **Mín**, **Máx**, **Pro** y **Último** se muestran las estadísticas respectivas del contador de rendimiento. Estos valores corresponden a los datos que se muestran en el área visible del gráfico. Por ejemplo, si hace zoom en el área de una ejecución, las estadísticas de la leyenda solo reflejarán los valores de esa área. La columna "Último" es el valor del contador de rendimiento en el último intervalo de muestreo completado.
+- **Estadísticas:** las columnas **Mín**, **Máx**, **Pro** y **Último** muestran las estadísticas respectivas del contador de rendimiento. Estos valores corresponden a los datos que se muestran en el área visible del gráfico. Por ejemplo, si hace zoom en el área de una ejecución, las estadísticas de la leyenda solo reflejarán los valores de esa área. La columna "Último" es el valor del contador de rendimiento en el último intervalo de muestreo completado.
 
     > [!NOTE]
     > La columna Último solo se muestra en el leyenda del Analizador de prueba de carga mientras la prueba se está ejecutando.
 
-     Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 La selección de un elemento de la leyenda hace lo siguiente:
 

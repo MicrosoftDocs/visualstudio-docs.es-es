@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633062"
 ---
 # <a name="mt-task"></a>MT (tarea)
@@ -37,12 +37,12 @@ Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información,
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea **MT**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
+ En la siguiente tabla se describen los parámetros de la tarea **MT**. La mayoría de los parámetros de tareas, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 > [!NOTE]
 > La documentación de *mt.exe* usa un guion ( **-** ) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal ( **/** ). Se aceptan ambos prefijos.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|Parámetro **String[]** opcional.<br /><br /> Especifica el nombre de uno o varios archivos de manifiesto.<br /><br /> Para más información, consulte la opción **/manifest** de [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de la línea de comandos. Por ejemplo, /\<option1> /\<option2> /\<option#>. Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **MT**.<br /><br /> Para más información, consulte [Mt.exe](/windows/desktop/SbsCs/mt-exe).|

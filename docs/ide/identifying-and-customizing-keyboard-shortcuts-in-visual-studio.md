@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591338"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
@@ -43,7 +43,7 @@ Si un método abreviado se asigna a un comando en el contexto *Global* y no a ot
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificar un método abreviado de teclado
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y elija **Teclado**.
 
@@ -63,11 +63,11 @@ Si un método abreviado se asigna a un comando en el contexto *Global* y no a ot
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizar un método abreviado de teclado
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 2. Expanda **Entorno** y elija **Teclado**.
 
-3. Opcional: Para filtrar la lista de comandos, escriba el nombre del comando parcial o totalmente, sin espacios, en el cuadro **Mostrar los comandos que contengan**.
+3. Opcional: filtre la lista de comandos escribiendo el nombre del comando parcial o totalmente y sin espacios en el cuadro **Mostrar los comandos que contengan**.
 
 4. En la lista, elija el comando al que desea asignar un método abreviado de teclado.
 

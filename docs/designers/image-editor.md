@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589323"
 ---
 # <a name="image-editor"></a>Editor de imágenes
@@ -111,7 +111,7 @@ Los comandos que influyen en el estado del **Editor de imágenes** se encuentran
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de imágenes** y se muestran en el orden en que aparecen de izquierda a derecha:
 
-|Elemento de la barra de herramientas|Descripción|
+|Elemento de la barra de herramientas|Description|
 |------------------|-----------------|
 |**Seleccionar**|Permite seleccionar una región rectangular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
 |**Selección irregular**|Permite seleccionar una región irregular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
@@ -124,10 +124,10 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Edit
 |**Grid**|Habilita o deshabilita la cuadrícula que muestra los límites de píxeles. Es posible que la cuadrícula no aparezca hasta que haga zoom en la imagen.|
 |**Ver el nivel de MIP siguiente**|Activa el siguiente nivel de MIP más grande en una cadena de asignación de MIP. El nivel de MIP activo se muestra en la superficie de diseño. Este elemento solo está disponible para las texturas que tienen niveles de MIP.|
 |**Ver el nivel de MIP anterior**|Activa el siguiente nivel de MIP más pequeño en una cadena de asignación de MIP. El nivel de MIP activo se muestra en la superficie de diseño. Este elemento solo está disponible para las texturas que tienen niveles de MIP.|
-|**Canal rojo**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita o deshabilita el canal de colores concreto. **Nota:**  Al habilitar o deshabilitar sistemáticamente los canales de color, puede aislar los problemas que están relacionados con uno o varios de ellos. Por ejemplo, puede identificar una transparencia alfa incorrecta.|
+|**Canal rojo**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita o deshabilita el canal de colores concreto. **Nota**: Al habilitar o deshabilitar sistemáticamente los canales de color, puede aislar los problemas que están relacionados con uno o varios de ellos. Por ejemplo, puede identificar una transparencia alfa incorrecta.|
 |**Fondo**|Habilita o deshabilita la presentación del fondo a través de las partes transparentes de la imagen. Puede elegir entre estas opciones para configurar cómo se muestra el fondo:<br /><br /> **Tablero**<br /> Utiliza un color verde junto con el color de fondo especificado para mostrar el fondo como un patrón de tablero. Puede usar esta opción para que las partes transparentes de la imagen sean más evidentes.<br /><br /> Fondo blanco<br /> Utiliza el color blanco para mostrar el fondo.<br /><br /> Fondo negro<br /> Utiliza el color negro para mostrar el fondo.<br /><br /> Fondo animado<br /> Gira lentamente el patrón de tablero. Puede usar esta opción para que las partes transparentes de la imagen sean más evidentes.|
 |**Propiedades**|Abre o cierra alternativamente la ventana **Propiedades**.|
-|**Avanzadas**|Contiene comandos y opciones adicionales.<br /><br /> **Filtros**<br /><br /> Proporciona varios filtros de imagen comunes: **Blanco y negro**, **Desenfoque**, **Brighten**, **Oscurecer**, **Detección de bordes**, **Relieve**, **Invertir colores**, **Ondas**, **Tono sepia** y **Dar nitidez**.<br /><br /> **Motores gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para representar la superficie de diseño del **Editor de imágenes**.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del **Editor de imágenes**.<br /><br /> **Herramientas**<br /><br /> **Voltear horizontalmente**<br /> Transpone la imagen alrededor de su eje horizontal, o x.<br /><br /> **Voltear verticalmente**<br /> Transpone la imagen alrededor de su eje vertical, o y.<br /><br /> **Generar MIP**<br /> Genera los niveles de MIP para una imagen. Si ya existen niveles de MIP, se vuelven a crear desde el nivel de MIP más grande. Se perderán los cambios realizados en los niveles de MIP más pequeños. Para guardar los niveles de MIP que ha generado, debe usar el formato *.dds* para guardar la imagen.<br /><br /> **Vista**<br /><br /> **Velocidad de fotogramas**<br /> Cuando esta opción está habilitada, muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. **Sugerencia:** Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.|
+|**Avanzadas**|Contiene comandos y opciones adicionales.<br /><br /> **Filtros**<br /><br /> Proporciona varios filtros de imágenes habituales: **Blanco y negro**, **Desenfoque**, **Brillar**, **Oscurecer**, **Detección de bordes**, **Relieve**, **Invertir colores**, **Ripple**, **Tono sepia** y **Dar nitidez**.<br /><br /> **Motores gráficos**<br /><br /> **Representar con D3D11**<br /> Utiliza Direct3D 11 para representar la superficie de diseño del **Editor de imágenes**.<br /><br /> **Representar con D3D11WARP**<br /> Utiliza Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del **Editor de imágenes**.<br /><br /> **Herramientas**<br /><br /> **Voltear horizontalmente**<br /> Transpone la imagen alrededor de su eje horizontal, o x.<br /><br /> **Voltear verticalmente**<br /> Transpone la imagen alrededor de su eje vertical, o y.<br /><br /> **Generar Mips**<br /> Genera los niveles de MIP para una imagen. Si ya existen niveles de MIP, se vuelven a crear desde el nivel de MIP más grande. Se perderán los cambios realizados en los niveles de MIP más pequeños. Para guardar los niveles de MIP que ha generado, debe usar el formato *.dds* para guardar la imagen.<br /><br /> **Vista**<br /><br /> **Velocidad de fotogramas**<br /> Cuando esta opción está habilitada, muestra la velocidad de fotogramas en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. **Consejo**: Puede hacer clic en el botón **Avanzado** para volver a ejecutar el último comando.|
 
 ### <a name="image-editor-toolbar"></a>Barra de herramientas del Editor de imágenes
 
@@ -135,7 +135,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Edit
 
 En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de imágenes**, en el orden en que aparecen de arriba abajo:
 
-|Elemento de la barra de herramientas|Descripción|
+|Elemento de la barra de herramientas|Description|
 |------------------|-----------------|
 |**Lápiz**|Utiliza la selección de color activa para dibujar el trazo de un alias. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|
 |**Pincel**|Utiliza la selección de color activa para dibujar un trazo suavizado. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|
@@ -144,13 +144,13 @@ En la tabla siguiente se describen los elementos de la barra de herramientas **E
 |**Relleno**|Utiliza la selección de color activa para rellenar una región de la imagen. La región afectada se define como el píxel en el que se aplica el relleno, junto con todos los píxeles que están conectados a ella mediante píxeles del mismo color y que es el mismo color en sí. Si el relleno se aplica en una selección activa, la selección restringe la región afectada.<br /><br /> De forma predeterminada, la selección de color activa se combina con la región afectada de la imagen en función de su componente alfa. Para utilizar la selección de color activa para sobrescribir la región afectada, mantenga presionada la tecla **Mayús** al usar la herramienta de relleno.|
 |**Borrador**|Establece los píxeles en el color totalmente transparente si la imagen admite un canal alfa. En caso contrario, los establece en el color de fondo activo.|
 |**Línea**, **Rectángulo**, **Rectángulo redondeado**, **Elipse**|Dibuja una forma en la imagen. Puede establecer el color y el grosor del esquema en la ventana **Propiedades**.<br /><br /> Para dibujar una primitiva que tenga el mismo ancho y alto, mantenga presionada la tecla **Mayús** mientras dibuja.|
-|**Texto**|Utiliza la selección de color de primer plano para dibujar texto. La selección de color de fondo determina el color de fondo. Para un fondo transparente, el valor alfa de la selección de color de fondo debe ser 0. Cuando la región de texto esté activa, puede establecer si el texto se dibuja con un trazo suavizado, así como el **Valor**, la **Fuente** y el **Tamaño** del texto, además del estilo (**Negrita**, **Cursiva** o **Subrayado**), en la ventana **Propiedades**. El contenido y la apariencia del texto finalizan cuando la región de texto ya no está activa.|
+|**Text**|Utiliza la selección de color de primer plano para dibujar texto. La selección de color de fondo determina el color de fondo. Para un fondo transparente, el valor alfa de la selección de color de fondo debe ser 0. Cuando la región de texto esté activa, puede establecer si el texto se dibuja con un trazo suavizado, así como el **Valor**, la **Fuente** y el **Tamaño** del texto, además del estilo (**Negrita**, **Cursiva** o **Subrayado**), en la ventana **Propiedades**. El contenido y la apariencia del texto finalizan cuando la región de texto ya no está activa.|
 |**Girar**|Gira la imagen 90 grados en el sentido de las agujas del reloj.|
 |**Recortar**|Recorta la imagen al tamaño de la selección activa.|
 
 ### <a name="work-with-mip-levels"></a>Trabajar con niveles de MIP
 
-Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ### <a name="work-with-transparency"></a>Trabajar con transparencia
 
@@ -158,7 +158,7 @@ Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten la transp
 
 En esta table se describen el modo en que diferentes tipos de herramientas controlan cómo se aplica la transparencia:
 
-|Herramienta|Descripción|
+|Herramienta|Description|
 |----------|-----------------|
 |**Lápiz**, **Pincel**, **Aerógrafo**, **Línea**, **Rectángulo**, **Rectángulo redondeado**, **Elipse**, **Texto**|Para combinar la selección de color activa con la imagen, en la ventana **Propiedades**, expanda el grupo de propiedades **Canales**, establezca la casilla de verificación **Dibujar** en el canal  **Alfa** y, a continuación, dibuje normalmente.<br /><br /> Para dibujar con la selección de color activa y dejar el valor alfa de la imagen en su lugar, desactive la casilla de verificación **Dibujar** del canal **Alfa** y, después, dibuje normalmente.|
 |**Relleno**|Para combinar la selección de color activa con la imagen, elija el área que se deba rellenar.<br /><br /> Para utilizar la selección de color activa, incluido el valor del canal alfa, para sobrescribir la imagen, mantenga presionada la tecla **Mayús** y, después, elija el área que se deba rellenar.|
@@ -169,7 +169,7 @@ Puede utilizar la ventana **Propiedades** para especificar distintas propiedades
 
 En la tabla siguiente se describen las propiedades de la imagen:
 
-|Propiedad.|Descripción|
+|Property|Description|
 |--------------|-----------------|
 |Ancho|El ancho de la imagen.|
 |Alto|El alto de la imagen.|
@@ -214,7 +214,7 @@ Después de seleccionar una región, puede cambiar su tamaño o el contenido de 
 
 En la tabla siguiente se describen las combinaciones válidas de teclas modificadoras que devuelven:
 
-|Ctrl|Shift|Alt|Descripción|
+|Ctrl|Shift|Alt|Description|
 |----------|-----------|---------|-----------------|
 ||||Cambia el tamaño del contenido de la región seleccionada.|
 ||**Mayús**||Cambia proporcionalmente el tamaño del contenido de la región seleccionada.|
@@ -235,9 +235,9 @@ En la tabla siguiente se describen las propiedades de las herramientas:
 |----------|----------------|
 |Todas las herramientas y selecciones|**Girar "x" grados**<br /> Define la cantidad, en grados, que la selección o el efecto de la herramienta gira en el sentido de las agujas del reloj.|
 |**Lápiz**, **Pincel**, **Aerógrafo**, **Borrador**|**Grosor**<br /> Define el tamaño del área que se ve afectada por la herramienta.|
-|**Texto**|**Suavizado**<br /> Dibuja texto con bordes suavizados. Esto proporciona al texto una apariencia más suave.<br /><br /> **Valor**<br /> El texto que se debe dibujar.<br /><br /> **Fuente**<br /> La fuente utilizada para dibujar el texto.<br /><br /> **Size**<br /> El tamaño del texto.<br /><br /> **Negrita**<br /> Pone la fuente en negrita.<br /><br /> **Cursiva**<br /> Pone la fuente en cursiva.<br /><br /> **Subrayado**<br /> Pone la fuente subrayada.|
+|**Text**|**Suavizado**<br /> Dibuja texto con bordes suavizados. Esto proporciona al texto una apariencia más suave.<br /><br /> **Valor**<br /> El texto que se debe dibujar.<br /><br /> **Fuente**<br /> La fuente utilizada para dibujar el texto.<br /><br /> **Size**<br /> El tamaño del texto.<br /><br /> **Negrita**<br /> Pone la fuente en negrita.<br /><br /> **Cursiva**<br /> Pone la fuente en cursiva.<br /><br /> **Subrayado**<br /> Pone la fuente subrayada.|
 |**Primitiva 2D**|**Suavizado**<br /> Dibuja las primitivas que tienen bordes suavizados. Esto les proporciona una apariencia más suave.<br /><br /> **Grosor**<br /> Define el grosor de la línea que constituye el límite de la primitiva.<br /><br /> **Radio X**<br /> (Solo rectángulo redondeado) Define el radio de redondeo para los bordes superior e inferior de la primitiva.<br /><br /> **Radio Y**<br /> (Solo rectángulo redondeado) Define el radio de redondeo para los bordes izquierdo y derecho de la primitiva.|
-|**Lápiz**, **Pincel**, **Aerógrafo**, **Primitiva 2D**|**Canales**<br /> Habilita o deshabilita canales de color concretos para ver y dibujar. Si se establece **Ver** para un canal de color concreto, ese canal está visible en la imagen; en caso contrario, no está visible. Si se establece **Dibujar** para un canal de color concreto, ese canal se ve afectado por las operaciones de dibujo; en caso contrario, esto no ocurre.|
+|**Lápiz**, **Pincel**, **Aerógrafo**, **Primitiva 2D**|**Channels**<br /> Habilita o deshabilita canales de color concretos para ver y dibujar. Si se establece **Ver** para un canal de color concreto, ese canal está visible en la imagen; en caso contrario, no está visible. Si se establece **Dibujar** para un canal de color concreto, ese canal se ve afectado por las operaciones de dibujo; en caso contrario, esto no ocurre.|
 |**Selección de varita**, **Relleno**|**Tolerancia**<br /> Define la diferencia máxima entre colores adyacentes considerados similares, de manera que menos o más colores similares se convierten en parte de la región afectada o seleccionada. De forma predeterminada, el valor es 32, lo que significa que los píxeles adyacentes con 32 tonalidades (más claras u oscuras) del color original se consideran parte de la región.|
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
@@ -286,7 +286,7 @@ En la tabla siguiente se describen las propiedades de las herramientas:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Descripción|
+|Título|Description|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que puede utilizar en Visual Studio para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de Visual Studio para trabajar con modelos 3D.|

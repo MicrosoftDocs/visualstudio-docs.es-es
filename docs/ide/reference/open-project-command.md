@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565817"
 ---
 # <a name="open-project-command"></a>Comando Abrir proyecto
@@ -41,7 +41,7 @@ Obligatorio. La ruta de acceso completa y el nombre de archivo del proyecto o de
 > [!NOTE]
 > La sintaxis del argumento `filename` requiere que las rutas de acceso que contienen espacios se incluyan entre comillas.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La finalización automática intenta localizar la ruta de acceso y el nombre de archivo correctos a medida que los va escribiendo.
 

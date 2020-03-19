@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver los tipos existentes (Diseñador de clases)
+title: 'Cómo: Ver los tipos existentes (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588712"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Procedimiento Ver los tipos existentes en el Diseñador de clases
+# <a name="how-to-view-existing-types-in-class-designer"></a>Cómo: Ver los tipos existentes en el Diseñador de clases
 
 Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de clases.
 
 Puede ver los tipos locales y aquellos a los que se hace referencia. Los tipos locales existen en el proyecto que está abierto y son de lectura y escritura. Los tipos a los que se hace referencia existen en otros proyectos o en un ensamblado al que se hace referencia y son de sólo lectura.
 
-Para diseñar nuevos tipos en diagramas de clases, vea [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md).
+Para diseñar nuevos tipos en los diagramas de clases, vea [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver los tipos de un proyecto en un diagrama de clase
 
@@ -64,5 +64,5 @@ En el **Explorador de soluciones** o en la **Vista de clases**, haga clic con el
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
-- [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md)
+- [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md)
 - [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

@@ -11,48 +11,42 @@ metadata:
   author: JoshuaPartlow
   ms.author: joshuapa
   ms.date: 09/23/2019
-  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
-  ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 09/27/2019
-  ms.locfileid: "71322482"
 landingContent:
-- title: Sobre la compatibilidad con Python en Visual Studio
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Información general de Python
-      url: overview-of-python-tools-for-visual-studio.md
-    - text: Un paseo por el IDE de Visual Studio
-      url: visual-studio-ide.md
-- title: Introducción a Python
-  linkLists:
-  - linkListType: get-started
-    links:
-    - text: Instalación de la compatibilidad con Python en Visual Studio
-      url: installing-python-support-in-visual-studio.md
-    - text: Escribir y editar código
-      url: editing-python-code-in-visual-studio.md
-    - text: Depurar el código
-      url: debugging-python-in-visual-studio.md
-    - text: Escribir y ejecutar pruebas
-      url: unit-testing-python-in-visual-studio.md
-    - text: Usar la ventana interactiva de REPL
-      url: python-interactive-repl-in-visual-studio.md
-    - text: Administración de entornos de Python
-      url: managing-python-environments-in-visual-studio.md
-    - text: Escribir extensiones de C/C++ para Python
-      url: working-with-c-cpp-python-in-visual-studio.md
-  - linkListType: tutorial
-    links:
-    - text: Trabajo con Python en Visual Studio
-      url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-- title: Introducción al desarrollo web
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Crear una aplicación web con el marco Django
-      url: learn-django-in-visual-studio-step-01-project-and-solution.md
-    - text: Crear una aplicación web con el marco Flask
-      url: learn-flask-visual-studio-step-01-project-solution.md
+  - title: Sobre la compatibilidad con Python en Visual Studio
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Información general de Python
+            url: overview-of-python-tools-for-visual-studio.md
+          - text: Un paseo por el IDE de Visual Studio
+            url: visual-studio-ide.md
+  - title: Introducción a Python
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Instalación de la compatibilidad con Python en Visual Studio
+            url: installing-python-support-in-visual-studio.md
+          - text: Escribir y editar código
+            url: editing-python-code-in-visual-studio.md
+          - text: Depurar el código
+            url: debugging-python-in-visual-studio.md
+          - text: Escribir y ejecutar pruebas
+            url: unit-testing-python-in-visual-studio.md
+          - text: Usar la ventana interactiva de REPL
+            url: python-interactive-repl-in-visual-studio.md
+          - text: Administración de entornos de Python
+            url: managing-python-environments-in-visual-studio.md
+          - text: Escribir extensiones de C/C++ para Python
+            url: working-with-c-cpp-python-in-visual-studio.md
+      - linkListType: tutorial
+        links:
+          - text: Trabajo con Python en Visual Studio
+            url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+  - title: Introducción al desarrollo web
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Crear una aplicación web con el marco Django
+            url: learn-django-in-visual-studio-step-01-project-and-solution.md
+          - text: Crear una aplicación web con el marco Flask
+            url: learn-flask-visual-studio-step-01-project-solution.md
