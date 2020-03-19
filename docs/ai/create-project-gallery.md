@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75915901"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Crear un proyecto de IA desde la galería de Azure Machine Learning en Visual Studio
 
 Azure Machine Learning se integra con Visual Studio Tools para IA. Se puede usar para enviar trabajos de Machine Learning a destinos de procesamiento remoto como máquinas virtuales de Azure, clústeres de Spark y muchos más. 
 
-Después de haber [instalado Visual Studio Tools para IA](installation.md), podrá crear un proyecto de Python muy fácilmente con las recetas ya preparadas de la galería de ejemplos de Azure Machine Learning.
+Después de haber [instalado Visual Studio Tools para AI](installation.md), podrá crear un proyecto de Python muy fácilmente con las recetas ya preparadas de la galería de ejemplos de Azure Machine Learning.
 
 > [!NOTE]
 > Debe tener instalado Azure Machine Learning Workbench. Para instalarlo, vea el [inicio rápido de instalación de Azure Machine Learning](/azure/machine-learning/preview/quickstart-installation)
 
-1. Inicie Visual Studio. Abra el **Explorador de servidores**; para ello, abra el menú **AI Tools** (Herramientas para IA) y elija **Seleccionar un clúster**
+1. Inicie Visual Studio. Abra el **Explorador de servidores**; para ello, abra el menú **AI Tools** (Tools para AI) y elija **Seleccionar un clúster**.
 
     ![Selector de clúster](media/create-project-gallery/select-cluster.png)
 
@@ -37,17 +37,17 @@ Después de haber [instalado Visual Studio Tools para IA](installation.md), podr
 
     ![Galería de ejemplos](media/create-project-gallery/gallery.png)
 
-4. Para este inicio rápido, seleccione el ejemplo "**MNIST using TensorFlow**" y haga clic en **Instalar**. Proporcione lo siguiente:
+4. En este inicio rápido, seleccionaremos el ejemplo "**MNIST using TensorFlow**" y haremos clic en **Instalar**. Proporcione lo siguiente:
 
-   - **Grupo de recursos**: Grupo de recursos de Azure donde se van a almacenar los metadatos
-   - **Cuenta**: Cuenta de experimentación de Azure Machine Learning
-   - **Área de trabajo**: Área de trabajo de Azure Machine Learning
-   - **Tipo de proyecto**: Marco de Machine Learning. En este caso, seleccione **TensorFlow**
+   - **Grupo de recursos**: grupo de recursos de Azure donde se almacenarán los metadatos
+   - **Cuenta**: cuenta de Experimentación de Azure Machine Learning
+   - **Área de trabajo**: área de trabajo de Azure Machine Learning
+   - **Tipo de proyecto**: el marco de Machine Learning. En este caso, seleccione **TensorFlow**
    - **Agregar a solución**: determina si se va a agregar a la solución de Visual Studio actual o si se va a crear y abrir una solución nueva
-   - **Ruta de acceso del proyecto**: Ubicación donde se guarda el código
-   - **Nombre de proyecto**: Escriba **TensorFlowMNIST**
+   - **Ruta de acceso del proyecto**: ubicación donde se guarda el código
+   - **Nombre de proyecto**: escriba **TensorFlowMNIST**
 
-   ![Proyecto resultante al usar la plantilla Aplicación de Python](media/create-project-gallery/new-AzureSampleProject.png)
+   ![Proyecto resultante al usar la plantilla de la aplicación Python](media/create-project-gallery/new-AzureSampleProject.png)
 
 5. Visual Studio crea el archivo de proyecto (un archivo `.pyproj` que se almacena en disco) junto con otros archivos definidos en el ejemplo. Con la plantilla "MNIST", el proyecto contiene varios archivos.
 

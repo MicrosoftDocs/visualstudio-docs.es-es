@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773275"
 ---
 # <a name="callercallee-view---sampling-data"></a>Vista Llamador y destinatario: datos de muestreo
@@ -29,19 +29,19 @@ La vista Llamador y destinatario muestra información de generación de perfiles
  **Funciones llamadas por la función actual** se muestra en la cuadrícula inferior e incluye información de generación de perfiles para las funciones de destinatario (secundarias) de la función seleccionada cuando la función actual llamó a la función secundaria.
 
 > [!NOTE]
-> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Vea [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Vea [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Columna|DESCRIPCIÓN|
+|Columna|Description|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
-|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del proceso**|Nombre del proceso.|
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
 |**Nombre de la función**|El nombre completo de la función.|
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
-|**Dirección de la función**|Dirección de la función.|
-|**Type**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual|
+|**Dirección de función**|Dirección de la función.|
+|**ype**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual|
 |**Nombre de la función raíz**|El nombre de la función actual.|
 |**Muestras inclusivas**|-   En la función actual, el número de muestras que se recopilaron aunque se estaba ejecutando esta función o una de sus funciones secundarias.<br />-   En una función de llamador, el número de muestras inclusivas de la función actual que se recopilaron cuando esta función llamó a la función actual.<br />-   En una función de destinatario, el número de muestras inclusivas de esta función que se recopilaron cuando la función actual llamó a esta función.|
 |**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras inclusivas de esta función.|

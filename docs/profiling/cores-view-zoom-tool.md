@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553050"
 ---
 # <a name="cores-view-zoom-tool"></a>Herramienta de zoom de vista de núcleos
@@ -24,9 +24,9 @@ El control de zoom es un control deslizante que le permite acercar y alejar la e
 
 ## <a name="other-ways-to-zoom"></a>Otras maneras de hacer zoom
 
-- Acercar: Arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.
+- Acercar: arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.
 
-- Acercar y alejar: Mantenga el puntero sobre la escala de tiempo y presione **Ctrl** mientras mueve la rueda del mouse.
+- Acercar y alejar: mueva el puntero sobre la escala de tiempo y presione **Ctrl** mientras mueve la rueda del mouse.
 
 ## <a name="see-also"></a>Vea también
 - [Vista Núcleos](../profiling/cores-view.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553168"
 ---
 # <a name="cores-view-legend"></a>Leyenda de la vista Núcleos
@@ -28,7 +28,7 @@ La leyenda de la vista Núcleos identifica cada subproceso por color y nombre. I
 
  En la siguiente tabla se describen los elementos de la leyenda.
 
-|Elemento|Definición|
+|Elemento|de esquema JSON|
 |-------------|----------------|
 |Nombre del subproceso|Muestra el color del subproceso en la escala de tiempo de núcleos anterior y el nombre del subproceso.|
 |Cambios de contexto entre núcleos|El número de cambios de contexto para un subproceso que también cambió de un núcleo lógico a otro. No distingue los cambios de contexto entre núcleos que pasan de una matriz de procesadores a otra de los que permanecen en la misma matriz.|

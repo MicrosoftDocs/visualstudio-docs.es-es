@@ -1,21 +1,22 @@
 ---
 title: Refactorización del código para convertir un bucle for en una instrucción foreach
 description: Convierta cualquier consulta de LINQ escrita con una sintaxis de consulta en una instrucción foreach.
-ms.date: 05/15/2018
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb2cdf96d7f7829ff6a6d1394160548da2adae7f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6e1b24cb8406ff29659eb79d1d9fa856db628b89
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595753"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094084"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactorización del código para convertir un bucle for en una instrucción foreach
 
@@ -24,6 +25,8 @@ Utilice esta refactorización para convertir la [sintaxis de consulta LINQ](/dot
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 ## <a name="how-to-use-it"></a>Cómo se usa
 

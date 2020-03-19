@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591299"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
@@ -61,7 +61,7 @@ Puede agregar una herramienta externa para que aparezca en el menú **Herramient
 
 Lo siguiente es una lista completa de los argumentos que se pueden utilizar al definir una herramienta externa:
 
-|NOMBRE|Argumento|Descripción|
+|Name|Argumento|Description|
 |----------|--------------|-----------------|
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|

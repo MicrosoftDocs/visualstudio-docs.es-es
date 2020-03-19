@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594245"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
@@ -27,7 +27,7 @@ Hay tres funciones disponibles para utilizar con fragmentos de código de C#. La
 
 En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
 
-|Función|Descripción|Lenguaje|
+|Función|Description|Lenguaje|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|C#|

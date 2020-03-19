@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62832198"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
@@ -35,7 +35,7 @@ Trabajar con Cookiecutter es un proceso que implica explorar y seleccionar una p
 
 La página de inicio de Cookiecutter muestra una lista de plantillas para elegir, organizada en los siguientes grupos:
 
-| Agrupar | Descripción |
+| Agrupar | Description |
 | --- | --- |
 | **Instalado** | Plantillas que se han instalado en el equipo local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de *~/.cookiecutters*. Puede eliminar una plantilla instalada seleccionada presionando **Suprimir**. |
 | **Recomendado** | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
@@ -79,7 +79,7 @@ Las opciones de Cookiecutter están disponibles en **Tools** > **Options** > **C
 
 ![Opciones de Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opción | Descripción |
+| Opción | Description |
 | --- | --- |
 | **Recommended Feed URL** (URL de fuente recomendada) | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help** (Mostrar ayuda) | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
@@ -90,17 +90,17 @@ Para información sobre los aspectos básicos de la creación de una plantilla d
 
 La representación predeterminada de variables de plantilla depende del tipo de datos (cadena o lista):
 
-- String: etiqueta para el nombre de variable, cuadro de texto para escribir el valor y una marca de agua para mostrar el valor predeterminado. La información sobre herramientas en el cuadro de texto muestra el valor predeterminado.
-- List: etiqueta para nombre de variable, cuadro combinado para seleccionar un valor. La información sobre herramientas en el cuadro combinado muestra el valor predeterminado.
+- Cadena: etiqueta para el nombre de variable, cuadro de texto para escribir el valor y una marca de agua que muestra el valor predeterminado. La información sobre herramientas en el cuadro de texto muestra el valor predeterminado.
+- Lista: etiqueta para nombre de variable, cuadro combinado para seleccionar un valor. La información sobre herramientas en el cuadro combinado muestra el valor predeterminado.
 
 Se pueden realizar mejoras adicionales en esta representación mediante la especificación de metadatos adicionales en el archivo *cookiecutter.json* que es específico de Visual Studio (y la CLI de Cookiecutter lo omite). Todas las propiedades son opcionales:
 
-| Propiedad. | Descripción |
+| Property | Description |
 | --- | --- |
 | Etiqueta | Especifica lo que aparece encima del editor para la variable, en lugar del nombre de la variable. |
-| Descripción | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
-| Dirección URL | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
-| Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, valor predeterminado para las cadenas.</li><li>`list`: cuadro combinado estándar, valor predeterminado para las listas.</li><li>`yesno`: cuadro combinado para elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón **...** que abre un cuadro de diálogo de conexión de base de datos.</li></ul> |
+| Description | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
+| Resolución | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
+| Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, de forma predeterminada para las cadenas.</li><li>`list`: cuadro combinado estándar, de forma predeterminada para las listas.</li><li>`yesno`: cuadro combinado elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón **...** que hace que muestra cuadro de diálogo de conexión de base de datos.</li></ul> |
 
 Ejemplo:
 

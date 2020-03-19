@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926191"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
@@ -46,7 +46,7 @@ Especifica las opciones de configuración para mostrar o modificar. Los valores 
 
 Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release en Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-## <a name="general-page"></a>Página general
+## <a name="general-page"></a>Página General
 
 Utilice las siguientes opciones para establecer las propiedades generales del proyecto.
 

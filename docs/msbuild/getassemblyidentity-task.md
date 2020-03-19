@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634024"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tarea)
@@ -31,14 +31,14 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
-En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity` .
+En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity`.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |`Assemblies`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las identidades de ensamblado recuperadas.|
 |`AssemblyFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de los que se recuperarán las identidades.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los elementos generados por el parámetro `Assemblies` contienen entradas de metadatos de elementos denominadas `Version`, `PublicKeyToken` y `Culture`.
 

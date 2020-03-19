@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278696"
 ---
 # <a name="options-text-editor-cc-view"></a>Opciones, editor de texto, C/C++ y visualización
@@ -46,7 +46,7 @@ Puede habilitar o deshabilitar las siguientes opciones para administrar la maner
 
 - **Resaltar tokens de emparejamiento**: resalta la sintaxis o las llaves delimitadoras que coinciden con la posición del cursor.
 
-## <a name="outlining"></a>esquematizar
+## <a name="outlining"></a>Esquematización
 
 - **Habilitar esquematización**: entra en el modo de esquematización cuando se abre un archivo.
 
@@ -56,5 +56,5 @@ Puede habilitar o deshabilitar las siguientes opciones para administrar la maner
 
 ## <a name="see-also"></a>Vea también
 
-- [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
+- [Configurar las opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorización en C++ (Blog de VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

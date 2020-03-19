@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591637"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedimiento para agregar una regla de umbral mediante el Editor de pruebas de carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Cómo: Agregar una regla de umbral mediante el Editor de pruebas de carga
 
 Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.
 
@@ -36,7 +36,7 @@ Las reglas de umbral de las pruebas de carga comparan un valor de contador de re
 
      Se mostrará el cuadro de diálogo **Agregar regla de umbral**.
 
-5. Puede elegir entre dos tipos de reglas: **Comparar constante** y **Compare contador**. Seleccione el tipo adecuado y establezca los valores.
+5. Puede elegir dos tipos de reglas: **Comparar constante** y **Comparar contador**. Seleccione el tipo adecuado y establezca los valores.
 
     > [!NOTE]
     > Establezca la propiedad **Alertar si se supera** en **True** para indicar que exceder un umbral supone un problema, o en **False** para indicar que no alcanzar un umbral supone un problema.
@@ -45,4 +45,4 @@ Las reglas de umbral de las pruebas de carga comparan un valor de contador de re
 
 - [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

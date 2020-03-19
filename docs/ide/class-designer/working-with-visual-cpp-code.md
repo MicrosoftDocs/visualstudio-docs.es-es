@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596754"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Trabajar con código de C++ en el Diseñador de clases
@@ -46,7 +46,7 @@ El **Diseñador de clases** admite los siguientes elementos de código de C++:
 - Definición de tipo
 
 > [!NOTE]
-> No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para más información, vea [Diagramas de clases de UML: referencia](../../modeling/what-s-new-for-design-in-visual-studio.md).
+> No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para obtener más información, vea [Diagramas de clases de UML: referencia](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de visualización y resolución de tipos
 

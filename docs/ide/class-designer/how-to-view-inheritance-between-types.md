@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Ver la herencia entre tipos (Diseñador de clases)
+title: 'Cómo: Ver la herencia entre tipos (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591780"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedimiento Ver la herencia entre tipos en el Diseñador de clases
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Cómo: Ver la herencia entre tipos en el Diseñador de clases
 
-Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia entre dos tipos si no existe ninguna, vea [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md).
+Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia, si no existe ninguna, entre dos tipos, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Para buscar el tipo base
 

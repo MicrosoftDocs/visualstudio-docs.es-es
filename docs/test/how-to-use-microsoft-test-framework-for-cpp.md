@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 5c8cb794ce7891e74610f1a73164ce403d294925
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75755569"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
@@ -35,7 +35,7 @@ En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), pu
 
    1. Haga clic en la flecha abajo de las siguientes filas y seleccione **\<Editar>** . Agregue estas rutas de acceso:
 
-      | Directorio | Propiedad. |
+      | Directorio | Property |
       |-| - |
       | **Directorios de archivos de inclusión** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
       | **Directorios de archivos de bibliotecas** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
@@ -76,7 +76,7 @@ Use los métodos estáticos de la clase [Assert](microsoft-visualstudio-testtool
 
 1. Si no todas las pruebas son visibles en la ventana, compile el proyecto de prueba. Para ello, haga clic con el botón derecho en el nodo correspondiente del **Explorador de soluciones** y elija **Compilar** o **Recompilar**.
 
-1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
+1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga doble clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
 
 1. En la **Ventana de salida**, elija **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
 
@@ -110,7 +110,7 @@ TEST_METHOD(Method1)
 
 Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para obtener más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Descripción|
+|Macro|Description|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Para definir un rasgo, use la macro TEST_METHOD_ATTRIBUTE.|
 |`TEST_OWNER(ownerAlias)`|Para especificar un propietario del método de prueba, use el rasgo de propietario predefinido.|

@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591000"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedimiento para moverse por el IDE de Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 
 El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimiento entre ventanas y archivos de varias maneras, dependiendo de los requisitos del proyecto o de sus preferencias. Puede desplazarse por los archivos abiertos en el editor o desplazarse por todas las ventanas de las herramientas activas en el IDE. También puede cambiar directamente a cualquier archivo abierto en el editor, sin tener en cuenta el orden en el que se accedió por última vez. Estas características pueden ayudar a aumentar la productividad al trabajar en el IDE.
 
@@ -68,11 +68,11 @@ El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows.
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista **Archivos activos**, mantenga presionadas las teclas **Ctrl**+**Mayús** y presione la tecla **Tab**.
 
-    \- o -
+    \- O bien
 
 - En la esquina superior derecha del editor, pulse el botón **Archivos activos** y, después, seleccione en la lista un archivo al que cambiar.
 
-    \- o -
+    \- O bien
 
 - En la barra de menús, elija **Ventana** > **Ventanas**.
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Implementar una interfaz (Diseñador de clases)
+title: 'Cómo: Implementar una interfaz (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590116"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Procedimiento Implementar una interfaz en el Diseñador de clases
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Cómo: Implementar una interfaz en el Diseñador de clases
 
 En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione código para los métodos de interfaz. El **Diseñador de clases** genera una implementación de interfaz y muestra la relación entre la interfaz y la clase como una relación de herencia. Para implementar una interfaz, dibuje una línea de herencia entre la interfaz y la clase, o bien arrastre la interfaz desde la Vista de clases.
 
@@ -33,7 +33,7 @@ En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de
 
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz.
 
-Para obtener más información, vea [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md).
+Para obtener más información, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar una interfaz desde la ventana Vista de clases
 
@@ -51,6 +51,6 @@ Para obtener más información, vea [Cómo: Crear herencia entre tipos](how-to-c
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md)
-- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
-- [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md)
+- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
+- [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Refactorización de clases y tipos](refactoring-classes-and-types.md)

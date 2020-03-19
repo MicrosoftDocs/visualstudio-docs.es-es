@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Modificar el punto de pivote de un modelo en 3D
+title: 'Cómo: Modificar el punto de pivote de un modelo en 3D'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589947"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedimiento Modificar el punto de pivote de un modelo en 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Cómo: Modificar el punto de pivote de un modelo en 3D
 
 En este artículo se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.
 
@@ -25,7 +25,7 @@ Puede volver a definir el origen de un modelo 3D modificando el punto de pivote.
 
 Asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
-1. Comience con un modelo 3D existente, como el que se describe en [Cómo: Crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
+1. Comience con un modelo 3D existente, como el que se describe en [Cómo: Crear un modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
 
 2. Cambie al modo de pivote. En la barra de herramientas **Modo del Editor de modelos** haga clic en el botón **Modo de pivote** para activar este modo. Aparece un cuadro alrededor del botón **Modo de pivote** para indicar que el Editor de modelos está ahora en modo de pivote. En el modo de pivote, operaciones como la traslación afectan al punto de pivote del objeto en lugar de a la estructura del objeto en el espacio global.
 
@@ -44,5 +44,5 @@ Este es un modelo que tiene un punto de pivote modificado:
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
+- [Cómo: crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor de modelos](../designers/model-editor.md)

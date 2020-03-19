@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595662"
 ---
-# <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
+# <a name="evaluate-statement-command"></a>Evaluar instrucción (comando)
 
 Evalúa y muestra la instrucción dada.
 
@@ -44,8 +44,8 @@ Obligatorio. Instrucción que se va a evaluar.
 
 ## <a name="see-also"></a>Vea también
 
-- [Imprimir (Comando)](../../ide/reference/print-command.md)
+- [Comando Imprimir](../../ide/reference/print-command.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

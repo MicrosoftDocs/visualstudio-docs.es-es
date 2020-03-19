@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Personalizar diagramas de clases (Diseñador de clases)
+title: 'Cómo: Personalizar los diagramas de clases (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590168"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Procedimiento Personalizar diagramas de clases
+# <a name="how-to-customize-class-diagrams"></a>Cómo: Personalizar los diagramas de clases
 
 Es posible cambiar la manera en que se muestra la información en los diagramas de clases. Se puede personalizar el diagrama entero o los tipos individuales en la superficie de diseño.
 
@@ -128,5 +128,5 @@ Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al c
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Cambiar entre notación de miembro y notación de asociación](how-to-change-between-member-notation-and-association-notation.md)
-- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
+- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
 - [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

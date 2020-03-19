@@ -1,5 +1,5 @@
 ---
-title: 'DA0038: Alta frecuencia de contenciones de bloqueo | Microsoft Docs'
+title: 'DA0038: Tasa alta de contenciones de bloqueo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,20 +14,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777507"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta frecuencia de contenciones de bloqueo
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Frecuencia alta de contenciones de bloqueo
 
 |||
 |-|-|
 |Identificador de regla|DA0038|
 |Categoría|Uso de .NET Framework|
 |Método de generación de perfiles|Muestreo<br /><br /> Instrumentación<br /><br /> Memoria de .NET|
-|Mensaje|Se está produciendo una tasa alta de contenciones de bloqueo de .NET. Ejecute un perfil de simultaneidad para investigar la razón de esta contención de bloqueo.|
+|Mensaje|Se está produciendo una tasa alta de contenciones de bloqueo de .NET. Investigue la razón de esta contención de bloqueo ejecutando un perfil de simultaneidad.|
 |Tipo de regla|Información|
 
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.
@@ -47,7 +47,7 @@ ms.locfileid: "74777507"
  Esta regla se desencadena cuando las mediciones tomadas durante una generación de perfiles indican que hay una cantidad excesivamente alta de contención de bloqueo. Las contenciones de bloqueo retrasan la ejecución de subprocesos que están esperando para adquirir el bloqueo. Deberían investigarse incluso las cantidades bastante pequeñas de contención de bloqueo en pruebas unitarias o en pruebas de carga que se ejecuten en hardware de gama baja.
 
 > [!NOTE]
-> Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es excesivamente alta, se desencadena el mensaje de advertencia [DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje informativo.
+> Cuando la tasa de contenciones de bloqueo en los datos de generación de perfiles es excesivamente alta, se muestra el mensaje de advertencia [DA0039: alta frecuencia de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje de información.
 
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.

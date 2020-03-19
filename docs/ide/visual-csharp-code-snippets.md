@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594167"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
@@ -31,7 +31,7 @@ La herramienta de **inserción de fragmento de código** muestra el nombre de to
 
 Los siguientes fragmentos de código se incluyen en Visual Studio para C# de manera predeterminada.
 
-|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
+|Nombre (o acceso directo)|Description|Ubicaciones válidas donde se puede insertar el fragmento|
 | - |-----------------| - |
 |#if|Crea una directiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) y una directiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|En cualquier lugar.|
 |#region|Crea una directiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) y una directiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|En cualquier lugar.|
@@ -44,8 +44,8 @@ Los siguientes fragmentos de código se incluyen en Visual Studio para C# de man
 |do|Crea un bucle [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |else|Crea un bloque [else](/dotnet/csharp/language-reference/keywords/if-else).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |enum|Crea una declaración [enum](/dotnet/csharp/language-reference/keywords/enum).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
-|equals|Crea una declaración de método que invalida el método <xref:System.Object.Equals%2A> que se define en la clase <xref:System.Object>.|Dentro de una clase o un struct.|
-|exception|Crea una declaración de una clase que deriva de una excepción (<xref:System.Exception> de manera predeterminada).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
+|es igual a|Crea una declaración de método que invalida el método <xref:System.Object.Equals%2A> que se define en la clase <xref:System.Object>.|Dentro de una clase o un struct.|
+|excepción|Crea una declaración de una clase que deriva de una excepción (<xref:System.Exception> de manera predeterminada).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|
 |for|Crea un bucle [for](/dotnet/csharp/language-reference/keywords/for).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |foreach|Crea un bucle [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |forr|Crea un bucle [for](/dotnet/csharp/language-reference/keywords/for) que disminuye la variable de bucle después de cada iteración.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
@@ -57,7 +57,7 @@ Los siguientes fragmentos de código se incluyen en Visual Studio para C# de man
 |iterindex|Crea un par de iterador e indexador "con nombre" mediante una clase anidada.|Dentro de una clase o un struct.|
 |bloquear|Crea un bloque [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |mbox|Crea una llamada a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Puede que tenga que agregar una referencia a *System.Windows.Forms.dll*.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
-|namespace|Crea una declaración [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
+|espacio de nombres|Crea una declaración [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
 |prop|Crea una declaración de [propiedad autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dentro de una clase o un struct.|
 |propfull|Crea una declaración de propiedad con descriptores de acceso `get` y `set`.|Dentro de una clase o un struct.|
 |propg|Crea una [propiedad autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) de solo lectura con un descriptor de acceso `set` privado.|Dentro de una clase o un struct.|
@@ -77,4 +77,4 @@ Los siguientes fragmentos de código se incluyen en Visual Studio para C# de man
 - [Funciones de los fragmentos de código](../ide/code-snippet-functions.md)
 - [Fragmentos de código](../ide/code-snippets.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
-- [Cómo: Usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)
+- [Cómo usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)

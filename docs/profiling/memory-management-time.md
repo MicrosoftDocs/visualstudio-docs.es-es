@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62963786"
 ---
 # <a name="memory-management-time"></a>Tiempo de administración de la memoria
@@ -25,4 +25,4 @@ Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que
  Examine las pilas de llamadas asociadas y los informes de perfil para entender mejor las razones subyacentes de los bloqueos que se clasifican como Administración de memoria.
 
 ## <a name="see-also"></a>Vea también
-- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

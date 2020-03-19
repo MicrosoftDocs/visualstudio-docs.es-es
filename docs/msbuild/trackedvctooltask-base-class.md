@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594934"
 ---
 # <a name="trackedvctooltask-base-class"></a>Clase base TrackedVCToolTask
@@ -26,7 +26,7 @@ En última instancia, muchas tareas se heredan de la clase <xref:Microsoft.Build
 
 En la tabla siguiente se describen los parámetros de la clase base **TrackedVCToolTask**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parámetro **bool** opcional.|
 |**EnableExecuteTool**|Parámetro **bool** opcional.|

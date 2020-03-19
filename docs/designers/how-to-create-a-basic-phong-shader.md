@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador Phong básico
+title: 'Cómo: Crear un sombreador Phong básico'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3059048f44524b9a838a8dfefc948ec4018dd05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589492"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
+# <a name="how-to-create-a-basic-phong-shader"></a>Cómo: Crear un sombreador Phong básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación Phong clásico.
 
@@ -27,7 +27,7 @@ Para obtener más información sobre el modelo de iluminación Lambert, vea [Có
 
 Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
-1. Cree un sombreador Lambert, como se explica en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Cree un sombreador Lambert, como se describe en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
@@ -57,12 +57,12 @@ La siguiente ilustración muestra el sombreador descrito en este documento aplic
 
 ![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png)
 
-Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)
+- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Cómo: crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

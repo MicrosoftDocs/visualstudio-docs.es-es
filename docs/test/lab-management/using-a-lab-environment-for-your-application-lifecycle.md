@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847291"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
@@ -28,7 +28,7 @@ Un entorno de laboratorio es una colección de máquinas virtuales y físicas qu
 
 Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 
-| Topología | Descripción |
+| Topología | Description |
 |---|---|
 |![Topología de servidor único](../media/topology_backend.png)| Este entorno de laboratorio tiene una *topología de servidores*, que suele usarse para ejecutar pruebas manuales en aplicaciones de servidor y que permite a los evaluadores usar sus propios equipos cliente para comprobar errores en el entorno. En una topología de backend, el entorno de laboratorio solo contiene servidores. Al usar este tipo de topología, normalmente se conecta a los servidores del entorno de laboratorio mediante un equipo cliente que no forma parte del entorno.|
 |![Entorno de laboratorio en la nube](../media/topology_cloud.png)| Este entorno de laboratorio proporciona funciones y características similares como la _topología de servidores_, pero elimina la necesidad de que las máquinas virtuales o físicas se ejecuten en un entorno local; lo que puede reducir el tiempo de preparación, simplificar el mantenimiento y minimizar costos. Configurar varios sitios web y máquinas vituales, junto con redes personalizadas, es rápido y sencillo en un entorno de nube como Microsoft Azure.|
@@ -81,9 +81,9 @@ Los **entornos de SCVMM** solo pueden contener máquinas virtuales administradas
 
 - **Aislamiento de red:** el aislamiento de red permite ejecutar de forma simultánea varias copias idénticas de un entorno de SCVMM sin que se produzcan conflictos de nombre de equipo.
 
-- **Plantillas de máquina virtual:** una plantilla de máquina virtual es una máquina virtual de la que se han eliminado el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
+- **Plantillas de máquinas virtuales:** una plantilla de máquina virtual es una máquina virtual de la que se eliminaron el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
 
-- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca de proyecto y que incluye identificadores únicos.
+- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca del proyecto y que incluye identificadores únicos.
 
 > [!NOTE]
 > Lab Management no admite SCVMM 2016.
@@ -114,7 +114,7 @@ Los entornos estándar y los entornos de SCVMM admiten un gran número de caract
 
 Estos son algunos conceptos adicionales que es importante que conozca antes de continuar:
 
-|Término|Descripción|
+|Término|Description|
 |-|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
 |Laboratorio de proyecto de Azure DevOps|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|

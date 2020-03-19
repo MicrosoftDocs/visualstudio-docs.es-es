@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
+title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114466"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. 
 
@@ -46,13 +46,13 @@ También puede generar registros mediante la ejecución directa de MSBuild desde
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación
 
-1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
 2. En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.
 
 3. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.
 
-    |Nivel de detalle|Descripción|
+    |Nivel de detalle|Description|
     | - |-----------------|
     |**Silencioso**|Muestra un resumen solo de la compilación.|
     |**Mínima**|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950660"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
@@ -39,7 +39,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   Opcional. Uno o más archivos adicionales que se abrirán en la instancia existente de Visual Studio.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este modificador oculta la pantalla de presentación. Al omitir el modificador, se mostrará la pantalla de presentación. Para examinar con más detalle la pantalla de presentación (por ejemplo, para comprobar el icono del producto de VSPackage), use el modificador [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 

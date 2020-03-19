@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b26b913a42a563e0226ff2697b947684dfec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553063"
 ---
 # <a name="cores-view"></a>Vista de núcleos
@@ -29,4 +29,4 @@ ms.locfileid: "62553063"
 ## <a name="see-also"></a>Vea también
 - [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)
 - [Vista Utilización](../profiling/utilization-view.md)
-- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

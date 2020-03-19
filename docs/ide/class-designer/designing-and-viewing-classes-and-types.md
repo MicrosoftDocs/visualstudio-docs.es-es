@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590402"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Diseñar y ver clases y tipos con el Diseñador de clases
@@ -29,11 +29,11 @@ Diseñe, visualice y refactorice clases y otros tipos del código con el **Dise�
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Qué puede hacer con los diagramas de clases
 
-- **Diseñar**: Edite el código del proyecto al modificar el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.
+- **Diseñar**: edite el código del proyecto modificando el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.
 
-- **Visualizar**: Comprenda la estructura del proyecto al ver las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.
+- **Visualizar**: comprenda la estructura del proyecto viendo las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.
 
-- **Refactorizar**: Reemplace métodos, cambie el nombre de identificadores, refactorice parámetros e implemente interfaces y clases abstractas.
+- **Refactorizar**: reemplace métodos, cambie el nombre de los identificadores, refactorice parámetros e implemente interfaces y clases abstractas.
 
 ## <a name="view-types-and-relationships"></a>Ver tipos y relaciones
 
@@ -48,9 +48,9 @@ Los diagramas de clases pueden ayudarle a entender la estructura de clases de lo
 
 El primer paso para presentar la información del proyecto es crear un diagrama de clases que muestre lo que quiera mostrar. Para más información, vea [Agregar un diagrama de clases](how-to-add-class-diagrams-to-projects.md). Puede crear varios diagramas de clases para un proyecto y utilizarlos para mostrar una vista única del proyecto, un subconjunto determinado de tipos del proyecto o un subconjunto determinado de miembros de tipos.
 
-Además de definir lo que muestra cada diagrama de clases, puede cambiar la forma en la que se presenta la información; para obtener más información, vea [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md).
+Además de definir lo que muestra cada diagrama de clases, puede cambiar la forma en la que se presenta la información. Para más información, vea [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md).
 
-Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para obtener más información, vea [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md) y [Cómo: Exportar diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md).
+Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para más información, vea [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md) y [Cómo: Exportar los diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md).
 
 > [!NOTE]
 > El Diseñador de clases no realiza un seguimiento de la ubicación de los archivos de origen, por lo que cambiar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo, especialmente el tipo de origen de una typedef, de clases base o de tipos de asociación. Puede que reciba un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.

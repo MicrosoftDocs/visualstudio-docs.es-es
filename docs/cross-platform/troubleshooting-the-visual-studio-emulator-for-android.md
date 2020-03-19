@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77272070"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
@@ -25,7 +25,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!WARNING]
 > Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.
 
- En este tema se incluyen las siguientes secciones.
+ Este tema contiene las siguientes secciones:
 
 - [Antes de empezar](#BeforeYouStart)
 
@@ -49,7 +49,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 - [No se puede conectar el depurador a un proyecto Xamarin](#Skylake)
 
-- [El emulador no puede ejecutar la aplicación que usa Google Play Services](#GooglePlay)
+- [El emulador no puede ejecutar la aplicación que usa los servicios de Google Play](#GooglePlay)
 
 - [La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona](#DragAndDrop)
 
@@ -175,7 +175,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
      - Deshabilitar Trusted Execution
 
-       Para obtener más información, vea este artículo: Technet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Solución de errores de BIOS con Hyper-V)
+       Para obtener más información, vea este artículo: Technet: Hyper-V: Cómo corregir errores de BIOS habilitando Hyper-V.
 
   5. Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.
 
@@ -256,7 +256,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
   Para solucionar este problema, deshabilite USB3 en la configuración de la BIOS de la placa base y reinicie el equipo. Después, compruebe si Gigabyte ha publicado una actualización para la BIOS de su placa base.
 
-  Para obtener más información, consulte el artículo siguiente de Knowledge Base: [Error de arranque después de instalar el rol de Hyper-V en sistemas Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
+  Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:
@@ -270,7 +270,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   Reinicie el emulador; ahora debería verlo conectado a ADB y a las herramientas Android asociadas.
 
 ## <a name="XamarinPlayer"></a> El emulador deja de responder porque no pudo configurar el puerto UDP.
- Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "The emulator is unable to connect to the device operating system: Couldn't set up the UDP port.  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:
+ Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "El emulador no puede conectarse al sistema operativo del dispositivo: No se pudo configurar el puerto UDP".  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:
 
 1. Desinstale Xamarin Player.
 
@@ -295,7 +295,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 
 6. Reinicie el servicio (en **Acciones**) e inténtelo de nuevo.
 
-## <a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services
+## <a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa los servicios de Google Play
  El emulador no se distribuye con las bibliotecas de los servicios de Google Play. Sin embargo, el emulador no admite la instalación de archivos zip con memoria Flash mediante arrastrar y soltar.
 
 ## <a name="DragAndDrop"></a> La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona

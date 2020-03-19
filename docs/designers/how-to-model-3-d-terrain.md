@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Modelar un terreno en 3D
+title: 'Cómo: modelar un terreno en 3D'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589427"
 ---
-# <a name="how-to-model-3d-terrain"></a>Procedimiento Modelar un terreno en 3D
+# <a name="how-to-model-3d-terrain"></a>Cómo: Modelar un terreno en 3D
 
 En este artículo se muestra cómo usar el Editor de modelos para crear un modelo de terreno en 3D.
 
@@ -53,7 +53,7 @@ El modelo de terreno está completado. Este es el modelo final de nuevo, con som
 
 ![Escena 3D en la que se muestra un modelo de terreno](../designers/media/digit-terrain-model.png)
 
-Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de degradado basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Vea también
 

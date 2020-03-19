@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591091"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos, todos los proyectos de la plantilla se agregan a la solución.
 

@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594765"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
 Tanto el controlador de pruebas como el agente de prueba tienen varias configuraciones de tiempo de espera que especifican cuánto tiempo deben esperar las respuestas el uno del otro, o de un origen de datos antes de que se genere un error. En ciertas circunstancias, podría ser necesario editar los valores de tiempo de espera para satisfacer las necesidades de su topología u otros problemas del entorno. Para editar los valores de tiempo de espera, edite el archivo de configuración XML asociado al controlador de pruebas o al agente de prueba, como se explica en los procedimientos siguientes.
 
@@ -28,7 +28,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 
 - Controlador de pruebas: *QTController.exe.config*
 
-    |Nombre de clave|Descripción|Valor|
+    |Nombre de clave|Description|Valor|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Número de segundos que se va a esperar la solicitud de ping del agente antes de que la conexión se considere perdida.|"n" segundos.|
     |AgentSyncTimeoutInSeconds|Al iniciar una ejecución de pruebas de sincronización, número de segundos que se va a esperar para que todos los agentes se sincronicen antes de anular la ejecución.|"n" segundos.|
@@ -37,7 +37,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 
 - Agente de pruebas: *QTAgentService.exe.config*
 
-    |Nombre de clave|Descripción|Valor|
+    |Nombre de clave|Description|Valor|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Número de segundos entre los intentos de conectarse al controlador.|"n" segundos. Predeterminado: "30" (treinta segundos).|
     |RemotingTimeoutSeconds|Tiempo máximo que puede durar una llamada de comunicación remota en segundos.|"n" segundos. Predeterminado: "600" (diez minutos).|
@@ -117,4 +117,4 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Cómo: Enlazar Test Controller o Test Agent a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

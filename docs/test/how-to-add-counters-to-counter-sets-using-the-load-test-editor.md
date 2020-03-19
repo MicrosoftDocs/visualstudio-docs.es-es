@@ -11,13 +11,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594346"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedimiento Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -53,7 +53,7 @@ Los contadores se administran en el **Editor de pruebas de carga**. Los conjunto
 
 6. Seleccione un contador y una instancia para agregar al conjunto de contadores personalizado.
 
-     \- o -
+     \- O bien
 
      Seleccione el botón de radio **Todos los contadores** para seleccionar todos los contadores disponibles.
 

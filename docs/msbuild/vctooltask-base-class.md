@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591676"
 ---
 # <a name="vctooltask-base-class"></a>Clase base VCToolTask
@@ -26,7 +26,7 @@ En última instancia, muchas tareas se heredan de la clase <xref:Microsoft.Build
 
 En la tabla siguiente se describen los parámetros de la clase base **VCToolTask**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**ActiveToolSwitchesValues**|Parámetro **Dictionary\<string, ToolSwitch>** opcional.|
 |**AdditionalOptions**|Parámetro **string** opcional.|

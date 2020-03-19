@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75718641"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
@@ -76,4 +76,4 @@ También puede modificar el acceso directo a la aplicación para ejecutarla siem
 ## <a name="see-also"></a>Vea también
 
 - [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
-- [Instalar Visual Studio](../install/install-visual-studio.md)
+- [Instalación de Visual Studio](../install/install-visual-studio.md)

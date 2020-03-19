@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593296"
 ---
 # <a name="getoutputfilename-task"></a>Tarea GetOutputFileName
@@ -32,7 +32,7 @@ Tarea asistente para obtener el nombre de archivo de salida para cl y otras herr
 
 En la tabla siguiente se describen los parámetros de la tarea **GetOutputFileName**.
 
-|Parámetro|Descripción|
+|Parámetro|Description|
 |---------------|-----------------|
 |**OutputExtension**|Parámetro obligatorio de tipo **String**.|
 |**OutputFile**|Parámetro de salida **string** opcional.|

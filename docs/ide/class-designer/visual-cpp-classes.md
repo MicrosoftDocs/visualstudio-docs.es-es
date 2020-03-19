@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590740"
 ---
 # <a name="c-classes-in-class-designer"></a>Clases de C++ en el Diseñador de clases
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-También puede arrastrar únicamente la clase B al diagrama de clases, hacer clic con el botón derecho en la forma de clase de B y hacer clic en **Mostrar clases base**. De este modo se muestra su clase base: R.
+También puede arrastrar únicamente la clase B al diagrama de clases, hacer clic con el botón derecho en la forma de clase de B y hacer clic en **Mostrar clases base**. De este modo se muestra su clase base: A.
 
 ## <a name="multiple-inheritance"></a>Herencia múltiple
 
@@ -129,7 +129,7 @@ Para más información sobre las clases anónimas, vea [Tipos de clase anónima]
 
 El **Diseñador de clases** admite la visualización de clases de plantillas. Se admiten las declaraciones anidadas. En la tabla siguiente se muestran algunas declaraciones típicas.
 
-| elemento Code | Vista Diseñador de clases |
+| Elemento de código | Vista Diseñador de clases |
 | - | - |
 | `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> Clase de plantilla |
 | `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Clase de plantilla |

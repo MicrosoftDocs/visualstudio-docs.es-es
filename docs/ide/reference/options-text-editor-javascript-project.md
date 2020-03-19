@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605922"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opciones, Editor de texto, JavaScript, Proyecto
@@ -60,7 +60,7 @@ Estas opciones determinan cómo el editor trata los archivos TypeScript que no f
 
 ### <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|DESCRIPCIÓN|
+|Opción|Description|
 |------------|-----------------|
 |**React Framework**|Cuando se selecciona esta opción, el Editor de código emite una extensión de archivo *.js*.|
 |**Preserve**|Cuando se selecciona esta opción, el Editor de código mantiene el archivo JSX como parte de la salida y emite una extensión de archivo *.jsx*.|

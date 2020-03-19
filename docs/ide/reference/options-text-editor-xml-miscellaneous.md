@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568131"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opciones, editor de texto, XML y varios
@@ -43,7 +43,7 @@ Se completan automáticamente comentarios, CDATA, DOCTYPE, instrucciones de proc
 
 Los esquemas y las definiciones de tipo de documento (DTD) se descargan automáticamente desde ubicaciones HTTP. Esta característica usa System.Net con la detección automática del servidor proxy habilitada. Esta casilla se encuentra activada de forma predeterminada.
 
-## <a name="outlining"></a>esquematizar
+## <a name="outlining"></a>Esquematización
 
 **Especificar el modo de esquematización al abrir los archivos**
 

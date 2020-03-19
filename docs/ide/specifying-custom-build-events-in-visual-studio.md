@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115335"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
@@ -24,9 +24,9 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
 Para obtener información específica sobre el lenguaje de programación que está usando, vea los temas siguientes:
 
-- Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic: [Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# y F#: [Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++: [Especificar eventos de compilación](/cpp/build/specifying-build-events).
 
@@ -60,4 +60,4 @@ Para obtener mejores resultados, siga estas sugerencias de formato:
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)
 - [Pre-build Event/Post-build Event command line dialog box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) (Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo))
 - [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md)
-- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md)
+- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)

@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114664"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
@@ -38,7 +38,7 @@ Hay tres opciones para instalar o actualizar los certificados en un entorno sin 
 
 Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados si hace clic con el botón derecho en cada uno de los archivos de certificado, selecciona Instalar certificado y, por último, hace clic en los sucesivos pasos del asistente Administrador de certificados.
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los comandos siguientes:
+   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -140,7 +140,7 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
   * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
     * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contiene:
-  * Certificado intermedio: **Microsoft Time-Stamp PCA 2010**
+  * Certificado intermedio: **Marca de tiempo de Microsoft PCA 2010**
     * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
   * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
     * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
@@ -150,7 +150,7 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
   * Certificado raíz: **Entidad de certificación raíz de Microsoft**
     * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz. Estos certificados se almacenan en archivos .cer en lugar de .p12.
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema. Estos certificados se almacenan en archivos .cer en lugar de .p12.
 
 ::: moniker-end
 
@@ -205,7 +205,7 @@ Después de instalar los certificados, la implementación de Visual Studio puede
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalar Visual Studio](install-visual-studio.md)
+* [Instalación de Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)

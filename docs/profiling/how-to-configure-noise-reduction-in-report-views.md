@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Configurar la reducción de ruido en las vistas de informes | Microsoft Docs
+title: 'Cómo: Configurar la reducción de ruido en las vistas de informes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,13 +16,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776337"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedimiento Configurar la reducción de ruido en las vistas de informes
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
 Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.
 
  Las opciones de configuración de reducción de ruido incluyen:
@@ -79,6 +79,6 @@ Los informes de rendimiento pueden configurarse para la reducción de ruido limi
 
 ## <a name="see-also"></a>Vea también
 - [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)
-- [Cómo: Excluir o incluir funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Exclusión o inclusión de funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Vista Árbol de llamadas](../profiling/call-tree-view.md)
 - [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)

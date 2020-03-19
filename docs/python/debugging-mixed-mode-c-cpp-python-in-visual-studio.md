@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75679005"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
@@ -38,7 +38,7 @@ Las características de depuración en modo mixto incluyen las siguientes opcion
 
 |   |   |
 |---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 minutos 09 segundos). El vídeo se aplica a Visual Studio 2015 y 2017. |
+| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 m 09 s). El vídeo se aplica a Visual Studio 2015 y 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitación de la depuración en modo mixto en un proyecto de Python
 
@@ -171,8 +171,8 @@ El depurador en modo mixto se diferencia del [depurador estándar de Python](deb
 
 - Características no admitidas: puntos de interrupción condicionales, ventana **Interactiva de depuración** y depuración remota entre plataformas.
 - Ventana **Inmediato**: está disponible, pero con un subconjunto limitado de su funcionalidad, incluidas todas las limitaciones aquí indicadas.
-- Versiones admitidas de Python: Solo CPython 2.7 y 3.3+.
-- Visual Studio Shell: cuando se usa Python con Visual Studio Shell (por ejemplo, si se ha instalado con el instalador integrado), Visual Studio no puede abrir proyectos de C++ y la experiencia de edición de archivos de C++ es simplemente la de un editor de texto básico. Sin embargo, la depuración de C/C++ y la depuración en modo mixto se admiten completamente en Shell con código fuente, depuración paso a paso por instrucciones del código nativo y evaluación de expresiones de C++ en ventanas del depurador.
+- Admite versiones de Python: solo CPython 2.7 y 3.3 +.
+- Visual Studio Shell: cuando se usa Python con Visual Studio Shell (por ejemplo, si se ha instalado con el instalador integrado), Visual Studio no puede abrir proyectos de C++ y la experiencia de edición de archivos de archivos de C++ es simplemente la de un editor de texto básico. Sin embargo, la depuración de C/C++ y la depuración en modo mixto se admiten completamente en Shell con código fuente, depuración paso a paso por instrucciones del código nativo y evaluación de expresiones de C++ en ventanas del depurador.
 - Visualización y expansión de objetos: al visualizar objetos de Python en las ventanas de herramientas del depurador **Variables locales** e **Inspección**, el depurador en modo mixto muestra solo la estructura de los objetos. No evalúa automáticamente las propiedades ni muestra atributos calculados. Para colecciones, solo muestra elementos para tipos de colección integrados (`tuple`, `list`, `dict`, `set`). Los tipos de colección personalizados no se visualizan como colecciones, a menos que se hereden de algún tipo de colección integrado.
 - Evaluación de expresiones: consulte a continuación.
 

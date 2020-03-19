@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590766"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase
@@ -28,7 +28,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 Se admiten las siguientes acciones del mouse en los diagramas de clases:
 
-|Combinación del mouse|Contexto|Descripción|
+|Combinación del mouse|Contexto|Description|
 | - |-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
 |Doble clic|Conector de círculo|Expandir o contraer el círculo.|
@@ -56,7 +56,7 @@ Puede usar un mouse para cambiar la apariencia de la ventana **Detalles de clase
 
 Se admiten las siguientes acciones del teclado en los diagramas de clases:
 
-|Key|Contexto|Descripción|
+|Clave|Contexto|Description|
 |---------|-------------|-----------------|
 |**Teclas de dirección**|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
 |**Teclas de dirección**|Formas de nivel superior|Mover las formas en el diagrama.|
@@ -89,7 +89,7 @@ Use las siguientes teclas para navegar por la ventana **Detalles de clase**:
 
 |||
 |-|-|
-|Key|Resultado|
+|Clave|Resultado|
 |**,** (coma)|Si el cursor está en una fila de parámetro, al escribir una coma, se mueve al campo Nombre del parámetro siguiente. Si el cursor está en la última fila de parámetro de un método, se mueve al campo \<Agregar parámetro>, que permite crear un parámetro nuevo.<br /><br /> Si el cursor está en otra parte de la ventana **Detalles de clase**, al escribir una coma se agrega literalmente una coma al campo actual.|
 |**;** (punto y coma) o **)** (paréntesis de cierre)|Mueve el cursor al campo Nombre de la siguiente fila de miembro en la cuadrícula de la ventana **Detalles de clase**.|
 |**Tabulación**|Mueve el cursor al siguiente campo, primero de izquierda a derecha y luego de arriba abajo. Si el cursor se está moviendo desde un campo en el que se ha escrito texto, **Detalles de clase** procesa ese texto y lo almacena, siempre que no genere ningún error.<br /><br /> Si el cursor está en un campo vacío, como \<Agregar parámetro>, la tecla Tabulador lo mueve al primer campo de la fila siguiente.|

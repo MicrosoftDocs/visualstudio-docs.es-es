@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001083"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Espacio de nombres de simultaneidad (Visualizador de simultaneidad)
@@ -28,16 +28,16 @@ El espacio de nombres `Concurrency` proporciona las clases y funciones que dan a
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="namespaces"></a>Espacios de nombres
 
-|nombre|Descripción|
+|Name|Description|
 |----------|-----------------|
-|[diagnostic (espacio de nombres)](../profiling/diagnostic-namespace.md)|El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.|
+|[diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)|El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.|
 
 ## <a name="requirements"></a>Requisitos
  **Encabezado:** cvmarkersobj.h
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de la biblioteca C](../profiling/c-library-reference.md)
+- [Referencia de la biblioteca de C](../profiling/c-library-reference.md)

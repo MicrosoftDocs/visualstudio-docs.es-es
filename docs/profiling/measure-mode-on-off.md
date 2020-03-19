@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830829"
 ---
 # <a name="measure-mode-onoff"></a>Activar/desactivar el modo de medición
@@ -27,4 +27,4 @@ Con esta herramienta, se puede medir con exactitud un período de tiempo en la e
 ## <a name="see-also"></a>Vea también
 - [Administrar canales](../profiling/manage-channels.md)
 - [Control de zoom (vista Subprocesos)](../profiling/zoom-control-threads-view.md)
-- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

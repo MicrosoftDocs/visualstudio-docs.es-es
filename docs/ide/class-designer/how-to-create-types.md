@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear tipos con el Diseñador de clases
+title: 'Cómo: Crear tipos con el Diseñador de clases'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590181"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Procedimiento Crear tipos con el Diseñador de clases
+# <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 
-Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para visualizar los tipos existentes, vea [Cómo: Ver tipos existentes](how-to-view-existing-types.md).
+Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para ver los tipos existentes, vea [Cómo: Ver los tipos existentes](how-to-view-existing-types.md).
 
 ## <a name="CreateType"></a> Crear un tipo nuevo
 
@@ -63,7 +63,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
     |Enumeraciones|Valores de campo que constituyen la enumeración|
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|
     |delegado|Parámetros que definen el delegado|
-    |Module|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|
+    |Módulo|Métodos, propiedades, campos, eventos, constructores (método) y constantes que definen el módulo|
 
      Vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
 
@@ -89,7 +89,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md)
+- [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Crear asociaciones entre tipos](how-to-create-associations-between-types.md)
 - [Creación y configuración de miembros de tipo](creating-and-configuring-type-members.md)
 - [Diseño de clases y tipos](designing-and-viewing-classes-and-types.md)

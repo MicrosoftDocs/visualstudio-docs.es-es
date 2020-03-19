@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62789647"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurar la confianza de archivos y carpetas
@@ -37,9 +37,9 @@ Para cambiar la configuración de confianza, siga estos pasos:
 
    * **Sin comprobación**: Visual Studio no realiza ninguna comprobación.
 
-   * **Comprobar la marca del atributo de web**: Si el archivo o la carpeta tiene la marca del atributo de web, Visual Studio se bloquea y solicita permiso para abrirlo.
+   * **Comprobar la marca del atributo de web**: si el archivo o la carpeta tiene la marca del atributo de web, Visual Studio se bloquea y solicita permiso para abrirlo.
 
-   * **Comprobar si la ruta de acceso es de confianza**: Si el archivo o la carpeta no forma parte de la lista **Rutas de acceso de confianza**, Visual Studio se bloquea y solicita permiso para abrirlo.
+   * **Comprobar si la ruta de acceso es de confianza**: si el archivo o la carpeta no forma parte de la lista **Rutas de acceso de confianza**, Visual Studio se bloquea y solicita permiso para abrirlo.
 
    ![Opciones de comprobación de confianza](media/trust-settings.png)
 

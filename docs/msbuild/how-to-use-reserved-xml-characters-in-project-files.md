@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar caracteres XML reservados en archivos de proyecto | Microsoft Docs
+title: 'Cómo: Utilizar caracteres XML reservados en archivos de proyecto | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633777"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedimiento Usar caracteres XML reservados en archivos de proyecto
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Cómo: Usar caracteres XML reservados en archivos de proyecto
 
 Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reservados, por ejemplo, en los valores de propiedad o en los valores de parámetro de la tarea. Sin embargo, algunos caracteres reservados se deben reemplazar por una entidad con nombre para que se pueda analizar el archivo del proyecto.
 

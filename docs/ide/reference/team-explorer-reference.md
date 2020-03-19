@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74538577"
 ---
 # <a name="team-explorer-reference"></a>Referencia de Team Explorer
@@ -102,7 +102,7 @@ Vea:
 
 La página **Configuración** permite configurar las características administrativas de un proyecto o una colección de proyectos. Vea los artículos siguientes:
 
-| Proyecto | Colección de proyectos | Otros |
+| Proyecto | Colección de proyectos | Otro |
 | - | - | - |
 | [Seguridad, Pertenencia a grupos](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Seguridad, Control de código fuente (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Áreas de elementos de trabajo](/azure/devops/organizations/settings/set-area-paths)<br/>[Iteraciones de elementos de trabajo](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Configuración del portal](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertas del proyecto](/azure/devops/notifications/howto-manage-team-notifications) | [Seguridad, Pertenencia a grupos](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Control de código fuente (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Administrador de plantillas de procesos](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Configuración global de Git](/azure/devops/repos/git/git-config)<br/>[Configuración de repositorios de Git](/azure/devops/repos/git/git-config) |
 

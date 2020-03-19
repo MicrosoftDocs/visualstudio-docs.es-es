@@ -19,13 +19,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779173"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedimiento Asociar y desasociar las herramientas de rendimiento en los procesos en ejecución
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.
 
 > [!NOTE]
@@ -49,7 +49,7 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
 
 2. Haga clic en el nombre del proceso al que quiera asociar.
 
-3. Haga clic en **Asociar**.
+3. Haga clic en **Adjuntar**.
 
 ### <a name="to-detach-from-a-running-process"></a>Desasociar de un proceso en ejecución
 
@@ -64,6 +64,6 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
 ## <a name="see-also"></a>Vea también
 - [Control de la recopilación de datos](../profiling/controlling-data-collection.md)
 - [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
-- [Cómo: Iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Inicio y finalización de la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Generación de perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

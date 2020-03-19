@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592001"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Compatibilidad con idiomas bidireccionales en Visual Studio
@@ -74,7 +74,7 @@ A los siguientes elementos se les puede asignar nombre en árabe o hebreo y Visu
 
 ### <a name="file-encoding"></a>Codificación de archivos
 
-Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para obtener más información, vea [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
+Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para más información, consulte [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Lectura de derecha a izquierda
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969465"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
@@ -36,7 +36,7 @@ Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo
 
 ![Cuadro de diálogo Fragmentos de código de R](media/code-snippet-dialog.png)
 
-Para crear fragmentos de código personalizados, siga las instrucciones de [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente código es el fragmento de código de la operación de canalización (acceso directo `>`):
+Para crear fragmentos de código personalizados, siga las instrucciones en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente código es el fragmento de código de la operación de canalización (acceso directo `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

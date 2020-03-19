@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exportar los diagramas de clases como imágenes (Diseñador de clases)
+title: 'Cómo: Exportar los diagramas de clases como imágenes (Diseñador de clases)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590142"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Procedimiento Exportar diagramas de clases como imágenes
+# <a name="how-to-export-class-diagrams-as-images"></a>Cómo: Exportar los diagramas de clases como imágenes
 
 Para exportar un diagrama de clase creado a partir de código del proyecto, guárdelo como una imagen. Si quiere exportar los diagramas de clase UML en su lugar, consulte [Exportar diagramas como imágenes](../../modeling/export-diagrams-as-images.md).
 

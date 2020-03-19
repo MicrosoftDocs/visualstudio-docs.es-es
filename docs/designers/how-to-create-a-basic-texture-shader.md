@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un sombreador de textura básico
+title: 'Cómo: Crear un sombreador de textura básico'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac74155b8de4669d959d9b14e9be20ada2ec51d9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589479"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Procedimiento Crear un sombreador de textura básico
+# <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de una textura. Este sombreador establece directamente el color final en los valores RGB y alfa muestreados de la textura.
 
@@ -52,7 +52,7 @@ Es posible que algunas formas proporcionen mejores vistas previas para algunos s
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Image Editor](../designers/image-editor.md)
+- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Editor de imágenes](../designers/image-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)
