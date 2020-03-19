@@ -32,10 +32,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570068"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Cuadro de diálogo Opciones: Entorno \> Documentos

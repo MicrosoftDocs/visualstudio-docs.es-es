@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778601"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
@@ -39,7 +39,7 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
 
   En la siguiente tabla se describen las columnas del informe de vista de líneas.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |------------|-----------------|
 |**Tiempo de bloqueo exclusivo**|La cantidad de tiempo durante el cual esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluye el tiempo de bloqueo de las funciones a las que llamó la instrucción.|
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo exclusivo de la instrucción.|

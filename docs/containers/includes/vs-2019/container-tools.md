@@ -8,10 +8,10 @@ ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76922983"
 ---
 Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.

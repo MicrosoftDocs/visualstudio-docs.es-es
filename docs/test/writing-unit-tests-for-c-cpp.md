@@ -1,19 +1,19 @@
 ---
 title: Escritura de pruebas unitarias para C/C++
 description: Escriba pruebas unitarias de C++ en Visual Studio usando varias plataformas de trabajo de prueba, como CTest, Boost.Test y Google Test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755591"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78937550"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -41,7 +41,7 @@ Los proyectos de prueba unitaria de C++ admiten [CodeLens](../ide/find-code-chan
 
 - **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Se integra con el **Explorador de pruebas**, pero actualmente no tiene una plantilla de proyecto. Debe configurarse de forma manual. Para obtener más información, vea [Cómo: Utilizar Boost.Test en Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La compatibilidad con **CTest** se incluye con el componente **Herramientas de CMake en C++** , que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Sin embargo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para obtener más información, vea [Cómo: Utilizar CTest en Visual Studio](how-to-use-ctest-for-cpp.md).
+- La compatibilidad con **CTest** se incluye con el componente **Herramientas de CMake en C++** , que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Para obtener más información, vea [Cómo: Utilizar CTest en Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 y anterior**
 

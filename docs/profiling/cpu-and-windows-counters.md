@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779555"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
@@ -96,7 +96,7 @@ Para enumerar los contadores disponibles en un equipo en el IDE de Visual Studio
 
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.
 
-     O bien
+     o bien
 
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.
 

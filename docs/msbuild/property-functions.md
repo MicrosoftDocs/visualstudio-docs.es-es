@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597391"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307194"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
-En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para evaluar los scripts de MSBuild. Las funciones de propiedad se pueden usar siempre que aparezcan propiedades. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.
+Las funciones de propiedad son llamadas a métodos de .NET Framework que aparecen en las definiciones de propiedad de MSBuild. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.
 
- Se puede leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones en el script de compilación sin usar tareas de MSBuild. MSBuild intentará convertir la cadena en números y los números en cadena, y realizar otras conversiones que sean necesarias.
- 
+Se puede leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones en el script de compilación sin usar tareas de MSBuild. MSBuild intentará convertir la cadena en números y los números en cadena, y realizar otras conversiones que sean necesarias.
+
 Los valores de cadena devueltos por las funciones de propiedad tienen [caracteres especiales](msbuild-special-characters.md) con secuencia de escape. Si quiere que el valor se considere como si se hubiese implementado directamente en el archivo del proyecto, use `$([MSBuild]::Unescape())` para quitar las secuencias de escape de los caracteres especiales.
+
+Las funciones de propiedad están disponibles con .NET Framework 4 y versiones posteriores.
 
 ## <a name="property-function-syntax"></a>Sintaxis de las funciones de propiedad
 
@@ -37,7 +39,7 @@ Hay tres tipos de funciones de propiedad, cada una con una sintaxis diferente:
 
 Todos los valores de las funciones compiladas son solo valores de cadena. Puede usar los métodos de cadena (instancia) para operar en cualquier valor de propiedad. Por ejemplo, puede usar este código para extraer el nombre de unidad (los primeros tres caracteres) de una propiedad de compilación que representa una ruta completa:
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 En el script de compilación, puede acceder a las propiedades y método estáticos de muchas clases del sistema. Para obtener el valor de una propiedad estática, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema y \<Property> es el nombre de la propiedad.
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ Por ejemplo, puede usar el código siguiente para establecer una propiedad de co
 
 Para llamar a un método estático, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Method> es el nombre del método y (\<Parameters) es la lista de parámetros del método:
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ Además, puede usar los siguientes métodos y propiedades estáticos:
 
 Si accede a una propiedad estática que devuelve una instancia de objeto, puede invocar los métodos de instancia de ese objeto. Para llamar a un método de instancia, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Property> es el nombre de la propiedad, \<Method> es el nombre del método y (\<Parameters>) es la lista de parámetros del método:
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ Por ejemplo, puede usar el código siguiente para establecer una propiedad de co
 
 Puede acceder a varios métodos estáticos de su compilación para proporcionar compatibilidad con operadores aritméticos, lógicos bit a bit y caracteres de escape. Para acceder a estos métodos, utilice la sintaxis siguiente, donde \<Method> es el nombre del método y (\<Parameters>) es la lista de parámetros del método.
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 Por ejemplo, para sumar dos propiedades que tienen valores numéricos, use el código siguiente.
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ Esta es una lista de las funciones de propiedad de MSBuild:
 |string NormalizePath(params string[] path)|Obtiene la ruta de acceso completa con formato canónico de la ruta proporcionada y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual.|
 |string NormalizeDirectory(params string[] path)|Obtiene la ruta de acceso completa con formato canónico del directorio proporcionado y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual mientras garantiza que tiene una barra diagonal final.|
 |string EnsureTrailingSlash(string path)|Si la ruta de acceso proporcionada no tiene una barra diagonal final, entonces agrega una. Si la ruta es una cadena vacía, no la modifica.|
-|string GetPathOfFileAbove(string file, string startingDirectory)|Busca un archivo basándose en la ubicación del archivo de compilación actual, o basándose en `startingDirectory`, si se ha especificado.|
-|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Busca un archivo en el directorio especificado o en una ubicación de la estructura de directorios por encima de ese directorio.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Busca y devuelve la ruta de acceso completa a un archivo en la estructura de directorios que está encima de la ubicación del archivo de compilación actual, o en función de `startingDirectory`, si se especifica.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Busca y devuelve el directorio de un archivo en el directorio especificado o en una ubicación de la estructura de directorios por encima de ese directorio.|
 |string MakeRelative(string basePath, string path)|Hace que `path` sea relativo a `basePath`. `basePath` debe ser un directorio absoluto. Si `path` no puede ser relativo, se devuelve textualmente. Similar a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Devuelve la cadena en el parámetro "defaultValue" solo si el parámetro "conditionValue" está vacío. De lo contrario, devuelve el valor conditionValue.|
 
@@ -181,7 +183,7 @@ Esta es una lista de las funciones de propiedad de MSBuild:
 
 Puede combinar funciones de propiedad para formar funciones más complejas, como muestra el siguiente ejemplo.
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ La función de propiedad `DoesTaskHostExist` de MSBuild devuelve si actualmente 
 
 Esta función de propiedad tiene la sintaxis siguiente:
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ La función de propiedad `EnsureTrailingSlash` de MSBuild agrega una barra diago
 
 Esta función de propiedad tiene la sintaxis siguiente:
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ La función de propiedad `GetDirectoryNameOfFileAbove` de MSBuild busca un archi
 
  Esta función de propiedad tiene la sintaxis siguiente:
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-La función de propiedad `GetPathOfFileAbove` de MSBuild devuelve la ruta de acceso del archivo inmediatamente anterior a este. Es funcionalmente equivalente a llamar a
+La función de propiedad `GetPathOfFileAbove` de MSBuild devuelve la ruta de acceso del archivo especificado, si se encuentra en la estructura de directorios por encima del directorio actual. Es funcionalmente equivalente a llamar a
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ La función de propiedad `GetPathOfFileAbove` de MSBuild devuelve la ruta de acc
 
 Esta función de propiedad tiene la sintaxis siguiente:
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ La función de propiedad `GetRegistryValue` de MSBuild devuelve el valor de una 
 
 En los ejemplos siguientes se muestra cómo usar esta función:
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ La función de propiedad `GetRegistryValueFromView` de MSBuild obtiene datos del
 
 La sintaxis de esta función de propiedad es:
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ Están disponibles las siguientes vistas del Registro:
 
 A continuación se muestra un ejemplo.
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ La función de propiedad `MakeRelative` de MSBuild devuelve la ruta de acceso re
 
 Esta función de propiedad tiene la sintaxis siguiente:
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 

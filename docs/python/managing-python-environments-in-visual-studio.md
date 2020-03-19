@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661941"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307164"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -157,10 +157,10 @@ Un entorno de Conda es el creado mediante la herramienta `conda` o con la admini
 
 1. Configure los campos siguientes:
 
-    | Campo | DESCRIPCIÓN |
+    | Campo | Descripción |
     | --- | --- |
     | Proyecto | Proyecto en el que se creará el entorno (si tiene varios proyectos en la misma solución de Visual Studio). |
-    | Name | Nombre del entorno de Conda. |
+    | NOMBRE | Nombre del entorno de Conda. |
     | Agregar paquetes desde | Elija **Archivo de entorno** si tiene un archivo *environment.yml* que describe las dependencias o elija **One or more Anaconda package names** (Uno o más nombres de paquetes de Anaconda) y muestre al menos un paquete de Python o una versión de Python en el campo a continuación. La lista de paquetes indica a Conda que cree un entorno de Python. Para instalar la versión más reciente de Python, use `python`; para instalar una versión específica, use `python=,major>.<minor>` como en `python=3.7`. También puede usar el botón del paquete para seleccionar las versiones de Python y los paquetes comunes en una serie de menús. |
     | Establecer como entorno actual | Activa el entorno nuevo en el proyecto seleccionado una vez que se crea el entorno. |
     | Establecer como entorno predeterminado para los nuevos proyectos | Establecer y activa automáticamente el entorno de Conda en los nuevos proyectos creados en Visual Studio. Esta opción es igual que usar el comando **Convertir este entorno en el predeterminado para nuevos proyectos** en la ventana **Entornos de Python**. |

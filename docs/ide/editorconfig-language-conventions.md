@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79306864"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 

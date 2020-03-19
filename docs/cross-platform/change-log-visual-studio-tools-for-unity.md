@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74706782"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
@@ -214,7 +214,7 @@ Publicada el 21 de mayo de 2019
 
   - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta `Packages`) y los paquetes locales (insertados en la carpeta `Packages`).
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Conservar las propiedades externas al procesar el archivo de solución.
 
@@ -270,7 +270,7 @@ Publicada el 31 de enero de 2019
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador `CS0649` y `IDE0051` en los proyectos de Unity que crearon estos mensajes.
 
@@ -406,7 +406,7 @@ Publicado el 13 de noviembre de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
 
@@ -464,7 +464,7 @@ Publicado el 24 de julio de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - (Trasladado de la versión 3.9.0.0) Se ha revertido la solución alternativa para un error de rendimiento de Unity que se había corregido en Unity.
 
@@ -474,7 +474,7 @@ Publicado el 7 de julio de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
 
@@ -514,7 +514,7 @@ Publicado el 30 de mayo de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - No convierta más archivos PDB portátiles a MDB con el nuevo entorno de ejecución de Unity.
 
@@ -554,7 +554,7 @@ Publicado el 7 de mayo de 2018
 
   - Se ha corregido el uso de valores de excepción.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se excluyen las unidades de compilación del administrador de paquetes de la generación.
 
@@ -564,7 +564,7 @@ Publicado el 13 de marzo de 2018
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con el nuevo generador de proyectos en Unity 2018.1.
 
@@ -584,7 +584,7 @@ Publicado el 5 de marzo de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la detección de la versión de Mono.
 
@@ -598,13 +598,13 @@ Publicado el 23 de febrero de 2018
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con .NET Standard.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la detección de la plataforma de destino de Unity.
 
@@ -646,7 +646,7 @@ Publicado el 10 de enero de 2018
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad para el modelo de referencia de MonoIsland 2018.1.
 
@@ -664,7 +664,7 @@ Publicado el 10 de enero de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido el cálculo del GUID de proyectos para los proyectos de jugador.
 
@@ -710,7 +710,7 @@ Publicado el 4 de diciembre de 2017
 
   - Se ha corregido un problema que hacía que el menú de ayuda de la API de Unity no se mostrara.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido un problema de generación de proyectos de reproductor al trabajar en un juego para UWP con el back-end IL2CPP/.NET 4.6.
 
@@ -726,7 +726,7 @@ Publicado el 19 de septiembre de 2017
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se agregó compatibilidad con las unidades de compilación assembly.json.
 
@@ -748,7 +748,7 @@ Publicado el 19 de septiembre de 2017
 
   - Se corrigieron los elementos generados mediante compilador con variables locales.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se corrigió la referencia al nivel de API de Microsoft.CSharp para 4.6.
 
@@ -758,7 +758,7 @@ Publicado el 15 de agosto de 2017
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la generación de soluciones de Visual Studio en Unity 5.5 y versiones anteriores.
 
@@ -820,7 +820,7 @@ Publicado el 7 de abril de 2017
 
   - Se ha agregado compatibilidad con el nuevo tiempo de ejecución de Unity (con compatibilidad con .NET 4.6 o C# 6).
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con el perfil de .NET 4.6.
 
@@ -836,7 +836,7 @@ Publicado el 7 de abril de 2017
 
   - Se ha corregido la posición del acento circunflejo después de insertar métodos con finalización automática.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha quitado el procesamiento posterior a la versión de ensamblado.
 
@@ -870,7 +870,7 @@ Publicado el 23 de enero de 2017
 
   - Se agregó una advertencia en el caso de un punto de interrupción desenlazable (cuando no se encuentra ninguna ubicación de origen correspondiente).
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se corrigió la generación de csproj con caracteres especiales o localizados.
 
@@ -915,7 +915,7 @@ Publicado el 17 de noviembre de 2016
 
   - Se agregaron mensajes de error mejorados cuando se espera un tipo o no se encuentra.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se quitó el sufijo CSharp de los nombres de proyecto.
 
@@ -943,7 +943,7 @@ Publicado el 17 de noviembre de 2016
 
   - Se corrigió la compatibilidad para la depuración de marcos de iterador con el nuevo compilador de C#.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se corrigió un error que impedía la compilación cuando el destino es el reproductor web de Unity.
 

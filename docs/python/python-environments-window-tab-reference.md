@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307122"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -60,7 +60,7 @@ A medida que usa las ventanas interactivas en su flujo de trabajo diario, probab
 
 Los scripts de inicio contienen código que la ventana **interactiva** carga y ejecuta automáticamente, como importaciones, definiciones de función y literalmente cualquier otra cosa. Hay dos maneras de hacer referencia a dichos scripts:
 
-1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio \<version>\Python Scripts\\\<environment>*, donde &lt;version&gt; corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
+1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* , donde &lt;version&gt; corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
 
 1. El control **Scripts** de la pestaña **Herramientas** > **Opciones** > **Python** > **Ventanas interactivas** (consulte [Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) pretende especificar una carpeta adicional para los scripts de inicio que se cargan y ejecutan en todos los entornos. No obstante, esta característica no funciona actualmente.
 
@@ -90,7 +90,7 @@ Si está disponible, la pestaña **Configurar** contiene detalles como se descri
 
 *También se etiqueta como "pip" en versiones anteriores*
 
-Administra los paquetes instalados en el entorno con pip (la pestaña **Paquetes (PyPI)**) o conda (la pestaña **Paquetes (Conda)** para entornos en la versión 15.7 y posteriores de Visual Studio 2017). En esta pestaña también se pueden buscar e instalar paquetes nuevos, incluidas sus dependencias.
+Administra los paquetes instalados en el entorno con pip (la pestaña **Paquetes (PyPI)** ) o conda (la pestaña **Paquetes (Conda)** para entornos en la versión 15.7 y posteriores de Visual Studio 2017). En esta pestaña también se pueden buscar e instalar paquetes nuevos, incluidas sus dependencias.
 
 Los paquetes que ya están instalados aparecen con controles para actualizar (una flecha hacia arriba) y desinstalar (la X en un círculo) el paquete:
 
@@ -105,7 +105,7 @@ Especifique los filtros de un término de búsqueda en la lista de paquetes inst
 ![Pestaña de los paquetes de los entornos de Python con una búsqueda en "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Como puede ver en la imagen anterior, los resultados de búsqueda muestran un número de paquetes que coinciden con el término de búsqueda; la primera entrada de la lista, sin embargo, es un comando para ejecutar **pip install \<name>** directamente. Si se encuentra en la pestaña **Paquetes (Conda)**, en su lugar verá **conda install \<name>**:
+Como puede ver en la imagen anterior, los resultados de búsqueda muestran un número de paquetes que coinciden con el término de búsqueda; la primera entrada de la lista, sin embargo, es un comando para ejecutar **pip install \<name>** directamente. Si se encuentra en la pestaña **Paquetes (Conda)** , en su lugar verá **conda install \<name>** :
 
 ::: moniker range="vs-2017"
 ![Pestaña de paquetes de Conda que muestra el comando conda install](media/environments/environments-conda-tab-install.png)
@@ -157,11 +157,11 @@ Muestra el estado actual de la base de datos de finalización de IntelliSense:
 ![Pestaña IntelliSense de entornos de Python](media/environments/environments-intellisense-tab.png)
 
 - En Visual Studio 2017, versión 15.5 y versiones anteriores, las finalizaciones de IntelliSense dependen de una base de datos que se han compilado para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede tardar un tiempo y es posible que no esté completa cuando comience a escribir código.
-- Visual Studio 2017, versión 15.6 y posteriores, usa un método más rápido para proporcionar las finalizaciones que no dependen de la base de datos de forma predeterminada. Por esta razón la pestaña se etiqueta como **IntelliSense [base de datos deshabilitada]**. Puede habilitar la base de datos si desactiva la opción **Herramientas** > **Opciones** > **Python** > **Experimental** > **Usar el nuevo estilo IntelliSense para los entornos**.
+- Visual Studio 2017, versión 15.6 y posteriores, usa un método más rápido para proporcionar las finalizaciones que no dependen de la base de datos de forma predeterminada. Por esta razón la pestaña se etiqueta como **IntelliSense [base de datos deshabilitada]** . Puede habilitar la base de datos si desactiva la opción **Herramientas** > **Opciones** > **Python** > **Experimental** > **Usar el nuevo estilo IntelliSense para los entornos**.
 
 Cuando Visual Studio detecta un nuevo entorno (o el usuario agrega uno), comienza a compilar automáticamente la base de datos analizando los archivos de origen de la biblioteca. Este proceso puede tardar desde un minuto a una hora o más dependiendo de lo que esté instalado. (Anaconda, por ejemplo, incluye muchas bibliotecas y tarda algún tiempo en compilar la base de datos.) Una vez finalizado, obtiene detalles de IntelliSense y no necesita actualizar la base de datos (con el botón **Refresh DB** (Actualizar base de datos)) hasta que instale más bibliotecas.
 
-Las bibliotecas para las que no se han compilado los datos se marcan con **!**; si la base de datos de un entorno no está completa, también aparece **!** junto a ella en la lista principal de entornos.
+Las bibliotecas para las que no se han compilado los datos se marcan con **!** ; si la base de datos de un entorno no está completa, también aparece **!** junto a ella en la lista principal de entornos.
 
 ::: moniker-end
 

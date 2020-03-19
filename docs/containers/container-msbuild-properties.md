@@ -7,10 +7,10 @@ ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71950697"
 ---
 # <a name="container-tools-build-properties"></a>Propiedades de compilación de las herramientas de contenedor
@@ -29,7 +29,7 @@ Puede agregar el valor de la propiedad a un elemento `PropertyGroup` existente o
 
 En la tabla siguiente se muestran las propiedades de MSBuild disponibles para proyectos de contenedor. La versión del paquete NuGet se aplica a [Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
-| Nombre de la propiedad | DESCRIPCIÓN | Valor predeterminado  | Versión del paquete NuGet|
+| Nombre de la propiedad | Descripción | Valor predeterminado  | Versión del paquete NuGet|
 |---------------|-------------|----------------|----------------------|
 | ContainerDevelopmentMode | Controla si la optimización de "compilación en host" (depuración en "modo rápido") está habilitada.  Los valores permitidos son **Rápido** y **Normal**. | Rápido |1.0.1872750 o más reciente|
 | ContainerVsDbgPath | La ruta de acceso para el depurador de VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 o más reciente|

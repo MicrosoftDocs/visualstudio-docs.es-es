@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853508"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Notificación de un problema: estados y preguntas frecuentes

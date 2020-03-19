@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 821e915a0b66f25c5b89a83b31e93b01aea6f400
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67292706"
 ---
 # <a name="move-type-to-namespace"></a>Traslado de tipo al espacio de nombres

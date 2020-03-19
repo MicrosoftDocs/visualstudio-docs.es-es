@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 3d4392eb75cab353b99a043ae2cd5e934ac8cb14
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431259"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -36,6 +36,7 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 | Nombre de la propiedad | Ubicación | Descripción | Valor predeterminado  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Esta opción permite especificar archivos de composición adicionales en una lista delimitada por signos de punto y coma que se envía a docker-compose.exe para todos los comandos. Se permiten las rutas de acceso relativas del archivo de proyecto docker-compose (dcproj).|-|
+|ContainerDevelopmentMode|dcproj| Controla si la optimización de "compilación en host" (depuración en "modo rápido") está habilitada.  Los valores permitidos son **Rápido** y **Normal**. | Rápido |
 |DockerComposeBaseFilePath|dcproj|Permite especificar la primera parte de los nombres de archivo de los archivos docker-compose, sin la extensión *.yml*. Por ejemplo: <br>1.  DockerComposeBaseFilePath = null/undefined: use la ruta de acceso del archivo base *docker-compose*; los archivos se denominarán *docker-compose.yml* y *docker-compose.override.yml*.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: los archivos se denominarán *mydockercompose.yml* y *mydockercompose.override.yml*.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: los archivos se subirán un nivel. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose build`. Por ejemplo, `--parallel --pull`. |
 |DockerComposeDownArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose down`. Por ejemplo, `--timeout 500`.|-|  

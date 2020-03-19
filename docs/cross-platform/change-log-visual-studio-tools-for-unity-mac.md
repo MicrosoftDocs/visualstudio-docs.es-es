@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771548"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
@@ -277,7 +277,7 @@ Publicada el 20 de marzo de 2019
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Conservar las propiedades externas al procesar el archivo de solución.
   
@@ -309,7 +309,7 @@ Publicada el 5 de marzo de 2019
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Los campos públicos y serializados ya no generarán advertencias. Hemos suprimido automáticamente las advertencias del compilador `CS0649` y `IDE0051` en los proyectos de Unity que crearon estos mensajes.
 
@@ -430,7 +430,7 @@ Publicado el 26 de junio de 2018
 
   - Corrección de un error ortográfico en el mensaje OnApplicationFocus.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
 
@@ -474,7 +474,7 @@ Publicado el 5 de marzo de 2018
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con el nuevo generador de proyectos en Unity 2018.1.
 
@@ -488,7 +488,7 @@ Publicado el 24 de enero de 2018
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido la detección de la versión de Mono.
 
@@ -514,7 +514,7 @@ Publicado el 13 de diciembre de 2017
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con .NET Standard.
 
@@ -562,7 +562,7 @@ Publicado el 23 de octubre de 2017
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha corregido un problema por el que la extensión .dll se agregaba erróneamente al nombre de archivo de ensamblado.
 
@@ -574,7 +574,7 @@ Publicado el 23 de octubre de 2017
 
 ### <a name="new-features"></a>Características nuevas
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se ha agregado compatibilidad con el perfil de .NET 4.6.
 
@@ -588,7 +588,7 @@ Publicado el 8 de agosto de 2017
 
   - Se inicia el cuadro de diálogo Asociar al proceso si no se está seguro de a qué Unity se asocia.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Habilite siempre el modificador de compilación no seguro cuando se use Unity 5.6.
 
@@ -612,7 +612,7 @@ Publicado el 12 de julio de 2017
 
   - Se ha agregado compatibilidad con la asociación a reproductores y editores a través de la ventana Asociar al proceso.
 
-- **Generación de proyectos:**
+- **Project Generation:**
 
   - Se corrigieron las referencias al nombre de ensamblado con archivos mcs.rsp.
 
