@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154892"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5: Uso de la plantilla de proyecto web de sondeos de Flask
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
 
-**Paso anterior: [Uso de la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Paso anterior: [Usar la plantilla completa de Proyecto web de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Flask" de Visual Studio, podemos analizar la tercera plantilla de Flask, "Proyecto web de Flask de sondeos", que se basa en el mismo código base.
 
@@ -34,7 +34,7 @@ En este paso aprenderá lo siguiente:
 
 Visual Studio también proporciona la plantilla "Proyecto web de Flask/Jade de sondeos", que genera una aplicación idéntica, pero usa la extensión de Jade para el motor de plantillas de Jinja. Para obtener información detallada, vea [Paso 4: Plantilla de proyecto web de Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Paso 5-1: Crear el proyecto
+## <a name="step-5-1-create-the-project"></a>Paso 5-1: crear el proyecto
 
 1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningFlask** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
@@ -110,7 +110,7 @@ class Choice(object):
 
 Estos modelos de datos son abstracciones genéricas con las que pueden funcionar las vistas de la aplicación en distintos tipos de almacenes de datos de copia de seguridad, que se describen en el siguiente paso.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Paso 5-3: Comprender los almacenes de datos de respaldo
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Paso 5-3: Comprender los almacenes de datos de copia de seguridad
 
 La aplicación creada por la plantilla "Proyecto web de Flask de sondeos" se puede ejecutar en un almacén de datos en memoria, en un almacenamiento de tablas de Azure o en una base de datos de MongoDB.
 
@@ -232,7 +232,7 @@ La llamada a `repository.add_sample_polls()` termina en una de las implementacio
 
 Una vez concluido dicho proceso, la instrucción `redirect('/')` del método `seed` vuelve a la página principal. Dado que `repository.get_polls` ahora devuelve un objeto de datos, las etiquetas condicionales de *templates\index.html* ahora representan una tabla que contiene los sondeos.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo se agregan sondeos nuevos a la aplicación?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pregunta: ¿Cómo se agregan sondeos nuevos a la aplicación?
 
 Respuesta: La aplicación, tal y como se proporciona mediante la plantilla de proyecto, no incluye ninguna herramienta para agregar o editar sondeos. Puede modificar *models\samples.json* para crear nuevos datos de inicialización, pero eso implicaría el restablecimiento del almacén de datos. Para implementar características de edición, deberá ampliar la interfaz de la clase `Repository` con métodos para crear las instancias `Choice` y `Poll` necesarias. Luego, deberá implementar una interfaz de usuario en más páginas que usen estos métodos.
 

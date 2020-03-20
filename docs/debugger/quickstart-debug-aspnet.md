@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75847874"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Inicio rápido: Depuración de ASP.NET Core con el depurador de Visual Studio

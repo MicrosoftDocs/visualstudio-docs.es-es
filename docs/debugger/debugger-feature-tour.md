@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77578960"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
@@ -37,7 +37,7 @@ Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depura
 
 Los puntos de interrupción son una característica de utilidad cuando se conoce la línea o la sección de código que se quiere examinar en detalle.
 
-## <a name="navigate"></a> Exploración del código en el depurador mediante comandos de varios pasos
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Exploración del código en el depurador mediante comandos de varios pasos
 
 Se proporcionan métodos abreviados de teclado para la mayoría de los comandos porque hacen que la exploración del código de las aplicaciones sea más rápida. (Los comandos equivalentes, como los comandos de menú, se muestran entre paréntesis).
 
@@ -185,7 +185,7 @@ Puede hacer doble clic en una línea de código para ver ese código fuente. De 
 
 También puede usar los menús contextuales de la ventana **Pila de llamadas** para hacer otras cosas. Por ejemplo, puede insertar puntos de interrupción en funciones concretas, reiniciar la aplicación mediante **Ejecutar hasta el cursor** y examinar el código fuente. Vea [Cómo: Examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="exception"></a> Examinar una excepción
+## <a name="examine-an-exception"></a><a name="exception"></a> Examinar una excepción
 
 Cuando la aplicación produce una excepción, el depurador le lleva a la línea de código que ha producido esa excepción.
 

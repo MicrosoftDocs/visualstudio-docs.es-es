@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77279226"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Analizar datos de uso de CPU en Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Análisis de datos de uso de CPU en Visual Studio (C++)
 
 Visual Studio proporciona muchas características eficaces para ayudarle a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos la herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
@@ -49,7 +49,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
    Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola** y, luego, **Siguiente**.
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo para el escritorio con C++** .
+   > Si no ve la plantilla **Aplicación de consola**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**. Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo para el escritorio con C++**.
 
    En la ventana **Configurar el nuevo proyecto**, escriba *Diagnostics_Get_Started_Native* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
 
@@ -201,7 +201,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 - [Analizar el uso de la CPU](../profiling/cpu-usage.md) para obtener información más detallada sobre la herramienta de uso de CPU.
 - Analizar el uso de la CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, vea [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Generación de perfiles en Visual Studio](../profiling/index.yml)
 - [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596975"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
@@ -127,7 +127,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Resultados (ventana)
+## <a name="output-window"></a>Ventana de salida
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 
@@ -143,7 +143,7 @@ El cuadro de búsqueda es una manera rápida y sencilla de navegar prácticament
 
 1. Localice el cuadro de búsqueda **Inicio rápido** en la esquina superior derecha del IDE. (Como alternativa, presione **Ctrl**+**Q** para acceder a él).
 
-2. Escriba **detalle** en el cuadro de búsqueda. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
+2. Escriba **nivel de detalle** en el cuadro de búsqueda. En los resultados que aparecen, elija **Proyectos y soluciones --> Compilar y ejecutar** en la categoría **Opciones**.
 
    ![Cuadro de búsqueda Inicio rápido en Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -197,7 +197,7 @@ Solo se han examinado algunas de las características de Visual Studio para fami
 > [!div class="nextstepaction"]
 > [Información sobre proyectos y soluciones](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre Visual Studio](../get-started/visual-studio-ide.md)
 - [Más características de Visual Studio](../ide/advanced-feature-overview.md)

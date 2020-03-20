@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2599238e18415fb494d3d72fdf24305d7ba1b0b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75589908"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteca de imágenes de Visual Studio
@@ -31,7 +31,7 @@ La biblioteca de imágenes de Visual Studio contiene imágenes de aplicación qu
 
 La biblioteca de imágenes se divide en cinco categorías: Elementos comunes, Acciones, Anotaciones, Iconos y Objetos. Se incluyen archivos Léame en formato PDF para los tipos Elementos comunes e Iconos. Estos archivos contienen información sobre el uso adecuado de estas imágenes en las aplicaciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Instalar Visual Studio](../install/install-visual-studio.md)
+- [Instalación de Visual Studio](../install/install-visual-studio.md)
 - [Imágenes, mapas de bits y metarchivos](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

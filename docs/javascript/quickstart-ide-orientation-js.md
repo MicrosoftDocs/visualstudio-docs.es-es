@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73636585"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Primer vistazo al IDE de Visual Studio
@@ -114,7 +114,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Resultados (ventana)
+## <a name="output-window"></a>Ventana de salida
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 
@@ -156,7 +156,7 @@ Solo se han examinado algunas de las características de Visual Studio para fami
 > [!div class="nextstepaction"]
 > [Información sobre proyectos y soluciones](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre Visual Studio](../get-started/visual-studio-ide.md)
 - [Más características de Visual Studio 2017](../ide/advanced-feature-overview.md)

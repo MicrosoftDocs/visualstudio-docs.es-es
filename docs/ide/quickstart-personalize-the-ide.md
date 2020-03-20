@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75596949"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalización del IDE y el editor de Visual Studio
@@ -115,7 +115,7 @@ Ahora se van a personalizar algunos colores de texto para el editor. En primer l
 
 Hemos explorado solo un par de formas de personalizar los colores en Visual Studio. Esperamos que explore las otras opciones de personalización en el cuadro de diálogo **Opciones** para que Visual Studio sea realmente suyo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar el editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Información general sobre IDE de Visual Studio](../get-started/visual-studio-ide.md)

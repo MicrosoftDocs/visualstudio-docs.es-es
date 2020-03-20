@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77578083"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
@@ -81,7 +81,7 @@ En el editor de código también se muestran los mismos eventos, que puede ver c
 
 ![Sugerencias de rendimiento en Paseo por la generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en Paseo por la generación de perfiles")
 
-## <a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
 
 Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pueden usarse con el depurador (vea las secciones anteriores) o bien se pueden ejecutar herramientas de generación d perfiles pos-mortem mediante el Generador de perfiles de rendimiento, que está diseñado para proporcionar el análisis de compilaciones de **Versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). En el Generador de perfiles de rendimiento también hay disponibles otras herramientas, como la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 
@@ -167,12 +167,12 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Utilización de la memoria](../profiling/memory-usage.md)|sí|sí|sí|
 |[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|no|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
 
@@ -180,17 +180,17 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Utilización de la memoria](../profiling/memory-usage.md)|sí|sí|sí|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|no|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
-|[Uso de red](../profiling/network-usage.md)|No|sí|No|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|
-|[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|
+|[Uso de red](../profiling/network-usage.md)|no|sí|no|
+|[Capacidad de respuesta de la IU HTML](../profiling/html-ui-responsiveness.md)|no|sí para HTML, no para XAML|no|
+|[Memoria de JavaScript](../profiling/javascript-memory.md)|no|sí para HTML, no para XAML|no|
 ::: moniker-end
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Depurar en Visual Studio](../debugger/debugger-feature-tour.md)

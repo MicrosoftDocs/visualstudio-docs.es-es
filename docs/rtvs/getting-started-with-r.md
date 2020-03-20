@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "63000514"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introducción a Herramientas de R para Visual Studio
@@ -131,7 +131,7 @@ Como ejemplo, los pasos siguientes crean un poco de código para explorar el [te
 
 En el editor se pueden hacer más cosas. Para obtener detalles, vea [Editar código R](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md) y [Fragmentos de código](code-snippets-for-r.md).
 
-## <a name="debug-your-code"></a>Depurar el código
+## <a name="debug-your-code"></a>Depuración del código
 
 Una de las principales ventajas de Visual Studio es su interfaz de usuario de depuración. RTVS se ha creado sobre esta sólida base y agrega innovadoras opciones de interfaz de usuario, como el [Explorador de variables](variable-explorer.md). Vamos a echar un primer vistazo a la depuración.
 

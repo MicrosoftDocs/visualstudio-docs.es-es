@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431157"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
@@ -68,7 +68,7 @@ De manera predeterminada, Visual Studio ejecuta un proyecto de Python abierto co
 
 En tales casos, también debe agregar una línea al archivo JSON de configuración de inicio para especificar el directorio de trabajo:
 
-1. Haga clic con el botón derecho en el archivo de inicio de Python (*.py*) en el **Explorador de soluciones** y seleccione **Configuración de depuración e inicio**.
+1. Haga clic con el botón derecho en el archivo de inicio de Python ( *.py*) en el **Explorador de soluciones** y seleccione **Configuración de depuración e inicio**.
 
     ![Comando Configuración de depuración e inicio de un archivo de Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 

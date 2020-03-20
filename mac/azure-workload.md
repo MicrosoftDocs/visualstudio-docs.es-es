@@ -7,10 +7,10 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
 ms.openlocfilehash: bbe460b137f64c1fb4aba292abe3dcbd47044fe9
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107995"
 ---
 # <a name="azure"></a>Azure

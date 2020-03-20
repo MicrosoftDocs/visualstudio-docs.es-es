@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71685533"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creación de una aplicación de Windows Forms en Visual Studio con C#
@@ -51,7 +51,7 @@ En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyect
 
 1. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual C#** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)** . Luego, asigne al archivo el nombre `HelloWorld`.
 
-     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)** , cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)** , cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
      ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
