@@ -1,5 +1,5 @@
 ---
-title: Depuración C++ remota de un proyecto | Microsoft Docs
+title: Depuración remota de un proyecto C+++ Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -18,48 +18,48 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409407"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301090"
 ---
-# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuración remota C++ de un proyecto en Visual Studio
-Para depurar una aplicación de Visual Studio en otro equipo, instale y ejecute las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto para que se conecte al equipo remoto desde Visual Studio y, a continuación, implemente y ejecute la aplicación.
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuración remota de un proyecto C++ en Visual Studio
+Para depurar una aplicación de Visual Studio en un equipo diferente, instale y ejecute las herramientas remotas en el equipo donde implementará la aplicación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, implemente y ejecute la aplicación.
 
-![Componentes del Depurador remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![Componentes del depurador remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
-Para obtener información sobre la depuración remota de aplicaciones universales de Windows (UWP), consulte [depurar un paquete de aplicaciones instalado](debug-installed-app-package.md).
+Para obtener información acerca de la depuración remota de aplicaciones universales de Windows (UWP), vea [Depurar un paquete](debug-installed-app-package.md)de aplicación instalado .
 
 ## <a name="requirements"></a>Requisitos
 
-El depurador remoto se admite en Windows 7 y versiones más recientes (no en teléfono) y versiones de Windows Server a partir de Windows Server 2008 Service Pack 2. Para obtener una lista completa de los requisitos, consulte [requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
+El depurador remoto es compatible con Windows 7 y versiones posteriores (no teléfono) y versiones de Windows Server a partir de Windows Server 2008 Service Pack 2. Para obtener una lista completa de los requisitos, consulte [Requisitos](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> No se admite la depuración entre dos equipos conectados a través de un proxy. No se recomienda la depuración a través de una conexión de alta latencia o de ancho de banda bajo, como acceso telefónico a Internet o a través de Internet a través de países, y puede producir un error o ser inaceptablemente lento.
+> No se admite la depuración entre dos equipos conectados a través de un proxy. No se recomienda depurar a través de una conexión de alta latencia o bajo ancho de banda, como Internet de acceso telefónico o a través de Internet entre países, y puede fallar o ser inaceptablemente lento.
 
 ## <a name="download-and-install-the-remote-tools"></a>Descarga e instalación de las herramientas remotas
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
-> En algunos escenarios, puede ser más eficaz ejecutar el depurador remoto desde un recurso compartido de archivos. Para obtener más información, vea [ejecutar el depurador remoto desde un recurso compartido de archivos](../debugger/remote-debugging.md#fileshare_msvsmon).
+> En algunos escenarios, puede ser más eficaz ejecutar el depurador remoto desde un recurso compartido de archivos. Para obtener más información, vea [Ejecutar el depurador remoto desde un recurso compartido](../debugger/remote-debugging.md#fileshare_msvsmon)de archivos.
 
-## <a name="BKMK_setup"></a> Establecimiento del depurador remoto
+## <a name="set-up-the-remote-debugger"></a><a name="BKMK_setup"></a>Configurar el depurador remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Si necesita agregar permisos para usuarios adicionales, cambie el modo de autenticación o el número de puerto para el depurador remoto, vea [configurar el depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
+> Si necesita agregar permisos para usuarios adicionales, cambiar el modo de autenticación o el número de puerto para el depurador remoto, consulte [Configurar el depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Depuración C++ remota de un proyecto
- En el procedimiento siguiente, el nombre y la ruta de acceso del proyecto es C:\remotetemp\MyMfc y el nombre del equipo remoto es **MJO-DL**.
+## <a name="remote-debug-a-c-project"></a><a name="remote_cplusplus"></a>Depuración remota de un proyecto C++
+ En el procedimiento siguiente, el nombre y la ruta de acceso del proyecto es C:-remotetemp-MyMfc, y el nombre del equipo remoto es **MJO-DL**.
 
 1. Cree una aplicación MFC denominada **mymfc**.
 
 2. Establezca un punto de interrupción en alguna parte de la aplicación que esté fácilmente accesible como, por ejemplo, en **MainFrm.cpp**, al principio de `CMainFrame::OnCreate`.
 
-3. En Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **propiedades**. Abra la pestaña **Depuración**.
+3. En el Explorador de soluciones, haga clic con el botón secundario en el proyecto y seleccione **Propiedades**. Abra la pestaña **Depuración**.
 
 4. Establezca el **Depurador para iniciar** en **Depurador remoto de Windows**.
 
@@ -79,7 +79,7 @@ El depurador remoto se admite en Windows 7 y versiones más recientes (no en tel
 
     Si implementa archivos adicionales (opcional), la carpeta debe existir en ambos equipos.
 
-6. En Explorador de soluciones, haga clic con el botón secundario en la solución y elija **Configuration Manager**.
+6. En el Explorador de soluciones, haga clic con el botón secundario en la solución y elija **Configuration Manager**.
 
 7. Para la configuración de **Depurar**, active la casilla **Implementar**.
 
@@ -89,26 +89,26 @@ El depurador remoto se admite en Windows 7 y versiones más recientes (no en tel
 
 9. El archivo ejecutable se implementa automáticamente en el equipo remoto.
 
-10. Si se le solicita, escriba las credenciales de red para conectarse a la máquina remota.
+10. Si se le solicita, escriba las credenciales de red para conectarse al equipo remoto.
 
-     Las credenciales necesarias son específicas de la configuración de seguridad de la red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escribir su nombre de dominio y contraseña. En una máquina que no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como <strong>MJO-DL\name@something.com</strong>, junto con la contraseña correcta.
+     Las credenciales necesarias son específicas de la configuración de seguridad de la red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escribir su nombre de dominio y contraseña. En un equipo que no sea de dominio, puede escribir <strong>MJO-DL\name@something.com</strong>el nombre del equipo y un nombre de cuenta de usuario válido, como , junto con la contraseña correcta.
 
 11. En el equipo de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.
 
     > [!TIP]
     > De manera alternativa, puede implementar los archivos como un paso independiente. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **mymfc** y después elija **Implementar**.
 
-    Si tiene archivos que no son de código requeridos por la aplicación, puede especificarlos en **archivos adicionales para implementarlos** en la página del **Depurador remoto de Windows** .
+    Si tiene archivos que no son de código requeridos por la aplicación, puede especificarlos en **Archivos adicionales para implementar** en la página Depurador remoto de **Windows.**
 
-    Como alternativa, puede incluir los archivos en el proyecto y establecer la propiedad de **contenido** en **sí** en la página de **propiedades** de cada archivo. Estos archivos se copian en el **Directorio de implementación** especificado en la página del **Depurador remoto de Windows** . También puede cambiar el **tipo de elemento** a **copiar archivo** y especificar otras propiedades si necesita que los archivos se copien en una subcarpeta del **Directorio de implementación**.
+    Como alternativa, puede incluir los archivos en el proyecto y establecer la propiedad **Content** en **Sí** en la página **Propiedades** de cada archivo. Estos archivos se copian en el directorio de **implementación** especificado en la página Depurador remoto de **Windows.** También puede cambiar el Tipo de **elemento** a **Copiar archivo** y especificar propiedades adicionales allí si necesita que los archivos se copien en una subcarpeta del Directorio de **implementación**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar la depuración con símbolos remotos
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Consulte también
-- [Depurar en Visual Studio](../debugger/index.yml)
-- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Depuración en Visual Studio](../debugger/index.yml)
+- [Primero mire el depurador](../debugger/debugger-feature-tour.md)
 - [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Asignaciones de puerto del depurador remoto](../debugger/remote-debugger-port-assignments.md)
 - [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

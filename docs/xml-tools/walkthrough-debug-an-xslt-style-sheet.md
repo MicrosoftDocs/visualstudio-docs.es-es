@@ -1,5 +1,5 @@
 ---
-title: Depurar hojas de estilos XSLT
+title: Depurar hojas de estilo XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -9,98 +9,98 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410115"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79300946"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: depurar una hoja de estilos XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
 
-En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos incluyen ver variables, definir puntos de interrupción y examinar el código. El depurador permite ejecutar código de línea en línea.
+En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos incluyen ver variables, definir puntos de interrupción y examinar el código. El depurador le permite ejecutar código una línea a la vez.
 
-Para prepararse para este tutorial, copie primero los dos [archivos de ejemplo](#sample-files) en el equipo local. Una es la hoja de estilos y otra es el archivo XML que se utilizará como entrada para la hoja de estilos. En este tutorial, la hoja de estilos que usamos busca todos los libros cuyo costo sea inferior al precio medio de los libros.
+Para prepararse para este tutorial, copie primero los dos archivos de [ejemplo](#sample-files) en el equipo local. Una es la hoja de estilos, y otra es el archivo XML que usaremos como entrada para la hoja de estilos. En este tutorial, la hoja de estilos que usamos encuentra todos los libros cuyo costo está por debajo del precio medio del libro.
 
 > [!NOTE]
-> El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio.
+> El depurador XSLT solo está disponible en la edición Enterprise de Visual Studio.
 
-## <a name="start-debugging"></a>Iniciar depuración
+## <a name="start-debugging"></a>Iniciar la depuración
 
-1. En el menú **archivo** , elija **abrir** **archivo**de > .
+1. En el menú **Archivo,** elija **Abrir** > **archivo**.
 
-2. Busque el archivo *below-Average. xsl* y elija **abrir**.
+2. Busque el *archivo below-average.xsl* y elija **Open**.
 
-   Se abre la hoja de estilos en el editor XML.
+   La hoja de estilos se abre en el editor XML.
 
-3. Haga clic en el botón Examinar ( **...** ) en el campo de **entrada** de la ventana Propiedades del documento. (Si la ventana **propiedades** no está visible, haga clic con el botón secundario en cualquier parte del archivo abierto en el editor y, a continuación, elija **propiedades**).
+3. Haga clic en el botón Examinar (**...**) en el campo **Entrada** de la ventana de propiedades del documento. (Si la ventana **Propiedades** no está visible, haga clic con el botón derecho en cualquier parte del archivo abierto en el editor y, a continuación, elija **Propiedades**.)
 
-4. Busque el archivo *books. XML* y, a continuación, elija **abrir**.
+4. Busque el archivo *books.xml* y, a continuación, elija **Open**.
 
    Esto establece el archivo de documento de origen que se usa para la transformación XSLT.
 
-5. Establezca un [punto de interrupción](../debugger/using-breakpoints.md) en la línea 12 de *below-Average. xsl*. Puede hacerlo de una de varias maneras:
+5. Establezca un punto de [interrupción](../debugger/using-breakpoints.md) en la línea 12 de *below-average.xsl*. Puede hacerlo de varias maneras:
 
    - Haga clic en el margen del editor en la línea 12.
 
-   - Haga clic en cualquier parte de la línea 12 y, a continuación, presione **F9**.
+   - Haga clic en cualquier lugar de la línea 12 y, a continuación, presione **F9**.
 
-   - Haga clic con el botón derecho en la etiqueta de inicio de `xsl:if` y, a continuación, elija **punto de interrupción** > **Insertar punto de interrupción**.
+   - Haga clic `xsl:if` con el botón derecho en la etiqueta de inicio y, a continuación, elija **Punto** > de interrupción Insertar punto de**interrupción**.
 
-      ![Insertar punto de interrupción en un archivo XSL en Visual Studio](media/insert-breakpoint.PNG)
+      ![Insertar punto de interrupción en el archivo XSL en Visual Studio](media/insert-breakpoint.PNG)
 
-6. En la barra de menús, elija **XML** > **iniciar depuración de XSLT** (o presione **Alt**+**F5**).
+6. En la barra de menús, elija **DEPURAción XML** > **Start XSLT** (o, presione **Alt**+**F5**).
 
    Se inicia el proceso de depuración.
 
-   En el editor, el depurador se coloca en el `xsl:if` elemento de la hoja de estilos. Se abre otro archivo llamado *below-Average. XML* en el editor; Este es el archivo de salida que se rellenará cuando se procese cada nodo del archivo de entrada *books. XML* .
+   En el editor, el depurador `xsl:if` se coloca en el elemento de la hoja de estilos. Otro archivo denominado *below-average.xml* se abre en el editor; este es el archivo de salida que se rellenará a medida que se procese cada nodo del archivo de entrada *books.xml.*
 
-   Las ventanas **automático**, **variables locales**e **inspección 1** aparecen en la parte inferior de la ventana de Visual Studio. La ventana **variables locales** muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.
+   Las **ventanas Autos**, **Locales**y **Inspección 1** aparecen en la parte inferior de la ventana de Visual Studio. La ventana **Locales** muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.
 
 ## <a name="watch-window"></a>Ventana Inspección
 
-Vamos a agregar dos variables a la ventana **inspección 1** para que podamos examinar sus valores a medida que se procesa el archivo de entrada. (También puede usar la ventana **variables locales** para examinar los valores si las variables que desea inspeccionar ya están allí).
+Agregaremos dos variables a la ventana **Inspección 1** para que podamos examinar sus valores a medida que se procesa el archivo de entrada. (También puede utilizar la ventana **Locales** para examinar los valores si las variables que desea ver ya están allí.)
 
-1. En el menú **depurar** , elija **Windows** > **Ver** > **inspección 1**.
+1. En el menú **Depurar** , elija **Windows** > **Watch** > **Watch 1**.
 
-   La ventana **inspección 1** se vuelve visible.
+   La ventana **Inspección 1** se hace visible.
 
-2. Escriba `$bookAverage` en el campo **nombre** y, a continuación, presione **entrar**.
+2. Escriba `$bookAverage` el campo **Nombre** y, a continuación, presione **ENTRAR**.
 
-   El valor de la variable `$bookAverage` se muestra en el campo **valor** .
+   El valor `$bookAverage` de la variable se muestra en el campo **Valor.**
 
-3. En la línea siguiente, escriba `self::node()` en el campo **nombre** y, a continuación, presione **entrar**.
+3. En la siguiente `self::node()` línea, escriba el campo **Nombre** y, a continuación, presione **ENTRAR**.
 
-   `self::node()` es una expresión XPath que se evalúa como el nodo de contexto actual. El valor de la expresión XPath `self::node()` es el primer nodo de libro. Esto cambia a medida que progresamos en la transformación.
+   `self::node()`es una expresión XPath que se evalúa como el nodo de contexto actual. El valor de la expresión XPath `self::node()` es el primer nodo de libro. Esto cambia a medida que progresamos en la transformación.
 
-4. Expanda el nodo `self::node()` y, a continuación, expanda el nodo que tiene el valor `price`.
+4. Expanda `self::node()` el nodo y, a continuación, expanda `price`el nodo que el valor es .
 
-   ![ventana Inspección durante la depuración XSLT en Visual Studio](media/xslt-debugging-watch-window.png)
+   ![Ventana ver durante la depuración XSLT en Visual Studio](media/xslt-debugging-watch-window.png)
 
-   Puede ver el valor del precio del libro para el nodo de libro actual y compararlo con el valor de `$bookAverage`. Dado que el precio del libro está por debajo del promedio, la condición `xsl:if` debe realizarse correctamente cuando se continúa el proceso de depuración.
+   Puede ver el valor del precio contable para el nodo `$bookAverage` contable actual y compararlo con el valor. Dado que el precio del `xsl:if` libro está por debajo del promedio, la condición debe realizarse correctamente al continuar el proceso de depuración.
 
-## <a name="step-through-the-code"></a>Recorrer paso a paso el código
+## <a name="step-through-the-code"></a>Paso a través del código
 
 1. Presione **F5** para continuar.
 
-   Dado que el primer nodo de libro cumple la condición de `xsl:if`, el nodo de libro se agrega al archivo de salida *below-Average. XML* . El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos. El depurador se encuentra ahora en el segundo nodo de libro del archivo *books. XML* .
+   Dado que el primer `xsl:if` nodo de libro cumple la condición, el nodo book se agrega al archivo de salida *below-average.xml.* El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos. El depurador ahora se coloca en el segundo nodo de libro del archivo *books.xml.*
 
-   En la ventana **inspección 1** , el valor `self::node()` cambia al segundo nodo de libro. Mediante el examen del valor del elemento de precio, se puede determinar que el precio está por encima de la media, así que la condición `xsl:if` no debería cumplirse.
+   En la ventana **Inspección 1,** el `self::node()` valor cambia al segundo nodo de libro. Mediante el examen del valor del elemento de precio, se puede determinar que el precio está por encima de la media, así que la condición `xsl:if` no debería cumplirse.
 
 2. Presione **F5** para continuar.
 
-   Dado que el segundo nodo de libro no cumple la condición de `xsl:if`, el nodo de libro no se agrega al archivo de salida *below-Average. XML* . El depurador continúa ejecutándose hasta que se vuelve a colocar en el elemento `xsl:if` de la hoja de estilos. El depurador ahora está situado en el tercer nodo de `book` en el archivo *books. XML* .
+   Dado que el segundo nodo `xsl:if` de libro no cumple la condición, el nodo book no se agrega al archivo de salida *below-average.xml.* El depurador continúa ejecutándose hasta que se `xsl:if` coloca de nuevo en el elemento de la hoja de estilos. El depurador ahora se coloca `book` en el tercer nodo del archivo *books.xml.*
 
-   En la ventana **inspección 1** , el valor `self::node()` cambia al tercer nodo de libro. Al examinar el valor del elemento `price`, puede determinar que el precio está por debajo del promedio. La condición `xsl:if` debe ser correcta.
+   En la ventana **Inspección 1,** el `self::node()` valor cambia al tercer nodo de libro. Al examinar el valor `price` del elemento, puede determinar que el precio está por debajo del promedio. La `xsl:if` condición debe tener éxito.
 
 3. Presione **F5** para continuar.
 
-   Dado que se ha satisfecho la condición de `xsl:if`, el tercer libro se agrega al archivo de salida *below-Average. XML* . Todos los libros del documento XML se han procesado y el depurador se detiene.
+   Dado `xsl:if` que se cumplió la condición, el tercer libro se agrega al archivo de salida *below-average.xml.* Todos los libros del documento XML se han procesado y el depurador se detiene.
 
 ## <a name="sample-files"></a>Archivos de ejemplo
 
 El tutorial utiliza los dos siguientes archivos de ejemplo.
 
-### <a name="below-averagexsl"></a>below-average.xsl
+### <a name="below-averagexsl"></a>por debajo de average.xsl
 
 ```xml
 <?xml version='1.0'?>
@@ -155,6 +155,6 @@ El tutorial utiliza los dos siguientes archivos de ejemplo.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Depuración de XSLT](../xml-tools/debugging-xslt.md)

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911811"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79300934"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración del proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
 Un proyecto de servicio en la nube de Azure en Visual Studio incluye tres archivos de configuración: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` se implementa en Azure para describir los requisitos del servicio en la nube y sus roles y para proporcionar la configuración que se aplica a todas las instancias. La configuración se puede leer en tiempo de ejecución mediante la API de tiempo de ejecución de hospedaje del servicio de Azure. Este archivo puede actualizarse en Azure solo cuando se detiene el servicio en la nube.
+- `ServiceDefinition.csdef` se implementa en Azure para describir los requisitos del servicio en la nube y sus roles y para proporcionar la configuración que se aplica a todas las instancias. La configuración se puede leer en tiempo de ejecución mediante la API de Azure Service Hosting Runtime. Este archivo puede actualizarse en Azure solo cuando se detiene el servicio en la nube.
 - `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg` proporcionan valores de configuración del archivo de definición y especifican el número de instancias que se van a ejecutar en cada rol. El archivo "Local" contiene valores que se utilizan en la depuración local; el archivo "Nube" se implementa en Azure como `ServiceConfiguration.cscfg` y proporciona la configuración para el entorno de servidor. Este archivo se puede actualizar mientras el servicio en la nube se ejecuta en Azure.
 
 Las opciones de configuración se administran y modifican en Visual Studio con las páginas de propiedades del rol aplicable (haga clic con el botón derecho en el rol y seleccione **Propiedades**, o bien haga doble clic en el rol). Los cambios pueden limitarse a cualquier configuración elegida en el menú desplegable **Configuración de servicio**. Las propiedades de los roles de web y de trabajo son similares, excepto en los casos descritos en las siguientes secciones.
@@ -31,7 +31,7 @@ Para obtener información acerca de los esquemas subyacentes para los archivos d
 
 ## <a name="configuration-page"></a>Página Configuración
 
-### <a name="service-configuration"></a>Configuración del servicio
+### <a name="service-configuration"></a>Configuración de servicio
 
 Seleccione a qué archivo `ServiceConfiguration.*.cscfg` afectan los cambios. De forma predeterminada, están las variantes Local y Nube, y puede usar el comando **Administrar...** para copiar y eliminar archivos de configuración y cambiarles el nombre. Estos archivos se agregan a su proyecto de servicio en la nube y aparecen en el **Explorador de soluciones**. Sin embargo, el cambio de nombre o la eliminación de la configuración solo se puede realizar con este control.
 
@@ -45,17 +45,17 @@ Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, *
 
 Establezca esta propiedad para especificar que Visual Studio debería iniciar un explorador web para los extremos HTTP, los extremos HTTPS o ambos al iniciar la depuración.
 
-La opción de **extremo HTTPS** solo está disponible si ya se ha definido un extremo HTTPS para el rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
+La opción de punto de conexión **HTTPS** solo está disponible si ya ha definido un punto de conexión HTTPS para su rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
 
 Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita de forma predeterminada, y Visual Studio iniciará un explorador para este extremo al comenzar la depuración, además de a un explorador para el extremo HTTP, pero se asume que ambas opciones de inicio están habilitadas.
 
 ### <a name="diagnostics"></a>Diagnóstico
 
-De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador ( **…** ) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+De manera predeterminada, la funcionalidad de diagnóstico está habilitada para el rol web. El proyecto de servicio en la nube de Azure y la cuenta de almacenamiento se establecen para usar el emulador de almacenamiento local. Cuando esté listo para realizar la implementación en Azure, puede seleccionar el botón del generador (**…**) para usar Azure Storage en su lugar. Los datos de diagnóstico se pueden transferir a la cuenta de almacenamiento a petición o a intervalos programados automáticamente. Para obtener más información sobre los diagnósticos de Azure, consulte [Habilitación de Diagnósticos en Azure Cloud Services y Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Página Configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en concreto, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
+En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de la configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada](/previous-versions/azure/dn602775(v=azure.11))de Azure , específicamente, el [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) método.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 
@@ -68,7 +68,7 @@ Puede establecer la cadena de conexión para usar el almacenamiento local según
 
 Para crear una cadena de conexión, seleccione **Agregar configuración** y establezca el **Tipo** en "Cadena de conexión".
 
-Para cadenas de conexión nuevas o existentes, seleccione **...** * a la derecha del campo **Valor** para abrir el cuadro de diálogo **Crear cadena de conexión de almacenamiento**:
+Para cadenas de conexión nuevas o existentes, seleccione **...*** a la derecha del campo **Valor** para abrir el cuadro de diálogo **Crear cadena de conexión de almacenamiento**:
 
 1. En **Conectar mediante**, elija la opción **Su suscripción** para seleccionar una cuenta de almacenamiento de una suscripción. Después, Visual Studio obtiene las credenciales de la cuenta de almacenamiento automáticamente del archivo `.publishsettings`.
 1. Si selecciona **Credenciales escritas manualmente**, puede especificar el nombre de la cuenta y la clave directamente con la información de Azure Portal. Para copiar la clave de cuenta:
