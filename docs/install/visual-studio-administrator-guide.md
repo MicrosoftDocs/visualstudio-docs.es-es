@@ -2,7 +2,7 @@
 title: Guía del administrador de Visual Studio
 titleSuffix: ''
 description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
-ms.date: 06/02/2019
+ms.date: 03/09/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: bda9a73a7a1aabb2d288653ff4d7b20b1c40db8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114208"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79190282"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -115,6 +115,14 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar las instancias de Visual Studio instaladas](tools-for-managing-visual-studio-instances.md?view=vs-2019) en los equipos cliente.
 
+## <a name="advanced-configuration"></a>Configuración avanzada
+
+De forma predeterminada, la instalación de Visual Studio permite la inclusión de tipos personalizados en las búsquedas de Bing desde la lista de errores F1 y los vínculos de código. Puede configurar Visual Studio para deshabilitar el mecanismo de búsqueda e impedir la inclusión de cualquier tipo de usuario personalizado cambiando el valor de la siguiente clave del Registro por una directiva:
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+El registro se encuentra en el directorio *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* del subárbol de su Registro privado. Para obtener instrucciones sobre cómo abrir el subárbol del Registro, consulte la sección [Edición del Registro para una instancia de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -153,6 +161,14 @@ Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Paso 5: (Opcional) Usar Visual Studio Tools
 
 Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar las instancias de Visual Studio instaladas](tools-for-managing-visual-studio-instances.md?view=vs-2017) en los equipos cliente.
+
+## <a name="advanced-configuration"></a>Configuración avanzada
+
+De forma predeterminada, la instalación de Visual Studio permite la inclusión de tipos personalizados en las búsquedas de Bing desde la lista de errores F1 y los vínculos de código. Puede configurar Visual Studio para deshabilitar el mecanismo de búsqueda e impedir la inclusión de cualquier tipo de usuario personalizado cambiando el valor de la siguiente clave del Registro por una directiva:
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+El registro se encuentra en el directorio *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* del subárbol de su Registro privado. Para obtener instrucciones sobre cómo abrir el subárbol del Registro, consulte la sección [Edición del Registro para una instancia de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999373"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
@@ -33,11 +33,11 @@ Para ayudarle a decidir qué herramientas y resultados debe utilizar, tenga en c
 - El propio depurador cambia los tiempos de rendimiento ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
 - Los números de rendimiento de la compilación de versión en las herramientas de **Generador de perfiles de rendimiento** son más precisos y exactos. Los resultados de la herramienta integrada del depurador son más útiles si se comparan con otras medidas relacionadas con la depuración.
 
-## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
+## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
 Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5**, la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
 
-![Herramientas de diagnóstico](../profiling/media/diagnostictools-update1.png "Diagnostic Tools")
+![Herramientas de diagnóstico](../profiling/media/diagnostictools-update1.png "Herramientas de diagnóstico")
 
 - Use el icono **Configuración** en la barra de herramientas para seleccionar si quiere ver el **Uso de memoria**, el **Análisis de UI**, y el **Uso de CPU**.
 
@@ -57,11 +57,11 @@ Durante una sesión de depuración, en la pestaña **Eventos** de la ventana **H
 
 Use la lista desplegable **Filtro** para filtrar los eventos dentro y fuera de la vista seleccionando o anulando la selección de categorías de eventos concretas.
 
-![Filtro de eventos de diagnóstico](../profiling/media/diagnosticeventfilter.png "Diagnostic Event Filter")
+![Filtro de eventos de diagnóstico](../profiling/media/diagnosticeventfilter.png "Filtro de eventos de diagnóstico")
 
 Use el cuadro de búsqueda para encontrar una cadena concreta en la lista de eventos. Estos son los resultados de una búsqueda de la cadena "name" que coincide con cuatro eventos:
 
-![Búsqueda de eventos de diagnóstico](../profiling/media/diagnosticseventsearch.png "Diagnostic Event Search")
+![Búsqueda de eventos de diagnóstico](../profiling/media/diagnosticseventsearch.png "Búsqueda de eventos de diagnóstico")
 
 Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
@@ -73,13 +73,13 @@ Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramie
 
 1. En la página de inicio de diagnóstico, elija una o varias herramientas para ejecutarlas. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Haga clic en **Mostrar todas las herramientas** para ver también herramientas que están deshabilitadas para esta sesión de diagnóstico. Este es el aspecto que podrían tener las opciones para una aplicación UWP de C#:
 
-   ![Seleccionar las herramientas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
+   ![Selección de las herramientas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")
 
 1. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.
 
    Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de las herramientas de diagnóstico.
 
-    ![Recopilar datos en la página Centro de rendimiento y diagnósticos](../profiling/media/pdhub_collectdata.png "Recopilar datos del centro")
+    ![Recopilación de datos en el Centro de rendimiento y diagnósticos](../profiling/media/pdhub_collectdata.png "Centro de recopilación de datos")
 
 1. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.
 
@@ -87,7 +87,7 @@ Para recopilar datos de rendimiento sin depuración, puede ejecutar las herramie
 
 Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recientemente** en la página de inicio de las herramientas de diagnóstico.
 
-![Abrir un archivo de sesión de diagnóstico guardada](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+![Apertura de un archivo de sesión de diagnóstico guardado](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
 ### <a name="the-profiling-report"></a>El informe de generación de perfiles
  ![Informe de herramientas de diagnóstico](../profiling/media/diag_report.png "DIAG_Report")
@@ -105,11 +105,11 @@ Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recient
 
  Además de iniciar la aplicación desde el proyecto de Visual Studio, también puede ejecutar sesiones de diagnóstico en destinos alternativos. Por ejemplo, puede que le interese diagnosticar problemas de rendimiento en una aplicación que se instaló desde la Tienda de aplicaciones Windows.
 
- ![Elegir destino de análisis de herramientas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+ ![Elección del destino de análisis de las herramientas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
  Puede iniciar las aplicaciones que ya están instaladas o puede asociar las herramientas de diagnóstico a aplicaciones y procesos que se están ejecutando. Cuando seleccione **Aplicación en ejecución** o **Aplicación instalada**, selecciona la aplicación de una lista que busca las aplicaciones en el destino de implementación especificado. Este destino puede ser un equipo local o remoto.
 
- ![Elegir una aplicación instalada o en ejecución para el diagnóstico](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+ ![Elección de una aplicación instalada o en ejecución para el diagnóstico](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
 
 ## <a name="see-also"></a>Vea también
 

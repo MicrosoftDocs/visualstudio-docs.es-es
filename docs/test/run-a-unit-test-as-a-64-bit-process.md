@@ -1,6 +1,6 @@
 ---
 title: Ejecutar una prueba unitaria como un proceso de 64 bits
-ms.date: 11/04/2016
+ms.date: 03/10/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 67a614ed164b12070fe40f24cdba09a3051e36a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d6c6839f8c4702d88d1022116231c6f22b5dbf21
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566259"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093907"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ejecutar una prueba unitaria como un proceso de 64 bits
 
@@ -23,14 +23,25 @@ Si tiene un equipo de 64 bits, puede ejecutar pruebas unitarias y capturar infor
 
 ## <a name="to-run-a-unit-test-as-a-64-bit-process"></a>Para ejecutar una prueba unitaria como un proceso de 64 bits
 
-1. Si el código o las pruebas se compilaron como un proceso de 32 bits/x86 pero ahora quiere ejecutarlos como un proceso de 64 bits, vuelva a compilarlos como **Cualquier CPU** u opcionalmente como **64 bits**.
+1. Si el código o las pruebas se compilaron como un proceso de 32 bits/x86, pero ahora quiere ejecutarlos como un proceso de 64 bits, vuelva a compilarlos como **Cualquier CPU**.
+
+   ::: moniker range="vs-2017"
+   De forma alternativa, también puede compilar el proyecto como de **64 bits** en Visual Studio 2017.
+   ::: moniker-end
 
     > [!TIP]
     > Para tener una flexibilidad máxima, compile los proyectos de prueba con la configuración **Cualquier CPU**. Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. No supone ninguna ventaja compilar los proyectos de prueba con la configuración de **64 bits**.
 
-2. En el menú de Visual Studio, seleccione **Prueba**, **Configuración** y **Arquitectura del procesador**. Seleccione **x64** para ejecutar las pruebas como un proceso de 64 bits.
+2. Establezca las pruebas unitarias para que se ejecuten como un proceso de 64 bits.
 
-   - O
+   ::: moniker range=">=vs-2019"
+   En el menú de Visual Studio, seleccione **Prueba** y, después, **Arquitectura de procesador para proyectos de AnyCPU**. Seleccione **x64** para ejecutar las pruebas como un proceso de 64 bits.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   En el menú de Visual Studio, seleccione **Prueba**, **Configuración de pruebas** y **Arquitectura del procesador**. Seleccione **x64** para ejecutar las pruebas como un proceso de 64 bits.
+   ::: moniker-end
+
+   \- o -
 
    Especifique `<TargetPlatform>x64</TargetPlatform>` en un archivo *.runsettings*. Una ventaja de este método es que puede especificar grupos de configuraciones en archivos diferentes y cambiar rápidamente entre las distintas configuraciones. También puede copiar la configuración entre las soluciones. Para obtener más información, consulte [Configurar pruebas unitarias usando un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 

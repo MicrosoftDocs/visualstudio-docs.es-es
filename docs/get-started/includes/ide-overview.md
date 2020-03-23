@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590764"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79082149"
 ---
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
@@ -47,7 +47,7 @@ En esta imagen se muestra Visual Studio con un proyecto abierto y varias ventana
 
 Visual Studio está disponible para Windows y Mac. [Visual Studio para Mac](/visualstudio/mac/) tiene muchas de las mismas características que Visual Studio 2017 y está optimizado para el desarrollo de aplicaciones móviles y multiplataforma. Este artículo se centra en la versión de Windows de Visual Studio 2017.
 
-Existen tres ediciones de Visual Studio 2017: Community, Professional y Enterprise. Vea [Comparar los IDE de Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) para obtener información sobre las características que se admiten en cada edición.
+Existen tres ediciones de Visual Studio: Community, Professional y Enterprise. Consulte [Comparar las ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para obtener información sobre las características que se admiten en cada edición.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Existen tres ediciones de Visual Studio 2017: Community, Professional y Enterpri
 
 Visual Studio está disponible para Windows y Mac. [Visual Studio para Mac](/visualstudio/mac/) tiene muchas de las mismas características que Visual Studio 2019 y está optimizado para el desarrollo de aplicaciones móviles y multiplataforma. Este artículo se centra en la versión de Windows de Visual Studio 2019.
 
-Existen tres ediciones de Visual Studio 2019: Community, Professional y Enterprise. Consulte [Comparar los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para obtener información sobre las características que se admiten en cada edición.
+Existen tres ediciones de Visual Studio 2019: Community, Professional y Enterprise. Consulte [Comparar las ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para obtener información sobre las características que se admiten en cada edición.
 
 ::: moniker-end
 

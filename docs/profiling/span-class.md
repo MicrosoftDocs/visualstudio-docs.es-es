@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979762"
 ---
 # <a name="span-class"></a>Clase span
@@ -32,7 +32,7 @@ class span;
 
 ### <a name="public-constructors"></a>Constructores públicos
 
-|nombre|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[span::span (Constructor)](../profiling/span-span-constructor.md)|Inicializa una nueva instancia de la clase `span`.|
 |[span::~span (Destructor)](../profiling/span-tilde-span-destructor.md)|Destruye el objeto de `span` y libera sus recursos.|

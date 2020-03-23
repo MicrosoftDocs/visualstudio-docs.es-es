@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74772125"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
@@ -125,7 +125,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC
 
-|Propiedad.|DESCRIPCIÓN|
+|Propiedad.|Descripción|
 |--------------|-----------------|
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|
@@ -136,7 +136,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="advanced-properties"></a>Propiedades avanzadas
 
-| Propiedad. | DESCRIPCIÓN |
+| Propiedad. | Descripción |
 |---------------------------------------| - |
 | **Nombre del proyecto** | Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual. |
 | **Limpiar cuando se detenga el generador de perfiles** | Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE. |

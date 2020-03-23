@@ -5,18 +5,18 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2020
+ms.date: 03/16/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e82ab35143a4987df1340fd75f0125c955e6c3d
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: d41ccfc4092795cdf942d42910cfe0a33baa5593
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235072"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437620"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -28,6 +28,10 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Versión preliminar 1 | 16 de marzo de 2020 | 16.6.29911.98 |
+| 16.5.0 | Release | 16 de marzo de 2020 | 16.5.29911.84 |
+| 16.4.6 | Release | 10 de marzo de 2020  | 16.4.29905.134 |
+| 16.0.12 | Release | 10 de marzo de 2020 | 16.0.28803.697 |
 | 16.5.0 | Versión preliminar 5 | 2 de marzo de 2020 | 16.5.29827.131 |
 | 16.5.0 | Versión preliminar 4 | 25 de febrero de 2020 | 16.5.29820.132 |
 | 16.5.0 | Versión preliminar 3 | 19 de febrero de 2020 | 16.5.29814.53 |
@@ -126,6 +130,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.21 | Release | 10 de marzo de 2020 | 15.9.28307.1064 |
 | 15.9.20 | Release | 11 de febrero de 2020 | 15.9.28307.1033 |
 | 15.9.19 | Release | 14 de enero de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Release | 11 de diciembre de 2019 | 15.0.26228.102 |

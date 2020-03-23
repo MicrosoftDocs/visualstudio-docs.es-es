@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661921"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307104"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -44,7 +44,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Mostrar la Ventana de salida al crear entornos virtuales**| Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
 | **Mostrar la ventana de salida al instalar o desinstalar paquetes** | Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
@@ -71,7 +71,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python** > **Conda**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Ruta de acceso de ejecutable de Conda** | (en blanco) | Especifica una ruta de acceso exacta al ejecutable *conda.exe* en lugar de depender de la instalación predeterminada de Miniconda que se incluye con la carga de trabajo de Python. Si aquí se indica otra ruta de acceso, tiene prioridad sobre la instalación predeterminada y sobre cualquier otro ejecutable conda.exe que se especifique en el registro. Puede cambiar esta configuración si instala manualmente una versión más reciente de Anaconda o Miniconda o si quiere usar una distribución de 32 bits en lugar de la distribución predeterminada de 64 bits. |
 
@@ -83,7 +83,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python** > **Depuración**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Preguntar antes de ejecutar si hay errores** | Activado | Cuando se establece, le pide que confirme que quiere ejecutar código que contiene errores. Desactive esta opción para deshabilitar la advertencia. |
 | **Esperar a la entrada cuando el proceso termine de forma anómala**<br/><br/>**Esperar a la entrada cuando el proceso termine de manera correcta** | Activado (para ambos) | Un programa de Python iniciado desde Visual Studio se ejecuta en su propia ventana de consola. De manera predeterminada, la ventana espera a que presione una tecla antes de cerrarla independientemente de cómo finaliza el programa. Para quitar ese mensaje y cerrar la ventana automáticamente, desactive una o ambas opciones. |
@@ -104,7 +104,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python** > **Diagnósticos**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Incluir registros de análisis** | Activado | Incluye registros detallados relacionados con el análisis de los entornos de Python instalados al guardar el diagnóstico en un archivo o copiarlo en el Portapapeles mediante los botones. Esta opción puede aumentar significativamente el tamaño del archivo generado, pero a menudo es necesaria para diagnosticar problemas de IntelliSense. |
 | **Guardar diagnóstico en archivo** (botón) | N/D | Solicita un nombre de archivo y, a continuación, guarda el registro en un archivo de texto. |
@@ -116,7 +116,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python** > **Windows interactivo**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Scripts** | N/D | Especifica una carpeta general para los scripts de inicio que se van a aplicar a las ventanas **interactivas** en todos los entornos. Vea [Scripts de inicio](python-environments-window-tab-reference.md#startup-scripts). En cambio, tenga en cuenta que esta característica no funciona actualmente. |
 | **Usar flechas arriba o abajo para navegar por el historial** | Activado | Usa las teclas de flecha para navegar por el historial en la ventana **interactiva**. Desactive esta opción para usar las teclas de flecha para navegar dentro del resultado de la ventana **interactiva** en su lugar. |
@@ -130,7 +130,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas** > **Opciones** > **Python** > **Servidor de lenguaje**).
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Deshabilitar las finalizaciones desde Typeshed** | Desactivado | Por lo general, Visual Studio IntelliSense usa una versión empaquetada de Typeshed (un conjunto de archivos *.pyi*) para encontrar las sugerencias de tipo para la biblioteca estándar y las bibliotecas de terceros para Python 2 y Python 3. Establecer esta opción deshabilita el comportamiento de TypeShed empaquetado. |
 | **Ruta de acceso de Typeshed personalizada** | (en blanco) | Si se establece, Visual Studio usa los archivos de Typeshed en esta ruta de acceso en lugar de su versión empaquetada. Omita si la opción **Deshabilitar las finalizaciones desde Typeshed** está establecida. |
@@ -141,11 +141,11 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ## <a name="advanced-python-editor-options"></a>Opciones avanzadas del editor de Python
 
-(Pestaña **Herramientas** > **Opciones** > **Editor de texto** > **Python**  >  **Opciones avanzadas**).
+(Pestaña **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **Opciones avanzadas**).
 
 ### <a name="completion-results"></a>Resultados de finalización
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Mostrar la intersección de los miembros tras su finalización** | Desactivado | Cuando se establece, muestra solo finalizaciones admitidas por todos los tipos posibles. |
 | **Filtrar la lista según una cadena de búsqueda** | Activado | Aplica el filtrado de las sugerencias de finalización a medida que escribe (está activada de manera predeterminada). |
@@ -153,7 +153,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ### <a name="selection-in-completion-list"></a>Selección en la lista de finalización
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Confirmado escribiendo los siguientes caracteres** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
 | **Entrar confirma la finalización actual** | Activado | Cuando se establece, la tecla **Entrar** selecciona y aplica la finalización seleccionada actualmente como sucede con los caracteres anteriores (pero, por supuesto, no existe un carácter para **Entrar** por lo que no puede estar en esa lista directamente). |
@@ -161,7 +161,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ### <a name="miscellaneous-options"></a>Otras opciones
 
-| Opción | Default | DESCRIPCIÓN |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | **Especificar el modo de esquematización al abrir los archivos** | Activado | Activa automáticamente la característica de esquematización de Visual Studio en el editor al abrir un archivo de código de Python. |
 | **Quitar mensajes de REPL al pegar** | Activado | Quita **>>>** y **...** del texto pegado, lo que permite una transferencia sencilla de código de la ventana **interactiva** al editor. Desactive esta opción si necesita conservar esos caracteres al pegar desde otros orígenes. |

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68919521"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
@@ -35,19 +35,19 @@ Puede personalizar la experiencia del IDE si guarda el diseño de ventanas, el e
 
 Algunas personas tienen más dificultades para ver ciertos colores. Si necesita más contraste al escribir código pero no quiere usar los típicos temas de "Contraste alto", ofrecemos un tema "Azul (contraste adicional)".
 
-  ![Compare el tema Azul y el tema Azul (contraste adicional)](media/blue-extra-contrast-theme.png "Captura de pantalla que muestra una comparación del tema Azul y del tema Azul (contraste adicional)").
+  ![Comparación del tema "Azul" y el tema "Azul (contraste adicional)"](media/blue-extra-contrast-theme.png "Captura de pantalla que muestra una comparación del tema "Azul" con el tema "Azul (contraste adicional)"")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Uso de anotaciones para revelar información útil sobre el código
 
 El editor de Visual Studio incluye numerosos "adornos" de texto que permiten conocer las características y las funciones en puntos concretos de una línea de código, como los iconos del destornillador y la bombilla, los subrayados ondulados de errores y advertencias, los marcadores, etc. Puede usar el conjunto de comandos "Mostrar anotaciones de línea" para detectar estos adornos y navegar por ellos.
 
-  ![Use el conjunto de comandos Mostrar anotaciones de línea](media/show-line-annotations-command-set.png "Captura de pantalla del elemento de menú Mostrar anotaciones de línea")
+  ![Uso del conjunto de comandos "Mostrar anotaciones de línea"](media/show-line-annotations-command-set.png "Captura de pantalla del elemento de menú "Mostrar anotaciones de línea"")
 
 ## <a name="access-toolbars-by-using-keyboard-shortcuts"></a>Acceso a las barras de herramientas a través de métodos abreviados de teclado
 
 El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas de herramientas. Los métodos abreviados de teclado siguientes lo ayudan a acceder a ellas.
 
-|Característica|DESCRIPCIÓN|Método abreviado de teclado|
+|Característica|Descripción|Método abreviado de teclado|
 |-------------|-----------------| - |
 |Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**Alt**, **Ctrl**+**TAB**|
 |Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**Mayús**+**Alt**|
@@ -57,7 +57,7 @@ El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas d
 
 Otros métodos abreviados de teclado útiles incluyen los siguientes.
 
-|Característica|DESCRIPCIÓN|Método abreviado de teclado|
+|Característica|Descripción|Método abreviado de teclado|
 |-------------|-----------------| - |
 |IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Método abreviado de teclado estándar|**Alt izquierda**+**Mayús izquierda**+**Impr Pant**|
 |Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Método abreviado de teclado estándar|**Barra espaciadora**|
@@ -103,13 +103,13 @@ Esta es la manera de hacerlo:
 
 1. Haga doble clic en **Cambiar sonidos del sistema**.
 
-   ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png "Captura de pantalla de los resultados de la búsqueda \"Cambiar sonidos del sistema\" en Windows 10")
+   ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png "Captura de pantalla de los resultados de la búsqueda "Cambiar sonidos del sistema" en Windows 10")
 
 1. En el cuadro de diálogo **Sonido**, haga clic en la pestaña **Sonidos**.
 
 1. En **Eventos de programa**, desplácese hasta **Microsoft Visual Studio** y, luego, seleccione los sonidos que quiere aplicar a los eventos seleccionados.
 
-   ![Pestaña Sonidos del applet Sonido en Windows 10](media/sound-applet.png "Pestaña Sonidos del applet Sonido en Windows 10")
+   ![Pestaña Sonidos del applet Sonido en Windows 10](media/sound-applet.png "Pestaña Sonido del applet Sonido en Windows 10")
 
 1. Haga clic en **Aceptar**.
 

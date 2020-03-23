@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969876"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
@@ -20,7 +20,7 @@ Emplee la herramienta Uso de GPU del concentrador de rendimiento y diagnóstico 
 
 Esta captura de pantalla muestra la ventana del **informe Uso de GPU**:
 
-![El informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![Informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Los siguientes requisitos para usar la herramienta Uso de GPU se suman a los de 
 
 2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de manera simultánea para obtener una imagen más completa del rendimiento de la aplicación.
 
-    ![Elija las herramientas de diagnóstico que quiere usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
+    ![Elija las herramientas de diagnóstico que quiera usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")
 
    > [!NOTE]
    > No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.
@@ -66,7 +66,7 @@ Los siguientes requisitos para usar la herramienta Uso de GPU se suman a los de 
 
 2. En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. Puede realizar una selección de tres segundos como máximo. Las secciones más largas se truncan al principio.
 
-   ![Después de la recopilación, seleccione un intervalo para ver los detalles](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Después de la recopilación, seleccione un intervalo para ver los detalles.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (…haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.
 
@@ -90,7 +90,7 @@ En la parte inferior se muestra una lista de los eventos de gráficos que se han
 
 Esta es la ventana de **informe de Uso de GPU**:
 
-![El informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
+![Informe de uso de la GPU, con las escalas de tiempo de CPU y GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
 Cuando se selecciona un evento en la parte inferior del informe, aparece un marcador en los eventos correspondientes de las escalas de tiempo relevantes. Normalmente, un evento en un subproceso de la CPU muestra la llamada API, mientras que otro evento en una de las escalas de tiempo de la GPU muestra el momento en que la GPU ha finalizado la tarea. Del mismo modo, cuando se selecciona un evento en una escala de tiempo, el informe resalta el evento correspondiente en la parte inferior del informe. Al alejar las escalas de tiempo de la parte superior del informe, solo se ven los eventos de mayor duración. Para ver los eventos de menor duración, acérquese a las escalas de tiempo con Ctrl + rueda (del dispositivo señalador), o con el control de escalado de la esquina inferior izquierda del panel superior. También puede arrastrar el contenido del panel de la escala de tiempo para desplazarse por los eventos registrados.
 
@@ -132,14 +132,14 @@ Si no desea comenzar a recopilar la información de generación de perfiles en c
 
 3. En **GPU Profiling Configuration** (Configuración de generación de perfiles de GPU), vaya a la página de propiedades **General** y desactive la casilla **Begin profiling at app start** (Comenzar la generación de perfiles al iniciar la aplicación) para posponer la generación de perfiles.
 
-   ![Configure cuándo se inicia la recopilación de uso de GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
+   ![Configure cuándo se inicia la recopilación de uso de GPU.](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 
 > [!IMPORTANT]
 > La generación de perfiles no se puede posponer de momento en las aplicaciones de Direct3D 12.
 
 Después de ejecutar la aplicación en la herramienta Uso de GPU, aparece otro vínculo en la parte inferior de la ventana de la herramienta Uso de GPU. Para iniciar la recopilación de la información de generación de perfiles, haga clic en el vínculo **Iniciar** del mensaje **Inicie la recopilación de datos detallados adicionales del uso de GPU**.
 
-## <a name="hwsupport"></a> Compatibilidad de hardware y controladores
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Compatibilidad de hardware y controladores
 
 Se admiten el hardware y los controladores de GPU siguientes:
 

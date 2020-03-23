@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959977"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307176"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -74,7 +74,7 @@ Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el
 | **Paso a paso para salir** | **Mayús**+**F11** | Ejecuta el código hasta el final de la función actual y después pasa a la instrucción de llamada.  Este comando resulta útil cuando no necesita depurar el resto de la función actual. |
 | **Ejecutar hasta el cursor** | **Ctrl**+**F10** | Ejecuta código hasta la ubicación del operador exponencial en el editor. Este comando le permite saltar fácilmente un segmento de código que no necesita depurar. |
 | **Establecer instrucción siguiente** | **Ctrl**+**Mayús**+**F10** | Cambia el punto de ejecución actual del código a la ubicación del operador exponencial. Este comando le permite omitir por completo la ejecución de un segmento de código, por ejemplo, cuando sabe que el código es erróneo o que produce un efecto secundario no deseado. |
-| **Mostrar la instrucción siguiente** | **Alt**+**Núm** **&#42;**| Le remite a la instrucción siguiente que se va a ejecutar. Este comando es útil si ha estado mirando el código, pero no recuerda dónde se ha detenido el depurador. |
+| **Mostrar la instrucción siguiente** | **Alt**+**Num** **&#42;**| Le remite a la instrucción siguiente que se va a ejecutar. Este comando es útil si ha estado mirando el código, pero no recuerda dónde se ha detenido el depurador. |
 
 ### <a name="inspect-and-modify-values"></a>Inspeccionar y modificar valores
 

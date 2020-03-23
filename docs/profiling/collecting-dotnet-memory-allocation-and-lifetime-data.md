@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6a8c5d431b7be54c4c5bc1a1c37619deb67de751
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779589"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Recopilar datos de asignación y duración de memoria de .NET
@@ -46,7 +46,7 @@ Para obtener información sobre cómo recopilar datos de memoria de .NET mediant
 
 1. En el **Explorador de rendimiento**, haga clic con el botón derecho del mouse en la sesión de rendimiento y, después, haga clic en **Propiedades**.
 
-2. En el cuadro de diálogo *Páginas de propiedades de* **sesión de rendimiento**, haga clic en la pestaña **General** y seleccione la casilla **Recopilar información de asignación de objetos .NET**.
+2. En el cuadro de diálogo **Páginas de propiedades** de la *sesión de rendimiento*, haga clic en la pestaña **General** y seleccione la casilla **Recopilar información de asignación de objetos .NET**.
 
 3. Para recopilar datos de duración de objetos .NET, seleccione la casilla **Recopilar también la información de duración de los objetos .NET**.
 

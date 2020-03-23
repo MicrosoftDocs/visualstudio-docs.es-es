@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970089"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic (Espacio de nombres)
@@ -32,14 +32,14 @@ namespace diagnostic;
 
 ### <a name="classes"></a>Clases
 
-|nombre|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[Clase marker_series](../profiling/marker-series-class.md)|Representa un canal de la serie de eventos generados por un único proveedor.|
 |[Clase span](../profiling/span-class.md)|Define una fase de la aplicación.|
 
 ### <a name="enumerations"></a>Enumeraciones
 
-|nombre|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[Enumeración marker_importance](../profiling/marker-importance-enumeration.md)|Representa el nivel de importancia de un marcador del visualizador de simultaneidad.|
 
