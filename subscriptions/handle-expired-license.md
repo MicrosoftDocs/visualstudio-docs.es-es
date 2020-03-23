@@ -7,10 +7,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden administrar suscripciones caducadas de Visual Studio
 ms.openlocfilehash: 4871e6dde340c462d01a1dec58b5687233c56702
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78263206"
 ---
 # <a name="expired-subscriptions"></a>Suscripciones expiradas
@@ -22,7 +22,7 @@ Cuando la suscripción de un usuario ha caducado, esto se indica en el portal me
 
 El distribuidor de Microsoft o el distribuidor le guiará a través del proceso de renovación o de compra de suscripciones adicionales. Después de realizar el pedido o renovar el contrato, las suscripciones nuevas estarán disponibles y se pueden [asignar a los suscriptores](assign-license.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

@@ -15,14 +15,14 @@ metadata:
   monikerRange: '>=vs-2017'
   hide_bc: true
   ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/15/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74118943"
 productDirectory:
   items:
-  - title: Programa para la mejora
+  - title: Visual Studio
     imageSrc: ./media/vs-ide-2019.svg
     links:
     - url: /visualstudio/windows?view=vs-2019
@@ -55,7 +55,7 @@ productDirectory:
       text: Notas de la versión
     - url: https://code.visualstudio.com
       text: Página del producto
-  - title: Centro de aplicaciones de Visual Studio
+  - title: Visual Studio App Center
     imageSrc: ./media/vs-mobile-center.svg
     links:
     - url: https://docs.microsoft.com/appcenter
@@ -72,4 +72,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: Portal
     - url: https://manage.visualstudio.com
-      text: bases de datos y colas
+      text: Administración

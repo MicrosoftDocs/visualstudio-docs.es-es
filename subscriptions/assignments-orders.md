@@ -7,10 +7,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar un seguimiento de las asignaciones de usuarios y las tramitaciones de pedidos.
 ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235230"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
@@ -36,7 +36,7 @@ Puede asignar suscripciones a través de programas como Open License y Open Valu
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA y Select
 Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido "true up" anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

@@ -7,10 +7,10 @@ ms.date: 07/28/2019
 ms.topic: conceptual
 description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
 ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "75851399"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
@@ -21,7 +21,7 @@ Los partners que participen en el programa [Proveedor de soluciones en la nube (
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 En primer lugar, hay que configurar el inquilino del cliente en el Centro de partners y crear una suscripción de Azure para dicho inquilino.
 
 [Más información](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -68,10 +68,10 @@ Para ver los precios de Visual Studio para partners CSP, inicie sesión en el [C
 
 Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 
-| Meter category    |   NOMBRE                 |  Unidades                                |           Qué es                          |
+| Categoría del medidor    |   Nombre                 |  Unidades                                |           Qué es                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Programa para la mejora     | Empresa             |  Suscripción                         | Suscripción mensual de Visual Studio Enterprise   |
-| Programa para la mejora     | Profesional           |  Suscripción                         | Suscripción mensual de Visual Studio Professional |
+| Visual Studio     | Enterprise             |  Subscription                         | Suscripción mensual de Visual Studio Enterprise   |
+| Visual Studio     | Profesional           |  Subscription                         | Suscripción mensual de Visual Studio Professional |
 
 Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mismo cliente) cada mes de cada suscripción de Visual Studio. Es por eso que aparecen dos filas por cada opción de suscripción. Una fila muestra un "valor mínimo" de 0, lo que debe interpretarse como el precio base de las primeras cinco unidades. La otra fila muestra un "valor mínimo" de 5, por lo que este es el precio con el 5 % de descuento que se aplica desde la sexta unidad en adelante.
 
@@ -89,7 +89,7 @@ En las suscripciones de nube mensuales, las cancelaciones surten efecto el prime
 En el caso de las suscripciones de nube anuales, las cancelaciones surten efecto el primer día del mes siguiente a los 12 meses desde la compra original, o 12 meses a partir del último cargo de renovación anual. Por ejemplo, si se ha adquirido una suscripción de nube anual de Visual Studio Enterprise el 3 de enero de 2018, permanecerá activa hasta el 1 de febrero de 2019, momento en el que se renueva automáticamente otro año. Si se cancela en cualquier momento desde entonces hasta el 1 de febrero de 2020, la suscripción caducará el 1 de febrero de 2020. No existe derecho de reembolso si una suscripción de nube anual se cancela en algún momento durante el año de vigencia de la suscripción.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: ¿Qué tipo de descuentos por volumen están disponibles para las suscripciones de Visual Studio?
-R:  Disfrutará de un 5 % de descuento a partir de la sexta suscripción y en todas las siguientes *dentro del mismo tipo* de suscripción:
+R: Disfrutará de un 5 % de descuento a partir de la sexta suscripción y en todas las siguientes *dentro del mismo tipo* de suscripción:
 - Visual Studio Professional mensual
 - Visual Studio Enterprise mensual
 
@@ -100,8 +100,8 @@ Además, el descuento solo es válido en los cargos de un determinado período d
 Estos descuentos aparecen reflejados en los datos de precios del [Centro de partners](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>P: ¿Hay descuentos por renovación?
-R:  No, los precios de las suscripciones de Visual Studio son fijos. El precio es el mismo tanto para las suscripciones nuevas como para las que sigan renovándose.
+R: No, los precios de las suscripciones de Visual Studio son fijos. El precio es el mismo tanto para las suscripciones nuevas como para las que sigan renovándose.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: ¿Existen opciones de precios de desarrollo/pruebas de Azure para CSP?
-R: No en este momento. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://azure.microsoft.com/pricing/dev-test/), pero no tenemos algo que sea específico para CSP.
+R: De momento, no. Los clientes pueden sacar partido de las ventajas de [precios de desarrollo y pruebas de Azure](https://azure.microsoft.com/pricing/dev-test/), pero no tenemos algo que sea específico para CSP.
 

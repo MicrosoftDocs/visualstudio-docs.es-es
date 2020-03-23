@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128302"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU
@@ -58,7 +58,7 @@ En este tutorial va a:
 
 4. Puede elegir si ve **Uso de CPU**, [Uso de memoria](../profiling/Memory-Usage.md) o ambos con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.
 
-     ![Mostrar herramientas de diagnóstico](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
+     ![Visualización de las Herramientas de diagnóstico](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      Nos fijaremos principalmente en el uso de CPU, así que asegúrese de que **Uso de CPU** está habilitado (lo está de forma predeterminada).
 
@@ -66,7 +66,7 @@ En este tutorial va a:
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico. Si necesita abrir la ventana, haga clic en **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 
-     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
+     ![Pestaña de resumen de Herramientas de diagnóstico](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
      Para obtener más información sobre los eventos, vea [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico).
 
@@ -74,7 +74,7 @@ En este tutorial va a:
 
 7. Mientras el depurador está en pausa, habilite la recopilación de datos de uso de CPU y, a continuación, abra la pestaña **Uso de CPU**.
 
-     ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
+     ![Habilitación de la generación de perfiles de CPU en Herramientas de diagnóstico](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Cuando se elige **Registrar perfil CPU**, Visual Studio empezará a registrar las funciones y cuánto tiempo tardan en ejecutarse. Solo puede ver los datos recopilados cuando la aplicación se detiene en un punto de interrupción.
 
@@ -84,15 +84,15 @@ En este tutorial va a:
 
      El generador de perfiles empieza a preparar los datos de subproceso. Espere a que finalice.
 
-     ![Herramientas de diagnóstico para preparar subprocesos](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
+     ![Preparación de subprocesos en Herramientas de diagnóstico](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      La herramienta Uso de CPU muestra el informe en la pestaña **Uso de CPU**.
 
-     ![Herramientas de diagnóstico para la pestaña Uso de CPU](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+     ![Pestaña Uso de CPU de herramientas de diagnóstico](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
 9. Si desea seleccionar una región de código más específica para analizar, seleccione una región en la escala de tiempo de CPU (debe ser una región que muestre los datos de generación de perfiles).
 
-     ![Herramientas de diagnóstico para seleccionar un segmento de tiempo](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
+     ![Selección de un segmento de tiempo en Herramientas de diagnóstico](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      En este punto, puede empezar a analizar los datos.
 
@@ -102,7 +102,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 1. En la lista de funciones, examine las funciones que realizan la mayor parte del trabajo.
 
-    ![Herramientas de diagnóstico para la lista de funciones de Uso de CPU](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
+    ![Lista de funciones y su uso de CPU en Herramientas de diagnóstico](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Las funciones aparecen en orden, comenzando por las que realizan la mayor parte del trabajo (no están en orden de llamada). Esto ayuda a identificar rápidamente las funciones que se ejecutan durante más tiempo.
@@ -111,7 +111,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
     Al hacer doble clic en una función, la vista **Llamador y destinatario** se abre en el panel izquierdo.
 
-    ![Herramientas de diagnóstico para la vista Llamador y destinatario](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
+    ![Vista Llamador de herramientas de diagnóstico](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     En esta vista, la función seleccionada se muestra en el encabezado y en el cuadro **Función actual** (en este ejemplo, GetNumber). La función que llamó a la función actual se muestra a la izquierda en **Funciones de llamada**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
 
@@ -126,10 +126,10 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
     Cada área numerada de la ilustración se corresponde con un paso del procedimiento.
 
     ::: moniker range=">=vs-2019"
-    ![Herramientas de diagnóstico para el árbol de llamadas](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Árbol de llamadas en Herramientas de diagnóstico](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Herramientas de diagnóstico para el árbol de llamadas](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ![Árbol de llamadas en Herramientas de diagnóstico](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
     ::: moniker-end
 
     |||
@@ -150,7 +150,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
     ::: moniker range=">=vs-2019"
     Para ver las llamadas de función que utilizan el porcentaje más alto de la CPU en la vista de árbol de llamadas, haga clic en **Expandir ruta de acceso activa**.
 
-    ![Ruta de acceso activa de Herramientas de diagnóstico](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Ruta de acceso activa en Herramientas de diagnóstico](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
     > [!NOTE]
@@ -162,7 +162,7 @@ El código externo son funciones de los componentes del sistema y del marco que 
 
 Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.
 
-![Elija Vista de filtro y, después, Mostrar código externo](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
+![Elegir Vista de filtro, después Mostrar código externo](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
 Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]** .
 

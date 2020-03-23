@@ -3,15 +3,15 @@ title: Suscripciones de Visual Studio ofrecidas a empresas emergentes a través 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalles sobre qué suscripciones se ofrecen a través del programa Microsoft for Startups.
-ms.openlocfilehash: 087fb820687063c22e98b34b0c3cd2292fb9a35b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605741"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947108"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a startups
 Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales](https://visualstudio.microsoft.com/vs/pricing/) de Visual Studio Enterprise. 
@@ -38,6 +38,12 @@ R: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la re
 En las suscripciones de nube mensuales, las cancelaciones surten efecto el primer día del siguiente mes. Si cancela solo algunas de las suscripciones de nube mensuales que posee, asegúrese de quitar a los usuarios correspondientes al inicio del siguiente mes para, de este modo, procurar que las personas adecuadas sigan teniendo suscripciones activas asignadas.
 
 En el caso de las suscripciones de nube anuales, las cancelaciones surten efecto el primer día del mes siguiente a los 12 meses desde la compra original, o 12 meses a partir del último cargo de renovación anual. Por ejemplo, si se ha adquirido una suscripción de nube anual de Visual Studio Professional el 3 de enero de 2018, permanecerá activa hasta el 1 de febrero de 2019, momento en el que se renueva automáticamente otro año. Si se cancela en cualquier momento desde entonces hasta el 1 de febrero de 2020, la suscripción caducará el 1 de febrero de 2020. No existe derecho de reembolso si una suscripción de nube anual se cancela en algún momento durante el año de vigencia de la suscripción.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Más información sobre Microsoft for Startups](https://startups.microsoft.com)

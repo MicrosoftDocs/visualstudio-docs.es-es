@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984992"
 ---
 # <a name="enable-subscription"></a>Habilitación de la suscripción
@@ -44,6 +44,6 @@ Actualmente no existe ninguna forma de usar una clave de producto para habilitar
 
 Si ha adquirido Visual Studio Enterprise 2017 para Mac para equipos sin conexión a Internet, puede seguir usando Visual Studio para Mac sin activación, aunque las características Xamarin Inspector, Xamarin Profiler y de ensamblados insertados no estarán disponibles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)

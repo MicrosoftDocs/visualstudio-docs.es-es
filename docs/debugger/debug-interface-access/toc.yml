@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: Anotación
               href: annotation.md
-            - name: Bloque
+            - name: Block
               href: block.md
             - name: Compiland
               href: compiland.md

@@ -3,15 +3,15 @@ title: Software disponible para descargar | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/28/2017
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Busque una lista de las descargas de software incluidas con la suscripción de Visual Studio.
-ms.openlocfilehash: e7c64b7718a0446e16cb562d30ddc607cb4ea1dc
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: e4349e67c08ad424d0e06cb91c2b89620a44b741
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706774"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508734"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponible para descargar
 
@@ -28,6 +28,12 @@ Para buscar rápidamente los productos, utilice las funciones de "Búsqueda" de 
 > Si desea obtener las claves de producto, haga clic en la pestaña **Claves de producto** en la parte superior de la página.
 
 También puede descargar una hoja de cálculo de Excel que contiene una lista completa de [títulos de software disponibles](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de suscripción.
+
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Puede obtener más información sobre cómo [descargar software](download-software.md) u obtener y administrar [claves de producto](product-keys.md).

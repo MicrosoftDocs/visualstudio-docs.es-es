@@ -12,7 +12,7 @@
       href: ide/visual-studio-ide.md
     - name: Extensibilidad
       href: extensibility/visual-studio-sdk.md
-    - name: Acceso a datos en ASP.NET (Visual Studio)
+    - name: Acceso a datos
       href: data-tools/accessing-data-in-visual-studio.md
     - name: Desarrollo móvil multiplataforma
       href: cross-platform/cross-platform-mobile-development-in-visual-studio.md

@@ -7,10 +7,10 @@ ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75397905"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Depuración con Visual Studio para Mac
@@ -43,7 +43,7 @@ Puede ver todos los puntos de interrupción que se establecieron en el código e
 
 ![Lista de puntos de interrupción](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Iniciar depuración
+## <a name="start-debugging"></a>Iniciar la depuración
 
 Para iniciar la depuración, seleccione el explorador, dispositivo o simulador/emulador de destino:
 
@@ -97,6 +97,6 @@ Para habilitar esta característica, vaya a **Visual Studio para Mac > Preferen
 
 ![Opción Depuración paso a paso por instrucciones del código externo](media/debugging-image8.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Depuración en Visual Studio (en Windows)](/visualstudio/debugger/)

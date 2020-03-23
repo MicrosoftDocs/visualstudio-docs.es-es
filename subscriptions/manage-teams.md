@@ -3,15 +3,15 @@ title: Administración de equipos grandes y contratistas externos | Visual Studi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de administrar las suscripciones de equipos grandes y de contratistas externos.
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850049"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947058"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipos grandes y contratistas externos
 Los administradores de suscripciones de Visual Studio se encargan de garantizar que cada usuario que interactúa con el software con licencia de Visual Studio tenga una licencia acorde a su propia suscripción de Visual Studio.
@@ -33,9 +33,15 @@ Los contratistas externos pueden traer licencias para interaccionar con el entor
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga más información sobre las responsabilidades de los administradores:
 - [Responsabilidades del administrador](admin-responsibilities.md)
 - [Inventario de entorno de preproducción](admin-inventory.md)
-- [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
+- [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra

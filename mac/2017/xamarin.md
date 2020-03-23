@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983457"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo escribir aplicaciones de Mac con Visu
 > [!Note]
 > Estos productos solo se pueden usar con una suscripción de Visual Studio Enterprise.
 
-### <a name="profiler"></a>generador de perfiles
+### <a name="profiler"></a>Generador de perfiles
 
 Xamarin Profiler tiene disponibles tres instrumentos para la generación de perfiles. En la guía de introducción a [Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) se explora lo que miden dichos instrumentos y cómo analizan la aplicación, y se explica el significado de los datos presentados en cada pantalla.
 

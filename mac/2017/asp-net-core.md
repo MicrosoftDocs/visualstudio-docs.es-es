@@ -7,10 +7,10 @@ ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984883"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
@@ -29,7 +29,7 @@ Abra Visual Studio para Mac. En la página principal, seleccione **Nuevo proyect
 
 Se mostrará el cuadro de diálogo Nuevo proyecto, que le permite seleccionar una plantilla para crear la aplicación.
 
-Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Estos son:
+Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Dichos componentes son:
 
 - **.NET Core > Aplicación web vacía de ASP.NET Core**
 - **.NET Core > Aplicación web de ASP.NET Core**
@@ -133,7 +133,7 @@ Abra su explorador preferido y escriba `http://localhost:5000/`. Reemplace `5000
 Las aplicaciones de ASP.NET Core usan el modelo de diseño Controlador de vista de modelos (MVC) para proporcionar una separación lógica de las responsabilidades para cada elemento de la aplicación. MVC consta de los siguientes elementos:
 
 - **Model**: clase que representa los datos de la aplicación.
-- **Vista**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
+- **View**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
 - **Controller**: clase que controla las solicitudes del explorador y responde a la entrada y la interacción del usuario.
 
 Para obtener más información sobre el uso de MVC, vea la guía [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Introducción a MVC de ASP.NET Core).

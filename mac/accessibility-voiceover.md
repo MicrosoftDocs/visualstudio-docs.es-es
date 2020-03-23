@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
 ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985067"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Uso de VoiceOver con Visual Studio para Mac
@@ -26,7 +26,7 @@ Los comandos de VoiceOver aparecen en esta guía como **VO _tecla_** , donde **V
 
 Esta es una lista de algunos comandos de VoiceOver comunes para Visual Studio para Mac:
 
-|Característica|DESCRIPCIÓN|Acceso directo|
+|Característica|Descripción|Acceso directo|
 |-------|-----------|--------|
 |Navegar|Desplazarse por todos los elementos de la interfaz de usuario|**VO→**, **VO←**|
 |Navegar|Entrar en los elementos de la interfaz de usuario o salir de ellos|**VO⇧↓**, **VO⇧↑**|

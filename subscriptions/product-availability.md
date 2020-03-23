@@ -3,15 +3,15 @@ title: Disponibilidad de productos para descargas de software en suscripciones d
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga más información sobre la disponibilidad de productos en descargas de software para suscripciones de Visual Studio
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706811"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78947097"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidad de productos para descargas de software en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -36,6 +36,12 @@ El número y tipo de descargas dependen del nivel de la suscripción y las inscr
 > Si tiene varias suscripciones asociadas a la misma dirección de correo electrónico, los títulos de software disponibles vienen determinados por el nivel de suscripción **más alto** que tenga.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y otra de Visual Studio Test Professional, tiene acceso a los títulos de software incluidos con la suscripción de Visual Studio Enterprise, independientemente de qué suscripción esté usando actualmente en el portal de suscripciones. 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
+
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Es posible que algunas descargas de software requieran una clave de producto para instalarse y activarse.  Consulte el artículo sobre [claves de producto](product-keys.md) para más información sobre cómo obtener y administrar las claves de producto. 

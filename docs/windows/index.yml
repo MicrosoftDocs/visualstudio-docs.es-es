@@ -11,10 +11,10 @@ metadata:
   f1_keywords:
   - MSDNSTART
   ms.openlocfilehash: 6ec31d2881abbfe2ae55174ea3f3fb15fd34651f
-  ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/28/2020
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "77904066"
 highlightedContent:
   items:
@@ -31,7 +31,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: Primeros pasos
+  title: Introducción
   items:
   - title: Aprenda a usar Visual Studio
     links:
@@ -47,10 +47,10 @@ conceptualContent:
     - text: Compilar el código
       url: ../ide/compiling-and-building-in-visual-studio.md
       itemType: tutorial
-    - text: Depurar el código
+    - text: Depuración del código
       itemType: tutorial
       url: ../debugger/debugger-feature-tour.md
-    - text: Probar el código
+    - text: Prueba del código
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
     - text: Acceso a los datos de forma local o en la nube
@@ -76,7 +76,7 @@ conceptualContent:
     - text: JavaScript
       url: /visualstudio/javascript
       itemType: get-started
-  - title: Cree una aplicación
+  - title: Creación de una aplicación
     links:
     - text: Aplicación de escritorio de Windows
       itemType: tutorial
@@ -127,16 +127,16 @@ additionalContent:
     - title: Desarrollar
       summary: Escriba y administre el código con el editor de código.
       url: ../ide/index-writing-code.yml
-    - title: Compilar
+    - title: Build
       summary: Compile y genere el código fuente.
       url: ../ide/compiling-and-building-in-visual-studio.md
-    - title: Depuración
+    - title: Depurar
       summary: Investigue y corrija los errores en el código.
       url: ../debugger/index.yml
     - title: Prueba
       summary: Ejecute pruebas en sus proyectos.
       url: ../test/improve-code-quality.md
-    - title: Implementar
+    - title: Implementación
       summary: Comparta sus aplicaciones y su código mediante Web Deploy, InstallShield, NuGet, Integración continua y más medios.
       url: ../deployment/index.yml
     - title: Control de versiones
@@ -148,10 +148,10 @@ additionalContent:
     - title: Medición del rendimiento
       summary: Identifique los cuellos de botella y optimice el rendimiento del código mediante las herramientas de diagnóstico.
       url: ../profiling/index.yml
-    - title: Ampliar
+    - title: Extend
       summary: Agregue características propias al IDE de Visual Studio para mejorar la experiencia de desarrollo.
       url: ../extensibility/index.yml
-    - title: Datos
+    - title: data
       summary: Cree aplicaciones de datos que conecten con cualquier base de datos o servicio, y en cualquier parte, tanto local como en la nube.
       url: ../data-tools/accessing-data-in-visual-studio.md
     - title: Colaborar

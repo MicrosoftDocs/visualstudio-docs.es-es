@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Cálculo del rendimiento de las aplicaciones en Visual Studio
-summary: 'La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular los datos de rendimiento mientras ejecuta la aplicación.'
+summary: La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular los datos de rendimiento mientras ejecuta la aplicación.
 metadata:
   title: Medición del rendimiento en Visual Studio
   description: Obtenga información sobre cómo usar Visual Studio para medir el rendimiento mediante las herramientas de generación de perfiles.
@@ -9,48 +9,54 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
+  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "79549917"
 landingContent:
-  - title: Acerca de la generación de perfiles
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Un primer vistazo a las herramientas de generación de perfiles
-            url: profiling-feature-tour.md
-      - linkListType: concept
-        links:
-          - text: Formas de ejecutar las herramientas de generación de perfiles
-            url: running-profiling-tools-with-or-without-the-debugger.md
-  - title: Primeros pasos
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: 'Análisis del uso de CPU (C#, Visual Basic)'
-            url: quickstart-cpu-usage-managed.md
-          - text: Análisis del uso de CPU (C++)
-            url: quickstart-cpu-usage-native.md
-          - text: Análisis del uso de CPU (ASP.NET)
-            url: quickstart-cpu-usage-aspnet.md
-      - linkListType: tutorial
-        links:
-          - text: Introducción al análisis del uso de CPU
-            url: beginners-guide-to-performance-profiling.md
-          - text: Introducción a la medición del uso de la memoria
-            url: memory-usage.md
-  - title: Más herramientas de rendimiento
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Medir el uso de CPU desde la línea de comandos
-            url: profile-apps-from-command-line.md
-          - text: Medición del uso de memoria para objetos .NET
-            url: dotnet-alloc-tool.md
-          - text: Sugerencias de rendimiento
-            url: perftips.md
-          - text: Análisis del consumo de recursos (XAML)
-            url: application-timeline.md
-          - text: Análisis del uso de la GPU (Direct3D)
-            url: gpu-usage.md
-          - text: Análisis del uso de la red (UWP)
-            url: network-usage.md
-          - text: Análisis del uso de la energía (UWP)
-            url: analyze-energy-use-in-store-apps.md
+- title: Acerca de la generación de perfiles
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Un primer vistazo a las herramientas de generación de perfiles
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Formas de ejecutar las herramientas de generación de perfiles
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Introducción
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Análisis del uso de CPU (C#, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: Análisis del uso de CPU (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: Análisis del uso de CPU (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: Introducción al análisis del uso de CPU
+      url: beginners-guide-to-performance-profiling.md
+    - text: Introducción a la medición del uso de la memoria
+      url: memory-usage.md
+- title: Más herramientas de rendimiento
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Sugerencias de rendimiento
+      url: perftips.md
+    - text: Medir el uso de CPU desde la línea de comandos
+      url: profile-apps-from-command-line.md
+    - text: Medición del uso de memoria para objetos .NET
+      url: dotnet-alloc-tool.md
+    - text: Análisis del consumo de recursos (XAML)
+      url: application-timeline.md
+    - text: Análisis del uso de la GPU (Direct3D)
+      url: gpu-usage.md
+    - text: Análisis del uso de la red (UWP)
+      url: network-usage.md
+    - text: Análisis del uso de la energía (UWP)
+      url: analyze-energy-use-in-store-apps.md

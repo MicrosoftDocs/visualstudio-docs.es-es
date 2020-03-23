@@ -7,10 +7,10 @@ ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984974"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Paseo por Visual Studio 2017 para Mac
@@ -94,9 +94,9 @@ Para agregar una dependencia a la aplicación, haga clic con el botón derecho e
 
 En el artículo [Incluir un paquete NuGet en el proyecto](/visualstudio/mac/nuget-walkthrough) puede encontrar información sobre el uso de un paquete NuGet en una aplicación.
 
-## <a name="refactoring"></a>Refactorización
+## <a name="refactoring"></a>Refactoring
 
-Visual Studio para Mac proporciona dos formas útiles de refactorizar el código: acciones contextuales y análisis de código fuente. Puede obtener más información sobre ellas en el artículo [Refactorización](/visualstudio/mac/refactoring).
+Visual Studio para Mac proporciona dos maneras útiles de refactorizar el código: acciones de contexto y análisis de código fuente. Puede obtener más información sobre ellas en el artículo [Refactorización](/visualstudio/mac/refactoring).
 
 ## <a name="debugging"></a>Depuración
 
@@ -122,6 +122,6 @@ Para más información sobre el uso del control de versiones en Visual Studio, c
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [IDE de Visual Studio (en Windows)](/visualstudio/ide/visual-studio-ide)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180346"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
@@ -46,7 +46,7 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
     ![Cuadro de diálogo Nuevo proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project.png)
 
-    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más** > **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
+    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más**> **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](../python/media/installation-python-workload.png)
 
@@ -62,7 +62,7 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
     ![Creación de una nueva pantalla de proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project-2019a.png)
 
-    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más** > **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
+    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más**> **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](../python/media/installation-python-workload.png)
 
