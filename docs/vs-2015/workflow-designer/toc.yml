@@ -52,11 +52,11 @@
               href: foreach-t-activity-designer.md
             - name: Si
               href: if-activity-designer.md
-            - name: Parallel
+            - name: Paralelo
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: Seleccionar
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
@@ -82,11 +82,11 @@
               href: state-machine-activity-designers.md
             - name: StateMachine
               href: statemachine-activity-designer.md
-            - name: Estado
+            - name: State
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: Transición
+            - name: Transition
               href: transition-activity-designer.md
         - name: Mensajería
           items:
@@ -96,11 +96,11 @@
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation
               href: initializecorrelation-activity-designer.md
-            - name: Recibir
+            - name: Recepción
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
-            - name: Enviar
+            - name: Envío
               href: send-activity-designer.md
             - name: SendAndReceiveReply
               href: sendandreceivereply-template-designer.md
@@ -142,9 +142,9 @@
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
-        - name: Collection
+        - name: Colección
           items:
-            - name: Collection
+            - name: Colección
               href: collection-activity-designers.md
             - name: AddToCollection\<T>
               href: addtocollection-t-activity-designer.md
@@ -154,9 +154,9 @@
               href: existsincollection-t-activity-designer.md
             - name: RemoveFromCollection\<T>
               href: removefromcollection-t-activity-designer.md
-        - name: Control de errores
+        - name: Tratamiento de errores
           items:
-            - name: Control de errores
+            - name: Tratamiento de errores
               href: error-handling-activity-designers.md
             - name: Rethrow
               href: rethrow-activity-designer.md
@@ -204,9 +204,9 @@
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
         - name: Características del shell del Diseñador de flujo de trabajo
           href: workflow-designer-shell-features.md
-        - name: Métodos abreviados de teclado
+        - name: Métodos abreviados de teclado.
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Mensajes de error
+        - name: mensajes de error
           href: error-messages-in-workflow-designer.md
     - name: Desarrollar aplicaciones de flujo de trabajo que tienen como destino .NET 3.0 o .NET 3.5 Framework
       items:
@@ -286,7 +286,7 @@
               items:
                 - name: Ayuda de la interfaz de usuario del diseñador heredado para Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Enlace a un cuadro de diálogo de propiedades de una actividad (heredado)
+                - name: Enlazar con un cuadro de diálogo de propiedades de una actividad (Heredado)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Examinar y seleccionar un cuadro de diálogo de tipo .NET (Heredado)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

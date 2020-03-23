@@ -7,10 +7,10 @@ ms.date: 07/20/2019
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
 ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78235163"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
@@ -35,7 +35,7 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 | Reasignación de licencias                     | Cuando un usuario abandona un equipo y ya no requiere una licencia, puede volver a asignar esa licencia transcurridos 90 días. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
 | Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal es diseñar, desarrollar o probar el software se califique también como “usuario final”. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)
@@ -45,5 +45,5 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 Obtenga más información sobre las responsabilidades de los administradores:
 - [Inventario de entorno de preproducción](admin-inventory.md)
 - [Administración de equipos grandes y contratistas externos](manage-teams.md)
-- [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
+- [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra

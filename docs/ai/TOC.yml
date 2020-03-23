@@ -1,6 +1,6 @@
-- name: Visual Studio Tools para IA
+- name: Visual Studio Tools para AI
   items:
-    - name: Visual Studio Tools para IA
+    - name: Visual Studio Tools para AI
       href: index.yml
     - name: Información general
       href: about-ai-tools.md
@@ -14,7 +14,7 @@
       items:
         - name: Máquina virtual de TensorFlow + Azure Deep Learning
           href: tensorflow-vm.md
-    - name: Guías de procedimientos
+    - name: Guías paso a paso
       items:
         - name: Crear un proyecto
           items:
@@ -26,17 +26,17 @@
               href: create-project.md
             - name: Creación de un proyecto a partir del repositorio GitHub
               href: create-project-repo.md
-        - name: Entrenar el modelo
+        - name: Entrenamiento de un modelo
           href: train-model.md
-        - name: Visualización de detalles del trabajo
+        - name: Ver detalles del trabajo
           href: job-details.md
         - name: Supervisión de utilización de GPU
           href: monitor-gpu.md
         - name: Supervisión de TensorBoard
           href: monitor-tensorboard.md
-        - name: Administración de almacenamiento
+        - name: Administración del almacenamiento
           href: manage-storage.md
-    - name: Muestras
+    - name: Ejemplos
       items:
         - name: GitHub
           href: 'https://github.com/Microsoft/samples-for-ai'

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714403"
 ---
 # <a name="build-actions"></a>Acciones de compilación
@@ -31,12 +31,12 @@ Las acciones de compilación para este archivo se mostrarán en el menú flotant
 
 A continuación se indican algunas de las acciones de compilación comunes para los proyectos que se pueden compilar en Visual Studio para Mac:
 
-|Acción de compilación | Tipos de proyecto | DESCRIPCIÓN |
+|Acción de compilación | Tipos de proyecto | Descripción |
 |--|--|--|
-| **Compile** | any | El archivo se pasa al compilador de C# como un archivo de código fuente.|
+| **Compile** | cualquiera | El archivo se pasa al compilador de C# como un archivo de código fuente.|
 | **Contenido** | .NET, Xamarin | En proyectos de ASP.NET, estos archivos se incluyen como parte del sitio cuando se implementa. En proyectos de Xamarin.iOS y Xamarin.Mac, se incluyen en el lote de aplicaciones.|
 | **Embedded Resource** | .NET | El archivo se pasa al compilador de C# como un recurso que se va a insertar en el ensamblado. [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), del espacio de nombres `System.Reflection`, se puede usar para leer el archivo desde el ensamblado.|
-| **Ninguno** | any | El archivo no forma parte de la compilación de ninguna manera; se incluye en el proyecto para facilitar el acceso desde el IDE. Este valor puede usarse para archivos de documentación como "Léame", por ejemplo.|
+| **None** | cualquiera | El archivo no forma parte de la compilación de ninguna manera; se incluye en el proyecto para facilitar el acceso desde el IDE. Este valor puede usarse para archivos de documentación como "Léame", por ejemplo.|
 
 > [!NOTE]
 > Tipos de proyecto específicos pueden definir otras acciones de compilación, por lo que la lista de acciones de compilación depende del tipo de proyecto y es posible que aparezcan valores que no están en esta lista.  
@@ -45,6 +45,6 @@ Los proyectos de Xamarin.iOS tienen la acción de compilación **BundleResource*
 
 También es posible seleccionar más de un archivo en el Explorador de soluciones, lo que permite establecer la acción de compilación en muchos archivos a la vez.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Build actions (Visual Studio on Windows)](/visualstudio/ide/build-actions) (Acciones de compilación [Visual Studio en Windows])

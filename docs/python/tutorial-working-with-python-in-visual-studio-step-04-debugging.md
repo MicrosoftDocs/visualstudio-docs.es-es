@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "63002816"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
@@ -68,7 +68,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
     - **Interrumpir todo** (**Ctrl**+**Alt**+**Inter**) pone en pausa un programa de ejecución prolongada.
     - **Detener depuración** (**Mayús**+**F5**) detiene el programa dondequiera que esté y sale del depurador.
     - **Reiniciar** (**Ctrl**+**Mayús**+**F5**) detiene el programa dondequiera que esté y lo reinicia desde el principio en el depurador.
-    - **Mostrar la instrucción siguiente** (**Alt**+**Núm** **&#42;**) cambia a la siguiente línea de código que se debe ejecutar. Esto resulta especialmente útil si al navegar por el código durante una sesión de depuración desea volver rápidamente al punto donde se pausó el depurador.
+    - **Mostrar la instrucción siguiente** (**Alt**+**Núm** **&#42;** ) cambia a la siguiente línea de código que se debe ejecutar. Esto resulta especialmente útil si al navegar por el código durante una sesión de depuración desea volver rápidamente al punto donde se pausó el depurador.
     - **Paso a paso por instrucciones** (**F11**) ejecuta la siguiente línea de código, entrando en las funciones llamadas.
     - **Paso a paso por procedimientos** (**F10**) ejecuta la siguiente línea de código sin entrar en las funciones llamadas.
     - **Paso a paso para salir** (**Mayús**+**F11**) ejecuta el resto de la función actual y se pausa en el código de llamada.

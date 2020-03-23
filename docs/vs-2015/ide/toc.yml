@@ -150,9 +150,9 @@
               href: how-to-create-starter-kits.md
             - name: Búsqueda y organización de plantillas
               href: how-to-locate-and-organize-project-and-item-templates.md
-            - name: Personalización de plantillas
+            - name: Personalizar plantillas
               items:
-                - name: Personalización de plantillas
+                - name: Personalizar plantillas
                   href: customizing-project-and-item-templates.md
                 - name: Actualización de plantillas existentes
                   href: how-to-update-existing-templates.md
@@ -166,9 +166,9 @@
                   href: visual-studio-template-reference.md
                 - name: Parámetros de plantilla
                   href: template-parameters.md
-    - name: Escritura de código
+    - name: Escribir código
       items:
-        - name: Escritura de código
+        - name: Escribir código
           href: writing-code-in-the-code-and-text-editor.md
         - name: Finding and Replacing Text
           items:
@@ -184,9 +184,9 @@
               href: replace-in-files.md
         - name: Codificaciones y saltos de línea
           href: encodings-and-line-breaks.md
-        - name: esquematizar
+        - name: Esquematización
           href: outlining.md
-        - name: Refactorización
+        - name: Refactoring
           href: refactoring-in-visual-studio.md
         - name: Sugerencias de productividad
           items:
@@ -220,7 +220,7 @@
               items:
                 - name: IntelliSense para JavaScript
                   href: javascript-intellisense.md
-                - name: Creación de comentarios JSDoc
+                - name: Crear comentarios JSDoc
                   href: create-jsdoc-comments-for-javascript-intellisense.md
                 - name: Creación de comentarios de documentación XML
                   href: create-xml-documentation-comments-for-javascript-intellisense.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<value>
+                    - name: \<valor>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -296,7 +296,7 @@
               href: troubleshooting-snippets.md
             - name: Referencia de esquemas de fragmentos de código
               href: code-snippets-schema-reference.md
-        - name: Usar el Cuadro de herramientas
+        - name: Usar el cuadro de herramientas
           href: using-the-toolbox.md
         - name: Ver la estructura del código
           items:
@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: Usar la Lista de tareas
           href: using-the-task-list.md
-        - name: Búsqueda de cambios en el código y otro historial
+        - name: Buscar cambios en el código y otro historial
           items:
-            - name: Búsqueda de cambios en el código y otro historial
+            - name: Buscar cambios en el código y otro historial
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex (Comando)
               href: codeindex-command.md
@@ -414,7 +414,7 @@
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
                 - name: 'Reordenar parámetros de refactorización (C#)'
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
-    - name: Depurar en Visual Studio
+    - name: Depuración en Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
     - name: Generación de perfiles
       href: ../profiling/profiling-tools.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Compatibilidad de 64 bits del IDE de Visual Studio
       href: visual-studio-ide-64-bit-support.md
-    - name: Ejemplos de Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Cuentas de usuario y actualizaciones
       items:
@@ -510,7 +510,7 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Personalizar los diseños de ventana
           href: customizing-window-layouts-in-visual-studio.md
-        - name: Personalización de la página de inicio
+        - name: Personalizar la página principal
           href: customizing-the-start-page-for-visual-studio.md
         - name: Administrar herramientas externas
           href: managing-external-tools.md
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: Bibliografía sobre seguridad
           href: security-bibliography.md
-    - name: Ejemplos de Visual Studio
+    - name: Visual Studio Samples
       href: visual-studio-samples.md
     - name: Visor de Ayuda de Microsoft
       items:
@@ -628,11 +628,11 @@
               href: reference/choose-toolbox-items-wpf-components.md
             - name: Selector de fragmentos de código
               href: reference/code-snippet-picker.md
-            - name: Ventana Comandos
+            - name: Ventana de comandos
               href: reference/command-window.md
-            - name: Convertir (cuadro de diálogo)
+            - name: Convertir (Cuadro de diálogo)
               href: reference/convert-dialog-box.md
-            - name: Lista de errores (ventana)
+            - name: Ventana de lista de errores
               href: reference/error-list-window.md
             - name: 'Propiedades de archivo, JavaScript'
               href: reference/file-properties-javascript.md
@@ -640,7 +640,7 @@
               href: reference/go-to-line.md
             - name: Inmediato (ventana)
               href: reference/immediate-window.md
-            - name: Archivos varios
+            - name: archivos varios
               href: reference/miscellaneous-files.md
             - name: Opciones (Cuadro de diálogo)
               href: reference/options-dialog-box-visual-studio.md
@@ -730,7 +730,7 @@
                   href: reference/options-page-text-editor-node-properties.md
             - name: 'Página de opciones, Propiedades de nodo Depuración'
               href: reference/options-page-debugging-node-properties.md
-            - name: Resultados (Ventana)
+            - name: Ventana de salida
               href: reference/output-window.md
             - name: Referencia de propiedades del proyecto
               items:
@@ -740,7 +740,7 @@
                   items:
                     - name: 'Application Page, Project Designer (Visual Basic)'
                       href: reference/application-page-project-designer-visual-basic.md
-                    - name: Cuadro de diálogo Información de ensamblado
+                    - name: Información de ensamblado (Cuadro de diálogo)
                       href: reference/assembly-information-dialog-box.md
                 - name: 'Página de aplicación, Diseñador de proyectos (C#)'
                   href: reference/application-page-project-designer-csharp.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Página Depuración, Diseñador de proyectos'
                   href: reference/debug-page-project-designer.md
-                - name: Página Mis extensiones del Diseñador de proyectos
+                - name: Extensiones My (página del Diseñador de proyectos)
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Panel Publicar, Diseñador de proyectos'
                   items:
@@ -788,7 +788,7 @@
                   items:
                     - name: 'Página Servicios, Diseñador de proyectos'
                       href: reference/services-page-project-designer.md
-                    - name: Configuración avanzada de servicios (Cuadro de diálogo)
+                    - name: Cuadro de diálogo Configuración avanzada de servicios
                       href: reference/advanced-settings-for-services-dialog-box.md
                 - name: 'Página Firma, Diseñador de proyectos'
                   href: reference/signing-page-project-designer.md
@@ -814,7 +814,7 @@
               items:
                 - name: Cuadro de herramientas
                   href: reference/toolbox.md
-                - name: 'Cuadro de herramientas, Componentes (Pestaña)'
+                - name: 'Cuadro de herramientas, pestaña Componentes'
                   href: reference/toolbox-components-tab.md
                 - name: 'Cuadro de herramientas, pestaña Datos'
                   href: reference/toolbox-data-tab.md
@@ -894,7 +894,7 @@
               href: reference/find-command.md
             - name: Buscar en archivos (Comando)
               href: reference/find-in-files-command.md
-            - name: Ir a (Comando)
+            - name: 'Ir a, comando'
               href: reference/go-to-command.md
             - name: comando para importar y exportar configuraciones
               href: reference/import-and-export-settings-command.md

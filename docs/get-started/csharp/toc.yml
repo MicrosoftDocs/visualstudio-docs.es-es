@@ -10,14 +10,14 @@
       href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Más características de Visual Studio
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-- name: Cree una aplicación
+- name: Creación de una aplicación
   expanded: true
   items:
-    - name: 'Crear la primera aplicación de C#'
+    - name: 'Creación de su primera app de C#'
       href: tutorial-console.md
     - name: Creación de una aplicación web
       href: tutorial-aspnet-core.md
-    - name: Creación de una aplicación UWP
+    - name: Creación de una aplicación para UWP
       href: tutorial-uwp.md
     - name: Crear una aplicación WPF
       href: tutorial-wpf.md
@@ -44,13 +44,13 @@
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Escribir y editar código
       href: tutorial-editor.md
-    - name: Compilar y generar
+    - name: Compilación y creación
       href: ../../ide/compiling-and-building-in-visual-studio.md
-    - name: Depurar el código
+    - name: Depuración del código
       href: ../csharp/tutorial-debugger.md
     - name: Pruebas unitarias
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: Implementar el proyecto
+    - name: Implementación del proyecto
       href: ../../deployment/index.yml
-    - name: Acceder a datos
+    - name: Acceso a los datos
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

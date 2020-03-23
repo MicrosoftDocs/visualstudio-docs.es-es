@@ -3,15 +3,15 @@ title: Inventario de entornos de preproducción | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/06/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar inventarios de preproducción
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 722c72acde9ff0b1f7bcfc0c394a1e016c84b719
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476739"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "78937477"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario de entorno de preproducción
 Las suscripciones de Visual Studio simplifican la administración de activos realizando un recuento de los usuarios en lugar de los dispositivos.
@@ -29,16 +29,18 @@ Estas son algunas maneras de simplificar el inventariado del entorno de preprodu
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Términos de las licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Pasos siguientes
-Obtenga más información sobre las responsabilidades de los administradores:
-- [Responsabilidades del administrador](admin-responsibilities.md)
-- [Administración de equipos grandes y contratistas externos](manage-teams.md)
-- [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
-- Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra
-
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)
 - [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Pasos siguientes
+Obtenga más información sobre las responsabilidades de los administradores:
+- [Responsabilidades del administrador](admin-responsibilities.md)
+- [Administración de equipos grandes y contratistas externos](manage-teams.md)
+- [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
+- Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra
+
+
 

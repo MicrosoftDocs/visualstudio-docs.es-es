@@ -1,6 +1,6 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Visual Studio Tools para IA
+title: Visual Studio Tools para AI
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
   title: Visual Studio Tools para IA | Microsoft Docs
@@ -14,7 +14,7 @@ metadata:
 abstract:
   description: 'Visual Studio Tools para IA es un entorno de desarrollo integrado que se ha diseñado para compilar, probar e implementar soluciones de aprendizaje profundo. En los inicios rápidos, los tutoriales y las muestras que le ofrecemos, encontrará información sobre cómo usar Visual Studio Tools para IA.'
 sections:
-  - title: Inicios rápidos de cinco minutos
+  - title: Guías de inicio rápido de 5 minutos
     items:
       - type: paragraph
         text: 'Obtenga información sobre cómo ejecutar la solución de aprendizaje profundo con:'
@@ -25,7 +25,7 @@ sections:
               src: media/Tensorflow_logo.png
             text: TensorFlow y Python
             href: tensorflow-local.md
-  - title: Tutoriales detallados
+  - title: Tutoriales paso a paso
     items:
       - type: paragraph
         text: 'Obtenga información sobre cómo compilar una solución de aprendizaje profundo:'
@@ -33,7 +33,7 @@ sections:
         style: ordered
         items:
           - html: <a href="/visualstudio/ai/tensorflow-vm">Entrenar un modelo de TensorFlow en la nube</a>
-  - title: Muestras
+  - title: Ejemplos
     items:
       - type: list
         style: unordered

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984757"
 ---
 # <a name="data-visualizations"></a>Visualizaciones de datos
@@ -28,7 +28,7 @@ Una propiedad Point/PointF o CGPoint en iOS y Mac se presenta como una tupla que
 
 ![Visualización de punto](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Tamaño
+## <a name="size"></a>Size
 Una propiedad Size/SizeF o CGSize en iOS y Mac se presenta como un rectángulo. Se dibuja a escala hasta que una dimensión aumenta más allá de 250 píxeles, momento en que se escala el rectángulo con la mayor dimensión como 250 píxeles:
 
 [Visualización de tamaño](media/data-visualizations-image11.png)
@@ -88,7 +88,7 @@ A continuación se indican otros tipos que también tienen sus propios visualiza
 
 ![Otra visualización](media/data-visualizations-image23.png)
 
-* **Primitives**
+* **Elementos primitivos**
   * Muestra el valor sin formato del tipo primitivo.
 * **Enum**
   * Muestra el valor del campo sin el calificador de tipo enum.
@@ -101,7 +101,7 @@ A continuación se indican otros tipos que también tienen sus propios visualiza
 * **IntPtr**
   * Muestra una representación hexadecimal de IntPtr.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Inspeccionar las variables en las ventanas automático y variables locales (Visual Studio en Windows)](/visualstudio/debugger/autos-and-locals-windows)
 - [Ver cadenas en un visualizador de cadenas (Visual Studio en Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

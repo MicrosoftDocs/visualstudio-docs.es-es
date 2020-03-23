@@ -7,21 +7,21 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: 4c8f967ee7637f99e85297847f5984a80eb1cbe3
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70108200"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 
-El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEIP) está diseñado para ayudar a Microsoft a mejorar Visual Studio para Mac con el tiempo. Este programa recopila información sobre el hardware del equipo y el uso que se hace de Visual Studio para Mac, sin interrumpir a los usuarios en sus tareas en el equipo. La información recopilada ayuda a Microsoft a identificar qué características se deben mejorar. Este artículo explica cómo participar o no en el VSCEIP.
+El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEIP) está diseñado para ayudar a Microsoft a mejorar Visual Studio para Mac con el tiempo. Este programa recopila información sobre el hardware del equipo y el uso que se hace de Visual Studio para Mac, sin interrumpir a los usuarios en sus tareas en el equipo. La información recopilada ayuda a Microsoft a identificar las características que se deben mejorar. Este artículo explica cómo participar o no en el VSCEIP.
 
 Para obtener más información sobre los datos que recopila, procesa o transmite el VSCEIP, consulte la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Elección y control del Programa para la mejora de la experiencia del usuario de Visual Studio
 
-VSCEIP está activado de forma predeterminada. Para desactivarlo o volver a activarlo, siga estas instrucciones:
+VSCEIP está activado de forma predeterminada. Puede desactivarlo o volver a activarlo con las instrucciones siguientes.
 
 1. Abra Visual Studio para Mac.
 
@@ -33,7 +33,7 @@ VSCEIP está activado de forma predeterminada. Para desactivarlo o volver a acti
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Programa para la mejora de la experiencia del usuario (Visual Studio en Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Registros generados por el sistema recopilados por Visual Studio (en Windows)](/visualstudio/ide/diagnostic-data-collection)
