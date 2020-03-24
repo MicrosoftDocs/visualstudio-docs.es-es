@@ -14,10 +14,12 @@
           href: install-roslyn-analyzers.md
         - name: Configuración de los analizadores de código fuente
           href: use-roslyn-analyzers.md
+        - name: Ámbito del análisis de código activo
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: Ejecutar análisis de código manualmente
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Deshabilitación del análisis de código
           href: disable-code-analysis.md
-        - name: Habilitar análisis de la solución completa
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Preguntas más frecuentes
           href: analyzers-faq.md
         - name: Analizadores de FxCop
@@ -50,7 +52,7 @@
         - name: Migración a los analizadores de FxCop
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Ejecución manual del análisis heredado
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Configuración
           items:
             - name: Configuración del análisis heredado
