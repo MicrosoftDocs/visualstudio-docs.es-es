@@ -44,7 +44,7 @@ ms.locfileid: "73189223"
 
  Para obtener más información, consulte [organización jerárquica de recursos para la localización](../ide/globalizing-and-localizing-applications.md).
 
- Para especificar los archivos de recursos predeterminados en los proyectos de SharePoint que desarrolle en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija **idioma invariable (país invariable)** en la lista referencia cultural del cuadro de diálogo **Agregar recurso** cuando agregue un archivo de recursos.
+ Para especificar los archivos de recursos predeterminados en los proyectos de SharePoint que desarrolle en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], elija **idioma invariable (país o región invariable)** en la lista referencia cultural del cuadro de diálogo **Agregar recurso** cuando agregue un archivo de recursos.
 
 ## <a name="localize-visual-studio-sharepoint-solutions"></a>Localizar soluciones de SharePoint de Visual Studio
  Al localizar una solución, debe tener en cuenta toda la información textual que la solución muestra a los usuarios. Los mensajes informativos, los mensajes de error y las cadenas de [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] deben traducirse y las traducciones colocadas en los archivos de recursos.

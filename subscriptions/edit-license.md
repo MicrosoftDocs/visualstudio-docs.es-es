@@ -26,7 +26,7 @@ Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen 
 > [!div class="mx-imgBorder"]
 > ![Selección de un suscriptor para editarlo](_img/edit-license/select-subscriber.png)
 
-Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción, la dirección de correo electrónico, el país, el idioma, las descargas y el campo de referencia. Edite la información del suscriptor y haga clic en **Guardar**.
+Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción, la dirección de correo electrónico, el país o región, el idioma, las descargas y el campo de referencia. Edite la información del suscriptor y haga clic en **Guardar**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edición en masa de varios suscriptores
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas.
