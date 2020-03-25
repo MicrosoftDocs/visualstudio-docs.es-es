@@ -3,15 +3,16 @@ title: Posible error en el inicio de sesión en suscripciones de Visual Studio a
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235147"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509062"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -19,7 +20,7 @@ Según el tipo de cuenta utilizada para iniciar sesión, es posible que las susc
 ## <a name="what-is-aliasing"></a>¿Qué es el uso de alias?
 El concepto "uso de alias" hace referencia a los usuarios que tienen diferentes identidades para iniciar sesión en Windows (o su Active Directory) y acceder al correo electrónico.
 
-Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como "JohnD@contoso.com", pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como "John.Doe@contoso.com". Muchos usuarios que administran sus suscripciones a través del Centro de servicios de licencias por volumen de Microsoft podrían experimentar un inicio de sesión incorrecto, dado que la dirección de correo electrónico proporcionada ("John.Doe@contoso.com") no coincide con la dirección de directorio ("JohnD@contoso.com") requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".  Asegúrese de que sus usuarios usen la "Dirección de correo electrónico de inicio de sesión" tal como se indica en el portal de administración en https://manage.visualstudio.com para acceder a sus suscripciones. 
+Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como "JohnD@contoso.com", pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como "John.Doe@contoso.com". Asegúrese de que sus usuarios usen la "Dirección de correo electrónico de inicio de sesión" tal como se indica en el portal de administración en https://manage.visualstudio.com para acceder a sus suscripciones. 
 
 ## <a name="what-are-the-potential-issues"></a>¿Cuáles son los posibles problemas?
 
@@ -39,7 +40,7 @@ Un error de coincidencia de nombre principal de usuario (UPN) puede producirse c
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Corrección de un error de coincidencia de UPN
 
-1. Acceda al portal de administración de Visual Studio https://manage.visualstudio.com. 
+1. Acceda al portal de administración de Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com). 
 
 2. Encuentre al suscriptor que tiene el error de coincidencia de UPN. (La característica [Filtro](search-license.md) puede facilitar la búsqueda de un suscriptor).
 
@@ -55,7 +56,7 @@ Las cuentas de suscripción personal también pueden experimentar problemas si l
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Detección de si la cuenta de suscripción personal se ve afectada por un problema de alias
 
-1. Inicie sesión en https://my.visualstudio.com/subscriptions.
+1. Inicio de sesión en [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Compruebe que la dirección de correo electrónico de inicio de sesión que aparece en la parte superior derecha de la página coincide con la que usó para iniciar sesión.  Si la dirección de correo electrónico que tiene iniciada la sesión no coincide con la dirección de correo electrónico utilizada para acceder al sitio web, existe un conflicto entre su cuenta y el alias.
 
@@ -81,7 +82,7 @@ Como administrador, dispone de dos opciones para asegurarse de que los suscripto
 - La segunda opción, que es menos segura, consiste en permitir a sus suscriptores iniciar sesión con una dirección de correo electrónico distinta a la del directorio.
 
 Ambas opciones se configuran en el portal de administración completando los pasos siguientes:  
-1. Inicie sesión en https://manage.visualstudio.com. 
+1. Inicie sesión en [https://manage.visualstudio.com](https://manage.visualstudio.com). 
 
 0. Si va a modificar un solo usuario, selecciónelo en la tabla y haga clic con el botón derecho para editarlo. De este modo, se abrirá un panel en el que podrá modificar la dirección de correo electrónico de inicio de sesión. Realice los cambios necesarios en el campo de dirección de correo electrónico de inicio de sesión. Haga clic en Guardar y se aplicarán los cambios.  
 

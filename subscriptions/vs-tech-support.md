@@ -7,10 +7,10 @@ ms.date: 11/18/2019
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
 ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74706982"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio

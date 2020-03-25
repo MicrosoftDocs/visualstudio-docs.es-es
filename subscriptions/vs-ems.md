@@ -7,10 +7,10 @@ ms.date: 11/13/2019
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Enterprise Mobility + Security que se incluye con la suscripción de Visual Studio.
 ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099537"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
@@ -35,7 +35,7 @@ Si ya tiene un inquilino de Office 365 Developer (E3), debe instalar EMS.  De l
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 
-<sup>2</sup> *Excluye Microsoft Partner Network (Professional)*
+<sup>2</sup> *Excluye Microsoft Partner Network (Professional)*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

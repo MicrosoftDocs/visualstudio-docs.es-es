@@ -3,18 +3,19 @@ title: Establecimiento de las preferencias de los contratos en el portal de admi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: 24e9ddfa92ee63e4d15eea086224e1069d4bcbc8
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000985"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79508763"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
-Los superadministradores ya pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias determinarán lo que pueden establecer los administradores de los contratos al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
+Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
 
 ## <a name="access-preferences"></a>Preferencias de acceso
 Para ver o modificar las preferencias, debe iniciar sesión en el [portal de administración](https://manage.visualstudio.com) con un identificador de inicio de sesión que tenga derechos de superadministrador en el contrato.  
@@ -43,7 +44,7 @@ Si solo hay un contrato asociado a la dirección de correo electrónico que usó
 Esta preferencia proporciona un método para que los suscriptores se pongan en contacto con los administradores mediante el botón **Contact my Admin** (Contacto con el administrador) en la [página de suscripciones](https://my.visualstudio.com/subscriptions) del portal de suscriptor.  Si esta preferencia se deja en blanco, los mensajes del suscriptor se reenviarán a todos los administradores y superadministradores del contrato.  Se recomienda usar un alias de correo electrónico de grupo o un grupo de seguridad para personalizar el público al que está destinado este correo electrónico de contacto. Si lo prefiere, también puede escribir la dirección de correo electrónico de una persona.
 
 > [!NOTE]
-> La dirección de correo electrónico que indique aquí NO se proporcionará a los suscriptores.  Cuando un suscriptor envía una solicitud de tipo **Contact my Admin** (Contacto con el administrador) en el portal de suscriptor, el mensaje se reenvía al alias sin exponerlo a los suscriptores. 
+> La dirección de correo electrónico que indique aquí NO se proporcionará a los suscriptores.  Cuando un suscriptor envía una solicitud de tipo **Contact my Admin** (Contacto con el administrador) en el portal de suscriptor, el mensaje se reenvía al alias sin exponerlo al suscriptor. 
 
 ### <a name="default-external-subscribers-setting"></a>Configuración de suscriptores externos predeterminados
 Esta preferencia le permite decidir si los administradores pueden agregar suscriptores de fuera del directorio o del inquilino de la organización.  Si se desactiva, no se permitirán los suscriptores externos.  Si se habilita y un administrador intenta agregar un suscriptor externo, se le pedirá que confirme la elección y se le permitirá asignar la suscripción. Los administradores no pueden invalidar esta configuración. 
@@ -73,7 +74,18 @@ R:  Si no se establece ninguna dirección de correo electrónico específica en 
 ## <a name="resources"></a>Recursos
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
-- Descubra cómo [asignar suscripciones](assign-license.md).
-- Obtenga más información sobre todas las [ventajas de suscripción](https://visualstudio.microsoft.com/vs/benefits/).
+Obtenga más información sobre la administración de suscripciones de Visual Studio.
+- [Asignación de suscripciones individuales](assign-license.md)
+- [Asignación de varias suscripciones](assign-license-bulk.md)
+- [Editar suscripciones](edit-license.md)
+- [Determinación del uso máximo](maximum-usage.md)
+
+
 

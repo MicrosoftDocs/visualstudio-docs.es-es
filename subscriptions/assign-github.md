@@ -3,15 +3,16 @@ title: Oferta de Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/03/2020
+ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
+ms.date: 03/17/2020
 ms.topic: conceptual
 description: Administración de suscripciones en la oferta de Visual Studio + GitHub Enterprise
-ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263336"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79509010"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Administración de suscripciones de Visual Studio con GitHub Enterprise
 Los clientes que tengan contratos Enterprise (EA) con Microsoft pueden comprar una nueva oferta de suscripciones que junta las suscripciones estándar de Visual Studio y GitHub Enterprise. Es la forma fácil y económica para los suscriptores de Visual Studio de adquirir GitHub Enterprise. 
@@ -36,7 +37,7 @@ Para obtener más información sobre cómo administrar las suscripciones, consul
 ## <a name="manage-github-enterprise-subscriptions"></a>Administración de suscripciones de GitHub Enterprise
 Cuando se compran suscripciones de GitHub Enterprise, GitHub se asocia con los clientes para ayudarlos a crear y configurar las organizaciones que accederán a GitHub y a identificar a los administradores.  A continuación, estos administradores reciben una notificación en que se les comunica que se han configurado como administradores.  
 
-Puesto que este proceso es más complejo, puede pasar varios días una vez compradas las suscripciones antes de que las organizaciones y los administradores estén completamente configurados.
+Puesto que este proceso es más complejo, pueden pasar varios días tras la compra de las suscripciones antes de que las organizaciones y los administradores estén completamente configurados.
 
 GitHub está disponible como GitHub.com basado en la nube o como el servidor de GitHub Enterprise de instalación local.  Los procesos para administrar las dos versiones son diferentes.  GitHub ofrece una variedad de temas de ayuda y guías del administrador que lo ayudarán a administrar las suscripciones de GitHub Enterprise.  A continuación, hemos incluido vínculos a temas seleccionados.  
 
