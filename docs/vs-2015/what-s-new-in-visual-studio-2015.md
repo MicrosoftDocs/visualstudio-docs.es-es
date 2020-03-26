@@ -254,15 +254,15 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 
  ¡Eso es todo! Enviaremos su comentario al equipo correcto, donde se felicitarán entre ellos y rápidamente comenzarán a pensar en diferentes maneras de deleitarlo aún más.
 
-### <a name="send-a-frown"></a>Envíe una desaprobación
+### <a name="send-a-frown"></a>Enviar un ceño fruncido
  Sus comentarios acerca de todo lo que necesitamos mejorar en los productos nos ayuda a administrar nuestro trabajo, al enfocarnos principalmente en aquellas cosas que son más importantes para nuestros clientes. Si hay algo que le molesta, cuéntenos a través de la función **Enviar una desaprobación** directamente desde el IDE. También hemos hecho que este proceso sea muy sencillo:
 
- Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar una desaprobación. Para obtener más información, consulta [Talk to Us](./ide/talk-to-us.md).
+ Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar un ceño fruncido. Para obtener más información, consulta [Talk to Us](./ide/talk-to-us.md).
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Informe bloqueos, caídas y problemas de rendimiento.
- En ocasiones, solo una nota rápida en una desaprobación no es suficiente para describir el impacto total de algo que no le gusta. En aquellos casos en los que experimenta un bloqueo, una caída o algún problema de rendimiento, puede compartir fácilmente pasos de reproducción, volcados de memoria y archivos de seguimiento, al usar el cuadro de diálogo que aparece luego de que envía una desaprobación.
+ En ocasiones, solo una nota rápida en una desaprobación no es suficiente para describir el impacto total de algo que no le gusta. En aquellos casos en los que experimenta un bloqueo, una caída o algún problema de rendimiento, puede compartir fácilmente pasos de reproducción, volcados de memoria y archivos de seguimiento, al usar el cuadro de diálogo que aparece luego de que envía un ceño fruncido.
 
- Primero, envíe una desaprobación tal como se describió anteriormente. En el cuadro de diálogo que aparece, puede etiquetar su comentario con una de las etiquetas predeterminadas o puede crear su propia etiqueta. Las etiquetas nos ayudan a enviar su comentario al equipo de características correspondiente. En la lista desplegable **Elegir una categoría** , seleccione la opción que representa el problema que está informando y luego siga los pasos para reproducir el problema. También se encuentran disponibles los pasos detallados sobre cómo usar Visual Studio para enviar comentarios. Para obtener más información, vea [instrucciones para enviar una sonrisa de Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ Primero, envíe un ceño fruncido tal como se describió anteriormente. En el cuadro de diálogo que aparece, puede etiquetar su comentario con una de las etiquetas predeterminadas o puede crear su propia etiqueta. Las etiquetas nos ayudan a enviar su comentario al equipo de características correspondiente. En la lista desplegable **Elegir una categoría** , seleccione la opción que representa el problema que está informando y luego siga los pasos para reproducir el problema. También se encuentran disponibles los pasos detallados sobre cómo usar Visual Studio para enviar comentarios. Para obtener más información, vea [instrucciones para enviar una sonrisa de Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Vea también
 
