@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: Programa para la mejora
       tocHref: /visualstudio/
       topicHref: /visualstudio/
       items:
@@ -45,9 +45,9 @@
                 - name: Generación de perfiles
                   tocHref: /visualstudio/profiling/
                   topicHref: /visualstudio/profiling/index
-                - name: Prueba
+                - name: Pruebas
                   tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
+                  topicHref: /visualstudio/test/index
                 - name: Diseñador de flujo de trabajo
                   tocHref: /visualstudio/workflow-designer/
                   topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
