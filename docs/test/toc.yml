@@ -1,5 +1,9 @@
 - name: Herramientas de prueba de Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Información general
+  items:
+    - name: Un primer vistazo a las herramientas de prueba
+      href: improve-code-quality.md
 - name: Pruebas unitarias
   items:
     - name: Introducción a las herramientas de pruebas unitarias
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Información general
+          href: intellitest-manual/index.md
         - name: Procedimiento Generar pruebas unitarias con IntelliTest
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Información general
-          href: intellitest-manual/introduction.md
-        - name: Introducción
-          href: intellitest-manual/getting-started.md
-        - name: Índice a las secciones
-          href: intellitest-manual/index.md
         - name: Generación de pruebas
           href: intellitest-manual/test-generation.md
         - name: Ejecución simbólica dinámica
