@@ -329,6 +329,8 @@
                   href: ide/reference/generate-constructor.md
                 - name: Generar deconstructor
                   href: ide/reference/generate-deconstructor.md
+                - name: Agregar conversión explícita
+                  href: ide/reference/add-explicit-cast.md
                 - name: Agregar parámetro al método
                   href: ide/reference/add-parameter.md
                 - name: Generación de parámetros
@@ -360,6 +362,8 @@
                   href: ide/reference/convert-anonymous-type-to-class.md
                 - name: Conversión de un tipo anónimo para tupla
                   href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Conversión entre propiedad automática y propiedad completa
+                  href: ide/reference/convert-between-auto-property-and-full-property.md
                 - name: Convertir un bucle for en instrucción foreach (y a la inversa)
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Convertir un método Get en propiedad (y a la inversa)
