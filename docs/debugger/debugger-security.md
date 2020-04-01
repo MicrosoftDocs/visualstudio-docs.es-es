@@ -1,5 +1,5 @@
 ---
-title: Seguridad del depurador | Microsoft Docs
+title: Seguridad del depurador ( Debugger Security) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8d2e951bb62cb3ac8010029b76971662d07b898
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738316"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527925"
 ---
 # <a name="debugger-security"></a>Seguridad del depurador
 La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra forma, no tendría, especialmente al depurar de forma remota. Un depurador malintencionado podría infligir daños generalizados en el equipo depurado.
 
  Sin embargo, muchos desarrolladores no comprenden que la amenaza de seguridad también puede presentarse en la dirección contraria. Es posible que el código malintencionado del proceso depurado comprometa la seguridad del equipo desde donde se depura: hay una serie de ataques de seguridad contra los que es preciso protegerse.
 
-## <a name="security-best-practices"></a>Procedimientos recomendados para la seguridad
+## <a name="security-best-practices"></a>Procedimientos recomendados de seguridad
  Hay una relación de confianza implícita entre el código que se depura y el depurador. Si está dispuesto a depurar código, también debería ejecutarlo. Lo importante es que debe poder confiar en lo que está depurando. Si no tiene confianza, no debería depurarlo, o debería hacerlo desde un equipo que pueda poner en riesgo y en un entorno aislado.
 
  Para reducir la superficie de ataque potencial, se debería deshabilitar la depuración de los equipos de producción. Por la misma razón, nunca se debería habilitar indefinidamente.
@@ -50,11 +50,11 @@ La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra 
 
  ![Cuadro de diálogo de error](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- Si utiliza el modo de Autenticación de Windows, tenga en cuenta que es peligroso conceder permiso a un usuario que no sea de confianza para que se conecte a msvsmon, porque concede al usuario todos los permisos en el equipo.
+ Al usar el modo de autenticación de Windows, tenga en cuenta que conceder a un usuario que no es de confianza permiso para conectarse a msvsmon es peligroso, porque al usuario se le conceden todos los permisos en el equipo que hospeda msvsmon.
 
- No depure un proceso desconocido en un equipo remoto: existe un riesgo de ataques que pueden afectar al equipo en el que se ejecuta el depurador o que podrían poner en peligro a msvsmon.exe, el Monitor de depuración remota de Visual Studio. Si es imprescindible depurar un proceso desconocido, intente hacerlo localmente y utilice un firewall para poder localizar cualquier amenaza potencial.
+ No depurar un proceso desconocido en un equipo remoto: hay posibles vulnerabilidades que pueden afectar a la máquina que ejecuta el depurador o que podrían poner en peligro msvsmon. Si es imprescindible depurar un proceso desconocido, intente hacerlo localmente y utilice un firewall para poder localizar cualquier amenaza potencial.
 
- Para obtener más información, vea [depuración remota](../debugger/remote-debugging.md).
+ Para obtener información sobre cómo configurar msvsmon, consulte [Configurar el depurador remoto.](../debugger/remote-debugging.md#bkmk_setup)
 
 ### <a name="web-services-debugging-security"></a>Seguridad de la depuración de servicios Web
  La depuración local es más segura, pero como probablemente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado en el servidor Web, quizás no pueda realizarla. Normalmente, los servicios Web se depuran de forma remota, excepto durante el desarrollo. Por tanto, las recomendaciones de seguridad para la depuración remota también se aplican a la depuración de servicios Web. A continuación se indican algunos procedimientos adicionales recomendados para la seguridad. Para obtener más información, consulta [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
@@ -71,14 +71,14 @@ La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra 
 ### <a name="symbols-and-source-code"></a>Símbolos y código fuente
  Las dos herramientas siguientes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] merecen una reflexión acerca de la seguridad:
 
-- Servidor de origen, que proporciona las versiones de código fuente desde un repositorio de código fuente. Resulta útil cuando no se tiene la versión actual del código fuente de un programa. [Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- Servidor de origen, que proporciona las versiones de código fuente desde un repositorio de código fuente. Resulta útil cuando no se tiene la versión actual del código fuente de un programa. [Advertencia de seguridad: el depurador debe ejecutar el comando no confiable](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
 
 - Servidor de símbolos, que se utiliza para proporcionar los símbolos necesarios para depurar un bloqueo durante una llamada del sistema.
 
   Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen).
 
 ## <a name="see-also"></a>Vea también
-- [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
-- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Configuración y preparación del depurador](../debugger/debugger-settings-and-preparation.md)
+- [Primero mire el depurador](../debugger/debugger-feature-tour.md)
 - [Advertencia de seguridad Adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [Advertencia de seguridad: el depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
