@@ -3,15 +3,16 @@ title: Búsqueda y filtrado | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Conozca cómo los administradores pueden encontrar suscriptores o grupos individuales en el Portal de administración.
-ms.openlocfilehash: 2f48efee4ad4447f6d76cdc71b7210833309d2c8
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e2ca2683d1c14180fb70a5f80a781f774ed65e71
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605797"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233273"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Búsqueda y filtrado de suscriptores en suscripciones de Visual Studio
 El Portal de administradores de suscripciones de Visual Studio permite encontrar un subconjunto concreto de suscriptores según diversos criterios. Puede filtrar la lista de suscriptores por nombre, dirección de correo electrónico, nivel de suscripción y otra información.
@@ -19,7 +20,7 @@ El Portal de administradores de suscripciones de Visual Studio permite encontrar
 ## <a name="to-filter-the-subscriber-list"></a>Para filtrar la lista de suscriptores, siga estos pasos:
 1. Para buscar un grupo específico de suscriptores, seleccione la pestaña **Filtrar**.
    > [!div class="mx-imgBorder"]
-   > ![Seleccione Filtrar para buscar en una lista de suscriptores.](media/filter-list.png)
+   > ![Seleccione Filtrar para buscar en una lista de suscriptores.](_img/search-filter/filter-list.png)
 
 2. Indique los criterios que quiera usar como base de la búsqueda y, luego, vuelva a seleccionar **Filtrar**.
    > [!div class="mx-imgBorder"]
@@ -29,10 +30,22 @@ El Portal de administradores de suscripciones de Visual Studio permite encontrar
    > [!NOTE]
    > El campo **Nombre** se ordena por el nombre.
 
+   Observe que el icono de **Filtro** está resaltado, lo que indica que hay un filtro aplicado.  También se muestra la opción **Borrar filtro**. 
+
 3. Para borrar el filtro y restaurar la lista sin filtrar, haga clic **Borrar filtro** en la parte superior derecha. 
    > [!div class="mx-imgBorder"]
-   > ![Borrar el filtro de la lista de suscriptores](media/clear-filter.png)
+   > ![Borrar el filtro de la lista de suscriptores](_img/search-filter/clear-filter.png)
+
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Ahora que sabe cómo buscar un suscriptor, aprenda a [editar](edit-license.md) su suscripción.
 - ¿Necesita ayuda para usar el Portal de administración?  Póngase en contacto con el [soporte técnico de administración y suscripciones de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+
+

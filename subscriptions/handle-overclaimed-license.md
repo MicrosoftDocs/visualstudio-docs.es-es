@@ -3,24 +3,29 @@ title: Administración de licencias sobreasignadas| Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Conozca cómo los administradores pueden resolver suscripciones sobreasignadas
-ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605509"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232449"
 ---
 # <a name="overallocated-subscriptions"></a>Suscripciones con exceso de asignación
-A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Este hecho se conoce como "sobreasignación".  Cuando esto sucede, en la pestaña Suscriptores se muestra una alerta y se proporciona información adicional acerca de cuántas suscripciones se han sobreasignado.
+A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Este hecho se conoce como "sobreasignación".  
+
+Para ver las asignaciones de suscripción, haga clic en el icono superior de la izquierda para abrir el panel Asignaciones.  
 
 > [!NOTE]
 > No se permiten sobreasignaciones en programas de licencia abierta.  Además, otros programas pueden mostrar esta información en el portal de forma diferente.
 >
 > [!div class="mx-imgBorder"]
 > ![Aviso de exceso de asignación de suscripciones](_img/over-claimed/over-claimed-alert.png)
+
+Observe que las suscripciones sobreasignadas se muestran con una barra desteñida.  En la sección de información general de la parte superior se indica el número de sobreasignaciones para todos los tipos de suscripción, y cada nivel de suscripción también muestra su propio estado de asignación.  
 
 ## <a name="resolve-overallocated-subscriptions"></a>Resolución de las suscripciones sobreasignadas
 Hay varias maneras de resolver las sobreasignaciones:
@@ -35,6 +40,12 @@ Si su organización tiene un contrato Enterprise (EA), los administradores puede
 > Si las suscripciones de Visual Studio con GitHub Enterprise son asignadas por administradores de suscripciones de Visual Studio y nunca se han comprado estas suscripciones, no serán visibles para los administradores de GitHub Enterprise de la organización. Para asegurarse de que las suscripciones de GitHub Enterprise sean visibles, debe realizarse una compra que incluya **como mínimo una** suscripción de Visual Studio Professional con GitHub Enterprise o de Visual Studio Enterprise con GitHub Enterprise la primera vez que se asignen las suscripciones.
 >
 > Es responsabilidad del cliente asegurarse de que para cada suscripción de GitHub que se asigne haya una suscripción de Visual Studio con GitHub correspondiente asignada en el portal de administración para seguir cumpliendo los requisitos de licencia para esta suscripción.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Obtenga más información sobre cómo administrar [suscripciones de Visual Studio con GitHub Enterprise](assign-github.md).

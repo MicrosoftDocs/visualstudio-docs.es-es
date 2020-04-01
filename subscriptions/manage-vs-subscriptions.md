@@ -3,15 +3,16 @@ title: Administrar suscripciones de Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706969"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232358"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -112,3 +113,17 @@ R: En función del canal de compra, Microsoft mantiene los datos de cliente dura
 > [!NOTE]
 > - Si decide cerrar la cuenta de Microsoft o de Azure AD, sus datos personales se anonimizan de forma inmediata.
 > - No se quitarán completamente todos los datos personales si tiene suscripciones activas.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Pasos siguientes
+¿Es usted la persona encargada de administrar las suscripciones de su organización?  Obtenga más información sobre la administración de suscripciones de Visual Studio:
+- [Asignación de suscripciones individuales](assign-license.md)
+- [Asignación de varias suscripciones](assign-license-bulk.md)
+- [Editar suscripciones](edit-license.md)
+- [Eliminar suscripciones](delete-license.md)
+- [Determinación del uso máximo](maximum-usage.md)

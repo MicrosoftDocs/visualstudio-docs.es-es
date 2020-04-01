@@ -3,15 +3,16 @@ title: Uso de claves de producto para admitir demostraciones en Internet a trav�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Aprenda a usar claves de producto para admitir demostraciones en Internet a través de Terminal Services y habilitar el acceso a RDS
-ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493381"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232440"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Demostraciones en Internet a través de Terminal Services
 Con una suscripción de Visual Studio, podrá brindar a los usuarios finales acceso a demostraciones de sus programas en Internet a través de Terminal Services (Windows Server 2003 o Windows Server 2008) o Servicios de Escritorio remoto (Windows Server 2008 R2 o versiones posteriores). De este modo, hasta 200 usuarios anónimos pueden tener acceso de manera simultánea a la demostración. Su demostración no debe usar datos de producción. La licencia de los suscriptores de Visual Studio se concede para que muestren sus aplicaciones a los usuarios finales. La demostración en Internet a través de Terminal Services (TS) o Servicios de Escritorio remoto (RDS) es el único escenario en que usuarios finales sin una suscripción de Visual Studio pueden interactuar con la aplicación de demostración si la licencia del software se obtuvo a través de suscripciones de Visual Studio.
@@ -33,6 +34,13 @@ Los usuarios finales pueden conectarse para tener acceso a aplicaciones a travé
 - Las conexiones deben realizarse a través de Internet.
 - Se pueden usar hasta 200 conexiones de usuarios simultáneas para las demostraciones de la aplicación.
 - Las claves de producto para habilitar las conexiones de usuarios las debe obtener un suscriptor de Visual Studio.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Windows Server](https://docs.microsoft.com/windows-server/)
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si necesita orientación para implementar RDS, vea la serie de blogs de varias partes sobre la **implementación de sesiones de Servicios de Escritorio remoto (RDS) 2012** en https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 

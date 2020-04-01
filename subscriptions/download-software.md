@@ -3,15 +3,16 @@ title: Descarga de títulos de software en suscripciones de Visual Studio | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476823"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232606"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
@@ -50,14 +51,22 @@ Para obtener una clave de producto para la descarga, puede hacer clic en la llav
 > [!div class="mx-imgBorder"]
 > ![Claves de producto reclamadas de Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>Pasos siguientes
-Para obtener más información sobre cómo buscar, reclamar y exportar claves de producto, vea la documentación sobre claves de producto:
-- [Introducción a las claves de producto](product-keys.md)
-- [Búsqueda y reclamación de claves](find-keys.md)
-
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)
 - [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Pasos siguientes
+Para obtener más información sobre cómo buscar, reclamar y exportar claves de producto, vea la documentación sobre claves de producto:
+- [Introducción a las claves de producto](product-keys.md)
+- [Búsqueda y reclamación de claves](find-keys.md)
+
+Obtenga información sobre cómo aprovechar otras excelentes ventajas, como:
+- [Crédito individual de Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [IDE de Visual Studio](vs-ide-benefit.md)
+
+
+
 

@@ -1,17 +1,18 @@
 ---
 title: Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio Enterprise y Visual Studio Professional
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851413"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273834"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -94,6 +95,12 @@ R:  Sí, puede, siempre y cuando el distribuidor de software participe en el pro
 - [Portal de administración de suscripciones a Visual Studio](https://manage.visualstudio.com/)
 - [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Adquisición de suscripciones de nube de Visual Studio para CSP](vscloud-csp.md)
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Adquirir suscripciones de nube ya

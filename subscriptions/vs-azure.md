@@ -3,15 +3,16 @@ title: Beneficio de Microsoft Azure | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
+ms.date: 03/18/2020
 ms.topic: conceptual
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 01c31d96b7ee3e696f941725bbcb314c5f0e0e60
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542677"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232035"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -91,9 +92,7 @@ Para seguir usando los descuentos y el crédito individual de Azure DevTest en 
 
 Si alguien de su equipo u organización compra suscripciones en su nombre, póngase en contacto con el administrador de Visual Studio de su organización y solicite una suscripción de Visual Studio que le dé derecho a la cantidad de crédito individual de Azure DevTest que necesita.   Solicite al administrador asignar la suscripción nueva al mismo identificador de usuario al que se asignó su suscripción anterior, de manera que no tenga que preocuparse de transferir su suscripción de Azure.
 
-Si puede comprar una suscripción directamente, realice una de las acciones siguientes:
-1. Compre una suscripción de nube anual de Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) a través de Visual Studio Marketplace.
-2. Aproveche un descuento del 50% o superior al renovar su suscripción actual a través de [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
+Si compra una suscripción directamente, aproveche un descuento al renovar su suscripción actual a través de [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
 Compare todas las [suscripciones y sus ventajas](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -113,6 +112,12 @@ Si cree que ha recibido este correo electrónico por error, póngase en contacto
   - [Recomendaciones y sugerencias de Azure](https://microsoft.github.io/AzureTipsAndTricks/ "Recomendaciones y sugerencias de Azure") 
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para más información sobre las herramientas y los servicios de Microsoft, revise la documentación para:

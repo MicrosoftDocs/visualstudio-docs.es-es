@@ -1,17 +1,18 @@
 ---
 title: Beneficio de Azure PAYG
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo configurar la cuenta Pago por uso de Azure.
-ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816394"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231986"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Suscripciones de Desarrollo/pruebas - Pago por uso de Azure
 Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas - Pago por uso, al mismo tiempo que colabora con otros suscriptores y proporciona aislamiento entre los equipos y el entorno.  Recibirá tarifas por horas con descuentos exclusivos para desarrollo y pruebas y derechos de uso en la nube de su software de suscripción en Azure.
@@ -42,6 +43,12 @@ R: Para modificar cualquiera de las suscripciones de Azure:
 2. En la lista del panel de la izquierda, seleccione **Administración de costos + facturación**.
 3. Verá una lista de sus suscripciones en el cuadro **Mis suscripciones**. Haga clic en la suscripción deseada.
 4. Ahora tendrá opciones para administrar o cancelar la suscripción, cambiarle el nombre, cambiar el directorio o transferir la propiedad de la facturación.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Muchas suscripciones incluyen ventajas adicionales relacionadas con Azure, como Azure DevOps y crédito individual de Azure DevTest.  Para más información sobre estas ventajas, consulte:
