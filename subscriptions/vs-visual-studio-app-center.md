@@ -1,17 +1,18 @@
 ---
 title: Beneficio de Visual Studio App Center en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Visual Studio App Center incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: abe929398035bef8800949712ad6cc4e0ac93721
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161919"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301863"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -72,6 +73,12 @@ Ahora podrá tener acceso al portal de App Center y crear su cuenta.
   - Consulte [toda la documentación de App Center](/appcenter/).
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:

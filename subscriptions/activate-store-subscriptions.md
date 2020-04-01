@@ -3,15 +3,16 @@ title: Activación de las suscripciones de Visual Studio adquiridas en Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4183a0f4-6f0b-42f4-8460-0d000e21bb16
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo activar las suscripciones de Visual Studio adquiridas en Microsoft Store.
-ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e0a43b203ad47da83b7734cf7a3eb6465b5e9b37
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78894403"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232780"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>¿Cómo puedo activar una suscripción adquirida en Microsoft Store?
 Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, los pasos de activación se pueden iniciar desde la "página de confirmación" o el "correo electrónico de confirmación" recibido después del pago.

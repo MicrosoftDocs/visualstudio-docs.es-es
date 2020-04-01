@@ -1,17 +1,18 @@
 ---
 title: Beneficio de WhiteSource Bolt | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 01/06/2020
+ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Obtenga más información sobre cómo activar la suscripción de WhiteSource Bolt que se incluye con la suscripción a Visual Studio.
-ms.openlocfilehash: edfc4c01908a6ce3bf5466a812ab7cf2608a62f7
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 00a146d7bf65124b7f4c9e34fadc4afc2d3205c8
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "76114323"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301886"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt en las suscripciones de Visual Studio
 
@@ -60,14 +61,14 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédito individual de Azure DevTest](vs-azure.md)
-
-## <a name="see-also"></a>Vea también
-- [Documentación de Visual Studio](/visualstudio/)
-- [Documentación de Azure DevOps](/azure/devops/)
-- [Documentación de Azure](/azure/)
-- [Documentación de Microsoft 365](/microsoft-365/)

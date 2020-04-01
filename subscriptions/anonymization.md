@@ -1,17 +1,18 @@
 ---
 title: Anonimización de datos de suscriptor de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo se anonimizan los datos del suscriptor cuando se pierde el acceso a las suscripciones.
-ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78894418"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232732"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimización de información de suscriptor de Visual Studio
 Cuando se produce un evento que bloquea el uso que realiza un suscriptor de una suscripción, como la expiración de una suscripción o la eliminación de la cuenta de inicio de sesión del suscriptor, la información personal del usuario como su nombre y la cuenta de inicio de sesión se desordenan para volverlos inutilizables.  Esto se hace para proteger la información personal del suscriptor.

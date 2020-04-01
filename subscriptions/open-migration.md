@@ -3,15 +3,16 @@ title: Administración por parte de los asociados de las suscripciones a Visual 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los asociados pueden administrar las suscripciones a Visual Studio para los clientes.
-ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: bf1fe706a0e1ee0b027e465c0bfaa8c0d326ee99
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947070"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232298"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Administración por parte de los asociados de suscripciones en nombre de los clientes
 Para administrar suscripciones en el [portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, hay que seguir una serie de pasos. Este es el proceso:
@@ -50,7 +51,7 @@ Este escenario se aplica a los nuevos asociados que ya han realizado nuevos pedi
 > El cliente recibirá un correo de notificación que informa de que se ha agregado un socio a la licencia Open. Puede optar por quitar el acceso del socio.
 
 ## <a name="resources"></a>Recursos
-- [Artículo de licencias de Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [Artículo de licencias de Visual Studio](https://aka.ms/vslicensing)
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Términos de licencias por volumen](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

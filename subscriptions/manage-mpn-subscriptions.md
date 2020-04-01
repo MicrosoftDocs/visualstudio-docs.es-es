@@ -3,15 +3,16 @@ title: Administrar las suscripciones de Visual Studio ofrecidas a través de Mic
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
-ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947141"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232423"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administración de suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.

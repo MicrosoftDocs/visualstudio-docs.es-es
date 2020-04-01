@@ -1,17 +1,18 @@
 ---
 title: Ventaja de Pluralsight en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
-ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 71af6f269fe84ef633215dcb526b89dffe8481a0
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77192421"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301875"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -96,6 +97,12 @@ R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscr
 - El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que haya creado la cuenta, tendrá todo listo para iniciar el aprendizaje.  Visite [https://www.pluralsight.com](https://www.pluralsight.com) y pulse **Iniciar sesión** en la esquina superior derecha de la página para iniciar un nuevo curso, o vuelva a un curso que ya se ha iniciado.

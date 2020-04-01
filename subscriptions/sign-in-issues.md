@@ -3,15 +3,16 @@ title: Problemas al iniciar sesión en las suscripciones de Visual Studio | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509023"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233240"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.

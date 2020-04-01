@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55086c473929158f50f05db790cf5842f1b696db
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235098"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550025"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -405,10 +405,6 @@ Para este escenario, use Chrome.
 
    ::: moniker range=">=vs-2019"
    En el caso de Microsoft Edge (Chromium), cierre también todas las instancias de Chrome. Como los dos exploradores comparten el código base de Chromium, se obtiene el mejor resultado.
-   ::: moniker-end
-
-   ::: moniker range=">=vs-2019"
-   En el caso de Microsoft Edge (Chromium), cierre también todas las instancias de Chrome. Como los dos exploradores usan el código base de chromium, se obtiene el mejor resultado.
    ::: moniker-end
 
 2. Inicie el explorador con la depuración habilitada.

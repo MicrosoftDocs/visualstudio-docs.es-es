@@ -1,17 +1,18 @@
 ---
 title: Ventaja de soporte técnico
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74706982"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301942"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
@@ -125,6 +126,12 @@ Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en 
 <sup>2</sup> *Incluye: Imagine Standard.*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Asegúrese de activar estas ventajas excelentes para aprovechar al máximo su suscripción de Visual Studio:

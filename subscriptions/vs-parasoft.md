@@ -1,17 +1,18 @@
 ---
 title: Beneficio de Parasoft Virtualize/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Vea cómo activar la suscripción de Parasoft Virtualize/SOA Test Professional que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5f6673ecd3721232feb727ceda2c399e2ee12348
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161928"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301902"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop en suscripciones de Visual Studio
 
@@ -92,6 +93,12 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
   - Centro de recursos de Parasoft: https://www.parasoft.com/resources/
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para usar su propio espacio aislado de desarrollo, active sus [crédito individual de Azure DevTest](vs-azure.md). 

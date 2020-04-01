@@ -3,15 +3,16 @@ title: Suscripciones de Visual Studio ofrecidas a empresas emergentes a través 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalles sobre qué suscripciones se ofrecen a través del programa Microsoft for Startups.
-ms.openlocfilehash: 11cc8b0fbc75a17d2aeaf21128359ab040b982ea
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947108"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233253"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a startups
 Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales](https://visualstudio.microsoft.com/vs/pricing/) de Visual Studio Enterprise. 

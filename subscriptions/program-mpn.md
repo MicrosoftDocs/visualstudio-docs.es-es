@@ -3,15 +3,16 @@ title: Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947051"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232332"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 

@@ -9,12 +9,13 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 821e915a0b66f25c5b89a83b31e93b01aea6f400
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: vs-2019
+ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "67292706"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375567"
 ---
 # <a name="move-type-to-namespace"></a>Traslado de tipo al espacio de nombres
 

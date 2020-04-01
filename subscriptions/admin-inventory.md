@@ -3,15 +3,16 @@ title: Inventario de entornos de preproducción | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: Obtenga información sobre la responsabilidad de los administradores de realizar inventarios de preproducción
-ms.openlocfilehash: 722c72acde9ff0b1f7bcfc0c394a1e016c84b719
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937477"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232756"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario de entorno de preproducción
 Las suscripciones de Visual Studio simplifican la administración de activos realizando un recuento de los usuarios en lugar de los dispositivos.

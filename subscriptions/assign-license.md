@@ -3,15 +3,16 @@ title: Asignación de licencias a suscripciones de Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 87334251532dbaa127d4def8c33a9814c28d42e1
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263321"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232706"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
