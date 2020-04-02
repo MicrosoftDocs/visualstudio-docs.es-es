@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 2ba2e1348a3abf5c914e1c686e5fd00ff186d9c0
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 9a0f8e7881dd7083fb9380a04e68d3b04c0071b1
+  ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74985047"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80544084"
 highlightedContent:
   items:
   - title: Instalación de Visual Studio para Mac
@@ -39,7 +39,7 @@ productDirectory:
       text: Compatibilidad de .NET Core
     - url: ~/asp-net-core.md
       text: Introducción a .NET Core
-    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc
+    - url: https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1
       text: Documentación de ASP.NET
   - title: Azure
     imageSrc: https://docs.microsoft.com/media/logos/logo_azure.svg
@@ -86,7 +86,7 @@ tools:
     imageSrc: https://docs.microsoft.com/media/logos/logo_html5.svg
     url: ~/razor.md
 conceptualContent:
-  title: Introducción
+  title: Primeros pasos
   items:
   - title: Introducción a Visual Studio para Mac
     links:
@@ -104,7 +104,7 @@ conceptualContent:
       text: Escribir código
     - url: ~/debugging.md
       itemType: overview
-      text: Depuración del código
+      text: Depurar el código
     - url: ~/compiling-and-building.md
       itemType: overview
       text: Compilación y generación de proyectos
@@ -118,7 +118,7 @@ conceptualContent:
     links:
     - url: ~/signing-in.md
       itemType: get-started
-      text: Iniciar sesión
+      text: Inicio de sesión
     - url: ~/customizing-the-ide.md
       itemType: get-started
       text: Personalizar el IDE
@@ -149,10 +149,10 @@ additionalContent:
     - title: Desarrollar
       summary: IntelliSense, refactorización y resaltado de sintaxis para su lenguaje favorito.
       url: ~/source-editor.md
-    - title: Build
+    - title: Compilar
       summary: Configure el compilador y cree una aplicación.
       url: ~/compiling-and-building.md
-    - title: Depurar
+    - title: Depuración
       summary: Ejecute la aplicación en el depurador para investigar problemas.
       url: ~/debugging.md
     - title: Control de versiones

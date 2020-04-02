@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922983"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80501453"
 ---
 Con Visual Studio es muy fácil compilar, depurar y ejecutar aplicaciones .NET, ASP.NET y ASP.NET Core en contenedores y publicarlas en Azure Container Registry (ACR), Docker Hub, Azure App Service o un registro de contenedor propio. En este artículo se va a publicar una aplicación ASP.NET Core en ACR.
 
@@ -74,6 +74,9 @@ Si la casilla **Configurar para HTTPS** del cuadro de diálogo del nuevo proyect
 Seleccione **Docker** en la lista desplegable de depuración de la barra de herramientas y empiece a depurar la aplicación. Es posible que vea un mensaje que pregunte sobre cómo confiar en un certificado; elija la opción de confiar en el certificado para continuar.
 
 La opción **Herramientas de contenedor** de la ventana **Salida** muestra las acciones que están teniendo lugar. La primera vez, puede tardar unos minutos en descargar la imagen base, pero es mucho más rápido en ejecuciones posteriores.
+
+>[!NOTE]
+> Si necesita cambiar los puertos para la depuración, puede hacerlo en el archivo *launchSettings.json*. Vea [Configuración de inicio de contenedor](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Ventana Contenedores
 
