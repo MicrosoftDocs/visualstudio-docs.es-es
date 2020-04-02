@@ -1,6 +1,6 @@
 ---
 title: Referencia de esquemas de fragmentos de código
-ms.date: 02/25/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306816"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472797"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -235,7 +235,7 @@ Se requiere un valor de texto. Este texto describe el fragmento de código.
 Especifica una función que se ejecutará cuando un literal o un objeto reciba foco en Visual Studio.
 
 > [!NOTE]
-> El elemento `Function` solo es compatible con fragmentos de código de C#.
+> No todos los lenguajes admiten elementos `function`. Consulte la documentación específica del lenguaje sobre las funciones que están disponibles.
 
 ```xml
 <Function>
