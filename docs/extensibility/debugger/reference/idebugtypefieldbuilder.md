@@ -1,24 +1,24 @@
 ---
-title: IDebugTypeFieldBuilder | Microsoft Docs
+title: IDebugTypeFieldBuilder ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 165bbf6326bee67718c4c2ae44933d1b21b8252c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319789"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718393"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Representa la capacidad para crear un campo que representa un tipo.
+Representa la capacidad de crear un campo que representa un tipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -26,8 +26,8 @@ Representa la capacidad para crear un campo que representa un tipo.
 IDebugTypeFieldBuilder : IUnknown
 ```
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Esta interfaz se obtiene desde el proveedor de símbolos.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Esta interfaz se obtiene del proveedor de símbolos.
 
 ## <a name="methods"></a>Métodos
  Esta interfaz implementa los métodos siguientes:
@@ -40,6 +40,6 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="requirements"></a>Requisitos
  Encabezado: Sh.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

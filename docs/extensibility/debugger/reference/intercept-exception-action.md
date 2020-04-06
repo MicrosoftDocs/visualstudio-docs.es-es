@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
+title: INTERCEPT_EXCEPTION_ACTION Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265ed30272c959b6ee812a83f748888a5af15cab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350240"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715066"
 ---
-# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-Especifica qué acciones emprender al interceptar las excepciones.
+# <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
+Especifica qué acciones se deben realizar al interceptar excepciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,13 +47,13 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 `IEA_INTERCEPT`\
 Permite interceptar la excepción actual. Este es el único valor admitido en la actualidad y debe especificarse.
 
-## <a name="remarks"></a>Comentarios
-Estos valores se pasan a la [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) método.
+## <a name="remarks"></a>Observaciones
+Estos valores se pasan al método [InterceptCurrentException.](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

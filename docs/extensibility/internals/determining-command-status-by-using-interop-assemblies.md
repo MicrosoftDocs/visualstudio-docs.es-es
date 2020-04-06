@@ -1,38 +1,38 @@
 ---
-title: Determinar el estado del comando mediante el uso de ensamblados de interoperabilidad | Microsoft Docs
+title: Determinación del estado del comando mediante el uso de ensamblados de interoperabilidad ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33efc0bf393746a80b0881dacae01eaafe65bb8e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351621"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708712"
 ---
-# <a name="determine-command-status-by-using-interop-assemblies"></a>Determinar el estado del comando mediante el uso de ensamblados de interoperabilidad
-Un VSPackage debe mantener un seguimiento del estado de los comandos que puede controlar. El entorno no puede determinar si un comando que se controla en el VSPackage se convierte en habilitado o deshabilitado. Es responsabilidad del paquete de VS para informar al entorno acerca de los Estados de comando, por ejemplo, el estado de general de los comandos como **cortar**, **copia**, y **pegar**.
+# <a name="determine-command-status-by-using-interop-assemblies"></a>Determinar el estado del comando mediante ensamblados de interoperabilidad
+Un VSPackage debe realizar un seguimiento del estado de los comandos que puede controlar. El entorno no puede determinar cuándo un comando controlado dentro del VSPackage se habilita o deshabilita. Es responsabilidad del VSPackage informar al entorno sobre los estados de comando, por ejemplo, el estado de los comandos generales como **Cortar**, **Copiar**y **Pegar**.
 
-## <a name="status-notification-sources"></a>Orígenes de notificación de estado
- El entorno recibe información acerca de los comandos a través de 'VSPackages <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método, que forma parte de la implementación de VSPackage de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. El entorno llama a la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método del VSPackage bajo dos condiciones:
+## <a name="status-notification-sources"></a>Fuentes de notificación de estado
+ El entorno recibe información acerca de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> los comandos a través del método <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de VSPackages, que forma parte de la implementación de la interfaz de VSPackage. El entorno <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> llama al método del VSPackage en dos condiciones:
 
-- Cuando un usuario abre un menú principal o un menú contextual (haciendo clic), el entorno se ejecuta el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método en todos los comandos de menú para determinar su estado.
+- Cuando un usuario abre un menú principal o un menú contextual (haciendo clic con el botón derecho), el entorno ejecuta el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método en todos los comandos de ese menú para determinar su estado.
 
-- Cuando el VSPackage solicita que el entorno de actualización de la interfaz de usuario (IU) actual. Esta actualización se produce como los comandos que están actualmente visibles para el usuario, como el **cortar**, **copia**, y **pegar** agrupación en la barra de herramientas estándar, se convierten en habilitado y deshabilitado en respuesta a acciones de contexto y el usuario.
+- Cuando el VSPackage solicita que el entorno actualizar la interfaz de usuario actual (UI). Esta actualización se produce cuando los comandos que actualmente son visibles para el usuario, como la agrupación **Cortar**, **Copiar**y **Pegar** en la barra de herramientas estándar, se habilitan y deshabilitan en respuesta a las acciones de contexto y usuario.
 
-  Puesto que el shell hospeda varios VSPackages, inaceptablemente podría degradar el rendimiento del shell si se requiere para sondear cada VSPackage para determinar el estado del comando. En su lugar, el VSPackage debe notificar activamente el entorno cuando cambia su interfaz de usuario en el momento del cambio. Para obtener más información sobre la notificación de actualización, vea [actualizar la interfaz de usuario](../../extensibility/updating-the-user-interface.md).
+  Puesto que el shell hospeda varios VSPackages, el rendimiento del shell se degradaría inaceptablemente si fuera necesario sondear cada VSPackage para determinar el estado del comando. En su lugar, el VSPackage debe notificar activamente el entorno cuando su interfaz de usuario cambia en el momento del cambio. Para obtener más información sobre la notificación de actualización, consulte [Actualizar la interfaz](../../extensibility/updating-the-user-interface.md)de usuario .
 
 ## <a name="status-notification-failure"></a>Error de notificación de estado
- Error del paquete de VS para notificar el entorno de un comando de cambio de estado puede colocar la interfaz de usuario en un estado incoherente. Recuerde que cualquiera de los comandos de menú contextual o del menú se pueden colocar en una barra de herramientas por el usuario. Por lo tanto, actualizar la interfaz de usuario solo cuando se abre un menú contextual o del menú no es suficiente.
+ Error de VSPackage para notificar al entorno de un cambio de estado de comando puede colocar la interfaz de usuario en un estado incoherente. Recuerde que cualquiera de los comandos de menú o menú contextual puede ser colocado en una barra de herramientas por el usuario. Por lo tanto, no es suficiente actualizar la interfaz de usuario solo cuando se abre un menú o un menú contextual.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Cómo VSPackages agregan elementos de interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementación](../../extensibility/internals/command-implementation.md)

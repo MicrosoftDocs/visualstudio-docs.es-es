@@ -3,17 +3,17 @@ title: Patrones de aplicación para Visual Studio ? Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55044df3898b452e87ec877f9ae10dd12a2b1110
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301594"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698595"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicaciones para Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interacciones de ventanas
@@ -151,7 +151,7 @@ Ejemplos de ventanas de herramientas de lista navegables son el Explorador de so
 | --- | --- |
 | Autos ||
 | Inmediata ||
-| Output | La ventana de salida se puede utilizar siempre que tenga eventos textuales o estado para declarar. |
+| Salida | La ventana de salida se puede utilizar siempre que tenga eventos textuales o estado para declarar. |
 | Memoria ||
 | Puntos de interrupción ||
 | En ejecución ||
@@ -359,7 +359,7 @@ Para lograr un diseño y funcionalidad óptimos con los cuadros de diálogo, sig
 
 Para obtener instrucciones específicas del diseño, vea [Diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Size
+#### <a name="size"></a>Tamaño
 Los cuadros de diálogo deben ajustarse a una resolución de pantalla mínima de 1024 x 768, y el tamaño del cuadro de diálogo inicial no debe superar los 900 x 700 píxeles. Los cuadros de diálogo pueden ser redimensionables, pero no es un requisito.
 
 Hay dos recomendaciones para los cuadros de diálogo redimensionables:
@@ -475,7 +475,7 @@ Los proyectos también deben mantener modelos de interacción coherentes para:
 - Operaciones de arrastrar y soltar
 
 ### <a name="drag-and-drop-interaction-model"></a>Modelo de interacción de arrastrar y soltar
-Normalmente, los proyectos se clasifican como basados en referencias (capaces de conservar solo las referencias a elementos de proyecto en el almacenamiento), basados en directorios (capaces de conservar solo los elementos del proyecto almacenados físicamente en la jerarquía de un proyecto) o mixtos (capaces de conservar referencias o artículos físicos). El IDE da cabida a los tres tipos de proyectos simultáneamente en el Explorador de **soluciones.**
+Normalmente, los proyectos se clasifican como basados en referencias (capaces de conservar solo las referencias a elementos de proyecto en el almacenamiento), basados en directorios (capaces de conservar solo los elementos del proyecto almacenados físicamente en la jerarquía de un proyecto) o mixtos (capaces de conservar referencias o elementos físicos). El IDE da cabida a los tres tipos de proyectos simultáneamente en el Explorador de **soluciones.**
 
 Desde una perspectiva de arrastrar y colocar, las siguientes características deben aplicarse a cada tipo de proyecto en el Explorador de **soluciones:**
 

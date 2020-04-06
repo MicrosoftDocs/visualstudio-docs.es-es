@@ -1,5 +1,5 @@
 ---
-title: Elemento UsedCommands | Microsoft Docs
+title: Elemento UsedCommands (Elemento UsedCommands) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718626"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698749"
 ---
 # <a name="usedcommands-element"></a>UsedCommands (Elemento)
-El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones UsedCommands.
+El elemento UsedCommands agrupa elementos UsedCommand y otras agrupaciones UsedCommands.
 
- El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo. Vsct.
+ El elemento UsedCommands es opcional. Si no llama a comandos definidos fuera del paquete, no tiene que incluir esta sección en el archivo .vsct.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones U
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|Comando implementado por otro código.|
+|[UsedCommand (Elemento)](../extensibility/usedcommand-element.md)|El comando que implementa otro código.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -64,6 +64,6 @@ El elemento UsedCommands agrupa los elementos UsedCommand y otras agrupaciones U
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [UsedCommand (Elemento)](../extensibility/usedcommand-element.md)
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

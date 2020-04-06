@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado | Documentos de Microsoft
+title: 'Cómo: Esquema de soporte en un servicio de lenguaje heredado Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,44 +7,44 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f79f98ede5c28f8e3acb682ebe8f23e4dc4f72e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312038"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707921"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado
-Esquematización se utiliza para expandir o contraer las diferentes áreas de texto. Se usa el modo de esquematización pueden definirse de forma diferente a distintos idiomas. Para obtener más información, vea [Esquematización](../../ide/outlining.md).
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Cómo: Apoyar la esbozación en un servicio de lenguaje heredado
+La esquematización se utiliza para expandir o contraer diferentes regiones de texto. La forma en que se utiliza la esquematización se puede definir de manera diferente por diferentes idiomas. Para obtener más información, vea [Esquematización](../../ide/outlining.md).
 
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la esquematización, vea [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).
+ Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar características de servicio de lenguaje es usar extensiones MEF. Para obtener más información sobre la nueva forma de implementar la esquematización, consulte [Tutorial: esquematización](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Le recomendamos que comience a usar la nueva API del editor lo antes posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permitirá aprovechar las nuevas características del editor.
 
- La siguiente muestra cómo se admite este comando para el servicio de lenguaje.
+ A continuación se muestra cómo admitir este comando para el servicio de lenguaje.
 
-## <a name="to-support-outlining"></a>Para admitir la esquematización
+## <a name="to-support-outlining"></a>Para apoyar la esbozación
 
-1. Implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> en el objeto de servicio de lenguaje.
+1. Implementar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> en el objeto de servicio de lenguaje.
 
-2. Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> en el objeto de sesión de esquematización actual para agregar nuevas regiones de esquema.
+2. Llame <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> al objeto de sesión de esquematización actual para agregar nuevas regiones de esquema.
 
 ## <a name="robust-programming"></a>Programación sólida
- Cuando un usuario selecciona **contraer a definiciones** en el **esquematización** menú, las llamadas IDE <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> en su servicio de lenguaje.
+ Cuando un usuario selecciona Contraer a **definiciones** en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> menú **Esquema,** el IDE llama al servicio de lenguaje.
 
- Cuando se llama a este método, el IDE se pasa en un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> puntero (un puntero a un búfer de texto) y un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (un puntero a la sesión actual de esquematización).
+ Cuando se llama a este método, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> el IDE pasa un puntero <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (un puntero a un búfer de texto) y un (un puntero a la sesión de esquematización actual).
 
- Puede llamar a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> método para varias regiones de esquema mediante la especificación de estas regiones en el `rgOutlnReg` parámetro. El `rgOutlnReg` parámetro es un <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> estructura. Este proceso le permite especificar distintas características de la región oculta, por ejemplo, si expande o contrae una región determinada.
+ Puede llamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> al método para varias regiones de `rgOutlnReg` esquema especificando estas regiones en el parámetro. El `rgOutlnReg` parámetro <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> es una estructura. Este proceso le permite especificar diferentes características de la región oculta, como si una región determinada está expandida o contraída.
 
 > [!NOTE]
-> Tenga cuidado sobre la ocultación de caracteres de nueva línea. Texto oculto debe ampliar desde el principio de la primera línea hasta el último carácter de la última línea en una sección, dejando el último carácter de nueva línea visible.
+> Tenga cuidado de ocultar caracteres de nueva línea. El texto oculto debe extenderse desde el inicio de la primera línea hasta el último carácter de la última línea de una sección, dejando el carácter final de la nueva línea visible.
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
-- [Cómo: Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Cómo: Proporcionar soporte de texto oculto en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Cómo: Proporcionar soporte de esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

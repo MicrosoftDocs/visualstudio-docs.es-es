@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp (elemento, plantillas)
+title: Elemento NumberOfParentCategoriesToRollUp (plantillas)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
 - <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65787aef175052eb69c6dedfff2e095f16c81ef1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336338"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702370"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (elemento) (plantillas de Visual Studio)
-Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (plantillas de Visual Studio)
+Especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo **Nuevo proyecto.**
 
- \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
+ \<VSTemplate \<> TemplateData> \<NumberOfParentCategoriesToRollUp>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,15 +50,15 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
- Un `integer` se requiere un valor.
+ Se `integer` requiere un valor.
 
- Este valor especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.
+ Este valor especifica el número de categorías primarias que mostrarán la plantilla en el cuadro de diálogo **Nuevo proyecto.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `NumberOfParentCategoriesToRollUp` es un elemento opcional.
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se muestra los metadatos para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows. Si una plantilla con estos metadatos se coloca dos niveles de carpeta por debajo del nivel superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nodo, la plantilla aparecerá en el nodo de nivel superior en el **nuevo proyecto** cuadro de diálogo. Si el `NumberOfParentCategoriesToRollUp` no está establecido, la plantilla sólo aparece en el nodo en el que está ubicado físicamente.
+ En este ejemplo se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestran los metadatos de una aplicación de Windows. Si una plantilla con estos metadatos se coloca [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dos niveles de carpeta por debajo del nodo de nivel superior, la plantilla aparecerá en el nodo de nivel superior en el cuadro de diálogo **Nuevo proyecto.** Si `NumberOfParentCategoriesToRollUp` no se establece, la plantilla solo aparece en el nodo en el que se encuentra físicamente.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,5 +86,5 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

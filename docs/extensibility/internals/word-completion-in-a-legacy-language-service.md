@@ -1,5 +1,5 @@
 ---
-title: Finalización de palabras en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Finalización de palabras en un servicio de lenguaje heredado ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26495f909d815b32ff8a75c2529ba30eabf3b5c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309712"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703174"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Finalización de palabras en un servicio de lenguaje heredado
-Finalización de palabras rellena los caracteres que faltan en una palabra escrita parcialmente. Si hay solo una finalización posibles, la palabra se completa cuando se escribe el carácter de finalización. Si la palabra parcial coincide con más de una posibilidad, se muestra una lista de finalizaciones posibles. Un carácter de finalización puede ser cualquier carácter que no se usa para los identificadores.
+La finalización de la palabra rellena los caracteres que faltan en una palabra con tipo parcial. Si solo hay una posible finalización, la palabra se completa cuando se introduce el carácter de finalización. Si la palabra parcial coincide con más de una posibilidad, se muestra una lista de posibles terminaciones. Un carácter de finalización puede ser cualquier carácter que no se utilice para los identificadores.
 
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [ampliación del Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).
+ Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar características de servicio de lenguaje es usar extensiones MEF. Para obtener más información, consulte [Ampliación del editor y](../../extensibility/extending-the-editor-and-language-services.md)los servicios de lenguaje .
 
 > [!NOTE]
-> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Le recomendamos que comience a usar la nueva API del editor lo antes posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permitirá aprovechar las nuevas características del editor.
 
 ## <a name="implementation-steps"></a>Pasos de implementación
 
-1. Cuando el usuario selecciona **palabra completa** desde el **IntelliSense** menú, el <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando se envía al servicio de lenguaje.
+1. Cuando el usuario selecciona **Palabra completa** en el menú **IntelliSense,** el <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando se envía al servicio de lenguaje.
 
-2. El <xref:Microsoft.VisualStudio.Package.ViewFilter> clase detecta el comando y llama el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>.
+2. La <xref:Microsoft.VisualStudio.Package.ViewFilter> clase detecta el comando <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> y llama al <xref:Microsoft.VisualStudio.Package.ParseReason>método con el motivo de análisis de .
 
-3. El <xref:Microsoft.VisualStudio.Package.Source> clase, a continuación, llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para obtener la lista de finalizaciones posibles palabras y, a continuación, muestra las palabras en una información sobre herramientas lista utilizando el <xref:Microsoft.VisualStudio.Package.CompletionSet> clase.
+3. A <xref:Microsoft.VisualStudio.Package.Source> continuación, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> la clase llama al método para obtener la lista de posibles <xref:Microsoft.VisualStudio.Package.CompletionSet> terminaciones de palabras y, a continuación, muestra las palabras en una lista de información sobre herramientas mediante la clase.
 
-    Si no hay solo una palabra coincidente, el <xref:Microsoft.VisualStudio.Package.Source> clase completa de la palabra.
+    Si solo hay una palabra <xref:Microsoft.VisualStudio.Package.Source> coincidente, la clase completa la palabra.
 
-   Como alternativa, si el analizador devuelve el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando se escribe el primer carácter de un identificador, el <xref:Microsoft.VisualStudio.Package.Source> clase lo detecta y llama a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. En este caso el analizador debe detectar la presencia de un carácter de la selección de miembro y proporcionar una lista de miembros.
+   Como alternativa, si el analizador <xref:Microsoft.VisualStudio.Package.TokenTriggers> devuelve el valor del desencadenador cuando <xref:Microsoft.VisualStudio.Package.Source> se escribe el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> primer carácter <xref:Microsoft.VisualStudio.Package.ParseReason>de un identificador, la clase lo detecta y llama al método con el motivo de análisis de . En este caso, el analizador debe detectar la presencia de un carácter de selección de miembro y proporcionar una lista de miembros.
 
-## <a name="enabling-support-for-the-complete-word"></a>Habilitar la compatibilidad para la palabra completa
- Para habilitar la compatibilidad para el conjunto de finalizaciones de word la `CodeSense` con el nombre de parámetro pasado a la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo de usuario asociado con el paquete de idioma. Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad en el <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase.
+## <a name="enabling-support-for-the-complete-word"></a>Habilitación de soporte para la palabra completa
+ Para habilitar la compatibilidad `CodeSense` con la finalización de palabras, establezca el parámetro con nombre pasado al <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo de usuario asociado al paquete de idioma. Esto establece <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> propiedad en la clase.
 
- El analizador debe devolver una lista de declaraciones en respuesta al análisis motivo valor <xref:Microsoft.VisualStudio.Package.ParseReason>, para la finalización de palabras para que funcione.
+ El analizador debe devolver una lista de declaraciones <xref:Microsoft.VisualStudio.Package.ParseReason>en respuesta al valor de motivo de análisis, para que funcione la finalización de palabras.
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementación de la palabra completa en el método ParseSource
- Para la finalización de palabras, el <xref:Microsoft.VisualStudio.Package.Source> clase llama a la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> método en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase para obtener una lista de coincidencias de palabras posible. Debe implementar la lista en una clase que se deriva el <xref:Microsoft.VisualStudio.Package.Declarations> clase. Consulte la <xref:Microsoft.VisualStudio.Package.Declarations> clase para obtener más información sobre los métodos que debe implementar.
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementación de Word Completa en el Método ParseSource
+ Para la finalización de palabras, la <xref:Microsoft.VisualStudio.Package.Source> clase llama al <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> método de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase para obtener una lista de posibles coincidencias de palabras. Debe implementar la lista en una clase <xref:Microsoft.VisualStudio.Package.Declarations> que se deriva de la clase. Consulte <xref:Microsoft.VisualStudio.Package.Declarations> la clase para obtener más información sobre los métodos que debe implementar.
 
- Si la lista contiene una sola palabra, el <xref:Microsoft.VisualStudio.Package.Source> clase inserta automáticamente esa palabra en lugar de las palabras parciales. Si la lista contiene más de una palabra, el <xref:Microsoft.VisualStudio.Package.Source> clase presenta una lista de sugerencias de la herramienta desde el que el usuario puede seleccionar la opción más adecuada.
+ Si la lista contiene una sola <xref:Microsoft.VisualStudio.Package.Source> palabra, la clase inserta automáticamente esa palabra en lugar de la palabra parcial. Si la lista contiene más <xref:Microsoft.VisualStudio.Package.Source> de una palabra, la clase presenta una lista de información sobre herramientas de la que el usuario puede seleccionar la opción adecuada.
 
- Examine también el ejemplo de un <xref:Microsoft.VisualStudio.Package.Declarations> implementación de la clase en [finalizaciones de miembros en un servicio de lenguaje heredado](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
+ Consulte también el ejemplo <xref:Microsoft.VisualStudio.Package.Declarations> de una implementación de clase en [Finalización de miembros en un servicio](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)de lenguaje heredado .

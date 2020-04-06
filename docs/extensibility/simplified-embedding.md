@@ -1,39 +1,39 @@
 ---
-title: Incrustación simplificada | Documentos de Microsoft
+title: Incrustación simplificada ( Simplified Inbedding) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c77c7f19ff677ddbe8339c88ef3ea46953e23b7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332072"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700073"
 ---
 # <a name="simplified-embedding"></a>Inserción simplificada
-Incrustación simplificada está habilitada en el editor cuando su objeto de vista de documento es un elemento principal (es decir, realiza un elemento secundario) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]y el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaz se implementa para controlar su ventana de comandos. Editores de incrustación simplificados no pueden hospedar controles activos. En la siguiente ilustración, se muestran los objetos que se utiliza para crear un editor con incrustación simplificada.
+La incrustación simplificada se habilita en un editor cuando su objeto de vista [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]de documento <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> está parented to (es decir, hecho un elemento secundario de) y la interfaz se implementa para controlar sus comandos de ventana. Los editores de incrustación simplificados no pueden hospedar controles activos. Los objetos utilizados para crear un editor con incrustación simplificada se muestran en la siguiente ilustración.
 
- ![Gráfico de Editor con incrustación simplificada](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor") Editor con incrustación simplificada
+ ![Gráfico simplificado del Editor de incrustaciones](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor") Editor con incrustación simplificada
 
 > [!NOTE]
-> Los objetos de esta ilustración, sólo el `CYourEditorFactory` objeto es necesario para crear un editor basado en archivos estándar. Si va a crear un editor personalizado, no son necesarios para implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, ya que el editor tendrá probablemente su propio mecanismo de persistencia privado. Para los editores no personalizado, sin embargo, debe hacerlo.
+> De los objetos de `CYourEditorFactory` esta ilustración, solo se requiere el objeto para crear un editor estándar basado en archivos. Si va a crear un editor personalizado, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>no es necesario implementar , porque es probable que el editor tenga su propio mecanismo de persistencia privada. Para los editores no personalizados, sin embargo, debe hacerlo.
 
- Todas las interfaces implementadas para crear un editor con incrustación simplificada se encuentran en el `CYourEditorDocument` objeto. Sin embargo, para admitir varias vistas de datos del documento, divida las interfaces a objetos de datos y la vista independientes como se indica en la tabla siguiente.
+ Todas las interfaces implementadas para crear un editor `CYourEditorDocument` con incrustación simplificada están contenidas en el objeto. Sin embargo, para admitir varias vistas de datos de documento, divida las interfaces en datos independientes y vea objetos como se indica en la tabla siguiente.
 
-|Interfaz|Ubicación de la interfaz|Usar|
+|Interfaz|Ubicación de la interfaz|Uso|
 |---------------|---------------------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Ver|Proporciona la conexión a la ventana primaria.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ver|Controla los comandos.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Ver|Proporciona conexión a la ventana primaria.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ver|Maneja comandos.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Ver|Habilita las actualizaciones de la barra de estado.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ver|Permite **cuadro de herramientas** elementos.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Datos|Envía notificaciones cuando cambia el archivo.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Datos|Habilita la característica Guardar como para un tipo de archivo.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Datos|Habilita la persistencia del documento.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Datos|Permite la supresión de eventos de cambio de archivo, como desencadenar volver a cargar.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ver|Habilita los elementos **de Toolbox.**|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|data|Envía notificaciones cuando cambia el archivo.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|data|Habilita la función Guardar como para un tipo de archivo.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|data|Habilita la persistencia del documento.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|data|Permite la supresión de eventos de cambio de archivo, como la activación de recarga.|

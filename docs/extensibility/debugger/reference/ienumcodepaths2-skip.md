@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Skip | Microsoft Docs
+title: IEnumCodePaths2::Skip Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Skip
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b635053765dafa0fdb83dc0ab29e646b816d0aa5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c552e57c43b5abc1a41ecd468747b4ce32241a6f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319659"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717744"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
-Omite el número especificado de elementos.
+Omite el número de elementos especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,10 +44,10 @@ int Skip(
 [in] Número de elementos que se van a omitir.
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` `celt` si es mayor que el número de elementos restantes; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece en el extremo y `S_FALSE` se devuelve.
+## <a name="remarks"></a>Observaciones
+ Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece en el final y `S_FALSE` se devuelve.
 
 ## <a name="see-also"></a>Vea también
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

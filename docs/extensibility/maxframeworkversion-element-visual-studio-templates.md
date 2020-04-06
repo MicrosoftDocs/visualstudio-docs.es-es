@@ -1,5 +1,5 @@
 ---
-title: MaxFrameworkVersion (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: MaxFrameworkVersion (Elemento) (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a00e174e3454dcb054c13252ef699a7cbc87df8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318595"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702624"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (elemento) (plantillas de Visual Studio)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (plantillas de Visual Studio)
 
-Especifica la versión máxima de .NET Framework que requiere la plantilla. Determina el valor más alto disponible en el **versión de Target Framework** lista desplegable de la **nuevo proyecto** cuadro de diálogo. En el orden de los usuarios puedan seleccionar una versión de .NET framework, también debe especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como la versión mínima de .NET Framework para la plantilla.
+Especifica la versión máxima de .NET Framework que requiere la plantilla. Determina el valor más alto disponible en la lista desplegable **Versión** de marco de trabajo de destino del cuadro de diálogo **Nuevo proyecto.** Para que los usuarios puedan seleccionar una versión de framework, también debe especificar [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) como la versión mínima de .NET Framework para la plantilla.
 
 > [!IMPORTANT]
-> A partir de Visual Studio 2017 versión 15.6, la **versión de Target Framework** dropdown ya no es un filtro para las plantillas que se muestran en el **plantillas** sección de la **denuevoproyecto** cuadro de diálogo. En su lugar, el **versión de Target Framework** desplegable funciona como un selector de marco de trabajo para la plantilla seleccionada.
+> A partir de Visual Studio 2017 versión 15.6, la lista desplegable **Versión** de marco de trabajo de destino ya no es un filtro para las plantillas mostradas en la sección **Plantillas** del cuadro de diálogo **Nuevo proyecto.** En su lugar, la lista desplegable **Versión** de marco de trabajo de destino funciona como un selector de marco de trabajo para la plantilla seleccionada.
 
- \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
+ \<VSTemplate \<> TemplateData> \<> MaxFrameworkVersion
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,20 +47,20 @@ Especifica la versión máxima de .NET Framework que requiere la plantilla. Dete
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o Agregar **nuevo elemento.**|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser el mayor número de versión de .NET Framework que está permitido por la plantilla.
+ El texto debe ser el número de versión más alto de .NET Framework permitido por la plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-`MaxFrameworkVersion` es un elemento opcional. El `MaxFrameworkVersion` a menos que sea necesario, para no tener que inadvertidamente limitar las versiones compatibles de .NET Framework para la plantilla de elemento que se debe omitir. También deben omitirse si .NET Framework no es aplicable a la plantilla.
+`MaxFrameworkVersion` es un elemento opcional. El `MaxFrameworkVersion` elemento debe omitirse a menos que sea necesario, para no limitar inadvertidamente el intervalo admitido de versiones de .NET Framework para la plantilla. También debe omitirse si .NET Framework no es aplicable a la plantilla.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.
+En el ejemplo siguiente se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestran los metadatos de una plantilla de clase estándar.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,9 +80,9 @@ El ejemplo siguiente muestra los metadatos de un estándar [!INCLUDE[csprcs](../
 </VSTemplate>
 ```
 
-En este ejemplo, la versión máxima de .NET Framework que requiere la plantilla, representado por `MaxFrameworkVersion`, es 4.7.1. Un proyecto creado con esta plantilla puede tener como destino las versiones de .NET Framework hasta 4.7.1.
+En este ejemplo, la versión máxima de .NET Framework que `MaxFrameworkVersion`requiere la plantilla, representada por , es 4.7.1. Un proyecto creado con esta plantilla puede tener como destino versiones de .NET Framework hasta 4.7.1.
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

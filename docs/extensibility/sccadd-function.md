@@ -1,5 +1,5 @@
 ---
-title: SccAdd (función) | Microsoft Docs
+title: Función SccAdd (SccAdd) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ee567dff65f184f604fb390ec19ebbf6d1e0208
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701310"
 ---
-# <a name="sccadd-function"></a>SccAdd (función)
+# <a name="sccadd-function"></a>Función SccAdd
 Esta función agrega nuevos archivos al sistema de control de código fuente.
 
 ## <a name="syntax"></a>Sintaxis
@@ -39,66 +39,66 @@ SCCRTN SccAdd(
 ### <a name="parameters"></a>Parámetros
  pvContext
 
-[in] La estructura de contexto de complemento de control de origen.
+[en] La estructura de contexto del complemento de control de código fuente.
 
  hWnd
 
-[in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.
+[en] Identificador de la ventana IDE que el complemento de control de código fuente puede usar como elemento primario para los cuadros de diálogo que proporciona.
 
- nFiles
+ nArchivos
 
-[in] Número de archivos que se van a agregarse al proyecto actual como se indica en la `lpFileNames` matriz.
+[en] Número de archivos seleccionados para agregarse al `lpFileNames` proyecto actual como se indica en la matriz.
 
  lpFileNames
 
-[in] Matriz de nombres locales completos de archivos que se va a agregarse.
+[en] Matriz de nombres locales completos de los archivos que se van a agregar.
 
  lpComment
 
-[in] El comentario que se aplicará a todos los archivos que se va a agregar.
+[en] El comentario que se aplicará a todos los archivos que se van a agregar.
 
  pfOptions
 
-[in] Matriz de marcas de comando, proporcionado en una base por archivo.
+[en] Matriz de indicadores de comando, proporcionados por archivo.
 
  pvOptions
 
-[in] Opciones de específicas del complemento de control de código fuente.
+[en] Opciones específicas del complemento de control de código fuente.
 
 ## <a name="return-value"></a>Valor devuelto
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+ Se espera que la implementación del complemento de control de código fuente de esta función devuelva uno de los siguientes valores:
 
-|Valor|Descripción|
+|Value|Descripción|
 |-----------|-----------------|
-|SCC_OK|La operación de agregar fue correcta.|
+|SCC_OK|La operación de adición se realizó correctamente.|
 |SCC_E_FILEALREADYEXISTS|El archivo seleccionado ya está bajo control de código fuente.|
-|SCC_E_TYPENOTSUPPORTED|El tipo de archivo (por ejemplo, binario) no es compatible con el sistema de control de código fuente.|
+|SCC_E_TYPENOTSUPPORTED|El tipo del archivo (por ejemplo, binario) no es compatible con el sistema de control de código fuente.|
 |SCC_E_OPNOTSUPPORTED|El sistema de control de código fuente no admite esta operación.|
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
+|SCC_E_ACCESSFAILURE|Se ha producido un problema al acceder al sistema de control de código fuente, probablemente debido a problemas de red o contención. Se recomienda un reintento.|
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|
-|SCC_E_NONSPECIFICERROR|Error no específico; agregar no realizó.|
-|SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|
-|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|
+|SCC_E_NONSPECIFICERROR|Error inespecífico; añadir no realizado.|
+|SCC_I_OPERATIONCANCELED|La operación se canceló antes de la finalización.|
+|SCC_I_RELOADFILE|Es necesario volver a cargar un archivo o proyecto.|
 |SCC_E_FILENOTEXIST|No se encontró el archivo local.|
 
-## <a name="remarks"></a>Comentarios
- El habitual `fOptions` se reemplazan aquí por una matriz, `pfOptions`, con una `LONG` opción especificación por archivo. Esto es porque el tipo de archivo puede variar de un archivo a.
+## <a name="remarks"></a>Observaciones
+ Los `fOptions` habituales se reemplazan aquí `pfOptions`por `LONG` una matriz, con una especificación de opción por archivo. Esto se debe a que el tipo de archivo puede variar de un archivo a un archivo.
 
 > [!NOTE]
-> No es válido especificar ambos `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` opciones para el mismo archivo, pero es válido especificar ninguno. Establecer ninguna de ellas es lo mismo que establecer `SCC_FILETYPE_AUTO`, en cuyo caso el origen de controlar el complemento detecta automáticamente el tipo de archivo.
+> No es válido `SCC_FILETYPE_TEXT` especificar `SCC_FILETYPE_BINARY` ambas opciones y opciones para el mismo archivo, pero no es válido especificar ninguna. Establecer ninguno es lo `SCC_FILETYPE_AUTO`mismo que establecer , en cuyo caso el complemento de control de código fuente detecta automáticamente el tipo de archivo.
 
- Esta es la lista de marcas usadas en el `pfOptions` matriz:
+ A continuación se muestra la `pfOptions` lista de indicadores utilizados en la matriz:
 
-|Opción|Valor|Significado|
+|Opción|Value|Significado|
 |------------|-----------|-------------|
-|SCC_FILETYPE_AUTO|0x00|El complemento de control de origen debe detectar el tipo de archivo.|
+|SCC_FILETYPE_AUTO|0x00|El complemento de control de código fuente debe detectar el tipo de archivo.|
 |SCC_FILETYPE_TEXT|0x01|Indica un archivo de texto ASCII.|
-|SCC_FILETYPE_BINARY|0x02|Indica un tipo de archivo que no sea texto ASCII.|
-|SCC_ADD_STORELATEST|0x04|Almacena sólo la última copia del archivo, no hay diferencias.|
+|SCC_FILETYPE_BINARY|0x02|Indica un tipo de archivo distinto del texto ASCII.|
+|SCC_ADD_STORELATEST|0x04|Almacena solo la copia más reciente del archivo, sin deltas.|
 |SCC_FILETYPE_TEXT_ANSI|0x08|Trata el archivo como texto ANSI.|
 |SCC_FILETYPE_UTF8|0x10|Trata el archivo como texto Unicode en formato UTF8.|
-|SCC_FILETYPE_UTF16LE|0x20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|
-|SCC_FILETYPE_UTF16BE|0x40|Trata el archivo como texto Unicode en UTF16 Big Endian de formato.|
+|SCC_FILETYPE_UTF16LE|0x20|Trata el archivo como texto Unicode en formato UTF16 Little Endian.|
+|SCC_FILETYPE_UTF16BE|0x40|Trata el archivo como texto Unicode en formato UTF16 Big Endian.|
 
 ## <a name="see-also"></a>Vea también
-- [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [Funciones de API de plug-in de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
