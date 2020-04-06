@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onInsertText | Microsoft Docs
+title: IDebugDocumentTextEvents2::onInsertText ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330528"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731481"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Notifica el paquete de depuración que se ha insertado el texto en el documento.
+Notifica al paquete de depuración que el texto se ha insertado en el documento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ int onInsert( 
 
 ## <a name="parameters"></a>Parámetros
 `pos`\
-[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica donde se insertó el texto.
+[en] Estructura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica dónde se insertó el texto.
 
 `dwNumToInsert`\
-[in] Especifica el número de caracteres de texto que se insertaron.
+[en] Especifica el número de caracteres de texto que se insertaron.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

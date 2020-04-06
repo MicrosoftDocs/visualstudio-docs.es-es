@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Microsoft Docs
+title: FIELD_KIND Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344472"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736862"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
-Especifica el tipo de campo incluido en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
+# <a name="field_kind"></a>FIELD_KIND
+Especifica el tipo de campo contenido en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -124,12 +124,12 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `FIELD_KIND_TYPE`\
 Indica que el campo es solo un tipo.
 
 `FIELD_KIND_SYMBOL`\
-Indica que el campo es un símbolo con tipo, nombre y otra información.
+Indica que el campo es un símbolo, con tipo, nombre y otra información.
 
 `FIELD_TYPE_PRIMITIVE`\
 Indica que el campo es un tipo de datos primitivo.
@@ -165,7 +165,7 @@ Indica que el campo es un tipo de datos enumerado.
 Indica que el campo es una etiqueta.
 
 `FIELD_TYPE_TYPEDEF`\
-Indica que el campo es una definición de tipo.
+Indica que el campo es una indef de tipo.
 
 `FIELD_TYPE_BITFIELD`\
 Indica que el campo es un campo de bits.
@@ -189,7 +189,7 @@ Indica que el campo es una clase interna.
 Indica que el campo es una referencia.
 
 `FIELD_TYPE_EXTENDED`\
-Reservado para un uso futuro.
+Reservado para uso futuro.
 
 `FIELD_SYM_MEMBER`\
 Indica que el campo es un miembro.
@@ -207,32 +207,32 @@ Indica que el campo es el puntero "this".
 Indica que el campo es global.
 
 `FIELD_SYM_PROP_GETTER`\
-Indica que el campo recupera las propiedades.
+Indica que el campo recupera propiedades.
 
 `FIELD_SYM_PROP_SETTER`\
-Indica que el campo de conjuntos de propiedades.
+Indica que el campo establece propiedades.
 
 `FIELD_SYM_EXTENDED`\
-Reservado para un uso futuro.
+Reservado para uso futuro.
 
 `FIELD_KIND_MASK`\
 Indica una máscara para los tipos de campo.
 
 `FIELD_TYPE_MASK`\
-Indica una máscara para tipos de campo.
+Indica una máscara para los tipos de campo.
 
 `FIELD_SYM_MASK`\
-Indica una máscara para la información de símbolos.
+Indica una máscara para la información del símbolo.
 
-## <a name="remarks"></a>Comentarios
-Devuelve una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.
+## <a name="remarks"></a>Observaciones
+Se devuelve de una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.
 
-Según el tipo de campo, [QueryInterface](/cpp/atl/queryinterface) puede llamarse en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, a continuación, puede llamar a `QueryInterface` en puedo`DebugField` para obtener el [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.
+Dependiendo del tipo de campo, [QueryInterface](/cpp/atl/queryinterface) se puede llamar en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) `FIELD_TYPE_METHOD`devuelve `QueryInterface` ,`DebugField` puede llamar a I para obtener el [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: sh.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

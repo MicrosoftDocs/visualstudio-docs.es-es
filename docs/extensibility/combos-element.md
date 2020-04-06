@@ -1,25 +1,25 @@
 ---
-title: Combos (elemento) | Microsoft Docs
+title: Elemento De Combos (Combos Element) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e0d4c15a5255a621268b239cb2cde4439b4c02b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334896"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739799"
 ---
-# <a name="combos-element"></a>Combos (elemento)
-Grupos [Combo (elemento)](../extensibility/combo-element.md) elementos.
+# <a name="combos-element"></a>Elemento Combos
+Agrupa [elementos de elemento s Combo.](../extensibility/combo-element.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,20 +37,20 @@ Grupos [Combo (elemento)](../extensibility/combo-element.md) elementos.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Combos (elemento)](../extensibility/combos-element.md)|Agrupa los elementos del cuadro combinado.|
-|[Combo (elemento)](../extensibility/combo-element.md)|Define los comandos que aparecen en un cuadro combinado.|
+|[Elemento Combos](../extensibility/combos-element.md)|Agrupa elementos Combo.|
+|[Elemento combinado](../extensibility/combo-element.md)|Define los comandos que aparecen en un cuadro combinado.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|
+|[Elemento Comandos](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -76,6 +76,6 @@ Grupos [Combo (elemento)](../extensibility/combo-element.md) elementos.
 </Combos>
 ```
 
-## <a name="see-also"></a>Vea también
-- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo VSPackages agregan elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

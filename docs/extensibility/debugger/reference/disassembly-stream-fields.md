@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS de la casa de la Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318259"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737354"
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
+# <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 Especifica qué información se va a recuperar sobre un campo de desensamblado.
 
 ## <a name="syntax"></a>Sintaxis
@@ -64,62 +64,62 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `DSF_ADDRESS`\
-Inicializar o usar el `bstrAddress` campo.
+Inicializar/utilizar `bstrAddress` el campo.
 
 `DSF_ADDRESSOFFSET`\
-Inicializar o usar el `bstrAddressOffset` campo.
+Inicializar/utilizar `bstrAddressOffset` el campo.
 
 `DSF_CODEBYTES`\
-Inicializar o usar el `bstrCodeBytes` campo.
+Inicializar/utilizar `bstrCodeBytes` el campo.
 
 `DSF_OPCODE`\
-Inicializar o usar el `bstrOpCode` campo.
+Inicializar/utilizar `bstrOpCode` el campo.
 
 `DSF_OPERANDS`\
-Inicializar o usar el `bstrOperands` campo.
+Inicializar/utilizar `bstrOperands` el campo.
 
 `DSF_SYMBOL`\
-Inicializar o usar el `bstrSymbol` campo.
+Inicializar/utilizar `bstrSymbol` el campo.
 
 `DSF_CODELOCATIONID`\
-Inicializar o usar el `uCodeLocationId` campo.
+Inicializar/utilizar `uCodeLocationId` el campo.
 
 `DSF_POSITION`\
-Inicializar o usar el `posBeg` y `posEnd` campos.
+Inicializar/utilizar `posBeg` los `posEnd` campos y.
 
 `DSF_DOCUMENTURL`\
-Inicializar o usar el `bstrDocumentUrl` campo.
+Inicializar/utilizar `bstrDocumentUrl` el campo.
 
 `DSF_BYTEOFFSET`\
-Inicializar o usar el `dwByteOffset` campo.
+Inicializar/utilizar `dwByteOffset` el campo.
 
 `DSF_FLAGS`\
-Inicializar o usar el `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.
+Inicializar/utilizar `dwFlags` el campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Incluir nombres de símbolos en el `bstrOperands` campo.
+Incluya nombres de `bstrOperands` símbolos en el campo.
 
 `DSF_ALL`\
 Especifica todos los campos de la secuencia de desensamblado.
 
-## <a name="remarks"></a>Comentarios
-Pasado como parámetro a la [lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método para indicar qué campos de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructura deben inicializarse.
+## <a name="remarks"></a>Observaciones
+Se pasa como parámetro al método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar qué campos de la estructura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) se van a inicializar.
 
-Utilizado para la `dwFields` miembro de la `DisassemblyData` estructura para indicar qué campos se usan y válido cuando se devuelve la estructura.
+Se utiliza `dwFields` para `DisassemblyData` el miembro de la estructura para indicar qué campos se utilizan y son válidos cuando se devuelve la estructura.
 
-Estos valores se pueden combinar con un bit a bit `OR`.
+Estos valores se pueden combinar `OR`con un archivo .
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
 - [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [Lectura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
