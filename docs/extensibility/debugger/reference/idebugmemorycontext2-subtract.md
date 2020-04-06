@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Microsoft Docs
+title: IDebugMemoryContext2::Subtract ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a320b7c67cd2603dfea11983d2d62c344f347ab4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347021"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727437"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Resta el valor especificado desde el contexto actual y devuelve un nuevo contexto.
+Resta el valor especificado del contexto actual y devuelve un nuevo contexto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ int Subtract(
 
 ## <a name="parameters"></a>Parámetros
 `dwCount`\
-[in] El número de bytes de memoria para reducir.
+[en] El número de bytes de memoria a disminuir.
 
 `ppMemCxt`\
-[out] Devuelve un nuevo [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
+[fuera] Devuelve un nuevo [iDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Un contexto de la memoria es una dirección, por lo que si se resta un valor desde una dirección genera una nueva dirección que requiere una nueva interfaz de contexto.
+## <a name="remarks"></a>Observaciones
+ Un contexto de memoria es una dirección, por lo que restar un valor de una dirección genera una nueva dirección que requiere una nueva interfaz de contexto.
 
- Este método siempre debe generar un nuevo contexto, incluso si la dirección resultante está fuera del espacio de memoria asociado con este contexto. La única excepción a esto es si no se puede asignar ninguna memoria para el nuevo contexto o si `ppMemCxt` es un valor null (que es un error).
+ Este método siempre debe producir un nuevo contexto, incluso si la dirección resultante está fuera del espacio de memoria asociado a este contexto. La única excepción a esto es si no se `ppMemCxt` puede asignar memoria para el nuevo contexto o si es un valor nulo (que es un error).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

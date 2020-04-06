@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_INFO | Microsoft Docs
+title: PENDING_BP_STATE_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306f3f6ac5f12d2a26da958d50fae87c6e174355
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d66ecc63e133a75148f06b59b8f1ccf61fe2658d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714076"
 ---
-# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
-Contiene información sobre el estado de un punto de interrupción que está listo para enlazar a una ubicación del código.
+# <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
+Contiene información sobre el estado de un punto de interrupción que está listo para enlazarse a una ubicación de código.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,18 +43,18 @@ public struct PENDING_BP_STATE_INFO { 
 
 ## <a name="members"></a>Miembros
  `state`\
- Un valor de la [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) enumeración que especifica el estado del punto de interrupción pendiente.
+ Valor de la [enumeración PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) que especifica el estado del punto de interrupción pendiente.
 
  `flags`\
- Una combinación de marcas de la [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) enumeración que especifica si el punto de interrupción está virtualizado.
+ Una combinación de indicadores de la [enumeración PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) que especifica si el punto de interrupción está virtualizado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta estructura se pasa a la [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) método donde se rellena.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

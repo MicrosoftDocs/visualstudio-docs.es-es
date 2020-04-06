@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Microsoft Docs
+title: IDebugCoreServer2::GetMachineInfo Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317901"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733165"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
-Recupera una descripción de la máquina en que se está ejecutando el servidor principal.
+Recupera una descripción de la máquina en la que se ejecuta el servidor principal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ int GetMachineInfo( 
 
 ## <a name="parameters"></a>Parámetros
 `Fields`\
-[in] Una combinación de marcas de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumeración que especifican qué campos de `pMachineInfo` son para rellenarlo.
+[en] Una combinación de indicadores de la `pMachineInfo` [enumeración MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) que especifican qué campos de se van a rellenar.
 
  `pMachineInfo`\
 
- [in, out] Un [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) estructura que se rellena con una descripción de la máquina.
+ [adentro, fuera] Una [estructura MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) que se rellena con una descripción de la máquina.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

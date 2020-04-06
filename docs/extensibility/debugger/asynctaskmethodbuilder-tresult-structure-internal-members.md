@@ -1,31 +1,31 @@
 ---
-title: 'AsyncTaskMethodBuilder&lt;TResult&gt; Structure: miembros internos | Microsoft Docs'
+title: Estructura de&lt;resultados de AsyncTaskMethodBuilder - Miembros internos ?&gt; Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 - debug engines, AsyncTaskMethodBuilder<TResult> structure [.NET Framework]
 ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c944671b3bdb42f72928822903ccb05742401f7e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c4f4da7070af09937af9e047ec83142584942e6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739335"
 ---
-# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; estructura - miembros internos
-En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> tema de referencia.
+# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>Estructura DeSasyncTaskMethodBuilder&lt;TResult&gt; - miembros internos
+En este tema se describen los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> clase. Para obtener información general sobre <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> esta clase, consulte el tema de referencia.
 
- **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Espacio de nombres:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+ Dado que no puede tener acceso a estos miembros internos desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,11 +37,11 @@ En este tema se describe los miembros internos de la <xref:System.Runtime.Compil
 
 ## <a name="internal-members"></a>Miembros internos
 
-|Name|Descripción|
+|Nombre|Descripción|
 |----------|-----------------|
-|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.|
-|[campo m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Representa el inicializado de forma diferida integradas de tarea.|
+|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Obtiene un objeto que se puede usar para identificar de forma única este generador en el depurador.|
+|[m_task campo](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Representa la tarea compilada inicializada perezosamente.|
 
 ## <a name="see-also"></a>Vea también
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internos de extensión paralela para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

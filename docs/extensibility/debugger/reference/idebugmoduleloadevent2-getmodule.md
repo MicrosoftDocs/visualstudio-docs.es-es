@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
+title: IDebugModuleLoadEvent2::GetModule ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2::GetModule
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ee91686051440fe44efd1f4e4f9ba933f3e0c99
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726723"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-Obtiene el módulo que se carga o descarga.
+Obtiene el módulo que se está cargando o descargando.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ int GetModule( 
 
 ## <a name="parameters"></a>Parámetros
 `pModule`\
-[out] Devuelve un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa el módulo que se carga o descarga.
+[fuera] Devuelve un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa el módulo que se está cargando o descargando.
 
 `pbstrDebugMessage`\
-[in, out] Devuelve un mensaje opcional que describe este evento. Si este parámetro es un valor null, no se solicita ningún mensaje.
+[adentro, fuera] Devuelve un mensaje opcional que describe este evento. Si este parámetro es un valor nulo, no se solicita ningún mensaje.
 
 `pbLoad`\
-[in, out] Distinto de cero (`TRUE`) si el módulo se carga y cero (`FALSE`) si se está descargando el módulo. Si este parámetro es un valor null, no se solicita ningún estado.
+[adentro, fuera] Distinto de`TRUE`cero ( ) si`FALSE`el módulo se está cargando y cero ( ) si el módulo se está descargando. Si este parámetro es un valor nulo, no se solicita ningún estado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)

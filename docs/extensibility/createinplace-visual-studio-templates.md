@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (elemento) (plantillas de Visual Studio)
+title: Elemento CreateInPlace (Plantillas de Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da14da9606c2fcd84f053aff30139eec5751c673
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341779"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739660"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (elemento) (plantillas de Visual Studio)
-Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.
+# <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (plantillas de Visual Studio)
+Especifica si se debe crear el proyecto y realizar la sustitución de parámetros en la ubicación especificada, o realizar la sustitución de parámetros en una ubicación temporal y, a continuación, guardar el proyecto en la ubicación especificada.
 
- \<VSTemplate> \<TemplateData> \<CreateInPlace>
+ \<VSTemplate \<> TemplateData> \<> De CreateInPlace
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,9 +50,9 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y se realiza el reemplazo de parámetros en la ubicación especificada en el **nuevo proyecto** cuadro de diálogo. Si `false`, se realiza el reemplazo de parámetros en una ubicación temporal y, a continuación, se copia el proyecto en la ubicación especificada.
+ El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y se realiza la sustitución de parámetros en la ubicación especificada en el cuadro de diálogo **Nuevo proyecto.** Si `false`, la sustitución de parámetros se realiza en una ubicación temporal y, a continuación, el proyecto se copia en la ubicación especificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `CreateInPlace` es un elemento opcional. El valor predeterminado es `true`.
 
 ## <a name="example"></a>Ejemplo
@@ -84,5 +84,5 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,30 +1,30 @@
 ---
-title: Implementar y registrar un proveedor de puerto | Microsoft Docs
+title: Implementación y Registro de un Proveedor de Puertos Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26767193c4489405432054ee94beb195ce8448d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: efa9cdd8740648b66fe7190177b5fe769c4b2539
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344267"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738532"
 ---
-# <a name="implement-and-register-a-port-supplier"></a>Implementar y registrar un proveedor de puerto
-El rol de un proveedor de puerto es realizar un seguimiento y proporcionar los puertos, lo que a su vez administración procesos. Cuando se debe crear un puerto, el proveedor del puerto se crea una instancia mediante el comando CoCreate con el GUID del proveedor de puerto (el Administrador de depuración de sesión [SDM] utilizará el proveedor del puerto que seleccionó el usuario o el proveedor del puerto especificado por el sistema del proyecto). A continuación, llama el SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver si se puede agregar ningún puerto. Si se puede agregar un puerto, se solicita un nuevo puerto mediante una llamada a [agregar puerto](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) y pasándole un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que describe el puerto. `AddPort` Devuelve un nuevo puerto representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz.
+# <a name="implement-and-register-a-port-supplier"></a>Implementar y registrar un proveedor portuario
+La función de un proveedor de puertos es realizar un seguimiento y suministrar puertos, que a su vez gestionan los procesos. Cuando es necesario crear un puerto, se crea una instancia del proveedor de puertos mediante CoCreate con el GUID del proveedor de puertos (el administrador de depuración de sesión [SDM] usará el proveedor de puertos seleccionado por el usuario o el proveedor de puerto especificado por el sistema de proyecto). El SDM entonces llama a [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver si se puede agregar algún puerto. Si se puede agregar un puerto, se solicita un nuevo puerto llamando a [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) y pasándole un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que describe el puerto. `AddPort`devuelve un nuevo puerto representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz.
 
 ## <a name="discussion"></a>Discusión
- Se crea un puerto mediante un proveedor de puerto, que está asociado a un servidor de la máquina o de depuración. Un servidor enumera sus proveedores de puertos a través de la[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) método y un proveedor de puerto enumera sus puertos a través de la [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) método.
+ Un puerto es creado por un proveedor de puertos, que está asociado a una máquina o servidor de depuración. Un servidor enumera sus proveedores de puertos a través de la[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) método y un proveedor de puertoenumera sus puertos a través de la [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) método.
 
- Además del registro de COM típico, un proveedor de puerto debe registrarse con Visual Studio, coloque su CLSID y su nombre en ubicaciones específicas del registro. Llama una función de aplicación auxiliar de depuración SDK `SetMetric` controla esta tarea rutinaria: se llama una vez por cada elemento se registre, así:
+ Además del registro COM típico, un proveedor de puertos debe registrarse en Visual Studio colocando su CLSID y el nombre en ubicaciones de registro específicas. Una función auxiliar `SetMetric` de SDK de depuración denominada controla esta tarea: se llama una vez para cada elemento que se va a registrar, por lo tanto:
 
 ```cpp
 SetMetric(metrictypePortSupplier,
@@ -41,7 +41,7 @@ SetMetric(metrictypePortSupplier,
           NULL);
 ```
 
- Un proveedor de puerto anula su propio registro mediante una llamada a `RemoveMetric` (función de otro SDK de depuración auxiliar) una vez para cada elemento que se registró, así:
+ Un proveedor de puertos `RemoveMetric` se anula el registro llamando a sí mismo llamando a (otra función auxiliar del SDK de depuración) una vez para cada elemento que se registró, por lo tanto:
 
 ```cpp
 RemoveMetric(metrictypePortSupplier,
@@ -55,11 +55,11 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
-> El [aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` y `RemoveMetric` se definen las funciones estáticas en *dbgmetric.h* y compilado en *ad2de.lib*. El `metrictypePortSupplier`, `metricCLSID`, y `metricName` aplicaciones auxiliares también se definen en *dbgmetric.h*.
+> Las [aplicaciones auxiliares del SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` y `RemoveMetric` son funciones estáticas definidas en *dbgmetric.h* y compiladas en *ad2de.lib*. Las `metrictypePortSupplier` `metricCLSID`aplicaciones, `metricName` , y helper también se definen en *dbgmetric.h*.
 
- Un proveedor de puerto puede proporcionar su nombre y GUID mediante los métodos [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) y [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), respectivamente.
+ Un proveedor de puertos puede proporcionar su nombre y GUID a través de los métodos [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) y [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), respectivamente.
 
 ## <a name="see-also"></a>Vea también
-- [Implementar un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
-- [Aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)
+- [Implementar un proveedor portuario](../../extensibility/debugger/implementing-a-port-supplier.md)
+- [Ayudantes del SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [Proveedores portuarios](../../extensibility/debugger/port-suppliers.md)

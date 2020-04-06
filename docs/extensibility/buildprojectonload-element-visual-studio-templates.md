@@ -1,23 +1,23 @@
 ---
-title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento BuildProjectOnload (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a9d4536c9ae7205a98ef0c79906ccbb002b5f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321246"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739942"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento buildProjectOnload (plantillas de Visual Studio)
-Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compila la solución completa.
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (plantillas de Visual Studio)
+Crea solo nuevos proyectos a medida que los crea y los agrega a una solución. La solución completa no está creada.
 
 Jerarquía de elementos:
 
@@ -46,18 +46,18 @@ Jerarquía de elementos:
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|`TemplateData`|Clasifica la plantilla y define cómo aparece tanto en el **nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.|
+|`TemplateData`|Categoriza la plantilla y define cómo aparece en los cuadros de diálogo **Nuevo proyecto** y Agregar **nuevo elemento.**|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser `true` o `false` para indicar si desea compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
+ El texto debe `true` `false` ser o para indicar si se va a compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos de una plantilla de Visual C#.
+ En el ejemplo siguiente se muestran los metadatos de una plantilla de Visual C.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ Jerarquía de elementos:
 
 ## <a name="see-also"></a>Vea también
 
-- [BuildOnLoad atributos y elementos](buildonload-visual-studio-templates.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Atributo y elemento BuildOnLoad](buildonload-visual-studio-templates.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

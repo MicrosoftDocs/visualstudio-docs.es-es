@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
+title: IDebugDocumentPosition2::GetFileName ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 478f259d111e19df988c76733d1bb52655adab2c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326538"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731683"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtiene el nombre de archivo del archivo de origen que contiene la posición del documento.
@@ -41,13 +41,13 @@ int GetFileName( 
 
 ## <a name="parameters"></a>Parámetros
 `pbstrFileName`\
-[out] Devuelve el nombre de archivo del archivo de origen.
+[fuera] Devuelve el nombre de archivo del archivo de origen.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Un archivo de código fuente no puede tener siempre un nombre de archivo (el archivo de origen no exista en el disco, por ejemplo).
+## <a name="remarks"></a>Observaciones
+ Es posible que un archivo de origen no siempre tenga un nombre de archivo (el archivo de origen puede no existir en el disco, por ejemplo).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

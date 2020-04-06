@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetFunctionLineOffset ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1edec584cfd11e469db8a3f1468dcdfc5768e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 52f519259cbd0a79325fb062d630e7c4db757695
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336778"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733878"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-Recupera la dirección dentro de una función que representa el desplazamiento de la línea determinada.
+Recupera la dirección dentro de una función que representa el desplazamiento de línea especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,19 +44,19 @@ int GetFunctionLineOffset(
 
 ## <a name="parameters"></a>Parámetros
 `pAddress`\
-[in] Dirección que representa la función.
+[en] Dirección que representa la función.
 
 `dwLine`\
-[in] Desplazamiento desde el principio de la función de la línea.
+[en] Desfase de línea desde el inicio de la función.
 
 `ppNewAddress`\
-[out] Nueva dirección que representa el desplazamiento desde el principio de la función de línea.
+[fuera] Nueva dirección que representa el desplazamiento de línea desde el principio de la función.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(

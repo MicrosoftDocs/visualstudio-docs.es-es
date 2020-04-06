@@ -1,57 +1,57 @@
 ---
-title: Asociar después de un lanzamiento | Microsoft Docs
+title: Colocación después de un lanzamiento ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350918"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739285"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un lanzamiento
-Una vez que inicia un programa, la sesión de depuración está lista para asociar el motor de depuración (DE) a dicho programa.
+Después de que se inicie un programa, la sesión de depuración está lista para adjuntar el motor de depuración (DE) a dicho programa.
 
 ## <a name="design-decisions"></a>Decisiones de diseño
- Puesto que la comunicación es más fácil dentro de un espacio de direcciones compartido, debe elegir entre dos enfoques de diseño: establecer la comunicación entre la sesión de depuración y la DE. O bien, establezca la comunicación entre el programa y la DE. Elija entre lo siguiente:
+ Dado que la comunicación es más fácil dentro de un espacio de direcciones compartido, debe elegir entre dos enfoques de diseño: establecer la comunicación entre la sesión de depuración y la DE. O bien, establezca la comunicación entre el DE y el programa. Elija entre lo siguiente:
 
-- Si tiene más sentido para configurar la comunicación entre la sesión de depuración y la DE, la sesión de depuración participa en la DE la creación y solicita la DE asociar al programa. Este diseño deja la sesión de depuración y DE juntos en un espacio de direcciones y el entorno de tiempo de ejecución y el programa juntos en otro.
+- Si tiene más sentido configurar la comunicación entre la sesión de depuración y el DE, la sesión de depuración crea automáticamente el DE y pide que el DE se asocie al programa. Este diseño deja la sesión de depuración y DE juntas en un espacio de direcciones, y el entorno y el programa en tiempo de ejecución juntos en otro.
 
-- Si tiene más sentido para configurar la comunicación entre el programa y la DE, el entorno de tiempo de ejecución crea conjuntamente la DE. Este diseño deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Este diseño es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.
+- Si tiene más sentido configurar la comunicación entre el DE y el programa, el entorno en tiempo de ejecución crea automáticamente el DE. Este diseño deja el SDM en un espacio de direcciones y el DE, el entorno en tiempo de ejecución y el programa juntos en otro. Este diseño es típico de un DE que se implementa con un intérprete para ejecutar lenguajes con scripts.
 
     > [!NOTE]
-    > Cómo la DE se une al programa es depende de la implementación. Comunicación entre el programa y la DE es también depende de la implementación.
+    > La forma en que el DE se asocia al programa depende de la implementación. La comunicación entre el DE y el programa también depende de la implementación.
 
 ## <a name="implementation"></a>Implementación
- Mediante programación, cuando el Administrador de depuración de la sesión (SDM) recibe por primera vez el [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se inicie, llama a la [adjuntar](../../extensibility/debugger/reference/idebugprogram2-attach.md) método y pásele un [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objeto, que es una versión posterior se usa para pasar los eventos de depuración hasta el SDM. El `IDebugProgram2::Attach` método, a continuación, llama a la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. Para obtener más información sobre cómo el SDM recibe el `IDebugProgram2` interfaz, vea [notificación del puerto](../../extensibility/debugger/notifying-the-port.md).
+ Mediante programación, cuando el Administrador de depuración de sesión (SDM) recibe por primera vez el [objeto IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa que se va a iniciar, llama al método [Attach,](../../extensibility/debugger/reference/idebugprogram2-attach.md) pasándole un objeto [IDebugEventCallback2,](../../extensibility/debugger/reference/idebugeventcallback2.md) que se usa más adelante para pasar eventos de depuración al SDM. A `IDebugProgram2::Attach` continuación, el método llama al método [OnAttach.](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Para obtener más información sobre cómo `IDebugProgram2` el SDM recibe la interfaz, consulte [Notificación del puerto](../../extensibility/debugger/notifying-the-port.md).
 
- Si debe ejecutarse en el mismo espacio de direcciones que el programa de la DE depuración: dado que la DE suele ser parte de un intérprete que se está ejecutando un script, el `IDebugProgramNodeAttach2::OnAttach` devuelve del método `S_FALSE`. El `S_FALSE` retorno indica que finalizado el proceso de conexión.
+ Si la DE necesita ejecutarse en el mismo espacio de direcciones que el programa que está depurando: `IDebugProgramNodeAttach2::OnAttach` dado `S_FALSE`que la DE suele formar parte de un intérprete que ejecuta un script, el método devuelve . La `S_FALSE` devolución indica que completó el proceso de conexión.
 
- Si, sin embargo, la DE se ejecuta en el espacio de direcciones del SDM: el `IDebugProgramNodeAttach2::OnAttach` devuelve del método `S_OK`, o el [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaz no está implementada en absoluto en el [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objeto asociado con el programa se está depurando. En este caso, el [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) finalmente se llama el método para completar la operación de adjuntar.
+ Sin embargo, si el DE se ejecuta en `IDebugProgramNodeAttach2::OnAttach` el `S_OK`espacio de direcciones del SDM: el método devuelve , o el [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaz no se implementa en absoluto en el [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objeto asociado con el programa que está depurando. En este caso, el [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) se llama finalmente al método para completar la operación de conexión.
 
- En el último caso, se debe llamar a la [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) método en el `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método, la tienda la `GUID` en el sistema local de objetos y devolver este `GUID` cuando el `IDebugProgram2::GetProgramId` se llama al método en este objeto. El `GUID` se usa para identificar de forma única el programa a través de los distintos componentes de depuración.
+ En este último caso, debe llamar al `IDebugProgram2` método [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) en el `GUID` objeto que se pasó al `GUID` `IDebugEngine2::Attach` método, almacenar el objeto de programa local y devolverlo cuando se llame posteriormente al `IDebugProgram2::GetProgramId` método en este objeto. El `GUID` se utiliza para identificar el programa de forma única a través de los diversos componentes de depuración.
 
- En el caso de los `IDebugProgramNodeAttach2::OnAttach` método que devuelve `S_FALSE`, el `GUID` que se usará para el programa se pasa a ese método y es el `IDebugProgramNodeAttach2::OnAttach` método que establece el `GUID` en el objeto de sistema local.
+ En el caso `IDebugProgramNodeAttach2::OnAttach` de `S_FALSE`que `GUID` el método devuelva , el que se `IDebugProgramNodeAttach2::OnAttach` va a `GUID` usar para el programa se pasa a ese método y es el método que establece el objeto de programa local.
 
- La DE está ahora conectada al programa y está listo para enviar los eventos de inicio.
+ El DE ahora está asociado al programa y listo para enviar cualquier evento de inicio.
 
 ## <a name="see-also"></a>Vea también
-- [Asociación directamente a un programa](../../extensibility/debugger/attaching-directly-to-a-program.md)
-- [Notificación del puerto](../../extensibility/debugger/notifying-the-port.md)
+- [Adjuntar directamente a un programa](../../extensibility/debugger/attaching-directly-to-a-program.md)
+- [Notificar al puerto](../../extensibility/debugger/notifying-the-port.md)
 - [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
 - [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
-- [Asociar](../../extensibility/debugger/reference/idebugprogram2-attach.md)
+- [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)
 - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
-- [Asociar](../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)

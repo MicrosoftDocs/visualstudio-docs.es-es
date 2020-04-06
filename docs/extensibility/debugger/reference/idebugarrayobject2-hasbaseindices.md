@@ -1,28 +1,28 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Microsoft Docs
+title: IDebugArrayObject2::HasBaseIndices ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - HasBaseIndices
 - IDebugArrayObject2::HasBaseIndices
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75c29c5bf4dd3c809a219fe009266999ada39ddf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 48250b3328310c3f1cb1c84c8fe1a9c61c534cad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349698"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736144"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Determina si la matriz tiene índices de base (límites inferiores) definidos.
+Determina si la matriz tiene índices base (límites inferiores) definidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ int HasBaseIndices (
 
 ## <a name="parameters"></a>Parámetros
 `pfHasBaseIndices`\
-[out] TRUE para especificar que la matriz tiene índices de base (límites inferiores); en caso contrario, FALSE.
+[fuera] TRUE para especificar que la matriz tiene índices base (límites inferiores); de lo contrario, FALSE.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

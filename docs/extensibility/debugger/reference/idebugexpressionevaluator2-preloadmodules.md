@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebugExpressionEvaluator2::PreloadModules ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46df8c3d50a08098ca75e7b115a931ad7580a91b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325507"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729326"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Carga previamente los módulos designados por el proveedor de símbolos especificado.
+Precarga los módulos designados por el proveedor de símbolos especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Parámetros
 `pSym`\
-[in] Proveedor de símbolos para el que se cargarán previamente los módulos.
+[en] Proveedor de símbolos para el que se precargarán los módulos.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-Este método opcional se utiliza al realizar una asociación de proceso de hospedaje. Proporciona una oportunidad de "calentamiento" como parte de la operación de adjuntar lo EE.
+## <a name="remarks"></a>Observaciones
+Este método opcional se utiliza cuando se realiza una conexión de proceso de hospedaje. Le da a EE la oportunidad de "calentar" como parte de la fijación.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone el [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone el [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

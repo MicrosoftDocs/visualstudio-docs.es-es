@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+title: IDebugEnumField::GetStringFromValue ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7466e5390cff747532dca0343680cf359db46a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345086"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730288"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Este método obtiene el nombre de la constante de enumeración dada su valor.
+Este método obtiene el nombre de la constante de enumeración dado su valor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Parámetros
 `value`\
-[in] El valor para el que se va a obtener el nombre de la enumeración constante.
+[en] Valor para el que se va a obtener el nombre de la constante de enumeración.
 
 `pbstrValue`\
-[out] Devuelve el nombre de la constante de enumeración.
+[fuera] Devuelve el nombre de la constante de enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si el valor no tiene asociado un nombre, o devuelve un código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo `S_FALSE` contrario, devuelve si el valor no tiene ningún nombre asociado o devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Si hay más de un nombre asociado con el mismo valor, se devolverá el nombre definido en la enumeración.
+## <a name="remarks"></a>Observaciones
+ Si hay más de un nombre asociado con el mismo valor, se devolverá el primer nombre definido en la enumeración.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

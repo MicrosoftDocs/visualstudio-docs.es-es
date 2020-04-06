@@ -1,25 +1,25 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Microsoft Docs
+title: IDebugBeforeSymbolSearchEvent2::GetModuleName ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 026c0a297eed18b21692885f08af07bdc656e842
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 0d97e78b3238b0efababb3fd4782743d03595387
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "66317546"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736121"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Recupera el nombre del módulo que se está depurando actualmente.
@@ -40,13 +40,13 @@ public int GetModuleName (
 
 ## <a name="parameters"></a>Parámetros
 `pbstrModuleName`\
-[out] Nombre del módulo.
+[fuera] Nombre del módulo.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CDebugBeforeSymbolSearchEventBase** objeto que expone el [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugBeforeSymbolSearchEventBase** objeto que expone el [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.
 
 ```cpp
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)

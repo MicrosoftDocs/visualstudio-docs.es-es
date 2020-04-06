@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento Assembly (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13c52b7f913e35ace3e0fd41227e27b6c00e90e2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352195"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740036"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (plantillas de Visual Studio)
-Especifica información sobre un ensamblado, que usa la plantilla para agregar una referencia de ensamblado a los proyectos.
+Especifica información sobre un ensamblado, que la plantilla utiliza para agregar una referencia de ese ensamblado a los proyectos.
 
- \<VSTemplate > \<TemplateContent > \<referencias > \<referencia > \<ensamblado >
+ \<VSTemplate \<> TemplateContent \< \<> \<referencias> referencia> ensamblado>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,9 +50,9 @@ Especifica información sobre un ensamblado, que usa la plantilla para agregar u
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- Este texto especifica el ensamblado para agregar a un proyecto cuando se crea una instancia de la plantilla de elemento. Este nombre de ensamblado debe especificarse en una de las maneras siguientes:
+ Este texto especifica el ensamblado que se va a agregar a un proyecto cuando se crea una instancia de la plantilla de elemento. Este nombre de ensamblado debe especificarse de una de las siguientes maneras:
 
-- Como un nombre completo del ensamblado. Por ejemplo:
+- Como nombre completo del ensamblado. Por ejemplo:
 
     ```
     <Assembly>
@@ -66,13 +66,13 @@ Especifica información sobre un ensamblado, que usa la plantilla para agregar u
     <Assembly> System </Assembly>
     ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `Assembly` es un elemento secundario obligatorio de `Reference`.
 
- El `Reference`, `References,` y `Assembly` elementos solo se pueden utilizar en *.vstemplate* los archivos que tienen un `Type` valor del atributo `Item`.
+ Los `Reference` `References,` elementos , y `Assembly` solo se pueden utilizar `Type` en `Item`archivos *.vstemplate* que tengan un valor de atributo de .
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente ilustra la `TemplateContent` elemento de una plantilla de elemento. Este código XML agrega las referencias a la *System.dll* y *System.Data.dll* ensamblados.
+ En el ejemplo `TemplateContent` siguiente se muestra el elemento de una plantilla de elemento. Este XML agrega referencias a los ensamblados *System.dll* y *System.Data.dll.*
 
 ```
 <TemplateContent>
@@ -93,5 +93,5 @@ Especifica información sobre un ensamblado, que usa la plantilla para agregar u
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

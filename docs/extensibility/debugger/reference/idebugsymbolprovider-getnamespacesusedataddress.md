@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347544"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719214"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Este método crea un enumerador para los espacios de nombres asociado a la dirección de depuración.
+Este método crea un enumerador para espacios de nombres asociados con la dirección de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Parámetros
 `pAddress`\
-[in] La dirección de depuración.
+[en] La dirección de depuración.
 
 `ppEnum`\
-[out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para los espacios de nombres.
+[fuera] Devuelve un enumerador [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para los espacios de nombres.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Puede haber anidada de varios espacios de nombres asociados con una dirección de depuración determinado, por ejemplo, los espacios de nombres o varios `using` instrucciones.
+## <a name="remarks"></a>Observaciones
+ Puede haber varios espacios de nombres asociados a una dirección `using` de depuración determinada, por ejemplo, espacios de nombres anidados o varias instrucciones.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

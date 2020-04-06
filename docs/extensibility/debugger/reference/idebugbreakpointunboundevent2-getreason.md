@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: IDebugBreakpointUnboundEvent2::GetReason ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b3c15b25ec6f4f2d7ddc56efc163ec2eb6b81c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352835"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734724"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Obtiene el motivo que el punto de interrupción no está enlazado.
+Obtiene la razón por la que el punto de interrupción no estaba enlazado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>Parámetros
 `pdwUnboundReason`\
-[out] Devuelve un valor de la [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeración que especifica el motivo el punto de interrupción no está enlazado.
+[fuera] Devuelve un valor de la [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeración que especifica el motivo por el que se desencuadría el punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-Algunos motivos son un punto de interrupción que se va a enlazar a una ubicación diferente después de una operación de editar y continuar, o una determinación de que un punto de interrupción se enlazó en error.
+## <a name="remarks"></a>Observaciones
+Los motivos incluyen un punto de interrupción que se va a rebotar en una ubicación diferente después de una operación de edición y continuación, o una determinación de que un punto de interrupción se ha enlazado por error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CBreakpointUnboundDebugEventBase** objeto que expone el [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CBreakpointUnboundDebugEventBase** objeto que expone el [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interfaz.
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

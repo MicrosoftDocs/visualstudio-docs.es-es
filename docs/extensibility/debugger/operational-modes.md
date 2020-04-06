@@ -1,24 +1,24 @@
 ---
-title: Modos de funcionamiento | Microsoft Docs
+title: Modos de funcionamiento ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81011a6962bc874188aa04b6b1bb8ea538f3db49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351537"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738284"
 ---
-# <a name="operational-modes"></a>Modos de funcionamiento
-Hay tres modos en que puede funcionar el IDE, como sigue:
+# <a name="operational-modes"></a>Modos operativos
+Hay tres modos en los que el IDE puede funcionar, de la siguiente manera:
 
 - [Modo de diseño](#vsconoperationalmodesanchor1)
 
@@ -26,33 +26,33 @@ Hay tres modos en que puede funcionar el IDE, como sigue:
 
 - [Modo de interrupción](#vsconoperationalmodesanchor3)
 
-  Cómo el motor de depuración personalizado (DE) realiza la transición entre estos modos es una decisión de implementación que requiere estar familiarizado con los mecanismos de transición. La DE puede o no puede implementar directamente estos modos. Estos modos son en realidad paquete modos de depuración que cambian en función de la acción del usuario o de la DE los eventos. Por ejemplo, la transición del modo de ejecución al modo de interrupción se haya provocado por un evento de detención de la DE. La transición desde el que ejecutar modo paso a paso o modo de interrupción se haya provocado por el usuario realizando operaciones como paso o ejecutar. Para obtener más información acerca de las transiciones DE, consulte [Control de ejecución](../../extensibility/debugger/control-of-execution.md).
+  La forma en que las transiciones del motor de depuración personalizado (DE) entre estos modos es una decisión de implementación que requiere que esté familiarizado con los mecanismos de transición. El DE puede o no implementar directamente estos modos. Estos modos son realmente modos de paquete de depuración que cambian en función de la acción del usuario o eventos de la DE. Por ejemplo, la transición del modo de ejecución al modo de interrupción es instigada por un evento de detención de la DE. La transición de interrupción al modo de ejecución o modo de paso es instigada por el usuario que realiza operaciones como Paso o Ejecutar. Para obtener más información acerca de las transiciones DE, vea [Control de ejecución](../../extensibility/debugger/control-of-execution.md).
 
-## <a name="vsconoperationalmodesanchor1"></a> Modo de diseño
- Modo de diseño es el estado nonrunning de depuración de Visual Studio, durante el cual puede establecer las características de la aplicación de depuración.
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a>Modo de diseño
+ El modo de diseño es el estado de no ejecución de la depuración de Visual Studio, durante el cual puede establecer características de depuración en la aplicación.
 
- Solo depuración de algunas características se usan durante el modo de diseño. Un desarrollador puede establecer puntos de interrupción o crear expresiones de inspección. La DE nunca se carga o se llama mientras el IDE está en modo de diseño. Interacción con la DE tiene lugar durante los modos de ejecución e interrupción.
+ Solo se utilizan algunas características de depuración durante el modo de diseño. Un desarrollador puede elegir establecer puntos de interrupción o crear expresiones de inspección. El DE nunca se carga o se llama mientras el IDE está en modo de diseño. La interacción con el DE tiene lugar solo durante los modos de ejecución y interrupción.
 
-## <a name="vsconoperationalmodesanchor2"></a> Modo de ejecución
- Modo de ejecución se produce cuando un programa se ejecuta en una sesión de depuración en el IDE. La aplicación se ejecuta hasta que la terminación, hasta que se alcance un punto de interrupción o hasta que se produce una excepción. Cuando se ejecuta la aplicación a la cancelación, las transiciones DE en modo de diseño. Cuando se alcanza un punto de interrupción o se produce una excepción, la DE transiciones para el modo de interrupción.
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a>Modo de ejecución
+ El modo de ejecución se produce cuando un programa se ejecuta en una sesión de depuración en el IDE. La aplicación se ejecuta hasta la terminación, hasta que se alcanza un punto de interrupción o hasta que se produce una excepción. Cuando la aplicación se ejecuta hasta la terminación, la DE pasa al modo de diseño. Cuando se alcanza un punto de interrupción o se produce una excepción, la DE pasa al modo de interrupción.
 
-## <a name="vsconoperationalmodesanchor3"></a> Modo de interrupción
- Modo de interrupción se produce cuando se suspende la ejecución del programa de depuración. Modo de interrupción ofrece al programador una instantánea de la aplicación en el momento de la interrupción y permite al desarrollador analizar el estado de la aplicación y cambiar cómo se ejecutará la aplicación. El desarrollador puede ver y editar código, examinar o modificar los datos, reinicie la aplicación, finalizar la ejecución o continuar la ejecución desde el mismo punto.
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a>Modo de interrupción
+ El modo de interrupción se produce cuando se suspende la ejecución del programa de depuración. El modo de interrupción ofrece al desarrollador una instantánea de la aplicación en el momento de la interrupción y permite al desarrollador analizar el estado de la aplicación y cambiar la forma en que se ejecutará la aplicación. El desarrollador puede ver y editar código, examinar o modificar datos, reiniciar la aplicación, finalizar la ejecución o continuar la ejecución desde el mismo punto.
 
- Modo de interrupción se especifica cuando la DE envía un evento de detención sincrónica. Eventos de detención sincrónico, también denominados eventos de detención, notifican al administrador de depuración de la sesión (SDM) y el IDE que la aplicación que se está depura ha detenido la ejecución de código. El [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) y [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) interfaces son ejemplos de eventos de detención.
+ El modo de interrupción se introduce cuando la DE envía un evento de detención sincrónico. Eventos de detención sincrónicos, también denominados detener eventos, notificar al administrador de depuración de sesión (SDM) y el IDE que la aplicación que se está depurando ha dejado de ejecutar código. Las interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) son ejemplos de eventos de detención.
 
- Detener eventos continúan mediante una llamada a uno de los métodos siguientes, que el depurador de modo de interrupción para ejecutar o modo de paso de transición:
+ Los eventos de detención se continúan mediante una llamada a uno de los métodos siguientes, que realizan la transición del depurador del modo de interrupción al modo de ejecución o paso:
 
-- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Ejecutar](../../extensibility/debugger/reference/idebugprocess3-execute.md)
 
 - [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)
 
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Continuar](../../extensibility/debugger/reference/idebugprocess3-continue.md)
 
-### <a name="vsconoperationalmodesanchor4"></a> Modo paso a paso
- Modo paso a paso se produce cuando el programa de los pasos a la siguiente línea de código, o en, a través o fuera de una función. Un paso se ejecuta llamando al método [paso](../../extensibility/debugger/reference/idebugprocess3-step.md). Este método requiere `DWORD`que especifican el [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) y [STEPKIND](../../extensibility/debugger/reference/stepkind.md) enumeraciones como parámetros de entrada.
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a>Modo paso
+ El modo de paso se produce cuando el programa pasa a la siguiente línea de código, o dentro, encima o fuera de una función. Se ejecuta un paso llamando al método [Step](../../extensibility/debugger/reference/idebugprocess3-step.md). Este método `DWORD`requiere s que especifican las enumeraciones [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) y [STEPKIND](../../extensibility/debugger/reference/stepkind.md) como parámetros de entrada.
 
- Cuando el programa correctamente los pasos a la siguiente línea de código o en una función, o se ejecuta hasta el cursor o para establecer un punto de interrupción, pasa automáticamente al DE volver a modo de interrupción.
+ Cuando el programa pasa correctamente a la siguiente línea de código o a una función, o se ejecuta en el cursor o a un punto de interrupción establecido, la DE vuelve automáticamente al modo de interrupción.
 
 ## <a name="see-also"></a>Vea también
 - [Control de ejecución](../../extensibility/debugger/control-of-execution.md)

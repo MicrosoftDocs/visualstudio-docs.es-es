@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Documentos de Microsoft
+title: IDebugContainerField::EnumFields ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6d3edeb677af728b1a0fd0e9cf8685e7919d79e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317929"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733221"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Crea un enumerador para los campos del contenedor.
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>Parámetros
 `dwKindFilter`\
-[in] Una combinación de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes que seleccione los campos que se van a enumerar. Tipos de campo pueden describir los tipos de almacenamiento, como una clase o primitiva, o específica de información, como local, parámetro o puntero "this".
+[en] Una combinación de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes que seleccionan los campos que se van a enumerar. Los tipos de campo pueden describir tipos de almacenamiento, como clase o primitivo, o información específica, como local, parámetro o puntero "this".
 
 `dwModifiersFilter`\
-[in] Una combinación de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes que seleccione los campos que se van a enumerar. Modificadores de campo pueden ser permisos de acceso, como público o privado o información de almacenamiento, como virtual, estática o final.
+[en] Una combinación de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes que seleccionan los campos que se van a enumerar. Los modificadores de campo pueden ser permisos de acceso, como público o privado, o información de almacenamiento, como virtual, estática o final.
 
 `pszNameFilter`\
-[in] El nombre del campo que hay que enumerar. Esto puede ser un valor nulo si todos los campos que se van a devolverse.
+[en] El nombre del campo que se va a enumerar. Esto puede ser un valor nulo si se van a devolver todos los campos.
 
 `nameMatch`\
-[in] Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración que controla si la búsqueda distingue mayúsculas de minúsculas o no.
+[en] Un valor de la [enumeración NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) que controla si la búsqueda distingue mayúsculas de minúsculas o no.
 
 `ppEnum`\
-[out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de campos. Devuelve un valor null si no hay ningún campo.
+[fuera] Devuelve un [objeto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de campos. Devuelve un valor nulo si no hay campos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK o S_FALSE si no hay ningún campo. De lo contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK o S_FALSE si no hay campos. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- El `dwKindFilter`, `dwModifiersFilter`, y `pszNameFilter` parámetros se pueden combinar, por ejemplo, para seleccionar todos los métodos virtuales públicos denominados "MyMethod".
+## <a name="remarks"></a>Observaciones
+ Los `dwKindFilter` `dwModifiersFilter`parámetros `pszNameFilter` , , y se pueden combinar, por ejemplo, para seleccionar todos los métodos virtuales públicos denominados "MyMethod".
 
 ## <a name="see-also"></a>Vea también
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
