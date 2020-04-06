@@ -1,29 +1,29 @@
 ---
-title: Acerca de las extensiones de nombre de archivo | Microsoft Docs
+title: Acerca de las extensiones de nombre de archivo ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740346"
 ---
 # <a name="about-file-name-extensions"></a>Acerca de las extensiones de nombre de archivo
-Al registrar una extensión de archivo de un paquete VSPackage, asocia con una versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esto es importante si más de una versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] está instalado en un equipo.
+Cuando se registra una extensión de archivo de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage, se asocia a una versión de . Esto es importante si hay [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] más de una versión instalada en un equipo.
 
- Extensiones de archivo para paquetes VSPackage registradas bajo **HKEY_CLASSES_ROOT** clave con un valor predeterminado que señala el identificador de programación (ProgID) asociado.
+ Las extensiones de archivo para VSPackages se registran en **HKEY_CLASSES_ROOT** clave con un valor predeterminado que apunta al identificador de programación asociado (ProgID).
 
- El ejemplo siguiente muestra la información de registro para el *.vcproj* la extensión de archivo:
+ En el ejemplo siguiente se muestra información de registro para la extensión de archivo *.vcproj:*
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Los archivos asociados con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deben tener un ProgID con control de versiones, como `VisualStudio.vcproj.8.0`. Un ProgID con control de versiones permite instalaciones en paralelo del producto para mantener las asociaciones de extensión de archivo entre las versiones de producto. Un ProgID específico de la versión también permite usar los verbos estándar, como abrir, editar y así sucesivamente, sin preocuparse de sobrescribir ni ser sobrescrito por otras aplicaciones o las versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Los archivos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] asociados deben tener un ProgID versionado, como `VisualStudio.vcproj.8.0`. Un ProgID versionado permite que las instalaciones en paralelo del producto mantengan las asociaciones de extensión de archivo entre las versiones del producto. Un ProgID específico de la versión también le permite utilizar verbos estándar, como abrir, editar, etc., sin la preocupación de sobrescribir o ser sobrescrito por otras aplicaciones o versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
- En algunos casos, no se debe cambiar el identificador de programa asociado con una extensión de archivo. Por ejemplo, el ProgID de la *.htm* la extensión de archivo (Id. de programa = archivo HTML) está codificado de forma rígida en varios lugares en el sistema operativo, y es muy conocida y se usa en asociación con *.htm* y *.html* archivos.
+ En algunos casos, el ProgID asociado con una extensión de archivo no debe cambiarse. Por ejemplo, el ProgID para la extensión de archivo *.htm* (progid - htmlfile) está codificado de forma rígida en varios lugares del sistema operativo y es ampliamente conocido y utilizado en asociación con archivos *.htm* y *.html.*
 
 ## <a name="see-also"></a>Vea también
-- [Registrar extensiones de nombre de archivo para las implementaciones en paralelo](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Especifique los controladores de archivo de extensiones de nombre de archivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [Registrar extensiones de nombre de archivo para implementaciones en paralelo](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Especificar controladores de archivos para extensiones de nombre de archivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

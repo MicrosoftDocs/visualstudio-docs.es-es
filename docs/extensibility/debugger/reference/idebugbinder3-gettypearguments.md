@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: IDebugBinder3::GetTypeArguments ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330740"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735691"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Este método recupera una lista de tipos de argumentos asociada a este objeto.
+Este método recupera una lista de tipos de argumento asociados a este objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parámetros
 `skip`\
-[in] Número de campos que se omitirán antes de obtener los tipos de argumento.
+[en] Número de campos que se deben omitir antes de obtener tipos de argumento.
 
 `count`\
-[in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).
+[en] El número de campos de argumento que se `ppFields` va a devolver (también especifica el tamaño de la matriz).
 
 `ppFields`\
-[in, out] Una matriz de los campos que se rellena si la devolución de este método.
+[adentro, fuera] Matriz de campos que se rellenará al devolver este método.
 
 `pFetched`\
-[out] \(opcional) El número de argumento de tipo campos devueltos realmente.
+[fuera] \(opcional) El número de campos de tipo de argumento realmente devueltos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El número de tipos de argumento se puede obtener de antemano con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Vea también

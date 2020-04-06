@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2 | Microsoft Docs
+title: IDebugMemoryBytes2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMemoryBytes2 interface
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7496c7fb083558cec08bfc851f96075ea02bae9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 56cb234e2295c5c9c08c2a2e9271e1c173524875
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347114"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727505"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
-Esta interfaz representa los bytes de memoria.
+Esta interfaz representa bytes de memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,29 +29,29 @@ IDebugMemoryBytes2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- El motor de depuración (DE) implementa esta interfaz para representar los bytes de memoria.
+ El motor de depuración (DE) implementa esta interfaz para representar bytes en memoria.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
-- [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) devuelve esta interfaz para proporcionar acceso a la memoria del sistema. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) y [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) devolver esta interfaz para proporcionar acceso a los bytes de un objeto.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+- [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) devuelve esta interfaz para proporcionar acceso a la memoria del sistema. [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) y [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) devuelven esta interfaz para proporcionar acceso a los bytes de un objeto.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDebugMemoryBytes2`.
+ En la tabla siguiente `IDebugMemoryBytes2`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
-|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Lee una secuencia de bytes, empezando en una ubicación determinada.|
-|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Escribe `dwCount` bytes, empezando en `pStartContext`.|
-|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Obtiene el tamaño, en bytes, de la memoria representado por esta interfaz.|
+|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Lee una secuencia de bytes, comenzando en una ubicación determinada.|
+|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Escribe `dwCount` bytes, empezando por `pStartContext`.|
+|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Obtiene el tamaño, en bytes, de la memoria representada por esta interfaz.|
 
-## <a name="remarks"></a>Comentarios
- Para las propiedades, un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz que representa una matriz proporciona un `IDebugMemoryBytes2` interfaz para tener acceso a los valores de la matriz.
+## <a name="remarks"></a>Observaciones
+ Para las propiedades, un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) `IDebugMemoryBytes2` interfaz que representa una matriz proporciona una interfaz para tener acceso a los valores de esa matriz.
 
- Visual Studio **vista memoria** llamadas [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) para recuperar un `IDebugMemoryBytes2` interfaz para tener acceso a memoria del sistema. Se obtiene la dirección para tener acceso mediante el análisis de la expresión escrita como una dirección en la vista de la memoria y, a continuación, evaluar la expresión analizada utilizando [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) para obtener un `IDebugProperty2` interfaz. Una llamada a [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que describe la dirección de memoria. Este contexto de la memoria, a continuación, se pasa a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) y [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).
+ Vista de **memoria** de Visual Studio llama `IDebugMemoryBytes2` a [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) para recuperar una interfaz para tener acceso a la memoria del sistema. La dirección a la que se va a tener acceso se obtiene analizando la expresión introducida como dirección `IDebugProperty2` en la vista de memoria y, a continuación, evaluando la expresión analizada mediante [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) para obtener una interfaz. Una llamada a [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que describe la dirección de memoria. A continuación, este contexto de memoria se pasa a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) y [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md).
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

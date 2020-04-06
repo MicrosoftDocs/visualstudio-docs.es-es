@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+title: IDebugCustomAttribute::GetAttributeBytes ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551261414db9fab97f3e8c2a8fdbe518143d79c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315196"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732802"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Obtiene la información de atributo como un blob de bytes.
@@ -43,16 +43,16 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parámetros
 `ppBlob`\
-[in, out] Una matriz que se rellena con los bytes del atributo.
+[adentro, fuera] Matriz que se rellena con los bytes de atributo.
 
 `pdwLen`\
-[in, out] Especifica el número máximo de bytes que se devuelven en el `ppBlob` de matriz y devuelve el número de bytes escritos realmente en la matriz.
+[adentro, fuera] Especifica el número máximo de bytes `ppBlob` que se devolverán en la matriz y devuelve el número de bytes realmente escritos en la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Establecer el `ppBlob` atributos de parámetro en un valor null para devolver el número de bytes disponibles. A continuación, asigne una matriz y pasar esa matriz en para el `ppBlob` parámetro.
+## <a name="remarks"></a>Observaciones
+ Establezca `ppBlob` el parámetro en un valor nulo para devolver el número de bytes de atributos disponibles. A continuación, asigne una matriz `ppBlob` y pase esa matriz para el parámetro.
 
  Los bytes de atributo representan los datos sin procesar del atributo personalizado.
 

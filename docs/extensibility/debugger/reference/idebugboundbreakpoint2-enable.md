@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
+title: IDebugBoundBreakpoint2::Habilitar ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Enable method
 - IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62ef11f8cdbdc106a69441bd470da1f979129456
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ed933b1abf67fbe357462e86d54b23e3b19fa548
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320580"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735567"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Habilita o deshabilita el punto de interrupción.
@@ -42,13 +42,13 @@ int Enable( 
 
 ## <a name="parameters"></a>Parámetros
 `fEnable`\
-[in] Conjunto distinto de cero (`TRUE`) para habilitar o cero (`FALSE`) para deshabilitar el punto de interrupción.
+[en] Establézcalo`TRUE`en no cero`FALSE`( ) para habilitar o en cero ( ) para deshabilitar el punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de `BPS_DELETED` punto de interrupción enlazado se establece en (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para una sencilla `CBoundBreakpoint` objeto que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
+En el ejemplo siguiente se muestra `CBoundBreakpoint` cómo implementar este método para un objeto simple que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
 
 ```
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)

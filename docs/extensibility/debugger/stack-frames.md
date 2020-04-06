@@ -1,5 +1,5 @@
 ---
-title: Marcos de pila | Microsoft Docs
+title: Marcos de pila ( Stack Frames) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de3a0267d366f926fa5705c7455b237cafe4820a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348510"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712839"
 ---
 # <a name="stack-frames"></a>Marcos de pila
-En la arquitectura de depurador, un *marco de pila*:
+En la arquitectura del depurador, un marco de *pila:*
 
-- Es una abstracción de una pila que proporciona el contexto de ejecución de un subproceso. Un subproceso siempre se ejecuta dentro de una función. Un marco de pila contiene las variables locales de la función y los argumentos a él. Para depurar con Visual Studio, el lenguaje o entorno que se está depurando debe admitir los marcos de pila.
+- Es una abstracción de una pila que proporciona el contexto de ejecución de un subproceso. Un subproceso siempre se ejecuta dentro de una función. Un marco de pila contiene las variables locales de la función y los argumentos para ella. Para depurar con Visual Studio, el lenguaje o entorno que se está depurando debe admitir marcos de pila.
 
-- Puede identificar y describirse a sí mismos y puede devolver el subproceso asociado. También puede devolver un marco de pila que representa el puntero de instrucción actual y la documentación asociada al contexto del código y contextos de evaluación de expresión.
+- Puede identificarse y describirse a sí mismo, y puede devolver el subproceso asociado. Un marco de pila también puede devolver el contexto de código que representa el puntero de instrucción actual y los contextos de evaluación de documentación y expresión asociados.
 
-- Tiene propiedades que describen el nombre, tipo y valor de argumentos y variables locales y cuáles deben aparecer en varias ventanas de depuración IDE.
+- Tiene propiedades que describen el nombre, el tipo y el valor de las variables y argumentos locales, y que aparecen en varias ventanas de depuración IDE.
 
-- Se representa mediante un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaz, suelen ser creado por un motor de depuración (DE) o una máquina virtual como consecuencia de ejecución de un subproceso.
+- Se representa mediante un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaz, normalmente creado por un motor de depuración (DE) o máquina virtual como consecuencia de la ejecución de un subproceso.
 
 ## <a name="see-also"></a>Vea también
-- [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)
+- [Contextos del depurador](../../extensibility/debugger/debugger-contexts.md)
 - [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)
 - [Motor de depuración](../../extensibility/debugger/debug-engine.md)
 - [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

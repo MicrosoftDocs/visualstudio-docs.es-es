@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierEx2 | Microsoft Docs
+title: IDebugPortSupplierEx2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bebf232e17df54d4dae2392a40f2ccbc3fc711c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353311"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724323"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Proporciona compatibilidad para un proveedor de puerto seleccionar e interactuar con un servidor de núcleo.
+Proporciona compatibilidad para que un proveedor de puertos seleccione e interactúe con un servidor principal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -27,19 +27,19 @@ IDebugPortSupplierEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puerto personalizado implementa esta interfaz para que pueda seleccionar el servidor principal para usar.
+ Un proveedor de puertos personalizado implementa esta interfaz para que pueda seleccionar el servidor principal que se va a usar.
 
 ## <a name="methods"></a>Métodos
- La tabla siguiente muestran los métodos de **IDebugPortSupplierEx2**.
+ En la tabla siguiente se muestran los métodos de **IDebugPortSupplierEx2**.
 
 |Método|Descripción|
 |------------|-----------------|
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Establece el servidor principal para el proveedor del puerto.|
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Establece el servidor principal para el proveedor de puertos.|
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: Portpriv.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2::Detach ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311613"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723359"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Este método informa al proceso que una sesión ya no está depurando el proceso.
+Este método informa al proceso de que una sesión ya no está depurando el proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parámetros
 `pSession`\
-[in] Un valor que identifica de forma única la sesión para desasociar este proceso de.
+[en] Valor que identifica de forma única la sesión de la que se va a separar este proceso.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- La interfaz pasa `pSession` se tratarán solo como una cookie, un valor que identifica el Administrador de sesión de depuración que originalmente asociado a este proceso; ninguno de los métodos en la interfaz proporcionado son funcional.
+## <a name="remarks"></a>Observaciones
+ La interfaz `pSession` pasada debe tratarse solo como una cookie, un valor que identifica de forma única al administrador de depuración de sesión que se adjunta originalmente a este proceso; ninguno de los métodos de la interfaz suministrada son funcionales.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

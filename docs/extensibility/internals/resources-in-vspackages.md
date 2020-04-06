@@ -1,5 +1,5 @@
 ---
-title: Recursos en VSPackages | Microsoft Docs
+title: Recursos en VSPackages ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72724156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705599"
 ---
 # <a name="resources-in-vspackages"></a>Recursos de VSPackages
-Puede incrustar recursos localizados en archivos dll de la interfaz de usuario satélite nativa, archivos dll satélite administrados o en un VSPackage administrado.
+Puede incrustar recursos localizados en archivos DLL de interfaz de usuario satélite nativos, archivos DLL de satélite administrados o en un VSPackage administrado.
 
  Algunos recursos no se pueden incrustar en VSPackages. Se pueden incrustar los siguientes tipos administrados:
 
 - Cadenas
 
-- Claves de carga de paquetes (que también son cadenas)
+- Claves de carga de paquete (que también son cadenas)
 
 - Iconos de la ventana de herramientas
 
@@ -38,14 +38,14 @@ Puede incrustar recursos localizados en archivos dll de la interfaz de usuario s
 
 - Acerca de los datos del cuadro de diálogo
 
-  Los recursos de un paquete administrado se seleccionan por el ID. de recurso. Una excepción es el archivo CTO, que se debe denominar CTMENU. El archivo CTO debe aparecer en la tabla de recursos como `byte[]`. El resto de los elementos de recursos se identifican por tipo.
+  Los recursos de un paquete administrado se seleccionan por identificador de recurso. Una excepción es el archivo CTO, que debe llamarse CTMENU. El archivo CTO debe aparecer en `byte[]`la tabla de recursos como un archivo . Todos los demás elementos de recursos se identifican por tipo.
 
-  Puede usar el atributo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> para indicar a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que los recursos administrados están disponibles.
+  Puede usar <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> el atributo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para indicar que los recursos administrados están disponibles.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  La configuración de <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de este modo indica que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe omitir los archivos dll satélite no administrados al buscar recursos, por ejemplo, mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encuentra dos o más recursos que tienen el mismo identificador de recurso, utiliza el primer recurso que encuentra.
+  Establecer <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de esta manera [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indica que debe omitir los archivos DLL satélite no administrados cuando busca recursos, por ejemplo, mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encuentra dos o más recursos que tienen el mismo identificador de recurso, usa el primer recurso que encuentra.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente es una representación administrada de un icono de ventana de herramientas.
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- En el ejemplo siguiente se muestra cómo insertar la matriz de bytes CTO, que se debe denominar CTMENU.
+ En el ejemplo siguiente se muestra cómo incrustar la matriz de bytes CTO, que debe llamarse CTMENU.
 
 ```
 <data name="CTMENU"
@@ -81,7 +81,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Notas de implementación
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retrasa la carga de VSPackages siempre que sea posible. Una consecuencia de la inserción de un archivo CTO en un VSPackage es que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe cargar todos esos VSPackages en la memoria durante la instalación, que es cuando se genera una tabla de comandos combinada. Los recursos se pueden extraer de un VSPackage mediante el examen de los metadatos sin ejecutar código en el VSPackage. En este momento, el VSPackage no se ha inicializado, por lo que la pérdida de rendimiento es mínima.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]retrasa la carga de VSPackages siempre que sea posible. Una consecuencia de incrustar un archivo CTO [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en un VSPackage es que debe cargar todos estos VSPackages en memoria durante la instalación, que es cuando se compila una tabla de comandos combinada. Los recursos se pueden extraer de un VSPackage examinando los metadatos sin ejecutar código en el VSPackage. El VSPackage no se inicializa en este momento, por lo que la pérdida de rendimiento es mínima.
 
  Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicita un recurso de un VSPackage después de la instalación, es probable que ese paquete ya esté cargado e inicializado, por lo que la pérdida de rendimiento es mínima.
 
