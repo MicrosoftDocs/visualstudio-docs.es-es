@@ -14,15 +14,15 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 157d3bc451829b0c91772a66222b563cd07a5eaf
+  ms.sourcegitcommit: 20049ffecc08fdfae45406c26190de900357eef6
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74118943"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "80620638"
 productDirectory:
   items:
-  - title: Visual Studio
+  - title: Programa para la mejora
     imageSrc: ./media/vs-ide-2019.svg
     links:
     - url: /visualstudio/windows?view=vs-2019
@@ -55,7 +55,16 @@ productDirectory:
       text: Notas de la versión
     - url: https://code.visualstudio.com
       text: Página del producto
-  - title: Visual Studio App Center
+  - title: Visual Studio Online
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/online/
+      text: Documentación
+    - url: https://code.visualstudio.com/docs/remote/vsonline
+      text: Uso con Visual Studio Code
+    - url: https://visualstudio.microsoft.com/services/visual-studio-online/
+      text: Página del producto
+  - title: Centro de aplicaciones de Visual Studio
     imageSrc: ./media/vs-mobile-center.svg
     links:
     - url: https://docs.microsoft.com/appcenter
@@ -72,4 +81,4 @@ productDirectory:
     - url: https://my.visualstudio.com
       text: Portal
     - url: https://manage.visualstudio.com
-      text: Administración
+      text: bases de datos y colas
