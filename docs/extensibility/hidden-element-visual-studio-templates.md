@@ -1,5 +1,5 @@
 ---
-title: Oculta el elemento (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento oculto (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c00fa2c9aff8664c637219c59cb174f5a16e655
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711107"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (plantillas de Visual Studio)
 
-Especifica si la plantilla aparece en el el nuevo proyecto o **Agregar nuevo elemento** cuadros de diálogo.
+Especifica si la plantilla aparece en los cuadros de diálogo Nuevo proyecto o **Agregar nuevo elemento.**
 
 ```xml
 <VSTemplate>
@@ -59,17 +59,17 @@ Ninguno.
 
 Se requiere un valor de texto.
 
-El texto debe ser `true` o `false`, lo que indica si la plantilla aparecerá en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo.
+El texto debe `true` `false`ser o , que indica si la plantilla aparecerá o no en los cuadros de diálogo **Nuevo proyecto** o **Agregar nuevo elemento.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 `Hidden` es un elemento opcional.
 
-Si no se especifica ningún otro elemento secundario de la `TemplateData` elemento son necesarios.
+Si se especifica, no se `TemplateData` requiere ningún otro elemento secundario del elemento.
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra los metadatos de un C# plantilla.
+En el ejemplo siguiente se muestran los metadatos de una plantilla de C.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ El ejemplo siguiente muestra los metadatos de un C# plantilla.
 
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Extern (elemento) | Microsoft Docs
+title: Elemento Extern (Elemento externo) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342802"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711486"
 ---
-# <a name="extern-element"></a>Extern (elemento)
-El elemento externo hace referencia a cualquier encabezado externo ( *.h*) archivos para combinar con el *.vsct* archivo en tiempo de compilación. Los archivos que van a combinarse deben estar en la ruta de acceso de inclusión especificado para el compilador VSCT o al que hace referencia un [elemento Include](../extensibility/include-element.md). Es pueden que los archivos de otros *.vsct* archivos o archivos de encabezado de C++.
+# <a name="extern-element"></a>Elemento Externo
+El elemento Extern hace referencia a cualquier archivo de encabezado externo (*.h*) para combinar con el archivo *.vsct* en tiempo de compilación. Los archivos que se van a combinar deben estar en la ruta de acceso Include dada al compilador VSCT o a la que hace referencia un [elemento Include](../extensibility/include-element.md). Los archivos pueden ser otros archivos *.vsct* o archivos de encabezado C++.
 
- Las definiciones en archivos de encabezado deben tener el formato "#define [símbolo] [valor]" el valor puede ser otro símbolo, si se ha definido anteriormente. Las definiciones de pueden utilizarse en instrucciones condicionales de elementos de comando. Se descartará cualquier símbolo que no se utiliza realmente.
+ Las definiciones de los archivos de encabezado deben tener el formato "#define [Símbolo] [Valor]" El valor puede ser otro símbolo si está definido previamente. Las definiciones se pueden utilizar en instrucciones condicionales de elementos de comando. Cualquier símbolo que no se utilice realmente será descartado.
 
- Extern (elemento) CommandTable (elemento)
+ CommandTable Element Extern Element
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ El elemento externo hace referencia a cualquier encabezado externo ( *.h*) archi
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|lenguaje|Opcional. El idioma predeterminado de todos los [ \<cadenas >](../extensibility/strings-element.md) elementos en la tabla de comandos:<br /><br /> language="en-us"|
+|href|Necesario. La ruta de acceso al archivo de encabezado:<br /><br /> href"stdidcmd.h"|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|language|Opcional. El idioma predeterminado [ \<](../extensibility/strings-element.md) de todas las cadenas>elementos de la tabla de comandos:<br /><br /> "en-nosotros"|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,7 +54,7 @@ El elemento externo hace referencia a cualquier encabezado externo ( *.h*) archi
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos, es decir, los elementos de menú, menús, barras de herramientas y cuadros combinados, que proporciona un paquete VSPackage en el IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos (es decir, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al IDE.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -68,7 +68,7 @@ El elemento externo hace referencia a cualquier encabezado externo ( *.h*) archi
 </CommandTable>
 ```
 
-## <a name="see-also"></a>Vea también
-- [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Consulte también
+- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Cómo VSPackages agregan elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

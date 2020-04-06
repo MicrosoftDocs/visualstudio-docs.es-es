@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Documentos de Microsoft
+title: IDebugStackFrame2::GetDebugProperty ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c520482d78b8630c639088ca98d66782f2e2d75
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa98107ada265d232647d27b4050b507d4581df7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321818"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719787"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Obtiene una descripción de las propiedades de un marco de pila.
@@ -41,13 +41,13 @@ int GetDebugProperty ( 
 
 ## <a name="parameters"></a>Parámetros
 `ppDebugProp`\
-[out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que describe las propiedades de este marco de pila.
+[fuera] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que describe las propiedades de este marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Una llamada a la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método con los filtros adecuados puede recuperar las variables locales, parámetros de método, registros y puntero "this" asociada con el marco de pila.
+## <a name="remarks"></a>Observaciones
+ Llamar a la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método con los filtros adecuados puede recuperar las variables locales, parámetros de método, registros y "this" puntero asociado con el marco de pila.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

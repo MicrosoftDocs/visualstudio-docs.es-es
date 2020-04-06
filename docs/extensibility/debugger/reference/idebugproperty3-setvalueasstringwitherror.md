@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
+title: IDebugProperty3::SetValueAsStringWithError ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348814"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721065"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parámetros
 `pszValue`\
-[in] Valor que se va a establecer.
+[en] Valor que se va a establecer.
 
 `dwRadix`\
-[in] La base del valor que se va a establecer.
+[en] El radio del valor que se va a establecer.
 
 `dwTimeout`\
-[in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).
+[en] El tiempo que se debe esperar a`INFINITE` que se establezca el valor (significa esperar para siempre).
 
 `errorString`\
-[out] Si se produjo un error al establecer el valor, contiene el motivo del error.
+[fuera] Si se ha producido un error al establecer el valor, esto contiene el motivo del error.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-El valor de entrada podría ser una expresión que se va a evaluar.
+## <a name="remarks"></a>Observaciones
+El valor entrante podría ser una expresión que se va a evaluar.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CProperty** objeto que expone el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CProperty** objeto que expone el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

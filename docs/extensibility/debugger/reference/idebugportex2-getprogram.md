@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram | Microsoft Docs
+title: IDebugPortEx2::GetProgram ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 505823a6399cc605d8784a4dba88f2fa27ad6d72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f1f9dea8706b8075b460b813d2dc58a916198d37
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311196"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725090"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
-Obtiene el programa asociado con un nodo de programa.
+Obtiene el programa asociado a un nodo de programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,12 +42,12 @@ int GetProgram( 
 ```
 
 ## <a name="parameters"></a>Parámetros
-`pProgramNode` [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo del programa.
+`pProgramNode`[en] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo del programa.
 
-`ppProgram` [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa asociado con el nodo del programa.
+`ppProgram`[fuera] Devuelve un [iDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa asociado con el nodo de programa.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

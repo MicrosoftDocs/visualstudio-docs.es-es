@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Microsoft Docs
+title: IDebugReference2::GetMemoryBytes ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 100b04f8cd81ecbc470c85e76f08b45ed46d8de9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329880"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720599"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-Obtiene los bytes de memoria que contienen el valor de una referencia de físicamente. Reservado para un uso futuro.
+Obtiene los bytes de memoria que contienen físicamente el valor de una referencia. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parámetros
 `ppMemoryBytes`\
-[out] Devuelve un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que puede usarse para recuperar la memoria que contiene el valor de la referencia.
+[fuera] Devuelve un [iDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que se puede usar para recuperar la memoria que contiene el valor de la referencia.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

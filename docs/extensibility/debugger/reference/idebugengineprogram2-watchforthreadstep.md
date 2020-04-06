@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+title: IDebugEngineProgram2::WatchForThreadStep ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b3f8db95d6e74a2aa1d146bdd37a66803a8503f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730359"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Supervisa la ejecución (o se detiene la ejecución inspeccionando) que se produzca en el subproceso especificado.
+Busca la ejecución (o deja de observar la ejecución) para que se produzca en el subproceso dado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,24 +47,24 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>Parámetros
 `pOriginatingProgram`\
-[in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que se va a escalonado.
+[en] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que se está escalonando.
 
 `dwTid`\
-[in] Especifica el identificador del subproceso que se va a inspeccionar.
+[en] Especifica el identificador del subproceso que se va a ver.
 
 `fWatch`\
-[in] Distinto de cero (`TRUE`) significa que empiece a mirar para su ejecución en el subproceso identificado por `dwTid`; en caso contrario, cero (`FALSE`) significa Detener ejecución inspeccionando en `dwTid`.
+[en] Distinto de`TRUE`cero ( ) significa comenzar a `dwTid`observar la ejecución en el subproceso identificado por ; de lo`FALSE`contrario, cero ( ) `dwTid`significa dejar de mirar para la ejecución en .
 
 `dwFrame`\
-[in] Especifica un índice de fotograma que controla el tipo de paso. Cuando se trata de valor es cero (0), el tipo de paso es "step into" y debe detener el programa cada vez que el subproceso identificado por `dwTid` ejecuta. Cuando `dwFrame` es distinto de cero, el tipo de paso es "saltar" y debe detener el programa sólo si el subproceso identificado por `dwTid` se está ejecutando en un marco cuyo índice es igual o superior en la pila que `dwFrame`.
+[en] Especifica un índice de marco que controla el tipo de paso. Cuando este valor es cero (0), el tipo de paso es "paso `dwTid` a paso" y el programa debe detenerse cada vez que se ejecuta el subproceso identificado por. Cuando `dwFrame` es distinto de cero, el tipo de paso es "paso a `dwTid` paso" y el programa debe detenerse solo `dwFrame`si el subproceso identificado por se está ejecutando en un marco cuyo índice es igual o superior a la pila que .
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Cuando el Administrador de depuración de la sesión (SDM) los pasos de un programa, identificado por el `pOriginatingProgram` parámetro, notifica a todos los demás programas asociados mediante una llamada a este método.
+## <a name="remarks"></a>Observaciones
+ Cuando el administrador de depuración de sesión `pOriginatingProgram` (SDM) pasa un programa, identificado por el parámetro, notifica a todos los demás programas adjuntos llamando a este método.
 
- Este método solo es aplicable a ejecución paso a paso en el mismo subproceso.
+ Este método solo es aplicable al paso del mismo subproceso.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

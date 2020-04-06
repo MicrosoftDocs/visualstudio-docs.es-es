@@ -1,5 +1,5 @@
 ---
-title: Enumerador de código de estado de archivo | Microsoft Docs
+title: Enumerador de código de estado de archivo ( File Status Code Enumerator) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94bd9ff93872139fc056c4c8bb7a59191616919e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342690"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711453"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
-El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
+El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración la usan [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y la `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,41 +49,41 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Miembros
- No se pudo obtener el estado de SCC_STATUS_INVALID; No confíe en él.
+ SCC_STATUS_INVALID no se pudo obtener el estatus; no confíe en él.
 
- Archivo de SCC_STATUS_NOTCONTROLLED no está bajo control de código fuente.
+ SCC_STATUS_NOTCONTROLLED archivo no está bajo control de código fuente.
 
  SCC_STATUS_CONTROLLED archivo está bajo control de código fuente.
 
- SCC_STATUS_CHECKEDOUT activada por el usuario actual en el disco local.
+ SCC_STATUS_CHECKEDOUT Desprotegido por el usuario actual en el disco local.
 
- SCC_STATUS_OUTOTHER archivo está desprotegido por otro usuario.
+ SCC_STATUS_OUTOTHER archivo es desprotegido por otro usuario.
 
- Archivo SCC_STATUS_OUTEXCLUSIVE estaba desprotegido.
+ SCC_STATUS_OUTEXCLUSIVE archivo está desprotegido exclusivamente.
 
- SCC_STATUS_OUTMULTIPLE archivo está desprotegido por más de un usuario.
+ SCC_STATUS_OUTMULTIPLE archivo es desprotegido por más de un usuario.
 
- SCC_STATUS_OUTOFDATE el archivo no es la más reciente.
+ SCC_STATUS_OUTOFDATE El archivo no es el más reciente.
 
- Se eliminó el archivo SCC_STATUS_DELETED desde el proyecto.
+ SCC_STATUS_DELETED archivo se ha eliminado del proyecto.
 
- El archivo SCC_STATUS_LOCKED está bloqueado; No hay versiones más permitidas.
+ SCC_STATUS_LOCKED archivo está bloqueado; no se permiten más versiones.
 
- Archivo SCC_STATUS_MERGED se ha combinado pero todavía no se ha corregido y comprobado.
+ SCC_STATUS_MERGED archivo se ha fusionado pero aún no se ha corregido/verificado.
 
- Archivo SCC_STATUS_SHARED es compartido entre proyectos.
+ SCC_STATUS_SHARED archivo se comparte entre proyectos.
 
- Archivo SCC_STATUS_PINNED se comparte en una versión explícita.
+ SCC_STATUS_PINNED archivo se comparte con una versión explícita.
 
- Archivo SCC_STATUS_MODIFIED ha sido modificado, interrumpido o infringido.
+ SCC_STATUS_MODIFIED archivo se ha modificado/roto/violado.
 
- SCC_STATUS_OUTBYUSER archivo está desprotegido por el usuario actual.
+ SCC_STATUS_OUTBYUSER usuario actual desprotege SCC_STATUS_OUTBYUSER archivo.
 
- Archivo SCC_STATUS_NOMERGE nunca se pueden mezclar con y no deben guardarse antes de una operación GET.
+ SCC_STATUS_NOMERGE archivo nunca se puede combinar con y no es necesario guardar antes de un GET.
 
- SCC_STATUS_RESERVED_1 reservado para uso interno.
+ SCC_STATUS_RESERVED_1 Reservado para uso interno.
 
- SCC_STATUS_RESERVED_2 reservado para uso interno.
+ SCC_STATUS_RESERVED_2 Reservado para uso interno.
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

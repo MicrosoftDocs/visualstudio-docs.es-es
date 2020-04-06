@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
+title: IDebugEngine3::SetJustMyCodeState ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f53b0eb95a2a91f34917b05cadffda2f4aa9a8b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322324"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730673"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Este método indica al motor de depuración sobre la información de estado de JustMyCode.
+Este método indica al motor de depuración acerca de la información de estado JustMyCode.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,19 +45,19 @@ int SetJustMyCodeState(
 
 ## <a name="parameters"></a>Parámetros
 `fUpdate`\
-[in] Distinto de cero (`TRUE`) para actualizar la información actual, cero (`FALSE`) para restablecer toda la información (se omite todo lo establecido anteriormente).
+[en] Distinto de`TRUE`cero ( ) para`FALSE`actualizar la información actual, cero ( ) para restablecer toda la información (ignorando cualquier cosa previamente establecida).
 
 `dwModules`\
-[in] Número de estructuras de información en `rgJMCSpec.`
+[en] Número de estructuras de información en`rgJMCSpec.`
 
 `rgJMCSpec`\
-[in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) las estructuras deben utilizar.
+[en] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) estructuras que se va a utilizar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Comentarios
- JustMyCode es el concepto de depuración solo el código que pertenece a un usuario y se omite todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
+## <a name="remarks"></a>Observaciones
+ JustMyCode es el concepto de depurar solo el código que pertenece a un usuario e ignorar todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

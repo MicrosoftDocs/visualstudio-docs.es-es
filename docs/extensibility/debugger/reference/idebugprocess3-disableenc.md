@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::DisableENC | Microsoft Docs
+title: IDebugProcess3::DisableENC ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314059"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723735"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Este método explícitamente deshabilita Editar y continuar en este proceso (y todos los programas contiene). Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
+Este método deshabilita explícitamente Editar y continuar en este proceso (y todos los programas que contiene). Un proveedor de puerto `E_NOTIMPL`personalizado siempre debe devolver .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>Parámetros
 `reason`\
-[in] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.
+[en] Un valor de la [enumeración EncUnavailableReason.](../../../extensibility/debugger/reference/encunavailablereason.md)
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
 
 > [!NOTE]
-> Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
+> Un proveedor de puerto `E_NOTIMPL`personalizado siempre debe devolver .
 
-## <a name="remarks"></a>Comentarios
- Una vez que editar y continuar está deshabilitado para un proceso, puede volver a habilitar reiniciando el proceso.
+## <a name="remarks"></a>Observaciones
+ Una vez que Editar y continuar está deshabilitado para un proceso, solo se puede volver a habilitar reiniciando el proceso.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach | Microsoft Docs
+title: IDebugProcess2::Detach ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Detach
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3948ecce15b9b2b2e8b3bf974ecc2277d9fa0360
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353196"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724126"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-Desasocia al depurador de este proceso separando todos los programas en el proceso.
+Separa el depurador de este proceso desasociando todos los programas del proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Todos los programas y el proceso de seguir ejecutándose, pero ya no forman parte de la sesión de depuración. Después de la operación de desasociación es depuración completa, no se enviarán eventos para este proceso (y sus programas).
+## <a name="remarks"></a>Observaciones
+ Todos los programas y el proceso continúan ejecutándose, pero ya no forman parte de la sesión de depuración. Una vez completada la operación de desasociación, no se enviarán más eventos de depuración para este proceso (y sus programas).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

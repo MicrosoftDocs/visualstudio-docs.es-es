@@ -1,49 +1,49 @@
 ---
-title: Detectar los requisitos del sistema | Microsoft Docs
+title: Detección de los requisitos del sistema ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9ab254df5d53f379704128d8860b8d7fe5655bae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351643"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708732"
 ---
 # <a name="detect-system-requirements"></a>Detectar los requisitos del sistema
-Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.
+Un VSPackage no puede funcionar a menos que Visual Studio está instalado. Cuando se usa Microsoft Windows Installer para administrar la instalación de SU VSPackage, puede configurar el instalador para detectar si Visual Studio está instalado. También puede configurarlo para comprobar si el sistema tiene otros requisitos, por ejemplo, una versión determinada de Windows o una cantidad determinada de RAM.
 
-## <a name="detect-visual-studio-editions"></a>Detectar las ediciones de Visual Studio
- Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la **instalar** clave del registro es *(REG_DWORD) 1* en la carpeta adecuada, como se menciona en la tabla siguiente. Tenga en cuenta que hay una jerarquía de las ediciones de Visual Studio:
+## <a name="detect-visual-studio-editions"></a>Detectar ediciones de Visual Studio
+ Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la clave del Registro **Instalar** es *(REG_DWORD) 1* en la carpeta adecuada, como se muestra en la tabla siguiente. Tenga en cuenta que hay una jerarquía de ediciones de Visual Studio:
 
-1. Empresa
+1. Enterprise
 
 2. Profesional
 
-3. comunidad
+3. Comunidad
 
-Cuando se instala una edición más reciente, las claves del registro para esa edición se agregan, así como para las ediciones anteriores. Es decir, si se instala la edición Enterprise, el **instalar** clave se establece en *1* para la empresa, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición más reciente que necesita.
+Cuando se instala una edición más reciente, se agregan las claves del registro para esa edición, así como para ediciones anteriores. Es decir, si se instala la edición Enterprise, la clave **De instalación** se establece en *1* para Enterprise, así como para las ediciones Professional y Community. Por lo tanto, solo debe comprobar la edición más reciente que necesita.
 
 > [!NOTE]
-> En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Las claves de Visual Studio están bajo **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
+> En la versión de 64 bits del editor del Registro, las claves de 32 bits se muestran en **HKEY_LOCAL_MACHINE.\\** Las claves de Visual Studio se encuentran bajo **HKEY_LOCAL_MACHINE, SOFTWARE,\\Wow6432Node, Microsoft, DevDiv, vs, Servicio**.
 
-|Producto|Key|
+|Producto|Clave|
 |-------------|---------|
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|
-|Visual Studio 2015 Shell (integrado y aislado)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE,SOFTWARE, Microsoft, DevDiv, vs, servicio, 14,0, empresa|
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE,SOFTWARE, Microsoft, DevDiv, vs, Servicio, 14,0, profesional|
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE,SOFTWARE, Microsoft, DevDiv, vs, servicio, 14,0, comunidad|
+|Shell de Visual Studio 2015 (integrado y aislado)|HKEY_LOCAL_MACHINE,SOFTWARE, Microsoft, DevDiv, vs, servicio, 14,0, isoshell|
 
-## <a name="detect-when-visual-studio-is-running"></a>Detectar cuándo se está ejecutando Visual Studio
- No se puede registrar el VSPackage correctamente si se ejecuta Visual Studio cuando se instala el paquete VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, rechace la instalación del programa. Windows Installer no permite usar entradas de la tabla para habilitar la detección de este tipo. En su lugar, debe crear una acción personalizada, como sigue: Use la `EnumProcesses` función para detectar el *devenv.exe* procesar y, a continuación, establezca una propiedad de instalador que se usa en una condición de inicio o mostrar condicionalmente un cuadro de diálogo que pide al usuario que cierre Visual Studio.
+## <a name="detect-when-visual-studio-is-running"></a>Detectar cuando Visual Studio se está ejecutando
+ El VSPackage no se puede registrar correctamente si Visual Studio se está ejecutando cuando se instala el VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, se niega a instalar el programa. Windows Installer no permite usar entradas de tabla para habilitar dicha detección. En su lugar, debe crear una acción `EnumProcesses` personalizada, como se indica a continuación: use la función para detectar el proceso *devenv.exe* y, a continuación, establezca una propiedad de instalador que se use en una condición de inicio o muestre condicionalmente un cuadro de diálogo que solicite al usuario que cierre Visual Studio.
 
 ## <a name="see-also"></a>Vea también
 - [Instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

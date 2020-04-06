@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Microsoft Docs
+title: IDebugBinder3::GetEEService ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3afc38551dc04e7fc7f6d55df81c5b7248127acd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327134"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735826"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Este método devuelve un servicio solicitado.
@@ -47,22 +47,22 @@ Int GetEEService(
 
 ## <a name="parameters"></a>Parámetros
 `vendor`\
-[in] `GUID` de un proveedor (un valor null es aceptable).
+[en] `GUID` de un proveedor (un valor nulo es aceptable).
 
 `language`\
-[in] `GUID` de un idioma (un valor null es aceptable).
+[en] `GUID` de un idioma (un valor nulo es aceptable).
 
 `iid`\
-[in] `IID` del servicio que se va a obtener.
+[en] `IID` del servicio a obtener.
 
 `ppService`\
-[out] Interfaz para el servicio solicitado.
+[fuera] Una interfaz para el servicio solicitado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Pase el `IID` para el [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaz (`IID_IEEVisualizerServiceProvider`) para ver si el servicio de tipo visualizador está disponible. Si es así, puede obtener el evaluador de expresiones el [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaz para admitir los visualizadores de tipo. Consulte [visualización y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información.
+## <a name="remarks"></a>Observaciones
+ Pase `IID` el para el [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaz (`IID_IEEVisualizerServiceProvider`) para ver si el servicio visualizador de tipos está disponible. Si es así, el evaluador de expresiones puede obtener la interfaz [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) para admitir visualizadores de tipos. Consulte [Visualización y visualización](../../../extensibility/debugger/visualizing-and-viewing-data.md) de datos para obtener más información.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
