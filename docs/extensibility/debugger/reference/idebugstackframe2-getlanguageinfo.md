@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: IDebugStackFrame2::GetLanguageInfo ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719702"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Parámetros
 
 `pbstrLanguage`\
-[out] Devuelve el nombre del lenguaje que implementa el método asociado a este marco de pila.
+[fuera] Devuelve el nombre del lenguaje que implementa el método asociado a este marco de pila.
 
 `pguidLanguage`\
-[out] Devuelve el `GUID` del lenguaje. Para el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] idiomas, por ejemplo, la siguiente puede devolver:
+[fuera] Devuelve `GUID` el idioma. Para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] los idiomas, por ejemplo, se puede devolver lo siguiente:
 
 - `guidVBScriptLang`\
 
@@ -64,7 +64,7 @@ int GetLanguageInfo ( 
 
 ## <a name="return-value"></a>Valor devuelto
 
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 

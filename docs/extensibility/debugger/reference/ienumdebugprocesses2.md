@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2 | Microsoft Docs
+title: IEnumDebugProcesses2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b32d2469c42931fa3dead4c5078e7d5b44b5d60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715758"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Esta interfaz enumera los procesos que se ejecutan en un puerto de depuración.
@@ -29,29 +29,29 @@ IEnumDebugProcesses : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puerto personalizado implementa esta interfaz para proporcionar una lista de procesos que se ejecutan en un puerto.
+ Un proveedor de puertos personalizado implementa esta interfaz para proporcionar una lista de procesos que se ejecutan en un puerto.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Llamadas visuales Studio [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) para obtener esta interfaz.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Visual Studio llama a [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) para obtener esta interfaz.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IEnumDebugProcesses2`.
+ En la tabla siguiente `IEnumDebugProcesses2`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
 |[Siguiente](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Recupera un número especificado de procesos en una secuencia de enumeración.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Omite un número especificado de procesos en una secuencia de enumeración.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Restablece una secuencia de enumeración al principio.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtiene el número de procesos en un enumerador.|
+|[Restablecer](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Restablece una secuencia de enumeración al principio.|
+|[Clonar](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtiene el número de procesos de un enumerador.|
 
-## <a name="remarks"></a>Comentarios
- Visual Studio usa esta interfaz para rellenar el **procesos** ventana.
+## <a name="remarks"></a>Observaciones
+ Visual Studio usa esta interfaz para rellenar la ventana **Procesos.**
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

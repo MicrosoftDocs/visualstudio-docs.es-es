@@ -1,39 +1,39 @@
 ---
-title: Introducción a VSPackages de Control de código fuente | Microsoft Docs
+title: Introducción a los VSPackages de Control de código fuente ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
 - getting started, source control packages
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c729ca3e985b2904c9a1a577065865354796112
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328928"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708325"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>Introducción a VSPackages de control de código fuente
+# <a name="get-started-with-source-control-vspackages"></a>Introducción al control de código fuente VSPackages
 
-Un VSPackage de control de código fuente es una alternativa más avanzada para el complemento de control de código fuente. Para obtener más información acerca de los complementos de control de código fuente, consulte [crear un control de código fuente complemento](../../extensibility/internals/creating-a-source-control-plug-in.md). Un VSPackage de control de código fuente permite un control completo sobre el modelo de control de código fuente, las características y la interfaz de usuario (UI) y se integra en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno como un paquete VSPackage.
+Un VSPackage de control de código fuente es una alternativa más avanzada al complemento de control de código fuente. Para obtener más información acerca de los complementos de control de código fuente, vea [Crear un complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)de control de código fuente . Un control de código fuente VSPackage permite un control completo sobre el modelo de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] control de código fuente, características e interfaz de usuario (UI) y se integra en el entorno como un VSPackage.
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Determinar si se debe implementar un VSPackage de control de código fuente](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[Determinar si se debe implementar un control de código fuente VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-Explica las opciones para soluciones de control de código fuente y proporciona directrices generales para elegir una ruta de acceso de integración adecuados.
+Explica las opciones de las soluciones de control de código fuente y proporciona directrices generales para elegir una ruta de integración adecuada.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-- [Novedades en control de código fuente](../../extensibility/internals/what-s-new-in-source-control.md)
+- [Novedades del control de código fuente](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   Describe nuevas características de uso de VSPackages con control de código fuente.
+   Describe nuevas características mediante VSPackages con control de código fuente.
 
-- [Crear un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Crear un control de código fuente VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   Describe cómo crear un control de código fuente VSPackage que no solo proporciona la funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario de control de código fuente.
+   Describe cómo crear un control de código fuente VSPackage que no solo proporciona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funcionalidad de control de código fuente, pero se puede usar para personalizar la interfaz de usuario del control de código fuente.

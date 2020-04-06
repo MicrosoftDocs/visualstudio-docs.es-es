@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
+title: IDebugSymbolProvider::GetAddressesFromContext ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff38d2bd286c0a1ff82aafc3526936447be69056
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335219"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719432"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Este método asigna un contexto de documento en una matriz de direcciones de depuración.
@@ -47,24 +47,24 @@ int GetAddressesFromContext(
 
 ## <a name="parameters"></a>Parámetros
 `pDocContext`\
-[in] El contexto del documento.
+[en] El contexto del documento.
 
 `fStatmentOnly`\
-[in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.
+[en] Si es TRUE, limita las direcciones de depuración a una sola instrucción.
 
 `ppEnumBegAddresses`\
-[out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.
+[fuera] Devuelve un enumerador para las direcciones de depuración iniciales asociadas a esta instrucción o línea.
 
 `ppEnumEndAddresses`\
-[out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.
+[fuera] Devuelve un [enumerador IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) para las direcciones de depuración final asociadas a esta instrucción o línea.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Un contexto de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten que las instrucciones que abarcan varias líneas, o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración para una sola instrucción.
+## <a name="remarks"></a>Observaciones
+ Un contexto de documento normalmente indica un rango de líneas de origen. Este método proporciona las direcciones de depuración inicial y final asociadas a estas líneas. Algunos lenguajes permiten instrucciones que abarcan varias líneas o líneas que contienen más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración a una sola instrucción.
 
- Es posible que una sola instrucción tener varias direcciones de depuración, como en el caso de plantillas.
+ Es posible que una sola instrucción tenga varias direcciones de depuración, como en el caso de las plantillas.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

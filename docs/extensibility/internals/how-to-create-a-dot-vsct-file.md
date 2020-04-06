@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a5a5f53ec87c9447af232e9d0528108ddbaea01a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301576"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708109"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: Crear un archivo .vsct
 
@@ -148,7 +148,7 @@ Puede crear un archivo *.vsct* basado en XML a partir de un archivo *.cto* binar
 
      El primer valor del parámetro `ResourceName` debe coincidir con el valor del atributo definido en el archivo de proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Crear archivos .vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Archivos de tabla de comandos de Visual Studio (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia de esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)

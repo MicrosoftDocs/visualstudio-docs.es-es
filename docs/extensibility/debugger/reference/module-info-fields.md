@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft Docs
+title: MODULE_INFO_FIELDS de la casa de la inser Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311377"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714328"
 ---
-# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Especifica las marcas de la información de depuración del módulo.
+# <a name="module_info_fields"></a>MODULE_INFO_FIELDS
+Especifica los indicadores para la información del módulo de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,57 +64,57 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `MIF_NONE`\
- Inicializar o usar ninguno de los campos de la estructura.
+ Inicializar/utilizar ninguno de los campos de la estructura.
 
  `MIF_NAME`\
- Inicializar o usar el `m_bstrName` campo el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura.
+ Inicializar/utilizar `m_bstrName` el campo de la estructura [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
  `MIF_URL`\
- Inicializar o usar el `m_bstrUrl` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_bstrUrl` el campo `MODULE_INFO` de la estructura.
 
  `MIF_VERSION`\
- Inicializar o usar el `m_bstrVersion` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_bstrVersion` el campo `MODULE_INFO` de la estructura.
 
  `MIF_DEBUGMESSAGE`\
- Inicializar o usar el `m_bstrDebugMessage` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_bstrDebugMessage` el campo `MODULE_INFO` de la estructura.
 
  `MIF_LOADADDRESS`\
- Inicializar o usar el `m_addrLoadAddress` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_addrLoadAddress` el campo `MODULE_INFO` de la estructura.
 
  `MIF_PREFFEREDADDRESS`\
- Inicializar o usar el `m_addrPreferredLoadAddress` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_addrPreferredLoadAddress` el campo `MODULE_INFO` de la estructura.
 
  `MIF_SIZE`\
- Inicializar o usar el `m_dwSize` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_dwSize` el campo `MODULE_INFO` de la estructura.
 
  `MIF_LOADORDER`\
- Inicializar o usar el `m_dwLoadOrder` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_dwLoadOrder` el campo `MODULE_INFO` de la estructura.
 
  `MIF_TIMESTAMP`\
- Inicializar o usar el `m_TimeStamp` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_TimeStamp` el campo `MODULE_INFO` de la estructura.
 
  `MIF_URLSYMBOLLOCATION`\
- Inicializar o usar el `m_bstrUrlSymbolLocation` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_bstrUrlSymbolLocation` el campo `MODULE_INFO` de la estructura.
 
  `MIF_FLAGS`\
- Inicializar o usar el `m_dwModuleFlags` campo el `MODULE_INFO` estructura.
+ Inicializar/utilizar `m_dwModuleFlags` el campo `MODULE_INFO` de la estructura.
 
  `MIF_ALLFIELDS`\
- Inicializar o usar todos los campos en el `MODULE_INFO` estructura.
+ Inicializar/utilizar todos los campos `MODULE_INFO` de la estructura.
 
-## <a name="remarks"></a>Comentarios
- Estos valores se pasan como argumento a la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método para indicar qué campos de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura deben inicializarse.
+## <a name="remarks"></a>Observaciones
+ Estos valores se pasan como argumento al método [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar qué campos de la estructura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) se van a inicializar.
 
- Estos valores también se usan en el `MODULE_INFO` estructura para indicar qué campos se usan y válido.
+ Estos valores también se `MODULE_INFO` utilizan en la estructura para indicar qué campos se utilizan y son válidos.
 
- Estas marcas se pueden combinar con un bit a bit `OR`.
+ Estas banderas se pueden `OR`combinar con un bit a bit .
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

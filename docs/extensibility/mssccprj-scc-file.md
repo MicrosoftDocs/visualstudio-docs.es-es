@@ -1,77 +1,77 @@
 ---
-title: MSSCCPRJ.SCC File | Microsoft Docs
+title: MSSCCPRJ. Archivo SCC (SCC File) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 983c6aa0a418ec87d521852bd4b0d781c5c90cfa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344021"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702464"
 ---
-# <a name="mssccprjscc-file"></a>MSSCCPRJ. Archivo de control de código fuente
-Cuando se coloca una solución de Visual Studio o proyecto bajo control de código fuente mediante el IDE, el IDE recibe dos piezas clave de la información. La información procede el complemento en forma de cadenas de control de código fuente. Estas cadenas, "AuxPath" y "Nombre_proyecto", son opacas para el IDE, pero se usan por el complemento para buscar la solución o proyecto bajo control de versiones. El IDE normalmente obtiene estas cadenas de la primera vez mediante una llamada a la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), y, a continuación, guarda en el archivo de solución o proyecto para las futuras llamadas a la [SccOpenProject](../extensibility/sccopenproject-function.md). Cuando se insertan en los archivos de solución y proyecto, las cadenas "AuxPath" y "Nombre_proyecto" no se actualizan automáticamente cuando un usuario, ramas, las bifurcaciones, o copia los archivos de solución y proyecto que se encuentran en el control de versiones. Para asegurarse de que los archivos de solución y proyecto señalan a su ubicación correcta en el control de versiones, los usuarios deben actualizar manualmente las cadenas. Dado que las cadenas están diseñadas para ser opaca, no siempre puede claro cómo debe actualizarse.
+# <a name="mssccprjscc-file"></a>MSSCCPRJ. Archivo SCC
+Al colocar una solución o proyecto de Visual Studio bajo control de código fuente mediante el IDE, el IDE recibe dos elementos clave de información. La información procede del complemento de control de código fuente en forma de cadenas. Estas cadenas, "AuxPath" y "ProjName", son opacas para el IDE, pero el complemento las usa para buscar la solución o el proyecto en el control de versiones. Normalmente, el IDE obtiene estas cadenas la primera vez llamando a [SccGetProjPath](../extensibility/sccgetprojpath-function.md)y, a continuación, las guarda en el archivo de solución o proyecto para futuras llamadas a [SccOpenProject](../extensibility/sccopenproject-function.md). Cuando se incrustan en los archivos de solución y proyecto, las cadenas "AuxPath" y "ProjName" no se actualizan automáticamente cuando un usuario bifurca, bifurca o copia archivos de solución y proyecto que están en control de versiones. Para asegurarse de que la solución y los archivos de proyecto apuntan a su ubicación correcta en el control de versiones, los usuarios deben actualizar manualmente las cadenas. Dado que las cadenas están diseñadas para ser opacas, es posible que no siempre esté claro cómo se deben actualizar.
 
- El complemento de control de código fuente puede evitar este problema almacenando las cadenas "AuxPath" y "Nombre_proyecto" en un archivo especial denominado el *MSSCCPRJ.SCC* archivo. Es un archivo local del cliente que posee y mantiene el complemento. Este archivo nunca se coloca bajo control de código fuente, pero se genera mediante el complemento para todos los directorios que contiene los archivos controlados por código fuente. Para determinar qué archivos son archivos de solución y proyecto de Visual Studio, un complemento de control de código fuente puede comparar las extensiones de archivo con una lista estándar o proporcionado por el usuario. Una vez que el IDE detecta que un complemento admite el *MSSCCPRJ.SCC* archivo, deja de incrustar las cadenas "AuxPath" y "Nombre_proyecto" en los archivos de solución y proyecto, y lee las cadenas a partir de la *MSSCCPRJ.SCC*de archivos en su lugar.
+ El complemento de control de código fuente puede evitar este problema almacenando las cadenas "AuxPath" y "ProjName" en un archivo especial denominado archivo *MSSCCPRJ.SCC.* Es un archivo local del lado cliente que es propiedad y es mantenido por el plug-in. Este archivo nunca se coloca bajo control de código fuente, pero lo genera el complemento para cada directorio que contiene archivos controlados por código fuente. Para determinar qué archivos son archivos de solución y proyecto de Visual Studio, un complemento de control de código fuente puede comparar las extensiones de archivo con una lista estándar o proporcionada por el usuario. Una vez que el IDE detecta que un complemento es compatible con el archivo *MSSCCPRJ.SCC,* deja de incrustar las cadenas "AuxPath" y "ProjName" en los archivos de solución y proyecto, y lee esas cadenas del archivo *MSSCCPRJ.SCC* en su lugar.
 
- Un complemento de control de código fuente que admita la *MSSCCPRJ.SCC* archivo debe cumplir las siguientes directrices:
+ Un complemento de control de código fuente que admita el archivo *MSSCCPRJ.SCC* debe cumplir las siguientes directrices:
 
-- Solo puede haber un *MSSCCPRJ.SCC* archivos por directorio.
+- Solo puede haber un archivo *MSSCCPRJ.SCC* por directorio.
 
-- Un *MSSCCPRJ.SCC* archivo puede contener la "AuxPath" y "Nombre_proyecto" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.
+- Un archivo *MSSCCPRJ.SCC* puede contener "AuxPath" y "ProjName" para varios archivos que están bajo control de código fuente dentro de un directorio determinado.
 
-- La cadena "AuxPath" no debe tener comillas dentro de él. Se le permite tener comillas como delimitadores (por ejemplo, un par de comillas dobles puede utilizarse para indicar una cadena vacía). El IDE eliminará todas las ofertas de la cadena "AuxPath" cuando se lee desde el *MSSCCPRJ.SCC* archivo.
+- La cadena "AuxPath" no debe tener comillas dentro de ella. Se permite tener comillas a su alrededor como delimitadores (por ejemplo, se puede utilizar un par de comillas dobles para indicar una cadena vacía). El IDE quitará todas las comillas de la cadena "AuxPath" cuando se lea desde el archivo *MSSCCPRJ.SCC.*
 
-- Cadena de la "Nombre_proyecto" en el *MSSCCPRJ. Archivo de SCC* deben coincidir exactamente con la cadena devuelta desde el `SccGetProjPath` función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el *MSSCCPRJ.SCC* archivo debe tener comillas alrededor de ella y viceversa.
+- La cadena "ProjName" en *MSSCCPRJ. El archivo SCC* debe coincidir `SccGetProjPath` exactamente con la cadena devuelta por la función. Si la cadena devuelta por la función tiene comillas alrededor de ella, la cadena en el archivo *MSSCCPRJ.SCC* debe tener comillas alrededor de ella, y viceversa.
 
-- Un *MSSCCPRJ.SCC* archivo se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.
+- Un archivo *MSSCCPRJ.SCC* se crea o actualiza cada vez que se coloca un archivo bajo control de código fuente.
 
-- Si un *MSSCCPRJ.SCC* se elimina el archivo, un proveedor debe regenerar la próxima vez que realiza una operación de control de código fuente relativos a ese directorio.
+- Si se elimina un archivo *MSSCCPRJ.SCC,* un proveedor debe regenerarlo la próxima vez que realice una operación de control de código fuente relacionada con ese directorio.
 
-- Un *MSSCCPRJ.SCC* archivo estrictamente debe seguir el formato definido.
+- Un archivo *MSSCCPRJ.SCC* debe seguir estrictamente el formato definido.
 
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Ver una ilustración de la MSSCCPRJ. Formato de archivo de control de código fuente
- Siguiente es un ejemplo de la *MSSCCPRJ.SCC* formato de archivo (los números de línea solo se proporcionan como guía y no deben incluirse en el cuerpo del archivo):
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Una ilustración del MSSCCPRJ. Formato de archivo SCC
+ A continuación se muestra una muestra del formato de archivo *MSSCCPRJ.SCC* (los números de línea solo se proporcionan como guía y no deben incluirse en el cuerpo del archivo):
 
-- [Línea 1] `SCC = This is a Source Code Control file`
+- [Línea 1]`SCC = This is a Source Code Control file`
 
 - [Línea 2]
 
-- [Línea 3] `[TestApp.sln]`
+- [Línea 3]`[TestApp.sln]`
 
-- [Línea 4] `SCC_Aux_Path = "\\server\vss\"`
+- [Línea 4]`SCC_Aux_Path = "\\server\vss\"`
 
-- [Línea 5] `SCC_Project_Name = "$/TestApp"`
+- [Línea 5]`SCC_Project_Name = "$/TestApp"`
 
-- [La línea 6]
+- [Línea 6]
 
-- [Línea 7] `[TestApp.csproj]`
+- [Línea 7]`[TestApp.csproj]`
 
-- [Línea 8] `SCC_Aux_Path = "\\server\vss\"`
+- [Línea 8]`SCC_Aux_Path = "\\server\vss\"`
 
-- [Línea 9] `SCC_Project_Name = "$/TestApp"`
+- [Línea 9]`SCC_Project_Name = "$/TestApp"`
 
- La primera línea indica el propósito del archivo y actúa como la firma para todos los archivos de este tipo. Esta línea debe aparecer exactamente igual en todos los *MSSCCPRJ.SCC* archivos:
+ La primera línea indica el propósito del archivo y sirve como firma para todos los archivos de este tipo. Esta línea debe aparecer exactamente así en todos los archivos *MSSCCPRJ.SCC:*
 
  `SCC = This is a Source Code Control file`
 
- La siguiente sección describe la configuración de cada archivo, marcados con el nombre de archivo incluido entre corchetes. En esta sección se repite para cada archivo que se está realizando un seguimiento. Esta línea es un ejemplo de un nombre de archivo, es decir, `[TestApp.csproj]`. El IDE se espera que las dos líneas siguientes. Sin embargo, no es así, definir el estilo de los valores definidos. Las variables son `SCC_Aux_Path` y `SCC_Project_Name`.
+ En la siguiente sección se detalla la configuración de cada archivo, marcada por el nombre de archivo entre corchetes. Esta sección se repite para cada archivo que se realiza el seguimiento. Esta línea es un ejemplo de un `[TestApp.csproj]`nombre de archivo, a saber, . El IDE espera las dos líneas siguientes. Sin embargo, no define el estilo de los valores definidos. Las variables `SCC_Aux_Path` `SCC_Project_Name`son y .
 
  `SCC_Aux_Path = "\\server\vss\"`
 
  `SCC_Project_Name = "$/TestApp"`
 
- No hay ningún delimitador de fin a esta sección. El nombre de archivo, así como todos los literales que aparecen en el archivo, se definen en el archivo de encabezado scc.h. Para obtener más información, consulte [cadenas utilizadas como claves para buscar un control de código fuente complemento](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
+ No hay delimitador final en esta sección. El nombre del archivo, así como todos los literales que aparecen en el archivo, se definen en el archivo de encabezado scc.h. Para obtener más información, consulte [Cadenas utilizadas como claves para buscar un complemento](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)de control de código fuente .
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
-- [Cadenas utilizadas como claves para buscar un control de código fuente complemento](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+- [Cadenas utilizadas como claves para encontrar un complemento de control de código fuente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

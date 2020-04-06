@@ -1,5 +1,5 @@
 ---
-title: TemplateContent (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Elemento TemplateContent (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160001"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699232"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent (Elemento, Plantillas de Visual Studio)
 
@@ -46,29 +46,29 @@ Jerarquía de elementos:
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Especifica si se debe compilar la solución cuando se crea un proyecto de la plantilla.|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Especifica si se va a compilar la solución cuando se crea un proyecto a partir de la plantilla.|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica la organización y el contenido de las plantillas de varios proyectos.|
-|[Proyecto](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica los archivos o directorios que se agregarán al proyecto.|
-|[Referencias](../extensibility/references-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica las referencias de ensamblado necesarias para una plantilla de elemento.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento opcional.<br /><br /> Especifica un archivo de la plantilla.|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica los parámetros personalizados que se utilizan cuando se crea un proyecto o elemento de la plantilla.|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica los archivos o directorios que se van a agregar al proyecto.|
+|[Referencias](../extensibility/references-element-visual-studio-templates.md).|Elemento opcional.<br /><br /> Especifica las referencias de ensamblado necesarias para una plantilla de elemento.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento opcional.<br /><br /> Especifica un archivo contenido en la plantilla.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica los parámetros personalizados que se van a utilizar cuando se crea un proyecto o elemento a partir de la plantilla.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el kit de inicio.|
 
-## <a name="remarks"></a>Comentarios
- `TemplateContent` es un elemento requerido.
+## <a name="remarks"></a>Observaciones
+ `TemplateContent`es un elemento requerido.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.
+ En el ejemplo siguiente se muestran [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] los metadatos de una plantilla de proyecto para una aplicación.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

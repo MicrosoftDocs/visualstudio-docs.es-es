@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetState | Microsoft Docs
+title: IDebugPendingBreakpoint2::GetState ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetState method
 - IDebugPendingBreakpoint2::GetState method
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84ee5c48a74fa9ed707cc55be3cbc1ab49940552
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ad65ff6fcebb18ac1b8852c08195e9a8b062749
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347774"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725755"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 Obtiene el estado del punto de interrupción pendiente.
@@ -42,10 +42,10 @@ int GetState( 
 
 ## <a name="parameters"></a>Parámetros
 `pState`\
-[in, out] Un [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura que se rellena con una descripción de este pendiente de punto de interrupción.
+[adentro, fuera] Una [estructura PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) que se rellena con una descripción de este punto de interrupción pendiente.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

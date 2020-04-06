@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: IDebugExpressionEvaluator2::SetCallback ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729335"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permite que el evaluador de expresiones (EE) especificar la interfaz de devolución de llamada que el motor de depuración (DE) va a usar para leer los valores de métrica.
+Permite que el evaluador de expresiones (EE) especifique la interfaz de devolución de llamada que utilizará el motor del depurador (DE) para leer la configuración de métricas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Parámetros
 `pCallback`\
-[in] Interfaz que se utiliza para la devolución de llamada de configuración.
+[en] Interfaz que se usará para la devolución de llamada de configuración.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-Este método proporciona una interfaz al administrador de sesión de depuración que un evaluador de expresiones puede usar para leer los valores de métrica. Resulta útil para la depuración remota para leer las métricas en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] equipo.
+## <a name="remarks"></a>Observaciones
+Este método proporciona una interfaz al administrador de depuración de sesión que un evaluador de expresiones puede usar para leer la configuración de métricas. Es útil en la depuración remota [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] para leer métricas en el equipo.
 
 ## <a name="example"></a>Ejemplo
-Los ejemplos siguientes se muestra cómo implementar este método para un **CEE** objeto que expone el [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaz.
+En los ejemplos siguientes se muestra cómo implementar este método para un objeto **CEE** que expone el [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaz.
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

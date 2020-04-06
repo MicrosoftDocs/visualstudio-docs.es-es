@@ -1,5 +1,5 @@
 ---
-title: Diseñador de manifiestos VSIX | Microsoft Docs
+title: Diseñador de manifiestos de VSIX (VSIX Manifest Designer) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,96 +9,96 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697890"
 ---
 # <a name="vsix-manifest-designer"></a>Diseñador de manifiestos de VSIX
-Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamiento de instalación para una extensión de Visual Studio.
+Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamiento de instalación de una extensión de Visual Studio.
 
- El **el Diseñador de manifiestos VSIX** asigna al esquema VSIX subyacente. Cada elemento en el esquema puede establecerse mediante el uso de un control correspondiente en el diseñador. Para obtener más información acerca del esquema, vea [VSIX extensión de esquema 2.0 referencia](../extensibility/vsix-extension-schema-2-0-reference.md).
+ El Diseñador de **manifiestos VSIX** se asigna al esquema VSIX subyacente. Cada elemento del esquema se puede establecer mediante un control correspondiente en el diseñador. Para obtener más información sobre el esquema, vea Referencia del esquema de [extensión 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)de VSIX .
 
- Para abrir el **el Diseñador de manifiestos VSIX**, busque un *source.extension.vsixmanifest* archivo **el Explorador de soluciones**y abra el archivo. Si el archivo no contiene XML válido, no se abrirá el Diseñador de manifiestos.
+ Para abrir el Diseñador de **manifiestos VSIX**, busque un archivo *source.extension.vsixmanifest* en el **Explorador**de soluciones y abra el archivo. Si el archivo no contiene XML válido, el diseñador de manifiestos no se abrirá.
 
 > [!NOTE]
-> El *source.extension.vsixmanifest* se enviaran resultado a archivo *extension.vsixmanifest* cuando se compila el paquete.
+> El archivo *source.extension.vsixmanifest* se envía a *extension.vsixmanifest* cuando se compila el paquete.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- El **el Diseñador de manifiestos VSIX** contiene cuatro secciones que corresponden a estos elementos de nivel superior del esquema:
+ El Diseñador de **manifiestos VSIX** contiene cuatro secciones que corresponden a estos elementos de nivel superior del esquema:
 
 - Metadatos
 
-- Destinos de instalación
+- Objetivos de instalación
 
-- Activos
+- Recursos
 
 - Dependencias
 
   El área de encabezado contiene los siguientes controles.
 
-  **Nombre de producto** describe el nombre de extensión.
+  **Nombre del producto** Describe el nombre de la extensión.
 
-  **Id. de producto** especifica la información de identificación único para este paquete.
+  **ID de producto** Especifica la información de identificación única para este paquete.
 
-  **Autor** especifica el nombre del autor de la extensión.
+  **Autor** Especifica el nombre del autor de la extensión.
 
-  **Versión** especifica el número de versión de la extensión.
+  **Versión** Especifica el número de versión de la extensión.
 
-  El **metadatos** pestaña contiene los siguientes controles.
+  La pestaña **Metadatos** contiene los siguientes controles.
 
-  **Descripción** proporciona una descripción de la extensión, que se mostrará en **Administrador de extensiones**.
+  **Descripción** Proporciona una descripción de texto de la extensión, que se mostrará en **el Administrador de extensiones**.
 
-  **Lenguaje** especifica el idioma predeterminado para el paquete, que corresponde a los datos de texto en el manifiesto. El `Language` atributo sigue la convención de código de configuración regional de common language runtime (CLR) para los ensamblados de recursos, por ejemplo, en-us, en, fr-fr. De forma predeterminada, el valor es neutro, lo que significa que el paquete se ejecutará en cualquier versión de idioma de Visual Studio.
+  **Idioma** Especifica el idioma predeterminado del paquete, que corresponde a los datos textuales del manifiesto. El `Language` atributo sigue la convención de código de configuración regional de Common Language Runtime (CLR) para ensamblados de recursos, por ejemplo, en-us, en, fr-fr. De forma predeterminada, el valor es neutro, lo que significa que el paquete se ejecutará en cualquier versión de idioma de Visual Studio.
 
-  **Licencia** especifica el archivo de texto que contiene la licencia de usuario, si hay alguno.
+  **Licencia** Especifica el archivo de texto que contiene la licencia de usuario, si hay una.
 
-  **Icono** especifica el archivo de gráficos ( *.png*, *.bmp*, *.jpeg*, *.ico*) que contiene el icono que se mostrará en **Administrador de extensiones**, si hay un icono. La imagen del icono debe ser 32 x 32 píxeles o se cambia el tamaño a dichas dimensiones. Si no se especifica ningún icono, **Administrador de extensiones** utiliza un icono predeterminado.
+  **Icono** Especifica el archivo de gráficos (*.png*, *.bmp*, *.jpeg*, *.ico*) que contiene el icono que se mostrará en el Administrador de **extensiones**, si hay un icono presente. La imagen del icono debe ser de 32 x 32 píxeles o se cambia el tamaño a esas dimensiones. Si no se especifica ningún icono, **Extension Manager** utiliza un icono predeterminado.
 
-  **Imagen de vista previa** especifica el archivo de gráficos ( *.png*, *.bmp*, *.jpeg*, *.ico*) que contiene la imagen de vista previa se mostrará en **Administrador de extensiones**, si hay una imagen de vista previa. La imagen de vista previa debe ser 200 x 200 píxeles. Si no se especifica ninguna imagen de vista previa, **Administrador de extensiones** usa una imagen predeterminada.
+  **Vista previa de la imagen** Especifica el archivo de gráficos (*.png*, *.bmp*, *.jpeg*, *.ico*) que contiene la imagen de vista previa que se mostrará en el Administrador de **extensiones**, si hay una imagen de vista previa presente. La imagen de vista previa debe tener 200 x 200 píxeles. Si no se especifica ninguna imagen de vista previa, **Extension Manager** utiliza una imagen predeterminada.
 
-  **Etiquetas** agrega etiquetas de texto que se usará para las sugerencias de búsqueda.
+  **Etiquetas** Añade etiquetas de texto que se utilizarán para las sugerencias de búsqueda.
 
-  **Notas de la versión** especifica un archivo ( *.txt*, *.rtf*) que contiene las notas de versión. También utiliza la dirección URL de un sitio web que muestra las notas de la versión.
+  **Notas de la versión** Especifica un archivo (*.txt*, *.rtf*) que contiene notas de la versión. También utiliza la dirección URL de un sitio web que muestra las notas de la versión.
 
-  **Guía de introducción** especifica un archivo ( *.txt*, *.rtf*) que contiene información sobre cómo usar la extensión o el contenido del paquete VSIX. Esta guía aparece una vez completada la instalación de la extensión. También toma la dirección URL de un sitio Web que muestra a la guía.
+  **Guía de introducción** Especifica un archivo (*.txt*, *.rtf*) que contiene información sobre cómo utilizar la extensión o el contenido del paquete VSIX. Esta guía aparece cuando se completa la instalación de la extensión. También toma la dirección URL de un sitio web que muestra la guía.
 
-  **URL de información adicional** especifica la dirección URL de un sitio Web que contiene información adicional sobre el producto.
+  **Más URL de información** Especifica la dirección URL de un sitio web que contiene información adicional sobre el producto.
 
-  El **destinos de instalación** pestaña contiene los siguientes controles.
+  La pestaña **Destinos de instalación** contiene los siguientes controles.
 
-  **Tipo de instalación** enumera **extensión de Visual Studio** y **SDK de extensión** como tipos de instalación de destino. Las opciones varían según el tipo que elija.
+  **Tipo de instalación** Enumera el SDK de extensión y **extensión de** **Visual Studio** como tipos de instalación de destino. Las opciones varían en función del tipo que elija.
 
-  **Extensión de Visual Studio** enumera el **InstallationTarget** elementos que describen cómo se puede instalar el paquete y en qué productos de Visual Studio se puede instalar esta extensión. Nombre y una versión o intervalo identifica cada producto por separado. Productos pueden agregados a la lista, puede modificar y eliminar. El nombre y la versión de un producto corresponden a la **Id** y **versión** atributos del asociado **InstallationTarget** elemento.
+  **Extensión de Visual Studio** Enumera los elementos **InstallationTarget** que describen cómo se puede instalar el paquete y en qué productos de Visual Studio se puede instalar esta extensión. Cada producto se identifica por separado por nombre y una versión o rango de versiones. Los productos se pueden agregar a la lista, modificar y eliminar. El nombre y la versión de un producto corresponden a los atributos **Id** y **Version** del elemento **InstallationTarget** asociado.
 
-  **Intervalo de versiones** es [12.0, 14,0] y utiliza la notación siguiente:
+  El rango de **versiones** es [12.0, 14.0] y utiliza la siguiente notación:
 
-- [-inclusivo mínimo
+- [ - versión mínima incluida
 
-- ]-versión máximo inclusivo
+- ] - versión máxima incluida
 
-- (-exclusivo de versión mínima
+- ( - versión mínima exclusiva
 
-- )-exclusivo de versión máxima
+- ) - versión máxima exclusiva
 
-- Versión única # - solo la versión especificada
+- Versión única - sólo la versión especificada
 
-  **SDK de extensión** especifica una instalación global que no se limitan a un producto específico y una versión. **Identificador de la plataforma de destino** es la plataforma, como "Windows", que tiene como destino. **Versión de la plataforma de destino** es la versión, como 8.0, la plataforma de destino. **Nombre del SDK** y **SDK versión** son el nombre y el número de versión del SDK, respectivamente.
+  **SDK de extensión** Especifica una instalación global que no tiene el ámbito de un producto y una versión específicos. **Identificador** de plataforma de destino es la plataforma, como "Windows", a la que se dirige. **La versión** de plataforma de destino es la versión, como 8.0, de la plataforma de destino. **SDK Name** y **SDK Version** son el nombre y el número de versión del SDK, respectivamente.
 
-  **Este VSIX está instalado para todos los usuarios (requiere elevación en la instalación)** si selecciona esta casilla, la extensión se instala para todos los usuarios; de lo contrario, se instala solo para el usuario actual.
+  **Este VSIX se instala para todos los usuarios (requiere elevación en** la instalación) Si selecciona esta casilla de verificación, la extensión se instala para todos los usuarios; de lo contrario, se instala sólo para el usuario actual.
 
-  **Este VSIX está instalado por Windows Installer** si selecciona esta casilla, la extensión se instala mediante el instalador de Windows ( *.msi* archivo); en caso contrario, se instala como un paquete VSIX típico ( *.vsix*  archivo).
+  **Este VSIX es instalado por Windows Installer** Si selecciona esta casilla de verificación, la extensión la instala Windows Installer ( archivo *.msi);* de lo contrario, se instala como un paquete VSIX típico (archivo *.vsix).*
 
-  El **activos** pestaña contiene los siguientes controles.
+  La pestaña **Activos** contiene los siguientes controles.
 
-  **Lista de activos** se enumeran los elementos de recurso que se describen los elementos de extensión o contenido que este paquete superficies. Cada extensión o un elemento de contenido se muestra por separado por origen, el tipo y la ruta de acceso. Extensiones y el contenido de los elementos se pueden agrega a la lista, modificar y eliminar. El tipo y la ruta de acceso de un elemento de extensión o contenido corresponde a la `Type` y `Path` atributos del asociado `Asset` elemento. Se conocen los tipos siguientes:
+  **Lista de activos** Enumera los elementos Asset que describen los elementos de extensión o contenido que expone este paquete. Cada extensión o elemento de contenido se enumera por separado por origen, tipo y ruta de acceso. Las extensiones y los elementos de contenido se pueden agregar a la lista, modificar y eliminar. El tipo y la ruta de acceso `Type` de `Path` una extensión `Asset` o elemento de contenido corresponde a los atributos y del elemento asociado. Se conocen los siguientes tipos:
 
 - Microsoft.VisualStudio.Package
 
@@ -116,18 +116,18 @@ Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamien
 
 - Microsoft.ExtensionSDK
 
-  Para agregar o editar un recurso, debe especificar el tipo de recurso, si el recurso es un proyecto de la solución actual o un archivo en el sistema de archivos y el nombre del proyecto. También puede especificar el nombre de la carpeta en la que se va a insertarse.
+  Para agregar o editar un activo, debe especificar el tipo de activo, si el activo es un proyecto de la solución actual o un archivo en el sistema de archivos y el nombre del proyecto. También puede especificar el nombre de la carpeta en la que se va a incrustar.
 
-  También puede crear sus propios tipos y asígneles los nombres únicos.
+  También puede crear sus propios tipos y darles nombres únicos.
 
-  El **dependencias** pestaña contiene los siguientes controles.
+  La pestaña **Dependencias** contiene los siguientes controles.
 
-  **Nombre, el origen y el intervalo de versiones** se enumeran los elementos de dependencia de este paquete, que son otros paquetes que dependa de este paquete. Si se especifica un paquete de dependencias, debe instalarse antes de instalar este paquete; en caso contrario, este paquete debe instalarlo.
+  **Nombre, Origen y Rango de versiones** Enumera los elementos Dependency de este paquete, que son otros paquetes de los que depende este paquete. Si se especifica un paquete de dependencia, debe instalarse antes de instalar este paquete; de lo contrario, este paquete debe instalarlo.
 
-  Paquetes de dependencia se especifican mediante el identificador, nombre, intervalo de versiones, origen y cómo se puede resolver la dependencia. Cada paquete de dependencias se muestra por separado por nombre, versión y origen. Paquetes de dependencia se pueden agregar a la lista, modificados y eliminados.
+  Los paquetes de dependencia se especifican mediante identificador, nombre, intervalo de versiones, origen y cómo se va a resolver la dependencia. Cada paquete de dependencia se enumera por separado por nombre, versión y origen. Los paquetes de dependencia se pueden agregar a la lista, modificar y eliminar.
 
-  El identificador debe coincidir con el `ID` atributo de los metadatos del paquete de dependencia. El origen puede ser un proyecto en la solución actual, una extensión instalada actualmente o un archivo. El **cómo es la dependencia se resolvió** valor puede ser la ruta de acceso relativa de un paquete anidado o la dirección URL de la ubicación de descarga de la dependencia. El identificador, la versión y la resolución del paquete de dependencia se corresponden con los `Id`, `Version`, y `Location` atributos del asociado `Dependency` elemento.
+  El identificador debe `ID` coincidir con el atributo de los metadatos del paquete de dependencia. El origen puede ser un proyecto en la solución actual, una extensión instalada actualmente o un archivo. La configuración **Cómo se resuelve por dependencia** puede ser la ruta de acceso relativa de un paquete anidado o la dirección URL de la ubicación de descarga de la dependencia. El identificador, la versión y la resolución `Id` `Version`del `Location` paquete de `Dependency` dependencia scorresponden a los atributos , , y del elemento asociado.
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)
+- [Referencia del esquema de extensión VSIX 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)

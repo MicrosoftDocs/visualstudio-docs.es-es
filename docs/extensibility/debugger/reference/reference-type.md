@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE | Microsoft Docs
+title: REFERENCE_TYPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c45457566682e373b879892cfdd26707102ebd5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329283"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713657"
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
+# <a name="reference_type"></a>REFERENCE_TYPE
 Especifica el tipo de referencia.
 
 ## <a name="syntax"></a>Sintaxis
@@ -42,22 +42,22 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `REF_TYPE_WEAK`\
- Especifica una referencia débil. No se puede combinar con `REF_TYPE_STRONG`.
+ Especifica una referencia débil. No se `REF_TYPE_STRONG`puede combinar con .
 
  `REF_TYPE_STRONG`\
- Especifica una referencia segura. No se puede combinar con `REF_TYPE_WEAK`.
+ Especifica una referencia segura. No se `REF_TYPE_WEAK`puede combinar con .
 
-## <a name="remarks"></a>Comentarios
- Usar como el `dwRefType` miembro de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura.
+## <a name="remarks"></a>Observaciones
+ Se utiliza `dwRefType` como miembro de la estructura [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
 
- Pasado como parámetro a la [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) método.
+ Se pasa como parámetro al método [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

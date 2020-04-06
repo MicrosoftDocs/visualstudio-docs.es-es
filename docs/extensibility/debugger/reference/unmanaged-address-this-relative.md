@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
+title: UNMANAGED_ADDRESS_THIS_RELATIVE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316102"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713254"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-Esta estructura representa una dirección que es relativa a un `this` puntero (`Me` en Visual Basic).
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+Esta estructura representa una dirección relativa `this` a`Me` un puntero ( en Visual Basic).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>Miembros
  `dwOffset`\
- Desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).
+ Desplazamiento de bytes desde una posición base (por ejemplo, inicio de una tabla vtable de clase).
 
  `dwBitOffset`\
- Desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).
+ Desplazamiento en bits desde una posición base (siempre 0 a menos que se refiera a un campo de bits).
 
  `dwBitLength`\
- Número de bits que representa la dirección (siempre es 0, a menos que se hace referencia a un campo de bits).
+ Número de bits que representan la dirección (siempre 0 a menos que se refiera a un campo de bits).
 
-## <a name="remarks"></a>Comentarios
- Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).
+## <a name="remarks"></a>Observaciones
+ Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando se establece el `dwKind` campo de la estructura en (un valor de la [enumeración ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: sh.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

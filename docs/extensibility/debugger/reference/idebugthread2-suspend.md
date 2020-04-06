@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft Docs
+title: IDebugThread2::Suspender ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320007"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718643"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Suspende un subproceso.
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Parámetros
 `pdwSuspendCount`\
-[out] Devuelve el recuento de suspensión después de la operación de suspensión.
+[fuera] Devuelve el recuento de suspensión después de la operación de suspensión.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Cada llamada a este método aumenta el recuento de suspensión superior a 0. Este recuento de suspensión se muestra en el **subprocesos** ventana de depuración.
+## <a name="remarks"></a>Observaciones
+ Cada llamada a este método incrementa el recuento de suspendes por encima de 0. Este recuento de suspensión se muestra en la ventana de depuración **de subprocesos.**
 
- Para cada llamada a este método, debe haber una llamada posterior a la [reanudar](../../../extensibility/debugger/reference/idebugthread2-resume.md) método.
+ Para cada llamada a este método, debe haber una llamada posterior a la [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) método.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Reanudación](../../../extensibility/debugger/reference/idebugthread2-resume.md)

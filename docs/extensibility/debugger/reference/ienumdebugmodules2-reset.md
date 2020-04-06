@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Reset | Microsoft Docs
+title: IEnumDebugModules2::Reset ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Reset
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b969b03c955368415d2e5911eb46731d133abad3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 81fc33620449837f3d2af883f0721d24df92e804
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350325"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716516"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 Restablece la enumeración al primer elemento.
@@ -38,10 +38,10 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Después de llamar a este método, la siguiente llamada a la [siguiente](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) método devuelve el primer elemento de la enumeración.
+## <a name="remarks"></a>Observaciones
+ Después de llamar a este método, la siguiente llamada a la [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) método devuelve el primer elemento de la enumeración.
 
 ## <a name="see-also"></a>Vea también
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
