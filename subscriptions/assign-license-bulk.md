@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988488"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274068"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -104,6 +104,10 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 7. Para ver el grupo agregado, desplácese a la parte inferior de la lista de usuarios.  
 
 8. Seleccione **Ver suscriptores** para mostrar los miembros del grupo. Puede ver los detalles de los suscriptores del grupo, pero no puede hacer modificaciones en los suscriptores ni en las suscripciones a las que están asignados.    
+
+> [!NOTE]
+> Si ya se han asignado las suscripciones individualmente a los usuarios que se agregan posteriormente como parte de un grupo de Azure AD, se agregarán como parte del grupo y ya no se mostrarán individualmente. Sin embargo, si la suscripción individual es para un nivel de suscripción distinto, tendrá dos suscripciones.  Ejemplo:  si un usuario tiene una suscripción individual de Visual Studio Professional y es miembro de un grupo al que se asignan suscripciones de Visual Studio Enterprise, este usuario tendrá ambas.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

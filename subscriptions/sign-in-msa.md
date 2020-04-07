@@ -3,15 +3,16 @@ title: Inicio de sesión en Suscripciones de Visual Studio con la cuenta Microso
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Cómo iniciar sesión en la instancia de Visual Studio Subscription con la cuenta Microsoft (MSA)
-ms.openlocfilehash: 49a20e5c34d81e7b5437ff48e749e322c6c57828
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508737"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233220"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta Microsoft (MSA)
 
@@ -48,4 +49,4 @@ Si sigue teniendo problemas, puede ponerse en contacto con el equipo de [soporte
 - [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
-Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.  
+Tras haber iniciado sesión correctamente en el portal de suscripciones, recomendamos visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, servicios y ofertas disponibles.  

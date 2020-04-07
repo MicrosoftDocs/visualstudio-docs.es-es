@@ -1,17 +1,18 @@
 ---
 title: Identidades de los suscriptores de Visual Studio
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Cómo agregar una identidad alternativa a la suscripción de Visual Studio para usar Azure DevOps y Azure
-ms.openlocfilehash: e19774f2314280b2e5a995a7d83336f1403682a4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ff5166da3cb782c0750b0ce61fdafec375811ff4
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "72816557"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232011"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 Cuando activa una suscripción de Visual Studio, vinculamos la identidad (o inicio de sesión) que ha usado durante la activación con la suscripción de Visual Studio. De esta manera, podremos reconocerle en el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), en Azure DevOps y en Azure.
@@ -46,7 +47,7 @@ La cuenta alternativa se agrega a la suscripción de Visual Studio, lo que permi
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>P: ¿Por qué Azure DevOps no me reconoce como suscriptor de Visual Studio?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>P:  ¿Por qué Azure DevOps no me reconoce como suscriptor de Visual Studio?
 
 R: Azure DevOps debería reconocer la suscripción automáticamente cuando inicie sesión con su identidad principal o alternativa. Si no es así, puede probar a hacer lo siguiente:
 
@@ -57,3 +58,15 @@ R: Azure DevOps debería reconocer la suscripción automáticamente cuando inici
 * Vaya al [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) al menos una vez antes de iniciar sesión en Azure DevOps.
 
 Si Azure DevOps sigue sin reconocer la suscripción, póngase en contacto con el [soporte técnico de Azure DevOps](https://azure.microsoft.com/support/devops/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Pasos siguientes 
+Para obtener más información sobre el uso de Azure, Azure DevOps o el IDE de Visual Studio, consulte estos recursos:
+- [Azure](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio](vs-ide-benefit.md)

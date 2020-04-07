@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950697"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472669"
 ---
 # <a name="container-tools-build-properties"></a>Propiedades de compilación de las herramientas de contenedor
 
@@ -41,7 +41,7 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 | DockerImageLabels | El conjunto predeterminado de etiquetas aplicadas a la imagen de Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 o más reciente|
 | DockerFastModeProjectMountDirectory|En el **modo rápido**, esta propiedad controla dónde se monta el volumen del directorio de salida del proyecto en el contenedor en ejecución.|C:\app (Windows) o /app (Linux)|1.9.2 o más reciente|
 | DockerfileBuildArguments | Los argumentos adicionales pasados al comando de compilación de Docker. | No es aplicable. |1.0.1872750 o más reciente|
-| DockerfileContext | El contexto predeterminado que se usa al compilar la imagen de Docker. | Establecido por Visual Studio. |1.0.1872750 o más reciente|
+| DockerfileContext | Contexto predeterminado que se usa al compilar la imagen de Docker, como una ruta de acceso relativa a Dockerfile. | Establecido por Visual Studio. |1.0.1872750 o más reciente|
 | DockerfileFastModeStage | La fase de Dockerfile (es decir, el destino) que se va a usar al compilar la imagen en modo de depuración. | Primera fase encontrada en el archivo Dockerfile (base) |
 | DockerfileFile | Describe el archivo Dockerfile predeterminado que se usará para compilar o ejecutar el contenedor del proyecto. También puede ser una ruta de acceso. | Dockerfile |1.0.1872750 o más reciente|
 | DockerfileRunArguments | Los argumentos adicionales pasados al comando de ejecución de Docker. | No es aplicable. |1.0.1872750 o más reciente|

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888651"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79549929"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desarrollar código de JavaScript y TypeScript en Visual Studio sin proyectos ni soluciones
 
@@ -27,7 +27,7 @@ A partir de Visual Studio 2017, se puede [desarrollar código sin proyectos ni
 Para empezar, haga clic en **Archivo** > **Abrir** > **Carpeta** en la barra de herramientas. El Explorador de soluciones muestra todos los archivos de la carpeta; puede abrir cualquiera de ellos para comenzar a editar. En segundo plano, Visual Studio indexa los archivos para habilitar las características de npm, compilación y depuración.
 
 > [!IMPORTANT]
-> Muchas de las características descritas en este artículo, incluida la integración de npm, requieren Visual Studio 2017 versión 15.8 o versiones posteriores.
+> Muchas de las características descritas en este artículo, incluida la integración de npm, requieren Visual Studio 2017 versión 15.8 o versiones posteriores. Debe estar instalada la carga de trabajo **Desarrollo de Node.js** de Visual Studio.
 
 ## <a name="npm-integration"></a>Integración con npm
 

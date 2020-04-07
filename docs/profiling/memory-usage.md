@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75929230"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256197"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -33,7 +33,7 @@ También puede usar la herramienta de memoria fuera del depurador. Vea [Memory U
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
-En este tutorial, aprenderá lo siguiente:
+En este tutorial va a:
 
 > [!div class="checklist"]
 > * Tomar instantáneas de la memoria
@@ -67,7 +67,7 @@ En este tutorial, aprenderá lo siguiente:
      >
      >  ![Habilitación de las instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  Detenga la depuración (tecla de método abreviado: **Mayús**+**F5**) y reiníciela.
+     >  Detenga (tecla de método abreviado: **Mayús**+**F5**) y reinicie la depuración.
 
 6. Para tomar una instantánea al comienzo de la sesión de depuración, elija **Instantánea** en la barra de herramientas reducida **Uso de memoria**. (Puede ser útil para establecer un punto de interrupción aquí también.)
 
@@ -104,7 +104,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 - Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio a la izquierda de la flecha (![Aumento del uso de memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento del uso de memoria")). Una flecha roja indica un aumento en el uso de memoria, mientras que una flecha verde indica una disminución.
 
 > [!TIP]
-> Para ayudar a identificar problemas de memoria más rápidamente, los informes de diferencias se ordenan por tipos de objeto que más aumentaron en número total (haga clic en el vínculo de cambio en la columna **Objetos (dif.)**) o que más aumentaron en el tamaño total del montón (haga clic en el vínculo de cambio en la columna **Tamaño de montón (dif.)**).
+> Para ayudar a identificar problemas de memoria más rápidamente, los informes de diferencias se ordenan por tipos de objeto que más aumentaron en número total (haga clic en el vínculo de cambio en la columna **Objetos (dif.)** ) o que más aumentaron en el tamaño total del montón (haga clic en el vínculo de cambio en la columna **Tamaño de montón (dif.)** ).
 
 - Para ver los detalles únicamente de la instantánea seleccionada, haga clic en el vínculo de no cambio.
 
@@ -117,7 +117,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
  El panel superior muestra el número y el tamaño de los tipos en la instantánea, incluido el tamaño de todos los objetos a los que hace referencia el tipo (**Tamaño inclusivo**).
 
- El árbol **Rutas de acceso al nodo raíz** en el panel inferior muestra los objetos que hacen referencia al tipo seleccionado en el panel superior. El recolector de elementos no utilizados de .NET Framework limpia la memoria de un objeto solo cuando se libera el último tipo que hace referencia a él.
+ El árbol **Rutas de acceso al nodo raíz** en el panel inferior muestra los objetos que hacen referencia al tipo seleccionado en el panel superior. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si el último tipo que hace referencia a este se ha liberado.
 
  El árbol **Objetos a los que se hace referencia** muestra las referencias que se incluyen en el tipo seleccionado en el panel superior.
 
@@ -156,7 +156,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
    ![Elección de una instantánea en la lista Comparar con](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
-El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:
+El informe de cambios agrega columnas (marcadas con **(Dif.)** ) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:
 
 ![Vista de diferencias de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
@@ -164,7 +164,7 @@ El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base,
 
 [Analyze CPU and Memory While Debugging](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/) (Análisis de la CPU y la memoria durante la depuración)
 
-[Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015)
+[Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
