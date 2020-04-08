@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 03/17/2020
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: 'Suscripciones de Visual Studio: ¿por qué aparecen direcciones de Hotmail o Gmail para mis suscriptores?'
-ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: e926caa8aef5a655b1f09ab8d6dbab1d70946827
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550334"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808345"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Suscripciones de Visual Studio: ¿por qué mis suscriptores tienen cuentas personales?
 A medida que las empresas se migran del Centro de servicios de licencias por volumen (VLSC) al nuevo [Portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, los administradores pueden sorprenderse de ver que la "dirección de correo electrónico de inicio de sesión" de algunos suscriptores es una dirección de correo electrónico personal, como Hotmail o Outlook.  Para obtener más información, consulte [este vídeo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
@@ -28,6 +28,9 @@ Durante el proceso de activación del suscriptor: Se requería una cuenta Micros
 > La experiencia moderna de suscriptor en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) admite los tipos de identidad profesional/educativa y de cuenta Microsoft (MSA).
 
 ## <a name="solution"></a>Soluciones
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
+
 Para corregir el problema, simplemente seleccione el botón **Connect Emails** (Conectar correos electrónicos) y el sistema intentará correlacionar las cuentas de Microsoft y los usuarios existentes de la instancia de Azure Active Directory (Azure AD) de la organización en función del nombre y el apellido. Si se produce un error en una asociación, puede hacer clic en la **X** situada a la derecha de la asociación para quitarla.  
 
 > [!div class="mx-imgBorder"]

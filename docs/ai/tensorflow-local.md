@@ -2,20 +2,21 @@
 title: Entrenar un modelo de TensorFlow localmente
 description: Ejecutar un modelo de TensorFlow localmente en herramientas de IA para Visual Studio
 keywords: ia, visual studio, tensorflow, local
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72777430"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638740"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Entrenar un modelo de TensorFlow localmente
 

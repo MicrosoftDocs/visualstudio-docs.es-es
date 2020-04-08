@@ -7,16 +7,18 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Aprenda cómo empezar a administrar las suscripciones de Visual Studio de su organización con el Portal de administración de suscripciones.
-ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233163"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808359"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Introducción al portal del administrador de suscripciones de Visual Studio
 
 En el portal de administración de suscripciones de Visual Studio encontrará las herramientas necesarias para administrar las suscripciones de su organización desde un mismo sitio. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>Consideraciones importantes
 Tenga en cuenta estas consideraciones al usar el portal de administración de suscripciones de Visual Studio:
