@@ -1,7 +1,7 @@
 ---
 title: Análisis del uso de CPU | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553626"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638833"
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
 Una buena forma de comenzar a investigar los problemas de rendimiento de la aplicación es entender el uso de CPU. La herramienta de rendimiento **Uso de CPU** muestra el tiempo de CPU y porcentaje dedicado a ejecutar código en las aplicaciones de C++, C#, Visual Basic y JavaScript.
 
-La herramienta **Uso de CPU** puede ejecutarse en un proyecto de Visual Studio abierto, en una aplicación instalada de Microsoft Store, o conectarse a una aplicación o un proceso en ejecución. Puede ejecutar la herramienta en equipos locales o remotos, o en un simulador o emulador. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+La herramienta **Uso de CPU** puede ejecutarse en un proyecto de Visual Studio abierto, en una aplicación instalada de Microsoft Store, o conectarse a una aplicación o un proceso en ejecución. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Puede ejecutar la herramienta **Uso de CPU** con o sin depuración. En el depurador, puede activar y desactivar la generación de perfiles de CPU, y ver un desglose por función del uso de CPU. Puede ver los resultados del uso de CPU cuando se pausa la ejecución, por ejemplo en un punto de interrupción.
 
@@ -33,7 +33,7 @@ Por lo general, el equipo local replica mejor la ejecución de aplicaciones inst
 
 ## <a name="collect-cpu-usage-data"></a>Recopilar datos de Uso de CPU
 
-1. En el proyecto de Visual Studio, establezca la configuración de soluciones en **Versión** y elija **Equipo local** como el destino de implementación.
+1. En el proyecto de Visual Studio, establezca la configuración de la solución en **Versión** y seleccione **Depurador local de Windows** (o **Equipo local**) como el destino de implementación.
 
     ![Selección de Versión y Máquina local](../profiling/media/cpuuse_selectreleaselocalmachine.png "Selección de Versión y Máquina local")
 

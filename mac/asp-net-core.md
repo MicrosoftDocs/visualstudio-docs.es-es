@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cfe7e7f852530c32efbbaec2fbc92060fadeb40e
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75404995"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543898"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
- Visual Studio para Mac facilita el desarrollo del servicio de su aplicación gracias a su compatibilidad con la plataforma de desarrollo web de ASP.NET Core más reciente. ASP.NET Core se ejecuta en .NET Core, la evolución más reciente de .NET Framework y el tiempo de ejecución. Se ha ajustado para ofrecer un rendimiento rápido, se ha factorizado para admitir tamaños de instalación pequeños y se ha reinventado para ejecutarse en Linux y macOS, además de Windows.
+ Visual Studio para Mac facilita el desarrollo del servicio de la aplicación gracias a su compatibilidad con la plataforma de desarrollo web ASP.NET Core más reciente. ASP.NET Core se ejecuta en .NET Core, la evolución más reciente de .NET Framework y el tiempo de ejecución. Se ha ajustado para ofrecer un rendimiento rápido, se ha factorizado para admitir tamaños de instalación pequeños y se ha reinventado para ejecutarse en Linux y macOS, además de Windows.
 
 ## <a name="installing-net-core"></a>Instalación de .NET Core
 
@@ -236,7 +236,7 @@ Complete todos los pasos correctamente para asegurarse de que .NET Core se inst
 
 En esta guía, se le ha proporcionado una introducción a ASP.NET Core. Describe qué es, cuándo se usa y cómo se usa en Visual Studio para Mac.
 Para obtener más información sobre los pasos siguientes, vea las guías que se indican a continuación:
-- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc).
+- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1).
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Crear servicios back-end para aplicaciones móviles nativas), donde se muestra cómo compilar un servicio REST mediante ASP.NET Core para una aplicación de Xamarin.Forms.
 - [Laboratorio práctico de ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 

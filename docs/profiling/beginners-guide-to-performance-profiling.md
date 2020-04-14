@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5134e17c26ffd7b34c0277c571173ba03d758bee
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128302"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638785"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU
 
-Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación.
+Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. En este artículo se muestra cómo utilizar la pestaña **Uso de CPU** de las Herramientas de diagnóstico con el fin de obtener datos de rendimiento de la aplicación.
 
 Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
 
@@ -35,7 +35,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 > [!Important]
 > Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
-En este artículo, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, consulte [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+En este artículo, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador asociado o si establece como destino una aplicación en ejecución. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). También se puede usar otra herramienta de generación de perfiles, [PerfTips](../profiling/perftips.md), para revisar paso a paso el código e identificar cuánto tiempo tardan en completarse determinadas funciones o bloques de código.
 
 Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 
@@ -51,8 +51,7 @@ En este tutorial va a:
 
 2. Establezca un segundo punto de interrupción al final de la función o la región de código que quiera analizar.
 
-    > [!TIP]
-    > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
+    Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
 
 3. La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
@@ -95,6 +94,9 @@ En este tutorial va a:
      ![Selección de un segmento de tiempo en Herramientas de diagnóstico](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      En este punto, puede empezar a analizar los datos.
+
+     > [!TIP]
+     >  Al tratar de identificar las incidencias de rendimiento, realice varias medidas. El rendimiento varía de forma natural entre ejecuciones, y las rutas de acceso al código normalmente se ejecutan más lentamente la primera vez que se ejecutan debido a un trabajo de inicialización único, como la carga de archivos DLL, los métodos de compilación JIT y la inicialización de memorias caché. Al tomar varias medidas, se obtiene una idea más clara del rango y el valor medio de la métrica que se muestra, lo que permite realizar una comparación entre el rendimiento de la primera vez y el de un estado estable de un área de código.
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>Paso 2: Analizar datos de uso de CPU
 

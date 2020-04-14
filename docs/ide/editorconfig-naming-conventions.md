@@ -1,21 +1,21 @@
 ---
 title: Convenciones de nomenclatura .NET para archivos EditorConfig
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d4864cc20813bc57b35e315a3b415cb6902e6361
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588608"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544001"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -42,20 +42,23 @@ Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los símbolos)
-- espacio de nombres
+- namespace
 - clase
 - struct
 - interfaz
 - enum
-- Propiedad
+- propiedad
 - método
 - campo
-- evento
+- event
 - delegado
 - parámetro
 - type_parameter
 - locales
 - local_function
+
+> [!NOTE] 
+> Actualmente no se admiten miembros de tupla.
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveles de accesibilidad de símbolos
 
@@ -155,7 +158,7 @@ Los valores permitidos para esta propiedad son:
 > [!NOTE]
 > Debe especificar un estilo de uso de mayúsculas como parte del estilo de nomenclatura; en caso contrario, es posible que el estilo de nomenclatura se ignore.
 
-## <a name="severity"></a>severity
+## <a name="severity"></a>Gravedad
 
 Para describir la gravedad de una infracción de la regla de nomenclatura, especifique una propiedad con el formato siguiente:
 
@@ -163,9 +166,9 @@ Para describir la gravedad de una infracción de la regla de nomenclatura, espec
 
 En la tabla siguiente se muestran los valores de gravedad permitidos y lo que significan:
 
-severity | Efecto
+Gravedad | Efecto
 ------------ | -------------
-None | La regla se suprime por completo.
+ninguna | La regla se suprime por completo.
 refactoring o silent | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
 warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
