@@ -2,7 +2,7 @@
 # [Novedades](whats-new-in-subscriptions.md)
 # Suscripciones
 ## Comprar suscripciones
-### [Venta minorista](https://visualstudio.microsoft.com/vs/pricing)
+### [Venta minorista](buy-activate-retail.md)
 ### Nube 
 #### [Información general](vscloud-overview.md)
 #### [P+F sobre facturación](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Administración de las suscripciones de mi MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Inicio de sesión 
-### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 ### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 ### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
 ### [Inicio de sesión con GitHub](sign-in-github.md)
