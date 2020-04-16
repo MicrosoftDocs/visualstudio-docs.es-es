@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702038"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444653"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, plantillas y herramientas que desarrolla publicándolos en una *galería privada* en la intranet de su organización, como se indica a continuación:
@@ -42,9 +42,9 @@ Puede compartir los controles, plantillas y herramientas que desarrolla publicá
 
 5. En el campo **Dirección URL,** escriba la dirección URL de la fuente Atom o el sitio de SharePoint que hospeda la galería privada.
 
-    1. Si el host es una fuente Atom que se conecta a http://www.mywebsite/mygallery/atom.xmlla galería privada, la dirección URL se parecería a esta: .  Esta dirección URL puede hacer referencia a un archivo o a una ruta de acceso de red.
+    1. Si el host es una fuente Atom que se conecta a `http://www.mywebsite/mygallery/atom.xml`la galería privada, la dirección URL se parecería a esta: .  Esta dirección URL puede hacer referencia a un archivo o a una ruta de acceso de red.
 
-    2. Si el host es un sitio de SharePoint, la dirección URL se parecería a este: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Si el host es un sitio de SharePoint, la dirección URL se parecería a este: `http://mysharepoint/sites/mygallery/forms/AllItems.aspx`.
 
 ### <a name="manage-private-galleries"></a>Gestionar galerías privadas
  Un administrador puede poner una galería privada a disposición de varios equipos al mismo tiempo modificando el registro del sistema en cada equipo. Para ello, cree un archivo *.pkgdef* que describa las nuevas claves del Registro y sus valores.  El formato de este archivo es el siguiente.
@@ -89,6 +89,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. En el panel derecho, seleccione una extensión y, a continuación, elija el botón **Actualizar.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Enviar extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

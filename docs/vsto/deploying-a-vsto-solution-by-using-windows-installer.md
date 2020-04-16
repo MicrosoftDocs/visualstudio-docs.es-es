@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 876781cb6967f5d10dddccd54a46e218170445ab
-ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
+ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79432202"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444911"
 ---
 # <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Implementación de una solución de Visual Studio Tools para Office con Windows Installer
 
@@ -122,7 +122,7 @@ El primer paso es crear el proyecto de instalación.
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. En el cuadro de diálogo **Agregar un nuevo proyecto,** seleccione la plantilla **Configurar proyecto.**
-4. Haga clic en **Siguiente**.
+4. Haga clic en **Next**.
 ::: moniker-end
 
 5. En el cuadro **Nombre** , escriba **OfficeAddInSetup**.
@@ -593,7 +593,7 @@ s
 ## <a name="about-the-authors"></a>Acerca de los autores
 
 Wouter van Vugt es un MVP de Microsoft con tecnologías Office Open XML y un consultor independiente que se centra en la creación de aplicaciones empresariales de Office (OBA) con SharePoint, Microsoft Office y tecnologías .NET relacionadas.
-Wouter es un colaborador frecuente de sitios de la comunidad de desarrolladores [como OpenXmlDeveloper.org](http://openxmldeveloper.org/) y [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Ha publicado varios artículos y artículos, así como un libro disponible en línea titulado Open XML: Explained e-book.
-Wouter es el fundador de Code-Counsel, una empresa holandesa que se centra en la entrega de contenido técnico de vanguardia a través de una variedad de canales. Puede obtener más información sobre Wouter leyendo su blog y visitando el [sitio web Code-Counsel](http://www.code-counsel.net/).
+Wouter es un colaborador frecuente de sitios de la comunidad de desarrolladores como [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12)). Ha publicado varios artículos y artículos, así como un libro disponible en línea titulado Open XML: Explained e-book.
+Wouter es el fundador de Code-Counsel, una empresa holandesa que se centra en la entrega de contenido técnico de vanguardia a través de una variedad de canales. Puede obtener más información sobre Wouter leyendo su blog.
 
 Ted Pattison es MVP de SharePoint, autor, formador y fundador de Ted Pattison Group. En el otoño de 2005, Ted fue contratado por el grupo evangelismo de plataforma de desarrolladores de Microsoft para crear el plan de estudios de formación de desarrolladores de Ascend para Windows SharePoint Services 3.0 y Microsoft Office SharePoint Server 2007. Desde entonces, Ted se ha centrado por completo en la educación de desarrolladores profesionales sobre tecnologías de SharePoint 2007. Ted ha terminado de escribir un libro para Microsoft Press titulado Inside Windows SharePoint Services 3.0 que se centra en cómo usar SharePoint como una plataforma de desarrollo para crear soluciones empresariales. Ted también escribe una columna centrada en el desarrollador para MSDN Magazine titulada Office Space.

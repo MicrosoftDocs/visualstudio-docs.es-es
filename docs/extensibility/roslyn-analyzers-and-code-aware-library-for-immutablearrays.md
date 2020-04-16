@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b26d27c77ecb578d8eef0807c35b8efb8581a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701390"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444575"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores Roslyn y biblioteca compatible con código para ImmutableArrays
 
@@ -306,10 +306,10 @@ Puede ver este ejemplo desarrollado y discutido más adelante en [esta charla](h
 
 Puede ver todo el código terminado [aquí](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Las subcarpetas *DoNotUseImmutableArrayCollectionInitializer* y *DoNotUseImmutableArrayCtor* tienen cada una un archivo de C- para buscar problemas y un archivo de C- que implementa las correcciones de código que aparecen en la interfaz de usuario de bombilla de Visual Studio. Tenga en cuenta que el código terminado tiene un poco más\<de abstracción para evitar la obtención de la immutableArray T> objeto de tipo una y otra vez. Utiliza acciones registradas anidadas para guardar el objeto de tipo en un contexto que está disponible siempre que se ejecuten las subacciones (analizar la creación de objetos y analizar las inicializaciones de la colección).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [\\Charla de la construcción de 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código completado en GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Varios ejemplos en GitHub, agrupados en tres tipos de analizadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Otros documentos en el sitio de GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-* [Reglas de FxCop implementadas con analizadores Roslyn en GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+* [Reglas de FxCop implementadas con analizadores Roslyn en GitHub](https://github.com/dotnet/roslyn/tree/master/src/Features/Core/Portable/Diagnostics/Analyzers)
