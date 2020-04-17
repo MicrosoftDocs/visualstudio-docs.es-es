@@ -5,23 +5,23 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: 35e790f9651e0f358fe60dd7ebdc131496259102
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c61af4a08c61cbfd16d33e2b5cf7402960163f12
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911822"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489719"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depuración de un servicio en la nube de Azure publicado con Visual Studio e IntelliTrace
 Con IntelliTrace, puede registrar información de depuración amplia para una instancia de rol cuando se ejecuta en Azure. Si necesita encontrar la causa de un problema, puede utilizar los registros de IntelliTrace para recorrer su código desde Visual Studio como si se estuviera ejecutando en Azure. De hecho, IntelliTrace graba datos de entorno y ejecución de código de clave  cuando su aplicación de Azure se ejecuta como servicio en la nube en Azure y le permite reproducir los datos grabados desde Visual Studio.
 
 Puede utilizar IntelliTrace si tiene Visual Studio Enterprise instalado y su aplicación de Azure tiene como destino .NET Framework 4 o una versión posterior. IntelliTrace recopila información para sus roles de Azure. Las máquinas virtuales para estos roles siempre ejecutan sistemas operativos de 64 bits.
 
-Como alternativa, puede usar la [depuración remota](vs-azure-tools-debugging-cloud-services-overview.md) para conectarse directamente a un servicio en la nube que se ejecuta en Azure.
+Como alternativa, puede usar la depuración remota para adjuntar directamente a un servicio en la nube que se ejecuta en Azure.As a alternative, you can use [remote debugging](vs-azure-tools-debugging-cloud-services-overview.md) to attach directly to a cloud service that's running in Azure.
 
 > [!IMPORTANT]
 > IntelliTrace está pensado solo para escenarios de depuración y no debe usarse para una implementación de producción.
@@ -30,7 +30,7 @@ Como alternativa, puede usar la [depuración remota](vs-azure-tools-debugging-cl
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configuración de una aplicación de Azure para IntelliTrace
 Para habilitar IntelliTrace para una aplicación de Azure, debe crear y publicar la aplicación desde un proyecto de Azure de Visual Studio. Debe configurar IntelliTrace para su aplicación de Azure antes de su publicación en Azure. Si publica la aplicación sin configurar IntelliTrace, deberá volver a publicar el proyecto. Para más información, consulte cómo [publicar proyectos de servicios en la nube de Azure con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-1. Cuando esté preparado para implementar su aplicación de Azure, compruebe que sus destinos de compilación del proyecto se establecen en **Depurar**.
+1. Cuando esté preparado para implementar la aplicación de Azure, compruebe que los destinos de compilación del proyecto estén establecidos en **Depurar**.
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y, en el menú contextual, seleccione **Publicar**.
 

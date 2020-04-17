@@ -4,17 +4,17 @@ description: Obtenga más información sobre los procedimientos para configurar 
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 81c5787e3c058848c97c69fad03827223c9fc582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6174f8294f3a9e990893ca9a45d77f2a069692e
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572414"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489667"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparación para publicar o implementar un servicio en la nube desde Visual Studio
 

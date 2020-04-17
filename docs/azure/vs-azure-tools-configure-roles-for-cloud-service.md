@@ -4,17 +4,17 @@ description: Aprenda a instalar y a configurar roles para Azure Cloud Services c
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a01a1fb182fc9d45e4e08dcd9acb8e0ec734f098
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300958"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489732"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -90,7 +90,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración.**
+1. Seleccione la pestaña **Configuración**.
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -152,7 +152,7 @@ Al usar un valor diferente para cada configuración de servicio, no tendrá que 
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración.**
+1. Seleccione la pestaña **Configuración**.
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
