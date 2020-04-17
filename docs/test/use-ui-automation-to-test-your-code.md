@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585644"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880369"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usar pruebas automatizadas de IU para probar el código
 
@@ -435,7 +435,12 @@ Puede analizar pruebas automatizadas de IU mediante los registros de dichas prue
 
 ## <a name="whats-next"></a>Pasos adicionales
 
+::: moniker range="vs-2017"
 **Opciones adicionales para ejecutar pruebas automatizadas de IU:** Puede ejecutar pruebas automatizadas de IU directamente desde Visual Studio, como se ha explicado anteriormente en este tema. Además, puede ejecutar pruebas automatizadas de UI desde Microsoft Test Manager o mediante Azure Pipelines. Cuando las pruebas automatizadas de IU se automatizan, tienen que interactuar con el escritorio durante su ejecución, a diferencia de otras pruebas automatizadas.
+::: moniker-end
+::: moniker range=">=vs-2019"
+**Opciones adicionales para ejecutar pruebas automatizadas de IU:** Puede ejecutar pruebas automatizadas de IU directamente desde Visual Studio, como se ha explicado anteriormente en este tema. Además, puede ejecutar pruebas de IU automatizadas mediante Azure Pipelines. Cuando las pruebas automatizadas de IU se automatizan, tienen que interactuar con el escritorio durante su ejecución, a diferencia de otras pruebas automatizadas.
+::: moniker-end
 
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,7 +454,7 @@ Puede analizar pruebas automatizadas de IU mediante los registros de dichas prue
 
 - [Extender las pruebas automatizadas de IU y las grabaciones de acciones](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Las pruebas automatizadas de IU se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información sobre las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
+Las pruebas automatizadas de IU se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vea también
 

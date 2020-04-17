@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: a7742049cdda2568504e54d2c83259bb4a262819
+ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274068"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385514"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -73,14 +73,12 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 
 > [!IMPORTANT]
 >
-> El uso de grupos de Azure AD se está habilitando por fases.  Es posible que no vea inmediatamente la característica habilitada para sus contratos.
->
 > Se aplican las siguientes limitaciones al uso de grupos de Azure AD para agregar suscriptores:
 > - Los grupos deben contener al menos un miembro.  No se admiten grupos vacíos.
 > - Los grupos deben tener menos de 1000 usuarios. 
 > - Todos los usuarios deben estar en el nivel superior del grupo.  No se admiten grupos anidados.
 > - Solo se admiten acuerdos de confianza.
-> - Todos los miembros del grupo deben tener una dirección de correo electrónico asociada a su cuenta de Azure AD
+> - Todos los miembros del grupo deben tener una dirección de correo electrónico asociada a su cuenta de Azure AD.
 > - Las notificaciones de suscripciones agregadas con grupos de Azure AD no se pueden enviar a direcciones de correo electrónico independientes.  
 
 1. Inicie sesión en el Portal de administración de suscripciones de Visual Studio en [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -108,6 +106,7 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > [!NOTE]
 > Si ya se han asignado las suscripciones individualmente a los usuarios que se agregan posteriormente como parte de un grupo de Azure AD, se agregarán como parte del grupo y ya no se mostrarán individualmente. Sin embargo, si la suscripción individual es para un nivel de suscripción distinto, tendrá dos suscripciones.  Ejemplo:  si un usuario tiene una suscripción individual de Visual Studio Professional y es miembro de un grupo al que se asignan suscripciones de Visual Studio Enterprise, este usuario tendrá ambas.  
 
+<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
