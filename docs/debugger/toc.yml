@@ -447,7 +447,7 @@
             - name: Inspeccionar las propiedades XAML durante la depuración
               href: inspect-xaml-properties-while-debugging.md
             - name: Escribir y depurar código XAML en ejecución
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md
             - name: Depurar XAML en Blend
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML y CSS
@@ -507,7 +507,7 @@
                 - name: Inspeccionar las propiedades XAML durante la depuración
                   href: inspect-xaml-properties-while-debugging.md
                 - name: Escribir y depurar código XAML en ejecución
-                  href: xaml-hot-reload.md
+                  href: ../xaml-tools/xaml-hot-reload.md
                 - name: Usar el visualizador de árboles de WPF
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Mostrar información de seguimiento de WPF

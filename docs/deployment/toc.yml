@@ -94,8 +94,6 @@
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
             - name: Establecimiento de permisos personalizados para una aplicación ClickOnce
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: Depuración de una aplicación ClickOnce con permisos restringidos
-              href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: Adición de un editor de confianza a un equipo cliente
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
             - name: Repetición de la firma de manifiestos de implementación y aplicación
