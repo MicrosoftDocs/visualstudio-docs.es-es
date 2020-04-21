@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b145dd4d82887122009553afd883abb6cade849e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65ef0edf76780ba7c8b6f5d9347195c286bec466
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697792"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649842"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Tutorial: Agregar características a un editor personalizado
 Después de crear un editor personalizado, puede agregarle más características.
@@ -34,7 +34,7 @@ Después de crear un editor personalizado, puede agregarle más características
 
 3. Implemente una fábrica de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> editores configurando la interfaz.
 
-     Para obtener más información, consulte Fábricas de [editores](../extensibility/editor-factories.md).
+     Para obtener más información, consulte Fábricas de [editores](/visualstudio/extensibility/editor-factories?view=vs-2015).
 
 4. Decida si desea que el editor utilice la activación in situ o la incrustación simplificada para administrar la ventana del objeto de vista de documento.
 
@@ -152,6 +152,6 @@ Después de crear un editor personalizado, puede agregarle más características
 
   - `Window.Object`
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Contribuir al modelo de automatización](../extensibility/internals/contributing-to-the-automation-model.md)

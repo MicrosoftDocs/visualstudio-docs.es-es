@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7173bc1ebc5507eadf319c0374f4c878dea62857
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739779"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649363"
 ---
 # <a name="command-flag-eelement"></a>Bandera de mando Eelement
 Modifica su elemento primario.
@@ -35,7 +35,7 @@ Modifica su elemento primario.
 
 ### <a name="child-elements"></a>Elementos secundarios
 
-|Value|Descripción|
+|Valor|Descripción|
 |-----------|-----------------|
 |AllowParams|Indica que los usuarios pueden introducir parámetros de comando en la ventana **Comando** cuando escriben el nombre canónico del comando.<br /><br /> Válido para:`Button`|
 |AlwaysCreate|El menú se crea incluso si no tiene grupos ni botones.<br /><br /> Válido para:`Menu`|
@@ -60,7 +60,6 @@ Modifica su elemento primario.
 |PostExec|Hace que el comando no se bloquee. El entorno de desarrollo aplaza la ejecución hasta que se completan todas las consultas de preprocesamiento.<br /><br /> Válido para:`Button`|
 |RouteToDocs|El comando se enruta al documento activo.<br /><br /> Válido para:`Button`|
 |StretchHorizontally|Cuando se establece esta marca, el ancho se convierte en el ancho mínimo para el cuadro combinado y, si hay espacio en la barra de herramientas, el cuadro combinado se estira para rellenar el espacio disponible. Esto solo se produce si la barra de herramientas está acoplada horizontalmente y solo un cuadro combinado de la barra de herramientas puede utilizar la marca (la marca se omite en todos excepto en el primer cuadro combinado).<br /><br /> Válido para:`Combo`|
-|TextMenuUseButton|Utilice `ButtonText` el campo para los menús. El campo `MenuText` predeterminado es si se especifica.<br /><br /> Válido para:`Button`|
 |TextChanges|El texto del comando o menú se puede `QueryStatus` cambiar en tiempo de ejecución, normalmente a través del método.<br /><br /> Válido para: `Button`,`Menu`|
 |TextChangesButton|Válido para:`Button`|
 |TextIsAnchorCommand|Para un controlador de menú, el texto del menú se toma del comando predeterminado (ancla). Un comando de anclaje es el último comando seleccionado o bloqueado. Si no se establece esta marca, `MenuText` el controlador de menú utiliza su propio campo. Sin embargo, al hacer clic en el controlador de menú todavía se habilita el último comando seleccionado de ese controlador.<br /><br /> Se recomienda combinar esta marca `TextChanges` con la marca.<br /><br /> Esta marca solo se aplica a los menús de tipo MenuController o MenuControllerLatched.<br /><br /> Válido para:`Menu`|
@@ -75,5 +74,5 @@ Modifica su elemento primario.
 |[Elemento Buttons](../extensibility/buttons-element.md)|Proporciona un grupo para Button elementos de [elemento.](../extensibility/button-element.md)|
 |[Elemento Menús](../extensibility/menus-element.md)|Define todos los menús que implementa un VSPackage.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tabla de comandos de Visual Studio (. Vsct) Archivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

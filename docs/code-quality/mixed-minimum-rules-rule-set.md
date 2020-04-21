@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddb4b5b80ab33e0136b14ce824f5be1b8cb9f6a3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c93d69fb72d88c65e8037f8cec1e2747dbdbff95
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649310"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
 
-Las reglas mínimas mixtas de Microsoft se centran en C++ los problemas más graves de los proyectos que admiten Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación.
+Las reglas mínimas mixtas de Microsoft se centran en los problemas más críticos de los proyectos de C++ que admiten Common Language Runtime, incluidos los posibles agujeros de seguridad y los bloqueos de aplicaciones.
 
-Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado que cree C++ para los proyectos que admiten Common Language Runtime.
+Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado que cree para los proyectos de C++ que admitan Common Language Runtime.
 
 |Regla|Descripción|
 |----------|-----------------|
@@ -86,18 +86,18 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28182](../code-quality/c28182.md)|Desreferenciación de un puntero null. El puntero contiene el mismo valor NULL que otro puntero.|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|\_correcto\_ o \_en\_error\_ usado en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_Correcto\_ \_o\_\_ en caso de fallo utilizado en un contexto ilegal|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
-|[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
+|[C28220](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|La \_usar\_las anotaciones decl\_\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|La \_\_anotación\_Use\_ decl annotations debe utilizarse para hacer referencia, sin modificaciones, a una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
 |[C28217](../code-quality/c28217.md)|Para la función, el número de parámetros de la anotación no coincide con el encontrado en el archivo|
-|[C28218](../code-quality/c28218.md)|En el caso del parámetro de función, el parámetro de la anotación no coincide con el que se encuentra en el archivo.|
+|[C28218](../code-quality/c28218.md)|Para el parámetro de función, el parámetro de la anotación no coincide con el que se encuentra en el archivo|
 |[C28219](../code-quality/c28219.md)|Se esperaba un miembro de enumeración para el parámetro de la anotación|
 |[C28220](../code-quality/c28220.md)|Se esperaba una expresión de entero para el parámetro de la anotación|
 |[C28221](../code-quality/c28221.md)|Se esperaba una expresión de cadena para el parámetro de la anotación|
@@ -134,7 +134,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro para \_\_de valor de la macro\_ es null|
+|[C28275](../code-quality/c28275.md)|El parámetro \_\_Macro\_ valor es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
@@ -152,7 +152,7 @@ Incluya este conjunto de reglas en cualquier conjunto de reglas personalizado qu
 |[C28304](../code-quality/c28304.md)|Se encontró un operador \_Notref\_ mal colocado aplicado al token.|
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|
-|[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
+|[C28351](/cpp/code-quality/c28351)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
 |[CA1001](../code-quality/ca1001.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1821](../code-quality/ca1821.md)|Quitar finalizadores vacíos|
 |[CA2213](../code-quality/ca2213.md)|Los campos descartables deben ser descartables|
