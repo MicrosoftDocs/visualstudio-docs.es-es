@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78937550"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649614"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -79,7 +79,7 @@ Para permitir el acceso a las funciones en el proyecto en pruebas, agregue una r
 
 ### <a name="link-to-object-or-library-files"></a>Vinculación con archivos de objeto o biblioteca
 
-Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Para obtener más información, vea [Para vincular las pruebas a los archivos de biblioteca u objeto](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files).
+Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Para obtener más información, vea [Para vincular las pruebas a los archivos de biblioteca u objeto](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
 
 ### <a name="add-include-directives-for-header-files"></a>Agregar directivas #include de archivos de encabezado
 

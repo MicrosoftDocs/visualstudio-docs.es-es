@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74474017"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81445017"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar una aplicación de Node.js en Azure (App Service de Linux)
 
@@ -173,7 +173,7 @@ Para configurar GitHub para Visual Studio:
 ## <a name="troubleshooting"></a>Solución de problemas
 
 * Si se produce un problema en el proceso de node.exe (es decir, se produce una excepción no controlada), el contenedor se reinicia.
-* Cuando se reinicia el contenedor, se ejecuta por medio de diferentes técnicas heurísticas para determinar cómo iniciar el proceso de Node.js. Los detalles de la implementación pueden verse en [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
+* Cuando se reinicia el contenedor, se ejecuta por medio de diferentes técnicas heurísticas para determinar cómo iniciar el proceso de Node.js. Los detalles de la implementación pueden verse en [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Puede conectarse al contenedor en ejecución a través de SSH para investigar. Esto se hace fácilmente con Azure Portal. Seleccione la instancia de App Service y desplácese hacia abajo en la lista de herramientas hasta alcanzar **SSH** en la sección **Herramientas de desarrollo**.
 * Para ayudar a solucionar problemas, vaya a la opción **Registros de diagnóstico** de App Service y cambie la opción **Registro de contenedor de Docker** de **Desactivado** a **Sistema de archivos**. Los registros se crean en el contenedor en */home/LogFiles/*_docker.log* y se puede acceder a ellos en el cuadro mediante SSH o FTP (S).
 * Puede asignar un nombre de dominio personalizado al sitio, en lugar de la dirección URL *.azurewebsites.net asignada de forma predeterminada. Para obtener más detalles, vea el tema [Asignación de un dominio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 07/30/2019
+ms.date: 04/15/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo configurar la cuenta Pago por uso de Azure.
-ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fdbaacd9f778d7e81667cd4faa504f877775f02
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80231986"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444860"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Suscripciones de Desarrollo/pruebas - Pago por uso de Azure
 Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas - Pago por uso, al mismo tiempo que colabora con otros suscriptores y proporciona aislamiento entre los equipos y el entorno.  Recibirá tarifas por horas con descuentos exclusivos para desarrollo y pruebas y derechos de uso en la nube de su software de suscripción en Azure.
