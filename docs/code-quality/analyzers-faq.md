@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 56b0c0defe5593c9dc0e2111ef5984a5c51eaf55
+ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300928"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81760136"
 ---
 # <a name="code-analysis-faq"></a>Preguntas frecuentes sobre el análisis de código
 
@@ -47,7 +47,7 @@ Además de los conjuntos de reglas y los archivos EditorConfig, algunos analizad
 
 **P:**¿Funciona el análisis de código basado en .NET Compiler Platform en compilaciones de integración continua (CI)?
 
-**R**: Sí. Para los analizadores que se instalan desde un paquete NuGet, esas reglas se aplican en tiempo de [compilación,](roslyn-analyzers-overview.md#build-errors)incluso durante una compilación de CI. Los analizadores utilizados en las compilaciones de CI respetan la configuración de reglas de los conjuntos de reglas y los archivos EditorConfig. Actualmente, los analizadores de código integrados en Visual Studio no están disponibles como un paquete NuGet, por lo que estas reglas no son aplicables en una compilación de CI.
+**R.** : Sí. Para los analizadores que se instalan desde un paquete NuGet, esas reglas se aplican en tiempo de [compilación,](roslyn-analyzers-overview.md#build-errors)incluso durante una compilación de CI. Los analizadores utilizados en las compilaciones de CI respetan la configuración de reglas de los conjuntos de reglas y los archivos EditorConfig. Actualmente, los analizadores de código integrados en Visual Studio no están disponibles como un paquete NuGet, por lo que estas reglas no son aplicables en una compilación de CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analizadores IDE frente a StyleCop
 
@@ -88,7 +88,13 @@ Los [analizadores StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
      ...
      ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="code-analysis-solution-property-page"></a>Página de propiedades de la solución de análisis de código
+
+**P:**¿Dónde está la página de propiedades Análisis de código de la solución?
+
+**R:** La página de propiedades Análisis de código en el nivel de solución se eliminó en favor del grupo de propiedades compartidas más confiable. Para administrar el análisis de código en el nivel de proyecto, la página de propiedades Análisis de código sigue estando disponible. (Para proyectos administrados, también se recomienda migrar de conjuntos de reglas a EditorConfig para la configuración de reglas.)  Para compartir conjuntos de reglas en varios/todos los proyectos de una solución o un repositorio, se recomienda definir un grupo de propiedades con la propiedad CodeAnalysisRuleSet en un archivo de accesorios/destinos compartido o un archivo Directory.props/Directory.targets. Si no tiene ningún objetivo o objetivos comunes que importen todos los proyectos, debe considerar la posibilidad de agregar un grupo de propiedades de este [tipo a un Directory.props o un Directory.targets en un directorio de solución de nivel superior, que se importa automáticamente en todos los archivos de proyecto definidos en el directorio o sus subdirectorios.](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)
+
+## <a name="see-also"></a>Vea también
 
 - [Visión general de los analizadores](roslyn-analyzers-overview.md)
-- [Configuración de la convención de codificación .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Configuración de la convención de codificación de .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

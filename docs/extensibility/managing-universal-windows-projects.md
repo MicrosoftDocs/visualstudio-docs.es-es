@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbbf9b6aaf983bb36291611a7b9b50f7886915b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702684"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744939"
 ---
 # <a name="manage-universal-windows-projects"></a>Administrar proyectos universales de Windows
 
 Las aplicaciones universales de Windows son aplicaciones destinadas tanto a Windows 8.1 como a Windows Phone 8.1, lo que permite a los desarrolladores usar código y otros activos en ambas plataformas. El código y los recursos compartidos se mantienen en un proyecto compartido, mientras que el código y los recursos específicos de la plataforma se mantienen en proyectos independientes, uno para Windows y el otro para Windows Phone. Para obtener más información acerca de las aplicaciones universales de Windows, vea [Aplicaciones universales](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)de Windows . Las extensiones de Visual Studio que administran proyectos deben tener en cuenta que los proyectos de aplicaciones universales de Windows tienen una estructura que difiere de las aplicaciones de plataforma única. En este tutorial se muestra cómo navegar por el proyecto compartido y administrar los elementos compartidos.
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 
 A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en la configuración de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [Instalar el SDK](../extensibility/installing-the-visual-studio-sdk.md)de Visual Studio .
 
@@ -72,8 +72,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
             MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);
             commandService.AddCommand(menuItem);
         }
+
         // get a reference to the Output window
-                    output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
+        output = (IVsOutputWindowPane)ServiceProvider.GetService(typeof(SVsGeneralOutputWindowPane));
     }
     ```
 
@@ -146,7 +147,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
                 MessageBox.Show("Solution has no shared project");
                 return;
             }
-                }
+        }
         else
         {
             MessageBox.Show("No solution is open");
@@ -198,20 +199,17 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
                 }
                 else
                 {
-                MessageBox.Show("Shared project has no active platform project");
+                    MessageBox.Show("Shared project has no active platform project");
                 }
             }
             else
             {
                 MessageBox.Show("Solution has no shared project");
-                return;
             }
         }
         else
-            {
-                MessageBox.Show("No solution is open");
-                return;
-            }
+        {
+            MessageBox.Show("No solution is open");
         }
     }
     ```
@@ -334,7 +332,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
             {
                 this.InspectHierarchyItems(hier, child, level + 1, itemIds, isSharedItem, printItems);
             }
-                    }
+        }
     }
     ```
 
