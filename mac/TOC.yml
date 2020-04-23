@@ -175,9 +175,9 @@
         - name: Uso de herramientas de Unity
           href: using-vsmac-tools-unity.md
         - name: Uso de .NET 4.x en Unity
-          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
         - name: Registro de cambios
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Aplicaciones móviles con Xamarin
       href: /visualstudio/mac/xamarin
 - name: Accesibilidad

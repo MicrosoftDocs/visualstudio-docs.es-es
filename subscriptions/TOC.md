@@ -77,6 +77,7 @@
 ### Asignación de suscripciones
 #### [Agregar usuarios únicos](assign-license.md)
 #### [Agregar varios usuarios](assign-license-bulk.md)
+#### [Asignación de suscripciones específicas](assign-guid.md)
 ### [Editar suscripciones](edit-license.md)
 ### [Eliminar suscripciones](delete-license.md)
 ### [Búsqueda de una suscripción](search-license.md)
