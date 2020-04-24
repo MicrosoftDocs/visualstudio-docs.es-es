@@ -1,5 +1,5 @@
 ---
-title: ajuste de línea
+title: Ajuste de línea
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f49925211247e346ac3203de20a97496c54295d
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508945"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444809"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Cómo: Administrar el ajuste de línea en el editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste de línea en el editor
 
 Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuando se establece esta opción, se muestra la parte de una línea larga que se extiende más allá del ancho actual de la ventana del editor de código en la siguiente línea. Cuando se desactiva esta opción, por ejemplo, para facilitar el uso de numeración de líneas, puede desplazarse a la derecha para ver los finales de las líneas largas.
 
 > [!NOTE]
-> Este tema solo se aplica a Visual Studio para Windows. Visual Studio para Mac no admite de momento el ajuste de línea.
+> Este tema se aplica a Visual Studio para Windows. Para Visual Studio para Mac, vea [Editor de origen: Ajuste automático de línea](/visualstudio/mac/source-editor#word-wrap).
 
 ## <a name="to-set-word-wrap-preferences"></a>Para establecer las preferencias de ajuste automático de línea
 
@@ -32,7 +32,7 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 
 2. En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.
 
-     O bien
+     o
 
      Pulse las opciones **General** en la subcarpeta del lenguaje en el que está programando.
 

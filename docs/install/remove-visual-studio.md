@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b0e8c8fe10451e9e5906eabf7f4f65086d147904
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98886df1c7fb09fa30d5c54abe19452780195b6a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113714"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649202"
 ---
 # <a name="remove-visual-studio"></a>Quitar Visual Studio
 
@@ -51,10 +51,10 @@ Aquí se muestra cómo ejecutar la herramienta `InstallCleanup.exe`:
 1. Abra un símbolo del sistema de administrador. Para abrir un símbolo del sistema de administrador, siga estos pasos:
    * Escriba **cmd** en el cuadro "Escriba aquí para ejecutar la búsqueda".
    * Haga clic con el botón derecho en **Símbolo del sistema** y luego elija **Ejecutar como administrador**.
-1. Escriba la ruta de acceso completa de la herramienta `InstallCleanup.exe` y agregue el modificador de la línea de comandos que prefiera. De forma predeterminada, la ruta de acceso de la herramienta es la siguiente:
+1. Escriba la ruta de acceso completa de la herramienta `InstallCleanup.exe` y agregue el modificador de la línea de comandos que prefiera. De forma predeterminada, la ruta de acceso de la herramienta es como la que se indica a continuación. Las comillas dobles incluyen un comando que contiene espacios:
 
    ```
-   C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 
    > [!NOTE]
@@ -64,7 +64,7 @@ Aquí se muestra cómo ejecutar la herramienta `InstallCleanup.exe`:
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalación de Visual Studio](install-visual-studio.md)
+* [Instalar Visual Studio](install-visual-studio.md)
 * [Actualizar Visual Studio](update-visual-studio.md)
 * [Modificar Visual Studio](modify-visual-studio.md)
 * [Desinstalar Visual Studio](uninstall-visual-studio.md)

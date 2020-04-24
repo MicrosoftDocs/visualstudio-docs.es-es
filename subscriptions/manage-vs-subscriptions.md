@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: 8790897f0e5169aebc020035b4c8c1d5749c230e
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232358"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444885"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -52,7 +52,6 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 **Suscripciones adquiridas a través de programas:**  si ha obtenido la suscripción a través de un programa, estará vinculada a su participación en dicho programa. Consulte a sus contactos del programa para obtener más información.
 
 - [Imagine](https://imagine.microsoft.com/about)
-- [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com)
 - [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
@@ -106,7 +105,7 @@ R: En función del canal de compra, Microsoft mantiene los datos de cliente dura
 |    Centro de servicio de licencias por volumen (VLSC)              |    180          |
 |    Acuerdo de productos y servicios de Microsoft (MPSA)    |    180          |
 |    Suscripciones de nube de Visual Studio                   |    180          |
-|    Programa (por ejemplo, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Programa (por ejemplo, MCT, MPN, Imagine)          |    180          |
 |    No para reventa (p. ej., MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 

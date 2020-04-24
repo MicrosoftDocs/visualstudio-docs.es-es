@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68f2bdf0559dc2bea6bd349dbf5f9bedca3671e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
+ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633322"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81638044"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 
@@ -52,7 +52,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
 
 - El atributo `TaskFactory` asigna un nombre a la clase que implementa el generador de tareas insertadas.
 
-- El atributo `AssemblyFile` proporciona la ubicación del generador de tareas insertadas. Alternativamente, puede utilizar el atributo `AssemblyName` para especificar el nombre completo de la clase de generador de tareas insertadas, que está ubicada normalmente en la caché global de ensamblados (GAC).
+- El atributo `AssemblyFile` proporciona la ubicación del generador de tareas insertadas. Como alternativa, puede utilizar el atributo `AssemblyName` para especificar el nombre completo de la clase de generador de tareas insertadas, que se normalmente ubica en `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`.
 
 Los elementos restantes de la tarea `DoNothing` están vacíos y se proporcionan para mostrar el orden y la estructura de una tarea insertada. Un ejemplo más completo se presenta posteriormente en este tema.
 

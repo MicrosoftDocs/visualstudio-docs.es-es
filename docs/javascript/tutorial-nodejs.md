@@ -1,7 +1,7 @@
 ---
 title: Creación de una aplicación Node.js y Express
 description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
-ms.date: 09/24/2018
+ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 260bc6ff6eb2d0bfbf0b9abd19062892c358728a
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224529"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744888"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
 
@@ -109,13 +109,13 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 
     (3) En el nodo npm se muestran todos los paquetes npm instalados. Puede hacer clic con el botón derecho en el nodo de npm para buscar e instalar paquetes de npm mediante un cuadro de diálogo, o instalar y actualizar los paquetes con la configuración de *package.json* y con las opciones que aparecen al hacer clic con el botón derecho en el nodo de npm.
 
-    (4) *package.json* es un archivo usado por npm para administrar las dependencias y las versiones de los paquetes instalados localmente. Para obtener más información sobre este archivo, consulte [package.json configuration](../javascript/configure-packages-with-package-json.md) (Configuración de package.json).
+    (4) *package.json* es un archivo usado por npm para administrar las dependencias y las versiones de los paquetes instalados localmente. Para más información, vea [Administrar paquetes de npm](../javascript/npm-package-management.md).
 
     (5) Los archivos de proyecto como *app.js* se muestran en el nodo del proyecto. *app.js* es el archivo de inicio del proyecto, por lo que aparece en **negrita**. Puede establecer el archivo de inicio si hace clic con el botón derecho en un archivo del proyecto y selecciona **Establecer como archivo de inicio de Node.js**.
 
 1. Abra el nodo **npm** y asegúrese de que todos los paquetes de npm necesarios están presentes.
 
-    Si falta alguno (icono de signo de exclamación), haga clic con el botón derecho en el nodo **npm** y elija **Instalar los paquetes de NPM que faltan**.
+    Si falta alguno (icono de signo de exclamación), haga clic con el botón derecho en el nodo **npm** y elija **Instalar los paquetes de npm**.
 
 ## <a name="add-some-code"></a>Agregar algo de código
 
@@ -194,7 +194,7 @@ IntelliSense es una herramienta de Visual Studio que le ayuda a escribir código
 
     La última línea de este mensaje indica que el intérprete de JavaScript esperaba una coma (`,`).
 
-1. En el panel inferior, haga clic en la pestaña **Lista de errores**.
+1. En el panel inferior, haga clic en la pestaña **Lista de errores** y seleccione **Compilación + IntelliSense** para el tipo de problemas de los que se informa.
 
     Verá la advertencia y una descripción junto con el nombre de archivo y número de línea.
 
@@ -218,7 +218,7 @@ Vamos a ejecutar la aplicación con el depurador de Visual Studio asociado. Ante
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
-1. Seleccione el destino de depuración en la barra de herramientas de depuración, como Microsoft Edge o Chrome.
+1. Seleccione un destino de depuración en la barra de herramientas de depuración, como **Servidor web (Google Chrome)** o **Servidor web (Microsoft Edge)** .
 
     ::: moniker range=">=vs-2019"
     ![Seleccionar el destino de depuración](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)

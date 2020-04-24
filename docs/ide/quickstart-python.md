@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70180346"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444952"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
@@ -182,7 +182,7 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 3. Seleccione **Depurar > Iniciar sin depurar** (**Ctrl**+**F5**) para guardar los cambios en los archivos y ejecutar la aplicación.
 
-4. Aparece una ventana de comandos con el mensaje "* Ejecutando en <https://localhost:4449/>" y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
+4. Aparece una ventana de comandos con el mensaje **Ejecutando en https:\//localhost:4449** y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
 
     Si un explorador no se abre automáticamente, inicie el explorador que quiera y vaya a `localhost:4449`.
 

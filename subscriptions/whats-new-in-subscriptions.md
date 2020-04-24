@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: 435185a628dbf256802ae36dae45eac60d304a54
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80544051"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649653"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
@@ -39,6 +39,23 @@ Si su organización usa Azure Active Directory (Azure AD), ahora se pueden admin
 Nos complace anunciar una expansión de las ventajas que ofrece nuestro socio comercial,CAST Highlight. 
 - La duración de la ventaja incluida en las suscripciones de Visual Studio Enterprise se ha ampliado a seis meses.  
 - Los suscriptores de Visual Studio Professional ahora pueden recibir una suscripción que les permite evaluar una única aplicación durante tres meses. 
+
+## <a name="2020-q2-april-june"></a>T2 de 2020 (de abril a junio)
+
+### <a name="visual-studio-subscriptions-portal"></a>Portal de suscripciones de Visual Studio
+
+Se han realizado cambios significativos en la apariencia y la facilidad de uso del Portal de suscripciones de Visual Studio.  
+
+- Se ha cambiado el tamaño de los iconos de las ventajas y ahora se muestran todos en la ventana, por lo que no es necesario desplazarse a la izquierda o a la derecha para ver todos los de una determinada categoría. 
+- Puede optar por mostrar todas las ventajas disponibles o mostrar solo una categoría mediante el selector de categorías.
+   > [!div class="mx-imgBorder"]
+   > ![Nuevo selector de categorías de ventajas](_img/whats-new/whats-new-category-picker.png)
+- También hemos movido el selector de suscripciones de la esquina superior derecha de la ventana a una ubicación más accesible.
+   > [!div class="mx-imgBorder"]
+   > ![Nuevo selector de suscripciones](_img/whats-new/whats-new-sub-picker.png)
+- Hemos agregado el elemento "Ventaja destacada" en la parte superior de la lista de ventajas para resaltar ventajas nuevas o populares.  
+   > [!div class="mx-imgBorder"]
+   > ![Nueva ventaja destacada](_img/whats-new/whats-new-featured.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Consulte la nueva interfaz de usuario del [portal de administración de suscripciones](https://manage.visualstudio.com) con sus nuevas características
