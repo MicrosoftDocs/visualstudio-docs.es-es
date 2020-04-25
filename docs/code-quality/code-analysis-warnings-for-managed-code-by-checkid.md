@@ -106,6 +106,7 @@ f1_keywords:
 - CA1505
 - CA1506
 - CA1507
+- CA1508
 - CA1600
 - CA1601
 - CA1700
@@ -265,12 +266,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83ed654a6e0795e5930580f9d13198631b5d695e
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.openlocfilehash: d4f532baf1434ea318a86ce2cb2fc717fff98623
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82109499"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153007"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -375,7 +376,9 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1502 | [CA1502: Evite la excesiva complejidad](../code-quality/ca1502.md) | Esta regla mide el número de rutas de acceso independientes de forma lineal a través del método, que es determinado por el número y la complejidad de bifurcaciones condicionales. |
 | CA1504 | [CA1504: Revise los nombres de campos erróneos](../code-quality/ca1504.md) | El nombre de un campo de instancia empieza por "s_" o el nombre de un campo estático (Shared en Visual Basic) empieza por "m_". |
 | CA1505 | [CA1505: Evite código que no se puede mantener](../code-quality/ca1505.md) | Un tipo o método tiene un valor del índice de mantenimiento bajo. Un índice de mantenimiento bajo indica que un tipo o método resulta probablemente difícil de mantener y se debería volver a diseñar. |
-| CA1506 |[CA1506: Evite el acoplamiento excesivo de clases](../code-quality/ca1506.md) | Esta regla mide el acoplamiento de clase contando el número de referencias de tipo únicas que contiene un tipo o método. |
+| CA1506 | [CA1506: Evite el acoplamiento excesivo de clases](../code-quality/ca1506.md) | Esta regla mide el acoplamiento de clase contando el número de referencias de tipo únicas que contiene un tipo o método. |
+| CA1507 | [CA1507: usar nombre en lugar de cadena](../code-quality/ca1507.md) | Un literal de cadena se usa como argumento en el `nameof` que se podría utilizar una expresión. |
+| CA1508 | [CA1508: evitar código condicional inactivo](../code-quality/ca1508.md) | Un método tiene código condicional que siempre se evalúa como `true` o `false` en tiempo de ejecución. Esto conduce a código muerto en la `false` rama de la condición. |
 | CA1600 | [CA1600: No utilizar la prioridad del proceso inactiva](../code-quality/ca1600.md) | No establezca la prioridad de proceso en Idle. Los procesos que tienen System.Diagnostics.ProcessPriorityClass.Idle ocupan la CPU cuando, de otro modo, estaría inactiva y, por consiguiente, bloquean el estado de espera. |
 | CA1601 | [CA1601: No utilizar temporizadores que impidan los cambios de estado de energía](../code-quality/ca1601.md) | Una actividad periódica más frecuente hará que la CPU no esté disponible, e interferirá con los temporizadores de inactividad para ahorro de energía, que apagan el monitor y el disco duro. |
 | CA1700 | [CA1700: No nombrar valores de enumeración como 'Reserved'](../code-quality/ca1700.md) | Esta regla supone que un miembro de la enumeración con un nombre que contiene la palabra "reserved" no se utiliza actualmente pero hace de marcador de posición para que se pueda quitar o cambiar el nombre en una versión posterior. Quitar o cambiar el nombre de un miembro es un cambio importante. |
