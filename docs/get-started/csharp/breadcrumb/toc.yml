@@ -2,10 +2,10 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: Programa para la mejora
       tocHref: /visualstudio/
       topicHref: /visualstudio/ide/
       items:
         - name: 'C#'
           tocHref: /visualstudio/csharp/
-          topicHref: /visualstudio/csharp/index
+          topicHref: /visualstudio/get-started/csharp/index
