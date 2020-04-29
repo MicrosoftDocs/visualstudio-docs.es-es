@@ -537,6 +537,14 @@
                   href: ca1824.md
                 - name: 'CA1825: Evitar asignaciones de matrices de longitud cero'
                   href: ca1825.md
+                - name: 'CA1826: Usar la propiedad en lugar del método Linq Enumerable'
+                  href: ca1826.md
+                - name: 'CA1827: No usar Count/LongCount si se puede usar Any'
+                  href: ca1827.md
+                - name: 'CA1828: No usar CountAsync/LongCountAsync si se puede usar AnyAsync'
+                  href: ca1828.md
+                - name: 'CA1829: Usar la propiedad Length/Count en lugar del método Enumerable.Count'
+                  href: ca1829.md
             - name: Advertencias de portabilidad
               items:
                 - name: Información general
