@@ -13,21 +13,23 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19bc4631e5cac9eea7b355bd25147edf384e86b6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844502"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586867"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0024: Tiempo elevado de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identificador de regla | DA0023 |  
-| Categoría |. Uso de .NET Framework |  
-| Método de generación de perfiles | Todo |  
-| El mensaje |% de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación usa mejor.|  
-| Tipo de regla | Información |  
+|||  
+|-|-|  
+|Identificador de regla|DA0023|  
+|Categoría|Uso de .NET Framework|  
+|Método de generación de perfiles|Todas|  
+|Mensaje|El % de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación utiliza mejor.|  
+|Tipo de regla|Informativa|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
@@ -47,4 +49,4 @@ Identificador de regla | DA0023 |
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque la columna **Memoria CLR de .NET\\% de tiempo del GC**. Determine si hay fases concretas de ejecución del programa en que la sobrecarga de la recolección de elementos no utilizados de memoria administrada sea mayor que en otras. Compare los valores de % de tiempo del GC con la tasa de recolección de elementos no utilizados notificada en los valores **N.º de colecciones de gen. 0**, **N.º de colecciones de gen. 1** y **N.º de colecciones de gen. 2**.  
   
- El valor del % de tiempo del GC intenta notificar la cantidad de tiempo que una aplicación dedica a la recolección de elementos no utilizados proporcional a la cantidad total de procesamiento. Tenga en cuenta que hay circunstancias en que el % de tiempo del GC puede notificar un valor muy alto, pero no es debido a una excesiva recolección de elementos no utilizados. Para obtener más información sobre la forma en que se calcula el valor del % de tiempo del GC, consulte la entrada [Diferencia entre los datos de rendimiento notificados por distintas herramientas – 4](https://blogs.msdn.com/maoni/archive/2007/01/11/difference-between-perf-data-reported-by-different-tools-4.aspx) del **Weblog de Maoni** en MSDN. Si se producen errores de página o la aplicación es adelantada por otro trabajo de mayor prioridad en el equipo durante la recolección de elementos no utilizados, el contador del % de tiempo del GC reflejará esos retrasos adicionales.
+ El valor del % de tiempo del GC intenta notificar la cantidad de tiempo que una aplicación dedica a la recolección de elementos no utilizados proporcional a la cantidad total de procesamiento. Tenga en cuenta que hay circunstancias en que el % de tiempo del GC puede notificar un valor muy alto, pero no es debido a una excesiva recolección de elementos no utilizados. Para obtener más información sobre la forma en que se calcula el valor del % de tiempo del GC, consulte la entrada [Diferencia entre los datos de rendimiento notificados por distintas herramientas – 4](https://devblogs.microsoft.com/dotnet/difference-between-perf-data-reported-by-different-tools-4/) del **Weblog de Maoni** en MSDN. Si se producen errores de página o la aplicación es adelantada por otro trabajo de mayor prioridad en el equipo durante la recolección de elementos no utilizados, el contador del % de tiempo del GC reflejará esos retrasos adicionales.

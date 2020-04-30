@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851004"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586803"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx).
+Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](https://docs.microsoft.com/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
 
 ## <a name="properties"></a>Propiedades
  Las marcas, los intervalos y los mensajes tienen dos propiedades: categoría e importancia. En el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), puede utilizar estas propiedades para filtrar el conjunto de marcadores que se muestran. Además, estas propiedades afectan a la representación visual de los marcadores. Por ejemplo, el tamaño de las marcas se utiliza para representar la importancia. Además, el color se utiliza para indicar la categoría.
@@ -31,9 +31,9 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
 
 ### <a name="c-and-visual-basic"></a>C# y Visual Basic
 
-En C#, Visual Basic y otro código administrado, use el proveedor predeterminado llamando a los métodos de la clase [Marcadores](/previous-versions/hh694099(v=vs.140)). Expone cuatro métodos para generar marcadores: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))y [WriteAlert](/previous-versions/hh694180(v=vs.140)). Existen varias sobrecargas de estas funciones, según si quiere utilizar valores predeterminados para las propiedades.  La sobrecarga más simple toma solo un parámetro de cadena que especifica la descripción del evento. La descripción se muestra en los informes del visualizador de simultaneidad.
+En C#, Visual Basic y otro código administrado, use el proveedor predeterminado llamando a los métodos de la clase [Marcadores](/previous-versions/hh694099(v=vs.140)). Expone cuatro métodos para generar marcadores: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) y [WriteAlert](/previous-versions/hh694180(v=vs.140)). Existen varias sobrecargas de estas funciones, según si quiere utilizar valores predeterminados para las propiedades.  La sobrecarga más simple toma solo un parámetro de cadena que especifica la descripción del evento. La descripción se muestra en los informes del visualizador de simultaneidad.
 
-#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Agregar compatibilidad con SDK a C# un proyecto de o Visual Basic
+#### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Agregar compatibilidad con SDK a un proyecto de C# o Visual Basic
 
 1. En la barra de menús, elija **Analizar**, **Visualizador de simultaneidad** y **Agregar SDK al proyecto**.
 
