@@ -432,6 +432,8 @@
                   href: ca1507.md
                 - name: 'CA1508: Evitar código de condición no alcanzado'
                   href: ca1508.md
+                - name: 'CA1509: Entrada no válida en el archivo de configuración de métricas de código'
+                  href: ca1509.md
             - name: Advertencias de movilidad
               items:
                 - name: Información general
@@ -575,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: No esperar una tarea directamente'
                   href: ca2007.md
+                - name: 'CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection'
+                  href: ca2009.md
             - name: Advertencias de seguridad
               items:
                 - name: Información general
