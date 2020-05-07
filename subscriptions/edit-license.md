@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Obtenga más información sobre cómo los administradores pueden editar asignaciones de suscripción.
-ms.openlocfilehash: d145d556467b4eecec787fe409b4faa45945bec0
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a0f72bf6a6561060fd4eddcf2fc11f0f4cf97f15
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232554"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564230"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
@@ -30,7 +30,13 @@ Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen 
 Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción, la dirección de correo electrónico, el país o región, el idioma, las descargas y el campo de referencia. Edite la información del suscriptor y haga clic en **Guardar**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Edición en masa de varios suscriptores
+
+
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
    > [!IMPORTANT]
    > Los niveles de suscripción, es decir, Enterprise, Professional, etc., y los GUID de suscripción no se pueden modificar con la edición masiva.  Si necesita asignar GUID de suscripción específicos a los usuarios, use el proceso para agregar usuarios eligiendo el identificador de suscripción. Si intenta realizar una carga con estos elementos cambiados en la plantilla de edición masiva, no podrá hacerla.

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef26a566229c228711ba6e57de50402df255c3dd
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189540"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153023"
 ---
 # <a name="add-tags-to-project-templates"></a>Adición de etiquetas en plantillas de proyecto
 
@@ -56,7 +56,7 @@ Es posible que quiera agregar o editar etiquetas en el archivo XML *.vstemplate*
 
 Puede usar los siguientes atributos opcionales en escenarios de usuario avanzado:
 
-|Atributo|Description|
+|Atributo|Descripción|
 |---------------|-----------------|
 |`Package`|Un identificador GUID que especifica el id. paquete de Visual Studio.|
 |`ID`|Especifica el identificador de recurso de Visual Studio.|
@@ -77,7 +77,7 @@ Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-|Elemento|Description|
+|Elemento|Descripción|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Obligatorio) Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|
 
@@ -93,7 +93,7 @@ Visual Studio ofrece una lista de etiquetas integradas. Al agregar una etiqueta 
 
 En la siguiente lista se muestran las etiquetas integradas disponibles en Visual Studio. Los valores correspondientes se muestran entre paréntesis.
 
-| Lenguaje | Plataforma | Tipo de proyecto |
+| Etiqueta de idioma | Etiqueta de plataforma | Etiqueta de tipo de proyecto |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Nube (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Consola (`console`) |

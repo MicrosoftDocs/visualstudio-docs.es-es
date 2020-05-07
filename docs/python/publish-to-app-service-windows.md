@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784667"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586559"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publicación en Azure App Service en Windows
 
@@ -63,7 +63,7 @@ Con una suscripción activa de Azure, cree un App Service con una aplicación we
 
 Cree un App Service temporal sin necesidad de una suscripción de Azure siguiendo estos pasos:
 
-1. Abra el explorador en [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Abra [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/) en el explorador.
 1. Seleccione **Aplicación web** para el tipo de aplicación, a continuación, seleccione **Siguiente**.
 1. Seleccione **Empty Site** (Sitio vacío) y luego **Crear**.
 1. Inicie sesión con el inicio de sesión social que prefiera y, después de un breve período de tiempo, el sitio está listo en la dirección URL mostrada.

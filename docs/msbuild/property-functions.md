@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307194"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586690"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -339,6 +339,10 @@ Output:
   Value2 = b
 -->
 ```
+
+## <a name="msbuild-condition-functions"></a>Funciones de condiciones de MSBuild
+
+Las funciones `Exists` y `HasTrailingSlash` no son funciones de propiedad. Están disponibles para su uso con el atributo `Condition`. Consulte [Condiciones de MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Vea también
 

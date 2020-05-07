@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a312bfe8c88b0ac523666779970cc28e3a7c798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
+ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633179"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "82072585"
 ---
 # <a name="msbuild-task"></a>tareas de MSBuild
 
@@ -42,6 +42,7 @@ Compila proyectos de MSBuild desde otro proyecto de MSBuild.
 | `RemoveProperties` | Parámetro `String` opcional.<br /><br /> Especifica el conjunto de propiedades globales que se va a quitar. |
 | `RunEachTargetSeparately` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, la tarea MSBuild invoca cada destino de la lista que se pasa a MSBuild uno a uno, en lugar de todos al mismo tiempo. Establecer este parámetro en `true` garantiza que los destinos subsiguientes se invocan incluso si se ha producido un error en los destinos previamente invocados. De lo contrario, un error de compilación detendría la invocación de todos los destinos subsiguientes. El valor predeterminado es `false`. |
 | `SkipNonexistentProjects` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, se omitirán los archivos del proyecto que no existen en el disco. De lo contrario, estos proyectos producirán un error. |
+|`SkipNonexistentTargets`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omitirán los archivos de proyecto que existan, pero que no contengan el elemento `Targets` con nombre. De lo contrario, estos proyectos producirán un error. Se presentó en MSBuild 15.5.|
 | `StopOnFirstFailure` | Parámetro `Boolean` opcional.<br /><br /> Si `true`, cuando uno de los proyectos no se puede compilar, no se compilarán más proyectos. Actualmente esto no se admite cuando se compila en paralelo (con varios procesadores). |
 | `TargetAndPropertyListSeparators` | Parámetro `String[]` opcional.<br /><br /> Especifica una lista de destinos y propiedades como metadatos de elemento de `Project`. Los separadores no tendrán escape antes del procesamiento. Por ejemplo, %3B (el carácter de escape ';') se tratará como si fuese un carácter sin escape ';'. |
 | `TargetOutputs` | Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Devuelve los resultados de los destinos compilados de todos los archivos de proyecto. Solo se devuelven los resultados de los destinos especificados; no se devuelven los resultados que puedan existir en los destinos de los que dependen esos destinos.<br /><br /> El parámetro `TargetOutputs` también contiene los metadatos siguientes:<br /><br /> -   `MSBuildSourceProjectFile`: Archivo de proyecto de MSBuild que contiene el destino que establece los resultados.<br />-   `MSBuildSourceTargetName`: Destino que establece los resultados. **Nota:**  Si quiere identificar los resultados de cada archivo de proyecto o destino por separado, ejecute la tarea `MSBuild` por separado para cada archivo de proyecto o destino. Si ejecuta la tarea `MSBuild` solo una vez para compilar todos los archivos del proyecto, los resultados de todos los destinos se recogen en una matriz. |

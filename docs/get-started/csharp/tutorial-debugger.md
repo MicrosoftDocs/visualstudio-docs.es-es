@@ -2,7 +2,7 @@
 title: 'Tutorial: Depurar código de C#'
 description: Obtenga información sobre cómo iniciar al depurador de Visual Studio, examinar el código e inspeccionar los datos.
 ms.custom: debug-experiment, seodec18, get-started
-ms.date: 01/31/2020
+ms.date: 04/23/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
+ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77027252"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "82153069"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
@@ -169,7 +169,7 @@ En primer lugar, creará un proyecto de aplicación de consola de .NET Core. En 
 
 2. Presione **F5** o el botón **Iniciar depuración**![Iniciar depuración](../../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración"). La aplicación se inicia y el depurador se ejecuta en la línea de código en la que haya establecido el punto de interrupción.
 
-    ![Establecimiento y uso de los puntos de interrupción](../csharp/media/get-started-set-breakpoint.png)
+    ![Establecimiento y uso de los puntos de interrupción](../csharp/media/get-started-set-breakpoint.gif)
 
     La flecha amarilla representa la instrucción en la que el depurador se ha puesto en pausa, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
 
@@ -177,13 +177,35 @@ En primer lugar, creará un proyecto de aplicación de consola de .NET Core. En 
 
     Los puntos de interrupción son una característica de utilidad cuando se conoce la línea o la sección de código que se quiere examinar en detalle. Para obtener información sobre los diferentes tipos de puntos de interrupción que se pueden establecer, como los puntos de interrupción condicionales, vea [Uso de puntos de interrupción](../../debugger/using-breakpoints.md).
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navegación por el código en el depurador mediante comandos de varios pasos
+## <a name="navigate-code-and-inspect-data-using-data-tips"></a>Navegación por el código e inspección de datos con sugerencias de datos
 
 Normalmente, aquí usamos métodos abreviados de teclado porque son una buena forma de ejecutar rápidamente la aplicación en el depurador, pero los comandos equivalentes, como los comandos de menú, se muestran entre paréntesis.
 
-1. Mientras está en pausa en el bucle `for` del método `Main`, presione **F11** dos veces (o bien elija **Depurar > Depurar paso a paso por instrucciones**) para avanzar a la llamada al método `SendMessage`.
+1. Mientras está en pausa en la instrucción `name += letters[i]`, mantenga el mouse sobre la variable `letters` y verá su valor predeterminado, el valor del primer elemento de la matriz `char[10]`.
 
-     Después de presionar **F11** dos veces, debería estar en esta línea de código:
+     Las características que le permiten inspeccionar las variables son una de las más útiles del depurador y ofrecen diferentes formas de hacerlo. A menudo, para depurar un problema, debe intentar averiguar si las variables están almacenando los valores que espera que tengan en un momento determinado.
+
+1. Expanda la variable `letters` para ver sus propiedades, que incluyen todos los elementos que contiene.
+
+     ![Visualización de una sugerencia de datos](../csharp/media/get-started-view-data-tip.png "Visualización de una sugerencia de datos")
+
+1. Después, mantenga el mouse sobre la variable `name` y verá su valor actual, una cadena vacía.
+
+1. Presione **F10** dos veces, o bien elija **Depurar > Depurar paso a paso por procedimientos**, para avanzar hasta la llamada de método `SendMessage` y, después, vuelva a presionar **F10**.
+
+     F10 hace avanzar el depurador hasta la siguiente instrucción sin depurar las funciones ni los métodos del código de la aplicación paso a paso por instrucciones (el código se sigue ejecutando). Al presionar F10 en la llamada de método `SendMessage`, se omite el código de implementación de `SendMessage` (algo que quizás no nos interese en este momento).
+
+1. Presione **F10** varias veces, o bien elija **Depurar** > **Depurar paso a paso por procedimientos**, para iterar varias veces por el bucle `for`, deténgase de nuevo en el punto de interrupción y mantenga el mouse sobre la variable `name` cada vez para comprobar su valor.
+
+     ![Visualización de una sugerencia de datos](../csharp/media/get-started-data-tip.gif "Visualización de una sugerencia de datos")
+
+     El valor de la variable cambia con cada iteración del bucle `for` y muestra los valores de `f`, después, `fr`, luego, `fre`, etc. Para hacer que el depurador avance por el bucle más rápido en este escenario, puede presionar **F5**, o bien elegir **Depurar** > **Continuar**, en su lugar, lo que le permite avanzar hasta el punto de interrupción en lugar de hasta la siguiente instrucción.
+
+     A menudo, al realizar una depuración, queremos una forma rápida de comprobar los valores de las propiedades de las variables para ver si se almacenan los valores correspondientes, y las sugerencias de datos son una buena forma de verlo.
+
+1. Mientras aún está en pausa en el bucle `for` del método `Main`, presione **F11** hasta que esté en pausa en la llamada de método `SendMessage`, o bien elija **Depurar > Depurar paso a paso por instrucciones**.
+
+     Debe estar en esta línea de código:
 
      `SendMessage(name, a[i]);`
 
@@ -193,7 +215,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
      ![Uso de F11 para depurar código paso a paso por instrucciones](../csharp/media/get-started-f11.png "Depuración paso a paso por instrucciones con F10")
 
-     F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. F11 es una buena forma de examinar el flujo de ejecución con más detalle. Más adelante le mostraremos otras opciones para moverse más rápido por el código. De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../../debugger/just-my-code.md)).
+     F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. F11 es una buena forma de examinar el flujo de ejecución con más detalle. De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../../debugger/just-my-code.md)).
 
      Imagine que ha terminado de examinar el método `SendMessage` y quiere salir de él, pero permanecer en el depurador. Puede hacerlo con el comando **Salir de la depuración**.
 
@@ -201,15 +223,7 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
      Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurador) hasta que se devuelve el método o la función actual.
 
-     Debería volver a estar en el bucle `for` del método `Main`, detenido en la llamada al método `SendMessage`.
-
-1. Presione **F11** varias veces hasta que vuelva a la llamada al método `SendMessage`.
-
-1. Mientras está en pausa en la llamada de método, presione **F10** una vez (o bien, elija **Depurar > Paso a paso por procedimientos**).
-
-     ![Uso de F10 para depurar código paso a paso por procedimientos](../csharp/media/get-started-step-over.png "Paso a paso por procedimientos F10")
-
-     En este caso, tenga en cuenta que el depurador no depura paso a paso por instrucciones el método `SendMessage`. **F10** hace avanzar el depurador sin depurar las funciones o los métodos en el código de la aplicación paso a paso por instrucciones (el código todavía se ejecuta). Al presionar **F10** en la llamada de método `SendMessage` (en vez de **F11**), se omite el código de implementación de `SendMessage` (algo que quizás no nos interese en este momento). Para más información sobre las distintas formas de desplazarse por el código, vea [Navegación por el código en el depurador](../../debugger/navigating-through-code-with-the-debugger.md).
+     Debería volver a estar en el bucle `for` del método `Main`, detenido en la llamada al método `SendMessage`. Para más información sobre las distintas formas de desplazarse por el código, vea [Navegación por el código en el depurador](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegación por el código con Ejecutar hasta clic
 
@@ -235,24 +249,6 @@ Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../../debugger/med
 El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
 El depurador se detiene de nuevo en el punto de interrupción que ha establecido antes dentro del bucle `for`.
-
-## <a name="inspect-variables-with-data-tips"></a>Inspeccionar variables con información sobre datos
-
-Las características que le permiten inspeccionar las variables son una de las más útiles del depurador y ofrecen diferentes formas de hacerlo. A menudo, para depurar un problema, debe intentar averiguar si las variables están almacenando los valores que espera que tengan en un momento determinado.
-
-1. Mientras está en pausa en la instrucción `name += letters[i]`, mantenga el mouse sobre la variable `letters` y verá su valor predeterminado, el valor del primer elemento de la matriz `char[10]`.
-
-1. Expanda la variable `letters` para ver sus propiedades, que incluyen todos los elementos que contiene.
-
-1. Después, mantenga el mouse sobre la variable `name` y verá su valor actual, una cadena vacía.
-
-1. Presione **F5** varias veces (o bien, seleccione **Depurar** > **Continuar**) para iterar varias veces por el bucle `for`, deténgase de nuevo en el punto de interrupción y mantenga el mouse sobre la variable `name` cada vez para comprobar su valor.
-
-     ![Visualización de una sugerencia de datos](../csharp/media/get-started-data-tip.gif "Visualización de una sugerencia de datos")
-
-     El valor de la variable cambia con cada iteración del bucle `for` y muestra los valores de `f`, después, `fr`, luego, `fre`, etc.
-
-     A menudo, al realizar una depuración, queremos una forma rápida de comprobar los valores de las propiedades de las variables para ver si se almacenan los valores correspondientes, y las sugerencias de datos son una buena forma de verlo.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspeccionar variables con las ventanas Automático y Variables locales
 

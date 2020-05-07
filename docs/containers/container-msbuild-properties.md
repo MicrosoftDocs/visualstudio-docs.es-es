@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
+ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472669"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82189496"
 ---
 # <a name="container-tools-build-properties"></a>Propiedades de compilación de las herramientas de contenedor
 
@@ -40,13 +40,41 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 | DockerDefaultTargetOS | El sistema operativo de destino predeterminado que se usa al compilar la imagen de Docker. | Establecido por Visual Studio. |1.0.1985401 o más reciente|
 | DockerImageLabels | El conjunto predeterminado de etiquetas aplicadas a la imagen de Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 o más reciente|
 | DockerFastModeProjectMountDirectory|En el **modo rápido**, esta propiedad controla dónde se monta el volumen del directorio de salida del proyecto en el contenedor en ejecución.|C:\app (Windows) o /app (Linux)|1.9.2 o más reciente|
-| DockerfileBuildArguments | Los argumentos adicionales pasados al comando de compilación de Docker. | No es aplicable. |1.0.1872750 o más reciente|
+| DockerfileBuildArguments | Argumentos adicionales pasados al comando de [compilación de Docker](https://docs.docker.com/engine/reference/commandline/build/). | No es aplicable. |1.0.1872750 o más reciente|
 | DockerfileContext | Contexto predeterminado que se usa al compilar la imagen de Docker, como una ruta de acceso relativa a Dockerfile. | Establecido por Visual Studio. |1.0.1872750 o más reciente|
 | DockerfileFastModeStage | La fase de Dockerfile (es decir, el destino) que se va a usar al compilar la imagen en modo de depuración. | Primera fase encontrada en el archivo Dockerfile (base) |
 | DockerfileFile | Describe el archivo Dockerfile predeterminado que se usará para compilar o ejecutar el contenedor del proyecto. También puede ser una ruta de acceso. | Dockerfile |1.0.1872750 o más reciente|
-| DockerfileRunArguments | Los argumentos adicionales pasados al comando de ejecución de Docker. | No es aplicable. |1.0.1872750 o más reciente|
+| DockerfileRunArguments | Argumentos adicionales pasados al comando de [ejecución de Docker](https://docs.docker.com/engine/reference/commandline/run/). | No es aplicable. |1.0.1872750 o más reciente|
 | DockerfileRunEnvironmentFiles | Lista delimitada por punto y coma de archivos de entorno aplicada durante la ejecución de Docker. | No es aplicable. |1.0.1872750 o más reciente|
 | DockerfileTag | La etiqueta que se usará al compilar la imagen de Docker. En la depuración, se anexa un ":dev" a la etiqueta. | Nombre del ensamblado después de quitar caracteres no alfanuméricos con las siguientes reglas: <br/> Si la etiqueta resultante es numérica, "Image" se inserta como prefijo (por ejemplo, image2314) <br/> Si la etiqueta resultante es una cadena vacía, se usa "Image" como etiqueta. |1.0.1872750 o más reciente|
+
+## <a name="example"></a>Ejemplo
+
+El siguiente archivo de proyecto contiene ejemplos de algunos de estos valores.
+
+```xml
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
+         folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
+         set to the same folder as the Dockerfile. -->
+    <DockerfileContext>.</DockerfileContext>
+    <!-- Set `docker run` arguments to mount a volume -->
+    <DockerfileRunArguments>-v $(pwd)/host-folder:/container-folder:ro</DockerfileRunArguments>
+    <!-- Set `docker build` arguments to add a custom tag -->
+    <DockerfileBuildArguments>-t contoso/front-end:v2.0</DockerfileBuildArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+  </ItemGroup>
+
+</Project>
+```
 
 ## <a name="next-steps"></a>Pasos siguientes
 
