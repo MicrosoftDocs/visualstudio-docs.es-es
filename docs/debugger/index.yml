@@ -2,7 +2,7 @@
 title: Documentación del depurador de Visual Studio
 summary: El depurador de Visual Studio permite observar el comportamiento del programa en tiempo de ejecución y detectar problemas.
 metadata:
-  title: Depuración en Visual Studio
+  title: Depurar en Visual Studio
   description: Obtenga información sobre cómo usar Visual Studio para depurar aplicaciones y código.
   ms.topic: landing-page
   author: mikejo5000
@@ -26,7 +26,7 @@ landingContent:
       url: debugger-feature-tour.md
     - text: Búsqueda de la tarea de depuración
       url: find-your-debugging-task.md
-- title: Introducción
+- title: Primeros pasos
   linkLists:
   - linkListType: tutorial
     links:
@@ -50,7 +50,7 @@ landingContent:
       url: using-breakpoints.md
     - text: Editar código y seguir depurando
       url: edit-and-continue.md
-- title: Inspección de los datos
+- title: Inspeccionar datos
   linkLists:
   - linkListType: how-to-guide
     links:

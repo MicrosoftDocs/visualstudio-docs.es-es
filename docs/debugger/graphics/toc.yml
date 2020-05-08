@@ -52,7 +52,7 @@
       href: graphics-diagnostics-examples.md
     - name: 'Tutorial: Capturar información de gráficos'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Tutorial: Capturar información de gráficos mediante programación'
+    - name: 'Tutorial: Captura de información de gráficos mediante programación'
       href: walkthrough-capturing-graphics-information-programmatically.md
     - name: 'Tutorial: Objetos ausentes debido al estado del dispositivo'
       href: walkthrough-missing-objects-due-to-device-state.md
@@ -60,11 +60,11 @@
       href: walkthrough-missing-objects-due-to-vertex-shading.md
     - name: 'Tutorial: Objetos ausentes debido a una canalización mal configurada'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Tutorial: Depurar errores de representación debidos al sombreado'
+    - name: 'Tutorial: Depuración de errores de representación debidos al sombreado'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo'
+    - name: 'Tutorial: Uso de Diagnóstico de gráficos para depurar un sombreador de cálculo'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Cómo: Cambiar la máquina de reproducción de diagnósticos de gráficos'
+    - name: Procedimiento Cambio de la máquina de reproducción de Diagnóstico de gráficos
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Referencia (captura mediante programación)
   items:
