@@ -20,4 +20,4 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/18/2020
 ms.locfileid: "68143475"
 ---
-Windows 7
+Windows 7
