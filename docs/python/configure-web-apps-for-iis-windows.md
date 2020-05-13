@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957379"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configuración de aplicaciones web de Python para IIS
@@ -145,4 +145,4 @@ A continuación, modifique el archivo *web.config* para incluir las rutas de acc
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>Implementación en IIS o una máquina virtual Windows
 
-Con el archivo *web.config* correcto en el proyecto, puede publicar en el equipo que ejecuta IIS si usa el comando **Publish** en el menú contextual del proyecto en el **Explorador de soluciones** y selecciona la opción **IIS, FTP, etc.**. En este caso, Visual Studio simplemente copia los archivos del proyecto en el servidor. Usted es responsable de toda la configuración del lado servidor.
+Con el archivo *web.config* correcto en el proyecto, puede publicar en el equipo que ejecuta IIS si usa el comando **Publish** en el menú contextual del proyecto en el **Explorador de soluciones** y selecciona la opción **IIS, FTP, etc.** . En este caso, Visual Studio simplemente copia los archivos del proyecto en el servidor. Usted es responsable de toda la configuración del lado servidor.

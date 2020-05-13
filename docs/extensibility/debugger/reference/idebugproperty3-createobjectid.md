@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID | Microsoft Docs
+title: IDebugProperty3::CreateObjectID ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::CreateObjectID
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee1d2a66a5ed655c132526c5d73b6673a680c971
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339856"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721179"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-Crea un identificador único para esta propiedad para asegurarse de que es único entre todas las demás propiedades.
+Crea un identificador único para esta propiedad para asegurarse de que es única entre todas las demás propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,15 +38,15 @@ int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método se llama cuando el Administrador de sesión de depuración desea asegurarse de que esta propiedad se identifica entre todas las demás propiedades. El motor de depuración (DE) es compatible con este método, a menos que ya de forma exclusiva se identifican las propiedades que se ocupa. Si la DE no admite este método, devuelve `E_NOTIMPL`.
+## <a name="remarks"></a>Observaciones
+ Se llama a este método cuando el administrador de depuración de sesión desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades. El motor de depuración (DE) admite este método a menos que las propiedades con las que trata ya se identifican de forma única. Si el DE no admite este `E_NOTIMPL`método, devuelve .
 
- Cualquier identificador creado con `CreateObjectID` se destruye cuando la [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) se llama al método; Esto también señala el final de la necesidad de forma única que identifica esta propiedad.
+ Cualquier identificador único `CreateObjectID` creado con se destruye cuando el [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) se llama al método; esto también indica el fin de la necesidad de identificar de forma única esta propiedad.
 
 > [!NOTE]
-> No hay ningún método para recuperar este identificador único, por lo que puede hacer la DE cualquier valor para los identificadores únicos cuando la `CreateObjectID` se llama al método.
+> No hay ningún método para recuperar este identificador único, por lo que `CreateObjectID` la DE puede hacer lo que quiera para identificadores únicos cuando se llama al método.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

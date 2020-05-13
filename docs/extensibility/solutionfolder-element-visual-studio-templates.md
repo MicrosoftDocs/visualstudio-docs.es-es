@@ -1,5 +1,5 @@
 ---
-title: SolutionFolder (elemento, plantillas de Visual Studio) | Microsoft Docs
+title: Elemento SolutionFolder (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <SolutionFolder> element [Visual Studio Templates]
 - SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ef2e0ff20f8c9f7146e3fa71cbce07b169077f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719997"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699997"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder (Elemento, Plantillas de Visual Studio)
 Agrupa los proyectos en plantillas de varios proyectos.
 
- \<VSTemplate > \<TemplateContent > \<ProjectCollection > \<SolutionFolder >
+ \<VSTemplate \<> TemplateContent \<> \<ProjectCollection> SolutionFolder>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,8 +57,8 @@ Agrupa los proyectos en plantillas de varios proyectos.
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Especifica la organización y el contenido de las plantillas de varios proyectos.|
 |`SolutionFolder`|Agrupa los proyectos en plantillas de varios proyectos.|
 
-## <a name="remarks"></a>Comentarios
- Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El elemento `SolutionFolder` se usa para organizar los proyectos de la plantilla en grupos. Las carpetas especificadas por los elementos `SolutionFolder` se crean como carpetas de soluciones en el proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).
+## <a name="remarks"></a>Observaciones
+ Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El elemento `SolutionFolder` se usa para organizar los proyectos de la plantilla en grupos. Las carpetas especificadas por los elementos `SolutionFolder` se crean como carpetas de soluciones en el proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: Crear plantillas de](../ide/how-to-create-multi-project-templates.md)varios proyectos .
 
 ## <a name="example"></a>Ejemplo
  Este ejemplo usa el elemento `SolutionFolder` para dividir la plantilla de varios proyectos en dos grupos, `Math Classes` y `Graphics Classes`. La plantilla contiene cuatro proyectos, dos de los cuales se colocan en cada carpeta de soluciones.

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595714"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255557"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -72,6 +72,7 @@ Los siguientes modificadores de línea de comandos muestran el IDE y realizan la
 |[/LCID o /L](lcid-devenv-exe.md)|Establece el idioma predeterminado del IDE. Si el idioma especificado no se incluye en la instalación de Visual Studio, se omitirá este valor.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Inicia Visual Studio y registra toda la actividad en el archivo de registro.<br /><br /> `devenv /log mylogfile.xml`|
 |[/NoSplash](nosplash-devenv-exe.md)|Abre el IDE sin mostrar la pantalla de presentación.<br /><br /> `devenv /nosplash File1 File2`|
+|[/ResetSettings](resetsettings-devenv-exe.md)|Restaura la configuración predeterminada de Visual Studio. Opcionalmente, restablece la configuración del archivo `.vssettings` especificado.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Run o /R](run-devenv-exe.md)|Compila y ejecuta la solución especificada.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compila y ejecuta la solución especificada, minimiza el IDE cuando se ejecuta la solución y cierra el IDE una vez finalizada la ejecución de la solución.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Inicia Visual Studio en modo seguro. Este modificador carga únicamente el entorno predeterminado, los servicios predeterminados y las versiones publicadas de paquetes de terceros.<br /><br /> Este modificador no toma ningún argumento.|
@@ -89,7 +90,6 @@ Los siguientes modificadores de línea de comandos no muestran el IDE.
 |[/Project](project-devenv-exe.md)|Proyecto que se va a compilar, limpiar o implementar. Puede usar este modificador únicamente si también ha especificado el modificador `/Build`, `/Rebuild`, `/Clean` o `/Deploy`.<br /><br /> `devenv mysln.sln /build Debug /project proj1`|
 |[/ProjectConfig](projectconfig-devenv-exe.md)|Especifica la configuración de proyecto que se va a compilar o implementar. Puede usar este modificador únicamente si también ha especificado el modificador `/Project`.<br /><br /> `devenv mysln.sln /build Release /project proj1 /projectconfig Release`|
 |[/Rebuild](rebuild-devenv-exe.md)|Limpia y, a continuación, compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> `devenv mysln.sln /rebuild`|
-|[/ResetSettings](resetsettings-devenv-exe.md)|Restaura la configuración predeterminada de Visual Studio. Opcionalmente, restablece la configuración del archivo `.vssettings` especificado.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|Actualiza el archivo de solución especificado y todos sus archivos de proyecto, o bien el archivo de proyecto especificado, a los formatos actuales de Visual Studio para estos archivos.<br /><br /> `devenv mysln.sln /upgrade`|
 
 ## <a name="see-also"></a>Vea también

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7ea464695faeaf6651f645a39ce2b41d255108
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633309"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093965"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 
@@ -44,6 +44,8 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
     <Compile Include = "file1.cs;file2.cs"/>
 </ItemGroup>
 ```
+
+El atributo `Include` es una ruta de acceso que se interpreta en relación con la carpeta del archivo de proyecto, $(MSBuildProjectPath), incluso si el elemento está en un archivo importado, como un archivo *.targets*.
 
 ## <a name="create-items-during-execution"></a>Crear elementos durante la ejecución
 
@@ -122,7 +124,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 
  Un elemento puede tener cero o varios valores de metadatos. Puede cambiar los valores de los metadatos en cualquier momento. Si establece los metadatos en un valor vacío, se quitan eficazmente de la compilación.
 
-### <a name="BKMK_ReferencingItemMetadata"></a> Hacer referencia a metadatos de elementos en un archivo de proyecto
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Hacer referencia a metadatos de elementos en un archivo de proyecto
 
  Puede hacer referencia a los metadatos de elementos en el archivo de proyecto mediante la sintaxis %(\<NombreMetadatosElemento>). Si existe ambigüedad, se puede calificar una referencia mediante el nombre del tipo de elemento. Por ejemplo, puede especificar %(\<TipoElemento.NombreMetadatosElemento>). En el ejemplo siguiente se usan los metadatos Display para procesar por lotes la tarea Message. Para obtener más información sobre cómo usar los metadatos de elementos para el procesamiento por lotes, vea [Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md).
 
@@ -142,11 +144,11 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 </Project>
 ```
 
-### <a name="BKMK_WellKnownItemMetadata"></a> Metadatos de elementos conocidos
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Metadatos de elementos conocidos
 
  Cuando se agrega un elemento a un tipo de elemento, se le asignan metadatos conocidos. Por ejemplo, todos los elementos tienen los metadatos conocidos %(\<NombreDeArchivo>), cuyo valor es el nombre de archivo del elemento (sin la extensión). Para obtener más información, vea [Metadatos de elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).
 
-### <a name="BKMK_Transforming"></a> Transformar tipos de elemento mediante metadatos
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Transformar tipos de elemento mediante metadatos
 
  Puede transformar listas de elementos en nuevas listas de elementos mediante metadatos. Por ejemplo, puede transformar un tipo de elemento `CppFiles` que tiene elementos que representan archivos *.cpp* en una lista correspondiente de archivos *.obj* mediante la expresión `@(CppFiles -> '%(Filename).obj')`.
 
@@ -189,7 +191,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 
  A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que pueden contener elementos de elemento. Los atributos de esta sección son válidos cuando se especifican para un elemento en un `ItemGroup` que se encuentra en un `Target`.
 
-### <a name="BKMK_RemoveAttribute"></a> Atributo Remove
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Atributo Remove
 
  El atributo `Remove` quita elementos específicos (archivos) del tipo de elemento. Este atributo se introdujo en .NET Framework 3.5 (solo destinos internos). A partir de MSBuild 15.0, se admiten los destinos internos y externos.
 
@@ -203,7 +205,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
 </Target>
 ```
 
-### <a name="BKMK_KeepMetadata"></a> Atributo KeepMetadata
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> Atributo KeepMetadata
 
  Si se genera un elemento dentro de un destino, el elemento de elemento puede contener el atributo `KeepMetadata`. Si se especifica este atributo, solo los metadatos que se especifican en la lista delimitada por punto y coma de nombres se transferirán desde el elemento de origen al elemento de destino. Un valor vacío para este atributo equivale a no especificarlo. El atributo `KeepMetadata` se introdujo en .NET Framework 4.5.
 
@@ -246,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_RemoveMetadata"></a> Atributo RemoveMetadata
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> Atributo RemoveMetadata
 
  Si se genera un elemento dentro de un destino, el elemento de elemento puede contener el atributo `RemoveMetadata`. Si se especifica este atributo, todos los metadatos se transfieren desde el elemento de origen al elemento de destino excepto aquellos cuyos nombres figuran en la lista de nombres delimitada por punto y coma. Un valor vacío para este atributo equivale a no especificarlo. El atributo `RemoveMetadata` se introdujo en .NET Framework 4.5.
 
@@ -296,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="BKMK_KeepDuplicates"></a> Atributo KeepDuplicates
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> Atributo KeepDuplicates
 
  Si se genera un elemento dentro de un destino, el elemento de elemento puede contener el atributo `KeepDuplicates`. `KeepDuplicates` es un atributo `Boolean` que especifica si se debe agregar al grupo de destino un elemento que es un duplicado exacto de un elemento existente.
 

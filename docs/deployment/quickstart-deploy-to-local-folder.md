@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71128206"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implementar una aplicación en una carpeta local con Visual Studio
@@ -36,7 +36,7 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **Carpeta**.
 
-    ![Selección de la carpeta local como destino de publicación](../deployment/media/quickstart-publish-folder.png "Selección de la carpeta")
+    ![Selección de la carpeta local como destino de publicación](../deployment/media/quickstart-publish-folder.png "Elección de carpeta")
 
 1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta local.
 
@@ -46,7 +46,7 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. Para configurar las opciones de implementación, seleccione **Configurar** en el resumen de perfil y luego la pestaña **Configuración**.
 
-    ![Configuración de perfil](../deployment/media/quickstart-profile-settings.png "Profile settings")
+    ![Configuración del perfil](../deployment/media/quickstart-profile-settings.png "Configuración del perfil")
 
 1. Configure opciones como si se va a implementar una configuración de depuración o versión y seleccione **Guardar**.
 

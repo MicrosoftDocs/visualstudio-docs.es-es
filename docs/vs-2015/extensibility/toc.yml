@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Resaltar texto
           href: walkthrough-highlighting-text.md
-        - name: esquematizar
+        - name: Esquematización
           href: walkthrough-outlining.md
         - name: Mostrar llaves que coincidan
           href: walkthrough-displaying-matching-braces.md
@@ -512,9 +512,9 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Administración de asociaciones de archivos en paralelo
               href: managing-side-by-side-file-associations.md
-- name: Archivo
+- name: Archivar
   items:
-    - name: Archivo
+    - name: Archivar
       href: archive.md
     - name: Interfaces heredadas en el editor
       items:
@@ -648,9 +648,9 @@
           href: include-element.md
         - name: Define (Elemento)
           href: define-element.md
-        - name: Commands (Elemento)
+        - name: Elemento Commands
           items:
-            - name: Commands (Elemento)
+            - name: Elemento Commands
               href: commands-element.md
             - name: Menus (Elemento)
               items:
@@ -658,11 +658,11 @@
                   href: menus-element.md
                 - name: Menu (Elemento)
                   href: menu-element.md
-            - name: Groups (Elemento)
+            - name: Elemento Groups
               items:
-                - name: Groups (Elemento)
+                - name: Elemento Groups
                   href: groups-element.md
-                - name: Group (Elemento)
+                - name: Elemento Group
                   href: group-element.md
             - name: Buttons (Elemento)
               items:
@@ -706,7 +706,7 @@
               href: usedcommands-element.md
             - name: UsedCommand (Elemento)
               href: usedcommand-element.md
-        - name: Elemento Parent
+        - name: Elemento primario
           href: parent-element.md
         - name: Icon (Elemento)
           href: icon-element.md
@@ -840,13 +840,13 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Enumeradores
+        - name: Enumerators
           items:
-            - name: Enumeradores
+            - name: Enumerators
               href: enumerators.md
             - name: Código de comando
               href: command-code-enumerator.md
-            - name: Mensaje
+            - name: Message
               href: message-enumerator.md
             - name: Código de estado de archivo
               href: file-status-code-enumerator.md
@@ -880,9 +880,9 @@
           href: adding-command-line-switches.md
     - name: Control de errores y valores devueltos
       href: error-handling-and-return-values.md
-    - name: de la empresa
+    - name: Objetos
       items:
-        - name: de la empresa
+        - name: Objetos
           href: objects.md
         - name: VSCodeWindow (Objeto)
           href: vscodewindow-object.md

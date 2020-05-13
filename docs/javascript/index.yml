@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: "Tutoriales de Visual\_Studio | JavaScript y TypeScript"
+title: Tutoriales de Visual Studio | JavaScript y TypeScript
 summary: Creación de aplicaciones de JavaScript y TypeScript con Visual Studio
 metadata:
   title: JavaScript y TypeScript en Visual Studio
@@ -9,46 +9,52 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "75678953"
 landingContent:
-  - title: Primeros pasos
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: JavaScript y TypeScript en Visual Studio
-            url: javascript-in-vs-2019.md
-      - linkListType: how-to-guide
-        links:
-          - text: Instalar Visual Studio
-            url: ../install/install-visual-studio.md
-      - linkListType: get-started
-        links:
-          - text: Iniciar una visita guiada
-            url: quickstart-ide-orientation-js.md
-  - title: Creación de aplicaciones JavaScript y TypeScript
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Crear una aplicación web con Node.js y Express
-            url: tutorial-nodejs.md
-          - text: Crear una aplicación web con Node.js y React
-            url: tutorial-nodejs-with-react-and-jsx.md
-          - text: Crear una aplicación web con Node.js y Vue.js
-            url: quickstart-vuejs-with-nodejs.md
-          - text: Crear una aplicación ASP.NET Core con TypeScript
-            url: tutorial-aspnet-with-typescript.md
-  - title: Conocer Visual Studio
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Escribir y editar código
-            url: write-and-edit-code.md
-          - text: Administrar paquetes de npm
-            url: npm-package-management.md
-          - text: Uso de REPL interactivo de Node.js
-            url: nodejs-interactive-repl.md
-          - text: Depurar el código
-            url: debug-nodejs.md
-          - text: Desarrollo de código sin proyectos o soluciones
-            url: develop-javascript-code-without-solutions-projects.md
-          - text: Escribir y ejecutar pruebas unitarias
-            url: unit-testing-javascript-with-visual-studio.md
+- title: Introducción
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript y TypeScript en Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Instalación de Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Iniciar una visita guiada
+      url: quickstart-ide-orientation-js.md
+- title: Creación de aplicaciones JavaScript y TypeScript
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Crear una aplicación web con Node.js y Express
+      url: tutorial-nodejs.md
+    - text: Crear una aplicación web con Node.js y React
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Crear una aplicación web con Node.js y Vue.js
+      url: quickstart-vuejs-with-nodejs.md
+    - text: Crear una aplicación ASP.NET Core con TypeScript
+      url: tutorial-aspnet-with-typescript.md
+- title: Conocer Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Escribir y editar código
+      url: write-and-edit-code.md
+    - text: Administrar paquetes de npm
+      url: npm-package-management.md
+    - text: Uso de REPL interactivo de Node.js
+      url: nodejs-interactive-repl.md
+    - text: Depuración del código
+      url: debug-nodejs.md
+    - text: Desarrollo de código sin proyectos o soluciones
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Escribir y ejecutar pruebas unitarias
+      url: unit-testing-javascript-with-visual-studio.md

@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault (elemento, plantillas de Visual Studio)
+title: Elemento ShowByDefault (Plantillas de Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720102"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700108"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento, plantillas de Visual Studio)
+# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (Plantillas de Visual Studio)
 Si `false`, especifica que la plantilla solo se mostrará en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
 
- \<VSTemplate > \<TemplateData > \<ShowByDefault >
+ \<VSTemplate \<> TemplateData> \<> ShowByDefault
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Si `false`, especifica que la plantilla solo se mostrará en el [TemplateGroupID
 
  El texto debe ser `true` o `false`. Si es true, especifica que la plantilla se muestra para todos los tipos de proyecto. Si es false, la plantilla solo se muestra en el `TemplateGroupID` especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `ShowByDefault` es un elemento opcional. El valor predeterminado es `true`.
 
 ## <a name="example"></a>Ejemplo

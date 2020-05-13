@@ -3,15 +3,16 @@ title: Contacto con el administrador de suscripciones desde el portal de suscrip
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
-ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491575"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232632"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
 Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escuela, lo más probable es que se la haya asignado un administrador de suscripciones.  Los administradores pueden asignar o eliminar suscripciones, cambiar las direcciones de correo electrónico de inicio de sesión, determinar si puede descargar software y realizar otras funciones relacionadas con la suscripción.
@@ -33,6 +34,12 @@ Dados el tamaño y la complejidad de muchas organizaciones, es posible que desco
 
 ## <a name="resources"></a>Recursos
 - [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si todavía no lo ha hecho, le recomendamos que active estas ventajas para sacar el máximo partido de su suscripción a Visual Studio:

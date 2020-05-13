@@ -1,30 +1,30 @@
 ---
-title: AsyncTaskMethodBuilder.m_builder (campo) | Microsoft Docs
+title: AsyncTaskMethodBuilder.m_builder Campo de la aplicación ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_builder field, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a4f761671c67ee1fe77883534b585f4f2f3715
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322297"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739405"
 ---
-# <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder (campo)
-Representa el objeto de generador de genérico a la que se delega esta instancia no genérica.
+# <a name="asynctaskmethodbuilderm_builder-field"></a>Campo AsyncTaskMethodBuilder.m_builder
+Representa el objeto de generador genérico al que se delega esta instancia no genérica.
 
- **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Espacio de nombres:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+ Dado que no puede tener acceso a este miembro interno desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,8 +32,8 @@ Representa el objeto de generador de genérico a la que se delega esta instancia
 .field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="see-also"></a>Vea también
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internos de extensión paralela para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

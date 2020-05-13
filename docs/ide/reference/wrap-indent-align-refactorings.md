@@ -1,21 +1,22 @@
 ---
 title: Ajustar, aplicar sangría y alinear refactorizaciones
 description: Aprenda a encapsular y alinear cadenas de llamadas a método.
-ms.date: 02/19/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 349f2eeccfea4fea03967929b01114c0de1af155
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093887"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Ajustar, aplicar sangría y alinear refactorizaciones
 
@@ -24,6 +25,8 @@ ms.locfileid: "77529423"
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 **Qué:** permite encapsular y alinear cadenas de llamadas a método.
 
@@ -67,6 +70,8 @@ Esta refactorización se aplica a lo siguiente:
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 **Qué:** permite encapsular expresiones binarias.
 

@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692322"
 ---
 # <a name="task-comments"></a>Comentarios de tareas
@@ -28,6 +28,6 @@ Visual Studio para Mac dirige la atención a estos marcadores al resaltarlos en 
 
 ![Panel Lista de tareas](media/source-editor-image11.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Uso de la lista de tareas (Visual Studio en Windows)](/visualstudio/ide/using-the-task-list)

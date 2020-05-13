@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetHostingProcessLanguage | Microsoft Docs
+title: IDebugProcess3::GetHostingProcessLanguage ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetHostingProcessLanguage
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36098cf1fa19228962743856a814f0d094439edd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3b27be0850755a1a2808c8c5c758a3ad59b41d7e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313901"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723622"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
-Este método devuelve un `GUID` que representa el idioma de este proceso, como se establece mediante una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
+Este método `GUID` devuelve un que representa el idioma de este proceso establecido por una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ int GetHostingProcessLanguage(
 
 ## <a name="parameters"></a>Parámetros
 `pguidLang`\
-[out] El `GUID` del lenguaje de este proceso. `GUID_NULL` (C++) o `Guid.Empty` (C#) significa que no está establecido el idioma.
+[fuera] El `GUID` lenguaje de este proceso. `GUID_NULL`(C++) `Guid.Empty` o (C- significa que el idioma no está establecido.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

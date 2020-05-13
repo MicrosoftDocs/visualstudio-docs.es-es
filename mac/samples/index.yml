@@ -106,7 +106,7 @@ sections:
               src: ../media/samples/images.png
               href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
             title: Imágenes de Mac
-  - title: Todas las muestras
+  - title: Todos los ejemplos
     items:
       - type: list
         style: cards

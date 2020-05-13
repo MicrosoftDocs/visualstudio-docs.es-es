@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Terminate | Microsoft Docs
+title: IDebugProcess2::Terminar ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Terminate
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a4b44cfc9655c619089d341156328b77594dad9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8da1b2719e8b37df009e3bbef99e57c24117a963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314151"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723818"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 Finaliza el proceso.
@@ -38,10 +38,10 @@ int Terminate();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Cuando se termina un proceso, se terminan todos los programas dentro de ese proceso; no se pueden ejecutar nada más del código.
+## <a name="remarks"></a>Observaciones
+ Cuando se termina un proceso, se terminan todos los programas dentro de ese proceso; no se permite ejecutar más código.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f030fb73629172e0b5a2d5d4cb27cf186bb69f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 271e9253daf4ab23a5fb06a189ac3042bc925b2a
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594271"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880278"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -40,6 +40,7 @@ Puede descargar agentes de Visual Studio 2017, Visual Studio 2015 y Visual Studi
 
 Estos instaladores están disponibles como archivos ISO para una instalación sencilla en máquinas virtuales.
 
+::: moniker range="vs-2017"
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Versiones compatibles de TFS, Microsoft Test Manager, el controlador de pruebas y el agente de pruebas
 
 Puede combinar diferentes versiones de TFS, Microsoft Test Manager, el controlador de pruebas y el agente de pruebas, según la tabla siguiente:
@@ -53,6 +54,23 @@ Puede combinar diferentes versiones de TFS, Microsoft Test Manager, el controlad
 | 2015: instalación nueva | 2013 | 2013 | 2013 |
 | 2015: actualización desde la versión 2013 o instalación nueva | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versiones compatibles de TFS, el controlador de pruebas y el agente de pruebas
+
+Puede combinar diferentes versiones de TFS, el controlador de pruebas y el agente de pruebas, según la tabla siguiente:
+
+| TFS | Controlador | Agente |
+| --- | -------------------------------------- | ---------- | ----- |
+| 2017: actualización desde la versión 2015 o instalación nueva | 2017 | 2017 |
+| 2017: actualización desde la versión 2015 o instalación nueva | 2013 Update 5 | 2013 Update 5 |
+| 2017: actualización desde la versión 2015 o instalación nueva | 2013 Update 5 | 2013 Update 5 |
+| 2015: actualización desde la versión 2013 | 2013 |2013 |
+| 2015: instalación nueva | 2013 | 2013 |
+| 2015: actualización desde la versión 2013 o instalación nueva | 2013 | 2013 |
+| 2013 | 2013 | 2013 |
+::: moniker-end
 
 > [!NOTE]
 > Los escenarios de administración de laboratorio en TFS 2018 y Azure DevOps Services están en desuso. Para obtener más información, vea las [Notas de la versión de Team Foundation Server 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
@@ -67,5 +85,5 @@ En la tabla siguiente se muestran los escenarios que se admiten en Agentes para 
 | - | - |
 | Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [canalización de compilación](/azure/devops/pipelines/index?view=vsts) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
 | Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller y Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. |
-| Ejecución remota de pruebas automatizadas desde Microsoft Test Manager con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |
+| Ejecución remota de pruebas automatizadas desde Microsoft Test Manager (en desuso en Visual Studio 2017) con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |
 | Desarrolladores ejecutando pruebas remotas en Visual Studio | Ya no se admite. |

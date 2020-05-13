@@ -48,7 +48,7 @@
       href: workspace-indexing.md
     - name: Servicios de lenguaje
       href: workspace-language-services.md
-    - name: Compilar
+    - name: Build
       href: workspace-build.md
 - name: Ampliación de menús y comandos
   items:
@@ -138,43 +138,43 @@
           href: editor-imports.md
         - name: Compatibilidad con EditorConfig
           href: supporting-editorconfig.md
-        - name: 'Tutorial: Vincular un tipo de contenido con una extensión de nombre de archivo'
+        - name: 'Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo'
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: 'Tutorial: Crear un glifo de margen'
+        - name: 'Tutorial: Creación de un glifo de margen'
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 'Tutorial: Personalizar la vista de texto'
+        - name: 'Tutorial: Personalización de la vista de texto'
           href: walkthrough-customizing-the-text-view.md
-        - name: 'Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas)'
+        - name: 'Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas)'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 'Tutorial: Resaltar texto'
+        - name: 'Tutorial: Resaltado de texto'
           href: walkthrough-highlighting-text.md
-        - name: 'Tutorial: esquematizar'
+        - name: 'Tutorial: Esquematización'
           href: walkthrough-outlining.md
-        - name: 'Tutorial: Mostrar llaves que coincidan'
+        - name: 'Tutorial: Visualización de llaves coincidentes'
           href: walkthrough-displaying-matching-braces.md
-        - name: 'Tutorial: Mostrar información sobre herramientas de QuickInfo'
+        - name: 'Tutorial: Visualización de información rápida sobre herramientas'
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 'Tutorial: Mostrar ayuda de firma'
+        - name: 'Tutorial: Visualización de ayuda de signatura'
           href: walkthrough-displaying-signature-help.md
-        - name: 'Tutorial: Mostrar la finalización de instrucciones'
+        - name: 'Tutorial: Visualización de finalización de instrucciones'
           href: walkthrough-displaying-statement-completion.md
-        - name: 'Tutorial: Implementar fragmentos de código'
+        - name: 'Tutorial: Implementación de fragmentos de código'
           href: walkthrough-implementing-code-snippets.md
-        - name: 'Tutorial: Mostrar sugerencias de bombilla'
+        - name: 'Tutorial: Visualización de sugerencias de bombilla'
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 'Tutorial: Usar un comando shell con una extensión del editor'
+        - name: 'Tutorial: Uso de un comando de shell con una extensión del editor'
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 'Tutorial: Usar una tecla de método abreviado con una extensión del editor'
+        - name: 'Tutorial: Uso de una tecla de método abreviado con una extensión del editor'
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: 'Tutorial: Acceder al objeto DTE desde una extensión del editor'
+        - name: 'Tutorial: Acceso al objeto DTE desde una extensión del editor'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Creación de diseñadores y editores personalizados
       items:
         - name: Creación de diseñadores y editores personalizados
           href: creating-custom-editors-and-designers.md
-        - name: 'Tutorial: Crear un editor personalizado'
+        - name: 'Tutorial: Creación de un editor personalizado'
           href: walkthrough-creating-a-custom-editor.md
-        - name: 'Tutorial: Agregar características a un editor personalizado'
+        - name: 'Tutorial: Adición de características a un editor personalizado'
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: Inicialización de diseñador y configuración de metadatos
           href: designer-initialization-and-metadata-configuration.md
@@ -388,13 +388,13 @@
       items:
         - name: Creación de una página de inicio personalizada
           href: creating-a-custom-start-page.md
-        - name: 'Tutorial: Agregar XAML personalizado a la página de inicio'
+        - name: 'Tutorial: Adición de XAML personalizado a la página de inicio'
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Adición de control de usuario a la página de inicio
           href: adding-user-control-to-the-start-page.md
         - name: Adición de comandos de Visual Studio a una página de inicio
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 'Tutorial: Guardar la configuración de usuario en una página de inicio'
+        - name: 'Tutorial: Guardado de la configuración de usuario en una página de inicio'
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: Implementación de páginas de inicio personalizadas
           href: deploying-custom-start-pages.md
@@ -494,11 +494,11 @@
       href: vsix-project-template.md
     - name: Introducción a la plantilla de proyecto de VSIX
       href: getting-started-with-the-vsix-project-template.md
-    - name: 'Tutorial: Publicar una extensión de Visual Studio'
+    - name: 'Tutorial: Publicación de una extensión de Visual Studio'
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 'Tutorial: Publicar una extensión de Visual Studio mediante la línea de comandos'
+    - name: 'Tutorial: Publicación de una extensión de Visual Studio mediante la línea de comandos'
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: 'Tutorial: Crear un paquete de extensión'
+    - name: 'Tutorial: Creación de un paquete de extensión'
       href: walkthough-create-extension-pack.md
     - name: Agregar una dependencia a un paquete VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -576,9 +576,9 @@
           href: include-element.md
         - name: Define (Elemento)
           href: define-element.md
-        - name: Commands (Elemento)
+        - name: Elemento Commands
           items:
-            - name: Commands (Elemento)
+            - name: Elemento Commands
               href: commands-element.md
             - name: Menus (Elemento)
               items:
@@ -586,11 +586,11 @@
                   href: menus-element.md
                 - name: Menu (Elemento)
                   href: menu-element.md
-            - name: Groups (Elemento)
+            - name: Elemento Groups
               items:
-                - name: Groups (Elemento)
+                - name: Elemento Groups
                   href: groups-element.md
-                - name: Group (Elemento)
+                - name: Elemento Group
                   href: group-element.md
             - name: Buttons (Elemento)
               items:
@@ -634,7 +634,7 @@
               href: usedcommands-element.md
             - name: UsedCommand (Elemento)
               href: usedcommand-element.md
-        - name: Elemento Parent
+        - name: Elemento primario
           href: parent-element.md
         - name: Icon (Elemento)
           href: icon-element.md
@@ -768,9 +768,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Enumeradores
+        - name: Enumerators
           items:
-            - name: Enumeradores
+            - name: Enumerators
               href: enumerators.md
             - name: Enumerador de código de comando
               href: command-code-enumerator.md
@@ -808,9 +808,9 @@
           href: adding-command-line-switches.md
     - name: Control de errores y valores devueltos
       href: error-handling-and-return-values.md
-    - name: de la empresa
+    - name: Objetos
       items:
-        - name: de la empresa
+        - name: Objetos
           href: objects.md
         - name: VSCodeWindow (Objeto)
           href: vscodewindow-object.md
@@ -828,11 +828,11 @@
       href: creating-a-software-development-kit.md
     - name: Comparación entre los SDK y los paquetes NuGet
       href: nuget-versus-sdk-references.md
-    - name: 'Tutorial: Crear un SDK con C# o Visual Basic'
+    - name: 'Tutorial: Creación de un SDK con C# o Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: 'Tutorial: Crear un SDK con C++'
+    - name: 'Tutorial: Creación de un SDK con C++'
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: 'Tutorial: Crear un SDK con JavaScript'
+    - name: 'Tutorial: Creación de un SDK con JavaScript'
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Extensibilidad de la plataforma de compilación .NET ("Roslyn")
   items:

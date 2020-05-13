@@ -104,9 +104,9 @@
       items:
         - name: Conceptos avanzados
           href: msbuild-advanced-concepts.md
-        - name: Procesamiento por lotes
+        - name: Lotes
           items:
-            - name: Procesamiento por lotes
+            - name: Lotes
               href: msbuild-batching.md
             - name: Metadatos de elementos en el procesamiento por lotes de tareas
               href: item-metadata-in-task-batching.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrar las extensiones de .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Compilación de varios proyectos en paralelo
+        - name: Compilar varios proyectos en paralelo
           items:
-            - name: Compilación de varios proyectos en paralelo
+            - name: Compilar varios proyectos en paralelo
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Uso de varios procesadores para compilar proyectos
               href: using-multiple-processors-to-build-projects.md
@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Invalidar el valor de la versión de herramientas
                   href: overriding-toolsversion-settings.md
-            - name: Marco y plataforma de destino
+            - name: Versión de .NET Framework de destino y plataforma de destino
               href: msbuild-target-framework-and-target-platform.md
             - name: Resolver ensamblados en tiempo de diseño
               href: resolving-assemblies-at-design-time.md
@@ -156,13 +156,13 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: Solucionar problemas de versión de .NET Framework de destino
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: Procedimientos recomendados
+        - name: Prácticas recomendadas
           href: msbuild-best-practices.md
     - name: Registro de MSBuild
       items:
         - name: Registro de MSBuild
           href: logging-in-msbuild.md
-        - name: Obtención de registros de compilación
+        - name: Obtener registros de compilación
           href: obtaining-build-logs-with-msbuild.md
         - name: Registradores de compilación
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: Referencia de MSBuild
           href: msbuild-reference.md
-        - name: Referencia de esquemas de archivo de proyecto
+        - name: Referencia de esquemas del archivo de proyecto
           items:
-            - name: Referencia de esquemas de archivo de proyecto
+            - name: Referencia de esquemas del archivo de proyecto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -204,7 +204,7 @@
               href: otherwise-element-msbuild.md
             - name: Elemento Output (MSBuild)
               href: output-element-msbuild.md
-            - name: Parameter (Elemento)
+            - name: Elemento Parameter
               href: parameter-element.md
             - name: ParameterGroup (Elemento)
               href: parametergroup-element.md
@@ -230,9 +230,9 @@
           items:
             - name: Referencia de tareas
               href: msbuild-task-reference.md
-            - name: "Tareas de Visual\_C++"
+            - name: Tareas en Visual C++
               items:
-                - name: "Tareas de Visual\_C++"
+                - name: Tareas en Visual C++
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake (Tarea)
                   href: bscmake-task.md
@@ -394,7 +394,7 @@
           href: common-msbuild-project-items.md
         - name: Referencia de la línea de comandos
           href: msbuild-command-line-reference.md
-        - name: Archivos .targets
+        - name: Archivos .Targets
           href: msbuild-dot-targets-files.md
         - name: Metadatos de elementos conocidos
           href: msbuild-well-known-item-metadata.md
@@ -406,7 +406,7 @@
           items:
             - name: Referencia de MSBuild para WPF
               href: wpf-msbuild-reference.md
-            - name: Archivos .targets
+            - name: Archivos .Targets
               href: wpf-dot-targets-files.md
             - name: Referencia de tareas
               items:

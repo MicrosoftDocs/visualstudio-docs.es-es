@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2 | Microsoft Docs
+title: IDebugProcessEx2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c27a03a09a6073ebab8d7a2dd5f60218066d474
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 743dd1aa72d9b8db6b848618c8a2ad6c8c8ecaaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311599"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723327"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Esta interfaz permite que la sesión de depuración manager (SDM) notificar a un proceso que está adjuntando a o cuando se desasocia del proceso.
+Esta interfaz permite que el administrador de depuración de sesión (SDM) notifique a un proceso que se está asociando o desvinculando del proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,34 +29,34 @@ IDebugProcessEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puerto personalizado implementa esta interfaz en el mismo objeto que el [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) con el fin de la interfaz:
+ Un proveedor de puerto personalizado implementa esta interfaz en el mismo objeto que la [interfaz IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) para:
 
-- Compatibilidad con seguimiento de las sesiones conectadas a un proceso
+- Soporte de seguimiento de sesiones conectadas a un proceso
 
-- Compatibilidad con la asociación automática a través de varios motores de depuración
+- Admite la conexión automática en varios motores de depuración
 
-  El proveedor del puerto personalizado puede implementar esta interfaz si así lo decide.
+  El proveedor de puertos personalizado puede implementar esta interfaz si así lo desea.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
 
-- Las llamadas SDM [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProcess2` interfaz para obtener esta interfaz.
+- El SDM llama a `IDebugProcess2` [QueryInterface](/cpp/atl/queryinterface) en una interfaz para obtener esta interfaz.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDebugProcessEx2`.
+ En la tabla siguiente `IDebugProcessEx2`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
-|[Asociar](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa a los procesos que una sesión es ahora el proceso de depuración.|
-|[Desasociar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa a los procesos que una sesión ya no está depurando el proceso.|
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Agrega nodos de programa para obtener una lista de motores de depuración.|
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa al proceso de que una sesión está depurando el proceso.|
+|[Desasociar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa al proceso de que una sesión ya no está depurando el proceso.|
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Agrega nodos de programa para una lista de motores de depuración.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta interfaz es privada entre el SDM y el proceso.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: Portpriv.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

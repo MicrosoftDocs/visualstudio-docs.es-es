@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE_FLAGS | Microsoft Docs
+title: PENDING_BP_STATE_FLAGS de la casa de la casa de Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3b51d7c30650087c6611b79ec0b91e2a6bb83b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349889"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714089"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
-Especifica las marcas de estado de punto de interrupción pendiente.
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
+Especifica los indicadores de estado de punto de interrupción pendientes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,18 +42,18 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="fields"></a>Campos
- `PBPSF_NONE` Marcador de posición.
+## <a name="fields"></a>Fields
+ `PBPSF_NONE`Marcador.
 
- `PBPSF_VIRTUALIZED` Especifica un virtualizado pendiente de punto de interrupción, que se enlaza cada vez que se carga código nuevo.
+ `PBPSF_VIRTUALIZED`Especifica un punto de interrupción pendiente virtualizado, que se va a enlazar cada vez que se carga código nuevo.
 
-## <a name="remarks"></a>Comentarios
- Utilizado para la `flags` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.
+## <a name="remarks"></a>Observaciones
+ Se utiliza `flags` para el miembro de la estructura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

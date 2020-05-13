@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778419"
 ---
 # <a name="pf"></a>PF
@@ -51,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 
  **Sys**[ **:** `Events`] Establece el evento de muestreo en llamadas de la aplicación para la que se genera el perfil al kernel del sistema operativo (syscalls) y, opcionalmente, establece el intervalo de muestreo en `Events`. El intervalo Sys predeterminado es 10.
 
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]] Establece el evento de muestreo en el contador de rendimiento de la CPU especificado por `Name` y establece el intervalo de muestreo en `Reload`.
+ **Counter:** `Name`[`,Reload`[`,FriendlyName`]] establece el evento de muestreo en el contador de rendimiento de la CPU especificado por `Name` y establece el intervalo de muestreo en `Reload`.
 
  **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Recopila datos de la memoria de .NET. Mediante la opción (**Allocation**) predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **Lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.
 

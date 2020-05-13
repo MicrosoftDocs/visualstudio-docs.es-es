@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs
+title: UNMANAGED_ADDRESS_PHYSICAL Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f6d1094a490041cd04a47fa073d2e75b8d2e23
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9070fcfbf79fb96ecff87a793c221f3e7a65c2ae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316118"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713285"
 ---
-# <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
+# <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Esta estructura representa una dirección física.
 
 ## <a name="syntax"></a>Sintaxis
@@ -41,15 +41,15 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 
 ## <a name="members"></a>Miembros
  `offset`\
- Un desplazamiento de 64 bits en un espacio de dirección física.
+ Un desplazamiento de 64 bits en un espacio de direcciones físico.
 
-## <a name="remarks"></a>Comentarios
- Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_PHYSICAL` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).
+## <a name="remarks"></a>Observaciones
+ Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura `ADDRESS_KIND_UNMANAGED_PHYSICAL` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando se establece el `dwKind` campo de la estructura en (un valor de la [enumeración ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: sh.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

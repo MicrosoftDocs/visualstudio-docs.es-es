@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4f7d44482937eb80540314db37bc9c664eaab689
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: bd6d2f394edf1a1d2c96404a8af3714fbe9550d6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557947"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880356"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -50,17 +50,18 @@ El archivo aparece en el menú Prueba, y puede seleccionarlo o anular su selecci
 
 Hay tres formas de especificar un archivo de parámetros de ejecución en la versión 16.4 de Visual Studio 2019 y versiones posteriores:
 
-- Agregue una propiedad de compilación a un proyecto mediante el archivo de proyecto o un archivo Directory.Build.props. El archivo de parámetros de ejecución de un proyecto se especifica mediante la propiedad **RunSettingsFilePath**. 
+- Agregue una propiedad de compilación a un proyecto mediante el archivo de proyecto o un archivo Directory.Build.props. El archivo de parámetros de ejecución de un proyecto se especifica mediante la propiedad **RunSettingsFilePath**.
 
     - Los parámetros de ejecución de nivel de proyecto se admiten actualmente en proyectos C#, VB, C++ y F#.
     - Un archivo especificado para un proyecto invalida cualquier otro archivo de parámetros de ejecución especificado en la solución.
+    - [Estas propiedades de MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) se pueden usar para especificar la ruta de acceso al archivo "runsettings". 
 
     Ejemplo de cómo especificar un archivo *.runsettings* para un proyecto:
     
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
-        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+        <RunSettingsFilePath>$(MSBuildProjectDirectory)\example.runsettings</RunSettingsFilePath>
       </PropertyGroup>
       ...
     </Project>
@@ -80,7 +81,7 @@ Hay tres formas de especificar un archivo de parámetros de ejecución en la ver
 
 - En el IDE, seleccione **Probar** > **Configurar parámetros de ejecución** > **Seleccionar archivo runsettings en toda la solución** y, después, seleccione el archivo *.runsettings*.
 
-   ![Menú Select Solution Wide runsettings File (Seleccionar archivo runsettings en toda la solución) de prueba en Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+   ![Menú Seleccionar archivo runsettings en toda la solución de prueba en Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
       
    - Este archivo invalida el archivo ".runsettings" en la raíz de la solución, si existe, y se aplica en todas las pruebas ejecutadas.  
    - Esta selección del archivo solo se conserva localmente. 
@@ -258,6 +259,7 @@ El elemento **RunConfiguration** puede incluir los siguientes elementos:
 |**TestAdaptersPaths**||Una o varias rutas de acceso al directorio donde se encuentran los TestAdapters|
 |**MaxCpuCount**|1|Este valor controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante los núcleos disponibles en la máquina. El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con las pruebas que se van a ejecutar. Un contenedor puede ser un ensamblado, un archivo DLL o un artefacto relevante. El contenedor de pruebas es la unidad de programación. En cada contenedor, las pruebas se ejecutan según el marco de pruebas. Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br />El valor de MaxCpuCount puede ser:<br /><br />n, donde 1 <= n <= número de núcleos: se inician hasta n procesos<br /><br />n, donde n = cualquier otro valor: el número de procesos iniciados puede ser como máximo el número de núcleos disponibles. Por ejemplo, establezca n = 0 para permitir que la plataforma decida automáticamente el número óptimo de procesos que se van a iniciar en función del entorno.|
 |**TestSessionTimeout**||Permite a los usuarios terminar una sesión de prueba cuando esta supera un tiempo de espera especificado. La configuración de un tiempo de espera garantiza que los recursos se utilicen de manera conveniente y que las sesiones de prueba se limiten a un tiempo establecido. Esta opción está disponible en **Visual Studio 2017, versión 15.5** y posteriores.|
+|**DotnetHostPath**||Especifique una ruta de acceso personalizada al host dotnet que se usa para ejecutar testhost. Esto resulta útil al compilar un dotnet propio, por ejemplo, al compilar el repositorio dotnet/runtime. Si se especifica esta opción, se omitirá la búsqueda de testhost.exe y siempre se usará testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)
 
@@ -328,7 +330,7 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
 |Configuración|Default|Valores|
 |-|-|-|
 |**ForcedLegacyMode**|False|En Visual Studio 2012, el adaptador MSTest se optimizó para que fuera más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en **true** para utilizar el adaptador de pruebas más antiguo.<br /><br />Por ejemplo, es posible usar este valor si tiene un archivo *app.config* especificado para una prueba unitaria.<br /><br />Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
-|**IgnoreTestImpact**|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para obtener más información, vea [¿Qué pruebas se deben ejecutar desde una compilación anterior?](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager (en desuso en Visual Studio 2017). Esta configuración desactiva la característica. Para obtener más información, vea [¿Qué pruebas se deben ejecutar desde una compilación anterior?](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Puede especificar un archivo de configuración de pruebas para usarlo con el adaptador MSTest aquí. También puede especificarlo [en el menú Configuración](#ide).<br /><br />Si especifica este valor, también debe establecer **ForcedlegacyMode** en **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Una vez completada una serie de pruebas, se cierra MSTest. Cualquier proceso que se inicie como parte de la prueba también se elimina. Si quiere mantener activo el ejecutor de pruebas, establezca este valor en **true**. Por ejemplo, podría usar esta configuración para mantener el explorador en ejecución entre pruebas de IU codificadas.|
 |**DeploymentEnabled**|true|Si el valor se establece en **false**, los elementos de implementación especificados en el método de prueba no se copian al directorio de implementación.|
@@ -343,3 +345,4 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
 - [Configuración de una serie de pruebas](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio test task (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts) [Tarea de prueba de Visual Studio (Azure Test Plans)]
+

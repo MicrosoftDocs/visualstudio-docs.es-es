@@ -18,7 +18,7 @@
   href: how-to-use-the-imports-designer.md
 - name: Usar la ruta de navegación
   href: how-to-use-breadcrumb-navigation.md
-- name: Usar la búsqueda
+- name: Uso de la búsqueda
   href: how-to-use-search-in-the-workflow-designer.md
 - name: Definir y consumir delegados de actividad
   href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
@@ -164,7 +164,7 @@
           href: migration-activity-designers.md
         - name: Diseñador de actividades Interop
           href: interop-activity-designer.md
-- name: Depuración
+- name: Depurar
   items:
     - name: Flujos de trabajo de depuración
       href: debugging-workflows-with-the-workflow-designer.md
@@ -194,7 +194,7 @@
       href: system-activities-tab-choose-toolbox-items-dialog-box.md
     - name: Características del shell del Diseñador de flujo de trabajo
       href: workflow-designer-shell-features.md
-    - name: Métodos abreviados de teclado
+    - name: Métodos abreviados de teclado.
       href: keyboard-shortcuts-in-the-workflow-designer.md
-    - name: Mensajes de error
+    - name: mensajes de error
       href: error-messages-in-workflow-designer.md

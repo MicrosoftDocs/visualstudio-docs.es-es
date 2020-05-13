@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Clone | Microsoft Docs
+title: IEnumDebugBoundBreakpoints2::Clone ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Clone
 ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70a61ffeb3cf2d210b9ea79c473a7805bfb1f7a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b10289a713642960b03c1a51775148357b8a3c08
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350521"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717579"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
-Devuelve una copia de la enumeración actual como un objeto independiente.
+Devuelve una copia de la enumeración actual como objeto independiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,10 +44,10 @@ int Clone(
 [out] Devuelve una copia de esta enumeración como un objeto independiente.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y el original son independientes y se pueden cambiar de forma individual.
+## <a name="remarks"></a>Observaciones
+ La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los estados de la copia y del original son independientes y se pueden cambiar individualmente.
 
 ## <a name="see-also"></a>Vea también
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

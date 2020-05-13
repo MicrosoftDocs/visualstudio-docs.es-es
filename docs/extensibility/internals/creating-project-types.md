@@ -1,72 +1,72 @@
 ---
-title: Crear tipos de proyecto | Microsoft Docs
+title: Creación de tipos de proyecto ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314560"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709066"
 ---
 # <a name="create-project-types"></a>Crear tipos de proyecto
-Puede extender [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante la creación de un nuevo tipo de proyecto. Para crear un nuevo tipo de proyecto, debe comprender algunos conceptos y realizar una serie de pasos. Los temas siguientes proporcionan información general sobre cómo crear tipos de proyecto.
+Puede ampliar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creando un nuevo tipo de proyecto. Para crear un nuevo tipo de proyecto, debe comprender varios conceptos y completar una serie de pasos. Los temas siguientes proporcionan información general sobre cómo crear tipos de proyecto.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md)
 
- Describe el elemento, persistencia de archivo de proyecto y las decisiones de diseño mecánico de compromiso que se deben realizar antes de crear un nuevo tipo de proyecto.
+ Describe las decisiones de diseño de mecánica de elementos, persistencia de archivos de proyecto y compromiso que debe tomar antes de crear un nuevo tipo de proyecto.
 
-- [Lista de comprobación: Crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificación: Crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
 
- Proporciona información general de los pasos que debe seguir para crear un nuevo tipo de proyecto que admite programación tareas como la edición de código y compilar, compilar, depurar e implementar aplicaciones en el proyecto.
+ Proporciona información general sobre los pasos que debe seguir para crear un nuevo tipo de proyecto que admita tareas de programación como editar código y compilar, compilar, depurar e implementar aplicaciones en el proyecto.
 
-- [Crear instancias de proyecto mediante generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+- [Crear instancias de proyecto mediante fábricas de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 
  Proporciona información sobre cómo proporcionar y usar un generador de proyectos para crear instancias de un nuevo proyecto.
 
 - [Registrar un tipo de proyecto](../../extensibility/internals/registering-a-project-type.md)
 
- Proporciona ejemplos de código de las instrucciones del registro que proporcionan rutas de acceso predeterminadas y datos y una tabla que contienen las entradas de la secuencia de comandos del registro para cada instrucción.
+ Proporciona ejemplos de código de instrucciones del registro que proporcionan rutas de acceso y datos predeterminados, y una tabla que contiene entradas del script del Registro para cada instrucción.
 
-- [Persistencia de un proyecto](../../extensibility/internals/project-persistence.md)
+- [Persistencia del proyecto](../../extensibility/internals/project-persistence.md)
 
- Describe el uso de `IPersistFileFormat` para conservar los archivos y objetos de proyectos no basados en archivos.
+ Describe el uso `IPersistFileFormat` de conservar objetos de proyecto no basados en archivos y no basados en archivos.
 
 - [Usar MSBuild](../../extensibility/internals/using-msbuild.md)
 
- Describe cómo puede usar el tipo de proyecto la [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] motor para permitir que los usuarios construido a partir de compilación [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y en la línea de comandos.
+ Describe cómo el tipo de [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] proyecto puede usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el motor de compilación para permitir que los usuarios se compilen desde y en la línea de comandos.
 
 ## <a name="related-sections"></a>Secciones relacionadas
-- [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Soporta herramientas de navegación de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Explica la arquitectura de código, herramientas de visualización, como el **Examinador de objetos** y **vista de clases** ventana. Describe las interfaces y métodos que se usan para implementar la búsqueda de objetos en un VSPackage.
+ Explica la arquitectura de herramientas de visualización de código como el **Examinador de objetos** y la ventana Vista de **clases.** Describe las interfaces y métodos que se usan para implementar la exploración de objetos en un VSPackage.
 
-- [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [Agregar plantillas de proyecto y elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Se explica el significado que se reproducen los proyectos en determinar qué editor se utiliza cuando se abre un elemento de proyecto y cómo se pueden manipular los recursos del proyecto.
+ Describe la importancia que juegan los proyectos para determinar qué editor se utiliza cuando se abre un elemento de proyecto y cómo se pueden manipular los recursos del proyecto.
 
 - [Instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Muestra cómo proporcionar su propia identidad única a su VSPackage y cómo se ajustan los archivos DLL de VSPackage y otra información en un paquete de Windows Installer ( *. MSI* archivo) para la implementación a sus clientes.
+ Muestra cómo dar al VSPackage su propia identidad única y cómo ajustar los archivos DLL de VSPackage y otra información en un paquete de Windows Installer (*. MSI)* para su implementación a sus clientes.
 
 - [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
- Describe cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jerarquías de vistas y las direcciones.
+ Describe cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se describen las vistas y las jerarquías.
 
 - [VSPackages](../../extensibility/internals/vspackages.md)
 
- Proporciona información general sobre un VSPackage, un objeto COM instalable que amplía el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno y se explica cómo implementar su propio paquete VSPackage.
+ Proporciona información general de un VSPackage, un objeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] COM instalable que extiende el entorno y describe cómo implementar su propio VSPackage.
 
 - [Tipos de proyecto](../../extensibility/internals/project-types.md)
 
- Describe cómo usar proyectos para modificar código, compilar y generar código y ejecutar y depurar el código y proporciona vínculos a temas detallados sobre cómo crear tipos de proyecto.
+ Describe cómo usar proyectos para modificar código, compilar y compilar código y ejecutar y depurar código, y proporciona vínculos a temas detallados sobre cómo crear tipos de proyecto.

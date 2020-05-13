@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS | Microsoft Docs
+title: PROVIDER_FIELDS de la casa de la Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329367"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713785"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
-Especifica las propiedades asociadas con un proveedor de programa.
+# <a name="provider_fields"></a>PROVIDER_FIELDS
+Especifica las propiedades asociadas a un proveedor de programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PFIELD_PROGRAM_NODES`\
  El `ProgramNodes` campo es válido.
 
  `PFIELD_IS_DEBUGGER_PRESENT`\
  El `fIsDebuggerPresent` campo es válido.
 
-## <a name="remarks"></a>Comentarios
- Estos valores se devuelven en el `Fields` miembro de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura para indicar qué campos de la estructura se rellenaron explícitamente.
+## <a name="remarks"></a>Observaciones
+ Estos valores se `Fields` devuelven en el miembro de la estructura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) para indicar qué campos de la estructura se rellenaron explícitamente.
 
- Estos valores se pueden combinar con un bit a bit `OR`.
+ Estos valores se pueden combinar `OR`con un archivo .
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

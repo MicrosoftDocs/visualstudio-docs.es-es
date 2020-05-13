@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831153a734fa88c045f7b8397db0a033e53862c7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634492"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094562"
 ---
 # <a name="calltarget-task"></a>CallTarget (tarea)
 
@@ -43,6 +43,8 @@ Invoca los destinos especificados en el archivo del proyecto.
  Si se produce un error en un destino especificado en `Targets` y `RunEachTargetSeparately` es `true`, la tarea sigue compilando los destinos restantes.
 
  Si quiere compilar los destinos predeterminados, use [MSBuild (Tarea)](../msbuild/msbuild-task.md) y establezca el parámetro `Projects` igual que `$(MSBuildProjectFile)`.
+
+Cuando se usa `CallTarget`, MSBuild evalúa el destino al que se llama en un nuevo ámbito, en lugar de en el mismo ámbito desde el que se llama. Esto significa que los cambios en los elementos y propiedades en el destino al que se llama no son visibles para el destino desde el que se llama.  Para pasar información al destino desde el que se llama, use el parámetro de salida `TargetOutputs`.
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

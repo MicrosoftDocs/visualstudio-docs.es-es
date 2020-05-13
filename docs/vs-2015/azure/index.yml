@@ -12,7 +12,7 @@ metadata:
   ms.date: 11/02/2018
   ms.author: ghogen
 sections:
-  - title: Publicar en Azure
+  - title: Publicación en Azure
     items:
       - type: paragraph
         text: Implemente la aplicación en Azure en entornos de almacenamiento provisional o de producción con Visual Studio.
@@ -64,7 +64,7 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Storage.svg'
-            text: Almacenamiento de Azure
+            text: Azure Storage
             href: vs-azure-tools-connected-services-storage.md
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
@@ -88,7 +88,7 @@ sections:
             html: <p>Depuración de servicios en la nube localmente y en Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: Depuración
+            title: Depurar
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p>Uso del generador de perfiles de Visual Studio</p>
             image:
@@ -117,12 +117,12 @@ sections:
             html: <p>Acceso a cuentas de almacenamiento de Azure en Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
-            title: Almacenamiento
+            title: Storage
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
             html: <p>Acceso a máquinas virtuales desde Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: Máquinas virtuales
+            title: Virtual Machines
   - title: Otros recursos de desarrollo de Azure
     items:
       - type: paragraph

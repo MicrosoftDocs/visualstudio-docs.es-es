@@ -3,21 +3,21 @@ title: Sugerir una característica
 description: Describe cuáles son las sugerencias que hay en la Comunidad de desarrolladores, cómo hacer una sugerencia y cómo Microsoft utiliza las sugerencias en la hoja de ruta de Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
-author: seaniyer
-ms.author: seiyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74853521"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276493"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir una característica para Visual Studio
 
-Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
+Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
 
 ![Botón Sugerir una característica en la Comunidad de desarrolladores](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -83,7 +83,7 @@ Una sugerencia de característica marcada como **Need More Info** (Se necesita m
 
 ![Estado Closed - Not Enough Info (Cerrada: información insuficiente) para las sugerencias de la Comunidad de desarrolladores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Estado Closed - Not Enough Info** (Cerrada: información insuficiente) indica que tras varios intentos, no hemos recibido suficiente información para entender completamente la sugerencia de característica. Tenemos que cerrar la sugerencia de característica nueva, ya que no podemos realizar ninguna otra acción en esta fase.
+**Cerrado, no hay información suficiente** indica que tras varios intentos, no se ha recibido suficiente información para entender completamente la sugerencia de característica. Tenemos que cerrar la sugerencia de característica nueva, ya que no podemos realizar ninguna otra acción en esta fase.
 
 ¿Encontró la información que buscábamos? Puede solicitar la reactivación del vale cuando tenga información adicional.
 
@@ -103,7 +103,7 @@ Una sugerencia de característica marcada como **Need More Info** (Se necesita m
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>¿Por qué no puedo ver mi idea de UserVoice en la Comunidad de desarrolladores?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>¿Por qué no puedo ver mi idea de UserVoice en Developer Community?
 
 Las sugerencias de características nuevas del foro UserVoice antiguo se han migrado a la Comunidad de desarrolladores según el impacto en la comunidad más amplia y nuestras prioridades de hoja de ruta del producto. Si piensa que hemos extraviado la migración de su sugerencia, agréguela como una nueva sugerencia a la Comunidad de desarrolladores.
 

@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Microsoft Docs
+title: CONST_GUID_ARRAY de la casa de la ins Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346517"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737635"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
-Una estructura que contiene una lista de `GUID`s.
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
+Estructura que contiene una `GUID`lista de s.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Miembros
 `dwCount`\
-Número de `GUID`s en el `Members` matriz.
+Número `GUID`de s `Members` en la matriz.
 
 `Members`\
-Matriz de `GUID`s.
+Matriz `GUID`de s.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método y se devuelve desde el [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) métodos.
 
-El propietario de una instancia de esta estructura es responsable de liberar memoria asignada.
+El propietario de una instancia de esta estructura es responsable de liberar cualquier memoria asignada.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

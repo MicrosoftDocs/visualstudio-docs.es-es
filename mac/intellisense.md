@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75405808"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,21 +23,21 @@ Cuando escriba en un archivo compatible, como un archivo de código de C#, las f
 
 La ventana de finalización también permite filtrar las finalizaciones incluidas por tipo. Por ejemplo, es posible limitar los miembros de la lista para que solo se representen tipos como clases o delegados. Para habilitar este proceso de filtrado, se puede hacer clic en el icono que representa el tipo que se filtrará o bien usar los métodos abreviados de teclado correspondientes al tipo determinado. Los iconos, que se encuentran en la parte inferior de la ventana de finalización, son los siguientes:
 
-| Iconos                         | NOMBRE          | Palabra clave    | Tecla de acceso rápido |
+| Icono                         | Nombre          | Palabra clave    | Tecla de acceso rápido |
 | -----------------------------|---------------| -----------|--------|
-| ![Icono Clases](media/classes-icon.png)  | clase         | `class`    |  ⌥C
-| ![Icono Constante](media/constant-icon.png) | constante      | `const`    |  ⌥O
+| ![Icono Clases](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![Icono Constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icono Delegado](media/delegate-icon.png) | delegado      | `delegate` |  ⌥D
 | ![Icono Enumeración](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Icono Evento](media/event-icon.png)    | evento         |            |  ⌥V
+| ![Icono Evento](media/event-icon.png)    | event         |            |  ⌥V
 | ![Icono Campo](media/fields-icon.png)   | campo         |            |  ⌥F
 | ![Icono Interfaz](media/interface-icon.png)| interfaz     | `interface`|  ⌥I
 | ![Icono Palabra clave](media/keyword-icon.png)  | palabra clave       |            |  ⌥K
-| ![Icono Método](media/method-icon.png)   | método        |            |  ⌥M
-| ![Icono Espacio de nombres](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
+| ![Icono Método](media/method-icon.png)   | method        |            |  ⌥M
+| ![Icono Espacio de nombres](media/namespace-icon.png)| espacio de nombres     | `namespace`|  ⌥N
 | ![Icono Propiedades](media/props-icon.png)    | propiedad      |            |  ⌥P
 | ![Icono Fragmento de código](media/snippet-icon.png)  | fragmento de código       | `class`    |  ⌥S
-| ![Icono Estructura](media/struct-icon.png)   | estructura     | `struct`   |  ⌥S
+| ![Icono Estructura](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
 
 Al hacer clic en cualquiera de los iconos, o al presionar las teclas de acceso rápido correspondientes, la lista de finalización se limitará a los tipos definidos en el conjunto de filtros.  
 
@@ -58,7 +58,7 @@ La ventana de finalización se desencadenará automáticamente cuando escriba de
 
 También puede desencadenar manualmente la aparición de la ventana de parámetros si escribe `control-shift-space`. Cuando el símbolo de inserción está en una posición válida para una lista de parámetros, esta aparecerá cerca de la posición del símbolo de inserción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
 - [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

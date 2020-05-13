@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID | Microsoft Docs
+title: AD_PROCESS_ID Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351415"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738168"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
-Especifica el identificador de proceso, que puede ser un identificador de sistema o un GUID.
+# <a name="ad_process_id"></a>AD_PROCESS_ID
+Especifica el identificador de proceso, que puede ser un identificador del sistema o un GUID.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,17 +49,17 @@ public struct AD_PROCESS_ID {
 
 ## <a name="members"></a>Miembros
 `ProcessIdType`\
-Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración que especifica cómo interpretar la `ProcessId` union (o, para código administrado, qué miembro de la estructura para tener acceso a).
+Un valor de la [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeración `ProcessId` que especifica cómo interpretar la unión (o, para el código administrado, qué miembro de la estructura para tener acceso).
 
 `dwProcessId`\
-El identificador de proceso como un valor desde el sistema.
+El ID de proceso como un valor del sistema.
 
 `guidProcessId`\
-El identificador de proceso como un GUID.
+El identificador de proceso como GUID.
 
-dwUnused relleno.
+relleno dwUnused.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa a los métodos siguientes:
 
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)
@@ -70,7 +70,7 @@ Esta estructura se pasa a los métodos siguientes:
 
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 
-Y se devuelve desde los métodos siguientes:
+Y se devuelve de los siguientes métodos:
 
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
@@ -79,7 +79,7 @@ Y se devuelve desde los métodos siguientes:
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

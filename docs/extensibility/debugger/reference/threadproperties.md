@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES | Documentos de Microsoft
+title: THREADPROPERTIES ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316183"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713430"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Describe las propiedades de un subproceso.
@@ -53,33 +53,33 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Miembros
  `dwFields`\
- Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración, que describe qué campos de esta estructura son válidos.
+ Una combinación de indicadores de la [enumeración THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) que describe qué campos de esta estructura son válidos.
 
  `dwThreadId`\
  El identificador de subproceso.
 
  `dwSuspendCount`\
- Recuento de suspensiones el subproceso.
+ El recuento de suspensión de subprocesos.
 
  `dwThreadState`\
- Un valor de la [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeración que indica el estado del subproceso de funcionamiento.
+ Valor de la enumeración [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) que indica el estado del subproceso operativo.
 
  `bstrPriority`\
- Una cadena que especifica la prioridad del subproceso; Por ejemplo, "Anterior" Normal","Normal"o"Tiempo crítico".
+ Cadena que especifica la prioridad del subproceso; por ejemplo, "Por encima de lo normal", "Normal" o "Time Critical".
 
  `bstName`\
  El nombre del subproceso.
 
  `bstrLocation`\
- La ubicación del subproceso (normalmente en el marco de pila más alto), normalmente expresada como el nombre del método donde actualmente se detiene la ejecución.
+ La ubicación del subproceso (normalmente el marco de pila superior), normalmente expresada como el nombre del método donde se detiene actualmente la ejecución.
 
-## <a name="remarks"></a>Comentarios
- Esta estructura se rellena mediante una llamada a la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método. La información devuelta por lo que normalmente se usa para rellenar el **subprocesos** ventana.
+## <a name="remarks"></a>Observaciones
+ Esta estructura se rellena mediante una llamada a la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método. La información así devuelta se utiliza normalmente en rellenar el **subprocesos** ventana.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
+title: IDebugProcess3::SetHostingProcessLanguage ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242f35dce9245406c3466784811d79ac1942c49f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313909"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723569"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Este método establece el idioma que se va a hospedar el proceso bajo. Este lenguaje, a continuación, puede utilizarse por el motor de depuración (DE) para cargar el evaluador de expresiones adecuado.
+Este método establece el idioma en el que se hospedará el proceso. A continuación, el motor de depuración (DE) puede usar este lenguaje para cargar el evaluador de expresiones adecuado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int SetHostingProcessLanguage(
 
 ## <a name="parameters"></a>Parámetros
 `guidLang`\
-[in] `GUID` del lenguaje que debe usar la DE. Especificar `GUID_NULL` (C++) o `Guid.Empty` (C#) para que la DE usar el idioma predeterminado.
+[en] `GUID` del lenguaje que debe utilizar la DE. Especifique `GUID_NULL` (C++) `Guid.Empty` o (C) para que el DE utilice el idioma predeterminado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
 
-## <a name="remarks"></a>Comentarios
-- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) puede usarse para recuperar la configuración de idioma actual.
+## <a name="remarks"></a>Observaciones
+- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) se puede usar para recuperar la configuración de idioma actual.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

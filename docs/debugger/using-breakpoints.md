@@ -35,11 +35,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409235"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301030"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Uso de puntos de interrupción en el depurador de Visual Studio
 
@@ -48,7 +48,7 @@ Los puntos de interrupción constituyen una de las técnicas de depuración más
 > [!NOTE]
 > Si conoce la tarea o el problema que está intentando resolver, pero necesita saber qué tipo de punto de interrupción usar, vea [Búsqueda de la tarea de depuración](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="BKMK_Overview"></a>Establecer puntos de interrupción en el código fuente
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Establecer puntos de interrupción en el código fuente
 
 Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, puede establecer un punto de interrupción en la declaración de la variable, en el bucle `for` o en cualquier código dentro del bucle `for`. Un punto de interrupción no se puede establecer en las declaraciones de clase o espacio de nombres, ni tampoco en la firma del método.
 
@@ -74,7 +74,7 @@ Estas son algunas instrucciones generales para trabajar con los puntos de interr
 
 - Establezca condiciones y acciones, agregue y edite etiquetas o exporte un punto de interrupción haciendo clic con el botón derecho en él y seleccionando el comando adecuado, o bien manteniendo el ratón en él y seleccionando el icono **Configuración**.
 
-## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento
 
 Un *punto de seguimiento* es un punto de interrupción que imprime un mensaje en la ventana **Salida**. Los puntos de seguimiento pueden actuar como una instrucción de seguimiento temporal en el lenguaje de programación, y no pausan la ejecución del código. Para crear un punto de seguimiento, establezca una acción especial en la ventana **Configuración del punto de interrupción**. Para obtener instrucciones detalladas, vea [Uso de puntos de seguimiento en el depurador de Visual Studio](../debugger/using-tracepoints.md).
 
@@ -164,7 +164,7 @@ En la sección **Condiciones** de la ventana **Configuración del punto de inter
 
 Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusulas con `&` (AND), `||` (OR), `!` (NOT) y paréntesis.
 
-## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Establecer puntos de interrupción de función
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Establecer puntos de interrupción de función
 
 La ejecución se puede interrumpir cuando se llame a una función. Esto resulta útil, por ejemplo, cuando se conoce el nombre de la función, pero no su ubicación. También es práctico si existen funciones con el mismo nombre y quiere interrumpirlas todas (por ejemplo, funciones sobrecargadas o funciones en proyectos distintos).
 
@@ -217,7 +217,7 @@ La ejecución se puede interrumpir cuando se llame a una función. Esto resulta 
 
 ::: moniker range=">= vs-2019"
 
-## <a name="BKMK_set_a_data_breakpoint_managed"></a>Establecer puntos de interrupción de datos (.NET Core 3.0 o posterior)
+## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>Establecer puntos de interrupción de datos (.NET Core 3.0 o posterior)
 
 Los puntos de interrupción de datos interrumpen la ejecución cuando la propiedad de un objeto concreto cambia.
 
@@ -238,7 +238,7 @@ Los puntos de interrupción de datos en .NET Core no funcionarán con los sigui
 
 ::: moniker-end
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Establecer puntos de interrupción de datos (solo C++ nativo)
+## <a name="set-data-breakpoints-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Establecer puntos de interrupción de datos (solo C++ nativo)
 
  Los puntos de interrupción de datos interrumpen la ejecución cuando se produce un cambio en un valor que está almacenado en una ubicación especificada de la memoria. Si el valor se lee pero no cambia, la ejecución no se interrumpe.
 
@@ -263,7 +263,7 @@ Los puntos de interrupción de datos no funcionan en las siguientes condiciones:
 >
 > - Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si se establece un punto de interrupción de datos en una variable local, se recomienda eliminarlo o deshabilitarlo antes de que finalice la función.
 
-## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Administrar puntos de interrupción en la ventana Puntos de interrupción
+## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Administrar puntos de interrupción en la ventana Puntos de interrupción
 
  En la ventana **Puntos de interrupción** se pueden ver y administrar todos los puntos de interrupción de la solución. Esta ubicación centralizada es especialmente útil en una solución grande o en escenarios de depuración complejos en los que los puntos de interrupción son críticos.
 
@@ -275,7 +275,7 @@ Para abrir la ventana **Puntos de interrupción**, seleccione **Depurar** > **Ve
 
 Para seleccionar las columnas que se van a mostrar en la ventana **Puntos de interrupción**, seleccione **Mostrar columnas**. Seleccione un encabezado de columna para ordenar la lista de puntos de interrupción por esa columna.
 
-### <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etiquetas de puntos de interrupción
+### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etiquetas de puntos de interrupción
 Se pueden usar etiquetas para ordenar y filtrar la lista de puntos de interrupción en la ventana **Puntos de interrupción**.
 
 1. Para agregar una etiqueta a un punto de interrupción, haga clic con el botón derecho en el punto de interrupción en el código fuente o en la ventana **Puntos de interrupción** y, después, seleccione **Editar etiquetas**. Agregue una etiqueta nueva o elija una existente y, después, seleccione **Aceptar**.
@@ -289,7 +289,7 @@ Se pueden usar etiquetas para ordenar y filtrar la lista de puntos de interrupci
 - Para exportar todos los puntos de interrupción, desactive todas las casillas y deje el campo **Buscar** en blanco. Seleccione el icono **Exportar todos los puntos de interrupción que coinciden con el criterio de búsqueda actual** y guarde el archivo.
 - Para importar puntos de interrupción, seleccione el icono **Importar puntos de interrupción de un archivo** en la ventana **Puntos de interrupción**, vaya a la ubicación del archivo XML y seleccione **Abrir**.
 
-## <a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Establecer puntos de interrupción desde las ventanas del depurador
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Establecer puntos de interrupción desde las ventanas del depurador
 
 También se pueden establecer puntos de interrupción en las ventanas del depurador **Pila de llamadas** y **Desensamblado**.
 

@@ -1,6 +1,6 @@
 ---
 title: Marcos .NET Framework de destino
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594128"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472734"
 ---
 # <a name="framework-targeting-overview"></a>Información general sobre destinos de Framework
 
 En Visual Studio, puede especificar la versión de .NET a la que quiere que vaya destinado el proyecto. La elección del marco de destino ayuda a garantizar que la aplicación use solo la funcionalidad que está disponible en la versión especificada del marco. Para que las aplicaciones de .NET Framework se ejecuten en otro equipo, la versión del marco de destino de la aplicación debe ser compatible con la versión del marco instalada en el equipo.
 
-Una solución de Visual Studio puede incluir proyectos que seleccionen diferentes versiones de .NET como destino.
-
-Para obtener más información sobre los marcos de destino, vea [Versiones de .NET Framework de destino](/dotnet/standard/frameworks).
+Una solución de Visual Studio puede incluir proyectos que seleccionen diferentes versiones de .NET como destino.  Sin embargo, tenga en cuenta que la compilación solo se puede realizar con una versión de .NET, ya sea mediante el uso de condicionales de referencia para una única compilación o la compilación recursiva de archivos binarios distintos para cada versión.  Para obtener más información sobre los marcos de destino, vea [Versiones de .NET Framework de destino](/dotnet/standard/frameworks).
 
 > [!TIP]
 > También puede dirigir aplicaciones a distintas plataformas. Para obtener más información, consulte [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md).

@@ -11,19 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
+ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633764"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255572"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedimiento Usar el mismo destino en varios archivos de proyecto
 
 Si ha creado varios archivos de proyecto con MSBuild, es posible que haya detectado la necesidad de utilizar las mismas tareas y destinos en los distintos archivos de proyecto. En lugar de incluir la descripción completa de estas tareas o destinos en cada archivo de proyecto, puede guardar un destino en un archivo de proyecto independiente y, a continuación, importarlo en un proyecto que necesite utilizar dicho destino.
+
 ## <a name="use-the-import-element"></a>Usar el elemento Import
 
- El elemento `Import` se utiliza para insertar un archivo de proyecto en otro archivo de proyecto. El archivo de proyecto que se importa debe ser un archivo de proyecto de MSBuild válido y contener XML con formato correcto. El atributo `Project` especifica la ruta de acceso al archivo de proyecto importado. Para obtener más información sobre el elemento `Import`, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 El elemento `Import` se utiliza para insertar un archivo de proyecto en otro archivo de proyecto. El archivo de proyecto que se importa debe ser un archivo de proyecto de MSBuild válido y contener XML con formato correcto. El atributo `Project` especifica la ruta de acceso al archivo de proyecto importado. Para obtener más información sobre el elemento `Import`, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Para importar un proyecto

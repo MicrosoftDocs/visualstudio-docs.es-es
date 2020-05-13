@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73188779"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Cómo configurar las herramientas de contenedor de Visual Studio
@@ -40,7 +40,7 @@ Configuración de un **proyecto único** y **Docker Compose** de las herramienta
 La tabla siguiente puede ayudarle a decidir cómo configurar estas opciones.
 
 ::: moniker range="vs-2017"
-| Name | Configuración predeterminada | Se aplica a | DESCRIPCIÓN |
+| NOMBRE | Valor predeterminado | Se aplica a | Descripción |
 | -----|:---------------:|:----------:| ----------- |
 | Extraer automáticamente las imágenes de Docker necesarias al cargar el proyecto | Activado | Docker Compose | Para aumentar el rendimiento al cargar proyectos, Visual Studio iniciará una operación docker pull en segundo plano para que cuando se esté listo para ejecutar el código, la imagen ya esté descargada o en proceso de descarga. Si simplemente carga proyectos y explora código, puede desactivar esta opción para evitar la descarga de imágenes de contenedor que no son necesarias. |
 | Iniciar automáticamente los contenedores en segundo plano | Activado | Docker Compose | Una vez más, para aumentar el rendimiento, Visual Studio crea un contenedor con montajes de volumen listos para cuando se compile y ejecute el contenedor. Si desea controlar cuándo se crea el contenedor, desactive esta opción. |
@@ -52,14 +52,14 @@ La tabla siguiente puede ayudarle a decidir cómo configurar estas opciones.
 
 En la siguiente tabla se describe la configuración **general**:
 
-| Name | Configuración predeterminada | Se aplica a | DESCRIPCIÓN |
+| NOMBRE | Valor predeterminado | Se aplica a | Descripción |
 | -----|:---------------:|:----------:| ----------- |
 | Instalar Docker Desktop si es necesario | Preguntarme | Proyecto único, Docker Compose | Elija si desea que se le pregunte si Docker Desktop no está instalado. |
 | Confiar en el certificado SSL de ASP.NET Core | Preguntarme | Proyectos de ASP.NET Core 2.x | Cuando se establece en **Preguntarme**, si el certificado SSL de localhost no es de confianza, Visual Studio le pedirá confirmación cada vez que ejecute el proyecto. |
 
 En la siguiente tabla se describe la configuración de **Proyecto único** y **Docker Compose**:
 
-| Name | Configuración predeterminada | Se aplica a | DESCRIPCIÓN |
+| NOMBRE | Valor predeterminado | Se aplica a | Descripción |
 | -----|:---------------:|:----------:| ----------- |
 | Extraer las imágenes de Docker necesarias al abrir el proyecto | True | Proyecto único, Docker Compose | Para aumentar el rendimiento al cargar proyectos, Visual Studio iniciará una operación docker pull en segundo plano para que cuando se esté listo para ejecutar el código, la imagen ya esté descargada o en proceso de descarga. Si simplemente carga proyectos y explora código, puede establecer esta opción en **False** para evitar la descarga de imágenes de contenedor que no son necesarias. |
 | Ejecutar contenedores al abrir el proyecto | True | Proyecto único, Docker Compose | Una vez más, para aumentar el rendimiento, Visual Studio crea un contenedor de antemano listo para cuando se compile y ejecute el contenedor. Si desea controlar cuándo se crea el contenedor, establezca esta opción en **False**. |

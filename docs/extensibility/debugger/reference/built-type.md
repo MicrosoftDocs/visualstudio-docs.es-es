@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE | Microsoft Docs
+title: BUILT_TYPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae5c7e1916c77e3743de63df8903e62feea4fe28
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327321"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737703"
 ---
-# <a name="builttype"></a>BUILT_TYPE
-Esta estructura especifica información sobre un tipo de campo que se toman de los metadatos.
+# <a name="built_type"></a>BUILT_TYPE
+Esta estructura especifica información sobre un tipo de campo tomado de metadatos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ public struct BUILT_TYPE {
 
 ## <a name="members"></a>Miembros
 `ulAppDomainID`\
-Identificador de la aplicación del que procede el símbolo. Esto se utiliza para identificar de forma exclusiva una instancia de la aplicación.
+ID de la aplicación de la que procede el símbolo. Esto se utiliza para identificar de forma única una instancia de la aplicación.
 
 `guidModule`\
-El GUID del módulo que contiene este campo.
+Guid del módulo que contiene este campo.
 
 `pUnderlyingField`\
-Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que identifica el campo subyacente asociado a este campo integrado.
+Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que identifica el campo subyacente asociado a este campo compilado.
 
-## <a name="remarks"></a>Comentarios
-Esta estructura aparece como parte de la unión en el [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estructura cuando la `dwKind` campo de la `TYPE_INFO` estructura está establecida en `TYPE_KIND_BUILT` (un valor de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeración).
+## <a name="remarks"></a>Observaciones
+Esta estructura aparece como parte de la `dwKind` unión `TYPE_INFO` en la `TYPE_KIND_BUILT` [estructura TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) cuando se establece el campo de la estructura en (un valor de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeración).
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: sh.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

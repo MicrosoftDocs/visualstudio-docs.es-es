@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.openlocfilehash: 025cf432912d38976507c93545e7c38b44d86fd8
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544534"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223663"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -98,7 +98,7 @@ Para asegurarse de que tiene acceso a todo lo que quiere cuando usa Visual Stud
 | Integración <br>de proyectos de AI | az861674.vo.msecnd.net | 443<br> | Se utiliza para configurar nuevos proyectos y enviar datos de uso a su cuenta de Application Insights registrada. |
 | Code Lens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Se utiliza para proporcionar información en el editor sobre cuándo se actualizó por última vez un archivo, la escala de tiempo de los cambios, los elementos de trabajo con los que se asocian los cambios, los creadores y mucho más. |
 | Habilitación de características <br>experimentales | visualstudio-devdiv-c2s.msedge.net | 80 | Se utiliza para activar los cambios de características o de nuevas características experimentales. |
-| Distintivo de identidad <br>(nombre de usuario y avatar)<br>y <br>configuración de itinerancia | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Se utiliza para mostrar el nombre del usuario y el avatar en el IDE. <br><br> Se utiliza para asegurarse de que los cambios de configuración pasan de una máquina a otra. |
+| "Distintivo" de identidad <br>(nombre de usuario y avatar)<br>y <br>configuración de itinerancia | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net<br><br>api.vstsusers.visualstudio.com/profiles/* | 443 | Se utiliza para mostrar el nombre del usuario y el avatar en el IDE. <br><br> Se utiliza para asegurarse de que los cambios de configuración pasan de una máquina a otra. |
 | Configuración remota | az700632.vo.msecnd.net | 443 | Se utiliza para desactivar las extensiones que suelen causar problemas en Visual Studio. |
 | Herramientas de Windows | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https/443 | Se usa en los escenarios de almacén de aplicaciones de Windows. |
 | Detección <br>de esquema JSON <br><br>Definición <br>de esquema JSON<br><br>Compatibilidad de <br>esquema JSON para <br>recursos de Azure | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http/80<br>https/443<br><br>http/80<br><br>https/443 | Se utiliza para detectar y descargar esquemas JSON que el usuario puede emplear al editar los documentos JSON. <br><br>Se usa para obtener el esquema de validación de metadatos de JSON.<br><br>Sirve para obtener el esquema actual para las plantillas de implementación de Azure Resource Manager. |
@@ -147,7 +147,7 @@ A veces, es posible que se ejecuten errores relacionados con la red o con el pro
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-Dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
+Se ofrece una opción de soporte técnico de [**chat de instalación**](https://visualstudio.microsoft.com/vs/support/#talktous) para incidencias relacionadas con la instalación (solo en inglés).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

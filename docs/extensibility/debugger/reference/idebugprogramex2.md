@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 | Microsoft Docs
+title: IDebugProgramEx2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a9e44ee2a7782cb804c4e0b6f4279918e7d78e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325107"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722333"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-Esta interfaz permite que la sesión de depuración manager (SDM) asociar a un programa y obtener el nodo de programa asociado con un programa.
+Esta interfaz permite que el administrador de depuración de sesión (SDM) se asocie a un programa y obtenga el nodo de programa asociado a un programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,26 +29,26 @@ IDebugProgramEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de puerto personalizado implementa esta interfaz en el mismo objeto que el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz para permitir que el SDM asociar a un programa mientras al mismo tiempo, lo que permite el proveedor del puerto realizar el seguimiento de todas las sesiones conectado a la programa. El proveedor del puerto personalizado puede implementar esta interfaz si así lo decide.
+ Un proveedor de puerto personalizado implementa esta interfaz en el mismo objeto que la [interfaz IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) con el fin de permitir que el SDM se asocie a un programa mientras que al mismo tiempo permite al proveedor de puertos realizar un seguimiento de todas las sesiones adjuntas al programa. El proveedor de puertos personalizado puede implementar esta interfaz si así lo desea.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Las llamadas SDM [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProgram2` interfaz para obtener esta interfaz para realizar un seguimiento de las sesiones que se han asociado a programas.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ El SDM llama a `IDebugProgram2` [QueryInterface](/cpp/atl/queryinterface) en una interfaz para obtener esta interfaz para realizar un seguimiento de las sesiones que se han asociado a los programas.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDebugProgramEx2`.
+ En la tabla siguiente `IDebugProgramEx2`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
-|[Asociar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Un programa se asocia a una sesión.|
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtiene el nodo de programa asociado con un programa.|
+|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Asocia un programa a una sesión.|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtiene el nodo de programa asociado a un programa.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Esta interfaz es privada entre el SDM y el programa.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: Portpriv.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

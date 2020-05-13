@@ -1,18 +1,19 @@
 ---
 title: Uso de las identidades conectadas de la cuenta Microsoft y Azure Active Directory | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 09/27/2019
+ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
+ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Aprenda a trabajar con identidades conectadas de la cuenta Microsoft y Azure Active Directory.
-ms.openlocfilehash: 1a862caa1f984f5d22f041a6f0cbff6534d8cc1c
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816581"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233171"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Uso de identidades conectadas en suscripciones de Visual Studio
 Si recibe una suscripción a Visual Studio por medio de su trabajo o escuela, y usa la cuenta Microsoft (MSA) para iniciar sesión, el administrador de suscripciones puede conectar su MSA a su identidad en la instancia de Azure Active Directory de la organización (Azure AD).  Esto cambiará el modo de acceder a algunas de las ventajas que se incluyen en la suscripción. 
@@ -37,6 +38,12 @@ La adición de una cuenta alternativa a la suscripción de Visual Studio permite
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>P: ¿Cómo puedo ponerme en contacto con el administrador sobre esta asunto?
 R:  Para información sobre cómo ponerse en contacto con el administrador, consulte el artículo [Cómo ponerse en contacto con el administrador de suscripciones](contact-my-admin.md).  
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que el administrador conecta sus cuentas de Azure AD y MSA, se recomienda comprobar que puede iniciar sesión correctamente en el [portal de suscripciones](https://my.visualstudio.com?wt.mc_id=o~msft~docs) y acceder a ventajas como Azure DevOps, Visual Studio y el crédito individual de Azure DevTest. 

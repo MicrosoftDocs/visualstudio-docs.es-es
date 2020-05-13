@@ -1,17 +1,18 @@
 ---
 title: Ventaja de Office 365 Pro Plus | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 08/02/2019
+ms.assetid: 9c70adf7-7d1b-4322-8e34-9149e8735a13
+ms.date: 04/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 Pro Plus que se incluye en algunas suscripciones de Visual Studio.
-ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
-ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.openlocfilehash: 3db596912739562b65a0568864dfdf224cc28b3a
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904157"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649492"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus en suscripciones de Visual Studio
 

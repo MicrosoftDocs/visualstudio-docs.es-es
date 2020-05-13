@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 4d5878e2c5950e45f65f8d56efdf53cd7b2e89ea
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094682"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223676"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias para código administrado
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
 En este artículo se recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el **Explorador de pruebas** de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Luego se cambia el código del proyecto y se vuelven a ejecutar las pruebas.
 
@@ -370,7 +370,7 @@ Ejecutar las dos pruebas y comprobar que se superan.
 
 Puede mejorar aún más el método que se está probando. Con la implementación actual, no hay ninguna manera de saber qué condición (`amount > m_balance` o `amount < 0`) ha provocado la excepción producida durante la prueba. Sabemos solo que se ha producido un `ArgumentOutOfRangeException` en algún lugar del método. Sería mejor si pudiéramos decir qué condición en `BankAccount.Debit` produjo la excepción (`amount > m_balance` o `amount < 0`) para que pudiéramos estar seguros de que el método está comprobando correctamente el estado de sus argumentos.
 
-Examine de nuevo el método en pruebas (`BankAccount.Debit`) y compruebe que ambas instrucciones condicionales utilizan un constructor `ArgumentOutOfRangeException` que tan solo toma el nombre del argumento como parámetro:
+Examine de nuevo el método en pruebas (`ArgumentOutOfRangeException`) y compruebe que ambas instrucciones condicionales utilizan un constructor `BankAccount.Debit` que tan solo toma el nombre del argumento como parámetro:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Vuelva a probar, reescriba y vuelva a analizar
 
-Imagine que hay un error en el método sometido a prueba y que el método `Debit` ni produce una excepción <xref:System.ArgumentOutOfRangeException> ni tampoco muestra el mensaje correcto con la excepción. Actualmente, el método de prueba no trata este caso. Si el valor de `debitAmount` es válido (es decir, menor que el saldo y mayor que cero), no se detecta ninguna excepción, por lo que la aserción nunca se desencadena. Sí, el método de prueba se completa correctamente. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
+Actualmente, el método de prueba no controla todos los casos que debería. Si el método sometido a prueba (`Debit`) no ha podido iniciar una excepción <xref:System.ArgumentOutOfRangeException> cuando `debitAmount` era mayor que el saldo (o menor que cero), el método de prueba pasaría. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
 
 Se trata de un error en el método de prueba. Para resolver el problema, agregue una validación <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> al final del método de prueba para controlar el caso donde no se produce ninguna excepción.
 

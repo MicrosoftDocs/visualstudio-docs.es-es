@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77272266"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232943"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -93,7 +93,7 @@ Vínculo de referencia: **[Azure Pipelines](/azure/devops/pipelines/index?view=v
 |Pruebas manuales|Sí||
 |Administrador de pruebas (grabar y reproducir pruebas)|Dispositivos Windows y emuladores de Android únicamente||
 |Cobertura de código|no disponible|No aplicable, ya que las pruebas unitarias tienen lugar en Unity y no en Visual Studio, vea más adelante.|
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Tienda de recursos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Tienda de recursos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|
 |[Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|
 
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código
@@ -124,4 +124,4 @@ Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
-|Análisis de bloqueo, telemetría y distribución beta|Sí|HockeyApp es principalmente útil para controlar la distribución beta y la obtención de informes de bloqueo.<br /><br /> Para la telemetría de scripts de C#, se puede usar cualquier marco de análisis siempre que se ejecute en la versión de .NET que usa Unity. Sin embargo, esto permite la realización de análisis solo para scripts de juegos, pero no con mayor profundidad en el motor de Unity. En este momento no hay ningún complemento para Application Insights, pero hay complementos disponibles para otras soluciones de análisis como [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) y [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Los servicios como Analytics Unity, que entiende la naturaleza de un proyecto de Unity, podrán, por supuesto, proporcionar análisis mucho más significativos que los marcos de trabajo genéricos.|
+|Análisis de bloqueo, telemetría y distribución beta|Sí|HockeyApp es principalmente útil para controlar la distribución beta y la obtención de informes de bloqueo.<br /><br /> Para la telemetría de scripts de C#, se puede usar cualquier marco de análisis siempre que se ejecute en la versión de .NET que usa Unity. Sin embargo, esto permite la realización de análisis solo para scripts de juegos, pero no con mayor profundidad en el motor de Unity. En este momento no hay ningún complemento para Application Insights, pero hay complementos disponibles para otras soluciones de análisis como [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) y [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Los servicios como Analytics Unity, que entiende la naturaleza de un proyecto de Unity, podrán, por supuesto, proporcionar análisis mucho más significativos que los marcos de trabajo genéricos.|

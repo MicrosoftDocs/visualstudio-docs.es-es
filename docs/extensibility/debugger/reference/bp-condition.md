@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Microsoft Docs
+title: BP_CONDITION Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337422"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738105"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
+# <a name="bp_condition"></a>BP_CONDITION
 Describe las condiciones en las que se desencadena un punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
@@ -49,29 +49,29 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Miembros
 `pThread`\
-El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso activo para la aplicación que contiene el punto de interrupción.
+El [objeto IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso activo de la aplicación que contiene el punto de interrupción.
 
 `styleCondition`\
-Un valor de la [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeración que describe el estilo de esta condición de punto de interrupción.
+Valor de la [enumeración BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) que describe el estilo de esta condición de punto de interrupción.
 
 `bstrContext`\
 La ubicación del punto de interrupción.
 
 `bstrCondition`\
-La condición de activación del punto de interrupción.
+La condición de disparo del punto de interrupción.
 
 `nRadix`\
-Base que se utiliza para evaluar cualquier información numérica.
+Radix que se utilizará en la evaluación de cualquier información numérica.
 
-## <a name="remarks"></a>Comentarios
-Esta estructura es un miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.
+## <a name="remarks"></a>Observaciones
+Esta estructura es un miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Esta estructura también se pasa como parámetro a la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) y [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) métodos.
+Esta estructura también se pasa como parámetro a los métodos [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) y [SetCondition.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75568417"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472820"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Cuadro de diálogo Opciones: Editor de texto \> General
 
@@ -93,6 +93,10 @@ Cuando está seleccionada, muestra un cuadro gris alrededor de la línea de cód
 ### <a name="show-structure-guide-lines"></a>Mostrar líneas guía de estructura
 
 Cuando se selecciona esta opción, aparecen líneas verticales en el editor que se alinean con bloques de código estructurado, lo que permite identificar fácilmente los bloques de código individuales.
+
+### <a name="show-file-health-indicator"></a>Mostrar el indicador de estado del archivo
+
+Cuando está activo, se mostrará una barra de indicador de estado del archivo (errores, advertencias) con opciones de limpieza de código en la esquina inferior izquierda del editor.
 
 ## <a name="see-also"></a>Vea también
 

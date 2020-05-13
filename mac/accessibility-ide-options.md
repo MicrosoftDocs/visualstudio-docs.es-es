@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985124"
 ---
 # <a name="set-ide-accessibility-options"></a>Establecimiento de opciones de accesibilidad de IDE
@@ -27,7 +27,7 @@ Además de las características integradas en macOS, Visual Studio para Mac cue
 
 ## <a name="change-the-content-font-and-size"></a>Cambio de la fuente y del tamaño del contenido
 
-Es posible personalizar la fuente y el tamaño del contenido de la mayoría de los paneles de Visual Studio para Mac. Esta es la manera de hacerlo:
+Es posible personalizar la fuente y el tamaño del contenido de la mayoría de los paneles de Visual Studio para Mac. A continuación, se indica cómo puede hacerlo.
 
 1. Vaya a **Visual Studio (menú)**  > **Preferencias... (&#8984;,)** .
 

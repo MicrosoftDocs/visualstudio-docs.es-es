@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
+ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631242"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82167460"
 ---
 # <a name="vbc-task"></a>Vbc (tarea)
 
@@ -89,9 +89,7 @@ Incluye *vbc.exe*, que genera ejecutables ( *.exe*), archivos de biblioteca de v
 | `Win32Icon` | Parámetro `String` opcional.<br /><br /> Inserta un archivo *.ico* en el ensamblado, lo que proporciona al archivo de salida la apariencia deseada en el **Explorador de archivos**. Este parámetro corresponde al modificador [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) del compilador de *vbc.exe*. |
 | `Win32Resources` | Parámetro `String` opcional.<br /><br /> Inserta un recurso de Win32 (archivo *.res*) en el archivo de salida. Este parámetro corresponde al modificador [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) del compilador de *vbc.exe*. |
 
-## <a name="remarks"></a>Comentarios
-
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).
+[!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
 ## <a name="example"></a>Ejemplo
 

@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento EnableLocationBrowseButton (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be2f67d08fcac39d26f9a27f76ad8aff967440b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334463"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711987"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (elemento) (plantillas de Visual Studio)
-Especifica si el **examinar** botón está disponible en el **nuevo proyecto** cuadro de diálogo para que los usuarios puedan modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto.
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (plantillas de Visual Studio)
+Especifica si el botón **Examinar** está disponible en el cuadro de diálogo **Nuevo proyecto,** para que los usuarios puedan modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto.
 
- \<VSTemplate> \<TemplateData> \<EnableLocationBrowseButton>
+ \<VSTemplate \<> TemplateData> \<EnableLocationBrowseButton>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,15 +49,15 @@ Especifica si el **examinar** botón está disponible en el **nuevo proyecto** c
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser `true` o `false`, que indica si se deben mostrar el **examinar** situado en la **nuevo proyecto** cuadro de diálogo.
+ El texto debe `true` `false`ser o , que indica si se debe mostrar o no el botón **Examinar** en el cuadro de diálogo **Nuevo proyecto.**
 
-## <a name="remarks"></a>Comentarios
- `EnableLocationBrowseButton` es un elemento opcional. El valor predeterminado es `true`, que muestra la **examinar** situado en la **nuevo proyecto** cuadro de diálogo.
+## <a name="remarks"></a>Observaciones
+ `EnableLocationBrowseButton` es un elemento opcional. El valor `true`predeterminado es , que muestra el botón **Examinar** en el cuadro de diálogo **Nuevo proyecto.**
 
- En el **nuevo proyecto** cuadro de diálogo, el **ubicación** cuadro de texto especifica el directorio donde se guarda un nuevo proyecto. El **examinar** botón le ayuda a modificar este directorio mostrando el **ubicación del proyecto** cuadro de diálogo que le permite desplazarse fácilmente a un directorio diferente que está disponible en el equipo, y a continuación, elija como el directorio donde se guarda el nuevo proyecto.
+ En el cuadro de diálogo **Nuevo proyecto,** el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto. El botón **Examinar** le ayuda a modificar este directorio mostrando el cuadro de diálogo Ubicación del **proyecto,** que le permite navegar fácilmente a un directorio diferente que está disponible desde el equipo y, a continuación, elegirlo como el directorio donde se guarda el nuevo proyecto.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.
+ En el ejemplo siguiente se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestran los metadatos de una aplicación de Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,5 +85,5 @@ Especifica si el **examinar** botón está disponible en el **nuevo proyecto** c
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

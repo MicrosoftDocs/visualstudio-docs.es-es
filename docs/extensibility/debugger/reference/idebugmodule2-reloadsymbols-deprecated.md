@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
+title: IDebugModule2::ReloadSymbols_Deprecated Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 635e305c0dd88d72017048da6353f813fcc46406
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323959"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726920"
 ---
-# <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-OBSOLETO. NO USE. Vuelve a cargar los símbolos para este módulo.
+# <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
+OBSOLETO. NO USAR. Vuelve a cargar los símbolos de este módulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int ReloadSymbols( 
 
 ## <a name="parameters"></a>Parámetros
 `pszUrlToSymbols`\
-[in] La ruta de acceso al almacén de símbolos.
+[en] La ruta de acceso al almacén de símbolos.
 
 `pbstrDebugMessage`\
-[out] Devuelve un mensaje informativo, como un mensaje de error o estado, que se muestra a la derecha del nombre del módulo en la ventana módulos.
+[fuera] Devuelve un mensaje informativo, como un estado o un mensaje de error, que se muestra a la derecha del nombre del módulo en la ventana Módulos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Siempre debe devolver un motor de depuración `E_FAIL`.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Un motor de `E_FAIL`depuración siempre debe devolver .
 
-## <a name="remarks"></a>Comentarios
- Este método ya no se admite. Implemente el [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) método en su lugar.
+## <a name="remarks"></a>Observaciones
+ Este método ya no es compatible. Implemente el método [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) en su lugar.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

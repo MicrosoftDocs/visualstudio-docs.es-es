@@ -1,27 +1,27 @@
 ---
-title: Orígenes de eventos (SDK de Visual Studio) | Microsoft Docs
+title: Orígenes de eventos (SDK de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315313"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738772"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (Visual Studio SDK)
-Hay dos orígenes de eventos: el motor de depuración (DE) y la sesión de depuración Manager (SDM). Eventos enviados desde una DE tengan un motor distinto de NULL, mientras que los eventos enviados desde el SDM tienen un motor NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
+Hay dos fuentes de eventos: el motor de depuración (DE) y el Administrador de depuración de sesión (SDM). Los eventos enviados desde un DE tienen un motor que no es NULL, mientras que los eventos enviados desde el SDM tienen un motor NULL.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo enviar el **IDebugProgramCreateEvent2** desde la DE para el SDM.
+En el ejemplo siguiente se muestra cómo enviar el **IDebugProgramCreateEvent2** desde el DE al SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

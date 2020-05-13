@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594370"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256236"
 ---
-# <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>Primer vistazo a las herramientas de prueba de Visual Studio
 
 Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y mantener altos estándares de excelencia de código.
 

@@ -3,15 +3,16 @@ title: Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Obtenga más información sobre la nueva oferta de Visual Studio + GitHub
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476754"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232781"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introducción a las suscripciones de Visual Studio con GitHub Enterprise  
 
@@ -77,12 +78,14 @@ R:  Junto con una suscripción de GitHub Enterprise, recibirá una suscripción 
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenga [soporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para GitHub Enterprise.   
 
-## <a name="next-steps"></a>Pasos siguientes
-Si no está familiarizado con GitHub, vaya a [GitHub Learning Lab](https://lab.github.com/), que lo guiará por una serie de proyectos divertidos y prácticos con los que compartirá comentarios útiles a lo largo del camino.
-
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)
 - [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Pasos siguientes
+Si no está familiarizado con GitHub, vaya a [GitHub Learning Lab](https://lab.github.com/), que lo guiará por una serie de proyectos divertidos y prácticos con los que compartirá comentarios útiles a lo largo del camino.
+
+
 

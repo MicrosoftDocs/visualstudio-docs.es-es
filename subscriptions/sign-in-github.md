@@ -3,15 +3,16 @@ title: Inicio de sesión en Suscripciones de Visual Studio con la cuenta de GitH
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta de GitHub.
-ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944201"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233229"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta de GitHub 
 
@@ -62,6 +63,12 @@ R:  Vaya a la [pestaña Seguridad](https://account.microsoft.com/security) de ac
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>P:  Intento usar mi cuenta de GitHub para iniciar sesión, pero se me indica que ya tengo una identidad de Microsoft que debo usar en su lugar.  ¿Qué sucede?
 R:  Si tiene una dirección de correo electrónico de Azure Active Directory en la cuenta de GitHub, esto significa que ya tiene una identidad de Microsoft que puede acceder a Azure y ejecutar canalizaciones de CI con el código de GitHub. El empleo de esa cuenta garantiza que los recursos de Azure y las canalizaciones de compilación permanezcan dentro de los límites organizativos. Pero si está realizando trabajo personal, se recomienda usar una dirección de correo electrónico personal en la cuenta de GitHub para tener siempre acceso a ella. Una vez hecho esto, intente volver a iniciar sesión y seleccione **Usar otra dirección de correo electrónico** cuando se le pida iniciar sesión en la cuenta profesional o educativa. Esto le permite crear una nueva cuenta Microsoft con esa dirección de correo electrónico personal.
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.  

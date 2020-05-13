@@ -21,11 +21,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114573"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307230"
 ---
 # <a name="install-visual-studio"></a>Instalar Visual Studio
 
@@ -133,7 +133,7 @@ Ejecute el archivo de programa previo para instalar el Instalador de Visual Stu
 
    ![Términos de licencia y declaración de privacidad](media/privacy-and-license-terms.png "Términos de licencia y declaración de privacidad de Microsoft")
 
-## <a name="step-4---choose-workloads"></a>Paso 4: Elección de las cargas de trabajo
+## <a name="step-4---choose-workloads"></a>Paso 4: Elegir las cargas de trabajo
 
 Una vez instalado el Instalador, puede usarlo para personalizar la instalación mediante la selección de los conjuntos de características, o cargas de trabajo, que desee. Esta es la manera de hacerlo.
 
@@ -168,7 +168,7 @@ Una vez instalado el Instalador, puede usarlo para personalizar la instalación 
 > [!TIP]
 > En cualquier momento después de la instalación, puede instalar las cargas de trabajo o los componentes que no instaló inicialmente. Si tiene Visual Studio abierto, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. O bien, abra el **Instalador de Visual Studio** desde el menú Inicio. A partir de ahí, puede elegir las cargas de trabajo o los componentes que quiera instalar. A continuación, elija **Modificar**.
 
-## <a name="step-5---choose-individual-components-optional"></a>Paso 5: Selección de componentes individuales (opcional)
+## <a name="step-5---choose-individual-components-optional"></a>Paso 5: Elegir componentes individuales (opcional)
 
 Si no quiere usar la característica Cargas de trabajo para personalizar la instalación de Visual Studio o quiere agregar más componentes de los que instala una carga de trabajo, puede hacerlo instalando o agregando componentes individuales desde la pestaña **Componentes individuales**. Elija los elementos que quiera y, luego, siga las indicaciones.
 

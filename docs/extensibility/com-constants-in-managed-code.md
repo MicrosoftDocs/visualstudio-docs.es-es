@@ -1,26 +1,26 @@
 ---
-title: Constantes de COM en código administrado | Microsoft Docs
+title: Constantes COM en el código administrado ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d855142ad51f5433fbf0053cfbcfc1d8bef8871d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350710"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739827"
 ---
-# <a name="com-constants-in-managed-code"></a>Constantes de COM en código administrado
-Managed Package Framework (MPF) hace que algunas constantes COM estándares que esté disponible para código administrado. Estas constantes se muestran a continuación para su referencia.
+# <a name="com-constants-in-managed-code"></a>Constantes COM en código administrado
+Managed Package Framework (MPF) pone algunas constantes COM estándar a disposición del código administrado. Estas constantes se enumeran a continuación para su referencia.
 
-## <a name="boolean-hresult-values"></a>Valores HRESULT booleano
+## <a name="boolean-hresult-values"></a>Valores HRESULT booleanos
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
@@ -127,4 +127,4 @@ Managed Package Framework (MPF) hace que algunas constantes COM estándares que 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
 ## <a name="see-also"></a>Vea también
-- [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)
+- [Manejo de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)

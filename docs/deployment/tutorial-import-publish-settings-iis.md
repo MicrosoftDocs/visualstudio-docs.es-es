@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65680138"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en IIS mediante la importación de la configuración de publicación en Visual Studio
@@ -23,7 +23,7 @@ Puede usar la herramienta **Publicar** para importar la configuración de public
 
 Estos pasos se aplican a aplicaciones ASP.NET, ASP.NET Core y .NET Core en Visual Studio.
 
-En este tutorial va a:
+En este tutorial, aprenderá lo siguiente:
 
 > [!div class="checklist"]
 > * Configurar IIS para que pueda generar un archivo de configuración de publicación
@@ -31,12 +31,12 @@ En este tutorial va a:
 > * Importar el archivo de configuración de publicación a Visual Studio
 > * Implementar la aplicación en IIS
 
-Un archivo de configuración de publicación (*\*.publishsettings*) es diferente de un perfil de publicación (*\*.pubxml*) creado en Visual Studio. Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
+Un archivo de configuración de publicación (*\*.publishsettings*) es diferente a un perfil de publicación (*\*.pubxml*) creado en Visual Studio. Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
 
 > [!NOTE]
-> Si desea copiar un perfil de publicación de Visual Studio (\*archivo .pubxml) de una instalación de Visual Studio a otra, puede encontrar el perfil de publicación, *\<nombredeperfil\>.pubxml*, en la carpeta *\\<nombredeproyecto\>\Properties\PublishProfiles* para los tipos de proyecto administrados. Para los sitios web, busque en la carpeta *\App_Data*. Los perfiles de publicación son archivos XML de MSBuild.
+> Si desea copiar un perfil de publicación de Visual Studio (\*archivo .pubxml) de una instalación de Visual Studio a otra, puede encontrar el perfil de publicación, *\<nombredeperfil\>.pubxml*, en la carpeta *\\<nombredeproyecto\>\Properties\PublishProfiles* para los tipos de proyecto administrados. Para sitios web, busque en la carpeta *\App_Data*. Los perfiles de publicación son archivos XML de MSBuild.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range=">=vs-2019"
 

@@ -3,21 +3,22 @@ title: Problemas al iniciar sesión en las suscripciones de Visual Studio | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706852"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233240"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>No se pueden crear cuentas Microsoft (MSA) con direcciones de correo electrónico profesionales o educativas
-Ya no se permite crear una nueva cuenta Microsoft (MSA) personal con una dirección de correo electrónico profesional o educativa cuando se configura el dominio de correo electrónico en Azure AD. ¿Qué significa esto? Si la organización usa Office 365 u otros servicios empresariales de Microsoft que se basan en Azure AD y si ha agregado un nombre de dominio al inquilino de Azure AD, los usuarios ya no podrán crear una cuenta personal de Microsoft con una dirección de correo electrónico en su dominio.
+Ya no se permite crear una nueva cuenta Microsoft (MSA) personal con una dirección de correo electrónico profesional o educativa cuando se configura el dominio de correo electrónico en Azure AD. ¿Qué significa? Si la organización usa Office 365 u otros servicios empresariales de Microsoft que se basan en Azure AD y si ha agregado un nombre de dominio al inquilino de Azure AD, los usuarios ya no podrán crear una cuenta personal de Microsoft con una dirección de correo electrónico en su dominio.
 
 ### <a name="why-was-this-change-made"></a>¿Por qué se realizó este cambio?
 Tener una cuenta Microsoft personal con una dirección profesional como nombre de usuario causa muchos problemas a los usuarios finales y departamentos de TI por igual. Por ejemplo:
@@ -61,6 +62,12 @@ Esta situación puede darse cuando una empresa emplea un servicio en línea de M
 
 ### <a name="what-options-do-i-have"></a>¿De qué opciones dispongo?
 Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo. Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción. 
+
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Obtenga información sobre cómo [vincular cuentas de MSA y AAD](/azure/active-directory/b2b/add-users-administrator) en AAD.

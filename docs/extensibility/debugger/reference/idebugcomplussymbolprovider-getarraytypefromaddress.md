@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dff0080dbdbe0c312f82ce66a3556ed50f9220a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 048a086bae946b5ce730bdfe2c343b6cde1b29e2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338697"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733990"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Recupera información acerca de la matriz especificada a partir de su dirección de depuración de tipo.
+Recupera información de tipo sobre la matriz especificada dada su dirección de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,22 +46,22 @@ int GetArrayTypeFromAddress(
 
 ## <a name="parameters"></a>Parámetros
 `pAddress`\
-[in] La dirección de depuración representado por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.
+[en] La dirección de depuración representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.
 
 `pSig`\
-[in] Para examinar la matriz.
+[en] Matriz que se está examinando.
 
 `dwSigLength`\
-[in] Longitud en bytes de la `pSig` matriz.
+[en] Longitud en bytes `pSig` de la matriz.
 
 `ppField`\
-[out] Devuelve el tipo de matriz, tal como está representada por un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.
+[fuera] Devuelve el tipo de matriz representado por un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(

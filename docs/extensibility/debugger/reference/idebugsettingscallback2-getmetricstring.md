@@ -1,28 +1,28 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
+title: IDebugSettingsCallback2::GetMetricString ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 119fa1ac0f90cd6ebef22633130a3683c039a204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321975"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719963"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Recupera la cadena del valor de la métrica de acuerdo con su nombre.
+Recupera la cadena de valor de la métrica a la que se le da su nombre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,19 +46,19 @@ private int GetMetricString(
 
 ## <a name="parameters"></a>Parámetros
 `pszType`\
-[in] Tipo de la métrica.
+[en] Tipo de la métrica.
 
 `guidSection`\
-[in] Identificador único de la sección.
+[en] Identificador único de la sección.
 
 `pszMetric`\
-[in] Nombre de la métrica.
+[en] Nombre de la métrica.
 
 `pbstrValue`\
-[out] Devuelve la cadena del valor de la métrica.
+[fuera] Devuelve la cadena de valor de la métrica.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

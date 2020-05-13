@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft Docs
+title: BPRESI_FIELDS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350480"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737723"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
 Especifica la información que se va a recuperar sobre la resolución correcta de un punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
@@ -46,30 +46,30 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `BPRESI_BPRESLOCATION`\
-Inicializar o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura.
+Inicializar/utilizar `bpResLocation` el campo (ubicación de resolución de punto de interrupción) de la estructura [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
 
 `BPRESI_PROGRAM`\
-Inicializar o usar el `pProgram` campo de la `BP_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `pProgram` el campo `BP_RESOLUTION_INFO` de la estructura.
 
 `BPRESI_THREAD`\
-Inicializar o usar el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `pThread` el campo `BP_RESOLUTION_INFO` de la estructura.
 
 `BPRESI_ALLFIELDS`\
 Especifica todos los campos.
 
-## <a name="remarks"></a>Comentarios
-Pasa a la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) método para indicar qué campos de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura deben inicializarse.
+## <a name="remarks"></a>Observaciones
+Se pasa al método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) para indicar qué campos de la estructura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) se van a inicializar.
 
-Estas marcas también se usan para indicar qué campos de la `BP_RESOLUTION_INFO` estructura se usan y válido cuando se devuelve esa estructura.
+Estos indicadores también se utilizan `BP_RESOLUTION_INFO` para indicar qué campos de la estructura se utilizan y son válidos cuando se devuelve esa estructura.
 
-Estos valores se pueden combinar con un bit a bit `OR`.
+Estos valores se pueden combinar `OR`con un archivo .
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

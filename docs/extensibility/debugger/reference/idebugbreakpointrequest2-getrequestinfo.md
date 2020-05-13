@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: IDebugBreakpointRequest2::GetRequestInfo ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352897"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734940"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[in] Una combinación de marcas de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que determina qué campos de la `pBPRequestInfo` parámetro son para rellenarlo.
+[en] Una combinación de indicadores de la [enumeración BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que determina qué campos del `pBPRequestInfo` parámetro se deben rellenar.
 
 `pBPRequestInfo`\
-[out] Especifica el [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura que se rellena con la descripción de la solicitud de punto de interrupción.
+[fuera] Especifica la [estructura BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) que se rellenará con la descripción de la solicitud de punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra cómo implementar este método para una sencilla `CDebugBreakpointRequest` objeto que expone el [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz.
+ En el ejemplo siguiente se muestra `CDebugBreakpointRequest` cómo implementar este método para un objeto simple que expone el [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz.
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Microsoft Docs
+title: IDebugThread2::CanSetNextStatement ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320294"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718865"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Determina si se puede establecer el puntero de instrucción actual en el marco de pila determinado.
+Determina si el puntero de instrucción actual se puede establecer en el marco de pila especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>Parámetros
 `pStackFrame`\
-Reservado para uso futuro; se establece en un valor null. Si se trata de un valor null, utilice el marco de pila actual.
+Reservado para uso futuro; establecido en un valor nulo. Si se trata de un valor nulo, utilice el marco de pila actual.
 
 `pCodeContext`\
-[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación del código va a ejecutar y su contexto.
+[en] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación de código a punto de ejecutarse y su contexto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Si este método devuelve `S_OK`, a continuación, llame a la [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) método para establecer la siguiente instrucción.
+## <a name="remarks"></a>Observaciones
+ Si este `S_OK`método devuelve , llame a la [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) método para establecer realmente la siguiente instrucción.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

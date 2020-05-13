@@ -10,23 +10,23 @@ dev_langs:
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
-ms.author: wilkelly
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234961"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649627"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
 JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayoría de las ayudas de edición estándar (fragmentos de código, IntelliSense, etc.) al escribir código JavaScript en el IDE de Visual Studio. Puede escribir código JavaScript para muchos tipos de aplicaciones y servicios.
 
 > [!NOTE]
-> Hemos contribuido en los esfuerzos que ha hecho toda la comunidad para que [documentos web de MDN](https://developer.mozilla.org/en-US/) sea el principal recurso de desarrollo integral redirigiendo todas las referencias de la API de JavaScript de Microsoft (más de 500 páginas) de docs.microsoft.com a sus equivalentes en MDN. Para obtener más información, vea este [anuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Nos hemos unido a los esfuerzos que ha hecho toda la comunidad para que los [documentos web de MDN](https://developer.mozilla.org/en-US/) sean el principal recurso de desarrollo integral, redirigiendo todas las referencias de la API de JavaScript de Microsoft (más de 500 páginas) de docs.microsoft.com a sus equivalentes en MDN. Para obtener más información, vea este [anuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
-## <a name="ES6"></a> Compatibilidad con ECMAScript 2015 (ES6) y más allá
+## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Compatibilidad con ECMAScript 2015 (ES6) y más allá
 
 Visual Studio admite ahora la sintaxis para actualizaciones del lenguaje ECMAScript, como ECMAScript 2015/2016.
 
@@ -51,14 +51,14 @@ Para compilar archivos de JavaScript, se debe agregar un archivo `tsconfig.json`
 
 La configuración necesaria para el archivo tsconfig es la siguiente:
 
-- `allowJs`: Este valor debe establecerse en `true` para que se reconozcan los archivos JavaScript. El valor predeterminado es `false`, ya que TypeScript se compila en JavaScript, y el compilador no debe incluir los archivos que acaba de compilar.
-- `outDir`: este valor se debe establecer en una ubicación que no esté incluida en el proyecto, para que los archivos JavaScript emitidos no se detecten y después se incluyan en el proyecto (vea `exclude`).
+- `allowJs`: este valor se debe establecer en `true` para que se reconozcan los archivos JavaScript. El valor predeterminado es `false`, ya que TypeScript se compila en JavaScript, y el compilador no debe incluir los archivos que acaba de compilar.
+- `outDir`: este valor se debe establecer en una ubicación que no esté incluida en el proyecto, para que los archivos JavaScript emitidos no se detecten y después se incluyan en el proyecto (consulte `exclude`).
 - `module`: si se usan módulos, esta opción indica al compilador qué formato de módulo debería usar el código emitido (por ejemplo, `commonjs` para Node o software que instala varios programas como Browserify).
-- `exclude`: Esta opción indica qué carpetas no incluir en el proyecto.
+- `exclude`: esta opción indica qué carpetas no incluir en el proyecto.
 La ubicación de salida, así como las carpetas que no son del proyecto, como `node_modules` o `temp`, deben agregarse a esta opción.
 - `enableAutoDiscovery`: esta opción habilita la detección automática y la descarga de archivos de definición como se describió anteriormente.
-- `compileOnSave`: Esta opción indica al compilador si debe volver a compilar cada vez que se guarda un archivo de origen en Visual Studio.
-- `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](/visualstudio/ide/javascript-intellisense#Auto))
+- `compileOnSave`: esta opción indica al compilador si debe volver a compilar cada vez que se guarda un archivo de origen en Visual Studio.
+- `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](../ide/javascript-intellisense.md#Auto))
 
 Para convertir archivos JavaScript en módulos de CommonJS y colocarlos en una carpeta `./out`, se podría usar el archivo `tsconfig.json` siguiente:
 
@@ -118,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 JavaScript IntelliSense en [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] mostrará ahora mucha más información sobre las listas de parámetros y miembros. Esta nueva información la proporciona el servicio de lenguaje TypeScript, que usa el análisis estático en segundo plano para comprender mejor el código. Puede obtener más información sobre la nueva experiencia de IntelliSense y cómo funciona [aquí](/visualstudio/ide/javascript-intellisense/).
 
-## <a name="JSX"></a> Compatibilidad con la sintaxis JSX
+## <a name="jsx-syntax-support"></a><a name="JSX"></a> Compatibilidad con la sintaxis JSX
 
 JavaScript en [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] tiene compatibilidad enriquecida con la sintaxis de JSX. JSX es un conjunto de sintaxis que admite etiquetas HTML en archivos JavaScript.
 

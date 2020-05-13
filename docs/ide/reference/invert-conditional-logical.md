@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531676"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Invertir expresiones condicionales y operadores condicionales AND/OR
@@ -33,7 +33,7 @@ Esta refactorización se aplica a lo siguiente:
 ## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>Invertir refactorización de expresiones condicionales y operadores condicionales AND/OR
 
 1. Coloque el cursor en una expresión condicional o un operador condicional AND/OR.
-2. Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 3. Seleccione **Invertir operador condicional** o **Reemplazar '&&' por '||'**
 
     ![Invertir operador condicional](media/invert-conditional.png)

@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE | Microsoft Docs
+title: GETHOSTNAME_TYPE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317591"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736777"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
-Especifica el tipo del nombre de host.
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
+Especifica el tipo de nombre de host.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ public enum enum_GETHOSTNAME_TYPE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `GHN_FRIENDLY_NAME`\
 Especifica un nombre descriptivo del host.
 
 `GHN_FILE_NAME`\
 Especifica un nombre de archivo del host.
 
-## <a name="remarks"></a>Comentarios
-Estos valores se pasan como argumento a la [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) método para recuperar un nombre de host en formatos diferentes.
+## <a name="remarks"></a>Observaciones
+Estos valores se pasan como argumento al método [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) para recuperar un nombre de host en diferentes formatos.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

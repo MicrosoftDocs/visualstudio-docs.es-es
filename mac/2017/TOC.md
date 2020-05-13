@@ -52,9 +52,9 @@
 ## [Configurar un repositorio de Subversion](/visualstudio/mac/set-up-subversion-repository)
 ## [Trabajar con Subversion](/visualstudio/mac/working-with-subversion)
 
-# [Implementación de aplicaciones web](/visualstudio/mac/web-app-deployment.md)
-## [Publicación en Azure App Service](/visualstudio/mac/publish-app-svc.md)
-## [Publicación en una carpeta](/visualstudio/mac/publish-folder.md)
+# [Implementación de aplicaciones web](/visualstudio/mac/web-app-deployment)
+## [Publicación en Azure App Service](/visualstudio/mac/publish-app-svc)
+## [Publicación en una carpeta](/visualstudio/mac/publish-folder)
 
 # [Cargas de trabajo](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
@@ -67,8 +67,8 @@
 ## [Desarrollo de juegos de Unity](/visualstudio/mac/unity-tools)
 ### [Configuración](/visualstudio/mac/setup-vsmac-tools-unity)
 ### [Uso de herramientas de Unity](/visualstudio/mac/using-vsmac-tools-unity)
-### [Uso de .NET 4.x en Unity](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [Registro de cambios](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Uso de .NET 4.x en Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Registro de cambios](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Aplicaciones móviles con Xamarin](/visualstudio/mac/xamarin)
 
 # [Accesibilidad](/visualstudio/mac/accessibility)

@@ -1,6 +1,6 @@
 ---
 title: Más información sobre cómo probar el código con Live Unit Test
-ms.date: 08/31/2017
+ms.date: 04/03/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2abc8eaaca923435620148d7313c6cc422bd1870
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594297"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697342"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introducción a Live Unit Testing
 
@@ -36,7 +36,7 @@ La solución es simplemente un contenedor para uno o varios proyectos. Para crea
 
 1. Seleccione **Archivo** > **Nuevo** > **Proyecto** en el menú de nivel superior de Visual Studio.
 
-1. Escriba **solución** en el cuadro de búsqueda de la plantilla y luego seleccione la plantilla **Solución en blanco**.
+1. Escriba **solución** en el cuadro de búsqueda de la plantilla y luego seleccione la plantilla **Solución en blanco**. Asigne el nombre **UtilityLibraries** al proyecto.
 
    ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
    > [!NOTE]
    > Debido a que nuestra biblioteca tiene como destino .NET Standard en lugar de una implementación concreta de .NET, se puede llamar desde cualquier implementación de .NET que admita esa versión de .NET Standard. Para más información, consulte [.NET Standard](/dotnet/standard/net-standard).
 
-3. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba **StringLibrary** en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba **StringLibrary** en el cuadro de texto **Nombre**, como se muestra en la ilustración siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto**](./media/lut-start/add-project-cs.png)
 
@@ -78,7 +78,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
 ::: moniker-end
 
-5. Reemplace el código existente en la ventana de código por el código siguiente:
+5. Reemplace todo el código existente en el editor de código por el siguiente:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -105,7 +105,7 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
    > [!NOTE]
    > No es necesario escribir las pruebas unitarias en el mismo lenguaje que el de la biblioteca de clases.
 
-3. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba **StringLibraryTests** en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba **StringLibraryTests** en el cuadro de texto **Nombre**, como se muestra en la ilustración siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto** para el proyecto de prueba unitaria](./media/lut-start/add-unit-test-cs.png)
 
@@ -115,7 +115,7 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
 
 ::: moniker range=">=vs-2019"
 
-2. Escriba **prueba unitaria** en el cuadro de búsqueda de la plantilla y seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** . Haga clic en **Siguiente**.
+2. Escriba **prueba unitaria** en el cuadro de búsqueda de plantillas y seleccione la plantilla **Proyecto de prueba de MSTest (.NET Core)** . Haga clic en **Siguiente**.
 
 3. Asigne al proyecto el nombre **StringLibraryTests**.
 
@@ -126,7 +126,7 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
    > [!NOTE]
    > En este tutorial de introducción, Live Unit Testing se utiliza con el marco de pruebas de MSTest. También puede usar los marcos de pruebas de xUnit y NUnit.
 
-5. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto StringLibrary, como se muestra en la figura siguiente.
+5. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto StringLibrary, como se muestra en la ilustración siguiente.
 
    ![Cuadro de diálogo **Administrador de referencias**](./media/lut-start/add-reference.png)
 
@@ -136,11 +136,13 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
 
 7. Guarde el proyecto seleccionando el icono **Guardar** de la barra de herramientas.
 
-8. Dado que el código de prueba unitaria incluye algunos caracteres no ASCII, Visual Studio muestra el siguiente cuadro de diálogo para advertir de que algunos caracteres se perderán si guardamos el archivo en el formato ASCII predeterminado. Elija el botón **Guardar con otra codificación**.
+   Como el código de prueba unitaria incluye algunos caracteres que no son ASCII, verá el cuadro de diálogo siguiente en el que se advierte de que algunos caracteres se perderán si el archivo se guarda en el formato ASCII predeterminado.
+
+8. Elija el botón **Guardar con otra codificación**.
 
    ![Elegir una codificación de archivos](media/lut-start/ascii-encoding.png)
 
-9. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en esta imagen:
+9. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en la ilustración siguiente:
 
    ![Elegir la codificación UTF-8](media/lut-start/utf8-encoding.png)
 
@@ -152,23 +154,30 @@ Ha creado una biblioteca de clases, así como algunas pruebas unitarias la misma
 
 Hasta ahora, aunque ha escrito las pruebas para la biblioteca de clases StringLibrary, no las ha ejecutado. Live Unit Testing las ejecuta automáticamente una vez que lo habilite. Para ello, haga lo siguiente:
 
-1. Si quiere, seleccione la ventana de código que contiene el código para StringLibrary. Se trata de *Class1.cs* para un proyecto de C# o de *Class1.vb* para un proyecto de Visual Basic. Este paso le permite inspeccionar visualmente el resultado de las pruebas y el alcance de la cobertura de código una vez que habilite Live Unit Testing.
+1. Si quiere, seleccione la ventana del editor de código que contiene el código para StringLibrary. Se trata de *Class1.cs* para un proyecto de C# o de *Class1.vb* para un proyecto de Visual Basic. Este paso le permite inspeccionar visualmente el resultado de las pruebas y el alcance de la cobertura de código una vez que habilite Live Unit Testing.
 
 1. Seleccione **Prueba** > **Live Unit Testing** > **Iniciar** en el menú de nivel superior de Visual Studio.
 
 1. Visual Studio inicia Live Unit Testing, que ejecuta automáticamente todas las pruebas.
 
-Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, la ventana de código muestra gráficamente la cobertura de código de prueba y el resultado de las pruebas. Como se muestra en la imagen siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de StringLibrary tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
+::: moniker range="vs-2017"
+Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, en la ventana del editor de código se muestra gráficamente la cobertura del código de prueba y el resultado de las pruebas. Como se muestra en la ilustración siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de StringLibrary tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
 
-![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-cs.png)
+![Explorador de pruebas y ventana del editor de código después de iniciar Live Unit Testing](media/lut-start/lut-results-cs.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+Cuando se termina de ejecutar las pruebas, en **Live Unit Testing** se muestran los resultados globales y el resultado de las pruebas individuales. Además, en la ventana del editor de código se muestra gráficamente la cobertura del código de prueba y el resultado de las pruebas. Como se muestra en la ilustración siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de StringLibrary tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
 
-También puede obtener información más detallada sobre la cobertura y los resultados de las pruebas seleccionando un icono de cobertura de código determinado en la ventana de código. Para examinar este detalle, haga lo siguiente:
+![Explorador de pruebas en directo y ventana del editor de código después de iniciar Live Unit Testing](media/lut-start/vs-2019/lut-results-cs.png)
+::: moniker-end
 
-1. Haga clic en la marca de verificación verde situada en la línea `if (String.IsNullOrWhiteSpace(s))` del método `StartsWithUpper`. Como se muestra en la imagen siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
+También puede obtener información más detallada sobre la cobertura y los resultados de las pruebas si selecciona un icono de cobertura de código determinado en la ventana del editor de código. Para examinar este detalle, haga lo siguiente:
+
+1. Haga clic en la marca de verificación verde situada en la línea `if (String.IsNullOrWhiteSpace(s))` del método `StartsWithUpper`. Como se muestra en la ilustración siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción condicional "if"](media/lut-start/code-coverage-cs1.png)
 
-1. Haga clic en la marca de verificación verde situada en la línea `return Char.IsUpper(s[0])` del método `StartsWithUpper`. Como se muestra en la imagen siguiente, Live Unit Testing indica que solo dos pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
+1. Haga clic en la marca de verificación verde situada en la línea `return Char.IsUpper(s[0])` del método `StartsWithUpper`. Como se muestra en la ilustración siguiente, Live Unit Testing indica que solo dos pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción Return](media/lut-start/code-coverage-cs2.png)
 
@@ -188,9 +197,14 @@ Para ampliar la cobertura de código al método `StartsWithLower`, haga lo sigui
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
-1. Cuando se modifica el código fuente, Live Unit Testing ejecuta automáticamente las pruebas nuevas y modificadas. Como se muestra en la imagen siguiente del **Explorador de pruebas**, todas las pruebas, incluidas las dos que se han agregado y la que se ha modificado, se han realizado correctamente.
+1. Cuando se modifica el código fuente, Live Unit Testing ejecuta automáticamente las pruebas nuevas y modificadas. Como se muestra en la ilustración siguiente, todas las pruebas, incluidas las dos que se han agregado y la que se ha modificado, se han realizado correctamente.
 
+   ::: moniker range="vs-2017"
    ![Explorador de pruebas después de expandir la cobertura de las pruebas](media/lut-start/test-dynamic.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![El explorador de pruebas en directo después de expandir la cobertura de las pruebas](media/lut-start/vs-2019/test-dynamic.png)
+   ::: moniker-end
 
 1. Cambie a la ventana que contiene el código fuente de la clase StringLibrary. Ahora, Live Unit Testing muestra que nuestra cobertura de código se ha extendido al método `StartsWithLower`.
 
@@ -208,29 +222,39 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Cuando se ejecuta la prueba, Live Unit Testing indica que se ha producido un error en el método `TestHasEmbeddedSpaces`, tal como se muestra en la imagen siguiente:
+1. Cuando se ejecuta la prueba, en Live Unit Testing se indica que se ha producido un error en el método `TestHasEmbeddedSpaces`, como se muestra en la ilustración siguiente:
 
+   ::: moniker range="vs-2017"
    ![Explorador de pruebas informando de una prueba errónea](media/lut-start/test-failure.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![El explorador de pruebas en directo con la notificación de una prueba con errores](media/lut-start/vs-2019/test-failure.png)
+   ::: moniker-end
 
 1. Seleccione la ventana en la que se muestra el código de biblioteca. Live Unit Testing ha ampliado la cobertura de código al método `HasEmbeddedSpaces`. También informa de los errores de pruebas agregando un símbolo "🞩" rojo a las líneas cubiertas por pruebas erróneas.
 
-1. Mantenga el mouse sobre la línea que contiene la signatura del método `HasEmbeddedSpaces`. Live Unit Testing muestra información que indica que una prueba cubre el método, tal como se muestra en la imagen siguiente:
+1. Mantenga el mouse sobre la línea que contiene la signatura del método `HasEmbeddedSpaces`. En Live Unit Testing se muestra información que indica que una prueba cubre el método, como se muestra en la ilustración siguiente:
 
    ![Información de Live Unit Testing sobre una prueba errónea](media/lut-start/test-failure-info-cs.png)
 
-1. Seleccione la prueba errónea **TestHasEmbeddedSpaces**. Live Unit Testing proporciona una serie de opciones, como ejecutar todas las pruebas, ejecutar las pruebas de selección, depurar todas las pruebas y depurar las pruebas seleccionadas, como se muestra en la imagen siguiente:
+1. Seleccione la prueba errónea **TestHasEmbeddedSpaces**. En Live Unit Testing se proporcionan algunas opciones, como la ejecución y la depuración de todas las pruebas, como se muestra en la ilustración siguiente:
 
+   ::: moniker range="vs-2017"
    ![Opciones de Live Unit Testing para una prueba errónea](media/lut-start/test-failure-options.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Opciones de Live Unit Testing para una prueba errónea](media/lut-start/vs-2019/test-failure-options.png)
+   ::: moniker-end
 
-1. Seleccione **Depurar seleccionada** para depurar la prueba errónea.
+1. Seleccione **Depurar todo** para depurar la prueba con error.
 
 1. Visual Studio ejecuta la prueba en modo de depuración.
 
-   La prueba asigna cada cadena de una matriz a una variable denominada `phrase` y la pasa al método `HasEmbeddedSpaces`. La ejecución del programa se pone en pausa e invoca al depurador la primera vez que la expresión de aserción es `false`. En la imagen siguiente se muestra el cuadro de diálogo de excepción que resulta del valor inesperado en la llamada al método [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).
+   La prueba asigna cada cadena de una matriz a una variable denominada `phrase` y la pasa al método `HasEmbeddedSpaces`. La ejecución del programa se pone en pausa e invoca al depurador la primera vez que la expresión de aserción es `false`. En la ilustración siguiente se muestra el cuadro de diálogo de excepción que resulta del valor inesperado en la llamada al método [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).
 
    ![Cuadro de diálogo de excepción de Live Unit Testing](media/lut-start/exception-dialog-cs.png)
 
-   Además, todas las herramientas de depuración que Visual Studio proporciona están disponibles para ayudarnos a solucionar problemas de nuestra prueba errónea, tal como se muestra en la imagen siguiente:
+   Además, todas las herramientas de depuración que proporciona Visual Studio están disponibles para facilitar la solución de problemas en la prueba con error, como se muestra en la ilustración siguiente:
 
    ![Herramientas de depuración de Visual Studio](media/lut-start/debugging-tools-cs.png)
 
@@ -245,9 +269,9 @@ Esto proporciona información suficiente para una investigación preliminar del 
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/program2.cs#1)]
 
-1. Live Unit Testing vuelve a ejecutar automáticamente el método de prueba errónea y actualiza los resultados en la ventana de código y en el **Explorador de pruebas**, como se muestra en la imagen siguiente:
+1. Live Unit Testing vuelve a ejecutar de forma automática el método de prueba con errores.
 
-    ![Prueba HasEmbeddedSpaces correcta](media/lut-start/test-success-cs.png)
+   En Live Unit Testing se muestran los resultados actualizados, que también aparecen en la ventana del editor de código.
 
 ## <a name="see-also"></a>Vea también
 

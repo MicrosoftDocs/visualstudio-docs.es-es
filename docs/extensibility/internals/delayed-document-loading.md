@@ -1,68 +1,68 @@
 ---
-title: Carga de documentos retrasada | Microsoft Docs
+title: Carga de documentos retrasadas ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30a3b1ce88a3e6a8069053c6d9daa14230034b28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821821"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708813"
 ---
 # <a name="delayed-document-loading"></a>Carga de documentos retrasada
 
-Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de los documentos asociados no se carga inmediatamente. El marco de ventana de documento se crea en un estado de espera de inicialización y se coloca un documento de marcador de posición (llamado un marco de código auxiliar) en la tabla de documentos de ejecución (RDT).
+Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de los documentos asociados no se cargan inmediatamente. El marco de la ventana del documento se crea en un estado de inicialización pendiente y un documento de marcador de posición (denominado marco de código auxiliar) se coloca en la tabla Documento en ejecución (RDT).
 
-La extensión puede hacer que los documentos del proyecto que va a cargar innecesariamente consultando elementos de los documentos antes de cargar, lo que pueden aumentar el consumo de memoria general para Visual Studio.
+La extensión puede hacer que los documentos del proyecto se carguen innecesariamente consultando elementos de los documentos antes de que se carguen, lo que puede aumentar el espacio de memoria general de Visual Studio.
 
 ## <a name="document-loading"></a>Carga de documentos
 
-El marco de código auxiliar y el documento se inicializan totalmente cuando el usuario tiene acceso al documento, por ejemplo, seleccione la pestaña del marco de ventana. También se puede inicializar el documento por una extensión que solicita los datos del documento, obtener acceso a la RDT directamente para adquirir los datos del documento, o tener acceso a la RDT indirectamente mediante la realización de una de las siguientes llamadas:
+El marco de código auxiliar y el documento se inicializan completamente cuando el usuario accede al documento, por ejemplo, seleccionando la pestaña del marco de ventana. El documento también se puede inicializar mediante una extensión que solicita los datos del documento, ya sea accediendo al RDT directamente para adquirir los datos del documento o accediendo al RDT indirectamente realizando una de las siguientes llamadas:
 
-- El marco de ventana <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método.
+- El método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> de marco de ventana.
 
-- El marco de ventana <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método en cualquiera de las siguientes propiedades:
+- El método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> de marco de ventana en cualquiera de las siguientes propiedades:
 
-  - [__VSFPROPID.VSFPROPID_DocView](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView>)
+  - [__VSFPROPID. VSFPROPID_DocView](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView>)
 
-  - [__VSFPROPID.VSFPROPID_ViewHelper](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ViewHelper>)
+  - [__VSFPROPID. VSFPROPID_ViewHelper](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ViewHelper>)
 
-  - [__VSFPROPID.VSFPROPID_DocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>)
+  - [__VSFPROPID. VSFPROPID_DocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>)
 
-  - [__VSFPROPID.VSFPROPID_AltDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_AltDocData>)
+  - [__VSFPROPID. VSFPROPID_AltDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_AltDocData>)
 
-  - [__VSFPROPID.VSFPROPID_RDTDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_RDTDocData>)
+  - [__VSFPROPID. VSFPROPID_RDTDocData](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_RDTDocData>)
 
-  - [__VSFPROPID.VSFPROPID_SPProjContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_SPProjContext>)
+  - [__VSFPROPID. VSFPROPID_SPProjContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_SPProjContext>)
 
-- Si su extensión usa código administrado, no debe llamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> a menos que esté seguro de que el documento no está en el estado de espera de inicialización o desea que el documento esté totalmente inicializada. La razón es que el método siempre devuelve el documento de objeto de datos, crearla si fuera necesario. En su lugar, se debe llamar a uno de los métodos en el `IVsRunningDocumentTable4` interfaz.
+- Si la extensión utiliza código administrado, no debe llamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> a menos que esté seguro de que el documento no está en el estado de inicialización pendiente o desea que el documento se inicialice completamente. La razón es porque el método siempre devuelve el objeto de datos doc, creándolo si es necesario. En su lugar, debe llamar `IVsRunningDocumentTable4` a uno de los métodos en la interfaz.
 
-- Si la extensión usa C++, puede pasar `null` para los parámetros que no desee.
+- Si la extensión utiliza C++, puede pasar `null` los parámetros que no desea.
 
-- No puede cargar llamando a uno de los métodos siguientes antes de solicitar las propiedades pertinentes antes de solicitar otras propiedades de documento innecesaria:
+- Puede evitar la carga innecesaria de documentos llamando a uno de los métodos siguientes antes de solicitar las propiedades relevantes antes de solicitar otras propiedades:
 
-  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> uso de [__VSFPROPID6. VSFPROPID_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6.VSFPROPID_PendingInitialization>).
+  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>usando [__VSFPROPID6. VSFPROPID_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6.VSFPROPID_PendingInitialization>).
 
-  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Este método devuelve un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> objeto que incluye un valor para [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>) si aún no se ha inicializado el documento.
+  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Este método <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> devuelve un objeto que incluye un valor para [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>) si el documento aún no se ha inicializado.
 
-Puede averiguar cuándo se ha cargado un documento suscribiéndose a los eventos RDT que se desencadena cuando un documento está completamente inicializado. Existen dos posibilidades:
+Puede averiguar cuándo se ha cargado un documento suscribiéndose al evento RDT que se genera cuando un documento se inicializa por completo. Hay dos posibilidades:
 
-- Si implementa el receptor de eventos <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>, puede suscribirse a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>,
+- Si el receptor <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>de eventos se <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>implementa, puede suscribirse a ,
 
-- En caso contrario, puede suscribirse a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.
+- De lo contrario, <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>puede suscribirse a .
 
-El ejemplo siguiente es un escenario de acceso de documento hipotético: Visual Studio de extensión desea mostrar información sobre los documentos abiertos, por ejemplo la edición de bloqueo recuento y algo acerca de los datos del documento. Enumera los documentos en el RDT utilizando <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, a continuación, llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> para cada documento con el fin de recuperar los datos de recuento y el documento de bloqueo de edición. Si el documento está en el estado de espera de inicialización, que solicita los datos del documento hace que se puede inicializar innecesariamente.
+El ejemplo siguiente es un escenario de acceso a documentos hipotético: una extensión de Visual Studio desea mostrar información sobre documentos abiertos, por ejemplo, el recuento de bloqueos de edición y algo sobre los datos del documento. Enumera los documentos en el <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>RDT <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> mediante , a continuación, llama a cada documento con el fin de recuperar el recuento de bloqueo de edición y los datos del documento. Si el documento está en estado de inicialización pendiente, solicitar los datos del documento hace que se inicialice innecesariamente.
 
-Una forma más eficaz de obtener acceso a un documento es usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> para obtener el recuento de bloqueos de edición y, a continuación, usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> para determinar si se ha inicializado el documento. Si no se incluyen las marcas de [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>), el documento ya se ha inicializado y solicitar los datos del documento con <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> no provoca ninguna inicialización innecesario. Si las marcas incluyen [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>), debe evitar la extensión que solicita los datos del documento hasta que se inicializa el documento. Esta inicialización se puede detectar en el `OnAfterAttributeChange(Ex)` controlador de eventos.
+Una forma más eficaz de obtener <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> acceso a un documento es <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> usar para obtener el recuento de bloqueos de edición y, a continuación, usar para determinar si el documento se ha inicializado. Si las marcas no incluyen [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>), el documento ya se ha inicializado <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> y solicitar los datos del documento con no provoca ninguna inicialización innecesaria. Si las marcas incluyen [_VSRDTFLAGS4. RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>), la extensión debe evitar solicitar los datos del documento hasta que se inicialice el documento. Esta inicialización se `OnAfterAttributeChange(Ex)` puede detectar en el controlador de eventos.
 
-## <a name="test-extensions-to-see-if-they-force-initialization"></a>Extensiones para ver si forzar la inicialización de prueba
+## <a name="test-extensions-to-see-if-they-force-initialization"></a>Probar extensiones para ver si fuerzan la inicialización
 
-No hay ninguna indicación visible para indicar si se ha inicializado un documento, por lo que puede ser difícil de averiguar si la extensión está forzando la inicialización. Puede establecer una clave del registro que facilita la comprobación, porque hace que el título de cada documento que no está completamente inicializado para que el texto *[código auxiliar]* en el título.
+No hay ninguna indicación visible para indicar si se ha inicializado un documento, por lo que puede ser difícil averiguar si la extensión está forzando la inicialización. Puede establecer una clave del Registro que facilite la verificación, ya que hace que el título de cada documento que no está completamente inicializado tenga el texto *[Stub]* en el título.
 
-En **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, establezca **StubTabTitleFormatString** a  *{0} [código auxiliar]* .
+En **HKEY_CURRENT_USER, Software, Microsoft, VisualStudio, 14,0, BackgroundSolutionLoad**, establezca **StubTabTitleFormatString** en * {0} [Stub]*.

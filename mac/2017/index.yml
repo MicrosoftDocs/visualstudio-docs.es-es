@@ -97,12 +97,12 @@ sections:
             html: <p>Configure el compilador y cree una aplicación.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Compilar y generar
+            title: Compilación y creación
           - href: debugging.md
             html: <p>Ejecute la aplicación en el depurador para investigar problemas.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Depuración
+            title: Depurar
           - href: version-control.md
             html: '<p>Acceso a los repositorios de código fuente de Azure DevOps, Git o Subversion.</p>'
             image:

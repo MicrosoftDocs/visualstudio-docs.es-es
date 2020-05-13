@@ -1,5 +1,5 @@
 ---
-title: TemplateGroupID (elemento, plantillas de Visual Studio) | Microsoft Docs
+title: Elemento TemplateGroupID (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718658"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699074"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID (Elemento, Plantillas de Visual Studio)
-Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este elemento es importante cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) se establece en `false`. Cuando [ShowByDefault (plantillas de Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) se establece en `true`, una plantilla de elemento está disponible en todos los tipos de proyecto.
+Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este elemento es significativo cuando [ShowByDefault (Plantillas](../extensibility/showbydefault-visual-studio-templates.md) de Visual Studio) se establece en `false`. Cuando [ShowByDefault (Plantillas](../extensibility/showbydefault-visual-studio-templates.md) de Visual `true`Studio) se establece en , a continuación, una plantilla de elemento está disponible en todos los tipos de proyecto.
 
- \<VSTemplate > \<TemplateData > \<TemplateGroupID >
+ \<VSTemplate \<> TemplateData> \<> TemplateGroupID
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,10 +52,10 @@ Especifica en qué tipo de proyecto se mostrará una plantilla de elemento. Este
 
  El texto especifica un identificador para una categoría de plantillas de elementos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `TemplateGroupID` es un elemento.
 
- El valor del elemento `TemplateGroupID` se usa junto con el registro del sistema del proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version número >* \projects \\) para filtrar las plantillas que aparecen en **Agregar nuevo elemento.** cuadro de diálogo.
+ El valor `TemplateGroupID` del elemento se utiliza junto con el registro del\\sistema del\\proyecto (HKEY_LOCAL_MACHINE, SOFTWARE, Microsoft, VisualStudio,*\<>*, para filtrar las plantillas que aparecen en el cuadro de diálogo **Agregar nuevo elemento.**
 
 |Valor de Visual C++|Significado|
 |------------------------|-------------|

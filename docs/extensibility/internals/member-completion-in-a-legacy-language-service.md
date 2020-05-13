@@ -1,5 +1,5 @@
 ---
-title: Finalizaciones de miembros en un servicio de lenguaje heredado | Microsoft Docs
+title: Finalización de miembros en un servicio de idiomas heredados Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,64 +7,64 @@ helpviewer_keywords:
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c969b0f857e45279488d9ba667b431064375da6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349312"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707193"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Finalización de miembros en un servicio de lenguaje heredado
 
-La finalización de miembros de IntelliSense es una información sobre herramientas que muestra una lista de posibles miembros de un ámbito determinado, como una clase, estructura, enumeración o espacio de nombres. Por ejemplo, en C#, si el usuario escribe "this" seguido por un punto, se presenta una lista de todos los miembros de la clase o estructura en el ámbito actual en una lista desde el que el usuario puede seleccionar.
+La finalización de miembros de IntelliSense es una información sobre herramientas que muestra una lista de posibles miembros de un ámbito determinado, como una clase, estructura, enumeración o espacio de nombres. Por ejemplo, en C-, si el usuario escribe "this" seguido de un punto, se presenta una lista de todos los miembros de la clase o estructura en el ámbito actual en una lista desde la que el usuario puede seleccionar.
 
-Managed package framework (MPF) proporciona compatibilidad con la información sobre herramientas y la administración de la lista en la información sobre herramientas; todo lo que se necesita es la cooperación del analizador para suministrar los datos que aparecen en la lista.
+El marco de paquete administrado (MPF) proporciona compatibilidad con la información sobre herramientas y la administración de la lista en la información sobre herramientas; todo lo que se necesita es la cooperación del analizador para proporcionar los datos que aparecen en la lista.
 
-Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [ampliación del Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).
+Los servicios de lenguaje heredados se implementan como parte de un VSPackage, pero la forma más reciente de implementar características de servicio de lenguaje es usar extensiones MEF. Para obtener más información, consulte [Ampliación del editor y](../../extensibility/extending-the-editor-and-language-services.md)los servicios de lenguaje .
 
 > [!NOTE]
-> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Le recomendamos que comience a usar la nueva API del editor lo antes posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permitirá aprovechar las nuevas características del editor.
 
 ## <a name="how-it-works"></a>Cómo funciona
 
-Éstas son las dos maneras en que se muestra una lista de miembros mediante las clases MPF:
+Las siguientes son las dos formas en que se muestra una lista de miembros utilizando las clases MPF:
 
-- Colocar el símbolo de intercalación en un identificador o después de un carácter de finalización de miembro y seleccionando **lista de miembros** desde el **IntelliSense** menú.
+- Colocar el intercalador en un identificador o después de un carácter de finalización de miembro y seleccionar **Miembros** de lista en el menú **IntelliSense.**
 
-- El <xref:Microsoft.VisualStudio.Package.IScanner> analizador detecta un carácter de finalización de miembros y establece un token de desencadenador de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) para ese carácter.
+- El <xref:Microsoft.VisualStudio.Package.IScanner> analizador detecta un carácter de finalización de miembro y establece un desencadenador de token de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) para ese carácter.
 
-Un carácter de finalización de miembro indica que un miembro de una clase, estructura o enumeración es seguir. Por ejemplo, en C# o Visual Basic, el carácter de finalización de miembro es un `.`, mientras que en C++ el carácter es un `.` o `->`. El valor del desencadenador se establece cuando se analiza el carácter de selección de miembro.
+Un carácter de finalización de miembro indica que un miembro de una clase, estructura o enumeración debe seguir. Por ejemplo, en C o Visual Basic, `.`el carácter de finalización `.` de `->`miembro es un , mientras que en C++el carácter es a o un archivo . El valor del desencadenador se establece cuando se escanea el carácter de selección de miembro.
 
-### <a name="the-intellisense-member-list-command"></a>El comando de la lista de miembros de IntelliSense
+### <a name="the-intellisense-member-list-command"></a>El comando de lista de miembros de IntelliSense
 
-El <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase y el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, a su vez, llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizador de método con el motivo de análisis de [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
+El <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia una <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> llamada al <xref:Microsoft.VisualStudio.Package.Source> método <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> en la clase y <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> el método, a su vez, llama al analizador de métodos con el motivo de análisis de [ParseReason.DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-El analizador determina el contexto de la posición actual, así como el token bajo o inmediatamente antes de la posición actual. Según este token, se presenta una lista de declaraciones. Por ejemplo, en C#, si coloca el símbolo de intercalación en un miembro de clase y seleccione **lista de miembros**, obtendrá una lista de todos los miembros de la clase. Si coloca el símbolo de intercalación después del punto que sigue a una variable de objeto, obtener una lista de todos los miembros de la clase que el objeto representa. Tenga en cuenta que si el símbolo de intercalación se coloca en un miembro cuando se muestra la lista de miembros, al seleccionar a un miembro de la lista reemplaza al miembro que está el símbolo de intercalación con el que aparece en la lista.
+El analizador determina el contexto de la posición actual, así como el token por debajo o inmediatamente antes de la posición actual. En función de este token, se presenta una lista de declaraciones. Por ejemplo, en C-, si coloca el intercalador en un miembro de clase y selecciona **Miembros**de lista , obtendrá una lista de todos los miembros de la clase. Si coloca el intercalador después de un período que sigue a una variable de objeto, obtendrá una lista de todos los miembros de la clase que representa el objeto. Tenga en cuenta que si el intercalador se coloca en un miembro cuando se muestra la lista de miembros, al seleccionar un miembro de la lista se reemplaza el miembro en el que se encuentra el intercalador por el de la lista.
 
-### <a name="the-token-trigger"></a>El Token de desencadenador
+### <a name="the-token-trigger"></a>El disparador de tokens
 
-El [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) desencadenador inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase y el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, llama a su vez, el analizador con el motivo de análisis de [ ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Si el token desencadenador también incluye el [TokenTriggers.MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) marca, el motivo por el análisis es [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), que combina la selección de miembros y el resaltado de llaves .
+El desencadenador [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) inicia una <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> llamada <xref:Microsoft.VisualStudio.Package.Source> al método <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> de la clase y el método, a su vez, llama al analizador con el motivo de análisis de [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Si el desencadenador de token también incluye la marca [TokenTriggers.MatchBraces,](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) el motivo de análisis es [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), que combina la selección de miembros y el resaltado de llaves.
 
-El analizador determina el contexto de la actual posición, así como lo escribió antes de que el miembro seleccionar carácter. De esta información, el analizador crea una lista de todos los miembros del ámbito solicitado. Esta lista de declaraciones se almacena en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto que se devuelve desde el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método. Si se devuelven todas las declaraciones, se muestra la información sobre herramientas de finalización de miembros. La información sobre herramientas está administrado por una instancia de la <xref:Microsoft.VisualStudio.Package.CompletionSet> clase.
+El analizador determina el contexto de la posición actual, así como lo que se ha escrito antes del carácter de selección de miembro. A partir de esta información, el analizador crea una lista de todos los miembros del ámbito solicitado. Esta lista de declaraciones <xref:Microsoft.VisualStudio.Package.AuthoringScope> se almacena en <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> el objeto que se devuelve desde el método. Si se devuelve nifique alguna declaración, se muestra la información sobre la herramienta de finalización de miembros. La información sobre herramientas se <xref:Microsoft.VisualStudio.Package.CompletionSet> administra mediante una instancia de la clase.
 
-## <a name="enable-support-for-member-completion"></a>Habilitar la compatibilidad de finalizaciones de miembros
+## <a name="enable-support-for-member-completion"></a>Habilitar soporte para la finalización de miembros
 
-Debe tener el `CodeSense` entrada del registro se establece en 1 para admitir cualquier operación de IntelliSense. Esta entrada del registro se puede establecer con un parámetro con nombre pasado a la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo de usuario asociado con el paquete de idioma. Las clases de servicio de lenguaje leer el valor de esta entrada del registro desde el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad en el <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase.
+Debe tener `CodeSense` la entrada del Registro establecida en 1 para admitir cualquier operación de IntelliSense. Esta entrada del Registro se puede establecer <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> con un parámetro con nombre pasado al atributo de usuario asociado al paquete de idioma. Las clases de servicio de lenguaje <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> leen <xref:Microsoft.VisualStudio.Package.LanguagePreferences> el valor de esta entrada del Registro de la propiedad de la clase.
 
-Si el escáner devuelve el token de desencadenador de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)y el analizador devuelve una lista de declaraciones, a continuación, se muestra la lista de finalización de miembros.
+Si el analizador devuelve el desencadenador de token de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)y el analizador devuelve una lista de declaraciones, se muestra la lista de finalización de miembros.
 
-## <a name="support-member-completion-in-the-scanner"></a>Admite la finalización de miembros en el analizador
+## <a name="support-member-completion-in-the-scanner"></a>Finalización de miembros de soporte en el escáner
 
-El analizador debe ser capaz de detectar un carácter de finalización de miembros y establezca el desencadenador de token [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) cuando se analiza ese carácter.
+El analizador debe ser capaz de detectar un carácter de finalización de miembro y establecer el desencadenador de token de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) cuando se analiza ese carácter.
 
-### <a name="scanner-example"></a>Ejemplo de analizador
+### <a name="scanner-example"></a>Ejemplo de escáner
 
-Este es un ejemplo simplificado de detectar el carácter de finalización de miembros y la correspondiente <xref:Microsoft.VisualStudio.Package.TokenTriggers> marca. En este ejemplo es solo con fines ilustrativos. Supone que el escáner contiene un método `GetNextToken` que identifica y devuelve los tokens de una línea de texto. El código de ejemplo simplemente establece el desencadenador cada vez que detecta el tipo correcto de caracteres.
+Este es un ejemplo simplificado de detectar el <xref:Microsoft.VisualStudio.Package.TokenTriggers> carácter de finalización de miembro y establecer la marca adecuada. Este ejemplo es solo para fines ilustrativos. Se supone que el analizador `GetNextToken` contiene un método que identifica y devuelve tokens de una línea de texto. El código de ejemplo simplemente establece el desencadenador cada vez que ve el tipo correcto de carácter.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -97,17 +97,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="support-member-completion-in-the-parser"></a>Admite la finalización de miembros en el analizador
+## <a name="support-member-completion-in-the-parser"></a>Finalización de miembros de apoyo en el analizador
 
-Para la finalización de miembro, el <xref:Microsoft.VisualStudio.Package.Source> clase llama a la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> método. Debe implementar la lista en una clase que se deriva el <xref:Microsoft.VisualStudio.Package.Declarations> clase. Consulte la <xref:Microsoft.VisualStudio.Package.Declarations> clase para obtener más información acerca de los métodos que debe implementar.
+Para la finalización del miembro, la <xref:Microsoft.VisualStudio.Package.Source> clase llama al <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> método. Debe implementar la lista en una clase <xref:Microsoft.VisualStudio.Package.Declarations> que se deriva de la clase. Consulte <xref:Microsoft.VisualStudio.Package.Declarations> la clase para obtener más información sobre los métodos que debe implementar.
 
-El analizador se denomina con [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) o [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) cuando se escribe un carácter de selección de miembro. La ubicación proporcionada el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto es inmediatamente después de que el miembro seleccionar carácter. El analizador debe recopilar los nombres de todos los miembros que pueden aparecer en una lista de miembros en ese momento determinado en el código fuente. A continuación, el analizador debe analizar la línea actual para determinar el ámbito que el usuario desea asociado al carácter de selección de miembro.
+Se llama al analizador con [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) o [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) cuando se escribe un carácter de selección de miembro. La ubicación proporcionada <xref:Microsoft.VisualStudio.Package.ParseRequest> en el objeto es inmediatamente después de que el miembro seleccione el carácter. El analizador debe recopilar los nombres de todos los miembros que pueden aparecer en una lista de miembros en ese punto concreto del código fuente. A continuación, el analizador debe analizar la línea actual para determinar el ámbito que el usuario desea asociar con el carácter de selección de miembro.
 
-Este ámbito se basa en el tipo del identificador antes de que el miembro seleccionar carácter. Por ejemplo, en C#, dada la variable miembro `languageService` que tiene un tipo de `LanguageService`, escriba **languageService.** genera una lista de todos los miembros de la `LanguageService` clase. También en C#, escriba **esto.** genera una lista de todos los miembros de la clase en el ámbito actual.
+Este ámbito se basa en el tipo del identificador antes de que el miembro seleccione el carácter. Por ejemplo, en C-, `languageService` dada la variable `LanguageService`miembro que tiene un tipo de , escribir **languageService.** produce una lista de todos `LanguageService` los miembros de la clase. También en C, escribiendo **esto.** produce una lista de todos los miembros de la clase en el ámbito actual.
 
 ### <a name="parser-example"></a>Ejemplo de analizador
 
-El ejemplo siguiente muestra una forma de rellenar un <xref:Microsoft.VisualStudio.Package.Declarations> lista. Este código supone que el analizador crea una declaración y lo agrega a la lista mediante una llamada a un `AddDeclaration` método en el `TestAuthoringScope` clase.
+En el ejemplo siguiente se <xref:Microsoft.VisualStudio.Package.Declarations> muestra una forma de rellenar una lista. Este código supone que el analizador construye una declaración y la `AddDeclaration` agrega `TestAuthoringScope` a la lista llamando a un método en la clase.
 
 ```csharp
 using System.Collections;

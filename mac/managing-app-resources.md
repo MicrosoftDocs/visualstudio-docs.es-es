@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692853"
 ---
 # <a name="managing-app-resources"></a>Administración de recursos de aplicación
@@ -37,6 +37,6 @@ El código de Xamarin.Forms se ejecuta en varias plataformas, cada una de las cu
 
 * [Working with Images (Trabajo con imágenes)](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar los recursos de la aplicación (Visual Studio en Windows)](/visualstudio/ide/managing-application-resources-dotnet)

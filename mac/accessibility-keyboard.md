@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985094"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navegación con el teclado en Visual Studio para Mac
@@ -43,13 +43,13 @@ Visual Studio para Mac cuenta con un abanico de métodos abreviados de teclado 
 
 ## <a name="useful-keyboard-shortcuts"></a>Métodos abreviados de teclado útiles
 
-|Característica         |DESCRIPCIÓN                                   |Acceso directo         |
+|Característica         |Descripción                                   |Método abreviado         |
 |----------------|----------------------------------------------|-----------------|
 |IU de navegación   |Desplazarse por todos los elementos de la interfaz de usuario.               |**⇥**, **⇧⇥**    |
 |Interactuar        |Seleccionar el control que tiene el foco         |**␣**            |
 |Interactuar        |Seleccionar el control predeterminado en la pantalla o el cuadro de diálogo |**⏎**            |
 |Cambiar de pestaña     |Recorrer los archivos abiertos                      |**⌘⇧[** , **⌘⇧]** |
-|Depuración           |Inicie la depuración.                               |**⌘⏎**           |
+|Depurar           |Inicie la depuración.                               |**⌘⏎**           |
 
 > [!TIP]
 > Vea una lista completa de comandos de teclado en [Métodos abreviados de teclado](keyboard-shortcuts.md).

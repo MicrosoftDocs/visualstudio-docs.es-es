@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985241"
 ---
-# <a name="refactoring"></a>Refactorización
+# <a name="refactoring"></a>Refactoring
 
 Mediante la refactorización del código, es posible reorganizar, reestructurar y aclarar el código existente garantizando que no cambie el comportamiento general del código.
 
@@ -66,7 +66,7 @@ La operación de refactorización Extraer método permite crear un método al ex
 
 ##### <a name="example"></a>Ejemplo
 
-1. Agregue el código siguiente:
+1. Agregue el siguiente código:
 
 ```csharp
     class MainClass
@@ -111,7 +111,7 @@ Si hace clic en el círculo situado en la parte superior, puede iterar cada suge
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
 - [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: WizardData (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Elemento WizardData (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ae7e2e83cb0f8db6cf0b2482547e66ab89497
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350764"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740391"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData (Elemento, Plantillas de Visual Studio)
 
-Especifica código XML personalizado
+Especifica XML personalizado
 
 ```xml
 \<VSTemplate>
@@ -55,23 +55,23 @@ Ninguno.
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el kit de inicio.|
 
 ## <a name="text-value"></a>Valor de texto
 
 El valor de texto es opcional.
 
-Este texto especifica el código XML personalizado para pasar a la extensión de asistente personalizada especificada en el [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.
+Este texto especifica el XML personalizado que se va a pasar a la extensión del asistente personalizado especificada en el [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En este elemento se puede especificar cualquier XML. El código XML se pasará como un parámetro a la extensión de asistente personalizada, lo que permite la extensión usar el contenido de este elemento. Se realiza ninguna validación en estos datos.
+Cualquier XML se puede especificar en este elemento. El XML se pasará como parámetro a la extensión del asistente personalizado, lo que permite que la extensión use el contenido de este elemento. No se realiza ninguna validación en estos datos.
 
-El contenido de la **WizardData** elemento se pasa sin cambios, como un parámetro en el diccionario de cadenas de parámetros en el `IWizard.RunStarted` método. La clave del diccionario se denomina `$wizarddata$`.
+El contenido del elemento **WizardData** se pasa, sin cambios, como `IWizard.RunStarted` un parámetro dentro del diccionario de cadenas de parámetros en el método. La clave del `$wizarddata$`diccionario se denomina .
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar para un C# aplicación de Windows.
+En el ejemplo siguiente se muestran los metadatos de la plantilla de proyecto estándar para una aplicación de Windows de C.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -109,4 +109,4 @@ El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
 - [WizardExtension (Elemento, Plantillas de Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)
-- [Cómo: Usar asistentes con plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Cómo: Utilizar los asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Agregar un editor de confianza al equipo cliente para aplicaciones ClickOnce
+title: Agregar editor de confianza al equipo cliente para aplicaciones ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a874415d35d08fe00989b034c0bd828dbb6d567
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 1423952405a31063ee88ce6fa1dfe0b75d80fe5d
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806895"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649213"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedimientos para agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce
 Con la implementación de aplicaciones de confianza, puede configurar equipos cliente para que las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se ejecuten con un nivel superior de confianza sin preguntar al usuario. En los procedimientos siguientes se muestra cómo usar la herramienta de línea de comandos CertMgr.exe para agregar el certificado de un publicador al almacén de publicadores de confianza de un equipo cliente.
@@ -38,7 +38,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 ( *.cer*). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 
@@ -48,7 +48,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 ( *.cer*). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información acerca de los formatos de certificado, vea [Exportar un certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 
@@ -56,16 +56,16 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Vea también
-- [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>Consulte también
+- [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)
-- [Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Procedimientos para habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedimientos para establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedimientos para establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Procedimientos para depurar una aplicación ClickOnce con permisos restringidos](securing-clickonce-applications.md)
 - [Procedimientos para agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [Procedimientos para volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 - [Procedimientos para configurar el comportamiento del mensaje relativo a la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

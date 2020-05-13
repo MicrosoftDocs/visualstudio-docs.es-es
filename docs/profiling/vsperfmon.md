@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 50519554f7ec71e277dc776b05bc2967c1071f52
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779901"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -33,7 +33,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 
  En la siguiente tabla se describen las opciones de la herramienta VSPerfMon:
 
-|Opciones|DESCRIPCIÓN|
+|Opciones|Descripción|
 |-------------|-----------------|
 |**U**|Se escribe la salida de la consola redirigida como Unicode.  Esta debe ser la primera opción especificada.|
 |**OUTPUT:** `<` *file name* `>`|Redirige la salida al nombre de archivo especificado.|

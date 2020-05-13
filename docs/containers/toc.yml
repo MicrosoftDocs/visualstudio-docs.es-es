@@ -4,7 +4,7 @@
   items:
     - name: Información general
       href: overview.md
-    - name: Inicio rápido
+    - name: Guía de inicio rápido
       expanded: true
       items:
         - name: Aplicación ASP.NET en un contenedor
@@ -20,7 +20,7 @@
           href: tutorial-multicontainer.md
         - name: Kubernetes en Visual Studio
           href: tutorial-kubernetes-tools.md
-    - name: Cómo
+    - name: Procedimientos
       items:
         - name: Depuración de aplicaciones en un contenedor de Docker local
           href: edit-and-refresh.md

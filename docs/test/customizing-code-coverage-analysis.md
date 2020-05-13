@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bce7a6b9369f33e6fa5248821f58d9903172415c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75918649"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880317"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 
@@ -86,7 +86,7 @@ Por ejemplo, el siguiente código XML excluye un solo ensamblado mediante la esp
 ```xml
 <ModulePaths>
   <Exclude>
-   <ModulePath>Fabrikam.Math.UnitTest.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.UnitTest.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Exclude>
 </ModulePaths>
@@ -97,7 +97,7 @@ En el ejemplo siguiente se especifica que solo se debe incluir un ensamblado en 
 ```xml
 <ModulePaths>
   <Include>
-   <ModulePath>Fabrikam.Math.dll</ModulePath>
+   <ModulePath>.*Fabrikam.Math.dll</ModulePath>
    <!-- Add more ModulePath nodes here. -->
   </Include>
 </ModulePaths>

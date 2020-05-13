@@ -2,20 +2,21 @@
 title: Entrenar un modelo de TensorFlow localmente
 description: Ejecutar un modelo de TensorFlow localmente en herramientas de IA para Visual Studio
 keywords: ia, visual studio, tensorflow, local
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777430"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638740"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Entrenar un modelo de TensorFlow localmente
 
@@ -23,7 +24,7 @@ En este inicio rápido, se entrenará un modelo de TensorFlow con el conjunto de
 
 La base de datos MNIST tiene un conjunto de entrenamiento de 60 000 ejemplos y un conjunto de pruebas de 10 000 ejemplos de dígitos escritos a mano.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 Antes de comenzar, asegúrese de que tener instalado lo siguiente:
 
@@ -38,16 +39,16 @@ C:\>pip.exe install tensorflow
 ### <a name="numpy-and-scipy"></a>NumPy y SciPy
 Instale [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) y [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
-### <a name="download-sample-code"></a>Descargar el código de ejemplo
+### <a name="download-sample-code"></a>Descarga de código de ejemplo
 Descargue este [repositorio de GitHub](https://github.com/Microsoft/samples-for-ai) que contiene ejemplos para comenzar a usar el aprendizaje profundo en TensorFlow, CNTK, Theano y mucho más.
 
 ## <a name="open-solution-and-train-model"></a>Abrir la solución y entrenar el modelo
 
-- Inicie Visual Studio y seleccione **Archivo > Nuevo > Proyecto o solución**.
+- Abra Visual Studio y seleccione **Archivo > Nuevo > Proyecto o solución**.
 
 - Seleccione la carpeta **Tensorflow Examples** en el repositorio de ejemplos descargado y abra el archivo **TensorflowExamples.sln**.
 
-   ![Abrir el proyecto](media/tensorflow-local/open-project.png)
+   ![Abrir proyecto](media/tensorflow-local/open-project.png)
 
    ![Abrir la solución](media/tensorflow-local/open-solution.png)
 

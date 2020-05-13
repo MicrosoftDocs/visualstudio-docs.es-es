@@ -1,5 +1,5 @@
 ---
-title: ProjectItem (elemento) (plantillas de elemento de Visual Studio) | Microsoft Docs
+title: Elemento ProjectItem (Plantillas de elementos de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30446b1aa32b31c640a8f56142dc60fcff4a5458
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6826440ed12e90f1ffced63dfef45bb3d86177ac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335996"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701876"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (elemento) (plantillas de elemento de Visual Studio)
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (Elemento, Plantillas de elementos de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de elemento.
 
 > [!NOTE]
-> El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para el elemento. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de proyecto, vea [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
+> El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. En este `ProjectItem` tema se explica el elemento para el elemento. Para obtener una `ProjectItem` explicación del elemento para las plantillas de proyecto, vea [Elemento ProjectItem (plantillas](../extensibility/projectitem-element-visual-studio-project-templates.md)de proyecto de Visual Studio).
 
- \<VSTemplate> \<TemplateContent> \<ProjectItem>
+ \<VSTemplate \<> TemplateContent> \<ProjectItem>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,11 +49,11 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 
 | Atributo | Descripción |
 |---------------------| - |
-| `SubType` | Atributo opcional.<br /><br /> Especifica el subtipo de un elemento en una plantilla de elementos de varios archivos. Este valor se utiliza para determinar el editor que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizará para abrir el elemento. |
-| `CustomTool` | Atributo opcional.<br /><br /> Establece el CustomTool para el elemento en el archivo de proyecto. |
-| `ItemType` | Atributo opcional.<br /><br /> Establece el tipo de elemento para el elemento en el archivo de proyecto. |
-| `ReplaceParameters` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`. |
-| `TargetFileName` | Atributo opcional.<br /><br /> Especifica el nombre del elemento que se crea a partir de la plantilla. Este atributo es útil para el uso de reemplazo de parámetros para crear un nombre de elemento. |
+| `SubType` | Atributo opcional.<br /><br /> Especifica el subtipo de un elemento en una plantilla de elemento de varios archivos. Este valor se utiliza para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] determinar el editor que se usará para abrir el elemento. |
+| `CustomTool` | Atributo opcional.<br /><br /> Establece CustomTool para el elemento en el archivo de proyecto. |
+| `ItemType` | Atributo opcional.<br /><br /> Establece el ItemType para el elemento en el archivo de proyecto. |
+| `ReplaceParameters` | Atributo opcional.<br /><br /> Valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto a partir de la plantilla. El valor predeterminado es `false`. |
+| `TargetFileName` | Atributo opcional.<br /><br /> Especifica el nombre del elemento que se crea a partir de la plantilla. Este atributo es útil para usar el reemplazo de parámetros para crear un nombre de elemento. |
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -67,21 +67,21 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- Un `string` que representa el nombre de un archivo en la plantilla *.zip* archivo.
+ A `string` que representa el nombre de un archivo en el archivo *.zip* de plantilla.
 
-## <a name="remarks"></a>Comentarios
- `ProjectItem` es un elemento secundario opcional de `TemplateContent`.
+## <a name="remarks"></a>Observaciones
+ `ProjectItem`es un hijo `TemplateContent`opcional de .
 
- El `TargetFileName` atributo se puede usar para cambiar el nombre de los archivos con parámetros. Por ejemplo, si el archivo *MyFile.vb* existe en el directorio raíz de la plantilla *.zip* archivo, pero desea según el nombre de archivo proporcionado por el usuario en el archivo se denomine el **Agregar nuevo elemento**  cuadro de diálogo, usaría el siguiente código XML:
+ El `TargetFileName` atributo se puede utilizar para cambiar el nombre de los archivos con parámetros. Por ejemplo, si el archivo *MyFile.vb* existe en el directorio raíz del archivo *.zip* de plantilla, pero desea que el archivo se asigne en función del nombre de archivo proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento,** usaría el siguiente XML:
 
 ```xml
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>
 ```
 
- Cuando se crea un elemento de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **Agregar nuevo elemento** cuadro de diálogo. Esto es útil al crear plantillas de elementos de varios archivos. Para obtener más información, vea [Cómo: Creación de plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md) y [parámetros de plantilla](../ide/template-parameters.md).
+ Cuando se crea un elemento a partir de esta plantilla, el nombre de archivo se basará en el nombre que el usuario ha especificado en el cuadro de diálogo **Agregar nuevo elemento.** Esto es útil al crear plantillas de elementos de varios archivos. Para obtener más información, consulte [Cómo: Crear plantillas de elementos de](../ide/how-to-create-multi-file-item-templates.md) varios archivos y [Parámetros](../ide/template-parameters.md)de plantilla .
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos de la plantilla de elemento estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] clase.
+ En el ejemplo siguiente se muestran los [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadatos de la plantilla de elemento estándar para una clase.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -100,7 +100,7 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
-- [Cómo: Crear plantillas de elemento de varios archivos](../ide/how-to-create-multi-file-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)

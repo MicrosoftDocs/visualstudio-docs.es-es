@@ -38,7 +38,7 @@
               items:
                 - name: Métodos abreviados de teclado y teclas modificadoras
                   href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-                - name: Métodos abreviados de teclado
+                - name: Accesos directos del teclado
                   href: keyboard-shortcuts-in-blend.md
                 - name: Teclas modificadoras de la mesa de trabajo
                   href: artboard-modifier-keys-in-blend.md
@@ -82,7 +82,7 @@
                       items:
                         - name: Propiedades dinámicas de la clase XAttribute
                           href: xattribute-class-dynamic-properties.md
-                        - name: Valor
+                        - name: Value
                           href: value-xattribute-dynamic-property.md
                     - name: Propiedades dinámicas de la clase XElement
                       items:
@@ -96,7 +96,7 @@
                           href: elements-xelement-dynamic-property.md
                         - name: Descendants
                           href: descendants-xelement-dynamic-property.md
-                        - name: Valor
+                        - name: Value
                           href: value-xelement-dynamic-property.md
                         - name: Xml
                           href: xml-xelement-dynamic-property.md

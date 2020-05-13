@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Microsoft Docs
+title: EVALFLAGS ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337883"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737112"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Especifica las marcas que controlan la evaluación de expresiones.
+Especifica los indicadores que controlan la evaluación de expresiones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,9 +52,9 @@ public enum enum_EVALFLAGS {
 }
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `EVAL_RETURNVALUE`\
-Especifica que el valor devuelto, si hay alguno, va a evaluar.
+Especifica que se evalúe el valor devuelto, si existe.
 
 `EVAL_NOSIDEEFFECTS`\
 Especifica que no se permiten efectos secundarios.
@@ -63,26 +63,26 @@ Especifica que no se permiten efectos secundarios.
 Especifica la detención en puntos de interrupción.
 
 `EVAL_ALLOWERRORREPORT`\
-Especifica el informe de errores para el host para poder ser admitidos. Se utiliza principalmente para la evaluación de expresión en un script en Internet Explorer.
+Especifica los informes de errores al host que se va a permitir. Se utiliza principalmente para la evaluación de expresiones en script en Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Funciones de fuerza se evalúen como direcciones, en lugar de invocar la función.
+Fuerza las funciones que se evaluarán como direcciones, en lugar de invocar la función.
 
 `EVAL_NOFUNCEVAL`\
-Impide a función que se evalúa. Por ejemplo, considere la `int` testigo en la expresión `myExpression(int) + 10`. Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
+Impide que se evalúe la función. Por ejemplo, `int` considere el `myExpression(int) + 10`token en la expresión . Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
 
 `EVAL_NOEVENTS`\
-Marca para indicar que no se envíen eventos que se producen durante la evaluación de expresión para el Administrador de depuración de la sesión (SDM) o el IDE.
+Marcar para indicar que los eventos que se producen durante la evaluación de expresiones no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
 
-## <a name="remarks"></a>Comentarios
-Estas marcas se pasan como argumento a la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) y [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) métodos.
+## <a name="remarks"></a>Observaciones
+Estas marcas se pasan como argumento a los métodos [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) y [EvaluateSync.](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
 
-Estas marcas se pueden combinar con una operación OR bit a bit.
+Estas banderas pueden combinarse con un quiróctula bit a bit.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

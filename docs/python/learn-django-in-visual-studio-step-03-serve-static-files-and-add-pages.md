@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62958266"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3: Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
-**Paso anterior: [Creación de una aplicación de Django con vistas y plantillas de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Paso anterior: [Crear una aplicación de Django con vistas y plantillas de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 En los pasos anteriores de este tutorial, ha aprendido a crear una aplicación de Django mínima con una sola página HTML independiente. Pero las aplicaciones web modernas están formadas normalmente por muchas páginas y usan recursos compartidos, como archivos CSS y JavaScript, para proporcionar un comportamiento y un estilo uniformes.
 
@@ -32,7 +32,7 @@ En este paso aprenderá lo siguiente:
 > - Agregar páginas adicionales a la aplicación (paso 3.3)
 > - Usar la herencia de plantilla para crear un encabezado y una barra de navegación que se use en varias páginas (paso 3.4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3-1: Familiarizarse con las plantillas de elemento
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3.1: Familiarizarse con las plantillas de elemento
 
 A medida que desarrolle una aplicación de Django, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivo (así como otros archivos como *web.config* que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elemento](python-item-templates.md) para empezar.
 
@@ -42,11 +42,11 @@ Para ver las plantillas disponibles, vaya al **Explorador de soluciones**, haga 
 
 Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre para el archivo y seleccione **Aceptar**. La adición de un elemento de este modo agrega automáticamente el archivo al proyecto de Visual Studio y marca los cambios para el control de código fuente.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
 Respuesta: El archivo de proyecto de Visual Studio (*.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3-2: Proporcionar archivos estáticos desde la aplicación
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3.2: Atender archivos estáticos desde la aplicación
 
 En una aplicación web compilada con Python (con cualquier plataforma), los archivos de Python siempre se ejecutan en el servidor del host web y nunca se transmiten al equipo de un usuario. Otros archivos, sin embargo, como CSS y JavaScript, se usan exclusivamente por el explorador, por lo que el servidor host simplemente los ofrece tal cual cada vez que se soliciten. Estos archivos se denominan archivos "estáticos", y Django puede distribuirlos automáticamente sin tener que escribir ningún código.
 
@@ -95,15 +95,15 @@ Puede organizar los archivos con cualquier estructura de carpetas de *static* qu
 
 1. Ejecute el proyecto y observe los resultados. Detenga el servidor cuando haya finalizado y confirme los cambios en el control de código fuente si lo desea (como se explica en [paso 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Para qué sirve la etiqueta {% load staticfiles %}?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pregunta: ¿Cuál es el fin de la etiqueta {% load staticfiles %}?
 
 Respuesta: La línea `{% load staticfiles %}` se requiere antes de hacer referencia a los archivos estáticos en elementos como `<head>` y `<body>`. En el ejemplo que se muestra en esta sección, "staticfiles" hace referencia a un conjunto de etiquetas de plantilla de Django personalizado, que es lo que le permite usar la sintaxis `{% static %}` para hacer referencia a los archivos estáticos.  Sin `{% load staticfiles %}`, verá una excepción cuando se ejecute la aplicación.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Hay alguna convención para organizar los archivos estáticos?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: ¿Hay alguna convención para organizar los archivos estáticos?
 
 Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta *static* como quiera. Una forma habitual de organizar los archivos estáticos es crear subcarpetas denominadas *fonts*, *scripts* y *content* (para las hojas de estilos y cualquier otro archivo). En cada caso, no olvide incluir esas carpetas en la ruta de acceso relativa al archivo en las referencias de `{% static %}`.
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3-3: Adición de una página a la aplicación
+## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3.3: Agregar una página a la aplicación
 
 La adición de otra página a la aplicación implica lo siguiente:
 
@@ -164,13 +164,13 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloDj
 
 1. Ejecute el proyecto para observar los resultados y compruebe la navegación entre las páginas. Cierre el servidor cuando haya finalizado.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. He intentado usar "index" para el vínculo a la página principal, pero no ha funcionado. ¿Por qué?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pregunta: He intentado utilizar "index" para el vínculo a la página principal, pero no funcionó. ¿Por qué?
 
 Respuesta: Aunque la función de vista de *views.py* se denomina `index`, los patrones de enrutamiento de dirección URL del archivo *urls.py* del proyecto de Django no contienen una expresión regular que coincida con la cadena "index". Para que coincida con esa cadena, debe agregar otra entrada para el patrón `^index$`.
 
 Como se muestra en la siguiente sección, es mucho mejor usar la etiqueta `{% url '<pattern_name>' %}` en la plantilla de página para hacer referencia al *nombre* de un modelo, en cuyo caso Django crea la dirección URL adecuada para su caso. Por ejemplo, reemplace `<div><a href="home">Home</a></div>` en *about.html* por `<div><a href="{% url 'index' %}">Home</a></div>`. El uso de "index" aquí funciona porque el primer patrón de dirección URL de *urls.py* se denomina, de hecho "index" (en virtud del argumento `name='index'`). También puede utilizar "home" para hacer referencia al segundo patrón.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Paso 3-4: Uso de la herencia de plantilla para crear un encabezado y una barra de navegación
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Paso 3.4: Usar la herencia de plantilla para crear un encabezado y una barra de navegación
 
 En lugar de tener vínculos de navegación explícitos en cada página, las aplicaciones web modernas suelen utilizan un encabezado de personalización de marca y una barra de navegación que proporciona los vínculos de página, los menús emergentes, etc. más importantes. Sin embargo, es poco práctico repetir el mismo código en cada plantilla de página para asegurarse de que el encabezado y la barra de navegación son los mismos en todas las páginas. Es preferible definir los elementos comunes de todas las páginas en un solo lugar.
 

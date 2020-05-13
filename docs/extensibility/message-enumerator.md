@@ -1,27 +1,27 @@
 ---
-title: Enumerador de mensajes | Microsoft Docs
+title: Enumerador de mensajes ( Message Enumerator) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a702e7eae6bc6bcdace62d61f27f78c23aeaa95f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349027"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702509"
 ---
 # <a name="message-enumerator"></a>Enumerador de mensajes
-Las marcas siguientes se usan para la `TEXTOUTPROC` función, que es una función de devolución de llamada que el IDE proporciona cuando llama a la [SccOpenProject](../extensibility/sccopenproject-function.md) (consulte [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) para obtener más información sobre la devolución de llamada función).
+Los siguientes indicadores `TEXTOUTPROC` se utilizan para la función, que es una función de devolución de llamada que el IDE proporciona cuando llama a la [SccOpenProject](../extensibility/sccopenproject-function.md) (consulte [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) para obtener más información sobre la función de devolución de llamada).
 
- Si el IDE se pide a cancelar el proceso, puede obtener uno de los mensajes de cancelación. En este caso, el origen de control usa complemento `SCC_MSG_STARTCANCEL` para pedir el IDE para mostrar el **cancelar** botón. Una vez hecho esto, se puede enviar cualquier conjunto de mensajes normales. Si alguno de estos Devuelve `SCC_MSG_RTN_CANCEL`, a continuación, el complemento se cierra la operación y devuelve. El complemento también sondea `SCC_MSG_DOCANCEL` periódicamente para determinar si el usuario ha cancelado la operación. Cuando se realizan todas las operaciones, o si el usuario ha cancelado, envía el complemento `SCC_MSG_STOPCANCEL`. El `SCC_MSG_INFO`, SCC_MSG_WARNING, y los tipos SCC_MSG_ERROR se utilizan para los mensajes que se muestran en la lista desplazable de mensajes. `SCC_MSG_STATUS` es un tipo especial que indica que el texto debería aparecer en una barra de estado o el área de presentación temporal. No permanecen permanentemente en la lista.
+ Si se pide al IDE que cancele el proceso, puede recibir uno de los mensajes de cancelación. En este caso, el complemento `SCC_MSG_STARTCANCEL` de control de código fuente se usa para pedir al IDE que muestre el botón **Cancelar.** Después de esto, se puede enviar cualquier conjunto de mensajes normales. Si cualquiera de `SCC_MSG_RTN_CANCEL`estas devuelve , el complemento cierra la operación y devuelve. El complemento también sondea `SCC_MSG_DOCANCEL` periódicamente para determinar si el usuario ha cancelado la operación. Cuando se realizan todas las operaciones, o si el `SCC_MSG_STOPCANCEL`usuario ha cancelado, el complemento envía . Los `SCC_MSG_INFO`tipos , SCC_MSG_WARNING y SCC_MSG_ERROR se usan para los mensajes que se muestran en la lista de mensajes de desplazamiento. `SCC_MSG_STATUS`es un tipo especial que indica que el texto debe aparecer en una barra de estado o un área de visualización temporal. No permanece permanentemente en la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ enum { 
 ```
 
 ## <a name="members"></a>Miembros
- Devolver SCC_MSG_RTN_CANCEL de devolución de llamada para indicar la cancelación.
+ SCC_MSG_RTN_CANCEL Devolver de devolución de llamada para indicar la cancelación.
 
- SCC_MSG_RTN_OK devolver desde la devolución de llamada para continuar.
+ SCC_MSG_RTN_OK Devolver de la devolución de llamada para continuar.
 
  SCC_MSG_INFO mensaje es informativo.
 
- Mensaje de SCC_MSG_WARNING es una advertencia.
+ SCC_MSG_WARNING mensaje es una advertencia.
 
- Mensaje SCC_MSG_ERROR es un error.
+ SCC_MSG_ERROR mensaje es un error.
 
- Mensaje SCC_MSG_STATUS está pensada para la barra de estado.
+ SCC_MSG_STATUS Mensaje está destinado a la barra de estado.
 
- Texto sin SCC_MSG_DOCANCEL; Devuelve el IDE `SCC_MSG_RTN_OK` o `SCC_MSG_RTN_CANCEL`.
+ SCC_MSG_DOCANCEL Sin texto; IDE `SCC_MSG_RTN_OK` devuelve `SCC_MSG_RTN_CANCEL`o .
 
- SCC_MSG_STARTCANCEL inicia un cancelar un bucle.
+ SCC_MSG_STARTCANCEL Inicia un bucle de cancelación.
 
- SCC_MSG_STOPCANCEL detiene el bucle de cancelación.
+ SCC_MSG_STOPCANCEL Detiene el bucle de cancelación.
 
 ## <a name="see-also"></a>Vea también
 - [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

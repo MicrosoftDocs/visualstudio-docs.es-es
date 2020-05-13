@@ -2,55 +2,62 @@
 title: Novedades de las suscripciones de Visual Studio
 description: Obtenga información sobre las características nuevas y actualizadas que puede usar para administrar las suscripciones de Visual Studio.
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060406"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649653"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
 Actualizamos el paquete de las ventajas de la suscripción a menudo para que le resulte más útil. También haremos mejoras en nuestros portales de administración de suscriptores y suscripciones para brindarle la mejor experiencia posible.  Siga leyendo para obtener información sobre las características y actualizaciones más recientes, ordenadas de forma trimestral.
 
-## <a name="2019-q3-june-august"></a>T3 de 2019 (de junio a agosto)
+## <a name="2020-q1-january-march"></a>T1 de 2020 (de enero a marzo)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>Opción "Contact my Admin" (Contacto con el administrador) disponible para los suscriptores, agosto de 2019
-Muchos suscriptores de Visual Studio obtienen a través del trabajo o de la escuela sus suscripciones, de cuya asignación y gestión se encargan los administradores.  En organizaciones grandes o complejas, cuando un suscriptor necesita la ayuda de un administrador, puede resultarle difícil saber con quién debe ponerse en contacto.  Para ayudar a los suscriptores, hemos agregado la nueva característica "Contact my admin" (Contacto con el administrador) en el portal de suscriptores en https://my.visualstudio.com/subscriptions. Para obtener más información, consulte el artículo sobre [cómo ponerse en contacto con el administrador](contact-my-admin.md). 
+### <a name="subscriptions-administration-portal"></a>Portal de administración de suscripciones
+Durante el primer trimestre de 2020 se han presentado un nuevo aspecto y algunas características nuevas para el Portal de administración de suscripciones de Visual Studio en https://manage.visualstudio.com. Los cambios en el portal incluyen una nueva combinación de colores y la reorganización de algunas de las herramientas.  La información general de las asignaciones de la suscripción, los detalles del contrato y el uso máximo ahora se controlan mediante los botones situados en la parte superior izquierda.  Esto ayuda a maximizar el espacio de pantalla disponible para las tareas de administración que se realizan con mayor frecuencia, como la asignación y la edición de suscripciones.  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>Preferencias de contratos disponibles para los superadministradores, agosto de 2019
-Ahora, una nueva característica del portal de administración de suscripciones permite a los superadministradores establecer preferencias globales para los contratos.  Esto permite establecer preferencias que reducirán la cantidad de trabajo que deben llevar a cabo los administradores al asignar las suscripciones y que proporcionarán un mejor control sobre ciertas características, por ejemplo, si un administrador puede crear una suscripción para usuarios ajenos a la organización.  Para obtener más información, consulte el artículo [Establecimiento de las preferencias de los contratos](admin-prefs.md). 
+También hemos combinado las opciones para agregar suscriptores individuales y realizar adiciones masivas en un menú desplegable **+ Agregar**. 
 
-## <a name="2019-q2-april-june"></a>T2 de 2019 (de abril a junio)
+   > [!div class="mx-imgBorder"]
+   > ![Nueva interfaz de usuario del Portal de administración de suscripciones](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Suscripciones de Visual Studio con GitHub Enterprise
-En la conferencia //build de mayo, Microsoft anunció que los clientes con contrato Enterprise ahora pueden comprar suscripciones de Visual Studio que incluyen GitHub Enterprise.  Es una manera fácil de adquirir suscripciones de Visual Studio y GitHub Enterprise por un único precio más bajo.  
+#### <a name="connect-emails"></a>Conexión de correos electrónicos
+Hemos facilitado la coincidencia de los suscriptores que usan cuentas de Microsoft (MSA) con Azure Active Directory (Azure AD), de modo que se puedan vincular rápidamente las dos identidades.  El uso de las identidades de Azure AD proporciona una mayor seguridad y una administración de suscripciones más sencilla.  Consulte el [artículo sobre inicios de sesión personales](personal-email-sign-ins.md) para obtener más detalles. 
 
-GitHub Enterprise está disponible con suscripciones de Visual Studio Enterprise y Professional de adquiridas a través de contratos Enterprise. También hay una oferta de mejora que le permite agregar GitHub Enterprise incluso si su contrato de Enterprise no tiene que renovarse.
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Incorporación de suscriptores mediante grupos de Azure Active Directory
+Si su organización usa Azure Active Directory (Azure AD), ahora se pueden administrar las suscripciones mediante grupos de Azure AD.  La asignación de suscripciones a grupos ofrece la capacidad de proporcionar rápidamente suscripciones del mismo tipo a varios usuarios.  Cuando se agregan nuevos usuarios al grupo de Azure AD, se les asigna automáticamente una suscripción.  Si se quita un usuario del grupo de Azure AD, la suscripción también se quita.  Esto ayuda a su organización a automatizar la administración de suscripciones, lo que ahorra tiempo y esfuerzo a los administradores.  Consulte el artículo [Incorporación de varios usuarios](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) en nuestra documentación para obtener información detallada. 
 
-Para obtener más información sobre las ventajas, las opciones y los precios, visite https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+### <a name="cast-highlight"></a>Resaltado de CAST
+Nos complace anunciar una expansión de las ventajas que ofrece nuestro socio comercial,CAST Highlight. 
+- La duración de la ventaja incluida en las suscripciones de Visual Studio Enterprise se ha ampliado a seis meses.  
+- Los suscriptores de Visual Studio Professional ahora pueden recibir una suscripción que les permite evaluar una única aplicación durante tres meses. 
 
-Si su organización ya tiene Visual Studio con suscripciones a GitHub Enterprise, puede obtener más información sobre la [administración de Visual Studio con suscripciones a GitHub Enterprise ](assign-github.md) en nuestra documentación.  
+## <a name="2020-q2-april-june"></a>T2 de 2020 (de abril a junio)
 
-## <a name="2019-q1-january-march"></a>T1 de 2019 (de enero a marzo)
+### <a name="visual-studio-subscriptions-portal"></a>Portal de suscripciones de Visual Studio
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Uso máximo agregado al [portal de administración de suscripciones](https://manage.visualstudio.com)
-Esta nueva característica del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de sus contratos. Esto puede ayudarle a entender el uso de la suscripción actual y planear futuras compras. 
+Se han realizado cambios significativos en la apariencia y la facilidad de uso del Portal de suscripciones de Visual Studio.  
 
-  > [!div class="mx-imgBorder"]
-  > ![Menú Uso máximo](_img/maximum-usage/maximum-usage-menu.png)
+- Se ha cambiado el tamaño de los iconos de las ventajas y ahora se muestran todos en la ventana, por lo que no es necesario desplazarse a la izquierda o a la derecha para ver todos los de una determinada categoría. 
+- Puede optar por mostrar todas las ventajas disponibles o mostrar solo una categoría mediante el selector de categorías.
+   > [!div class="mx-imgBorder"]
+   > ![Nuevo selector de categorías de ventajas](_img/whats-new/whats-new-category-picker.png)
+- También hemos movido el selector de suscripciones de la esquina superior derecha de la ventana a una ubicación más accesible.
+   > [!div class="mx-imgBorder"]
+   > ![Nuevo selector de suscripciones](_img/whats-new/whats-new-sub-picker.png)
+- Hemos agregado el elemento "Ventaja destacada" en la parte superior de la lista de ventajas para resaltar ventajas nuevas o populares.  
+   > [!div class="mx-imgBorder"]
+   > ![Nueva ventaja destacada](_img/whats-new/whats-new-featured.png)
 
-También puede ver un historial de ejecución de las asignaciones, incluidas las compras y asignaciones.   
-
-Para obtener más información, consulte nuestro artículo sobre [uso máximo](maximum-usage.md). 
-
-
-
-
-
-Eso es todo por ahora.
+## <a name="next-steps"></a>Pasos siguientes
+- Consulte la nueva interfaz de usuario del [portal de administración de suscripciones](https://manage.visualstudio.com) con sus nuevas características
+- Más información sobre [CAST Highlight](vs-cast.md)
+- Asegúrese de volver a consultar aquí la información más reciente sobre las novedades de las suscripciones de Visual Studio.

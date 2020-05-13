@@ -1,4 +1,4 @@
-- name: Depurar en Visual Studio
+- name: Depuración en Visual Studio
   href: debugging-in-visual-studio.md
 - name: Conceptos básicos del depurador
   items:
@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Asociación a procesos en ejecución
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Especificación de archivos de código fuente y símbolos (.pdb)
+    - name: Especificar archivos de código fuente y símbolos (.pdb)
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Depurar aplicaciones de 64 bits
       href: debug-64-bit-applications.md
@@ -134,7 +134,7 @@
               href: web-control-library-managed-code.md
         - name: Proyectos de consola
           href: debugging-preparation-console-projects.md
-        - name: Aplicaciones web ASP.NET
+        - name: Aplicaciones Web ASP.NET
           href: debugging-preparation-aspnet-web-applications.md
         - name: "Depuración de un archivo ejecutable que no es parte de una solución de Visual\_Studio"
           href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Arquitectura de un visualizador
                   href: visualizer-architecture.md
-                - name: 'Escritura de un visualizador en C#'
+                - name: 'Escribir un visualizador en C#'
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Escritura un visualizador en Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -230,9 +230,9 @@
           href: dump-file-summary-extensibility-api.md
     - name: Restablecer comandos ocultos del depurador
       href: how-to-restore-hidden-debugger-commands.md
-- name: Remote Debugging
+- name: Depuración remota
   items:
-    - name: Remote Debugging
+    - name: Depuración remota
       href: remote-debugging.md
     - name: Configurar el Firewall de Windows para la depuración remota
       href: configure-the-windows-firewall-for-remote-debugging.md
@@ -246,7 +246,7 @@
           href: remote-debugging-errors-and-troubleshooting.md
         - name: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer.md
-        - name: Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso.
+        - name: Error DCOM al intentar ponerse en contacto con el equipo remoto. Acceso denegado.
           href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
         - name: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto se está ejecutando como usuario distinto
           href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
@@ -350,9 +350,9 @@
       items:
         - name: Depuración de la tienda Windows y aplicaciones Windows universales
           href: debugging-windows-store-and-windows-universal-apps.md
-        - name: "Ejecución de aplicaciones desde Visual\_Studio"
+        - name: Ejecutar aplicaciones desde Visual Studio
           items:
-            - name: "Ejecución de aplicaciones desde Visual\_Studio"
+            - name: Ejecutar aplicaciones desde Visual Studio
               href: run-store-apps-from-visual-studio.md
             - name: Ejecutar aplicaciones de la Tienda Windows en el equipo local
               href: run-windows-store-apps-on-the-local-machine.md
@@ -368,7 +368,7 @@
           items:
             - name: "Depuración de aplicaciones en Visual\_Studio"
               href: debug-store-apps-in-visual-studio.md
-            - name: Inicio de una sesión de depuración (JavaScript)
+            - name: Iniciar una sesión de depuración (JavaScript)
               href: start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md
             - name: Control de ejecución en una sesión de depuración (JavaScript)
               items:
@@ -390,7 +390,7 @@
                   href: refresh-an-app-javascript.md
                 - name: Depurar un control WebView
                   href: debug-a-webview-control.md
-                - name: Métodos abreviados de teclado
+                - name: Accesos directos del teclado
                   href: keyboard-shortcuts-html-and-javascript.md
                 - name: 'Depurar código de ejemplo HTML, CSS y JavaScript'
                   href: debug-html-css-and-javascript-sample-code.md
@@ -400,17 +400,17 @@
                   href: quickstart-debug-javascript-using-the-console.md
                 - name: JavaScript Console commands
                   href: javascript-console-commands.md
-            - name: 'Inicio de una sesión de depuración (VB, C#, C++ y XAML)'
+            - name: 'Iniciar una sesión de depuración (VB, C#, C++ y XAML)'
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Depuración de XAML en Blend para Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Navegación por una sesión de depuración (XAML y C#)'
+            - name: 'Navegar por una sesión de depuración (Xaml y C#)'
               items:
-                - name: 'Navegación por una sesión de depuración (XAML y C#)'
+                - name: 'Navegar por una sesión de depuración (Xaml y C#)'
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Código de ejemplo de navegación del depurador (Xaml y C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Desencadenamiento de eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows'
+            - name: 'Desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Precargar contenido para aplicaciones de la Tienda Windows
           href: prefetch-content-for-windows-store-apps.md
@@ -418,15 +418,15 @@
       items:
         - name: Depurar código administrado
           href: debugging-managed-code.md
-        - name: "Tipos de proyectos de C#, F# y Visual\_Basic"
+        - name: 'Tipos de proyectos de C#, F# y Visual Basic'
           items:
-            - name: "Tipos de proyectos de C#, F# y Visual\_Basic"
+            - name: 'Tipos de proyectos de C#, F# y Visual Basic'
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Valores de propiedades recomendados
               href: managed-debugging-recommended-property-settings.md
-            - name: "Aplicaciones de Windows\_Forms"
+            - name: Aplicaciones de Windows Forms
               href: debugging-preparation-windows-forms-applications.md
-            - name: servicios de Windows
+            - name: Servicios de Windows
               href: debugging-preparation-windows-services.md
         - name: Depuración de una aplicación de confianza parcial
           href: how-to-debug-a-partial-trust-application.md
@@ -592,7 +592,7 @@
               href: bc-texture-compression-variant.md
         - name: Lista de eventos
           href: graphics-event-list.md
-        - name: Estado
+        - name: State
           href: graphics-state.md
         - name: Etapas de canalización
           href: graphics-pipeline-stages.md

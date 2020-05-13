@@ -9,16 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca762c103ab5b3d3e94b3117dd9570787562b002
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566831"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880135"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Uso de Azure Test Plans en lugar de Lab Management para las pruebas automatizadas
 
 Si usa Microsoft Test Manager y Lab Management para las pruebas automatizadas o para la automatización de compilación-implementación-prueba, en este tema se explica cómo puede obtener los mismos objetivos con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) en Team Foundation Server (TFS) y Azure Pipelines.
+
+> [!NOTE]
+> Microsoft Test Manager está en desuso en Visual Studio 2017 y se ha quitado en Visual Studio 2019.
 
 ## <a name="build-deploy-test-automation"></a>Automatización de compilación-implementación-prueba
 
@@ -26,7 +29,7 @@ Microsoft Test Manager y Lab Management se basan en una definición de compilaci
 
 | Pasos | Con la compilación XAML | En una compilación o versión |
 |-------|----------------------|-----------------|
-| Identificar las máquinas donde se implementará la compilación y se ejecutarán las pruebas. | Cree un entorno de laboratorio estándar en Microsoft Test Manager con esas máquinas. | no disponible |
+| Identificar las máquinas donde se implementará la compilación y se ejecutarán las pruebas. | Cree un entorno de laboratorio estándar en Microsoft Test Manager con esas máquinas. | N/D |
 | Identificar las pruebas que se van a ejecutar. | Cree un conjunto de pruebas en Microsoft Test Manager, cree casos de pruebas y asocie la automatización con cada caso de prueba. Cree una configuración de pruebas en Microsoft Test Manager identificando el rol de las máquinas del entorno de laboratorio donde deben ejecutarse las pruebas. | Cree un conjunto de pruebas automatizado en Microsoft Test Manager de la misma manera que si planea administrar sus pruebas mediante planes de pruebas. De manera alternativa, puede omitir esto si quiere ejecutar pruebas directamente desde archivos binarios de prueba creados mediante sus compilaciones. No hay necesidad de crear configuraciones de pruebas en ningún caso. |
 | Automatizar la implementación y las pruebas. | Cree una definición de compilación XAML con LabDefaultTemplate.*.xaml. Especifique la compilación, conjuntos de pruebas y entorno de laboratorio en la definición de compilación. | Cree una [canalización de compilación o versión](/azure/devops/pipelines/index?view=vsts) con un solo entorno. Ejecute el mismo script de implementación (desde la definición de compilación XAML) con la tarea de línea de comandos y ejecute pruebas automatizadas con las tareas Implementación del agente de pruebas y Ejecutar pruebas funcionales. Especifique la lista de máquinas y sus credenciales como entradas para estas tareas. |
 
@@ -58,7 +61,7 @@ En la tabla siguiente se resumen las actividades típicas que se realizan en el 
 | Pasos | Con el centro de laboratorio | En una compilación o versión |
 |-------|-----------------|-----------------------|
 | Administrar una biblioteca de plantillas de entorno. | Cree un entorno de laboratorio. Instale el software necesario en las máquinas virtuales. Prepare el sistema y almacene el entorno como una plantilla en la biblioteca. | Use la consola de administración de SCVMM directamente para crear y administrar cualquier plantilla de máquina virtual o plantillas de servicio. Si usa Azure, seleccione una de las [plantillas de inicio rápido de Azure](https://azure.microsoft.com/resources/templates/). |
-| Cree un entorno de laboratorio. | Seleccione una plantilla de entorno en la biblioteca e impleméntela. Proporcione los parámetros necesarios para personalizar las configuraciones de máquina virtual. | Use la consola de administración de SCVMM directamente para crear máquinas virtuales o instancias de servicio de las plantillas. Use Azure Portal directamente para crear recursos. O, cree una definición de versión con un entorno. Use las tareas de Azure o las tareas de la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) para crear máquinas virtuales. Crear una versión de esta definición es equivalente a crear un entorno en el centro de laboratorio. |
+| Crear un entorno de laboratorio. | Seleccione una plantilla de entorno en la biblioteca e impleméntela. Proporcione los parámetros necesarios para personalizar las configuraciones de máquina virtual. | Use la consola de administración de SCVMM directamente para crear máquinas virtuales o instancias de servicio de las plantillas. Use Azure Portal directamente para crear recursos. O, cree una definición de versión con un entorno. Use las tareas de Azure o las tareas de la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) para crear máquinas virtuales. Crear una versión de esta definición es equivalente a crear un entorno en el centro de laboratorio. |
 | Conectarse a las máquinas. | Abra el entorno de laboratorio en el Visor de entorno. | Use la consola de administración de SCVMM directamente para conectarse a las máquinas virtuales. De manera alternativa, use la dirección IP o los nombres DNS de las máquinas virtuales para abrir las sesiones de escritorio remoto. |
 | Tomar un punto de control de un entorno o restaurar un entorno a un punto de control limpio. | Abra el entorno de laboratorio en el Visor de entorno. Seleccione la opción para tomar un punto de control o para restaurar a un punto de control anterior. | Use la consola de administración de SCVMM directamente para realizar estas operaciones en las máquinas virtuales. O, para realizar estos pasos como parte de una automatización mayor, incluya las tareas de punto de control desde la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte del entorno en una definición de versión. |
 

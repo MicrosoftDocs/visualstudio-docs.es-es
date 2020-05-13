@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68461537"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
@@ -24,7 +24,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 
 Este documento no confiere ningún derecho para redistribuir el software externamente ni para proporcionar entornos de compilación a terceros.
 
-> Renuncia de responsabilidades<br /><br /> Este documento se proporciona "tal cual". Si bien hemos probado los pasos descritos, no es posible probar de forma exhaustiva todas las configuraciones. Intentaremos mantener el documento actualizado con cualquier información adicional que aprendamos. La información y los puntos de vista expresados en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, pueden cambiar sin previo aviso. Microsoft no proporciona ninguna garantía, expresa o implícita, con respecto a la información proporcionada aquí. Usted asume el riesgo de utilizarla.<br /><br /> Este documento no le proporciona ningún derecho legal sobre ninguna propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para su uso interno de referencia.<br /><br /> No tiene ninguna obligación de proporcionar a Microsoft ninguna sugerencia ni ningún comentario ("Comentario”) con respecto a este documento. Sin embargo, cualquier Comentario que proporcione voluntariamente se puede utilizar en productos de Microsoft y especificaciones relacionadas u otra documentación (denominados colectivamente "Ofertas de Microsoft") que a su vez pueden utilizar terceros para desarrollar sus propios productos. Por tanto, si proporciona Comentarios a Microsoft sobre cualquier versión de este documento o las Ofertas de Microsoft a las que se aplican, acepta lo siguiente: (a) Microsoft puede utilizar, reproducir, licenciar, distribuir y comercializar libremente sus Comentarios sobre cualquier Oferta de Microsoft; (b) También concede a terceros, de forma gratuita, únicamente los derechos de patente necesarios para permitir que otros productos utilicen o interactúen con cualquier parte determinada de un Producto de Microsoft que incorpore sus Comentarios; y (c) No ofrecerá a Microsoft Comentarios (i) que tenga razones para creer que están sujetos a cualquier patente, copyright u otro derecho o reclamación de propiedad intelectual de cualquier tercero; o (ii) sujetos a términos de licencia que obliguen a que cualquier Oferta de Microsoft que incorpore o derive de esos Comentarios, u otra propiedad intelectual de Microsoft, se ofrezca en licencia o se comparta de otra forma con ningún tercero.
+> Declinación de responsabilidades<br /><br /> Este documento se proporciona "tal cual". Si bien hemos probado los pasos descritos, no es posible probar de forma exhaustiva todas las configuraciones. Intentaremos mantener el documento actualizado con cualquier información adicional que aprendamos. La información y los puntos de vista expresados en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, pueden cambiar sin previo aviso. Microsoft no proporciona ninguna garantía, expresa o implícita, con respecto a la información proporcionada aquí. Usted asume el riesgo de utilizarla.<br /><br /> Este documento no le proporciona ningún derecho legal sobre ninguna propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para su uso interno de referencia.<br /><br /> No tiene ninguna obligación de proporcionar a Microsoft ninguna sugerencia ni ningún comentario ("Comentario”) con respecto a este documento. Sin embargo, cualquier Comentario que proporcione voluntariamente se puede utilizar en productos de Microsoft y especificaciones relacionadas u otra documentación (denominados colectivamente "Ofertas de Microsoft") que a su vez pueden utilizar terceros para desarrollar sus propios productos. Por tanto, si proporciona Comentarios a Microsoft sobre cualquier versión de este documento o las Ofertas de Microsoft a las que se aplican, acepta lo siguiente: (a) Microsoft puede utilizar, reproducir, licenciar, distribuir y comercializar libremente sus Comentarios sobre cualquier Oferta de Microsoft; (b) También concede a terceros, de forma gratuita, únicamente los derechos de patente necesarios para permitir que otros productos utilicen o interactúen con cualquier parte determinada de un Producto de Microsoft que incorpore sus Comentarios; y (c) No ofrecerá a Microsoft Comentarios (i) que tenga razones para creer que están sujetos a cualquier patente, copyright u otro derecho o reclamación de propiedad intelectual de cualquier tercero; o (ii) sujetos a términos de licencia que obliguen a que cualquier Oferta de Microsoft que incorpore o derive de esos Comentarios, u otra propiedad intelectual de Microsoft, se ofrezca en licencia o se comparta de otra forma con ningún tercero.
 
 Este tutorial se validó con estos sistemas operativos:
 
@@ -287,7 +287,7 @@ Si *vcvarsall.bat* se ejecuta correctamente (es decir, no se muestra ningún men
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalación de ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> Instalación de ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación
 
 MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC del equipo de compilación.
 
@@ -339,7 +339,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         por
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -349,7 +349,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         por
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

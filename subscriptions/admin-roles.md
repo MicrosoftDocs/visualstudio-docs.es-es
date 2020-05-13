@@ -3,15 +3,16 @@ title: Roles de administrador y superadministrador en el portal de administraci�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
+ms.date: 04/07/2020
 ms.topic: conceptual
 description: Obtenga información sobre los roles de administrador y superadministrador y sobre la asignación de administradores.
-ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
+ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78234842"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80808380"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
 
@@ -20,6 +21,8 @@ En el nuevo portal de administración de suscripciones de Visual Studio para cli
 **Superadministradores:** cuando se configura una organización por primera vez, el contacto principal o para notificaciones es de forma predeterminada el superadministrador. El contacto principal o el que recibe los avisos puede asignar superadministradores o administradores adicionales. Un superadministrador puede agregar y quitar otros administradores, así como suscriptores. Si hay más de dos superadministradores en el sistema, un superadministrador puede eliminarlos a todos menos a los dos últimos por razones de seguridad.
 
 **Administradores:** solo un superadministrador puede asignar administradores. Un administrador solo puede administrar los suscriptores de los contratos que el superadministrador le asigne.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>Asignación de administradores
 Para asignar nuevos administradores:

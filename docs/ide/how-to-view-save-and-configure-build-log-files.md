@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
+title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114466"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472778"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
 
-Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. 
+Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación.
 
-- En el caso de los proyectos de C++, también puede ver la misma información en un archivo *.txt* que se crea y se guarda automáticamente. 
+- En el caso de los proyectos de C++, también puede ver la misma información en un archivo de registro que se crea y se guarda al compilar un proyecto. 
 
-- En los proyectos de código administrado, puede hacer clic en la ventana de salida de la compilación y presionar **Ctrl**+**S**. Visual Studio le pregunta en qué ubicación quiere guardar la información de la ventana **Salida** en un archivo *.txt*. 
+- En los proyectos de código administrado, puede hacer clic en la ventana de salida de la compilación y presionar **Ctrl**+**S**. Visual Studio le pregunta en qué ubicación quiere guardar la información de la ventana **Salida** en un archivo de registro.
 
 También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.
 
-Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guardar la información de la compilación. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md).
+Si compila un proyecto mediante MSBuild, puede crear un archivo de registro para guardar la información de la compilación. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Para ver el archivo de registro de compilación de un proyecto de C++
 
-1. En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: *\\...\Visual Studio \<Versión\>\Projects\\<NombreDelProyecto\>\\<NombreDelProyecto\>\Debug\\<NombreDelProyecto\>.txt*
+1. En **Explorador de Windows** o el **Explorador de archivos**, abra el siguiente archivo (relativo a la carpeta raíz del proyecto): *Versión*\\<ProjectName>\>.Log* o *Depurar\\<NombreProyecto\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para crear un archivo de registro de compilación para un proyecto de código administrado
 
@@ -46,13 +46,13 @@ También puede generar registros mediante la ejecución directa de MSBuild desde
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 2. En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.
 
 3. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.
 
-    |Nivel de detalle|Description|
+    |Nivel de detalle|Descripción|
     | - |-----------------|
     |**Silencioso**|Muestra un resumen solo de la compilación.|
     |**Mínima**|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144769"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79431285"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Información general de los analizadores de código fuente
 
@@ -44,7 +44,7 @@ Al igual que las infracciones de las reglas de análisis heredados, las infracci
 
 ![Subrayados ondulados en el editor de código en Visual Studio](media/diagnostics-severity-colors.png)
 
-Los analizadores de código revisan código en el tiempo de compilación (al igual que el análisis heredado, si está habilitado), pero también en vivo a medida que se escribe. Si se habilita el [análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis), los analizadores de código también proporcionan análisis en tiempo de diseño de los archivos de código que no están abiertos en el editor.
+Los analizadores de código revisan código en el tiempo de compilación (al igual que el análisis heredado, si está habilitado), pero también en vivo a medida que se escribe. El análisis de código activo se puede configurar para que su ámbito de ejecución sea el documento actual, todos los documentos abiertos o toda la solución. Vea [Cómo: Configurar el ámbito del análisis de código activo](./configure-live-code-analysis-scope-managed-code.md).
 
 > [!TIP]
 > Los errores y las advertencias de tiempo de compilación de los analizadores de código se muestran solo si los analizadores están instalados como paquetes NuGet. Los analizadores integrados (por ejemplo, IDE0067 e IDE0068) nunca se ejecutan durante una compilación.
@@ -52,7 +52,7 @@ Los analizadores de código revisan código en el tiempo de compilación (al igu
 Los analizadores de código de Roslyn no solo notifican los mismos tipos de problemas que el análisis heredado, sino que también facilitan la corrección de una o todas las repeticiones de la infracción en el archivo o proyecto. Estas acciones se denominan *correcciones de código*. Las correcciones de código son específicas del IDE; en Visual Studio, se implementan como [Acciones rápidas](../ide/quick-actions.md). No todos los diagnósticos de los analizadores tienen una corrección de código asociada.
 
 > [!NOTE]
-> La opción de menú **Analizar** > **Ejecutar análisis de código** es válida únicamente en los análisis heredados.
+> En las versiones anteriores a Visual Studio 2019 16.5, la opción de menú **Analizar** > **Ejecutar análisis de código** ejecuta análisis heredado. A partir de Visual Studio 2019 16.5, la opción de menú **Ejecutar análisis de código** ejecuta analizadores basados en Roslyn para el proyecto o la solución seleccionados.
 
 Para diferenciar entre infracciones de analizadores de código e infracciones de análisis heredado en la lista de errores, examine la columna **Herramienta**. Si el valor Herramienta coincide con uno de los ensamblados del analizador del **Explorador de soluciones**, por ejemplo **Microsoft.CodeQuality.Analyzers**, la infracción procederá de un analizador código. De lo contrario, la infracción se habrá originado en el análisis heredado.
 

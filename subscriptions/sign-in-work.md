@@ -3,15 +3,16 @@ title: Inicio de sesión en Suscripciones de Visual Studio con la cuenta profesi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Aprenda a iniciar sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa.
-ms.openlocfilehash: fdad16a95c3686d738bd3ef77eb199549082b766
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: e1f80f88cf3a377cc6fcc8f8bef266ee59b90067
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315346"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233211"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta profesional o educativa 
 
@@ -70,5 +71,11 @@ R:  Muchos usuarios tienen más de una suscripción.  Si puede iniciar sesión e
 
 Si sigue teniendo problemas, puede ponerse en contacto con el equipo de [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.  
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
-Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.  
+Tras haber iniciado sesión correctamente en el portal de suscripciones, recomendamos visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, servicios y ofertas disponibles.  

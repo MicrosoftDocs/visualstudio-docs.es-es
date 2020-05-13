@@ -1,70 +1,70 @@
 ---
-title: Glosario del depurador de Visual Studio | Documentos de Microsoft
+title: Glosario del depurador de Visual Studio (Visual Studio Debugger Glossary) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d968b5c0d18c7ba74e1bd5ea541fdfe080dc4f78
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316073"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713348"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario del depurador de Visual Studio
-Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.
+Los siguientes son términos utilizados en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.
 
 ## <a name="terms"></a>Términos
- enlazar el punto de interrupción establecida una abstracción para un punto de interrupción en el código. Hay una relación uno a uno entre un punto de interrupción enlazado y una instrucción de punto de interrupción en la secuencia de código. Cuando el código descarga, pueden separar los puntos de interrupción enlazados.
+ punto de interrupción enlazado Una abstracción para un punto de interrupción establecido en el código. Hay una relación uno a uno entre un punto de interrupción enlazado y una instrucción de punto de interrupción en la secuencia de código. Cuando se descarga código, los puntos de interrupción enlazados pueden desvincularse.
 
- causalidad proporciona la capacidad para realizar el seguimiento de un subproceso lógico de ejecución a través de varios equipos, procesos y subprocesos físicos y para reconstruir la pila de llamadas del subproceso lógico en un momento determinado de duración del subproceso.
+ causalidad Proporciona la capacidad de realizar un seguimiento de un subproceso lógico de ejecución en varios subprocesos físicos, procesos y máquinas, y para reconstruir la pila de llamadas de ese subproceso lógico en un punto determinado de la duración de ese subproceso.
 
- contexto de código proporciona una abstracción de una posición en el código que se sabe que el motor de depuración. Para la mayoría de las arquitecturas de tiempo de ejecución, un contexto de código es una dirección en la secuencia de instrucciones de un programa. Para los idiomas no tradicionales, en el que no se puede representar código por instrucciones, se puede representar un contexto de código por otros medios.
+ contexto de código Proporciona una abstracción de una posición en el código conocido por el motor de depuración. Para la mayoría de las arquitecturas en tiempo de ejecución, un contexto de código es una dirección en la secuencia de instrucciones de un programa. Para los lenguajes no tradicionales, en los que el código puede no estar representado por instrucciones, un contexto de código puede estar representado por otros medios.
 
- ruta de acceso de código representa un punto de ejecución en el código donde se toma una rama o se realiza una llamada de función. Un seguimiento de pila es básicamente una lista de rutas de acceso del código de llamada de función.
+ Ruta de acceso de código Representa un punto de ejecución en el código donde se toma una bifurcación o se realiza una llamada de función. Un seguimiento de pila es esencialmente una lista de rutas de acceso de código de llamada de función.
 
- depurar el motor (DE) un componente que permite la depuración de una arquitectura en tiempo de ejecución. Un motor de depuración funciona junto con el sistema operativo o un intérprete y proporciona servicios de depuración, como la evaluación de expresión, los puntos de interrupción y control de ejecución.
+ motor de depuración (DE) Un componente que permite la depuración de una arquitectura en tiempo de ejecución. Un motor de depuración funciona junto con el intérprete o el sistema operativo y proporciona servicios de depuración como control de ejecución, puntos de interrupción y evaluación de expresiones.
 
- contexto de documento proporciona una abstracción de una posición en un documento de archivo de origen conocido para el motor de depuración. Para la mayoría de los idiomas, un contexto de documento es una posición en un archivo de origen. Para los idiomas no tradicionales, para que el archivo de origen no puede ser texto, un contexto de documento puede estar representado por otros medios. Vea también *documentar posición*.
+ contexto de documento Proporciona una abstracción de una posición en un documento de archivo de origen conocido por el motor de depuración. Para la mayoría de los idiomas, un contexto de documento es una posición en un archivo de origen. Para los idiomas no tradicionales, para los que el archivo de origen puede no ser texto, un contexto de documento puede estar representado por otros medios. Véase también *la posición del documento*.
 
- posición del documento proporciona una abstracción de una posición en un archivo de origen que se sabe que el IDE. Para la mayoría de lenguajes, una posición de documento es una posición en un archivo de origen. Para los idiomas no tradicionales, una posición de documento puede estar representada de otras maneras. Vea también *contexto de documento*.
+ posición del documento Proporciona una abstracción de una posición en un archivo de origen conocido por el IDE. Para la mayoría de los idiomas, una posición de documento es una posición en un archivo de origen. Para los idiomas no tradicionales, una posición de documento puede representarse de otras maneras. Consulte también *contexto de documento*.
 
- punto de interrupción error una abstracción para describir un error en un punto de interrupción pendiente. Un punto de interrupción de error puede describir un error en la ubicación del punto de interrupción pendiente, la expresión asociada con el punto de interrupción pendiente u otra información que impide que el punto de interrupción pendiente de enlace a una ubicación del código.
+ punto de interrupción de error Una abstracción para describir un error en un punto de interrupción pendiente. Un punto de interrupción de error puede describir un error en la ubicación del punto de interrupción pendiente, la expresión asociada con el punto de interrupción pendiente u otra información que impide que el punto de interrupción pendiente se enlace a una ubicación de código.
 
- contexto de evaluación proporciona una abstracción de un contexto de programación de evaluación de expresiones. Normalmente, un contexto de evaluación es un ámbito. Cuando se realiza la evaluación de expresiones en un contexto de expresión, el contexto de expresión proporciona reglas de ámbito que coinciden con su punto de creación. Por ejemplo, el contexto de una expresión que creó en un marco de pila proporcionará el contexto para evaluar las variables locales, parámetros de método, los miembros de clase (si procede) y variables globales.
+ contexto de evaluación Proporciona una abstracción de un contexto de programación para la evaluación de expresiones. Normalmente, un contexto de evaluación es un ámbito. Al realizar la evaluación de expresiones en un contexto de expresión, el contexto de expresión proporciona reglas de ámbito que coinciden con su punto de creación. Por ejemplo, un contexto de expresión creado en un marco de pila proporcionará el contexto para evaluar variables locales, parámetros de método, miembros de clase (si procede) y variables globales.
 
- interceptar excepciones una excepción que intercepta un motor de depuración, incluso si ningún mecanismo de control de excepciones está vigente en el marco de pila actual.
+ excepción interceptada Una excepción interceptada por un motor de depuración, incluso si no hay ningún mecanismo de control de excepciones en el marco de pila actual.
 
- JustMyCode el concepto de depuración solo el código que pertenece a un usuario y se omite todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
+ JustMyCode El concepto de depurar solo el código que pertenece a un usuario e ignorar todo el código intermedio, como el código del sistema, incluso si el código fuente está disponible para ese código del sistema.
 
- pendiente de punto de interrupción proporciona una abstracción para los puntos de interrupción antes, durante y después el código está cargado y una forma de virtualizar los puntos de interrupción. Un punto de interrupción:
+ punto de interrupción pendiente Proporciona una abstracción para los puntos de interrupción antes, durante y después de cargar el código y una forma de virtualizar los puntos de interrupción. Un punto de interrupción pendiente:
 
-- Contiene toda la información necesaria para enlazar un punto de interrupción al código en uno o más programas.
+- Contiene toda la información necesaria para enlazar un punto de interrupción al código en uno o varios programas.
 
-- Puede enlazar a varias ubicaciones del código en uno o más programas.
+- Puede enlazarse a varias ubicaciones de código en uno o más programas.
 
-- Nunca se enlaza propio al código.
+- Nunca se une al código.
 
-  Cada código en tiempo de carga, se comprueban todos los puntos de interrupción pendientes en un programa para ver si puede enlazar. Se dice que un punto de interrupción pendiente para que contenga todos los puntos de interrupción enlazados que enlaza.
+  Cada vez que se carga el código, se comprueban todos los puntos de interrupción pendientes de un programa para ver si se pueden enlazar. Se dice que un punto de interrupción pendiente contiene todos los puntos de interrupción enlazados que enlaza.
 
-  proceso de un proceso Win32 físico. Un proceso puede contener varios programas. Vea también *programa*.
+  proceso Un proceso físico de Win32. Un proceso puede contener varios programas. Consulte también *programa*.
 
-  Un espacio de nombres único que se ejecuta dentro de una determinada arquitectura de tiempo de ejecución del programa. Vea también *proceso*.
+  programa Un único espacio de nombres que se ejecuta dentro de una arquitectura en tiempo de ejecución determinada. Consulte también *proceso*.
 
-  Administrador de depuración de la sesión (SDM) administra cualquier número de motores de depuración, depuración de cualquier número de programas en varios procesos en cualquier número de máquinas. En el nivel básico, el SDM es un multiplexor de motores de depuración. Además, el SDM proporciona una vista unificada de la sesión de depuración para el IDE.
+  Administrador de depuración de sesión (SDM) Administra cualquier número de motores de depuración depurando cualquier número de programas en varios procesos en cualquier número de máquinas. En el nivel básico, el SDM es un multiplexor de motores de depuración. Además, el SDM proporciona una vista unificada de la sesión de depuración al IDE.
 
-  marco de pila representa el estado del cálculo en un fotograma determinado y un nivel concreto de llamadas a funciones anidadas.
+  marco de pila Representa el estado de cálculo en un marco determinado y el nivel determinado de llamadas a funciones anidadas.
 
-  La noción de ejecución de instrucciones basada en la pila que se ejecuta en al menos un programa generalizada del subproceso.
+  subproceso La noción generalizada de ejecución de instrucciones basada en pilas que se ejecuta en al menos un programa.
 
-  punto de interrupción de advertencia una abstracción para describir una advertencia en un punto de interrupción pendiente. Un punto de interrupción de advertencia describe un motivo por qué el punto de interrupción pendiente no ha enlazado a una ubicación del código. Esto puede ser que el código no ha cargado aún para la ubicación que se describe en el punto de interrupción pendiente, o por algún otro motivo.
+  punto de interrupción de advertencia Una abstracción para describir una advertencia en un punto de interrupción pendiente. Un punto de interrupción de advertencia describe un motivo por el que el punto de interrupción pendiente aún no se ha enlazado a una ubicación de código. Esto puede ser que el código aún no se ha cargado para la ubicación descrita por el punto de interrupción pendiente, o por alguna otra razón.
 
 ## <a name="see-also"></a>Vea también
 - [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,5 @@
 ---
-title: VisibilityConstraints (elemento) | Microsoft Docs
+title: Elemento VisibilityConstraints (VisibilityConstraints Element) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee64b4b8ccebe6e63b5c558df68e0a5625b37884
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310663"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698189"
 ---
-# <a name="visibilityconstraints-element"></a>VisibilityConstraints (elemento)
-VisibilityConstraints (elemento) determina la visibilidad estática de los grupos de comandos y las barras de herramientas. En primer lugar se controla la visibilidad mediante las [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) sin tener que cargar el VSPackage.
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints elemento
+El elemento VisibilityConstraints determina la visibilidad estática de grupos de comandos y barras de herramientas. La visibilidad se controla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] primero mediante el entorno de desarrollo integrado (IDE) sin cargar el VSPackage.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ VisibilityConstraints (elemento) determina la visibilidad estática de los grupo
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[VisibilityItem (elemento)](../extensibility/visibilityitem-element.md)|Determina la visibilidad de los comandos y las barras de herramientas estática.|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilidad de los grupos de comandos y las barras de herramientas estática.|
+|[Elemento VisibilityItem](../extensibility/visibilityitem-element.md)|Determina la visibilidad estática de comandos y barras de herramientas.|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Determina la visibilidad estática de grupos de comandos y barras de herramientas.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos (por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados) que un paquete VSPackage proporciona al IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos (por ejemplo, elementos de menú, menús, barras de herramientas y cuadros combinados) que un VSPackage proporciona al IDE.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -63,6 +63,6 @@ VisibilityConstraints (elemento) determina la visibilidad estática de los grupo
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Vea también
-- [VisibilityItem (elemento)](../extensibility/visibilityitem-element.md)
-- [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte también
+- [Elemento VisibilityItem](../extensibility/visibilityitem-element.md)
+- [Tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

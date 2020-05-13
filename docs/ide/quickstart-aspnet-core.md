@@ -15,19 +15,19 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579963"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación web ASP.NET Core
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
-En esta introducción de 5 a 10 minutos sobre cómo usar Visual Studio, creará una aplicación web simple "Hola mundo" mediante el uso de una plantilla de proyecto ASP.NET y el lenguaje de programación C#.
+En esta introducción de entre cinco y diez minutos sobre el uso de Visual Studio, se crea una aplicación web sencilla "Hello World" mediante una plantilla de proyecto de ASP.NET y el lenguaje de programación C#.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-### <a name="install-visual-studio"></a>Instalar Visual Studio
+### <a name="install-visual-studio"></a>Instalación de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -55,7 +55,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-1. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y luego elija **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core**. <br/><br/>Luego asigne un nombre al archivo `HelloWorld` y elija **Aceptar**.
+1. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y luego elija **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core**. <br/><br/>Luego nombre al archivo `HelloWorld` y haga clic en **Aceptar**.
 
    ![Creación de un proyecto de aplicación web ASP.NET Core para C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -96,7 +96,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
    ![Seleccionar la plantilla C# para Aplicación web ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -134,7 +134,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
 
    ![El código HTML para el área de información adicional en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Cambie el texto "información adicional" para que rece "**Hello World!** ".
+1. Cambie el texto "información adicional" para que rece "**Hello World!**".
 
    ![Cambio del código HTML predeterminado para el área de información adicional en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -146,7 +146,7 @@ Poco después, Visual Studio abre el archivo de proyecto.
 
    ![El código de C# para el área de descripción de la aplicación en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Cambie el texto del mensaje "descripción de la aplicación" para que rece " **¿Cuál es mi mensaje?** ".
+1. Cambie el texto del mensaje "descripción de la aplicación" para que rece "**¿Cuál es mi mensaje?**".
 
    ![Cambio del texto del mensaje predeterminado para el área de descripción de la aplicación en el editor de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -208,11 +208,11 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener más información, continúe con el tutorial siguiente:
+Para más información, continúe con el siguiente tutorial:
 
 > [!div class="nextstepaction"]
 > [Introducción a C# y ASP.NET Core en Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Publicar una aplicación web en Azure App Service mediante Visual Studio](../deployment/quickstart-deploy-to-azure.md)

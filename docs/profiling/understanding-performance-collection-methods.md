@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778094"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
@@ -26,7 +26,7 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Método|DESCRIPCIÓN|
+|Método|Descripción|
 |------------|-----------------|
 |[Muestreo](#sampling)|Recopila datos estadísticos sobre el trabajo realizado por una aplicación.|
 |[Instrumentación](#instrumentation)|Recopila información de tiempo detallada sobre cada llamada a una función.|

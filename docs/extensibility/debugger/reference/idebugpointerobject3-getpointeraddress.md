@@ -1,25 +1,25 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress | Microsoft Docs
+title: IDebugPointerObject3::GetPointerAddress Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 625230d6e04fe374c46e94a2e916df3eb025172a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a508a5861b3b128a964be4a5c3ca7714858318c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343785"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725477"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 Recupera la dirección del puntero.
@@ -39,10 +39,10 @@ int GetPointerAddress (
 ```
 
 ## <a name="parameters"></a>Parámetros
-`puAddress` [out] Devuelve la dirección del puntero.
+`puAddress`[fuera] Devuelve la dirección del puntero.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

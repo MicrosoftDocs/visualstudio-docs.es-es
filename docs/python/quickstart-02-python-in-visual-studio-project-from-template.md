@@ -11,13 +11,13 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62429774"
 ---
-# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Creación de un proyecto de Python desde una plantilla en Visual Studio
+# <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio
 
 Después de [instalar la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con diversas plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
 
@@ -77,7 +77,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio](installing
 
 **Pregunta: ¿Qué otras plantillas de Python ofrece Visual Studio?**
 
-**Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los [marcos web Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo** > **Nuevo** > **Proyecto** seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
+**Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los marcos web [Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo** > **Nuevo** > **Proyecto** seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
 
 Visual Studio también proporciona una variedad de *plantillas de elemento* o archivo para crear rápidamente una clase de Python, un paquete de Python, una prueba unitaria de Python, archivos *web.config*, etc. Si tiene abierto un proyecto de Python, puede acceder a las plantillas de elemento a través del comando de menú **Proyecto** > **Agregar nuevo elemento**. Consulte la referencia sobre [plantillas de elemento](python-item-templates.md).
 
@@ -85,14 +85,14 @@ Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o 
 
 **Pregunta: ¿Puedo usar también las plantillas de Cookiecutter?**
 
-**Respuesta**: Sí. De hecho, Visual Studio proporciona integración directa con Cookiecutter. Puede obtener información sobre esta utilidad en [Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Respuesta**: Por supuesto. De hecho, Visual Studio proporciona integración directa con Cookiecutter. Puede obtener información sobre esta utilidad en [Inicio rápido: crear un proyecto a partir de una plantilla de Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Uso de Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Tutorial: Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)

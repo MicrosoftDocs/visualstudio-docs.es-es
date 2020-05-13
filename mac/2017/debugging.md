@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985012"
 ---
 # <a name="debugging-with-xamarin"></a>Depuración con Xamarin
@@ -41,7 +41,7 @@ Puede ver todos los puntos de interrupción que se establecieron en el código e
 
 ![Lista de puntos de interrupción](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Iniciar depuración
+## <a name="start-debugging"></a>Iniciar la depuración
 
 Para iniciar la depuración, seleccione el dispositivo de destino, el emulador o algo similar en el IDE:
 
@@ -94,6 +94,6 @@ Para habilitar esta característica, vaya a **Visual Studio para Mac > Preferenc
 
 ![Opción No depurar paso a paso por instrucciones el código del marco](media/debugging-image8.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Depuración en Visual Studio (en Windows)](/visualstudio/debugger/)

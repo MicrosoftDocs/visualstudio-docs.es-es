@@ -120,7 +120,7 @@
               items:
                 - name: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: Descarga de ensamblados a petición con la API de implementación ClickOnce
+                - name: Descargar ensamblados a petición con la API de implementación ClickOnce
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: Descarga de ensamblados satélite a petición con la API de implementación ClickOnce mediante el diseñador
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md

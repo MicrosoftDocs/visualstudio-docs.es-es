@@ -11,10 +11,10 @@ metadata:
   manager: lank
   ms.date: 12/04/2019
   ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/06/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74883837"
 highlightedContent:
   items:
@@ -28,7 +28,7 @@ highlightedContent:
     itemType: how-to-guide
     url: ~/using-admin-portal.md
 conceptualContent:
-  title: Primeros pasos
+  title: Introducción
   items:
   - title: Uso de las ventajas
     links:
@@ -76,7 +76,7 @@ tools:
   - title: Visual Studio para Mac
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
     url: /visualstudio/mac/
-  - title: Centro de aplicaciones de Visual Studio
+  - title: Visual Studio App Center
     imageSrc: https://docs.microsoft.com/media/logos/logo_vs-mobile-center.svg
     url: /appcenter/
 additionalContent:
@@ -86,14 +86,14 @@ additionalContent:
     items:
     - title: Herramientas para desarrolladores
       links:
-      - text: Programa para la mejora
+      - text: Visual Studio
         url: ~/vs-ide-benefit.md
         note: (que incluye Visual Studio para Mac)
     - title: Servicios en la nube
       links:
       - text: Desarrollo/pruebas de Azure
         url: ~/vs-azure-payg.md
-      - text: Centro de aplicaciones de Visual Studio
+      - text: Visual Studio App Center
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server y CAL
         url: ~/vs-vsts.md

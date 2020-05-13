@@ -1,28 +1,28 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+title: IDebugTypeFieldBuilder2::CreateArrayOfType ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa151c93589ee691abd005df9e4ff6b68698b661
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d7a229ea92b57252a9f01976e7b5c80348bd314
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319775"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718316"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
-Crea una matriz del tipo especificado y el tamaño.
+Crea una matriz del tipo y tamaño especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,16 +44,16 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>Parámetros
 `pTypeField`\
-[in] Tipo de elementos que se va a contener la matriz.
+[en] Tipo de elementos que la matriz contendrá.
 
 `rank`\
-[in] Número de elementos de la matriz.
+[en] Número de elementos de la matriz.
 
 `pArrayOfTypeField`\
-[out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representan la nueva matriz.
+[fuera] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representan la nueva matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

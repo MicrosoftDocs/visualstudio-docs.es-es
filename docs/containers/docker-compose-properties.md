@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 85cb8745a14439cfb09036a1bc96e6bd0fa15ae4
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826463"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988515"
 ---
 # <a name="docker-compose-build-properties"></a>Propiedades de compilación de Docker Compose
 
@@ -41,6 +41,7 @@ En la tabla siguiente se muestran las propiedades de MSBuild disponibles para pr
 |DockerComposeDownArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose down`. Por ejemplo, `--timeout 500`.|-|  
 |DockerComposeProjectPath|csproj o vbproj|La ruta de acceso relativa al archivo del proyecto docker-compose (dcproj). Establezca esta propiedad al publicar el proyecto de servicio para buscar la configuración de compilación de la imagen asociada que se almacena en el archivo docker-compose.yml.|-|
 |DockerComposeUpArguments|dcproj|Especifica los parámetros adicionales que se van a pasar al comando `docker-compose up`. Por ejemplo, `--timeout 500`.|-|
+|DockerDevelopmentMode|dcproj| Controla si la optimización de "compilación en host" (depuración en "modo rápido") está habilitada.  Los valores permitidos son **Rápido** y **Normal**. | Rápido |
 |DockerLaunchAction| dcproj | Especifica la acción de inicio que se va a realizar en F5 o Ctrl+F5.  Los valores permitidos son None, LaunchBrowser y LaunchWCFTestClient|None|
 |DockerLaunchBrowser| dcproj | Indica si se va a iniciar el explorador. Se omite si se especifica DockerLaunchAction. | False |
 |DockerServiceName| dcproj|Si se especifican DockerLaunchAction o DockerLaunchBrowser, DockerServiceName es el nombre del servicio que se debe iniciar.  Use esta propiedad para determinar cuál de los varios proyectos a los que potencialmente puede hacer referencia un archivo docker-compose se iniciará.|-|

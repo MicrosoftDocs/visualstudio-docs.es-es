@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: be8f508a0055d4cd7cbacf1c728e6d73c8b281f7
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984721"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
@@ -138,7 +138,7 @@ Para obtener más información sobre la configuración de EditorConfig disponibl
 
 ## <a name="override-editorconfig-settings"></a>Invalidar la configuración de EditorConfig
 
-Es posible que haya más de un archivo `.editorconfig` en cada solución. Visual Studio para Mac lee los archivos `.editorconfig` de arriba a abajo en la solución, y agrega y reemplaza valores de configuración sobre la marcha. Esto significa que la configuración en `.editorconfig` _más cercana_ al archivo que está editando tendrá prioridad. Se toma la configuración del archivo `.editorconfig` de la misma carpeta (si existe), y luego `.editorconfig` en la carpeta primaria (si existe), etcétera, hasta que encuentra `root=true`.
+Es posible que haya más de un archivo `.editorconfig` en cada solución. Visual Studio para Mac lee los archivos `.editorconfig` de arriba a abajo en la solución, y agrega y reemplaza valores de configuración sobre la marcha. Esto significa que la configuración en `.editorconfig` _más cercana_ al archivo que está editando tendrá prioridad. Se toma la configuración del archivo `.editorconfig` de la misma carpeta (si existe), y luego `.editorconfig` en la carpeta primaria (si existe), etcétera, hasta que encuentra `root=true`.
 
 Si quiere asegurarse de que _no_ hay ninguna configuración de ningún archivo `.editorconfig` de nivel superior aplicada a esta parte del código base, agregue la propiedad `root=true` al inicio del archivo `.editorconfig` de nivel inferior:
 

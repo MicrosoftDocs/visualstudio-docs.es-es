@@ -1,26 +1,29 @@
 ---
 title: Finalización de expresiones regulares con el menú de IntelliSense
-ms.date: 06/10/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75110432f9bba35ce02588032b9a41dece01056b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033426"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093869"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>Finalización de expresiones regulares con el menú de IntelliSense
 
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 **Qué:** Finalización de expresiones regulares con el menú de IntelliSense.
 

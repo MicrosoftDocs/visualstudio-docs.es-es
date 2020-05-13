@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: LAUNCH_FLAGS de la casa de la casa de Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339365"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714719"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
-Especifica las marcas de inicio de depuración.
+# <a name="launch_flags"></a>LAUNCH_FLAGS
+Especifica los indicadores de inicio de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `LAUNCH_DEBUG`\
-Inicia el proceso de depuración.
+Inicia el proceso para la depuración.
 
 `LAUNCH_NODEBUG`\
 Inicia el proceso sin depurarlo.
 
 `LAUNCH_ENABLE_ENC`\
-EN DESUSO, NO USE.
+DESUSO, NO UTILIZAR.
 
 `LAUNCH_MERGE_ENV`\
-Inicia el proceso y combina el entorno con el host al iniciar.
+Inicia el proceso y combina el entorno con el host de inicio.
 
-## <a name="remarks"></a>Comentarios
-Estos valores se pasan como argumento a la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método.
+## <a name="remarks"></a>Observaciones
+Estos valores se pasan como argumento al método [LaunchSuspended.](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 
-Estas marcas se pueden combinar con un bit a bit `OR`.
+Estas banderas se pueden `OR`combinar con un bit a bit .
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

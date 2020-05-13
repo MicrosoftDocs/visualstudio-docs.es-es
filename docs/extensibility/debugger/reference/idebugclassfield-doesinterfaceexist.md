@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Documentos de Microsoft
+title: IDebugClassField::DoesInterfaceExist ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57bf8d0af54773b03fd23994b83fe6d2fac1306c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337231"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734499"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Determina si se define una interfaz específica en la clase.
@@ -41,13 +41,13 @@ int DoesInterfaceExist(
 
 ## <a name="parameters"></a>Parámetros
 `pszInterfaceName`\
-[in] Una cadena que contiene el nombre de la interfaz que se busca.
+[en] Cadena que contiene el nombre de la interfaz que se va a buscar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK, devuelve S_FALSE si no existe la interfaz; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK, devuelve S_FALSE si la interfaz no existe; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- En efecto, este método obtiene una enumeración de todas las interfaces y busca en la lista para una interfaz de búsqueda de coincidencias.
+## <a name="remarks"></a>Observaciones
+ Este método en efecto obtiene una enumeración de todas las interfaces y busca en la lista una interfaz coincidente.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

@@ -8,18 +8,18 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715909"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224503"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar en una carpeta con Visual Studio para Mac
 
 Puede usar la herramienta Publicar para publicar aplicaciones de consola de .NET Core o ASP.NET Core en una carpeta.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado con .NET Core habilitado.
 - Un proyecto de consola de .NET Core o ASP.NET Core. Si aún no tiene un proyecto, puede [crear uno nuevo](/visualstudio/mac/create-new-projects?view=vsmac-2019).
@@ -52,7 +52,7 @@ Con Visual Studio para Mac, puede publicar proyectos de .NET Core en una carpeta
 
 ## <a name="customize-publish-options"></a>Personalización de las opciones de publicación
 
-Para cambiar el nombre del perfil de publicación (que se muestra en el menú contextual de publicación), cambie el archivo del perfil de publicación. Asegúrese de no cambiar la extensión del archivo (`.puxbml`).
+Para cambiar el nombre del perfil de publicación (que se muestra en el menú contextual de publicación), cambie el archivo del perfil de publicación. Asegúrese de no cambiar la extensión del archivo (`.pubxml`).
 
 Para cambiar la ruta de acceso de la carpeta de publicación, abra el perfil de publicación y edite el valor `publishUrl`.
 

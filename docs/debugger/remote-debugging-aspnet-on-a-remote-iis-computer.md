@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f3741f9b510450dabfea5c1df4eec4b2e0868b26
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: 3e11480949545781630dec0c533949dd200ecbc7
+ms.sourcegitcommit: 7a9d5c10690c594dcdb414d88b20e070d43e7a4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181151"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82218891"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Depuración remota ASP.NET Core en un equipo remoto de IIS en Visual Studio
 
@@ -25,7 +25,7 @@ Para depurar una aplicación ASP.NET Core que se ha implementado en IIS, instale
 
 En esta guía se explica cómo instalar y configurar un ASP.NET Core de Visual Studio, cómo implementarlo en IIS y cómo adjuntar el depurador remoto desde Visual Studio. Para depurar de forma remota ASP.NET 4.5.2, consulte [depuración remota de ASP.net en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). También puede implementar y depurar en IIS con Azure. Por Azure App Service, puede implementar y depurar fácilmente en una instancia preconfigurada de IIS y el depurador remoto mediante el [Snapshot Debugger](../debugger/debug-live-azure-applications.md) o [adjuntando el depurador de explorador de servidores](../debugger/remote-debugging-azure.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerrequisitos
 
 ::: moniker range=">=vs-2019"
 Visual Studio 2019 es necesario para seguir los pasos que se muestran en este artículo.
@@ -58,12 +58,12 @@ En este artículo se incluyen los pasos para configurar una configuración bási
     En Visual Studio 2019, escriba **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **ASP.net**, elija **plantillas**y, a continuación, elija **crear nuevo ASP.net Core aplicación web**. En el cuadro de diálogo que aparece, asigne al proyecto el nombre **MyASPApp**y, a continuación, elija **crear**. A continuación, elija **aplicación web (controlador de vista de modelo)** y, a continuación, elija **crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En Visual Studio 2017, elija **archivo > nuevo > proyecto**y, a continuación, seleccione **Visual C# > Web > ASP.net Core aplicación web**. En la sección plantillas de ASP.NET Core, seleccione **aplicación web (Model-View-Controller)** . Asegúrese de que se ha seleccionado ASP.NET Core 2,1, que no está seleccionada la opción **Habilitar compatibilidad con Docker** y que la **autenticación** está establecida en **sin autenticación**. Asigne al proyecto el nombre **MyASPApp**.
+    En Visual Studio 2017, elija **archivo > nuevo > proyecto**y, a continuación, seleccione **Visual C# > Web > ASP.net Core aplicación web**. En la sección plantillas de ASP.NET Core, seleccione **aplicación web (Model-View-Controller)**. Asegúrese de que se ha seleccionado ASP.NET Core 2,1, que no está seleccionada la opción **Habilitar compatibilidad con Docker** y que la **autenticación** está establecida en **sin autenticación**. Asigne al proyecto el nombre **MyASPApp**.
     ::: moniker-end
 
-4. Abra el archivo About.cshtml.cs y establezca un punto de interrupción en el método `OnGet` (en las plantillas anteriores, abra HomeController.cs en su lugar y establezca el punto de interrupción en el método `About()`).
+4. Abra el archivo About.cshtml.cs y establezca un punto de interrupción `OnGet` en el método (en las plantillas anteriores, abra HomeController.CS en su lugar y establezca `About()` el punto de interrupción en el método).
 
-## <a name="bkmk_configureIIS"></a>Instalar y configurar IIS en Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalar y configurar IIS en Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -73,14 +73,14 @@ Si la opción Configuración de seguridad mejorada está habilitada en Internet 
 
 - microsoft.com
 - go.microsoft.com
-- download.Microsoft.com
+- download.microsoft.com
 - iis.net
 
 Al descargar el software, puede recibir solicitudes para conceder permiso para cargar varios scripts y recursos de sitios Web. Algunos de estos recursos no son necesarios, pero para simplificar el proceso, haga clic en **Agregar** cuando se le solicite.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalación de ASP.NET Core en Windows Server
 
-1. Instale el lote de [hospedaje .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) en el sistema host. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener instrucciones más detalladas, vea [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Instale el [lote de hospedaje .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) en el sistema host. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener instrucciones más detalladas, vea [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Si el sistema no tiene conexión a Internet, obtenga e instale *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* antes de instalar el lote de hospedaje .NET Core Windows Server.
@@ -127,11 +127,11 @@ Después de que se implemente la aplicación correctamente, debería iniciarse a
 
 Puede usar esta opción para implementar la aplicación si quiere copiar la aplicación en IIS con PowerShell, RoboCopy o desea copiar manualmente los archivos.
 
-### <a name="BKMK_deploy_asp_net"></a>Configurar el sitio web de ASP.NET Core en el equipo con Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurar el sitio web de ASP.NET Core en el equipo con Windows Server
 
 1. Abra el explorador de Windows y cree una nueva carpeta, **C:\Publish**, donde implementará más adelante el proyecto ASP.net Core.
 
-2. Si aún no está abierto, abra el **Administrador de Internet Information Services (IIS)** . (En el panel izquierdo de Administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)** .)
+2. Si aún no está abierto, abra el **Administrador de Internet Information Services (IIS)**. (En el panel izquierdo de Administrador del servidor, seleccione **IIS**. Haga clic con el botón secundario en el servidor y seleccione **Administrador de Internet Information Services (IIS)**).
 
 3. En **conexiones** en el panel izquierdo, vaya a **sitios**.
 
@@ -153,13 +153,13 @@ También puede publicar e implementar la aplicación con el sistema de archivos 
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Descargar e instalar las herramientas remotas en Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Descargar e instalar las herramientas remotas en Windows Server
 
 Descargue la versión de las herramientas remotas que coincida con su versión de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="BKMK_setup"></a> Establecimiento del depurador remoto en Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Establecimiento del depurador remoto en Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -168,7 +168,7 @@ Descargue la versión de las herramientas remotas que coincida con su versión d
 
 Para obtener información sobre cómo ejecutar el depurador remoto como servicio, vea [ejecutar el depurador remoto como servicio](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="BKMK_attach"></a> Adjuntar elementos a la aplicación ASP.NET desde el equipo de Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Asociación a la aplicación ASP.NET desde el equipo de Visual Studio
 
 1. En el equipo de Visual Studio, abra la solución que está intentando depurar (**MyASPApp** si está siguiendo todos los pasos de este artículo).
 2. En Visual Studio, haga clic en **Depurar > asociar al proceso** (Ctrl + Alt + P).
@@ -176,15 +176,15 @@ Para obtener información sobre cómo ejecutar el depurador remoto como servicio
     > [!TIP]
     > En Visual Studio 2017 y versiones posteriores, puede volver a asociar al mismo proceso que adjuntó anteriormente a mediante **Debug > volver a adjuntar al proceso...** (Mayús + Alt + P).
 
-3. Establezca el campo calificador en **\<nombre de equipo remoto >** y presione **entrar**.
+3. Establezca el campo calificador en ** \<nombre de equipo remoto>** y presione **entrar**.
 
-    Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato: **\<nombre de equipo remoto >:p ordenar**
+    Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato: ** \<nombre de equipo remoto>:p ordenar**
 
     ::: moniker range=">=vs-2019"
-    En Visual Studio 2019, debería ver **\<nombre de equipo remoto >: 4024**
+    En Visual Studio 2019, debería ver ** \<el nombre del equipo remoto>:4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En Visual Studio 2017, debería ver **\<nombre de equipo remoto >: 4022**
+    En Visual Studio 2017, debería ver ** \<el nombre del equipo remoto>:4022**
     ::: moniker-end
     El puerto es obligatorio. Si no ve el número de puerto, agréguelo manualmente.
 
@@ -199,11 +199,11 @@ Para obtener información sobre cómo ejecutar el depurador remoto como servicio
 
 6. Escriba la primera letra del nombre del proceso para encontrar rápidamente la aplicación.
 
-    * Seleccione **dotnet. exe**.
+    * Si usa el [modelo de hospedaje en proceso](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) en IIS, seleccione el proceso **w3wp. exe** correcto. A partir de .NET Core 3, este es el valor predeterminado.
 
-      Si tiene varios procesos que muestran **dotnet. exe**, Compruebe la columna **nombre de usuario** . En algunos escenarios, la columna **nombre de usuario** muestra el nombre del grupo de aplicaciones, como **IIS APPPOOL\DefaultAppPool**. Si ve el grupo de aplicaciones, una manera fácil de identificar el proceso correcto es crear un nuevo grupo de aplicaciones con nombre para la instancia de la aplicación que desea depurar y, a continuación, puede encontrarlo fácilmente en la columna **nombre de usuario** .
+    * En caso contrario, seleccione el proceso **dotnet. exe** . (Este es el modelo de hospedaje fuera de proceso).
 
-    * En algunos escenarios de IIS, puede encontrar el nombre de la aplicación en la lista de procesos, como **MyASPApp. exe**. En su lugar, puede adjuntar a este proceso.
+    Si tiene varios procesos que muestran *w3wp. exe* o *dotnet. exe*, Compruebe la columna **nombre de usuario** . En algunos escenarios, la columna **nombre de usuario** muestra el nombre del grupo de aplicaciones, como **IIS APPPOOL\DefaultAppPool**. Si ve el grupo de aplicaciones, pero no es único, cree un nuevo grupo de aplicaciones con nombre para la instancia de la aplicación que quiera depurar y, a continuación, podrá encontrarlo fácilmente en la columna **nombre de usuario** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -212,9 +212,9 @@ Para obtener información sobre cómo ejecutar el depurador remoto como servicio
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. Haga clic en **Adjuntar**.
+7. Haga clic en **Asociar**.
 
-8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>** .
+8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>**.
 
     Debería ver la página web de ASP.NET.
 
@@ -222,7 +222,7 @@ Para obtener información sobre cómo ejecutar el depurador remoto como servicio
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-## <a name="bkmk_openports"></a> Solución de problemas Abra los puertos necesarios en Windows Server
+## <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> Solución de problemas Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, los puertos necesarios se abren mediante la instalación de ASP.NET y el depurador remoto. Sin embargo, puede que tenga que comprobar que los puertos están abiertos.
 

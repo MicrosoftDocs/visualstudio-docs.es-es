@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Documentos de Microsoft
+title: IDebugEngine3::SetAllExceptions ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77c34ec86eb9c06b844803765319730313cffd9e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352487"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730793"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Este método establece el estado de todas las excepciones pendientes.
@@ -41,10 +41,10 @@ int SetAllExceptions(
 
 ## <a name="parameters"></a>Parámetros
 `dwState`\
-[in] Uno de los [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valores.
+[en] Uno de los [valores EXCEPTION_STATE.](../../../extensibility/debugger/reference/exception-state.md)
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario, devuelve el código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

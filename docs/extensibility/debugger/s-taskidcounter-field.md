@@ -1,30 +1,30 @@
 ---
-title: s_taskIdCounter (campo) | Microsoft Docs
+title: Campo de s_taskIdCounter de la página de la coma de Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca3e82b3adef44fd3d9473ba5eff0164bb12c8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b4c91d47fc1123a6737873fd27b7c95e0a98487
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318909"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713132"
 ---
-# <a name="staskidcounter-field"></a>s_taskIdCounter (Campo)
-El siguiente identificador disponible para un <xref:System.Threading.Tasks.Task> objeto.
+# <a name="s_taskidcounter-field"></a>s_taskIdCounter (Campo)
+El siguiente identificador <xref:System.Threading.Tasks.Task> disponible para un objeto.
 
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espacio de nombres:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en mscorlib.dll)
 
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+ Dado que no se puede tener acceso a este miembro interno desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ El siguiente identificador disponible para un <xref:System.Threading.Tasks.Task>
 .field static assembly int32 s_taskIdCounter
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="see-also"></a>Vea también
 - [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

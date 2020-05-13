@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Microsoft Docs
+title: IDebugAlias::GetICorDebugValue ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746840"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736481"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera una interfaz de código administrado que representa el valor asociado a este alias.
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Parámetros
 `ppUnk`\
-[out] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede consultar el `ICorDebugValue` interfaz.
+[fuera] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede `ICorDebugValue` consultar para la interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método solo se aplica a valores administrados (el `ICorDebugValue` es una interfaz disponibles en .NET Framework y se define en el SDK de .NET Framework en el archivo cordebug.idl).
+## <a name="remarks"></a>Observaciones
+ Este método solo se aplica `ICorDebugValue` a los valores administrados (es una interfaz disponible en .NET Framework y se define en el SDK de .NET Framework en el archivo cordebug.idl).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

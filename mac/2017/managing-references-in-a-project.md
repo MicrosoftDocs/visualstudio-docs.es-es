@@ -6,19 +6,19 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984861"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
 Visual Studio para Mac ofrece dos maneras de agregar referencias adicionales a un proyecto:
 
-![Referencias del proyecto](media/projects-and-solutions-image10.png)
+![Referencias de proyectos](media/projects-and-solutions-image10.png)
 
-Estos son:
+Dichos componentes son:
 
 * Referencias
 * Paquetes NuGet (agregados a través de la carpeta Paquetes)
@@ -43,7 +43,7 @@ Para ello, haga clic con el botón derecho en la carpeta **Paquete** en el Panel
 
 En el tutorial [Including a NuGet package in your Project](nuget-walkthrough.md) (Incluir un paquete NuGet en el proyecto) se proporciona más información sobre el uso de un paquete NuGet.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Administrar referencias en un proyecto (Visual Studio en Windows)](/visualstudio/ide/managing-references-in-a-project)
 - [Incorporación de referencias usando NuGet en lugar de un SDK de extensión (Visual Studio en Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

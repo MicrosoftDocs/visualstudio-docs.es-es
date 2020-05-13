@@ -1,6 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 03/07/2017
+ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
+ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851444"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223713"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 
@@ -130,12 +130,13 @@ A partir de la prueba con error, puede depurar fácilmente el código del produc
 
 Por ejemplo, el error de la prueba que se muestra en la imagen anterior fue causado por una asunción incorrecta en el método de prueba de que caracteres no alfabéticos devolverían `true` cuando se pasaran al método <xref:System.Char.IsLower%2A?displayProperty=fullName>. Después de corregir el método de prueba, se deberían superar todas las pruebas. No tiene que pausar ni detener Live Unit Testing.
 
+::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>Explorador de pruebas
 
 El **Explorador de pruebas** proporciona una interfaz que permite ejecuta y depurar pruebas y analizar sus resultados. Live Unit Testing se integra con el **Explorador de pruebas**. Cuando la característica Live Unit Testing no está habilitada o está detenida, el **Explorador de pruebas** muestra el estado de las pruebas unitarias la última vez que se ejecutó una prueba. Los cambios de código fuente requieren que se vuelvan a ejecutar las pruebas. En cambio, cuando Live Unit Testing se ha habilitado, el estado de las pruebas unitarias en el **Explorador de pruebas** se actualiza inmediatamente. No es necesario que ejecute de forma explícita las pruebas unitarias.
 
 > [!TIP]
-> Abra el **Explorador de pruebas** seleccionando **Prueba** > **Windows** > **Explorador de pruebas** en el menú de Visual Studio de nivel superior.
+> Para abrir **Live Unit Testing**, seleccione **Prueba** > **Windows** > **Explorador de pruebas** en el menú de Visual Studio de nivel superior.
 
 Puede observar en la ventana del **Explorador de pruebas** que algunas de las pruebas aparecen atenuadas. Por ejemplo, cuando se habilita Live Unit Testing después de abrir un proyecto guardado anteriormente, la ventana del **Explorador de pruebas** atenuó todas las pruebas, excepto la prueba con error, tal como se muestra en la imagen siguiente. En este caso, Live Unit Testing ha vuelto a ejecutar la prueba con errores, pero no ha vuelto a ejecutar las pruebas correctas. Esto se debe a que los datos persistentes de Live Unit Testing indican que no hubo cambios, ya que las pruebas se ejecutaron correctamente la última vez.
 
@@ -148,6 +149,28 @@ Hay algunas diferencias entre la ejecución y actualización automáticas de res
 - La ejecución o depuración de pruebas desde la ventana Explorador de pruebas ejecuta binarios normales, mientras que Live Unit Testing ejecuta binarios instrumentados.
 - Live Unit Testing no crea un nuevo dominio de aplicación para ejecutar las pruebas, sino que ejecuta pruebas del dominio predeterminado. Las pruebas que se ejecutan desde la ventana **Explorador de pruebas** crean un nuevo dominio de aplicación.
 - Live Unit Testing ejecuta pruebas secuencialmente en cada ensamblado de prueba. En la ventana **Explorador de pruebas**, puede optar por ejecutar varias pruebas en paralelo.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="live-unit-testing-window"></a>Ventana de Live Unit Testing
+
+**Live Unit Testing**, similar al **Explorador de pruebas**, proporciona una interfaz que permite ejecutar y depurar pruebas, y analizar sus resultados. Cuando se habilita Live Unit Testing, el estado de las pruebas unitarias en el **Explorador de pruebas** se actualiza inmediatamente. No es necesario que ejecute de forma explícita las pruebas unitarias. Cuando Live Unit Testing no está habilitado o está detenido, en **Live Unit Testing** se muestra el estado de las pruebas unitarias la última vez que se ha ejecutado una prueba. Después de reiniciar Live Unit Testing, se necesita un cambio del código fuente para volver a ejecutar las pruebas.
+
+> [!TIP]
+> Para iniciar Live Unit Testing, seleccione **Prueba** > **Live Unit Testing** > **Iniciar** en el menú de Visual Studio de nivel superior. También puede abrir la ventana de **Live Unit Testing** mediante **Vista** > **Otras ventanas** > **Ventana de Live Unit Testing**.
+
+Es posible que en la ventana de **Live Unit Testing** vea que algunas de las pruebas aparecen atenuadas. Por ejemplo, al detener y reiniciar Live Unit Testing, en la ventana de **Live Unit Testing** se atenúan todas las pruebas, como se muestra en la imagen siguiente. Los resultados de las pruebas atenuadas indican que la prueba no formaba parte de la última ejecución de pruebas unitarias dinámicas. Las pruebas solo se ejecutan cuando se detecta un cambio en la prueba o en sus dependencias. Si no hay ningún cambio, evita que la prueba se ejecute de manera innecesaria. En este caso, el resultado de la prueba atenuada sigue siendo "actualizado", aunque no formaba parte de la última ejecución.
+
+![Pruebas atenuadas en el Explorador de pruebas](media/vs-2019/lut-test-explorer.png)
+
+Puede volver a ejecutar las pruebas que aparecen atenuadas si realiza un cambio en el código.
+
+Hay algunas diferencias entre la ejecución y actualización automáticas de resultados de pruebas en Live Unit Testing y la ejecución explícita de pruebas desde el **Explorador de pruebas**. Estas diferencias incluyen:
+
+- La ejecución o depuración de pruebas desde la ventana Explorador de pruebas ejecuta binarios normales, mientras que Live Unit Testing ejecuta binarios instrumentados.
+- Live Unit Testing no crea un nuevo dominio de aplicación para ejecutar las pruebas, sino que ejecuta pruebas del dominio predeterminado. Las pruebas que se ejecutan desde la ventana **Explorador de pruebas** crean un nuevo dominio de aplicación.
+- Live Unit Testing ejecuta pruebas secuencialmente en cada ensamblado de prueba. En la ventana **Explorador de pruebas**, puede optar por ejecutar varias pruebas en paralelo.
+::: moniker-end
 
 ## <a name="large-solutions"></a>Soluciones grandes
 

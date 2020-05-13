@@ -7,13 +7,13 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67691296"
 ---
-# <a name="refactoring"></a>Refactorización
+# <a name="refactoring"></a>Refactoring
 
 Mediante la refactorización del código, es posible reorganizar, reestructurar y aclarar el código existente garantizando que no cambie el comportamiento general del código.
 
@@ -93,7 +93,7 @@ Si hace clic en el círculo situado en la parte superior, puede iterar cada suge
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
 - [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

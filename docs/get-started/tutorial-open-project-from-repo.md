@@ -15,10 +15,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180438"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
@@ -43,7 +43,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, elija **Archivo** > **Abrir** > **Abrir desde el control de código fuente**.
+1. En la barra de menús superior, elija **Archivo** >**Abrir** > **Abrir desde el control de código fuente**.
 
    Se abre el panel **Team Explorer: conectar**.
 
@@ -101,7 +101,7 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, elija **Archivo** > **Abrir** > **Abrir desde el control de código fuente**.
+1. En la barra de menús superior, elija **Archivo** >**Abrir** > **Abrir desde el control de código fuente**.
 
    Se abre el panel **Team Explorer: conectar**.
 

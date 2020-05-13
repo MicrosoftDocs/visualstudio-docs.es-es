@@ -3,15 +3,16 @@ title: Asignación de licencias a suscripciones de Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: 3d444f930d1fab166d437911b5609caf75cad09e
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
+ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263321"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82564165"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
@@ -24,6 +25,11 @@ En el caso de grupos de usuarios, dispone de opciones para asignar suscripciones
 
 ## <a name="add-a-single-subscriber"></a>Adición de un solo suscriptor
 Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usuario para que pueda acceder a los beneficios de la suscripción.
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vpPh]
+
 
 1. Inicie sesión en el [Portal de administración](https://manage.visualstudio.com).
 2. Para asignar una licencia a un solo suscriptor de Visual Studio, seleccione **Agregar** en la parte superior de la tabla y, a continuación, seleccione **Suscriptor individual**.

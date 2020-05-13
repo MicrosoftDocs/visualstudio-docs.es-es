@@ -1,27 +1,27 @@
 ---
-title: FIELD_KIND_EX | Microsoft Docs
+title: FIELD_KIND_EX Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309012"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736881"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
-Enumera los tipos de campos adicionales que un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) puede contener el objeto. Esta enumeración se extiende el [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeración.
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
+Enumera tipos adicionales de campos que puede contener un objeto [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Esta enumeración extiende la [enumeración FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,20 +44,20 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `FIELD_KIND_EX_NONE`\
-Campo no contiene un tipo extendido.
+El campo no contiene un tipo extendido.
 
 `FIELD_TYPE_EX_METHODVAR`\
-Campo contiene una variable de método.
+Field contiene una variable de método.
 
 `FIELD_TYPE_EX_CLASSVAR`\
-Campo contiene una variable de clase.
+Field contiene una variable de clase.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: Sh.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

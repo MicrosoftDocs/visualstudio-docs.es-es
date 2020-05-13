@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
+ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235111"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81744982"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -103,19 +103,24 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 ## <a name="build-the-project"></a>Compilar el proyecto
 
-1. (Solo proyecto de TypeScript) En Visual Studio, elija **Compilar** > **Limpiar solución**.
+::: moniker range=">=vs-2019"
+1. Luego, elija **Compilar** > **Compilar solución** para compilar el proyecto.
 
-    ::: moniker range=">=vs-2019"
-    En la plantilla de TypeScript incluida con Visual Studio 2019, omita este paso.
-    ::: moniker-end
+1. Consulte la ventana **Resultados** para ver los resultados de la compilación y elija **Compilar** en la lista **Mostrar salida de**.
+::: moniker-end
+::: moniker range="vs-2017"
+1. Solo para el proyecto de TypeScript, en Visual Studio, elija **Compilar** > **Limpiar solución**.
 
-1. Luego elija **Compilar** > **Compilar solución** para compilar el proyecto. Consulte la ventana **Resultados** para ver los resultados de la compilación y elija **Compilar** en la lista **Mostrar salida de**.
+1. Luego, elija **Compilar** > **Compilar solución** para compilar el proyecto.
 
-    En la plantilla de proyecto Vue.js de JavaScript (y las versiones anteriores de la plantilla de TypeScript) se usa el script `build` de npm mediante la configuración de un evento posterior a la compilación. Si quiere modificar este valor, abra el archivo de proyecto ( *\<projectname\>.njsproj*) desde el Explorador de Windows y busque esta línea de código:
+1. Consulte la ventana **Resultados** para ver los resultados de la compilación y elija **Compilar** en la lista **Mostrar salida de**.
+::: moniker-end
 
-    ```xml
-    <PostBuildEvent>npm run build</PostBuildEvent>
-    ```
+En la plantilla de proyecto Vue.js de JavaScript (y las versiones anteriores de la plantilla de TypeScript) se usa el script `build` de npm mediante la configuración de un evento posterior a la compilación. Si quiere modificar este valor, abra el archivo de proyecto ( *\<projectname\>.njsproj*) desde el Explorador de Windows y busque esta línea de código:
+
+```xml
+<PostBuildEvent>npm run build</PostBuildEvent>
+```
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
@@ -135,6 +140,6 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
+- Consultar el artículo sobre [Vue.js](create-application-with-vuejs.md)
 - Repasar el [Tutorial para Node.js y Express](tutorial-nodejs.md)
-- Repasar el [Tutorial para Node.js y React](tutorial-nodejs-with-react-and-jsx.md)
 - [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)

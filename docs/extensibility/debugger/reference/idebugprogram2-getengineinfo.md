@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo | Microsoft Docs
+title: IDebugProgram2::GetEngineInfo ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetEngineInfo
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6953200647278cf603491913e550722403823d45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722831"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Obtiene el nombre y GUID del motor de depuración (DE) al ejecutar este programa.
+Obtiene el nombre y el GUID del motor de depuración (DE) que ejecuta este programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,15 +43,15 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>Parámetros
 `pbstrEngine`\
-[out] Devuelve el nombre de la DE ejecutar este programa.
+[fuera] Devuelve el nombre de la DE que ejecuta este programa.
 
 `pguidEngine`\
-[out] Devuelve el GUID de la DE ejecutar este programa.
+[fuera] Devuelve el GUID de la DE que ejecuta este programa.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  Cada DE define su propio GUID para la identificación.
 
 ## <a name="see-also"></a>Vea también

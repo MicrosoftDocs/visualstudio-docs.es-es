@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633491"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865367"
 ---
 # <a name="message-task"></a>Message (tarea)
 
@@ -44,7 +44,7 @@ Registra un mensaje durante una compilación.
 
  Si el parámetro `Condition` se evalúa como `true`, se registrará el valor del parámetro `Text` y la compilación seguirá ejecutándose. Si no existe un parámetro `Condition`, se registra el texto del mensaje. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- De forma predeterminada, el mensaje se envía al registrador de la consola de MSBuild. Esto se puede cambiar si se modifica el parámetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. El registrador interpreta el parámetro `Importance`. Habitualmente, un mensaje establecido en `high` se envía cuando el detalle del registrador está establecido en <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` o superior. Cuando el detalle del registrador está establecido en <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`, se envía un mensaje establecido en `low`.
+ De forma predeterminada, el mensaje se envía a todos los registradores registrados. El registrador interpreta el parámetro `Importance`. Habitualmente, un mensaje establecido en `high` se envía cuando el nivel de detalle del registrador está establecido en <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` o superior. Cuando el nivel de detalle del registrador está establecido en <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed`, se envía un mensaje establecido en `low`.
 
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

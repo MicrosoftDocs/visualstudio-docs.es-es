@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62823534"
 ---
 # <a name="utilization-view"></a>Vista Utilización
 La **vista Utilización** muestra información sobre la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.
 
- ![Vista de utilización de CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
+ ![Vista Uso de CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
  El gráfico muestra el tiempo (en el eje x) y el promedio de núcleos lógicos que se utilizan en el proceso de destino, el proceso inactivo y el proceso del sistema. (El proceso inactivo muestra núcleos inactivos. El proceso del sistema es un proceso de Windows que puede realizar trabajo en nombre de otros procesos). Los procesos restantes que se ejecutan en el sistema utilizan los núcleos restantes.
 

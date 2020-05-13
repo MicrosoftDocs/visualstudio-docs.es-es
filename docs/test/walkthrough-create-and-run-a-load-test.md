@@ -10,12 +10,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590857"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093636"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Creación y ejecución de una prueba de carga que contiene pruebas unitarias
 
@@ -41,23 +41,25 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar el Asistente para prueba de carga nueva
 
+1. Asegúrese de que ha instalado el componente **Herramientas de rendimiento web y pruebas de carga** que se describe en el artículo [Crear un proyecto de prueba de carga](../test/quickstart-create-a-load-test-project.md).
+
 1. Abra la solución Bank que ha creado en [Tutorial: Creación y ejecución de pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-2. En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución Bank, elija **Agregar** y, luego, **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución Bank, elija **Agregar** y, luego, **Nuevo proyecto**.
 
      Aparece el cuadro de diálogo **Agregar nuevo proyecto**.
 
-3. En el cuadro de diálogo **Agregar nuevo proyecto**, expanda **Visual C#** y elija **Prueba**. En la lista de plantillas, elija **Proyecto de prueba de carga y rendimiento web** y, en el campo **Nombre**, escriba `BankLoadTest`. Elija **Aceptar**.
+1. En el cuadro de diálogo **Agregar nuevo proyecto**, expanda **Visual C#** y elija **Prueba**. En la lista de plantillas, elija **Proyecto de prueba de carga y rendimiento web** y, en el campo **Nombre**, escriba `BankLoadTest`. Elija **Aceptar**.
 
      El proyecto de prueba de carga y rendimiento web BankLoadTest se agrega a la solución.
 
-4. Abra el menú contextual del nuevo proyecto de prueba de carga y rendimiento web BankLoadTest, elija **Agregar** y, luego, **Prueba de carga**.
+1. Abra el menú contextual del nuevo proyecto de prueba de carga y rendimiento web BankLoadTest, elija **Agregar** y, luego, **Prueba de carga**.
 
-5. Se inicia el **Asistente para prueba de carga nueva**.
+1. Se inicia el **Asistente para prueba de carga nueva**.
 
-6. La primera página es la **Pantalla de bienvenida** del **Asistente para prueba de carga nueva**.
+1. La primera página es la **Pantalla de bienvenida** del **Asistente para prueba de carga nueva**.
 
-7. Seleccione **Siguiente**.
+1. Seleccione **Siguiente**.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>Para editar la configuración del escenario de prueba de carga
 

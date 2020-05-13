@@ -1,5 +1,5 @@
 ---
-title: Expresiones en el depurador | Microsoft Docs
+title: Expresiones en el depurador ? Microsoft Docs
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,16 +20,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
-ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78925050"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301138"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
 
-En las secciones siguientes se describen las limitaciones de la evaluación de expresiones para los lenguajes compatibles con Visual Studio.
+En las secciones siguientes se describen las limitaciones de la evaluación de expresiones para los lenguajes admitidos por Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>No se admiten las expresiones de F#
 No se reconocen las expresiones de F#. Si va a depurar código F#, es necesario traducir las expresiones a la sintaxis de C# antes de escribirlas en una ventana o un cuadro de diálogo de depurador. Al traducir expresiones de F# a C#, recuerde que C# usa el operador `==` para comprobar la igualdad, mientras que F# usa `=`.
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usar funciones intrínsecas del depurador para mantener el estado
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Uso de funciones intrínsecas del depurador para mantener el estado
 Las funciones intrínsecas del depurador proporcionan una manera de llamar a determinadas funciones de C/C++ en expresiones sin cambiar el estado de la aplicación.
 
 Funciones intrínsecas del depurador:
@@ -100,11 +100,11 @@ Funciones intrínsecas del depurador:
 |Área|Funciones intrínsecas|
 |----------|-------------------------|
 |**Longitud de la cadena**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**Comparación de cadena**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Comparación de cadenas**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi,](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l) [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
 |**Búsqueda de cadena**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
 |**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
 |**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Estas funciones requieren el proceso que se depura para ejecutarse en Windows 8. La depuración de archivos de volcado de memoria generados por un dispositivo con Windows 8 también requiere que el equipo de Visual Studio ejecute Windows 8. Sin embargo, si depura un dispositivo con Windows 8 de forma remota, el equipo de Visual Studio puede ejecutar Windows 7.|
-|**Varios**|__log2//devuelve la base de registro 2 de un entero especificado, redondeado al entero inferior más próximo.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: Array < >:: Operator [index < >] y Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: Array < >:: Operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: Array < >:: Operator [tiled_index < >] and (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view < >:: Operator [index < >] y Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view < >:: Operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view < >:: Operator [tiled_index < >] and (tiled_index < >)<br /><br />TreeTraverse_Init//Inicializa un nuevo recorrido de árbol<br /><br />TreeTraverse_Next//devuelve los nodos de un árbol<br /><br />TreeTraverse_Skip//omite los nodos de un recorrido de árbol pendiente '|
+|**Varios**|__log2 // Devuelve la base de registro 2 de un entero especificado, redondeada al entero inferior más cercano.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] y operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] y operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] y operator(index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Simultaneidad::array_view<>::operator(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] y operator(tiled_index<>)<br /><br />TreeTraverse_Init // Inicializa un nuevo recorrido de árbol<br /><br />TreeTraverse_Next // Devuelve nodos en un árbol<br /><br />TreeTraverse_Skip // Omite nodos en un recorrido de árbol pendiente'|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI: Expresiones no admitidas
 
@@ -121,7 +121,7 @@ Funciones intrínsecas del depurador:
 ## <a name="c---unsupported-expressions"></a>C#: Expresiones no admitidas
 
 ### <a name="dynamic-objects"></a>Objetos dinámicos
-Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan <xref:System.Dynamic.IDynamicMetaObjectProvider> se evalúan en el ventana Inspección, se agrega un nodo vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.
+Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los <xref:System.Dynamic.IDynamicMetaObjectProvider> objetos que implementan se evalúan en la ventana Inspección, se agrega un nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.
 
 No se admiten las características siguientes de los objetos dinámicos:
 
@@ -207,5 +207,5 @@ No se pueden declarar nuevas variables explícitas en las ventanas del depurador
 ## <a name="see-also"></a>Consulte también
 - [Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)
 - [Operador de contexto (C++)](../debugger/context-operator-cpp.md)
-- [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)
+- [Especificadores de formato en C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudovariables](../debugger/pseudovariables.md)

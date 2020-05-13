@@ -3,15 +3,16 @@ title: Exportación de la información de suscripción | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263230"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232505"
 ---
 # <a name="export-subscription-information"></a>Información sobre la exportación de suscripciones
 En el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio, puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV, que se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.

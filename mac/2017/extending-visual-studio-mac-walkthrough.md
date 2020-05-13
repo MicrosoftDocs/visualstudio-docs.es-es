@@ -6,10 +6,10 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985026"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Tutorial: Extender Visual Studio para Mac
@@ -136,6 +136,6 @@ En este ejemplo se usa el complemento Add-in Maker. Add-in Maker crea una nueva 
 
     ![Captura de pantalla de Insertar fecha](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Create your first extension (Visual Studio on Windows)](/visualstudio/extensibility/extensibility-hello-world) (Crear la primera extensión [Visual Studio en Windows])

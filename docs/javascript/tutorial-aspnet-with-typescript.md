@@ -1,7 +1,7 @@
 ---
 title: Crear una aplicación ASP.NET Core con TypeScript
 description: En este tutorial, creará una aplicación con ASP.NET Core y TypeScript
-ms.date: 01/03/2020
+ms.date: 03/16/2020
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
-ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
+ms.openlocfilehash: e212aec6d2d3aa7e20cb0ca08c9ea604f32bb08c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75810588"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988556"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -40,6 +40,7 @@ En este tutorial aprenderá a:
 > * Agregar el paquete NuGet para la compatibilidad con TypeScript
 > * Agregar código de TypeScript
 > * Ejecutar la aplicación
+> * Agregar una biblioteca de terceros mediante npm
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -58,6 +59,9 @@ En este tutorial aprenderá a:
 
 Visual Studio administra los archivos de una aplicación en un *proyecto*. El proyecto incluye código fuente, recursos y archivos de configuración.
 
+>[!NOTE]
+> Para empezar con un proyecto de ASP.NET Core vacío y agregar un front-end de TypeScript, vea [ASP.NET Core con TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) en su lugar.
+
 En este tutorial, empezará con un proyecto simple que contiene el código de una aplicación ASP.NET Core MVC.
 
 1. Abra Visual Studio.
@@ -65,14 +69,16 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **ASP.NET** y, luego, elija **Aplicación web ASP.NET Core: C#** . En el cuadro de diálogo que se abre, elija **Crear**.
+    Si la ventana de inicio no está abierta, elija **Archivo** > **Ventana de inicio**. En la ventana de inicio, elija **Crear un proyecto nuevo**. En la lista desplegable Lenguaje, elija **C#** . En el cuadro de búsqueda, escriba **ASP.NET** y, luego, elija **Aplicación web ASP.NET Core**. Seleccione **Siguiente**.
+
+    Escriba un nombre para el proyecto y elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y luego elija **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core: C#** y después elija **Aceptar**.
     ::: moniker-end
     Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, debe agregar la carga de trabajo **Desarrollo de ASP.NET y web**. Para instrucciones detalladas, consulte los [Requisitos previos](#prerequisites).
 
-1. Una vez que elija **Crear**, seleccione **Aplicación web (controlador de vista de modelos)** en el cuadro de diálogo y, a continuación, elija **Crear**.
+1. En el cuadro de diálogo que aparece, seleccione **Aplicación web (Modelo-Vista-Controlador)** y, después, elija **Crear** (o **Aceptar**).
 
    ![Elección de la plantilla de MVC](../javascript/media/aspnet-core-ts-mvc-template.png)
 
@@ -211,6 +217,76 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
    Es posible que tenga que responder a un mensaje para habilitar la depuración de scripts.
 
    La aplicación se pone en pausa en el punto de interrupción. Ahora, puede inspeccionar variables y usar características del depurador.
+
+## <a name="add-typescript-support-for-a-third-party-library"></a>Incorporación de compatibilidad con TypeScript para una biblioteca de terceros
+
+1. Siga las instrucciones de la [administración de paquetes de npm](../javascript/npm-package-management.md#aspnet-core-projects) para agregar un archivo `package.json` al proyecto. Esto agrega compatibilidad con npm al proyecto.
+
+   >[!NOTE]
+   > En el caso de los proyectos de ASP.NET Core, también se puede usar el [Administrador de bibliotecas](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o yarn, en lugar de npm, para instalar los archivos JavaScript y CSS del lado cliente.
+
+1. En este ejemplo, agregue un archivo de definición de TypeScript para jQuery al proyecto. Incluya lo siguiente en el archivo *package.json*.
+
+   ```json
+   "devDependencies": {
+      "@types/jquery": "3.3.33"
+   }
+   ```
+
+   Esto agrega compatibilidad con TypeScript para jQuery. La propia biblioteca de jQuery ya está incluida en la plantilla de proyecto de MVC (busque en wwwroot/lib en el Explorador de soluciones). Si se usa una plantilla distinta, es posible que también tenga que incluir el paquete de npm jQuery.
+
+1. Si no el paquete está instalado en el Explorador de soluciones, haga clic con el botón derecho en el nodo de npm y elija **Restaurar paquetes**.
+
+   >[!NOTE]
+   > En algunos escenarios, el Explorador de soluciones puede indicar que un paquete de npm no está sincronizado con *package.json* debido a una incidencia conocida descrita [aquí](https://github.com/aspnet/Tooling/issues/479). Por ejemplo, es posible que el paquete aparezca como no instalado cuando sí que lo está. En la mayoría de los casos, se puede actualizar el Explorador de soluciones eliminando *package.json*, reiniciando Visual Studio y agregando de nuevo el archivo *package.json*, tal como se ha descrito anteriormente en este artículo.
+
+1. En el Explorador de soluciones, haga clic con el botón derecho en la carpeta scripts y elija **Agregar** > **Nuevo elemento**.
+
+1. Elija **Archivo TypeScript**, escriba *library.ts* y elija **Agregar**.
+
+1. En *library.ts*, agregue el código siguiente.
+
+   ```ts
+   var jqtest = {
+      showMsg: function (): void {
+         let v: any = jQuery.fn.jquery.toString();
+         let content: any = $("#ts-example-2")[0].innerHTML;
+         alert(content.toString());
+         $("#ts-example-2")[0].innerHTML = content + " " + v + "!!";
+      }
+   };
+
+   jqtest.showMsg();
+   ```
+
+   Para facilitar las cosas, este código muestra un mensaje mediante jQuery y una alerta.
+
+   Con las definiciones de tipo TypeScript para jQuery agregadas, se obtendrá compatibilidad con IntelliSense en objetos de jQuery cuando se escriba un signo "." después de un objeto jQuery, tal como se muestra aquí.
+
+   ![IntelliSense de jQuery](../javascript/media/aspnet-core-ts-jquery-intellisense.png)
+
+1. En _Layout.cshtml, actualice las referencias de script para incluir `library.js`.
+
+   ```html
+   <script src="~/js/app.js"></script>
+   <script src="~/js/library.js"></script>
+   ```
+
+1. En Index.cshtml, agregue el código HTML siguiente al final del archivo.
+
+   ```html
+   <div>
+      <p id="ts-example-2">jQuery version is:</p>
+   </div>
+   ```
+
+1. Presione **F5** (**Depurar** > **Iniciar depuración**) para ejecutar la aplicación.
+
+    La aplicación se abre en el explorador.
+
+    Haga clic en **Aceptar** en la alerta para ver la página actualizada a **Versión de jQuery: 3.3.1!!** .
+
+    ![Ejemplo de jQuery](../javascript/media/aspnet-core-ts-jquery-example.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Documentos de Microsoft
+title: IDebugBoundBreakpoint2::SetCondition ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93109204a02b808c69bed242665bb6e373d6fe7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337445"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735463"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Establece o cambia la condición asociada a este punto de interrupción enlazado.
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parámetros
 `bpCondition`\
-[in] Un valor de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumeración que describe la condición.
+[en] Valor de la [enumeración BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que describe la condición.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si el estado del objeto de `BPS_DELETED` punto de interrupción enlazado se establece en (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).
 
-## <a name="remarks"></a>Comentarios
- Cualquier condición que estaba asociado previamente a este punto de interrupción se pierde.
+## <a name="remarks"></a>Observaciones
+ Se pierde cualquier condición que se haya asociado anteriormente a este punto de interrupción.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

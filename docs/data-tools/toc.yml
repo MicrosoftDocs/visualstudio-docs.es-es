@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Herramientas de Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Conjuntos de datos
+    - name: DataSets
       items:
         - name: Herramientas de conjunto de datos
           href: dataset-tools-in-visual-studio.md
@@ -34,7 +34,7 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: Introducción a las aplicaciones de datos de n niveles
       href: n-tier-data-applications-overview.md
-- name: Guías de procedimientos
+- name: Guías paso a paso
   items:
     - name: Crear una base de datos
       href: create-a-sql-database-by-using-a-designer.md

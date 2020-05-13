@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67825525"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspección de los estados de aplicación anteriores mediante el retroceso de IntelliTrace en Visual Studio (Visual Studio Enterprise)
@@ -38,7 +38,7 @@ En este tutorial va a:
 
     A partir de Visual Studio 2017 Enterprise versión 15.9 versión preliminar 2, esta opción es **Instantáneas de IntelliTrace (administradas y nativas)** .
 
-    ![Habilitar el modo de instantáneas y eventos de IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar el modo de instantáneas y eventos de IntelliTrace")
+    ![Activar eventos de IntelliTrace y el modo instantáneas](../debugger/media/intellitrace-enable-snapshots.png "Activar eventos de IntelliTrace y el modo instantáneas")
 
 1. Si desea configurar las opciones para ver instantáneas en excepciones, elija **IntelliTrace** > **Avanzadas** en el cuadro de diálogo **Opciones**.
 
@@ -57,7 +57,7 @@ En este tutorial va a:
 
     Aparece un icono de cámara junto a los eventos para los que hay instantáneas.
 
-    ![Pestaña Eventos con instantáneas](../debugger/media/intellitrace-events-tab-with-snapshots.png "Pestaña Eventos con instantáneas en los puntos de interrupción y pasos")
+    ![Pestaña Eventos con instantáneas](../debugger/media/intellitrace-events-tab-with-snapshots.png "Pestaña Eventos con instantáneas en los puntos de interrupción y los pasos")
 
     Por motivos de rendimiento, no se toman instantáneas paso a paso muy rápidamente. Si no aparece ningún icono de cámara junto al paso, intente ejecutar más lentamente.
 
@@ -85,7 +85,7 @@ En este tutorial va a:
 
     A diferencia del comando **Establecer instrucción siguiente**, ver una instantánea no vuelve a ejecutar el código; en su lugar, le proporciona una vista estática del estado de la aplicación en un punto en el tiempo que se ha producido en el pasado.
 
-    ![Información general de la característica step-back de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Información general de la característica step-back de IntelliTrace")
+    ![Información general de step-back de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Información general de Step-back de IntelliTrace")
 
     Para más información sobre cómo inspeccionar variables en Visual Studio, consulte [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 

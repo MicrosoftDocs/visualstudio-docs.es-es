@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento CreateNewFolder (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51b7702f1b1e1c509f4f9d88d72f170d0ed765f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341764"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739669"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder (elemento) (plantillas de Visual Studio)
+# <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (plantillas de Visual Studio)
 Determina si hay que comprobar que el directorio de destino donde se va a crear el proyecto no existe. Si el directorio existe, se puede crear un directorio nuevo para el proyecto. Esta configuración se suele sobrescribir por medio de la marca del Registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que usan todos los tipos de proyecto comunes para determinar si un proyecto nuevo se creará en un directorio nuevo.
 
- \<VSTemplate> \<TemplateData> \<CreateNewFolder>
+ \<VSTemplate \<> TemplateData> \<> CreateNewFolder
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Determina si hay que comprobar que el directorio de destino donde se va a crear 
 
  El texto debe ser `true` o `false`, e indica si se debe crear o no una nueva carpeta contenedora cuando se cree un proyecto a partir de la plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `CreateNewFolder` es un elemento opcional. El valor predeterminado es `true`.
 
  El valor especificado en el elemento `CreateNewFolder` solo se admite en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si el sistema de proyectos subyacente lo admite.
@@ -90,5 +90,5 @@ Determina si hay que comprobar que el directorio de destino donde se va a crear 
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

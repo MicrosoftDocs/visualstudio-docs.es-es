@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: IDebugExpression2::EvaluateSync ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77fb52dd140ee58eeb202e88026fb57764d549c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325953"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729676"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-Este método evalúa la expresión de forma sincrónica.
+Este método evalúa la expresión sincrónicamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>Parámetros
 `dwFlags`\
-[in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que controlan la evaluación de expresiones.
+[en] Combinación de indicadores de la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlan la evaluación de expresiones.
 
 `dwTimeout`\
-[in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
+[en] Tiempo máximo, en milisegundos, para esperar antes de volver de este método. Se `INFINITE` usa para esperar indefinidamente.
 
 `pExprCallback`\
-[in] Este parámetro siempre es un valor null.
+[en] Este parámetro siempre es un valor nulo.
 
 `ppResult`\
-[out] Devuelve el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que contiene el resultado de la evaluación de expresiones.
+[fuera] Devuelve el objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que contiene el resultado de la evaluación de expresiones.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Algunos códigos de error típicos son:
+Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve un código de error. Algunos códigos de error típicos son:
 
 |Error|Descripción|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|Se está evaluando la otra expresión, y no se admite la evaluación de expresión simultáneas.|
-|E_EVALUATE_TIMEOUT|Evaluación de tiempo de espera.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|Actualmente se está evaluando otra expresión y no se admite la evaluación simultánea de expresiones.|
+|E_EVALUATE_TIMEOUT|Evaluación agotada.|
 
-## <a name="remarks"></a>Comentarios
-Para la evaluación sincrónica, no es necesario enviar un evento a Visual Studio tras la finalización de la evaluación.
+## <a name="remarks"></a>Observaciones
+Para la evaluación sincrónica, no es necesario devolver un evento a Visual Studio al finalizar la evaluación.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para una sencilla `CExpression` objeto que implementa el [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaz.
+En el ejemplo siguiente se muestra `CExpression` cómo implementar este método para un objeto simple que implementa el [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaz.
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

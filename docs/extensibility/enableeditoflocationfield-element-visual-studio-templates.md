@@ -1,27 +1,27 @@
 ---
-title: EnableEditOfLocationField (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento EnableEditOfLocationField (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82a65115ce5df0f57ad9e6ea18a5637e035fed66
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334538"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711999"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento) (plantillas de Visual Studio)
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.
 
- \<VSTemplate > \<TemplateData > \<EnableEditOfLocationField >
+ \<VSTemplate \<> TemplateData> \<> EnableEditOfLocationField
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,10 +33,10 @@ Especifica si el usuario puede editar el campo de ubicación.
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
 ### <a name="attributes"></a>Atributos
- Ninguna
+ None
 
 ### <a name="child-elements"></a>Elementos secundarios
- Ninguna
+ None
 
 ### <a name="parent-elements"></a>Elementos primarios
 
@@ -47,15 +47,15 @@ Especifica si el usuario puede editar el campo de ubicación.
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
- El texto debe ser `true` o `false`, lo que indica si el usuario puede editar el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.
+ El texto debe `true` `false`ser o , que indica si el usuario puede o no editar el cuadro de texto **Ubicación** en el cuadro de diálogo **Nuevo proyecto.**
 
-## <a name="remarks"></a>Comentarios
- `EnableEditOfLocationField` es un elemento opcional. El valor predeterminado es `true`, lo que permite al usuario editar el valor de la **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.
+## <a name="remarks"></a>Observaciones
+ `EnableEditOfLocationField` es un elemento opcional. El valor `true`predeterminado es , que permite al usuario editar el valor en el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo proyecto.**
 
- En el **nuevo proyecto** cuadro de diálogo, el **ubicación** cuadro de texto especifica el directorio donde se guarda un nuevo proyecto.
+ En el cuadro de diálogo **Nuevo proyecto,** el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.
+ En el ejemplo siguiente se [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestran los metadatos de una aplicación de Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,5 +84,5 @@ Especifica si el usuario puede editar el campo de ubicación.
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
