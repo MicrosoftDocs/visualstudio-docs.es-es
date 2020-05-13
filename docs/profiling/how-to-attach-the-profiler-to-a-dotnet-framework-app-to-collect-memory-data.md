@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04dcf800074476b285a07e36db5a85fa3a366585
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779134"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación de .NET Framework independiente para recopilar datos de memoria mediante la línea de comandos
@@ -56,7 +56,7 @@ Para finalizar una sesión de generación de perfiles, el generador de perfiles 
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.
 
-     | Opción | DESCRIPCIÓN |
+     | Opción | Descripción |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
@@ -67,7 +67,7 @@ Para finalizar una sesión de generación de perfiles, el generador de perfiles 
 
 5. Adjunte el generador de perfiles a la aplicación de destino. Tipo:
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
+     **VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
     - `PID` especifica el identificador de proceso de la aplicación de destino. `ProcessName` especifica el nombre del proceso. Tenga en cuenta que si especifica `ProcessName` y se están ejecutando varios procesos con el mismo nombre, los resultados son imprevisibles. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.
 
@@ -81,7 +81,7 @@ Cuando se ejecuta la aplicación de destino, puede controlar la recolección de 
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recopilación de datos para el proceso especificado por `PID`.|
@@ -97,7 +97,7 @@ Para finalizar una sesión de generación de perfiles, el generador de perfiles 
 
     - Escriba **VSPerfCmd /detach**
 
-         O bien
+         o bien
 
     - Cierre la aplicación de destino.
 

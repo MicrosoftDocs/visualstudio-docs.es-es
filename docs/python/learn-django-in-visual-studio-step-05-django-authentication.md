@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62957890"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Paso 5: Autenticación de usuarios en Django
@@ -204,7 +204,7 @@ En los pasos siguientes se utiliza el flujo de autenticación y se describen las
 
 1. Cuando haya terminado, detenga el servidor y una vez más confirme los cambios en el control de código fuente.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la finalidad de la etiqueta {% csrf_token %} que aparece en los elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la finalidad de la etiqueta {% csrf_token %} que aparece en los elementos \<form\>?
 
 Respuesta: La etiqueta `{% csrf_token %}` incluye la [protección de falsificación de solicitud entre sitios (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) integrada de Django (documentación de Django). Normalmente se agrega esta etiqueta a cualquier elemento que incluya los métodos de solicitud POST, PUT o DELETE, como un formulario. Luego, la función de representación de la plantilla (`render`) inserta la protección necesaria.
 

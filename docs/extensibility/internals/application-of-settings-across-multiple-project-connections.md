@@ -1,29 +1,29 @@
 ---
-title: Aplicación de configuración en varias conexiones de proyecto | Microsoft Docs
+title: Aplicación de la configuración a través de múltiples conexiones de proyecto ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 480ccaac58e67a959454e9d4afa9aa57e817c693
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315843"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710060"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de configuración en varias conexiones de proyecto
-Un complemento de control de origen creados con el origen de Control de complemento de API versión 1.2, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente a través de varios proyectos o varios contextos de conexión. Los lotes pueden utilizarse para eliminar redundantes, cuadros de diálogo de la experiencia del usuario por proyecto.
+# <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de la configuración en varias conexiones de proyecto
+Un complemento de control de código fuente creado con la versión 1.2 de la API de complemento de Control de código fuente, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente en varios proyectos o varios contextos de conexión. Los lotes se pueden usar para eliminar cuadros de diálogo redundantes por proyecto de la experiencia del usuario.
 
- Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente creada con código fuente Control complemento API versión 1.1 (por ejemplo, dos proyectos web en el recurso compartido de archivos diferentes máquinas) y comprobaciones de ellas, el usuario ve el mismo cuadro de diálogo varias veces. Este escenario se produce incluso si el usuario hace clic en el **aplicar a todo** casilla de verificación en el cuadro de diálogo, dado que el IDE restablece su estado para cada contexto de conexión.
+ Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente creado mediante la versión 1.1 de la API de complemento de Control de código fuente (por ejemplo, dos proyectos web en equipos de recurso compartido de archivos diferentes) y los desprotege, el usuario ve el mismo cuadro de diálogo repetidamente. Este escenario se produce incluso si el usuario hace clic en la casilla de verificación **Aplicar a todos** en el cuadro de diálogo, porque el IDE restablece su estado para cada contexto de conexión.
 
-## <a name="new-capability-flag"></a>Nueva marca de capacidad
- El `SccBeginBatch` función establece el `SCC_CAP_BATCH` marca para indicar que una operación por lotes está en curso.
+## <a name="new-capability-flag"></a>Nueva bandera de capacidad
+ La `SccBeginBatch` función `SCC_CAP_BATCH` establece el indicador para indicar que una operación por lotes está en curso.
 
 ## <a name="new-functions"></a>Nuevas funciones
 Las siguientes funciones nuevas admiten la operación por lotes:
@@ -32,7 +32,7 @@ Las siguientes funciones nuevas admiten la operación por lotes:
 
 - [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
-El `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. El `SccEndBatch` función cierra el grupo. No se pueden anidar los grupos.
+La `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. La `SccEndBatch` función cierra el grupo. Es posible que los grupos no estén anidados.
 
 ## <a name="see-also"></a>Vea también
-- [Novedades de la versión 1.2 de origen Control complemento de API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Novedades de la API de complemento de Control de código fuente versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

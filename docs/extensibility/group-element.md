@@ -1,25 +1,25 @@
 ---
-title: Elemento Group | Microsoft Docs
+title: Elemento de grupo (Grupo) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3c1c4bedc5ff44f797e6b46e351dc3753362501
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342357"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711231"
 ---
-# <a name="group-element"></a>Elemento Group
-Define un grupo de comandos del VSPackage.
+# <a name="group-element"></a>Group, elemento
+Define un grupo de comandos de VSPackage.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,23 +36,23 @@ Define un grupo de comandos del VSPackage.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Obligatorio. GUID del identificador de comando/identificador de GUID.|
-|id|Obligatorio. Id. del identificador de comando/identificador de GUID.|
-|priority|Opcional. Un valor numérico que especifica la prioridad.|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Necesario. GUID del identificador de comando GUID/ID.|
+|id|Necesario. ID del identificador de comando GUID/ID.|
+|priority|Opcional. Valor numérico que especifica la prioridad.|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Primario|Opcional. El elemento primario del botón.|
+|Parent|Opcional. El elemento primario del botón.|
 |Anotación|Comentario opcional.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un paquete VSPackage.|
+|[Elemento Grupos](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -62,5 +62,5 @@ Define un grupo de comandos del VSPackage.
 </Group>
 ```
 
-## <a name="see-also"></a>Vea también
-- [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte también
+- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987269"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79306708"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 
@@ -26,7 +26,7 @@ También se puede abrir Visual Studio para Mac sin ningún script abierto en el 
 
 ## <a name="unity-documentation-access"></a>Acceso a la documentación de Unity
 
-Visual Studio for Mac Tools for Unity incluye un acceso directo para acceder a la documentación de la API de Unity. Para acceder a la documentación de la API de Unity desde Visual Studio para Mac, coloque el cursor sobre la API de Unity sobre la que quiere aprender y presione **comando ⌘ + ‘**.
+Visual Studio for Mac Tools for Unity incluye un acceso directo para acceder a la documentación de la API de Unity. Para acceder a la documentación de la API de Unity desde Visual Studio para Mac, coloque el cursor sobre la API de Unity sobre la que quiere aprender y presione **comando ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense para mensajes de Unity
 El motor de Unity difunde mensajes a scripts de MonoBehaviour, lo que permite a los desarrolladores escribir código que responda a mensajes como OnMouseDown, OnTriggerEnter, etc. Dado que estos no son métodos virtuales de la clase base de MonoBehaviour, algunos IDE como MonoDevelop carecen de la funcionalidad de completado de código para mensajes de Unity.

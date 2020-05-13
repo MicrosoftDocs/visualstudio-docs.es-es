@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak | Microsoft Docs
+title: IDebugEngine2::CauseBreak ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93f9937609a09439b265946e76f0af0381d488f1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330129"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731155"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Las solicitudes de todos los programas que se está depurando por el motor de depuración (DE) para detener la ejecución de la próxima vez que uno de sus subprocesos intenta ejecutar.
+Solicita que todos los programas depurados por este motor de depuración (DE) detengan la ejecución la próxima vez que uno de sus subprocesos intente ejecutarse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,10 +38,10 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método es asincrónico: un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento se envía cuando el programa intenta ejecutar después de que este método se llama a continuación.
+## <a name="remarks"></a>Observaciones
+ Este método es asincrónico: un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento se envía cuando el programa siguiente intenta ejecutar después de este método se llama.
 
 ## <a name="see-also"></a>Vea también
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

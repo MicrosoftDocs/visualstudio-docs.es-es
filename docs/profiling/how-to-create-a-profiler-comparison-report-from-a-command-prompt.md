@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0328e04067770f8837d10d532abb67d16c65e50
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776451"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Procedimiento Crear un informe de comparación del generador de perfiles desde un símbolo del sistema
@@ -21,15 +21,15 @@ Puede generar un informe de las Herramientas de generación de perfiles de [!INC
 
  Para obtener una lista de los identificadores de las categorías de comparación y los campos, escriba la siguiente línea de comandos:
 
- **VSPerfReport /querydifftables**  *VspFileName1* *VspFileName2*
+ **VSPerfReport /querydifftables** *VspFileName1* *VspFileName2*
 
  Use la sintaxis siguiente para crear el informe de comparación:
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
+ **VSPerfReport /diff** `VspFileName1` *VspFileName2* [ **/** `Options`]
 
  Puede agregar opciones de la tabla siguiente a la línea de comandos **VSPerfReport /diff**.
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**DiffThreshold:** [*Value*]|Omita la diferencia si está por debajo de este valor de umbral de porcentaje. Además, no aparecen nuevos datos que tengan valores por debajo de este umbral.|
 |**DiffTable:** *TableName*|Use esta tabla para comparar archivos. De forma predeterminada, se usa la tabla de funciones. Especifique el identificador que aparece en **VSPerfReport /querydifftables**.|

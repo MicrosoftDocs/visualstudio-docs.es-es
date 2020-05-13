@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakEvent2 | Microsoft Docs
+title: IDebugBreakEvent2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c500c6a54cc63dbcb8c7c6ad23c92d2105b9842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314406"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735393"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Esta interfaz indica al administrador de depuración de la sesión (SDM) que una interrupción asincrónica se ha completado correctamente.
+Esta interfaz indica al administrador de depuración de sesión (SDM) que se ha completado correctamente una interrupción asincrónica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,18 +29,18 @@ IDebugBreakEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- La DE implementa esta interfaz para admitir los saltos de usuario en un programa. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz debe implementarse en el mismo objeto que esta interfaz (usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz).
+ La DE implementa esta interfaz para admitir saltos de usuario en un programa. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz debe implementarse en el mismo objeto que esta `IDebugEvent2` interfaz (el SDM utiliza [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la interfaz).
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Las llamadas SDM [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) cuando el usuario ha solicitado el programa que se está depurando se pongan en pausa. Cuando el programa se ha detenido correctamente, se envía al DE la `IDebugBreakEvent2` eventos. Este evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ El SDM llama [a CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) cuando el usuario ha solicitado que el programa que se está depurando se detenga. Cuando el programa se ha pausado correctamente, la DE envía el `IDebugBreakEvent2` evento. Este evento se envía mediante el [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando se adjunta al programa que se está depurando.
 
-## <a name="remarks"></a>Comentarios
- Por ejemplo, un usuario puede seleccionar la **interrumpir todos** comando el **depurar** menú para interrumpir un programa que se ejecuta un bucle infinito. El SDM indica al programa para detener mediante una llamada a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). Los envíos DE `IDebugBreakEvent2` cuando, por último, detiene el programa.
+## <a name="remarks"></a>Observaciones
+ Por ejemplo, un usuario puede seleccionar el comando **Romper todo** en el menú **Depurar** para salir de un programa que ejecuta un bucle infinito. El SDM indica al programa que se detenga llamando a [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). El DE `IDebugBreakEvent2` envía cuando el programa finalmente se detiene.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558123"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638689"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir el rendimiento de la aplicación desde la línea de comandos
 
@@ -29,9 +29,11 @@ En el ejemplo descrito en este artículo, se recopila información de rendimient
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Visual Studio 2019 Preview 3 o versiones posteriores
+* Visual Studio 2019 o versiones posteriores
 
 * Familiaridad con las herramientas de línea de comandos
+
+* Para recopilar información de rendimiento en un equipo remoto sin tener instalado Visual Studio, instale las [Herramientas de rendimiento para Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) en el equipo remoto. La versión de las herramientas debe coincidir con la de Visual Studio.
 
 ## <a name="collect-performance-data"></a>Recopilar datos de rendimiento
 
@@ -65,7 +67,7 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
 
 1. Vaya a la salida del archivo desde el comando anterior y ábrala en Visual Studio para examinar la información recopilada.
 
-## <a name="config_file"></a> Archivos de configuración de agentes
+## <a name="agent-configuration-files"></a><a name="config_file"></a> Archivos de configuración de agentes
 
 Los agentes recopiladores son componentes intercambiables que recopilan diferentes tipos de datos en función de lo que se intente medir.
 

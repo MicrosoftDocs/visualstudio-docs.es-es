@@ -1,29 +1,29 @@
 ---
-title: Parámetros personalizados | Microsoft Docs
+title: Parámetros personalizados ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a879c7a842bdabff396fa2df31d0aa7326b19c50
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312213"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708947"
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
-Parámetros personalizados controlan el funcionamiento de un asistente después de que se ha iniciado un asistente. Un relacionados *.vsz* archivo proporciona una matriz de parámetros definido por el usuario que se empaquetan en el entorno de desarrollo integrado (IDE) y se pasa al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y usa la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad según el contenido de la *.vsz* archivo.
+Los parámetros personalizados controlan el funcionamiento de un asistente después de que se haya iniciado un asistente. Un archivo *.vsz* relacionado proporciona una matriz de parámetros definidos por el usuario empaquetados por el entorno de desarrollo integrado (IDE) y pasados al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y utiliza la información para controlar el funcionamiento real del asistente. De esta manera, un asistente puede personalizar la funcionalidad en función del contenido del archivo *.vsz.*
 
- Parámetros de contexto, por otro lado, definen el estado del proyecto cuando se inicia el asistente. Para obtener más información, consulte [parámetros de contexto](../../extensibility/internals/context-parameters.md).
+ Los parámetros de contexto, por otro lado, definen el estado del proyecto cuando se inicia el asistente. Para obtener más información, consulte [Parámetros de contexto](../../extensibility/internals/context-parameters.md).
 
- Este es un ejemplo de un *.vsz* archivo que tiene parámetros personalizados:
+ A continuación se muestra un ejemplo de un archivo *.vsz* que tiene parámetros personalizados:
 
 ```
 VSWIZARD 8.0
@@ -35,14 +35,14 @@ Param="PREPROCESS_FUNCTION = CanAddATLSupport"
 Param="PROJECT_TYPE = CSPROJ"
 ```
 
- El autor de la *.vsz* archivo agrega los valores de los parámetros. Cuando un usuario selecciona **nuevo proyecto** o **Agregar nuevo elemento** en el **archivo** menú o con el botón secundario en un proyecto de **el Explorador de soluciones**, el IDE recopila estos valores en una matriz de cadenas. El IDE, a continuación, llama el proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> método con el <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> marca conjunto y las llamadas de proyecto la <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> método que es responsable de ejecutar el asistente y devolviendo el resultado.
+ El autor del archivo *.vsz* agrega los valores de los parámetros. Cuando un usuario selecciona **Nuevo proyecto** o Agregar **nuevo elemento** en **el** archivo menú o haciendo clic en un proyecto en el **Explorador**de soluciones , el IDE recopila estos valores en una matriz de cadenas. A continuación, el IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> llama <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> al método del proyecto <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> con el conjunto de indicadores y el proyecto llama al método responsable de ejecutar el asistente y devolver el resultado.
 
- El asistente es responsable de la matriz de cadenas de análisis y actuar sobre las cadenas de manera apropiada. De esta manera, mediante la implementación de parámetros personalizados puede crear a un asistente que realiza una serie de funciones. En otras palabras, un asistente podría tener tres diferentes *.vsz* archivos. Cada archivo pasa a diferentes conjuntos de parámetros personalizados para controlar el comportamiento del asistente en diversas situaciones.
+ El asistente es responsable de analizar la matriz de cadenas y actuar en las cadenas de forma adecuada. De esta manera, mediante la implementación de parámetros personalizados puede crear un asistente que realice una variedad de funciones. En otras palabras, un asistente podría tener tres archivos *.vsz* diferentes. Cada archivo pasa diferentes conjuntos de parámetros personalizados para controlar el comportamiento del asistente en varias situaciones.
 
- Para obtener más información, consulte [archivo asistentes (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md).
+ Para obtener más información, consulte [Wizard (.vsz) file](../../extensibility/internals/wizard-dot-vsz-file.md).
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Asistentes](../../extensibility/internals/wizards.md)
-- [Archivos de asistentes (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Archivo Wizard (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093609"
 ---
 # <a name="msbuild-targets"></a>Destinos de MSBuild
 
@@ -42,7 +42,7 @@ Los destinos agrupan tareas en un orden concreto y permiten que el proceso de co
 </Target>
 ```
 
- Si AfterBuild se ejecuta, muestra solamente "Second occurrence".
+ Si se ejecuta `AfterBuild`, solo se muestra la segunda repetición, ya que la segunda definición de `AfterBuild` oculta la primera repetición.
 
  MSBuild depende del orden de importación y la última definición de un destino es la definición usada.
 

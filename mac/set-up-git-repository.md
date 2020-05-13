@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70107892"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git

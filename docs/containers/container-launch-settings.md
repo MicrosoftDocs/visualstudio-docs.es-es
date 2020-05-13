@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 63cf881fdedf9608d5cb773bbcb6b969a0f51624
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542599"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472647"
 ---
 # <a name="container-tools-launch-settings"></a>Configuración de inicio de las herramientas de contenedor
 
@@ -61,7 +61,7 @@ El valor commandName identifica que esta sección se aplica a las herramientas d
 
 | Nombre de valor         | Ejemplo                                               | Descripción                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Estos argumentos de la línea de comandos se usan al iniciar el proyecto en el contenedor.                                     |
+| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | Estos argumentos de la línea de comandos para iniciar la aplicación se usan al ejecutar el proyecto en el contenedor.                                     |
 | environmentVariables | "environmentVariables": {                             | Estos valores de variables de entorno se pasan al proceso cuando se inicia en el contenedor.                       |
 |                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
 |                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |

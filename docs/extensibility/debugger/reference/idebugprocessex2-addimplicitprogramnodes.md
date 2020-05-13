@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: IDebugProcessEx2::AddImplicitProgramNodes ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309500"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723395"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Este método agrega un nodo de programa para cada motor de depuración (DE) especificado.
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Parámetros
 `guidLaunchingEngine`\
-[in] El `GUID` de una DE que se utiliza para iniciar programas (y se supone que para agregar sus propios nodos de programa).
+[en] El `GUID` de un DE que se va a utilizar para iniciar programas (y se supone que agrega sus propios nodos de programa).
 
 `rgguidSpecificEngines`\
-[in] Matriz de `GUID`s de DEs para el programa que se agregarán los nodos.
+[en] Matriz `GUID`de s de DEs para los que se agregarán nodos de programa.
 
 `celtSpecificEngines`\
-[in] El número de `GUID`s en el `rgguidSpecificEngines` matriz.
+[en] El número `GUID`de `rgguidSpecificEngines` s en la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-- [Nodos de programa](../../../extensibility/debugger/program-nodes.md) se agregarán para cada DE enumerada en `rgguidSpecificEngines`, excepto el motor de inicio (como se indica en `guidLaunchingEngine`), que se supone que agregue su propio nodo programa cuando inicia un programa.
+## <a name="remarks"></a>Observaciones
+- Los [nodos](../../../extensibility/debugger/program-nodes.md) de programa se `rgguidSpecificEngines`agregarán para cada DE que `guidLaunchingEngine`aparece en , excluyendo el motor de lanzamiento (como se indica en ), que se supone que agrega su propio nodo de programa cuando inicia un programa.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

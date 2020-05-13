@@ -1,27 +1,27 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
+title: EVALFLAGS90 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24afc4456570ff0c3e5dc1eb56789984bf18ac58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337833"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737105"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Enumera los valores válidos para las marcas que controlan la evaluación de expresiones. Esta enumeración se extiende el [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración.
+Enumera los valores válidos para los indicadores que controlan la evaluación de expresiones. Esta enumeración extiende la enumeración [EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,9 +64,9 @@ public enum enum_EVALFLAGS90
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `EVAL90_RETURNVALUE`\
-Especifica que el valor devuelto, si hay alguno, va a evaluar.
+Especifica que se evalúe el valor devuelto, si existe.
 
 `EVAL90_NOSIDEEFFECTS`\
 Especifica que no se permiten efectos secundarios.
@@ -75,16 +75,16 @@ Especifica que no se permiten efectos secundarios.
 Especifica la detención en puntos de interrupción.
 
 `EVAL90_ALLOWERRORREPORT`\
-Especifica que informe de errores para el host para poder ser admitidos. Se utiliza principalmente para la evaluación de expresión en un script en Internet Explorer.
+Especifica que se permita el informe de errores al host. Se utiliza principalmente para la evaluación de expresiones en script en Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-Funciones de fuerza se evalúen como direcciones, en lugar de invocar la función.
+Fuerza las funciones que se evaluarán como direcciones, en lugar de invocar la función.
 
 `EVAL90_NOFUNCEVAL`\
-Impide a función que se evalúa. Por ejemplo, considere la `int` testigo en la expresión `myExpression(int) + 10`. Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
+Impide que se evalúe la función. Por ejemplo, `int` considere el `myExpression(int) + 10`token en la expresión . Esta función se puede evaluar correctamente como una dirección, pero no como un valor.
 
 `EVAL90_NOEVENTS`\
-Marca para indicar que no se envíen eventos que se producen durante la evaluación de expresión para el Administrador de depuración de la sesión (SDM) o el IDE.
+Marcar para indicar que los eventos que se producen durante la evaluación de expresiones no se deben enviar al administrador de depuración de sesión (SDM) o al IDE.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
 Permite la evaluación de expresiones en tiempo de diseño.
@@ -93,12 +93,12 @@ Permite la evaluación de expresiones en tiempo de diseño.
 Permite la creación implícita de variables.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-Evaluación de las fuerzas que se produzca inmediatamente. Esto es útil cuando se atiende una solicitud, por ejemplo, una solicitud de usuario.
+Obliga a que la evaluación se realice inmediatamente. Esto es útil cuando se atiende una solicitud, como una solicitud de usuario.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: Msdbg90.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

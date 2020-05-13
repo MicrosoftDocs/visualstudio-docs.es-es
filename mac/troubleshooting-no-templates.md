@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
 ms.openlocfilehash: cb6f9e3a41236d10b0558a508c2531b08ec7fe13
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75845818"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Solución del problema: ¿Por qué no puedo ver todas las plantillas disponibles?

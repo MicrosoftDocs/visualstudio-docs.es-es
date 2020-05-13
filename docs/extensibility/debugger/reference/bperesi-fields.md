@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Microsoft Docs
+title: BPERESI_FIELDS Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9db96713ba8bb0f3cd421c48ef602e25c2d25a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350533"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737767"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
-Especifica la información que se va a recuperar acerca de una solución con errores de un punto de interrupción.
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
+Especifica la información que se va a recuperar sobre una resolución con errores de un punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,36 +50,36 @@ public enum enum_BPERESI_FIELDS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `PERESI_BPRESLOCATION`\
-Inicializar o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura.
+Inicializar/utilizar `bpResLocation` el campo (ubicación de resolución de punto de interrupción) de la [estructura BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 
 `BPERESI_PROGRAM`\
-Inicializar o usar el `pProgram` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `pProgram` el campo `BP_ERROR_RESOLUTION_INFO` de la estructura.
 
 `BPERESI_THREAD`\
-Inicializar o usar el `pThread` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `pThread` el campo `BP_ERROR_RESOLUTION_INFO` de la estructura.
 
 `BPERESI_MESSAGE`\
-Inicializar o usar el `bstrMessage` campo de la `BP_ERROR_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `bstrMessage` el campo `BP_ERROR_RESOLUTION_INFO` de la estructura.
 
 `BPERESI_TYPE`\
-Inicializar o usar el `dwType` campo (tipo de punto de interrupción) de la `BP_ERROR_RESOLUTION_INFO` estructura.
+Inicializar/utilizar `dwType` el campo (tipo de `BP_ERROR_RESOLUTION_INFO` punto de interrupción) de la estructura.
 
 `BPERESI_ALLFIELDS`\
-Inicializar o usar todos los campos de la `BP_ERROR_RESOLUTION_INFO` estructura.
+Inicializar/utilizar todos los `BP_ERROR_RESOLUTION_INFO` campos de la estructura.
 
-## <a name="remarks"></a>Comentarios
-Pasado como parámetro a la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método para indicar qué campos de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura deben inicializarse.
+## <a name="remarks"></a>Observaciones
+Se pasa como parámetro al método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) para indicar qué campos de la estructura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) se van a inicializar.
 
-Estos valores también se usan para indicar qué campos de la `BP_ERROR_RESOLUTION_INFO` estructura se usan y válido cuando se devuelve esa estructura.
+Estos valores también se utilizan para `BP_ERROR_RESOLUTION_INFO` indicar qué campos de la estructura se utilizan y son válidos cuando se devuelve esa estructura.
 
-Estos valores se pueden combinar con un bit a bit `OR`.
+Estos valores se pueden combinar `OR`con un archivo .
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

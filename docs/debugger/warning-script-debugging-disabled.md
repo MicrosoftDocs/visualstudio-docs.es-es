@@ -1,5 +1,5 @@
 ---
-title: 'ADVERTENCIA: depuración de script deshabilitada | Microsoft Docs'
+title: 'Advertencia: Depuración de scripts deshabilitada ( Script Debugging Disabled ) Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728197"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81648500"
 ---
 # <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de script deshabilitada
 La depuración de script está deshabilitada actualmente en Internet Explorer
@@ -35,7 +35,7 @@ La depuración de script está deshabilitada actualmente en Internet Explorer
 
 3. En la pestaña **Opciones avanzadas**, observe la categoría **Examinar** en el cuadro **Configuración**.
 
-4. Desactive **Deshabilitar la depuración de scripts (Internet Explorer)** .
+4. Desactive **Deshabilitar la depuración de scripts (Internet Explorer)**.
 
 5. Haga clic en **Aceptar**.
 
@@ -43,5 +43,5 @@ La depuración de script está deshabilitada actualmente en Internet Explorer
 
      La nueva configuración estará ahora en vigor.
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Adjuntar a script](../debugger/how-to-attach-to-script.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: Adjuntar a Script](attach-to-running-processes-with-the-visual-studio-debugger.md)

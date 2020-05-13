@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Crear un fragmento de código'
-ms.date: 06/10/2019
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1bfadb4b8d1836d131b669ea43f28f522f3fbd8b
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597300"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472815"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 
@@ -54,7 +54,7 @@ El siguiente XML es la plantilla básica de fragmento de código:
 
 2. Rellene el título del fragmento de código en el elemento **Título**. Use el título **Raíz cuadrada**.
 
-3. Rellene el lenguaje del fragmento de código en el atributo **Language** del elemento **Code**. En C#, use **CSharp** y, en Visual Basic, **VB**.
+3. Rellene el lenguaje del fragmento de código en el atributo **Language** del elemento **Code**. En C#, use **CSharp**; en Visual Basic, use **VB**; y en C++, use **CPP**.
 
    > [!TIP]
    > Para ver todos los valores de lenguaje disponibles, vaya a la sección [Atributos del elemento Code](code-snippets-schema-reference.md#attributes) de la página [Referencia de esquemas de fragmentos de código](code-snippets-schema-reference.md).

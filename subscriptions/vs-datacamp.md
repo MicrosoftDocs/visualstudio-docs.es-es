@@ -1,17 +1,18 @@
 ---
 title: Mejore sus aptitudes de ciencia de datos hoy mismo con el beneficio de DataCamp en las suscripciones de Visual Studio seleccionadas. | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
+ms.date: 04/17/2020
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 85545df5a38f5f8c3e3c29e6ffe1581298999562
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706879"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649571"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones a DataCamp.  Con DataCamp, puede obtener información sobre todas las aptitudes ciencia de datos que necesita cómodamente desde el explorador. Puede elegir cuándo y qué aprender. Al no tener que instalar ningún software ni cumplir ningún requisito de hardware en particular, ahora el aprendizaje de ciencia de datos es más fácil que nunca.
@@ -82,10 +83,15 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 Revise más oportunidades de desarrollo profesional en la suscripción:
 - [Pluralsight](vs-pluralsight.md)
 - [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
-
 
 Si todavía no ha activado la ventaja de crédito individual de Azure DevTest incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear el crédito individual de Azure DevTest.

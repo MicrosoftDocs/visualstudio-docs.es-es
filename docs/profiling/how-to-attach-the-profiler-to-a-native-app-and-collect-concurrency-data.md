@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 367c91035f5d37bd8b0c20f1df84c7a2ee2d487a
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776932"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento para asociar el generador de perfiles a una aplicación nativa independiente y recopilar datos de simultaneidad mediante la línea de comandos
@@ -35,7 +35,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
      Puede usar cualquiera de las opciones de la tabla siguiente con la opción **/start:concurrency**.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`Username`|Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles.|
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otros inicios de sesión.|
@@ -45,7 +45,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
 2. Adjunte el generador de perfiles a la aplicación de destino escribiendo el comando siguiente:
 
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`}
+     **VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`}
 
      `PID` especifica el identificador de proceso de la aplicación de destino. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.
 
@@ -56,7 +56,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
 - Los pares de opciones de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso que especifica el identificador de proceso (`PID`).|

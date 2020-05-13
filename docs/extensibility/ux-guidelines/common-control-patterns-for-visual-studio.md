@@ -1,35 +1,35 @@
 ---
-title: Patrones de Control comunes para Visual Studio | Microsoft Docs
+title: Patrones de control comunes para Visual Studio ? Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890974"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698711"
 ---
-# <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
-## <a name="BKMK_CommonControls"></a> Controles comunes
+# <a name="common-control-patterns-for-visual-studio"></a>Patrones de control comunes para Visual Studio
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Controles comunes
 
 ### <a name="overview"></a>Información general
-Controles comunes constituyen la mayor parte de la interfaz de usuario en Visual Studio. Controles más comunes usados en la interfaz de Visual Studio deben seguir el [directrices de la interacción de escritorio de Windows](/windows/desktop/uxguide/controls). En este tema es específico de Visual Studio y se trata situaciones especiales o los detalles que aumentan las directrices de Windows.
+Los controles comunes conforman la mayoría de la interfaz de usuario en Visual Studio. Los controles más comunes utilizados en la interfaz de Visual Studio deben seguir las directrices de interacción de escritorio de [Windows.](/windows/desktop/uxguide/controls) Este tema es específico de Visual Studio y cubre situaciones especiales o detalles que aumentan esas directrices de Windows.
 
-#### <a name="common-controls-in-this-topic"></a>Controles comunes de este tema
+#### <a name="common-controls-in-this-topic"></a>Controles comunes en este tema
 
 - [Barras de desplazamiento](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
 - [Campos de entrada](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
-- [Los cuadros combinados y listas desplegables](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [Cuadros combinados y listas desplegables](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
-- [Casillas de verificación](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
+- [Casillas](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
 - [Botones de radio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
@@ -41,351 +41,351 @@ Controles comunes constituyen la mayor parte de la interfaz de usuario en Visual
 
 - [Vistas de árbol](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
-#### <a name="visual-style"></a>Estilo Visual
-Lo primero que debe considerar al aplicar un estilo a controles es si se usará los controles de interfaz de usuario con temas. Los controles de interfaz de usuario estándar son la interfaz de usuario que no sean temáticos y debe seguir [estilo normal de Windows Desktop](/windows/desktop/uxguide/controls), lo que significa que no son con plantilla re y debe aparecer en su apariencia del control de forma predeterminada.
+#### <a name="visual-style"></a>Estilo visual
+Lo primero que hay que tener en cuenta al aplicar estilos a los controles es si los controles se usarán en la interfaz de usuario temática. Los controles de la interfaz de usuario estándar no son de interfaz de usuario y deben seguir el estilo normal de escritorio de [Windows,](/windows/desktop/uxguide/controls)lo que significa que no se vuelven a crear plantillas y deben aparecer en su apariencia de control predeterminada.
 
-- **Los cuadros de diálogo estándar (utilidad):** no temáticas. No re-template. Usar valores predeterminados de estilo de control básico.
+- **Diálogos estándar (utilidad):** no temáticos. No vuelvas a plantillar. Utilice los valores predeterminados de estilo de control básico.
 
-- **Ventanas de herramientas, editores de documentos, superficies de diseño y los cuadros de diálogo con temas:** Utilice apariencia con temas especializado con el servicio de color.
+- **Ventanas de herramientas, editores de documentos, superficies** de diseño y cuadros de diálogo temáticos: Utilice la apariencia temática especializada utilizando el servicio de color.
 
-### <a name="BKMK_Scrollbars"></a> Barras de desplazamiento
- Deben seguir las barras de desplazamiento [barras de desplazamiento de los patrones comunes de interacción de Windows](/windows/desktop/Controls/about-scroll-bars) a menos que estén ampliadas con información de contenido, como en el editor de código.
+### <a name="scroll-bars"></a><a name="BKMK_Scrollbars"></a>Barras de desplazamiento
+ Las barras de desplazamiento deben seguir patrones de [interacción comunes para las barras](/windows/desktop/Controls/about-scroll-bars) de desplazamiento de Windows a menos que se aumenten con información de contenido, como en el editor de código.
 
-### <a name="BKMK_InputFields"></a> Campos de entrada
- Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para los cuadros de texto](/windows/desktop/uxguide/ctrl-text-boxes).
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Campos de entrada
+ Para el comportamiento de interacción típico, siga las directrices de escritorio de [Windows para cuadros](/windows/desktop/uxguide/ctrl-text-boxes)de texto.
 
-#### <a name="visual-style"></a>Estilo Visual
+#### <a name="visual-style"></a>Estilo visual
 
-- Los campos de entrada no deben cambiar el estilo en los cuadros de diálogo de utilidad. Utilice el estilo básico intrínseco para el control.
+- Los campos de entrada no deben aplicar estilo en los cuadros de diálogo de utilidad. Utilice el estilo básico intrínseco al control.
 
-- Los campos de entrada con temas solo deben usarse en los cuadros de diálogo con temas y las ventanas de herramientas.
+- Los campos de entrada temáticos solo deben utilizarse en cuadros de diálogo temáticos y ventanas de herramientas.
 
 #### <a name="specialized-interactions"></a>Interacciones especializadas
 
-- Campos de solo lectura tendrá un fondo gris (deshabilitado), pero el primer plano predeterminado (activa).
+- Los campos de solo lectura tendrán un fondo gris (deshabilitado) pero un primer plano predeterminado (activo).
 
-- Requiere los campos deben tener  **\<necesario >** como marcas de agua dentro de ellos. No debe cambiar el color de fondo, excepto en situaciones excepcionales.
+- Los campos obligatorios deben tener ** \<>obligatorios** como marcas de agua dentro de ellos. No debe cambiar el color del fondo excepto en situaciones raras.
 
-- Validación de errores: Consulte [notificaciones y progreso para Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- Validación de errores: consulte [Notificaciones y progreso para Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
-- Los campos de entrada deben ajustarse al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para arbitrariamente que coincida con la longitud de un campo largo, como una ruta de acceso. Longitud podría ser una indicación al usuario de límite en cuanto a cuántos caracteres se permiten en el campo.
+- Los campos de entrada deben tener un tamaño que se ajuste al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para que coincidan arbitrariamente con la longitud de un campo largo, como una ruta de acceso. La longitud puede ser una indicación para el usuario de las limitaciones en cuanto a cuántos caracteres se permiten en el campo.
 
-     ![Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos.
+     ![Longitud de campo de entrada incorrecta: es poco probable que el nombre sea tan largo.](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Longitud de campo de entrada incorrecta: es poco probable que el nombre sea tan largo.
 
-     ![Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado.
+     ![Longitud correcta del campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado.](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Longitud correcta del campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado.
 
-### <a name="BKMK_ComboBoxesAndDropDowns"></a> Los cuadros combinados y listas desplegables
-Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para las listas desplegables y cuadros combinados](/windows/desktop/uxguide/ctrl-drop).
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Cuadros combinados y listas desplegables
+Para el comportamiento de interacción típico, siga las directrices de escritorio de [Windows para listas desplegables y cuadros combinados.](/windows/desktop/uxguide/ctrl-drop)
 
-#### <a name="visual-style"></a>Estilo Visual
+#### <a name="visual-style"></a>Estilo visual
 
-- En los cuadros de diálogo de utilidad no re-template del control. Utilice el estilo básico intrínseco para el control.
+- En los cuadros de diálogo de utilidad, no vuelva a crear una plantilla del control. Utilice el estilo básico intrínseco al control.
 
-- En la interfaz de usuario con temas, desplegables y cuadros combinados siguen los temas para los controles estándar.
+- En la interfaz de usuario temática, los cuadros combinados y los menús desplegables siguen el tema estándar de los controles.
 
 #### <a name="layout"></a>Diseño
-Desplegables y cuadros combinados deben ajustarse al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para arbitrariamente que coincida con la longitud de un campo largo, como una ruta de acceso.
+Los cuadros combinados y los menús desplegables deben tener un tamaño que se ajuste al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para que coincidan arbitrariamente con la longitud de un campo largo, como una ruta de acceso.
 
-![Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
+![Error: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Error: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
 
-![Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas.
+![Correcto: el tamaño de la lista desplegable permite el crecimiento de la traducción, pero no es innecesariamente largo.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correcto: el tamaño de la lista desplegable permite el crecimiento de la traducción, pero no es innecesariamente largo.
 
-### <a name="BKMK_CheckBoxes"></a> Casillas de verificación
-Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para las casillas de verificación](/windows/desktop/uxguide/ctrl-check-boxes).
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Casillas de verificación
+Para el comportamiento de interacción típico, siga las directrices de escritorio de [Windows para las casillas](/windows/desktop/uxguide/ctrl-check-boxes)de verificación .
 
-#### <a name="visual-style"></a>Estilo Visual
+#### <a name="visual-style"></a>Estilo visual
 
-- En los cuadros de diálogo de utilidad no re-template del control. Utilice el estilo básico intrínseco para el control.
+- En los cuadros de diálogo de utilidad, no vuelva a crear una plantilla del control. Utilice el estilo básico intrínseco al control.
 
-- En la interfaz de usuario con temas, las casillas de verificación siga los temas para los controles estándar.
-
-#### <a name="specialized-interactions"></a>Interacciones especializadas
-
-- Interacción con una casilla de verificación nunca debe aparecer un cuadro de diálogo o navegar a otra área.
-
-- Alinear las casillas de verificación con la línea de base de la primera línea de texto.
-
-     ![Incorrecto: la casilla de verificación se centra en el texto. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Incorrecto: la casilla de verificación se centra en el texto.
-
-     ![Correcto: la casilla de verificación se alinea con la primera línea del texto. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Correcto: la casilla de verificación se alinea con la primera línea del texto.
-
-### <a name="BKMK_RadioButtons"></a> Botones de radio
-Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para los botones de radio](/windows/desktop/uxguide/ctrl-radio-buttons).
-
-#### <a name="visual-style"></a>Estilo Visual
-En los cuadros de diálogo de utilidad hacer no los botones de opción de estilo. Utilice el estilo básico intrínseco para el control.
+- En la interfaz de usuario temática, las casillas de verificación siguen el tema estándar para los controles.
 
 #### <a name="specialized-interactions"></a>Interacciones especializadas
-No es necesario usar un marco de grupo para incluir opciones de radio, a menos que necesite mantener la distinción de grupo en un diseño de una estrecha.
 
-### <a name="BKMK_GroupFrames"></a> Marcos de grupo
-Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para los marcos de grupo](/windows/desktop/uxguide/ctrl-group-boxes).
+- La interacción con una casilla de verificación nunca debe abrir un cuadro de diálogo ni navegar a otra área.
 
-#### <a name="visual-style"></a>Estilo Visual
-En los cuadros de diálogo de utilidad no aplicar estilo a los marcos de grupo. Utilice el estilo básico intrínseco para el control.
+- Alinee las casillas de verificación con la línea base de la primera línea de texto.
+
+     ![Error: la casilla de verificación se centra en el texto.](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Error: la casilla de verificación se centra en el texto.
+
+     ![Correcto: la casilla de verificación está alineada con la primera línea del texto.](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correcto: la casilla de verificación está alineada con la primera línea del texto.
+
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Botones de radio
+Para el comportamiento de interacción típico, siga las directrices de escritorio de [Windows para botones](/windows/desktop/uxguide/ctrl-radio-buttons)de opción.
+
+#### <a name="visual-style"></a>Estilo visual
+En los cuadros de diálogo de utilidad, no aplicar estilo a los botones de opción. Utilice el estilo básico intrínseco al control.
+
+#### <a name="specialized-interactions"></a>Interacciones especializadas
+No es necesario utilizar una trama de grupo para incluir opciones de radio, a menos que necesite mantener la distinción de grupo en un diseño ajustado.
+
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Marcos de grupo
+Para el comportamiento de interacción típico, siga las [directrices de escritorio](/windows/desktop/uxguide/ctrl-group-boxes)de Windows para marcos de grupo.
+
+#### <a name="visual-style"></a>Estilo visual
+En los cuadros de diálogo de utilidad, no estilizar marcos de grupo. Utilice el estilo básico intrínseco al control.
 
 #### <a name="layout"></a>Diseño
 
-- No es necesario usar un marco de grupo para incluir opciones de radio, a menos que necesite mantener la distinción de grupo en un diseño de una estrecha.
+- No es necesario utilizar una trama de grupo para incluir opciones de radio, a menos que necesite mantener la distinción de grupo en un diseño ajustado.
 
-- Nunca use un marco de grupo para un único control.
+- Nunca utilice un marco de grupo para un solo control.
 
-- A veces es aceptable el uso de una regla horizontal en lugar de un contenedor de marco de grupo.
+- A veces es aceptable usar una regla horizontal en lugar de un contenedor de marco de grupo.
 
-## <a name="BKMK_TextControls"></a> Controles de texto
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Controles de texto
 
 ### <a name="static-text-fields"></a>Campos de texto estático
 
-Un campo de texto estático presenta información de solo lectura y no se puede seleccionar el usuario. No lo use para cualquier texto que el usuario podría desear copiar al Portapapeles. Sin embargo, puede cambiar el texto estático de solo lectura para reflejar un cambio de estado. En el ejemplo siguiente, el texto estático del nombre de salida en los cambios de grupo de información para reflejar los cambios realizados en el cuadro de texto raíz Namespace por encima de él.
+Un campo de texto estático presenta información de solo lectura y el usuario no puede seleccionarla. Evite usarlo para cualquier texto que el usuario desee copiar en el portapapeles. Sin embargo, el texto estático de solo lectura puede cambiar para reflejar un cambio de estado. En el ejemplo siguiente, el texto estático Nombre de salida en el grupo Información cambia para reflejar los cambios realizados en el cuadro de texto Espacio de nombres raíz situado encima de él.
 
 Hay dos maneras de mostrar información de texto estático.
 
-Puede ser texto estático en su propio en un cuadro de diálogo sin ningún contención cuando no hay ningún conflicto de agrupación. Decidir si las líneas adicionales de un cuadro son realmente necesarias. Un ejemplo es la presentación de una ruta de acceso de directorio en una sección creada por una línea de grupo, tal como se muestra a continuación:
+El texto estático puede estar solo en un cuadro de diálogo sin ninguna contención cuando no hay conflicto de agrupación. Decida si las líneas adicionales de una caja son realmente necesarias. Un ejemplo es la visualización de una ruta de directorio bajo una sección creada por una línea de grupo, como se muestra a continuación:
 
-![Información de texto estático en los controles de texto](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Información de texto estático en los controles de texto
+![Información de texto estático en controles de texto](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Información de texto estático en controles de texto
 
-En un cuadro de diálogo donde existen otras áreas agrupadas y contención de la información ayudaría a mejorar la legibilidad, y cuando puede ocultar o se muestra una sección (como en el **ventana propiedades** panel Descripción) o desea que sean coherentes con la interfaz de usuario similar Coloque el texto estático dentro de un cuadro. Este cuadro de grupo debe ser una sola regla y coloreado con el `ButtonShadow`:
+En un cuadro de diálogo donde existen otras áreas agrupadas y la contención de la información ayudaría a la legibilidad, y cuando una sección se puede ocultar o mostrar (como en el panel de descripción de la **ventana Propiedades)** o desea ser coherente con una interfaz de usuario similar, coloque el texto estático dentro de un cuadro. Este cuadro de grupo debe ser `ButtonShadow`una sola regla y coloreado con:
 
-![Texto estático en la ventana propiedades](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texto estático en la ventana Propiedades
+![Texto estático en la ventana Propiedades](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texto estático en la ventana Propiedades
 
 ### <a name="read-only-text-box"></a>Cuadro de texto de solo lectura
 
-Esto permite al usuario seleccionar el texto dentro del campo, pero no editarlo. Estos cuadros de texto están rodeados por lo usual Cincel 3D con un `ButtonShadow` relleno.
+Esto permite al usuario seleccionar el texto dentro del campo pero no editarlo. Estos cuadros de texto están bordeados por `ButtonShadow` el cincel 3D habitual con un relleno.
 
-Un cuadro de texto puede activarse (editable) cuando un usuario modifica un control asociado, como activar y desactivar una casilla o un botón de opción de seleccionar o deseleccionar. Por ejemplo, en el **herramientas &gt; opciones** página se muestra a continuación, el **página principal** cuadro de texto está activo cuando el **usar predeterminado** casilla de verificación está desactivada.
+Un cuadro de texto puede activarse (editable) cuando un usuario modifica un control asociado, como activar/desmarcar una casilla de verificación o seleccionar o anular la selección de un botón de opción. Por ejemplo, en la página ** &gt; Opciones** de herramientas que se muestra a continuación, el cuadro de texto **Página principal** se activa cuando la casilla Usar **predeterminado** está desactivada.
 
-![Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos
+![Cuadro de texto de solo lectura, que muestra los estados inactivos y activos](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Cuadro de texto de solo lectura, que muestra los estados inactivos y activos
 
-### <a name="using-text-in-dialogs"></a>Uso de texto en los cuadros de diálogo
+### <a name="using-text-in-dialogs"></a>Uso de texto en cuadros de diálogo
 
-Directrices clave de texto en cuadros de diálogo:
+Directrices clave para el texto en los cuadros de diálogo:
 
-- Las etiquetas de los cuadros de texto, cuadros de lista y los marcos en los cuadros de diálogo unthemed empiezan con un verbo, dispone de una mayúscula inicial en la primera palabra y terminan con un signo de dos puntos.
+- Las etiquetas de cuadros de texto, cuadros de lista y marcos en cuadros de diálogo sin tema comienzan con un verbo, tienen un mayúscula inicial solo en la primera palabra y terminan con dos puntos.
 
-    > Los controles de texto en cuadros de diálogo con temas siguen [directrices de experiencia de usuario de escritorio de Windows](/windows/desktop/uxguide/top-violations) y no hacen que la puntuación final, a excepción de signos de interrogación en vínculos de ayuda.
+    > Los controles de texto de los cuadros de diálogo temáticos siguen [las directrices](/windows/desktop/uxguide/top-violations) de la experiencia de usuario de escritorio de Windows y no toman la puntuación final, con la excepción de los signos de interrogación en los vínculos de ayuda.
 
-- Las etiquetas de las casillas y botones de opción empiezan con un verbo, una mayúscula inicial en la primera palabra únicamente y no tienen puntuación final.
+- Las etiquetas para las casillas de verificación y los botones de opción comienzan con un verbo, un mayúscula inicial solo en la primera palabra y no tienen puntuación final.
 
-- Las etiquetas de los botones, menús, elementos de menú y las fichas tienen mayúsculas iniciales en todas las palabras (título).
+- Las etiquetas de botones, menús, elementos de menú y pestañas tienen mayúsculas iniciales en cada palabra (caso de título).
 
-- Terminología de etiqueta debe ser coherente con las etiquetas similares en otros cuadros de diálogo.
+- La terminología de etiquetas debe ser coherente con etiquetas similares en otros cuadros de diálogo.
 
-- Si es posible, debe tener un sistema de escritura/editor de escribir o aprobar el texto antes de enviarlos al desarrollador para la implementación.
+- Si es posible, pida a un escritor/editor que escriba o apruebe el texto antes de que vaya al desarrollador para su implementación.
 
-- Todos los controles deben tener etiquetas, excepto en circunstancias especiales en qué tabulación es suficiente.
-Use texto de aplicación auxiliar cuando corresponda.
+- Todos los controles deben tener etiquetas, excepto en circunstancias especiales en las que la tabulación sea suficiente.
+Utilice texto auxiliar cuando sea apropiado.
 
 ### <a name="helper-text"></a>Texto auxiliar
 
-Se incluyen en los cuadros de diálogo para ayudar al usuario a comprender el propósito del cuadro de diálogo o para indicar qué acción realizar. Texto auxiliar debe usarse solo cuando sea necesario para no colapsar los cuadros de diálogo simple. Las variantes de texto auxiliares son cuadro de diálogo y marca de agua.
+Incluido en los cuadros de diálogo para ayudar al usuario a entender el propósito del cuadro de diálogo o para indicar qué acción realizar. El texto auxiliar solo se debe usar cuando sea necesario para evitar el desorden de los cuadros de diálogo simples. Las dos variaciones del texto auxiliar son diálogo y marca de agua.
 
-Siga las ubicaciones comunes para el texto de la aplicación auxiliar y sea selectivo con la introducción de nuevas áreas. Escenarios comunes para el texto de la aplicación auxiliar son:
+Siga las ubicaciones comunes para el texto auxiliar y sea selectivo en la introducción de nuevas áreas. Los escenarios comunes para el texto auxiliar son:
 
-- Texto auxiliar en los cuadros de diálogo, para proporcionar una dirección adicional acerca de cómo interactuar con un cuadro de diálogo complejo.
+- Texto auxiliar en los cuadros de diálogo, para dar instrucciones adicionales sobre cómo interactuar con un cuadro de diálogo complejo.
 
-- Texto de marca de agua en las ventanas de herramientas vacía o cuadros de diálogo para explicar por qué no hay contenido está visible.
+- Texto de marca de agua en ventanas de herramientas o cuadros de diálogo vacíos, para explicar por qué no hay contenido visible.
 
-- Un panel de descripción, al igual que en la parte inferior de la **ventana propiedades**.
+- Un panel de descripción, como en la parte inferior de la **ventana Propiedades**.
 
-- Marca de agua texto en un editor vacío, explicar qué acción debe realizar el usuario para empezar a trabajar.
+- Texto de marca de agua en un editor vacío, para explicar qué acción debe realizar el usuario para empezar.
 
 ### <a name="dialog-helper-text"></a>Texto del asistente del cuadro de diálogo
 
-Un diseñador de la experiencia de usuario puede ayudar a determinar cuándo es apropiado el texto de la aplicación auxiliar. El diseñador puede definir donde aparece el texto de la aplicación auxiliar, así como su contenido general. Asistencia al usuario puede escribir o editar el texto real.
+Un diseñador de experiencia de usuario puede ayudar a determinar cuándo el texto auxiliar es adecuado. El diseñador puede definir dónde aparece el texto auxiliar, así como su contenido general. La asistencia del usuario puede escribir/editar el texto real.
 
 ### <a name="watermarks"></a>Marcas de agua
 
-Cuadros de diálogo de beneficiarán de las directrices de marca de agua ligeramente diferente. Dado que un cuadro de diálogo puede aparecer ocupado con muchos elementos de interfaz de usuario (etiquetas, texto de sugerencia, botones y otros controles de contenedor con texto), especialmente cuando los que aparecen en negro, las marcas de agua destaquen más en color gris oscuro (VSColor: `ButtonShadow`). Normalmente, aparece una marca de agua dentro de un control como un cuadro de lista con un fondo blanco (VSColor: `Window`).
+Los diálogos se benefician de pautas de marca de agua ligeramente diferentes. Dado que un cuadro de diálogo puede aparecer ocupado con muchos elementos de la interfaz de usuario (etiquetas, texto de `ButtonShadow`sugerencia, botones y otros controles de contenedor con texto), especialmente cuando aparecen en negro, las marcas de agua se destacan mejor en gris oscuro (VSColor: ). Normalmente, una marca de agua aparece dentro de un `Window`control como un cuadro de lista con un fondo blanco (VSColor: ).
 
-- El texto aparece en gris oscuro (VSColor: `ButtonShadow`). Sin embargo, si aparece la marca de agua en un gris medio o en otro color (VSColor: `ButtonFace`) en segundo plano y no hay se refieren a sobre su legibilidad, vaya con texto negro (VSColor: `WindowText`).
+- El texto aparece en gris `ButtonShadow`oscuro (VSColor: ). Sin embargo, si la marca de agua aparece `ButtonFace`en un fondo gris medio u otro color (VSColor: ) y hay preocupación sobre su legibilidad, vaya con texto negro (VSColor: `WindowText`).
 
-- Las marcas de agua se centra o alineación a la izquierda. Aplicar reglas de diseño estándar al tomar decisiones de alineación. No se puede seleccionar la marca de agua en segundo plano.
+- Las marcas de agua se pueden centrar o a la izquierda. Aplique reglas de diseño estándar al tomar decisiones de alineación. La marca de agua no se puede seleccionar en el fondo.
 
 ![Ejemplo de texto de marca de agua](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Ejemplo de texto de marca de agua
 
-### <a name="context-specific-dynamic-text"></a>Texto (dinámica) específicos del contexto
+### <a name="context-specific-dynamic-text"></a>Texto específico del contexto (dinámico)
 
-Texto dinámico puede ser utilizado de dos formas en un cuadro de diálogo o la interfaz de usuario no modal: como una etiqueta dinámica o como contenido dinámico.
+El texto dinámico se puede utilizar de dos maneras en un cuadro de diálogo o una interfaz de usuario no modificada: como una etiqueta dinámica o como contenido dinámico.
 
-- Etiqueta dinámica: es un uso común de texto dinámico en paneles descriptivos que ofrecen más información para el elemento seleccionado, como un cuadro de diálogo que contiene una lista de elementos y propiedades para los elementos que se muestran en una cuadrícula a la derecha. La etiqueta de la cuadrícula de propiedades puede ser dinámica para que cuando se selecciona un elemento de la izquierda, la cuadrícula a la derecha muestra información de ese elemento específico.
+- Etiqueta dinámica: un uso común del texto dinámico se encuentra en paneles descriptivos que ofrecen más información para el elemento seleccionado, como en un cuadro de diálogo que contiene una lista de elementos y propiedades para los elementos que se muestran en una cuadrícula a la derecha. La etiqueta de la cuadrícula de propiedades puede ser dinámica para que cuando se selecciona un elemento a la izquierda, la cuadrícula de la derecha muestre información para ese elemento específico.
 
-- Texto dinámico: puede ser útil en casos donde debe mostrar información específica y obtener información general de esta manera, pero debe tener cuidado para no abusar.
+- Texto dinámico: puede ser útil en casos en los que necesita mostrar información específica y no información general de esta manera, pero se debe tener cuidado de no hacer uso excesivo.
 
-Si desea que los usuarios tengan la capacidad de copiar la información, debe ser texto dinámico en un campo de texto de solo lectura.
+Si desea que los usuarios tengan la capacidad de copiar la información, el texto dinámico debe estar en un campo de texto de solo lectura.
 
-## <a name="BKMK_ButtonsAndHyperlinks"></a> Botones e hipervínculos
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Botones e hipervínculos
 
 ### <a name="overview"></a>Información general
-Controles de botones y link (hipervínculos) deben seguir [instrucciones básicas de escritorio de Windows en los hipervínculos](/windows/desktop/uxguide/ctrl-links) para el uso de redacción, ajustar el tamaño y espaciado.
+Los botones y controles de vínculo (hipervínculos) deben seguir las instrucciones básicas de Escritorio de [Windows sobre hipervínculos](/windows/desktop/uxguide/ctrl-links) para el uso, la redacción, el tamaño y el espaciado.
 
-### <a name="choosing-between-buttons-and-links"></a>Elegir entre los botones y vínculos
-Tradicionalmente, los botones se han usado para las acciones y los hipervínculos se han reservado para la navegación. Se pueden usar los botones en todos los casos, pero se ha ampliado el rol de vínculos en Visual Studio para que los botones y los vínculos son más intercambiables en ciertas condiciones.
+### <a name="choosing-between-buttons-and-links"></a>Elegir entre botones y enlaces
+Tradicionalmente, los botones se han utilizado para acciones y los hipervínculos se han reservado para la navegación. Los botones se pueden usar en todos los casos, pero el rol de vínculos se ha expandido en Visual Studio para que los botones y vínculos sean más intercambiables en algunas condiciones.
 
 Cuándo utilizar los botones de comando:
 
-- Principales comandos
+- Comandos primarios
 
-- Mostrar ventanas que se usan para recopilar la entrada o tomar decisiones, incluso si son comandos secundarios
+- Visualización de ventanas utilizadas para recopilar entradas o tomar decisiones, incluso si son comandos secundarios
 
 - Acciones destructivas o irreversibles
 
 - Botones de compromiso dentro de los asistentes y flujos de página
 
-Evite los botones de comando de ventanas de herramientas, o si necesita más de dos palabras de la etiqueta. Vínculos pueden tener más etiquetas.
+Evite los botones de comando en las ventanas de herramientas o si necesita más de dos palabras para la etiqueta. Los vínculos pueden tener etiquetas más largas.
 
- Cuando se usan los vínculos:
+ Cuándo utilizar enlaces:
 
 - Navegación a otra ventana, documento o página web
 
-- Situaciones que requieran una etiqueta más tiempo o una frase corta para describir el propósito de la acción
+- Situaciones que requieren una etiqueta más larga o una frase corta para describir la intención de la acción
 
-- Espacios reducidos donde podría sobrecargar un botón de la interfaz de usuario, siempre que la acción no es destructivo o irreversible
+- Espacios estrechos donde un botón abrumaría a la interfaz de usuario, siempre que la acción no sea destructiva o irreversible
 
-- Deserialización realce comandos secundarios en situaciones donde hay muchos comandos
+- Desenfatizar los comandos secundarios en situaciones en las que hay muchos comandos
 
 #### <a name="examples"></a>Ejemplos
-![Vínculos que se usan en la barra de información que sigue a un mensaje de estado del comando](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703 01_CommandLinkInfobar")<br />Comando vínculos que se usan en la barra de información que sigue a un mensaje de estado
+![Enlaces de comandos utilizados en la barra de información después de un mensaje de estado](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />Enlaces de comandos utilizados en la barra de información después de un mensaje de estado
 
-![Vínculos que se usan en el menú emergente de CodeLens](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703 02_LinksInCodeLens")<br />Vínculos que se usan en el menú emergente de CodeLens
+![Vínculos que se usan en el menú emergente de CodeLens](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />Vínculos que se usan en el menú emergente de CodeLens
 
-![Vínculos que se usan para los comandos secundaria donde botones conllevaría demasiada atención](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703 03_LinksAsSecondaryCommands")<br />Vínculos que se usan para los comandos secundaria donde botones conllevaría demasiada atención
+![Enlaces utilizados para comandos secundarios donde los botones atraerían demasiada atención](../../extensibility/ux-guidelines/media/070703-03_linksassecondarycommands.png "070703-03_LinksAsSecondaryCommands")<br />Enlaces utilizados para comandos secundarios donde los botones atraerían demasiada atención
 
 ### <a name="common-buttons"></a>Botones comunes
 
-#### <a name="text"></a>Text
-Siga las instrucciones de escritura de [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
+#### <a name="text"></a>Texto
+Siga las directrices de escritura en el texto y la terminología de la interfaz de [usuario.](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)
 
-#### <a name="visual-style"></a>Estilo Visual
+#### <a name="visual-style"></a>Estilo visual
 
-##### <a name="standard-unthemed"></a>Estándar (unthemed)
-La mayoría de los botones en Visual Studio aparecerán en los cuadros de diálogo de utilidad y no deben cambiar el estilo. Debe reflejar el aspecto de botones estándar dictado por el sistema operativo.
+##### <a name="standard-unthemed"></a>Estándar (sin tema)
+La mayoría de los botones de Visual Studio aparecerán en los cuadros de diálogo de la utilidad y no se deben aplicar estilos. Deben reflejar la apariencia estándar de los botones según lo dictado por el sistema operativo.
 
-##### <a name="themed"></a>Con temas
-En algunos casos, se pueden usar los botones dentro de la interfaz de usuario con estilo y deben cambiar el estilo adecuadamente estos botones. Consulte [cuadros de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) para obtener información sobre los controles con tema.
+##### <a name="themed"></a>Temática
+En algunos casos, los botones se pueden usar dentro de la interfaz de usuario con estilo y estos botones deben tener un estilo adecuado. Consulte [Diálogos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) para obtener información sobre los controles temáticos.
 
 ### <a name="special-buttons"></a>Botones especiales
 
-#### <a name="browse-buttons"></a>Botones para examinar...
-**[Examinar...]**  botones se utilizan en las cuadrículas, cuadros de diálogo y las ventanas de herramientas y otros elementos de interfaz de usuario no modales. Muestra un selector que ayuda al usuario en rellenar un valor en un control. Hay dos variaciones de este botón, largo y corto.
+#### <a name="browse-buttons"></a>Navega... Botones
+**[Examinar...]** botones se utilizan en cuadrículas, cuadros de diálogo y ventanas de herramientas y otros elementos de interfaz de usuario no esmimoso. Muestran un selector que ayuda al usuario a rellenar un valor en un control. Hay dos variaciones de este botón, largo y corto.
 
-![El botón [Examinar...] largo](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703 04_BrowseLong")<br />El botón [Examinar...] largo
+![El botón largo [Examinar...]](../../extensibility/ux-guidelines/media/070703-04_browselong.gif "070703-04_BrowseLong")<br />El botón largo [Examinar...]
 
-![El botón corto con solo puntos suspensivos […]](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703 05_BrowseShort")<br />El botón corto con solo puntos suspensivos […]
+![El botón corto de puntos suspensivos [...]](../../extensibility/ux-guidelines/media/070703-05_browseshort.gif "070703-05_BrowseShort")<br />El botón corto de puntos suspensivos [...]
 
-Cuándo se debe usar el botón corto con solo puntos suspensivos:
+Cuándo utilizar el botón corto de solo puntos suspensivos:
 
-- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, como cuando se permiten varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación ( **& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).
+- Si hay más de un botón largo **[Examinar...]** en un cuadro de diálogo, como cuando varios campos permiten la navegación. Utilice el botón corto **[...]** para cada uno para evitar las claves de acceso confusas creadas por esta situación** (&Examinar** y **B&rowse** en el mismo cuadro de diálogo).
 
-- En un cuadro de diálogo estrecha, o cuando no hay ningún lugar razonable para colocar el botón de largo.
+- En un diálogo apretado, o cuando no hay un lugar razonable para colocar el botón largo.
 
 - Si el botón aparecerá en un control de cuadrícula.
 
-Directrices para usar el botón:
+Directrices para el uso del botón:
 
-- No use una clave de acceso. Para acceder a ella mediante el teclado, el usuario debe tabulaciones desde el control adyacente. Asegúrese de que el orden de tabulación es tal que se encuentra ningún botón de examinar inmediatamente después del campo que va a rellenar. Nunca use un carácter de subrayado debajo del primer período.
+- No utilice una clave de acceso. Para acceder a él mediante el teclado, el usuario debe tabular desde el control adyacente. Asegúrese de que el orden de tabulación es tal que cualquier botón de exploración cae inmediatamente después del campo que se rellenará. Nunca utilice un carácter de subrayado por debajo del primer período.
 
-- Establecer Microsoft Active Accessibility (MSAA) **nombre** propiedad **Examinar...**  (incluidos los puntos suspensivos) para que la pantalla se leerá, como "Examinar" y no "dot-punto" o "período período período." Esto implica la configuración de controles administrados, el **AccessibleName** propiedad.
+- Establezca la propiedad **Nombre** de microsoft Active Accessibility (MSAA) en **Examinar...** (incluidos los puntos suspensivos) para que los lectores de pantalla la lean como "Examinar" y no "punto-punto-punto" o "período-período-período." Para los controles administrados, esto significa establecer el **AccessibleName** propiedad.
 
-- Nunca use un botón de puntos suspensivos **[...]**  botón salvo para una acción de exploración. Por ejemplo, si necesita un **[nuevo...]**  botón pero no tiene suficiente espacio para el texto, a continuación, debe volver a diseñar el cuadro de diálogo.
+- Nunca utilice un botón de puntos suspensivos **[...]** para nada excepto una acción de exploración. Por ejemplo, si necesita un botón **[Nuevo...]** pero no tiene suficiente espacio para el texto, el cuadro de diálogo debe rediseñarse.
 
-##### <a name="sizing-and-spacing"></a>Ajuste de tamaño y espaciado
-![Botones [Examinar...] de ajuste de tamaño: versión standard es 75 x 23 píxeles, versión corta es 26 x 23 píxeles](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703 06_BrowseSizing")<br />Tamaño de los botones [Examinar...]
+##### <a name="sizing-and-spacing"></a>Tamaño y espaciado
+![Botones de tamaño [Examinar...]: la versión estándar es de 75x23 píxeles, la versión corta es de 26x23 píxeles](../../extensibility/ux-guidelines/media/070703-06_browsesizing.png "070703-06_BrowseSizing")<br />Tamaño de los botones [Examinar...]
 
-![Botones [Examinar...] de espaciado: espaciado entre control relacionado y píxeles de 7 de botón estándares de exploración, el espaciado entre el control relacionado y examinar corto botón 5 píxeles](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703 07_BrowseSpacing")<br />Espaciado de los botones [Examinar...]
+![Espaciado [Examinar...]Botones: espaciado entre el control relacionado y el botón estándar Examinar 7 píxeles, espaciado entre el control relacionado y el botón corto Examinar 5 píxeles](../../extensibility/ux-guidelines/media/070703-07_browsespacing.png "070703-07_BrowseSpacing")<br />Espaciado de los botones [Examinar...]
 
 #### <a name="graphical-buttons"></a>Botones gráficos
-Algunos de los botones deben utilizar siempre una imagen gráfica y nunca incluyen texto para ahorrar espacio y evitar problemas de localización. A menudo se usan en otras listas que se puede ordenar y selectores de campo.
+Algunos botones siempre deben usar una imagen gráfica y nunca incluir texto para ahorrar espacio y evitar problemas de localización. Estos se utilizan a menudo en selectores de campo y otras listas que se pueden ordenar.
 
 > [!NOTE]
-> Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Mapa del `name` propiedad del botón a la acción que se tarda para que los lectores de pantalla interpretan correctamente la acción del botón.
+> Los usuarios tienen que tabular estos botones (no hay claves de acceso), así que colóquelos en un orden razonable. Asigne `name` la propiedad del botón a la acción que realiza para que los lectores de pantalla interpreten correctamente la acción del botón.
 
 | Función | Botón |
 | --- | --- |
-| Agregar | ![Botón "Agregar" gráfico](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
-| Quitar | ![Botón gráfico "Quitar"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
-| Agregar todo | ![Botón gráfico "Agregar todo"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| Quitar todo | ![Botón gráfico "Quitar todo"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
-| Subir | ![Botón gráfico "Subir"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
-| Bajar | ![Botón gráfico "Bajar"](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| Eliminar | ![Botón gráfico "Eliminar"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
+| Sumar | ![Botón gráfico "Agregar"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| Remove | ![Botón gráfico "Quitar"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Agregar todo | ![Botón gráfico "Agregar todo"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
+| Quitar todo | ![Botón gráfico "Quitar todo"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
+| Subir | ![Botón gráfico "Subir"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
+| Bajar | ![Botón gráfico "Bajar"](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
+| Eliminar | ![Botón gráfico "Eliminar"](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
-##### <a name="sizing-and-spacing"></a>Ajuste de tamaño y espaciado
-Cambiar el tamaño de botones gráficos es el mismo que para la versión abreviada de la **[Examinar...]**  botón (26 x 23 píxeles):
+##### <a name="sizing-and-spacing"></a>Tamaño y espaciado
+El tamaño de los botones gráficos es el mismo que para la versión corta del botón **[Examinar...]** (26x23 píxeles):
 
-![Apariencia de una imagen gráfica en el botón, con y sin color transparente](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703 15_GraphicalButtonSpacing")<br />Apariencia de una imagen gráfica en el botón, con y sin color transparente
+![Apariencia de una imagen gráfica en el botón, con y sin color transparente que se muestra](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")<br />Apariencia de una imagen gráfica en el botón, con y sin color transparente que se muestra
 
 ### <a name="hyperlinks"></a>Hipervínculos
-Los hipervínculos son adecuados para las acciones basadas en la navegación, como abrir un tema de ayuda, cuadro de diálogo modal o el asistente. Si se usa un hipervínculo para un comando, siempre debería mostrar un cambio notable y visible para la interfaz de usuario. En general, las acciones que se compromete a una acción (por ejemplo, guardar, Cancelar y eliminar) se comunican mejor mediante un botón.
+Los hipervínculos son adecuados para acciones basadas en navegación, como abrir un tema de Ayuda, un cuadro de diálogo modal o un asistente. Si se utiliza un hipervínculo para un comando, siempre debe mostrar un cambio visible y notable en la interfaz de usuario. En general, las acciones que se confirman en una acción (como Guardar, Cancelar y Eliminar) se comunican mejor mediante un botón.
 
 #### <a name="writing-style"></a>Estilo de escritura
-Siga el [orientación de escritorio de Windows para el texto de la interfaz de usuario](/windows/desktop/uxguide/text-ui). No use "Aprender más acerca de," "Saber más acerca de" o "Get help con este" frases. En su lugar, frase de texto del vínculo de ayuda en cuanto a la pregunta principal por el contenido de ayuda. Por ejemplo, "**cómo agregar un servidor en el Explorador de servidores?** "
+Siga las instrucciones de escritorio de Windows para el texto de la interfaz de [usuario.](/windows/desktop/uxguide/text-ui) No uses frases sobre "Más información", "Cuéntame más" o "Obtén ayuda con esto". En su lugar, frase Ayuda vincular texto en términos de la pregunta principal respondida por el contenido de la Ayuda. Por ejemplo,**"¿Cómo agrego un servidor al Explorador**de servidores? "
 
-#### <a name="visual-style"></a>Estilo Visual
+#### <a name="visual-style"></a>Estilo visual
 
-- Siempre deben usar hipervínculos [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Si un hipervínculo no se ha adaptado correctamente, parpadea en color rojo cuando está activo o se muestra un color diferente después de que se visita.
+- Los hipervínculos siempre deben usar [el servicio VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Si un hipervínculo no tiene un estilo correcto, parpadea en rojo cuando está activo o muestra un color diferente después de ser visitado.
 
-- No incluya un subrayado en el control sobre el estado situado a menos que el vínculo es un fragmento de frase dentro de una frase completa, como en una marca de agua.
+- No incluya subrayados en el estado de reposo del control a menos que el vínculo sea un fragmento de oración dentro de una oración completa, como en una marca de agua.
 
-- No deberían aparecen subrayados al mantener el mouse. En su lugar, los comentarios al usuario que el vínculo está activo son un cambio de color pequeñas y el cursor del vínculo apropiado.
+- Los subrayados no deben aparecer al pasar el ratón. En su lugar, los comentarios al usuario de que el vínculo está activo es un ligero cambio de color y el cursor de vínculo adecuado.
 
-## <a name="BKMK_TreeViews"></a> Vistas de árbol
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Vistas a los árboles
 
-Vistas de árbol proporcionan una manera de organizar complejos se muestra en grupos de elementos primarios y secundarios. Un usuario puede expandir o contraer grupos primarios para mostrar u ocultar los elementos secundarios subyacentes. Cada elemento dentro de una vista de árbol puede seleccionarse para proporcionar más acciones.
+Las vistas de árbol proporcionan una manera de organizar listas complejas en grupos primarios y secundarios. Un usuario puede expandir o contraer grupos primarios para mostrar u ocultar los elementos secundarios subyacentes. Cada elemento de una vista de árbol se puede seleccionar para proporcionar más acción.
 
-### <a name="BKMK_TreeViewVisualStyle"></a> Estilo visual de la vista de árbol
+### <a name="tree-view-visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Estilo visual de vista de árbol
 
-#### <a name="expanders"></a>Controles de expansión
-El diseño de botón de expansión utilizado por Windows y Visual Studio deben cumplir los controles de vista de árbol. Cada nodo utiliza un control expander para mostrar u ocultar los elementos subyacentes. Uso de un control expander proporciona una coherencia para los usuarios que pueden surgir vistas de árbol diferentes dentro de Windows y Visual Studio.
+#### <a name="expanders"></a>Expansores
+Los controles de vista de árbol deben ajustarse al diseño del expansor utilizado por Windows y Visual Studio. Cada nodo utiliza un control de expansión para mostrar u ocultar los elementos subyacentes. El uso de un control de expansión proporciona coherencia a los usuarios que pueden encontrar diferentes vistas de árbol dentro de Windows y Visual Studio.
 
-![Correcto: estilo correspondiente del nodo de vista de árbol mediante un control expander](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correcto: estilo correspondiente del nodo de vista de árbol mediante un control expander
+![Correcto: estilo adecuado del nodo de vista de árbol mediante un control de expansión](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correcto: estilo adecuado del nodo de vista de árbol mediante un control de expansión
 
-![Incorrecta: estilo incorrecto del nodo de la vista de árbol](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705 2_TreeViewIncorrect1")<br />Incorrecta: estilo incorrecto del nodo de la vista de árbol
+![Error: estilo incorrecto del nodo de vista de árbol](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />Error: estilo incorrecto del nodo de vista de árbol
 
 #### <a name="selection"></a>Número de selección
-Cuando se selecciona un nodo dentro de la vista de árbol, debe expandir el resaltado para todo el ancho del control de vista de árbol. Esto ayuda a los usuarios a identificar claramente qué elemento ha seleccionado. Colores de selección deben reflejar el tema actual de Visual Studio.
+Cuando se selecciona un nodo dentro de la vista de árbol, el resaltado debe expandirse al ancho completo del control de vista de árbol. Esto ayuda a los usuarios a identificar claramente qué elemento han seleccionado. Los colores de selección deben reflejar el tema actual de Visual Studio.
 
-![Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.
+![Correcto: el resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correcto: el resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.
 
-![Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol.
+![Error: el resaltado del nodo seleccionado no se ajusta a todo el ancho del control de vista de árbol.](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Error: el resaltado del nodo seleccionado no se ajusta a todo el ancho del control de vista de árbol.
 
 #### <a name="icons"></a>Iconos
-Si ayudar a identificar visualmente las diferencias entre los elementos de iconos solo deben usarse en controles de vista de árbol. En general, los iconos deben usarse solo en listas heterogéneas en el que los iconos de llevan información para diferenciar los tipos de elementos. En una lista homogénea mediante iconos, con frecuencia pueden considerarse como ruido y debe evitarse. En ese caso, el icono de grupo (principal) puede transmitir el tipo de elementos dentro de él. La excepción a esta regla sería si el icono es dinámico y se utiliza para indicar el estado.
+Los iconos solo se deben usar en los controles de vista de árbol si ayudan a identificar visualmente las diferencias entre los elementos. En general, los iconos deben utilizarse únicamente en listas heterogéneas en las que los iconos llevan información para diferenciar los tipos de elementos. En una lista homogénea el uso de iconos se puede ver con frecuencia como ruido y debe evitarse. En ese caso, el icono de grupo (principal) puede transmitir el tipo de elementos dentro de él. La excepción a esta regla sería si el icono es dinámico y se utiliza para indicar el estado.
 
 #### <a name="scroll-bars"></a>Barras de desplazamiento
-Siempre deben estar oculta las barras de desplazamiento si el contenido se ajusta dentro del control de vista de árbol. Es aceptable para las barras de desplazamiento se oculta o semitransparente en una ventana desplazable y aparecen cuando la ventana que contiene la vista de árbol tiene el foco, o después al mantener el mouse del árbol ver propio.
+Las barras de desplazamiento siempre deben estar ocultas si el contenido se ajusta al control de vista de árbol. Es aceptable que las barras de desplazamiento estén ocultas o semitransparentes en una ventana desplazable y aparezcan cuando la ventana que contiene la vista de árbol tenga el foco o al pasar el cursor por la propia vista de árbol.
 
-![Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.
+![Las barras de desplazamiento verticales y horizontales se muestran porque el contenido ha superado los límites del control de vista de árbol.](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Las barras de desplazamiento verticales y horizontales se muestran porque el contenido ha superado los límites del control de vista de árbol.
 
-### <a name="BKMK_TreeViewInteractions"></a> Interacciones de la vista de árbol
+### <a name="tree-view-interactions"></a><a name="BKMK_TreeViewInteractions"></a>Interacciones con la vista de árbol
 
 #### <a name="context-menus"></a>Menús contextuales
-Un nodo de vista de árbol puede mostrar las opciones de submenú en un menú contextual. Normalmente, esto se produce cuando un usuario ha hecho un elemento o presionó la tecla de menú en un teclado de Windows con el elemento seleccionado. Es importante que el nodo recibe el foco y está seleccionado. Esto ayuda al usuario a identificar qué elemento al que pertenece el submenú.
+Un nodo de vista de árbol puede mostrar opciones de submenú en un menú contextual. Normalmente, esto ocurre cuando un usuario ha hecho clic con el botón derecho en un elemento o ha presionado la tecla Menú en un teclado de Windows con el elemento seleccionado. Es importante que el nodo gane el foco y esté seleccionado. Esto ayuda al usuario a identificar a qué elemento pertenece el submenú.
 
-![El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado.
+![El elemento que ha generado el menú contextual gana el foco para notificar al usuario qué elemento se ha seleccionado.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />El elemento que ha generado el menú contextual gana el foco para notificar al usuario qué elemento se ha seleccionado.
 
 #### <a name="keyboard"></a>Teclado
-La vista de árbol debe proporcionar la capacidad de expandir y contraer los nodos mediante el teclado y seleccionar elementos. Esto garantiza que navegación cumple con nuestros requisitos de accesibilidad.
+La vista de árbol debe proporcionar la capacidad de seleccionar elementos y expandir o contraer nodos con el teclado. Esto garantiza que la navegación cumpla con nuestros requisitos de accesibilidad.
 
 ##### <a name="tree-view-control"></a>Control de vista de árbol
-Controles de árbol Visual Studio deben seguir la navegación de teclado comunes:
+Los controles de árbol de Visual Studio deben seguir la navegación de teclado común:
 
-- **Arriba:** Seleccionar elementos moviendo el árbol
+- **Flecha arriba:** Seleccione elementos subiendo el árbol
 
-- **Abajo:** Seleccione los elementos al mover hacia abajo en el árbol
+- **Flecha abajo:** Seleccione elementos bajando el árbol
 
-- **Flecha derecha:** Expanda un nodo en el árbol
+- **Flecha derecha:** Expandir un nodo en el árbol
 
 - **Flecha izquierda:** Contraer un nodo en el árbol
 
-- **Escriba la clave:** Iniciar, cargar, ejecutar el elemento seleccionado
+- **Introduzca la clave:** Iniciar, cargar, ejecutar el elemento seleccionado
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (vista de árbol y vista de cuadrícula)
-Un control de trid es un control complejo que contiene una vista de árbol dentro de una cuadrícula. Expandir, contraer y navegar por el árbol deben respetar los mismos comandos de teclado que una vista de árbol, con las siguientes adiciones:
+Un control trid es un control complejo que contiene una vista de árbol dentro de una cuadrícula. Expandir, contraer y navegar por el árbol debe respetar los mismos comandos de teclado que una vista de árbol, con las siguientes adiciones:
 
-- **Flecha derecha:** Expanda un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.
+- **Flecha derecha:** Expanda un nodo. Después de expandir el nodo, debe continuar navegando a la columna más cercana a la derecha. La navegación debe detenerse al final de la fila.
 
-- **Pestaña:** Navega a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.
+- **Pestaña:** Navega a la celda más cercana a la derecha.  Al final de la fila, la navegación continúa a la siguiente fila.
 
-- **Mayús + Tab:** Navega a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.
+- **Mayús + Tabulador:** Navega a la celda más cercana a la izquierda.  Al principio de la fila, la navegación continúa a la celda más a la derecha de la fila anterior.
 
-![Un control de trid en Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Un control de trid en Visual Studio
+![Un control trid en Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Un control trid en Visual Studio

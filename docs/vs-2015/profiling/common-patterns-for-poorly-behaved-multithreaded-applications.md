@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852162"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586630"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "75852162"
 El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el comportamiento de una aplicación multiproceso. Esta herramienta incluye una galería de modelos comunes para aplicaciones multiproceso que se comporten incorrectamente. La galería incluye patrones visuales típicos y reconocibles que se exponen a través de la herramienta, junto con una explicación del comportamiento que cada patrón representa, el resultado probable de ese comportamiento y el enfoque más común para resolverlo.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>Contención de bloqueo y ejecución serializada  
- ![Contención de bloqueo que produce una ejecución serializada](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
+ ![Contención de bloqueo cuyo resultado es una ejecución serializada](../profiling/media/lockcontention-serialized.png "LockContention_Serialized")  
   
  A veces, una aplicación en paralelo continúa ejecutándose en serie repetidamente, aunque tenga varios subprocesos y el equipo tenga un número suficiente de núcleos lógicos. El primer síntoma es un bajo rendimiento multiproceso, incluso un poco más lento que una implementación en serie. En la vista Subprocesos, no se ven varios subprocesos que se ejecutan en paralelo; en su lugar, se ve un solo subproceso ejecutándose en cualquier momento. En este punto, si hace clic en un segmento de sincronización en un subproceso, puede ver una pila de llamadas para el subproceso bloqueado (pila de llamadas de bloqueo) y el subproceso que quitó la condición de bloqueo (pila de llamadas de desbloqueo). Además, si la pila de llamadas de desbloqueo se produce en el proceso que está analizando, se muestra un conector listo para subprocesos. A partir de aquí, puede navegar al código desde las pilas de llamadas de bloqueo y de desbloqueo para seguir investigando la causa de la serialización.  
   
  Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.  
   
- Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](https://blogs.msdn.com/hshafi) en el sitio web del blog de MSDN.  
+ Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](https://docs.microsoft.com/archive/blogs/hshafi/) en el sitio web del blog de MSDN.  
   
  ![Contención de bloqueo](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -46,7 +46,7 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
  ![Carga de trabajo desigual](../profiling/media/unevenworkload-2.png "UnevenWorkload_2")  
   
 ## <a name="oversubscription"></a>Suscripción excesiva  
- ![La suscripción excesiva](../profiling/media/oversubscription.png "Suscripción excesiva")  
+ ![Suscripción excesiva](../profiling/media/oversubscription.png "Suscripción excesiva")  
   
  En el caso de la suscripción excesiva, el número de subprocesos activos en un proceso es mayor que el número de núcleos lógicos disponibles en el sistema. La ilustración anterior muestra los resultados de la suscripción excesiva, con bandas de adelantamiento significativas en todos los subprocesos activos. Además, la leyenda muestra que un gran porcentaje de tiempo se invierte en el adelantamiento (84 por ciento en este ejemplo). Esto puede indicar que el proceso está solicitando al sistema que ejecute más subprocesos simultáneos que el número de núcleos lógicos. Sin embargo, esto también puede indicar que otros procesos del sistema están usando recursos que se daba por hecho que estaban disponibles para este proceso.  
   
@@ -57,7 +57,7 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
 - Evalúe cómo el proceso determina el número apropiado de subprocesos para su ejecución durante esta fase de trabajo. Si el proceso calcula directamente el número de subprocesos paralelos activos, considere la posibilidad de modificar ese algoritmo para representar mejor el número de núcleos lógicos disponibles en el sistema. Si utiliza el Runtime de simultaneidad, la biblioteca TPL o PLINQ, estas bibliotecas se encargan de calcular el número de subprocesos.  
   
 ## <a name="inefficient-io"></a>E/S ineficaz  
- ![E&#47;/s ineficaz](../profiling/media/inefficient-io.png "Inefficient_IO")  
+ ![E&#47;no eficientes](../profiling/media/inefficient-io.png "Inefficient_IO")  
   
  El uso excesivo o indebido de E/S es una causa común de ineficacia de las aplicaciones. Piense en la ilustración anterior. El perfil de escala de tiempo visible muestra que E/S consume el 42 por ciento del tiempo de subproceso visible. La escala de tiempo muestra grandes cantidades de E/S, lo que indica que E/S suele bloquear la aplicación de la que se ha generado el perfil. Para ver detalles sobre los tipos de E/S y el punto en que el programa está bloqueado, haga zoom en las regiones problemáticas, examine el perfil de escala de tiempo visible y, a continuación, haga clic en un bloqueo de E/S concreto para ver las pilas de llamadas actuales.  
   
@@ -66,5 +66,5 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
   
  Los convoyes de bloqueo se producen cuando la aplicación adquiere bloqueos por orden de llegada y cuando la tasa de llegada del bloqueo es mayor que la tasa de adquisición. La combinación de estas dos condiciones hace que las solicitudes del bloqueo inicien una copia de seguridad. Una forma de combatir este problema es usar bloqueos "no equitativos" o bloqueos que den acceso al primer subproceso que encuentren en estado desbloqueado. La ilustración anterior muestra este comportamiento del convoy. Para resolver el problema, intente reducir la contención de los objetos de sincronización y utilizar bloqueos no equitativos.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

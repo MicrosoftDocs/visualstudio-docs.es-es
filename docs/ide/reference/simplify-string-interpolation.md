@@ -1,26 +1,29 @@
 ---
 title: Introducción a la interpolación de cadenas
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15f034b0ecf46e19681f3b74e4137a2de9e9d950
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283440"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094298"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>Simplificación de la refactorización de interpolación de cadena
 
 Esta refactorización se aplica a lo siguiente:
 
 - C#
+
+- Visual Basic
 
 **Qué:** Le permite simplificar una [interpolación de cadena](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
 

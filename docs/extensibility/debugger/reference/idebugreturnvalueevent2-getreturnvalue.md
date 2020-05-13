@@ -1,5 +1,5 @@
 ---
-title: IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs
+title: IDebugReturnValueEvent2::GetReturnValue ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2::GetReturnValue
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ddba529115bfb868fc913c37f9b15f1b4f658ad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da81b293055325c949387cb8584e18c6034f14f2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329665"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720278"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-Obtiene el valor devuelto de la ejecución paso a paso fuera de o a través de una función.
+Obtiene el valor devuelto al salir de una función o sobre ella.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ int GetReturnValue ( 
 
 ## <a name="parameters"></a>Parámetros
 `ppReturnValue`\
-[out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa el valor que se va a recuperar.
+[fuera] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa el valor que se va a recuperar.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2 | Documentos de Microsoft
+title: IDebugErrorBreakpointResolution2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2
 ms.assetid: b1234216-0ac8-461d-b2a7-54f60f8f3262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093b3ae1bd58113941d1031559dadd55cb704475
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d922259034d4e99c43fc06cfef8228b013fb180f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327752"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730009"
 ---
 # <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
 Esta interfaz representa la resolución de un error de punto de interrupción.
@@ -29,13 +29,13 @@ IDebugErrorBreakpointResolution2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un motor de depuración implementa esta interfaz como parte de su compatibilidad con los puntos de interrupción. Esta interfaz se usa para informar de que un punto de interrupción no se pudo enlazar.
+ Un motor de depuración implementa esta interfaz como parte de su compatibilidad con puntos de interrupción. Esta interfaz se utiliza para informar dónde no se pudo enlazar un punto de interrupción.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Una llamada a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) devuelve esta interfaz para proporcionar información sobre donde el punto de interrupción no se pudo enlazar. El [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) método obtiene la [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaz.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Una llamada a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) devuelve esta interfaz para proporcionar información sobre dónde no se pudo enlazar el punto de interrupción. El [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) método obtiene el [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaz.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDebugErrorBreakpointResolution2`.
+ En la tabla siguiente `IDebugErrorBreakpointResolution2`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
@@ -45,7 +45,7 @@ IDebugErrorBreakpointResolution2 : IUnknown
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

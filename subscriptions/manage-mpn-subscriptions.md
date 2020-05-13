@@ -3,15 +3,16 @@ title: Administrar las suscripciones de Visual Studio ofrecidas a través de Mic
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: aecc9892b60951f869c6a6bc721b746d2c013db5
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492905"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232423"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administración de suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -33,8 +34,8 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 11. El usuario tendrá acceso a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para iniciar sesión
 12. Puede aparecer una página de perfiles de Visual Studio, que incluye lo siguiente:
     - Nombre
-    - Apellidos
-    - Correo electrónico del contacto
+    - Apellido
+    - Dirección de correo electrónico de contacto
 13. El inicio de sesión ahora está completo, y el suscriptor debe tener acceso a los beneficios
 
 ## <a name="competency-partners"></a>Socios de la competencia
@@ -47,8 +48,8 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 7. El usuario tendrá acceso a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para iniciar sesión
 8. Puede aparecer una página de perfiles de Visual Studio
     - Nombre
-    - Apellidos
-    - Correo electrónico del contacto
+    - Apellido
+    - Dirección de correo electrónico de contacto
 9. El inicio de sesión ahora está completo, y el suscriptor debe tener acceso a los beneficios
 
 ## <a name="resources-and-references"></a>Recursos y referencias
@@ -59,7 +60,13 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
   > Se requiere el rol Contacto técnico para las suscripciones de Visual Studio.
   - Pág. 8: Assigning Visual Studio subscriptions for Competency Partners (Asignación de suscripciones de Visual Studio a asociados de la competencia)
 
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
 Los suscriptores y los administradores de programas deben trabajar directamente con el equipo de soporte técnico de Microsoft Partner Network para resolver los problemas de acceso a las suscripciones por parte de los suscriptores. Visite la página de [soporte técnico para socios](https://partner.microsoft.com/support) para obtener ayuda (Se necesitan sus credenciales de inicio de sesión de MPN).
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.;_ylu=X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV=2/RE=1577405628/RO=10/RU=https%3a%2f%2fassetsprod.microsoft.com%2fmpn%2fProgram-Administrator-Guide-to-Software-and-Online-Services-Benefits/RK=2/RS=xsA5OL.9t6QqJlvFYZ3OPnZkC_k-
+

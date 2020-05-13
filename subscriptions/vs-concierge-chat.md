@@ -1,17 +1,18 @@
 ---
 title: Ventaja Chat de soporte técnico en Visual Studio Subscription | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 6b6ed0635f86abb94fd3693d14b53a9ff1f7c936
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099582"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274003"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Chat de soporte técnico en las suscripciones de Visual Studio.
 El servicio Chat de soporte técnico proporciona asistencia en la búsqueda de información de productos y documentación técnica, y además le ayuda a utilizar las ventajas de la suscripción de Visual Studio.
@@ -59,6 +60,12 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para más información sobre las herramientas y los servicios de Microsoft, revise la documentación para:

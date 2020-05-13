@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b44e921a8e1ba13d3f0786d4633f942f94f3eaaa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851286"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586970"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 1. Inicie Fiddler.
 
-2. Borre la memoria caché de exploración. Esto es necesario porque el archivo XAP (que contiene el DLL del asistente de UI Automation de Silverlight) se suele almacenar en caché. Tenemos que asegurarnos de que se selecciona el archivo XAP, por eso borramos la memoria caché de exploración.
+2. Limpie la caché del explorador. Esto es necesario porque el archivo XAP (que contiene el DLL del asistente de UI Automation de Silverlight) se suele almacenar en caché. Tenemos que asegurarnos de que se selecciona el archivo XAP, por eso borramos la memoria caché de exploración.
 
 3. Abra la página web.
 
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Índice de contenido para la prueba de IU codificada](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Orientación
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
+### <a name="guidance"></a>Guía
+ [Pruebas para la entrega continua con Visual Studio 2012 – capítulo 5 automatización de las pruebas del sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Foro
- [Blog de Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm/)
+ [Blog de Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar la automatización de la interfaz de usuario para probar el](../test/use-ui-automation-to-test-your-code.md) [rendimiento web de código y probar la carga de las aplicaciones de sharepoint 2010 y 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [crear soluciones de SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [comprobar y depurar](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) la [creación y depuración](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) de código de SharePoint soluciones de SharePoint generar [perfiles del rendimiento de las aplicaciones de SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652136"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
@@ -50,5 +50,5 @@ Cuando se abre una solución de las Herramientas del lenguaje específico de dom
 |Formas y conectores|Las formas especifican cómo deben mostrarse los elementos del modelo en un diagrama de DSL. Los conectores especifican las líneas en un diagrama de DSL que se pueden usar para mostrar las relaciones.<br /><br /> Para crear una forma o un conector, arrastre la herramienta a la parte **Elementos de diagrama** del diagrama.|
 |Asignaciones de formas|Un mapa de formas aparece como una línea en el diagrama del modelo de dominio y vincula una forma a la clase de dominio que se muestra, o un conector a la relación de dominio que se muestra.|
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Información general de Herramientas del lenguaje específico de dominio](../modeling/overview-of-domain-specific-language-tools.md) [Glosario de Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Personalización y extensión de un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984912"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalación de Visual Studio 2017 para Mac
@@ -89,7 +89,7 @@ Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
 
 10. Una vez que la instalación sea correcta, puede empezar a desarrollar aplicaciones en Visual Studio si presiona **Iniciar**:
 
-    ![Apertura de Visual Studio](media/installer-image11.png)
+    ![Abra Visual Studio.](media/installer-image11.png)
 
 > [!NOTE]
 > Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), debe volver a ejecutar el [instalador](https://visualstudio.microsoft.com/vs/) si quiere agregar los componentes más adelante.
@@ -125,6 +125,6 @@ Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstu
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Instalación de Visual Studio 2017 (en Windows)](/visualstudio/install/install-visual-studio)

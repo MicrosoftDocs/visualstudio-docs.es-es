@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Next | Microsoft Docs
+title: IEnumDebugPrograms2::Siguiente ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2::Next
 ms.assetid: 9120e263-e97c-4a40-ab2c-e9264ce3d6c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a166300fcc5fd353325a884b8b1c21868831faa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 035af638b9504318a39e01f34ed32719d957896e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317055"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715619"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
-Devuelve el siguiente conjunto de elementos de la enumeración.
+Devuelve el conjunto de elementos siguiente de la enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Parámetros
 `celt`\
-[in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
+[in] Número de elementos que se van a recuperar. También especifica el tamaño `rgelt` máximo de la matriz.
 
 `rgelt`\
-[in, out] Matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) elementos que deben rellenarse.
+[adentro, fuera] Matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) elementos que se rellenarán.
 
 `pceltFetched`\
-[out] Devuelve el número de elementos realmente devueltos en `rgelt`.
+[fuera] Devuelve el número de `rgelt`elementos devueltos realmente en .
 
 ## <a name="return-value"></a>Valor devuelto
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si se puede devolver menos que el número solicitado de elementos; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845393"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586272"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ Visual Studio puede ayudarle a mantener la coherencia del software con los requi
 
 |**Tareas**|**Temas relacionados**|
 |---------------|---------------------------|
-|**Asegúrese de que el modelo es coherente:**<br /><br /> En función de la forma en que el proyecto usa e interpreta los modelos, podría ser útil impedir algunas combinaciones de elementos. Por ejemplo, puede restringir las clases UML para que siempre tengan nombres conformes a [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Puede definir restricciones como estas en las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|-   [validar el modelo UML](../modeling/validate-your-uml-model.md)<br />-   [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|
-|**Asegúrese de que el software cumple los requisitos de los usuarios**:<br /><br /> Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos.|-   [desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md)|
-|**Asegúrese de que el software mantiene la coherencia con el diseño previsto del sistema:**<br /><br /> En los diagramas de capas se describen las dependencias previstas entre los componentes de la aplicación. Durante el desarrollo, puede comprobar si las dependencias reales del código se ajustan al diseño previsto.|-   [crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
+|**Asegúrese de que el modelo es coherente:**<br /><br /> En función de la forma en que el proyecto usa e interpreta los modelos, podría ser útil impedir algunas combinaciones de elementos. Por ejemplo, puede restringir las clases UML para que siempre tengan nombres conformes a [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Puede definir restricciones como estas en las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|-   [Validar el modelo UML](../modeling/validate-your-uml-model.md)<br />-   [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|
+|**Asegúrese de que el software cumple los requisitos de los usuarios**:<br /><br /> Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos.|-   [Desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md)|
+|**Asegúrese de que el software mantiene la coherencia con el diseño previsto del sistema:**<br /><br /> En los diagramas de capas se describen las dependencias previstas entre los componentes de la aplicación. Durante el desarrollo, puede comprobar si las dependencias reales del código se ajustan al diseño previsto.|-   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Validar el código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoría**|**Links**|
+|**Categoría**|**Vínculos**|
 |------------------|---------------|
 |**Vídeos**|![vínculo al canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: Doug siete: comprensión del código y diseño del sistema con Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![vínculo al canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: diseño de una aplicación con un diagrama de capas](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [: cómo validar código mediante diagramas de capas](https://msdn.microsoft.com/vstudio/gg501755)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|-   [Blog de Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Blogs**|-   [Blog de Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [requisitos de usuario modelo](../modeling/model-user-requirements.md) [de análisis y modelado arquitectura](../modeling/analyze-and-model-your-architecture.md)

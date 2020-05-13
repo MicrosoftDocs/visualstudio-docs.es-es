@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771697"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
@@ -40,7 +40,7 @@ Para generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../code-qual
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Para recopilar estadísticas de aplicación mediante el método de muestreo
  El muestreo es el método predeterminado de generación de perfiles de la herramienta **VSPerfASPNETCmd** y no tiene que especificarse en la línea de comandos. La siguiente línea de comandos recopila estadísticas de aplicación de la aplicación web especificada:
 
- **vsperfaspnetcmd**  *websiteUrl*
+ **vsperfaspnetcmd** *websiteUrl*
 
  Un ejemplo de una *websiteUrl* hospedada en un servidor local podría ser *http://localhost/MySite/default.aspx* . Un ejemplo de sitio externo es *http://www.contoso.com* . Para más información, consulte las direcciones URL de ejemplo en [Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
@@ -48,7 +48,7 @@ Para generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../code-qual
 
 Use la siguiente línea de comandos para recopilar datos detallados de intervalos de una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente:
 
-**vsperfaspnetcmd /trace**  *websiteUrl*
+**vsperfaspnetcmd /trace** *websiteUrl*
 
 Si quiere generar perfiles de archivos .*dll* compilados de forma estática en la aplicación web, debe instrumentar los archivos mediante el uso de la herramienta de línea de comandos [VSInstr](../profiling/vsinstr.md). El comando vsperfaspnetcmd /trace incluirá datos de los archivos instrumentados.
 
@@ -101,7 +101,7 @@ Para finalizar la generación de perfiles:
 
 Puede agregar cualquiera de las siguientes opciones para los comandos enumerados anteriormente en esta sección, excepto el comando **vsperfaspnetcmd /shutdown**.
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**/Output:** `VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.*vsp*) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|
 |**/PackSymbols:Off**|De forma predeterminada, VsPerfASPNETCmd inserta símbolos (nombres de función y parámetro, etc.) en el archivo .*vsp*. Incrustar los símbolos puede hacer que el archivo de datos de generación de perfiles sea muy grande. Si va a acceder a los archivos .*pdb* que contienen los símbolos al analizar los datos, use la opción /packsymbols:off para deshabilitar la inserción de los símbolos.|

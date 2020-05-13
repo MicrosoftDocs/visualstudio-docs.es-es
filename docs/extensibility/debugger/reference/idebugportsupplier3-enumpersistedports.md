@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs
+title: IDebugPortSupplier3::EnumPersistedPorts ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340037"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724456"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Este método recupera un objeto que permite la enumeración de la lista de puertos persistentes.
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Parámetros
 `PortNames`\
-[in] Un [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) estructura que contiene una lista de nombres de puerto para buscar y devolver entre los puertos persistentes. Se devolverá solo aquellos puertos persistentes con estos nombres.
+[en] Una [estructura BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) que contiene una lista de nombres de puerto para buscar y devolver entre los puertos persistentes. Solo se devolverán los puertos persistentes con estos nombres.
 
 `ppEnum`\
-[out] Un objeto que implementa el [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfaz.
+[fuera] Objeto que implementa la interfaz [IEnumDebugPorts2.](../../../extensibility/debugger/reference/ienumdebugports2.md)
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Puertos persistentes se cargan cuando se crea una instancia de un proveedor de puerto y guardar cuando se destruye el proveedor del puerto.
+## <a name="remarks"></a>Observaciones
+ Los puertos persistentes se cargan cuando se crea una instancia de un proveedor de puertos y se guardan cuando se destruye el proveedor de puertos.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

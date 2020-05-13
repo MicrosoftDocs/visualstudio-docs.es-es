@@ -3,15 +3,16 @@ title: Eliminación de asignaciones de suscripciones en el Portal de administrac
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Descubra cómo pueden los administradores eliminar asignaciones de suscripción
-ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263256"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232538"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminación de asignaciones de suscripciones de Visual Studio
 Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, no todas las ventajas del suscriptor se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.  Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight. 

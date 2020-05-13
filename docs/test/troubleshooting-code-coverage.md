@@ -1,18 +1,18 @@
 ---
 title: Solucionar problemas de cobertura de código
-ms.date: 11/04/2016
+ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565980"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528004"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -22,7 +22,12 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
 
 Si se elige un comando **Analizar cobertura de código** en el menú **Prueba**, y si la compilación y las pruebas se ejecutan correctamente, debería ver una lista de resultados en la ventana **Cobertura de código**. Es posible que tenga que expandir los elementos para ver los detalles.
 
+::: moniker range=">=vs-2019"
+![Resultados de cobertura de código con colores](../test/media/vs-2019/codecoverage1.png)
+::: moniker-end
+::: moniker range="vs-2017"
 ![Resultados de cobertura de código con colores](../test/media/codecoverage1.png)
+::: moniker-end
 
 Para obtener más información, vea [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

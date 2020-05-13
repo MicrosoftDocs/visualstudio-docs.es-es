@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft Docs
+title: IDebugPointerField::GetDereferencedField ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fef8ee4e584703338afd09e5303ac184f28b3a49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331622"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725625"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Este método devuelve el tipo de objeto al que señala este objeto de puntero.
+Este método devuelve el tipo de objeto al que apunta este objeto de puntero.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Parámetros
 `ppField`\
-[out] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el tipo de objeto de destino.
+[fuera] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el tipo de objeto de destino.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Por ejemplo, si la [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objeto apunta a un entero, el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ese tipo entero describe el tipo devuelto por este método.
+## <a name="remarks"></a>Observaciones
+ Si, por ejemplo, el [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objeto apunta a un entero, el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) tipo devuelto por este método describe ese tipo entero.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)

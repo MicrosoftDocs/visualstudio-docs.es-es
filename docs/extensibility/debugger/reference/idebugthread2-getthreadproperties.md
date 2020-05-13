@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Microsoft Docs
+title: IDebugThread2::GetThreadProperties ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320111"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718688"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtiene las propiedades que describen este subproceso.
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[in] Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración que determina qué campos de `ptp` deben rellenarse.
+[en] Una combinación de indicadores de la `ptp` [enumeración THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) que determina qué campos de se deben rellenar.
 
 `ptp`\
-[in, out] Un [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura que se rellena con las propiedades del subproceso.
+[adentro, fuera] Estructura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) que se rellena con las propiedades del subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-Normalmente, se muestra la información devuelta por este método en el **subprocesos** ventana de depuración.
+## <a name="remarks"></a>Observaciones
+La información devuelta de este método se muestra normalmente en la ventana de depuración **de subprocesos.**
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para una sencilla `CProgram` objeto que implementa el [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaz.
+En el ejemplo siguiente se muestra `CProgram` cómo implementar este método para un objeto simple que implementa el [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfaz.
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,

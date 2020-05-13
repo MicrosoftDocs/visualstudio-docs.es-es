@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679201"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
@@ -31,10 +31,10 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Core]). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#** , elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)** . Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
     ::: moniker-end
 
-     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y **.NET Core** y luego **Modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)** , vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y **.NET Core** y luego **Modificar**.
 
     Visual Studio crea el proyecto.
 
@@ -132,11 +132,11 @@ Un *punto de interrupción* es un marcador que indica en qué punto debe Visual 
 
 1. Para establecer el punto de interrupción, haga clic en el medianil de la izquierda de la llamada a la función `doWork` (o seleccione la línea de código y presione **F9**).
 
-    ![Establecimiento de un punto de interrupción](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Set a breakpoint")
+    ![Establecer un punto de interrupción](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Establecer un punto de interrupción")
 
 2. Ahora presione **F5** (o elija **Depurar > Iniciar depuración**).
 
-    ![Llegada a un punto de interrupción](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Hit a breakpoint")
+    ![Alcanzar un punto de interrupción](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Llegar a un punto de interrupción")
 
     El depurador se detiene donde se ha establecido el punto de interrupción. La instrucción donde se ha detenido la ejecución del depurador y la aplicación se indica mediante la flecha amarilla. La línea con la llamada a la función `doWork` aún no se ha ejecutado.
 
@@ -149,7 +149,7 @@ Hay distintos comandos para indicar al depurador que continúe. Aquí se muestra
 
 Mientras la ejecución está detenida en el punto de interrupción, mantenga el puntero sobre la instrucción `c1.AddLast(20)` hasta que aparezca el botón verde **Run to click** (Ejecutar hasta clic) ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") y luego presione el botón **Ejecutar hasta clic**.
 
-![Ejecutar hasta clic](../debugger/media/dbg-qs-run-to-click-csharp.png "Run to click")
+![Ejecutar hasta clic](../debugger/media/dbg-qs-run-to-click-csharp.png "Ejecutar hasta clic")
 
 La aplicación se sigue ejecutando, llama a `doWork` y se detiene en la línea de código donde se ha hecho clic en el botón.
 
@@ -159,7 +159,7 @@ Los comandos de teclado habituales usados para ejecutar el código paso a paso s
 
 1. En la línea de código actual (marcada con el puntero de ejecución amarillo), mantenga el puntero sobre el objeto `c1` para mostrar una información sobre datos.
 
-    ![Visualización de una información sobre datos](../debugger/media/dbg-qs-data-tip-csharp.png "View a datatip")
+    ![Visualización de información sobre datos](../debugger/media/dbg-qs-data-tip-csharp.png "Visualización de información sobre datos")
 
     La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 
@@ -175,7 +175,7 @@ Si identifica un cambio que quiere probar en el código a mitad de una sesión d
 
 2. Presione **F10** (o **Depurar > Saltar**) varias veces para que el depurador avance y ejecute el código editado.
 
-    ![Editar y continuar](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Edit and continue")
+    ![Editar y continuar](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Editar y continuar")
 
     **F10** hace que el depurador avance de instrucción en instrucción, pero que se salte las funciones en lugar de depurarlas (el código que se omite se sigue ejecutando).
 

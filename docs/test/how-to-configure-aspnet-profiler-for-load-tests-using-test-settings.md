@@ -8,21 +8,21 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0132401df33bd65d7e328307167b6c228155bb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07df32104394dffcd61d1561309b77e61593f6e6
+ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169396"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80880239"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedimiento para configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
 
 Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET para recopilar información del generador de perfiles ASP.NET. Este adaptador de datos de diagnóstico recopila datos de rendimiento de las aplicaciones ASP.NET.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Este adaptador de datos de diagnóstico no se puede usar en las pruebas que se ejecutan con Microsoft Test Manager. Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET con pruebas de carga que solo usan sitios web, para lo que se requiere Visual Studio Enterprise.
+> Este adaptador de datos de diagnóstico no se puede usar en las pruebas que se ejecutan con Microsoft Test Manager (en desuso en Visual Studio 2017). Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET con pruebas de carga que solo usan sitios web, para lo que se requiere Visual Studio Enterprise.
 
 El adaptador de datos de diagnóstico del generador de perfiles ASP.NET permite recopilar datos del generador de perfiles ASP.NET de la capa de aplicación mientras se ejecuta una prueba de carga. No debe ejecutar el generador de perfiles en pruebas de carga largas, por ejemplo, las que se ejecutan durante más de una hora. Esto es porque el archivo de generador de perfiles aumenta su tamaño, quizá hasta centenares de megabytes. En su lugar, ejecute pruebas de carga más cortas con el generador de perfiles ASP.NET, que le ofrecen un diagnóstico profundo de los problemas de rendimiento.
 

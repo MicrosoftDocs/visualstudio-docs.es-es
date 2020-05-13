@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957761"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
@@ -32,7 +32,7 @@ Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.co
 
 3. Seleccione la pestaña **Información general** y después **Usar modo interactivo de IPython**. (En Visual Studio 2015, seleccione **Configurar opciones interactivas** para abrir el cuadro de diálogo **Opciones**, después establezca **Modo interactivo** en **IPython** y haga clic en **Aceptar**).
 
-4. Seleccione **Abrir ventana interactiva** para que aparezca la ventana **interactiva** en modo de IPython. Puede que necesite restablecer la ventana si solo ha cambiado el modo interactivo; también puede que necesite presionar **Entrar** si solo aparece un mensaje >>>, para recibir una solicitud como **En [2]**.
+4. Seleccione **Abrir ventana interactiva** para que aparezca la ventana **interactiva** en modo de IPython. Puede que necesite restablecer la ventana si solo ha cambiado el modo interactivo; también puede que necesite presionar **Entrar** si solo aparece un mensaje >>>, para recibir una solicitud como **En [2]** .
 
     ![Ventana interactiva en modo de IPython](media/ipython-repl-03.png)
 

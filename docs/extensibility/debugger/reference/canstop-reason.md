@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Microsoft Docs
+title: CANSTOP_REASON Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327250"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737689"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
-Se usa para determinar si un programa puede detener la ejecución después de alcanzar un punto concreto en la ejecución.
+# <a name="canstop_reason"></a>CANSTOP_REASON
+Se utiliza para determinar si un programa puede detener la ejecución después de alcanzar un punto determinado en la ejecución.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `CANSTOP_ENTRYPOINT`\
-Especifica el punto de entrada del programa determinado.
+Especifica el punto de entrada del programa especificado.
 
 `CANSTOP_STEPIN`\
-Especifica la ejecución paso a paso en una función.
+Especifica el paso a una función.
 
-## <a name="remarks"></a>Comentarios
-Se pasa como argumento a la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método confirmar con la sesión de depuración Manager (SDM) si es aceptable para detenerse después de alcanzar el punto de entrada del programa o después de la ejecución paso a paso en una función o método.
+## <a name="remarks"></a>Observaciones
+Se pasa como argumento al método [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar con el Administrador de depuración de sesiones (SDM) si está bien detenerse después de llegar al punto de entrada del programa o después de entrar en una función o método.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

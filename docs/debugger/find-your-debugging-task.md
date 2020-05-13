@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409226"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301150"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Búsqueda de su tarea de depuración en Visual Studio
 

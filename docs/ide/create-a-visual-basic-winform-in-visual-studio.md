@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 89effbfd31e0194a88067a340c9332d888ef23df
+ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681589"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224555"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
@@ -51,7 +51,7 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
 1. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)** . Luego, asigne al archivo el nombre `HelloWorld`.
 
-     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)** , cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)** , cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
      ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 

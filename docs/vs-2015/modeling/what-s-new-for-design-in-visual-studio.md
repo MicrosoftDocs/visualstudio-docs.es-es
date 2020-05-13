@@ -1,5 +1,5 @@
 ---
-title: Novedades&#39;del diseño
+title: Lo&#39;nuevo para el diseño
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659247"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301288"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades del diseño en Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades del diseño en Visual Studio en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a comprender y diseñar mejor el código.
 
@@ -64,18 +64,18 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 - **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.
 
-## <a name="VersionSupport"></a>Compatibilidad de edición con las herramientas de arquitectura y modelado
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Soporte de edición para herramientas de arquitectura y modelado
 
-Visual Studio 2015 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
+Visual Studio 2015 está disponible en varias ediciones. No todos estos proporcionan soporte para las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 
-|**Característica**|**Enterprise**|**Professional**|**Community**|**Express**|
+|**Característica**|**Enterprise**|**Profesional**|**Comunidad**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Mapas de código**|Sí|Solo admite la lectura y el filtrado de mapas de código, la adición de nuevos nodos genéricos y la creación de un nuevo gráfico dirigido a partir de una selección.|-|-|
-|**Diagramas de clases de UML**|Sí|-|-|-|
+|**Diagramas de claseUML**|Sí|-|-|-|
 |**Diagramas de secuencia UML**|Sí|-|-|-|
-|**Diagramas de casos de uso de UML**|Sí|-|-|-|
-|**Diagramas de actividades UML**|Sí|-|-|-|
-|**Diagramas de componentes de UML**|Sí|-|-|-|
+|**Diagramas de casos de uso DE UML**|Sí|-|-|-|
+|**Diagramas de actividad UML**|Sí|-|-|-|
+|**Diagramas de componentes UML**|Sí|-|-|-|
 |**Diagramas de capas**|Sí|-|-|-|
-|**Gráficos dirigidos** (diagramas de DGML)|Sí|Sí|-|-|
+|**Gráficos dirigidos** (diagramas DGML)|Sí|Sí|-|-|
 |**Clon de código**|Sí|-|-|-|

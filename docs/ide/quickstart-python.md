@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
+ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180346"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81444952"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
@@ -46,7 +46,7 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
     ![Cuadro de diálogo Nuevo proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project.png)
 
-    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más** > **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
+    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más**> **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](../python/media/installation-python-workload.png)
 
@@ -62,7 +62,7 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
     ![Creación de una nueva pantalla de proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project-2019a.png)
 
-    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más** > **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
+    Si no ve las plantillas de proyecto de Python, ejecute el **Instalador de Visual Studio**, seleccione **Más**> **Modificar**, seleccione la carga de trabajo **Desarrollo de Python** y, a continuación, elija **Modificar**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](../python/media/installation-python-workload.png)
 
@@ -182,7 +182,7 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 3. Seleccione **Depurar > Iniciar sin depurar** (**Ctrl**+**F5**) para guardar los cambios en los archivos y ejecutar la aplicación.
 
-4. Aparece una ventana de comandos con el mensaje "* Ejecutando en <https://localhost:4449/>" y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
+4. Aparece una ventana de comandos con el mensaje **Ejecutando en https:\//localhost:4449** y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
 
     Si un explorador no se abre automáticamente, inicie el explorador que quiera y vaya a `localhost:4449`.
 

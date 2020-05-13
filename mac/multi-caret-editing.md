@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75439053"
 ---
 # <a name="multi-caret-editing"></a>Edición de varios símbolos de inserción
@@ -40,7 +40,7 @@ Para usar el mouse para incluir varios símbolos de inserción, debe mantener pr
 
 ![varios símbolos de inserción con el mouse](media/multi-caret-mouse.gif)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
 - [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

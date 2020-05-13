@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78263128"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431454"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -78,6 +78,8 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 > Las propiedades y los elementos de nivel de proyecto no tienen ningún sentido si el elemento `UsingTask` proviene de uno de los archivos *.tasks* registrados globalmente con el motor MSBuild. Los valores de nivel de proyecto no son globales en MSBuild.
 
  En MSBuild 4.0, el uso de tareas puede cargarse a partir de archivos *.overridetask*.
+
+El ensamblado que contiene la tarea personalizada se carga cuando se usa `Task` por primera vez.
 
 ## <a name="example"></a>Ejemplo
 

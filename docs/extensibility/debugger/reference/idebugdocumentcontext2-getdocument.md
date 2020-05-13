@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetDocument | Microsoft Docs
+title: IDebugDocumentContext2::GetDocument ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::GetDocument
 ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ce07bd2274bc2a4881acd98fb73266fc90c7bd8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6bb93fe3efb4bc114cf583e8e2c066c337109d12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341278"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731840"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
-Obtiene el documento que contiene el contexto de este documento.
+Obtiene el documento que contiene este contexto de documento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Parámetros
 `ppDocument`\
-[out] Devuelve un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa el documento que contiene el contexto de este documento.
+[fuera] Devuelve un [objeto IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa el documento que contiene este contexto de documento.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método es para los motores de depuración que proporcionan los documentos directamente en el IDE. En caso contrario, este método debe devolver `E_NOTIMPL`.
+## <a name="remarks"></a>Observaciones
+ Este método es para aquellos motores de depuración que proporcionan documentos directamente al IDE. De lo contrario, `E_NOTIMPL`este método debe devolver .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 74091a3fe2da42ce3a9d16fdfa581d7774492574
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 46e03ecb00e4a5733039e003d170f3cfe0a854ee
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852310"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586968"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Colecciones GC2 frecuentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ RuleId|DA0005|
 | Mensaje | Muchos de los objetos se están recopilando en la recolección de elementos no utilizados de generación 2. |  
 | Tipo de mensaje | ADVERTENCIA |  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Se está recuperando un número elevado de objetos de memoria de .NET en la recolección de elementos no utilizados de la generación 2.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
@@ -38,7 +38,7 @@ RuleId|DA0005|
   
  Los objetos de la generación 0 se recopilan con frecuencia y, normalmente, de una manera muy eficaz. Los objetos de la generación 1 se recopilan con menos frecuencia y, normalmente, de una manera menos eficaz. Por último, los objetos de larga duración de la generación 2 se deben recopilar incluso con menos frecuencia. La colección de la generación 2, que es una ejecución de recolección de elementos no utilizados completa, es también la operación más costosa.  
   
- Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. Si relativamente demasiados objetos de corta duración sobreviven a la colección de generación 1, pero pueden ser recopilados en una colección completa de generación 2, el costo de la administración de memoria se puede volver excesivo con facilidad. Para obtener más información, consulte la publicación [Crisis de vida media](https://blogs.msdn.com/ricom/archive/2003/12/04/41281.aspx) en los alicientes de rendimiento de Rico Mariani en el sitio web de MSDN.  
+ Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. Si relativamente demasiados objetos de corta duración sobreviven a la colección de generación 1, pero pueden ser recopilados en una colección completa de generación 2, el costo de la administración de memoria se puede volver excesivo con facilidad. Para obtener más información, consulte la publicación [Crisis de vida media](https://docs.microsoft.com/archive/blogs/ricom/mid-life-crisis) en los alicientes de rendimiento de Rico Mariani en el sitio web de MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Revise los informes [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación. Use la [vista Duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa sobreviven a la generación 2 y, después, se recuperan desde allí. Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  

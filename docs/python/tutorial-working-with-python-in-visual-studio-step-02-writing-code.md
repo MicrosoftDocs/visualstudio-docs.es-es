@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430071"
 ---
-# <a name="step-2-write-and-run-code"></a>Paso 2: Escritura y ejecución de código
+# <a name="step-2-write-and-run-code"></a>Paso 2: Escribir y ejecutar código
 
-**Paso anterior: [Creación de un proyecto de Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Paso anterior: [Crear un nuevo proyecto de Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Aunque el **Explorador de soluciones** es donde se administran los archivos del proyecto, la ventana *editor* suele ser donde se trabaja con los *contenidos* de los archivos, como el código fuente. El editor es sensible al contexto del tipo de archivo que está editando, incluido el lenguaje de programación (basado en la extensión del archivo) y ofrece características apropiadas para ese lenguaje, como el color de la sintaxis y la finalización automática de IntelliSense.
 

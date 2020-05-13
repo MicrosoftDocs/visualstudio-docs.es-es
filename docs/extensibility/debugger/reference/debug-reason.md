@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: DEBUG_REASON Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346163"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737427"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 Especifica por qué se inició el proceso para la depuración.
 
 ## <a name="syntax"></a>Sintaxis
@@ -48,29 +48,29 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `DEBUG_REASON_ERROR`\
-Se produjo un error no especificado (Esto se usa como una condición predeterminada cuando ninguno de los otros motivos de ajuste).
+Se ha producido un error no específico (esto se utiliza como condición predeterminada cuando no cabe ninguna de las otras razones).
 
 `DEBUG_REASON_USER_LAUNCHED`\
-Se inició el proceso a petición del usuario.
+El proceso se inició a petición del usuario.
 
 `DEBUG_REASON_USER_ATTACHED`\
-El proceso de ejecución ya se ha adjuntado a por el usuario.
+El proceso ya en ejecución fue asociado por el usuario.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-El proceso se adjunta automáticamente a cuando se inició.
+El proceso se adjuntó automáticamente al momento en que se inició.
 
 `DEBUG_REASON_CAUSALITY`\
-El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).
+El proceso se inició debido a un evento de depuración *Just-In-Time* (JIT).
 
-## <a name="remarks"></a>Comentarios
-Devuelve el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.
+## <a name="remarks"></a>Observaciones
+Se devuelve desde el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

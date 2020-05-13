@@ -1,28 +1,28 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: IDebugArrayObject2::GetBaseIndices ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetBaseIndices
 - IDebugArrayObject2::GetBaseIndices
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04252ed40cd0ac2c0e5f41bc1104104aeee302c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317571"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736157"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Recupera los índices de bases (límites inferiores) para cada índice dado el número de dimensiones de la matriz.
+Recupera los índices base (límites inferiores) para cada índice dado el número de dimensiones de la matriz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>Parámetros
 `dwRank`\
-[in] El número de dimensiones (rango) de la matriz.
+[en] El número de dimensiones (rank) de la matriz.
 
 `dwIndices`\
-[out] Los índices (límites inferiores) a la bases para la matriz.
+[fuera] Los índices base (límites inferiores) de la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Por ejemplo, esta función debería devolver '5' para la matriz creada por el siguiente código de C#:
+## <a name="remarks"></a>Observaciones
+ Por ejemplo, esta función devolvería '5' para la matriz creada por el siguiente código de C-:
 
 ```
 int[] lengths = { 12 };

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350554"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737771"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Proporciona la razón que no está enlazado a un punto de interrupción.
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
+Proporciona la razón por la que un punto de interrupción no estaba enlazado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,26 +46,26 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `BPUR_UNKNOWN`\
-El motivo es desconocido.
+La razón es desconocida.
 
 `BPUR_CODE_UNLOADED`\
 El código que contiene el punto de interrupción se ha descargado.
 
 `BPUR_BREAKPOINT_REBIND`\
-Se han vuelto a enlazar el punto de interrupción en una ubicación diferente. Esto puede ocurrir después de editar y continuar con las operaciones cuando se mueve el punto de interrupción o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válido.
+El punto de interrupción se ha rebotado en una ubicación diferente. Esto puede suceder después de las operaciones Editar y Continuar cuando se mueve el punto de interrupción, o cuando el punto de interrupción está enlazado a un archivo con una ruta de acceso que ya no es válida.
 
 `BPUR_ BREAKPOINT_ERROR`\
-El punto de interrupción se determina como error después de que está enlazado. Esto sucede a los puntos de interrupción administrados cuyas condiciones ya no son válidos.
+Se determina que el punto de interrupción es erróneo después de enlazarlo. Esto sucede con puntos de interrupción administrados cuyas condiciones ya no son válidas.
 
-## <a name="remarks"></a>Comentarios
-Devuelto por la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.
+## <a name="remarks"></a>Observaciones
+Devuelta por el [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

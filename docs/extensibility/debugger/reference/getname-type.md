@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE | Microsoft Docs
+title: GETNAME_TYPE de la Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317580"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736676"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
-Especifica el tipo de nombre de archivos que se va a recuperar.
+# <a name="getname_type"></a>GETNAME_TYPE
+Especifica el tipo de nombre de los archivos que se van a recuperar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,35 +52,35 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `GN_NAME`\
-Especifica un nombre descriptivo del documento o del contexto.
+Especifica un nombre descriptivo del documento o contexto.
 
 `GN_FILENAME`\
-Especifica la ruta de acceso completa del documento o del contexto.
+Especifica la ruta de acceso completa del documento o contexto.
 
 `GN_BASENAME`\
-Especifica un nombre de archivo base en lugar de una ruta de acceso completa del documento o del contexto.
+Especifica un nombre de archivo base en lugar de una ruta de acceso completa del documento o contexto.
 
 `GN_MONIKERNAME`\
-Especifica un nombre único del documento o el contexto en el formulario de un moniker.
+Especifica un nombre único del documento o contexto en forma de moniker.
 
 `GN_URL`\
-Especifica un nombre de la dirección URL del documento o del contexto.
+Especifica un nombre de dirección URL del documento o contexto.
 
 `GN_TITLE`\
-Especifica un título del documento, si existe alguno.
+Especifica un título del documento, si existe.
 
 `GN_STARTPAGEURL`\
-Obtiene la dirección URL de página inicial para los procesos.
+Obtiene la dirección URL de la página de inicio de los procesos.
 
-## <a name="remarks"></a>Comentarios
-Estos valores se pasan como parámetros a la [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) métodos para especificar qué tipo de nombre para devolver.
+## <a name="remarks"></a>Observaciones
+Estos valores se pasan como parámetros a los métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)y [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar qué tipo de nombre se va a devolver.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

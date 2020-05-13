@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Microsoft Docs
+title: BP_COND_STYLE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351825"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738116"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Especifica el estilo de condición de punto de interrupción para pendientes y puntos de interrupción enlazados.
+# <a name="bp_cond_style"></a>BP_COND_STYLE
+Especifica el estilo de condición de punto de interrupción para los puntos de interrupción pendientes y enlazados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,23 +44,23 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `BP_COND_NONE`\
-Se desencadena el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especifica ninguna condición de punto de interrupción.
+Activa el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se ha especificado ninguna condición de punto de interrupción.
 
 `BP_COND_WHEN_TRUE`\
-Se desencadena el punto de interrupción solo cuando la expresión condicional asociado con el punto de interrupción se evalúa como `true`.
+Activa el punto de interrupción solo cuando la expresión `true`condicional asociada al punto de interrupción se evalúa como .
 
 `BP_COND_WHEN_CHANGED`\
-Se desencadena el punto de interrupción solo cuando el valor de la expresión condicional asociado con el punto de interrupción se ha cambiado respecto a su evaluación anterior.
+Activa el punto de interrupción solo cuando el valor de la expresión condicional asociada al punto de interrupción ha cambiado con respecto a su evaluación anterior.
 
-## <a name="remarks"></a>Comentarios
-Utilizado para la `styleCondition` miembro de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura.
+## <a name="remarks"></a>Observaciones
+Se utiliza `styleCondition` para el miembro de la estructura [BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

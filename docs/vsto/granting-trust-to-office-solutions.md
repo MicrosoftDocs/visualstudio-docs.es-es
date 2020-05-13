@@ -16,38 +16,38 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826939"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301660"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confianza a las soluciones de Office
-  Conceder confianza a los medios de las soluciones de Office modificar la directiva de seguridad de cada equipo de destino debe confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Por usted o el usuario final, se puede conceder confianza a la solución de Office.
+  Conceder confianza a las soluciones de Office significa modificar la directiva de seguridad de cada equipo de destino para confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Usted o el usuario final pueden conceder confianza a la solución de Office.
 
- Puede conceder plena confianza a la solución de Office mediante la firma de los manifiestos de aplicación e implementación.
+ Puede conceder plena confianza a la solución de Office firmando los manifiestos de aplicación e implementación.
 
- Los usuarios finales pueden conceder confianza a la solución de Office mediante la realización de una decisión de confianza en el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aviso de confianza.
+ Los usuarios finales pueden conceder confianza a [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] la solución de Office tomando una decisión de confianza en el símbolo del sistema de confianza.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="Signing"></a> Confiar en la solución de firmar los manifiestos de aplicación e implementación
- Manifiestos de aplicación y la implementación para Office solutions deben firmarse con un certificado que identifica al publicador. Los certificados proporcionan una base para tomar decisiones de confianza.
+## <a name="trust-the-solution-by-signing-the-application-and-deployment-manifests"></a><a name="Signing"></a>Confíe en la solución firmando los manifiestos de aplicación e implementación
+ Todos los manifiestos de aplicación e implementación para las soluciones de Office deben firmarse con un certificado que identifique al publicador. Los certificados proporcionan una base para tomar decisiones de confianza.
 
- Se crea un certificado temporal y se confía en tiempo de compilación para que la solución se ejecute mientras se depura. Si publica una solución que está firmada con un certificado temporal, se pedirá al usuario final para tomar una decisión de confianza.
+ Se crea un certificado temporal y se concede confianza en tiempo de compilación para que la solución se ejecute mientras se depura. Si publica una solución firmada con un certificado temporal, se pedirá al usuario final que tome una decisión de confianza.
 
- Si la sesión de la solución con un certificado conocido y de confianza, la solución se instalarán automáticamente sin preguntar al usuario final para tomar una decisión de confianza. Para obtener más información sobre cómo obtener un certificado para firmar, consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md). Una vez obtenido un certificado, el certificado debe ser confiable explícitamente al agregarlo a la lista de editores de confianza. Para obtener más información, vea [Cómo: Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).
+ Si firma la solución con un certificado conocido y de confianza, la solución se instalará automáticamente sin solicitar al usuario final que tome una decisión de confianza. Para obtener más información acerca de cómo obtener un certificado para la firma, vea [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md). Después de obtener un certificado, el certificado debe ser de confianza explícitamente agregándolo a la lista de editores de confianza. Para obtener más información, vea [Cómo: Agregar un publicador](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)de confianza a un equipo cliente para aplicaciones ClickOnce .
 
- Si suscribe a un desarrollador de la solución con un certificado temporal, un administrador puede volver a iniciar sesión la personalización con un certificado conocido y de confianza mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe*), que es uno de los Herramientas de Microsoft .NET Framework. Para obtener más información sobre la firma de soluciones, vea [Cómo: Firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md) y [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Si un desarrollador firma la solución con un certificado temporal, un administrador puede volver a firmar la personalización con un certificado conocido y de confianza mediante la herramienta de generación y edición de manifiestos *(mage.exe*), que es una de las herramientas de Microsoft .NET Framework. Para obtener más información acerca de la firma de soluciones, vea [Cómo: firmar soluciones](../vsto/how-to-sign-office-solutions.md) de Office y [Cómo: firmar manifiestos de aplicación e implementación.](../ide/how-to-sign-application-and-deployment-manifests.md)
 
-## <a name="TrustPrompt"></a>Confiar en la solución utilizando el símbolo del sistema de confianza de ClickOnce
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pide al usuario final para tomar la decisión de confianza si no hay ninguna directiva de toda la organización que confía en el certificado de la solución. Si el usuario final concede confianza a la solución, se crea una entrada de la lista de inclusión que contiene una dirección URL y una clave pública para almacenar esta decisión de confianza. Cuando una personalización de confianza se ejecuta más tarde, el usuario final no se solicita a intentarlo.
+## <a name="trust-the-solution-by-using-the-clickonce-trust-prompt"></a><a name="TrustPrompt"></a>Confíe en la solución mediante el símbolo del sistema clickOnce trust
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]solicita al usuario final que tome la decisión de confianza si no hay ninguna directiva de toda la organización que confíe en el certificado de la solución. Si el usuario final concede confianza a la solución, se crea una entrada de lista de inclusión que contiene una dirección URL y una clave pública para almacenar esta decisión de confianza. Cuando se ejecuta una personalización de confianza más adelante, no se vuelve a solicitar al usuario final.
 
- Los administradores pueden deshabilitar la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confía en símbolo del sistema o requieren que el símbolo del sistema se producen solo para las soluciones que estén firmadas con un certificado Authenticode. Para obtener más información acerca de cómo cambiar esta configuración para las zonas MyComputer, LocalIntranet, Internet, TrustedSites y UntrustedSites, vea [Cómo: Configuración del comportamiento del mensaje sobre la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Los administradores [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pueden deshabilitar el mensaje de confianza o requerir que el mensaje se produzca solo para las soluciones que están firmadas con un certificado Authenticode. Para obtener más información acerca de cómo cambiar esta configuración para las zonas MyComputer, LocalIntranet, Internet, TrustedSites y UntrustedSites, vea [Cómo: configurar el comportamiento](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)de solicitud de confianza ClickOnce .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
+- [Soluciones de Secure Office](../vsto/securing-office-solutions.md)
 - [Conceder confianza a los documentos](../vsto/granting-trust-to-documents.md)
 - [Solucionar problemas de seguridad de la solución de Office](../vsto/troubleshooting-office-solution-security.md)
-- [Consideraciones de seguridad específicas para soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md)
+- [Consideraciones de seguridad específicas para las soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md)

@@ -19,10 +19,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74955041"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
@@ -108,9 +108,9 @@ Roaming Extension Manager realiza un seguimiento de todas las extensiones que in
 
 Cuando use Roaming Extension Manager, verá tres tipos de icono en la lista:
 
-* ![Icono de extensión en movimiento](media/vs2017ide-roamedicon.png) **_Extensión en movimiento_** : una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
+* ![Icono de extensión con perfil itinerante](media/vs2017ide-roamedicon.png) **_Extensión con perfil itinerante_** : una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
   (Puede instalarlas mediante el botón **Descargar**).
-* ![Icono de extensión en movimiento e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión en movimiento e instalada_** : todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
+* ![Icono de extensión con perfil itinerante e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión con perfil itinerante e instalada_** : todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
   (Si decide que no quiere usar un perfil itinerante, puede quitarlas mediante el botón **Detener itinerancia**).
 * ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_** : todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
   (Puede agregar extensiones a la lista de itinerancia mediante el botón **Iniciar itinerancia**).
@@ -186,7 +186,7 @@ Se ha actualizado la experiencia de navegación para ayudarle a llegar de A a B 
 
   ![Nueva herramienta Buscar todas las referencias](media/vs2017ide-find-all-references.png)
 
-* **Visualizador de estructuras** &ndash; Las líneas verticales grises con puntos sirven como puntos de referencia en el código para proporcionar contexto dentro del marco de vista. Puede reconocerlas de las populares herramientas Productivity Power Tools. Puede usarlas para visualizar y descubrir en qué bloque de código se encuentra en cualquier momento sin tener que desplazarse. Al mantener el puntero sobre las líneas aparece la información sobre herramientas que muestra la apertura de ese bloque y sus elementos primarios. Está disponible para todos los lenguajes admitidos a través de las gramáticas de TextMate, así como C#, Visual Basic y XAML.
+* **Visualizador de estructuras**: las líneas verticales grises con puntos sirven como puntos de referencia en el código para proporcionar contexto dentro del marco de vista. Puede reconocerlas de las populares herramientas Productivity Power Tools. Puede usarlas para visualizar y descubrir en qué bloque de código se encuentra en cualquier momento sin tener que desplazarse. Al mantener el puntero sobre las líneas aparece la información sobre herramientas que muestra la apertura de ese bloque y sus elementos primarios. Está disponible para todos los lenguajes admitidos a través de las gramáticas de TextMate, así como C#, Visual Basic y XAML.
 
   ![Visualizador de estructura de Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 

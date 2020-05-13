@@ -10,7 +10,7 @@
   items:
     - name: Primer vistazo al IDE de Visual Studio
       href: quickstart-ide-orientation-js.md
-    - name: Crear un proyecto de Node.js
+    - name: Creación de un proyecto Node.js
       href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
     - name: Crear un proyecto de Vue.js
       href: quickstart-vuejs-with-nodejs.md

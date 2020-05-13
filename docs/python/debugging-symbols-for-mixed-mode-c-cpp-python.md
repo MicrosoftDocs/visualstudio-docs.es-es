@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 77dc73b0be050e5108f73d38dfbbaa763d236995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62957631"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
@@ -35,7 +35,7 @@ Es posible que Visual Studio le solicite los símbolos cuando los necesite, norm
 
     ![Instalador de Python 3.x que incluye símbolos de depuración](media/mixed-mode-debugging-symbols-installer35.png)
 
-    Los archivos de símbolos (*.pdb*) se encuentran en la carpeta raíz de la instalación (los archivos de símbolos para módulos individuales también se encuentran en la carpeta *DLL*). Por este motivo, Visual Studio los encontrará automáticamente y no se necesita realizar ningún paso adicional.
+    Los archivos de símbolos ( *.pdb*) se encuentran en la carpeta raíz de la instalación (los archivos de símbolos para módulos individuales también se encuentran en la carpeta *DLL*). Por este motivo, Visual Studio los encontrará automáticamente y no se necesita realizar ningún paso adicional.
 
 - Python 3.4.x y versiones anteriores: los símbolos están disponibles como archivos *.zip* que se pueden descargar desde las [distribuciones oficiales](#official-distributions) o [Enthought Canopy](#enthought-canopy). Después de descargarlos, extraiga los archivos en una carpeta local para continuar, como una carpeta *Símbolos* dentro de la carpeta de Python.
 

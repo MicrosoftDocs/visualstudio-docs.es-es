@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531911"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Usar cuerpo de expresiones o cuerpo de bloques para expresiones lambda
@@ -31,7 +31,7 @@ Esta refactorización se aplica a lo siguiente:
 ## <a name="lambda-expression-body-or-block-body-refactoring"></a>Refactorización de cuerpo de expresiones o cuerpo de bloques lambda
 
 1. Coloque el cursor a la derecha de un operador lambda.
-2. Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 
   ![Usar expresión lambda o cuerpo de bloques](media/block-body-lambda.png)
 

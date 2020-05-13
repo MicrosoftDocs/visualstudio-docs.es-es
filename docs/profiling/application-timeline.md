@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128290"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
@@ -58,7 +58,7 @@ Estos son los pasos básicos:
 
    Visual Studio analiza los datos recopilados y muestra los resultados.
 
-   ![Informe del generador de perfiles de la escala de tiempo](../profiling/media/timeline_base.png "TIMELINE_Base")
+   ![Informe del generador de perfiles de escala de tiempo](../profiling/media/timeline_base.png "TIMELINE_Base")
 
 ## <a name="analyze-timeline-profiling-data"></a>Analizar datos de generación de perfiles de escala de tiempo
 
@@ -68,31 +68,31 @@ Después de obtener los datos de la generación de perfiles, puede seguir estos 
 
 2. Con la información de los gráficos **Uso del subproceso de UI** o **Rendimiento visual (FPS)** , examine los detalles de la vista **Detalles de la escala de tiempo** para detectar las posibles causas de cualquier falta de capacidad de respuesta aparente.
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Informes de escenarios, categorías y eventos
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> Informes de escenarios, categorías y eventos
 
 La herramienta **Escala de tiempo de aplicación** muestra datos de tiempo para escenarios, categorías y eventos relacionados con el rendimiento de XAML.
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Escala de tiempo de la sesión de diagnóstico
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> Escala de tiempo de la sesión de diagnóstico
 
-![Escala de tiempo de rendimiento y diagnósticos](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
+![Escala de tiempo del rendimiento y los diagnósticos](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
 La regla que aparece en la parte superior de la página muestra la escala de tiempo para la información cuyo perfil se ha generado. Esta escala de tiempo se aplica a los gráficos **Utilización del subproceso de IU** y **Rendimiento visual** . Puedes restringir el ámbito del informe arrastrando las barras de navegación en la escala de tiempo para seleccionar un segmento de esta.
 
 La escala de tiempo también muestra cualquier marca de usuario que haya insertado, así como los eventos del ciclo de vida de activación de la aplicación.
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilización del subproceso de IU
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilización del subproceso de IU
 
-![Gráfico de utilización de CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
+![Gráfico de uso de la CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
 El gráfico **Utilización del subproceso de UI (%)** es un gráfico de barras que muestra la cantidad relativa de tiempo empleado en una categoría durante un intervalo de la colección.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de rendimiento visual (FPS)
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de rendimiento visual (FPS)
 
 ![Gráfico de rendimiento visual](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
 El gráfico de líneas **Rendimiento visual (FPS)** muestra los fotogramas por segundo (FPS) en el subproceso de interfaz de usuario y de composición de la aplicación.
 
-### <a name="BKMK_Timeline_details_"></a> Detalles de la escala de tiempo
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a> Detalles de la escala de tiempo
 
 En la vista de detalles es donde se invierte la mayor parte del tiempo en el análisis del informe. Muestra el uso de CPU de la aplicación en dos categorías: el subsistema Marco de trabajo de la interfaz de usuario o el componente del sistema que ha consumido la CPU.
 
@@ -110,16 +110,16 @@ Se admiten los siguientes eventos:
 > [!TIP]
 > Elija la herramienta **Uso de CPU** junto con la herramienta **Escala de tiempo de aplicación** al comenzar a generar perfiles para ver los métodos de aplicación que se ejecutan en el subproceso de UI. Mover el código de la aplicación de larga duración a un subproceso en segundo plano puede mejorar la capacidad de respuesta de la UI.
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizar detalles de escala de tiempo
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personalizar detalles de escala de tiempo
 
 Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordenar, filtrar y especificar las anotaciones de las entradas de la vista **Detalles de la escala de tiempo** .
 
 |||
 |-|-|
 |**Ordenar por**|Ordenar por hora de inicio o longitud de los eventos.|
-|![Agrupar eventos por fotograma](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|
-|![Filtrar la lista de detalles de la escala de tiempo](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra la lista por categorías seleccionadas y la longitud de los eventos.|
-|![Personalizar la información de detalles de la escala de tiempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar las anotaciones de eventos.|
+|![Agrupación de eventos por marco](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|
+|![Filtro de la lista de detalles de la escala de tiempo](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra la lista por categorías seleccionadas y la longitud de los eventos.|
+|![Personalización de la información detallada de la escala de tiempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar las anotaciones de eventos.|
 
 ## <a name="see-also"></a>Vea también
 

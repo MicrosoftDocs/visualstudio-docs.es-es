@@ -30,16 +30,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633582"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "78865354"
 ---
 # <a name="link-task"></a>Vincular tarea
 
-Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
+Incluye la herramienta del enlazador de Microsoft C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable ( *.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte los artículos [Opciones del enlazador](/cpp/build/reference/linker-options), [MSBuild en la línea de comandos](/cpp/build/msbuild-visual-cpp) y [Uso del conjunto de herramientas de Microsoft C++ desde la línea de comandos](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parámetros
 

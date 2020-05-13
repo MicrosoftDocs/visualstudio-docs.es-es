@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72306261"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes

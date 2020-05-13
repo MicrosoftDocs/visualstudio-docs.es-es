@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75851951"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
@@ -19,7 +19,7 @@ ms.locfileid: "75851951"
 Para empezar a desarrollar aplicaciones .NET nativas y multiplataforma en macOS, instale Visual Studio 2019 para Mac siguiendo los pasos que encontrará a continuación.
 
  > [!div class="button"]
- > [Descargar Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/)
+ > [Descargar Visual Studio para Mac](https://visualstudio.microsoft.com/vs/mac/)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,14 +53,14 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
    Si no desea instalar todas las plataformas, utilice la guía siguiente para ayudarle a elegirlas:
 
 
-|Tipo de aplicación  |Destino  |Selección  |Notas  |
+|Tipo de aplicación  |Destino  |Número de selección  |Notas  |
 |---------|---------|---------|---------|
 |**Aplicaciones con Xamarin**| Xamarin.Forms|Seleccione las plataformas **Android** e **iOS**. |Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/). |
-||Solo iOS|Seleccione la plataforma **iOS**.|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
+||Únicamente iOS|Seleccione la plataforma **iOS**.|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
 ||Solo Android|Seleccione la plataforma **Android**.|Tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes.|
 ||Solo Mac|Seleccione la plataforma **macOS (Cocoa)** .|Necesitará instalar [**Xcode**](https://developer.apple.com/xcode/).|
 |**Aplicaciones .NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
-|**Aplicaciones web ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
+|**Aplicaciones web de ASP.NET Core**|         |Seleccione la plataforma **.NET Core**.|         |
 |**Funciones de Azure**|         |Seleccione la plataforma **.NET Core**.|         |
 |**Desarrollo de juegos multiplataforma de Unity**|         |No es necesario instalar plataformas adicionales más allá de Visual Studio para Mac.| Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.|
 
@@ -114,6 +114,6 @@ Para otras cargas de trabajo, consulte la página [Cargas de trabajo](workloads.
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Instalación de Visual Studio (en Windows)](/visualstudio/install/install-visual-studio)

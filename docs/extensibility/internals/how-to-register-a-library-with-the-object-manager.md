@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Registrar una biblioteca con el Administrador de objetos | Documentos de Microsoft
+title: 'Cómo: Registrar una biblioteca con el Administrador de objetos Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,36 +9,36 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7481b9710237bcd1e624b07f8985b5708f271bef
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4bd1032d2ba67a0c0f3338560a80038ed3215531
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312049"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707941"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Procedimiento Registrar una biblioteca con el Administrador de objetos
-Exploración de símbolos de herramientas, como **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, le permiten ver símbolos en el proyecto o en los componentes externos. Los símbolos incluyen los espacios de nombres, clases, interfaces, métodos y otros elementos de lenguaje. Las bibliotecas de realizar un seguimiento de estos símbolos y exponerlos a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Administrador de objetos que rellena las herramientas con los datos.
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Cómo: Registrar una biblioteca con el administrador de objetos
+Las herramientas de exploración de símbolos, como Vista de **clases**, **Examinador de objetos**, Navegador de **llamadas** y Buscar resultados de **símbolos**, le permiten ver símbolos en el proyecto o en componentes externos. Los símbolos incluyen espacios de nombres, clases, interfaces, métodos y otros elementos de lenguaje. Las bibliotecas realizan un seguimiento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de estos símbolos y los exponen al administrador de objetos que rellena las herramientas con los datos.
 
- El Administrador de objetos realiza un seguimiento de todas las bibliotecas disponibles. Cada biblioteca debe registrar con el Administrador de objetos antes de proporcionar los símbolos para las herramientas de exploración de símbolos.
+ El administrador de objetos realiza un seguimiento de todas las bibliotecas disponibles. Cada biblioteca debe registrarse en el administrador de objetos antes de proporcionar símbolos para las herramientas de exploración de símbolos.
 
- Normalmente, registrar una biblioteca cuando se carga un paquete VSPackage. Sin embargo, puede realizarse en otro momento, según sea necesario. Anular el registro de la biblioteca cuando se cierra el VSPackage.
+ Normalmente, se registra una biblioteca cuando se carga un VSPackage. Sin embargo, se puede hacer en otro momento según sea necesario. Anule el registro de la biblioteca cuando el VSPackage se cierra.
 
- Para registrar una biblioteca, use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> método. Para una biblioteca de código administrado, utilice el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.
+ Para registrar una biblioteca, utilice el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> método. Para una biblioteca de <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> código administrado, utilice el método.
 
- Para anular el registro de una biblioteca, use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> método.
+ Para anular el registro <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> de una biblioteca, utilice el método.
 
- Para obtener una referencia al administrador de objetos, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, pase el <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identificador al servicio `GetService` método.
+ Para obtener una referencia al <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>gestor <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> de objetos, pase el identificador de servicio al `GetService` método.
 
-## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Registrar y anular el registro de una biblioteca con el Administrador de objetos
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Registrar y anular el registro de una biblioteca con el administrador de objetos
 
-### <a name="to-register-a-library-with-the-object-manager"></a>Para registrar una biblioteca con el Administrador de objetos
+### <a name="to-register-a-library-with-the-object-manager"></a>Para registrar una biblioteca con el administrador de objetos
 
-1. Crear una biblioteca.
+1. Cree una biblioteca.
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ Exploración de símbolos de herramientas, como **vista de clases**, **Examinado
 
     ```
 
-2. Obtener una referencia a un objeto de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> escriba y llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.
+2. Obtenga una referencia a <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> un objeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> del tipo y llame al método.
 
     ```vb
     Private Sub RegisterLibrary()
@@ -109,9 +109,9 @@ Exploración de símbolos de herramientas, como **vista de clases**, **Examinado
 
     ```
 
-### <a name="to-unregister-a-library-with-the-object-manager"></a>Para anular el registro de una biblioteca con el Administrador de objetos
+### <a name="to-unregister-a-library-with-the-object-manager"></a>Para anular el registro de una biblioteca con el administrador de objetos
 
-1. Obtener una referencia a un objeto de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> escriba y llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> método.
+1. Obtenga una referencia a <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> un objeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> del tipo y llame al método.
 
     ```vb
     Private Sub UnregisterLibrary()
@@ -165,6 +165,6 @@ Exploración de símbolos de herramientas, como **vista de clases**, **Examinado
     ```
 
 ## <a name="see-also"></a>Vea también
-- [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)
-- [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Cómo: Exposición de listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Extensibilidad del servicio de idiomas heredado](../../extensibility/internals/legacy-language-service-extensibility.md)
+- [Soporta herramientas de navegación de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Cómo: Exponer listas de símbolos proporcionados por la biblioteca al gestor de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

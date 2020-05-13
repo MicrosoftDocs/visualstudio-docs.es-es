@@ -1,20 +1,20 @@
 ---
-title: TargetPlatformName (elemento, plantillas de Visual Studio) | Microsoft Docs
+title: Elemento TargetPlatformName (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718918"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699265"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName (Elemento, Plantillas de Visual Studio)
 Especifica la plataforma a la que está orientada la plantilla del proyecto. Este elemento se usa para especificar que se usará una plantilla de proyecto para crear aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
@@ -48,7 +48,7 @@ Especifica la plataforma a la que está orientada la plantilla del proyecto. Est
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  El texto debe ser **Windows**.
 
 ## <a name="example"></a>Ejemplo

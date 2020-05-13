@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs
+title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91c0ecb800ebd97314677fd896329eb8110cee4c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c5ed964905db6aa591252018b408cf67fa43d310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351379"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731395"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Notifica al receptor del evento que se han actualizado los atributos del documento.
@@ -41,10 +41,10 @@ int onUpdateDocumentAttributes( 
 
 ## <a name="parameters"></a>Parámetros
 `textdocattr`\
-[in] Una combinación de marcas de la [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeración que especifica los atributos del documento actualizados.
+[en] Una combinación de indicadores de la [enumeración TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) que especifica los atributos actualizados del documento.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

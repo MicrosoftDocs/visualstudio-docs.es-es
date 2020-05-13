@@ -8,26 +8,26 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851232"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586908"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba del IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
  Para este tutorial, necesitará:
 
 - Visual Studio Enterprise
 
 ### <a name="create-a-simple-wpf-application"></a>Crear una aplicación de WPF sencilla
 
-1. En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
+1. En el menú **archivo** , seleccione **nuevo**y, a continuación, **proyecto**.
 
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
@@ -45,7 +45,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
      Se abre WPF Designer para Visual Studio y se muestra MainWindow del proyecto.
 
-8. Abra el cuadro de herramientas, si aún no está abierto. Elija el menú **Ver** y después **Cuadro de herramientas**.
+8. Abra el cuadro de herramientas, si aún no está abierto. Elija el menú **Ver** y, a continuación, elija **cuadro de herramientas**.
 
 9. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
 
@@ -55,7 +55,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 12. Seleccione el control Checkbox. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
 
-     ![Aplicación WPF sencilla](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![Aplicación de WPF sencilla](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. Haga doble clic en el control de botón para agregar un controlador de evento Click.
 
@@ -106,7 +106,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 ### <a name="verify-the-wpf-application-runs-correctly"></a>Comprobar que la aplicación WPF se ejecuta correctamente
 
-1. En el menú **Depurar**, seleccione **Iniciar depuración** o presione **F5**.
+1. En el menú **depurar** , seleccione **iniciar depuración** o presione **F5**.
 
 2. Observe que el control de casilla está deshabilitado. Elija **Iniciar**.
 
@@ -168,7 +168,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 12. Cierre la aplicación SimpleWPFApp.
 
-13. En UIMap - Generador de pruebas de IU codificadas, elija **Generar código**.
+13. En UIMap-generador de pruebas de IU codificadas, elija **generar código**.
 
 14. En el nombre del método, escriba **SimpleAppTest** y elija **Agregar y generar**. En unos segundos, aparece la prueba de IU codificada y se agrega a la Solución.
 
@@ -180,17 +180,17 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 ### <a name="run-the-coded-ui-test"></a>Ejecutar la prueba de IU codificada
 
-1. En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
+1. En el menú **prueba** , elija **ventanas** y, a continuación, elija **Explorador de pruebas**.
 
 2. En el menú **Compilar** , elija **Compilar solución**.
 
 3. En el archivo CodedUITest1.cs, busque el método **CodedUITestMethod**, haga clic con el botón derecho y seleccione **Ejecutar pruebas** o ejecute la prueba desde el Explorador de pruebas.
 
-     Mientras se ejecuta la prueba de IU codificada, la aplicación SimpleWPFApp está visible. Realiza los pasos que realizó en el procedimiento anterior. Sin embargo, cuando la prueba intenta activar la casilla para el control de casilla, la ventana Resultados de pruebas muestra que se produjo un error en la prueba. Esto es debido a que la prueba intenta activar la casilla, pero no tiene en cuenta que el control de casilla está deshabilitado hasta que la barra de progreso sea 100 % completado. Puede corregir esto y los problemas similares utilizando los distintos métodos `UITestControl.WaitForControlXXX()` que están disponibles para las pruebas de IU codificadas. El procedimiento siguiente mostrará cómo utilizar el método `WaitForControlEnabled()` para corregir el problema que provocó errores en esta prueba. Para obtener más información, vea [Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+     Mientras se ejecuta la prueba de IU codificada, la aplicación SimpleWPFApp está visible. Realiza los pasos que realizó en el procedimiento anterior. Sin embargo, cuando la prueba intenta activar la casilla para el control de casilla, la ventana Resultados de pruebas muestra que se produjo un error en la prueba. Esto es debido a que la prueba intenta activar la casilla, pero no tiene en cuenta que el control de casilla está deshabilitado hasta que la barra de progreso sea 100 % completado. Puede corregir esto y los problemas similares utilizando los distintos métodos `UITestControl.WaitForControlXXX()` que están disponibles para las pruebas de IU codificadas. El procedimiento siguiente mostrará cómo utilizar el método `WaitForControlEnabled()` para corregir el problema que provocó errores en esta prueba. Para obtener más información, vea [crear pruebas de IU codificadas esperar a eventos específicos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ### <a name="edit-and-rerun-the-coded-ui-test"></a>Modificar y volver a ejecutar la prueba de IU codificada
 
-1. En la ventana Explorador de pruebas, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()** .
+1. En la ventana Explorador de pruebas, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()**.
 
 2. El archivo UIMap.Designer.cs empieza con el punto de error resaltado en el código:
 
@@ -219,7 +219,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
      El método de prueba se quita del archivo UIMap.uitest y ya no se muestra en el panel de acciones de la interfaz de usuario. Para editar el archivo de prueba que se ha movido, abra el archivo UIMap.cs en el Explorador de soluciones.
 
-9. En la barra de herramientas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], elija **Guardar**.
+9. En la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] barra de herramientas, elija **Guardar**.
 
      Las actualizaciones del método de prueba se guardan en el archivo UIMap.Designer.
 
@@ -261,7 +261,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
     ```
 
-14. En el menú **COMPILAR**, elija **Compilar solución**.
+14. En el menú **compilar** , elija **compilar solución**.
 
 15. Haga clic con el botón derecho en el método **CodedUITestMethod** y seleccione **Ejecutar pruebas**.
 
@@ -273,13 +273,13 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 2. En la parte superior de la ventana Propiedades, cambie el valor de la propiedad **Nombre** de button1 a buttonA.
 
-3. En el menú **COMPILAR**, elija **Compilar solución**.
+3. En el menú **compilar** , elija **compilar solución**.
 
-4. En el Explorador de pruebas, ejecute **CodedUITestMethod1**.
+4. En el explorador de pruebas, ejecute **CodedUITestMethod1**.
 
      La prueba no se supera porque la prueba de IU codificada no puede localizar el control de botón que se asignó originalmente en UIMap como button1. La refactorización puede impactar las pruebas de IU codificadas de esta manera.
 
-5. En la ventana Explorador de pruebas, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()** .
+5. En la ventana Explorador de pruebas, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()**.
 
      El archivo UIMap.cs se abre. El punto de error se resalta en el código:
 
@@ -295,7 +295,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
 ### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Asignar control refactorizado, y editar y volver a ejecutar la prueba de IU codificada
 
-1. En el archivo CodedUITest1.cs, en el método **CodedUITestMethod1 ()** , haga clic con el botón derecho, seleccione **Generar código para prueba de IU codificada** y, a continuación, elija **Usar generador de pruebas de IU codificadas**.
+1. En el archivo CodedUITest1.cs, en el método **CodedUITestMethod1 ()**, haga clic con el botón derecho, seleccione **Generar código para prueba de IU codificada** y, a continuación, elija **Usar generador de pruebas de IU codificadas**.
 
      Aparece UIMap – Generador de pruebas de IU codificadas.
 
@@ -360,7 +360,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 
     ```
 
-13. En el menú **COMPILAR**, elija **Compilar solución**.
+13. En el menú **compilar** , elija **compilar solución**.
 
 14. En el Explorador de pruebas, ejecute CodedUITestMethod1.
 
@@ -379,12 +379,12 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
  [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>Preguntas más frecuentes
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](https://docs.microsoft.com/archive/blogs/mathew_aniyan/content-index-for-coded-ui-test)
 
  [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Foro
  [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md) [Introducción con las](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configuraciones y plataformas compatibles con WPF Designer para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

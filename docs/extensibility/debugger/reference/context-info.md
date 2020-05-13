@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft Docs
+title: CONTEXT_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346461"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737570"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
-Esta estructura describe un contexto de la memoria o el contexto del código.
+# <a name="context_info"></a>CONTEXT_INFO
+Esta estructura describe un contexto de memoria o contexto de código.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Miembros
 `dwFields`\
-Una combinación de marcas de él [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se rellenan<strong>.</strong>
+Una combinación de indicadores de [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se<strong>rellenan.</strong>
 
 `bstrModuleUrl`\
 El nombre del módulo donde se encuentra el contexto.
@@ -62,26 +62,26 @@ El nombre del módulo donde se encuentra el contexto.
 El nombre de la función donde se encuentra el contexto.
 
 `posFunctionOffset`\
-Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que identifica el desplazamiento de línea y columna de la función asociada al contexto del código.
+Estructura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que identifica el desplazamiento de línea y columna de la función asociada al contexto de código.
 
 `bstrAddress`\
-La dirección en el código donde se encuentra el contexto especificado.
+La dirección en el código donde se encuentra el contexto dado.
 
 `bstrAddressOffset`\
-El desplazamiento de la dirección en el código donde se encuentra el contexto especificado.
+Desplazamiento de la dirección en el código donde se encuentra el contexto dado.
 
 `bstrAddressAbsolute`\
-La dirección absoluta en la memoria donde se encuentra el contexto especificado.
+La dirección absoluta en la memoria donde se encuentra el contexto dado.
 
-## <a name="remarks"></a>Comentarios
-Esta estructura se devuelve desde una llamada a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.
+## <a name="remarks"></a>Observaciones
+Esta estructura se devuelve de una llamada a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.
 
-Un uso típico de esta estructura es de apoyo un **memoria** ventana de depuración.
+Un uso típico de esta estructura es compatible con una ventana de depuración de **memoria.**
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

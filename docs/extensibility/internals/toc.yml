@@ -38,7 +38,7 @@
           href: command-design.md
         - name: Implementación de comandos
           href: command-implementation.md
-        - name: Disponibilidad de comandos
+        - name: Disponibilidad de los comandos
           href: command-availability.md
         - name: Algoritmo de enrutamiento de comandos
           href: command-routing-algorithm.md
@@ -112,7 +112,7 @@
               href: important-commands-for-language-service-filters.md
         - name: Registro de un servicio de lenguaje heredado2
           href: registering-a-legacy-language-service2.md
-        - name: 'Lista de comprobación: Creación de un servicio de lenguaje heredado'
+        - name: 'Lista de comprobación: creación de un servicio de lenguaje heredado'
           href: checklist-creating-a-legacy-language-service.md
         - name: Características del servicio de lenguaje heredado2
           items:
@@ -160,7 +160,7 @@
           href: legacy-language-service-parser-and-scanner.md
         - name: 'Tutorial: Creación de un servicio de lenguaje heredado'
           href: walkthrough-creating-a-legacy-language-service.md
-        - name: 'Tutorial: Obtención de una lista de los fragmentos de código instalados (implementación heredada)'
+        - name: 'Tutorial: Obtención de una lista de fragmentos de código instalados (implementación heredada)'
           href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
         - name: Características del servicio de lenguaje heredado1
           items:
@@ -208,9 +208,9 @@
   items:
     - name: Proyectos
       href: projects.md
-    - name: 'Generación de nuevos proyectos: Aspectos técnicos (parte 1)'
+    - name: 'Nueva generación de proyectos: aspectos técnicos, primera parte'
       href: new-project-generation-under-the-hood-part-one.md
-    - name: 'Generación de nuevos proyectos: Aspectos técnicos (parte 2)'
+    - name: 'Nueva generación de proyectos: aspectos técnicos, segunda parte'
       href: new-project-generation-under-the-hood-part-two.md
     - name: Tipos de proyecto
       items:
@@ -224,7 +224,7 @@
               href: creating-project-types.md
             - name: Decisiones de diseño del tipo de proyecto
               href: project-type-design-decisions.md
-            - name: 'Lista de comprobación: Creación de nuevos tipos de proyectos'
+            - name: 'Lista de comprobación: creación de nuevos tipos de proyecto'
               href: checklist-creating-new-project-types.md
             - name: Creación de instancias de proyecto mediante generadores de proyecto
               href: creating-project-instances-by-using-project-factories.md
@@ -486,21 +486,21 @@
           items:
             - name: Guía de pruebas para los complementos de control de código fuente
               href: test-guide-for-source-control-plug-ins.md
-            - name: 'Área de prueba 1: Incorporación y apertura desde el control de código fuente'
+            - name: 'Área de prueba 1: agregar a/abrir desde control de código fuente'
               href: test-area-1-add-to-open-from-source-control.md
-            - name: 'Área de prueba 2: Obtención desde el control de código fuente'
+            - name: 'Área de prueba 2: obtener de control de código fuente'
               href: test-area-2-get-from-source-control.md
-            - name: 'Área de prueba 3: Extracción del repositorio y cancelación de la operación'
+            - name: 'Área de prueba 3: extraer del repositorio/cancelar extracción del repositorio'
               href: test-area-3-check-out-undo-checkout.md
-            - name: 'Área de prueba 4: Inserción en el repositorio'
+            - name: 'Área de prueba 4: insertar en el repositorio'
               href: test-area-4-check-in.md
-            - name: 'Área de prueba 5: Cambio del control de código fuente'
+            - name: 'Área de prueba 5: cambiar control de código fuente'
               href: test-area-5-change-source-control.md
-            - name: 'Área de prueba 6: Eliminar'
+            - name: 'Área de prueba 6: eliminar'
               href: test-area-6-delete.md
-            - name: 'Área de prueba 7: Compartir'
+            - name: 'Área de prueba 7: compartir'
               href: test-area-7-share.md
-            - name: 'Área de prueba 8: Cambio de los complementos'
+            - name: 'Área de prueba 8: cambio de complementos'
               href: test-area-8-plug-in-switching.md
     - name: Creación de un VSPackage de control de código fuente
       items:

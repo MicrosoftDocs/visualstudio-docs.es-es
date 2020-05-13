@@ -2,19 +2,20 @@
 title: Instalación de herramientas de IA
 description: Describe cómo instalar herramientas de IA para Visual Studio
 keywords: ai, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915807"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638571"
 ---
 # <a name="installation"></a>Instalación
 
@@ -71,7 +72,7 @@ Para instalar cuDNN, siga estos pasos:
 > [!NOTE]
 > Los marcos de aprendizaje profundo anteriores, como CNTK 2.0 y TensorFlow 1.2.1, necesitan cuDNN v5.1. No obstante, puede tener varias versiones de cuDNN instaladas a la vez.
 
-### <a name="python"></a>Plantillas de
+### <a name="python"></a>Python
 
 Python ha sido el lenguaje de programación principal para las aplicaciones de aprendizaje profundo. Se necesita la distribución de Python de **64 bits** y se recomienda [Python 3.5.4](https://www.python.org/downloads/release/python-354/) para lograr la mejor compatibilidad posible.
 

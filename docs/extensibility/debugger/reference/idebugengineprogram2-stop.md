@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop | Microsoft Docs
+title: IDebugEngineProgram2::Stop ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d7213dcd2484ba69caf51fdc21f52bba5bb3361
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77506451"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730484"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 Detiene todos los subprocesos que se ejecutan en este programa.
@@ -41,10 +41,10 @@ int Stop();
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="remarks"></a>Observaciones
- Se llama a este método cuando este programa se está depurando en un entorno de varios programas. Cuando se recibe un evento de detención de algún otro programa, se llama a este método en este programa. La implementación de este método debe ser asincrónica; es decir, no es necesario detener todos los subprocesos antes de que este método devuelva. La implementación de este método puede ser tan simple como llamar al método [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) en este programa.
+ Se llama a este método cuando se depura este programa en un entorno de varios programas. Cuando se recibe un evento de detención de algún otro programa, se llama a este método en este programa. La implementación de este método debe ser asincrónica; es decir, no todos los subprocesos deben tener que detenerse antes de que se devuelva este método. La implementación de este método puede ser tan simple como llamar al método [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) en este programa.
 
- Los implementadores deben enviar un [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) cuando el programa se detenga.
+ Los implementadores deben enviar un [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) cuando se detiene el programa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

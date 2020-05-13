@@ -1,31 +1,31 @@
 ---
-title: 'TaskScheduler Class: miembros internos | Microsoft Docs'
+title: Clase TaskScheduler - Miembros internos ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865e12819a5e7325886c0f7f5d8425a6b3d2e393
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331329"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712565"
 ---
-# <a name="taskscheduler-class---internal-members"></a>TaskScheduler Class: miembros internos
-En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> artículo de referencia.
+# <a name="taskscheduler-class---internal-members"></a>TaskScheduler (Clase) - Miembros internos
+En este artículo se describen los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudan a implementar un depurador personalizado. Para obtener información general sobre <xref:System.Threading.Tasks.TaskScheduler> esta clase, consulte el artículo de referencia.
 
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espacio de nombres:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Ensamblado:** mscorlib (en *mscorlib.dll*)
 
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+ Dado que no puede tener acceso a estos miembros internos desde .NET Framework, se proporciona la sintaxis siguiente en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,13 +38,13 @@ En este artículo se describe los miembros internos de la <xref:System.Threading
 
 ### <a name="methods"></a>Métodos
 
-|Name|Descripción|
+|Nombre|Descripción|
 |----------|-----------------|
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matriz de todas las tareas programadas.|
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.|
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matriz <xref:System.Threading.Tasks.TaskScheduler> de todos los objetos que están activos actualmente.|
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="see-also"></a>Vea también
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Internos de extensión paralela para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

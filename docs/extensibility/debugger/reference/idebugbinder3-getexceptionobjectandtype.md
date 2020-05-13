@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: IDebugBinder3::GetExceptionObjectAndType ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29aa44bdd67234dec4b560ad41be8c677e4356e3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327074"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735752"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Este método recupera la excepción asociada a un objeto, si existe.
@@ -43,16 +43,16 @@ int GetExceptionObjectAndType(
 
 ## <a name="parameters"></a>Parámetros
 `ppException`\
-[out] Devuelve el objeto que representa la excepción.
+[fuera] Devuelve el objeto que representa la excepción.
 
 `ppField`\
-[out] Devuelve el objeto que representa un campo específico que pueda haberle causado la excepción (puede ser un valor nulo).
+[fuera] Devuelve el objeto que representa un campo específico que puede haber causado la excepción (puede ser un valor nulo).
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 > [!NOTE]
-> Para comprobar si hay una excepción, compruebe el valor devuelto por `ppException`: si es un valor null, entonces ninguna excepción está asociada a este objeto.
+> Para comprobar si hay una excepción, `ppException`compruebe el valor devuelto por : si es un valor nulo, no hay ninguna excepción asociada a este objeto.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

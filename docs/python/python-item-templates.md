@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430343"
 ---
 # <a name="python-item-templates"></a>Plantillas de elementos de Python
 
 Las plantillas de elementos están disponibles en proyectos de Python a través del comando de menú **Proyecto** > **Agregar nuevo elemento** o el comando **Agregar** > **Nuevo elemento** en el menú contextual del **Explorador de soluciones**.
 
-![Cuadro de diálogo Agregar nuevo elemento](media/project-item-templates.png)
+![Cuadro de diálogo Add New Item](media/project-item-templates.png)
 
 Con el nombre que proporcione para el elemento, una plantilla suele crear uno o varios archivos y carpetas dentro de la carpeta actualmente seleccionada en el proyecto (al hacer clic con el botón derecho en una carpeta para que aparezca el menú contextual se selecciona automáticamente esa carpeta). Al agregar un elemento, lo incluye en el proyecto de Visual Studio y aparecerá en el **Explorador de soluciones**.
 
@@ -46,7 +46,7 @@ En la tabla siguiente se explica brevemente el efecto de cada plantilla de eleme
 | **web.config de archivos estáticos de Azure** | Un archivo *web.config* que normalmente se agrega a una carpeta *static* (u otra carpeta que contiene elementos estáticos) para deshabilitar el control de Python para esa carpeta. Este archivo de configuración funciona junto con uno de los archivos de configuración FastCGI o HttpPlatformHandler anteriores. Para más información, consulte [Configure an app for IIS](configure-web-apps-for-iis-windows.md) (Configurar una aplicación para IIS). |
 | **web.config de depuración remota de Azure** | En desuso (se usaba para depuración remota en Azure App Service para Windows, que ya no se admite). |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Proyectos de Python - Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Plantillas de proyecto web de Python](python-web-application-project-templates.md)

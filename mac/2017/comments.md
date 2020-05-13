@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74982646"
 ---
 # <a name="comments"></a>Comentarios
@@ -20,7 +20,7 @@ Para comentar un bloque de código completo:
 
 * Seleccione el código y **Alternar comentario de línea** en el menú contextual
 
-O
+O BIEN
 
 * Use el enlace de teclado `cmd + /` en el código seleccionado.
 
@@ -48,6 +48,6 @@ Los comentarios también son útiles para documentar el código para los desarro
 *)
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Marcar código como comentario (Visual Studio en Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

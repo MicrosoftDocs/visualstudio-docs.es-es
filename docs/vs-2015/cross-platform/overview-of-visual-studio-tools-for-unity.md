@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74298746"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Información general de Visual Studio Tools para Unity
@@ -66,5 +66,5 @@ En esta sección aprenderá más acerca de las características que ofrece Visua
   
 - Puede cambiar cómo Visual Studio Tools para Unity genera los archivos de proyecto usando la devolución de llamada de estilo de Unity ProjectFileGeneration. Para obtener más información, vea el ejemplo de Generación de archivos de proyecto.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Página principal de Unity](https://unity.com/)

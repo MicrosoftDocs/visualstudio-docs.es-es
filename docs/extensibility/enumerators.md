@@ -1,41 +1,41 @@
 ---
-title: Los enumeradores | Microsoft Docs
+title: Enumeradores de la casa de la página de la empresa Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d3a0876dfd3a9d7b9cc86b18f6e9a6ba3b780d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711854"
 ---
-# <a name="enumerators"></a>Enumeradores
-Esta sección enumeran los tipos de datos del enumerador en la API de complemento de Control de origen que debe conocer el complemento de control de código fuente.
+# <a name="enumerators"></a>Enumerators
+En esta sección se enumeran los tipos de datos del enumerador en la API de complemento de Control de código fuente que debe conocer el complemento de control de código fuente.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Código de comando](../extensibility/command-code-enumerator.md) enumera las opciones para la [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md) funciones.
+- [Código de comando](../extensibility/command-code-enumerator.md) Enumera las opciones para el [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md) funciones.
 
-- [Mensaje](../extensibility/message-enumerator.md) enumera los marcadores utilizados para la devolución de llamada impresión [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+- [Mensaje](../extensibility/message-enumerator.md) Enumera los indicadores utilizados para la devolución de llamada de impresión, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
-- [Archivo de código de estado](../extensibility/file-status-code-enumerator.md) contiene valores constantes que especifican el estado de un archivo bajo control de código fuente con nombre.
+- [Código de estado del archivo](../extensibility/file-status-code-enumerator.md) Contiene valores constantes con nombre que especifican el estado de un archivo bajo control de código fuente.
 
-- [Código de estado de directorio](../extensibility/directory-status-code-enumerator.md) contiene valores constantes que especifican el estado de un directorio bajo control de código fuente con nombre.
+- [Código de estado del directorio](../extensibility/directory-status-code-enumerator.md) Contiene valores constantes con nombre que especifican el estado de un directorio bajo control de código fuente.
 
 ## <a name="related-sections"></a>Secciones relacionadas
-- [Crear un control de código fuente complemento](../extensibility/internals/creating-a-source-control-plug-in.md) define el SDK de complemento de Control de origen y se describen los recursos incluidos.
+- [Crear un complemento de control de código fuente](../extensibility/internals/creating-a-source-control-plug-in.md) Define el SDK de complemento de Control de código fuente y describe los recursos incluidos.
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) pide al usuario las opciones avanzadas para el comando especificado.
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Solicita al usuario opciones avanzadas para el comando dado.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) examina la lista de archivos para su estado actual. Además, utiliza el `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`.
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Examina la lista de archivos para su estado actual. Además, `pfnPopulate` utiliza la función para notificar al autor `nCommand`de la llamada cuando un archivo no coincide con los criterios para el archivo .
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) describe la función de devolución de llamada que se usa por [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el complemento a través del IDE de control de origen.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Describe la función de devolución de llamada que usa [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el complemento de control de código fuente a través del IDE.
 
-- [Los complementos de control de origen](../extensibility/source-control-plug-ins.md) proporciona una lista completa de todos los elementos de la API de complemento de Control de código fuente.
+- [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md) Proporciona una lista completa de todos los elementos de la API de complemento de Control de código fuente.

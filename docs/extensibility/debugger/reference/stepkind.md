@@ -1,5 +1,5 @@
 ---
-title: STEPKIND | Microsoft Docs
+title: STEPKIND ????????? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329156"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713554"
 ---
 # <a name="stepkind"></a>STEPKIND
-Especifica el tipo de paso de ejecución paso a paso.
+Especifica el tipo de paso para el paso a paso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,26 +46,26 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `STEP_INTO`\
- Pasos en una función.
+ Entra en una función.
 
  `STEP_OVER`\
- Pasos a través de una función.
+ Pasos sobre una función.
 
  `STEP_OUT`\
- Sale de una función paso a paso.
+ Sale de una función.
 
  `STEP_BACKWARDS`\
- Retroceder a una función.
+ Retrocede hacia atrás en una función.
 
-## <a name="remarks"></a>Comentarios
- Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.
+## <a name="remarks"></a>Observaciones
+ Se pasa como argumento al método [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

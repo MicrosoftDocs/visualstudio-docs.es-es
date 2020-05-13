@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349872"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713993"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que aún no se ha enlazado).
 
 ## <a name="syntax"></a>Sintaxis
@@ -46,26 +46,26 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `PBPS_NONE`\
- Marcador de posición cero. Este valor no se devuelve nunca.
+ Marcador de posición para cero. Este valor nunca se devuelve.
 
  `PBPS_DELETED`\
  Indica que se ha eliminado el punto de interrupción pendiente.
 
  `PBPS_DISABLED`\
- Indica que el punto de interrupción pendiente está deshabilitada.
+ Indica que el punto de interrupción pendiente está deshabilitado.
 
  `PBPS_ENABLED`\
- Indica que está habilitado el punto de interrupción pendiente.
+ Indica que el punto de interrupción pendiente está habilitado.
 
-## <a name="remarks"></a>Comentarios
- Usar como el `state` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.
+## <a name="remarks"></a>Observaciones
+ Utilícelo como `state` miembro de la estructura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

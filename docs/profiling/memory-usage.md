@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929230"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256197"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 
@@ -117,7 +117,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
  El panel superior muestra el número y el tamaño de los tipos en la instantánea, incluido el tamaño de todos los objetos a los que hace referencia el tipo (**Tamaño inclusivo**).
 
- El árbol **Rutas de acceso al nodo raíz** en el panel inferior muestra los objetos que hacen referencia al tipo seleccionado en el panel superior. El recolector de elementos no utilizados de .NET Framework limpia la memoria de un objeto solo cuando se libera el último tipo que hace referencia a él.
+ El árbol **Rutas de acceso al nodo raíz** en el panel inferior muestra los objetos que hacen referencia al tipo seleccionado en el panel superior. El recolector de elementos no utilizados de .NET limpia la memoria de un objeto únicamente si el último tipo que hace referencia a este se ha liberado.
 
  El árbol **Objetos a los que se hace referencia** muestra las referencias que se incluyen en el tipo seleccionado en el panel superior.
 

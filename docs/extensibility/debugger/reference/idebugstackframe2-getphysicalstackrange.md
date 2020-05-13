@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+title: IDebugStackFrame2::GetPhysicalStackRange ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719671"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.
+Obtiene una representación dependiente del equipo del intervalo de direcciones físicas asociadas a un marco de pila.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>Parámetros
 `paddrMin`\
-[out] Devuelve el menor dirección física asociada con este marco de pila.
+[fuera] Devuelve la dirección física más baja asociada a este marco de pila.
 
 `paddrMax`\
-[out] Devuelve la dirección física más alta asociada con este marco de pila.
+[fuera] Devuelve la dirección física más alta asociada a este marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- La información devuelta por este método se utiliza el Administrador de depuración de la sesión (SDM) para ordenar los marcos de pila.
+## <a name="remarks"></a>Observaciones
+ El administrador de depuración de sesión (SDM) utiliza la información devuelta por este método para ordenar los marcos de pila.
 
- Se supone que la pila de llamadas crece hacia abajo, es decir, que se han agregado nuevos marcos de pila en las direcciones de memoria cada vez más inferiores. Una arquitectura en tiempo de ejecución debe proporcionar los intervalos de pila física que coinciden con esta suposición.
+ Se supone que la pila de llamadas crece hacia abajo, es decir, que las nuevas tramas de pila se agregan en direcciones de memoria cada vez más bajas. Una arquitectura en tiempo de ejecución debe proporcionar intervalos de pila físicos que coincidan con esta suposición.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

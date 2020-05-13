@@ -1,18 +1,19 @@
 ---
 title: Supervisión de utilización de GPU
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8cc9491edb2e38ef96aa8ad6d554a53d43e5957f
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62560953"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638723"
 ---
 # <a name="monitoring-gpu-utilization"></a>Supervisión de la utilización de GPU
 

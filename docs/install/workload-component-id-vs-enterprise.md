@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a122ce7ab95ff529d231d34e3cdd4852a0b49b81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+open_to_public_contributors: false
+ms.openlocfilehash: 7b4ddc14a6409b0e8450a61ab70d7be9d4f88a3c
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276349"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Directorio de componentes de Visual Studio Enterprise
 

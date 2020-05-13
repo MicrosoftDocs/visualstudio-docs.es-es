@@ -5,18 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 03/02/2020
+ms.date: 04/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e82ab35143a4987df1340fd75f0125c955e6c3d
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+open_to_public_contributors: false
+ms.openlocfilehash: 33d82e84b28fa85bf4cfb014ecd292f31e0c84cb
+ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235072"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82109460"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -28,6 +29,20 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.6.0 | Versión preliminar 4 | 23 de abril de 2020 | 16.6.30021.99 |
+| 16.6.0 | Versión preliminar 3 | 16 de abril de 2020 | 16.6.30014.187 |
+| 16.0.13 | Release | 14 de abril de 2020 | 16.0.28803.718 |
+| 16.4.7 | Release | 14 de abril de 2020 | 16.4.30011.19 |
+| 16.5.4 | Release | 14 de abril de 2020 | 16.5.30011.22 |
+| 16.5.3 | Release | 7 de abril de 2020 | 16.5.30002.166 |
+| 16.6.0 | Versión preliminar 2.1 | 2 de abril de 2020 | 16.6.30001.183 |
+| 16.5.2 | Release | 31 de marzo de 2020 | 16.5.29926.136 |
+| 16.6.0 | Versión preliminar 2 | 26 de marzo de 2020 | 16.6.29924.181 |
+| 16.5.1 | Release | 24 de marzo de 2020 | 16.5.29920.165 |
+| 16.6.0 | Versión preliminar 1 | 16 de marzo de 2020 | 16.6.29911.98 |
+| 16.5.0 | Release | 16 de marzo de 2020 | 16.5.29911.84 |
+| 16.4.6 | Release | 10 de marzo de 2020  | 16.4.29905.134 |
+| 16.0.12 | Release | 10 de marzo de 2020 | 16.0.28803.697 |
 | 16.5.0 | Versión preliminar 5 | 2 de marzo de 2020 | 16.5.29827.131 |
 | 16.5.0 | Versión preliminar 4 | 25 de febrero de 2020 | 16.5.29820.132 |
 | 16.5.0 | Versión preliminar 3 | 19 de febrero de 2020 | 16.5.29814.53 |
@@ -126,6 +141,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.22 | Release | 14 de abril de 2020 | 15.9.28307.1093 |
+| 15.9.21 | Release | 10 de marzo de 2020 | 15.9.28307.1064 |
 | 15.9.20 | Release | 11 de febrero de 2020 | 15.9.28307.1033 |
 | 15.9.19 | Release | 14 de enero de 2020 | 15.9.28307.1000 |
 | 15.0.28 | Release | 11 de diciembre de 2019 | 15.0.26228.102 |

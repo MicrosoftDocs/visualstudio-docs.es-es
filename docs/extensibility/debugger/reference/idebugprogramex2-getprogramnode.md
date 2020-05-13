@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::GetProgramNode | Microsoft Docs
+title: IDebugProgramEx2::GetProgramNode ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 163c5e543c031d706c0a9922a5f6cfc19e540888
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13fea906a0234186050fc51a8f23c903778fb055
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325168"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722343"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
-Obtiene el nodo de programa asociado con un programa.
+Obtiene el nodo de programa asociado a un programa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ int GetProgramNode( 
 
 ## <a name="parameters"></a>Parámetros
 `ppProgramNode`\
-[out] Devuelve un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa asociado con este programa.
+[fuera] Devuelve un [objeto IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo de programa asociado a este programa.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

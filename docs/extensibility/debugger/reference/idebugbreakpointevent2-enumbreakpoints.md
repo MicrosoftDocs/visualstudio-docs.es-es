@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs
+title: IDebugBreakpointEvent2::EnumBreakpoints ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a74e726951297802b2e47c3501c083ac83ffa2a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352921"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735034"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Crea un enumerador para todos los puntos de interrupción que se desencadena en la ubicación actual del código.
+Crea un enumerador para todos los puntos de interrupción que se desencadenaron en la ubicación de código actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[out] Devuelve un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción asociadas con la ubicación actual del código.
+[fuera] Devuelve un [iEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción asociados a la ubicación de código actual.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- No todos los puntos de interrupción en una ubicación determinada pueden activarse en un momento determinado (por ejemplo, un punto de interrupción con una condición no se activará hasta que se cumpla esa condición).
+## <a name="remarks"></a>Observaciones
+ No todos los puntos de interrupción en un lugar determinado pueden activarse en un momento determinado (por ejemplo, un punto de interrupción con una condición no se activará hasta que se cumpla esa condición).
 
 ## <a name="see-also"></a>Vea también
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

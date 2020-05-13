@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField | Microsoft Docs
+title: IDebugEnumField ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14ea4834619d9e28d4b8a15206b3ea9411f50017
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7885f36a113809e81279498a769e257af4f1cde2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345105"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730173"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Esta interfaz representa un tipo de enumeración.
@@ -31,26 +31,26 @@ IDebugEnumField : IDebugContainerField
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
  Un proveedor de símbolos implementa esta interfaz para representar una enumeración.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz desde el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_ENUM`.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz desde la `FIELD_TYPE_ENUM`interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve .
 
-## <a name="methods-in-vtable-order"></a>Métodos en orden de VTable
- Además de los métodos en el `IDebugField` y `IDebugContainerField` interfaces, esta interfaz implementa los métodos siguientes:
+## <a name="methods-in-vtable-order"></a>Métodos en orden VTable
+ Además de los `IDebugField` `IDebugContainerField` métodos en las interfaces y, esta interfaz implementa los métodos siguientes:
 
 |Método|Descripción|
 |------------|-----------------|
-|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el nombre para este tipo de enumeración.|
-|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Devuelve el nombre de la constante de enumeración asociada con el valor especificado.|
-|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Devuelve el valor asociado con el nombre de constante de enumeración determinado|
-|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Devuelve el valor asociado con el nombre de constante de enumeración especificado pero el caso y pasa por alto.|
+|[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el nombre de este tipo de enumeración.|
+|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Devuelve el nombre de la constante de enumeración asociada al valor especificado.|
+|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Devuelve el valor asociado con el nombre de constante de enumeración dado|
+|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Devuelve el valor asociado con el nombre de constante de enumeración especificado, pero ignorando mayúsculas y minúsculas.|
 
-## <a name="remarks"></a>Comentarios
- Es el símbolo subyacente que realmente está enlazado a una ubicación con [enlazar](../../../extensibility/debugger/reference/idebugbinder-bind.md).
+## <a name="remarks"></a>Observaciones
+ Es el símbolo subyacente que en realidad está enlazado a una ubicación con [Enlazar](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: sh.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

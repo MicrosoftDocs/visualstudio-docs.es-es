@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Microsoft Docs
+title: IDebugProperty2::EnumChildren ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4aa7bbad1361053d86c59fabb58027c955856222
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343120"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721509"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Recupera una lista de los elementos secundarios de la propiedad.
@@ -53,28 +53,28 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parámetros
 `dwFields`\
-[in] Una combinación de marcas de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeración que especifica qué campos de los enumerados [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) son estructuras que deben rellenarse.
+[en] Una combinación de indicadores de la [enumeración DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeración que especifica qué campos de las estructuras [de DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumeradas se deben rellenar.
 
 `dwRadix`\
-[in] Especifica la base que se usará para dar formato a cualquier información numérica.
+[en] Especifica el radio que se utilizará para dar formato a cualquier información numérica.
 
 `guidFilter`\
-[in] GUID del filtro utilizado con el `dwAttribFilter` y `pszNameFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, `guidFilterLocals` filtros para las variables locales.
+[en] GUID del filtro utilizado `dwAttribFilter` `pszNameFilter` con los `DEBUG_PROPERTY_INFO` parámetros y para seleccionar qué elementos secundarios se van a enumerar. Por ejemplo, `guidFilterLocals` filtros para variables locales.
 
 `dwAttribFilter`\
-[in] Una combinación de marcas de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeración que especifica qué tipo de objetos para enumerar, por ejemplo `DBG_ATTRIB_METHOD` para todos los métodos que podrían ser elementos secundarios de esta propiedad. Puede usar en combinación con la `guidFilter` y `pszNameFilter` parámetros.
+[en] Una combinación de indicadores de la [enumeración DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeración `DBG_ATTRIB_METHOD` que especifica qué tipo de objetos enumerar, por ejemplo, para todos los métodos que podrían ser secundarios de esta propiedad. Se utiliza en `guidFilter` `pszNameFilter` combinación con los parámetros y.
 
 `pszNameFilter`\
-[in] El nombre del filtro utilizado con el `guidFilter` y `dwAttribFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, establecer este parámetro en los filtros "MyX" para todos los elementos secundarios con el nombre "MyX."
+[en] El nombre del filtro `guidFilter` utilizado `dwAttribFilter` con los `DEBUG_PROPERTY_INFO` parámetros y para seleccionar qué elementos secundarios se van a enumerar. Por ejemplo, establecer este parámetro en filtros "MyX" para todos los elementos secundarios con el nombre "MyX."
 
 `dwTimeout`\
-[in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
+[en] Especifica el tiempo máximo, en milisegundos, que se debe esperar antes de volver de este método. Se `INFINITE` usa para esperar indefinidamente.
 
 `ppEnum`\
-[out] Devuelve un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene una lista de las propiedades secundarias.
+[fuera] Devuelve un [iEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene una lista de las propiedades secundarias.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
+ Si se `S_OK`realiza correctamente, devuelve ; de lo contrario devuelve código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Microsoft Docs
+title: OPTNAMECHANGEPFN ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336238"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702245"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Se trata de una función de devolución de llamada especificada en una llamada a la [SccSetOption](../extensibility/sccsetoption-function.md) (mediante la opción `SCC_OPT_NAMECHANGEPFN`) y se usa para comunicar los cambios de nombre mediante el control de código fuente complemento vuelve a realizar el IDE.
+Se trata de una función de devolución de llamada `SCC_OPT_NAMECHANGEPFN`especificada en una llamada a la [SccSetOption](../extensibility/sccsetoption-function.md) (mediante la opción ) y se utiliza para comunicar los cambios de nombre realizados por el complemento de control de código fuente al IDE.
 
-## <a name="signature"></a>Signatura
+## <a name="signature"></a>Signature
 
 ```cpp
 typedef void (*OPTNAMECHANGEPFN)(
@@ -35,23 +35,23 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="parameters"></a>Parámetros
  pvCallerData
 
-[in] Valor de usuario especificado en una llamada anterior a la [SccSetOption](../extensibility/sccsetoption-function.md) (mediante la opción `SCC_OPT_USERDATA`).
+[en] Valor de usuario especificado en una llamada anterior a `SCC_OPT_USERDATA` [SccSetOption](../extensibility/sccsetoption-function.md) (mediante la opción ).
 
  pszOldName
 
-[in] El nombre original del archivo.
+[en] El nombre original del archivo.
 
  pszNewName
 
-[in] Se ha cambiado el nombre del archivo a.
+[en] El nombre al que se ha cambiado el nombre del archivo.
 
 ## <a name="return-value"></a>Valor devuelto
  Ninguno.
 
-## <a name="remarks"></a>Comentarios
- Si se cambia el nombre de un archivo durante una operación de control de código fuente, el complemento de control de código fuente puede notificar el IDE sobre el cambio de nombre a través de esta devolución de llamada.
+## <a name="remarks"></a>Observaciones
+ Si se cambia el nombre de un archivo durante una operación de control de código fuente, el complemento de control de código fuente puede notificar al IDE sobre el cambio de nombre a través de esta devolución de llamada.
 
- Si el IDE no admite esta devolución de llamada, no llamará a la [SccSetOption](../extensibility/sccsetoption-function.md) para especificarla. Si el complemento no admite esta devolución de llamada, devolverá `SCC_E_OPNOTSUPPORTED` desde el `SccSetOption` funcionar cuando el IDE intenta establecer la devolución de llamada.
+ Si el IDE no admite esta devolución de llamada, no llamará a [la SccSetOption](../extensibility/sccsetoption-function.md) para especificarlo. Si el complemento no admite esta devolución `SCC_E_OPNOTSUPPORTED` de `SccSetOption` llamada, se devolverá de la función cuando el IDE intente establecer la devolución de llamada.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: Icon (elemento) (plantillas de Visual Studio) | Microsoft Docs
+title: Elemento De icono (Plantillas de Visual Studio) Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4068c192d7e01f4c9162e8006152a90b38aed05b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350139"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710528"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Icon (elemento) (plantillas de Visual Studio)
-Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.
+# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (plantillas de Visual Studio)
+Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como icono, que aparece en el cuadro de diálogo **Nuevo proyecto** o Agregar **nuevo elemento,** para la plantilla.
 
- \<VSTemplate> \<TemplateData> \<Icon>
+ \<VSTemplate \<> TemplateData> \<Icon>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,8 +44,8 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Identificador de un GUID que especifica el paquete de Visual Studio.|
-|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|
+|`Package`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Un identificador GUID que especifica el id. paquete de Visual Studio.|
+|`ID`|Atributo opcional, para escenarios de usuario avanzados.<br /><br /> Especifica el identificador de recurso de Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -57,15 +57,15 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|
 
 ## <a name="text-value"></a>Valor de texto
- Se requiere un valor de texto a menos que el `Package` y `ID` se usan los atributos.
+ Se requiere un valor de texto a menos que se usen los atributos `Package` y `ID`.
 
- El texto proporciona la ruta de acceso y el nombre del icono de la plantilla que va a aparecer en el **nuevo proyecto** cuadro de diálogo.
+ El texto proporciona la ruta de acceso y el nombre de archivo del icono de plantilla que aparecerá en el cuadro de diálogo **Nuevo proyecto.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
  `Icon` es un elemento secundario obligatorio de `TemplateData`.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.
+ En el ejemplo siguiente se muestran [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] los metadatos de una plantilla de proyecto para una aplicación.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que ac
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

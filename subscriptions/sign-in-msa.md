@@ -3,15 +3,16 @@ title: Inicio de sesión en Suscripciones de Visual Studio con la cuenta Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
+ms.date: 03/11/2020
 ms.topic: conceptual
 description: Cómo iniciar sesión en la instancia de Visual Studio Subscription con la cuenta Microsoft (MSA)
-ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6bc71eac42ac582b7d714706567be69e78dfa383
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493083"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233220"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Inicio de sesión en las suscripciones de Visual Studio con la cuenta Microsoft (MSA)
 
@@ -36,10 +37,16 @@ R:  La causa más común de los problemas de inicio de sesión es el intento de 
 
 ### <a name="q--i-cant-see-my-subscription-where-is-it"></a>P:  No puedo ver mi suscripción. ¿Dónde están?
 R:  Muchos usuarios tienen más de una suscripción.  Si puede iniciar sesión en el portal de suscripciones de https://my.visualstudio.com, pero no puede ver su suscripción, hay dos causas comunes:
-1. Ha iniciado sesión con otra cuenta Microsoft.  Es posible que tenga varias suscripciones, como una suscripción Professional o Enterprise y una de Visual Studio Dev Essentials, y que estén asociadas a diferentes direcciones de correo electrónico. Para ver las otras suscripciones, cierre la sesión y vuelva a iniciarla con la otra MSA.
-2. Tiene varias suscripciones asociadas a la misma MSA.  Para ver todas las suscripciones asociadas a la MSA, visite https://my.visualstudio.com/subscriptions y seleccione la suscripción que quiere usar. 
+- Ha iniciado sesión con otra cuenta Microsoft.  Es posible que tenga varias suscripciones, como una suscripción Professional o Enterprise y una de Visual Studio Dev Essentials, y que estén asociadas a diferentes direcciones de correo electrónico. Para ver las otras suscripciones, cierre la sesión y vuelva a iniciarla con la otra MSA.
+- Tiene varias suscripciones asociadas a la misma MSA.  Para ver todas las suscripciones asociadas a la MSA, visite https://my.visualstudio.com/subscriptions y seleccione la suscripción que quiere usar. 
 
 Si sigue teniendo problemas, puede ponerse en contacto con el equipo de [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.  
 
+## <a name="see-also"></a>Vea también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Pasos siguientes
-Una vez que haya iniciado sesión correctamente en el portal de suscripciones, se recomienda visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, los servicios y las ofertas disponibles.  
+Tras haber iniciado sesión correctamente en el portal de suscripciones, recomendamos visitar la página Ventajas en https://my.visualstudio.com/benefits y examinar las excelentes herramientas, servicios y ofertas disponibles.  

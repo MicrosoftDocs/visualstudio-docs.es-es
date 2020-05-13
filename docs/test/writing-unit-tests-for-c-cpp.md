@@ -1,19 +1,19 @@
 ---
 title: Escritura de pruebas unitarias para C/C++
 description: Escriba pruebas unitarias de C++ en Visual Studio usando varias plataformas de trabajo de prueba, como CTest, Boost.Test y Google Test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
+ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755591"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81649614"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -41,7 +41,7 @@ Los proyectos de prueba unitaria de C++ admiten [CodeLens](../ide/find-code-chan
 
 - **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Se integra con el **Explorador de pruebas**, pero actualmente no tiene una plantilla de proyecto. Debe configurarse de forma manual. Para obtener más información, vea [Cómo: Utilizar Boost.Test en Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La compatibilidad con **CTest** se incluye con el componente **Herramientas de CMake en C++** , que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Sin embargo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para obtener más información, vea [Cómo: Utilizar CTest en Visual Studio](how-to-use-ctest-for-cpp.md).
+- La compatibilidad con **CTest** se incluye con el componente **Herramientas de CMake en C++** , que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Para obtener más información, vea [Cómo: Utilizar CTest en Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 y anterior**
 
@@ -79,7 +79,7 @@ Para permitir el acceso a las funciones en el proyecto en pruebas, agregue una r
 
 ### <a name="link-to-object-or-library-files"></a>Vinculación con archivos de objeto o biblioteca
 
-Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Para obtener más información, vea [Para vincular las pruebas a los archivos de biblioteca u objeto](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#object_files).
+Si el código de prueba no exporta las funciones que quiere probar, puede agregar el archivo de salida .obj o .lib a las dependencias del proyecto de prueba. Para obtener más información, vea [Para vincular las pruebas a los archivos de biblioteca u objeto](how-to-use-microsoft-test-framework-for-cpp.md#object_files).
 
 ### <a name="add-include-directives-for-header-files"></a>Agregar directivas #include de archivos de encabezado
 

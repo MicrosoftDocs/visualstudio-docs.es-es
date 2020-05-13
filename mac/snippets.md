@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68787696"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
@@ -22,15 +22,15 @@ En esta sección se explica cómo crear, insertar y usar fragmentos de código e
 
 Hay varias maneras de agregar fragmentos de código, algunas de las cuales se explican a continuación:
 
-- **Expansión de tabulación**&ndash; empiece a escribir el nombre de la plantilla, selecciónela en la lista y presione **Tab**, **Tab** para agregarla:
+- **Expansión de tabulación**: empiece a escribir el nombre de la plantilla, selecciónela en la lista y presione **Tab**, **Tab** para agregarla:
 
   ![Expansión de tabulación en código](media/source-editor-image13.png)
 
-- **Cuadro de herramientas**&ndash; use el panel de cuadro de herramientas para mostrar una lista de todos los fragmentos de código. Arrastre cualquier plantilla desde el cuadro de herramientas a la posición correcta del código fuente:
+- **Cuadro de herramientas**: use el panel de cuadro de herramientas para mostrar una lista de todos los fragmentos de código. Arrastre cualquier plantilla desde el cuadro de herramientas a la posición correcta del código fuente:
 
   [![Fragmentos de código en el cuadro de herramientas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando Insertar plantillas**&ndash; actualmente no hay ningún enlace de teclado predeterminado establecido para insertar una plantilla. Para crear uno, vaya a **Visual Studio > Preferencias > Enlaces de teclado** y busque `template`. Esto permite agregar el enlace de teclado deseado en el campo Editar enlace; luego, haga clic en **Aplicar**:
+- **Comando Insertar plantillas**: actualmente no hay ningún enlace de teclado predeterminado para insertar una plantilla. Para crear uno, vaya a **Visual Studio > Preferencias > Enlaces de teclado** y busque `template`. Esto permite agregar el enlace de teclado deseado en el campo Editar enlace; luego, haga clic en **Aplicar**:
 
   ![Comando Insertar plantilla](media/source-editor-image15.png)
 
@@ -46,20 +46,20 @@ Presione los botones **Agregar** o **Editar** para crear o editar fragmentos de 
 
 Después de insertar un fragmento de código en el editor, cualquier palabra clave definida se resalta y se puede editar mediante el uso del tabulador para pasar de una a otra. Las palabras clave se comportan como una "variable" en el fragmento de código y se definen colocando un signo de dólar `$` antes y después del nombre de la palabra clave. 
 
-A continuación se muestra la ventana **Editar plantilla**, con la edición del fragmento de código `prop` integrado. El fragmento de código contiene dos palabras clave &ndash; `$type$` y `$name$` &ndash; que pueden tener un conjunto de propiedades adicional (como un valor predeterminado e información sobre herramientas) en el lado derecho de la ventana:
+A continuación se muestra la ventana **Editar plantilla**, con la edición del fragmento de código `prop` integrado. El fragmento de código contiene dos palabras clave &ndash;`$type$` y `$name$`&ndash; que pueden tener un conjunto de propiedades adicionales (como un valor predeterminado e información sobre herramientas) en el lado derecho de la ventana:
 
 ![Ventana Editar plantilla](media/source-editor-image12z.png)
 
 Los siguientes campos se usan para definir un fragmento de código:
 
-- **Shortcut** (Método abreviado)&ndash; el texto que el usuario escribe para insertar el fragmento de código.
-- **Group** (Grupo)&ndash; los fragmentos de código que se agrupan en el menú de contenido del fragmento de código usan este valor.
-- **Description** (Descripción)&ndash; explicación del propósito del fragmento de código.
-- **Mime** &ndash; controla en qué tipos de archivo está disponible el fragmento de código.
-- **Is expandable template** (Es la plantilla expandible)&ndash; asegúrese de que esta opción está activada para que el fragmento de código se puede insertar en la posición del cursor escribiendo el acceso directo.
-- **Is surround with template** (Está rodeado con plantilla)&ndash; active esta opción para mostrar este acceso directo en el menú de contenido **Surround with...**  (Rodear con) en el editor.
-- **Template text** (Texto de la plantilla)&ndash; el fragmento de código real que se insertará en el editor. Se pueden definir dos marcadores de posición de palabras clave al rodear un token con signos de dólar, por ejemplo, `$type$`.
-- **Keyword property panel** (Panel de propiedades de palabras clave)&ndash; en el lado derecho de la ventana, utilice la lista desplegable de la parte superior para elegir una palabra clave (por ejemplo, `type`) y editar propiedades como el valor predeterminado y la información sobre herramientas.
+- **Shortcut** (Método abreviado): el texto que el usuario escribe para insertar el fragmento de código.
+- **Group** (Grupo): los fragmentos de código que se agrupan en el menú de contenido del fragmento de código usan este valor.
+- **Description** (Descripción): explicación del propósito del fragmento de código.
+- **Mime**: controla en qué tipos de archivo está disponible el fragmento de código.
+- **Is expandable template** (Es la plantilla expandible): asegúrese de que esta opción está activada para que el fragmento de código se puede insertar en la posición del cursor escribiendo el acceso directo.
+- **Is surround with template** (Está rodeado con plantilla): active esta opción para mostrar este acceso directo en el menú de contenido **Surround with...**  (Rodear con) en el editor.
+- **Template text** (Texto de la plantilla): el fragmento de código real que se insertará en el editor. Se pueden definir dos marcadores de posición de palabras clave al rodear un token con signos de dólar, por ejemplo, `$type$`.
+- **Keyword property panel** (Panel de propiedades de palabras clave): en el lado derecho de la ventana, utilice la lista desplegable de la parte superior para elegir una palabra clave (por ejemplo, `type`) y editar propiedades como el valor predeterminado y la información sobre herramientas.
 
 ## <a name="using-keywords-in-the-editor"></a>Uso de palabras clave en el editor
 
@@ -81,8 +81,8 @@ Cuando se usa en el editor, la tecla **Tab** cambiará entre la primera `i` y `m
 
 Hay dos palabras clave reservadas que se puede usar en un fragmento de código:
 
-- `$selected$` &ndash; Si el fragmento de código tiene activada la opción **Is surround with template** (Está rodeado con plantilla), esta palabra clave se reemplazará por el texto que estaba resaltado en el editor cuando se eligió el fragmento de código.
-- `$end$` &ndash; Cuando el usuario haya terminado de editar las palabras clave de un fragmento de código, el cursor se colocará en la ubicación de la palabra clave `$end$`.
+- `$selected$`: si el fragmento de código tiene activada la opción **Is surround with template** (Está rodeado con plantilla), esta palabra clave se reemplazará por el texto que estaba resaltado en el editor cuando se eligió el fragmento de código.
+- `$end$`: cuando el usuario haya terminado de editar las palabras clave de un fragmento de código, el cursor se colocará en la ubicación de la palabra clave `$end$`.
 
 El fragmento de código `for` de la sección anterior es un ejemplo de estas dos palabras clave reservadas.
 

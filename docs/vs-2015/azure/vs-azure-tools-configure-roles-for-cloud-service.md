@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692080"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79301468"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -94,7 +94,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración**.
+1. Seleccione la pestaña **Configuración.**
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -118,7 +118,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
     - **Emulador de Microsoft Azure Storage**: si selecciona esta opción, las demás opciones del cuadro de diálogo están deshabilitadas cuando afectan solo a Azure. Seleccione **Aceptar**.
     - **Su suscripción**: si selecciona esta opción, utilice la lista desplegable para seleccionar e iniciar sesión en una cuenta de Microsoft, o bien agregue una cuenta de Microsoft. Seleccione una suscripción de Azure y una cuenta de almacenamiento. Seleccione **Aceptar**.
-    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción en **Conexión** (se recomienda HTTPS en la mayoría de los escenarios). Seleccione **Aceptar**.
+    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para **Conexión** (se recomienda HTTPS para la mayoría de los escenarios.) Seleccione **Aceptar**.
 
 1. Para eliminar una cadena de conexión, selecciónela y seleccione **Quitar configuración**.
 
@@ -156,7 +156,7 @@ Al usar un valor diferente para cada configuración de servicio, no tendrá que 
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Seleccione la pestaña **Configuración**.
+1. Seleccione la pestaña **Configuración.**
 
     ![Pestaña Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -224,7 +224,7 @@ Puede agregar almacenamiento del sistema de archivos local para cada instancia d
     ![Nueva entrada de almacenamiento local](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
     - **Nombre**: escriba el nombre que desea utilizar para el nuevo almacenamiento local.
-    - **Tamaño (MB)** : especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
+    - **Tamaño (MB)**: especifique el tamaño en MB que necesita para el nuevo almacenamiento local.
     - **Limpiar al reciclar rol**: seleccione esta opción para quitar los datos del almacenamiento local cuando se recicla la máquina virtual para este rol.
 
 1. Para eliminar una entrada de almacenamiento local, selecciónela y active **Remove Local Storage** (Quitar almacenamiento local).

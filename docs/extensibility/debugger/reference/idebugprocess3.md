@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3 | Microsoft Docs
+title: IDebugProcess3 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8db169a06864fad24ef7e6ce4c2d188e2a88ef1d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313848"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723545"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
-Esta interfaz representa un proceso en ejecución y sus programas. Esta interfaz existe como un sustituto a varios métodos en el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz. Proporciona control sobre todos los programas en el proceso.
+Esta interfaz representa un proceso en ejecución y sus programas. Esta interfaz existe como un reemplazo de varios métodos en el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz. Proporciona control sobre todos los programas en el proceso.
 
 > [!NOTE]
-> [Continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), y [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md) métodos están en desuso y ya no se debe usar. Utilice los métodos correspondientes en el `IDebugProcess3` interfaz en su lugar.
+> [Los](../../../extensibility/debugger/reference/idebugprogram2-continue.md)métodos Continue , [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)y [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) están en desuso y ya no se deben usar. Utilice los métodos `IDebugProcess3` correspondientes en la interfaz en su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ IDebugProcess3 : IDebugProcess2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Esta interfaz se implementa mediante un proveedor de puerto personalizado para administrar programas como un grupo. Cuando se administran como un grupo de programas, puede controlar su ejecución y establecer un idioma para un evaluador de expresiones. Esta interfaz debe implementarse mediante el proveedor del puerto.
+ Esta interfaz es implementada por un proveedor de puertos personalizado para administrar programas como un grupo. Cuando los programas se administran como un grupo, puede controlar su ejecución y establecer un lenguaje para un evaluador de expresiones. Esta interfaz debe ser implementada por el proveedor del puerto.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Esta interfaz se llama principalmente por el Administrador de depuración de la sesión (SDM) con el fin de interactuar con un grupo de programas identificados en este proceso.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Esta interfaz es llamada principalmente por el administrador del debug de la sesión (SDM) para interactuar con un grupo de programas identificados en este proceso.
 
  Llame a [QueryInterface](/cpp/atl/queryinterface) en un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfaz para obtener esta interfaz.
 
@@ -44,20 +44,20 @@ IDebugProcess3 : IDebugProcess2
 
 |Método|Descripción|
 |------------|-----------------|
-|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continúa la ejecución de o la ejecución paso a paso a través de un proceso.|
-|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Comienza la ejecución de un proceso.|
-|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Avanzar una instrucción o instrucción en el proceso.|
+|[Continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Continúa la ejecución o el paso a paso de un proceso.|
+|[Ejecutar](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Comienza la ejecución de un proceso.|
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Pasos hacia adelante una instrucción o instrucción en el proceso.|
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Obtiene la razón por la que se inició el proceso para la depuración.|
-|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Establece el idioma de hospedaje para que el motor de depuración puede cargar el evaluador de expresiones adecuado.|
-|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Recupera el idioma configurado actualmente para este proceso.|
-|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Deshabilita Editar y continuar (ENC) para este proceso.<br /><br /> Un proveedor de puerto personalizado no implementa este método (siempre debe devolver `E_NOTIMPL`).|
-|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Obtener el estado ENC para este proceso.<br /><br /> Un proveedor de puerto personalizado no implementa este método (siempre debe devolver `E_NOTIMPL`).|
-|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Recupera una matriz de identificadores únicos para los motores de depuración disponible.|
+|[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Establece el lenguaje de hospedaje para que el motor de depuración pueda cargar el evaluador de expresiones adecuado.|
+|[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Recupera el idioma establecido actualmente para este proceso.|
+|[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)|Deshabilita Editar y continuar (ENC) para este proceso.<br /><br /> Un proveedor de puerto personalizado no implementa `E_NOTIMPL`este método (siempre debe devolver ).|
+|[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|Obtenga el estado ENC para este proceso.<br /><br /> Un proveedor de puerto personalizado no implementa `E_NOTIMPL`este método (siempre debe devolver ).|
+|[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|Recupera una matriz de identificadores únicos para los motores de depuración disponibles.|
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: Msdbg.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852038"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544024"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -50,7 +50,7 @@ Los paquetes de extensión también deben declarar las dependencias en los paque
 
 Además, se pueden agregar referencias adicionales a través del nodo de referencias de complemento en el panel de solución del proyecto, como se muestra en la imagen siguiente:
 
-![Captura de pantalla de insertar fecha](media/extending-visual-studio-mac-addin13.png)
+![Captura de pantalla de Insertar fecha](media/extending-visual-studio-mac-addin13.png)
 
 También se agregan sus atributos `assembly:AddinDependency` correspondientes en tiempo de compilación. Una vez que se han colocado los metadatos y las declaraciones de dependencias, puede centrarse en los bloques de creación fundamentales del paquete de extensión.
 
@@ -155,13 +155,13 @@ Para obtener información sobre el ámbito de las áreas disponibles para el des
 * Versiones de .NET Framework de destino
 * Tiempo de ejecución de destino
 * Back-end de VCS
-* Refactorización
+* Refactoring
 * Controladores de ejecución
-* Resalte de sintaxis
+* Resaltado de sintaxis
 
 ## <a name="extending-the-new-editor"></a>Extensión del nuevo editor
 
-Visual Studio para Mac [presenta una nueva interfaz de usuario de edición de texto de Cocoa nativa](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW) basada en las mismas capas del editor de Visual Studio en Windows.
+Visual Studio para Mac [presenta una nueva interfaz de usuario de edición de texto de Cocoa nativa](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes) basada en las mismas capas del editor de Visual Studio en Windows.
 
 Una de las numerosas ventajas de compartir el editor de Visual Studio y Visual Studio para Mac es que el código destinado al editor de Visual Studio puede adaptarse para ejecutarse en Visual Studio para Mac.
 
@@ -193,6 +193,6 @@ Para una determinada propiedad [`MonoDevelop.Ide.Gui.Document`](http://source.mo
 > [!NOTE]
 > Actualmente estamos trabajando para mejorar los escenarios de extensibilidad de Visual Studio para Mac. Si está creando extensiones y necesita más información o ayuda, o si quiere proporcionar comentarios, rellene el formulario [Visual Studio for Mac Extension Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) (Creación de extensiones de Visual Studio para Mac).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comenzar a desarrollar extensiones de Visual Studio (en Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

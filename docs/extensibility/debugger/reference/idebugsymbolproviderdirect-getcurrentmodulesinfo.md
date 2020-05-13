@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347423"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719118"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-Recupera información acerca de los módulos en el grupo de símbolos.
+Recupera información sobre los módulos del grupo de símbolos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,22 +48,22 @@ int GetCurrentModulesInfo(
 
 ## <a name="parameters"></a>Parámetros
 `pCount`\
-[in] Número de módulos de la `ppGuids` matriz.
+[en] Número de módulos en la `ppGuids` matriz.
 
 `ppGuids`\
-[in] Matriz que contiene los identificadores únicos para los módulos.
+[en] Matriz que contiene los identificadores únicos de los módulos.
 
 `pADIds`\
-[in] Identificadores de los dominios de aplicación.
+[en] Identificadores de los dominios de aplicación.
 
 `pCurrentState`\
-[in] Estado actual del grupo de símbolos.
+[en] Estado actual del grupo de símbolos.
 
 `ppCDModItfs`\
-[out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.
+[fuera] Devuelve un objeto que contiene los módulos del grupo de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

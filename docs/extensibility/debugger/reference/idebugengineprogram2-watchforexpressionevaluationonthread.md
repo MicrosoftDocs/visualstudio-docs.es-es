@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730364"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Permite la evaluación de expresiones que se produzca en el subproceso determinado, incluso si se ha detenido el programa (o impide).
+Permite (o no permite) que se produzca la evaluación de expresiones en el subproceso dado, incluso si el programa se ha detenido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,27 +49,27 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Parámetros
 `pOriginatingProgram`\
-[in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que está evaluando una expresión.
+[en] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que está evaluando una expresión.
 
 `dwTid`\
-[in] Especifica el identificador del subproceso.
+[en] Especifica el identificador del subproceso.
 
 `dwEvalFlags`\
-[in] Una combinación de marcas de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que especifican cómo se puede realizar la evaluación.
+[en] Combinación de indicadores de la enumeración [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifican cómo se va a realizar la evaluación.
 
 `pExprCallback`\
-[in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para enviar eventos de depuración que se producen durante la evaluación de expresión.
+[en] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para enviar eventos de depuración que se producen durante la evaluación de expresiones.
 
 `fWatch`\
-[in] Si es distinto de cero (`TRUE`), permite la evaluación de expresiones en el subproceso identificado por `dwTid`; en caso contrario, cero (`FALSE`) no permite la evaluación de expresiones en ese subproceso.
+[en] Si no es`TRUE`cero ( ), permite `dwTid`la evaluación de expresiones en el subproceso identificado por ; de lo`FALSE`contrario, cero ( ) no permite la evaluación de expresiones en ese subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Cuando el Administrador de depuración de la sesión (SDM) solicita un programa, identificado por el `pOriginatingProgram` parámetro, para evaluar una expresión, notifica a todos los demás programas asociados mediante una llamada a este método.
+## <a name="remarks"></a>Observaciones
+ Cuando el administrador de depuración de sesión `pOriginatingProgram` (SDM) pide a un programa, identificado por el parámetro, que evalúe una expresión, notifica a todos los demás programas adjuntos llamando a este método.
 
- Evaluación de expresiones en un programa puede hacer que el código se ejecute en otro, debido a la evaluación de la función o de evaluación de cualquier `IDispatch` propiedades. Por este motivo, este método permite la evaluación de expresiones ejecutar y completar, aunque se puede detener el subproceso en este programa.
+ La evaluación de expresiones en un programa puede hacer que `IDispatch` el código se ejecute en otro, debido a la evaluación de funciones o la evaluación de cualquier propiedad. Debido a esto, este método permite que la evaluación de expresiones se ejecute y se complete aunque el subproceso se detenga en este programa.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

@@ -14,10 +14,12 @@
           href: install-roslyn-analyzers.md
         - name: Configuración de los analizadores de código fuente
           href: use-roslyn-analyzers.md
+        - name: Ámbito del análisis de código activo
+          href: configure-live-code-analysis-scope-managed-code.md
+        - name: Ejecutar análisis de código manualmente
+          href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Deshabilitación del análisis de código
           href: disable-code-analysis.md
-        - name: Habilitar análisis de la solución completa
-          href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Preguntas más frecuentes
           href: analyzers-faq.md
         - name: Analizadores de FxCop
@@ -50,7 +52,7 @@
         - name: Migración a los analizadores de FxCop
           href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
         - name: Ejecución manual del análisis heredado
-          href: how-to-run-code-analysis-manually-for-managed-code.md
+          href: how-to-run-legacy-code-analysis-manually-for-managed-code.md
         - name: Configuración
           items:
             - name: Configuración del análisis heredado
@@ -330,6 +332,10 @@
                   href: ca1064.md
                 - name: 'CA1065: No producir excepciones en ubicaciones inesperadas'
                   href: ca1065.md
+                - name: 'CA1066: Implementar IEquatable al invalidar Equals'
+                  href: ca1066.md
+                - name: 'CA1067: Invalidar Equals al implementar IEquatable'
+                  href: ca1067.md
                 - name: 'CA1068: Los parámetros CancellationToken deben aparecer en último lugar'
                   href: ca1068.md
                 - name: 'CA2210: Los ensamblados deben tener nombres seguros válidos'
@@ -424,6 +430,10 @@
                   href: ca1506.md
                 - name: 'CA1507: Usar nameof en lugar de la cadena'
                   href: ca1507.md
+                - name: 'CA1508: Evitar código de condición no alcanzado'
+                  href: ca1508.md
+                - name: 'CA1509: Entrada no válida en el archivo de configuración de métricas de código'
+                  href: ca1509.md
             - name: Advertencias de movilidad
               items:
                 - name: Información general
@@ -529,6 +539,14 @@
                   href: ca1824.md
                 - name: 'CA1825: Evitar asignaciones de matrices de longitud cero'
                   href: ca1825.md
+                - name: 'CA1826: Usar la propiedad en lugar del método Linq Enumerable'
+                  href: ca1826.md
+                - name: 'CA1827: No usar Count/LongCount si se puede usar Any'
+                  href: ca1827.md
+                - name: 'CA1828: No usar CountAsync/LongCountAsync si se puede usar AnyAsync'
+                  href: ca1828.md
+                - name: 'CA1829: Usar la propiedad Length/Count en lugar del método Enumerable.Count'
+                  href: ca1829.md
             - name: Advertencias de portabilidad
               items:
                 - name: Información general
@@ -559,6 +577,8 @@
                   href: ca2006.md
                 - name: 'CA2007: No esperar una tarea directamente'
                   href: ca2007.md
+                - name: 'CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection'
+                  href: ca2009.md
             - name: Advertencias de seguridad
               items:
                 - name: Información general

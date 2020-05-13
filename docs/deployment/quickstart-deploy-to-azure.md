@@ -1,5 +1,5 @@
 ---
-title: Publicación en Azure App Service
+title: Publicar en Azure App Service
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72806908"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
@@ -29,13 +29,13 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
-## <a name="publish-to-azure-app-service"></a>Publicación en Azure App Service
+## <a name="publish-to-azure-app-service"></a>Publicar en Azure App Service
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar** (o use el elemento de menú **Compilar** > **Publicar**).
 
     ![Comando Publicar en el menú contextual del proyecto del Explorador de soluciones](../deployment/media/quickstart-publish.png "Elección de Publicar")
 
-1. Si previamente ha configurado algún perfil de publicación, aparecerá el panel **Publicar**, en cuyo caso seleccione **Crear nuevo perfil**.
+1. Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**, en cuyo caso seleccione **Crear nuevo perfil**.
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **App Service**.
 
@@ -49,12 +49,12 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
     ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-app-service-summary.png)
 
-## <a name="clean-up-resources"></a>Limpiar los recursos
+## <a name="clean-up-resources"></a>Limpieza de recursos
 
-En los pasos anteriores, creó recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
-En el menú izquierdo de Azure Portal, seleccione **Grupos de recursos** y luego **myResourceGroup**.
-En la página del grupo de recursos, asegúrese de que los recursos que aparecen son los que quiere eliminar.
-Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y luego seleccione **Eliminar**.
+En los pasos anteriores, creó recursos de Azure en un grupo de recursos. Si no cree que vaya a necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
+En el menú izquierdo de Azure Portal, haga clic en **Grupos de recursos** y en **myResourceGroup**.
+En la página del grupo de recursos, asegúrese de que los recursos enumerados sean los que desea eliminar.
+Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y seleccione **Eliminar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

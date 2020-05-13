@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Microsoft Docs
+title: BP_FLAGS de la casa de la casa de Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319226"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738062"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-Proporciona marcas opcionales que pueden utilizarse para especificar información adicional al establecer un punto de interrupción.
+# <a name="bp_flags"></a>BP_FLAGS
+Proporciona indicadores opcionales que se pueden usar para especificar información adicional al establecer un punto de interrupción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,25 +44,25 @@ public enum enum_BP_FLAGS {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `BP_FLAG_NONE`\
 No especifica ninguna marca de punto de interrupción.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Especifica que el motor de depuración (DE) debe asignar el punto de interrupción con la posición del documento. Esto solo es aplicable a puntos de interrupción establecidos en archivos de origen orientado a secuencias de comandos, como las páginas Active Server (ASP).
+Especifica que el motor de depuración (DE) debe asignar el punto de interrupción mediante la posición del documento. Esto solo es aplicable a los puntos de interrupción establecidos en archivos de origen orientados a scripts, como Active Server Pages (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Especifica que el punto de interrupción debe procesarse por el motor de depuración, pero que el motor de depuración en última instancia, no debería detener allí (es decir, un [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) no se debe enviar el objeto de evento). Esta marca está diseñada para su uso principalmente con puntos de seguimiento.
+Especifica que el motor de depuración debe procesar el punto de interrupción, pero que el motor de depuración no debe detenerse allí (es decir, no se debe enviar un objeto de evento [IDebugBreakpointEvent2).](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Esta marca está diseñada para usarse principalmente con puntos de seguimiento.
 
-## <a name="remarks"></a>Comentarios
-Utilizado para la `dwFlags` miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.
+## <a name="remarks"></a>Observaciones
+Se utiliza `dwFlags` para el miembro de las estructuras [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Estos valores se pueden combinar con un bit a bit `OR`.
+Estos valores se pueden combinar `OR`con un archivo .
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Microsoft Docs
+title: IDebugEvent2::GetAttributes ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f85cccb01a31232cccc39e44fae7accbfa4f954
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327587"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729946"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Obtiene los atributos de este evento de depuración.
@@ -41,13 +41,13 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Parámetros
 `pdwAttrib`\
-[out] Una combinación de marcas de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.
+[fuera] Combinación de indicadores de la enumeración [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; Por ejemplo, es el evento sincrónica o asincrónica y es un evento de detención.
+## <a name="remarks"></a>Observaciones
+ El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; por ejemplo, es el evento sincrónico o asincrónico y es un evento de detención.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

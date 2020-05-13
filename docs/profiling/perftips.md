@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128316"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
@@ -23,14 +23,14 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 ## <a name="perftips"></a>Sugerencias de rendimiento
  Cuando el depurador detiene la ejecución en un punto de interrupción o en una operación de ejecución paso a paso, el tiempo transcurrido entre la interrupción y el punto de interrupción anterior aparece como una sugerencia en la ventana del editor. Para obtener más información, vea [PerfTips: Información de rendimiento de un solo vistazo mientras se realiza la depuración con Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).
 
- ![Sugerencia de rendimiento](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")
+ ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")
 
 ## <a name="diagnostics-tools-window"></a>Ventana Herramientas de diagnóstico
  Los puntos de interrupción y datos de tiempo asociados se registran en la ventana **Herramientas de diagnóstico**.
 
  En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:
 
- ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+ ![Herramientas de diagnóstico: actualización 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 - La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .
 

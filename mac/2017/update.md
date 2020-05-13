@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983540"
 ---
 # <a name="update-visual-studio-for-mac"></a>Actualizar Visual Studio para Mac
@@ -52,6 +52,6 @@ Para iniciar la instalación de actualizaciones, seleccione el botón **Reinicia
 
 Según los componentes que tenga que instalar, es posible que tenga que aceptar licencias adicionales o escribir el nombre de usuario y la contraseña de administrador del equipo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Actualizar Visual Studio (en Windows)](/visualstudio/install/update-visual-studio)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76124509"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79431493"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -26,9 +26,9 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 ## <a name="analysis"></a>Análisis
 
-- Habilitar análisis de la solución completa
+- Ámbito del análisis de código activo o del análisis en segundo plano
 
-   Habilita el análisis de código en todos los archivos de la solución, no solo en los archivos de código abiertos. Para más información, vea [Full solution analysis](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md) (Análisis de la solución completa).
+   Configure el ámbito del análisis en segundo plano para el código administrado. Para obtener más información, vea [Cómo: Configurar el ámbito del análisis activo para el código administrado](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Directivas using
 

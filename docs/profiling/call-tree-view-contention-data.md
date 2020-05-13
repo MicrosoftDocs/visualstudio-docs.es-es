@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779784"
 ---
 # <a name="call-tree-view---contention-data"></a>Vista Árbol de llamadas: datos de contención
@@ -33,7 +33,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Para restablecer el nodo raíz en el nodo original, haga clic con el botón derecho en la vista Árbol de llamadas y, a continuación, haga clic en **Restablecer raíz**.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |------------|-----------------|
 |**Tiempo de bloqueo exclusivo**|El tiempo que no se pudieron ejecutar en la generación de perfiles las instancias de esta función en esta ruta de acceso de ejecución. El valor no incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función.|
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo exclusivo de esta función en esta ruta de acceso de ejecución con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|

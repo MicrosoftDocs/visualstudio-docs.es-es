@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72652146"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
@@ -78,5 +78,5 @@ Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se 
 
  Al compilar y ejecutar la solución Herramientas de DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muestra el aspecto de su lenguaje específico de dominio para el usuario del lenguaje. Después de comprobar que todo funciona correctamente, puede distribuir el archivo `.vsix` que encontrará en la carpeta de compilación del proyecto DslPackage. Este archivo se puede usar para instalar DSL como una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en otros equipos.  Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Vea también
  [Instancia experimental](../extensibility/the-experimental-instance.md) [Glosario de Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

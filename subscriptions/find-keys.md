@@ -3,15 +3,16 @@ title: Búsqueda y reclamación de claves de producto en suscripciones de Visual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Aprenda a buscar, reclamar y exportar claves de producto en suscripciones de Visual Studio
-ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378005"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232482"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Búsqueda y reclamación de claves de producto en suscripciones de Visual Studio
 En este artículo se explica cómo buscar, reclamar y exportar claves de producto desde https://my.visualstudio.com/productkeys.  Para obtener más información sobre la activación de un producto con una clave, las versiones de licencia de minorista y por volumen de claves y los límites diarios de reclamación de claves de producto, visite la [introducción a las claves de producto](product-keys.md).
@@ -28,10 +29,10 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 ### <a name="product-key-types"></a>Tipos de clave de producto
 
-|    Tipo de clave           |    DESCRIPCIÓN                                                                                                                                                                                                           |
+|    Tipo de clave           |    Descripción                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    No es aplicable                    |    No se requiere clave para instalar este producto.                                                       |
-|    Venta directa                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
+|    No aplicable                    |    No se requiere clave para instalar este producto.                                                       |
+|    Minoristas                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
 |    Activación múltiple        |    Una clave de activación múltiple (MAK) le permite activar varias instalaciones de un producto con la misma clave. Por lo general, las MAK se usan con versiones de productos para licencias por volumen. Normalmente, se proporciona una sola clave MAK por suscripción.    |
 |    Clave de activación estática    |    Las claves de activación estática se proporcionan para los productos que no necesitan activación. Se pueden usar para un número variado de instalaciones.                                                                                                                  |
 |    Clave personalizada                 |    Las claves personalizadas proporcionan acciones o información especial para activar o instalar el producto.                                                                                                                                                                |
@@ -64,6 +65,12 @@ Puede exportar una lista de todas las claves que ha reclamado, junto con una amp
 > Si la suscripción expira, ya no podrá reclamar claves nuevas ni exportar las claves que ya haya reclamado.
 
 Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
+
+## <a name="see-also"></a>Consulte también
+- [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentación de Azure](https://docs.microsoft.com/azure/)
+- [Documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Cuando esté listo para descargar software y usar claves, visite https://my.visualstudio.com/downloads.  Para obtener más información sobre la descarga de software, vea la [introducción a la descarga](download-software.md).

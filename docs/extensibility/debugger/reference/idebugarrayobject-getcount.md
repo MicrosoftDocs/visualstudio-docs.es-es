@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount | Microsoft Docs
+title: IDebugArrayObject::GetCount ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetCount method
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac21ac30e1f4511efa1ec8a7fe27129bf2ddb3a1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321658"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736195"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
-Obtiene el número de elementos de la matriz.
+Obtiene el recuento de elementos de la matriz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parámetros
 `pdwElements`\
-[out] Devuelve el recuento.
+[fuera] Devuelve el recuento.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método considera todos los elementos de un objeto de matriz como una matriz unidimensional, incluso si el objeto de matriz es multidimensional. Por ejemplo, dada la matriz `myarray[3][2][6]`, este método debería regresar 36 en el `pdwElements` parámetro. Use la [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) método para recuperar los elementos individuales uno a la vez.
+## <a name="remarks"></a>Observaciones
+ Este método ve todos los elementos de un objeto de matriz como una matriz unidimensional, incluso si el objeto de matriz es multidimensional. Por ejemplo, dada `myarray[3][2][6]`la matriz , este `pdwElements` método devolvería 36 en el parámetro. Utilice el [método GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) para recuperar los elementos individuales de uno en uno.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

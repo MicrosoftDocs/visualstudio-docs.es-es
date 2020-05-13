@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74773314"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
@@ -29,7 +29,7 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
 
  Haga doble clic en una fila de función de llamador o destinatario para hacer que esa fila sea la función actual.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |------------|-----------------|
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
 |**Nombre de proceso**|Nombre del proceso.|

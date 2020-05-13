@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString | Microsoft Docs
+title: IDebugReference2::SetValueAsString ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339815"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720287"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Establece el valor de una referencia de una cadena. Reservado para un uso futuro.
+Establece el valor de una referencia de una cadena. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Parámetros
 `pszValue`\
-[in] El valor como una cadena.
+[en] El valor como una cadena.
 
 `dwRadix`\
-[in] La base que se usará para dar formato a cualquier información numérica.
+[en] El radio que se utilizará para dar formato a cualquier información numérica.
 
 `dwTimeout`\
-[in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
+[en] Tiempo máximo, en milisegundos, para esperar antes de volver de este método. Se `INFINITE` usa para esperar indefinidamente.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

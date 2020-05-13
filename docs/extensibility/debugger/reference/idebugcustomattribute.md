@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute | Microsoft Docs
+title: IDebugCustomAttribute ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute interface
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae596c781d864f97087371fcb10595aa5f6a8ee9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346121"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732681"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Esta interfaz representa un atributo personalizado, y puede proporcionar el nombre, el primario y el tipo de clase del atributo.
+Esta interfaz representa un atributo personalizado y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,13 +29,13 @@ IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- Un proveedor de símbolos implementa esta interfaz para admitir atributos personalizados asociados con un símbolo. Normalmente se implementa en su propio objeto.
+ Un proveedor de símbolos implementa esta interfaz para admitir atributos personalizados asociados a un símbolo. Normalmente se implementa en su propio objeto.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Una llamada a [siguiente](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) devuelve esta interfaz. Una llamada a la [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) método devuelve el [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interfaz.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Una llamada a [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) devuelve esta interfaz. Una llamada a la [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) método devuelve el [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) interfaz.
 
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- La tabla siguiente muestran los métodos de `IDebugCustomAttribute`.
+ En la tabla siguiente `IDebugCustomAttribute`se muestran los métodos de .
 
 |Método|Descripción|
 |------------|-----------------|
@@ -44,13 +44,13 @@ IDebugCustomAttribute : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|Obtiene el nombre del atributo personalizado.|
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtiene la información de atributo como un blob de bytes.|
 
-## <a name="remarks"></a>Comentarios
- Un atributo personalizado es una estructura de C# que proporciona metadatos personalizados asociados con una determinada clase o método.
+## <a name="remarks"></a>Observaciones
+ Un atributo personalizado es una estructura para C- que proporciona metadatos personalizados asociados a una clase o método determinado.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: sh.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

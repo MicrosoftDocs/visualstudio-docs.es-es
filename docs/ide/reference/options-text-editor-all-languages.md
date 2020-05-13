@@ -43,10 +43,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566883"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Cuadro de diálogo Opciones: Editor de texto \> Todos los lenguajes

@@ -1,25 +1,25 @@
 ---
-title: Elemento de mapas de bits | Microsoft Docs
+title: Elemento de los mapas de bits (Bitmaps Element) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00486f4edd68d2cc5e158d567a28f78ef12f8cd1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333400"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739990"
 ---
-# <a name="bitmaps-element"></a>Bitmaps (elemento)
-Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
+# <a name="bitmaps-element"></a>Elemento Mapas de bits
+Agrupa elementos de elemento de mapa de [bits.](../extensibility/bitmap-element.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,20 +37,20 @@ Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Bitmaps (elemento)](../extensibility/bitmaps-element.md)|Agrupa los elementos de mapa de bits.|
-|[Bitmap (elemento)](../extensibility/bitmap-element.md)|Define un mapa de bits.|
+|[Elemento Mapas de bits](../extensibility/bitmaps-element.md)|Agrupa elementos de mapa de bits.|
+|[Elemento de mapa de bits](../extensibility/bitmap-element.md)|Define un mapa de bits.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|
+|[Elemento Comandos](../extensibility/commands-element.md)|Representa la colección de comandos de la barra de herramientas de VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
@@ -62,6 +62,6 @@ Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>Vea también
-- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo VSPackages agregan elementos de interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

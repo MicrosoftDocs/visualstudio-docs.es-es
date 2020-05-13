@@ -1,141 +1,141 @@
 ---
-title: Estructuras y uniones | Documentos de Microsoft
+title: Estructuras y Uniones (Estructuras y Uniones) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2da39e0327f9a0be2cf0f61227de5ea51af03285
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329115"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713491"
 ---
 # <a name="structures-and-unions"></a>Estructuras y uniones
-Los siguientes son estructuras y uniones en el SDK de depuración de Visual Studio.
+A continuación se muestran estructuras y uniones en el SDK de depuración de Visual Studio.
 
-- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) especifica el identificador de proceso, que puede ser un identificador de sistema o un GUID.
+- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Especifica el identificador de proceso, que puede ser un identificador del sistema o un GUID.
 
-- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) se describen las condiciones en las que se desencadenará un punto de interrupción.
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) Describe las condiciones en las que se desencadenará un punto de interrupción.
 
-- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y subproceso.
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y el subproceso.
 
-- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) especifica el tipo de estructura que se utiliza para describir la ubicación del punto de interrupción.
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Especifica el tipo de estructura utilizado para describir la ubicación del punto de interrupción.
 
-- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) define los componentes que describen la ubicación de un punto de interrupción en una dirección en el código.
+- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) Define los componentes que describen la ubicación de un punto de interrupción en una dirección en el código.
 
-- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) describe la ubicación de un punto de interrupción que se enlaza directamente a una dirección en el programa que se está depurando.
+- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) Describe la ubicación de un punto de interrupción que está enlazado directamente a una dirección del programa que se está depurando.
 
-- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) describe la ubicación de un punto de interrupción en la línea de un archivo de código fuente.
+- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) Describe la ubicación de un punto de interrupción en la línea de un archivo de código fuente.
 
-- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) describe la ubicación de desplazamiento de un punto de interrupción en una función en código.
+- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.
 
-- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) usa para establecer puntos de interrupción de código basados en una cadena que el usuario puede escribir desde el IDE.
+- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) Se utiliza para establecer puntos de interrupción de código basados en una cadena que el usuario puede escribir desde el IDE.
 
-- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede escribir desde el IDE.
+- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) Se utiliza para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede escribir desde el IDE.
 
-- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) describe la resolución de un punto de interrupción en una ubicación específica.
+- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) Describe la resolución de un punto de interrupción en una ubicación específica.
 
-- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) describe el número y las condiciones en la que se desencadenará un punto de interrupción después de tener previamente se ha pasado.
+- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Describe el recuento y las condiciones en las que se desencadenará un punto de interrupción después de haber pasado previamente.
 
-- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) contiene la información necesaria para implementar un punto de interrupción.
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Contiene la información necesaria para implementar un punto de interrupción.
 
-- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) contiene la información necesaria para implementar un punto de interrupción (igual que el [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura, pero incluye información de GUID, la restricción y punto de seguimiento del proveedor).
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Contiene la información necesaria para implementar un punto de interrupción (igual que la estructura [BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) pero incluye la información GUID, restricción y punto de seguimiento del proveedor).
 
-- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) describe la ubicación de un punto de interrupción del código.
+- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Describe la ubicación de un punto de interrupción de código.
 
-- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) describe el resultado de un punto de interrupción de datos de enlace.
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Describe el resultado del enlace de un punto de interrupción de datos.
 
-- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) se describe la información de punto de interrupción enlazado para un punto de interrupción de código o un punto de interrupción de datos.
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Describe la información de punto de interrupción enlazado para un punto de interrupción de código o un punto de interrupción de datos.
 
-- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) especifica la estructura de la ubicación de la resolución de punto de interrupción.
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Especifica la estructura de la ubicación de resolución del punto de interrupción.
 
-- [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) describe una matriz de cadenas.
+- [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Describe una matriz de cadenas.
 
-- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) especifica información sobre un tipo de campo que se toman de los metadatos.
+- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Especifica información sobre un tipo de campo tomado de metadatos.
 
-- [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) describe una llamada a una función o método.
+- [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Describe una llamada a una función o método.
 
-- [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md) describe el equipo donde se ejecuta el depurador.
+- [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md) Describe el equipo en el que se ejecuta el depurador.
 
-- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md) describe una lista de GUID.
+- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md) Describe una lista de GUID.
 
-- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) describe un contexto de la memoria o el contexto del código.
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) Describe un contexto de memoria o contexto de código.
 
-- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) describe una dirección en un programa que se está depurando.
+- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Describe una dirección en un programa que se está depurando.
 
-- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) representa uno de los diferentes tipos de direcciones.
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Representa uno de varios tipos diferentes de direcciones.
 
-- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) identifica un visor personalizado o visualizador de tipo.
+- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Identifica un visor personalizado o un visualizador de tipos.
 
-- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) describe una propiedad de depuración que a su vez describe un objeto de una naturaleza jerárquica que tiene el nombre, tipo y valor.
+- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Describe una propiedad de depuración que, a su vez, describe un objeto de naturaleza jerárquica que tiene nombre, tipo y valor.
 
-- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) describe una referencia.
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Describe una referencia.
 
-- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) describe desensamblado en el IDE para su presentación.
+- [DesensambladoDatos](../../../extensibility/debugger/reference/disassemblydata.md) Describe el desensamblado en el IDE para su presentación.
 
-- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) describe un error de tiempo de ejecución o de excepción producido por el programa que se está depurando.
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Describe una excepción o error en tiempo de ejecución que produce el programa que se está depurando.
 
-- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) describe otro campo, parámetro o una variable local.
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Describe una variable local, un parámetro u otro campo.
 
-- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) describe un marco de pila.
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) Describe un marco de pila.
 
-- [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md) describe una matriz de identificadores únicos para los motores de depuración disponible.
+- [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md) Describe una matriz de identificadores únicos para los motores de depuración disponibles.
 
-- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) usa para establecer la información de JustMyCode de un módulo.
+- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) Se utiliza para establecer la información de JustMyCode para un módulo.
 
-- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) describe un equipo determinado.
+- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) Describe una máquina en particular.
 
-- [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) describe un elemento de matriz dentro de una matriz.
+- [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) Describe un elemento de matriz dentro de una matriz.
 
-- [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) describe la dirección de un campo de una clase o estructura.
+- [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) Describe la dirección de un campo de una clase o estructura.
 
-- [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) describe la dirección de una variable local dentro de un ámbito (normalmente una función o método).
+- [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) Describe la dirección de una variable local dentro de un ámbito (normalmente una función o método).
 
-- [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) describe la dirección de un método de una clase.
+- [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) Describe la dirección de un método de una clase.
 
-- [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) describe un parámetro de un método o función.
+- [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) Describe un parámetro de un método o función.
 
-- [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) describe un valor devuelto de un método o función.
+- [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) Describe un valor devuelto de un método o función.
 
-- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) describe un tipo de campo que se toman de los metadatos.
+- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) Describe un tipo de campo tomado de metadatos.
 
-- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) describe un módulo determinado (ensamblado, EXE o DLL).
+- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Describe un módulo determinado (DLL, EXE o ensamblado).
 
-- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) describe la información de estado sobre las rutas de acceso de búsqueda de símbolos que se ha buscado.
+- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) Describe la información de estado sobre las rutas de búsqueda de símbolos que se han buscado.
 
-- [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) describe una dirección nativa.
+- [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) Describe una dirección nativa.
 
-- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) describe un tipo de campo realizado desde un símbolo PDB.
+- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) Describe un tipo de campo tomado de un símbolo PDB.
 
-- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) describe el estado de un punto de interrupción que está listo para enlazar a una ubicación del código.
+- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Describe el estado de un punto de interrupción que está listo para enlazarse a una ubicación de código.
 
-- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) describe un proceso.
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Describe un proceso.
 
-- [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) describe una lista de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan nodos de programa.
+- [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) Describe una lista de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan nodos de programa.
 
-- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) describe los procesos que se ejecutan en un equipo.
+- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Describe los procesos que se ejecutan en una máquina.
 
-- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) describe la ubicación de línea y columna en el texto dado.
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Describe la ubicación de la línea y la columna en el texto especificado.
 
-- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) se describen las propiedades de un subproceso.
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Describe las propiedades de un subproceso.
 
-- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) describe un tipo de campo.
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Describe el tipo de un campo.
 
-- [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) describe una dirección física.
+- [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) Describe una dirección física.
 
-- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) describe una dirección que es relativa a un `this` puntero (`Me` en Visual Basic).
+- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) Describe una dirección relativa a `this` un`Me` puntero ( en Visual Basic).
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: msdbg.h, sh.h o ee.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

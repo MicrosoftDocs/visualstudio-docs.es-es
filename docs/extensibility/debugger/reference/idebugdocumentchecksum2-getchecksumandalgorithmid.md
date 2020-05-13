@@ -1,28 +1,28 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350078"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731942"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se utilizará.
+Recupera la suma de comprobación del documento y el identificador del algoritmo dado el número máximo de bytes que se van a utilizar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Parámetros
 `pRetVal`\
-[out] Identificador único para el algoritmo de suma de comprobación.
+[fuera] Identificador único para el algoritmo de suma de comprobación.
 
 `cMaxBytes`\
-[in] Número máximo de bytes que se usará para la suma de comprobación.
+[en] Número máximo de bytes que se utilizarán para la suma de comprobación.
 
 `pChecksum`\
-[out] Valor de la suma de comprobación.
+[fuera] Valor de la suma de comprobación.
 
 `pcNumBytes`\
-[out] Número real de bytes utilizados por la suma de comprobación.
+[fuera] Número real de bytes utilizados para la suma de comprobación.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente usa este método para obtener la suma de comprobación y el algoritmo para un documento.
+En el ejemplo siguiente se utiliza este método para obtener la suma de comprobación y el algoritmo de un documento.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

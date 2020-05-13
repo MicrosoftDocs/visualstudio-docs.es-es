@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579844"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472609"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Paso 4: Agregar el método CheckTheAnswer()
 
@@ -32,7 +32,7 @@ En la cuarta parte de este tutorial, escribirá un método, `CheckTheAnswer()`, 
 > [!NOTE]
 > Si va a continuar con Visual Basic, utilizará la palabra clave `Function` en lugar de la palabra clave habitual `Sub`, ya que este método devuelve un valor. Realmente es así de sencillo: una subrutina no devuelve ningún valor, una función, sí.
 
-1. Agregue el método `CheckTheAnswer()`.
+1. Agregue el método `CheckTheAnswer()`. Este método debe estar en línea con el resto de métodos que haya realizado, como `StartTheQuiz()`.
 
      Cuando se llama a este método, agrega los valores de addend1 y addend2, y compara el resultado con el valor del control <xref:System.Windows.Forms.NumericUpDown> de suma. Si los valores son iguales, el método devuelve el valor `true`. De lo contrario, el método devuelve el valor `false`. El código debe tener un aspecto parecido al siguiente.
 
@@ -43,7 +43,7 @@ En la cuarta parte de este tutorial, escribirá un método, `CheckTheAnswer()`, 
 
      Después, puede comprobar la respuesta si actualiza el código del método para que el controlador de eventos <xref:System.Windows.Forms.Timer.Tick> del temporizador llame al nuevo método `CheckTheAnswer()`.
 
-2. Agregue el código siguiente a la instrucción `if else`.
+2. Agregue el código siguiente a la instrucción `if else` en el método `Timer1_Tick()`, de modo que el temporizador se detenga cuando el usuario obtenga la respuesta correcta.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]

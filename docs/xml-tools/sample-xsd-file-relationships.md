@@ -1,5 +1,5 @@
 ---
-title: 'Archivo XSD de muestra: Relaciones'
+title: 'Archivo XSD de muestra: relaciones'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75592560"
 ---
-# <a name="sample-xsd-file-relationships"></a>Archivo XSD de muestra: Relaciones
+# <a name="sample-xsd-file-relationships"></a>Archivo XSD de muestra: relaciones
 
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra con anotaciones y documentación.
 

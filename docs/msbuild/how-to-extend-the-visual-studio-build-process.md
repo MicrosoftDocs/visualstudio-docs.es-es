@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633855"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093943"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 
@@ -28,7 +28,6 @@ El proceso de compilación de Visual Studio se define mediante una serie de arc
 - Reemplazar destinos predefinidos específicos definidos en los destinos comunes (*Microsoft.Common.targets* o los archivos que importa).
 
 - Reemplazar las propiedades "DependsOn" definidas en los destinos comunes.
-## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
 
 ## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
 
@@ -69,6 +68,45 @@ En la tabla siguiente se muestran todos los destinos incluidos en los destinos c
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de publicación de limpieza básica.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la resolución de las referencias de ensamblados.|
 |`BeforeResGen`, `AfterResGen`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de generar los recursos.|
+
+## <a name="example-aftertargets-and-beforetargets"></a>Ejemplo: BeforeTargets y AfterTargets
+
+En el ejemplo siguiente se muestra cómo usar el atributo `AfterTargets` para agregar un destino personalizado que realice una acción en los archivos de salida. En este caso, copia los archivos de salida en una nueva carpeta *CustomOutput*.  En el ejemplo también se muestra cómo limpiar los archivos creados por la operación de compilación personalizada con un destino `CustomClean` mediante un atributo `BeforeTargets` y especificando que la operación de limpieza personalizada se ejecuta antes que el destino de `CoreClean`.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+   <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+</PropertyGroup>
+
+<Target Name="CustomAfterBuild" AfterTargets="Build">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="CoreClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+> [!WARNING]
+> Asegúrese de usar nombres distintos de los destinos predefinidos que se enumeran en la tabla de la sección anterior (por ejemplo, aquí el destino de la compilación personalizada se denomina `CustomAfterBuild`, no `AfterBuild`), ya que la importación del SDK reemplaza los destinos predefinidos y también los define. No verá la importación del archivo de destino que invalida esos destinos, pero se agrega implícitamente al final del archivo de proyecto cuando usa el método del atributo `Sdk` para hacer referencia a un SDK.
 
 ## <a name="override-dependson-properties"></a>Reemplazar propiedades DependsOn
 
@@ -130,6 +168,60 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|
 |`CompileDependsOn`|La propiedad que se debe reemplazar si quiere insertar procesos personalizados antes o después del paso de compilación.|
+
+## <a name="example-builddependson-and-cleandependson"></a>Ejemplo: BuildDependsOn y CleanDependsOn
+
+El ejemplo siguiente es parecido al ejemplo de `BeforeTargets` y `AfterTargets`, y muestra cómo lograr una funcionalidad similar. Amplía la compilación mediante `BuildDependsOn` para que pueda agregar su propia tarea `CustomAfterBuild`, la cual copia los archivos de salida después de la compilación y agrega la tarea `CustomClean` correspondiente usando `CleanDependsOn`.  
+
+En este ejemplo, se trata de un proyecto tipo SDK. Como se ha mencionado anteriormente en este artículo en la nota sobre los proyectos tipo SDK, debe usar el método de importación manual en lugar del atributo `Sdk` que usa Visual Studio al generar archivos de proyecto.
+
+```xml
+<Project>
+<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+
+<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+<PropertyGroup>
+   <BuildDependsOn>
+      $(BuildDependsOn);CustomAfterBuild
+    </BuildDependsOn>
+
+    <CleanDependsOn>
+      $(CleanDependsOn);CustomClean
+    </CleanDependsOn>
+
+    <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+  </PropertyGroup>
+
+<Target Name="CustomAfterBuild">
+  <ItemGroup>
+    <_FilesToCopy Include="$(OutputPath)**\*"/>
+  </ItemGroup>
+  <Message Text="_FilesToCopy: @(_FilesToCopy)" Importance="high"/>
+
+  <Message Text="DestFiles:
+      @(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+
+  <Copy SourceFiles="@(_FilesToCopy)"
+        DestinationFiles=
+        "@(_FilesToCopy->'$(_OutputCopyLocation)%(RecursiveDir)%(Filename)%(Extension)')"/>
+  </Target>
+
+  <Target Name="CustomClean">
+    <Message Text="Inside Custom Clean" Importance="high"/>
+    <ItemGroup>
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+    </ItemGroup>
+    <Delete Files='@(_CustomFilesToDelete)'/>
+  </Target>
+</Project>
+```
+
+El orden de los elementos es importante. Los elementos `BuildDependsOn` y `CleanDependsOn` deben aparecer después de importar el archivo de destinos SDK estándar.
 
 ## <a name="see-also"></a>Vea también
 

@@ -34,9 +34,9 @@
   items:
     - name: Crear modelos para la aplicación
       href: create-models-for-your-app.md
-    - name: 'Diagramas de dependencia: Referencia'
+    - name: 'Diagramas de dependencia: referencia'
       href: layer-diagrams-reference.md
-    - name: 'Diagramas de dependencia: Instrucciones'
+    - name: 'Diagramas de dependencia: instrucciones'
       href: layer-diagrams-guidelines.md
     - name: Uso compartido de modelos
       items:
@@ -221,9 +221,9 @@
           href: accessing-models-from-text-templates.md
         - name: Usar Visual Studio ModelBus en una plantilla de texto
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: 'Tutorial: Depuración de una plantilla de texto que tiene acceso a un modelo'
+        - name: 'Tutorial: Depurar una plantilla de texto que accede a un modelo'
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-        - name: 'Tutorial: Conexión de un host a un procesador de directivas generadas'
+        - name: 'Tutorial: Conectar un host a un procesador de directivas generadas'
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
         - name: El comando DslTextTransform
           href: the-dsltexttransform-command.md
@@ -277,7 +277,7 @@
       items:
         - name: Introducción y procedimientos
           href: design-time-code-generation-by-using-t4-text-templates.md
-        - name: 'Tutorial: Generación de código mediante plantillas de texto'
+        - name: 'Tutorial: Generar código mediante plantillas de texto'
           href: walkthrough-generating-code-by-using-text-templates.md
         - name: Generación de código en un proceso de compilación
           href: code-generation-in-a-build-process.md
@@ -342,7 +342,7 @@
               href: creating-custom-t4-text-template-directive-processors.md
             - name: Implementar un procesador de directivas personalizadas
               href: deploying-a-custom-directive-processor.md
-            - name: 'Tutorial: Creación de un procesador de directivas personalizado'
+            - name: 'Tutorial: Crear un procesador de directivas personalizadas'
               href: walkthrough-creating-a-custom-directive-processor.md
         - name: Invocar la transformación de texto en una extensión de VS
           href: invoking-text-transformation-in-a-vs-extension.md
@@ -350,7 +350,7 @@
           items:
             - name: Procesar plantillas de texto mediante un host personalizado
               href: processing-text-templates-by-using-a-custom-host.md
-            - name: 'Tutorial: Creación de un host de plantilla de texto personalizado'
+            - name: 'Tutorial: Crear un host de plantillas de texto personalizadas'
               href: walkthrough-creating-a-custom-text-template-host.md
     - name: Referencia de API para plantillas de texto T4
       href: api-reference-for-t4-text-templates.md

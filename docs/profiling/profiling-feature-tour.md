@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578083"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412035"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -35,6 +35,21 @@ La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar
 
 > [!NOTE]
 > Puede usar las herramientas de análisis post-mortem con Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
+
+## <a name="examine-performance-using-perftips"></a>Examen del rendimiento mediante PerfTips
+
+A menudo, la manera más sencilla de ver la información de rendimiento es mediante el uso de [PerfTips](../profiling/perftips.md). Con PerfTips, se puede ver información de rendimiento mientras se interactúa con el código. Puede comprobar información como la duración del evento, medida desde el momento en que el depurador se ha detenido por última vez o desde que se ha iniciado la aplicación. Por ejemplo, si se revisa paso a paso el código (F10, F11), PerfTips muestra la duración en tiempo de ejecución de la aplicación, desde la operación del paso anterior hasta el paso actual.
+
+![Sugerencias de rendimiento en Paseo por la generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en Paseo por la generación de perfiles")
+
+Puede usar PerfTips para examinar cuánto tiempo tarda un bloque de código en ejecutarse o en completarse una sola función.
+
+PerfTips muestra los mismos eventos que también se muestran en la vista **Eventos** de las Herramientas de diagnóstico. En la vista **Eventos** se pueden ver eventos distintos que se producen durante la depuración, como la configuración de un punto de interrupción o una operación de procesamiento de código paso a paso.
+
+![Vista de eventos en Herramientas de diagnóstico](../profiling/media/prof-tour-events.png "Vista de eventos en Herramientas de diagnóstico")
+
+ > [!NOTE]
+ > Si tiene Visual Studio Enterprise, también puede ver [Eventos de IntelliTrace](../debugger/intellitrace.md) en esta pestaña.
 
 ## <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -56,9 +71,9 @@ Si hace doble clic en una función que le interese, verá una vista de "mariposa
 
 ## <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
-La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Para instrucciones más detalladas sobre el análisis de la memoria, vea [Analyze Memory Usage](../profiling/memory-usage.md) (Análisis del uso de memoria).
+La ventana **Herramientas de diagnóstico** permite evaluar el uso de memoria en la aplicación mediante la herramienta **Uso de memoria**. Por ejemplo, puede buscar el número y el tamaño de los objetos del montón. Para instrucciones más detalladas sobre el análisis de la memoria, vea [Analyze Memory Usage](../profiling/memory-usage.md) (Análisis del uso de memoria). Otra herramienta de análisis de memoria, la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md), ayuda a identificar los patrones de asignación y las anomalías en el código de .NET.
 
-Para analizar el uso de memoria mientras se realiza la depuración, se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
+Para analizar el uso de memoria también con la herramienta Uso de memoria integrada del depurador, se debe tomar al menos una instantánea de memoria. A menudo, la mejor manera de analizar la memoria consiste en tomar dos instantáneas: la primera justo antes de que se produzca un problema que sospecha que existe en la memoria y la segunda después de que se produzca el problema en cuestión. Después, puede ver las diferencias que existen entre las dos instantáneas y constatar qué es lo que ha cambiado exactamente.
 
 ![Toma de una instantánea en Herramientas de diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Tomar instantáneas en Herramientas de diagnóstico")
 
@@ -68,20 +83,7 @@ Al seleccionar uno de los vínculos de flecha, aparece una vista diferencial del
 
 En cambio, si hace clic en el vínculo de la izquierda en la vista **Uso de memoria**, la vista del montón se organiza por número de objetos y se muestran los objetos de un tipo determinado que más han aumentado en número en la parte superior (ordenados por la columna **Dif. de recuento**).
 
-## <a name="examine-performance-events"></a>Examinar eventos de rendimiento
-
-La vista **Eventos** de Herramientas de diagnóstico muestra diversos eventos que se producen durante la depuración, como la configuración de un punto de interrupción o una operación de ejecución paso a paso de código. Puede comprobar información como la duración del evento, medida desde el momento en que el depurador se ha detenido por última vez o desde que se ha iniciado la aplicación. Por ejemplo, si recorre paso a paso el código (F10, F11), en la vista **Eventos** se muestra la duración en tiempo de ejecución de la aplicación desde la operación del paso anterior hasta el paso actual.
-
-![Vista de eventos en Herramientas de diagnóstico](../profiling/media/prof-tour-events.png "Vista de eventos en Herramientas de diagnóstico")
-
- > [!NOTE]
- > Si tiene Visual Studio Enterprise, también puede ver [Eventos de IntelliTrace](../debugger/intellitrace.md) en esta pestaña.
-
-En el editor de código también se muestran los mismos eventos, que puede ver como sugerencias de rendimiento.
-
-![Sugerencias de rendimiento en Paseo por la generación de perfiles](../profiling/media/prof-tour-perf-tips.png "Sugerencias de rendimiento en Paseo por la generación de perfiles")
-
-## <a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Generar perfiles de compilaciones de versión sin el depurador
 
 Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pueden usarse con el depurador (vea las secciones anteriores) o bien se pueden ejecutar herramientas de generación d perfiles pos-mortem mediante el Generador de perfiles de rendimiento, que está diseñado para proporcionar el análisis de compilaciones de **Versión**. En el Generador de perfiles de rendimiento, puede recopilar información de diagnóstico mientras se ejecuta la aplicación y, después, examinar la información recopilada cuando la aplicación se haya detenido. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). En el Generador de perfiles de rendimiento también hay disponibles otras herramientas, como la [herramienta Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 

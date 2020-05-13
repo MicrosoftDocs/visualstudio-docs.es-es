@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo notificar un problema con Visual S
 ms.date: 03/11/2018
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-ms.author: seiyer
-author: seaniyer
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
+ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947716"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "81276506"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -122,7 +122,7 @@ Si no tiene ningún problema que notificar pero quiere sugerir una característi
 
 ## <a name="see-also"></a>Vea también
 
-* [Hable con nosotros](../ide/talk-to-us.md)
+* [Opciones de comentarios de Visual Studio](../ide/feedback-options.md)
 * [Notificación de un problema con Visual Studio para Mac](/visualstudio/mac/report-a-problem)
 * [Notificación de un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)

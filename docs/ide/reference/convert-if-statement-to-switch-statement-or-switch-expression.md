@@ -1,6 +1,6 @@
 ---
 title: Conversión de una instrucción if a una instrucción o expresión switch
-ms.date: 02/12/2020
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77283464"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094161"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Conversión de una instrucción if a una instrucción o expresión switch
 
@@ -32,9 +32,15 @@ Esta refactorización se aplica a lo siguiente:
 
 1. Coloque el cursor en la palabra clave `if`.
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
-3. Seleccione **Convertir en una instrucción 'switch'** .
+3. Seleccione una de las dos opciones siguientes: 
 
-   ![Conversión de una instrucción if a una instrucción o expresión switch](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    Seleccione **Convertir en una instrucción 'switch'** .
+
+   ![Conversión de una instrucción "if" en una instrucción "switch"](media/convert-if-to-switch-statement.png) 
+
+    Seleccione **Convertir en una expresión "switch"** . 
+
+    ![Conversión de una instrucción "if" en una expresión "switch"](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>Vea también
 

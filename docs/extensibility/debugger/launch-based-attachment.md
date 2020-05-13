@@ -1,37 +1,37 @@
 ---
-title: Adjunto basado en Inicio | Microsoft Docs
+title: Adjunto basado en el lanzamiento (Launch-based Attachment) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638eaea19b4f21e749fbd3db845f18eb573420f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344143"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738461"
 ---
-# <a name="launch-based-attachment"></a>Adjunto basado en Inicio
-Basado en el lanzamiento de los datos adjuntos a un programa son automático. Cuando se inicia el proceso que hospeda el programa mediante el SDM, basado en el lanzamiento de los datos adjuntos siguen una ruta de acceso similar a la del método manual de los datos adjuntos. Para obtener información, consulte [adjuntar al programa](../../extensibility/debugger/attaching-to-the-program.md).
+# <a name="launch-based-attachment"></a>Archivo adjunto basado en el lanzamiento
+El archivo adjunto basado en el inicio a un programa es automático. Cuando el SDM inicia el proceso que hospeda el programa, los datos adjuntos basados en el lanzamiento siguen una ruta similar a la del método de datos adjuntos manual. Para obtener más información, consulte [Adjuntar al programa](../../extensibility/debugger/attaching-to-the-program.md).
 
-## <a name="the-attaching-process"></a>El proceso de asociación
- La diferencia principal es la secuencia de eventos siguiendo el **adjuntar** llamar, como sigue:
+## <a name="the-attaching-process"></a>El proceso de fijación
+ La principal diferencia es la secuencia de eventos que siguen a la llamada **Attach,** como se indica a continuación:
 
-1. Enviar una **IDebugEngineCreateEvent2** objeto event para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).
+1. Enviar un **IDebugEngineCreateEvent2** objeto de evento al SDM. Para obtener más información, consulte [Enviar eventos](../../extensibility/debugger/sending-events.md).
 
-2. Llame a la `IDebugProgram2::GetProgramId` método en el **IDebugProgram2** interfaz se pasa a la **adjuntar** método.
+2. Llame `IDebugProgram2::GetProgramId` al método en el **IDebugProgram2** interfaz pasada a la **Attach** método.
 
-3. Enviar una **IDebugProgramCreateEvent2** objeto de evento para notificar el SDM que local **IDebugProgram2** objeto se creó para representar el programa a la DE.
+3. Enviar un **IDebugProgramCreateEvent2** objeto de evento para notificar al SDM que el local **IDebugProgram2** objeto se creó para representar el programa a la DE.
 
-4. Enviar una [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objeto de evento para notificar el SDM que se crea un nuevo subproceso para el proceso que se inicia.
+4. Enviar un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objeto de evento para notificar al SDM que se crea un nuevo subproceso para el proceso que se inició.
 
 ## <a name="see-also"></a>Vea también
-- [Enviar los eventos necesarios](../../extensibility/debugger/sending-the-required-events.md)
-- [Habilitar un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Enviar los eventos requeridos](../../extensibility/debugger/sending-the-required-events.md)
+- [Habilitar la depuración de un programa](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal | Microsoft Docs
+title: IDebugDefaultPort2::QueryIsLocal ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::QueryIsLocal
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a21419af9be56647a835ee1d8ddab62e20f842
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c06230f7bbd1825fe73a22f9b1fdc35aea35c499
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351748"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732330"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 Este método determina si este puerto está en el equipo local.
@@ -35,7 +35,7 @@ int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>Valor devuelto
- Devuelve `S_OK` si este puerto es local (en el mismo equipo que el llamador) o `S_FALSE` si el puerto está en otro equipo.
+ Devuelve `S_OK` si este puerto es local (en el `S_FALSE` mismo equipo que el autor de la llamada) o si el puerto está en otro equipo.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE de la casa de la Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349918"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714123"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-Especifica el tipo de un objeto desde el evaluador de expresiones.
+# <a name="object_type"></a>Object_Type
+Especifica el tipo de un objeto del evaluador de expresiones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
  `OBJECT_TYPE_BOOLEAN`\
  Indica que el objeto es un valor booleano.
 
@@ -88,13 +88,13 @@ public enum enum_OBJECT_TYPE { 
  Indica que el objeto es un entero sin signo de dos bytes.
 
  `OBJECT_TYPE_I4`\
- Indica que el objeto es un entero con signo de cuatro bytes.
+ Indica que el objeto es un entero de cuatro bytes con signo.
 
  `OBJECT_TYPE_U4`\
  Indica que el objeto es un entero sin signo de cuatro bytes.
 
  `OBJECT_TYPE_I8`\
- Indica que el objeto es un entero con signo de ocho bytes.
+ Indica que el objeto es un entero de ocho bytes con signo.
 
  `OBJECT_TYPE_U8`\
  Indica que el objeto es un entero sin signo de ocho bytes.
@@ -114,13 +114,13 @@ public enum enum_OBJECT_TYPE { 
  `OBJECT_TYPE_CLASS`\
  Indica que el objeto es una clase.
 
-## <a name="remarks"></a>Comentarios
- Se pasa como argumento a la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.
+## <a name="remarks"></a>Observaciones
+ Se pasa como argumento a los métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
 
 ## <a name="requirements"></a>Requisitos
- Header: ee.h
+ Encabezado: ee.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

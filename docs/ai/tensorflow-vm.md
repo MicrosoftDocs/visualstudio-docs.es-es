@@ -2,20 +2,21 @@
 title: Ejecutar un modelo de TensorFlow en la nube
 description: ejecutar un modelo de TensorFlow en una máquina virtual de aprendizaje profundo de azure
 keywords: ai, visual studio, máquina virtual de aprendizaje profundo de azure
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915825"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638763"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Entrenar un modelo de TensorFlow en la nube
 
@@ -23,7 +24,7 @@ En este tutorial, entrenaremos un modelo de TensorFlow con el [conjunto de datos
 
 La base de datos MNIST tiene un conjunto de entrenamiento de 60 000 ejemplos y un conjunto de pruebas de 10 000 ejemplos de dígitos escritos a mano.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 Antes de comenzar, asegúrese de que tener instalado y configurado lo siguiente:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurar la máquina virtual de aprendizaje profundo de Azure
@@ -39,17 +40,17 @@ Antes de comenzar, asegúrese de que tener instalado y configurado lo siguiente:
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Descargar el código de ejemplo
+### <a name="download-sample-code"></a>Descarga de código de ejemplo
 
 Descargue este [repositorio de GitHub](https://github.com/Microsoft/samples-for-ai), que contiene ejemplos para comenzar a usar el aprendizaje profundo en TensorFlow, CNTK, Theano y mucho más.
 
-## <a name="open-project"></a>Abrir el proyecto
+## <a name="open-project"></a>Abrir proyecto
 
 - Abra Visual Studio y seleccione **Archivo > Nuevo > Proyecto o solución**.
 
 - Seleccione la carpeta **Tensorflow Examples** en el repositorio de ejemplos descargado y abra el archivo **TensorflowExamples.sln**.
 
-   ![Abrir el proyecto](media/tensorflow-local/open-project.png)
+   ![Abrir proyecto](media/tensorflow-local/open-project.png)
 
    ![Abrir la solución](media/tensorflow-local/open-solution.png)
 
@@ -77,7 +78,7 @@ Para ver el estado y los detalles de los trabajos: expanda la máquina virtual a
 
 ![Explorador de trabajos](media/tensorflow-vm/job-browser.png)
 
-## <a name="clean-up-resources"></a>Limpiar los recursos
+## <a name="clean-up-resources"></a>Limpieza de recursos
 
 Detenga la máquina virtual si tiene previsto usarla en un futuro próximo. Si ya ha terminado este tutorial, ejecute el siguiente comando para limpiar los recursos:
 

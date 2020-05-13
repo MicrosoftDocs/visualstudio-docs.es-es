@@ -1,28 +1,28 @@
 ---
-title: Escribiendo en el almacén de configuración de usuario | Microsoft Docs
+title: Escritura en el almacén de configuración de usuario ? Microsoft Docs
 ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2bed721cc084042c3ebe57639af28b7e9f13d206
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647879"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740363"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
-La configuración de usuario se pueden escribir como las del cuadro de diálogo **herramientas/opciones** , las ventanas de propiedades y otros cuadros de diálogo. Las extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. En este tutorial se muestra cómo agregar el Bloc de notas a Visual Studio como una herramienta externa mediante la lectura y la escritura en el almacén de configuración de usuario.
+La configuración de usuario es una configuración grabable como las del cuadro de diálogo **Herramientas / Opciones,** las ventanas de propiedades y algunos otros cuadros de diálogo. Las extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. En este tutorial se muestra cómo agregar el Bloc de notas a Visual Studio como una herramienta externa leyendo y escribiendo en el almacén de configuración de usuario.
 
 ## <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
 
-1. Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md) .
+1. Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, consulte [Creación de una extensión con un comando](../extensibility/creating-an-extension-with-a-menu-command.md) de menú
 
-2. En UserSettingsStoreCommand.cs, agregue las siguientes directivas Using:
+2. En UserSettingsStoreCommand.cs, agregue las siguientes directivas using:
 
     ```csharp
     using System.Collections.Generic;
@@ -40,7 +40,7 @@ La configuración de usuario se pueden escribir como las del cuadro de diálogo 
     }
     ```
 
-4. Ahora, averigüe si el Bloc de notas ya está configurado como una herramienta externa. Debe recorrer en iteración todas las herramientas externas para determinar si el valor de ToolCmd es "Notepad", como se indica a continuación:
+4. Ahora descubra si el Bloc de notas ya está configurado como una herramienta externa. Debe recorrer en iteración todas las herramientas externas para determinar si el ajuste ToolCmd es "Notepad", como se indica a continuación:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ La configuración de usuario se pueden escribir como las del cuadro de diálogo 
     }
     ```
 
-6. Pruebe el código. Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutarlo una segunda vez.
+6. Prueba del código Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutarlo una segunda vez.
 
 7. Compile el código e inicie la depuración.
 
-8. En el menú **herramientas** , haga clic en **invocar UserSettingsStoreCommand**. Esto agregará el Bloc de notas al menú **herramientas** .
+8. En el menú **Herramientas** , haga clic en **Invocar UserSettingsStoreCommand**. Esto agregará el Bloc de notas al menú **Herramientas.**
 
-9. Ahora debería ver el Bloc de notas en el menú Herramientas/Opciones y, al hacer clic en **Bloc** de notas, debe aparecer una instancia del Bloc de notas.
+9. Ahora debería ver el Bloc de notas en el menú Herramientas / Opciones, y al hacer clic en **Bloc de notas** debe abrir una instancia del Bloc de notas.

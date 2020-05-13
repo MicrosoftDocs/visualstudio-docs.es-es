@@ -1,24 +1,24 @@
 ---
-title: IDebugCodeContext3::GetProcess | Microsoft Docs
+title: IDebugCodeContext3::GetProcess ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d12756c15c36e6d6126b77fc6e4291521417f82
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349738"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734175"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Recupera una referencia a la interfaz del proceso de depuración.
@@ -39,13 +39,13 @@ public int GetProcess(
 
 ## <a name="parameters"></a>Parámetros
 `ppProcess`\
-[out] Referencia a la interfaz del proceso de depuración.
+[fuera] Referencia a la interfaz del proceso de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para un **CDebugCodeContext** objeto que expone el [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.
+En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugCodeContext** objeto que expone el [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)

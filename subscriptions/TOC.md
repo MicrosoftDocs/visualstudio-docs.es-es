@@ -2,7 +2,7 @@
 # [Novedades](whats-new-in-subscriptions.md)
 # Suscripciones
 ## Comprar suscripciones
-### [Venta minorista](https://visualstudio.microsoft.com/vs/pricing)
+### [Venta minorista](buy-activate-retail.md)
 ### Nube 
 #### [Información general](vscloud-overview.md)
 #### [P+F sobre facturación](vscloud-billing-faq.md)
@@ -13,7 +13,6 @@
 #### [Administración de las suscripciones de mi MPN](manage-mpn-subscriptions.md)
 ### [Microsoft for Startups](program-startups.md)
 ## Inicio de sesión 
-### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
 ### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 ### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
 ### [Inicio de sesión con GitHub](sign-in-github.md)
@@ -40,6 +39,7 @@
 #### [IDE de Visual Studio](vs-ide-benefit.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
 #### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
+#### [Windows Virtual Desktop](vs-windows-virtual-desktop.md)
 ### Desarrollo profesional
 #### [CODE Magazine](vs-code-magazine.md)
 #### [DataCamp](vs-datacamp.md)
@@ -74,10 +74,10 @@
 ### [Superadministradores y administradores](admin-roles.md)
 ### [Establecimiento de las preferencias del contrato](admin-prefs.md)
 ### [Información general](using-admin-portal.md)
-### [Tutorial en vídeo: Uso del portal de administración](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 ### Asignación de suscripciones
 #### [Agregar usuarios únicos](assign-license.md)
 #### [Agregar varios usuarios](assign-license-bulk.md)
+#### [Asignación de suscripciones específicas](assign-guid.md)
 ### [Editar suscripciones](edit-license.md)
 ### [Eliminar suscripciones](delete-license.md)
 ### [Búsqueda de una suscripción](search-license.md)

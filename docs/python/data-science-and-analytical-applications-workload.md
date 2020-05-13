@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70154878"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalación de la compatibilidad con ciencia de datos en Visual Studio

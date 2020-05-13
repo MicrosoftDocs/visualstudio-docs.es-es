@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849803"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586720"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
 
  Para obtener más información, vea este vídeo: ![vínculo a vídeos de](../data-tools/media/playvideo.gif "PlayVideo")[la serie de procedimientos de MSDN: herramientas y extensibilidad de UML](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Requisitos
+## <a name="requirements"></a><a name="Requirements"></a> Requisitos
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+- [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-- [Modelado del SDK para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
+- [SDK de modelado para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Perfiles
  Los perfiles permiten definir estereotipos y propiedades adicionales en los elementos de UML.
@@ -85,7 +85,7 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
 
  Para obtener más información, vea [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Generación
+## <a name="generation"></a>Generation
  A partir de un modelo, puede generar código de programa, scripts, configuraciones, documentos, nuevos modelos u otros artefactos.
 
  En los sistemas de equipajes diseñados por Fabrikam, una gran parte del código del programa se comparte entre un proyecto y el siguiente. El aspecto principal que más varía es el plan del flujo del equipaje alrededor del aeropuerto. Tras acumular experiencia con sus primeros proyectos, los desarrolladores de herramientas del equipo de diseño crearon una plantilla que genera, a partir del modelo de flujo de equipaje, gran parte del código del programa que varía y otros archivos, como documentos de usuario. Esto reduce considerablemente el tiempo de desarrollo y la tasa de errores de cada nuevo proyecto.
@@ -106,17 +106,17 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
 
  Para obtener más información, vea [leer un modelo UML en el código del programa](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="domain-specific-languages"></a>Lenguaje específico de dominio
+## <a name="domain-specific-languages"></a>Lenguajes específicos del dominio
  Si usa un determinado tipo de modelo frecuentemente, puede ser útil crear un lenguaje específico del dominio. Esto se puede realizar para ajustar sus necesidades comerciales con más detalle que un modelo UML, pero su compilación y mantenimiento requiere más esfuerzo. Para obtener más información, vea [modelado del SDK para Visual Studio-lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoría**|**Links**|
+|**Categoría**|**Vínculos**|
 |------------------|---------------|
 |**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [sobre la serie de procedimientos de MSDN: extensibilidad y herramientas UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![vínculo al canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML con Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Crear modelos para su](../modeling/create-models-for-your-app.md) [referencia de API de aplicaciones para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

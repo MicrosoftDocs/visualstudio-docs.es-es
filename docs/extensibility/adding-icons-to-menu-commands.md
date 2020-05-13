@@ -1,5 +1,5 @@
 ---
-title: Agregar iconos a comandos de menú | Microsoft Docs
+title: Adición de iconos a los comandos de menú ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,44 +7,44 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f4b71f981472451766f526cf62e975e571cf46da
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352363"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740157"
 ---
-# <a name="add-icons-to-menu-commands"></a>Agregar iconos a comandos de menú
-Los comandos pueden aparecer en los menús y barras de herramientas. En las barras de herramientas, es común para un comando que se mostrará con un icono (para ahorrar espacio) mientras en los menús aparece normalmente en un comando con un icono y el texto.
+# <a name="add-icons-to-menu-commands"></a>Añadir iconos a los comandos del menú
+Los comandos pueden aparecer tanto en los menús como en las barras de herramientas. En las barras de herramientas, es común que un comando se muestre con solo un icono (para ahorrar espacio) mientras que en los menús suele aparecer un comando con un icono y texto.
 
- Los iconos son 16 píxeles de ancho por 16 píxeles de alto y pueden ser la profundidad de color de 8 bits (256 colores) o la profundidad de color de 32 bits (color verdadero). se prefieren los iconos de color de 32 bits. Iconos normalmente están organizados en una sola fila horizontal en un único mapa de bits, aunque se permiten varios mapas de bits. Este mapa de bits se declara en el *.vsct* archivo junto con los iconos individuales disponibles en el mapa de bits. Consulte la referencia para la [Bitmaps (elemento)](../extensibility/bitmaps-element.md) para obtener más detalles.
+ Los iconos tienen 16 píxeles de ancho por 16 píxeles de alto y pueden tener una profundidad de color de 8 bits (256 colores) o una profundidad de color de 32 bits (color verdadero). Se prefieren los iconos de color de 32 bits. Los iconos normalmente se organizan en una sola fila horizontal en un único mapa de bits, aunque se permiten varios mapas de bits. Este mapa de bits se declara en el archivo *.vsct* junto con los iconos individuales disponibles en el mapa de bits. Consulte la referencia del [elemento Bitmaps](../extensibility/bitmaps-element.md) para obtener más detalles.
 
-## <a name="add-an-icon-to-a-command"></a>Agregar un icono a un comando
- El siguiente procedimiento se supone que tiene un proyecto de VSPackage existente con un comando de menú. Para averiguar cómo hacerlo, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
+## <a name="add-an-icon-to-a-command"></a>Añadir un icono a un comando
+ En el procedimiento siguiente se supone que tiene un proyecto de VSPackage existente con un comando de menú. Para saber cómo hacerlo, consulte [Crear una extensión con un comando](../extensibility/creating-an-extension-with-a-menu-command.md)de menú .
 
-1. Cree un mapa de bits con una profundidad de color de 32 bits. Siempre es un icono de 16 x 16 para que este mapa de bits debe ser de 16 píxeles de alto y un múltiplo de 16 píxeles de ancho.
+1. Cree un mapa de bits con una profundidad de color de 32 bits. Un icono siempre es de 16 x 16, por lo que este mapa de bits debe tener 16 píxeles de alto y un múltiplo de 16 píxeles de ancho.
 
-     Cada icono se coloca en el mapa de bits juntos en una sola fila. Use el canal alfa para indicar los lugares de transparencia en cada icono.
+     Cada icono se coloca en el mapa de bits uno al lado del otro en una sola fila. Utilice el canal alfa para indicar los lugares de transparencia en cada icono.
 
-     Si usa una profundidad de color de 8 bits, utilice magenta, `RGB(255,0,255)`, como la transparencia. Sin embargo, los iconos de color de 32 bits se prefieren.
+     Si utiliza una profundidad de color de 8 `RGB(255,0,255)`bits, utilice magenta, , como transparencia. Sin embargo, se prefieren los iconos de color de 32 bits.
 
-2. Copie el archivo de icono en el *recursos* directorio en el proyecto de VSPackage. En el **el Explorador de soluciones**, el icono Agregar al proyecto. (Seleccione **recursos**y en el menú contextual, haga clic en **agregar**, a continuación, **elemento existente**y seleccione el archivo de icono.)
+2. Copie el archivo de icono en el directorio *Resources* del proyecto DE VSPackage. En el Explorador de **soluciones**, agregue el icono al proyecto. (Seleccione **Recursos**y, en el menú contextual, haga clic en **Agregar**, luego en **Elemento existente**y seleccione el archivo de icono.)
 
-3. Abra el *.vsct* archivo en el editor.
+3. Abra el archivo *.vsct* en el editor.
 
-4. Agregar un `GuidSymbol` elemento con un nombre de **testIcon**. Crear un GUID (**herramientas** > **crear GUID**, a continuación, seleccione **formato del registro** y haga clic en **copia**) y péguelo en el `value` atributo. El resultado debería tener este aspecto:
+4. Agregue `GuidSymbol` un elemento con el nombre **testIcon**. Cree un GUID (**Tools** > **Create GUID**y, a continuación, seleccione Registry Format **(Formato del Registro)** y haga clic en Copy **(Copiar)** y péguelo en el `value` atributo. El resultado debería tener este aspecto:
 
     ```xml
     <!-- Create your own GUID -->
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">
     ```
 
-5. Agregar un `<IDSymbol>` para el icono. El `name` atributo es el identificador del icono y el `value` indica su posición en la banda, si existe. Si hay un solo icono, agregue 1. El resultado debería tener este aspecto:
+5. Agregue `<IDSymbol>` un para el icono. El `name` atributo es el identificador del `value` icono y indica su posición en la tira, si existe. Si solo hay un icono, agregue 1. El resultado debería tener este aspecto:
 
     ```xml
     <!-- Create your own GUID -->
@@ -53,21 +53,21 @@ Los comandos pueden aparecer en los menús y barras de herramientas. En las barr
     </GuidSymbol>
     ```
 
-6. Crear un `<Bitmap>` en el `<Bitmaps>` sección de la *.vsct* archivo para representar el mapa de bits que contiene los iconos.
+6. Cree `<Bitmap>` un `<Bitmaps>` en la sección del archivo *.vsct* para representar el mapa de bits que contiene los iconos.
 
-    - Establecer el `guid` valor el nombre de la `<GuidSymbol>` que creó en el paso anterior del elemento.
+    - Establezca `guid` el valor en `<GuidSymbol>` el nombre del elemento que creó en el paso anterior.
 
-    - Establecer el `href` valor a la ruta de acceso relativa del archivo de mapa de bits (en este caso **recursos\\< nombre de archivo de icono\>** .
+    - Establezca `href` el valor en la ruta de acceso relativa del archivo de mapa de bits (en este caso **Recursos\\<nombre\>** de archivo de icono .
 
-    - Establecer el `usedList` valor para el IDSymbol que creó anteriormente. Este atributo especifica una lista delimitada por comas de los iconos que se usará en el VSPackage. Los iconos no están en la lista son compilación excluidos del formulario.
+    - Establezca `usedList` el valor en el IDSymbol que creó anteriormente. Este atributo especifica una lista delimitada por comas de los iconos que se usarán en el VSPackage. Los iconos que no están en la lista se excluyen la compilación de formularios.
 
-         El bloque de mapa de bits debe tener este aspecto:
+         El bloque Bitmap debería tener este aspecto:
 
         ```xml
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>
         ```
 
-7. Existente `<Button>` elemento, establezca el `Icon` elemento con los valores de GUIDSymbol y IDSymbol que creó anteriormente. Este es un ejemplo de un elemento Button con esos valores:
+7. En el `<Button>` elemento existente, establezca el `Icon` elemento en los valores GUIDSymbol e IDSymbol que creó anteriormente. Este es un ejemplo de un elemento Button con esos valores:
 
     ```xml
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,8 +79,8 @@ Los comandos pueden aparecer en los menús y barras de herramientas. En las barr
     </Button>
     ```
 
-8. El icono de prueba. Compile la solución y comience la depuración. En la instancia experimental, busque el comando. Debería ver el icono que agregó.
+8. Pruebe su icono. Compile la solución y comience la depuración. En la instancia experimental, busque el comando. Debería mostrar el icono que agregó.
 
 ## <a name="see-also"></a>Vea también
 - [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)
-- [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)
+- [Referencia de esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)

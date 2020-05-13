@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::GetCount | Microsoft Docs
+title: IEnumDebugModules2::GetCount ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::GetCount
 ms.assetid: f4def3d2-7cc9-4cd2-9649-3b7e00a76220
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b46198507eac96144583d86fcde1f1a1718fe15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098414d2a46e727d8e7316108bce28da53a47ffa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716560"
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 Devuelve el número de elementos de la enumeración.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parámetros
 `pcelt`\
-[out] Devuelve el número de elementos de la enumeración.
+[fuera] Devuelve el número de elementos de la enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método no forma parte de la interfaz de enumeración COM habitual que especifica que solamente el `Next`, `Clone`, `Skip`, y `Reset` métodos deben implementarse.
+## <a name="remarks"></a>Observaciones
+ Este método no forma parte de la interfaz de `Next` `Clone`enumeración COM habitual que especifica que solo se deben implementar los métodos , , `Skip`y `Reset` .
 
 ## <a name="see-also"></a>Vea también
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

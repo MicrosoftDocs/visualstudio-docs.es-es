@@ -1,24 +1,24 @@
 ---
 title: Convenciones de lenguaje de .NET para EditorConfig
-ms.date: 09/23/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408511"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544010"
 ---
 # <a name="language-conventions"></a>Convenciones de lenguaje
 
@@ -94,7 +94,6 @@ Las reglas de estilo de esta sección son aplicables a C# y Visual Basic.
   - dotnet\_style\_predefined\_type\_for\_member_access
 - [Preferencias de modificadores](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
-  - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
   - dotnet\_style\_readonly\_field
 - [Preferencias de paréntesis](#parentheses-preferences)
@@ -109,15 +108,15 @@ Las reglas de estilo de esta sección son aplicables a C# y Visual Basic.
   - dotnet\_style\_prefer\_inferred\_tuple_names
   - dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names
   - dotnet\_style\_prefer\_auto\_properties
-  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
   - dotnet\_style\_prefer\_compound\_assignment
 - [Preferencias de la comprobación de "NULL"](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
+  - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 
-### <a name="this-and-me"></a>"This." y "Me."
+### <a name="this-and-me-qualifiers"></a><a name="this-and-me"></a>"This." y "Me."
 
 Esta regla de estilo se puede aplicar a campos, propiedades, métodos o eventos. Un valor **true** significa que prefiere que el símbolo de código esté precedido por `this.` en C# o `Me.` en Visual Basic. Un valor **false** significa que prefiere que el elemento de código _no_ esté precedido por `this.` o `Me.`.
 
@@ -244,7 +243,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-### <a name="language-keywords"></a>Palabras clave del lenguaje en lugar de nombres de tipos de marco para referencias de tipo
+### <a name="language-keywords-instead-of-framework-type-names-for-type-references"></a><a name="language-keywords"></a>Palabras clave del lenguaje en lugar de nombres de tipos de marco para referencias de tipo
 
 Esta regla de estilo se puede aplicar a variables locales, parámetros de métodos y miembros de clases, o bien como una regla independiente para escribir expresiones de acceso a miembros. Un valor **true** significa que se prefiere la palabra clave del lenguaje (por ejemplo, `int` o `Integer`) en lugar del nombre de tipo (por ejemplo, `Int32`) para los tipos que tienen una palabra clave para representarlos. Un valor **false** significa que se prefiere el nombre de tipo en lugar de la palabra clave del lenguaje.
 
@@ -313,7 +312,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-### <a name="normalize-modifiers"></a>Preferencias de modificadores
+### <a name="modifier-preferences"></a><a name="normalize-modifiers"></a>Preferencias de modificadores
 
 Las reglas de estilo de esta sección hacen referencia a las preferencias de modificadores, incluida la necesidad de modificadores de accesibilidad, la especificación del criterio de ordenación deseado de los modificadores y la necesidad del modificador de solo lectura.
 
@@ -407,6 +406,43 @@ Ejemplos de código:
 Public Class MyClass
     Private Shared ReadOnly daysInYear As Int = 365
 End Class
+```
+
+#### <a name="visual_basic_style_unused_value_expression_statement_preference"></a>visual_basic_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **Nombre de regla** | visual_basic_style_unused_value_expression_statement_preference |
+| **Identificador de la regla** | IDE0058 |
+| **Lenguajes aplicables** | Visual Basic |
+| **Valores** | `unused_local_variable:silent` |
+| **Valor predeterminado de Visual Studio** | `unused_local_variable:silent` |
+
+Ejemplos de código:
+
+```vb
+' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
+
+Dim unused = Computation()
+```
+
+#### <a name="visual_basic_style_unused_value_assignment_preference"></a>visual_basic_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **Nombre de regla** | visual_basic_style_unused_value_assignment_preference |
+| **Identificador de la regla** | IDE0059 |
+| **Lenguajes aplicables** | Visual Basic |
+| **Valores** | `unused_local_variable:silent` |
+| **Valor predeterminado de Visual Studio** | `unused_local_variable:silent` |
+
+Ejemplos de código:
+
+```vb
+' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
+
+Dim unused = Computation()
+Dim x = 1;
 ```
 
 #### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
@@ -941,6 +977,7 @@ Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
 ```
 
 #### <a name="dotnet_style_coalesce_expression"></a>dotnet\_style\_coalesce_expression
@@ -1002,6 +1039,16 @@ Dim v = o?.ToString()
 Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
+
+### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
+
+|||
+|-|-|
+| **Nombre de regla** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
+| **Identificador de la regla** | IDE0041 |
+| **Lenguajes aplicables** | C# 6.0+ y Visual Basic 14+ |
+| **Valores** | `true`: se prefiere la comprobación de valores NULL al método de igualdad de referencia<br /><br />`false`: se prefiere el método de igualdad de referencia a la comprobación de valores NULL |
+| **Valor predeterminado de Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Configuración de la calidad del código .NET
 
@@ -1081,6 +1128,8 @@ Las reglas de estilo de esta sección solo son aplicables a C#.
 - [Preferencias de la comprobación de "NULL"](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
+- [Preferencias de modificadores](#normalize-modifiers)
+  - csharp\_preferred\_modifier_order
 - [Preferencias de bloques de código](#code-block-preferences)
   - csharp\_prefer_braces
 - [Preferencias de valores no usados](#unused-value-preferences)

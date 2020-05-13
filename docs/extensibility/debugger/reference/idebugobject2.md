@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2 | Microsoft Docs
+title: IDebugObject2 ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2 interface
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f027fd08c38433d5f1357e56d90df96e223854
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e468b5a282ffb5466d57a3c9b1a37aa3ae8643ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317264"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726076"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
-> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta forma de implementar evaluadores de expresiones está en desuso. Para obtener información sobre la implementación de evaluadores de expresiones CLR, consulte Evaluadores de [expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y Ejemplo de evaluador de [expresiones administradas](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Esta interfaz proporciona información adicional sobre un objeto.
 
@@ -32,36 +32,36 @@ IDebugObject2 : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para los implementadores
- El evaluador de expresiones implementa esta interfaz para ofrecer compatibilidad con alias y el acceso a información sobre el objeto.
+ El evaluador de expresiones implementa esta interfaz para ofrecer compatibilidad con alias y acceso a información sobre el objeto.
 
-## <a name="notes-for-callers"></a>Notas para los llamadores
- Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz puede obtener esta interfaz mediante [QueryInterface](/cpp/atl/queryinterface). Además, [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) devuelve esta interfaz.
+## <a name="notes-for-callers"></a>Notas para las personas que llaman
+ Una interfaz [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) puede obtener esta interfaz mediante [QueryInterface](/cpp/atl/queryinterface). Además, [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) devuelve esta interfaz.
 
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
- Además de los métodos en el [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz, el `IDebugObject2` interfaz implementa lo siguiente:
+## <a name="methods-in-vtable-order"></a>Métodos en orden Vtable
+ Además de los métodos de `IDebugObject2` la interfaz [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) la interfaz implementa lo siguiente:
 
 |Método|Descripción|
 |------------|-----------------|
-|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Obtiene el campo o variable (si existe) que puede realizar copias de la propiedad representada por este objeto.|
+|[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|Obtiene el campo o variable (si existe) que puede estar respaldando la propiedad representada por este objeto.|
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|Obtiene el objeto de código administrado que representa el valor de este objeto.|
-|[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)|Devuelve un alias existente o crea un identificador único para este objeto.|
-|[GetAlias](../../../extensibility/debugger/reference/idebugobject2-getalias.md)|Obtiene el alias asociado con este objeto, si existe.|
+|[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)|Crea un identificador único para este objeto o devuelve un alias existente.|
+|[GetAlias](../../../extensibility/debugger/reference/idebugobject2-getalias.md)|Obtiene el alias asociado a este objeto, si existe.|
 |[GetField](../../../extensibility/debugger/reference/idebugobject2-getfield.md)|Obtiene el tipo de este objeto.|
-|[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Determina si este objeto representa datos de usuario.|
-|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Determina si el estado de editar y continuar ya no es válido.<br /><br /> Un evaluador de expresiones personalizado no implementa este método (siempre debe devolver `E_NOTIMPL`).|
+|[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|Determina si este objeto representa los datos de usuario.|
+|[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|Determina si el estado Editar y continuar ya no es válido.<br /><br /> Un evaluador de expresiones personalizado no implementa `E_NOTIMPL`este método (siempre debe devolver ).|
 
-## <a name="remarks"></a>Comentarios
- Consulte [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) para obtener información sobre los alias.
+## <a name="remarks"></a>Observaciones
+ Consulte [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) para obtener una explicación sobre los alias.
 
 ## <a name="requirements"></a>Requisitos
- Header: ee.h
+ Encabezado: ee.h
 
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vea también
-- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [Interfaces de evaluación de expresiones](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
-- [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)
+- [Getobject](../../../extensibility/debugger/reference/idebugalias-getobject.md)

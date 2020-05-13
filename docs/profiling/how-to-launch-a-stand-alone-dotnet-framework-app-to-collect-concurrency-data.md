@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4a52c65f8a53d62edde42c26fafef9940046ba5d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775404"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
@@ -47,7 +47,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:concurrency**.
 
-   | Opción | DESCRIPCIÓN |
+   | Opción | Descripción |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username` | Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otros inicios de sesión. |
@@ -57,11 +57,11 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 3. Inicie la aplicación de destino. Tipo:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `AppName` [`Options`] [`Sample Event`]
+    **VSPerfCmd** [/launch](../profiling/launch.md) **:** `AppName` [`Options`] [`Sample Event`]
 
     Puede usar cualquiera de las siguientes opciones con la opción **/launch**.
 
-   |Opción|DESCRIPCIÓN|
+   |Opción|Descripción|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica una cadena que contiene los argumentos de la línea de comandos que se van a pasar a la aplicación de destino.|
    |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|
@@ -74,7 +74,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 1. Los siguientes pares de opciones de *VSPerfCmd.exe* inician y detienen la recopilación de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
@@ -89,7 +89,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     - Cierre la aplicación de destino.
 
-         O bien
+         o bien
 
     - Escriba **VSPerfCmd /detach**
 

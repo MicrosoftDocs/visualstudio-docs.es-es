@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254212"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79307152"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -41,7 +41,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Profundización: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
+| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Profundización: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
@@ -77,7 +77,7 @@ Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde c
 
 En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 y versiones posteriores (no todas las plantillas están disponibles en todas las versiones anteriores):
 
-| Plantilla | DESCRIPCIÓN |
+| Plantilla | Descripción |
 | --- | --- |
 | [**Desde código de Python existente**](#create-project-from-existing-files) | Crea un proyecto de Visual Studio a partir de código Python existente en una estructura de carpetas.  |
 | **Aplicación de Python** | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](selecting-a-python-environment-for-a-project.md). |

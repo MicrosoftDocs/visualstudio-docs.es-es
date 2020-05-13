@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
+title: IDebugClassField::GetDefaultIndexer ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350755"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734421"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtiene el nombre del indizador predeterminado.
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Parámetros
-`pbstrIndexer` [out] Devuelve una cadena que contiene el nombre del indizador predeterminado.
+`pbstrIndexer`[fuera] Devuelve una cadena que contiene el nombre del indizador predeterminado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- El indizador predeterminado de una clase es la propiedad que está marcada como el `Default` propiedad para accesos de matriz. Esto es específico [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Este es un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se utiliza.
+## <a name="remarks"></a>Observaciones
+ El indizador predeterminado de una clase es `Default` la propiedad que se marca como la propiedad para los accesos de matriz. Esto es [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]específico de . Este es un ejemplo de un [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] indexador predeterminado declarado y cómo se utiliza.
 
 ```vb
 Imports System.Collections;

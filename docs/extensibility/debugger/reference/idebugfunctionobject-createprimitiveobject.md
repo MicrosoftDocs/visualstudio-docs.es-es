@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs
+title: IDebugFunctionObject::CreatePrimitiveObject ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d47f3edfffadc74791d6d6b2267a37319a053d7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320828"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728533"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-Crea un objeto de datos primitivos, como un número entero simple.
+Crea un objeto de datos primitivo, como un entero simple.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ int CreatePrimitiveObject(
 
 ## <a name="parameters"></a>Parámetros
 `ot`\
-[in] Un valor de la [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeración que representa el tipo de primitiva a crear.
+[en] Valor de la [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeración que representa el tipo de primitivo que se va a crear.
 
 `ppObject`\
-[out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto recién creado.
+[fuera] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+ Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Llame a este método para crear un objeto que representa un objeto primitivo que es un parámetro a la función representada por el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz. Por ejemplo, si la cadena de expresión es "myString(5)", este método se usaría para crear un objeto que representa el entero 5.
+## <a name="remarks"></a>Observaciones
+ Llame a este método para crear un objeto que representa un objeto primitivo que es un parámetro para la función representada por el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz. Por ejemplo, si la cadena de expresión es "myString(5)", este método se usaría para crear un objeto que representa el entero 5.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

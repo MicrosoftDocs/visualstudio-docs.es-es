@@ -1,28 +1,28 @@
 ---
-title: Compatibilidad con sitios Web | Documentos de Microsoft
+title: Soporte de sitios web ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9f6e287a2cd91b0a5eb0d04130627faa787ccac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703442"
 ---
 # <a name="web-site-support"></a>Compatibilidad del sitio web
-Un sistema de proyectos de sitio Web es un sistema de proyecto que crea proyectos Web. Los proyectos Web a su vez crean aplicaciones Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web que está asociado el código. Se generan archivos ejecutables adicionales de los archivos de código fuente en la carpeta /bin.
+Un sistema de proyectos de sitio Web es un sistema de proyectos que crea proyectos web. Los proyectos web a su vez crean aplicaciones web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web que tiene código asociado. Los archivos ejecutables adicionales se generan a partir de los archivos de código fuente de la carpeta /App_Code.
 
- Sistemas de proyectos de sitio Web se crean mediante la adición de plantillas y los atributos de registro en un sistema de proyecto existente. Uno de estos atributos selecciona el proveedor de IntelliSense para el lenguaje. La implementación del proveedor IntelliSense controla las referencias y llama al compilador del lenguaje cuando se solicita una página Web inteligente que no se almacena en caché.
+ Los sistemas de proyectos de sitio web se crean agregando plantillas y atributos de registro a un sistema de proyectos existente. Uno de estos atributos selecciona el proveedor intelliSense para el idioma. La implementación del proveedor IntelliSense controla las referencias y llama al compilador de lenguaje cuando se solicita una página Web inteligente que no está almacenada en caché.
 
- El compilador de lenguaje que se utiliza para compilar las páginas Web debe estar registrado con [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Puede usar el [ \<compilador > elemento](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) en un archivo Web.config para registrar el compilador, como en el ejemplo siguiente:
+ El compilador de lenguaje utilizado para [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]compilar páginas Web debe estar registrado con . Puede utilizar [ \<](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) el compilador> Element en un archivo Web.config para registrar el compilador, como en el ejemplo siguiente:
 
 ```
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
@@ -31,13 +31,13 @@ Un sistema de proyectos de sitio Web es un sistema de proyecto que crea proyecto
 ## <a name="in-this-section"></a>En esta sección
 - [Plantillas de compatibilidad del sitio web](../../extensibility/internals/web-site-support-templates.md)
 
- Enumera las plantillas que puede usar para crear nuevos proyectos de sitios Web y los elementos asociados.
+ Enumera las plantillas que puede usar para crear nuevos proyectos de sitio Web y elementos asociados.
 
 - [Atributos de compatibilidad del sitio web](../../extensibility/internals/web-site-support-attributes.md)
 
- Presenta los atributos de registro que se conectan a un proyecto de sitio Web [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].
+ Presenta los atributos de registro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]conectan un proyecto de sitio Web a y .
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Proyectos web](../../extensibility/internals/web-projects.md)
 
- Presenta información general de los dos tipos de proyectos Web, proyectos de sitios Web y proyectos de aplicación Web.
+ Presenta una visión general de los dos tipos de proyectos web, proyectos de sitio web y proyectos de aplicación web.

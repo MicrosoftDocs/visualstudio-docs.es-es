@@ -1,53 +1,53 @@
 ---
-title: Asistentes | Documentos de Microsoft
+title: Magos Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3b17d7ef3137c48ddda97e1b2b5bbf0e58cf5bb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312832"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703208"
 ---
 # <a name="wizards"></a>Asistentes
-Después de crear un asistente, normalmente desea agregarla a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integra el entorno de desarrollo (IDE) para que otros usuarios puedan usarlo. A continuación, aparece el asistente se ha agregado en el **Agregar nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo. Para ver el **Agregar nuevo proyecto** o **Agregar nuevo elemento** diálogo cuadros, haga clic en una solución abierta en **el Explorador de soluciones**, apunte a **agregar**, y a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.
+Después de crear un asistente, normalmente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] desea agregarlo al entorno de desarrollo integrado (IDE) para que otros puedan usarlo. A continuación, el asistente agregado aparece en los cuadros de diálogo **Agregar nuevo proyecto** o Agregar nuevo **elemento.** Para ver los cuadros de diálogo Agregar nuevo proyecto o **Agregar nuevo elemento,** haga clic con el botón secundario en una solución abierta en el **Explorador**de soluciones , seleccione **Agregar**y, a continuación, haga clic en **Nuevo proyecto** o **Nuevo elemento**. **Add New Project**
 
- Los asistentes pueden implementarse en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para permitir que los usuarios Seleccione desde una vista de árbol de valores disponibles cuando abran el **Agregar nuevo proyecto** cuadro de diálogo o la **Agregar nuevo elemento** cuadro de diálogo, o cuando haga clic en un elemento de **el Explorador de soluciones**.
+ Los asistentes se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pueden implementar para permitir a los usuarios seleccionar en una vista de árbol de los valores disponibles cuando abren el cuadro de diálogo **Agregar nuevo proyecto** o el cuadro de diálogo Agregar nuevo **elemento,** o cuando hacen clic con el botón derecho en un elemento del Explorador de **soluciones**.
 
- En el asistente, puede proporcionar la opción de localizar el nombre de un nuevo proyecto o ITE y puede determinar el icono de que los usuarios verán cuando seleccionen el asistente. También puede controlar el orden en que aparecen elementos nuevos en relación con otros elementos disponibles; no es necesario que los elementos organizarse alfabéticamente.
+ En el asistente, puede proporcionar la opción de localizar el nombre de un nuevo proyecto o ites, y puede determinar el icono que verán los usuarios cuando seleccionen el asistente. También puede controlar el orden en el que aparecen nuevos elementos en relación con otros elementos disponibles; los elementos no tienen que organizarse alfabéticamente.
 
- También puede proporcionar a un asistente que se inicia de forma diferente, según los parámetros personalizados que se pasan al asistente cuando se abre.
+ También puede proporcionar un asistente que se inicie de forma diferente, en función de los parámetros personalizados que se pasan al asistente cuando se abre.
 
- Los temas de esta sección describen los archivos que implementan para que se produzca la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Agregar nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo para mostrar el Asistente entre las plantillas y los asistentes disponibles y los requisitos que el asistente debe cumplir para que funcione correctamente en el IDE.
+ En los temas de esta sección se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] describen los archivos que implementa para que los cuadros de diálogo **Agregar nuevo proyecto** y Agregar nuevo **elemento** muestren el asistente entre los asistentes y plantillas disponibles y los requisitos que debe cumplir el asistente para funcionar correctamente en el IDE.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Archivos de descripción del directorio de plantilla (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
 
- Proporciona información general de qué plantilla de archivos de descripción de directorio y se explica cómo funcionan en el IDE para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con un proyecto en los cuadros de diálogo.
+ Proporciona información general sobre qué archivos de descripción de directorio de plantilla y explica cómo funcionan en el IDE para mostrar carpetas, archivos .vsz del asistente y archivos de plantilla asociados a un proyecto en los cuadros de diálogo.
 
-- [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Archivo de asistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
 
- Explica cómo inicia el IDE de asistentes y enumera las tres partes del archivo .vsz.
+ Explica cómo el IDE inicia los asistentes y enumera las tres partes del archivo .vsz.
 
 - [Interfaz de asistente (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
 
- Describe el `IDTWizard` interfaz que deben implementar los asistentes para trabajar en el IDE.
+ Describe la `IDTWizard` interfaz que los asistentes deben implementar para trabajar en el IDE.
 
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 
- Explica cómo se implementan los asistentes y lo que ocurre cuando el IDE pasa los parámetros de contexto para la implementación.
+ Explica cómo se implementan los asistentes y qué ocurre cuando el IDE pasa parámetros de contexto a la implementación.
 
 - [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)
 
- Explica cómo utilizar parámetros personalizados para controlar el funcionamiento del asistente después de que se inicia el asistente.
+ Explica cómo utilizar parámetros personalizados para controlar el funcionamiento del asistente después de iniciar el asistente.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 - [Tipos de proyecto](../../extensibility/internals/project-types.md)

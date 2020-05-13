@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::EnumPorts | Microsoft Docs
+title: IDebugCoreServer2::EnumPorts ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::EnumPorts
 ms.assetid: 3d98dfd0-614f-4d68-90c6-8a9b9cab66f1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 317f24fd6af107e50b12d86ace53fd8d7f1b4894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e72c87bfe7649b483e744cbccffa93d7ad721a9e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337602"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733201"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
 Recupera una lista de todos los puertos disponibles.
@@ -41,10 +41,10 @@ int EnumPorts( 
 
 ## <a name="parameters"></a>Parámetros
 `ppEnum`\
-[out] Devuelve un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objeto que contiene una lista de todos los puertos de todos los proveedores de puertos.
+[fuera] Devuelve un [objeto IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) que contiene una lista de todos los puertos de todos los proveedores de puertos.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

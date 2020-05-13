@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Microsoft Docs
+title: FIELD_INFO Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337700"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736888"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-Esta estructura describe otro campo, parámetro o una variable local.
+# <a name="field_info"></a>FIELD_INFO
+Esta estructura describe una variable local, un parámetro u otro campo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Miembros
 `dwFields`\
-Una combinación de marcas de la [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumeración que especifica qué miembros se rellenan.
+Una combinación de indicadores de la [enumeración FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica qué miembros se rellenan.
 
 `bstrFullName`\
 El nombre completo del campo.
@@ -58,18 +58,18 @@ El nombre completo del campo.
 El nombre corto del campo.
 
 `bstrType`\
-El tipo del campo.
+Tipo del campo.
 
 `dwModifiers`\
-Una combinación de marcas de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeración que describe el campo.
+Una combinación de indicadores de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeración que describe el campo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método donde se rellena.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: sh.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

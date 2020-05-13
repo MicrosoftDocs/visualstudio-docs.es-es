@@ -1,25 +1,25 @@
 ---
-title: IDSymbol (elemento) | Microsoft Docs
+title: Elemento IDSymbol (IDSymbol Element) Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319535"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710375"
 ---
-# <a name="idsymbol-element"></a>IDSymbol (elemento)
-El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. Incluye el GUID del elemento primario `GuidSymbol` elemento. El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en la `value` atributo.
+# <a name="idsymbol-element"></a>Elemento IDSymbol
+El `IDSymbol` elemento contiene el identificador del par GUID:ID que representa un menú, grupo o comando. El GUID procede `GuidSymbol` del elemento primario. El `IDSymbol` elemento `name` tiene un atributo que proporciona un nombre descriptivo `value` para el identificador, que se encuentra en el atributo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,8 +34,8 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. Nombre del símbolo de identificador.|
-|value|Obligatorio. Valor de identificador numérico del símbolo de identificador.|
+|name|Necesario. Nombre del símbolo de ID.|
+|value|Necesario. Valor de ID numérico del símbolo de ID.|
 
 ### <a name="child-elements"></a>Elementos secundarios
  Ninguno.
@@ -44,10 +44,10 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[GuidSymbol (elemento)](../extensibility/guidsymbol-element.md)|Contiene el GUID del par GUID: ID que representa un menú, grupo o comando. Agrupa los elementos `IDSymbol`.|
+|[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene el GUID del par GUID:ID que representa un menú, grupo o comando. Agrupa los elementos `IDSymbol`.|
 
-## <a name="remarks"></a>Comentarios
- Cada `IDSymbol` elemento en un determinado `GuidSymbol` elemento debe tener un único `value`. Sin embargo, `IDSymbol` los elementos que tienen valores idénticos pueden existir en un paquete, siempre y cuando tengan que diferentes objetos primarios.
+## <a name="remarks"></a>Observaciones
+ Cada `IDSymbol` elemento de `GuidSymbol` un elemento `value`determinado debe tener un único . Sin `IDSymbol` embargo, los elementos que tienen valores idénticos pueden existir en un paquete siempre que tengan elementos primarios diferentes.
 
 ## <a name="see-also"></a>Vea también
-- [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631983"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375550"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -59,7 +59,7 @@ Contiene un conjunto de tareas para que MSBuild las ejecute de manera secuencial
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`Name`|Atributo necesario.<br /><br /> Nombre del destino.|
+|`Name`|Atributo necesario.<br /><br /> Nombre del destino. Un nombre de destino puede contener cualquier carácter, salvo `$@()%*?.`.|
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Si la condición se evalúa como `false`, el destino no ejecutará el cuerpo del destino ni los destinos que se establecen en el atributo `DependsOnTargets`. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Atributo opcional.<br /><br /> Los archivos que forman entradas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Outputs` para determinar si `Target` está actualizado. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Atributo opcional.<br /><br /> Los archivos que forman salidas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Inputs` para determinar si `Target` está actualizado. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|

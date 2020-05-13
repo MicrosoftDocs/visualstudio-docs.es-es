@@ -4,17 +4,17 @@ description: Obtenga información sobre cómo configurar los distintos ajustes d
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: seodec18
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 312a7e072ff5dfbe1a462abb68c8a74a42823e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
+ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550371"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489654"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso del Asistente Publicar aplicación de Azure de Visual Studio
 
@@ -63,7 +63,7 @@ Puede tener acceso al Asistente Publicar aplicación de Azure de dos formas seg�
 
 **Habilitar Escritorio remoto para todos los roles**: seleccione esta opción si desea poder conectarse de forma remota al servicio. Esta opción se emplea principalmente para la solución de problemas. Para más información, vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-**Habilitar Web Deploy para todos los roles web**: seleccione esta opción para habilitar la implementación web para el servicio. Debe seleccionar también la opción **Habilitar Escritorio remoto para todos los roles** para usar esta característica. Para más información, consulte el artículo de [Publicación de un servicio en la nube con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Habilitar Web Deploy para todos los roles web**: seleccione esta opción para habilitar la implementación web para el servicio. Debe seleccionar también la opción **Habilitar Escritorio remoto para todos los roles** para usar esta característica. Para obtener más información, vea [Publicación de un servicio](vs-azure-tools-publishing-a-cloud-service.md)en la nube mediante Visual Studio .
 
 ## <a name="settings-page---advanced-settings-tab"></a>Página Configuración: pestaña Configuración avanzada
 
@@ -99,7 +99,7 @@ Diagnósticos le permite solucionar los problemas de un servicio en la nube de A
 
 ![Resumen](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Perfil de destino**: puede optar por crear un perfil de publicación a partir de la configuración que eligió. Por ejemplo, puede crear un perfil para un entorno de pruebas y otro para producción. Para guardar este perfil, elija el icono **Guardar** . El asistente creará el perfil y lo guardará en el proyecto de Visual Studio. Para modificar el nombre del perfil, abra la lista **Perfil de destino** y, a continuación, elija **&lt;Administrar…&gt;**.
+**Perfil de destino**: puede optar por crear un perfil de publicación a partir de la configuración que eligió. Por ejemplo, puede crear un perfil para un entorno de pruebas y otro para producción. Para guardar este perfil, elija el icono **Guardar**. El asistente creará el perfil y lo guardará en el proyecto de Visual Studio. Para modificar el nombre del perfil, abra la lista **Perfil de destino** y, a continuación, elija **&lt;Administrar…&gt;**.
 
    > [!Note]
    > El perfil de publicación aparecerá en el Explorador de soluciones en Visual Studio y su configuración se escribirá en un archivo con la extensión .azurePubxml. La configuración se guarda como atributos de etiquetas XML.
@@ -118,6 +118,6 @@ Una vez que ajuste toda la configuración de la implementación del proyecto, se
 
 - [Prueba del rendimiento de un servicio en la nube de Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configuración de Diagnósticos en Azure Cloud Services y Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+- [Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales.](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
 
 - [¿Qué es Application Insights?](/azure/application-insights/app-insights-overview)

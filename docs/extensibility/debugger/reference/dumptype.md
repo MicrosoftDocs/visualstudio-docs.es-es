@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Microsoft Docs
+title: DUMPTYPE ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318191"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737205"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Especifica qué parte del estado de un programa (por ejemplo, los subprocesos en ejecución, marcos de pila y dirección de la instrucción actual) para volcar.
+Especifica cuánto estado de un programa (como subprocesos en ejecución, marcos de pila y dirección de instrucción actual) se va a volcar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `DUMP_MINIDUMP`\
-Especifica un volcado de memoria pequeño y compacto.
+Especifica un volcado pequeño y compacto.
 
 `DUMP_FULLDUMP`\
-Especifica un volcado de memoria grande, completa.
+Especifica un volcado grande y completo.
 
-## <a name="remarks"></a>Comentarios
-Se pasa como argumento a la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.
+## <a name="remarks"></a>Observaciones
+Se pasa como argumento al método [WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

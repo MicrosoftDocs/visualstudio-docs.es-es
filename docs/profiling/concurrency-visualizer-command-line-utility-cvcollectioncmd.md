@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911202"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)
@@ -38,7 +38,7 @@ Se puede usar la utilidad de la línea de comandos (*CVCollectionCmd.exe*) del V
 
  **CvCollectionCmd /?**
 
-|Opción|DESCRIPCIÓN|Parámetros|Valores devueltos|
+|Opción|Descripción|Parámetros|Valores devueltos|
 |------------|-----------------|----------------|-------------------|
 |Consulta|Devuelve si la recolección se puede iniciar.|None|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](/dotnet/framework/wcf/samples/etw-tracing) necesarias ya están habilitadas.|
 |Launch|Ejecuta el proceso especificado en el Visualizador de simultaneidad.|Ruta de acceso del archivo ejecutable.|0 si la ejecución se realizó correctamente.<br /><br /> 1 si se ha producido un error en la ejecución porque no se pudo iniciar la aplicación de destino.<br /><br /> 13 si se produjo un error en la ejecución porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|
@@ -61,7 +61,7 @@ Se puede usar la utilidad de la línea de comandos (*CVCollectionCmd.exe*) del V
 ### <a name="configuration-file-tags"></a>Etiquetas del archivo de configuración
  El archivo de configuración está basado en XML. A continuación se muestran las etiquetas y los valores válidos:
 
-| Etiqueta | DESCRIPCIÓN | Valores |
+| Etiqueta | Descripción | Valores |
 |-------------------------| - | - |
 | Configuración | Delimita el archivo de configuración global. | Debe contener estos elementos:<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | Especifica la versión principal del archivo de configuración. | Debe ser 1 para los proyectos de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] . Si no es 1, la utilidad no funcionará. |
@@ -73,7 +73,7 @@ Se puede usar la utilidad de la línea de comandos (*CVCollectionCmd.exe*) del V
 | MarkerProvider | Especifica un proveedor de marcadores único. | Debe contener estos elementos:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Puede contener estos elementos:<br /><br /> -   Categories<br />-   IsEnabled |
 | Nivel | Establece el nivel de importancia de un MarkerProvider. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | GUID | Identificador único global del proveedor de marcadores ETW. | Un GUID. |
-| Name | Especifica la descripción del proveedor de marcadores. | Una cadena. |
+| NOMBRE | Especifica la descripción del proveedor de marcadores. | Una cadena. |
 | Categorías | Especifica las categorías recopiladas por el proveedor de marcadores. | Cadena delimitada por comas de números o intervalos de números. |
 | IsEnabled | Establece un valor que determina si el proveedor de marcadores está habilitado para la recolección. | -   True<br />-   False |
 | FilterConfig | Especifica la lista de opciones de configuración de los eventos ETW que se filtran de la recolección. | Puede contener estos elementos:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

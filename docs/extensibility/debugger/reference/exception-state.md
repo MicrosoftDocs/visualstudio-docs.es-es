@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Microsoft Docs
+title: EXCEPTION_STATE de la casa de la ins Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337688"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736957"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 Especifica el estado de excepción.
 
 ## <a name="syntax"></a>Sintaxis
@@ -76,63 +76,63 @@ public enum enum_EXCEPTION_STATE {
 };
 ```
 
-## <a name="fields"></a>Campos
+## <a name="fields"></a>Fields
 `EXCEPTION_NONE`\
 No se detenga en la excepción.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Se detiene en la primera activación de la excepción. Al describir un evento de excepción, esta marca indica que el evento de excepción es un evento de excepción de primera oportunidad.
+Deténgase en el primer disparo de excepción. Al describir un evento de excepción, esta marca indica que el evento de excepción es un evento de excepción de primera oportunidad.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Se detiene en la segunda activación de la excepción. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de la segunda oportunidad.
+Deténgase en el segundo disparo de excepción. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de segunda oportunidad.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Se detiene en la primera activación de una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de usuario de primera oportunidad.
+Deténgase al activar primero una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de usuario de primera oportunidad.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Deténgase cuando no se detecta una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción del modo de usuario no detectadas.
+Deténgase cuando no se detecta una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de modo de usuario no capturado.
 
 `EXCEPTION_STOP_ALL`\
-Detener en cualquier excepción. No se utiliza para describir un evento de excepción.
+Deténgase en cualquier excepción. No se utiliza al describir un evento de excepción.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Al describir un evento de excepción, indica que no se puede continuar desde la excepción.
+Al describir un evento de excepción, indica que la excepción no se puede continuar desde.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Indica que la excepción tiene código que lo admiten. Usan para mostrar una excepción
+Indica que la excepción tiene código que lo admite. Se utiliza para mostrar una excepción
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Indica que el código de excepción se debe mostrar en formato hexadecimal. Se usan para mostrar una excepción.
+Indica que el código de excepción debe mostrarse en hexadecimal. Se utiliza para mostrar una excepción.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Indica que el código de excepción admite JustMyCode. Se usan para mostrar una excepción.
+Indica que el código de excepción admite JustMyCode. Se utiliza para mostrar una excepción.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Indica que el depurador de código administrado debe controlar las excepciones. Si no conjunto, el depurador predeterminado controla las excepciones. Esto se pasa a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método y no se utiliza en el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura.
+Indica que el depurador de código administrado debe controlar las excepciones. Si no se establece, el depurador predeterminado controla las excepciones. Esto se pasa a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método y no se utiliza en el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura.
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NO USE.
+OBSOLETO, NO UTILIZAR.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NO USE.
+OBSOLETO, NO UTILIZAR.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NO USE.
+OBSOLETO, NO UTILIZAR.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NO USE.
+OBSOLETO, NO UTILIZAR.
 
-## <a name="remarks"></a>Comentarios
-Usar como el `dwState` miembro de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura para indicar el estado de la excepción y lo que puede realizarse sobre él.
+## <a name="remarks"></a>Observaciones
+Se utiliza `dwState` como miembro de la [estructura EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) para indicar el estado de la excepción y lo que se puede hacer al respecto.
 
-Estos valores también se pasan a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método para establecer el estado de todas las excepciones.
+Estos valores también se pasan al método [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) para establecer el estado de todas las excepciones.
 
-Estas marcas se pueden combinar con una operación OR bit a bit.
+Estas banderas pueden combinarse con un quiróctula bit a bit.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

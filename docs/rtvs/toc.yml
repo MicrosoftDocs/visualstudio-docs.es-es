@@ -1,6 +1,6 @@
 - name: Información general
   items:
-    - name: R Tools para Visual Studio
+    - name: Herramientas de R para Visual Studio
       href: index.md
     - name: Carga de trabajo Aplicaciones de ciencia de datos y de análisis
       href: ../python/data-science-and-analytical-applications-workload.md
@@ -8,15 +8,15 @@
   items:
     - name: Instalación
       href: installing-r-tools-for-visual-studio.md
-    - name: Obtener ayuda
+    - name: Ayuda
       href: getting-started-help.md
 - name: Tutoriales
   items:
     - name: Introducción a R
       href: getting-started-with-r.md
-- name: Muestras
+- name: Ejemplos
   href: getting-started-samples.md
-- name: Guías de procedimientos
+- name: Guías paso a paso
   items:
     - name: Proyectos de R
       items:

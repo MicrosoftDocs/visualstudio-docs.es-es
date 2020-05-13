@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::AddPort | Microsoft Docs
+title: IDebugPortSupplier2::AddPort ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 245c14e2aaa6867f964a2beec7bcbc232b5800be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340275"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724742"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Agrega un puerto.
@@ -43,16 +43,16 @@ int AddPort( 
 
 ## <a name="parameters"></a>Parámetros
 `pRequest`\
-[in] Un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) objeto que describe el puerto que se va a agregar.
+[en] Un [Objeto IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) que describe el puerto que se va a agregar.
 
 `ppPort`\
-[out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto.
+[fuera] Devuelve un [objeto IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa el puerto.
 
 ## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+ Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
- Este método crea realmente el puerto solicitado, así como éste se agrega a la lista interna del proveedor de puerto de puertos activos. El [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) método puede llamarse en primer lugar para evitar posibles retrasos que requieren mucho tiempo.
+## <a name="remarks"></a>Observaciones
+ Este método realmente crea el puerto solicitado, así como agregarlo a la lista interna del proveedor de puertos activos. El [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) método se puede llamar primero para evitar posibles retrasos que consumen mucho tiempo.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,5 +1,5 @@
 ---
-title: Usar ensamblados de interoperabilidad de Visual Studio | Microsoft Docs
+title: Uso de ensamblados de interoperabilidad de Visual Studio ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0db6e0e0d5014f09a84316143af40f410bc1b10
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72722100"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704132"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso de ensamblados de interoperabilidad de Visual Studio
-Los ensamblados de interoperabilidad de Visual Studio permiten a las aplicaciones administradas tener acceso a las interfaces COM que proporcionan extensibilidad de Visual Studio. Hay algunas diferencias entre las interfaces COM directas y sus versiones de interoperabilidad. Por ejemplo, los HRESULTs se representan generalmente como valores int y deben administrarse de la misma manera que las excepciones, y los parámetros (especialmente los parámetros out) se tratan de forma diferente.
+Los ensamblados de interoperabilidad de Visual Studio permiten que las aplicaciones administradas tienen acceso a las interfaces COM que proporcionan extensibilidad de Visual Studio. Hay algunas diferencias entre las interfaces COM rectas y sus versiones de interoperabilidad. Por ejemplo, los HRESULT se representan generalmente como valores int y deben controlarse de la misma manera que las excepciones, y los parámetros (especialmente los parámetros out) se tratan de forma diferente.
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Control de valores HRESULT devueltos al código administrado desde COM
  Cuando se llama a una interfaz COM desde código administrado, se examina el valor HRESULT y se genera una excepción si es necesario. La clase <xref:Microsoft.VisualStudio.ErrorHandler> contiene el método <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, que produce una excepción de COM, dependiendo del valor HRESULT que se pasa.
@@ -28,7 +28,7 @@ Los ensamblados de interoperabilidad de Visual Studio permiten a las aplicacione
  De forma predeterminada, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> generará una excepción siempre que se pase un valor HRESULT menor que cero. En los casos en los que los valores HRESULT sean aceptables y no se generen excepciones, los valores HRESULT adicionales deben pasarse a <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> después de probarlos. Si el valor HRESULT que se está probando coincide con los valores HRESULT pasados explícitamente a <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, no se generará ninguna excepción.
 
 > [!NOTE]
-> La clase <xref:Microsoft.VisualStudio.VSConstants> contiene constantes para los valores HRESULT comunes, por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> y <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, y [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTs, por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> y <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> también proporciona los métodos <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> y <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, que corresponden a las macros SUCCEEDED y FAILED en COM.
+> La <xref:Microsoft.VisualStudio.VSConstants> clase contiene constantes para HRESULTS <xref:Microsoft.VisualStudio.VSConstants.S_OK> <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>comunes, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> y <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>, y HRESULTS, por ejemplo, y . <xref:Microsoft.VisualStudio.VSConstants> también proporciona los métodos <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> y <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, que corresponden a las macros SUCCEEDED y FAILED en COM.
 
  Por ejemplo, considere la siguiente llamada de función, en el que <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> es un valor devuelto aceptable, pero cualquier otro valor HRESULT menor que cero representa un error.
 
@@ -48,17 +48,17 @@ Los ensamblados de interoperabilidad de Visual Studio permiten a las aplicacione
 > [!NOTE]
 > Las excepciones afectan al rendimiento y están destinadas para indicar condiciones del programa anormales. Las condiciones que se producen con frecuencia deben controlarse en línea, en lugar de generar una excepción.
 
-## <a name="iunknown-parameters-passed-as-type-void"></a>Parámetros IUnknown pasados como tipo void * *
- Busque los parámetros [out] definidos como tipos `void **` en la interfaz COM, pero que se definen como `[``iid_is``]` en el prototipo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] método de ensamblado de interoperabilidad.
+## <a name="iunknown-parameters-passed-as-type-void"></a>Parámetros IUnknown pasados como Type void**
+ Busque parámetros [out] que `void **` se definen como tipo en `[``iid_is``]` la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz COM, pero que se definen como en el prototipo del método de ensamblado de interoperabilidad.
 
- A veces, una interfaz COM genera un objeto `IUnknown` y la interfaz COM lo pasa como tipo `void **`. Estas interfaces son especialmente importantes porque si la variable se define como [out] en el IDL, el objeto de `IUnknown` se cuenta como referencia con el método `AddRef`. Si el objeto no se controla correctamente, se produce una fuga de memoria.
+ A veces, una `IUnknown` interfaz COM genera un objeto `void **`y, a continuación, la interfaz COM lo pasa como tipo . Estas interfaces son especialmente importantes porque si la variable se define `IUnknown` como [out] en `AddRef` el IDL, el objeto se cuenta como referencia con el método. Se produce una pérdida de memoria si el objeto no se controla correctamente.
 
 > [!NOTE]
-> Un objeto `IUnknown` creado por la interfaz COM y devuelto en una variable [out] produce una fuga de memoria si no se libera explícitamente.
+> Un `IUnknown` objeto creado por la interfaz COM y devuelto en una variable [out] provoca una pérdida de memoria si no se libera explícitamente.
 
- Los métodos administrados que controlan estos objetos deben tratar <xref:System.IntPtr> como un puntero a un objeto `IUnknown` y llamar al método <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> para obtener el objeto. A continuación, el llamador debe convertir el valor devuelto a cualquier tipo que sea adecuado. Cuando el objeto ya no sea necesario, llame a <xref:System.Runtime.InteropServices.Marshal.Release%2A> para liberarlo.
+ Los métodos administrados <xref:System.IntPtr> que controlan `IUnknown` estos objetos <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> deben tratar como un puntero a un objeto y llamar al método para obtener el objeto. A continuación, el autor de la llamada debe convertir el valor devuelto al tipo que sea adecuado. Cuando el objeto ya <xref:System.Runtime.InteropServices.Marshal.Release%2A> no sea necesario, llame para liberarlo.
 
- El siguiente es un ejemplo de cómo llamar al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> y controlar correctamente el objeto `IUnknown`:
+ A continuación se muestra <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> un ejemplo `IUnknown` de llamada al método y controlar el objeto correctamente:
 
 ```
 MyClass myclass;
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
-> Se sabe que los siguientes métodos pasan `IUnknown` punteros de objeto como <xref:System.IntPtr> de tipo. Controlarlas tal y como se describe en esta sección.
+> Se sabe que los `IUnknown` métodos siguientes <xref:System.IntPtr>pasan punteros de objeto como tipo . Manéjalos como se describe en esta sección.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -99,36 +99,36 @@ else
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
-## <a name="optional-out-parameters"></a>Parámetros opcionales [out]
- Busque los parámetros que se definen como un tipo de datos [out] (`int`, `object`, etc.) en la interfaz COM, pero que se definen como matrices del mismo tipo de datos en el prototipo de método de ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+## <a name="optional-out-parameters"></a>Parámetros [out] opcionales
+ Busque parámetros que se definen como`int`un `object`tipo de datos [out] ( , , etc.) en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz COM, pero que se definen como matrices del mismo tipo de datos en el prototipo del método de ensamblado de interoperabilidad.
 
- Algunas interfaces COM, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, trata los parámetros [out] como opcionales. Si un objeto no es necesario, estas interfaces COM devuelven un puntero `null` como el valor de ese parámetro en lugar de crear el objeto [out]. Esto es intencionado. Para estas interfaces, se supone `null` punteros como parte del comportamiento correcto del VSPackage y no se devuelve ningún error.
+ Algunas interfaces COM, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, tratan los parámetros [out] como opcionales. Si no se requiere un objeto, `null` estas interfaces COM devuelven un puntero como el valor de ese parámetro en lugar de crear el objeto [out]. es así por diseño. Para estas interfaces, `null` los punteros se asumen como parte del comportamiento correcto del VSPackage y no se devuelve ningún error.
 
- Dado que CLR no permite que se `null` el valor de un parámetro [out], parte del comportamiento diseñado de estas interfaces no está directamente disponible en el código administrado. Los métodos de ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para las interfaces afectadas solucionan el problema definiendo los parámetros pertinentes como matrices, ya que CLR permite el paso de matrices de `null`.
+ Dado que CLR no permite que el valor `null`de un parámetro [out] sea , parte del comportamiento diseñado de estas interfaces no está disponible directamente en el código administrado. Los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] métodos de ensamblado de interoperabilidad para las interfaces afectadas solucionan el `null` problema definiendo los parámetros relevantes como matrices porque CLR permite el paso de matrices.
 
- Las implementaciones administradas de estos métodos deben colocar una matriz de `null` en el parámetro cuando no hay nada que devolver. De lo contrario, cree una matriz de un solo elemento del tipo correcto y coloque el valor devuelto en la matriz.
+ Las implementaciones administradas de `null` estos métodos deben colocar una matriz en el parámetro cuando no hay nada que devolver. De lo contrario, cree una matriz de un elemento del tipo correcto y coloque el valor devuelto en la matriz.
 
- Los métodos administrados que reciben información de interfaces con parámetros [out] opcionales reciben el parámetro como una matriz. Simplemente examine el valor del primer elemento de la matriz. Si no se `null`, trate el primer elemento como si fuera el parámetro original.
+ Los métodos administrados que reciben información de interfaces con parámetros [out] opcionales reciben el parámetro como una matriz. Simplemente examine el valor del primer elemento de la matriz. Si no `null`es así, trate el primer elemento como si fuera el parámetro original.
 
 ## <a name="passing-constants-in-pointer-parameters"></a>Pasar constantes en parámetros de puntero
- Busque los parámetros que se definen como [in] punteros en la interfaz COM, pero que se definen como <xref:System.IntPtr> tipo en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo de método de ensamblado de interoperabilidad.
+ Busque parámetros que se definen como punteros [in] en <xref:System.IntPtr> la interfaz COM, pero que se definen como un tipo en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del método de ensamblado de interoperabilidad.
 
- Un problema similar se produce cuando una interfaz COM pasa un valor especial, como 0,-1 o-2, en lugar de un puntero de objeto. A diferencia de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], CLR no permite convertir constantes como objetos. En su lugar, el ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] define el parámetro como un tipo de <xref:System.IntPtr>.
+ Un problema similar se produce cuando una interfaz COM pasa un valor especial, como 0, -1 o -2, en lugar de un puntero de objeto. A [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]diferencia de , CLR no permite que las constantes se conviertan como objetos. En su [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lugar, el ensamblado <xref:System.IntPtr> de interoperabilidad define el parámetro como un tipo.
 
- Las implementaciones administradas de estos métodos deben aprovechar el hecho de que la clase <xref:System.IntPtr> tiene constructores `int` y `void *` para crear un <xref:System.IntPtr> a partir de un objeto o una constante de tipo entero, según corresponda.
+ Las implementaciones administradas de estos métodos <xref:System.IntPtr> deben `int` aprovechar `void *` el hecho <xref:System.IntPtr> de que la clase tiene ambos y constructores para crear un a partir de un objeto o una constante entera, según corresponda.
 
- Los métodos administrados que reciben <xref:System.IntPtr> parámetros de este tipo deben usar los operadores de conversión de tipos <xref:System.IntPtr> para controlar los resultados. En primer lugar, convierta el <xref:System.IntPtr> en `int` y pruébelo con constantes de tipo entero relevantes. Si no hay valores coincidentes, conviértalo en un objeto del tipo necesario y continúe.
+ Los métodos <xref:System.IntPtr> administrados que reciben parámetros de este tipo deben usar los <xref:System.IntPtr> operadores de conversión de tipos para controlar los resultados. Primero convierta <xref:System.IntPtr> `int` el a y pruébelo con constantes enteras relevantes. Si no coincide ningún valor, conviértalo en un objeto del tipo requerido y continúe.
 
- Para obtener ejemplos de esto, vea <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.
+ Para ver ejemplos <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>esto, vea y .
 
-## <a name="ole-return-values-passed-as-out-parameters"></a>Valores devueltos por OLE que se pasan como parámetros [out]
- Busque métodos que tengan un `retval` valor devuelto en la interfaz COM, pero que tengan una `int` valor devuelto y un parámetro de matriz [out] adicional en el prototipo de método de ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Debe estar claro que estos métodos requieren un tratamiento especial porque los prototipos de método de ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tienen un parámetro más que los métodos de interfaz COM.
+## <a name="ole-return-values-passed-as-out-parameters"></a>Valores de valor devuelto OLE pasados como parámetros [out]
+ Busque métodos que `retval` tengan un valor devuelto en `int` la interfaz COM, pero que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tengan un valor devuelto y un parámetro de matriz [out] adicional en el prototipo del método de ensamblado de interoperabilidad. Debe quedar claro que estos métodos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requieren un control especial porque los prototipos del método de ensamblado de interoperabilidad tienen un parámetro más que los métodos de interfaz COM.
 
- Muchas interfaces COM que se ocupan de la actividad OLE envían información sobre el estado de OLE al programa que realiza la llamada almacenado en el `retval` valor devuelto de la interfaz. En lugar de usar un valor devuelto, los métodos de ensamblado de interoperabilidad [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] correspondientes envían la información al programa que realiza la llamada almacenado en un parámetro de matriz [out].
+ Muchas interfaces COM que tratan con la actividad OLE envían información `retval` sobre el estado OLE al programa de llamada almacenado en el valor devuelto de la interfaz. En lugar de usar un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] valor devuelto, los métodos de ensamblado de interoperabilidad correspondientes devuelven la información al programa que realiza la llamada almacenado en un parámetro de matriz [out].
 
- Las implementaciones administradas de estos métodos deben crear una matriz de un solo elemento del mismo tipo que el parámetro [out] y colocarlo en el parámetro. El valor del elemento de la matriz debe ser el mismo que el `retval` COM adecuado.
+ Las implementaciones administradas de estos métodos deben crear una matriz de un solo elemento del mismo tipo que el parámetro [out] y colocarla en el parámetro. El valor del elemento de matriz debe `retval`ser el mismo que el COM adecuado.
 
- Los métodos administrados que llaman a interfaces de este tipo deben extraer el primer elemento de la matriz [out]. Este elemento se puede tratar como si fuera una `retval` valor devuelto de la interfaz COM correspondiente.
+ Los métodos administrados que llaman a interfaces de este tipo deben extraer el primer elemento de la matriz [out]. Este elemento se puede tratar `retval` como si fuera un valor devuelto de la interfaz COM correspondiente.
 
 ## <a name="see-also"></a>Vea también
-- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)
+- [Interoperar con código no administrado](/dotnet/framework/interop/index)

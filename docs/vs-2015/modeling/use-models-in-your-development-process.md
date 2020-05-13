@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
+ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852179"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82586363"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos. Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
+En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Consulte [vídeo de Channel 9: mejora de la arquitectura a través del modelado](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -50,7 +50,7 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 ### <a name="use-models-with-other-artifacts"></a>Usar modelos con otros artefactos
  Un modelo no constituye por sí mismo una arquitectura ni una especificación de requisitos. Es una herramienta que permite expresar algunos aspectos de estos elementos con mayor claridad, pero no se pueden expresar todos los conceptos que se requieren durante el diseño de software. Los modelos, por tanto, deben usarse con otros medios de comunicación, como páginas o párrafos de OneNote, documentos de Microsoft Office, elementos de trabajo de [!INCLUDE[esprfound](../includes/esprfound-md.md)] o notas adhesivas en la pared de la sala del proyecto. A excepción de este último, todos estos tipos de objetos pueden vincularse a elementos del modelo.
 
- A continuación se enumeran otros aspectos de especificación que se usan habitualmente con los modelos. En función de la escala y el estilo del proyecto, podrá usar varios o ninguno de estos aspectos:
+ A continuación se enumeran otros aspectos de especificación que se usan habitualmente con los modelos. En función de la escala y el estilo del proyecto, podrá usar varios o ninguno de estos aspectos: 
 
 - Casos de usuario. Un caso de usuario es una descripción breve, que se analiza con los usuarios y demás participantes, de un aspecto del comportamiento del sistema que se proporcionará en una de las iteraciones del proyecto. Un caso de usuario típico comienza por “El cliente podrá...”. Un caso de usuario puede presentar un grupo de casos de uso o puede definir extensiones de casos de uso que se desarrollaron previamente. Si se definen o amplían casos de uso, el caso de usuario resulta más claro.
 
@@ -111,7 +111,7 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 #### <a name="estimate-remaining-work"></a>Calcular el trabajo restante
  Un modelo de requisitos puede ayudar a calcular el tamaño total del proyecto frente al tamaño de cada iteración. Evaluar el número y la complejidad de los casos de uso y las clases puede ayudar a calcular el trabajo de desarrollo que será necesario. Después de completar las primeras iteraciones, una comparación de los requisitos cubiertos y de los requisitos que quedan por cubrir puede proporcionar una idea aproximada del costo y el ámbito del resto del proyecto.
 
- Cuando se acerque el final de cada iteración, revise la asignación de requisitos a futuras iteraciones. Quizás le resulte útil representar el estado del software al final de cada iteración como un subsistema en un diagrama de casos de uso. En las conversaciones, puede mover los casos de uso y las extensiones de casos de uso de estos subsistemas a otros.
+ Cuando se acerque el final de cada iteración, revise la asignación de requisitos a futuras iteraciones. Quizás le resulte útil representar el estado del software al final de cada iteración como un subsistema en un diagrama de casos de uso. En las conversaciones, puede mover los casos de uso y las extensiones de casos de uso de estos subsistemas a otros. 
 
 ## <a name="levels-of-abstraction"></a>Niveles de abstracción
  El nivel de abstracción de los modelos varía en función del software. Los modelos más concretos representan directamente el código del programa y los modelos más abstractos representan conceptos del negocio que pueden o no estar representados en el código.
@@ -122,20 +122,20 @@ En Visual Studio puede usar un modelo para que le ayude a comprender y modificar
 
 |Nivel de diseño|Tipos de diagramas|
 |------------------|-------------------|
-|Proceso empresarial<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de actividades describen el flujo de trabajo entre las personas y los sistemas para lograr los objetivos empresariales.<br />-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
+|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Los diagramas de actividades describen el flujo de trabajo entre las personas y los sistemas para lograr los objetivos empresariales.<br />-Los diagramas de clases conceptuales describen los conceptos empresariales utilizados en el proceso empresarial.|
 |Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Los diagramas de casos de uso resumen las interacciones que los usuarios y otros sistemas externos tienen con el sistema que está desarrollando. Puede adjuntar otros documentos a cada caso de uso para describirlo en detalle.<br />-Los diagramas de clases de UML describen los tipos de información sobre los que los usuarios y el sistema se comunican.<br />-Las reglas de negocios y los requisitos de calidad de servicio se pueden describir en documentos independientes.|
 |Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|: Los diagramas de capas describen cómo se estructura el sistema en partes interdependientes. Puede validar el código del programa con los diagramas de capas para asegurarse de que respetan la arquitectura.<br />-Los diagramas de componentes muestran las interfaces de los elementos, especificando los mensajes y servicios que cada componente proporciona y requiere.<br />-Los diagramas de secuencia muestran cómo se comunican los componentes para implementar cada caso de uso.<br />-Los diagramas de clases de UML describen las interfaces de los componentes y los tipos de datos que se pasan entre los componentes.|
-|Modelos de diseño<br /><br /> Convenciones y métodos para problemas de diseño que se usan en todos los elementos del diseño.|-Los diagramas de clases de UML describen las estructuras de un patrón<br />-Los diagramas de secuencia o de actividades muestran las interacciones y los algoritmos|
+|Patrones de diseño<br /><br /> Convenciones y métodos para problemas de diseño que se usan en todos los elementos del diseño.|-Los diagramas de clases de UML describen las estructuras de un patrón<br />-Los diagramas de secuencia o de actividades muestran las interacciones y los algoritmos|
 |Análisis de código<br /><br /> Se pueden generar varios tipos de diagrama a partir del código.|-Los diagramas de secuencia muestran la interacción entre los objetos del código.<br />: Los diagramas de capas muestran las dependencias entre las clases. El código actualizado se puede validar con un diagrama de capas.<br />-Los diagramas de clases muestran las clases del código.|
 
 ## <a name="external-resources"></a>Recursos externos
 
-|**Categoría**|**Links**|
+|**Categoría**|**Vínculos**|
 |------------------|---------------|
 |**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [vídeos de procedimientos de MSDN: Cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![vínculo al canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML con Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [sobre la serie de procedimientos de MSDN: extensibilidad y herramientas UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
-|**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Orientación para las herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
+|**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Usar modelos en desarrollo ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [crear modelos para los](../modeling/create-models-for-your-app.md) [requisitos de usuario del modelo](../modeling/model-user-requirements.md) de aplicación [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md) [desarrollar pruebas a partir de una](../modeling/develop-tests-from-a-model.md) estructura de modelo de [la solución de modelado](../modeling/structure-your-modeling-solution.md)

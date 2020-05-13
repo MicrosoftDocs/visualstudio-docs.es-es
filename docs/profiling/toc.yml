@@ -24,6 +24,8 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guías de procedimientos
   items:
+    - name: Usar PerfTips
+      href: perftips.md
     - name: Uso de CPU
       href: cpu-usage.md
     - name: Uso de memoria
@@ -32,18 +34,16 @@
           href: analyze-memory-usage.md
         - name: Analizar el uso de memoria para objetos .NET
           href: dotnet-alloc-tool.md
-        - name: Eventos de montón ETW nativos personalizados
-          href: custom-native-etw-heap-events.md
         - name: Uso de memoria sin el depurador
           href: memory-usage-without-debugging2.md
+        - name: Eventos de montón ETW nativos personalizados
+          href: custom-native-etw-heap-events.md
     - name: Medición del rendimiento desde la línea de comandos
       href: profile-apps-from-command-line.md
     - name: Analizar el uso de la GPU
       href: gpu-usage.md
     - name: Analizar el uso de recursos
       href: application-timeline.md
-    - name: Usar PerfTips
-      href: perftips.md
     - name: Analizar el uso de la red
       href: network-usage.md
     - name: Analizar la memoria de JavaScript

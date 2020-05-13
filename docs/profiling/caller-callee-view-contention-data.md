@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779745"
 ---
 # <a name="callercallee-view----contention-data"></a>Vista Llamador y destinatario: datos de contención
@@ -27,7 +27,7 @@ La vista Llamador y destinatario muestra información de contención para una fu
 
  **Funciones llamadas por la función actual** se muestra en la cuadrícula inferior e incluye información de contención para las funciones de destinatario (secundarias) de la función seleccionada cuando la función actual llamó a la función secundaria.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |------------|-----------------|
 |**Type**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|
 |**Tiempo de bloqueo exclusivo**|-En la función actual, el tiempo durante el cual esta función no pudo ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />- En una función de llamador, la parte del tiempo de bloqueo exclusivo de la función actual que transcurrió cuando esta función llamó a la función actual.<br />-En una función de destinatario, el tiempo durante el cual esta función no pudo ejecutar su propio código cuando la función actual llamó a esta función. No se incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función de destinatario.|

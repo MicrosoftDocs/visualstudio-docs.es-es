@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72911192"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
@@ -121,7 +121,7 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
 
 ## <a name="see-also"></a>Vea también
 
-|Title|DESCRIPCIÓN|
+|Title|Descripción|
 |-----------|-----------------|
 |[Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|
 |[Referencia de la biblioteca C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|

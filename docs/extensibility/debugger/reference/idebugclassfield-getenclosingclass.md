@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass | Microsoft Docs
+title: IDebugClassField::GetEnclosingClass ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6927a63241e2f2794fb5c70945962e00a1676431
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329499"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734396"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Obtiene la clase que contiene esta clase.
+Obtiene la clase que encierra esta clase.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Parámetros
 `ppClassField`\
-[out] Devuelve un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) la clase de objeto que representa el envolvente. Devuelve un valor null si no hay ninguna clase envolvente.
+[fuera] Devuelve un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa la clase envolvente. Devuelve un valor null si no hay ninguna clase envolvente.
 
 ## <a name="return-value"></a>Valor devuelto
-Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.
+Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.
 
-## <a name="remarks"></a>Comentarios
-Si la clase representada por este [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto es una clase anidada, la `ppClassField` parámetro devuelve un `IDebugClassField` clase de objeto que representa el envolvente. Por ejemplo, dada esta definición de clase:
+## <a name="remarks"></a>Observaciones
+Si la clase representada por este [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto `ppClassField` es una `IDebugClassField` clase anidada, a continuación, el parámetro devuelve un objeto que representa la clase envolvente. Por ejemplo, dada esta definición de clase:
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Una llamada a la `GetEnclosingClass` método en el `IDebugClassField` objeto que representa el `NestedClass` clase devuelve una `IDebugClassField` objeto que representa la clase `RootClass`.
+Al `GetEnclosingClass` llamar al `IDebugClassField` método `NestedClass` en el `IDebugClassField` objeto que `RootClass`representa la clase devuelve un objeto que representa la clase .
 
 ## <a name="see-also"></a>Vea también
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

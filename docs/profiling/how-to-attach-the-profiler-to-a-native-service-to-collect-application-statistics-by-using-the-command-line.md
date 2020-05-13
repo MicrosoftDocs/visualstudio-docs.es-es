@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 00f0d3cedf2ef1875d93f7706f7cfa48a8b6b274
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779095"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio nativo para recopilar estadísticas de aplicación mediante la línea de comandos
@@ -39,7 +39,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
 3. Inicie el generador de perfiles. Tipo:
 
-    **VSPerfCmd /start:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+    **VSPerfCmd /start:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - La opción **/start:sample** inicializa el generador de perfiles.
 
@@ -50,7 +50,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
    > [!NOTE]
    > Normalmente, las opciones **/user** y **/crosssession** son necesarias para servicios.
 
-   | Opción | DESCRIPCIÓN |
+   | Opción | Descripción |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
@@ -66,7 +66,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
     De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos. Esto equivale aproximadamente a una vez cada 10 segundos en un procesador de 1 GHz. Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj o especificar otro evento de muestreo.
 
-   |Evento de muestreo|DESCRIPCIÓN|
+   |Evento de muestreo|Descripción|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo al número de ciclos de reloj no detenidos especificado en `Interval`.|
    |[/pf](../profiling/pf.md)[ **:** `Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|
@@ -80,14 +80,14 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
 - Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso o por el nombre de proceso. **/detach** detiene la recopilación de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
 
 ## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
- Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar del servicio y se debe apagar explícitamente. Puede desasociar el servicio nativo para el que se está realizando la generación de perfiles con el método de muestreo deteniendo el servicio o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.
+ Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar del servicio y se debe apagar explícitamente. Puede desasociar el servicio nativo para el que se está realizando la generación de perfiles con el método de muestreo deteniendo el servicio o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción **VSPerfCmd** [/shutdown](../profiling/shutdown.md) para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles
 
@@ -95,7 +95,7 @@ En este artículo se describe cómo usar las herramientas de línea de comandos 
 
     - Detenga el servicio.
 
-         O bien
+         o bien
 
     - Escriba **VSPerfCmd /detach**
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68605967"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Cuadro de diálogo Opciones: Editor de texto \> JavaScript/TypeScript \> Linting
@@ -30,7 +30,7 @@ Estas opciones le permiten habilitar el análisis de código estático de JavaSc
 
 ### <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|DESCRIPCIÓN|
+|Opción|Descripción|
 |------------|-----------------|
 |**Habilitar ESLint**|Cuando se selecciona esta opción, el Editor de código permite realizar un análisis estático del código.|
 |**Detectar errores de estilo en todos los archivos del proyecto, incluidos los archivos cerrados**|Cuando se selecciona esta opción, se analizan los archivos cerrados, a menos que solo se informen los diagnósticos de archivos abiertos.|

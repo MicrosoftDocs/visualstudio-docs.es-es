@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984904"
 ---
 # <a name="javascript-and-typescript-support"></a>Compatibilidad con JavaScript y TypeScript
@@ -43,6 +43,6 @@ Javascript IntelliSense en Visual Studio para Mac puede basarse en la inferencia
 
     ![sobre cómo agregar un archivo de definición de TypeScript](media/javascript-image3.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [IntelliSense para JavaScript (Visual Studio en Windows)](/visualstudio/ide/javascript-intellisense)

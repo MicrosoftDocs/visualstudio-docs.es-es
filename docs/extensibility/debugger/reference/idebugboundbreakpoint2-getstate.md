@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
+title: IDebugBoundBreakpoint2::GetState ? Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - GetState method
 - IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d930b1a68b97548c02edd35fa48ef8f3a1935181
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314485"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735474"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Obtiene el estado de este punto de interrupción enlazado.
@@ -42,13 +42,13 @@ int GetState( 
 
 ## <a name="parameters"></a>Parámetros
 `pState`\
-[out] Devuelve un valor de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración que describe el estado del punto de interrupción.
+[fuera] Devuelve un valor de la [enumeración BP_STATE](../../../extensibility/debugger/reference/bp-state.md) que describe el estado del punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
-Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
 
 ## <a name="example"></a>Ejemplo
-El ejemplo siguiente muestra cómo implementar este método para una sencilla `CBoundBreakpoint` objeto que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
+En el ejemplo siguiente se muestra `CBoundBreakpoint` cómo implementar este método para un objeto simple que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)

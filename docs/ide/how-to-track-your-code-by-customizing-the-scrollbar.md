@@ -1,20 +1,20 @@
 ---
 title: Modo Mapa y modo Barra de la barra de desplazamiento
-ms.date: 09/25/2018
+ms.date: 03/20/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c66cda1b90d11a44f744faf0012a3e41212d33dd
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591403"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79988563"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Personalización de la barra de desplazamiento
+# <a name="how-to-customize-the-scroll-bar"></a>Procedimiento Personalizar la barra de desplazamiento
 
 Al trabajar con archivos de código largo, puede ser difícil llevar la cuenta de todo lo que está en el archivo. Puede personalizar la barra de desplazamiento del editor de código para tener una visión general de lo que sucede en el código.
 
@@ -54,7 +54,7 @@ El *modo Barra* muestra indicadores de anotación en la barra de desplazamiento.
 
 ### <a name="map-mode"></a>Modo Mapa
 
-En el *modo Mapa*, cuando hace clic en una ubicación de la barra de desplazamiento, el cursor salta a esa ubicación en el archivo en lugar de solo desplazarse hacia arriba o hacia abajo de una página. En la barra desplazamiento se muestran líneas de código en miniatura. Puede elegir el ancho de la columna del mapa si selecciona un valor en **Información general del código fuente**. Para habilitar una vista previa más grande del código cuando deja el puntero en el mapa, seleccione la opción **Mostrar información sobre herramientas de la vista previa**. Las zonas contraídas están sombreadas de manera diferente y se expanden cuando se hace doble clic en ellas.
+El *modo Mapa* muestra líneas de código en miniatura en la barra de desplazamiento. Puede elegir el ancho de la columna del mapa si selecciona un valor en **Información general del código fuente**. Para habilitar una vista previa más grande del código cuando deja el puntero en el mapa, seleccione la opción **Mostrar información sobre herramientas de la vista previa**. Las zonas contraídas están sombreadas de manera diferente y se expanden cuando se hace doble clic en ellas.
 
 > [!TIP]
 > Para desactivar la vista de código en miniatura en el mapa, establezca **Información general del código fuente** en **Off**. Si se selecciona **Mostrar información sobre herramientas de la vista previa**, seguirá viendo una vista previa del código en esa ubicación cuando mantenga el puntero del mouse sobre la barra de desplazamiento y el cursos seguirá saltando a esa ubicación en el archivo cuando se haga clic.
@@ -66,6 +66,9 @@ En la imagen siguiente se muestra el ejemplo de búsqueda cuando el modo Mapa es
 En la imagen siguiente se muestra la opción **Mostrar información sobre herramientas de la vista previa**:
 
 ![Barra de desplazamiento de Visual Studio con información sobre herramientas](../ide/media/enhancedscrollbarsearchtooltip.png)
+
+> [!TIP]
+> Para cambiar los colores que se ven en el modo mapa, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores**. Después, en **Mostrar los elementos**, elija cualquiera de los elementos precedidos por "Información general", realice los cambios de color que quiera y, luego, elija **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

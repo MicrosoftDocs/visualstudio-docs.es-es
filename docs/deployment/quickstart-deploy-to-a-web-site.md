@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "71127929"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publique una aplicación web en un sitio web mediante Visual Studio
@@ -36,17 +36,17 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **IIS, FTP, etc.**
 
-    ![Elección de IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "Choose IIS, FTP, etc.")
+    ![Elección de IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "Elección de IIS, FTP, etc.")
 
 1. Seleccione **Publicar**. Se abre el cuadro de diálogo de configuración de perfil de publicación.
 
-    ![Selección de Carpeta](../deployment/media/quickstart-publish-settings-web.png "Choose Folder")
+    ![Elección de carpeta](../deployment/media/quickstart-publish-settings-web.png "Elección de carpeta")
 
 1. En el campo **Método de publicación**, elija un método como **Web Deploy** o **FTP**. La configuración que se ve a continuación corresponde al método de publicación. Web Deploy simplifica la implementación de aplicaciones web y sitios web en servidores IIS y debe instalarse como una aplicación en el servidor. Use el [Instalador de plataformaweb](https://www.microsoft.com/web/downloads/platform.aspx) para instalarlo.
 
 1. Configure las opciones necesarias del método de publicación y seleccione **Validar conexión**. Si el servidor o el destino está disponible y la configuración es correcta, aparece un mensaje que indica que la conexión se ha validado y ya está listo para publicar.
 
-    ![Validación de la conexión](../deployment/media/quickstart-publish-web-deploy.png "Validate your connection")
+    ![Validación de la conexión](../deployment/media/quickstart-publish-web-deploy.png "Validación de la conexión")
 
 1. Seleccione **Configuración** para configurar otras opciones de implementación, como si se va a implementar una configuración de depuración o versión y seleccione **Guardar**. Si está depurando de forma remota, se requiere una configuración de depuración.
 

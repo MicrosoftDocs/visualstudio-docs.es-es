@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74775365"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria mediante la línea de comandos
@@ -49,25 +49,25 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.
 
-   | Opción | DESCRIPCIÓN |
+   | Opción | Descripción |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
 
 3. Inicie la aplicación de destino. Tipo:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd** [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
    - La opción [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` es necesaria para recopilar datos de memoria de .NET Framework. El parámetro de palabra clave especifica si se recopilan datos de asignación de memoria o si se recopilan tanto datos de asignación de memoria como datos de duración de objetos.
 
-     |Palabra clave|DESCRIPCIÓN|
+     |Palabra clave|Descripción|
      |-------------|-----------------|
      |**allocation**|Solo recopila datos de asignación de memoria.|
      |**lifetime**|Recopila datos de asignación de memoria y datos de duración de objetos.|
 
      Puede usar cualquiera de las siguientes opciones con la opción **/launch**.
 
-   |Opción|DESCRIPCIÓN|
+   |Opción|Descripción|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica una cadena que contiene los argumentos de la línea de comandos que se van a pasar a la aplicación de destino.|
    |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|
@@ -81,7 +81,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|DESCRIPCIÓN|
+    |Opción|Descripción|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
@@ -98,7 +98,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     - Cierre la aplicación de destino.
 
-         O bien
+         o bien
 
     - Escriba **VSPerfCmd /detach**
 

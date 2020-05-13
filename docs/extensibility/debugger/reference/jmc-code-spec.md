@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC | Microsoft Docs
+title: JMC_CODE_SPEC Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339261"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714738"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
-Esta estructura se usa para establecer la información de JustMyCode de un módulo.
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
+Esta estructura se utiliza para establecer la información de JustMyCode para un módulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,18 +43,18 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Miembros
 `fIsUserCode`\
-Distinto de cero (`TRUE`) si el módulo es para considerarse código de usuario; de lo contrario, es cero (`FALSE`) si el módulo se tratarán como código externo y no va a depurar.
+Distinto de`TRUE`cero ( ) si el módulo debe considerarse código de usuario; de lo`FALSE`contrario, cero ( ) si el módulo debe tratarse como código externo y no se va a depurar.
 
 `bstrModuleName`\
 Nombre del módulo en cuestión.
 
-## <a name="remarks"></a>Comentarios
-Esta estructura se pasa como una lista de estas estructuras para el [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) método.
+## <a name="remarks"></a>Observaciones
+Esta estructura se pasa como una lista de estas estructuras a la [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) método.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: msdbg.h
 
-Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 
