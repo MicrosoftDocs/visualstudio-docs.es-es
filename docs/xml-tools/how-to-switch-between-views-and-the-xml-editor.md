@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: cambiar entre las vistas y el editor XML'
+title: Procedimiento Cambio entre las vistas y el Editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -10,29 +10,29 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592637"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Cómo: cambiar entre las vistas y el editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedimiento Cambio entre las vistas y el editor XML
 
-En este tema se muestra cómo cambiar entre las vistas del diseñador de esquemas XML (diseñador XSD) y el editor XML. En este ejemplo se utiliza el [esquema del pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md).
+En este tema se muestra cómo pasar de las vistas del Diseñador de esquemas XML (Diseñador XSD) al Editor XML. En este ejemplo se utiliza el [Esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md).
 
-## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para cambiar entre las vistas y el editor XML
+## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para pasar de las vistas al Editor XML
 
-1. Para crear y editar un nuevo archivo de esquema XML, siga los pasos descritos en [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Para crear y modificar un archivo de Esquema XML nuevo, siga los pasos indicados en [ Creación y edición de un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Para cambiar al diseñador de esquemas XML desde el editor XML, haga clic con el botón secundario en cualquier parte del editor XML y seleccione **Diseñador de vistas**.
+2. Para pasar al Diseñador de esquemas XML desde el Editor XML, haga clic con el botón derecho en cualquier parte del Editor XML y seleccione **Diseñador de vistas**.
 
-3. Para cambiar a la vista Gráfico con la marca de agua, haga clic en la **vista usar el gráfico para ver la relación entre el** vínculo de los nodos de la vista Inicio.
+3. Para pasar a la vista Gráfico utilizando la marca de agua, haga clic en el vínculo **Usar la vista Gráfico para ver las relaciones entre los nodos** en la vista Inicio.
 
-4. Arrastre el nodo `USAddress` desde el **Explorador de esquemas XML** hasta la vista gráfico. Haga clic con el botón secundario en el nodo `USAddress` de la vista gráfico y seleccione **Mostrar en la vista modelo de contenido** en el menú contextual.
+4. Arrastre el nodo `USAddress` desde el **Explorador de esquemas XML** a la vista Gráfico. Haga clic con el botón derecho en el nodo `USAddress` en la vista Gráfico y seleccione **Mostrar en la vista Modelo de contenido** en el menú contextual.
 
      Aparece la vista Modelo de contenido con los detalles del nodo `USAddress`.
 
-5. Para cambiar a la vista inicio desde la vista modelo de contenido mediante la barra de herramientas, haga clic en el botón **iniciar vista** de la barra de herramientas xsd.
+5. Para cambiar a la vista Inicio desde la vista Modelo de contenido con la barra de herramientas, haga clic en el botón de la **vista Inicio** en la barra de herramientas XSD.
 
-6. Para alternar entre las vistas mediante las teclas de inicio de teclas, presione **ctrl**+**1** para la vista Inicio, **Ctrl**+**2** para la vista gráfico y **Ctrl**+**3** para la vista modelo de contenido.
+6. Para pasar de una vista a otra con las teclas de acceso rápido, presione **Ctrl**+**1** para la vista Inicio, **Ctrl**+**2** para la vista Gráfico y **Ctrl**+**3**, para la vista Modelo de contenido.
 
-7. Para ir al editor XML desde la vista modelo de contenido, haga clic con el botón secundario en el nodo y seleccione **Ver código** en el menú contextual.
+7. Para ir al Editor XML en la vista Modelo de contenido, haga clic con el botón derecho en el nodo y seleccione **Ver código** en el menú contextual.

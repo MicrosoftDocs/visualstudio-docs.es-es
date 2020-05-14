@@ -1,5 +1,5 @@
 ---
-title: Depurar un control WebView (UWP) | Microsoft Docs
+title: Depuración de un control WebView (UWP) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188660"
 ---
-# <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar un control WebView en una aplicación para UWP
+# <a name="debug-a-webview-control-in-a-uwp-app"></a>Depuración de un control WebView en una aplicación para UWP
 
- Para inspeccionar y depurar controles `WebView` en una aplicación de Windows en tiempo de ejecución, puede configurar Visual Studio de modo que adjunte el depurador de script al iniciar la aplicación. Tiene dos maneras de interactuar con los controles de `WebView` mediante el depurador:
+ Para inspeccionar y depurar controles `WebView` en una aplicación de Windows en tiempo de ejecución, puede configurar Visual Studio de modo que adjunte el depurador de script al iniciar la aplicación. Tiene dos maneras de interactuar con los controles de `WebView` con el depurador:
 
 - Abrir el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md) de una instancia `WebView`, inspeccionar los elementos DOM, investigar los problemas de estilo CSS y probar los cambios presentados de forma dinámica de los estilos.
 
@@ -37,7 +37,7 @@ ms.locfileid: "73188660"
 
 3. Elija **Depurar**. En la lista **Proceso de aplicación**, elija **Script**.
 
-     ![Adjuntar el depurador de script](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
+     ![Adjuntar el depurador de scripts](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
 4. (Opcional) En las versiones de Visual Studio que no sean Express, deshabilite la depuración justo a tiempo (JIT) eligiendo **Herramientas, Opciones, Depuración, Just-In-Time** y deshabilitando a continuación la depuración JIT para Script.
 
@@ -56,11 +56,11 @@ ms.locfileid: "73188660"
 
 4. Abra la ventana del Explorador DOM del control `WebView` al elegir **Depurar**, **Ventanas**, **Explorador DOM** y después elija la dirección URL del `WebView` que quiera inspeccionar.
 
-     ![Abrir el explorador DOM](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
+     ![Abrir el Explorador DOM](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
 
      El Explorador DOM asociado al control `WebView` aparece como una nueva pestaña en Visual Studio.
 
-5. Vea y modifique los elementos DOM dinámicos y los estilos CSS tal y como se describe en [depurar estilos CSS mediante el explorador Dom](quickstart-debug-html-and-css.md).
+5. Vea y modifique los elementos DOM dinámicos y los estilos CSS, tal como se describe en [Depuración de estilos CSS mediante el Explorador DOM](quickstart-debug-html-and-css.md).
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Usar la ventana Consola JavaScript para inspeccionar y depurar un control WebView
 
@@ -76,13 +76,13 @@ ms.locfileid: "73188660"
 
 5. En la ventana Consola, seleccione la página web o un `iFrame` mostrado por el control `WebView` en la lista **Destino**.
 
-     ![Selección de destino en la ventana consola JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+     ![Selección de destino en la ventana de la Consola JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
     > Con la consola, puede interactuar con un único `WebView`, `iFrame`, contrato de participación o trabajo web a la vez. Cada elemento necesita una instancia independiente del host de plataforma web (WWAHost.exe). Puede interactuar con un host a la vez.
 
-6. Vea y modifique las variables de la aplicación o use los comandos de la consola, tal como se describe en Inicio rápido: comandos de la consola de [depuración JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
+6. Visualice y modifique variables en la aplicación o use comandos de la consola, tal como se describe en [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

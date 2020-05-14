@@ -15,7 +15,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
 ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/23/2019
 ms.locfileid: "68415752"
@@ -35,9 +35,9 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Snapshot Debugger para Azure Kubernetes Services solo está disponible para Visual Studio 2019 Enterprise o superior con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
+* Snapshot Debugger para Azure Kubernetes Service solo está disponible para Visual Studio 2019 Enterprise o posterior con la **carga de trabajo de desarrollo de Azure**. (En la pestaña **Componentes individuales**, puede encontrarlo en **Depuración y pruebas** > **Snapshot Debugger**).
 
-    Si aún no está instalado, instale [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
+    Si aún no está instalado, instale [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * La colección de instantáneas está disponible para las siguientes aplicaciones web de Azure Kubernetes Service:
   * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.2 o versiones posteriores en Debian 9.
@@ -54,14 +54,14 @@ En este tutorial va a:
     > [!IMPORTANT]
     > Para realizar una instantánea de la depuración, abra la *misma versión del código fuente* publicada en Azure Kubernetes Service.
 
-1. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione el recurso de AKS en el que se va a implementar la aplicación web y una cuenta de Azure Storage y, a continuación, haga clic en **Adjuntar**. Snapshot Debugger también admite [Azure App Service](debug-live-azure-applications.md) y [Virtual Machines de Azure (VM) & Virtual Machine Scale sets](debug-live-azure-virtual-machines.md).
+1. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione el recurso de AKS en el que se va a implementar la aplicación web y una cuenta de Azure Storage y, a continuación, haga clic en **Adjuntar**. Snapshot Debugger también admite [Azure App Service](debug-live-azure-applications.md) y [Azure Virtual Machines (VM) y Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md).
 
     ![Inicio de Snapshot Debugger desde el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
     ![Seleccione un recurso de Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
 
     > [!NOTE]
-    > (Visual Studio 2019 versión 16,2 y versiones posteriores) Snapshot Debugger ha habilitado el soporte técnico en la nube de Azure. Asegúrese de que el recurso de Azure y la cuenta de Azure Storage que seleccione pertenecen a la misma nube. Póngase en contacto con su administrador de Azure si tiene alguna pregunta sobre las configuraciones de [cumplimiento de Azure](https://azure.microsoft.com/overview/trusted-cloud/) de su empresa.
+    > (Visual Studio 2019 versión 16.2 y posterior) Snapshot Debugger ha habilitado la compatibilidad en la nube de Azure. Asegúrese de que el recurso de Azure y la cuenta de Azure Storage que seleccione pertenecen a la misma nube. Póngase en contacto con su administrador de Azure si tiene alguna pregunta sobre las configuraciones de [cumplimiento de Azure](https://azure.microsoft.com/overview/trusted-cloud/) de su empresa.
 
 Visual Studio ahora está en modo de depuración de instantáneas.
 
@@ -73,7 +73,7 @@ Visual Studio ahora está en modo de depuración de instantáneas.
 
 ## <a name="set-a-snappoint"></a>Definición de un punto de instantánea
 
-1. En el editor de código, haga clic en el margen interno izquierdo junto a una línea de código que le interese para establecer un acoplamiento. Asegúrese de que es código que sabe que se ejecutará.
+1. En el editor de código, haga clic en el medianil izquierdo junto a una línea de código en la que le interesa establecer un punto de instantánea. Asegúrese de que se trata de código que sabe que se ejecutará.
 
    ![Definición de un punto de instantánea](../debugger/media/snapshot-set-snappoint.png)
 
@@ -84,9 +84,9 @@ Visual Studio ahora está en modo de depuración de instantáneas.
     > [!TIP]
     > No puede detenerse al visualizar una instantánea, pero puede colocar varios puntos de instantánea en el código para seguir la ejecución en diferentes líneas de código. Si tiene varios puntos de instantánea en el código, Snapshot Debugger garantiza que las instantáneas correspondientes sean de la misma sesión de usuario final. Snapshot Debugger hace esto aunque muchos usuarios visiten la aplicación.
 
-## <a name="take-a-snapshot"></a>Realización de una instantánea
+## <a name="take-a-snapshot"></a>Tomar una instantánea
 
-Una vez que se establece un acoplamiento, puede generar manualmente una instantánea en la vista de explorador del sitio web y ejecutar la línea de código marcada o esperar a que los usuarios generen uno a partir de su uso del sitio.
+Una vez que se establece un punto de instantánea, puede generar manualmente una instantánea yendo a la vista de explorador del sitio web y ejecutando la línea de código marcada o esperar a que los usuarios generen una a partir de su uso del sitio.
 
 ## <a name="inspect-snapshot-data"></a>Inspección de los datos de instantánea
 
@@ -100,7 +100,7 @@ Una vez que se establece un acoplamiento, puede generar manualmente una instant�
 
     Desde esta vista, puede mantener el puntero sobre las variables para ver información sobre datos, usar las ventanas **Variables locales**, **Inspecciones** y **Pila de llamadas** y también evaluar expresiones.
 
-    El sitio web todavía está activo y los usuarios finales no se ven afectados. Solo se captura una instantánea por cada punto de instantánea de forma predeterminada: una vez que se captura una instantánea, se desactiva el punto de instantánea. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
+    El propio sitio web está todavía activo y los usuarios finales no se ven afectados. Solo se captura una instantánea por cada punto de instantánea de forma predeterminada: una vez que se captura una instantánea, se desactiva el punto de instantánea. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
 
 También puede agregar más puntos de instantánea a la aplicación y activarlos con el botón **Actualizar colección**.
 
@@ -108,7 +108,7 @@ También puede agregar más puntos de instantánea a la aplicación y activarlos
 
 ## <a name="set-a-conditional-snappoint"></a>Definición de un punto de instantánea condicional
 
-Si es difícil volver a crear un estado determinado en la aplicación, considere la posibilidad de usar un acoplamiento condicional. Los acoplamiento condicionales le ayudan a controlar cuándo se debe realizar una instantánea, como cuando una variable contiene un valor determinado que se desea inspeccionar. Puede establecer las condiciones con expresiones, filtros o números de llamadas.
+Si es difícil volver a crear un estado determinado en la aplicación, considere la posibilidad de utilizar un punto de instantánea condicional. Los puntos de instantánea condicionales ayudan a controlar cuándo hacer una instantánea, por ejemplo, cuando una variable contiene un valor concreto que desea inspeccionar. Puede establecer las condiciones con expresiones, filtros o números de llamadas.
 
 #### <a name="to-create-a-conditional-snappoint"></a>Para crear un punto de instantánea condicional
 

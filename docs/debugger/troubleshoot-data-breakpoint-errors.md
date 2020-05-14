@@ -1,5 +1,5 @@
 ---
-title: 'Error: no se puede establecer el punto de interrupción de datos | Microsoft Docs'
+title: 'Error: No se puede establecer el punto de interrupción de datos | Microsoft Docs'
 ms.date: 12/3/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,62 +17,62 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
 ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/25/2019
 ms.locfileid: "75404083"
 ---
-# <a name="troubleshooting-data-breakpoint-errors"></a>Solucionar errores de puntos de interrupción de datos
-Esta página le guiará a través de la resolución de errores comunes que se muestran al usar "interrumpir cuando el valor cambia".
+# <a name="troubleshooting-data-breakpoint-errors"></a>Solución de errores con el punto de interrupción de datos
+Esta página lo guiará a través de la resolución de los errores comunes vistos cuando se usa "Interrumpir cuando cambia el valor".
 
-## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnóstico de errores de "no se pueden establecer puntos de interrupción de datos"
+## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnóstico de errores del tipo "No se puede establecer el punto de interrupción de datos"
 > [!IMPORTANT]
-> Los puntos de interrupción de datos administrados se admiten en .NET Core 3,0 y up. Puede descargar la última versión [aquí](https://dotnet.microsoft.com/download).
+> Los puntos de interrupción de datos administrados se admiten en .NET Core 3.0 y versiones posteriores. Puede descargar la versión más reciente [aquí](https://dotnet.microsoft.com/download).
 
-A continuación se muestra una lista de los errores que pueden producirse al usar puntos de interrupción de datos administrados. Contienen una explicación adicional sobre por qué se está produciendo el error y las posibles soluciones o soluciones alternativas para resolver el error.
+A continuación se muestra una lista de los errores que pueden producirse al usar puntos de interrupción de datos administrados. Contienen una explicación adicional sobre la razón por la que sucede el error y las posibles soluciones para resolverlo.
 
-- *"La versión de .NET utilizada por el proceso de destino no admite puntos de interrupción de datos. Los puntos de interrupción de datos requieren .NET Core 3.0 + en ejecución en x86 o x64 ".*
+- *"La versión de .NET usada por el proceso de destino no admite puntos de interrupción de datos. Los puntos de interrupción de datos requieren que se ejecute .NET Core 3.0+ en x86 o x64".*
 
-    - La compatibilidad con puntos de interrupción de datos administrados comenzó en .NET Core 3,0. Actualmente no se admite en .NET Framework o la versión de .NET Core en 3,0. 
+    - La compatibilidad con los puntos de interrupción de datos administrados empezó en .NET Core 3.0. Actualmente no se admiten en .NET Framework ni en versiones de .NET Core anteriores a 3.0. 
     
-    - **Solución**: la solución a esto sería actualizar el proyecto a .net Core 3,0.
+    - **Solución**: La solución sería actualizar el proyecto a .NET Core 3.0.
 
-- *"No se puede encontrar el valor en el montón administrado y no se puede realizar un seguimiento".*
+- *"No se encuentra el valor en el montón administrado y no se puede realizar el seguimiento".*
     - Variable declarada en la pila.
-        - No se admite el establecimiento de puntos de interrupción de datos para las variables creadas en la pila, ya que esta variable no será válida una vez que se cierre la función.
-        - **Solución alternativa**: establezca los puntos de interrupción en las líneas donde se usa la variable.
+        - No se admite establecer puntos de interrupción de datos para variables creadas en la pila, porque esta variable no será válida una vez que se cierre la función.
+        - **Solución alternativa**: Establezca puntos de interrupción en las líneas donde se usa la variable.
 
-    - "Interrumpir cuando el valor cambia" en una variable que no se expande en una lista desplegable.
-        - El depurador debe saber internamente el objeto que contiene el campo del que desea realizar un seguimiento. El recolector de elementos no utilizados puede mover el objeto por el montón para que el depurador necesite conocer el objeto que contiene la variable de la que desea realizar el seguimiento. 
-        - **Solución alternativa**: Si está en un método dentro del objeto en el que desea establecer un punto de interrupción de datos, vaya a un marco y use la ventana de `locals/autos/watch` para expandir el objeto y establezca un punto de interrupción de datos en el campo que desee.
+    - "Interrumpir cuando cambia el valor" en una variable que no se expande de una lista desplegable.
+        - Internamente, el depurador tiene que conocer el objeto que contiene el campo del que quiere realizar el seguimiento. El recolector de elementos no utilizados puede mover el objeto por el montón, por lo que el depurador necesitará conocer el objeto que contiene la variable de la que quiere realizar el seguimiento. 
+        - **Solución alternativa**: Si está en un método dentro del objeto en el que quiere establecer un punto de interrupción de datos, retroceda un fotograma y use la ventana `locals/autos/watch` para expandir el objeto y establecer un punto de interrupción de datos en el campo que desea.
 
-- *"No se admiten puntos de interrupción de datos para los campos estáticos ni para las propiedades estáticas".*
+- *"No se admiten puntos de interrupción de datos para campos estáticos o propiedades estáticas".*
     
-    - Los campos estáticos y las propiedades no se admiten en este momento. Si está interesado en esta característica, proporcione [sus comentarios](#provide-feedback).
+    - Por el momento, no se admiten las propiedades ni los campos estáticos. Si le interesa esta característica, envíe sus [comentarios](#provide-feedback).
 
-- *"No se puede realizar el seguimiento de los campos y propiedades de los Structs".*
+- *"No se puede realizar un seguimiento de los campos y propiedades de structs".*
 
-    - Los campos y las propiedades de los Structs no se admiten en este momento. Si está interesado en esta característica, proporcione [sus comentarios](#provide-feedback).
+    - Por el momento, no se admiten los campos ni las propiedades de structs. Si le interesa esta característica, envíe sus [comentarios](#provide-feedback).
 
 - *"El valor de la propiedad ha cambiado y ya no se puede realizar un seguimiento".*
 
     - Una propiedad puede cambiar la forma en que se calcula durante el tiempo de ejecución y, si esto sucede, el número de variables de las que depende la propiedad aumenta y puede superar la limitación de hardware. Consulte `"The property is dependent on more memory than can be tracked by the hardware."` a continuación.
 
-- *"La propiedad depende de más memoria de la que puede seguir el hardware."*
+- *"La propiedad depende de más memoria de la que puede seguir el hardware".*
     
-    - Cada arquitectura tiene un número establecido de bytes y puntos de interrupción de datos de hardware que puede admitir y la propiedad en la que desea establecer un punto de interrupción de datos ha superado ese límite. Consulte la tabla de [limitaciones de hardware de punto de interrupción de datos](#data-breakpoint-hardware-limitations) para averiguar cuántos puntos de interrupción de datos compatibles con el hardware y bytes están disponibles para la arquitectura que está usando. 
-    - **Solución alternativa**: establezca un punto de interrupción de datos en un valor que pueda cambiar dentro de la propiedad.
+    - Cada arquitectura tiene un número establecido de bytes y puntos de interrupción de datos de hardware que puede admitir y la propiedad en la que quiere establecer un punto de interrupción de datos superó ese límite. Consulte la tabla [Limitaciones de hardware de los puntos de interrupción de datos](#data-breakpoint-hardware-limitations) para saber cuántos bytes y puntos de interrupción de datos admitidos por el hardware hay disponibles para la arquitectura que se está usando. 
+    - **Solución alternativa**: Establezca un punto de interrupción de datos en un valor que pueda cambiar dentro de la propiedad.
 
-- *"No se admiten puntos de interrupción de datos al C# usar el evaluador de expresiones heredado".*
+- *"No se admiten puntos de interrupción de datos al usar el evaluador de expresiones de C# heredadas".*
 
-    - Los puntos de interrupción de datos solo se admiten en C# el evaluador de expresiones no heredadas. 
-    - **Solución**: deshabilite el evaluador de expresiones heredadas C# ; para ello, vaya a `Debug -> Options` en `Debugging -> General` desactive `"Use the legacy C# and VB expression evaluators"`.
+    - Los puntos de interrupción de datos solo se admiten en el evaluador de expresiones de C# no heredado. 
+    - **Solución**: Para deshabilitar el evaluador de expresiones de C# heredado, vaya a `Debug -> Options` y, en `Debugging -> General`, desactive `"Use the legacy C# and VB expression evaluators"`.
 
-## <a name="data-breakpoint-hardware-limitations"></a>Limitaciones de hardware de punto de interrupción de datos
+## <a name="data-breakpoint-hardware-limitations"></a>Limitaciones de hardware de los puntos de interrupción de datos
 
 La arquitectura (configuración de plataforma) en la que se ejecuta el programa tiene un número limitado de puntos de interrupción de datos de hardware que puede usar. En la tabla siguiente se indica el número de registros que están disponibles para su uso por arquitectura.
 
-| Arquitectura | Número de puntos de interrupción de datos admitidos por hardware | Tamaño máximo de bytes|
+| Arquitectura | Número de puntos de interrupción de datos admitidos por el hardware | Tamaño máximo de bytes|
 | :-------------: |:-------------:| :-------------:|
 | x86 | 4 | 4 |
 | x64 | 4 | 8 |
@@ -80,8 +80,8 @@ La arquitectura (configuración de plataforma) en la que se ejecuta el programa 
 | ARM64 | 2 | 8 |
 
 ## <a name="provide-feedback"></a>Proporcionar comentarios
-Si tiene algún problema o sugerencias sobre esta característica, háganoslo saber a través de la ayuda > Enviar comentarios > [notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) en el IDE o en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+Si tiene algún problema o sugerencia sobre esta característica, comuníquela en Ayuda > Enviar comentarios > [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio.md) en el IDE o en [Developer Community](https://developercommunity.visualstudio.com/).
 
 ## <a name="see-also"></a>Vea también
-- [Usar "interrumpir cuando cambie el valor" en .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
-- [DevBlog: interrumpir cuando el valor cambia: puntos de interrupción de datos para .NET Core en Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)
+- [Uso de "Interrumpir cuando cambia el valor" en .NET Core 3.0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
+- [DevBlog: Break When Value Changes: Data Breakpoints for .NET Core in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/) (DevBlog: Interrumpir cuando cambia el valor: puntos de interrupción de datos para .NET Core en Visual Studio 2019)

@@ -10,41 +10,41 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592378"
 ---
-# <a name="xml-schema-designer-workspace-views"></a>Vistas del área de trabajo del diseñador de esquemas XML
+# <a name="xml-schema-designer-workspace-views"></a>Vistas de área de trabajo del diseñador de esquemas XML
 
-El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que le ayuda a explorar los esquemas XML. Además del explorador de [esquemas XML](../xml-tools/xml-schema-explorer.md), que permite examinar y navegar por el árbol de esquemas XML y realizar búsquedas, el diseñador XSD proporciona tres vistas en las que puede explorar el esquema XSD con más detalle.
+El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que le ayuda a explorar los esquemas XML. Además del [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), que le permite examinar y navegar por el árbol de esquemas XML y realizar búsquedas, el Diseñador XSD proporciona tres vistas que permiten explorar el esquema XSD con más detalle.
 
-- La **vista Inicio** es el punto de inicio del diseñador XSD; desde la vista Inicio, puede navegar a otras vistas del diseñador XSD y ver los detalles del conjunto de esquemas.
-- La **vista gráfico** le permite ver información general de un conjunto de esquemas y las relaciones entre los nodos de esquema.
-- La **vista modelo de contenido** proporciona una representación gráfica de los detalles de los nodos de esquema globales y locales, incluidos tipos simples y complejos, elementos, grupos, atributos y grupos de atributos.
+- La **vista Inicio** es el punto de lanzamiento para el Diseñador XSD; desde esta vista, puede navegar a otras vistas del Diseñador XSD y ver los detalles del conjunto de esquemas.
+- La **vista Gráfico** le permite ver información general sobre un conjunto de esquemas, así como las relaciones entre los nodos del esquema.
+- La **vista Modelo de contenido** proporciona una representación gráfica de los detalles de los nodos de esquema globales y locales, incluyendo tipos simples y complejos, elementos, grupos, atributos y grupos de atributos.
 
-Para empezar a explorar los nodos que le interesan, debe agregarlos al área de trabajo. El área de trabajo la comparten todas las vistas.
+Para empezar a explorar los nodos que son de su interés, debe agregarlos al área de trabajo. El área de trabajo la comparten todas las vistas.
 
-## <a name="add-nodes-to-the-workspace"></a>Agregar nodos al área de trabajo
+## <a name="add-nodes-to-the-workspace"></a>Incorporación de nodos al área de trabajo
 
 Puede agregar nodos al área de trabajo de las maneras siguientes:
 
-- En la sección "detalles del conjunto de esquemas" de la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **Agregar** junto al tipo de nodo global.
+- En la sección "Detalles del conjunto de esquemas" de la [vista Inicio](../xml-tools/start-view.md), haga clic en el vínculo **agregar** situado junto al tipo de nodo global.
 
-- Arrastre y coloque nodos globales, nodos de archivo y nodos de espacio de nombres desde el **Explorador de esquemas XML** hasta cualquiera de las tres vistas. Para obtener más información, vea la sección "arrastrar y colocar nodos" en el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md).
+- Arrastre y coloque nodos globales, nodos de archivo y nodos de espacio de nombres desde el **Explorador de esquemas XML** hasta cualquiera de las tres vistas. Para más información, consulte la sección "Arrastrar y colocar nodos" en [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md).
 
-- Use el menú contextual (clic con el botón derecho) en el **Explorador de esquemas XML**. Para obtener más información, vea [menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md).
+- Use el menú contextual (menú del botón derecho) en el **Explorador de esquemas XML**. Para más información, consulte [Menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md).
 
-- Realice una búsqueda en el explorador XSD y haga clic en el botón **agregar nodos resaltados al área de trabajo** en el panel de resultados de resumen. Para obtener más información, vea [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
+- Realice una búsqueda en el Explorador XSD y haga clic en el botón **Agregar nodos resaltados al área de trabajo** en el panel de resumen de resultados. Para más información, consulte [Búsqueda en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Cambiar de vista
+## <a name="switch-views"></a>Cambio de vistas
 
 Para cambiar de vista, use una de las opciones siguientes:
 
 - La barra de herramientas del Diseñador XSD.
 
-- Los menús contextuales (clic con el botón derecho) de la vista modelo de contenido y la vista gráfico.
+- Los menús contextuales (con el botón derecho) de las vistas Modelo de contenido y Gráfico.
 
 - Las marcas de agua de la página de la vista Inicio o la marca de agua de las vistas en blanco Modelo de contenido y Gráfico.
 
-- Teclas de interacciones: **ctrl**+**1** para la vista Inicio, **Ctrl**+**2** para la vista gráfico y **Ctrl**+**3** para la vista modelo de contenido.
+- Teclas de acceso rápido: **Ctrl**+**1** para la vista Inicio, **Ctrl**+**2** para la vista Gráfico y **Ctrl**+**3** para la vista Modelo de contenido.

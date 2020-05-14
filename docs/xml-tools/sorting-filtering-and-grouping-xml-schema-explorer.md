@@ -1,5 +1,5 @@
 ---
-title: Ordenar, filtrar y agrupar en el explorador de esquemas XML
+title: Ordenación, filtrado y agrupación en el Explorador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -10,14 +10,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592521"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordenar, filtrar y agrupar (explorador de esquemas XML)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordenación, filtrado y agrupación (Explorador de esquemas XML)
 
-En este tema se describen las opciones que están disponibles a través del menú **Opciones de ordenación, filtrado y agrupación** en la barra de herramientas del **Explorador de esquemas XML** .
+En este tema se describen las opciones que están disponibles a través del menú de **Opciones de ordenación, filtrado y agrupación** de la barra de herramientas del **Explorador de esquemas XML**.
 
 ## <a name="filter-options"></a>Opciones de filtro
 
@@ -27,21 +27,21 @@ Están disponibles las opciones de filtro siguientes: De forma predeterminada, l
 
 - **Mostrar archivos de esquema**.
 
-- **Mostrar compositores (secuencia/opción/todo)** .
+- **Mostrar compositores (en secuencia/seleccionados/todos)** .
 
 ## <a name="sorting-options"></a>Opciones de ordenación
 
-Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **ordenar por tipo**. Las opciones de **ordenar por** no se aplican a los archivos y espacios de nombres.
+Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **Ordenar por tipo**. Las opciones **Ordenar por** no se aplican a archivos ni espacios de nombres.
 
 - **Ordenar por tipo**.
 
 - **Ordenar por nombre**.
 
-- **Orden del documento**.
+- **Ordenar por orden de documento**.
 
 ### <a name="sort-by-type"></a>Ordenar por tipo
 
-Cuando se selecciona la opción **ordenar por tipo** , los nodos globales se ordenan en el orden siguiente. Después, los nodos se ordenan alfabéticamente en cada grupo.
+Cuando se selecciona la opción **Ordenar por tipo**, los nodos globales se ordenan de la forma siguiente. Después, los nodos se ordenan alfabéticamente en cada grupo.
 
 1. nodos `import`.
 
@@ -63,9 +63,9 @@ Cuando se selecciona la opción **ordenar por tipo** , los nodos globales se ord
 
 ### <a name="sort-by-name"></a>Ordenar por Nombre
 
-Cuando se selecciona la opción **ordenar por nombre** , los nodos globales se ordenan en el siguiente orden:
+Cuando se selecciona la opción **Ordenar por nombre**, los nodos globales se ordenan de la forma siguiente:
 
-1. `import` nodos (en orden alfabético de espacios de nombres).
+1. nodos `import` (por orden alfabético de espacios de nombres).
 
 2. nodos `include` (por orden alfabético de atributos `schemaLocation`).
 
@@ -75,7 +75,7 @@ Cuando se selecciona la opción **ordenar por nombre** , los nodos globales se o
 
 ### <a name="document-order"></a>Orden del documento
 
-La opción **orden del documento** está disponible cuando se selecciona la opción **Mostrar archivos de esquema** . Cuando se selecciona el **orden del documento** , los nodos globales se muestran en el orden en que aparecen en el archivo de esquema.
+La opción **Ordenar por orden de documento** está disponible cuando se selecciona la opción **Mostrar archivos de esquema**. Cuando se selecciona **Ordenar por orden de documento**, los nodos globales se muestran en el orden en que aparecen en el archivo de esquema.
 
 ## <a name="persisting-sortfilter-options"></a>Opciones de ordenación y filtrado persistentes
 

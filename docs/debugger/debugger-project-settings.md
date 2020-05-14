@@ -1,5 +1,5 @@
 ---
-title: Configuración del proyecto de depurador | Microsoft Docs
+title: Configuración del proyecto para el depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188634"
@@ -29,24 +29,24 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
  En esta sección se describen las opciones disponibles y cómo establecerlas.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md) Describe la configuración del depurador en el cuadro de diálogo **Opciones** .
+ [Cómo: Especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md) Describe la configuración del depurador del cuadro de diálogo **Opciones**.
 
- [Cómo: establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md) Describe la configuración de **depuración** y de **versión** , y cómo cambiar entre ellas.
+ [Cómo: Establecer configuraciones Depuración y Lanzamiento](../debugger/how-to-set-debug-and-release-configurations.md) Describe las configuraciones **Depuración** y **Lanzamiento** y cómo alternar entre ellas.
 
- [Configuración del proyecto para C++ una configuración de depuración](../debugger/project-settings-for-a-cpp-debug-configuration.md) muestra las propiedades disponibles en el cuadro de C++ diálogo páginas de **propiedades** para proyectos de C o.
+ [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md) Muestra las propiedades disponibles en el cuadro de diálogo **Páginas de propiedades** para proyectos de C o de C++.
 
- [Configuración del proyecto C# para configuraciones de depuración](../debugger/project-settings-for-csharp-debug-configurations.md) muestra las propiedades disponibles en el C# cuadro de diálogo páginas de **propiedades** para los proyectos de.
+ [Configuración del proyecto para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md) Muestra las propiedades disponibles en el cuadro de diálogo **Páginas de propiedades** para proyectos de C#.
 
- [Configuración de páginas de propiedades para proyectos web](../debugger/property-pages-settings-for-web-projects.md) Muestra las propiedades disponibles en el cuadro de diálogo **páginas de propiedades** para los proyectos Web.
+ [Configuración de páginas de propiedades para proyectos web](../debugger/property-pages-settings-for-web-projects.md) Muestra las propiedades disponibles en el cuadro de diálogo **Páginas de propiedades** para proyectos web.
 
- [Configuración del proyecto para una configuración de Depuración Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) Muestra las propiedades disponibles en el cuadro de diálogo **páginas de propiedades** para proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+ [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) Muestra las propiedades disponibles en el cuadro de diálogo **Páginas de propiedades** para proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Especificar archivos de código fuente y símbolos (. pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Describe cómo el depurador utiliza archivos de símbolos y archivos de código fuente para mostrar información para la depuración.
+ [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Describe cómo el depurador utiliza archivos de símbolos y de código fuente para mostrar información para la depuración.
 
- [Depurar aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Describe cómo depurar aplicaciones para UWP. (Centro de desarrollo de Windows)
+ [Depuración de aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Describe cómo depurar aplicaciones para UWP. (Centro de desarrollo de Windows)
 
- [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md) Describe los valores de propiedades relacionados con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md) Describe los valores de propiedades relacionados con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vea también
  [Seguridad del depurador](../debugger/debugger-security.md)

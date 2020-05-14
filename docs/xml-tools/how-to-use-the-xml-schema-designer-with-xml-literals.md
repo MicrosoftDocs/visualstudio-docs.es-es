@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Usar el Diseñador de esquemas XML con literales XML'
+title: Procedimiento Usar el Diseñador de esquemas XML con literales XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -12,38 +12,38 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b4001e705cc69e07242abeeef5919573b264c5e8
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592664"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Cómo: usar el diseñador de esquemas XML con literales XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedimiento Uso del diseñador de esquemas XML con literales XML
 
 En este tema se explica cómo ver un esquema asociado a un literal XML en un proyecto Visual Basic.
 
-## <a name="create-a-new-visual-basic-project"></a>Crear un nuevo proyecto de Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Creación de un proyecto de Visual Basic
 
 1. Abra Visual Studio.
 
-2. Cree un nuevo proyecto de **aplicación de consola** de Visual Basic denominado **XMLLiterals**.
+2. Cree un proyecto de **Aplicación de consola** de Visual Basic denominado **XMLLiterals**.
 
-     El nuevo proyecto contiene un archivo de origen de Visual Basic, *Module1. VB*.
+     El proyecto nuevo contiene un archivo de código fuente de Visual Basic, *Module1.vb*.
 
-## <a name="add-an-existing-xsd-file"></a>Agregar un archivo XSD existente
+## <a name="add-an-existing-xsd-file"></a>Incorporación de un archivo XSD existente
 
-1. Abra un nuevo archivo de texto en el Bloc de notas. Copie el código de ejemplo del esquema XML del [esquema del pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo en el archivo.
+1. Abra un archivo de texto nuevo en el Bloc de notas. Copie el código de ejemplo del Esquema XML del [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo en el archivo.
 
-2. Guarde el archivo en alguna ubicación con el nombre *PurchaseOrderSchema. xsd*.
+2. Guarde el archivo en alguna ubicación con el nombre *PurchaseOrderSchema.xsd*.
 
-3. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre del proyecto, seleccione **Agregar**y, a continuación, seleccione **elemento existente**. Aparece el cuadro de diálogo **elemento agregar** . Busque el archivo *PurchaseOrderSchema. xsd* , selecciónelo y, a continuación, haga clic en **Agregar**.
+3. En el **Explorador de soluciones**, haga clic con el botón derecho en el nombre del proyecto, seleccione **Agregar** y, después, seleccione **Elemento existente**. Aparece el cuadro de diálogo **Agregar elemento existente**. Busque el archivo *PurchaseOrderSchema.xsd*, selecciónelo y, a continuación, haga clic en **Agregar**.
 
-     El proyecto XMLLiterals contiene ahora dos archivos: *Module1. VB* y *PurchaseOrderSchema. xsd*.
+     El proyecto XMLLiterals contiene ahora dos archivos: *Module1.vb* y *PurchaseOrderSchema.xsd*.
 
 ## <a name="add-code"></a>Incorporación de código
 
-Para agregar Visual Basic código con un literal XML, basado en el archivo XSD incluido en el proyecto:
+Para agregar el código de Visual Basic con un literal XML, basado en el archivo XSD incluido en el proyecto:
 
-1. Reemplace el código del archivo *Module1. VB* por el código siguiente:
+1. Reemplace el código del archivo *Module1.vb* por el código siguiente:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -72,6 +72,6 @@ Para agregar Visual Basic código con un literal XML, basado en el archivo XSD i
    End Module
    ```
 
-2. Haga clic con el botón secundario en cualquier nodo XML de un literal XML o una importación de espacio de nombres XML y seleccione **Mostrar en el explorador de esquemas**.
+2. Haga clic con el botón derecho en cualquier nodo de XML de un literal XML o una importación de espacio de nombres de XML y seleccione **Mostrar en Explorador de esquemas**.
 
-   El **Explorador de esquemas XML** se muestra en paralelo con un archivo Visual Basic que tiene el literal XML asociado al conjunto de esquemas XML.
+   El **Explorador de esquemas XML** se muestra en paralelo con un archivo Visual Basic que tiene asociado el literal XML con el conjunto de esquemas XML.

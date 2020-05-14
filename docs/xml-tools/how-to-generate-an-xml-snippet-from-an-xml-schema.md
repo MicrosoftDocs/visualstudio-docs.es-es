@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Generar un fragmento XML a partir de un esquema XML'
+title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -10,14 +10,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592690"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: generar un fragmento de código XML a partir de un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generación de un fragmento XML a partir de un esquema XML
 
-El editor XML tiene la capacidad de generar fragmentos de código XML a partir de un esquema del lenguaje de definición de esquemas XML (XSD). Por ejemplo, mientras crea un archivo XML, mientras está situado junto al nombre del elemento, puede presionar la **tecla TAB** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
+Con el Editor XML es posible generar fragmentos XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento puede presionar la tecla **Tab** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
 Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:
 
@@ -43,32 +43,32 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="example"></a>Ejemplo
 
-En los pasos de esta sección se muestra cómo usar la característica de fragmentos XML generados por esquemas del editor XML.
+Los pasos de esta sección muestran cómo utilizar la característica del Editor XML de fragmento de XML generado por esquema.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo a un esquema XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML
 
-1. En el menú **archivo** , seleccione **nuevo**y haga clic en **archivo**.
+1. En el menú **Archivo**, seleccione **Nuevo** y haga clic en **Archivo**.
 
-2. Seleccione **archivo XML** en el panel **plantillas** y haga clic en **abrir**.
+2. Seleccione **Archivo XML** en el panel **Plantillas** y haga clic en **Abrir**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **...** ) del campo **esquemas** .
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **…** ) en el campo **Esquemas**.
 
-     Se muestra el cuadro de diálogo **esquemas XSD** .
+     Aparece el cuadro de diálogo **Esquemas XSD**.
 
 4. Haga clic en **Agregar**.
 
-     Se muestra el cuadro de diálogo **abrir esquema XSD** .
+     Aparece el cuadro de diálogo **Abrir esquema XSD**.
 
-5. Seleccione el archivo de esquema y haga clic en **abrir**.
+5. Seleccione el archivo de esquema y haga clic en **Abrir**.
 
 6. Haga clic en **Aceptar**.
 
-     Ahora el esquema XML está asociado con el documento XML.
+     El esquema XML está ahora asociado con el documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Para generar un fragmento de código XML
 
@@ -78,19 +78,19 @@ En los pasos de esta sección se muestra cómo usar la característica de fragme
 
      **!--** para agregar un comentario.
 
-     **! DOCTYPE** para agregar un tipo de documento.
+     **!DOCTYPE** para agregar un tipo de documento.
 
      **?** para agregar una instrucción de procesamiento.
 
-     **Contacto** para agregar el elemento raíz.
+     **Contact** para agregar el elemento raíz.
 
-3. Seleccione **contacto** en la lista de miembros y presione **entrar**.
+3. Seleccione **Contact** en la lista de miembros y presione **ENTRAR**.
 
      El editor agrega la etiqueta de apertura `<Contact` y coloca el cursor después del nombre del elemento.
 
-4. Presione **Tab** para generar datos XML para el elemento `Contact` basado en la información del esquema.
+4. Presione la tecla **Tab** para generar datos XML para el elemento `Contact` en función de su información de esquema.
 
-## <a name="input"></a>Input
+## <a name="input"></a>Entrada
 
 El tutorial utiliza el siguiente archivo de esquema.
 
@@ -139,9 +139,9 @@ El tutorial utiliza el siguiente archivo de esquema.
 </xs:schema>
 ```
 
-### <a name="output"></a>Resultados
+### <a name="output"></a>Salida
 
-Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento de código XML.
+Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento XML.
 
 ```xml
 <Contact>
@@ -156,5 +156,5 @@ Estos son los datos XML que se generan en función de la información de esquema
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos de código XML](../xml-tools/xml-snippets.md)
-- [Cómo: usar fragmentos de código XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmentos XML](../xml-tools/xml-snippets.md)
+- [Cómo: Uso de fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)

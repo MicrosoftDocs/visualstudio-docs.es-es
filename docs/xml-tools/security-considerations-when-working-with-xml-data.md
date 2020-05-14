@@ -10,26 +10,26 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
 ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72604596"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
 
-En este tema se describen los problemas de seguridad que debe conocer al trabajar con el editor XML o el depurador de XSLT.
+En este tema se describen los aspectos de seguridad que debe conocer al trabajar con el Editor XML o el depurador de XSLT.
 
 ## <a name="xml-editor"></a>Editor XML
 
-El editor XML se basa en el editor de texto de Visual Studio. Depende de las clases <xref:System.Xml> y <xref:System.Xml.Xsl> para controlar muchos de los procesos XML.
+El Editor XML se basa en el Editor de texto de Visual Studio. Depende de las clases <xref:System.Xml> y <xref:System.Xml.Xsl> para controlar muchos de los procesos XML.
 
-- Las transformaciones XSLT se ejecutan en un nuevo dominio de aplicación. Las transformaciones XSLT están en *espacio aislado*. es decir, la Directiva de seguridad de acceso del código del equipo se utiliza para determinar los permisos restringidos en función de dónde se encuentra la hoja de estilos XSLT. Por ejemplo, las hojas de estilos de una ubicación de Internet tienen los permisos más restringidos, mientras que las hojas de estilos que se copian en el disco duro se ejecutan con plena confianza.
+- Las transformaciones XSLT se ejecutan en un nuevo dominio de aplicación. Estas transformaciones son de *espacio aislado*; es decir, se utiliza la directiva de seguridad de acceso del código del equipo para determinar los permisos restringidos según donde se encuentre la hoja de estilos XSLT. Por ejemplo, las hojas de estilos de una ubicación de Internet tienen los permisos más restringidos, mientras que las hojas de estilos que se copian en el disco duro se ejecutan con plena confianza.
 
 - La clase <xref:System.Xml.Xsl.XslCompiledTransform> se utiliza para compilar el XSLT al lenguaje intermedio de Microsoft con el fin de acelerar el rendimiento durante la ejecución.
 
-- Los esquemas que apuntan a una ubicación externa del archivo de catálogo se descargan automáticamente cuando se carga por primera vez el editor XML. La clase <xref:System.Xml.Schema.XmlSchemaSet> se utiliza para compilar los esquemas. El archivo de catálogo que se incluye con el editor XML no tiene vínculos a esquemas externos. El usuario tiene que agregar explícitamente una referencia al esquema externo antes de que el editor XML Descargue el archivo de esquema. La descarga de HTTP puede deshabilitarse a través de la página **Opciones de herramientas diversas** del editor XML.
+- Los esquemas que apuntan a una ubicación externa del archivo de catálogo se descargan automáticamente cuando se carga primero el Editor XML. La clase <xref:System.Xml.Schema.XmlSchemaSet> se utiliza para compilar los esquemas. El archivo de catálogo que se suministra con el Editor XML no dispone de vínculos a esquemas externos. El usuario tiene que agregar explícitamente una referencia a un esquema externo antes de que el Editor XML descargue el archivo de esquema. La descarga HTTP se puede deshabilitar mediante la página **Opciones de herramientas varias** del Editor XML.
 
-- El editor XML utiliza las clases de <xref:System.Net> para descargar esquemas
+- El Editor XML utiliza las clases <xref:System.Net> para descargar esquemas
 
 ## <a name="xslt-debugger"></a>depurador de XSLT
 

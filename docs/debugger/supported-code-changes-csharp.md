@@ -18,7 +18,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729086"
@@ -28,22 +28,22 @@ Editar y continuar controla la mayoría de los tipos de cambios de código dentr
 
 ## <a name="supported-changes-to-code"></a>Cambios admitidos en el código
 
-En la tabla siguiente se muestran los cambios que se pueden C# realizar y Visual Basic código durante una sesión de depuración sin reiniciar la sesión.
+En la tabla siguiente se muestran los cambios que se pueden realizar en el código de C# y Visual Basic durante una sesión de depuración sin reiniciar la sesión.
 
-|Elemento o característica de lenguaje|Operación de edición admitida|Limitaciones|
+|Elemento o característica del lenguaje|Operación de edición admitida|Limitaciones|
 |-|-|-|
-|Tipos|Agregar métodos, campos, constructores, et al|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Tipos|Agregar métodos, campos, constructores y otros|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iterators|Agregar o modificar|No|
-|Expresiones Async/Await|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Expresiones async/await|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Objetos dinámicos|Agregar o modificar|No|
 |expresiones lambda|Agregar o modificar|[Sí](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Expresiones LINQ|Agregar o modificar|[Igual que las expresiones lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
 > [!NOTE]
-> Las características de lenguaje más recientes, como la interpolación de cadenas y los operadores condicionales null, se admiten generalmente mediante editar y continuar. Para obtener la información más reciente, consulte la página [ediciones compatibles con ENC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) .
+> Las características de lenguaje más recientes, como la interpolación de cadenas y los operadores condicionales NULL, se admiten generalmente mediante Editar y continuar. Para obtener la información más reciente, consulte la página [Ediciones admitidas en Editar y continuar](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits).
 
 ## <a name="unsupported-changes-to-code"></a>Cambios no admitidos en el código
- Los siguientes cambios no se pueden aplicar C# a y Visual Basic código durante una sesión de depuración:
+ Los siguientes cambios no se pueden aplicar al código de C# y Visual Basic durante una sesión de depuración:
 
 - Cambios en la instrucción actual o en cualquier otra instrucción activa.
 
@@ -53,40 +53,40 @@ En la tabla siguiente se muestran los cambios que se pueden C# realizar y Visual
 
 - En la tabla siguiente se muestran los cambios no admitidos en el código mediante el elemento de lenguaje.
 
-|Elemento o característica de lenguaje|Operación de edición no admitida|
+|Elemento o característica del lenguaje|Operación de edición no admitida|
 |-|-|
 |Todos los elementos de código|Cambiar nombre|
 |Espacios de nombres|Agregar|
 |Espacios de nombres, tipos, miembros|Eliminar|
 |Genéricos|Agregar o modificar|
 |Interfaces|Modificar|
-|Tipos|Agregar un miembro abstracto o virtual, agregar invalidación (ver [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Tipos|Agregar miembro abstracto o virtual, agregar invalidación (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Tipos|Agregar destructor|
 |Miembros|Modificar un miembro que hace referencia a un tipo de interoperabilidad incrustado|
 |Miembros|Modificar un miembro estático una vez que ya se ha accedido mediante la ejecución de código|
-|Miembros (Visual Basic)|Modificar un miembro con on error o resume (instrucción)|
-|Miembros (Visual Basic)|Modificar un miembro que contenga una cláusula Aggregate, Group by, simple join o Group join LINQ|
+|Miembros (Visual Basic)|Modificar un miembro con la instrucción Al ocurrir un error o Reanudar|
+|Miembros (Visual Basic)|Modificar un miembro que contenga una cláusula de consulta de LINQ Aggregate, Group By, Simple Join o Group Join|
 |Métodos|Modificar firmas|
-|Métodos|Convertir un método Abstract en no abstracto agregando un cuerpo de método|
+|Métodos|Convertir un método abstracto en no abstracto agregando un cuerpo del método|
 |Métodos|Eliminar cuerpo del método|
 |Atributos|Agregar o modificar|
 |Eventos o propiedades|Modificar un parámetro de tipo, tipo base, tipo de delegado o tipo de valor devuelto |
 |Operadores o indizadores|Modificar un parámetro de tipo, tipo base, tipo de delegado o tipo de valor devuelto |
 |bloques catch|Modificar cuando contiene una instrucción activa|
-|bloques try-catch-finally|Modificar cuando contiene una instrucción activa|
+|Bloques try-catch-finally|Modificar cuando contiene una instrucción activa|
 |Using (instrucciones)|Agregar|
-|métodos Async/lambdas|Modificar un método o una expresión lambda asincrónica en un proyecto destinado a .NET Framework 4 y versiones inferiores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y versiones inferiores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Expresiones lambda/métodos asincrónicos|Modificar una expresión lambda o un método asincrónico en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|Modificar un iterador en un proyecto destinado a .NET Framework 4 y versiones anteriores (vea los [detalles](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Código no seguro
- Los cambios efectuados en el código no seguro tienen las mismas limitaciones que los cambios efectuados en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté dentro de un método que contenga el operador `stackalloc`.
+ Los cambios en el código no seguro tienen las mismas limitaciones que los cambios en el código seguro, con una restricción adicional: Editar y continuar no admite cambios en el código no seguro que esté incluido en un método que contiene el operador `stackalloc`.
 
-## <a name="unsupported-app-scenarios"></a>Escenarios de aplicaciones no admitidos
+## <a name="unsupported-app-scenarios"></a>Escenarios de aplicaciones no admitidas
 
-Las aplicaciones y plataformas no compatibles incluyen ASP.NET 5, Silverlight 5 y Windows 8.1.
+Las aplicaciones y plataformas no admitidas incluyen ASP.NET 5, Silverlight 5 y Windows 8.1.
 
 > [!NOTE]
-> Entre las aplicaciones que se admiten se incluyen UWP en Windows 10 y aplicaciones x86 y x64 que tienen como destino el escritorio .NET Framework 4,6 o versiones posteriores (el .NET Framework es solo una versión de escritorio).
+> Entre las aplicaciones que se admiten se incluyen UWP en Windows 10 y aplicaciones x86 y x64 que tienen como destino el escritorio de .NET Framework 4.6 o versiones posteriores (.NET Framework es solo una versión de escritorio).
 
 ## <a name="unsupported-scenarios"></a>Escenarios no admitidos
  La opción Editar y continuar no se encuentra disponible en los siguientes escenarios de depuración:
@@ -99,7 +99,7 @@ Las aplicaciones y plataformas no compatibles incluyen ASP.NET 5, Silverlight 5 
 
 - Depuración de una aplicación incrustada en tiempo de ejecución.
 
-- Depurar una aplicación mediante asociar al proceso (**Depurar > adjuntar al proceso**) en lugar de ejecutar la aplicación eligiendo **iniciar** en el menú **depurar** .
+- Depuración de una aplicación mediante la asociación al proceso (**Depurar > Asociar al proceso**) en lugar de ejecutar la aplicación al elegir **Inicio** en el menú **Depurar**.
 
 - Depuración de código optimizado.
 
@@ -107,4 +107,4 @@ Las aplicaciones y plataformas no compatibles incluyen ASP.NET 5, Silverlight 5 
 
 ## <a name="see-also"></a>Vea también
 - [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Cómo: Usar Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Cómo: Uso de Editar y continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

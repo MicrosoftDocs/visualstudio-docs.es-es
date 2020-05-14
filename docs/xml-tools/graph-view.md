@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
 ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "75592872"
@@ -25,13 +25,13 @@ La imagen siguiente muestra la vista Gráfico con seis nodos globales en su supe
 
 ## <a name="design-surface"></a>Superficie de diseño
 
-La superficie de diseño de la vista gráfico muestra el contenido del [área de trabajo del diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md). Si el área de trabajo contiene nodos globales del conjunto de esquemas, dichos nodos se muestran en la superficie de diseño de la vista Gráfico y se dibujan flechas entre los nodos que tienen relaciones.
+La superficie de diseño de la vista Gráfico muestra el contenido del [área de trabajo del diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md). Si el área de trabajo contiene nodos globales del conjunto de esquemas, dichos nodos se muestran en la superficie de diseño de la vista Gráfico y se dibujan flechas entre los nodos que tienen relaciones.
 
-Al hacer doble clic en un nodo de la vista de gráfico, se abrirá el editor XML.
+Haga doble clic en un nodo en la vista Gráfico para mostrar el editor XML.
 
-Para eliminar los nodos seleccionados del área de trabajo, use la barra de herramientas del diseñador XSD o la tecla **suprimir** .
+Para eliminar los nodos seleccionados del área de trabajo, use la barra de herramientas del Diseñador XSD o la tecla **Supr**.
 
-Si la superficie de diseño está en blanco, se muestran el editor XML, el **Explorador de esquemas XML**y la marca de agua. La *marca de agua* es una lista de vínculos a todas las vistas del diseñador xsd.
+Si la superficie de diseño está en blanco, se mostrarán el editor XML, el **Explorador de esquemas XML** y la marca de agua. La *marca de agua* es una lista de vínculos a todas las vistas del Diseñador XSD.
 
 ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -47,16 +47,16 @@ En la tabla siguiente se describen las opciones disponibles para todos los nodos
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar en el explorador de esquemas XML**|Coloca el foco en el Explorador de esquemas y resalta el nodo del conjunto de esquemas.|
-|**Mostrar en la vista gráfico**|Cambia a la vista Gráfico (deshabilitado).|
+|**Mostrar en el Explorador de esquemas XML**|Coloca el foco en el Explorador de esquemas y resalta el nodo del conjunto de esquemas.|
+|**Mostrar en la vista Gráfico**|Cambia a la vista Gráfico (deshabilitado).|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar del área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
-|**Quitar todo excepto la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
+|**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
 |**Seleccionar todo**|Selecciona todos los nodos de la superficie de diseño.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el explorador de **esquemas XML** también se selecciona en el editor XML.|
-|**Propiedades (ventana)**|Abre la ventana **propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento que está seleccionado en el **Explorador de esquemas XML** también estará seleccionado en el editor XML.|
+|**Propiedades (ventana)**|Abre la ventana **Propiedades** (si aún no está abierta). Esta ventana muestra información sobre el nodo.|
 
 Además de las opciones comunes descritas anteriormente, el menú contextual para los elementos globales también tiene las opciones siguientes:
 
@@ -91,32 +91,32 @@ Además de las opciones comunes descritas anteriormente, el menú contextual par
 
 ## <a name="properties-window"></a>Propiedades (ventana)
 
-Use el menú contextual (clic con el botón derecho) para abrir inicialmente la ventana **propiedades** . De forma predeterminada, la ventana **propiedades** aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se representa en la vista modelo de contenido, las propiedades de ese nodo se mostrarán en la ventana **propiedades** .
+Use el menú contextual (clic con el botón derecho) para abrir inicialmente la ventana **Propiedades**. De forma predeterminada, la ventana **Propiedades** aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se presenta en la vista Modelo de contenido, las propiedades de dicho nodo se mostrarán en la Ventana **Propiedades**.
 
-## <a name="xsd-toolbar"></a>Barra de herramientas XSD
+## <a name="xsd-toolbar"></a>Barra de herramientas de XSD
 
 Cuando está activa la vista Gráfico, los botones siguientes de la barra de herramientas de XSD están habilitados.
 
-![Barra de tareas del Diseñador de esquemas XSD](../xml-tools/media/xsdgraphviewtoolbar.gif)
+![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la [vista modelo de contenido](../xml-tools/content-model-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**2**.|
-|**Mostrar vista de gráfico**|Cambia a la [vista gráfico](../xml-tools/graph-view.md). Se puede tener acceso a esta vista mediante el método abreviado de teclado: **Ctrl**+**3**.|
+|**Mostrar vista Inicio**|Cambia a la [vista Inicio](../xml-tools/start-view.md). Se puede acceder a esta vista usando el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista Modelo de contenido**|Cambia a la [vista Modelo de contenido](../xml-tools/content-model-view.md). Se puede acceder a esta vista usando el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Cambia a la [vista Gráfico](../xml-tools/graph-view.md). Se puede acceder a esta vista usando el método abreviado de teclado: **Ctrl**+**3**.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar del área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
-|**Quitar todo excepto la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
-|**De izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha derecha**.|
-|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha izquierda**.|
-|**De arriba abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha abajo**.|
-|**De abajo arriba**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Se puede tener acceso a esta opción mediante el método abreviado de teclado: **Alt**+**flecha arriba**.|
+|**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
+|**De izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Se puede acceder a esta opción usando el método abreviado de teclado: **Alt**+**flecha derecha**.|
+|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Se puede acceder a esta opción usando el método abreviado de teclado: **Alt**+**flecha izquierda**.|
+|**De arriba abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Se puede acceder a esta opción usando el método abreviado de teclado: **Alt**+**flecha abajo**.|
+|**De abajo hacia arriba**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Se puede acceder a esta opción usando el método abreviado de teclado: **Alt**+**flecha arriba**.|
 
 ## <a name="panscroll"></a>Panorámica/desplazamiento
 
-Puede desplazar la superficie de diseño mediante las barras de desplazamiento o manteniendo presionada la tecla **Ctrl** mientras hace clic y arrastra el mouse. Cuando se obtiene una panorámica de la superficie de diseño usando el método de hacer clic y arrastrar, el cursor cambiará a cuatro flechas en cruz que señalan en cuatro direcciones.
+Puede tener una panorámica de la superficie de diseño usando las barras de desplazamiento o manteniendo presionada la tecla **Ctrl** mientras hace clic y arrastra el mouse. Cuando se obtiene una panorámica de la superficie de diseño usando el método de hacer clic y arrastrar, el cursor cambiará a cuatro flechas en cruz que señalan en cuatro direcciones.
 
-## <a name="undoredo"></a>Deshacer/Rehacer
+## <a name="undoredo"></a>Deshacer/rehacer
 
 La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:
 
@@ -132,17 +132,17 @@ El zoom está disponible en la esquina inferior derecha de la vista Gráfico.
 
 El zoom se puede controlar de las maneras siguientes:
 
-- Manteniendo presionada la tecla **Ctrl** y girando la rueda del mouse cuando el mouse se mantiene sobre la superficie de la vista del gráfico.
+- Manteniendo presionada la tecla **Ctrl** y girando la rueda del mouse cuando este se mantiene sobre la superficie de la vista Gráfico.
 
 - Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
 
-El control deslizante de zoom es opaco cuando se selecciona, se mantiene el mouse sobre él o se usa **Ctrl** con la rueda del mouse para hacer zoom; en el resto de los casos, es transparente.
+El control deslizante de zoom es opaco cuando se selecciona, al mantener el mouse sobre él o al usar **Ctrl** con la rueda del mouse para hacer zoom; en todos los demás casos, es transparente.
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
-Puede alternar entre la vista gráfico y el editor XML si hace clic en un nodo y usa el menú Ver contexto de código (clic con el botón derecho).
+Puede cambiar entre la vista Gráfico y el editor XML haciendo clic en un nodo y usando el menú contextual de Ver código (clic con el botón derecho).
 
-Si realiza cambios en el esquema establecido en el editor XML, los cambios se sincronizarán en la vista gráfico. Para obtener más información, vea [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
+Si realiza modificaciones en el conjunto de esquemas en el editor XML, dichas modificaciones se sincronizarán en la vista Gráfico. Para más información, consulte [Integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vea también
 

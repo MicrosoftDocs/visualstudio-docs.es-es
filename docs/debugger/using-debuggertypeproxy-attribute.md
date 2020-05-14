@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728719"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicar al depurador qué tipo debe mostrar mediante el atributoC#DebuggerTypeProxy (, C++Visual Basic,/CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicar al depurador qué tipo se va a mostrar mediante el atributo DebuggerTypeProxy (C#, Visual Basic y C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica un proxy, o suplente, para un tipo y cambia la forma en que se muestra el tipo en las ventanas del depurador. Cuando se ve una variable que tiene un proxy, el proxy reemplaza al tipo original en la **presentación**. En la ventana de las variables del depurador se muestran sólo los miembros públicos del tipo de servidor proxy. No se muestran los miembros privados.
 
@@ -35,7 +35,7 @@ Este atributo se puede aplicar a:
 - Ensamblados
 
 > [!NOTE]
-> En el caso de código nativo, este atributo solo C++se admite en el código/CLI.
+> En el caso de código nativo, este atributo solo se admite en código de C++/CLI.
 
 Una clase de proxy de tipo debe tener un constructor que tome un argumento del tipo que el proxy reemplazará. El depurador crea una nueva instancia de la clase de proxy de tipo cada vez que necesita mostrar una variable del tipo de destino. Esto puede afectar al rendimiento. Por tanto, en el constructor no debe realizarse más trabajo del estrictamente necesario.
 
@@ -43,11 +43,11 @@ Para minimizar la reducción de rendimiento, el evaluador de expresiones no exam
 
 Se recomienda que el proxy de tipo sea una clase anidada privada dentro de la clase que el atributo tiene como destino. De este modo, puede obtener acceso fácilmente a los miembros internos.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> se pueden heredar, por lo que si se especifica un proxy de tipo en una clase base, se aplicará a las clases derivadas, a menos que esas clases derivadas especifiquen su propio proxy de tipo.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> se puede heredar, por lo que si un proxy del tipo se especifica en una clase base, se aplicará a todas las clases derivadas, a menos que dichas clases especifiquen su propio proxy del tipo.
 
 Si se utiliza <xref:System.Diagnostics.DebuggerTypeProxyAttribute> en el nivel de ensamblado, el parámetro `Target` especifica el tipo que reemplazará el proxy.
 
-Para obtener un ejemplo de cómo usar este atributo junto con <xref:System.Diagnostics.DebuggerDisplayAttribute> y <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, vea[Using the DebuggerDisplay Attribute](../debugger/using-the-debuggerdisplay-attribute.md).
+Para obtener un ejemplo de cómo utilizar este atributo junto con los atributos <xref:System.Diagnostics.DebuggerDisplayAttribute> y <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, vea [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>Utilizar genéricos con DebuggerTypeProxy
 
@@ -59,7 +59,7 @@ La sintaxis de un tipo abierto tiene el siguiente aspecto:
 
 Si utiliza un tipo genérico como destino en `DebuggerTypeProxy`, debe utilizar esta sintaxis. El mecanismo `DebuggerTypeProxy` deduce los parámetros de tipo automáticamente.
 
-Para obtener más información sobre los tipos abiertos y C# cerrados en, vea la sección [ C# especificación del lenguaje](/dotnet/csharp/language-reference/language-specification), 20.5.2 Open and Closed Types.
+Para obtener más información sobre los tipos abiertos y cerrados en C#, vea [Especificación del lenguaje C#](/dotnet/csharp/language-reference/language-specification), sección 20.5.2 Tipos abiertos y cerrados.
 
 Visual Basic no tiene sintaxis de tipos abiertos, por lo que no se puede hacer lo mismo en Visual Basic. En su lugar, debe utilizar una representación de cadena del nombre del tipo abierto.
 

@@ -13,101 +13,101 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911597"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos de depuración de instantáneas en Visual Studio
 
-Si los pasos descritos en este artículo no resuelven el problema, busque el problema en [la comunidad de desarrolladores](https://developercommunity.visualstudio.com/spaces/8/index.html) o informe de un problema nuevo; para ello, elija **ayuda** > **Enviar comentarios** > **notificar un problema** en Visual Studio.
+Si los pasos que se describen en este artículo no resuelven el problema, busque el problema en [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) o notifique un problema nuevo mediante la selección de **Ayuda** > **Enviar comentarios** > **Notificar un problema** en Visual Studio.
 
-## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "adjuntar Snapshot Debugger" encuentra un error de código de Estado HTTP
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Asociar Snapshot Debugger" detecta un error de código de estado HTTP
 
-Si ve el siguiente error en la ventana de **salida** durante el intento de adjuntar, puede ser un problema conocido que se muestra a continuación. Pruebe las soluciones propuestas y, si el problema continúa, póngase en contacto con el alias anterior.
+Si ve el error siguiente en la ventana de **salida** durante el intento de asociación, puede ser un problema conocido que se muestra a continuación. Pruebe las soluciones propuestas y, si el problema continúa, póngase en contacto con el alias anterior.
 
 `[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
 
-### <a name="401-unauthorized"></a>(401) no autorizado
+### <a name="401-unauthorized"></a>(401) No autorizado
 
-Este error indica que la llamada de REST que emite Visual Studio a Azure usa una credencial no válida. Un error conocido con el módulo de OAuth de Azure Active Directory Easy puede producir este error.
-
-Siga estos pasos:
-
-* Asegúrese de que la cuenta de personalización de Visual Studio tiene permisos para la suscripción y el recurso de Azure a los que está asociando. Una manera rápida de determinar esto es comprobar si el recurso está disponible en el cuadro de diálogo de **Depurar** > **adjuntar Snapshot Debugger...**  > **recurso de Azure** > **seleccionar existente**o en Cloud Explorer.
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
-
-### <a name="403-forbidden"></a>(403) prohibido
-
-Este error indica que se ha denegado el permiso. Esto puede deberse a muchos problemas diferentes.
+Este error indica que la llamada de REST que Visual Studio emite a Azure usa una credencial no válida. Un error conocido con el módulo Easy OAuth de Azure Active Directory puede generar este error.
 
 Siga estos pasos:
 
-* Compruebe que la cuenta de Visual Studio tiene una suscripción de Azure válida con los permisos de Access Control basado en roles (RBAC) necesarios para el recurso. En el caso de AppService, compruebe si tiene permisos para [consultar](/rest/api/appservice/appserviceplans/get) el Plan de App Service que hospeda la aplicación.
-* Compruebe que la marca de tiempo de su equipo cliente es correcta y actualizada. Los servidores con marcas de tiempo desactivadas en más de 15 minutos de la marca de tiempo de la solicitud suelen producir este error.
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
+* Asegúrese de que la cuenta de personalización de Visual Studio tiene permisos para la suscripción y el recurso de Azure a los que se está asociando. Una manera rápida de determinar esto es comprobar si el recurso está disponible en el cuadro de diálogo de **Depurar** > **Asociar Snapshot Debugger…**  > **Recurso de Azure** > **Seleccionar existente** o en Cloud Explorer.
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
-### <a name="404-not-found"></a>(404) no encontrado
+### <a name="403-forbidden"></a>(403) Prohibido
+
+Este error indica que se denegó el permiso. Puede deberse a muchos problemas distintos.
+
+Siga estos pasos:
+
+* Compruebe que la cuenta de Visual Studio tiene una suscripción a Azure válida con los permisos de control de acceso basado en rol (RBAC) del recurso. En el caso de AppService, compruebe si tiene permisos para [consultar](/rest/api/appservice/appserviceplans/get) el plan de App Service que hospeda la aplicación.
+* Compruebe que la marca de tiempo de la máquina cliente sea correcta y esté actualizada. Los servidores con marcas de tiempo con una diferencia de más de 15 minutos con respecto la marca de tiempo de la solicitud suelen generar este error.
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
+
+### <a name="404-not-found"></a>(404) No encontrado
 
 Este error indica que el sitio web no se pudo encontrar en el servidor.
 
 Siga estos pasos:
 
-* Compruebe que tiene un sitio Web implementado y en ejecución en el App Service recurso al que está asociando.
-* Compruebe que el sitio está disponible en https://\<Resource\>. azurewebsites.net
-* Compruebe que la aplicación web personalizada que se está ejecutando correctamente no devuelve un código de estado 404 cuando se accede a él en https://\<recurso\>. azurewebsites.net
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
+* Compruebe que tiene un sitio web implementado y en ejecución en el recurso de App Service al que se está asociando.
+* Compruebe que el sitio está disponible en https://\<recurso\>.azurewebsites.net
+* Compruebe que la aplicación web personalizada que se ejecuta correctamente no devuelve un código de estado 404 cuando se accede a ella en https://\<recurso\>.azurewebsites.net
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
-### <a name="406-not-acceptable"></a>(406) no aceptable
+### <a name="406-not-acceptable"></a>(406) No aceptable
 
-Este error indica que el servidor no puede responder al tipo establecido en el encabezado Accept de la solicitud.
+Este error indica que el servidor no puede responder el tipo establecido en el encabezado Accept de la solicitud.
 
 Siga estos pasos:
 
-* Compruebe que el sitio está disponible en https://\<Resource\>. azurewebsites.net
-* Compruebe que el sitio no se ha migrado a nuevas instancias. Snapshot Debugger usa la noción de ARRAffinity para enrutar las solicitudes a instancias específicas que pueden producir este error de forma intermitente.
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
+* Compruebe que el sitio está disponible en https://\<recurso\>.azurewebsites.net
+* Compruebe que el sitio no se migró a instancias nuevas. Snapshot Debugger usa la noción de ARRAffinity para enrutar las solicitudes a instancias específicas que pueden generar este error de forma intermitente.
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
-### <a name="409-conflict"></a>(409) conflicto
+### <a name="409-conflict"></a>(409) Conflicto
 
-Este error indica que la solicitud entra en conflicto con el estado actual del servidor.
+Este error indica que la solicitud está en conflicto con el estado actual del servidor.
 
-Se trata de un problema conocido que se produce cuando un usuario intenta asociar Snapshot Debugger a un AppService que tiene habilitado ApplicationInsights. ApplicationInsights establece el AppSettings con una grafía diferente a la de Visual Studio, lo que produce este problema.
+Este es un problema conocido que se produce cuando un usuario intenta asociar Snapshot Debugger a una instancia de AppService que tiene habilitado ApplicationInsights. ApplicationInsights establece AppSettings con una grafía distinta de Visual Studio, lo que provoca este problema.
 
 ::: moniker range=">= vs-2019"
-Hemos resuelto esto en Visual Studio 2019.
+Esto se resolvió en Visual Studio 2019.
 ::: moniker-end
 
 Siga estos pasos:
 
 ::: moniker range="vs-2017"
 
-* Compruebe en el Azure Portal que el AppSettings para SnapshotDebugger (SNAPSHOTDEBUGGER_EXTENSION_VERSION) y InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) estén en mayúsculas. Si no es así, actualice la configuración manualmente, lo que obliga a que se reinicie el sitio.
+* En Azure Portal, compruebe que AppSettings para SnapshotDebugger (SNAPSHOTDEBUGGER_EXTENSION_VERSION) e InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) están en mayúsculas. Si no es así, actualice manualmente la configuración, lo que obliga a un reinicio del sitio.
 ::: moniker-end
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
-### <a name="500-internal-server-error"></a>(500) error interno del servidor
+### <a name="500-internal-server-error"></a>(500) Error interno del servidor
 
-Este error indica que el sitio está completamente inactivo o el servidor no puede controlar la solicitud. Snapshot Debugger solo funciones de las aplicaciones en ejecución. [Application Insights Snapshot Debugger](/azure/azure-monitor/app/snapshot-debugger) proporciona la instantánea de las excepciones y puede ser la mejor herramienta para sus necesidades.
+Este error indica que el sitio está totalmente fuera de servicio o que el servidor no puede administrar la solicitud. Snapshot Debugger funciona solo en aplicaciones en ejecución. [Application Insights Snapshot Debugger](/azure/azure-monitor/app/snapshot-debugger) permite tomar instantáneas de las excepciones y puede ser la mejor herramienta para sus necesidades.
 
-### <a name="502-bad-gateway"></a>(502) puerta de enlace incorrecta
+### <a name="502-bad-gateway"></a>(502) Puerta de enlace incorrecta
 
 Este error indica un problema de red del lado servidor y puede ser temporal.
 
 Siga estos pasos:
 
-* Intente esperar unos minutos antes de volver a adjuntar el Snapshot Debugger.
-* Si el error persiste, use uno de los canales de comentarios descritos en el principio de este artículo.
+* Intente esperar unos minutos antes de volver a adjuntar Snapshot Debugger.
+* Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto de instantánea no activo
 
-Si ve un icono de advertencia ![acoplamiento icono de advertencia](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Acoplamiento icono de advertencia") con el acoplamiento en lugar del icono de acoplamiento normal, el acoplamiento no está activado.
+Si ve un icono de advertencia ![icono de advertencia de punto de instantánea](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icono de advertencia de punto de instantánea") con el punto de instantánea en lugar del icono de punto de instantánea habitual, significa que el punto de instantánea no está activo.
 
-![Acoplamiento no se activa](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Acoplamiento no se activa")
+![Punto de instantánea no activo](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Punto de instantánea no activo")
 
 Siga estos pasos:
 
-1. Asegúrese de que tiene la misma versión del código fuente que se usó para compilar e implementar la aplicación. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea la ventana **Módulos** mientras se lleva a cabo la depuración de instantáneas y verifique si la columna Archivo de símbolo muestra un archivo .pdb cargado para el módulo que va a depurar. Snapshot Debugger intentará descargar automáticamente y usar los símbolos para la implementación.
+1. Asegúrese de que tiene la misma versión de código fuente que se usó para compilar e implementar la aplicación. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea la ventana **Módulos** mientras se lleva a cabo la depuración de instantáneas y verifique si la columna Archivo de símbolo muestra un archivo .pdb cargado para el módulo que va a depurar. Snapshot Debugger intentará descargar automáticamente y usar los símbolos para la implementación.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Los símbolos no se cargan al abrir una instantánea
 
@@ -121,7 +121,7 @@ Siga estos pasos:
 
    Los símbolos o los archivos .pdb disponibles en el proyecto deben coincidir con la implementación de App Service. La mayoría de las implementaciones (implementación mediante Visual Studio, CI/CD con Azure Pipelines o Kudu, etc.) publicarán los archivos de símbolo en App Service. La configuración del directorio de caché de símbolos permite a Visual Studio usar estos símbolos.
 
-   ![Configuración de símbolos](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Configuración de símbolos")
+   ![Valores de los símbolos](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Valores de los símbolos")
 
 - Como alternativa, si la organización usa un servidor de símbolos o cambia los símbolos a una ruta de acceso distinta, use la configuración de símbolos para cargar los símbolos correctos para su implementación.
 
@@ -144,24 +144,24 @@ Siga estos pasos:
   - Azure Kubernetes Service: aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.2 o posteriores en Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Solo veo instantáneas limitadas en las herramientas de diagnóstico
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Solo veo instantáneas limitadas en las Herramientas de diagnóstico
 
-![Acoplamiento limitado](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Acoplamiento limitado")
+![Punto de instantánea limitado](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Punto de instantánea limitado")
 
 Siga estos pasos:
 
 - Las instantáneas ocupan poco memoria pero tienen una carga de confirmación. Si Snapshot Debugger detecta que el servidor soporta una carga de memoria pesada, no realizará instantáneas. Puede eliminar las instantáneas que ya están capturadas; para ello, detenga la sesión de Snapshot Debugger y vuelva a intentarlo.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: La depuración de instantáneas con varias versiones de Visual Studio genera errores
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: La depuración de instantáneas con varias versiones de Visual Studio genera errores
 
-Visual Studio 2019 requiere una versión más reciente de la extensión de sitio Snapshot Debugger en el Azure App Service.  Esta versión no es compatible con la versión anterior de la extensión de sitio Snapshot Debugger utilizada por Visual Studio 2017.  Recibirá el siguiente error si intenta adjuntar el Snapshot Debugger en Visual Studio 2019 a una Azure App Service que se haya depurado previamente mediante el Snapshot Debugger en Visual Studio 2017:
+Visual Studio 2019 requiere una versión más reciente de la extensión de sitio de Snapshot Debugger en la instancia de Azure App Service.  Esta versión no es compatible con la versión anterior de la extensión de sitio de Snapshot Debugger que usa Visual Studio 2017.  Obtendrá el siguiente error si intenta adjuntar Snapshot Debugger en Visual Studio 2019 a una instancia de Azure App Service que se depuró anteriormente con Snapshot Debugger en Visual Studio 2017:
 
-![Extensión de sitio Snapshot Debugger incompatible Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Extensión de sitio Snapshot Debugger incompatible Visual Studio 2019")
+![Extensión de sitio de Snapshot Debugger no compatible con Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Extensión de sitio de Snapshot Debugger no compatible con Visual Studio 2019")
 
-Por el contrario, si usa Visual Studio 2017 para adjuntar el Snapshot Debugger a un Azure App Service que se ha depurado previamente mediante el Snapshot Debugger en Visual Studio 2019, obtendrá el siguiente error:
+Por el contrario, si usa Visual Studio 2017 para adjuntar Snapshot Debugger a una instancia de Azure App Service que se depuró anteriormente con Snapshot Debugger en Visual Studio 2019, obtendrá el error siguiente:
 
-![Extensión de sitio Snapshot Debugger incompatible Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Extensión de sitio Snapshot Debugger incompatible Visual Studio 2017")
+![Extensión de sitio de Snapshot Debugger no compatible con Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Extensión de sitio de Snapshot Debugger no compatible con Visual Studio 2017")
 
 Para solucionar este problema, elimine la siguiente configuración de la aplicación en Azure Portal y vuelva a adjuntar Snapshot Debugger:
 
@@ -179,9 +179,9 @@ Los registros del agente se pueden encontrar en las ubicaciones siguientes:
 
 - App Services:
   - Vaya al sitio de Kudu en App Service, es decir, yourappservice.**scm**.azurewebsites.net, y acceda a la consola de depuración.
-  - Los registros del agente se almacenan en el siguiente directorio: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Los registros del agente se almacenan en el directorio siguiente:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - Inicie sesión en la máquina virtual; los registros del agente se almacenan en la siguiente ubicación: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Inicie sesión en la máquina virtual, los registros del agente se almacenan de la siguiente manera:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Versión>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Vaya al siguiente directorio: /tmp/diag/AgentLogs/*
 
@@ -190,10 +190,10 @@ Los registros del agente se pueden encontrar en las ubicaciones siguientes:
 Los registros de instrumentación pueden encontrarse en las siguientes ubicaciones:
 
 - App Services:
-  - El registro de errores se envía automáticamente a D:\Home\LogFiles\eventlog.xml, los eventos se marcan con `<Provider Name="Instrumentation Engine" />` o "puntos de interrupción de producción".
+  - Los registros de errores se envían automáticamente a D:\Home\LogFiles\eventlog.xml. Los eventos se marcan con `<Provider Name="Instrumentation Engine" />` o "Puntos de interrupción de producción"
 - VM/VMSS:
   - Inicie sesión en la máquina virtual y abra el Visor de eventos.
-  - Abra la siguiente vista: *Registros de Windows>Aplicación*.
+  - Abra la vista siguiente: *Registros de Windows>Aplicación*.
   - *Filtre el registro actual* por *Origen del evento* con las opciones *Puntos de interrupción de producción* o *Motor de instrumentación*.
 - AKS
   - Registros del motor de instrumentación en /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath en DockerFile)
@@ -221,7 +221,7 @@ La depuración de instantáneas y Application Insights dependen de ICorProfiler,
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.yml)
-- [Depure aplicaciones de ASP.NET dinámicas con el Snapshot Debugger](../debugger/debug-live-azure-applications.md)
-- [Depure conjuntos de escalado de máquinas virtuales de Azure virtual Machines\Virtual ASP.NET con el Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
-- [Depure Live ASP.NET Azure Kubernetes mediante el Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Depuración de aplicaciones ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Depuración de aplicaciones ASP.NET en vivo en Azure Virtual Machines\Virtual Machines Scale Sets con Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Depuración de Azure Kubernetes de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)

@@ -1,5 +1,5 @@
 ---
-title: Depurar JavaScript mediante la consola | Microsoft Docs
+title: Depuración de JavaScript con la consola | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187550"
 ---
-# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript mediante la consola en Visual Studio
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depuración de JavaScript con la consola en Visual Studio
 
-Puede usar la ventana consola JavaScript para interactuar con las aplicaciones UWP compiladas con JavaScript y depurarlas. Estas características se admiten para aplicaciones UWP y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones para UWP compiladas con JavaScript. Estas características son compatibles con las aplicaciones para UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
 La ventana Consola JavaScript le permite:
 
@@ -44,23 +44,23 @@ La ventana Consola JavaScript le permite:
 > [!TIP]
 > Si la ventana Consola JavaScript está cerrada, elija **Depurar**> **Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.
 
-La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, vea [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características de depuración de JavaScript, como el uso del explorador DOM y el establecimiento de puntos de interrupción, vea [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depuración de aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
+La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para más información, consulte el artículo sobre cómo [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para información sobre otras características de depuración de JavaScript, como el uso del Explorador DOM y el establecimiento de los puntos de interrupción, consulte [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [Depuración de aplicaciones en Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="InteractiveConsole"></a> Depuración mediante la ventana Consola JavaScript
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> Depuración mediante la ventana Consola JavaScript
 Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar cómo depurar interactivamente un error de codificación de JavaScript.
 
 > [!NOTE]
-> La aplicación de ejemplo aquí es una aplicación de UWP. Sin embargo, las características de consola descritas aquí también se aplican a las aplicaciones creadas con Visual Studio Tools para Apache Cordova.
+> La aplicación de ejemplo aquí es una aplicación para UWP. Sin embargo, las características de consola descritas aquí también se aplican a las aplicaciones creadas con Visual Studio Tools para Apache Cordova.
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar código JavaScript en la aplicación FlipView
 
 1. Cree una nueva solución en Visual Studio eligiendo **Archivo** > **Nuevo proyecto**.
 
-2. Elija **JavaScript**  > **Windows universal**y, a continuación, elija **aplicación WinJS**.
+2. Elija **JavaScript** > **Windows Universal** y, luego, **WinJS App** (Aplicación WinJS).
 
 3. Escriba un nombre para el proyecto, como `FlipViewApp`, y elija **Aceptar** para crear la aplicación.
 
-4. En el elemento BODY de index. html, reemplace el código HTML existente por este código:
+4. En el elemento BODY de index.html, reemplace el código HTML existente por este código:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,19 +136,19 @@ Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar c�
     })();
     ```
 
-7. Si no hay un destino de depuración seleccionado, elija **equipo local** en la lista desplegable situada junto al botón **dispositivo** en la barra de herramientas de **depuración** :
+7. Si no hay seleccionado un destino de depuración, elija **Máquina local** en la lista desplegable que se encuentra junto al botón **Dispositivo** de la barra de herramientas **Depurar**:
 
-    ![Seleccionar lista de destinos de depuración](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Selección de lista de destino de depuración](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Presiona F5 para iniciar el depurador.
 
     La aplicación se ejecuta pero faltan las imágenes. Los errores APPHOST de la ventana Consola JavaScript indican que faltan imágenes.
 
-9. Con el `FlipView` aplicación en ejecución, escriba `Data.items` en el símbolo del sistema de entrada de la ventana de la consola (junto al símbolo "> >") y presione Entrar.
+9. Con la aplicación `FlipView` en ejecución, escriba `Data.items` en indicador de entrada de la ventana de la consola (junto al símbolo ">>") y presione ENTRAR.
 
     Aparece un visualizador para el objeto `items` en la ventana de consola. Esto indica que se ha creado una instancia del objeto `items` y está disponible en el contexto de script actual. En la ventana de consola, puedes hacer clic para recorrer los nodos de un objeto para ver sus valores de propiedad (o usar las teclas de dirección). Si hacemos clic para bajar en el objeto `items._data` , como se ve en esta ilustración, veremos que las referencias al origen de las imágenes son incorrectas, como era de esperar. Las imágenes predeterminadas (logo.png) siguen presentes en el objeto, y hay imágenes que faltan entremezcladas con las imágenes esperadas.
 
-    ![Ventana consola JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
+    ![Ventana de la Consola JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
 
     Además, tenga en cuenta que hay muchos más elementos en el objeto `items._data` de los que se esperaría.
 
@@ -184,7 +184,7 @@ Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar c�
 
 15. Escriba `Data.items.length = 3` en el símbolo del sistema y presione Entrar. Al hacerlo, se quitan los elementos extraños de los datos.
 
-16. Vuelva a comprobar la aplicación y verá que las imágenes correctas se encuentran en las páginas de `FlipView` correctas.
+16. Vuelva a comprobar la aplicación y verá que las imágenes correctas están en las páginas `FlipView` correctas.
 
 17. En DOM Explorer, puedes ver el elemento DIV actualizado y navegar por el subárbol para buscar los elementos IMG esperados.
 
@@ -192,7 +192,7 @@ Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar c�
 
     Para obtener la página default.html completa que contiene el código de ejemplo corregido, consulte [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).
 
-## <a name="InteractiveDebuggingBreakMode"></a> Depuración interactiva y modo de interrupción
+## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a> Depuración interactiva y modo de interrupción
 Puedes utilizar puntos de interrupción y depurar el código paso a paso por instrucciones mientras utilizas herramientas de depuración de JavaScript, como la ventana Consola JavaScript. Cuando un programa que se ejecuta en el depurador encuentra un punto de interrupción, el depurador suspende temporalmente la ejecución de ese programa. Cuando se suspende la ejecución, el programa cambia del modo de ejecución al modo de interrupción. Puedes reanudar la ejecución en cualquier momento.
 
 Aunque un programa esté en modo de interrupción, puede utilizar la ventana Consola JavaScript para ejecutar scripts y comandos válidos en el contexto actual de ejecución. En este procedimiento, utilizaremos la versión corregida de la aplicación `FlipView` que creamos en un procedimiento anterior para mostrar el uso del modo de interrupción.
@@ -201,13 +201,13 @@ Aunque un programa esté en modo de interrupción, puede utilizar la ventana Con
 
 1. En el archivo default.html de la aplicación `FlipView` que creó antes, abra el menú contextual de la función `updateImages()` y elija **Punto de interrupción** > **Insertar punto de interrupción**.
 
-2. Elija **equipo local** en la lista desplegable situada junto al botón **iniciar depuración** en la barra de herramientas **depurar** .
+2. Elija **Máquina local** en la lista desplegable que se encuentra junto al botón **Iniciar depuración** de la barra de herramientas **Depurar**.
 
 3. Elija **Depurar** > **Iniciar depuración**o presione F5.
 
     La aplicación entra en el modo de interrupción cuando la ejecución alcanza la función `updateImages()` . La línea actual de ejecución del programa se resalta en amarillo.
 
-    ![Usar el modo de interrupción con la consola JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![Uso del modo de interrupción con la Consola Javascript](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     Puedes cambiar los valores de las variables para modificar inmediatamente el estado del programa sin tener que terminar la sesión de depuración actual.
 
@@ -217,7 +217,7 @@ Aunque un programa esté en modo de interrupción, puede utilizar la ventana Con
 
     En la ilustración siguiente se muestra la ventana de la consola en este punto.
 
-    ![Ventana consola JavaScript que muestra un visualizador](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![Ventana de la Consola JavaScript donde se muestra un visualizador](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. Copia una línea de la función de la ventana de salida al indicador de entrada, y cambia el valor de índice a 3:
 
@@ -233,19 +233,19 @@ Aunque un programa esté en modo de interrupción, puede utilizar la ventana Con
 
     Para volver a Visual Studio, presiona F12 o Alt+Tab.
 
-## <a name="SinglelineMultilineMode"></a> Modo de una línea y modo de varias líneas en la ventana Consola JavaScript
+## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a> Modo de una línea y modo de varias líneas en la ventana Consola JavaScript
 El indicador de entrada de la ventana Consola JavaScript admite el modo de una línea y el modo de varias líneas. El procedimiento de depuración interactivo de este tema incluye un ejemplo del uso de ambos modos. Puedes presionar Ctrl+Alt+M para alternar entre los modos.
 
 El modo de una línea proporciona un historial de entradas. Puedes navegar por el historial de entradas mediante las teclas Flecha arriba y Flecha abajo. El modo de una línea borra el indicador de entrada cuando se ejecutan scripts. Para ejecutar un script en modo de una línea, presiona Intro.
 
 El modo de varias líneas no borrar el indicador de entrada cuando se ejecutan scripts. Al cambiar al modo de una línea desde el modo de varias líneas, puedes borrar la línea de entrada presionando **Borrar entrada** (la “X” roja). Para ejecutar un script en modo de varias líneas, presiona Ctrl+Intro o elige el símbolo de flecha de la esquina inferior derecha de la ventana.
 
-## <a name="Switching"></a> Cambio del contexto de ejecución del script
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> Cambio del contexto de ejecución del script
 La ventana Consola JavaScript permite interactuar con un solo contexto de ejecución, que representa una única instancia del host de la plataforma web (WWAHost.exe). En algunos casos, la aplicación puede iniciar otra instancia del host, como al usar un `iframe`, un contrato de participación, un trabajo web o un control `WebView` . Si se está ejecutando otra instancia del host, puede seleccionar un contexto de ejecución distinto mientras ejecuta la aplicación seleccionando el contexto de ejecución en la lista **Destino** .
 
 La siguiente ilustración muestra la lista Destino en la ventana Consola JavaScript.
 
-![Selección de destino en la ventana consola JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+![Selección de destino en la ventana de la Consola JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
 Puede cambiar el contexto de ejecución mediante el comando `cd` , pero debe saber el nombre del otro contexto de ejecución, y la referencia que use debe estar en el ámbito. La lista **Destino** permite un acceso mejorado a otros contextos de ejecución.
 
@@ -255,6 +255,6 @@ Puede cambiar el contexto de ejecución mediante el comando `cd` , pero debe sab
 - [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Depurar un control WebView](../debugger/debug-a-webview-control.md)
 - [Compatibilidad de productos y accesibilidad](https://visualstudio.microsoft.com/vs/support/)
