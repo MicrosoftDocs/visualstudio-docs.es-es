@@ -1,5 +1,5 @@
 ---
-title: Preparación de la depuración de aplicaciones Windows Forms | Microsoft Docs
+title: Preparación para la depuración de aplicaciones Windows Forms | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,17 +22,17 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916396"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Preparación de la depuración: aplicaciones de Windows Forms
-La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms. La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es muy sencilla. Para obtener más información, vea [crear un proyecto de aplicación para Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+# <a name="debugging-preparation-windows-forms-applications"></a>Preparación de la depuración: Aplicaciones de Windows Forms
+La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms. La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es muy sencilla. Para obtener más información, consulte [Creación de un proyecto de aplicación de Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Cuando se crea un proyecto de formularios Windows Forms con la plantilla de proyecto, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea automáticamente la configuración requerida para las versiones Debug y Release. Si fuera necesario, puede cambiar esta configuración. Esta configuración se puede cambiar en el cuadro de diálogo **\<Páginas de propiedades de <nombre de proyecto>** (**Mi proyecto** en Visual Basic).
 
- Para obtener más información, vea [configuración de propiedades recomendadas](../debugger/managed-debugging-recommended-property-settings.md).
+ Para obtener más información, consulte [Valores de propiedades recomendados](../debugger/managed-debugging-recommended-property-settings.md).
 
  En la tabla siguiente se muestra una configuración de propiedades adicional recomendada.
 
@@ -42,7 +42,7 @@ La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms.
 |-----------------------|-----------------|
 |**Acción de inicio**|- Establézcala en **Proyecto de inicio** en la mayoría de los casos. Establézcala en **Programa externo de inicio** para iniciar otro ejecutable al comenzar la depuración (normalmente para la depuración de archivos DLL).|
 
- Es posible depurar aplicaciones de Windows Forms dentro de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o mediante la asociación a una aplicación que ya está en ejecución. Para obtener más información sobre cómo adjuntar, vea [asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Es posible depurar aplicaciones de Windows Forms dentro de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o mediante la asociación a una aplicación que ya está en ejecución. Para obtener más información sobre cómo crear asociaciones, consulte [Crear asociaciones con procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Para depurar una aplicación de Windows Forms en C#, F# o Visual Basic
 
@@ -62,12 +62,12 @@ La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms.
 
 3. En el menú **Depurar**, haga clic en **Iniciar**.
 
-4. Depure con las técnicas descritas en [primer lugar en el depurador](../debugger/debugger-feature-tour.md).
+4. Depure con las técnicas descritas en [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="see-also"></a>Vea también
 - [Depurar código administrado](../debugger/debugging-managed-code.md)
 - [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

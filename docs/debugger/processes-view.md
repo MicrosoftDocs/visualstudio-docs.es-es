@@ -1,5 +1,5 @@
 ---
-title: Vista procesos | Documentos de Microsoft
+title: Vista Procesos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,40 +14,40 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62904239"
 ---
 # <a name="processes-view"></a>Vista Procesos
-La vista procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el nombre de identificador y el módulo de proceso. Utilice la vista procesos si desea examinar un proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo, o se designan "procesos del sistema".
+La vista Procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el identificador del proceso y el nombre del módulo. Use la vista Procesos si quiere examinar un determinado proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo o se designan como "procesos del sistema".
 
- Microsoft Windows admite varios procesos. Cada proceso puede tener uno o varios subprocesos y cada subproceso puede tener uno o más ventanas de nivel superior de asociadas. Cada ventana de nivel superior puede poseer una serie de windows. Un símbolo + indica que un nivel está contraído. La vista contraída consta de una línea por proceso. Haga clic en el signo + para expandir el nivel.
+ Microsoft Windows admite varios procesos. Cada proceso puede tener uno o más subprocesos, y cada subproceso puede tener una o varias ventanas de nivel superior asociadas. Cada ventana de nivel superior puede poseer una serie de ventanas. Un símbolo + indica que un nivel está contraído. La vista contraída se compone de una línea por proceso. Haga clic en el símbolo + para expandir el nivel.
 
- Utilice la vista procesos si desea examinar un proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo, o se designan "procesos del sistema". Para buscar un proceso, contraer el árbol y busque en la lista.
+ Use la vista Procesos si quiere examinar un determinado proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo o se designan como "procesos del sistema". Para buscar un proceso, contraiga el árbol y busque en la lista.
 
 ## <a name="procedures"></a>Procedimientos
 
-#### <a name="to-open-the-processes-view"></a>Para abrir la vista procesos
+#### <a name="to-open-the-processes-view"></a>Para abrir la vista Procesos
 
-1. Desde el **Spy** menú, elija **procesos**.
+1. En el menú **Spy**, seleccione **Procesos**.
 
-   ![Spy&#43; &#43; vista procesos](../debugger/media/spy--_processes.png "Spy ++ _Processes") vista procesos de Spy ++
+   ![Vista Procesos de Spy++](../debugger/media/spy--_processes.png "Spy++_Processes") Vista Procesos de Spy++
 
-   La ilustración anterior muestra la vista procesos con los nodos de proceso y subproceso expandidos.
+   En la ilustración anterior se muestra la vista Procesos con los nodos de proceso y subproceso expandidos.
 
 ### <a name="in-this-section"></a>En esta sección
- [Buscar un proceso en la vista procesos](../debugger/how-to-search-for-a-process-in-processes-view.md) se explica cómo encontrar un proceso específico en la vista procesos.
+ [Búsqueda de un proceso en la vista Procesos](../debugger/how-to-search-for-a-process-in-processes-view.md): se explica cómo buscar un proceso específico en la vista Procesos.
 
- [Mostrar las propiedades de proceso](../debugger/how-to-display-process-properties.md) se explica cómo mostrar más información acerca de un mensaje.
+ [Mostrar propiedades del proceso](../debugger/how-to-display-process-properties.md): se explica cómo mostrar más información sobre un mensaje.
 
 ### <a name="related-sections"></a>Secciones relacionadas
- [Vistas de Spy ++](../debugger/spy-increment-views.md) explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
+ [Vistas de Spy ++](../debugger/spy-increment-views.md): se explican las vistas de árbol de ventanas, mensajes, procesos y subprocesos de Spy++.
 
- [Usar Spy ++](../debugger/using-spy-increment.md) presenta la herramienta Spy ++ y explica cómo se puede usar.
+ [Uso de Spy++](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.
 
- [Procesar el cuadro de diálogo Buscar](../debugger/process-search-dialog-box.md) usa para encontrar el nodo de un proceso específico en la vista procesos.
+ [Cuadro de diálogo Buscar proceso](../debugger/process-search-dialog-box.md): se usa para buscar el nodo de un proceso específico en la vista Procesos.
 
- [Propiedades de cuadro de diálogo procesar](../debugger/process-properties-dialog-box.md) muestra las propiedades de un proceso seleccionado en la vista procesos.
+ [Cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md): muestra las propiedades de un proceso seleccionado en la vista Procesos.
 
- [Referencia de Spy ++](../debugger/spy-increment-reference.md) incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md): incluye secciones que describen cada menú y cuadro de diálogo de Spy++.

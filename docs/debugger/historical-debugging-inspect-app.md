@@ -1,5 +1,5 @@
 ---
-title: Inspeccionar la aplicación con depuración histórica | Documentos de Microsoft
+title: Inspección de la aplicación con depuración histórica | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -10,18 +10,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62848210"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspeccionar la aplicación con depuración en Visual Studio de historial de IntelliTrace (C#, Visual Basic, C++)
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspección de la aplicación con depuración histórica de IntelliTrace en Visual Studio (C#, Visual Basic, C++)
 
-Puede usar [depuración histórica](../debugger/historical-debugging.md) para desplazarse hacia atrás y hacia delante a través de la ejecución de la aplicación y comprobar su estado.
+Puede usar la [depuración histórica](../debugger/historical-debugging.md) para desplazarse hacia atrás y hacia delante por la ejecución de la aplicación e inspeccionar su estado.
 
 Puede usar IntelliTrace en Visual Studio Enterprise, pero no en las ediciones Professional o Community.
 
-## <a name="navigate-your-code-with-historical-debugging"></a>Navegar por el código con depuración histórica
+## <a name="navigate-your-code-with-historical-debugging"></a>Desplazamiento por el código con depuración histórica
 
 Comencemos con un sencillo programa que tiene un error. En una aplicación de consola C#, agregue el código siguiente:
 
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }
 ```
 
-Supondremos que el valor esperado de `resultInt` después de llamar a `AddAll()` es 20 (el resultado de incrementar `testInt` 20 veces). (También supondremos que no se puede ver el error en `AddInt()`). Pero el resultado es 44. ¿Cómo podemos encontrar el error sin pasar por `AddAll()` 10 veces? Podemos usar Depuración histórica para encontrar el error de forma más rápida y sencilla. Esta es la manera de hacerlo:
+Supondremos que el valor esperado de `resultInt` después de llamar a `AddAll()` es 20 (el resultado de incrementar `testInt` 20 veces). (También supondremos que no puede ver el error en `AddInt()`). Pero el resultado es en realidad 44. ¿Cómo podemos encontrar el error sin pasar por `AddAll()` 10 veces? Podemos usar Depuración histórica para encontrar el error de forma más rápida y sencilla. Esta es la manera de hacerlo:
 
-1. En **Herramientas > Opciones > IntelliTrace > General**, asegúrese de que IntelliTrace está habilitado y seleccione **eventos de IntelliTrace e información de llamadas**. Si no selecciona esta opción, no podrá ver el medianil de navegación (tal y como se explica más adelante).
+1. En **Herramientas > Opciones > IntelliTrace > General**, asegúrese de que IntelliTrace está habilitado y seleccione **Eventos e información de llamadas de IntelliTrace**. Si no selecciona esta opción, no podrá ver el medianil de navegación (tal y como se explica más adelante).
 
 2. Establezca un punto de interrupción en la línea `Console.WriteLine(resultInt);` .
 
@@ -79,5 +79,5 @@ Supondremos que el valor esperado de `resultInt` después de llamar a `AddAll()`
 
 Este procedimiento no ha hecho sino arañar la superficie de lo que se puede hacer con Depuración histórica.
 
-- Para ver las instantáneas durante la depuración, consulte [inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md).
+- Para ver instantáneas durante la depuración, consulte [Inspección de los estados de aplicación anteriores mediante IntelliTrace](../debugger/view-historical-application-state.md).
 - Para obtener más información sobre las distintas configuraciones y los efectos de los botones diferentes en el medianil de navegación, consulte [Características de IntelliTrace](../debugger/intellitrace-features.md).

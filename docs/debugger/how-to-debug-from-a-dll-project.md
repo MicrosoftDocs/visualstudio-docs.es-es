@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar desde un proyecto DLL | Documentos de Microsoft
+title: Procedimiento para depurar desde un proyecto DLL | Microsoft Docs
 ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,66 +20,66 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62847985"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedimiento Depurar desde un proyecto DLL en Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedimiento para depurar desde un proyecto DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
-Es una manera de depurar un proyecto DLL especificar la aplicación que realiza la llamada en las propiedades del proyecto DLL. A continuación, puede iniciar la depuración desde el propio proyecto DLL. Para que este método funcione, la aplicación debe llamar a la misma DLL en la misma ubicación que la configure. Si la aplicación busca y carga una versión diferente del archivo DLL, esa versión no contiene los puntos de interrupción. Otras formas de depurar archivos DLL, consulte [proyectos DLL de depuración](../debugger/debugging-dll-projects.md).
+Una manera de depurar un proyecto DLL consiste en especificar la aplicación que realiza la llamada en las propiedades del proyecto DLL. Después, puede iniciar la depuración desde el propio proyecto DLL. Para que este método funcione, la aplicación debe llamar al mismo archivo DLL en la misma ubicación que en la que se configura. Si la aplicación encuentra y carga otra versión del archivo DLL, esa versión no contendrá los puntos de interrupción. Para obtener otros métodos de depuración de archivos DLL, vea [Depuración de proyectos DLL](../debugger/debugging-dll-projects.md).
 
-Si su aplicación administrada llama a un archivo DLL nativo o la aplicación nativa llama a un archivo DLL administrado, puede depurar el archivo DLL y la aplicación que realiza la llamada. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
+Si la aplicación administrada llama a un archivo DLL nativo o si la aplicación nativa llama a un archivo DLL administrado, puede depurar el archivo DLL y la aplicación que realiza la llamada. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
 
-Proyectos de archivos DLL nativos y administrados tienen una configuración diferente para especificar las aplicaciones que realiza la llamada.
+Los proyectos de archivos DLL nativos y administrados tienen otra configuración para especificar las aplicaciones que realizan la llamada.
 
-## <a name="specify-a-calling-app-in-a-native-dll-project"></a>Especifique una aplicación que realiza la llamada en un proyecto DLL nativo
+## <a name="specify-a-calling-app-in-a-native-dll-project"></a>Especificación de una aplicación de llamada en un proyecto DLL nativo
 
-1. Seleccione el proyecto DLL de C++ en **el Explorador de soluciones**. Seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el proyecto DLL de C++ en el **Explorador de soluciones**. Seleccione el icono **Propiedades**, presione **Alt**+**Entrar**, o bien haga clic con el botón derecho y seleccione **Propiedades**.
 
-1. En el  **\<proyecto > páginas de propiedades** diálogo cuadro, asegúrese de que el **configuración** campo en la parte superior de la ventana se establece en **depurar**.
+1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, asegúrese de que el campo **Configuración** de la parte superior de la ventana esté establecido en **Depurar**.
 
-1. Seleccione **propiedades de configuración** > **depuración**.
+1. Seleccione **Propiedades de configuración** > **Depuración**.
 
-1. En el **depurador para iniciar** elija **depurador Local de Windows** o **depurador remoto de Windows**.
+1. En la lista **Depurador para iniciar**, elija **Depurador local de Windows** o  **Depurador remoto de Windows**.
 
-1. En el **comando** o **comando remoto** , agregue la ruta de acceso completa y el nombre de la aplicación que realiza la llamada, como un *.exe* archivo.
+1. En el cuadro **Comando** o **Comando remoto**, agregue la ruta de acceso completa y el nombre de archivo de la aplicación que realiza la llamada, como un archivo *.exe*.
 
-   ![Ventana de propiedades de depuración](../debugger/media/dbg-debugging-properties-dll.png "ventana Propiedades de depuración")
+   ![Ventana Propiedades de depuración](../debugger/media/dbg-debugging-properties-dll.png "Debug Properties window")
 
 1. Agregue los argumentos de programa necesarios en el cuadro **Argumentos de comandos**.
 
 1. Seleccione **Aceptar**.
 
-## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Especifique una aplicación que realiza la llamada en un proyecto DLL administrado
+## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Especificación de una aplicación de llamada en un proyecto DLL administrado
 
-1. Seleccione el proyecto DLL de Visual Basic o C# en **el Explorador de soluciones**. Seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el proyecto DLL de C# o Visual Basic en el **Explorador de soluciones**. Seleccione el icono **Propiedades**, presione **Alt**+**Entrar**, o bien haga clic con el botón derecho y seleccione **Propiedades**.
 
 1. Asegúrese de que el campo **Configuración** que hay en la parte superior de la ventana esté establecido en **Depurar**.
 
-1. En **Iniciar acción**:
+1. En **Acción de inicio**:
 
-   - Para los archivos DLL de .NET Framework, seleccione **iniciar programa externo**y agregue la ruta de acceso completa y nombre de la aplicación que realiza la llamada.
+   - Para archivos DLL de .NET Framework, seleccione **Programa externo de inicio** y agregue la ruta de acceso y el nombre completo de la aplicación que realiza la llamada.
 
-   - O bien, seleccione **Iniciar explorador con la dirección URL** y rellene la dirección URL de una aplicación ASP.NET local.
+   - O bien, seleccione **Iniciar explorador con la dirección URL** y rellene la dirección URL de una aplicación de ASP.NET local.
 
-   - Para los archivos DLL de .NET Core, el **depurar** página de propiedades es diferente. Seleccione **ejecutable** desde el **iniciar** lista desplegable y, a continuación, agregue la ruta de acceso completa y el nombre de la aplicación que realiza la llamada en el **ejecutable** campo.
+   - En el caso de los archivos DLL de .NET Core, la página **Propiedades de depuración** es diferente. Seleccione **Ejecutable** en el menú desplegable **Inicio** y, después, agregue la ruta de acceso y el nombre completo de la aplicación que realiza la llamada en el campo **Ejecutable**.
 
-1. Agregue los argumentos de línea de comandos necesarios en el **argumentos de línea de comandos** o **argumentos de la aplicación** campo.
+1. Agregue los argumentos de línea de comandos necesarios en el campo **Argumentos de la línea de comandos** o **Argumentos de la aplicación**.
 
-   ![Ventana Propiedades de depuración de C#](../debugger/media/dbg-debugging-properties-dll-csharp.png "ventana Propiedades de depuración de C#")
+   ![Ventana Propiedades de depuración de C#](../debugger/media/dbg-debugging-properties-dll-csharp.png "C# Debug Properties window")
 
-1. Use **archivo** > **guardar los elementos seleccionados** o **Ctrl**+**S** para guardar los cambios.
+1. Use **Archivo** > **Guardar elementos seleccionados** o presione **Ctrl**+**S** para guardar los cambios.
 
-## <a name="debug-from-the-dll-project"></a>Depurar desde el proyecto DLL
+## <a name="debug-from-the-dll-project"></a>Depuración desde el proyecto DLL
 
-1. Establecer puntos de interrupción en el proyecto DLL.
+1. Establezca puntos de interrupción en el proyecto de DLL.
 
-1. Haga clic en el proyecto DLL y elija **establecer como proyecto de inicio**.
+1. Haga clic con el botón derecho en el proyecto de DLL y seleccione **Establecer como proyecto de inicio**.
 
-1. Asegúrese de que el **configuración de soluciones** campo se establece en **depurar**. Presione **F5**, haga clic en el verde **iniciar** flecha, o bien seleccione **depurar** > **Iniciar depuración**.
+1. Asegúrese de que el campo **Configuración de soluciones** está establecido en **Depuración**. Presione **F5**, haga clic en la flecha **Iniciar** de color verde o seleccione **Depurar** > **Iniciar depuración**.
 
-Si la depuración no alcanza los puntos de interrupción, asegúrese de que el archivo DLL de salida (de forma predeterminada, el  *\<proyecto > \Debug* carpeta) es la ubicación que está llamando la aplicación que realiza la llamada.
+Si la depuración no alcanza los puntos de interrupción, asegúrese de que la salida del archivo DLL (de forma predeterminada, la carpeta *\<proyecto>\Debug*) es la ubicación a la que llama la aplicación que realiza la llamada.
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de proyectos DLL](../debugger/debugging-dll-projects.md)

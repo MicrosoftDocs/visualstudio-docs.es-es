@@ -1,5 +1,5 @@
 ---
-title: Comandos del menú Ventana | Documentos de Microsoft
+title: Comandos del menú Ventana | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62900972"
 ---
 # <a name="window-menu-commands"></a>Comandos del menú Ventana
-El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.
+En el menú **Ventana** se proporcionan comandos para administrar las ventanas de Spy++.
 
- **CASCADE** Reorganiza todas las ventanas en cascada.
+ **Cascade** Reorganiza todas las ventanas en un patrón en cascada.
 
- **Mosaico horizontal** reorganizar todas las ventanas en un patrón de mosaico horizontal.
+ **Mosaico horizontal** Reorganiza todas las ventanas en un patrón de mosaico horizontal.
 
  **Mosaico vertical** Reorganiza todas las ventanas en un patrón de mosaico vertical.
 
- **Organizar iconos** reorganiza los iconos de la vista, si windows se han minimizado.
+ **Organizar iconos** Reorganiza los iconos de la vista, si se han minimizado las ventanas.
 
- **Cerrar / Cerrar todo** cierra una o todas las ventanas de Spy ++.
+ **Cerrar/Cerrar todo** Cierra una o todas las ventanas en Spy++.
 
- **Actualizar** actualiza la vista seleccionada actualmente.
+ **Actualizar** Actualiza la vista seleccionada actualmente.
 
- **Ventana** permite la selección de una ventana específica.
+ **Ventana** Permite seleccionar una ventana específica.

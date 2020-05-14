@@ -1,5 +1,5 @@
 ---
-title: Solo se admite la depuración en modo mixto cuando se usa Microsoft .NET Framework 2,0 o 3,0 | Microsoft Docs
+title: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 ó 3.0 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730917"
@@ -51,7 +51,7 @@ Las versiones de Microsoft .NET Framework anteriores a la 2.0 no proporcionan co
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
-- Consulte [configuración de la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Vea [Configuración de la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)

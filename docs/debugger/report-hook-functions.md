@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729872"
@@ -37,7 +37,7 @@ Una función de enlace de informe, instalada mediante [_CrtSetReportHook](/cpp/c
 int YourReportHook(int nRptType, char *szMsg, int *retVal);
 ```
 
- El puntero que se pasa a **_CrtSetReportHook** es del tipo **_CRT_REPORT_HOOK**, tal y como se define en CRTDBG. C
+ El puntero que se pasa a **_CrtSetReportHook** del tipo **_CRT_REPORT_HOOK**, según se define en CRTDBG.H:
 
 ```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);

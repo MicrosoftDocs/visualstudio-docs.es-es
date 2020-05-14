@@ -1,5 +1,5 @@
 ---
-title: 'Error: no se ha instalado ASP.NET | Microsoft Docs'
+title: 'Error: ASP.NET no está instalado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737920"
@@ -37,7 +37,7 @@ Este error se produce si [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_m
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    donde *version* representa el número de versión del .NET Framework instalado en el equipo, como por ejemplo v 1.0.370. Puede determinar la versión del marco examinando el directorio de `\WINDOWS\Microsoft.NET\Framework`.
+    Donde *version* representa el número de la versión de .NET Framework instalada en el equipo, por ejemplo, la 1.0.370. Para determinar la versión de .NET Framework, consulte el directorio `\WINDOWS\Microsoft.NET\Framework`.
 
    > [!NOTE]
    > En Windows Server 2003, puede instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante el subprograma **Agregar o quitar programas** del Panel de control.

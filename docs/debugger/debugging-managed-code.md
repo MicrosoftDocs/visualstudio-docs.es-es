@@ -1,5 +1,5 @@
 ---
-title: Depurar código administrado | Microsoft Docs
+title: Depuración de código administrado | Microsoft Docs
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73188419"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depurar códigoC#administrado (, F#Visual Basic C++,,/CLI)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depuración de código administrado (C#, Visual Basic, F#, C++/CLI)
 
-En esta sección se tratan problemas y técnicas de depuración comunes para aplicaciones administradas o aplicaciones escritas en lenguajes que tienen como C#destino el C++Common Language Runtime, como Visual Basic, y/CLI. Las técnicas descritas a continuación son técnicas de alto nivel. [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
+En esta sección se habla de los problemas y las técnicas de depuración comunes para aplicaciones administradas, o aplicaciones escritas en lenguajes para Common Language Runtime, como Visual Basic, C# y C++/CLI. Las técnicas descritas a continuación son técnicas de alto nivel. [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -38,7 +38,7 @@ Describe aserciones en el código administrado, que prueban condiciones especifi
 [Instrucciones Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Describe la instrucción `Stop`, que proporciona una alternativa al establecimiento de un punto de interrupción. También se proporciona código de ejemplo, junto con comparaciones entre las instrucciones `Stop` y `End`, así como entre las instrucciones `Stop` y `Assert`.
 
-[Tutorial: Depurar Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Tutorial: Depuración de un formulario Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 Ofrece instrucciones paso a paso para crear un Windows Form y para depurar dicho formulario. Un Windows Form, un componente estándar de una aplicación para Windows administrada, es una de las aplicaciones administradas más comunes. En este tutorial se utiliza Visual C# y Visual Basic, pero normalmente las técnicas para crear un formulario Windows Forms con C++ son similares.
 
 [Depuración en el método OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -62,7 +62,7 @@ Describe cómo se usan las ventanas de herramientas **Tareas paralelas** y **Pil
 ## <a name="related-sections"></a>Secciones relacionadas
 
 [IntelliTrace](../debugger/intellitrace.md)\
-Buscar errores más rápido y fácil grabando el historial de ejecución de la aplicación con IntelliTrace. Avanzar y retroceder por las llamadas y eventos registrados para examinar el estado de la aplicación en puntos en el tiempo clave. Depurar el código sin tener que establecer tantos puntos de interrupción o reiniciar la aplicación con tanta frecuencia. Requiere Visual Studio Enterprise.
+Buscar errores más rápido y fácil grabando el historial de ejecución de la aplicación con IntelliTrace. Avanzar y retroceder por las llamadas y eventos registrados para examinar el estado de la aplicación en puntos en el tiempo clave. Depurar el código sin tener que establecer tantos puntos de interrupción o reiniciar la aplicación con tanta frecuencia. Requiere Visual Studio Enterprise.
 
 [Seguimiento e instrumentación de aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
 Describe la traza, una forma de supervisar la ejecución de una aplicación en funcionamiento, y la instrumentación, que permite colocar instrucciones de seguimiento en puntos estratégicos del código. En este tema también se proporcionan vínculos a una introducción a la instrumentación y la traza, modificadores de traza, agentes de escucha de traza, traza del código en una aplicación, adición de instrucciones de traza al código de una aplicación y compilación condicional con <xref:System.Diagnostics.Debug> y <xref:System.Diagnostics.Trace>.
@@ -74,14 +74,14 @@ Describe una opción del vinculador que agrega <xref:System.Diagnostics.Debuggab
 Proporciona consideraciones sobre la depuración de aplicaciones de servicios de Windows, como la configuración, la asociación al proceso, la depuración del código del método `OnStart` y el método Main del servicio, el establecimiento de puntos de interrupción y el uso del Administrador de control de servicios para iniciar, detener, pausar y continuar el servicio.
 
 [Depuración y generación de perfiles](/dotnet/framework/debug-trace-profile/index)\
-Describe la depuración de aplicaciones .NET y los requisitos de configuración.
+Explica la depuración de aplicaciones .NET y los requisitos de configuración.
 
 [Depuración de scripts y aplicaciones web](how-to-enable-debugging-for-aspnet-applications.md)\
 Describe problemas y técnicas de depuración comunes que pueden aparecer en la depuración de scripts y aplicaciones Web.
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: depurar controles de Windows Forms personalizados en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Tutorial: Depuración de controles personalizados de Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: Herramientas de depuración de COM | Microsoft Docs
+title: Herramientas de depuración COM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
 ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/24/2019
 ms.locfileid: "71211283"
@@ -47,4 +47,4 @@ Los ejemplos ActiveX de MFC, OCLIENT y SUPERPAD también se pueden utilizar para
 - [Depurar en Visual Studio](../debugger/index.yml)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
 - [Ejemplo de OCLIENT: Muestra una aplicación contenedora de edición visual](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Ejemplo de SUPERPAD: Muestra un servidor de edición visual que edita texto usando CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Ejemplo de SUPERPAD: Muestra un servidor de edición visual que edita texto mediante CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

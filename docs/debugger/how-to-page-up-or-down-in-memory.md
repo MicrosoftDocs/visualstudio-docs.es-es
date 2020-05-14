@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: retropaginar o avanzar en la memoria | Microsoft Docs'
+title: Procedimiento Retroceso o avance en la memoria | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733022"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
 
 Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la ventana **Desensamblado**, puede utilizar la barra de desplazamiento vertical para moverse hacia arriba o abajo en el espacio de memoria.
 
@@ -48,5 +48,5 @@ Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la 
 
 ## <a name="see-also"></a>Vea también
 - [Ventana Memoria](../debugger/memory-windows.md)
-- [Cómo: Usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)
+- [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

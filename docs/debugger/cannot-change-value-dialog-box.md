@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo no se puede cambiar el valor | Microsoft Docs
+title: Cuadro de diálogo No se puede cambiar el valor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745741"
 ---
-# <a name="cannot-change-value-dialog-box"></a>No se puede cambiar el valor (cuadro de diálogo)
+# <a name="cannot-change-value-dialog-box"></a>Cuadro de diálogo No se puede cambiar el valor
 ## <a name="error"></a>Error
  `The value of this variable cannot be changed` &#124; `The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*
 

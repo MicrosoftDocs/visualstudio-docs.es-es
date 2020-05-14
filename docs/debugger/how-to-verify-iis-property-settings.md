@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Compruebe la configuración de la propiedad IIS | Documentos de Microsoft
+title: Procedimiento para comprobar los valores de configuración de propiedades de IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62846433"
@@ -35,7 +35,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Para comprobar la configuración de IIS para la aplicación Web
 
-1. Abra el **herramientas administrativas** ventana: En el **iniciar** menú, elija **programas**y, a continuación, haga clic en **herramientas administrativas**. Si no aparece **Herramientas administrativas** en el menú **Programas**, búsquelo en el **Panel de control**.
+1. Abra la ventana **Herramientas administrativas**: En menú **Inicio**, seleccione **Programas** y, después, haga clic en **Herramientas administrativas**. Si no aparece **Herramientas administrativas** en el menú **Programas**, búsquelo en el **Panel de control**.
 
    - En Windows 2000, seleccione **Administrador de servicios Internet**.
 
@@ -59,9 +59,9 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
 
    3. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Métodos de autenticación**.
 
-5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: Asociar el verbo de depuración con la extensión](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: para asociar el verbo DEBUG a la extensión](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
-6. Para una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación configurado en **Administrador de Internet Information Services (IIS)**, **Administrador de servicios Internet** o **Internet Information Services**.
+6. Para una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación configurado en **Administrador de Internet Information Services (IIS)** , **Administrador de servicios Internet** o **Internet Information Services**.
 
    1. En la ventana **Propiedades** de la aplicación web, seleccione la ficha **Directorio** si la aplicación está en un directorio virtual, o la ficha **Directorio principal** si la aplicación está en un sitio web.
 
@@ -75,7 +75,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
 
 8. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Propiedades**.
 
-9. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Administrador de Internet Information Services (IIS)**, **Administrador de servicios Internet** o **Internet Information Services**.
+9. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Administrador de Internet Information Services (IIS)** , **Administrador de servicios Internet** o **Internet Information Services**.
 
 ## <a name="see-also"></a>Vea también
 

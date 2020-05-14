@@ -1,5 +1,5 @@
 ---
-title: Acerca de la ventana registros | Microsoft Docs
+title: Acerca de la ventana Registros | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738250"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Acerca de la ventana registros en Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Acerca de la ventana Registros en Visual Studio (C#, C++, Visual Basic y F#)
 
 La ventana **Registros** solo está disponible si está habilitada la depuración de nivel de dirección en el cuadro de diálogo **Opciones**, nodo **Depuración**.
 
@@ -40,31 +40,31 @@ La ventana **Registros** solo está disponible si está habilitada la depuració
 
  Para más información sobre cómo mostrar la ventana **Registros**, consulte [Using the Registers Window](../debugger/how-to-use-the-registers-window.md) (Uso de la ventana Registros).
 
- Al mirar en la ventana **registros** , verá entradas como `EAX = 003110D8`.
+ Al examinar la ventana **Registros**, podrá ver entradas como `EAX = 003110D8`.
 
- El símbolo situado a la izquierda del signo `=` es el nombre del registro, `EAX`, en este caso. El número a la derecha del signo `=` representa el contenido del registro.
+ El símbolo situado a la izquierda del signo `=` es el nombre del registro, en este caso, `EAX`. El número a la derecha del signo `=` representa el contenido del registro.
 
  La ventana **Registros** permite algo más que simplemente ver el contenido de un registro. Cuando el programa está en modo de interrupción en el código nativo, puede hacer clic en el contenido de un registro y modificar el valor. Esto no es algo que deba hacerse a la ligera. Si no comprende la función del registro que modifica y los datos que contiene, el resultado del cambio será probablemente el bloqueo del programa, u otra consecuencia no deseada. Desgraciadamente, una explicación detallada de los conjuntos de registros de los diversos procesadores Intel y compatibles queda muy lejos del alcance de esta breve introducción.
 
-## <a name="register-groups"></a>Registrar grupos
+## <a name="register-groups"></a>Grupos de registros
 
 Por motivos de claridad, los registros se organizan en grupos en la ventana **Registros**. Si hace clic con el botón derecho en la ventana **Registros**, aparecerá un menú contextual con una lista de grupos que puede mostrar u ocultar según su conveniencia.
 
 ## <a name="register-flags"></a>Marcas de registro
 
-En el caso de los procesadores Intel x86, puede ver los siguientes marcadores en la ventana **registros** . Durante una sesión de depuración, también puede editar estas marcas.
+En el caso de los procesadores Intel x86, es posible que se muestren las marcas siguientes en la ventana **Registros**. Durante una sesión de depuración, también puede editar estas marcas.
 
 |Marcar|Establecer valor|
 |-|-|
 |Desbordamiento|OV = 1|
-|Dirección|SUBIR = 1|
-|Las|EI = 1|
+|Dirección|UP = 1|
+|Interrupción|EI = 1|
 |Signo|PL = 1|
 |Cero|ZR = 1|
-|Transporte auxiliar|AC = 1|
+|Carry auxiliar|AC = 1|
 |Parity|PE = 1|
-|Procede|CY = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
+- [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

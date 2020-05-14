@@ -1,5 +1,5 @@
 ---
-title: Detener depuración en curso (cuadro de diálogo) | Microsoft Docs
+title: Detener depuración en curso (cuadro de diálogo) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3beefe16f8883eb64d7d0a2641cabf9eb1f702fa
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729653"
@@ -31,7 +31,7 @@ Este cuadro de diálogo aparece cuando el depurador intenta detener una sesión 
 
  Puede esperar a que los procesos se desasocien y desaparezca este cuadro de diálogo, o utilizar el botón **Detener ahora** para forzar la finalización inmediata.
 
- **Detener ahora** Haga clic en este botón para finalizar la sesión de depuración inmediatamente. El uso de **Stop Now** finalizará en lugar de desasociar los procesos que se están depurando. Si está depurando procesos del sistema y utiliza **Detener ahora** para finalizarlos podrían producirse efectos inesperados y no deseados.
+ **Detener ahora** Haga clic en este botón para detener la sesión de depuración inmediatamente. Si usa **Detener ahora**, finalizará el proceso que se está depurando, en lugar de desasociarlo. Si está depurando procesos del sistema y utiliza **Detener ahora** para finalizarlos podrían producirse efectos inesperados y no deseados.
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

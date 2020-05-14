@@ -1,5 +1,5 @@
 ---
-title: Ficha general, cuadro de diálogo Propiedades de proceso | Documentos de Microsoft
+title: General (Pestaña), Propiedades del proceso (Cuadro de diálogo) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,23 +12,23 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62849820"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del proceso)
-Use la **General** tab para obtener más información acerca de un proceso específico. Para mostrar el [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.
+Use la pestaña **General** para obtener más información sobre un proceso determinado. Para mostrar el [Cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), mueva el foco a una ventana de la [Vista Procesos](../debugger/processes-view.md). Seleccione cualquier nodo de proceso del árbol y luego **Propiedades** en el menú **Vista**.
 
- Las siguientes opciones están disponibles en el **General** pestaña:
+ En la pestaña **General** están disponibles los valores siguientes:
 
 |Entrada|Descripción|
 |-----------|-----------------|
 |**Nombre del módulo**|El nombre del módulo.|
-|**Identificador del proceso**|El identificador único de este proceso. Números de Id. de proceso se reutilizan, por lo que identifican a un proceso sólo durante la vigencia de ese proceso. El tipo de objeto de proceso se crea cuando se ejecuta un programa. Todos los subprocesos en un proceso de compartan el mismo espacio de direcciones y tengan acceso a los mismos datos.|
-|**Base de prioridad**|Prioridad base actual de este proceso. Los subprocesos de un proceso pueden aumentar y disminuir su propia prioridad base con respecto a la prioridad del proceso base.|
-|**Subprocesos**|El número de subprocesos activos actualmente en este proceso.|
-|**Tiempo de CPU**|Tiempo total de CPU empleado en este proceso y sus subprocesos. Igual al tiempo de usuario más tiempo privilegiado.|
-|**Tiempo de usuario**|El tiempo transcurrido acumulado que los subprocesos de este proceso han dedicado a ejecutar código en modo de usuario en subprocesos no inactivos. Las aplicaciones se ejecutan en modo de usuario, como hacen los subsistemas, como el Administrador de ventanas y el motor de gráficos.|
-|**Tiempo con privilegios**|El tiempo total transcurrido este proceso ha estado ejecutándose en modo privilegiado en subprocesos no inactivos. La capa de servicio, las rutinas ejecutivas y el núcleo de ejecutan en modo privilegiado. Controladores de dispositivos para la mayoría de los dispositivos que no sean impresoras y adaptadores de gráficos también se ejecutan en modo privilegiado. Algún trabajo que hace Windows para la aplicación puede aparecer en otros procesos del subsistema además de tiempo privilegiado.|
-|**Tiempo transcurrido**|El tiempo transcurrido total que se ha estado ejecutando este proceso.|
+|**Identificador del proceso**|Identificador único de este proceso. Los números de identificador de proceso se reutilizan, por lo que identifican un proceso solo mientras dura dicho proceso. Cuando se ejecuta un programa, se crea el tipo de objeto Proceso. Todos los subprocesos de un proceso comparten el mismo espacio de direcciones y tienen acceso a los mismos datos.|
+|**Base de prioridad**|Prioridad base actual de este proceso. Los subprocesos de un proceso pueden aumentar y reducir su propia prioridad base con respecto a la prioridad base del proceso.|
+|**Subprocesos**|Número de subprocesos activos actualmente en este proceso.|
+|**Tiempo de CPU**|Tiempo total de CPU dedicado a este proceso y sus subprocesos. Es igual al Tiempo de usuario más el Tiempo con privilegios.|
+|**Tiempo de usuario**|Tiempo transcurrido total que los subprocesos de este proceso han dedicado a ejecutar código en modo usuario en subprocesos no inactivos. Las aplicaciones se ejecutan en modo usuario, lo mismo que subsistemas como el administrador de ventanas y el motor de gráficos.|
+|**Tiempo con privilegios**|Tiempo transcurrido total que este proceso ha estado en ejecución en modo con privilegios en subprocesos no inactivos. La capa de servicio, las rutinas ejecutivas y el kernel se ejecutan en modo con privilegios. Los controladores de dispositivo de la mayoría de los dispositivos distintos a los adaptadores de gráficos e impresoras también se ejecutan en modo con privilegios. Algún trabajo que Windows realiza para la aplicación puede aparecer en otros procesos del subsistema, además de en Tiempo con privilegios.|
+|**Tiempo transcurrido**|Tiempo transcurrido total que este proceso ha estado ejecutándose.|

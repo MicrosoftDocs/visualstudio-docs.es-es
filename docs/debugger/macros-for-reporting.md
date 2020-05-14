@@ -1,5 +1,5 @@
 ---
-title: Macros para informes | Microsoft Docs
+title: Macros para los informes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,13 +24,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731391"
 ---
 # <a name="macros-for-reporting"></a>Macros para los informes
-Para la depuración, puede usar las macros **_RPTn** y **_RPTFn** , definidas en CRTDBG. H, para reemplazar el uso de `printf` instrucciones. No es necesario que las incierre en **#ifdef**s, porque desaparecen automáticamente en la versión de lanzamiento cuando no se define **_ Debug** .
+Para la depuración, puede usar las macros **_RPTn** y **_RPTFn**, definidas en CRTDBG.H, para reemplazar el uso de instrucciones `printf`. No tiene que encerrarlas entre **#ifdef**, porque desaparecen automáticamente en la versión de lanzamiento cuando **_DEBUG** no está definido.
 
 |Macro|Descripción|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ Para la depuración, puede usar las macros **_RPTn** y **_RPTFn** , definidas en
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-Es posible que una aplicación determinada necesite informes de depuración que no proporcionan las macros proporcionadas con la biblioteca en tiempo de ejecución de C. En estos casos, puede escribir una macro diseñada específicamente para satisfacer sus propios requisitos. En uno de los archivos de encabezado, por ejemplo, se podría incluir código como el siguiente para definir una macro denominada **ALERT_IF2**:
+Es posible que una aplicación concreta necesite información de depuración que las macros suministradas con la biblioteca en tiempo de ejecución C no proporcionan. En estos casos, puede escribir una macro diseñada específicamente para satisfacer sus propios requisitos. En uno de los archivos de encabezado, por ejemplo, se podría incluir código como el siguiente para definir una macro denominada **ALERT_IF2**:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,7 +70,7 @@ Es posible que una aplicación determinada necesite informes de depuración que 
 #endif
 ```
 
- Una llamada a **ALERT_IF2** podría realizar todas las funciones del código **printf** :
+ Una llamada a **ALERT_IF2** podría realizar todas las funciones del código **printf**:
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),

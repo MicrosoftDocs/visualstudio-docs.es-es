@@ -1,5 +1,5 @@
 ---
-title: Pila de llamadas de eventos gráficos | Microsoft Docs
+title: Pila de llamadas de eventos gráficos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735514"
@@ -34,7 +34,7 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
 
 |Columna|Descripción|
 |------------|-----------------|
-|**Nombre**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|
+|**Name**|Símbolo que identifica de forma única la función que contiene el sitio de llamada. El símbolo de depuración de la función se muestra cuando está disponible. Cuando no lo está, se muestra el desplazamiento de función.|
 |**Archivo**|El nombre de archivo del archivo de código fuente o el archivo de biblioteca que contiene el sitio de llamada.|
 |**Ubicación**|El número de línea del sitio de llamada.|
 

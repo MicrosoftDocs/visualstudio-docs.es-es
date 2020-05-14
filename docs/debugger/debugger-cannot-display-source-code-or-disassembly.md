@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738344"
@@ -30,7 +30,7 @@ Este error reza como sigue:
 
  Este error puede producirse por una serie de motivos:
 
-- Puede haber alcanzado un punto de interrupción en una ubicación para la que no existe código fuente, mientras depura un lenguaje que no admite desensamblado. Abra la ventana **puntos de interrupción** , busque el punto de interrupción y elimínelo.
+- Puede haber alcanzado un punto de interrupción en una ubicación para la que no existe código fuente, mientras depura un lenguaje que no admite desensamblado. Abra la ventana **Puntos de interrupción**, localice el punto de interrupción y elimínelo.
 
 - Si está depurando un script, puede haber alcanzado un punto de interrupción cuando no existía ningún subproceso en el programa. Elija **Paso** o **Continuar** en el menú **Depurar** para reanudar la depuración.
 

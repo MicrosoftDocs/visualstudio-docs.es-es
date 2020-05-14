@@ -1,5 +1,5 @@
 ---
-title: 'Error: no se puede conectar con el equipo &lt;name &gt;. No se puede encontrar el equipo en la red. | Microsoft Docs'
+title: 'Error: No se puede conectar al equipo &lt;nombre&gt;. No se puede encontrar el equipo en la red. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736835"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Error: no se puede conectar con el equipo &lt;name &gt;. No se puede encontrar el equipo en la red.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Error: No se puede conectar al equipo &lt;nombre&gt;. No se puede encontrar el equipo en la red.
 Este comportamiento se produce si se da una de las condiciones siguientes:
 
 - La conexión al equipo remoto se interrumpe.

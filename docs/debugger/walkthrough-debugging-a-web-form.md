@@ -1,5 +1,5 @@
 ---
-title: Depurar un formulario Web Forms | Microsoft Docs
+title: Depuración de un formulario web | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62901641"
@@ -34,7 +34,7 @@ ms.locfileid: "62901641"
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], también conocidas como formularios Web Forms. También muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en la ventana **Inspección**.
 
 > [!NOTE]
-> Para completar este tutorial, debe tener privilegios de administrador en el equipo servidor. De forma predeterminada, el proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], aspnet_wp.exe o w3wp.exe, se ejecuta como un proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para depurar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, consulte [requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).
+> Para completar este tutorial, debe tener privilegios de administrador en el equipo servidor. De forma predeterminada, el proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], aspnet_wp.exe o w3wp.exe, se ejecuta como un proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para depurar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe tener privilegios de administrador en el equipo en el que se ejecute [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, vea [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).
 
 Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
@@ -48,13 +48,13 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
 
 3. En el panel **Plantillas**, haga clic en **Sitio web ASP.NET**.
 
-4. En el **ubicación** línea, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite**.
+4. En la línea **Ubicación**, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite** .
 
 5. En la lista **Lenguaje**, haga clic en **Visual C#** o en **Visual Basic**.
 
 6. Haga clic en **Aceptar**.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea un nuevo proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **Sitio web** bajo el **Sitio web predeterminado** de IIS.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea un proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **Sitio web** bajo el **Sitio web predeterminado** de IIS.
 
 7. Haga clic en la ficha **Diseño** en el margen inferior.
 
@@ -68,7 +68,7 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
 
 11. Haga doble clic en el control de botón que colocó.
 
-     Esto le llevará a la página de códigos: Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El cursor debe estar en la función `Button1_Click` .
+     Esto le lleva a la página de códigos: Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El cursor debe estar en la función `Button1_Click` .
 
 12. Agregue a la función `Button1_Click` las siguientes líneas de código:
 
@@ -140,7 +140,7 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
 
 1. En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede adjuntar el depurador a un proceso en ejecución. Para lograr una depuración más efectiva, compile el archivo ejecutable como una versión de depuración con archivos de símbolos (PDB).
 
-2. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado: 
+2. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:
 
    ```vb
    TextBox1.Text = "Button was clicked!"
@@ -154,7 +154,7 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
 
     El formulario Web Forms empieza a ejecutarse en Internet Explorer, pero el depurador no está asociado.
 
-4. Establezca una asociación al proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).
+4. Establezca una asociación al proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, vea [Depuración de aplicaciones web implementadas](../debugger/debugging-deployed-web-applications.md).
 
 5. En Internet Explorer, haga clic en el botón del formulario.
 

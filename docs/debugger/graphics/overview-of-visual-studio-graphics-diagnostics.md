@@ -1,5 +1,5 @@
 ---
-title: Información general sobre diagnóstico de gráficos | Microsoft Docs
+title: Introducción al diagnóstico de gráficos | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187913"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
-El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse en aplicaciones que se ejecutan localmente en su PC Windows o en un dispositivo o equipo remoto.
+El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC Windows o en un dispositivo o equipo remoto.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Usar Diagnóstico de gráficos para depurar problemas de representación
  La depuración de problemas de representación en una aplicación repleta de gráficos no es tan sencilla como iniciar un depurador y recorrer el código. En cada fotograma se producen cientos de miles de píxeles únicos, cada uno según un conjunto complejo de estado, datos, parámetros y código, de los cuales quizás solo algunos píxeles muestren el problema que intenta diagnosticar. Para complicar aún más las cosas, el código que genera cada píxel se ejecuta en hardware especializado que procesa cientos de píxeles en paralelo. Las herramientas y técnicas de depuración tradicionales, difíciles de utilizar incluso en código con pocos subprocesos, son ineficaces cuando hay que hacer frente a tantos datos.
@@ -24,12 +24,12 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
  Las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] están diseñadas para ayudarle a encontrar problemas de representación a partir de los artefactos visuales que indican el problema y, a continuación, remontarse al origen del problema centrándose únicamente en el código del sombreador, las etapas de canalización, las llamadas de dibujo, los recursos y el estado del dispositivo pertinentes en el propio código fuente de la aplicación.
 
 ## <a name="directx-version-compatibility"></a>Compatibilidad de versiones de DirectX
- Diagnóstico de gráficos admite aplicaciones que usan Direct3D 10 o superior y proporciona compatibilidad limitada para las aplicaciones que usan Direct2D. No admite las aplicaciones que usan versiones anteriores de Direct3D, DirectDraw u otras API gráficas.
+ Diagnóstico de gráficos admite aplicaciones que usan Direct3D 10 o superior, y proporciona compatibilidad limitada para las aplicaciones que usan Direct2D. No admite las aplicaciones que usan versiones anteriores de Direct3D, DirectDraw u otras API gráficas.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 y Direct3D 12
- Windows 10 presentó *Direct3D 12*, que es sustancialmente diferente de Direct3D 10 y Direct3D 11. Estas diferencias vuelven a colocar a DirectX a la altura del hardware gráfico moderno y liberan todo su potencial, pero también suponen grandes cambios en la API y aumentan la responsabilidad del programador para administrar la duración y la contención de los recursos. A pesar de las diferencias, Diagnóstico de gráficos con Direct3D 12 mantiene la paridad de características con Diagnóstico de gráficos con Direct3D 11,2.
+ Windows 10 presentó *Direct3D 12*, que es sustancialmente diferente de Direct3D 10 y Direct3D 11. Estas diferencias vuelven a colocar a DirectX a la altura del hardware gráfico moderno y liberan todo su potencial, pero también suponen grandes cambios en la API y aumentan la responsabilidad del programador para administrar la duración y la contención de los recursos. A pesar de las diferencias, Diagnóstico de gráficos con Direct3D 12 mantiene la paridad de características con Diagnóstico de gráficos con Direct3D 11.2.
 
- Windows 10 también mantiene la compatibilidad con versiones anteriores de Direct3D y con los juegos y aplicaciones que dependen de ellas. Diagnóstico de gráficos en Visual Studio sigue siendo compatible con Direct3D 10 y Direct3D 11 en Windows 10.
+ Windows 10 también mantiene la compatibilidad con versiones anteriores de Direct3D y con los juegos y aplicaciones que dependen de ellas. Diagnóstico de gráficos en Visual Studio sigue siendo compatible con Direct3D 10 y Direct3D 11 en Windows 10.
 
 ### <a name="limited-direct2d-support"></a>Compatibilidad limitada con Direct2D
  Como Direct2D es una API de modo de usuario basada en Direct3D, puede utilizar Diagnóstico de gráficos para ayudar a depurar problemas de representación en aplicaciones que usan Direct2D. Sin embargo, puesto que, en lugar de los eventos de alto nivel de Direct2D, solo se registran los eventos subyacentes de Direct3D, los eventos de Direct2D no aparecerán en la lista de eventos de gráficos. Además, como la relación entre los eventos de Direct2D y los eventos resultantes de Direct3D no siempre está clara, el uso de Diagnóstico de gráficos para depurar problemas de representación en aplicaciones que utilizan Direct2D no es sencillo. No obstante, puede utilizar Diagnóstico de gráficos para obtener información sobres problemas de representación de bajo nivel en aplicaciones que utilizan Direct2D.
@@ -81,14 +81,14 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
 ### <a name="event-list"></a>Lista de eventos
  Los eventos gráficos recogen todas las llamadas a la API de Direct3D y los eventos definidos por el usuario.
 
- La [lista de eventos](graphics-event-list.md) muestra todos los eventos de gráficos que se registraron durante el fotograma que está examinando. Para ayudarle a encontrar lo más relevante, la lista de eventos puede verse de forma jerárquica, con los cambios de estado recientes debajo la subsiguiente llamada a draw, o como una escala de tiempo. Además, los eventos están codificados con colores según la cola a la que pertenecen y puede filtrar la lista para incluir sólo los eventos que le interesan.
+ La [Lista de eventos](graphics-event-list.md) muestra todos los eventos gráficos que se registraron para la duración del fotograma que está examinando. Para ayudarle a encontrar lo más relevante, la lista de eventos puede verse de forma jerárquica, con los cambios de estado recientes debajo la subsiguiente llamada a draw, o como una escala de tiempo. Además, los eventos están codificados con colores según la cola a la que pertenecen y puede filtrar la lista para incluir sólo los eventos que le interesan.
 
  Al seleccionar un evento en la lista, el resto de las herramientas de Análisis de gráficos reflejan el estado del fotograma en el momento de ese evento. De esta manera, puede ver el efecto de cualquier evento en la GPU. Por ejemplo, verá el efecto inmediato de cualquier llamada a draw en el búfer de fotogramas, incluso si queda oculta por llamadas a draw subsiguientes. Algunos eventos tienen también hipervínculos que puede seguir para ver más detalles sobre sus parámetros u objetos de recurso relacionados.
 
 ### <a name="pipeline-stages"></a>Etapas de canalización
  Cada llamada a draw de su aplicación pasa por la canalización de gráficos que proporciona Direct3D. En cada fase de la canalización, el resultado de la fase anterior es transformado por un pequeño programa, denominado sombreador, y, a continuación, pasa a la fase siguiente hasta que finalmente se representa en la pantalla. Se producen muchos errores de representación en el límite entre fases de canalización cuando el formato de salida es distinto del que espera la etapa siguiente o simplemente cuando una de las fases produce resultados incorrectos. Normalmente, solo se obtiene el resultado final tal y como se verá en la pantalla y no es fácil distinguir en qué punto de la canalización se produjo el error.
 
- La ventana [etapas de canalización](graphics-pipeline-stages.md) visualiza el resultado de cada fase de forma independiente, para que pueda determinar con mayor facilidad en qué fase aparece primero un problema de representación. Una vez determinada la fase, puede comenzar a depurar a su sombreador directamente desde la ventana Etapas de canalización.
+ La ventana [Etapas de canalización](graphics-pipeline-stages.md) muestra el resultado de cada fase de forma independiente, por lo que es más fácil determinar en qué fase aparece por primera vez un problema de representación. Una vez determinada la fase, puede comenzar a depurar a su sombreador directamente desde la ventana Etapas de canalización.
 
 ### <a name="graphics-state"></a>Estado de gráficos
  Las operaciones de representación dependen mucho de un estado que suele estar repartido entre varios objetos. Muchos tipos de problemas de representación están provocados por el una configuración de estado errónea.
@@ -98,17 +98,17 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
 ### <a name="pixel-history"></a>Historial de píxeles
  En casos complejos, no es raro que el sombreado se aplique varias veces a un píxel en un solo fotograma. A veces, el color anterior se sobrescribe, pero otras veces se combinan los colores para lograr efectos como la transparencia. Cuando el resultado de combinarlos no tiene el aspecto correcto, no es fácil saber si se debe a que uno de los colores es incorrecto o si hay un problema con la forma en se combinan. En otras ocasiones, puede parecer que falta un objeto porque se rechazó su contribución al píxel por algún motivo.
 
- La ventana [historial de píxeles](graphics-pixel-history.md) visualiza el historial del sombreador completo de todos los píxeles del fotograma, incluidas las contribuciones rechazadas. Para las contribuciones que no se han rechazado, muestra los resultados del sombreado sin procesar y cómo se combina cada color nuevo con el anterior. Con esta información, es mucho más fácil encontrar el origen de errores en píxeles mezclan resultados del sombreador y saber si falta objeto representado falta porque su contribución al píxel se rechazó indebidamente.
+ La ventana [Historial de píxeles](graphics-pixel-history.md) muestra el historial completo de sombreador de cada píxel del fotograma, incluidas las contribuciones rechazadas. Para las contribuciones que no se han rechazado, muestra los resultados del sombreado sin procesar y cómo se combina cada color nuevo con el anterior. Con esta información, es mucho más fácil encontrar el origen de errores en píxeles mezclan resultados del sombreador y saber si falta objeto representado falta porque su contribución al píxel se rechazó indebidamente.
 
 ### <a name="event-call-stack"></a>Pila de llamadas de eventos
  El código del sombreador no es la única fuente de problemas de representación en una aplicación de Direct3D; a veces, el código fuente de la aplicación pasa el parámetro incorrecto o no configura Direct3D correctamente. Un tipo de error que puede detectar con más facilidad gracias a la función Historial de píxeles es cuando falta un objeto representado porque se han rechazado todas sus píxeles. Este tipo de error ocurre normalmente cuando se configura incorrectamente un valor, como el valor que controla cómo se realiza la prueba de profundidad, y suele encontrarse en alguna parte de la pila de llamadas a draw del objeto falta.
 
- La ventana [pila de llamadas de eventos](graphics-event-call-stack.md) muestra la pila de llamadas completa de cada evento de gráficos en la lista de eventos e incluso le permite saltar al código fuente de la aplicación si la información de depuración está disponible. Se trata de una herramienta eficaz para hacer el seguimiento de un error desde el lugar en que aparece por primera vez, en la GPU, hasta donde se origina en el código fuente de la aplicación.
+ La ventana [Pila de llamadas de eventos](graphics-event-call-stack.md) muestra en la lista de eventos la pila completa de llamadas de cada evento de gráficos, e incluso permite saltar al código fuente de la aplicación si hay información de depuración disponible. Se trata de una herramienta eficaz para hacer el seguimiento de un error desde el lugar en que aparece por primera vez, en la GPU, hasta donde se origina en el código fuente de la aplicación.
 
 ### <a name="object-table"></a>Tabla de objetos
  Cada fotograma que representa su aplicación está probablemente respaldado por cientos o incluso miles de objetos de recursos. Puede tratarse de búferes de reserva y destinos de representación, texturas, búferes de vértices, búferes de índice, búferes generales..., casi todo lo que Direct3D recuerda como un objeto.
 
- La [tabla de objetos](graphics-object-table.md) muestra todos los objetos que existen en el momento del evento de gráficos seleccionado en la lista de eventos. Puesto que la mayoría de los objetos en una aplicación típica son texturas, la lista de eventos está optimizada para mostrar de un vistazo los detalles pertinentes para las imágenes. La columna Tipo indica el tipo de objeto que se encuentra en cada fila, y la columna Formato muestra el subtipo o la versión del objeto. También se muestran otros detalles. Algunos objetos cuentan también con hipervínculos que puede seguir para usar un visor más especializado al visualizar objetos como texturas (puede ver la textura como una imagen) o búferes (puede elegir la forma en que el visor de búfer analiza y muestra los bytes del búfer sin formato definiendo el formato del búfer).
+ La [Tabla de objetos](graphics-object-table.md) muestra todos los objetos que existen en el momento del evento de gráficos seleccionado en la lista de eventos. Puesto que la mayoría de los objetos en una aplicación típica son texturas, la lista de eventos está optimizada para mostrar de un vistazo los detalles pertinentes para las imágenes. La columna Tipo indica el tipo de objeto que se encuentra en cada fila, y la columna Formato muestra el subtipo o la versión del objeto. También se muestran otros detalles. Algunos objetos cuentan también con hipervínculos que puede seguir para usar un visor más especializado al visualizar objetos como texturas (puede ver la textura como una imagen) o búferes (puede elegir la forma en que el visor de búfer analiza y muestra los bytes del búfer sin formato definiendo el formato del búfer).
 
 ### <a name="frame-analysis"></a>Análisis de fotogramas
  Los gráficos de su aplicación no solo deben ser correctos; además, deben ser rápidos. Incluso en dispositivos menos potentes, como equipos portátiles con gráficos integrados o teléfonos móviles. Y también deben tener una apariencia inmejorable.

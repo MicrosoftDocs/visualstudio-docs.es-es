@@ -1,5 +1,5 @@
 ---
-title: Depurar archivos de código fuente/propiedades comunes/páginas de propiedades de solución
+title: Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de solución
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 735432db485277e2265479e625f5e8acaa2cc2e3
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738397"
@@ -36,7 +36,7 @@ Esta página de propiedades especifica si el depurador buscará archivos de cód
 
  **Directorios que contienen código fuente** Contiene una lista de directorios en los que el depurador busca archivos de código fuente al depurar la solución. Los subdirectorios de los directorios especificados también se incluyen en la búsqueda.
 
- **No buscar estos archivos de código fuente** Escriba los nombres de los archivos que no desea que lea el depurador. Si el depurador encuentra uno de estos archivos en uno de los directorios especificados anteriormente, lo omitirá. Si aparece el cuadro de diálogo **Buscar código fuente** mientras está depurando y hace clic en **Cancelar**, el archivo que buscaba se agregará a dicha lista y el depurador no seguirá buscándolo.
+ **No buscar los archivos de código fuente siguientes** Especifique los nombres de los archivos que no quiere que lea el depurador. Si el depurador encuentra uno de estos archivos en uno de los directorios especificados anteriormente, lo omitirá. Si aparece el cuadro de diálogo **Buscar código fuente** mientras está depurando y hace clic en **Cancelar**, el archivo que buscaba se agregará a dicha lista y el depurador no seguirá buscándolo.
 
 ## <a name="see-also"></a>Vea también
 

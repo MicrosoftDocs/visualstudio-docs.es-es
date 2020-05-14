@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: capturar información de gráficos | Microsoft Docs'
+title: 'Tutorial: Captura de información de gráficos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734727"
@@ -51,12 +51,12 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
 
    Con el foco en la aplicación, presione **Imprimir pantalla**.
 
-  Cada vez que se captura información sobre un fotograma, el Diagnóstico de gráficos registra los eventos de Direct3D y el estado asociado y agrega dichos datos a un registro de gráficos. Se crea un nuevo registro de gráficos para cada sesión de Diagnóstico de gráficos. Para obtener información sobre los registros de gráficos, consulte [información general](overview-of-visual-studio-graphics-diagnostics.md).
+  Cada vez que se captura información sobre un fotograma, el Diagnóstico de gráficos registra los eventos de Direct3D y el estado asociado y agrega dichos datos a un registro de gráficos. Se crea un nuevo registro de gráficos para cada sesión de Diagnóstico de gráficos. Para obtener información sobre los registros de gráficos, consulte [Información general](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
  En este tutorial se ha mostrado cómo capturar información de gráficos de forma manual. El paso siguiente puede ser:
 
-- Aprenda cómo analizar la información de gráficos capturada mediante las herramientas de Diagnóstico de gráficos. Vea [información general](overview-of-visual-studio-graphics-diagnostics.md).
+- Aprenda cómo analizar la información de gráficos capturada mediante las herramientas de Diagnóstico de gráficos. Vea [Información general](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vea también
 - [Capturing Graphics Information](capturing-graphics-information.md)

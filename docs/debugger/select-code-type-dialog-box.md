@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Seleccionar tipo de código | Microsoft Docs
+title: Seleccionar tipo de código (Cuadro de diálogo) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729580"
@@ -31,9 +31,9 @@ ms.locfileid: "72729580"
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
 Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proceso** y haga clic en el botón **Seleccionar**.
 
- **Determinar automáticamente el tipo de código que se va a depurar** Se seleccionará el depurador adecuado en función del tipo de código que se está ejecutando.
+ **Determinar automáticamente el tipo de código para depurar** Se seleccionará el depurador adecuado en función del tipo de código que se está ejecutando.
 
- **Depure estos tipos de código:** En la lista proporcionada, elija el tipo de código que desea depurar.
+ **Depurar estos tipos de código:** En la lista proporcionada, elija el tipo de código que desee depurar.
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

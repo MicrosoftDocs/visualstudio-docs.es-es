@@ -1,5 +1,5 @@
 ---
-title: Arquitectura del visualizador | Microsoft Docs
+title: Arquitectura de un visualizador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,7 +15,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187162"
@@ -86,8 +86,8 @@ La arquitectura de un visualizador del depurador tiene dos partes:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -O bien-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Escribir un visualizador](create-custom-visualizers-of-data.md)
-- [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Tutorial: Escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Tutorial: Escribir un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Cómo: Escritura de un visualizador](create-custom-visualizers-of-data.md)
+- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Tutorial: Escritura un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Tutorial: Escritura un visualizador en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Consideraciones de seguridad del visualizador](../debugger/visualizer-security-considerations.md)

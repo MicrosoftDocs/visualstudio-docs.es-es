@@ -1,5 +1,5 @@
 ---
-title: 'Error: no se puede ir automáticamente al servidor | Microsoft Docs'
+title: 'Error: No se puede ir automáticamente al servidor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +19,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 34b298b299bb4911bfe64b362d94c3e90ecfa585
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736875"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>Error: No se puede ir al servidor automáticamente
+# <a name="error-unable-to-automatically-step-into-the-server"></a>Error: No se puede depurar paso a paso por instrucciones el servidor automáticamente
 El error reza como sigue:
 
  No se puede ir al servidor automáticamente. El depurador no recibió una notificación antes de que se ejecutase el procedimiento remoto

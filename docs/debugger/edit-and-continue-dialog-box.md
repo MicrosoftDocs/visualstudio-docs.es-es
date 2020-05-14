@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Editar y continuar | Microsoft Docs
+title: Editar y continuar (Cuadro de diálogo)| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737941"
@@ -27,7 +27,7 @@ ms.locfileid: "72737941"
 # <a name="edit-and-continue-dialog-box"></a>Cuadro de diálogo Editar y continuar
 (Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **Editar y continuar** reconoce que puede aplicar cambios en el código. Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md).
 
- No **volver a mostrar este cuadro de diálogo** Si activa esta casilla, **Editar y continuar** aplicará los cambios en el código sin pedir permiso en el futuro. Para volver a activar esta advertencia, vaya al cuadro de diálogo **Opciones**, abra la carpeta **Depuración**, haga clic en la página **Editar y continuar** y seleccione **Invocado por comandos de depuración** y **Preguntar antes**.
+ **No volver a mostrar este cuadro de diálogo** Si activa esta casilla, **Editar y continuar** aplica los cambios de código sin pedir permiso a partir de ese momento. Para volver a activar esta advertencia, vaya al cuadro de diálogo **Opciones**, abra la carpeta **Depuración**, haga clic en la página **Editar y continuar** y seleccione **Invocado por comandos de depuración** y **Preguntar antes**.
 
 ## <a name="see-also"></a>Vea también
 - [Seguridad del depurador](../debugger/debugger-security.md)

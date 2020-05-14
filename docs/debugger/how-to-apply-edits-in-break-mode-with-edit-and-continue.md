@@ -1,5 +1,5 @@
 ---
-title: Aplicar ediciones en modo de interrupción con editar y continuar | Microsoft Docs
+title: Aplicación de ediciones en el modo de interrupción con Editar y continuar | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,15 +25,15 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734030"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Cómo: aplicar ediciones en modo de interrupción con editar y continuar (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedimiento Aplicación de ediciones en el modo de interrupción con Editar y continuar (Visual Basic)
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.
 
-Para conocer las limitaciones en el uso de editar y continuar durante la depuración, vea [cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md).
+Para conocer las limitaciones sobre el uso de Editar y continuar durante la depuración, vea [Cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
 ### <a name="to-edit-code-in-break-mode"></a>Para editar código en modo de interrupción
 
@@ -47,11 +47,11 @@ Para conocer las limitaciones en el uso de editar y continuar durante la depurac
 
          o bien
 
-    - Cuando se produzca una excepción, elija **Habilitar edición** en el **Asistente de excepciones**.
+    - Si se produce una excepción, elija **Habilitar edición** en el **Asistente de excepciones**.
 
-2. Realice los cambios de código que desee y admita.
+2. Realice los cambios de código admitidos que desee.
 
-     Para obtener más información, consulte [cambios admitidosC# en el código (y Visual Basic)](../debugger/supported-code-changes-csharp.md).
+     Para obtener más información, vea [Cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
     > [!NOTE]
     > Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.

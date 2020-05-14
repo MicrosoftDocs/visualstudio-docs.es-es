@@ -1,5 +1,5 @@
 ---
-title: Estado de los gráficos | Documentos de Microsoft
+title: Estado de gráficos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
 ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/11/2019
 ms.locfileid: "67823770"
@@ -26,7 +26,7 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
 ### <a name="state-views"></a>Vistas de estado
  La tabla de estado puede verse de varias maneras:
 
-|Ver|DESCRIPCIÓN|
+|Ver|Descripción|
 |----------|-----------------|
 |Vista de estado de entrada de la API|Esta vista presenta el estado con un diseño similar a los objetos de Direct3D que lo componen.|
 |Vista de estado de entrada lógica|Esta vista presenta el estado en una vista lógica que no refleja el diseño de los objetos de Direct3D que lo componen.|
@@ -48,11 +48,11 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
 ### <a name="state-table-format"></a>Formato de la tabla de estado
  La ventana de estado contiene varias columnas de información.
 
-|Columna|DESCRIPCIÓN|
+|Columna|Descripción|
 |------------|-----------------|
 |NOMBRE|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En los estados de la **vista de estado de entrada de la API** y la **vista de estado lógico**, se aplica sangría a los nombres para mostrar la relación jerárquica entre los estados.<br /><br /> En el estado de la **vista de estado anclado**, se muestran los nombres completos en una lista plana.|
 |Valor|El valor del elemento de estado.|
-|Type|El tipo del elemento de estado.|
+|Tipo|El tipo del elemento de estado.|
 
 ### <a name="changed-state"></a>Cambio de estado
  Por lo general, el estado de los gráficos cambia de forma incremental entre las sucesivas llamadas a draw. Si se cambia el estado de forma incorrecta, pueden producirse diversos problemas de representación. Para que resulte más fácil la localización del estado que ha cambiado desde la llamada a draw anterior, se marca con un asterisco y se muestra en rojo (no solo el estado, sino también su correspondiente elemento de estado primario). De este modo, puede identificar con facilidad el estado que ha cambiado en el nivel superior y, a continuación, explorar los detalles en profundidad.

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Mostrar y ocultar grupos de registros | Documentos de Microsoft
+title: Procedimiento Presentación y ocultación de grupos de registros | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62847795"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedimiento Mostrar y ocultar grupos de registros (C#, C++, Visual Basic, F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Procedimiento Presentación y ocultación de grupos de registros (C#, C++, Visual Basic, F#)
 
 La ventana **Registros** está disponible únicamente si la depuración del nivel de dirección está habilitada en el cuadro de diálogo **Opciones**, nodo **Depuración**, categoría **General**.
 
@@ -35,7 +35,7 @@ Por motivos de claridad, los registros se organizan en grupos en la ventana **Re
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
-## <a name="display-or-hide-register-groups"></a>Mostrar u ocultar grupos de registros
+## <a name="display-or-hide-register-groups"></a>Presentación u ocultación de grupos de registros
 
 1. Haga clic con el botón derecho del mouse en la ventana **Registros**.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: depurar un control ActiveX | Microsoft Docs'
+title: Procedimiento Depuración de un control ActiveX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72733867"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Cómo: Depurar un control ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
@@ -42,7 +42,7 @@ Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en 
 
 1. En el Explorador de soluciones, seleccione el proyecto.
 
-2. En el menú **Ver** , elija **páginas de propiedades**.
+2. En el menú **Ver**, seleccione **Páginas de propiedades**.
 
 3. En el cuadro de diálogo **Páginas de propiedades del proyecto**, abra la carpeta **Propiedades de configuración** y seleccione **Depuración**.
 

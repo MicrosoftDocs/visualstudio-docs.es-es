@@ -1,5 +1,5 @@
 ---
-title: La depuración en modo mixto para procesos x64 solo se admite cuando se usa Microsoft.NET Framework 4 o superior | Microsoft Docs
+title: El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72731025"
@@ -55,7 +55,7 @@ Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
-- Consulte [configuración de la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Vea [Configurar la depuración de Transact-SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
+title: Procedimiento Uso de comprobaciones nativas en tiempo de ejecución | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -39,13 +39,13 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 954cf8436a9f0653685b41920cad84698ae50abb
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732154"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
-En un proyecto de C++ Visual Studio, puede usar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para detectar errores comunes en tiempo de ejecución como:
+# <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
+En un proyecto de C++ de Visual Studio, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks) de forma nativa para detectar errores en tiempo de ejecución, tales como:
 
 - Daños en el puntero de la pila
 
@@ -59,7 +59,7 @@ En un proyecto de C++ Visual Studio, puede usar [runtime_checks](/cpp/preprocess
 
   Si utiliza **/RTC** con una generación optimizada ( **/O**), obtendrá un error del compilador. Si utiliza un pragma `runtime_checks` en una versión optimizada, el pragma no surte ningún efecto.
 
-  Cuando se depura un programa con las comprobaciones en tiempo de ejecución habilitadas, la acción predeterminada es la de que el programa se detenga y se interrumpa su depuración cuando se produzca un error en tiempo de ejecución. Puede cambiar este comportamiento predeterminado para cualquier comprobación en tiempo de ejecución. Para obtener más información, vea [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
+  Cuando se depura un programa con las comprobaciones en tiempo de ejecución habilitadas, la acción predeterminada es la de que el programa se detenga y se interrumpa su depuración cuando se produzca un error en tiempo de ejecución. Puede cambiar este comportamiento predeterminado para cualquier comprobación en tiempo de ejecución. Para obtener más información, vea [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
 
   Los siguientes procedimientos describen cómo habilitar las comprobaciones en tiempo de ejecución nativas en una versión de depuración y cómo modificar el comportamiento de la comprobación en tiempo de ejecución nativa.
 

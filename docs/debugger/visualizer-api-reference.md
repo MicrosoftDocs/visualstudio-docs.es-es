@@ -1,5 +1,5 @@
 ---
-title: Referencia de la API del visualizador | Microsoft Docs
+title: Referencia de API del controlador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,7 +19,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187214"
@@ -42,6 +42,6 @@ Las API del visualizador se proporcionan a usuarios que desean escribir un visua
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Escribir un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Cómo: Escribir un visualizador](create-custom-visualizers-of-data.md)
+- [Tutorial: Escritura de un visualizador en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Cómo: Escritura de un visualizador](create-custom-visualizers-of-data.md)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)

@@ -1,5 +1,5 @@
 ---
-title: Ver el código de desensamblado en el depurador | Microsoft Docs
+title: Visualización del código de desensamblado en el depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
 ms.topic: conceptual
@@ -24,50 +24,50 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62846395"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Ver el código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualización del código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
-En la ventana **Desensamblado** se muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador Just-in-Time (JIT), no el lenguaje intermedio de Microsoft (MSIL) que creado por el compilador de Visual Studio.
+En la ventana **Desensamblado** se muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado se corresponden al código nativo creado por el compilador JIT y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.
 
 > [!NOTE]
-> Para aprovechar al máximo la **desensamblado** ventana, comprender o aprender los conceptos básicos de [programación de lenguaje de ensamblado](https://wikipedia.org/wiki/Assembly_language).
+> Para sacar el máximo partido de la ventana **Desensamblado**, infórmese bien sobre los conceptos básicos de la [programación del lenguaje de ensamblado](https://wikipedia.org/wiki/Assembly_language).
 
-Esta característica solo está disponible si está habilitada la depuración de nivel de dirección. No está disponible para la depuración de SQL o la secuencia de comandos.
+Esta característica solo está disponible si está habilitada la depuración en el nivel de dirección. No está disponible para la depuración de scripts ni de SQL.
 
 Además de las instrucciones de ensamblado, la ventana **Desensamblado** puede mostrar la siguiente información opcional:
 
-- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, es la dirección de memoria real. Para Visual Basic o C#, es un desplazamiento desde el principio de la función.
+- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, esta es la dirección de memoria real. Para Visual Basic o C#, es un desplazamiento desde el inicio de la función.
 
 - Código fuente del que se deriva el código ensamblado.
 
-- Código de bytes, es decir, las representaciones de bytes de las instrucciones de MSIL o real del equipo.
+- Bytes de código, esto es, representaciones en bytes de las instrucciones máquina o MSIL reales.
 
 - Nombres de símbolos para las direcciones de memoria.
 
 - Número de líneas correspondiente al código fuente.
 
-Las instrucciones de lenguaje de ensamblado consta de *teclas de acceso*, que son abreviaturas de nombres de instrucciones, y *símbolos* para variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado seguido opcionalmente por uno o más símbolos.
+Las instrucciones en lenguaje de ensamblado constan de *mnemónicos*, que son abreviaturas de nombres de instrucciones, y de *símbolos* para variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado, opcionalmente seguido de uno o más símbolos.
 
-Código de ensamblado se basa principalmente en los registros del procesador, o bien, para código administrado, common language runtime registra. Puede usar el **desensamblado** ventana junto con el **registra** ventana, que le permite examinar el contenido de los registros.
+El código de ensamblado se basa en gran medida en registros de procesador o, en el caso de código administrado, en registros de Common Language Runtime. Puede usar la ventana **Desensamblado** junto con la ventana **Registros**, que le permite examinar el contenido de los registros.
 
-Para ver las instrucciones de código máquina en su formato numérico sin procesar, en lugar de como lenguaje de ensamblado, utilice el **memoria** ventana o seleccione **Bytes de código** en el menú contextual en el **desensamblado**  ventana.
+Para ver las instrucciones de código máquina en forma numérica sin formato, en lugar de como lenguaje de ensamblado, use la ventana **Memoria** o seleccione **Bytes de código** en el menú contextual de la ventana **Desensamblado**.
 
 ## <a name="use-the-disassembly-window"></a>Uso de la ventana Desensamblado
 
-Para habilitar el **desensamblado** ventana, en **herramientas** > **opciones** (o **herramientas**  >  **Opciones**) > **depuración**, seleccione **habilitar la depuración de nivel de dirección**.
+Para habilitar la ventana **Desensamblado**, en **Herramientas** > **Opciones** (o **Herramientas** > **Opciones**) > **Depuración**, seleccione **Habilitar la depuración de nivel de dirección**.
 
-Para abrir el **desensamblado** ventana durante la depuración, seleccione **Windows** > **desensamblado** o presione **Alt** + **8**.
+Para abrir la ventana **Desensamblado** durante la depuración, seleccione **Windows** > **Desensamblado** o presione **Alt**+**8**.
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
-Para activar o desactivar la información opcional, haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.
+Para activar o desactivar información opcional, haga clic con el botón secundario en la ventana **Desensamblado** y active o desactive las opciones que desee en el menú contextual.
 
-Una flecha amarilla en el margen izquierdo marca el punto de ejecución actual. Para código nativo, el punto de ejecución corresponde al contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.
+Una flecha amarilla en el margen izquierdo indica el punto de ejecución actual. Para el código nativo, el punto de ejecución se corresponde con el contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Volver a la función que llamó a MFC cuando está detenido | Microsoft Docs
+title: Volver a la función que llamó a MFC cuando está detenido | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,7 +26,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62906697"
@@ -40,7 +40,7 @@ Si ha utilizado el comando **Interrumpir** del menú **Depurar** para detener el
 
 A veces el código puede interrumpir el bombeo de mensajes. En ese caso, no hay ningún código de usuario en la pila de llamadas. Para evitar este problema, puede utilizar puntos de interrupción (posiblemente con condiciones y números de llamadas) en lugar del comando **Interrumpir**. Para obtener más información, consulta [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
 
-## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Vaya a la función desde el que se llamó a MFC
+## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Navegación a la función desde la que se llamó a MFC
 
 - Use la ventana **Pila de llamadas**.
 

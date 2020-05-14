@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar código ensamblador en línea | Documentos de Microsoft
+title: Procedimiento Depuración del código de ensamblado en línea | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62894305"

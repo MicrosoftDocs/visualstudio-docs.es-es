@@ -1,5 +1,5 @@
 ---
-title: Enviar mensajes a la ventana de salida | Microsoft Docs
+title: Enrutamiento de mensajes a la ventana Salida | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -23,25 +23,25 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
 ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/29/2019
 ms.locfileid: "68605377"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enrutamiento de mensajes a la ventana Salida
 
-Puede escribir mensajes en tiempo de ejecución en la ventana de **salida** mediante <xref:System.Diagnostics.Debug> la clase o <xref:System.Diagnostics.Trace> la clase, que forman parte de <xref:System.Diagnostics> la biblioteca de clases. Utilice la <xref:System.Diagnostics.Debug> clase si solo desea la salida en la  versión de depuración del programa. Utilice la <xref:System.Diagnostics.Trace> clase si desea generar la salida en las versiones de depuración y *lanzamiento* .
+Puede escribir mensajes en tiempo de ejecución en la ventana **Salida** mediante las clases <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace>, que forman parte de la biblioteca de clases <xref:System.Diagnostics>. Utilice la clase <xref:System.Diagnostics.Debug> si solo quiere resultados en la versión de *depuración* del programa. Utilice la clase <xref:System.Diagnostics.Trace> si quiere generar resultados en las versiones de *depuración* y *lanzamiento*.
 
 ## <a name="output-methods"></a>Métodos de salida
  Las clases <xref:System.Diagnostics.Trace> y <xref:System.Diagnostics.Debug> proporcionan los siguientes métodos de salida:
 
 - Diversos métodos `Write`, que envían información sin interrumpir la ejecución. Estos métodos reemplazan el método `Debug.Print` que se utilizaba en versiones anteriores de Visual Basic.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>los <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos y, que interrumpen la información de ejecución y salida si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).
+- Los métodos <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, que interrumpen la ejecución y envían información si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).
 
-- Los <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> métodos <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> y, que siempre interrumpen la información de ejecución y salida. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.
+- Los métodos <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, que interrumpen siempre la ejecución y envían información. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.
 
-La ventana de **salida** también puede mostrar información acerca de:
+La ventana **Salida** también puede mostrar información sobre lo siguiente:
 
 - Módulos que el depurador ha cargado o ha descargado.
 

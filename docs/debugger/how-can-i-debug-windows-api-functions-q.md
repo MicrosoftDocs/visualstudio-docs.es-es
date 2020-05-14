@@ -1,5 +1,5 @@
 ---
-title: Depurar funciones de la API de Windows | Microsoft Docs
+title: Depuración de funciones de la API de Windows | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,7 +24,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734348"

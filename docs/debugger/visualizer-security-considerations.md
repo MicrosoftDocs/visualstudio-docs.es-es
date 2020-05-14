@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187147"
@@ -39,6 +39,6 @@ Escribir datos en un visualizador implica poner en riesgo la seguridad. En la ac
 
 ## <a name="see-also"></a>Vea también
 - [Arquitectura de un visualizador](../debugger/visualizer-architecture.md)
-- [Cómo: Escribir un visualizador](create-custom-visualizers-of-data.md)
+- [Cómo: Escritura de un visualizador](create-custom-visualizers-of-data.md)
 - [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

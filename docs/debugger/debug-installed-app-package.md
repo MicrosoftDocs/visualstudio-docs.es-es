@@ -1,5 +1,5 @@
 ---
-title: Depurar un paquete de aplicación para UWP instalado | Microsoft Docs
+title: Depuración de un paquete de aplicaciones para UWP instalado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/07/2018
 ms.topic: conceptual
@@ -22,77 +22,77 @@ ms.workload:
 - uwp
 ms.openlocfilehash: d5c2e94e9fa80145489bddfb005b7136bdff8a71
 ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/24/2019
 ms.locfileid: "71211293"
 ---
-# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depurar un paquete de aplicación para UWP instalado en Visual Studio
+# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depuración de un paquete de aplicaciones para UWP instalado en Visual Studio
 
-Visual Studio puede depurar paquetes de aplicaciones Plataforma universal de Windows instalados (UWP) en equipos con Windows 10 y dispositivos Xbox, HoloLens y IoT.
+Visual Studio puede depurar paquetes de aplicaciones para Plataforma universal de Windows (UWP) instalados en equipos con Windows 10 y dispositivos Xbox, HoloLens e IoT.
 
 >[!NOTE]
->No se admite la depuración de Visual Studio para aplicaciones UWP instaladas en teléfonos.
+>No se admite la depuración de Visual Studio en aplicaciones para UWP instaladas en teléfonos.
 
-Para obtener más información sobre la depuración de aplicaciones para UWP, vea las entradas de blog sobre cómo [depurar paquetes de aplicaciones instalados](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) y [compilar aplicaciones universales de Windows (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Para más información sobre la depuración de aplicaciones para UWP, vea las entradas de blog sobre [depuración de paquetes de aplicaciones instalados](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) y [compilación de aplicaciones universales de Windows (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
-## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Depurar una aplicación de UWP instalada en un equipo local
+## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Depuración de una aplicación de UWP instalada en una máquina local
 
-1. En Visual Studio >  **, seleccione Depurar****otros destinos** > de depuración**depurar paquete de aplicaciones instalado**.
+1. En Visual Studio, seleccione **Depurar** > **Otros destinos de depuración** > **Depurar paquete de aplicaciones instalado**.
 
-1. En el cuadro de diálogo **depurar paquete de aplicaciones instalado** , en **tipo de conexión**, seleccione **equipo local**.
+1. En el cuadro de diálogo **Depurar paquete de aplicaciones instalado**, en **Tipo de conexión**, seleccione **Máquina local**.
 
-1. En **paquetes de aplicaciones instalados**, seleccione la aplicación que desea depurar o escriba su nombre en el cuadro de búsqueda. Los paquetes de aplicaciones instalados no en ejecución aparecen en **no en ejecución**y las aplicaciones en ejecución se están **ejecutando**.
+1. En **Paquetes de aplicaciones instalados**, seleccione la aplicación que quiere depurar o escriba su nombre en el cuadro de búsqueda. Los paquetes de aplicaciones instalados que no se están ejecutando aparecen en **No están en ejecución** y las aplicaciones que se están ejecutando se encuentran en **En ejecución**.
 
    ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-1. Si es necesario, cambie el tipo de código en **depurar este tipo de código**y seleccione otras opciones.
-   - Seleccione no **iniciar, pero depurar mi código cuando comience** a iniciar la depuración cuando se inicie la aplicación. Iniciar la depuración cuando se inicia la aplicación es una manera eficaz de depurar las rutas de acceso de control de [diferentes métodos de inicio](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como la activación del Protocolo con parámetros personalizados.
+1. Si es necesario, cambie el tipo de código en **Depurar este tipo de código** y seleccione otras opciones.
+   - Seleccione **No iniciar, pero depurar mi código al empezar** para empezar la depuración cuando se inicie la aplicación. Empezar la depuración cuando se inicia la aplicación es una manera eficaz de depurar las rutas de acceso de control desde [diferentes métodos de inicio](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como la activación del protocolo con parámetros personalizados.
 
-1. Seleccione **Inicio**, o bien, si la aplicación se está ejecutando, seleccione **adjuntar**.
+1. Seleccione **Iniciar** o, si la aplicación se está ejecutando, seleccione **Asociar**.
 
 > [!NOTE]
-> También puede conectarse a cualquier UWP en ejecución u otro proceso de aplicación seleccionando **depurar** > **asociar al proceso** en Visual Studio. No es necesario que el proyecto original de Visual Studio se adjunte a un proceso en ejecución, pero la carga de los símbolos de la aplicación le ayudará de forma significativa al depurar un proceso para el que no tiene el código original. Vea [especificar archivos de símbolos y de origen en el depurador](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> También puede asociar a cualquier UWP que se esté ejecutando o a otro proceso de aplicación si selecciona **Depurar** > **Asociar al proceso** en Visual Studio. No es necesario que el proyecto original de Visual Studio se asocie a un proceso en ejecución, pero la carga de los símbolos de la aplicación le ayudará de forma significativa al depurar un proceso para el que no tiene el código original. Vea [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="remote"></a>Depurar una aplicación de UWP instalada en un equipo o dispositivo remoto
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> Depurar una aplicación de UWP instalada en un equipo o dispositivo remoto
 
-La primera vez que Visual Studio depura una aplicación de UWP instalada en un dispositivo de Windows 10 o un equipo de Windows 10 de actualización posterior al creador remoto, instala las herramientas de depuración remota en el dispositivo de destino.
+La primera vez que Visual Studio depura una aplicación de UWP instalada en un dispositivo de Windows 10 o un equipo de Windows 10 de actualización posterior al creador remoto, instala las herramientas de depuración remota en el dispositivo de destino.
 
-1. [Habilite el modo de desarrollador](/windows/uwp/get-started/enable-your-device-for-development) en el equipo de Visual Studio y en el dispositivo o equipo remoto.
+1. [Habilite el modo de desarrollador](/windows/uwp/get-started/enable-your-device-for-development) en el equipo de Visual Studio y en el dispositivo o equipo remoto.
 
-1. Si se está conectando a un equipo remoto que ejecuta Windows 10 de la actualización del creador anterior, [instale e inicie manualmente el depurador remoto](../debugger/remote-debugging.md) en el equipo remoto.
+1. Si se va a conectar a un equipo remoto que ejecuta Windows 10 de actualización anterior al creador, [instale e inicie manualmente el depurador remoto](../debugger/remote-debugging.md) en el equipo remoto.
 
-1. En el equipo de Visual Studio > , **Seleccione depurar****otros destinos** > de depuración**depurar paquete de aplicaciones instalado**.
+1. En el equipo con Visual Studio, seleccione **Depurar** > **Otros destinos de depuración** > **Depurar paquete de aplicaciones instalado**.
 
-1. En el cuadro de diálogo **depurar paquete de aplicaciones instalado** , en **tipo de conexión**, seleccione **equipo remoto** o **dispositivo**.
+1. En el cuadro de diálogo **Depurar paquete de aplicaciones instalado**, en **Tipo de conexión**, seleccione **Máquina local** o **Dispositivo**.
 
-   Si selecciona **dispositivo**, el equipo debe estar conectado físicamente a un dispositivo de Windows 10.
+   Si selecciona **Dispositivo**, el equipo debe estar conectado físicamente a un dispositivo de Windows 10.
 
-   En el caso de una máquina remota, si la dirección del equipo no aparece junto a **Dirección**, seleccione **cambiar**.
+   En el caso de una máquina remota, si la dirección del equipo no aparece junto a **Dirección**, seleccione **Cambiar**.
 
-   1. En el cuadro de diálogo **conexión remota** , junto a **Dirección**, escriba el nombre o la dirección IP del equipo al que desea conectarse.
+   1. En el cuadro de diálogo **Conexión remota**, junto a **Dirección**, escriba el nombre o la dirección IP del equipo al que quiere conectarse.
 
       ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
-      Si el depurador no se puede conectar a un equipo remoto con el nombre de equipo, use la dirección IP en su lugar. Use la dirección IP de los dispositivos Xbox, HoloLens o IoT.
-   1. Seleccione una opción de autenticación junto a **modo de autenticación**.
+      Si el depurador no se puede conectar a un equipo remoto con el nombre de equipo, use entonces la dirección IP. Use la dirección IP de los dispositivos Xbox, HoloLens o IoT.
+   1. Seleccione una opción de autenticación junto a **Modo de autenticación**.
 
-      Para la mayoría de las aplicaciones, conserve el valor predeterminado, **universal (protocolo sin cifrar)**.
-   1. Seleccione **seleccionar**.
+      Para la mayoría de las aplicaciones, conserve el valor predeterminado **Universal (protocolo sin cifrar)** .
+   1. Elija **Seleccionar**.
 
-1. En **paquetes de aplicaciones instalados**, seleccione la aplicación que desea depurar o escriba su nombre en el cuadro de búsqueda. Los paquetes de aplicaciones instalados no en ejecución aparecen en **no en ejecución**y las aplicaciones en ejecución se están **ejecutando**.
+1. En **Paquetes de aplicaciones instalados**, seleccione la aplicación que quiere depurar o escriba su nombre en el cuadro de búsqueda. Los paquetes de aplicaciones instalados que no se están ejecutando aparecen en **No están en ejecución** y las aplicaciones que se están ejecutando se encuentran en **En ejecución**.
 
-1. Si es necesario, cambie el tipo de código en **depurar este tipo de código**y seleccione otras opciones.
-   - Seleccione no **iniciar, pero depurar mi código cuando comience** a iniciar la depuración cuando se inicie la aplicación. Iniciar la depuración cuando se inicia la aplicación es una manera eficaz de depurar las rutas de acceso de control de [diferentes métodos de inicio](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como la activación del Protocolo con parámetros personalizados.
+1. Si es necesario, cambie el tipo de código en **Depurar este tipo de código** y seleccione otras opciones.
+   - Seleccione **No iniciar, pero depurar mi código al empezar** para empezar la depuración cuando se inicie la aplicación. Empezar la depuración cuando se inicia la aplicación es una manera eficaz de depurar las rutas de acceso de control desde [diferentes métodos de inicio](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como la activación del protocolo con parámetros personalizados.
 
-1. Seleccione **Inicio**, o bien, si la aplicación se está ejecutando, seleccione **adjuntar**.
+1. Seleccione **Iniciar** o, si la aplicación se está ejecutando, seleccione **Asociar**.
 
-Cuando inicia la depuración de un paquete de la aplicación instalada en un dispositivo Xbox, HoloLens o IoT conectado por primera vez, Visual Studio instala la versión correcta del Depurador remoto para el dispositivo de destino. La instalación del Depurador remoto puede tardar algún tiempo y el mensaje que **inicia el depurador remoto** se muestra mientras se está produciendo.
+Cuando inicia la depuración de un paquete de aplicaciones instalado en un dispositivo Xbox, HoloLens o IoT conectado por primera vez, Visual Studio instala la versión correcta del depurador remoto para el dispositivo de destino. La instalación del depurador remoto puede tardar algún tiempo y el mensaje **Iniciando el depurador remoto** se muestra mientras se está produciendo.
 
 >[!NOTE]
->Actualmente, un dispositivo de Xbox o HoloLens reinicia la aplicación con el depurador asociado si ya se estaba ejecutando.
+>Actualmente, un dispositivo Xbox u HoloLens reinicia la aplicación con el depurador asociado si ya se estaba ejecutando.
 
-Para obtener más información sobre la implementación remota de aplicaciones para UWP, consulte [implementación y depuración](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) de aplicaciones para UWP y [depuración de aplicaciones para UWP en máquinas remotas](run-windows-store-apps-on-a-remote-machine.md).
+Para más información sobre la implementación remota de aplicaciones para UWP, vea [Implementación y depuración de aplicaciones para UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) y [Depuración de aplicaciones para UWP en máquinas remotas](run-windows-store-apps-on-a-remote-machine.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Fije un reloj en las variables de la unidad de la unidad de la unidad de la unidad de la unidad de Microsoft Docs
+title: Establecimiento de una inspección en las variables | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -19,24 +19,24 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
 ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "79301018"
 ---
-# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Ver variables con ventanas de reloj y quickwatch
+# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Inspección de variables con las ventanas Inspección e Inspección rápida
 
-Mientras está depurando, puede usar **Ventanas** de inspección y **Inspección rápida** para ver variables y expresiones. Las ventanas solo están disponibles durante una sesión de depuración.
+Mientras realiza la depuración, puede usar las ventanas **Inspección** e **Inspección rápida** para realizar una inspección de las variables y expresiones. Las ventanas solo están disponibles durante una sesión de depuración.
 
-**Las** ventanas de inspección pueden mostrar varias variables a la vez durante la depuración. El cuadro de diálogo **Inspección rápida** muestra una única variable a la vez y debe cerrarse antes de que la depuración pueda continuar.
+Las ventanas **Inspección** pueden mostrar varias variables a la vez durante la depuración. El cuadro de diálogo **Inspección rápida** muestra una sola variable a la vez y se debe cerrar antes de que pueda continuar la depuración.
 
-Si es la primera vez que intenta depurar código, es posible que desee leer [Depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [técnicas y herramientas](../debugger/write-better-code-with-visual-studio.md) de depuración antes de pasar por este artículo.
+Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de continuar con este artículo.
 
-## <a name="observe-variables-with-a-watch-window"></a>Observar variables con una ventana Reloj
+## <a name="observe-variables-with-a-watch-window"></a>Consulta de las variables mediante una ventana Inspección
 
-Puede abrir más de una ventana **De inspección** y observar más de una variable en una ventana **Inspección.**
+Puede abrir más de una ventana **Inspección** y consultar más de una variable en una ventana **Inspección**.
 
-Por ejemplo, para establecer un `a`reloj `b`en `c` los valores de , , y en el código siguiente:
+Por ejemplo, para establecer una inspección en los valores de `a`, `b`y `c` en el código siguiente:
 
 ```C++
 int main()
@@ -58,85 +58,85 @@ int main()
 
 ```
 
-1. Establezca un punto `c = a + b;` de interrupción en la línea haciendo clic en el margen izquierdo, seleccionando **Depurar** > alternar punto de**interrupción**o presionando **F9**.
+1. Establezca un punto de interrupción en la línea de `c = a + b;`. Para ello, haga clic en el margen izquierdo, seleccione **Depurar** > **Alternar punto de interrupción** o presione **F9**.
 
-1. Inicie la depuración seleccionando la flecha verde **Inicio** o **Depurar depuración** > **de inicio**o presione **F5**. La ejecución se detiene en el punto de interrupción.
+1. Para iniciar la depuración, seleccione la flecha verde **Inicio** o **Depurar** > **Iniciar depuración**, o presione **F5**. La ejecución se pone en pausa en el punto de interrupción.
 
-1. Abra una ventana **Ver** seleccionando **Depurar** > **Windows** > **Watch** > **Watch 1**o pulsando **Ctrl**+**Alt**+**W** > **1**.
+1. Para abrir una ventana **Inspección**, seleccione **Depurar** > **Windows** > **Inspección** > **Inspección 1**, o bien presione **Ctrl**+**Alt**+**W** > **1**.
 
-   Puede abrir ventanas de **inspección** adicionales seleccionando ventanas **2**, **3**o **4**.
+   Para abrir otras ventanas **Inspección**, seleccione ventanas **2**, **3** o **4**.
 
-1. En la ventana **Inspección,** seleccione una `a`fila vacía y escriba la variable . Haga lo `b` mismo `c`para y .
+1. En la ventana **Inspección**, seleccione una fila vacía y escriba la variable `a`. Haga lo mismo para `b` y `c`.
 
-   ![Ver variables](../debugger/media/watchvariables.png "WatchVariables")
+   ![Inspección de variables](../debugger/media/watchvariables.png "Variables de inspección")
 
-1. Continúe la depuración seleccionando **Depurar** > **paso** a o presionando **F11** según sea necesario para avanzar. Los valores de variable de la ventana **Inspección** cambian a medida que recorre en iteración el `for` bucle.
+1. Para continuar con la depuración, seleccione **Depurar** > **Depurar paso a paso por instrucciones** o presione **F11** según sea necesario para avanzar. Los valores de variable en la ventana **Inspección** cambian durante la iteración en el bucle `for`.
 
 >[!NOTE]
->Sólo para C++,
->- Es posible que deba calificar el contexto de un nombre de variable o una expresión que utilice un nombre de variable. El contexto es la función, el archivo de origen o el módulo donde se encuentra una variable. Si tiene que calificar el contexto, utilice la sintaxis del operador de [contexto (C++)](../debugger/context-operator-cpp.md) en el **nombre** en la ventana **Inspección.**
+>Solo en C++
+>- Es posible que deba calificar el contexto de un nombre de variable o una expresión que use un nombre de variable. El contexto es la función, el archivo de código fuente o el módulo donde se encuentra una variable. Si tiene que calificar el contexto, use la sintaxis del [operador de contexto (C++)](../debugger/context-operator-cpp.md) en el **nombre** de la ventana **Inspección**.
 >
->- Puede agregar nombres de registro y nombres de variables **Name** mediante ** $ \<&nbsp;** el nombre de registro>o ** @ \<&nbsp;** el nombre de registro>al nombre en la ventana **Inspección.** Para obtener más información, consulta [Pseudovariables](../debugger/pseudovariables.md).
+>- Puede agregar nombres de registro y nombres de variable mediante **$\<nombre de&nbsp;registro>** o **@\<nombre de&nbsp;registro>** al **nombre** en la ventana **Inspección**. Para obtener más información, consulta [Pseudovariables](../debugger/pseudovariables.md).
 
-## <a name="use-expressions-in-a-watch-window"></a>Usar expresiones en una ventana Inspección
+## <a name="use-expressions-in-a-watch-window"></a>Uso de expresiones en una ventana Inspección
 
-Puede observar cualquier expresión válida reconocida por el depurador en una ventana **Inspección.**
+Puede observar cualquier expresión válida reconocida por el depurador en una ventana **Inspección**.
 
-Por ejemplo, para el código de la sección anterior, puede obtener `(a + b + c) / 3` el promedio de los tres valores introduciendo en la ventana **Inspección:**
+Por ejemplo, para el código de la sección anterior, puede obtener el promedio de los tres valores especificando `(a + b + c) / 3` en la ventana **Inspección**:
 
-![Ver expresión](../debugger/media/watchexpression.png "Ver expresión")
+![Expresión de inspección](../debugger/media/watchexpression.png "Expresión de inspección")
 
-Las reglas para evaluar expresiones en la ventana **Inspección** son generalmente las mismas que las reglas para evaluar expresiones en el lenguaje de código. Si una expresión tiene un error de sintaxis, espere el mismo error del compilador que en el editor de código. Por ejemplo, un error tipográfico en la expresión anterior produce este error en la ventana **Inspección:**
+Las reglas de evaluación de expresiones de la ventana **Inspección** son generalmente las mismas que en el lenguaje de programación. Si una expresión tiene un error de sintaxis, espere el mismo error del compilador que se produciría en el editor de código. Por ejemplo, un error ortotipográfico en la expresión anterior produce este error en la ventana **Inspección**:
 
 ![Error de expresión de inspección](../debugger/media/watchexpressionerror.png "Error de expresión de inspección")
 
-Un círculo con dos líneas onduladas puede aparecer en la ventana **Inspección.** Este icono significa que el depurador no evalúa la expresión debido a una posible dependencia entre subprocesos. La evaluación del código requiere que otros subprocesos de la aplicación se ejecuten temporalmente, pero como está en modo de interrupción, todos los subprocesos de la aplicación normalmente se detienen. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de la aplicación y el depurador puede omitir eventos como puntos de interrupción y excepciones en esos subprocesos.
+Puede aparecer un círculo con dos líneas onduladas en la ventana **Inspección**. Este icono significa que el depurador no evalúa la expresión debido a una posible dependencia entre subprocesos. La evaluación del código requiere que otros subprocesos de la aplicación se ejecuten de forma temporal, pero, como está en modo de interrupción, se suelen detener todos los subprocesos de la aplicación. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de su aplicación. Además, es posible que el depurador omita algunos eventos, como los puntos de interrupción o las excepciones de dichos subprocesos.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-watch-window"></a>Buscar en la ventana Inspección
+## <a name="search-in-the-watch-window"></a>Búsqueda en la ventana Inspección
 
-Puede buscar palabras clave en las columnas Nombre, Valor y Tipo de la ventana **Inspección** mediante la barra de búsqueda situada encima de cada ventana. Pulse ENTER o seleccione una de las flechas para ejecutar una búsqueda. Para cancelar una búsqueda en curso, seleccione el icono "x" en la barra de búsqueda.
+Puede buscar palabras clave en las columnas Nombre, Valor y Tipo de la ventana **Inspección** mediante la barra de búsqueda situada encima de cada ventana. Presione Entrar o seleccione una de las flechas para ejecutar una búsqueda. Para cancelar una búsqueda en curso, seleccione el icono "x" en la barra de búsqueda.
 
-Utilice las flechas izquierda y derecha (Mayús+F3 y F3, respectivamente) para navegar entre las coincidencias encontradas.
+Use las flechas izquierda y derecha (Mayús+F3 y F3, respectivamente) para desplazarse por las coincidencias encontradas.
 
-![Buscar en la ventana de inspección](../debugger/media/ee-search-watch.png "Buscar en la ventana de inspección")
+![Búsqueda en la ventana Inspección](../debugger/media/ee-search-watch.png "Búsqueda en la ventana Inspección")
 
-Para que la búsqueda sea más o menos exhaustiva, utilice el menú desplegable **Buscar más profundo** en la parte superior de la ventana **Inspección** para seleccionar cuántos niveles de profundidad desea buscar en objetos anidados. 
+Para que la búsqueda sea más o menos exhaustiva, use la lista desplegable **Profundizar la búsqueda** en la parte superior de la ventana **Inspección** para seleccionar cuántos niveles de profundidad quiere buscar en objetos anidados. 
 
-## <a name="pin-properties-in-the-watch-window"></a>Propiedades de ancleen en la ventana Inspección
+## <a name="pin-properties-in-the-watch-window"></a>Anclado de propiedades en la ventana Inspección
 
 >[!NOTE]
-> Esta característica se admite en .NET Core 3.0 o superior.
+> Esta característica se admite en .NET Core 3.0 o versiones posteriores.
 
-Puede inspeccionar rápidamente los objetos por sus propiedades en la ventana Inspección con la herramienta **Propiedades anclables.**  Para utilizar esta herramienta, coloque el cursor sobre una propiedad y seleccione el icono de pasador que aparece o haga clic con el botón derecho y seleccione la opción **Anclar miembro como favorito** en el menú contextual resultante.  Esto propaga esa propiedad en la parte superior de la lista de propiedades del objeto y el nombre y el valor de la propiedad se muestran en la columna **Valor.**  Para desanclar una propiedad, vuelva a seleccionar el icono de pasador o seleccione la opción **Desanclar miembro como favorito** en el menú contextual.
+Puede inspeccionar rápidamente los objetos según sus propiedades en la ventana Inspección con la **herramienta para anclar propiedades**.  Para usar esta herramienta, mantenga el puntero sobre una propiedad y seleccione el icono para anclar que aparece o haga clic con el botón derecho y seleccione la opción **Anclar miembro como favorito** en el menú contextual resultante.  Esta propiedad se propaga a la parte superior de la lista de propiedades del objeto, y el nombre y el valor de la propiedad se muestran en la columna **Valor**.  Para desanclar una propiedad, vuelva a seleccionar el icono para anclar o seleccione la opción **Desanclar miembro como favorito** en el menú contextual.
 
-![Propiedades de ancleen en la ventana Inspección](../debugger/media/basic-pin-watch.gif "Propiedades de ancleen en la ventana Inspección")
+![Anclado de propiedades en la ventana Inspección](../debugger/media/basic-pin-watch.gif "Anclado de propiedades en la ventana Inspección")
 
-También puede alternar los nombres de propiedad y filtrar las propiedades no ancladas al ver la lista de propiedades del objeto en la ventana Inspección.  Puede acceder a ambas opciones seleccionando los botones de la barra de herramientas situada encima de la ventana del reloj.
+También puede alternar los nombres de propiedades y filtrar las no ancladas al consultar la lista de propiedades del objeto en la ventana Inspección.  Puede acceder a ambas opciones seleccionando los botones en la barra de herramientas situada encima de la ventana Inspección.
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Actualizar los valores del reloj
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a> Actualización de los valores de inspección
 
-Es posible que aparezca un icono de actualización (flecha circular) en la ventana **Inspección** cuando se evalúe una expresión. El icono de actualización indica un error o un valor que está desactualizado.
+Es posible que aparezca un icono de actualización (flecha circular) en la ventana **Inspección** al evaluar una expresión. El icono de actualización indica un error o un valor que no está actualizado.
 
-Para actualizar el valor, seleccione el icono de actualización o pulse la barra espaciadora. El depurador intenta evaluar de nuevo la expresión. Sin embargo, es posible que no desee o pueda volver a evaluar la expresión, dependiendo de por qué no se evaluó el valor.
+Para actualizar el valor, seleccione el icono de actualización o presione la barra espaciadora. El depurador intenta evaluar de nuevo la expresión. Sin embargo, es posible que no quiera o pueda volver a evaluar la expresión, en función de la razón por la que no se haya evaluado el valor.
 
-Pase el cursor sobre el icono de actualización o vea la columna **Valor** por el motivo por el que no se evaluó la expresión. Los motivos incluyen los siguientes:
+Mantenga el puntero sobre el icono de actualización o vea la columna **Valor** para conocer el motivo por el que no se ha evaluado la expresión. Entre los motivos se incluyen:
 
-- Se ha producido un error cuando se estaba evaluando la expresión, como en el ejemplo anterior. Puede producirse un tiempo de espera o una variable fuera del ámbito.
+- Ha habido un error al evaluar la expresión, como en el ejemplo anterior. Es posible que se agote el tiempo de espera o que una variable esté fuera del ámbito.
 
-- La expresión tiene una llamada de función que podría desencadenar un efecto secundario en la aplicación. Consulte [Efectos secundarios](#bkmk_sideEffects)de expresión .
+- La expresión tiene una llamada de función que puede desencadenar un efecto secundario en la aplicación. Vea [Efectos secundarios de la expresión](#bkmk_sideEffects).
 
-- La evaluación automática de propiedades y llamadas de función implícitas está deshabilitada.
+- La evaluación automática de las propiedades y las llamadas de función implícitas está deshabilitada.
 
-Si el icono de actualización aparece porque la evaluación automática de propiedades y llamadas de función implícitas está deshabilitada, puede habilitarlo seleccionando Habilitar evaluación de propiedades y otras llamadas de **función implícitas** en **Opciones** > **Options** > de herramientas**Depuración** > **general**.
+Si el icono de actualización aparece porque la evaluación automática de las propiedades y las llamadas de función implícitas está deshabilitada, puede habilitarla seleccionando **Habilitar evaluación de propiedades y otras llamadas a función implícitas** en **Herramientas** > **Opciones** > **Depuración** > **General**.
 
-Para demostrar el uso del icono de actualización:
+Para mostrar el uso del icono de actualización:
 
-1. En **Tools** > **Opciones** > de herramientas**Depuración** > **general**, desactive la casilla Habilitar evaluación de propiedades y otras **llamadas de función implícitas.**
+1. En **Herramientas** > **Opciones** > **Depuración** > **General**, desactive la casilla **Habilitar evaluación de propiedades y otras llamadas a función implícitas**.
 
-1. Escriba el código siguiente y, en la ventana `list.Count` **Inspección,** establezca un reloj en la propiedad.
+1. Escriba el código siguiente y, en la ventana **Inspección**, establezca una inspección en la propiedad `list.Count`.
 
    ```csharp
    static void Main(string[] args)
@@ -147,36 +147,36 @@ Para demostrar el uso del icono de actualización:
    }
    ```
 
-1. Inicie la depuración. La ventana **Inspección** muestra algo como el siguiente mensaje:
+1. Inicie la depuración. En la ventana **Inspección** se muestra un mensaje similar al siguiente:
 
-   ![Actualizar reloj](../debugger/media/refreshwatch.png "Actualizar reloj")
+   ![Actualización de la inspección](../debugger/media/refreshwatch.png "Actualización de la inspección")
 
-1. Para actualizar el valor, seleccione el icono de actualización o pulse la barra espaciadora. El depurador vuelve a evaluar la expresión.
+1. Para actualizar el valor, seleccione el icono de actualización o presione la barra espaciadora. El depurador vuelve a evaluar la expresión.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Efectos secundarios de la expresión
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a> Efectos secundarios de la expresión
 
-La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otro modo al estado de la aplicación. Por ejemplo, la evaluación de la siguiente expresión cambia el valor de `var1`:
+La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado de la aplicación. Por ejemplo, la evaluación de la siguiente expresión cambia el valor de `var1`:
 
 ```csharp
 var1 = var2
 ```
 
-Este código puede causar un [efecto secundario](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Los efectos secundarios pueden dificultar la depuración cambiando la forma en que funciona la aplicación.
+Este código puede producir un [efecto secundario](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Los efectos secundarios pueden dificultar la depuración al cambiar la forma en la que funciona su aplicación.
 
-Una expresión con efectos secundarios se evalúa una sola vez, cuando se introduce por primera vez. Después de eso, la expresión aparece atenuada en la ventana **Inspección** y se deshabilitan otras evaluaciones. La información sobre herramientas o la columna **Value** explica que la expresión provoca un efecto secundario. Puede forzar la reevaluación seleccionando el icono de actualización que aparece junto al valor.
+Una expresión con efectos secundarios se evalúa solo una vez: cuando se escribe por primera vez. Después, la expresión aparece en gris en la ventana **Inspección** y se deshabilitan otras evaluaciones. La información sobre herramientas o la columna **Valor** explica que la expresión produce un efecto secundario. Para forzar la reevaluación, seleccione el icono de actualización que aparece junto al valor.
 
-Una manera de prevenir la designación de efectos secundarios es desactivar la evaluación automática de la función. En **Tools** > **Opciones** > de herramientas**Depuración** > **general**, anule la selección de Habilitar evaluación de propiedades y otras **llamadas de función implícitas**.
+Una manera de evitar la designación de efectos secundarios es desactivar la evaluación automática de funciones. En **Herramientas** > **Opciones** > **Depuración** > **General**, anule la selección de **Habilitar evaluación de propiedades y otras llamadas a función implícitas**.
 
-Solo para C, cuando se desactiva la evaluación de propiedades o llamadas de función implícitas, puede forzar la evaluación agregando el modificador de formato **AC** a una variable **Name** en la ventana **Inspección.** Consulte Formato de [especificadores en C.](../debugger/format-specifiers-in-csharp.md).
+Solo en C#, cuando se desactiva la evaluación de propiedades o de las llamadas a funciones implícitas, puede forzar la evaluación agregando el modificador de formato **ac** a una variable **Nombre** en la ventana **Inspección**. Vea [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md) (Especificadores de formato en C#).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Usar los identificadores de objeto en la ventana Inspección (C- y Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Uso de los identificadores de objeto en la ventana Inspección (C# y Visual Basic)
 
-A veces desea observar el comportamiento de un objeto específico. Por ejemplo, es posible que desee realizar un seguimiento de un objeto al que hace referencia una variable local después de que esa variable haya salido del ámbito. En C- y Visual Basic, puede crear identificadores de objeto para instancias específicas de tipos de referencia y usarlos en la ventana **Inspección** y en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.
+Hay ocasiones en las que se quiere observar el comportamiento de un objeto concreto. Por ejemplo, puede que quiera realizar el seguimiento de un objeto al que hace referencia una variable local después de que dicha variable haya dejado de estar en el ámbito del objeto. En C# y Visual Basic, puede crear identificadores de objetos para instancias específicas de tipos y usarlos en la ventana **Inspección** y en condiciones de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.
 
 > [!NOTE]
-> Los identificadores de objeto crean referencias débiles que no impiden que el objeto se recopile. Los identificadores de objeto solo son válidos para la sesión de depuración actual.
+> Los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile en la recolección de elementos no utilizados. Los identificadores de objeto solo son válidos para la sesión de depuración actual.
 
-En el código `MakePerson()` siguiente, `Person` el método crea una variable using a local:
+En el código siguiente, el método `MakePerson()` crea `Person` mediante una variable local:
 
 ```csharp
 class Person
@@ -211,57 +211,57 @@ public class Program
 }
 ```
 
-Para averiguar el nombre `Person` del `DoSomething()` método, puede agregar una `Person` referencia al identificador de objeto en la ventana **Inspección.**
+Para averiguar el nombre de `Person` en el método `DoSomething()`, puede agregar una referencia al identificador de objeto `Person` en la ventana **Inspección**.
 
-1. Establezca un punto de interrupción en el código después de crear el `Person` objeto.
+1. Establezca un punto de interrupción en el código después de que se haya creado el objeto `Person`.
 
 1. Inicie la depuración.
 
-1. Cuando la ejecución se detenga en el punto de interrupción, abra la ventana **Locales** seleccionando **Depurar** > **locales de****Windows** > .
+1. Cuando la ejecución se ponga en pausa en el punto de interrupción, abra la ventana **Variables locales**, en **Depurar** > **Windows** > **Variables locales**.
 
-1. En la ventana **Locales,** `Person` haga clic con el botón derecho en la variable y seleccione **Crear ID de objeto**.
+1. En la ventana **Variables locales**, haga clic con el botón derecho en la variable `Person` y seleccione **Crear el identificador del objeto**.
 
-   Debería ver un signo**$** de dólar ( ) más un número en la ventana **Locales,** que es el IDENTIFICADOR de objeto.
+   Debería ver un signo de dólar ( **$** ), además de un número en la ventana **Variables locales**, que es el identificador de objeto.
 
-1. Agregue el ID de objeto a la ventana **Inspección** haciendo clic con el botón derecho en el ID de objeto y seleccionando **Agregar inspección**.
+1. Para agregar el identificador de objeto a la ventana **Inspección**, haga clic con el botón derecho en el identificador de objeto y seleccione **Agregar inspección**.
 
-1. Establezca otro punto `DoSomething()` de interrupción en el método.
+1. Establezca otro punto de interrupción en el método `DoSomething()`.
 
-1. Continúe la depuración. Cuando la ejecución `DoSomething()` se detiene en `Person` el método, la ventana **Inspección** muestra el objeto.
+1. Continúe la depuración. Cuando la ejecución se ponga en pausa en el método `DoSomething()`, la ventana **Inspección** mostrará el objeto `Person`.
 
    > [!NOTE]
-   > Si `Person.Name`desea ver las propiedades del objeto, como , debe habilitar la evaluación de propiedades seleccionando **Tools** > **Opciones** > de herramientas**Depuración** > **general** > Habilitar evaluación de propiedades y otras**llamadas de función implícitas**.
+   > Si quiere ver las propiedades del objeto, como `Person.Name`, debe habilitar la evaluación de propiedades. Para ello, seleccione **Herramientas** > **Opciones** > **Depuración** > **General** > **Habilitar evaluación de propiedades y otras llamadas a función implícitas**.
 
-## <a name="dynamic-view-and-the-watch-window"></a>Vista dinámica y la ventana Inspección
+## <a name="dynamic-view-and-the-watch-window"></a>Vista dinámica y ventana Inspección
 
-Algunos lenguajes de scripting (por ejemplo, JavaScript o Python) usan escritura dinámica o [pato,](https://en.wikipedia.org/wiki/Duck_typing) y .NET versión 4.0 y versiones posteriores admiten objetos que son difíciles de observar en las ventanas de depuración normales.
+Algunos lenguajes de scripting (por ejemplo, JavaScript o Python) usan escritura [duck](https://en.wikipedia.org/wiki/Duck_typing) o dinámica, y .NET 4.0 y versiones posteriores admiten objetos que son difíciles de observar en las ventanas de depuración normales.
 
-La ventana **Inspección** muestra estos objetos como objetos <xref:System.Dynamic.IDynamicMetaObjectProvider> dinámicos, que se crean a partir de tipos que implementan la interfaz. Los nodos de objetos dinámicos muestran los miembros dinámicos de los objetos dinámicos, pero no permiten la edición de los valores de miembro.
+En la ventana **Inspección** se muestran estos objetos como objetos dinámicos, que se crean a partir de tipos que implementan la interfaz de <xref:System.Dynamic.IDynamicMetaObjectProvider>. Los nodos de objetos dinámicos muestran los miembros dinámicos de los objetos dinámicos, pero no permiten editar los valores del miembro.
 
-Para actualizar los valores de **la vista dinámica,** seleccione el icono de [actualización](#bkmk_refreshWatch) situado junto al nodo de objeto dinámico.
+Para actualizar valores de la **vista dinámica**, seleccione el [icono de actualización](#bkmk_refreshWatch) situado junto al nodo de objeto dinámico.
 
-Para mostrar solo la **vista dinámica** de un objeto, agregue un especificador de formato **dinámico** después del nombre del objeto dinámico en la ventana **Inspección:**
+Para mostrar solo la **vista dinámica** de un objeto, agregue un especificador de formato de **dinámico** después del nombre del objeto dinámico en la ventana **Inspección**:
 
 - Para C#: `ObjectName, dynamic`
 - Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
->- El depurador de C- no reevalua automáticamente los valores de la **vista dinámica** cuando se pasa a la siguiente línea de código.
+>- El depurador de C# no vuelve a evaluar automáticamente los valores de la **vista dinámica** cuando se pasa a una nueva línea de código.
 >- El depurador de Visual Basic actualiza automáticamente las expresiones agregadas a través de la **vista dinámica**.
->- La evaluación de los miembros de una **vista dinámica** puede tener [efectos secundarios.](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))
+>- La evaluación de los miembros de una **vista dinámica** puede tener [efectos secundarios](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
 
-**Para insertar una nueva variable de inspección que convierte un objeto en un objeto dinámico:**
+**Para insertar una nueva variable de inspección que convierta un objeto en un objeto dinámico:**
 
 1. Haga clic con el botón derecho en cualquier elemento secundario de una **vista dinámica**.
-1. Elija **Add Watch**. Se `object.name` convierte `((dynamic) object).name` y aparece en una nueva ventana **de Inspección.**
+1. Elija **Agregar inspección**. `object.name` se convierte en `((dynamic) object).name` y aparece en una nueva ventana **Inspección**.
 
-El depurador también agrega un nodo secundario **de vista dinámica** del objeto a la ventana **Automático.** Para abrir la ventana **Automático,** durante la depuración, seleccione **Depurar** > **autos de****Windows** > .
+El depurador también agrega un nodo secundario de la **vista dinámica** del objeto a la ventana **Automático**. Para abrir la ventana **Automático**, durante la depuración, seleccione **Depurar** > **Windows** > **Automático**.
 
-**La vista dinámica** también mejora la depuración de objetos COM. Cuando el depurador llega a un objeto COM ajustado en **System.__ComObject**, agrega un nodo **vista dinámica** para el objeto.
+La **vista dinámica** también mejora la depuración para los objetos COM. Cuando el depurador obtiene un objeto COM encapsulado en **System.__ComObject**, agrega un nodo **Vista dinámica** para el objeto.
 
-## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observe una sola variable o expresión con QuickWatch
+## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Consultar una sola variable o expresión con Inspección rápida
 
-Puede utilizar **QuickWatch** para observar una sola variable.
+Puede usar la **Inspección rápida** para observar una única variable.
 
 Por ejemplo, para el código siguiente:
 
@@ -278,32 +278,32 @@ static void Main(string[] args)
 }
 ```
 
-Para observar `a` la variable,
+Para observar la variable `a`:
 
-1. Establezca un punto de interrupción en la línea `a = a + b;` .
+1. Establezca un punto de interrupción en la línea `a = a + b;`.
 
-1. Inicie la depuración. La ejecución se detiene en el punto de interrupción.
+1. Inicie la depuración. La ejecución se pone en pausa en el punto de interrupción.
 
-1. Seleccione la `a` variable en el código.
+1. Seleccione la variable `a` en el código.
 
-1. Seleccione **Depurar** > **inspección rápida**, pulse **Mayús**+**F9**o haga clic con el botón derecho y seleccione **Inspección rápida**.
+1. Seleccione **Depurar** > **Inspección rápida**, presione **Mayús**+**F9** o haga clic con el botón derecho y seleccione **Inspección rápida**.
 
-   Aparece el cuadro de diálogo **Inspección rápida.** La `a` variable se encuentra en el cuadro **Expresión** con un **valor** de **1**.
+   Aparece el cuadro de diálogo **Inspección rápida**. La variable `a` está en el cuadro **Expresión** con un **valor** de **1**.
 
-   ![Variable QuickWatch](../debugger/media/quickwatchvariable.png "Variable QuickWatch")
+   ![Variable de inspección rápida](../debugger/media/quickwatchvariable.png "Variable de inspección rápida")
 
-1. Para evaluar una expresión mediante la variable, escriba una expresión como `a + b` en el cuadro **Expresión** y seleccione **Reevaluar**.
+1. Para evaluar una expresión mediante la variable, escriba una expresión, como `a + b`, en el cuadro **Expresión** y seleccione **Volver a evaluar**.
 
-   ![Expresión de QuickWatch](../debugger/media/quickwatchexpression.png "Expresión de QuickWatch")
+   ![Expresión de inspección rápida](../debugger/media/quickwatchexpression.png "Expresión de inspección rápida")
 
-1. Para agregar la variable o expresión de **Inspección rápida** a la ventana **Inspección,** seleccione **Agregar inspección**.
+1. Para agregar la variable o expresión de **Inspección rápida** a la ventana **Inspección**, seleccione **Agregar inspección**.
 
-1. Seleccione **Cerrar** para cerrar la ventana **Inspección rápida.** (**QuickWatch** es un cuadro de diálogo modal, por lo que no puede continuar la depuración mientras esté abierto.)
+1. Seleccione **Cerrar** para cerrar la ventana **Inspección rápida**. (**Inspección rápida** es un cuadro de diálogo modal, por lo que no puede continuar con la depuración mientras está abierta).
 
-1. Continúe la depuración. Puede observar la variable en la ventana **Inspección.**
+1. Continúe la depuración. Puede observar la variable en la ventana **Inspección**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [¿Qué es la depuración?](../debugger/what-is-debugging.md)
 - [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)
-- [Primero mire la depuración](../debugger/debugger-feature-tour.md)
+- [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)
 - [Ventanas del depurador](../debugger/debugger-windows.md)

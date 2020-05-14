@@ -1,5 +1,5 @@
 ---
-title: Mostrar información personalizada mediante DebuggerDisplay | Microsoft Docs
+title: Representación de información personalizada mediante DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728675"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué Mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué se va a mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados. Si se aplica a un tipo base, el atributo también se aplica a una subclase.
 
@@ -33,7 +33,7 @@ La evaluación de esta llamada implícita a `ToString()` por parte del depurador
 > Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .
 
 > [!NOTE]
-> En el caso de código nativo, este atributo solo C++se admite en el código/CLI.
+> En el caso de código nativo, este atributo solo se admite en código de C++/CLI.
 
 En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.
 
@@ -44,7 +44,7 @@ En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDi
 
 `DebuggerDisplay` también puede aceptar parámetros con nombre.
 
-|Parámetros|Finalidad|
+|Parámetros|Propósito|
 |----------------|-------------|
 |`Name`, `Type`|Estos parámetros afectan a las columnas **Nombre** y **Tipo** de las ventanas de variables. (Se pueden establecer en cadenas mediante la misma sintaxis que el constructor). El uso excesivo o incorrecto de estos parámetros puede generar resultados confusos.|
 |`Target`, `TargetTypeName`|Especifica el tipo de destino cuando se utiliza el atributo en el nivel de ensamblado.|
@@ -91,12 +91,12 @@ public sealed class MyClass
 }
 ```
 
-El sufijo ", NQ" indica al evaluador de expresiones que quite las comillas al mostrar el valor final (NQ = sin comillas).
+El sufijo ",nq" indica al evaluador de expresiones que quite las comillas al mostrar el valor final (nq = sin comillas).
 
 ## <a name="example"></a>Ejemplo
 En el ejemplo de código siguiente se muestra cómo utilizar `DebuggerDisplay`, junto con `DebuggerBrowseable` y `DebuggerTypeProxy`. Cuando se ve en una ventana de variables del depurador, como la ventana **Inspección** , genera una expansión similar a la siguiente:
 
-|**Nombre**|**Valor**|**ype**|
+|**Name**|**Valor**|**Type**|
 |--------------|---------------|--------------|
 |Key|"three"|object {string}|
 |Valor|3|object {int}|

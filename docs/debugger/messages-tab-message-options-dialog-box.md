@@ -1,5 +1,5 @@
 ---
-title: Pestaña de mensajes, el cuadro de diálogo Opciones de mensaje | Microsoft Docs
+title: Pestaña Mensajes, (Cuadro de diálogo Opciones de mensaje) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,30 +12,30 @@ ms.workload:
 - multiple
 ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62905537"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Pestaña Mensajes (Cuadro de diálogo Opciones de mensaje)
-Use la **mensajes** tab para seleccionar qué tipos de mensaje a la lista en [vista mensajes](../debugger/messages-view.md)y especificar criterios de búsqueda del mensaje. Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.
+Use la pestaña **Mensajes** para seleccionar los tipos de mensaje que se van a mostrar en la [vista Mensajes](../debugger/messages-view.md) y para especificar los criterios de búsqueda de mensajes. Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **Mensajes de registro** en el menú de **Spy**.
 
- Por lo general, seleccione **grupos de mensajes**y, a continuación, ajustar la selección mediante la selección individual **mensajes a la vista**. El **todas** botón selecciona todos los tipos de mensaje y el **ninguno** botón borra todos los tipos.
+ Normalmente, primero se selecciona **Grupos de mensajes** y, después, se ajusta mediante la selección de **Mensajes que se quieren ver** individuales. El botón **Todos** selecciona todos los tipos de mensaje y el botón **Ninguno** los borra todos.
 
- Las siguientes opciones están disponibles en el **mensajes** pestaña:
+ En la pestaña **Mensajes** están disponibles los valores siguientes:
 
- **Los mensajes a la vista** seleccione mensajes específicos para su visualización. Cuando se crea una nueva ventana de mensajes, puede mostrar todos los mensajes. Cuando se filtra los mensajes de la **mensajes** ficha, dicho filtro sólo se aplica a los nuevos mensajes, no de los mensajes que ya se han mostrado en la vista de Windows.
+ **Mensajes que se quieren ver** Seleccione mensajes específicos para verlos. Al crear una ventana Mensajes, se pueden mostrar todos los mensajes. Al filtrar los mensajes desde la pestaña **Mensajes**, ese filtro solo se aplica a los mensajes nuevos, no a los que ya se han mostrado en la vista Ventanas.
 
- **Grupos de mensajes** seleccione grupos de mensajes para su visualización. Los grupos disponibles incluyen:
+ **Grupos de mensajes** Seleccione grupos de mensajes para verlos. Los grupos disponibles son los siguientes:
 
-- WM_USER: con un código de mayor o igual que WM_USER
+- WM_USER: con un código mayor o igual que WM_USER
 
-- Registrado: registrado con el **RegisterWindowMessage** llamar
+- Registrado: registrado con la llamada a **RegisterWindowMessage**
 
-- Desconocido: mensajes desconocidos en el intervalo de 0 a (WM_USER - 1)
+- Desconocido: mensajes desconocidos en el intervalo de 0 a (WM_USER-1)
 
-  Tenga en cuenta que estos **grupos de mensajes** no se asignan a entradas específicas de **mensajes para ver**. Cuando se selecciona un grupo, la selección se aplica directamente a la secuencia de mensajes.
+  Tenga en cuenta que estos **Grupos de mensajes** no se asignan a entradas específicas de **Mensajes que se quieren ver**. Al seleccionar un grupo, la selección se aplica directamente a la secuencia de mensajes.
 
-  Una casilla deshabilitada en **grupos de mensajes** indica que el **mensajes para ver** cuadro de lista se ha modificado para los mensajes de ese grupo; no todos los tipos de mensaje de ese grupo están seleccionados.
+  Una casilla atenuada dentro de **Grupos de mensajes** indica que el cuadro de lista **Mensajes que se quieren ver** se ha modificado para los mensajes de ese grupo; no se seleccionan todos los tipos de mensaje de ese grupo.
 
-  **Guardar configuración como predeterminada** guardar la configuración actual para su uso posterior como opciones de búsqueda de mensajes. Esta configuración también se guarda al salir de Spy ++.
+  **Guardar configuración como predeterminada** Guarde la configuración actual para usarla después como opciones de búsqueda de mensajes. Esta configuración también se guarda al salir de Spy++.

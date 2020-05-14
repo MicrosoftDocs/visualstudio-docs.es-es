@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Usar Editar y continuar (C#) | Documentos de Microsoft
+title: Procedimiento para usar Editar y continuar (C#) | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,35 +17,35 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 515068f29045ef92ee7d2323f752ba2185f28cac
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62906276"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedimiento Usar Editar y continuar (C#)
-Con Editar y continuar, puede realizar y aplicar los cambios en el código en modo de interrupción durante la depuración, sin tener que detener y reiniciar la sesión de depuración.
+Con Editar y continuar, puede realizar y aplicar cambios en el código en modo de interrupción durante la depuración, sin tener que detener y reiniciar la sesión de depuración.
 
-Editar y continuar para C# lleva a cabo automáticamente cuando realice cambios en el código en modo de interrupción y luego continuar con la depuración mediante el uso de **continuar**, **paso**, o **Establecer instrucción siguiente**, o evaluar una función en una ventana del depurador.
+En C#, Editar y continuar se ejecuta automáticamente cuando se realizan cambios en modo de interrupción y, después, se continúa la depuración mediante **Continuar**, **Paso** o **Establecer instrucción siguiente**, o bien se evalúa una función en una ventana del depurador.
 
-Para obtener más información, consulte [editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
+Para obtener más información, vea [Editar y continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
 
 >[!NOTE]
->Editar y continuar no se admite para optimizado, combinar, o código de integración de SQL Server common language runtime (CLR). Para obtener información sobre otros escenarios no admitidos, vea [admite cambios de código (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md). Si se intenta editar y continuar con uno de estos escenarios, aparece un cuadro de mensaje que indica que no se admite Editar y continuar.
+>Editar y continuar no se admite para el código de integración optimizado, mixto o de SQL Server Common Language Runtime (CLR). Para obtener información sobre otros escenarios no admitidos, vea [Cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md). Si prueba Editar y continuar con uno de estos escenarios, aparecerá un cuadro de mensaje en el que se indica que no se admite.
 
 **Para habilitar o deshabilitar Editar y continuar:**
 
-1. Si está en una sesión de depuración, detenga la depuración (**depurar** > **Detener depuración** o **MAYÚS**+**F5**) .
+1. Si está en una sesión de depuración, detenga la depuración (**Depurar** > **Detener depuración** o **Mayús**+**F5**).
 
-1. En **herramientas** > **opciones** (o **depurar** > **opciones**) > **depuración**  >  **General**, active o desactive el **Habilitar Editar y continuar** casilla de verificación.
+1. En **Herramientas** > **Opciones** (o **Depurar** > **Opciones**) > **Depuración** > **General**, active o desactive la casilla **Habilitar Editar y continuar**.
 
-La configuración surte efecto cuando se inicie o reinicie la sesión de depuración.
+La configuración tendrá efecto cuando se inicie o reinicie la sesión de depuración.
 
-**Para utilizar editar y continuar:**
+**Para usar Editar y continuar:**
 
-1. Durante la depuración en modo de interrupción, realizar un cambio en el código fuente.
+1. Durante la depuración, en el modo de interrupción, realice un cambio en el código fuente.
 
 1. En el menú **Depurar**, haga clic en **Continuar**, **Paso** o **Establecer instrucción siguiente** o evalúe una función en una ventana del depurador.
 
-   Depuración continuará con el código compilado de nuevo.
+   La depuración continúa con el nuevo código compilado.
 
-No se admiten algunos tipos de cambios de código por editar y continuar. Para obtener más información, consulte [admite cambios de código (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md).
+La opción Editar y continuar no admite algunos tipos de cambios del código. Para obtener más información, vea [Cambios de código admitidos (C# y Visual Basic)](../debugger/supported-code-changes-csharp.md).

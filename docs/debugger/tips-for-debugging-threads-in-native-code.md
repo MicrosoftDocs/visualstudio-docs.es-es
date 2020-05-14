@@ -18,7 +18,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 7dde94e28f378f0630a78f32ae5e58533729ce0f
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728992"
@@ -30,7 +30,7 @@ A continuación se muestran algunas sugerencias que puede usar al depurar subpro
 
 - Puede ver el último código de error del subproceso actual escribiendo `@Err` en la ventana **Inspección** o en el cuadro de diálogo **Inspección rápida**.
 
-- Las funciones de las bibliotecas en tiempo de ejecución de C (CRT) pueden ser útiles para depurar una aplicación multiproceso. Para obtener más información, vea [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).
+- Las funciones de las bibliotecas en tiempo de ejecución de C (CRT) pueden ser útiles para depurar una aplicación multiproceso. Para obtener más información, consulte [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)

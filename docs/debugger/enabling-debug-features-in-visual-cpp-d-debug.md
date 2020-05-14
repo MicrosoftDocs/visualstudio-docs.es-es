@@ -1,5 +1,5 @@
 ---
-title: Habilitar las características de C++ depuración en proyectos (-D_DEBUG) | Microsoft Docs
+title: Habilitación de las características de depuración en proyectos de C++ (-D_DEBUG) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72737957"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitar las características de C++ depuración en los proyectos (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitación de las características de depuración en proyectos de C++ (-D_DEBUG)
 En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], las características de depuración, como las aserciones, se habilitan al compilar el programa con el símbolo **_DEBUG** definido. Puede definir **_DEBUG** de dos maneras:
 
 - Especifique **#define _DEBUG** en el código fuente o

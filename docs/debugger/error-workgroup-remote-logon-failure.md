@@ -1,5 +1,5 @@
 ---
-title: 'Error: error de inicio de sesión remoto de grupo de trabajo | Microsoft Docs'
+title: 'Error: Error de inicio de sesión del grupo de trabajo de forma remota | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736261"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Error: El grupo de trabajo no ha podido iniciar una sesión remota
+# <a name="error-workgroup-remote-logon-failure"></a>Error: Error de inicio de sesión del grupo de trabajo de forma remota
 Este error reza como sigue:
 
  Error de inicio de sesión: nombre de usuario desconocido o contraseña incorrecta
@@ -55,7 +55,7 @@ Este error reza como sigue:
 
 4. En la columna **Directiva**, haga doble clic en **Depurar programas** para ver las asignaciones actuales de la directiva de grupo local en el cuadro de diálogo **Configuración de directiva de seguridad local**.
 
-     ![Derechos de usuario de la Directiva de seguridad local](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![Directiva de seguridad local, Derechos de usuario](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
 5. Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.
 
@@ -71,7 +71,7 @@ Este error reza como sigue:
 
 5. En el cuadro de diálogo **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**, cambie el valor a **Clásico: usuarios locales autenticados como ellos mismos** y haga clic en el botón **Aplicar**.
 
-     ![Opciones de seguridad de la Directiva de seguridad local](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Directiva de seguridad local, Opciones de seguridad](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>Vea también
 - [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Error: Asegúrese de que DNS esté configurado correctamente en el equipo de destino | Microsoft Docs'
+title: 'Error: Asegúrese de que DNS está bien configurado en el equipo de destino | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c8a9a5346016964882bb524187d01ca83c203be1
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911561"
@@ -34,4 +34,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Para obtener más información, vaya al [sitio web de Microsoft Windows](https://www.microsoft.com/windows/) y busque **Cambiar la configuración de TCP/IP**.
 
-  Si no puede resolver el problema de DNS, intente ejecutar el depurador remoto con una cuenta diferente. Este error solo se produce cuando se ejecuta el depurador remoto con el sistema local o cuenta de servicio de red. Si ejecuta el depurador remoto con otra cuenta, puede que la cuenta use la autenticación NTLM, que no requiere DNS. . Para el procedimiento, consulte [error: el servicio Visual Studio Remote Debugger del equipo de destino no se puede volver a conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Si no puede resolver el problema de DNS, intente ejecutar el depurador remoto con una cuenta diferente. Este error solo se produce cuando se ejecuta el depurador remoto con el sistema local o cuenta de servicio de red. Si ejecuta el depurador remoto con otra cuenta, puede que la cuenta use la autenticación NTLM, que no requiere DNS. . Para conocer el procedimiento, vea [Error: Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

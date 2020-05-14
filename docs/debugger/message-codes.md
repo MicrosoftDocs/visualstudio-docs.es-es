@@ -1,5 +1,5 @@
 ---
-title: Códigos de mensaje | Documentos de Microsoft
+title: Códigos de mensaje | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62846279"
 ---
 # <a name="message-codes"></a>Códigos de mensaje
-Cada línea del mensaje se muestra en [vista mensajes](../debugger/messages-view.md) contiene "P", del,' del,' o 'R' código. Estos códigos tienen los significados siguientes:
+Cada línea de mensaje que se muestra en la [vista Mensajes](../debugger/messages-view.md) contiene un código "P", "S", "s" o "R". Estos códigos tienen los siguientes significados:
 
 |Código|Significado|
 |----------|-------------|
-|P|Se expuso el mensaje a la cola con el **PostMessage** función. No hay disponible información sobre la distribución final del mensaje.|
-|S|Se envió el mensaje con el **SendMessage** función. Esto significa que el remitente no recuperar el control hasta que el receptor procesa y devuelve el mensaje. El receptor por lo tanto, puede pasar un valor devuelto al remitente.|
-|s|Se envió el mensaje, pero la seguridad impide el acceso al valor devuelto.|
-|R|De cada una ' línea tiene una línea 'R' (devolución) correspondiente que enumera el valor devuelto del mensaje. A veces llamadas de mensajes están anidadas, lo que significa que un controlador de mensajes envía otro mensaje.|
+|P|El mensaje se ha enviado a la cola con la función **PostMessage**. No hay información disponible relativa a la disposición final del mensaje.|
+|S|El mensaje se ha enviado con la función **SendMessage**. Esto significa que el remitente no recupera el control hasta que el receptor procesa y devuelve el mensaje. Por tanto, el receptor puede pasar un valor devuelto al remitente.|
+|s|El mensaje se ha enviado, pero la seguridad impide el acceso al valor devuelto.|
+|R|La línea "S" tiene una línea "R" (valor devuelto) correspondiente en la que se muestra el valor devuelto del mensaje. En ocasiones, las llamadas a mensajes están anidadas, lo que significa que un controlador de mensajes envía otro mensaje.|

@@ -1,5 +1,5 @@
 ---
-title: Referencia (captura mediante programación) | Documentos de Microsoft
+title: Referencia (captura mediante programación) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62895526"
@@ -22,13 +22,13 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ### <a name="classes"></a>Clases
 
-|Name|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[Case VsgDbg](vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|
 
 ### <a name="preprocessor-symbols"></a>Símbolos de preprocesador
 
-|Name|Descripción|
+|NOMBRE|Descripción|
 |----------|-----------------|
 |[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.|
 |[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|Define el nombre de archivo predeterminado del archivo de registro de gráficos.|
@@ -36,7 +36,7 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-| Título | Descripción |
+| Title | Descripción |
 | - | - |
 | [Capturing Graphics Information](capturing-graphics-information.md) | Muestra cómo capturar información de gráficos desde la aplicación basada en DirectX para que pueda utilizar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con el fin de diagnosticar problemas de representación. |
 | [Información general](overview-of-visual-studio-graphics-diagnostics.md) | Muestra cómo Diagnóstico de gráficos puede ayudarle a depurar errores de representación en juegos y aplicaciones de DirectX. |

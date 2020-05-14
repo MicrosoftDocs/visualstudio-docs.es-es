@@ -20,13 +20,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732088"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Cómo: usar la ventana subprocesos deC++GPU ()
-Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información sobre las aplicaciones que se ejecutan en la GPU, consulte [ C++ información general de amp](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedimiento Uso de la ventana Subprocesos de GPU (C++)
+Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información sobre las aplicaciones que se ejecutan en la GPU, vea [Información general sobre C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
 
  La ventana Subprocesos de GPU contiene una tabla en la que cada fila representa un grupo de subprocesos de la GPU que tienen los mismos valores en todas las columnas. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos desde la ventana Subprocesos de GPU. Las columnas siguientes se muestran en la ventana Subprocesos de GPU:
 
@@ -66,7 +66,7 @@ Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subproces
 
 7. En la barra de menús, elija **Depurar**, **Ventanas**, **Subprocesos de GPU**.
 
-### <a name="to-switch-to-a-different-thread"></a>Para cambiar a otro subproceso
+### <a name="to-switch-to-a-different-thread"></a>Para cambiar a un subproceso diferente
 
 - Haga doble clic en la columna. (Teclado: seleccione la fila y elija Entrar).
 
@@ -104,5 +104,5 @@ Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subproces
 
 ## <a name="see-also"></a>Vea también
 - [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Cómo: Usar la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Cómo: Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Tutorial: Depurar una aplicación de C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

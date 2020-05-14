@@ -1,5 +1,5 @@
 ---
-title: 'ADVERTENCIA de seguridad: el depurador debe ejecutar un comando que no es de confianza | Microsoft Docs'
+title: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,7 +17,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72729750"
@@ -33,11 +33,11 @@ Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de ori
  **¿Quiere ejecutar este comando?**
 
 ## <a name="uielement-list"></a>Lista de UIElement
- Comando de cuadro de texto del archivo. pdb que se va a ejecutar.
+ Comando de cuadro de texto del archivo .pdb que se va a ejecutar.
 
- Ejecutar permite ejecutar el comando.
+ Ejecutar: permite que se ejecute el comando.
 
- No ejecute detener ejecución del comando y descargando el archivo del servidor de origen.
+ No ejecutar: detiene la ejecución del comando y la descarga del archivo del servidor de origen.
 
 ## <a name="see-also"></a>Vea también
 - [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

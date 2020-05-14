@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones para UWP en equipos remotos | Microsoft Docs
+title: Depuración de aplicaciones para UWP en máquinas remotas | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,96 +15,96 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62902901"
 ---
-# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicaciones para UWP en equipos remotos desde Visual Studio
+# <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depuración de aplicaciones para UWP en máquinas remotas desde Visual Studio
 
-Puede usar Visual Studio para ejecutar, depurar, generar perfiles y probar una aplicación de plataforma Universal de Windows (UWP) en otro equipo o dispositivo. Ejecutando la aplicación para UWP en un equipo remoto es especialmente útil cuando el equipo de Visual Studio no admite la funcionalidad específica de UWP como táctil, ubicación geográfica o la orientación física.
+Puede usar Visual Studio para ejecutar, depurar y probar una aplicación de la Plataforma universal de Windows (UWP), además de generar perfiles para ella, en otro equipo o dispositivo. Ejecutar la aplicación para UWP en una máquina remota es especialmente útil cuando el equipo de Visual Studio no admite la funcionalidad específica de UWP, como la entrada táctil, la ubicación geográfica o la orientación física.
 
-## <a name="BKMK_Prerequisites"></a> Requisitos previos
+## <a name="prerequisites"></a><a name="BKMK_Prerequisites"></a> Requisitos previos
 
-Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Studio:
+Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Studio:
 
-- El proyecto de Visual Studio debe configurarse para la depuración remota.
-- El equipo remoto y el equipo de Visual Studio deben conectados a través de una red o conectados directamente a través de un cable Ethernet o USB. No se admite la depuración a través de Internet.
-- Debe [activar el modo de programador](/windows/uwp/get-started/enable-your-device-for-development) en el equipo de Visual Studio y el equipo remoto.
-- Los equipos remotos deben ejecutar las herramientas remotas para Visual Studio.
-  - Algunas versiones de Windows 10 iniciar y ejecutan automáticamente las herramientas remotas. En caso contrario, [instalar y ejecutar las herramientas remotas para Visual Studio](#BKMK_download).
-  - Dispositivos móviles de Windows 10 no requiere ni admite las herramientas remotas.
+- El proyecto de Visual Studio debe estar configurado para la depuración remota.
+- La máquina remota y el equipo de Visual Studio se deben conectar a través de una red o directamente mediante un cable USB o Ethernet. No se admite la depuración a través de Internet.
+- Debe [activar el modo de desarrollador](/windows/uwp/get-started/enable-your-device-for-development) tanto en el equipo de Visual Studio como en la máquina remota.
+- Los equipos remotos deben ejecutar las Herramientas remotas para Visual Studio.
+  - Algunas versiones de Windows 10 inician y ejecutan automáticamente las herramientas remotas. Si no es así, [instale y ejecute las Herramientas remotas para Visual Studio](#BKMK_download).
+  - Los dispositivos Windows Mobile 10 no necesitan ni admiten las herramientas remotas.
 
-## <a name="BKMK_ConnectVS"></a> Configurar un proyecto de Visual Studio para la depuración remota
-<a name="BKMK_DirectConnect"></a> Usar el proyecto **propiedades** para especificar el dispositivo remoto al que conectarse. Las opciones varían según el lenguaje de programación.
+## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> Configuración de un proyecto de Visual Studio para la depuración remota
+<a name="BKMK_DirectConnect"></a> Usará la página **Propiedades** del proyecto para especificar el dispositivo al que conectarse. La configuración varía en función del lenguaje de programación.
 
 > [!CAUTION]
-> De forma predeterminada, se establece la página de propiedades **Universal (protocolo sin cifrar)** como el **tipo de autenticación** para las conexiones remotas de Windows 10. Es posible que deba establecer **sin autenticación** para conectarse al depurador remoto. **Universal (protocolo sin cifrar)** y **sin autenticación** protocolos no tienen ninguna seguridad de red, por lo que los datos transferidos entre el desarrollo y los equipos remotos están vulnerables. Elija estos tipos de autenticación solo para redes de confianza que se está seguro de que no corren riesgo de tráfico hostil o malintencionado.
+> De forma predeterminada, la página de propiedades establece **Universal (protocolo sin cifrar)** como **Tipo de autenticación** para las conexiones remotas de Windows 10. Es posible que deba establecer **Sin autenticación** para conectarse al depurador remoto. Los protocolos **Universal (protocolo sin cifrar)** y **Sin autenticación** no disponen de seguridad de red, por lo que los datos que se pasan entre las máquinas de desarrollo y remotas son vulnerables. Elija estos tipos de autenticación solo con redes de confianza que esté seguro de que no corren peligro debido a tráfico hostil o malintencionado.
 >
->Si elige **Windows autenticación** para el **tipo de autenticación**, deberá iniciar sesión en el equipo remoto al depurar. También se debe ejecutar el depurador remoto bajo **Windows autenticación** modo con la misma cuenta de usuario como en el equipo de Visual Studio.
+>Si elige **Autenticación de Windows** como **Tipo de autenticación**, tendrá que iniciar sesión en la máquina remota durante la depuración. El depurador remoto también debe ejecutarse en modo de **Autenticación de Windows**, con la misma cuenta de usuario que en la máquina de Visual Studio.
 
-### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar un C# o proyecto de Visual Basic para la depuración remota
+### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configuración de un proyecto de C# o Visual Basic para la depuración remota
 
-1. Seleccione el C# o proyecto de Visual Basic en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt** +  **Escriba**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el proyecto de C# o Visual Basic en el **Explorador de soluciones** de Visual Studio, seleccione el icono **Propiedades** y presione **Alt**+**Entrar** o haga clic con el botón derecho y seleccione **Propiedades**.
 
 1. Seleccione la pestaña **Depurar**.
 
-1. En **dispositivo de destino**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
+1. En **Dispositivo de destino**, seleccione **Máquina remota** si el equipo es remoto, o **Dispositivo** si se trata de un dispositivo de Windows Mobile 10 conectado directamente.
 
-1. Para un equipo remoto, escriba el nombre de red o la dirección IP en el **máquina remota** campo o seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas](#remote-connections).
+1. En el caso de una máquina remota, escriba el nombre o la dirección IP de la red en el campo **Máquina remota**, o bien seleccione **Buscar** para buscar el dispositivo en el [cuadro de diálogo Conexiones remotas](#remote-connections).
 
-    ![Administra las propiedades del proyecto para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "administrados depurar las propiedades del proyecto")
+    ![Propiedades del proyecto administrado para depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "Propiedades del proyecto de depuración administrada")
 
-### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar un C++ proyecto para la depuración remota
+### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configuración de un proyecto de C++ para la depuración remota
 
-1. Seleccione el C++ proyecto en Visual Studio **el Explorador de soluciones** y seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el proyecto de C++ o Visual Studio en el **Explorador de soluciones**, elija el icono **Propiedades** y presione **Alt**+**Entrar** o haga clic con el botón derecho y seleccione **Propiedades**.
 
-1. Seleccione el **depuración** ficha.
+1. Seleccione la pestaña **Depuración**.
 
-3. En **depurador para iniciar**, seleccione **máquina remota** para un equipo remoto, o **dispositivo** para un dispositivo de Windows Mobile 10 conectados directamente.
+3. En **Depurador para iniciar**, seleccione **Máquina remota** si es un equipo remoto, o **Dispositivo** si se trata de un dispositivo Windows Mobile 10 conectado directamente.
 
-1. Para un equipo remoto, escriba o seleccione el nombre de red o la dirección IP en el **nombre de la máquina** campo o drop abajo y seleccione **buscar** para buscar el dispositivo en el [cuadro de diálogo conexiones remotas ](#remote-connections).
+1. En el caso de una máquina remota, escriba el nombre o la dirección IP de la red en el campo **Nombre de la máquina**, o baje y seleccione **Buscar** para buscar el dispositivo en el [cuadro de diálogo Conexiones remotas](#remote-connections).
 
-    ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "propiedades del proyecto de depuración de C++")
+    ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "Propiedades del proyecto de la depuración de C++")
 
-### <a name="remote-connections"></a> Utilice el cuadro de diálogo conexiones remotas
+### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Uso del cuadro de diálogo Conexiones remotas
 
-En el **conexiones remotas** cuadro de diálogo, puede buscar una dirección IP o nombre de equipo remoto específico o detectar automáticamente las conexiones seleccionando el icono de flecha redondea actualización. Busca solo los dispositivos en la subred local que se están ejecutando al depurador remoto en el cuadro de diálogo. No todos los dispositivos se pueden detectar en el **conexiones remotas** cuadro de diálogo.
+En el cuadro de diálogo **Conexiones remotas**, puede buscar una dirección IP o un nombre de equipo remoto específico o detectar las conexiones automáticamente seleccionando el icono de actualización de flecha redondeada. El cuadro de diálogo solo busca en los dispositivos de la subred local que ejecutan actualmente el depurador remoto. No todos los dispositivos se pueden detectar en el cuadro de diálogo **Conexiones remotas**.
 
- ![Cuadro de diálogo de conexión remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "cuadro de diálogo conexiones remotas")
+ ![Cuadro de diálogo Conexiones remotas](../debugger/media/vsrun_selectremotedebuggerdlg.png "Remote Connections dialog")
 
 >[!TIP]
->Si no se puede conectar a un dispositivo remoto por su nombre, pruebe a usar su dirección IP. Para averiguar la dirección IP, en el dispositivo remoto, escriba **ipconfig** en una ventana de comandos. La dirección IP aparece como **dirección IPv4**.
+>Si no puede conectarse a un dispositivo remoto por nombre, pruebe a usar su dirección IP. Para determinar la dirección IP, en el dispositivo remoto, escriba **ipconfig** en una ventana de comandos. La dirección IP aparece como **Dirección IPv4**.
 
-## <a name="BKMK_download"></a> Descargue e instale Herramientas remotas para Visual Studio
+## <a name="download-and-install-the-remote-tools-for-visual-studio"></a><a name="BKMK_download"></a> Descargue e instale Herramientas remotas para Visual Studio
 
-Para que Visual Studio depurar aplicaciones en un equipo remoto, el equipo remoto debe ejecutar las herramientas remotas para Visual Studio.
+Para que Visual Studio depure aplicaciones en un equipo remoto, el equipo remoto debe ejecutar las Herramientas remotas para Visual Studio.
 
-- Dispositivos móviles de Windows 10 no requiere ni admite las herramientas remotas.
-- Actualización de ejecutando del creador de equipos de Windows 10 (versión 1703) y versiones posteriores, los dispositivos Windows 10 Xbox, IoT y HoloLens instalación las herramientas remotas automáticamente al implementar la aplicación.
-- En equipos Windows 10 del creador anterior a Update, manualmente debe descargar, instalar y ejecutar las herramientas remotas en el equipo remoto antes de iniciar la depuración.
+- Los dispositivos Windows Mobile 10 no necesitan ni admiten las herramientas remotas.
+- Los equipos con Windows 10 que ejecutan Creator's Update (versión 1703) y versiones posteriores y los dispositivos de Windows 10 Xbox, IoT y HoloLens instalan las herramientas remotas automáticamente al implementar la aplicación.
+- En los equipos con Windows 10 anteriores a Creator's Update, debe descargar, instalar y ejecutar manualmente las herramientas remotas en el equipo remoto antes de iniciar la depuración.
 
 **Para descargar e instalar las herramientas remotas:**
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="BKMK_setup"></a> Configurar las herramientas remotas
+### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a> Configuración de las herramientas remotas
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-## <a name="BKMK_RunRemoteDebug"></a> Depuración remota de aplicaciones para UWP
+## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a> Depuración remota de aplicaciones para UWP
 
-Depuración remota funciona igual que la depuración local.
+La depuración remota funciona igual que la depuración local.
 
-1. En las versiones de actualización del pre-creador de Windows 10, asegúrese de que el Monitor de depuración remota (*msvsmon.exe*) se está ejecutando en el dispositivo remoto.
+1. En las versiones de Windows 10 anteriores a Creator's Update, asegúrese de que el Monitor de depuración remota (*msvsmon.exe*) se está ejecutando en el dispositivo remoto.
 
-1. En el equipo de Visual Studio, asegúrese de que el destino de depuración correcto (**máquina remota** o **dispositivo**) aparece junto a la flecha verde en la barra de herramientas.
+1. En el equipo de Visual Studio, asegúrese de que el destino de depuración correcto (**Máquina remota** o **Dispositivo**) aparezca junto a la flecha verde en la barra de herramientas.
 
-1. Iniciar la depuración seleccionando **depurar** > **Iniciar depuración**, presiona **F5**, o seleccione la flecha verde en la barra de herramientas.
+1. Para iniciar la depuración, seleccione **Depurar** > **Iniciar depuración** y presione **F5** o seleccione la flecha verde en la barra de herramientas.
 
-   El proyecto vuelve a compilar, a continuación, implementa y se inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción, y puede ir a través de o fuera del código.
+   El proyecto se vuelve a compilar y, luego, se implementa y se inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción y puede depurar paso a paso por instrucciones o por procedimientos y hasta salir del código.
 
-1. Si es necesario, seleccione **depurar** > **Detener depuración** o presione **MAYÚS**+**F5** para detener la depuración y Cierre la aplicación remota.
+1. Si es necesario, seleccione **Depurar** > **Detener depuración** o presione **Mayús**+**F5** para detener la depuración y cerrar la aplicación remota.
 
 ## <a name="see-also"></a>Vea también
 - [Opciones avanzadas de implementación remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)

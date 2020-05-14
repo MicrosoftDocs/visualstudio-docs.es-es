@@ -1,5 +1,5 @@
 ---
-title: 'Error: el servidor Web se ha bloqueado y está bloqueando el verbo de depuración | Microsoft Docs'
+title: 'Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9564f077a5379f44d2beb4d7851453dd6b35fa48
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736955"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor Web se ha bloqueado y está bloqueando el verbo DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG
 No se pudo recorrer paso a paso por instrucciones una aplicación Web o un servicio Web XML porque se ha ejecutado la herramienta de cierre de IIS y se ha instalado y activado URLScan. Esta condición bloquea IIS para que no reciba el verbo DEBUG.
 
  URLScan es una herramienta de seguridad que funciona junto con la Herramienta de cierre de IIS para ofrecer a los administradores de sitios Web IIS la capacidad de desactivar características innecesarias y restringir el tipo de solicitudes HTTP que puede procesar el servidor. Al bloquear solicitudes HTTP específicas, la herramienta de seguridad URLScan evita que solicitudes potencialmente nocivas lleguen al servidor y produzcan daños.

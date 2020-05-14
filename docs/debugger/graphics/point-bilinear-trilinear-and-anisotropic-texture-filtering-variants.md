@@ -1,5 +1,5 @@
 ---
-title: Variantes de filtro de punto o bilineal/trilineal y anisotrópico de textura
+title: Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
 ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "66262933"

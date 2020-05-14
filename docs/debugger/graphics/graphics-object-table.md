@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735448"
@@ -24,14 +24,14 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 
  Esta es la tabla de objetos:
 
- ![Objetos de Direct3D creados por una aplicación.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
+ ![Objetos Direct3D que ha creado una aplicación.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
 
 ## <a name="understanding-the-graphics-object-table"></a>Descripción de la Tabla de objetos gráficos
- La Tabla de objetos gráficos permite analizar los objetos de Direct3D que admiten la representación de un fotograma determinado. Puede identificar un problema de representación en un objeto específico examinando sus propiedades y datos (usando otras herramientas de Diagnóstico de gráficos anteriores en el diagnóstico, puede restringir la lista de objetos que podrían no ser los esperados). Cuando haya encontrado el objeto infractor, puede usar una visualización específica de su tipo para examinarlo; por ejemplo, puede usar el editor de imágenes para ver las texturas o el *visualizador de búfer* para ver el contenido del búfer.
+ La Tabla de objetos gráficos permite analizar los objetos de Direct3D que admiten la representación de un fotograma determinado. Puede aislar un problema de representación en un objeto específico examinando sus propiedades y datos (usando otras herramientas de diagnóstico de gráficos anteriormente en el diagnóstico, puede restringir la lista de objetos que podrían no ser los esperados). Cuando encuentre el objeto incorrecto, puede usar una visualización específica de su tipo para examinarlo; por ejemplo, puede usar el Editor de imágenes para ver texturas o el *Visualizador del búfer* para ver el contenido del búfer.
 
  La Tabla de objetos gráficos admite copiar y pegar, por lo que puede usar otra herramienta (por ejemplo, Microsoft Excel) para examinar su contenido.
 
- Además, puede usar la lista desplegable **tipo** en la esquina superior izquierda para alternar la visualización de objetos de **búferes**de tipo, **sombreadores** o **texturas**, o todos estos elementos a la vez.  Además, puede usar el cuadro de búsqueda en la esquina superior derecha para buscar filas específicas en todos los datos que se presentan.  Por ejemplo, puede buscar *D32_FLOAT* para buscar todas las instancias de objetos de ese formato en la lista.
+ Además, puede usar la lista desplegable **Tipo** en la esquina superior izquierda para alternar la visualización de objetos de tipo **Búferes**, **Sombreadores** o **Texturas**, o bien de todos a la vez.  También puede usar el cuadro de búsqueda de la esquina superior derecha para buscar filas específicas en todos los datos que se presentan.  Por ejemplo, podría buscar *D32_FLOAT* para buscar en la lista todas las instancias de objetos de ese formato.
 
 ### <a name="graphics-object-table-format"></a>Formato de la Tabla de objetos gráficos
  La Tabla de objetos gráficos muestra los objetos y recursos de Direct3D que admiten el fotograma asociado al evento seleccionado; por ejemplo, objetos de estado, búferes, sombreadores, texturas y otros recursos. Los objetos que se crearon en un fotograma anterior pero que no se usan durante el fotograma capturado se omiten de la tabla de objetos. Los objetos que se han destruido en eventos anteriores durante el fotograma capturado se omiten en los eventos posteriores. Los objetos que no se establecen en D3D10Device o D3D11DeviceContext aparecen como texto en gris. Los objetos se muestran en un formato de tabla.
@@ -39,8 +39,8 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 |Columna|Descripción|
 |------------|-----------------|
 |**Identificador**|Identificador de objeto.|
-|**Nombre**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|
-|**ype**|Tipo del objeto.|
+|**Name**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|
+|**Type**|Tipo del objeto.|
 |**Active**|Muestra "*" para un objeto que se estableció en D3D10Device o D3D11DeviceContext durante el fotograma capturado.<br /><br /> Esto corresponde a los objetos que se muestran como texto gris, pero proporciona una entrada de columna que se puede utilizar como ayuda para ordenar la tabla de objetos.|
 |**Size**|Tamaño del objeto en bytes.|
 |**Format**|Formato del objeto. Por ejemplo, el formato de un objeto de textura o el modelo de sombreador de un objeto de sombreador.|
@@ -56,7 +56,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 
  Aquí tenemos el Visor de textura que muestra el contenido de la fase de canalización de fusión de salida.
 
- ![Vista previa de textura que muestra la fusión de salida](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
+ ![Vista previa de la textura en la que se muestra la fusión de salida](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
 
 ### <a name="d3d12-command-list"></a>Lista de comandos de D3D12
  En Direct3D 12 una lista de comandos es un objeto que registra comandos en un asignador de comando para que puedan enviarse a la GPU como una única solicitud. Las listas de comandos normalmente realizan una serie de comandos de configuración de estado, dibujo, borrado y copia. Son especialmente importantes porque constituyen el método preferido de representación en Direct3D 12 y se pueden reutilizar entre fotogramas para ayudar a aumentar el rendimiento. Los detalles de la lista de comandos se muestran en una nueva ventana de documento, con información relacionada con cada fase de canalización que se presenta en su propia pestaña.
@@ -71,14 +71,14 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
  En Direct3D 12, los recursos son objetos comodín que proporcionan datos a la canalización de representación; esto difiere de Direct3D11, que define muchos objetos específicos para diferentes tipos y dimensiones de recursos. Un recurso de Direct3D 12 puede contener datos de textura, datos de vértice, datos de sombreador y otros; incluso pueden representar objetivos de representación, como el búfer de profundidad. Los detalles de un recurso de Direct3D 12 se muestran en una nueva ventana de documento; si puede determinar su tipo, el análisis de gráficos usará el visor adecuado para el contenido del objeto de recurso. Por ejemplo, un objeto de recurso que contiene datos de textura se muestra con el Visor de textura, del mismo modo que un objeto Texture2D de D3D11.
 
 ### <a name="device-context-object"></a>Objeto de contexto de dispositivo
- En Direct3D 11 y Direct3D 10, el objeto de contexto de dispositivo (**Contexto de dispositivo D3D11** o **Dispositivo D3D10**) es especialmente relevante porque contiene la información más importante de estado y la vincula a otros objetos de estado establecidos en este momento. Los detalles del contexto de dispositivo se muestran en una nueva ventana de documento y cada categoría de información se presenta en su propia pestaña. El contexto de dispositivo cambia cuando se selecciona un nuevo evento para reflejar el estado actual del dispositivo.
+ En Direct3D 11 y Direct3D 10, el objeto de contexto de dispositivo (**Contexto de dispositivo D3D11** o **Dispositivo D3D10**) es especialmente relevante porque contiene la información más importante de estado y la vincula a otros objetos de estado establecidos en este momento. Los detalles del contexto de dispositivo se muestran en una nueva ventana de documento y cada categoría de información se muestra allí en su propia pestaña. El contexto de dispositivo cambia cuando se selecciona un nuevo evento para reflejar el estado del dispositivo actual.
 
 ### <a name="buffer-object"></a>Objeto de búfer
  Los detalles del objeto de búfer (Búfer D3D11 o Búfer D3D10) se muestran en una nueva ventana de documento que presenta el contenido del búfer en una tabla y proporciona una interfaz para cambiar cómo se muestra el contenido del búfer. La tabla de **datos del búfer** admite copiar y pegar, por lo que puede utilizar otra herramienta (por ejemplo, Microsoft Excel) para examinar su contenido. El contenido del búfer se interpreta según el valor del cuadro combinado **formato**, que se encuentra sobre la tabla de **datos del búfer**. En el cuadro, puede escribir un formato de datos compuesto que se compone de los tipos de datos que se muestran en la tabla siguiente. Por ejemplo, "float int" muestra una lista de estructuras que contienen un valor de punto flotante de 32 bits seguido de un valor entero de 32 bits con signo. Los formatos de datos compuestos que ha especificado se agregan al cuadro combinado para su uso posterior.
 
  También puede alternar la casilla **Mostrar desplazamientos** para mostrar u ocultar el desplazamiento de cada elemento en el búfer.
 
-|Type|Descripción|
+|Tipo|Descripción|
 |----------|-----------------|
 |**float**|Valor de punto flotante de 32 bits.|
 |**float2**|Vector que contiene dos valores de punto flotante de 32 bits.|

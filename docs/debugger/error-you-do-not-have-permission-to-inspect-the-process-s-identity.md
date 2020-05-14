@@ -1,5 +1,5 @@
 ---
-title: 'Error: no tiene permiso para inspeccionar la identidad del&#39;proceso s | Microsoft Docs'
+title: 'Error: No tiene permiso para inspeccionar la identidad del proceso | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736221"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: no tiene permiso para inspeccionar la identidad del&#39;proceso.
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar la identidad del proceso
 No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.
 
  El depurador no pudo inspeccionar la identidad del proceso, información necesaria para depurar. La causa más probable es que se haya deshabilitado Terminal Services. Terminal Services está habilitado de forma predeterminada. Siga estos pasos para volver a habilitar Terminal Services.
@@ -40,7 +40,7 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
 
 6. En la lista **Servicios**, haga clic con el botón derecho en **Terminal Services** y después elija **Propiedades**.
 
-7. En la ventana **propiedades de Terminal Services** , vaya a la pestaña **General** y establezca **tipo de inicio** en **manual**.
+7. En la ventana **Propiedades de Servicios de Terminal Server**, vaya a la pestaña **General** y establezca **Tipo de inicio** en **Manual**.
 
 8. Haga clic en **Aceptar**.
 

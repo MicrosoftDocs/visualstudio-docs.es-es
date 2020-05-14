@@ -1,5 +1,5 @@
 ---
-title: Depurar una aplicación que no forma parte de una solución de Visual Studio
+title: Depuración de una aplicación que no forma parte de una solución de Visual Studio
 titleSuffix: ''
 ms.custom: ''
 ms.date: 02/21/2020
@@ -22,55 +22,55 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 740af718a2928991d46bedbd6709337b9b20a254
 ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/22/2020
 ms.locfileid: "77557903"
 ---
-# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Depurar una aplicación que no forma parte de una soluciónC++de C#Visual Studio ( F#,, Visual Basic,)
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Depuración de una aplicación que no forma parte de una solución de Visual Studio (C++, C#, Visual Basic y F#)
 
-Es posible que desee depurar una aplicación (archivo *. exe* ) que no forme parte de una solución de Visual Studio. Puede tratarse de un proyecto de [carpeta abierta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) , o puede que usted u otra persona haya creado la aplicación fuera de Visual Studio o que haya recibido la aplicación desde otra parte.
+Tal vez le interese depurar una aplicación (archivo *.exe*) que no forma parte de una solución de Visual Studio. Puede que sea un proyecto de [carpeta abierta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), que usted u otra persona hayan creado la aplicación fuera de Visual Studio o que usted haya obtenido la aplicación en otra parte.
 
-- Para un proyecto de carpeta abierta en Visual Studio (que no tiene un archivo de proyecto o de solución), vea [Ejecutar y depurar el código](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) o, para C++, [Configurar parámetros de depuración con Launch. vs. JSON](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
+- Para un proyecto de carpeta abierta en Visual Studio (sin archivo de proyecto o de solución), vea [Ejecución y depuración del código](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) o, en el caso de C++, [Configurar parámetros de depuración con launch.vs.json](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
 
-- En el caso de una aplicación que no existe en Visual Studio, la manera habitual de depurar es iniciar la aplicación fuera de Visual Studio y, a continuación, asociarla mediante **asociar al proceso** en el depurador de Visual Studio. Para obtener más información, vea [asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- En el caso de una aplicación que no exista en Visual Studio, la manera habitual de realizar la depuración es iniciar la aplicación fuera de Visual Studio y, a continuación, asociarla mediante **Asociar al proceso** en el depurador de Visual Studio. Para obtener más información, vea [Asociar con procesos en ejecución con el depurador de Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-   La asociación a una aplicación requiere pasos manuales que tardan unos segundos. Debido a este retraso, la asociación no ayudará a depurar un problema de inicio o a una aplicación que no espere la entrada del usuario y finalice rápidamente.
+   La asociación con una aplicación requiere pasos manuales que tardan unos segundos. Debido a este retraso, la asociación no ayudará a depurar un problema de inicio ni una aplicación que no espere la entrada de usuario y finalice rápidamente.
 
-   En estas situaciones, puede crear un proyecto EXE de Visual Studio para la aplicación o importarlo en una solución existente C#, Visual Basic o C++ . No todos los lenguajes de programación admiten proyectos EXE.
+   En estas situaciones, puede crear un proyecto EXE de Visual Studio para la aplicación o importarlo en una solución existente de C#, Visual Basic o C++. No todos los lenguajes de programación admiten proyectos EXE.
 
 >[!IMPORTANT]
->Las características de depuración de una aplicación que no se compilaron en Visual Studio son limitadas, tanto si se asocia a la aplicación como si se agrega a una solución de Visual Studio.
+>Las características de depuración de una aplicación que no se haya compilado en Visual Studio son limitadas, tanto si las asocia con la aplicación como si las agrega a una solución de Visual Studio.
 >
->Si tiene el código fuente, el mejor enfoque es importar el código en un proyecto de Visual Studio. A continuación, ejecute una compilación de depuración de la aplicación.
+>Si tiene el código fuente, el mejor enfoque es importar el código en un proyecto de Visual Studio. A continuación, ejecute una compilación de depuración de la aplicación.
 >
->Si no tiene el código fuente y la aplicación no tiene información de [depuración](../debugger/how-to-set-debug-and-release-configurations.md) en un formato compatible, las características de depuración disponibles son muy pocas.
+>Si no dispone del código fuente y la aplicación no tiene [información de depuración](../debugger/how-to-set-debug-and-release-configurations.md) en un formato compatible, las características de depuración disponibles son muy pocas.
 
-### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Para crear un nuevo proyecto EXE para una aplicación existente
+### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Creación de un proyecto EXE nuevo para una aplicación existente
 
-1. En Visual Studio, seleccione **archivo** > **abrir** > **proyecto**.
+1. En Visual Studio, seleccione **Archivo** > **Abrir** > **Proyecto**.
 
-1. En el cuadro de diálogo **Abrir proyecto** , seleccione **todos los archivos de proyecto**, si aún no está seleccionado, en la lista desplegable junto a **nombre de archivo**.
+1. En el cuadro de diálogo **Abrir proyecto**, seleccione la opción **Todos los archivos de proyecto**, si aún no la ha seleccionado, en la lista desplegable junto a **Nombre de archivo**.
 
-1. Desplácese hasta el archivo *. exe* , selecciónelo y seleccione **abrir**.
+1. Vaya al archivo *.exe*, selecciónelo y elija **Abrir**.
 
-   El archivo aparece en una nueva solución temporal de Visual Studio.
+   El archivo se muestra en una nueva solución temporal de Visual Studio.
 
-1. Inicie la depuración de la aplicación seleccionando un comando de ejecución, como **iniciar depuración**, en el menú **depurar** .
+1. Para iniciar la depuración de la aplicación, seleccione un comando de ejecución, como **Iniciar depuración**, en el menú **Depurar**.
 
-### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Para importar una aplicación en una solución existente de Visual Studio
+### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Importación de una aplicación en una solución de Visual Studio existente
 
-1. Con una C++solución C#de, o Visual Basic abierta en Visual Studio, seleccione **archivo** > **Agregar** > **proyecto existente**.
+1. Con una solución de C++, C# o Visual Basic abierta en Visual Studio, seleccione **Archivo** > **Agregar** > **Proyecto existente**.
 
-1. En el cuadro de diálogo **Abrir proyecto** , seleccione **todos los archivos de proyecto**, si aún no está seleccionado, en la lista desplegable junto a **nombre de archivo**.
+1. En el cuadro de diálogo **Abrir proyecto**, seleccione la opción **Todos los archivos de proyecto**, si aún no la ha seleccionado, en la lista desplegable junto a **Nombre de archivo**.
 
-1. Desplácese hasta el archivo *. exe* , selecciónelo y seleccione **abrir**.
+1. Vaya al archivo *.exe*, selecciónelo y elija **Abrir**.
 
-   El archivo aparece como un nuevo proyecto en la solución actual.
+   El archivo se muestra como un proyecto nuevo en la solución actual.
 
-1. Con el nuevo archivo seleccionado, inicie la depuración de la aplicación seleccionando un comando de ejecución, como **iniciar depuración**, en el menú **depurar** .
+1. Con el nuevo archivo seleccionado, inicie la depuración de la aplicación mediante la selección de un comando de ejecución, como **Iniciar depuración**, en el menú **Depurar**.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 - [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)
 - [Seguridad del depurador](../debugger/debugger-security.md)
 - [Archivos DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

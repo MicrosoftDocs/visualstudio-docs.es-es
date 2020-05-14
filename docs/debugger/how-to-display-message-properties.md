@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Mostrar las propiedades de mensaje | Documentos de Microsoft
+title: Procedimiento Presentación de las propiedades de los mensajes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62894318"
 ---
 # <a name="how-to-display-message-properties"></a>Procedimiento Presentación de las propiedades de los mensajes
-Para obtener más información acerca de un mensaje que aparece en [vista mensajes](../debugger/messages-view.md), utilice el [cuadro de diálogo de propiedades de mensaje](../debugger/message-properties-dialog-box.md).
+Para obtener más información sobre un mensaje que se muestra en la [vista Mensajes](../debugger/messages-view.md), utilice el [cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md).
 
-### <a name="to-open-a-message-properties-dialog-box"></a>Para abrir un cuadro de diálogo Propiedades de mensaje
+### <a name="to-open-a-message-properties-dialog-box"></a>Para abrir el cuadro de diálogo Propiedades del mensaje
 
-1. Seleccione un mensaje en el árbol mostrado en la vista mensajes.
+1. Seleccione un mensaje en el árbol que se muestra en la vista Mensajes.
 
-2. Desde el **vista** menú, elija **propiedades**.
+2. En el menú **Ver** , elija **Propiedades**.
 
-   Cuadros de diálogo de propiedades no son modales, por lo que puede hacer clic en otro elemento de una ventana de vista y el cuadro de diálogo muestra información sobre el elemento seleccionado.
+   Los cuadros de diálogo de propiedades no son modales, por lo que puede hacer clic en otro elemento en una ventana de vista y el cuadro de diálogo mostrará información al respecto.

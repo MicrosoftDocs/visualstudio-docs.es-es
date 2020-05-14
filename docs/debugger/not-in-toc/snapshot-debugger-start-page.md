@@ -1,5 +1,5 @@
 ---
-title: Página de inicio para el depurador de instantáneas
+title: Página de inicio de Snapshot Debugger
 ms.date: 07/14/2018
 robots: noindex, nofollow
 ms.topic: reference
@@ -10,65 +10,65 @@ ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62905285"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
-Visual Studio Snapshot Debugger ahora está conectado a su servicio y puede comenzar a recopilar las instantáneas para ayudar con la depuración.
+Visual Studio Snapshot Debugger ahora está conectado a su servicio y puede empezar a recopilar instantáneas que le ayuden con la depuración.
 
-Para usar al depurador de instantáneas, establezca algunos puntos de acoplamiento en el código, haga clic en el botón para comenzar a recopilar las instantáneas y, a continuación, ejecute el escenario. Cuando se ejecuta el código en el que se ha establecido un punto de acoplamiento, se toma una instantánea de la aplicación. A continuación, abra la instantánea haciendo clic en él en Visual Studio en la ventana de herramientas de diagnóstico. Ahora puede depurar la instantánea de su servicio como si fuera local. Para obtener instrucciones detalladas, siga leyendo.
+Para usar Snapshot Debugger, establezca algunos puntos de instantánea en el código, haga clic en el botón para empezar a recopilar instantáneas y, luego, ejecute el escenario. Cuando se ejecuta código en el que se ha establecido un punto de instantánea, se toma una instantánea de la aplicación. Después, se abre; para ello, haga clic en ella en Visual Studio en la ventana Herramientas de diagnóstico. Ahora puede depurar la instantánea desde el servicio como si fuera local. Para encontrar instrucciones detalladas, siga leyendo.
 
-## <a name="collect-and-view-snapshots"></a>Recopilar y ver las instantáneas
+## <a name="collect-and-view-snapshots"></a>Recopilación y visualización de instantáneas
 
-Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas son como las imágenes de su appication en un momento dado. Indicarle a Visual Studio cuándo y dónde se recopila una instantánea mediante el establecimiento de un punto de acoplamiento en el código. En el punto de acoplamiento, establezca las condiciones que debe asegurarse de que obtener una instantánea del problema que está investigando.
+Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas son como imágenes de la aplicación en un momento dado. A Visual Studio se le debe indica cuándo y dónde recopilar una instantánea mediante el establecimiento de un punto de instantánea en el código. En el punto de instantánea, establezca las condiciones que necesita para asegurarse de que obtiene una instantánea del problema que está investigando.
 
-### <a name="set-a-snappoint"></a>Establecer un punto de acoplamiento
+### <a name="set-a-snappoint"></a>Establecimiento de un punto de instantánea
 
-1. En el editor de código, haga clic en el margen interno izquierdo junto a una línea de código que está interesado en establecer un punto de acoplamiento. Asegúrese de que se trata de código que sabe que se ejecutará.
+1. En el editor de código, haga clic en el medianil izquierdo junto a una línea de código en la que le interese establecer un punto de instantánea. Asegúrese de que sea código que sabe que se ejecutará.
 
-    ![Establecer un punto de acoplamiento en el Editor](../media/snapshot-startpage-set-snappoint.png)
+    ![Establecimiento de un punto de instantánea en el editor](../media/snapshot-startpage-set-snappoint.png)
 
-    Un hexágono púrpura aparecerá donde haga clic en la izquierda.
+    Donde hace clic a la izquierda aparece un hexágono púrpura.
 
 2. Haga clic en **Iniciar colección** para activar el punto de instantánea.
 
-### <a name="open-a-snapshot"></a>Abrir una instantánea
+### <a name="open-a-snapshot"></a>Apertura de una instantánea
 
-1. Cuando se alcanza el punto de acoplamiento, aparece una instantánea en la ventana de herramientas de diagnóstico de la derecha. Si no se abre la ventana, ábralo eligiendo **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
+1. Cuando se alcanza el punto de instantánea, aparece una instantánea en la ventana Herramientas de diagnóstico a la derecha. Si la ventana no se abre, elija **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico** para abrirla.
 
-    ![Instantánea en la ventana de herramientas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
+    ![Instantánea en la ventana Herramientas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
 
-2. Haga doble clic en la instantánea para abrirlo.
+2. Haga doble clic en la instantánea para abrirla.
 
-### <a name="inspect-snapshot-data"></a>Inspeccionar los datos de instantánea
+### <a name="inspect-snapshot-data"></a>Inspección de los datos de la instantánea
 
-Desde esta vista, puede desplazar el puntero sobre las variables para ver información sobre datos, use las variables locales, relojes y llamar a la pila de windows y también evaluar expresiones.
+Desde esta vista, puede mantener el puntero sobre las variables para ver información sobre datos, usar las ventanas Variables locales, Inspecciones y Pila de llamadas y también evaluar expresiones.
 
-El propio sitio web está todavía activo y los usuarios finales no se ve afectados. De forma predeterminada, sólo una instantánea es capturada por el punto de acoplamiento. Es decir, una vez que se captura una instantánea, el punto de acoplamiento se desactiva. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
+El propio sitio web está todavía activo y los usuarios finales no se ve afectados. De forma predeterminada, solo se captura una instantánea por punto de instantánea. Es decir, después de capturar una instantánea, el punto de instantánea se desactiva. Si desea capturar otra instantánea en el punto de instantánea, puede volver a activar el punto de instantánea si hace clic en **Actualizar colección**.
 
-### <a name="set-a-logpoint"></a>Establecer un punto de registro
+### <a name="set-a-logpoint"></a>Establecimiento de un punto de registro
 
-1. Haga clic en un icono de punto de acoplamiento (el Hexágono púrpura) y elija **configuración**.
+1. Haga clic con el botón derecho en un icono de punto de instantánea (el hexágono azul) y elija **Configuración**.
 
-2. En el **configuración de punto de acoplamiento** ventana, seleccione **acciones**.
+2. En la ventana **Configuración del punto de instantánea**, seleccione **Acciones**.
 
-    ![Condiciones de punto de acoplamiento](../media/snapshot-startpage-logpoint.png)
+    ![Condiciones del punto de instantánea](../media/snapshot-startpage-logpoint.png)
 
-3. En el **mensaje** , escriba un mensaje de registro que desea registrar. También puede evaluar las variables del mensaje de registro si se colocan entre llaves.
+3. En el campo **Mensaje**, escriba un mensaje de registro que quiera registrar. También puede evaluar las variables del mensaje de registro si se colocan entre llaves.
 
-    Si elige **enviar a la ventana de salida**, aparece el mensaje en la ventana de herramientas de diagnóstico cuando se alcanza el punto de registro.
+    Si elige **Enviar a la ventana de salida**, cuando se alcanza el punto de registro, el mensaje aparece en la ventana Herramientas de diagnóstico.
 
-    Si elige **envía al registro de aplicación**, aparece el mensaje en cualquier lugar que puede ver los mensajes de `System.Diagnostics.Trace` (o `ILogger` en .NET Core), como App Insights, cuando se alcanza el punto de registro.
+    Si elige **Send to application log** (Enviar al registro de aplicaciones), cuando se alcanza el punto de registro, el mensaje aparece en cualquier lugar en el que puede ver los mensajes de `System.Diagnostics.Trace` (o `ILogger` en .NET Core), como App Insights.
 
 ## <a name="learn-more"></a>Obtener más información
 
-Puede encontrar más información sobre el depurador de instantáneas en el [página de documentos](../debug-live-azure-applications.md). Más información acerca de cómo establecer las condiciones para que sea más fácil encontrar errores.
+Puede encontrar más información sobre Snapshot Debugger en la [página de documentos](../debug-live-azure-applications.md). Aprenda más sobre cómo establecer las condiciones que facilitan la búsqueda de errores.
 
 ## <a name="dont-show-me-this-again"></a>No volver a mostrar
 
-Para no volver a mostrar la página de inicio del depurador de instantáneas al conectar el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**.
+Para no mostrar nunca la página de inicio de Snapshot Debugger cuando se conecte a él, cambie la opción **Show 'Getting Started' page on session start** (Mostrar la página de inicio al comienzo de la sesión) en **Herramientas** > **Opciones** > **Snapshot Debugger**.
 
-![Página de opciones de herramienta de depurador de instantáneas](../media/snapshot-startpage-tools-options.png)
+![Página de opciones de la herramienta Snapshot Debugger](../media/snapshot-startpage-tools-options.png)

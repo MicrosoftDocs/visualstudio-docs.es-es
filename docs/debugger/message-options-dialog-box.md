@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Opciones de mensaje | Microsoft Docs
+title: Cuadro de diálogo Opciones de mensaje | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,34 +13,34 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62931327"
 ---
 # <a name="message-options-dialog-box"></a>Cuadro de diálogo Opciones de mensaje
-Utilice este cuadro de diálogo para seleccionar qué mensajes se muestran en [vista mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, elija **los mensajes de registro** desde el **Spy** menú.
+Utilice este cuadro de diálogo para seleccionar los mensajes que se enumeran en la [vista Mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, elija **Mensajes de registro** en el menú de **Spy**.
 
 ## <a name="in-this-section"></a>En esta sección
- [Pestaña de Windows, el cuadro de diálogo Opciones de mensaje](../debugger/windows-tab-message-options-dialog-box.md) utiliza para seleccionar los tipos de mensajes a la lista. Incluye la herramienta de búsqueda.
+ [Pestaña Ventanas, cuadro de diálogo Opciones de mensaje](../debugger/windows-tab-message-options-dialog-box.md): se usa para seleccionar los tipos de mensajes que se van a enumerar. Incluye la herramienta de búsqueda.
 
- [Pestaña, cuadro de diálogo Opciones de mensaje mensajes](../debugger/messages-tab-message-options-dialog-box.md) utiliza para seleccionar los tipos de mensaje para su visualización.
+ [Pestaña Mensajes, cuadro de diálogo Opciones de mensaje](../debugger/messages-tab-message-options-dialog-box.md): se usa para seleccionar los tipos de mensajes que se van a consultar.
 
- [Ficha, cuadro de diálogo Opciones de mensaje de salida](../debugger/output-tab-message-options-dialog-box.md) se utiliza para especificar qué datos del mensaje para mostrar.
+ [Pestaña Salida, cuadro de diálogo Opciones de mensaje](../debugger/output-tab-message-options-dialog-box.md): se usa para seleccionar los datos de mensajes que se van a mostrar.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Cuadro de diálogo de búsqueda del mensaje](../debugger/message-search-dialog-box.md) usa para encontrar el nodo de un mensaje concreto en la vista mensajes.
+ [Cuadro de diálogo Búsqueda de mensajes](../debugger/message-search-dialog-box.md): se usa para buscar el nodo de un mensaje específico en la vista Mensajes.
 
- [Cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md) utilizado para mostrar las propiedades de un mensaje seleccionado en la vista de mensajes.
+ [Cuadro de diálogo Propiedades del mensaje](../debugger/message-properties-dialog-box.md): se usa para mostrar las propiedades de un mensaje seleccionado en la vista Mensajes.
 
- [Referencia de Spy ++](../debugger/spy-increment-reference.md) incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md): incluye secciones que describen cada menú y cuadro de diálogo de Spy++.
 
- [Buscar un mensaje en la vista mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md) se explica cómo encontrar un mensaje concreto en la vista mensajes.
+ [Búsqueda de mensajes en la vista Mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md): explica cómo buscar un mensaje específico en la vista Mensajes.
 
- [Abrir vista mensajes desde Buscar ventana](../debugger/how-to-open-messages-view-from-find-window.md) se explica cómo abrir la vista mensajes desde el cuadro de diálogo Buscar ventana.
+ [Apertura de la vista Mensajes desde Buscar ventana](../debugger/how-to-open-messages-view-from-find-window.md): explica cómo abrir la vista Mensajes desde el cuadro de diálogo Buscar ventana.
 
- [La vista mensajes](../debugger/messages-view.md) muestra la secuencia de mensaje asociada a una ventana, proceso o subproceso.
+ [Vista Mensajes](../debugger/messages-view.md): muestra el flujo de mensajes asociado a una ventana, proceso o subproceso.
 
- [Vistas de Spy ++](../debugger/spy-increment-views.md) explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
+ [Vistas de Spy + +](../debugger/spy-increment-views.md): explica las vistas de árbol de Spy++ de ventanas, mensajes, procesos y subprocesos.
 
- [Usar Spy ++](../debugger/using-spy-increment.md) presenta la herramienta Spy ++ y explica cómo se puede usar.
+ [Uso de Spy + +](../debugger/using-spy-increment.md): se presenta la herramienta Spy++ y se explica cómo se puede usar.

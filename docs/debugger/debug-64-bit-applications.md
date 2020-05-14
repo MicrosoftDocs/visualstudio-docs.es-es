@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones de 64 bits | Microsoft Docs
+title: Depuración de aplicaciones de 64 bits | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911587"
@@ -37,14 +37,14 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
 
 1. Cree una solución de Visual Studio, por ejemplo una aplicación de consola de C#.
 
-2. Establezca la configuración en 64 bits mediante el Administrador de configuración. Para obtener más información, consulta [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).
+2. Establezca la configuración en 64 bits mediante el Administrador de configuración. Para obtener más información, vea [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
 3. En este momento se inicia la versión de 64 bits del depurador remoto (msvsmon.exe). Se ejecuta siempre que se abra la solución con la configuración de 64 bits.
 
 4. Inicie la depuración. Debe tener la misma experiencia que con una configuración de 32 bits. Si se producen errores, vea la siguiente sección de solución de problemas.
 
 ## <a name="troubleshooting-64-bit-debugging"></a>Solución de problemas de depuración de 64 bits
- Es posible que se muestre el error "Una operación de depuración de 64 bits está tardando más de lo previsto". En este caso, Visual Studio envió una solicitud a la versión de 64 bits de msvsmon.exe y el resultado de la solicitud tardó mucho tiempo en volver.
+ Es posible que aparezca este error: "Una operación de depuración de 64 bits está tardando más de lo previsto". En este caso, Visual Studio envió una solicitud a la versión de 64 bits de msvsmon.exe y el resultado de la solicitud tardó mucho tiempo en volver.
 
  Existen dos causas probables de este error:
 

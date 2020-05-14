@@ -1,5 +1,5 @@
 ---
-title: DebugBreak y __debugbreak | Microsoft Docs
+title: DebugBreak y __debugbreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,13 +21,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
 ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/25/2019
 ms.locfileid: "75404652"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak y __debugbreak
-Puede llamar a la función [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) Win32 o al [__debugbreak](/cpp/intrinsics/debugbreak) intrínseco en cualquier punto del código. `DebugBreak` y `__debugbreak` tienen el mismo efecto que Establecer un punto de interrupción en dicha posición.
+Es posible llamar a las funciones [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) de Win32 o [__debugbreak](/cpp/intrinsics/debugbreak) intrínseca en cualquier punto del código. `DebugBreak` y `__debugbreak` tienen el mismo efecto que Establecer un punto de interrupción en dicha posición.
 
  Como `DebugBreak` es una llamada a una función del sistema, se deben instalar los símbolos de depuración del sistema para asegurarse de que se muestra la información correcta de la pila de llamadas tras una interrupción. De lo contrario, la información de la pila de llamadas mostrada por el depurador podría ser incorrecta. Si utiliza `__debugbreak`, no es necesario ningún símbolo.
 

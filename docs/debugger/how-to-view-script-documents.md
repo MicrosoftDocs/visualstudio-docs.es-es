@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: ver documentos de script | Microsoft Docs'
+title: Procedimiento Visualización de documentos de script | Microsoft Docs
 ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
 ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/07/2019
 ms.locfileid: "73714442"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Cómo: ver documentos de script (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Procedimiento Visualización de documentos de script (JavaScript)
 
-Los archivos de script de servidor son visibles en Explorador de soluciones. Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Los archivos de script del lado cliente aparecen en el nodo **documentos de script** .
+Los archivos de script de servidor son visibles en el Explorador de soluciones. Los archivos de script de cliente sólo están visibles en modo de depuración o en modo de interrupción. Los archivos de script de cliente aparecen en el nodo **Documentos de script**.
 
-Para algunos tipos de aplicaciones que generan páginas dinámicamente, es más fácil entrar en modo de interrupción y depurar cuando se establece un punto de interrupción a partir de un documento de script que se carga en el explorador. De forma similar, puede Agregar la instrucción `debugger` desde un documento de script cargado para entrar en modo de interrupción. En este artículo se muestra cómo ver estos documentos.
+Para algunos tipos de aplicaciones que generan páginas dinámicamente, es más fácil entrar en modo de interrupción y depurar cuando se establece un punto de interrupción a partir de un documento de script cargado en el explorador. De forma similar, puede agregar la instrucción `debugger` a partir de un documento de script cargado para entrar en modo de interrupción. En este artículo se muestra cómo visualizar estos documentos.
 
 > [!NOTE]
-> Antes [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], los archivos de script de cliente generados a partir del script del lado servidor aparecían en la ventana Explorador de scripts.
+> Antes de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], los archivos de script de cliente generados a partir de script de servidor aparecían en la ventana Explorador de scripts.
 
 ### <a name="to-view-a-server-side-script-document"></a>Para ver un documento de script de servidor
 

@@ -1,5 +1,5 @@
 ---
-title: Comandos del menú Ayuda | Documentos de Microsoft
+title: Comandos del menú Ayuda | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62895109"
 ---
 # <a name="help-menu-commands"></a>Comandos del menú Ayuda
-El **ayuda** menú proporciona comandos para abrir los archivos de ayuda.
+El menú **Ayuda** proporciona comandos para abrir archivos de ayuda.
 
- **Índice** abre la pantalla de contenido de Ayuda de Spy ++.
+ **Índice** Abre la pantalla de contenido de la ayuda de Spy++.
 
- **Uso de la Ayuda** abre un archivo de ayuda que se describe cómo usar la Ayuda.
+ **Uso de la Ayuda** Abre un archivo de ayuda que describe cómo usar la ayuda.
 
- **Acerca de Spy ++** muestra la información de copyright y de versión del software de Spy ++.
+ **Acerca de Spy++** Muestra la versión de software y la información de copyright de Spy++.

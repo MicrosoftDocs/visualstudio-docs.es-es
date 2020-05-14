@@ -1,5 +1,5 @@
 ---
-title: init | Microsoft Docs
+title: Init | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735001"

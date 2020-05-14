@@ -11,7 +11,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
 ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911481"
@@ -32,12 +32,12 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 
   Aunque el análisis de fotogramas está diseñado principalmente para ayudarle a conseguir un rendimiento de la representación más rápido, también le puede ayudar a conseguir una mejor calidad visual para un objetivo de rendimiento determinado o reducir el consumo de energía de la GPU.
 
-  Para ver una demostración de lo que puede hacer el análisis de fotogramas para su aplicación, puede ver el vídeo de [análisis de fotogramas de gráficos de Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) en Channel 9.
+  Para ver una demostración de lo que puede hacer el análisis de fotogramas para la aplicación, puede ver el vídeo [Análisis de fotogramas de gráficos en Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) en Channel 9.
 
 ## <a name="using-frame-analysis"></a>Uso de Análisis de fotogramas
  Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. Luego, en la ventana del documento de registro de gráficos (.vsglog), seleccione la pestaña **Análisis de fotogramas**.
 
- ![Seleccione la pestaña Análisis de fotogramas.](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")
+ ![Selección de la pestaña Análisis de fotogramas.](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")
 
  Al completarse el análisis, se muestran los resultados. La parte superior de la pestaña de análisis de fotogramas muestra la escala de tiempo y la tabla de resumen. La parte inferior muestra las tablas de detalles. Si se generan errores o advertencias durante la reproducción, se resumen encima de la escala de tiempo. Desde allí, puede seguir los vínculos para obtener más información sobre los errores y las advertencias.
 
@@ -70,7 +70,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="timeline"></a>Escala de tiempo
  La escala de tiempo muestra una vista general de los cronometrajes de llamada a draw relativos a otro. Como las barras más largas se corresponden con tiempos de dibujo más prolongados, puede usarlo para ubicar rápidamente en el fotograma las llamadas a draw más caras. Cuando el fotograma capturado contiene una gran cantidad de llamadas a draw, se combinan varias llamadas a draw en una barra cuya longitud sea la suma de esas llamadas a draw.
 
- ![La escala de tiempo&#45;muestra los costos de las llamadas a Draw.](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")
+ ![En la escala de tiempo se muestran los costos de las llamadas a draw.](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")
 
  Puede colocar el puntero en una barra para ver a qué evento de llamada a draw corresponde. Al seleccionar la barra, la lista de eventos se sincroniza con este evento.
 
@@ -86,12 +86,12 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="hot-draw-calls"></a>Llamadas a draw "activas"
  Para llamar la atención sobre llamadas a draw que consumen una mayor proporción del tiempo de representación general o que puedan ser inusualmente lentas por motivos que se pueden evitar, la fila que contiene estas llamadas a draw "activas" se sombrea en rojo cuando su control del tiempo de la línea base es superior a una desviación estándar más larga que el promedio de tiempo de la línea base de todas las llamadas a draw del fotograma.
 
- ![Esta llamada DrawIndexed tiene variantes de acceso frecuente e frío.](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")
+ ![Esta llamada a DrawIndexed tiene variantes activas e inactivas.](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")
 
 #### <a name="statistical-significance"></a>Significación estadística
  Para llamar la atención sobre las variantes de representación que son más significativas, el Análisis de fotogramas determina la significación estadística de cada variante de representación y muestra las más significativas en negrita. Muestra en verde las que mejoran el rendimiento y en rojo las que lo emporan. Muestra resultados que no son estadísticamente significativos como tipo normal.
 
- ![Relevancia estadística de la variante de llamada a Draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")
+ ![Relevancia estadística de la variante de la llamada a draw](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")
 
  Para determinar la relevancia estadística, el análisis de fotogramas usa la [prueba t de Student](https://en.wikipedia.org/wiki/Student's_t-test).
 
@@ -106,7 +106,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="platforms-that-support-hardware-counters"></a>Plataformas que admiten contadores de hardware
  Para las plataformas que admiten contadores GPU de hardware, el SoC nVidia T40 SOC y todos los SoC Qualcomm, por ejemplo, se muestran varias Tablas de detalles, una para cada variante. Cada contador de hardware disponible se recopila para cada variante de representación y se muestra en su propia Tabla de detalles.
 
- ![Los contadores de hardware se muestran cuando se admiten.](media/pix_frame.png "pix_frame")
+ ![Los contadores de hardware se mostrarán en caso de que sean compatibles.](media/pix_frame.png "pix_frame")
 
  La información de contador de hardware ofrece una vista muy detallada del comportamiento específico de la plataforma de hardware para cada llamada a draw, que le puede ayudar a identificar la causa de los cuellos de botella en el rendimiento de manera muy precisa.
 
@@ -132,7 +132,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 
  El Análisis de fotogramas limita el número de reintentos a 10. Si su plataforma tiene una gestión de la energía o un canalizador del reloj agresivos, es posible que el Análisis de fotogramas no se ejecute correctamente e informe de un error porque haya superado el límite de reintentos. Tal vez pueda mitigar el problema restaurando la limitación de la velocidad del reloj y la administración de energía de la plataforma de modo que sean menos agresivas, si la plataforma lo permite.
 
-## <a name="HardwareSupport"></a> Compatibilidad de hardware
+## <a name="hardware-support"></a><a name="HardwareSupport"></a> Compatibilidad de hardware
 
 ### <a name="timestamps-and-occlusion-queries"></a>Marcas de tiempo y consultas de oclusión
  Las marcas de tiempo se admiten en todas las plataformas que admiten el Análisis de fotogramas. Las consultas de oclusión de profundidad, necesarias para el contador de píxeles ocluidos, se admiten en las plataformas que admiten el nivel de características 9.2 o superiores.
@@ -143,7 +143,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 ### <a name="gpu-counters"></a>Contadores de GPU
  La compatibilidad de los contadores de hardware de GPU depende del hardware.
 
- El Análisis de fotogramas no recopila contadores de Intel, AMD ni nVidia, ya que ninguna GPU ofrecida actualmente por estas marcas admite los contadores de hardware de GPU de manera fiable. Sin embargo, el análisis de fotogramas recopila contadores de hardware de la GPU siguiente, que los admite de forma confiable:
+ El Análisis de fotogramas no recopila contadores de Intel, AMD ni nVidia, ya que ninguna GPU ofrecida actualmente por estas marcas admite los contadores de hardware de GPU de manera fiable. Pero el Análisis de fotogramas recopila contadores de hardware de la GPU siguiente, que los admite de forma fiable:
 
 - nVidia T40 (Tegra4)
 
@@ -159,7 +159,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  En el Analizador de gráficos, cuando reproduce un archivo de registro de gráficos que usa un nivel superior al que admite la máquina de reproducción, recurre a WARP automáticamente. En el Análisis de fotogramas no se recurre a WARP explícitamente y se genera un error. WARP es útil para examinar la corrección de la aplicación Direct3D, pero no para examinar su rendimiento.
 
 > [!NOTE]
-> Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. El registro de gráficos se puede reproducir siempre que el archivo de registro no contenga API o use niveles de características que no se admitan en la máquina de reproducción.
+> Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. El registro de gráficos se puede reproducir siempre que el archivo de registro no contenga ninguna API ni use niveles de características que no se admiten en el equipo de reproducción.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e inferiores
  Si su aplicación llama a la API Direct3D 10, el Análisis de fotogramas no la reconocerá ni la incluirá en el perfil, aunque otras herramientas del Analizador de gráficos la reconozcan y la usen.
@@ -168,9 +168,9 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 > Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características.
 
 ### <a name="warp"></a>WARP
- El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. No se impide la ejecución de análisis de fotogramas en los dispositivos de deformación, pero no suele ser una buena persecución porque la ejecución de WARP en una CPU de alto nivel es más lenta que incluso las GPU modernas más reducidas, y dado que el rendimiento de WARP puede variar en gran medida en función de la CPU concreta se está ejecutando en.
+ El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. No se impide el Análisis de fotogramas en dispositivos WARP, pero no suele valer la pena, ya que si WARP se ejecuta en una CPU de última generación, será más lento que las GPU modernas de menor potencia, y porque el rendimiento de WARP puede variar en gran medida según la CPU en la que se ejecute.
 
-## <a name="Variants"></a> Variantes
+## <a name="variants"></a><a name="Variants"></a> Variantes
  Cada cambio que el Análisis de fotogramas realiza en la manera en que se representa un fotograma durante la reproducción se conoce como *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:
 
 |Variante|Descripción|
@@ -179,14 +179,14 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 |**0x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|
 |**2x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|
 |**4x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para más información, vea [0x/2x/4x MSAA Variants](0x-2x-4x-msaa-variants.md) (Variantes de MSAA 0x/2x/4x).|
-|**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
-|**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
-|**Filtro de textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
-|**Filtro de textura anisotrópico**|Establece el modo de filtro en `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` en `16` (16 veces el filtro de textura anisotrópico) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [variantes de filtrado de texturas de punto, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
+|**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [Variantes de filtrado de textura puntual, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
+|**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [Variantes de filtrado de textura puntual, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
+|**Filtro de textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [Variantes de filtrado de textura puntual, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
+|**Filtro de textura anisotrópico**|Establece el modo de filtro en `DXD11_FILTER_ANISOTROPIC` y `MaxAnisotropy` en `16` (16 veces el filtro de textura anisotrópico) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, vea [Variantes de filtrado de textura puntual, bilineal, trilineal y anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
 |**Formato de destino de presentación 16bpp**|Establece el formato de píxeles en `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos los objetivos de representación y superficies del búfer.<br /><br /> Para obtener más información, vea [16bpp Render Target Format Variant](16bpp-render-target-format-variant.md) (Variante de formato de destino de representación 16bpp).|
 |**Generación de asignación de MIP**|Habilita la asignación de MIP en todas las texturas que no son objetivos de representación.<br /><br /> Para obtener más información, vea [Mip-map Generation Variant](mip-map-generation-variant.md) (Variante Generación de asignación de MIP).|
 |**Dimensiones de textura media**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a la mitad del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 128x64 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|
 |**Dimensiones de textura un cuarto**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a un cuarto del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 64x32 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|
 |**Compresión de textura BC**|Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. Las variantes de formato B8G8R8X8 se comprimen mediante BC1; las variantes de formato B8G8R8A8 y R8G8B8A8 se comprimen mediante BC3.<br /><br /> Para obtener más información, vea [BC Texture Compression Variant](bc-texture-compression-variant.md) (Variante de compresión de textura BC).|
 
- El resultado de la mayoría de las variantes es prescriptivo: “reducir el tamaño de la textura a la mitad es un 25 por ciento más rápido” o “habilitar dos veces la MSAA es solo un 2 por ciento más lento”. Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.
+ El resultado de la mayoría de las variantes es descriptivo: "Reducir el tamaño de la textura a la mitad es un 25 % más rápido" o "Habilitar dos veces MSAA es solo un 2 % más lento". Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.

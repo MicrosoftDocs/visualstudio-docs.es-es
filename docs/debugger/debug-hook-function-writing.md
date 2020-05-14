@@ -1,5 +1,5 @@
 ---
-title: Función de enlace de depuración | Documentos de Microsoft
+title: Creación de funciones de enlace de depuración | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 82145d39adc519bfd1324cc36805cea7b97b1664
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62563378"
@@ -32,14 +32,14 @@ ms.locfileid: "62563378"
 Esta sección describe varias funciones de enlace de depuración personalizadas que puede escribir y que le permitirán insertar el código que desee en algunos puntos predefinidos dentro del procesamiento normal del depurador.
 
 ## <a name="in-this-section"></a>En esta sección
- [Funciones de enlace de bloque cliente](../debugger/client-block-hook-functions.md) proporciona orientación y un prototipo para escribir funciones que validan o informan del contenido de los datos almacenados en bloques _CLIENT_BLOCK.
+ [Funciones de enlace con los bloques de tipo cliente](../debugger/client-block-hook-functions.md) Proporciona instrucciones y un prototipo para escribir funciones que validan el contenido de los datos almacenados en bloques _CLIENT_BLOCK o informan de él.
 
- [Funciones de enlace de asignación](../debugger/allocation-hook-functions.md) define una función de enlace de asignación, explora sus diferentes usos, señala sus restricciones y proporciona un prototipo.
+ [Funciones de enlace de asignación](../debugger/allocation-hook-functions.md) Define una función de enlace de asignación, explora sus diferentes usos, señala las restricciones y proporciona un prototipo.
 
- [Enlaces de asignación y asignaciones de memoria CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) describe la restricción de las funciones de enlace de asignación de forma explícita omitir `_CRT_BLOCK` se bloquea si realizan alguna llamada a funciones de biblioteca en tiempo de ejecución de C que asignan memoria interna. Este tema trata también las consecuencias que se producen si la función de enlace de asignación no omite los bloques `_CRT_BLOCK` (con ejemplos) y cómo cambiar la función de enlace de asignación predeterminada, **CrtDefaultAllocHook**.
+ [Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) Describe la restricción de las funciones de enlace de asignación que consiste en omitir explícitamente los bloques `_CRT_BLOCK` si realizan alguna llamada a funciones de la biblioteca en tiempo de ejecución de C que asignan memoria interna. Este tema trata también las consecuencias que se producen si la función de enlace de asignación no omite los bloques `_CRT_BLOCK` (con ejemplos) y cómo cambiar la función de enlace de asignación predeterminada, **CrtDefaultAllocHook**.
 
- [Funciones de enlace de informe](../debugger/report-hook-functions.md) explica `_CrtSetReportHook`, que puede utilizar para filtrar informes a centrarse en determinados tipos de asignaciones. Este tema también proporciona un prototipo.
+ [Funciones de enlace de informe](../debugger/report-hook-functions.md) Analiza `_CrtSetReportHook`, que se puede usar para filtrar informes para centrarse en determinados tipos de asignaciones. Este tema también proporciona un prototipo.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-- [Técnicas de depuración de CRT](../debugger/crt-debugging-techniques.md) -vínculos a técnicas de depuración para la biblioteca de tiempo de ejecución de C, incluido el uso de la biblioteca de depuración de CRT, macros para informes, diferencias entre `malloc` y `_malloc_dbg`, escribir funciones de enlace de depuración y la biblioteca CRT montón de depuración.
+- [Técnicas de depuración de CRT](../debugger/crt-debugging-techniques.md) Proporciona vínculos a técnicas de depuración para la biblioteca en tiempo de ejecución de C, como: uso de la Biblioteca de depuración de CRT, macros para informes, diferencias entre `malloc` y `_malloc_dbg`, creación de funciones de enlace de depuración, y el montón de depuración de CRT.

@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones en modo mixto | Microsoft Docs
+title: Depuración de aplicaciones en modo mixto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,7 +23,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
 ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/13/2020
 ms.locfileid: "75916289"
@@ -33,7 +33,7 @@ Una aplicación en modo mixto es cualquier aplicación que combine código nativ
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Habilitar Editar y continuar de C++ en la depuración en modo mixto
 
-Para habilitar editar y continuar para C++, consulte [Cómo habilitar y deshabilitar editar y continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Para habilitar Editar y continuar para C++, vea [Cómo: Habilitar y deshabilitar Editar y continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Para usar Editar y Continuar para C++ en Visual Studio 2013, tiene que revertir al motor de depuración heredado. Vea [Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) (Cambiar al modo de compatibilidad administrado en Visual Studio 2013) en el blog Microsoft Application Lifecycle Management.

@@ -1,5 +1,5 @@
 ---
-title: Uso de la biblioteca de depuración de CRT | Microsoft Docs
+title: Uso de la biblioteca de depuración CRT | Microsoft Docs
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -30,13 +30,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745606"
 ---
 # <a name="crt-debug-library-use"></a>Uso de la biblioteca de depuración CRT
-La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades de depuración. Para utilizar una de las bibliotecas de depuración de CRT, debe vincular con [/Debug](/cpp/build/reference/debug-generate-debug-info) y compilar con **/mdd**, **/MTD**o **/LDd**.
+La biblioteca en tiempo de ejecución de C (CRT) proporciona amplias capacidades de depuración. Si quiere usar una de las bibliotecas de depuración de CRT, debe crear un vínculo con [/DEBUG](/cpp/build/reference/debug-generate-debug-info) y compilar con **/MDd**, **/MTd** o **/LDd**.
 
 ## <a name="remarks"></a>Comentarios
  Las principales definiciones y macros para la depuración con CRT se encuentran en el archivo de encabezado CRTDBG.h.

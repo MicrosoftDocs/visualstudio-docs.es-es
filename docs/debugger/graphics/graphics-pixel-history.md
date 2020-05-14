@@ -1,5 +1,5 @@
 ---
-title: Historial de píxeles de gráfico | Microsoft Docs
+title: Historial de píxeles de gráfico | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72735482"
@@ -22,7 +22,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
 
  Esta es la ventana Historial de píxeles:
 
- ![Un píxel con tres eventos de Direct3D en su historial.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
+ ![Un píxel con tres eventos Direct3D en su historial.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>Descripción de la ventana Historial de píxeles
  Con Historial de píxeles, puede analizar cómo afectan los eventos de Direct3D a un píxel determinado del destino de representación durante un fotograma. Puede relacionar un problema de representación con un evento concreto de Direct3D, incluso cuando los eventos posteriores (o las primitivas posteriores del mismo evento) siguen cambiando el valor de color final del píxel. Por ejemplo, es posible que un píxel se represente de forma incorrecta y, luego, quede ocultado por un píxel semitransparente, de modo que sus colores se fusionen en el búfer de fotogramas. Este tipo de problema sería difícil de diagnosticar si solo pudiera guiarse por el contenido final del destino de representación.
@@ -35,14 +35,14 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
 
  Puede expandir cada primitiva para examinar cómo se combinó la salida del sombreador de píxeles con el color de píxel existente para producir el color resultante. Desde aquí, también puede examinar o depurar el código del sombreador de píxeles asociado a la primitiva, y puede expandir aún más el nodo del sombreador de vértices para examinar la entrada del sombreador de vértices.
 
-### <a name="exclusion"></a> Exclusión de primitivas
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Exclusión de primitivas
  Si una primitiva se excluye de modo que no afecte al color del píxel, la exclusión puede producirse por varios motivos. Cada motivo está representado por un icono de los que se describen en esta tabla:
 
 |Iconos|Motivo de exclusión|
 |----------|--------------------------|
 |![Icono de error de prueba de profundidad.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|El píxel se excluyó porque no superó la prueba de profundidad.|
 |![Icono de error de prueba de tijera.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|El píxel se excluyó porque no superó la prueba de tijera.|
-|![Icono de error de prueba de estarcido.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|
+|![Icono de error de prueba de galería de símbolos.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|
 
 ### <a name="draw-call-exclusion"></a>Exclusión de llamadas a draw
  Si todas las primitivas de una llamada a draw se excluyen de modo que no afecten al destino de representación por no superar una prueba, la llamada a draw no se podrá expandir y se mostrará junto a ella un icono correspondiente al motivo de la exclusión. Los motivos de exclusión de las llamadas a draw se asemejan a los motivos de exclusión de las primitivas y sus iconos son similares.
@@ -76,4 +76,4 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Objetos ausentes debido al estado del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
-- [Tutorial: Depurar errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Tutorial: Depuración de errores de representación debidos al sombreado](walkthrough-debugging-rendering-errors-due-to-shading.md)

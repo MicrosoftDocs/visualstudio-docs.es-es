@@ -1,5 +1,5 @@
 ---
-title: Pestaña de Windows, el cuadro de diálogo Opciones de mensaje | Documentos de Microsoft
+title: Pestaña Ventanas, (Cuadro de diálogo Opciones de mensaje) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,28 +12,28 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62929169"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)
-Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.
+Use la pestaña **Ventanas** para establecer el ámbito de los mensajes que aparecen en la [Vista Mensajes](../debugger/messages-view.md). Para mostrar el [Cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), seleccione **Mensajes de registro** en el menú **Spy**.
 
- Las siguientes opciones están disponibles en el **Windows** pestaña:
+ En la pestaña **Ventanas** encontrarás las opciones de configuración siguientes:
 
- **Herramienta de búsqueda** utilizada para seleccionar una ventana de la herramienta de arrastrar y colocar.
+ **Herramienta Buscador** Herramienta de arrastrar y colocar que se usa para seleccionar una ventana.
 
- **Ocultar Spy ++** quita de la ventana principal de Spy ++ y deja el **opciones de mensaje** cuadro de diálogo visible encima de las otras aplicaciones.
+ **Ocultar Spy++** Quita la ventana principal de Spy++ y deja visible el cuadro de diálogo **MessageOptions** encima de las demás aplicaciones.
 
- **Primario de la ventana** muestra los mensajes de la ventana seleccionada y su ventana primaria inmediata.
+ **Ventana primaria** Muestra mensajes para la ventana seleccionada y su ventana primaria inmediata.
 
- **Ventana secundaria** anidadas de mostrar mensajes de la ventana seleccionada y todas sus ventanas secundarias, incluidas ventanas secundarias.
+ **Ventana secundaria** Muestra mensajes para la ventana seleccionada y todas sus ventanas secundarias, incluidas las ventanas secundarias anidadas.
 
- **Windows del mismo subproceso** muestra los mensajes de la ventana seleccionada y todas las demás ventanas que pertenecen al mismo subproceso.
+ **Ventanas del mismo subproceso** Muestran mensajes para la ventana seleccionada y todas las demás ventanas que son propiedad del mismo subproceso.
 
- **Windows del mismo proceso** muestra los mensajes de la ventana seleccionada y todas las demás ventanas que pertenecen al mismo proceso.
+ **Ventanas del mismo proceso** Muestran mensajes para la ventana seleccionada y todas las demás ventanas que pertenecen al mismo proceso.
 
- **Todo Windows en el sistema** mostrar mensajes para todas las ventanas.
+ **Todas las ventanas del sistema** Muestran mensajes para todas las ventanas.
 
- **Guardar configuración como predeterminada** guardar la configuración anterior para las nuevas ventanas de flujo de mensajes. Esta configuración también se guarda al salir de Spy ++.
+ **Guardar la configuración como predeterminada** Guarda la configuración anterior para las nuevas ventanas de flujo de mensajes. Esta configuración también se guarda al salir de Spy++.

@@ -1,5 +1,5 @@
 ---
-title: Funciones de enlace de asignación | Microsoft Docs
+title: Funciones de enlace de asignación | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,18 +24,18 @@ ms.workload:
 - multiple
 ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745820"
 ---
 # <a name="allocation-hook-functions"></a>Funciones de enlace de asignación
-Se llama a una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), cada vez que se asigna, reasigna o libera memoria. Puede usar este tipo de enlace para muchos fines diferentes. Úselo para probar cómo trata una aplicación las situaciones de memoria insuficiente, como examinar patrones de asignación o registrar información de asignación para su análisis posterior.
+Una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), recibe una llamada cada vez que se asigna, reasigna o libera memoria. Puede usar este tipo de enlace para muchos propósitos diferentes. Por ejemplo, puede usarlo para probar el modo en que una aplicación controla las situaciones de memoria insuficiente, como examinar pautas de asignación o registrar información de asignación para análisis posteriores.
 
 > [!NOTE]
 > Tenga en cuenta la restricción acerca del uso de funciones de la biblioteca en tiempo de ejecución de C en una función de enlace de asignación, descrita en [Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
- Una función de enlace de asignación debe tener un prototipo como el ejemplo siguiente:
+ Una función de enlace de asignación debería tener un prototipo como este:
 
 ```cpp
 int YourAllocHook(int nAllocType, void *pvData,
@@ -50,7 +50,7 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);
 ```
 
- Cuando la biblioteca en tiempo de ejecución llama al enlace, el argumento *nAllocType* indica qué operación de asignación está a punto de realizarse ( **_HOOK_ALLOC**, **_HOOK_REALLOC**o **_HOOK_FREE**). En una versión gratuita o en una reasignación, `pvData` tiene un puntero al artículo de usuario del bloque que se va a liberar. Sin embargo, para una asignación, este puntero es null, porque la asignación no se ha producido. Los argumentos restantes contienen el tamaño de la asignación en cuestión, su tipo de bloque, el número de solicitud secuencial asociado a él y un puntero al nombre de archivo. Si está disponible, los argumentos también incluyen el número de línea en el que se realizó la asignación. Después de que la función de enlace realiza las operaciones especificadas por su autor, debe devolver **TRUE** para indicar que la operación de asignación puede continuar, o bien **FALSE**, que indica que la operación ha resultado errónea. Un simple enlace de este tipo podría comprobar la cantidad de memoria asignada hasta entonces y devolver **FALSE** si esa cantidad supera un pequeño límite. La aplicación experimentaría entonces el tipo de errores de asignación que ocurrirían normalmente sólo cuando la memoria disponible fuera muy escasa. Mediante enlaces más complejos, se podrían registrar pautas de asignación, analizar el uso de la memoria o informar de situaciones específicas.
+ Cuando la biblioteca en tiempo de ejecución llama a la función de enlace, el argumento *nAllocType* indica qué operación de asignación se va a realizar ( **_HOOK_ALLOC**, **_HOOK_REALLOC**, o **_HOOK_FREE**). En una operación de liberación o de reasignación, `pvData` tiene un puntero al artículo de usuario del bloque que se va a liberar. Pero en el caso de una asignación, este puntero es nulo porque la asignación no se ha producido. Los argumentos que quedan contienen el tamaño de la asignación, su tipo de bloque, el número de solicitud secuencial asociado con él, así como un puntero al nombre del archivo. Si está disponible, los argumentos también incluyen el número de línea en el que se realizó la asignación. Después de que la función de enlace realiza las operaciones especificadas por su autor, debe devolver **TRUE** para indicar que la operación de asignación puede continuar, o bien **FALSE**, que indica que la operación ha resultado errónea. Un simple enlace de este tipo podría comprobar la cantidad de memoria asignada hasta entonces y devolver **FALSE** si esa cantidad supera un pequeño límite. La aplicación experimentaría entonces el tipo de errores de asignación que ocurrirían normalmente sólo cuando la memoria disponible fuera muy escasa. Mediante enlaces más complejos, se podrían registrar pautas de asignación, analizar el uso de la memoria o informar de situaciones específicas.
 
 ## <a name="see-also"></a>Vea también
 

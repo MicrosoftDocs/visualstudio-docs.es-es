@@ -1,5 +1,5 @@
 ---
-title: Ejecutar un proceso de trabajo en una cuenta de usuario | Microsoft Docs
+title: Ejecución de un proceso de trabajo en una cuenta de usuario | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72732817"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.
 
  > [!IMPORTANT]
- > A partir de Windows Server 2008 R2, se recomienda el uso de [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
+ > A partir de Windows Server 2008 R2, se recomienda usar [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
 
 ## <a name="procedure"></a>Procedimiento
 
@@ -78,7 +78,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
     Aparecerá el cuadro de diálogo **Seleccionar usuarios, equipos o grupos** .
 
-10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: NombreDominio\NombreUsuario.
+10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: nombreDeDominio\nombreDeUsuario.
 
 11. En el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** , dé al usuario **Control total**y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** .
 
@@ -88,4 +88,4 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)

@@ -1,5 +1,5 @@
 ---
-title: Asignaciones de puerto del Depurador remoto | Microsoft Docs
+title: Asignaciones de puertos del depurador remoto | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
 ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74239454"
@@ -48,10 +48,10 @@ En otras palabras, el número de puerto asignado al depurador remoto se incremen
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 64 bits
 ::: moniker range=">=vs-2019"
- Cuando se inicia la versión de 64 bits del Depurador remoto, usa de forma predeterminada el puerto principal (4024).  Si depura un proceso de 32 bits, la versión de 64 bits del Depurador remoto inicia una versión de 32 bits del Depurador remoto en el puerto 4025 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, se usa el puerto 4024 y no el 4025.
+ Cuando se inicia la versión de 64 bits del depurador remoto, este usa el puerto principal (4024) de manera predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4025 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, se usa el puerto 4024 y no el 4025.
 ::: moniker-end
 ::: moniker range="vs-2017"
- Cuando se inicia la versión de 64 bits del Depurador remoto, usa de forma predeterminada el puerto principal (4022).  Si depura un proceso de 32 bits, la versión de 64 bits del Depurador remoto inicia una versión de 32 bits del Depurador remoto en el puerto 4023 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, usa el puerto 4022 y no usa el puerto 4023.
+ Cuando se inicia la versión de 64 bits del depurador remoto, este usa el puerto principal (4022) de manera predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4023 (el número de puerto principal incrementado en 1). Si ejecuta el depurador remoto de 32 bits, usa el puerto 4022 y no usa el puerto 4023.
 :::moniker-end
 
  Este puerto se puede configurar desde la línea de comandos: **Msvsmon /wow64port \<número de puerto>** .
@@ -59,7 +59,7 @@ En otras palabras, el número de puerto asignado al depurador remoto se incremen
 ## <a name="the-discovery-port"></a>Puerto de detección
  UDP 3702 se usa para buscar instancias en ejecución del depurador remoto en la red (por ejemplo, el cuadro de diálogo **Buscar** en el cuadro de diálogo **Asociar al proceso** ). Se usa solo para detectar una máquina que ejecute el depurador remoto, por lo que es opcional si tiene alguna otra manera de conocer el nombre del equipo o la dirección IP del equipo de destino. Se trata de un puerto estándar para la detección, por lo que no es posible configurar el número de puerto.
 
- Si no desea habilitar la detección, puede iniciar msvsmon desde la línea de comandos con la detección deshabilitada:  **Msvsmon /nodiscovery**.
+ Si no quiere habilitar la detección, puede iniciar msvsmon desde la línea de comandos con la detección deshabilitada:  **Msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Puertos del depurador remoto en Azure
  El depurador remoto en Azure usa los puertos siguientes. Los puertos del servicio en la nube se asignan a los puertos en la máquina virtual individual. Todos los puertos son TCP.

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Buscar una ventana de Windows Vista | Documentos de Microsoft
+title: Procedimiento Búsqueda de una ventana en la vista Ventanas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389291"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64831029"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>Procedimiento Buscar una ventana en la vista Ventanas
-Puede buscar una ventana concreta en la vista de Windows mediante su identificador, título, clase o una combinación de su título y la clase como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos de la ventana seleccionada en el árbol de la ventana.
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Procedimiento Búsqueda de una ventana en la vista Ventanas
+Puede buscar una ventana específica en la vista Ventanas mediante su identificador, título o clase, o una combinación de su título y clase, como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. En los campos del cuadro de diálogo se mostrarán los atributos de la ventana seleccionada en el árbol de ventanas.
 
- Inicio con el árbol expandido en el segundo nivel (todas las ventanas que son elementos secundarios del escritorio), para que pueda identificar nivel del escritorio de windows por su nombre de clase y el título. Una vez que haya elegido una ventana de nivel de escritorio, puede expandir ese nivel para buscar una ventana secundaria concreta.
+ Comience por el árbol expandido al segundo nivel (todas las ventanas que son elementos secundarios del escritorio), para que pueda identificar las ventanas del escritorio por su nombre de clase y título. Una vez que haya elegido una ventana del escritorio, puede expandir ese nivel para buscar una ventana secundaria concreta.
 
-### <a name="to-search-for-a-window-in-windows-view"></a>Para buscar una ventana en la vista de Windows
+### <a name="to-search-for-a-window-in-windows-view"></a>Para buscar una ventana en la vista Ventanas
 
-1. Organizar las ventanas por lo que ese Spy ++ la [Windows Vista](../debugger/windows-view.md) ventana y la ventana de destino están visibles.
+1. Organice las ventanas para que se puedan ver las de Spy++, la de la [vista Ventanas](../debugger/windows-view.md) y la de destino.
 
-2. Desde el **búsqueda** menú, elija **Buscar ventana**.
+2. En el menú **Buscar**, seleccione **Buscar ventana**.
 
-    El [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) se abre.
+    Se abrirá el cuadro de diálogo [Buscar ventana](../debugger/window-search-dialog-box.md).
 
    > [!TIP]
-   > Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++ y deja solo la **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.
+   > Para reducir el desorden de la pantalla, seleccione la opción **Ocultar Spy**. Esta opción oculta la ventana principal de Spy++ y deja visible únicamente el cuadro de diálogo **Buscar ventana** encima de las otras aplicaciones. La ventana principal de Spy++ se restaura al hacer clic en **Aceptar** o **Cancelar**, o al desactivar la opción **Ocultar Spy++** .
 
-3. Arrastre el **herramienta de búsqueda** a través de la ventana de destino. A medida que arrastra la herramienta, el **Buscar ventana** cuadro de diálogo muestra los detalles de la ventana seleccionada.
-
-   - O
-
-     Si conoce el identificador de la ventana que desee (por ejemplo, desde el depurador), puede escribirla en el **controlar** cuadro.
+3. Arrastre la **Herramienta de búsqueda** sobre la ventana de destino. Al arrastrar la herramienta, el cuadro de diálogo **Buscar ventana** muestra detalles sobre la ventana seleccionada.
 
    - O
 
-     Si conoce el título o una clase de la ventana que desea, puede escribir en el **título** y **clase** cuadros de texto y borre el **controlar** cuadro de texto.
+     Si conoce el identificador de la ventana que le interesa (por ejemplo, del depurador), puede escribirlo en el cuadro **Identificador**.
 
-4. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.
+   - O
+
+     Si conoce el título o la clase de la ventana que le interesa, puede escribirlos en los cuadros de texto **Título** y **Clase**, y desactivar el cuadro de texto **Identificador**.
+
+4. Seleccione **Arriba** o **Abajo** para determinar la dirección inicial de la búsqueda.
 
 5. Haga clic en **Aceptar**.
 
-    Si se encuentra una ventana coincidente, se resalta en el [Windows Vista](../debugger/windows-view.md) ventana.
+    Si se encuentra una ventana coincidente, se resaltará en la ventana [vista Ventanas](../debugger/windows-view.md).

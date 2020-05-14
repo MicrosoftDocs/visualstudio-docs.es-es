@@ -1,5 +1,5 @@
 ---
-title: Busque el proceso ASP.NET en ejecución | Microsoft Docs
+title: Búsqueda del proceso ASP.NET en ejecución | Microsoft Docs
 ms.date: 11/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,33 +18,33 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
 ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2019
 ms.locfileid: "73187657"
 ---
-# <a name="find-the-name-of-the-aspnet-process"></a>Buscar el nombre de un proceso de ASP.NET
+# <a name="find-the-name-of-the-aspnet-process"></a>Búsqueda del el nombre de un proceso de ASP.NET
 
-Para depurar una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en ejecución, el depurador de Visual Studio debe asociarse al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proceso por nombre.
+Para depurar una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en ejecución, el depurador de Visual Studio debe adjuntarse al proceso [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] por nombre.
 
-**Para averiguar qué proceso está ejecutando una aplicación de ASP.NET:**
+**Para averiguar qué proceso está ejecutando una aplicación de ASP.NET, siga estos pasos:**
 
-1. Con la aplicación en ejecución, en Visual Studio, seleccione **Depurar** > **asociar al proceso**.
+1. En Visual Studio, con la aplicación en ejecución, seleccione **Depurar** > **Adjuntar al proceso**.
 
-1. En el cuadro de diálogo **asociar al proceso** , escriba las primeras letras de los nombres de proceso de la lista siguiente o escríbalos en el cuadro de búsqueda. El que se está ejecutando es el que ejecuta la aplicación ASP.NET. Adjunte a ese proceso para depurar la aplicación.
+1. En el cuadro de diálogo **Adjuntar al proceso**, escriba las primeras letras de los nombres de proceso de la lista siguiente o escríbalos en el cuadro de búsqueda. El que se está ejecutando es el que ejecuta la aplicación de ASP.NET. Adjúntela a ese proceso para depurar la aplicación.
 
-    - *w3wp. exe* es IIS 6,0 y versiones posteriores.
-    - *aspnet_wp. exe* es versiones anteriores de IIS.
-    - *iisexpress. exe* es iisexpress.
-    - *dotnet. exe* es ASP.net Core.
-    - *Inetinfo. exe* es una aplicación ASP más antigua que se ejecuta en proceso.
+    - *w3wp.exe* pertenece a IIS 6.0 y versiones posteriores.
+    - *aspnet_wp.exe* pertenece a versiones anteriores de IIS.
+    - *iisexpress.exe* pertenece a IISExpress.
+    - *dotnet.exe* pertenece a ASP.NET Core.
+    - *inetinfo.exe* pertenece a aplicaciones de ASP anteriores que se ejecutan en el mismo proceso.
 
 >[!NOTE]
->Visual Studio 2012 y versiones anteriores [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] código pueden estar en el sistema de archivos y ejecutarse en el servidor de prueba *webdev. WebServer. exe* o *webdev. WebServer40. exe*. En este caso, para la depuración local, adjunte a *webdev. WebServer. exe* o *webdev. WebServer40. exe* en lugar del proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+>Visual Studio 2012 y las versiones anteriores de código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pueden estar en el sistema de archivos y ejecutarse en el servidor de prueba *WebDev.WebServer.exe* o *WebDev.WebServer40.exe*. En este caso, para la depuración local, se debe adjuntar a *WebDev.WebServer.exe* o a *WebDev.WebServer40.exe*, no al proceso [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 **Vea también:**
 
 - [Adjuntar a un proceso en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Requisitos previos para la depuración remota de aplicaciones Web](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Requisitos previos para la depuración remota de aplicaciones web](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)
 - [Depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

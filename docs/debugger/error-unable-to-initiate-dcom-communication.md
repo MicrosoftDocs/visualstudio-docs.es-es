@@ -1,5 +1,5 @@
 ---
-title: 'Error: no se puede iniciar la comunicación DCOM | Microsoft Docs'
+title: 'Error: No se puede iniciar la comunicación con DCOM | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 8a5e45df06d4b9490160c94902457ea630548966
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72736726"
@@ -26,7 +26,7 @@ Se ha producido un error de DCOM cuando el equipo local ha intentado comunicarse
 
 ### <a name="to-correct-this-error"></a>Para corregir este error
 
-- Si el equipo remoto tiene el Firewall de Windows habilitado, vea [depuración remota](../debugger/remote-debugging.md) para obtener instrucciones sobre cómo configurar el firewall para la depuración local.
+- Si la máquina remota tiene habilitado el Firewall de Windows, vea [Depuración remota](../debugger/remote-debugging.md) para aprender a configurar el firewall para la depuración local.
 
 - Para restaurar la autenticación de Windows, reinicie ambos equipos. Examine los registros de eventos en los equipos local y remoto para buscar errores Kerberos y póngase en contacto con los administradores de dominio para averiguar si existen problemas conocidos.
 
