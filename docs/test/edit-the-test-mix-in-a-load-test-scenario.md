@@ -71,7 +71,7 @@ Puede agregar más pruebas unitarias y de rendimiento web a la combinación de p
 
 4. Cuando haya terminado de quitar pruebas, elija **Aceptar**.
 
-## <a name="EditingTestMixAboutMixControl"></a> Control de combinación
+## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a> Control de combinación
 El control de combinación permite ajustar el porcentaje de carga que se distribuye entre las pruebas, tipos de exploradores o tipos de redes en un escenario de prueba de carga. Para ajustar los valores de porcentajes, tiene que mover los controles deslizantes. Al ajustar la combinación para pruebas se especifica la probabilidad de que un supuesto usuario ejecute una prueba concreta en un escenario de prueba de carga.
 
 Al mover un control deslizante, cambian los valores de porcentaje de todos los elementos disponibles. Si tiene más de dos elementos, la cantidad que agregue o quite se distribuirá uniformemente entre los demás elementos. Es posible reemplazar este comportamiento. Si activa la casilla de la columna de bloqueo de un elemento determinado, bloqueará el valor de porcentaje especificado para dicho elemento. Entonces, cuando mueva un control deslizante, la cantidad que agregue o quite sólo se aplicará a los elementos desbloqueados restantes.

@@ -33,7 +33,7 @@ Cuando se crea una prueba automatizada de IU, el **generador de pruebas automati
 |[CodedUITest1.cs](#CodedUITestCS)|[Clase CodedUITest1](#CodedUITestCS)<br /><br /> [Métodos](#CodedUITestMethods)<br /><br /> [Propiedades](#CodedUITestProperties)|Sí|
 |[UIMap.uitest](#UIMapuitest)|La asignación XML de la interfaz de usuario para la prueba.|No|
 
-### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs
+### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Este archivo contiene código que se crea automáticamente desde el **generador de pruebas automatizadas de IU** cuando se crea una prueba. Este archivo se crea de nuevo cada vez que cambia una prueba, por lo tanto, no se puede agregar código o modificar el código que contiene.
 
 #### <a name="declarations-section"></a>Sección Declaraciones
@@ -57,7 +57,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 
 Para una interfaz de usuario (UI) de Windows, se incluye el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>. Para la interfaz de usuario de una página web, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>. Para una interfaz de usuario de Windows Presentation Foundation, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
-#### <a name="UIMapClass"></a> Clase UIMap
+#### <a name="uimap-class"></a><a name="UIMapClass"></a> Clase UIMap
 La sección siguiente del archivo es la clase [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ```csharp
@@ -92,7 +92,7 @@ public UIStartWindow UIStartWindow
 public UIMathApplicationWindow UIMathApplicationWindow
 ```
 
-##### <a name="UIMapMethods"></a> Métodos de UIMap
+##### <a name="uimap-methods"></a><a name="UIMapMethods"></a> Métodos de UIMap
 Cada método tiene una estructura similar a la del método `AddItems()`. Esto se explica con mayor detalle debajo del código, que se muestra con saltos de línea para aportar claridad.
 
 ```csharp
@@ -139,7 +139,7 @@ Assert.AreEqual(
 
 El nombre del cuadro de texto se define como desconocido porque el desarrollador de la aplicación Calculadora de Windows no ha proporcionado un nombre disponible públicamente para el control. El método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> genera un error cuando el valor real no es igual al valor esperado. En este caso, la prueba podría generar errores. Observe también que el valor esperado incluye un separador decimal seguido de un espacio. Si alguna vez tiene que modificar la funcionalidad de esta prueba concreta, deberá permitir este separador decimal y el espacio.
 
-##### <a name="UIMapProperties"></a> Propiedades de UIMap
+##### <a name="uimap-properties"></a><a name="UIMapProperties"></a> Propiedades de UIMap
 También se usa un código estandarizado para cada propiedad en toda la clase. El código siguiente para la propiedad `AddItemsParams` se usa en el método `AddItems()`.
 
 ```csharp
@@ -183,7 +183,7 @@ public class AddItemsParams
 
 Al igual que ocurre con todas las clases del archivo *UIMap.cs*, esta clase comienza con <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. En esta pequeña clase existe un área `Fields` que define las cadenas que se deben usar como parámetros para el método <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> que, a su vez, se usa en el método `UIMap.AddItems()` (analizado anteriormente). Puede escribir código para reemplazar los valores de estos campos de cadena, antes de llamar al método donde se usan estos parámetros.
 
-### <a name="UIMapCS"></a> UIMap.cs
+### <a name="uimapcs"></a><a name="UIMapCS"></a> UIMap.cs
 De forma predeterminada, este archivo contiene una clase `UIMap` parcial, que no tiene métodos ni propiedades.
 
 #### <a name="uimap-class"></a>Clase UIMap
@@ -191,7 +191,7 @@ Aquí puede crear código personalizado para extender la funcionalidad de la cla
 
 Todos los componentes de [UIMap](/previous-versions/dd580454(v=vs.140)) pueden usar los métodos y las propiedades de cualquier otro componente de la clase [UIMap](/previous-versions/dd580454(v=vs.140)).
 
-### <a name="CodedUITestCS"></a> CodedUITest1.cs
+### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
 El **generador de pruebas automatizadas de IU** genera este archivo pero no lo recrea cada vez que se modifica la prueba, por lo que puede modificar el código que contiene. El nombre del archivo se genera a partir del nombre que se especifica para la prueba cuando se crea.
 
 #### <a name="codeduitest1-class"></a>Clase CodedUITest1
@@ -205,7 +205,7 @@ public class CodedUITest1
 
 El [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) se aplica a la clase de forma automática, lo que permite al marco de pruebas reconocerlo como una extensión de pruebas. Asimismo, tenga en cuenta que no es una clase parcial. Este archivo contiene todo el código de clase.
 
-##### <a name="CodedUITestProperties"></a> Propiedades CodedUITest1
+##### <a name="codeduitest1-properties"></a><a name="CodedUITestProperties"></a> Propiedades CodedUITest1
 
 La clase contiene dos propiedades predeterminadas que se encuentran en la parte inferior del archivo. No las modifique.
 
@@ -218,7 +218,7 @@ public TestContext TestContext
 public UIMap UIMap
 ```
 
-##### <a name="CodedUITestMethods"></a> Métodos CodedUITest1
+##### <a name="codeduitest1-methods"></a><a name="CodedUITestMethods"></a> Métodos CodedUITest1
 De forma predeterminada, la clase solo contiene un método.
 
 ```csharp
@@ -261,7 +261,7 @@ public void MyTestCleanup()
 
 Si agrega más métodos a esta clase con [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)), el marco de pruebas llama a cada uno de ellos como parte de la prueba.
 
-### <a name="UIMapuitest"></a> UIMap.uitest
+### <a name="uimapuitest"></a><a name="UIMapuitest"></a> UIMap.uitest
 Se trata de un archivo XML que representa la estructura de la grabación de la prueba de IU codificada y de todos sus componentes. Entre ellos se incluyen las acciones y las clases, además de los métodos y las propiedades de estas últimas. El archivo [UIMap.Designer.cs](#UIMapDesignerFile) contiene el código que el generador de pruebas automatizadas de IU crea para reproducir la estructura de la prueba y proporciona la conexión con el marco de pruebas.
 
 El archivo *UIMap.uitest* no se puede editar directamente. Pero puede modificar la prueba con el generador de pruebas automatizadas de IU, lo que modifica automáticamente los archivos *UIMap.uitest* y [*UIMap.Designer.cs*](#UIMapDesignerFile).
