@@ -257,7 +257,7 @@ public void MyTestCleanup()
 }
 ```
 
-`MyTestInitialize()` se ha aplicado al método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>, lo que indica al marco de pruebas que debe llamar a este método antes que a ningún otro método de prueba. Del mismo modo, `MyTestCleanup()` se ha aplicado al método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>, lo que indica al marco de pruebas que debe llamar a este método después de que se haya llamado a todos los métodos de prueba restantes. El uso de estos métodos es opcional. Para esta prueba, puede llamarse al método `UIMap.LaunchCalculator()` desde `MyTestInitialize()`, y al método `UIMap.CloseCalculator()` desde `MyTestCleanup()` (en lugar de desde `CodedUITest1Method1()`).
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> se ha aplicado al método `MyTestInitialize()`, lo que indica al marco de pruebas que debe llamar a este método antes que a ningún otro método de prueba. Del mismo modo, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> se ha aplicado al método `MyTestCleanup()`, lo que indica al marco de pruebas que debe llamar a este método después de que se haya llamado a todos los métodos de prueba restantes. El uso de estos métodos es opcional. Para esta prueba, puede llamarse al método `UIMap.LaunchCalculator()` desde `MyTestInitialize()`, y al método `UIMap.CloseCalculator()` desde `MyTestCleanup()` (en lugar de desde `CodedUITest1Method1()`).
 
 Si agrega más métodos a esta clase con [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)), el marco de pruebas llama a cada uno de ellos como parte de la prueba.
 

@@ -59,7 +59,7 @@ Quita uno o varios valores `register` o `registerGroup` de la lista.
 El alias `r` se puede usar en lugar de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Ejemplo
-En este ejemplo se usa el alias `Debug.ListRegisters` de `r` para mostrar los valores del grupo de registros `Flags`.
+En este ejemplo se usa el alias `r` de `Debug.ListRegisters` para mostrar los valores del grupo de registros `Flags`.
 
 ```cmd
 r /Display Flags

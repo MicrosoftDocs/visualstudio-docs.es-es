@@ -86,7 +86,7 @@ Para obtener más información, vea [Cómo: Recopilar datos de contadores de CPU
 
 ## <a name="windows-events"></a>Eventos de Windows
 
-Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción *de la herramienta de línea de comandos*VSPerfReport.exe`/calltrace`. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](/windows/win32/etw/about-event-tracing).
+Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos *VSPerfReport.exe*. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](/windows/win32/etw/about-event-tracing).
 
 Para obtener más información, consulte:
 
