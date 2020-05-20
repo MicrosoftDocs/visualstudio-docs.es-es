@@ -83,7 +83,7 @@ La característica **Generar a partir del uso** puede usarse con marcos de prueb
 
 7. Haga clic en **Aceptar** para cerrar el cuadro de diálogo y crear el nuevo archivo.
 
-8. En el **Explorador de soluciones**, busque el nuevo archivo **Automobile.vb** o **Automobile.cs** para comprobar que se encuentra en el nodo del proyecto *GFUDemo_VB* o *GFUDemo_CS*. En el editor de código, el foco aún está en `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, lo que le permite continuar escribiendo la prueba con una interrupción mínima.
+8. En el **Explorador de soluciones**, busque el nuevo archivo *Automobile.vb* o *Automobile.cs* para comprobar que se encuentra en el nodo del proyecto **GFUDemo_VB** o **GFUDemo_CS**. En el editor de código, el foco aún está en `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, lo que le permite continuar escribiendo la prueba con una interrupción mínima.
 
 ### <a name="generate-a-property-stub"></a>Generar código auxiliar de propiedad
 Supongamos que la especificación del producto indica que la clase `Automobile` tiene dos propiedades públicas denominadas `Model` y `TopSpeed`. El constructor predeterminado debe inicializar estas propiedades con los valores predeterminados `"Not specified"` y `-1` . La siguiente prueba unitaria comprobará que el constructor predeterminado establece las propiedades en sus valores predeterminados correctos.
