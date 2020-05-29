@@ -6,6 +6,8 @@
       href: ide-tour.md
     - name: "Visual\_Studio para Mac para usuarios de Windows"
       href: vsmac-for-windows-users.md
+    - name: Terminal integrado
+      href: integrated-terminal.md
 - name: Instalación
   items:
     - name: "Instalación de Visual\_Studio\_2019 para Mac"
