@@ -338,6 +338,10 @@
                   href: ca1067.md
                 - name: 'CA1068: Los parámetros CancellationToken deben aparecer en último lugar'
                   href: ca1068.md
+                - name: 'CA1069: Los enumeradores no deben tener valores duplicados'
+                  href: ca1069.md
+                - name: 'CA1070: No declarar los campos de eventos como virtuales'
+                  href: ca1070.md
                 - name: 'CA2210: Los ensamblados deben tener nombres seguros válidos'
                   href: ca2210.md
             - name: Advertencias de documentación
@@ -579,6 +583,10 @@
                   href: ca2007.md
                 - name: 'CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection'
                   href: ca2009.md
+                - name: 'CA2011: No asignar la propiedad dentro de su establecedor'
+                  href: ca2011.md
+                - name: 'CA2015: No definir finalizadores para los tipos derivados de MemoryManager<T>'
+                  href: ca2015.md
             - name: Advertencias de seguridad
               items:
                 - name: Información general
@@ -740,12 +748,24 @@
                   href: ca3147.md
                 - name: 'CA5358: No usar modos de cifrado inseguro'
                   href: ca5358.md
+                - name: 'CA5359: No deshabilitar la validación de certificado'
+                  href: ca5359.md
                 - name: 'CA5361: No deshabilitar el uso de cifrado seguro de SChannel'
                   href: ca5361.md
+                - name: 'CA5362: Ciclo de referencia potencial en gráfico de objetos deserializados'
+                  href: ca5362.md
                 - name: 'CA5363: No deshabilitar la validación de solicitudes'
                   href: ca5363.md
                 - name: 'CA5364: No usar protocolos de seguridad en desuso'
                   href: ca5364.md
+                - name: 'CA5365: No deshabilitar la comprobación de encabezados HTTP'
+                  href: ca5365.md
+                - name: 'CA5366: Utilizar XmlReader para el XML de lectura de DataSet'
+                  href: ca5366.md
+                - name: 'CA5367: No serializar los tipos con campos de puntero'
+                  href: ca5367.md
+                - name: 'CA5368: Establecer ViewStateUserKey para clases derivadas de página'
+                  href: ca5368.md
                 - name: 'CA5369: Usar XmlReader para deserializar'
                   href: ca5369.md
                 - name: 'CA5370: Usar XmlReader para validar el lector'
@@ -756,20 +776,50 @@
                   href: ca5372.md
                 - name: 'CA5373: No usar la función de derivación de clave obsoleta'
                   href: ca5373.md
+                - name: 'CA5374: No utilizar XslTransform'
+                  href: ca5374.md
                 - name: 'CA5378: No deshabilitar ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: 'CA5379: No usar el algoritmo de función de derivación de claves débiles'
+                  href: ca5379.md
                 - name: 'CA5380: No agregar certificados al almacén raíz'
                   href: ca5380.md
                 - name: 'CA5381: Asegurar que no se agregan certificados al almacén raíz'
                   href: ca5381.md
+                - name: 'CA5382: Usar cookies seguras en ASP.NET Core'
+                  href: ca5382.md
+                - name: 'CA5383: Asegurarse de usar cookies seguras en ASP.NET Core'
+                  href: ca5383.md
+                - name: 'CA5384: No usar el algoritmo de firma digital (DSA)'
+                  href: ca5384.md
+                - name: 'CA5385: Usar un algoritmo de Rivest-Shamir-Adleman (RSA) con un tamaño de clave suficiente'
+                  href: ca5385.md
                 - name: 'CA5386: Evitar codificar el valor SecurityProtocolType de forma rígida'
                   href: ca5386.md
+                - name: 'CA5387: No usar una función de derivación de claves débiles con un recuento de iteraciones insuficiente'
+                  href: ca5387.md
+                - name: 'CA5388: Garantizar un recuento de iteraciones suficiente al usar una función de derivación de claves débiles'
+                  href: ca5388.md
                 - name: 'CA5389: No agregar la ruta de acceso del elemento de archivo a la ruta de acceso del sistema de archivos de destino'
                   href: ca5389.md
+                - name: 'CA5390: No codificar la clave de cifrado de forma rígida'
+                  href: ca5390.md
+                - name: 'CA5394: No usar aleatoriedad no segura'
+                  href: ca5394.md
+                - name: 'CA5396: Establecer HttpOnly en true para HttpCookie'
+                  href: ca5396.md
                 - name: 'CA5397: No usar valores SslProtocols en desuso'
                   href: ca5397.md
                 - name: 'CA5398: Evitar valores SslProtocols codificados de forma rígida'
                   href: ca5398.md
+                - name: 'CA5399: Deshabilitar definitivamente la comprobación de la lista de revocación de certificados HttpClient'
+                  href: ca5399.md
+                - name: 'CA5400: Garantizar que la comprobación de la lista de revocación de certificados HttpClient no está deshabilitada'
+                  href: ca5400.md
+                - name: 'CA5401: No usar CreateEncryptor con un vector de inicialización no predeterminado'
+                  href: ca5401.md
+                - name: 'CA5402: Usar CreateEncryptor con el vector de inicialización predeterminado'
+                  href: ca5402.md
                 - name: 'CA5403: No codificar el certificado de forma rígida'
                   href: ca5403.md
             - name: Advertencias de uso
@@ -863,5 +913,11 @@
                   href: ca2242.md
                 - name: 'CA2243: Los literales de cadena de atributo se deben analizar correctamente'
                   href: ca2243.md
+                - name: 'CA2244: No duplicar inicializaciones de elementos indexados'
+                  href: ca2244.md
+                - name: 'CA2245: No asignar una propiedad a sí misma'
+                  href: ca2245.md
+                - name: 'CA2246: No asignar un símbolo y su miembro en la misma instrucción'
+                  href: ca2246.md
             - name: Suspensión automática de la característica
               href: automatic-feature-suspension.md
