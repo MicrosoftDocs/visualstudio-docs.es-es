@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b888dbbe7a26e5ff333ec39aa0fdfcec90b429
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586200"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182812"
 ---
 # <a name="reliability-warnings"></a>Advertencias de confiabilidad
 
@@ -34,4 +34,6 @@ Las advertencias de confiabilidad admiten la confiabilidad de bibliotecas y apli
 |[CA2004: Quitar las llamadas a GC.KeepAlive](../code-quality/ca2004.md)|Si va a realizar la conversión al uso de SafeHandle, quite todas las llamadas a GC. KeepAlive (objeto). En este caso, las clases no deben tener que llamar a GC. KeepAlive, suponiendo que no tienen un finalizador, sino que se basan en SafeHandle para finalizar el identificador de sistema operativo.|
 |[CA2006: Utilizar SafeHandle para encapsular recursos nativos](../code-quality/ca2006.md)|El uso de IntPtr en código administrado podría indicar un posible problema para la seguridad y la confiabilidad. Todos los usos de IntPtr se deben revisar para determinar si se necesita utilizar en su lugar SafeHandle o una tecnología similar.|
 |[CA2007: No esperar una tarea directamente](../code-quality/ca2007.md)|Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> directamente.|
-|[CA2009: no llama a ToImmutableCollection en un valor de ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`se llamó innecesariamente al método en una colección inmutable desde el espacio de <xref:System.Collections.Immutable> nombres.|
+|[CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`se llamó innecesariamente al método en una colección inmutable desde el <xref:System.Collections.Immutable> espacio de nombres.|
+|[CA2011: No asignar la propiedad dentro de su establecedor](../code-quality/ca2011.md) | Se asignó accidentalmente un valor a una propiedad dentro de su propio [descriptor de acceso set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
+|[CA2015: no definir finalizadores para los tipos derivados de MemoryManager &lt; T&gt;](../code-quality/ca2015.md) | Agregar un finalizador a un tipo derivado de <xref:System.Buffers.MemoryManager%601> puede permitir que la memoria se libere mientras esté siendo utilizada por <xref:System.Span%601> . |
