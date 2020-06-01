@@ -7,12 +7,12 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 7c90cb398e174d5b023668040352de11e1caaee3
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386174"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84200511"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>¿Cómo se asignan las suscripciones de Visual Studio?
 
@@ -22,7 +22,7 @@ Para asignar las suscripciones de forma individual:
 
 1. Seleccione la pestaña [Administrar suscriptores](https://manage.visualstudio.com/subscribers) de la parte superior de la página en [manage.visualstudio.com](https://manage.visualstudio.com).
 2. Seleccione Agregar y escriba el nombre y la dirección de correo electrónico del usuario al que le gustaría asignar una suscripción.
-    - Si en la organización se usa Azure Active Directory, el campo Nombre buscará usuarios en el directorio actual. Puede seleccionar en los resultados de la búsqueda, o bien agregar un usuario de forma manual.
+    1. Si en la organización se usa Azure Active Directory, el campo Nombre buscará usuarios en el directorio actual. Puede seleccionar en los resultados de la búsqueda, o bien agregar un usuario de forma manual.
 3. Si quiere que el suscriptor tenga acceso a las descargas de software cuando inicie sesión en el [portal de suscripciones de Visual Studio](https://my.visualstudio.com/), asegúrese de dejar habilitadas las descargas en la sección Configuración de descarga.
 4. Complete la sección Preferencias de comunicación para que sepamos en qué idioma se debe enviar el correo electrónico de asignación a los suscriptores.
 5. Si quiere agregar notas asociadas en la asignación, use la selección de referencias.
