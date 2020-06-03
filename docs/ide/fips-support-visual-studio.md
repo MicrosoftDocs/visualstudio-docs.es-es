@@ -7,16 +7,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d147397a168bb78a31a8fbe6929d6c2184d080
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386691"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180498"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Compatibilidad de Visual Studio con el modo de funcionamiento aprobado 140-2 de FIPS
 
-A partir de la [versión 16.4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 admite el modo de funcionamiento aprobado 140-2 de la publicación del Estándar federal de procesamiento de información (FIPS) para Windows, Azure y .NET. Además, con la [versión 16.5](/visualstudio/releases/2019/release-notes-v16.5/), ahora Visual Studio admite el modo de funcionamiento aprobado 140-2 de FIPS al desarrollar [aplicaciones C++ destinadas a un sistema Linux remoto](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
+A partir de la [versión 16.4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 admite el modo de funcionamiento aprobado 140-2 de la publicación del Estándar federal de procesamiento de información (FIPS) para Windows, Azure y .NET. Además, con la [versión 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5), ahora Visual Studio admite el modo de funcionamiento aprobado 140-2 de FIPS al desarrollar [aplicaciones C++ destinadas a un sistema Linux remoto](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
 Para configurar el modo de funcionamiento aprobado 140-2 de FIPS para Visual Studio, [instale .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) y, después, habilite el valor de directiva de grupo, **Criptografía del sistema: Usar algoritmos que cumplan el estándar FIPS para cifrado, firma y operaciones hash.** .
 

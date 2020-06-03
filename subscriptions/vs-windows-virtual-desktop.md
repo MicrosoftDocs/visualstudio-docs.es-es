@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo puede aprovechar Microsoft Windows Virtual Desktop a través de la suscripción de Visual Studio
-ms.openlocfilehash: 87911b1b7b6eb63eb85b64515d5d24755e4656e6
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649734"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183592"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acceso a Windows Virtual Desktop en las suscripciones 
 Ahora los suscriptores de Visual Studio pueden usar sus créditos individuales de desarrollo y pruebas de Azure para los servicios de Microsoft Windows Virtual Desktop.  
@@ -39,7 +39,7 @@ Para ver una lista completa de los requisitos previos para usar Windows Virtual
 
 ## <a name="get-started"></a>Primeros pasos 
 Cuando estén implementados todos los requisitos previos, le interesará completar varias acciones para que se realice la implementación.  Consulte estos tutoriales para empezar:
-- [Creación de un inquilino de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/tenant-setup-azure-active-directory)
+- [Creación de un inquilino de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Creación de un grupo de host](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) con Azure Portal
 - [Administración de grupos de aplicaciones](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) para Windows Virtual Desktop
 

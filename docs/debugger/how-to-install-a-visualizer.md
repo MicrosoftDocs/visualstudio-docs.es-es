@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 499d644cc8374b070cedaf058b0e4dc17d155bdc
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880265"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183631"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedimiento para instalar un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
@@ -43,7 +43,7 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copie el archivo DLL del [elemento depurado](create-custom-visualizers-of-data.md#to-create-the-debuggee-side) en cualquiera de las ubicaciones siguientes:
+3. Copie el archivo DLL del [elemento depurado](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) en cualquiera de las ubicaciones siguientes:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 4ae879d8ed03653959ae926cc372300db9b71b9f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404979"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182656"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Búsqueda de fugas de memoria con la biblioteca de CRT
 
@@ -72,7 +72,7 @@ De forma predeterminada, `_CrtDumpMemoryLeaks` genera el informe de pérdida de 
 Puede usar `_CrtSetReportMode` para redirigir el informe a otra ubicación o volver a la ventana **Salida** como se muestra aquí:
 
 ```cpp
-_CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
+_CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_DEBUG );
 ```
 
 ## <a name="interpret-the-memory-leak-report"></a>Interpretación del informe de fuga de memoria
