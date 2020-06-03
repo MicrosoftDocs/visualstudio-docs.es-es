@@ -114,7 +114,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ![Lista de errores en Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Ventana de salida
+## <a name="output-window"></a>Resultados (ventana)
 
 En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 
@@ -156,7 +156,7 @@ Solo se han examinado algunas de las características de Visual Studio para fami
 > [!div class="nextstepaction"]
 > [Información sobre proyectos y soluciones](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre Visual Studio](../get-started/visual-studio-ide.md)
 - [Más características de Visual Studio 2017](../ide/advanced-feature-overview.md)

@@ -29,16 +29,16 @@ Establece los valores especificados por una consulta XPath en un archivo XML.
 
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `XmlPoke`.
+ En la siguiente tabla se describen los parámetros de la tarea `XmlPoke` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`Namespaces`|Parámetro `String` opcional.<br /><br /> Especifica los espacios de nombres para los prefijos de la consulta XPath. `Namespaces` es un fragmento XML que consta de elementos `Namespace` con los atributos `Prefix` y `Uri`. El atributo `Prefix` especifica el prefijo para asociar con el espacio de nombres especificado en el atributo `Uri`. No use un valor `Prefix` vacío.|
 |`Query`|Parámetro `String` opcional.<br /><br /> Especifica la consulta XPath.|
 |`Value`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el valor que se va a insertar en la ruta de acceso especificada.|
 |`XmlInputPath`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica la entrada XML como una ruta de acceso a archivo.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 

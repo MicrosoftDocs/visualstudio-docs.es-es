@@ -37,7 +37,7 @@ Puede asignar suscripciones a través de programas como Open License y Open Valu
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA y Select
 Los contratos Enterprise de Microsoft (EA), MPSA y Select Plus ofrecen flexibilidad en cuanto al uso del software y las licencias de Visual Studio con el paso del tiempo. Los administradores de Visual Studio deben realizar un pedido "true up" anual para llevar sus licencias de software hasta el nivel máximo de uso establecido durante el periodo del contrato.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

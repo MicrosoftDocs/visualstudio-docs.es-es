@@ -24,7 +24,7 @@ En este tutorial, entrenaremos un modelo de TensorFlow con el [conjunto de datos
 
 La base de datos MNIST tiene un conjunto de entrenamiento de 60 000 ejemplos y un conjunto de pruebas de 10 000 ejemplos de dígitos escritos a mano.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 Antes de comenzar, asegúrese de que tener instalado y configurado lo siguiente:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurar la máquina virtual de aprendizaje profundo de Azure
@@ -40,17 +40,17 @@ Antes de comenzar, asegúrese de que tener instalado y configurado lo siguiente:
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 ```
 
-### <a name="download-sample-code"></a>Descarga de código de ejemplo
+### <a name="download-sample-code"></a>Descargar el código de ejemplo
 
 Descargue este [repositorio de GitHub](https://github.com/Microsoft/samples-for-ai), que contiene ejemplos para comenzar a usar el aprendizaje profundo en TensorFlow, CNTK, Theano y mucho más.
 
-## <a name="open-project"></a>Abrir proyecto
+## <a name="open-project"></a>Abrir el proyecto
 
 - Abra Visual Studio y seleccione **Archivo > Nuevo > Proyecto o solución**.
 
 - Seleccione la carpeta **Tensorflow Examples** en el repositorio de ejemplos descargado y abra el archivo **TensorflowExamples.sln**.
 
-   ![Abrir proyecto](media/tensorflow-local/open-project.png)
+   ![Abrir el proyecto](media/tensorflow-local/open-project.png)
 
    ![Abrir la solución](media/tensorflow-local/open-solution.png)
 
@@ -78,7 +78,7 @@ Para ver el estado y los detalles de los trabajos: expanda la máquina virtual a
 
 ![Explorador de trabajos](media/tensorflow-vm/job-browser.png)
 
-## <a name="clean-up-resources"></a>Limpieza de recursos
+## <a name="clean-up-resources"></a>Limpiar los recursos
 
 Detenga la máquina virtual si tiene previsto usarla en un futuro próximo. Si ya ha terminado este tutorial, ejecute el siguiente comando para limpiar los recursos:
 

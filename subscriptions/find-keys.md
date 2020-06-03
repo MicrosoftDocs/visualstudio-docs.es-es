@@ -31,8 +31,8 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 |    Tipo de clave           |    Descripción                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    No aplicable                    |    No se requiere clave para instalar este producto.                                                       |
-|    Minoristas                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
+|    No es aplicable                    |    No se requiere clave para instalar este producto.                                                       |
+|    Venta directa                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
 |    Activación múltiple        |    Una clave de activación múltiple (MAK) le permite activar varias instalaciones de un producto con la misma clave. Por lo general, las MAK se usan con versiones de productos para licencias por volumen. Normalmente, se proporciona una sola clave MAK por suscripción.    |
 |    Clave de activación estática    |    Las claves de activación estática se proporcionan para los productos que no necesitan activación. Se pueden usar para un número variado de instalaciones.                                                                                                                  |
 |    Clave personalizada                 |    Las claves personalizadas proporcionan acciones o información especial para activar o instalar el producto.                                                                                                                                                                |
@@ -66,7 +66,7 @@ Puede exportar una lista de todas las claves que ha reclamado, junto con una amp
 
 Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

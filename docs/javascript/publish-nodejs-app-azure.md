@@ -29,14 +29,14 @@ App Service de Linux implementa un contenedor Docker de Linux para ejecutar la a
 
 En este tutorial se muestra cómo crear una aplicación de Node.js a partir de una plantilla instalada con Herramientas de Node.js para Visual Studio, insertar el código en un repositorio de GitHub y luego aprovisionar una instancia de Azure App Service a través del portal web de Azure para poder implementar desde el repositorio de GitHub. Para usar la línea de comandos para aprovisionar la instancia de Azure App Service e insertar el código desde un repositorio de Git local, vea [Creación de una aplicación web de Node.js](/azure/app-service/containers/quickstart-nodejs).
 
-En este tutorial, aprenderá a:
+En este tutorial aprenderá a:
 > [!div class="checklist"]
-> * Creación de un proyecto Node.js
+> * Crear un proyecto de Node.js
 > * Crear un repositorio de GitHub para el código
 > * Crear una instancia de App Service de Linux en Azure
 > * Implementar en Linux
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 * Debe tener instalado Visual Studio y la carga de trabajo de desarrollo de Node.js.
 
@@ -65,7 +65,7 @@ En este tutorial, aprenderá a:
     Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Node.js**, elija **Create a new Basic Azure Node.js Express 4 application** (Crear una aplicación básica de Azure Node.js Express 4) (TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
+    En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
 
     ![Creación de una aplicación de Express de TypeScript](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -95,7 +95,7 @@ Para configurar GitHub para Visual Studio:
 
     ![Apertura de la ventana de GitHub](../javascript/media/azure-github-get-started.png)
 
-4. Haga clic en **Introducción**.
+4. Haga clic en **Comenzar**.
 
     Si ya está conectado a GitHub, aparece un cuadro de herramientas similar a la siguiente ilustración.
 
@@ -121,7 +121,7 @@ Para configurar GitHub para Visual Studio:
 
 5. Haga clic en **Crear** para crear la instancia de App Service.
 
-    Esto puede tardar unos minutos.
+    Puede tardar unos minutos en implementarse.
 
 6. Una vez implementada, vaya a la sección **Configuración de la aplicación** y agregue un valor con el nombre `SCM_SCRIPT_GENERATOR_ARGS` y un valor de `--node`.
 
@@ -175,7 +175,7 @@ Para configurar GitHub para Visual Studio:
 * Si se produce un problema en el proceso de node.exe (es decir, se produce una excepción no controlada), el contenedor se reinicia.
 * Cuando se reinicia el contenedor, se ejecuta por medio de diferentes técnicas heurísticas para determinar cómo iniciar el proceso de Node.js. Los detalles de la implementación pueden verse en [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
 * Puede conectarse al contenedor en ejecución a través de SSH para investigar. Esto se hace fácilmente con Azure Portal. Seleccione la instancia de App Service y desplácese hacia abajo en la lista de herramientas hasta alcanzar **SSH** en la sección **Herramientas de desarrollo**.
-* Para ayudar a solucionar problemas, vaya a la opción **Registros de diagnóstico** de App Service y cambie la opción **Registro de contenedor de Docker** de **Desactivado** a **Sistema de archivos**. Los registros se crean en el contenedor en */home/LogFiles/*_docker.log* y se puede acceder a ellos en el cuadro mediante SSH o FTP (S).
+* Para ayudar a solucionar problemas, vaya a la opción **Registros de diagnóstico** de App Service y cambie la opción **Registro de contenedor de Docker** de **Desactivado** a **Sistema de archivos**. Los registros se crean en el contenedor en */home/LogFiles/* _docker.log* y se puede acceder a ellos en el cuadro mediante SSH o FTP (S).
 * Puede asignar un nombre de dominio personalizado al sitio, en lugar de la dirección URL *.azurewebsites.net asignada de forma predeterminada. Para obtener más detalles, vea el tema [Asignación de un dominio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Se recomienda implementar en un sitio de ensayo para realizar más pruebas antes de pasar a producción. Para obtener detalles sobre cómo configurarlo, vea el tema [Creación de entornos de ensayo](/azure/app-service/web-sites-staged-publishing).
 * Vea [Preguntas más frecuentes sobre Azure App Service en Linux](/azure/app-service/containers/app-service-linux-faq) para leer las preguntas más frecuentes.
