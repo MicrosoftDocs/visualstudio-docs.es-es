@@ -3,14 +3,14 @@ title: Habilitación de la suscripción
 description: En este artículo se describe cómo usar la cuenta Microsoft para habilitar la suscripción y desbloquear las características de Visual Studio para Mac.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 2074207876df78bc6a268db909e5fa190073f9ba
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984038"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183943"
 ---
 # <a name="enable-subscription"></a>Habilitación de la suscripción
 
@@ -44,6 +44,6 @@ Actualmente no existe ninguna forma de usar una clave de producto para habilitar
 
 Si ha adquirido Visual Studio Enterprise 2019 para Mac para equipos sin conexión a Internet, puede seguir usando Visual Studio para Mac sin activación, aunque las características Xamarin Inspector, Xamarin Profiler y de ensamblados insertados no estarán disponibles.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)

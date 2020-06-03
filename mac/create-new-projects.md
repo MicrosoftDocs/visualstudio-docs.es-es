@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 10fcb52a8e1311f3e8128361ee835f6ddcb3670d
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75678911"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183967"
 ---
 # <a name="create-a-new-project"></a>Crear un nuevo proyecto
 
@@ -25,7 +25,7 @@ Hay varias maneras de crear un proyecto en Visual Studio para Mac. Al abrir po
 
 Si Visual Studio para Mac ya está abierto con una solución cargada, puede crear una nueva solución si va a la barra de menús y selecciona **Archivo > Nueva solución**. Al crear una nueva solución de este modo se cierra la solución que ya estaba cargada.
 
-## <a name="creating-a-new-project-from-a-template"></a>Creación de un proyecto a partir de una plantilla
+## <a name="creating-a-new-project"></a>Crear un proyecto nuevo
 
 El cuadro de diálogo **Nuevo proyecto** muestra de forma predeterminada las plantillas usadas recientemente ordenadas por *Usadas recientemente*.
 
@@ -51,6 +51,6 @@ La incorporación de un nuevo proyecto lleva a través de la creación del proye
 
 Si opta por agregar un proyecto existente, puede buscar un proyecto existente en el equipo y agregarlo a la solución.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77071952"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183111"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
@@ -28,9 +28,6 @@ Los marcos admitidos son:
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (este marco es específico de Herramientas de Node.js para Visual Studio)
-
-> [!WARNING]
-> Un problema en Tape de momento evita que se ejecuten pruebas de Tape. Si [PR #361](https://github.com/substack/tape/pull/361) se combina, debería resolverse el problema.
 
 Si su marco preferido no es compatible, vea [Agregar compatibilidad con un marco de pruebas unitarias](#addingFramework) para obtener información sobre cómo lograr la compatibilidad.
 
@@ -130,7 +127,7 @@ Test execution time: 1.5731 Seconds
 > [!NOTE]
 > Si aparece un error que indica que no se puede encontrar *vstest.console.exe*, asegúrese de que ha abierto el Símbolo del sistema para desarrolladores y no un símbolo del sistema normal.
 
-## <a name="addingFramework"></a>Agregar compatibilidad con un marco de pruebas unitarias
+## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Agregar compatibilidad con un marco de pruebas unitarias
 
 Puede agregar compatibilidad con otros marcos de pruebas si implementa la lógica de detección y ejecución mediante JavaScript. Para ello, agregue una carpeta con el nombre del marco de pruebas en:
 

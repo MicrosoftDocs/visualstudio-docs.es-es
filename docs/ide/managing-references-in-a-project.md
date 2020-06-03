@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591260"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183540"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 
