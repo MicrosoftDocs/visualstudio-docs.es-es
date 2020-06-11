@@ -2,7 +2,7 @@
 title: Desinstalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo desinstalar Visual Studio, paso a paso.
-ms.date: 12/19/2019
+ms.date: 05/06/2020
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd21f01f89cb4fe4507775670968496cbb5f99f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6b5377c9bdb83c5c67816b3567656c49cf707071
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115019"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184424"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
@@ -29,6 +29,13 @@ Esta página le guía a través de la desinstalación de Visual Studio, nuestro 
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Desinstalación de Visual Studio para Mac](/visualstudio/mac/uninstall).
+
+> [!TIP]
+> Si tiene problemas con la instancia de Visual Studio, pruebe la herramienta de **reparación**. Para obtener más información, vea [Reparación de Visual Studio](../install/repair-visual-studio.md). 
+>
+> Si quiere cambiar la ubicación de algunos de los archivos de Visual Studio, es posible hacerlo sin desinstalar la instancia actual. Para obtener más información, consulte [Selección de las ubicaciones de instalación en Visual Studio](../install/change-installation-locations.md).
+>
+> Para obtener sugerencias para la solución de problemas, consulte [Solución de problemas de instalación y actualización de Visual Studio](../install/troubleshooting-installation-issues.md).
 
 ::: moniker range="vs-2017"
 

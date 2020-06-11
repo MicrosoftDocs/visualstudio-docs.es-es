@@ -1,5 +1,5 @@
 ---
-title: Publicar en Azure App Service
+title: Publicación en Azure App Service
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4bbff0c2d149afddc355afe5f6c93e9d0aea54c0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 842f7912d88031d720f438800ef6b54133ce05c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806908"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184536"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
@@ -29,32 +29,42 @@ En este artículo se describe cómo usar la herramienta de **publicación** para
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
-## <a name="publish-to-azure-app-service"></a>Publicar en Azure App Service
+## <a name="publish-to-azure-app-service-on-windows"></a>Publicación en Azure App Service en Windows
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar** (o use el elemento de menú **Compilar** > **Publicar**).
 
     ![Comando Publicar en el menú contextual del proyecto del Explorador de soluciones](../deployment/media/quickstart-publish.png "Elección de Publicar")
 
-1. Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**, en cuyo caso seleccione **Crear nuevo perfil**.
+1. En el cuadro de diálogo **Publicar**, seleccione **Azure**.
 
-1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **App Service**.
+    ![Elección del destino de publicación](../deployment/media/quickstart-publish-azure.png)
 
-    ![Elegir Azure App Service](../deployment/media/quickstart-publish-azure.png "Elegir Azure App Service")
+1. Seleccione **Azure App Service (Windows) **y **Siguiente**.
 
-1. Seleccione **Publicar**. Aparecerá el cuadro de diálogo **Crear servicio de aplicaciones**. Inicie sesión con la cuenta de Azure, si fuera necesario; después la configuración predeterminada de App Service rellenará los campos.
+    ![Elección de Azure App Service en Linux](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 
-    ![Crear servicio de aplicaciones](../deployment/media/quickstart-publish-settings-app-service.png "Crear una instancia de Azure App Service")
+1. Si es necesario, inicie sesión con la cuenta de Azure. Seleccione **Create a new Azure App Service...** (Crear una instancia de Azure App Service)
 
-1. Seleccione **Crear**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
+    ![Vínculo para crear una instancia de Azure App Service](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-    ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-app-service-summary.png)
+1. En el cuadro de diálogo **Create Azure App Service (Windows)** (Crear Azure App Service [Windows]), se rellenan los campos de entrada **Nombre de la aplicación,** , **Grupo de recursos** y **Plan de App Service**. Puede mantener estos nombres o cambiarlos. Cuando esté preparado, seleccione **Guardar**.
 
-## <a name="clean-up-resources"></a>Limpieza de recursos
+    ![Elegir Azure App Service](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
-En los pasos anteriores, creó recursos de Azure en un grupo de recursos. Si no cree que vaya a necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
-En el menú izquierdo de Azure Portal, haga clic en **Grupos de recursos** y en **myResourceGroup**.
-En la página del grupo de recursos, asegúrese de que los recursos enumerados sean los que desea eliminar.
-Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y seleccione **Eliminar**.
+1. En el cuadro de diálogo **Publicar**, la instancia recién creada se ha seleccionado automáticamente. Cuando esté listo, haga clic en **Finalizar**.
+
+    ![Elegir Azure App Service](../deployment/media/quickstart-publish-windows-select-instance.png)
+
+1. Seleccione **Publicar**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
+
+    ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-windows-summary-page.png)
+
+## <a name="clean-up-resources"></a>Limpiar los recursos
+
+En los pasos anteriores, ha creado recursos de Azure en un grupo de recursos. Si no prevé necesitar estos recursos en el futuro, puede eliminarlos mediante la eliminación del grupo de recursos.
+En el menú izquierdo de Azure Portal, seleccione **Grupos de recursos** y luego **myResourceGroup**.
+En la página del grupo de recursos, asegúrese de que los recursos que aparecen son los que quiere eliminar.
+Seleccione **Eliminar**, escriba **myResourceGroup** en el cuadro de texto y luego seleccione **Eliminar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

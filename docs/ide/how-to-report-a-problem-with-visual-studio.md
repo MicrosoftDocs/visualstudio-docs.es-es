@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fca63b5e117f77d07c54f7556a603052853c7ef
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 37dcfd6351cfa3adde4c1825518dd2bea7ce9b34
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276506"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180563"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -45,9 +45,6 @@ Puede notificar un problema desde Visual Studio o desde su instalador con la Her
 
 1. Si no encuentra el problema que ha detectado, elija **Informar de un problema nuevo** en la parte inferior de la pantalla.
 
-   > [!NOTE]
-   > El botón **Informar de un problema nuevo** solo aparece en la interfaz de Visual Studio correspondiente a la Comunidad de desarrolladores. No se puede notificar un problema directamente en el sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
-
 1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
 
 1. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
@@ -72,7 +69,7 @@ Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a dia
 
 1. Haga clic en la pestaña **Grabar**.
 
-1. Si puede reproducir el problema en Visual Studio, seleccione la instancia actual en **Grabar sus acciones**. Si no puede, por ejemplo, en el caso de que Visual Studio esté bloqueado, seleccione **\<Crear una instancia nueva>** para grabar las acciones en una instancia nueva de Visual Studio.
+1. Si puede reproducir el problema en Visual Studio, seleccione la instancia actual en **Grabar sus acciones**. Si no puede, por ejemplo, en el caso de que Visual Studio esté bloqueado, seleccione **\<Create a new instance>** para grabar las acciones en una instancia nueva de Visual Studio.
 
 1. Seleccione **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 

@@ -11,19 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594895"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184060"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 
 Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de datos de compilación que quiere revisar y si quiere guardarlos en uno o más archivos. También puede especificar un registrador personalizado para recopilar datos de compilación. Para información sobre los modificadores de la línea de comandos de MSBuild que no se tratan en este tema, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
-> Si compila proyectos mediante el IDE de Visual Studio, puede solucionar las compilaciones mediante la revisión de los registros de compilación. Para obtener más información, consulte [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
+> Si compila proyectos mediante el IDE de Visual Studio, puede solucionar las compilaciones mediante la revisión de los registros de compilación. Para obtener más información, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="set-the-level-of-detail"></a>Establecimiento del nivel de detalle
 
@@ -64,7 +64,7 @@ Puede usar el modificador **-fileLogger** (**fl**) para guardar los datos de com
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- En el ejemplo siguiente, el archivo de registro se denomina *MyProjectOutput.log*, y el nivel de detalle de la salida del registro se establece en `diagnostic`. Puede especificar las dos configuraciones mediante el modificador **-filelogparameters** (`flp`).
+ En el ejemplo siguiente, el archivo de registro se denomina *MyProjectOutput.log*, y el nivel de detalle de la salida del registro se establece en `diagnostic`. Estos dos valores se especifican mediante el modificador **-fileLoggerParameters** (`flp`).
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -76,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  En el ejemplo siguiente se guarda el registro completo en *msbuild1.log*, solo los errores en *JustErrors.log* y solo las advertencias en *JustWarnings.log*. En el ejemplo se utilizan números de archivo para cada uno de los tres archivos. Los números de archivo se especifican justo después de los modificadores **-fl** y **-flp** (por ejemplo, `-fl1` y `-flp1`).
 
- Los modificadores **-filelogparameters** (`flp`) para los archivos 2 y 3 especifican el nombre de cada archivo y qué se va a incluir en cada archivo. No se especifica ningún nombre para el archivo 1, por lo que se utiliza el nombre predeterminado de *msbuild1.log*.
+ Los modificadores **--fileLoggerParameters** (`flp`) para los archivos 2 y 3 especifican el nombre de cada archivo y lo que se va a incluir en cada uno. No se especifica ningún nombre para el archivo 1, por lo que se utiliza el nombre predeterminado de *msbuild1.log*.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly

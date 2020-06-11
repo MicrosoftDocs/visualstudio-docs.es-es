@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911597"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182877"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos de depuración de instantáneas en Visual Studio
 
@@ -30,12 +30,36 @@ Si ve el error siguiente en la ventana de **salida** durante el intento de asoci
 
 ### <a name="401-unauthorized"></a>(401) No autorizado
 
-Este error indica que la llamada de REST que Visual Studio emite a Azure usa una credencial no válida. Un error conocido con el módulo Easy OAuth de Azure Active Directory puede generar este error.
+Este error indica que la llamada de REST que Visual Studio emite a Azure usa una credencial no válida. 
 
 Siga estos pasos:
 
 * Asegúrese de que la cuenta de personalización de Visual Studio tiene permisos para la suscripción y el recurso de Azure a los que se está asociando. Una manera rápida de determinar esto es comprobar si el recurso está disponible en el cuadro de diálogo de **Depurar** > **Asociar Snapshot Debugger…**  > **Recurso de Azure** > **Seleccionar existente** o en Cloud Explorer.
 * Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
+
+Si ha habilitado Autenticación y autorización (EasyAuth) en App Service, es posible que encuentre un error 401 con LaunchAgentAsync en el mensaje de error de la pila de llamadas. Asegúrese de que **Acción necesaria cuando la solicitud no está autenticada** se ha establecido en **Permitir solicitudes anónimas (ninguna acción)** en Azure Portal y proporcione un archivo autorización.json en D:\Home\wwwwroot con el siguiente contenido en su lugar. 
+
+```
+{
+  "routes": [
+    {
+      "path_prefix": "/",
+      "policies": {
+        "unauthenticated_action": "RedirectToLoginPage"
+      }
+    },
+    {
+      "http_methods": [ "POST" ],
+      "path_prefix": "/41C07CED-2E08-4609-9D9F-882468261608/api/agent",
+      "policies": {
+        "unauthenticated_action": "AllowAnonymous"
+      }
+    }
+  ]
+}
+```
+
+La primera ruta protege eficazmente el dominio de la aplicación de forma similar a **Inicio de sesión con [IdentityProvider]** . La segunda ruta expone el punto de conexión AgentLaunch de SnapshotDebugger fuera de la autenticación, que solo realiza la acción predefinida de iniciar el *agente de diagnóstico de SnapshotDebugger* si la extensión de sitio preinstalado SnapshotDebugger está habilitada para el servicio de aplicaciones. Para más información sobre la configuración de Authorization.json, consulte el artículo sobre [reglas de autorización para direcciones URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) Prohibido
 
@@ -54,8 +78,8 @@ Este error indica que el sitio web no se pudo encontrar en el servidor.
 Siga estos pasos:
 
 * Compruebe que tiene un sitio web implementado y en ejecución en el recurso de App Service al que se está asociando.
-* Compruebe que el sitio está disponible en https://\<recurso\>.azurewebsites.net
-* Compruebe que la aplicación web personalizada que se ejecuta correctamente no devuelve un código de estado 404 cuando se accede a ella en https://\<recurso\>.azurewebsites.net
+* Compruebe que el sitio está disponible en https://\<resource\>.azurewebsites.net
+* Compruebe que la aplicación web personalizada que se ejecuta correctamente no devuelve un código de estado 404 cuando se accede a ella en https://\<resource\>.azurewebsites.net
 * Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
 ### <a name="406-not-acceptable"></a>(406) No aceptable
@@ -64,7 +88,7 @@ Este error indica que el servidor no puede responder el tipo establecido en el e
 
 Siga estos pasos:
 
-* Compruebe que el sitio está disponible en https://\<recurso\>.azurewebsites.net
+* Compruebe que el sitio está disponible en https://\<resource\>.azurewebsites.net
 * Compruebe que el sitio no se migró a instancias nuevas. Snapshot Debugger usa la noción de ARRAffinity para enrutar las solicitudes a instancias específicas que pueden generar este error de forma intermitente.
 * Si este error continúa, use uno de los canales de comentarios descritos al comienzo de este artículo.
 
@@ -181,7 +205,7 @@ Los registros del agente se pueden encontrar en las ubicaciones siguientes:
   - Vaya al sitio de Kudu en App Service, es decir, yourappservice.**scm**.azurewebsites.net, y acceda a la consola de depuración.
   - Los registros del agente se almacenan en el directorio siguiente:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - Inicie sesión en la máquina virtual, los registros del agente se almacenan de la siguiente manera:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Versión>\SnapshotDebuggerAgent_*.txt
+  - Inicie sesión en la máquina virtual, los registros del agente se almacenan de la siguiente manera:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Vaya al siguiente directorio: /tmp/diag/AgentLogs/*
 

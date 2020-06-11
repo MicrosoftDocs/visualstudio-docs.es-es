@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 06f68962eb7cdb6e4fc0290ee5c6559721afb52b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416365"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182643"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -139,7 +139,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
     Si no ve la plantilla de proyecto **Aplicación de consola**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
     > [!NOTE]
-    > Aunque también podría agregar el nuevo proyecto administrado a la solución existente de C++, al crear una nueva solución se admiten más escenarios de depuración.
+    > También puede agregar el nuevo proyecto administrado a la solución existente de C++. Estamos creando el proyecto en una nueva solución para que la tarea de depuración en modo mixto sea más difícil.
 
    Visual Studio crea el proyecto vacío y lo muestra en el **Explorador de soluciones**.
 

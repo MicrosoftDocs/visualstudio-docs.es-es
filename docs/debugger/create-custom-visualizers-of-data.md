@@ -1,6 +1,6 @@
 ---
 title: Creación de visualizadores de datos personalizados | Microsoft Docs
-ms.date: 11/07/2018
+ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70c16b603f1c38eeb3e71718937e7c669ae8ebc9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564733"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184554"
 ---
 # <a name="create-custom-data-visualizers"></a>Creación de visualizadores de datos personalizados
  Un *visualizador* es un elemento de la interfaz de usuario del depurador de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] que muestra una variable o un objeto de la manera adecuada para su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador. Un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar y ver los datos.
@@ -72,11 +72,11 @@ Para crear la interfaz de usuario del visualizador en el lado depurador, se crea
 
 4. Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute> asignándole el visualizador que se va a mostrar (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
-### <a name="to-create-the-debuggee-side"></a>Para crear el lado depurado
+### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>Para crear el origen del objeto de visualizador del lado depurado
 
-El código del lado depurado se especifica mediante <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
+Especifique el tipo que se va a visualizar (el origen del objeto del lado depurado) mediante el objeto <xref:System.Diagnostics.DebuggerVisualizerAttribute> en el código del depurador.
 
-1. Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, dándole un visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) y un origen de objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si omite el origen de objeto, se utilizará un origen de objeto predeterminado.
+1. En el código del depurador, edite el objeto <xref:System.Diagnostics.DebuggerVisualizerAttribute>, asignándole el origen del objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). La propiedad `Target` establece el origen del objeto. Si omite el origen de objeto, se utilizará un origen de objeto predeterminado.
 
 1. Para permitir al visualizador editar y mostrar objetos de datos, reemplace los métodos `TransferData` o `CreateReplacementObject` de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 

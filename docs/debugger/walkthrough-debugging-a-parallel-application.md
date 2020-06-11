@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
-ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416430"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183852"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Tutorial: Depuración de una aplicación paralela en Visual Studio (C#, Visual Basic y C++ )
 
@@ -81,7 +81,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, elija lo siguiente:
+   En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, elija lo siguiente:
 
    - Para una aplicación de C#, en **Visual C#** , elija **Escritorio de Windows** y, después, en el panel central, **Aplicación de consola (.NET Framework)** .
    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, **Aplicación de consola (.NET Framework)** .
@@ -232,9 +232,9 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 
 2. En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**. Acople la ventana **Subprocesos** a la parte inferior de Visual Studio.
 
-3. En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.
+3. En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**. Acople la ventana **Pila de llamadas** a la parte inferior de Visual Studio.
 
-4. Haga doble clic en un subproceso de la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen la flecha amarilla. Al cambiar el subproceso actual, las otras ventanas se actualizan. A continuación, examinaremos las tareas.
+4. Haga doble clic en un subproceso en la ventana **Subprocesos** para que sea el actual. Los subprocesos actuales tienen la flecha amarilla. Al cambiar el subproceso actual, las otras ventanas se actualizan. A continuación, examinaremos las tareas.
 
 5. En el menú **Depurar**, elija **Ventanas** y luego haga clic en **Tareas**. En la siguiente ilustración se muestra la vista **Tareas**.
 

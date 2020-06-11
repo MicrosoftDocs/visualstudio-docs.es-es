@@ -1,7 +1,7 @@
 ---
 title: Depuración remota de ASP.NET Core en IIS y Azure | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 04/14/2020
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 079e324f2304118c9041118c13e8ebc0cce2015c
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 6983d3ac191b8eb85d38e1d40afa3244e97dbb17
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385507"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184255"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -45,7 +45,7 @@ El método recomendado para la depuración remota en Azure dependerá de su esce
 ## <a name="prerequisites"></a>Requisitos previos
 
 ::: moniker range=">=vs-2019"
-Se necesita Visual Studio 2019 para seguir los pasos que se muestran en este artículo.
+Para seguir los pasos que se muestran en este artículo, se requiere Visual Studio 2019.
 ::: moniker-end
 ::: moniker range="vs-2017"
 Se necesita Visual Studio 2017 para seguir los pasos que se muestran en este artículo.
@@ -105,6 +105,7 @@ Puede crear una máquina virtual de Azure para Windows Server y, a continuación
 Estos procedimientos se han probado en estas configuraciones de servidor:
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
+* Windows Server 2019 e IIS 10
 
 ### <a name="app-already-running-in-iis-on-the-azure-vm"></a>¿La aplicación ya se está ejecutando en IIS en la máquina virtual de Azure?
 
@@ -116,22 +117,25 @@ En este artículo se incluyen los pasos para realizar una configuración básica
 
   * Antes de comenzar, siga todos los pasos que se describen en [Instalación y ejecución de IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-  * Al abrir el puerto 80 en el grupo de seguridad de red, abra también el [puerto correcto](#bkmk_openports) para el depurador remoto (4024 o 4022). De este modo, no tendrá que abrirlo más adelante.
+  * Al abrir el puerto 80 en el grupo de seguridad de red, abra también el [puerto correcto](#bkmk_openports) para el depurador remoto (4024 o 4022). De este modo, no tendrá que abrirlo más adelante. Si utiliza Web Deploy, abra también el puerto 8172.
 
-### <a name="update-browser-security-settings-on-windows-server"></a>Actualizar la configuración de seguridad del explorador en Windows Server
+### <a name="update-browser-security-settings-on-windows-server"></a>Actualización de la configuración de seguridad del explorador en Windows Server
 
-Si la opción Configuración de seguridad mejorada está habilitada en Internet Explorer (lo está de forma predeterminada), es posible que tenga que agregar algunos dominios como sitios de confianza para poder descargar algunos de los componentes de servidor web. Para agregar los sitios de confianza, vaya a **Opciones de Internet > Seguridad > Sitios de confianza > Sitios**. Agregue los dominios siguientes.
+Si la opción Configuración de seguridad mejorada está habilitada en Internet Explorer (lo está de forma predeterminada), es posible que tenga que agregar algunos dominios como sitios de confianza para poder descargar algunos de los componentes del servidor web. Para agregar los sitios de confianza, vaya a **Opciones de Internet > Seguridad > Sitios de confianza > Sitios**. Agregue los dominios siguientes.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - iis.net
 
-Al descargar el software, es posible que obtenga solicitudes para conceder permiso para cargar varios scripts y recursos de sitios web. Algunos de estos recursos no son necesarios, pero para simplificar el proceso, haga clic en **Agregar** cuando se le solicite.
+Al descargar el software, es posible que reciba solicitudes para conceder permiso con el fin de cargar varios scripts y recursos de los sitios web. Algunos de estos recursos no son necesarios, pero para simplificar el proceso, haga clic en **Agregar** cuando se le solicite.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Instalación de ASP.NET Core en Windows Server
 
-1. Instale el [lote de hospedaje .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) en el sistema host. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener más instrucciones detalladas, vea [Publicación en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+1. Instale el conjunto de hospedaje de .NET Core en el sistema de hospedaje. El lote instala .NET Core Runtime, .NET Core Library y el módulo ASP.NET Core. Para obtener más instrucciones detalladas, vea [Publicación en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+
+    En el caso de .NET Core 3, instale el [conjunto de hospedaje de .NET Core](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer).
+    En el caso de .NET Core 2, instale el [hospedaje de .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting).
 
     > [!NOTE]
     > Si el sistema no tiene conexión a Internet, obtenga e instale *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* antes de instalar el lote de hospedaje .NET Core Windows Server.
@@ -144,16 +148,22 @@ Si necesita ayuda para implementar la aplicación en IIS, tenga en cuenta estas 
 
 * Para la implementación, cree un archivo de configuración de publicación en IIS e importe la configuración en Visual Studio. En algunos escenarios, es una manera rápida de implementar la aplicación. Al crear el archivo de configuración de publicación, los permisos se configuran de forma automática en IIS.
 
-* Para la implementación, publique en una carpeta local y copie la salida mediante un método preferido en una carpeta de aplicación preparada en IIS.
+* Para la implementación, efectúe la publicación en una carpeta local y copie la salida mediante un método preferido en una carpeta de aplicación preparada en IIS.
 
 ## <a name="optional-deploy-using-a-publish-settings-file"></a>(Opcional) Implementación mediante un archivo de configuración de publicación
 
 Puede usar esta opción para crear un archivo de configuración de publicación e importarlo en Visual Studio.
 
 > [!NOTE]
-> Este método de implementación usa Web Deploy. Si desea configurar Web Deploy de forma manual en Visual Studio en lugar de importar la configuración, puede instalar Web Deploy 3.6 en lugar de Web Deploy 3.6 para servidores de hospedaje. Pero si configura Web Deploy de forma manual, tendrá que asegurarse de que una carpeta de aplicación del servidor está configurada con los valores y permisos correctos (vea [Configuración del sitio web de ASP.NET](#BKMK_deploy_asp_net)).
+> Este método de implementación utiliza Web Deploy, que debe instalarse en el servidor. Si quiere configurar Web Deploy de forma manual en lugar de importar la configuración, puede instalar Web Deploy 3.6 en lugar de Web Deploy 3.6 para servidores de hospedaje. Pero si configura Web Deploy de forma manual, tendrá que asegurarse de que una carpeta de aplicación del servidor esté configurada con los valores y permisos correctos; vea [Instalación de ASP.NET 4.5 en Windows Server](#BKMK_deploy_asp_net).
 
-### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalación y configuración de Web Deploy para servidores de hospedaje en Windows Server
+### <a name="configure-the-aspnet-core-web-site"></a>Configuración del sitio web de ASP.NET Core
+
+1. En el Administrador de IIS, en el panel izquierdo situado en **Conexiones**, seleccione **Grupos de aplicaciones**. Abra **DefaultAppPool** y establezca la **Versión de .NET CLR** en **Sin código administrado**. Es necesario para ASP.NET Core. El sitio web predeterminado utiliza DefaultAppPool.
+
+2. Detenga y reinicie el grupo DefaultAppPool.
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalación y configuración de Web Deploy para servidores de hospedaje en Windows Server
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
@@ -165,12 +175,15 @@ Puede usar esta opción para crear un archivo de configuración de publicación 
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Después de que se implemente la aplicación correctamente, debería iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, iníciela en IIS. Para ASP.NET Core, deberá asegurarse de que el campo Grupo de aplicaciones para el **DefaultAppPool** está establecido en **Sin código administrado**.
-
-1. En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y después **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
-
     > [!NOTE]
-    > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al publicar.
+    > If you restart an Azure VM, the IP address may change.
+
+Después de que se implemente la aplicación correctamente, debería iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, iníciela en IIS para comprobar que se ejecuta correctamente. En ASP.NET Core, tiene que asegurarse también de que el campo Grupo de aplicaciones correspondiente a **DefaultAppPool** está establecido en **Sin código administrado**.
+
+1. En el cuadro de diálogo **Configuración**, haga clic en **Siguiente** para habilitar la depuración, elija una configuración de **Depuración** y, después, en **Quitar archivos adicionales en destino** en las **Opciones de publicación de archivos**.
+
+    > [!IMPORTANT]
+    > Si elige una configuración de versión, deshabilite la depuración en el archivo *web.config* al realizar la publicación.
 
 1. Haga clic en **Guardar** y, después, vuelva a publicar la aplicación.
 
@@ -200,7 +213,7 @@ Si no está usando Web Deploy, debe publicar e implementar la aplicación con el
 
 ### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Descarga e instalación de las herramientas remotas en Windows Server
 
-Descargue la versión de las herramientas remotas que coincida con la versión de Visual Studio.
+Descargue la versión de las herramientas remotas que corresponda a su versión de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -217,17 +230,17 @@ Descargue la versión de las herramientas remotas que coincida con la versión d
 2. En Visual Studio, haga clic en **Depurar > Asociar al proceso** (Ctrl + Alt + P).
 
     > [!TIP]
-    > En Visual Studio 2017 y versiones posteriores, puede volver a asociar al mismo proceso al que ha asociado antes mediante **Depurar > Reasociar al proceso...** (Mayús + Alt + P).
+    > En Visual Studio 2017 y versiones posteriores, puede volver a asociar al mismo proceso al que ha asociado antes mediante **Depurar > Reasociar al proceso...** (Mayús+Alt+P).
 
-3. Establezca el campo Calificador en **\<nombre del equipo remoto>** y presione **Entrar**.
+3. Establezca el campo Calificador en **\<remote computer name>** y presione **Entrar**.
 
-    Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato: **\<nombre del equipo remoto >:puerto**
+    Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato **\<remote computer name>:puerto**.
 
     ::: moniker range=">=vs-2019"
-    En Visual Studio 2019, debería ver **\<nombre del equipo remoto>:4024**
+    En Visual Studio 2019, debería ver **\<remote computer name>:4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En Visual Studio 2017, debería ver **\<nombre del equipo remoto>:4022**
+    En Visual Studio 2017, debería ver **\<remote computer name>:4022**
     ::: moniker-end
     El puerto es obligatorio. Si no ve el número de puerto, agréguelo manualmente.
 
@@ -242,11 +255,11 @@ Descargue la versión de las herramientas remotas que coincida con la versión d
 
 6. Escriba la primera letra del nombre del proceso para encontrar rápidamente la aplicación.
 
-    * Seleccione **dotnet.exe** (para .NET Core)
+    * Si usa el [modelo de hospedaje en proceso](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) en IIS, seleccione el proceso **w3wp.exe** correcto. A partir de .NET Core 3, este es el valor predeterminado.
 
-      Si tiene varios procesos que muestran **dotnet.exe**, compruebe la columna **Nombre de usuario**. En algunos escenarios, en la columna **Nombre de usuario** se muestra el nombre del grupo de aplicaciones, como **IIS APPPOOL\DefaultAppPool**. Si ve el grupo de aplicaciones, una manera sencilla de identificar el proceso correcto es crear uno con nombre para la instancia de la aplicación que desee depurar y, después, lo podrá encontrar fácilmente en la columna **Nombre de usuario**.
+    * De lo contrario, seleccione el proceso **dotnet.exe**. (Este es el modelo de hospedaje fuera de proceso).
 
-    * En algunos escenarios de IIS puede encontrar el nombre de la aplicación en la lista de procesos, como **MyASPApp.exe**. En su lugar, puede asociarlo a este proceso.
+    Si tiene varios procesos que muestran *w3wp.exe* o *dotnet.exe*, compruebe la columna **Nombre de usuario**. En algunos escenarios, en la columna **Nombre de usuario** se muestra el nombre del grupo de aplicaciones, como **IIS APPPOOL\DefaultAppPool**. Si ve el grupo de aplicaciones, pero no es único, cree uno con nombre para la instancia de la aplicación que quiera depurar y, después, lo podrá encontrar fácilmente en la columna **Nombre de usuario**.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -257,14 +270,14 @@ Descargue la versión de las herramientas remotas que coincida con la versión d
 
 7. Haga clic en **Adjuntar**.
 
-8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>** .
+8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<remote computer name>** .
 
     Debería ver la página web de ASP.NET.
-9. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la página **Acerca de**.
+9. En la aplicación de ASP.NET en ejecución, haga clic en el vínculo a la página **Acerca de**.
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-### <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> Solución de problemas: apertura de los puertos obligatorios en Windows Server
+### <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> Solución de problemas: apertura de los puertos obligatorios en Windows Server
 
 En la mayoría de las instalaciones, los puertos obligatorios se abren mediante la instalación de ASP.NET y el depurador remoto. Pero si está solucionando problemas de implementación y la aplicación se hospeda detrás de un firewall, puede que tenga que comprobar que están abiertos los puertos correctos.
 

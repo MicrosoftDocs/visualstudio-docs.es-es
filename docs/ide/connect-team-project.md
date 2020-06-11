@@ -1,16 +1,16 @@
 ---
 title: Conexión a proyectos en Team Explorer
-ms.date: 03/31/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fe4ce27d8783d457015310ef4d6fadfde230b97c
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472742"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183709"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conexión a proyectos en Team Explorer
 
@@ -19,7 +19,7 @@ Use la ventana de la herramienta **Team Explorer** para coordinar los esfuerzos 
 ![Página principal de Team Explorer en Visual Studio](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Si abre Visual Studio y **Team Explorer** no aparece, seleccione **Vista** > **Team Explorer** en la barra de menús para abrirlo.
+> Si abre Visual Studio y no aparece **Team Explorer**, seleccione **Vista** > **Team Explorer** en la barra de menús para abrirlo **Ctrl**+ **&#92;** , **Ctrl**+**M**.
 
 ## <a name="connect-to-a-project-or-repository"></a>Conexión a un proyecto o repositorio
 

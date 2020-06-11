@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77578960"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184216"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -93,9 +93,7 @@ Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurado
 
 ## <a name="run-to-cursor"></a>Ejecutar hasta el cursor
 
-Para detener el depurador, presione el botón rojo **Detener depuración**![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Habilitar herramientas de diagnóstico durante la depuración") o **Mayús** + **F5**.
-
-Haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
+Cuando edite código (en lugar de estar en pausa en el depurador), haga clic con el botón derecho en una línea de código de la aplicación y elija **Ejecutar hasta el cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
 
 ![Ejecutar hasta el cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ejecutar hasta el cursor")
 

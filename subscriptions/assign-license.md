@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: 0810cf9d24f6ac218db59eea87a1c092abaa2a3f
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564165"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183475"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
@@ -20,7 +20,7 @@ Como administrador de suscripciones de Visual Studio, puede usar el Portal de a
 En el caso de grupos de usuarios, dispone de opciones para asignar suscripciones.  
 - Puede asignar suscripciones de una en una.
 - También puede cargar de forma rápida y sencilla listas de suscriptores y su información de suscripción mediante la característica para[agregar en masa](assign-license-bulk.md).
-- Si su organización usa Microsoft Azure Active Directory (Azure AD), puede usar grupos de Azure AD para asignar suscripciones a grupos de usuarios.  (Esta característica se implementa en fases y puede que no esté disponible de inmediato para su organización).
+- Si su organización usa Microsoft Azure Active Directory (Azure AD), puede [usar grupos de Azure AD para asignar suscripciones](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) a grupos de usuarios.  
 
 
 ## <a name="add-a-single-subscriber"></a>Adición de un solo suscriptor
@@ -39,7 +39,11 @@ Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usu
    > [!div class="mx-imgBorder"]
    > ![Detalles del suscriptor](_img/assign-license-add/subscriber-details.png)
 
-    Si quiere que este suscriptor tenga acceso a las descargas de software cuando inicie sesión en el [portal de suscripciones de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), asegúrese de dejar habilitadas las descargas en la sección **Configuración de descarga**. Si elije deshabilitar las descargas, el usuario no tendrá acceso a las descargas de software, pero seguirá teniendo acceso a todas las demás ventajas incluidas en la suscripción.
+    > [!NOTE]
+    > Para que los miembros de un inquilino de Azure Active Directory estén visibles cuando escriba un nombre de suscriptor, el administrador debe ser miembro del inquilino. 
+
+
+    Si quiere que este suscriptor tenga acceso a las descargas de software cuando inicie sesión en el [portal de suscripciones de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), asegúrese de dejar habilitadas las descargas en la sección **Configuración de descarga**. Si decide deshabilitar las descargas, el usuario no tendrá acceso a las descargas de software.  También se deshabilitará el acceso a las claves de producto.  El suscriptor seguirá teniendo acceso a todas las demás ventajas incluidas en la suscripción.
    > [!div class="mx-imgBorder"]
    > ![Acceso a las descargas](media/access-to-downloads.png)
 

@@ -18,18 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633647"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173517"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
 Contiene un conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos por el usuario. Cada elemento que se utiliza en un proyecto de MSBuild debe especificarse como elemento secundario de un elemento `ItemGroup`.
 
-\<Project> \<ItemGroup>
+\<Project>
+\<ItemGroup>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,6 +86,10 @@ En el ejemplo de código siguiente se muestran las colecciones de elementos defi
 ...
 </Project>
 ```
+
+En un archivo de proyecto simple, normalmente se usa un solo elemento `ItemGroup`, pero también se pueden utilizar varios elementos `ItemGroup`. Cuando se utilizan varios elementos `ItemGroup`, los elementos se combinan en un solo `ItemGroup`. Por ejemplo, algunos elementos podrían estar incluidos en un elemento `ItemGroup` independiente que se define en un archivo importado.
+
+Pueden aplicarse condiciones a los elementos ItemGroup mediante el atributo `Condition`. En ese caso, los elementos solo se agregan a la lista de elementos si se cumple la condición. Consulte [Condiciones de MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Vea también
 

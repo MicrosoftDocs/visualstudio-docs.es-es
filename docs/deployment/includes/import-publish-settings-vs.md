@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f286002112667ba763419f0e3d6265dbe1942212
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143549"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173901"
 ---
 
 1. En el equipo donde tiene el proyecto de ASP.NET abierto en Visual Studio, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y elija **Publicar**.
@@ -13,7 +13,7 @@ ms.locfileid: "68143549"
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, haga clic en **Importar perfil**.
 
-    ![Elección de Publicar](../../deployment/media/tutorial-publish-tool-import-profile.png)
+    ![Elegir Publicar](../../deployment/media/tutorial-publish-tool-import-profile.png)
 
 1. Navegue hasta la ubicación del archivo de configuración de publicación que creó en la sección anterior.
 

@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 12/02/2019
+ms.date: 5/19/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,70 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 4fa5a68a15dd5b53d5a626ff5c46e9739db504fc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232919"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184567"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="2610"></a>2.6.1.0
+Fecha de publicación: 19 de mayo de 2020
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Se advierte si no se puede crear el servidor de mensajería en el lado de Unity.
+
+  - Los analizadores se ejecutan correctamente durante la compilación ligera.
+
+  - Se corrigió la documentación sobre API con instalaciones de Unity Hub.
+  
+  - Se corrigieron los bloqueos del visualizador del depurador.
+
+## <a name="2600"></a>2.6.0.0
+Fecha de publicación: 14 de abril de 2020
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+  - Se agregó el diagnóstico [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md). Detecte y ajuste las llamadas a las corrutinas en `StartCoroutine()`.
+
+  - Se agregó el diagnóstico [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md). Detecte y quite el atributo `SerializeField` no válido o redundante.
+
+  - Se agregó el diagnóstico [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md). Detecte `GetComponent()` que se llama con tipos no basados en componentes ni en interfaces.
+
+  - Se agregó el supresor [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) para `IDE0051`. No marque los métodos con el atributo `ContextMenu` o a los que un campo con el atributo `ContextMenuItem` haga referencia como no utilizados.
+
+  - Se agregó el supresor [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) para `IDE0051`. No marque los campos con el atributo `ContextMenuItem` como no utilizados.
+
+  - Se agregó el supresor [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) para `IDE0044`. No haga que los campos con el atributo `ContextMenuItem` sean de solo lectura.
+
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md), [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) y [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) funcionan ahora con los atributos `SerializeReference` y `SerializeField`.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+  - Envíe solo comandos de inicio/parada a Unity cuando el editor pueda comunicarse.
+
+  - Se corrigió la documentación sobre QuickInfo con mensajes heredados.
+
+  - Se corrigió el ámbito de mensaje del mensaje `CreateInspectorGUI`.
+
+  - No informe [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) sobre los métodos con modificadores polimórficos.
+
+- **Evaluación:**
+
+  - Se corrigió el control de instrucciones Using con alias.
+  
+  - Se corrigió el control de valores NULL.  
 
 ## <a name="2520"></a>2.5.2.0
 
@@ -39,13 +93,13 @@ Fecha de publicación: 3 de marzo de 2020
 
 - **Integración:**
 
-  - Se ha agregado un supresor para [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md). Los métodos privados usados con Invoke, InvokeRepeating, StartCoroutine o StopCoroutine no se deben marcar como sin usar.
+  - Se agregó el supresor [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) para `IDE0051`. Los métodos privados usados con Invoke, InvokeRepeating, StartCoroutine o StopCoroutine no se deben marcar como sin usar.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se ha corregido la documentación de OnDrawGizmos/OnDrawGizmosSelected.
+  - Se corrigió la documentación sobre OnDrawGizmos/OnDrawGizmosSelected.
 
 - **Evaluación:**
 
@@ -75,15 +129,15 @@ Fecha de publicación: 22 de enero de 2020
   
   - Se ha implementado una cuadrícula de propiedades nueva y accesible para la configuración.
 
-  - Se ha agregado un supresor para [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md). Los campos privados con el atributo `SerializeField` no deben marcarse como sin usar.
+  - Se agregó el supresor [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) para `IDE0051`. Los campos privados con el atributo `SerializeField` no deben marcarse como sin usar.
 
-  - Se ha agregado un supresor para [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md). Los campos con el atributo `SerializeField` no deben marcarse como sin asignar.  
+  - Se agregó el supresor [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) para `CS0649`. Los campos con el atributo `SerializeField` no deben marcarse como sin asignar.  
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 - **Integración:**
 
-  - Se ha corregido la generación del proyecto, ya que el destino `GenerateTargetFrameworkMonikerAttribute` no siempre se ubicaba correctamente.
+  - Se corrigió la generación de proyectos (el destino de `GenerateTargetFrameworkMonikerAttribute` no siempre se encontraba correctamente).
 
 - **Evaluación:**
 
@@ -133,7 +187,7 @@ Fecha de publicación: 15 de octubre de 2019
 
 - **Integración:**
 
-  - Se ha agregado un supresor para `IDE0060` (parámetro sin usar) para todos los mensajes de Unity.
+  - Se agregó el supresor [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) para `IDE0060` (parámetro sin usar) para todos los mensajes de Unity.
 
   - Se ha agregado una información sobre herramientas rápida para los campos etiquetados con `TooltipAttribute`. (Esto funcionará para un descriptor de acceso get sencillo mediante este campo también).
 

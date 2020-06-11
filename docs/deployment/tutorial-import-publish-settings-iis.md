@@ -1,7 +1,7 @@
 ---
 title: Publicar en IIS mediante la importación de la configuración de publicación
 description: Creación e importación de un perfil de publicación para implementar una aplicación desde Visual Studio en IIS
-ms.date: 01/31/2019
+ms.date: 05/06/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0c7309f52fbc8056f09e5a59afcfdefaa8d0bf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4b18d1b123e32807575ac2c6601166891d6c25be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65680138"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183306"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en IIS mediante la importación de la configuración de publicación en Visual Studio
 
@@ -23,7 +23,7 @@ Puede usar la herramienta **Publicar** para importar la configuración de public
 
 Estos pasos se aplican a aplicaciones ASP.NET, ASP.NET Core y .NET Core en Visual Studio.
 
-En este tutorial, aprenderá lo siguiente:
+En este tutorial va a:
 
 > [!div class="checklist"]
 > * Configurar IIS para que pueda generar un archivo de configuración de publicación
@@ -31,12 +31,12 @@ En este tutorial, aprenderá lo siguiente:
 > * Importar el archivo de configuración de publicación a Visual Studio
 > * Implementar la aplicación en IIS
 
-Un archivo de configuración de publicación (*\*.publishsettings*) es diferente a un perfil de publicación (*\*.pubxml*) creado en Visual Studio. Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
+Un archivo de configuración de publicación ( *\*.publishsettings*) es diferente de un perfil de publicación ( *\*.pubxml*) creado en Visual Studio. Un archivo de configuración de publicación se crea mediante IIS o Azure App Service, o puede crearse manualmente y después importarse en Visual Studio.
 
 > [!NOTE]
-> Si desea copiar un perfil de publicación de Visual Studio (\*archivo .pubxml) de una instalación de Visual Studio a otra, puede encontrar el perfil de publicación, *\<nombredeperfil\>.pubxml*, en la carpeta *\\<nombredeproyecto\>\Properties\PublishProfiles* para los tipos de proyecto administrados. Para sitios web, busque en la carpeta *\App_Data*. Los perfiles de publicación son archivos XML de MSBuild.
+> Si tan solo necesita copiar un perfil de publicación de Visual Studio (archivo\*.pubxml) de una instalación de Visual Studio en otra, puede encontrar el perfil de publicación, *\<profilename\>.pubxml*, en la carpeta *\\<nombredeproyecto\>\Properties\PublishProfiles* correspondiente a los tipos de proyecto administrados. Para sitios web, busque en la carpeta *\App_Data*. Los perfiles de publicación son archivos XML de MSBuild.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
 
 ::: moniker range=">=vs-2019"
 
@@ -52,7 +52,7 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
     Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
 ::: moniker-end
 
-* En el servidor, debe ejecutar Windows Server 2012 o Windows Server 2016, y tener el [rol de servidor web de IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) configurado correctamente (necesario para generar el archivo de configuración de publicación (*\*.publishsettings*)). También se debe instalar ASP.NET 4.5 o ASP.NET Core en el servidor. Para configurar ASP.NET 4.5, vea [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 y ASP.NET 4.5). Para configurar ASP.NET Core, vea [Hospedaje de ASP.NET Core en Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
+* En el servidor, debe ejecutar Windows Server 2012, Windows Server 2016 o Windows Server 2019, y tener el [rol de servidor web de IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) configurado correctamente (es necesario para generar el archivo de configuración de publicación [ *\*.publishsettings*]). También se debe instalar ASP.NET 4.5 o ASP.NET Core en el servidor. Para configurar ASP.NET 4.5, vea [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 y ASP.NET 4.5). Para configurar ASP.NET Core, vea [Hospedaje de ASP.NET Core en Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). En ASP.NET Core, asegúrese de configurar el grupo de aplicaciones para que use **Sin código administrado**, tal y como se describe en el artículo.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Crear un nuevo proyecto de ASP.NET en Visual Studio
 

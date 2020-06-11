@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5f1d34a6d21e6d4f413275ee21651feb7ec3dec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586690"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183657"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -57,7 +57,7 @@ Por ejemplo, puede usar el código siguiente para establecer una propiedad de co
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Para llamar a un método estático, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Method> es el nombre del método y (\<Parameters) es la lista de parámetros del método:
+Para llamar a un método estático, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Method> es el nombre del método y (\<Parameters>) es la lista de parámetros del método:
 
 ```
 $([Class]::Method(Parameters))
@@ -71,53 +71,53 @@ Por ejemplo, para establecer una propiedad de compilación en un nuevo GUID, pue
 
 En las funciones de propiedad estáticas, puede usar cualquier método o propiedad estáticos de estas clases del sistema:
 
-- System.Byte
-- System.Char
-- System.Convert
-- System.DateTime
-- System.Decimal
-- System.Double
-- System.Enum
-- System.Guid
-- System.Int16
-- System.Int32
-- System.Int64
-- System.IO.Path
-- System.Math
-- System.Runtime.InteropServices.OSPlatform
-- System.Runtime.InteropServices.RuntimeInformation
-- System.UInt16
-- System.UInt32
-- System.UInt64
-- System.SByte
-- System.Single
-- System.String
-- System.StringComparer
-- System.TimeSpan
-- System.Text.RegularExpressions.Regex
-- System.UriBuilder
-- System.Version
-- Microsoft.Build.Utilities.ToolLocationHelper
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.Char?displayProperty=nameWithType>
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.Decimal?displayProperty=nameWithType>
+- <xref:System.Double?displayProperty=nameWithType>
+- <xref:System.Enum?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.IO.Path?displayProperty=nameWithType>
+- <xref:System.Math?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.OSPlatform?displayProperty=nameWithType>
+- <xref:System.Runtime.InteropServices.RuntimeInformation?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Single?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- <xref:System.TimeSpan?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
+- <xref:System.UriBuilder?displayProperty=nameWithType>
+- <xref:System.Version?displayProperty=nameWithType>
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper?displayProperty=nameWithType>
 
 Además, puede usar los siguientes métodos y propiedades estáticos:
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
-- System.Environment::GetEnvironmentVariable
-- System.Environment::GetEnvironmentVariables
-- System.Environment::GetFolderPath
-- System.Environment::GetLogicalDrives
-- System.IO.Directory::GetDirectories
-- System.IO.Directory::GetFiles
-- System.IO.Directory::GetLastAccessTime
-- System.IO.Directory::GetLastWriteTime
-- System.IO.Directory::GetParent
-- System.IO.File::Exists
-- System.IO.File::GetCreationTime
-- System.IO.File::GetAttributes
-- System.IO.File::GetLastAccessTime
-- System.IO.File::GetLastWriteTime
-- System.IO.File::ReadAllText
+- [System.Environment::CommandLine](xref:System.Environment.CommandLine*)
+- [System.Environment::ExpandEnvironmentVariables](xref:System.Environment.ExpandEnvironmentVariables*)
+- [System.Environment::GetEnvironmentVariable](xref:System.Environment.GetEnvironmentVariable*)
+- [System.Environment::GetEnvironmentVariables](xref:System.Environment.GetEnvironmentVariables*)
+- [System.Environment::GetFolderPath](xref:System.Environment.GetFolderPath*)
+- [System.Environment::GetLogicalDrives](xref:System.Environment.GetLogicalDrives*)
+- [System.IO.Directory::GetDirectories](xref:System.IO.Directory.GetDirectories*)
+- [System.IO.Directory::GetFiles](xref:System.IO.Directory.GetFiles*)
+- [System.IO.Directory::GetLastAccessTime](xref:System.IO.Directory.GetLastAccessTime*)
+- [System.IO.Directory::GetLastWriteTime](xref:System.IO.Directory.GetLastWriteTime*)
+- [System.IO.Directory::GetParent](xref:System.IO.Directory.GetParent*)
+- [System.IO.File::Exists](xref:System.IO.File.Exists*)
+- [System.IO.File::GetCreationTime](xref:System.IO.File.GetCreationTime*)
+- [System.IO.File::GetAttributes](xref:System.IO.File.GetAttributes*)
+- [System.IO.File::GetLastAccessTime](xref:System.IO.File.GetLastAccessTime*)
+- [System.IO.File::GetLastWriteTime](xref:System.IO.File.GetLastWriteTime*)
+- [System.IO.File::ReadAllText](xref:System.IO.File.ReadAllText*)
 
 ### <a name="calling-instance-methods-on-static-properties"></a>Llamada a métodos de instancia en propiedades estáticas
 

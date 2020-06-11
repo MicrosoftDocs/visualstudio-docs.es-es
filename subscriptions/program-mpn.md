@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232332"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183059"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -34,7 +34,7 @@ Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un n�
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Desarrollo de aplicaciones                     | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
 | Administración de relaciones con el cliente en la nube      | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
-| Plataforma de nube                              | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
+| Cloud Platform                              | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
 | DevOps                                      | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise                |
 
@@ -72,12 +72,12 @@ En una suscripción de Visual Studio ofrecida a través de MPN, es preciso que e
 
 ## <a name="resources"></a>Recursos
 
-- [MPN Program Administrator Guide](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guía del administrador de programas de MPN): incluye instrucciones sobre cómo asignar suscripciones de Visual Studio a empleados de MPN.
+- [Guía de programas de Microsoft Partner Network](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Administración de las suscripciones a Visual Studio incluidas con los programas de Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
 - [Condiciones de uso](https://www.microsoft.com/useterms/): las suscripciones de Visual Studio ofrecidas a través de MPN están sujetas al EULA de las suscripciones de Visual Studio no para reventa (NFR).
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

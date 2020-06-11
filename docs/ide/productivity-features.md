@@ -1,24 +1,40 @@
 ---
-title: Sugerencias de productividad
-ms.date: 2/21/2019
+title: Guía de productividad
+ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ad93c03e1a1b260ee14cb27093403f27648d7
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544307"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184086"
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
+# <a name="productivity-guide-for-visual-studio"></a>Guía de productividad para Visual Studio
 
-En este artículo se describen recomendaciones de características de Visual Studio que lo ayudarán a escribir, navegar y depurar código de forma más rápida y eficaz.
+Si quiere ahorrar tiempo mientras escribe código, está en el lugar correcto. Esta guía de productividad incluye sugerencias que pueden ayudarle a empezar a trabajar con Visual Studio, escribir código, depurar código, controlar errores y usar métodos abreviados de teclado: todo en una sola página.
 
-Para obtener información sobre métodos abreviados de teclado útiles, vea [Métodos abreviados de productividad](../ide/productivity-shortcuts.md). Para obtener una lista completa de los comandos que tienen métodos abreviados predeterminados, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Para obtener información sobre métodos abreviados de teclado útiles, vea [Métodos abreviados de productividad](../ide/productivity-shortcuts.md). Para obtener una lista completa de accesos directos de comandos, consulte [Accesos directos de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="get-started"></a>Primeros pasos
+
+Ahorre tiempo indagando en los menús mediante búsquedas rápidas de todo lo que necesite, como, por ejemplo, comandos, opciones de configuración, documentación y opciones de instalación. Vea los métodos abreviados de teclado de los comandos en los resultados de la búsqueda en Visual Studio para que pueda memorizarlos más fácilmente. 
+
+- **Usar código ficticio con la lista de tareas**. Si no tiene requisitos suficientes para completar alguna parte del código, use la opción Lista de tareas para realizar un seguimiento de los comentarios de código que usan tokens tales como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida en el código. Para más información, consulte el artículo sobre el [uso de la lista de tareas](../ide/using-the-task-list.md.).
+
+- **Usar accesos directos del Explorador de soluciones**. Si no está familiarizado con Visual Studio, estos accesos directos le resultarán útiles y le ahorrarán tiempo mientras se pone al día con un nuevo código base. Para ver la lista completa de accesos directos, consulte [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
+
+- **[Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)** . Puede identificar los métodos abreviados de teclado de los comandos de Visual Studio, personalizarlos y exportarlos para que los usen otras personas. Siempre puede buscar y cambiar un método abreviado de teclado en el cuadro de diálogo Opciones.
+
+- **Aumentar la accesibilidad en Visual Studio**. Visual Studio tiene características de accesibilidad integradas que son compatibles con los lectores de pantalla y otras tecnologías de asistencia. Consulte [Sugerencias y trucos de accesibilidad de Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) para ver la lista completa de características disponibles. 
+
+- **Comprobar el ciclo de vida y mantenimiento del producto de Visual Studio** Para más información sobre cómo obtener actualizaciones de Visual Studio, opciones de soporte técnico para clientes empresariales y profesionales, compatibilidad con versiones anteriores de Visual Studio y componentes no cubiertos por el mantenimiento de Visual Studio, consulte [Ciclo de vida y mantenimiento del producto de Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+
+- **Instalar y administrar paquetes NuGet en Visual Studio**. La interfaz de usuario del Administrador de paquetes NuGet en Visual Studio de Windows le permite instalar, desinstalar y actualizar fácilmente paquetes NuGet en proyectos y soluciones. Para más información, consulte [Instalar y administrar paquetes en Visual Studio con el Administrador de paquetes NuGet](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Escribir código
 
@@ -34,7 +50,7 @@ Escriba código más rápidamente con las características siguientes.
 
 - **Usar fragmentos de código**. Puede usar fragmentos de código integrados o crear sus propios fragmentos de código.
 
-     Para insertar un fragmento de código, en la barra de menús, elija**Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Code Snippets](../ide/code-snippets.md).
+     Para insertar un fragmento de código, en la barra de menús, elija**Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
 
 - **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar con los iconos de destornillador ![icono de destornillador](media/screwdriver-icon.png) o de bombilla ![icono de bombilla](media/light-bulb-icon.png) o presionando **Alt**+**Entrar** o **Ctrl**+ **.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
 
@@ -44,9 +60,13 @@ Escriba código más rápidamente con las características siguientes.
 
 - **Usar aplicaciones de ejemplo**. Puede acelerar el desarrollo de aplicaciones si descarga e instala aplicaciones de ejemplo desde [Microsoft Developer Network](https://code.msdn.microsoft.com/). También puede obtener información sobre una tecnología o un concepto de programación determinado si descarga y explora un Sample Pack para esa área.
 
-## <a name="navigate-within-your-code"></a>Navegar dentro del código
+- **Cambiar el formato de llaves con Formato/Nuevas líneas**. Use la página de opciones **Formato** para establecer opciones de formato de código en el editor de código, incluidas nuevas líneas. Para más información sobre cómo usar esta configuración en C#, consulte [Cuadro de diálogo Opciones: Editor de texto > C# > Estilo de código > Formato](../ide/reference/options-text-editor-csharp-formatting.md) Para C++, consulte el artículo sobre [establecimiento de preferencias de codificación de C++ en Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Para Python, consulte el artículo sobre [formato de código de Python](../python/formatting-python-code.md).
 
-Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez.
+- **Cambiar la sangría por pestañas**. Utilice la configuración personalizada del editor, adaptada a cada código base, para aplicar estilos de codificación coherentes para varios desarrolladores que trabajan en un mismo proyecto en distintos editores y entornos de desarrollo integrado (IDE). Asegúrese de que todo el equipo sigue las mismas convenciones de lenguaje, convenciones de nomenclatura y reglas de formato. Dado que esta configuración personalizada es portátil y viaja con el código, puede aplicar estilos de codificación incluso fuera de Visual Studio. Para más información, consulte el artículo sobre [opciones, editor de texto, todos los lenguajes, pestañas](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
+
+## <a name="navigate-within-your-code-and-the-ide"></a>Navegación dentro del código y el IDE
+
+Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez. También puede cambiar el diseño de las ventanas de Visual Studio en función de sus preferencias. 
 
 - **Establecer marcadores en líneas de código**. Puede usar marcadores para navegar rápidamente a líneas de código concretas de un archivo.
 
@@ -57,6 +77,14 @@ Puede usar diversas técnicas para buscar determinadas ubicaciones del código e
    Para tener acceso a esta característica, en la barra de menús, pulse **Editar** > **Navegar a**.
 
 - **Examinar la estructura general del código**. En el **Explorador de soluciones**, puede buscar y examinar clases y sus tipos y miembros en los proyectos. También puede buscar símbolos, ver la jerarquía de llamadas de un método, buscar referencias de símbolos y realizar otras tareas. Si elige un elemento de código en el **Explorador de soluciones**, el archivo asociado se abre en una pestaña **Vista previa** y el cursor se desplaza al elemento en el archivo. Para obtener más información, vea [Visualización de la estructura del código](../ide/viewing-the-structure-of-code.md).
+
+- **Saltar a una ubicación en un archivo con el modo de mapa**. El modo de mapa muestra líneas de código en miniatura en la barra de desplazamiento. Para más información sobre este modo de presentación, consulte [Procedimiento para Personalizar la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md#map-mode).
+
+- **Comprender la estructura del código con un mapa de código**. Los mapas de código pueden ayudarle a visualizar las dependencias en el código y ver cómo encaja en su conjunto sin necesidad de leer archivos ni líneas de código. Para más información, vea [Map dependencies with code maps](../modeling/map-dependencies-across-your-solutions.md) (Asignar dependencias con mapas de código).
+
+- **Consultar archivos usados con frecuencia con Editar/Ir a archivo reciente**. Use los comandos "Ir a" de Visual Studio realizan una búsqueda centrada en su código para ayudarle a encontrar rápidamente elementos específicos. Para obtener instrucciones detalladas, consulte el artículo sobre [búsqueda de código mediante comandos Ir a](../ide/go-to.md).
+
+- **Mover la [ventana Propiedades](../ide/reference/properties-window.md) al lado derecho**. Si busca un diseño de ventana más familiar, puede mover la ventana Propiedades en Visual Studio presionando **F4**.
 
 ## <a name="find-items-faster"></a>Buscar elementos más rápido
 
@@ -88,6 +116,8 @@ Puede buscar comandos, archivos y opciones en el IDE, además de filtrar el cont
 
 La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pueden ayudarle a acelerar el proceso.
 
+- **Usar las herramientas del depurador de Visual Studio**. En el contexto de Visual Studio, *depurar la aplicación* normalmente significa ejecutar la aplicación en modo del depurador. El depurador ofrece muchas formas de ver lo que hace el código durante su ejecución. Consulte el artículo sobre [primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md) para obtener una guía de introducción. 
+
 - **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
 
     ![Selección de opciones de depuración del explorador web](../ide/media/webbrowserdropdowntoolbar.png)
@@ -107,6 +137,12 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 - **Borrar la ventana Inmediato**. Para borrar el contenido de la [ventana Inmediato](../ide/reference/immediate-window.md) en tiempo de diseño, escriba `>cls` o `>Edit.ClearAll`.
 
      Para obtener más información sobre los comandos adicionales, vea [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+
+- **[Buscar cambios en el código y otro historial con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)** . CodeLens le permite averiguar qué ocurrió con el código mientras sigue centrado en su trabajo sin dejar el editor. Puede buscar referencias de una parte del código, cambios de código, errores vinculados, elementos de trabajo, revisiones de código y pruebas unitarias.
+
+- **Usar Live Share para depurar en tiempo real con otros usuarios**. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, con independencia de los lenguajes de programación que use o los tipos de aplicaciones que compile. Para más información, consulte [¿Qué es Visual Studio Live Share?](https://docs.microsoft.com/visualstudio/liveshare/)
+
+- **Usar la ventana interactiva para escribir y probar código pequeño**. Visual Studio ofrece una ventana interactiva de read–eval–print loop (REPL) que le permite escribir código arbitrario y ver resultados inmediatos. Esta forma de codificación le ayuda a aprender y experimentar con las API y las bibliotecas, así como a desarrollar de manera interactiva código de trabajo para incluirlo en sus proyectos. Para Python, consulte [Uso de la ventana interactiva de Python](../python/python-interactive-repl-in-visual-studio.md). La característica de ventana interactiva también está disponible para C#. 
 
 ## <a name="access-visual-studio-tools"></a>Acceso a Visual Studio Tools
 
@@ -130,7 +166,7 @@ Puede tener acceso rápidamente al Símbolo del sistema para desarrolladores o a
 
 En cualquier momento, puede trabajar en varios archivos de código y desplazarse entre varias ventanas de herramientas mientras desarrolla una aplicación. Para organizarse, utilice las sugerencias siguientes:
 
-- **Mantener los archivos que usa con frecuencia visibles en el editor**. Puede anclar archivos en el lado izquierdo del cuadro de la pestaña de modo que sigan siendo visibles independientemente de cuántos archivos haya abiertos en el editor.
+- **Mantener los archivos que usa con frecuencia visibles en el editor**. Puede anclar archivos en el lado izquierdo de la pestaña de modo que sigan siendo visibles independientemente de cuántos archivos haya abiertos en el editor.
 
    Para anclar un archivo, pulse la pestaña del archivo y, después, seleccione el botón **Alternar estado de anclaje**.
 
@@ -138,12 +174,12 @@ En cualquier momento, puede trabajar en varios archivos de código y desplazarse
 
    También puede administrar los archivos más fácilmente si crea otra instancia del **Explorador de soluciones** y la mueve a otro monitor. Para crear otra instancia del **Explorador de soluciones**, abra un menú contextual en el **Explorador de soluciones** y pulse **Nueva vista del Explorador de soluciones**.
 
-- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores en Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Entrada de blog de sugerencias y trucos de Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Métodos abreviados de teclado predeterminados para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Tutorial: Crear una aplicación sencilla](../get-started/csharp/tutorial-wpf.md)
+- [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Tutorial: Creación de una aplicación sencilla](../get-started/csharp/tutorial-wpf.md)
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)

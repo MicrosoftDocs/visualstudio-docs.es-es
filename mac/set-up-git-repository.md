@@ -1,16 +1,16 @@
 ---
 title: Configuración de un repositorio Git
 description: Empleo de Git y Subversion en Visual Studio para Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 02/15/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e9dc8728a3115368f1772287362b2a9f21a4309
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70107892"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173399"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -46,13 +46,13 @@ Si dispone de un proyecto que _aún no está_ en control de versiones, siga esto
 
 1. Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
 
-2. En la barra de menús, seleccione **Control de versiones > Publicar en control de versiones** para mostrar el cuadro de diálogo **Seleccionar repositorio**:
+2. En la barra de menús, seleccione **Control de versiones > Publicar en control de versiones** para mostrar el cuadro de diálogo **Clonar repositorio**:
 
-    ![Iniciar la extracción del repositorio en Visual Studio para Mac](media/version-control-git4-sml.png)
+    ![Iniciar la extracción del repositorio en Visual Studio para Mac](media/version-control-git4.png)
 
     Si este elemento de menú aparece atenuado, asegúrese de que ha seleccionado el nombre de la solución.
 
-3. Elija la pestaña **Repositorios registrados** y haga clic en el botón **Agregar**:
+3. Elija la pestaña **Seleccionar de los registrados** y haga clic en el botón **Agregar**:
 
     ![](media/version-control-git5.png)
 
@@ -81,7 +81,7 @@ Si dispone de un proyecto que _aún no está_ en control de versiones, siga esto
 
     ![Menú Control de versiones](media/version-control-git10.png)
 
-10. Cuando empiece a realizar otros cambios, seleccione **Insertar cambios** para enviar los cambios realizados al repositorio **remoto**. Esto permitirá a todos los usuarios adecuados verlo en github.com:
+10. Cuando empiece a realizar cambios adicionales, use primero el menú **Control de versiones > Revisar y confirmar** para abrir la vista de estado. Después de seleccionar y confirmar los cambios, seleccione **Insertar** para enviar los cambios al repositorio remoto. Esto permitirá a todos los usuarios adecuados verlo en github.com:
 
     ![Enviar cambios al repositorio remoto](media/version-control-git11.png)
 
@@ -96,7 +96,7 @@ Siga estos pasos para insertar el nuevo repositorio local en un repositorio de G
 > [!NOTE]
 > Si aún no ha creado un repositorio de GitHub, consulte la sección [Creación de un repositorio remoto en GitHub](#creating-a-remote-repo-on-github).
 
-1. Cree su primera confirmación. Para ello, vaya a **Control de versiones > Revisar la solución y confirmar** en la barra de menús.
+1. Cree su primera confirmación. Para ello, vaya a **Control de versiones > Revisar y confirmar** en la barra de menús.
 
 2. En la pestaña de estado, haga clic en **Confirmar** en la parte superior izquierda.
 
@@ -127,23 +127,23 @@ Visual Studio para Mac ahora insertará los cambios en el repositorio de GitHub 
 
 ![Confirmación de que la operación de inserción se completó correctamente](media/version-control-git11.png)
 
-## <a name="check-out-an-existing-repository"></a>Desproteger un repositorio existente
+## <a name="clone-an-existing-repository"></a>Clonación de un repositorio existente
 
-Es probable que tenga que trabajar con un repositorio de GitHub que solo exista en el equipo remoto y no en el local. Visual Studio para Mac permite desproteger este repositorio rápidamente. Siga estos pasos para clonarlo en el equipo:
+Es probable que tenga que trabajar con un repositorio de GitHub que solo exista en el equipo remoto y no en el local. Visual Studio para Mac permite clonar este repositorio rápidamente. Siga estos pasos para clonarlo en el equipo:
 
-1. En la barra de menús, seleccione **Control de versiones > Desproteger**:
+1. En la barra de menús, seleccione **Control de versiones > Clonar repositorio**:
 
-2. Se mostrará la pestaña **Conectar a repositorio**:
+2. Se muestra la pestaña **Connect with Url** (Conectar con la dirección URL):
 
-    ![Pestaña Conectar a repositorio con detalles especificados](media/version-control-git13.png)
+    ![Pestaña de conexión con la dirección URL con detalles especificados](media/version-control-git13.png)
 
 3. En la página de GitHub del repositorio remoto, presione el botón **Clonar o descargar** y copie la URL proporcionada:
 
     ![url de github mostrada](media/version-control-git14.png)
 
-4. Reemplace todo el texto del campo de entrada de la **URL** en la pestaña **Conectar a repositorio**. Se rellenarán automáticamente la mayoría de los campos de la pestaña, como se muestra en la imagen del paso 2.
+4. Reemplace todo el texto del campo de entrada de la dirección **URL** en la pestaña **Connect with Url** (Conectar con la dirección URL). Se rellenarán automáticamente la mayoría de los campos de la pestaña, como se muestra en la imagen del paso 2.
 
-5. Escriba el directorio en el que quiere clonar el repositorio y presione **Desproteger**.
+5. Escriba el directorio en el que quiere clonar el repositorio y pulse**Clonar**.
 
 > [!NOTE]
 > Puede que tenga problemas si el repositorio tiene más de 4 GB.

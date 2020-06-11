@@ -1,7 +1,7 @@
 ---
 title: Escritura de un visualizador en C# | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542638"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183748"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escritura de un visualizador en C\#
+
 En este tutorial se muestra cómo escribir un visualizador sencillo con C#. El visualizador que creará en este tutorial muestra el contenido de una cadena mediante un cuadro de mensaje de formularios Windows Forms. Este sencillo visualizador de cadenas no es especialmente útil, pero muestra los pasos básicos que se deben seguir para crear visualizadores más útiles para otros tipos de datos.
 
 > [!NOTE]
@@ -61,7 +62,7 @@ Siga las tareas siguientes para crear un visualizador.
 
 4. En el cuadro de diálogo **Agregar referencia**, en la pestaña **Examinar**, seleccione **Examinar** y busque Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    Puede encontrar el archivo DLL en el subdirectorio *\<Directorio de instalación de Visual Studio>\Common7\IDE\PublicAssemblies* del directorio de instalación de Visual Studio.
+    Puede encontrar el archivo DLL en el subdirectorio *\<Visual Studio Install Directory>\Common7\IDE\PublicAssemblies* del directorio de instalación de Visual Studio.
 
 5. Haga clic en **Aceptar**.
 
@@ -133,7 +134,9 @@ Siga las tareas siguientes para crear un visualizador.
 
    Ése es el fin del código del depurador. Sin embargo, hay un paso más que realizar; el atributo que indica al lado depurado qué colección de clases incluye el visualizador.
 
-### <a name="to-add-the-debuggee-side-code"></a>Para agregar el código que está siendo depurado
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>Para agregar el tipo que se va a visualizar en el código del lado depurado
+
+En el código del depurador, especifique el tipo que se va a visualizar (el origen del objeto) en el lado depurado con el atributo <xref:System.Diagnostics.DebuggerVisualizerAttribute>. La propiedad `Target` establece el tipo que se va a visualizar.
 
 1. Agregue el código de atributo siguiente a DebuggerSide.cs, después de las directivas `using`, pero antes de `namespace MyFirstVisualizer`:
 

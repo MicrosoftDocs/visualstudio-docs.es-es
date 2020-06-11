@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916142"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183566"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Depuración en tiempo de diseño en Visual Studio (C#, C++/CLI, Visual Basic, F#)
 
@@ -83,13 +83,13 @@ El ejemplo siguiente se desarrolla en Visual Basic. También puede usar la venta
 
 1. Abra la página XAML que contiene el control personalizado que quiere depurar.
 
-   En el caso de los proyectos de UWP que tengan como destino la compilación 16299 o posterior de Windows, este paso iniciará el proceso *UwpSurface.exe*. En el caso de las versiones de WPF o UWP anteriores a la compilación 16299 de Windows, este paso iniciará el proceso *XDesProc.exe*.
+   En el caso de los proyectos de UWP que tengan como destino la compilación 16299 o posterior de Windows, este paso iniciará el proceso *UwpSurface.exe*. En el caso de los proyectos de WPF que tengan como destino la compilación 16299 o posterior de Windows, este paso iniciará el proceso *WpfSurface.exe*. En el caso de las versiones de WPF o UWP anteriores a la compilación 16299 de Windows, este paso iniciará el proceso *XDesProc.exe*. 
 
 1. Abra una segunda instancia de Visual Studio. No abra una solución ni un proyecto en la segunda instancia.
 
 1. En la segunda instancia de Visual Studio, abra el menú **Depurar** y elija **Asociar al proceso...** .
 
-1. En función del tipo de proyecto (vea los pasos anteriores), seleccione el proceso *UwpSurface.exe* o *XDesProc.exe* de la lista de procesos disponibles.
+1. En función del tipo de proyecto (vea los pasos anteriores), seleccione el proceso *UwpSurface.exe*, *WpfSurface.exe* o *XDesProc.exe* de la lista de procesos disponibles.
 
 1. En el campo **Asociar a** del cuadro de diálogo **Asociar al proceso**, elija el tipo de código correcto para el control personalizado que quiere depurar.
 

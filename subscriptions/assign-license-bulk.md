@@ -4,20 +4,24 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/02/2020
+ms.date: 05/10/2020
 ms.topic: conceptual
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 7fb9987b0d25da1be8a01f0cef82e019c20460d1
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 41dd3049c790ac790b46d12b976eb3ab6457fcb2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564191"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182903"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
 
 Para agregar grandes grupos de usuarios, puede usar la característica Agregar en masa, o bien, si su organización usa Microsoft Azure Active Directory (Azure AD), puede usar grupos de Azure AD. En este artículo se explica el proceso de ambas opciones. 
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Uso de la adición en masa para asignar suscripciones
 1. Inicie sesión en el Portal de administración de suscripciones de Visual Studio en https://manage.visualstudio.com.
@@ -32,6 +36,9 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
    > Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
 
 3. En la hoja de cálculo de Excel, rellene los campos con la información de las personas a las que quiere asignar suscripciones. (El campo *Referencia* es opcional). Guarde el archivo localmente cuando haya terminado.
+
+    > [!NOTE]
+    > Uno de los campos de la plantilla permite a los administradores habilitar o deshabilitar la capacidad de los suscriptores de descargar software.  Al deshabilitar las descargas también se deshabilita su acceso a las claves de producto.
 
    Para garantizar una carga sin problemas, tenga en cuenta los siguientes procedimientos recomendados:
 
@@ -74,12 +81,17 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > [!IMPORTANT]
 >
 > Se aplican las siguientes limitaciones al uso de grupos de Azure AD para agregar suscriptores:
+> - El administrador debe ser miembro del inquilino de AAD al agregar inicialmente un grupo al portal de administración.  Una vez agregado el grupo, los cambios en la pertenencia de los grupos no requieren la intervención del administrador. 
 > - Los grupos deben contener al menos un miembro.  No se admiten grupos vacíos.
 > - Los grupos deben tener menos de 1000 usuarios. 
 > - Todos los usuarios deben estar en el nivel superior del grupo.  No se admiten grupos anidados.
 > - Solo se admiten acuerdos de confianza.
 > - Todos los miembros del grupo deben tener una dirección de correo electrónico asociada a su cuenta de Azure AD.
 > - Las notificaciones de suscripciones agregadas con grupos de Azure AD no se pueden enviar a direcciones de correo electrónico independientes.  
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 
 1. Inicie sesión en el Portal de administración de suscripciones de Visual Studio en [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
@@ -106,9 +118,6 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 > [!NOTE]
 > Si ya se han asignado las suscripciones individualmente a los usuarios que se agregan posteriormente como parte de un grupo de Azure AD, se agregarán como parte del grupo y ya no se mostrarán individualmente. Sin embargo, si la suscripción individual es para un nivel de suscripción distinto, tendrá dos suscripciones.  Ejemplo:  si un usuario tiene una suscripción individual de Visual Studio Professional y es miembro de un grupo al que se asignan suscripciones de Visual Studio Enterprise, este usuario tendrá ambas.  
 
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vxNq]
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>P: ¿Puedo elegir varios niveles de suscripción para asignarlos dentro de un grupo de Azure AD? 

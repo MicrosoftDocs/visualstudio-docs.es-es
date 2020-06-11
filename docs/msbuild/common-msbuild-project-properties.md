@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece57a102851efe0198f8993b60dba8e0eae6dec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7502644c9820b47149acb4a9b8a749bec70551e4
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634427"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180433"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 
@@ -118,6 +118,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | Satellite_Win32Resource | Inserta un archivo de recursos ( *.res*) de Win32 en el ensamblado satélite. |
 | SGenToolPath | Ruta de acceso opcional de la herramienta que indica dónde obtener *SGen.exe* si se reemplaza la versión actual de *SGen.exe*. Esta propiedad solo se usa para .NET Framework.|
 | SGenUseProxyTypes | Valor booleano que indica si *SGen.exe* debe generar los tipos de proxy. Esto únicamente se aplica si *GenerateSerializationAssemblies* está establecido en activado y solo para .NET Framework.<br /><br /> El destino de SGen usa esta propiedad para establecer la marca UseProxyTypes. Esta propiedad tiene el valor predeterminado true y no hay ninguna interfaz de usuario para cambiarlo. Para generar el ensamblado de serialización para tipos que no son de servicio web, agregue esta propiedad al archivo de proyecto y establézcala en false antes de importar *Microsoft.Common.Targets* o *C#/VB.targets*. |
+| SkipInvalidConfigurations | Cuando es `true`, se genera una advertencia sobre las combinaciones de configuración y de plataforma no válidas, pero no interrumpe la compilación. Cuando es `false` o "undefined" (el valor predeterminado), se genera un error. |
 | StartupObject | Especifica la clase o módulo que contiene el método Main o el procedimiento Main Sub. Esta propiedad es equivalente al modificador `/main` del compilador. |
 | SubsystemVersion | Especifica la versión mínima del subsistema que el archivo ejecutable generado puede utilizar. Esta propiedad es equivalente al modificador `/subsystemversion` del compilador. Para obtener información sobre el valor predeterminado de esta propiedad, vea [-subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) o [-subsystemversion (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Versión de .NET Compact Framework necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |

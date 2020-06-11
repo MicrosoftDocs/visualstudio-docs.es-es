@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ffb650a87fa992a07d749687498cbb8ec6482d
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 926c54be9d31a6d0708b33248b6887c0ac7e324e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586826"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184073"
 ---
 # <a name="msbuild-conditions"></a>Condiciones de MSBuild
 
@@ -37,8 +37,8 @@ MSBuild admite un conjunto específico de condiciones que se pueden aplicar all�
 |Existe ('`stringA`')|Se evalúa como `true` si existe un archivo o una carpeta con el nombre `stringA`.<br /><br /> Por ejemplo:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos.|
 |HasTrailingSlash ('`stringA`')|Se evalúa como `true` si la cadena especificada contiene al final un carácter de barra inversa (\\) o barra diagonal (/).<br /><br /> Por ejemplo:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Las comillas simples no son necesarias para las cadenas alfanuméricas simples o los valores booleanos. Sin embargo, las comillas simples son necesarias para los valores vacíos.|
 |!|Se evalúa como `true` si el operando se evalúa como `false`.|
-|Y|Se evalúa como `true` si ambos operandos se evalúan como `true`.|
-|O bien|Se evalúa como `true` si al menos uno de los operandos se evalúa como `true`.|
+|`And`|Se evalúa como `true` si ambos operandos se evalúan como `true`.|
+|`Or`|Se evalúa como `true` si al menos uno de los operandos se evalúa como `true`.|
 |()|Mecanismo de agrupamiento que se evalúa como `true` si las expresiones que contiene se evalúan como `true`.|
 |$if$ ( %expression% ), $else$, $endif$|Comprueba si el `%expression%` especificado coincide con el valor de cadena del parámetro de plantilla personalizado pasado. Si la condición `$if$` se evalúa como `true`, sus instrucciones se ejecutan; en caso contrario, se comprueba la condición `$else$`. Si la condición `$else$` es `true`, sus instrucciones se ejecutan; en caso contrario, la condición `$endif$` finaliza la evaluación de expresiones.<br /><br /> Para obtener ejemplos de uso, vea [Visual Studio project/item template parameter logic](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic) (Lógica del parámetro de plantillas de proyecto o elemento de Visual Studio).|
 

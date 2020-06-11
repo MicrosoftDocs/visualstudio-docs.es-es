@@ -8,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76dcbbf8c5c5c5019c0b45fe97150838d996bfa1
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633205"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183358"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Versión de .NET Framework de destino y plataforma de destino de MSBuild
 
-Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
+Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 80x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
 
 > [!IMPORTANT]
 > En este artículo se muestra la forma antigua de especificar una plataforma de destino. Los proyectos de estilo SDK permiten diferentes plataformas de destino, como netstandard. Para más información, consulte [Plataformas de destino](/dotnet/standard/frameworks).
@@ -89,7 +89,7 @@ Una *plataforma de destino* es la plataforma específica para la que se ha compi
 
 ```
 
-Una *configuración de destino* es un subconjunto de una plataforma de destino. Por ejemplo, la configuración `x86``Debug` no incluye la mayoría de las optimizaciones de código. La configuración de destino se especifica en la propiedad de compilación `Configuration` de un archivo de proyecto. Puede cambiar la configuración de destino mediante las páginas de propiedades del proyecto o el **Administrador de configuración**.
+Una *configuración de destino* es un subconjunto de una plataforma de destino. Por ejemplo, la configuración `Debug` de `x86` no incluye la mayoría de las optimizaciones de código. La configuración de destino se especifica en la propiedad de compilación `Configuration` de un archivo de proyecto. Puede cambiar la configuración de destino mediante las páginas de propiedades del proyecto o el **Administrador de configuración**.
 
 ```xml
 <PropertyGroup>

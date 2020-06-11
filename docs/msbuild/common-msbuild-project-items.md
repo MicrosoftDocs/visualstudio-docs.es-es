@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7725108fd71f4292a8d3fa4dfe68ca29d3dcd90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634453"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182916"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 
 En MSBuild, un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de Visual Studio tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
+
 ## <a name="common-items"></a>Elementos comunes
 
- A continuación, se muestra una lista de todos los elementos de proyecto comunes.
 A continuación, se muestra una lista de todos los elementos de proyecto comunes.
 
 ### <a name="reference"></a>Referencia
 
- Representa una referencia de ensamblado (administrada) del proyecto.
+Representa una referencia de ensamblado (administrada) del proyecto.
 
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
@@ -45,7 +45,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="comreference"></a>COMReference
 
- Representa una referencia a un componente COM (no administrado) del proyecto. Este elemento solo se aplica a los proyectos de .NET.
+Representa una referencia a un componente COM (no administrado) del proyecto. Este elemento solo se aplica a los proyectos de .NET.
 
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
@@ -59,7 +59,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="comfilereference"></a>COMFileReference
 
- Representa una lista de las bibliotecas de tipos que se pasan al parámetro `TypeLibFiles` del destino [ResolveComReference](resolvecomreference-task.md). Este elemento solo se aplica a los proyectos de .NET.
+Representa una lista de las bibliotecas de tipos que se pasan al parámetro `TypeLibFiles` del destino [ResolveComReference](resolvecomreference-task.md). Este elemento solo se aplica a los proyectos de .NET.
 
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
@@ -67,7 +67,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="nativereference"></a>NativeReference
 
- Representa un archivo de manifiesto nativo o una referencia a este archivo.
+Representa un archivo de manifiesto nativo o una referencia a este archivo.
 
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
@@ -76,7 +76,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="projectreference"></a>ProjectReference
 
- Representa una referencia a otro proyecto.
+Representa una referencia a otro proyecto. Los elementos `ProjectReference` se transforman en elementos de [referencia](#reference) mediante el destino `ResolveProjectReferences`, por lo que es posible que los metadatos válidos en una referencia sean válidos en `ProjectReference`, si el proceso de transformación no los sobrescribe.
 
 |Nombre de metadatos de elementos|Descripción|
 |---------------|-----------------|
@@ -87,7 +87,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="compile"></a>Compile
 
- Representa los archivos de código fuente para el compilador.
+Representa los archivos de código fuente para el compilador.
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -99,7 +99,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="embeddedresource"></a>EmbeddedResource
 
- Representa los recursos que se van a incrustar en el ensamblado generado.
+Representa los recursos que se van a incrustar en el ensamblado generado.
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -114,7 +114,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="content"></a>Contenido
 
- Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.
+Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -130,7 +130,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="none"></a>None
 
- Representa archivos que no deberían tener ningún rol en el proceso de compilación.
+Representa archivos que no deberían tener ningún rol en el proceso de compilación.
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -144,7 +144,7 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata
 
- Representa los atributos de ensamblado que se van a generar como `[AssemblyMetadata(key, value)]`.
+Representa los atributos de ensamblado que se van a generar como `[AssemblyMetadata(key, value)]`.
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -156,16 +156,17 @@ A continuación, se muestra una lista de todos los elementos de proyecto comunes
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
- Representa el manifiesto de aplicación base de la compilación y contiene información de seguridad de implementación de ClickOnce.
+Representa el manifiesto de aplicación base de la compilación y contiene información de seguridad de implementación de ClickOnce.
 
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport
 
- Representa el proyecto FxCop que se importará.
+Representa el proyecto FxCop que se importará.
 
 ### <a name="import"></a>Importar
 
- Representa los ensamblados cuyos espacios de nombres debe importar el compilador de Visual Basic.
+Representa los ensamblados cuyos espacios de nombres debe importar el compilador de Visual Basic.
 
 ## <a name="see-also"></a>Vea también
 
 - [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Propiedades de MSBuild para proyectos del SDK de .NET Core](/dotnet/core/project-sdk/msbuild-props)

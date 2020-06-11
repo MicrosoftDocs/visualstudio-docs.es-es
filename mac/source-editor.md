@@ -5,16 +5,16 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68493219"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173101"
 ---
 # <a name="source-editor"></a>Editor de código fuente
 
-Un editor de código fuente de confianza es básico para escribir código de forma sucinta y eficaz. Visual Studio para Mac proporciona un sofisticado editor de código fuente que constituye el núcleo de las interacciones con el IDE. El editor de código fuente proporciona las características que se podrían esperar y que se necesitan para trabajar con facilidad: desde tareas básicas como resaltado de sintaxis, fragmentos de código y plegado de código, a las ventajas de la integración del compilador Roslyn, como completado de código IntelliSense totalmente funcional.
+Un editor de código fuente de confianza es básico para escribir código de forma sucinta y eficaz. Visual Studio para Mac proporciona un sofisticado editor de código fuente que constituye el núcleo de las interacciones con el IDE. El editor de código fuente proporciona las características que se podrían esperar y que se necesitan para trabajar con facilidad: Desde tareas básicas como resaltado de sintaxis, fragmentos de código y plegado de código, a las ventajas de la integración del compilador Roslyn, como completado de código IntelliSense totalmente funcional.
 
 El editor de código fuente de Visual Studio para Mac permite una experiencia sin problemas con el resto de la funcionalidad del IDE, como la depuración, la refactorización y la integración del control de versiones.
 
@@ -52,7 +52,7 @@ El ajuste de línea puede ayudarle a administrar el espacio cuando se trabaja co
 
 Esta característica está deshabilitado de forma predeterminada, pero se puede habilitar en **Preferencias** en Visual Studio para Mac. 
 
-Para habilitar el ajuste de línea, vaya a **Visual Studio > Preferencias > Editor de texto > Nuevo editor > Ajuste de línea**:
+Para habilitar el ajuste automático de línea, vaya a **Visual Studio > Preferencias > Editor de texto > Ajuste automático de línea**:
 
 ![Opciones de ajuste de línea](media/source-neweditor-wordwrap1.png)
 
@@ -78,7 +78,7 @@ El color del resaltado también resulta útil para indicar que un elemento está
 
 ![Ejemplo en el que se muestra el color de resaltado](media/source-editor-image7.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Características del editor de código (Visual Studio en Windows)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [Esquematizar (Visual Studio en Windows)](/visualstudio/ide/outlining)

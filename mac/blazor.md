@@ -6,18 +6,20 @@ ms.author: jogallow
 ms.date: 12/17/2019
 ms.technology: vs-ide-general
 ms.assetid: D2717D3A-9225-40A8-8155-7D0143B2CA60
-ms.openlocfilehash: dbc49a0ea9b4e4fa7880b6226331d447339b6575
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 978e3676d587bcd54a8e9d0b8b81f5d6c52a92bc
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75737304"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180289"
 ---
 # <a name="create-blazor-web-apps"></a>Creación de aplicaciones web de Blazor
 
 Esta guía proporciona una introducción a la creación de su primera aplicación web de Blazor. Para obtener instrucciones más detalladas, consulte [Introducción a Blazor en ASP.NET Core](/aspnet/core/blazor/index).
 
-Visual Studio para Mac (a partir de la versión 8.4) incluye compatibilidad con el desarrollo y la publicación de aplicaciones de servidor Blazor en ASP.NET Core. Blazor es un marco para compilar la interfaz de usuario web del lado cliente interactiva con .NET, que ofrece las siguientes ventajas a los desarrolladores web:
+Blazor de ASP.NET Core admite dos opciones de hospedaje distintas: Aplicación Blazor Server y Aplicación WebAssembly de Blazor. Visual Studio para Mac admite ambos modelos de hospedaje. Visual Studio para Mac 8.4+ admite Aplicación Blazor Server y Visual Studio para Mac 8.6 + admite ambos. Para más información sobre los modelos de hospedaje de Blazor, consulte el artículo sobre [modelos de hospedaje de Blazor en ASP.NET Core ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). La compatibilidad con la depuración de proyectos de WebAssembly de Blazor en Visual Studio para Mac se incluirá en una versión posterior a la 8.6.
+
+¿Qué es Blazor? Blazor es un marco para compilar la interfaz de usuario web del lado cliente interactiva con .NET, que ofrece las siguientes ventajas a los desarrolladores web:
 
 * Escribe el código en C# en lugar de JavaScript.
 * Aprovechamiento del ecosistema y las bibliotecas .NET existentes.
@@ -26,7 +28,7 @@ Visual Studio para Mac (a partir de la versión 8.4) incluye compatibilidad con 
 * Mantenga la productividad con Visual Studio en PC, Linux y macOS.
 * Compile sobre un conjunto común de lenguajes, marcos y herramientas que son estables, completos y fáciles de usar.
 
-## <a name="creating-a-new-blazor-project"></a>Creación de un nuevo proyecto de Blazor
+## <a name="creating-a-new-blazor-server-project"></a>Creación de un proyecto de Blazor
 
 1. En la **ventana de inicio**, seleccione **Nuevo** para crear un nuevo proyecto:
 
@@ -48,9 +50,9 @@ Visual Studio para Mac (a partir de la versión 8.4) incluye compatibilidad con 
 
 ## <a name="blazor-support-in-visual-studio-for-mac"></a>Compatibilidad con Blazor en Visual Studio para Mac
 
-Visual Studio para Mac (a partir de la versión 8.4) incluye nuevas características que le ayudarán a crear nuevos proyectos de servidor Blazor. Además, le proporciona el soporte técnico Standard que cabría esperar, como la compilación, ejecución y depuración de proyectos de Blazor. 
+Visual Studio para Mac (a partir de la versión 8.4) incluye nuevas características que le ayudarán a crear nuevos proyectos de servidor Blazor. Además, le proporciona el soporte técnico Standard que cabría esperar, como la compilación, ejecución y depuración de proyectos de Blazor. En Visual Studio para Mac 8.6, se agregó compatibilidad con la creación, compilación y ejecución de proyectos de WebAssembly de Blazor.
 
-En el tutorial anterior, vimos cómo le ayuda la plantilla de proyecto Aplicación de servidor Blazor a crear un nuevo proyecto de aplicación de servidor Blazor. Echemos un vistazo a algunas de las características adicionales de Visual Studio para Mac para admitir el desarrollo de proyectos de servidor Blazor.
+En el tutorial anterior, vimos cómo le ayuda la plantilla de proyecto Aplicación de servidor Blazor a crear un nuevo proyecto de aplicación de servidor Blazor. Veamos algunas de las características adicionales de Visual Studio para Mac que admiten el desarrollo de proyectos de Blazor.
 
 ### <a name="editor-support-for-razor-files"></a>Compatibilidad del editor con archivos *.razor*
 Visual Studio para Mac incluye compatibilidad con la edición de archivos .razor (la mayoría de los archivos que usará al crear aplicaciones Blazor). La versión de Windows y la de Mac del entorno de desarrollo integrado comparten el mismo editor de archivos .razor. Verá la compatibilidad total de uso de colores y finalización con sus archivos .razor, incluidas las finalizaciones de los componentes Razor declarados en el proyecto.

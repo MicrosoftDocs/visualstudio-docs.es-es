@@ -2,7 +2,7 @@
 title: Novedades de Visual Studio 2019
 titleSuffix: ''
 description: Obtenga más información sobre las nuevas características de Visual Studio 2019.
-ms.date: 03/16/2020
+ms.date: 05/20/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,27 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bf251ade250a466cefe02db6f5cc709a0c18837b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6321e840941958fb2618a551a0212d6dc797cfb
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79437745"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183384"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
-**Actualizado para la [versión 16.5](/visualstudio/releases/2019/release-notes/)**
+**Actualizado para la [versión 16.6](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Descargar Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
-Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si usa Visual Studio por primera vez o si ya lo ha usado durante años, esta nueva versión le gustará mucho.
+Visual Studio cambia constantemente para satisfacer las demandas de los desarrolladores. En el siguiente vídeo de la biblioteca de **[Microsoft Build](https://mybuild.microsoft.com/)** , acompáñenos en un recorrido por algunas de las [nuevas características](/visualstudio/releases/2019/release-notes/) y eche un [vistazo](/visualstudio/releases/2019/release-notes-preview/) a lo que vendrá: <br><br>*Duración del vídeo: 44,58 minutos*
 
-Este es un resumen de alto nivel de todas las novedades:
+> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
+
+Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cualquier desarrollador, aplicación y plataforma. Independientemente de si usa Visual Studio por primera vez o si ya lo ha usado durante años, nuestra última versión le gustará mucho.
+
+Este es un completo resumen general de todas las novedades:
 
 * **[Desarrollo](#develop)** : concéntrese y mantenga su productividad con mejor rendimiento, la limpieza instantánea del código y mejores resultados de la búsqueda.
 * **[Colaboración](#collaborate)** : disfrute de una colaboración natural mediante un flujo de trabajo con "prioridad de Git", la edición y depuración en tiempo real y las revisiones de código directamente en Visual Studio.

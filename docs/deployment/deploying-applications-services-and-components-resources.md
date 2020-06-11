@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300856"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173737"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Introducción a la implementación en Visual Studio
 
@@ -26,26 +26,26 @@ Al implementar una aplicación, servicio o componente, se distribuye para su ins
 
 La mayoría de los tipos comunes de aplicaciones se pueden implementar directamente desde el Explorador de soluciones de Visual Studio. Para un paseo rápido por esta funcionalidad, vea [Primer vistazo a la implementación](../deployment/deploying-applications-services-and-components.md).
 
-![Elección de una opción de publicación](../deployment/media/quickstart-publish-azure.png)
+![Elección de una opción de publicación](../deployment/media/quickstart-publish-dialog.png)
 
 ## <a name="what-publishing-options-are-right-for-me"></a>¿Qué opciones de publicación son las adecuadas para mí?
 
 Desde Visual Studio, las aplicaciones pueden publicarse directamente en los destinos siguientes:
 
-- [Azure App Service](#azure-app-service)
-- [Azure Virtual Machines](#azure-virtual-machines)
-- [Sistema de archivos](#file-system)
-- [Destinos personalizados (IIS, FTP, etc.)](#custom-targets-iis-ftp), que incluye todos los servidores web arbitrarios.
+- [Azure](#azure)
+- [Container Registry para Docker](#docker-container-registry)
+- [Carpeta](#folder)
+- [Destinos personalizados (IIS, FTP)](#Custom targets (IIS, FTP))
 
 En la pestaña **Publicar**, puede seleccionar un perfil de publicación existente, importar uno existente o crear uno nuevo con las opciones que se describen aquí. Para ver las opciones de publicación en el IDE para tipos diferentes de aplicaciones, consulte [Inicio rápido: Busque primero en la implementación en Visual Studio](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="azure-app-service"></a>Azure App Service
+## <a name="azure"></a>Azure 
 
-[Azure App Service](/azure/app-service/app-service-web-overview) y [App Service en Linux](/azure/app-service/containers/app-service-linux-intro) ayudan a los desarrolladores a crear rápidamente una serie de aplicaciones y servicios web escalables sin mantener la infraestructura.
+### <a name="azure-app-service"></a>Azure App Service
+
+[Azure App Service](/azure/app-service/app-service-web-overview) que ayuda a los desarrolladores a crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura. Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure, pero es usted quien administra esas máquinas virtuales. A cada aplicación web de una instancia de App Service se le asigna una dirección URL única \*.azurewebsites.net; todos los planes de tarifa menos el gratuito permiten asignar nombres de dominio personalizados al sitio.
 
 El usuario determina la potencia de computación de una instancia de App Service al elegir un [plan de tarifa](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para la instancia de App Service que la contiene. Puede hacer que varias aplicaciones web (y otros tipos de aplicaciones) compartan la misma instancia de App Service sin cambiar el plan de tarifa. Por ejemplo, puede hospedar aplicaciones web de desarrollo, almacenamiento provisional y producción en la misma instancia de App Service.
-
-Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure, pero es usted quien administra esas máquinas virtuales. A cada aplicación web de una instancia de App Service se le asigna una dirección URL única \*.azurewebsites.net; todos los planes de tarifa menos el gratuito permiten asignar nombres de dominio personalizados al sitio.
 
 ### <a name="when-to-choose-azure-app-service"></a>Cuándo optar por Azure App Service
 
@@ -58,7 +58,7 @@ Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure,
 
 Para obtener más información sobre la publicación en App Service, vea [Publicar una aplicación web en Azure App Service mediante Visual Studio](quickstart-deploy-to-azure.md) y [Publicar una aplicación ASP.NET Core en App Service en Linux mediante Visual Studio](quickstart-deploy-to-linux.md).
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
 [Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) le permite crear y administrar cualquier cantidad de recursos informáticos en la nube. Al asumir la responsabilidad de todo el software y las actualizaciones de las máquinas virtuales, puede personalizarlas todo lo que quiera según necesite la aplicación. Puede tener acceso a las máquinas virtuales directamente mediante Escritorio remoto, y cada una mantendrá su dirección IP asignada durante el tiempo que se quiera.
 
@@ -75,7 +75,15 @@ Para obtener información adicional, vea la [comparación detallada](https://azu
 
 > Si quiere usar Azure Virtual Machines en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="file-system"></a>Sistema de archivos
+## <a name="docker-container-registry"></a>Container Registry para Docker
+
+Si la aplicación usa Docker, puede publicar la aplicación en contenedores en una instancia de Container Registry para Docker.
+
+### <a name="when-to-choose-docker-container-registry"></a>Cuándo elegir Container Registry para Docker
+
+- Quiere implementar una aplicación en contenedores.
+
+## <a name="folder"></a>Carpeta
 
 Implementar en el sistema de archivos significa simplemente copiar los archivos de la aplicación en una carpeta determinada del equipo. A menudo esto se usa con fines de prueba, o para implementar la aplicación para que la use un número limitado de usuarios si el equipo también ejecuta un servidor. Si la carpeta de destino se comparte en una red, la implementación en el sistema de archivos puede hacer que los archivos de la aplicación web estén disponibles para otros usuarios que, a su vez, podrán implementarla después en servidores específicos.
 

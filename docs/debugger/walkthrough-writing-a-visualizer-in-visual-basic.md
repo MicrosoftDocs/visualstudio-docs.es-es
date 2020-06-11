@@ -1,7 +1,7 @@
 ---
 title: Escritura de un visualizador en Visual Basic | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542612"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180550"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Tutorial: Escritura un visualizador en Visual Basic
+
 En este tutorial se muestra cómo escribir un visualizador sencillo utilizando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El visualizador que creará en este tutorial muestra el contenido de una cadena mediante un cuadro de mensaje de formularios Windows Forms. Este sencillo visualizador de cadenas es un ejemplo básico que muestra cómo se pueden crear visualizadores para otros tipos de datos más aplicables a sus proyectos.
 
 > [!NOTE]
@@ -138,7 +139,9 @@ El código del visualizador debe colocarse en un archivo DLL que leerá el depur
 ## <a name="add-the-necessary-attribute"></a>Agregar el atributo necesario
  Ése es el fin del código del depurador. Sin embargo, hay un paso más que realizar: el atributo que indica al lado depurado qué colección de clases incluye el visualizador.
 
-### <a name="to-add-the-debugee-side-code"></a>Para agregar el código que está siendo depurado
+### <a name="to-add-the-type-to-visualize-for-the-debuggee-side-code"></a>Para agregar el tipo que se va a visualizar en el código del lado depurado
+
+En el código del depurador, especifique el tipo que se va a visualizar (el origen del objeto) en el lado depurado con el atributo <xref:System.Diagnostics.DebuggerVisualizerAttribute>. La propiedad `Target` establece el tipo que se va a visualizar.
 
 1. Agregue el código de atributo siguiente a DebuggerSide.vb, después de las instrucciones `Imports`, pero antes de `namespace MyFirstVisualizer`:
 

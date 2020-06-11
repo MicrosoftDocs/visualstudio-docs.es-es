@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71127929"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84173709"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publique una aplicación web en un sitio web mediante Visual Studio
 
@@ -24,7 +24,7 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Si tiene que publicar una aplicación de escritorio de Windows en un recurso compartido de archivos de red, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Si tiene que publicar una aplicación de escritorio de Windows en un recurso compartido de archivos de red, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Publicar en un sitio web
 
@@ -34,23 +34,19 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Seleccione **Crear nuevo perfil**.
 
-1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **IIS, FTP, etc.**
+1. En el cuadro de diálogo **Publicar**, elija **Servidor web (IIS)** .
 
-    ![Elección de IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "Elección de IIS, FTP, etc.")
+    ![Elección del destino de publicación](../deployment/media/quickstart-publish-iis.png "Elección de IIS, FTP, etc.")
 
-1. Seleccione **Publicar**. Se abre el cuadro de diálogo de configuración de perfil de publicación.
+1. Elija **Web Deploy** como método de implementación. Web Deploy simplifica la implementación de aplicaciones web y sitios web en servidores IIS y debe instalarse como una aplicación en el servidor. Use el [Instalador de plataformaweb](https://www.microsoft.com/web/downloads/platform.aspx) para instalarlo.
 
-    ![Elección de carpeta](../deployment/media/quickstart-publish-settings-web.png "Elección de carpeta")
+    ![Elección del método de implementación](../deployment/media/quickstart-publish-iis-web-deploy.png "Elección de IIS, FTP, etc.")
 
-1. En el campo **Método de publicación**, elija un método como **Web Deploy** o **FTP**. La configuración que se ve a continuación corresponde al método de publicación. Web Deploy simplifica la implementación de aplicaciones web y sitios web en servidores IIS y debe instalarse como una aplicación en el servidor. Use el [Instalador de plataformaweb](https://www.microsoft.com/web/downloads/platform.aspx) para instalarlo.
+1. Configure las opciones necesarias del método de publicación y seleccione **Finalizar**. 
 
-1. Configure las opciones necesarias del método de publicación y seleccione **Validar conexión**. Si el servidor o el destino está disponible y la configuración es correcta, aparece un mensaje que indica que la conexión se ha validado y ya está listo para publicar.
+    ![Detalles de la conexión Web Deploy](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
-    ![Validación de la conexión](../deployment/media/quickstart-publish-web-deploy.png "Validación de la conexión")
-
-1. Seleccione **Configuración** para configurar otras opciones de implementación, como si se va a implementar una configuración de depuración o versión y seleccione **Guardar**. Si está depurando de forma remota, se requiere una configuración de depuración.
-
-1. Para publicar, seleccione **Publicar**. La ventana de salida muestra el progreso y los resultados de la implementación.
+1. Para publicar, seleccione **Publicar** en la página de resumen. La ventana de salida muestra el progreso y los resultados de la implementación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

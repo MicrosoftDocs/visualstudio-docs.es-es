@@ -7,18 +7,19 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: 4196d8bcf256a624f34ae0b66e11f536e3c2c2ec
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232606"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84180238"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
 
-> [!NOTE]
-> En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y una de Visual Studio Professional, ambas asociadas al mismo identificador de inicio de sesión, las descargas que se muestran son las incluidas en la suscripción a Enterprise, aun cuando esté viendo las ventajas de su suscripción a Professional.
+En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Enterprise y una de Visual Studio Professional, ambas asociadas al mismo identificador de inicio de sesión, las descargas que se muestran son las incluidas en la suscripción a Enterprise, aun cuando esté viendo las ventajas de su suscripción a Professional.  
+
+Si su suscripción proviene de su empresa o centro educativo, el administrador de la suscripción controla si tiene acceso a las descargas. Al deshabilitar el acceso a las descargas también se deshabilita el acceso a las claves de producto. Si no tiene acceso a las descargas y a las claves de producto y las necesita, [póngase en contacto con el administrador](contact-my-admin.md).
 
 > [!NOTE]
 > Tenemos constancia de un problema relacionado con la disponibilidad de claves de producto de Office 365.  Estamos investigando la causa y, una vez resuelto el problema, se actualizará este artículo. 

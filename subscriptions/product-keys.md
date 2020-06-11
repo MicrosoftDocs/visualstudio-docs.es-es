@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
-ms.openlocfilehash: 138b85d151aff5ecded4e8a69595518d05f12e7b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232226"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183930"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -21,6 +21,9 @@ Las suscripciones de Visual Studio dan acceso a una amplia gama de productos de 
 Por lo general, las suscripciones de Visual Studio incluyen cinco claves de producto relativas a las versiones actuales de Windows y los productos de Office, además de tres claves de versiones anteriores.
 
 La mayoría de las claves de producto permiten también varias activaciones del producto por cada clave.  Muchos productos se pueden instalar y usar sin activación durante 30 días o más.  Para la mayoría de los suscriptores, esto proporciona activaciones suficientes como para satisfacer sus necesidades.  Sin embargo, si ha agotado las activaciones disponibles para un producto, puede solicitar más claves a través del [servicio al cliente de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+
+> [!NOTE]
+> Si su suscripción proviene de su empresa o centro educativo, el administrador de la suscripción controla si tiene acceso a las descargas de software.  Si el acceso a las descargas para su suscripción está deshabilitado, también lo estará el acceso a las claves de producto.  Si necesita descargas o claves de producto, [póngase en contacto con el administrador](contact-my-admin.md).
 
 ## <a name="activating-a-product"></a>Activación de un producto
 Se requiere activación para ciertos productos.  En las suscripciones de Visual Studio, esto suele limitarse a aplicaciones cliente Windows, Windows Server, Microsoft Office y Expression Studio. Cuando se requiere activación, muchos productos (incluidos Windows y Office) permiten instalar y usar el producto sin activación durante 30 días o más. Si reemplaza copias de sus equipos con frecuencia (por lo menos, una vez cada 30 días), considere la posibilidad de NO activar el producto. Las claves de producto proporcionadas como parte de su suscripción de Visual Studio no permiten activaciones ilimitadas de un producto.
@@ -37,7 +40,7 @@ Microsoft se compromete a proteger la integridad del programa de suscripciones a
 
 El límite de reclamaciones de claves diario es de 10 para todas las suscripciones de Visual Studio, así como las que se ofrecen a través de MPN, BizSpark, MCT Software & Services y MCT, con la excepción de Visual Studio Professional (MPN), que tiene un límite de siete reclamaciones de claves diario.
 
-Nota: Los límites de reclamación de claves están sujetos a cambio. Puede consultar los límites más actualizados aquí mismo.
+Nota: Los límites de reclamación de claves están sujetos a cambios. Puede consultar los límites más actualizados aquí mismo.
 
 Si reclamó la cantidad máxima de claves disponible para su suscripción dentro de un período de 24 horas, verá un mensaje de error en el que se le indica que alcanzó su límite. El límite se restablece cada 24 horas y comienza a las 12:01 a.m. hora del Pacífico.
 
@@ -62,8 +65,8 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 |    Tipo de clave           |    Descripción                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    No aplicable                    |    No se requiere clave para instalar este producto.                                                       |
-|    Minoristas                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
+|    No es aplicable                    |    No se requiere clave para instalar este producto.                                                       |
+|    Venta directa                     |    Las claves comerciales permiten varias activaciones y se usan para compilaciones minoristas del producto. En muchos casos se permiten 10 activaciones por clave, aunque a menudo se permiten más en el mismo equipo.                                                       |
 |    Activación múltiple        |    Una clave de activación múltiple (MAK) le permite activar varias instalaciones de un producto con la misma clave. Por lo general, las MAK se usan con versiones de productos para licencias por volumen. Normalmente, se proporciona una sola clave MAK por suscripción.    |
 |    Clave de activación estática    |    Las claves de activación estática se proporcionan para los productos que no necesitan activación. Se pueden usar para un número variado de instalaciones.                                                                                                                  |
 |    Clave personalizada                 |    Las claves personalizadas proporcionan acciones o información especial para activar o instalar el producto.                                                                                                                                                                |
@@ -76,7 +79,7 @@ Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
 Puede reclamar una clave en la página de descarga del producto, o bien buscar la clave que necesita en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

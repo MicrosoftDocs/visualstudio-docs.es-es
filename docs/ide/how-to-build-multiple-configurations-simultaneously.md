@@ -1,6 +1,6 @@
 ---
-title: Procedimiento Compilación de varias configuraciones simultáneamente
-ms.date: 11/04/2016
+title: Procedimiento Compilación de varias configuraciones
+ms.date: 05/13/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
@@ -9,20 +9,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b6d6a3b4f9110f85ff42e8b9dcf6dd531c3802e2
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77904092"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183553"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedimiento Compilación de varias configuraciones simultáneamente
+# <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>Procedimiento Compilación de varias configuraciones en una única solicitud de compilación
 
-Puede compilar la mayoría de los tipos de proyectos con varias o incluso todas sus configuraciones de compilación al mismo tiempo usando el cuadro de diálogo **Compilación por lotes**. Sin embargo, no puede compilar los siguientes tipos de proyectos en varias configuraciones de compilación al mismo tiempo:
+Puede compilar la mayoría de los tipos de proyectos con varias o incluso todas sus configuraciones de compilación con una acción de IDE mediante el cuadro de diálogo **Compilación por lotes**. Sin embargo, no puede compilar los siguientes tipos de proyectos en varias configuraciones de compilación al mismo tiempo:
 
 1. Aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] compiladas para Windows mediante JavaScript.
 
 2. Todos los proyectos de Visual Basic.
+
+3. Proyectos de CMake.
 
 Si una solución contiene cualquier proyecto de estos dos tipos de proyecto, **Compilación por lotes** no está disponible para esa solución. En ese caso, el comando no aparece en el menú **Compilar**.
 

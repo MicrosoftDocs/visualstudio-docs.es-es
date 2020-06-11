@@ -3,15 +3,15 @@ title: Herramientas de contenedor de Visual Studio con ASP.NET Core y React.js
 author: ghogen
 description: Obtenga información sobre cómo usar las herramientas de contenedor de Visual Studio y Docker para Windows
 ms.author: ghogen
-ms.date: 10/16/2019
+ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 47bcdd4de4ffd938d6b9aed5a166a863873f526b
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255553"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84182798"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -72,16 +72,16 @@ El siguiente paso es diferente en función de si usa contenedores de Linux o con
 
 Se agrega al proyecto un *Dockerfile*, la receta para crear una imagen de Docker final. Vea [Dockerfile reference (Referencia de Dockerfile)](https://docs.docker.com/engine/reference/builder/) para obtener una descripción de los comandos que contiene.
 
-Abra el archivo *Dockerfile* en el proyecto y agregue las líneas siguientes para instalar Node.js 10.x en el contenedor. Asegúrese de agregar estas líneas en la primera sección, para agregar la instalación del administrador de paquetes de Node *npm.exe* a la imagen base que se usa en los pasos posteriores.
+Abra el archivo *Dockerfile* en el proyecto y agregue las líneas siguientes para instalar Node.js 10.x en el contenedor. Asegúrese de agregar estas dos líneas en la primera sección, para agregar la instalación del administrador de paquetes de Node *npm.exe* a la imagen base, así como a la sección `build`.
 
-```
+```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 ```
 
 El archivo *Dockerfile* debería tener ahora un aspecto similar al siguiente:
 
-```
+```Dockerfile
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80 
@@ -90,6 +90,8 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
 FROM microsoft/dotnet:2.2-sdk-stretch AS build
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
 WORKDIR /src
 COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
 RUN dotnet restore "WebApplication37/WebApplication37.csproj"
@@ -123,7 +125,7 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
    1. Agregue ``# escape=` `` a la primera línea de Dockerfile
    1. Agregue las líneas siguientes delante de `FROM … base`
 
-      ```
+      ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
@@ -133,17 +135,19 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
 
    1. Agregue la línea siguiente delante y después de `FROM … build`
 
-      ```
+      ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
    1. El archivo Dockerfile completo debería tener ahora un aspecto similar al siguiente:
 
-      ```
+      ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      RUN mkdir -p C:\nodejsfolder
+      WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `

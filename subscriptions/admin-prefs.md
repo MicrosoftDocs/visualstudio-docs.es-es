@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: cbcf532620e958ca408d43295d2d4200d12ee0cd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508763"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183501"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -50,7 +50,7 @@ Esta preferencia proporciona un método para que los suscriptores se pongan en c
 Esta preferencia le permite decidir si los administradores pueden agregar suscriptores de fuera del directorio o del inquilino de la organización.  Si se desactiva, no se permitirán los suscriptores externos.  Si se habilita y un administrador intenta agregar un suscriptor externo, se le pedirá que confirme la elección y se le permitirá asignar la suscripción. Los administradores no pueden invalidar esta configuración. 
 
 ### <a name="default-downloads-setting"></a>Configuración de descargas predeterminadas
-Si se habilita esta opción, que está activada de forma predeterminada, los suscriptores tendrán acceso a las descargas cuando los administradores creen suscripciones.  Aun así, los administradores pueden deshabilitar las descargas por suscripción.  
+Si se habilita esta opción, que está activada de forma predeterminada, los suscriptores tendrán acceso a las descargas cuando los administradores creen suscripciones.  Aun así, los administradores pueden deshabilitar las descargas por suscripción.  Al deshabilitar el acceso a las descargas también se deshabilita el acceso a las claves de producto.  
 
 ### <a name="default-subscription-level"></a>Nivel de suscripción predeterminado
 Puede usar esta opción para determinar cuál de los niveles de suscripción incluidos en el contrato se selecciona de forma predeterminada cuando se asigna una suscripción a un usuario.  Los administradores pueden cambiar la configuración a cualquier nivel de suscripción en el contrato; esto solo evita tener que seleccionar repetidamente la elección más frecuente. 

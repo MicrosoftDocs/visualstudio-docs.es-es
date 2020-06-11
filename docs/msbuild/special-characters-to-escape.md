@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632256"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184047"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiales de escape
 
@@ -31,16 +31,16 @@ Los caracteres especiales deben ser de escape únicamente si tienen un significa
 
  A continuación se enumera la lista completa de los caracteres especiales de escape:
 
-|Carácter|Descripción|
-|---------------|-----------------|
-|%|Signo de porcentaje, utilizado para hacer referencia a metadatos.|
-|$|Signo de dólar, utilizado para hacer referencia a propiedades.|
-|@|Arroba, utilizada para hacer referencia a listas de elementos.|
-|(|Paréntesis de apertura, utilizado en listas.|
-|)|Paréntesis de cierre, utilizado en listas.|
-|;|Punto y coma, utilizado como separador de lista.|
-|?|Signo de interrogación, utilizado como carácter comodín para describir una especificación de archivo en la sección Include/Exclude de un elemento.|
-|*|Asterisco, utilizado como carácter comodín para describir una especificación de archivo en la sección Include/Exclude de un elemento.|
+|Carácter|Codificación ASCII|Descripción|
+|---------|----------|-----------|
+|%|%25|Signo de porcentaje, utilizado para hacer referencia a metadatos.|
+|$|%24|Signo de dólar, utilizado para hacer referencia a propiedades.|
+|@|%40|Arroba, utilizada para hacer referencia a listas de elementos.|
+|(|% 28|Paréntesis de apertura, utilizado en listas.|
+|)|% 29|Paréntesis de cierre, utilizado en listas.|
+|;|%3B|Punto y coma, utilizado como separador de lista.|
+|?|%3F|Signo de interrogación, utilizado como carácter comodín para describir una especificación de archivo en la sección Include/Exclude de un elemento.|
+|* |%2A|Asterisco, utilizado como carácter comodín para describir una especificación de archivo en la sección Include/Exclude de un elemento.|
 
 > [!NOTE]
 > En algunos escenarios, puede que tenga que escapar caracteres de comillas dobles ("), como cuando se usan dentro de una tarea `Exec`.

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "78215430"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183293"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 

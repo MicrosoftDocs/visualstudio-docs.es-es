@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263141"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184281"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo de proyecto de MSBuild desde cero
 
@@ -25,11 +25,11 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 
  Este tutorial muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. El tutorial sigue estos pasos:
 
-1. Crear un archivo de código fuente de aplicación mínima.
+1. Ampliar la variable de entorno PATH.
 
-2. Crear un archivo del proyecto de MSBuild mínimo.
+2. Crear un archivo de código fuente de aplicación mínima.
 
-3. Extender la variable de entorno PATH para incluir MSBuild.
+3. Crear un archivo del proyecto de MSBuild mínimo.
 
 4. Compilar la aplicación utilizando el archivo del proyecto.
 
@@ -45,7 +45,11 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 
 Este tutorial muestra la forma de compilar el proyecto en el símbolo del sistema y examinar los resultados. Para obtener más información sobre MSBuild y cómo ejecutar MSBuild en el símbolo del sistema, vea [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-Para completar el tutorial, debe tener instalado .NET Framework (versión 2.0, 3.5, 4.0, 4.5 o posterior) porque incluye MSBuild y el compilador de Visual C#, que son necesarios para el tutorial.
+Para completar el tutorial, debe tener instalado Visual Studio porque incluye MSBuild y el compilador de Visual C#, que son necesarios para el tutorial.
+
+## <a name="extend-the-path"></a>Ampliación de la ruta de acceso
+
+Para poder tener acceso a MSBuild, debe ampliar la variable de entorno PATH para incluir todas las herramientas necesarias. Puede usar el **Símbolo del sistema para desarrolladores de Visual Studio**. Búsquelo en Windows 10 mediante el cuadro de búsqueda de la barra de tareas de Windows. Para configurar el entorno en un símbolo del sistema normal o en un entorno de scripting, ejecute *VSDevCmd.bat* en la subcarpeta *Common7/Tools* de una instalación de Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Creación de una aplicación mínima
 
@@ -154,16 +158,6 @@ Las tareas en el destino Build se ejecutan secuencialmente. En este caso, la tar
 > ```xml
 > <Compile Include="*.cs" />
 > ```
-
-## <a name="extend-the-path-to-include-msbuild"></a>Extensión de la ruta de acceso para incluir MSBuild
-
-Antes de poder tener acceso a MSBuild, debe extender la variable de entorno PATH para incluir la carpeta .NET Framework.
-
-A partir de Visual Studio 2013, puede encontrar *MSBuild.exe* en la carpeta de MSBuild ( *%ProgramFiles%\MSBuild* en un sistema operativo de 32 bits o en *%ProgramFiles(x86)%\MSBuild* en uno de 64 bits).
-
-En el símbolo del sistema, escriba **set PATH=%PATH%;%ProgramFiles%\MSBuild** o **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.
-
-Como alternativa, si tiene instalado Visual Studio, puede usar el **Símbolo del sistema para desarrolladores de Visual Studio**, que tiene una ruta de acceso que incluye la carpeta *MSBuild*.
 
 ## <a name="build-the-application"></a>Compilar la aplicación
 

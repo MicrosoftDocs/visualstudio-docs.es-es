@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3355636eba7556a472d8ce272437fb07c30714be
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128206"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184187"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implementar una aplicación en una carpeta local con Visual Studio
 
@@ -24,7 +24,7 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Si tiene que publicar una aplicación de escritorio de Windows en una carpeta local, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y la CLI, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Si tiene que publicar una aplicación de escritorio de Windows en una carpeta local, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Implementar en una carpeta local
 
@@ -32,19 +32,19 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
     ![Comando Publicar en el menú contextual del proyecto del Explorador de soluciones](../deployment/media/quickstart-publish.png "Elección de Publicar")
 
-1. Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Seleccione **Crear nuevo perfil**.
+1. En el cuadro de diálogo **Publicar**, seleccione **Carpeta**.
 
-1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **Carpeta**.
+    ![Selección de una carpeta como destino de publicación](../deployment/media/quickstart-publish-folder.png "Elección de carpeta")
 
-    ![Selección de la carpeta local como destino de publicación](../deployment/media/quickstart-publish-folder.png "Elección de carpeta")
+1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta.
 
-1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta local.
+    ![Especificación de la ruta de acceso a la carpeta](../deployment/media/quickstart-publish-folder-path.png "Elección de carpeta")
 
 1. Seleccione **Publicar**. Visual Studio compila el proyecto y lo publica en la carpeta especificada. Aparece el panel de propiedades del proyecto **Publicar**, que muestra un resumen de perfil.
 
     ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Para configurar las opciones de implementación, seleccione **Configurar** en el resumen de perfil y luego la pestaña **Configuración**.
+1. Para configurar las opciones de implementación, seleccione **Editar** en el resumen de perfil y elija la pestaña **Configuración**.
 
     ![Configuración del perfil](../deployment/media/quickstart-profile-settings.png "Configuración del perfil")
 

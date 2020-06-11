@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867aac31f1515136e3aa9f0a6f171ec425d90cf7
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472797"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183683"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -115,6 +115,7 @@ Hay tres atributos disponibles para el elemento Code:
    |`VB`|Identifica un fragmento de código de Visual Basic.|
    |`CSharp`|Identifica un fragmento de código de C#.|
    |`CPP`|Identifica un fragmento de código de C++.|
+   |`XAML`|Identifica un fragmento de código XAML.|
    |`XML`|Identifica un fragmento de código XML.|
    |`JavaScript`|Identifica un fragmento de código JavaScript.|
    |`TypeScript`|Identifica un fragmento de código TypeScript.|

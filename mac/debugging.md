@@ -3,15 +3,15 @@ title: Depuración con Visual Studio para Mac
 description: La depuración es una parte común y necesaria de la programación. Como IDE consolidado, Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se explica cómo usar todo el potencial de depuración de Visual Studio para Mac, desde la depuración segura a la visualización de datos.
 author: therealjohn
 ms.author: johmil
-ms.date: 12/13/2019
+ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a81eb9bbae905599cc5d953f27ac3a8d06441f8b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75397905"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183993"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Depuración con Visual Studio para Mac
 
@@ -43,7 +43,7 @@ Puede ver todos los puntos de interrupción que se establecieron en el código e
 
 ![Lista de puntos de interrupción](media/debugging-image0a.png)
 
-## <a name="start-debugging"></a>Iniciar la depuración
+## <a name="start-debugging"></a>Iniciar depuración
 
 Para iniciar la depuración, seleccione el explorador, dispositivo o simulador/emulador de destino:
 
@@ -87,6 +87,15 @@ Estos son los cuatro botones:
 * **Depurar paso a paso con instrucciones**: también ejecuta la siguiente línea de código. Si la siguiente línea es una llamada de función, Depurar paso a paso con instrucciones se detendrá en la primera línea de la función, lo que le permitirá continuar con la depuración línea por línea de la función. Si la línea siguiente no es una función, se comportará igual Paso a paso por procedimientos.
 * **Paso a paso para salir**: vuelve a la línea en la que se ha llamado a la función actual.
 
+## <a name="change-which-statement-is-executed-next"></a>Cambio de la instrucción que se ejecuta a continuación
+
+Cuando el depurador está pausado, hay una flecha en el margen que indica qué línea de código se ejecutará a continuación. Puede hacer clic en la flecha y arrastrarla a otra línea de código para cambiar qué instrucción se ejecutará. Puede conseguir lo mismo haciendo clic con el botón derecho en una línea de código y seleccionando **Establecer instrucción siguiente** en el menú contextual.
+
+![Arrastre y colocación de la flecha para establecer la instrucción siguiente](media/debugger-drag-setnextstatement.gif)
+
+> [!CAUTION]
+> El cambio de la línea de ejecución actual puede producir un comportamiento inesperado en una aplicación. También hay algunas condiciones en las que no es posible cambiar la siguiente instrucción que se va a ejecutar. Por ejemplo, si se arrastra la flecha de un método a otro, no funcionará. En estos casos no admitidos, Visual Studio para Mac mostrará un cuadro de diálogo que le indicará que no es posible cambiar la línea de ejecución actual. 
+
 ## <a name="debugging-monos-class-libraries"></a>Depuración de bibliotecas de clases de Mono
 
 Los productos de Xamarin se distribuyen con el código fuente de las bibliotecas de clases de Mono, que se puede usar para ver cómo funcionan las cosas con el depurador.
@@ -97,6 +106,6 @@ Para habilitar esta característica, vaya a **Visual Studio para Mac > Preferen
 
 ![Opción Depuración paso a paso por instrucciones del código externo](media/debugging-image8.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Depuración en Visual Studio (en Windows)](/visualstudio/debugger/)

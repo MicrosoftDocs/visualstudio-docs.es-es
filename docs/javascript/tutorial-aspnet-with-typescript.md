@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e212aec6d2d3aa7e20cb0ca08c9ea604f32bb08c
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988556"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183098"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -95,11 +95,9 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
    > [!NOTE]
    > Este tutorial requiere el paquete NuGet. Como alternativa, en sus propias aplicaciones, es posible que desee usar el [paquete npm de TypeScript](https://www.npmjs.com/package/typescript).
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nueva carpeta**. Use el nombre *scripts* para la nueva carpeta.
+1. Haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento**. Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar**.
 
-1. Haga clic con el botón derecho en la carpeta *scripts* y elija **Agregar > Nuevo elemento**. Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar**.
-
-   Visual Studio agrega el archivo *tsconfig.json* a la carpeta *scripts*. Puede usar este archivo para [configurar opciones](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para el compilador de TypeScript.
+   Visual Studio agrega el archivo *tsconfig.json* a la raíz del proyecto. Puede usar este archivo para [configurar opciones](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para el compilador de TypeScript.
 
 1. Abra *tsconfig.json* y reemplace el código predeterminado por el siguiente código:
 
@@ -111,18 +109,19 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
        "removeComments": false,
        "sourceMap": true,
        "target": "es5",
-       "outDir": "../wwwroot/js"
+       "outDir": "wwwroot/js"
      },
-     "exclude": [
-       "node_modules",
-       "wwwroot"
+     "include": [
+       "scripts/**/*"
      ]
    }
    ```
 
-   La opción *outDir* especifica la carpeta de salida para los archivos de JavaScript del plan que transpila el compilador de TypeScript.
+   La opción *outDir* especifica la carpeta de salida para los archivos JavaScript sin formato que el compilador de TypeScript transpila.
 
-   Esta configuración proporciona una introducción básica al uso de TypeScript. En otros escenarios, por ejemplo, al usar [gulp o webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), es posible que desee una ubicación intermedia diferente para los archivos de JavaScript transpilados, dependiendo de sus herramientas y preferencias de configuración, en lugar de *../wwwroot/js*.
+   Esta configuración proporciona una introducción básica al uso de TypeScript. En otros escenarios, por ejemplo, cuando se usa [gulp o webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html), es posible que quiera una ubicación intermedia diferente para los archivos de JavaScript transpilados, según sus herramientas y preferencias de configuración, en lugar de *wwwroot/js*.
+
+1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nueva carpeta**. Use el nombre *scripts* para la nueva carpeta.
 
 1. Haga clic con el botón derecho en la carpeta *scripts* y elija **Agregar > Nuevo elemento**. Elija el **archivo TypeScript**, escriba el nombre *app.ts* para el nombre de archivo y, a continuación, haga clic en **Agregar**.
 
@@ -163,7 +162,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 
     Seleccione `lastName` para volver a agregar el último nombre al código.
 
-1. Abra la carpeta *Views/Home* y, a continuación, abra *index.html*.
+1. Abra la carpeta *Views/Home* y luego *index.html*.
 
 1. Agregue el siguiente código HTML al final del archivo.
 
@@ -176,7 +175,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
     </div>
     ```
 
-1. Abra la carpeta *Views/Shared* y, a continuación, abra *_Layout.cshtml*.
+1. Abra la carpeta *Views/Shared* y luego *_Layout.cshtml*.
 
 1. Agregue la siguiente referencia de script antes de la llamada a `@RenderSection("Scripts", required: false)`:
 

@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb23d34fab92fe0056f9bd82b9d9c63967dc4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094567"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183072"
 ---
 # <a name="zipdirectory-task"></a>Tarea ZipDirectory
 
@@ -43,7 +43,7 @@ Crea un archivo *.zip* desde el contenido de un directorio.
 |Parámetro|Descripción|
 |---------------|-----------------|
 |`DestinationFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido<br /><br /> La ruta de acceso completa al archivo *.zip* que se va a crear.|
-|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, omite el archivo de destino; se sobrescribirá si existe. Tiene como valor predeterminado `false`.|
+|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se sobrescribirá el archivo de destino si existe. Tiene como valor predeterminado `false`.|
 |`SourceDirectory`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el directorio desde el que crear un archivo *.zip*.|
 
 ## <a name="remarks"></a>Comentarios

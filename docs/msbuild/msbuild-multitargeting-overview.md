@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af7649a75fbf3ded0cf5d09e9063b49f4fcab1b2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633335"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84183527"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Introducción a la compatibilidad con múltiples versiones (multi-targeting) de MSBuild
 
@@ -36,7 +36,7 @@ Con MSBuild, puede compilar una aplicación para que se ejecute en cualquiera de
 
 ## <a name="target-framework-and-platform"></a>Marco y plataforma de destino
 
- Una *plataforma de destino* es la versión de .NET Framework para la que se compila un proyecto, y una *plataforma de destino* es la plataforma del sistema para la que se compila el proyecto.  Por ejemplo, puede que desee diseñar una aplicación de .NET Framework 2.0 para que se ejecute en una plataforma de 32 bits compatible con la familia de procesadores 802x86 (x86). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*. Para obtener más información, vea [Versión de .NET Framework de destino y plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Una *plataforma de destino* es la versión de .NET Framework para la que se compila un proyecto, y una *plataforma de destino* es la plataforma del sistema para la que se compila el proyecto.  Por ejemplo, tal vez prefiera diseñar una aplicación de .NET Framework 2.0 que se ejecute en una plataforma de 32 bits compatible con la familia de procesadores 80x86 (x86). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*. Para obtener más información, vea [Versión de .NET Framework de destino y plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Conjunto de herramientas (ToolsVersion)
 

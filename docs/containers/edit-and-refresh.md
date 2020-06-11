@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c73adff20ea253ac854d99b90c4161a963343e29
+ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916519"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84184814"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Depurar aplicaciones en un contenedor de Docker local
 
@@ -44,7 +44,7 @@ Para ejecutar contenedores de Docker de forma local, se necesita un cliente de D
 
 Los contenedores de Docker están disponibles para proyectos de .NET Framework y .NET Core. Veamos dos ejemplos. En primer lugar, vemos una aplicación web de .NET Core. Luego vemos una aplicación de consola de .NET Framework.
 
-## <a name="create-a-web-app"></a>Crear una aplicación web
+## <a name="create-a-web-app"></a>Creación de una aplicación web
 
 Si tiene un proyecto y ha agregado la compatibilidad con Docker, tal como se describe en la [introducción](overview.md), omita esta sección.
 
@@ -78,6 +78,16 @@ Para iterar cambios rápidamente, puede iniciar la aplicación en un contenedor.
     #endif
     
         // code omitted for brevity
+    }
+    ```
+
+    Modifique el método `Startup` de la manera siguiente:
+
+    ```csharp
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
+    {
+        Configuration = configuration;
+        Env = webHostEnvironment;
     }
     ```
 
