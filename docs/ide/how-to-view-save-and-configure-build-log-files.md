@@ -2,19 +2,19 @@
 title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472778"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283910"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
 
@@ -63,7 +63,7 @@ También puede generar registros mediante la ejecución directa de MSBuild desde
      Para obtener más información, vea [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) y <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *\<NombreDelProyecto>.txt*.txt (solo para proyectos de C++).
+    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *\<ProjectName>.txt* (solo para proyectos de C++).
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Uso de registros binarios para facilitar la exploración de archivos de registro de gran tamaño
 

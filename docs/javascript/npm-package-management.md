@@ -3,7 +3,7 @@ title: Administrar paquetes de npm
 description: Visual Studio ayuda a administrar paquetes mediante el administrador de paquetes de Node.js (npm)
 ms.custom: seodec18
 ms.date: 04/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0b4b699c01522878d83e59aadb2c6a54e9d7517f
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760168"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285054"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Administrar paquetes de npm en Visual Studio
 

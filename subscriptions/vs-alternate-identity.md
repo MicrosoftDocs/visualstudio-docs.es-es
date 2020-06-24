@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Cómo agregar una identidad alternativa a la suscripción de Visual Studio para usar Azure DevOps y Azure
-ms.openlocfilehash: ff5166da3cb782c0750b0ce61fdafec375811ff4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232011"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289383"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 Cuando activa una suscripción de Visual Studio, vinculamos la identidad (o inicio de sesión) que ha usado durante la activación con la suscripción de Visual Studio. De esta manera, podremos reconocerle en el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), en Azure DevOps y en Azure.
@@ -27,7 +27,7 @@ En el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.m
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Agregar una cuenta alternativa a la suscripción
 La adición de una cuenta alternativa a la suscripción de Visual Studio permite acceder a las ventajas de la suscripción, como Azure DevOps y Azure, con una identidad diferente a la que se asigna la suscripción. En el pasado, esta funcionalidad solo estaba disponible si la suscripción de Visual Studio (VS) se había asignado a una cuenta Microsoft (MSA). Se ha ampliado esta funcionalidad para cuentas profesionales o educativas de Azure Active Directory (Azure AD).
 
-No proporciona una copia de suscripción a la otra cuenta; simplemente ofrece la posibilidad de acceder a las dos ventajas con la cuenta alternativa.
+Esto no proporciona una copia de la suscripción a la otra cuenta; simplemente ofrece la posibilidad de acceder a las dos ventajas con la cuenta alternativa.
 
 En todas las suscripciones puede agregar una "cuenta profesional o educativa" para usarla con las ventajas que requieren un inicio de sesión (IDE de VS, Azure DevOps y Azure).
 
@@ -40,8 +40,6 @@ En todas las suscripciones puede agregar una "cuenta profesional o educativa" pa
     > ![Agregar cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Use su cuenta profesional o educativa para iniciar sesión en Azure DevOps (https://{suCuenta}.visualstudio.com).
-    > [!div class="mx-imgBorder"]
-    > ![Usar la cuenta profesional o educativa](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 La cuenta alternativa se agrega a la suscripción de Visual Studio, lo que permite que ambas identidades usen las ventajas de la suscripción que requieren que inicie sesión con la cuenta alternativa (IDE, Azure DevOps y Azure).
 

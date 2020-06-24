@@ -1,7 +1,7 @@
 ---
 title: Adición de conjuntos de contadores personalizados para pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - counters, counter sets
 - counter sets
@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7438f657af2ba40fbda5afefbd8a12cc56a2a4c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e2b78cb68f1e7a7e1f47c6cc3e771353d7e46ca9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114868"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288434"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 

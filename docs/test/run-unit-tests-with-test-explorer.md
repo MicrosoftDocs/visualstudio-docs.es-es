@@ -2,7 +2,7 @@
 title: Ejecución y depuración de pruebas unitarias con el Explorador de pruebas
 description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción, depurar las pruebas y usar métodos abreviados de pruebas.
 ms.date: 07/29/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 429892e3022854cac157605117f955fd672f8997
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182929"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285639"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 

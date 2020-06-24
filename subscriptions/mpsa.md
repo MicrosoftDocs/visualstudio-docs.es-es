@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-ms.openlocfilehash: e59929404febda5a07ba13f7dc230ab89e09addf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232203"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289357"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 Si ha comprado suscripciones de Visual Studio a través del programa MPSA, debe tener en cuenta algunos aspectos antes de poder convertirse en un administrador de suscripciones de Visual Studio y asignar las suscripciones a los usuarios. Si ya lo han configurado como administrador, puede ir directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).
@@ -45,7 +45,7 @@ Una vez que se hayan cumplido los criterios anteriores, puede seguir los pasos q
 5. Haga clic en **Asociar dominio**.
 
 Tras realizar la asociación, todos los usuarios que cumplan los criterios necesarios normalmente constarán como administradores de suscripciones de Visual Studio al cabo de pocos minutos. Sin embargo, en ocasiones este proceso puede tardar hasta 24 horas. Cuando finalice, podrá tener acceso al Portal de administración de suscripciones de Visual Studio. Si el proceso tarda más de 24 horas, siga estos pasos para ponerse en contacto con el Equipo de Soporte Técnico de MPSA:
-1. Conéctese a https://www.microsoft.com/licensing/mpsa/default.
+1. Conéctese a <https://www.microsoft.com/licensing/mpsa/default>.
 2. Haga clic en el menú **Más** en la parte superior de la página. 
 3. Seleccione **Soporte técnico**.
 4. Seleccione **Soporte técnico de licencias**.

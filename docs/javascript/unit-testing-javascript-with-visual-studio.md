@@ -2,7 +2,7 @@
 title: Pruebas unitarias de JavaScript y TypeScript
 description: Visual Studio admite las pruebas unitarias de código de JavaScript y TypeScript mediante Herramientas de Node.js para Visual Studio
 ms.date: 06/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4e3e0b1c1579614454580d2f5446b31c718d7f35
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183111"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289006"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 

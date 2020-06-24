@@ -1,7 +1,7 @@
 ---
 title: Especificación del número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 446da348c1a947e6c59b8ad60d9bd0799d0d4322
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b022c747235f131f530df62e49c7204a97ce0872
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588946"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287485"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Cómo: Especificar el número de iteraciones de prueba del parámetro de ejecución de una prueba de carga
 

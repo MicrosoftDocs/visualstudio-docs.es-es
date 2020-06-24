@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f188b40938c62ae8c3692f096217618f9cb7ff6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183748"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286328"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Tutorial: Escritura de un visualizador en C\#
 
@@ -235,6 +235,8 @@ En el código del depurador, especifique el tipo que se va a visualizar (el orig
 
    Si desea utilizar el visualizador en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en lugar de simplemente llamarlo desde el instrumento de prueba, tendrá que instalarlo. Para obtener más información, vea [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Creación de un visualizador mediante la plantilla de elemento Visualizador
 
 Hasta ahora, en este tutorial se ha mostrado cómo crear manualmente un visualizador. Esto se realizó como un ejercicio de aprendizaje. Ahora que sabe cómo funciona un visualizador sencillo, existe una manera más fácil de crear uno: mediante la plantilla de elementos del visualizador.
@@ -268,6 +270,7 @@ En primer lugar, debe crear un nuevo proyecto de biblioteca de clases.
 5. Haga clic en **Agregar**.
 
    Eso es todo lo que tiene que hacer. Examine el archivo SecondVisualizer.cs y observe el código que la plantilla ha agregado por usted. Continúe y experimente con el código. Ahora que conoce los fundamentos, ya puede crear visualizadores más complejos y útiles.
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

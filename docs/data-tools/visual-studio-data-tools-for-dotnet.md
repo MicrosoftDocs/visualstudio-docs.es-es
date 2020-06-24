@@ -1,7 +1,7 @@
 ---
 title: Data Tools para .NET
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586047"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281076"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools para .NET
 
@@ -42,6 +42,6 @@ El flujo de trabajo típico es el siguiente:
 
 Puede omitir el paso 3 y programar una aplicación .NET para emitir comandos directamente a una base de datos, en lugar de usar un modelo. En este caso, encontrará la documentación pertinente aquí: [ADO.NET](/dotnet/framework/data/adonet/index). Tenga en cuenta que todavía puede usar el Asistente para la **configuración de orígenes de datos** y los diseñadores para generar código de enlace de datos al rellenar sus propios objetos en la memoria y, a continuación, enlazar los controles de IU de datos a esos objetos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -5,13 +5,13 @@ description: Información general del proceso de compilación en las herramienta
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
-ms.topic: conceptual
-ms.openlocfilehash: 1b23d918621d79756fd77a1dd9b98009b2769ed3
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.topic: reference
+ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189496"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283208"
 ---
 # <a name="container-tools-build-properties"></a>Propiedades de compilación de las herramientas de contenedor
 

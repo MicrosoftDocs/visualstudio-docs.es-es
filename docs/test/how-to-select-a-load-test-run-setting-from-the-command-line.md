@@ -1,7 +1,7 @@
 ---
 title: Establecimiento de parámetros de ejecución de pruebas de carga desde la línea de comandos
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 79f1cc833278a62e2871cdc725f5993b12bcdb60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588998"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287563"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Cómo: Seleccionar los parámetros de ejecución de una prueba de carga que se va a usar desde la línea de comandos
 

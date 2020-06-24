@@ -3,7 +3,7 @@ title: Creación de una aplicación Vue.js mediante Node.js
 description: Puede crear aplicaciones de Node.js en Visual Studio mediante el marco de Vue.js
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: edf5307984b4efc00a7c83c84fe5cb87954a93dd
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744923"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285171"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Crear una aplicación Vue.js con Herramientas de Node.js para Visual Studio
 

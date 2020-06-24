@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7ae4e0f865b35787663313277eb4df37169b72b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406349"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286068"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referencia de migración y actualización de proyectos para Visual Studio
 
@@ -106,7 +106,8 @@ Consulte los artículos siguientes para obtener más información:
 
 ## <a name="see-also"></a>Vea también
 
-[Referencia de migración y actualización de proyectos para Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Referencia de migración y actualización de proyectos para Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
 
@@ -114,7 +115,7 @@ Consulte los artículos siguientes para obtener más información:
 
 Cada nueva versión de Visual Studio suele admitir la mayoría de los tipos anteriores de proyectos, archivos y otros recursos. Puede trabajar con ellos [como siempre ha hecho](../ide/solutions-and-projects-in-visual-studio.md), siempre y cuando no dependa de las características más recientes.
 
-Intentamos mantener la compatibilidad con versiones anteriores, como Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. Sin embargo, la compatibilidad con algunos tipos de proyecto cambia con el tiempo. Es posible que una versión más reciente de Visual Studio no admita ciertos proyectos o que requiera la actualización de un proyecto de forma que ya no sea compatible con versiones anteriores. 
+Intentamos mantener la compatibilidad con versiones anteriores, como Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. Sin embargo, la compatibilidad con algunos tipos de proyecto cambia con el tiempo. Es posible que una versión más reciente de Visual Studio no admita ciertos proyectos o que requiera la actualización de un proyecto de forma que ya no sea compatible con versiones anteriores.
 
 > [!NOTE]
 > Para obtener información actualizada sobre los problemas de migración, consulte [la comunidad para desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Y para obtener más información sobre qué características son específicas de la versión de Visual Studio, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes/).
@@ -182,7 +183,7 @@ A veces, la versión más reciente de Visual Studio puede abrir un proyecto, pe
 
 El equipo de ingeniería que posee el tipo de proyecto examina estos criterios y toma la decisión en cuanto al soporte técnico, la compatibilidad y la migración. De nuevo, intentamos mantener una compatibilidad transparente entre las versiones de Visual Studio, de modo que cuando cree y modifique proyectos en una versión de Visual Studio, funcionen en otras versiones.
 
-A veces, no es posible la compatibilidad. Después, Visual Studio abre el asistente para actualización para realizar los cambios unidireccionales necesarios. Estos cambios unidireccionales pueden implicar el cambio de la propiedad `ToolsVersion` en el archivo de proyecto. Esta propiedad indica exactamente qué versión de MSBuild puede convertir el código fuente del proyecto en los artefactos ejecutables e implementables deseados. 
+A veces, no es posible la compatibilidad. Después, Visual Studio abre el asistente para actualización para realizar los cambios unidireccionales necesarios. Estos cambios unidireccionales pueden implicar el cambio de la propiedad `ToolsVersion` en el archivo de proyecto. Esta propiedad indica exactamente qué versión de MSBuild puede convertir el código fuente del proyecto en los artefactos ejecutables e implementables deseados.
 
 Lo que hace que un proyecto no sea compatible con versiones anteriores de Visual Studio no es la versión de *Visual Studio*, sino la versión de *MSBuild*, tal como determina `ToolsVersion`. Si la versión de Visual Studio contiene la cadena de herramientas de MSBuild que coincide con la propiedad `ToolsVersion` de un proyecto, Visual Studio puede invocar esa cadena de herramientas para compilar el proyecto.
 
@@ -199,6 +200,7 @@ Consulte los artículos siguientes para obtener más información:
 
 ## <a name="see-also"></a>Vea también
 
-[Referencia de migración y actualización de proyectos para Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Referencia de migración y actualización de proyectos para Visual Studio 2017](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
+- [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

@@ -1,7 +1,7 @@
 ---
 title: Creación de un informe de rendimiento de la prueba de carga con Microsoft Word
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113442"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287602"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 

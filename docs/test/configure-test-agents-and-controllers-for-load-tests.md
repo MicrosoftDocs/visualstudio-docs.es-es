@@ -1,18 +1,18 @@
 ---
 title: Configuración de agentes y controladores de pruebas para pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, test agents and controllers
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8fa44ffd75cd64f3ce745524ecdcf6ccb7b9a9b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597352"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288811"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Información general sobre agentes y controladores de pruebas para ejecutar pruebas de carga
 

@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los asociados pueden administrar las suscripciones a Visual Studio para los clientes.
-ms.openlocfilehash: 7d62025c5e8198a11c013b4ba4adf32a3d09c2dc
-ms.sourcegitcommit: 1b7412f1a5b039b2b294c6001013f399ea7aa5bc
+ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82564217"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289032"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Administración por parte de los asociados de suscripciones en nombre de los clientes
 Para administrar suscripciones en el [portal de administración de suscripciones](https://manage.visualstudio.com) de Visual Studio, los partners deben seguir una serie de pasos. 
@@ -30,7 +30,7 @@ Se aplica a los asociados que ya tienen acceso al [Portal de administración de 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAG]
 
 Pasos para que los asociados agreguen una nueva licencia:
-- Inicie sesión en https://manage.visualstudio.com.
+- Inicie sesión en <https://manage.visualstudio.com>.
 - Seleccione la lista desplegable del contrato y desplácese hasta el final, donde verá una opción **New Open License** (Nueva Open License).
 - En el panel emergente, escriba el número de autorización, el número de licencia, la dirección de correo electrónico del cliente indicada en el contrato, active la casilla y haga clic en **Enviar**.
 
@@ -52,7 +52,7 @@ Se aplica a los nuevos asociados que realizan pedidos de Open License, pero que 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuevos asociados que visitan directamente el Portal de administración de suscripciones de Visual Studio
 Este escenario se aplica a los nuevos asociados que ya han realizado nuevos pedidos de Open License, pero que aún no se han registrado en [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y van directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).  Siga estos pasos:
-- Visite https://manage.visualstudio.com.
+- Visite <https://manage.visualstudio.com>.
 - Ha recibido un error que indica que no es un usuario reconocido.
 - Seleccione la opción de registro **OLP Partners** (Socios de OLP) y escriba el número de autorización, el número de licencia y la dirección de correo electrónico de cliente usada en el pedido, active la casilla y hacer clic en **Enviar**.
 

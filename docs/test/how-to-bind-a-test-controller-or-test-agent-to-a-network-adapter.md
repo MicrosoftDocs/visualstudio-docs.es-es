@@ -1,7 +1,7 @@
 ---
 title: Enlace un controlador de pruebas o un agente de pruebas a un adaptador de red
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - controllers, netwrok adapter
 - agents, configuring
@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594791"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288259"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -55,7 +55,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      `net stop vsttcontroller`
 
-3. Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
+3. Abra el archivo de configuración XML *QTCcontroller.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. busque la etiqueta `<appSettings>`.
 
@@ -101,7 +101,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      **net stop vsttagent**
 
-3. Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
+3. Abra el archivo de configuración XML *QTAgentService.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4. busque la etiqueta `<appSettings>`.
 

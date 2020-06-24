@@ -1,7 +1,7 @@
 ---
 title: Codificación de una regla de extracción personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - extraction rules
 - Web performance tests, creating custom extraction rules
@@ -13,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591182"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288889"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar una regla de extracción personalizada para una prueba de rendimiento web
 

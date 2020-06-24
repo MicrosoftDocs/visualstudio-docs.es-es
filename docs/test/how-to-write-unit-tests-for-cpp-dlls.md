@@ -1,18 +1,18 @@
 ---
 title: Escritura de pruebas unitarias para archivos DLL de C++
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 856bc21fdee8945ddcd97e3978f46af0008af616
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279273"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287043"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
@@ -38,7 +38,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
 ## <a name="create-the-tests"></a>Crear las pruebas
 
-### <a name="staticLink"></a> Para cambiar la DLL a una biblioteca estática
+### <a name="to-change-the-dll-to-a-static-library"></a><a name="staticLink"></a> Para cambiar la DLL a una biblioteca estática
 
 - Si las pruebas deben usar miembros que el proyecto DLL no ha exportado y el proyecto se compila como una biblioteca dinámica, considere convertirla en una biblioteca estática.
 
@@ -50,7 +50,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
   Continúe con el procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
 
-### <a name="projectRef"></a> Para hacer referencia a funciones de DLL exportadas del proyecto de prueba
+### <a name="to-reference-exported-dll-functions-from-the-test-project"></a><a name="projectRef"></a> Para hacer referencia a funciones de DLL exportadas del proyecto de prueba
 
 - Si un proyecto DLL exporta funciones que quiere probar, puede agregar una referencia al proyecto de código desde el proyecto de prueba.
 
@@ -82,7 +82,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
   Vaya a [Escribir las pruebas unitarias](#addTests).
 
-### <a name="objectRef"></a> Para vincular las pruebas a los archivos de biblioteca u objeto
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Para vincular las pruebas a los archivos de biblioteca u objeto
 
 - Si la DLL no exporta las funciones que quiere probar, puede agregar el archivo de salida *.obj* o *.lib* a las dependencias del proyecto de prueba.
 
@@ -116,7 +116,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
   Vaya a [Escribir las pruebas unitarias](#addTests).
 
-### <a name="sameProject"></a> Para agregar pruebas unitarias en el mismo proyecto
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> Para agregar pruebas unitarias en el mismo proyecto
 
 1. Modifique las propiedades del proyecto de código del producto para incluir los encabezados y los archivos de biblioteca que se requieren para pruebas unitarias.
 
@@ -137,7 +137,7 @@ Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sam
 
    Vaya a [Escribir las pruebas unitarias](#addTests).
 
-## <a name="addTests"></a> Escribir las pruebas unitarias
+## <a name="write-the-unit-tests"></a><a name="addTests"></a> Escribir las pruebas unitarias
 
 1. En cada archivo de código de prueba unitaria, agregue un fragmento `#include` para los encabezados de proyecto en pruebas.
 

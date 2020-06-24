@@ -1,19 +1,19 @@
 ---
 title: Configuración de un agente de pruebas
 ms.date: 09/18/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc00598595ee3e3d958562682900bde9aad2a353
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880187"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287537"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedimiento Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
 

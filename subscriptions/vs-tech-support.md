@@ -7,18 +7,18 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
-ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
+ms.openlocfilehash: cad820977df6351f665944a878b6dcebd1c12a38
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80301942"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289435"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 La ventaja de soporte técnico en suscripciones de Visual Studio sirve para resolver problemas break-fix en **entornos de no producción** para productos que siguen en la fase de soporte técnico general del [ciclo de vida de soporte](https://support.microsoft.com/lifecycle/search). Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos, con validez de un año a partir de la activación de la ventaja. La activación de la ventaja debe producirse mientras la suscripción está activa.
 
 > [!NOTE]
-> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a https://visualstudio.microsoft.com/vs/pricing/ para examinar las diferentes opciones de compra de suscripciones de Visual Studio.
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a <https://visualstudio.microsoft.com/vs/pricing/> para examinar las diferentes opciones de compra de suscripciones de Visual Studio.
 
 > [!NOTE]
 > No todas las suscripciones de un nivel determinado son aptas para recibir los incidentes de soporte técnico. Las suscripciones que se adquieren a través de FTE, NFR, MPN, MCT y otros programas no reciben incidentes de soporte técnico. Si su suscripción no es apta para recibir incidentes de soporte técnico, el icono Soporte técnico no aparecerá en las ventajas disponibles.
@@ -33,7 +33,7 @@ Los productos que no son de desarrollador (como SQL, Windows o SharePoint) desca
 Descripciones de nivel de producto: Expanda **Planes de soporte técnico no disponibles**. Si ve **Support plan cannot be used for support on the specified product (Code: 8)** (No se puede usar el plan de soporte para soporte técnico en el producto especificado; código: 8), su contrato de soporte técnico no puede utilizarse con la versión de producto que ha seleccionado.
 
 ## <a name="how-to-activate-the-benefit"></a>Cómo activar la ventaja
-1. Vaya a https://my.visualstudio.com/Benefits, baje hasta la sección de soporte técnico y haga clic en **Chat para activar** en el icono de soporte técnico.
+1. Vaya a <https://my.visualstudio.com/Benefits>, baje hasta la sección de soporte técnico y haga clic en **Chat para activar** en el icono de soporte técnico.
     > [!div class="mx-imgBorder"]
     > ![Icono de la ventaja de soporte técnico](_img/vs-tech-support/vs-tech-support-tile.png)
 2. De esta manera se inicia una sesión de chat con un representante que puede crear el **identificador de contrato** y el **identificador de acceso** y proporcionárselos a través del correo electrónico para que los tenga en sus registros.

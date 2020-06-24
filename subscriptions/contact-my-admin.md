@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
-ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 117bdb82c878e498862dd967615fde9d6ba632eb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232632"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289110"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
 Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escuela, lo más probable es que se la haya asignado un administrador de suscripciones.  Los administradores pueden asignar o eliminar suscripciones, cambiar las direcciones de correo electrónico de inicio de sesión, determinar si puede descargar software y realizar otras funciones relacionadas con la suscripción.
@@ -20,7 +20,7 @@ Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escue
 Dados el tamaño y la complejidad de muchas organizaciones, es posible que desconozca quién es el administrador, por lo que tal vez le resulte difícil saber dónde obtener ayuda.  Hemos agregado una nueva característica al portal de suscriptor para ayudarle a ponerse en contacto con el administrador.   
 
 ## <a name="how-to-contact-your-admin"></a>Cómo ponerse en contacto con el administrador
-1. Inicie sesión en el portal de suscriptor en https://my.visualstudio.com.
+1. Inicie sesión en el portal de suscriptor en <https://my.visualstudio.com>.
 2. Haga clic en la pestaña **Suscripciones**. 
 3. Haga clic en el botón **Contact my Admin** (Contacto con el administrador) en la parte superior derecha. 
    > [!div class="mx-imgBorder"]

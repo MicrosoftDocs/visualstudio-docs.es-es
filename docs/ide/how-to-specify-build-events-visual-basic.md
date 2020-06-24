@@ -1,8 +1,8 @@
 ---
-title: 'Cómo: Especificar eventos de compilación (Visual Basic)'
+title: Procedimiento Especificación de eventos de compilación (Visual Basic)
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115109"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283975"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Cómo: Especificar eventos de compilación (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
 
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.
 
@@ -116,7 +116,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
    End Sub
    ```
 
-   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<NombreDelProyecto>.publish*). El segundo es la nueva versión del sistema operativo.
+   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<ProjectName>.publish*). El segundo es la nueva versión del sistema operativo.
 
 5. En el menú **Compilar** , haga clic en **Compilar solución**.
 

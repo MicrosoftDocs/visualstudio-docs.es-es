@@ -1,7 +1,7 @@
 ---
 title: Información general sobre aplicaciones de datos con n capas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - presentation tier
 - middle tier
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586385"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281960"
 ---
 # <a name="n-tier-data-applications-overview"></a>Introducción a las aplicaciones de datos de n niveles
 Las aplicaciones *de datos con N niveles* son aplicaciones de datos que se dividen en varios *niveles*. Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor. Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.
@@ -31,7 +31,7 @@ Visual Studio contiene varias características que ayudan a los programadores a 
 
 - Las [herramientas de LINQ to SQL de Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporcionan valores para generar las clases DataContext y Data en espacios de nombres independientes. Con ello se habilita la separación lógica del acceso a datos y los niveles de entidad de datos.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) proporciona el método de <xref:System.Data.Linq.Table%601.Attach%2A> que permite reunir el DataContext de distintos niveles de una aplicación. Para obtener más información, vea [aplicaciones de N niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) proporciona el <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir el DataContext de distintos niveles de una aplicación. Para obtener más información, vea [aplicaciones de N niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Nivel de presentación
 El *nivel de presentación* es el nivel en el que los usuarios interactúan con una aplicación. Normalmente, contiene también la lógica adicional de la aplicación. Los componentes típicos del nivel de presentación son los siguientes:
@@ -57,7 +57,7 @@ El *nivel intermedio* es la capa que el nivel de presentación y la capa de dato
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.
 
-![componentes de nivel intermedio](../data-tools/media/ntiermid.png) nivel intermedio
+![Nivel intermedio de componentes de nivel intermedio ](../data-tools/media/ntiermid.png)
 
 El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.
 
@@ -66,7 +66,7 @@ Básicamente, el *nivel de datos* es el servidor que almacena los datos de una a
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.
 
-![componentes de capa de datos](../data-tools/media/ntierdatatier.png) capa de datos
+![Capa de datos de componentes de capa de datos ](../data-tools/media/ntierdatatier.png)
 
 No se puede obtener acceso a la capa de datos directamente desde el cliente en el nivel de presentación. En su lugar, el componente de acceso a datos en el nivel intermedio se utiliza para la comunicación entre las capas de datos y la presentación.
 
@@ -75,13 +75,13 @@ En los temas siguientes se ofrece información sobre cómo trabajar con aplicaci
 
 [Separar conjuntos de datos y TableAdapters en proyectos diferentes](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[Tutorial: crear una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[Aplicaciones de n niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[Aplicaciones de N niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Tutorial: crear una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Herramientas de conjunto de herramientas en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

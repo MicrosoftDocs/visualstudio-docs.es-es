@@ -1,18 +1,18 @@
 ---
 title: Establecer una propiedad única de automatización para controles UWP para pruebas
 ms.date: 05/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 51e16dcaa48a08ae97bc80be1d33163c6f3af875
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 62409dc4aac8f640c7b58b112f7f86215ba2043b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590454"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286718"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Establecer una propiedad única de automatización para controles UWP para pruebas
 

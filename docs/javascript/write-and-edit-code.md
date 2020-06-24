@@ -2,7 +2,7 @@
 title: Introducción a la edición para desarrolladores de JavaScript
 description: En esta introducción al editor de código de Visual Studio se describen algunas de las formas en que Visual Studio hace que escribir y comprender el código JavaScript (así como desplazarse por él) sea más fácil.
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62840853"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289097"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 

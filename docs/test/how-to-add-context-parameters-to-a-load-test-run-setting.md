@@ -1,7 +1,7 @@
 ---
 title: Adición de parámetros de contexto a los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584483"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288421"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Cómo: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga
 

@@ -3,16 +3,16 @@ title: Registros de contenedores de Docker, variables de entorno y acceso al sis
 description: Describe cómo mejorar la capacidad de depurar y diagnosticar las aplicaciones basadas en contenedores en Visual Studio mediante una ventana de herramientas para ver lo que está ocurriendo dentro de los contenedores que hospedan la aplicación.
 author: ghogen
 ms.author: ghogen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027305"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283130"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visualización y diagnóstico de contenedores e imágenes en Visual Studio
 

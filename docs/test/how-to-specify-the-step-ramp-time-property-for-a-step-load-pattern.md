@@ -1,19 +1,19 @@
 ---
 title: Tiempo de rampa de paso de un modelo de carga de pasos para pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588920"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287329"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Cómo: Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
 

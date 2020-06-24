@@ -1,7 +1,7 @@
 ---
 title: Personalización de menús y barras de herramientas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306828"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284404"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Personalización de menús y barras de herramientas en Visual Studio
 
@@ -81,7 +81,7 @@ Puede personalizar Visual Studio no solo mediante la adición y la eliminación 
         > [!NOTE]
         > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="customizing_menu">Personalizar un menú o una barra de herramientas</a>
+## <a name=""></a><a name="customizing_menu">Personalizar un menú o una barra de herramientas</a>
 
 1. En la barra de menús, elija **Herramientas** > **Personalizar**.
 

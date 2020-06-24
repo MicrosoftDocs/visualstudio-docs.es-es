@@ -1,7 +1,7 @@
 ---
 title: Más información sobre cómo probar el código con Live Unit Test
 ms.date: 04/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2abc8eaaca923435620148d7313c6cc422bd1870
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697342"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287017"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introducción a Live Unit Testing
 

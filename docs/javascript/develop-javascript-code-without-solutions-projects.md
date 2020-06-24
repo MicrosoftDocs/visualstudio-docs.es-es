@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio admite la creación de código sin una dependencia en un archivo de proyecto o de solución
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ae8b6fd52cd2469cf7562a199b952d388b463089
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 187ca5ea0d0232e0ca8b99165e77ee265b81e801
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549929"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285093"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desarrollar código de JavaScript y TypeScript en Visual Studio sin proyectos ni soluciones
 

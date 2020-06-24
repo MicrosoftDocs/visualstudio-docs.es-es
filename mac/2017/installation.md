@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 962ca0cf3960195ffabefb5a9bd2c6cc7e72590c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984912"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289422"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalación de Visual Studio 2017 para Mac
 
@@ -29,7 +29,7 @@ Para empezar a desarrollar aplicaciones multiplataforma nativas al descargar Vis
 
 Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
 
-- Un equipo Mac con macOS Sierra 10.12 o superior
+- Equipo Mac con macOS High Sierra 10.13 o una versión posterior.
 - Xcode 9.3 o una versión posterior. Por lo general, se recomienda usar la versión estable más reciente.
 - Un ID de Apple. Si aún no tiene un ID de Apple, puede crearlo en https://appleid.apple.com. Es necesario tener un ID de Apple para la instalación y el inicio de sesión en Xcode.
 
@@ -89,7 +89,7 @@ Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
 
 10. Una vez que la instalación sea correcta, puede empezar a desarrollar aplicaciones en Visual Studio si presiona **Iniciar**:
 
-    ![Abra Visual Studio.](media/installer-image11.png)
+    ![Apertura de Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 > Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), debe volver a ejecutar el [instalador](https://visualstudio.microsoft.com/vs/) si quiere agregar los componentes más adelante.
@@ -125,6 +125,6 @@ Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstu
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Instalación de Visual Studio 2017 (en Windows)](/visualstudio/install/install-visual-studio)

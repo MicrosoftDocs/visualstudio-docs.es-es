@@ -1,7 +1,7 @@
 ---
 title: Adición de contadores a conjuntos de contadores para pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - counters, counter sets
 - counter sets
@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594346"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288382"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 

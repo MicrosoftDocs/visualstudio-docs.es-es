@@ -1,7 +1,7 @@
 ---
 title: Almacenamiento del registro de errores de prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b47010a68520379afd8e0d969fa99169cb1ff0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaef2888cecc7622a3dc589a6bab816b0c134668
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588959"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287511"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas mediante el Editor de pruebas de carga
 

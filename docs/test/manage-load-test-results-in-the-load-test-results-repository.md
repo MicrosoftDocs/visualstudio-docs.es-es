@@ -1,7 +1,7 @@
 ---
 title: Administración de los resultados de pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, results repository
 - results, load test
@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd0562a6cceeb50d43222a7850de11d52b0587cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9945551469541cdcffe520844da600d758dc43b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584431"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286770"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga
 

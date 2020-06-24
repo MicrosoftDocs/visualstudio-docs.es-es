@@ -2,20 +2,20 @@
 title: Supresión de las advertencias del compilador para proyectos y paquetes NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b604f6a1392353d304897a233b74c0d81fc258df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114511"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283962"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 
 Puede despejar un registro de compilación mediante el filtrado de uno o varios tipos de advertencias del compilador. Por ejemplo, quizá quiera revisar solo parte de los resultados generados al establecer el nivel de detalle del registro de la compilación en **Normal**, **Detallado** o **Diagnóstico**. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -63,7 +63,7 @@ En este ejemplo se muestra cómo modificar el archivo *.vbproj* para suprimir ad
 
 1. En la barra de menús, elija **Proyecto** > **Descargar proyecto**.
 
-1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Editar \<NombreDelProyecto>.vbproj**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto haciendo clic con el botón derecho y, después, elija **Editar \<ProjectName>.vbproj**.
 
     El archivo del proyecto XML se abre en el editor de código.
 
@@ -132,6 +132,6 @@ En algunos casos, puede que desee suprimir las advertencias del compilador de Nu
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)
+- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md)
 - [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

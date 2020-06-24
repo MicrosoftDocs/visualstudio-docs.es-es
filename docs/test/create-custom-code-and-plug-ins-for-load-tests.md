@@ -1,7 +1,7 @@
 ---
 title: Crear código y complementos personalizados para las pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.dialog.recorderplugin
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c060dc9bd50c6dc49777e9114eadae4d6267d92
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590103"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288681"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Crear código y complementos personalizados para las pruebas de carga
 

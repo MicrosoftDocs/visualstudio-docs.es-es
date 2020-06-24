@@ -1,7 +1,7 @@
 ---
 title: Conversión de texto en mayúsculas o minúsculas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors, text case
 - text, case
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588725"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284638"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
 

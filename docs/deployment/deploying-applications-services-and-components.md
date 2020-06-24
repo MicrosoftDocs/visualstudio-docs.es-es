@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f10831ac398ef8fb48337436dd33253cfb32f26c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: ab0d62efb8abc3cfbae365312a009bc6d2efea43
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183007"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286366"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -58,7 +58,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
   Para usar la herramienta de **publicación**, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y seleccione **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). En el cuadro de diálogo Publicar, elija **App Service** o **Azure Virtual Machines** y luego siga los pasos de configuración.
 
-  ![Elegir Azure App Service](../deployment/media/quickstart-publish-azure.png "Elegir Azure App Service")
+  ![Elegir Azure App Service](../deployment/media/quickstart-publish-azure-new.png "Elegir Azure App Service")
 
   A partir de Visual Studio 2017 versión 15.7, puede implementar aplicaciones ASP.NET Core en **App Service para Linux**.
 
@@ -91,7 +91,7 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
 
 - **UWP**: puede empaquetar la aplicación e implementarla mediante elementos de menú. Para obtener más información, vea [Package a UWP app by using Visual Studio](/windows/uwp/packaging/packaging-uwp-apps) (Empaquetar una aplicación UWP mediante Visual Studio).
 
-    ![Crear un paquete de aplicación](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Crear un paquete de aplicación](../deployment/media/feature-tour-create-app-package.png)
 
 - **Escritorio de Windows**: puede implementar en Microsoft Store con Puente de dispositivo de escritorio a partir de Visual Studio 2017 versión 15.4. Para ello, empiece por crear un proyecto de paquete de aplicación de Windows. Para obtener más información, vea [Empaquetar una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 

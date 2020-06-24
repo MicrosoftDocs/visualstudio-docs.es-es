@@ -2,7 +2,7 @@
 title: 'Cómo: Especificar eventos de compilación (C#)'
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 134a5b7cd4bb0ffc9c00a41df12ed196dd2a9212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115126"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284001"
 ---
 # <a name="how-to-specify-build-events-c"></a>Cómo: Especificar eventos de compilación (C#)
 

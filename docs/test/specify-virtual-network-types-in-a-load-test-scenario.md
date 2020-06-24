@@ -1,7 +1,7 @@
 ---
 title: Especificar los tipos de red virtual en un escenario de prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c1d87e9681650cd22cc713788b42360ba3460bdc
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115297"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286601"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 

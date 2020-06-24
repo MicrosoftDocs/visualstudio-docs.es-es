@@ -1,7 +1,7 @@
 ---
 title: Conjuntos de contadores de la prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 224ac14a0d670648f8047a82a8abef0c2b7b2654
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113427"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287693"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores mediante el Editor de pruebas de carga
 
