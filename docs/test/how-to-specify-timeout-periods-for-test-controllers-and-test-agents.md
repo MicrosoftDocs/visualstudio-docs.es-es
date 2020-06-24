@@ -1,7 +1,7 @@
 ---
 title: Periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - agents, configuring
 - agetns, timeouts
@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594765"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287290"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 

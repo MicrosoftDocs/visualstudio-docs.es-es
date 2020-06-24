@@ -1,7 +1,7 @@
 ---
 title: para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - load test results graphs, adding counters
 - load test results graph
@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115176"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288473"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
