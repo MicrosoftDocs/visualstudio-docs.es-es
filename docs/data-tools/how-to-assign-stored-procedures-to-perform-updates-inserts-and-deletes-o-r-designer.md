@@ -1,29 +1,29 @@
 ---
 title: Usar procedimientos almacenados en LINQ to SQL para actualizar datos (Object Relational Designer)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586554"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282324"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento para asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
-Los procedimientos almacenados se pueden agregar a **Object Relational Designer** y ejecutar como métodos de <xref:System.Data.Linq.DataContext> normales. También se pueden usar para invalidar el comportamiento predeterminado en tiempo de ejecución LINQ to SQL que realiza inserciones, actualizaciones y eliminaciones cuando se guardan los cambios de las clases de entidad en una base de datos (por ejemplo, al llamar al método <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
+Los procedimientos almacenados se pueden agregar a **Object Relational Designer** y ejecutar como métodos de <xref:System.Data.Linq.DataContext> normales. También se pueden usar para invalidar el comportamiento predeterminado en tiempo de ejecución LINQ to SQL que realiza inserciones, actualizaciones y eliminaciones cuando se guardan los cambios de las clases de entidad en una base de datos (por ejemplo, al llamar al <xref:System.Data.Linq.DataContext.SubmitChanges%2A> método).
 
 > [!NOTE]
 > Si el procedimiento almacenado devuelve valores que se deben devolver al cliente (por ejemplo, los valores calculados en el procedimiento almacenado), cree parámetros de salida en los procedimientos almacenados. Si no puede usar parámetros de salida, escriba una implementación de método parcial en lugar de confiar en las invalidaciones generadas por Object Relational Designer. Los miembros asignados a los valores generados por la base de datos deben establecerse en valores adecuados después de que se ejecuten correctamente las operaciones de INSERCIÓN o ACTUALIZACIÓN. Para obtener más información, consulte [responsabilidades del Desarrollador en invalidar el comportamiento predeterminado](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL controla automáticamente los valores generados por la base de datos para las columnas IDENTITY (incremento automático), ROWGUIDCOL (GUID generado por la base de datos) y timestamp. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debe establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en **true** y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> a uno de los siguientes: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. alinserte](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync. ALUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL controla automáticamente los valores generados por la base de datos para las columnas IDENTITY (incremento automático), ROWGUIDCOL (GUID generado por la base de datos) y timestamp. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debe establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en **true** y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> en uno de los siguientes: [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. alinserte](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync. ALUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Configurar el comportamiento de actualización de una clase de entidad
 
@@ -51,7 +51,7 @@ De forma predeterminada, la lógica para actualizar una base de datos (insercion
 
 8. Seleccione el procedimiento almacenado que desee en la lista **Personalizar**.
 
-9. Examine la lista de **Argumentos de método** y **Propiedades de clase** para comprobar que los **Argumentos de método** se asignan a las **Propiedades de clase** adecuadas. Asigne los argumentos de método originales (`Original_<ArgumentName>`) a las propiedades originales (`<PropertyName> (Original)`) para los comandos `Update` y `Delete`.
+9. Examine la lista de **Argumentos de método** y **Propiedades de clase** para comprobar que los **Argumentos de método** se asignan a las **Propiedades de clase** adecuadas. Asigne los argumentos de método originales ( `Original_<ArgumentName>` ) a las propiedades originales ( `<PropertyName> (Original)` ) para `Update` los `Delete` comandos y.
 
     > [!NOTE]
     > De forma predeterminada, los argumentos de método se asignan a las propiedades de clase cuando los nombres coinciden. Si los nombres de propiedad modificados ya no coinciden entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el diseñador no puede determinar la asignación correcta.
@@ -65,7 +65,7 @@ Para revertir a la lógica predeterminada del motor en tiempo de ejecución para
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext (métodos)](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Operaciones de inserción, actualización y eliminación (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

@@ -1,7 +1,7 @@
 ---
 title: Enlazar controles a imágenes desde una base de datos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - images [Visual Basic], displaying on Windows Forms
 - data binding [Windows Forms], pictures
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587009"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282989"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Enlazar controles a imágenes desde una base de datos
 
@@ -39,7 +39,7 @@ El procedimiento siguiente supone que la ventana **Orígenes de datos** ya inclu
 2. En la ventana **Orígenes de datos**, expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
 
    > [!TIP]
-   > Si la **ventana orígenes de datos** no está abierta, ábrala seleccionando **Ver** > **otras ventanas** > **orígenes de datos**.
+   > Si la ventana **orígenes de datos** no está abierta, ábrala seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
 3. Seleccione la columna o propiedad que contiene los datos de la imagen y seleccione uno de los siguientes controles de la lista desplegable del control:
 

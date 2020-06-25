@@ -1,7 +1,7 @@
 ---
 title: Agregar código a TableAdapters en aplicaciones de n niveles
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113321"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283104"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Agregar código a TableAdapters en aplicaciones de n niveles
 Puede extender la funcionalidad de un TableAdapter si crea un archivo de clase parcial para el TableAdapter y le agrega código (en lugar de agregar código al archivo *DatasetName. DataSet. Designer* ). Las clases parciales permiten que el código de una clase específica se divida entre varios archivos físicos. Para obtener más información, vea [partial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -32,7 +32,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 > Cuando los conjuntos de datos se separan de los TableAdapters (estableciendo la propiedad **DataSet Project**), las clases de conjunto de datos parciales existentes no se trasladarán automáticamente. Las clases de conjunto de tipos parciales existentes deben moverse manualmente al proyecto de conjunto de DataSet.
 
 > [!NOTE]
-> El DataSet proporciona funcionalidad para generar <xref:System.Data.DataTable.ColumnChanging> y controladores de eventos de <xref:System.Data.DataTable.RowChanging> cuando se necesita validación. Para obtener más información, vea [agregar validación a un conjunto de datos de n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> El DataSet proporciona funcionalidad para generar <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> controladores de eventos y cuando se necesita validación. Para obtener más información, vea [agregar validación a un conjunto de datos de n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +48,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 
 4. Agregue código dentro de la declaración de clase parcial.
 
-5. En el ejemplo siguiente se muestra dónde agregar código al `CustomersTableAdapter` en el `NorthwindDataSet`:
+5. En el ejemplo siguiente se muestra dónde agregar código a `CustomersTableAdapter` en `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -67,7 +67,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Agregar código a conjuntos de datos en aplicaciones con n niveles](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Información general sobre la actualización jerárquica](hierarchical-update.md)

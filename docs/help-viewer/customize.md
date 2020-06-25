@@ -1,7 +1,7 @@
 ---
 title: Personalizar el Visor de Ayuda
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_options
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edcdee8ffe4c2b8a97f4ed65ae86f925db42b1c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825022"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284977"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.
@@ -43,7 +43,7 @@ El cuadro de diálogo **Opciones del Visor** se abre seleccionando el botón **O
 |Cambiar el tamaño de la fuente en la que aparece el texto|Elija un tamaño en la lista **Tamaño del texto**.|
 |Cambiar el número máximo de resultados de búsqueda que aparecen en la pestaña **Búsqueda**|Elija un valor en la lista **Número máximo de resultados de la búsqueda**.|
 |Cambiar el número máximo de entradas del historial que aparecen en la ventana **Favoritos**|Elija un valor en la lista **Número máximo de entradas del historial guardadas**.|
-|Incluya o excluya el contenido en inglés al ver el contenido de una versión de un producto que no sea en inglés.|Active o desactive la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1**. **Advertencia:**  Esta característica también controla si puede descargar contenido en inglés en la pestaña **Administrar contenido**.|
+|Incluya o excluya el contenido en inglés al ver el contenido de una versión de un producto que no sea en inglés.|Active o desactive la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1**. **Precaución**: Esta característica también controla si puede descargar contenido en inglés en la pestaña **Administrar contenido**.|
 
 ## <a name="see-also"></a>Vea también
 

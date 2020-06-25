@@ -1,7 +1,7 @@
 ---
 title: Uso del índice del Visor de ayuda
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f80b0d63bc7e7fdb89f69607e4529e18f26cc30
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825943"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284963"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Búsqueda de temas con el índice del visor de la Ayuda
 
@@ -45,7 +45,7 @@ En la pestaña **Índice**, realice cualquiera de las tareas siguientes:
 
 El uso del índice es un proceso sencillo; sin embargo, saber cómo escribir mejor las palabras claves puede aumentar la productividad de las búsquedas en el índice.
 
-### <a name="general-guidelines"></a>Instrucciones generales
+### <a name="general-guidelines"></a>Directrices generales
 
 - Desplácese por las entradas del índice. No todos los temas se indexan del mismo modo, y el que podría resultar más útil podría aparecer más arriba o más abajo en la lista de lo previsto.
 
@@ -79,6 +79,6 @@ Si no encuentra una entrada para la palabra o frase que escribió, pruebe lo sig
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Buscar temas en la TDC](../help-viewer/find-topics-toc.md)
-- [Cómo: Buscar temas](../help-viewer/find-topics.md)
+- [Búsqueda de temas en la TDC](../help-viewer/find-topics-toc.md)
+- [Cómo: buscar temas](../help-viewer/find-topics.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

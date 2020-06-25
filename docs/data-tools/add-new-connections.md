@@ -1,18 +1,18 @@
 ---
 title: Adición de nuevas conexiones
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587074"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283065"
 ---
 # <a name="add-new-connections"></a>Adición de nuevas conexiones
 
@@ -46,11 +46,11 @@ Si el origen de datos no es lo que desea, haga clic en el botón **cambiar** par
 
 ![Cambiar el proveedor de datos AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Prueba de la conexión
+## <a name="test-the-connection"></a>Comprobación de la conexión
 
 Después de elegir el origen de datos, haga clic en **probar conexión**. Si no se realiza correctamente, tendrá que solucionar los problemas en función de la documentación del proveedor.
 
-![Probar conexión](../data-tools/media/raddata-test-connection.png)
+![Probar la conexión](../data-tools/media/raddata-test-connection.png)
 
 Si la prueba se realiza correctamente, está listo para crear un *origen de datos*, que es un término de Visual Studio que realmente hace referencia a un *modelo de datos* basado en la base de datos o el servicio subyacente.
 

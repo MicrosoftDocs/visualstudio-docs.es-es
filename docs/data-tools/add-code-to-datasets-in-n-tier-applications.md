@@ -1,7 +1,7 @@
 ---
 title: Adición de código a conjuntos de datos en aplicaciones de n niveles
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d35ff68144e92af12f2ee6284076118493c6be9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587126"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283091"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adición de código a conjuntos de datos en aplicaciones de n niveles
 
@@ -65,7 +65,7 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Agregar código a TableAdapters en aplicaciones con n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Información general sobre la actualización jerárquica](hierarchical-update.md)

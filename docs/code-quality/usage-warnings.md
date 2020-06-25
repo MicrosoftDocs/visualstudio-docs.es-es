@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dfa23896f006dbf904a3e097e0d6fa296e0361
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 9c94fac97a340c8c315ec91e3c5ebb68cac0d516
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184580"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283351"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 
@@ -75,3 +75,4 @@ Las advertencias de uso admiten el uso correcto de .NET.
 |[CA2244: No duplicar inicializaciones de elementos indexados](../code-quality/ca2244.md)|Un inicializador de objeto tiene más de un inicializador de elemento indizado con el mismo índice de constante. Todo menos el último inicializador son redundantes.|
 |[CA2245: No asignar una propiedad a sí misma](../code-quality/ca2245.md)|Una propiedad se asignó accidentalmente a sí misma.|
 |[CA2246: No asignar un símbolo y su miembro en la misma instrucción](../code-quality/ca2246.md)|No se recomienda asignar un símbolo y su miembro, es decir, un campo o una propiedad, en la misma instrucción. No está claro si el acceso a miembros debía usar el valor anterior del símbolo antes de la asignación o el nuevo valor de la asignación en esta instrucción.|
+|[CA2248: proporcione el argumento ' ENUM ' correcto a ' enum. HasFlag '](../code-quality/ca2248.md)|El tipo de enumeración que se pasa como argumento a la `HasFlag` llamada al método es diferente del tipo de enumeración que realiza la llamada.|

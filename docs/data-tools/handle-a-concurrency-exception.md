@@ -1,7 +1,7 @@
 ---
 title: Tratar las excepciones de simultaneidad
 ms.date: 09/11/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586606"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282363"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
-Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) se producen cuando dos usuarios intentan cambiar los mismos datos al mismo tiempo en una base de datos. En este tutorial, creará una aplicación de Windows que muestra cómo detectar un <xref:System.Data.DBConcurrencyException>, buscar la fila que produjo el error y aprender una estrategia para controlarlo.
+Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException?displayProperty=fullName>) se producen cuando dos usuarios intentan cambiar los mismos datos al mismo tiempo en una base de datos. En este tutorial, creará una aplicación de Windows que muestra cómo detectar <xref:System.Data.DBConcurrencyException> , buscar la fila que produjo el error y aprender una estrategia para controlarla.
 
 Este tutorial le guía a través del proceso siguiente:
 
-1. Cree un nuevo proyecto de  **aplicación de Windows Forms**.
+1. Cree un nuevo proyecto de **aplicación de Windows Forms** .
 
 2. Cree un nuevo conjunto de DataSet basado en la tabla Northwind customers.
 
@@ -63,13 +63,13 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
        Tras un breve período de tiempo, la consulta termina de ejecutarse y se crea la base de datos Northwind.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
 Empiece por crear una nueva aplicación de Windows Forms:
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
@@ -102,7 +102,7 @@ A continuación, cree un conjunto de DataSet denominado **NorthwindDataSet**:
 
 ## <a name="create-a-data-bound-datagridview-control"></a>Crear un control DataGridView enlazado a datos
 
-En esta sección, creará una <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> arrastrando el elemento **Customers** desde la ventana **orígenes de datos** hasta el Windows Form.
+En esta sección, creará un <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> arrastrando el elemento **Customers** desde la ventana **orígenes de datos** hasta el Windows Form.
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , elija **Mostrar orígenes de datos**.
 
@@ -112,7 +112,7 @@ En esta sección, creará una <xref:System.Windows.Forms.DataGridView?displayPro
 
 4. Arrastre la tabla hasta un área vacía de su formulario.
 
-     Un control <xref:System.Windows.Forms.DataGridView> denominado **CustomersDataGridView**y un <xref:System.Windows.Forms.BindingNavigator> denominado **CustomersBindingNavigator**se agregan al formulario que está enlazado a la <xref:System.Windows.Forms.BindingSource>. Esto, a su vez, está enlazado a la tabla Customers de NorthwindDataSet.
+     Un <xref:System.Windows.Forms.DataGridView> control denominado **CustomersDataGridView**, y un <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator**con nombre, se agregan al formulario que está enlazado a <xref:System.Windows.Forms.BindingSource> . Esto, a su vez, está enlazado a la tabla Customers de NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Prueba del formulario
 
@@ -120,7 +120,7 @@ Ahora es posible comprobar el formulario para asegurarse de que se comporta de l
 
 1. Seleccione **F5** para ejecutar la aplicación.
 
-     El formulario aparece con un control <xref:System.Windows.Forms.DataGridView> en él que se rellena con los datos de la tabla customers.
+     El formulario aparece con un <xref:System.Windows.Forms.DataGridView> control que se rellena con los datos de la tabla customers.
 
 2. En el menú **Depurar**, seleccione **Detener depuración**.
 
@@ -150,10 +150,10 @@ Entonces, el usuario puede sobrescribir la base de datos con la versión propues
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Agregar código para controlar la excepción de simultaneidad
 
-Cuando se intenta realizar una actualización y se genera una excepción, normalmente se desea hacer algo con la información proporcionada por la excepción generada. En esta sección, agregará código que intenta actualizar la base de datos. También puede controlar cualquier <xref:System.Data.DBConcurrencyException> que se pueda producir, así como cualquier otra excepción.
+Cuando se intenta realizar una actualización y se genera una excepción, normalmente se desea hacer algo con la información proporcionada por la excepción generada. En esta sección, agregará código que intenta actualizar la base de datos. También puede controlar cualquier <xref:System.Data.DBConcurrencyException> que se produzca, así como cualquier otra excepción.
 
 > [!NOTE]
-> Los métodos `CreateMessage` y `ProcessDialogResults` se agregan más adelante en el tutorial.
+> Los `CreateMessage` `ProcessDialogResults` métodos y se agregan más adelante en el tutorial.
 
 1. Agregue el código siguiente al método `Form1_Load`:
 
@@ -176,7 +176,7 @@ Cree el mensaje agregando el código siguiente en el **Editor de código**. Escr
 
 ### <a name="process-the-users-response"></a>Procesar la respuesta del usuario
 
-También necesita código para procesar la respuesta del usuario al cuadro de mensaje. Las opciones son para sobrescribir el registro actual en la base de datos con el cambio propuesto, o bien abandonar los cambios locales y actualizar la tabla de datos con el registro que se encuentra actualmente en la base de datos. Si el usuario elige **sí**, se llama al método <xref:System.Data.DataTable.Merge%2A> con el argumento *preserveChanges* establecido en **true**. Esto hace que el intento de actualización se realice correctamente, ya que la versión original del registro coincide ahora con el registro de la base de datos.
+También necesita código para procesar la respuesta del usuario al cuadro de mensaje. Las opciones son para sobrescribir el registro actual en la base de datos con el cambio propuesto, o bien abandonar los cambios locales y actualizar la tabla de datos con el registro que se encuentra actualmente en la base de datos. Si el usuario elige **sí**, <xref:System.Data.DataTable.Merge%2A> se llama al método con el argumento *preserveChanges* establecido en **true**. Esto hace que el intento de actualización se realice correctamente, ya que la versión original del registro coincide ahora con el registro de la base de datos.
 
 Agregue el código siguiente debajo del código que se agregó en la sección anterior:
 

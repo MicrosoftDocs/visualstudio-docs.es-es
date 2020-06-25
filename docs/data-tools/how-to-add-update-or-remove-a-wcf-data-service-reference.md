@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Agregar, actualizar o quitar una referencia de servicio de datos de WCF'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 494e85049a173749d418276340389ebe826a0b0b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184241"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282376"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedimiento para agregar, actualizar o eliminar una referencia de servicio de datos WCF
 
@@ -57,7 +57,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. Haga clic en **Aceptar** para agregar la referencia al proyecto.
 
-     Se genera un cliente de servicio (proxy) y los metadatos que describen el servicio se agregan al archivo *app. config* .
+     Se genera un cliente de servicio (proxy) y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. En **Explorador de soluciones**, haga doble clic en el nodo **servicios conectados** o Púlselo.
@@ -86,7 +86,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. Haga clic en **Finalizar** para agregar la referencia al proyecto.
 
-     Se genera un cliente de servicio (proxy) y los metadatos que describen el servicio se agregan al archivo *app. config* .
+     Se genera un cliente de servicio (proxy) y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. Haga clic en **Aceptar** para agregar la referencia al proyecto.
 
-    Un cliente de servicio (proxy) genera, y los metadatos que describen el servicio se agregan al archivo *app. config* .
+    Un cliente de servicio (proxy) genera, y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. En **Explorador de soluciones**, haga doble clic en el nodo **servicios conectados** o Púlselo. 
@@ -129,7 +129,7 @@ Puede usar el nodo **servicios conectados** en **Explorador de soluciones** para
 
 1. Haga clic en **Finalizar** para agregar la referencia al proyecto.
 
-    Un cliente de servicio (proxy) genera, y los metadatos que describen el servicio se agregan al archivo *app. config* .
+    Un cliente de servicio (proxy) genera, y los metadatos que describen el servicio se agregan al archivo de *app.config* .
 
 ::: moniker-end
 
@@ -151,11 +151,11 @@ Si ya no se usa una referencia de servicio, puede quitarla de la solución.
 
 - En **Explorador de soluciones**, haga clic con el botón secundario en la referencia de servicio y, a continuación, haga clic en **eliminar**.
 
-     El cliente del servicio se quitará de la solución y los metadatos que describen el servicio se quitarán del archivo *app. config* .
+     El cliente del servicio se quitará de la solución y los metadatos que describen el servicio se quitarán del archivo de *app.config* .
 
     > [!NOTE]
     > Cualquier código que haga referencia a la referencia de servicio debe quitarse manualmente.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Servicios de Windows Communication Foundation y servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

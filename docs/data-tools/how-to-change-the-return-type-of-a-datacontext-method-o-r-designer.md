@@ -1,25 +1,25 @@
 ---
 title: Cambiar el tipo de valor devuelto del método DataContext (Object Relational Designer)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fac3a26f77151d7e09b620ef084d42a9ab50f1e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c232e3e4261008fa736377801183d92420ffbf4c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586541"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282272"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedimiento para cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer)
-El tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext> (creado basándose en un procedimiento almacenado o una función) difiere en función de dónde se coloque el procedimiento almacenado o la función en Object Relational **Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de Object Relational **Designer**, se creará un método <xref:System.Data.Linq.DataContext> que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.
+El tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método (creado basándose en un procedimiento almacenado o una función) difiere en función de dónde se coloque el procedimiento almacenado o la función en Object Relational **Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad (si el esquema de los datos devueltos por el procedimiento almacenado o la función coincide con la forma de la clase de entidad). Si coloca un elemento en un área vacía de Object Relational **Designer**, <xref:System.Data.Linq.DataContext> se crea un método que devuelve un tipo generado automáticamente. Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.
 
 > [!NOTE]
-> Mediante la ventana **Propiedades**, no se pueden revertir los métodos de <xref:System.Data.Linq.DataContext> cuyo tipo de valor devuelto está establecido en una clase de entidad para que devuelvan el tipo generado automáticamente. Para revertir un método de <xref:System.Data.Linq.DataContext>, de modo que devuelva un tipo generado automáticamente, debe arrastrar de nuevo el objeto de base de datos original hasta **Object Relational Designer**.
+> Mediante la ventana **Propiedades**, no se pueden revertir los métodos de <xref:System.Data.Linq.DataContext> cuyo tipo de valor devuelto está establecido en una clase de entidad para que devuelvan el tipo generado automáticamente. Para revertir un <xref:System.Data.Linq.DataContext> método para que devuelva un tipo generado automáticamente, debe arrastrar de nuevo el objeto original de la base de datos al Object Relational **Designer** .
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -33,7 +33,7 @@ El tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext> (cre
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Para volver a cambiar el tipo de valor devuelto de un método de DataContext de una clase de entidad al tipo generado automáticamente
 
-1. Seleccione el método <xref:System.Data.Linq.DataContext> en el panel **Métodos** y elimínelo.
+1. Seleccione el <xref:System.Data.Linq.DataContext> método en el panel **métodos** y elimínelo.
 
 2. Arrastre el objeto Database desde **Explorador de servidores** o **Explorador de bases de datos** a un área vacía de Object Relational **Designer**.
 
@@ -41,7 +41,7 @@ El tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext> (cre
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md) (Métodos DataContext [Object Relational Designer])
 - [Cómo: Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

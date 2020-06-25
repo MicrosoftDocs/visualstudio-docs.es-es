@@ -1,7 +1,7 @@
 ---
 title: Instalación de ayuda sin conexión
 ms.date: 11/01/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824912"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284950"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -33,17 +33,17 @@ El Visor de Ayuda es un componente de instalación opcional de Visual Studio. Pa
 
 Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través del cuadro de búsqueda:
 
-1. Presione **Ctrl**+**Q** y, luego, escriba o especifique **Visor de Ayuda** en el cuadro de búsqueda.
+1. Presione **Ctrl** + **Q** y, a continuación, escriba o escriba **visor de ayuda** en el cuadro de búsqueda.
 
    ![Cuadro de búsqueda](media/installation/quick-launch.png)
 
-1. Elija el resultado denominado **Visor de Ayuda (componente individual)** .
+1. Elija el resultado denominado **Visor de Ayuda (componente individual)**.
 
 1. En el cuadro de diálogo que aparece, haga clic en el botón **Instalar**.
 
-   ![Botón Instalar](media/installation/install.png)
+   ![botón Instalar](media/installation/install.png)
 
 ## <a name="see-also"></a>Vea también
 
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)
-- [Visor de Ayuda y contenido sin conexión para SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Visor de ayuda y contenido sin conexión para SQL Server](/sql/sql-server/sql-server-help-installation)

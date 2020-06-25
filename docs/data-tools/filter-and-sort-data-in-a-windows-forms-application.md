@@ -1,7 +1,7 @@
 ---
 title: Filtrar y ordenar los datos en una aplicación Windows Forms
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,21 +19,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 596397cc22cf0f0134463256c0861127dcfb81e1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586619"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282389"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar y ordenar los datos en una aplicación Windows Forms
 
 Los datos se filtran estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en una expresión de cadena que devuelve los registros deseados.
 
-Los datos se ordenan estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Sort%2A> en el nombre de columna en el que se desea ordenar; Anexe `DESC` para ordenar en orden descendente, o anexe `ASC` para ordenar en orden ascendente.
+Los datos se ordenan estableciendo la <xref:System.Windows.Forms.BindingSource.Sort%2A> propiedad en el nombre de columna en el que se desea ordenar; anexar `DESC` a la ordenación en orden descendente o anexar `ASC` a la ordenación en orden ascendente.
 
 > [!NOTE]
-> Si la aplicación no usa componentes de <xref:System.Windows.Forms.BindingSource>, puede filtrar y ordenar los datos mediante <xref:System.Data.DataView> objetos. Para obtener más información, vea las [vistas](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)de datos.
+> Si la aplicación no usa <xref:System.Windows.Forms.BindingSource> componentes, puede filtrar y ordenar los datos mediante <xref:System.Data.DataView> objetos. Para obtener más información, vea las [vistas](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)de datos.
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Para filtrar los datos mediante un componente BindingSource
 

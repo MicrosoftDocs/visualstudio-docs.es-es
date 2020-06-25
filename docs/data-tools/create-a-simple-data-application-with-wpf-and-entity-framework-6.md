@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 735a4cc533312bcfa3823410780b09caa4f53fde
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173946"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282766"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 
-En este tutorial se muestra cómo crear una aplicación básica de "formularios sobre datos" en Visual Studio. La aplicación usa SQL Server LocalDB, la base de datos Northwind, Entity Framework 6 y Windows Presentation Foundation. Muestra cómo realizar el enlace de datos básico con una vista de maestro y detalles, y también tiene un navegador de enlace personalizado con botones para **ir siguiente**, **moverse anterior**, **moverse al principio**, **moverse al final**, **Actualizar** y **eliminar**.
+En este tutorial se muestra cómo crear una aplicación básica de "formularios sobre datos" en Visual Studio. La aplicación usa SQL Server LocalDB, la base de datos Northwind, Entity Framework 6 (no Entity Framework Core) y Windows Presentation Foundation para .NET Framework (no .NET Core). Muestra cómo realizar el enlace de datos básico con una vista de maestro y detalles, y también tiene un navegador de enlace personalizado con botones para **ir siguiente**, **moverse anterior**, **moverse al principio**, **moverse al final**, **Actualizar** y **eliminar**.
 
 Este artículo se centra en el uso de herramientas de datos en Visual Studio y no intenta explicar las tecnologías subyacentes en cualquier profundidad. Se supone que tiene conocimientos básicos de XAML, Entity Framework y SQL. En este ejemplo tampoco se muestra la arquitectura Model-View-ViewModel (MVVM), que es estándar para las aplicaciones de WPF. Sin embargo, puede copiar este código en su propia aplicación MVVM con pocas modificaciones.
 
@@ -427,7 +427,7 @@ Agregue estos métodos de controlador a la clase MainWindow en *MainWindow.Xaml.
 
 Presione **F5** para iniciar la depuración. Debería ver los datos de cliente y de pedido rellenados en la cuadrícula y los botones de navegación deberían funcionar según lo previsto. Haga clic en **confirmar** para agregar un nuevo cliente o un pedido al modelo después de haber escrito los datos. Haga clic en **Cancelar** para salir de un nuevo formulario de cliente o de pedido nuevo sin guardar los datos. Puede realizar modificaciones en los clientes y pedidos existentes directamente en los cuadros de texto, y estos cambios se escriben automáticamente en el modelo.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentación de Entity Framework](/ef/)

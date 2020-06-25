@@ -1,7 +1,7 @@
 ---
 title: Agregar controles personalizados a la ventana de orígenes de datos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587113"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283078"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 
@@ -39,7 +39,7 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
 2. En la ventana **orígenes de datos** , haga clic en un elemento que forme parte de un origen de datos que haya agregado a la ventana y, a continuación, haga clic en el menú desplegable del elemento.
 
    > [!TIP]
-   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **ver** > **otras ventanas** > **orígenes de datos**.
+   > Si la ventana orígenes de datos no está abierta, ábrala seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
 3. En el menú desplegable, haga clic en **personalizar**. Se abre uno de los cuadros de diálogo siguientes:
 
@@ -49,18 +49,18 @@ Para agregar o quitar controles de la lista de controles disponibles para los el
 
 4. En el cuadro de diálogo, seleccione un tipo de datos en la lista desplegable **tipo de datos** .
 
-    - Para personalizar la lista de controles de una tabla o un objeto, seleccione **[lista]** .
+    - Para personalizar la lista de controles de una tabla o un objeto, seleccione **[lista]**.
 
     - Para personalizar la lista de controles de una columna de una tabla o de una propiedad de un objeto, seleccione el tipo de datos de la columna o propiedad en el almacén de datos subyacente.
 
-    - Para personalizar la lista de controles para mostrar los objetos de datos que tienen formas definidas por el usuario, seleccione **[otros]** . Por ejemplo, seleccione **[Other]** si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto determinado.
+    - Para personalizar la lista de controles para mostrar los objetos de datos que tienen formas definidas por el usuario, seleccione **[otros]**. Por ejemplo, seleccione **[Other]** si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto determinado.
 
 5. En el cuadro **controles asociados** , seleccione cada control que desee que esté disponible para el tipo de datos seleccionado o desactive la selección de los controles que desea quitar de la lista.
 
     > [!NOTE]
     > Si el control que desea seleccionar no aparece en el cuadro **controles asociados** , debe agregar el control a la lista. Para obtener más información, vea [Agregar controles asociados](#add-associated-controls).
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
 7. En la ventana **orígenes de datos** , haga clic en un elemento del tipo de datos al que acaba de asociar uno o varios controles y, a continuación, haga clic en el menú desplegable del elemento.
 
@@ -76,11 +76,11 @@ Para agregar controles a la lista de controles asociados:
 
      El control debe tener uno de los siguientes atributos:
 
-    |Attribute|Descripción|
+    |Atributo|Descripción|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, como un <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, como un <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad, como un <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implemente este atributo en controles simples que muestren una única columna (o propiedad) de datos, como <xref:System.Windows.Forms.TextBox> .|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implemente este atributo en los controles que muestran listas (o tablas) de datos, como <xref:System.Windows.Forms.DataGridView> .|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implemente este atributo en controles que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad, como <xref:System.Windows.Forms.ComboBox> .|
 
 2. Por Windows Forms, en el cuadro de diálogo **Opciones** , abra la página de **Personalización** de la interfaz de usuario de datos. O bien, para WPF, abra el cuadro de diálogo **personalizar enlace de control** . Para obtener más información, vea [personalizar la lista de controles enlazables para un tipo de datos](#customize-the-bindable-controls-list).
 

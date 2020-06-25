@@ -1,25 +1,25 @@
 ---
 title: Búsqueda de temas (Visor de Ayuda)
 ms.date: 11/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824994"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284924"
 ---
-# <a name="how-to-search-for-topics"></a>Procedimiento Búsqueda de temas
+# <a name="how-to-search-for-topics"></a>Búsqueda de temas
 
 Puede usar la característica de búsqueda de texto completo para buscar todos los temas que contienen una palabra determinada. También puede refinar y personalizar la búsqueda mediante el uso de expresiones comodín, operadores lógicos y operadores de búsqueda avanzada.
 
-Para abrir la pestaña **Búsqueda**, seleccione la pestaña **Búsqueda** en la ventana del **Visor de Ayuda** o, si prefiere usar el teclado, presione **CTRL**+**E**.
+Para abrir la pestaña **Buscar** , elija la pestaña **Buscar** en la ventana del visor de **ayuda** , o bien, si es un usuario de teclado, presione **Ctrl** + **E**.
 
 ## <a name="to-perform-a-full-text-search"></a>Para realizar una búsqueda de texto completo
 
@@ -30,7 +30,7 @@ Para abrir la pestaña **Búsqueda**, seleccione la pestaña **Búsqueda** en la
     > [!NOTE]
     > En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.
 
-3. Presione la tecla **ENTRAR**.
+3. Elija la tecla **entrar** .
 
      De forma predeterminada, una búsqueda devuelve un máximo de 200 aciertos y los muestra en el área de resultados de la búsqueda. Podría aparecer información adicional sobre la versión para cada resultado, en función del contenido.
 
@@ -40,13 +40,13 @@ Para abrir la pestaña **Búsqueda**, seleccione la pestaña **Búsqueda** en la
 
 Puede crear búsquedas más selectivas que devuelvan solo los temas que le interesan si entiende cómo afecta la sintaxis a la consulta. La sintaxis incluye caracteres especiales, palabras reservadas y filtros. En este tema se proporcionan sugerencias, procedimientos e información detallada de la sintaxis para ayudarle a crear mejor sus consultas.
 
-### <a name="general-guidelines"></a>Instrucciones generales
+### <a name="general-guidelines"></a>Directrices generales
 
 En la tabla siguiente se incluyen algunas reglas y directrices básicas para realizar consultas de búsqueda en la ayuda.
 
-|Sintaxis|DESCRIPCIÓN|
+|Sintaxis|Descripción|
 |------------|-----------------|
-|Distinción de mayúsculas y minúsculas|Las búsquedas no distinguen entre mayúsculas y minúsculas. Desarrolle los criterios de búsqueda usando caracteres en mayúsculas o en minúsculas. Por ejemplo, "OLE" y "ole" devuelven los mismos resultados.|
+|Distinción entre mayúsculas y minúsculas|Las búsquedas no distinguen entre mayúsculas y minúsculas. Desarrolle los criterios de búsqueda usando caracteres en mayúsculas o en minúsculas. Por ejemplo, "OLE" y "ole" devuelven los mismos resultados.|
 |Combinaciones de caracteres|No es posible buscar una sola letra (a-z) o un solo número (0-9). Si intenta buscar ciertas palabras reservadas, por ejemplo "y", "de" y "con", estas se omitirán. Para obtener más información, vea [Palabras omitidas en las búsquedas](#stopwords) más adelante en este tema.|
 |Orden de evaluación|Las consultas de búsqueda se evalúan de izquierda a derecha.|
 
@@ -72,13 +72,13 @@ El algoritmo de búsqueda aplica ciertos criterios para ayudar a situar los resu
 
 3. El contenido con una mayor densidad de las palabras de búsqueda tiene mejor clasificación que el contenido con una densidad inferior.
 
-### <a name="stopwords"> Palabras omitidas en las búsquedas (palabras irrelevantes) </a>
+### <a name=""></a><a name="stopwords"> Palabras omitidas en las búsquedas (palabras irrelevantes) </a>
 
 Las palabras o números que aparecen más habitualmente, a veces llamadas palabras irrelevantes, se omiten automáticamente durante una búsqueda de texto completo. Por ejemplo, si busca la frase "pasar por", los resultados de la búsqueda mostrarán los temas que contienen la palabra "pasar", pero no "por".
 
 ## <a name="see-also"></a>Vea también
 
 - [Operadores lógicos y avanzados](../help-viewer/logical-operators-search-expressions.md)
-- [Cómo: Buscar temas en el índice](../help-viewer/find-topics-index.md)
-- [Cómo: Buscar temas en la TDC](../help-viewer/find-topics-toc.md)
+- [Cómo: buscar temas en el índice](../help-viewer/find-topics-index.md)
+- [Búsqueda de temas en la TDC](../help-viewer/find-topics-toc.md)
 - [Visor de Ayuda de Microsoft](../help-viewer/overview.md)

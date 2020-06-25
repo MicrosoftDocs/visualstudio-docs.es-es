@@ -1,7 +1,7 @@
 ---
 title: Instalación de la documentación de ayuda local
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824959"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284911"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 
@@ -51,7 +51,7 @@ De forma predeterminada, el Visor de Ayuda instala contenido mediante el uso de 
 
     - Escriba la ruta de un archivo *.msha* o la dirección URL de un punto de conexión de servicio.
 
-    - Elija el botón Examinar ( **...** ) para desplazarse hasta un archivo *.msha*.
+    - Elija el botón Examinar (**...**) para navegar a un archivo *. MSHA* .
 
     - En la lista, seleccione la entrada que se usó más recientemente.
 

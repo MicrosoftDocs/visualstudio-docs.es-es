@@ -1,7 +1,7 @@
 ---
 title: Procedimiento para agregar validación a clases de entidad
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586567"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282350"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedimiento para agregar validación a clases de entidad
 *Validar* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen las restricciones en el esquema de un objeto, además de las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.
@@ -62,7 +62,7 @@ En este procedimiento se muestra cómo validar datos cuando cambia el valor en u
 
     Para proyectos de C#:
 
-    Dado C# que los proyectos no generan automáticamente controladores de eventos, puede usar IntelliSense para crear los métodos parciales de cambio de columna. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de cambio de columna correspondiente a la columna a la que desee agregar validación. El código siguiente es similar al código que se genera al seleccionar un método parcial de cambio de columna:
+    Dado que los proyectos de C# no generan automáticamente controladores de eventos, puede usar IntelliSense para crear los métodos parciales de cambio de columna. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de cambio de columna correspondiente a la columna a la que desee agregar validación. El código siguiente es similar al código que se genera al seleccionar un método parcial de cambio de columna:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -106,7 +106,7 @@ Además de comprobar los valores durante los cambios, también puede validar los
 
     Para proyectos de C#:
 
-    Dado C# que los proyectos no generan automáticamente controladores de eventos, puede usar IntelliSense para crear el método de `UpdateCLASSNAME` parcial. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de actualización de la clase en la que desea agregar la validación. El código siguiente es similar al código que se genera al seleccionar un método parcial de `UpdateCLASSNAME`:
+    Dado que los proyectos de C# no generan automáticamente controladores de eventos, puede usar IntelliSense para crear el `UpdateCLASSNAME` método parcial. Escriba `partial` y, a continuación, un espacio para obtener acceso a la lista de métodos parciales disponibles. Haga clic en el método de actualización de la clase en la que desea agregar la validación. El código siguiente es similar al código que se genera al seleccionar un `UpdateCLASSNAME` método parcial:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)
@@ -121,6 +121,6 @@ Además de comprobar los valores durante los cambios, también puede validar los
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Validar datos](../data-tools/validate-data-in-datasets.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)

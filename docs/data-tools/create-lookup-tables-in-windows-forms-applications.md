@@ -1,7 +1,7 @@
 ---
 title: Crear tablas de búsqueda en aplicaciones de Windows Forms
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586775"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282662"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Crear tablas de búsqueda en aplicaciones de Windows Forms
 
@@ -24,11 +24,11 @@ El término *tabla de búsqueda* describe controles enlazados con dos tablas de 
 
 Puede crear tablas de búsqueda arrastrando el nodo principal de una tabla primaria (desde la [ventana orígenes de datos](add-new-data-sources.md#data-sources-window)) hasta un control del formulario que ya esté enlazado a la columna de la tabla secundaria relacionada.
 
-Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. Cada registro de la tabla `Orders` incluye un `CustomerID` que indica el cliente que ha realizado el pedido. El `CustomerID` es una clave externa que señala a un registro del cliente en la tabla `Customers`. En este escenario, expanda la tabla `Orders` en la ventana **orígenes de datos** y establezca el nodo principal en **detalles**. A continuación, establezca la columna `CustomerID` para usar un <xref:System.Windows.Forms.ComboBox> (o cualquier otro control que admita el enlace de búsqueda) y arrastre el nodo `Orders` al formulario. Por último, arrastre el nodo `Customers` al control que está enlazado a la columna relacionada; en este caso, el <xref:System.Windows.Forms.ComboBox> enlazado a la columna `CustomerID`.
+Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. Cada registro de la tabla `Orders` incluye un `CustomerID` que indica el cliente que ha realizado el pedido. El `CustomerID` es una clave externa que señala a un registro del cliente en la tabla `Customers`. En este escenario, expanda la `Orders` tabla en la ventana **orígenes de datos** y establezca el nodo principal en **detalles**. A continuación, establezca la `CustomerID` columna para que use un <xref:System.Windows.Forms.ComboBox> (o cualquier otro control que admita el enlace de búsqueda) y arrastre el `Orders` nodo al formulario. Finalmente, arrastre el `Customers` nodo al control que está enlazado a la columna relacionada, en este caso, el <xref:System.Windows.Forms.ComboBox> enlazado a la `CustomerID` columna.
 
 ## <a name="to-databind-a-lookup-control"></a>Para enlazar con datos un control de búsqueda
 
-1. Con el proyecto abierto, abra la **ventana orígenes de datos** eligiendo **Ver** > **otras ventanas** > **orígenes de datos**.
+1. Con el proyecto abierto, abra la ventana **orígenes de datos** eligiendo **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
     > [!NOTE]
     > Las tablas de búsqueda requieren que dos tablas u objetos relacionados estén disponibles en la ventana **Orígenes de datos**. Para obtener más información, vea [relaciones en conjuntos de](relationships-in-datasets.md)datos.
@@ -40,7 +40,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 3. Cambie el tipo Drop de la tabla secundaria a **Detalles** seleccionando **Detalles** en la lista de control del nodo de la tabla secundaria. Para obtener más información, vea [establecer el control que se creará al arrastrar desde la ventana orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4. Busque el nodo que relaciona las dos tablas (el nodo `CustomerID` en el ejemplo anterior). Cambie su tipo de colocación a un <xref:System.Windows.Forms.ComboBox>; para ello, seleccione **ComboBox** en la lista de controles.
+4. Busque el nodo que relaciona las dos tablas (el `CustomerID` nodo en el ejemplo anterior). Cambie su tipo de colocación a seleccionando <xref:System.Windows.Forms.ComboBox> **ComboBox** en la lista de controles.
 
 5. Arrastre el nodo de tabla secundaria principal de la ventana **Orígenes de datos** a su formulario.
 
@@ -50,9 +50,9 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
      En este momento se establecen los enlaces de búsqueda. Consulte en la tabla siguiente las propiedades específicas que se establecieron en el control.
 
-    |La propiedad|Explicación del parámetro|
+    |Propiedad|Explicación del parámetro|
     |--------------| - |
-    |**DataSource**|Visual Studio establece esta propiedad en el elemento <xref:System.Windows.Forms.BindingSource> creado para la tabla que ha arrastrado al control (a diferencia del elemento <xref:System.Windows.Forms.BindingSource> creado al mismo tiempo que el control).<br /><br /> Si necesita efectuar un ajuste, establézcalo en la <xref:System.Windows.Forms.BindingSource> de la tabla con la columna que desea mostrar.|
+    |**DataSource**|Visual Studio establece esta propiedad en el elemento <xref:System.Windows.Forms.BindingSource> creado para la tabla que ha arrastrado al control (a diferencia del elemento <xref:System.Windows.Forms.BindingSource> creado al mismo tiempo que el control).<br /><br /> Si necesita efectuar un ajuste, establézcalo en el <xref:System.Windows.Forms.BindingSource> de la tabla con la columna que desea mostrar.|
     |**DisplayMember**|Visual Studio establece esta propiedad en la primera columna tras la clave principal que tiene un tipo de datos String para la tabla que ha arrastrado al control.<br /><br /> Si necesita efectuar un ajuste, establézcalo en el nombre de columna que desea mostrar.|
     |**ValueMember**|Visual Studio establece esta propiedad en la primera columna que participa de la clave principal, o la primera columna de la tabla si no se ha definido ninguna clave.<br /><br /> Si necesita efectuar un ajuste, establézcalo en la clave principal de la tabla con la columna que desea mostrar.|
     |**SelectedValue**|Visual Studio establece esta propiedad en la columna original quitada de la ventana **Orígenes de datos**.<br /><br /> Si necesita efectuar un ajuste, establézcalo en la columna de clave externa de la tabla relacionada.|

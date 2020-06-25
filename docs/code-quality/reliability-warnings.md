@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d45deadc48445e043535e84b36718a14f5b391f6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3449723394f603b4b726fa8ebf2258e2c8f4c46c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182812"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283390"
 ---
 # <a name="reliability-warnings"></a>Advertencias de confiabilidad
 
@@ -36,4 +36,7 @@ Las advertencias de confiabilidad admiten la confiabilidad de bibliotecas y apli
 |[CA2007: No esperar una tarea directamente](../code-quality/ca2007.md)|Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> directamente.|
 |[CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`se llamó innecesariamente al método en una colección inmutable desde el <xref:System.Collections.Immutable> espacio de nombres.|
 |[CA2011: No asignar la propiedad dentro de su establecedor](../code-quality/ca2011.md) | Se asignó accidentalmente un valor a una propiedad dentro de su propio [descriptor de acceso set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
+|[CA2012: usar ValueTasks correctamente](../code-quality/ca2012.md) | Los ValueTasks devueltos de las invocaciones de miembro están diseñados para esperarse directamente.  Los intentos de consumir un ValueTask varias veces o de tener acceso directamente a uno de los resultados antes de que se sepa que se han completado pueden producir una excepción o daños.  Omitir tal ValueTask es probable que se trate de un error funcional y puede degradar el rendimiento. |
+|[CA2013: no usar ReferenceEquals con tipos de valor](../code-quality/ca2013.md) | Al comparar valores mediante <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , si objA y objB son tipos de valor, se les aplica la conversión boxing antes de que se pasen al <xref:System.Object.ReferenceEquals%2A> método. Esto significa que, aunque objA y objB representen la misma instancia de un tipo de valor, el <xref:System.Object.ReferenceEquals%2A> método devuelve false. |
+|[CA2014: no use stackalloc en los bucles.](../code-quality/ca2014.md) | El espacio de pila asignado por stackalloc solo se libera al final de la invocación del método actual.  Su uso en un bucle puede dar lugar a un crecimiento de pila sin enlazar y a condiciones de desbordamiento de pila eventuales. |
 |[CA2015: no definir finalizadores para los tipos derivados de MemoryManager &lt; T&gt;](../code-quality/ca2015.md) | Agregar un finalizador a un tipo derivado de <xref:System.Buffers.MemoryManager%601> puede permitir que la memoria se libere mientras esté siendo utilizada por <xref:System.Span%601> . |

@@ -1,23 +1,23 @@
 ---
 title: No se puede crear una asociación; la propiedad aparece más de una vez.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: acc2a34f8980d748df45ad8437e308c889170aba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92999e211ec0f7265f026446e09dbc94cc3060f3
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648748"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85282805"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; la propiedad aparece dos veces.
 
-No se puede crear una asociación \<nombre de asociación>. La misma propiedad aparece más de una vez: \<nombre de propiedad>.
+No se puede crear una asociación \<association name> . La misma propiedad aparece más de una vez: \<property name> .
 
 Las asociaciones las define el comando **Propiedades de la asociación** seleccionado en el cuadro de diálogo **Editor de asociaciones**. Las propiedades pueden aparecer solamente una vez para cada clase en la asociación.
 
@@ -35,5 +35,5 @@ La propiedad mencionada en el mensaje aparece más de una vez en las **Propiedad
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
