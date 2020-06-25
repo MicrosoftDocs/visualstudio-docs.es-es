@@ -1,7 +1,7 @@
 ---
 title: Separar conjuntos de datos y TableAdapters en proyectos diferentes
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8df444646512ecd4dba866fccf6da5fdf7a8bab3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586229"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281557"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 Los conjuntos de valores de tipos se han mejorado para que las clases [TableAdapter](create-and-configure-tableadapters.md) y DataSet se puedan generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
@@ -59,8 +59,8 @@ De forma predeterminada, después de separar el código de conjunto de datos y T
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
-- [Tutorial: Creación de una aplicación de datos con N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Información general sobre las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Tutorial: crear una aplicación de datos de N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
-- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

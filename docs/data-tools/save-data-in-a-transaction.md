@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Guardar datos en una transacción'
 ms.date: 09/08/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586242"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281635"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
-En este tutorial se muestra cómo guardar los datos en una transacción mediante el espacio de nombres <xref:System.Transactions>. En este tutorial, creará una aplicación Windows Forms. Utilizará el Asistente para la configuración de orígenes de datos para crear un conjunto de datos para dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario de Windows Forms y modificará el código para que el botón Guardar de BindingNavigator actualice la base de datos dentro de un TransactionScope.
+En este tutorial se muestra cómo guardar los datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. En este tutorial, creará una aplicación Windows Forms. Utilizará el Asistente para la configuración de orígenes de datos para crear un conjunto de datos para dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario de Windows Forms y modificará el código para que el botón Guardar de BindingNavigator actualice la base de datos dentro de un TransactionScope.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -52,7 +52,7 @@ El primer paso es crear una **aplicación Windows Forms**.
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
@@ -62,7 +62,7 @@ El primer paso es crear una **aplicación Windows Forms**.
 
 ## <a name="create-a-database-data-source"></a>Crear un origen de datos de base de datos
 
-En este paso se usa el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
+En este paso se usa el Asistente para la **configuración de orígenes de datos** para crear un origen de datos basado en las `Customers` tablas y `Orders` de la base de datos de ejemplo Northwind.
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , seleccione **Mostrar orígenes de datos**.
 
@@ -74,7 +74,7 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         O bien,
+         o bien
 
     - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.
 
@@ -84,23 +84,23 @@ En este paso se usa el Asistente para la **configuración de orígenes de datos*
 
 7. En la pantalla **elegir los objetos de base de datos** , expanda el nodo **tablas** .
 
-8. Seleccione las tablas `Customers` y `Orders` y, a continuación, seleccione **Finalizar**.
+8. Seleccione las `Customers` `Orders` tablas y y, a continuación, seleccione **Finalizar**.
 
-     **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.
+     **NorthwindDataSet** se agrega al proyecto y las `Customers` `Orders` tablas y aparecen en la ventana orígenes de **datos** .
 
 ## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 1. En la ventana **orígenes de datos** , expanda el nodo **Customers** .
 
 2. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
-   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>y <xref:System.Windows.Forms.BindingNavigator>.
+   En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet,, y.
 
 3. Arrastre el nodo **Orders** relacionado (no el nodo **Orders** principal, pero el nodo de tabla secundaria relacionado que se encuentra debajo de la columna **fax** ) al formulario situado debajo de **CustomersDataGridView**.
 
-   En el formulario aparece una <xref:System.Windows.Forms.DataGridView>. En la bandeja de componentes aparecen un `OrdersTableAdapter` y un <xref:System.Windows.Forms.BindingSource>.
+   En el formulario aparece una <xref:System.Windows.Forms.DataGridView>. `OrdersTableAdapter`Y <xref:System.Windows.Forms.BindingSource> aparecen en la bandeja de componentes.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Agregar una referencia al ensamblado System. Transactions
 
@@ -116,7 +116,7 @@ Las transacciones usan el espacio de nombres <xref:System.Transactions>. De form
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modificar el código en el botón SaveItem de BindingNavigator
 
-En la primera tabla colocada en el formulario, se agrega código de forma predeterminada al evento `click` del botón Guardar en el <xref:System.Windows.Forms.BindingNavigator>. Para actualizar otras tablas, debe agregar el código manualmente. En este tutorial, se refactoriza el código de guardado existente del controlador de eventos Click del botón Guardar. También creamos algunos métodos más para proporcionar una funcionalidad de actualización específica basada en si es necesario agregar o eliminar la fila.
+En la primera tabla colocada en el formulario, el código se agrega de forma predeterminada al `click` evento del botón Guardar en el <xref:System.Windows.Forms.BindingNavigator> . Para actualizar otras tablas, debe agregar el código manualmente. En este tutorial, se refactoriza el código de guardado existente del controlador de eventos Click del botón Guardar. También creamos algunos métodos más para proporcionar una funcionalidad de actualización específica basada en si es necesario agregar o eliminar la fila.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Para modificar el código de guardado generado automáticamente
 
@@ -129,13 +129,13 @@ En la primera tabla colocada en el formulario, se agrega código de forma predet
 
 El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
-- Eliminar registros secundarios. (En este caso, elimine los registros de la tabla `Orders`).
+- Eliminar registros secundarios. (En este caso, elimine los registros de la `Orders` tabla).
 
-- Eliminar registros primarios. (En este caso, elimine los registros de la tabla `Customers`).
+- Eliminar registros primarios. (En este caso, elimine los registros de la `Customers` tabla).
 
-- Insertar registros primarios. (En este caso, inserte los registros en la tabla `Customers`).
+- Insertar registros primarios. (En este caso, inserte los registros en la `Customers` tabla).
 
-- Insertar registros secundarios. (En este caso, inserte los registros en la tabla `Orders`).
+- Insertar registros secundarios. (En este caso, inserte los registros en la `Orders` tabla).
 
 ### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes
 

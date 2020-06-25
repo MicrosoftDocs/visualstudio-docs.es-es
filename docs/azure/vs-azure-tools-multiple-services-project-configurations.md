@@ -6,21 +6,21 @@ manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300934"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280549"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuración de su proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
 
 Un proyecto de servicio en la nube de Azure en Visual Studio incluye tres archivos de configuración: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` se implementa en Azure para describir los requisitos del servicio en la nube y sus roles y para proporcionar la configuración que se aplica a todas las instancias. La configuración se puede leer en tiempo de ejecución mediante la API de Azure Service Hosting Runtime. Este archivo puede actualizarse en Azure solo cuando se detiene el servicio en la nube.
+- `ServiceDefinition.csdef` se implementa en Azure para describir los requisitos del servicio en la nube y sus roles y para proporcionar la configuración que se aplica a todas las instancias. La configuración se puede leer en tiempo de ejecución mediante la API de tiempo de ejecución de hospedaje del servicio de Azure. Este archivo puede actualizarse en Azure solo cuando se detiene el servicio en la nube.
 - `ServiceConfiguration.Local.cscfg` y `ServiceConfiguration.Cloud.cscfg` proporcionan valores de configuración del archivo de definición y especifican el número de instancias que se van a ejecutar en cada rol. El archivo "Local" contiene valores que se utilizan en la depuración local; el archivo "Nube" se implementa en Azure como `ServiceConfiguration.cscfg` y proporciona la configuración para el entorno de servidor. Este archivo se puede actualizar mientras el servicio en la nube se ejecuta en Azure.
 
 Las opciones de configuración se administran y modifican en Visual Studio con las páginas de propiedades del rol aplicable (haga clic con el botón derecho en el rol y seleccione **Propiedades**, o bien haga doble clic en el rol). Los cambios pueden limitarse a cualquier configuración elegida en el menú desplegable **Configuración de servicio**. Las propiedades de los roles de web y de trabajo son similares, excepto en los casos descritos en las siguientes secciones.
@@ -39,13 +39,13 @@ Seleccione a qué archivo `ServiceConfiguration.*.cscfg` afectan los cambios. De
 
 Establezca la propiedad **Número de instancias** en el número de instancias que el servicio debe ejecutar para este rol
 
-Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, **Mediano**, **Grande** o **Extra grande**.  Para obtener más información, consulte [Tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Establezca la propiedad **Tamaño de VM** en **Extra pequeño**, **Pequeño**, **Mediano**, **Grande** o **Extra grande**.  Para obtener más información, vea [tamaños de Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Acción de inicio (solo para el rol web)
 
 Establezca esta propiedad para especificar que Visual Studio debería iniciar un explorador web para los extremos HTTP, los extremos HTTPS o ambos al iniciar la depuración.
 
-La opción de punto de conexión **HTTPS** solo está disponible si ya ha definido un punto de conexión HTTPS para su rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
+La opción de **extremo https** solo está disponible si ya ha definido un punto de conexión HTTPS para el rol. Puede definir un extremo HTTPS en la página de propiedades **Extremos** .
 
 Si ya se ha agregado un extremo HTTPS, la opción de extremo HTTPS se habilita de forma predeterminada, y Visual Studio iniciará un explorador para este extremo al comenzar la depuración, además de a un explorador para el extremo HTTP, pero se asume que ambas opciones de inicio están habilitadas.
 
@@ -55,7 +55,7 @@ De manera predeterminada, la funcionalidad de diagnóstico está habilitada para
 
 ## <a name="settings-page"></a>Página Configuración
 
-En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de la configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada](/previous-versions/azure/dn602775(v=azure.11))de Azure , específicamente, el [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) método.
+En la página **Configuración**, puede agregar la configuración como pares nombre-valor. El código que se ejecuta en el rol puede leer los valores de las opciones de configuración en tiempo de ejecución mediante las clases proporcionadas por la [biblioteca administrada de Azure](/previous-versions/azure/dn602775(v=azure.11)), en concreto, el método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuración de una cadena de conexión para una cuenta de almacenamiento
 

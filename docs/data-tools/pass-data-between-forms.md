@@ -1,7 +1,7 @@
 ---
 title: Pasar datos de un formulario a otro
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586372"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281882"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
 
@@ -69,7 +69,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
@@ -81,13 +81,13 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 1. Para abrir la ventana **orígenes de datos** , en el menú **datos** , haga clic en **Mostrar orígenes de datos**.
 
-2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. En la ventana **orígenes de datos** , seleccione **Agregar nuevo origen de datos** para iniciar el Asistente para la configuración de orígenes de **datos** .
 
 3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
 4. En la página **Elegir un modelo de base de datos**, compruebe que se ha especificado **Conjunto de datos** y haga clic en **Siguiente**.
 
-5. En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
+5. En la página **elegir la conexión de datos** , realice una de las acciones siguientes:
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
@@ -154,7 +154,7 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
 
 6. Haga clic en **Siguiente**.
 
-7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID`.
+7. En **rellenar un nombre de DataTableMethod**, escriba `FillByCustomerID` .
 
 8. Desactive la opción **Devolver un DataTable** y haga clic en **Siguiente**.
 
@@ -184,7 +184,7 @@ Agregue una consulta de TableAdapter a Form2 para cargar los pedidos del cliente
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-app"></a>Ejecutar la aplicación
+## <a name="run-the-app"></a>Ejecución la aplicación
 
 - Presione **F5** para ejecutar la aplicación.
 

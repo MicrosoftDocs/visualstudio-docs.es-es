@@ -6,19 +6,19 @@ manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 23e2db0b42fb12872feb5942d9f4eeaab96d3c2d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489758"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280380"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Creación de un proyecto de servicio en la nube de Azure con Visual Studio
 
-Visual Studio proporciona una plantilla de proyecto que le permite crear un servicio en la nube de [Azure,](/azure/cloud-services/cloud-services-choose-me)que es un servicio de Azure de uso general simple. Una vez creado el proyecto, Visual Studio le permite configurar, depurar e implementar el servicio en la nube en Azure.
+Visual Studio proporciona una plantilla de proyecto que le permite crear un [servicio en la nube de Azure](/azure/cloud-services/cloud-services-choose-me), que es un servicio de Azure de uso general sencillo. Una vez creado el proyecto, Visual Studio le permite configurar, depurar e implementar el servicio en la nube en Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Pasos para crear un proyecto de servicio en la nube de Azure en Visual Studio
 En esta sección se le enseñará cómo crear un proyecto de servicio en la nube de Azure en Visual Studio con uno o más roles web.
@@ -60,7 +60,7 @@ En esta sección se le enseñará cómo crear un proyecto de servicio en la nube
 
 El proyecto de Azure de Visual Studio tiene asociaciones a los proyectos de rol de la solución. El proyecto incluye también el *archivo de definición de servicio* y el *archivo de configuración de servicio*:
 
-- Archivo de **definición** de servicio: define la configuración en tiempo de ejecución de la aplicación, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual.
+- **Archivo de definición de servicio** : define la configuración en tiempo de ejecución de la aplicación, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual.
 - **Archivo de configuración de servicio**: configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol.
 
 Para más información sobre estos archivos, consulte [Configuración de los roles para un servicio en la nube de Azure con Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).

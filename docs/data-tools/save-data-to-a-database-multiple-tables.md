@@ -1,7 +1,7 @@
 ---
 title: Guardar datos en una base de datos (varias tablas)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586255"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281648"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 
@@ -61,7 +61,7 @@ En este tutorial se usa SQL Server Express LocalDB y la base de datos de ejemplo
 
 ## <a name="create-the-windows-forms-application"></a>Creación de la aplicación Windows Forms
 
-Cree un nuevo proyecto de **aplicación** de Windows Forms C# para o Visual Basic. Asigne al proyecto el nombre **UpdateMultipleTablesWalkthrough**.
+Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basic. Asigne al proyecto el nombre **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
@@ -79,7 +79,7 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         O bien,
+         o bien
 
     - Seleccione **Nueva conexión** para abrir el cuadro de diálogo **Agregar o modificar conexión**.
 
@@ -95,7 +95,7 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
 ## <a name="set-the-controls-to-be-created"></a>Establecer los controles que se van a crear
 
-En este tutorial, los datos de la tabla `Customers` están en un diseño de **detalles** en el que los datos se muestran en controles individuales. Los datos de la tabla `Orders` se muestran en un diseño de **cuadrícula** que se muestra en un control <xref:System.Windows.Forms.DataGridView>.
+En este tutorial, los datos de la `Customers` tabla están en un diseño de **detalles** en el que los datos se muestran en controles individuales. Los datos de la `Orders` tabla se muestran en un diseño de **cuadrícula** que se muestra en un <xref:System.Windows.Forms.DataGridView> control.
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Para establecer el tipo de acción de colocación de los elementos de la ventana Orígenes de datos
 
@@ -105,29 +105,29 @@ En este tutorial, los datos de la tabla `Customers` están en un diseño de **de
 
 ## <a name="create-the-data-bound-form"></a>Crear el formulario enlazado a datos
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **orígenes de datos** hasta el formulario.
 
 1. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
-     Los controles enlazados a datos con etiquetas descriptivas aparecen en el formulario, junto con una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>y <xref:System.Windows.Forms.BindingNavigator>.
+     Los controles enlazados a datos con etiquetas descriptivas aparecen en el formulario, junto con una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet,, y.
 
 2. Arrastre el nodo **Orders** relacionado desde la ventana **Orígenes de datos** hasta **Form1**.
 
     > [!NOTE]
     > El nodo **Orders** relacionado se encuentra debajo de la columna **Fax** y es un nodo secundario del nodo **Customers**.
 
-     En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen un `OrdersTableAdapter` y un <xref:System.Windows.Forms.BindingSource>.
+     En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. `OrdersTableAdapter`Y <xref:System.Windows.Forms.BindingSource> aparecen en la bandeja de componentes.
 
 ## <a name="add-code-to-update-the-database"></a>Agregar código para actualizar la base de datos
 
-Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters **Customers** y **Orders**. De forma predeterminada, se agrega un controlador de eventos para el botón **Guardar** del<xref:System.Windows.Forms.BindingNavigator> al código del formulario para enviar las actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de que se produzcan errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
+Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters **Customers** y **Orders**. De forma predeterminada, un controlador de eventos para el botón **Guardar** del <xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar las actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de que se produzcan errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
 
 > [!NOTE]
 > Para mayor claridad, este tutorial no utiliza una transacción. Sin embargo, si va a actualizar dos o más tablas relacionadas, incluya toda la lógica de actualización dentro de una transacción. Una transacción es un proceso que garantiza que todos los cambios relacionados con una base de datos se realicen correctamente antes de que se confirmen los cambios. Para obtener más información, consulte [transacciones y simultaneidad](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
 ### <a name="to-add-update-logic-to-the-application"></a>Para agregar la lógica de actualización a la aplicación
 
-1. Seleccione el botón **Guardar** en el <xref:System.Windows.Forms.BindingNavigator>. Se abrirá el editor de código para el controlador de eventos `bindingNavigatorSaveItem_Click`.
+1. Seleccione el botón **Guardar** en el <xref:System.Windows.Forms.BindingNavigator> . Se abrirá el editor de código para el `bindingNavigatorSaveItem_Click` controlador de eventos.
 
 2. Reemplace el código del controlador de eventos para que llame a los métodos `Update` de los TableAdapters relacionados. El código siguiente crea en primer lugar tres tablas de datos temporales para la información actualizada de cada <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> y <xref:System.Data.DataRowState.Modified>). Las actualizaciones se ejecutan en el orden correcto. El código debe tener este aspecto:
 

@@ -1,7 +1,7 @@
 ---
 title: Guardar datos con los métodos DBDirect de un TableAdapter
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586216"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281614"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 
-En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos llamando a los métodos individuales `Insert`, `Update`y `Delete` según sea necesario para la aplicación (en lugar del método `Update` sobrecargado que realiza las instrucciones UPDATE, INSERT y DELETE en una llamada).
+En este tutorial se proporcionan instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de la base de datos. Puede utilizarlos para ejecutar instrucciones SQL y procedimientos almacenados específicos mediante una llamada a los `Insert` métodos individuales, `Update` y `Delete` según sea necesario para la aplicación (en contraposición al método sobrecargado `Update` que realiza las instrucciones Update, INSERT y DELETE en una llamada).
 
 Durante este tutorial aprenderá a:
 
-- Crear una nueva **aplicación de Windows Forms**.
+- Cree una nueva **aplicación Windows Forms**.
 
 - Crear y configurar un conjunto de datos con el [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -63,7 +63,7 @@ El primer paso es crear una **aplicación Windows Forms**.
 
 1. En Visual Studio, en el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Expanda **Visual C#**  o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo y, a continuación, seleccione **escritorio de Windows**.
 
 3. En el panel central, seleccione el tipo de proyecto **Windows Forms aplicación** .
 
@@ -89,7 +89,7 @@ En este paso se usa el **Asistente para configuración de orígenes de datos** p
 
     - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         O bien,
+         o bien
 
     - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
@@ -99,7 +99,7 @@ En este paso se usa el **Asistente para configuración de orígenes de datos** p
 
 7. En la pantalla **elegir los objetos de base de datos** , expanda el nodo **tablas** .
 
-8. Seleccione la tabla `Region` y, a continuación, seleccione **Finalizar**.
+8. Seleccione la `Region` tabla y, a continuación, seleccione **Finalizar**.
 
      **NorthwindDataSet** se agrega al proyecto y la tabla `Region` aparece en la ventana **Orígenes de datos**.
 
@@ -109,7 +109,7 @@ Cree los controles enlazados a datos arrastrando elementos desde la ventana **Or
 
 Para crear controles enlazados a datos en Windows Forms, arrastre el nodo de la **región** principal desde la ventana **orígenes de datos** hasta el formulario.
 
-En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>y <xref:System.Windows.Forms.BindingNavigator>.
+En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> En la bandeja de componentes aparecen NorthwindDataSet,, y.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para agregar botones que llamarán a los métodos DbDirect de TableAdapter
 
@@ -117,10 +117,10 @@ En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y 
 
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.
 
-    |Name|Text|
+    |Nombre|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
-    |`UpdateButton`|**Actualizar**|
+    |`UpdateButton`|**Update**|
     |`DeleteButton`|**Eliminar**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Para agregar código para insertar nuevos registros en la base de datos

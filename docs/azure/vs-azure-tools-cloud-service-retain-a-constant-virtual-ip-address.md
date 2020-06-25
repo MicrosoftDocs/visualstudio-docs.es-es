@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260724"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280855"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conservación de una dirección IP virtual constante para un servicio en la nube de Azure
 Al actualizar un servicio en la nube que se hospeda en Azure, es posible que deba asegurarse de que no cambia la dirección IP virtual (VIP) del servicio. Muchos de los servicios de administración de dominio usan el Sistema de nombres de dominio (DNS) para registrar nombres de dominio. DNS solo funciona si la dirección VIP sigue siendo la misma. Puede usar el **Asistente para publicación** en Azure Tools para asegurarse de que la dirección VIP del servicio en la nube no cambia cuando la actualiza. Para más información sobre cómo usar la administración de dominios DNS para servicios en la nube, vea [Configuración de un nombre de dominio personalizado para un servicio en la nube de Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -35,11 +35,11 @@ Puede especificar la configuración de implementación en el **Asistente para pu
 
     ![Página de inicio de sesión de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. En la pestaña **Configuración común**, compruebe que el nombre del servicio en la nube en el que está implementando, el **entorno**, la **configuración de compilación** y la **configuración del servicio** son todos correctos.
+4. En la pestaña **configuración común** , compruebe que el nombre del servicio en la nube en el que está implementando, el **entorno**, la **configuración de compilación**y la configuración del **servicio** son todos correctos.
 
     ![Pestaña Configuración común de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. En la pestaña **Configuración avanzada**, compruebe que la **etiqueta de implementación** y la **cuenta de almacenamiento** son correctas. Compruebe que la casilla **Eliminar implementación en caso de error** está desactivada y compruebe que la casilla **Actualización de implementación**. Desactive la casilla **Eliminar implementación en caso de error** para asegurarse de que no se pierda la dirección VIP si se produce un error durante la implementación. Seleccione la casilla **Actualización de implementación** para asegurarse de que no se elimine la implementación y de que no se pierda la dirección VIP al volver a publicar la aplicación.
+5. En la pestaña **Configuración avanzada**, compruebe que la **etiqueta de implementación** y la **cuenta de almacenamiento** son correctas. Compruebe que la casilla **Eliminar implementación en caso de error** está desactivada y compruebe que la casilla **Actualización de implementación**. Al desactivar la casilla **eliminar implementación en caso de error** , se asegura de que no se pierda la dirección VIP si se produce un error durante la implementación. Seleccione la casilla **Actualización de implementación** para asegurarse de que no se elimine la implementación y de que no se pierda la dirección VIP al volver a publicar la aplicación.
 
     ![Pestaña Configuración avanzada de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -52,4 +52,4 @@ Puede especificar la configuración de implementación en el **Asistente para pu
     ![Página de resumen de Publicar aplicación de Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Uso del Asistente Publicar aplicaciones de Azure de Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)
+- [Uso del Asistente Publicar aplicación de Azure de Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)

@@ -1,7 +1,7 @@
 ---
 title: Establecer el control que se va a crear al arrastrar desde la ventana orígenes de datos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Data Sources Window, select controls
 - Windows Forms, displaying data
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586190"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281544"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 
@@ -37,7 +37,7 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 2. En la ventana **Orígenes de datos**, seleccione el elemento que representa el objeto o la tabla de datos que desea establecer.
 
    > [!TIP]
-   > Si la **ventana orígenes de datos** no está abierta, puede abrirla seleccionando **Ver** > **otras ventanas** > **orígenes de datos**.
+   > Si la ventana **orígenes de datos** no está abierta, puede abrirla seleccionando **Ver**  >  **otros**  >  **orígenes de datos**de Windows.
 
 3. Haga clic en el menú desplegable del elemento y, a continuación, en uno de los siguientes elementos en el menú:
 

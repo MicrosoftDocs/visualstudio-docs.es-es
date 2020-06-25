@@ -6,22 +6,22 @@ manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: a01a1fb182fc9d45e4e08dcd9acb8e0ec734f098
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489732"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280868"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 La información para su servicio en la nube se almacena en los siguientes archivos:
 
-- **ServiceDefinition.csdef:** el archivo de definición de servicio define la configuración en tiempo de ejecución del servicio en la nube, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual. Ninguno de los datos almacenados en `ServiceDefinition.csdef` se puede cambiar cuando se ejecuta el rol.
+- **ServiceDefinition. csdef** : el archivo de definición de servicio define la configuración en tiempo de ejecución para el servicio en la nube, incluidos los roles necesarios, los puntos de conexión y el tamaño de la máquina virtual. Ninguno de los datos almacenados en `ServiceDefinition.csdef` se puede cambiar cuando se ejecuta el rol.
 - **ServiceConfiguration.cscfg**: el archivo de configuración de servicio configura el número de instancias de un rol que se ejecutan y los valores de la configuración definida para un rol. Los datos almacenados en `ServiceConfiguration.cscfg` se pueden cambiar mientras se ejecuta el rol.
 
 Para almacenar diferentes valores de la configuración que controlan el funcionamiento de su rol, puede tener varias configuraciones del servicio. Puede usar una configuración de servicio diferente para cada entorno de implementación. Por ejemplo, puede establecer su cadena de conexión de la cuenta de almacenamiento para usar el Emulador de Azure Storage local en una configuración de servicio local y crear otra configuración del servicio para usar Azure Storage en la nube.
@@ -56,7 +56,7 @@ Para mejorar el rendimiento de su servicio en la nube, puede cambiar el número 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -86,7 +86,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -114,7 +114,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
     - **Emulador de Microsoft Azure Storage**: si selecciona esta opción, las demás opciones del cuadro de diálogo están deshabilitadas cuando afectan solo a Azure. Seleccione **Aceptar**.
     - **Su suscripción**: si selecciona esta opción, utilice la lista desplegable para seleccionar e iniciar sesión en una cuenta de Microsoft, o bien agregue una cuenta de Microsoft. Seleccione una suscripción de Azure y una cuenta de almacenamiento. Seleccione **Aceptar**.
-    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para **Conexión** (se recomienda HTTPS para la mayoría de los escenarios.) Seleccione **Aceptar**.
+    - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para la **conexión** (se recomienda HTTPS en la mayoría de los escenarios). Seleccione **Aceptar**.
 
 1. Para eliminar una cadena de conexión, selecciónela y seleccione **Quitar configuración**.
 
@@ -148,7 +148,7 @@ Al usar un valor diferente para cada configuración de servicio, no tendrá que 
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -199,7 +199,7 @@ Puede agregar almacenamiento del sistema de archivos local para cada instancia d
 
 1. Cree o abra un proyecto de servicio en la nube de Azure en Visual Studio.
 
-1. En el **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
+1. En **Explorador de soluciones**, expanda el nodo del proyecto. En el nodo **Roles**, haga clic con el botón derecho en el rol que desea actualizar y, en el menú contextual, seleccione **Propiedades**.
 
     ![Menú contextual del rol de Azure en el Explorador de soluciones](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 

@@ -1,23 +1,23 @@
 ---
 title: No se puede eliminar la propiedad
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 29344a2443708d9ddaed3d90a186ab8424638664
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 91fce94babf443c974a49885263b8e7eb77d9eaa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640488"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281350"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>No se puede eliminar la propiedad \<nombre de propiedad>
+# <a name="the-property-property-name-cannot-be-deleted"></a>La propiedad \<property name> no se puede eliminar
 
-No se puede eliminar la propiedad \<nombre de propiedad> porque se está usando como **propiedad Discriminator** para la herencia entre las clases \<nombre de clase> y \<nombre de clase>
+No se \<property name> puede eliminar la propiedad porque está establecida como la **propiedad Discriminator** para la herencia entre \<class name> y\<class name>
 
 La propiedad seleccionada está establecida como **propiedad Discriminator** para la herencia entre las clases indicadas en el mensaje de error. Las propiedades no se pueden eliminar si participan en la configuración de la herencia entre clases de datos.
 
@@ -33,4 +33,4 @@ Establezca la **propiedad Discriminator** en otra propiedad de la clase de datos
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,7 +1,7 @@
 ---
 title: Leer datos XML en un conjunto de datos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +20,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586333"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281791"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
-ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tutorial, creará una aplicación de Windows que carga datos XML en un conjunto de datos. Después, el conjunto de DataSet se muestra en un control de <xref:System.Windows.Forms.DataGridView>. Por último, en un cuadro de texto se muestra un esquema XML basado en el contenido del archivo XML.
+ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tutorial, creará una aplicación de Windows que carga datos XML en un conjunto de datos. Después, el conjunto de DataSet se muestra en un <xref:System.Windows.Forms.DataGridView> control. Por último, en un cuadro de texto se muestra un esquema XML basado en el contenido del archivo XML.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto
 
-Cree un nuevo proyecto de **aplicación** de Windows Forms C# para o Visual Basic. Asigne al proyecto el nombre **ReadingXML**.
+Cree un nuevo proyecto de **aplicación de Windows Forms** para C# o Visual Basic. Asigne al proyecto el nombre **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generar el archivo XML que se leerá en el conjunto de archivos
 
@@ -41,7 +41,7 @@ Dado que este tutorial se centra en la lectura de datos XML en un conjunto de da
 
 1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
-2. Seleccione **archivo XML**, asigne al archivo el nombre **authors. XML**y, a continuación, seleccione **Agregar**.
+2. Seleccione **archivo XML**, asigne un nombre al archivo **authors.xml**y, a continuación, seleccione **Agregar**.
 
    El archivo XML se carga en el diseñador y está listo para su edición.
 
@@ -107,21 +107,21 @@ Dado que este tutorial se centra en la lectura de datos XML en un conjunto de da
    </Authors_Table>
    ```
 
-4. En el menú **archivo** , seleccione **Guardar authors. XML**.
+4. En el menú **archivo** , seleccione **Guardar authors.xml**.
 
-## <a name="create-the-user-interface"></a>Crear la interfaz de usuario
+## <a name="create-the-user-interface"></a>Creación de la interfaz de usuario
 
 La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
-- <xref:System.Windows.Forms.DataGridView> control que muestra el contenido del archivo XML como datos.
+- <xref:System.Windows.Forms.DataGridView>Control que muestra el contenido del archivo XML como datos.
 
-- <xref:System.Windows.Forms.TextBox> control que muestra el esquema XML del archivo XML.
+- Un <xref:System.Windows.Forms.TextBox> control que muestra el esquema XML para el archivo XML.
 
-- Dos controles <xref:System.Windows.Forms.Button>.
+- Dos <xref:System.Windows.Forms.Button> controles.
 
-  - Un botón lee el archivo XML en el conjunto de archivos y lo muestra en el control <xref:System.Windows.Forms.DataGridView>.
+  - Un botón lee el archivo XML en el conjunto de archivos y lo muestra en el <xref:System.Windows.Forms.DataGridView> control.
 
-  - Un segundo botón extrae el esquema del conjunto de DataSet y, a través de un <xref:System.IO.StringWriter> lo muestra en el control <xref:System.Windows.Forms.TextBox>.
+  - Un segundo botón extrae el esquema del conjunto de DataSet y, a través de un, <xref:System.IO.StringWriter> lo muestra en el <xref:System.Windows.Forms.TextBox> control.
 
 ### <a name="to-add-controls-to-the-form"></a>Para agregar controles al formulario
 
@@ -129,26 +129,26 @@ La interfaz de usuario de esta aplicación se compone de lo siguiente:
 
 2. En el **cuadro de herramientas**, arrastre los siguientes controles al formulario:
 
-    - Un control <xref:System.Windows.Forms.DataGridView>
+    - Un <xref:System.Windows.Forms.DataGridView> control
 
-    - Un control <xref:System.Windows.Forms.TextBox>
+    - Un <xref:System.Windows.Forms.TextBox> control
 
-    - Dos controles <xref:System.Windows.Forms.Button>
+    - Dos <xref:System.Windows.Forms.Button> controles
 
 3. Establezca las siguientes propiedades:
 
-    |Control|La propiedad|Configuración de|
+    |Control|Propiedad.|Parámetro|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Vertical**|
-    |`Button1`|**Name**|`ReadXmlButton`|
-    ||**Text**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**Text**|`Show Schema`|
+    |`Button1`|**Nombre**|`ReadXmlButton`|
+    ||**Texto**|`Read XML`|
+    |`Button2`|**Nombre**|`ShowSchemaButton`|
+    ||**Texto**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Crear el conjunto de datos que recibe los datos XML
 
-En este paso, creará un nuevo conjunto de DataSet denominado `authors`. Para obtener más información acerca de los conjuntos de datos, vea [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+En este paso, creará un nuevo conjunto de nuevos denominado `authors` . Para obtener más información acerca de los conjuntos de datos, vea [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 1. En **Explorador de soluciones**, seleccione el archivo de origen de **Form1**y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
 
@@ -158,34 +158,34 @@ En este paso, creará un nuevo conjunto de DataSet denominado `authors`. Para ob
 
      **DataSet1** se agrega a la bandeja de componentes.
 
-4. En la ventana **propiedades** , establezca las propiedades **Name** y <xref:System.Data.DataSet.DataSetName%2A> para`AuthorsDataSet`.
+4. En la ventana **propiedades** , establezca el **nombre** y <xref:System.Data.DataSet.DataSetName%2A> las propiedades de `AuthorsDataSet` .
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Crear el controlador de eventos para leer el archivo XML en el conjunto de archivos
 
-El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continuación, establece las propiedades del control <xref:System.Windows.Forms.DataGridView> que lo enlazan al conjunto de DataSet.
+El botón **leer XML** lee el archivo XML en el conjunto de archivos. A continuación, establece las propiedades del <xref:System.Windows.Forms.DataGridView> control que lo enlazan al conjunto de DataSet.
 
 1. En **Explorador de soluciones**, seleccione **Form1**y, a continuación, seleccione el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones** .
 
 2. Seleccione el botón **leer XML** .
 
-     El **Editor de código** se abre en el controlador de eventos `ReadXmlButton_Click`.
+     El **Editor de código** se abre en el `ReadXmlButton_Click` controlador de eventos.
 
-3. Escriba el código siguiente en el controlador de eventos `ReadXmlButton_Click`:
+3. Escriba el código siguiente en el `ReadXmlButton_Click` controlador de eventos:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. En el código del controlador de eventos `ReadXMLButton_Click`, cambie la entrada `filepath =` a la ruta de acceso correcta.
+4. En el `ReadXMLButton_Click` código del controlador de eventos, cambie la `filepath =` entrada a la ruta de acceso correcta.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Crear el controlador de eventos para mostrar el esquema en el cuadro de texto
 
-El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que se rellena con el esquema y se muestra en el control <xref:System.Windows.Forms.TextBox>.
+El botón **Mostrar esquema** crea un <xref:System.IO.StringWriter> objeto que se rellena con el esquema y se muestra en el <xref:System.Windows.Forms.TextBox> control.
 
 1. En **Explorador de soluciones**, seleccione **Form1**y, a continuación, seleccione el botón **Diseñador de vistas** .
 
 2. Seleccione el botón **Mostrar esquema** .
 
-     El **Editor de código** se abre en el controlador de eventos `ShowSchemaButton_Click`.
+     El **Editor de código** se abre en el `ShowSchemaButton_Click` controlador de eventos.
 
 3. Pegue el código siguiente en el controlador de eventos `ShowSchemaButton_Click`.
 
@@ -210,7 +210,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 Este tutorial le enseña los aspectos básicos de la lectura de un archivo XML en un conjunto de datos, así como la creación de un esquema basado en el contenido del archivo XML. Estas son algunas de las tareas que puede realizar a continuación:
 
-- Edite los datos del conjunto de datos y vuelva a escribirlos como XML. Para obtener más información, vea <xref:System.Data.DataSet.WriteXml%2A>.
+- Edite los datos del conjunto de datos y vuelva a escribirlos como XML. Para más información, consulte <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Edite los datos del conjunto de datos y escríbalos en una base de datos.
 

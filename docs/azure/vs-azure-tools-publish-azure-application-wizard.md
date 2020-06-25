@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: bc3c58343c699833a5a12eee6f79c023f57a2e85
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489654"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280536"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso del Asistente Publicar aplicación de Azure de Visual Studio
 
@@ -63,7 +63,7 @@ Puede tener acceso al Asistente Publicar aplicación de Azure de dos formas seg�
 
 **Habilitar Escritorio remoto para todos los roles**: seleccione esta opción si desea poder conectarse de forma remota al servicio. Esta opción se emplea principalmente para la solución de problemas. Para más información, vea [Habilitación de la conexión a Escritorio remoto para un rol de Azure Cloud Services mediante Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-**Habilitar Web Deploy para todos los roles web**: seleccione esta opción para habilitar la implementación web para el servicio. Debe seleccionar también la opción **Habilitar Escritorio remoto para todos los roles** para usar esta característica. Para obtener más información, vea [Publicación de un servicio](vs-azure-tools-publishing-a-cloud-service.md)en la nube mediante Visual Studio .
+**Habilitar Web Deploy para todos los roles web**: seleccione esta opción para habilitar la implementación web para el servicio. Debe seleccionar también la opción **Habilitar Escritorio remoto para todos los roles** para usar esta característica. Para obtener más información, vea [publicar un servicio en la nube con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 ## <a name="settings-page---advanced-settings-tab"></a>Página Configuración: pestaña Configuración avanzada
 
@@ -118,6 +118,6 @@ Una vez que ajuste toda la configuración de la implementación del proyecto, se
 
 - [Prueba del rendimiento de un servicio en la nube de Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales.](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Configuración de diagnósticos para Azure Cloud Services y virtual machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [¿Qué es Application Insights?](/azure/application-insights/app-insights-overview)

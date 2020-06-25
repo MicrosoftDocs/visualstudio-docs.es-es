@@ -1,7 +1,7 @@
 ---
 title: Desactivar restricciones al llenar un conjunto de datos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586138"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281271"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Desactivar restricciones al llenar un conjunto de datos
 
@@ -34,7 +34,7 @@ Si un conjunto de DataSet contiene restricciones (como las restricciones Foreign
 Si no hubiera ningún mecanismo para permitir la suspensión temporal de la restricción, se produciría un error cada vez que se intentara cargar un registro en la tabla secundaria. Otra manera de suspender todas las restricciones de un conjunto de datos es mediante las propiedades <xref:System.Data.DataRow.BeginEdit%2A> y <xref:System.Data.DataRow.EndEdit%2A>.
 
 > [!NOTE]
-> Los eventos de validación (por ejemplo, <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.RowChanging>) no se generarán cuando se desactiven las restricciones.
+> Los eventos de validación (por ejemplo, <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.RowChanging> ) no se generarán cuando se desactiven las restricciones.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Para suspender las restricciones de actualización mediante programación
 
@@ -51,5 +51,5 @@ Si no hubiera ningún mecanismo para permitir la suspensión temporal de la rest
 
 ## <a name="see-also"></a>Vea también
 
-- [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Rellenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)

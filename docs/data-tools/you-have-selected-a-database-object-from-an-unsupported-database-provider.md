@@ -1,23 +1,23 @@
 ---
 title: Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7e24604f965a7f518ee7802e2eeb6a84e74ddb
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 5721cf340a09c138521e7134a0d19484561eb3a0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113266"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280985"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido
 
-Object Relational **Designer** solo admite el proveedor de datos de .NET Framework para SQL Server (<xref:System.Data.SqlClient>). Aunque se puede hacer clic en **Aceptar** y continuar trabajando con objetos de un proveedor de base de datos no admitido, es posible que se produzca un comportamiento inesperado en tiempo de ejecución.
+Object Relational **Designer** solo admite el proveedor de datos de .NET Framework para SQL Server ( <xref:System.Data.SqlClient> ). Aunque se puede hacer clic en **Aceptar** y continuar trabajando con objetos de un proveedor de base de datos no admitido, es posible que se produzca un comportamiento inesperado en tiempo de ejecución.
 
 > [!NOTE]
 > Se admiten únicamente las conexiones de datos que usan el proveedor de datos .NET Framework para SQL Server.
@@ -30,4 +30,4 @@ Object Relational **Designer** solo admite el proveedor de datos de .NET Framewo
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

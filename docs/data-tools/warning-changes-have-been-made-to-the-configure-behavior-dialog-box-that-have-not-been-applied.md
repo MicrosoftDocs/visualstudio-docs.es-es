@@ -1,25 +1,25 @@
 ---
 title: 'Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad2a108c0ce4162beecd77ac0a761d4950904156
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 20889a2fcaf9f44cc21f90ed9b164d4457981764
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648043"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281037"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se pueden aplicar.
 
 Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado. ¿Desea aplicar los cambios?
 
-El cuadro de diálogo **configurar comportamiento** permite configurar el comportamiento de `Insert`, `Update` y `Delete` de todas las clases disponibles. Este mensaje aparece al seleccionar una nueva combinación de **Clase** y **Comportamiento** cuando todavía no se ha aplicado el cambio anterior.
+El cuadro de diálogo **configurar comportamiento** permite configurar `Insert` , `Update` y el `Delete` comportamiento de todas las clases disponibles. Este mensaje aparece al seleccionar una nueva combinación de **Clase** y **Comportamiento** cuando todavía no se ha aplicado el cambio anterior.
 
 ## <a name="change-options"></a>Cambiar opciones
 
@@ -29,4 +29,4 @@ El cuadro de diálogo **configurar comportamiento** permite configurar el compor
 
 ## <a name="see-also"></a>Vea también
 
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

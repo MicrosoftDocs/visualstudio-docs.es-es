@@ -4,24 +4,24 @@ description: Obtenga información sobre cómo depurar un servicio en la nube con
 author: mikejo5000
 manager: jillfra
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: c61af4a08c61cbfd16d33e2b5cf7402960163f12
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81489719"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280601"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depuración de un servicio en la nube de Azure publicado con Visual Studio e IntelliTrace
 Con IntelliTrace, puede registrar información de depuración amplia para una instancia de rol cuando se ejecuta en Azure. Si necesita encontrar la causa de un problema, puede utilizar los registros de IntelliTrace para recorrer su código desde Visual Studio como si se estuviera ejecutando en Azure. De hecho, IntelliTrace graba datos de entorno y ejecución de código de clave  cuando su aplicación de Azure se ejecuta como servicio en la nube en Azure y le permite reproducir los datos grabados desde Visual Studio.
 
 Puede utilizar IntelliTrace si tiene Visual Studio Enterprise instalado y su aplicación de Azure tiene como destino .NET Framework 4 o una versión posterior. IntelliTrace recopila información para sus roles de Azure. Las máquinas virtuales para estos roles siempre ejecutan sistemas operativos de 64 bits.
 
-Como alternativa, puede usar la depuración remota para adjuntar directamente a un servicio en la nube que se ejecuta en Azure.As a alternative, you can use [remote debugging](vs-azure-tools-debugging-cloud-services-overview.md) to attach directly to a cloud service that's running in Azure.
+Como alternativa, puede usar la [depuración remota](vs-azure-tools-debugging-cloud-services-overview.md) para conectarse directamente a un servicio en la nube que se ejecuta en Azure.
 
 > [!IMPORTANT]
 > IntelliTrace está pensado solo para escenarios de depuración y no debe usarse para una implementación de producción.

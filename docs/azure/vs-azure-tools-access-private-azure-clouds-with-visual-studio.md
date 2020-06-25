@@ -6,15 +6,15 @@ manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.custom: vs-azure
 ms.workload: azure-vs
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 57f92aa797e589bd48cc52296b710617cbe8d732
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544372"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280393"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Acceso a nubes privadas de Azure con Visual Studio
 
