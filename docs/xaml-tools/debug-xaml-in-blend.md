@@ -6,15 +6,14 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
-ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
+ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "82921260"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331039"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 
@@ -55,7 +54,7 @@ En el ejemplo siguiente se le guiará a través de una sesión de depuración XA
 
 3. En la lista de plantillas de proyecto, haga clic en **aplicación vacía (Windows universal)**.
 
-4. En el cuadro de texto **nombre** , `DebuggingSample`escriba.
+4. En el cuadro de texto **nombre** , escriba `DebuggingSample` .
 
 5. En el cuadro de texto **Ubicación**, compruebe la ubicación del proyecto.
 
@@ -89,11 +88,11 @@ En el ejemplo siguiente se le guiará a través de una sesión de depuración XA
     </Grid>
     ```
 
-10. Presione **Ctrl**+**MAYÚS**+**B** para compilar el proyecto.
+10. Presione **Ctrl** + **MAYÚS** + **B** para compilar el proyecto.
 
     Aparece un mensaje de error para avisarle de que el proyecto no se puede compilar, y el panel **Resultados** con los errores aparece en la parte inferior de la aplicación.
 
-    ![Depurar XAML en Blend para Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
+    ![Depuración de XAML en Blend para Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
 ### <a name="resolve-xaml-errors"></a>Resolver errores de XAML
 
@@ -113,7 +112,7 @@ Cuando se detectan errores de XAML, la superficie de diseño muestra una alerta 
 
     ![Depuración de XAML en Blend para Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Presione **Ctrl**+**MAYÚS**+**B** para compilar el proyecto y confirmar que no hay ningún error restante.
+    Presione **Ctrl** + **MAYÚS** + **B** para compilar el proyecto y confirmar que no hay ningún error restante.
 
 ## <a name="debug-in-visual-studio"></a>Depurar en Visual Studio
 

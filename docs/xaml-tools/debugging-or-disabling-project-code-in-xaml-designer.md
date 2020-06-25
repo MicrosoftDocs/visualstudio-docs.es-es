@@ -1,17 +1,17 @@
 ---
 title: Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921170"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331062"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
@@ -35,7 +35,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 1. En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para recargar el diseñador** .
 
-2. En la barra de menús, elija **depurar** > **iniciar depuración** para compilar y ejecutar la aplicación.
+2. En la barra de menús, elija **depurar**  >  **iniciar depuración** para compilar y ejecutar la aplicación.
 
      Si la aplicación se compila y se ejecuta correctamente, la excepción en tiempo de diseño puede deberse a que su código de proyecto se está ejecutando en el diseñador.
 
@@ -53,7 +53,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 5. Establezca un punto de interrupción en el código del proyecto.
 
-6. En la nueva instancia de Visual Studio, en la barra de menús, elija **depurar** > **asociar al proceso**.
+6. En la nueva instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **asociar al proceso**.
 
 7. En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe**y luego seleccione el botón **Asociar** .
 
@@ -61,7 +61,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
      Este es el proceso para el Diseñador XAML en la primera instancia de Visual Studio.
 
-8. En la primera instancia de Visual Studio, en la barra de menús, elija **depurar** > **iniciar depuración**.
+8. En la primera instancia de Visual Studio, en la barra de menús, elija **depurar**  >  **iniciar depuración**.
 
      Ahora puede entrar en el código que se ejecuta en el diseñador.
 
@@ -96,6 +96,6 @@ Para cambiar las opciones de visualización de controles, haga clic en el icono 
 
 Cuando selecciona **Mostrar solo los controles de la plataforma**, todos los controles personalizados que provienen de los SDK, controles de usuario de cliente, etc. no se representarán por completo. En su lugar, los reemplazan controles de reserva para mostrar el tamaño y la posición del control.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Diseño de XAML en Visual Studio y Blend para Visual Studio](designing-xaml-in-visual-studio.md)

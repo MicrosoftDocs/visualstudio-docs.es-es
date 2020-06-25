@@ -1,7 +1,7 @@
 ---
 title: Enlace a datos en el Diseñador XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -10,12 +10,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921104"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330746"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
@@ -95,7 +95,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
 
      El control `TextBlock` debe mostrar el valor predeterminado de 0 como texto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Crear una IU con el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Agregar convertidor de valores (Cuadro de diálogo)](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

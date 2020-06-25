@@ -1,7 +1,7 @@
 ---
 title: Cómo crear y aplicar un recurso
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921146"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330118"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 
@@ -73,6 +73,6 @@ Siempre que crea un recurso a partir de una propiedad existente, [Style](xref:Wi
 
 3. Modifique las opciones del recurso.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear una UI usando el Diseñador XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

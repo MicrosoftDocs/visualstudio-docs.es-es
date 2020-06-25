@@ -1,21 +1,22 @@
 ---
 title: Editor de código XAML
+description: Un paseo por el editor de código XAML en Visual Studio
 ms.date: 06/16/2020
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d789ac099e6d0bba7a44f0d6efd7a19beec54c19
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289935"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329172"
 ---
 # <a name="xaml-code-editor"></a>Editor de código XAML
 
-El editor de código XAML del [IDE de Visual Studio](../get-started/visual-studio-ide.md) incluye todas las herramientas que necesita para crear aplicaciones de WPF y UWP para la plataforma Windows y para [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). En este artículo se describe el rol que reproduce el editor de código cuando se desarrollan aplicaciones basadas en XAML y las características que son exclusivas del editor de código XAML en Visual Studio 2019.
+El editor de código XAML del [IDE de Visual Studio](../get-started/visual-studio-ide.md) incluye todas las herramientas que necesita para crear aplicaciones de WPF y UWP para la plataforma Windows y para [Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/). En este artículo se describe el rol que el editor de código reproduce cuando se desarrollan aplicaciones basadas en XAML y las características que son exclusivas del editor de código XAML en Visual Studio 2019.
 
 Para empezar, echemos un vistazo al IDE (entorno de desarrollo integrado) con un proyecto de WPF abierto. En la imagen siguiente se muestran algunas de las herramientas de IDE clave que se van a usar junto con el editor de código XAML.
 
@@ -182,7 +183,7 @@ La mayoría de las características siguientes están disponibles universalmente
 
 Los fragmentos de código son pequeños bloques de código reutilizable que puede insertar en un archivo de código mediante el comando del menú contextual **Insertar fragmento** de código o una combinación de métodos abreviados de teclado (**Ctrl** + **K**, **Ctrl** + **X**). Hemos mejorado [IntelliSense](../ide/using-intellisense.md) para que admita la visualización de fragmentos de código XAML, que funcionan tanto para fragmentos de código integrados como para los fragmentos de código personalizados que se agregan manualmente. Algunos fragmentos de código XAML predeterminados son `#region` , `Column definition` , `Row definition` , `Setter` y `Tag` .
 
-![El editor de código XAML con opciones de #region que se muestran en IntelliSense](media/xaml-code-snippets.png "Captura de pantalla del editor de código XAML con opciones de #region que se muestran en IntelliSense")
+![Editor de código XAML con opciones de fragmentos de código XAML que se muestran en IntelliSense](media/xaml-code-snippets.png "Captura de pantalla del editor de código XAML con opciones de fragmento de código XAML que se muestran en IntelliSense")
 
 Para obtener más información, vea las páginas [fragmentos de código](../ide/code-snippets.md) y fragmentos de [código de C#](../ide/visual-csharp-code-snippets.md) .
 

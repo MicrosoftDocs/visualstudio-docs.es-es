@@ -1,23 +1,23 @@
 ---
 title: Errores y advertencias de XAML
 ms.date: 03/06/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
-author: karann-msft
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a36a91f40fd4857e50d5262c1598ee096697e7
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 9b46bf15390f12e7fb0873c7e4c39abf94530821
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "82921332"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330418"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errores y advertencias de XAML
 
-Al crear XAML, Visual Studio analiza el código a medida que lo escribe. Cuando se detecta un error, aparece un subrayado ondulado en una línea de código. Al mantener el mouse sobre el subrayado ondulado se proporciona más información sobre el error o la advertencia. En el caso de algunos errores y advertencias, se muestra una bombilla de acción rápida y el uso de **Ctrl**+**.** se muestran las opciones para corregir el problema.
+Al crear XAML, Visual Studio analiza el código a medida que lo escribe. Cuando se detecta un error, aparece un subrayado ondulado en una línea de código. Al mantener el mouse sobre el subrayado ondulado se proporciona más información sobre el error o la advertencia. En el caso de algunos errores y advertencias, se muestra una bombilla de acción rápida y el uso de **Ctrl** + **.** se muestran las opciones para corregir el problema.
 
 ## <a name="error-types"></a>Tipos de errores
 
