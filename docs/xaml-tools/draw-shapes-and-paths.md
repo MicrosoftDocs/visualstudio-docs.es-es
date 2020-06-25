@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921158"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350828"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
@@ -86,7 +86,7 @@ Use la herramienta **Selección** para seleccionar el trazado. Use la herramient
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertir una forma en un trazado
 
-Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado. Seleccione la forma y, a continuación, seleccione **Format** > **path** > **convertir en trazado**.
+Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado. Seleccione la forma y, a continuación, seleccione **Format**  >  **path**  >  **convertir en trazado**.
 
 **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajar con trazados: convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
@@ -99,11 +99,14 @@ Los trazados y las formas se pueden combinar en un único trazado.
 
 ![Combinar trazados](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|||||
-|-|-|-|-|
-|![Dos formas antes de su combinación](../designers/media/b1_1.png)|Dos formas antes de su combinación|![Intersect](../designers/media/b1_4.png)|Intersect|
-|![Unir](../designers/media/b1_2.png)|Unir|![Excluir superposición](../designers/media/b1_5.png)|Excluir superposición|
-|![Dividir](../designers/media/b1_3.png)|Dividir|![Restar](../designers/media/b1_6.png)|Restar|
+|Number|Acción|
+|-|-|
+|![Dos formas antes de su combinación](../designers/media/b1_1.png)|Dos formas antes de su combinación|
+|![Unir](../designers/media/b1_2.png)|Unir|
+|![Dividir](../designers/media/b1_3.png)|Dividir|
+|![Intersect](../designers/media/b1_4.png)|Intersect|
+|![Excluir superposición](../designers/media/b1_5.png)|Excluir superposición|
+|![Restar](../designers/media/b1_6.png)|Restar|
 
 **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajar con trazados: combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
