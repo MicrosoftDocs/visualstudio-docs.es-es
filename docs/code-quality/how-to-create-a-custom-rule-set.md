@@ -1,7 +1,7 @@
 ---
 title: Crear un conjunto de reglas de análisis de código personalizado
 ms.date: 11/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587555"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371916"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -24,7 +24,7 @@ Puede crear un conjunto de reglas personalizado para satisfacer las necesidades 
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Crear un conjunto de reglas personalizado a partir de un conjunto de reglas existente
 
-Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas y puede cambiar la acción que se produce cuando se infringe una regla&mdash;por ejemplo, mostrar una advertencia o un error.
+Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas, y puede cambiar la acción que se produce cuando se infringe una regla; &mdash; por ejemplo, mostrar una advertencia o un error.
 
 1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
@@ -46,7 +46,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
      \- o -
 
-   - Seleccione **\<examinar >** para especificar un conjunto de reglas existente que no esté en la lista.
+   - Seleccione esta **\<Browse>** configuración para especificar un conjunto de reglas existente que no esté en la lista.
 
 4. Seleccione **abrir** para mostrar las reglas en el editor de conjuntos de reglas.
 
@@ -57,11 +57,11 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione **archivo** > **nuevo** **archivo**de > o presione **Ctrl**+**N**.
+1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o presione **Ctrl** + **N**.
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. Seleccione **Abrir**.
+3. seleccione **Open**(Abrir).
 
    El nuevo archivo *. ruleset* se abre en el editor de conjuntos de reglas.
 
@@ -76,13 +76,13 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 ::: moniker range="vs-2017"
 
-3. Seleccione **\<elegir varios conjuntos de reglas >** de **ejecutar este conjunto de reglas**.
+3. Seleccione **\<Choose multiple rule sets>** desde **ejecutar este conjunto de reglas**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Seleccione **\<elegir varios conjuntos de reglas >** de **reglas activas**.
+3. Seleccione una **\<Choose multiple rule sets>** de **las reglas activas**.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 - Si se muestra la misma regla dos o más veces en un conjunto de reglas con la *misma* gravedad, puede ver la siguiente advertencia en el **lista de errores**:
 
-   **CA0063: no se pudo cargar el archivo de conjunto de reglas '\[el]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas.**
+   **CA0063: no se pudo cargar el archivo de conjunto de reglas ' \[ Your]. ruleset ' o uno de sus archivos de conjunto de reglas dependientes. El archivo no se ajusta al esquema del conjunto de reglas.**
 
 - Si el conjunto de reglas incluye un conjunto de reglas secundarias mediante una etiqueta **include** , y la regla secundaria y primaria establece ambas listas en la misma regla pero con diferentes gravedades, la gravedad del conjunto de reglas primario tiene prioridad. Por ejemplo:
 
@@ -136,7 +136,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 ## <a name="name-and-description"></a>Nombre y descripción
 
-Para cambiar el nombre para mostrar de un conjunto de reglas abierto en el editor, abra la ventana **propiedades** . para ello, seleccione **Ver** > **ventana Propiedades** en la barra de menús. Escriba el nombre para mostrar en el cuadro **nombre** . También puede escribir una descripción para el conjunto de reglas.
+Para cambiar el nombre para mostrar de un conjunto de reglas abierto en el editor, abra la ventana **propiedades** . para ello, seleccione la ventana **Ver**  >  **propiedades** en la barra de menús. Escriba el nombre para mostrar en el cuadro **nombre** . También puede escribir una descripción para el conjunto de reglas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

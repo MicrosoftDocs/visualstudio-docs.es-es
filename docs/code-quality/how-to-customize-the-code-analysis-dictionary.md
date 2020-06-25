@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Personalizar el diccionario de análisis de código'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587529"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371877"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 
@@ -27,7 +27,7 @@ Por ejemplo, suponga que el código contiene una clase denominada **DoorKnokker*
 
 ## <a name="to-create-a-custom-dictionary"></a>Para crear un diccionario personalizado
 
-Cree un archivo denominado **CustomDictionary. XML**.
+Cree un archivo denominado **CustomDictionary.xml**.
 
 Defina las palabras personalizadas mediante la siguiente estructura XML:
 
@@ -66,15 +66,15 @@ Puede modificar el comportamiento del Diccionario de análisis de código agrega
 
 - [Diccionario/palabras/desconocido/palabra](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Diccionario/palabras/en desuso/término [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Diccionario/palabras/en desuso/término [ @PreferredAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [Diccionario/palabras/compuesto/término [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Diccionario/palabras/compuesto/término [ @CompoundAlternate ]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Diccionario/palabras/DiscreteExceptions/término](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/acrónimos/CasingExceptions/acrónimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="BKMK_DictionaryWordsRecognizedWord"></a>Diccionario/palabras/reconocido/palabra
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Diccionario/palabras/reconocido/palabra
 
 Para incluir un término en la lista de términos que el análisis de código identifica como correctamente escrito, agregue el término como texto interno de un elemento Dictionary/Words/reconocid/Word. Los términos de los elementos Dictionary/Words/reconocid/Word no distinguen mayúsculas de minúsculas.
 
@@ -95,21 +95,21 @@ Para incluir un término en la lista de términos que el análisis de código id
 
 Los términos en Diccionario/palabras/nodos reconocidos se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
 
-- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
+- [CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703.md)
+- [CA1703: La ortografía de las cadenas de recursos debe ser correcta](../code-quality/ca1703.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704.md)
+- [CA1704: La ortografía de los identificadores debe ser correcta](../code-quality/ca1704.md)
 
-- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
+- [CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
 
 - [CA1726: Utilizar términos preferidos](../code-quality/ca1726.md)
 
-- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)
+- [CA2204: Los literales deben estar escritos correctamente](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Diccionario/palabras/desconocido/palabra
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Diccionario/palabras/desconocido/palabra
 
 Para excluir un término de la lista de términos que el análisis de código identifica como correctamente escrito, agregue el término que se va a excluir como texto interno de un elemento Dictionary/Words/unreconocible/Word. Los términos de los elementos Dictionary/Words/unreconocible/Word no distinguen mayúsculas de minúsculas.
 
@@ -130,21 +130,21 @@ Para excluir un término de la lista de términos que el análisis de código id
 
 Los términos del nodo Diccionario/palabras/no reconocido se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
 
-- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
+- [CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703.md)
+- [CA1703: La ortografía de las cadenas de recursos debe ser correcta](../code-quality/ca1703.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704.md)
+- [CA1704: La ortografía de los identificadores debe ser correcta](../code-quality/ca1704.md)
 
-- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
+- [CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
 
 - [CA1726: Utilizar términos preferidos](../code-quality/ca1726.md)
 
-- [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204.md)
+- [CA2204: Los literales deben estar escritos correctamente](../code-quality/ca2204.md)
 
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Diccionario/palabras/en desuso/término [@PreferredAlternate]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Diccionario/palabras/en desuso/término [ @PreferredAlternate ]
 
 Para incluir un término en la lista de términos que el análisis de código identifica como desusado, agregue el término como texto interno de un elemento Dictionary/Words/deprecated/term. Un término en desuso es una palabra que está escrita correctamente pero que no debe usarse.
 
@@ -171,17 +171,17 @@ Para incluir un término alternativo sugerido en la advertencia, especifique la 
 
 Los términos del nodo Diccionario/palabras/en desuso se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
 
-- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
+- [CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703.md)
+- [CA1703: La ortografía de las cadenas de recursos debe ser correcta](../code-quality/ca1703.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704.md)
+- [CA1704: La ortografía de los identificadores debe ser correcta](../code-quality/ca1704.md)
 
 - [CA1726: Utilizar términos preferidos](../code-quality/ca1726.md)
 
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Diccionario/palabras/compuesto/término [@CompoundAlternate]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Diccionario/palabras/compuesto/término [ @CompoundAlternate ]
 
 El diccionario integrado identifica algunos términos como términos únicos y discretos en lugar de un término compuesto. Para incluir un término en la lista de términos que el análisis de código identifica como una palabra compuesta y para especificar la grafía correcta del término, agregue el término como texto interno de un elemento de diccionario/palabras/compuesto/término. En el atributo CompoundAlternate del elemento term, especifique las palabras individuales que componen el término compuesto capitalizando la primera letra de las palabras individuales (mayúsculas y minúsculas Pascal). Tenga en cuenta que el término especificado en el texto interno se agrega automáticamente a la lista de diccionario, palabras y DiscreteExceptions.
 
@@ -206,15 +206,15 @@ El diccionario integrado identifica algunos términos como términos únicos y d
 
 Los términos del nodo Diccionario/palabras/compuesto se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
 
-- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
+- [CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
 
-- [CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703.md)
+- [CA1703: La ortografía de las cadenas de recursos debe ser correcta](../code-quality/ca1703.md)
 
-- [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704.md)
+- [CA1704: La ortografía de los identificadores debe ser correcta](../code-quality/ca1704.md)
 
-### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Diccionario/palabras/DiscreteExceptions/término
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Diccionario/palabras/DiscreteExceptions/término
 
 Para excluir un término en la lista de términos que el análisis de código identifica como una sola palabra independiente cuando el término se comprueba con las reglas de mayúsculas y minúsculas de las palabras compuestas, agregue el término como texto interno de un elemento Dictionary/Words/DiscreteExceptions/term. El término en el elemento Dictionary/Words/DiscreteExceptions/term no distingue entre mayúsculas y minúsculas.
 
@@ -235,11 +235,11 @@ Para excluir un término en la lista de términos que el análisis de código id
 
 Los términos del nodo Dictionary/Words/DiscreteExceptions se aplican a las siguientes reglas de análisis de código:
 
-- [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
+- [CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1701.md)
 
-- [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
+- [CA1702: En las palabras compuestas se deben utilizar mayúsculas y minúsculas correctamente](../code-quality/ca1702.md)
 
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/acrónimos/CasingExceptions/acrónimo
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/acrónimos/CasingExceptions/acrónimo
 
 Para incluir un acrónimo en la lista de términos que el análisis de código identifica como escrito correctamente e indicar cómo se comprueba el acrónimo en el término según las reglas de mayúsculas y minúsculas de las palabras compuestas, agregue el término como texto interno de un elemento Dictionary/acrónimos/CasingExceptions/acronym. El acrónimo del elemento Dictionary/acrónimos/CasingExceptions/acronym distingue mayúsculas de minúsculas.
 
@@ -260,9 +260,9 @@ Para incluir un acrónimo en la lista de términos que el análisis de código i
 
 Los términos del nodo Dictionary/acrónimos/CasingExceptions se aplican a las siguientes reglas de análisis de código:
 
-- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
+- [CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709.md)
 
-## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Para aplicar un diccionario personalizado a un proyecto
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Para aplicar un diccionario personalizado a un proyecto
 
 1. En **Explorador de soluciones**, use uno de los procedimientos siguientes:
 
@@ -270,7 +270,7 @@ Los términos del nodo Dictionary/acrónimos/CasingExceptions se aplican a las s
 
 3. Para agregar un diccionario compartido entre dos o más proyectos, busque el archivo que desea compartir en el cuadro de diálogo **Agregar elemento existente** , haga clic en la flecha hacia abajo del botón **Agregar** y, a continuación, haga clic en **Agregar como vínculo**.
 
-4. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre del archivo **CustomDictionary. XML** y haga clic en **propiedades**.
+4. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre de archivo **CustomDictionary.xml** y haga clic en **propiedades**.
 
 5. En la lista **acción de compilación** , seleccione **CodeAnalysisDictionary**.
 
