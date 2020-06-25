@@ -9,19 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "82921236"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329093"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Visualización de datos en Blend para Visual Studio
 
 Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecen en la aplicación al ejecutarla.
 
 > [!NOTE]
-> El panel **datos** de Blend solo se admite para los proyectos que tienen como destino .NET Framework. No se admite para proyectos o proyectos de UWP que tengan como destino .NET Core. 
+> El panel **datos** de Blend solo se admite para los proyectos que tienen como destino .NET Framework. No se admite para proyectos o proyectos de UWP que tengan como destino .NET Core.
 
 ## <a name="generate-sample-data"></a>Generación de datos de ejemplo
 
@@ -45,6 +45,6 @@ Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el p
 
 **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mezclar algunos enlaces de datos con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Creación de una interfaz de usuario con Blend para Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e26a889c65b80d5a83cc6b2b3a726aa9ad2319
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8b1a9d109b833d17783beb39c5f34cf6b9ed3274
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184463"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292898"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -40,7 +40,7 @@ En la siguiente lista se muestran los resultados de las métricas de código que
 
 - **Líneas de código fuente** : indica el número exacto de líneas de código fuente que se encuentran en el archivo de código fuente, incluidas las líneas en blanco. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Líneas de código ejecutable** : indica el número aproximado de operaciones o líneas de código ejecutable. Se trata de un recuento del número de operaciones en el código ejecutable. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. métricas (2.9.5). Normalmente, el valor es una coincidencia aproximada con la métrica anterior, **líneas de código**, que es la métrica basada en instrucciones de MSIL utilizada en el modo heredado.
+- **Líneas de código ejecutable** : indica el número aproximado de operaciones o líneas de código ejecutable. Se trata de un recuento del número de operaciones en el código ejecutable. Esta métrica está disponible a partir de Visual Studio 2019, versión 16,4 y Microsoft. CodeAnalysis. Metrics (2.9.5). Normalmente, el valor es una coincidencia aproximada con la métrica anterior, **líneas de código**, que es la métrica basada en instrucciones de MSIL utilizada en el modo heredado.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

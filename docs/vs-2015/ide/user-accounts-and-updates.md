@@ -9,19 +9,19 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: 92bbfc3612a34d354dee6288d66f2cf96c1e107c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672664"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289396"
 ---
 # <a name="user-accounts-and-updates"></a>Cuentas de usuario y actualizaciones
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 no puede tener acceso a los recursos configurados para el acceso condicional. Para trabajar con esos recursos, actualice a Visual Studio 2017 o posterior.
+> Visual Studio 2015 no puede tener acceso a los recursos configurados para el acceso condicional. Para trabajar con esos recursos, actualice a la versión 16,6 o posterior de Visual Studio 2019 y siga las instrucciones de [uso de Visual Studio con cuentas que requieran la autenticación multifactor](../../ide/work-with-multi-factor-authentication.md) .
 
 Visual Studio es un entorno conectado. Al iniciar sesión habilita el acceso a todos los servicios asociados a su cuenta de usuario y a todas las cuentas vinculadas a la misma. La configuración de su cuenta se traspasa allá donde use Visual Studio. Puede configurar niveles de permisos en una instancia específica de Visual Studio para usuarios individuales. Además, Visual Studio le informa cuando cualquier componente de la instalación, como un SDK, tiene actualización disponible.
 
