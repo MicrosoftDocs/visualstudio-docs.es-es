@@ -74,6 +74,7 @@
 ### [Superadministradores y administradores](admin-roles.md)
 ### [Establecimiento de las preferencias del contrato](admin-prefs.md)
 ### [Información general](using-admin-portal.md)
+### [Agregar suscripciones mensuales](add-monthly-subs.md)
 ### Asignación de suscripciones
 #### [Agregar usuarios únicos](assign-license.md)
 #### [Agregar varios usuarios](assign-license-bulk.md)

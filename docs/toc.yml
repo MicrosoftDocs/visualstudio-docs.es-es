@@ -154,9 +154,9 @@
       href: ide/quickstart-visual-basic-console.md
 - name: Tutoriales
   items:
-    - name: 'C#'
+    - name: C#
       href: get-started/csharp/
-    - name: 'F#'
+    - name: F#
       href: /dotnet/fsharp/
     - name: Visual Basic
       href: get-started/visual-basic/
@@ -202,7 +202,7 @@
           items:
             - name: Administración de la configuración de la aplicación (.NET)
               href: ide/managing-application-settings-dotnet.md
-            - name: 'Agregar un archivo de configuración de aplicación a un proyecto de C#'
+            - name: Agregar un archivo de configuración de aplicación a un proyecto de C#
               href: ide/how-to-add-app-config-file.md
         - name: Firma de los manifiestos
           items:
@@ -291,7 +291,7 @@
               items:
                 - name: Uso de fragmentos de código
                   href: ide/code-snippets.md
-                - name: 'Referencia de fragmentos de código de C#'
+                - name: Referencia de fragmentos de código de C#
                   href: ide/visual-csharp-code-snippets.md
                 - name: Referencia de fragmentos de código de C++
                   href: ide/visual-cpp-code-snippets.md
@@ -325,10 +325,16 @@
                   href: ide/reference/generate-method.md
                 - name: Generar campo/propiedad/local
                   href: ide/reference/generate-field-property-local.md
+                - name: Generar operadores de comparación para IComparable
+                  href: ide/reference/generate-comparison-operators.md
                 - name: Generar constructor
                   href: ide/reference/generate-constructor.md
                 - name: Generar deconstructor
                   href: ide/reference/generate-deconstructor.md
+                - name: Generar operadores IEquatable para estructuras
+                  href: ide/reference/generate-equals-structs.md
+                - name: Agregar encabezado de archivo
+                  href: ide/reference/add-file-header.md
                 - name: Agregar conversión explícita
                   href: ide/reference/add-explicit-cast.md
                 - name: Agregar parámetro al método
@@ -368,6 +374,8 @@
                   href: ide/reference/convert-for-loop-to-foreach.md
                 - name: Convertir un método Get en propiedad (y a la inversa)
                   href: ide/reference/convert-get-method-to-property.md
+                - name: Convertir entre literales de cadenas estándar y literales de cadenas textuales
+                  href: ide/reference/convert-between-regular-string-verbatim-string.md
                 - name: Convertir función local en método
                   href: ide/reference/convert-local-function-method.md
                 - name: Convertir bucle foreach en LINQ
@@ -378,6 +386,8 @@
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: Convertir una instrucción switch en una expresión switch
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: Finalización de DateTime y TimeSpan
+                  href: ide/reference/datetime-timespan-completion.md
                 - name: Encapsular campo
                   href: ide/reference/encapsulate-field.md
                 - name: Extraer interfaz
@@ -412,6 +422,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Cambiar nombre
                   href: ide/reference/rename.md
+                - name: Simplificar una expresión condicional
+                  href: ide/reference/simplify-conditional-expression.md
                 - name: Introducción a la interpolación de cadenas
                   href: ide/reference/simplify-string-interpolation.md
                 - name: Ordenar instrucciones Using
@@ -438,7 +450,7 @@
               href: ide/using-intellisense.md
             - name: IntelliSense de Visual Basic
               href: ide/visual-basic-specific-intellisense.md
-            - name: 'IntelliSense para C#'
+            - name: IntelliSense para C#
               href: ide/visual-csharp-intellisense.md
             - name: IntelliSense para JavaScript
               href: ide/javascript-intellisense.md
@@ -583,7 +595,7 @@
           href: ide/productivity-features.md
         - name: Métodos abreviados de productividad
           href: ide/productivity-shortcuts.md
-        - name: 'Sugerencias para desarrolladores de C#'
+        - name: Sugerencias para desarrolladores de C#
           displayName: ReSharper
           href: ide/csharp-developer-productivity.md
         - name: Personalización de métodos abreviados de teclado
@@ -684,9 +696,9 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: 'Paso 9: Probar otras características'
                       href: ide/step-9-try-other-features.md
-        - name: 'F#'
+        - name: F#
           items:
-            - name: 'Desarrollo de F#'
+            - name: Desarrollo de F#
               href: ide/fsharp-visual-studio.md
             - name: Versiones anteriores de .NET como destino
               href: ide/fsharp-target-older-dotnet-versions.md
@@ -851,7 +863,7 @@
       href: /azure/devops/pipelines/index?view=vsts
     - name: Especificación de eventos de compilación (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
-    - name: 'Especificación de eventos de compilación (C#)'
+    - name: Especificación de eventos de compilación (C#)
       href: ide/how-to-specify-build-events-csharp.md
     - name: Configuración de advertencias en Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
@@ -1122,7 +1134,7 @@
                       href: ide/code-styles-and-code-cleanup.md
                     - name: IntelliSense
                       href: ide/visual-basic-specific-intellisense.md
-                - name: 'C#'
+                - name: C#
                   items:
                     - name: Avanzadas
                       href: ide/reference/options-text-editor-csharp-advanced.md
@@ -1140,7 +1152,7 @@
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
                     - name: Ver
                       href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'F#'
+                - name: F#
                   items:
                     - name: Avanzadas
                       href: ide/reference/options-text-editor-fsharp-advanced.md

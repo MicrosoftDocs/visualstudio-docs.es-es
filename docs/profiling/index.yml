@@ -8,55 +8,65 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 10/30/2019
-  ms.openlocfilehash: 94bbe9a81a38b255eba6cc6b15812743328a0f27
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.date: 06/03/2020
+  ms.openlocfilehash: 4f522f6613424c3251344207381d2eaf31705c9c
+  ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "79549917"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289123"
 landingContent:
-- title: Acerca de la generación de perfiles
+- title: Primeros pasos
   linkLists:
-  - linkListType: overview
-    links:
-    - text: Un primer vistazo a las herramientas de generación de perfiles
-      url: profiling-feature-tour.md
-  - linkListType: concept
-    links:
-    - text: Formas de ejecutar las herramientas de generación de perfiles
-      url: running-profiling-tools-with-or-without-the-debugger.md
-- title: Introducción
-  linkLists:
-  - linkListType: quickstart
-    links:
-    - text: Análisis del uso de CPU (C#, Visual Basic)
-      url: quickstart-cpu-usage-managed.md
-    - text: Análisis del uso de CPU (C++)
-      url: quickstart-cpu-usage-native.md
-    - text: Análisis del uso de CPU (ASP.NET)
-      url: quickstart-cpu-usage-aspnet.md
   - linkListType: tutorial
     links:
     - text: Introducción al análisis del uso de CPU
       url: beginners-guide-to-performance-profiling.md
     - text: Introducción a la medición del uso de la memoria
       url: memory-usage.md
-- title: Más herramientas de rendimiento
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: Sugerencias de rendimiento
       url: perftips.md
-    - text: Medir el uso de CPU desde la línea de comandos
-      url: profile-apps-from-command-line.md
-    - text: Medición del uso de memoria para objetos .NET
+- title: Aspectos básicos
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Un primer vistazo a las herramientas de generación de perfiles
+      url: profiling-feature-tour.md
+    - text: Formas de ejecutar las herramientas de generación de perfiles
+      url: running-profiling-tools-with-or-without-the-debugger.md
+  - linkListType: concept
+    links:
+    - text: Descripción de los métodos de recopilación de rendimiento
+      url: understanding-performance-collection-methods-perf-profiler.md
+- title: Herramientas de rendimiento
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Uso de CPU
+      url: cpu-usage.md
+    - text: Base de datos
+      url: analyze-database.md
+    - text: Visor de eventos
+      url: events-viewer.md
+    - text: Uso de memoria
+      url: memory-usage-without-debugging2.md
+    - text: Seguimiento de la asignación de objetos .NET
       url: dotnet-alloc-tool.md
+    - text: Uso de la GPU (Direct3D)
+      url: gpu-usage.md
+    - text: .NET Async
+      url: analyze-async.md
     - text: Análisis del consumo de recursos (XAML)
       url: application-timeline.md
-    - text: Análisis del uso de la GPU (Direct3D)
-      url: gpu-usage.md
-    - text: Análisis del uso de la red (UWP)
-      url: network-usage.md
-    - text: Análisis del uso de la energía (UWP)
-      url: analyze-energy-use-in-store-apps.md
+- title: Guías
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Optimización de la configuración del generador de perfiles
+      url: optimize-profiler-settings.md
+    - text: Medición del rendimiento desde la línea de comandos
+      url: profile-apps-from-command-line.md
+    - text: Usar varias herramientas de generación de perfiles de forma simultánea
+      url: use-multiple-profiler-tools-simultaneously.md

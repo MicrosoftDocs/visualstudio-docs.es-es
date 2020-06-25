@@ -11,6 +11,8 @@
         - name: Información general
           displayName: msbuild concepts
           href: msbuild-concepts.md
+        - name: Cómo MSBuild compila proyectos
+          href: build-process-overview.md
         - name: Propiedades
           items:
             - name: propiedades de MSBuild
