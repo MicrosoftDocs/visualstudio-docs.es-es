@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear un manifiesto de producto | Documentos de Microsoft
+title: Cómo crear un manifiesto de producto | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - FSharp
 - VB
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928372"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382515"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Procedimiento Crear un manifiesto de producto
-Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye cadenas, contratos de licencia del usuario final y los paquetes de idioma.
+# <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
+Para implementar los requisitos previos de la aplicación, puede crear un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye las cadenas, los contratos de licencia para el usuario final y los paquetes de idioma.
 
- Para obtener más información acerca de los manifiestos de paquete, vea [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md).
+ Para obtener más información sobre los manifiestos de paquete, consulte [Cómo: crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Crear el manifiesto del producto
 
 #### <a name="to-create-the-product-manifest"></a>Para crear el manifiesto del producto
 
-1. Cree un directorio para el paquete de programa previo. Este ejemplo utiliza C:\package.
+1. Cree un directorio para el paquete de programa previo. En este ejemplo se usa C:\package.
 
-2. En Visual Studio, cree un nuevo archivo XML denominado *product.xml*y guárdelo en el *C:\package* carpeta.
+2. En Visual Studio, cree un nuevo archivo XML denominado *product.xml*y guárdelo en la carpeta *C:\package* .
 
-3. Agregue el siguiente código XML para describir el código de producto y el espacio de nombres XML para el paquete. Reemplace el código de producto con un identificador único para el paquete.
+3. Agregue el siguiente código XML para describir el espacio de nombres XML y el código de producto del paquete. Reemplace el código de producto por un identificador único para el paquete.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4. Agregue el código XML para especificar que el paquete tiene una dependencia. Este ejemplo utiliza una dependencia en Microsoft Windows Installer 3.1.
+4. Agregue XML para especificar que el paquete tiene una dependencia. En este ejemplo se usa una dependencia en Microsoft Windows Installer 3,1.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
       </RelatedProducts>
     ```
 
-5. Agregue el código XML para mostrar todos los archivos que se encuentran en el paquete de arranque. Este ejemplo usa el nombre del archivo de paquete *CorePackage.msi*.
+5. Agregue XML para enumerar todos los archivos que se encuentran en el paquete de programa previo. En este ejemplo se usa el nombre de archivo del paquete *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     </PackageFiles>
     ```
 
-6. Copiar o mover el *CorePackage.msi* del archivo a la *C:\package* carpeta.
+6. Copie o mueva el archivo de *CorePackage.msi* a la carpeta *C:\package* .
 
-7. Agregue el código XML para instalar el paquete mediante los comandos del programa previo. El programa previo se agrega automáticamente el **/qn** marca a la *.msi* archivo, que se instalará de forma silenciosa. Si el archivo es un *.exe*, se ejecuta el programa previo del *.exe* archivo mediante el shell. El siguiente XML no muestra ningún argumento *CorePackage.msi*, pero puede colocar el argumento de línea de comandos en el `Arguments` atributo.
+7. Agregue XML para instalar el paquete mediante los comandos de arranque. El programa previo agrega automáticamente la marca **/QN** al archivo *. msi* , que se instalará de forma silenciosa. Si el archivo es un archivo *. exe*, el programa previo ejecuta el archivo *. exe* mediante el shell. El siguiente XML no muestra ningún argumento para *CorePackage.msi*, pero puede colocar el argumento de la línea de comandos en el `Arguments` atributo.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8. Agregue el siguiente código XML para comprobar si está instalado este paquete de programa previo. Reemplace el código de producto con el GUID del componente redistribuible.
+8. Agregue el siguiente código XML para comprobar si este paquete de arranque está instalado. Reemplace el código de producto por el GUID para el componente redistribuible.
 
     ```xml
     <InstallChecks>
@@ -81,7 +81,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     </InstallChecks>
     ```
 
-9. Agregue el código XML para cambiar el comportamiento del programa previo dependiendo de si ya está instalado el componente de programa previo. Si el componente está instalado, el paquete de arranque no se ejecuta. El siguiente código XML comprueba si el usuario actual es un administrador porque este componente requiere privilegios administrativos.
+9. Agregue XML para cambiar el comportamiento del programa previo en función de si el componente de arranque ya está instalado. Si el componente está instalado, el paquete de arranque no se ejecuta. El siguiente XML comprueba si el usuario actual es un administrador porque este componente requiere privilegios administrativos.
 
     ```xml
     <InstallConditions>
@@ -94,7 +94,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     </InstallConditions>
     ```
 
-10. Agregue el código XML para establecer los códigos de salida si la instalación es correcta y si es necesario un reinicio. El siguiente XML muestra que el error y FailReboot códigos, que indican que el programa previo no continuará la instalación de paquetes de salida.
+10. Agregue XML para establecer códigos de salida si la instalación se realiza correctamente y si es necesario reiniciar. En el siguiente código XML se muestran los códigos de salida FAIL y FailReboot, que indican que el programa previo no seguirá instalando los paquetes.
 
     ```xml
     <ExitCodes>
@@ -112,10 +112,10 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
     </Commands>
     ```
 
-12. Mover el *C:\package* carpeta en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.
+12. Mueva la carpeta *C:\package* al directorio de arranque de Visual Studio. Para Visual Studio 2010, este es el directorio *\Archivos de Programa\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* .
 
 ## <a name="example"></a>Ejemplo
- El manifiesto del producto contiene instrucciones de instalación de requisitos previos personalizados.
+ El manifiesto del producto contiene instrucciones de instalación para los requisitos previos personalizados.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -158,5 +158,5 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
 </Product>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

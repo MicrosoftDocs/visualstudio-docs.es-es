@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Instalar requisitos previos mediante una aplicación ClickOnce | Documentos de Microsoft
+title: Cómo instalar los requisitos previos con una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,57 +16,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 047ac897931cbb93d8a06406e300d39cd83a9fe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406740"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382385"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedimiento Requisitos previos de instalación con una aplicación ClickOnce
-Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones requieren que la versión correcta de .NET Framework está instalada en un equipo antes de poder ejecutar; muchas aplicaciones tienen también otros requisitos previos. Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos pueden empaquetarse junto con la aplicación. Durante la instalación, se realizará una comprobación para que todos los requisitos previos determinar si ya existe; Si no se instalará antes de instalar el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Cómo: Instalar requisitos previos mediante una aplicación ClickOnce
+Todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones requieren que se instale la versión correcta del .NET Framework en un equipo antes de poder ejecutarse; muchas aplicaciones tienen también otros requisitos previos. Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos que se van a empaquetar junto con la aplicación. En el momento de la instalación, se realizará una comprobación para cada requisito previo para determinar si ya existe; Si no se instalará antes de instalar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
 
- En lugar de empaquetar y publicar los requisitos previos, también puede especificar una ubicación de descarga de los componentes. Por ejemplo, en lugar de incluir requisitos previos con todas las aplicaciones que publique, puede usar un recurso compartido de archivos centralizado o la ubicación Web que contenga los instaladores para todos los requisitos previos, durante la instalación, se descargarán los componentes y instalada desde esa ubicación.
+ En lugar de empaquetar y publicar los requisitos previos, también puede especificar una ubicación de descarga para los componentes. Por ejemplo, en lugar de incluir requisitos previos con cada aplicación que publique, puede usar un recurso compartido de archivos o una ubicación web centralizados que contenga los instaladores para todos los requisitos previos: en el momento de la instalación, los componentes se descargarán e instalarán desde esa ubicación.
 
 > [!IMPORTANT]
-> Debe agregar los paquetes de instalador de requisitos previos para el equipo de desarrollo antes de publicar su primer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, vea [Cómo: Inclusión de requisitos previos con una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+> Debe agregar los paquetes de instalador de requisitos previos al equipo de desarrollo antes de publicar la primera [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, vea [Cómo: incluir requisitos previos con una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
- Requisitos previos se administran en el **requisitos previos** cuadro de diálogo, accesible desde el **publicar** panel de la **Diseñador de proyectos**.
+ Los requisitos previos se administran en el cuadro de diálogo **requisitos previos** , accesible desde el panel **publicar** del **Diseñador de proyectos**.
 
 > [!NOTE]
-> Además de la lista predeterminada de requisitos previos, puede agregar sus propios componentes a la lista. Para obtener más información, consulte [crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md).
+> Además de la lista de requisitos previos predeterminada, puede agregar sus propios componentes a la lista. Para obtener más información, vea [crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md).
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar los requisitos previos para instalar con una aplicación ClickOnce
 
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
 
-2. Seleccione el **publicar** panel.
+2. Seleccione el panel **publicar** .
 
-3. Haga clic en el **requisitos previos** botón para abrir el **requisitos previos** cuadro de diálogo.
-
-4. En el cuadro de diálogo **Requisitos previos** , asegúrese de que está activada la casilla **Crear programa de instalación para instalar los componentes necesarios** .
-
-5. En el **requisitos previos** lista, compruebe los componentes que desea instalar y, a continuación, haga clic en **Aceptar**.
-
-     Los componentes seleccionados se empaquetan y publicar junto con la aplicación.
-
-### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar una ubicación de descarga diferentes para los requisitos previos
-
-1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
-
-2. Seleccione el **publicar** panel.
-
-3. Haga clic en el **requisitos previos** botón para abrir el **requisitos previos** cuadro de diálogo.
+3. Haga clic en el botón **requisitos previos** para abrir el cuadro de diálogo **requisitos previos** .
 
 4. En el cuadro de diálogo **Requisitos previos** , asegúrese de que está activada la casilla **Crear programa de instalación para instalar los componentes necesarios** .
 
-5. En el **especificar la ubicación de instalación de requisitos previos** sección, seleccione **descargar requisitos previos de la siguiente ubicación**.
+5. En la lista de **requisitos previos** , compruebe los componentes que desea instalar y, a continuación, haga clic en **Aceptar**.
 
-6. Seleccione una ubicación en la lista desplegable o escriba una dirección URL, la ruta de acceso de archivo o la ubicación FTP y, a continuación, haga clic en **Aceptar.**
+     Los componentes seleccionados se empaquetarán y publicarán junto con la aplicación.
+
+### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar una ubicación de descarga diferente para los requisitos previos
+
+1. Con un proyecto seleccionado en **Explorador de soluciones**, en el menú **proyecto** , haga clic en **propiedades**.
+
+2. Seleccione el panel **publicar** .
+
+3. Haga clic en el botón **requisitos previos** para abrir el cuadro de diálogo **requisitos previos** .
+
+4. En el cuadro de diálogo **Requisitos previos** , asegúrese de que está activada la casilla **Crear programa de instalación para instalar los componentes necesarios** .
+
+5. En la sección **especificar la ubicación de instalación de los requisitos previos** , seleccione **Descargar requisitos previos de la siguiente ubicación**.
+
+6. Seleccione una ubicación en la lista desplegable o escriba una dirección URL, una ruta de acceso de archivo o una ubicación FTP y, a continuación, haga clic en **Aceptar.**
 
     > [!NOTE]
-    > Debe asegurarse de que los instaladores para los componentes especificados existen en la ubicación especificada.
+    > Debe asegurarse de que los instaladores de los componentes especificados existen en la ubicación especificada.
 
-## <a name="see-also"></a>Vea también
-- [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>Consulte también
+- [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

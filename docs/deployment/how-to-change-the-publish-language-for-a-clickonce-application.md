@@ -1,7 +1,7 @@
 ---
-title: Cambio de idioma de aplicación ClickOnce publicar
+title: Cambiar el idioma de publicación para la aplicación ClickOnce
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263172"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382593"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedimiento Cambio del idioma de publicación de una aplicación ClickOnce
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Cómo: Cambiar el idioma de publicación de una aplicación ClickOnce
 
-Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la interfaz de usuario que se muestran durante la instalación el valor predeterminado es el idioma y la referencia cultural del equipo de desarrollo. Si va a publicar una aplicación localizada, deberá especificar un idioma y referencia cultural para que coincida con la versión localizada. Esto viene determinado por la `Publish language` propiedad para el proyecto.
+Al publicar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la interfaz de usuario mostrada durante la instalación tiene como valor predeterminado el idioma y la referencia cultural del equipo de desarrollo. Si está publicando una aplicación localizada, deberá especificar un idioma y una referencia cultural para que coincida con la versión localizada. Esto viene determinado por la `Publish language` propiedad del proyecto.
 
-El `Publish language` propiedad puede establecerse el **opciones de publicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.
+La `Publish language` propiedad se puede establecer en el cuadro de diálogo **Opciones de publicación** , accesible desde la página **publicar** del **Diseñador de proyectos**.
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
@@ -38,13 +38,13 @@ El `Publish language` propiedad puede establecerse el **opciones de publicación
 
 2. Haga clic en la pestaña **Publicar**.
 
-3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.
+3. Haga clic en el botón **Opciones** para abrir el cuadro de diálogo **Opciones de publicación** .
 
-4. Haga clic en **descripción**.
+4. Haga clic en **Descripción**.
 
-5. En el **opciones de publicación** diálogo cuadro, seleccione un idioma y referencia cultural de la **idioma de publicación** lista desplegable y, a continuación, haga clic en **Aceptar**.
+5. En el cuadro de diálogo **Opciones de publicación** , seleccione un idioma y una referencia cultural en la lista desplegable **idioma de publicación** y, a continuación, haga clic en **Aceptar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
+- [Publicación de aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

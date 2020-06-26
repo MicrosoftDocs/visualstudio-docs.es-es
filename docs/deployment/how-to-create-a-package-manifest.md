@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear un manifiesto de paquete | Documentos de Microsoft
+title: Cómo crear un manifiesto de paquete | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - FSharp
 - VB
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899745"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382528"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedimiento Crear un manifiesto de paquete
-Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.
+# <a name="how-to-create-a-package-manifest"></a>Cómo: Crear un manifiesto de paquete
+Para implementar los requisitos previos de la aplicación, puede usar un paquete de programa previo. Un paquete de programa previo contiene un solo archivo de manifiesto de producto, pero un manifiesto de paquete para cada configuración regional. La funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.
 
- Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).
+ Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).
 
 ## <a name="create-the-package-manifest"></a>Crear el manifiesto del paquete
 
 #### <a name="to-create-the-package-manifest"></a>Para crear el manifiesto del paquete
 
-1. Cree un directorio para el paquete de programa previo. Este ejemplo se utiliza *C:\package*.
+1. Cree un directorio para el paquete de programa previo. En este ejemplo se usa *C:\package*.
 
 2. Cree un subdirectorio con el nombre de la configuración regional, como *en* para inglés.
 
-3. En Visual Studio, cree un archivo XML que se denomina *package.xml*y guárdelo en el *C:\package\en* carpeta.
+3. En Visual Studio, cree un archivo XML denominado *package.xml*y guárdelo en la carpeta *C:\package\en* .
 
-4. Agregue el código XML para mostrar el nombre del paquete de programa previo, la referencia cultural de este manifiesto del paquete localizado y el contrato de licencia opcional. El siguiente código XML utiliza las variables `DisplayName` y `Culture`, que se definen en un elemento de una versión posterior.
+4. Agregue XML para mostrar el nombre del paquete de programa previo, la referencia cultural para este manifiesto de paquete localizado y el contrato de licencia opcional. En el código XML siguiente se usan las variables `DisplayName` y `Culture` , que se definen en un elemento posterior.
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ Para implementar los requisitos previos para la aplicación, puede usar un paque
         LicenseAgreement="eula.txt">
     ```
 
-5. Agregue el código XML para mostrar todos los archivos que se encuentran en el directorio específico de la configuración regional. El siguiente código XML utiliza un archivo denominado *eula.txt* que sea adecuado para el **en** configuración regional.
+5. Agregue XML para enumerar todos los archivos que se encuentran en el directorio específico de la configuración regional. En el código XML siguiente se usa un archivo denominado *eula.txt* que es aplicable a la configuración regional **en** .
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ Para implementar los requisitos previos para la aplicación, puede usar un paque
     </PackageFiles>
     ```
 
-6. Agregue el código XML para definir cadenas localizables para el paquete de arranque. El siguiente código XML agrega las cadenas de error para el **en** configuración regional.
+6. Agregue XML para definir cadenas localizables para el paquete de programa previo. El siguiente XML agrega cadenas de error para la configuración regional **en** .
 
     ```xml
       <Strings>
@@ -71,10 +71,10 @@ Para implementar los requisitos previos para la aplicación, puede usar un paque
     </Strings>
     ```
 
-7. Copia el *C:\package* carpeta en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.
+7. Copie la carpeta *C:\package* en el directorio de arranque de Visual Studio. Para Visual Studio 2010, este es el directorio *\Archivos de Programa\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* .
 
 ## <a name="example"></a>Ejemplo
- El manifiesto del paquete contiene información específica de la configuración regional, como los mensajes de error, los términos de licencia de software y paquetes de idioma.
+ El manifiesto del paquete contiene información específica de la configuración regional, como los mensajes de error, los términos de licencia de software y los paquetes de idioma.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -98,5 +98,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

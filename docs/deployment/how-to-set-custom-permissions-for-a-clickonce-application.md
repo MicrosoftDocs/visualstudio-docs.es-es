@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Establecer permisos personalizados para una aplicación ClickOnce | Microsoft Docs
+title: Cómo establecer permisos personalizados para una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8a6fd6625726f749afcf20b80f83178a47ab92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17cd398468bd1640e50f6a58004905cfdf6c2ff0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407004"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382151"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedimiento Establecimiento de permisos personalizados para una aplicación ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedimientos para establecer permisos personalizados para una aplicación ClickOnce
 Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que use los permisos predeterminados de las zonas de Internet o de la intranet local. Como alternativa, puede crear una zona personalizada para los permisos específicos necesarios para la aplicación. Para ello, personalice los permisos de seguridad en la página **Seguridad** del **Diseñador de proyectos**.
 
 ### <a name="to-customize-a-permission"></a>Para personalizar un permiso
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad** .
+2. Haga clic en la pestaña **Seguridad**.
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 
@@ -41,13 +41,13 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
 
 6. Haga clic en **Editar XML de permisos**.
 
-     El archivo *app.manifest* se abrirá en el Editor XML.
+     El archivo *app. manifest* se abre en el editor XML.
 
 7. Antes del elemento `</applicationRequestMinimum>` , agregue el código XML de los permisos necesarios para la aplicación.
 
     > [!NOTE]
     > Puede usar el método `ToXml` de un conjunto de permisos para generar el código XML del manifiesto de la aplicación. Por ejemplo, para generar el XML del conjunto de permisos <xref:System.Security.Permissions.EnvironmentPermission> , llame al método <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
-## <a name="see-also"></a>Vea también
-- [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>Consulte también
+- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

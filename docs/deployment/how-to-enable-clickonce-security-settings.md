@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Habilitar la configuración de seguridad de ClickOnce | Documentos de Microsoft
+title: Cómo habilitar la configuración de seguridad de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,46 +16,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52acc18aa18873076df3d02071616c0399b1f33
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407116"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382437"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Procedimiento Activación de la configuración de seguridad de ClickOnce
-Debe estar habilitada la seguridad de acceso del código para aplicaciones ClickOnce para publicar la aplicación. Esto se realiza automáticamente al publicar una aplicación mediante el Asistente para publicación.
+# <a name="how-to-enable-clickonce-security-settings"></a>Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce
+La seguridad de acceso del código de las aplicaciones ClickOnce debe estar habilitada para poder publicar la aplicación. Esto se hace automáticamente al publicar una aplicación mediante el Asistente para publicación.
 
- En algunos casos, habilitar la seguridad de acceso del código puede afectar al rendimiento cuando se compila o depurar la aplicación; en estos casos, es posible que desea deshabilitar temporalmente la configuración de seguridad.
+ En algunos casos, la habilitación de la seguridad de acceso del código puede afectar al rendimiento al compilar o depurar la aplicación; en estos casos, puede que desee deshabilitar temporalmente la configuración de seguridad.
 
- Configuración de seguridad de ClickOnce puede habilitarse o deshabilitarse en el **seguridad** página de la **Diseñador de proyectos**.
+ La configuración de seguridad de ClickOnce puede habilitarse o deshabilitarse en la página **seguridad** del **Diseñador de proyectos**.
 
-### <a name="to-enable-clickonce-security-settings"></a>Para habilitar a la configuración de seguridad de ClickOnce
+### <a name="to-enable-clickonce-security-settings"></a>Para habilitar la configuración de seguridad de ClickOnce
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad** .
+2. Haga clic en la pestaña **Seguridad**.
 
 3. Active la casilla **Habilitar configuración de seguridad de ClickOnce** .
 
-     Ahora puede personalizar la configuración de seguridad de la aplicación en la página de seguridad.
+     Ahora puede personalizar la configuración de seguridad de la aplicación en la página seguridad.
 
     > [!NOTE]
-    > Esta casilla se activa automáticamente cada vez que se publica la aplicación con el **publicar** asistente.
+    > Esta casilla se selecciona automáticamente cada vez que se publica la aplicación con el Asistente para **publicación** .
 
 ### <a name="to-disable-clickonce-security-settings"></a>Para deshabilitar la configuración de seguridad de ClickOnce
 
 1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2. Haga clic en la pestaña **Seguridad** .
+2. Haga clic en la pestaña **Seguridad**.
 
-3. Desactive el **Enable ClickOnce Security Settings** casilla de verificación.
+3. Desactive la casilla **Habilitar la configuración de seguridad de ClickOnce** .
 
-     La aplicación se ejecutará con la configuración de seguridad de plena confianza; cualquier configuración de la **seguridad** se omitirá la página.
+     La aplicación se ejecutará con la configuración de seguridad de plena confianza; se omitirá cualquier configuración de la página **seguridad** .
 
     > [!NOTE]
-    > Cada vez que se publica la aplicación con el Asistente para publicación, se seleccionará esta casilla de verificación; debe desactivarla nuevo después de cada publicación correcta.
+    > Cada vez que se publica la aplicación con el Asistente para publicación, esta casilla se activará; debe borrarlo de nuevo después de cada publicación correcta.
 
-## <a name="see-also"></a>Vea también
-- [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>Consulte también
+- [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

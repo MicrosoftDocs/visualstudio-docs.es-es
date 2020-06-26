@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Firmar archivos de instalación con SignTool.exe (ClickOnce) | Documentos de Microsoft
+title: Cómo firmar archivos de instalación con SignTool.exe (ClickOnce) | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
+ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928407"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85382073"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedimiento Firma de archivos de instalación con SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: Firmar archivos de instalación con SignTool.exe (ClickOnce)
 Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.
 
  De forma predeterminada, ClickOnce tiene manifiestos firmados y un programa de instalación firmado. Sin embargo, si más tarde quiere cambiar los parámetros del programa de instalación, debe firmarlo. Si cambia los parámetros una vez firmado el programa de instalación, la firma se daña.
@@ -36,9 +36,9 @@ Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*).
 
 1. En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.
 
-2. Seleccione el proyecto en el **Explorador de soluciones**.
+2. Seleccione el proyecto en **Explorador de soluciones**.
 
-3. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.
+3. En el menú **proyecto** , haga clic en **propiedades**de *projectname* .
 
 4. En la página **Firma**, desactive **Firmar los manifiestos de ClickOnce**.
 
@@ -76,5 +76,5 @@ Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*).
     signtool sign /f CertFileName Setup.exe
     ```
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>Consulte también
+- [Procedimientos para volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
