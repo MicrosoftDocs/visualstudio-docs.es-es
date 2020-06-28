@@ -5,17 +5,17 @@ metadata:
   title: Analizadores de código
   description: Obtenga información sobre cómo Visual Studio puede ayudarle a analizar la calidad del código.
   ms.prod: visual-studio-windows
-  ms.technology: vs-ide-general
+  ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: Mikejo5000
+  ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
+  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74316359"
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "85462101"
 landingContent:
 - title: Análisis del código de C y C++
   linkLists:
