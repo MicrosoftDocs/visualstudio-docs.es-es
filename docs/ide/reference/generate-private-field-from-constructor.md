@@ -1,6 +1,6 @@
 ---
-title: Generar campo privado desde constructor
-ms.date: 03/10/2020
+title: Generación de un campo y propiedad privados a partir de un constructor
+ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -10,26 +10,24 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eb5dd39d0fb2d4cd9ba8ade0d0408d6e36a4854
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094022"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283728"
 ---
-# <a name="generate-private-field-from-constructor"></a>Generar campo privado desde constructor
+# <a name="generate-private-field-and-property-from-constructor"></a>Generación de un campo y propiedad privados a partir de un constructor
 
 Esta refactorización se aplica a lo siguiente: 
 
 - C# 
 
-- Visual Basic
+**Qué:** genere un campo o propiedad privados a partir de un constructor. 
 
-**Qué:** genere un campo privado a partir de un constructor. 
+**Cuándo:** desea agregar e inicializar rápidamente un campo o propiedad privados a partir de un constructor.
 
-**Cuándo:** quiere agregar rápidamente un campo privado a partir de un constructor.
-
-**Por qué:** la escritura de campos privados puede llevar mucho tiempo y ser repetitiva. El uso de esta refactorización es rápido y permite que el programa sea más sólido.
+**Por qué:** la escritura de campos o propiedades privados puede llevar mucho tiempo y ser repetitiva. El uso de esta refactorización es rápido y permite que el programa sea más sólido.
 
 ## <a name="how-to"></a>Procedimiento 
 
@@ -37,7 +35,9 @@ Esta refactorización se aplica a lo siguiente:
 
 2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
    
-3. Seleccione la opción **Crear e inicializar campo**.
+3. A continuación, seleccione una de las siguientes opciones:
+
+- **Crear e inicializar campo** o **Crear e inicializar propiedad**.
 
    ![Generar campo privado desde constructor](media/generate-private-field-from-constructor.png)
 

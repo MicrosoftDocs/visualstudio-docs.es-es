@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68143534"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292190"
 ---
 
 1. Cierre y vuelva a abrir la consola de administración de IIS para mostrar las opciones de configuración actualizadas en la interfaz de usuario.
@@ -12,6 +12,8 @@ ms.locfileid: "68143534"
 2. En IIS, haga clic en el **Sitio web predeterminado**, elija **Implementar** > **Configurar publicación de implementación en Web Deploy**.
 
     ![Configuración de Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+
+   Si no ve el menú **Implementar**, consulte la sección anterior para comprobar que Web Deploy se está ejecutando.
 
 3. En el cuadro de diálogo **Configurar implementación de publicación en Web Deploy**, examine la configuración.
 

@@ -1,7 +1,7 @@
 ---
 title: Depuración de código de Python
 description: Visual Studio proporciona depuración enriquecida para código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.date: 03/13/2019
+ms.date: 05/12/2020
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 293e431fb00f6817fdbba19186613345cb90275a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307176"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285652"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -147,7 +147,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 | **Argumentos de script** | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
 | **Argumentos del intérprete** | Estos argumentos se agregan a la línea de comandos del iniciador antes del nombre del script. Los argumentos comunes aquí son `-W ...` para controlar advertencias, `-O` para optimizar ligeramente el programa y `-u` para utilizar E/S no almacenada en el búfer. Los usuarios de IronPython probablemente usen este campo para pasar opciones `-X`, como `-X:Frames` o `-X:MTA`. |
 | **Ruta del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
-| **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta opción se aplica al final, por encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de **Rutas de búsqueda**, puede usarse para reemplazar manualmente cualquiera de esas otras variables. |
+| **Variables de entorno** | En este cuadro de texto multilínea, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta opción se aplica al final, por encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de **Rutas de búsqueda**, puede usarse para reemplazar manualmente cualquiera de esas otras variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Ventanas inmediatas e interactivas
 
@@ -186,7 +186,7 @@ Tenga en cuenta que las ventanas estándar del depurador, como **Procesos**, **S
 
 ## <a name="use-the-legacy-debugger"></a>Usar el depurador heredado
 
-Visual Studio 2017 15.8 y versiones posteriores usan un depurador basado en ptvsd 4.1+. Esta versión de ptvsd es compatible con Python 2.7 y Python 3.5+. Si usa Python 2.6, 3.1 hasta 3.4 o IronPython, Visual Studio muestra el error **El depurador no admite este entorno de Python**:
+Visual Studio 2017 15.8 y versiones posteriores usan un depurador basado en ptvsd 4.1+. Visual Studio 2019 16.5 y las versiones posteriores usan un depurador basado en debugpy. Estas versiones del depurador son compatibles con Python 2.7 y Python 3.5+. Si usa Python 2.6, 3.1 hasta 3.4 o IronPython, Visual Studio muestra el error **El depurador no admite este entorno de Python**:
 
 ![Error "El depurador no admite este entorno de Python" cuando se usa el depurador](media/debugging-experimental-incompatible-error.png)
 
@@ -221,7 +221,8 @@ Para administrar la instalación de ptvsd:
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Si tiene problemas con el depurador, primero actualice su versión de ptvsd de la siguiente manera:
+### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Para la actualización de ptvsd de Visual Studio 2019 (versión 16.4 y posteriores)
+Si tiene problemas con el depurador, primero actualice su versión del depurador de la siguiente manera:
 
 1. Navegue a la pestaña **Paquetes** en la ventana **Entornos de Python**.
 
@@ -229,7 +230,10 @@ Si tiene problemas con el depurador, primero actualice su versión de ptvsd de l
 
     ![Dar el comando de actualización de ptvsd en la ventana Entornos de Python](media/debugging-experimental-upgrade-ptvsd.png)
 
-Si los problemas persisten, registre un problema en el [repositorio de GitHub de PTVS](https://github.com/Microsoft/ptvs/issues).
+   Si los problemas persisten, registre un problema en el [repositorio de GitHub de PTVS](https://github.com/Microsoft/ptvs/issues).
+
+   > [!NOTE]
+   > Para Visual Studio 2019 16.5 y versiones posteriores, debugpy forma parte de la carga de trabajo de Python de Visual Studio y se actualiza junto con Visual Studio.
 
 ### <a name="enable-debugger-logging"></a>Habilitación del registro del depurador
 

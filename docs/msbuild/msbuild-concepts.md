@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf712cf26c7d2dbc5924aa495a7008fb790c33d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633400"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289253"
 ---
 # <a name="msbuild-concepts"></a>Conceptos de MSBuild
 
@@ -33,5 +33,6 @@ MSBuild proporciona un esquema XML básico que se puede usar para controlar cóm
 | [Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) | Explica cómo escapar algunos caracteres que MSBuild se reserva para usos especiales en contextos concretos. |
 | [Tutorial: Crear un archivo de proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. |
 | [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md) | Presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar proyectos de MSBuild sin cerrar el Entorno de desarrollo integrado (IDE) de Visual Studio. |
+| [Cómo MSBuild compila los proyectos](build-process-overview.md) | En este artículo se describe el proceso de compilación interno que se usa en MSBuild. |
 | [Referencia de MSBuild](../msbuild/msbuild-reference.md) | Vínculos a documentos que contienen información de referencia. |
 | [MSBuild](../msbuild/msbuild.md) | Ofrece información general sobre el esquema XML de un archivo del proyecto y muestra cómo controla los procesos que compilan el software. |

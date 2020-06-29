@@ -1,7 +1,7 @@
 ---
 title: Creación de un complemento de prueba de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.loadtestplugin
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589128"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288031"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedimiento Crear un complemento de prueba de carga
 
@@ -82,7 +82,7 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<plug-in>: no se pudo cargar el archivo o el ensamblado "\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)** , pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >

@@ -1,7 +1,7 @@
 ---
 title: Creación de un complemento de nivel de solicitud para pruebas de rendimiento web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589167"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287979"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedimiento para crear un complemento de nivel de solicitud
 
@@ -74,7 +74,7 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<plug-in>: no se pudo cargar el archivo o el ensamblado "\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)** , pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >

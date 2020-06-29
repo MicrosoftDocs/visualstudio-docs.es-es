@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d61fe30e9eb68697f073ca0bcfbcc515e513dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431454"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289162"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -51,8 +51,10 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 |Atributo|Descripción|
 |---------------|-----------------|
+|`Architecture`|Atributo opcional.<br /><br /> Especifica que la tarea debe ejecutarse en un proceso del valor de bits especificado. Si el proceso actual no satisface el requisito, la tarea se ejecutará en un proceso de host de la tarea que sí lo hace.<br /><br /> Los valores admitidos son `x86` (32 bits), `x64` (64 bits), `CurrentArchitecture` y `*` (cualquier arquitectura).|  
 |`AssemblyName`|El atributo `AssemblyName` o `AssemblyFile` son obligatorios.<br /><br /> Nombre del ensamblado que se va a cargar. El atributo `AssemblyName` acepta ensamblados con nombre seguro, aunque no es necesario usar nombres seguros. Usar este atributo es equivalente a cargar un ensamblado mediante el método <xref:System.Reflection.Assembly.Load%2A> en .NET.<br /><br /> No puede usar este atributo si se usa el atributo `AssemblyFile`.|
 |`AssemblyFile`|El atributo `AssemblyName` o `AssemblyFile` son obligatorios.<br /><br /> Ruta de acceso del archivo del ensamblado. Este atributo acepta rutas de acceso completas o rutas de acceso relativas. Las rutas de acceso relativas están relacionadas con el directorio del archivo de proyecto o del archivo de destino cuando se declara el elemento `UsingTask`. Usar este atributo es equivalente a cargar un ensamblado mediante el método <xref:System.Reflection.Assembly.LoadFrom%2A> en .NET.<br /><br /> No puede usar este atributo si se usa el atributo `AssemblyName`.|
+|`Runtime`|Atributo opcional.<br /><br /> Especifica que la tarea se debe ejecutar en un entorno de ejecución de .NET Framework de la versión especificada. Si el proceso actual no satisface el requisito, la tarea se ejecutará en un proceso de host de la tarea que sí lo hace. No se admite en .NET Core MSBuild.<br /><br /> Los valores admitidos son `CLR2` (.NET Framework 3.5), `CLR4` (.NET Framework 4.7.2 o superior), `CurrentRuntime` y `*` (cualquier entorno de ejecución).|  
 |`TaskFactory`|Atributo opcional.<br /><br /> Especifica la clase del ensamblado que es responsable de generar instancias del nombre `Task` especificado.  El usuario también puede especificar `Task` como elemento secundario que el generador de tareas recibe y usa para generar la tarea. El contenido de `Task` es específico del generador de tareas.|
 |`TaskName`|Atributo necesario.<br /><br /> Nombre de la tarea a la que se va a referencia desde un ensamblado. Si puede darse ambigüedad, este atributo siempre debe especificar espacios de nombres completos. En caso de ambigüedad, MSBuild elegirá a una coincidencia arbitraria que podría producir resultados inesperados.|
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
@@ -110,5 +112,6 @@ El ensamblado que contiene la tarea personalizada se carga cuando se usa `Task` 
 ## <a name="see-also"></a>Vea también
 
 - [Tareas](../msbuild/msbuild-tasks.md)
+- [Cómo: Configuración de destinos y tareas](../msbuild/how-to-configure-targets-and-tasks.md)   
 - [Referencia de tareas](../msbuild/msbuild-task-reference.md)
 - [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21522ba32990a850a388bfcf69ab239232a2c23d
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638425"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285951"
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 
@@ -21,7 +21,7 @@ Para detectar fugas y usos ineficaces de memoria, puede usar utilidades como la 
 
 La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, ASP.NET, nativas o de modo mixto (.NET y nativas). La herramienta **Uso de memoria** puede ejecutarse en un proyecto abierto de Visual Studio, en una aplicación instalada de Microsoft Store o asociada a una aplicación o un proceso en ejecución. Puede ejecutar la herramienta **Uso de memoria** con o sin depuración. Para obtener más información, vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). En el depurador, puede activar y desactivar la generación de perfiles de memoria y ver un desglose por objeto de uso de memoria. Puede ver los resultados de uso de memoria mientras la ejecución está en pausa, por ejemplo, en un punto de interrupción.
 
-La herramienta **Asignación de objetos .NET** ayuda a identificar los patrones de asignación y las anomalías en el código de .NET. Esta herramienta solo se ejecuta a modo de análisis post mortem. Puede ejecutar esta herramienta en equipos locales o remotos.
+La herramienta **Asignación de objetos .NET** ayuda a identificar los patrones de asignación y las anomalías en el código de .NET. Esta herramienta solo se ejecuta a modo de análisis post mortem. Puede ejecutar esta herramienta en máquinas locales o remotas.
 
 Para obtener instrucciones detalladas en las que se explica cómo usar las herramientas de uso de memoria, vea el tutorial [Analizar el uso de memoria](../profiling/memory-usage.md) y la herramienta [Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 

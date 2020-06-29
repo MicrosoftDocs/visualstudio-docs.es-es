@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128290"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285990"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 
@@ -48,6 +48,8 @@ Estos son los pasos básicos:
 2. Haga clic en **Depurar / Generador de perfiles de rendimiento**. Debería ver una lista de herramientas de generación de perfiles en la ventana .diagsession.
 
 3. Seleccione **Escala de tiempo de aplicación** y luego haga clic en **Iniciar** en la parte inferior de la ventana.
+
+   ![Herramienta Escala de tiempo de la aplicación seleccionada](../profiling/media/apptimelineselect.png "Escala de tiempo de la aplicación")
 
    > [!NOTE]
    > Es posible que vea una ventana Control de cuentas de usuario en la que se le solicita permiso para ejecutar *VsEtwCollector.exe*. Haga clic en **Sí**.

@@ -2,7 +2,7 @@
 title: Depuración de una aplicación JavaScript o TypeScript
 description: Visual Studio proporciona compatibilidad para depurar aplicaciones de JavaScript y TypeScript en Visual Studio
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75678979"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285197"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
@@ -58,7 +58,7 @@ Si el origen se han minimizado o creado mediante un transcompilador como TypeScr
 
 Para obtener ayuda para generar mapas de origen, vea [Generación de mapas de origen para la depuración](#generate_source_maps).
 
-### <a name="prepare_the_browser_for_debugging"></a> Preparación del explorador para la depuración
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Preparación del explorador para la depuración
 
 ::: moniker range=">=vs-2019"
 Para este escenario, use Microsoft Edge (Chromium), denominado actualmente **Microsoft Edge Beta** en el IDE, o bien Chrome.
@@ -162,7 +162,7 @@ Para asociar el depurador de Visual Studio y establecer puntos de interrupción
 
    * Si tiene que interrumpir el código en un archivo JavaScript transcompilado (por ejemplo, *app-bundle.js*) y no puede hacerlo, quite el archivo de mapa de origen, *nombreDeArchivo.js.map*.
 
-### <a name="troubleshooting_source_maps"></a> Solución de problemas de puntos de interrupción y mapas de origen
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Solución de problemas de puntos de interrupción y mapas de origen
 
 Si tiene que interrumpir el código en un archivo de origen TypeScript o JSX y no puede hacerlo, use **Asociar al proceso**, como se describe en los pasos anteriores para asociar el depurador. Asegúrese de que el entorno está configurado correctamente:
 
@@ -174,7 +174,7 @@ Si tiene que interrumpir el código en un archivo de origen TypeScript o JSX y n
 
 Como alternativa, si tiene que interrumpir el código en un archivo de código fuente (por ejemplo, *app.tsx*) y no puede hacerlo, intente usar la instrucción `debugger;` en el archivo de código fuente, o bien establezca puntos de interrupción en las herramientas de desarrollo de Chrome (o las Herramientas de F12 para Microsoft Edge).
 
-## <a name="generate_source_maps"></a> Generar mapas de origen para la depuración
+## <a name="generate-source-maps-for-debugging"></a><a name="generate_source_maps"></a> Generar mapas de origen para la depuración
 
 Visual Studio tiene la capacidad de usar y generar mapas de origen en archivos de código fuente de JavaScript. Esto suele ser necesario cuando el origen se ha minimizado o creado mediante un transcompilador como TypeScript o Babel. Las opciones disponibles dependen del tipo de proyecto.
 
@@ -210,7 +210,7 @@ Se trata de una configuración solo de desarrollo para habilitar la depuración 
 
 En escenarios complicados, las herramientas del explorador (**F12**) a veces funcionan mejor para la depuración, ya que no requieren cambios en los prefijos personalizados.
 
-### <a name="configure_source_maps"></a> Configuración de mapas de origen con un archivo tsconfig.json
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Configuración de mapas de origen con un archivo tsconfig.json
 
 Si agrega un archivo *tsconfig.json* al proyecto, Visual Studio trata la raíz del directorio como un proyecto de TypeScript. Para agregar el archivo, haga clic con el botón derecho en el proyecto en el Explorador de soluciones y, luego, elija **Agregar > Nuevo elemento > Archivo de configuración JSON de TypeScript**. Un archivo *tsconfig.json* como este de aquí se agregará al proyecto.
 

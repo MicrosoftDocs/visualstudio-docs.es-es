@@ -1,5 +1,5 @@
 ---
-title: Configuración de destinos y tareas | Microsoft Docs
+title: Procedimiento Configurar destinos y tareas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
@@ -8,14 +8,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633894"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288902"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
+# <a name="how-to-configure-targets-and-tasks"></a>Procedimiento Configurar destinos y tareas
 
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.
@@ -115,3 +115,4 @@ Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera 
 ## <a name="see-also"></a>Vea también
 
 - [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
+- [Elemento UsingTask](../msbuild/usingtask-element-msbuild.md)

@@ -1,6 +1,6 @@
 ---
 title: Cambiar las fuentes y los colores del editor
-ms.date: 11/26/2018
+ms.date: 06/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d58270b11c810e357af00fbec249c9a659890fb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595571"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283713"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio
 
@@ -31,20 +31,29 @@ Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar l
 
 - Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.
 
+> [!IMPORTANT]
+> Para obtener información sobre cómo personalizar las fuentes y los colores del entorno de desarrollo integrado y no solo del editor de código, consulte la página **[Cómo: Cambiar fuentes y colores en Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)** .
+
 ## <a name="change-the-default-font-face-size-and-colors"></a>Cambiar la fuente predeterminada, el tamaño y los colores
 
-1. Seleccione **Opciones** en el menú **Herramientas**. En **Entorno**, seleccione [Fuentes y colores](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Seleccione **Opciones** en el menú **Herramientas**. En **Entorno**, seleccione **Fuentes y colores**.
 
-2. En **Mostrar configuración para**, seleccione **Editor de texto**.
+1. En **Mostrar configuración para**, seleccione **Editor de texto**.
 
-3. Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.
+   ![Captura de pantalla del cuadro de diálogo Opciones para cambiar fuentes y colores en el editor](../../ide/media/fonts-colors-text-editor.png "Captura de pantalla del cuadro de diálogo Opciones para cambiar las fuentes y los colores en el editor")
 
-4. Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
+1. Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.
+
+1. Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
 
     > [!TIP]
     > Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
 
-5. Haga clic en **Aceptar**.
+1. Haga clic en **Aceptar**.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Para obtener más información sobre los cambios de fuente y color que puede realizar en el entorno de desarrollo integrado mediante el cuadro de diálogo **Opciones**, consulte la página [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
 title: Cambiar signatura del método
-description: Elimine o cambie el orden de los parámetros de un método. Haga clic con el botón derecho en el método, seleccione Acciones rápidas y refactorizaciones y, luego, Cambiar firma.
-ms.date: 01/26/2018
+description: Agregue, quite o cambie el orden de los parámetros de un método. Haga clic con el botón derecho en el método, seleccione Acciones rápidas y refactorizaciones y, luego, Cambiar firma.
+ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68711261"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283893"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactorización de cambio de una firma de método
 
@@ -29,11 +29,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite quitar o cambiar el orden de los parámetros de un método.
+**Qué:** Permite quitar o cambiar el orden de los parámetros de un método.
 
-**Cuándo:** Desea mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
+**Cuándo:** Se quiere mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
 
-**Por qué:** Podría quitar y cambiar el orden de los parámetros manualmente y, a continuación, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
+**Por qué:** Se podría quitar y cambiar el orden de los parámetros manualmente y, después, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -59,19 +59,27 @@ Esta refactorización se aplica a lo siguiente:
 
 3. En el cuadro de diálogo **Cambiar firma** que aparece, puede usar los botones a la derecha para cambiar la firma del método:
 
-   ![Cuadro de diálogo para cambiar firma](media/changesignature-dialog-cs.png)
+   ![Cuadro de diálogo para cambiar firma](media/change-signature.png)
 
-   | Botón | Description
+   | Botón | Descripción
    | ------ | ---
    | **Up/Down** | Mueve el parámetro seleccionado hacia arriba y hacia abajo en la lista.
+   | **Add** | Agrega un parámetro nuevo a la lista
    | **Remove** | Quita el parámetro seleccionado de la lista.
    | **Restore** | Restaura el parámetro seleccionado y tachado a la lista.
 
    > [!TIP]
    > Use la casilla **Vista previa de los cambios de referencia** para [ver cuál será el resultado antes de confirmar](../../ide/preview-changes.md).
 
-4. Cuando haya terminado, presione el botón **Aceptar** para realizar los cambios.
+4. Al seleccionar **Agregar** en el cuadro de diálogo **Cambiar firma**, se abrirá el cuadro de diálogo **Agregar parámetro**. que permite agregar un nombre de tipo y un nombre de parámetro. Puede optar por hacer que el parámetro sea obligatorio u opcional con un valor predeterminado. Tras ello, puede agregar un valor en el sitio de llamada y elegir un argumento con nombre para ese valor, o bien introducir una variable TODO. La variable TODO coloca un elemento TODO en el código para recorrer cada error y pasar por cada sitio de llamada de manera independiente y decidir qué omitir y qué no. En el caso de los parámetros opcionales, existe la opción de omitir el sitio de llamada por completo.
 
+    ![Cuadro de diálogo Agregar parámetro: C#](media/add-parameter-dialog.png)
+
+5. Cuando haya terminado de agregar un parámetro, presione el botón **Aceptar** para obtener una vista previa de los cambios.
+
+    ![Cuadro de diálogo para cambiar firma](media/change-signature.png)
+
+6. Presione **Aceptar** para ver los cambios.
    - C#:
 
       ![Resultado del cambio de firma (C#)](media/changesignature-result-cs.png)

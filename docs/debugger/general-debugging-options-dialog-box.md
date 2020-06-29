@@ -1,6 +1,6 @@
 ---
 title: General, Depuración, Opciones (Cuadro de diálogo) | Microsoft Docs
-ms.date: 11/12/2019
+ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bbd65d11b26d9b35000e4acbe4d28a585f8ddc
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472687"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286562"
 ---
 # <a name="general-debugging-options"></a>Opciones generales de depuración
 
@@ -89,7 +89,7 @@ En las condiciones 2 y 3, el código administrado de `mscorlib` a veces detecta 
 
 - **Recurrir a la autenticación del Administrador de credenciales de GIT para todas las solicitudes de vínculos de origen**:   Cuando se habilita la compatibilidad con vínculos de origen y se produce un error en la autenticación de una solicitud de vínculos de origen, Visual Studio llama al Administrador de credenciales de GIT.
 
-**Resaltar la línea entera para los puntos de interrupción y la instrucción actual (solo C++)** : Cuando el depurador resalta un punto de interrupción o la instrucción actual, resalta toda la línea.
+**Resaltar la línea de código fuente entera para los puntos de interrupción y la instrucción actual (solo C++)** : Cuando el depurador resalta un punto de interrupción o la instrucción actual, resalta toda la línea.
 
 **Es necesario que los archivos de código fuente coincidan con la versión original**: Indica al depurador que compruebe que un archivo de código fuente coincide con la versión del código fuente utilizada para compilar el archivo ejecutable que se está depurando. Cuando la versión no coincide, se le solicita que busque el archivo de código fuente correspondiente. Si no se encuentra este archivo, el código fuente no se mostrará durante la depuración.
 
@@ -101,11 +101,9 @@ En las condiciones 2 y 3, el código administrado de `mscorlib` a veces detecta 
 
 **Habilitar depuración de JavaScript para ASP.NET (IE, Microsoft Edge y Chrome)** : Habilita el depurador de script para las aplicaciones de ASP.NET. Al usarse por primera vez en Chrome, es posible que tenga que iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado. Deshabilite esta opción para volver al comportamiento heredado.
 
-**Habilitar herramientas de desarrollo de Microsoft Edge para aplicaciones JavaScript UWP (experimental)** : Habilita las herramientas de desarrollo para aplicaciones JavaScript UWP en Microsoft Edge.
-
-**Habilitar el depurador de JavaScript de Chrome heredado para ASP.NET**: Habilita el depurador de script de JavaScript de Chrome heredado para las aplicaciones ASP.NET. Al usarse por primera vez en Chrome, es posible que tenga que iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado.
-
-**Usar el modo experimental para iniciar la depuración de JavaScript de Chrome cuando se ejecuta Visual Studio como administrador**: Indica a Visual Studio que pruebe una nueva forma de iniciar Chrome durante la depuración de JavaScript.
+::: moniker range=">= vs-2019"
+**Habilitar el uso del depurador de JavaScript de varios destinos para depurar JavaScript en destinos aplicables (requiere el reinicio de la depuración)** : habilita la conexión con el explorador y el back-end simultáneamente, lo que le permite depurar el código que se ejecuta en el cliente y el servidor directamente desde el editor.
+::: moniker-end
 
 **Cargar exportaciones de dll (solo nativas)** : Carga las tablas de exportación de archivos DLL. La información de símbolos de las tablas de exportación de archivos DLL puede resultar útil si se trabaja con mensajes de Windows, procedimientos de Windows (WindowProc), objetos COM, cálculo de referencias o cualquier archivo DLL para el que no disponga de símbolos. La lectura de la información de exportación de archivos DLL implica cierta sobrecarga. Por lo tanto, esta funcionalidad está desactivada de forma predeterminada.
 
@@ -124,7 +122,9 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
 > [!NOTE]
 > Al elegir el Modo de compatibilidad administrado se deshabilitan algunas características que solo están implementadas en el motor de depuración predeterminado. El motor de depuración heredado se reemplazó en Visual Studio 2012.
 
+::: moniker range="vs-2017"
 **Usar los evaluadores de expresiones de C# y VB heredados**: El depurador usará los evaluadores de expresión de C# o Visual Basic de Visual Studio 2013 en lugar de los evaluadores de expresión basados en Roslyn de Visual Studio 2015.
+::: moniker-end
 
 **Al usar visualizadores del depurador personalizados, advertir de procesos potencialmente no seguros (solo administrados)** : Visual Studio le advierte cuando se usa un visualizador del depurador personalizado que ejecuta código en el proceso de depuración, dado que podría ejecutar código no seguro.
 
@@ -142,6 +142,9 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
 - **Habilitar Solo mi XAML**: A partir de la versión 16.4 de Visual Studio 2019, el **Árbol visual activo** de forma predeterminada solo muestra XAML que se clasifica como código de usuario. Si deshabilita esta opción, se muestra todo el código XAML generado en la herramienta.
 
 - **Desactivar el modo de selección cuando se selecciona un elemento** A partir de la versión 16.4 de Visual Studio 2019, el botón del selector de elementos de la barra de herramientas de la aplicación (**Habilitar selección**) se desactiva cuando se selecciona un elemento. Si deshabilita esta opción, la selección de elementos permanece activada hasta que vuelve a hacer clic en el botón de la barra de herramientas de la aplicación.
+
+- **Aplicar la Recarga activa de XAML al guardar el documento**: a partir de Visual Studio 2019 16.6, aplica la Recarga activa de XAML al guardar el documento.
+
 ::: moniker-end
 
 **Habilitar herramientas de diagnóstico durante la depuración**: Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**.
@@ -162,15 +165,25 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
 
 ::: moniker range=">= vs-2019"
 **Habilitar la evaluación rápida de expresiones (solo administrado)** : Permite al depurador intentar una evaluación más rápida mediante la simulación de la ejecución de métodos y propiedades simples.
+
+**Cargar símbolos de depuración en un proceso externo (solo nativo)** : habilita esta [optimización de memoria](https://devblogs.microsoft.com/cppblog/out-of-process-debugger-for-c-in-visual-studio-2019/) durante la depuración.
+
+**Llevar Visual Studio al primer plano cuando se interrumpe en el depurador**: cambia Visual Studio al primer plano cuando se pausa en el depurador.
 ::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Opciones disponibles en versiones anteriores de Visual Studio
 
 Si usa una versión anterior de Visual Studio, puede que estén presentes algunas opciones adicionales.
 
+**Habilitar herramientas de desarrollo de Microsoft Edge para aplicaciones JavaScript UWP (experimental)** : Habilita las herramientas de desarrollo para aplicaciones JavaScript UWP en Microsoft Edge.
+
+**Habilitar el depurador de JavaScript de Chrome heredado para ASP.NET**: Habilita el depurador de script de JavaScript de Chrome heredado para las aplicaciones ASP.NET. Al usarse por primera vez en Chrome, es posible que tenga que iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado.
+
 **Habilitar el Asistente de excepciones**: En el caso del código administrado, habilita el asistente de excepciones. El Asistente de excepciones ha reemplazado al asistente de excepciones a partir de Visual Studio 2017.
 
 **Desenredar la pila de llamadas cuando se produzcan excepciones no controladas**: Hace que la ventana **Pila de llamadas** revierta la pila de llamadas hasta el punto anterior en el que se produjo la excepción no controlada.
+
+**Usar el modo experimental para iniciar la depuración de JavaScript de Chrome cuando se ejecuta Visual Studio como administrador**: Indica a Visual Studio que pruebe una nueva forma de iniciar Chrome durante la depuración de JavaScript.
 
 **Advertir de la inexistencia de símbolos al iniciar (solo nativo)** : Se muestra un cuadro de diálogo de advertencia al depurar un programa para el que el depurador no tiene información de símbolos.
 

@@ -1,7 +1,7 @@
 ---
 title: Análisis de los resultados de pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - results, load test
 - load test results, accessing
@@ -14,14 +14,14 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596468"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288538"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Acceso a los resultados de pruebas de carga para su análisis
+# <a name="how-to-access-load-test-results-for-analysis"></a>Procedimiento para acceder a los resultados de pruebas de carga para el análisis
 
 Al ejecutar una prueba de carga desde el Editor de pruebas de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el **Analizador de pruebas de carga**. Al ejecutar una prueba de carga desde la línea de comandos, debe obtener acceso a los resultados de pruebas de carga manualmente.
 
@@ -37,9 +37,9 @@ El resultado de la prueba de carga completada contiene ejemplos de contadores de
 
      Aparecerá el cuadro de diálogo **Abrir y administrar resultados**.
 
-3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local> - no controlador** para tener acceso a los resultados almacenados localmente.
+3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<local> - No controller** para tener acceso a los resultados almacenados localmente.
 
-4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
+4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Show results for all tests>** para ver todos los resultados de todas las pruebas.
 
      Si hay resultados de pruebas de carga disponibles, aparecen en la lista **Resultados de pruebas de carga**. Las columnas son **Hora**, **Duración**, **Usuario**, **Resultado**, **Prueba** y **Descripción**. **Prueba** contiene el nombre de la prueba y **Descripción** incluye la descripción opcional que se ha agregado antes de ejecutar la prueba.
 
@@ -54,4 +54,4 @@ El resultado de la prueba de carga completada contiene ejemplos de contadores de
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8adce700524c4ade6c627aa91480460f8f2571f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e84b9de4eca681812209eb17f492d5e07522d3b5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71933483"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85292128"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Selección del marco de pruebas de un proyecto de Python
 
@@ -130,7 +130,7 @@ Las pruebas se ejecutan en segundo plano y el **Explorador de pruebas** actualiz
 Dado que las pruebas unitarias son fragmentos de código, están sujetas a errores como cualquier otro código y, en ciertas ocasiones, necesitan ejecutarse en un depurador. En el depurador puede establecer puntos de interrupción, examinar variables y recorrer el código. Visual Studio también proporciona herramientas de diagnóstico para las pruebas unitarias.
 
 > [!Note]
-> La depuración de prueba usa de forma predeterminada el depurador ptvsd 4. Si quiere usar ptvsd 3 en su lugar, puede seleccionar la opción **Usar depurador heredado** en **Herramientas** > **Opciones** > **Python** > **Depuración**. 
+> De forma predeterminada, la depuración de prueba usa el depurador de ptvsd 4 para Visual Studio 2017 (versiones 15.8 y posteriores) y debugpy para Visual Studio 2019 (versiones 16.5 y posteriores). Si quiere usar ptvsd 3 en su lugar, puede seleccionar la opción **Usar depurador heredado** en **Herramientas** > **Opciones** > **Python** > **Depuración**. 
 
 Para iniciar la depuración, establezca un punto de interrupción inicial en el código y luego haga clic con el botón derecho en la prueba (o una selección) en el **Explorador de pruebas** y seleccione **Depurar pruebas seleccionadas**. Visual Studio inicia el depurador de Python como lo haría para el código de la aplicación.
 

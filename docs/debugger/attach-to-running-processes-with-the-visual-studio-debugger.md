@@ -1,7 +1,7 @@
 ---
 title: Asociación a los procesos en ejecución con el depurador | Microsoft Docs
 ms.custom: seodec18
-ms.date: 04/14/2020
+ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,14 +28,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075f5b0df703e31ea265085f422567a4fb5298a4
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385493"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85281011"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
+
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que el proceso se esté ejecutando, seleccione **Depurar** > **Asociar al proceso** o presione **Ctrl**+**Alt**+**P** en Visual Studio y use el cuadro de diálogo **Asociar al proceso** para asociar el depurador al proceso.
 
 Puede usar **Asociar al proceso** para depurar aplicaciones en ejecución en equipos locales o remotos, depurar varios procesos simultáneamente, depurar aplicaciones que no se crearon en Visual Studio o depurar cualquier aplicación que no se haya iniciado desde Visual Studio con el depurador asociado. Por ejemplo, si está ejecutando una aplicación sin el depurador y alcanza una excepción, puede asociar el depurador al proceso que ejecuta la aplicación y comenzar la depuración.
@@ -47,21 +48,19 @@ Puede usar **Asociar al proceso** para depurar aplicaciones en ejecución en equ
 
 Para volver a asociar rápidamente a un proceso que ha asociado previamente, consulte [Reasociar a un proceso](#BKMK_reattach).
 
-Para depurar un proceso en un equipo remoto, vea [Adjuntar a un proceso en un equipo remoto](#BKMK_Attach_to_a_process_on_a_remote_computer).
-
-::: moniker range=">= vs-2019"
-Para depurar un proceso de .NET Core en un contenedor de Docker de Linux, consulte [Adjuntar a un proceso que se ejecuta en un contenedor de Docker de Linux](#BKMK_Linux_Docker_Attach).
-::: moniker-end
-
 **Para asociar a un proceso en el equipo local:**
 
 1. En Visual Studio, seleccione **Depurar** > **Asociar al proceso** (o presione **Ctrl**+**Alt**+**P**) para abrir el cuadro de diálogo **Asociar al proceso**.
 
-   **Tipo de conexión** debe establecerse en **Predeterminado**. **Destino de la conexión** debe ser el nombre de la máquina local.
+1. Compruebe el **tipo de conexión**.
+
+   En la mayoría de los escenarios, puede usar el **valor predeterminado**. Algunos escenarios pueden requerir un tipo de conexión diferente. Para obtener más información, consulte otras secciones de este artículo o [escenarios comunes de depuración](#BKMK_Scenarios).
+
+1. Establezca el **destino de la conexión** en el nombre de la máquina local.
 
    ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
 
-2. En la lista **Procesos disponibles**, busque y seleccione el proceso o los procesos con los que quiere establecer la asociación.
+1. En la lista **Procesos disponibles**, busque y seleccione el proceso o los procesos con los que quiere establecer la asociación.
 
    - Para seleccionar rápidamente un proceso, escriba su nombre o su primera letra en el cuadro **Filtrar procesos**.
 
@@ -70,15 +69,18 @@ Para depurar un proceso de .NET Core en un contenedor de Docker de Linux, consu
    >[!TIP]
    >Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo **Asociar al proceso** está abierto, por lo que la lista de procesos en ejecución puede no estar siempre actualizada. Puede seleccionar **Actualizar** en cualquier momento para ver la lista actual.
 
-3. En el campo **Asociar a**, asegúrese de que aparece el tipo de código que va a depurar. El parámetro **Automático** predeterminado funciona en la mayoría de los tipos de aplicaciones.
+1. En el campo **Asociar a**, asegúrese de que aparece el tipo de código que va a depurar. El parámetro **Automático** predeterminado funciona en la mayoría de los tipos de aplicaciones.
+
+   Si usa el tipo de conexión **predeterminado**, puede seleccionar manualmente el tipo de código al que desee establecer una asociación. De lo contrario, la opción **Seleccionar** puede deshabilitarse.
 
    Para seleccionar tipos de código manualmente:
    1. Haga clic en **Seleccionar**.
    1. En el cuadro de diálogo **Seleccionar tipo de código**, seleccione **Depurar estos tipos de código**.
+      Si se produce un error al intentar establecer una asociación a un proceso de la lista, puede usar el cuadro de diálogo [Seleccionar tipo de código](../debugger/select-code-type-dialog-box.md) para ayudar a [solucionar](#BKMK_Troubleshoot_attach_errors) la incidencia.
    1. Seleccione los tipos de código que desea depurar.
    1. Seleccione **Aceptar**.
 
-4. Seleccione **Adjuntar**.
+1. Seleccione **Adjuntar**.
 
 >[!NOTE]
 >Puede tener asociaciones con varias aplicaciones para la depuración, pero solo una aplicación está activa en el depurador a la vez. Puede establecer la aplicación activa en la barra de herramientas **Ubicación de depuración** o la ventana **Procesos** de Visual Studio.
@@ -93,12 +95,16 @@ Para obtener instrucciones más completas sobre cómo depurar aplicaciones ASP.N
 
 1. En Visual Studio, seleccione **Depurar** > **Asociar al proceso** (o presione **Ctrl**+**Alt**+**P**) para abrir el cuadro de diálogo **Asociar al proceso**.
 
-2. **Tipo de conexión** debe ser **Predeterminado** en la mayoría de los casos. En el cuadro **Destino de conexión**, seleccione el equipo remoto mediante uno de los métodos siguientes:
+1. Compruebe el **tipo de conexión**.
+
+   En la mayoría de los escenarios, puede usar el **valor predeterminado**. Algunos escenarios, como la depuración de Linux o una aplicación en contenedores, requieren un tipo de conexión diferente. Para obtener más información, consulte otras secciones de este artículo o [escenarios comunes de depuración](#BKMK_Scenarios).
+
+1. En el cuadro **Destino de conexión**, seleccione el equipo remoto mediante uno de los métodos siguientes:
 
    - Seleccione la flecha desplegable situada junto a **Destino de conexión** y seleccione el nombre del equipo en la lista desplegable.
    - Escriba el nombre del equipo en el cuadro **Destino de conexión** y presione **Entrar**.
 
-     Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato: **\<nombre de equipo remoto >:puerto**
+     Compruebe que Visual Studio agrega el puerto necesario al nombre del equipo, que aparece en el formato **\<remote computer name>:puerto**.
 
      ::: moniker range=">= vs-2019"
 
@@ -136,10 +142,12 @@ Para obtener instrucciones más completas sobre cómo depurar aplicaciones ASP.N
 
 5. En el campo **Asociar a**, asegúrese de que aparece el tipo de código que va a depurar. El parámetro **Automático** predeterminado funciona en la mayoría de los tipos de aplicaciones.
 
+   Si usa el tipo de conexión **predeterminado**, puede seleccionar manualmente el tipo de código al que desee establecer una asociación. De lo contrario, la opción **Seleccionar** puede deshabilitarse.
+
    Para seleccionar tipos de código manualmente:
    1. Haga clic en **Seleccionar**.
    1. En el cuadro de diálogo **Seleccionar tipo de código**, seleccione **Depurar estos tipos de código**.
-   1. Seleccione los tipos de código que desea depurar.
+      Si se produce un error al intentar establecer una asociación a un proceso de la lista, puede usar el cuadro de diálogo [Seleccionar tipo de código](../debugger/select-code-type-dialog-box.md) para ayudar a [solucionar](#BKMK_Troubleshoot_attach_errors) la incidencia.
    1. Seleccione **Aceptar**.
 
 6. Seleccione **Adjuntar**.
@@ -152,7 +160,6 @@ En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Servi
 Si ninguna de estas dos soluciones es posible, existe una tercera opción que consiste en asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p <ProcessId>` en la línea de comandos de Windows. Puede determinar el identificador de proceso mediante *tlist.exe*. Para obtener el archivo *tlist.exe*, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ::: moniker range=">= vs-2019"
-
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Asociación a un proceso de .NET Core que se ejecuta en Linux mediante SSH
 
@@ -262,9 +269,10 @@ Para seleccionar rápidamente un proceso en ejecución al que asociarse, en Visu
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Uso de herramientas remotas y **Asociar al proceso**|*w3wp.exe*|Vea [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).|
 |Depuración remota de ASP.NET Core en un servidor de IIS|Uso de herramientas remotas y **Asociar al proceso**|*w3wp.exe* o *dotnet.exe*|A partir de .NET Core 3, el proceso *w3wp.exe* se usa para el [modelo de hospedaje en la aplicación](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) predeterminado. Para la implementación de aplicaciones, vea [Publicación en IIS](/aspnet/core/host-and-deploy/iis/). Para obtener información más detallada, vea [Depuración remota de ASP.NET Core en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |Depuración del script del lado cliente en un servidor IIS local, para los tipos de aplicaciones compatibles |Uso de **Asociar al proceso**|*chrome.exe*, *MicrosoftEdgeCP.exe* o *iexplore.exe*|La depuración de scripts debe estar habilitada. Para Chrome, también debe ejecutar Chrome en modo de depuración (escriba `chrome.exe --remote-debugging-port=9222` desde una línea de comandos) y seleccionar **JavaScript (Chrome)** en el campo **Asociar a**.|
-|Depuración de una aplicación de C#, Visual Basic o C++ en la máquina local|Uso de la depuración estándar (**F5**) o **Asociar al proceso**|*\<nombre_de_la_aplicación>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **Asociar al proceso**.|
+|Depuración de una aplicación de C#, Visual Basic o C++ en la máquina local|Uso de la depuración estándar (**F5**) o **Asociar al proceso**|*\<appname>.exe*|En la mayoría de los escenarios, use la depuración estándar y no **Asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [Depuración de una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [Depuración remota de un proyecto C++](../debugger/remote-debugging-cpp.md).|
-|Depuración de .NET Core en Linux|Uso de **Asociar al proceso**|*dotnet.exe*|Para usar SSH, consulte [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
+|Depuración de .NET Core en Linux|Uso de **Asociar al proceso**|*dotnet.exe*|Para usar SSH, consulte [Depuración remota de .NET Core en Linux con SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). En el caso de las aplicaciones en contenedores, consulte las secciones anteriores de este artículo.|
+|Depuración remota de Python en Linux|Uso de **Asociar al proceso**|*debugpy*|Consulte [Asociar desde Herramientas de Python de forma remota](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depuración de una aplicación de ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Uso de **Asociar al proceso**|*iiexpress.exe*|Puede resultar útil para agilizar la carga de la aplicación, como (por ejemplo,) al generar perfiles. |
 |Depuración de otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor es remoto, use herramientas remotas y **Asociar al proceso**.|*chrome.exe*, *iexplore.exe* u otros procesos|Si es necesario, utilice Monitor de recursos para identificar mejor el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
 |Depuración remota de una Aplicación Windows universal (UWP), OneCore, HoloLens o IoT|Depurar paquete de aplicaciones instalado|N/D|Consulte [Depurar un paquete de aplicación instalado](debug-installed-app-package.md) en lugar de usar **Asociar al proceso**.|
@@ -279,17 +287,23 @@ En escenarios de depuración remota, debe tener el código fuente (o una copia d
 En algunos escenarios de depuración local, puede depurar en Visual Studio sin acceso al origen si los archivos de símbolos correctos están presentes en la aplicación. De forma predeterminada, esto requiere una compilación de depuración. Para obtener más información, vea [Especificar archivos de código fuente y símbolos en el depurador de Visual Studio (C#, C++, Visual Basic, F#)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="troubleshoot-attach-errors"></a><a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación
- Cuando el depurador se asocia a un proceso en ejecución, el proceso puede contener uno o varios tipos de código. Los tipos de código a los que se puede asociar el depurador se muestran y seleccionan en el cuadro de diálogo **Seleccionar tipo de código** .
 
- A veces, el depurador puede asociarse correctamente a un tipo de código, pero no a otro. Esto puede ocurrir cuando se intenta asociar el depurador a un proceso que está ejecutándose en un equipo remoto. Puede que el equipo remoto tenga instalados los componentes de depuración remota para algunos tipos de código, pero no para otros. También puede ocurrir al intentar asociar el depurador a dos o varios procesos para realizar una depuración directa de la base de datos. La depuración de SQL sólo admite la asociación a un único proceso.
+En algunos escenarios, es posible que el depurador necesite ayuda para identificar correctamente el tipo de código que se va a depurar. Si los valores de conexión se establecen correctamente (puede ver el proceso correcto en la lista **Procesos disponibles**), pero el depurador no se asocia, intente seleccionar el tipo de conexión más adecuado en la lista **Tipo de conexión**, que puede requerirse, por ejemplo, si depura una aplicación de Linux o Python. Si usa el tipo de conexión predeterminado, también puede seleccionar el tipo específico de código al que conectarse, como se describe más adelante en esta sección.
 
- Si el depurador logra asociarse a algunos tipos de código, pero no a todos, aparece un mensaje en el que se identifican los tipos sin asociar.
+Cuando el depurador se asocia a un proceso en ejecución, el proceso puede contener uno o varios tipos de código. Los tipos de código a los que se puede asociar el depurador se muestran y seleccionan en el cuadro de diálogo [Seleccionar tipo de código](../debugger/select-code-type-dialog-box.md) .
 
- Si el depurador se asocia correctamente a un tipo de código por lo menos, podrá reanudar la depuración del proceso. Sólo podrá depurar los tipos de código que se hayan asociado correctamente. El código sin asociar del proceso seguirá ejecutándose, pero no se podrán establecer puntos de interrupción, ni se podrán ver los datos, ni se podrá realizar ninguna otra operación de depuración en el código.
+A veces, el depurador puede asociarse correctamente a un tipo de código, pero no a otro. Normalmente, esto ocurre cuando:
 
- Si desea obtener información más detallada sobre el motivo por el que el depurador no se ha asociado correctamente a un tipo de código, intente asociarlo de nuevo con ese tipo de código exclusivamente.
+- Intenta establecer una asociación a un proceso que se ejecuta en un equipo remoto. Puede que el equipo remoto tenga instalados los componentes de depuración remota para algunos tipos de código, pero no para otros.
+- Intenta establecer una asociación a dos o varios procesos para realizar una depuración directa de la base de datos. La depuración de SQL sólo admite la asociación a un único proceso.
 
- **Para obtener información específica sobre la causa por la que no se ha asociado correctamente un tipo de código:**
+Si el depurador logra asociarse a algunos tipos de código, pero no a todos, aparece un mensaje en el que se identifican los tipos sin asociar.
+
+Si el depurador se asocia correctamente a un tipo de código por lo menos, podrá reanudar la depuración del proceso. Sólo podrá depurar los tipos de código que se hayan asociado correctamente. El código sin asociar del proceso seguirá ejecutándose, pero no se podrán establecer puntos de interrupción, ni se podrán ver los datos, ni se podrá realizar ninguna otra operación de depuración en el código.
+
+Si desea obtener información más detallada sobre el motivo por el que el depurador no se ha asociado correctamente a un tipo de código, intente asociarlo de nuevo con ese tipo de código exclusivamente.
+
+**Para obtener información específica sobre la causa por la que no se ha asociado correctamente un tipo de código:**
 
 1. Desasocie el proceso. En el menú **Depurar**, seleccione **Desasociar todo**.
 

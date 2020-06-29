@@ -2,7 +2,7 @@
 title: Medición del rendimiento con herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
 ms.custom: mvc
-ms.date: 05/18/2018
+ms.date: 06/03/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,16 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
-ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
+ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80412035"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280265"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
-Visual Studio proporciona una variedad de herramientas de generación de perfiles que le ayudarán a diagnosticar diferentes tipos de problemas de rendimiento según el tipo de aplicación.
+Visual Studio proporciona una variedad de herramientas de generación de perfiles que le ayudarán a diagnosticar diferentes tipos de problemas de rendimiento según el tipo de aplicación. En este artículo, echamos un vistazo rápido a las herramientas de generación de perfiles más habituales.
+
+## <a name="view-performance-while-debugging"></a>Visualización del rendimiento durante la depuración
 
 Las herramientas de generación de perfiles a las que puede obtener acceso durante una sesión de depuración están disponibles en la ventana Herramientas de diagnóstico. La ventana Herramientas de diagnóstico aparece automáticamente a menos que la desactive. Para mostrar la ventana, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**. Con la ventana abierta, puede seleccionar las herramientas para las que se van a recopilar datos.
 
@@ -31,7 +33,7 @@ Durante la depuración, puede usar la ventana **Herramientas de diagnóstico** p
 
 ![Vista de resumen de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumen de Herramientas de diagnóstico")
 
-La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
+La ventana **Herramientas de diagnóstico** es una manera habitual de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
 
 > [!NOTE]
 > Puede usar las herramientas de análisis post-mortem con Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
@@ -59,7 +61,7 @@ En la vista **Resumen** de Herramientas de diagnóstico, seleccione **Habilitar 
 
 ![Habilitar el uso de CPU en Herramientas de diagnóstico](../profiling/media/prof-tour-enable-cpu-profiling.png "Habilitar el uso de CPU en Herramientas de diagnóstico")
 
-Para usar la herramienta de la forma más eficaz posible, establezca dos puntos de interrupción en el código, uno al principio y otro al final de la función o la región de código que quiere analizar. Examine los datos de generación de perfiles cuando se haya detenido en el segundo punto de interrupción.
+Una forma de usar la herramienta es establecer dos puntos de interrupción en el código, uno al principio y otro al final de la función o la región de código que quiere analizar. Examine los datos de generación de perfiles cuando se haya detenido en el segundo punto de interrupción.
 
 La vista **Uso de CPU** muestra una lista de funciones ordenadas por la ejecución más larga, con la función más larga que se está ejecutando en la parte superior. Esto le ayudará a detectar las funciones en las que se producen cuellos de botella de rendimiento.
 
@@ -89,15 +91,9 @@ Las herramientas de generación de perfiles como Uso de CPU y Uso de memoria pue
 
 ![Generador de perfiles de rendimiento](../profiling/media/prof-tour-performance-profiler.png "Generador de perfiles de rendimiento")
 
-Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento**.
+Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
 
-La ventana le permitirá seleccionar varias herramientas de generación de perfiles en algunos escenarios. Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis. También puede usar el [generador de perfiles de la línea de comandos](../profiling/profile-apps-from-command-line.md) para habilitar escenarios con varias herramientas de generación de perfiles.
-
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
-
-En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
-
-![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
+La ventana le permitirá seleccionar [varias herramientas de generación de perfiles](../profiling/use-multiple-profiler-tools-simultaneously.md) en algunos escenarios. Las herramientas como Uso de CPU proporcionan datos complementarios que le pueden ayudar en el análisis. También puede usar el [generador de perfiles de la línea de comandos](../profiling/profile-apps-from-command-line.md) para habilitar escenarios con varias herramientas de generación de perfiles.
 
 ## <a name="analyze-resource-consumption-xaml"></a>Análisis del consumo de recursos (XAML)
 
@@ -110,6 +106,40 @@ Los valores de framerate bajos en el gráfico **Rendimiento visual** podrían co
 En la vista Detalles de la escala de tiempo, puede encontrar información como el tipo de actividad (o el elemento de la interfaz de usuario implicado) junto con la duración de la actividad. Por ejemplo, en la ilustración, un evento de **Diseño** para un control de cuadrícula tarda 57,53 ms.
 
 Para obtener más información, vea [Application Timeline](../profiling/application-timeline.md) (Escala de tiempo de la aplicación).
+
+::: moniker range=">=vs-2019"
+
+## <a name="examine-application-events"></a>Examen de eventos de aplicaciones
+
+El [visor de eventos](../profiling/events-viewer.md) genérico permite ver la actividad de la aplicación a través de una lista de eventos, como configuraciones del sistema, inicio de subprocesos y carga de módulos, para ayudar a realizar un mejor diagnóstico del rendimiento de la aplicación en el generador de perfiles de Visual Studio. Esta herramienta está disponible en el generador de perfiles de rendimiento. Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
+
+La herramienta muestra cada evento en una vista de lista. Las columnas proporcionan información sobre cada evento, como el nombre del evento, la marca de tiempo y el identificador de proceso.
+
+![Seguimiento del visor de eventos](../profiling/media/eventviewertrace.png "Seguimiento del visor de eventos")
+
+## <a name="analyze-asynchronous-code-net"></a>Análisis de código asincrónico (.NET)
+
+La [herramienta .NET Async](../profiling/analyze-async.md) permite analizar el rendimiento del código asincrónico en la aplicación. Esta herramienta está disponible en el generador de perfiles de rendimiento. Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
+
+La herramienta muestra cada operación asincrónica en una vista de lista. Puede ver información como la hora de inicio, la hora de finalización y el tiempo total de una operación asincrónica.
+
+![Herramienta .NET Async detenida](../profiling/media/async-tool-opened.png "Herramienta .NET Async detenida")
+
+## <a name="analyze-database-performance-net-core"></a>Análisis del rendimiento de base de datos (.NET Core)
+
+En el caso de las aplicaciones .NET Core que usan ADO.NET o Entity Framework Core, la [herramienta de base de datos](../profiling/analyze-database.md) permite registrar las consultas de base de datos realizadas por la aplicación durante una sesión de diagnóstico. A continuación, puede analizar la información sobre consultas individuales para buscar dónde se puede mejorar el rendimiento de la aplicación. Esta herramienta está disponible en el generador de perfiles de rendimiento. Para abrir el Generador de perfiles de rendimiento, seleccione **Depurar** > **Generador de perfiles de rendimiento** (o **Alt + F2**).
+
+La herramienta muestra cada consulta en una vista de lista. Puede ver información como la hora de inicio y la duración de la consulta.
+
+![Asignación](./media/db-gotosource.png "Asignación")
+
+::: moniker-end
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examinar eventos de accesibilidad y rendimiento de la interfaz de usuario (UWP)
+
+En las aplicaciones de UWP, puede habilitar **Análisis de UI** en la ventana **Herramientas de diagnóstico**. La herramienta busca problemas comunes de rendimiento o de accesibilidad y los muestra en la vista **Eventos** durante la depuración. Las descripciones de los eventos proporcionan información que puede ayudar a resolver problemas.
+
+![Vista de eventos de análisis de la interfaz de usuario en las herramientas de diagnóstico](../profiling/media/prof-tour-ui-analysis.png "Vista de eventos de análisis de la interfaz de usuario en Herramientas de diagnóstico")
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Análisis del uso de la GPU (Direct3D)
 
@@ -168,13 +198,16 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 ::: moniker range=">=vs-2019"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
+|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí|sí|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
 |[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
-|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
+|[Visor de eventos](../profiling/perftips.md)|sí|sí|sí|
+|[.NET Async](../profiling/perftips.md)|sí (solo .NET)|sí|sí|
+|[Base de datos](../profiling/perftips.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|No|No|No|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
 

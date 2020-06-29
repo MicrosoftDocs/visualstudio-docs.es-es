@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865380"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289214"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tareas insertadas de MSBuild con RoslynCodeTaskFactory
 
 De forma similar a [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory usa los compiladores de Roslyn multiplataforma para generar ensamblados de la tarea en memoria para su uso como tareas insertadas.  Las tareas RolynCodeTaskFactory establecen como destino .NET Standard y pueden funcionar en los runtimes de .NET Framework y .NET Core, así como con otras plataformas como Linux y Mac OS.
 
 >[!NOTE]
->La tarea RoslynCodeTaskFactory solo está disponible en MSBuild 15.8 y versiones posteriores. Las versiones de MSBuild siguen las versiones de Visual Studio, por lo que RoslynCodeTaskFactory está disponible en Visual Studio 15.8 y versiones posteriores.
+>La tarea RoslynCodeTaskFactory solo está disponible en MSBuild 15.8 y versiones posteriores. Las versiones de MSBuild siguen a las versiones de Visual Studio, por lo que RoslynCodeTaskFactory está disponible en Visual Studio 2017, versión 15.8 y posteriores.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>La estructura de una tarea insertada con RoslynCodeTaskFactory
 
@@ -83,7 +83,7 @@ El atributo `Type` especifica el tipo de código que se encuentra en el elemento
 
 - Si el valor de `Type` es `Fragment`, el código define el contenido del método `Execute`, pero no la firma o la instrucción `return`.
 
-El propio código aparece normalmente entre un marcador `<![CDATA[` y un marcador `]]>`. Dado que el código está en una sección CDATA, no tiene que preocuparse de anteponer caracteres de escape a los caracteres reservados, como "\<" o ">".
+El propio código aparece normalmente entre un marcador `<![CDATA[` y un marcador `]]>`. Dado que el código está en una sección CDATA, no tiene que preocuparse de anteponer caracteres de escape a los caracteres reservados, como "\<" or ">".
 
 Alternativamente, puede utilizar el atributo `Source` del elemento `Code` para especificar la ubicación de un archivo que contiene el código para la tarea. El código del archivo de código fuente debe ser del tipo especificado por el atributo `Type`. Si el atributo `Source` está presente, el valor predeterminado de `Type` es `Class`. Si `Source` no está presente, el valor predeterminado es `Fragment`.
 
@@ -256,6 +256,57 @@ Estas tareas insertadas pueden combinar rutas y obtener el nombre de archivo.
 
         <Message Text="File name: '$(MyFileName)'" />
     </Target>
+</Project>
+```
+
+## <a name="provide-backward-compatibility"></a>Proporcionar compatibilidad con versiones anteriores
+
+`RoslynCodeTaskFactory` está disponible por primera vez en la versión 15.8 de MSBuild. Imaginemos un escenario en el que quiere admitir versiones anteriores de Visual Studio y MSBuild, cuando `RoslynCodeTaskFactory` no estaba disponible, pero `CodeTaskFactory` sí lo estaba, pero quiere usar el mismo script de compilación. Puede usar una construcción `Choose` que use la propiedad `$(MSBuildVersion)` para decidir en tiempo de compilación si usar `RoslynCodeTaskFactory` o revertir a `CodeTaskFactory`, como en el ejemplo siguiente:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" '$(MSBuildVersion.Substring(0,2))' >= 16 Or
+    ('$(MSBuildVersion.Substring(0,2))' == 15 And '$(MSBuildVersion.Substring(3,1))' >= 8)">
+      <PropertyGroup>
+        <TaskFactory>RoslynCodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TaskFactory>CodeTaskFactory</TaskFactory>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  
+  <UsingTask
+    TaskName="HelloWorld"
+    TaskFactory="$(TaskFactory)"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup />
+    <Task>
+      <Using Namespace="System"/>
+      <Using Namespace="System.IO"/>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+         Log.LogError("Using RoslynCodeTaskFactory");
+      ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="RunTask" AfterTargets="Build">
+    <Message Text="MSBuildVersion: $(MSBuildVersion)"/>
+    <Message Text="TaskFactory: $(TaskFactory)"/>
+    <HelloWorld />
+  </Target>
+
 </Project>
 ```
 

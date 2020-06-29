@@ -9,95 +9,134 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 9518ffd618a6d82505feca33b37b5151a3a9f961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a812ea3dcddc2fa6093b2b5b99684d1d5194654
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75886765"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85280155"
 ---
-# <a name="analyze-memory-usage-using-the-net-object-allocation-tool"></a>Análisis del uso de memoria mediante la herramienta de asignación de objetos de .NET
+# <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Análisis del uso de memoria mediante la herramienta de asignación de objetos de .NET
 
-Puede consultar la cantidad de memoria que está usando la aplicación y las rutas de acceso al código que asignan la mayor parte de la memoria mediante la herramienta de asignación de objetos de .NET.
+Puede consultar la cantidad de memoria que usa la aplicación y las rutas de acceso al código que asignan la mayor parte de la memoria mediante la herramienta de asignación de objetos de .NET.
 
-Después de ejecutar la herramienta, puede ver las rutas de acceso de ejecución de la función en las que se asignan los objetos para remitir a la raíz del árbol de llamadas que ocupa la mayor parte de memoria.
+Tras ejecutar la herramienta, podrá ver las rutas de acceso de ejecución de función en las que se asignan objetos. A continuación, podrá hacer un seguimiento hasta la raíz del árbol de llamadas que más memoria consume.
 
 ## <a name="setup"></a>Programa de instalación
 
-1. Abra el Generador de perfiles de rendimiento (**Alt+F2)** en Visual Studio.
-2.  Active la casilla **Seguimiento de asignación de objetos de .NET**.
+1. Seleccione **Alt+F2** para abrir el generador de perfiles de rendimiento en Visual Studio.
 
-![Concentrador de diagnóstico](../profiling/media/diaghub.png "Concentrador de diagnóstico")
+1. Active la casilla **Seguimiento de asignación de objetos de .NET**.
 
-> [!NOTE]
-> El proyecto de inicio se selecciona como **Destino de análisis** de forma predeterminada, pero esto se puede cambiar en el proceso en ejecución, los ejecutables, las aplicaciones en ejecución y las aplicaciones instaladas. Para ello, abra el menú desplegable **Cambiar destino** y seleccione la opción pertinente entre las disponibles.
+   ![La herramienta para el seguimiento de asignación de objetos de Dotnet seleccionada](../profiling/media/dotnetalloctoolselected.png "La herramienta para el seguimiento de asignación de objetos de Dotnet seleccionada")
 
-   La herramienta de asignación de objetos de .NET no admite actualmente ejecutables en el menú desplegable. Tendrá que pasar por el sistema de proyecto exe para usar la herramienta. Para ello, cierre la solución actual (**Archivo** -> **Cerrar solución**) y, a continuación, presione **Archivo** -> **Abrir un proyecto o una solución** y seleccione el archivo. exe.
+1. Seleccione el botón **Iniciar** para ejecutar la herramienta.
 
-![Destino del análisis](../profiling/media/analysistarget.png "Destino del análisis")
+1. Una vez que se inicie la ejecución de la herramienta, repase el escenario del que desea generar perfiles en su aplicación. A continuación, seleccione **Detener recopilación** o cierre la aplicación para ver los datos.
 
-3. Haga clic en el botón **Iniciar** para ejecutar la herramienta.
+   ![Una ventana que muestra Detener recopilación](../profiling/media/stopcollectionlighttheme.png "Una ventana que muestra Detener recopilación")
 
-![Detener recopilación](../profiling/media/stopcollection.png "Detener colección")
+1. Seleccione la pestaña **Asignación**. Aparecerá contenido de la ventana similar al de la siguiente captura de pantalla.
 
-4. Una vez que la herramienta empiece a ejecutarse, recorra el escenario deseado en la aplicación y, a continuación, presione **Detener colección** o cierre la aplicación para ver los datos.
-5. Haga clic en la pestaña **Asignación**; debería ver una imagen similar a la que se muestra a continuación.
+   ![La pestaña Asignación](../profiling/media/allocationview.png "La pestaña Asignación")
 
-![Asignación](../profiling/media/allocation.png "Asignación")
+Ahora puede analizar la asignación de memoria de los objetos.
 
-¡Enhorabuena! Ahora puede analizar la asignación de memoria de los objetos.
+Durante la recopilación, la herramienta de seguimiento puede ralentizar la aplicación de la que se generan perfiles. Si el rendimiento de la herramienta de seguimiento o la aplicación es lento, y si no es necesario que realice un seguimiento de todos los objetos, puede ajustar la frecuencia de muestreo. Para ello, seleccione el símbolo de engranaje situado junto a la herramienta de seguimiento en la página de resumen del generador de perfiles.
+
+![Configuración de la herramienta de asignación de dotnet](../profiling/media/dotnetallocsettings.png "Configuración de la herramienta de asignación de dotnet")
+
+Ajuste la frecuencia de muestreo a la que desee. Este cambio ayuda a acelerar el rendimiento de su aplicación durante la recopilación y el análisis.
+
+![Una frecuencia de muestreo ajustada](../profiling/media/adjustedsamplingratedotnetalloctool.png "Una frecuencia de muestreo ajustada")
+
+Para obtener más información sobre cómo aumentar la eficacia de la herramienta, consulte el artículo sobre cómo [optimizar la configuración del generador de perfiles](../profiling/optimize-profiler-settings.md).
 
 ## <a name="understand-your-data"></a>Comprensión de los datos
 
-### <a name="collection"></a>Collection
+![Un gráfico de la herramienta de asignación de dotnet](../profiling/media/graphdotnetalloc.png "Un gráfico de la herramienta de asignación de dotnet")
 
-![Colección](../profiling/media/collection.png "Collection")
+En la vista gráfica anterior, el gráfico superior muestra el número de objetos activos de la aplicación. El gráfico **diferencial de objetos** inferior muestra el cambio de porcentaje de los objetos de aplicación. Las barras rojas indican cuándo tuvo lugar la recolección de elementos no utilizados.
 
-La vista de colección le permite ver cuántos objetos se han recopilado durante la recolección de elementos no utilizados y cuántos se han conservado. Esta vista también proporciona algunos gráficos circulares para visualizar los objetos recopilados y conservados por tipo.
+![Un gráfico filtrado de la hora de asignación de dotnet](../profiling/media/graphdotnetalloctimefiltered.png "Un gráfico filtrado de la hora de asignación de dotnet")
 
-- La columna **Recopilados** muestra el número de objetos recopilados por el recolector de elementos no utilizados.
-- La columna **Restantes** muestra el número de objetos que se conservaron tras la ejecución del recolector de elementos no utilizados.
+Puede filtrar los datos tabulares para mostrar la actividad durante solo un intervalo de tiempo especificado. También puede usar el zoom para ampliar o reducir el gráfico.
 
 ### <a name="allocation"></a>Asignación
 
-![Asignación expandida](../profiling/media/allocationexpanded.png "Asignación expandida")
+![La vista Asignación expandida](../profiling/media/allocationexpandedlight.png "La vista Asignación expandida")
 
-La vista de asignación permite ver la ubicación de los objetos que asignan memoria y la cantidad de memoria que asignan dichos objetos.
+La vista **Asignación** muestra la ubicación de los objetos que asignan memoria y la cantidad de memoria que asignan dichos objetos.
 
-- La columna **Nombre** es una lista de las distintas clases y estructuras que ocupan memoria. Cada elemento de la columna es un nodo que se puede expandir si hay elementos dentro de esa categoría que ocupan memoria. (Solo vista **Asignación**)
-- La columna **Total (asignaciones)** muestra el número de objetos de un tipo de asignación determinado que ocupan memoria. (Vista **Asignación**, **Árbol de llamadas** y **Funciones**)
-- La columna **Propio (asignaciones)** muestra el número de objetos dentro de un elemento individual que ocupa memoria. (Vista **Asignación**, **Árbol de llamadas** y **Funciones**)
-- Las tres columnas se pueden ordenar. En el caso de la columna **Nombre**, los elementos se ordenan alfabéticamente (ya sea hacia delante o hacia atrás). Para **Total** y **Propio (asignaciones)** , puede ordenar numéricamente (ya sea de forma creciente o decreciente).
-- De forma predeterminada, las columnas **Tamaño total (bytes)** y **Tamaño automático (bytes)** no están activadas. Para habilitarlas, haga clic con el botón derecho en las columnas **Nombre**, **Total** o **Propio (asignaciones)** y, a continuación, haga clic en las opciones **Tamaño total** y **Tamaño automático** para agregarlas al gráfico. Las dos columnas son similares a **Total (asignaciones)** y **Propio (asignaciones)** , salvo que, en lugar de mostrar el número de objetos que ocupan memoria, muestran la cantidad total de memoria en bytes que esos objetos ocupan. [Solo vista Asignación]
+- La columna  **Tipo**  es una lista de clases y estructuras que consumen memoria. Haga doble clic en un tipo para ver su seguimiento regresivo como un árbol de llamadas invertido. Solo en la vista **Asignación**, puede ver los elementos de la categoría seleccionada que consumen memoria.
+
+- La columna  **Asignaciones**  muestra el número de objetos que consumen memoria dentro de una función o un tipo de asignación determinados. Esta columna solo aparece en las vistas **Asignación**,  **Árbol de llamadas** y  **Funciones** .
+
+- Las columnas  **Bytes**  y  **Tamaño medio (bytes)**   no aparecen de forma predeterminada. Para mostrarlas, haga clic con el botón derecho en la columna  **Tipo**  o  **Asignaciones**  y, a continuación, seleccione las opciones **Bytes**  y  **Tamaño medio (bytes)**   para agregarlas al gráfico. 
+
+   Las dos columnas son similares a  **Total (asignaciones)** y  **Propio (asignaciones)** , excepto en que muestran la cantidad de memoria consumida en lugar del número de objetos que consumen memoria. Estas columnas solo aparecen en la vista **Asignación**.
+
+- En la columna  **Nombre del módulo**  se muestra el módulo que contiene la función o el proceso que llama.
+
+Todas estas columnas se pueden ordenar. En el caso de las columnas  **Tipo** y **Nombre del módulo**, puede ordenar los elementos alfabéticamente en orden ascendente o descendente. En el caso de  **Asignaciones**, **Bytes**  y  **Tamaño medio (bytes)** , puede ordenar los elementos aumentando o reduciendo el valor numérico.
+
+#### <a name="symbols"></a>Símbolos
+
+Los siguientes símbolos aparecen en las pestañas **Asignación**, **Árbol de llamadas** y **Funciones**:
+
+- ![El símbolo de tipo de valor](../profiling/media/valuetypeicon.png "El símbolo de tipo de valor"): un tipo de valor como un entero
+
+- ![El símbolo de colección de tipo de valor](../profiling/media/valuetypecollectionicon.png "El símbolo de colección de tipo de valor"): una colección de tipo de valor como una matriz de enteros
+
+- ![El símbolo de tipo de referencia](../profiling/media/referencetypeicon.png "El símbolo de tipo de referencia"): un tipo de referencia como una cadena
+
+- ![El símbolo de colección de tipo de referencia](../profiling/media/referencetypecollectionicon.png "El símbolo de colección de tipo de referencia"): una colección de tipo de referencia como una matriz de cadenas.
 
 ### <a name="call-tree"></a>Árbol de llamadas
 
-![Árbol de llamadas](../profiling/media/calltree.png "Árbol de llamadas")
+![La vista Árbol de llamadas](../profiling/media/calltreelight.png "La vista Árbol de llamadas")
 
-La vista **Árbol de llamadas** le permite ver las rutas de acceso de ejecución de funciones que contienen objetos que asignan mucha memoria.
+La vista  **Árbol de llamadas**  muestra las rutas de acceso de ejecución de función que contienen objetos que asignan mucha memoria.
 
-- La columna **Nombre de la función** muestra el proceso o el nombre de la función que contiene objetos que asignan memoria según el nivel del nodo que se está inspeccionando.
-- Las columnas **Total** y **Propio (asignaciones)** muestran la misma información que la vista **Asignación**.
-- En la columna **Nombre del módulo**, se muestra el módulo que contiene la función o el proceso que se llama.
+- La columna  **Nombre de la función**  muestra el proceso o nombre de la función que contiene objetos que asignan memoria. La presentación se basa en el nivel del nodo que inspecciona.
+- Las columnas  **Total (asignaciones)** y  **Tamaño total (bytes)**   muestran el número de objetos asignados y la cantidad de memoria que usa una función y todas las demás funciones a las que llama.
+- Las columnas **Propio (asignaciones)** y **Tamaño automático (bytes)** muestran el número de objetos asignados y la cantidad de memoria que usa una sola función o un solo tipo de asignación seleccionados.
+- La columna **Tamaño medio (bytes)** muestra la misma información que en la vista **Asignaciones**.
+- En la columna  **Nombre del módulo**  se muestra el módulo que contiene la función o el proceso que llama.
 
-![Ruta de acceso activa](../profiling/media/hotpath.png "Ruta de acceso activa")
+   ![Una ruta de acceso activa expandida](../profiling/media/hotpathlight.png "Una ruta de acceso activa expandida")
 
-- El botón **Expandir ruta de acceso activa** resalta una ruta de ejecución de función que contiene muchos objetos que asignan memoria. El algoritmo comienza en un nodo de interés seleccionado por el usuario y resalta la ruta de acceso de la mayoría de las asignaciones, lo que guía al usuario en su investigación.
-- El botón **Mostrar ruta de acceso activa** activa o desactiva los iconos de llama que indican qué nodo forma parte de la **ruta de acceso activa**.
+- El botón **Expandir ruta de acceso activa** resalta una ruta de ejecución de función que contiene muchos objetos que asignan memoria. El algoritmo comienza en un nodo seleccionado por usted y resalta la ruta de acceso de la mayoría de las asignaciones, lo que le guía en su investigación.
+- El botón **Mostrar ruta de acceso activa** muestra u oculta los iconos de llama que indican qué nodos forman parte de la ruta de acceso activa.
 
 ### <a name="functions"></a>Funciones
 
-![Funciones](../profiling/media/functions.png "Funciones")
+![La vista Funciones](../profiling/media/functionslight.png "La vista Funciones")
 
 La vista **Funciones** muestra los procesos, los módulos y las funciones que asignan memoria.
 
 - En la columna **Nombre** se muestran los procesos como nodos de nivel superior. Debajo de los procesos están los módulos y, debajo de los módulos, están las funciones.
-- Las columnas **Total** y **Propio (asignaciones)** muestran la misma información que la vista **Asignación**.
+- Estas columnas muestran la misma información que en las vistas **Asignación** y **Árbol de llamadas**:
 
-Las vistas **Asignaciones**, **Árbol de llamadas** y **Funciones** contienen las opciones **Mostrar solo mi código**, **Mostrar código nativo** y **Buscar**:
+   - **Total (asignaciones)**
+   - **Propio (asignaciones)**
+   - **Tamaño total (bytes)**
+   - **Tamaño automático (bytes)**
+   - **Tamaño medio (bytes)**
 
-![Barra de filtros](../profiling/media/filterbar.png "Barra de filtros")
+### <a name="collection"></a>Collection
 
-- **Mostrar solo mi código** contrae sistemas, plataformas y otros códigos que no son de usuario y en plataformas de tipo **[Código externo]** para que el código de usuario pueda centrarse. Para obtener más información, vea [Depurar solo código de usuario con Solo mi código](../debugger/just-my-code.md).
-- **Mostrar código nativo** muestra código nativo en el destino de análisis, incluido el código que no es de usuario si se selecciona.
-- El **cuadro de filtro** permite filtrar el nombre la columna **Nombre** o **Nombre de función** según el parámetro proporcionado. Simplemente escriba en el campo y la tabla debería filtrar para mostrar solo los tipos que contienen la cadena proporcionada.
+![La vista de colección](../profiling/media/collectionlight.png "La vista de colección")
+
+La vista de **colección** muestra cuántos objetos se han recopilado o conservado durante la recolección de elementos no utilizados. Esta vista también muestra gráficos circulares para visualizar los objetos recopilados y conservados por tipo.
+
+- La columna **Recopilados** muestra el número de objetos recopilados por el recolector de elementos no utilizados.
+- La columna **Restantes** muestra el número de objetos que se conservaron tras la ejecución del recolector de elementos no utilizados.
+
+### <a name="filtering-tools"></a>Herramientas de filtrado
+
+Las vistas **Asignaciones**, **Árbol de llamadas** y **Funciones** contienen las opciones **Mostrar solo mi código** y **Mostrar código nativo** y un cuadro de filtro.
+
+- **Mostrar solo mi código** contrae sistemas, plataformas y otros códigos que no son de usuario en plataformas de tipo **[Código externo]** para que pueda centrarse en su código solamente. Para obtener más información, vea [Depurar solo código de usuario con Solo mi código](../debugger/just-my-code.md).
+- **Mostrar código nativo** muestra código nativo en el destino de análisis y puede incluir código que no es de usuario.
+- Con el cuadro de filtro, puede filtrar la columna **Nombre** o **Nombre de función** según el valor proporcionado. Escriba un valor de cadena en el cuadro. A continuación, en la tabla solo se muestran los tipos que contienen esa cadena.

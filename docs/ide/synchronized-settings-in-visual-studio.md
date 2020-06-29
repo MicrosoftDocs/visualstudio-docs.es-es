@@ -1,6 +1,6 @@
 ---
 title: Sincronizar la configuración
-ms.date: 12/10/2018
+ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566792"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285210"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar la configuración de Visual Studio en varios equipos
 
@@ -49,14 +49,14 @@ De forma predeterminada, se sincroniza la configuración siguiente:
 
 La configuración sincronizada de Visual Studio está activada de forma predeterminada. Puede desactivar la configuración sincronizada en un equipo si va a la página **Herramientas** > **Opciones** > **Entorno** > **Cuentas** y desactiva **Sincronizar la configuración en todos los dispositivos al iniciar sesión en Visual Studio**.
 
-Por ejemplo, si decide no sincronizar la configuración de Visual Studio en el equipo "A", los cambios de configuración realizados en ese equipo no aparecerán en el equipo "B" ni en el equipo "C". Los equipos "B" y "C" se seguirán sincronizando entre ellos, pero no lo harán con el equipo "A".
+Por ejemplo, si decide no sincronizar la configuración en Visual Studio en el equipo "A", los cambios de configuración realizados en ese equipo no aparecerán en el equipo "B" ni en el equipo "C". Los equipos "B" y "C" se seguirán sincronizando entre ellos, pero no lo harán con el equipo "A".
 
 > [!NOTE]
 > Si decide no sincronizar la configuración dejando sin seleccionar la opción en la página **Herramientas** > **Opciones** > **Entorno** > **Cuentas**, las otras versiones o ediciones de Visual Studio que haya en el mismo equipo no se verán afectadas. Esas instalaciones en paralelo de Visual Studio seguirán sincronizando su configuración (a menos que no seleccione la opción también en ellas).
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizar la configuración en todos los productos y ediciones de la familia Visual Studio
+## <a name="synchronize-settings-across-visual-studio-ide-products-and-editions"></a>Sincronización de la configuración en todos los productos y ediciones del IDE de Visual Studio
 
-La configuración se sincroniza en todas las versiones y ediciones de Visual Studio instaladas *en paralelo*. También se sincroniza en los productos de la familia Visual Studio, incluido Blend para Visual Studio. Con todo, es posible que un producto en concreto de la familia tenga su propia configuración que no se comparta con Visual Studio. Por ejemplo, la configuración específica de Blend para Visual Studio en el equipo "A" no se comparte con Visual Studio en los equipos "A" o "B".
+La configuración se sincroniza en todas las versiones y ediciones de Visual Studio instaladas *en paralelo*. También se sincroniza en los productos del IDE de Visual Studio, incluido Blend para Visual Studio. Con todo, es posible que un producto en concreto del IDE de Visual Studio tenga su propia configuración que no se comparte con Visual Studio. Por ejemplo, la configuración específica de Blend para Visual Studio en el equipo "A" no se comparte con Visual Studio en los equipos "A" o "B".
 
 ## <a name="side-by-side-synchronized-settings"></a>Configuración sincronizada en paralelo
 
@@ -94,3 +94,4 @@ Para restablecer toda la configuración a sus valores predeterminados, inicie se
 - [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Configuración del entorno](../ide/environment-settings.md)
 - [Environment > Accounts Options dialog box](reference/accounts-environment-options-dialog-box.md) (Entorno > Opciones de cuentas [Cuadro de diálogo])
+- [Instalación de distintas versiones de Visual Studio en paralelo](../install/install-visual-studio-versions-side-by-side.md)

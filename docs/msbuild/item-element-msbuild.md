@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7e446c319a08004260125580cdace43412cdba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169357"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289019"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de MSBuild debe especificarse como elemento secundario de un elemento `ItemGroup`.
 
-\<Project> \<ItemGroup> \<Item>
+\<Project>
+\<ItemGroup>
+\<Item>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,7 +79,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 |`KeepDuplicates`|Atributo opcional.<br /><br /> Especifica si se debe agregar al grupo de destino un elemento que es un duplicado exacto de un elemento existente. Si el elemento de origen y de destino tienen el mismo valor `Include` pero distintos metadatos, el elemento se agrega aunque `KeepDuplicates` está establecido en `false`. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).<br /><br /> Este atributo solo es válido si se ha especificado para un elemento de un `ItemGroup` que se encuentra en un `Target`.|
 |`KeepMetadata`|Atributo opcional.<br /><br /> Los metadatos de los elementos de origen que se van a agregar a los elementos de destino. Solo los metadatos cuyos nombres están especificados en la lista delimitada por punto y coma se transfieren desde un elemento de origen a un elemento de destino. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).<br /><br /> Este atributo solo es válido si se ha especificado para un elemento de un `ItemGroup` que se encuentra en un `Target`.|
 |`RemoveMetadata`|Atributo opcional.<br /><br /> Los metadatos de los elementos de origen que no se van a transferir a los elementos de destino. Todos los metadatos se transfieren desde un elemento de origen a un elemento de destino excepto aquellos cuyos nombres figuran en la lista de nombres delimitada por punto y coma. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).<br /><br /> Este atributo solo es válido si se ha especificado para un elemento de un `ItemGroup` que se encuentra en un `Target`.|
-|`Update`|Atributo opcional. (Disponible únicamente para los proyectos de .NET Core en Visual Studio 2017 o versiones posteriores).<br /><br /> Le permite modificar los metadatos de un archivo que se ha incluido mediante un elemento glob.<br /><br /> Este atributo solo es válido si se ha especificado para un elemento de un `ItemGroup` que no se encuentra en un `Target`.|
+|`Update`|Atributo opcional. (Disponible únicamente para los proyectos de .NET Core en Visual Studio 2017 o versiones posteriores).<br /><br /> Permite modificar los metadatos de un elemento; normalmente se usa para invalidar los metadatos predeterminados de elementos concretos después de especificar inicialmente un grupo de elementos (por ejemplo, con un carácter comodín).<br /><br /> Este atributo solo es válido si se ha especificado para un elemento de un `ItemGroup` que no se encuentra en un `Target`.|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -95,7 +97,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 Los elementos `Item` definen las entradas en el sistema de compilación y se agrupan en colecciones de elementos basadas en sus nombres de colección definidos por el usuario. Estas colecciones de elementos se pueden utilizar como parámetros para las [tareas](../msbuild/msbuild-tasks.md), que utilizan los elementos individuales de las colecciones para llevar a cabo los pasos del proceso de compilación. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).
 
-El empleo de la notación @(\<myType>) permite expandir una colección de elementos de tipo \<myType> en una lista de cadenas delimitada por puntos y coma, y pasarla a un parámetro. Si el parámetro es de tipo `string`, entonces el valor del parámetro es la lista de elementos separados por punto y coma. Si el parámetro es una matriz de cadenas (`string[]`), entonces cada elemento se inserta en la matriz según la ubicación de los signos punto y coma. Si el parámetro de tarea es de tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, el valor es el contenido de la colección de elementos junto con los metadatos adjuntos. Para delimitar cada elemento mediante un carácter que no sea un punto y coma, utilice la sintaxis @(\<myType>, '\<separator>').
+El empleo de la notación @(\<myType>) permite expandir una colección de elementos de tipo \<myType> en una lista de cadenas delimitada por puntos y coma, y pasarla a un parámetro. Si el parámetro es de tipo `string`, entonces el valor del parámetro es la lista de elementos separados por punto y coma. Si el parámetro es una matriz de cadenas (`string[]`), entonces cada elemento se inserta en la matriz según la ubicación de los signos punto y coma. Si el parámetro de tarea es de tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, el valor es el contenido de la colección de elementos junto con los metadatos adjuntos. Para delimitar cada elemento mediante un carácter que no sea un punto y coma, use la sintaxis @(\<myType>, "\<separator>").
 
 El motor de MSBuild puede evaluar comodines como `*` y `?`, y comodines recursivos como */\*\*/\*.cs*. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Aislar el código probado con Microsoft Fakes
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 06/03/2020
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566909"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286965"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Aislar el código en pruebas con Microsoft Fakes
 
@@ -33,6 +33,7 @@ Fakes tiene dos versiones:
 
 - Visual Studio Enterprise
 - Un proyecto de .NET Framework
+- La compatibilidad con proyectos de estilo SDK y .NET Core se encuentra actualmente en versión preliminar. [Más información](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 
 > [!NOTE]
 > - No se admiten los proyectos de .NET Standard.

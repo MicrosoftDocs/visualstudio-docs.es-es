@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: b2a80fce75f710d508f0d32df37bbcde73ee20e3
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273951"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292937"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -52,7 +52,7 @@ Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/r
 > [!div class="mx-imgBorder"]
 > ![Ir al portal de suscriptores de Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-Si ha adquirido varias suscripciones, vaya al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com) para asignarlas a otras personas.
+Si ha adquirido varias suscripciones, vaya al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com) para asignarlas a otras personas.  Es posible que tenga que [agregar las suscripciones nuevas](add-monthly-subs.md) al portal de administración si es la primera vez que las compró.
 
 > [!div class="mx-imgBorder"]
 > ![Asignar suscripciones a otros](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)

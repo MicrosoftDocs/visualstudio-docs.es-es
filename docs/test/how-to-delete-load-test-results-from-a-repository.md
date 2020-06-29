@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Eliminar los resultados de pruebas de carga de un repositorio'
+title: Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - results, load test
 - load tests, deleting results
@@ -13,14 +13,14 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dd196076fb769f80c36ab8630eebf1e8a0f8b234
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589063"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287784"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Cómo: Eliminar resultados de pruebas de carga de un repositorio
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -36,9 +36,9 @@ Puede administrar los resultados de pruebas de carga desde el Editor de pruebas 
 
      Se muestra el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.
 
-3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - Sin controlador>** para acceder a los resultados almacenados en local.
+3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - No controller>** para tener acceso a los resultados almacenados localmente.
 
-4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
+4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Show results for all tests>** para ver todos los resultados de todas las pruebas.
 
      Si hay resultados de pruebas de carga disponibles, aparecen en la lista **Resultados de pruebas de carga**. Las columnas son **Hora**, **Duración**, **Usuario**, **Resultado**, **Prueba** y **Descripción**. **Prueba** contiene el nombre de la prueba y **Descripción** incluye la descripción opcional que se ha agregado antes de ejecutar la prueba. La columna **Descripción** muestra las descripciones breves que se han escrito en los **Comentarios de análisis** de este resultado de prueba.
 
@@ -53,7 +53,7 @@ Puede administrar los resultados de pruebas de carga desde el Editor de pruebas 
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Exportar resultados de pruebas de carga de un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Cómo: Exportar resultados de pruebas de carga desde un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Cómo: Importar resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Cómo: Importar los resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)

@@ -1,18 +1,18 @@
 ---
 title: Prueba de un archivo DLL de C++ en aplicaciones para UWP
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77274447"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285614"
 ---
 # <a name="how-to-test-a-c-dll"></a>Prueba de un archivo DLL de C++
 
@@ -22,11 +22,11 @@ En este tema se muestra cómo usar las pruebas unitarias como el primer paso del
 
 En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obtener sugerencias sobre qué estructura usar.
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
 
 ::: moniker range="vs-2019"
 
-Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Crear un proyecto nuevo** escriba "prueba" en el cuadro de búsqueda y después establezca el valor de **Lenguaje** en C++. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
+Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Crear un proyecto nuevo** escriba "prueba" en el cuadro de búsqueda y después establezca el valor de **Lenguaje** en C++. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
    ![Creación de un proyecto de prueba UWP nuevo](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **N
 
 ::: moniker range="vs-2017"
 
-Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
+Empiece por crear un proyecto de prueba. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Tenga en cuenta lo siguiente:
+     Ten en cuenta lo siguiente:
 
     - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
@@ -58,7 +58,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **N
 
          Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, vea [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
 
 1. Inserte código de prueba:
 
@@ -77,7 +77,7 @@ Empiece por crear un proyecto de prueba. En el menú **Archivo**, seleccione **N
 
      ![Explorador de pruebas](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución
 
 ::: moniker range="vs-2019"
 
@@ -130,7 +130,7 @@ En el **Explorador de soluciones**, elija el nombre de la solución. En el menú
 
     2. En el cuadro de diálogo **Página de propiedades de RooterLib**, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.
 
-    3. Seleccione **\<Editar...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo **Definiciones de preprocesador**.
+    3. Seleccione **\<Edit...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo **Definiciones de preprocesador**.
 
 4. Agregue las implementaciones mínimas de las funciones declaradas. Abra *RooterLib.cpp* y agregue el siguiente código:
 
@@ -148,7 +148,7 @@ En el **Explorador de soluciones**, elija el nombre de la solución. En el menú
 
     ```
 
-## <a name="make_the_dll_functions_visible_to_the_test_code"></a>Hacer visibles las funciones DLL para el código de prueba
+## <a name="make-the-dll-functions-visible-to-the-test-code"></a><a name="make_the_dll_functions_visible_to_the_test_code"></a>Hacer visibles las funciones DLL para el código de prueba
 
 1. Agregue RooterLib al proyecto RooterLibTests.
 
@@ -196,7 +196,7 @@ En el **Explorador de soluciones**, elija el nombre de la solución. En el menú
 
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
-## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 
 1. Agregue una nueva prueba:
 
@@ -256,7 +256,7 @@ En el **Explorador de soluciones**, elija el nombre de la solución. En el menú
 > [!TIP]
 > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
 
-## <a name="Debug_a_failing_test"></a> Depurar una prueba fallida
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Depurar una prueba fallida
 
 1. Agregue otra prueba a *unittest1.cpp*:
 
@@ -325,7 +325,7 @@ En el **Explorador de soluciones**, elija el nombre de la solución. En el menú
 
    ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
 
-## <a name="Refactor_the_code_without_changing_tests"></a> Refactorizar el código sin cambiar las pruebas
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Refactorizar el código sin cambiar las pruebas
 
 1. Simplifique el cálculo central de la función `SquareRoot`:
 

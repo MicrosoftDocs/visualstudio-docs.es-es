@@ -1,20 +1,20 @@
 ---
 title: Pruebas unitarias como destino para una versión anterior de .NET Framework
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596026"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288174"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedimiento para configurar pruebas unitarias como destino para una versión anterior de .NET Framework
 
 De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Studio, la versión más reciente de .NET Framework se establece como destino. Además, si actualiza los proyectos de prueba desde las versiones anteriores de Visual Studio, se actualizan para tener la versión más reciente de .NET Framework. Al editar las propiedades del proyecto, puede volver a destinar explícitamente el proyecto a las versiones anteriores de .NET Framework.
 
@@ -83,7 +83,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 2. En el **Explorador de soluciones**, elija **Descargar el proyecto** en el nuevo proyecto de prueba de C++.
 
-3. En el **Explorador de soluciones**, elija el proyecto de prueba de C++ descargado y luego, **Editar \<nombre de proyecto>.vcxproj**.
+3. En el **Explorador de soluciones**, elija el proyecto de prueba de C++ descargado y, luego, **Editar \<project name>.vcxproj**.
 
    El archivo *.vcxproj* se abre en el editor.
 

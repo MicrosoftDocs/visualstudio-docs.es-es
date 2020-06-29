@@ -1,7 +1,7 @@
 ---
 title: Actualización de las plantillas de elemento de proyecto existentes
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - item templates, updating
 - Visual Studio templates, updating
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591364"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283923"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedimiento Actualizar plantillas existentes
 
@@ -47,7 +47,7 @@ Para actualizar una plantilla sin usar el **Asistente para exportar plantillas**
 
 ### <a name="to-manually-update-an-existing-template"></a>Para actualizar manualmente una plantilla existente
 
-1. Busque el archivo *.zip* que contiene la plantilla. Las plantillas de proyecto del usuario están en *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ProjectTemplates*.
+1. Busque el archivo *.zip* que contiene la plantilla. Las plantillas de proyecto del usuario están en *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
 1. Extraiga el archivo *.zip*.
 

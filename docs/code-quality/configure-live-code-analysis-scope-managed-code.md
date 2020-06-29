@@ -74,7 +74,7 @@ Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponi
 
 ![Texto de alerta que minimiza el ámbito de análisis](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también:
 
 - [Suspensión automática de la característica](./automatic-feature-suspension.md)
 - [Solicitud de característica del modo de ahorro de energía](https://github.com/dotnet/roslyn/issues/38429)

@@ -1,7 +1,7 @@
 ---
 title: Crear plantillas de varios proyectos
 ms.date: 04/17/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591091"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284417"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos, todos los proyectos de la plantilla se agregan a la solución.
 
@@ -117,7 +117,7 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
 
    Los archivos y las carpetas se comprimen en un archivo *.zip*.
 
-10. Copie el archivo *.zip* en el directorio de plantillas de proyectos del usuario. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ProjectTemplates*.
+10. Copie el archivo *.zip* en el directorio de plantillas de proyectos del usuario. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<version\>\Templates\ProjectTemplates*.
 
 11. En Visual Studio, elija **Archivo** > **Nuevo** > **Proyecto** y compruebe que aparece su plantilla.
 

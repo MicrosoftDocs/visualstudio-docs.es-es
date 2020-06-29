@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/27/2020
+ms.date: 06/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: f286262e77064f38e3ce09a32ec5dec82a22fe89
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fd2e26dcb026b25923b08c572aa203d06a076844
+ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183202"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85292924"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,11 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Versión preliminar 3 | 23 de junio de 2020 | 16.7.30218.91 |
+| 16.0.15 | Release | 9 de junio de 2020 | 16.0.28803.753 |
+| 16.6.2 | Release | 9 de junio de 2020 | 16.6.30204.135 |
+| 16.7.0 | Versión preliminar 2 | 2 de junio de 2020 | 16.7.30128.36 |
+| 16.6.1 | Release | 1 de junio de 2020 | 16.6.30128.74 |
 | 16.4.9 | Release | 27 de mayo de 2020 | 16.4.30120.98 |
 | 16.7.0 | Versión preliminar 1 | 19 de mayo de 2020 | 16.7.30114.128 |
 | 16.6.0 | Release | 19 de mayo de 2020 | 16.6.30114.105 |
@@ -149,6 +154,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.24 | Release | 9 de junio de 2020 | 15.9.28307.1177 |
 | 15.9.23 | Release | 12 de mayo de 2020 | 15.9.28307.1146 |
 | 15.9.22 | Release | 14 de abril de 2020 | 15.9.28307.1093 |
 | 15.9.21 | Release | 10 de marzo de 2020 | 15.9.28307.1064 |

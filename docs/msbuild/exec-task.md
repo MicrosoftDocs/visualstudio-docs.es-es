@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 634916d9ab4ef0ce3119fcb5695301598992f38c
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167310"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288928"
 ---
 # <a name="exec-task"></a>Exec (tarea)
 
@@ -41,7 +41,7 @@ En la tabla siguiente se describen los parámetros de la tarea `Exec`.
 |`CustomErrorRegularExpression`|Parámetro `String` opcional.<br /><br /> Especifica una expresión regular que se utiliza para identificar líneas de error en los resultados de la herramienta. Esto resulta útil para las herramientas que generan resultados con un formato poco común.<br /><br />Predeterminado: `null` (sin procesamiento personalizado).|
 |`CustomWarningRegularExpression`|Parámetro `String` opcional.<br /><br /> Especifica una expresión regular que se utiliza para identificar líneas de advertencia en los resultados de la herramienta. Esto resulta útil para las herramientas que generan resultados con un formato poco común.<br /><br />Predeterminado: `null` (sin procesamiento personalizado).|
 |`EchoOff`|Parámetro `Boolean` opcional.<br /><br /> Si se establece en `true`, la tarea no emitirá el formulario expandido de `Command` al registro de MSBuild.<br /><br />Predeterminado: `false`.|
-|`ExitCode`|Parámetro de solo lectura de salida `Int32` opcional.<br /><br /> Especifica el código de salida proporcionado por el comando ejecutado.|
+|`ExitCode`|Parámetro de solo lectura de salida `Int32` opcional.<br /><br /> Especifica el código de salida proporcionado por el comando ejecutado, salvo que, si la tarea registra algún error, pero el proceso tenía un código de salida de 0 (correcto), `ExitCode` se establece en-1.|
 |`IgnoreExitCode`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea omite el código de salida proporcionado por el comando ejecutado. De lo contrario, la tarea devuelve `false` si el comando ejecutado devuelve un código de salida distinto de cero.<br /><br />Predeterminado: `false`.|
 |`IgnoreStandardErrorWarningFormat`|Parámetro `Boolean` opcional.<br /><br /> Si es `false`, selecciona las líneas de los resultados que coincidan con el formato estándar de alerta/advertencia, y los registra como errores/advertencias. Si es `true`, se deshabilita este comportamiento.<br /><br />Predeterminado: `false`.|
 |`Outputs`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos de salida de la tarea. La tarea `Exec` no los establece por sí misma. En cambio, puede proporcionarlos como si los estableciera, para que se puedan utilizar después en el proyecto.|

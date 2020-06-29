@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 91c712ce396000ff9babaf70335edfd5709a3000
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183098"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283572"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -162,7 +162,7 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
 
     Seleccione `lastName` para volver a agregar el último nombre al código.
 
-1. Abra la carpeta *Views/Home* y luego *index.html*.
+1. Abra la carpeta *Views/Home* y luego *Index.cshtml*.
 
 1. Agregue el siguiente código HTML al final del archivo.
 

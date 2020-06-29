@@ -1,8 +1,8 @@
 ---
-title: 'Cómo: Configurar proyectos para múltiples plataformas de destino'
+title: Procedimiento Configuración de proyectos para destinarlos a varias plataformas
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -12,14 +12,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b86a5c95131a4dcb2e6af199b57e9c8302790b5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114451"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284573"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedimiento Configuración de proyectos para destinarlos a varias plataformas
 
 Visual Studio proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.
 
@@ -29,7 +29,7 @@ El cuadro de diálogo **Configuration Manager** permite crear y establecer plata
 
 1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<Nuevo>** para crear una plataforma. Visual Studio compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.
+2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<New>** para crear una plataforma. Visual Studio compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.
 
 ## <a name="remove-a-platform"></a>Quitar una plataforma
 
@@ -37,7 +37,7 @@ Si se da cuenta de que no necesita una plataforma, puede quitarla mediante el cu
 
 1. En el menú **Compilar**, haga clic en **Configuration Manager**.
 
-2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Editar>** . Se abre el cuadro de diálogo **Editar plataformas de solución**.
+2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Edit>** . Se abre el cuadro de diálogo **Editar plataformas de solución**.
 
 3. Haga clic en la plataforma que quiera quitar y haga clic en **Quitar**.
 

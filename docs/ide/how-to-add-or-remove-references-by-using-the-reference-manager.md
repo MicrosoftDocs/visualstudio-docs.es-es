@@ -1,7 +1,7 @@
 ---
 title: Agregar referencias en el Administrador de referencias
 ms.date: 08/02/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595315"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284731"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
@@ -127,9 +127,9 @@ No se deben agregar referencias de archivos a resultados de otro proyecto de la 
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *\<VersionMinimum\>* es la versión del marco más antigua aplicable. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
+  *\<VersionMinimum\>* es la versión del marco más antigua que se aplica. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
 
-  *\<AssemblyLocation\>* es el directorio de los ensamblados que quiere que aparezcan en el cuadro de diálogo **Agregar referencia**, por ejemplo, *C:\MyAssemblies*.
+  *\<AssemblyLocation\>* es el directorio de los ensamblados que desea que aparezcan en el cuadro de diálogo **Agregar referencia**, por ejemplo, *C:\MisEnsamblados*.
 
   La creación de la clave del Registro en el nodo `HKEY_LOCAL_MACHINE` permite que todos los usuarios vean los ensamblados de la ubicación especificada en el cuadro de diálogo **Agregar referencia**. Crear la clave del Registro en el nodo `HKEY_CURRENT_USER` únicamente afecta a la configuración del usuario actual.
 
@@ -186,11 +186,11 @@ Evite agregar referencias de archivo a resultados de otro proyecto de la misma s
 
 No puede buscar un SDK y agregarlo al proyecto. Solo puede buscar un archivo (por ejemplo, un ensamblado o *.winmd*) y agregarlo al proyecto.
 
-Cuando se hace referencia a un archivo WinMD, el diseño esperado es que los archivos *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri* aparezcan colocados unos junto a otros. Si hace referencia a un archivo WinMD en los escenarios siguientes, se copiará un conjunto de archivos incompleto en el directorio de resultados del proyecto y, por tanto, se producirán errores de compilación y en tiempo de ejecución.
+Cuando se hace una referencia a un archivo WinMD, el diseño esperado es que todos los archivos *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri* aparezcan colocados unos junto a otros. Si hace referencia a un archivo WinMD en los escenarios siguientes, se copiará un conjunto de archivos incompleto en el directorio de resultados del proyecto y, por tanto, se producirán errores de compilación y en tiempo de ejecución.
 
 - **Componente nativo**: un proyecto nativo creará un archivo WinMD para cada conjunto disjunto de espacios de nombre y un archivo DLL con la implementación. Los archivos WinMD tendrán nombres dispares. Al hacer referencia a este archivo de componente nativo, MSBuild no reconocerá que el archivo WinMD con un nombre dispar crea un componente. Por tanto, solo se copiarán los archivos *\<FileName>.dll* y *\<FileName>.winmd* con idéntico nombre y se producirán errores en tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión. Para obtener más información, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 
-- **Uso de controles**: como mínimo, un control XAML está compuesto por un *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* y un *\<ImageName>.jpg*. Cuando se compila el proyecto, los archivos de recursos asociados a la referencia de archivo no se copian en el directorio de salida del proyecto y solo se copian *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri*. Se registra un error de compilación para informar al usuario de que faltan los recursos *\<XamlName>.xaml* y *\<ImageName>.jpg*. Para permitir un funcionamiento correcto, el usuario tendrá que copiar manualmente estos archivos de recursos en el directorio de salida del proyecto para la compilación y depuración/tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión siguiendo los pasos de [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md) o edite el archivo de proyecto para agregar la siguiente propiedad:
+- **Uso de controles**: como mínimo, un control XAML está compuesto de un archivo *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml*, y un *\<ImageName>.jpg*. Cuando se compila el proyecto, los archivos de recursos asociados a la referencia de archivo no se copian en el directorio de salida del proyecto, y solo se copiarán *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri*. Se registrará un error de compilación para informar al usuario de que faltan los recursos *\<XamlName>.xaml* y *\<ImageName>.jpg*. Para permitir un funcionamiento correcto, el usuario tendrá que copiar manualmente estos archivos de recursos en el directorio de salida del proyecto para la compilación y depuración/tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión siguiendo los pasos de [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md) o edite el archivo de proyecto para agregar la siguiente propiedad:
 
     ```xml
     <PropertyGroup>

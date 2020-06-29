@@ -1,7 +1,7 @@
 ---
 title: Instalación y uso detrás de un firewall o proxy
 description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiera incluir en una lista de permitidas o abrir si la organización usa un firewall o un servidor proxy
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c1a1fd706ce64b9b39954142664e0799b6251c56
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180446"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283481"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -129,6 +129,8 @@ Para asegurarse de que tiene acceso a todo lo que quiere cuando usa Visual Stud
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https/443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
 | Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https/443 | \*.npmjs.org, \*.nuget.org y \*.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo: Instalador de la herramienta NuGet, Instalador de la herramienta Node) o si piensa usar orígenes ascendentes públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | Usado para conectar con Azure DevOps Services |
+| Azure Service Bus | \*.servicebus.windows.net | ampq/5671 y 5672, </br> sbmp/9350-9354, </br> http/80, </br> https/443 | Se usa para crear las colas, los temas y las suscripciones. </br> También se usa para enviar/recibir mensajes a/de temas y colas de Service Bus. |
+| Azure Cosmos DB | \*.documents.azure.com | https/443 | Se usa para llamar a las API de base de datos de documentos principales. |
 | Comunidad de desarrolladores | sendvsfeedback2.azurewebsites.net/api | https/443 | Se usa para llamar a las API de la herramienta de comentarios de la comunidad de desarrolladores (mis problemas, buscar, votar, comentario, enviar, cargar, reanudar). |
 | IntelliCode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Se usa para llamar a las API de IntelliCode. |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Se usa para llamar a las API de Live Share. |

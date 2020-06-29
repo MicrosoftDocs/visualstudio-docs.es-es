@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631164"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289149"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Tutorial: Creación de una tarea insertada
 
@@ -250,14 +250,16 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
 
 ### <a name="handle-reserved-characters"></a>Control de caracteres reservados
 
- El analizador de MSBuild procesa las tareas insertadas como XML. Los caracteres que tienen significado reservado en XML, por ejemplo "\<" y ">", se detectan y controlan como si fueran XML, y no código fuente de .NET. Para incluir los caracteres reservados en expresiones de código como `Files.Length > 0`, escriba el elemento `Code` para que su contenido se incluya en una expresión CDATA, del modo siguiente:
+ El analizador de MSBuild procesa las tareas insertadas como XML. Los caracteres que tienen significado reservado en XML, por ejemplo "\<" and ">", se detectan y controlan como si fueran XML, y no código fuente de .NET. Para incluir los caracteres reservados en expresiones de código como `Files.Length > 0`, escriba el elemento `Code` para que su contenido se incluya en una expresión CDATA, del modo siguiente:
 
  ```xml
 <Code Type="Fragment" Language="cs">
   <![CDATA[
 
-  // Your code goes here.
-
+  if (Files.Length > 0)
+  {
+      // Your code goes here.
+  }
   ]]>
 </Code>
 ```

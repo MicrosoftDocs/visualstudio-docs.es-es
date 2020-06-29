@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b78ac2347a5143aeb532a4bcc294551430584b4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630670"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286108"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tarea)
 
@@ -31,17 +31,17 @@ Escribe las rutas de acceso de los elementos especificados en el archivo de text
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 
- En la siguiente tabla se describen los parámetros de la tarea `WriteLinestoFile`.
+ En la siguiente tabla se describen los parámetros de la tarea `WriteLinestoFile` .
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo en el que se escriben los elementos.|
-|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo.|
-|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo.|
-|`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode".  Vea también <xref:System.Text.Encoding>.|
-|`WriteOnlyWhenDifferent`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, el archivo de destino especificado, si existe, se leerá en primer lugar para hacer una comparación con lo que habría escrito la tarea. Si el resultado de la comparación es idéntico, el archivo no se escribe en disco y la marca de tiempo se conservará.|
+|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo. El valor predeterminado es la lista vacía.|
+|`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo. El valor predeterminado es `false`.|
+|`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode". El valor predeterminado es UTF-8.  Vea también <xref:System.Text.Encoding>.|
+|`WriteOnlyWhenDifferent`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, el archivo de destino especificado, si existe, se leerá en primer lugar para hacer una comparación con lo que habría escrito la tarea. Si el resultado de la comparación es idéntico, el archivo no se escribe en disco y la marca de tiempo se conservará. El valor predeterminado es `false`.|
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
  Si `Overwrite` es `true`, crea un archivo, escribe el contenido en el archivo y después lo cierra. Si el archivo de destino ya existe, se sobrescribe. Si `Overwrite` es `false`, anexa el contenido al archivo y crea el archivo de destino si aún no existe.
 

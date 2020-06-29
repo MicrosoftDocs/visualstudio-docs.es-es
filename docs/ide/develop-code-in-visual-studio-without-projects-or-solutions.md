@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de código sin proyectos o soluciones
-ms.date: 02/21/2018
+ms.date: 06/22/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 75aeb721ea5625523d29e20193ac406037abedc2
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596299"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284898"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
@@ -26,7 +26,7 @@ Una vez que abre los archivos de código en Visual Studio, el **Explorador de so
 
 ## <a name="open-any-code"></a>Apertura de cualquier tipo de código
 
-Puede abrir el código en Visual Studio de una de las maneras siguientes:
+Puede abrir el código en Visual Studio de las maneras siguientes:
 
 - En la barra de menús de Visual Studio, elija **Archivo** > **Abrir** > **Carpeta** y vaya a la ubicación del código.
 
@@ -34,10 +34,18 @@ Puede abrir el código en Visual Studio de una de las maneras siguientes:
 
 ::: moniker range="vs-2017"
 - Elija el vínculo **Abrir carpeta** en la **página de inicio** de Visual Studio.
+
+    > [!IMPORTANT]
+    > No todo el código se puede abrir mediante el vínculo **Abrir carpeta** de la **Página de inicio** de Visual Studio. Por ejemplo, si el archivo de código se guardó como parte de una solución (en otras palabras, en un archivo .sln) debe usar una de las otras opciones que se enumeran aquí para abrir el código.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 - Haga clic en el vínculo **Abrir carpeta** de la ventana de inicio.
+
+    > [!IMPORTANT]
+    > No todo el código se puede abrir mediante el vínculo **Abrir carpeta** de la ventana de inicio de Visual Studio. Por ejemplo, si el archivo de código se guardó como parte de una solución (en otras palabras, en un archivo .sln) debe usar una de las otras opciones que se enumeran aquí para abrir el código.
+
 ::: moniker-end
 
 - Si es usuario de teclado, presione **Ctrl**+**Mayús**+**Alt**+**O** en Visual Studio.

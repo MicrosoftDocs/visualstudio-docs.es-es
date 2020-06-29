@@ -1,19 +1,19 @@
 ---
 title: Introducción a Diagnóstico de gráficos de Visual Studio | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/26/2017
+ms.date: 06/08/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 473946353a1ea044464e409a75a838eaf52a1483
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557921"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286549"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.
@@ -52,12 +52,18 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
  Ahora que tienen todo lo que necesita, ya puede empezar a usar el diagnóstico de gráficos. Tan solo tiene que seguir estos pasos:
 
 ### <a name="1---create-a-direct3d-app"></a>1: Crear una aplicación de Direct3D
- Si ya tiene su propia aplicación de Direct3D para explorar Diagnóstico de gráficos, perfecto. Si no es así, puede usar cualquiera de los medios siguientes:
 
+Si ya tiene su propia aplicación de Direct3D para explorar Diagnóstico de gráficos, perfecto. Si no es así, puede usar cualquiera de los medios siguientes:
+
+::: moniker range=">=vs-2019"
+Descargue un ejemplo desde [Ejemplo de juego de Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+::: moniker-end
+::: moniker range="vs-2017"
 - Las plantillas de proyecto de las aplicaciones **DirectX 11 (Windows universal)** o **DirectX 12 (Windows universal)** para Windows 10.
 - [Muestra de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) para Windows 10.
+::: moniker-end
 
-  Asegúrese de que puede compilar la aplicación antes de continuar.
+Asegúrese de que puede compilar y ejecutar la aplicación antes de continuar. Elija **Compilar** > **Compilar solución** para asegurarse de que se compila sin errores. A continuación, elija **Depurar** > **Iniciar sin depurar** (**Ctrl + F5**) para asegurarse de que se ejecuta correctamente. Dependiendo de la máquina que esté probando con la herramienta, puede que necesite ajustar la plataforma y el destino de depuración para el ejemplo. Por ejemplo, para probarla en la plataforma x64 en el equipo host de Visual Studio, elija **x64** como la plataforma de la solución y **Equipo local** como el destino de depuración. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2: Iniciar una sesión de diagnóstico de gráficos
  Ahora está listo para empezar la primera sesión de diagnóstico de gráficos. En el menú principal de Visual Studio, seleccione **Depurar, Gráficos, Iniciar depuración de gráficos** o simplemente presione **Alt+F5**. La aplicación se inicia en diagnóstico de gráficos y muestra las ventanas de sesión de diagnóstico en Visual Studio.

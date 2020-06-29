@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f8bc4847201d1bd0298bc91432996ecce58d65
-ms.sourcegitcommit: 4bcd6abb89feff1cf8251e3ded73fdc30b67e347
+ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81615549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289045"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -46,7 +46,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Algunos valores de ejemplo son `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` o `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute se usa para detectar automáticamente esta opción desde el ensamblado y se establece de forma predeterminada en `Framework40` cuando el atributo no está presente. Debe especificar esta opción explícitamente si quita [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) de los ensamblados de .NET Core.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
-|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas de Visual Studio (TRX), utilice<br />**/Logger:trx**<br />**[;LogFileName=\<Valor predeterminado: nombre de archivo único>]**|
+|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas. Especifique el parámetro varias veces para habilitar varios registradores.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas de Visual Studio (TRX), utilice<br />**/Logger:trx**<br />**[;LogFileName=\<Defaults to unique file name>]**|
 |**/ListTests:[*nombre de archivo*]**|Muestra las pruebas detectadas del contenedor de pruebas especificado.|
 |**/ListDiscoverers**|Muestra los programas de detección de pruebas instalados.|
 |**/ListExecutors**|Muestra los programas de ejecución de pruebas instalados.|

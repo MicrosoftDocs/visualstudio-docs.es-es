@@ -1,6 +1,6 @@
 ---
 title: Opciones, Editor de texto, JavaScript, Proyecto
-ms.date: 1/15/2019
+ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605922"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285366"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opciones, Editor de texto, JavaScript, Proyecto
 
@@ -40,7 +40,9 @@ Estas opciones le permiten elegir si mostrar los proyectos virtuales cuando una 
 
 ## <a name="compile-on-save"></a>Compilar al guardar
 
-Estas opciones determinan si los archivos TypeScript que no forman parte del proyecto se compilan automáticamente. Active la casilla de verificación y elija el tipo de generación de código que se va a usar.
+Estas opciones determinan si los archivos TypeScript que no forman parte del proyecto se compilan automáticamente. Visual Studio compila con la versión más reciente de TypeScript instalada en *C:\Archivos de programa (x86)\Microsoft SDKs\TypeScript*.
+
+Active la casilla de verificación y elija el tipo de generación de código que se va a usar.
 
 ### <a name="uielement-list"></a>Lista de UIElement
 
@@ -60,7 +62,7 @@ Estas opciones determinan cómo el editor trata los archivos TypeScript que no f
 
 ### <a name="uielement-list"></a>Lista de UIElement
 
-|Opción|Description|
+|Opción|Descripción|
 |------------|-----------------|
 |**React Framework**|Cuando se selecciona esta opción, el Editor de código emite una extensión de archivo *.js*.|
 |**Preserve**|Cuando se selecciona esta opción, el Editor de código mantiene el archivo JSX como parte de la salida y emite una extensión de archivo *.jsx*.|

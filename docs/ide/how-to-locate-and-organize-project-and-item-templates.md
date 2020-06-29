@@ -1,7 +1,7 @@
 ---
 title: Ubicación de plantillas
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591052"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284248"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyecto y de elemento
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Buscar y organizar plantillas de proyecto y elemento
 
 Los archivos de plantilla se deben colocar en una ubicación conocida para que se muestren en los cuadros de diálogo de nuevo proyecto y de nuevo elemento.
 
@@ -36,9 +36,9 @@ De manera predeterminada, las plantillas que se instalan con Visual Studio se en
 
 ::: moniker range="vs-2017"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\\Common7\IDE\ProjectTemplates\\<Idioma\>\\<Id. de configuración regional\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Idioma\>\\<Id. de configuración regional\>*
 
 Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visual Basic para inglés (LCID 1033):
 
@@ -48,9 +48,9 @@ Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visu
 
 ::: moniker range=">=vs-2019"
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Language\>\\<Locale ID\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\\Common7\IDE\ProjectTemplates\\<Idioma\>\\<Id. de configuración regional\>*
 
-- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Idioma\>\\<Id. de configuración regional\>*
 
 Por ejemplo, el directorio siguiente contiene las plantillas de elemento de Visual Basic para inglés (LCID 1033):
 
@@ -102,7 +102,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Cree una carpeta en la carpeta del lenguaje de programación del directorio de plantillas de proyecto de usuario. Por ejemplo, para establecer una categoría **HolaMundo** para plantillas de proyecto de C#, cree el siguiente directorio:
 
-    - *\%USERPROFILE%\Documentos\Visual Studio \<Versión\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documentos\Visual Studio \<Version\>\Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Coloque todas las plantillas de esta categoría en la nueva carpeta.
 
@@ -114,7 +114,7 @@ Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo 
 
 1. Cree una carpeta en la carpeta del lenguaje de programación del directorio de plantillas de elemento de usuario. Por ejemplo, para establecer una categoría **HolaMundo** para plantillas de elemento de C#, cree el siguiente directorio:
 
-    - *\%USERPROFILE%\Documentos\Visual Studio \<Versión\>\Templates\ItemTemplates\Visual C#\HelloWorld*
+    - *\%USERPROFILE%\Documentos\Visual Studio \<Version\>\Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Coloque todas las plantillas de esta categoría en la nueva carpeta.
 
@@ -162,4 +162,4 @@ Puede permitir que las plantillas contenidas en subcategorías se muestren en su
 - [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)

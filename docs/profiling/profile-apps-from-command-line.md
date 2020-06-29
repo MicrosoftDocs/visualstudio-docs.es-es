@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638689"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285849"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir el rendimiento de la aplicación desde la línea de comandos
 
@@ -33,7 +33,7 @@ En el ejemplo descrito en este artículo, se recopila información de rendimient
 
 * Familiaridad con las herramientas de línea de comandos
 
-* Para recopilar información de rendimiento en un equipo remoto sin tener instalado Visual Studio, instale las [Herramientas de rendimiento para Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) en el equipo remoto. La versión de las herramientas debe coincidir con la de Visual Studio.
+* Para recopilar información de rendimiento en un equipo remoto sin tener instalado Visual Studio, instale las [Herramientas de rendimiento para Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) en el equipo remoto. La versión de las herramientas debe coincidir con la de Visual Studio.
 
 ## <a name="collect-performance-data"></a>Recopilar datos de rendimiento
 
@@ -53,9 +53,9 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
 
    Los argumentos que se deben incluir son:
 
-   * \<*id*> Identifica la sesión de recopilación. El identificador debe ser un número entre 1 y 255.
-   * \<*pid*> PID del proceso cuyo perfil se quiere generar, en este caso el PID del paso 1.
-   * \<*configFile*> Archivo de configuración del agente recopilador que quiere iniciar. Para obtener más información, vea [Archivos de configuración de agentes](#config_file).
+   * \<*id*>, identifica la sesión de recopilación. El identificador debe ser un número entre 1 y 255.
+   * \<*pid*>, PID del proceso cuyo perfil se quiere generar, en este caso el PID del paso 1.
+   * \<*configFile*>, archivo de configuración del agente recopilador que quiere iniciar. Para obtener más información, vea [Archivos de configuración de agentes](#config_file).
 
 1. Cambie el tamaño de Bloc de notas o escriba algo en él con el fin de asegurarse de que se recopile alguna información interesante de generación de perfiles.
 
@@ -73,10 +73,20 @@ Los agentes recopiladores son componentes intercambiables que recopilan diferent
 
 Por comodidad, puede almacenar esa información en un archivo de configuración de agente. El archivo de configuración es un archivo *.json* que contiene como mínimo el nombre de la *.dll* y su CLSID COM. Estos son los archivos de configuración de ejemplo que se pueden encontrar en la siguiente carpeta:
 
-```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
+```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
-* Configuraciones de CpuUsage (Base/Alta/Baja), que corresponden a los datos recopilados de la herramienta de generación de perfiles [Uso de CPU](../profiling/cpu-usage.md).
-* Configuraciones de DotNetObjectAlloc (Base/Baja), que corresponden a los datos recopilados de la [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
+Consulte los vínculos siguientes para descargar y ver los archivos de configuración del agente:
+
+- https://aka.ms/vs/diaghub/agentconfig/cpubase
+- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
+- https://aka.ms/vs/diaghub/agentconfig/cpulow
+- https://aka.ms/vs/diaghub/agentconfig/database
+- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
+- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
+
+Las configuraciones de CpuUsage (Base/Alta/Baja) corresponden a los datos recopilados de la herramienta de generación de perfiles [Uso de CPU](../profiling/cpu-usage.md).
+Las configuraciones de DotNetObjectAlloc (Base/Baja) corresponden a los datos recopilados de la [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
 
 Las configuraciones Base/Baja/Alta hacen referencia a la velocidad de muestreo. Por ejemplo, Baja es 100 muestras por segundo y Alta es 4000 muestras por segundo.
 

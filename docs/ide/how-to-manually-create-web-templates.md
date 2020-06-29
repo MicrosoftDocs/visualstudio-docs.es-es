@@ -1,7 +1,7 @@
 ---
 title: Crear plantillas web
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591013"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284183"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
 
 La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo *vstemplate* debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.
 
@@ -54,7 +54,7 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
 
 7. Seleccione los archivos de la plantilla (incluido el archivo *vstemplate*), haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)** . Los archivos se comprimen en un archivo *.zip*.
 
-8. Coloque el archivo de plantilla *.zip* en el directorio de plantillas de proyecto de Visual Studio. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\ProjectTemplates*.
+8. Coloque el archivo de plantilla *.zip* en el directorio de plantillas de proyecto de Visual Studio. De forma predeterminada, este directorio es *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
 
 ## <a name="example"></a>Ejemplo
 

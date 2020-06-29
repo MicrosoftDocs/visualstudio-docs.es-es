@@ -1,19 +1,19 @@
 ---
 title: Creación de un complemento de grabación para pruebas de rendimiento web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589165"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288017"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
@@ -71,7 +71,7 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 8. Agregue más código según lo que desee que el complemento de grabadora ejecute después de que se produzca la grabación web. Por ejemplo, puede agregar código para administrar la correlación personalizada como se muestra en el ejemplo siguiente. También puede crear un complemento de grabadora para tareas como convertir comentarios en transacciones o agregar reglas de validación a la prueba de rendimiento web.
 
-9. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>** .
+9. En el menú **Compilar**, elija **Compilar\<class library project name>** .
 
 Después, implemente el complemento de grabadora para que se registre con Visual Studio.
 
@@ -99,7 +99,7 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<plug-in>: no se pudo cargar el archivo o el ensamblado "\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)** , pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >

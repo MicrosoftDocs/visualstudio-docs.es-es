@@ -2,7 +2,7 @@
 title: Procedimiento Configuración de proyectos para plataformas de destino
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe4bc3f982ae18b9f85fe8bf5c21495c98beee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a58b60e23bf08fb86a8dd7bc09d760085b6ea25f
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76112547"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284611"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedimiento Configuración de proyectos para plataformas de destino
 
@@ -51,6 +51,10 @@ El **Administrador de configuración** proporciona una forma de agregar rápidam
     3. Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.
 
 Se actualizarán las propiedades de todos los proyectos que tienen como destino la plataforma de 64 bits y la próxima compilación del proyecto se optimizará para plataformas de 64 bits.
+
+> [!NOTE]
+> El nombre de la plataforma **Win32** se utiliza para los proyectos de C++, y significa **x86**. Visual Studio tiene en cuenta las plataformas de nivel de proyecto y las plataformas de nivel de solución, y las plataformas de proyecto provienen de los sistemas de proyecto específicos del lenguaje. Los proyectos de C++ utilizan **Win32** y **x64**, pero las plataformas de solución usan **x86** y **x64**. Al elegir **x86** como la configuración de la solución, Visual Studio selecciona la plataforma **Win32** para los proyectos de C++. Para ver la configuración de la plataforma de nivel de proyecto y de la plataforma de nivel de solución, abra **Administrador de configuración** y anote las dos configuraciones de plataforma. La plataforma de nivel de solución se muestra en la lista desplegable **Plataforma de soluciones activas** y en la tabla se muestra la plataforma de nivel de proyecto para cada proyecto.
+> ![Captura de pantalla que muestra la plataforma de solución y la plataforma de proyecto](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Configurar plataformas de destino en el Diseñador de proyectos
 

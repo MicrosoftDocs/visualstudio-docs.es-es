@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f013464143929732da409f5dd9684ed73bcc705
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633452"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289292"
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceptos avanzados de MSBuild
 
@@ -23,7 +23,7 @@ Los documentos de esta sección describen cómo utilizar técnicas avanzadas par
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Título|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Procesamiento por lotes](../msbuild/msbuild-batching.md)|Describe cómo procesar por lotes destinos de compilación y tareas basadas en metadatos de elementos.|
 |[Transformaciones](../msbuild/msbuild-transforms.md)|Explica cómo utilizar las transformaciones para habilitar el análisis de dependencias.|
@@ -36,3 +36,4 @@ Los documentos de esta sección describen cómo utilizar técnicas avanzadas par
 
 - [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
 - [Registro de MSBuild](../msbuild/logging-in-msbuild.md)
+- [Cómo MSBuild compila proyectos](build-process-overview.md)

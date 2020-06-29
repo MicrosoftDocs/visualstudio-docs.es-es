@@ -1,6 +1,6 @@
 ---
 title: Procedimiento para instalar un visualizador | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/10/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79fd5522447378b879443eb8dccabfe7081af4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99d8c0b0181286465ffe8321470d035961803a64
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183631"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85286393"
 ---
-# <a name="how-to-install-a-visualizer"></a>Procedimiento para instalar un visualizador
+# <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.
 
 > [!NOTE]
@@ -37,13 +37,13 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 
    Normalmente, es mejor que tanto el archivo DLL del depurador como el archivo DLL del elemento depurado especifiquen **Cualquier CPU** como plataforma de destino. El archivo DLL del depurador debe ser **Cualquier CPU** o **32 bits**. La plataforma de destino para el archivo DLL del elemento depurado debe corresponderse con el proceso del elemento depurado.
 
-2. Copie el archivo DLL del [depurador](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (y los archivos DLL de los que dependa) en cualquiera de las ubicaciones siguientes:
+2. Copie el archivo DLL del [lado de depurador](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (y todos los archivos DLL de los que dependa) en cualquiera de las ubicaciones siguientes:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
     
-3. Copie el archivo DLL del [elemento depurado](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) en cualquiera de las ubicaciones siguientes:
+3. Copie el archivo DLL del [lado depurado](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) en cualquiera de las ubicaciones siguientes:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
 
@@ -53,6 +53,10 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
     - `net2.0` para los elementos depurados que ejecutan el entorno de ejecución `.NET Framework`.
     - `netstandard2.0` para los elementos depurados que usan un entorno de ejecución que admite `netstandard 2.0` (`.NET Framework v4.6.1+` o `.NET Core 2.0+`).
     - `netcoreapp` para los elementos depurados que ejecutan el entorno de ejecución `.NET Core` (se admite `.NET Core 2.0+`).
+
+   Un archivo DLL del lado depurado es necesario si desea crear un visualizador independiente. Este archivo DLL contiene código para el objeto de datos, que puede implementar métodos de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+
+   Si el código del lado depurado está pensado para emplearse en varios destinos, el archivo DLL del lado depurado debe colocarse en la carpeta para la versión de TFM compatible mínima.
 
 4. Reinicie la sesión de depuración.
 

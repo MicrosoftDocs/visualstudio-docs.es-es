@@ -1,21 +1,21 @@
 ---
 title: Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589206"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288154"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
 Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio web.
 
@@ -264,7 +264,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilar e implementar los complementos
 
-1. En el menú **Compilar**, elija **Compilar \<nombre del proyecto Biblioteca de control de Windows Forms**.
+1. En el menú **Compilar**, elija **Compilar\<Windows Form Control Library project name>** .
 
 2. Cierre todas las instancias de Visual Studio.
 
@@ -308,6 +308,6 @@ Para más información, vea [Página de aplicación, Diseñador de proyectos (C#
 - [Cómo: Crear un complemento de nivel de solicitud](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificación de una regla de extracción personalizada para una prueba de rendimiento web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificación de una regla de validación personalizada para una prueba de rendimiento web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Cómo: Crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

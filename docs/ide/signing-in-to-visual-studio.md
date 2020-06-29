@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033d4167c03951a642656807aeb9cca83116651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79132720"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285301"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -23,6 +23,13 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio in
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Iniciar sesión en Visual Studio para Mac](/visualstudio/mac/signing-in).
+
+::: moniker range="vs-2017"
+
+> [! ADVERTENCIA] El uso de Visual Studio 2017 para acceder a los recursos configurados para el acceso condicional puede desencadenar una experiencia de autenticación degradada, que solicita la reautenticación varias veces dentro de la misma sesión de Visual Studio. 
+> Para trabajar con los recursos configurados para el acceso condicional, actualice a Visual Studio 2019 Update 16.6 o posterior. Para más información, consulte [Cómo usar Visual Studio con cuentas que requieran la autenticación multifactor](work-with-multi-factor-authentication.md).
+
+::: moniker-end
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>¿Por qué debo iniciar sesión en Visual Studio?
 

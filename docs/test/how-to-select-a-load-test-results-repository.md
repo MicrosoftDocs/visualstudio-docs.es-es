@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Seleccionar un repositorio de resultados de pruebas de carga'
+title: Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.test.load.dialog.connectstringmissing
 - vs.test.load.dialog.databaseconnectstring
@@ -15,14 +15,14 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589011"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85287576"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Cómo: Seleccionar un repositorio de resultados de pruebas de carga
+# <a name="how-to-select-a-load-test-results-repository"></a>Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 
 el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los agentes, junto con un controlador, pueden generar más carga simulada que cualquier equipo único. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -43,7 +43,7 @@ Los resultados de prueba de los agentes o un equipo local se pueden guardar en c
 4. En **Nombre del servidor**, escriba el nombre del servidor donde ha ejecutado los scripts `LoadTest`.
 
     > [!TIP]
-    > Si está usando SQL Express en el equipo local para el almacén de pruebas de carga, escriba \<nombreDeEquipo>\sqlexpress (por ejemplo, **MyComputer\sqlexpress**).
+    > Si está usando SQL Express en el equipo local para el almacén de pruebas de carga, escriba \<computername>\sqlexpress (por ejemplo, **MyComputer\sqlexpress**).
 
 5. En **Conexión con el servidor**, puede elegir **Utilizar autenticación de Windows**. Puede especificar el nombre de usuario y la contraseña, pero, si lo hace, debe seleccionar la opción **Guardar mi contraseña**.
 

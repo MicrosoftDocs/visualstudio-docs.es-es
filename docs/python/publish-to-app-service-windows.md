@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c8e7c040fb4d6df507ed5721407655accf067fb9
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 0564e9d36fafb32dfdefa1e5a581d298da744a0a
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586559"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289175"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publicación en Azure App Service en Windows
 
@@ -129,7 +129,7 @@ Al publicar en Azure App Service desde Visual Studio 2017, solo se copian lo
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Si no agrega la URL a la matriz, se genera el error "DisallowedHost at / Invalid HTTP_HOST header: '\<URL del sitio\>'. Es posible que deba agregar '\<URL del sitio\>' a ALLOWED_HOSTS".
+    Si no agrega la dirección URL a la matriz, se genera un error "DisallowedHost at / Invalid HTTP_HOST header: '\<site URL\>'. You may need to add '\<site URL\>' to ALLOWED_HOSTS".
 
     Tenga en cuenta que, cuando la matriz está vacía, Django permite automáticamente 'localhost', pero con la adición de la dirección URL de producción se eliminan dichas funcionalidades. Por este motivo, puede que desee mantener copias de desarrollo y producción independientes de `settings.py`, o bien usar variables de entorno para controlar los valores de tiempo de ejecución.
 
@@ -209,7 +209,7 @@ Como parte de este proceso, Visual Studio también realiza los siguientes pasos:
 - Crear un archivo `web.config` en el servidor que contiene punteros adecuados a la función `wsgi_app` de la aplicación y al intérprete predeterminado Python 3.4 de App Service.
 - Desactivar el procesamiento de archivos en la carpeta `static` del proyecto (las reglas para esto están en `web.config`).
 - Publicar el entorno virtual en el servidor.
-- Agregar un archivo `web.debug.config` y las herramientas de depuración ptvsd para habilitar la depuración remota.
+- Agregar un archivo `web.debug.config` y las herramientas de depuración para permitir la depuración remota. En Visual Studio 2019, versión 16.4 y anterior, la herramienta de depuración es ptvsd. En Visual Studio 2019, versión 16.5 y posteriores, la herramienta de depuración es debugpy.
 
 Tal y como se indicó anteriormente, estos pasos automáticos simplifican el proceso de publicación, pero hacen que sea más difícil controlar el entorno de Python. Por ejemplo, el archivo `web.config` se crea solo en el servidor, pero no se agrega al proyecto. El proceso de publicación también tarda más, ya que copia todo el entorno virtual desde el equipo de desarrollo en lugar de confiar en la configuración del servidor.
 

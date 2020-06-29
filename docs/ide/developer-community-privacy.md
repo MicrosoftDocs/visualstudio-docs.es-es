@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75775893"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284807"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -40,7 +40,8 @@ Si le preocupa la publicidad de los datos, no ponga nada que no quiera revelar e
 3. Agregue la descripción y cualquier otra información, imágenes y datos adjuntos de archivo necesarios para la reproducción. Elija el botón **Enviar** para enviar esta información de forma privada.
 
    > [!NOTE]
-   > Hay un límite de 2 GB en archivos adjuntos y un máximo de 10 archivos. Si tiene que cargar un archivo más grande, puede enviar un nuevo informe de problemas o solicitar una dirección URL de carga de un empleado de Microsoft en un comentario privado.
+   > En el sitio web de Developer Community, hay un límite de 2 GB en archivos adjuntos y un máximo de diez archivos. Si tiene que cargar un archivo más grande, puede enviar un nuevo informe de problemas o solicitar una dirección URL de carga de un empleado de Microsoft en un comentario privado.
+   > Cuando cerremos un problema, los datos adjuntos asociados se eliminarán después de noventa días.
 
 Para preservar su privacidad y mantener la información confidencial fuera de la vista pública, tenga cuidado de mantener todas las interacciones con Microsoft en forma de respuestas a un comentario de visibilidad restringida. Las respuestas a otros comentarios pueden provocar que accidentalmente se divulgue información confidencial.
 

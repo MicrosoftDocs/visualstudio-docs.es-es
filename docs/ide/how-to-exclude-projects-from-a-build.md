@@ -1,22 +1,22 @@
 ---
-title: 'Cómo: Excluir proyectos de una compilación'
+title: Procedimiento Exclusión de proyectos de una compilación
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114801"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85284326"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
+# <a name="how-to-exclude-projects-from-a-build"></a>Procedimiento Exclusión de proyectos de una compilación
 
 Para compilar una solución no es necesario compilar todos los proyectos que contiene. Por ejemplo, se puede excluir un proyecto que interrumpa la compilación y, a continuación, compilar el proyecto tras haber investigado y resuelto los problemas.
 
@@ -42,7 +42,7 @@ Para obtener más información, vea [Descripción de las configuraciones de comp
 
 1. En la barra de menús, elija **Compilar** > **Administrador de configuración**.
 
-2. En la lista **Configuración de soluciones activas**, pulse **\<Nueva>** .
+2. En la lista **Configuración de soluciones activas**, elija **\<New>** .
 
 3. En el cuadro **Nombre**, escriba un nombre para la configuración de soluciones.
 
@@ -71,4 +71,4 @@ Para averiguar por qué se ha omitido un proyecto, tenga en cuenta la configurac
 
 - [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)
 - [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)
-- [Cómo: Compilar varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Cómo: Compilación de varias configuraciones simultáneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

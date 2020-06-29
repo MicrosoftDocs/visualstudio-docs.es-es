@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef5a84285afdaa429606937f3e537863b060ec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632166"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85289188"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 
@@ -29,10 +29,10 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 
 |ToolsVersion|Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v3.5\\*|
-|4.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v4.0.30319\\*|
-|Current|*\<Ruta de acceso de instalación de Visual Studio>\MSBuild\Current\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|Current|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En Visual Studio 2019, el valor predeterminado es "Current" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo con el modificador **/toolsversion** en un símbolo del sistema. Para información sobre este atributo y otras maneras de especificar el valor de `ToolsVersion`, consulte [Reemplazar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -43,10 +43,10 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 
 |ToolsVersion|Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v2.0.50727\\*|
-|3.5|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v3.5\\*|
-|4.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v4.0.30319\\*|
-|15.0|*\<Ruta de acceso de instalación de Visual Studio>MSBuild\15.0\bin*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|15.0|*\<Visual Studio installation path>\MSBuild\15.0\bin*|
 
  El valor de `ToolsVersion` determina qué conjunto de herramientas usará un proyecto generado por Visual Studio. En Visual Studio 2017, el valor predeterminado es "15.0" (con independencia de la versión especificada en el archivo del proyecto), pero es posible reemplazar ese atributo con el modificador **/toolsversion** en un símbolo del sistema. Para información sobre este atributo y otras maneras de especificar el valor de `ToolsVersion`, consulte [Reemplazar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
  ::: moniker-end
@@ -102,10 +102,7 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
 > [!NOTE]
 > Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.
 
- `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración. Definiendo las entradas del Registro, puede especificar conjuntos de herramientas para todos los equipos que se aplican a *MSBuild.exe*, Visual Studio y todos los hosts de MSBuild.
-
-> [!NOTE]
-> Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.
+ `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración.
 
  Las propiedades siguientes son específicas del valor de `ToolsVersion` que se usa en los proyectos:
 

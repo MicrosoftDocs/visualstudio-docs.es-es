@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 696664aa5aa92a3e9a675df4803a3e65e3e81f36
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84185702"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85283551"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Cómo usar Visual Studio con cuentas que requieran la autenticación multifactor
 
@@ -33,7 +33,11 @@ En la versión 16.6, se han agregado nuevas funcionalidades a Visual Studio 2
 > [!WARNING]
 > No usar este flujo de trabajo podría desencadenar una experiencia degradada que se tradujese en múltiples peticiones de autenticación adicionales al agregar o volver a autenticar cuentas de Visual Studio. 
 
-### <a name="enabling-system-web-browser"></a>Habilitación del explorador web del sistema  
+### <a name="enabling-system-web-browser"></a>Habilitación del explorador web del sistema
+
+> [!NOTE] 
+> Para disfrutar de la mejor experiencia, se recomienda que borre los datos predeterminados del explorador web del sistema antes de continuar con este flujo de trabajo. Además, si tiene cuentas profesionales o educativas en la configuración de Windows 10 en **Obtener acceso a trabajo o escuela**, compruebe que se han autenticado correctamente.
+
 Para habilitar este flujo de trabajo, vaya al cuadro de diálogo Opciones de Visual Studio **(Herramientas > Opciones...)** , seleccione la pestaña **Cuentas** y elija **Explorador web del sistema** en la lista desplegable **Agregar y volver a autenticar cuentas con:** 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="Selección del explorador web del sistema en el menú.":::
@@ -43,20 +47,22 @@ Una vez habilitado el flujo de trabajo del explorador web del sistema, puede ini
 </br>
 :::image type="content" source="media/add-personalization-account.png" alt-text="Adición de una nueva cuenta de personalización a Visual Studio." border="false":::
 
-Esta acción abrirá el explorador web predeterminado del sistema, le pedirá que inicie sesión en su cuenta y valide cualquier directiva de MFA necesaria. 
+Esta acción abrirá el explorador web predeterminado del sistema, le pedirá que inicie sesión en su cuenta y valide cualquier directiva de MFA necesaria.
+
+En función de las actividades de desarrollo y la configuración de recursos, es posible que se le pida que vuelva a escribir sus credenciales durante la sesión. Esto puede ocurrir cuando se agrega un recurso nuevo o se intenta acceder a un recurso sin haber cumplido previamente sus requisitos de autorización de CA o MFA.
 
 > [!NOTE] 
-> Mantenga el explorador abierto en todo el proceso para obtener la mejor experiencia, ya que al cerrarlo se podrían desencadenar mensajes de autorización adicionales. 
+> Para disfrutar de la mejor experiencia, mantenga el explorador abierto hasta que se validen todas las directivas de CA o MFA para los recursos. Si cierra el explorador, se puede perder el estado de MFA creado previamente y puede solicitar mensajes de autorización adicionales.
 
 ## <a name="reauthenticating-an-account"></a>Reautenticación de una cuenta  
 Si hay algún problema con su cuenta, es posible que Visual Studio le pida que vuelva a escribir sus credenciales de cuenta.  
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Reautenticación de la cuenta de Visual Studio.":::
 
-Al hacer clic en **Vuelva a escribir las credenciales** se abrirá el explorador web predeterminado del sistema e intentará actualizar las credenciales automáticamente. Si no se realiza correctamente, se le pedirá que inicie sesión en su cuenta y valide cualquier directiva de MFA necesaria. 
+Al hacer clic en **Vuelva a escribir las credenciales** se abrirá el explorador web predeterminado del sistema e intentará actualizar las credenciales automáticamente. Si no se realiza correctamente, se le pedirá que inicie sesión en su cuenta y valide cualquier directiva de CA o MFA necesaria.
 
 > [!NOTE] 
-> Mantenga el explorador abierto a través de todo el proceso para obtener la mejor experiencia, ya que el cierre del explorador puede desencadenar mensajes de autorización adicionales. 
+> Para disfrutar de la mejor experiencia, mantenga el explorador abierto hasta que se validen todas las directivas de CA o MFA para los recursos. Si cierra el explorador, se puede perder el estado de MFA creado previamente y puede solicitar mensajes de autorización adicionales.
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Cómo desactivar el uso de un inquilino de Azure Active Directory concreto en Visual Studio
 

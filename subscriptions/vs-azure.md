@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: conceptual
 description: Vea cómo activar el beneficio de crédito individual de Azure DevTest que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 50e784a60dc50232bc390233e2ad80dc91d0f4ab
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 55092145d5760e235dc0c38c5a191760af2a2bc1
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183618"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279775"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito individual mensual de Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción.
@@ -106,7 +106,7 @@ R:  El envío de un incidente de soporte técnico desde Azure Portal es un proce
 
 Consulte la documentación de [Soporte técnico](vs-tech-support.md) para obtener información detallada.
 
-### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>P: ¿Quién posee la propiedad intelectual que se crea con el crédito individual de Azure DevTest?
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>P: ¿Quién posee la propiedad intelectual que se crea con el crédito individual de Azure DevTest?
 R:  La propiedad intelectual producida por un empleado que se crea sobre los recursos proporcionados por esa empresa es, por tanto, propiedad intelectual de la empresa que proporciona el recurso. Por consiguiente, si ha recibido su suscripción de Visual Studio a través de su empleador, se aplicarán las directivas de propiedad intelectual de este. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633660"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288993"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 
@@ -88,7 +88,7 @@ MSBuild puede dividir varias listas de elementos en lotes basándose en los mism
 > [!NOTE]
 > Si una lista de elementos pasada a una tarea no contiene ningún elemento con los metadatos a los que se hace referencia, todos los elementos de esa lista se pasan a todos los lotes.
 
-En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en lotes basándose en los metadatos de los elementos. Las listas de elementos `ExampColl` y `ExampColl2` se han dividido en tres lotes cada una, basándose en los metadatos del elemento `Number`. La presencia de `%(Number)` en el atributo `Text` indica a MSBuild que se debe realizar un procesamiento por lotes. Las listas de elementos `ExampColl` y `ExampColl2` se dividen en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.
+En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en lotes según los metadatos de los elementos. Las listas de elementos `ExampColl` y `ExampColl2` se han dividido en tres lotes cada una, basándose en los metadatos del elemento `Number`. La presencia de `%(Number)` en el atributo `Text` indica a MSBuild que se debe realizar un procesamiento por lotes. Las listas de elementos `ExampColl` y `ExampColl2` se dividen en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.
 
 ```xml
 <Project

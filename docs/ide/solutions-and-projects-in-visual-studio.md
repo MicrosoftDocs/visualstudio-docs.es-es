@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307296"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85285236"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -42,7 +42,7 @@ Cuando cree una aplicación o un sitio web en Visual Studio, debe comenzar con u
 
 Visual Studio usa [MSBuild](../msbuild/msbuild.md) para compilar cada proyecto en una solución, y cada proyecto contiene un archivo de proyecto de MSBuild. La extensión de archivo refleja el tipo de proyecto, por ejemplo, un proyecto de C# (.csproj), un proyecto de Visual Basic (.vbproj) o un proyecto de base de datos (.dbproj). El archivo de proyecto es un documento XML que contiene toda la información y las instrucciones que MSBuild necesita para compilar el proyecto, incluidos el contenido, los requisitos de la plataforma, la información de versión, la configuración del servidor web o del servidor de bases de datos y las tareas que se deben llevar a cabo.
 
-Los archivos de proyecto se basan en el [esquema XML de MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para ver el contenido de los [archivos de proyecto de estilo SDK](../msbuild/how-to-use-project-sdk.md) más recientes en Visual Studio, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Editar\<nombreDelProyecto\>** . Para ver el contenido de proyectos de .NET Framework y otros del estilo, descargue primero el proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Descargar el proyecto**). Después, haga clic con el botón derecho en el proyecto y seleccione **Editar \<nombreDelProyecto\>** .
+Los archivos de proyecto se basan en el [esquema XML de MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para ver el contenido de los [archivos de proyecto de estilo SDK](../msbuild/how-to-use-project-sdk.md) más recientes en Visual Studio, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Editar \<projectname\>** . Para ver el contenido de proyectos de .NET Framework y otros del estilo, descargue primero el proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Descargar el proyecto**). Después, haga clic con el botón derecho en el proyecto y seleccione **Editar \<projectname\>** .
 
 > [!NOTE]
 > No es necesario usar soluciones o proyectos en Visual Studio para editar, compilar y depurar código. Simplemente puede abrir la carpeta que contiene los archivos de código fuente en Visual Studio y empezar la edición. Para obtener más información, vea [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -53,7 +53,7 @@ Un proyecto está incluido dentro de una *solución*. A pesar de su nombre, una 
 
 En Visual Studio se usan dos tipos de archivo ( *.sln* y *.suo*) para almacenar la configuración de las soluciones:
 
-|Comprobación de actualización|Name|Description|
+|Comprobación de actualización|NOMBRE|Descripción|
 |---------------|----------|-----------------|
 |.sln|Solución de Visual Studio|Organiza proyectos, elementos de proyecto y elementos de solución en la solución.|
 |.suo|Opciones de usuario de la solución|Almacena la configuración de nivel de usuario y las personalizaciones, como los puntos de interrupción.|
@@ -75,6 +75,9 @@ Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** 
 Muchos comandos de menú están disponibles en el menú que aparece al hacer clic derecho en distintos elementos del **Explorador de soluciones**. Estos comandos incluyen compilar un proyecto, administrar paquetes NuGet, agregar una referencia, cambiar el nombre de un archivo y ejecutar pruebas, solo por nombrar algunos. La barra de herramientas de la parte superior del **Explorador de soluciones** tiene botones para cambiar de una vista de solución a una vista de carpeta, mostrar archivos ocultos, contraer todos los nodos y mucho más.
 
 Para los proyectos de ASP.NET Core, puede personalizar cómo se anidan los archivos en el **Explorador de soluciones**. Para obtener más información, consulte [Personalizar el anidamiento de archivos en el Explorador de soluciones](file-nesting-solution-explorer.md).
+
+> [!TIP]
+> Para ver una lista de algunos de los iconos que aparecen en el Explorador de soluciones, consulte la página [Iconos de la Vista de clases y del Examinador de objetos](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Vea también
 

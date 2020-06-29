@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c058a5986f72192a86d0e554d9e0d0b9bdce1b42
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173517"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288980"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -51,7 +51,7 @@ En las siguientes secciones se describen los atributos, los elementos secundario
 |Atributo|Descripción|
 |---------------|-----------------|
 |`Condition`|Atributo opcional. Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
-|`Label`|Atributo opcional. Identifica la `ItemGroup`.|
+|`Label`|Atributo opcional. Identifica la `ItemGroup`. |
 
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -90,6 +90,8 @@ En el ejemplo de código siguiente se muestran las colecciones de elementos defi
 En un archivo de proyecto simple, normalmente se usa un solo elemento `ItemGroup`, pero también se pueden utilizar varios elementos `ItemGroup`. Cuando se utilizan varios elementos `ItemGroup`, los elementos se combinan en un solo `ItemGroup`. Por ejemplo, algunos elementos podrían estar incluidos en un elemento `ItemGroup` independiente que se define en un archivo importado.
 
 Pueden aplicarse condiciones a los elementos ItemGroup mediante el atributo `Condition`. En ese caso, los elementos solo se agregan a la lista de elementos si se cumple la condición. Consulte [Condiciones de MSBuild](msbuild-conditions.md).
+
+El atributo `Label` se utiliza en algunos sistemas de compilación como una manera de controlar los comportamientos de la compilación. Solo se puede usar en declaraciones, como una manera de crear scripts de MSBuild más comprensibles o como una configuración de control para que afecte a las acciones de compilación.
 
 ## <a name="see-also"></a>Vea también
 

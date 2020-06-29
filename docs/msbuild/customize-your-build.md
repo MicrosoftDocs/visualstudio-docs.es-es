@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0cb05948f8010964eefe101cbc77d48a149566
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
+ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180407"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85288941"
 ---
 # <a name="customize-your-build"></a>Personalizar una compilación
 
@@ -182,7 +182,7 @@ Se busca la misma estructura de directorios en `$(MSBuildUserExtensionsPath)`, q
 ## <a name="customize-the-solution-build"></a>Personalización de la compilación de la solución
 
 > [!IMPORTANT]
-> La personalización de la compilación de la solución de este modo solo se aplica a las compilaciones de línea de comandos con *MSBuild.exe*. **No** se aplica a las compilaciones dentro de Visual Studio.
+> La personalización de la compilación de la solución de este modo solo se aplica a las compilaciones de línea de comandos con *MSBuild.exe*. **No** se aplica a las compilaciones dentro de Visual Studio. Por esta razón, no se recomienda aplicar personalización en el nivel de la solución. Una alternativa mejor para personalizar todos los proyectos de una solución es usar *Directory.Build.props* y *Directory.build.targets* en la carpeta de la solución, como se describe en otro lugar de este artículo.
 
 Cuando MSBuild compila un archivo de solución, primero lo convierte internamente en un archivo de proyecto y, después, lo compila. El archivo de proyecto generado importa `before.{solutionname}.sln.targets` antes de definir los destinos y `after.{solutionname}.sln.targets` después de importarlos, incluidos los destinos instalados en los directorios `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` y `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
 
