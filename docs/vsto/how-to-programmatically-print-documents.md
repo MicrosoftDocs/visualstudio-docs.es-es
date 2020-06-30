@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Imprimir documentos mediante programación
+title: 'Cómo: imprimir documentos mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 413d0e4f56aeb897af4f16a0dc6c43b4f04eace7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956049"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537831"
 ---
-# <a name="how-to-programmatically-print-documents"></a>Procedimiento Imprimir documentos mediante programación
+# <a name="how-to-programmatically-print-documents"></a>Cómo: imprimir documentos mediante programación
   Puede imprimir la totalidad o parte de un documento de Microsoft Office Word en la impresora predeterminada.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "62956049"
      [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]
 
-## <a name="print-a-document-by-using-a-vsto-add-in"></a>Imprimir un documento mediante el uso de un complemento de VSTO
+## <a name="print-a-document-by-using-a-vsto-add-in"></a>Imprimir un documento mediante un complemento de VSTO
 
 ### <a name="to-print-an-entire-document"></a>Para imprimir un documento completo
 
@@ -57,5 +57,5 @@ ms.locfileid: "62956049"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

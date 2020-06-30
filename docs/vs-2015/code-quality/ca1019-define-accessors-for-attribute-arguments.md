@@ -15,24 +15,24 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e77f3a4eec7495e6b4abe13bec93d341f961463
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662010"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534958"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir descriptores de acceso para los argumentos de atributo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |Identificador de comprobación|CA1019|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  En su constructor, un atributo define los argumentos que no tienen las propiedades correspondientes.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -74,7 +74,7 @@ ms.locfileid: "72662010"
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813: Evitar los atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Atributos](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

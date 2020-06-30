@@ -15,24 +15,24 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 78702298bab484a95bb8108150415ec0b31ede7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad467e880b3281a75db2627108af0e0b2f90ea99
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662913"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534464"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: No llamar a métodos reemplazables en constructores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |Identificador de comprobación|CA2214|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El constructor de un tipo no sellado llama a un método virtual definido en su clase.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -45,13 +45,13 @@ ms.locfileid: "72662913"
  No suprima las advertencias de esta regla. Se debe rediseñar el constructor para eliminar la llamada al método virtual.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra el efecto de infringir esta regla. La aplicación de prueba crea una instancia de `DerivedType`, que hace que se ejecute su constructor de clase base (`BadlyConstructedType`). el constructor de `BadlyConstructedType` llama incorrectamente al método virtual `DoSomething`. Como muestra el resultado, `DerivedType.DoSomething()` ejecuta y lo hace antes de que se ejecute el constructor de `DerivedType`.
+ En el ejemplo siguiente se muestra el efecto de infringir esta regla. La aplicación de prueba crea una instancia de `DerivedType` , que hace que `BadlyConstructedType` se ejecute su constructor de clase base (). `BadlyConstructedType`el constructor de llama incorrectamente al método virtual `DoSomething` . Como muestra el resultado, `DerivedType.DoSomething()` ejecuta y lo hace antes de que se `DerivedType` ejecute el constructor de.
 
  [!code-csharp[FxCop.Usage.CtorVirtual#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/cs/FxCop.Usage.CtorVirtual.cs#1)]
  [!code-vb[FxCop.Usage.CtorVirtual#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CtorVirtual/vb/FxCop.Usage.CtorVirtual.vb#1)]
 
  Este ejemplo produce el siguiente resultado:
 
- **Llamando a un constructor base.** **¿se ha llamado a 
- se ha inicializado doSomething? No hay ningún** 
- que**llame a un constructor derivado.**
+ **Llamando a un constructor base.** 
+ **Se llama a un elemento derivado-Initialized? No**se 
+ **llama a un constructor derivado.**

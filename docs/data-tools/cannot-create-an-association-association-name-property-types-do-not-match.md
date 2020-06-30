@@ -3,17 +3,17 @@ title: No se puede crear una asociación; los tipos de propiedad no coinciden.
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f01f14855b7f70243228a66d73244173427217e8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b9735c711abe7826d241e8c8aa7ade0a5f5d5e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282779"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536726"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; los tipos de propiedad no coinciden.
 

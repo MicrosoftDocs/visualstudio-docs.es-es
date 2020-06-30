@@ -1,31 +1,31 @@
 ---
 title: Implementación de VS Shell
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca497244a806324d9d2315fa1b1b89404838ff3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81445004"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535855"
 ---
 # <a name="vs-shell-deployment"></a>Implementación de VS Shell
 
-Un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre el shell aislado de Visual Studio, vea [Personalizar el shell aislado](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
+Un shell aislado le permite determinar qué funcionalidad de Visual Studio necesita para interactuar con el lenguaje específico del dominio y cómo debe aparecer esa solución. Para obtener más información sobre el shell aislado de Visual Studio, vea [personalizar el shell aislado](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
 
-Para establecer un Shell de Visual Studio como destino de implementación:
+Para establecer un shell de Visual Studio como destino de implementación:
 
-1. En el proyecto **DslPackage,** abra **source.extension.tt**.
+1. En el proyecto **DslPackage** , Abra **source.Extension.TT**.
 
-2. En `<SupportedProducts>` insertar:
+2. En `<SupportedProducts>` Insertar:
 
    ```xml
    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
    ```
 
-   Reemplace *MyIsolatedShell* por el nombre del paquete de shell aislado.
+   Reemplace *MyIsolatedShell* por el nombre del paquete de Shell aislado.

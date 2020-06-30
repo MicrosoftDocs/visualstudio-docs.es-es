@@ -1,7 +1,7 @@
 ---
-title: Buscar una dirección de correo electrónico en los contactos mediante programación
+title: Buscar una dirección de correo electrónico en contactos mediante programación
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328970"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537649"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedimiento Buscar una dirección de correo electrónico en los contactos mediante programación
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Cómo: buscar una dirección de correo electrónico en contactos mediante programación
   En este ejemplo se busca en una carpeta de contactos los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -34,8 +34,8 @@ ms.locfileid: "67328970"
 
 - Contactos que tengan el nombre de dominio **ejemplo.com** en sus direcciones de correo (por ejemplo, `somebody@example.com`) y que tengan nombres y apellidos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
-- [Cómo: Enviar correo electrónico](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Cómo: Acceso mediante programación a los contactos de Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Cómo: Agregar una entrada a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Cómo: enviar correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Cómo: obtener acceso a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Cómo: agregar una entrada a contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
