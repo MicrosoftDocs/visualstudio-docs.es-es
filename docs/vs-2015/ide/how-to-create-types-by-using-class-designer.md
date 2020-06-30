@@ -18,25 +18,25 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d05b8a492768dfe9163d7ede55c2bf4aef084c26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533151"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET, créelos en un diagrama de clases. Para ver los tipos existentes, vea [Cómo: Ver los tipos existentes (Diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md).
 
-- [Crear un tipo nuevo](#CreateType)
+- [Crear un nuevo tipo](#CreateType)
 
 - [Aplicar un atributo personalizado a un tipo](#CustAttributeType)
 
 - [Aplicar un atributo personalizado a un miembro de tipo](#CustAttributeMember)
 
-## <a name="CreateType"></a> Crear un tipo nuevo
+## <a name="create-a-new-type"></a><a name="CreateType"></a>Crear un nuevo tipo
 
 1. En el cuadro de herramientas, en Diseñador de clases, arrastre uno de estos a un diagrama de clase:
 
@@ -44,13 +44,13 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
     - **Enum**
 
-    - **Interface**
+    - **Interfaz**
 
     - **Estructura** (VB) o **Struct** (C#)
 
-    - **Delegate**
+    - **delegado**
 
-    - **Módulo** (solo en VB)
+    - **Módulo** (solo VB)
 
 2. Escriba un nombre para el tipo. Después seleccione su nivel de acceso.
 
@@ -64,9 +64,8 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
 4. Ahora agregue otros elementos para definir el tipo:
 
-    |||
+    |**Para**|**Add**|
     |-|-|
-    |**For**|**Add**|
     |Clases, clases abstractas, estructuras o structs|Métodos, propiedades, campos, eventos, constructores (método), destructores (método) y constantes que definen el tipo|
     |Enumeraciones|Valores de campo que constituyen la enumeración|
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|
@@ -75,7 +74,7 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
      Vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).
 
-## <a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo
 
 1. Haga clic en la forma del tipo en un diagrama de clases.
 
@@ -85,7 +84,7 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
      Cuando haya acabado, los atributos personalizados se aplicarán al tipo.
 
-## <a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Aplicar un atributo personalizado a un miembro de tipo
 
 1. Haga clic en el nombre del miembro, en la forma del tipo en un diagrama de clases o en la fila en la ventana Detalles de clase.
 
@@ -95,5 +94,5 @@ Para diseñar nuevos tipos para proyectos de Visual C# .NET y Visual Basic .NET,
 
      Cuando haya acabado, los atributos personalizados se aplicarán al tipo.
 
-## <a name="see-also"></a>Vea también
- [Cómo: crear la herencia entre tipos (diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md) [Cómo: crear asociaciones entre tipos (diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md) [crear y configurar miembros de tipo (diseñador de clases)](../ide/creating-and-configuring-type-members-class-designer.md) [trabajar con diagramas de clases (diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [Diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)
+## <a name="see-also"></a>Consulte también
+ [Cómo: crear la herencia entre tipos (diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md) [Cómo: crear asociaciones entre tipos (diseñador de clases)](../ide/how-to-create-associations-between-types-class-designer.md) [crear y configurar miembros de tipo (diseñador de clases)](../ide/creating-and-configuring-type-members-class-designer.md) [trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md) [diseñar clases y tipos (diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)

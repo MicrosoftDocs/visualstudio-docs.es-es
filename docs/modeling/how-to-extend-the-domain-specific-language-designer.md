@@ -1,18 +1,18 @@
 ---
 title: 'Cómo: Ampliar el diseñador de lenguajes específicos de dominio'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa03e43276c7c995c5f494c5325dd79716dcf998
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605593"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532591"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Cómo: Ampliar el diseñador de lenguajes específicos de dominio
 
@@ -68,7 +68,7 @@ Para probar cualquiera de las extensiones de este tema, compile y ejecute la sol
 
 Para implementar las extensiones en la principal de Visual Studio y en otros equipos, siga estos pasos:
 
-1. Busque el archivo de instalación VSIX, en el Proyecto VSIX en bin \\ * \\ \*. vsix
+1. Busque el archivo de instalación VSIX en el Proyecto VSIX en bin \\ * \\ \* . vsix
 
 2. Copie este archivo en el equipo de destino y, a continuación, en el explorador de Windows (o el explorador de archivos), haga doble clic en él.
 
@@ -84,7 +84,7 @@ Para desinstalar la extensión, siga estos pasos:
 
 Para que aparezca un comando de menú contextual en la superficie Diseñador DSL o en la ventana Explorador de DSL, escriba una clase similar a la siguiente.
 
-La clase debe implementar `ICommandExtension` y debe tener el atributo `DslDefinitionModelCommandExtension`.
+La clase debe implementar `ICommandExtension` y debe tener el atributo `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un host de plantillas de texto personalizadas'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593543"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532228"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
 
@@ -51,9 +51,9 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
 
 2. Agregue referencias a los siguientes ensamblados:
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft. VisualStudio. TextTemplating. \* . 0,1**
 
-   - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 y versiones posteriores**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**
 
 3. Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:
 
@@ -714,7 +714,7 @@ En este tutorial, creará un host personalizado en una aplicación ejecutable a 
    End Namespace
    ```
 
-4. Solo para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
+4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Solo para, abra el menú **proyecto** y haga clic en **propiedades de CustomHost**. En la lista **objeto de inicio** , haga clic en **CustomHost. Program**.
 
 5. En el menú **Archivo**, haga clic en **Guardar todo**.
 
@@ -726,11 +726,11 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt`.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplate.tt` .
 
      Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.
 
-2. Agregue el siguiente código al archivo:
+2. Agregue lo siguiente al archivo:
 
     > [!NOTE]
     > El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.
@@ -777,7 +777,7 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 ### <a name="to-test-the-custom-host"></a>Para probar el host personalizado
 
-1. Abra la ventana del símbolo del sistema.
+1. Abra la ventana de símbolo del sistema.
 
 2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 
@@ -786,7 +786,7 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo CustomHost. exe en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows** y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
 3. Escriba un espacio.
 
@@ -821,6 +821,6 @@ Para probar el host personalizado, escriba una plantilla de texto, ejecute el ho
 
 En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, vea [Tutorial: conectar un host a un procesador de directivas generado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

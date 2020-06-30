@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Generar código mediante plantillas de texto'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -10,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593514"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532065"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 
@@ -28,7 +28,7 @@ El espacio de nombres System.Xml proporciona herramientas completas para cargar 
 En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.
 
 > [!NOTE]
-> La aplicación [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que se incluye con Visual Studio, puede generar clases fuertemente tipadas a partir de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
+> El [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)de la aplicación, que se incluye con Visual Studio, puede generar clases fuertemente tipadas a partir de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
 
 Este es el archivo de ejemplo:
 
@@ -83,7 +83,7 @@ En este proyecto, se usa un solo archivo de plantilla para generar las clases qu
 
 Puede aplicar esta técnica a cualquier proyecto de código. En este tutorial se usa un proyecto de C#, mientras que para la realización de las pruebas se usa una aplicación de consola.
 
-1. En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.
+1. En el menú **archivo** , haga clic en **nuevo** y luego haga clic en **proyecto**.
 
 2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.
 
@@ -93,7 +93,7 @@ El propósito de este archivo es proporcionar ejemplos de los tipos de nodo XML 
 
 El archivo debe formar parte del proyecto para que la plantilla pueda leerlo, pero no se integrará en la aplicación compilada.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto, haga clic en **Agregar** y, a continuación, en **nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .
 
@@ -270,7 +270,7 @@ Usando este mismo enfoque se pueden agregar más detalles, como propiedades de l
 
 ### <a name="access-the-visual-studio-api"></a>Acceso a la API de Visual Studio
 
-Establecer el atributo `hostspecific` de la Directiva `<#@template#>` permite que la plantilla obtenga acceso a la API de Visual Studio. De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
+Al establecer el `hostspecific` atributo de la `<#@template#>` Directiva, la plantilla puede obtener acceso a la API de Visual Studio. De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -428,7 +428,7 @@ En este tutorial, el código de programa se genera realmente desde una instancia
 
 Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)

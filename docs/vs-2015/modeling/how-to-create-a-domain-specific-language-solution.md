@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918821"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533086"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] especializada.
+Un lenguaje específico de dominio (DSL) se crea mediante una solución especializada [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="prerequisites"></a>Requisitos previos
  Para poder iniciar este procedimiento, primero debe instalar estos componentes:
 
-|||
+|Producto|Vínculo de descarga|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|SDK de visualización y modelado de Visual Studio|[Descarga del SDK de modelado](https://www.microsoft.com/download/details.aspx?id=48148)|
+|SDK de Visual Studio de visualización y modelado|[Descarga del SDK de modelado](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje específico de dominio
 
@@ -42,7 +42,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 
 1. Inicie el Asistente para DSL.
 
-   1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
+   1. En el menú **Archivo** , seleccione **Nuevo**y haga clic en **Proyecto**.
 
    2. Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
@@ -55,9 +55,9 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
        Aparece el **Asistente para diseñador de lenguaje específico de dominio** .
 
       > [!NOTE]
-      > Preferiblemente, el nombre que escriba debe ser un identificador visual C# válido, ya que se podría usar para generar código.
+      > Preferiblemente, el nombre que escriba debe ser un identificador válido de Visual C#, ya que se podría usar para generar código.
 
-      ![Cuadro de diálogo crear DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
+      ![Cuadro de diálogo para crear solución DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
 2. Elija una plantilla DSL.
 
@@ -67,9 +67,9 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 
 3. Escriba una extensión de nombre de **archivo** en la página extensión de archivo. Debe ser único en el equipo y en todos los equipos en los que desee instalar el DSL. Debería ver el mensaje **no hay aplicaciones ni editores de Visual Studio que usen esta extensión**.
 
-   - Si ha usado la extensión de nombre de archivo en DSL experimentales anteriores que no se han instalado completamente, puede borrarlas mediante la herramienta **restablecer la instancia experimental** , que se encuentra en el menú [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
+   - Si ha usado la extensión de nombre de archivo en DSL experimentales anteriores que no se han instalado completamente, puede borrarlas mediante la herramienta **restablecer la instancia experimental** , que se puede encontrar en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menú del SDK.
 
-   - Si otra extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa esta extensión de archivo se ha instalado completamente en el equipo, considere la posibilidad de desinstalarla. En el menú **herramientas** , haga clic en **Administrador de extensiones**.
+   - Si otra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se ha instalado completamente en el equipo, considere la posibilidad de desinstalarla. En el menú **herramientas** , haga clic en **Administrador de extensiones**.
 
 4. Inspeccione y, si es necesario, ajuste los campos en las páginas restantes del asistente. Cuando esté satisfecho con la configuración, haga clic en **Finalizar**. Para obtener más información sobre la configuración, vea [Diseñador DSL páginas del asistente](#settings).
 
@@ -78,7 +78,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
    > [!NOTE]
    > Si ve un mensaje que le avisa de que no desea ejecutar plantillas de texto de orígenes que no son de confianza, haga clic en **Aceptar**. Puede establecer que este mensaje no vuelva a aparecer.
 
-## <a name="settings"></a>Páginas del Asistente para Diseñador DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Páginas del Asistente para Diseñador DSL
  Puede dejar algunos de los campos sin modificar con respecto a sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.
 
 ### <a name="solution-settings-page"></a>Página de configuración de la solución
@@ -86,7 +86,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de [!INC
 Elija una plantilla similar a la del DSL que desea crear. Las distintas plantillas proporcionan puntos de partida útiles. Al seleccionar una plantilla de solución, el asistente muestra una descripción. Para obtener más información acerca de las plantillas de solución, consulte [elegir una plantilla de solución de lenguaje específico de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **¿Qué nombre desea asignar a su lenguaje específico de dominio?**
-El valor predeterminado es el nombre de la solución. El código se genera a partir de este valor. Debe ser válido como nombre de C# clase.
+El valor predeterminado es el nombre de la solución. El código se genera a partir de este valor. Debe ser válido como un nombre de clase de C#.
 
 ### <a name="file-extension-page"></a>Página extensión de archivo
  **¿Qué extensión deben usar los archivos de modelo?**
@@ -102,11 +102,11 @@ Escriba una nueva extensión de archivo.
 
      \- o -
 
-- Restablezca el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia experimental. Esto anulará el registro de todos los DSL que ha creado previamente. En el menú **Inicio** , haga clic en **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**. Puede volver a generar cualquier otro DSL que desee utilizar de nuevo.
+- Restablezca la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia experimental. Esto anulará el registro de todos los DSL que ha creado previamente. En el menú **Inicio** , haga clic en **todos los programas**, **Microsoft Visual Studio SDK de 2010**, **herramientas**y, a continuación, **restablezca la instancia experimental de Microsoft Visual Studio 2010**. Puede volver a generar cualquier otro DSL que desee utilizar de nuevo.
 
      \- o -
 
-- Si una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa esta extensión de archivo se ha instalado completamente en el equipo, desinstálelo. En el menú **herramientas** , haga clic en **Administrador de extensiones**.
+- Si una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se ha instalado completamente en el equipo, desinstálelo. En el menú **herramientas** , haga clic en **Administrador de extensiones**.
 
 ### <a name="product-settings-page"></a>Página de configuración del producto
  **¿Cuál es el nombre del producto al que pertenece el nuevo lenguaje específico del dominio?**
@@ -129,5 +129,5 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md) [herramientas del lenguaje específico de dominio Glosario](/previous-versions/bb126564(v=vs.100))
