@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299916"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542992"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 
@@ -38,9 +38,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 - [Administración del ciclo de vida de las aplicaciones](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-## <a name="BKMK_WindowMgmt"></a> Administración de ventanas
+## <a name="window-management"></a><a name="BKMK_WindowMgmt"></a> Administración de ventanas
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Arrastrar cuadros de pestaña flotantes|Ctrl+clic para selección múltiple|
 |Maximizar la ventana flotante|Doble clic en la barra de título|
@@ -49,9 +49,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Mostrar la lista de archivos abiertos|Ctrl+Alt+Abajo|
 |Mostrar todas las ventanas flotantes|Ctrl+Mayús+M|
 
-## <a name="BKMK_WindowShortcuts"></a> Accesos directos de ventanas
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Accesos directos a ventanas
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Mover o anclar ventanas flotantes|Win+Izquierda/Win+Derecha|
 |Maximizar o minimizar ventanas|Win+Arriba/Win+Abajo|
@@ -59,9 +59,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Iniciar nueva instancia|Win+Mayús+n|
 |Cambiar entre ventanas|Win+n|
 
-## <a name="BKMK_Search"></a> Búsqueda en Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Búsqueda en Visual Studio
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Búsqueda en el Explorador de soluciones|Ctrl+;|
 |Colocar el foco en el cuadro de búsqueda de cualquier ventana de herramientas|Alt+` cuando la ventana de herramientas tiene el foco|
@@ -69,12 +69,12 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
 |Buscar en opciones de herramientas|Ctrl+T|
 
-## <a name="BKMK_EditorFind"></a> Búsqueda en el editor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Búsqueda de editor
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Búsqueda rápida|Ctrl+F|
-|Búsqueda rápida: resultado siguiente|Entrar|
+|Búsqueda rápida: resultado siguiente|Escriba|
 |Búsqueda rápida: resultado anterior|Mayús+Entrar|
 |Búsqueda rápida: expandir lista desplegable|Alt+Flecha abajo|
 |Descartar búsqueda|Esc|
@@ -84,9 +84,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Buscar en archivos|Ctrl+Mayús+F|
 |Reemplazar en archivos|Ctrl+Mayús+H|
 
-## <a name="BKMK_CodeEditor"></a> Editor de código
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Editor de código
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Modo de sugerencia de IntelliSense|Ctrl+Alt+Espacio (alternancia)|
 |Forzar la visualización de IntelliSense|Ctrl+J|
@@ -96,53 +96,53 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Mostrar información rápida|Ctrl+K, I|
 |Navegar a|Ctrl+,|
 |Ir a definición|F12|
-|Definición de Peek|Alt+F12|
+|Ver la definición|Alt+F12|
 |Ir a la pila de definiciones|Ctrl+Mayús+8 (Atrás), Ctrl+Mayús+7 (Adelante)|
 |Navegar por las referencias resaltadas|Ctrl+Mayús+Arriba (Anterior), Ctrl+Mayús+Abajo (Siguiente)|
 |Zoom del editor|Ctrl+Mayús+> (entrada), Ctrl+Mayús+< (salida)|
 |Selección de bloques|Mantenga presionada la tecla Alt mientras arrastra el mouse, Mayús+Alt+teclas de dirección|
 |Subir o bajar línea|Alt+Arriba/Alt+Abajo|
-|Definición de Peek|Alt+F12|
+|Ver la definición|Alt+F12|
 |Cerrar la ventana Definición de Peek|Esc|
 |Promover la ventana Definición de Peek a una pestaña de documento normal|Ctrl+Alt+Inicio|
 |Navegar entre varias ventanas Definición de Peek|Ctrl+Alt+- y Ctrl+Alt+=|
 |Navegar entre varios resultados de Peek|F8 y Mayús+F8|
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|Mayús+Esc|
 
-## <a name="BKMK_Toolbars"></a> Barras de herramientas
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barras
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Agregar botones|Clic en el botón de desbordamiento de la barra de herramientas|
 |Cuadro combinado de búsqueda de la barra de herramientas Estándar|Ctrl+D|
 |Modo de comando del cuadro de texto de búsqueda|Escribir “>”|
 |Crear nuevo alias|Comando >alias NewAlias|
 
-## <a name="BKMK_Debugging"></a> Depuración
+## <a name="debugging"></a><a name="BKMK_Debugging"></a> Depuración
 
-|||
+|Comando|Acceso directo|
 |-|-|
 |Iniciar depuración|F5|
 |Habilitar herramientas de diagnóstico durante la depuración|Mayús+F5|
 |Reiniciar la depuración|Ctrl+Mayús+F5|
 |Paso a paso por procedimientos|F10|
 |Paso a paso por instrucciones|F11|
-|Paso a paso para salir|Mayús+F11|
+|Depurar paso a paso para salir|Mayús+F11|
 |Ejecutar hasta el cursor|Ctrl+F10|
 |Establecer instrucción siguiente|Ctrl+Mayús+F10|
 |Establecer o alternar punto de interrupción|F9|
 |Deshabilitar punto de interrupción|Ctrl+F9|
-|Inmediato (ventana)|Ctrl+Alt+I|
+|Ventana Inmediato|Ctrl+Alt+I|
 |Modo de comandos de la ventana Inmediato|Escribir “>”|
 |Borrar búfer de la ventana Inmediato|>cls|
 |Imprimir valor de la ventana Inmediato|?varname|
 
-## <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Administración del ciclo de vida de las aplicaciones
 
 Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
 
-- [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/) (Blog de Visual Studio)
-- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.microsoft.com/zainnab/) (Blog de sugerencias y trucos de Visual Studio)
-- [Visual Studio Toolbox on Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)
+- [Blog de Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Visual Studio Tips and Tricks Blog (Blog de sugerencias y trucos de Visual Studio)](https://blogs.msdn.microsoft.com/zainnab/)
+- [Visual Studio Toolbox on Channel 9 (Herramientas de Visual Studio en Channel 9)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

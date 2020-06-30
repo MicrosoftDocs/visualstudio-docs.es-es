@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar controles NamedRange a hojas de cálculo
+title: 'Cómo: agregar controles NamedRange a hojas de cálculo'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bd5f9763150cf526acca2dfdc2762b3f202950a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255610"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543526"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedimiento Agregar controles NamedRange a hojas de cálculo
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Cómo: agregar controles NamedRange a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución, en los proyectos de nivel de documento.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "71255610"
 
 - [Agregar controles NamedRange en tiempo de ejecución en un proyecto de complemento de VSTO](#runtimeaddin)
 
-  Para obtener más información <xref:Microsoft.Office.Tools.Excel.NamedRange> sobre los controles, vea [NamedRange (control](../vsto/namedrange-control.md)).
+  Para obtener más información sobre <xref:Microsoft.Office.Tools.Excel.NamedRange> los controles, vea [NamedRange (control](../vsto/namedrange-control.md)).
 
-## <a name="designtime"></a>Agregar controles NamedRange en tiempo de diseño
+## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a>Agregar controles NamedRange en tiempo de diseño
  Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas**de Visual Studio y desde la ventana **Orígenes de datos** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "71255610"
 
      Un control <xref:Microsoft.Office.Tools.Excel.NamedRange> enlazado a los datos se agrega a la hoja de cálculo. Para obtener más información, consulte [enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a>Agregar controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento
+## <a name="add-namedrange-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Agregar controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento
  Puede agregar un control <xref:Microsoft.Office.Tools.Excel.NamedRange> mediante programación a la hoja de cálculo en tiempo de ejecución. Esto le permite crear los controles host en respuesta a eventos. Los rangos con nombre creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando esta se cierra. Para obtener más información, vea [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Para agregar un control NamedRange a una hoja de cálculo mediante programación
@@ -83,7 +83,7 @@ ms.locfileid: "71255610"
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-## <a name="runtimeaddin"></a>Agregar controles NamedRange en tiempo de ejecución en un proyecto de complemento de VSTO
+## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Agregar controles NamedRange en tiempo de ejecución en un proyecto de complemento de VSTO
  Puede agregar un control <xref:Microsoft.Office.Tools.Excel.NamedRange> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento de VSTO. Los rangos con nombre creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando esta se cierra. Para obtener más información, vea [ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Para agregar un control NamedRange a una hoja de cálculo mediante programación
@@ -93,11 +93,11 @@ ms.locfileid: "71255610"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Ampliar documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
-- [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)
+- [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)
 - [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

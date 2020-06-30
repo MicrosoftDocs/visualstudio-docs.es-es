@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Ocultar texto en documentos mediante programación
+title: 'Cómo: Ocultar texto en documentos mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812773"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543317"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Procedimiento Ocultar texto en documentos mediante programación
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Cómo: Ocultar texto en documentos mediante programación
   Puede ocultar texto en un documento si establece la propiedad <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> de <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para un determinado rango de texto.
 
  Por ejemplo, puede ocultar temporalmente el texto dentro de un <xref:Microsoft.Office.Tools.Word.Bookmark> (en una personalización de nivel de documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> (en un complemento de VSTO) antes de enviar un documento a una impresora.
@@ -52,11 +52,11 @@ ms.locfileid: "62812773"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
 
 ## <a name="compile-the-code"></a>Compilar el código
- Este ejemplo de código se da por supuesto que el documento contiene un <xref:Microsoft.Office.Tools.Word.Bookmark> control (en una personalización de nivel de documento) o <xref:Microsoft.Office.Interop.Word.Bookmark> control (en un complemento de VSTO) que se denomina `bookmark1`.
+ En este ejemplo de código se da por supuesto que el documento contiene un <xref:Microsoft.Office.Tools.Word.Bookmark> control (en una personalización de nivel de documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> control (en un complemento de VSTO) que se denomina `bookmark1` .
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)
-- [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Cómo: Mediante programación restablecer intervalos en documentos de Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Cómo: Actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)
+- [Cómo: definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Cómo: restablecer intervalos en documentos de Word mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Cómo: actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

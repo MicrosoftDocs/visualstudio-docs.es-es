@@ -15,26 +15,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: fe6b90ef971bd00392381f47860d85f34e10dc26
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919176"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544032"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Los identificadores no deberían contener subrayado
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Los identificadores no deben contener caracteres de subrayado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1707: los identificadores no deben contener guiones bajos](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |Identificador de comprobación|CA1707|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático: cuando se produce en ensamblados<br /><br /> No problemático: cuando se produce en parámetros de tipo|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El nombre de un identificador contiene el carácter de subrayado (_).
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -49,6 +49,6 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1707: l
  No suprima las advertencias de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Los identificadores se deben diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

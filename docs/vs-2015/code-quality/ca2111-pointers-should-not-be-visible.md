@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658735"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544370"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Los punteros no deberían estar visibles
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Los punteros no deben estar visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |Identificador de comprobación|CA2111|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un campo <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> público o protegido no es de solo lectura.
+## <a name="cause"></a>Causa
+ Un campo público o protegido <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> no es de solo lectura.
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.IntPtr> y <xref:System.UIntPtr> son tipos de puntero que se utilizan para tener acceso a la memoria no administrada. Si un puntero no es privado, interno o de solo lectura, el código malintencionado puede cambiar el valor del puntero, permitiendo potencialmente el acceso a ubicaciones arbitrarias en memoria o provocando errores del sistema o de la aplicación.
+ <xref:System.IntPtr>y <xref:System.UIntPtr> son tipos de puntero que se usan para tener acceso a la memoria no administrada. Si un puntero no es privado, interno o de solo lectura, el código malintencionado puede cambiar el valor del puntero, permitiendo potencialmente el acceso a ubicaciones arbitrarias en memoria o provocando errores del sistema o de la aplicación.
 
  Si desea proteger el acceso al tipo que contiene el campo de puntero, vea [CA2112: los tipos seguros no deben exponer los campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
@@ -52,9 +52,9 @@ ms.locfileid: "72658735"
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2112: Los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: Los tipos seguros no deben exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
  [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

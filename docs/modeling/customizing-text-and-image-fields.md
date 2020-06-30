@@ -1,26 +1,26 @@
 ---
 title: Personalizar campos de texto y de imagen
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d3a3e1995dbc36b02d90da6343e8cc9a6d48eba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748451"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542719"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizar campos de texto y de imagen
 Al definir un decorador de texto en una forma, se representa mediante un TextField. Para obtener ejemplos de la inicialización de TextFields y otros ShapeFields, inspeccione Dsl\GeneratedCode\Shapes.cs en la solución DSL.
 
- Un TextField es un objeto que administra un área dentro de una forma, como el espacio asignado a una etiqueta. Una instancia de TextField se comparte entre muchas formas de la misma clase. La instancia de TextField no almacena el texto de la etiqueta por separado para cada instancia: en su lugar, el método `GetDisplayText(ShapeElement)` toma la forma como parámetro y puede buscar el texto en función del estado actual de la forma y su elemento de modelo.
+ Un TextField es un objeto que administra un área dentro de una forma, como el espacio asignado a una etiqueta. Una instancia de TextField se comparte entre muchas formas de la misma clase. La instancia de TextField no almacena el texto de la etiqueta por separado para cada instancia: en su lugar, el `GetDisplayText(ShapeElement)` método toma la forma como parámetro y puede buscar el texto en función del estado actual de la forma y su elemento de modelo.
 
 ## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Cómo se determina la apariencia de un campo de texto
- Se llama al método `DoPaint()` para mostrar el campo en la pantalla. Puede invalidar el `DoPaint(),` predeterminado o puede invalidar algunos de los métodos a los que llama. La siguiente versión simplificada de los métodos predeterminados puede ayudarle a entender cómo invalidar el comportamiento predeterminado:
+ `DoPaint()`Se llama al método para mostrar el campo en la pantalla. Puede invalidar el valor predeterminado `DoPaint(),` o puede invalidar algunos de los métodos a los que llama. La siguiente versión simplificada de los métodos predeterminados puede ayudarle a entender cómo invalidar el comportamiento predeterminado:
 
 ```csharp
 // Simplified version:
@@ -80,15 +80,15 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
 ```
 
- Hay varios otros pares de métodos `Get` y propiedades de `Default`, como `DefaultMultipleLine/GetMultipleLine()`. Puede asignar un valor a la propiedad predeterminada para cambiar el valor de todas las instancias del campo de forma. Para que el valor varíe de una instancia de forma a otra, o depende del estado de la forma o su elemento de modelo, invalide el método `Get`.
+ Hay varios otros pares de `Get` métodos y `Default` propiedades, como `DefaultMultipleLine/GetMultipleLine()` . Puede asignar un valor a la propiedad predeterminada para cambiar el valor de todas las instancias del campo de forma. Para que el valor varíe de una instancia de forma a otra, o depende del estado de la forma o su elemento de modelo, invalide el `Get` método.
 
 ## <a name="static-customizations"></a>Personalizaciones estáticas
  Si desea cambiar todas las instancias de este campo de forma, averigüe primero si puede establecer la propiedad en la definición de DSL. Por ejemplo, puede establecer el tamaño y el estilo de la fuente en el ventana Propiedades.
 
- Si no es así, invalide el método `InitializeShapeFields` de la clase Shape y asigne un valor a la propiedad `Default...` adecuada del campo de texto.
+ Si no es así, invalide el `InitializeShapeFields` método de la clase de forma y asigne un valor a la `Default...` propiedad adecuada del campo de texto.
 
 > [!WARNING]
-> Para invalidar `InitializeShapeFields()`, debe establecer la propiedad **Generate Double derived** de la clase shape en `true` en la definición de DSL.
+> Para invalidar `InitializeShapeFields()` , debe establecer la propiedad **Generate Double derived** de la clase Shape en `true` en la definición de DSL.
 
  En este ejemplo, una forma tiene un campo de texto que se usará para los comentarios de los usuarios. Queremos usar la fuente de comentarios estándar. Dado que es una fuente estándar del conjunto de estilos, se puede establecer el identificador de fuente predeterminado:
 
@@ -106,7 +106,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 ```
 
 ## <a name="dynamic-customizations"></a>Personalizaciones dinámicas
- Para que la apariencia varíe en función del estado de una forma o de su elemento de modelo, derive su propia subclase de `TextField` e invalide uno o varios métodos de `Get...`. También debe invalidar el método InitializeShapeFields de la forma y reemplazar la instancia del TextField por una instancia de su propia clase.
+ Para que la apariencia varíe en función del estado de una forma o de su elemento de modelo, derive su propia subclase de `TextField` e invalide uno o más `Get...` métodos. También debe invalidar el método InitializeShapeFields de la forma y reemplazar la instancia del TextField por una instancia de su propia clase.
 
  En el ejemplo siguiente se hace que la fuente de un campo de texto dependa del estado de una propiedad de dominio booleana del elemento de modelo de la forma.
 
@@ -170,12 +170,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="style-sets"></a>Conjuntos de estilos
  En el ejemplo anterior se muestra cómo se puede cambiar el campo de texto a cualquier fuente que esté disponible. Sin embargo, un método preferible es cambiarlo a uno de un conjunto de estilos que está asociado con la forma o con la aplicación. Para ello, invalide <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> o GetTextBrushId ().
 
- Como alternativa, considere la posibilidad de cambiar el conjunto de estilos de la forma invalidando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Esto tiene el efecto de cambiar las fuentes y los pinceles de todos los campos de forma.
+ Como alternativa, considere la posibilidad de cambiar el conjunto de estilos de la forma invalidando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> . Esto tiene el efecto de cambiar las fuentes y los pinceles de todos los campos de forma.
 
 ## <a name="customizing-image-fields"></a>Personalizar campos de imagen
  Al definir un decorador de imagen en una forma, y al definir una forma de imagen, el área en la que se muestra la forma se administra mediante un ImageField. Para obtener ejemplos de la inicialización de ImageFields y otros ShapeFields, revise Dsl\GeneratedCode\Shapes.cs en la solución DSL.
 
- Un ImageField es un objeto que administra un área dentro de una forma, como el espacio asignado a un elemento Decorator. Una instancia de ImageField se comparte entre muchas formas de la misma clase Shape. La instancia de ImageField no almacena una imagen independiente para cada forma: en su lugar, el método `GetDisplayImage(ShapeElement)` toma la forma como parámetro y puede buscar la imagen en función del estado actual de la forma y su elemento de modelo.
+ Un ImageField es un objeto que administra un área dentro de una forma, como el espacio asignado a un elemento Decorator. Una instancia de ImageField se comparte entre muchas formas de la misma clase Shape. La instancia de ImageField no almacena una imagen independiente para cada forma: en su lugar, el `GetDisplayImage(ShapeElement)` método toma la forma como parámetro y puede buscar la imagen en función del estado actual de la forma y su elemento de modelo.
 
  Si desea un comportamiento especial, como una imagen variable, puede crear su propia clase derivada de ImageField.
 
@@ -183,19 +183,19 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 1. Establezca la propiedad **genera Double derived** de la clase de forma primaria en la definición de DSL.
 
-2. Invalide el método `InitializeShapeFields` de la clase Shape.
+2. Invalide el `InitializeShapeFields` método de la clase Shape.
 
     - Cree un nuevo archivo de código en el proyecto DSL y escriba una definición de clase parcial para la clase Shape. Invalide la definición de método.
 
 3. Inspeccione el código de `InitializeShapeFields` en DSL\GeneratedCode\Shapes.cs.
 
-     En el método de invalidación, llame al método base y, a continuación, cree una instancia de su propia clase de campo de imagen. Úselo para reemplazar el campo imagen normal de la lista de `shapeFields`.
+     En el método de invalidación, llame al método base y, a continuación, cree una instancia de su propia clase de campo de imagen. Úselo para reemplazar el campo de imagen normal de la `shapeFields` lista.
 
 ## <a name="dynamic-icons"></a>Iconos dinámicos
  En este ejemplo se realiza un cambio de icono que depende del estado del elemento de modelo de la forma.
 
 > [!WARNING]
-> En este ejemplo se muestra cómo crear un decorador de imagen dinámica. Pero si solo desea cambiar entre una o dos imágenes en función del estado de una variable de modelo, es más fácil crear varios decoradores de imagen, ubicarlos en la misma posición en la forma y, a continuación, establecer el filtro de visibilidad para que dependa de valores específicos del modelo. variable. Para establecer este filtro, seleccione el mapa de formas en la definición de DSL, abra la ventana de detalles de DSL y haga clic en la pestaña decoradores.
+> En este ejemplo se muestra cómo crear un decorador de imagen dinámica. Pero si solo desea cambiar entre una o dos imágenes en función del estado de una variable de modelo, es más fácil crear varios decoradores de imagen, ubicarlos en la misma posición en la forma y, a continuación, establecer el filtro de visibilidad para que dependa de valores específicos de la variable de modelo. Para establecer este filtro, seleccione el mapa de formas en la definición de DSL, abra la ventana de detalles de DSL y haga clic en la pestaña decoradores.
 
  Para ejecutar este código de ejemplo, cree una nueva solución de DSL con la plantilla de idioma mínima. Agregue una propiedad de dominio booleana `AlternateState` a la clase de dominio ExampleElement. Agregue un elemento Decorator de icono a la clase ExampleShape y establezca su imagen en un archivo de mapa de bits. Haga clic en **transformar todas las plantillas**. Agregue un nuevo archivo de código en el proyecto DSL e inserte el código siguiente.
 
@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 - [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

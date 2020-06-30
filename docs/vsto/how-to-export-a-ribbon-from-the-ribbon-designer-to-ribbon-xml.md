@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Exportar una cinta desde el Diseñador de cinta al XML de cinta
+title: 'Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,55 +18,55 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419490"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543473"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedimiento Exportar una cinta desde el Diseñador de cinta al XML de cinta
-  El **cinta (diseñador Visual)** elemento no admite todos los tipos posibles de personalización de la cinta. Para personalizar la cinta de maneras avanzadas, puede exportar la cinta de opciones desde el diseñador al XML de cinta y editar directamente el XML.
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta
+  El elemento **cinta (diseñador visual)** no admite todos los tipos posibles de personalización de la cinta de opciones. Para personalizar la cinta de modo avanzado, puede exportar la cinta de opciones del diseñador al XML de la cinta y editar directamente el XML.
 
 > [!NOTE]
-> No todos los valores de propiedad aparecen en el archivo XML de cinta de opciones. Para obtener más información, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).
+> No todos los valores de propiedad aparecen en el archivo XML de la cinta. Para obtener más información, vea [información general sobre la cinta](../vsto/ribbon-overview.md)de opciones.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar una cinta de opciones desde el Diseñador de cinta de opciones a XML de cinta de opciones
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta
 
-1. Haga clic en el archivo de código de la cinta de opciones en **el Explorador de soluciones**y, a continuación, haga clic en **Diseñador de vistas**.
+1. Haga clic con el botón secundario en el archivo de código de la cinta de **Explorador de soluciones**y, a continuación, haga clic en **Ver diseñador**.
 
-2. Haga clic en el Diseñador de cinta y, a continuación, haga clic en **exportar cinta de opciones a XML**.
+2. Haga clic con el botón secundario en el diseñador de la cinta y, a continuación, haga clic en **exportar cinta a XML**.
 
-     Visual Studio agrega un archivo XML de cinta de opciones y un archivo de código XML de cinta de opciones al proyecto.
+     Visual Studio agrega un archivo XML de la cinta de opciones y un archivo de código XML de la cinta de opciones al proyecto.
 
-3. En la clase de código de la cinta de opciones, busque los comentarios que comienzan con `TODO:`.
+3. En la clase de código de la cinta de opciones, busque los comentarios que comienzan por `TODO:` .
 
-4. Copie el bloque de código de estos comentarios para el **ThisAddin**, **ThisWorkbook**, o **ThisDocument** clase, dependiendo de qué tipo de solución que está desarrollando.
+4. Copie el bloque de código de estos comentarios a la clase **ThisAddIn**, **ThisWorkbook**o **ThisDocument** , en función del tipo de solución que esté desarrollando.
 
-     Este código permite que la aplicación de Microsoft Office detecte y cargue la cinta de opciones personalizada. Para obtener más información, consulta [Ribbon XML](../vsto/ribbon-xml.md).
+     Este código permite a la aplicación Microsoft Office detectar y cargar la cinta de opciones personalizada. Para obtener más información, consulta [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. En el **ThisAddin**, **ThisWorkbook**, o **ThisDocument** class, quite el bloque de código.
+5. En la clase **ThisAddIn**, **ThisWorkbook**o **ThisDocument** , quite el comentario del bloque de código.
 
-     Una vez que quite el código, debe ser similar a en el ejemplo siguiente. En este ejemplo, se llama a la clase Ribbon `MyRibbon`.
+     Después de quitar el comentario del código, debería ser similar al ejemplo siguiente. En este ejemplo, se llama a la clase Ribbon `MyRibbon` .
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. Cambie al archivo de código XML de cinta de opciones y encontrar el `Ribbon Callbacks` región.
+6. Cambie al archivo de código XML de la cinta de opciones y busque la `Ribbon Callbacks` región.
 
-     Esto es donde se escriben métodos de devolución de llamada para controlar las acciones del usuario, como hacer clic en un botón.
+     Aquí es donde se escriben los métodos de devolución de llamada para controlar las acciones del usuario, como hacer clic en un botón.
 
-7. Cree un método de devolución de llamada para cada controlador de eventos que escribió en el código del Diseñador de cinta.
+7. Cree un método de devolución de llamada para cada controlador de eventos que escribió en el código del diseñador de la cinta de opciones.
 
-8. Mover todo el código de controlador de eventos de los controladores de eventos a los métodos de devolución de llamada y modifique el código para trabajar con el modelo de programación de extensibilidad de la cinta de opciones (RibbonX).
+8. Mueva todo el código del controlador de eventos de los controladores de eventos a los métodos de devolución de llamada y modifique el código para que funcione con el modelo de programación de extensibilidad de la cinta de opciones (RibbonX).
 
-     Para obtener información sobre cómo escribir métodos de devolución de llamada y utilizando el modelo de programación de extensibilidad, vea [Ribbon XML](../vsto/ribbon-xml.md).
+     Para obtener información sobre cómo escribir métodos de devolución de llamada y cómo usar el modelo de programación RibbonX, vea [XML de la cinta](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Vea también
-- [Información general de la cinta de opciones](../vsto/ribbon-overview.md)
+## <a name="see-also"></a>Consulte también
+- [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

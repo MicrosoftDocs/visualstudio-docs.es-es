@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a3a3e68874bb3295f6696bbdadb3c470a7f2a4ad
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543928"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 ## <a name="what-do-you-want-to-do"></a>¿Qué desea hacer?  
   
-|||  
+|Escenario|Artículos|  
 |-|-|  
 |**Depurar la aplicación con IntelliTrace:**<br /><br /> -Mostrarme eventos anteriores.<br />-Mostrar información de llamadas con eventos anteriores.<br />-Guardar mi sesión de IntelliTrace.<br />-Controlar los datos que IntelliTrace recopila.|-   [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Características de IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurar IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Depuración histórica](../debugger/historical-debugging.md)|  
 |**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|-   [Recopilar más datos de diagnóstico en pruebas manuales](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -55,11 +55,11 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> ¿Qué aplicaciones se pueden depurar con IntelliTrace?  
   
-|||  
+|Nivel de compatibilidad|Tipos de aplicación|  
 |-|-|  
-|**Compatible**|-Visual Basic y aplicaciones de Visual C# que usan .NET Framework 2,0 o versiones posteriores.<br />     Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br />     Para depurar aplicaciones de SharePoint con IntelliTrace, vea [Tutorial: depurar una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar Microsoft Azure aplicaciones con IntelliTrace, vea [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Compatible**|-Visual Basic y aplicaciones de Visual C# que usan .NET Framework 2,0 o versiones posteriores.<br />     Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br />     Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: Depuración de una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar aplicaciones de Microsoft Azure con IntelliTrace, consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Compatibilidad limitada**|-Aplicaciones de F # de manera experimental<br />-Aplicaciones de la tienda Windows admitidas solo para eventos|  
-|**No compatible**|-C++, otros lenguajes y script<br />-Servicios de Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicaciones|  
+|**No admitido**|-C++, otros lenguajes y script<br />-Servicios de Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicaciones|  
   
 > [!NOTE]
 > Si desea depurar un proceso que se está ejecutando, no puede usar IntelliTrace. Debe iniciar IntelliTrace cuando comience el proceso.  
@@ -67,7 +67,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
 ## <a name="why-debug-with-intellitrace"></a><a name="IntelliTraceVSTraditional"></a> ¿Por qué realizar la depuración con IntelliTrace?  
  La depuración tradicional o en *directo* solo muestra el estado actual de la aplicación, con datos limitados sobre eventos pasados. Estos eventos deben inferirse basándose en el estado actual de la aplicación o hay que recrearlos ejecutando de nuevo la aplicación.  
   
- IntelliTrace amplía esta experiencia de depuración tradicional al registrar eventos y datos específicos en estos puntos en el tiempo. Esto le permite ver lo que ha sucedido en la aplicación sin reiniciarla, especialmente si se encuentra más allá de donde está el error. IntelliTrace está activado de forma predeterminada durante la depuración tradicional y recopila datos de forma automática e invisible. Esto permite cambiar fácilmente entre la depuración tradicional y la depuración de IntelliTrace para ver la información registrada. Consulte [características de IntelliTrace](../debugger/intellitrace-features.md) y [¿qué datos recopila IntelliTrace?](#WhatData)  
+ IntelliTrace amplía esta experiencia de depuración tradicional al registrar eventos y datos específicos en estos puntos en el tiempo. Esto le permite ver lo que ha sucedido en la aplicación sin reiniciarla, especialmente si se encuentra más allá de donde está el error. IntelliTrace está activado de forma predeterminada durante la depuración tradicional y recopila datos de forma automática e invisible. Esto permite cambiar fácilmente entre la depuración tradicional y la depuración de IntelliTrace para ver la información registrada. Consulte [Características de IntelliTrace](../debugger/intellitrace-features.md) y [¿Qué datos recopila IntelliTrace?](#WhatData)  
   
  IntelliTrace también puede ayudar en la depuración de errores que son difíciles de reproducir o que se producen en la implementación. Puede recopilar datos de IntelliTrace y guardarlos en un archivo de registro de IntelliTrace (archivo .iTrace). Un archivo .iTrace contiene detalles sobre excepciones, eventos de rendimiento, solicitudes web, datos de prueba, subprocesos, módulos y otra información del sistema. Puede abrir este archivo en Visual Studio Enterprise, seleccionar un elemento e iniciar la depuración con IntelliTrace. De esta forma, podrá acceder a cualquier evento del archivo y ver detalles concretos sobre la aplicación en ese punto en el tiempo.  
   
@@ -99,7 +99,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
    Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.  
   
-   Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Vea [usar el recopilador](../debugger/using-the-intellitrace-stand-alone-collector.md)independiente de IntelliTrace.  
+   Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Vea [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ## <a name="what-data-does-intellitrace-collect"></a><a name="WhatData"></a> ¿Qué datos recopila IntelliTrace?  
  **Recopilación de información de eventos**  
@@ -140,19 +140,19 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
    Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.  
   
-   Consulte:  
+   Vea:  
   
   - [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
   - [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Tutorial: Depuración de una aplicación de SharePoint mediante IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Recopilación de información de llamadas de función**  
   
   Puede configurar IntelliTrace para recopilar información de llamadas de las funciones. Esta información permite ver un historial de la pila de llamadas y retroceder y avanzar por las llamadas en el código. Para cada llamada de función, IntelliTrace registra estos datos:  
   
-- Nombre de función  
+- Nombre de la función  
   
 - Valores de los tipos de datos primitivos pasados como parámetros en los puntos de entrada de la función y devueltos en los puntos de salida de la función  
   

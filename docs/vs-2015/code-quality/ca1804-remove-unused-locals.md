@@ -15,31 +15,31 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 824a65e765f21748b97292beea64ea6c9bd64a1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd57d76acd0c46e39bb2c01449146715abc0666
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671560"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543889"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |Identificador de comprobación|CA1804|
-|Categoría|Microsoft. performance|
+|Category|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método declara una variable local, pero no utiliza la variable, excepto posiblemente como el destinatario de una instrucción de asignación. Para el análisis de esta regla, el ensamblado probado se debe compilar con información de depuración y el archivo de base de datos de programa (. pdb) asociado debe estar disponible.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Las variables locales no usadas y las asignaciones innecesarias aumentan el tamaño de un ensamblado y reducen el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite o use la variable local. Tenga en cuenta C# que el compilador que se incluye con [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] quita las variables locales no utilizadas cuando se habilita la opción `optimize`.
+ Para corregir una infracción de esta regla, quite o use la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] quita las variables locales no utilizadas cuando `optimize` se habilita la opción.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Suprima una advertencia de esta regla si la variable se emitió en el compilador. También es seguro suprimir una advertencia de esta regla o deshabilitar la regla si el rendimiento y el mantenimiento del código no son problemas principales.
@@ -51,7 +51,7 @@ ms.locfileid: "72671560"
  [!code-vb[FxCop.Performance.UnusedLocals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnusedLocals/vb/FxCop.Performance.UnusedLocals.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1809: Evitar variables locales excesivas](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809: Evitar las variables locales excesivas](../code-quality/ca1809-avoid-excessive-locals.md)
 
  [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)
 

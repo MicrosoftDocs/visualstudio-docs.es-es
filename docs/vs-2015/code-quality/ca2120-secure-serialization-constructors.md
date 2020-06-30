@@ -15,28 +15,28 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2b734a5de257273312e5125c5f481ff889cd33e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10cfa03adb74871fb42a6e1c2ce4ab4ba6bcae75
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664755"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544344"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteger los constructores de serializaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|SecureSerializationConstructors|
 |Identificador de comprobación|CA2120|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- El tipo implementa la interfaz <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, no es un delegado o una interfaz y se declara en un ensamblado que permite llamadores parcialmente confiables. El tipo tiene un constructor que toma un objeto <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> y un objeto <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (la firma del constructor de serialización). Este constructor no está protegido por una comprobación de seguridad, pero uno o varios de los constructores normales del tipo están protegidos.
+## <a name="cause"></a>Causa
+ El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o una interfaz y se declara en un ensamblado que permite llamadores parcialmente confiables. El tipo tiene un constructor que toma un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización). Este constructor no está protegido por una comprobación de seguridad, pero uno o varios de los constructores normales del tipo están protegidos.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa la interfaz <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>. El constructor de serialización es necesario y se utiliza para deserializar o volver a crear objetos que se han serializado mediante el método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>. Dado que el constructor de serialización asigna e inicializa objetos, las comprobaciones de seguridad que se encuentran en constructores normales también deben estar presentes en el constructor de serialización. Si infringe esta regla, los llamadores que no puedan crear una instancia podrían usar el constructor de serialización para hacerlo.
+ Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz. El constructor de serialización es necesario y se utiliza para deserializar o volver a crear los objetos que se han serializado mediante el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método. Dado que el constructor de serialización asigna e inicializa objetos, las comprobaciones de seguridad que se encuentran en constructores normales también deben estar presentes en el constructor de serialización. Si infringe esta regla, los llamadores que no puedan crear una instancia podrían usar el constructor de serialización para hacerlo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, proteja el constructor de serialización con demandas de seguridad idénticas a las que protegen a otros constructores.
@@ -54,6 +54,6 @@ ms.locfileid: "72664755"
 
  [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

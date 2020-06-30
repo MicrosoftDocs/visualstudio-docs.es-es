@@ -1,18 +1,18 @@
 ---
 title: Establecer una imagen de fondo en un diagrama
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf30636a6c7fee1463cbe554058f0802a5f6f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591962"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542589"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En el SDK de visualización y modelado de Visual Studio, puede establecer la imagen de fondo para un diseñador generado mediante código personalizado.
@@ -53,7 +53,7 @@ En el SDK de visualización y modelado de Visual Studio, puede establecer la ima
 
 16. En el cuadro de diálogo **Agregar nuevo elemento** , en la lista **plantillas** , haga clic en **archivo de código**.
 
-17. En el cuadro **nombre** , escriba `BackgroundImage.cs`y haga clic en **Agregar**.
+17. En el cuadro **nombre** , escriba `BackgroundImage.cs` y haga clic en **Agregar**.
 
 18. Copie el código siguiente en el archivo BackgroundImage.cs y ajuste el espacio de nombres, el nombre de la clase de diagrama y el nombre del recurso de archivo de imagen.
 
@@ -100,7 +100,7 @@ En el SDK de visualización y modelado de Visual Studio, puede establecer la ima
 
      Para obtener más información sobre cómo personalizar el modelo con código de programa, vea [navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 - [Personalizar campos de texto y de imagen](../modeling/customizing-text-and-image-fields.md)

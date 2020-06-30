@@ -15,37 +15,37 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0abc95811dc870abbfaa583fbaa7705302a70781
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670168"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543668"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |Identificador de comprobación|CA2240|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Un tipo visible externamente se puede asignar a la interfaz <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> y se cumple una de las siguientes condiciones:
+## <a name="cause"></a>Causa
+ Un tipo visible externamente se puede asignar a la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y se cumple una de las condiciones siguientes:
 
-- El tipo hereda pero no invalida el método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> y el tipo declara los campos de instancia que no están marcados con el atributo <xref:System.NonSerializedAttribute?displayProperty=fullName>.
+- El tipo hereda pero no invalida el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método y el tipo declara los campos de instancia que no están marcados con el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo.
 
-- El tipo no está sellado y el tipo implementa un método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> que no es visible y reemplazable externamente.
+- El tipo no está sellado y el tipo implementa un <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método que no es visible externamente y reemplazable.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los campos de instancia que se declaran en un tipo que hereda la interfaz <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> no se incluyen automáticamente en el proceso de serialización. Para incluir los campos, el tipo debe implementar el método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> y el constructor de serialización. Si no se deben serializar los campos, aplique el atributo <xref:System.NonSerializedAttribute> a los campos para indicar explícitamente la decisión.
+ Los campos de instancia que se declaran en un tipo que hereda la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz no se incluyen automáticamente en el proceso de serialización. Para incluir los campos, el tipo debe implementar el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método y el constructor de serialización. Si no se deben serializar los campos, aplique el <xref:System.NonSerializedAttribute> atributo a los campos para indicar explícitamente la decisión.
 
- En los tipos que no están sellados, las implementaciones del método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> deben ser visibles externamente. Por lo tanto, los tipos derivados pueden llamar al método y se puede reemplazar.
+ En los tipos que no están sellados, las implementaciones del <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método deberían estar visibles externamente. Por lo tanto, los tipos derivados pueden llamar al método y se puede reemplazar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, haga que el método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> sea visible y Overridable, y asegúrese de que todos los campos de instancia se incluyen en el proceso de serialización o que están marcados explícitamente con el atributo <xref:System.NonSerializedAttribute>.
+ Para corregir una infracción de esta regla, haga que el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método sea visible y se pueda reemplazar y asegúrese de que todos los campos de instancia se incluyen en el proceso de serialización o que se marcan explícitamente con el <xref:System.NonSerializedAttribute> atributo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

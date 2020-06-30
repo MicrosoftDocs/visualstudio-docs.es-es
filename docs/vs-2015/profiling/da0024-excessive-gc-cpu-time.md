@@ -13,27 +13,27 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbe6da087d10d3373a1f5d7836d4fa5207801bc7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586752"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542823"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tiempo excesivo de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Elemento|Value|  
 |-|-|  
 |Identificador de regla|DA0024|  
-|Categoría|Uso de .NET Framework|  
-|Método de generación de perfiles|Todas|  
-|Mensaje|El % de tiempo del GC es muy alto. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.|  
+|Category|Uso de .NET Framework|  
+|Método de generación de perfiles|All|  
+|Message|El % de tiempo del GC es muy alto. Hay una cantidad excesiva de carga de recolección de elementos no utilizados.|  
 |Tipo de regla|Advertencia|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es excesivamente alta en comparación con el tiempo total de procesamiento de la aplicación.  
   
 ## <a name="rule-description"></a>Descripción de la regla  

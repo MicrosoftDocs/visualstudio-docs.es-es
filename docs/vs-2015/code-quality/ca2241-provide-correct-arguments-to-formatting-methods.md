@@ -16,28 +16,28 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 112065b2a8b9a88241ce62dda7b32a2f2c22fc75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672030"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543655"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Proporcionar argumentos correctos para los métodos de formato
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Proporcionar argumentos correctos a los métodos de formato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |Identificador de comprobación|CA2241|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- El `format` argumento de cadena que se pasa a un método como <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> o <xref:System.String.Format%2A?displayProperty=fullName> no contiene un elemento de formato que corresponda a cada argumento de objeto, o viceversa.
+## <a name="cause"></a>Causa
+ El `format` argumento de cadena que se pasa a un método como <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> o no <xref:System.String.Format%2A?displayProperty=fullName> contiene un elemento de formato que corresponda a cada argumento de objeto, o viceversa.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los argumentos para métodos como <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> y <xref:System.String.Format%2A> constan de una cadena de formato seguida de varias instancias de <xref:System.Object?displayProperty=fullName>. La cadena de formato consta de texto y elementos de formato incrustados con el formato, {index [, alignment] [: formatString]}. ' index ' es un entero basado en cero que indica a qué objetos se va a dar formato. Si un objeto no tiene un índice correspondiente en la cadena de formato, se omite el objeto. Si el objeto especificado por ' index ' no existe, se produce una <xref:System.FormatException?displayProperty=fullName> en tiempo de ejecución.
+ Los argumentos para métodos como <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> y se <xref:System.String.Format%2A> componen de una cadena de formato seguida de varias <xref:System.Object?displayProperty=fullName> instancias. La cadena de formato consta de texto y elementos de formato incrustados con el formato, {index [, alignment] [: formatString]}. ' index ' es un entero basado en cero que indica a qué objetos se va a dar formato. Si un objeto no tiene un índice correspondiente en la cadena de formato, se omite el objeto. Si el objeto especificado por ' index ' no existe, <xref:System.FormatException?displayProperty=fullName> se produce una excepción en tiempo de ejecución.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, proporcione un elemento de formato para cada argumento de objeto y proporcione un argumento de objeto para cada elemento de formato.

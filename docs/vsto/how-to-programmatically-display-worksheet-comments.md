@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Mostrar mediante programación los comentarios de la hoja de cálculo
+title: 'Cómo: mostrar los comentarios de una hoja de cálculo mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc030fed25409f5c034abfd07f1f9358bfea593b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812701"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543369"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>Procedimiento Mostrar mediante programación los comentarios de la hoja de cálculo
+# <a name="how-to-programmatically-display-worksheet-comments"></a>Cómo: mostrar los comentarios de una hoja de cálculo mediante programación
   Puede mostrar y ocultar comentarios en las hojas de cálculo de Microsoft Office Excel mediante programación.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "62812701"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#21](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#21)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: Agregar y eliminar comentarios en una hoja de cálculo mediante programación](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Cómo: agregar y eliminar comentarios de hojas de cálculo mediante programación](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

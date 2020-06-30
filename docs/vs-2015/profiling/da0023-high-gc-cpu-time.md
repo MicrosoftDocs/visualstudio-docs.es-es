@@ -13,27 +13,27 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf5e841fdccbd6a41d0e7ee61c9f5278c6a882e3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85542927"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0024: Tiempo elevado de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||  
+|Elemento|Value|  
 |-|-|  
 |Identificador de regla|DA0023|  
-|Categoría|Uso de .NET Framework|  
-|Método de generación de perfiles|Todas|  
-|Mensaje|El % de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación utiliza mejor.|  
-|Tipo de regla|Informativa|  
+|Category|Uso de .NET Framework|  
+|Método de generación de perfiles|All|  
+|Message|El % de tiempo del GC es bastante alto. Esta indicación de una cantidad excesiva de sobrecarga de la recolección de elementos no utilizados podría estar afectando a la capacidad de respuesta de la aplicación. Puede recopilar datos de asignación de memoria de .NET e información de vigencia del objeto para entender el patrón de asignación de memoria que la aplicación utiliza mejor.|  
+|Tipo de regla|Informativo|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es considerable en comparación con el tiempo total de procesamiento de la aplicación.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
