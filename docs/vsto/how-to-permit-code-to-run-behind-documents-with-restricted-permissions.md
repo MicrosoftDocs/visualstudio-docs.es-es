@@ -1,7 +1,7 @@
 ---
 title: Permitir que el código se ejecute detrás de docs con permisos restringidos
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,37 +17,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402246"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547516"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedimiento Permitir que el código se ejecute detrás de documentos con permisos restringidos
-  Puede usar la característica Information Rights Management (IRM) de Microsoft Office para restringir permisos a un documento o libro. De forma predeterminada, el código detrás de un documento restringido de Microsoft Office Word o un libro de Microsoft Office Excel no se permite ejecutar. Puede cambiar el valor predeterminado para que sus extensiones de código administrado pueden obtener acceso al modelo de objeto y la solución funcionará.
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Cómo: permitir que el código se ejecute en documentos con permisos restringidos
+  Puede usar la característica de información Rights Management (IRM) de Microsoft Office para restringir los permisos a un documento o libro. De forma predeterminada, no se permite la ejecución del código que se encuentra detrás de un documento Microsoft Office Word restringido o Microsoft Office libro de Excel. Puede cambiar el valor predeterminado para que las extensiones de código administrado puedan tener acceso al modelo de objetos y la solución funcione.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Debe ser el autor del documento o libro o tener acceso de Control total para poder cambiar la configuración de permisos.
+ Debe ser el autor del documento o libro o tener acceso de control total para poder cambiar la configuración de permisos.
 
 ## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Para permitir que el código se ejecute detrás de documentos con permisos restringidos
 
-1. Abra el documento o libro en Word o Excel.
+1. Abra el documento o el libro en Word o Excel.
 
-2. Haga clic en el **archivo** pestaña, seleccione **preparar**, apunte a **restringir permisos**y, a continuación, haga clic en **acceso restringido**.
+2. Haga clic en la pestaña **archivo** , seleccione **preparar**, elija **restringir permisos**y, a continuación, haga clic en **acceso restringido**.
 
    > [!NOTE]
-   > En el primer uso, deberá instalar al cliente de Windows Rights Management. Después de instalar al cliente, es posible que deba repetir los pasos.
+   > Al usarse por primera vez, se le pedirá que instale el cliente de Windows Rights Management. Después de instalar el cliente de, es posible que tenga que repetir los pasos.
 
-3. En el **permiso** cuadro de diálogo, seleccione **restringir permisos a este documento**y, a continuación, haga clic en **más opciones**.
+3. En el cuadro de diálogo **permiso** , seleccione **restringir el permiso a este documento**y, a continuación, haga clic en **más opciones**.
 
 4. En **permisos adicionales para los usuarios**, seleccione **acceso a contenido mediante programación**.
 
-   Word o Excel permitirá el acceso mediante programación al modelo de objetos.
+   Word o Excel permitirán el acceso mediante programación al modelo de objetos.
 
-## <a name="see-also"></a>Vea también
-- [Information rights management y la introducción a las extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+## <a name="see-also"></a>Consulte también
+- [Información general sobre Information Rights Management y extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)

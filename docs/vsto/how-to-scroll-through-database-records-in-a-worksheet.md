@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Desplazarse por los registros de base de datos de una hoja de cálculo
+title: 'Cómo: desplazarse por los registros de base de datos de una hoja de cálculo'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252031"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545800"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedimiento Desplazarse por los registros de base de datos de una hoja de cálculo
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Cómo: desplazarse por los registros de base de datos de una hoja de cálculo
   En el procedimiento siguiente se muestra cómo usar el diseñador para mostrar un solo campo de una tabla de base de datos en una hoja de cálculo de Excel de Microsoft Office, con controles que permiten al usuario final desplazarse por todos los registros.
 
- Puede usar el diseñador solo en proyectos de nivel de documento. Sin embargo, también puede Agregar controles y enlazarlos a datos mediante programación en tiempo de ejecución. Para obtener más información, vea [Tutorial: Enlace de datos simple en el proyecto](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)de complemento de VSTO.
+ Puede usar el diseñador solo en proyectos de nivel de documento. Sin embargo, también puede Agregar controles y enlazarlos a datos mediante programación en tiempo de ejecución. Para obtener más información, vea [Tutorial: enlace de datos simple en un proyecto de complemento de VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "71252031"
 
 5. Arrastre el <xref:Microsoft.Office.Tools.Excel.NamedRange> control hasta la celda en la que desea que aparezcan los datos.
 
-6. En la pestaña **Windows Forms** del **cuadro de herramientas**, agregue <xref:System.Windows.Forms.BindingNavigator> un control a la hoja de cálculo y configure los controles que desea usar. Para obtener más información, vea [información general &#40;sobre&#41;el control BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. En la pestaña **Windows Forms** del **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.BindingNavigator> control a la hoja de cálculo y configure los controles que desea usar. Para obtener más información, vea [información general sobre el control BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)

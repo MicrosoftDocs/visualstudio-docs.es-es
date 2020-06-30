@@ -1,18 +1,18 @@
 ---
 title: Controlar la visibilidad de un icono o un objeto Decorator
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748502"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546654"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
 Un elemento *Decorator* es un icono o una línea de texto que aparece en una forma en un lenguaje específico de dominio (DSL). Puede hacer que el elemento Decorator aparezca y desaparezca en función del estado de las propiedades del modelo. Por ejemplo, en una forma que representa a una persona, puede tener iconos diferentes que aparecen según el sexo de la persona, el número de hijos, etc.
@@ -58,13 +58,13 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
 1. Agregue una propiedad de dominio calculado a la clase de dominio. En la ventana **propiedades** , establezca los valores siguientes:
 
-     **IsBrowsable =** `False` **: oculta la propiedad del usuario** .
+     **IsBrowsable =** `False` **-Esto oculta la propiedad del usuario**    
 
-     **Kind =** `Calculated` **: Esto significa que se proporcionará código que calcula su valor** .
+     **Kind =** `Calculated` **: Esto significa que se proporcionará código que calcula su valor**    
 
      **Nombre** , por ejemplo **DecoratorControl**
 
-     @No__t_1 de **tipo** `Boolean`
+     **Automáticamente** = `Boolean`
 
      Para obtener más información, consulte [propiedades de almacenamiento calculado y personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -76,7 +76,7 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
     3. En **propiedad de filtro**, seleccione la propiedad de control **DecoratorControl**.
 
-    4. En **entradas de visibilidad**, escriba `True`.
+    4. En **entradas de visibilidad**, escriba `True` .
 
 3. Haga clic en **transformar todas las plantillas** en la barra de herramientas **Explorador de soluciones** .
 
@@ -103,7 +103,7 @@ Un elemento *Decorator* es un icono o una línea de texto que aparece en una for
 
 8. Vuelva a generar y ejecutar la solución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 - [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)

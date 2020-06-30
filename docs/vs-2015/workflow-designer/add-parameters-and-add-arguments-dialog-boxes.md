@@ -11,27 +11,27 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5df32de7694ba72cc01e19f1ab42fa79c3c4ea3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 975fb1604273f4cda80b9f4ebd098a229d8c52c2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672054"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547958"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
-En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **agregar parámetros** que usa el diseñador de <xref:System.Activities.Statements.InvokeMethod>.
+En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) del cuadro de diálogo **agregar parámetros** que usa el <xref:System.Activities.Statements.InvokeMethod> Diseñador.
 
-|||
+|Nombre|Descripción|
 |-|-|
-|**Direcciona**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
-|**ype**|Nombre del tipo del nuevo parámetro.|
+|**Dirección**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
+|**Tipo**|Nombre del tipo del nuevo parámetro.|
 |**Valor**|Una expresión de VB que se usa para asignar un valor predeterminado al nuevo parámetro|
 
- En la tabla siguiente se describen los elementos de la interfaz de usuario del cuadro de diálogo **Agregar argumentos** utilizados por el diseñador de <xref:System.Activities.Statements.InvokeDelegate>.
+ En la tabla siguiente se describen los elementos de la interfaz de usuario (IU) del cuadro de diálogo **Agregar argumentos** que usa el <xref:System.Activities.Statements.InvokeDelegate> Diseñador.
 
-|||
+|Nombre|Descripción|
 |-|-|
-|**Nombre**|Nombre del argumento.|
-|**Direcciona**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|
-|**ype**|Nombre del tipo del nuevo argumento.|
+|**Nombre**|El nombre del argumento.|
+|**Dirección**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|
+|**Tipo**|Nombre del tipo del nuevo argumento.|
 |**Valor**|El valor que se usará para esta instancia del argumento de delegado.|

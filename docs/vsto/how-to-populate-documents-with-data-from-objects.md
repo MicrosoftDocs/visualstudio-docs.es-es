@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Rellenar documentos con datos de objetos
+title: 'Cómo: rellenar documentos con datos de objetos'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967727"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547178"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Procedimiento Rellenar documentos con datos de objetos
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Cómo: rellenar documentos con datos de objetos
 
-El acceso a los datos de un objeto de datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word que en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para colocar datos de un objeto en la solución y se pueden usar controles de Windows Forms para mostrar los datos. Además, puede mostrar datos mediante controles host. Los controles host son objetos nativos de Microsoft Office Word que se han mejorado mediante funcionalidad de enlace de eventos y datos. Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).
+El acceso a los datos de un objeto de datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word que en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para colocar datos de un objeto en la solución y se pueden usar controles de Windows Forms para mostrar los datos. Además, puede mostrar datos mediante controles host. Los controles host son objetos nativos de Microsoft Office Word que se han mejorado mediante funcionalidad de enlace de eventos y datos. Para obtener más información, vea [información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -36,7 +36,7 @@ Para rellenar el documento con datos de un objeto, es necesario completar tres p
 
 ## <a name="to-add-a-data-object"></a>Para agregar un objeto de datos
 
-Para agregar un objeto de datos, abra el **orígenes de datos** ventana y crear un origen de datos de un objeto. Para obtener más información, vea [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).
+Para agregar un objeto de datos, abra la ventana **orígenes de datos** y cree un origen de datos a partir de un objeto. Para obtener más información, vea [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).
 
 ## <a name="connect-the-data-object-to-the-bindingsource"></a>Conectar el objeto de datos a BindingSource
 
@@ -66,10 +66,10 @@ Para conectar el objeto de datos a BindingSource:
 
 4. Agregue el origen de datos como un enlace de datos al control.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [BindingSource component overview](/dotnet/framework/winforms/controls/bindingsource-component-overview) (Información general sobre el componente BindingSource)
+- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Información general sobre el componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

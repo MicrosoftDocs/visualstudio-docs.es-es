@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Proteger las hojas de cálculo mediante programación
+title: 'Cómo: proteger hojas de cálculo mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254588"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545904"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Procedimiento Proteger las hojas de cálculo mediante programación
+# <a name="how-to-programmatically-protect-worksheets"></a>Cómo: proteger hojas de cálculo mediante programación
   La característica de protección de Microsoft Office Excel ayuda a evitar que los usuarios y el código modifiquen los objetos de una hoja de cálculo. De forma predeterminada, todas las celdas se bloquean después de activar la protección.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "71254588"
 > [!NOTE]
 > No puede agregar controles de Windows Forms a las áreas de una hoja de cálculo que están protegidas.
 
-## <a name="use-the-designer"></a>Usar el diseñador
+## <a name="use-the-designer"></a>Uso del diseñador
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Para proteger una hoja de cálculo en el diseñador
 
@@ -65,11 +65,11 @@ ms.locfileid: "71254588"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: Quitar la protección de las hojas de cálculo mediante programación](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [Cómo: Proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)
-- [Cómo: Ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Cómo: quitar la protección de las hojas de cálculo mediante programación](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [Cómo: proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)
+- [Cómo: ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Elemento host de hoja de cálculo](../vsto/worksheet-host-item.md)
 - [Acceso global a objetos en proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)

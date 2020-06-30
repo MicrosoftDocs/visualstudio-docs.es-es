@@ -15,24 +15,24 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d7ccfbe863e010b4dcf8a9d1b442c9bcdba6822e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01f2ef59ceb6d10cc33276fdd3e5388f39175f8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661125"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545306"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados no utilizados
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|
 |Identificador de comprobación|CA1823|
-|Categoría|Microsoft. performance|
+|Category|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Esta regla se muestra cuando existe un campo privado en el código, pero no se usa en ninguna ruta de código.
 
 ## <a name="rule-description"></a>Descripción de la regla

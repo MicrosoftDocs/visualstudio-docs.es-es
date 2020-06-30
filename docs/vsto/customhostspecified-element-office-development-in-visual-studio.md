@@ -1,9 +1,9 @@
 ---
-title: '&lt;customHostSpecified&gt; elemento (desarrollo de Office en Visual Studio)'
+title: '&lt;&gt;elemento customHostSpecified (desarrollo de Office en Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956184"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544916"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elemento (desarrollo de Office en Visual Studio)
-  El `customHostSpecified` elemento indica que esta solución no es una aplicación independiente. Soluciones de Office contienen componentes que están alojados en aplicaciones de Microsoft Office.
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento customHostSpecified (desarrollo de Office en Visual Studio)
+  El `customHostSpecified` elemento indica que esta solución no es una aplicación independiente. Las soluciones de Office contienen componentes que se hospedan en Microsoft Office aplicaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,14 +33,14 @@ ms.locfileid: "62956184"
 ```
 
 ## <a name="elements-and-attributes"></a>Elementos y atributos
- El `customHostSpecified` elemento es necesario para soluciones de Office. Este elemento está en el `co.v1` espacio de nombres y especifica que esta implementación contiene un componente que se va a implementar dentro de un host personalizado y no es una aplicación independiente.
+ El `customHostSpecified` elemento es necesario para las soluciones de Office. Este elemento está en el `co.v1` espacio de nombres y especifica que esta implementación contiene un componente que se implementará dentro de un host personalizado y no es una aplicación independiente.
 
- Este es un elemento secundario de la primera `<entrypoint>` elemento en el manifiesto de aplicación. No puede haber ningún otro elemento secundario en el que `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , se producirá un error de validación durante la instalación.
+ Este elemento es un elemento secundario del primer `<entrypoint>` elemento del manifiesto de aplicación. No puede haber otros elementos secundarios en ese `<entrypoint>` elemento o producirá [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] un error de validación durante la instalación.
 
- Este elemento no tiene atributos y ningún elemento secundario.
+ Este elemento no tiene atributos ni elementos secundarios.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se ilustra la `customHostSpecified` elemento en un manifiesto de aplicación para una solución de Office. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
+ En el ejemplo de código siguiente se muestra el `customHostSpecified` elemento en un manifiesto de aplicación para una solución de Office. Este ejemplo de código forma parte de un ejemplo más grande proporcionado en los [manifiestos de aplicación para las soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <entryPoint>
@@ -48,7 +48,7 @@ ms.locfileid: "62956184"
 </entryPoint>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

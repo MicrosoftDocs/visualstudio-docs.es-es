@@ -1,7 +1,7 @@
 ---
 title: Agregar propiedades personalizadas a diagramas de dependencia
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590597"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546924"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
 
@@ -38,14 +38,14 @@ Si solo desea que el código adjunte valores a cualquier elemento de un diagrama
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. En la sección **Visual Studio Tools** del menú Inicio de la aplicación de Visual Studio, Abra **símbolo del sistema para desarrolladores**. Introduzca:
+> 3. En la sección **Visual Studio Tools** del menú Inicio de la aplicación de Visual Studio, Abra **símbolo del sistema para desarrolladores**. Especifique:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Reinicie Visual Studio.
 
-**Asegúrese de que el código se encuentra en un proyecto VSIX**
+**Asegurarse de que el código está en un proyecto VSIX**
 
 Si la propiedad forma parte de un comando, un gesto o un proyecto de validación, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, vea [Agregar comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -63,9 +63,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Puede definir propiedades en [ILayerElement](/previous-versions/ff644511(v=vs.140)) o en cualquiera de sus clases derivadas, entre las que se incluyen:
 
-- `ILayerModel`: modelo
+- `ILayerModel`-el modelo
 
-- `ILayer`: cada capa
+- `ILayer`-cada capa
 
 - `ILayerDependencyLink`: los vínculos entre las capas
 
@@ -160,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Ampliación de diagramas de dependencia](../modeling/extend-layer-diagrams.md)

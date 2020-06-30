@@ -10,28 +10,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597131"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547360"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
 
-En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **agregar parámetros** que usa el diseñador de <xref:System.Activities.Statements.InvokeMethod>:
+En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **agregar parámetros** que usa el <xref:System.Activities.Statements.InvokeMethod> Diseñador:
 
-|||
+|Nombre|Value|
 |-|-|
 |**Dirección**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
-|**Type**|Nombre del tipo del nuevo parámetro.|
+|**Tipo**|Nombre del tipo del nuevo parámetro.|
 |**Valor**|Expresión Visual Basic que se usa para asignar un valor predeterminado al nuevo parámetro.|
 
-En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **Agregar argumentos** utilizados por el diseñador de <xref:System.Activities.Statements.InvokeDelegate>:
+En la tabla siguiente se describen los elementos de la interfaz de usuario (UI) del cuadro de diálogo **Agregar argumentos** que usa el <xref:System.Activities.Statements.InvokeDelegate> Diseñador:
 
-|||
+|Nombre|Value|
 |-|-|
-|**Name**|Nombre del argumento.|
+|**Nombre**|El nombre del argumento.|
 |**Dirección**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|
-|**Type**|Nombre del tipo del nuevo argumento.|
+|**Tipo**|Nombre del tipo del nuevo argumento.|
 |**Valor**|El valor que se usará para esta instancia del argumento de delegado.|

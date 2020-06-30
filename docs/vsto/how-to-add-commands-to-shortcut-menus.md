@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar comandos a menús contextuales'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986026"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546203"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: agregar comandos a menús contextuales
   En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.
@@ -31,7 +31,7 @@ ms.locfileid: "72986026"
 
 2. el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.
 
-3. En la barra de menús, elija **Ver** > **Código**.
+3. En la barra de menús, elija **Ver**  >  **código**.
 
      El archivo de clase **ThisAddin** se abrirá en el Editor de código.
 
@@ -40,9 +40,9 @@ ms.locfileid: "72986026"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de la cinta de opciones se denomina *Ribbon1. XML*.
+5. En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de la cinta de opciones se denomina *Ribbon1.xml*.
 
-6. En la barra de menús, elija **Ver** > **Código**.
+6. En la barra de menús, elija **Ver**  >  **código**.
 
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.
 
@@ -72,14 +72,14 @@ ms.locfileid: "72986026"
 
 8. En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.
 
-9. Agregue un método de devolución de llamada a la clase `Ribbon1` para cada control que desee controlar.
+9. Agregue un método de devolución de llamada a la `Ribbon1` clase para cada control que desee controlar.
 
      El siguiente método de devolución de llamada controla el botón **Mi botón** . Este código agrega una cadena al documento activo en la posición actual del cursor.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)
 - [Tutorial: crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

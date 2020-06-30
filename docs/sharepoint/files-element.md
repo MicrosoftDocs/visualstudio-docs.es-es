@@ -1,5 +1,5 @@
 ---
-title: Archivos elemento | Microsoft Docs
+title: Elemento files | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c669b7cc314bc2d7a999e77d5cfb95251789dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967375"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546515"
 ---
 # <a name="files-element"></a>Files (elemento)
-  Especifica los archivos para implementar con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y la salida de los proyectos de SharePoint que no son dependientes.
+  Especifica los archivos que se van a implementar con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y la salida de proyectos dependientes que no son de SharePoint.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,23 +44,23 @@ ms.locfileid: "62967375"
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Opcional **ProjectItemFileType** elemento.<br /><br /> Representa un archivo de SharePoint, como archivo de elemento de característica, se incluyen con el elemento de proyecto cuando se implementa en SharePoint.|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Opcional **ProjectOutputFileType** elemento.<br /><br /> Representa la salida de un proyecto para incluir con el elemento de proyecto cuando se implementa en SharePoint.|
+|[Projectitemfile (](../sharepoint/projectitemfile-element.md)|Elemento **ProjectItemFileType** opcional.<br /><br /> Representa un archivo de SharePoint, como el archivo de elemento de característica, que se va a incluir con el elemento de proyecto cuando se implemente en SharePoint.|
+|[ProjectOutputFile (](../sharepoint/projectoutputfile-element.md)|Elemento **ProjectOutputFileType** opcional.<br /><br /> Representa la salida de un proyecto que se incluirá con el elemento de proyecto cuando se implemente en SharePoint.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento, el elemento raíz necesario de la `.spdata` archivo.|
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento es el elemento raíz necesario del `.spdata` archivo.|
 
 ## <a name="element-information"></a>Información de elemento
 
-|||
+|Propiedad|Value|
 |-|-|
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|
-|**Archivo de validación**|ProjectItemModelSchema.xsd|
+|**Espacio de nombres**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|
+|**Archivo de validación**|ProjectItemModelSchema. xsd|
 |**Puede estar vacío**|No|
 
-## <a name="see-also"></a>Vea también
-- [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+## <a name="see-also"></a>Consulte también
+- [Referencia de esquemas de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

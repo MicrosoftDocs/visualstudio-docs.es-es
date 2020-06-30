@@ -15,40 +15,40 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f273ea5f58babf7a0c04f6b0758732d43aab7db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665959"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547776"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revisar el uso de Deny y PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|
 |Identificador de comprobación|CA2107|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método contiene una comprobación de seguridad que especifica las acciones de seguridad PermitOnly o deny.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los usuarios que [usan el método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) y <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> acciones de seguridad solo deben usarlos los que tengan conocimientos avanzados de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] seguridad. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
+ El [uso del método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) y <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> las acciones de seguridad solo deben utilizarlos los que tengan conocimientos avanzados de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] seguridad. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
 
  Deny modifica el comportamiento predeterminado del recorrido de la pila que se produce como respuesta a una demanda de seguridad. Permite especificar permisos que no se deben conceder mientras dure el método de denegación, independientemente de los permisos reales de los llamadores de la pila de llamadas. Si el recorrido de la pila detecta un método protegido por deny y si el permiso solicitado está incluido en los permisos denegados, se produce un error en el recorrido de la pila. PermitOnly también modifica el comportamiento predeterminado del recorrido de la pila. Permite que el código especifique solo los permisos que se pueden conceder, independientemente de los permisos de los llamadores. Si el recorrido de la pila detecta un método protegido por PermitOnly y si el permiso solicitado no se incluye en los permisos especificados por PermitOnly, se produce un error en el recorrido de la pila.
 
- El código que se basa en estas acciones se debe evaluar detenidamente para detectar vulnerabilidades de seguridad debido a su utilidad limitada y a un comportamiento sutil. Considere el siguiente caso:
+ El código que se basa en estas acciones se debe evaluar detenidamente para detectar vulnerabilidades de seguridad debido a su utilidad limitada y a un comportamiento sutil. Tenga en cuenta lo siguiente.
 
 - Las [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) no se ven afectadas por deny o PermitOnly.
 
 - Si deny o PermitOnly se producen en el mismo marco de pila que la demanda que provoca el recorrido de la pila, las acciones de seguridad no tienen ningún efecto.
 
-- Normalmente, los valores que se usan para construir permisos basados en ruta de acceso se pueden especificar de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todos los formularios. Por ejemplo, si un recurso compartido de archivos \\ \Server\Share se asigna a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\ Compartido\archivo, X:\File y todas las demás rutas que tengan acceso al archivo.
+- Normalmente, los valores que se usan para construir permisos basados en ruta de acceso se pueden especificar de varias maneras. Denegar el acceso a un formulario de la ruta de acceso no deniega el acceso a todos los formularios. Por ejemplo, si se asigna un recurso compartido de archivos \\ \Server\Share a una unidad de red X:, para denegar el acceso a un archivo en el recurso compartido, debe denegar \\ Compartido\archivo, X:\file y todas las demás rutas que tengan acceso al archivo.
 
-- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> puede finalizar un recorrido de pila antes de que se alcance deny o PermitOnly.
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>Puede finalizar un recorrido de pila antes de que se alcance deny o PermitOnly.
 
 - Si una denegación tiene algún efecto, es decir, cuando un llamador tiene un permiso que está bloqueado por deny, el llamador puede tener acceso al recurso protegido directamente, omitiendo la denegación. Del mismo modo, si el autor de la llamada no tiene el Permiso denegado, se produciría un error en el recorrido de pila sin denegar.
 
@@ -73,10 +73,10 @@ ms.locfileid: "72665959"
  Este ejemplo produce el siguiente resultado:
 
  **Demand: deny del autor de la llamada no tiene ningún efecto a petición con el permiso declarado.** 
-**LinkDemand: deny del autor de la llamada no tiene ningún efecto en LinkDemand con el permiso imserted.** 
-**LinkDemand: deny del autor de la llamada no tiene ningún efecto con código protegido por LinkDemand.** 
-**LinkDemand: esta denegación no tiene ningún efecto con Código protegido con LinkDemand.**
-## <a name="see-also"></a>Vea también
+ **LinkDemand: el llamador deny no tiene ningún efecto en LinkDemand con el permiso imserted.** 
+ **LinkDemand: el autor de la llamada no tiene ningún efecto con código protegido por LinkDemand.** 
+ **LinkDemand: esta denegación no tiene ningún efecto con código protegido por LinkDemand.**
+## <a name="see-also"></a>Consulte también
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>

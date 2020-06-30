@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
+title: 'Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575629"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546138"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procedimiento Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
-  En este ejemplo se adjunta un archivo a un nuevo elemento de correo electrónico y lo envía a Armando Pinto. En el ejemplo se supone que existe una persona llamada Armando Pinto como destinatario.
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Cómo: adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
+  En este ejemplo se adjunta un archivo a un nuevo elemento de correo y se envía a Armando Pinto. En el ejemplo se supone que existe una persona denominada Armando Pinto como destinatario.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,8 +31,8 @@ ms.locfileid: "62575629"
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
-- [Cómo: Enviar correo electrónico](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [Cómo: Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
-- [Cómo: Crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Cómo: enviar correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Cómo: guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)

@@ -15,30 +15,30 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2b3c1faf4ecf3ecf79a3c78d0ded106b88345ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792fe18a4f472d0b8a4fd62c652f2ae34fcf6864
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546307"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializar campos estáticos de tipo de valor insertados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |Identificador de comprobación|CA2207|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo de valor declara un constructor estático explícito.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando se declara un tipo de valor, se somete a una inicialización predeterminada en la que todos los campos de tipo de valor se establecen en cero y todos los campos de tipo de referencia se establecen en `null` (`Nothing` en Visual Basic). Solo se garantiza que un constructor estático explícito se ejecute antes de que se llame a un constructor de instancia o a un miembro estático del tipo. Por consiguiente, si el tipo se crea sin llamar a un constructor de instancia, no se garantiza que el constructor estático se ejecute.
+ Cuando se declara un tipo de valor, se somete a una inicialización predeterminada en la que todos los campos de tipo de valor se establecen en cero y todos los campos de tipo de referencia se establecen en `null` ( `Nothing` en Visual Basic). Solo se garantiza que un constructor estático explícito se ejecute antes de que se llame a un constructor de instancia o a un miembro estático del tipo. Por consiguiente, si el tipo se crea sin llamar a un constructor de instancia, no se garantiza que el constructor estático se ejecute.
 
- Si todos los datos estáticos se inicializan en línea y no se declara ningún constructor estático C# explícito, los compiladores y Visual Basic agregan la marca `beforefieldinit` a la definición de clase MSIL. Los compiladores también agregan un constructor estático privado que contiene el código de inicialización estático. Se garantiza que este constructor estático privado se ejecutará antes de tener acceso a los campos estáticos del tipo.
+ Si todos los datos estáticos se inicializan en línea y no se declara ningún constructor estático explícito, los compiladores de C# y Visual Basic agregan la `beforefieldinit` marca a la definición de clase de MSIL. Los compiladores también agregan un constructor estático privado que contiene el código de inicialización estático. Se garantiza que este constructor estático privado se ejecutará antes de tener acceso a los campos estáticos del tipo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declare y quite el constructor estático.

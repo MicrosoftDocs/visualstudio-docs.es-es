@@ -15,28 +15,28 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 70a0bab8cfb3bf14a763f759e0e44a754ad878d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662778"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545241"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Las operaciones no deben desbordarse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |Identificador de comprobación|CA2233|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método realiza una operación aritmética y no valida los operandos con antelación para evitar el desbordamiento.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No se deben realizar operaciones aritméticas sin validar primero los operandos para asegurarse de que el resultado de la operación no está fuera del intervalo de valores posibles para los tipos de datos implicados. Dependiendo del contexto de ejecución y de los tipos de datos implicados, el desbordamiento aritmético puede dar como resultado un <xref:System.OverflowException?displayProperty=fullName> o los bits más significativos del resultado descartado.
+ No se deben realizar operaciones aritméticas sin validar primero los operandos para asegurarse de que el resultado de la operación no está fuera del intervalo de valores posibles para los tipos de datos implicados. Dependiendo del contexto de ejecución y de los tipos de datos implicados, el desbordamiento aritmético puede dar lugar a <xref:System.OverflowException?displayProperty=fullName> o a los bits más significativos del resultado descartado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, valide los operandos antes de realizar la operación.
@@ -47,14 +47,14 @@ ms.locfileid: "72662778"
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
 ### <a name="description"></a>Descripción
- Un método en el ejemplo siguiente manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] requiere que se deshabilite la opción para **quitar** el desbordamiento de enteros para que se active.
+ Un método en el ejemplo siguiente manipula un entero que infringe esta regla. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]requiere que se deshabilite la opción para **quitar** el desbordamiento de enteros para que se active.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
  [!code-vb[FxCop.Usage.OperationOverflow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/vb/FxCop.Usage.OperationOverflow.vb#1)]
 
 ### <a name="comments"></a>Comentarios
- Si se pasa el método en este ejemplo <xref:System.Int32.MinValue?displayProperty=fullName>, la operación se subdesbordamiento. Esto hace que se descarte el bit más significativo del resultado. En el código siguiente se muestra cómo se produce esto.
+ Si se pasa el método en este ejemplo <xref:System.Int32.MinValue?displayProperty=fullName> , la operación se subdesbordamiento. Esto hace que se descarte el bit más significativo del resultado. En el código siguiente se muestra cómo se produce esto.
 
  [C#]
 
@@ -77,7 +77,7 @@ Public Shared Sub Main()
 End Sub
 ```
 
-### <a name="output"></a>Resultados
+### <a name="output"></a>Salida
 
 ```
 2147483647
@@ -95,17 +95,17 @@ End Sub
 ## <a name="fix-with-a-checked-block"></a>Corregir con un bloque activado
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se corrige la infracción anterior ajustando la operación en un bloque activado. Si la operación provoca un desbordamiento, se producirá una <xref:System.OverflowException?displayProperty=fullName>.
+ En el ejemplo siguiente se corrige la infracción anterior ajustando la operación en un bloque activado. Si la operación provoca un desbordamiento, se <xref:System.OverflowException?displayProperty=fullName> iniciará una.
 
- Tenga en cuenta que los bloques comprobados no se admiten en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+ Tenga en cuenta que los bloques comprobados no se admiten en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activar desbordamiento o subdesbordamiento aritmético comprobados
- Si activa el desbordamiento o subdesbordamiento aritmético comprobados C#en, es equivalente a ajustar cada operación de entero en un bloque activado.
+ Si activa el desbordamiento o subdesbordamiento aritmético activado en C#, es equivalente a ajustar cada operación de entero en un bloque activado.
 
- **Para activar el desbordamiento o subdesbordamiento aritmético comprobados enC#**
+ **Para activar el desbordamiento o subdesbordamiento aritmético comprobados en C #**
 
 1. En **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y elija **propiedades**.
 
@@ -113,5 +113,5 @@ End Sub
 
 3. Seleccione **Buscar desbordamiento o** subdesbordamiento aritmético y haga clic en **Aceptar**.
 
-## <a name="see-also"></a>Vea también
- <xref:System.OverflowException?displayProperty=fullName> [ C# operadores](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [comprobados y desactivados](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+## <a name="see-also"></a>Consulte también
+ <xref:System.OverflowException?displayProperty=fullName>[Operadores de C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [comprobados y desactivados](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

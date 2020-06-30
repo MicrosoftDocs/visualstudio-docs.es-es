@@ -15,24 +15,24 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547828"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar el código difícil de mantener
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar código que no se puede mantener
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |Identificador de comprobación|CA1505|
-|Categoría|Microsoft. mantenibilidad|
+|Category|Microsoft. mantenibilidad|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo o método tiene un valor del índice de mantenimiento bajo.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -46,5 +46,5 @@ ms.locfileid: "72607586"
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Excluya esta advertencia cuando un tipo o método se siga considerando manteniéndose a pesar de su gran tamaño o cuando el tipo o el método no se puedan dividir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md) que [miden la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

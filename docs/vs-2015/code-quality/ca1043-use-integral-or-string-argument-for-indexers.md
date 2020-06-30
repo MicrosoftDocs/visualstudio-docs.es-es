@@ -15,28 +15,28 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 528b3a1f301544ccb20cfa6bddc31c0a5c50d1ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03d21a824d2d3a9151dad139575f32e3417cbd39
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668299"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546840"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Utilizar argumento integral o de cadena para los indizadores
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Utilizar un argumento integral o de cadena en indizadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |Identificador de comprobación|CA1043|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo público o protegido contiene un indexador público o protegido que usa un tipo de índice distinto de <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName> o <xref:System.String?displayProperty=fullName>.
+## <a name="cause"></a>Causa
+ Un tipo público o protegido contiene un indizador público o protegido que usa un tipo de índice distinto de <xref:System.Int32?displayProperty=fullName> , <xref:System.Int64?displayProperty=fullName> , <xref:System.Object?displayProperty=fullName> o <xref:System.String?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los indizadores, es decir, las propiedades indizadas, deben utilizar tipos enteros o de cadena para el índice. Estos tipos se utilizan normalmente para indizar estructuras de datos y aumentar la facilidad de uso de la biblioteca. El uso del tipo de <xref:System.Object> se debe restringir a los casos en los que no se puede especificar el tipo de cadena o entero concreto en tiempo de diseño. Si el diseño requiere otros tipos para el índice, reconsidere si el tipo representa un almacén de datos lógico. Si no representa un almacén de datos lógico, use un método.
+ Los indizadores, es decir, las propiedades indizadas, deben utilizar tipos enteros o de cadena para el índice. Estos tipos se utilizan normalmente para indizar estructuras de datos y aumentar la facilidad de uso de la biblioteca. El uso del <xref:System.Object> tipo se debe restringir a los casos en los que no se puede especificar en tiempo de diseño el tipo de cadena o entero específico. Si el diseño requiere otros tipos para el índice, reconsidere si el tipo representa un almacén de datos lógico. Si no representa un almacén de datos lógico, use un método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie el índice a un tipo de cadena o entero, o bien use un método en lugar del indexador.
@@ -45,7 +45,7 @@ ms.locfileid: "72668299"
  Suprima una advertencia de esta regla solo después de considerar detenidamente la necesidad del indexador no estándar.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un indexador que utiliza un índice de <xref:System.Int32>.
+ En el ejemplo siguiente se muestra un indexador que utiliza un <xref:System.Int32> índice.
 
  [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.IntegralOrStringIndexers/cpp/FxCop.Design.IntegralOrStringIndexers.cpp#1)]
  [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IntegralOrStringIndexers/cs/FxCop.Design.IntegralOrStringIndexers.cs#1)]

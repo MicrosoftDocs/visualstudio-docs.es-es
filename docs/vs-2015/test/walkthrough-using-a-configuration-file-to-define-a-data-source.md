@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64ac9835a085908645713f95f1f07c283d807852
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657059"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547984"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Para agregar un archivo app.config al proyecto:
 
-1. Si el proyecto de prueba ya incluye un archivo app.config, vaya a [Definir una sección de configuración personalizada](#DefineCustomConfigurationSection).
+1. Si el proyecto de prueba ya tiene un archivo de app.config, vaya a [definir una sección de configuración personalizada](#DefineCustomConfigurationSection).
 
 2. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de prueba, apunte a **Agregar** y haga clic en **Nuevo elemento**.
 
@@ -55,7 +55,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
 3. Seleccione la plantilla **Archivo de configuración de aplicaciones** y haga clic en **Agregar**.
 
-## <a name="DefineCustomConfigurationSection"></a> Definir una sección de configuración personalizada
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definir una sección de configuración personalizada
  Examine el archivo app.config. Debe contener al menos la declaración XML y un elemento raíz.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Para agregar la sección de configuración personalizada al archivo app.config
@@ -94,7 +94,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
  En el segundo elemento `add`, cree los atributos y los valores siguientes para una conexión con una hoja de cálculo de Microsoft Excel:
 
-|||
+|Atributo|Valores|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +102,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
  El elemento `connectionStrings` debe ser similar a este:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -132,7 +132,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
 4. En el primer elemento `add`, cree los atributos y los valores siguientes para un origen de datos de Microsoft Access:
 
-|Atributo|Valores|
+|Atributo|Value|
 |---------------|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +141,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
  En el segundo elemento `add`, cree los atributos y los valores siguientes para un origen de datos de Microsoft Excel:
 
-|||
+|Atributo|Value|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -150,7 +150,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
  El elemento `microsoft.visualstudio.testtools` debe ser similar a este:
 
-```
+```xml
 <microsoft.visualstudio.testtools>
     <dataSources>
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>
@@ -161,7 +161,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
  El archivo app.config final debe ser similar a este:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
@@ -181,7 +181,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 ```
 
 ## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Crear una prueba unitaria con los orígenes de datos definidos en app.config
- Una vez definido el archivo app.config, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección:
+ Una vez definido el archivo app.config, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección, haremos lo siguiente:
 
 - Creará los orígenes de datos que se encuentran en el archivo app.config.
 
@@ -223,7 +223,7 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 
 2. Reemplace el contenido de la prueba unitaria generado automáticamente por el código siguiente:
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -268,5 +268,5 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 > [!IMPORTANT]
 > Implemente los elementos como los orígenes de datos, para que la prueba pueda acceder a ellos en el directorio de implementación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Prueba unitaria del código](../test/unit-test-your-code.md) [crear y ejecutar pruebas unitarias para el código existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [probar la aplicación](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [Cómo: crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md)

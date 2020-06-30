@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: rellenar documentos con datos de servicios'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f53000f7d6aa8bdd8261bbe5658607918b6b449
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547152"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Cómo: rellenar documentos con datos de servicios
 
@@ -45,11 +45,11 @@ En el ejemplo siguiente se muestra cómo agregar controles que están enlazados 
 
      Los métodos que utilice dependerán de lo que ofrezca el servicio Web.
 
-6. Asigne la respuesta de datos del servicio Web a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la <xref:System.Windows.Forms.BindingSource>.
+6. Asigne la respuesta de datos del servicio Web a la <xref:System.Windows.Forms.BindingSource.DataSource%2A> propiedad de <xref:System.Windows.Forms.BindingSource> .
 
 Cuando ejecute el proyecto, los controles mostrarán el primer registro del origen de datos. Puede habilitar el desplazamiento por los registros si controla los eventos Currency que usan los objetos en <xref:System.Windows.Forms.BindingSource>.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)

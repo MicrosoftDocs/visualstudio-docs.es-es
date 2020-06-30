@@ -15,30 +15,30 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 9565bc1ae3166c0475e8af7f0fde381497309b01
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919049"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547919"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1500: los nombres de variables no deben coincidir con los nombres de campo](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |Identificador de comprobación|CA1500|
-|Categoría|Microsoft. mantenibilidad|
+|Category|Microsoft. mantenibilidad|
 |Cambio problemático|Cuando se desencadena en un parámetro que tiene el mismo nombre que un campo:<br /><br /> -No interrumpir: Si el campo y el método que declara el parámetro no se pueden considerar fuera del ensamblado, independientemente del cambio que realice.<br />-Break: Si cambia el nombre del campo y puede verse fuera del ensamblado.<br />-Break: Si cambia el nombre del parámetro y el método que lo declara puede verse fuera del ensamblado.<br /><br /> Cuando se desencadena en una variable local que tiene el mismo nombre que un campo:<br /><br /> -No interrumpir: Si el campo no se puede visualizar fuera del ensamblado, independientemente del cambio que realice.<br />-No problemático: Si cambia el nombre de la variable local y no cambia el nombre del campo.<br />-Break: Si cambia el nombre del campo y puede verse fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método de instancia declara un parámetro o una variable local cuyo nombre coincide con un campo de instancia del tipo declarativo. Para detectar las variables locales que infringen la regla, el ensamblado probado se debe compilar con la información de depuración y el archivo de base de datos de programa (. pdb) asociado debe estar disponible.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando el nombre de un campo de instancia coincide con un parámetro o con un nombre de variable local, se tiene acceso al campo de instancia mediante la palabra clave `this` (`Me` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) cuando se encuentra dentro del cuerpo del método. Al mantener el código, es fácil olvidar esta diferencia y suponer que el parámetro o la variable local hace referencia al campo de instancia, lo que conduce a errores. Esto se aplica especialmente a los cuerpos de método largos.
+ Cuando el nombre de un campo de instancia coincide con un parámetro o con un nombre de variable local, se tiene acceso al campo de instancia mediante la `this` `Me` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] palabra clave (in) cuando está dentro del cuerpo del método. Al mantener el código, es fácil olvidar esta diferencia y suponer que el parámetro o la variable local hace referencia al campo de instancia, lo que conduce a errores. Esto se aplica especialmente a los cuerpos de método largos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie el nombre del parámetro o la variable, o bien del campo.

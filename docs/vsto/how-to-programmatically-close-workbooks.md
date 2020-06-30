@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Cerrar libros mediante programación
+title: 'Cómo: cerrar libros mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575408"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547503"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Procedimiento Cerrar libros mediante programación
+# <a name="how-to-programmatically-close-workbooks"></a>Cómo: cerrar libros mediante programación
   Puede cerrar el libro activo o especificar el libro que se va a cerrar.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -52,10 +52,10 @@ ms.locfileid: "62575408"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
-- [Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)
-- [Cómo: Abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Cómo: guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)
+- [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

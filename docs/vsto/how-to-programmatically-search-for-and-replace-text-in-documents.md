@@ -1,7 +1,7 @@
 ---
 title: Buscar y reemplazar texto en documentos mediante programación
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6508fee244dd50a1d2fd42203c2982b959b0e547
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328904"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547048"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Procedimiento Buscar y reemplazar texto en documentos mediante programación
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Cómo: buscar y reemplazar texto en documentos mediante programación
   El objeto <xref:Microsoft.Office.Interop.Word.Find> es miembro de los objetos <xref:Microsoft.Office.Interop.Word.Selection> y <xref:Microsoft.Office.Interop.Word.Range> y puede usar cualquiera de ellos para buscar texto en documentos de Microsoft Office Word. El comando replace es una extensión del comando find.
 
  Use un objeto <xref:Microsoft.Office.Interop.Word.Find> para recorrer un documento de Microsoft Office Word y buscar un determinado texto, formato o estilo y use la propiedad <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> para reemplazar cualquiera de los elementos encontrados.
@@ -57,8 +57,8 @@ ms.locfileid: "67328904"
    [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)]
    [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
 
-## <a name="use-a-range-object"></a>Use un objeto Range
- Los objetos <xref:Microsoft.Office.Interop.Word.Range> le permiten buscar texto sin mostrar nada en la interfaz de usuario. El <xref:Microsoft.Office.Interop.Word.Find> objeto devuelve **True** si se encuentra texto que coincide con los criterios de búsqueda, y **False** si no es así. También redefine el objeto <xref:Microsoft.Office.Interop.Word.Range> para que coincida con los criterios de búsqueda si se encuentra el texto.
+## <a name="use-a-range-object"></a>Usar un objeto Range
+ Los objetos <xref:Microsoft.Office.Interop.Word.Range> le permiten buscar texto sin mostrar nada en la interfaz de usuario. El <xref:Microsoft.Office.Interop.Word.Find> objeto devuelve **true** si se encuentra texto que coincide con los criterios de búsqueda y **false** en caso contrario. También redefine el objeto <xref:Microsoft.Office.Interop.Word.Range> para que coincida con los criterios de búsqueda si se encuentra el texto.
 
 ### <a name="to-find-text-using-a-range-object"></a>Para buscar texto con un objeto Range
 
@@ -74,7 +74,7 @@ ms.locfileid: "67328904"
     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
     [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]
 
-2. Mediante el <xref:Microsoft.Office.Interop.Word.Range.Find%2A> propiedad de la <xref:Microsoft.Office.Interop.Word.Range> objeto, en primer lugar borre las opciones de formato existentes y, a continuación, busque la cadena **encontrarme**.
+2. Con la <xref:Microsoft.Office.Interop.Word.Range.Find%2A> propiedad del <xref:Microsoft.Office.Interop.Word.Range> objeto, borre primero las opciones de formato existentes y busque la cadena **Find me**.
 
     [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
     [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]
@@ -97,7 +97,7 @@ ms.locfileid: "67328904"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
 ## <a name="search-for-and-replace-text-in-documents"></a>Buscar y reemplazar texto en documentos
- El código siguiente busca la selección actual y reemplaza todas las apariciones de la cadena **encontrarme** con la cadena **Found**.
+ El código siguiente busca la selección actual y reemplaza todas las apariciones de la cadena **Find me** por la cadena **encontrada**.
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>Para buscar y reemplazar texto en documentos
 
@@ -106,9 +106,9 @@ ms.locfileid: "67328904"
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
-     La clase <xref:Microsoft.Office.Interop.Word.Find> tiene un método <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> y la clase <xref:Microsoft.Office.Interop.Word.Replacement> también tiene su propio método <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. Al realizar operaciones de búsqueda y reemplazo, debe usar el método ClearFormatting de ambos objetos. Si solo lo usa en el objeto <xref:Microsoft.Office.Interop.Word.Find>, podría obtener resultados imprevistos en el texto de reemplazo.
+     La clase <xref:Microsoft.Office.Interop.Word.Find> tiene un método <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> y la clase <xref:Microsoft.Office.Interop.Word.Replacement> también tiene su propio método <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. Al realizar operaciones de búsqueda y reemplazo, debe utilizar el método ClearFormatting de ambos objetos. Si solo lo usa en el objeto <xref:Microsoft.Office.Interop.Word.Find>, podría obtener resultados imprevistos en el texto de reemplazo.
 
-2. Use el método <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> del objeto <xref:Microsoft.Office.Interop.Word.Find> para reemplazar los elementos encontrados. Para especificar los elementos que desea reemplazar, use el *reemplazar* parámetro. Este parámetro puede ser uno de los siguientes valores <xref:Microsoft.Office.Interop.Word.WdReplace>:
+2. Use el método <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> del objeto <xref:Microsoft.Office.Interop.Word.Find> para reemplazar los elementos encontrados. Para especificar los elementos que se van a reemplazar, use el parámetro *Replace* . Este parámetro puede ser uno de los siguientes valores <xref:Microsoft.Office.Interop.Word.WdReplace>:
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> reemplaza todos los elementos encontrados.
 
@@ -116,9 +116,9 @@ ms.locfileid: "67328904"
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> reemplaza el primer elemento encontrado.
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)
-- [Cómo: Recorrer en iteración mediante programación los elementos encontrados en documentos](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Cómo: Restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Cómo: recorrer los elementos encontrados en documentos mediante programación](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [Cómo: definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Cómo: restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

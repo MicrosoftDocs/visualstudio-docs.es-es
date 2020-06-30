@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Cerrar documentos mediante programación
+title: 'Cómo: cerrar documentos mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 504fe863c746a788e797d3a84c4cd0b3d6c3d19b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18dc4099f4c1df17efbe2dd3c213332bb73b52c4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422468"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547464"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Procedimiento Cerrar documentos mediante programación
+# <a name="how-to-programmatically-close-documents"></a>Cómo: cerrar documentos mediante programación
   Puede cerrar el documento activo o especificar el documento que se va a cerrar.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -61,9 +61,9 @@ ms.locfileid: "63422468"
      [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Cómo: Guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Cómo: guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

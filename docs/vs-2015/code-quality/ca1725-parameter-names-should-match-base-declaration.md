@@ -15,24 +15,24 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 128069bb24dfc8b1c11963e33c9541701b0eea15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1fb30cd37ebffcee7619190cef83560813b25db
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653739"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547373"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Los nombres de parámetro deberían coincidir con la declaración base
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Los nombres de parámetro deben coincidir con la declaración base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |Identificador de comprobación|CA1725|
-|Categoría|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El nombre de un parámetro en una invalidación de método visible externamente no coincide con el nombre del parámetro en la declaración base del método, o con el nombre del parámetro en la declaración de interfaz del método.
 
 ## <a name="rule-description"></a>Descripción de la regla

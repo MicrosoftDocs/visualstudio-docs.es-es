@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear y modificar propiedades de documento personalizadas
+title: 'Cómo: crear y modificar propiedades de documento personalizadas'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825800"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547217"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Procedimiento Crear y modificar propiedades de documento personalizadas
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "62825800"
 ## <a name="robust-programming"></a>Programación sólida
  Si se intenta acceder a la propiedad `Value` para propiedades sin definir, se produce una excepción.
 
-## <a name="see-also"></a>Vea también
-- [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)
-- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)
-- [Cómo: Leer y escribir en las propiedades del documento](../vsto/how-to-read-from-and-write-to-document-properties.md)
+## <a name="see-also"></a>Consulte también
+- [Complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md)
+- [Personalizaciones de nivel de documento de programa](../vsto/programming-document-level-customizations.md)
+- [Cómo: leer y escribir en propiedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)

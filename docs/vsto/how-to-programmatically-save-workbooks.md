@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Guardar libros mediante programación
+title: 'Cómo: guardar libros mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419481"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547087"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Procedimiento Guardar libros mediante programación
+# <a name="how-to-programmatically-save-workbooks"></a>Cómo: guardar libros mediante programación
   Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63419481"
  Puede guardar el libro especificado en una ubicación nueva o con un nombre nuevo, especificando opcionalmente un formato de archivo, una contraseña y un modo de acceso, entre otras cosas.
 
 > [!NOTE]
-> Desea establecer el <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propiedad **False** antes de guardar el libro con una nueva ruta de acceso, ya que guardar en algunos formatos requiere interacción. Establecer esta propiedad en **False** , Excel usa todos los valores predeterminados.
+> Es posible que desee establecer la <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propiedad en **false** antes de guardar el libro con una nueva ruta de acceso, ya que el almacenamiento en algunos formatos requiere interacción. Al establecer esta propiedad en **false** , Excel usa todos los valores predeterminados.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para guardar un libro asociado a una personalización de nivel de documento
 
@@ -80,12 +80,12 @@ ms.locfileid: "63419481"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]
 
 ## <a name="robust-programming"></a>Programación sólida
- Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama el <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método pero no deshabilita los mensajes desde Excel, y el usuario hace clic en **cancelar** cuando se le solicite, Excel genera un error en tiempo de ejecución.
+ Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama al <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método, pero no deshabilita los mensajes de Excel, y el usuario hace clic en **Cancelar** cuando se le solicita, Excel genera un error en tiempo de ejecución.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con libros](../vsto/working-with-workbooks.md)
-- [Elemento host Workbook](../vsto/workbook-host-item.md)
-- [Cómo: Cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Elemento host del libro](../vsto/workbook-host-item.md)
+- [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

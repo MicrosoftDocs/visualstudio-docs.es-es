@@ -12,20 +12,20 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432757"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547997"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedimiento Crear un informe de seguimiento de llamada de generación de perfiles de herramientas
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Cómo: Crear un informe de seguimiento de llamadas de las Herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El *informe de seguimiento de llamadas* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muestra información de intervalos de cada punto de entrada y salida de las funciones de la aplicación y cada llamada a otras funciones realizadas por su función. Los informes de seguimiento de llamadas solo están disponibles para los datos de generación de perfiles si se recopilaron con el método de instrumentación.  
   
 > [!NOTE]
-> Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Debe usar la herramienta de línea de comandos **VSPerfReport** para generar un archivo XML o de valores separados por comas (.csv). Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
+> Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Debe utilizar la herramienta de línea de comandos **VSPerfReport** para generar un archivo de valores separados por comas (. csv) o XML. Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-create-a-call-trace-report"></a>Para crear un informe de seguimiento de llamadas  
   
@@ -35,12 +35,12 @@ El *informe de seguimiento de llamadas* de las herramientas de generación de pe
   
      *ToolsPath* **VSPerfReport** *VSPFile* **/CallTrace [/Xml]**  
   
-    |||  
+    |Command, elemento|Descripción|
     |-|-|  
     |*ToolsPath*|Ruta de acceso a las herramientas de línea de comandos de las herramientas de generación de perfiles. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
     |*VSPFile*|El archivo de datos de generación de perfiles (.vsp o .vsps). Se aceptan rutas de acceso completas y parciales.|  
     |Xml|Genera un informe con formato XML.|  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Recopilar el seguimiento de eventos para Windows (ETW) datos](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md)
+## <a name="see-also"></a>Consulte también  
+ [Cómo: recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [APIs de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md)

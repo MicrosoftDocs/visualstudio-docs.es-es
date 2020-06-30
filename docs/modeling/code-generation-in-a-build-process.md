@@ -1,7 +1,7 @@
 ---
 title: Generación de código en un proceso de compilación
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590558"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546723"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar la transformación de texto en el proceso de compilación
 
@@ -26,7 +26,7 @@ La [transformación de texto](../modeling/code-generation-and-t4-text-templates.
 
 Hay algunas diferencias en cuanto a lo que las tareas de compilación pueden hacer, según el motor de compilación que utilice. Al compilar la solución en Visual Studio, una plantilla de texto puede tener acceso a la API de Visual Studio (EnvDTE) si se establece el atributo [HostSpecific = "true"](../modeling/t4-template-directive.md) . Pero esto no es cierto cuando se compila la solución desde la línea de comandos o cuando se inicia una compilación de servidor a través de Visual Studio. En esos casos, la compilación la realiza MSBuild y se utiliza un host T4 diferente. Esto significa que no puede tener acceso a elementos como nombres de archivo de proyecto de la misma manera que cuando se crea una plantilla de texto con MSBuild. Sin embargo, puede [pasar información de entorno a plantillas de texto y procesadores de directivas mediante el uso de parámetros de compilación](#parameters).
 
-## <a name="buildserver"></a>Configurar las máquinas
+## <a name="configure-your-machines"></a><a name="buildserver"></a>Configurar las máquinas
 
 Para habilitar las tareas de compilación en el equipo de desarrollo, instale el SDK de modelado para Visual Studio.
 
@@ -36,22 +36,22 @@ Si [el servidor de compilación](/azure/devops/pipelines/agents/agents) se ejecu
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft. VisualStudio. TextTemplating. SDK. host. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.15.0.dll
   - Microsoft.TextTemplating.Build.Tasks.dll
   - Microsoft.TextTemplating.targets
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft. VisualStudio. TextTemplating. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. interfaces. 15.0. dll
-  - Microsoft. VisualStudio. TextTemplating. VSHost. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.15.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.15.0.dll
 
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados Roslyn se encuentren en un directorio denominado *Roslyn* que se encuentre en el mismo directorio que el ejecutable de compilación (por ejemplo, *MSBuild. exe*).
+> Si obtiene un `MissingMethodException` para un método Microsoft. CodeAnalysis al ejecutar los destinos de compilación de TextTemplating en un servidor de compilación, asegúrese de que los ensamblados de Roslyn se encuentren en un directorio denominado *Roslyn* que se encuentre en el mismo directorio que el ejecutable de compilación (por ejemplo, *msbuild.exe*).
 
 ## <a name="edit-the-project-file"></a>Edición del archivo del proyecto
 
@@ -164,7 +164,7 @@ La transformación de texto se realiza antes que otras tareas del proceso de com
 
 En `AfterTransform`, se puede hacer referencia a listas de archivos:
 
-- GeneratedFiles: lista de archivos en los que ha escrito el proceso. En el caso de los archivos que sobrescribieron los archivos de solo lectura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Estos archivos se pueden desproteger del control de código fuente.
+- GeneratedFiles: lista de archivos en los que ha escrito el proceso. En el caso de los archivos que sobrescribió los archivos de solo lectura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Estos archivos se pueden desproteger del control de código fuente.
 
 - NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
 
@@ -184,7 +184,7 @@ Estas propiedades solo las utiliza MSBuild. No afectan a la generación de códi
 </ItemGroup>
 ```
 
-Una carpeta útil a la que redirigir es `$(IntermediateOutputPath)`.
+Una carpeta útil a la que redirigirse es `$(IntermediateOutputPath)` .
 
 Si especifica un nombre de archivo de salida, tiene prioridad sobre la extensión especificada en la Directiva de salida en las plantillas.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Pasar datos de contexto de compilación a las plantillas
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Pasar datos de contexto de compilación a las plantillas
 
 Puede establecer valores de parámetro en el archivo de proyecto. Por ejemplo, puede pasar propiedades de [compilación](../msbuild/msbuild-properties.md) y [variables de entorno](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` obtiene los datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
+> `ResolveParameterValue`Obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Al transformar la plantilla con Visual Studio, los parámetros tienen valores predeterminados.
 
-## <a name="msbuild"></a>Usar las propiedades del proyecto en las directivas de inclusión y ensamblado
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Usar las propiedades del proyecto en las directivas de inclusión y ensamblado
 
 Las macros de Visual Studio como **$ (SolutionDir)** no funcionan en MSBuild. En su lugar, puede utilizar las propiedades del proyecto.
 
@@ -289,7 +289,7 @@ Estas directivas obtienen valores de T4parameterValues tanto en hosts de MSBuild
 
 Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual Studio no transforma el archivo automáticamente. La transformación de plantillas como parte de la compilación garantiza que todo está actualizado.
 
-**¿Qué otras opciones hay para transformar las plantillas de texto?**
+**¿Qué otras opciones existen para transformar plantillas de texto?**
 
 - La [utilidad textTransform](../modeling/generating-files-with-the-texttransform-utility.md) se puede usar en scripts de comandos. En la mayoría de los casos, es más fácil usar MSBuild.
 
@@ -299,17 +299,17 @@ Si actualiza un archivo incluido u otro archivo leído por la plantilla, Visual 
 
 - [Las plantillas de texto en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md) se transforman en tiempo de ejecución en la aplicación.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 ::: moniker range="vs-2017"
 
-- Hay una buena orientación en la plantilla de MSbuild T4 en `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Hay una buena orientación en la plantilla de MSbuild T4 en`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Hay una buena orientación en la plantilla de MSbuild T4 en `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Hay una buena orientación en la plantilla de MSbuild T4 en`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

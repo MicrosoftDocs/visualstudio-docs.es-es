@@ -1,5 +1,5 @@
 ---
-title: Depurador de Windows | Documentos de Microsoft
+title: Ventanas del depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,21 +9,20 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686768"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545631"
 ---
 # <a name="debugger-windows"></a>Ventanas del depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando alcance el punto de interrupción y se detenga la ejecución, haga clic en **Depurar / Ventanas**.  
+Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando alcance el punto de interrupción y se detenga la ejecución, haga clic en **depurar/ventanas**.  
   
-||||  
+|**Window**|**Tecla de acceso rápido**|**Vea el tema**|  
 |-|-|-|  
-|**Ventana**|**Tecla de acceso rápido**|**Vea el tema**|  
 |Puntos de interrupción|CTRL+ALT+B|[Usar puntos de interrupción](../debugger/using-breakpoints.md)|  
 |Configuración de excepciones|CTRL+ALT+E|[Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)|  
 |Salida|CTRL+ALT+O|[Resultados (Ventana)](../ide/reference/output-window.md)|  
@@ -33,7 +32,7 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |Inspección rápida|MAYÚS+F9|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
-|Automático|CTRL+ALT+V, A|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|CTRL+ALT+V, A|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Locals|CTRL+ALT+V, L|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Inmediato|CTRL+ALT+I|[Ventana Inmediato](../ide/reference/immediate-window.md)|  
 |Depuración de Python interactiva|MAYÚS+ALT+I|[Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)|  
@@ -42,12 +41,12 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Explorador de propiedades dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|  
 |Pilas de llamadas|CTRL+ALT+C|[Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md)|  
-|Subprocesos|CTRL+ALT+H|[Cómo: Uso de la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md)|  
+|Subprocesos|CTRL+ALT+H|[Cómo: usar la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)|  
 |Módulos|CTRL+ALT+U|[Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)|  
 |Procesos|CTRL+ALT+Z|[Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md)|  
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Ventana Memoria](../debugger/memory-windows.md)|  
 |Desensamblado|CTRL+ALT+D|[Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)|  
 |Registros|CTRL+ALT+G|[Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

@@ -15,28 +15,28 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73f94c45568a55cc098dd223deca9dab404f44ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651633"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547672"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: No marcar enumeraciones con FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |Identificador de comprobación|CA2217|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Una enumeración visible externamente se marca con <xref:System.FlagsAttribute> y tiene uno o más valores que no son potencias de dos o una combinación de los demás valores definidos en la enumeración.
+## <a name="cause"></a>Causa
+ Una enumeración visible externamente está marcada con <xref:System.FlagsAttribute> y tiene uno o más valores que no son potencias de dos o una combinación de los demás valores definidos en la enumeración.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una enumeración debe tener <xref:System.FlagsAttribute> presente solo si cada valor definido en la enumeración es una potencia de dos o una combinación de valores definidos.
+ Una enumeración solo debe tener <xref:System.FlagsAttribute> presente si cada valor definido en la enumeración es una potencia de dos o una combinación de valores definidos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite <xref:System.FlagsAttribute> de la enumeración.
@@ -45,7 +45,7 @@ ms.locfileid: "72651633"
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una enumeración, color, que contiene el valor 3, que no es una potencia de dos ni una combinación de ninguno de los valores definidos. La enumeración de color no se debe marcar con el <xref:System.FlagsAttribute>.
+ En el ejemplo siguiente se muestra una enumeración, color, que contiene el valor 3, que no es una potencia de dos ni una combinación de ninguno de los valores definidos. La enumeración de color no se debe marcar con <xref:System.FlagsAttribute> .
 
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cpp/FxCop.Usage.EnumNoFlags.cpp#1)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags/cs/FxCop.Usage.EnumNoFlags.cs#1)]
@@ -61,5 +61,5 @@ ms.locfileid: "72651633"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.FlagsAttribute?displayProperty=fullName>

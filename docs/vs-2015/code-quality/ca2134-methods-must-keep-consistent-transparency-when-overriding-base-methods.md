@@ -11,25 +11,25 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe9a84280b0124eed6bb0cfffae9c1ec2942bddf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608920"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547724"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente cuando reemplazan métodos base
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente al invalidar métodos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |Identificador de comprobación|CA2134|
-|Categoría|Microsoft.Security|
+|Category|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Esta regla se desencadena cuando un método marcado con el <xref:System.Security.SecurityCriticalAttribute> invalida un método que es transparente o está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute>. La regla también se desencadena cuando un método que es transparente o está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> invalida un método marcado con un <xref:System.Security.SecurityCriticalAttribute>.
+## <a name="cause"></a>Causa
+ Esta regla se desencadena cuando un método marcado con <xref:System.Security.SecurityCriticalAttribute> invalida un método que es transparente o está marcado con <xref:System.Security.SecuritySafeCriticalAttribute> . La regla también se desencadena cuando un método que es transparente o está marcado con <xref:System.Security.SecuritySafeCriticalAttribute> reemplaza un método marcado con un <xref:System.Security.SecurityCriticalAttribute> .
 
  Se aplica la regla al invalidar un método virtual o implementar una interfaz.
 
@@ -42,12 +42,12 @@ ms.locfileid: "72608920"
  Para corregir una infracción de esta regla, cambie la transparencia del método que invalide un método virtual o implemente una interfaz para que coincida con la transparencia del método virtual o de la interfaz.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. Las infracciones de esta regla producirán un <xref:System.TypeLoadException> en tiempo de ejecución para los ensamblados que usan la transparencia de nivel 2.
+ No suprima las advertencias de esta regla. Las infracciones de esta regla darán lugar a un tiempo de ejecución <xref:System.TypeLoadException> para los ensamblados que usan la transparencia de nivel 2.
 
 ## <a name="examples"></a>Ejemplos
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2134.methodsmustoverridewithconsistenttransparency/cs/ca2134 - methodsmustoverridewithconsistenttransparency.cs#1)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Código transparente en seguridad, nivel 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

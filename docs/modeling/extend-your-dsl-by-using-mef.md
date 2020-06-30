@@ -1,18 +1,18 @@
 ---
 title: Ampliar DSL mediante MEF
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596611"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547646"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 
@@ -26,7 +26,7 @@ Para obtener más información sobre MEF, vea [Managed Extensibility Framework (
 
 1. Cree una nueva carpeta denominada **MefExtension** dentro del proyecto **DslPackage** . Agregue los siguientes archivos:
 
-     Nombre de archivo: `CommandExtensionVSCT.tt`
+     Nombre de archivo:`CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Establezca el GUID en este archivo para que sea el mismo que el GUID CommandSetId definido en DslPackage\GeneratedCode\Constants.tt
@@ -42,21 +42,21 @@ Para obtener más información sobre MEF, vea [Managed Extensibility Framework (
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Nombre de archivo: `CommandExtensionRegistrar.tt`
+    Nombre de archivo:`CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Nombre de archivo: `ValidationExtensionEnablement.tt`
+    Nombre de archivo:`ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Nombre de archivo: `ValidationExtensionRegistrar.tt`
+    Nombre de archivo:`ValidationExtensionRegistrar.tt`
 
     Si agrega este archivo, debe habilitar la validación en DSL mediante al menos uno de los modificadores de **EditorValidation** en el explorador de DSL.
 
@@ -65,7 +65,7 @@ Para obtener más información sobre MEF, vea [Managed Extensibility Framework (
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Nombre de archivo: `PackageExtensionEnablement.tt`
+    Nombre de archivo:`PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Para obtener más información sobre MEF, vea [Managed Extensibility Framework (
 
 2. Cree una nueva carpeta denominada **MefExtension** dentro del proyecto **DSL** . Agregue los siguientes archivos:
 
-     Nombre de archivo: `DesignerExtensionMetaDataAttribute.tt`
+     Nombre de archivo:`DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Nombre de archivo: `GestureExtensionEnablement.tt`
+    Nombre de archivo:`GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Nombre de archivo: `GestureExtensionController.tt`
+    Nombre de archivo:`GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -101,13 +101,13 @@ Para obtener más información sobre MEF, vea [Managed Extensibility Framework (
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
     ```
 
-    Inserte la línea después de la Directiva de `<Include>` existente.
+    Inserte la línea después de la `<Include>` directiva existente.
 
 4. Abra *DslDefinition. DSL*.
 
 5. En DSL Explorer (explorador de DSL), seleccione **Editor\Validation**.
 
-6. En el ventana Propiedades, asegúrese de que al menos una de las propiedades con el nombre **use** sea `true`.
+6. En el ventana Propiedades, asegúrese de que al menos una de las propiedades con el nombre **use** es `true` .
 
 7. En la barra de herramientas **Explorador de soluciones** , haga clic en **transformar todas las plantillas**.
 
@@ -127,9 +127,9 @@ Si tiene acceso a un DSL habilitado para MEF creado por usted mismo o por otro u
 
 2. En el nuevo proyecto, agregue una referencia al ensamblado de DSL.
 
-   - Normalmente, este ensamblado tiene un nombre que termina con ". DSL. dll ".
+   - Normalmente, este ensamblado tiene un nombre que termina con ".Dsl.dll".
 
-   - Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **\\de dsl\\bin \***
+   - Si tiene acceso al proyecto DSL, puede encontrar el archivo de ensamblado en directorio **DSL \\ bin \\ \* ** .
 
    - Si tiene acceso al archivo VSIX de DSL, puede encontrar el ensamblado cambiando la extensión de nombre de archivo del archivo VSIX a ". zip". Descomprima el archivo. zip.
 
@@ -157,7 +157,7 @@ Si tiene acceso a un DSL habilitado para MEF creado por usted mismo o por otro u
 
    1. En **source. Extension. vsixmanifest**, haga clic en **Agregar referencia** .
 
-   2. En el cuadro de diálogo, haga clic en **Agregar carga** y, a continuación, busque el archivo VSIX del DSL. El archivo VSIX se crea en la solución DSL, en **DslPackage\\bin\\\*** .
+   2. En el cuadro de diálogo, haga clic en **Agregar carga** y, a continuación, busque el archivo VSIX del DSL. El archivo VSIX se crea en la solución DSL, en **DslPackage \\ bin \\ \* **.
 
        Esto permite a los usuarios instalar el DSL y la extensión al mismo tiempo. Si el usuario ya ha instalado el DSL, solo se instalará la extensión.
 
@@ -175,9 +175,9 @@ Puede escribir extensiones en el proyecto de código de ensamblado de una soluci
 
 ### <a name="menu-commands"></a>Comandos de menú
 
-Para escribir un comando de menú, defina una clase que implemente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> y Prefije la clase con el atributo que se define en el DSL, denominado *sudsl*`CommandExtension`. Puede escribir más de una clase de comandos de menú.
+Para escribir un comando de menú, defina una clase que implemente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> y Prefije la clase con el atributo que se define en el DSL, denominado *sudsl* `CommandExtension` . Puede escribir más de una clase de comandos de menú.
 
-se llama a `QueryStatus()` siempre que el usuario haga clic con el botón secundario en el diagrama. Debe inspeccionar la selección actual y establecer `command.Enabled` para indicar si el comando es aplicable.
+`QueryStatus()`se llama a este método cada vez que el usuario hace clic con el botón secundario en el diagrama. Debe inspeccionar la selección actual y establecer `command.Enabled` para indicar si el comando es aplicable.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -321,7 +321,7 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>Restricciones de validación
 
-Los métodos de validación están marcados por el atributo `ValidationExtension` que genera el DSL, y también por <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. El método puede aparecer en cualquier clase que no esté marcada por un atributo.
+Los métodos de validación se marcan con el `ValidationExtension` atributo que genera el DSL y también con <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . El método puede aparecer en cualquier clase que no esté marcada por un atributo.
 
 Para obtener más información, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).
 
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

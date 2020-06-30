@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Guardar documentos de Visio mediante programación
+title: 'Cómo: guardar documentos de Visio mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419390"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547061"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Procedimiento Guardar documentos de Visio mediante programación
+# <a name="how-to-programmatically-save-visio-documents"></a>Cómo: guardar documentos de Visio mediante programación
   Hay varias formas de guardar documentos de Microsoft Office Visio:
 
 - Guardar cambios en un documento existente.
@@ -72,12 +72,12 @@ ms.locfileid: "63419390"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo de código se necesita lo siguiente:
 
-- Para guardar un documento que tiene un nuevo nombre, un directorio denominado `Test` debe estar ubicado en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
+- Para guardar un documento que tenga un nombre nuevo, debe haber un directorio denominado `Test` en la carpeta *Mis documentos* (para Windows XP y versiones anteriores) o en la carpeta *documentos* (para Windows Vista).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Soluciones de Visio](../vsto/visio-solutions.md)
 - [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
-- [Cómo: Crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Cómo: Abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Cómo: Cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Cómo: Imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Cómo: crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Cómo: abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Cómo: cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Cómo: imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)

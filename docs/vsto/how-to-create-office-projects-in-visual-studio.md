@@ -1,9 +1,9 @@
 ---
-title: Procedimiento Crear proyectos de Office en Visual Studio
+title: 'Cómo: crear proyectos de Office en Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VST.SelectDocWizard.Page1
 - VST.SelectDocWizard.Http
@@ -23,15 +23,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419610"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547568"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Procedimiento Crear proyectos de Office en Visual Studio
-  Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y de nivel de documento personalizaciones para aplicaciones de Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Cómo: crear proyectos de Office en Visual Studio
+  Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y personalizaciones de nivel de documento para aplicaciones Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -39,31 +39,31 @@ ms.locfileid: "63419610"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>Para crear un proyecto de complemento de VSTO
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. Si su entorno de desarrollo integrado (IDE) se establece para usar [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] configuración de desarrollo, en el **archivo** menú, elija **New** > **proyecto**.
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. Si el entorno de desarrollo integrado (IDE) está configurado para usar [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] la configuración de desarrollo, en el menú **archivo** , elija **nuevo**  >  **proyecto**.
 
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
    > [!NOTE]
-   > De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información, consulte [perfil de cliente de .NET Framework](/dotnet/framework/deployment/client-profile).
+   > De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información, consulte [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
 
-2. En el panel Plantillas, bajo el nodo para el idioma que desea usar, expanda **Office/SharePoint**.
+2. En el panel plantillas, en el nodo del lenguaje que desee usar, expanda **Office/SharePoint**.
 
-3. Elija la **complementos de Office** nodo.
+3. Elija el nodo **Complementos de Office** .
 
-4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de complemento de VSTO. Para obtener una lista de plantillas de proyecto disponibles complementos de VSTO, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
+4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de complemento de VSTO. Para obtener una lista de plantillas de proyecto de complementos de VSTO disponibles, consulte [información general sobre las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   > Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior, está seleccionado en el cuadro combinado en la parte superior del cuadro de diálogo. Las plantillas de proyecto de Office se pueden ver para ambas versiones de .NET Framework.
+   > Si las plantillas de proyecto no están visibles al seleccionar el nodo **Complementos de Office** , asegúrese de que está seleccionado **.NET Framework 4** o posterior en el cuadro combinado de la parte superior del cuadro de diálogo. Las plantillas de proyecto de Office se pueden ver para ambas versiones de .NET Framework.
 
-5. En el **nombre** , escriba un nombre para el proyecto. De forma predeterminada, el nombre del proyecto también se usa como nombre de la solución.
+5. En el cuadro **nombre** , escriba un nombre para el proyecto. De forma predeterminada, el nombre del proyecto también se usa como nombre de la solución.
 
-6. En el **ubicación** , escriba la ruta de acceso donde desea crear el proyecto. Puede usar rutas de acceso absolutas y UNC. No use HTTP, FTP ni otras rutas de acceso de protocolo.
+6. En el cuadro **Ubicación** , escriba la ruta de acceso donde desea crear el proyecto. Puede usar rutas de acceso absolutas y UNC. No use HTTP, FTP ni otras rutas de acceso de protocolo.
 
     Las ubicaciones tienen los siguientes formatos:
 
-   * [*drive*\]\:
+   * [*unidad*\]\:
 
-   * \\\\*Servidor*\\*recurso compartido*
+   * \\\\*Servidor* \\ de *Recurso compartido*
 
      No use estos caracteres en la ubicación:
 
@@ -88,26 +88,26 @@ ms.locfileid: "63419610"
    ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre proyectos temporales, vea [proyectos temporales](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+   > Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre los proyectos temporales, vea [proyectos temporales](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
 
    ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Para crear un proyecto de personalización en el nivel de documento
 
-1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, en el **archivo** menú, elija **New** > **proyecto**.
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**. Si el IDE está establecido para usar la configuración de desarrollo de Visual Basic, en el menú **archivo** , elija **nuevo**  >  **proyecto**.
 
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
-2. En el panel Plantillas, bajo el nodo para el idioma que desea usar, expanda **Office/SharePoint**.
+2. En el panel plantillas, en el nodo del lenguaje que desee usar, expanda **Office/SharePoint**.
 
 3. Seleccione el nodo **Complementos de Office** .
 
-4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de nivel de documento. Para obtener una lista de plantillas de proyecto de nivel de documento disponibles, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
+4. En la lista de plantillas de proyecto, seleccione una plantilla de proyecto de nivel de documento. Para obtener una lista de las plantillas de proyecto de nivel de documento disponibles, consulte [información general sobre las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   > Si las plantillas de proyecto no son visibles al seleccionar el **complementos de Office** nodo, asegúrese de que **.NET Framework 4** o posterior esté seleccionado.
+   > Si las plantillas de proyecto no están visibles al seleccionar el nodo **Complementos de Office** , asegúrese de que está seleccionado **.NET Framework 4** o posterior.
 
-5. En el **nombre** , escriba un nombre para el proyecto. De forma predeterminada, este nombre también se usa para el documento. Si el IDE está definido para usar la configuración de desarrollo de Visual C# o la configuración de desarrollo general, escriba también la ubicación y el nombre de la solución.
+5. En el cuadro **nombre** , escriba un nombre para el proyecto. De forma predeterminada, este nombre también se usa para el documento. Si el IDE está definido para usar la configuración de desarrollo de Visual C# o la configuración de desarrollo general, escriba también la ubicación y el nombre de la solución.
 
    > [!NOTE]
    > No se pueden usar caracteres suplentes en la ruta de acceso del proyecto ni en el nombre del proyecto. Además, si tiene previsto implementar la solución para su uso sin conexión, los caracteres del nombre del proyecto deben ajustarse a las especificaciones del protocolo HTTP.
@@ -116,17 +116,17 @@ ms.locfileid: "63419610"
 
     Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
-7. Seleccione **crear un nuevo documento** si desea crear un nuevo documento para la solución, o seleccione **copiar un documento existente** si desea personalizar un documento existente.
+7. Seleccione **crear un nuevo documento** si desea crear un nuevo documento para la solución o seleccione **copiar un documento existente** si desea personalizar un documento existente.
 
-    Si crea un nuevo documento, especifique el nombre en el **nombre** cuadro y seleccione el formato del documento mediante el **formato** cuadro. Para obtener más información acerca de los formatos disponibles, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).
+    Si crea un nuevo documento, especifique el nombre en el cuadro **nombre** y seleccione el formato del documento con el cuadro **formato** . Para obtener más información acerca de los formatos disponibles, vea [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).
 
-    Si usa un documento existente, especifique la ubicación del documento en el **ruta de acceso completa del documento existente** cuadro. Puede usar rutas de acceso absolutas y rutas UNC. No use HTTP, FTP ni otras rutas de acceso de protocolo para el documento.
+    Si utiliza un documento existente, especifique la ubicación del documento en la ruta de **acceso completa del cuadro documento existente** . Puede usar rutas de acceso absolutas y rutas UNC. No use HTTP, FTP ni otras rutas de acceso de protocolo para el documento.
 
     Las ubicaciones tienen los siguientes formatos:
 
-   - [*drive*\]\:
+   - [*unidad*\]\:
 
-   - \\\\*Servidor*\\*recurso compartido*
+   - \\\\*Servidor* \\ de *Recurso compartido*
 
      No use estos caracteres en la ubicación:
 
@@ -147,20 +147,20 @@ ms.locfileid: "63419610"
    - Signo de porcentaje (%)
 
    > [!NOTE]
-   > Si usa un documento existente en un proyecto de [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], utilice únicamente documentos que se crearon en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o se convirtieron a esa versión. Del mismo modo, si usa un documento existente en un proyecto de Word 2010, utilice únicamente documentos que se crearon en Word 2010 o se convirtieron a esa versión. Si usa un documento que se creó en una versión anterior de Word, se deshabilitarán determinadas características del documento. Si intenta escribir código que usa estas características, pueden producirse errores en el proyecto. Para convertir un documento, ábralo en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, en el **archivo** pestaña en la cinta de opciones, elija **información** > **convertir**.
+   > Si usa un documento existente en un proyecto de [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], utilice únicamente documentos que se crearon en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o se convirtieron a esa versión. Del mismo modo, si usa un documento existente en un proyecto de Word 2010, utilice únicamente documentos que se crearon en Word 2010 o se convirtieron a esa versión. Si usa un documento que se creó en una versión anterior de Word, se deshabilitarán determinadas características del documento. Si intenta escribir código que usa estas características, pueden producirse errores en el proyecto. Para convertir un documento, ábralo en [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, en la pestaña **archivo** de la cinta de opciones, elija **información**  >  **convertir**.
 
 8. Elija **Finalizar**.
 
 9. Agregue la carpeta del proyecto y sus subcarpetas a la lista de ubicaciones de confianza en el Centro de confianza de Word en los casos siguientes:
 
-   - Creación de un documento de Word que se basa en un *.docm* archivo y el documento contiene un proyecto de VBA u hospeda controles de formularios Windows Forms. Agregar la carpeta del proyecto a la lista de ubicaciones de confianza servirá para asegurarnos de que el documento funciona del modo esperado en tiempo de diseño.
+   - Está creando un documento de Word que se basa en un archivo *. docm* y el documento contiene un proyecto de VBA o hospeda Windows Forms controles. Agregar la carpeta del proyecto a la lista de ubicaciones de confianza servirá para asegurarnos de que el documento funciona del modo esperado en tiempo de diseño.
 
-   - Creación de un proyecto de plantilla de Word que se basa en un *.dotx* archivo. Agregue la carpeta del proyecto a la lista de ubicaciones de confianza para que se pueda ejecutar y depurar el proyecto.
+   - Está creando un proyecto de plantilla de Word que se basa en un archivo *. dotx* . Agregue la carpeta del proyecto a la lista de ubicaciones de confianza para que se pueda ejecutar y depurar el proyecto.
 
-     Para obtener más información sobre cómo agregar un documento a las ubicaciones de confianza, consulte el sitio web de Microsoft Office Online [crear, quitar o cambiar una ubicación de confianza para los archivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
+     Para obtener más información sobre cómo agregar un documento a las ubicaciones de confianza, vea el sitio web en línea de Microsoft Office [crear, quitar o cambiar una ubicación de confianza para los archivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Vea también
-- [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
+## <a name="see-also"></a>Consulte también
+- [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)
 - [Desarrollo en colaboración de las soluciones de Office](../vsto/collaborative-development-of-office-solutions.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
-- [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

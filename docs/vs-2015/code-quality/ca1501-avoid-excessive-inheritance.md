@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf797ad67b7df2eb1f3ba1246e965ed6ebbd586d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607855"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547867"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Evite una herencia excesiva
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Evitar una herencia excesiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |Identificador de comprobación|CA1501|
-|Categoría|Microsoft. mantenibilidad|
+|Category|Microsoft. mantenibilidad|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo tiene más de cuatro niveles de profundidad en su jerarquía de herencia.
 
 ## <a name="rule-description"></a>Descripción de la regla

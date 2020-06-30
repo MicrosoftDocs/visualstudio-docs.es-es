@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: buscar texto en rangos de hojas de cálculo mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ffc06c2f50f7a304ef76ac1451ee47419143afb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985817"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547035"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Cómo: buscar texto en rangos de hojas de cálculo mediante programación
-  El método <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> del objeto <xref:Microsoft.Office.Interop.Excel.Range> permite buscar texto dentro del intervalo. Este texto también puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo, como `#NULL!` o `#VALUE!`. Para obtener más información acerca de las cadenas de error, consulte [valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
+  El <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método del <xref:Microsoft.Office.Interop.Excel.Range> objeto permite buscar texto dentro del intervalo. Este texto también puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo, como `#NULL!` o `#VALUE!` . Para obtener más información acerca de las cadenas de error, consulte [valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- En el ejemplo siguiente se busca un intervalo denominado `Fruits` y se modifica la fuente de las celdas que contienen la palabra "manzanas". Este procedimiento también utiliza el método <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>, que usa la configuración de búsqueda establecida previamente para repetir la búsqueda. Especifique la celda después de la que se va a buscar y el método de <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> controla el resto.
+ En el siguiente ejemplo se busca un rango denominado `Fruits` y se modifica la fuente de las celdas que contienen la palabra "manzanas". Este procedimiento también utiliza el <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método, que usa la configuración de búsqueda establecida previamente para repetir la búsqueda. Especifique la celda después de la que se va a buscar y el <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método controla el resto.
 
 > [!NOTE]
-> La búsqueda del método <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> se ajusta al principio del intervalo de búsqueda una vez que se ha alcanzado el final del intervalo. El código debe asegurarse de que la búsqueda no se ajusta en un bucle infinito. En el procedimiento de ejemplo se muestra una manera de controlar esto mediante el <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propiedad.
+> La <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> búsqueda del método vuelve al principio del intervalo de búsqueda una vez que se ha alcanzado el final del intervalo. El código debe asegurarse de que la búsqueda no se ajusta en un bucle infinito. En el procedimiento de ejemplo se muestra una manera de controlar esto mediante la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propiedad.
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Para buscar texto en un intervalo de la hoja de cálculo
 
@@ -48,7 +48,7 @@ ms.locfileid: "72985817"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. Compare el primer intervalo encontrado (`firstFind`) en **Nothing**. Si `firstFind` no contiene ningún valor, el código almacena el intervalo encontrado (`currentFind`).
+4. Compare el primer intervalo encontrado ( `firstFind` ) con **nada**. Si `firstFind` no contiene ningún valor, el código almacena el intervalo encontrado ( `currentFind` ).
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]
@@ -74,7 +74,7 @@ ms.locfileid: "72985817"
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con rangos](../vsto/working-with-ranges.md)
 - [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Cómo: hacer referencia a rangos de hojas de cálculo en el código mediante programación](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14bae318e052d0c1eb0e23638c0ad78b70e62f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670407"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544981"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 > [!WARNING]
 > Cuando se instala Visual Studio, obtiene el Visor de Ayuda. Para empezar a leer temas de ayuda en el visor de ayuda en lugar de en el sitio de descarga de MSDN, vaya al menú **ayuda** de Visual Studio, seleccione **establecer preferencias**de la ayuda y, a continuación, seleccione **iniciar en el visor de ayuda**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.
 
- Puede realizar lo siguiente:
+ Puede hacer lo siguiente:
 
 - Buscar y descargar conjuntos de contenido, que también se conocen como libros.
 
@@ -50,7 +50,7 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 ## <a name="navigating-the-help-viewer"></a>Navegar por el Visor de Ayuda
  Puede encontrar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante la pestaña **administrar contenido** . También puede realizar tareas adicionales mediante los botones de la barra de herramientas y buscar información adicional en la esquina inferior derecha de la ventana.
 
-|||
+|Escenario|Descripción|
 |-|-|
 |Navegación|Mediante el uso de la pestaña **Contenido**, puede mostrar contenido instalado como una jerarquía y especificar criterios para filtrar los títulos que aparecen.<br /><br /> Mediante el uso de la pestaña **Buscar**, puede buscar términos en cualquier lugar del contenido, incluidos los títulos de tema y el código.<br /><br /> Mediante el uso de la pestaña **Índice**, puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.<br /><br /> Mediante el uso de la pestaña **Favoritos**, puede guardar vínculos a temas que se usan con frecuencia y puede mostrar una lista de temas que haya visto recientemente.|
 |Visualización de temas|Cada tema aparece en una pestaña y puede abrir varios temas a la vez.|
@@ -74,5 +74,5 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 
   El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Guía del administrador del visor](../ide/help-viewer-administrator-guide.md) [de ayuda instalar y administrar el contenido local](../ide/install-and-manage-local-content.md) [localizar información](../ide/locate-information.md) [solución de problemas del visor de ayuda](../ide/troubleshooting-the-help-viewer.md)

@@ -15,24 +15,24 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 519faf2d49cb74d60d342d6bcf449f211076b0b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118c29473db09d5ed0a4fa447e27e593a88f98b3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661084"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546762"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: No sobrecargar el operador de igualdad en los tipos de referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
 |Identificador de comprobación|CA1046|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo de referencia público público o anidado sobrecarga el operador de igualdad.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -56,12 +56,12 @@ ms.locfileid: "72661084"
 
  Este ejemplo produce el siguiente resultado:
 
- **r = New (2, 2) y b = New (2, 2) son iguales? ¿No** 
-**c y a son iguales? Sí** 
-**b y a son =? No** 
-**c y a son = =? Sí**
+ **r = New (2, 2) y b = New (2, 2) son iguales? ** 
+ **¿No c y a son iguales? Sí** 
+ **b y a son =? No** 
+ **c y a son = =? Sí**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>Vea también
- <xref:System.Object.Equals%2A?displayProperty=fullName> [operadores de igualdad](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Object.Equals%2A?displayProperty=fullName>[Operadores de igualdad](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

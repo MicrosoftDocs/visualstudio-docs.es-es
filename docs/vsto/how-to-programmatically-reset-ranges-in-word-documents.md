@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Mediante programación restablecer intervalos en documentos de Word
+title: 'Cómo: restablecer intervalos en documentos de Word mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 622d807da832c4c07baf8b62c902c2b1d25cc14d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f1978a280a26af3b2a21e0bc5a4c9a238a723a9
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955709"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547126"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Procedimiento Mediante programación restablecer intervalos en documentos de Word
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Cómo: restablecer intervalos en documentos de Word mediante programación
   Use el método <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> para cambiar el tamaño de un intervalo existente en un documento de Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "62955709"
 
 ## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO
 
-### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Para restablecer un rango existente en un complemento de VSTO
+### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Para restablecer un intervalo existente en un complemento de VSTO
 
-1. El ejemplo siguiente muestra el ejemplo completo para un complemento de VSTO. Para usar este código, ejecútelo desde la clase `ThisAddIn` del proyecto.
+1. En el ejemplo siguiente se muestra el ejemplo completo de un complemento de VSTO. Para usar este código, ejecútelo desde la clase `ThisAddIn` del proyecto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Cómo: Recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Cómo: Mediante programación contraer intervalos o selecciones en documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: ampliar intervalos en documentos mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Cómo: definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Cómo: recuperar los caracteres inicial y final de los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Cómo: contraer intervalos o selecciones en documentos mediante programación](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
