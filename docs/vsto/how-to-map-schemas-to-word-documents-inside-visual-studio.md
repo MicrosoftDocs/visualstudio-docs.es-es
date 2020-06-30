@@ -1,9 +1,9 @@
 ---
-title: Procedimiento Asignar esquemas a documentos de Word en Visual Studio
+title: 'Cómo: asignar esquemas a documentos de Word en Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,53 +16,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c6f9ee9a7b636c6c12bfe2f8debcc05911e3b04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441766"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538156"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procedimiento Asignar esquemas a documentos de Word en Visual Studio
-  **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Cómo: asignar esquemas a documentos de Word en Visual Studio
+  **Importante** La información configurada en este tema con respecto a Microsoft Word se presenta exclusivamente para la ventaja y el uso de las personas y organizaciones que se encuentran fuera del Estados Unidos y de sus territorios, o bien el desarrollo de programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft antes de la 2010 de enero, cuando Microsoft quitó una implementación de funcionalidad específica relacionada con XML personalizado de Es posible que la información relativa a Microsoft Word no sea leída ni utilizada por personas u organizaciones en el Estados Unidos ni en sus territorios que utilicen o desarrollen programas que se ejecutan en, productos de Microsoft Word con licencia de Microsoft a partir del 10 de enero de 2010; Estos productos no se comportarán igual que los productos con licencia antes de esa fecha o adquiridos y con licencia para usarlos fuera del Estados Unidos.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Puede asignar un esquema XML a un documento mientras el documento está abierto en Visual Studio. Use las mismas herramientas de Microsoft Office Word que usan cuando el documento está abierto fuera de Visual Studio. El proyecto de Office crea los mismos objetos independientemente de si asigna el esquema para el documento antes o después de crear la solución de Word.
+ Puede asignar un esquema XML a un documento mientras el documento está abierto en Visual Studio. Utilice las mismas Microsoft Office herramientas de Word que usa cuando el documento está abierto fuera de Visual Studio. El proyecto de Office crea los mismos objetos si asigna el esquema al documento antes o después de crear la solución de Word.
 
 ## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Para asignar un esquema XML a un documento de Word en Visual Studio
 
-1. Abra el proyecto de documento o plantilla de Word en Visual Studio.
+1. Abra el proyecto de documento o plantilla de Word dentro de Visual Studio.
 
-2. Haga clic en el documento para mover el foco al diseñador.
+2. Haga clic en el documento para pasar el foco al diseñador.
 
-3. En la cinta de opciones, haga clic en el **Developer** ficha.
+3. En la cinta de opciones, haga clic en la pestaña **desarrollador** .
 
     > [!NOTE]
-    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: Mostrar la pestaña programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4. En el **XML** grupo, haga clic en **esquema**.
+4. En el grupo **XML** , haga clic en **esquema**.
 
-     El **plantillas y complementos** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **plantillas y complementos** .
 
-5. Haga clic en el **esquema XML** ficha.
+5. Haga clic en la pestaña **esquema XML** .
 
 6. Haga clic en **Agregar esquema**.
 
-     El **Agregar esquema** abre el cuadro de diálogo.
+     Se abre el cuadro de diálogo **Agregar esquema** .
 
-7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abierto**.
+7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abrir**.
 
-     El **configuración del esquema** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **configuración de esquema** .
 
-8. Asignar un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
+8. Asigne un alias o haga clic en **Aceptar** para agregar el esquema sin un alias.
 
 9. Haga clic en **Aceptar**.
 
-     El **estructura XML** abre la ventana.
+     Se abre la ventana **estructura XML** .
 
-10. Arrastre elementos desde el **estructura XML** ventana a los lugares en el documento donde desea que los controles correspondientes a crearse.
+10. Arrastre los elementos desde la ventana **estructura XML** hasta los lugares del documento donde desea que se creen los controles correspondientes.
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [Esquemas y datos en las personalizaciones de nivel de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

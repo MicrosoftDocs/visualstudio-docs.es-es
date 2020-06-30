@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a7c64337af94f9e88944fd15480f4b7ce1e2cb08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e7a96c95313ffee82448e3485c90868c8103814a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655266"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539807"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |Identificador de comprobación|CA1004|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  La firma de parámetro de un método genérico visible externamente no contiene tipos que se corresponden con todos los parámetros de tipo del método.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -45,13 +45,13 @@ ms.locfileid: "72655266"
  No suprima las advertencias de esta regla. Proporcionar genéricos en una sintaxis que sea fácil de entender y usar reduce el tiempo necesario para aprender y aumentar la tasa de adopción de nuevas bibliotecas.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra la sintaxis para llamar a dos métodos genéricos. Se deduce el argumento de tipo para `InferredTypeArgument` y el argumento de tipo para `NotInferredTypeArgument` debe especificarse explícitamente.
+ En el ejemplo siguiente se muestra la sintaxis para llamar a dos métodos genéricos. El argumento de tipo de `InferredTypeArgument` se deduce y el argumento de tipo de `NotInferredTypeArgument` debe especificarse explícitamente.
 
  [!code-csharp[FxCop.Design.Inference#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/cs/FxCop.Design.Inference.cs#1)]
  [!code-vb[FxCop.Design.Inference#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/vb/FxCop.Design.Inference.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005: Evitar los parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1010: Las colecciones deben implementar la interfaz genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "72655266"
 
  [CA1002: No exponer listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: No anidar tipos genéricos en firmas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+ [CA1006: No anidar tipos genéricos en signaturas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
  [CA1003: Utilizar instancias genéricas de controlador de eventos](../code-quality/ca1003-use-generic-event-handler-instances.md)
 

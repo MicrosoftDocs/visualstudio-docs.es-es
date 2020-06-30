@@ -1,9 +1,9 @@
 ---
-title: Procedimiento Asignar esquemas a hojas de cálculo en Visual Studio
+title: 'Cómo: asignar esquemas a hojas de cálculo en Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,54 +17,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428112"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538143"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedimiento Asignar esquemas a hojas de cálculo en Visual Studio
-  Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierto en Visual Studio. Use las mismas herramientas de Microsoft Office Excel que usan cuando el libro se abre fuera de Visual Studio. El proyecto de Office crea los mismos objetos independientemente de si asigna el esquema de la hoja de cálculo antes o después de crear la solución de Excel.
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Cómo: asignar esquemas a hojas de cálculo en Visual Studio
+  Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierta en Visual Studio. Use la misma Microsoft Office herramientas de Excel que utiliza cuando el libro está abierto fuera de Visual Studio. El proyecto de Office crea los mismos objetos si asigna el esquema a la hoja de cálculo antes o después de crear la solución de Excel.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> No se puede usar los esquemas XML con varias partes en soluciones de Excel.
+> No puede utilizar esquemas XML de varias partes en soluciones de Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Para asignar un esquema XML a una hoja de cálculo de Excel en Visual Studio
 
-1. Abra el proyecto de libro o plantilla de Excel en Visual Studio.
+1. Abra el libro de Excel o el proyecto de plantilla dentro de Visual Studio.
 
-2. Haga clic en la hoja de cálculo para mover el foco al diseñador.
+2. Haga clic en la hoja de cálculo para pasar el foco al diseñador.
 
 3. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .
 
     > [!NOTE]
-    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: Mostrar la pestaña programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4. En el **XML** grupo, haga clic en **origen**.
+4. En el grupo **XML** , haga clic en **origen**.
 
-     El **origen XML** abre la ventana.
+     Se abrirá la ventana **origen XML** .
 
-5. En el **origen XML** ventana, haga clic en **mapas XML**.
+5. En la ventana **origen XML** , haga clic en **asignaciones XML**.
 
-     El **mapas XML** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **asignaciones XML** .
 
-6. En el **mapas XML** cuadro de diálogo, haga clic en **agregar**.
+6. En el cuadro de diálogo **asignaciones XML** , haga clic en **Agregar**.
 
-7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abierto**.
+7. Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abrir**.
 
 8. Haga clic en **Aceptar**.
 
-     El esquema se representa en el **origen XML** ventana. En el proyecto, con tipo <xref:System.Data.DataSet> se genera basándose en el esquema y un <xref:System.Windows.Forms.BindingSource> se crea.
+     El esquema se representa en la ventana de **código fuente XML** . En el proyecto, <xref:System.Data.DataSet> se genera un tipo basado en el esquema y <xref:System.Windows.Forms.BindingSource> se crea un.
 
-9. Arrastre elementos desde el **origen XML** ventana a los lugares en la hoja de cálculo donde desea que los controles correspondientes a crearse.
+9. Arrastre los elementos desde la ventana de **código fuente XML** hasta los lugares de la hoja de cálculo en los que desea crear los controles correspondientes.
 
-     Si arrastra un elemento de esquema no es de repetición, el proyecto de Office genera una <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que se enlaza automáticamente a la <xref:System.Windows.Forms.BindingSource>.
+     Si arrastra un elemento de esquema que no es de repetición, el proyecto de Office genera un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que se enlaza automáticamente a <xref:System.Windows.Forms.BindingSource> .
 
-     Si arrastra un elemento de esquema repetitivo, el proyecto de Office genera un <xref:Microsoft.Office.Tools.Excel.ListObject> control que no se enlaza automáticamente a un origen de datos. Para obtener más información, consulte [esquemas XML y los datos en el nivel de documento personalizaciones](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
+     Si arrastra un elemento de esquema repetitivo, el proyecto de Office genera un <xref:Microsoft.Office.Tools.Excel.ListObject> control que no se enlaza automáticamente a un origen de datos. Para obtener más información, vea [esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Asignar esquemas a documentos de Word en Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
-- [Esquemas y datos en las personalizaciones de nivel de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: asignar esquemas a documentos de Word en Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
+- [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

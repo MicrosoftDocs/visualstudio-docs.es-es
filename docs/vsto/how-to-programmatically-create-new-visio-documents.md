@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear nuevos documentos de Visio mediante programación
+title: 'Cómo: crear nuevos documentos de Visio mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574842"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541536"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Procedimiento Crear nuevos documentos de Visio mediante programación
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Cómo: crear nuevos documentos de Visio mediante programación
   Cuando se crea un nuevo documento de dibujo de Visio de Microsoft Office, debe agregarse a la colección `Microsoft.Office.Interop.Visio.Documents` de documentos de Visio abiertos. Por consiguiente, el método `Microsoft.Office.Interop.Visio.Documents.Add` crea un nuevo documento de dibujo de Visio. Para obtener más información, consulte la documentación de referencia VBA para el método [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .
 
 ## <a name="create-new-blank-documents"></a>Crear nuevos documentos en blanco
@@ -42,7 +42,7 @@ ms.locfileid: "62574842"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="create-stencils-copied-from-existing-stencils"></a>Crear galerías de símbolos copiadas de otras existentes
+## <a name="create-stencils-copied-from-existing-stencils"></a>Crear galerías de símbolos copiadas de las galerías de símbolos existentes
  El método [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) puede crear una nueva galería de símbolos que sea una copia de una galería de símbolos de Visio existente. Debe proporcionar el nombre de archivo y la ruta de acceso completa de la galería de símbolos.
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Para crear una galería de símbolos nueva copiada de una existente
@@ -53,7 +53,7 @@ ms.locfileid: "62574842"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
 ## <a name="create-documents-based-on-existing-templates"></a>Crear documentos basados en plantillas existentes
- El `Microsoft.Office.Interop.Visio.Documents.Add` método puede crear un nuevo documento (un *.vsd* archivo) que se basa en una plantilla de Visio existente (una *.vst* archivo). Este método copia las galerías de símbolos, estilos y configuraciones que forman parte del área de trabajo de la plantilla. Debe proporcionar el nombre de archivo y la ruta de acceso completa de la plantilla.
+ El `Microsoft.Office.Interop.Visio.Documents.Add` método puede crear un nuevo documento (un archivo *. VSD* ) que se basa en una plantilla de Visio existente (un archivo *. VST* ). Este método copia las galerías de símbolos, estilos y configuraciones que forman parte del área de trabajo de la plantilla. Debe proporcionar el nombre de archivo y la ruta de acceso completa de la plantilla.
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Para crear un documento nuevo basado en una plantilla existente
 
@@ -65,16 +65,16 @@ ms.locfileid: "62574842"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo de código se necesita lo siguiente:
 
-- Un documento de Visio denominado `myDrawing.vsd` debe estar ubicado en un directorio denominado `Test` en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
+- Un documento de Visio denominado `myDrawing.vsd` debe encontrarse en un directorio denominado `Test` en la carpeta *Mis documentos* (para Windows XP y versiones anteriores) o en la carpeta *documentos* (para Windows Vista).
 
-- Un documento de Visio denominado `myStencil.vss` debe estar ubicado en un directorio denominado `Test` en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
+- Un documento de Visio denominado `myStencil.vss` debe encontrarse en un directorio denominado `Test` en la carpeta *Mis documentos* (para Windows XP y versiones anteriores) o en la carpeta *documentos* (para Windows Vista).
 
-- Un documento de Visio denominado `myTemplate.vst` debe estar ubicado en un directorio denominado `Test` en el *Mis documentos* carpeta (para Windows XP y versiones anteriores) o la *documentos* carpeta (para Windows Vista).
+- Un documento de Visio denominado `myTemplate.vst` debe encontrarse en un directorio denominado `Test` en la carpeta *Mis documentos* (para Windows XP y versiones anteriores) o en la carpeta *documentos* (para Windows Vista).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Soluciones de Visio](../vsto/visio-solutions.md)
 - [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)
-- [Cómo: Abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Cómo: Cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Cómo: Guardar documentos de Visio mediante programación](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Cómo: Imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Cómo: abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Cómo: cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Cómo: guardar documentos de Visio mediante programación](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Cómo: imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)

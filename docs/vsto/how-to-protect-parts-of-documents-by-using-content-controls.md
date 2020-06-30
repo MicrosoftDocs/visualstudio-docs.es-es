@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Proteger elementos de documentos mediante controles de contenido
+title: 'Cómo: proteger elementos de documentos mediante controles de contenido'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 129962209d8cfa541a34bc1575a73382cd63d7c4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254664"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541354"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedimiento Proteger elementos de documentos mediante controles de contenido
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Cómo: proteger elementos de documentos mediante controles de contenido
   Al proteger un elemento de un documento, se impide que los usuarios cambien o eliminen el contenido de ese elemento. Existen varios modos de proteger los elementos de un documento de Microsoft Office Word mediante los controles de contenido:
 
 - Puede proteger un control de contenido.
@@ -34,10 +34,10 @@ ms.locfileid: "71254664"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="EditDeleteControl"></a>Proteger un control de contenido
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Proteger un control de contenido
  Puede impedir que los usuarios editen o eliminen un control de contenido estableciendo las propiedades del control en un proyecto de nivel de documento en tiempo de diseño o en tiempo de ejecución.
 
- También puede proteger los controles de contenido que agregue a un documento en tiempo de ejecución mediante un proyecto de complemento de VSTO. Para obtener más información, vea [Cómo: Agregar controles de contenido a documentos](../vsto/how-to-add-content-controls-to-word-documents.md)de Word.
+ También puede proteger los controles de contenido que agregue a un documento en tiempo de ejecución mediante un proyecto de complemento de VSTO. Para obtener más información, vea [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>Para proteger un control de contenido en tiempo de diseño
 
@@ -53,7 +53,7 @@ ms.locfileid: "71254664"
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>Para proteger un control de contenido en tiempo de ejecución
 
-1. Establezca la `LockContents` propiedad del control de contenido en **true** para evitar que los usuarios editen el control y establezca `LockContentControl` la propiedad en **true** para evitar que los usuarios eliminen el control.
+1. Establezca la `LockContents` propiedad del control de contenido en **true** para evitar que los usuarios editen el control y establezca la `LockContentControl` propiedad en **true** para evitar que los usuarios eliminen el control.
 
      En el siguiente ejemplo de código se muestra cómo usar las propiedades <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> y <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> de dos objetos <xref:Microsoft.Office.Tools.Word.RichTextContentControl> diferentes en un proyecto de nivel de documento. Para ejecutar este código, agregue el código a la clase `ThisDocument` del proyecto y llame al método `AddProtectedContentControls` desde el controlador de eventos `ThisDocument_Startup` .
 
@@ -82,7 +82,7 @@ ms.locfileid: "71254664"
 2. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .
 
     > [!NOTE]
-    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña programador en la cinta](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)de opciones.
+    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: Mostrar la pestaña programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. En el grupo **controles** , haga clic en el botón desplegable **Grupo** y, a continuación, haga clic en **Grupo**.
 
@@ -102,10 +102,10 @@ ms.locfileid: "71254664"
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de contenido](../vsto/content-controls.md)
-- [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)

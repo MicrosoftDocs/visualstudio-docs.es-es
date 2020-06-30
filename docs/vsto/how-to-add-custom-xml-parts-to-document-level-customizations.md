@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar elementos XML personalizados a personalizaciones de nivel de documento
+title: 'Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,20 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4de0471dcc94a709156f5dc9fcce57dca8fb82bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427587"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538338"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Procedimiento Agregar elementos XML personalizados a personalizaciones de nivel de documento
-  Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, consulte [información general de elementos XML personalizados](../vsto/custom-xml-parts-overview.md).
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento
+  Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, vea [información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Visual Studio no ofrece proyectos de nivel de documento para Microsoft Office PowerPoint. Para obtener información sobre cómo agregar un elemento XML personalizado a una presentación de PowerPoint mediante el uso de un complemento de VSTO, consulte [Cómo: Agregar elementos XML personalizados a documentos mediante complementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
+> Visual Studio no ofrece proyectos de nivel de documento para Microsoft Office PowerPoint. Para obtener información sobre cómo agregar un elemento XML personalizado a una presentación de PowerPoint mediante un complemento de VSTO, consulte [Cómo: agregar elementos XML personalizados a documentos mediante complementos](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)de VSTO.
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para agregar un elemento XML personalizado a un libro de Excel
 
@@ -57,6 +57,6 @@ ms.locfileid: "63427587"
 ## <a name="robust-programming"></a>Programación sólida
  Para simplificar, este ejemplo usa una cadena XML que se define como una variable local en el método. Normalmente, debe obtener el XML desde un origen externo, como un archivo o una base de datos.
 
-## <a name="see-also"></a>Vea también
-- [Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
-- [Cómo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+## <a name="see-also"></a>Consulte también
+- [Información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
+- [Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

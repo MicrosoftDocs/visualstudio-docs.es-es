@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 647fef2968971cddb6a14cc19e53eed979b9c151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 772c9bee3f43c42701bfa460c622f4a225ec59cb
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661519"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539183"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar aceleradores duplicados
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar los aceleradores duplicados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |Identificador de comprobación|CA1301|
-|Categoría|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo extiende <xref:System.Windows.Forms.Control?displayProperty=fullName> y contiene dos o más controles de nivel superior que tienen claves de acceso idénticas que se almacenan en un archivo de recursos.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -47,9 +47,9 @@ ms.locfileid: "72661519"
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una forma mínima que contiene dos controles que tienen claves de acceso idénticas. Las claves se almacenan en un archivo de recursos, que no se muestra; sin embargo, sus valores aparecen en las líneas `checkBox.Text` comentadas. El comportamiento de los aceleradores duplicados se puede examinar mediante el intercambio de las líneas de `checkBox.Text` con sus homólogos marcados con comentarios. Sin embargo, en este caso, el ejemplo no generará una advertencia de la regla.
+ En el ejemplo siguiente se muestra una forma mínima que contiene dos controles que tienen claves de acceso idénticas. Las claves se almacenan en un archivo de recursos, que no se muestra; sin embargo, sus valores aparecen en las líneas comentadas `checkBox.Text` . El comportamiento de los aceleradores duplicados se puede examinar intercambiando las `checkBox.Text` líneas con sus homólogos comentados. Sin embargo, en este caso, el ejemplo no generará una advertencia de la regla.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
-## <a name="see-also"></a>Vea también
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [de recursos en aplicaciones de escritorio](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Recursos de aplicaciones de escritorio](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

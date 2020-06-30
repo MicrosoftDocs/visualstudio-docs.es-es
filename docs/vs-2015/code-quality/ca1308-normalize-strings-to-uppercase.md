@@ -15,24 +15,24 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661385"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538741"
 ---
-# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizar las cadenas en mayúsculas
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizar cadenas en mayúsculas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |Identificador de comprobación|CA1308|
-|Categoría|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una operación normaliza una cadena a minúsculas.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -44,5 +44,5 @@ ms.locfileid: "72661385"
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir un mensaje de advertencia cuando no se toma la decisión de seguridad basada en el resultado (por ejemplo, cuando se muestra en la interfaz de usuario).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Advertencias de globalización](../code-quality/globalization-warnings.md)

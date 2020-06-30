@@ -15,28 +15,28 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 06d961fee28fa67f1e4f712564f6b3d5ff4073ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651630"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538806"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Reemplazar el método GetHashCode al reemplazar el método Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Invalidar el método GetHashCode al invalidar el método Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |Identificador de comprobación|CA2218|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Un tipo público invalida <xref:System.Object.Equals%2A?displayProperty=fullName> pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+## <a name="cause"></a>Causa
+ Un tipo público invalida pero no <xref:System.Object.Equals%2A?displayProperty=fullName> invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Object.GetHashCode%2A> devuelve un valor, basado en la instancia actual, que es adecuado para algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
+ <xref:System.Object.GetHashCode%2A>Devuelve un valor, basado en la instancia actual, que es adecuado para algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,10 +54,10 @@ ms.locfileid: "72651630"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Tipos que implementan <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Tipos que implementan<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.GetHashCode%2A>. Para un par de objetos del mismo tipo, debe asegurarse de que la implementación devuelve el mismo valor si la implementación de <xref:System.Object.Equals%2A> devuelve `true` para el par.
+ Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.GetHashCode%2A> . Para un par de objetos del mismo tipo, debe asegurarse de que la implementación devuelve el mismo valor si la implementación de <xref:System.Object.Equals%2A> devuelve `true` para el par.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
@@ -71,7 +71,7 @@ ms.locfileid: "72651630"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorClass/cs/FxCop.Usage.GetHashCodeErrorClass.cs#1)]
 
 ### <a name="comments"></a>Comentarios
- En el ejemplo siguiente se corrige la infracción invalidando <xref:System.Object.GetHashCode>.
+ En el ejemplo siguiente se corrige la infracción mediante la invalidación de <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedClass/cs/FxCop.Usage.GetHashCodeFixedClass.cs#1)]
@@ -85,7 +85,7 @@ ms.locfileid: "72651630"
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeErrorStruct/cs/FxCop.Usage.GetHashCodeErrorStruct.cs#1)]
 
 ### <a name="comments"></a>Comentarios
- En el ejemplo siguiente se corrige la infracción invalidando <xref:System.Object.GetHashCode>.
+ En el ejemplo siguiente se corrige la infracción mediante la invalidación de <xref:System.Object.GetHashCode> .
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.GetHashCodeFixedStruct/cs/FxCop.Usage.GetHashCodeFixedStruct.cs#1)]
@@ -95,13 +95,13 @@ ms.locfileid: "72651630"
 
  [CA2225: Las sobrecargas del operador tienen alternativas con nombre](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Los operadores deben tener sobrecargar simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Los operadores deben tener sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
  [CA2224: Invalidar Equals al sobrecargar operadores de igualdad](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

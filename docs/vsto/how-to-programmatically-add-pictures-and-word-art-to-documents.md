@@ -1,7 +1,7 @@
 ---
 title: Agregar imágenes y dibujos de Word a documentos mediante programación
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253817"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538091"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedimiento Agregar imágenes y dibujos de Word a documentos mediante programación
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Cómo: agregar imágenes y dibujos de Word a documentos mediante programación
   Puede agregar imágenes y objetos de dibujo a los documentos en tiempo de diseño o en tiempo de ejecución. WordArt permite agregar texto decorativo a documentos de Microsoft Office Word. Estos efectos de texto especiales son objetos de dibujo que se pueden personalizar e insertar en el documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -97,11 +97,11 @@ ms.locfileid: "71253817"
 
 ## <a name="compile-the-code"></a>Compilar el código
 
-- Debe existir una imagen con el nombre *SamplePicture. jpg* en la unidad C.
+- Debe haber una imagen denominada *SamplePicture.jpg* en la unidad C.
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Cómo: Insertar texto en documentos de Word mediante programación](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Cómo: Restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Cómo: Guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Cómo: insertar texto en documentos de Word mediante programación](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Cómo: restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Cómo: guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -1,7 +1,7 @@
 ---
-title: Agregar elementos XML personalizados a documentos mediante complementos VSTO
+title: Agregar elementos XML personalizados a documentos mediante complementos de VSTO
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a22620fc112dab49942340175860303f50f9c39e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210786"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538299"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Procedimiento Agregar elementos XML personalizados a documentos mediante complementos de VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO
   Puede almacenar datos XML en los siguientes tipos de documentos creando un elemento XML personalizado en un complemento de VSTO:
 
 - Un libro de Microsoft Office Excel.
@@ -35,9 +35,9 @@ ms.locfileid: "66210786"
 
 - Una presentación de Microsoft Office PowerPoint.
 
-  Para obtener más información, consulte [información general de elementos XML personalizados](../vsto/custom-xml-parts-overview.md).
+  Para obtener más información, vea [información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md).
 
-  **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de aplicación para Excel, PowerPoint y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
+  **Aplicación:** la información de este tema se aplica a los proyectos de nivel de aplicación de Excel, PowerPoint y Word. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para agregar un elemento XML personalizado a un libro de Excel
 
@@ -48,7 +48,7 @@ ms.locfileid: "66210786"
      [!code-vb[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/VisualBasic/trin_addcustomxmlpartexcelapplevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelAppLevel/ThisAddIn.cs#1)]
 
-2. Agregar el `AddCustomXmlPartToWorkbook` método a la `ThisAddIn` clase en un proyecto de complemento VSTO para Excel.
+2. Agregue el `AddCustomXmlPartToWorkbook` método a la `ThisAddIn` clase en un proyecto de complemento de VSTO para Excel.
 
 3. Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre un libro, llame al método desde un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> .
 
@@ -61,26 +61,26 @@ ms.locfileid: "66210786"
      [!code-vb[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.cs#1)]
 
-2. Agregar el `AddCustomXmlPartToDocument` método a la `ThisAddIn` clase en un proyecto de complemento VSTO para Word.
+2. Agregue el `AddCustomXmlPartToDocument` método a la `ThisAddIn` clase en un proyecto de complemento de VSTO para Word.
 
 3. Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre un documento, llame al método desde un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Para agregar un elemento XML personalizado a una presentación de PowerPoint
 
-1. Agregue un nuevo <xref:Microsoft.Office.Core.CustomXMLPart> de objeto para el [Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) colección en la presentación. <xref:Microsoft.Office.Core.CustomXMLPart> contiene la cadena XML que desea almacenar en la presentación.
+1. Agregue un nuevo <xref:Microsoft.Office.Core.CustomXMLPart> objeto a la colección [Microsoft. Office. Interop. PowerPoint. _Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) en la presentación. <xref:Microsoft.Office.Core.CustomXMLPart> contiene la cadena XML que desea almacenar en la presentación.
 
      En el ejemplo de código siguiente se agrega un elemento XML personalizado a la presentación especificada.
 
      [!code-csharp[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.vb#1)]
 
-2. Agregar el `AddCustomXmlPartToPresentation` método a la `ThisAddIn` clase en un proyecto de complemento VSTO para PowerPoint.
+2. Agregue el `AddCustomXmlPartToPresentation` método a la `ThisAddIn` clase en un proyecto de complemento de VSTO para PowerPoint.
 
-3. Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre una presentación, llamar al método desde un controlador de eventos para el [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) eventos.
+3. Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre una presentación, llame al método desde un controlador de eventos para el evento [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) .
 
 ## <a name="robust-programming"></a>Programación sólida
  Para simplificar, este ejemplo usa una cadena XML que se define como una variable local en el método. Normalmente, debe obtener el XML desde un origen externo, como un archivo o una base de datos.
 
-## <a name="see-also"></a>Vea también
-- [Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
-- [Cómo: Agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+## <a name="see-also"></a>Consulte también
+- [Información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
+- [Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

@@ -15,35 +15,35 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ebce51d360518d1cc66f652714c59d27751586b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 960c74625a04b209dc9aa251256e994517a3a52f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668877"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538533"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: No producir excepciones en cláusulas de excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |Identificador de comprobación|CA2219|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No problemático, problemático|
 
-## <a name="cause"></a>Motivo
- Se produce una excepción desde una cláusula `finally`, un filtro o un error.
+## <a name="cause"></a>Causa
+ Se produce una excepción desde una `finally` cláusula, filtro o error.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Cuando se genera una excepción en una cláusula de excepción, aumenta considerablemente la dificultad de la depuración.
 
- Cuando se produce una excepción en una cláusula `finally` o Fault, la nueva excepción oculta la excepción activa, si está presente. Esto hace que el error original sea difícil de detectar y depurar.
+ Cuando se produce una excepción en una `finally` cláusula de error o, la nueva excepción oculta la excepción activa, si está presente. Esto hace que el error original sea difícil de detectar y depurar.
 
  Cuando se genera una excepción en una cláusula de filtro, el tiempo de ejecución detecta la excepción de forma silenciosa y hace que el filtro se evalúe como false. No hay ninguna manera de indicar la diferencia entre el filtro que se evalúa como false y una excepción que se inicia desde un filtro. Esto hace que sea difícil detectar y depurar errores en la lógica del filtro.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir esta infracción de esta regla, no genere explícitamente una excepción a partir de una cláusula `finally`, filtro o error.
+ Para corregir esta infracción de esta regla, no genere explícitamente una excepción a partir de una `finally` cláusula, filtro o error.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima una advertencia para esta regla. No hay escenarios en los que una excepción generada en una cláusula de excepción proporciona una ventaja para el código de ejecución.
@@ -51,5 +51,5 @@ ms.locfileid: "72668877"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1065: No producir excepciones en ubicaciones inesperadas](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Advertencias de diseño](../code-quality/design-warnings.md)

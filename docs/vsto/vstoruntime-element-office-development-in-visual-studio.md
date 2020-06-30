@@ -1,7 +1,7 @@
 ---
-title: '&lt;vstoRuntime&gt; elemento (desarrollo de Office en Visual Studio)'
+title: '&lt;&gt;elemento vstoRuntime (desarrollo de Office en Visual Studio)'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98f483748cce9c3a053c800f9bdd6e0f3d651da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982137"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541887"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt; elemento (desarrollo de Office en Visual Studio)
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento vstoRuntime (desarrollo de Office en Visual Studio)
   El elemento `vstoRuntime` del espacio de nombres `vstav3` contiene una versión compatible de Visual Studio Tools para Office Runtime para una solución de Office concreta.
 
 ## <a name="syntax"></a>Sintaxis
@@ -40,14 +40,14 @@ ms.locfileid: "62982137"
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|`release`|Obligatorio. Versión de lanzamiento de Visual Studio Tools para Office Runtime.|
-|`version`|Obligatorio. Número de versión de Visual Studio Tools para Office Runtime.|
+|`release`|Necesario. Versión de lanzamiento de Visual Studio Tools para Office Runtime.|
+|`version`|Necesario. Número de versión de Visual Studio Tools para Office Runtime.|
 |`supportUrl`|Opcional. Vínculo a la ubicación de instalación de Visual Studio Tools para Office Runtime.|
 
  `vstoRuntime` no tiene elementos.
 
 ## <a name="example"></a>Ejemplo
- En el siguiente ejemplo de código, se muestra el elemento `vstoRuntime` en un manifiesto de aplicación para una solución de Office implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
+ En el siguiente ejemplo de código, se muestra el elemento `vstoRuntime` en el manifiesto de aplicación de una solución de Office implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más grande proporcionado en los [manifiestos de aplicación para las soluciones de Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <vstav3:vstoRuntime
@@ -56,7 +56,7 @@ ms.locfileid: "62982137"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)

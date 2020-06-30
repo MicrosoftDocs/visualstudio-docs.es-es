@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear soluciones de lenguajes específicos de dominio'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594674"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541796"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visual Studio especializada.
@@ -27,7 +27,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visua
 
 Antes de poder iniciar este procedimiento, Instale estos componentes:
 
-- Programa para la mejora
+- Visual Studio
 - SDK de Visual Studio (instalado como parte de la carga de trabajo **desarrollo de extensiones de Visual Studio** )
 - SDK de modelado (instalado como componente de Visual Studio)
 
@@ -38,7 +38,7 @@ Antes de poder iniciar este procedimiento, Instale estos componentes:
 1. Inicie el Asistente para DSL mediante la creación de un nuevo proyecto de **Diseñador de lenguaje específico de dominio** .
 
    > [!NOTE]
-   > Preferiblemente, el nombre que elija para el proyecto debe ser un identificador visual C# válido, ya que se podría usar para generar código.
+   > Preferiblemente, el nombre que elija para el proyecto debe ser un identificador de Visual C# válido, ya que se podría usar para generar código.
 
    ::: moniker range="vs-2017"
 
@@ -65,7 +65,7 @@ Antes de poder iniciar este procedimiento, Instale estos componentes:
    > [!NOTE]
    > Si ve un mensaje que le avisa de que no desea ejecutar plantillas de texto de orígenes que no son de confianza, haga clic en **Aceptar**. Puede establecer que este mensaje no vuelva a aparecer.
 
-## <a name="settings"></a>Páginas del Asistente para Diseñador DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Páginas del Asistente para Diseñador DSL
  Puede dejar algunos de los campos sin modificar con respecto a sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.
 
 ### <a name="solution-settings-page"></a>Página de configuración de la solución
@@ -73,7 +73,7 @@ Antes de poder iniciar este procedimiento, Instale estos componentes:
 Elija una plantilla similar a la del DSL que desea crear. Las distintas plantillas proporcionan puntos de partida útiles. Al seleccionar una plantilla de solución, el asistente muestra una descripción. Para obtener más información acerca de las plantillas de solución, consulte [elegir una plantilla de solución de lenguaje específico de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **¿Qué nombre desea asignar a su lenguaje específico de dominio?**
-El valor predeterminado es el nombre de la solución. El código se genera a partir de este valor. Debe ser válido como nombre de C# clase.
+El valor predeterminado es el nombre de la solución. El código se genera a partir de este valor. Debe ser válido como un nombre de clase de C#.
 
 ### <a name="file-extension-page"></a>Página extensión de archivo
  **¿Qué extensión deben usar los archivos de modelo?**
@@ -116,7 +116,7 @@ De forma predeterminada, se crea un nombre formado por los nombres de empresa y 
 
  Para obtener más información sobre los nombres seguros, vea [crear y utilizar ensamblados con nombre seguro](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -15,24 +15,24 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04109e821d3a739b96ad63e1a441089a5d479cd8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656057"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540782"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: No reducir la visibilidad del miembro heredado
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: No disminuir la visibilidad del miembro heredado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |Identificador de comprobación|CA2222|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método privado de un tipo no sellado tiene una firma idéntica a un método público declarado en un tipo base. El método privado no es final.
 
 ## <a name="rule-description"></a>Descripción de la regla

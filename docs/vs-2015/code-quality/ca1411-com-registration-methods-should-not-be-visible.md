@@ -15,31 +15,31 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f3ddd2c90d23884bd08a90560dcc5ed0fe700aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f001a2bb4920ebfb3f5cff3745639bd346a0a920
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652716"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540146"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |Identificador de comprobación|CA1411|
-|Categoría|Microsoft. Interoperability|
+|Category|Microsoft. Interoperability|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un método marcado con la <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o el atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> es visible externamente.
+## <a name="cause"></a>Causa
+ Un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo o es visible externamente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando un ensamblado se registra con el modelo de objetos componentes (COM), las entradas se agregan al registro para cada tipo visible para COM en el ensamblado. Los métodos marcados con los atributos <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> y <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> se llaman durante los procesos de registro y anulación de registro, respectivamente, para ejecutar el código de usuario específico del registro o anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
+ Cuando un ensamblado se registra con el modelo de objetos componentes (COM), las entradas se agregan al registro para cada tipo visible para COM en el ensamblado. Los métodos marcados con los <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributos y se llaman durante los procesos de registro y anulación de registro, respectivamente, para ejecutar código de usuario específico del registro o anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la accesibilidad del método a `private` o `internal` (`Friend` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Para corregir una infracción de esta regla, cambie la accesibilidad del método a `private` o `internal` ( `Friend` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
@@ -51,7 +51,7 @@ ms.locfileid: "72652716"
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComRegistration2/vb/FxCop.Interoperability.ComRegistration2.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1410: Los métodos de registro COM se deben asociar](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+ [CA1410: Los métodos de registro COM deben coincidir](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
-## <a name="see-also"></a>Vea también
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [registrar ensamblados con com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm. exe (herramienta de registro de ensamblados)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+## <a name="see-also"></a>Consulte también
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[Registrar ensamblados conRegasm.exe com](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [(herramienta de registro de ensamblados)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
