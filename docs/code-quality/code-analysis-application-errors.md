@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587789"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521321"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 
@@ -26,14 +26,14 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 
 ## <a name="in-this-section"></a>En esta sección
 
-|||
+|Código|Descripción|
 |-|-|
 |[CA0001](ca0001.md)|Se inició una excepción en la herramienta de análisis de código administrado que no indica una condición de error esperada.|
 |[CA0051](ca0051.md)|No se seleccionaron reglas.|
 |[CA0052](ca0052.md)|No se seleccionó ningún destino para analizar.|
 |[CA0053](ca0053.md)|No se pudo cargar el ensamblado de regla.|
 |[CA0054](ca0054.md)|Un ensamblado de regla personalizado tiene recursos XML no válidos.|
-|[CA0055](ca0055.md)|No se pudo cargar el archivo:\<ruta de acceso >|
+|[CA0055](ca0055.md)|No se pudo cargar el archivo:\<path>|
 |[CA0056](ca0056.md)|Un archivo de proyecto tiene una versión incorrecta de la herramienta de análisis.|
 |[CA0057](ca0057.md)|No se pueden asignar infracciones al conjunto actual de destinos y reglas.|
 |[CA0058](ca0058.md)|No se pueden cargar los ensamblados a los que se hace referencia.|
@@ -46,7 +46,7 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 |[CA0065](ca0065.md)|Construcción de metadatos no admitida: el tipo '*TypeName*' contiene una propiedad y un campo con el mismo nombre '*PropertyFieldName*'|
 |[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado a **/TargetFrameworkVersion** no es una versión reconocida.|
 |[CA0067](ca0067.md)|No se encontró el directorio.|
-|[CA0068](ca0068.md)|No se encontró la información de depuración para el ensamblado de destino *' AssemblyName '* .|
+|[CA0068](ca0068.md)|No se encontró la información de depuración para el ensamblado de destino *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Usar una plataforma alternativa. No se encontró *FrameworkVersion1* . Usar *FrameworkVersion2* en su lugar. Para obtener los mejores resultados del análisis, asegúrese de que está instalada la versión correcta de Framework.|
 |[CA0070](ca0070.md)|No se puede cargar el ensamblado o el tipo debido a permisos de seguridad.|
 |[CA0501](ca0501.md)|No se puede leer el informe de salida.|

@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Acceso mediante programación a los contactos de Outlook
+title: 'Cómo: obtener acceso a los contactos de Outlook mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967688"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520101"
 ---
-# <a name="how-to-programmatically-access-outlook-contacts"></a>Procedimiento Acceso mediante programación a los contactos de Outlook
-  Este ejemplo busca todos los contactos cuyos apellidos contengan una cadena de búsqueda especificado.
+# <a name="how-to-programmatically-access-outlook-contacts"></a>Cómo: obtener acceso a los contactos de Outlook mediante programación
+  Este ejemplo busca todos los contactos cuyos nombres contienen una cadena de búsqueda especificada.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,11 +32,11 @@ ms.locfileid: "62967688"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
-- Contactos cuyos apellidos contengan la cadena "**Na"** (por ejemplo, Tzipi Butnaru) en el **contactos** carpeta.
+- Contactos cuyos apellidos contienen la cadena "**na"** (por ejemplo, Tzipi Butnaru) en la carpeta **contactos** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Trabajar con elementos de contacto](../vsto/working-with-contact-items.md)
-- [Cómo: Agregar una entrada a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
-- [Cómo: Buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Cómo: Buscar una dirección de correo electrónico en los contactos mediante programación](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
-- [Cómo: Eliminar contactos de Outlook mediante programación](../vsto/how-to-programmatically-delete-outlook-contacts.md)
+- [Cómo: agregar una entrada a contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Cómo: buscar una dirección de correo electrónico en contactos mediante programación](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [Cómo: eliminar contactos de Outlook mediante programación](../vsto/how-to-programmatically-delete-outlook-contacts.md)
