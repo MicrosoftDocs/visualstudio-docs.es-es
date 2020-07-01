@@ -1,21 +1,21 @@
 ---
 title: Agregar comandos y gestos a diagramas de dependencia
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747662"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531396"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 
@@ -38,13 +38,13 @@ El método más rápido para crear una extensión consiste en usar la plantilla 
 
    La plantilla crea un proyecto que contiene un pequeño ejemplo funcional.
 
-2. Para probar la extensión, presione **Ctrl** +**F5** o **F5**.
+2. Para probar la extensión, presione **Ctrl** + **F5** o **F5**.
 
     Se inicia una instancia experimental de Visual Studio. En esta instancia, cree un diagrama de dependencia. El comando o extensión de gesto debería funcionar en este diagrama.
 
 3. Cierre la instancia experimental y modifique el código de muestra.
 
-4. Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para obtener más información, vea una de las secciones siguientes:
+4. Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para más información, consulte una de estas secciones:
 
     [Definir un comando de menú](#command)
 
@@ -96,19 +96,19 @@ Si desea crear un VSIX que contenga comandos, validadores de capas y otras exten
    |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir las extensiones de modelado|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]|Actualizar formas y diagramas|
 
-6. Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para obtener más información, vea una de las secciones siguientes:
+6. Edite el archivo de clases en el proyecto de biblioteca de clases de C# para que contenga el código de la extensión. Para más información, consulte una de estas secciones:
 
      [Definir un comando de menú](#command)
 
      [Definir un controlador de gestos](#gesture)
 
-7. Para probar la característica, presione **Ctrl** +**F5** o **F5**.
+7. Para probar la característica, presione **Ctrl** + **F5** o **F5**.
 
    Se abre una instancia experimental de Visual Studio. En esta instancia, cree o abra un diagrama de dependencia.
 
 8. Para instalar VSIX en la instancia principal de Visual Studio, o en otro equipo, busque el archivo **. vsix** en el directorio **bin** del Proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el explorador de archivos.
 
-## <a name="command"></a> Definir un comando de menú
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definir un comando de menú
 
 Puede agregar más definiciones de comando de menú a un proyecto de gesto o comando existente. Cada comando se define con una clase que tiene las siguientes características:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definir un controlador de gestos
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definir un controlador de gestos
 
 Un controlador de gestos responde cuando el usuario arrastra elementos hasta el diagrama de dependencia y cuando el usuario hace doble clic en cualquier parte del diagrama.
 

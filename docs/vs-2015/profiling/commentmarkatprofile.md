@@ -44,12 +44,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
  `szComment`  
   
- Puntero a la cadena de texto que se va a insertar. Esta cadena debe contener menos de 256 caracteres, incluido el terminador NULL.  
+ Puntero a la cadena de texto que se va a insertar. La cadena debe contener menos de 256 caracteres, incluido el terminador NULL.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -59,7 +59,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|La cadena supera el máximo de 256 caracteres. La cadena del comentario se trunca y se registran la marca y el comentario.|  
 |MARK_OK|Se devuelve MARK_OK para indicar que la operación es correcta.|  
   
-## <a name="remarks"></a>Observaciones  
+## <a name="remarks"></a>Comentarios  
  El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando Mark o con las funciones de la API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile). Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede utilizar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .vsp.  
   
 > [!IMPORTANT]
@@ -70,10 +70,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 ## <a name="function-information"></a>Información de la función  
   
-|Elemento|Value|  
+|Elemento|Valor|  
 |-|-|  
-|**Encabezado**|Incluye VSPerf.h|  
-|**Biblioteca**|Use VSPerf.lib.|  
+|**Header**|Incluye VSPerf.h|  
+|**Library**|Usa VSPerf.lib|  
 |**Unicode**|Se implementa como CommentMarkAtProfileW (Unicode) y CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  

@@ -14,28 +14,28 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a871f726dc13f91c1dfd57471c12ee5cbfeb245
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918864"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531409"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizar StringBuilder para las concatenaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [DA0001: Use StringBuilder para las concatenaciones](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
-|||  
+|Elemento|Valor|  
 |-|-|  
-|Id. de regla|DA0001|  
+|Identificador de regla|DA0001|  
 |Categoría|Uso de .NET Framework|  
-|Métodos de generación de perfiles|Muestreo<br /><br /> Instrumentación|  
-|Mensaje|Considere la posibilidad de utilizar StringBuilder para concatenaciones de cadena|  
-|Tipo de mensaje|advertencia|  
+|Métodos de generación de perfiles|muestreo<br /><br /> Instrumentación|  
+|Message|Considere la posibilidad de utilizar StringBuilder para concatenaciones de cadena|  
+|Tipo de mensaje|Advertencia|  
   
-## <a name="cause"></a>Motivo  
- Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas de varios segmentos.  
+## <a name="cause"></a>Causa  
+ Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas a partir de varios segmentos.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
  Un objeto <xref:System.String> es inmutable. Por lo tanto, cualquier modificación en la cadena crea un nuevo objeto de cadena y la recolección de elementos no utilizados del original. Este comportamiento es el mismo si llama a String.Concat explícitamente o utiliza los operadores de concatenación de cadenas, como + o +=. El rendimiento del programa puede reducirse si se llama a estos métodos con frecuencia, como cuando se agregan caracteres a una cadena en un bucle ajustado.  
@@ -43,6 +43,6 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [DA0001: U
  La clase StringBuilder es un objeto mutable y, a diferencia de System.String, la mayoría de los métodos en StringBuilder que modifican una instancia de esta clase devuelven una referencia a esa misma instancia. Puede insertar caracteres o anexar texto a una instancia de StringBuilder y quitar o reemplazar caracteres en la instancia sin necesidad de asignar una nueva instancia y eliminar la instancia original.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
- Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Detalles de la función](../profiling/function-details-view.md) de los datos del perfil de muestreo. Busque las secciones del programa que utilizan la concatenación de cadenas con mayor frecuencia. Utilice la clase StringBuilder para las manipulaciones de cadenas complejas, incluidas las operaciones de concatenación de cadenas frecuentes.  
+ Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la vista [Detalles de la función](../profiling/function-details-view.md) de los datos del perfil de muestreo. Busque las secciones del programa que utilizan la concatenación de cadenas con mayor frecuencia. Utilice la clase StringBuilder para las manipulaciones de cadenas complejas, incluidas las operaciones de concatenación de cadenas frecuentes.  
   
  Para obtener más información sobre cómo trabajar con cadenas, consulte la sección [Operaciones de cadenas](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) de [Capítulo 5: Mejorar el rendimiento del código administrado](https://msdn.microsoft.com/library/ms998547.aspx) en la biblioteca Patrones y prácticas de Microsoft.

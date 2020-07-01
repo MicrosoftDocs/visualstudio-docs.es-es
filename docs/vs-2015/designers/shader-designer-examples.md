@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 845c54f382a487578df4d8afbe78f4acde9f358a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85531566"
 ---
 # <a name="shader-designer-examples"></a>Ejemplos del Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Los artículos de esta sección de la documentación contienen ejemplos en los q
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|||
+|Title|Descripción|
 |-|-|
 |[Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)|Se muestra un sombreador que aplica un color constante a un objeto.|
 |[Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)|Se muestra un sombreador que aplica el modelo de iluminación Lambert clásico a un objeto.|
-|[Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)|Se muestra un sombreador que aplica el modelo de iluminación clásico Phong a un objeto.|
-|[Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md)|Se muestra un sombreador que aplica una textura a un objeto.|
-|[Cómo: Crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)|Se muestra un sombreador que convierte una textura en escala de grises durante la representación y la aplica a un objeto.|
+|[Cómo: crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)|Se muestra un sombreador que aplica el modelo de iluminación clásico Phong a un objeto.|
+|[Cómo: crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md)|Se muestra un sombreador que aplica una textura a un objeto.|
+|[Cómo: crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)|Se muestra un sombreador que convierte una textura en escala de grises durante la representación y la aplica a un objeto.|
 |[Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md)|Se muestra un sombreador que modula un color en función de la geometría de un objeto y lo aplica al objeto.|
-|[Tutorial: Crear una bola de billar 3D realista](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|Se muestra cómo combinar recursos de textura y técnicas del sombreador para crear un sombreador de bola de billar realista.|
+|[Tutorial: crear una bola de billar 3D realista](../designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md)|Se muestra cómo combinar recursos de textura y técnicas del sombreador para crear un sombreador de bola de billar realista.|
 |[Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)|Se explica cómo exportar un sombreador DGSL en un formato que pueda usar su aplicación.|
