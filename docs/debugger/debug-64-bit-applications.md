@@ -1,7 +1,7 @@
 ---
 title: Depuración de aplicaciones de 64 bits | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911587"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350776"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicaciones de 64 bits
 Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo local o en un equipo remoto.

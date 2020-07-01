@@ -2,19 +2,19 @@
 title: Análisis del uso de CPU | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638833"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543395"
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -61,7 +61,7 @@ A partir de Visual Studio 2019, puede hacer clic en los botones **Expandir ruta 
 
 ### <a name="cpu-usage-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Columnas de datos de uso de CPU
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Total de CPU [unidad, porcentaje]**|![Porcentaje de ecuación de datos total](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función y las funciones llamadas por la función en el intervalo de tiempo seleccionado. Esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU**, que compara la actividad total de CPU en un intervalo de tiempo con el total de CPU disponible.|
 |**CPU propia [unidad, porcentaje]**|![Porcentaje de autoecuación](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función en el intervalo de tiempo seleccionado, sin incluir las funciones llamadas por la función.|
@@ -80,7 +80,7 @@ Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La p�
 ![Estructura del árbol de llamadas](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Estructura del árbol de llamadas")
 ::: moniker-end
 
-|||
+|Imagen|Descripción|
 |-|-|
 |![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El nodo de nivel superior de los árboles de llamadas de Uso de CPU es un pseudonodo.|
 |![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, cuando se desactiva la opción **Mostrar código externo**, el nodo de segundo nivel es un nodo **[Código externo]** . El nodo contiene el código del sistema y del marco que inicia y detiene la aplicación, dibuja la interfaz de usuario, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|

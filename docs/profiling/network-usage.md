@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144698"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541718"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.
@@ -53,7 +53,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 
  ![Panel de detalles de la herramienta de red](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Encabezados**|Información acerca de los encabezados de solicitud del evento.|
 |**Cuerpo**|Datos de carga de contenido de solicitud y respuesta.|

@@ -5,15 +5,15 @@ ms.author: jillfra
 manager: jillfra
 monikerRange: vs-2017
 ms.date: 11/13/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 55865e4907175664e8a8bfb8a813ff8d02c85b69
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 2e404d6a258ebb480b3eb02e615097872714db03
+ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638430"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85371552"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Ver el rendimiento y los detalles de trabajos recientes
 

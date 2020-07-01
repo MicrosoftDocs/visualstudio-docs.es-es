@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188372"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535166"
 ---
 # <a name="debugging-applications"></a>Aplicaciones de depuración
 Las secciones siguientes tratan la depuración de tipos específicos de aplicaciones. Diferentes tipos de aplicaciones en distintos lenguajes requieren configuraciones y técnicas propias, y presentan distintos problemas que es necesario depurar.
 
 ## <a name="debugging-for-different-types-of-applications"></a>Depuración para distintos tipos de aplicaciones
 
-|||
+|Title|Descripción|
 |-|-|
 |[Depuración de aplicaciones para UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Describe cómo depurar las aplicaciones para UWP.|
 |[Depuración del código administrado](../debugger/debugging-managed-code.md)|Describe cómo depurar código administrado (Visual C#, Visual Basic, F# y C++/CLI).|

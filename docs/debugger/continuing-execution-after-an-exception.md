@@ -1,7 +1,7 @@
 ---
 title: Continuación de la ejecución después de una excepción | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745648"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350685"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
 Cuando el depurador interrumpa la ejecución debido a una excepción, verá la **aplicación auxiliar de excepciones** de forma predeterminada. Si ha deshabilitado la **aplicación auxiliar de excepciones** en el cuadro de diálogo **Opciones**, se mostrará el cuadro de diálogo **Aplicación auxiliar de excepciones** (C# o Visual Basic) o **Excepción**.

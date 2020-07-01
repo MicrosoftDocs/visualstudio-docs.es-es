@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 26da567918ea25f212c4c03e87e81d5cc18b60ab
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285990"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537285"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 
@@ -100,7 +100,7 @@ En la vista de detalles es donde se invierte la mayor parte del tiempo en el an�
 
 Se admiten los siguientes eventos:
 
-|||
+|Nombre|Descripción|
 |-|-|
 |**Análisis**|Tiempo invertido en analizar archivos XAML y crear objetos.<br /><br /> Si se expande un nodo **Análisis** de **Detalles de la escala de tiempo**, se muestra la cadena de dependencia de todos los archivos XAML que se han analizado como resultado del evento raíz. Esta sugerencia permite identificar análisis de archivos y creación de objetos innecesarios en escenarios sensibles al rendimiento y optimizarlos.|
 |**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esta pantalla podría dar lugar a una baja velocidad de fotogramas de la UI y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar cada elemento (es decir, el tiempo invertido en Arrange, Measure, ApplyTemplate, ArrangeOverride y MeasureOverride). También compila los árboles visuales que han participado en un cálculo de diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar o para evaluar otros mecanismos de aplazamiento a fin de optimizar el cálculo de diseño.|
@@ -116,7 +116,7 @@ Se admiten los siguientes eventos:
 
 Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordenar, filtrar y especificar las anotaciones de las entradas de la vista **Detalles de la escala de tiempo** .
 
-|||
+|Nombre|Descripción|
 |-|-|
 |**Ordenar por**|Ordenar por hora de inicio o longitud de los eventos.|
 |![Agrupación de eventos por marco](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Agrega o quita una categoría **Marco** de nivel superior que agrupa eventos por marco.|

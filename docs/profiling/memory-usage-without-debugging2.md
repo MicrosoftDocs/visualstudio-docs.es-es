@@ -2,7 +2,7 @@
 title: Análisis del uso de memoria sin depuración | Microsoft Docs
 ms.custom: ''
 ms.date: 04/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638823"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543356"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
@@ -76,7 +76,7 @@ Los números son vínculos que abren vistas de informes de **Uso de memoria** de
 
   ![Vínculos de vista de instantánea](../profiling/media/memuse__snapshotview_numbered.png "Vínculos de vista de instantánea")
 
-|||
+|Imagen|Descripción|
 |-|-|
 |![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Haga clic en este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|
 |![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|El número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Haga clic en este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|
@@ -130,7 +130,7 @@ Ambos vínculos abren el mismo informe. La única diferencia es el orden de inic
 
 El árbol **Montón administrado** en un informe de detalles de instantánea tiene las siguientes columnas:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|
 |**Recuento**|Número de instancias del objeto del tipo. **Recuento** siempre es 1 para una instancia.|
@@ -152,7 +152,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 El árbol **Tipos a los que se hace referencia** en un informe de detalles de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hace referencia** no tiene la columna **Recuento de referencias**.
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Tipo de objeto** o **Instancia**|El nombre del tipo o instancia.|
 |**Recuento de referencias**|Para los tipos, el número de instancias del objeto del tipo.|
@@ -176,7 +176,7 @@ Ambos vínculos abren el mismo informe. La única diferencia es el orden de inic
 
 El árbol **Montón administrado** en un informe de diferencias de instantánea tiene las siguientes columnas:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|
 |**Recuento**|Número de instancias de un tipo en la instantánea principal. **Recuento** siempre es 1 para una instancia.|
@@ -203,7 +203,7 @@ En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hac
 
 El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)** , **Tamaño inclusivo (Bytes)** y **Módulo**.
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Tipo de objeto** o **Instancia**|Nombre del tipo o instancia del objeto.|
 |**Recuento de referencias**|Número de instancias de un tipo en la instantánea principal.|

@@ -17,18 +17,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7bdbc255320a2d17eb3c51191b3a425500dd345c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590181"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533697"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
 
 Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para ver los tipos existentes, vea [Cómo: Ver los tipos existentes](how-to-view-existing-types.md).
 
-## <a name="CreateType"></a> Crear un tipo nuevo
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Crear un tipo nuevo
 
 1. En el **cuadro de herramientas**, en **Diseñador de clases**, arrastre uno de estos a un diagrama de clases:
 
@@ -56,9 +56,8 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
 4. Ahora agregue otros elementos para definir el tipo:
 
-    |||
-    |-|-|
     |**For**|**Add**|
+    |-|-|
     |Clases, clases abstractas, estructuras o structs|Métodos, propiedades, campos, eventos, constructores (método), destructores (método) y constantes que definen el tipo|
     |Enumeraciones|Valores de campo que constituyen la enumeración|
     |Interfaces|Métodos, propiedades y eventos que constituyen la interfaz|
@@ -67,7 +66,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
      Vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
 
-## <a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo
+## <a name="apply-a-custom-attribute-to-a-type"></a><a name="CustAttributeType"></a> Aplicar un atributo personalizado a un tipo
 
 1. Haga clic en la forma del tipo en un diagrama de clases.
 
@@ -77,7 +76,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
    Los atributos personalizados se aplican al tipo.
 
-## <a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Aplicar un atributo personalizado a un miembro de tipo
 
 1. Haga clic en el nombre del miembro, en la forma del tipo en un diagrama de clases o en la fila en la ventana Detalles de clase.
 
