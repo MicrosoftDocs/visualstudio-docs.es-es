@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Mover elementos en Outlook mediante programación
+title: 'Cómo: trasladar elementos en Outlook mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812575"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519917"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Procedimiento Mover elementos en Outlook mediante programación
-  Este ejemplo mueve los mensajes de correo electrónico no leídos desde el **Bandeja de entrada** en una carpeta denominada **prueba**. El ejemplo mueve sólo los mensajes que tienen la palabra **prueba** en el `Subject` campo.
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Cómo: trasladar elementos en Outlook mediante programación
+  En este ejemplo se mueven los mensajes de correo electrónico sin leer de la **bandeja de entrada** a una carpeta denominada **Test**. En el ejemplo solo se mueven los mensajes que tienen la palabra **Test** en el `Subject` campo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -30,12 +30,12 @@ ms.locfileid: "62812575"
 ## <a name="compile-the-code"></a>Compilar el código
  Para este ejemplo se necesita:
 
-- Una carpeta de correo electrónico de Outlook denominada **prueba**.
+- Una carpeta de correo de Outlook denominada **Test**.
 
-- Un mensaje de correo electrónico que llega con la palabra **prueba** en el `Subject` campo.
+- Un mensaje de correo electrónico que llega con la palabra **Test** en el `Subject` campo.
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con carpetas](../vsto/working-with-folders.md)
-- [Cómo: Recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Cómo: Buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
-- [Cómo: Realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)
+- [Cómo: realizar acciones al recibir un mensaje de correo electrónico mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

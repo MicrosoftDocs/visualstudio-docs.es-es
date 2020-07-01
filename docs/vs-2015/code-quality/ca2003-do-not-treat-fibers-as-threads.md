@@ -25,11 +25,11 @@ ms.locfileid: "85521179"
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: No tratar fibras como subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |Identificador de comprobación|CA2003|
-|Category|Microsoft.Reliability|
+|Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

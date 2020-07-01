@@ -1,7 +1,7 @@
 ---
 title: Generación de texto en tiempo de ejecución con plantillas de texto T4
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595376"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520840"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -53,9 +53,9 @@ El uso de una plantilla en la aplicación facilita la visualización de la forma
 
 ### <a name="to-create-a-run-time-text-template"></a>Para crear una plantilla de texto en tiempo de ejecución
 
-1. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**.
+1. En explorador de soluciones, en el menú contextual del proyecto, elija **Agregar**  >  **nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto en tiempo de ejecución**. (En Visual Basic mire en **elementos comunes** > **General**).
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto en tiempo de ejecución**. (En Visual Basic buscar en **elementos comunes**  >  **General**).
 
 3. Escriba un nombre para el archivo de plantilla.
 
@@ -80,7 +80,7 @@ Una buena manera de crear una plantilla es convertir un ejemplo existente de la 
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para convertir un archivo de texto existente en una plantilla en tiempo de ejecución
 
-1. Incluya el archivo en el proyecto de Visual Studio. En Explorador de soluciones, en el menú contextual del proyecto, elija **agregar** > **elemento existente**.
+1. Incluya el archivo en el proyecto de Visual Studio. En explorador de soluciones, en el menú contextual del proyecto, elija **Agregar**  >  **elemento existente**.
 
 2. Establezca la propiedad **herramientas personalizadas** del archivo en **TextTemplatingFilePreprocessor**. En Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.
 
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Código de programa incrustado
 
-Puede insertar código de programa entre `<#` y `#>`. Por ejemplo:
+Puede insertar código de programa entre `<#` y `#>` . Por ejemplo:
 
 ```csharp
 <table>
@@ -144,7 +144,7 @@ Puede insertar código de programa entre `<#` y `#>`. Por ejemplo:
 </table>
 ```
 
-Observe que las instrucciones se insertan entre `<# ... #>` y se insertan expresiones entre `<#= ... #>`. Para obtener más información, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
+Observe que las instrucciones se insertan entre las `<# ... #>` expresiones y se insertan entre `<#= ... #>` . Para obtener más información, vea [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template"></a>Uso de la plantilla
 
@@ -152,7 +152,7 @@ Observe que las instrucciones se insertan entre `<# ... #>` y se insertan expres
 
 Al guardar el archivo **. TT** , se genera un archivo subsidiario **. CS** o **. VB** . Para ver este archivo en **Explorador de soluciones**, expanda el nodo del archivo **. TT** . En un proyecto de Visual Basic, en primer lugar, elija **Mostrar todos los archivos** en la barra de herramientas de **Explorador de soluciones** .
 
-Observe que el archivo subsidiario contiene una clase parcial que contiene un método denominado `TransformText()`. Puede llamar a este método desde la aplicación.
+Observe que el archivo subsidiario contiene una clase parcial que contiene un método denominado `TransformText()` . Puede llamar a este método desde la aplicación.
 
 ### <a name="generating-text-at-run-time"></a>Generar texto en tiempo de ejecución
 
@@ -262,7 +262,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 #### <a name="passing-data-in-template-properties"></a>Pasar datos en propiedades de plantilla
 
-Una manera alternativa de pasar los datos a la plantilla es agregar propiedades públicas a la clase de plantilla en una definición de clase parcial. La aplicación puede establecer las propiedades antes de invocar `TransformText()`.
+Una manera alternativa de pasar los datos a la plantilla es agregar propiedades públicas a la clase de plantilla en una definición de clase parcial. La aplicación puede establecer las propiedades antes de invocar `TransformText()` .
 
 También puede agregar campos a la clase de plantilla en una definición parcial. Esto le permite pasar datos entre ejecuciones sucesivas de la plantilla.
 
@@ -272,15 +272,15 @@ Muchos desarrolladores prefieren evitar escribir grandes cuerpos de código en l
 
 ### <a name="assemblies-and-references"></a>Ensamblados y referencias
 
-Si desea que el código de plantilla haga referencia a un ensamblado .NET u otro ensamblado como **System. Xml. dll**, agréguelo a las **referencias** del proyecto de la manera habitual.
+Si desea que el código de plantilla haga referencia a un .NET u otro ensamblado como **System.Xml.dll**, agréguelo a las **referencias** del proyecto de la manera habitual.
 
-Si desea importar un espacio de nombres de la misma manera que una instrucción `using`, puede hacerlo con la Directiva `import`:
+Si desea importar un espacio de nombres de la misma manera que una `using` instrucción, puede hacerlo con la `import` Directiva:
 
 ```
 <#@ import namespace="System.Xml" #>
 ```
 
-Estas directivas deben colocarse al principio del archivo, inmediatamente después de la Directiva de `<#@template`.
+Estas directivas deben colocarse al principio del archivo, inmediatamente después de la `<#@template` Directiva.
 
 ### <a name="shared-content"></a>Contenido compartido
 
@@ -296,19 +296,19 @@ La directiva Include se puede usar en cualquier parte del texto de un archivo de
 
 ### <a name="inheritance-between-run-time-text-templates"></a>Herencia entre plantillas de texto en tiempo de ejecución
 
-Puede compartir contenido entre plantillas en tiempo de ejecución escribiendo una plantilla de clase base, que puede ser abstracta. Use el parámetro `inherits` de la Directiva `<@#template#>` para hacer referencia a otra clase de plantilla en tiempo de ejecución.
+Puede compartir contenido entre plantillas en tiempo de ejecución escribiendo una plantilla de clase base, que puede ser abstracta. Use el `inherits` parámetro de la `<@#template#>` Directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: fragmentos en métodos base
 
 En el patrón que se usa en el ejemplo siguiente, tenga en cuenta los puntos siguientes:
 
-- La clase base `SharedFragments` define métodos dentro de los bloques de características de clase `<#+ ... #>`.
+- La clase base `SharedFragments` define los métodos dentro de los bloques de características de clase `<#+ ... #>` .
 
 - La clase base no contiene ningún texto libre. En su lugar, todos los bloques de texto se producen dentro de los métodos de características de clase.
 
-- La clase derivada invoca los métodos definidos en `SharedFragments`.
+- La clase derivada invoca los métodos definidos en `SharedFragments` .
 
-- La aplicación llama al método `TextTransform()` de la clase derivada, pero no transforma la clase base `SharedFragments`.
+- La aplicación llama al `TextTransform()` método de la clase derivada, pero no transforma la clase base `SharedFragments` .
 
 - Las clases base y derivadas son plantillas de texto en tiempo de ejecución; es decir, la propiedad **herramienta personalizada** está establecida en **TextTemplatingFilePreprocessor**.
 
@@ -415,7 +415,7 @@ string result = t1.TransformText();
 Console.WriteLine(result);
 ```
 
-**Salida resultante:**
+**Resultado que se obtiene:**
 
 ```
 Here is the description for this derived template:

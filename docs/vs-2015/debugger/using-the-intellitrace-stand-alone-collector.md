@@ -1,5 +1,5 @@
 ---
-title: Usar el recopilador independiente de IntelliTrace | Microsoft Docs
+title: Uso del recopilador independiente de IntelliTrace | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,24 +13,24 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46790d762369ade78af6c10272fc92e4d5b53fca
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 81eedeeb9a1b2470e87f0d865996ad3e456723fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586791"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520554"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar el recopilador independiente de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El **recolector independiente IntelliTrace** permite recopilar datos de diagnóstico de IntelliTrace para las aplicaciones en servidores de producción o en otros entornos sin instalar Visual Studio en el equipo de destino y sin cambiar el entorno del sistema de destino. El recolector independiente IntelliTrace funciona en aplicaciones web, de Sharepoint, de WPF y de Windows Forms. Cuando la recolección de datos haya terminado, basta con eliminar el recolector para desinstalarlo.
 
- Eche un vistazo a IntelliTrace en acción: [Recopilación y análisis de datos en un entorno de producción (vídeo de Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
+ Observe IntelliTrace en acción: [Recopilación y análisis de datos en un entorno de producción (vídeo de Channel 9)](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Collecting-and-analyzing-data-in-production)
 
 > [!NOTE]
 > Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
 >
-> Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo**Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Vea [usar el Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo**Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Consulte [Usar Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 
  **Requisitos**
 
@@ -39,19 +39,19 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 - Visual Studio Enterprise (y no las versiones Professional o Community) el equipo de desarrollo o en otro equipo para abrir los archivos .iTrace
 
   > [!NOTE]
-  > Procure guardar los archivos de símbolos (.pdb). Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Vea [diagnosticar problemas después](../debugger/diagnose-problems-after-deployment.md)de la implementación.
+  > Procure guardar los archivos de símbolos (.pdb). Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md).
 
-  **P+F**
+  **Preguntas más frecuentes**
 
 - [¿Qué aplicaciones funcionan con el recolector?](#WhatApps)
 
-- [¿Cómo empiezo?](#GetStarted)
+- [¿Cómo comenzar?](#GetStarted)
 
 - [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)
 
 - [¿De qué más sitios se pueden obtener datos de IntelliTrace?](#WhereElse)
 
-## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>¿Qué aplicaciones funcionan con el recopilador?
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a> ¿Qué aplicaciones funcionan con el recolector?
 
 - Aplicaciones web ASP.NET hospedadas en las versiones 7.0, 7.5 y 8.0 de Internet Information Services (IIS)
 
@@ -59,7 +59,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 - Aplicaciones de Windows Presentation Foundation (WPF) y Windows Forms.
 
-## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>¿Cómo comenzar?
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a> ¿Cómo comenzar?
 
 1. [Instalar el recolector](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -71,13 +71,13 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 5. [Recopilar datos de una aplicación web o de una aplicación de SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     O bien
+     o bien
 
      [Recopilar datos de una aplicación administrada](#BKMK_Collect_Data_from_Executables)
 
 6. [Abra el archivo .iTrace en Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>Instalación del recopilador
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar el recolector
 
 1. En el servidor de la aplicación, cree el directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 
@@ -87,7 +87,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
      1. Seleccione la opción **Descargar**cerca de **IntelliTraceCollector.exe**.
 
-     2. Guarde IntelliTraceCollector.exe en el directorio del recolector (por ejemplo, **C:\IntelliTraceCollector**).
+     2. Guarde IntelliTraceCollector.exe en el directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 
      3. Ejecute IntelliTraceCollector.exe. Esto hace que se extraiga el archivo IntelliTraceCollection.cab.
 
@@ -97,30 +97,30 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
      1. Copie IntelliTraceCollection.cab de la siguiente carpeta:
 
-          **.. \Microsoft Visual Studio 12.0 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2. Coloque IntelliTraceCollection.cab en el directorio del recolector (por ejemplo, **C:\IntelliTraceCollector**).
+     2. Coloque IntelliTraceCollection.cab en el directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 
 3. Expanda IntelliTraceCollection.cab:
 
    1. En el servidor de la aplicación, abra una ventana de símbolo del sistema como administrador.
 
-   2. Vaya al directorio del recolector (por ejemplo, **C:\IntelliTraceCollector**).
+   2. Vaya al directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 
-   3. Use el comando **expand** , incluido el punto al final (**.**), para expandir IntelliTraceCollection.cab:
+   3. Use el comando **expand** , incluido el punto al final ( **.** ), para expandir IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > El punto (**.**) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
+       > El punto ( **.** ) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
 
-## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>Configurar permisos para el directorio del recopilador
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a> Configurar permisos para el directorio de recopilador
 
 1. En el servidor de la aplicación, abra una ventana de símbolo del sistema como administrador.
 
 2. Use el comando **icacls** de Windows para conceder permisos completos de administrador del servidor al directorio del recolector. Por ejemplo:
 
-     `icacls "C:\IntelliTraceCollector" /grant "`* \<>Domain\AdministratorID*`":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3. Para recopilar datos de una aplicación web o de una aplicación de SharePoint:
 
@@ -134,7 +134,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
          Por ejemplo:
 
-        - Para una aplicación web en el grupo de aplicaciones **DefaultAppPool** :
+        - En el caso de una aplicación web en el grupo de aplicaciones **DefaultAppPool** :
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
@@ -142,7 +142,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Instalar cmdlets de PowerShell de IntelliTrace para recopilar datos para aplicaciones web o aplicaciones de SharePoint
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Instalar cmdlets de PowerShell IntelliTrace para recopilar datos para aplicaciones web o aplicaciones de SharePoint
 
 1. En el servidor de la aplicación, asegúrese de que PowerShell está habilitado. En la mayoría de las versiones de Windows Server, esta característica se puede agregar en la herramienta administrativa **Administrador del servidor** .
 
@@ -150,7 +150,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 2. Instale los cmdlets de PowerShell de IntelliTrace.
 
-    1. Abra una ventana de comandos de PowerShell como administrador.
+    1. Abra una ventana de símbolo del sistema de PowerShell como administrador.
 
         1. Elija **Inicio**, **Todos los programas**, **Accesorios**, **Windows PowerShell**.
 
@@ -158,7 +158,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
             - En sistemas operativos de 64 bits, abra el menú contextual de **Windows PowerShell**. Elija **Ejecutar como administrador**.
 
-            - En sistemas operativos de 32 bits, abra el menú contextual de **Windows PowerShell (x86)**. Elija **Ejecutar como administrador**.
+            - En sistemas operativos de 32 bits, abra el menú contextual de **Windows PowerShell (x86)** . Elija **Ejecutar como administrador**.
 
     2. En la ventana de comandos de PowerShell, use el comando **Import-Module** para importar **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -166,7 +166,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>Configurar permisos para el directorio de archivos. iTrace
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permisos para el directorio de archivos .iTrace
 
 1. En el servidor de la aplicación, cree el directorio de archivos. iTrace, por ejemplo: **C:\IntelliTraceLogFiles**
 
@@ -184,7 +184,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
    - Para configurar permisos con el comando **icacls** de Windows:
 
-     - Para una aplicación web en el grupo de aplicaciones **DefaultAppPool** :
+     - En el caso de una aplicación web en el grupo de aplicaciones **DefaultAppPool** :
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
@@ -192,25 +192,25 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       O bien
+       o bien
 
    - Para configurar permisos con el Explorador de Windows (o el Explorador de archivos):
 
      1. Abra las **Propiedades** del directorio de archivos .iTrace.
 
-     2. En la pestaña **Seguridad** , elija **Editar****Agregar**.
+     2. En la pestaña **Seguridad** , elija **Editar** **Agregar**.
 
      3. Asegúrese de que **Entidades de seguridad integradas** aparece en el cuadro **Seleccionar este tipo de objeto** . Si no está allí, elija **tipos de objeto** para agregarlo.
 
      4. Asegúrese de que el equipo local aparece en el cuadro **Desde esta ubicación** . Si no está allí, elija **ubicaciones** para cambiarlo.
 
-     5. En el cuadro **Escriba los nombres de objeto que desea seleccionar** , agregue el grupo de aplicaciones para la aplicación web o la aplicación de SharePoint.
+     5. En el cuadro **Escriba los nombres de objeto que desea seleccionar** , agregue el grupo de aplicaciones de la aplicación web o la aplicación de SharePoint.
 
      6. Elija **Comprobar nombres** para resolver el nombre. Elija **Aceptar**.
 
      7. Asegúrese de que el grupo de aplicaciones tiene **Control total**.
 
-## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>Recopilación de datos de una aplicación web o de una aplicación de SharePoint
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Recopilar datos de una aplicación web o de una aplicación de SharePoint
 
 1. Para iniciar la recolección de datos, abra una ventana de comandos de PowerShell como administrador y ejecute este comando:
 
@@ -223,11 +223,11 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
      `Start-IntelliTraceCollection "SharePoint - 80" "C:\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogFiles"`
 
-    |||
+    |Elemento|Descripción|
     |-|-|
-    |*ApplicationPool*|Nombre del grupo de aplicaciones donde la aplicación se ejecuta.|
-    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en aplicaciones web y aplicaciones de SharePoint:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace y eventos de SharePoint, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
-    |*rutaAccesoCompletaDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace. **Nota de seguridad:**  Proporcione la ruta de acceso completa, no una ruta de acceso relativa.|
+    |*grupoAplicaciones*|Nombre del grupo de aplicaciones donde la aplicación se ejecuta.|
+    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en aplicaciones web y aplicaciones de SharePoint:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace y eventos de SharePoint, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  El tamaño máximo de un archivo .iTrace es de 100 MB de forma predeterminada. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
+    |*rutaAccesoCompletaDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace. **Nota sobre la seguridad:**  Indique la ruta de acceso completa, no una ruta relativa.|
 
      El recolector se conecta al grupo de aplicaciones y empieza a recopilar datos.
 
@@ -252,42 +252,42 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 6. [Abra el archivo .iTrace en Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a>Recopilación de datos de una aplicación administrada
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> Recopilar datos de una aplicación administrada
 
 1. Use esta sintaxis para iniciar la aplicación y recopilar datos al mismo tiempo:
 
-     `\IntelliTraceSC.exe launch /cp:` `/f:` *Rutaaccesocompletaejecutableintellitracecollector>\<rutaaccesoplanrecolección>* *rutaaccesocompletanombrearchivoydirectorioarchivositrace \<>* *rutaaccesonombrearchivoyarchivoejecutableaplicación \<>* * \<*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Por ejemplo, para recopilar datos de una aplicación denominada **MyApp**:
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 
-    |||
+    |Elemento|Descripción|
     |-|-|
     |*rutaAccesoCompletaEjecutableIntelliTraceCollector*|Ruta de acceso completa al archivo ejecutable del recolector, IntelliTraceSC.exe.|
-    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en las aplicaciones administradas:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  De forma predeterminada, el tamaño máximo del archivo. iTrace es 100 MB. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
-    |*rutaAccesoCompletaNombreArchivoYDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace y el nombre del archivo .iTrace con la extensión **.itrace** . **Nota de seguridad:**  Proporcione la ruta de acceso completa, no una ruta de acceso relativa.|
+    |*rutaAccesoPlanRecolección*|Ruta de acceso a un plan de recolección, que es un archivo .xml que configura las opciones del recolector.<br /><br /> Puede especificar un plan que se haya suministrado junto con el recolector. Los siguientes planes funcionan en las aplicaciones administradas:<br /><br /> - collection_plan.ASP.NET.default.xml<br />     Recopila únicamente eventos de IntelliTrace, incluidas excepciones, llamadas de base de datos y solicitudes de servidor web.<br />- collection_plan.ASP.NET.trace.xml<br />     Recopila las llamadas a funciones y todos los datos en collection_plan.ASP.NET.default.xml. Este plan es adecuado para obtener análisis detallados, pero puede ralentizar la aplicación más que con collection_plan.ASP.NET.default.xml.<br /><br /> Para evitar la ralentización de la aplicación, personalice estos planes o cree su propio plan. Por seguridad, coloque los planes personalizados en la misma ubicación segura que los archivos del recolector. Vea [Crear y personalizar planes de recolección de IntelliTrace](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) y [¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing) **Nota:**  El tamaño máximo de un archivo .iTrace es de 100 MB de forma predeterminada. Cuando un archivo .iTrace alcanza este límite, el recolector elimina las entradas más antiguas del archivo para dejar espacio para las entradas más recientes. Para cambiar este límite, modifique el atributo `MaximumLogFileSize` del plan de recolección. <br /><br /> *¿Dónde puedo encontrar las versiones localizadas de estos planes de recolección?*<br /><br /> Los planes localizados se encuentran en las subcarpetas del recolector.|
+    |*rutaAccesoCompletaNombreArchivoYDirectorioArchivosITrace*|Ruta de acceso completa al directorio de archivos .iTrace y el nombre del archivo .iTrace con la extensión **.itrace** . **Nota sobre la seguridad:**  Indique la ruta de acceso completa, no una ruta relativa.|
     |*rutaAccesoNombreArchivoYArchivoEjecutableAplicación*|Ruta de acceso y nombre de archivo de la aplicación administrada.|
 
 2. Cierre la aplicación para detener la recolección de datos.
 
 3. [Abra el archivo .iTrace en Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a>Abra el archivo. iTrace en Visual Studio Enterprise
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Abra el archivo .iTrace en Visual Studio Enterprise.
 
 > [!NOTE]
-> Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Vea [diagnosticar problemas después](../debugger/diagnose-problems-after-deployment.md)de la implementación.
+> Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md).
 
 1. Mueva el archivo .iTrace o cópielo en un equipo con Visual Studio Enterprise (pero no a las versiones Professional o Community).
 
 2. Haga doble clic en el archivo .iTrace fuera de Visual Studio o abra el archivo desde Visual Studio.
 
-     Visual Studio muestra la página **Resumen de IntelliTrace** . En la mayoría de las secciones, puede revisar eventos u otros elementos, elegir un elemento e iniciar la depuración con IntelliTrace justo donde y cuando un evento se ha producido. Vea [uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md).
+     Visual Studio muestra la página **Resumen de IntelliTrace** . En la mayoría de las secciones, puede revisar eventos u otros elementos, elegir un elemento e iniciar la depuración con IntelliTrace justo donde y cuando un evento se ha producido. Vea [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes en el equipo de desarrollo. Vea [diagnosticar problemas después](../debugger/diagnose-problems-after-deployment.md)de la implementación.
+    > Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes en el equipo de desarrollo. Consulte [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md).
 
-## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>¿Cómo obtener la mayoría de los datos sin ralentizar la aplicación?
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?
  IntelliTrace puede recopilar una gran cantidad de datos, por lo que el impacto en el rendimiento de la aplicación depende de los datos que IntelliTrace recopile y el tipo de código que analice. Vea [Optimizar la recolección de IntelliTrace en servidores de producción](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/)
 
  A continuación, se muestran algunas maneras de obtener la mayoría de los datos sin ralentizar la aplicación:
@@ -316,7 +316,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 - Repase los módulos en el plan de recolección para el que IntelliTrace recopila los datos. Edite el plan de recolección para incluir solo los módulos que le interesen:
 
-  1. Abra el plan de recolección. Busque el elemento `<ModuleList>`.
+  1. Abra el plan de recolección. Busque el elemento `<ModuleList>` .
 
   2. En `<ModuleList>`establezca el atributo `isExclusionList` en `false`.
 
@@ -379,7 +379,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
    El recolector registra valores de `id`, `Employee.Id`, `Employee.Name` y el objeto `Employee` devuelto del método `AlterEmployee` . Sin embargo, el recolector únicamente registra información sobre si es null o no el objeto `Address` . El recolector tampoco registra datos sobre variables locales del método `AlterEmployee` , a menos que otros métodos utilicen esas variables locales como parámetros en el punto en el que se registran como parámetros de método.
 
-## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>¿Dónde se pueden obtener datos de IntelliTrace?
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a> ¿De qué más sitios se pueden obtener datos de IntelliTrace?
 
 - En una sesión de depuración de IntelliTrace en Visual Studio Enterprise, consulte [características de IntelliTrace](../debugger/intellitrace-features.md).
 

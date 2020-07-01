@@ -1,7 +1,7 @@
 ---
-title: GetVstoSolutionMetadata (función)
+title: Getvstosolutionmetadata (función)
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7714e78e897e6c8b391a6c30e9a548671ce80c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebbedaab7e7ac342f6d6ace191d820f6a0c8090
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796046"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520190"
 ---
-# <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata (función)
-  Esta API admite la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.
+# <a name="getvstosolutionmetadata-function"></a>Getvstosolutionmetadata (función)
+  Esta API es compatible con la infraestructura de Office y no está pensada para usarse directamente desde el código.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,4 +37,4 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 |*ppSolutionInfo*|No use.|
 
 ## <a name="return-value"></a>Valor devuelto
- Si la función se realiza correctamente, devuelve **S_OK**. Si se produce un error en la función, devuelve un código de error.
+ Si la función se ejecuta correctamente, devuelve **S_OK**. Si la función presenta un error, devuelve un código de error.

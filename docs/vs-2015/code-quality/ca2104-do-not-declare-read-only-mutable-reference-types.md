@@ -15,30 +15,30 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fd81f9ea250cd1592f755a2aa6cb3ca09280a533
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff42cc2b8543fe8e1cf980a3574ae15922febf9b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666041"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521048"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: No declarar tipos de referencias mutables de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|
 |Identificador de comprobación|CA2104|
 |Categoría|Microsoft.Security|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo visible externamente contiene un campo de sólo lectura visible externamente que es un tipo de referencia que se puede cambiar.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar. La clase <xref:System.Text.StringBuilder?displayProperty=fullName> es un ejemplo de un tipo de referencia mutable. Contiene miembros que pueden cambiar el valor de una instancia de la clase. Un ejemplo de un tipo de referencia inmutable es la clase <xref:System.String?displayProperty=fullName>. Una vez creada la instancia, su valor nunca puede cambiar.
+ Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar. La <xref:System.Text.StringBuilder?displayProperty=fullName> clase es un ejemplo de un tipo de referencia mutable. Contiene miembros que pueden cambiar el valor de una instancia de la clase. Un ejemplo de un tipo de referencia inmutable es la <xref:System.String?displayProperty=fullName> clase. Una vez creada la instancia, su valor nunca puede cambiar.
 
- El modificador de solo lectura ([ReadOnly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) in C#, [ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) in C++) en un campo de tipo de referencia (puntero C++en) impide que el campo se reemplace por otra instancia del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo se modifiquen a través del tipo de referencia.
+ El modificador de solo lectura ([ReadOnly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) en C#, [ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) en c++) en un campo de tipo de referencia (puntero en c++) impide que el campo se reemplace por una instancia distinta del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo se modifiquen a través del tipo de referencia.
 
  Los campos de matriz de solo lectura están exentos de esta regla pero, en su lugar, causan una infracción de [CA2105: los campos de matriz no deben ser reglas de solo lectura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) .
 

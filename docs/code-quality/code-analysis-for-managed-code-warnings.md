@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d18763f3638442de4e0142204d696ee13b1bdb19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521061"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Análisis de código de las advertencias de código administrado
 La herramienta de análisis de código administrado proporciona advertencias que indican las infracciones de las reglas de bibliotecas de código administrado. Las advertencias se organizan en áreas de reglas como diseño, localización, rendimiento y seguridad. Cada advertencia implica una infracción de una regla de análisis de código administrado. En esta sección se proporcionan información detallada y ejemplos de cada advertencia de análisis de código administrado.
@@ -29,22 +29,22 @@ La herramienta de análisis de código administrado proporciona advertencias que
 
 |Elemento|Descripción|
 |----------|-----------------|
-|Tipo de|TypeName de la regla.|
+|Tipo|TypeName de la regla.|
 |Identificador de comprobación|Identificador único de la regla. CheckId y Categoría se usan para la supresión en el código fuente de una advertencia.|
 |Categoría|Categoría de la advertencia.|
 |Cambio importante|Indica si la corrección para una infracción de la regla es un cambio problemático. Se entiende por cambio problemático que un ensamblado que tenga una dependencia en el destino que produjo la infracción no se vuelva a compilar con la nueva versión modificada o genere un error en tiempo de ejecución debido al cambio. Cuando hay disponibles varias correcciones y al menos una corrección es un cambio importante y no hay una solución, se especifican "Breaking" y "non-breaking".|
-|Motivo|El código administrado específico que provoca que la regla genere una advertencia.|
+|Causa|El código administrado específico que provoca que la regla genere una advertencia.|
 |Descripción|Describe los problemas que están detrás de la advertencia.|
 |Cómo corregir infracciones|Explica cómo cambiar el código fuente para cumplir la regla y evitar que se genere una advertencia.|
 |Cuándo suprimir advertencias|Describe cuándo es seguro suprimir una advertencia de la regla.|
 |Código de ejemplo|Ejemplos que infringen la regla y ejemplos corregidos que cumplen la regla.|
 |Advertencias relacionadas|Advertencias relacionadas.|
 
-## <a name="in-this-section"></a>Esta sección
+## <a name="in-this-section"></a>En esta sección
 
-|||
+|Categoría|Descripción|
 |-|-|
-|[Advertencias de CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista de advertencias por CheckId|
+|[ADVERTENCIAS por CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista de advertencias por CheckId|
 |[Advertencias de criptografía](../code-quality/cryptography-warnings.md)|Advertencias compatibles con bibliotecas y aplicaciones más seguras mediante el uso correcto de criptografía.|
 |[Advertencias de diseño](../code-quality/design-warnings.md)|ADVERTENCIAS compatibles con el diseño correcto de la biblioteca como se especifica en las instrucciones de diseño de .NET.|
 |[Advertencias de documentación](../code-quality/documentation-warnings.md)|Advertencias que admiten el diseño de biblioteca bien documentado a través del uso correcto de los comentarios de documentación XML.|
@@ -52,9 +52,9 @@ La herramienta de análisis de código administrado proporciona advertencias que
 |[Advertencias de interoperabilidad](../code-quality/interoperability-warnings.md)|Advertencias compatibles con la interacción con clientes COM.|
 |[Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)|Advertencias compatibles con el mantenimiento de bibliotecas y aplicaciones.|
 |[Advertencias de movilidad](../code-quality/mobility-warnings.md)|Advertencias compatibles con el uso eficiente de energía.|
-|[Advertencias sobre nomenclatura](../code-quality/naming-warnings.md)|Advertencias que admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.|
+|[Advertencias de nomenclatura](../code-quality/naming-warnings.md)|Advertencias que admiten el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET.|
 |[Advertencias de rendimiento](../code-quality/performance-warnings.md)|Advertencias compatibles con las aplicaciones y bibliotecas de alto rendimiento.|
-|[Portability Warnings](../code-quality/portability-warnings.md)|Advertencias compatibles con la portabilidad en diferentes plataformas.|
+|[Advertencias de portabilidad](../code-quality/portability-warnings.md)|Advertencias compatibles con la portabilidad en diferentes plataformas.|
 |[Advertencias de confiabilidad](../code-quality/reliability-warnings.md)|Advertencias compatibles con la confiabilidad de bibliotecas y aplicaciones, como el uso correcto de memorias y subprocesos.|
 |[Advertencias de seguridad](../code-quality/security-warnings.md)|Advertencias compatibles con bibliotecas y aplicaciones más seguras.|
 |[Advertencias de uso](../code-quality/usage-warnings.md)|ADVERTENCIAS compatibles con el uso adecuado de .NET.|

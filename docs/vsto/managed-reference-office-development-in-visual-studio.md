@@ -1,7 +1,7 @@
 ---
 title: Referencia administrada (desarrollo de Office en Visual Studio)
 ms.date: 08/14/2019
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985767"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85519865"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referencia administrada (desarrollo de Office en Visual Studio)
-  Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente sección de referencia en la documentación de Visual Studio: [referencia administrada (desarrollo de Office en Visual Studio). )](managed-reference-office-development-in-visual-studio.md).
+  Esta sección contiene documentación de referencia de API para los espacios de nombres y los tipos que se utilizan en los proyectos de Office que abordan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en los proyectos de Office destinados a la .NET Framework 3,5, vea la siguiente sección de referencia en la documentación de Visual Studio: [referencia administrada (desarrollo de Office en Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -72,6 +72,6 @@ ms.locfileid: "72985767"
 
 ## <a name="see-also"></a>Vea también
 - [Información general de Visual Studio Tools para Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
-- [Introducción &#40;al desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 - [Ejemplos y tutoriales de desarrollo de Office](office-development-samples-and-walkthroughs.md)
 - [Diseñar y crear soluciones de Office](designing-and-creating-office-solutions.md)

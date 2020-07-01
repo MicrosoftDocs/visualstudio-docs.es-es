@@ -1,5 +1,5 @@
 ---
-title: 'Error: El servicio de Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo | Documentos de Microsoft'
+title: 'Error: el servicio Visual Studio Remote Debugger del equipo de destino no se puede volver a conectar a este equipo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697344"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520515"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,8 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
   
  En la tabla siguiente se muestran las cuentas que pueden tener acceso al equipo:  
   
-|||||  
-|-|-|-|-|  
-||Cuenta LocalSystem|Cuenta de dominio|Cuentas locales con el mismo nombre de usuario y contraseña en ambos equipos|  
+|Escenario|Cuenta LocalSystem|Cuenta de dominio|Cuentas locales con el mismo nombre de usuario y contraseña en ambos equipos|  
+|-|-|-|-|-|  
 |Ambos equipos en el mismo dominio|Sí|Sí|Sí|  
 |Ambos equipos en dominios que tienen confianza bidireccional|No|No|Sí|  
 |Uno o ambos equipos en un grupo de trabajo|No|No|Sí|  
@@ -48,7 +47,7 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1. Asegúrese de que el servicio del depurador remoto de Visual Studio esté correctamente configurado en el equipo remoto. Para obtener más información, consulte [establecer las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+1. Asegúrese de que el servicio del depurador remoto de Visual Studio esté correctamente configurado en el equipo remoto. Para obtener más información, consulte [configuración del herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 2. Ejecute el servicio del depurador remoto bajo una cuenta que puede tener acceso al equipo host del depurador, como se muestra en la tabla anterior.  
   
@@ -76,6 +75,6 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
   
 - Ejecute el Monitor de depuración remota como aplicación en lugar de como servicio.  
   
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>Consulte también  
+ [Errores y solución de problemas de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

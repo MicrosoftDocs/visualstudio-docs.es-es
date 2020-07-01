@@ -12,4 +12,4 @@ ms.locfileid: "69891073"
 ---
 Es seguro suprimir una advertencia de esta regla si:
 - Sabe que la entrada es de confianza. Tenga en cuenta que el límite de confianza de la aplicación y los flujos de datos pueden cambiar con el tiempo.
-- Ha tomado una de las precauciones en [Cómo corregir](#how-to-fix-violations)las infracciones.
+- Ha tomado una de las precauciones en [Cómo corregir las infracciones](#how-to-fix-violations).

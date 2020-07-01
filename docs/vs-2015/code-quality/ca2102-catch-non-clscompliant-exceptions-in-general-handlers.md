@@ -14,37 +14,37 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 051b59183a761477476269480ecdf83ccbf0cb37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652171"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85521308"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
 |Identificador de comprobación|CA2102|
 |Categoría|Microsoft.Security|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un miembro de un ensamblado que no está marcado con el <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> o está marcado como `RuntimeCompatibility(WrapNonExceptionThrows = false)` contiene un bloque catch que controla <xref:System.Exception?displayProperty=fullName> y no contiene un bloque catch general inmediatamente después. Esta regla omite los ensamblados de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+## <a name="cause"></a>Causa
+ Un miembro de un ensamblado que no está marcado con <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> o está marcado `RuntimeCompatibility(WrapNonExceptionThrows = false)` contiene un bloque catch que controla <xref:System.Exception?displayProperty=fullName> y no contiene un bloque catch general inmediatamente después. Esta regla omite los [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ensamblados.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un bloque catch que controla <xref:System.Exception> detecta todas las excepciones conformes A Common Language Specification (CLS). Sin embargo, no detecta excepciones no conformes a CLS. Las excepciones no conformes a CLS se pueden iniciar desde código nativo o desde código administrado generado por el ensamblador de lenguaje intermedio de Microsoft (MSIL). Observe que los C# compiladores y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] no permiten que se produzcan excepciones no conformes a cls y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] no detecta excepciones que no cumplan las normas de CLS. Si la intención del bloque catch es controlar todas las excepciones, use la siguiente sintaxis de bloque catch general.
+ Un bloque catch que controla <xref:System.Exception> todas las excepciones conformes A Common Language Specification (CLS). Sin embargo, no detecta excepciones no conformes a CLS. Las excepciones no conformes a CLS se pueden iniciar desde código nativo o desde código administrado generado por el ensamblador de lenguaje intermedio de Microsoft (MSIL). Tenga en cuenta que los [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiladores de C# y no permiten que se inicien excepciones no conformes a CLS y no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] detectan excepciones no conformes a CLS. Si la intención del bloque catch es controlar todas las excepciones, use la siguiente sintaxis de bloque catch general.
 
 - C#: `catch {}`
 
-- C++: `catch(...) {}` o `catch(Object^) {}`
+- C++: `catch(...) {}` o`catch(Object^) {}`
 
   Una excepción no controlada no conforme a CLS se convierte en un problema de seguridad cuando se quitan los permisos previamente permitidos en el bloque catch. Dado que no se detectan excepciones no conformes a CLS, un método malintencionado que produce una excepción no conforme a CLS podría ejecutarse con permisos elevados.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla cuando la intención es detectar todas las excepciones, sustituya o agregue un bloque catch general o marque el ensamblado `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Si se quitan permisos en el bloque catch, duplique la funcionalidad en el bloque catch general. Si no es el objetivo de controlar todas las excepciones, reemplace el bloque catch que controla <xref:System.Exception> con bloques catch que controlan tipos de excepción específicos.
+ Para corregir una infracción de esta regla cuando la intención es detectar todas las excepciones, sustituya o agregue un bloque catch general o marque el ensamblado `RuntimeCompatibility(WrapNonExceptionThrows = true)` . Si se quitan permisos en el bloque catch, duplique la funcionalidad en el bloque catch general. Si no es el objetivo de controlar todas las excepciones, reemplace el bloque catch que controla los <xref:System.Exception> bloques catch que controlan los tipos de excepción específicos.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el bloque try no contiene instrucciones que puedan generar una excepción no conforme a CLS. Dado que cualquier código nativo o administrado podría producir una excepción no conforme a CLS, es necesario conocer todo el código que se puede ejecutar en todas las rutas de acceso de código dentro del bloque try. Tenga en cuenta que las excepciones no conformes a CLS no se producen en el Common Language Runtime.
@@ -81,5 +81,5 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1031: No capturar los tipos de excepción general](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
-## <a name="see-also"></a>Vea también
- [Excepciones y control de](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) excepciones [Ilasm. exe (ensamblador de IL)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [invalidación de la seguridad comprobaciones](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) de [idioma y componentes independientes del lenguaje](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+## <a name="see-also"></a>Consulte también
+ [Excepciones y control de](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) excepciones [Ilasm.exe (ensamblador de IL)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [reemplazar seguridad comprueba](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [la independencia del lenguaje y los componentes independientes del lenguaje](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

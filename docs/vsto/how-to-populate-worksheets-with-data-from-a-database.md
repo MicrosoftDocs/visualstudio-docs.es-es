@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: rellenar hojas de cálculo con datos de una base de datos'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985862"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520125"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Cómo: rellenar hojas de cálculo con datos de una base de datos
 
@@ -41,9 +41,9 @@ En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en 
 
 Uno de los siguientes controles se crea en la hoja de cálculo:
 
-- Si arrastra un campo, se crea un control de <xref:Microsoft.Office.Tools.Excel.NamedRange> en la hoja de cálculo. Para obtener más información, vea [NamedRange (control](../vsto/namedrange-control.md)).
+- Si arrastra un campo, <xref:Microsoft.Office.Tools.Excel.NamedRange> se crea un control en la hoja de cálculo. Para obtener más información, vea [NamedRange (control](../vsto/namedrange-control.md)).
 
-- Si arrastra una tabla, se crea un control de <xref:Microsoft.Office.Tools.Excel.ListObject> en la hoja de cálculo. Para obtener más información, vea [ListObject (control](../vsto/listobject-control.md)).
+- Si arrastra una tabla, <xref:Microsoft.Office.Tools.Excel.ListObject> se crea un control en la hoja de cálculo. Para obtener más información, vea [ListObject (control](../vsto/listobject-control.md)).
 
 Puede Agregar un control diferente si selecciona la tabla o el campo en la ventana **orígenes de datos** y, a continuación, elige un control diferente de la lista desplegable.
 
