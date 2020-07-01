@@ -2,7 +2,7 @@
 title: Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189376"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331411"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.
@@ -71,7 +71,7 @@ En este tema, se describe cómo aislar los problemas de rendimiento en las aplic
 ## <a name="isolate-an-issue"></a>Aislar un problema
  En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de prueba de rendimiento de ejemplo, consulte [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](html-ui-responsiveness.md).
 
-### <a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU
  Estos pasos proporcionan un flujo de trabajo sugerido que puede ayudarte a utilizar el generador de perfiles de la capacidad de respuesta de la IU de forma más eficaz:
 
 1. Abre la aplicación en Visual Studio.
@@ -128,12 +128,12 @@ En este tema, se describe cómo aislar los problemas de rendimiento en las aplic
 
 13. Una vez hayas acercado la imagen, selecciona una parte del gráfico de uso de CPU o de rendimiento visual. Al realizar una selección, el gráfico de detalles de la escala de tiempo situado en el panel inferior del generador de perfiles cambia para mostrar solo el período de tiempo seleccionado.
 
-### <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem
  Los períodos de utilización excesiva de CPU pueden dar lugar a velocidades de fotogramas bajas o irregulares. Si desarrollas juegos y aplicaciones multimedia complejas, el gráfico de rendimiento visual puede proporcionar datos más importantes que el de uso de la CPU.
 
  Para aislar un problema de rendimiento visual, sigue los pasos descritos en la sección anterior, pero usa el gráfico de rendimiento visual como uno de los puntos de datos clave.
 
-### <a name="ProfileMark"></a> Marcar código para el análisis
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> Marcar código para el análisis
  Para poder aislar una sección del código de la aplicación que esté asociada con los datos que aparecen en los gráficos, puedes agregar a la aplicación una llamada a una función que indique al generador de perfiles que debe insertar una marca de usuario (triángulo invertido) en la escala de tiempo en el momento en que la función se ejecute. Las marcas de usuario agregadas aparecen en la escala de tiempo de los gráficos de uso de CPU, de rendimiento visual y de detalles de la escala de tiempo.
 
  Para agregar una marca de usuario, agrega el código siguiente a la aplicación. En este ejemplo se usa "getting data" como descripción del evento.
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
 ## <a name="analyze-data"></a>Analizar datos
  En las secciones siguientes se proporciona información para ayudar a interpretar los datos que aparecen en el generador de perfiles.
 
-### <a name="Ruler"></a> Ver la escala de tiempo de la sesión de diagnóstico
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Ver la escala de tiempo de la sesión de diagnóstico
  La regla que aparece en la parte superior del generador de perfiles muestra la escala de tiempo para la información cuyo perfil se ha generado. Esta escala de tiempo se aplica a los gráficos de uso de CPU y de rendimiento visual.
 
  Este es el aspecto de la escala de tiempo de la sesión de diagnóstico al mostrar información sobre herramientas para varios eventos del ciclo de vida de la aplicación:
@@ -187,7 +187,7 @@ if (performance.mark && performance.measure) {
 
 - Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.
 
-### <a name="CPUUtilization"></a> Ver uso de CPU
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Ver uso de CPU
  El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#profiler-event-reference) en este tema.
 
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.
@@ -209,7 +209,7 @@ if (performance.mark && performance.measure) {
 
   Para obtener más información sobre el uso del gráfico, consulte [Isolate a UI responsiveness problem](#Workflow) en este tema.
 
-### <a name="VisualThroughput"></a> Ver el rendimiento visual (FPS)
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> Ver el rendimiento visual (FPS)
  El gráfico de rendimiento visual te permite identificar los períodos de tiempo en los que disminuyó la velocidad de fotogramas. Muestra los fotogramas por segundo (FPS) para la aplicación. Este gráfico es muy útil para el desarrollo de juegos y aplicaciones multimedia complejas.
 
  Es posible que el valor de FPS mostrado difiera de la velocidad de fotogramas real. Ten esto en cuenta al examinar los datos de este gráfico:
@@ -232,7 +232,7 @@ if (performance.mark && performance.measure) {
 
 - Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .
 
-### <a name="TimelineDetails"></a> Ver detalles de la escala de tiempo
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> Ver detalles de la escala de tiempo
  El gráfico de detalles de la escala de tiempo aparece en el panel inferior del generador de perfiles de la capacidad de respuesta de la IU. Este proporciona información secuencial y jerárquica sobre los eventos que consumieron la mayor cantidad de tiempo de CPU durante períodos de tiempo seleccionados. Este gráfico puede ayudarte a determinar qué desencadenó un evento concreto y, en algunos casos, cómo se corresponde el evento con el código fuente. Además, también te permite determinar el tiempo necesario para pintar actualizaciones visuales de la pantalla.
 
  El gráfico muestra el trabajo del subproceso de interfaz de usuario y el trabajo en subprocesos de segundo plano que pueden acarrear actualizaciones visuales lentas. El gráfico no muestra el trabajo de JavaScript JIT, el trabajo asincrónico de GPU, el trabajo realizado fuera del proceso de host (como el trabajo de RuntimeBroker.exe y dwm.exe) ni el trabajo de las áreas de Windows en tiempo de ejecución que aún no se han instrumentado para la generación de perfiles (como la E/S de disco).
@@ -271,12 +271,12 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.
 
-### <a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo
  Puedes filtrar la vista de detalles de escala de tiempo de un evento concreto si seleccionas **Filtro para evento** en el menú contextual de ese evento. Cuando eliges esta opción, el ámbito de la escala de tiempo y la cuadrícula se ajusta al evento seleccionado. La selección del gráfico de uso de CPU también limita su ámbito a ese evento específico.
 
  ![Filtrado de la escala de tiempo a un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="FilterEvents"></a> Filtrar eventos
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtrar eventos
  Puedes filtrar algunos eventos del gráfico de detalles de la escala de tiempo para reducir el ruido de los datos o para eliminar datos que no sean de interés para el escenario de rendimiento. Puede filtrar por nombre o duración del evento, o bien por los filtros específicos descritos aquí.
 
  Para filtrar los eventos de descodificación de imágenes, descarga especulativa y GC, desactive la opción **Actividad en segundo plano** en el icono de filtro del panel inferior. Estos eventos están ocultos de manera predeterminada debido a que no son muy procesables.
@@ -292,7 +292,7 @@ if (performance.mark && performance.measure) {
 
  Para filtrar las medidas de usuario, desactive la opción **Medidas de usuario** . Las medidas de usuario son eventos de nivel superior sin elementos secundarios.
 
-### <a name="GroupFrames"></a> Agrupar eventos por fotograma
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> Agrupar eventos por fotograma
  Puede agrupar eventos que aparecen en la vista de detalles de la escala de tiempo en fotogramas individuales. Estos eventos de fotogramas son eventos generados por la herramienta y representan contenedores de eventos de nivel superior para todo el trabajo del subproceso de interfaz de usuario que tiene lugar entre eventos de pintar. Para habilitar esta vista, seleccione **Agrupar eventos de nivel superior por fotogramas**.
 
  ![Agrupación de eventos de nivel superior por fotograma](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")

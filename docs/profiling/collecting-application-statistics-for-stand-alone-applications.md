@@ -1,7 +1,7 @@
 ---
 title: Uso de la línea de comandos del generador de perfiles para recopilar estadísticas de la aplicación independientes
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - sampling profiling method
 - profilng tools,sampling method
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de399bf493e328e583bdd2765822ca3a66144698
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 589dae38917e43f9b832fb2d3475bf63546a2e31
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779641"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331886"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilación de estadísticas de aplicación para aplicaciones independientes mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para una aplicación cliente (independiente) mediante el método de muestreo desde la línea de comandos.

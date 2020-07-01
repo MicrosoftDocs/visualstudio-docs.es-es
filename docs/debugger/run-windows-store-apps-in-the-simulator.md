@@ -1,7 +1,7 @@
 ---
 title: Ejecución de aplicaciones para UWP en el simulador | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b7d68a23ffba12e9654ac047629bd64ecfae4bb6
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661901"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348146"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones para UWP en el simulador
 

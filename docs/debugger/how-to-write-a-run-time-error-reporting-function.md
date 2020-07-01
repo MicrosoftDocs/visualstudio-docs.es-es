@@ -2,7 +2,7 @@
 title: Escritura de una función para generar informes de errores en tiempo de ejecución | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 073943d8b6a3dbf5ee3af653a43046c3b389fbfd
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731807"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348410"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedimiento Escritura de una función para generar informes de errores en tiempo de ejecución (C++)
 Una función personalizada para la generación de informes de error en tiempo de ejecución debe tener la misma declaración que `_CrtDbgReportW`. Debe devolver un valor de 1 al depurador.

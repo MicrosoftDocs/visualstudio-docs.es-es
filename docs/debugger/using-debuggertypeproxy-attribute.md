@@ -1,7 +1,7 @@
 ---
 title: Mostrar el tipo personalizado mediante DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728719"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85347968"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicar al depurador qué tipo se va a mostrar mediante el atributo DebuggerTypeProxy (C#, Visual Basic y C++/CLI)
 

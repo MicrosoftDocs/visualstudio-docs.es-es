@@ -1,7 +1,7 @@
 ---
 title: Visor de eventos | Microsoft Docs
 ms.date: 4/30/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Profiler, Events Viewer
 author: Sagar-S-S
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dea07b1c0644dcb9fb165785a2ccdc28463e74
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291016"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330338"
 ---
 # <a name="events-viewer"></a>Visor de eventos
 
