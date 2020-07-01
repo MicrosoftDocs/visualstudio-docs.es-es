@@ -6,4 +6,4 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68148202"
 ---
-  **Se aplica a:** La información de este tema se aplica al documento\-proyectos y agregar de VSTO de nivel\-en los proyectos de Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Se aplica a:** La información de este tema se aplica a los proyectos de nivel de documento y a los \- proyectos de complemento \- de VSTO para Word. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).

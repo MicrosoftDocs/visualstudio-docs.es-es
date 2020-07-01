@@ -6,4 +6,4 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68144546"
 ---
-  **Se aplica a:** La información de este tema se aplica a VSTO agregar\-en los proyectos de Outlook. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Se aplica a:** La información de este tema se aplica a los proyectos de complemento de VSTO \- para Outlook. Para obtener más información, consulte [características disponibles por aplicación y tipo de proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).

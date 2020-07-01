@@ -11,4 +11,4 @@ ms.lasthandoff: 04/02/2020
 ms.locfileid: "80573222"
 ---
 > [!NOTE]
-> ¿Está interesado en desarrollar soluciones que amplíen la experiencia de Office en varias plataformas? Consulte el nuevo [modelo de complementos de Office](/office/dev/add-ins/). Los complementos de Office tienen un tamaño reducido en comparación con los complementos y soluciones de VSTO, y puede compilarlos mediante casi cualquier tecnología de programación web, como HTML5, JavaScript, CSS3 y XML.
+> ¿Está interesado en desarrollar soluciones que amplíen la experiencia de Office en varias plataformas? Consulte el nuevo [modelo de complementos de Office](/office/dev/add-ins/). Los complementos de Office tienen una pequeña superficie en comparación con las soluciones y los complementos de VSTO, y puede compilarlos con casi cualquier tecnología de programación web, como HTML5, JavaScript, CSS3 y XML.

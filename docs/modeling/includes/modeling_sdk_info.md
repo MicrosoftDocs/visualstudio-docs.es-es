@@ -8,4 +8,4 @@ ms.lasthandoff: 07/15/2019
 ms.locfileid: "68145046"
 ---
 > [!NOTE]
-> El **transformación de plantilla de texto** componente se instala automáticamente como parte de la **desarrollo de extensiones de Visual Studio** carga de trabajo. También puede instalarlo desde el **componentes individuales** ficha del instalador de Visual Studio, en el **SDK, bibliotecas y marcos** categoría. Instalar el **SDK de modelado** componente desde el **componentes individuales** ficha.
+> El componente de **transformación de plantillas de texto** se instala automáticamente como parte de la carga de trabajo desarrollo de extensiones de **Visual Studio** . También puede instalarlo desde la pestaña **componentes individuales** de instalador de Visual Studio, en la categoría **SDK, bibliotecas y marcos** . Instale el componente **SDK de modelado** desde la pestaña **componentes individuales** .
