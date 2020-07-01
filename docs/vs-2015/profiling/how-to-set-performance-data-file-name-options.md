@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205786"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548400"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Establecimiento de opciones de nombre de archivo de datos de rendimiento
+# <a name="how-to-set-performance-data-file-name-options"></a>Cómo: establecer opciones de nombre de archivo de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De forma predeterminada, se guarda un archivo de generación de perfiles de datos (.vsp) mediante la siguiente sintaxis:  
@@ -29,12 +29,12 @@ De forma predeterminada, se guarda un archivo de generación de perfiles de dato
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-|||  
+|Elemento Syntax|Descripción|  
 |-|-|  
-|*Path*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|  
-|*VSP-File*|El nombre del archivo de datos de generación de perfiles. El nombre predeterminado es el nombre de la solución o ejecutable del que se generan perfiles.|  
+|*Ruta de acceso*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|  
+|*Archivo VSP*|El nombre del archivo de datos de generación de perfiles. El nombre predeterminado es el nombre de la solución o ejecutable del que se generan perfiles.|  
 |*YYMMDD*|Una marca de fecha que muestra el año, mes y día en que se recopilaron los datos de generación de perfiles.|  
-|*(N)*|Si existe más de un archivo de datos de generación de perfiles, se agrega un número incrementado al nombre de archivo entre paréntesis.|  
+|*N*|Si existe más de un archivo de datos de generación de perfiles, se agrega un número incrementado al nombre de archivo entre paréntesis.|  
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Para cambiar la sintaxis de nomenclatura de los archivos de datos de generación de perfiles de una sesión de rendimiento  
   
@@ -44,7 +44,7 @@ De forma predeterminada, se guarda un archivo de generación de perfiles de dato
   
 3. En **Informe**, cambie cualquiera de las siguientes opciones:  
   
-    |||  
+    |Nombre|Descripción|  
     |-|-|  
     |**Ubicación del informe**|Especifique un directorio para almacenar los archivos de datos de generación de perfiles.|  
     |**Nombre del informe**|Especifique un nombre base para los archivos.|  

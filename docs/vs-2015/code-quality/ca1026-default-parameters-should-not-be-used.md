@@ -15,30 +15,30 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8fffbdc2cf9f4e09fe98c8e14b6692802ab3f275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a63d6e788dd1722d0c593469b225a4f1aeb4738d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661942"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548451"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No debería utilizar parámetros predeterminados
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No deben usarse parámetros predeterminados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |Identificador de comprobación|CA1026|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo visible externamente contiene un método visible externamente que utiliza un parámetro predeterminado.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los métodos que utilizan parámetros predeterminados se permiten en el Common Language Specification (CLS); sin embargo, CLS permite a los compiladores omitir los valores que se asignan a estos parámetros. El código que se escribe para los compiladores que omiten los valores de parámetro predeterminados debe proporcionar explícitamente argumentos para cada parámetro predeterminado. Para mantener el comportamiento que desea en los lenguajes de programación, los métodos que utilizan parámetros predeterminados deben reemplazarse por sobrecargas de método que proporcionan los parámetros predeterminados.
 
- El compilador omite los valores de los parámetros predeterminados C++ para la extensión administrada para cuando tiene acceso al código administrado. El compilador Visual Basic admite métodos que tienen parámetros predeterminados que utilizan la palabra clave [opcional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
+ El compilador omite los valores de los parámetros predeterminados para la extensión administrada para C++ cuando tiene acceso al código administrado. El compilador Visual Basic admite métodos que tienen parámetros predeterminados que utilizan la palabra clave [opcional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, reemplace el método que usa los parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
@@ -52,7 +52,7 @@ ms.locfileid: "72661942"
  [!code-vb[FxCop.Design.DefaultParameters#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DefaultParameters/vb/FxCop.Design.DefaultParameters.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1025: Reemplaza argumentos repetitivos con una matriz de parámetros](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+ [CA1025: Reemplazar argumentos repetitivos por una matriz de parámetros](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Independencia del lenguaje y componentes independientes del lenguaje](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

@@ -10,19 +10,19 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4cf121bd7f312518e334c7153acf2d6486e37012
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851790"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548140"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba.
 
-## <a name="BKMK_Contents"></a> Contenido
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contenido
  [Marcos de pruebas unitarias y proyectos de prueba](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Ejecutar pruebas en Explorador de pruebas](#BKMK_Run_tests_in_Test_Explorer)
@@ -37,15 +37,15 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  [Recursos externos](#BKMK_External_resources)
 
-## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Marcos de pruebas unitarias y proyectos de prueba
+## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Marcos de pruebas unitarias y proyectos de prueba
  Visual Studio incluye los marcos de pruebas unitarias de Microsoft para código administrado y nativo. No obstante, el Explorador de pruebas también puede ejecutar cualquier marco de pruebas unitarias que haya implementado un adaptador de este explorador. Para más información sobre cómo instalar los marcos de pruebas unitarias de terceros, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
- El Explorador de pruebas puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. En los proyectos de prueba pueden usarse marcos de pruebas unitarias diferentes. Cuando se escribe el código sometido a prueba para .NET Framework, el proyecto de prueba puede escribirse en cualquier lenguaje que también contemple .NET Framework como destino, independientemente del lenguaje del código de destino. Los proyectos de código C/C++ nativos se deben probar con un marco de pruebas unitarias de C++.
+ El Explorador de pruebas puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. En los proyectos de prueba pueden usarse marcos de pruebas unitarias diferentes. Cuando se escribe el código sometido a prueba para .NET Framework, el proyecto de prueba puede escribirse en cualquier lenguaje que también contemple .NET Framework como destino, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++.
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Ejecutar pruebas en Explorador de pruebas
- [Ejecutar pruebas](#BKMK_Run_tests) **&#124;** [ejecutar pruebas después de cada compilación](#BKMK_Run_tests_after_every_build)
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>Ejecutar pruebas en el explorador de pruebas
+ [Ejecutar pruebas](#BKMK_Run_tests) **&#124;** [Ejecutar pruebas después de cada compilación](#BKMK_Run_tests_after_every_build)
 
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
@@ -55,89 +55,89 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 
  Desde la barra de herramientas del Explorador de pruebas puede realizar gran parte del trabajo de búsqueda, organización y ejecución de las pruebas.
 
- ![Ejecutar pruebas desde la barra de herramientas del explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_Run_tests"></a> Ejecutar pruebas
- Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas que seleccione. Siga uno de los procedimientos que se describen a continuación:
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>Ejecutar pruebas
+ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:
 
 - Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
 
-- Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar...** y el grupo en el menú.
+- Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar...** y, a continuación, elija el grupo en el menú.
 
 - Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.
 
 - Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-pequeño") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
-  La barra de superados o no superados de la parte superior de la ventana del Explorador de pruebas se anima mientras se ejecutan las pruebas. Al finalizar la ejecución de la prueba, la barra de superados o no superados se vuelve verde si se superan todas las pruebas o se vuelve roja si no se supera alguna prueba.
+  Según se vayan ejecutando las pruebas, se animará la barra de superado o no superado en la parte superior de la ventana del Explorador de pruebas. Al finalizar la ejecución de las pruebas, la barra de superado o no superado se pondrá verde si se superan todas las pruebas. En caso contrario, se pondrá roja.
 
-  ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_Run_tests_after_every_build"></a> Ejecutar pruebas después de cada compilación
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Run_tests_after_every_build"></a>Ejecutar pruebas después de cada compilación
 
 > [!WARNING]
 > Visual Studio Enterprise permite ejecutar pruebas unitarias después de cada compilación.
 
-|||
+|Imagen|Descripción|
 |-|-|
-|![Ejecutar después de la compilación](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
+|![Ejecutar después de compilar](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_View_test_results"></a> Ver los resultados de las pruebas
- [Ver detalles](#BKMK_View_test_details) **&#124;** [de la prueba ver el código fuente de un método de prueba](#BKMK_View_the_source_code_of_a_test_method)
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>Ver resultados de pruebas
+ [Ver detalles de la prueba](#BKMK_View_test_details) **&#124;** [Ver el código fuente de un método de prueba](#BKMK_View_the_source_code_of_a_test_method)
 
  Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. El panel de detalles de la parte inferior del Explorador de pruebas muestra un resumen de la ejecución de la prueba.
 
-### <a name="BKMK_View_test_details"></a> Ver detalles de la prueba
+### <a name="view-test-details"></a><a name="BKMK_View_test_details"></a>Ver detalles de la prueba
  Para ver los detalles de una prueba individual, selecciónela.
 
- ![Detalles de la ejecución de pruebas](../test/media/ute-testdetails.png "UTE_TestDetails")
+ ![Detalles de ejecución de las pruebas](../test/media/ute-testdetails.png "UTE_TestDetails")
 
  El panel de detalles de la prueba muestra la información siguiente:
 
-- El nombre del archivo de origen y el número de línea del método de prueba.
+- El nombre de archivo de origen y el número de línea del método de prueba.
 
-- El estado de la prueba.
+- Estado de la prueba.
 
-- El tiempo transcurrido que necesitó el método de prueba para ejecutarse.
+- El tiempo que ha tardado en ejecutarse el método de prueba.
 
-  Si no se supera la prueba, el panel de detalles también muestra:
+  Si la prueba no se supera, en el panel de detalles se mostrará también:
 
-- El mensaje devuelto por el marco de pruebas unitarias para la prueba.
+- El mensaje que ha devuelto el marco de pruebas unitarias para la prueba.
 
-- El seguimiento de pila en el momento en el que no se superó la.
+- El seguimiento de la pila en el momento en que la prueba generó el error.
 
-  ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_View_the_source_code_of_a_test_method"></a> Ver el código fuente de un método de prueba
- Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).
+### <a name="view-the-source-code-of-a-test-method"></a><a name="BKMK_View_the_source_code_of_a_test_method"></a>Ver el código fuente de un método de prueba
+ Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y, a continuación, elija **abrir prueba** en el menú contextual (teclado: F12).
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_Group_and_filter_the_test_list"></a> Agrupar y filtrar la lista de pruebas
- [Agrupar la lista](#BKMK_Grouping_the_test_list) **&#124;** de pruebas [Group by traits](#BKMK_Group_by_traits) **&#124;** [Buscar y filtrar la lista de pruebas](#BKMK_Search_and_filter_the_test_list)
+## <a name="group-and-filter-the-test-list"></a><a name="BKMK_Group_and_filter_the_test_list"></a>Agrupar y filtrar la lista de pruebas
+ [Agrupar la lista de pruebas](#BKMK_Grouping_the_test_list) **&#124;** [Agrupar por rasgos](#BKMK_Group_by_traits) **&#124;** [Buscar y filtrar la lista de pruebas](#BKMK_Search_and_filter_the_test_list)
 
  El Explorador de pruebas permite agrupar las pruebas en las categorías predefinidas. En la mayoría de los marcos de pruebas unitarias que se ejecutan en el Explorador de pruebas podrá definir las categorías y los pares categoría-valor para agrupar las pruebas que desee. Para filtrar la lista de pruebas, también puede establecer coincidencias entre las cadenas y las propiedades de las pruebas.
 
-### <a name="BKMK_Grouping_the_test_list"></a> Agrupar la lista de pruebas
+### <a name="grouping-the-test-list"></a><a name="BKMK_Grouping_the_test_list"></a> Agrupar la lista de pruebas
  Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por**![Botón de grupo Explorador de pruebas](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn") y seleccione un nuevo criterio de agrupación.
 
- ![Agrupar pruebas por Categoría en el explorador de pruebas](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
+ ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
-|Grupo|Descripción|
+|Agrupar|Descripción|
 |-----------|-----------------|
 |**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
 |**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
 |**Rasgos**|Agrupa las pruebas por los pares categoría-valor definidos. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.|
 |**Proyecto**|Agrupa las pruebas por el nombre de los proyectos.|
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_Group_by_traits"></a> Agrupar por rasgos
+### <a name="group-by-traits"></a><a name="BKMK_Group_by_traits"></a> Agrupar por rasgos
  Por lo general, un rasgo es un par nombre-valor de categoría, pero también puede ser una sola categoría. Los rasgos se pueden asignar a los métodos identificados como métodos de prueba desde el marco de pruebas unitarias. Un marco de pruebas unitarias puede definir categorías de rasgo. Si lo desea, puede agregar valores a las categorías de rasgo para definir sus propios pares nombre-valor de categoría. La sintaxis para especificar los valores y las categorías de rasgo se define desde el marco de pruebas unitarias.
 
  **Rasgos del marco de pruebas unitarias de Microsoft para código administrado**
@@ -183,9 +183,9 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|Para especificar un propietario del método de prueba, use el rasgo de propietario predefinido.|
 |`TEST_PRIORITY(priority)`|Para asignar prioridades relativas a los métodos de prueba, use el rasgo de prioridad predefinido.|
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_Search_and_filter_the_test_list"></a> Buscar y filtrar la lista de pruebas
+### <a name="search-and-filter-the-test-list"></a><a name="BKMK_Search_and_filter_the_test_list"></a>Buscar y filtrar la lista de pruebas
  Puede limitar los métodos de prueba en los proyectos que vea y ejecute con los filtros del Explorador de pruebas.
 
  Si escribe una cadena en el cuadro de búsqueda del Explorador de pruebas y presiona ENTRAR, la lista de pruebas se filtrará para mostrar solo las pruebas cuyos nombres completos contengan dicha cadena.
@@ -198,7 +198,7 @@ TEST_METHOD(Method1)
 
 3. Escriba el valor de filtro entre comillas.
 
-   ![Filtrar pruebas en el explorador de pruebas](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
+   ![Filtrar pruebas en el Explorador de pruebas](../test/media/ute-filtertestlist.png "UTE_FilterTestList")
 
 > [!NOTE]
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
@@ -210,7 +210,7 @@ TEST_METHOD(Method1)
 |**Mensaje de error**|Busca coincidencias en los mensajes de error definidos por el usuario que devuelven las aserciones con errores.|
 |**Ruta de acceso del archivo**|Busca coincidencias en el nombre de archivo completo de los archivos de origen de prueba.|
 |**Nombre completo**|Busca coincidencias en el nombre de archivo completo de los métodos, las clases y los espacios de nombres de prueba.|
-|**Resultado**|Busca en los mensajes de error definidos por el usuario que se escriben en los resultados estándar (stdout) o en los errores estándar (stderr). La sintaxis para especificar los mensajes de salida se define en el marco de pruebas unitarias.|
+|**Salida**|Busca en los mensajes de error definidos por el usuario que se escriben en los resultados estándar (stdout) o en los errores estándar (stderr). La sintaxis para especificar los mensajes de salida se define en el marco de pruebas unitarias.|
 |**Resultado**|Busca coincidencias en los nombres de categoría del Explorador de pruebas: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
 
  Puede excluir un subconjunto de resultados de un filtro con la sintaxis siguiente:
@@ -227,9 +227,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  Devuelve todas las pruebas que incluyen "MyClass" en el nombre, excepto las que también incluyan "PerfTest".
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_Create_custom_playlists"></a> Crear listas de reproducción personalizadas
+## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a>Crear listas de reproducción personalizadas
  Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Al seleccionar una lista de reproducción, las pruebas de la lista aparecerán en el Explorador de pruebas. Si lo desea, puede agregar una prueba a varias listas de reproducción. Para acceder a todas las pruebas de un proyecto, elija la lista de reproducción predeterminada **Todas las pruebas** .
 
  ![Elegir una lista de reproducción](../test/media/ute-playlist.png "UTE_Playlist")
@@ -242,29 +242,29 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-pequeño") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
- ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+ ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Depurar y analizar pruebas unitarias
- [Depurar pruebas](#BKMK_Debug_unit_tests) **&#124;** unitarias [diagnosticar problemas](#BKMK_Diagnose_test_method_performance_issues) **&#124;** de rendimiento del método de prueba [analizar la cobertura de código de pruebas unitarias](#BKMK_Analyzeunit_test_code_coverage)
+## <a name="debug-and-analyze-unit-tests"></a><a name="BKMK_Debug_and_analyze_unit_tests"></a>Depurar y analizar pruebas unitarias
+ [Depurar pruebas unitarias](#BKMK_Debug_unit_tests) **&#124;** [Diagnosticar problemas de rendimiento del método de prueba](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analizar la cobertura de código de prueba unitaria](#BKMK_Analyzeunit_test_code_coverage)
 
-### <a name="BKMK_Debug_unit_tests"></a> Depurar pruebas unitarias
- Puede usar el Explorador de pruebas para iniciar una sesión de depuración para las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
+### <a name="debug-unit-tests"></a><a name="BKMK_Debug_unit_tests"></a> Depurar pruebas unitarias
+ Se puede usar el Explorador de pruebas para iniciar una sesión de depuración para las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
-1. En el editor de Visual Studio, configure un punto de interrupción en uno o varios métodos de prueba que quiera depurar.
+1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
    > [!NOTE]
-   > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, configure puntos de interrupción en todos los métodos de prueba que quiera depurar.
+   > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
 2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.
 
    Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-   ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-### <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnosticar problemas de rendimiento del método de prueba
+### <a name="diagnose-test-method-performance-issues"></a><a name="BKMK_Diagnose_test_method_performance_issues"></a>Diagnóstico de problemas de rendimiento del método de prueba
  Para diagnosticar por qué tarda demasiado un método de prueba, seleccione dicho método en el Explorador de pruebas y elija Perfil en el menú contextual. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
-### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analizar la cobertura de código de prueba unitaria
+### <a name="analyze-unit-test-code-coverage"></a><a name="BKMK_Analyzeunit_test_code_coverage"></a>Analizar la cobertura de código de pruebas unitarias
 
 > [!NOTE]
 > La cobertura de código de prueba unitaria solo se encuentra disponible en Visual Studio Enterprise.
@@ -285,12 +285,12 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-   ![Volver al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenido](#BKMK_Contents) superior
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)
 
-## <a name="BKMK_External_resources"></a> Recursos externos
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a>Recursos externos
 
-### <a name="BKMK_Guidance"></a> Orientación
+### <a name="guidance"></a><a name="BKMK_Guidance"></a>Orienta
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Prueba unitaria: el código](../test/unit-test-your-code.md) [ejecuta una prueba unitaria como un proceso de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)

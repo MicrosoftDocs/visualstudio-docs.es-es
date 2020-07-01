@@ -15,24 +15,24 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: db2c667d0a3823460a084dc1e4806501d9b26693
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aa67c33eac5d618c0a080323720775beea7b68c3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662960"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548218"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Los campos no constantes no deben ser visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|
 |Identificador de comprobación|CA2211|
-|Categoría|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un campo estático público o protegido no es constante ni es de solo lectura.
 
 ## <a name="rule-description"></a>Descripción de la regla

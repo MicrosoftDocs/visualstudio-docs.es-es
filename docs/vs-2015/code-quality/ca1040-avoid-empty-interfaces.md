@@ -15,24 +15,24 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ef6dc666cbc3c26d58358c9b59264f93a7bf184
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668308"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548257"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar interfaces vacías
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar las interfaces vacías
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Value|
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |Identificador de comprobación|CA1040|
-|Categoría|Microsoft. Design|
+|Category|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  La interfaz no declara ningún miembro ni implementa dos o más interfaces.
 
 ## <a name="rule-description"></a>Descripción de la regla

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850745"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548426"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 1. Abra el proyecto en Visual Studio.  
   
-2. En el menú, haga clic en **depurar/generador de perfiles de rendimiento..** .. Elija **red**y, a continuación, elija **iniciar**.  
+2. En el menú, haga clic en **depurar/generador de perfiles de rendimiento..**.. Elija **red**y, a continuación, elija **iniciar**.  
   
 3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -43,7 +43,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
    ![La ventana Red](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analizando datos  
+## <a name="analyzing-data"></a>Análisis de datos  
  Puede analizar el tráfico HTTP capturado mientras se ejecuta la aplicación, o incluso después de cerrarla, seleccionando cualquiera de las operaciones de red que se muestran en la vista de resumen.  
   
  La vista de resumen **Red** muestra los datos de cada operación de red durante la ejecución de la aplicación. Elija un encabezado de columna para ordenar la lista o seleccione los tipos de contenido que desea mostrar en la vista de filtro **Tipo de contenido**.  
@@ -54,13 +54,13 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
  ![Panel de detalles de la herramienta de red](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|||  
+|Nombre|Descripción|  
 |-|-|  
 |**Encabezados**|Información acerca de los encabezados de solicitud del evento.|  
 |**Cuerpo**|Datos de carga de contenido de solicitud y respuesta.|  
 |**Parámetros**|Los nombres y valores de los parámetros de la cadena de consulta.|  
 |**Cookies**|Datos de la cookie de solicitud y respuesta.|  
-|**Intervalos**|Un gráfico de las fases del proceso de adquisición de los recursos seleccionados.|  
+|**Horarios**|Un gráfico de las fases del proceso de adquisición de los recursos seleccionados.|  
   
  La barra de **resumen** de Red muestra el número de operaciones de red que se muestran en un momento dado, cuántos datos se han transferido, cuánto tiempo llevó descargarlos y cuántos errores (solicitudes con respuestas 4xx o 5xx) hay visibles.  
   
@@ -73,7 +73,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 3. El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
-## <a name="see-also"></a>Vea también  
- [Ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog de Visual Studio: presentación del inspector de red de Visual studio](https://blogs.msdn.com/b/visualstudio/)   
+## <a name="see-also"></a>Consulte también  
+ [Ejecutar herramientas de generación de perfiles sin depuración](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Blog de Visual Studio: presentación del inspector de red de Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

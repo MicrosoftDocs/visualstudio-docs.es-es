@@ -1,7 +1,7 @@
 ---
 title: Personalizar el Explorador de modelos
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c12ac2063e6b3ac04e3c0e9b0c20c69ea91a35
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589713"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548374"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y el comportamiento del explorador para el diseñador de lenguaje específico de dominio como se indica a continuación:
@@ -33,14 +33,14 @@ Puede cambiar la apariencia y el comportamiento del explorador para el diseñado
  Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento del explorador** en **DSL Explorer**y, a continuación, en la ventana **propiedades** , establezca la propiedad **title** en el título que desee.
 
 ## <a name="changing-the-tab-icon"></a>Cambiar el icono de la pestaña
- Para cambiar el icono de la pestaña del explorador, use un icono de 16x16 píxeles en un archivo. bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps. bmp**. Por ejemplo, puede cambiar el archivo de icono Setup. ico de Visual Studio al formato. bmp y cambiarle el nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña del explorador cuando esté acoplado junto con **Explorador de soluciones**.
+ Para cambiar el icono de la pestaña del explorador, use un icono de 16x16 píxeles en un archivo. bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps.bmp**. Por ejemplo, puede cambiar el archivo de icono Setup. ico de Visual Studio al formato. bmp y cambiarle el nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña del explorador cuando esté acoplado junto con **Explorador de soluciones**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Establecer iconos personalizados en nodos del explorador
  Puede personalizar los nodos del explorador mediante la configuración de nodo del explorador. En el procedimiento siguiente se muestra cómo agregar un icono a un nodo.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Para agregar un icono a un nodo del explorador
 
-1. Cree una solución de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] mediante la plantilla de solución flujo de tareas.
+1. Cree una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución mediante la plantilla de solución flujo de tareas.
 
 2. Coloque un archivo. bmp que contenga un icono de 16x16 píxeles en la carpeta **Dsl\Resources** de la solución.
 
@@ -111,6 +111,6 @@ Puede cambiar la apariencia y el comportamiento del explorador para el diseñado
 
      El explorador debe mostrar solo un nodo **actores** y no debe mostrar el nodo **comentarios** .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,7 +1,7 @@
 ---
 title: Personalizar la ventana Propiedades
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589700"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548283"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar el ventana Propiedades
 
@@ -40,7 +40,7 @@ Algunas de las características dinámicas de los elementos gráficos se pueden 
 
 Haga clic con el botón secundario en una clase de forma en definición de DSL, elija **Agregar exposición**y, a continuación, elija una característica.
 
-En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores puede exponer el **Color**`,`propiedades **textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
+En las formas puede exponer las propiedades **fillColor**, **OutlineColor**, **textColor**, **OutlineDashStyle**, **OutlineThickness** y **FillGradientMode** . En los conectores, puede exponer las propiedades **color** `,` **textColor**, **DashStyle**y **thickness** . En los diagramas puede exponer las propiedades **fillColor** y **textColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío: mostrar las propiedades de los elementos relacionados
 
@@ -52,7 +52,7 @@ Este efecto se denomina *reenvío de propiedades*y se produce automáticamente e
 
 Cuando el usuario selecciona una forma o un conector, o un elemento en el explorador, se muestran las propiedades siguientes en el ventana Propiedades:
 
-- Propiedades de dominio que se definen en la clase de dominio del elemento de modelo, incluidas las que se definen en las clases base. Una excepción son las propiedades de dominio para las que se ha establecido que **se puede examinar** para `False`.
+- Propiedades de dominio que se definen en la clase de dominio del elemento de modelo, incluidas las que se definen en las clases base. Una excepción son las propiedades de dominio para las que se ha establecido que **se puede examinar** `False` .
 
 - Los nombres de los elementos que están vinculados a través de relaciones que tienen una multiplicidad de 0.. 1. Esto proporciona un método práctico para ver los elementos vinculados opcionalmente, incluso si no se ha definido una asignación de conector para la relación.
 
@@ -71,7 +71,7 @@ En el procedimiento siguiente se da por supuesto que ha creado un DSL. Los prime
 
 #### <a name="forward-a-property-from-another-element"></a>Reenviar una propiedad desde otro elemento
 
-1. Cree una solución de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que contenga al menos dos clases, que en este ejemplo se denominan **book** y **Author**. Debe haber una relación de cualquier tipo entre el **libro** y el **autor**.
+1. Cree una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución que contenga al menos dos clases, que en este ejemplo se denominan **book** y **Author**. Debe haber una relación de cualquier tipo entre el **libro** y el **autor**.
 
     La multiplicidad del rol de origen (el rol en el lado del **libro** ) debe ser 0.. 1 o 1.. 1, para que cada **libro** tenga un **autor**.
 
@@ -132,7 +132,7 @@ Sin embargo, puede especificar los siguientes editores y tipos:
 
     En el ventana Propiedades, seleccione el tipo externo en la lista desplegable del campo **tipo** .
 
-   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarla. Los valores mostrados se obtienen de la función `ToString()`. Puede escribir código de programa que establezca el valor de la propiedad, por ejemplo en un comando o una regla.
+   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarla. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establezca el valor de la propiedad, por ejemplo en un comando o una regla.
 
 ### <a name="set-a-property-editor"></a>Establecer un editor de propiedades
 
@@ -146,9 +146,9 @@ Agregue un atributo CLR a la propiedad de dominio de la forma siguiente:
 
 Puede establecer el atributo en una propiedad mediante la entrada de **atributo personalizado** en el ventana Propiedades.
 
-El tipo de `AnEditor` se debe derivar del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor>. Para obtener más información, vea <xref:System.ComponentModel.EditorAttribute>.
+El tipo de `AnEditor` se debe derivar del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor> . Para obtener más información, vea <xref:System.ComponentModel.EditorAttribute>.
 
-Puede especificar su propio editor o editor de .NET, como <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor>. Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en la que el usuario pueda escribir un nombre de archivo.
+Puede especificar su propio editor o editor de .NET, como <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor> . Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en la que el usuario pueda escribir un nombre de archivo.
 
 #### <a name="define-a-file-name-domain-property"></a>Definir una propiedad de dominio nombre de archivo
 
@@ -169,7 +169,7 @@ Puede especificar su propio editor o editor de .NET, como <xref:System.Windows.F
 
     1. Presione CTRL + F5 o F5. En la solución de depuración, abra un archivo de prueba. Cree un elemento de la clase de dominio y selecciónelo.
 
-    2. En el ventana Propiedades, seleccione la propiedad de dominio. El campo de valor muestra un botón de puntos suspensivos **[...]** .
+    2. En el ventana Propiedades, seleccione la propiedad de dominio. El campo de valor muestra un botón de puntos suspensivos **[...]**.
 
     3. Haga clic en los puntos suspensivos. Aparece un cuadro de diálogo de archivo. Seleccione un archivo y cierre el cuadro de diálogo. La ruta de acceso del archivo es ahora el valor de la propiedad de dominio.
 
@@ -177,13 +177,13 @@ Puede especificar su propio editor o editor de .NET, como <xref:System.Windows.F
 
 Puede definir su propio editor. Lo haría para permitir que el usuario edite un tipo que haya definido o para editar un tipo estándar de una manera especial. Por ejemplo, puede permitir que el usuario escriba una cadena que represente una fórmula.
 
-Para definir un editor, escriba una clase que se derive de <xref:System.Drawing.Design.UITypeEditor>. La clase debe invalidar:
+Para definir un editor, escriba una clase que se derive de <xref:System.Drawing.Design.UITypeEditor> . La clase debe invalidar:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de la propiedad.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor abrirá un cuadro de diálogo o proporcionará un menú desplegable.
 
-También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`y `PaintValue`.  Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
+También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported` y `PaintValue` .  Para obtener más información, vea <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Agregue el código en un archivo de código independiente en el proyecto **DSL** .
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)

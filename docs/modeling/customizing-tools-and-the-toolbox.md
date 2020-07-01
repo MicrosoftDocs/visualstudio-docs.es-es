@@ -1,7 +1,7 @@
 ---
 title: Personalizar las herramientas y el cuadro de herramientas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,18 +13,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589726"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548296"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 
 Debe definir los elementos del cuadro de herramientas que quiera que los usuarios puedan agregar a sus modelos. Hay dos tipos de herramientas: herramientas de elementos y herramientas de conexión. En el diseñador generado, un usuario puede seleccionar una herramienta de elemento para dibujar formas en el diagrama, y puede seleccionar una herramienta de conexión para dibujar vínculos entre las formas. Por lo general, las herramientas de elemento permiten a los usuarios agregar instancias de clases de dominio a sus modelos, y las herramientas de conexión les permiten agregar instancias de relaciones de dominio.
 
-## <a name="ToolboxDef"></a>Cómo se define el cuadro de herramientas
+## <a name="how-the-toolbox-is-defined"></a><a name="ToolboxDef"></a>Cómo se define el cuadro de herramientas
  En DSL Explorer (Explorador de DSL), expanda el nodo Editor (Editor) y los nodos situados bajo él. Normalmente, verá una jerarquía similar a esta:
 
 ```
@@ -69,7 +69,7 @@ La propiedad del **generador de conexiones** de una herramienta de conexión hac
 
 3. Establezca la propiedad **icono del cuadro de herramientas** para que haga referencia a un mapa de bits de 16x16.
 
-     Si desea definir un nuevo icono, cree un archivo de mapa de bits en Explorador de soluciones en la carpeta **Dsl\Resources** . El archivo debe tener los siguientes valores de propiedad: **acción de compilación** = **contenido**; **Copiar en el directorio de salida** = no **copiar**.
+     Si desea definir un nuevo icono, cree un archivo de mapa de bits en Explorador de soluciones en la carpeta **Dsl\Resources** . El archivo debe tener los siguientes valores de propiedad: contenido de la **acción de compilación**  =  **Content**; **Copiar en el directorio**  =  de salida **No copiar**.
 
 4. **Para una herramienta de elemento:** Establezca la propiedad **clase** de la herramienta para que haga referencia a una clase de dominio concreta que está asignada a una forma.
 
@@ -79,7 +79,7 @@ La propiedad del **generador de conexiones** de una herramienta de conexión hac
 
      Si la herramienta no aparece, detenga Visual Studio experimental. En el menú **Inicio** de Windows, ejecute **restablecer la instancia Experimental de Microsoft Visual Studio 2010**. En el menú **Compilar**, haga clic en **Recompilar solución**. Después, vuelva a probar el DSL.
 
-## <a name="customizing"></a>Personalización de las herramientas de elemento
+## <a name="customizing-element-tools"></a><a name="customizing"></a>Personalización de las herramientas de elemento
  De forma predeterminada, la herramienta creará una instancia única de la clase especificada, pero puede cambiar esto de dos maneras:
 
 - Defina directivas de combinación de elementos en otras clases, permita que acepten nuevas instancias de esta clase y permita que creen vínculos adicionales cuando se crea un elemento nuevo. Por ejemplo, podría permitir que el usuario coloque un comentario en otro elemento, creando así un vínculo de referencia entre los dos.
@@ -90,7 +90,7 @@ La propiedad del **generador de conexiones** de una herramienta de conexión hac
 
 - Escriba código para personalizar la herramienta de manera que pueda crear grupos de elementos. La herramienta se inicializa mediante métodos de ToolboxHelper.cs que puede invalidar. Para obtener más información, vea [crear grupos de elementos a partir de una herramienta](#groups).
 
-## <a name="groups"></a>Crear grupos de elementos a partir de una herramienta
+## <a name="creating-groups-of-elements-from-a-tool"></a><a name="groups"></a>Crear grupos de elementos a partir de una herramienta
  Cada herramienta de elemento contiene un prototipo de los elementos que debe crear. De forma predeterminada, cada herramienta de elemento crea un solo elemento, pero se puede crear un grupo de objetos relacionados con una herramienta. Para ello, inicialice la herramienta con un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contenga los elementos relacionados.
 
  El siguiente ejemplo se toma de un DSL en el que hay un tipo Transistor. Cada Transistor tiene tres Terminals con nombre. La herramienta de elemento de Transistors almacena un prototipo que contiene cuatro elementos de modelo y tres vínculos de relación. Cuando el usuario arrastra la herramienta al diagrama, se crea una instancia del prototipo que se vincula a la raíz del modelo.
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a>Personalizar las herramientas de conexión
+## <a name="customizing-connection-tools"></a><a name="connections"></a>Personalizar las herramientas de conexión
  Normalmente, se crea una herramienta de elemento al crear una nueva clase de conector. También puede sobrecargar una herramienta permitiendo que los tipos de los dos extremos determinen el tipo de la relación. Por ejemplo, podría definir una herramienta de conexión que podría crear relaciones Persona-Persona y Persona-Ciudad.
 
  Las herramientas de conexión invocan generadores de conexiones. Use generadores de conexiones para especificar cómo los usuarios pueden vincular elementos en el diseñador generado. Los generadores de conexiones especifican los elementos que se pueden vincular y el tipo de vínculo que se crea entre ellos.
@@ -184,17 +184,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  En la muestra del diagrama de componentes, el generador de conexiones de la relación de dominio Connection se personaliza para restringir las conexiones que se pueden realizar entre los puertos. La ilustración siguiente muestra que puede realizar conexiones solo desde elementos `OutPort` a elementos `InPort`, pero puede anidar unos componentes dentro de otros.
 
- **Conexión entrante a un Outport desde un componente anidado**
+ **Conexión que llega a un OutPort desde un componente anidado**
 
  ![Generador de conexiones](../modeling/media/connectionbuilder_3.png)
 
  Por este motivo, quizás quiera especificar que una conexión puede ir dirigida desde un componente anidado hacia un OutPort. Para especificar este tipo de conexión, establezca **usar aceptación personalizada** en el tipo de **inport** como rol de origen y el tipo de **Outport** como rol de destino en la ventana **detalles de DSL** , tal como se muestra en las siguientes ilustraciones:
 
- **Directiva de conexión de vínculo en el explorador de DSL**
+ **Directiva de conexión de vínculo en DSL Explorer (Explorador de DSL)**
 
  ![Imagen de generador de conexiones](../modeling/media/connectionbuilder_4a.png)
 
- **Directiva de conexión de vínculo en la ventana detalles de DSL**
+ **Directiva de conexión de vínculo en la ventana DSL Details (Detalles de DSL)**
 
  ![Directiva de conexión de vínculo en la ventana detalles de DSL](../modeling/media/connectionbuilder_4b.png)
 
@@ -232,7 +232,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  El código personalizado se usa para aplicar restricciones "difíciles", pero se debe considerar si los usuarios deben poder realizar temporalmente conexiones no válidas. En caso de que deban, puede modificar las restricciones para que las conexiones no se validen hasta que los usuarios intenten guardar los cambios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md)
