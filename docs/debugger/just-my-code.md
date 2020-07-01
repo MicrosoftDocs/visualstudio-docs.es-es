@@ -1,19 +1,19 @@
 ---
 title: Depuración de código de usuario con Solo mi código | Microsoft Docs
 ms.date: 02/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535997"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536570"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depuración de código de usuario exclusivamente con Solo mi código
 
@@ -196,7 +196,7 @@ Un archivo *.natstepfilter* es un archivo XML con esta sintaxis:
 
 <a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código de JavaScript controla la ejecución paso a paso y la presentación de la pila de llamadas categorizando el código en una de estas clasificaciones:
 
-|||
+|Clasificación|Descripción|
 |-|-|
 |**MyCode**|Código de usuario que posee y controla.|
 |**LibraryCode**|Código que no es de usuario de bibliotecas que utiliza con frecuencia y que la aplicación necesita para funcionar correctamente (por ejemplo, WinJS o jQuery).|
@@ -279,7 +279,7 @@ Los archivos *Mycode.json* utilizan esta sintaxis:
 
 Los pares clave-valor **Eval**, **Function** y **ScriptBlock** determinan cómo se clasifica el código generado dinámicamente:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Eval**|Script que se ejecuta pasando una cadena a la función `eval` proporcionada por el host. De forma predeterminada, el script Eval se clasifica como **MyCode**.|
 |**Function**|Script que se ejecuta pasando una cadena al constructor de `Function`. De forma predeterminada, el script Function se clasifica como **LibraryCode**.|
@@ -295,7 +295,7 @@ Puede cambiar el valor a una de estas palabras clave:
 
 Los pares clave-valor **MyCode**, **Libraries** y **Unrelated** especifican las direcciones URL o los archivos que desea incluir en una clasificación:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**MyCode**|Matriz de direcciones URL o archivos que se clasifican como **MyCode**.|
 |**Bibliotecas**|Matriz de direcciones URL o archivos que se clasifican como **LibraryCode**.|

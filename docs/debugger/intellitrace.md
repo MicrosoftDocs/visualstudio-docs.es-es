@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be69003d14d2c246f95249b5db0b1fa7d470598
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911437"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536518"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -39,7 +39,7 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 
 ## <a name="what-do-you-want-to-do"></a>¿Qué desea hacer?
 
-|||
+|Escenario|Title|
 |-|-|
 |**Depurar la aplicación con IntelliTrace:**<br /><br /> - Deseo ver los últimos eventos.<br />- Deseo ver la información de llamadas con eventos anteriores.<br />- Guardar mi sesión de IntelliTrace.<br />- Controlar los datos que IntelliTrace recopila.|- [Inspección de los estados de aplicación anteriores mediante IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Características de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Depuración histórica](../debugger/historical-debugging.md)|
 |**Recopilar datos de IntelliTrace de aplicaciones implementadas**|- [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
@@ -47,7 +47,7 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 
 ## <a name="what-apps-can-i-debug-with-intellitrace"></a><a name="IntelliTraceSupport"></a> ¿Qué aplicaciones se pueden depurar con IntelliTrace?
 
-| | |
+| Nivel de compatibilidad| Tipos de aplicación |
 |---------------------| - |
 | **Totalmente compatible** | - Aplicaciones de Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: Depuración de una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, consulte [Depuración con IntelliTrace y Visual Studio de un servicio en la nube publicado](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Compatibilidad limitada** | - Aplicaciones de C++ dirigidas a Windows que permiten ver instantáneas con Step-back de IntelliTrace. Solo se admiten los eventos de excepción y del depurador.<br />- Solo aplicaciones de .NET Core y ASP.NET Core compatibles con ciertos eventos (eventos de controlador de MVC, ADO.NET y HTTPClient) en la depuración local. El recopilador independiente no es compatible con aplicaciones de .NET Core ni de ASP.NET Core.<br />- Aplicaciones de F# en modo experimental<br />- Solo aplicaciones para UWP compatibles con eventos |

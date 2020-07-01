@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307284"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543681"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
@@ -54,7 +54,7 @@ Si el proyecto se protege en el control de código fuente, cada elemento **Vista
 
 La barra de herramientas de **Vista de clases** contiene los siguientes comandos:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa ( *.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
@@ -65,7 +65,7 @@ La barra de herramientas de **Vista de clases** contiene los siguientes comandos
 
 El botón **Configuración de vista de clases** de la barra de herramientas incluye las siguientes opciones:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Mostrar tipos base**|Se muestran los tipos base.|
 |**Mostrar referencias de proyecto**|Se muestran las referencias del proyecto.|
@@ -80,7 +80,7 @@ El botón **Configuración de vista de clases** de la barra de herramientas incl
 
 En función del tipo de proyecto seleccionado, el menú contextual de la **Vista de clases** puede contener los siguientes comandos:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Ir a definición**|Busca la definición del elemento en el código fuente o en el **Examinador de objetos** si el elemento no está definido en el proyecto abierto.|
 |**Examinar definición**|Muestra el elemento seleccionado en el **Examinador de objetos**.|
@@ -112,7 +112,7 @@ La ventana **Jerarquía de llamadas** no encuentra referencias a grupos de méto
 
 El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguientes comandos:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado como un nuevo nodo raíz.|
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol.|
@@ -121,7 +121,7 @@ El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguie
 |**Copiar**|Copia el nodo seleccionado (pero no sus subnodos).|
 |**Actualizar**|Actualiza la información.|
 
-## <a name="BKMK_ObjectBrowser"></a> Examinador de objetos
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Examinador de objetos
 
 La ventana del **Examinador de objetos** muestra descripciones del código en sus proyectos.
 
@@ -151,7 +151,7 @@ Puede usar el **Examinador de objetos** para agregar una referencia de ensamblad
 
 Puede especificar una de las siguientes vistas mediante el botón **Configuración del Examinador de objetos**:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Ver espacios de nombres**|Muestra los espacios de nombres en lugar de los contenedores físicos en el panel izquierdo. Los espacios de nombres almacenados en varios contenedores físicos se combinan.|
 |**Ver contenedores**|Muestra los contenedores físicos en lugar de los espacios de nombres en el panel izquierdo. Los ajustes **Ver espacios de nombres** y **Ver contenedores** son mutuamente excluyentes.|
@@ -168,7 +168,7 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 
 En función del tipo de elemento seleccionado, el menú contextual del **Explorador de objetos** puede contener los siguientes comandos:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Examinar definición**|Muestra el nodo principal del elemento seleccionado.|
 |**Buscar todas las referencias**|Busca el elemento del objeto seleccionado actualmente y muestra los resultados en la ventana **Resultados de la búsqueda**.|
@@ -197,10 +197,10 @@ Aunque esta ventana es de solo lectura, puede establecer puntos de interrupción
 
 El menú contextual de la ventana **Definición de código** puede contener los siguientes comandos:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Acciones rápidas y refactorizaciones**||
-|**Cambio de nombre**||
+|**Cambiar nombre**||
 |**Generar gráfico de archivos de inclusión**||
 |**Ver la definición**||
 |**Ir a definición**|Busca la definición (o definiciones, en el caso de clases parciales) y las muestra en la ventana **Resultados de la búsqueda**.|

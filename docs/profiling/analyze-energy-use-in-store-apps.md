@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73144731"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537246"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -124,7 +124,7 @@ if (performance && performance.mark) {
 
  ![Página de informe del generador de perfiles de energía](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
-|||
+|Imagen|Descripción|
 |-|-|
 |![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|
 |![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|

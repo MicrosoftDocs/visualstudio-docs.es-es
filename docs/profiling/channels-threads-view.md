@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62776782"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537090"
 ---
 # <a name="channels-threads-view"></a>Canales (vista Subprocesos)
 El visualizador de simultaneidad muestra cuatro tipos de canales: canales de subprocesos, de discos, de marcador y de GPU.
@@ -25,7 +25,7 @@ El visualizador de simultaneidad muestra cuatro tipos de canales: canales de sub
 ## <a name="thread-channels"></a>Canales de subproceso
  Un canal de subproceso muestra el estado, por color, de un solo subproceso. Al detenerse en el nombre del canal, se muestra la función de inicio del subproceso especificado. El visualizador de simultaneidad detecta varios tipos de subprocesos. Los tipos más comunes se muestran en la tabla siguiente.
 
-|||
+|Thread|Descripción|
 |-|-|
 |Subproceso principal|El subproceso que inició la aplicación.|
 |Subproceso de trabajo|Un subproceso creado por el subproceso principal de la aplicación.|

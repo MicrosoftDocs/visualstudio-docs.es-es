@@ -1,19 +1,19 @@
 ---
 title: 'Cómo: modelar un terreno en 3D'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 12f19363d9024f8e7e2deb69a8038b8854eb50e4
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589427"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85768969"
 ---
 # <a name="how-to-model-3d-terrain"></a>Cómo: Modelar un terreno en 3D
 

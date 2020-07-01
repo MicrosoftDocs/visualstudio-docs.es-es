@@ -1,19 +1,19 @@
 ---
 title: Exportación de una textura para usarla con aplicaciones de Direct2D o Javascipt
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 546f7255b1c2846bdbd05bba0593b30bad9beacd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72635512"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769004"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedimiento Exportación de una textura para usarla con aplicaciones de Direct2D o JavaScript
 
