@@ -1,30 +1,30 @@
 ---
 title: 'Cómo: Migrar lenguajes específicos de dominio a una nueva versión'
 ms.date: 11/04/2016
-ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+ms.topic: how-to
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be4a8205935d131d880923e721e342ea904134d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747550"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532616"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Cómo: Migrar lenguajes específicos de dominio a una nueva versión
-Puede migrar proyectos que definan y usen lenguaje específico de dominio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] de la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] distribuida con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+Puede migrar proyectos que definen y usan lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
 
- Una herramienta de migración se proporciona como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. La herramienta convierte proyectos y soluciones de Visual Studio que usan o definen herramientas de DSL.
+ Una herramienta de migración se proporciona como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] . La herramienta convierte proyectos y soluciones de Visual Studio que usan o definen herramientas de DSL.
 
  Debe ejecutar la herramienta de migración explícitamente: no se inicia automáticamente cuando se abre una solución en Visual Studio. La herramienta y el documento de instrucciones detalladas se pueden encontrar en esta ruta de acceso:
 
  **% Archivos de programa%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar los proyectos DSL
- La herramienta de migración modifica los archivos de proyecto de Visual Studio ( **. csproj**) y los archivos de solución ( **. sln**).
+ La herramienta de migración modifica los archivos de proyecto de Visual Studio (**. csproj**) y los archivos de solución (**. sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Para preparar los proyectos para la migración.
 
@@ -59,9 +59,9 @@ Puede migrar proyectos que definan y usen lenguaje específico de dominio para [
 
    1. Haga clic en **convertir**.
 
-        Antes de que se convierta cada archivo de proyecto, se guarda una copia de _Project_ **. csproj** como _Project_ **. VS2008. csproj**
+        Antes de que se convierta cada archivo de proyecto, se guarda una copia de _Project_**. csproj** como _Project_**. VS2008. csproj**
 
-        Una copia de cada _solución_ **. sln** se guarda como _Solution_ **. VS2008. sln** .
+        Una copia de cada _solución_**. sln** se guarda como _Solution_**. VS2008. sln** .
 
    2. Investigue cualquier conversión con errores que se notifique.
 
@@ -86,4 +86,4 @@ Puede migrar proyectos que definan y usen lenguaje específico de dominio para [
 
 ## <a name="see-also"></a>Vea también
 
-- [Entradas de blog relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Entradas blogs relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

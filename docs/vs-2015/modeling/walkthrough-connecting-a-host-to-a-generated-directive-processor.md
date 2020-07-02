@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 17ec8199e99e76d5995e49570c82ad8523505ebe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915989"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532969"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 ## <a name="prerequisites"></a>Requisitos previos
  Para definir un DSL, debe tener instalados los siguientes componentes:
 
-|||
+|Producto|Vínculo de descarga|
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
-|SDK de visualización y modelado de Visual Studio|[Descarga del SDK de modelado](https://www.microsoft.com/download/details.aspx?id=48148)|
+|SDK de Visual Studio de visualización y modelado|[Descarga del SDK de modelado](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Además, debe tener la transformación de plantilla de texto personalizado creada en [Tutorial: crear un host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -72,13 +72,13 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 
 3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
-    Se abre una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+    Se abre una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 4. En la compilación experimental, en **Explorador de soluciones**, haga doble clic en el archivo **sample. min**.
 
     El archivo se abre en el diseñador. Observe que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2, y un vínculo entre ellos.
 
-5. Cierre la segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Cierre la segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 6. Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.
 
@@ -95,17 +95,17 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 
 3. Agregue las siguientes referencias:
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. Diagrams. 11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
 
 4. En la parte superior de Program.cs o Module1. VB, agregue la siguiente línea de código:
 
@@ -117,7 +117,7 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
     Imports Microsoft.Win32
     ```
 
-5. Busque el código de la propiedad `StandardAssemblyReferences`y reemplácelo por el código siguiente:
+5. Busque el código de la propiedad `StandardAssemblyReferences` y reemplácelo por el código siguiente:
 
     > [!NOTE]
     > En este paso, agregará referencias a los ensamblados necesarios para el procesador de directivas generado que el host admitirá.
@@ -153,7 +153,7 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
     }
     ```
 
-6. Busque el código de la función `ResolveDirectiveProcessor`y reemplácelo por el código siguiente:
+6. Busque el código de la función `ResolveDirectiveProcessor` y reemplácelo por el código siguiente:
 
     > [!IMPORTANT]
     > Este código contiene referencias codificadas de forma rígida al nombre del procesador de directivas generado al que desea conectarse. Podría hacerlo con facilidad, en cuyo caso busca todos los procesadores de directivas que aparecen en el registro e intenta encontrar una coincidencia. En ese caso, el host funcionaría con cualquier procesador de directivas generado.
@@ -236,7 +236,7 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el nombre `TestTemplateWithDP.tt`. Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplateWithDP.tt` . Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
 
 2. Agregue lo siguiente al archivo de texto:
 
@@ -310,13 +310,13 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
     #>
     ```
 
-3. En el código, reemplace \<la ruta de acceso > con la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
+3. En el código, reemplace \<YOUR PATH> por la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
 
 4. Guarde y cierre el archivo.
 
 #### <a name="to-test-the-custom-host"></a>Para probar el host personalizado
 
-1. Abra una ventana Símbolo del sistema.
+1. Abra una ventana de símbolo del sistema.
 
 2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 
@@ -325,7 +325,7 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo CustomHost. exe en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
 3. Escriba un espacio.
 
@@ -336,13 +336,13 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP. txt en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP.txt en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
      La aplicación host personalizada se ejecuta e inicia el proceso de transformación de plantillas de texto.
 
-5. En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP. txt.
+5. En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP.txt.
 
-     La carpeta también contiene el archivo TestTemplateWithDP1. txt.
+     La carpeta también contiene el archivo TestTemplateWithDP1.txt.
 
 6. Abra este archivo para ver el resultados de la transformación de la plantilla de texto.
 
@@ -358,5 +358,5 @@ Puede escribir su propio host que procesa plantillas de texto. En [Tutorial: cre
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Tutorial: Crear un host de plantillas de texto personalizadas](../modeling/walkthrough-creating-a-custom-text-template-host.md)

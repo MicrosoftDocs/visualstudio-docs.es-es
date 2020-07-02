@@ -1,7 +1,7 @@
 ---
 title: Mapas de código
 ms.date: 05/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e4efbc0cf950781c84eadf974ea87943d9828c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594583"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532722"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Asignación de dependencias con mapas de código
 
@@ -34,22 +34,22 @@ Para crear y editar mapas de código, necesita Visual Studio Enterprise Edition.
 > [!NOTE]
 > Antes de compartir las asignaciones creadas en Visual Studio Enterprise con otras personas que usan Visual Studio Professional, asegúrese de que todos los elementos del mapa (como los elementos ocultos, los grupos expandidos y los vínculos entre grupos) estén visibles.
 
-Las dependencias de código se pueden asignar en los siguientes idiomas:
+Las dependencias de código se pueden asignar en los siguientes lenguajes:
 
-- Visual C# o Visual Basic en una solución o ensamblados ( *. dll* o *. exe*)
+- Visual C# o Visual Basic en una solución o ensamblados (*. dll* o *. exe*)
 
-- Código C o C++ nativo o administrado en proyectos C++ visuales, archivos de encabezado ( *. h* o `#include`) o binarios
+- Código de C o C++ nativo o administrado en proyectos de Visual C++, archivos de encabezado (*. h* o `#include` ) o archivos binarios
 
 - Proyectos y ensamblados de X++ creados desde módulos de .NET para Microsoft Dynamics AX
 
 > [!NOTE]
-> En el caso de C# los proyectos que no sean o Visual Basic, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos de **Explorador de soluciones**, **vista de clases**y **Examinador de objetos**.
+> En el caso de los proyectos que no sean de C# o Visual Basic, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos de **Explorador de soluciones**, **vista de clases**y **Examinador de objetos**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Instalación del mapa de código y la validación de dependencias dinámicas
 
 Para crear un mapa de código en Visual Studio, primero Instale los componentes **mapa de código** y **validación de dependencias dinámicas** :
 
-1. Abra **instalador de Visual Studio**. Puede abrirlo desde el menú Inicio de Windows o en Visual Studio seleccionando **herramientas** > **obtener herramientas y características**.
+1. Abra **instalador de Visual Studio**. Puede abrirlo desde el menú Inicio de Windows o en Visual Studio seleccionando **herramientas**  >  **obtener herramientas y características**.
 
 1. Seleccione la pestaña **Componentes individuales**.
 
@@ -67,7 +67,7 @@ Puede crear un mapa de código vacío y arrastrar los elementos a él, incluidas
 
 Para agregar un mapa de código vacío:
 
-1. En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución de nivel superior. Elija **agregar** > **nuevo elemento**.
+1. En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución de nivel superior. Elija **Agregar**  >  **nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , en **instalado**, elija la categoría **General** .
 
@@ -78,13 +78,13 @@ Para agregar un mapa de código vacío:
 
    En la carpeta **elementos** de la solución de la solución aparece un mapa en blanco.
 
-Del mismo modo, puede crear un nuevo archivo de mapa de código sin agregarlo a la solución seleccionando **arquitectura** > **nuevo mapa de código** o **archivo** > **nuevo** **archivo**de > .
+Del mismo modo, puede crear un nuevo archivo de mapa de código sin agregarlo a la solución seleccionando **arquitectura**  >  **nuevo mapa de código** o **archivo**  >  **nuevo**  >  **archivo**.
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Generar un mapa de código para la solución
 
 Para ver todas las dependencias de la solución:
 
-1. En la barra de menús, elija **arquitectura** > **generar mapa de código para la solución**. Si el código no ha cambiado desde la última vez que lo compiló, puede seleccionar **arquitectura** > **generar mapa de código para la solución sin generar** en su lugar.
+1. En la barra de menús, elija **arquitectura**  >  **generar mapa de código para solución**. Si el código no ha cambiado desde la última vez que lo compiló, puede seleccionar **arquitectura**  >  **generar mapa de código para la solución sin compilar** .
 
    ![Generar un comando de mapa de código](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -104,7 +104,7 @@ Para ver todas las dependencias de la solución:
 
    ![Expandir un nodo en un mapa de código](../modeling/media/dependencygraph_containment.png)
 
-   También puede usar el teclado: seleccione el elemento y luego presione la tecla más ( **+** ). Para explorar niveles de código más profundos, haga lo mismo para los espacios de nombres, los tipos y los miembros.
+   O bien, use el teclado seleccionando el elemento y presionando la tecla más ( **+** ). Para explorar niveles de código más profundos, haga lo mismo para los espacios de nombres, los tipos y los miembros.
 
    > [!TIP]
    > Para obtener más información sobre cómo trabajar con mapas de código mediante el mouse, el teclado y el toque, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
@@ -146,7 +146,7 @@ Para ver todas las dependencias de la solución:
 
     ![Seleccionar elementos para ver sus relaciones](../modeling/media/codemapsviewnewrelationships.png)
 
-Vea también:
+Consulte también:
 
 - [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)
 - [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
@@ -162,7 +162,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
    ![Seleccionar los elementos que se van a incluir en el mapa](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. En la barra de herramientas **Explorador de soluciones** , elija **Mostrar en mapa de código** ![botón Crear nuevo gráfico a partir de los nodos seleccionados](../modeling/media/createnewgraphfromselectedbutton.gif). O bien, abra el menú contextual de uno o un grupo de elementos y elija **Mostrar en mapa de código**.
+1. En la barra de herramientas **Explorador de soluciones** , elija **Mostrar en mapa de código** ![ crear nuevo gráfico a partir de los nodos seleccionados ](../modeling/media/createnewgraphfromselectedbutton.gif) . O bien, abra el menú contextual de uno o un grupo de elementos y elija **Mostrar en mapa de código**.
 
    También puede arrastrar elementos de **Explorador de soluciones**, **vista de clases**o **Examinador de objetos**a un mapa de código [nuevo](#add-a-code-map) o existente. Para incluir la jerarquía primaria de los elementos, mantenga presionada la tecla **Ctrl** mientras arrastra los elementos, o bien use el botón **incluir elementos primarios** de la barra de herramientas del mapa de código para especificar la acción predeterminada. También puede arrastrar archivos de ensamblado desde fuera de Visual Studio, como desde el **Explorador de Windows**.
 
@@ -177,19 +177,19 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
    ![Expandir un nodo en un mapa de código](../modeling/media/dependencygraph_containment.png)
 
-   Para expandir todos los elementos, selecciónelos mediante **Ctrl**+**a**, abra el menú contextual del mapa y elija **Grupo** > **expandir**. Sin embargo, esta opción no está disponible si el hecho de expandir todos los grupos genera un mapa que no se puede usar o problemas de memoria.
+   Para expandir todos los elementos, selecciónelos mediante **Ctrl** + **a**, abra el menú contextual del mapa y elija **Group**  >  **expandir**grupo. Sin embargo, esta opción no está disponible si el hecho de expandir todos los grupos genera un mapa que no se puede usar o problemas de memoria.
 
 5. Continúe expandiendo los elementos que le interesen hasta el nivel de clase y miembro, si es necesario.
 
    ![Expandir los grupos al nivel de clase y de miembro](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Para ver los miembros que están en el código pero no aparecen en el mapa, haga clic en el icono volver a **capturar los elementos secundarios** ![icono volver a capturar los elementos secundarios](../modeling/media/dependencygraph_deletednodesicon.png) en la esquina superior izquierda de un grupo.
+   Para ver los miembros que se encuentran en el código pero que no aparecen en el mapa, haga clic en el icono volver a **capturar** los elementos secundarios icono volver a ![ capturar los elementos secundarios ](../modeling/media/dependencygraph_deletednodesicon.png) en la esquina superior izquierda de un grupo.
 
 6. Para ver más elementos relacionados con los del mapa, seleccione uno y elija **Mostrar relacionados** en la barra de herramientas del mapa de código, y luego seleccione el tipo de elementos relacionados que se agregarán al mapa. Como alternativa, seleccione uno o más elementos, abra el menú contextual y, a continuación, elija la opción **Mostrar** para el tipo de elementos relacionados que desea agregar al mapa. Por ejemplo:
 
     Para un **ensamblado**, elija:
 
-    |||
+    |Opción|Descripción|
     |-|-|
     |**Mostrar ensamblados a los que este hace referencia**|Agregue los ensamblados a los que este ensamblado hace referencia. Los ensamblados externos aparecen en el grupo **Externos** .|
     |**Mostrar ensamblados que hacen referencia a este**|Agregue los ensamblados de la solución que hacen referencia a este ensamblado.|
@@ -198,7 +198,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
     Para una **clase** o **interfaz**, elija:
 
-    |||
+    |Opción|Descripción|
     |-|-|
     |**Mostrar tipos base**|Para una clase, agregue la clase base, así como las interfaces implementadas.<br /><br /> Para una interfaz, agregue las interfaces base.|
     |**Mostrar tipos derivados**|Para una clase, agregue las clases derivadas.<br /><br /> Para una interfaz, agregue las interfaces derivadas y las clases o structs de implementación.|
@@ -211,7 +211,7 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
      Para un **método**, elija:
 
-    |||
+    |Opción|Descripción|
     |-|-|
     |**Mostrar métodos a los que este llama**|Agregue los métodos a los que llama este método.|
     |**Mostrar campos a los que este hace referencia**|Agregue los campos a los que hace referencia este método.|
@@ -221,14 +221,14 @@ Supongamos que tiene una revisión de código para realizar en algunos archivos 
 
      Para un **campo** o **propiedad**, elija:
 
-    |||
+    |Opción|Descripción|
     |-|-|
     |**Mostrar tipo contenedor**|Agregue el tipo primario.|
     |**Mostrar tipo, espacio de nombres y ensamblado contenedores**|Agregue la jerarquía de contenedores principales.|
 
     ![Mostrar los métodos invocados por este miembro](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. El mapa muestra las relaciones. En este ejemplo, el mapa muestra los métodos llamados por el método `Find` y su ubicación en la solución o externamente.
+7. El mapa muestra las relaciones. En este ejemplo, el mapa muestra los métodos llamados por el `Find` método y su ubicación en la solución o externamente.
 
    ![Mostrar las dependencias específicas en un mapa de código](../modeling/media/codemapsspecificdependenciesintro.png)
 

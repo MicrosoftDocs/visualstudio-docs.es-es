@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68141882"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532735"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ## <a name="function-performance-details"></a>Detalles de rendimiento de la función  
  La tabla Detalles de rendimiento de la función proporciona datos de resumen de las métricas de rendimiento de la función seleccionada. Aparecen el valor y el porcentaje. Se especifican los datos de generación de perfiles que aparecen en el gráfico y la tabla de detalles en la lista **Métrica de rendimiento**.  
   
-|Columna|DESCRIPCIÓN|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Exclusivo**|- La cantidad de la métrica de rendimiento que se produjo en la ejecución del cuerpo de la función.|  
 |**Llamadas entrantes**|- La cantidad de la métrica de rendimiento que se produjo en las funciones a las que llamó la función seleccionada.|  
@@ -87,14 +87,14 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ### <a name="sampling"></a>Muestreo  
  En la tabla siguiente se explican los valores de la lista Métrica de rendimiento para los datos de generación de perfiles recopilados con el método de muestreo.  
   
-|||  
+|Métrica|Descripción|
 |-|-|  
 |**Muestras inclusivas (muestras recopiladas)**|- En una función de llamada, el número de muestras recopiladas cuando esta función llamó a la función seleccionada.<br />- En el cuerpo de la función, el número de muestras recopiladas cuando la función seleccionada estaba ejecutando su propio código.<br />- En una función llamada, el número de muestras recopiladas cuando se estaba ejecutando la función llamada debido a una llamada de la función seleccionada.|  
   
 ### <a name="instrumentation"></a>Instrumentación  
  En la tabla siguiente se explican los valores de la lista Métrica de rendimiento para los datos de generación de perfiles recopilados con el método de instrumentación.  
   
-|||  
+|Métrica|Descripción|  
 |-|-|  
 |**Tiempo inclusivo transcurrido (tiempo transcurrido)**|El tiempo transcurrido incluye el tiempo dedicado a llamadas al sistema operativo, como en los cambios de contexto y en las operaciones de entrada/salida.<br /><br /> - En una **Función de llamada**, la cantidad de tiempo transcurrido dedicado a ejecutar las instancias de la función seleccionada a las que llamó la función. Se incluye el tiempo dedicado a las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, la cantidad total de tiempo transcurrido dedicado a ejecutar el código de la función seleccionada. No se incluye el tiempo dedicado a las funciones llamadas.<br />- En una función llamada, la cantidad de tiempo dedicado a ejecutar las instancias de la función a las que llamó la función seleccionada. El total incluye el tiempo dedicado a funciones a las que llamó la función. Se incluye el tiempo dedicado a las funciones a las que llamó la función seleccionada.|  
 |**Tiempo inclusivo de aplicación (tiempo de aplicación)**|El tiempo de aplicación no incluye el tiempo dedicado a llamadas al sistema operativo, como en los cambios de contexto y en las operaciones de entrada/salida.<br /><br /> - En una **Función de llamada**, la cantidad de tiempo de aplicación dedicado a ejecutar las instancias de la función seleccionada a las que llamó la función. Se incluye el tiempo dedicado a las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, la cantidad total de tiempo de aplicación dedicado a ejecutar el código de la función seleccionada. No se incluye el tiempo dedicado a las funciones llamadas.<br />- En una función llamada, la cantidad de tiempo de aplicación dedicado a ejecutar las instancias de la función a las que llamó la función seleccionada. El total incluye el tiempo dedicado a funciones a las que llamó la función.|  
@@ -102,7 +102,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ### <a name="net-memory"></a>Memoria de .NET  
  En la tabla siguiente se explican los valores de la lista Métrica de rendimiento para los datos de generación de perfiles recopilados con el método de generación de perfiles de memoria de .NET.  
   
-|||  
+|Métrica|Descripción|  
 |-|-|  
 |**Asignaciones inclusivas (asignaciones)**|- En una **Función de llamada**, el número de objetos asignados por las instancias de la función seleccionada a las que llamó la función. El número incluye los objetos asignados por las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, el número de objetos que asignó la función seleccionada cuando estaba ejecutando su propio código. No se incluyen los objetos asignados en funciones a las que llamó la función seleccionada.<br />- En una función llamada, el número de objetos asignados por las instancias de la función a las que llamó la función seleccionada. El número incluye los objetos asignados por las funciones a las que llamó la función.|  
 |**Bytes inclusivos (bytes)**|- En una **Función de llamada**, el número de bytes asignados por las instancias de la función seleccionada a las que llamó la función. El número incluye los bytes asignados por las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, el número total de bytes que asignó la función seleccionada cuando estaba ejecutando su propio código. No se incluyen los bytes asignados en funciones a las que llamó la función seleccionada.<br />- En una función llamada, el número de bytes asignados por las instancias de la función a las que llamó la función seleccionada. El número incluye los bytes asignados por las funciones a las que llamó la función.|  
@@ -110,7 +110,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ### <a name="concurrency"></a>Simultaneidad  
  En la tabla siguiente se explican los valores de la lista Métrica de rendimiento para los datos de generación de perfiles recopilados con el método de simultaneidad.  
   
-|||  
+|Métrica|Descripción|  
 |-|-|  
 |**Contenciones inclusivas (contenciones)**|- En una **Función de llamada**, el número de eventos de contención de recursos que se produjeron en las instancias de la función seleccionada a las que llamó la función. El número incluye los eventos de contención de las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, el número total de eventos de contención que se produjeron cuando la función estaba ejecutando su propio código. No se incluyen las contenciones que se produjeron en funciones a las que llamó la función seleccionada.<br />- En una función llamada, el número de eventos de contención que se produjeron en las instancias de la función a la que llamó la función seleccionada. El número incluye los eventos de contención que se produjeron en las funciones a las que llamó la función.|  
 |**Tiempo de bloqueo inclusivo (tiempo de bloqueo)**|- En una función de llamada, el tiempo dedicado a los eventos de contención de recursos de las instancias de la función seleccionada a las que llamó la función. Se incluye el tiempo de bloqueo de las funciones a las que llamó la función seleccionada.<br />- En el **Cuerpo de función**, el tiempo total dedicado a los eventos de contención que se produjeron cuando la función estaba ejecutando su propio código. No se incluyen las contenciones que se produjeron en funciones a las que llamó la función seleccionada.<br />- En una función llamada, el tiempo dedicado a los eventos de contención de recursos de las instancias de la función a la que llamó la función seleccionada. Se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|

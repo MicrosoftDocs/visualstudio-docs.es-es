@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850487"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533073"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
  Si ya hay un comportamiento integrado por el tipo de diagrama y el tipo de elemento que desea arrastrar, quizás no pueda agregar o invalidar este comportamiento.
 
-## <a name="requirements"></a>Requisitos de
+## <a name="requirements"></a>Requisitos
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -34,9 +34,9 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 ## <a name="creating-a-gesture-handler"></a>Crear un controlador de gestos
  Para definir un controlador de gestos para un diseñador UML, debe crear una clase que defina el comportamiento del controlador de gestos e insertarla en una extensión de integración de Visual Studio (VSIX). Las extensiones VSIX actúan como contenedores que instalan el controlador. Hay dos métodos para definir un controlador de gestos:
 
-- **Cree un controlador de gestos en su propio VSIX mediante una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar el controlador con otros tipos de extensión, como extensiones de validación, elementos de cuadro de herramientas o comandos de menú.
+- **Crear un controlador de gestos en una VSIX utilizando una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar el controlador con otros tipos de extensión, como extensiones de validación, elementos de cuadro de herramientas o comandos de menú.
 
-- **Crear un controlador de gestos y proyectos VSIX independientes.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el controlador de gestos espera que el modelo respete restricciones concretas, podría insertarlo en la misma VSIX como método de validación.
+- **Crear controladores de gestos y proyectos VSIX independientes.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el controlador de gestos espera que el modelo respete restricciones concretas, podría insertarlo en la misma VSIX como método de validación.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Para crear un controlador de gestos en un VSIX propio
 
@@ -48,7 +48,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 3. Pruebe el controlador de gestos presionando F5. Para obtener más información, vea [Ejecutar el controlador de gestos](#Executing).
 
-4. Instale el controlador de gestos en otro equipo copiando el archivo **bin\\\*\\\*. vsix** compilado por el proyecto. Para más información, vea [Instalar y desinstalar una extensión](#Installing).
+4. Instale el controlador de gestos en otro equipo copiando el archivo **bin \\ \* \\ \* . vsix** compilado por el proyecto. Para más información, vea [Instalar y desinstalar una extensión](#Installing).
 
    A continuación se muestra el procedimiento alternativo:
 
@@ -56,7 +56,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 1. Cree un proyecto de biblioteca de clases en una nueva solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o en una solución existente.
 
-   1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.
+   1. En el menú **Archivo**, elija **Nuevo**, **Proyecto**.
 
    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, elija **Biblioteca de clases**.
 
@@ -208,7 +208,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 2. Cree un proyecto VSIX, a menos que la solución ya tenga uno.
 
-    1. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.
+    1. En **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **nuevo proyecto**.
 
     2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.
 
@@ -224,13 +224,13 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
     3. En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:
 
-         **Tipo** = **Componente MEF**
+         **Tipo**  =  de **Componente MEF**
 
-         **Origen** = **Un proyecto de la solución actual**
+         **Origen**  =  de **Proyecto en la solución actual**
 
-         **Proyecto** = *Su proyecto de biblioteca de clases*
+         **Proyecto**  =  de *Su proyecto de biblioteca de clases*
 
-## <a name="Executing"></a>Ejecutar el controlador de gestos
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Ejecutar el controlador de gestos
  Para fines de prueba, ejecute el controlador de gestos en modo de depuración.
 
 #### <a name="to-test-the-gesture-handler"></a>Para probar el controlador de gestos
@@ -243,7 +243,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
    - Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.
 
-   - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija Propiedades. En el editor de propiedades del proyecto, elija la pestaña **depurar** . Asegúrese de que la cadena del campo **programa externo de inicio** es el nombreruta completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:
+   - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija Propiedades. En el editor de propiedades del proyecto, elija la pestaña **depurar** . Asegúrese de que la cadena del campo **programa externo de inicio** es el directorio completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , normalmente:
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,12 +265,12 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 - No hay ninguna funcionalidad integrada ya definida para este tipo de elemento de destino y colocado.
 
-## <a name="Implementing"></a>Implementar el controlador de gestos
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementar el controlador de gestos
 
 ### <a name="the-gesture-handler-methods"></a>Los métodos del controlador de gestos
  La clase del controlador de gestos implementa y exporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Los métodos que necesita definir son los siguientes:
 
-|||
+|Firma|Descripción|
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Devuelve `true` para permitir que el elemento de origen al que se hace referencia en `dragEvent` se coloque en este destino.<br /><br /> Este método no debe realizar cambios al modelo. Debe funcionar rápidamente, ya que se usa para determinar el estado de la flecha a medida que el usuario mueve el mouse.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Actualiza el modelo en función del objeto de origen al que se hace referencia en `dragEvent`y el destino.<br /><br /> Se le llama cuando el usuario suelta el mouse después de arrastrar.|
@@ -282,7 +282,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
 
 - `ShapeElement target`. La forma o el diagrama en el que el usuario ha arrastrado algo.
 
-    `ShapeElement` es una clase de la implementación subyacente a las herramientas de modelado UML. Para reducir el riesgo de provocar un estado incoherente en el modelo y diagramas UML, se recomienda no utilizar los métodos de esta clase directamente. En su lugar, ajuste el elemento en un `IShape`y, a continuación, use los métodos descritos en [Mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` es una clase de la implementación subyacente a las herramientas de modelado UML. Para reducir el riesgo de provocar un estado incoherente en el modelo y diagramas UML, se recomienda no utilizar los métodos de esta clase directamente. En su lugar, ajuste el elemento en un `IShape` y, a continuación, use los métodos descritos en [Mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Para obtener un objeto `IShape`:
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Para obtener más información, vea [navegar por el modelo UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="Installing"></a>Instalación y desinstalación de una extensión
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalación y desinstalación de una extensión
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.
 
 #### <a name="to-install-an-extension"></a>Para instalar una extensión
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.
 
-    2. Busque el archivo **bin\\\*\\** _YourProject_ **. vsix**
+    2. Busque el archivo **bin \\ \* \\ **_YourProject_**. vsix**
 
 2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versión] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versión] \Extensions**
 
-## <a name="DragExample"></a> Ejemplo
+## <a name="example"></a><a name="DragExample"></a> Ejemplo
  En el siguiente ejemplo se muestra cómo crear las líneas de vida de un diagrama de secuencia, basándose en los elementos y puertos de un componente, arrastrado desde un diagrama de componentes.
 
  Para probarlo, presione F5. Se abre una instancia experimental de Visual Studio. En esta instancia, abra un modelo UML y cree un componente en un diagrama de componentes. Agregue algunas interfaces y elementos internos a este componente. Seleccione las interfaces y los elementos. A continuación, arrastre las interfaces y los elementos a un diagrama de secuencia. (Arrastre desde el diagrama de componentes hasta la pestaña del diagrama de secuencia y, a continuación, hacia abajo en el diagrama de secuencia). Aparecerá una línea de vida para cada interfaz y parte.
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  El código de `GetModelElementsFromDragEvent()` se describe en [obtener elementos del modelo UML de IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Definir e instalar una extensión de modelado](../modeling/define-and-install-a-modeling-extension.md) [extender modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [programación con la API de UML](../modeling/programming-with-the-uml-api.md)

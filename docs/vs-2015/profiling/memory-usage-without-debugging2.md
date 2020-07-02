@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64f739039d17af7fbee9718da93e8610e2619a85
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586948"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532046"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memoria sin depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
   Los elementos numerados de la imagen de la vista de instantánea son vínculos que abren vistas de informe de Uso de memoria.  
   
-|||  
+|Imagen|Descripción|  
 |-|-|  
 |![Paso 1](../profiling/media/procguid-1.png "ProcGuid_1")|El texto del vínculo muestra el número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|  
 |![Paso 2](../profiling/media/procguid-2.png "ProcGuid_2")|El texto del vínculo muestra el número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|  
@@ -135,7 +135,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol Montón administrado](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|||  
+|NOMBRE|Descripción|  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Recuento**|Número de instancias del objeto del tipo. Para una instancia el número siempre es 1.|  
@@ -154,7 +154,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol de objetos referenciados para instancias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|NOMBRE|Descripción|  
 |-|-|  
 |**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Tamaño (bytes)**|Para un tipo, tamaño de todas las instancias del tipo, sin incluir el tamaño de objetos incluidos en el tipo.<br /><br /> Para una instancia, tamaño del objeto sin incluir el tamaño de objetos incluidos en el objeto.|  
@@ -176,7 +176,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  Tenga en cuenta que en la imagen se han contraído las columnas **Recuento**, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)**.  
   
-|||  
+|NOMBRE|Descripción|  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Recuento**|Número de instancias de un tipo en la instantánea principal. **Recuento** siempre es 1 para una instancia.|  
@@ -196,7 +196,7 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
  ![Árbol de objetos referenciados para instancias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|||  
+|NOMBRE|Descripción|  
 |-|-|  
 |**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Tamaño (bytes)**|Para una instancia, tamaño del objeto en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.<br /><br /> Para un tipo, tamaño total de las instancias del tipo en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.|  

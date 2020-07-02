@@ -1,21 +1,21 @@
 ---
 title: Comando de menú modificar estándar en DSL
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae2aa04eb415ee5c4b7aaa41ea4c6abb49333f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605263"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532501"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
 
@@ -28,9 +28,9 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Para averiguar qué comandos puede modificar
 
-1. En el proyecto de `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Este C# archivo puede encontrarse en explorador de soluciones como una subsidiaria de `CommandSet.tt`.
+1. En el proyecto `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# se puede encontrar en Explorador de soluciones como una filial de `CommandSet.tt` .
 
-2. Busque clases en este archivo cuyos nombres terminen con "`CommandSet`", por ejemplo `Language1CommandSet` y `Language1ClipboardCommandSet`.
+2. Busque las clases de este archivo cuyos nombres terminen en " `CommandSet` ", por ejemplo, `Language1CommandSet` y `Language1ClipboardCommandSet` .
 
 3. En cada clase de conjunto de comandos, escriba "`override`" seguido de un espacio. IntelliSense mostrará una lista de los métodos que puede invalidar. Cada comando tiene un par de métodos cuyos nombres comienzan por "`ProcessOnStatus`" y "`ProcessOnMenu`".
 
@@ -53,7 +53,7 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs`.
+2. En **DslPackage**, cree una carpeta denominada **código personalizado**. En esta carpeta, cree un nuevo archivo de clase denominado `CommandSet.cs` .
 
 3. En el nuevo archivo, escriba una declaración parcial que tenga el mismo espacio de nombres y nombre que la clase parcial generada. Por ejemplo:
 
@@ -70,7 +70,7 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
 
 ## <a name="override-the-command-methods"></a>Invalidar los métodos de comando
 
-La mayoría de los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama a cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
+La mayoría de los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus` ... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama a cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú
 
@@ -129,15 +129,15 @@ Si el código realiza cambios en el almacén, como crear, eliminar o actualizar 
 
 Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:
 
-- `this.CurrentSelection`Operador La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
+- `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.
 
-- `this.IsDiagramSelected()`  -  `true` si el usuario hizo clic en una parte en blanco del diagrama.
+- `this.IsDiagramSelected()` - `true`Si el usuario hizo clic en una parte en blanco del diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`: el usuario no seleccionó varias formas.
+- `this.IsSingleSelection()`-el usuario no seleccionó varias formas
 
-- `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.
+- `this.SingleSelection`-la forma o el diagrama en el que el usuario hizo clic con el botón secundario
 
 - `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.
 
@@ -148,7 +148,7 @@ Para obtener más información sobre cómo navegar de un elemento a otro y sobre
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Cómo: Agregar un comando a un menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
-- [Adición de elementos de la interfaz de usuario por VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Cómo VSPackages agrega elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)
 - [VMSDK: ejemplo de diagramas de circuitos. Amplia personalización de DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

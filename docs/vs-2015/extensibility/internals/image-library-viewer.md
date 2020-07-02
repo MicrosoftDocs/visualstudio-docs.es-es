@@ -1,42 +1,42 @@
 ---
-title: Visor del archivo de imagen | Microsoft Docs
+title: Visor de la biblioteca de imágenes | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685532"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532033"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
+La herramienta Visor de la biblioteca de imágenes de Visual Studio puede cargar y buscar manifiestos de imagen, lo que permite al usuario manipularlos de la misma forma que lo haría Visual Studio. El usuario puede modificar el fondo, los tamaños, los PPP, el contraste alto y otros valores de configuración. La herramienta también muestra la información de carga de cada manifiesto de imagen y muestra información de origen de cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
   
 1. Diagnóstico de errores  
   
-2. Cómo asegurarse de que atributos están correctamente configurados en los manifiestos de la imagen personalizada  
+2. Asegurarse de que los atributos se establecen correctamente en los manifiestos de imagen personalizados  
   
-3. Buscar imágenes en el catálogo de imagen de Visual Studio para que una extensión de Visual Studio puede utilizar las imágenes que ajustar el estilo de Visual Studio  
+3. Buscar imágenes en el catálogo de imágenes de Visual Studio para que una extensión de Visual Studio pueda usar imágenes que se ajusten al estilo de Visual Studio  
   
-   ![Imagen prominente del Visor de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "imagen prominente del Visor de biblioteca")  
+   ![Imagen prominente del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-hero.png "Imagen prominente del visor de la biblioteca de imágenes")  
   
    **Moniker de imagen**  
   
-   Un moniker de imagen (o moniker para abreviar) es un par de GUID: ID que identifica un recurso de imagen o un activo de la lista de imagen en la biblioteca de imágenes.  
+   Un moniker de imagen (o moniker para abreviar) es un par GUID: ID que identifica de forma única un recurso de imagen o un recurso de lista de imágenes en la biblioteca de imágenes.  
   
    **Archivos de manifiesto de imagen**  
   
-   Archivos de imagen de manifiesto (.imagemanifest) son archivos XML que definen un conjunto de activos de imagen, los monikers que representan esos recursos y la imagen real o imágenes que representan cada activo. Manifiestos de la imagen pueden definir imágenes independientes o listas de imágenes para admitir código heredado de la interfaz de usuario. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales detrás de cada recurso para cambiar cuándo y cómo se muestran estos activos.  
+   Los archivos de manifiesto de imagen (. imagemanifest) son archivos XML que definen un conjunto de recursos de imagen, los monikers que representan esos recursos y la imagen o imágenes reales que representan cada activo. Los manifiestos de imagen pueden definir imágenes independientes o listas de imágenes para la compatibilidad con la interfaz de usuario heredada. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales que hay detrás de cada recurso para cambiar Cuándo y cómo se muestran esos recursos.  
   
-   **Esquema del manifiesto de imagen**  
+   **Esquema de manifiesto de imagen**  
   
-   Un manifiesto de imagen completo tiene este aspecto:  
+   Un manifiesto de imagen completo tiene el siguiente aspecto:  
   
 ```xml  
 <ImageManifest>  
@@ -57,7 +57,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
   
  **Símbolos**  
   
- Como ayudan a mejorar la legibilidad y el mantenimiento, el manifiesto de imagen puede usar los símbolos para los valores de atributo. Los símbolos se definen de forma similar al siguiente:  
+ Como ayuda para la lectura y el mantenimiento, el manifiesto de imagen puede usar símbolos para los valores de atributo. Los símbolos se definen de la siguiente manera:  
   
 ```xml  
 <Symbols>  
@@ -68,15 +68,14 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 </Symbols>  
 ```  
   
-|||  
-|-|-|  
 |**Subelemento**|**Definición**|  
+|-|-|  
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID.|  
 |ID|El símbolo representa un identificador y debe ser un entero no negativo.|  
 |String|El símbolo representa un valor de cadena arbitrario.|  
   
- Los símbolos son distingue mayúsculas de minúsculas y que se hace referencia mediante la sintaxis $(symbol-name):  
+ Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):  
   
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -84,24 +83,23 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 </Image>  
 ```  
   
- Algunos símbolos están predefinidos para todos los manifiestos. Se pueden usar en el atributo de identificador Uri de la \<origen > o \<importación > elemento para rutas de acceso de referencia en el equipo local.  
+ Algunos símbolos están predefinidos para todos los manifiestos. Se pueden usar en el atributo URI del \<Source> \<Import> elemento o para hacer referencia a las rutas de acceso en el equipo local.  
   
-|||  
-|-|-|  
 |**Símbolo**|**Descripción**|  
-|CommonProgramFiles|El valor de la variable de entorno % CommonProgramFiles %|  
-|LocalAppData|El valor de la variable de entorno % LocalAppData %|  
+|-|-|  
+|CommonProgramFiles|El valor de la variable de entorno% CommonProgramFiles%|  
+|LocalAppData|El valor de la variable de entorno% LocalAppData%|  
 |ManifestFolder|La carpeta que contiene el archivo de manifiesto|  
 |MyDocuments|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
-|ProgramFiles|El valor de la variable de entorno % ProgramFiles %|  
+|ProgramFiles|El valor de la variable de entorno% ProgramFiles%|  
 |Sistema|La carpeta Windows\System32|  
-|WinDir|El valor de la variable de entorno % WinDir %|  
+|DirWin|El valor de la variable de entorno% WinDir%|  
   
- **Image**  
+ **Imagen**  
   
- El \<imagen > elemento define una imagen que se puede hacer referencia mediante un moniker. El GUID y el Id. de juntas forman el moniker de imagen. El moniker de la imagen debe ser único en la biblioteca de imágenes completo. Si más de una imagen tiene un moniker especificado, la primera de ellas al compilar la biblioteca es lo que se conserva.  
+ El \<Image> elemento define una imagen a la que se puede hacer referencia mediante un moniker. El GUID y el identificador se han tomado juntos en el moniker de la imagen. El moniker de la imagen debe ser único en toda la biblioteca de imágenes. Si hay más de una imagen con un moniker determinado, la primera que se encuentre al compilar la biblioteca es la que se conserva.  
   
- Debe contener al menos un origen. Aunque el tamaño neutro orígenes le dará los mejores resultados en una amplia gama de tamaños, no son necesarios. Si el servicio se le pide una imagen de un tamaño no está definido en el \<imagen > elemento y no hay ningún origen independiente del tamaño, el servicio elegir la mejor fuente de tamaño específico y lo escala al tamaño solicitado.  
+ Debe contener al menos un origen. Aunque los orígenes de tamaño neutro proporcionarán los mejores resultados en una amplia gama de tamaños, no son necesarios. Si se solicita al servicio una imagen de un tamaño no definido en el \<Image> elemento y no hay ningún origen independiente del tamaño, el servicio elegirá el mejor origen específico del tamaño y lo escalará al tamaño solicitado.  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -109,17 +107,16 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
       <!-- optional additional Source elements -->  
 </Image>  
 ```  
-  
-|||  
-|-|-|  
+    
 |**Attribute**|**Definición**|  
-|GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
-|AllowColorInversion|[Opcional, true de forma predeterminada] Indica si la imagen puede tener sus colores invertidos mediante programación cuando se utiliza en un fondo oscuro.|  
+|-|-|
+|GUID|Desee Parte del GUID del moniker de la imagen|  
+|ID|Desee La parte de identificador del moniker de imagen|  
+|AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|  
   
  **Origen**  
   
- El \<origen > elemento define un recurso de origen de imagen único (XAML y PNG).  
+ El \<Source> elemento define un único recurso de origen de imagen (XAML y PNG).  
   
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -127,37 +124,34 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
  </Source>  
 ```  
   
-|||  
-|-|-|  
 |**Attribute**|**Definición**|  
-|URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: El origen puede utilizarse en un fondo claro.<br /><br /> - *Oscuro*: El origen puede utilizarse en un fondo oscuro.<br /><br /> - *Contraste alto*: El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
+|-|-|  
+|Identificador URI|Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la autoridad Application:///<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
+|Fondo|Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> - *Light*: el origen se puede usar en un fondo claro.<br /><br /> - *Dark*: el origen se puede usar en un fondo oscuro.<br /><br /> - *HighContrast*: el origen puede usarse en cualquier fondo del modo contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo **background** , el origen puede usarse en cualquier fondo.<br /><br /> Si **background** es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite **background** o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen.|  
   
- Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
+ Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
   
-||||  
+|**Element**|**Atributos (todos obligatorios)**|**Definición**|  
 |-|-|-|  
-|**Element**|**Atributos (todas requeridas)**|**Definición**|  
-|\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
-|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
-|\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
+|\<Size>|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
+|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo) de un solo uso. La imagen será cuadrada.|  
+|\<Dimensions>|Ancho, alto|El origen se usará para las imágenes con el ancho y alto especificados (en unidades de dispositivo).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho o el alto mínimo hasta el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|  
   
- Un \<origen > elemento también puede tener un elemento opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
+ Un \<Source> elemento también puede tener un \<NativeResource> subelemento opcional, que define un \<Source> que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|||  
-|-|-|  
 |**Attribute**|**Definición**|  
-|Tipo|[Obligatorio] El tipo del recurso nativo, XAML o PNG|  
-|ID|[Obligatorio] La parte de identificador entero del recurso nativo|  
+|-|-|  
+|Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|  
+|ID|Desee La parte del identificador entero del recurso nativo|  
   
  **ImageList**  
   
- El \<ImageList > elemento define una colección de imágenes que pueden devolverse en una banda única. La banda se compila a petición, según sea necesario.  
+ El \<ImageList> elemento define una colección de imágenes que se pueden devolver en una sola banda. La franja se basa en la demanda, según sea necesario.  
   
 ```xml  
 <ImageList>  
@@ -166,67 +160,66 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
  </ImageList>  
 ```  
   
-|||  
-|-|-|  
 |**Attribute**|**Definición**|  
-|GUID|[Obligatorio] La parte GUID del moniker de imagen|  
-|ID|[Obligatorio] La parte del identificador de moniker de la imagen|  
-|Externo|[Opcional, valor predeterminado es false] Indica si el moniker de imagen hace referencia a una imagen en el manifiesto actual.|  
+|-|-|  
+|GUID|Desee Parte del GUID del moniker de la imagen|  
+|ID|Desee La parte de identificador del moniker de imagen|  
+|Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|  
   
- El moniker de la imagen independiente no tiene que hacer referencia a una imagen que se definen en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se utilizará una imagen de marcador de posición en blanco en su lugar.  
+ No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  
- **Validar un manifiesto de imagen personalizada**  
+ **Validar un manifiesto de imagen personalizado**  
   
- Para crear un manifiesto personalizado, se recomienda que utilice la herramienta ManifestFromResources para generar automáticamente el manifiesto. Para validar el manifiesto personalizado, inicie el Visor del archivo de imagen y seleccione Archivo > rutas de acceso... Para abrir el cuadro de diálogo de directorios de búsqueda. La herramienta usará los directorios de búsqueda para cargar los manifiestos de la imagen, pero, también utilizará para buscar los archivos .dll que contienen las imágenes en un manifiesto, así que asegúrese de incluir el manifiesto y directorios de archivos DLL en este cuadro de diálogo.  
+ Para crear un manifiesto personalizado, se recomienda usar la herramienta ManifestFromResources para generar automáticamente el manifiesto. Para validar el manifiesto personalizado, inicie el visor de la biblioteca de imágenes y seleccione Archivo > establecer rutas de acceso... para abrir el cuadro de diálogo Buscar directorios. La herramienta utilizará los directorios de búsqueda para cargar los manifiestos de imagen, pero también los usará para buscar los archivos. dll que contienen las imágenes en un manifiesto, por lo que debe asegurarse de incluir los directorios de manifiesto y DLL en este cuadro de diálogo.  
   
- ![Búsqueda del Visor de biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-search.png "búsqueda del Visor de biblioteca de imágenes")  
+ ![Búsqueda del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-search.png "Búsqueda del visor de la biblioteca de imágenes")  
   
- Haga clic en **agregar...** Para seleccionar nuevos directorios de búsqueda para buscar los manifiestos y sus DLL correspondiente. La herramienta le recordarán estos directorios de búsqueda y se pueden activar o desactivar mediante la activación o desactivación de un directorio.  
+ Haga clic en **Agregar...** para seleccionar nuevos directorios de búsqueda para buscar manifiestos y sus archivos dll correspondientes. La herramienta recordará estos directorios de búsqueda y se pueden activar o desactivar mediante la comprobación o desactivación de un directorio.  
   
- De forma predeterminada, la herramienta intentará encontrar el directorio de instalación de Visual Studio y agregue esos directorios a la lista de directorios de búsqueda. Puede agregar manualmente los directorios que no encuentra la herramienta.  
+ De forma predeterminada, la herramienta intentará buscar el directorio de instalación de Visual Studio y agregar esos directorios a la lista de directorios de búsqueda. Puede Agregar manualmente los directorios que la herramienta no encuentra.  
   
- Una vez que se cargan todos los manifiestos, la herramienta puede usarse para activar o desactivar **en segundo plano** colores, **PPP**, **contraste alto**, o **escala** para las imágenes para que un usuario puede inspeccionar visualmente los activos de imagen para comprobar que se están representando correctamente para diferentes configuraciones.  
+ Una vez que se cargan todos los manifiestos, la herramienta se puede usar para alternar los colores de **fondo** , el valor de **PPP**, el **contraste alto**o **grayscaling** para las imágenes, de modo que un usuario pueda inspeccionar visualmente los recursos de imagen para comprobar que se representan correctamente para varias configuraciones.  
   
- ![Imagen de fondo del Visor de biblioteca](../../extensibility/internals/media/image-library-viewer-background.png "la imagen de fondo del Visor de biblioteca")  
+ ![Fondo del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-background.png "Fondo del visor de la biblioteca de imágenes")  
   
- El color de fondo puede establecerse en un valor personalizado, oscuro o claro. Selección de "Color personalizado" abrirá un cuadro de diálogo de selección de color y agregar ese color personalizado a la parte inferior del cuadro combinado en segundo plano para recuperarlos fácilmente más tarde.  
+ El color de fondo se puede establecer en claro, oscuro o en un valor personalizado. Al seleccionar "color personalizado", se abrirá un cuadro de diálogo de selección de color y se agregará ese color personalizado a la parte inferior del cuadro combinado de fondo para facilitar la recuperación posterior.  
   
- ![Color personalizado del Visor de biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-custom-color.png "Color personalizado del Visor de biblioteca de imágenes")  
+ ![Color personalizado para el visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-custom-color.png "Color personalizado para el visor de la biblioteca de imágenes")  
   
- Al seleccionar un moniker de imagen, muestra la información para cada imagen real detrás de ese moniker en el panel de detalles de la imagen de la derecha. El panel también permite a los usuarios copiar un moniker por nombre o por el valor sin formato GUID: Id.  
+ Al seleccionar un moniker de imagen, se muestra la información de cada imagen real detrás de ese moniker en el panel de detalles de la imagen de la derecha. El panel también permite a los usuarios copiar un moniker por nombre o por GUID sin formato: ID.  
   
- ![Detalles de la imagen de biblioteca Visor de imágenes](../../extensibility/internals/media/image-library-viewer-image-details.png "biblioteca detalles de la imagen de Visor de imágenes")  
+ ![Detalles de la imagen del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-image-details.png "Detalles de la imagen del visor de la biblioteca de imágenes")  
   
- La información mostrada para cada origen de la imagen incluye el tipo de fondo para que se muestre, si se puede aplicar un tema o admite el contraste alto, lo que es válido para los tamaños o si es independiente del tamaño y, si la imagen procede de un ensamblado nativo.  
+ La información mostrada para cada origen de imagen incluye el tipo de fondo en el que se va a mostrar, si puede ser compatible o descontraste alto, en qué tamaños es válido o si es independiente del tamaño, y si la imagen procede de un ensamblado nativo.  
   
- ![Visor del archivo de imagen puede tema](../../extensibility/internals/media/image-library-viewer-can-theme.png "Visor del archivo de imagen puede tema")  
+ ![Tema del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-can-theme.png "Tema del visor de la biblioteca de imágenes")  
   
- Al validar un manifiesto de imagen, se recomienda que implemente la imagen DLL en sus ubicaciones del mundo real y el manifiesto. Comprobará que las rutas relativas funciona correctamente y que la biblioteca de imágenes puede buscar y cargar la DLL de la imagen y el manifiesto.  
+ Al validar un manifiesto de imagen, se recomienda implementar el manifiesto y el archivo DLL de imagen en sus ubicaciones reales. Esto comprobará que las rutas de acceso relativas funcionan correctamente y que la biblioteca de imágenes puede buscar y cargar el archivo DLL de manifiesto y de imagen.  
   
- **Búsqueda de catálogo de imágenes KnownMonikers**  
+ **Buscando catálogo de imágenes KnownMonikers**  
   
- Para adaptarse mejor al estilo de Visual Studio, una extensión de Visual Studio puede usar imágenes en el catálogo de imágenes de Visual Studio en lugar de crear y usar su propio. Esto tiene la ventaja de no tener que mantener esas imágenes y garantiza que la imagen tendrá una imagen de respaldo de valores altos de PPP, por lo que debe ser correcta en toda la configuración de PPP es compatible con Visual Studio.  
+ Para hacer coincidir mejor el estilo de Visual Studio, una extensión de Visual Studio puede usar imágenes en el catálogo de imágenes de Visual Studio en lugar de crear y usar el suyo propio. Esto tiene la ventaja de no tener que mantener esas imágenes y garantiza que la imagen tendrá una imagen de copia de seguridad de PPP alta, por lo que debe ser correcta en todos los valores de PPP que admite Visual Studio.  
   
- El Visor del archivo de imagen permite un manifiesto que se debe buscar para que un usuario puede encontrar el moniker que representa un recurso de imagen y usar ese moniker en el código. Para buscar imágenes, escriba el término de búsqueda que desee en el cuadro de búsqueda y presione ENTRAR. Mostrará la barra de estado en la parte inferior se encontraron coincidencias cuántos fuera de las imágenes de total en todos los manifiestos.  
+ El visor de la biblioteca de imágenes permite buscar un manifiesto para que un usuario pueda encontrar el moniker que representa un recurso de imagen y utilizar ese moniker en el código. Para buscar imágenes, escriba el término de búsqueda deseado en el cuadro de búsqueda y presione Entrar. En la barra de estado de la parte inferior se mostrará el número de coincidencias encontradas en el total de imágenes de todos los manifiestos.  
   
- ![Filtro del Visor de biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-filter.png "filtro del Visor de biblioteca de imágenes")  
+ ![Filtro del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-filter.png "Filtro del visor de la biblioteca de imágenes")  
   
- Cuando se buscan los monikers de la imagen en los manifiestos existentes, se recomienda que buscar y usar solo los monikers de la Visual Studio imágenes del catálogo, otros monikers intencionadamente públicamente accesibles o sus propio monikers personalizados. Si usa los monikers no públicos, se puede interrumpir la interfaz de usuario personalizada o sus imágenes cambiaron inesperados si o cuando se cambia o se actualizan los monikers no públicos e imágenes.  
+ Al buscar monikers de imagen en manifiestos existentes, se recomienda buscar y usar solo los monikers del catálogo de imágenes de Visual Studio, otros monikers accesibles de forma intencionada o sus propios monikers personalizados. Si usa monikers no públicos, es posible que la interfaz de usuario personalizada se interrumpa o que sus imágenes cambien de maneras inesperadas si se cambian o se actualizan los monikers y las imágenes no públicos.  
   
- Además, es posible realizar búsquedas en GUID. Este tipo de búsqueda resulta útil para filtrar la lista a un único manifiesto o subsección único de un manifiesto si ese manifiesto contiene varios GUID.  
+ Además, es posible realizar búsquedas por GUID. Este tipo de búsqueda es útil para filtrar la lista por un único manifiesto o una única subsección de un manifiesto si dicho manifiesto contiene varios GUID.  
   
- ![Biblioteca GUID del filtro del Visor de imágenes](../../extensibility/internals/media/image-library-viewer-filter-guid.png "biblioteca GUID del filtro del Visor de imágenes")  
+ ![GUID del filtro del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-filter-guid.png "GUID del filtro del visor de la biblioteca de imágenes")  
   
- Por último, buscar por Id. es posible también.  
+ Por último, también es posible buscar por identificador.  
   
- ![Id. de filtro del Visor de biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-filter-id.png "Id. de filtro del Visor de biblioteca de imágenes")  
+ ![Id. del filtro del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-filter-id.png "Id. del filtro del visor de la biblioteca de imágenes")  
   
 ## <a name="notes"></a>Notas  
   
-- De forma predeterminada, la herramienta se extraerá en varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. Es el único que tiene los monikers públicamente la **Microsoft.VisualStudio.ImageCatalog** manifiesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (hacer **no** reemplazar este GUID en un manifiesto personalizado) tipo: KnownMonikers  
+- De forma predeterminada, la herramienta incorporará varios manifiestos de imagen presentes en el directorio de instalación de Visual Studio. El único que tiene monikers que se va a consumir públicamente es el manifiesto **Microsoft. VisualStudio. ImageCatalog** . GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 **(no invalide** este GUID en un manifiesto personalizado) tipo: KnownMonikers  
   
-- La herramienta intente cargar todos los manifiestos de imagen que se encuentra, por lo que puede tardar varios segundos para que aparecen en realidad la aplicación al iniciarse. También podría ser lento o no responde al cargar los manifiestos.  
+- La herramienta intenta iniciarse para cargar todos los manifiestos de imagen que encuentra, por lo que la aplicación puede tardar varios segundos en aparecer realmente. También puede ser lento o no responde mientras se cargan los manifiestos.  
   
-## <a name="sample-output"></a>Resultados del ejemplo  
+## <a name="sample-output"></a>Salida de ejemplo  
  Esta herramienta no genera ningún resultado.
