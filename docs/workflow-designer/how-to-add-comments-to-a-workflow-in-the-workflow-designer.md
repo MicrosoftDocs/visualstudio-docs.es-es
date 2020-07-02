@@ -1,7 +1,7 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo agregar comentarios a un flujo de trabajo'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2e8f53e162360c7a43df9f0aedda3ff6ef0e6dba
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114417"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815505"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
 

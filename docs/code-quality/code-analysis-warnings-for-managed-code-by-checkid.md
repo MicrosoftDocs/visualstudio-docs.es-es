@@ -145,6 +145,7 @@ f1_keywords:
 - CA1802
 - CA1803
 - CA1804
+- CA1805
 - CA1806
 - CA1809
 - CA1810
@@ -288,12 +289,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d9c4834604d4f77d53dc0ff7bb725eae3312779
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 3f8188a83a11811cc73a3b38c45df8dd7d27d1c1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382684"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814816"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -432,6 +433,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1801 | [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801.md) | Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. |
 | CA1802 |[CA1802: Utilizar literales cuando sea apropiado](../code-quality/ca1802.md) |Un campo se declara como static y de solo lectura (Shared y ReadOnly en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) y se inicializa con un valor que se puede calcular durante la compilación. Dado que el valor asignado al campo de destino es calculable en tiempo de compilación, cambie la declaración a un campo const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) para que el valor se calcule en tiempo de compilación en lugar de en tiempo de ejecución. |
 | CA1804 | [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804.md) | Las variables locales no usadas y las asignaciones innecesarias aumentan el tamaño de un ensamblado y reducen el rendimiento. |
+| CA1805 | [CA1805: no inicializar innecesariamente](../code-quality/ca1805.md) | El tiempo de ejecución de .NET inicializa todos los campos de los tipos de referencia a sus valores predeterminados antes de ejecutar el constructor. En la mayoría de los casos, la inicialización explícita de un campo a su valor predeterminado es redundante, lo que aumenta los costos de mantenimiento y puede degradar el rendimiento (por ejemplo, con un mayor tamaño de ensamblado). |
 | CA1806 | [CA1806: No omitir resultados del método](../code-quality/ca1806.md) | Se crea un nuevo objeto pero nunca se utiliza, o se llama a un método que crea y devuelve una nueva cadena y esta nunca se utiliza, o un método COM o P/Invoke devuelve un código de error o HRESULT que nunca se utiliza. |
 | CA1809 |[CA1809: Evitar las variables locales excesivas](../code-quality/ca1809.md) | Una optimización de rendimiento común es almacenar un valor en un registro del procesador en lugar de en la memoria, lo que se denomina "registrar el valor". Para aumentar la posibilidad de que todas las variables locales se registren, limite el número de variables locales a 64. |
 | CA1810 | [CA1810: Inicializar campos estáticos de tipo de referencia insertados](../code-quality/ca1810.md) | Cuando un tipo declara un constructor estático explícito, el compilador Just-In-Time (JIT) agrega una comprobación a cada constructor de instancia y a cada método estático del tipo para asegurarse de que se ha llamado anteriormente al constructor estático. Las comprobaciones del constructor estático pueden reducir el rendimiento. |

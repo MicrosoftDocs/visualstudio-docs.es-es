@@ -1,19 +1,19 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo agregar actividades al cuadro de herramientas'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cde4f3a41a1a07f982f85c0c19e9f16b047068
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593933"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815830"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Cómo agregar actividades al cuadro de herramientas
 
@@ -25,7 +25,7 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 2. Agregue lógica personalizada a su actividad.
 
-3. Generar el proyecto. Si la compilación se realizó correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada "\<*nombre del proyecto*>" con la actividad personalizada incluida en esa categoría.
+3. Compile el proyecto. Si la compilación se realizó correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada " \<*project name*> " con la actividad personalizada incluida en esa categoría.
 
     > [!NOTE]
     > Si se restablece el cuadro de herramientas, las actividades personalizadas se quitarán, incluso si la solución se compila de nuevo. Para volver a rellenar el cuadro de herramientas con actividades personalizadas después de que se haya restablecido, reinicie Visual Studio.
@@ -40,7 +40,7 @@ Las actividades se pueden agregar al **cuadro de herramientas** de la solución 
 
 1. Abra una solución que contenga al menos un proyecto de flujo de trabajo y un proyecto de biblioteca de actividades personalizado u otro proyecto de flujo de trabajo que defina una actividad personalizada.
 
-2. Compile ambos proyectos. Si las compilaciones se realizaron correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada "\<*nombre del proyecto*>" con la actividad personalizada incluida en esa categoría.
+2. Compile ambos proyectos. Si las compilaciones se realizaron correctamente, se muestra una nueva categoría en el **cuadro de herramientas** denominada " \<*project name*> " con la actividad personalizada incluida en esa categoría.
 
 ## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Para agregar una actividad al cuadro de herramientas desde un ensamblado
 

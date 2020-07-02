@@ -3,7 +3,7 @@ title: Información general sobre Visual Studio
 titleSuffix: ''
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: vs-get-started
 author: TerryGLee
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589362"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770880"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Le damos la bienvenida al IDE de Visual Studio
 

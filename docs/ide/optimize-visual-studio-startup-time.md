@@ -1,7 +1,7 @@
 ---
 title: Mejora del tiempo de inicio
 ms.date: 11/15/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306840"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770974"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -35,7 +35,7 @@ Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándo
 
 En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones que afectan negativamente al rendimiento de inicio. Puede cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Cambiar la configuración de extensión para mejorar el inicio, la carga de solución y el rendimiento de la escritura
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Cambiar la configuración de extensión para mejorar el inicio, la carga de solución y el rendimiento de la escritura
 
 1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio**. Para ello, seleccione **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
@@ -47,7 +47,7 @@ En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones 
 
 Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo **Administrador de extensiones** o **Administrar el rendimiento de Visual Studio**.
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Cambiar la configuración de la ventana de herramientas para mejorar el tiempo de inicio
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Cambiar la configuración de la ventana de herramientas para mejorar el tiempo de inicio
 
 1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio**. Para ello, seleccione **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 

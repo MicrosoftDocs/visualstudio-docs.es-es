@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238b963aceebd2bfdae38c2f4032955c1bd0c0c6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288954"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770861"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 
@@ -51,7 +51,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | CleanFile | Todas | Nombre del archivo que se utilizará como "caché limpia". La memoria caché limpia es una lista de archivos generados que se eliminarán durante la operación de limpieza. El proceso de compilación coloca el archivo en la ruta de acceso de los resultados intermedios.<br /><br /> Esta propiedad solo especifica nombres de archivo sin información sobre su ruta de acceso. |
 | CodePage | .NET | Especifica la página de códigos que se va a utilizar para todos los archivos de código fuente en la compilación. Esta propiedad es equivalente al modificador `/codepage` del compilador. |
 | CompilerResponseFile | .NET | Archivo de respuesta opcional que se puede pasar a las tareas del compilador. |
-| Configuración | Todas | Configuración que está compilando, "Debug" o "Release". |
+| Configuración | Todas | La configuración que está compilando, generalmente `Debug` o `Release`, pero configurable con respecto a la solución y el proyecto. |
 | CscToolPath | C# | Ruta de acceso de *csc.exe*, el compilador de C#. |
 | CustomBeforeMicrosoftCommonTargets | Todas | Nombre de un archivo de proyecto o archivo de destinos que se importará automáticamente antes de importar los destinos comunes. |
 | DebugSymbols | Todas | Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **-p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos ( *.pdb*) de la base de datos del programa. |

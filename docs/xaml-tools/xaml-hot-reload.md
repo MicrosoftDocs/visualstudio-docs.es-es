@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec1ca7ba801f4e3e0a7777e0cae62e78412dae6
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331961"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815895"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escritura y depuración de código XAML en ejecución con Recarga activa de XAML en Visual Studio
 
@@ -50,10 +50,10 @@ A continuación se indican las limitaciones conocidas de la recarga activa de XA
 |Limitación|WPF|UWP|Notas|
 |-|-|-|-|
 |Cableado de eventos a controles mientras la aplicación se está ejecutando|No compatible|No compatible|Consulte error: error *al comprobar el evento*. Tenga en cuenta que en WPF puede hacer referencia a un controlador de eventos existente. En aplicaciones UWP, no se admite la referencia a un controlador de eventos existente.|
-|Crear objetos de recursos en un diccionario de recursos como los de la página o la ventana de la aplicación o *app. Xaml*|Se admite a partir de Visual Studio 2019 Update 2|Compatible|Ejemplo: agregar un `SolidColorBrush` a un diccionario de recursos para su uso como `StaticResource` .</br>Nota: los recursos estáticos, convertidores de estilo y otros elementos que se escriben en un diccionario de recursos se pueden aplicar/usar al usar la recarga activa de XAML. Solo se admite la creación del recurso.</br> Cambiar la propiedad del Diccionario de recursos `Source` .|
+|Crear objetos de recursos en un diccionario de recursos como los de la página o la ventana de la aplicación o *app. Xaml*|Se admite a partir de Visual Studio 2019 Update 2|Compatible.|Ejemplo: agregar un `SolidColorBrush` a un diccionario de recursos para su uso como `StaticResource` .</br>Nota: los recursos estáticos, convertidores de estilo y otros elementos que se escriben en un diccionario de recursos se pueden aplicar/usar al usar la recarga activa de XAML. Solo se admite la creación del recurso.</br> Cambiar la propiedad del Diccionario de recursos `Source` .|
 |Agregar nuevos controles, clases, ventanas u otros archivos al proyecto mientras la aplicación se está ejecutando|No compatible|No compatible|None|
 |Administración de paquetes NuGet (agregar, quitar o actualizar paquetes)|No compatible|No compatible|None|
-|Cambiar el enlace de datos que usa la extensión de marcado {x:Bind}|N/D|Se admite a partir de Visual Studio 2019|Esto requiere la versión 1809 de Windows 10 (compilación 10.0.17763). No se admite en Visual Studio 2017 o versiones anteriores.|
+|Cambiar el enlace de datos que usa la extensión de marcado {x:Bind}|No aplicable|Se admite a partir de Visual Studio 2019|Esto requiere la versión 1809 de Windows 10 (compilación 10.0.17763). No se admite en Visual Studio 2017 o versiones anteriores.|
 |No se admite el cambio de directivas x:Uid|N/A|No admitido|None|
 |Varios procesos | No compatible | No compatible | La recarga activa solo se puede usar en 1 proceso a la vez. |
 

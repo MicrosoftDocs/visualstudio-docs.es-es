@@ -3,7 +3,7 @@ title: Información general para desarrolladores de C#
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
-ms.topic: conceptual
+ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306846"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771123"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE de Visual Studio | C\#
 

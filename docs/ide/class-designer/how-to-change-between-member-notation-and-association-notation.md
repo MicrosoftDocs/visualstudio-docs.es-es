@@ -1,7 +1,7 @@
 ---
 title: Cambio entre notación de miembro y notación de asociación (Diseñador de clases)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d453dd2cd19f8a6c9c76ebcc48a762ba3142ea74
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592274"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771005"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Cómo: Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
 

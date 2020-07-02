@@ -3,7 +3,7 @@ title: Excepción producida y no detectada | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
 dev_langs:
@@ -14,15 +14,15 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572857"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814595"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Excepción producida y no detectada
-Incluyó una instrucción `throw` en el código, pero no estaba incluida en un bloque **try** o no había ningún bloque **catch** asociado para interceptar el error. Las excepciones se producen en el bloque **try** mediante la instrucción **Throw** y se detectan fuera del bloque **try** con una instrucción **catch** .  
+Incluyó una `throw` instrucción en el código, pero no estaba incluida en un bloque **try** o no había ningún bloque **catch** asociado para interceptar el error. Las excepciones se producen en el bloque **try** mediante la instrucción **Throw** y se detectan fuera del bloque **try** con una instrucción **catch** .  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
@@ -33,6 +33,6 @@ Incluyó una instrucción `throw` en el código, pero no estaba incluida en un b
 - Si se vuelve a producir la excepción, asegúrese de que hay otra instrucción Catch correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Objeto de Error](../../javascript/reference/error-object-javascript.md)   
- [instrucción throw](../../javascript/reference/throw-statement-javascript.md)   
- [Try...Catch...Finally (Instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Error (objeto)](../../javascript/reference/error-object-javascript.md)   
+ [Throw (instrucción)](../../javascript/reference/throw-statement-javascript.md)   
+ [try... detectar... Finally (instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

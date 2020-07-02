@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e7514e8ab55697bdfc01f58c5ceffe4228721c
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592261"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85771029"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Cómo: Agregar comentarios a diagramas de clases
 

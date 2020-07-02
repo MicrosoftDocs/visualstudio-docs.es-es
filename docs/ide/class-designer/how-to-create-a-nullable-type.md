@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)'
+title: Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -14,18 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592235"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770983"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL en el Diseñador de clases
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
 
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.
 
-Un *tipo que acepta valores NULL* es un tipo de valor que se amplía para que acepte el intervalo normal de valores para ese tipo y además un valor nulo. Por ejemplo, a un valor NULL de `Int32`, también conocido como Nullable\<Int32>, se le puede asignar cualquier valor comprendido entre -2147483648 y 2147483647, o se le puede asignar un valor nulo. A un valor Nullable\<bool> se le pueden asignar los valores `True`, `False` o nulo (ningún valor).
+Un *tipo que acepta valores NULL* es un tipo de valor que se amplía para que acepte el intervalo normal de valores para ese tipo y además un valor nulo. Por ejemplo, a un tipo que admite valores NULL de `Int32`, también conocido como Nullable\<Int32>, se le puede asignar cualquier valor comprendido entre -2147483648 y 2147483647, o bien un valor NULL. A un tipo Nullable\<bool> se le pueden asignar los valores `True`, `False` o NULL (ningún valor).
 
 Los tipos que aceptan valores NULL son instancias de la estructura <xref:System.Nullable%601>. Cada instancia de un tipo que acepta valores NULL tiene dos propiedades públicas de solo lectura, `HasValue` y `Value`:
 
