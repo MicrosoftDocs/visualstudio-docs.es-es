@@ -511,6 +511,8 @@
                   href: ca1802.md
                 - name: 'CA1804: Quitar variables locales no utilizadas'
                   href: ca1804.md
+                - name: 'CA1805: No inicializar innecesariamente'
+                  href: ca1805.md
                 - name: 'CA1806: No omitir resultados del método'
                   href: ca1806.md
                 - name: 'CA1809: Evitar las variables locales excesivas'
@@ -603,6 +605,8 @@
                   href: ca2014.md
                 - name: 'CA2015: No definir finalizadores para los tipos derivados de MemoryManager<T>'
                   href: ca2015.md
+                - name: 'CA2016: Reenviar el parámetro CancellationToken a los métodos que lo usan'
+                  href: ca2016.md
             - name: Advertencias de seguridad
               items:
                 - name: Información general
