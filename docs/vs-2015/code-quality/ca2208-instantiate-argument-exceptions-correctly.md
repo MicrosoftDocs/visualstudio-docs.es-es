@@ -15,24 +15,24 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5b5e1525d1ee706f9cd46a58c022763d2ed234bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a63ebb7f3946926864c4dd882c281b5dcd7c6c5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662683"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535842"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Crear instancias de las excepciones del argumento correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |Identificador de comprobación|CA2208|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Las posibles causas son las siguientes:
 
 - Se realiza una llamada al constructor predeterminado (sin parámetros) de un tipo de excepción que es o deriva de [System. ArgumentException] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
@@ -42,26 +42,26 @@ ms.locfileid: "72662683"
 ## <a name="rule-description"></a>Descripción de la regla
  En lugar de llamar al constructor predeterminado, llame a una de las sobrecargas del constructor que permite proporcionar un mensaje de excepción más significativo. El mensaje de excepción debe dirigirse al desarrollador y explicar claramente la condición de error y cómo corregir o evitar la excepción.
 
- Las firmas de los constructores de cadena de uno y dos de <xref:System.ArgumentException> y sus tipos derivados no son coherentes con respecto a los parámetros `message` y `paramName`. Asegúrese de que se llama a estos constructores con los argumentos de cadena correctos. Las firmas son las siguientes:
+ Las firmas de los constructores de cadena uno y dos de <xref:System.ArgumentException> y sus tipos derivados no son coherentes con respecto a `message` los `paramName` parámetros y. Asegúrese de que se llama a estos constructores con los argumentos de cadena correctos. Las firmas son las siguientes:
 
- <xref:System.ArgumentException> (cadena `message`)
+ <xref:System.ArgumentException>(cadena `message` )
 
- <xref:System.ArgumentException> (cadena `message`, cadena `paramName`)
+ <xref:System.ArgumentException>(cadena `message` , cadena `paramName` )
 
- <xref:System.ArgumentNullException> (cadena `paramName`)
+ <xref:System.ArgumentNullException>(cadena `paramName` )
 
- <xref:System.ArgumentNullException> (cadena `paramName`, cadena `message`)
+ <xref:System.ArgumentNullException>(cadena `paramName` , cadena `message` )
 
- <xref:System.ArgumentOutOfRangeException> (cadena `paramName`)
+ <xref:System.ArgumentOutOfRangeException>(cadena `paramName` )
 
- <xref:System.ArgumentOutOfRangeException> (cadena `paramName`, cadena `message`)
+ <xref:System.ArgumentOutOfRangeException>(cadena `paramName` , cadena `message` )
 
- <xref:System.DuplicateWaitObjectException> (cadena `parameterName`)
+ <xref:System.DuplicateWaitObjectException>(cadena `parameterName` )
 
- <xref:System.DuplicateWaitObjectException> (cadena `parameterName`, cadena `message`)
+ <xref:System.DuplicateWaitObjectException>(cadena `parameterName` , cadena `message` )
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llame a un constructor que tome un mensaje, un nombre de parámetro o ambos, y asegúrese de que los argumentos sean correctos para el tipo de <xref:System.ArgumentException> que se está llamando.
+ Para corregir una infracción de esta regla, llame a un constructor que tome un mensaje, un nombre de parámetro o ambos, y asegúrese de que los argumentos sean correctos para el tipo de <xref:System.ArgumentException> al que se está llamando.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla solo si se llama a un constructor con parámetros con los argumentos de cadena correctos.

@@ -1,7 +1,7 @@
 ---
 title: Generación de código en tiempo de diseño usando las plantillas de texto T4
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589635"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535998"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 
@@ -41,7 +41,7 @@ Una plantilla de texto contiene una mezcla del texto que se desea generar y el c
 
 2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre con la extensión **. TT**.
 
-    Para ello, en **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar** > **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto** en el panel central.
+    Para ello, en **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **plantilla de texto** en el panel central.
 
     Observe que la propiedad **herramienta personalizada** del archivo es **TextTemplatingFileGenerator**.
 
@@ -134,7 +134,7 @@ Para depurar una plantilla de texto:
    La plantilla se ejecuta y se detiene en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
-> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
+> `debug="true"`hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
 >
 > Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
@@ -219,7 +219,7 @@ Para obtener acceso a un archivo modelo o base de datos, el código de plantilla
 <#@ import namespace="System.IO" #>
 ```
 
-La Directiva `assembly` hace que el ensamblado especificado esté disponible para el código de plantilla, de la misma manera que la sección de referencias de un proyecto de Visual Studio. No necesita incluir una referencia a System.dll, al que se hace referencia automáticamente. La directiva `import` permite utilizar tipos sin usar sus nombres completos, de la misma manera que la directiva `using` en un archivo de programa normal.
+La `assembly` Directiva hace que el ensamblado especificado esté disponible para el código de plantilla, de la misma manera que la sección de referencias de un proyecto de Visual Studio. No necesita incluir una referencia a System.dll, al que se hace referencia automáticamente. La directiva `import` permite utilizar tipos sin usar sus nombres completos, de la misma manera que la directiva `using` en un archivo de programa normal.
 
 Por ejemplo, después de importar **System.IO**, puede escribir:
 
@@ -272,7 +272,7 @@ El tipo de `this.Host` (en VB, `Me.Host`) es `Microsoft.VisualStudio.TextTemplat
 
 ### <a name="getting-data-from-visual-studio"></a>Obtención de datos de Visual Studio
 
-Para usar los servicios proporcionados en Visual Studio, establezca el atributo `hostSpecific` y cargue el ensamblado `EnvDTE`. Importe `Microsoft.VisualStudio.TextTemplating`, que contiene el método de extensión `GetCOMService()`.  Puede utilizar entonces IServiceProvider.GetCOMService() para tener acceso al DTE y otros servicios. Por ejemplo:
+Para usar los servicios proporcionados en Visual Studio, establezca el `hostSpecific` atributo y cargue el `EnvDTE` ensamblado. Importe `Microsoft.VisualStudio.TextTemplating` , que contiene el `GetCOMService()` método de extensión.  Puede utilizar entonces IServiceProvider.GetCOMService() para tener acceso al DTE y otros servicios. Por ejemplo:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
-## <a name="Regenerating"></a>Volver a generar el código automáticamente
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Volver a generar el código automáticamente
 
 Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
@@ -299,7 +299,7 @@ Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la
 Si ha instalado el SDK de modelado de Visual Studio, puede hacer que todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
 
 > [!NOTE]
-> El SDK de transformación de plantillas de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> El SDK de transformación de plantillas de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/) para obtener más información.
 
 ::: moniker range="vs-2017"
 
@@ -325,7 +325,7 @@ Si ha instalado el SDK de modelado de Visual Studio, puede hacer que todas las p
 
 ::: moniker-end
 
-Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+Para obtener más información, vea [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Notificación de errores
 
@@ -336,13 +336,13 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>Convertir un archivo existente en una plantilla
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Convertir un archivo existente en una plantilla
 
-Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un archivo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
+Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] archivo, y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
-1. En el proyecto de Visual Studio, agregue un archivo del tipo que desee generar, como un `.cs`, `.vb`o `.resx` archivo.
+1. En el proyecto de Visual Studio, agregue un archivo del tipo que desee generar, como un `.cs` `.vb` archivo, o `.resx` .
 
 2. Pruebe el nuevo archivo para asegurarse de que funciona.
 
@@ -353,7 +353,7 @@ Una característica útil de las plantillas es que se parecen mucho a los archiv
    | | |
    |-|-|
    | **Herramienta personalizada =** | **TextTemplatingFileGenerator** |
-   | **Acción de compilación =** | **Ninguno** |
+   | **Acción de compilación =** | **None** |
 
 5. Inserte las siguientes líneas al principio del archivo:
 

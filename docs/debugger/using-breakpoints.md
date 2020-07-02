@@ -2,7 +2,7 @@
 title: Uso de puntos de interrupción en el depurador | Microsoft Docs
 ms.custom: ''
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301030"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536596"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Uso de puntos de interrupción en el depurador de Visual Studio
 
@@ -50,7 +50,7 @@ Los puntos de interrupción constituyen una de las técnicas de depuración más
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Establecer puntos de interrupción en el código fuente
 
-Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, puede establecer un punto de interrupción en la declaración de la variable, en el bucle `for` o en cualquier código dentro del bucle `for`. Un punto de interrupción no se puede establecer en las declaraciones de clase o espacio de nombres, ni tampoco en la firma del método.
+Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, puede establecer un punto de interrupción en la declaración de la variable, en el bucle `for` o en cualquier código dentro del bucle `for`. Un punto de interrupción no se puede establecer en las declaraciones de un espacio de nombres, una clase o una variable, ni tampoco en la firma del método.
 
 Para establecer un punto de interrupción en el código fuente, haga clic en el margen más a la izquierda junto a una línea de código. También puede seleccionar la línea y presionar **F9** y seleccionar **Depurar** > **Alternar punto de interrupción**, o hacer clic con el botón derecho y seleccionar **Punto de interrupción** > **Insertar punto de interrupción**. El punto de interrupción aparece como un punto rojo en el margen izquierdo.
 
@@ -133,7 +133,7 @@ Si se establece una condición de punto de interrupción con una sintaxis no vá
 
 3. Agregue un nuevo punto de interrupción en el punto que quiera investigar (por ejemplo, cuando se agregue el objeto a la colección). Haga clic con el botón derecho en el punto de interrupción y seleccione **Condiciones**.
 
-4. Use el identificador de objeto en el campo **Expresión condicional**. Por ejemplo, si la variable `item` es el objeto que se va a agregar a la colección, seleccione **Es true** y escriba **item == $\<n>** , donde \<n> es el número de identificación del objeto.
+4. Use el identificador de objeto en el campo **Expresión condicional**. Por ejemplo, si la variable `item` es el objeto que se va a agregar a la colección, seleccione **Es true** y escriba **item == $\<n>** , donde \<n> es el número de identificación del objeto.
 
    La ejecución se interrumpirá en el punto cuando ese objeto se agregue a la colección.
 

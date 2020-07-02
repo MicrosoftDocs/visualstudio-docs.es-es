@@ -15,24 +15,24 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 24579e6aa3ba1bf70ed6f195091152b60f3232a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c884eb569d5682326d2dc667363f991467171386
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604014"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533359"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: No oculte métodos de clases base
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: No ocultar métodos de clase base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |Identificador de comprobación|CA1061|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo derivado declara un método con el mismo nombre y con el mismo número de parámetros que uno de sus métodos base; uno o varios parámetros son un tipo base del parámetro correspondiente en el método base; y cualquier parámetro restante tiene tipos que son idénticos a los parámetros correspondientes en el método base.
 
 ## <a name="rule-description"></a>Descripción de la regla

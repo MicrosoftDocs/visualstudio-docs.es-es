@@ -15,28 +15,28 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e932651576f9b6d595657ad024b8f2697ad016
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671976"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535751"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Los literales de cadena de atributo se deben analizar correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |Identificador de comprobación|CA2243|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El parámetro de literal de cadena de un atributo no se analiza correctamente para una dirección URL, un GUID o una versión.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Puesto que los atributos se derivan de <xref:System.Attribute?displayProperty=fullName>, y los atributos se usan en tiempo de compilación, solo se pueden pasar valores constantes a sus constructores. Los parámetros de atributo que deben representar direcciones URL, GUID y versiones no se pueden escribir como <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> y <xref:System.Version?displayProperty=fullName>, porque estos tipos no se pueden representar como constantes. En su lugar, deben representarse mediante cadenas.
+ Puesto que los atributos se derivan de <xref:System.Attribute?displayProperty=fullName> y los atributos se usan en tiempo de compilación, solo se pueden pasar valores constantes a sus constructores. Los parámetros de atributo que deben representar direcciones URL, GUID y versiones no se pueden escribir como <xref:System.Uri?displayProperty=fullName> , <xref:System.Guid?displayProperty=fullName> y <xref:System.Version?displayProperty=fullName> , porque estos tipos no se pueden representar como constantes. En su lugar, deben representarse mediante cadenas.
 
  Dado que el parámetro se escribe como una cadena, es posible que se pase un parámetro con un formato incorrecto en tiempo de compilación.
 
@@ -61,5 +61,5 @@ ms.locfileid: "72671976"
 
 - Los parámetros que contienen "URI", "urn" o "URL" y no se pueden analizar en System. Uri.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [CA1054: Los parámetros de URI no deben ser cadenas](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

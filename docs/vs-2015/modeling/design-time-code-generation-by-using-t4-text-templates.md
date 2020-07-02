@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e817bc76a76c3d0af0e3509ef14312ac1b98acf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669801"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534152"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 > [!NOTE]
 > Un *modelo* es un origen de datos que describe un aspecto determinado de una aplicación. Puede ser cualquier formulario, en cualquier tipo de archivo o base de datos. No tiene que estar en ningún formulario concreto, como un modelo UML o un modelo de lenguaje específico del dominio. Los modelos típicos están en el formulario de tablas o archivos XML.
 
- Probablemente ya está familiarizado con la generación de código. Al definir recursos en un archivo **. resx** en la solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se genera automáticamente un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
+ Probablemente ya está familiarizado con la generación de código. Al definir recursos en un archivo **. resx** de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución, se genera automáticamente un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
 
  Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa y el texto permiten repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
@@ -42,7 +42,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para crear una plantilla T4 en tiempo de diseño en Visual Studio
 
-1. Cree un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o abra uno existente.
+1. Cree un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto o abra uno existente.
 
      Por ejemplo, en el menú **archivo** , elija **nuevo**, **proyecto**.
 
@@ -141,7 +141,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
-> `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto insertando más directivas de numeración de líneas en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
+> `debug="true"`hace que el código generado se asigne con más precisión a la plantilla de texto, insertando más directivas de numeración de línea en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
 >
 > Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
@@ -276,7 +276,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 
  El tipo de `this.Host` (en VB, `Me.Host`) es `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
-### <a name="getting-data-from-includevsprvsincludesvsprvs-mdmd"></a>Obtener datos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+### <a name="getting-data-from-vsprvs"></a>Obtener datos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
  Para utilizar los servicios que se proporcionan en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], establezca el atributo `hostSpecific` y cargue el ensamblado `EnvDTE`. Puede utilizar entonces IServiceProvider.GetCOMService() para tener acceso al DTE y otros servicios. Por ejemplo:
 
 ```scr
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
-## <a name="Regenerating"></a>Volver a generar el código automáticamente
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Volver a generar el código automáticamente
  Normalmente, se generan varios archivos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con un único modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
  Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **transformar todas las plantillas** en el menú **compilar** .
@@ -320,8 +320,8 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="Converting"></a>Convertir un archivo existente en una plantilla
- Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un archivo [!INCLUDE[csprcs](../includes/csprcs-md.md)] y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Convertir un archivo existente en una plantilla
+ Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar, cree un archivo normal como un prototipo, como un [!INCLUDE[csprcs](../includes/csprcs-md.md)] archivo, y, a continuación, introduzca gradualmente código de generación que varíe el archivo resultante.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
@@ -333,10 +333,10 @@ Warning("A warning message");
 
 4. Compruebe las siguientes propiedades del archivo **. TT** :
 
-    |||
+    |Propiedad.|Valor|
     |-|-|
     |**Herramienta personalizada =**|**TextTemplatingFileGenerator**|
-    |**Acción de compilación =**|**Ninguno**|
+    |**Acción de compilación =**|**None**|
 
 5. Inserte las siguientes líneas al principio del archivo:
 
@@ -370,5 +370,5 @@ Warning("A warning message");
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

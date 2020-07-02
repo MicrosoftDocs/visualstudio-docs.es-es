@@ -1,7 +1,7 @@
 ---
 title: Conectar host a procesador de directivas generadas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593985"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535868"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
@@ -43,9 +43,9 @@ Para definir un DSL, debe tener instalados los siguientes componentes:
 
 | | |
 |-|-|
-| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
-| SDK de visualización y modelado de Visual Studio | |
+| SDK de Visual Studio de visualización y modelado | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -96,17 +96,17 @@ Después de generar el procesador de directivas, conecte el procesador de direct
 
 3. Agregue las siguientes referencias:
 
-    - Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. 11.0
 
-    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft. VisualStudio. Modeling. SDK. Diagrams. 11.0
 
     - Microsoft.VisualStudio.TextTemplating.11.0
 
     - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
 
 4. En la parte superior de Program.cs o Module1. VB, agregue la siguiente línea de código:
 
@@ -118,7 +118,7 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     Imports Microsoft.Win32
     ```
 
-5. Busque el código de la propiedad `StandardAssemblyReferences`y reemplácelo por el código siguiente:
+5. Busque el código de la propiedad `StandardAssemblyReferences` y reemplácelo por el código siguiente:
 
     > [!NOTE]
     > En este paso, agregará referencias a los ensamblados necesarios para el procesador de directivas generado que el host admitirá.
@@ -154,7 +154,7 @@ Después de generar el procesador de directivas, conecte el procesador de direct
     }
     ```
 
-6. Busque el código de la función `ResolveDirectiveProcessor`y reemplácelo por el código siguiente:
+6. Busque el código de la función `ResolveDirectiveProcessor` y reemplácelo por el código siguiente:
 
     > [!IMPORTANT]
     > Este código contiene referencias codificadas de forma rígida al nombre del procesador de directivas generado al que desea conectarse. Podría hacerlo con facilidad, en cuyo caso busca todos los procesadores de directivas que aparecen en el registro e intenta encontrar una coincidencia. En ese caso, el host funcionaría con cualquier procesador de directivas generado.
@@ -238,7 +238,7 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>Crear una plantilla de texto para probar el host personalizado
 
-1. Cree un archivo de texto y asígnele el nombre `TestTemplateWithDP.tt`. Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
+1. Cree un archivo de texto y asígnele el nombre `TestTemplateWithDP.tt` . Puede usar cualquier editor de texto, como el Bloc de notas, para crear el archivo.
 
 2. Agregue lo siguiente al archivo de texto:
 
@@ -312,13 +312,13 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
     #>
     ```
 
-3. En el código, reemplace \<la ruta de acceso > con la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
+3. En el código, reemplace \<YOUR PATH> por la ruta de acceso del archivo Sample. min del lenguaje específico del diseño que creó en el primer procedimiento.
 
 4. Guarde y cierre el archivo.
 
 ### <a name="test-the-custom-host"></a>Probar el host personalizado
 
-1. Abra una ventana Símbolo del sistema.
+1. Abra una ventana de símbolo del sistema.
 
 2. Escriba la ruta de acceso del archivo ejecutable del host personalizado, pero no presione ENTRAR todavía.
 
@@ -327,7 +327,7 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo CustomHost. exe en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
 3. Escriba un espacio.
 
@@ -338,13 +338,13 @@ Para probar el host de plantilla de texto personalizado, primero debe escribir u
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP. txt en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
+    > En lugar de escribir la dirección, puede ir al archivo TestTemplateWithDP.txt en el **Explorador de Windows**y, a continuación, arrastrar el archivo a la ventana del símbolo del sistema.
 
      La aplicación host personalizada se ejecuta e inicia el proceso de transformación de plantillas de texto.
 
-5. En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP. txt.
+5. En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplateWithDP.txt.
 
-     La carpeta también contiene el archivo TestTemplateWithDP1. txt.
+     La carpeta también contiene el archivo TestTemplateWithDP1.txt.
 
 6. Abra este archivo para ver el resultados de la transformación de la plantilla de texto.
 

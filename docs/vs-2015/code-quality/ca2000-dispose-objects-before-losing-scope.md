@@ -16,24 +16,24 @@ caps.latest.revision: 32
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 89e0797afdcf299bb466018049a6d1217c5ad2dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666159"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534776"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
 |Identificador de comprobación|CA2000|
 |Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Se crea un objeto local de un tipo <xref:System.IDisposable>, pero el objeto no se elimina antes de que todas las referencias al mismo estén fuera de ámbito.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -65,7 +65,7 @@ ms.locfileid: "72666159"
  No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213: Los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
  [CA2202: No usar Dispose varias veces en objetos](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
@@ -97,5 +97,5 @@ ms.locfileid: "72666159"
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  -->
 
-## <a name="see-also"></a>Vea también
- <xref:System.IDisposable> [modelo de Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+## <a name="see-also"></a>Consulte también
+ <xref:System.IDisposable> [Patrón de Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

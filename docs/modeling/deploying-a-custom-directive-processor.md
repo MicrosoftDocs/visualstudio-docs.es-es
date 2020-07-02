@@ -1,7 +1,7 @@
 ---
 title: Implementar un procesador de directivas personalizadas
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596676"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536024"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -52,25 +52,25 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
     1. En el editor de manifiestos de VSIX, en la pestaña **activos** , elija **nuevo** y establezca las propiedades del nuevo elemento:
 
-         **Tipo de contenido** = **VSPackage**
+         **Tipo**  =  de contenido **VSPackage**
 
-         **Proyecto de origen** = \<*el proyecto actual*>
+         **Proyecto de origen** = \<*the current project*>
 
     2. Haga clic en **ediciones seleccionadas** y compruebe los tipos de instalación en los que desea que se pueda usar el procesador de directivas.
 
 3. Agregue un archivo .pkgdef y establezca sus propiedades para incluirlo en el proyecto VSIX.
 
-    1. Cree un archivo de texto y asígnele el nombre \<*assemblyName*>. pkgdef.
+    1. Cree un archivo de texto y asígnele el nombre \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*> suele ser el mismo que el nombre del proyecto.
+         \<*assemblyName*>suele ser el mismo que el nombre del proyecto.
 
     2. Selecciónelo en el Explorador de soluciones y establezca sus propiedades de la manera siguiente:
 
          **Acción de compilación** = **Contenido**
 
-         **Copiar en el directorio de salida** = **copiar siempre**
+         **Copiar en el directorio**  =  de salida **Copiar siempre**
 
-         **Incluir en VSIX** = **true**
+         **Incluir en VSIX**  =  **True**
 
     3. Establezca el nombre de la extensión VSIX y asegúrese de que el identificador es único.
 
@@ -89,11 +89,11 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 5. Agregue las referencias siguientes al proyecto:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 0,1**
 
-    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. interfaces. \* . 0,1**
 
-    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
+    - **Microsoft. VisualStudio. \* TextTemplating. VSHost.. 0,1**
 
 6. Agregue la clase de procesador de directivas personalizado al proyecto.
 
@@ -124,7 +124,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 - El método `IsDirectiveSupported` debe devolver `true` cuando se pasa el nombre de `CustomDirective`.
 
-- Si no puede ver la extensión en el administrador de extensiones, pero el sistema no le permitirá instalarla, elimine la extensión de **%localappdata%\Microsoft\VisualStudio\\\*,0 \ extensions\\** .
+- Si no puede ver la extensión en el administrador de extensiones, pero el sistema no le permitirá instalarla, elimine la extensión de **%LocalAppData%\Microsoft\VisualStudio. \\ \* 0 \\ \ extensiones**.
 
 - Abra el archivo .vsix e inspeccione su contenido. Para abrirlo, cambie la extensión del nombre del archivo a .zip. Compruebe que contiene los archivos .dll, .pkgdef y extension.vsixmanifest. El archivo extension.vsixmanifest debe contener la lista adecuada del nodo SupportedProducts y un nodo VsPackage bajo el nodo Contenido:
 
@@ -164,7 +164,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 2. En regedit, navegue a
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Si desea instalar el procesador de directivas en la versión experimental de Visual Studio, inserte "exp" después de "11,0".
 
@@ -182,19 +182,19 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
    Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:
 
-|Name|Tipo de|Datos|
+|Nombre|Tipo|Datos|
 |-|-|-|
-|(Predeterminado)|REG_SZ|(valor no establecido)|
-|Clase|REG_SZ|**\<nombre de espacio de nombres >.\<nombre de clase >**|
-|CodeBase|REG_SZ|**\<la ruta de acceso >\\< el nombre del ensamblado\>**|
+|(Es el valor predeterminado).|REG_SZ|(valor no establecido)|
+|Clase|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<el nombre del ensamblado\>**|
 
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:
 
-|Name|Tipo de|Datos|
+|Nombre|Tipo|Datos|
 |-|-|-|
-|(Predeterminado)|REG_SZ|(valor no establecido)|
-|Clase|REG_SZ|\<**el nombre de clase completo**>|
-|Ensamblado|REG_SZ|\<**el nombre del ensamblado en la GAC**>|
+|(Es el valor predeterminado).|REG_SZ|(valor no establecido)|
+|Clase|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Ensamblado|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>Vea también
 

@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 258b7ba1444cd990c3ec68ebfd5faccc945439e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c1e3af0e35bf92d72e853948c455893b417998
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661350"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85534945"
 ---
-# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evite sobrecargas en interfaces visibles para COM
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evitar las sobrecargas en interfaces visibles a través de COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |Identificador de comprobación|CA1402|
 |Categoría|Microsoft. Interoperability|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una interfaz visible del modelo de objetos componentes (COM) declara métodos sobrecargados.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -55,7 +55,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
  Visual Basic 6 los clientes COM no pueden implementar métodos de interfaz mediante el uso de un carácter de subrayado en el nombre.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el nombre de los métodos sobrecargados para que los nombres sean únicos. También puede hacer que la interfaz sea invisible para COM cambiando la accesibilidad a `internal` (`Friend` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) o aplicando el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> establecido en `false`.
+ Para corregir una infracción de esta regla, cambie el nombre de los métodos sobrecargados para que los nombres sean únicos. También puede hacer que la interfaz sea invisible para COM cambiando la accesibilidad a `internal` ( `Friend` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) o aplicando el <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> atributo establecido en `false` .
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
@@ -67,11 +67,11 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.OverloadsInterface/vb/FxCop.Interoperability.OverloadsInterface.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1413: Evite campos no públicos en tipos de valor visibles para COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Evitar los campos no públicos en tipos de valor visibles a través de COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Evite miembros estáticos en tipos visibles para COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407: Evitar los miembros estáticos en tipos visibles a través de COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: Marcar los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  Interoperar con el [tipo de datos Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516) [de código no administrado](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

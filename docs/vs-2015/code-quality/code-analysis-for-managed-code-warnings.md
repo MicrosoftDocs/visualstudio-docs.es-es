@@ -34,7 +34,7 @@ La herramienta de análisis de código administrado proporciona advertencias que
 |----------|-----------------|
 |Tipo|TypeName de la regla.|
 |Identificador de comprobación|Identificador único de la regla. CheckId y Categoría se usan para la supresión en el código fuente de una advertencia.|
-|Category|Categoría de la advertencia.|
+|Categoría|Categoría de la advertencia.|
 |Cambio problemático|Indica si la corrección para una infracción de la regla es un cambio problemático. Se entiende por cambio problemático que un ensamblado que tenga una dependencia en el destino que produjo la infracción no se vuelva a compilar con la nueva versión modificada o genere un error en tiempo de ejecución debido al cambio. Cuando hay disponibles varias correcciones y al menos una es un cambio problemático y otra no, se especifican "Problemático" y "No problemático".|
 |Causa|El código administrado específico que provoca que la regla genere una advertencia.|
 |Descripción|Describe los problemas que están detrás de la advertencia.|
@@ -45,7 +45,7 @@ La herramienta de análisis de código administrado proporciona advertencias que
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |[ADVERTENCIAS por CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista de advertencias por CheckId|
 |[Advertencias de criptografía](../code-quality/cryptography-warnings.md)|Advertencias compatibles con bibliotecas y aplicaciones más seguras mediante el uso correcto de criptografía.|

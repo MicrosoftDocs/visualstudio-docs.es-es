@@ -31,6 +31,6 @@ Establezca la **propiedad Discriminator** en otra propiedad de la clase de datos
 
 3. Intente de nuevo eliminar la propiedad.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Herramientas de LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -11,22 +11,22 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a3c0b347f186c5adee6cf86a0e1720ebfa80f253
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670116"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85535725"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al configurar el análisis de código para los proyectos de código administrado en [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPro](../includes/vspro-md.md)]you se presentan con una lista de *conjuntos de reglas*integrados. Se puede usar uno de los conjuntos de reglas estándar o bien personalizar un conjunto de reglas para ajustarse a los requisitos del proyecto.
+Al configurar el análisis de código para los proyectos de código administrado en [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] , [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPro](../includes/vspro-md.md)] se muestra una lista de *conjuntos de reglas*integrados. Se puede usar uno de los conjuntos de reglas estándar o bien personalizar un conjunto de reglas para ajustarse a los requisitos del proyecto.
 
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles
  En la tabla siguiente se enumeran los conjuntos de reglas predeterminados:
 
-|||
+|Elemento|Valor|
 |-|-|
 |[Conjunto de reglas Todas las reglas](../code-quality/all-rules-rule-set.md)|Este conjunto de reglas contiene todas las reglas. Si se ejecuta este conjunto de reglas, puede dar lugar a un gran número de advertencias. Use este conjunto de reglas para obtener una imagen completa de todos los problemas del código. Esto puede ser útil para decidir qué conjuntos de reglas son más apropiados para ejecutarlos para sus proyectos.|
 |[Conjunto de reglas Reglas de corrección básicas para código administrado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|Estas reglas se centran en errores lógicos y comunes cometidos en el uso de API de marco de trabajo. Incluya este conjunto de reglas para ampliar la lista de advertencias emitidas por las reglas mínimas recomendadas.|

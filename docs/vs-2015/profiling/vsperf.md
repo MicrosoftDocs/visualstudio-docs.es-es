@@ -32,7 +32,7 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
   
  [Solo aplicaciones de la tienda Windows](#BKMK_windows_store_apps_only)  
   
- [Aplicaciones de escritorio de Windows 8 y las aplicaciones de Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
+ [Solo aplicaciones de escritorio de Windows 8 y de Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
   
  [Todas las aplicaciones](#BKMK_All_applications)  
   
@@ -43,7 +43,7 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |-|-|  
 |**/app:{AppName}**|Inicia el generador de perfiles y espera a que la aplicación especificada se ejecute desde el menú Inicio.<br /><br /> Ejecute `vsperf /listapps` para ver el nombre de la aplicación y PackageFullName de las aplicaciones instaladas.|  
 |**/package:{PackageFullName}**|Inicia el generador de perfiles y espera a que la aplicación especificada se ejecute desde el menú Inicio.<br /><br /> Ejecute `vsperf /listapps` para ver el nombre de la aplicación y PackageFullName de las aplicaciones instaladas.|  
-|**/JS**|Se requiere para generar perfiles de aplicaciones de JavaScript.<br /><br /> Recopilar datos de rendimiento de aplicaciones de JavaScript.<br /><br /> Utilícelo solo con/package o /attach.|  
+|**/js**|Se requiere para generar perfiles de aplicaciones de JavaScript.<br /><br /> Recopilar datos de rendimiento de aplicaciones de JavaScript.<br /><br /> Utilícelo solo con/package o /attach.|  
 |**/noclr**|Opcional. No se recopilan datos de CLR.<br /><br /> Utilícelo solo con/package o /attach.<br /><br /> Optimización, no se resolverán símbolos administrados.|  
 |**/listapps**|Lista los nombres y PackageFullNames de la aplicación instalada.|  
   
@@ -54,7 +54,7 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |-|-|  
 |**/launch:{Executable}**|Inicia el archivo ejecutable especificado y comienza la generación de perfiles.|  
 |**/args:{ExecutableArguments}**|Especifica los argumentos de línea de comandos para pasar el destino de **/launch**.|  
-|**/Console**|Ejecuta el destino de **/launch** en una nueva ventana de comandos.|  
+|**/console**|Ejecuta el destino de **/launch** en una nueva ventana de comandos.|  
   
 ## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Todas las aplicaciones  
  Estas opciones se aplican a cualquier aplicación de Windows 8 o de Windows Server 2012.  
@@ -63,9 +63,9 @@ Utilice la herramienta de línea de comandos **VsPerf** para:
 |-|-|  
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Recopila datos de los procesos especificados.<br /><br /> Utilice el Administrador de tareas para ver el identificador de proceso (PID) y el nombre de proceso de aplicaciones en ejecución.|  
 |**/file:{ReportName}**|Opcional. Especifica el archivo de salida (sobrescribe el archivo existente).<br /><br /> Utilícelo solo con/package o /attach.|  
-|**/PAUSE**|Pausa la recopilación de datos.|  
+|**/pause**|Pausa la recopilación de datos.|  
 |**/resume**|Reanuda la recopilación de datos.|  
-|**/STOP**|Detiene la recopilación de datos y finaliza los procesos de destino.|  
+|**/stop**|Detiene la recopilación de datos y finaliza los procesos de destino.|  
 |**/detach**|Detiene la recopilación de datos, pero permite que los procesos de destino sigan ejecutándose.|  
 |**/status**|Muestra el estado del generador de perfiles.|  
   
