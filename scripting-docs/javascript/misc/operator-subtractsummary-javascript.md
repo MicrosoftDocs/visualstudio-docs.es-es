@@ -1,9 +1,9 @@
 ---
-title: Resumen de operadores (JavaScript) | Documentos de Microsoft
+title: Resumen de operadores (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 dev_langs:
 - JavaScript
 - TypeScript
@@ -12,24 +12,24 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006487"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816792"
 ---
 # <a name="operator-summary-javascript"></a>Resumen de operadores (JavaScript)
-La siguiente lista de tablas [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operadores en sus respectivas categorías.  
+En las tablas siguientes se enumeran los [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operadores de sus categorías respectivas.  
   
 ## <a name="computational-operators"></a>Operadores de cálculo  
   
 |Operador|Símbolo|  
 |--------------|------------|  
-|[Suma](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
+|[Agregado](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Decremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[División](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Incremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Importación](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplicación](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Resta](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -44,14 +44,14 @@ La siguiente lista de tablas [!INCLUDE[javascript](../../javascript/includes/jav
 |[Igualdad](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Mayor que](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[Mayor o igual que](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Identity](../../javascript/reference/comparison-operators-javascript.md)|===|  
+|[Identidad](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Desigualdad](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Menor que](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Menor o igual que](../../javascript/reference/comparison-operators-javascript.md)|<=|  
 |[AND lógico](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[NOT lógico](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[Lógico o](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[No identidad](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[OR lógico](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
+|[Operador](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>Operadores bit a bit  
   
@@ -60,7 +60,7 @@ La siguiente lista de tablas [!INCLUDE[javascript](../../javascript/includes/jav
 |[AND bit a bit](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
 |[Desplazamiento a la izquierda bit a bit](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
 |[NOT bit a bit](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[Bit a bit o](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
+|[OR bit a bit](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Desplazamiento a la derecha bit a bit](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
 |[XOR bit a bit](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
 |[Desplazamiento a la derecha sin signo](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  

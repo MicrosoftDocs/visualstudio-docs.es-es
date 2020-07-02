@@ -1,19 +1,19 @@
 ---
 title: 'Diseñador de flujo de trabajo: Cómo usar la ruta de navegación'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 291badb04c791305f655e187ff7853fc8c5087a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75584574"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817468"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
 
@@ -47,7 +47,7 @@ Hay tres formas principales de cambiar el conjunto de actividades que se muestra
 2. Después de aplicar un estado expandir todo o contraer todo, puede hacer clic en el botón **restaurar** que aparece para volver a examinar el estado aplicado previamente a cada actividad.
 
     > [!WARNING]
-    > Si una actividad, como <xref:System.Activities.Statements.Flowchart>, ha optado por expandirse en su lugar, la funcionalidad asociada con los botones **expandir todo** y **contraer todo** está deshabilitada en el diseñador de **diagramas de flujo** . Para obtener más información sobre el diseñador de **diagramas de flujo** , vea el tema [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) .
+    > Si una actividad, como <xref:System.Activities.Statements.Flowchart> , ha optado por expandirse en su lugar, la funcionalidad asociada con los botones **expandir todo** y **contraer todo** está deshabilitada en el diseñador de **diagramas de flujo** . Para obtener más información sobre el diseñador de **diagramas de flujo** , vea el tema [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Expandir todo también tiene un efecto especial en los diseñadores de actividad **Switch** y **TryCatch** . Al hacer clic en **expandir todo**, se muestran todos los casos de cambio y todos los bloques try/catch/finally. Al hacer clic en **restaurar** o **contraer todo** , se devuelven estos diseñadores a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individual para ver su contenido.

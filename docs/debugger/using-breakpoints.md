@@ -1,7 +1,7 @@
 ---
 title: Uso de puntos de interrupción en el depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 10/28/2019
+ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af53cdd368d129fc23c3596a4e20d6e95ceb7a18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536596"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85769406"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Uso de puntos de interrupción en el depurador de Visual Studio
 
@@ -50,7 +50,7 @@ Los puntos de interrupción constituyen una de las técnicas de depuración más
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Establecer puntos de interrupción en el código fuente
 
-Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, puede establecer un punto de interrupción en la declaración de la variable, en el bucle `for` o en cualquier código dentro del bucle `for`. Un punto de interrupción no se puede establecer en las declaraciones de un espacio de nombres, una clase o una variable, ni tampoco en la firma del método.
+Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el siguiente código de C#, puede establecer un punto de interrupción en la línea de código con la asignación de variables (`int testInt = 1`), el bucle `for` o cualquier código dentro del bucle `for`. No se puede establecer un punto de interrupción en las firmas de método, las declaraciones de un espacio de nombres o una clase, o bien las declaraciones de variables si no hay ninguna asignación y no hay ningún captador o establecedor.
 
 Para establecer un punto de interrupción en el código fuente, haga clic en el margen más a la izquierda junto a una línea de código. También puede seleccionar la línea y presionar **F9** y seleccionar **Depurar** > **Alternar punto de interrupción**, o hacer clic con el botón derecho y seleccionar **Punto de interrupción** > **Insertar punto de interrupción**. El punto de interrupción aparece como un punto rojo en el margen izquierdo.
 

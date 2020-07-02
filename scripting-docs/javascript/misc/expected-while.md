@@ -3,7 +3,7 @@ title: Se esperaba ' while ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1024
 dev_langs:
@@ -14,20 +14,20 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89f744413b7ffa60b0a85d7ce0208ba2d529c96d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: a9381f990c8a43e848370e1251e163dad81a10e9
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575913"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817351"
 ---
 # <a name="expected-while"></a>Se esperaba 'while '
-No incluyó la condición `while` en un bucle de `do...while`. Una instrucción **do** debe tener una prueba de `while` correspondiente al final del bloque de código.  
+No incluyó la `while` condición en un `do...while` bucle. Una instrucción **do** debe tener una `while` prueba correspondiente al final del bloque de código.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-- Incluya la instrucción test de `while` después de la llave de cierre.  
+- Incluya la `while` instrucción test después de la llave de cierre.  
   
 ## <a name="see-also"></a>Vea también  
- [While (instrucción](../../javascript/reference/while-statement-javascript.md) )   
+ [while (instrucción)](../../javascript/reference/while-statement-javascript.md)   
  [Control del flujo del programa](../../javascript/controlling-program-flow-javascript.md)

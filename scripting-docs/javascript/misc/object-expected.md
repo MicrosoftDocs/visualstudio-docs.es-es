@@ -3,7 +3,7 @@ title: Objeto esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
-ms.topic: reference
+ms.topic: error-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5007
 dev_langs:
@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 28eec125914f0207fbdf79a39ea2140dd74d6d0d
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72573735"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816233"
 ---
 # <a name="object-expected"></a>Se esperaba un objeto
 Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `Object`, o se pasó un argumento de un tipo distinto de `Object` cuando se requería `Object`.  
@@ -47,5 +47,5 @@ Se intentó invocar un método o propiedad en un objeto de un tipo distinto de `
     ```  
   
 ## <a name="see-also"></a>Vea también  
- Objeto de [objeto](../../javascript/reference/object-object-javascript.md)   
+ [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos y matrices](../../javascript/objects-and-arrays-javascript.md)

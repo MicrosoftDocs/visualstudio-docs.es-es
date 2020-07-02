@@ -1,19 +1,19 @@
 ---
 title: Usar una búsqueda en el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650295"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85817481"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Usar una búsqueda en el Diseñador de flujo de trabajo
 
@@ -33,7 +33,7 @@ Búsqueda rápida busca lo siguiente en el diseñador:
 
 ### <a name="use-quick-find"></a>Usar búsqueda rápida
 
-1. Con el diseñador de flujo de trabajo abierto, presione **Ctrl + F**o seleccione **Editar**  > **Buscar y reemplazar**  > **búsqueda rápida**.
+1. Con el diseñador de flujo de trabajo abierto, presione **Ctrl + F**o seleccione **Editar**  >  **Buscar y reemplazar**  >  **búsqueda rápida**.
 
 2. Escriba el término de búsqueda en el cuadro de texto **Buscar** y haga clic en **Buscar siguiente**.
 
@@ -47,7 +47,7 @@ Buscar en archivos busca cadenas en archivos de flujo de trabajo, incluidos los 
 
 ### <a name="use-find-in-files"></a>Usar buscar en archivos
 
-1. En Visual Studio, presione **Ctrl** +**MAYÚS** +**F**o seleccione **Editar**  > **Buscar y reemplazar**  > **Buscar en archivos**.
+1. En Visual Studio, presione **Ctrl** + **MAYÚS** + **F**o seleccione **Editar**  >  **Buscar y reemplazar**  >  **Buscar en archivos**.
 
 2. Escriba el elemento de búsqueda en el cuadro de texto **Buscar** y haga clic en **buscar todo**.
 
