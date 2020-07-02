@@ -27,7 +27,7 @@ Esta sección es una referencia de los mensajes de error generados por la herram
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |[CA0001](ca0001.md)|Se inició una excepción en la herramienta de análisis de código administrado que no indica una condición de error esperada.|
 |[CA0051](ca0051.md)|No se seleccionaron reglas.|

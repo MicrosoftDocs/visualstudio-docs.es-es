@@ -25,11 +25,11 @@ ms.locfileid: "85540146"
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |Identificador de comprobación|CA1411|
-|Category|Microsoft. Interoperability|
+|Categoría|Microsoft. Interoperability|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

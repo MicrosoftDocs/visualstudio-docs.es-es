@@ -81,6 +81,6 @@ ms.locfileid: "85538299"
 ## <a name="robust-programming"></a>Programación sólida
  Para simplificar, este ejemplo usa una cadena XML que se define como una variable local en el método. Normalmente, debe obtener el XML desde un origen externo, como un archivo o una base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre los elementos XML personalizados](../vsto/custom-xml-parts-overview.md)
 - [Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

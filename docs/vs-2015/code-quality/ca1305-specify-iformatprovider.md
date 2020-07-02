@@ -25,11 +25,11 @@ ms.locfileid: "85539091"
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |Identificador de comprobación|CA1305|
-|Category|Microsoft. Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

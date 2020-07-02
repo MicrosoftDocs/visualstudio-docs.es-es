@@ -15,31 +15,31 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ba7e7de4f3ef6336ed3d82dc1e1da03ec0bf2575
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcdb4d8333b0a4d2d06580d882cf736d4527eca4
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603077"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539534"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |Identificador de comprobación|CA1057|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de cadena con un parámetro <xref:System.Uri?displayProperty=fullName>, y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el parámetro <xref:System.Uri>.
+## <a name="cause"></a>Causa
+ Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de cadena con un <xref:System.Uri?displayProperty=fullName> parámetro, y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el <xref:System.Uri> parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Dado que las sobrecargas solo difieren en el parámetro String/<xref:System.Uri>, se supone que la cadena representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase <xref:System.Uri> proporciona estos servicios de forma segura. Para aprovechar las ventajas de la clase <xref:System.Uri>, la sobrecarga de la cadena debe llamar a la sobrecarga <xref:System.Uri> mediante el argumento de cadena.
+ Dado que las sobrecargas solo difieren en la cadena o el <xref:System.Uri> parámetro, se supone que la cadena representa un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de forma segura. Para aprovechar las ventajas de la <xref:System.Uri> clase, la sobrecarga de la cadena debe llamar a la <xref:System.Uri> sobrecarga mediante el argumento de cadena.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Vuelva a implementar el método que usa la representación de cadena del URI para que cree una instancia de la clase <xref:System.Uri> mediante el argumento de cadena y, a continuación, pase el objeto <xref:System.Uri> a la sobrecarga que tiene el parámetro <xref:System.Uri>.
+ Vuelva a implementar el método que usa la representación de cadena del URI para que cree una instancia de la <xref:System.Uri> clase mediante el argumento de cadena y, a continuación, pase el <xref:System.Uri> objeto a la sobrecarga que tiene el <xref:System.Uri> parámetro.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el parámetro de cadena no representa un URI.
@@ -52,7 +52,7 @@ ms.locfileid: "72603077"
  [!code-vb[FxCop.Design.CallUriOverload#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CallUriOverload/vb/FxCop.Design.CallUriOverload.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2234: Pase objetos System.Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+ [CA2234: Pasar objetos System.Uri en lugar de cadenas](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
  [CA1056: Las propiedades URI no deben ser cadenas](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 

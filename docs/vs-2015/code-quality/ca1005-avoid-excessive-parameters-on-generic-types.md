@@ -25,11 +25,11 @@ ms.locfileid: "85539729"
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Evitar los parámetros excesivos en tipos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |Identificador de comprobación|CA1005|
-|Category|Microsoft. Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

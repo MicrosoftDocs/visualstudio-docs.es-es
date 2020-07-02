@@ -1,7 +1,7 @@
 ---
 title: Solucionar errores en soluciones de Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2aa971a79c0b0f5592c0da5c52a457c585bb0f15
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985571"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537324"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar errores en soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:
@@ -36,11 +36,11 @@ ms.locfileid: "72985571"
 
 - [Escribir código](#code)
 
-- [Compilar proyectos](#building)
+- [Proyectos de compilación](#building)
 
 - [Depurar proyectos](#debugging)
 
-## <a name="creating"></a>Crear, actualizar y abrir proyectos
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Crear, actualizar y abrir proyectos
  Pueden producirse los siguientes errores al crear o abrir proyectos de Office.
 
 ### <a name="the-project-cannot-be-created"></a>No se puede crear el proyecto
@@ -84,7 +84,7 @@ ms.locfileid: "72985571"
 
  Cuando termine de actualizar el proyecto, puede desinstalar Visual Studio 2005 Tools para Office Second Edition Runtime en el equipo de desarrollo si no lo usa ninguna otra solución de Office.
 
-## <a name="designers"></a>Usar los diseñadores
+## <a name="use-the-designers"></a><a name="designers"></a>Usar los diseñadores
  Podría encontrar los siguientes errores al trabajar con el documento, el libro o el diseñador de hojas de cálculo en proyectos de nivel de documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>El diseñador no se cargó correctamente
@@ -105,7 +105,7 @@ ms.locfileid: "72985571"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>El comando insertar imágenes prediseñadas no hace nada en el diseñador de Visual Studio
  Cuando Excel o Word está abierto en el diseñador de Visual Studio, al hacer clic en el botón **imagen prediseñada** de la pestaña **ilustraciones** de la cinta de opciones no se abre el panel de tareas **imágenes** prediseñadas. Para agregar imágenes prediseñadas, debe abrir la copia del libro o documento que se encuentra en la carpeta del proyecto principal (no la copia que se encuentra en la carpeta *\Bin* ) fuera de Visual Studio, agregar la imagen prediseñada y, a continuación, guardar el libro o el documento.
 
-## <a name="code"></a>Escribir código
+## <a name="write-code"></a><a name="code"></a>Escribir código
  Pueden producirse los siguientes errores al escribir código en proyectos de Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>No se puede obtener acceso a algunos eventos de los objetos de Office cuando se usa C\#
@@ -115,7 +115,7 @@ ms.locfileid: "72985571"
 
  Este error significa que está intentando acceder a un evento que tiene el mismo nombre que otra propiedad o método del objeto. Para tener acceso al evento, debe convertir el objeto a su *interfaz de eventos*.
 
- Los tipos de PIA de Office que tienen eventos implementan dos interfaces: una interfaz básica con todas las propiedades y métodos, y una interfaz de eventos que contiene los eventos expuestos por el objeto. Estas interfaces de eventos usan la Convención de nomenclatura *objectname*Events*n*_ Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> y <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Si no puede acceder a un evento que espera encontrar en un objeto, convierta el objeto a su interfaz de eventos.
+ Los tipos de PIA de Office que tienen eventos implementan dos interfaces: una interfaz básica con todas las propiedades y métodos, y una interfaz de eventos que contiene los eventos expuestos por el objeto. Estas interfaces de eventos utilizan la Convención de nomenclatura *objectname*Events*n*_Event, como <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> y <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Si no puede acceder a un evento que espera encontrar en un objeto, convierta el objeto a su interfaz de eventos.
 
  Por ejemplo, los objetos <xref:Microsoft.Office.Interop.Excel.Application> tienen un evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> y una propiedad <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Para controlar el evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, convierta <xref:Microsoft.Office.Interop.Excel.Application> a la interfaz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. En el ejemplo de código siguiente se muestra cómo hacerlo desde un proyecto de nivel de documento para Excel.
 
@@ -123,8 +123,8 @@ ms.locfileid: "72985571"
 
  Para obtener más información sobre las interfaces de eventos de los PIA de Office, vea [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenet_v40_shortsharepointincludesnet-v40-short-mdmd-or-the-includenet_v45vstoincludesnet-v45-mdmd"></a>No se puede hacer referencia a las clases de PIA de Office en proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], no se compilará de forma predeterminada el código que hace referencia a una clase que se define en un PIA de Office. Las clases de los PIA usan la clase de Convención de nomenclatura *objectname*, como <xref:Microsoft.Office.Interop.Word.DocumentClass> y <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Por ejemplo, no se compilará el código siguiente desde un proyecto de complemento de VSTO de Word.
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>No se puede hacer referencia a las clases de PIA de Office en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+ En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], no se compilará de forma predeterminada el código que hace referencia a una clase que se define en un PIA de Office. Las clases de los PIA usan la clase de Convención de nomenclatura *objectname*, como <xref:Microsoft.Office.Interop.Word.DocumentClass> y <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Por ejemplo, no se compilará el código siguiente desde un proyecto de complemento de VSTO de Word.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -138,7 +138,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
 - Visual Basic: "no se permite la referencia a la clase ' DocumentClass ' cuando su ensamblado está vinculado mediante el modo no-PIA".
 
-- Visual C#: "el tipo de interoperabilidad ' Microsoft. Office. Interop. Word. DocumentClass ' no se puede incrustar. Use la interfaz aplicable en su lugar".
+- Visual C#: "el tipo de interoperabilidad ' Microsoft.Office.Interop.Word.DocumentClass ' no se puede incrustar. Use la interfaz aplicable en su lugar".
 
   Para resolver este error, modifique el código para hacer referencia a la interfaz correspondiente. Por ejemplo, en lugar de hacer referencia a un objeto <xref:Microsoft.Office.Interop.Word.DocumentClass>, haga referencia a una instancia de la interfaz <xref:Microsoft.Office.Interop.Word.Document>.
 
@@ -153,12 +153,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] insertan automáticamente todos los tipos de interoperabilidad de los PIA de Office de forma predeterminada. Este error de compilación se produce porque la característica de tipos de interoperabilidad insertados solo funciona con interfaces, no clases. Para obtener más información sobre las interfaces y las clases de los PIA de Office, vea [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12/ms247299(v=office.12)). Para obtener más información sobre la característica de tipos de interoperabilidad incrustados en los proyectos de Office, vea [diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>No se reconocen las referencias a las clases de Office
- Algunos nombres de clase, por ejemplo, la aplicación, se encuentran en varios espacios de nombres, como <xref:Microsoft.Office.Interop.Word> y <xref:System.Windows.Forms>. Por esta razón, la instrucción **Imports**/**using** en la parte superior de las plantillas de proyecto incluye una constante de calificación abreviada, por ejemplo:
+ Algunos nombres de clase, por ejemplo, la aplicación, se encuentran en varios espacios de nombres, como <xref:Microsoft.Office.Interop.Word> y <xref:System.Windows.Forms> . Por esta razón, la instrucción **Import** / **using** en la parte superior de las plantillas de proyecto incluye una constante de calificación abreviada, por ejemplo:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- Este uso de la instrucción **Imports**/**using** requiere diferenciar las referencias a las clases de Office con el calificador de Word o Excel, por ejemplo:
+ Este uso de la instrucción **Import** / **using** requiere diferenciar las referencias a las clases de Office con el calificador de Word o Excel, por ejemplo:
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Aunque haya importado el espacio de nombres de Word o Excel y tenga acceso a todas las clases que contiene, debe calificar totalmente todos los tipos con Word o Excel para quitar la ambigüedad de los espacios de nombres.
 
-## <a name="building"></a> Compilar proyectos
+## <a name="build-projects"></a><a name="building"></a> Compilar proyectos
  Pueden producirse los siguientes errores al compilar proyectos de Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento basado en un documento con permisos restringidos
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Los errores del compilador se producen después de eliminar un control NamedRange
  Si elimina un control <xref:Microsoft.Office.Tools.Excel.NamedRange> de una hoja de cálculo que no es la hoja de cálculo activa en el diseñador, el código generado automáticamente podría no quitarse del proyecto y podrían producirse errores del compilador. Para asegurarse de que se quita el código, siempre debe seleccionar la hoja de cálculo que contiene el control <xref:Microsoft.Office.Tools.Excel.NamedRange> para convertirla en la hoja de cálculo activa antes de eliminar el control. Si el código generado automáticamente no se elimina cuando se elimina el control, puede hacer que el diseñador elimine el código activando la hoja de cálculo y realizando un cambio de modo que la hoja quede marcada como modificada. Cuando vuelva a compilar el proyecto, el código se quita.
 
-## <a name="debugging"></a>Depurar proyectos
+## <a name="debug-projects"></a><a name="debugging"></a>Depurar proyectos
  Pueden producirse los siguientes errores al depurar proyectos de Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Preguntar al desinstalar aparece al publicar e instalar una solución en el equipo de desarrollo
@@ -197,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Si crea un proyecto de nivel de documento para Excel o Word en una ubicación de red UNC, debe agregar la ubicación del documento a la lista de ubicaciones de confianza en Excel o Word. De lo contrario, la personalización no se cargará cuando intente ejecutar o depurar el proyecto en Visual Studio. Para obtener más información sobre las ubicaciones de confianza, vea [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Los subprocesos no se detienen correctamente tras la depuración
- Los proyectos de Office en Visual Studio siguen una convención de nomenclatura de subprocesos que permite al depurador cerrar el programa correctamente. Si crea subprocesos en la solución, debe asignar al nombre de cada subproceso el prefijo VSTA_ para asegurarse de que estos subprocesos se controlan correctamente cuando se detiene la depuración. Por ejemplo, puede establecer la propiedad `Name` de un subproceso que espera a que un evento de red se **VSTA_NetworkListener**.
+ Los proyectos de Office en Visual Studio siguen una convención de nomenclatura de subprocesos que permite al depurador cerrar el programa correctamente. Si crea subprocesos en la solución, debe asignar al nombre de cada subproceso el prefijo VSTA_ para asegurarse de que estos subprocesos se controlan correctamente cuando se detiene la depuración. Por ejemplo, puede establecer la `Name` propiedad de un subproceso que espera a que se **VSTA_NetworkListener**un evento de red.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>No se puede ejecutar o depurar ninguna solución de Office en el equipo de desarrollo
  Si no puede ejecutar o desarrollar un proyecto de Office en el equipo de desarrollo, podría ver el siguiente mensaje de error.

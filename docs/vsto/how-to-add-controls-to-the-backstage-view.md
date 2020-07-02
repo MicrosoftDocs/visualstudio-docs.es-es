@@ -62,7 +62,7 @@ ms.locfileid: "85538351"
 
 4. Arrastre controles para moverlos a nuevas posiciones en el menú.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre la cinta](../vsto/ribbon-overview.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

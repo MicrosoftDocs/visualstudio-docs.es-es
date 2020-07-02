@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de soluciones de Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -14,35 +14,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978268"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537221"
 ---
 # <a name="troubleshoot-office-solutions"></a>Solucionar problemas de soluciones de Office
   En esta sección se ofrecen sugerencias para resolver problemas comunes que pudieran surgir al crear soluciones mediante las herramientas de desarrollo de Office en Visual Studio.
 
 ## <a name="in-this-section"></a>En esta sección
-- [Solución de problemas de errores en las soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Solucionar errores en soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  Describe los problemas comunes que pueden surgir al diseñar, ejecutar y probar soluciones de Office en Visual Studio.
 
-- [Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 
- Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado parcial o totalmente.
+ Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado de forma rígida o parcial.
 
-- [Soporte técnico adicional para errores en soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)
+- [Compatibilidad adicional para errores en las soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)
 
  Describe otros recursos para resolver problemas de errores y advertencias en soluciones de Office.
 
 ## <a name="related-sections"></a>Secciones relacionadas
-- [Solucionar problemas de seguridad de la solución de Office](../vsto/troubleshooting-office-solution-security.md)
+- [Solucionar problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)
 
  Describe los problemas comunes que pueden surgir al trabajar en la seguridad de las soluciones de Office.
 
-- [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
 
  Describe los problemas comunes que pueden surgir al implementar soluciones de Office.
 

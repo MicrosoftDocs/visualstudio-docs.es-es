@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c56de70daeabd05215f68024339d5855686d529b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0a4dcc53fac7dc9b7e189686a3b32e2fb4fd030
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653829"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539599"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declare tipos en espacios de nombres
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declarar tipos en espacios de nombres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |Identificador de comprobación|CA1050|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo público o protegido se define fuera del ámbito de un espacio de nombres con nombre.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -51,7 +51,7 @@ ms.locfileid: "72653829"
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TypesLiveInNamespaces/vb/FxCop.Design.TypesLiveInNamespaces.vb#1)]
 
 ## <a name="example"></a>Ejemplo
- La siguiente aplicación usa la biblioteca que se definió anteriormente. Tenga en cuenta que el tipo que se declara fuera de un espacio de nombres se crea cuando el nombre `Test` no está calificado por un espacio de nombres. Tenga en cuenta también que para tener acceso al tipo de `Test` en `Goodspace`, se requiere el nombre del espacio de nombres.
+ La siguiente aplicación usa la biblioteca que se definió anteriormente. Tenga en cuenta que el tipo que se declara fuera de un espacio de nombres se crea cuando el nombre `Test` no está calificado por un espacio de nombres. Tenga en cuenta también que para tener acceso al `Test` tipo en `Goodspace` , el nombre del espacio de nombres es obligatorio.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/cs/FxCop.Design.TestTypesLive.cs#1)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive/vb/FxCop.Design.TestTypesLive.vb#1)]

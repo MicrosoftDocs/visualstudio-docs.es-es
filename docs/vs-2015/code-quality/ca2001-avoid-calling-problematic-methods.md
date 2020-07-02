@@ -25,11 +25,11 @@ ms.locfileid: "85538585"
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitar llamar a métodos problemáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |Identificador de comprobación|CA2001|
-|Category|Microsoft.Reliability|
+|Categoría|Microsoft.Reliability|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34d1918522711f3070cf6988a83ebdbd1e80b2f4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659585"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540080"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Pruebas unitarias de aplicaciones C++ existentes con el Explorador de pruebas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,49 +49,49 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
 
 ## <a name="creating-the-tests"></a>Crear las pruebas
 
-### <a name="staticLink"></a> Para cambiar el código en pruebas a una biblioteca estática
+### <a name="to-change-the-code-under-test-to-a-static-library"></a><a name="staticLink"></a> Para cambiar el código en pruebas a una biblioteca estática
 
 - Si las pruebas deben utilizar miembros que no exporte un proyecto en pruebas y el proyecto en pruebas se compila como una biblioteca dinámica, considere convertirla en una biblioteca estática.
 
-  1. En el Explorador de soluciones, en el menú contextual del proyecto en pruebas, seleccione **Propiedades**. Se abrirá la ventana de propiedades del proyecto.
+  1. En Explorador de soluciones, en el menú contextual del proyecto en pruebas, elija **propiedades**. Se abrirá la ventana de propiedades del proyecto.
 
   2. Seleccione **Propiedades de configuración**, **General**.
 
-  3. Establezca **Tipo de configuración** en **Biblioteca estática (.lib)** .
+  3. Establezca **Tipo de configuración** en **Biblioteca estática (.lib)**.
 
   Continúe con el procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
 
-### <a name="projectRef"></a> Para hacer referencia a funciones exportadas del proyecto de prueba
+### <a name="to-reference-exported-functions-from-the-test-project"></a><a name="projectRef"></a> Para hacer referencia a funciones exportadas del proyecto de prueba
 
 - Si un proyecto en pruebas exporta funciones que desea probar, puede agregar una referencia al proyecto de código desde el proyecto de prueba.
 
   1. Cree un proyecto de prueba C++.
 
-      1. En el menú **Archivo**, seleccione **Nuevo**, **Proyecto**, **Visual C++, Prueba**, **Proyecto de prueba unitaria C++** .
+      1. En el menú **Archivo**, seleccione **Nuevo**, **Proyecto**, **Visual C++, Prueba**, **Proyecto de prueba unitaria C++**.
 
-  2. En el Explorador de soluciones, en el menú contextual del proyecto de prueba, seleccione **Referencias**. Se abrirá la ventana de propiedades del proyecto.
+  2. En Explorador de soluciones, en el menú contextual del proyecto de prueba, elija **referencias**. Se abrirá la ventana de propiedades del proyecto.
 
   3. Seleccione **Propiedades comunes**, **Marco de trabajo y referencias** y después haga clic en el botón **Agregar nueva referencia**.
 
   4. Seleccione **Proyectos** y, después, el proyecto que se va a probar.
 
-       Elija el botón de **Agregar** .
+       Elija el botón **Agregar**.
 
   5. En las propiedades del proyecto de prueba, agregue la ubicación del proyecto en pruebas a los directorios de archivos de inclusión.
 
-       Seleccione **Propiedades de configuración**, **Directorios de VC++** , **Directorios de archivos de inclusión**.
+       Seleccione **Propiedades de configuración**, **Directorios de VC++**, **Directorios de archivos de inclusión**.
 
        Elija **Editar** y agregue el directorio del encabezado del proyecto en pruebas.
 
   Vaya a [Escritura de las pruebas unitarias](#addTests).
 
-### <a name="objectRef"></a> Para vincular las pruebas a los archivos de biblioteca u objeto
+### <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="objectRef"></a> Para vincular las pruebas a los archivos de biblioteca u objeto
 
 - Si el código en pruebas no exporta las funciones que quiere probar, puede agregar el archivo de salida **.obj** o **.lib** a las dependencias del proyecto de prueba.
 
   1. Cree un proyecto de prueba C++.
 
-      1. En el menú **Archivo**, seleccione **Nuevo**, **Proyecto**, **Visual C++, Prueba**, **Proyecto de prueba unitaria C++** .
+      1. En el menú **Archivo**, seleccione **Nuevo**, **Proyecto**, **Visual C++, Prueba**, **Proyecto de prueba unitaria C++**.
 
   2. En el Explorador de soluciones, en el menú contextual del proyecto de prueba, seleccione **Propiedades**. Se abrirá la ventana de propiedades del proyecto.
 
@@ -103,34 +103,34 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
 
        Seleccione **Editar** y agregue la ruta del directorio de los archivos **.obj** o **.lib**. La ruta de acceso está normalmente dentro de la carpeta de compilación del proyecto en pruebas.
 
-  5. Seleccione **Propiedades de configuración**, **Directorios de VC++** , **Directorios de archivos de inclusión**.
+  5. Seleccione **Propiedades de configuración**, **Directorios de VC++**, **Directorios de archivos de inclusión**.
 
        Elija **Editar** y agregue el directorio del encabezado del proyecto en pruebas.
 
   Vaya a [Escritura de las pruebas unitarias](#addTests).
 
-### <a name="sameProject"></a> Para agregar pruebas unitarias en el mismo proyecto
+### <a name="to-add-unit-tests-in-the-same-project"></a><a name="sameProject"></a> Para agregar pruebas unitarias en el mismo proyecto
 
 1. Modifique las propiedades del proyecto de código del producto para incluir los encabezados y los archivos de biblioteca que se requieren para pruebas unitarias.
 
    1. En el Explorador de soluciones, en el acceso directo del proyecto en pruebas, elija Propiedades. Se abrirá la ventana de propiedades del proyecto.
 
-   2. Seleccione **Propiedades de configuración**, **Directorios de VC++** .
+   2. Seleccione **Propiedades de configuración**, **Directorios de VC++**.
 
    3. Edite los directorios de inclusión y de biblioteca:
 
-       |||
+       |Propiedad|Valor|
        |-|-|
        |**Directorios de archivos de inclusión**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Directorios de archivos de bibliotecas**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. Agregue el archivo de prueba unitaria de C++:
 
-   - En el Explorador de soluciones, en el acceso directo del proyecto, seleccione **Agregar**, **Nuevo elemento** y **Pruebas unitarias de C++** .
+   - En el Explorador de soluciones, en el acceso directo del proyecto, seleccione **Agregar**, **Nuevo elemento** y **Pruebas unitarias de C++**.
 
    Vaya a [Escritura de las pruebas unitarias](#addTests).
 
-## <a name="addTests"></a> Escritura de las pruebas unitarias
+## <a name="writing-the-unit-tests"></a><a name="addTests"></a> Escritura de las pruebas unitarias
 
 1. En cada archivo de código de prueba unitaria, agregue un fragmento `#include` para los encabezados de proyecto en pruebas.
 
@@ -160,6 +160,6 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
 
 1. En el menú **Ver** , elija **Otras ventanas**, **Explorador de pruebas**.
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el explorador de pruebas, elija **ejecutar todo**.
 
    Para más información, vea [Inicio rápido: Desarrollo basado en pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md).

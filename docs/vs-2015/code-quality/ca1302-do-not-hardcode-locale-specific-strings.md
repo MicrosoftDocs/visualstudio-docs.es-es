@@ -15,39 +15,39 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6e16fff154b5c0df660b06e5bf9e9e838762adff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18da0471b1ac62f0e61b303c60b46c15cdc2e428
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661474"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539014"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: No codificar las cadenas específicas de configuración regional
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |Identificador de comprobación|CA1302|
 |Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método utiliza un literal de cadena que representa parte de la ruta de acceso de ciertas carpetas del sistema.
 
 ## <a name="rule-description"></a>Descripción de la regla
- La enumeración <xref:System.Environment.SpecialFolder?displayProperty=fullName> contiene miembros que hacen referencia a carpetas especiales del sistema. Las ubicaciones de estas carpetas pueden tener valores diferentes en distintos sistemas operativos, el usuario puede cambiar algunas de las ubicaciones y se localizan las ubicaciones. Un ejemplo de una carpeta especial es la carpeta del sistema, que es "C:\WINDOWS\system32" en [!INCLUDE[winxp](../includes/winxp-md.md)] pero "C:\WINNT\system32" en [!INCLUDE[win2kfamily](../includes/win2kfamily-md.md)]. El método <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> devuelve las ubicaciones que están asociadas a la enumeración <xref:System.Environment.SpecialFolder>. Las ubicaciones devueltas por <xref:System.Environment.GetFolderPath%2A> están localizadas y adecuadas para el equipo que se está ejecutando actualmente.
+ La <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumeración contiene miembros que hacen referencia a carpetas especiales del sistema. Las ubicaciones de estas carpetas pueden tener valores diferentes en distintos sistemas operativos, el usuario puede cambiar algunas de las ubicaciones y se localizan las ubicaciones. Un ejemplo de una carpeta especial es la carpeta del sistema, que es "C:\WINDOWS\system32" en, [!INCLUDE[winxp](../includes/winxp-md.md)] pero "C:\winnt\system32" en [!INCLUDE[win2kfamily](../includes/win2kfamily-md.md)] . El <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> método devuelve las ubicaciones que están asociadas a la <xref:System.Environment.SpecialFolder> enumeración. Las ubicaciones devueltas por <xref:System.Environment.GetFolderPath%2A> se localizan y son adecuadas para el equipo que se está ejecutando actualmente.
 
- Esta regla acorta las rutas de carpeta que se recuperan mediante el método <xref:System.Environment.GetFolderPath%2A> en niveles de directorio independientes. Cada literal de cadena se compara con los tokens. Si se encuentra una coincidencia, se supone que el método está compilando una cadena que hace referencia a la ubicación del sistema asociada al token. Para la portabilidad y la localizabilidad, utilice el método <xref:System.Environment.GetFolderPath%2A> para recuperar las ubicaciones de las carpetas especiales del sistema en lugar de utilizar literales de cadena.
+ Esta regla acorta las rutas de acceso de carpetas que se recuperan mediante el <xref:System.Environment.GetFolderPath%2A> método en niveles de directorio independientes. Cada literal de cadena se compara con los tokens. Si se encuentra una coincidencia, se supone que el método está compilando una cadena que hace referencia a la ubicación del sistema asociada al token. Para la portabilidad y la localizabilidad, utilice el <xref:System.Environment.GetFolderPath%2A> método para recuperar las ubicaciones de las carpetas especiales del sistema en lugar de utilizar literales de cadena.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, recupere la ubicación mediante el método <xref:System.Environment.GetFolderPath%2A>.
+ Para corregir una infracción de esta regla, recupere la ubicación mediante el <xref:System.Environment.GetFolderPath%2A> método.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si el literal de cadena no se utiliza para hacer referencia a una de las ubicaciones del sistema asociadas a la enumeración de <xref:System.Environment.SpecialFolder>.
+ Es seguro suprimir una advertencia de esta regla si el literal de cadena no se utiliza para hacer referencia a una de las ubicaciones del sistema asociadas a la <xref:System.Environment.SpecialFolder> enumeración.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se crea la ruta de acceso de la carpeta de datos de la aplicación común, que genera tres advertencias de esta regla. A continuación, en el ejemplo se recupera la ruta de acceso mediante el método <xref:System.Environment.GetFolderPath%2A>.
+ En el ejemplo siguiente se crea la ruta de acceso de la carpeta de datos de la aplicación común, que genera tres advertencias de esta regla. A continuación, en el ejemplo se recupera la ruta de acceso mediante el <xref:System.Environment.GetFolderPath%2A> método.
 
  [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/cs/FxCop.Globalization.HardcodedLocaleStrings.cs#1)]
  [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/vb/FxCop.Globalization.HardcodedLocaleStrings.vb#1)]

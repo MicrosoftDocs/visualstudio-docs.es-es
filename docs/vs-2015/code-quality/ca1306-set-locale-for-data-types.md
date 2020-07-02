@@ -25,11 +25,11 @@ ms.locfileid: "85539027"
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Establecer configuración regional de tipos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |Identificador de comprobación|CA1306|
-|Category|Microsoft. Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

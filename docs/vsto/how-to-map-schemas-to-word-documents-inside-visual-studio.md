@@ -63,6 +63,6 @@ ms.locfileid: "85538156"
 
 10. Arrastre los elementos desde la ventana **estructura XML** hasta los lugares del documento donde desea que se creen los controles correspondientes.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Cómo: asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

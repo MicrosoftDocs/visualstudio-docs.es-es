@@ -25,11 +25,11 @@ ms.locfileid: "85539196"
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Especificar MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |Identificador de comprobación|CA1300|
-|Category|Microsoft. Globalization|
+|Categoría|Microsoft. Globalization|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

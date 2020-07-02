@@ -25,11 +25,11 @@ ms.locfileid: "85538806"
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Invalidar el método GetHashCode al invalidar el método Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |Identificador de comprobación|CA2218|
-|Category|Microsoft. Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa
@@ -101,7 +101,7 @@ ms.locfileid: "85538806"
 
  [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

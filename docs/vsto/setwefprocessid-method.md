@@ -1,7 +1,7 @@
 ---
-title: SetWefProcessId (método)
+title: Método Setwefprocessid (
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -10,15 +10,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1352ccc9318061be4a2f9ad2da7d63715acd6721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85537337"
 ---
-# <a name="setwefprocessid-method"></a>SetWefProcessId (método)
-  Proporciona el identificador de proceso que se ejecutará el contenido del marco de trabajo de extensiones de Web (WEF).
+# <a name="setwefprocessid-method"></a>Método Setwefprocessid (
+  Proporciona el identificador de proceso que ejecutará el contenido del marco de extensiones web (WEF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,12 +32,12 @@ HRESULT SetWefProcessId(
 
 |Parámetro|Descripción|
 |---------------|-----------------|
-|*dwProcessId*|El identificador de proceso que se usará para ejecutar el contenido de WCF.|
+|*dwProcessId*|El identificador de proceso que se usará para ejecutar el contenido de WEF.|
 
 ## <a name="return-value"></a>Valor devuelto
  Un valor HRESULT que indica si el método se ha completado correctamente.
 
 ## <a name="remarks"></a>Comentarios
- Este método debe llamarse una vez creado el proceso de contenido de WEF pero antes de que se ejecuta cualquier contenido de WCF.
+ Se debe llamar a este método después de crear el proceso de contenido de WEF, pero antes de que se ejecute cualquier contenido de WEF.
 
- Si desea que el entorno de desarrollo para adjuntar a un depurador al proceso de contenido de WCF, el entorno debe realizar esta operación en la implementación de este método.
+ Si desea que el entorno de desarrollo asocie un depurador al proceso de contenido de WEF, el entorno debe realizar esta operación en la implementación de este método.

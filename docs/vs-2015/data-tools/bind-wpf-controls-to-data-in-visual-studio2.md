@@ -1,5 +1,5 @@
 ---
-title: Enlazar controles WPF a datos | Microsoft Docs
+title: Enlazar controles de WPF a datos (parte 2) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -22,19 +22,19 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f99c9a9ecbb18155ea8cd1197b94a7b383a80a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662500"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540093"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] enlazados a datos mediante la ventana **orígenes de datos** . En primer lugar, agregue un origen de datos a la ventana **orígenes de datos** . A continuación, arrastre los elementos desde la ventana **orígenes de datos** hasta**WPF Designer**.
+Puede crear controles enlazados a datos mediante [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] la ventana **orígenes de datos** . En primer lugar, agregue un origen de datos a la ventana **orígenes de datos** . A continuación, arrastre los elementos desde la ventana **orígenes de datos** hasta**WPF Designer**.
 
-## <a name="adding"></a>Agregar un origen de datos a la ventana orígenes de datos
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>Agregar un origen de datos a la ventana orígenes de datos
  Para poder crear controles enlazados a datos, primero debe agregar un origen de datos a la ventana **orígenes de datos** .
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>Para agregar un origen de datos a la ventana Orígenes de datos
@@ -53,8 +53,8 @@ Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharpt
 
     - [Enlazar datos a controles existentes en el diseñador](#existing).
 
-## <a name="simple"></a>Crear un control enlazado a un único campo de datos
- Después de agregar un origen de datos a la ventana **orígenes de datos** , puede crear un nuevo control enlazado a datos que muestre un solo campo de datos, como un <xref:System.Windows.Controls.ComboBox> o <xref:System.Windows.Controls.TextBox>.
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>Crear un control enlazado a un único campo de datos
+ Después de agregar un origen de datos a la ventana **orígenes de datos** , puede crear un nuevo control enlazado a datos que muestre un solo campo de datos, como <xref:System.Windows.Controls.ComboBox> o <xref:System.Windows.Controls.TextBox> .
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Para crear un control enlazado a un único campo de datos
 
@@ -66,10 +66,10 @@ Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharpt
 
 3. Arrastre el elemento hasta un contenedor válido en el diseñador. Para obtener más información sobre los contenedores válidos, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea el nuevo control enlazado a datos y un <xref:System.Windows.Controls.Label> titulado correctamente en el contenedor. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también genera código [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crea el nuevo control enlazado a datos y un denominado adecuadamente <xref:System.Windows.Controls.Label> en el contenedor. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]también genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="complex"></a>Crear un control enlazado a varios campos de datos
- Después de agregar un origen de datos a la ventana **orígenes de datos** , puede crear un nuevo control enlazado a datos que muestre varios campos de datos, como un <xref:System.Windows.Controls.DataGrid> o <xref:System.Windows.Controls.ListView>.
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>Crear un control enlazado a varios campos de datos
+ Después de agregar un origen de datos a la ventana **orígenes de datos** , puede crear un nuevo control enlazado a datos que muestre varios campos de datos, como <xref:System.Windows.Controls.DataGrid> o <xref:System.Windows.Controls.ListView> .
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Para crear un control enlazado a varios campos de datos
 
@@ -84,9 +84,9 @@ Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharpt
 
 3. Arrastre el elemento hasta un contenedor válido en el diseñador, como <xref:System.Windows.Controls.Grid>. Para obtener más información sobre los contenedores válidos, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea el nuevo control enlazado a datos en el contenedor. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también genera código [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crea el nuevo control enlazado a datos en el contenedor. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]también genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="details"></a>Crear un conjunto de controles enlazados a varios campos de datos
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>Crear un conjunto de controles enlazados a varios campos de datos
  Después de agregar un origen de datos a la ventana **orígenes de datos** , puede enlazar una tabla de datos o un objeto a un conjunto de controles. Se crea un control diferente para cada columna o propiedad de la tabla u objeto.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Para crear un conjunto de controles enlazados a varios campos de datos
@@ -100,9 +100,9 @@ Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharpt
 
 3. Arrastre el elemento hasta un contenedor válido en el diseñador, como <xref:System.Windows.Controls.Grid>. Para obtener más información sobre los contenedores válidos, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea los nuevos controles enlazados a datos en el contenedor. Cada control se enlaza a una columna o propiedad diferente, y está acompañado por un control adecuadamente titulado <xref:System.Windows.Controls.Label>. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también genera código [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar los controles a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crea los nuevos controles enlazados a datos en el contenedor. Cada control se enlaza a una columna o propiedad diferente, y está acompañado por un control adecuadamente titulado <xref:System.Windows.Controls.Label>. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]también genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar los controles a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="existing"></a>Binddata a los controles existentes en el diseñador
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>Binddata a los controles existentes en el diseñador
  Después de agregar un origen de datos a la ventana **orígenes de datos** , puede Agregar un enlace de datos a un control existente en el diseñador.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>Para enlazar los datos a un control existente en el diseñador
@@ -115,10 +115,10 @@ Puede crear controles de [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharpt
 
 2. Arrastre el elemento seleccionado desde la ventana **orígenes de datos** hasta un control existente en el diseñador. El control debe ser un destino de colocación válido. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, vea [enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
     > Si el control ya está enlazado a datos, el enlace de datos del control se restablece en el elemento que se arrastró hasta el control en último término.
 
-## <a name="see-also"></a>Vea también
- [Enlazar controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md) [enlazar controles WPF a un conjunto](../data-tools/bind-wpf-controls-to-a-dataset.md) de [datos enlazar controles de WPF a un](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) tutorial de servicio de datos de WCF [: Mostrar datos relacionados en una aplicación WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>Consulte también
+ [Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md) [enlazar controles WPF a un conjunto](../data-tools/bind-wpf-controls-to-a-dataset.md) de [datos enlazar controles de WPF a un servicio de datos de WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

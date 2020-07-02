@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29cc322dd59dc0de66af8f92a46524d15b0022c7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653823"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85539586"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Los tipos titulares estáticos no deben tener constructores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |Identificador de comprobación|CA1053|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo público o público anidado declara sólo miembros estáticos y tiene un constructor predeterminado público o protegido.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -48,6 +48,6 @@ ms.locfileid: "72653823"
  No suprima las advertencias de esta regla. La presencia del constructor sugiere que el tipo no es un tipo estático.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe esta regla. Observe que no hay ningún constructor predeterminado en el código fuente. Cuando este código se compila en un ensamblado, C# el compilador insertará un constructor predeterminado, que infringirá esta regla. Para corregirlo, declare un constructor privado.
+ En el ejemplo siguiente se muestra un tipo que infringe esta regla. Observe que no hay ningún constructor predeterminado en el código fuente. Cuando este código se compila en un ensamblado, el compilador de C# insertará un constructor predeterminado, que infringirá esta regla. Para corregirlo, declare un constructor privado.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

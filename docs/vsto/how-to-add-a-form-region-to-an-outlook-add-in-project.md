@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar un área de formulario a un proyecto de complemento de Outlook
+title: 'Cómo: agregar un área de formulario a un proyecto de complemento de Outlook'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
 - VSTO.NewFormRegionWizard.Page3
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1a9c9201050bf4ccb3bd6beb2ada837c2b808b4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255964"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85538403"
 ---
-# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procedimiento Agregar un área de formulario a un proyecto de complemento de Outlook
+# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Cómo: agregar un área de formulario a un proyecto de complemento de Outlook
   Crear un área de formulario para extender un formulario de Microsoft Office Outlook estándar o personalizado, mediante el asistente **Nueva área de formulario de Outlook** . Puede crear una nueva área de formulario y diseñar la interfaz de usuario en Visual Studio, o puede importar un área de formulario diseñada en Outlook y agregar el código de Visual Basic o C#.
 
  Si ha usado un área de formulario de Outlook en otro proyecto de Outlook, puede volver a usarla en el proyecto de complemento de VSTO de Outlook actual mediante el cuadro de diálogo **Agregar elemento existente** . Para obtener más información, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
@@ -33,7 +33,7 @@ ms.locfileid: "71255964"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Agregar un área de formulario nueva a un proyecto de Outlook
 
-1. En primer lugar, abra o cree un proyecto de complemento VSTO de Outlook en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: Cree proyectos de Office en Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. En primer lugar, abra o cree un proyecto de complemento VSTO de Outlook en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. En el **Explorador de soluciones**, seleccione el nodo de proyecto del complemento VSTO de Outlook.
 
@@ -48,7 +48,7 @@ ms.locfileid: "71255964"
 6. En la página **Seleccione cómo desea crear el área de formulario** , seleccione si desea diseñar el área de formulario; para hacer esto, debe arrastrar los controles administrados a un diseñador visual o importar un área de formulario diseñada en Outlook.
 
     > [!NOTE]
-    > Si decide importar un área de formulario diseñada en Outlook, debe especificar la ubicación de un archivo de almacenamiento de formularios de Outlook ( *. OFS*). Recuerde que no puede agregar controles administrados a un área de formulario que haya diseñado en Outlook; solo puede agregar el código subyacente de la interfaz de usuario. Para obtener más información, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
+    > Si decide importar un área de formulario diseñada en Outlook, debe especificar la ubicación de un archivo de almacenamiento de formularios de Outlook (*. OFS*). Recuerde que no puede agregar controles administrados a un área de formulario que haya diseñado en Outlook; solo puede agregar el código subyacente de la interfaz de usuario. Para obtener más información, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
 7. En la página **Seleccione el tipo de área de formulario que desea crear** , revise los tipos de área de formulario y seleccione el que más le convenga; a continuación, haga clic en **Siguiente**. Para obtener más información sobre los tipos de áreas de formulario, consulte [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "71255964"
 
      Todos los tipos de área de formulario pueden aparecer en los inspectores, en el modo de creación (para crear elementos) y en el modo de lectura (para ver elementos). Asimismo, en el panel de lectura también pueden aparecer los tipos de áreas de formulario Adyacente, Reemplazo y Reemplazo total.
 
-10. Haga clic en **Siguiente**.
+10. Haga clic en **Next**.
 
 11. En la página **Identifique las clases de mensaje que mostrarán esta área de formulario** , seleccione las clases de mensaje estándar de Outlook que desee o escriba los nombres de una o más clases de mensaje personalizadas; a continuación, haga clic en **Finalizar**. Para obtener más información, vea [asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
@@ -69,6 +69,6 @@ ms.locfileid: "71255964"
 - [Soluciones de Outlook](../vsto/outlook-solutions.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
 - [Directrices para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Tutorial: importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
 - [Acciones personalizadas en áreas de formulario de Outlook](../vsto/custom-actions-in-outlook-form-regions.md)

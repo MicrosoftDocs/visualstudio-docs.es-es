@@ -25,11 +25,11 @@ ms.locfileid: "85538663"
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |Identificador de comprobación|CA2118|
-|Category|Microsoft.Security|
+|Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

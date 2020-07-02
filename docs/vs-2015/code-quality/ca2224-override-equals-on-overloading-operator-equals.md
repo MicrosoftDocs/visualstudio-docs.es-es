@@ -26,11 +26,11 @@ ms.locfileid: "85538641"
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Invalidar Equals al sobrecargar operadores de igualdad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |Identificador de comprobación|CA2224|
-|Category|Microsoft. Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

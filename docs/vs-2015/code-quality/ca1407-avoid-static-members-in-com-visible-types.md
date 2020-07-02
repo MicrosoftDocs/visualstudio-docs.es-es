@@ -25,11 +25,11 @@ ms.locfileid: "85538858"
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitar los miembros estáticos en tipos visibles a través de COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |Identificador de comprobación|CA1407|
-|Category|Microsoft. Interoperability|
+|Categoría|Microsoft. Interoperability|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa
