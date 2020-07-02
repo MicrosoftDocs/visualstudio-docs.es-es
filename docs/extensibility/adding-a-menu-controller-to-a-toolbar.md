@@ -1,7 +1,7 @@
 ---
-title: Adición de un controlador de menú a una barra de herramientas . Microsoft Docs
+title: Agregar un controlador de menú a una barra de herramientas | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -12,34 +12,34 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4dcb9e51f6633476a8f0eadea30da513e5ef760
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740320"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903524"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Agregar un controlador de menú a una barra de herramientas
-Este tutorial se basa en el agregar una barra de [herramientas a una ventana](../extensibility/adding-a-toolbar-to-a-tool-window.md) de herramientas tutorial y muestra cómo agregar un controlador de menú a la barra de herramientas de la ventana de herramientas. Los pasos que se muestran aquí también se pueden aplicar a la barra de herramientas que se crea en el tutorial Agregar una barra de [herramientas.](../extensibility/adding-a-toolbar.md)
+Este tutorial se basa en el tutorial [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) y muestra cómo agregar un controlador de menú a la barra de herramientas de la ventana de herramientas. Los pasos que se muestran aquí también se pueden aplicar a la barra de herramientas que se crea en el tutorial [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) .
 
-Un controlador de menú es un control dividido. El lado izquierdo del controlador de menú muestra el último comando utilizado y puede ejecutarlo haciendo clic en él. El lado derecho del controlador de menú es una flecha que, al hacer clic, abre una lista de comandos adicionales. Al hacer clic en un comando de la lista, el comando se ejecuta y reemplaza el comando en el lado izquierdo del controlador de menú. De esta manera, el controlador de menú funciona como un botón de comando que siempre muestra el último comando utilizado de una lista.
+Un controlador de menú es un control dividido. En el lado izquierdo del controlador de menú se muestra el comando que se utilizó por última vez y se puede ejecutar haciendo clic en él. El lado derecho del controlador de menú es una flecha que, cuando se hace clic en él, abre una lista de comandos adicionales. Al hacer clic en un comando de la lista, el comando se ejecuta y reemplaza el comando en el lado izquierdo del controlador de menús. De esta manera, el controlador de menú funciona como un botón de comando que siempre muestra el último comando usado de una lista.
 
-Los controladores de menú pueden aparecer en los menús, pero se utilizan con mayor frecuencia en las barras de herramientas.
+Los controladores de menú pueden aparecer en los menús, pero se utilizan con más frecuencia en las barras de herramientas.
 
-## <a name="prerequisites"></a>Prerrequisitos
-A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en la configuración de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [Instalar el SDK](../extensibility/installing-the-visual-studio-sdk.md)de Visual Studio .
+## <a name="prerequisites"></a>Requisitos previos
+A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-controller"></a>Crear un controlador de menú
 
-1. Siga los procedimientos descritos en Agregar una barra de [herramientas a una ventana](../extensibility/adding-a-toolbar-to-a-tool-window.md) de herramientas para crear una ventana de herramientas que tenga una barra de herramientas.
+1. Siga los procedimientos descritos en [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) para crear una ventana de herramientas con una barra de herramientas.
 
-2. En *TWTestCommandPackage.vsct*, vaya a la sección Símbolos. En el guidSymbol elemento denominado **guidTWTestCommandPackageCmdSet**, declare el controlador de menú, grupo de controladores de menú y tres elementos de menú.
+2. En *TWTestCommandPackage. Vsct*, vaya a la sección símbolos. En el elemento GuidSymbol denominado **guidTWTestCommandPackageCmdSet**, declare el controlador de menú, el grupo de controladores de menús y tres elementos de menú.
 
     ```xml
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />
     ```
 
-3. En la sección Menús, después de la última entrada de menú, defina el controlador de menú como un menú.
+3. En la sección menús, después de la última entrada de menú, defina el controlador de menú como un menú.
 
     ```xml
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">
@@ -54,9 +54,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     </Menu>
     ```
 
-    Las `TextChanges` `TextIsAnchorCommand` marcas y deben incluirse para permitir que el controlador de menú refleje el último comando seleccionado.
+    Las `TextChanges` `TextIsAnchorCommand` marcas y deben estar incluidas para permitir que el controlador de menú refleje el último comando seleccionado.
 
-4. En la sección Grupos, después de la última entrada de grupo, agregue el grupo de controladores de menú.
+4. En la sección grupos, después de la última entrada de grupo, agregue el grupo de controladores de menús.
 
     ```xml
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">
@@ -64,9 +64,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     </Group>
     ```
 
-    Al establecer el controlador de menú como el principal, los comandos colocados en este grupo aparecen en el controlador de menú. Se `priority` omite el atributo, que lo establece en el valor predeterminado de 0, porque es el único grupo en el controlador de menú.
+    Al establecer el controlador de menú como primario, los comandos colocados en este grupo aparecen en el controlador de menús. `priority`Se omite el atributo, que lo establece en el valor predeterminado de 0, porque es el único grupo del controlador de menús.
 
-5. En la sección Botones, después de la última entrada de botón, agregue un elemento Button para cada uno de los elementos de menú.
+5. En la sección botones, después de la última entrada del botón, agregue un elemento botón para cada uno de los elementos de menú.
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">
@@ -98,19 +98,19 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     </Button>
     ```
 
-6. En este punto, puede mirar el controlador de menú. Compile la solución y comience la depuración. Debería ver la instancia experimental.
+6. Llegados a este punto, puede ver el controlador de menús. Compile la solución y comience la depuración. Debería ver la instancia experimental.
 
-   1. En el menú **Ver / Otras ventanas** , abra **Test ToolWindow**.
+   1. En el menú **Ver/otras ventanas** , abra la ventana de la ventana de **prueba**.
 
    2. El controlador de menú aparece en la barra de herramientas de la ventana de herramientas.
 
-   3. Haga clic en la flecha en el lado derecho del controlador de menú para ver los tres comandos posibles.
+   3. Haga clic en la flecha situada en el lado derecho del controlador de menú para ver los tres comandos posibles.
 
       Tenga en cuenta que al hacer clic en un comando, el título del controlador de menú cambia para mostrar ese comando. En la siguiente sección, agregaremos el código para activar estos comandos.
 
 ## <a name="implement-the-menu-controller-commands"></a>Implementar los comandos del controlador de menú
 
-1. En *TWTestCommandPackageGuids.cs*, agregue los iDE de comando para los tres elementos de menú después de los ides de comando existentes.
+1. En *TWTestCommandPackageGuids.CS*, agregue los identificadores de comando para los tres elementos de menú después de los identificadores de comando existentes.
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -118,13 +118,13 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. En *TWTestCommand.cs*, agregue el siguiente `TWTestCommand` código en la parte superior de la clase.
+2. En *TWTestCommand.CS*, agregue el código siguiente en la parte superior de la `TWTestCommand` clase.
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command
     ```
 
-3. En el TWTestCommand constructor, después `AddCommand` de la última llamada al método, agregue código para enrutar los eventos de cada comando a través de los mismos controladores.
+3. En el constructor TWTestCommand, después de la última llamada al `AddCommand` método, agregue código para enrutar los eventos de cada comando a través de los mismos controladores.
 
     ```csharp
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=
@@ -145,7 +145,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
     }
     ```
 
-4. Agregue un controlador de eventos a la **clase TWTestCommand** para marcar el comando seleccionado como activado.
+4. Agregue un controlador de eventos a la clase **TWTestCommand** para marcar el comando seleccionado como activado.
 
     ```csharp
     private void OnMCItemQueryStatus(object sender, EventArgs e)
@@ -212,16 +212,16 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 1. Compile la solución y comience la depuración. Debería ver la instancia experimental.
 
-2. Abra la ventana **Probar ToolWindow** en el menú **Ver / Otras ventanas.**
+2. Abra la ventana de la ventana de **pruebas** en el menú **Ver/otras ventanas** .
 
-    El controlador de menú aparece en la barra de herramientas de la ventana de herramientas y muestra **EL elemento 1 de MC.**
+    El controlador de menú aparece en la barra de herramientas de la ventana de herramientas y muestra **MC elemento 1**.
 
-3. Haga clic en el botón del controlador de menú a la izquierda de la flecha.
+3. Haga clic en el botón controlador de menú situado a la izquierda de la flecha.
 
-    Debería ver tres elementos, el primero de los cuales está seleccionado y tiene un cuadro de resaltado alrededor de su icono. Haga clic en **MC Elemento 3**.
+    Debería ver tres elementos, el primero de los cuales está seleccionado y tiene un cuadro de resaltado alrededor de su icono. Haga clic en **MC Item 3**.
 
-    Aparece un cuadro de diálogo con el mensaje **Seleccionado Elemento 3**del controlador de menú . Observe que el mensaje corresponde al texto del botón del controlador de menú. El botón del controlador de menú ahora muestra **el elemento 3 de MC.**
+    Aparece un cuadro de diálogo con el mensaje **seleccionado elemento de controlador de menú 3**. Tenga en cuenta que el mensaje se corresponde con el texto del botón del controlador de menús. El botón controlador de menú muestra ahora **MC elemento 3**.
 
 ## <a name="see-also"></a>Vea también
-- [Adición de una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md)
-- [Adición de una barra de herramientas](../extensibility/adding-a-toolbar.md)
+- [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md)

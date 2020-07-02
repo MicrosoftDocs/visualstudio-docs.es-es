@@ -5,20 +5,20 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b43b16f46cc62b6c70460d79c194b5e0d2cfede0
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574848"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835282"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Lo usa el motor de lenguaje para delegar `IDebugCodeContext::GetSourceContext`.  
+Lo usa el motor de lenguaje para delegar `IDebugCodeContext::GetSourceContext` .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,7 +33,7 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parámetros  
  `dwSourceContext`  
- de El contenido de origen tal como se proporciona `ParseScriptText` o `AddScriptlet`.  
+ de El contenido de origen tal como se proporciona a `ParseScriptText` o `AddScriptlet` .  
   
  `uCharacterOffset`  
  de Desplazamiento de caracteres en relación con el inicio del bloque de script o el Scriptlet.  
@@ -49,10 +49,10 @@ HRESULT GetDocumentContextFromPosition(
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente.|  
+|`S_OK`|El método se ha llevado a cabo de forma correcta.|  
   
 ## <a name="remarks"></a>Comentarios  
- Los motores de lenguaje utilizan este método para delegar `IDebugCodeContext::GetSourceContext`.  
+ Los motores de lenguaje utilizan este método para delegar `IDebugCodeContext::GetSourceContext` .  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteDebug32 (Interfaz)](../../winscript/reference/iactivescriptsitedebug32-interface.md)

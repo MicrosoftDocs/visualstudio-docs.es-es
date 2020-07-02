@@ -5,17 +5,17 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 93c4a8fe6e5c2aac8b07f896810dcd03060b46d0
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0b82ab6cd37f789e98ca08c635011a7e04f5b871
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572200"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835633"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Devuelve el objeto de la aplicación de depuración asociado a este sitio de script.  
@@ -37,12 +37,12 @@ HRESULT GetApplication(
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente.|  
+|`S_OK`|El método se ha llevado a cabo de forma correcta.|  
 |`E_NOTIMPL`|El host no admite directamente la depuración.|  
   
 ## <a name="remarks"></a>Comentarios  
- El método `GetApplication` proporciona una forma para que un host inteligente defina el objeto de aplicación al que pertenece cada script. Los motores de script deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
+ El `GetApplication` método proporciona una forma para que un host inteligente defina el objeto de aplicación al que pertenece cada script. Los motores de script deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
   
 ## <a name="see-also"></a>Vea también  
- @No__t_1 de la [interfaz IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
+ [Interfaz IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

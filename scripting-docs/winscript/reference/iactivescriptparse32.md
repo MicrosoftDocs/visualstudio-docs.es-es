@@ -5,25 +5,25 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: c39c14aa-beb7-4eca-8b8c-2181da1c2e3e
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 568feacfe75de22a330c892a44fa4f4f6fd0e3b8
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009329"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835321"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
-Si la secuencia de comandos de Windows permite scriptlets de código de texto sin formato que se agregarán a la secuencia de comandos motor o texto de la expresión se evalúe en tiempo de ejecución, implementa el `IActiveScriptParse32` interfaz. Para los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IPersist*`) para obtener el código de script en el motor de scripting y adjuntar fragmentos de secuencias de comandos a varios objetos eventos.  
+Si el motor de Windows Script permite que los scriptlets de código de texto sin formato se agreguen al script o permite que el texto de la expresión se evalúe en tiempo de ejecución, implementa la `IActiveScriptParse32` interfaz. En el caso de los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, proporciona un mecanismo alternativo (distinto de `IPersist*` ) para obtener código de script en el motor de scripting y para adjuntar fragmentos de scripts a varios eventos de objeto.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptParse32::AddScriptlet](../../winscript/reference/iactivescriptparse32-addscriptlet.md)|Agrega un scriptlet de código a la secuencia de comandos.|  
+|[IActiveScriptParse32::AddScriptlet](../../winscript/reference/iactivescriptparse32-addscriptlet.md)|Agrega un Scriptlet de código al script.|  
 |[IActiveScriptParse32::InitNew](../../winscript/reference/iactivescriptparse32-initnew.md)|Inicializa el motor de scripting.|  
-|[IActiveScriptParse32::ParseScriptText](../../winscript/reference/iactivescriptparse32-parsescripttext.md)|Analiza el scriptlet de código dado, agregando declaraciones en el espacio de nombres y evaluando código según corresponda.|
+|[IActiveScriptParse32::ParseScriptText](../../winscript/reference/iactivescriptparse32-parsescripttext.md)|Analiza el Scriptlet de código dado, agregando declaraciones en el espacio de nombres y evaluando el código según corresponda.|
