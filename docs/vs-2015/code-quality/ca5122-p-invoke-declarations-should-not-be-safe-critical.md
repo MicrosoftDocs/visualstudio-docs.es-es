@@ -9,24 +9,24 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5d064f3d2bb382f1131d4e2365077f3db0b2e0ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6a6ee7796ae437b564f6826376219291143e449
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669038"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545098"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: Las declaraciones P/Invoke no deben ser críticas para la seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
 |Identificador de comprobación|CA5122|
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una declaración P/Invoke se ha marcado con <xref:System.Security.SecuritySafeCriticalAttribute>:
 
 ```csharp

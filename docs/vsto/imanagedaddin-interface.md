@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Este CLSID también se usa en *VSTOLoader.dll* en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Por lo tanto, si usa IManagedAddin para crear su propio componente de tiempo de ejecución y cargador de complementos de VSTO, no podrá implementar el componente en equipos que ejecuten complementos de VSTO que se basen en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Referencia de la API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

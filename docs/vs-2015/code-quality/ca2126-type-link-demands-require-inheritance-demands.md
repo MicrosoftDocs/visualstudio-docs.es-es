@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7bc7c9639d12cc6981c91320104a1565bb1f94e9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 051a041c245fae55e3d4759130c145c662734aa8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609034"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544279"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Las peticiones de vínculos de tipos requieren peticiones de herencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |Identificador de comprobación|CA2126|
 |Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo público no sellado está protegido con una petición de vínculo, tiene un método reemplazable y ni el tipo ni el método están protegidos con una petición de herencia.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -54,11 +54,11 @@ ms.locfileid: "72609034"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2108: Revisar la seguridad declarativa en los tipos de valores](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112: Los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: Los tipos seguros no deben exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
  [CA2122: No exponer indirectamente métodos con peticiones de vínculos](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Las peticiones de vínculo de invalidaciones deberían ser idénticas a la base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123: Las peticiones de vínculos de invalidaciones deben ser idénticas a la base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Instrucciones de codificación segura INSTRUCCIONES](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) de [herencia peticiones](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) de [vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [peticiones](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

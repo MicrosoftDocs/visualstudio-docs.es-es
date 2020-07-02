@@ -13,33 +13,33 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fcb38184a1d432ca036be88c4d957c0e4d4f419
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7ae2b836549918fa1179e4e70d51d760efbe2c35
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917159"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544929"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Tasa muy alta de contenciones de bloqueo
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frecuencia muy alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [DA0039: tasa muy alta de contenciones de bloqueo](/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions).  
   
-|||  
+|Elemento|Valor|  
 |-|-|  
-|Id. de regla|DA0039|  
+|Identificador de regla|DA0039|  
 |Categoría|Uso de .NET Framework|  
-|Métodos de generación de perfiles|Muestreo<br /><br /> Instrumentación<br /><br /> Memoria de .NET|  
-|Mensaje|Hay una frecuencia muy alta de contenciones de bloqueo de .NET. Ejecute un perfil de simultaneidad para investigar la razón de esta contención de bloqueo.|  
-|Tipo de regla|advertencia|  
+|Métodos de generación de perfiles|muestreo<br /><br /> Instrumentación<br /><br /> Memoria de .NET|  
+|Message|Hay una frecuencia muy alta de contenciones de bloqueo de .NET. Ejecute un perfil de simultaneidad para investigar la razón de esta contención de bloqueo.|  
+|Tipo de regla|Advertencia|  
   
  Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 25 ejemplos para activar esta regla.  
   
-## <a name="cause"></a>Motivo  
+## <a name="cause"></a>Causa  
  Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa excesivamente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de la contención.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- Los bloqueos se utilizan para proteger las secciones críticas de código que un subproceso debe ejecutar en serie a la vez en una aplicación con múltiples subprocesos. Common Language Run-time (CLR) de Microsoft .NET proporciona un conjunto completo de sincronización y primitivas de bloqueo. Por ejemplo, el lenguaje C# admite una instrucción de bloqueo (SyncLock en Visual Basic). Una aplicación administrada puede llamar a los métodos `Monitor.Enter` y `Monitor.Exit` en el espacio de nombres System. Threading para adquirir y liberar un bloqueo directamente. .NET Framework admite sincronización adicional y primitivas de bloqueo, incluidas las clases que admiten las exclusiones mutuas, ReaderWriterLock y semáforos. Para obtener más información, consulte [Información general sobre las primitivas de sincronización](https://msdn.microsoft.com/library/ms228964.aspx) en la Guía del desarrollador de .NET Framework en el sitio web de MSDN. Las clases de .NET Framework están superpuestas a los servicios de sincronización de nivel inferior integrados en el sistema operativo Windows. Estos incluyen objetos de sección crítica y muchas funciones de espera y señalización de eventos diferentes. Para obtener más información, consulte la sección [Sincronización](https://msdn.microsoft.com/library/ms686353.aspx) de Desarrollo para Win32 y COM en MSDN Library  
+ Los bloqueos se utilizan para proteger las secciones críticas de código que un subproceso debe ejecutar en serie a la vez en una aplicación con múltiples subprocesos. Common Language Run-time (CLR) de Microsoft .NET proporciona un conjunto completo de sincronización y primitivas de bloqueo. Por ejemplo, el lenguaje C# admite una instrucción de bloqueo (SyncLock en Visual Basic). Una aplicación administrada puede llamar a los `Monitor.Enter` métodos y del `Monitor.Exit` espacio de nombres System. Threading para adquirir y liberar un bloqueo directamente. .NET Framework admite sincronización adicional y primitivas de bloqueo, incluidas las clases que admiten las exclusiones mutuas, ReaderWriterLock y semáforos. Para obtener más información, consulte [Información general sobre las primitivas de sincronización](https://msdn.microsoft.com/library/ms228964.aspx) en la Guía del desarrollador de .NET Framework en el sitio web de MSDN. Las clases de .NET Framework están superpuestas a los servicios de sincronización de nivel inferior integrados en el sistema operativo Windows. Estos incluyen objetos de sección crítica y muchas funciones de espera y señalización de eventos diferentes. Para obtener más información, consulte la sección [Sincronización](https://msdn.microsoft.com/library/ms686353.aspx) de Desarrollo para Win32 y COM en MSDN Library  
   
  Subyacentes a las clases de .NET Framework y los objetos nativos de Windows que se usan para la sincronización y el bloqueo, se encuentran ubicaciones de memoria compartida que se deben cambiar mediante operaciones de bloqueo. Las operaciones de bloqueo utilizan instrucciones específicas del hardware que operan en ubicaciones de memoria compartida para cambiar su estado mediante operaciones atómicas. Se garantiza que las operaciones atómicas sean coherentes en todos los procesadores del equipo. Los bloqueos y WaitHandles son objetos .NET que utilizan automáticamente las operaciones de bloqueo cuando se establecen o restablecen. Puede haber otras estructuras de datos de memoria compartida en la aplicación que también requieran que utilice operaciones de bloqueo para que se actualicen de una manera segura para subprocesos. Para obtener más información, consulte [Operaciones de bloqueo](https://msdn.microsoft.com/library/sbhbke0y.aspx) en la sección de .NET Framework de MSND Library  
   

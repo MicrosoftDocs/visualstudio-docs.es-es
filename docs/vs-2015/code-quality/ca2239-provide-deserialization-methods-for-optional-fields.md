@@ -15,28 +15,28 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5604b697af1716e918f3a0f6d9a26ddbe70fc0b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672957"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545137"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Proporcionar métodos de deserialización para campos opcionales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |Identificador de comprobación|CA2239|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Un tipo tiene un campo que está marcado con el atributo <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> y el tipo no proporciona métodos de control de eventos de deserialización.
+## <a name="cause"></a>Causa
+ Un tipo tiene un campo que está marcado con el <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atributo y el tipo no proporciona métodos de control de eventos de deserialización.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El atributo <xref:System.Runtime.Serialization.OptionalFieldAttribute> no tiene ningún efecto en la serialización; se serializa un campo marcado con el atributo. Sin embargo, el campo se omite en la deserialización y conserva el valor predeterminado asociado a su tipo. Los controladores de eventos de deserialización se deben declarar para establecer el campo durante el proceso de deserialización.
+ El <xref:System.Runtime.Serialization.OptionalFieldAttribute> atributo no tiene ningún efecto en la serialización; se serializa un campo marcado con el atributo. Sin embargo, el campo se omite en la deserialización y conserva el valor predeterminado asociado a su tipo. Los controladores de eventos de deserialización se deben declarar para establecer el campo durante el proceso de deserialización.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, agregue métodos de control de eventos de deserialización al tipo.

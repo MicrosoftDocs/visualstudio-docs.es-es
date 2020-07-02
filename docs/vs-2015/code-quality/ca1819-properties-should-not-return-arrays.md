@@ -15,24 +15,24 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5c85efc3e601eb9e0d887043c50b30587e51321e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96d2164cbd6c03cb0d191b2d0c3c4607468209c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668376"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545332"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Las propiedades no deberían devolver matrices
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Las propiedades no deben devolver matrices
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |Identificador de comprobación|CA1819|
 |Categoría|Microsoft. performance|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una propiedad pública o protegida en un tipo público devuelve una matriz.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -42,7 +42,7 @@ ms.locfileid: "72668376"
  Para corregir una infracción de esta regla, convierta la propiedad en un método o cambie la propiedad para devolver una colección.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Los atributos pueden contener propiedades que devuelven matrices, pero no pueden contener propiedades que devuelven colecciones. Puede suprimir una advertencia que se genera para una propiedad de un atributo que se deriva de [System. Attribute] (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->las. De lo contrario, no suprima una advertencia de esta regla.
+ Los atributos pueden contener propiedades que devuelven matrices, pero no pueden contener propiedades que devuelven colecciones. Puede suprimir una advertencia que se genera para una propiedad de un atributo que se deriva de [System. Attribute] (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->). De lo contrario, no suprima una advertencia de esta regla.
 
 ## <a name="example-violation"></a>Ejemplo de infracción
 
@@ -70,7 +70,7 @@ ms.locfileid: "72668376"
 ### <a name="description"></a>Descripción
  En el ejemplo siguiente se corrige la infracción cambiando la propiedad para devolver un
 
- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>Operador
+ <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayFixedCollection/cs/FxCop.Performance.PropertyArrayFixedCollection.cs#1)]
@@ -86,7 +86,7 @@ ms.locfileid: "72668376"
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
 ### <a name="comments"></a>Comentarios
- En el ejemplo siguiente se corrige la infracción cambiando la propiedad para devolver un <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
+ En el ejemplo siguiente se corrige la infracción cambiando la propiedad para devolver <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName> .
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/cs/FxCop.Performance.PropertyModifyFixed.cs#1)]

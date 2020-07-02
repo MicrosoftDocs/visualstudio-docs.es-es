@@ -15,24 +15,24 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d23d9cc6006997c82451ac061e3ee0353e59b1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d39c8d9d09cf457738df87e3c2e6e109f7bc1696
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671495"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543863"
 ---
-# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar el exceso de variables locales
+# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar las variables locales excesivas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |Identificador de comprobación|CA1809|
 |Categoría|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un miembro contiene más de 64 variables locales, algunas de las cuales podrían ser generadas por el compilador.
 
 ## <a name="rule-description"></a>Descripción de la regla

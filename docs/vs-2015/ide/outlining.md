@@ -17,19 +17,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db619767725159900adf9b18075c45c020df888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670376"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544968"
 ---
-# <a name="outlining"></a>esquematizar
+# <a name="outlining"></a>Esquematización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más (+). Para expandir una región contraída hay que hacer clic en su signo más. (También puede presionar CTRL + M + M para contraer una región y después CTRL + M + M para expandirla de nuevo). También puede contraer una región de esquematización si hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
 
- Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Se puede cambiar en **Herramientas/Opciones/Entorno/Fuentes y colores/Región contraíble**.
+ Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Puede cambiarlo en **herramientas/opciones/entorno/fuentes y colores/región contraíble**.
 
  Al trabajar en código esquematizado, se pueden expandir las secciones en las que se desea trabajar, contraerlas cuando se haya terminado y desplazarse a otras secciones. Cuando no quiere que se muestre la esquematización, se puede usar el comando **Detener esquematización** para quitar la información de esquematización sin alterar el código subyacente.
 
@@ -38,9 +38,9 @@ Se puede ocultar algún código de la vista si se contrae una región de código
 > [!CAUTION]
 > Si se cambia una región esquematizada, se puede perder la esquematización. Por ejemplo, las eliminaciones o las operaciones Buscar y reemplazar pueden borrar el final de la región.
 
- El submenú **Edición/Esquematización** puede contener los comandos siguientes.
+ Los siguientes comandos se pueden encontrar en el submenú **Editar o esquematizar** .
 
-|||
+|Comando|Descripción|
 |-|-|
 |Ocultar selección|(CTRL + M, CTRL + O): contrae un bloque de código seleccionado que normalmente no estaría disponible para la esquematización, por ejemplo un bloque `if`. Para quitar la región personalizada, use **Detener ocultar actual** (o CTRL + M, CTRL + U). No está disponible en Visual Basic.|
 |Alternar expansión de esquematización|: invierte el estado oculto o expandido actual de la sección de esquematización más interna cuando el cursor se encuentra en una sección contraída anidada.|
@@ -48,7 +48,7 @@ Se puede ocultar algún código de la vista si se contrae una región de código
 |Detener esquematización|(CTRL + M, CTRL + D): quita toda la información de esquematización del documento completo.|
 |Detener ocultar actual|(CTRL + M, CTRL + U): quita la información de esquematización para la región definida por el usuario que está seleccionada actualmente. No está disponible en Visual Basic.|
 |Contraer a definiciones|(CTRL + M, CTRL + N): contrae los miembros de todos los tipos.|
-|Contraer bloque:\<límite lógico>|(Visual C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
-|Contraer todo el contenido de: \<estructuras lógicas>|(Visual C++) Contrae todas las estructuras dentro de la función.|
+|Contraer bloque:\<logical boundary>|(Visual C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
+|Contraer todo en:\<logical structures>|(Visual C++) Contrae todas las estructuras dentro de la función.|
 
  También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: esquematización](../extensibility/walkthrough-outlining.md).

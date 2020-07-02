@@ -15,24 +15,24 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8e267b1e6203759efc91936a3b13059368a3862
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603066"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545397"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Los tipos no deben ampliar ciertos tipos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |Identificador de comprobación|CA1058|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica los tipos que se derivan de los siguientes tipos:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
@@ -52,7 +52,7 @@ ms.locfileid: "72603066"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descripción de la regla
- En [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versión 1, se recomienda derivar nuevas excepciones de <xref:System.ApplicationException>. La recomendación ha cambiado y las nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o de una de sus subclases en el espacio de nombres <xref:System>.
+ En el caso de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versión 1, se recomienda derivar nuevas excepciones de <xref:System.ApplicationException> . La recomendación ha cambiado y las nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o de una de sus subclases en el <xref:System> espacio de nombres.
 
  No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un modelo de objetos o un origen de datos subyacente.
 
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Para corregir una infracción de esta regla, derive el tipo de un tipo base diferente o una colección genérica.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima una advertencia de esta regla para infracciones sobre <xref:System.ApplicationException>. Es seguro suprimir una advertencia de esta regla para las infracciones de <xref:System.Xml.XmlDocument>. Es seguro suprimir una advertencia sobre una colección no genérica si el código se liberó previamente.
+ No suprima una advertencia de esta regla para infracciones sobre <xref:System.ApplicationException> . Es seguro suprimir una advertencia de esta regla para infracciones sobre <xref:System.Xml.XmlDocument> . Es seguro suprimir una advertencia sobre una colección no genérica si el código se liberó previamente.

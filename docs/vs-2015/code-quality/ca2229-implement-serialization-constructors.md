@@ -15,34 +15,34 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 56d53717afc8cd966903e75f77e1745de0031745
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba654496d80654f0d9790a01bbc41326f7a5f13e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662846"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540496"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementar constructores de serialización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|ImplementSerializationConstructors|
 |Identificador de comprobación|CA2229|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- El tipo implementa la interfaz <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, no es un delegado o una interfaz, y se cumple una de las condiciones siguientes:
+## <a name="cause"></a>Causa
+ El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o una interfaz, y una de las siguientes condiciones es verdadera:
 
-- El tipo no tiene un constructor que tome un objeto <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> y un objeto <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (la firma del constructor de serialización).
+- El tipo no tiene un constructor que tome un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización).
 
 - El tipo no está sellado y el modificador de acceso de su constructor de serialización no está protegido (familia).
 
 - El tipo está sellado y el modificador de acceso de su constructor de serialización no es privado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa la interfaz <xref:System.Runtime.Serialization.ISerializable>. El constructor de serialización es necesario para deserializar o volver a crear los objetos que se han serializado mediante el método <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>.
+ Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa la <xref:System.Runtime.Serialization.ISerializable> interfaz. El constructor de serialización es necesario para deserializar o volver a crear los objetos que se han serializado mediante el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, implemente el constructor de serialización. Para una clase sellada, marque el constructor como privado; de lo contrario, márquelo como protegido.
@@ -58,6 +58,6 @@ ms.locfileid: "72662846"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

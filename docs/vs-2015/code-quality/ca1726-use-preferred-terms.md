@@ -14,26 +14,26 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918223"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547815"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1726: usar términos preferidos](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|UsePreferredTerms|
 |Identificador de comprobación|CA1726|
 |Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> Sin interrupción: cuando se desencadena en parámetros de tipo|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. Como alternativa, el nombre incluye el término marca o marcas.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -49,7 +49,7 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1726: u
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` o `Flags`|No hay ningún término de reemplazo. No utilice.|
+|`Flag` o `Flags`|No hay ningún término de reemplazo. No debe usarse.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -73,4 +73,4 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1726: u
  Suprima una advertencia de esta regla solo si el nombre del identificador es intencionado y está relacionado específicamente con el término original en lugar de con el término preferido.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [Advertencias sobre nomenclatura](../code-quality/naming-warnings.md)
+ [Advertencias de nomenclatura](../code-quality/naming-warnings.md)

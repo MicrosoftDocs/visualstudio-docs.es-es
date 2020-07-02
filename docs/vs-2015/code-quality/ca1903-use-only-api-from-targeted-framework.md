@@ -15,26 +15,26 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917829"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545254"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1903: use only API from Target Framework](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |Identificador de comprobación|CA1903|
 |Categoría|Microsoft. portabilidad|
 |Cambio problemático|Problemático: cuando se desencadena con la firma de un miembro o tipo visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un miembro o tipo está utilizando un miembro o tipo que se presentó en una Service Pack que no se incluyó con el marco de trabajo de destino del proyecto.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -42,13 +42,13 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1903: u
 
  **Dependencias de Service Pack y de la plataforma de destino**
 
-|||
+|Elemento|Valor|
 |-|-|
 |Cuando la plataforma de destino es|Se desencadena en los usos de los miembros introducidos en|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
-|.NET Framework 4|N/A|
+|.NET Framework 4|No aplicable|
 
  Para cambiar el marco de trabajo de destino de un proyecto, vea establecer [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
@@ -68,5 +68,5 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA1903: u
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Advertencias de portabilidad](../code-quality/portability-warnings.md) que tienen [como destino una versión de .NET Framework específica](../ide/targeting-a-specific-dotnet-framework-version.md)

@@ -15,34 +15,34 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7a2a296f5dd3680209c14849b5bd863c01e6351d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e191ca10456f133e1213961ca2d1ed9cb8e040b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660246"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544305"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas Finally vulnerables en un bloque Try externo
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas finally vulnerables en un bloque try externo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |Identificador de comprobación|CA2124|
 |Categoría|Microsoft.Security|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- En las versiones 1,0 y 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], un método público o protegido contiene un `try` / `catch` / bloque `finally`. El bloque `finally` parece restablecer el estado de seguridad y no se incluye en un bloque de `finally`.
+## <a name="cause"></a>Causa
+ En las versiones 1,0 y 1,1 de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , un método público o protegido contiene un `try` / `catch` / `finally` bloque. El `finally` bloque parece restablecer el estado de seguridad y no se incluye en un `finally` bloque.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla localiza `try` bloques de `finally` de / en código destinado a las versiones 1,0 y 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que podrían ser vulnerables a los filtros de excepciones malintencionados presentes en la pila de llamadas. Si se producen operaciones confidenciales como la suplantación en el bloque try y se produce una excepción, el filtro se puede ejecutar antes que el bloque `finally`. En el ejemplo de suplantación, esto significa que el filtro se ejecutaría como el usuario suplantado. Los filtros solo se pueden implementar en Visual Basic.
+ Esta regla ubica `try` / `finally` los bloques en código que tienen como destino las versiones 1,0 y 1,1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que podrían ser vulnerables a los filtros de excepciones malintencionados presentes en la pila de llamadas. Si se producen operaciones confidenciales como la suplantación en el bloque try y se produce una excepción, el filtro se puede ejecutar antes que el `finally` bloque. En el ejemplo de suplantación, esto significa que el filtro se ejecutaría como el usuario suplantado. Los filtros solo se pueden implementar en Visual Basic.
 
 > [!WARNING]
-> En las versiones 2,0 y posteriores del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], el motor en tiempo de ejecución protege automáticamente un `try` / `catch` /  bloque `finally` de los filtros de excepciones malintencionados, si el restablecimiento se produce directamente en el método que contiene el bloque de excepción.
+> En las versiones 2,0 y posteriores de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , el tiempo de ejecución protege automáticamente un `try` / `catch` /  `finally` bloque de los filtros de excepciones malintencionados, si el restablecimiento se produce directamente dentro del método que contiene el bloque de excepción.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Coloque el `try` desencapsulado / `finally` en un bloque try externo. Vea el segundo ejemplo siguiente. Esto obliga a que se ejecute el `finally` antes de filtrar el código.
+ Coloque el desencapsulado `try` / `finally` en un bloque try externo. Vea el segundo ejemplo siguiente. Esto obliga `finally` a que se ejecute antes de filtrar el código.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

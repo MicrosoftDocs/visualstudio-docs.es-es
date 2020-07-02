@@ -15,31 +15,31 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9297ea0bb24eed54d0134a5f3c0fce87e6757adb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662887"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540587"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: No enviar formatos de recursos no lanzados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |Identificador de comprobación|CA2228|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Un archivo de recursos se compiló con una versión de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que no se admite actualmente.
+## <a name="cause"></a>Causa
+ Un archivo de recursos se compiló con una versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que no se admite actualmente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los archivos de recursos que se compilaron con versiones preliminares de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] podrían no ser utilizados por las versiones compatibles del .NET Framework.
+ Los archivos de recursos que se compilaron con versiones preliminares de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] no se pueden usar en las versiones compatibles del .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, compile el recurso con una versión compatible del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]k.
+ Para corregir una infracción de esta regla, compile el recurso con una versión compatible de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] k.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.

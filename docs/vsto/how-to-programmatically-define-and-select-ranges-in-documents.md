@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Definir y seleccionar rangos en documentos mediante programación
+title: 'Cómo: definir y seleccionar intervalos en documentos mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62574867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545956"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedimiento Definir y seleccionar rangos en documentos mediante programación
-  Puede definir un intervalo en un documento de Microsoft Office Word mediante un objeto <xref:Microsoft.Office.Interop.Word.Range>. Puede seleccionar todo el documento de varias maneras, por ejemplo, mediante el <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método de la <xref:Microsoft.Office.Interop.Word.Range> de objeto, o mediante la propiedad de contenido de la <xref:Microsoft.Office.Tools.Word.Document> clase (en una personalización de nivel de documento) o la <xref:Microsoft.Office.Interop.Word.Document> clase (en un Complemento de VSTO).
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Cómo: definir y seleccionar intervalos en documentos mediante programación
+  Puede definir un intervalo en un documento de Microsoft Office Word mediante un objeto <xref:Microsoft.Office.Interop.Word.Range>. Puede seleccionar todo el documento de varias maneras, por ejemplo, mediante el <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método del <xref:Microsoft.Office.Interop.Word.Range> objeto o mediante la propiedad de contenido de la <xref:Microsoft.Office.Tools.Word.Document> clase (en una personalización de nivel de documento) o la <xref:Microsoft.Office.Interop.Word.Document> clase (en un complemento de VSTO).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "62574867"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
 
-## <a name="select-a-range-in-a-document-level-customization"></a>Seleccione un intervalo en una personalización de nivel de documento
+## <a name="select-a-range-in-a-document-level-customization"></a>Seleccionar un intervalo en una personalización de nivel de documento
  Los siguientes ejemplos muestran cómo seleccionar todo el documento mediante el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Range> o usando la propiedad <xref:Microsoft.Office.Tools.Word.Document.Content%2A> de la clase <xref:Microsoft.Office.Tools.Word.Document>.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Para seleccionar todo el documento como un intervalo mediante el método Select
@@ -80,12 +80,12 @@ ms.locfileid: "62574867"
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2. Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
+2. Compruebe si hay al menos dos oraciones en el documento, establezca los argumentos de *Inicio* y *fin* del intervalo y, a continuación, seleccione el intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
 
-## <a name="select-a-range-by-using-a-vsto-add-in"></a>Seleccione un intervalo mediante el uso de un complemento de VSTO
+## <a name="select-a-range-by-using-a-vsto-add-in"></a>Seleccionar un intervalo mediante un complemento de VSTO
  Los siguientes ejemplos muestran cómo seleccionar todo el documento mediante el método <xref:Microsoft.Office.Interop.Word.Range.Select%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Range> o usando la propiedad <xref:Microsoft.Office.Interop.Word._Document.Content%2A> de la clase <xref:Microsoft.Office.Interop.Word.Document>.
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Para seleccionar todo el documento como un intervalo mediante el método Select
@@ -120,16 +120,16 @@ ms.locfileid: "62574867"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2. Compruebe si hay al menos dos frases en el documento, establezca el *iniciar* y *final* argumentos de intervalo y, a continuación, seleccione el intervalo.
+2. Compruebe si hay al menos dos oraciones en el documento, establezca los argumentos de *Inicio* y *fin* del intervalo y, a continuación, seleccione el intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
 ## <a name="see-also"></a>Vea también
 - [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)
-- [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Cómo: Recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [Cómo: Mediante programación restablecer intervalos en documentos de Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [Cómo: Mediante programación contraer intervalos o selecciones en documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [Cómo: Mediante programación excluir marcas de párrafo al crear intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [Cómo: ampliar intervalos en documentos mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Cómo: recuperar los caracteres inicial y final de los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
+- [Cómo: ampliar intervalos en documentos mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Cómo: restablecer intervalos en documentos de Word mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Cómo: contraer intervalos o selecciones en documentos mediante programación](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [Cómo: excluir marcas de párrafo al crear intervalos mediante programación](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

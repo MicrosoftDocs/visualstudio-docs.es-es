@@ -15,24 +15,24 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4c105a1224c405d0be9d74ac6500c875df28604d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 792426615dd78241ade1d38a24ec1f4d5702cede
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604041"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545384"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer determinados tipos concretos
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer algunos tipos concretos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |Identificador de comprobación|CA1059|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un miembro visible externamente es un determinado tipo concreto o expone determinados tipos concretos a través de uno de sus parámetros o valor devuelto. Actualmente, esta regla notifica la exposición de los siguientes tipos concretos:
 
 - Tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
@@ -42,9 +42,9 @@ ms.locfileid: "72604041"
 
  En la tabla siguiente se enumeran los tipos concretos específicos y sus reemplazos sugeridos.
 
-|Tipo concreto|Replacement|
+|Tipo concreto|Sustituta|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>Operador<br /><br /> El uso de la interfaz desacopla el miembro de una implementación concreta de un origen de datos XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> El uso de la interfaz desacopla el miembro de una implementación concreta de un origen de datos XML.|
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie el tipo concreto a la interfaz sugerida.
@@ -53,4 +53,4 @@ ms.locfileid: "72604041"
  Es seguro suprimir un mensaje de esta regla si se requiere la funcionalidad específica que proporciona el tipo concreto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1011: Considere pasar los tipos base como parámetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011: Considerar pasar los tipos base como parámetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

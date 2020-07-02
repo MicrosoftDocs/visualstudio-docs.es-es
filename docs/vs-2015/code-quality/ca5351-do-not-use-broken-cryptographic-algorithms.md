@@ -8,17 +8,17 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7b4a15530a43937b4f73fba1779216391c862c11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669015"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545059"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 No use algoritmos criptográficos rotos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |Identificador de comprobación|CA5351|
@@ -28,7 +28,7 @@ ms.locfileid: "72669015"
 > [!NOTE]
 > Esta advertencia se actualizó por última vez en noviembre de 2015.
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Las funciones hash como <xref:System.Security.Cryptography.MD5> y los algoritmos de cifrado como <xref:System.Security.Cryptography.DES> y <xref:System.Security.Cryptography.RC2> pueden generar riesgos significativos y provocar la divulgación de información confidencial a través de técnicas de ataque fáciles, como colisiones hash y ataques por fuerza bruta.
 
  La lista de algoritmos criptográficos siguiente está sujeta a ataques criptográficos conocidos. El algoritmo hash criptográfico <xref:System.Security.Cryptography.MD5> está sujeto a ataques de colisión hash.  En función del uso, una colisión hash puede provocar la suplantación, manipulación u otros tipos de ataques en sistemas que se basan en la salida criptográfica única de una función hash. Los algoritmos de cifrado <xref:System.Security.Cryptography.DES> y <xref:System.Security.Cryptography.RC2> están sujetos a ataques criptográficos que pueden provocar la divulgación no intencionada de datos cifrados.
@@ -47,7 +47,7 @@ ms.locfileid: "72669015"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Use opciones de criptografía más segura:
 
-- Para MD5, use valores hash de la familia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).
+- Para MD5, use valores hash en la familia [Sha-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo <xref:System.Security.Cryptography.SHA512> ,, <xref:System.Security.Cryptography.SHA384> , <xref:System.Security.Cryptography.SHA256> ).
 
 - Para DES y RC2, use el cifrado <xref:System.Security.Cryptography.Aes> .
 
@@ -66,7 +66,7 @@ var hashAlg = MD5.Create();
 
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;
@@ -84,7 +84,7 @@ RC2 encAlg = RC2.Create();
 
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ DES encAlg = DES.Create();
 
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;

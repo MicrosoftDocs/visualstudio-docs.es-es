@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Revisar la ortografía en hojas de cálculo mediante programación
+title: 'Cómo: comprobar la ortografía en hojas de cálculo mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575574"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541549"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedimiento Revisar la ortografía en hojas de cálculo mediante programación
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Cómo: comprobar la ortografía en hojas de cálculo mediante programación
   Puede comprobar la ortografía en una hoja de cálculo mediante programación. El cuadro de diálogo **Ortografía** aparece automáticamente si hay palabras mal escritas en la hoja de cálculo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -43,6 +43,6 @@ ms.locfileid: "62575574"
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)
-- [Cómo: Ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Cómo: ejecutar cálculos de Excel mediante programación](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [NamedRange (control)](../vsto/namedrange-control.md)
 - [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)

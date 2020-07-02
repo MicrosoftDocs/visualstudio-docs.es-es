@@ -3,7 +3,7 @@ title: Uso de Visual Studio sin un mouse
 titleSuffix: ''
 description: Obtenga información sobre cómo navegar y escribir código en el entorno de desarrollo integrado (IDE) de Visual Studio usando únicamente el teclado.
 ms.date: 05/10/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569028"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770234"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Uso del teclado exclusivamente
 

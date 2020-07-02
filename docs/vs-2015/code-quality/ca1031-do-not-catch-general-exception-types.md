@@ -25,11 +25,11 @@ ms.locfileid: "85542407"
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: No capturar los tipos de excepción general
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |Identificador de comprobación|CA1031|
-|Category|Microsoft. Design|
+|Categoría|Microsoft. Design|
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Causa

@@ -1,18 +1,18 @@
 ---
 title: Incrustar diagramas en Windows Forms
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94425c9f3bc586847f43589f7abdcef2295cf1b9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114629"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547633"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Insertar un diagrama en Windows Forms
 
@@ -67,7 +67,7 @@ Puede incrustar un diagrama DSL en un control de Windows, que aparece en la vent
 
 ## <a name="update-the-form-using-store-events"></a>Actualización del formulario mediante eventos de almacenamiento
 
-1. En el diseñador de formularios, agregue un **control ListBox** denominado `listBox1`. Esto mostrará una lista de los elementos del modelo. Se sincroniza con el modelo mediante eventos de *almacenamiento*. Para obtener más información, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. En el diseñador de formularios, agregue un **control ListBox** denominado `listBox1` . Esto mostrará una lista de los elementos del modelo. Se sincroniza con el modelo mediante eventos de *almacenamiento*. Para obtener más información, vea [los controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. En el archivo de código personalizado, invalide otros métodos en la clase DocView:
 

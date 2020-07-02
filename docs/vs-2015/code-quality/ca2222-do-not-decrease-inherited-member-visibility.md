@@ -25,11 +25,11 @@ ms.locfileid: "85540782"
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: No disminuir la visibilidad del miembro heredado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |Identificador de comprobación|CA2222|
-|Category|Microsoft. Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

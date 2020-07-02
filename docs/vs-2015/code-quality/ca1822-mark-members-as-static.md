@@ -15,33 +15,33 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917941"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545345"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar el miembro como estático
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar miembros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1822: Mark Members as static](/visualstudio/code-quality/ca1822-mark-members-as-static).
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|MarkMethodsAsStatic|
 |Identificador de comprobación|CA1822|
-|Categoría|Microsoft.Performance|
-|Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si simplemente cambia el miembro a un miembro de instancia con la palabra clave `this`.<br /><br /> Problemático: Si cambia el miembro de un miembro de instancia a un miembro estático y es visible fuera del ensamblado.|
+|Categoría|Microsoft. performance|
+|Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si simplemente cambia el miembro a un miembro de instancia con la `this` palabra clave.<br /><br /> Problemático: Si cambia el miembro de un miembro de instancia a un miembro estático y es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
- Un miembro que no tiene acceso a los datos de instancia no está marcado como estático (compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+## <a name="cause"></a>Causa
+ Un miembro que no tiene acceso a los datos de instancia no está marcado como estático (compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los miembros que no tienen acceso a datos de instancia o que llaman a métodos de instancia se pueden marcar como static (Shared en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]). Después de marcar los métodos como static, el compilador emite los sitios de llamada no virtuales para estos miembros. La emisión de sitios de llamada no virtuales impedirá una comprobación en tiempo de ejecución para cada llamada que se asegure de que el puntero del objeto actual no es NULL. Esto puede lograr una mejora de rendimiento mensurable para el código que depende del rendimiento. En algunos casos, el error de acceso a la instancia del objeto actual representa un problema de corrección.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Marque el miembro como estático (o compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) o use ' this '/' me ' en el cuerpo del método, si procede.
+ Marque el miembro como estático (o compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) o use ' this '/' me ' en el cuerpo del método, si procede.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla para el código enviado previamente para el que la corrección sería un cambio importante.

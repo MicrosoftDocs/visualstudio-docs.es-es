@@ -15,24 +15,24 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545709"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evite el acoplamiento excesivo de clases
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar el acoplamiento excesivo de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |Identificador de comprobación|CA1506|
 |Categoría|Microsoft. mantenibilidad|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un tipo o un método se acopla con muchos otros tipos.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -46,5 +46,5 @@ ms.locfileid: "72607405"
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Excluya esta advertencia cuando el tipo o el método se sigan considerando manteniéndose a pesar de su gran número de dependencias en otros tipos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md) que [miden la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

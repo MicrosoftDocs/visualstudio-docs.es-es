@@ -15,25 +15,25 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661114"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545293"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |Identificador de comprobación|CA1824|
 |Categoría|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
- Un ensamblado contiene un recurso basado en **resx**pero no tiene aplicado el <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
+## <a name="cause"></a>Causa
+ Un ensamblado contiene un recurso basado en **resx**pero no tiene <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado el.
 
 ## <a name="rule-description"></a>Descripción de la regla
  El atributo **NeutralResourcesLanguage** informa a **ResourceManager** del idioma que se usó para mostrar los recursos de la referencia cultural neutra de un ensamblado. Cuando busca recursos en la misma referencia cultural que el idioma de los recursos neutros, **ResourceManager** usa automáticamente los recursos que se encuentran en el ensamblado principal. Lo hace en lugar de buscar un ensamblado satélite que tenga la referencia cultural de la interfaz de usuario actual para el subproceso actual. Esto mejora el rendimiento de la búsqueda del primer recurso que se carga y puede reducir el espacio de trabajo.

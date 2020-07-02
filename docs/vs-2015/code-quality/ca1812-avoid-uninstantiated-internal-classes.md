@@ -15,24 +15,24 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 401fbfbccfeeeeec5cbdc0e791b110d1b5f0201b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645407"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543980"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |Identificador de comprobación|CA1812|
 |Categoría|Microsoft. performance|
 |Cambio problemático|Poco problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  El código del ensamblado no crea una instancia del tipo del nivel de ensamblado.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -50,25 +50,25 @@ ms.locfileid: "72645407"
 
 - Tipos de matriz emitidos por el compilador
 
-- Tipos de los que no se pueden crear instancias y que solo definen métodos `static` (`Shared` en Visual Basic).
+- Tipos de los que no se pueden crear instancias y que `static` `Shared` solo definen métodos (en Visual Basic).
 
-  Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en ningún constructor que esté marcado como `internal` porque no puede saber si un campo está siendo utilizado por otro `friend` ensamblado.
+  Si se aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en los constructores que estén marcados como `internal` porque no se puede saber si un campo está siendo utilizado por otro `friend` ensamblado.
 
-  Aunque no puede solucionar esta limitación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, el FxCop independiente externo se producirá en constructores internos si cada ensamblado de `friend` está presente en el análisis.
+  Aunque no puede solucionar esta limitación en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, el FxCop independiente externo se producirá en los constructores internos si cada `friend` ensamblado está presente en el análisis.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo usa. Si el tipo solo contiene métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
-- Constructor privado para los tipos que tienen como destino [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versiones 1,0 y 1,1.
+- Constructor privado para los tipos que tienen como destino [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] las versiones 1,0 y 1,1.
 
-- El modificador `static` (`Shared` en Visual Basic) para los tipos que tienen como destino [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- `static` `Shared` Modificador (en Visual Basic) para los tipos que tienen como destino [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla. Se recomienda suprimir esta advertencia en las situaciones siguientes:
 
-- La clase se crea mediante métodos de reflexión enlazados en tiempo de ejecución como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La clase se crea mediante métodos de reflexión enlazados en tiempo de ejecución como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> .
 
-- La clase la crea automáticamente el motor en tiempo de ejecución o el [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La clase la crea automáticamente el motor en tiempo de ejecución o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName> .
 
 - La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente se generará esta regla.
 

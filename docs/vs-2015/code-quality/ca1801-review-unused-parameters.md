@@ -16,39 +16,39 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918173"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547789"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1801: revisar los parámetros no usados](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |Identificador de comprobación|CA1801|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|No problemático: Si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: Si cambia el miembro para usar el parámetro dentro de su cuerpo.<br /><br /> Problemático: Si quita el parámetro y es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:
 
 - Métodos a los que hace referencia un delegado.
 
 - Métodos usados como controladores de eventos.
 
-- Los métodos declarados con el modificador `abstract` (`MustOverride` en Visual Basic).
+- Métodos declarados con el `abstract` `MustOverride` modificador (en Visual Basic).
 
-- Los métodos declarados con el modificador `virtual` (`Overridable` en Visual Basic).
+- Métodos declarados con el `virtual` `Overridable` modificador (en Visual Basic).
 
-- Los métodos declarados con el modificador `override` (`Overrides` en Visual Basic).
+- Métodos declarados con el `override` `Overrides` modificador (en Visual Basic).
 
-- Los métodos declarados con el modificador `extern` (`Declare` instrucción en Visual Basic).
+- Métodos declarados con el `extern` `Declare` modificador (instrucción in Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
  Revise los parámetros de los métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no existe ninguna corrección en torno al error para tener acceso a ellos. Los parámetros sin usar incurren en costos de mantenimiento y rendimiento.

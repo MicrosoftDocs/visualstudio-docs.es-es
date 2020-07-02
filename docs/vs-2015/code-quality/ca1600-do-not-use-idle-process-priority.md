@@ -15,31 +15,31 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f6233136dcf7f1db5d622a02419d33e0eedacf5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669295"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545683"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: No utilizar la prioridad del proceso inactiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |Identificador de comprobación|CA1600|
 |Categoría|Microsoft. Mobility|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Esta regla se produce cuando los procesos se establecen en `ProcessPriorityClass.Idle`.
+## <a name="cause"></a>Causa
+ Esta regla se produce cuando los procesos se establecen en `ProcessPriorityClass.Idle` .
 
 ## <a name="rule-description"></a>Descripción de la regla
- No establezca la prioridad de proceso en Idle. Los procesos que tienen `System.Diagnostics.ProcessPriorityClass.Idle` ocuparán la CPU cuando de otro modo quedarían inactivos y, por tanto, se bloquearán en modo de espera.
+ No establezca la prioridad de proceso en Idle. Los procesos que tienen `System.Diagnostics.ProcessPriorityClass.Idle` ocuparán la CPU cuando de otro modo estuvieran inactivos y, por tanto, se bloquearán en modo de espera.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Establezca procesos en `ProcessPriorityClass.BelowNormal`.
+ Establezca procesos en `ProcessPriorityClass.BelowNormal` .
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Esta regla solo se debe suprimir cuando se requiere la prioridad del proceso inactivo y las consideraciones de movilidad se pueden omitir de forma segura.

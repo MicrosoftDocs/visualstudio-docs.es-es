@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar controles XMLMappedRange a hojas de cálculo
+title: 'Cómo: agregar controles XmlMappedRange (a hojas de cálculo'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,56 +13,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d69e705e8f537ba3636422ad6883a7633e03322
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427444"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544890"
 ---
-# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procedimiento Agregar controles XMLMappedRange a hojas de cálculo
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Cómo: agregar controles XmlMappedRange (a hojas de cálculo
   Al asignar un elemento XML a una celda en Microsoft Office Excel, Visual Studio agrega automáticamente un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control a la hoja de cálculo.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
-> El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control no está disponible en el **cuadro de herramientas** o **orígenes de datos** ventana. Además, no se puede crear <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controles mediante programación.
+> El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control no está disponible en el **cuadro de herramientas** o en la ventana **orígenes de datos** . Además, no puede crear <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controles mediante programación.
 
-## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Para agregar un control XMLMappedRange a una hoja de cálculo
+## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Para agregar un control XmlMappedRange (a una hoja de cálculo
 
-1. Abra el libro de Excel en el Diseñador de Visual Studio.
+1. Abra el libro de Excel en el diseñador de Visual Studio.
 
 2. Abra la hoja de cálculo en la que desea agregar el control.
 
-3. En el **Developer** , haga clic **origen**.
+3. En la pestaña **desarrollador** , haga clic en **origen**.
 
     > [!NOTE]
-    > Si el **Developer** ficha no está visible en la cinta de opciones, debe habilitarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si la pestaña **desarrollador** no está visible en la cinta de opciones, debe habilitarla. Para obtener más información, consulte [Cómo: Mostrar la pestaña programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-     El **origen XML** aparece el panel de tareas.
+     Aparece el panel de tareas **origen XML** .
 
-4. En el **origen XML** panel de tareas, haga clic en **mapas XML**.
+4. En el panel de tareas **origen XML** , haga clic en **asignaciones XML**.
 
-5. En el **mapas XML** cuadro de diálogo, haga clic en **agregar**.
+5. En el cuadro de diálogo **asignaciones XML** , haga clic en **Agregar**.
 
-     El **origen XML** aparece el cuadro de diálogo.
+     Aparecerá el cuadro de diálogo **origen XML** .
 
-6. Seleccione un esquema XML a partir del **origen XML** cuadro de diálogo y haga clic en **abierto**.
+6. Seleccione un esquema XML en el cuadro de diálogo **origen XML** y haga clic en **abrir**.
 
-     El esquema se agrega a la **mapas XML** cuadro de diálogo.
+     El esquema se agrega al cuadro de diálogo **asignaciones XML** .
 
-7. En el **mapas XML** cuadro de diálogo, haga clic en **Aceptar**.
+7. En el cuadro de diálogo **asignaciones XML** , haga clic en **Aceptar**.
 
-8. Arrastre un elemento desde el **origen XML** panel de tareas para una celda en la hoja de cálculo.
+8. Arrastre un elemento desde el panel de tareas **origen XML** hasta una celda de la hoja de cálculo.
 
-     Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> se crea y agrega al proyecto.
+     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Se crea y se agrega al proyecto.
 
     > [!NOTE]
-    > Si arrastra un elemento primario de la **origen XML** panel de tareas, un <xref:Microsoft.Office.Tools.Excel.ListObject> se crea el control.
+    > Si arrastra un elemento primario desde el panel de tareas **origen XML** , <xref:Microsoft.Office.Tools.Excel.ListObject> se crea un control.
 
 ## <a name="see-also"></a>Vea también
-- [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md)
+- [Control XmlMappedRange (](../vsto/xmlmappedrange-control.md)
 - [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)
-- [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)
-- [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Cómo: Asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)
+- [Limitaciones de programación de elementos y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Cómo: asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

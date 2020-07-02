@@ -111,6 +111,6 @@ Puede cambiar la apariencia y el comportamiento del explorador para el diseñado
 
      El explorador debe mostrar solo un nodo **actores** y no debe mostrar el nodo **comentarios** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

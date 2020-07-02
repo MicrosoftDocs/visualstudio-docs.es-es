@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar un selector de cuadro de diálogo a un grupo de la cinta
+title: Cómo agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b930348845e04dca089cf153a11cc2a9fd29c880
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255906"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541625"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedimiento Agregar un selector de cuadro de diálogo a un grupo de la cinta
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Cómo agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones
   Puede Agregar un selector de cuadro de diálogo a cualquier grupo en una cinta de opciones. Un selector de cuadro de diálogo es un icono pequeño que aparece en un grupo. Los usuarios hacen clic en este icono para abrir cuadros de diálogo o paneles de tareas relacionados que proporcionan más opciones relacionadas con el grupo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "71255906"
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Información general del modelo de objetos de la cinta](../vsto/ribbon-object-model-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
-- [Cómo: Agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Cómo: exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Cómo cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
+- [Cómo: agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [Personalización de una cinta para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Cómo: Mostrar errores de interfaz de usuario de complementos](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Tutorial: Crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Cómo: Mostrar errores de la interfaz de usuario de complementos](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Tutorial: crear una pestaña personalizada mediante el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Tutorial: actualizar los controles de una cinta de opciones en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Tutorial: crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

@@ -67,7 +67,7 @@ ms.locfileid: "85543499"
 
      <xref:Microsoft.Office.Tools.Word.XMLNodes>Se crea un control y se agrega al proyecto.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [XMLNodes (control)](../vsto/xmlnodes-control.md)
 - [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Información general sobre elementos y controles host](../vsto/host-items-and-host-controls-overview.md)

@@ -8,17 +8,17 @@ caps.latest.revision: 11
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c2c996c383c8834e44e16f382c14b695c83f26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: afadf41fc753051047e858758bfe0677987d726d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668995"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545072"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No use algoritmos criptográficos no seguros
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No usar algoritmos criptográficos no seguros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |Identificador de comprobación|CA5350|
@@ -28,7 +28,7 @@ ms.locfileid: "72668995"
 > [!NOTE]
 > Esta advertencia se actualizó por última vez en noviembre de 2015.
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Los algoritmos de cifrado como <xref:System.Security.Cryptography.TripleDES> y los algoritmos hash como <xref:System.Security.Cryptography.SHA1> y <xref:System.Security.Cryptography.RIPEMD160> se consideran no seguros.
 
  Estos algoritmos criptográficos no proporcionan tantas garantías de seguridad como sus equivalentes más modernos. Los algoritmos hash criptográfico <xref:System.Security.Cryptography.SHA1> y <xref:System.Security.Cryptography.RIPEMD160> proporcionan menos resistencia a colisiones que los algoritmos hash más modernos. El algoritmo de cifrado <xref:System.Security.Cryptography.TripleDES> proporciona menos bits de seguridad que los algoritmos de cifrado más modernos.
@@ -43,7 +43,7 @@ ms.locfileid: "72668995"
 
 - Para el cifrado TripleDES, use el cifrado <xref:System.Security.Cryptography.Aes> .
 
-- Para las funciones hash SHA1 o RIPEMD160, use los de la familia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).
+- En el caso de las funciones de hash SHA1 o RIPEMD160, use las de la familia [Sha-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo <xref:System.Security.Cryptography.SHA512> ,, <xref:System.Security.Cryptography.SHA384> , <xref:System.Security.Cryptography.SHA256> ).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Suprima una advertencia de esta regla cuando el nivel de protección necesario para los datos no requiera una garantía de seguridad.
@@ -60,7 +60,7 @@ var hashAlg = SHA1.Create();
 
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;
@@ -78,7 +78,7 @@ var hashAlg = RIPEMD160Managed.Create();
 
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;
@@ -98,7 +98,7 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>Soluciones
+### <a name="solution"></a>Solución
 
 ```
 using System.Security.Cryptography;

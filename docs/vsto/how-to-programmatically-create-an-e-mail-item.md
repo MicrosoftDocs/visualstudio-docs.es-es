@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear un elemento de correo electrónico mediante programación
+title: 'Cómo: crear un elemento de correo electrónico mediante programación'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d22808b8d68c0fdb3b6a2374985ae25a539f0e8c
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575174"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85546047"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Procedimiento Crear un elemento de correo electrónico mediante programación
+# <a name="how-to-programmatically-create-an-email-item"></a>Cómo: crear un elemento de correo electrónico mediante programación
   En este ejemplo se crea un mensaje de correo electrónico en Microsoft Office Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "62575174"
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)
-- [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

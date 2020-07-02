@@ -15,24 +15,24 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c1071617572af44a73f98953fd435623190e0e3
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658891"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540847"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |Identificador de comprobación|CA2223|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Dos miembros públicos o protegidos tienen firmas que son idénticas salvo el tipo de valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -45,7 +45,7 @@ ms.locfileid: "72658891"
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), se muestra un tipo que infringe esta regla. Tenga en cuenta que esta regla no se puede infringir mediante C# o Visual Basic .net.
+ En el ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), se muestra un tipo que infringe esta regla. Tenga en cuenta que esta regla no se puede infringir mediante C# o Visual Basic .NET.
 
 ```
 

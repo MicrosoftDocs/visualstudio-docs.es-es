@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193625"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545540"
 ---
 # <a name="channels-threads-view"></a>Canales (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ El visualizador de simultaneidad muestra cuatro tipos de canales: canales de sub
 ## <a name="thread-channels"></a>Canales de subproceso  
  Un canal de subproceso muestra el estado, por color, de un solo subproceso. Al detenerse en el nombre del canal, se muestra la función de inicio del subproceso especificado. El visualizador de simultaneidad detecta varios tipos de subprocesos. Los tipos más comunes se muestran en la tabla siguiente.  
   
-|||  
+|Thread|Descripción|  
 |-|-|  
 |Subproceso principal|El subproceso que inició la aplicación.|  
 |Subproceso de trabajo|Un subproceso creado por el subproceso principal de la aplicación.|  
@@ -50,5 +50,5 @@ El visualizador de simultaneidad muestra cuatro tipos de canales: canales de sub
 ## <a name="gpu-channels"></a>Canales de GPU  
  Los canales de GPU muestran información sobre la actividad de DirectX 11 en el sistema.  Cada motor de DirectX asociado a la tarjeta gráfica tiene un canal diferente.  Los segmentos individuales representan el tiempo dedicado a procesar un paquete DMA.  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Consulte también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

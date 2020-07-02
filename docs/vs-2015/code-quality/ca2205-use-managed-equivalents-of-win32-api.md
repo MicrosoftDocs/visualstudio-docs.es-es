@@ -15,28 +15,28 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 931b1e5099bf221fefc7a8f4a19524d2531a4418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85e27ab04ca81f5513a0b09bc41548f4a7c2430d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609487"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85547685"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Utilizar equivalentes administrados de la API Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |Identificador de comprobación|CA2205|
 |Categoría|Microsoft. Usage|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
- Se define un método de invocación de plataforma y existe un método con la funcionalidad equivalente en la biblioteca de clases de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+## <a name="cause"></a>Causa
+ Se define un método de invocación de plataforma y existe un método con la funcionalidad equivalente en la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] biblioteca de clases.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Se usa un método de invocación de plataforma para llamar a una función DLL no administrada y se define mediante el atributo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o la palabra clave `Declare` en Visual Basic. Un método de invocación de plataforma definido incorrectamente puede provocar excepciones en tiempo de ejecución debido a problemas como una función errónea, una asignación errónea de tipos de datos de parámetros y valores devueltos, y especificaciones de campo incorrectas, como la Convención de llamada y el carácter conjunto. Si está disponible, generalmente es más sencillo y menos propenso a errores llamar al método administrado equivalente que definir y llamar directamente al método no administrado. Llamar a un método de invocación de plataforma también puede provocar problemas de seguridad adicionales que se deben solucionar.
+ Se usa un método de invocación de plataforma para llamar a una función DLL no administrada y se define mediante el <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo o la `Declare` palabra clave en Visual Basic. Un método de invocación de plataforma definido incorrectamente puede provocar excepciones en tiempo de ejecución debido a problemas como una función errónea, una asignación errónea de tipos de datos de parámetros y valores devueltos, y especificaciones de campo incorrectas, como la Convención de llamada y el juego de caracteres. Si está disponible, generalmente es más sencillo y menos propenso a errores llamar al método administrado equivalente que definir y llamar directamente al método no administrado. Llamar a un método de invocación de plataforma también puede provocar problemas de seguridad adicionales que se deben solucionar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, reemplace la llamada a la función no administrada por una llamada a su equivalente administrado.
@@ -51,12 +51,12 @@ ms.locfileid: "72609487"
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1404: Llame a GetLastError inmediatamente después de P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: llamar a GetLastError inmediatamente después de P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
- [CA1060: Mueva P/Invokes a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: mueve P/Invoke a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: Los elementos P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke no debe estar visible](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: especificar el cálculo de referencias para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

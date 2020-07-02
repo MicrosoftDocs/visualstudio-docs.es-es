@@ -15,26 +15,26 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918762"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545150"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar los métodos de serialización de forma correcta
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialización correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA2238: implementar métodos de serialización correctamente](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |Identificador de comprobación|CA2238|
-|Categoría|Microsoft.Usage|
+|Categoría|Microsoft. Usage|
 |Cambio problemático|Interrumpir: Si el método es visible fuera del ensamblado.<br /><br /> No problemático: Si el método no es visible fuera del ensamblado.|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -48,7 +48,7 @@ Para obtener la documentación más reciente sobre Visual Studio, vea [CA2238: i
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Los controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, devuelven `void`y tienen `private` visibilidad.
+  Los controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> , devuelven `void` y tienen `private` visibilidad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto o la visibilidad del controlador de eventos de serialización.

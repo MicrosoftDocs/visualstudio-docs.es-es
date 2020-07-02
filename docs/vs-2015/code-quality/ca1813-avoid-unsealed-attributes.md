@@ -15,28 +15,28 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fe5967ef099794b6c71029e9d03d959dd83b01dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d86f4a9ecbdfff451fed21f93c0fe6a7679d471
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647059"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85543954"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar atributos no sellados
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar los atributos no sellados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |Identificador de comprobación|CA1813|
 |Categoría|Microsoft. performance|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
- Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName>, no es abstracto y no está sellado (`NotInheritable` en Visual Basic).
+## <a name="cause"></a>Causa
+ Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName> , no es abstracto y no está sellado ( `NotInheritable` en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
- La biblioteca de clases de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] proporciona los métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan en la jerarquía de herencia de atributos; por ejemplo <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> busca el tipo de atributo especificado o cualquier tipo de atributo que extienda el tipo de atributo especificado. Al sellar el atributo, se elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
+ La biblioteca de clases de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] proporciona los métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan en la jerarquía de herencia de atributos; por ejemplo <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> , busca el tipo de atributo especificado o cualquier tipo de atributo que extienda el tipo de atributo especificado. Al sellar el atributo, se elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, selle el tipo de atributo o haga que sea abstracto.
@@ -55,5 +55,5 @@ ms.locfileid: "72647059"
 
  [CA1018: Marcar atributos con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Atributos](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

@@ -25,11 +25,11 @@ ms.locfileid: "85544318"
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Los constructores estáticos deben ser privados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
 |Identificador de comprobación|CA2121|
-|Category|Microsoft.Security|
+|Categoría|Microsoft.Security|
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Causa

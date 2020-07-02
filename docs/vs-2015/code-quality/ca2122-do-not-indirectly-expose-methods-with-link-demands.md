@@ -25,11 +25,11 @@ ms.locfileid: "85544331"
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: No exponer indirectamente métodos con peticiones de vínculos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |Identificador de comprobación|CA2122|
-|Category|Microsoft.Security|
+|Categoría|Microsoft.Security|
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Causa

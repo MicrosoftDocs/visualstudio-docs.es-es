@@ -1,7 +1,7 @@
 ---
 title: Configurar la información de configuración para una solución de Office
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328898"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545813"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedimiento Configurar la información de configuración para una solución de Office
-  Puede usar los archivos de configuración para configurar las opciones que son específicas de las soluciones de Office. Puede especificar la configuración de directiva de enlace de ensamblados, objetos de comunicación remota, depuración y la configuración de seguimiento.
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Cómo: configurar la información de configuración de una solución de Office
+  Puede usar archivos de configuración para configurar opciones específicas para las soluciones de Office. Puede especificar valores como la Directiva de enlace de ensamblados, objetos de comunicación remota, depuración y configuración de seguimiento.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-add-a-configuration-file-to-your-office-project"></a>Para agregar un archivo de configuración al proyecto de Office
+### <a name="to-add-a-configuration-file-to-your-office-project"></a>Para agregar un archivo de configuración a su proyecto de Office
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el **categorías** panel, haga clic en **General**.
+2. En el panel **categorías** , haga clic en **General**.
 
-3. En el **plantillas** panel, seleccione **archivo de configuración de aplicación**.
+3. En el panel **plantillas** , seleccione **archivo de configuración**de la aplicación.
 
-4. En el **nombre** , escriba el mismo nombre que el ensamblado más la extensión *.config*. Por ejemplo, un archivo de configuración para un ensamblado de proyecto de Excel denominado *ExcelWorkbook1.dll* se denominará *ExcelWorkbook1.dll.config*.
+4. En el cuadro **nombre** , escriba el mismo nombre que el ensamblado más el *archivo Extension. config*. Por ejemplo, un archivo de configuración para un ensamblado de proyecto de Excel denominado *ExcelWorkbook1.dll* se denominaría *ExcelWorkbook1.dll.config*.
 
 5. Haga clic en **Agregar**.
 
-6. Cree el archivo de configuración según el esquema de archivo de configuración de aplicación. Para obtener más información, consulte [esquema de archivo de configuración de .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
+6. Cree el archivo de configuración según el esquema del archivo de configuración de la aplicación. Para obtener más información, vea [esquema del archivo de configuración para el .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 
-   No hay ninguna consideración especial para usar archivos de configuración con los proyectos de Office.
+   No hay ninguna consideración especial para usar archivos de configuración con proyectos de Office.
 
 ## <a name="see-also"></a>Vea también
-- [Esquema de archivo de configuración de .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
+- [Esquema del archivo de configuración para el .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
 - [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)

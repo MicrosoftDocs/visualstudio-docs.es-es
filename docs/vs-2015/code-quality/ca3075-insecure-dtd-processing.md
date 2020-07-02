@@ -8,24 +8,24 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300972"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545176"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: procesamiento no seguro de DTD
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Procesamiento no seguro de DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |Identificador de comprobación|CA3075|
 |Categoría|Microsoft.Security|
 |Cambio problemático|No trascendental|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -35,13 +35,13 @@ ms.locfileid: "74300972"
 
 - Se ha establecido la propiedad <xref:System.Xml.XmlNode.InnerXml%2A> del XML.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propiedad está establecida en Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la propiedad se establece en Parse.
 
 - Las entradas que no son de confianza se procesan mediante <xref:System.Xml.XmlResolver> en lugar de con <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> el método se invoca con una instancia de <xref:System.Xml.XmlReaderSettings> no segura o sin ninguna instancia.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> el método se invoca con una <xref:System.Xml.XmlReaderSettings> instancia no segura o sin ninguna instancia.
 
-- <xref:System.Xml.XmlReader> se crea con valores o configuraciones predeterminados no seguros.
+- <xref:System.Xml.XmlReader>se crea con valores o configuraciones predeterminados no seguros.
 
   En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
 
@@ -49,15 +49,15 @@ ms.locfileid: "74300972"
 
 - Detecte y procese todas las excepciones de XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use el <xref:System.Xml.XmlSecureResolver> para restringir los recursos a los que puede tener acceso XmlTextReader.
+- Use  <xref:System.Xml.XmlSecureResolver> para restringir los recursos a los que puede tener acceso XmlTextReader.
 
-- No permita que el <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlResolver> en **null**.
+- No permita  <xref:System.Xml.XmlReader> que abra ningún recurso externo estableciendo la <xref:System.Xml.XmlResolver> propiedad en **null**.
 
 - Asegúrese de que la propiedad <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> se asigne desde un origen de confianza.
 
   .NET 3.5 y versiones anteriores
 
-- Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> en **true** .
+- Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza estableciendo la  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propiedad en **true** .
 
 - La clase XmlTextReader tiene una petición de herencia de plena confianza. Vea [peticiones de herencia](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obtener más información.
 

@@ -27,11 +27,11 @@ ms.locfileid: "85544006"
 
 Para obtener la documentación más reciente sobre Visual Studio, vea [CA1709: los identificadores deben tener mayúsculas y minúsculas correctamente](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
-|Elemento|Value|
+|Elemento|Valor|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |Identificador de comprobación|CA1709|
-|Category|Microsoft.Naming|
+|Categoría|Microsoft.Naming|
 |Cambio problemático|Problemático: cuando se produce en ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> No problemático: cuando se activa en parámetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa

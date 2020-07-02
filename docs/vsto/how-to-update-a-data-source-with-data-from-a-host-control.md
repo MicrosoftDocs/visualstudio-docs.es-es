@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Actualizar un origen de datos con datos de un control host
+title: 'Cómo: actualizar un origen de datos con datos de un control host'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255669"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85541250"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedimiento Actualizar un origen de datos con datos de un control host
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:
 
 1. Actualizar el origen de datos en memoria con los datos modificados en el control. Normalmente, el origen de datos en memoria es un elemento <xref:System.Data.DataSet>, un elemento <xref:System.Data.DataTable>, u otro objeto de datos.
@@ -76,7 +76,7 @@ ms.locfileid: "71255669"
 
 3. En la ventana **Propiedades** , expanda la propiedad **(DataBindings)** .
 
-4. Junto a la propiedad **(avanzado)** , haga clic en el botón de puntos suspensivos (![VisualStudioEllipsesButton captura]de pantalla(../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton")).
+4. Junto a la propiedad **(avanzado)** , haga clic en el botón de puntos suspensivos (![VisualStudioEllipsesButton captura de pantalla](../vsto/media/vbellipsesbutton.png "Captura de pantalla de VisualStudioEllipsesButton")).
 
 5. En el cuadro de diálogo **Formato y enlace de datos avanzado** , haga clic en la lista desplegable **Modo de actualización del origen de datos** y seleccione uno de los siguientes valores:
 
@@ -107,7 +107,7 @@ ms.locfileid: "71255669"
 
      El TableAdapter se genera automáticamente cuando se agrega un control enlazado a datos a un documento o un libro en tiempo de diseño. El TableAdapter conecta el conjunto de datos con tipo del proyecto con la base de datos. Para obtener más información, vea [información general de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     En el ejemplo de código siguiente se supone que tiene una conexión a la tabla Customers de la base de datos Northwind y que el proyecto `customersTableAdapter` contiene un TableAdapter denominado y un `northwindDataSet`DataSet con tipo denominado.
+     En el ejemplo de código siguiente se supone que tiene una conexión a la tabla Customers de la base de datos Northwind y que el proyecto contiene un TableAdapter denominado `customersTableAdapter` y un DataSet con tipo denominado `northwindDataSet` .
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
@@ -116,8 +116,8 @@ ms.locfileid: "71255669"
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Cómo: Desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: desplazarse por los registros de base de datos de una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Cómo: rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)

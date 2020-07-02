@@ -15,24 +15,24 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3968d81e8ee18b4b0a56bed50f7aa1f121e1c074
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f689dfd6c1d39bbd03d522a33ed8c5639a3da9f8
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663250"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545488"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considere pasar los tipos base como parámetros
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considerar pasar los tipos base como parámetros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|||
+|Elemento|Valor|
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |Identificador de comprobación|CA1011|
 |Categoría|Microsoft. Design|
 |Cambio problemático|Problemático|
 
-## <a name="cause"></a>Motivo
+## <a name="cause"></a>Causa
  Una declaración de método incluye un parámetro formal que es un tipo derivado y el método solo llama a los miembros del tipo base del parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
@@ -53,7 +53,7 @@ ms.locfileid: "72663250"
   En estos casos, el código será más robusto debido a la comprobación de tipos segura proporcionada por el compilador y el tiempo de ejecución.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un método, `ManipulateFileStream`, que solo se puede usar con un objeto <xref:System.IO.FileStream>, que infringe esta regla. Un segundo método, `ManipulateAnyStream`, satisface la regla reemplazando el parámetro <xref:System.IO.FileStream> mediante un <xref:System.IO.Stream>.
+ En el ejemplo siguiente se muestra un método, `ManipulateFileStream` , que solo se puede usar con un <xref:System.IO.FileStream> objeto, que infringe esta regla. Un segundo método, `ManipulateAnyStream` , cumple la regla reemplazando el <xref:System.IO.FileStream> parámetro mediante <xref:System.IO.Stream> .
 
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cpp/FxCop.Design.ConsiderPassingBaseTypes.cpp#1)]
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/cs/FxCop.Design.ConsiderPassingBaseTypes.cs#1)]

@@ -1,8 +1,8 @@
 ---
-title: Elemento LocationField (Plantillas de proyecto de Visual Studio) Microsoft Docs
+title: Elemento Locationfield ((plantillas de proyecto de Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -13,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
+ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702882"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85770024"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (plantillas de proyecto de Visual Studio)
-Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo proyecto** está habilitado, deshabilitado u oculto para la plantilla de proyecto.
+# <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield ((elemento, plantillas de proyecto de Visual Studio)
+Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** está habilitado, deshabilitado u oculto para la plantilla de proyecto.
 
- \<VSTemplate \<> TemplateData> \<> de LocationField
+ \<VSTemplate> \<TemplateData>
+ \<LocationField>
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,25 +45,25 @@ Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo p
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el **nuevo proyecto**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el **nuevo proyecto**.|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
 
  Los valores de texto válidos son:
 
-- `Enabled`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **Nuevo proyecto** está habilitado.
+- `Enabled`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **nuevo proyecto** está habilitado.
 
-- `Disabled`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **Nuevo proyecto** está deshabilitado.
+- `Disabled`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **nuevo proyecto** está deshabilitado.
 
-- `Hidden`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **Nuevo proyecto** está oculto.
+- `Hidden`, que especifica que el cuadro **Ubicación** del cuadro de diálogo **nuevo proyecto** está oculto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
  El valor predeterminado es `Enabled`.
 
- El cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo proyecto** permite a los usuarios cambiar el directorio predeterminado en el que se guardan los nuevos proyectos.
+ El cuadro de texto **Ubicación** del cuadro de diálogo **nuevo proyecto** permite a los usuarios cambiar el directorio predeterminado en el que se guardan los nuevos proyectos.
 
- El valor especificado `Location` en el elemento solo lo respeta el cuadro de diálogo si el sistema de proyecto subyacente lo admite.
+ El valor especificado en el `Location` elemento solo lo respeta el cuadro de diálogo si el sistema del proyecto subyacente lo admite.
 
 ## <a name="example"></a>Ejemplo
  En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:
@@ -93,5 +94,5 @@ Especifica si el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo p
 ```
 
 ## <a name="see-also"></a>Vea también
-- [Referencia de esquema de plantilla de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
