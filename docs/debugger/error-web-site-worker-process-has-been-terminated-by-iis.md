@@ -1,7 +1,7 @@
 ---
-title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio web | Microsoft Docs'
+title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio web | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736353"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460005"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
 El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Internet Information Services (IIS) creyera que el proceso de trabajo había dejado de responder. Por consiguiente, IIS finalizaron el proceso de trabajo.
@@ -38,9 +38,9 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
 
     Se abrirá el Administrador de IIS.
 
-3. En el panel **Conexiones**, expanda el nodo \<nombre del equipo> si es necesario.
+3. En el panel **Conexiones**, expanda el nodo \<computer name> si es necesario.
 
-4. En el nodo \<nombre del equipo>, haga clic en **Grupos de aplicaciones**.
+4. En el nodo \<computer name>, haga clic en **Grupos de aplicaciones**.
 
 5. En la lista **Grupos de aplicaciones**, haga clic con el botón derecho en el nombre del grupo en el que se ejecuta la aplicación y, a continuación, haga clic en **Configuración avanzada**.
 

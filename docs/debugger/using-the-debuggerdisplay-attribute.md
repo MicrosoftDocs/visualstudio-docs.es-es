@@ -1,7 +1,7 @@
 ---
 title: Representación de información personalizada mediante DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes, debugger
 - DebuggerDisplay attribute
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728675"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418787"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicar al depurador qué se va a mostrar mediante el atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
@@ -27,10 +27,10 @@ El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que s
 
 Si una clase tiene un método `ToString()` invalidado, el depurador usa el método invalidado en lugar del atributo `{<typeName>}`predeterminado. Por lo tanto, si invalidó el método `ToString()` , el depurador usa el método invalidado en lugar del atributo`{<typeName>}`predeterminado, y no tiene que usar `DebuggerDisplay`. Si usa ambos, el atributo `DebuggerDisplay` tiene prioridad sobre el método `ToString()` invalidado. El atributo `DebuggerDisplay` también tiene prioridad sobre el método `ToString()` invalidado en una subclase.
 
-La evaluación de esta llamada implícita a `ToString()` por parte del depurador depende de un valor de configuración del usuario del cuadro de diálogo **Herramientas / Opciones/ Depuración** . Visual Basic no implementa esta evaluación implícita de `ToString()` .
+La evaluación de esta llamada implícita a `ToString()` por parte del depurador depende de un valor de configuración del usuario del cuadro de diálogo **Herramientas/Opciones/Depuración**.
 
 > [!IMPORTANT]
-> Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .
+> Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está activada en el cuadro de diálogo **Herramientas/Opciones/Depuración**, se omite el atributo `DebuggerDisplay`.
 
 > [!NOTE]
 > En el caso de código nativo, este atributo solo se admite en código de C++/CLI.

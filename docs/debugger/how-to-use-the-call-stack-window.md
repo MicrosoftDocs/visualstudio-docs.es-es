@@ -2,7 +2,7 @@
 title: Ver la pila de llamadas en el depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535980"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348748"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Ver la pila de llamadas y usar la ventana pila de llamadas del depurador
 
@@ -108,7 +108,7 @@ En Visual Studio Enterprise (solo), puede ver los mapas de código de la pila d
 
 ## <a name="change-the-optional-information-displayed"></a>Cambiar la información opcional mostrada
 
-- Haga clic con el botón derecho en la ventana **Pila de llamadas** y active o desactive **Mostrar\<** _la información que quiera_ **>** .
+- Haga clic con el botón secundario en la ventana **Pila de llamadas** y establezca o desactive **Mostrar \<**_the information that you want_**>** .
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Cargar símbolos para un módulo (C#, C++, Visual Basic, F#)
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d7a8de8c80f32a448753b06c86e576c9c1dec8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306822"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533645"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -32,34 +32,50 @@ Para obtener una lista de los accesos directos de teclado comunes y otra informa
 
 Para obtener más información sobre la accesibilidad en Visual Studio, consulte [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-|||||
-|-|-|-|-|
-|[Analizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Editar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Proyecto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Prueba](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Arquitectura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menús contextuales del editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menús contextuales de proyectos y soluciones](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Compilación](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Archivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactorizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Herramientas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Menús contextuales de vistas de clases](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Ayuda](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Explorador de soluciones](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Vista](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Depurar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Prueba de carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Ventana](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Menús contextuales del depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Otros menús contextuales](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menús contextuales de Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Concentrador de diagnósticos](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+- [Analizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
+- [Editar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
+- [Proyecto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
+- [Prueba](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Arquitectura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
+- [Menús contextuales del editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
+- [Menús contextuales de proyectos y soluciones](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [Compilación](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
+- [Archivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
+- [Refactorizar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
+- [Herramientas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
+- [Menús contextuales de vistas de clases](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
+- [Ayuda](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [Explorador de soluciones](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
+- [Vista](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
+- [Depurar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
+- [Prueba de carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
+- [Equipo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
+- [Ventana](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
+- [Menús contextuales del depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
+- [Otros menús contextuales](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
+- [Menús contextuales de Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
+- [Concentrador de diagnósticos](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
 ## <a name="global-shortcuts"></a>Accesos directos globales
 
 Estos métodos abreviados de teclado son *globales*, lo que significa que se pueden usar cuando tenga el foco cualquier ventana de Visual Studio.
 
-### <a name="bkmk_analyze"></a> Analizar
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Analizar
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |Analyze.NavigateBackward|**Mayús+Alt+3**|
 |Analyze.NavigateForward|**Mayús+Alt+4**|
 
-### <a name="bkmk_architecture"></a> Arquitectura
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Arquitectura
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
-### <a name="bkmk_build"></a> Compilación
+### <a name="build"></a><a name="bkmk_build"></a> Compilación
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -69,13 +85,13 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-### <a name="bkmk_classview"></a> Menús contextuales de vistas de clases
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Menús contextuales de vistas de clases
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Entrar**|
 
-### <a name="bkmk_debug"></a> Depurar
+### <a name="debug"></a><a name="bkmk_debug"></a> Depurar
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -144,7 +160,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Debug.Watch3|**Ctrl+Alt+W, 3**|
 |Debug.Watch4|**Ctrl+Alt+W, 4**|
 
-### <a name="bkmk_debugger"></a> Menús contextuales del depurador
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Menús contextuales del depurador
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -152,13 +168,13 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
 
-### <a name="bkmk_diagnostics"></a> Concentrador de diagnósticos
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Concentrador de diagnósticos
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-### <a name="bkmk_edit"></a> Editar
+### <a name="edit"></a><a name="bkmk_edit"></a> Editar
 
 |Comandos|Métodos abreviados de teclado|
 |--------------|-|
@@ -218,7 +234,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
 |Edit.Undo|**Ctrl+Z**<br /><br /> o<br /><br /> **Alt+Retroceso**|
 
-### <a name="bkmk_editorContext"></a> Menús contextuales del editor
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Menús contextuales del editor
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -229,7 +245,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O** (letra "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> o<br /><br /> **Ctrl+K, T**|
 
-### <a name="bkmk_file"></a> Archivo
+### <a name="file"></a><a name="bkmk_file"></a> Archivo
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -245,7 +261,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Mayús+W**|
 
-### <a name="bkmk_help"></a> Ayuda
+### <a name="help"></a><a name="bkmk_help"></a> Ayuda
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -254,19 +270,19 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Help.ViewHelp|**Ctrl+F1**|
 |Help.WindowHelp|**Mayús+F1**|
 
-### <a name="bkmk_loadtest"></a> Prueba de carga
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Prueba de carga
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
-### <a name="bkmk_otherContext"></a> Otros menús contextuales
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Otros menús contextuales
 
 |Comando|Método abreviado de teclado|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Insertar**|
 
-### <a name="bkmk_project"></a> Proyecto
+### <a name="project"></a><a name="bkmk_project"></a> Proyecto
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -278,14 +294,14 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Project.Publishselectedfiles|**Alt+** , luego **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+** , luego **Alt+R**|
 
-### <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Flecha abajo**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Flecha arriba**|
 
-### <a name="bkmk_refactor"></a> Refactorizar
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Refactorizar
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -296,7 +312,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
 |Refactor.ReorderParameters|**Ctrl+R, Ctrl+O** (letra "O")|
 
-### <a name="bkmk_solutionexplorerGLOBAL"></a> Explorador de soluciones
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Explorador de soluciones
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -304,7 +320,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
-### <a name="bkmk_team"></a> Equipo
+### <a name="team"></a><a name="bkmk_team"></a> Equipo
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -313,7 +329,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Team.Git.GoToGitCommits|**Ctrl+0** (cero), **Ctrl+O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
-### <a name="bkmk_TFcontext"></a> Menús contextuales de Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menús contextuales de Team Foundation
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -328,14 +344,14 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (cero), **Ctrl+A**<br /><br /> o<br /><br /> **Ctrl+0, S**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (cero), **Ctrl+W**<br /><br /> o<br /><br /> **Ctrl+0, W**|
 
-### <a name="bkmk_test"></a> Prueba
+### <a name="test"></a><a name="bkmk_test"></a> Prueba
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
-### <a name="bkmk_testexplorerGLOBAL"></a> Explorador de pruebas
+### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Explorador de pruebas
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -349,7 +365,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |LiveUnitTesting.OpenTab|**Ctrl+E, L**|
 |Test.CodeCoverageResults|**Ctrl+E, C**|
 
-### <a name="bkmk_tools"></a> Herramientas
+### <a name="tools"></a><a name="bkmk_tools"></a> Herramientas
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -357,7 +373,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Mayús+Alt+F12, Ctrl+Mayús+Alt+F12**|
 
-### <a name="bkmk_view"></a> Vista
+### <a name="view"></a><a name="bkmk_view"></a> Vista
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -407,7 +423,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |View.ZoomOut|**Ctrl+Mayús+,**|
 |TestExplorer.ShowTestExplorer|**Ctrl+E, T**|
 
-### <a name="bkmk_window"></a> Ventana
+### <a name="window"></a><a name="bkmk_window"></a> Ventana
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
@@ -438,7 +454,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Window.SolutionExplorerSearch|**Ctrl+;**|
 |Window.WindowSearch|**Alt+`**|
 
-### <a name="bkmk_windowsazure"></a> Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |

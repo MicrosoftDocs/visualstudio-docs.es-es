@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Elegir métodos de recolección | Microsoft Docs'
+title: Procedimiento para elegir métodos de recolección | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -12,14 +12,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776350"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329264"
 ---
-# <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recopilación
+# <a name="how-to-choose-collection-methods"></a>Procedimiento Elegir métodos de recopilación
 
 Las Herramientas de generación de perfiles de Visual Studio admiten tres métodos de recopilación de datos de rendimiento: muestreo, instrumentación y simultaneidad. También puede utilizar el método de muestreo o de instrumentación para recopilar datos de duración y de asignación de memoria de .NET.
 
@@ -31,7 +31,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 - En la primera página del asistente, seleccione una de las siguientes opciones:
 
-| Opción | Description |
+| Opción | Descripción |
 |----------------------------| - |
 | **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
 | **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |

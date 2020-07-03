@@ -1,7 +1,7 @@
 ---
 title: Depuración de aplicaciones para UWP en máquinas remotas | Microsoft Docs
 ms.date: 10/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902901"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348124"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depuración de aplicaciones para UWP en máquinas remotas desde Visual Studio
 
@@ -53,7 +53,7 @@ Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Stu
 
 1. En el caso de una máquina remota, escriba el nombre o la dirección IP de la red en el campo **Máquina remota**, o bien seleccione **Buscar** para buscar el dispositivo en el [cuadro de diálogo Conexiones remotas](#remote-connections).
 
-    ![Propiedades del proyecto administrado para depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "Propiedades del proyecto de depuración administrada")
+    ![Propiedades de proyectos administrados para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "Propiedades del proyecto de depuración administrada")
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configuración de un proyecto de C++ para la depuración remota
 
@@ -65,13 +65,13 @@ Para depurar una aplicación para UWP en un dispositivo remoto desde Visual Stu
 
 1. En el caso de una máquina remota, escriba el nombre o la dirección IP de la red en el campo **Nombre de la máquina**, o baje y seleccione **Buscar** para buscar el dispositivo en el [cuadro de diálogo Conexiones remotas](#remote-connections).
 
-    ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "Propiedades del proyecto de la depuración de C++")
+    ![Propiedades del proyecto de C++ para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "Propiedades del proyecto de depuración de C++")
 
 ### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Uso del cuadro de diálogo Conexiones remotas
 
 En el cuadro de diálogo **Conexiones remotas**, puede buscar una dirección IP o un nombre de equipo remoto específico o detectar las conexiones automáticamente seleccionando el icono de actualización de flecha redondeada. El cuadro de diálogo solo busca en los dispositivos de la subred local que ejecutan actualmente el depurador remoto. No todos los dispositivos se pueden detectar en el cuadro de diálogo **Conexiones remotas**.
 
- ![Cuadro de diálogo Conexiones remotas](../debugger/media/vsrun_selectremotedebuggerdlg.png "Remote Connections dialog")
+ ![Cuadro de diálogo Conexión remota](../debugger/media/vsrun_selectremotedebuggerdlg.png "Cuadro de diálogo Conexiones remotas")
 
 >[!TIP]
 >Si no puede conectarse a un dispositivo remoto por nombre, pruebe a usar su dirección IP. Para determinar la dirección IP, en el dispositivo remoto, escriba **ipconfig** en una ventana de comandos. La dirección IP aparece como **Dirección IPv4**.

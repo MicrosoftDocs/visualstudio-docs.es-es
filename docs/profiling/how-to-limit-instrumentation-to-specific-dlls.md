@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Limitar la instrumentación a archivos DLL específicos | Microsoft Docs
+title: Procedimiento para limitar la instrumentación a archivos DLL específicos | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778822"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85327797"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 

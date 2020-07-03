@@ -1,7 +1,7 @@
 ---
-title: 'Error: No se puede establecer el punto de interrupción de datos | Microsoft Docs'
+title: 'Error: No se puede establecer el punto de interrupción de datos | Microsoft Docs'
 ms.date: 12/3/2019
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: dab5e146d510601c6e93582b6b128abcd964b4a7
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404083"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85459940"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Solución de errores con el punto de interrupción de datos
 Esta página lo guiará a través de la resolución de los errores comunes vistos cuando se usa "Interrumpir cuando cambia el valor".

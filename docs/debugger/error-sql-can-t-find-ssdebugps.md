@@ -1,7 +1,7 @@
 ---
-title: 'Error: SQL no encuentra SSDEBUGPS | Microsoft Docs'
+title: 'Error: SQL no encuentra SSDEBUGPS | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 854105ea5d94f6d3b09ce73a23ec45ccab9e797c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edebb932e11554b24296314817eea514743525b1
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850490"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460512"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Error: SQL no encuentra SSDEBUGPS
 

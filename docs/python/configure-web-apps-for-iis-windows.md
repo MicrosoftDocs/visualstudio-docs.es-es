@@ -2,7 +2,7 @@
 title: Configuración de aplicaciones web de Python para IIS
 description: Configuración de aplicaciones web de Python para ejecutarlas con Internet Information Services desde una máquina virtual Windows.
 ms.date: 12/06/2018
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957379"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540938"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configuración de aplicaciones web de Python para IIS
 
@@ -139,7 +139,7 @@ A continuación, modifique el archivo *web.config* para incluir las rutas de acc
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    Si no agrega la URL a la matriz, se genera el error **DisallowedHost at / Invalid HTTP_HOST header: "\<URL del sitio\>". Es posible que deba agregar "\<URL del sitio\>" a ALLOWED_HOSTS.**
+    Si no agrega la dirección URL a la matriz, se genera un error **DisallowedHost at / Invalid HTTP_HOST header: "\<site URL\>". Es posible que tenga que agregar "\<site URL\>" a ALLOWED_HOSTS.**
 
     Tenga en cuenta que, cuando la matriz está vacía, Django permite automáticamente "localhost" y "127.0.0.1", pero agregar la dirección URL de producción quita esas funcionalidades. Por este motivo, puede que desee mantener copias de desarrollo y producción independientes de *settings.py*, o bien usar variables de entorno para controlar los valores de tiempo de ejecución.
 

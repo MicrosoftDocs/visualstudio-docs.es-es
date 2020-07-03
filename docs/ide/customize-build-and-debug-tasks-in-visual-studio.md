@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76542690"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533724"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -201,7 +201,7 @@ En esta sección se describe parte de las propiedades que puede especificar en *
 
 Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en el campo `appliesTo`, por ejemplo `"appliesTo": "hello.js"`. Las máscaras de archivo siguientes se pueden usar como valores:
 
-|||
+|Máscara de archivo|Descripción|
 |-|-|
 |`"*"`| tarea disponible para todos los archivos y carpetas del área de trabajo|
 |`"*/"`| tarea disponible para todas las carpetas del área de trabajo|
@@ -213,7 +213,7 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
 
 #### <a name="macros-for-tasksvsjson"></a>Macros de tasks.vs.json
 
-|||
+|Macro|Descripción|
 |-|-|
 |`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para obtener más información, vea [Símbolo del sistema para desarrolladores de Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
 |`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, *C:\sources\hello*)|

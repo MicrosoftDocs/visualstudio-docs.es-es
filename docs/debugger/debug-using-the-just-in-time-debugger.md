@@ -1,7 +1,7 @@
 ---
 title: Depuración con el depurador Just-In-Time | Microsoft Docs
 ms.date: 09/24/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188671"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350581"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depuración con el depurador Just-In-Time en Visual Studio
 
@@ -79,7 +79,7 @@ De forma predeterminada, las aplicaciones Windows Forms tienen un controlador de
 
 Para habilitar la depuración Just-in-Time en lugar de un control de errores estándar de Windows Forms, agregue esta configuración:
 
-- En la sección `system.windows.forms` del archivo *machine.config* o *\<nombre_aplicación>.exe.config*, establezca el valor `jitDebugging` en `true`:
+- En la sección `system.windows.forms` del archivo *machine.config* o *\<app name>.exe.config*, establezca el valor `jitDebugging` en `true`:
 
     ```xml
     <configuration>
@@ -134,7 +134,7 @@ En este ejemplo creará una aplicación de consola de C# en Visual Studio que pr
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   En **Depuradores disponibles**, seleccione **Nueva instancia de \<versión o edición preferida de Visual Studio>** , si aún no la ha seleccionado.
+   En **Depuradores disponibles**, seleccione **Nueva instancia de \<your preferred Visual Studio version/edition>** , si todavía no está seleccionada.
 
 1. Seleccione **Aceptar**.
 

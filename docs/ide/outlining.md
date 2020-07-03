@@ -15,14 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781c9a6bc30f7d3a29bcb89e743600e6b29e6445
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545449"
 ---
-# <a name="outlining"></a>Esquematización
+# <a name="outlining"></a>esquematizar
 
 Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más ( **+** ). Para expandir una región contraída hay que hacer clic en su signo más. Si prefiere usar el teclado, puede presionar **CTRL**+**M**+**M** para expandir o contraer. También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
 
@@ -40,7 +40,7 @@ Los comandos **Deshacer** y **Rehacer** del menú **Edición** afectan a estas a
 
 El submenú **Edición** > **Esquematización** contiene los siguientes comandos.
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |Ocultar selección|(**Ctrl**+**M**, **Ctrl**+**H**): contrae un bloque de código seleccionado que normalmente no estaría disponible para la esquematización, por ejemplo un bloque `if`. Para quitar la región personalizada, use **Detener ocultar actual** (o **Ctrl**+**M**, **Ctrl**+**U**). No está disponible en Visual Basic.|
 |Alternar expansión de esquematización|: invierte el estado oculto o expandido actual de la sección de esquematización más interna cuando el cursor se encuentra en una sección contraída anidada.|
@@ -48,10 +48,10 @@ El submenú **Edición** > **Esquematización** contiene los siguientes comandos
 |Detener esquematización|(**Ctrl**+**M**, **Ctrl**+**P**): quita toda la información de esquematización del documento completo.|
 |Detener ocultar actual|(**Ctrl**+**M**, **Ctrl**+**U**): quita la información de esquematización de la región definida por el usuario que está seleccionada actualmente. No está disponible en Visual Basic.|
 |Contraer a definiciones|(**Ctrl**+**M**, **Ctrl**+**O**): contrae los miembros de todos los tipos.|
-|Contraer bloque:\<límite lógico>|(C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
-|Contraer todo el contenido de: \<estructuras lógicas>|(C++) Contrae todas las estructuras dentro de la función.|
+|Contraer bloque:\<logical boundary>|(C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
+|Contraer todo en: \<logical structures>|(C++) Contrae todas las estructuras dentro de la función.|
 
-También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: esquematización](../extensibility/walkthrough-outlining.md).
+También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: Esquematización](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Vea también
 

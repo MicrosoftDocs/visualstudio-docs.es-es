@@ -1,7 +1,7 @@
 ---
-title: 'DA0007: Evite utilizar excepciones para el flujo de control | Microsoft Docs'
+title: 'DA0007: Evite usar excepciones para el flujo de control | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a33d5b8d18f18fb6bf7a2420603d994d845ce8f2
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777704"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520801"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evite utilizar excepciones para el flujo de control
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|DA0007|
 |Categoría|Uso de .NET Framework|

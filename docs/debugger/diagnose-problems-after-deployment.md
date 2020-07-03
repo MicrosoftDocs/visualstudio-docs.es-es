@@ -1,19 +1,19 @@
 ---
 title: Diagnóstico de problemas tras la implementación | Microsoft Docs
 ms.date: 04/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae6a7f5e95f2d853978cf1f8d9665a51ae80fd3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911380"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350594"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnóstico de problemas después de la implementación con IntelliTrace (C# y Visual Basic)
 
@@ -73,7 +73,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
 5. Si usa una plantilla personalizada, agregue este argumento de MSBuild para especificar dónde guardar el archivo de símbolos:
 
-     **/p:BuildSymbolStorePath=** \<*ruta a símbolos*>
+     **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
      ![Inclusión de la información del servidor de compilación en la definición de compilación de TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
@@ -110,7 +110,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
     - **/p:IncludeServerNameInBuildInfo=True**
 
-    - **/p:BuildSymbolStorePath=** \<*ruta a símbolos*>
+    - **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 4. Ejecute una nueva compilación.
 
@@ -150,7 +150,7 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
  **/p:IncludeServerNameInBuildInfo=True**
 
- **/p:BuildSymbolStorePath=** \<*ruta a símbolos*>
+ **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Paso 2: Lanzar la aplicación
  Si usa el [paquete Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) creado por el proceso de compilación para implementar la aplicación, el nombre del manifiesto de compilación se cambiará automáticamente de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y se copiará en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.
@@ -370,9 +370,9 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 
 - Visual Studio no encontró la solución o el proyecto en la colección de equipo actual.
 
-     Cuando el archivo de manifiesto de compilación (\<*NombreDelProyecto*>.BuildInfo.config) no especifica dónde puede encontrar Visual Studio el código fuente coincidente, esta aplicación usa el TFS conectado actualmente para buscar la solución o el proyecto correspondiente. Si la colección de equipo actual no tiene el código fuente correspondiente, Visual Studio le pedirá que se conecte a otra colección de equipo.
+     Cuando el archivo de manifiesto de compilación (\<*ProjectName*>.BuildInfo.config) no especifica dónde puede encontrar Visual Studio el código fuente coincidente, esta aplicación usa el TFS conectado actualmente para buscar la solución o el proyecto coincidente. Si la colección de equipo actual no tiene el código fuente correspondiente, Visual Studio le pedirá que se conecte a otra colección de equipo.
 
-- Visual Studio no encontró la solución o el proyecto en la colección especificada por el archivo de manifiesto de compilación (\<*NombreDelProyecto*>.BuildInfo.config).
+- Visual Studio no ha encontrado la solución o el proyecto en la colección especificada por el archivo de manifiesto de compilación (\<*ProjectName*>.BuildInfo.config).
 
      Puede que el servidor TFS especificado ya no tenga el código fuente coincidente o que este ni siquiera exista, quizá porque se migró a un nuevo servidor TFS. Si el servidor TFS especificado no existe, puede que Visual Studio agote el tiempo de espera tras un minuto aproximadamente y después le pida que se conecte a otra colección. Para continuar, conéctese al servidor TFS correcto.
 
@@ -384,4 +384,4 @@ Visual Studio 2017 y las versiones posteriores no incluyen el archivo *BuildInfo
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> P: ¿Por qué aparece este mensaje sobre símbolos que no son de confianza?
  ![¿Depurar con la ruta de acceso de símbolos que no es de confianza?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **R:** este mensaje aparece cuando la ruta de acceso de símbolos del archivo de manifiesto de compilación (\<*nombreDelProyecto*>.BuildInfo.config) no se incluye en la lista de rutas de acceso de símbolos de confianza. Puede agregar la ruta de acceso a dicha lista en las opciones del depurador.
+ **R:** Este mensaje aparece cuando la ruta de acceso de símbolos del archivo de manifiesto de compilación (\<*ProjectName*>.BuildInfo.config) no se incluye en la lista de rutas de acceso de símbolos de confianza. Puede agregar la ruta de acceso a dicha lista en las opciones del depurador.

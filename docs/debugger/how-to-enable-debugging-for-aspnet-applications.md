@@ -2,7 +2,7 @@
 title: Habilitación de la depuración para aplicaciones de ASP.NET | Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6f20a2272214a525b00ebf07ebc6e5e803b138c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911349"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349762"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depuración de aplicaciones de ASP.NET o ASP.NET Core en Visual Studio
 
@@ -62,9 +62,9 @@ IIS Express es el valor predeterminado y está preconfigurado. Si realiza la dep
 
 1. Use **Archivo** > **Guardar elementos seleccionados** o presione **Ctrl**+**S** para guardar los cambios.
 
-1. Para depurar la aplicación, en el proyecto, establezca puntos de interrupción en algunas secciones del código. En la barra de herramientas de Visual Studio, asegúrese de que la configuración esté establecida en **Depurar** y el explorador que quiera aparezca en **IIS Express (\<Nombre del explorador>)** o **IIS local (\<Nombre del explorador>)** en el campo emulador.
+1. Para depurar la aplicación, en el proyecto, establezca puntos de interrupción en algunas secciones del código. En la barra de herramientas de Visual Studio, asegúrese de que la configuración esté establecida en **Depurar** y el explorador que quiera aparezca en **IIS Express (\<Browser name>)** o **IIS local (\<Browser name>)** en el campo del emulador.
 
-1. Para iniciar la depuración, seleccione **IIS Express (\<Nombre del explorador>)** o **IIS local (\<Nombre del explorador>)** en la barra de herramientas, seleccione **Iniciar depuración** en el menú **Depurar** o presione **F5**. El depurador se detiene en los puntos de interrupción. Si el depurador no puede alcanzar los puntos de interrupción, vea [Solución de problemas de depuración](#troubleshoot-debugging).
+1. Para iniciar la depuración, seleccione **IIS Express (\<Browser name>)** o **IIS local (\<Browser name>)** en la barra de herramientas, seleccione **Iniciar depuración** en el menú **Depurar**, o bien presione **F5**. El depurador se detiene en los puntos de interrupción. Si el depurador no puede alcanzar los puntos de interrupción, vea [Solución de problemas de depuración](#troubleshoot-debugging).
 
 ## <a name="debug-aspnet-core-apps"></a>Depuración de aplicaciones ASP.NET Core
 
@@ -90,7 +90,7 @@ IIS Express es el valor predeterminado y está preconfigurado. Si realiza la dep
 
 1. Para depurar la aplicación, en el proyecto, establezca puntos de interrupción en algunas secciones del código. En la barra de herramientas de Visual Studio, asegúrese de que la configuración esté establecida en **Depurar** y de que **IIS Express** o el nuevo nombre del perfil de IIS aparezcan en el campo emulador.
 
-1. Para iniciar la depuración, seleccione **IIS Express** o **\<nombre del perfil de IIS>** en la barra de herramientas, seleccione **Iniciar depuración** en el menú **Depurar** o presione **F5**. El depurador se detiene en los puntos de interrupción. Si el depurador no puede alcanzar los puntos de interrupción, vea [Solución de problemas de depuración](#troubleshoot-debugging).
+1. Para iniciar la depuración, seleccione **IIS Express** o **\<IIS profile name>** en la barra de herramientas, seleccione **Iniciar depuración** en el menú **Depurar**, o bien presione **F5**. El depurador se detiene en los puntos de interrupción. Si el depurador no puede alcanzar los puntos de interrupción, vea [Solución de problemas de depuración](#troubleshoot-debugging).
 
 ## <a name="troubleshoot-debugging"></a>Solución de problemas de depuración
 

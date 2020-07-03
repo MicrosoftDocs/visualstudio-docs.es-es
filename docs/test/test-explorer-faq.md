@@ -1,6 +1,6 @@
 ---
 title: Preguntas más frecuentes sobre el Explorador de pruebas
-ms.date: 08/14/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,24 +14,14 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf22c54da4af43c4953a8b92620031a14e25ec05
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846820"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468748"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
-::: moniker range=">=vs-2019"
-
-## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>¿Dónde se agrupa por rasgos en Visual Studio 2019?
-Esta agrupación de rasgos se ha movido a una columna. Con la jerarquía de varios niveles y personalizable de la versión 16.2 de Visual Studio 2019, pensamos que incluir rasgos como una agrupación creaba una complejidad visual innecesaria. Queremos conocer su opinión sobre este diseño. [https://digitalcommons.usu.edu/all_datasets/48](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
-
-Por ahora, puede hacer clic con el botón derecho en la columna en el Explorador de pruebas y seleccionar Columnas. Marque la columna Rasgos y aparecerá en el Explorador de pruebas. Ahora puede filtrar esta columna por los rasgos que le interesen.
-
-![Mostrar la columna Rasgos](media/vs-2019/trait-column.png)
-![Filtrar la columna Rasgos](media/vs-2019/trait-column-filter.png)
-::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Detección de pruebas dinámicas
 
@@ -91,9 +81,7 @@ Las pruebas de UWP tienen como destino un tiempo de ejecución distinto cuando l
 
 **¿Cómo funciona la ordenación de los resultados de las pruebas en la vista de jerarquía?**
 
-En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su resultado. Normalmente, la otra configuración de agrupamiento suele ordenar las pruebas por resultados y, después, alfabéticamente. Vea los diferentes grupos por opciones en la imagen siguiente para establecer comparaciones. Puede dejar sus comentarios sobre el diseño [en este problema de GitHub](https://github.com/Microsoft/vstest/issues/1425).
-
-![Ejemplos de ordenación](media/testex-sortingex.png)
+En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su resultado. La configuración de agrupamiento anterior ha ordenado las pruebas por resultados y, después, alfabéticamente. Todavía puede habilitar la ordenación por resultados si hace clic con el botón derecho en el encabezado de columna en el Explorador de pruebas, habilita la columna Estado y, después, hace clic en el encabezado de la columna Estado para aplicar la ordenación por esa columna. Puede proporcionar comentarios sobre el diseño en esta [incidencia de GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
 ## <a name="test-explorer-hierarchy-view"></a>Vista de jerarquía del Explorador de pruebas
 
@@ -138,7 +126,7 @@ En lugar de usar las extensiones del adaptador de prueba, los proyectos deben us
 
 Los proyectos de prueba recientes de UWP especifican una propiedad de compilación de plataforma de prueba que permite un mejor rendimiento para identificar las aplicaciones de prueba. Si tiene un proyecto de prueba de UWP que se haya inicializado antes de Visual Studio versión 15.7, puede ver este error en **Salida** > **Pruebas**:
 
-**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** .
+**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
 Para corregir este error:
 
@@ -153,7 +141,12 @@ Para corregir este error:
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
 ```
+::: moniker range=">=vs-2019"
+## <a name="using-preview-features"></a>Uso de características en versión preliminar
 
+En Visual Studio 2019, puede participar en las características en versión preliminar en **Herramientas > Opciones > Entorno > Características en versión preliminar**.
+::: moniker-end
+::: moniker range=">=vs-2017"
 ## <a name="using-feature-flags"></a>Uso de marcas de características
 
 **¿Cómo puedo activar las marcas de características para probar las nuevas características de las pruebas?**
@@ -170,7 +163,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Puede desactivar la marca con el mismo comando, utilizando un valor de 0 en lugar de 1 después de dword.
-
+::: moniker-end
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>

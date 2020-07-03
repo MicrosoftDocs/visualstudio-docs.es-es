@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Depuración en modo mixto | Microsoft Docs
+title: Procedimiento para la depuración en modo mixto | Microsoft Docs
 ms.date: 11/05/2018
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894383"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350113"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedimiento Depuración en modo mixto (C#, C++ y Visual Basic)
 
@@ -43,7 +43,7 @@ Si no tiene acceso al proyecto de la aplicación que realiza la llamada, puede d
 
 1. Seleccione el proyecto de C++ en **Explorador de soluciones**, haga clic en el icono **Propiedades** y presione **Alt**+**Entrar**, o haga clic con el botón derecho y seleccione **Propiedades**.
 
-1. En el cuadro de diálogo **\<Proyecto > Páginas de propiedades**, expanda el nodo **Propiedades de configuración** y, a continuación, seleccione **Depuración**.
+1. En el cuadro de diálogo **\<Project>Páginas de propiedades**, expanda el nodo **Propiedades de configuración** y, después, seleccione **Depuración**.
 
 1. Establezca el **Tipo de depurador** en **Mixto** o **Automático**.
 
@@ -59,7 +59,7 @@ Si no tiene acceso al proyecto de la aplicación que realiza la llamada, puede d
 
 1. Cierre la página de propiedades para guardar los cambios.
 
-   ![Habilitación de la depuración de código nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Habilitación de la depuración de código nativo")
+   ![Habilitar depuración de código nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Habilitar depuración de código nativo")
 
 > [!NOTE]
 > En la mayoría de las versiones de Visual Studio a partir de Visual Studio 2017, debe usar el archivo *launchSettings.json* en lugar de las propiedades del proyecto para habilitar la depuración en modo mixto para el código nativo de una aplicación .NET Core. Para obtener más información, consulte [Tutorial: Depuración de C# y C++ en la misma sesión de depuración](../debugger/how-to-debug-managed-and-native-code.md).

@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 18e2789af3a699dacee9a9e8c1f1846ee8622800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283182"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536895"
 ---
 # <a name="deploy-to-docker-hub"></a>Implementación en Docker Hub
 
@@ -29,17 +29,17 @@ Si no tiene un repositorio de Docker Hub, cree uno en [Docker Hub](https://hub.d
 
 1. Haga clic con el botón derecho en el nodo de proyecto y elija **Publicar**. Aparece una pantalla que muestra las opciones de implementación.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Captura de pantalla de las opciones de implementación](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. En **Elegir un destino de publicación**, elija **Container Registry** y luego elija **Docker Hub**. Aparece el cuadro de diálogo **Docker Hub**.
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Captura de pantalla del cuadro de diálogo Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
 1. Si se conecta a su propio repositorio (que no es parte de una organización), deje activada la casilla **Publicar en un repositorio personal**. Si el repositorio es propiedad de una organización, desactive la casilla y escriba el nombre de la organización. Escriba su nombre de usuario y contraseña de la cuenta de Docker que tenga permisos para acceder al repositorio al que se está conectando y, a continuación, seleccione **Guardar**.  
 
-   Visual Studio intenta implementar la imagen en Docker Hub.  Si se realiza correctamente, aparece la pantalla **Publicar** con la dirección URL de la imagen del repositorio, la etiqueta de la imagen, el repositorio y la configuración de compilación** (por ejemplo, **Versión**).
+   Visual Studio intenta implementar la imagen en Docker Hub.  Si se realiza correctamente, aparece la pantalla **Publicar** con la dirección URL de la imagen del repositorio, la etiqueta de la imagen, el repositorio y la configuración de compilación (por ejemplo, **Versión**).
 
-   ![](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Captura de pantalla de la pantalla Publicar](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
 1. Para actualizar la imagen en cualquier momento, haga clic en el botón **Publicar** en esta página.  O bien, puede modificar o quitar el perfil mediante los vínculos situados debajo de la dirección URL.
 

@@ -1,7 +1,7 @@
 ---
-title: 'DA0012: Cantidad significativa de reflexión | Microsoft Docs'
+title: 'DA0012: Cantidad significativa de reflexión | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777678"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520646"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad significativa de reflexión
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad considerable de reflexión
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|DA0012|
 |Categoría|Uso de .NET Framework|

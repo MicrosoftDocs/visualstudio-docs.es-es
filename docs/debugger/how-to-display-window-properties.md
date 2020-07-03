@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Presentación de propiedades de ventana | Microsoft Docs
+title: Procedimiento para presentar propiedades de ventana | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906757"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349775"
 ---
 # <a name="how-to-display-window-properties"></a>Procedimiento Presentación de propiedades de ventana
 Para obtener más información sobre una ventana que aparece en la [vista Ventanas](../debugger/windows-view.md), use el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md).

@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs
+title: Procedimiento para establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778770"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548127"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento
 
@@ -24,7 +24,7 @@ De forma predeterminada, se guarda un archivo de generación de perfiles de dato
 
 Puede cambiar cualquier parámetro de nomenclatura en la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento.
 
-|||
+|Parámetro|Descripción|
 |-|-|
 |*Ruta de acceso*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|
 |*VSP-File*|El nombre del archivo de datos de generación de perfiles. El nombre predeterminado es el nombre de la solución o ejecutable del que se generan perfiles.|
@@ -39,7 +39,7 @@ Puede cambiar cualquier parámetro de nomenclatura en la página **General** del
 
 3. En **Informe**, cambie cualquiera de las siguientes opciones:
 
-    |||
+    |NOMBRE|Descripción|
     |-|-|
     |**Ubicación del informe**|Especifique un directorio para almacenar los archivos de datos de generación de perfiles.|
     |**Nombre del informe**|Especifique un nombre base para los archivos.|

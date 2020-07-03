@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Averiguar en qué archivo DLL se ha bloqueado el programa | Microsoft Docs
+title: Procedimiento para averiguar en qué archivo DLL se ha bloqueado el programa | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733271"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349541"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedimiento Averiguar en qué archivo DLL se ha bloqueado el programa (C#, C++, Visual Basic, F#)
 

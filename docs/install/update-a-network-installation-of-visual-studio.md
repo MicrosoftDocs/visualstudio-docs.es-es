@@ -1,7 +1,7 @@
 ---
 title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
-ms.date: 01/08/2020
+ms.date: 06/29/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68acfcd4acc06ff2b370f3d77a30bd4ec21eb6d1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114977"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545436"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -74,7 +74,7 @@ Veamos unos cuantos ejemplos de cómo crear y actualizar un diseño:
   ```
 
     > [!IMPORTANT]
-    > Una operación de actualización no instala los componentes opcionales recién agregados, ni siquiera si se incluyen estos componentes en una sección de adición ("add") de un [archivo de respuesta](automated-installation-with-response-file.md). Esto ocurre porque la operación de adición no se usa durante una actualización.
+    > Una operación de actualización no instala componentes opcionales recién agregados. Si necesita los componentes opcionales recién agregados, quite los componentes opcionales antiguos del [archivo de respuesta](automated-installation-with-response-file.md) `Layout.JSON` e incluya los componentes necesarios en la sección "agregar" de `Layout.JSON`. 
     >
     > **Solución alternativa**: Después de una actualización, ejecute una operación de modificación independiente para instalar los componentes que faltan.
 

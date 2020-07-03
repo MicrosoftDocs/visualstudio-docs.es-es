@@ -1,7 +1,7 @@
 ---
 title: VSInstr | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -18,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e51a8bd82a4bd79309dfe2a055c44d986e94c4
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760145"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330508"
 ---
 # <a name="vsinstr"></a>VSInstr
 La herramienta VSInstr se usa para instrumentar archivos binarios. Se invoca mediante la siguiente sintaxis:
@@ -40,8 +40,8 @@ VSInstr [/U] filename [/options]
 |**U**|Escribe la salida de la consola redirigida como Unicode. Debe ser la primera opción especificada.|
 |`@filename`|Especifica el nombre de un archivo de respuesta que contiene una opción de comando por línea.  No utilice las comillas.|
 |**OutputPath** `:path`|Especifica un directorio de destino para la imagen instrumentada. Si no se especifica una ruta de acceso de salida, se cambia el nombre del binario original agregándole "Orig" al nombre de archivo en el mismo directorio y se instrumenta una copia del binario.|
-|**Exclude:** `funcspec`|Especifica una especificación de función para excluir de la instrumentación por sondeos. Es útil cuando la inserción de sondeos de generación de perfiles en una función da lugar a resultados impredecibles o no deseados.<br /><br /> No utilice opciones **Exclude** e **Include** que hagan referencia a funciones del mismo binario.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Exclude** independientes.<br /><br /> `funcspec` se define como:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> **Exclude** es compatible con cobertura de código.<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para excluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|
-|**Include:** `funcspec`|Especifica una especificación de función en un binario para la instrumentación con sondeos. No se instrumentan el resto de funciones en los binarios.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Include** independientes.<br /><br /> No utilice opciones **Include** y **Exclude** que hagan referencia a funciones del mismo binario.<br /><br /> **Include** no es compatible con cobertura de código.<br /><br /> `funcspec` se define como:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para incluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|
+|**Exclude:** `funcspec`|Especifica una especificación de función para excluir de la instrumentación por sondeos. Es útil cuando la inserción de sondeos de generación de perfiles en una función da lugar a resultados impredecibles o no deseados.<br /><br /> No utilice opciones **Exclude** e **Include** que hagan referencia a funciones del mismo binario.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Exclude** independientes.<br /><br /> `funcspec` se define como:<br /><br /> [espacio de nombres\<separator1>] [clase\<separator2>]función<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> **Exclude** es compatible con cobertura de código.<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para excluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|
+|**Include:** `funcspec`|Especifica una especificación de función en un binario para la instrumentación con sondeos. No se instrumentan el resto de funciones en los binarios.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Include** independientes.<br /><br /> No utilice opciones **Include** y **Exclude** que hagan referencia a funciones del mismo binario.<br /><br /> **Include** no es compatible con cobertura de código.<br /><br /> `funcspec` se define como:<br /><br /> [espacio de nombres\<separator1>] [clase\<separator2>]función<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para incluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|
 |**DumpFuncs**|Enumera las funciones en la imagen especificada. No se realiza ninguna instrumentación.|
 |**ExcludeSmallFuncs**|Excluye de la instrumentación las funciones pequeñas, que son funciones cortas que no realizan ninguna llamada de función. La opción **ExcludeSmallFuncs** proporciona menos sobrecarga de instrumentación y, por tanto, una velocidad de instrumentación mejorada.<br /><br /> La exclusión de las funciones pequeñas también reduce el tamaño del archivo .*vsp* y el tiempo necesario para el análisis.|
 |**Mark:** {**Before**\|**After**\|**Top**\|**Bottom**}`,funcname,markid`|Inserta una marca de perfil (un identificador utilizado para delimitar los datos de informes) que puede utilizar para identificar el inicio o final de un intervalo de datos en el archivo de informe .vsp.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: nombre de la función de destino<br /><br /> `Markid`: un entero positivo (largo) que se usará como el identificador de la marca de perfil.|

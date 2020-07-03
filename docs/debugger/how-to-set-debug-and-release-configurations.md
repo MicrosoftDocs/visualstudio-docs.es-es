@@ -1,7 +1,7 @@
 ---
 title: Establecimiento de configuraciones de depuración y versión | Microsoft Docs
 ms.date: 10/05/2018
-ms.topic: reference
+ms.topic: how-to
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925470"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349164"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Establecer configuraciones Debug y Release en Visual Studio
 
@@ -60,7 +60,7 @@ o
 
 * En la barra de herramientas, elija **Depurar** o **Versión** en el cuadro de lista **Configuraciones de soluciones**.
 
-  ![Barra de herramientas de configuración de compilación](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![Configuración de compilación de las barras de herramientas](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="generate-symbol-pdb-files-for-a-build-c-c-visual-basic-f"></a><a name="BKMK_symbols_release"></a>Generación de archivos de símbolos (.pdb) para una compilación (C#, C++, Visual Basic, F#)
 

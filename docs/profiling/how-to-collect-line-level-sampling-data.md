@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Recopilar datos de muestreo en el nivel de línea | Microsoft Docs'
+title: Procedimiento para recopilar datos de muestreo en el nivel de línea | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
@@ -11,14 +11,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f64040c9180a152650de16b23276ab0e65cc9ead
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776363"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85330893"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Cómo: Recopilar datos de muestreo en el nivel de línea
+# <a name="how-to-collect-line-level-sampling-data"></a>Procedimiento Recopilar datos de muestreo en el nivel de línea
 El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar en qué punto del código de una función de uso intensivo del procesador, como una función con muestras muy exclusivas, el procesador tiene que dedicar más tiempo.
 
 ## <a name="overview"></a>Información general
@@ -52,7 +52,7 @@ El muestreo en el nivel de línea es la capacidad del generador de perfiles para
 
 - Antes de la generación de perfiles, escriba **VSPerfCLREnv /samplelineoff**. Esto afecta a aplicaciones y servicios.
 
-     O bien
+     o
 
 - Al iniciar una aplicación, escriba **VSPerfCmd /lineoff \<other arguments>** .
 

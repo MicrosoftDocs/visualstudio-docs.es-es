@@ -1,7 +1,7 @@
 ---
 title: Procedimiento para marcar y quitar marcadores de subprocesos | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733236"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349632"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedimiento para marcar y quitar marcadores de subprocesos (C#, Visual Basic y C++)
 
@@ -31,7 +31,7 @@ Los subprocesos marcados también reciben un tratamiento especial en la lista **
 ### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso
 
 - En las ventanas **Subprocesos** o **Inspección paralela**, busque el subproceso que le interese y haga clic en el icono de marca para seleccionar o borrar la marca.
-- En la ventana **Pilas paralelas**, haga clic con el botón derecho en un subproceso o grupo de subprocesos y seleccione **Marcar / \<subproceso>** o **Quitar marca / \<subproceso>** .
+- En la ventana **Pilas paralelas**, haga clic con el botón derecho en un subproceso o grupo de subprocesos, y seleccione **Marcar / \<thread>** o **Quitar marca / \<thread>** .
 
 ### <a name="to-unflag-all-threads"></a>Para quitar los marcadores de todos los subprocesos
 

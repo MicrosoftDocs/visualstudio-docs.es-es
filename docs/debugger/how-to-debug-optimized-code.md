@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Depuración de código optimizado | Microsoft Docs
+title: Procedimiento para depurar código optimizado | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430664"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349983"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
 

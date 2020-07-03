@@ -2,7 +2,7 @@
 title: Instalación de compatibilidad con Python
 description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
 ms.date: 03/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15869119ea867e41d3b91a1f046d1ffb995cd4e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75398422"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85540652"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -135,10 +135,10 @@ En Visual Studio 2019 y Visual Studio 2017, la carga de trabajo de Python se ins
 En Visual Studio 2015 y versiones anteriores, las rutas de instalación son las siguientes:
 
 - 32 bits:
-  - Ruta de acceso: *%Archivos de programa(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
+  - Ruta de acceso: *%Archivos de programa(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
   - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 - 64 bits:
-  - Ruta de acceso: *%Archivos de programa%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
+  - Ruta de acceso: *%Archivos de programa%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
   - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 
 donde:

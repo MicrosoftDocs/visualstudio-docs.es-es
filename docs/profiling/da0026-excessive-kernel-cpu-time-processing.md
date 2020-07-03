@@ -1,7 +1,7 @@
 ---
-title: 'DA0026: Tiempo de procesamiento excesivo de la CPU de kernel | Microsoft Docs'
+title: 'DA0026: Tiempo de procesamiento excesivo de la CPU de kernel | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777494"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85544630"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Tiempo de procesamiento excesivo de la CPU de kernel
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|TODO|
 |Categoría|Uso de Herramientas de generación de perfiles|
@@ -39,4 +39,4 @@ ms.locfileid: "74777494"
  La proporción relativamente alta de tiempo que la aplicación dedicó a la ejecución del modo kernel merece una mayor investigación. Una aplicación en modo usuario hace una transición al modo kernel para realizar operaciones de E/S, esperar las primitivas de sincronización de subproceso o proceso o realizar llamadas del sistema. Puede investigar los tipos de llamadas del sistema que la aplicación realiza y las funciones que son responsables de dichas llamadas cuando se selecciona la opción para recopilar pilas de llamadas de ejemplo basadas en las llamadas del sistema.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para investigar los tipos de llamadas del sistema que la aplicación realiza, vuelva a ejecutar el perfil y seleccione la opción para recopilar ejemplos basados en las llamadas del sistema. Si está ejecutando las herramientas de generación de perfiles desde el IDE, consulte [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md) para obtener más información. Si está ejecutando las herramientas de generación de perfiles desde la línea de comandos, vea la sección **Opciones de intervalo de muestreo** del artículo [VSPerfCmd](../profiling/vsperfcmd.md) en la referencia de herramientas de la línea de comandos de las herramientas de generación de perfiles.
+ Para investigar los tipos de llamadas del sistema que la aplicación realiza, vuelva a ejecutar el perfil y seleccione la opción para recopilar ejemplos basados en las llamadas del sistema. Vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md) si está ejecutando las herramientas de generación de perfiles dentro del IDE para obtener más información. Si está ejecutando las herramientas de generación de perfiles desde la línea de comandos, vea la sección **Opciones de intervalo de muestreo** del artículo [VSPerfCmd](../profiling/vsperfcmd.md) en la referencia de herramientas de la línea de comandos de las herramientas de generación de perfiles.

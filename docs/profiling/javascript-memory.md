@@ -2,7 +2,7 @@
 title: Análisis del uso de memoria de JavaScript en aplicaciones de UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - JavaScript
 helpviewer_keywords:
@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189385"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85331272"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -255,14 +255,14 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 
   Para filtrar información diferencial entre instantáneas, elige uno de los filtros **Ámbito** de la parte superior de las vistas diferenciales.
 
-- **Objetos dejados de la instantánea n.º \<número>** . Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.
+- **Objetos dejados de la instantánea n.º\<number>** . Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.
 
   > [!TIP]
   > Para mostrar la información más útil en este filtro, siga los pasos descritos en [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Objetos agregados entre las instantáneas n.º \<número> y \<número>** . Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.
+- **Objetos agregados entre las instantáneas n.º \<number> y \<number>** . Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.
 
-- **Todos los objetos de la instantánea n.º \<número>** . Este valor de filtro no filtra ningún objeto en el montón.
+- **Todos los objetos de la instantánea n.º \<number>** . Este valor de filtro no filtra ningún objeto en el montón.
 
   Para mostrar las referencias de objeto que no coinciden con el filtro **Ámbito** actual, seleccione **Mostrar referencias no coincidentes** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de la esquina superior derecha del panel. Si habilita este valor, las referencias no coincidentes se muestran con un texto gris.
 
@@ -347,7 +347,7 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>Sugerencias para identificar problemas de memoria
 
-- Siga el flujo de trabajo descrito en [Aislar una pérdida de memoria](#isolate-a-memory-leak) y use el filtro **Objetos dejados de la instantánea nº \<número>** en una vista de diferencias para identificar los posibles candidatos para las pérdidas de memoria.
+- Siga el flujo de trabajo descrito en [Aislamiento de una fuga de memoria](#isolate-a-memory-leak) y use el filtro **Objetos restantes de la instantánea nº \<number>** en una vista de diferencias para identificar los posibles candidatos para las fugas de memoria.
 
 - Usa [Buscar un objeto en el árbol de objetos](#find-an-object-in-the-object-tree) para ver dónde se hace referencia a un objeto en la jerarquía de memoria. La vista Raíces muestra cómo está enraizado un objeto al objeto global, lo que evitaría que se detectara durante la recolección de elementos no utilizados.
 

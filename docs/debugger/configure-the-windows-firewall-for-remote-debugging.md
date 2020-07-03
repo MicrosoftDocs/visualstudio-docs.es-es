@@ -1,19 +1,19 @@
 ---
 title: Configuración del Firewall de Windows para la depuración remota | Microsoft Docs
 ms.date: 10/31/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563726"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350698"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configuración del Firewall de Windows para la depuración remota
 
@@ -94,7 +94,7 @@ Puede instalar las herramientas de depuración remota en el equipo remoto o ejec
 
 En un equipo remoto, las herramientas de depuración remota se encuentran en:
 
-*\<Directorio de instalación de Visual Studio\>\\Common7\\IDE\\Depurador remoto\\\<x86*, *x64*, o *Appx*\>
+*\<Visual Studio installation directory\>\\Common7\\IDE\\Depurador remoto\\\<x86*, *x64*, or *Appx*\>
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Permitir y configurar el depurador remoto a través de Firewall de Windows
 
@@ -104,7 +104,7 @@ En un equipo remoto, las herramientas de depuración remota se encuentran en:
 
 1. Si **Depurador remoto** o **Visual Studio Remote Debugger** no aparece en **Aplicaciones y características permitidas**, seleccione **Cambiar configuración** y, después, elija **Permitir otra aplicación**.
 
-1. Si la aplicación de depurador remoto todavía no aparece en el cuadro de diálogo **Agregar una aplicación**, seleccione **Examinar** y vaya al *\<Directorio de instalación de Visual Studio\>\\Common7\\IDE\\Depurador remoto\\\<x86*, *x64* o *Appx*\>, en función de la arquitectura adecuada para la aplicación. Seleccione *msvsmon.exe* y, después, elija **Agregar**.
+1. Si la aplicación de depurador remoto todavía no aparece en el cuadro de diálogo **Agregar una aplicación**, seleccione **Examinar** y vaya a **\<Visual Studio installation directory\>\\Common7\\IDE\\Depurador remoto\\\<x86*, *x64*, or *Appx*\>, en función de la arquitectura adecuada para la aplicación. Seleccione *msvsmon.exe* y, después, elija **Agregar**.
 
 1. En la lista **Aplicaciones**, seleccione el **Depurador remoto** que acaba de agregar. Seleccione **Tipos de red** y elija uno o más tipos de red, incluido el tipo de red para la conexión remota.
 

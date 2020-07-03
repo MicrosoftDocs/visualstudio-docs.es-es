@@ -2,7 +2,7 @@
 title: Ventana interactiva (REPL) de Python
 description: Uso de la ventana interactiva (REPL) para el desarrollo rápido de código de Python en Visual Studio.
 ms.date: 02/11/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307116"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533554"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -48,7 +48,7 @@ En segundo lugar, cerca del botón del menú **Ver** > **Otras ventanas**, se en
 
 ![Elementos de menú de la ventana interactiva en Ver > Otras ventanas](media/interactive-window-menu.png)
 
-En tercer lugar, puede abrir una ventana **interactiva** en el archivo de inicio del proyecto o en un archivo independiente; para ello, seleccione el comando de menú **Depurar** > **Ejecutar\<Proyecto | Archivo> en el comando de menú interactivo** (**Mayús**+**Alt**+**F5**):
+En tercer lugar, puede abrir una ventana **interactiva** en el archivo de inicio del proyecto o en un archivo independiente; para ello, seleccione el comando de menú **Depurar** > **Ejecutar \<Project | File> en la ventana interactiva de Python** (**Mayús**+**Alt**+**F5**):
 
 ![Menú Execute Project in Python Interactive (Ejecutar proyecto en la ventana interactiva de Python)](media/interactive-execute-project.png)
 

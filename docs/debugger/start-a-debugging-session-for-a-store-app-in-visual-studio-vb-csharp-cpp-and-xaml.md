@@ -2,7 +2,7 @@
 title: Iniciar una sesión de depuración en una aplicación para UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4504dda362c8a50f33168a12839e894a14316d7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72436005"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536557"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Iniciar una sesión de depuración para una aplicación de UWP
 
@@ -76,7 +76,7 @@ La depuración continúa hasta que se alcanza un punto de interrupción, se susp
 
 Puede establecer el destino de depuración en la barra de herramientas de Visual Studio o en la página de propiedades de depuración del proyecto. Seleccione una de las opciones siguientes:
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Equipo local**|Depura la aplicación en la sesión actual en el equipo local.|
 |**Simulador**|Depura la aplicación en el simulador de Visual Studio de las aplicaciones para UWP. El simulador es una ventana del escritorio que simula funciones del dispositivo, como gestos táctiles y rotación de dispositivos, que pueden no existir en el equipo local. La opción del simulador solo está disponible si la **Versión mínima de la plataforma de destino** de la aplicación es anterior o igual a la del sistema operativo del equipo local. Para más información, vea [Ejecutar aplicaciones para UWP en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|
@@ -114,7 +114,7 @@ En aplicaciones de C++, Visual Studio depura el código nativo de forma predete
 
 - En las aplicaciones de C++, seleccione uno de los siguientes depuradores en el menú desplegable **Tipo de depurador** en la página de propiedades **Depuración**.
 
-|||
+|NOMBRE|Descripción|
 |-|-|
 |**Solo administrado**|Depura el código administrado de la aplicación. Se omiten el código de JavaScript y el de C/C++ nativo.|
 |**Solo nativo**|Depura el código C/C++ nativo de la aplicación. Se omiten el código administrado y el de JavaScript.|
@@ -189,7 +189,7 @@ Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_l
 
    1. Para ver una lista que incluye el identificador PackageFullName de todas las aplicaciones, escriba `Get-AppxPackage` en el símbolo del sistema de PowerShell.
 
-   1. En el símbolo del sistema de PowerShell, especifique `Enable-AppxDebug <PackageFullName>`, donde \<PackageFullName> es el identificador PackageFullName de la aplicación.
+   1. En el símbolo del sistema de PowerShell, escriba `Enable-AppxDebug <PackageFullName>`, donde \<PackageFullName> es el identificador PackageFullName de la aplicación.
 
 1. Seleccione **Depurar** > **Asociar al proceso**.
 

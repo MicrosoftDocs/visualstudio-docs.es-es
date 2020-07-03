@@ -1,7 +1,7 @@
 ---
 title: Procedimiento para depurar excepciones de ASP.NET | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9f8391d355b2f540db4e38486b8992d940336464
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733799"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350139"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Procedimiento para depurar excepciones de ASP.NET
+# <a name="how-to-debug-aspnet-exceptions"></a>Procedimiento Depuración de excepciones de ASP.NET
 La depuración de excepciones es una parte importante del desarrollo de una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sólida. Encontrará información general sobre cómo depurar excepciones en [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).
 
  Para depurar excepciones no controladas de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe asegurarse de que el depurador se detenga en ellas. El runtime de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] tiene un controlador de excepciones de nivel superior. Por consiguiente, el depurador nunca se interrumpe en excepciones no controladas de forma predeterminada. Para interrumpir el depurador cuando se produce una excepción, debe seleccionar la opción **Interrumpir cuando una excepción es: Producida** específica para esa excepción en el cuadro de diálogo **Excepciones**.

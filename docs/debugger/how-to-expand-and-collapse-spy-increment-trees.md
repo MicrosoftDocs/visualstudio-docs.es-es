@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Expansión y contracción de árboles de Spy++ | Microsoft Docs
+title: Procedimiento para expandir y contraer árboles de Spy++ | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733315"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85349593"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedimiento Expansión y contracción de árboles de Spy++
 Hay dos métodos para expandir y contraer las vistas Ventanas, Procesos y Subprocesos: hacer clic en los iconos de la ventana o usar el menú **Árbol**. Los iconos + y- del árbol actúan como en la ventana del proyecto de C++.

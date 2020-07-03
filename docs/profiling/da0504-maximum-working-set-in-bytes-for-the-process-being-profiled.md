@@ -1,7 +1,7 @@
 ---
-title: 'DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil | Microsoft Docs'
+title: 'DA0504: Espacio de trabajo máximo en bytes para el proceso del que se genera el perfil | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0504
 - vs.performance.504
@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a5b15b481115a1ba8cab59d7839153bd0a611a1
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779329"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85532163"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Conjunto de trabajo máximo en bytes para el proceso que se va a perfilar
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|DA0504|
 |Categoría|Administración de recursos|

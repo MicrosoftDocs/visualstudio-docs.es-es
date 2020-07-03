@@ -1,7 +1,7 @@
 ---
-title: 'DA0010: GetHashCode consume muchos recursos | Microsoft Docs'
+title: 'DA0010: GetHashCode consume muchos recursos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
 - vs.performance.DA0010
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8f94277822d1fcd4210f0f8d79591fc4e2ed3d9e
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85520684"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode consume muchos recursos
+# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode que consume muchos recursos
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|DA0010|
 |Categoría|Uso de .NET Framework|

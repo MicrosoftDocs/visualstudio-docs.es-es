@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Visualización de documentos de script | Microsoft Docs
+title: Procedimiento para visualizar documentos de script | Microsoft Docs
 ms.date: 11/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714442"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348449"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Procedimiento Visualización de documentos de script (JavaScript)
 
@@ -33,7 +33,7 @@ Para algunos tipos de aplicaciones que generan páginas dinámicamente, es más 
 
 ### <a name="to-view-a-server-side-script-document"></a>Para ver un documento de script de servidor
 
-1. En el **Explorador de soluciones**, abra el nodo **\<Nombre de ruta de acceso del sitio web>** .
+1. En el **Explorador de soluciones**, abra el nodo **\<Website Pathname>** .
 
 2. Haga doble clic en el archivo de script que desee ver.
 

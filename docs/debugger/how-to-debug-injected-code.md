@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Depuración de código insertado | Microsoft Docs
+title: Procedimiento para depurar código insertado | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.injected
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847784"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85350048"
 ---
 # <a name="how-to-debug-injected-code"></a>Procedimiento Depuración de código insertado
 

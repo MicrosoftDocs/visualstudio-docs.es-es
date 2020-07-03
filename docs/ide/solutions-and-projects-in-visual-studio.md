@@ -1,6 +1,6 @@
 ---
 title: Soluciones y proyectos
-ms.date: 10/05/2017
+ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742ee7a8450c5d2cf4d7a167a1977b3c1c18ef21
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285236"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85468735"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -74,13 +74,16 @@ Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** 
 
 Muchos comandos de menú están disponibles en el menú que aparece al hacer clic derecho en distintos elementos del **Explorador de soluciones**. Estos comandos incluyen compilar un proyecto, administrar paquetes NuGet, agregar una referencia, cambiar el nombre de un archivo y ejecutar pruebas, solo por nombrar algunos. La barra de herramientas de la parte superior del **Explorador de soluciones** tiene botones para cambiar de una vista de solución a una vista de carpeta, mostrar archivos ocultos, contraer todos los nodos y mucho más.
 
+> [!TIP]
+> Si ha cerrado el Explorador de soluciones y quiere volver a abrirlo, elija **Ventana** > **Restablecer diseños de ventana** en la barra de menús.
+
 Para los proyectos de ASP.NET Core, puede personalizar cómo se anidan los archivos en el **Explorador de soluciones**. Para obtener más información, consulte [Personalizar el anidamiento de archivos en el Explorador de soluciones](file-nesting-solution-explorer.md).
 
-> [!TIP]
-> Para ver una lista de algunos de los iconos que aparecen en el Explorador de soluciones, consulte la página [Iconos de la Vista de clases y del Examinador de objetos](class-view-and-object-browser-icons.md).
+Y, para ver una lista de algunos de los iconos que aparecen en el Explorador de soluciones, vea [Iconos de la Vista de clases y del Examinador de objetos](class-view-and-object-browser-icons.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [IDE de Visual Studio](../get-started/visual-studio-ide.md)
+- [Portar, migrar y actualizar proyectos](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Proyectos y soluciones (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
 - [Agregar y quitar elementos del proyecto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)

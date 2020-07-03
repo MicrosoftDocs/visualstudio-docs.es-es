@@ -2,7 +2,7 @@
 title: Referencia de ventana Entornos de Python
 description: Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio.
 ms.date: 03/18/2019
-ms.topic: conceptual
+ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307122"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85545501"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -60,7 +60,7 @@ A medida que usa las ventanas interactivas en su flujo de trabajo diario, probab
 
 Los scripts de inicio contienen código que la ventana **interactiva** carga y ejecuta automáticamente, como importaciones, definiciones de función y literalmente cualquier otra cosa. Hay dos maneras de hacer referencia a dichos scripts:
 
-1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* , donde &lt;version&gt; corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
+1. Cuando instala un entorno, Visual Studio crea una carpeta *Documents\Visual Studio \<version>\Python Scripts\\\<environment>* donde &lt;versión&gt; se corresponde a la versión de Visual Studio (como 2017 o 2019) y &lt;entorno&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana **interactiva** para ese entorno, se cargan y ejecutan los archivos de *.py* que se encuentran aquí en orden alfabético.
 
 1. El control **Scripts** de la pestaña **Herramientas** > **Opciones** > **Python** > **Ventanas interactivas** (consulte [Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) pretende especificar una carpeta adicional para los scripts de inicio que se cargan y ejecutan en todos los entornos. No obstante, esta característica no funciona actualmente.
 
@@ -105,7 +105,7 @@ Especifique los filtros de un término de búsqueda en la lista de paquetes inst
 ![Pestaña de los paquetes de los entornos de Python con una búsqueda en "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Como puede ver en la imagen anterior, los resultados de búsqueda muestran un número de paquetes que coinciden con el término de búsqueda; la primera entrada de la lista, sin embargo, es un comando para ejecutar **pip install \<name>** directamente. Si se encuentra en la pestaña **Paquetes (Conda)** , en su lugar verá **conda install \<name>** :
+Como puede ver en la imagen anterior, los resultados de la búsqueda muestran un número de paquetes que coinciden con el término de búsqueda; pero la primera entrada de la lista es un comando para ejecutar **pip install \<name>** directamente. Si se encuentra en la pestaña **Paquetes (Conda)** , en su lugar verá **conda install \<name>** :
 
 ::: moniker range="vs-2017"
 ![Pestaña de paquetes de Conda que muestra el comando conda install](media/environments/environments-conda-tab-install.png)

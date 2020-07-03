@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: TerryGLee
-ms.author: tglee
+author: Mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
+ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597339"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85418865"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 
@@ -41,7 +41,7 @@ Para acceder a la página **Firma**, seleccione un nodo de proyecto en el **Expl
 
 Casilla **Firmar los manifiestos de ClickOnce**
 
-Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para obtener más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Botón **Seleccionar de almacén**
 
@@ -73,15 +73,15 @@ Especifica la dirección de un servidor que marca la firma con un tiempo. Si se 
 
 Casilla **Firmar el ensamblado**
 
-Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 Lista **Elija un archivo de clave de nombre seguro**
 
-Permite especificar un archivo de clave con nombre seguro nuevo o existente para firmar el ensamblado. Seleccione **\<Examinar... >** para seleccionar un archivo de clave existente.
+Permite especificar un archivo de clave con nombre seguro nuevo o existente para firmar el ensamblado. Seleccione **\<Browse...>** para seleccionar un archivo de clave existente.
 
-Seleccione **\<Nuevo... >** para crear un nuevo archivo de clave para firmar el ensamblado. Aparece el cuadro de diálogo **Crear clave de nombre seguro**, que se puede usar para especificar un nombre de archivo de clave y proteger el archivo de clave con una contraseña. La contraseña debe tener al menos 6 caracteres. Si especifica una contraseña, se crea un archivo de intercambio de información personal (.pfx); si no especifica ninguna contraseña, se crea un archivo de clave con nombre seguro (.snk).
+Seleccione **\<New...>** para crear un archivo de clave para firmar el ensamblado. Aparece el cuadro de diálogo **Crear clave de nombre seguro**, que se puede usar para especificar un nombre de archivo de clave y proteger el archivo de clave con una contraseña. La contraseña debe tener al menos 6 caracteres. Si especifica una contraseña, se crea un archivo de intercambio de información personal (.pfx); si no especifica ninguna contraseña, se crea un archivo de clave con nombre seguro (.snk).
 
 Botón **Cambiar contraseña**
 

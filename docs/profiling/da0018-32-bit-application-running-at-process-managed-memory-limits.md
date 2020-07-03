@@ -1,7 +1,7 @@
 ---
-title: 'DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos | Microsoft Docs'
+title: 'DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -13,16 +13,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780070"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85548153"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
 
-|||
+|Elemento|Valor|
 |-|-|
 |Identificador de regla|DA0018|
 |Categoría|Uso de Herramientas de generación de perfiles|
@@ -69,4 +69,4 @@ ms.locfileid: "74780070"
 
   Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.
 
-  Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctiva alguna.
+  Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctora alguna.

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955a968c52c963c8c6f0204f7687de2bd8482260
-ms.sourcegitcommit: c3b6af7367bef67a02c37404534229b935f713a9
+ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80892780"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85533762"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -35,14 +35,43 @@ Las características del editor de Visual Studio como el uso de colores para la 
 
 Visual Studio actualmente ofrece compatibilidad con el uso de colores para la sintaxis y la finalización de instrucciones básicas para los lenguajes siguientes mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje favorito no está en la tabla, no se preocupe: puede agregarlo.
 
-|||||||
-|-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
-|Docker|Jade|Make|Ruby|TypeScript|YAML|
+
+- Bat
+- F#
+- Java
+- Markdown
+- Rust
+- Visual Basic
+- Clojure
+- Ir
+- JavaDoc
+- Objective-C
+- ShaderLab
+- C#
+- CMake
+- Groovy
+- JSON
+- Perl
+- ShellScript
+- Visual C++
+- CoffeeScript
+- HTML
+- LESS
+- Python
+- SQL
+- VBNet
+- CSS
+- INI
+- LUA
+- R
+- Swift
+- XML
+- Docker
+- Jade
+- Make
+- Ruby
+- TypeScript
+- YAML
 
 Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.
 
@@ -76,11 +105,11 @@ En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su 
 
 |Nombre de carpeta|Descripción|
 |-----------------|-----------------|
-|\\ *\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
+|\\*\<language name>*|Carpeta del lenguaje. Reemplace *\<language name>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
 |*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|
 |*\Snippets*|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 
-En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>* . Si la carpeta *Extensiones* no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<user name>* . Si la carpeta *Extensiones* no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
 > [!TIP]
 > Si tiene cualquier archivo abierto en el editor, debe cerrarlo y volver a abrirlo para ver el resaltado de la sintaxis después de agregar las gramáticas de TextMate.

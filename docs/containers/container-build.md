@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027262"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536869"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Compilación de aplicaciones en contenedores con Visual Studio
 
@@ -105,7 +105,7 @@ La preparación solo se produce en el modo **Rápido**, por lo que el contenedor
 
 Para que la depuración funcione en contenedores, Visual Studio usa la asignación de volúmenes a fin de asignar el depurador y las carpetas de NuGet desde el equipo host. La asignación de volúmenes se describe en la documentación de Docker [aquí](https://docs.docker.com/storage/volumes/). Estos son los volúmenes que se montan en el contenedor:
 
-|||
+|Volumen|Descripción|
 |-|-|
 | **Depurador remoto** | Contiene los bits necesarios para ejecutar el depurador en el contenedor en función del tipo de proyecto. Esto se explica más |detalladamente en la sección [Depuración](#debugging).
 | **Carpeta de la aplicación** | Contiene la carpeta del proyecto donde se encuentra el Dockerfile.|
@@ -166,7 +166,7 @@ Para restaurar la optimización del rendimiento, quite la propiedad del archivo 
 
 El proceso de ejecución del depurador depende del tipo de proyecto y del sistema operativo del contenedor:
 
-|||
+|Escenario|Proceso del depurador|
 |-|-|
 | **Aplicaciones .NET Core (contenedores de Linux)**| Visual Studio descarga `vsdbg` y lo asigna al contenedor, después se llama con el programa y los argumentos (es decir, `dotnet webapp.dll`) y luego el depurador se asocia al proceso. |
 | **Aplicaciones .NET Core (contenedores de Windows)**| Visual Studio usa `onecoremsvsmon` y lo asigna al contenedor, lo ejecuta como punto de entrada y luego Visual Studio se conecta a él y se asocia al programa. Es similar a como normalmente se configuraría la depuración remota en otro equipo o máquina virtual.|
@@ -178,7 +178,7 @@ Para obtener información sobre `vsdbg.exe`, vea [Depuración fuera de ruta de .
 
 Visual Studio usa un punto de entrada de contenedor personalizado en función del tipo de proyecto y del sistema operativo del contenedor; estas son las diferentes combinaciones:
 
-|||
+|Tipo de contenedor|Punto de entrada|
 |-|-|
 | **Contenedores de Linux** | El punto de entrada es `tail -f /dev/null`, que es una espera infinita para mantener el contenedor en ejecución. Cuando la aplicación se inicia a través del depurador, este es el responsable de ejecutar la aplicación (es decir, `dotnet webapp.dll`). Si se inicia sin depurar, las herramientas ejecutan `docker exec -i {containerId} dotnet webapp.dll` para ejecutar la aplicación.|
 | **Contenedores de Windows**| El punto de entrada es algo como `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, que ejecuta el depurador, así que escucha para detectar conexiones. Cuando se inicia sin depurar, el depurador ejecuta la aplicación y un comando `docker exec`. En aplicaciones web .NET Framework, el punto de entrada es ligeramente diferente donde se agrega `ServiceMonitor` al comando.|

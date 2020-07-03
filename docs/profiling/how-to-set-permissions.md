@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Establecer permisos | Microsoft Docs'
+title: Procedimiento para establecer permisos | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -14,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774594"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85328946"
 ---
-# <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
+# <a name="how-to-set-permissions"></a>Procedimiento Establecer permisos
 
 En este artículo se describe cómo un administrador de un equipo concede los permisos de seguridad necesarios para la generación de perfiles a un usuario o grupo que no tiene permisos de administrador en ese equipo.
 
@@ -64,13 +64,13 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 2. Haga clic con el botón derecho en la carpeta y después haga clic en **Propiedades**.
 
-     Aparece el cuadro de diálogo **\<Nombre de carpeta > Propiedades**.
+     Aparecerá el cuadro de diálogo **Propiedades de \<folder name>** .
 
 3. Haga clic en la pestaña **Seguridad** .
 
 4. Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.
 
-5. En el cuadro **Permisos para \<nombre de usuario >** , seleccione la casilla **Control total**.
+5. En el cuadro **Permisos para \<user name>** , active la casilla **Control total**.
 
 6. Haga clic en **Aceptar**.
 
@@ -104,7 +104,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:
+     Este comando concede a la cuenta de \<user name> o \<group name> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede acceder. La opción \<right> puede ser uno o varios de los valores siguientes:
 
     - FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.
 

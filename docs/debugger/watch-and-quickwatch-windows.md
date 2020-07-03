@@ -2,7 +2,7 @@
 title: Establecimiento de una inspección en las variables | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
+ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301018"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "85348033"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Inspección de variables con las ventanas Inspección e Inspección rápida
 
@@ -76,7 +76,7 @@ int main()
 >Solo en C++
 >- Es posible que deba calificar el contexto de un nombre de variable o una expresión que use un nombre de variable. El contexto es la función, el archivo de código fuente o el módulo donde se encuentra una variable. Si tiene que calificar el contexto, use la sintaxis del [operador de contexto (C++)](../debugger/context-operator-cpp.md) en el **nombre** de la ventana **Inspección**.
 >
->- Puede agregar nombres de registro y nombres de variable mediante **$\<nombre de&nbsp;registro>** o **@\<nombre de&nbsp;registro>** al **nombre** en la ventana **Inspección**. Para obtener más información, consulta [Pseudovariables](../debugger/pseudovariables.md).
+>- Puede agregar nombres de registro y nombres de variable mediante **$\<register&nbsp;name>** o **@\<register&nbsp;name>** al **Nombre** en la ventana **Inspección**. Para obtener más información, consulta [Pseudovariables](../debugger/pseudovariables.md).
 
 ## <a name="use-expressions-in-a-watch-window"></a>Uso de expresiones en una ventana Inspección
 
@@ -280,7 +280,7 @@ static void Main(string[] args)
 
 Para observar la variable `a`:
 
-1. Establezca un punto de interrupción en la línea `a = a + b;`.
+1. Establezca un punto de interrupción en la línea `a = a + b;` .
 
 1. Inicie la depuración. La ejecución se pone en pausa en el punto de interrupción.
 

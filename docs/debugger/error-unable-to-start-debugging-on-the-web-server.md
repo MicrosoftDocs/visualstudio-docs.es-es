@@ -1,7 +1,7 @@
 ---
-title: 'Error: No es posible iniciar la depuración en el servidor web | Microsoft Docs'
+title: 'Error: No es posible iniciar la depuración en el servidor web | Microsoft Docs'
 ms.date: 05/23/2018
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
+ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404357"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "85460044"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No es posible iniciar la depuración en el servidor web
 

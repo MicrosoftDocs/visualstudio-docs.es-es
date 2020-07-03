@@ -1,9 +1,9 @@
 ---
-title: 'Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo'
+title: 'Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede volver a conectar a este equipo'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: troubleshooting
+ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -16,21 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
+ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737408"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "85536674"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo
 Este error significa que el servicio del depurador remoto se ejecuta con una cuenta de usuario que no se puede autenticar cuando intenta conectarse al equipo desde el que se realiza la depuración. Este error se puede producir cuando se realiza la depuración remota con el motor de depuración heredado y el depurador remoto se ejecuta como un servicio.
 
  En la tabla siguiente se muestran las cuentas que pueden tener acceso al equipo:
 
-|||||
+|Escenario|Cuenta LocalSystem|Cuenta de dominio|Cuentas locales con el mismo nombre de usuario y contraseña en ambos equipos|
 |-|-|-|-|
-||Cuenta LocalSystem|Cuenta de dominio|Cuentas locales con el mismo nombre de usuario y contraseña en ambos equipos|
 |Ambos equipos en el mismo dominio|Sí|Sí|Sí|
 |Ambos equipos en dominios que tienen confianza bidireccional|No|No|Sí|
 |Uno o ambos equipos en un grupo de trabajo|No|No|Sí|

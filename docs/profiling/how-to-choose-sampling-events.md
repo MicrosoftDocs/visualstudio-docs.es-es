@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Elegir eventos de muestreo | Microsoft Docs'
+title: Procedimiento para elegir eventos de muestreo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8473ca1f5829faa2a76b5560132c7aada152dc3a
+ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779056"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85329280"
 ---
-# <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
+# <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:
 
 - Ciclos de reloj: para problemas relacionados con la CPU.
@@ -61,7 +61,7 @@ De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[v
 
 ## <a name="see-also"></a>Vea también
 - [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
-- [Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+- [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 - [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)
 - [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
 - [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)
