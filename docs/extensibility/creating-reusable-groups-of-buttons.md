@@ -1,7 +1,7 @@
 ---
-title: Creación de grupos de botones reutilizables ? Microsoft Docs
+title: Creando grupos de botones reutilizables | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
@@ -12,27 +12,27 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfba6701890f73ce6438ddc03a338912841a37d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739464"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903641"
 ---
-# <a name="create-reusable-groups-of-buttons"></a>Crear grupos reutilizables de botones
-Un grupo de comandos es una colección de comandos que siempre aparecen juntos en un menú o barra de herramientas. Cualquier grupo de comandos se puede reutilizar asignándolo a diferentes menús primarios en la sección CommandPlacements del archivo *.vsct.*
+# <a name="create-reusable-groups-of-buttons"></a>Crear grupos de botones reutilizables
+Un grupo de comandos es una colección de comandos que siempre aparecen juntos en un menú o una barra de herramientas. Cualquier grupo de comandos se puede volver a usar asignándole a distintos menús primarios en la sección CommandPlacements del archivo *. Vsct* .
 
- Los grupos de comandos suelen contener botones, pero también pueden contener otros menús o cuadros combinados.
+ Normalmente, los grupos de comandos contienen botones, pero también pueden contener otros menús o cuadros combinados.
 
-## <a name="to-create-a-reusable-group-of-buttons"></a>Para crear un grupo reutilizable de botones
+## <a name="to-create-a-reusable-group-of-buttons"></a>Para crear un grupo de botones reutilizable
 
-1. Cree un proyecto `ReusableButtons`VSIX denominado . Para obtener más información, consulte [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Cree un proyecto VSIX denominado `ReusableButtons` . Para obtener más información, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **ReusableCommand**. En el **Explorador**de soluciones , haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar** > **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a**Extensibilidad** de **Visual C-** > y seleccione **Comando personalizado**. En el campo **Nombre** en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *ReusableCommand.cs*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **ReusableCommand**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *ReusableCommand.CS*.
 
-3. En el archivo *.vsct,* vaya a la sección Símbolos y busque el elemento GuidSymbol que contiene grupos y comandos para el proyecto. Debe denominarse guidReusableCommandPackageCmdSet.
+3. En el archivo *. Vsct* , vaya a la sección de símbolos y busque el elemento GuidSymbol que contiene los grupos y los comandos del proyecto. Debe denominarse guidReusableCommandPackageCmdSet.
 
-4. Agregue un IDSymbol para cada botón que agregará al grupo, como en el ejemplo siguiente.
+4. Agregue un IDSymbol para cada botón que vaya a agregar al grupo, como en el ejemplo siguiente.
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntos e
 
      De forma predeterminada, la plantilla de elemento de comando crea un grupo denominado **MyMenuGroup** y un botón que tiene el nombre que proporcionó, junto con una entrada IDSymbol para cada uno.
 
-5. En la sección Grupos, cree un elemento Group que tenga los mismos atributos GUID e ID que los especificados en la sección Símbolos. También puede utilizar un grupo existente o la entrada proporcionada por la plantilla de comando, como en el ejemplo siguiente. Este grupo aparece en el menú **Herramientas**
+5. En la sección grupos, cree un elemento Group que tenga los mismos atributos GUID y ID que los que se indican en la sección Symbols. También puede usar un grupo existente o usar la entrada proporcionada por la plantilla de comandos, como en el ejemplo siguiente. Este grupo aparece en el menú **herramientas**
 
     ```xml
     <Groups>
@@ -54,11 +54,11 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntos e
     </Groups>
     ```
 
-## <a name="to-create-a-group-of-buttons-for-reuse"></a>Para crear un grupo de botones para reutilizarlos
+## <a name="to-create-a-group-of-buttons-for-reuse"></a>Para crear un grupo de botones para su reutilización
 
-1. Puede colocar un comando o menú en un grupo utilizando el grupo como elemento primario en la definición del comando o menú, o colocando el comando o menú en el grupo mediante la sección CommandPlacements.
+1. Puede colocar un comando o un menú en un grupo utilizando el grupo como elemento primario en la definición del comando o menú, o colocando el comando o el menú en el grupo mediante la sección CommandPlacements.
 
-     En la sección Botones, defina un botón que tenga el grupo como elemento primario o use el botón proporcionado por la plantilla de paquete, como se muestra en el ejemplo siguiente.
+     En la sección botones, defina un botón que tenga el grupo como primario, o use el botón proporcionado por la plantilla de paquete, como se muestra en el ejemplo siguiente.
 
     ```xml
     <Button guid="guidReusableCommandPackageCmdSet" id="ReusableCommandId" priority="0x0100" type="Button">
@@ -70,7 +70,7 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntos e
     </Button>
     ```
 
-2. Si un botón debe aparecer en más de un grupo, cree una entrada para él en la sección CommandPlacements, que debe colocarse después de la sección Commands. Establezca los atributos GUID e ID del elemento CommandPlacement para que coincidan con los del botón que desea colocar y, a continuación, establezca el GUID y el identificador de su elemento Primario en los del grupo de destino, como se muestra en el ejemplo siguiente.
+2. Si un botón debe aparecer en más de un grupo, cree una entrada para él en la sección CommandPlacements, que debe colocarse después de la sección de comandos. Establezca los atributos GUID e ID del elemento CommandPlacement para que coincidan con los del botón que desea colocar y, a continuación, establezca el GUID y el identificador de su elemento primario en los del grupo de destino, como se muestra en el ejemplo siguiente.
 
     ```xml
     <CommandPlacements>
@@ -81,13 +81,13 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntos e
     ```
 
     > [!NOTE]
-    > El valor del campo Prioridad determina la posición del comando en el nuevo grupo de comandos. Las prioridades establecidas en el elemento CommandPlacement reemplazan las establecidas en la definición del elemento. Los comandos que tienen valores de prioridad más bajos se muestran antes que los comandos que tienen valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero la posición relativa de los comandos que tienen el mismo valor de prioridad no se puede garantizar porque el orden en el que el comando **devenv /setup** crea la interfaz final del registro puede no ser coherente.
+    > El valor del campo Priority determina la posición del comando en el nuevo grupo de comandos. Las prioridades establecidas en el elemento CommandPlacement reemplazan a las establecidas en la definición del elemento. Los comandos que tienen valores de prioridad inferiores se muestran antes que los que tienen valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero no se puede garantizar la posición relativa de los comandos que tienen el mismo valor de prioridad porque es posible que el orden en el que el comando **devenv/Setup** cree la interfaz final del registro no sea coherente.
 
-## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Para poner un grupo reutilizable de botones en un menú
+## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Para colocar un grupo reutilizable de botones en un menú
 
-1. Cree una entrada `CommandPlacements` en la sección. Establezca el GUID y `CommandPlacement` el identificador del elemento en los del grupo y establezca el GUID principal y el identificador en los de la ubicación de destino.
+1. Cree una entrada en la `CommandPlacements` sección. Establezca el GUID y el identificador del `CommandPlacement` elemento en los del grupo, y establezca el GUID y el identificador principales en los de la ubicación de destino.
 
-    La sección CommandPlacements debe colocarse justo después de la sección Comandos:
+    La sección CommandPlacements debe colocarse justo después de la sección commands:
 
    ```xml
    <CommandTable>
@@ -98,9 +98,9 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntos e
    </CommandTable>
    ```
 
-    Un grupo de comandos se puede incluir en más de un menú. El menú primario puede ser uno que ha [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] creado, uno proporcionado por (como se describe en *ShellCmdDef.vsct* o *SharedCmdDef.vsct*), o uno que se define en otro VSPackage. El número de capas de elementos primarios es ilimitado [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] siempre y cuando el menú primario se conecte finalmente a o a un menú contextual que se muestra mediante un VSPackage.
+    Un grupo de comandos se puede incluir en más de un menú. El menú primario puede ser el que ha creado, uno proporcionado por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (como se describe en *ShellCmdDef. Vsct* o *SharedCmdDef. Vsct*), o uno que se define en otro VSPackage. El número de capas parentales es ilimitado, siempre que el menú primario se conecte finalmente a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o a un menú contextual que se muestre en un VSPackage.
 
-    En el ejemplo siguiente se coloca el grupo en la barra de herramientas **del Explorador** de soluciones, a la derecha de los otros botones.
+    En el ejemplo siguiente se coloca el grupo en la barra de herramientas **Explorador de soluciones** , a la derecha de los demás botones.
 
    ```xml
    <CommandPlacements>

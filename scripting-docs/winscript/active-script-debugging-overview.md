@@ -5,7 +5,7 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
@@ -13,18 +13,18 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0181ee305c99a1d0af1d3e1e965c6ac8fe16f375
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572276"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835672"
 ---
 # <a name="active-script-debugging-overview"></a>Información general acerca de la depuración de Active Script
 Las interfaces de depuración de Active Script permiten la depuración independiente del idioma y del host, y admiten una amplia variedad de entornos de desarrollo.  
   
- ![Proceso de script host](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
-Figura 1  
+ ![Proceso de host de scripts](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+En la Ilustración 1  
   
  Un entorno de depuración independiente del idioma puede admitir cualquier lenguaje de programación o una combinación de lenguajes de programación, sin necesidad de tener conocimientos específicos sobre cualquiera de estos lenguajes. El entorno de depuración también admite ejecutar instrucciones paso a paso entre lenguajes, así como puntos de interrupción. Esta información general se centra principalmente en la compatibilidad con lenguajes de scripting, como VBScript y [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
@@ -43,10 +43,10 @@ Figura 1
   
  **administrador de depuración de máquina** Un componente que mantiene un registro de los procesos de aplicaciones que se pueden depurar.  
   
- **administrador de depuración del proceso**  
+ **procesar el administrador de depuración**  
  Un componente que mantiene el árbol de documentos que se pueden depurar para una aplicación concreta, realiza un seguimiento de los subprocesos en ejecución, etcétera.  
   
- **contexto de documento**  
+ **contexto del documento**  
  Un contexto de documento es una abstracción que representa un intervalo específico en el código fuente de un documento host.  
   
  **contexto de código**  
@@ -184,7 +184,7 @@ Figura 1
  Proporciona un contexto dentro de un árbol de proyectos para extender la funcionalidad de la interfaz `IDebugDocumentProvider`.  
   
 ## <a name="debugger-ide"></a>IDE del depurador  
- El IDE es una interfaz de usuario de depuración independiente del lenguaje. Proporciona lo siguiente:  
+ El IDE es una interfaz de usuario de depuración independiente del lenguaje. Ofrece:  
   
 - Visores o editores de documentos.  
   

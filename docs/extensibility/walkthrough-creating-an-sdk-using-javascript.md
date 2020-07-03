@@ -1,45 +1,45 @@
 ---
-title: 'Tutorial: Creación de un SDK mediante JavaScript ? Microsoft Docs'
+title: 'Tutorial: crear un SDK con JavaScript | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3a3fa110bd6521443521449898474299dd267d6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697503"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904941"
 ---
-# <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: Crear un SDK con JavaScript
-En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático simple como una extensión de Visual Studio (VSIX).  El tutorial se divide en estas partes:
+# <a name="walkthrough-create-an-sdk-using-javascript"></a>Tutorial: crear un SDK mediante JavaScript
+En este tutorial se enseña cómo usar JavaScript para crear un SDK de Math sencillo como extensión de Visual Studio (VSIX).  El tutorial se divide en estas partes:
 
-- [Para crear el proyecto SDK de extensión SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)
+- [Para crear el proyecto de SDK de extensión SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)
 
-- [Para crear una aplicación de ejemplo que use el SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)
+- [Para crear una aplicación de ejemplo que usa el SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)
 
-  Para JavaScript, no hay ningún tipo de proyecto de biblioteca de clases. En este tutorial, el archivo *arithmetic.js* de ejemplo se crea directamente en el proyecto VSIX. En la práctica, se recomienda compilar y probar primero los archivos JavaScript y CSS como una aplicación de la Tienda Windows (por ejemplo, mediante la plantilla Aplicación en **blanco)** antes de colocarlos en un proyecto VSIX.
+  En JavaScript, no hay ningún tipo de proyecto de biblioteca de clases. En este tutorial, el archivo de *arithmetic.js* de ejemplo se crea directamente en el Proyecto VSIX. En la práctica, se recomienda compilar y probar primero los archivos JavaScript y CSS como una aplicación de la tienda Windows (por ejemplo, usando la plantilla **aplicación vacía** ) antes de colocarlos en un proyecto VSIX.
 
-## <a name="prerequisites"></a>Prerrequisitos
- Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea SDK de [Visual Studio](../extensibility/visual-studio-sdk.md).
+## <a name="prerequisites"></a>Requisitos previos
+ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>Para crear el proyecto SDK de extensión SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>Para crear el proyecto de SDK de extensión SimpleMathVSIX
 
-1. En la barra de menús, elija **Archivo** > **nuevo** > **proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2. En la lista de categorías de plantilla, en **Visual C,** seleccione **Extensibilidad**y, a continuación, seleccione la plantilla **Proyecto VSIX.**
+2. En la lista de categorías de plantilla, en **Visual C#**, seleccione **extensibilidad**y, a continuación, seleccione la plantilla de **Proyecto VSIX** .
 
-3. En el cuadro de `SimpleMathVSIX` texto **Nombre,** especifique y elija el botón **Aceptar.**
+3. En el cuadro de texto **nombre** , especifique `SimpleMathVSIX` y elija el botón **Aceptar** .
 
-4. Si aparece el **Asistente para paquetes** de Visual Studio, elija el siguiente botón en el **bienvenida** página y, a continuación, en la página 1 de **7**, elija el **finalizar** botón. **Next**
+4. Si aparece el **Asistente para paquetes de Visual Studio** , elija el botón **siguiente** en la página de **bienvenida** y, a continuación, en la **Página 1 de 7**, elija el botón **Finalizar** .
 
-     Aunque se abre el Diseñador de **manifiestos,** mantendremos este tutorial simple modificando el archivo de manifiesto directamente.
+     Aunque se abra el **Diseñador de manifiestos** , mantendremos este tutorial sencillo modificando directamente el archivo de manifiesto.
 
-5. En el **Explorador**de soluciones , abra el menú contextual del archivo **source.extension.vsixmanifest** y, a continuación, elija **Ver código**. Utilice este código para reemplazar el contenido existente en el archivo.
+5. En **Explorador de soluciones**, abra el menú contextual del archivo **source. Extension. vsixmanifest** y, a continuación, elija **Ver código**. Use este código para reemplazar el contenido existente en el archivo.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,13 +61,13 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
     </PackageManifest>
     ```
 
-6. En el **Explorador**de soluciones , abra el menú contextual del proyecto **SimpleMathVSIX** y, a continuación, elija **Agregar** > **nuevo elemento**.
+6. En **Explorador de soluciones**, abra el menú contextual del proyecto **SimpleMathVSIX** y, a continuación, elija **Agregar**  >  **nuevo elemento**.
 
-7. En la categoría **Datos,** seleccione Archivo `SDKManifest.xml` **XML**, asigne un nombre al archivo y elija el botón **Agregar.**
+7. En la categoría de **datos** , seleccione **archivo XML**, asigne un nombre al archivo `SDKManifest.xml` y elija el botón **Agregar** .
 
-8. En el **Explorador**de soluciones , abra el menú contextual del archivo **SDKManifest.xml** y, a continuación, elija **Abrir** para mostrar el archivo en el **Editor XML**.
+8. En **Explorador de soluciones**, abra el menú contextual del archivo de **SDKManifest.xml** y, a continuación, elija **abrir** para mostrar el archivo en el **Editor XML**.
 
-9. Agregue el código siguiente al archivo **SDKManifest.xml.**
+9. Agregue el código siguiente al archivo **SDKManifest.xml** .
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -84,21 +84,21 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
 
     ```
 
-10. En **el Explorador**de soluciones , en el menú contextual del archivo **SDKManifest.xml,** elija **Propiedades**.
+10. En **Explorador de soluciones**, en el menú contextual del archivo de **SDKManifest.xml** , elija **propiedades**.
 
-11. En la ventana **Propiedades,** establezca la propiedad **Incluir en VSIX en** **True**.
+11. En la ventana **propiedades** , establezca la propiedad **incluir en VSIX en** **true**.
 
-12. En el **Explorador**de soluciones , en el menú contextual del proyecto **SimpleMathVSIX** , elija **Agregar** > **nueva carpeta**y, a continuación, asigne un nombre a la carpeta `Redist`.
+12. En **Explorador de soluciones**, en el menú contextual del proyecto **SimpleMathVSIX** , elija **Agregar**  >  **nueva carpeta**y, a continuación, asigne un nombre a la carpeta `Redist` .
 
 13. Agregue subcarpetas en Redist para crear esta estructura de carpetas:
 
-     *•Redist,CommonConfiguration, Neutral, SimpleMath, js\\*
+     *\Redist\CommonConfiguration\Neutral\SimpleMath\js\\*
 
-14. En el menú contextual de la carpeta **.js\\ ** , elija **Agregar** > **nuevo elemento**.
+14. En el menú contextual de la carpeta **\js \\ ** , elija **Agregar**  >  **nuevo elemento**.
 
-15. En **Elementos de Visual C,** seleccione la categoría **Web** y, a continuación, seleccione el elemento **Archivo de JavaScript.** Asigne un `arithmetic.js`nombre al archivo y, a continuación, elija el botón **Agregar.**
+15. En **elementos de Visual C#**, seleccione la categoría **Web** y, a continuación, seleccione el elemento **archivo de JavaScript** . Asigne un nombre al archivo `arithmetic.js` y, a continuación, elija el botón **Agregar** .
 
-16. Inserte el siguiente código en *arithmetic.js:*
+16. Inserte el código siguiente en *arithmetic.js*:
 
     ```csharp
     (function (global) {
@@ -124,37 +124,37 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
 
     ```
 
-17. En **el Explorador**de soluciones , en el menú contextual del archivo **arithmetic.js,** elija **Propiedades**. Realice estos cambios de propiedad:
+17. En **Explorador de soluciones**, en el menú contextual del archivo de **arithmetic.js** , elija **propiedades**. Realice estos cambios de propiedad:
 
-    - Establezca la propiedad **Incluir en VSIX en** **True**.
+    - Establezca la propiedad **incluir en VSIX en** **true**.
 
-    - Establezca la propiedad **Copiar en directorio** de salida en Copiar **siempre**.
+    - Establezca la propiedad **Copiar en el directorio de salida** en **copiar siempre**.
 
-18. En **el Explorador**de soluciones , en el menú contextual del proyecto **SimpleMathVSIX,** elija **Compilar**.
+18. En **Explorador de soluciones**, en el menú contextual del proyecto **SimpleMathVSIX** , elija **compilar**.
 
-19. Una vez completada correctamente la compilación, en el menú contextual del proyecto, elija **Abrir carpeta en**el Explorador de archivos . Navegue a **la\\opción de depuración**y ejecútela `SimpleMathVSIX.vsix` para instalarlo.
+19. Una vez que la compilación se complete correctamente, en el menú contextual del proyecto, elija **Abrir carpeta en el explorador de archivos**. Vaya a **\bin\debug \\ **y ejecute `SimpleMathVSIX.vsix` para instalarlo.
 
-20. Elija el botón **Instalar** y deje que la instalación se complete.
+20. Elija el botón **instalar** y deje que se complete la instalación.
 
 21. Reinicie Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>Para crear una aplicación de ejemplo que use el SDK
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>Para crear una aplicación de ejemplo que usa el SDK
 
-1. En la barra de menús, elija **Archivo** > **nuevo** > **proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-2. En la lista de categorías de plantilla, en **JavaScript**, seleccione **Tienda Windows**y, a continuación, seleccione la plantilla Aplicación **en blanco.**
+2. En la lista de categorías de plantilla, en **JavaScript**, seleccione **tienda Windows**y, a continuación, seleccione la plantilla **aplicación vacía** .
 
-3. En el cuadro `ArithmeticUI` **Nombre,** especifique . Elija el botón **Aceptar** .
+3. En el cuadro **nombre** , especifique `ArithmeticUI` . Elija el botón **Aceptar** .
 
-4. En el **Explorador**de soluciones , abra el menú contextual del proyecto **ArithmeticUI** y, a continuación, elija **Agregar** > **referencia**.
+4. En **Explorador de soluciones**, abra el menú contextual del proyecto **ArithmeticUI** y, a continuación, elija **Agregar**  >  **referencia**.
 
-5. En **Windows**, elija **Extensiones**y observe que se muestra **Simple Math.**
+5. En **Windows**, elija **extensiones**y observe que se muestra **matemáticas simples** .
 
-6. Active la casilla de verificación **Simple Math (Matemáticasimple)** y, a continuación, elija el botón **OK (Aceptar).**
+6. Active la casilla **matemáticas simples** y, a continuación, elija el botón **Aceptar** .
 
-7. En **el Explorador**de soluciones , en **Referencias**, observe que se muestra la referencia **Simple Math.** Expándalo y observe que hay una carpeta **.js\\ ** que incluye **arithmetic.js**. Puede abrir **arithmetic.js** para confirmar que se ha instalado el código fuente.
+7. En **Explorador de soluciones**, en **referencias**, observe que se muestra la referencia **matemática simple** . Expándalo y observe que hay una carpeta **\js \\ ** que incluye **arithmetic.js**. Puede abrir **arithmetic.js** para confirmar que el código fuente está instalado.
 
-8. Utilice el código siguiente para reemplazar el contenido de *default.htm*.
+8. Use el código siguiente para reemplazar el contenido de *default.htm*.
 
    ```html
    <!DOCTYPE html>
@@ -192,7 +192,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
    </html>
    ```
 
-9. Utilice el código siguiente para reemplazar el contenido de *.js.default.js*.
+9. Use el código siguiente para reemplazar el contenido de *\js\default.js*.
 
     ```csharp
     (function () {
@@ -250,7 +250,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
     })();
     ```
 
-10. Sustituya el contenido de la dirección de *archivo .css-default.css* por este código:
+10. Reemplace el contenido de *\css\default.CSS* por este código:
 
     ```xml
     form {
@@ -311,7 +311,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un SDK matemático 
 
 11. Elija la tecla **F5** para compilar y ejecutar la aplicación.
 
-12. En la interfaz de usuario de la aplicación, **=** escriba dos números, seleccione una operación y, a continuación, elija el botón. Aparece el resultado correcto.
+12. En la interfaz de usuario de la aplicación, escriba dos números cualesquiera, seleccione una operación y, a continuación, elija el **=** botón. Aparece el resultado correcto.
 
 ## <a name="see-also"></a>Vea también
 - [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signature&gt; elemento (implementación ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;Elemento Signature (implementación ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,32 +14,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f69dcec6bbee5358184b74a71274cb26e4de60b3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806847"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835425"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature (elemento&gt;) (implementación ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (implementación ClickOnce)
 Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.
 
 ## <a name="syntax"></a>Sintaxis
 
 ```xml
 
-      <Signature> 
+<Signature> 
    XML signature information 
 </Signature>
 ```
 
 ## <a name="remarks"></a>Comentarios
- La firma de un manifiesto de implementación mediante una firma de sobre es opcional, pero se recomienda. Para obtener más información sobre la firma de archivos XML, vea la recomendación World Wide Web Consortium, "XML-Signature Syntax and Processing", que se describe en [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).
+ La firma de un manifiesto de implementación mediante una firma de sobre es opcional, pero se recomienda. Para obtener más información sobre la firma de archivos XML, vea la recomendación World Wide Web Consortium, "XML-Signature Syntax and Processing", que se describe en [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
  Si desea firmar el manifiesto, se deben proporcionar los valores hash para todos los archivos. No se puede firmar un manifiesto con archivos a los que no se ha aplicado un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de los archivos sin hash.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra un elemento de `Signature` en un manifiesto de implementación que se usa en una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ En el ejemplo de código siguiente se muestra un `Signature` elemento en un manifiesto de implementación que se usa en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de.
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">

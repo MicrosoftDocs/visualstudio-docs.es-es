@@ -1,7 +1,7 @@
 ---
-title: Adición y eliminación de páginas de propiedades ? Microsoft Docs
+title: Agregar y quitar páginas de propiedades | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -15,24 +15,24 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c3df3104e48ca0ee972e1a27f2c32fd0661088b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: fdc12f0938d3296cf1bfca37d0b9b01e0f2a704a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80740208"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903564"
 ---
-# <a name="add-and-remove-property-pages"></a>Agregar y eliminar páginas de propiedades
+# <a name="add-and-remove-property-pages"></a>Agregar y quitar páginas de propiedades
 
-El Diseñador de proyectos proporciona una ubicación centralizada para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]administrar las propiedades, la configuración y los recursos del proyecto en . Aparece como una sola [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventana en el entorno de desarrollo integrado (IDE) y contiene una serie de paneles a la derecha a los que se accede a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el tipo de proyecto y el idioma. Se puede tener acceso al Diseñador de proyectos con el comando **Propiedades** del menú **Proyecto.**
+El diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades, la configuración y los recursos del proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Aparece como una sola ventana en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE) y contiene un número de paneles a la derecha a los que se tiene acceso a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el diseñador de proyectos varían según el tipo de proyecto y el lenguaje. Se puede tener acceso al diseñador de proyectos con el comando **propiedades** en el menú **proyecto** .
 
-Un subtipo de proyecto con frecuencia necesita mostrar páginas de propiedades adicionales en el Diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto pueden requerir que se quiten las páginas de propiedades integradas. Para ello, el subtipo de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> proyecto debe <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> implementar la interfaz e invalidar el método. Al reemplazar este método `propId` y usar el parámetro <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> que contiene uno de los valores de la enumeración, puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, es posible que deba agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, debe filtrar las páginas de propiedades dependientes de la configuración y, a continuación, agregar una nueva página a la lista existente.
+Un subtipo de proyecto suele necesitar mostrar páginas de propiedades adicionales en el diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto podrían requerir que se quiten las páginas de propiedades integradas. Para ello, el subtipo de proyecto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz e invalidar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método. Al invalidar este método y usar `propId` un parámetro que contenga uno de los valores de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración, puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, puede que necesite agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, debe filtrar las páginas de propiedades dependientes de la configuración y, a continuación, agregar una nueva página a la lista existente.
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el Diseñador de proyectos
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el diseñador de proyectos
 
 ### <a name="remove-a-property-page"></a>Quitar una página de propiedades
 
-1. Invalide `GetProperty(uint itemId, int propId, out object property)` el método para filtrar `clsids` las páginas de propiedades y obtener una lista.
+1. Invalide el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades y obtener una `clsids` lista.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Un subtipo de proyecto con frecuencia necesita mostrar páginas de propiedades a
     }
     ```
 
-2. Quite la página **Eventos** `clsids` de compilación de la lista obtenida.
+2. Quite la página **eventos de compilación** de la lista de obtención `clsids` .
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -111,7 +111,7 @@ Un subtipo de proyecto con frecuencia necesita mostrar páginas de propiedades a
     property = propertyPagesList;
     ```
 
-### <a name="add-a-property-page"></a>Añadir una página de propiedades
+### <a name="add-a-property-page"></a>Agregar una página de propiedades
 
 1. Cree una página de propiedades que desee agregar.
 
@@ -158,7 +158,7 @@ Un subtipo de proyecto con frecuencia necesita mostrar páginas de propiedades a
     }
     ```
 
-2. Registre su nueva página de propiedades.
+2. Registre la nueva página de propiedades.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Un subtipo de proyecto con frecuencia necesita mostrar páginas de propiedades a
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3. Invalide `GetProperty(uint itemId, int propId, out object property)` el método para filtrar `clsids` páginas de propiedades, obtener una lista y agregar una nueva página de propiedades.
+3. Invalide el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades, obtener una `clsids` lista y agregar una nueva página de propiedades.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

@@ -5,18 +5,18 @@ ms.date: 01/18/2017
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 141f3f0e60e797a4104c3e276775631f6e9196c5
+ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840036"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85835412"
 ---
 # <a name="windows-script-interfaces"></a>Windows Script (Interfaces)
 
@@ -26,7 +26,7 @@ La documentación de Windows Script se divide en las secciones siguientes:
 
 [Windows Script (Hosts)](../winscript/windows-script-hosts.md)
 
-[Windows Script (Motores)](../winscript/windows-script-engines.md)
+[Motores Windows Script](../winscript/windows-script-engines.md)
 
 [Información general acerca de la depuración de Active Script](../winscript/active-script-debugging-overview.md)
 
@@ -36,7 +36,7 @@ La documentación de Windows Script se divide en las secciones siguientes:
 
 ## <a name="windows-script-background"></a>Información previa sobre Windows Script
 
-Las interfaces de Windows Script se dividen en dos categorías: Hosts de Windows Script y motores de Windows Script. Un host crea un motor de scripting y llama al motor para ejecutar los scripts. Algunos ejemplos de hosts de Windows Script son los siguientes:
+Las interfaces de Windows Script se dividen en dos categorías: hosts de Windows Script y motores de Windows Script. Un host crea un motor de scripting y llama al motor para ejecutar los scripts. Algunos ejemplos de hosts de Windows Script son los siguientes:
 
 - Microsoft Internet Explorer
 
@@ -62,9 +62,9 @@ En la siguiente ilustración se muestra la interacción entre un host de Windows
 
 Los pasos que implica la interacción entre el host y el motor se indican en la lista siguiente.
 
-1. Cree un proyecto. El host carga un proyecto o documento. (Este paso no es específico de Windows Script, pero se incluye aquí para proporcionar información completa).
+1. Crear un proyecto. El host carga un proyecto o documento. (Este paso no es específico de Windows Script, pero se incluye aquí para proporcionar información completa).
 
-2. Cree el motor de Windows Script. El host llama a `CoCreateInstance` para crear un motor de Windows Script. Para ello, especifica el identificador de clase (CLSID) del motor de scripting específico que se va a usar. Por ejemplo, el explorador HTML de Internet Explorer recibe el identificador de clase del motor de scripting mediante el atributo CLSID= de la etiqueta HTML \<OBJECT>.
+2. Cree el motor de Windows Script. El host llama a `CoCreateInstance` para crear un motor de Windows Script. Para ello, especifica el identificador de clase (CLSID) del motor de scripting específico que se va a usar. Por ejemplo, el explorador HTML de Internet Explorer recibe el identificador de clase del motor de scripting mediante el atributo CLSID = de la \<OBJECT> etiqueta HTML.
 
 3. Cargue el script. Si se ha guardado el contenido del script, el host llama al método `IPersist*::Load` del motor de scripting para introducir en él el almacenamiento de scripts, la secuencia o el contenedor de propiedades. En caso contrario, el host usa el método `IPersist*::InitNew` o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para crear un script null. Un host que guarde un script como texto puede usar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) para introducir en el motor de scripting el texto del script, después de llamar a `IActiveScriptParse::InitNew`.
 

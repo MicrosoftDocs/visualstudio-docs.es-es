@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo . Microsoft Docs'
+title: 'Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
@@ -10,24 +10,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328be013b5d522938cd7450fc53d4866c632abb3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697084"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904692"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: Vincule un tipo de contenido a una extensión de nombre de archivo
-Puede definir su propio tipo de contenido y vincular una extensión de nombre de archivo mediante las extensiones de Managed Extensibility Framework (MEF) del editor. En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Pero, para usarlo con MEF, debe vincularlo a un tipo de contenido.
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo
+Puede definir su propio tipo de contenido y vincular una extensión de nombre de archivo a él mediante las extensiones del editor Managed Extensibility Framework (MEF). En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Sin embargo, para usarlo con MEF, debe vincularlo a un tipo de contenido.
 
-## <a name="prerequisites"></a>Prerrequisitos
- A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en la configuración de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [Instalar el SDK](../extensibility/installing-the-visual-studio-sdk.md)de Visual Studio .
+## <a name="prerequisites"></a>Requisitos previos
+ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-mef-project"></a>Crear un proyecto MEF
+## <a name="create-a-mef-project"></a>Creación de un proyecto MEF
 
-1. Cree un proyecto de VSIX de C. (En el cuadro de diálogo **Nuevo proyecto** , seleccione **Visual C/ Extensibilidad**y, a continuación, **Proyecto VSIX**.) Asigne un `ContentTypeTest`nombre a la solución .
+1. Cree un proyecto VSIX en C#. (En el cuadro de diálogo **nuevo proyecto** , seleccione **Visual C#/extensibilidad**y, a continuación, **Proyecto VSIX**). Asigne a la solución el nombre `ContentTypeTest` .
 
-2. En el archivo **source.extension.vsixmanifest,** vaya a la pestaña **Assets** y establezca el campo **Type** en **Microsoft.VisualStudio.MefComponent**, el campo **Source** en **A project en la solución actual**y el campo **Project** en el nombre del proyecto.
+2. En el **archivo source. Extension. vsixmanifest** , vaya a la pestaña **activos** y establezca el campo **tipo** en **Microsoft. VisualStudio. MefComponent**, el campo de **origen** en **un proyecto en la solución actual**y el campo **Project** en el nombre del proyecto.
 
 ## <a name="define-the-content-type"></a>Definir el tipo de contenido
 
@@ -37,11 +37,11 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
 
     1. System.ComponentModel.Composition
 
-    2. Microsoft.VisualStudio.Text.Logic
+    2. Microsoft. VisualStudio. Text. Logic
 
-    3. Microsoft.VisualStudio.CoreUtility
+    3. Microsoft. VisualStudio. CoreUtility
 
-3. Agregue las `using` siguientes directivas.
+3. Agregue las siguientes `using` directivas.
 
     ```csharp
     using System.ComponentModel.Composition;
@@ -57,7 +57,7 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
     {. . .}
     ```
 
-5. En esta clase, <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> exporte un "hid" con nombre y declare su definición base como "text".
+5. En esta clase, exporte un <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> "HID" con nombre y declare su definición base como "Text".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -71,7 +71,7 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>Vincular una extensión de nombre de archivo a un tipo de contenido
 
-- Para asignar este tipo de contenido a <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> una extensión de nombre de archivo, exporte a que tenga la extensión *.hid* y el tipo de contenido "hid".
+- Para asignar este tipo de contenido a una extensión de nombre de archivo, exporte un <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> que tenga la extensión *. HID* y el tipo de contenido "HID".
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -88,13 +88,13 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación de editor
+## <a name="add-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación del editor
 
-1. Cree una extensión de editor. Por ejemplo, puede utilizar la extensión de glifo de margen que se describe en [Tutorial: Crear un glifo](../extensibility/walkthrough-creating-a-margin-glyph.md)de margen .
+1. Cree una extensión de editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).
 
 2. Agregue la clase que definió en este procedimiento.
 
-3. Cuando exporte la clase <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de extensión, agregue un tipo "hid" a ella.
+3. Cuando exporte la clase de extensión, agregue una <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de tipo "HID" a ella.
 
     ```csharp
     [Export]
@@ -102,4 +102,4 @@ Puede definir su propio tipo de contenido y vincular una extensión de nombre de
     ```
 
 ## <a name="see-also"></a>Vea también
-- [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)
+- [Puntos de extensión de editor y servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

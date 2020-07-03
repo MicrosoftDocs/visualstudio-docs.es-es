@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Depurar un motor de depuración personalizado ? Microsoft Docs'
+title: 'Cómo: depurar un motor de depuración personalizado | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
@@ -11,67 +11,67 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c79790bfc9c9cd3767a453258b8c2d340f64d029
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80738577"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85903314"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Cómo: Depurar un motor de depuración personalizado
-Un tipo de proyecto inicia el motor <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> de depuración (DE) desde el método. Esto significa que el DE se lanza bajo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el control de la instancia de control del tipo de proyecto. Sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] esa instancia de no puede depurar el DE. Lo que sigue son los pasos que le permiten depurar su DE personalizado.
+# <a name="how-to-debug-a-custom-debug-engine"></a>Cómo: depurar un motor de depuración personalizado
+Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que el DE se inicia bajo el control de la instancia de que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controla el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no puede depurar de. A continuación se indican los pasos que le permiten depurar su personalizado DE.
 
 > [!NOTE]
-> : en el procedimiento "Depurar un motor de depuración personalizado", debe esperar a que se inicie la DE antes de poder adjuntarla. Si coloca un cuadro de mensaje cerca del principio de su DE que aparece cuando se inicia el DE, puede adjuntar en ese punto y, a continuación, desactive el cuadro de mensaje para continuar. De esa manera, puede ver todos los eventos DE.
+> : En el procedimiento "depurar un motor de depuración personalizado", debe esperar a que se inicie el DE para poder adjuntarlo. Si coloca un cuadro de mensaje cerca del principio de que aparece cuando se inicia el DE, puede adjuntar en ese momento y, a continuación, borrar el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos.
 
 > [!WARNING]
-> Debe tener instalada la depuración remota antes de intentar los siguientes procedimientos. Consulte [Depuración remota](../../debugger/remote-debugging.md) para obtener más información.
+> Debe tener instalada la depuración remota antes de intentar realizar los procedimientos siguientes. Vea [depuración remota](../../debugger/remote-debugging.md) para obtener más información.
 
 ## <a name="debug-a-custom-debug-engine"></a>Depurar un motor de depuración personalizado
 
-1. Inicie *msvsmon.exe*, el Monitor de depuración remota.
+1. Inicie *msvsmon.exe*, el monitor de depuración remota.
 
-2. En el menú **Herramientas** de *msvsmon.exe*, seleccione **Opciones** para abrir el cuadro de diálogo **Opciones.**
+2. En el menú **herramientas** de *msvsmon.exe*, seleccione **Opciones** para abrir el cuadro de diálogo **Opciones** .
 
 3. Seleccione la opción "sin autenticación" y haga clic en **Aceptar**.
 
-4. Inicie una [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instancia y abra el proyecto DE personalizado.
+4. Inicie una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el proyecto de personalizado.
 
-5. Inicie una segunda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instancia del proyecto personalizado que inicia el DE (para el desarrollo, esto suele estar en el subárbol del registro experimental que se configura cuando se instala VSIP).
+5. Inicie una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el proyecto personalizado que inicia el de (para el desarrollo, normalmente se encuentra en el subárbol del registro experimental que se configura cuando se instala VSIP).
 
-6. En esta segunda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]instancia de , cargue un archivo de origen desde el proyecto personalizado e inicie el programa que se va a depurar. Espere unos momentos para permitir que el DE se cargue o espere hasta que se golpee un punto de interrupción.
+6. En esta segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , cargue un archivo de código fuente desde el proyecto personalizado e inicie el programa que se va a depurar. Espere unos instantes para permitir que se cargue el DE o espere hasta que se alcance un punto DE interrupción.
 
-7. En la primera [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instancia de (con el proyecto DE), seleccione **Adjuntar al proceso** en el menú **Depurar.**
+7. En la primera instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con su proyecto de), seleccione **asociar al proceso** en el menú **depurar** .
 
-8. En el cuadro de diálogo **Asociar al proceso,** cambie **Transporte** a **remoto (nativo solo sin autenticación).**
+8. En el cuadro de diálogo **asociar al proceso** , cambie el **transporte** a **remoto (solo nativo sin autenticación)**.
 
-9. Cambie el **Calificador** por el nombre de su máquina (tenga en cuenta que hay un historial de entradas, por lo que debe escribir este nombre solo una vez).
+9. Cambie el **calificador** al nombre de la máquina (Nota: hay un historial de entradas, por lo que debe escribir este nombre solo una vez).
 
-10. En la lista **Procesos disponibles,** seleccione la instancia de su DE que se está ejecutando y haga clic en el botón **Adjuntar.**
+10. En la lista **procesos disponibles** , seleccione la instancia de de que se está ejecutando y haga clic en el botón **adjuntar** .
 
-11. Después de que los símbolos se hayan cargado en su DE, coloque puntos de interrupción en el código DE.
+11. Una vez cargados los símbolos en su de, coloque los puntos de interrupción en el código DE.
 
-12. Cada vez que detenga y reinicie el proceso de depuración, repita los pasos del 6 al 10.
+12. Cada vez que detenga y reinicie el proceso de depuración, repita los pasos 6 a 10.
 
-## <a name="debug-a-custom-project-type"></a>Depurar un tipo de proyecto personalizado
+## <a name="debug-a-custom-project-type"></a>Depuración de un tipo de proyecto personalizado
 
-1. Comience [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en el subárbol del Registro normal y cargue el proyecto de tipo de proyecto (esto es el origen del tipo de proyecto, no una creación de instancias del tipo de proyecto).
+1. Comience [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en el subárbol del registro normal y cargue el proyecto de tipo de proyecto (es decir, el origen del tipo de proyecto, no una instancia de su tipo de proyecto).
 
-2. Abra las propiedades del proyecto y vaya a la página **Depurar.** Para el **comando**, escriba [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la ruta de acceso al IDE (de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] forma predeterminada, se trata de *[unidad]*.
+2. Abra las propiedades del proyecto y vaya a la página **depurar** . En el **comando**, escriba la ruta de acceso al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (de forma predeterminada, es *[unidad]* \Archivos de programa\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
-3. En **Command Arguments** `/rootsuffix exp` , escriba para el subárbol del Registro experimental (creado cuando se instaló VSIP).
+3. En el caso de los **argumentos de comando**, escriba `/rootsuffix exp` para el subárbol del registro experimental (creado cuando se instaló VSIP).
 
 4. Haga clic en **Aceptar** para aceptar los cambios.
 
-5. Inicie el tipo de proyecto presionando **F5**. Esto lanza una segunda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]instancia de .
+5. Presione **F5**para iniciar el tipo de proyecto. Esto inicia una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-6. En este punto, puede colocar puntos de interrupción en el código fuente del tipo de proyecto.
+6. Llegados a este punto, puede colocar los puntos de interrupción en el código fuente del tipo de proyecto.
 
-7. En la segunda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]instancia de , cargue o cree una nueva instancia del tipo de proyecto. Durante la carga o la creación, los puntos de interrupción pueden ser alcanzados.
+7. En la segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , cargue o cree una nueva instancia del tipo de proyecto. Durante la carga o la creación, es posible que se alcancen los puntos de interrupción.
 
-8. Depurar el tipo de proyecto.
+8. Depure el tipo de proyecto.
 
-9. Si decide depurar el proceso de iniciar un DE, puede realizar los pasos del procedimiento "Depurar un motor de depuración personalizado" para adjuntar lo desenmarcha después de iniciarlo. Esto proporciona tres instancias de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ejecución: una para el origen de tipo de proyecto, una segunda para el tipo de proyecto con instancias y una tercera asociada a la DE.
+9. Si decide depurar el proceso de inicio de, puede realizar los pasos descritos en el procedimiento "depurar un motor de depuración personalizado" para adjuntar a su desde después DE iniciarlo. Esto le proporciona tres instancias de en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ejecución: una para el origen de tipo de proyecto, una segunda para el tipo de proyecto con instancias y una tercera asociada a su de.
 
 ## <a name="see-also"></a>Vea también
-- [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)

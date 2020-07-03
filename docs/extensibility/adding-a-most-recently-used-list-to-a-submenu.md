@@ -1,7 +1,7 @@
 ---
 title: Agregar una lista de usados más recientemente a un submenú | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5624fe4a4f3c9ba774313e862f9e84a6f6d70862
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183280"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904210"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar una lista de usados más recientemente a un submenú
 Este tutorial se basa en las demostraciones de [Agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)y muestra cómo agregar una lista dinámica a un submenú. La lista dinámica constituye la base para crear una lista de elementos usados más recientemente (MRU).
@@ -30,7 +30,7 @@ En este tutorial se crea una lista MRU de cuatro elementos que cambian su orden 
 
 Para obtener más información sobre los menús y los archivos *. Vsct* , vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).
 
-## <a name="prerequisites"></a>Prerrequisitos
+## <a name="prerequisites"></a>Requisitos previos
 Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más información, vea el [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Creación de una extensión
@@ -199,5 +199,5 @@ Para seguir este tutorial, debe instalar SDK de Visual Studio. Para obtener más
 
 4. Vuelva a abrir el submenú. Observe que el **elemento 3** está ahora en la parte superior de la lista y que los demás elementos se han insertado una posición hacia abajo. Vuelva a hacer clic en el **elemento 3** y observe que el cuadro de mensaje todavía muestra el **elemento seleccionado 3**, lo que indica que el texto se ha pasado correctamente a la nueva posición junto con la etiqueta del comando.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 - [Agregar elementos de menú de forma dinámica](../extensibility/dynamically-adding-menu-items.md)
