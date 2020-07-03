@@ -1,19 +1,19 @@
 ---
 title: Cómo hacer las extensiones de ida y vuelta
 ms.date: 06/25/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
 ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269063"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905772"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Cómo: hacer que las extensiones sean compatibles con Visual Studio 2019/2017 y Visual Studio 2015
 
@@ -49,16 +49,16 @@ En este documento se da por supuesto que tiene lo siguiente instalado en el equi
 
 Se recomienda encarecidamente iniciar esta actualización con Visual Studio 2015, en lugar de Visual Studio 2019 o 2017. La principal ventaja de desarrollar en Visual Studio 2015 es asegurarse de que no se hace referencia a ensamblados que no están disponibles en Visual Studio 2015. Si realiza el desarrollo en Visual Studio 2019 o 2017, existe un riesgo de que se pueda introducir una dependencia en un ensamblado que solo existe en Visual Studio 2019 o 2017.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia a Project. JSON
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia a project.jsen
 
-Más adelante en este documento, se insertarán instrucciones de importación condicional en el archivo * *. csproj* . Esto no funcionará si las referencias de NuGet se almacenan en *Project. JSON*. Como tal, se recomienda que mueva todas las referencias de NuGet al archivo *packages. config* .
-Si el proyecto contiene un archivo *Project. JSON* :
+Más adelante en este documento, se insertarán instrucciones de importación condicional en el archivo **. csproj* . Esto no funcionará si las referencias de NuGet se almacenan en *project.jsen*. Como tal, se recomienda que mueva todas las referencias de NuGet al archivo *packages.config* .
+Si el proyecto contiene un *project.jsen* el archivo:
 
-* Tome nota de las referencias en *Project. JSON*.
-* En el **Explorador de soluciones**, elimine el archivo *Project. JSON* del proyecto. Esto elimina el archivo *Project. JSON* y lo quita del proyecto.
+* Tome nota de las referencias en *project.jsen*.
+* En el **Explorador de soluciones**, elimine el *project.jsen* el archivo del proyecto. Esto elimina el *project.jsen* el archivo y lo quita del proyecto.
 * Vuelva a agregar las referencias de NuGet al proyecto:
   * Haga clic con el botón derecho en la **solución** y elija **administrar paquetes NuGet para la solución**.
-  * Visual Studio crea automáticamente el archivo *packages. config* .
+  * Visual Studio crea automáticamente el archivo de *packages.config* .
 
 > [!NOTE]
 > Si el proyecto contenía paquetes EnvDTE, es posible que necesiten agregarse haciendo clic con el botón derecho en **referencias** seleccionando **Agregar referencia** y agregando la referencia adecuada. El uso de paquetes NuGet puede crear errores al intentar compilar el proyecto.
@@ -69,10 +69,10 @@ Tenemos que asegurarnos de agregar herramientas de compilación que nos permitan
 
 Para compilar e implementar un VSIXv3 en Visual Studio 2015 y 2019/2017, necesitará los siguientes paquetes NuGet:
 
-Version | Herramientas integradas
+Versión | Herramientas integradas
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2019 o 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | Microsoft. VisualStudio. SDK. BuildTasks. 14.0
+Visual Studio 2019 o 2017 | Microsoft. VSSDK. BuildTool
 
 Para ello:
 
@@ -139,7 +139,7 @@ Se recomienda encarecidamente tener una referencia a un. csproj abierto mientras
 * Agregue la siguiente etiqueta `<VsixType>v3</VsixType>` a un grupo de propiedades.
 
 > [!NOTE]
-> Se recomienda agregar esto debajo de la etiqueta `<OutputType></OutputType>`.
+> Se recomienda agregar esto debajo de la `<OutputType></OutputType>` etiqueta.
 
 ### <a name="3-add-the-debugging-properties"></a>3. agregar las propiedades de depuración
 
@@ -163,7 +163,7 @@ Se recomienda encarecidamente tener una referencia a un. csproj abierto mientras
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. agregar condiciones a las importaciones de herramientas de compilación
 
-* Agregue instrucciones condicionales adicionales a las etiquetas de `<import>` que tengan una referencia de Microsoft. VSSDK. BuildTools. Inserte `'$(VisualStudioVersion)' != '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el encabezado y el pie de página del archivo csproj.
+* Agregue instrucciones condicionales adicionales a las `<import>` etiquetas que tienen una referencia de Microsoft. VSSDK. BuildTools. Insertar `'$(VisualStudioVersion)' != '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el encabezado y el pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -171,7 +171,7 @@ Por ejemplo:
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Agregue instrucciones condicionales adicionales a las etiquetas `<import>` que tengan un Microsoft. VisualStudio. SDK. BuildTasks. 14.0. Inserte `'$(VisualStudioVersion)' == '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el encabezado y el pie de página del archivo csproj.
+* Agregue instrucciones condicionales adicionales a las `<import>` etiquetas que tengan un Microsoft. VisualStudio. SDK. BuildTasks. 14.0. Insertar `'$(VisualStudioVersion)' == '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el encabezado y el pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -179,7 +179,7 @@ Por ejemplo:
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Agregue instrucciones condicionales adicionales a las etiquetas de `<Error>` que tengan una referencia de Microsoft. VSSDK. BuildTools. Para ello, inserte `'$(VisualStudioVersion)' != '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el pie de página del archivo csproj.
+* Agregue instrucciones condicionales adicionales a las `<Error>` etiquetas que tienen una referencia de Microsoft. VSSDK. BuildTools. Para ello, inserte `'$(VisualStudioVersion)' != '14.0' And` en la parte delantera de la instrucción de condición. Estas instrucciones aparecerán en el pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -187,7 +187,7 @@ Por ejemplo:
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Agregue instrucciones condicionales adicionales a las etiquetas `<Error>` que tengan un Microsoft. VisualStudio. SDK. BuildTasks. 14.0. Inserte `'$(VisualStudioVersion)' == '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el pie de página del archivo csproj.
+* Agregue instrucciones condicionales adicionales a las `<Error>` etiquetas que tengan un Microsoft. VisualStudio. SDK. BuildTasks. 14.0. Insertar `'$(VisualStudioVersion)' == '14.0' And` al principio de la instrucción de condición. Estas instrucciones aparecerán en el pie de página del archivo csproj.
 
 Por ejemplo:
 
@@ -207,7 +207,7 @@ En este momento, el proyecto debe estar listo para compilar un VSIXv3 que se pue
 * Navegue hasta el directorio del proyecto.
 * Abra la carpeta *\bin\debug* .
 * Haga doble clic en el archivo VSIX e instale su extensión en Visual Studio 2015 y Visual Studio 2019/2017.
-* Asegúrese de que puede ver la extensión en **herramientas** > **extensiones y actualizaciones** en la sección **instalado** .
+* Asegúrese de que puede ver la extensión en **herramientas**  >  **extensiones y actualizaciones** en la sección **instalado** .
 * Intente ejecutar o usar la extensión para comprobar que funciona.
 
 ![Buscar un VSIX](media/finding-a-VSIX-example.png)

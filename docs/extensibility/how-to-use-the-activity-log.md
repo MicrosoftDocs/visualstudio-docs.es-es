@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Usar el registro de actividad ( Activity Log) Microsoft Docs'
+title: 'Cómo: usar el registro de actividad | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
@@ -11,22 +11,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710579"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905581"
 ---
-# <a name="how-to-use-the-activity-log"></a>Cómo: Usar el registro de actividad
-VSPackages puede escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar VSPackages en entornos comerciales.
+# <a name="how-to-use-the-activity-log"></a>Cómo: usar el registro de actividad
+Los VSPackages pueden escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar VSPackages en entornos comerciales.
 
 > [!TIP]
-> El registro de actividad siempre está activado. Visual Studio mantiene un búfer móvil de las últimas 100 entradas, así como las primeras 10 entradas, que tienen información de configuración general.
+> El registro de actividad está siempre activado. Visual Studio mantiene un búfer rodante de las últimas 100 entradas, así como las 10 primeras entradas, que tienen información de configuración general.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para escribir una entrada en el registro de actividad
 
-1. Inserte este código <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> en el método o en cualquier otro método excepto el constructor VSPackage:
+1. Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método o en cualquier otro método excepto en el constructor VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,19 +38,19 @@ VSPackages puede escribir mensajes en el registro de actividad. Esta caracterís
         "Called for: {0}", this.ToString()));
     ```
 
-     Este código obtiene <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> el servicio y <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> lo convierte en una interfaz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>escribe una entrada informativa en el registro de actividad utilizando el contexto cultural actual.
+     Este código obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> servicio y lo convierte en una <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>escribe una entrada informativa en el registro de actividad utilizando el contexto de la referencia cultural actual.
 
 2. Cuando se carga el VSPackage (normalmente cuando se invoca un comando o se abre una ventana), el texto se escribe en el registro de actividad.
 
 ## <a name="to-examine-the-activity-log"></a>Para examinar el registro de actividad
 
-1. Ejecute Visual Studio con el modificador de línea de comandos [/Log](../ide/reference/log-devenv-exe.md) para escribir ActivityLog.xml en el disco durante la sesión.
+1. Ejecute Visual Studio con el modificador de la línea de comandos [/log](../ide/reference/log-devenv-exe.md) para escribir ActivityLog.xml en el disco durante la sesión.
 
-2. Después de cerrar Visual Studio, busque el registro de actividad en la subcarpeta para los datos de Visual Studio:
+2. Después de cerrar Visual Studio, busque el registro de actividad en la subcarpeta de Visual Studio Data:
 
-   <em> *%AppData%</em>> .\\\<*
+   <em> *% AppData%</em>\Microsoft\VisualStudio \\ \<version>\ActivityLog.xml*.
 
-3. Abra el registro de actividad con cualquier editor de texto. Aquí está una entrada típica:
+3. Abra el registro de actividades con cualquier editor de texto. Esta es una entrada típica:
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
@@ -58,9 +58,9 @@ VSPackages puede escribir mensajes en el registro de actividad. Esta caracterís
 
 ## <a name="robust-programming"></a>Programación sólida
 
-Dado que el registro de actividad es un servicio, el registro de actividad no está disponible en el constructor de VSPackage.
+Dado que el registro de actividad es un servicio, el registro de actividad no está disponible en el constructor VSPackage.
 
-Debe obtener el registro de actividad justo antes de escribir en él. No almacene en caché ni guarde el registro de actividad para usarlo en el futuro.
+Debe obtener el registro de actividad justo antes de escribir en él. No almacene en caché ni guarde el registro de actividad para su uso futuro.
 
 ## <a name="see-also"></a>Vea también
 

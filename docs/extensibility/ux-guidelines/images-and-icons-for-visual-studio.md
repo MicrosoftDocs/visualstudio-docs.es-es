@@ -1,19 +1,19 @@
 ---
 title: Imágenes e iconos de Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: acangialosi
 ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7de4488a8304b21b578b2ad5ac2c29deafcf1b0a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537545"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906114"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso de imágenes en Visual Studio
@@ -281,7 +281,7 @@ ms.locfileid: "85537545"
 ##### <a name="examples"></a>Ejemplos
  Green se usa para los modificadores de acción positivos como "Add", "Run", "Play" y "Validate".
 
-|Ejecute|Ejecutar consulta|Reproducir todos los pasos|Agregar control|
+|Ejecutar|Ejecutar consulta|Reproducir todos los pasos|Agregar control|
 |-|-|-|-|
 |![Icono Ejecutar](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icono Ejecutar consulta](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")|![Icono Reproducir todos los pasos](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")|![Icono Agregar control](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")|
 
@@ -306,7 +306,7 @@ ms.locfileid: "85537545"
 #### <a name="special-cases"></a>Casos especiales
  En casos especiales, un modificador de acción coloreado se puede usar de forma independiente como un icono independiente. El color usado para el icono refleja las acciones con las que está asociado el icono. Este uso está limitado a un pequeño subconjunto de iconos, entre los que se incluyen:
 
-|Ejecute|Stop|Eliminar|Guardar|Navegar hacia atrás|
+|Ejecutar|Stop|Eliminar|Guardar|Navegar hacia atrás|
 |-|-|-|-|-|
 |![Icono Ejecutar](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icono de detención](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Eliminar icono](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icono Save (Guardar)](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icono Navegar hacia atrás](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
@@ -356,7 +356,7 @@ ms.locfileid: "85537545"
 
 ##### <a name="examples-of-intellisense-icons"></a>Ejemplos de iconos de IntelliSense
 
-|Clase|Evento privado|delegado|Friend (método)|Campo|
+|Clase|Evento privado|Delegado|Friend (método)|Campo|
 |-|-|-|-|-|
 |![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![Icono de campo](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
 

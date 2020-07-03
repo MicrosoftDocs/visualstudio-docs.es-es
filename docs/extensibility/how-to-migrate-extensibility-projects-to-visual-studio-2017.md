@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017 Microsoft Docs'
+title: 'Cómo: migrar proyectos de extensibilidad a Visual Studio 2017 | Microsoft Docs'
 ms.date: 11/09/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: acangialosi
 ms.author: anthc
@@ -9,61 +9,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b0cae0261b185ee08400e5f3d25735634663f54a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 37f7259c1133ea51e004b5f6b2061427ff71dea0
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710980"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905846"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad a Visual Studio 2017
 
-En este documento se explica cómo actualizar proyectos de extensibilidad a Visual Studio 2017. Además de describir cómo actualizar los archivos de proyecto, también describe cómo actualizar de la versión 2 del manifiesto de extensión (VSIX v2) al nuevo formato de manifiesto VSIX de la versión 3 (VSIX v3).
+En este documento se explica cómo actualizar proyectos de extensibilidad a Visual Studio 2017. Además de describir cómo actualizar los archivos de proyecto, también describe cómo actualizar desde la versión 2 del manifiesto de extensión (VSIX V2) al nuevo formato de manifiesto VSIX de la versión 3 (VSIX V3).
 
-## <a name="install-visual-studio-2017-with-required-workloads"></a>Instale Visual Studio 2017 con las cargas de trabajo necesarias
+## <a name="install-visual-studio-2017-with-required-workloads"></a>Instalación de Visual Studio 2017 con las cargas de trabajo necesarias
 
 Asegúrese de que la instalación incluye las siguientes cargas de trabajo:
 
 * Desarrollo de escritorio de .NET
 * Desarrollo de extensiones de Visual Studio
 
-## <a name="open-vsix-solution-in-visual-studio-2017"></a>Abrir solución VSIX en Visual Studio 2017
+## <a name="open-vsix-solution-in-visual-studio-2017"></a>Abrir la solución VSIX en Visual Studio 2017
 
 Todos los proyectos VSIX requerirán una actualización unidireccional de la versión principal a Visual Studio 2017.
 
-El archivo de proyecto (por ejemplo **.csproj*) se actualizará:
+El archivo de proyecto (por ejemplo, **. csproj*) se actualizará:
 
-* MinimumVisualStudioVersion - ahora establecido en 15.0
-* OldToolsVersion (si existe anteriormente) - ahora establecido en 14.0
+* MinimumVisualStudioVersion: ahora se establece en 15,0
+* OldToolsVersion (si ya existe): ahora se establece en 14,0
 
-## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Actualice el paquete NuGet Microsoft.VSSDK.BuildTools
+## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Actualización del paquete NuGet Microsoft. VSSDK. BuildTools
 
 > [!Note]
-> Si la solución no hace referencia al paquete NuGet Microsoft.VSSDK.BuildTools, puede omitir este paso.
+> Si la solución no hace referencia al paquete NuGet Microsoft. VSSDK. BuildTools, puede omitir este paso.
 
-Para compilar la extensión en el nuevo formato VSIX v3 (versión 3), la solución tendrá que compilarse con las nuevas herramientas de compilación de VSSDK. Esto se instalará con Visual Studio 2017, pero la extensión VSIX v2 podría contener una referencia a una versión anterior a través de NuGet. Si es así, deberá instalar manualmente una actualización del paquete NuGet Microsoft.VSSDK.BuildTools para la solución.
+Para compilar la extensión en el nuevo formato VSIX V3 (versión 3), la solución deberá compilarse con las nuevas herramientas de compilación de VSSDK. Esto se instalará con Visual Studio 2017, pero la extensión VSIX V2 podría estar manteniendo una referencia a una versión anterior a través de NuGet. Si es así, tendrá que instalar manualmente una actualización del paquete NuGet Microsoft. VSSDK. BuildTools para la solución.
 
-Para actualizar las referencias de NuGet a Microsoft.VSSDK.BuildTools:
+Para actualizar las referencias de NuGet a Microsoft. VSSDK. BuildTools:
 
-* Haga clic con el botón derecho en la solución y elija **Administrar paquetes NuGet para la solución**.
-* Vaya a la pestaña **Actualizaciones.**
-* Seleccione **Microsoft.VSSDK.BuildTools (última versión).**
-* Pulse **Actualizar**.
+* Haga clic con el botón derecho en la solución y elija **administrar paquetes NuGet para la solución**.
+* Vaya a la pestaña **actualizaciones** .
+* Seleccione **Microsoft. VSSDK. BuildTools (versión más reciente)**.
+* Presione **Actualizar**.
 
 ![Herramientas de compilación de VSSDK](media/vssdk-build-tools.png)
 
-## <a name="make-changes-to-the-vsix-extension-manifest"></a>Realice cambios en el manifiesto de extensión VSIX
+## <a name="make-changes-to-the-vsix-extension-manifest"></a>Realizar cambios en el manifiesto de la extensión VSIX
 
-Para asegurarse de que la instalación del usuario de Visual Studio tiene todos los ensamblados necesarios para ejecutar la extensión, especifique todos los componentes o paquetes de requisitos previos en el archivo de manifiesto de extensión. Cuando un usuario intenta instalar la extensión, VSIXInstaller comprobará si todos los requisitos previos están instalados. Si faltan algunos, se le pedirá al usuario que instale los componentes que faltan como parte del proceso de instalación de la extensión.
+Para asegurarse de que la instalación del usuario de Visual Studio tiene todos los ensamblados necesarios para ejecutar la extensión, especifique todos los componentes de requisitos previos o paquetes en el archivo de manifiesto de la extensión. Cuando un usuario intenta instalar la extensión, VSIXInstaller comprobará si están instalados todos los requisitos previos. Si faltan algunos, se solicitará al usuario que instale los componentes que faltan como parte del proceso de instalación de la extensión.
 
 > [!Note]
-> Como mínimo, todas las extensiones deben especificar el componente del editor principal de Visual Studio como requisito previo.
+> Como mínimo, todas las extensiones deben especificar el componente editor principal de Visual Studio como requisito previo.
 
-* Edite el archivo de manifiesto de extensión (normalmente denominado *source.extension.vsixmanifest*).
-* Asegúrese `InstallationTarget` incluye 15.0.
+* Edite el archivo de manifiesto de la extensión (normalmente denominado *source. Extension. vsixmanifest*).
+* Asegúrese de que `InstallationTarget` incluye 15,0.
 * Agregue los requisitos previos de instalación necesarios (como se muestra en el ejemplo siguiente).
-  * Se recomienda especificar solo los identificadores de componente para los requisitos previos de instalación.
-  * Consulte la sección al final de este documento para [obtener instrucciones sobre la identificación](#find-component-ids)de id de componente.
+  * Se recomienda especificar solo identificadores de componente para los requisitos previos de instalación.
+  * Vea la sección al final de este documento para obtener [instrucciones sobre cómo identificar identificadores de componente](#find-component-ids).
 
 Ejemplo:
 
@@ -79,57 +79,57 @@ Ejemplo:
 </PackageManifest>
 ```
 
-### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>Opción: Utilice el diseñador para realizar cambios en el manifiesto de extensión VSIX
+### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>Opción: usar el diseñador para realizar cambios en el manifiesto de la extensión VSIX
 
-En lugar de editar directamente el XML de manifiesto, puede usar la nueva pestaña **Requisitos previos** del Diseñador de manifiestos para seleccionar los requisitos previos y el XML se actualizará automáticamente.
+En lugar de editar directamente el manifiesto XML, puede usar la nueva pestaña **requisitos previos** en el diseñador de manifiestos para seleccionar los requisitos previos y el código XML se actualizará automáticamente.
 
 > [!Note]
-> El Diseñador de manifiestos solo le permitirá seleccionar Componentes (no Cargas de trabajo o Paquetes) que están instalados en la instancia actual de Visual Studio. Si necesita agregar un requisito previo para una carga de trabajo, paquete o componente que no está instalado actualmente, edite el manifiesto XML directamente.
+> El diseñador de manifiestos solo le permitirá seleccionar componentes (no cargas de trabajo o paquetes) que estén instalados en la instancia actual de Visual Studio. Si necesita agregar un requisito previo para una carga de trabajo, un paquete o un componente que no está instalado actualmente, edite el XML del manifiesto directamente.
 
-* Abra el archivo *source.extension.vsixmanifest [Design].*
-* Seleccione la pestaña **Requisitos previos** y pulse el botón **Nuevo.**
+* Abra el archivo *source. Extension. vsixmanifest [diseño]* .
+* Seleccione la pestaña **requisitos previos** y presione el botón **nuevo** .
 
    ![Diseñador de manifiestos VSIX](media/vsix-manifest-designer.png)
 
-* Se abrirá la ventana **Agregar nuevo requisito previo.**
+* Se abrirá la ventana **Agregar nuevo requisito previo** .
 
-   ![añadir vsix requisito previo](media/add-vsix-prerequisite.png)
+   ![Agregar requisito previo de VSIX](media/add-vsix-prerequisite.png)
 
-* Haga clic en el menú desplegable para **Nombre** y seleccione el requisito previo deseado.
+* Haga clic en la lista desplegable **nombre** y seleccione el requisito previo deseado.
 * Actualice la versión si es necesario.
 
    > [!Note]
-   > El campo de versión se rellenará previamente con la versión del componente instalado actualmente, con un rango que abarca hasta (pero sin incluir) la siguiente versión principal del componente.
+   > El campo versión se rellenará automáticamente con la versión del componente instalado actualmente, con un intervalo que abarca hasta la siguiente versión principal del componente (sin incluirlo).
 
-   ![añadir roslyn prerrequisito](media/add-roslyn-prerequisite.png)
+   ![agregar requisitos previos de Roslyn](media/add-roslyn-prerequisite.png)
 
-* Presione **Aceptar**.
+* Haga clic en **Aceptar**.
 
-## <a name="update-debug-settings-for-the-project"></a>Actualizar la configuración de depuración para el proyecto
+## <a name="update-debug-settings-for-the-project"></a>Actualizar la configuración de depuración del proyecto
 
-Si desea depurar la extensión en una instancia experimental de Visual **Debug** > Studio, asegúrese de que la configuración del proyecto para la**acción Depurar inicio** tiene el valor Iniciar programa **externo:** establecido en el archivo *devenv.exe* de la instalación de Visual Studio 2017.
+Si desea depurar la extensión en una instancia experimental de Visual Studio, asegúrese de que la acción de inicio de la configuración del proyecto para **depurar**  >  **Start action** tiene el **programa externo de Inicio:** valor establecido en el archivo de *devenv.exe* de la instalación de Visual Studio 2017.
 
-Podría tener el siguiente aspecto: C:-Archivos de programa *(x86)-Microsoft Visual Studio-2017-Enterprise-Common7-IDE-devenv.exe*
+Podría ser similar a la siguiente: *c:\Archivos de programa (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![iniciar programa externo](media/start-external-program.png)
 
 > [!Note]
-> La acción de inicio de depuración se almacena normalmente en el archivo *.csproj.user.* Este archivo se incluye normalmente en el archivo *.gitignore* y, por lo tanto, normalmente no se guarda con otros archivos de proyecto cuando se confirma en el control de código fuente. Por lo tanto, si ha extraído la solución fresca del control de código fuente, es probable que el proyecto no tenga ningún valor establecido para Iniciar acción. Los nuevos proyectos VSIX creados con Visual Studio 2017 tendrán un archivo *.csproj.user* creado con valores predeterminados que apuntan al directorio de instalación de Visual Studio actual. Sin embargo, si va a migrar una extensión VSIX v2, es probable que el archivo *.csproj.user* contenga referencias al directorio de instalación de la versión anterior de Visual Studio. Establecer el valor de **la** > **acción Depurar inicio** permitirá que se inicie la instancia experimental de Visual Studio correcta cuando intente depurar la extensión.
+> La acción de inicio de depuración normalmente se almacena en el archivo *. csproj. User* . Este archivo normalmente se incluye en el archivo *. gitignore* y, por lo tanto, no se guarda normalmente con otros archivos de proyecto cuando se confirma en el control de código fuente. Como tal, si ha extraído la solución desde el control de código fuente, es probable que el proyecto no tenga valores establecidos para la acción de inicio. Los nuevos proyectos VSIX creados con Visual Studio 2017 tendrán un archivo *. csproj. User* creado con los valores predeterminados que apuntan al directorio de instalación actual de Visual Studio. Sin embargo, si va a migrar una extensión VSIX V2, es probable que el archivo *. csproj. User* contenga referencias al directorio de instalación de la versión anterior de Visual Studio. Establecer el valor de la acción de inicio de **depuración**  >  **Start action** permitirá que se inicie la instancia experimental de Visual Studio correcta al intentar depurar la extensión.
 
-## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Compruebe que la extensión se compila correctamente (como VSIX v3)
+## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Comprobar que la extensión se compila correctamente (como VSIX V3)
 
-* Compile el proyecto VSIX.
+* Compile el Proyecto VSIX.
 * Descomprima el VSIX generado.
-  * De forma predeterminada, el archivo VSIX se encuentra dentro de *bin/Debug* o *bin/Release* como *[YourCustomExtension].vsix*.
-  * Cambie el nombre de *.vsix* a *.zip* para ver fácilmente el contenido.
+  * De forma predeterminada, el archivo VSIX reside dentro de *bin/Debug* o *bin/Release* como *[YourCustomExtension]. vsix*.
+  * Cambie el nombre de *. vsix* a *. zip* para ver fácilmente el contenido.
 * Compruebe la existencia de tres archivos:
-  * *extension.vsixmanifest*
-  * *manifest.json*
-  * *catalog.json*
+  * *Extension. vsixmanifest*
+  * *manifest.jsen*
+  * *catalog.jsen*
 
-## <a name="check-when-all-required-prerequisites-are-installed"></a>Compruebe cuándo se instalan todos los requisitos previos necesarios
+## <a name="check-when-all-required-prerequisites-are-installed"></a>Comprobar si están instalados todos los requisitos previos necesarios
 
-Compruebe que VSIX se instala correctamente en un equipo con todos los requisitos previos necesarios instalados.
+Compruebe que VSIX se instala correctamente en una máquina con todos los requisitos previos necesarios instalados.
 
 > [!Note]
 > Antes de instalar cualquier extensión, cierre todas las instancias de Visual Studio.
@@ -140,65 +140,65 @@ Intente instalar la extensión:
 
 ![Instalador de VSIX en Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
-* Opcional: compruebe las versiones anteriores de Visual Studio.
-  * Demuestra compatibilidad con versiones anteriores.
+* Opcional: Compruebe en las versiones anteriores de Visual Studio.
+  * Demuestra la compatibilidad con versiones anteriores.
   * Debería funcionar para Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
-* Opcional: Compruebe que VSIX Installer Version Checker ofrece una selección de versiones.
+* Opcional: Compruebe que el comprobador de versiones del instalador de VSIX ofrece una serie de versiones.
   * Incluye versiones anteriores de Visual Studio (si está instalado).
   * Incluye Visual Studio 2017.
 
-Si Visual Studio se abrió recientemente, es posible que vea un cuadro de diálogo como este:
+Si Visual Studio se ha abierto recientemente, podría ver un cuadro de diálogo similar al siguiente:
 
-![vs procesos en ejecución](media/vs-running-processes.png)
+![procesos en ejecución de vs](media/vs-running-processes.png)
 
-Espere a que los procesos se cierren o finalice manualmente las tareas. Puede encontrar los procesos por el nombre de la lista o con el PID que aparece entre paréntesis.
+Espere a que los procesos se cierren o finalice manualmente las tareas. Puede buscar los procesos por el nombre de la lista o por el PID indicado entre paréntesis.
 
 > [!Note]
-> Estos procesos no se apagarán automáticamente mientras se ejecuta una instancia de Visual Studio. Asegúrese de que ha apagado todas las instancias de Visual Studio en el equipo, incluidas las de otros usuarios, y, a continuación, continúe reintentando.
+> Estos procesos no se cerrarán automáticamente mientras se ejecuta una instancia de Visual Studio. Asegúrese de que ha cerrado todas las instancias de Visual Studio en el equipo, incluidas las de otros usuarios, y continúe con el reintento.
 
-## <a name="check-when-missing-the-required-prerequisites"></a>Compruebe cuando falte los requisitos previos requeridos
+## <a name="check-when-missing-the-required-prerequisites"></a>Compruebe si faltan los requisitos previos necesarios
 
-* Intente instalar la extensión en un equipo con Visual Studio 2017 que NO CONTENGA todos los componentes definidos en los requisitos previos (arriba).
-* Compruebe que la instalación identifica los componentes que faltan y los enumera como requisito previo en VSIXInstaller.
-* Nota: La elevación será necesaria si es necesario instalar algún requisito previo con la extensión.
+* Intente instalar la extensión en una máquina con Visual Studio 2017 que no contenga todos los componentes definidos en los requisitos previos (arriba).
+* Compruebe que la instalación identifica los componentes que faltan y los enumera como un requisito previo en VSIXInstaller.
+* Nota: la elevación será necesaria si es necesario instalar los requisitos previos con la extensión.
 
-![vsixinstaller falta requisito previo](media/vsixinstaller-missing-prerequisite.png)
+![vsixinstaller falta un requisito previo](media/vsixinstaller-missing-prerequisite.png)
 
-## <a name="decide-on-components"></a>Decidir sobre los componentes
+## <a name="decide-on-components"></a>Decidir componentes
 
-Al buscar las dependencias, encontrará que una dependencia podría asignarse a varios componentes. Para determinar qué dependencias debe especificar como requisito previo, le sugerimos que elija un componente que tenga una funcionalidad similar a la extensión y que también tenga en cuenta los usuarios y qué tipo de componentes probablemente tendrían instalados o no les importaría instalar. También le sugerimos que la creación de las extensiones de una manera en la que los requisitos previos necesarios satisfagan solo el mínimo que permitirá que se ejecute la extensión y para características adicionales las tenga inactivas si no se detectan determinados componentes.
+Al buscar las dependencias, verá que una dependencia podría asignarse a varios componentes. Para determinar las dependencias que se deben especificar como requisitos previos, se recomienda elegir un componente que tenga una funcionalidad similar a la de la extensión y también tener en cuenta a los usuarios y qué tipo de componentes tienen más probabilidades de instalarse o no. También se recomienda crear las extensiones de una forma en la que los requisitos previos necesarios cumplan solo el mínimo que permitirá la ejecución de la extensión y que las características adicionales las tengan inactivas si no se detectan determinados componentes.
 
-Para proporcionar orientación adicional, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
+Para proporcionar más instrucciones, hemos identificado algunos tipos de extensión comunes y sus requisitos previos sugeridos:
 
-Tipo de extensión | Display Name (Nombre para mostrar) | id
+Tipo de extensión | Nombre para mostrar | ID
 --- | --- | ---
 Editor | Editor de núcleo de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Núcleo de carga de trabajo de escritorio administrado | Microsoft.VisualStudio.Component.ManagedDesktop.Core
-Depurador | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
+instantáneas | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
-## <a name="find-component-ids"></a>Buscar iDescomponentes
+## <a name="find-component-ids"></a>Buscar identificadores de componente
 
-La lista de componentes ordenados por producto de Visual Studio se encuentra en la carga de trabajo y los identificadores de componentes de [Visual Studio 2017.](/visualstudio/install/workload-and-component-ids?view=vs-2019) Utilice estos SDK de componentes para los ides de requisitos previos en el manifiesto.
+La lista de componentes ordenados por producto de Visual Studio se encuentra en [identificadores de componente y carga de trabajo de Visual studio 2017](/visualstudio/install/workload-and-component-ids?view=vs-2019). Use estos identificadores de componente para los identificadores de requisitos previos en el manifiesto.
 
-Si no está seguro de qué componente contiene un binario específico, descargue la hoja de [cálculo de asignación binaria >](https://aka.ms/vs2017componentid-binaries)componente .
+Si no está seguro de qué componente contiene un archivo binario específico, descargue la [hoja de cálculo de asignación binaria de componentes >](https://aka.ms/vs2017componentid-binaries).
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Hay cuatro columnas en la hoja de Excel: **Nombre de componente**, **ComponentId**, **Versión**y **Nombres binarios /de archivo**.  Puede utilizar los filtros para buscar y encontrar componentes y binarios específicos.
+Hay cuatro columnas en la hoja de Excel: **nombre de componente**, **ComponentID**, **versión**y **nombres de archivo/binarios**.  Puede usar los filtros para buscar y buscar componentes y binarios específicos.
 
-Para todas las referencias, primero determine cuáles están en el componente del editor principal (Microsoft.VisualStudio.Component.CoreEditor).  Como mínimo, requerimos que el componente del editor principal se especifique como requisito previo para todas las extensiones. De las referencias que quedan que no están en el editor principal, agregue filtros en la sección **Binarios / Nombres** de archivos para buscar componentes que tengan cualquiera de los subconjuntos de esas referencias.
+En el caso de todas las referencias, determine cuáles están en el componente editor básico (Microsoft. VisualStudio. Component. CoreEditor).  Como mínimo, se requiere que el componente editor de núcleos se especifique como requisito previo para todas las extensiones. De las referencias que se dejan en el editor principal, agregue filtros en la sección **nombres de archivos binarios o archivos** para buscar componentes que tienen cualquiera de los subconjuntos de esas referencias.
 
 Ejemplos:
 
-* Si tiene una extensión de depurador y sabe que el proyecto tiene una referencia a *VSDebugEng.dll* y *VSDebug.dll*, haga clic en el botón de filtro en el **encabezado Binaries / Files Names** .  Busque "VSDebugEng.dll" y seleccione *Aceptar*.  A continuación, haga clic en el botón de filtro en el **binarios / archivos nombres** encabezado de nuevo y busque "VSDebug.dll".  Active la casilla **Agregar selección actual para filtrar** y seleccione **Aceptar**.  Ahora examine el Nombre de **componente** para encontrar el componente que esté más relacionado con el tipo de extensión. En este ejemplo, elegiría el depurador Just-In-Time y lo agregaría a su vsixmanifest.
-* Si sabe que el proyecto se ocupa de los elementos del depurador, puede buscar en "depurador" en el cuadro de búsqueda de filtro para ver qué componentes contienen el depurador en su nombre.
+* Si tiene una extensión del depurador y sabe que el proyecto tiene una referencia a *VSDebugEng.dll* y *VSDebug.dll*, haga clic en el botón filtro del encabezado **archivos binarios/nombres de archivo** .  Busque "VSDebugEng.dll" y seleccione *Aceptar*.  A continuación, haga clic en el botón filtro del encabezado **archivos binarios/nombres** de nuevo y busque "VSDebug.dll".  Active la casilla **Agregar selección actual para filtrar** y haga clic en **Aceptar**.  Ahora examine el **nombre del componente** para encontrar un componente más relacionado con el tipo de extensión. En este ejemplo, elegiría el depurador Just-in-Time y lo agregaría a su vsixmanifest.
+* Si sabe que el proyecto trata los elementos del depurador, puede buscar en "depurador" en el cuadro Buscar filtro para ver qué componentes contienen el depurador en su nombre.
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Especificar una versión de Visual Studio 2017
 
-Si la extensión requiere una versión específica de Visual Studio 2017, por ejemplo, depende de una característica publicada en 15.3, debe especificar el número de compilación en el destino de **instalación**de VSIX . Por ejemplo, la versión 15.3 tiene un número de compilación de '15.0.26730.3'. Puede ver la asignación de versiones para generar números [aquí.](../install/visual-studio-build-numbers-and-release-dates.md) El uso del número de versión '15.3' no funcionará correctamente.
+Si la extensión requiere una versión específica de Visual Studio 2017, por ejemplo, depende de una característica publicada en 15,3, debe especificar el número de compilación en el **admitir**de VSIX. Por ejemplo, la versión 15,3 tiene un número de compilación de "15.0.26730.3". [Aquí](../install/visual-studio-build-numbers-and-release-dates.md)puede ver la asignación de versiones a los números de compilación. El uso del número de versión ' 15,3 ' no funcionará correctamente.
 
-Si la extensión requiere 15.3 o superior, declararía la **versión InstallationTarget** como [15.0.26730.3, 16.0):
+Si la extensión requiere 15,3 o superior, declararía la **versión de admitir** como [15.0.26730.3, 16,0):
 
 ```xml
 <Installation>

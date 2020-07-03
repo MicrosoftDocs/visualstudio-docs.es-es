@@ -1,7 +1,7 @@
 ---
-title: Persistiendo la propiedad de un elemento de proyecto Microsoft Docs
+title: Conservar la propiedad de un elemento de proyecto | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
@@ -11,23 +11,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15c280f15436a5e27bcc0dcc4d2fb9e9bdd82933
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702204"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906188"
 ---
-# <a name="persist-the-property-of-a-project-item"></a>Persistir la propiedad de un elemento de proyecto
-Es posible que desee conservar una propiedad que agregue a un elemento de proyecto, como el autor de un archivo de origen. Puede hacerlo almacenando la propiedad en el archivo de proyecto.
+# <a name="persist-the-property-of-a-project-item"></a>Conservar la propiedad de un elemento de proyecto
+Es posible que desee conservar una propiedad agregada a un elemento de proyecto, como el autor de un archivo de código fuente. Puede hacerlo almacenando la propiedad en el archivo de proyecto.
 
- El primer paso para conservar una propiedad en un archivo de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> proyecto es obtener la jerarquía del proyecto como una interfaz. Puede obtener esta interfaz mediante Automation <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>o mediante . Una vez obtenida la interfaz, puede usarla para determinar qué elemento de proyecto está seleccionado actualmente. Una vez que tenga el identificador <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> de elemento de proyecto, puede usar para agregar la propiedad.
+ El primer paso para conservar una propiedad en un archivo de proyecto es obtener la jerarquía del proyecto como una <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz. Puede obtener esta interfaz mediante la automatización o mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Una vez obtenida la interfaz, puede usarla para determinar qué elemento de proyecto está seleccionado actualmente. Una vez que tenga el identificador del elemento de proyecto, puede utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> para agregar la propiedad.
 
- En los procedimientos siguientes, `Author` se conserva `Tom` la propiedad *VsPkg.cs* con el valor del archivo de proyecto.
+ En los procedimientos siguientes, se conserva la *VsPkg.cs* propiedad VsPkg.CS `Author` con el valor del `Tom` archivo de proyecto.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Para obtener la jerarquía del proyecto con el objeto DTE
 
-1. Agregue el código siguiente al VSPackage:
+1. Agregue el código siguiente a su VSPackage:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -39,9 +39,9 @@ Es posible que desee conservar una propiedad que agregue a un elemento de proyec
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Para conservar la propiedad de elemento de proyecto con el objeto DTE
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Para conservar la propiedad del elemento de proyecto con el objeto DTE
 
-1. Agregue el código siguiente al código especificado en el método del procedimiento anterior:
+1. Agregue el código siguiente al código proporcionado en el método en el procedimiento anterior:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ Es posible que desee conservar una propiedad que agregue a un elemento de proyec
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Para obtener la jerarquía del proyecto mediante IVsMonitorSelection
 
-1. Agregue el código siguiente al VSPackage:
+1. Agregue el código siguiente a su VSPackage:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ Es posible que desee conservar una propiedad que agregue a un elemento de proyec
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Para conservar la propiedad de elemento de proyecto seleccionada, dada la jerarquía del proyecto
 
-1. Agregue el código siguiente al código especificado en el método del procedimiento anterior:
+1. Agregue el código siguiente al código proporcionado en el método en el procedimiento anterior:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -117,14 +117,14 @@ Es posible que desee conservar una propiedad que agregue a un elemento de proyec
 
 1. Inicie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra o cree una solución.
 
-2. Seleccione el elemento de proyecto VsPkg.cs en el **Explorador de soluciones**.
+2. Seleccione el elemento de proyecto VsPkg.cs en **Explorador de soluciones**.
 
-3. Use un punto de interrupción o determine de otro modo que el VSPackage está cargado y que SetItemAttribute se ejecuta.
+3. Use un punto de interrupción o, de lo contrario, determine que el VSPackage está cargado y que SetItemAttribute se ejecuta.
 
    > [!NOTE]
-   > Puede cargar automáticamente un VSPackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>en el contexto de la interfaz de usuario. Para obtener más información, vea [Cargar VSPackages](../extensibility/loading-vspackages.md).
+   > Puede cargar automáticamente un VSPackage en el contexto de la interfaz de usuario <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> . Para obtener más información, vea [cargar VSPackages](../extensibility/loading-vspackages.md).
 
-4. Cierre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver \<la etiqueta Author> con el valor Tom, como se indica a continuación:
+4. Cierre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver la \<Author> etiqueta con el valor Tom, como se indica a continuación:
 
    ```xml
    <Compile Include="VsPkg.cs">

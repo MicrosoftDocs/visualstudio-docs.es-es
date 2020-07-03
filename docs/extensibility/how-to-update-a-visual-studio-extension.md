@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: Actualizar una extensión de Visual Studio ( Visual Studio Extension) Microsoft Docs'
+title: 'Cómo: actualizar una extensión de Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - update package
 - update extension
@@ -12,25 +12,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266c0a49db1bca03cec0eb68301445102173df3d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80710658"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85905628"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Cómo: Actualizar una extensión de Visual Studio
-Puede actualizar una extensión de Visual Studio en el sistema mediante **Extensiones y actualizaciones** para instalar la versión actualizada. Si crea una versión actualizada de una extensión, puede significarla como actualizada incrementando el número de versión en el manifiesto VSIX.
+# <a name="how-to-update-a-visual-studio-extension"></a>Cómo: actualizar una extensión de Visual Studio
+Puede actualizar una extensión de Visual Studio en el sistema mediante el uso de **extensiones y actualizaciones** para instalar la versión actualizada. Si crea una versión actualizada de una extensión, puede indicarla como actualizada incrementando el número de versión en el manifiesto de VSIX.
 
- Las actualizaciones se instalan cuando el manifiesto `ID` VSIX de la `Version` extensión entrante tiene el mismo que el instalado y un número mayor. Si `Version` el número es el mismo o menor, el paquete no se puede instalar. Si `ID` los valores no coinciden, el paquete que aún no está instalado se reconoce como una extensión independiente.
+ Las actualizaciones se instalan cuando el manifiesto VSIX de la extensión entrante tiene el mismo `ID` que el instalado y un `Version` número mayor. Si el `Version` número es igual o inferior, no se puede instalar el paquete. Si los `ID` valores no coinciden, el paquete que todavía no está instalado se reconoce como una extensión independiente.
 
- Para ayudar a evitar conflictos durante el desarrollo, se recomienda desinstalar versiones anteriores de extensiones en curso y también desinstalar o deshabilitar cualquier otra extensión potencialmente conflictiva.
+ Para ayudar a evitar conflictos durante el desarrollo, se recomienda desinstalar las versiones anteriores de las extensiones en curso, así como desinstalar o deshabilitar cualquier otra extensión potencialmente conflictiva.
 
 ## <a name="to-update-an-extension-on-your-system"></a>Para actualizar una extensión en el sistema
 
 1. En el menú **Herramientas** , haga clic en **Extensiones y actualizaciones**
 
-2. En el panel izquierdo, haga clic en **Actualizaciones**.
+2. En el panel izquierdo, haga clic en **actualizaciones**.
 
 3. En el panel central, haga clic en la actualización que desea instalar.
 
@@ -43,23 +43,23 @@ Puede actualizar una extensión de Visual Studio en el sistema mediante **Extens
 1. En Visual Studio, abra la solución para la extensión que desea actualizar. Realice los cambios.
 
     > [!IMPORTANT]
-    > Sin firmar, todas las extensiones de usuario no se actualizan automáticamente. Siempre debe firmar sus extensiones.
+    > No se actualizan automáticamente todas las extensiones de usuario sin firmar. Siempre debe firmar las extensiones.
 
-2. En **el Explorador de soluciones**, abra *source.extension.manifest*.
+2. En **Explorador de soluciones**, Abra *source. Extension. manifest*.
 
-3. En el diseñador de manifiestos, aumente el valor del número en el campo **Versión.**
+3. En el diseñador de manifiestos, aumente el valor del número en el campo **versión** .
 
-4. Guarde la solución y compílela.
+4. Guarde la solución y genérelo.
 
-5. Cargue el nuevo archivo *.vsix* (en\* la carpeta *-bin-Debug del proyecto) en el sitio Web de [Visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
+5. Cargue el nuevo archivo *. vsix* (en la carpeta * \bin\debug \* del proyecto) en el sitio web de [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) .
 
-     Cuando un usuario que tiene una versión anterior de la extensión abre **Extensiones y actualizaciones**, la nueva versión aparecerá en la lista **Actualizaciones,** siempre que la herramienta esté configurada para buscar actualizaciones automáticamente.
+     Cuando un usuario que tenga una versión anterior de la extensión Abra **extensiones y actualizaciones**, la nueva versión aparecerá en la lista de **actualizaciones** , siempre que la herramienta esté configurada para buscar actualizaciones automáticamente.
 
-     Puede habilitar o deshabilitar la comprobación automática de actualizaciones en**Environment** > la parte inferior del panel **Actualizaciones** **(Habilitar/deshabilitar la detección automática de actualizaciones disponibles),** que cambia la configuración **Buscar actualizaciones** **en** > **Extensiones y actualizaciones**de entorno de**opciones** > de herramientas .
+     Puede habilitar o deshabilitar la comprobación automática de actualizaciones en la parte inferior del panel **actualizaciones** (**habilitar o deshabilitar la detección automática de actualizaciones disponibles**), que cambia la configuración de **Buscar actualizaciones** en **herramientas**  >  **Opciones**  >  **entorno**  >  **extensiones y actualizaciones**.
 
     > [!NOTE]
-    > A partir de Visual Studio 2015 Update 2, puede especificar**Environment** >  **(en** > Extensiones de entorno**y actualizaciones**de entorno de**opciones** > de herramientas) si desea actualizaciones automáticas para extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).
+    > A partir de Visual Studio 2015 Update 2, puede especificar (en **herramientas**  >  **Opciones**de  >  **entorno**  >  **y actualizaciones**) Si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).
 
 ## <a name="see-also"></a>Vea también
 - [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
+- [Búsqueda y uso de extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
