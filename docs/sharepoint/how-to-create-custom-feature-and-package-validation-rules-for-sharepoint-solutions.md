@@ -1,7 +1,7 @@
 ---
-title: 'Soluciones de SharePoint: Crear características personalizadas, las reglas de validación de paquetes'
+title: 'Soluciones de SharePoint: creación de características personalizadas, reglas de validación de paquetes'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a10118a0c83f9e17e32efd293a9a824e38a0942a
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
-ms.translationtype: MT
+ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835936"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016914"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedimiento Crear paquetes y características personalizado reglas de validación para las soluciones de SharePoint
-  Puede crear reglas de validación personalizadas para comprobar el paquete de solución generado por Visual Studio. Puede realizar la validación completa en una característica completa o el paquete seleccionando **validar** en el menú contextual de un paquete o una característica en el **PackagingExplorer**. Al agregar nuevas características o elementos de proyecto de SharePoint al proyecto para determinar si el paquete o la característica sería un estado válido, se realiza una validación parcial.
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Cómo: crear reglas personalizadas de validación de características y paquetes para soluciones de SharePoint
+  Puede crear reglas de validación personalizadas para comprobar el paquete de soluciones generado por Visual Studio. Puede realizar la validación completa de una característica o paquete completo seleccionando **validar** en el menú contextual de un paquete o característica en el **PackagingExplorer**. La validación parcial se realiza al agregar nuevas características o elementos de proyecto de SharePoint al proyecto para determinar si el paquete o la característica se encontrarían en un estado válido.
 
-### <a name="to-create-a-custom-package-validation-rule"></a>Para crear una regla de validación de paquete personalizado
+### <a name="to-create-a-custom-package-validation-rule"></a>Para crear una regla de validación de paquetes personalizada
 
 1. Cree un proyecto de biblioteca de clases.
 
@@ -33,16 +32,16 @@ ms.locfileid: "66835936"
 
     - System.ComponentModel.Composition
 
-3. Cree una clase que implementa una de las interfaces siguientes:
+3. Cree una clase que implemente una de las interfaces siguientes:
 
-    - Para crear una regla de validación del paquete, implemente el <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> interfaz.
+    - Para crear una regla de validación de paquetes, implemente la <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> interfaz.
 
-    - Para crear una regla de validación de características, implemente el <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> interfaz.
+    - Para crear una regla de validación de características, implemente la <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> interfaz.
 
-4. Agregue el <xref:System.ComponentModel.Composition.ExportAttribute> a la clase. Este atributo permite que Visual Studio detecte y cargue su regla de validación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> o <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> tipo al constructor del atributo.
+4. Agregue <xref:System.ComponentModel.Composition.ExportAttribute> a la clase. Este atributo permite a Visual Studio detectar y cargar la regla de validación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> tipo o al constructor de atributos.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra cómo crear una regla de validación de característica personalizada.
+ En el ejemplo de código siguiente se muestra cómo crear una regla de validación de características personalizada.
 
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]
  [!code-csharp[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs#1)]
@@ -50,12 +49,12 @@ ms.locfileid: "66835936"
 ## <a name="compile-the-code"></a>Compilar el código
  Este ejemplo requiere referencias a los ensamblados siguientes:
 
-- Microsoft.VisualStudio.SharePoint.
+- Microsoft. VisualStudio. SharePoint.
 
-- System.ComponentModel.Composition.
+- System. ComponentModel. Composition.
 
 ## <a name="deploy-the-extension"></a>Implementar la extensión
- Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y otros archivos que desea distribuir con la extensión. Para obtener más información, consulte [herramientas de implementación de extensiones de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Para implementar la extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, vea [deploy Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vea también
-- [Ampliar la implementación y empaquetado de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+## <a name="see-also"></a>Consulte también
+- [Extender el empaquetado e implementación de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

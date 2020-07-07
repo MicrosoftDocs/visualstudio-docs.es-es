@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Localizar el código | Documentos de Microsoft
+title: 'Cómo: localizar código | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,46 +13,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443094"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016694"
 ---
-# <a name="how-to-localize-code"></a>Procedimiento Localizar código
+# <a name="how-to-localize-code"></a>Cómo: localizar código
   El código sin localizar usa valores de cadena codificados de forma rígida. Para localizar cadenas de código, sustitúyalas por llamadas a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que es un método que hace referencia a los recursos localizados.
 
 ## <a name="localize-code"></a>Localizar código
 
 #### <a name="to-localize-code"></a>Para localizar el código
 
-1. En **el Explorador de soluciones**, abra el menú contextual de un elemento de proyecto y, a continuación, elija **agregar** > **módulo**.
+1. En **Explorador de soluciones**, abra el menú contextual de un elemento de proyecto y, a continuación, elija **Agregar**  >  **módulo**.
 
-     Elija la **archivo de recursos** plantilla.
+     Elija la plantilla de **archivo de recursos** .
 
     > [!NOTE]
     > Asegúrese de agregar el archivo de recursos a un elemento de proyecto de SharePoint para que esté disponible la propiedad Tipo de implementación. Esta propiedad es necesaria más adelante en este procedimiento.
 
-2. Asigne el archivo de recursos de idioma predeterminado un nombre de su elección y anéxelo con un *.resx* extensión, como *MyAppResources.resx*.
+2. Asigne al archivo de recursos de idioma predeterminado el nombre que prefiera anexado con una extensión *. resx* , como *MyAppResources. resx*.
 
 3. Repita los pasos 1 y 2 para agregar archivos de recursos independientes al elemento de proyecto de SharePoint: uno para cada idioma localizado.
 
-     Use el mismo nombre base para cada archivo de recursos localizado, pero agregue el identificador de la referencia cultural. Por ejemplo, de recursos localizado en alemán nombre *MyAppResources.de-DE.resx*.
+     Use el mismo nombre base para cada archivo de recursos localizado, pero agregue el identificador de la referencia cultural. Por ejemplo, asigne un nombre a un recurso localizado en Alemán *MyAppResources.de-de. resx*.
 
 4. Abra cada uno de los archivos de recursos y agregue las cadenas localizadas. Use los mismos identificadores de cadena en cada archivo.
 
-5. Cambie el valor de la **tipo de implementación** propiedad de cada archivo de recursos para **AppGlobalResource** para hacer que cada archivo implementar en la carpeta App_GlobalResources del servidor.
+5. Cambie el valor de la propiedad **tipo de implementación** de cada archivo de recursos a **AppGlobalResource** para que cada archivo se implemente en la carpeta App_GlobalResources del servidor.
 
-6. Deje el valor de la **acción de compilación** propiedad de cada archivo como **recurso incrustado**.
+6. Deje el valor de la propiedad **acción de compilación** de cada archivo como **recurso incrustado**.
 
      Los recursos incrustados se compilan en el archivo DLL del proyecto.
 
 7. Compile el proyecto para crear los archivos DLL satélite de recursos.
 
-8. En el **Diseñador de paquetes**, elija el **avanzadas** pestaña y, a continuación, agregue el ensamblado satélite.
+8. En el **Diseñador de paquetes**, elija la pestaña **Opciones avanzadas** y, a continuación, agregue el ensamblado satélite.
 
-9. En el **ubicación** cuadro, anteponga una carpeta de Id. de referencia cultural a la ruta de acceso de ubicación, como *de\\\<el nombre del elemento de proyecto >. resources.dll*.
+9. En el cuadro **Ubicación** , anteponga una carpeta de ID. de referencia cultural a la ruta de acceso de ubicación, por ejemplo, *de-de \\ \<Project Item Name>.resources.dll*.
 
 10. Si la solución aún no hace referencia el ensamblado System.Web, agregue una referencia y una directiva del código al espacio de nombres <xref:System.Web>.
 
@@ -62,14 +61,14 @@ ms.locfileid: "63443094"
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")
     ```
 
-12. Elija la **F5** clave para compilar y ejecutar la aplicación.
+12. Elija la tecla **F5** para compilar y ejecutar la aplicación.
 
 13. En SharePoint, cambie el idioma de presentación predeterminado.
 
      Las cadenas localizadas aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Cómo: Localizar una característica](../sharepoint/how-to-localize-a-feature.md)
-- [Cómo: Localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
-- [Cómo: Agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
+- [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md)
+- [Cómo: localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
+- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)

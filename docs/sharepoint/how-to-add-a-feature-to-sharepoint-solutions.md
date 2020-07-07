@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar una característica a las soluciones de SharePoint | Documentos de Microsoft
+title: 'Cómo: agregar una característica a las soluciones de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,19 +12,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 07d939a12e47f4ba63f51310efb36cc0a59d20e4
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967512"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016999"
 ---
-# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Procedimiento Agregar una característica a las soluciones de SharePoint
-  Cuando se crea una solución de SharePoint, una de las características y un paquete se agregan a la solución. Puede agregar más elementos de característica para organizar los diferentes tipos de archivos de SharePoint.
+# <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Cómo: agregar una característica a las soluciones de SharePoint
+  Al crear una solución de SharePoint, se agregan una característica y un paquete a la solución. Puede agregar más elementos de características para organizar los distintos tipos de archivos de SharePoint.
 
-### <a name="to-add-a-feature-through-solution-explorer"></a>Para agregar una característica a través del explorador de soluciones
+### <a name="to-add-a-feature-through-solution-explorer"></a>Para agregar una característica a través de Explorador de soluciones
 
-1. En **el Explorador de soluciones**, abra el menú contextual para **características**y, a continuación, elija **Agregar característica**.
+1. En **Explorador de soluciones**, abra el menú contextual de **características**y, a continuación, elija **Agregar característica**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

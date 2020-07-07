@@ -1,7 +1,7 @@
 ---
 title: Crear elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
-ms.translationtype: MT
+ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557844"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016502"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1
   Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint. Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto. En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.
@@ -40,7 +39,7 @@ ms.locfileid: "77557844"
 > [!NOTE]
 > Para obtener una serie de flujos de trabajo de ejemplo, vea [ejemplos de flujo de trabajo de SharePoint](/sharepoint/dev/general-development/sharepoint-workflow-samples).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Requisitos previos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows, SharePoint y [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -72,7 +71,7 @@ ms.locfileid: "77557844"
 
 3. En la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que se elige **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-4. Expanda los nodos **Visual Basic** o  **C# visual** y, a continuación, elija el nodo **extensibilidad** .
+4. Expanda los nodos **Visual Basic** o **Visual C#** y, a continuación, elija el nodo **extensibilidad** .
 
     > [!NOTE]
     > El nodo **extensibilidad** solo está disponible si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
@@ -81,7 +80,7 @@ ms.locfileid: "77557844"
 
 6. En el cuadro **nombre** , escriba **SiteColumnProjectItem**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **SiteColumnProjectItem** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **SiteColumnProjectItem** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-project-template-project"></a>Para crear el proyecto de plantilla de proyecto
 
@@ -89,27 +88,27 @@ ms.locfileid: "77557844"
 
 2. En la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que se elige **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-3. Expanda el nodo **Visual C#**  o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
+3. Expanda el nodo **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
 
-4. En la lista de plantillas de proyecto, elija **C#** la plantilla de proyecto o Visual Basic plantilla de **plantilla de proyecto** .
+4. En la lista de plantillas de proyecto, elija la plantilla de **proyecto de C#** o Visual Basic plantilla de **plantilla de proyecto** .
 
 5. En el cuadro **nombre** , escriba **SiteColumnProjectTemplate**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **SiteColumnProjectTemplate** a la solución.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **SiteColumnProjectTemplate** a la solución.
 
 6. Elimine el archivo de código Class1 del proyecto.
 
 7. Si creó un proyecto de Visual Basic, elimine también los siguientes archivos del proyecto:
 
-    - *Aplicación. Designer. VB*
+    - *MyApplication.Designer.vb*
 
     - MyApplication.myapp
 
-    - *Resources. Designer. VB*
+    - *Resources.Designer.vb*
 
     - *Resources. resx*
 
-    - *Settings. Designer. VB*
+    - *Settings.Designer.vb*
 
     - Settings.settings
 
@@ -119,11 +118,11 @@ ms.locfileid: "77557844"
 
 2. En la parte superior del cuadro de diálogo **nuevo proyecto** , asegúrese de que se elige **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
-3. Expanda los nodos  **C# visual** o **Visual Basic** , elija el nodo **Windows** y, a continuación, elija la plantilla **biblioteca de clases** .
+3. Expanda los nodos **Visual C#** o **Visual Basic** , elija el nodo **Windows** y, a continuación, elija la plantilla **biblioteca de clases** .
 
 4. En el cuadro **nombre** , escriba **ProjectItemTypeDefinition** y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ProjectItemTypeDefinition** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **ProjectItemTypeDefinition** a la solución y abre el archivo de código predeterminado Class1.
 
 5. Elimine el archivo de código Class1 del proyecto.
 
@@ -170,7 +169,7 @@ ms.locfileid: "77557844"
 
 5. En la instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que tiene abierta la solución SiteColumnProjectItem, en **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **SiteColumnProjectTemplate** , elija **Agregar**y, a continuación, elija **elemento existente**.
 
-6. En el cuadro de diálogo **Agregar elemento existente** , abra la lista de extensiones de archivo y, a continuación, elija **todos los archivos (\*.\*)** .
+6. En el cuadro de diálogo **Agregar elemento existente** , abra la lista de extensiones de archivo y, a continuación, elija **todos los archivos ( \* . \* )**.
 
 7. En el directorio que contiene el proyecto BaseSharePointProject, seleccione el archivo Key. snk y, a continuación, elija el botón **Agregar** .
 
@@ -205,7 +204,7 @@ ms.locfileid: "77557844"
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
     ```
 
-4. Reemplace este elemento por el código XML siguiente.
+4. Reemplaza este elemento por el siguiente código XML.
 
     ```xml
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">
@@ -224,15 +223,15 @@ ms.locfileid: "77557844"
 
 - *AssemblyInfo.CS* o *AssemblyInfo. VB*
 
-- *Elements. XML*
+- *Elements.xml*
 
-- *Archivo sharepointprojectitem. spdata*
+- *SharePointProjectItem.spdata*
 
-- *Feature1. Feature*
+- *Feature1.feature*
 
-- *Paquete. paquete*
+- *Package.package*
 
-- *SiteColumnProjectTemplate. vstemplate*
+- *SiteColumnProjectTemplate.vstemplate*
 
 - *ProjectTemplate. csproj* o *ProjectTemplate. vbproj*
 
@@ -250,13 +249,13 @@ ms.locfileid: "77557844"
     using System.Security;
     ```
 
-     Cuando la propiedad **solución en espacio aislado** de un proyecto de SharePoint está establecida en **true**, Visual Studio agrega el <xref:System.Security.AllowPartiallyTrustedCallersAttribute> al archivo de código AssemblyInfo. Sin embargo, el archivo de código AssemblyInfo de la plantilla de proyecto no importa el espacio de nombres <xref:System.Security> de forma predeterminada. Debe agregar esta instrucción **using** o **Imports** para evitar errores de compilación.
+     Cuando la propiedad **solución en espacio aislado** de un proyecto de SharePoint está establecida en **true**, Visual Studio agrega <xref:System.Security.AllowPartiallyTrustedCallersAttribute> al archivo de código AssemblyInfo. Sin embargo, el archivo de código AssemblyInfo de la plantilla de proyecto no importa el espacio de nombres <xref:System.Security> de forma predeterminada. Debe agregar esta instrucción **using** o **Imports** para evitar errores de compilación.
 
 2. Guarde y cierre el archivo.
 
 #### <a name="to-edit-the-elementsxml-file"></a>Para modificar el archivo Elements.xml
 
-1. En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo *Elements. XML* por el siguiente código XML.
+1. En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo *Elements.xml* por el siguiente código XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -427,11 +426,11 @@ ms.locfileid: "77557844"
 
     El nuevo XML realiza los cambios siguientes en el archivo:
 
-   - Establece el elemento de `Name` en la **columna de sitio**Value. (Este nombre aparece en el cuadro de diálogo **nuevo proyecto** ).
+   - Establece el `Name` elemento en la **columna de sitio**Value. (Este nombre aparece en el cuadro de diálogo **nuevo proyecto** ).
 
    - Agrega elementos `ProjectItem` para cada uno de los archivos que se incluyen en cada instancia de proyecto.
 
-   - Utiliza el espacio de nombres `http://schemas.microsoft.com/developer/vstemplate/2005`. Otros archivos de proyecto de esta solución usan el espacio de nombres `http://schemas.microsoft.com/developer/msbuild/2003`. Por consiguiente, los mensajes de advertencia del esquema XML se generarán, pero puede pasarlos por alto en este tutorial.
+   - Utiliza el espacio de nombres `http://schemas.microsoft.com/developer/vstemplate/2005` . Otros archivos de proyecto de esta solución usan el `http://schemas.microsoft.com/developer/msbuild/2003` espacio de nombres. Por consiguiente, los mensajes de advertencia del esquema XML se generarán, pero puede pasarlos por alto en este tutorial.
 
      Para obtener más información sobre el contenido de los archivos *. vstemplate* , vea [referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -628,7 +627,7 @@ ms.locfileid: "77557844"
 
     - Agrega elementos `Reference` para las referencias de ensamblado usadas por los proyectos de SharePoint.
 
-    - Agrega elementos para cada archivo predeterminado del proyecto, como *Elements. XML* y *archivo sharepointprojectitem. spdata*.
+    - Agrega elementos para cada archivo predeterminado del proyecto, como *Elements.xml* y *archivo sharepointprojectitem. spdata*.
 
 2. Guarde y cierre el archivo.
 
@@ -673,7 +672,7 @@ ms.locfileid: "77557844"
 
 12. En la lista **proyecto** , elija **ProjectItemTypeDefinition**y, a continuación, elija el botón **Aceptar** .
 
-13. En la barra de menús, **Elija compilar** > **compilar solución**y, a continuación, asegúrese de que el proyecto se compila sin errores.
+13. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que el proyecto se compila sin errores.
 
 ## <a name="test-the-project-template"></a>Prueba de la plantilla de proyecto
  Ya puede probar la plantilla de proyecto. Primero, empiece a depurar la solución SiteColumnProjectItem en la instancia experimental de Visual Studio. A continuación, pruebe el proyecto de **columna de sitio** en la instancia experimental de Visual Studio. Por último, compile y ejecute el proyecto de SharePoint para comprobar que la columna de sitio funciona del modo esperado.
@@ -682,15 +681,15 @@ ms.locfileid: "77557844"
 
 1. Reinicie Visual Studio con credenciales administrativas y abra la solución SiteColumnProjectItem.
 
-2. En el archivo de código SiteColumnProjectItemTypeProvider, agregue un punto de interrupción a la primera línea de código en el método `InitializeType` y, a continuación, elija la tecla **F5** para iniciar la depuración.
+2. En el archivo de código SiteColumnProjectItemTypeProvider, agregue un punto de interrupción a la primera línea de código en el `InitializeType` método y, a continuación, elija la tecla **F5** para iniciar la depuración.
 
      Visual Studio instala la extensión para %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Columna de sitio\1 .0 e inicia una instancia experimental de Visual Studio. Probará el elemento de proyecto en esta instancia de Visual Studio.
 
 #### <a name="to-test-the-project-in-visual-studio"></a>Para probar el proyecto en Visual Studio
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo** > **nuevo** > **proyecto**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto**.
 
-2. Expanda el nodo **Visual C#**  o **Visual Basic** (en función del lenguaje que admita la plantilla de proyecto), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **Visual C#** o **Visual Basic** (en función del lenguaje que admita la plantilla de proyecto), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
 3. En la lista de plantillas de proyecto, elija la plantilla de **columna sitio** .
 
@@ -698,7 +697,7 @@ ms.locfileid: "77557844"
 
      En **Explorador de soluciones**, aparece un nuevo proyecto con un elemento de proyecto denominado **Campo1**.
 
-5. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `InitializeType` y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
+5. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el `InitializeType` método y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
 
 6. En **Explorador de soluciones**, elija el nodo **Campo1** y, a continuación, elija la tecla **F4** .
 
@@ -717,7 +716,7 @@ ms.locfileid: "77557844"
     > [!NOTE]
     > La propiedad **dirección URL del sitio** está vacía de forma predeterminada porque la plantilla de proyecto de columna de sitio no proporciona un asistente para recopilar este valor cuando se crea el proyecto. Para obtener información sobre cómo agregar un asistente que pida al desarrollador este valor y, a continuación, configure esta propiedad en el nuevo proyecto, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-3. Presione la tecla **F5**.
+3. Elija la tecla **F5**.
 
      La columna de sitio se empaqueta e implementa en el sitio de SharePoint que se especifica en la propiedad **dirección URL del sitio** del proyecto. El explorador web se abre en la página predeterminada de este sitio.
 
@@ -737,7 +736,7 @@ ms.locfileid: "77557844"
 
 #### <a name="to-clean-up-the-development-computer"></a>Para limpiar el equipo de desarrollo
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
@@ -750,7 +749,7 @@ ms.locfileid: "77557844"
 5. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que se abre la solución SiteColumnProjectItem).
 
 ## <a name="next-steps"></a>Pasos siguientes
- Después de completar este tutorial, puede agregar un asistente a la plantilla de proyecto. Cuando un usuario crea un proyecto de columnas de sitio, el asistente pide al usuario la dirección URL del sitio que se va a usar para depurar, le pregunta si la nueva solución es de espacio aislado y configura el nuevo proyecto con esta información. El Asistente también recopila información sobre la columna (por ejemplo, el tipo base y el grupo en el que se va a mostrar la columna en la galería de columnas del sitio) y agrega esta información al archivo *Elements. XML* del nuevo proyecto. Para obtener más información, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+ Después de completar este tutorial, puede agregar un asistente a la plantilla de proyecto. Cuando un usuario crea un proyecto de columnas de sitio, el asistente pide al usuario la dirección URL del sitio que se va a usar para depurar, le pregunta si la nueva solución es de espacio aislado y configura el nuevo proyecto con esta información. El Asistente también recopila información sobre la columna (por ejemplo, el tipo base y el grupo en el que se va a mostrar la columna en la galería de columnas del sitio) y agrega esta información al archivo *Elements.xml* del nuevo proyecto. Para obtener más información, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 ## <a name="see-also"></a>Consulte también
 

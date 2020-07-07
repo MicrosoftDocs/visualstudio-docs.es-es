@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: crear una página de aplicación de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,12 +13,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985024"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016498"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Tutorial: crear una página de aplicación de SharePoint
 
@@ -61,19 +60,19 @@ Para crear una página de aplicación, agregue un elemento de **Página de aplic
 
 1. En **Explorador de soluciones**, elija el proyecto **MySharePointProject** .
 
-2. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
+2. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
 
 3. En el cuadro de diálogo **Agregar nuevo elemento** , elija la plantilla **Página de aplicación (solo solución de granja de servidores** ).
 
 4. Asigne a la página el nombre **SearchItems**y, a continuación, elija el botón **Agregar** .
 
-     El diseñador de Visual Web Developer muestra la página de aplicación en la vista **código fuente** , donde puede ver los elementos HTML de la página. El diseñador muestra el marcado de varios controles <xref:System.Web.UI.WebControls.Content>. Cada control se asigna a un <xref:System.Web.UI.WebControls.ContentPlaceHolder> control que se define en la página maestra de aplicación predeterminada.
+     El diseñador de Visual Web Developer muestra la página de aplicación en la vista **código fuente** , donde puede ver los elementos HTML de la página. El diseñador muestra el marcado de varios <xref:System.Web.UI.WebControls.Content> controles. Cada control se asigna a un <xref:System.Web.UI.WebControls.ContentPlaceHolder> control que se define en la página maestra de aplicación predeterminada.
 
 ## <a name="design-the-layout-of-the-application-page"></a>Diseñar el diseño de la página de la aplicación
 
 El elemento de página de aplicación le permite usar un diseñador para agregar controles ASP.NET a la página de la aplicación. Este diseñador es el mismo diseñador que se utiliza en Visual Web Developer. Agregue una etiqueta, una lista de botones de radio y una tabla a la vista de **código fuente** del diseñador y, a continuación, establezca las propiedades del mismo modo que lo haría al diseñar cualquier página de ASP.net estándar.
 
-1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
+1. En la barra de menús, elija **Ver**  >  **cuadro de herramientas**.
 
 2. En el nodo estándar del **cuadro de herramientas**, realice uno de los pasos siguientes:
 
@@ -83,9 +82,9 @@ El elemento de página de aplicación le permite usar un diseñador para agregar
 
 3. Repita el paso anterior para agregar un elemento **DropDownList** y un elemento de **tabla** al control de contenido **PlaceHolderMain** .
 
-4. En el diseñador, cambie el valor del atributo `Text` del control etiqueta para **Mostrar todos los elementos**.
+4. En el diseñador, cambie el valor del `Text` atributo del control etiqueta para **Mostrar todos los elementos**.
 
-5. En el diseñador, reemplace el elemento `<asp:DropDownList>` por el siguiente código XML.
+5. En el diseñador, reemplace el `<asp:DropDownList>` elemento por el siguiente código XML.
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,13 +96,13 @@ El elemento de página de aplicación le permite usar un diseñador para agregar
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>Controlar los eventos de los controles de la página
 
-Controle los controles en una página de aplicación de la misma forma que lo haría con cualquier página de ASP.NET. En este procedimiento, se controlará el evento de `SelectedIndexChanged` de la lista desplegable.
+Controle los controles en una página de aplicación de la misma forma que lo haría con cualquier página de ASP.NET. En este procedimiento, se controlará el `SelectedIndexChanged` evento de la lista desplegable.
 
 1. En el menú **Ver** , elija **código**.
 
      El archivo de código de la página de la aplicación se abre en el editor de código.
 
-2. Agregue el método siguiente a la clase `SearchItems`: Este código controla el evento de <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> del <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
+2. Agregue el siguiente método a la clase `SearchItems`. Este código controla el <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> evento de <xref:System.Web.UI.WebControls.DropDownList> llamando a un método que se creará más adelante en este tutorial.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +112,12 @@ Controle los controles en una página de aplicación de la misma forma que lo ha
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Agregue el método siguiente a la clase `SearchItems`: Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
+4. Agregue el siguiente método a la clase `SearchItems`. Este método recorre en iteración todos los sitios de la granja de servidores y busca los elementos creados o modificados por el usuario actual.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Agregue el método siguiente a la clase `SearchItems`: Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
+5. Agregue el siguiente método a la clase `SearchItems`. Este método muestra los elementos creados o modificados por el usuario actual en la tabla.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -129,7 +128,7 @@ Al ejecutar el proyecto, se abre el sitio de SharePoint y aparece la página de 
 
 1. En **Explorador de soluciones**, abra el menú contextual de la página de la aplicación y, a continuación, elija **establecer como elemento de inicio**.
 
-2. Presione la tecla **F5**.
+2. Elija la tecla **F5**.
 
      Se abre el sitio de SharePoint.
 
@@ -151,7 +150,7 @@ Puede obtener más información sobre cómo diseñar el contenido de una página
 
 - [Crear controles reutilizables para elementos Web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Cómo: crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)
-[tipo de página _layouts de aplicación](/previous-versions/office/aa979604(v=office.14))
+[Cómo: crear una página](../sharepoint/how-to-create-an-application-page.md) 
+ de aplicación [Tipo de página _layouts de aplicación](/previous-versions/office/aa979604(v=office.14))

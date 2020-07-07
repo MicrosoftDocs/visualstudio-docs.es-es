@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar un parámetro a un método | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb1a1c1e8f11ac6daa46f9fe1468a1ff3509e135
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986240"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016713"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Cómo: agregar un parámetro a un método
   Use un parámetro para pasar información al método o para devolver información de un método. Todos los métodos deben tener al menos un parámetro. Para obtener más información sobre cómo diseñar un parámetro para admitir el tipo de método que desea crear, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986240"
 
 1. Agregue un método a una entidad.
 
-2. En la barra de menús, elija **ver** > otros **detalles del método BDC**de **Windows** > .
+2. En la barra de menús, elija **Ver**  >  **otros**  >  **detalles del método BDC**de Windows.
 
      Se abre la ventana **detalles del método de BDC** . Para obtener más información, vea [información general sobre las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -43,7 +42,7 @@ ms.locfileid: "72986240"
 
      Aparece un nuevo parámetro debajo del nodo **parámetros** .
 
-5. En la barra de menús, elija **ver** > **ventana Propiedades**.
+5. En la barra de menús, elija **Ver**  >  **ventana Propiedades**.
 
 6. En la ventana **propiedades** , establezca la propiedad **nombre** en cualquier nombre que tenga sentido. Por ejemplo, si el método va a devolver clientes, podría asignar el nombre al método **GetCustomers**.
 
@@ -53,7 +52,7 @@ ms.locfileid: "72986240"
 
 8. Modifique el descriptor de tipo del parámetro. Para obtener más información, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

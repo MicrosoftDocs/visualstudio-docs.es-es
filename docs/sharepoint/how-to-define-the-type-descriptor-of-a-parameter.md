@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Definir el Descriptor de tipo de un parámetro | Documentos de Microsoft
+title: 'Cómo: definir el descriptor de tipo de un parámetro | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,63 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971334"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016841"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedimiento Definir el descriptor de tipo de un parámetro
-  Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Cómo: definir el descriptor de tipo de un parámetro
+  Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, vea [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Para definir el descriptor de tipo de un parámetro
 
-1. En el **detalles del método de BDC** ventana, elija el descriptor de tipo del parámetro.
+1. En la ventana **detalles del método de BDC** , elija el descriptor de tipo del parámetro.
 
-2. En la barra de menús, elija **vista**, **ventana propiedades**.
+2. En la barra de menús, elija **Ver**, **ventana Propiedades**.
 
-3. En el **propiedades** ventana, establezca las propiedades de descriptor de tipos.
+3. En la ventana **propiedades** , establezca las propiedades del descriptor de tipos.
 
      En los procedimientos siguientes se describe cómo se define un descriptor de tipo como un campo, entidad o colección de entidades.
 
 ### <a name="to-define-a-field"></a>Para definir un campo
 
-1. En el **propiedades** ventana, establezca el **nombre** propiedad de descriptor de tipos para el nombre de un campo en el tipo que representa la entidad (por ejemplo: **FirstName**).
+1. En la ventana **propiedades** , establezca la propiedad **nombre** del descriptor de tipo en el nombre de un campo del tipo que representa la entidad (por ejemplo: **FirstName**).
 
-2. En la lista junto a la **TypeName** propiedad, elija el tipo de datos adecuado (por ejemplo, **Int32**).
+2. En la lista situada junto a la propiedad **TypeName** , elija el tipo de datos adecuado (por ejemplo, **Int32**).
 
      Para obtener información sobre otros parámetros opcionales, vea [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Para definir una entidad
 
-1. En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Póngase en contacto con**).
+1. En la ventana **propiedades** , establezca la propiedad **nombre** en un nombre que describa la entidad (por ejemplo: **contacto**).
 
-2. Establecer el **TypeName** propiedad en el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
+2. Establezca la propiedad **TypeName** en el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
 
-    - Para una clase en el proyecto, elija la flecha abajo junto a la **TypeName** propiedad, elija el **proyecto actual** ficha en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
+    - Para una clase del proyecto, elija la flecha abajo situada junto a la propiedad **TypeName** , elija la pestaña **proyecto actual** en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
 
-         El nombre completo incluye el espacio de nombres y el nombre de la clase seguidos del nombre del sistema LOB. En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una clase en el proyecto.
+         El nombre completo incluye el espacio de nombres y el nombre de la clase seguidos del nombre del sistema LOB. En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en una clase del proyecto.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
     - Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.
 
-         En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a un tipo definido en un ensamblado que se hace referencia en la solución.
+         En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en un tipo definido en un ensamblado al que se hace referencia en la solución.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
     - Si se trata de un tipo definido en el modelo de objetos de BDC, el nombre completo incluye el espacio de nombres y el nombre del tipo.
 
-         En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a un tipo en el modelo de objetos BDC.
+         En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en un tipo del modelo de objetos de BDC.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3. En el **detalles del método de BDC** , abra la lista que aparece en el descriptor de tipo y, a continuación, elija **editar**.
+3. En la ventana **detalles del método de BDC** , abra la lista que aparece para el descriptor de tipos y, a continuación, elija **Editar**.
 
-     El **Explorador de BDC** abre la ventana.
+     Se abre la ventana **Explorador de BDC** .
 
-4. En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **agregar Descriptor de tipo**.
+4. En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **Agregar descriptor de tipos**.
 
      Un nuevo descriptor de tipo se agrega como elemento secundario al descriptor de tipo de entidad. Configure este descriptor de tipo como un campo.
 
@@ -79,47 +78,47 @@ ms.locfileid: "62971334"
 
 ### <a name="to-define-a-collection-of-entities"></a>Para definir una colección de entidades
 
-1. En el **detalles del método de BDC** ventana, elija el descriptor de tipo del parámetro que desee.
+1. En la ventana **detalles del método de BDC** , elija el descriptor de tipo del parámetro que desee.
 
-2. En la barra de menús, elija **vista**, **ventana propiedades**.
+2. En la barra de menús, elija **Ver**, **ventana Propiedades**.
 
-3. En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Pone en contacto con**).
+3. En la ventana **propiedades** , establezca la propiedad **nombre** en un nombre que describa la entidad (por ejemplo: **contactos**).
 
-4. Establecer el **IsCollection** propiedad **True**. Esto indica que este descriptor de tipo es una colección de entidades.
+4. Establezca la propiedad **IsCollection** en **true**. Esto indica que este descriptor de tipo es una colección de entidades.
 
-5. Establecer el **TypeName** propiedad en una cadena que contiene una referencia a la <xref:System.Collections.Generic.IEnumerable%601> interfaz y el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
+5. Establezca la propiedad **TypeName** en una cadena que contenga una referencia a la <xref:System.Collections.Generic.IEnumerable%601> interfaz y el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.
 
-   - Para una clase en el proyecto, elija la flecha abajo junto a la **TypeName** propiedad, elija el **proyecto actual** ficha en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
+   - Para una clase del proyecto, elija la flecha abajo situada junto a la propiedad **TypeName** , elija la pestaña **proyecto actual** en el cuadro de diálogo que aparece y, a continuación, elija la clase en el proyecto.
 
       El nombre completo incluye el espacio de nombres y el nombre de la clase seguidos del nombre del sistema LOB.
 
-      En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de las clases del proyecto.
+      En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en una colección de clases del proyecto.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]`
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace. BdcModel1. contact, BdcModel1] '
 
    - Si se trata de un tipo ubicado en un ensamblado de la solución, el nombre completo contiene el nombre del tipo, el nombre del ensamblado, el número de versión, la referencia cultural y el token de clave pública.
 
-      En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de tipos en un ensamblado que se hace referencia en la solución.
+      En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en una colección de tipos de un ensamblado al que se hace referencia en la solución.
 
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`
+      `System.Collections.Generic.IEnumerable`1 [myNameSpace. contact, myAssemblyName, version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089] '
 
    - Si se trata de un tipo definido en el modelo de objetos de BDC, el nombre completo solamente incluye el espacio de nombres y el nombre del tipo.
 
-      En el ejemplo siguiente se establece el valor de la **TypeName** propiedad a una colección de tipos definidos en el modelo de objetos BDC.
+      En el ejemplo siguiente se establece el valor de la propiedad **TypeName** en una colección de tipos definidos en el modelo de objetos de BDC.
 
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`
+      `System.Collections.Generic.IEnumerable`1 [Microsoft. BusinessData. Runtime. DynamicType] '
 
-6. En el **detalles del método de BDC** , abra la lista que aparece en el descriptor de tipo y, a continuación, elija **editar**.
+6. En la ventana **detalles del método de BDC** , abra la lista que aparece para el descriptor de tipos y, a continuación, elija **Editar**.
 
-    El **Explorador de BDC** abre la ventana.
+    Se abre la ventana **Explorador de BDC** .
 
-7. En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **agregar Descriptor de tipo**.
+7. En el **Explorador de BDC**, abra el menú contextual del descriptor de tipo y, a continuación, elija **Agregar descriptor de tipos**.
 
     Un nuevo descriptor de tipo se agrega como elemento secundario al descriptor de tipo de la colección. Configure este descriptor de tipo como una entidad.
 
-## <a name="see-also"></a>Vea también
-- [Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Cómo: Definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)
-- [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)
+## <a name="see-also"></a>Consulte también
+- [Introducción a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)
+- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)

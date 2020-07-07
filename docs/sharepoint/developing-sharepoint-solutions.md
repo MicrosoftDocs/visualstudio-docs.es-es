@@ -1,7 +1,7 @@
 ---
 title: Desarrollo de soluciones de SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586900"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016792"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desarrollar soluciones de SharePoint
   En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles varias plantillas de tipo de proyecto de SharePoint para crear sitios y elementos de sitio de SharePoint. Para obtener una lista de los tipos de proyecto disponibles, vea plantillas de proyecto [y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). A continuación se ofrece una descripción de los elementos y las propiedades de un proyecto de SharePoint.
@@ -59,7 +58,7 @@ ms.locfileid: "82586900"
 
  Cuando un proyecto, un elemento de proyecto o un nodo de archivo de elemento de proyecto de SharePoint se selecciona en el **Explorador de soluciones**, aparecen las siguientes propiedades en la ventana Propiedades o en la página del propiedades:
 
-### <a name="project-properties"></a>Propiedades de proyecto
+### <a name="project-properties"></a>Propiedades del proyecto
 
 |Nombre de propiedad|Descripción|
 |-------------------|-----------------|
@@ -99,9 +98,9 @@ ms.locfileid: "82586900"
 |Herramienta personalizada|Especifica el nombre de una herramienta, si existe, que transforma el archivo en tiempo de diseño y coloca la salida de la transformación en otro archivo. Por ejemplo, un archivo del conjunto de datos (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) que tiene una herramienta personalizada predeterminada. Para más información, vea las [propiedades del archivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Espacio de nombres de la herramienta personalizada|Espacio de nombres en el que se copia la salida de la herramienta personalizada. Para más información, vea las [propiedades del archivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Ubicación de implementación|Ruta de acceso completa del archivo en el servidor de SharePoint. Esta ruta de acceso se compone de las subpropiedades Raíz de la implementación y Ruta de acceso de la implementación.|
-|Ruta de acceso de la implementación|La ruta de acceso relativa del archivo en el archivo de servidor de SharePoint,\\como Workflow1. La ruta de acceso completa del archivo se crea concatenando el valor de *Deployment Path* al final del valor de *Deployment Root* .<br /><br /> Al seleccionar un valor *de RootFile* para la propiedad *tipo de implementación* , se cambia la propiedad raíz de *implementación* a SharePointRoot>\< \\, lo que da \<lugar a una\\ruta de acceso completa de SharePointRoot> \workflow1. Para obtener más información, vea [empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Deployment Root|String. Carpeta raíz donde se implementa el archivo en el servidor de SharePoint. Por ejemplo, \<SharePointRoot> \template\features\\\<FeatureName>\\.<br /><br /> El valor de la propiedad *Deployment Root* viene determinado por el valor de *Deployment Type* .|
-|Tipo de implementación|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede ser uno de los siguientes valores:<br /><br /> Nodeployment: * \<no hay ningún valor>*<br /><br /> ElementManifest: * \<SharePointRoot> \template\features\\\<FeatureName>*\\<br /><br /> ElementFile: * \<SharePointRoot> \template\features\\\<FeatureName>\\*<br /><br /> TemplateFile: * \<SharePointRoot> \Template\\*<br /><br /> RootFile: * \<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \resources\\*<br /><br /> ClassResource: * \<ClassResourcePath>\\*<br /><br /> Para obtener más información, vea <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Ruta de acceso de la implementación|La ruta de acceso relativa del archivo en el archivo de servidor de SharePoint, como Workflow1 \\ . La ruta de acceso completa del archivo se crea concatenando el valor de *Deployment Path* al final del valor de *Deployment Root* .<br /><br /> Al seleccionar un valor de *RootFile* para la propiedad *tipo de implementación* , se cambia la propiedad raíz de *implementación* a \<SharePointRoot> \\ , lo que da como resultado una ruta de acceso completa de \<SharePointRoot> \Workflow1 \\ . Para obtener más información, vea [empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Deployment Root|String. Carpeta raíz donde se implementa el archivo en el servidor de SharePoint. Por ejemplo, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> El valor de la propiedad *Deployment Root* viene determinado por el valor de *Deployment Type* .|
+|Tipo de implementación|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede ser uno de los siguientes valores:<br /><br /> NoDeployment*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> Para obtener más información, vea <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nombre de archivo|Nombre del archivo o carpeta para el archivo de elementos.|
 |Ruta de acceso completa|Ubicación del archivo del elemento. (Solo lectura).|
 

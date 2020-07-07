@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar un descriptor de filtro a un método Finder | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986252"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016742"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Cómo: agregar un descriptor de filtro a un método Finder
   Los descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de que se ejecuten. Para obtener más información, vea [diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72986252"
 
 2. En la ventana **detalles del método** , elija el descriptor de tipo del parámetro.
 
-3. En la barra de menús, elija **ver** > **ventana Propiedades**.
+3. En la barra de menús, elija **Ver**  >  **ventana Propiedades**.
 
 4. En la ventana **propiedades** , establezca la propiedad **nombre de tipo** en un tipo de datos adecuado para el filtro.
 
@@ -45,7 +44,7 @@ ms.locfileid: "72986252"
 
      Aparece un nuevo descriptor de filtro debajo del nodo **descriptores de filtro** .
 
-7. En la barra de menús, elija **ver** > **ventana Propiedades**.
+7. En la barra de menús, elija **Ver**  >  **ventana Propiedades**.
 
 8. En la ventana **propiedades** , elija la propiedad **tipo** .
 
@@ -62,12 +61,12 @@ ms.locfileid: "72986252"
      En el ejemplo siguiente se devuelven pedidos de ventas que tienen la fecha de pedido especificada.
 
     > [!NOTE]
-    > Reemplace el valor del campo `ServerName` por el nombre del servidor.
+    > Reemplace el valor del `ServerName` campo por el nombre del servidor.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)

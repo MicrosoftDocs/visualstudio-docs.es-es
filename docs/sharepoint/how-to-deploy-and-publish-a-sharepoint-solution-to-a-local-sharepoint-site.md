@@ -1,7 +1,7 @@
 ---
-title: Implementar y publicar soluciones de SharePoint en el sitio de SharePoint local
+title: Implementar & publicar una solución de SharePoint en el sitio de SharePoint local
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,36 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401451"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016821"
 ---
-# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedimiento Implementar y publicar una solución de SharePoint en un sitio de SharePoint local
-  Puede implementar o publicar soluciones de SharePoint en un servidor de SharePoint local en el equipo de desarrollo. Las copias del proceso de implementación el *.wsp* archivo al servidor de SharePoint, instala la solución y, a continuación, activa las características. La publicación solo copias de procesar el *.wsp* archivo al servidor de SharePoint y lo instala. Debe activar manualmente para habilitarlo en SharePoint.
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint local
+  Puede implementar o publicar soluciones de SharePoint en un servidor de SharePoint local en el equipo de desarrollo. El proceso de implementación copia el archivo *. wsp* en el servidor de SharePoint, instala la solución y, a continuación, activa las características. El proceso de publicación solo copia el archivo *. wsp* en el servidor de SharePoint y lo instala. Debe activarla manualmente para habilitarla en SharePoint.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Para implementar una solución de SharePoint en el servidor de SharePoint local
 
-1. En **el Explorador de soluciones**, elija el proyecto que desea implementar.
+1. En **Explorador de soluciones**, elija el proyecto que desea implementar.
 
 2. En la barra de menús, elija **compilar**, **implementar solución**.
 
-     El *.wsp* archivo se crea y se instala en el servidor de SharePoint local. Además, se activan las características.
+     El archivo *. wsp* se crea y se instala en el servidor local de SharePoint. Además, las características se activan.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Para publicar una solución de SharePoint en un servidor de SharePoint local
 
-1. En **el Explorador de soluciones**, abra el menú contextual para el proyecto de SharePoint que desea publicar y, a continuación, elija **publicar**.
+1. En **Explorador de soluciones**, abra el menú contextual del proyecto de SharePoint que desea publicar y, a continuación, elija **publicar**.
 
-2. En el **publicar** diálogo cuadro, elija el **publicar en el sistema de archivos** botón de opción.
+2. En el cuadro de diálogo **publicar** , elija el botón de opción **publicar en sistema de archivos** .
 
-3. En el **ubicación de destino** cuadro de texto, escriba una ruta de acceso local y, a continuación, elija el **publicar** botón.
+3. En el cuadro de texto **Ubicación de destino** , escriba una ruta de acceso local y, a continuación, elija el botón **publicar** .
 
-     Aparece el progreso de la publicación en Visual Studio **salida** ventana. Cuando finalice el proceso, la solución ( *.wsp*) está instalado el archivo en el servidor de SharePoint local. Sin embargo, todavía debe activarse para su uso en SharePoint. Si ya existe el archivo de solución, un error se produce y se le pregunta si desea sobrescribir el archivo existente. Para obtener información sobre cómo actualizar el paquete, vea la sección sobre cómo actualizar los paquetes remotos en [Cómo: Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
+     El progreso de la publicación aparece en la ventana **resultados** de Visual Studio. Una vez finalizado el proceso, el archivo de solución (*. wsp*) se instala en el servidor local de SharePoint. Sin embargo, todavía se debe activar para su uso en SharePoint. Si el archivo de solución ya existe, se produce un error que le pregunta si desea sobrescribir el archivo existente. Para obtener información sobre cómo actualizar el paquete, vea la sección sobre cómo actualizar paquetes remotos en [Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
-- [Crear paquetes de solución SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
-- [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Cómo: Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+## <a name="see-also"></a>Consulte también
+- [Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
+- [Crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
+- [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [Cómo: agregar y quitar características y elementos de un paquete mediante el diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)

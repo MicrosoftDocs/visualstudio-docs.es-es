@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: generar perfiles de una aplicación de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MT
+ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77277653"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017103"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite localizar y eliminar la parte más costosa (rendimiento más lento) del proyecto, también conocida como la *ruta de acceso activa*.
@@ -38,20 +37,20 @@ ms.locfileid: "77277653"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]Operador
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Crear un proyecto de SharePoint
  Primero, cree un proyecto de SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint
 
-1. En la barra de menús, elija **archivo** > **nuevo** > **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
+1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el nodo **SharePoint** en **Visual C#**  o en **Visual Basic**y, a continuación, elija el nodo **2010** .
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
 
 3. En el panel plantillas, elija la plantilla de **proyecto de SharePoint 2010** .
 
@@ -151,7 +150,7 @@ ms.locfileid: "77277653"
     }
     ```
 
-5. Agregue el siguiente procedimiento debajo del procedimiento `FeatureActivated`.
+5. Agregue el siguiente procedimiento debajo del `FeatureActivated` procedimiento.
 
     ```vb
 
@@ -241,13 +240,13 @@ ms.locfileid: "77277653"
 
      Esta ubicación indica que `TimeCounter` fue una de las funciones con el número más alto de muestras, lo que significa que es uno de los mayores cuellos de botella de rendimiento de la aplicación. Sin embargo, esta situación no es sorprendente, porque se diseñó deliberadamente de ese modo para fines de demostración.
 
-2. En la sección **funciones que realizan la mayor parte del trabajo individual** , elija el vínculo `ProcessRequest` para mostrar la distribución del costo de la función `ProcessRequest`.
+2. En la sección **funciones que realizan la mayor parte del trabajo individual** , elija el `ProcessRequest` vínculo para mostrar la distribución del costo de la `ProcessRequest` función.
 
-     En la sección **funciones llamadas** de `ProcessRequest`, observe que la función **FeatureActivated** se muestra como la función más costosa llamada.
+     En la sección **funciones llamadas** de `ProcessRequest` , observe que la función **FeatureActivated** se muestra como la función más costosa llamada.
 
 3. En la sección **funciones llamadas** , elija el botón **FeatureActivated** .
 
-     En la sección **funciones llamadas** de **FeatureActivated**, la función `TimeCounter` se muestra como la función más costosa llamada. En el panel **vista de código de función** , el código resaltado (`TimeCounter`) es la zona activa y indica dónde se necesita la corrección.
+     En la sección **funciones llamadas** de **FeatureActivated**, la `TimeCounter` función aparece como la función más costosa llamada. En el panel **vista de código de función** , el código resaltado ( `TimeCounter` ) es la zona activa y indica dónde se necesita la corrección.
 
 4. Cierre el informe de generación de perfiles de muestreo.
 
@@ -272,7 +271,7 @@ ms.locfileid: "77277653"
 
      La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.
 
-## <a name="see-also"></a>Vea también
-- [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)
+## <a name="see-also"></a>Consulte también
+- [Introducción a la sesión de rendimiento](../profiling/performance-session-overview.md)
 - [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
-- [Buscar cuellos de botella en la aplicación con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Find Application Bottlenecks with Visual Studio Profiler (Detección de cuellos de botella de las aplicaciones con el generador de perfiles de Visual Studio)](https://msdn.microsoft.com/magazine/cc337887.aspx)

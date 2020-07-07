@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar una entidad a un modelo | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - EntityTool
 dev_langs:
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a7ec1eab5cdcf2e415a4803c51c9da91be29c9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985241"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016677"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Cómo: agregar una entidad a un modelo
   Para crear una entidad, agregue un control de entidad desde el **cuadro de herramientas** de Visual Studio al diseñador de conectividad a datos profesionales (BDC).
@@ -33,7 +32,7 @@ ms.locfileid: "72985241"
 
 2. En el **cuadro de herramientas**, en el grupo **BusinessDataCatalog** , agregue un control de **entidad** al diseñador.
 
-     La nueva entidad aparece en el diseñador. Visual Studio agrega un elemento `<Entity>` al XML del archivo de modelo BDC en el proyecto. Para obtener más información sobre los atributos de un elemento de entidad, vea [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
+     La nueva entidad aparece en el diseñador. Visual Studio agrega un `<Entity>` elemento al XML del archivo de modelo BDC en el proyecto. Para obtener más información sobre los atributos de un elemento de entidad, vea [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
 3. En el diseñador, abra el menú contextual de la entidad, elija **Agregar**y, a continuación, elija **identificador**.
 
@@ -47,7 +46,7 @@ ms.locfileid: "72985241"
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)
 - [Cómo: agregar un método de eliminación](../sharepoint/how-to-add-a-deleter-method.md)
 - [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)

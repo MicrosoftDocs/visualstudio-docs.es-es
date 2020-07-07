@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Agregar una referencia de salida del proyecto | Documentos de Microsoft
+title: 'Cómo: agregar una referencia de salida del proyecto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,33 +14,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967258"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016754"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>Procedimiento Agregar una referencia de salida del proyecto
-  Para implementar ensamblados de proyecto que no es de SharePoint (o archivos .xap en proyectos de Silverlight) en SharePoint, debe agregarlos como una referencia de salida del proyecto.
+# <a name="how-to-add-a-project-output-reference"></a>Cómo: agregar una referencia de salida del proyecto
+  Para implementar ensamblados de proyecto que no sean de SharePoint (o archivos. xap en proyectos de Silverlight) en SharePoint, agréguelos como una referencia de salida del proyecto.
 
- Este proceso crea una dependencia de compilación de soluciones entre los dos proyectos. Antes de que se genera e implementa el proyecto de SharePoint, se compilan los proyectos asociados a referencias de salida del proyecto.
+ Este proceso crea una dependencia de compilación de la solución entre los dos proyectos. Los proyectos asociados a las referencias de salida del proyecto se compilan antes de que se compile e implemente el proyecto de SharePoint.
 
 ### <a name="to-add-a-project-output-reference"></a>Para agregar una referencia de salida del proyecto
 
-1. Cargar una solución que contenga al menos un proyecto de SharePoint y un proyecto que no es de SharePoint.
+1. Cargue una solución que contenga al menos un proyecto de SharePoint y un proyecto que no sea de SharePoint.
 
-2. En **el Explorador de soluciones**, elija un elemento en el nodo de proyecto de SharePoint.
+2. En **Explorador de soluciones**, elija un elemento en el nodo de proyecto de SharePoint.
 
-3. En el **propiedades** ventana, elija el **Project Output References** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de NET Mobile")) situado junto a ella.
+3. En la ventana **propiedades** , elija la propiedad **referencias de resultados del proyecto** y, a continuación, elija el botón de puntos suspensivos (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")) situado junto a él.
 
-4. En el **Project Output References** diálogo cuadro, elija el **agregar** botón.
+4. En el cuadro de diálogo **referencias de salida del proyecto** , elija el botón **Agregar** .
 
-5. En el panel Propiedades, elija la flecha situada junto a la **tipo de implementación** propiedad y, a continuación, elija un valor apropiado para el elemento que no es de SharePoint que se hace referencia, como **ElementFile**.
+5. En el panel Propiedades, elija la flecha situada junto a la propiedad **tipo de implementación** y, a continuación, elija un valor adecuado para el elemento que no es de SharePoint al que se hace referencia, como **ElementFile**.
 
-6. Elija la flecha situada junto a **nombre del proyecto**, elija el nombre del elemento de proyecto que no es de SharePoint y, a continuación, elija el **Aceptar** botón.
+6. Elija la flecha situada junto a **nombre del proyecto**, elija el nombre del elemento de proyecto que no es de SharePoint y, a continuación, elija el botón **Aceptar** .
 
-## <a name="see-also"></a>Vea también
-- [Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Cómo: Marcar los controles como seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+## <a name="see-also"></a>Consulte también
+- [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Cómo: marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear una asociación entre entidades | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981832"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016940"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Cómo: crear una asociación entre entidades
   Puede definir las relaciones entre las entidades del modelo de conectividad a datos profesionales (BDC) mediante la creación de asociaciones. Visual Studio genera métodos que proporcionan a los consumidores del modelo información sobre cada asociación. Estos métodos pueden ser consumidos por elementos Web, listas o aplicaciones personalizadas de SharePoint para mostrar las relaciones de datos en una interfaz de usuario (UI).
@@ -45,7 +44,7 @@ ms.locfileid: "72981832"
 
     1. En la columna **ID. de origen** de la tabla de **asignación de identificadores** , elija el identificador situado junto a cada descriptor de tipo coincidente que aparece en la columna **campo** .
 
-         Por ejemplo, en la columna **ID. de origen** , seleccione `ContactID` junto a la `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descriptor de tipo y el descriptor de tipos `ReadItem.salesOrder.SalesOrder.ContactID`.
+         Por ejemplo, en la columna ID. de **origen** , seleccione `ContactID` junto al `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descriptor de tipos y el `ReadItem.salesOrder.SalesOrder.ContactID` descriptor de tipos.
 
 4. Si desea crear una asociación de entrada sin llave externa, desactive la casilla **es la Asociación de clave externa** .
 
@@ -61,7 +60,7 @@ ms.locfileid: "72981832"
 
      Para obtener ejemplos de métodos del navegador de asociaciones, vea [crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear una asociación entre entidades](../sharepoint/creating-an-association-between-entities.md)
 - [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)
