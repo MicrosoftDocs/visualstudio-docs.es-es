@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Incluir un ensamblado personalizado en una característica de BDC | Documentos de Microsoft
+title: 'Cómo: incluir un ensamblado personalizado en una característica de BDC | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Add_Assemblies_Dialog
 dev_langs:
@@ -17,39 +17,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443113"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015260"
 ---
-# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedimiento Incluir un ensamblado personalizado en una característica de BDC
-  El proyecto puede hacer referencia a ensamblados desde otros proyectos en la misma solución. Sin embargo, debe agregar estos ensamblados al archivo de características del proyecto mediante el **asignar al que hace referencia a LobSystems ensamblados** cuadro de diálogo.
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Cómo: incluir un ensamblado personalizado en una característica de BDC
+  El proyecto puede hacer referencia a ensamblados de otros proyectos de la misma solución. Sin embargo, debe agregar estos ensamblados al archivo de características del proyecto mediante el cuadro de diálogo **asignar los ensamblados a los que se hace referencia a LobSystems** .
 
-### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Para incluir un ensamblado personalizado en una característica de conectividad (BDC) de datos de negocio
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Para incluir un ensamblado personalizado en una característica de conectividad a datos profesionales (BDC)
 
-1. En **el Explorador de soluciones**, elija la carpeta que contiene el modelo BDC.
+1. En **Explorador de soluciones**, elija la carpeta que contiene el modelo BDC.
 
-2. En el menú **Ver** , haga clic en la **Ventana Propiedades**.
+2. En el menú **Ver** , haga clic en **Ventana de propiedades**.
 
-3. En el **propiedades** ventana, elija el **ensamblados** propiedad y, a continuación, en el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Elipse del diseñador")).
+3. En la ventana **propiedades** , elija la propiedad **ensamblados** y, a continuación, el botón de puntos suspensivos (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")).
 
-     El **asignar al que hace referencia a LobSystems ensamblados** aparece el cuadro de diálogo.
+     Aparece el cuadro de diálogo **asignar los ensamblados a los que se hace referencia a LobSystems** .
 
-4. En el **seleccione un ensamblado** lista, elija el ensamblado personalizado.
-
-    > [!NOTE]
-    > Los ensamblados que solo aparecen en la **asignar al que hace referencia a LobSystems ensamblados** cuadro de diálogo si se ha agregado una referencia al proyecto que contiene el ensamblado. Para obtener más información, vea [Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
-
-5. En el **propiedades de la referencia** agrupar, abra la lista que aparece para la **ámbito de LobSystem** propiedad, elija el sistema LOB de los métodos que utilizan el ensamblado personalizado y, a continuación, elijan el **Aceptar**  botón.
+4. En la lista **seleccionar un ensamblado** , elija el ensamblado personalizado.
 
     > [!NOTE]
-    > Para depurar código en el ensamblado personalizado, debe agregar el ensamblado al paquete de solución. Para obtener más información, vea [Cómo: Agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Los ensamblados solo aparecen en el cuadro de diálogo **asignar ensamblados de referencia a LobSystems** si ha agregado una referencia al proyecto que contiene el ensamblado. Para obtener más información, vea [Cómo: agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-## <a name="see-also"></a>Vea también
-- [Cómo: Use un archivo de recursos para especificar los permisos, propiedades y nombres localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
-- [Cómo: Agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
-- [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Cómo: Crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Datos de negocio Integragte en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+5. En el grupo **propiedades de referencia** , abra la lista que aparece para la propiedad ámbito de **LobSystem** , elija el sistema de LOB de los métodos que usan el ensamblado personalizado y, a continuación, elija el botón **Aceptar** .
+
+    > [!NOTE]
+    > Para depurar el código del ensamblado personalizado, debe agregar el ensamblado al paquete de solución. Para obtener más información, consulte [Cómo: agregar y quitar ensamblados adicionales](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+
+## <a name="see-also"></a>Consulte también
+- [Cómo: usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Integragte datos empresariales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

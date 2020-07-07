@@ -1,7 +1,7 @@
 ---
 title: Depurar aplicaciones de SharePoint con IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984146"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015746"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: depurar una aplicación de SharePoint mediante IntelliTrace
 
@@ -47,7 +46,7 @@ Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. L
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Necesita los componentes siguientes para completar este tutorial:
+Necesitará los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Windows y SharePoint.
 
@@ -89,7 +88,7 @@ Luego, agregue el código a dos métodos del receptor de características: `Feat
     private string webUrl = "/";
     ```
 
-2. Reemplace el método `FeatureActivated` con el código siguiente:
+2. Reemplace el método `FeatureActivated` por el código siguiente:
 
     ```vb
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
@@ -155,7 +154,7 @@ Luego, agregue el código a dos métodos del receptor de características: `Feat
     }
     ```
 
-3. Reemplace el método `FeatureDeactivating` con el código siguiente:
+3. Reemplace el método `FeatureDeactivating` por el código siguiente:
 
     ```vb
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)
@@ -245,7 +244,7 @@ Luego, agregue el código a dos métodos del receptor de características: `Feat
     }
     ```
 
-## <a name="test-the-project"></a>Probar el proyecto
+## <a name="test-the-project"></a>Prueba del proyecto
 
 Ahora que el código se agrega al receptor de características y el recopilador de datos se está ejecutando, implemente y ejecute la solución de SharePoint para probar si funciona correctamente.
 
@@ -295,7 +294,7 @@ Si instala Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, pued
 
 3. En la ventana de PowerShell, ejecute el comando [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) para crear el archivo. iTrace, detenga la supervisión y reinicie la solución de SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Depurar y corregir la solución de SharePoint
 
@@ -329,7 +328,7 @@ Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para bus
 
      El código se ejecuta ahora correctamente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

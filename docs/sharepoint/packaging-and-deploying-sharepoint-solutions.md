@@ -1,7 +1,7 @@
 ---
 title: Empaquetar e implementar soluciones de SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986203"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015602"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante el uso de un archivo de paquete de solución (. wsp). Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.
 
- En este tema se proporciona la información siguiente:
+ Este tema proporciona la siguiente información:
 
 - [Crear características y paquetes](#create-features-and-packages)
 
@@ -37,7 +36,7 @@ ms.locfileid: "72986203"
 ## <a name="create-features-and-packages"></a>Crear características y paquetes
  Puede usar Visual Studio para agrupar los elementos de SharePoint relacionados en una *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una sola característica con fines de implementación. Para obtener más información sobre las características, vea [bloque de creación: características](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
 
- A continuación, puede crear un paquete de solución de SharePoint ( *. wsp*) para agrupar varias características, definiciones de sitio, ensamblados y otros archivos en un único paquete, que almacena los archivos en un formato que SharePoint necesita para implementar los archivos en el servidor. Para obtener más información, vea [bloque de creación: soluciones](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
+ A continuación, puede crear un paquete de solución de SharePoint (*. wsp*) para agrupar varias características, definiciones de sitio, ensamblados y otros archivos en un único paquete, que almacena los archivos en un formato que SharePoint necesita para implementar los archivos en el servidor. Para obtener más información, vea [bloque de creación: soluciones](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
 
 ## <a name="feature-and-packaging-tool-support"></a>Compatibilidad con herramientas de empaquetado y características
  Puede usar las herramientas de desarrollo de SharePoint en Visual Studio para organizar rápidamente los archivos de SharePoint en características y paquetes de soluciones para facilitar la implementación. Puede usar las siguientes herramientas para configurar la característica y el paquete de la solución.
@@ -95,12 +94,12 @@ ms.locfileid: "72986203"
 
  Por ejemplo, para agregar un archivo *. XML* a un proyecto de SharePoint, realice una de estas acciones:
 
-- Agregue una carpeta asignada "layouts" de SharePoint al proyecto. Esto crea en **Explorador de soluciones** una carpeta denominada **layouts** que tiene una subcarpeta para el proyecto. Agregue el archivo *. XML* a la nueva subcarpeta. De forma predeterminada, el archivo se implementa en el sistema de archivos de SharePoint en *. \TEMPLATE\LAYOUTS\\\<nombre de carpeta >* . Para obtener información sobre cómo agregar carpetas asignadas, consulte [Cómo: agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Agregue una carpeta asignada "layouts" de SharePoint al proyecto. Esto crea en **Explorador de soluciones** una carpeta denominada **layouts** que tiene una subcarpeta para el proyecto. Agregue el archivo *. XML* a la nueva subcarpeta. De forma predeterminada, el archivo se implementa en el sistema de archivos de SharePoint en *. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Para obtener información sobre cómo agregar carpetas asignadas, consulte [Cómo: agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Agregue el archivo *. XML* a la carpeta de un elemento de proyecto de SharePoint y, a continuación, cambie la propiedad **tipo de implementación** del archivo *. XML* de **nodeployment** a otra configuración como **RootFile** o **ElementFile**. La configuración de **tipo de implementación** adecuada depende del archivo y del proyecto. Para obtener más información sobre la configuración de las propiedades de **tipo de implementación** , vea [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 
   Si un archivo agregado no se aplica a ningún proyecto específico de la solución, puede Agregar un proyecto de SharePoint vacío a la solución y, a continuación, agregarle los archivos adicionales. Otra alternativa para implementar archivos en SharePoint, especialmente en la base de datos de contenido, es agregar un módulo al proyecto y, a continuación, agregar los archivos al módulo. Para obtener más información, vea [usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

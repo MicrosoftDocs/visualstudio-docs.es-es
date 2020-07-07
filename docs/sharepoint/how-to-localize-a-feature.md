@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Localizar una característica | Documentos de Microsoft
+title: 'Cómo: localizar una característica | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,52 +13,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813672"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016147"
 ---
-# <a name="how-to-localize-a-feature"></a>Procedimiento Localizar una característica
-  De forma predeterminada, las descripciones y títulos de las características utilizan los valores de cadena codificados de forma rígida. Para localizar el título de la característica y la descripción, reemplace las cadenas con expresiones que hacen referencia a los recursos localizados.
+# <a name="how-to-localize-a-feature"></a>Cómo: localizar una característica
+  De forma predeterminada, los títulos y las descripciones de las características usan valores de cadena codificados de forma rígida. Para localizar el título y la descripción de la característica, reemplace las cadenas por expresiones que hagan referencia a recursos localizados.
 
 ## <a name="localize-a-feature"></a>Localizar una característica
 
 #### <a name="to-localize-a-feature"></a>Para localizar una característica
 
-1. En **el Explorador de soluciones**, abra el menú contextual para el **Feature1** nodo y, a continuación, elija **Agregar recurso de características**.
+1. En **Explorador de soluciones**, abra el menú contextual del nodo **Feature1** y, a continuación, elija **Agregar recurso de característica**.
 
-2. En el **Agregar recurso** diálogo cuadro, elija **todos los idiomas** en la lista según la referencia cultural para el archivo de recursos de características de lenguaje de forma predeterminada.
+2. En el cuadro de diálogo **Agregar recurso** , elija **idioma invariable** de la lista como referencia cultural para el archivo de recursos de características de idioma predeterminado.
 
-3. Repita el paso anterior para cada idioma localizado, elegir los idiomas de su elección para la característica localizada los archivos de recursos.
+3. Repita el paso anterior para cada idioma localizado y elija los idiomas de su elección para los archivos de recursos de características localizados.
 
-     Se crean archivos de recursos de características independientes: uno para el idioma predeterminado y otro para cada idiomas localizados que desee admitir.
+     Se crean archivos de recursos de características independientes: uno para el idioma predeterminado y otro para cada idioma localizado que desee admitir.
 
-4. Abra cada archivo de recursos en el Editor de recursos y, a continuación, escriba todos los identificadores de cadena y sus valores.
+4. Abra cada archivo de recursos en el editor de recursos y, a continuación, escriba todos los identificadores de cadena y sus valores.
 
-     Por ejemplo, en el archivo de recursos de característica predeterminado, escriba un identificador de cadena de **título** con un valor de **Mi título de la característica**, y un segundo identificador de cadena del **descripción** con un valor de **Mi descripción de la característica**. Para cada archivo de recursos localizado, use la misma cadena de identificadores utilizados en el recurso de la característica de forma predeterminada, pero especifique las cadenas localizadas para los valores.
+     Por ejemplo, en el archivo de recursos de características predeterminado, escriba un identificador de cadena de **título** con un valor de **mi título de característica**y un segundo identificador de cadena de **Descripción** con un valor de **mi Descripción de la característica**. Para cada archivo de recursos localizado, use los mismos identificadores de cadena que se usan en el recurso de característica predeterminado, pero especifique cadenas localizadas para los valores.
 
-5. Después de escribir todos los valores de recursos, abra el menú contextual de la característica (por ejemplo, *Feature1.feature*) y, a continuación, elija **Ver diseñador** para abrir la característica en el Diseñador de características.
+5. Después de especificar todos los valores de recursos, abra el menú contextual de la característica (por ejemplo, *Feature1. Feature*) y, a continuación, elija **Diseñador de vistas** para abrir la característica en el diseñador de características.
 
-6. Para localizar el **título** y **descripción** los campos de la característica, use el siguiente formato para especificar los valores en sus cuadros:
+6. Para localizar los campos de **título** y **Descripción** en la característica, use el formato siguiente para escribir los valores en los cuadros:
 
      `$Resources:` *Identificador de cadena*
 
-     Por ejemplo, escriba $Resources:**título** en el **título de la característica** cuadro y $Resources:**descripción** en el **descripción de la característica** cuadro .
+     Por ejemplo, escriba $Resources:**título** en el cuadro título de la **característica** y $Resources:**Descripción** en el cuadro Descripción de la **característica** .
 
      Los identificadores de cadena deben coincidir con los que se usan en los archivos de recursos.
 
-7. Elija la **F5** clave para compilar y ejecutar la aplicación.
+7. Elija la tecla **F5** para compilar y ejecutar la aplicación.
 
-8. En SharePoint, abra el **acciones del sitio** menú, elija **configuración del sitio**y, a continuación, en el **acciones del sitio** sección elegir el **administrar las características del sitio** vínculo.
+8. En SharePoint, abra el menú **acciones del sitio** , elija Configuración del **sitio**y, a continuación, en la sección **acciones del sitio** , elija el vínculo **administrar las características del sitio** .
 
 9. En SharePoint, cambie el idioma de presentación predeterminado.
 
-     El título de la característica localizado y la descripción aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
+     El título y la descripción de la característica localizada aparecen en la aplicación. Para mostrar los recursos localizados, el servidor de SharePoint debe tener instalado el paquete de idioma que coincide con la referencia cultural del archivo de recursos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
-- [Cómo: Agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
-- [Cómo: Localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
-- [Cómo: Localizar código](../sharepoint/how-to-localize-code.md)
+- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)
+- [Cómo: localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)
+- [Cómo: localizar código](../sharepoint/how-to-localize-code.md)

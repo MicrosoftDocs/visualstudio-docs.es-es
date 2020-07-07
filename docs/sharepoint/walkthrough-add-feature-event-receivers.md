@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: Agregar receptores de eventos de característica | Documentos de Microsoft'
+title: 'Tutorial: agregar receptores de eventos de características | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,108 +16,107 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008300"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015366"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Tutorial: Agregar receptores de eventos de característica
-  Receptores de eventos son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con la característica en SharePoint:
+# <a name="walkthrough-add-feature-event-receivers"></a>Tutorial: agregar receptores de eventos de características
+  Los receptores de eventos de características son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con características en SharePoint:
 
 - Se instala una característica.
 
-- Se activa una característica.
+- Una característica está activada.
 
 - Una característica está desactivada.
 
 - Se quita una característica.
 
-  Este tutorial muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
+  En este tutorial se muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
 
-- Crear un proyecto vacío con un receptor de eventos de característica.
+- Crear un proyecto vacío con un receptor de eventos de características.
 
-- Controlar la **FeatureDeactivating** método.
+- Controlar el método **FeatureDeactivating** .
 
 - Usar el modelo de objetos de proyecto de SharePoint para agregar un anuncio a la lista de anuncios.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
 - Visual Studio.
 
-## <a name="create-a-feature-event-receiver-project"></a>Crear un proyecto de receptor de eventos de característica
- En primer lugar, cree un proyecto para que contenga el receptor de eventos de característica.
+## <a name="create-a-feature-event-receiver-project"></a>Crear un proyecto de receptor de eventos de características
+ En primer lugar, cree un proyecto para que contenga el receptor de eventos de características.
 
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Para crear un proyecto con un receptor de eventos de característica
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Para crear un proyecto con un receptor de eventos de características
 
-1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.
+1. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-2. Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.
+2. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
 
-3. En el **plantillas** panel, elija el **proyecto de SharePoint 2010** plantilla.
+3. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
-     Use este tipo de proyecto para los receptores de eventos de característica porque no tienen ninguna plantilla de proyecto.
+     Este tipo de proyecto se usa para los receptores de eventos de características porque no tienen ninguna plantilla de proyecto.
 
-4. En el **nombre** , escriba **FeatureEvtTest**y, a continuación, elija el **Aceptar** botón para mostrar el **Asistente de personalización de SharePoint**.
+4. En el cuadro **nombre** , escriba **FeatureEvtTest**y, a continuación, elija el botón **Aceptar** para mostrar el Asistente para la **Personalización de SharePoint**.
 
-5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server a la que desea agregar el nuevo elemento de campo personalizado o usar la ubicación predeterminada (http://\<*sistema nombre*> /).
+5. En la página **especifique el sitio y el nivel de seguridad de la depuración** , escriba la dirección URL del sitio del servidor de SharePoint al que desea agregar el nuevo elemento de campo personalizado o use la ubicación predeterminada (http:// \<*system name*> /).
 
-6. En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.
+6. En la sección **¿cuál es el nivel de confianza de esta solución de SharePoint?** , elija el botón de opción **implementar como solución de granja de servidores** .
 
-     Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
+     Para obtener más información sobre las soluciones en espacio aislado frente a las soluciones de granja, consulte [consideraciones sobre soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Elija la **finalizar** botón y, a continuación, tenga en cuenta que una característica denominada Característica1 aparece bajo el **características** nodo.
+7. Elija el botón **Finalizar** y observe que una característica denominada Feature1 aparece bajo el nodo **características** .
 
-## <a name="add-an-event-receiver-to-the-feature"></a>Agregar un receptor de eventos a la característica
- A continuación, agregar un receptor de eventos a la característica y agregue el código que se ejecuta cuando se desactiva la característica.
+## <a name="add-an-event-receiver-to-the-feature"></a>Adición de un receptor de eventos a la característica
+ Después, agregue un receptor de eventos a la característica y agregue el código que se ejecuta cuando se desactiva la característica.
 
 #### <a name="to-add-an-event-receiver-to-the-feature"></a>Para agregar un receptor de eventos a la característica
 
-1. Abra el menú contextual del nodo características y, a continuación, elija **Agregar característica** para crear una función.
+1. Abra el menú contextual del nodo características y, a continuación, elija **Agregar característica** para crear una característica.
 
-2. En el **características** nodo, abra el menú contextual para **Feature1**y, a continuación, elija **agregar receptor de eventos** para agregar un receptor de eventos a la característica.
+2. En el nodo **características** , abra el menú contextual de **Feature1**y, a continuación, elija **Agregar receptor de eventos** para agregar un receptor de eventos a la característica.
 
-     Esto agrega un archivo de código bajo Característica1. En este caso, se denomina cualquiera *Feature1.EventReceiver.cs* o *Feature1.EventReceiver.vb*, en función de lenguaje de desarrollo del proyecto.
+     Esto agrega un archivo de código en Feature1. En este caso, se denomina *Feature1.EventReceiver.CS* o *Feature1. EventReceiver. VB*, dependiendo del lenguaje de desarrollo del proyecto.
 
-3. Si el proyecto está escrito en [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], agregue el código siguiente en la parte superior del receptor de eventos si aún no está:
+3. Si el proyecto está escrito en [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , agregue el código siguiente en la parte superior del receptor de eventos si aún no está ahí:
 
      [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
 
-4. La clase del receptor de eventos contiene varios métodos comentados que actúan como eventos. Reemplace el **FeatureDeactivating** método con lo siguiente:
+4. La clase del receptor de eventos contiene varios métodos con comentarios que actúan como eventos. Reemplace el método **FeatureDeactivating** por lo siguiente:
 
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
 
-## <a name="test-the-feature-event-receiver"></a>Probar el receptor de eventos de característica
- A continuación, desactive la característica para probar si el **FeatureDeactivating** método envía un anuncio a la lista de anuncios de SharePoint.
+## <a name="test-the-feature-event-receiver"></a>Prueba del receptor de eventos de características
+ A continuación, desactive la característica para probar si el método **FeatureDeactivating** envía un anuncio a la lista de anuncios de SharePoint.
 
-#### <a name="to-test-the-feature-event-receiver"></a>Para probar el receptor de eventos de característica
+#### <a name="to-test-the-feature-event-receiver"></a>Para probar el receptor de eventos de características
 
-1. Establezca el valor del proyecto **Active Deployment Configuration** propiedad **sin activación**.
+1. Establezca el valor de la propiedad de **configuración de implementación activa** del proyecto en **sin activación**.
 
-     Al establecer esta propiedad evita que la característica de activación en SharePoint y le permite depurar receptores de eventos de característica. Para obtener más información, consulte [soluciones de SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).
+     El establecimiento de esta propiedad evita que la característica se active en SharePoint y permite depurar receptores de eventos de características. Para obtener más información, vea [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-2. Elija la **F5** clave para ejecutar el proyecto e implementarlo en SharePoint.
+2. Elija la tecla **F5** para ejecutar el proyecto e implementarlo en SharePoint.
 
-3. En la parte superior de la página Web de SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio**.
+3. En la parte superior de la Página Web de SharePoint, abra el menú **acciones del sitio** y, a continuación, elija **configuración del sitio**.
 
-4. En el **acciones del sitio** sección de la **configuración del sitio** página, elija el **administrar características del sitio** vínculo.
+4. En la sección **acciones del sitio** de la página Configuración del **sitio** , elija el vínculo **administrar las características del sitio** .
 
-5. En el **características** página, elija el **activar** situado junto a la **FeatureEvtTest Feature1** característica.
+5. En la página **características** , elija el botón **Activar** situado junto a la característica de **FeatureEvtTest Feature1** .
 
-6. En el **características** página, elija el **Deactivate** situado junto a la **FeatureEvtTest Feature1** característica y, a continuación, elija el **desactivar esta característica**  vínculo de confirmación para desactivar la característica.
+6. En la página **características** , elija el botón **desactivar** situado junto a la característica **FeatureEvtTest Feature1** y, a continuación, elija el vínculo **desactivar esta característica** para desactivar la característica.
 
-7. Elija la **inicio** botón.
+7. Elija el botón **Inicio** .
 
-     Observe que aparece un anuncio en el **anuncios** después de desactiva la característica de lista.
+     Observe que aparece un anuncio en la lista **anuncios** después de desactivar la característica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)

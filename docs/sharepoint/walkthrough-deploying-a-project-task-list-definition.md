@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: implementar una definición de Lista de tareas de proyecto | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661873"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015761"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Tutorial: implementar una definición de lista de tareas de proyecto
 
@@ -31,7 +30,7 @@ En este tutorial se muestra cómo usar [!INCLUDE[vs_dev11_long](../sharepoint/in
 
 - Visual Studio 2017 o Azure DevOps Services.
 
-## <a name="create-a-sharepoint-list"></a>Crear una lista de SharePoint
+## <a name="create-a-sharepoint-list"></a>Creación de una lista de SharePoint
 
 Cree un proyecto de lista de SharePoint y asocie la definición de lista con las tareas.
 
@@ -43,7 +42,7 @@ Cree un proyecto de lista de SharePoint y asocie la definición de lista con las
 
 3. Especifique el sitio de SharePoint local que se usa para la depuración, elija el botón de opción **implementar como solución de granja de servidores** y elija el botón **Finalizar** .
 
-4. Abra el menú contextual del proyecto y, a continuación, elija **agregar** > **nuevo elemento**.
+4. Abra el menú contextual del proyecto y, a continuación, elija **Agregar**  >  **nuevo elemento**.
 
 5. En el panel **plantillas** , elija la plantilla **lista** y, a continuación, elija el botón **Agregar** .
 
@@ -73,7 +72,7 @@ En la lista de tareas, puede Agregar un receptor de eventos que establezca autom
 
      Se agrega un nuevo nodo de receptor de eventos al proyecto con un archivo de código denominado **ProjectTaskListEventReceiver**.
 
-6. Agregue código al método `ItemAdded` en el archivo de código **ProjectTaskListEventReceiver** . Cada vez que se agrega una nueva tarea, se agrega una fecha de vencimiento predeterminada y una descripción a la tarea. La fecha de vencimiento predeterminada es el 1 de julio de 2009.
+6. Agregue código al `ItemAdded` método en el archivo de código **ProjectTaskListEventReceiver** . Cada vez que se agrega una nueva tarea, se agrega una fecha de vencimiento predeterminada y una descripción a la tarea. La fecha de vencimiento predeterminada es el 1 de julio de 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,31 +135,31 @@ Después de compilar y probar la lista de tareas del proyecto, puede implementar
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Para implementar la lista de tareas del proyecto en el sistema local
 
-En la barra de menús de Visual Studio, elija **Compilar** > **implementar solución**.
+En la barra de menús de Visual Studio, elija **compilar**  >  **implementar solución**.
 
-Visual Studio recicla el grupo de aplicaciones de IIS, retira cualquier versión existente de la solución, copia el archivo de paquete de solución ( *. wsp*) en SharePoint y, a continuación, activa sus características. Ahora puede usar la solución en SharePoint. Para obtener más información sobre los pasos de configuración de implementación, vea [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio recicla el grupo de aplicaciones de IIS, retira cualquier versión existente de la solución, copia el archivo de paquete de solución (*. wsp*) en SharePoint y, a continuación, activa sus características. Ahora puede usar la solución en SharePoint. Para obtener más información sobre los pasos de configuración de implementación, vea [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Para implementar la lista de tareas del proyecto en un sistema remoto
 
-1. En la barra de menús de Visual Studio, elija **Compilar** > **publicar**.
+1. En la barra de menús de Visual Studio, elija **compilación**  >  **publicar**.
 
 2. En el cuadro de diálogo **publicar** , elija el botón de opción **publicar en sistema de archivos** .
 
      Puede cambiar la ubicación de destino en el cuadro de diálogo **publicar** seleccionando el ![icono de puntos suspensivos](../sharepoint/media/ellipsisicon.gif "Icono Puntos suspensivos") del botón de puntos suspensivos y navegando a otra ubicación.
 
-3. Elija el botón **publicar** .
+3. Elija el botón **Publicar**.
 
      Se crea un archivo *. wsp* para la solución.
 
 4. Copie el archivo *. wsp* en el sistema de SharePoint remoto.
 
-5. Use el comando de `Add-SPUserSolution` de PowerShell para instalar el paquete en la instalación remota de SharePoint. (Para las soluciones de granja, use el comando `Add-SPSolution`).
+5. Use el comando de PowerShell `Add-SPUserSolution` para instalar el paquete en la instalación remota de SharePoint. (Para las soluciones de granja, use el `Add-SPSolution` comando).
 
-     Por ejemplo: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Por ejemplo, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Use el comando de `Install-SPUserSolution` de PowerShell para implementar la solución. (Para las soluciones de granja, use el comando `Install-SPSolution`).
+6. Use el comando de PowerShell `Install-SPUserSolution` para implementar la solución. (Para las soluciones de granja, use el `Install-SPSolution` comando).
 
-     Por ejemplo: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Por ejemplo, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Para obtener más información acerca de la implementación remota, vea [usar soluciones](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) y [Agregar e implementar soluciones con PowerShell en SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
@@ -174,5 +173,5 @@ Puede obtener más información sobre cómo personalizar e implementar solucione
 
 - [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

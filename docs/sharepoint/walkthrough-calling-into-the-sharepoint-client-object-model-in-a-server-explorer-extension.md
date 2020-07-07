@@ -1,7 +1,7 @@
 ---
 title: 'Explorador de servidores: extender el nodo conexiones de SharePoint'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,19 +13,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a40c20b92dc221dfab566240d27912b2b7e58be
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984999"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014639"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de Explorador de servidores
   En este tutorial se muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el nodo **conexiones de SharePoint** en **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
  En este tutorial se muestran las siguientes tareas:
 
-- Crear una extensión de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que extienda el nodo **conexiones de SharePoint** de **Explorador de servidores** de las siguientes maneras:
+- Crear una [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensión que extienda el nodo **conexiones de SharePoint** de **Explorador de servidores** de las siguientes maneras:
 
   - La extensión agrega un nodo de la **Galería de elementos Web** en cada nodo del sitio de SharePoint en **Explorador de servidores**. Este nuevo nodo contiene nodos secundarios que representan cada elemento Web en la galería de elementos Web del sitio.
 
@@ -66,7 +65,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 2. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#**  o **Visual Basic** y, a continuación, elija **extensibilidad**.
+3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija **extensibilidad**.
 
     > [!NOTE]
     > El nodo **extensibilidad** solo está disponible si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
@@ -79,13 +78,13 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 6. En el cuadro **nombre** , escriba **WebPartNode**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
 1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos  **C# visual** o **Visual Basic** y, a continuación, elija **Windows**.
+2. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija **Windows**.
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
@@ -93,7 +92,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 5. En el cuadro **nombre** , escriba **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
 
 6. Elimine el archivo de código Class1 del proyecto.
 
@@ -122,7 +121,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 6. Pulse la pestaña **Aplicación**.
 
-7. En el cuadro **espacio de nombres predeterminado** (C#) o en el cuadro espacio de **nombres raíz** (Visual Basic), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
+7. En el cuadro **espacio de nombres predeterminado** (C#) o **espacio de nombres raíz** (Visual Basic), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
 
 ## <a name="create-icons-for-the-new-nodes"></a>Crear iconos para los nuevos nodos
  Cree dos iconos para la extensión de **Explorador de servidores** : un icono para el nuevo nodo de la **Galería de elementos Web** y otro icono para cada nodo de elemento Web secundario en el nodo de la **Galería de elementos Web** . Más adelante en este tutorial, escribirá código que asocia estos iconos con los nodos.
@@ -154,7 +153,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 10. Repita los dos últimos pasos para *WebPart. ico*.
 
 ## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Agregue el nodo de la galería de elementos Web a Explorador de servidores
- Cree una clase que agregue el nuevo nodo de la **Galería de elementos Web** a cada nodo del sitio de SharePoint. Para agregar el nuevo nodo, la clase implementa la interfaz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>. Implemente esta interfaz siempre que desee ampliar el comportamiento de un nodo existente en **Explorador de servidores**, como agregar un nuevo nodo secundario a un nodo.
+ Cree una clase que agregue el nuevo nodo de la **Galería de elementos Web** a cada nodo del sitio de SharePoint. Para agregar el nuevo nodo, la clase implementa la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfaz. Implemente esta interfaz siempre que desee ampliar el comportamiento de un nodo existente en **Explorador de servidores**, como agregar un nuevo nodo secundario a un nodo.
 
 #### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Para agregar el nodo Galería de elementos Web a Explorador de servidores
 
@@ -169,7 +168,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Definir un tipo de nodo que represente un elemento Web
  Cree una clase que defina un nuevo tipo de nodo que representa un elemento Web. Visual Studio usa este nuevo tipo de nodo para mostrar los nodos secundarios en el nodo de la **Galería de elementos Web** . Cada uno de estos nodos secundarios representa un único elemento Web en el sitio de SharePoint.
 
- Para definir el nuevo tipo de nodo, la clase implementa la interfaz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>. Implemente esta interfaz siempre que desee definir un nuevo tipo de nodo en **Explorador de servidores**.
+ Para definir el nuevo tipo de nodo, la clase implementa la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interfaz. Implemente esta interfaz siempre que desee definir un nuevo tipo de nodo en **Explorador de servidores**.
 
 #### <a name="to-define-the-web-part-node-type"></a>Para definir el tipo de nodo de elemento Web
 
@@ -211,7 +210,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 8. En la lista **proyecto** , elija **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
 
-9. En la barra de menús, **Elija compilar** > **compilar solución**y, a continuación, asegúrese de que la solución se compila sin errores.
+9. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que la solución se compila sin errores.
 
 10. Asegúrese de que la carpeta de salida de compilación del proyecto WebPartNode contiene ahora el archivo WebPartNode. vsix.
 
@@ -224,7 +223,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 1. Reinicie Visual Studio con credenciales administrativas y, a continuación, abra la solución **WebPartNode** .
 
-2. En el proyecto ExtensiónNodoElementoWeb, abra el archivo de código **SiteNodeExtension** y, a continuación, agregue un punto de interrupción a las primeras líneas de código en los métodos `NodeChildrenRequested` y `CreateWebPartNodes`.
+2. En el proyecto ExtensiónNodoElementoWeb, abra el archivo de código **SiteNodeExtension** y, a continuación, agregue un punto de interrupción a las primeras líneas de código en los `NodeChildrenRequested` `CreateWebPartNodes` métodos y.
 
 3. Elija la tecla **F5** para iniciar la depuración.
 
@@ -232,7 +231,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 #### <a name="to-test-the-extension"></a>Para probar la extensión
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **ver** > **Explorador de servidores**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **Ver**  >  **Explorador de servidores**.
 
 2. Compruebe que el sitio de SharePoint que desea usar para las pruebas aparece en el nodo **conexiones de SharePoint** en **Explorador de servidores**. Si no aparece, siga estos pasos:
 
@@ -244,11 +243,11 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 3. Expanda el nodo conexión de sitio (que muestra la dirección URL de su sitio) y, a continuación, expanda un nodo de sitio secundario (por ejemplo, **sitio de grupo**).
 
-4. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `NodeChildrenRequested` y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
+4. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el `NodeChildrenRequested` método y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
 
 5. En la instancia experimental de Visual Studio, expanda el nodo **Galería de elementos Web** , que aparece bajo el nodo de sitio de nivel superior.
 
-6. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `CreateWebPartNodes` y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
+6. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el `CreateWebPartNodes` método y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
 
 7. En la instancia experimental de Visual Studio, compruebe que todos los elementos web del sitio conectado aparecen en el nodo **Galería de elementos Web** de **Explorador de servidores**.
 
@@ -265,7 +264,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar la extensión
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
@@ -279,9 +278,9 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 
 5. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución WebPartNode).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Tutorial: extender Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)
-- [Crear un icono u otro editor &#40;de imágenes de imagen para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [Crear un icono u otra imagen &#40;editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

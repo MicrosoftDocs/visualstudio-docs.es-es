@@ -1,7 +1,7 @@
 ---
 title: Compilar y depurar soluciones de SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -13,42 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e91c1433fde85a9ec828a6a018bee986fdc7aa5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988131"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016359"
 ---
-# <a name="build-and-debug-sharepoint-solutions"></a>Compilar y depurar soluciones de SharePoint
-  En general, compilar y depurar soluciones de SharePoint es el mismo que compilar y depurar otros tipos de proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Los temas de esta sección explican las diferencias que existen entre ellos.
+# <a name="build-and-debug-sharepoint-solutions"></a>Build and debug SharePoint solutions (Compilar y depurar las soluciones de SharePoint)
+  En general, la compilación y depuración de soluciones de SharePoint es lo mismo que generar y depurar otros tipos de proyectos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Los temas de esta sección explican las diferencias que existen entre ellos.
 
-## <a name="project-output-for-sharepoint-solutions"></a>Resultado del proyecto para soluciones de SharePoint
- Creación de soluciones de SharePoint crea ensamblados y un paquete de solución ( *.wsp*) archivo. La siguiente tabla muestra las ubicaciones de estos archivos durante una compilación.
+## <a name="project-output-for-sharepoint-solutions"></a>Resultados del proyecto para soluciones de SharePoint
+ Al crear soluciones de SharePoint, se crean ensamblados y un archivo de paquete de solución (*. wsp*). En la tabla siguiente se muestran las ubicaciones de estos archivos durante una compilación.
 
-|Crear elemento|Carpeta de salida|
+|Elemento de compilación|Carpeta de salida|
 |----------------|-------------------|
-|Ensamblado, la base de datos de programa ( *.pdb*), y *.wsp* archivos.|*\<NombreDeProyecto > \bin\debug* o  *\<NombreDelProyecto > \bin\release*|
-|Archivos de elementos de proyecto de SharePoint.|*\<ProjectName > \pkg\debug* o  *\<NombreDelProyecto > \pkg\release*|
-|Compilar los archivos intermedios.|*\<ProjectName > \obj\debug* o  *\<NombreDelProyecto > \obj\release*|
-|Archivos intermedios del paquete.|*\<ProjectName > \pkgobj\debug* o  *\<NombreDelProyecto > \pkgobj\release*|
+|Archivos de ensamblado, base de datos de programa (*. pdb*) y *. wsp* .|* \<ProjectName> \bin\debug* o * \<ProjectName> \bin\release*|
+|Archivos de elemento de proyecto de SharePoint.|* \<ProjectName> \pkg\debug* o * \<ProjectName> \pkg\release*|
+|Compilar archivos intermedios.|* \<ProjectName> \obj\debug* o * \<ProjectName> \obj\release*|
+|Empaquetar archivos intermedios.|* \<ProjectName> \pkgobj\debug* o * \<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>Compilar soluciones de SharePoint
- Para compilar soluciones de SharePoint, el equipo de desarrollo debe tener la versión correcta del servidor de SharePoint instalado. En caso contrario, la creación de soluciones de SharePoint es el mismo que crear otros tipos de proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: Compilar soluciones de SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).
+ Para compilar soluciones de SharePoint, el equipo de desarrollo debe tener instalada la versión correcta de SharePoint Server. De lo contrario, la creación de soluciones de SharePoint es igual que generar otros tipos de proyectos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obtener más información, vea [Cómo: compilar soluciones de SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).
 
 ## <a name="debug-and-test-sharepoint-solutions"></a>Depurar y probar soluciones de SharePoint
- Antes de depurar, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copias el *.wsp* paquete al servidor de SharePoint, activa el sitio y las características de ámbito Web y, en algunos casos, se inicia el proyecto. En otros casos, es posible que deba abrir manualmente el proyecto. Para obtener más información, consulte [soluciones de SharePoint de la solución de problemas de](../sharepoint/troubleshooting-sharepoint-solutions.md) y [soluciones de SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).
+ Antes de la depuración, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia el paquete *. wsp* en el servidor de SharePoint, activa las características de ámbito Web y de sitio, y en algunos casos inicia el proyecto. En otros casos, puede que tenga que abrir el proyecto manualmente. Para obtener más información, vea [solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) y [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Depurar y comprobar las soluciones de SharePoint mediante el uso de características de los servicios de Azure DevOps
- Características de servicios de DevOps Azure como las pruebas unitarias y IntelliTrace le permiten con más problemas localizar con exactitud de las soluciones de SharePoint. Generación de perfiles le permite localizar e identificar las áreas de problema de rendimiento en las soluciones de SharePoint. Para obtener más información, consulte [comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) y [generación de perfiles de rendimiento de aplicaciones de SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>Depurar y comprobar las soluciones de SharePoint mediante el uso de Azure DevOps Services características
+ Azure DevOps Services características como las pruebas unitarias y IntelliTrace permiten identificar con mayor precisión los problemas de las soluciones de SharePoint. La generación de perfiles permite localizar e identificar áreas problemáticas de rendimiento en las soluciones de SharePoint. Para obtener más información, vea [comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) y [generar perfiles del rendimiento de las aplicaciones de SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).
 
 ## <a name="security-during-the-build-process"></a>Seguridad durante el proceso de compilación
- Para empaquetar o implementar soluciones de SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debe tener permiso para copiar archivos en el servidor de SharePoint. Debe ejecutar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] como un proceso elevado y el usuario de cuenta debe ser un administrador de colecciones de sitio en el servidor de SharePoint. Además, debe especificar si el proyecto es una solución en espacio aislado o una solución de granja de servidores. Para obtener más información, consulte [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
+ Para empaquetar o implementar soluciones de SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debe tener permiso para copiar archivos en el servidor de SharePoint. Debe ejecutar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] como un proceso con privilegios elevados y su cuenta de usuario debe ser un administrador de colecciones de sitios en el servidor de SharePoint. Además, debe especificar si el proyecto es una solución en espacio aislado o una solución de granja. Para obtener más información, vea [diferencias entre las soluciones en espacio aislado y las soluciones de granja](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
-## <a name="using-the-clean-command"></a>Usar el comando Limpiar
- Cuando una solución de SharePoint se instala en un servidor de SharePoint para la depuración, la **Clean** comando desinstala la solución. En su lugar, debe desactivar las características a través de la configuración de SharePoint.
+## <a name="using-the-clean-command"></a>Uso del comando Clean
+ Cuando se instala una solución de SharePoint en un servidor de SharePoint para la depuración, el comando **limpiar** no desinstala la solución. En su lugar, debe desactivar las características a través de la configuración de SharePoint.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Examinar las conexiones de SharePoint mediante Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

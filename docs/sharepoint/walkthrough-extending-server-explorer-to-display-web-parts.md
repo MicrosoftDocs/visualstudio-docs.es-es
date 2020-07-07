@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: extender Explorador de servidores para mostrar elementos web | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46c19edd02988f4d9cbd5263d8d3490bb3576426
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983763"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015637"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: extender Explorador de servidores para mostrar elementos Web
   En Visual Studio, puede usar el nodo **conexiones de SharePoint** de **Explorador de servidores** para ver los componentes de los sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, extenderá **Explorador de servidores** para que muestre la galería de elementos Web en cada sitio de SharePoint conectado.
@@ -72,7 +71,7 @@ ms.locfileid: "72983763"
 
 2. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#**  o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
+3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
 
     > [!NOTE]
     > El nodo **extensibilidad** solo está disponible si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
@@ -81,19 +80,19 @@ ms.locfileid: "72983763"
 
 5. Elija la plantilla de **Proyecto VSIX** , asigne al proyecto el nombre **WebPartNode**y, a continuación, elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **WebPartNode** a **Explorador de soluciones**.
 
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto
 
 1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo  **C# visual** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
+2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 4,5** en la lista de versiones de la .NET Framework.
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **ExtensiónNodoElementoWeb**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **ExtensiónNodoElementoWeb** a la solución y abre el archivo de código predeterminado Class1.
 
 5. Elimine el archivo de código Class1 del proyecto.
 
@@ -101,13 +100,13 @@ ms.locfileid: "72983763"
 
 1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar**y, a continuación, elija **nuevo proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo  **C# visual** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
+2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **Visual C#** o **Visual Basic** nodo y, a continuación, elija el nodo **Windows** .
 
 3. En la parte superior del cuadro de diálogo, elija **.NET Framework 3,5** en la lista de versiones de la .NET Framework.
 
 4. En la lista de plantillas de proyecto, elija **biblioteca de clases**, asigne al proyecto el nombre **WebPartCommands**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **WebPartCommands** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **WebPartCommands** a la solución y abre el archivo de código predeterminado Class1.
 
 5. Elimine el archivo de código Class1 del proyecto.
 
@@ -142,7 +141,7 @@ ms.locfileid: "72983763"
 
 6. Pulse la pestaña **Aplicación**.
 
-7. En el cuadro **espacio de nombres predeterminado** (C#) o en el cuadro espacio de **nombres raíz** ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
+7. En el cuadro **espacio de nombres predeterminado** (C#) o **espacio de nombres raíz** ( [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
 
 #### <a name="to-configure-the-webpartcommands-project"></a>Para configurar el proyecto WebPartCommands
 
@@ -154,7 +153,7 @@ ms.locfileid: "72983763"
 
 4. Elija la flecha situada junto al botón **Agregar** y, a continuación, elija **Agregar como vínculo** en el menú que aparece.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero el código de los archivos también se compila en el proyecto WebPartCommands.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero el código de los archivos también se compila en el proyecto WebPartCommands.
 
 5. Vuelva a abrir el menú contextual del proyecto **WebPartCommands** y elija **Agregar referencia**.
 
@@ -170,7 +169,7 @@ ms.locfileid: "72983763"
 
 8. Pulse la pestaña **Aplicación**.
 
-9. En el cuadro **espacio de nombres predeterminado** (C#) o en el cuadro espacio de **nombres raíz** ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
+9. En el cuadro **espacio de nombres predeterminado** (C#) o **espacio de nombres raíz** ( [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), escriba **ServerExplorer. SharePointConnections. WebPartNode**.
 
 ## <a name="create-icons-for-the-new-nodes"></a>Crear iconos para los nuevos nodos
  Cree dos iconos para la extensión de **Explorador de servidores** : un icono para el nuevo nodo de la **Galería de elementos Web** y otro icono para cada nodo de elemento Web secundario en el nodo **Galería de elementos** Web. Más adelante en este tutorial, escribirá código que asocia estos iconos con los nodos.
@@ -183,7 +182,7 @@ ms.locfileid: "72983763"
 
 3. Elija la pestaña **recursos** y, a continuación, elija el **archivo este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear un** vínculo.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea un archivo de recursos y lo abre en el diseñador.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea un archivo de recursos y lo abre en el diseñador.
 
 4. En la parte superior del diseñador, elija la flecha situada junto al comando de menú **Agregar recurso** y, a continuación, elija **Agregar nuevo icono** en el menú que aparece.
 
@@ -204,7 +203,7 @@ ms.locfileid: "72983763"
 11. Repita los dos últimos pasos para **WebPart. ico**.
 
 ## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Agregue el nodo de la galería de elementos Web a Explorador de servidores
- Cree una clase que agregue el nuevo nodo de la **Galería de elementos Web** a cada nodo del sitio de SharePoint. Para agregar el nuevo nodo, la clase implementa la interfaz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>. Implemente esta interfaz siempre que desee extender el comportamiento de un nodo existente en **Explorador de servidores**, como agregar un nodo secundario a un nodo.
+ Cree una clase que agregue el nuevo nodo de la **Galería de elementos Web** a cada nodo del sitio de SharePoint. Para agregar el nuevo nodo, la clase implementa la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfaz. Implemente esta interfaz siempre que desee extender el comportamiento de un nodo existente en **Explorador de servidores**, como agregar un nodo secundario a un nodo.
 
 #### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Para agregar el nodo Galería de elementos Web a Explorador de servidores
 
@@ -219,7 +218,7 @@ ms.locfileid: "72983763"
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Definir un tipo de nodo que represente un elemento Web
  Cree una clase que defina un nuevo tipo de nodo que representa un elemento Web. Visual Studio usa este nuevo tipo de nodo para mostrar los nodos secundarios en el nodo de la **Galería de elementos Web** . Cada nodo secundario representa un único elemento Web en el sitio de SharePoint.
 
- Para definir el nuevo tipo de nodo, la clase implementa la interfaz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>. Implemente esta interfaz siempre que desee definir un nuevo tipo de nodo en **Explorador de servidores**.
+ Para definir el nuevo tipo de nodo, la clase implementa la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interfaz. Implemente esta interfaz siempre que desee definir un nuevo tipo de nodo en **Explorador de servidores**.
 
 #### <a name="to-define-the-web-part-node-type"></a>Para definir el tipo de nodo de elemento Web
 
@@ -249,7 +248,7 @@ ms.locfileid: "72983763"
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
 
 ## <a name="create-the-custom-sharepoint-commands"></a>Crear los comandos de SharePoint personalizados
- Cree comandos personalizados que llamen al modelo de objetos de servidor para SharePoint para recuperar datos sobre el elementos web en el sitio de SharePoint. Cada comando es un método que tiene aplicado el <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute>.
+ Cree comandos personalizados que llamen al modelo de objetos de servidor para SharePoint para recuperar datos sobre el elementos web en el sitio de SharePoint. Cada comando es un método al que se le ha <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> aplicado.
 
 #### <a name="to-define-the-sharepoint-commands"></a>Para definir los comandos de SharePoint
 
@@ -309,20 +308,20 @@ ms.locfileid: "72983763"
 
 12. En la lista **proyecto** , elija **WebPartCommands**y elija el botón **Aceptar** .
 
-13. En la barra de menús, **Elija compilar** > **compilar solución**y, a continuación, asegúrese de que la solución se compila sin errores.
+13. En la barra de menús, **Elija compilar compilar**  >  **solución**y, a continuación, asegúrese de que la solución se compila sin errores.
 
 14. Asegúrese de que la carpeta de salida de compilación del proyecto WebPartNode contiene ahora el archivo WebPartNode. vsix.
 
      De forma predeterminada, la carpeta de salida de la compilación es \bin\Debug, ubicada bajo la carpeta que contiene el archivo de proyecto.
 
 ## <a name="test-the-extension"></a>Prueba de la extensión
- Ahora está listo para probar el nuevo nodo de la **Galería de elementos Web** en **Explorador de servidores**. En primer lugar, inicie la depuración de la extensión en una instancia experimental de Visual Studio. A continuación, use el nuevo nodo **elementos Web** en la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Ahora está listo para probar el nuevo nodo de la **Galería de elementos Web** en **Explorador de servidores**. En primer lugar, inicie la depuración de la extensión en una instancia experimental de Visual Studio. A continuación, use el nuevo nodo **elementos Web** en la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 #### <a name="to-start-debugging-the-extension"></a>Para comenzar a depurar la extensión
 
 1. Reinicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con credenciales administrativas y, a continuación, abra la solución WebPartNode.
 
-2. En el proyecto ExtensiónNodoElementoWeb, abra el archivo de código SiteNodeExtension y, a continuación, agregue un punto de interrupción a la primera línea de código en los métodos `NodeChildrenRequested` y `CreateWebPartNodes`.
+2. En el proyecto ExtensiónNodoElementoWeb, abra el archivo de código SiteNodeExtension y, a continuación, agregue un punto de interrupción a la primera línea de código en los `NodeChildrenRequested` `CreateWebPartNodes` métodos y.
 
 3. Elija la tecla **F5** para iniciar la depuración.
 
@@ -330,7 +329,7 @@ ms.locfileid: "72983763"
 
 #### <a name="to-test-the-extension"></a>Para probar la extensión
 
-1. En la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], en la barra de menús, elija **ver** > **Explorador de servidores**.
+1. En la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , en la barra de menús, elija **Ver**  >  **Explorador de servidores**.
 
 2. Siga estos pasos si el sitio de SharePoint que desea usar para las pruebas no aparece en el nodo **conexiones de SharePoint** en **Explorador de servidores**:
 
@@ -342,24 +341,24 @@ ms.locfileid: "72983763"
 
 3. Expanda el nodo conexión de sitio (que muestra la dirección URL de su sitio) y, a continuación, expanda un nodo de sitio secundario (por ejemplo, **sitio de grupo**).
 
-4. Compruebe que el código de la otra instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se detiene en el punto de interrupción que estableció anteriormente en el método `NodeChildrenRequested` y, a continuación, presione **F5** para continuar depurando el proyecto.
+4. Compruebe que el código de la otra instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se detiene en el punto de interrupción que estableció anteriormente en el `NodeChildrenRequested` método y, a continuación, presione **F5** para continuar depurando el proyecto.
 
 5. En la instancia experimental de Visual Studio, compruebe que aparece un nuevo nodo denominado **Galería de elementos Web** en el nodo de sitio de nivel superior y, a continuación, expanda el nodo **Galería de elementos Web** .
 
-6. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `CreateWebPartNodes` y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
+6. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el `CreateWebPartNodes` método y, a continuación, elija la tecla **F5** para continuar depurando el proyecto.
 
 7. En la instancia experimental de Visual Studio, compruebe que todos los elementos web del sitio conectado aparecen en el nodo **Galería de elementos Web** de **Explorador de servidores**.
 
 8. En **Explorador de servidores**, abra el menú contextual de uno de los elementos Web y, a continuación, elija **propiedades**.
 
-9. En la instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que está depurando, compruebe que los detalles del elemento Web aparecen en la ventana **propiedades** .
+9. En la instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que está depurando, compruebe que los detalles del elemento Web aparecen en la **ventana Propiedades** .
 
 ## <a name="uninstall-the-extension-from-visual-studio"></a>Desinstalar la extensión de Visual Studio
  Una vez finalizada la prueba de la extensión, desinstale la extensión de Visual Studio.
 
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar la extensión
 
-1. En la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], en la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la instancia experimental de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , en la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
@@ -369,8 +368,8 @@ ms.locfileid: "72983763"
 
 4. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en la que está abierta la solución WebPartNode).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender el nodo conexiones de SharePoint en Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de Explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)
-- [Crear un icono u otro editor &#40;de imágenes de imagen para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [Crear un icono u otra imagen &#40;editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

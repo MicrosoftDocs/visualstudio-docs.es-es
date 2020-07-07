@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar y quitar ensamblados adicionales | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985235"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014824"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.
@@ -33,7 +32,7 @@ ms.locfileid: "72985235"
 
 1. Abra el **Diseñador de paquetes**. Para obtener más información, vea [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Elija la pestaña **Opciones avanzadas** .
+2. Elija la pestaña **Opciones avanzadas**.
 
 3. Elija el botón **Agregar** y, a continuación, elija **Agregar ensamblado existente** en la lista.
 
@@ -41,7 +40,7 @@ ms.locfileid: "72985235"
 
 4. Elija los puntos suspensivos (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")) y, a continuación, elija el ensamblado que desea agregar. Por motivos de portabilidad, se recomienda utilizar una ruta de acceso relativa al ensamblado seleccionado.
 
-5. Para el **destino de implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.
+5. Para el **destino de implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication en el servidor que ejecuta SharePoint.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>Para agregar un ensamblado desde la salida del proyecto
 
@@ -49,7 +48,7 @@ ms.locfileid: "72985235"
 
      Para obtener más información, vea [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Elija la pestaña **Opciones avanzadas** .
+2. Elija la pestaña **Opciones avanzadas**.
 
 3. Elija el botón **Agregar** y, a continuación, elija **Agregar ensamblado desde la salida del proyecto** en la lista.
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985235"
 
 4. En la lista **proyecto de origen** , elija el proyecto de origen que desea agregar.
 
-5. Para el **destino de implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.
+5. Para el **destino de implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication en el servidor que ejecuta SharePoint.
 
 #### <a name="to-add-a-safe-control"></a>Para agregar un control seguro
 
@@ -86,11 +85,11 @@ ms.locfileid: "72985235"
 
 1. Abra el **Diseñador de paquetes**. Para obtener más información, vea [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Elija la pestaña **Opciones avanzadas** .
+2. Elija la pestaña **Opciones avanzadas**.
 
 3. En el panel **ensamblados adicionales** , elija el ensamblado personalizado que desea eliminar.
 
-4. Elija el botón **eliminar** .
+4. Elija el botón **Eliminar**.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>Para eliminar un control seguro de un ensamblado
 
@@ -108,7 +107,7 @@ ms.locfileid: "72985235"
 
 3. Elija la tecla Supr.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: extender un tipo de elemento de proyecto de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ec79a613a2bcc50c47ea4d6b66516f75f1fbd6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983795"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015673"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: extender un tipo de elemento de proyecto de SharePoint
   Puede utilizar el elemento de proyecto **modelo de conectividad a datos profesionales** para crear un modelo para el servicio de conectividad a datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.
@@ -28,7 +27,7 @@ ms.locfileid: "72983795"
 
 - Crear una extensión Visual Studio que realiza dos tareas principales:
 
-  - Genera una lista externa que muestra los datos en un modelo BDC. La extensión utiliza el modelo de objetos para que el sistema de proyectos de SharePoint genere un archivo *Elements. XML* que defina la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
+  - Genera una lista externa que muestra los datos en un modelo BDC. La extensión utiliza el modelo de objetos para que el sistema de proyectos de SharePoint genere un archivo *Elements.xml* que defina la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
 
   - Agrega un elemento de menú contextual a los elementos de proyecto de **modelo de conectividad a datos profesionales** en **Explorador de soluciones**. Los desarrolladores pueden hacer clic en este elemento de menú para generar una lista externa para el modelo BDC.
 
@@ -41,7 +40,7 @@ ms.locfileid: "72983795"
 
 - Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- El parámetro de cadena de consulta [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. En este tutorial se usa la plantilla de **Proyecto VSIX** en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, vea [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.
 
@@ -64,7 +63,7 @@ ms.locfileid: "72983795"
 
 2. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#**  o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
+3. En el cuadro de diálogo **nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **extensibilidad** .
 
     > [!NOTE]
     > El nodo **extensibilidad** solo está disponible si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
@@ -77,7 +76,7 @@ ms.locfileid: "72983795"
 
 6. En el cuadro **nombre** , escriba **GenerateExternalDataLists**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **GenerateExternalDataLists** a **Explorador de soluciones**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **GenerateExternalDataLists** a **Explorador de soluciones**.
 
 7. Si el archivo source. Extension. vsixmanifest no se abre automáticamente, abra el menú contextual en el proyecto GenerateExternalDataLists y, a continuación, elija **abrir** .
 
@@ -87,7 +86,7 @@ ms.locfileid: "72983795"
 
 1. En **Explorador de soluciones**, abra el menú contextual del nodo de la solución **GenerateExternalDataLists** , elija **Agregar**y, a continuación, elija **nuevo proyecto**.
 
-2. En el cuadro de diálogo **Agregar nuevo proyecto** , expanda los nodos  **C# visual** o **Visual Basic** y, a continuación, elija el nodo **Windows** .
+2. En el cuadro de diálogo **Agregar nuevo proyecto** , expanda los nodos **Visual C#** o **Visual Basic** y, a continuación, elija el nodo **Windows** .
 
 3. En la lista de la parte superior del cuadro de diálogo, elija **.NET Framework 4,5**.
 
@@ -95,7 +94,7 @@ ms.locfileid: "72983795"
 
 5. En el cuadro **nombre** , escriba **BdcProjectItemExtension**y elija el botón **Aceptar** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **BdcProjectItemExtension** a la solución y abre el archivo de código predeterminado Class1.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]agrega el proyecto **BdcProjectItemExtension** a la solución y abre el archivo de código predeterminado Class1.
 
 6. Elimine el archivo de código Class1 del proyecto.
 
@@ -110,7 +109,7 @@ ms.locfileid: "72983795"
 
     - GenerateExternalDataLists
 
-2. Elija el proyecto BdcProjectItemExtension y, a continuación, en la barra de menús, elija **proyecto** > **Agregar referencia**.
+2. Elija el proyecto BdcProjectItemExtension y, a continuación, en la barra de menús, elija **proyecto**  >  **Agregar referencia**.
 
 3. En el nodo **ensamblados** , elija el nodo **Framework** y active la casilla de cada uno de los siguientes ensamblados:
 
@@ -201,15 +200,15 @@ ms.locfileid: "72983795"
 
 3. Abra el archivo de código GenerateExternalDataLists y, a continuación, agregue un punto de interrupción a la primera línea de código en el método `GenerateExternalDataLists_Execute`.
 
-4. Para iniciar la depuración, elija la tecla **F5** o, en la barra de menús, elija **depurar** > **iniciar depuración**.
+4. Para iniciar la depuración, elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **iniciar depuración**.
 
      Visual Studio instala la extensión en %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1 .0 e inicia una instancia experimental de Visual Studio. Probará el elemento de proyecto en esta instancia de Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Para probar la extensión
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo** > **nuevo** > **proyecto**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto**.
 
-2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **plantillas** , expanda el nodo  **C# visual** , expanda el nodo **SharePoint** y, a continuación, elija **2010**.
+2. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **plantillas** , expanda el nodo **Visual C#** , expanda el nodo **SharePoint** y, a continuación, elija **2010**.
 
 3. En la lista de la parte superior del cuadro de diálogo, asegúrese de que está seleccionado **.NET Framework 3,5** . Los proyectos de [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] requieren esta versión de .NET Framework.
 
@@ -229,9 +228,9 @@ ms.locfileid: "72983795"
 
 11. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `Initialize` del archivo de código ProjectItemExtension.
 
-12. En la instancia detenida de Visual Studio, elija la tecla **F5** o, en la barra de menús, elija **depurar** > **continuar** para continuar depurando el proyecto.
+12. En la instancia detenida de Visual Studio, elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **continuar** para continuar depurando el proyecto.
 
-13. En la instancia experimental de Visual Studio, elija la tecla **F5** o, en la barra de menús, elija **depurar** > **iniciar depuración** para compilar, implementar y ejecutar el proyecto **TestBDCModel** .
+13. En la instancia experimental de Visual Studio, elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **iniciar depuración** para compilar, implementar y ejecutar el proyecto **TestBDCModel** .
 
      El explorador web se abre en la página predeterminada del sitio de SharePoint que se especifica para la depuración.
 
@@ -241,11 +240,11 @@ ms.locfileid: "72983795"
 
 16. En la instancia de Visual Studio que tiene abierto el proyecto TestBDCModel, abra el menú contextual del nodo **TestBDCModel** en **Explorador de soluciones**y, a continuación, elija **generar lista de datos externos**.
 
-17. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció en el método `GenerateExternalDataLists_Execute`. Elija la tecla **F5** o, en la barra de menús, elija **depurar** > **continuar** para continuar depurando el proyecto.
+17. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció en el método `GenerateExternalDataLists_Execute`. Elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **continuar** para continuar depurando el proyecto.
 
 18. La instancia experimental de Visual Studio agrega una instancia de lista denominada **Entity1DataList** al proyecto TestBDCModel y la instancia también genera una característica denominada **característica2** para la instancia de lista.
 
-19. Elija la tecla **F5** o, en la barra de menús, elija **depurar** > **iniciar depuración** para compilar, implementar y ejecutar el proyecto TestBDCModel.
+19. Elija la tecla **F5** o, en la barra de menús, elija **depurar**  >  **iniciar depuración** para compilar, implementar y ejecutar el proyecto TestBDCModel.
 
      El explorador web se abre en la página predeterminada del sitio de SharePoint que se usa para depurar.
 
@@ -274,13 +273,13 @@ ms.locfileid: "72983795"
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Para quitar el modelo BDC del sitio de SharePoint
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **Compilar** > **retirar**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **compilar**  >  **retraer**.
 
      Visual Studio quita el modelo BDC del sitio de SharePoint.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Para quitar la extensión del elemento de proyecto de Visual Studio
 
-1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas** > **extensiones y actualizaciones**.
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **herramientas**  >  **extensiones y actualizaciones**.
 
      Se abre el cuadro de diálogo **Extensiones y actualizaciones**.
 
@@ -292,7 +291,7 @@ ms.locfileid: "72983795"
 
 5. Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia en la que se abre la solución GenerateExternalDataLists).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Crear un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)

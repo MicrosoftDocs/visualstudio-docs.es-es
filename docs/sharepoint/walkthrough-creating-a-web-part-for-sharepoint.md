@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: crear un elemento Web para SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbc4b9a2eecd6eb9853c515eb5358009c32843a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655915"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014584"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: crear un elemento Web para SharePoint
 
@@ -52,9 +51,9 @@ En este tutorial se muestran las tareas siguientes:
 
 Primero, cree un proyecto de SharePoint vacío. Más adelante, agregará un elemento Web al proyecto utilizando la plantilla elemento **Web** .
 
-1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mediante la opción **Ejecutar como administrador** .
+1. Empiece [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con la opción **Ejecutar como administrador** .
 
-2. En la barra de hombres, elija **archivo**  > **nuevo** **proyecto**de  > .
+2. En la barra de hombres, elija **archivo**  >  **nuevo**  >  **proyecto**.
 
 3. En el cuadro de diálogo **nuevo proyecto** , expanda el nodo **SharePoint** bajo el lenguaje que desea usar y, a continuación, elija el nodo **2010** .
 
@@ -68,7 +67,7 @@ Primero, cree un proyecto de SharePoint vacío. Más adelante, agregará un elem
 
 Agregue un elemento de elemento **Web** al proyecto. El elemento **Web** agrega el archivo de código del elemento Web. Después, agregará código al archivo de código para presentar el contenido del elemento web.
 
-1. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
+1. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
 
 2. En el cuadro de diálogo **Agregar nuevo elemento** , en el panel **plantillas instaladas** , expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
@@ -89,7 +88,7 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Agregue el código siguiente a la clase `WebPart1` . Este código declara los siguientes campos:
+3. Agregue el siguiente código a la clase `WebPart1` . Este código declara los siguientes campos:
 
    - Una cuadrícula de datos para mostrar los empleados en el elemento web.
 
@@ -102,7 +101,7 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Agregue el código siguiente a la clase `WebPart1` . Este código agrega una propiedad personalizada denominada `DataFilePath` al elemento web. Una propiedad personalizada es una propiedad que el usuario puede establecer en SharePoint. Esta propiedad obtiene y establece la ubicación de un archivo de datos XML que se utiliza para rellenar la cuadrícula de datos.
+4. Agregue el siguiente código a la clase `WebPart1` . Este código agrega una propiedad personalizada denominada `DataFilePath` al elemento web. Una propiedad personalizada es una propiedad que el usuario puede establecer en SharePoint. Esta propiedad obtiene y establece la ubicación de un archivo de datos XML que se utiliza para rellenar la cuadrícula de datos.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
@@ -116,7 +115,7 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Agregue el método siguiente a la clase `WebPart1`. Este código realiza las tareas siguientes:
+6. Agregue el siguiente método a la clase `WebPart1`. Este código realiza las tareas siguientes:
 
    - Crea un verbo que aparece en el menú de verbos de elemento web del elemento web presentado.
 
@@ -162,11 +161,11 @@ Cuando se ejecuta el proyecto, se abre el sitio de SharePoint. El elemento web s
         </employees>
     ```
 
-2. En el Bloc de notas, en la barra de menús, elija **archivo**  > **Guardar como**.
+2. En el Bloc de notas, en la barra de menús, elija **archivo**  >  **Guardar como**.
 
 3. En el cuadro de diálogo **Guardar como** , en la lista **Guardar como tipo** , elija **todos los archivos**.
 
-4. En el cuadro **nombre de archivo** , escriba **Data. XML**.
+4. En el cuadro **nombre de archivo** , escriba **data.xml**.
 
 5. Elija cualquier carpeta mediante el botón **examinar carpetas** y, a continuación, elija el botón **Guardar** .
 
@@ -214,9 +213,9 @@ Muestra y oculta a los empleados que no son administradores cuando se hace clic 
 
      Todos los empleados aparecen en el elemento web.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[Crear elementos Web para sharepoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
-[Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
-[Cómo: crear un elemento Web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
-[Tutorial: crear un elemento Web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
+ [Cómo: crear un elemento](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ Web de SharePoint [Cómo: crear un elemento Web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
+ [Tutorial: crear un elemento Web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

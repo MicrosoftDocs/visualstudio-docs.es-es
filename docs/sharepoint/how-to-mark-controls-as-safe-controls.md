@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: marcar controles como controles seguros | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982724"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016264"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Cómo: marcar controles como controles seguros
   Por seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de scripts y los controles Web que no lo son. Los usuarios que no son de confianza pueden tener acceso a los controles protegidos o a *controles seguros*. Puede marcar los controles como seguros en la propiedad entradas de control seguras de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** al agregar un ensamblado al paquete. Para obtener más información, vea
 
-- los [valores del archivo Web. config cambian](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) y [registran un ensamblado de elemento Web como un control seguro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
+- [web.config configuración del archivo cambia](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) y [registra un ensamblado de elemento Web como un control seguro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
 > Estos procedimientos son para fines ilustrativos. Marque controles como seguros solo si está seguro de que son seguros.
@@ -63,7 +62,7 @@ ms.locfileid: "72982724"
 
      Tome nota del espacio de nombres del control porque se usa más adelante.
 
-3. En la barra de menús, elija **Compilar** > compilar **solución** para compilar el proyecto.
+3. En la barra de menús, **Elija compilar compilar**  >  **solución** para compilar el proyecto.
 
 4. Cree otra solución de SharePoint.
 
@@ -85,12 +84,12 @@ ms.locfileid: "72982724"
 
 12. Escriba los valores de las propiedades de la tabla siguiente.
 
-    |Nombre de la propiedad|Valor|
+    |Nombre de propiedad|Value|
     |-------------------|-----------|
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
-    |Nombre de tipo|Button1|
+    |Nombre del tipo|Button1|
     |Nombre del ensamblado|Un nombre de ensamblado seguro, como: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Segura|Desactive la casilla **seguro** .|
+    |Seguro|Desactive la casilla **seguro** .|
     |Safe con script|Deje desactivada la casilla **seguro contra scripts** .|
 
     > [!NOTE]
@@ -102,16 +101,16 @@ ms.locfileid: "72982724"
 
 15. Escriba los valores de las propiedades de la tabla siguiente.
 
-    |Nombre de la propiedad|Valor|
+    |Nombre de propiedad|Value|
     |-------------------|-----------|
     |Espacio de nombres|Espacio de nombres completo para el control, como **BdcModelProject1. VisualWebPart1**.|
-    |Nombre de tipo|TextBox1|
+    |Nombre del tipo|TextBox1|
     |Nombre del ensamblado|Un nombre de ensamblado seguro, como: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
-    |Segura|Active la casilla **seguro** .|
+    |Seguro|Active la casilla **seguro** .|
     |Safe con script|Active la casilla **seguro contra scripts** .|
 
 16. Elija la tecla **Tab** y, a continuación, elija el botón **Aceptar** para cerrar el cuadro de diálogo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Proporcionar información de empaquetado e implementación en los elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

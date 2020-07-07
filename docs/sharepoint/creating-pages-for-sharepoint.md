@@ -1,7 +1,7 @@
 ---
 title: Crear páginas para SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986354"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015164"
 ---
 # <a name="create-pages-for-sharepoint"></a>Crear páginas para SharePoint
   Puede crear páginas de aplicación, páginas de sitio, páginas maestras y diseños de página para un sitio de SharePoint.
@@ -39,7 +38,7 @@ ms.locfileid: "72986354"
 |Páginas de aplicación|Cree una página de aplicación si desea que la página contenga código personalizado o desee que la página se comparta entre varios sitios. De lo contrario, una página de sitio podría ser la mejor opción.|
 |Páginas del sitio|Cree una página de sitio si desea realizar alguna de las siguientes tareas:<br /><br /> -Agregar la página a una biblioteca de SharePoint.<br />-Habilite la página para hospedar características como elementos web dinámicas y zonas de elementos Web.<br />-Permitir a los usuarios personalizar la página con SharePoint Designer.<br /><br /> No cree una página de sitio si desea que la página contenga código personalizado. Aunque puede agregar código personalizado a una página de sitio, el código deja de ejecutarse cuando el usuario Personaliza la página con SharePoint Designer.|
 |Páginas maestras|Cree una página maestra si desea definir una estructura común para las páginas de sitio y las páginas de aplicación.|
-|Diseños de página|Los diseños de página son específicos de [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] y permiten definir una estructura común para las páginas del sitio y las páginas de aplicación.|
+|Diseños de página|Los diseños de página son específicos de [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] y permiten definir aún más una estructura común para las páginas del sitio y las páginas de aplicación.|
 
  Para obtener información general sobre cada tipo de página, vea [bloque de creación: páginas y la interfaz de usuario](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)), así como diseños de [página y páginas maestras](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14)).
 

@@ -1,7 +1,7 @@
 ---
 title: Crear & solución depurar flujo de trabajo de SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
@@ -16,19 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MT
+ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983726"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014617"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: crear y depurar una solución de flujo de trabajo de SharePoint
   En este tutorial se muestra cómo crear una plantilla de flujo de trabajo secuencial básica. El flujo de trabajo comprueba una propiedad de una biblioteca de documentos compartidos para determinar si se ha revisado un documento. Si el documento se ha revisado, el flujo de trabajo finaliza.
 
  En este tutorial se muestran las tareas siguientes:
 
-- Crear un proyecto de flujo de trabajo secuencial de definición de lista de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Crear un proyecto de flujo de trabajo secuencial de definición de lista de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 - Crear actividades de flujo de trabajo.
 
@@ -40,24 +39,24 @@ ms.locfileid: "73983726"
 > Además, es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
- Necesita los componentes siguientes para completar este tutorial:
+ Necesitará los componentes siguientes para completar este tutorial:
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
 - Visual Studio.
 
 ## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Agregar propiedades a la biblioteca de documentos compartidos de SharePoint
- Para realizar un seguimiento del estado de revisión de los documentos en la biblioteca de **documentos compartidos** , crearemos tres nuevas propiedades para los documentos compartidos en nuestro sitio de SharePoint: `Status`, `Assignee`y `Review Comments`. Definimos estas propiedades en la biblioteca de **documentos compartidos** .
+ Para realizar un seguimiento del estado de revisión de los documentos en la biblioteca de **documentos compartidos** , crearemos tres nuevas propiedades para los documentos compartidos en nuestro sitio de SharePoint: `Status` , `Assignee` y `Review Comments` . Definimos estas propiedades en la biblioteca de **documentos compartidos** .
 
 #### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>Para agregar propiedades a la biblioteca de documentos compartidos de SharePoint
 
-1. Abra un sitio de SharePoint, como http://\<nombre del sistema >/SitePages/Home.aspx, en un explorador Web.
+1. Abra un sitio de SharePoint, como http:// \<system name> /SitePages/Home.aspx, en un explorador Web.
 
 2. En la barra de inicio rápido, elija **SharedDocuments**.
 
 3. Elija **biblioteca** en la cinta **herramientas de bibliotecas** y, a continuación, elija el botón **crear columna** en la cinta de opciones para crear una nueva columna.
 
-4. Asigne un nombre al **Estado del documento**de la columna, establezca su tipo en **Choice (menú para elegir)** , especifique las tres opciones siguientes y, a continuación, elija el botón **Aceptar** :
+4. Asigne un nombre al **Estado del documento**de la columna, establezca su tipo en **Choice (menú para elegir)**, especifique las tres opciones siguientes y, a continuación, elija el botón **Aceptar** :
 
     - **Revisión necesaria**
 
@@ -89,9 +88,9 @@ ms.locfileid: "73983726"
 
 1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. En la barra de menús, elija **archivo**  > **nuevo**  > **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
+2. En la barra de menús, elija **archivo**  >  **nuevo**  >  **proyecto** para mostrar el cuadro de diálogo **nuevo proyecto** .
 
-3. Expanda el nodo **SharePoint** en **Visual C#**  o en **Visual Basic**y, a continuación, elija el nodo **2010** .
+3. Expanda el nodo **SharePoint** en **Visual C#** o **Visual Basic**y, a continuación, elija el nodo **2010** .
 
 4. En el panel **plantillas** , elija la plantilla de **proyecto de SharePoint 2010** .
 
@@ -103,9 +102,9 @@ ms.locfileid: "73983726"
 
      Este paso establece el nivel de confianza de la solución como solución de granja, la única opción disponible para los proyectos de flujo de trabajo. Para obtener más información, vea [consideraciones sobre las soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
-7. En **Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.
+7. En **Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
 
-8. En **Visual C#**  o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
+8. En **Visual C#** o **Visual Basic**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010** .
 
 9. En el panel **plantillas** , elija la plantilla **flujo de trabajo secuencial (solo solución de granja de servidores)** y, a continuación, elija el botón **Agregar** .
 
@@ -162,17 +161,17 @@ ms.locfileid: "73983726"
 
 12. En la ventana **propiedades** , establezca las propiedades como se muestra en la tabla siguiente.
 
-    |Propiedad.|Valor|
+    |Propiedad|Value|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
-    |**Invoca**|**onWorkflowItemChanged**|
+    |**Invocado**|**onWorkflowItemChanged**|
 
 ## <a name="handle-activity-events"></a>Controlar eventos de actividad
  Por último, compruebe el estado del documento de cada actividad. Si el documento se ha revisado, el flujo de trabajo ha finalizado.
 
 #### <a name="to-handle-activity-events"></a>Para controlar eventos de actividad
 
-1. En *Workflow1.CS* o *Workflow1. VB*, agregue el siguiente campo a la parte superior de la clase `Workflow1`. Este campo se utiliza en una actividad para determinar si el flujo de trabajo ha finalizado.
+1. En *Workflow1.CS* o *Workflow1. VB*, agregue el siguiente campo a la parte superior de la `Workflow1` clase. Este campo se utiliza en una actividad para determinar si el flujo de trabajo ha finalizado.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +181,7 @@ ms.locfileid: "73983726"
     Boolean workflowPending = true;
     ```
 
-2. Agregue el método siguiente a la clase `Workflow1`. Este método comprueba el valor de la propiedad `Document Status` de la lista documentos para determinar si se ha revisado el documento. Si la propiedad `Document Status` está establecida en `Review Complete`, el método `checkStatus` establece el campo `workflowPending` en **false** para indicar que el flujo de trabajo está listo para finalizar.
+2. Agregue el siguiente método a la clase `Workflow1`. Este método comprueba el valor de la `Document Status` propiedad de la lista documentos para determinar si se ha revisado el documento. Si la `Document Status` propiedad está establecida en `Review Complete` , el `checkStatus` método establece el `workflowPending` campo en **false** para indicar que el flujo de trabajo está listo para finalizar.
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +199,7 @@ ms.locfileid: "73983726"
     }
     ```
 
-3. Agregue el código siguiente a los métodos `onWorkflowActivated` y `onWorkflowItemChanged` para llamar al método `checkStatus`. Cuando se inicia el flujo de trabajo, el método `onWorkflowActivated` llama al método `checkStatus` para determinar si el documento ya se ha revisado. Si no se ha revisado, el flujo de trabajo continúa. Cuando se guarda el documento, el método `onWorkflowItemChanged` llama de nuevo al método `checkStatus` para determinar si se ha revisado el documento. Aunque el campo `workflowPending` está establecido en **true**, el flujo de trabajo continúa ejecutándose.
+3. Agregue el código siguiente a los `onWorkflowActivated` `onWorkflowItemChanged` métodos y para llamar al `checkStatus` método. Cuando se inicia el flujo de trabajo, el `onWorkflowActivated` método llama al `checkStatus` método para determinar si el documento ya se ha revisado. Si no se ha revisado, el flujo de trabajo continúa. Cuando se guarda el documento, el `onWorkflowItemChanged` método llama de `checkStatus` nuevo al método para determinar si se ha revisado el documento. Mientras el `workflowPending` campo está establecido en **true**, el flujo de trabajo continúa ejecutándose.
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +225,7 @@ ms.locfileid: "73983726"
     }
     ```
 
-4. Agregue el código siguiente al método `isWorkflowPending` para comprobar el estado de la propiedad `workflowPending`. Cada vez que se guarda el documento, la actividad **whileActivity1** llama al método `isWorkflowPending`. Este método examina la propiedad <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> del objeto <xref:System.Workflow.Activities.ConditionalEventArgs> para determinar si la actividad **WhileActivity1** debe continuar o finalizar. Si la propiedad se establece en **true**, la actividad continúa. De lo contrario, la actividad finaliza y el flujo de trabajo finaliza.
+4. Agregue el código siguiente al `isWorkflowPending` método para comprobar el estado de la `workflowPending` propiedad. Cada vez que se guarda el documento, la actividad **whileActivity1** llama al `isWorkflowPending` método. Este método examina la <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> propiedad del <xref:System.Workflow.Activities.ConditionalEventArgs> objeto para determinar si la actividad **WhileActivity1** debe continuar o finalizar. Si la propiedad se establece en **true**, la actividad continúa. De lo contrario, la actividad finaliza y el flujo de trabajo finaliza.
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -262,7 +261,7 @@ ms.locfileid: "73983726"
 
      Esto carga el documento seleccionado en la lista **documentos compartidos** e inicia el flujo de trabajo.
 
-6. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], compruebe que el depurador se detiene en el punto de interrupción situado junto al método `onWorkflowActivated`.
+6. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , compruebe que el depurador se detiene en el punto de interrupción situado junto al `onWorkflowActivated` método.
 
 7. Elija la tecla **F5** para continuar con la ejecución.
 
@@ -287,7 +286,7 @@ ms.locfileid: "73983726"
 
 - Para obtener más información sobre las actividades de Windows Workflow Foundation, vea [espacio de nombres System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Plantillas de proyecto y de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

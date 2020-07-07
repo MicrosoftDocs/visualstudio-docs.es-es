@@ -1,7 +1,7 @@
 ---
-title: Procedimiento Crear un elemento Web de SharePoint utilizando un diseñador | Documentos de Microsoft
+title: 'Cómo: crear un elemento Web de SharePoint mediante un diseñador | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 0830cec748d68f010397c42334a5ed83365ee6b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966833"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016479"
 ---
-# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Procedimiento Crear un elemento Web de SharePoint mediante un diseñador
-  Puede crear un elemento web agregando un **elemento Web Visual** a un proyecto de SharePoint. Se abre el diseñador de Visual Web Developer en Visual Studio donde puede agregar controles y código al elemento web. Los elementos web visuales funcionan de la misma manera que lo hacen los elementos web. La única diferencia es que el usuario diseña los elementos web visuales en el diseñador de Visual Web Developer.
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Cómo: crear un elemento Web de SharePoint mediante un diseñador
+  Puede crear un elemento Web agregando un elemento de **elemento Web visual** a cualquier proyecto de SharePoint. Se abre el diseñador de Visual Web Developer en Visual Studio donde puede agregar controles y código al elemento web. Los elementos web visuales funcionan de la misma manera que lo hacen los elementos web. La única diferencia es que el usuario diseña los elementos web visuales en el diseñador de Visual Web Developer.
 
 ### <a name="to-create-a-project-for-visual-web-parts"></a>Para crear un proyecto de elementos web visuales
 
@@ -30,28 +29,28 @@ ms.locfileid: "62966833"
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-2. En el **nuevo proyecto** cuadro de diálogo, bajo **Visual C#** o **Visual Basic**, expanda el **Office/SharePoint** nodo y, a continuación, elija el **soluciones de SharePoint** categoría.
+2. En el cuadro de diálogo **nuevo proyecto** , en **Visual C#** o **Visual Basic**, expanda el nodo **Office/SharePoint** y, a continuación, elija la categoría **soluciones de SharePoint** .
 
-3. En la lista de plantillas de proyecto, elija **SharePoint 2013 - elemento Web Visual**y, a continuación, elija el **Aceptar** botón.
+3. En la lista de plantillas de proyecto, elija **SharePoint 2013-elemento Web visual**y, a continuación, elija el botón **Aceptar** .
 
-     El **Asistente de personalización de SharePoint** aparece.
+     Aparece el **Asistente para la personalización de SharePoint** .
 
-4. En el **especificar el nivel de sitio y de seguridad para la depuración** página, especifique la dirección URL de un sitio de SharePoint que se encuentra en el equipo local, y, a continuación, elija el **finalizar** botón.
+4. En la página **especifique el sitio y el nivel de seguridad de la depuración** , especifique la dirección URL de un sitio de SharePoint que se encuentra en el equipo local y, a continuación, elija el botón **Finalizar** .
 
-     En **el Explorador de soluciones**, aparece un elemento web. Después de diseñar el elemento web en el Diseñador de Visual Web Developer, probará en el sitio que especifique.
+     En **Explorador de soluciones**, aparece un elemento Web. Después de diseñar el elemento Web en el diseñador de Visual Web Developer, lo probará en el sitio que especifique.
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Para agregar un elemento web visual a un proyecto de SharePoint existente
 
-1. En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.
+1. En la barra de menús, elija **proyecto**  >  **Agregar nuevo elemento**.
 
-2. En el **Agregar nuevo elemento** diálogo cuadro, elija el **Office/SharePoint** nodo.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , elija el nodo **Office/SharePoint** .
 
-3. En la lista de plantillas de proyecto, elija **elemento Web Visual**, asígnele el nombre y, a continuación, elija el **agregar** botón.
+3. En la lista de plantillas de proyecto, elija **elemento Web visual**, asígnele el nombre y, a continuación, elija el botón **Agregar** .
 
-     En **el Explorador de soluciones**, aparece el elemento web. Después de diseñar el elemento web en el Diseñador de Visual Web Developer, probará en el sitio que especifique.
+     En **Explorador de soluciones**, aparece el elemento Web. Después de diseñar el elemento Web en el diseñador de Visual Web Developer, lo probará en el sitio que especifique.
 
-## <a name="see-also"></a>Vea también
-- [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
-- [Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
-- [Tutorial: Crear un elemento web para SharePoint utilizando un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+## <a name="see-also"></a>Consulte también
+- [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Cómo: crear un elemento Web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+- [Tutorial: crear un elemento Web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+- [Tutorial: crear un elemento Web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
