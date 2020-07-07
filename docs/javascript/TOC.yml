@@ -10,7 +10,7 @@
   items:
     - name: Primer vistazo al IDE de Visual Studio
       href: quickstart-ide-orientation-js.md
-    - name: Creación de un proyecto Node.js
+    - name: Crear un proyecto de Node.js
       href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
     - name: Crear un proyecto de Vue.js
       href: quickstart-vuejs-with-nodejs.md
@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: IntelliSense para JavaScript
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: Depuración de una aplicación de JavaScript
+    - name: Depuración
       href: debug-nodejs.md
-    - name: Pruebas unitarias de JavaScript
+    - name: Pruebas unitarias
       href: unit-testing-javascript-with-visual-studio.md
 - name: Recursos
   items:
