@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306660"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938919"
 ---
 # <a name="accessibility"></a>Accesibilidad
 
@@ -44,7 +45,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Después de activar la accesibilidad, debe reiniciar Visual Studio.
 
-## <a name="how-to-use-keyboard-navigation"></a>Uso de la navegación mediante el teclado
+## <a name="how-to-use-keyboard-navigation"></a>Procedimiento Uso de la navegación mediante el teclado
 
 Se puede habilitar la navegación mediante el teclado mediante el establecimiento de la opción de acceso de teclado completo en **Preferencias del sistema > Teclado > Accesos directos** en **Todos los controles**:
 
@@ -58,13 +59,13 @@ Si se establece el acceso de teclado completo, se activa en el rectángulo de fo
 
 Al presionar la barra espaciadora, se activa el control con el foco.
 
-## <a name="how-to-enable-and-use-voice-over"></a>Habilitación y utilización de VoiceOver
+## <a name="how-to-enable-and-use-voice-over"></a>Procedimiento Habilitación y utilización de VoiceOver
 
 Para activar o desactivar VoiceOver, presione **Cmd + F5**
 
 Para navegar por los comandos de VoiceOver de la interfaz de usuario, use los comandos siguientes:
 
-- Nueva el cursor de VoiceOver entre los controles: **Ctrl + Alt + tecla de dirección izquierda/tecla de dirección derecha**
+- Mueva el cursor de VoiceOver entre los controles: **Ctrl + Alt + flecha izquierda o tecla de dirección derecha**
 
    VoiceOver lee el nombre de los controles, algunos detalles sobre ellos y lo que se puede hacer con ellos.
 
@@ -77,6 +78,6 @@ Para más información sobre el uso de VoiceOver en macOS, consulte las guías s
 - [Getting Started with VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/) (Introducción a VoiceOver)
 - [VoiceOver commands in macOS](https://lab.dotjay.com/notes/voiceover-commands/) (Comandos de VoiceOver en macOS)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Características de accesibilidad de Visual Studio (en Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)

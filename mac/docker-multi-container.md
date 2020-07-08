@@ -4,12 +4,13 @@ description: Aprenda a administrar más de un contenedor y a comunicarse entre e
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/17/2019
-ms.openlocfilehash: 487945399252ca3627d625e3572637b5b2af2916
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: tutorial
+ms.openlocfilehash: 03adc2385c202710425fbc8e6b12c832526b5f90
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983959"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938949"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Creación de una aplicación de varios contenedores con Docker Compose
 

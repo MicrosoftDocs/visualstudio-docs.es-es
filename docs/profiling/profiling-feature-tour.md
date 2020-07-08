@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816701"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
+# <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
 Visual Studio proporciona una variedad de herramientas de generación de perfiles que le ayudarán a diagnosticar diferentes tipos de problemas de rendimiento según el tipo de aplicación. En este artículo, echamos un vistazo rápido a las herramientas de generación de perfiles más habituales.
 
@@ -204,9 +204,9 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
 |[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
-|[Visor de eventos](../profiling/perftips.md)|sí|sí|sí|
-|[.NET Async](../profiling/perftips.md)|sí (solo .NET)|sí|sí|
-|[Base de datos](../profiling/perftips.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
+|[Visor de eventos](../profiling/events-viewer.md)|sí|sí|sí|
+|[.NET Async](../profiling/analyze-async.md)|sí (solo .NET)|sí|sí|
+|[Base de datos](../profiling/analyze-database.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|No|No|No|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end

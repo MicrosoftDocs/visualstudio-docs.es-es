@@ -6,12 +6,13 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73715879"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950527"
 ---
 # <a name="create-razor-web-apps"></a>Creación de aplicaciones web de Razor
 
@@ -74,6 +75,6 @@ Este archivo contiene el punto de entrada del programa. Para obtener más inform
 
 Este archivo contiene código que configura el comportamiento de la aplicación, como, por ejemplo, si la aplicación requiere consentimiento para las cookies. Para obtener más información, vea [Inicio de la aplicación en ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información más completa sobre la creación de aplicaciones web de Razor, consulte [Introducción a Razor Pages en ASP.NET Core](/aspnet/core/razor-pages/index).

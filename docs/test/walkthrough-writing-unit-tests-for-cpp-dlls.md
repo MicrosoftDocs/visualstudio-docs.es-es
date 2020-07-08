@@ -1,18 +1,18 @@
 ---
 title: Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275430"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816012"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 
@@ -34,7 +34,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 8. [Aislar las unidades de los recursos externos](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). Normalmente, un archivo DLL depende de otros componentes del sistema que está desarrollando, como otros archivos DLL, bases de datos o subsistemas remotos. Es útil probar cada unidad aislada de sus dependencias. Los componentes externos pueden ralentizar las pruebas. Durante el desarrollo, los demás componentes podrían no estar completos.
 
-## <a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
 
 1. En el menú **Archivo**, elija **Nuevo** > **Proyecto**.
 
@@ -82,7 +82,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> Crear un proyecto DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Crear un proyecto DLL
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> Acoplar el proyecto de prueba al proyecto DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> Acoplar el proyecto de prueba al proyecto DLL
 
 1. Agregue el proyecto DLL a las referencias del proyecto de prueba:
 
@@ -194,7 +194,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
-## <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 
 1. Agregue una nueva prueba:
 
@@ -252,7 +252,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
     > [!TIP]
     > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
 
-## <a name="debug"></a> Depurar una prueba fallida
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Depurar una prueba fallida
 
 1. Agregue otra prueba:
 
@@ -337,7 +337,7 @@ En los pasos que hay a continuación se muestra cómo crear un proyecto de DLL e
 
 ::: moniker-end
 
-## <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refactorizar el código sin cambiar las pruebas
 
 1. Simplifique el cálculo central en la función SquareRoot:
 

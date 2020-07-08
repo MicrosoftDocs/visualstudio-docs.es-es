@@ -6,12 +6,13 @@ ms.author: jomatthi
 ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: troubleshooting
+ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714519"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950499"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>¿Es compatible Visual Studio para Mac con Control de versiones de Team Foundation?
 
@@ -106,6 +107,6 @@ Para obtener más información sobre los comandos mencionados aquí u otros, pue
 
 `tf help`
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Develop and share your code in TFVC using Visual Studio (on Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs) (Desarrollar y compartir el código en TFVC con Visual Studio (en Windows))

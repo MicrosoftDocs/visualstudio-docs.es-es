@@ -1,19 +1,19 @@
 ---
 title: Incorporación de nodos de resultados de búsqueda del conjunto de esquemas XML al área de trabajo
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdb21c2b9ce3f6a79bf24738c84fcb3064c24cb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d94544fd017809b32b7a144b16da4515e6b2e4bb
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592794"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816324"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Adición de nodos de resultados de búsqueda del conjunto de esquemas al área de trabajo
 

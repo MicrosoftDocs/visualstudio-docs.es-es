@@ -7,14 +7,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770527"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092315"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Ver la definición (Alt+F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 
 Puede usar el comando **Ver la definición** para ver y editar código sin salir del código que está escribiendo. **Ver la definición** e **Ir a definición** muestran la misma información, pero **Ver la definición** la muestra en una ventana emergente, mientras que **Ir a definición** muestra el código en una ventana de código independiente. **Ir a definición** hace que el contexto (es decir, la ventana de código activa, la línea actual y la posición del cursor) cambie a la ventana de código de definición. Con **Ver la definición**, puede ver y editar la definición y moverse por el archivo de definición manteniendo su lugar en el archivo de código original.
 
@@ -74,7 +74,7 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 |-------------------|:-----------------------:|
 |Abrir la ventana de definición|**Alt**+**F12**|
 |Cerrar la ventana de definición|**Esc**|
-|Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
+|Promover la ventana de definición a una pestaña de documento normal|**Ctrl**+**Alt**+**Inicio**|
 |Navegar entre ventanas de definición|**Ctrl**+**Alt**+ **-** y **Ctrl**+**Alt**+ **=**|
 |Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
 |Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|

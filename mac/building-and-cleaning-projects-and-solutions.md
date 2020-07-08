@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 924bdb08154ecb3caad04cabf7e860bed9204e98
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "71128457"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85939110"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilar y limpiar proyectos y soluciones
 
@@ -55,6 +56,6 @@ Para detener una compilación, use una de las siguientes opciones:
 
 * Presione **Cmd+Mayús+Entrar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Compilar y limpiar proyectos y soluciones (Visual Studio en Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

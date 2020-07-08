@@ -6,12 +6,13 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73189658"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938655"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -50,11 +51,11 @@ Visual Studio para Mac crea un proyecto de .NET Standard con una función predet
 
 ![Editor de Visual Studio para Mac que muestra una nueva función Azure desde la plantilla](media/azure-functions-newproj.png)
 
-El proyecto nuevo contiene estos archivos:
+El nuevo proyecto contiene los siguientes archivos:
 
 * **your-function-name.cs**: esta clase contiene código reutilizable para la función que ha seleccionado. Contiene un atributo **FunctionName** con el nombre de la función y un atributo desencadenador que especifica lo que desencadena la función (por ejemplo, una solicitud HTTP). Para obtener más información sobre el método de funciones, consulte el artículo [Referencia para desarrolladores de C# de Azure Functions](/azure/azure-functions/functions-dotnet-class-library).
 * **host.json**: este archivo describe las opciones de configuración global para el host de Functions. Para un archivo de ejemplo e información sobre la configuración disponible para este archivo, consulte la [Referencia de host.json para Azure Functions](/azure/azure-functions/functions-host-json).
-* **local.settings.json**: este archivo contiene toda la configuración para ejecutar las funciones de forma local. Esta configuración se utiliza con las herramientas principales de Azure Functions. Para más información, consulte [Archivo de configuración local](/azure/azure-functions/functions-run-local#local-settings-file) en el artículo Azure Functions Core Tools.
+* **local.settings.json**: este archivo contiene toda la configuración para ejecutar las funciones de forma local. Esta configuración se utiliza con las herramientas principales de Azure Functions. Para obtener más información, consulte [Archivo de configuración local](/azure/azure-functions/functions-run-local#local-settings-file) en el artículo de las herramientas principales de Azure Functions.
 
 Ahora que ha creado un nuevo proyecto de Azure Functions en Visual Studio para Mac, puede probar la función desencadenada HTTP predeterminada desde el equipo local.
 
@@ -90,27 +91,27 @@ Las plantillas de función permiten crear rápidamente nuevas funciones mediante
 
     En la sección [Plantillas de función disponibles](#available-function-templates) se proporciona una lista de las plantillas Azure Function.
 
-Puede utilizar el procedimiento anterior para agregar más funciones a su proyecto de aplicación de funciones. Cada función del proyecto puede tener un desencadenador diferente, pero una función no puede tener más de un desencadenador. Para más información, consulte [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
+Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función debe tener exactamente un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
-## <a name="publish-to-azure"></a>Publicación en Azure
+## <a name="publish-to-azure"></a>Publicar en Azure
 
-1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** : ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
+1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** :  ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
 2. Si ya ha conectado su cuenta de Azure para Visual Studio para Mac, se mostrará una lista de servicios de aplicaciones disponibles. Si aún no ha iniciado sesión, se le pedirá que lo haga.
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
-4. En el cuadro de diálogo **Crear nueva instancia de App Service**, especifique la configuración: ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
+4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
 
-    |Configuración  |Descripción  |
+    |Parámetro  |Descripción  |
     |---------|---------|
     |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|
-    |**[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)**|Nombre del grupo de recursos en el que se va a crear la aplicación de función. Elija **+** para crear un nuevo grupo de recursos.|
+    |**[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)**|Nombre del grupo de recursos en el que se va a crear la instancia de Function App. Elija **+** para crear un nuevo grupo de recursos.|
     |**[Plan de servicio](/azure/azure-functions/functions-scale)**|Elija un plan existente o cree un plan personalizado. Elija una ubicación en una región cerca de usted o cerca de otros servicios a los que acceda la función.|
 
-5. Haga clic en **Siguiente** para crear una cuenta de almacenamiento. El entorno de ejecución de Functions necesita una cuenta de Azure Storage. Haga clic en **Personalizado** para crear una cuenta de almacenamiento de propósito general o usar una existente:
+5. Haga clic en **Siguiente** para crear una cuenta de almacenamiento. El runtime de Functions necesita una cuenta de almacenamiento de Azure. Haga clic en **Personalizado** para crear una cuenta de almacenamiento de propósito general o usar una existente:
 
     ![Opción de menú Publicar en Azure](media/azure-functions-image8.png)
 
-6. Haga clic en **Crear** para crear una aplicación de función y los recursos relacionados en Azure con esta configuración e implemente el código del proyecto de función.
+6. Haga clic en **Crear** para crear una instancia de Function App y los recursos relacionados en Azure con esta configuración e implementar el código del proyecto de función.
 
 7. Puede que se muestre un cuadro de diálogo durante la publicación que indique "Actualizar versión de Functions en Azure". Haga clic en **Sí**:
 
@@ -118,7 +119,7 @@ Puede utilizar el procedimiento anterior para agregar más funciones a su proyec
 
 ## <a name="function-app-settings"></a>Configuración de Function App
 
-Cualquier configuración que agregue en local.settings.json debe agregarse a la aplicación de función en Azure. Esta configuración no se carga automáticamente cuando publica el proyecto.
+Cualquier configuración que agregue en local.settings.json debe agregarse también a Function App en Azure. Esta configuración no se carga automáticamente cuando se publica el proyecto.
 
 Para Tener acceso a la configuración de la aplicación, vaya a Azure Portal en [https://ms.portal.azure.com/](https://ms.portal.azure.com/). En **Instancias de Function App**, seleccione **Instancias de Function App** y resalte el nombre de función:
 
@@ -154,7 +155,7 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 
 - **WebHook genérico**: se trata de una función sencilla que se ejecutará cada vez que recibe una solicitud de servicio que admita webhooks. Para más información, vea [Creación de una función desencadenada mediante un webhook genérico](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, establece puntos de control y reinicia en su nombre. Para más información, vea las guías de Azure Functions en [Durable Functions](/azure/azure-functions/durable-functions-overview).
+- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, los puntos de control y los reinicios en su nombre. Para más información, vea las guías de Azure Functions en [Durable Functions](/azure/azure-functions/durable-functions-overview).
 
 - **Redimensionador de imagen**: esta función crea imágenes redimensionadas cada vez que un blob se agrega a un contenedor. La plantilla toma la cadena de conexión y la ruta de acceso para el desencadenador, una salida de imagen pequeña y una salida de imagen media.
 

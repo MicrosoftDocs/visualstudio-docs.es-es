@@ -1,19 +1,19 @@
 ---
 title: Depuración de hojas de estilos XSLT
 ms.date: 03/05/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79300946"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815128"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depuración de una hoja de estilos XSLT
 

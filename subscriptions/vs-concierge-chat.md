@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
-ms.openlocfilehash: 6b6ed0635f86abb94fd3693d14b53a9ff1f7c936
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274003"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906047"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Chat de soporte técnico en las suscripciones de Visual Studio.
 El servicio Chat de soporte técnico proporciona asistencia en la búsqueda de información de productos y documentación técnica, y además le ayuda a utilizar las ventajas de la suscripción de Visual Studio.

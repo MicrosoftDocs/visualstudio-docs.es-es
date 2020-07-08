@@ -6,16 +6,17 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.topic: how-to
+ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543758"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938936"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
- Visual Studio para Mac facilita el desarrollo del servicio de la aplicación gracias a su compatibilidad con la plataforma de desarrollo web ASP.NET Core más reciente. ASP.NET Core se ejecuta en .NET Core, la evolución más reciente de .NET Framework y el tiempo de ejecución. Se ha ajustado para ofrecer un rendimiento rápido, se ha factorizado para admitir tamaños de instalación pequeños y se ha reinventado para ejecutarse en Linux y macOS, así como en Windows.
+ Visual Studio para Mac facilita el desarrollo del servicio de la aplicación gracias a su compatibilidad con la plataforma de desarrollo web ASP.NET Core más reciente. ASP.NET Core se ejecuta en .NET Core, la evolución más reciente de .NET Framework y el tiempo de ejecución. Se ha ajustado para ofrecer un rendimiento rápido, se ha factorizado para admitir tamaños de instalación pequeños y se ha reinventado para ejecutarse en Linux y macOS, así como en Windows.
 
 ## <a name="installing-net-core"></a>Instalación de .NET Core
 

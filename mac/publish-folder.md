@@ -8,12 +8,13 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 0ea70fb1a5898e2415b7f74e93233ca03ea52c45
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.topic: how-to
+ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224503"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950488"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar en una carpeta con Visual Studio para Mac
 

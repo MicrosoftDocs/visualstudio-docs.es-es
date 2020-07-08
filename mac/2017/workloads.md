@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: fa298e97c2db05ee3be526e5e1b3cc7a7affed99
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985107"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950367"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Cargas de trabajo de Visual Studio para Mac
 
@@ -28,7 +29,7 @@ Xamarin permite crear aplicaciones móviles multiplataforma con .NET para Androi
 
 Para más información sobre el uso de Xamarin en Visual Studio para Mac, vaya al [Centro para desarrolladores de Xamarin](https://developer.xamarin.com/) y vea el [laboratorio práctico](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started) de aplicaciones para dispositivos móviles.
 
-## <a name="net-core-applications"></a>Aplicaciones de .NET Core
+## <a name="net-core-applications"></a>Aplicaciones .NET Core
 
 Para más información sobre el uso de .NET Core, vea la [documentación](/dotnet/core/).
 

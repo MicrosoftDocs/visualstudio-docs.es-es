@@ -1,20 +1,20 @@
 ---
 title: Tutorial para el Diseñador de Windows Forms
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589843"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816467"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Tutorial: Introducción a Diseñador de Windows Forms
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: Introducción a Diseñador de Windows Forms
 
 El Diseñador de Windows Forms brinda muchas herramientas para compilar aplicaciones de Windows Forms. En este artículo se muestra cómo compilar una aplicación con las diversas herramientas proporcionadas por el diseñador, incluidas las tareas siguientes:
 

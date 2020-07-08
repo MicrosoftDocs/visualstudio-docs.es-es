@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985183"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950388"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
@@ -44,7 +45,7 @@ Visual Studio para Mac permite agregar varias cuentas a su cuenta de personaliza
 
 Para agregar cuentas de usuario adicionales, siga los pasos descritos en la sección [Cómo iniciar sesión en Visual Studio para Mac](#how-to-sign-in-to-visual-studio-for-mac).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Trabajar con varias cuentas de usuario (Visual Studio en Windows)](/visualstudio/ide/work-with-multiple-user-accounts)
