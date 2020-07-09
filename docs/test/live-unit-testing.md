@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223713"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906216"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 
@@ -198,9 +198,9 @@ Para seleccionar proyectos individuales en pruebas unitarias, haga lo siguiente 
 
 Puede usar la ventana del editor de código para incluir o excluir métodos de prueba individuales. Haga clic con el botón derecho en la firma del método de prueba en la ventana del editor de código y seleccione una de las opciones siguientes:
 
-- **Live Tests** (Pruebas en vivo) > **Include \<selected method>** (Incluir <método seleccionado>)
-- **Live Tests** (Pruebas en vivo) > **Exclude \<selected method>** (Excluir <método seleccionado>)
-- **Live Tests** (Pruebas en vivo) > **Exclude All But \<selected method>** (Excluir todo excepto <método seleccionado>)
+- **Live Tests (Pruebas en vivo)**  > **Incluir \<selected method>**
+- **Live Tests (Pruebas en vivo)**  > **Excluir \<selected method>**
+- **Live Tests (Pruebas en vivo)**  > **Excluir todas menos \<selected method>**
 
 ### <a name="exclude-tests-programmatically"></a>Exclusión de pruebas mediante programación
 

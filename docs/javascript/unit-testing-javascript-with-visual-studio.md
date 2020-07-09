@@ -1,7 +1,7 @@
 ---
 title: Pruebas unitarias de JavaScript y TypeScript
 description: Visual Studio admite las pruebas unitarias de código de JavaScript y TypeScript mediante Herramientas de Node.js para Visual Studio
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289006"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033356"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
@@ -72,25 +72,32 @@ Después de abrir el Explorador de pruebas (elija **Prueba** > **Windows** > **E
 ![Explorador de pruebas](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> No use la opción `outdir` ni `outfile` en *tsconfig.json*, ya que el Explorador de pruebas no puede buscar las pruebas unitarias en archivos de TypeScript.
+> Para TypeScript, no use la opción `outdir` ni `outfile` en *tsconfig.json*, ya que el Explorador de pruebas no encontrará las pruebas unitarias.
 
 ## <a name="run-tests"></a>Ejecutar pruebas
 
-Puede ejecutar pruebas en Visual Studio 2017 o desde la línea de comandos.
+Puede ejecutar pruebas en Visual Studio o desde la línea de comandos.
 
-### <a name="run-tests-in-visual-studio-2017"></a>Ejecutar pruebas en Visual Studio 2017
+### <a name="run-tests-in-visual-studio"></a>Ejecución de pruebas en Visual Studio
 
+::: moniker range=">=vs-2019"
+Puede ejecutar las pruebas si hace clic en el vínculo **Ejecutar todo** del Explorador de pruebas. O bien, puede ejecutar pruebas si selecciona uno o varios grupos o pruebas, hace clic con el botón derecho y selecciona **Ejecutar** en el menú contextual. Las pruebas se ejecutan en segundo plano y el Explorador de pruebas actualiza y muestra los resultados automáticamente. Además, puede depurar las pruebas seleccionadas si hace clic con el botón derecho y selecciona **Depurar**.
+::: moniker-end
+::: moniker range="vs-2017"
 Puede ejecutar las pruebas si hace clic en el vínculo **Ejecutar todo** del Explorador de pruebas. O bien, puede ejecutar pruebas si selecciona uno o varios grupos o pruebas, hace clic con el botón derecho y selecciona **Ejecutar pruebas seleccionadas** en el menú contextual. Las pruebas se ejecutan en segundo plano y el Explorador de pruebas actualiza y muestra los resultados automáticamente. Además, puede depurar pruebas seleccionadas si selecciona **Depurar pruebas seleccionadas**.
+::: moniker-end
 
-> [!Warning]
-> La depuración de pruebas unitarias mediante Node 8+ de momento solo funciona en archivos de prueba de JavaScript; en los archivos de prueba de TypeScript se produce un error al alcanzar puntos de interrupción. Como alternativa, use la palabra clave `debugger`.
+Para TypeScript, las pruebas unitarias se ejecutan en el código JavaScript generado.
+
+> [!NOTE]
+> En la mayoría de los escenarios de TypeScript, puede depurar una prueba unitaria estableciendo un punto de interrupción en el código TypeScript, haciendo clic con el botón derecho en una prueba en el Explorador de pruebas y eligiendo **Depurar**. En escenarios más complejos, como los que usan mapas de origen, puede que tenga dificultades para llegar a los puntos de interrupción en el código TypeScript. Como solución alternativa, pruebe a usar la palabra clave `debugger`.
 
 > [!NOTE]
 > Actualmente no se admiten las pruebas de generación de perfiles ni la cobertura de código.
 
 ### <a name="run-tests-from-the-command-line"></a>Ejecutar pruebas desde la línea de comandos
 
-Puede ejecutar las pruebas desde el [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) de Visual Studio 2017 mediante el siguiente comando:
+Puede ejecutar las pruebas desde el [Símbolo del sistema para desarrolladores](/dotnet/framework/tools/developer-command-prompt-for-vs) de Visual Studio mediante el siguiente comando:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
