@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906005"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301465"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -26,7 +26,7 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 2. Busque el icono de la cuenta de desarrollador de Windows en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.  Copie el código en el Portapapeles y haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. En el sitio [https://developer.microsoft.com](https://developer.microsoft.com) puede comenzar el proceso de registro.  Haga clic en **Registrarse** para continuar.
+3. En el sitio [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) puede comenzar el proceso de registro.  Haga clic en **Registrarse** para continuar.
    > [!div class="mx-imgBorder"]
    > ![Registro de la ventaja de Windows Developer](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Inicie sesión en su suscripción.  Si tiene varias cuentas, elija la que esté asociada a su suscripción Enterprise Subscription.

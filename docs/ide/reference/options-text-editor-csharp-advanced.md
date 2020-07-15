@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431493"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181071"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -87,7 +87,14 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using System.Linq;
    ```
 
+::: moniker range=">=vs-2019"                                              
 - Sugerir usos para tipos en ensamblados .NET Framework
+::: moniker-end
+                                         
+::: moniker range="vs-2017"                                                
+- Sugerir usos para tipos de ensamblados de referencia
+::: moniker-end                                                            
+
 - Sugerir usos para tipos de paquetes NuGet
 
    Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
