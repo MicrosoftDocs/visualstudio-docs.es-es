@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Step | Microsoft Docs
+title: 'IDebugProcess3:: Step | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 45f60aaac3b89b7273a5f548b4716b6aee392256
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5069a40f4e3ea4b1fba74c8133a18b46f2b3f2d2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405603"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386230"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Hace que el proceso paso a paso una instrucción o instrucción.  
+Hace que el proceso procese una instrucción o instrucción.  
   
 > [!NOTE]
-> Este método debería usarse en lugar de [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
+> Este método se debe usar en lugar del [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,25 +47,25 @@ int Step(
   
 #### <a name="parameters"></a>Parámetros  
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso que se va a escalonado.  
+ de Un objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso escalonado.  
   
  `sk`  
- [in] Uno de los [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valores.  
+ de Uno de los valores de [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) .  
   
  `step`  
- [in] Uno de los [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valores.  
+ de Uno de los valores de [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve el código de error.  
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve el código de error.  
   
-## <a name="remarks"></a>Comentarios  
- En caso de que no hay ninguna sincronización de subprocesos o la comunicación entre subprocesos, otros subprocesos del proceso deben ejecutarse cuando un subproceso en particular es ejecución paso a paso.  
+## <a name="remarks"></a>Observaciones  
+ En caso de que haya cualquier sincronización de subprocesos o comunicación entre subprocesos, otros subprocesos del proceso deben ejecutarse cuando un subproceso determinado se está ejecutando.  
   
- **Advertencia** no enviar ningún evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
+ **ADVERTENCIA** de No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)   
  [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

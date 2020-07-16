@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones de 64 bits | Microsoft Docs
+title: Depuración de aplicaciones de 64 bits | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916003"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387205"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicaciones de 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
   
 1. Cree una solución de Visual Studio, por ejemplo una aplicación de consola de C#.  
   
-2. Establezca la configuración en 64 bits mediante el Administrador de configuración. Para obtener más información, consulta [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+2. Establezca la configuración en 64 bits mediante el Administrador de configuración. Para obtener más información, vea [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3. En este momento se inicia la versión de 64 bits del depurador remoto (msvsmon.exe). Se ejecuta siempre que se abra la solución con la configuración de 64 bits.  
   
@@ -55,11 +55,11 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
   
 - Tiene software de seguridad de red instalado en el equipo que provoca que la pila de red no sea confiable y tiene paquetes eliminados transfiriéndose a través de localhost. Intente deshabilitar todo el software de seguridad de red y compruebe si se resuelve el problema. Si es así, notifique a su proveedor de software de seguridad de red que el software está interfiriendo con el tráfico de localhost.  
   
-- Está experimentando un problema de falta de respuesta o de rendimiento con Visual Studio. Si el problema ocurre con frecuencia, puede recopilar volcados de Visual Studio (devenv.exe) y el proceso de trabajo (msvsmon.exe) y enviarlos a Microsoft. 
+- Se está ejecutando un problema en el que Visual Studio deja de responder u otro problema de rendimiento. Si el problema ocurre con frecuencia, puede recopilar volcados de Visual Studio (devenv.exe) y el proceso de trabajo (msvsmon.exe) y enviarlos a Microsoft. 
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Aplicaciones de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configurar programas de 64 bits](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
- [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Configuración de programas para 64 bits](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Compatibilidad del IDE de Visual Studio con 64 bits](../ide/visual-studio-ide-64-bit-support.md)   
  [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

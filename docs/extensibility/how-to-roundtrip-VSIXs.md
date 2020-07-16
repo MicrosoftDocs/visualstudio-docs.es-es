@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905772"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387283"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Cómo: hacer que las extensiones sean compatibles con Visual Studio 2019/2017 y Visual Studio 2015
 
@@ -213,5 +213,4 @@ En este momento, el proyecto debe estar listo para compilar un VSIXv3 que se pue
 ![Buscar un VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Si el proyecto se bloquea con el mensaje que **abre el archivo**, fuerce el cierre de Visual Studio, vaya al directorio del proyecto, muestre las carpetas ocultas y elimine la carpeta *. vs* .
- 
+> Si el proyecto deja de responder con el mensaje que **abre el archivo**, fuerce el cierre de Visual Studio, navegue hasta el directorio del proyecto, muestre las carpetas ocultas y elimine la carpeta *. vs* .

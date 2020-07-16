@@ -1,5 +1,5 @@
 ---
-title: Administración de varios subprocesos en código administrado | Documentos de Microsoft
+title: Administrar varios subprocesos en código administrado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,26 +8,26 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 296ef23bc512a86917920b3c3d5fbb5ec203a21e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433054"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387023"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Administración de varios subprocesos en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si tiene una extensión VSPackage administrada que llama a métodos asincrónicos o tiene operaciones que se ejecutan en subprocesos distintos del subproceso de interfaz de usuario de Visual Studio, debe seguir las instrucciones que se indican a continuación. Puede que el subproceso de interfaz de usuario siga respondiendo porque no necesita esperar por el trabajo en otro subproceso para completar. Puede hacer que el código sea más eficaz, porque no tiene subprocesos adicionales que ocupan espacio de pila y hacer más fiable y fácil de depurar porque evitar interbloqueos y bloqueos.  
+Si tiene una extensión VSPackage administrada que llama a métodos asincrónicos o tiene operaciones que se ejecutan en subprocesos distintos del subproceso de interfaz de usuario de Visual Studio, debe seguir las instrucciones que se indican a continuación. Puede mantener la capacidad de respuesta del subproceso de la interfaz de usuario porque no es necesario esperar a que se complete el trabajo en otro subproceso. Puede hacer que el código sea más eficaz, ya que no tiene subprocesos adicionales que ocupen espacio de pila, y puede hacer que sea más confiable y más fácil de depurar, ya que evita los interbloqueos y la falta de respuesta.  
   
- En general, puede cambiar desde el subproceso de interfaz de usuario a un subproceso diferente, o viceversa. Cuando el método vuelve, el subproceso actual es el subproceso desde el que se llamó originalmente.  
+ En general, puede cambiar del subproceso de interfaz de usuario a otro subproceso, o viceversa. Cuando el método devuelve, el subproceso actual es el subproceso del que se llamó originalmente.  
   
 > [!IMPORTANT]
-> Las instrucciones siguientes utilizan las API en el <xref:Microsoft.VisualStudio.Threading> espacio de nombres, en particular, el <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> clase. Las API en este espacio de nombres son nuevas en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Puede obtener una instancia de un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> desde el <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propiedad `ThreadHelper.JoinableTaskFactory`.  
+> Las instrucciones siguientes usan las API del <xref:Microsoft.VisualStudio.Threading> espacio de nombres, en particular, la <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> clase. Las API de este espacio de nombres son nuevas en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] . Puede obtener una instancia de a <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> partir de la <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propiedad `ThreadHelper.JoinableTaskFactory` .  
   
-## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Cambiar desde el subproceso de interfaz de usuario a un subproceso en segundo plano  
+## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Cambiar del subproceso de interfaz de usuario a un subproceso en segundo plano  
   
-1. Si se encuentra en el subproceso de interfaz de usuario y desea hacer el trabajo asincrónico en un subproceso en segundo plano, use Task.Run():  
+1. Si está en el subproceso de la interfaz de usuario y desea realizar el trabajo asincrónico en un subproceso en segundo plano, use Task. Run ():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
   
     ```  
   
-2. Si se encuentra en el subproceso de interfaz de usuario y desea bloquear de forma sincrónica mientras esté realizando el trabajo en un subproceso en segundo plano, use la <xref:System.Threading.Tasks.TaskScheduler> propiedad `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. Si se encuentra en el subproceso de la interfaz de usuario y desea bloquearse sincrónicamente mientras realiza el trabajo en un subproceso en segundo plano, use la <xref:System.Threading.Tasks.TaskScheduler> propiedad `TaskScheduler.Default` en <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> :  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,16 +51,16 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Cambiar de un subproceso en segundo plano al subproceso de interfaz de usuario  
   
-1. Si se encuentra en un subproceso en segundo plano y desea hacer algo en el subproceso de interfaz de usuario, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Si se encuentra en un subproceso en segundo plano y desea hacer algo en el subproceso de la interfaz de usuario, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> :  
   
     ```csharp  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
   
-     Puede usar el <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> método para cambiar al subproceso de interfaz de usuario. Este método envía un mensaje al subproceso de interfaz de usuario con la continuación del método asincrónico actual y también se comunica con el resto del marco subprocesamiento para establecer la prioridad correcta y evitar los interbloqueos.  
+     Puede usar el <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> método para cambiar al subproceso de la interfaz de usuario. Este método envía un mensaje al subproceso de la interfaz de usuario con la continuación del método asincrónico actual y también se comunica con el resto del marco de trabajo de subprocesos para establecer la prioridad correcta y evitar los interbloqueos.  
   
-     Si el método de subproceso en segundo plano no es asincrónico y no se puede convertir asincrónico, puede usar el `await` sintaxis para cambiar al subproceso de UI al ajustar su trabajo con <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, como en este ejemplo:  
+     Si el método de subproceso en segundo plano no es asincrónico y no puede convertirlo en asincrónico, puede seguir usando la `await` sintaxis para cambiar al subproceso de la interfaz de usuario mediante el ajuste del trabajo con <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> , como en este ejemplo:  
   
     ```csharp  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  

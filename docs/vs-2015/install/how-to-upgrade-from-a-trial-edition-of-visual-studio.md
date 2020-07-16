@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298057"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386685"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Cómo: Actualizar de versiones de prueba de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede evaluar la versión preliminar de Visual Studio durante 14 días sin registrar el producto. Después de registrarse iniciando sesión con una cuenta de Microsoft, la licencia de la versión preliminar es válida hasta la fecha límite.
+Puede evaluar la versión preliminar de Visual Studio durante 14 días sin registrar el producto. Después de registrarse iniciando sesión con un cuenta de Microsoft, la licencia de versión preliminar es válida hasta la fecha de expiración.
 
  Puede evaluar la versión de lanzamiento de las ediciones Professional y Enterprise de Visual Studio durante 30 días, a partir de la instalación del producto. [Si inicia sesión en Visual Studio](../ide/signing-in-to-visual-studio.md), se agregarán 60 días al período de evaluación, lo que suma un total de 90 días. Si no registra una edición de prueba de Visual Studio en el plazo de 30 días, el período de prueba expira 30 días después de haberla instalado.
 
@@ -43,5 +43,5 @@ Puede evaluar la versión preliminar de Visual Studio durante 14 días sin regis
     > [!NOTE]
     > El acceso a Internet es necesario para registrar y desbloquear cualquier edición de Visual Studio. Una vez registrado Visual Studio, la conexión a Internet es opcional.
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Instalar Visual Studio](../install/install-visual-studio-2015.md) [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md) [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localizar o cambiar la clave del producto para Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Paso ? Microsoft Docs
+title: 'IDebugProcess3:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5c4927f3f997b7fdbdca2b32977f2aa31a51219
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723553"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386698"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Hace que el proceso realice un paso de una instrucción o instrucción.
+Hace que el proceso procese una instrucción o instrucción.
 
 > [!NOTE]
-> Este método debe utilizarse en lugar de [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md).
+> Este método se debe usar en lugar del [paso](../../../extensibility/debugger/reference/idebugprogram2-step.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,23 +48,23 @@ int Step(
 
 ## <a name="parameters"></a>Parámetros
 `pThread`\
-[en] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso que se va a escalonar.
+de Un objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso escalonado.
 
 `sk`\
-[en] Uno de los valores [STEPKIND.](../../../extensibility/debugger/reference/stepkind.md)
+de Uno de los valores de [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) .
 
 `step`\
-[en] Uno de los valores [STEPUNIT.](../../../extensibility/debugger/reference/stepunit.md)
+de Uno de los valores de [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
 
 ## <a name="return-value"></a>Valor devuelto
- Si se realiza correctamente, devuelve S_OK; de lo contrario devuelve código de error.
+ Si se realiza correctamente, Devuelve S_OK; de lo contrario, devuelve el código de error.
 
 ## <a name="remarks"></a>Observaciones
- En caso de que haya alguna sincronización de subprocesos o comunicación entre subprocesos, otros subprocesos en el proceso deben ejecutarse cuando un subproceso determinado está paso a paso.
+ En caso de que haya cualquier sincronización de subprocesos o comunicación entre subprocesos, otros subprocesos del proceso deben ejecutarse cuando un subproceso determinado se está ejecutando.
 
- **Advertencia** No envíe un evento de detención o un evento inmediato (sincrónico) a [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras controla esta llamada; de lo contrario, el depurador puede bloquearse.
+ **ADVERTENCIA** de No enviar un evento de detención o un evento inmediato (sincrónico) al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; de lo contrario, es posible que el depurador deje de responder.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)

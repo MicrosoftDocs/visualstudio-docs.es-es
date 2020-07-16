@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919248"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387114"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novedades de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 
  La experiencia de instalación de Visual Studio de 2015 ha sido dividida en componentes para que solo tenga que instalar los elementos que necesita. Esto acelera la instalación de muchos escenarios comunes en el desarrollo .NET o Web. Si realiza otro tipo de desarrollo, como desarrollo móvil multiplataforma, o si trabaja en C++ o F#, elija la instalación **Personalizada** y seleccione los componentes y los SDK opcionales de terceros que necesite. También puede instalar cualquiera de los componentes personalizados más adelante. Por ejemplo, si elige la instalación básica y, a continuación, intente crear un nuevo proyecto de C++, se le pedirá que descargue las herramientas de desarrollo de C++.
 
- ![Cuadro de diálogo de instalación de Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
+ ![Cuadro de diálogo del programa de instalación de Visual Studio de 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Iniciar sesión en varias cuentas
  Con Visual Studio 2015, la nueva experiencia de inicio de sesión simplificada se diseñó para simplificar en gran medida su acceso a recursos en línea, incluso si tiene varias cuentas de Visual Studio. Al iniciar sesión en Visual Studio, automáticamente se inicia su sesión en todas las instancias de Visual Studio 2015 y Blend en su máquina. Al iniciar sesión, la configuración empieza a transmitirse automáticamente. En Visual Studio 2015, su cuenta se comparte entre funciones para que, siempre que tenga un buen token, pueda obtener acceso a sus cuentas de Visual Studio Team Services desde **Team Explorer**y a recursos y sitios web desde su suscripción de Microsoft Azure desde el Explorador de servidores. Además, podrá ver sus recursos de Azure en el cuadro de diálogo Nuevo proyecto del proyecto para Application Insights y sus cuentas de Azure Mobile, Almacenamiento de Azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) y [desarrollador de Saleforce.com](https://developer.salesforce.com/) en el nuevo cuadro de diálogo **Agregar un servicio conectado** .
@@ -61,7 +61,7 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplicaciones y bibliotecas multiplataforma para C++ nativo
  C++ es un lenguaje disponible de forma nativa en la mayoría de dispositivos móviles. Puede usarlo para escribir bibliotecas de código compartido multiplataforma que se pueden compilar y destinar a varias plataformas móviles. Incluso puede crear aplicaciones móviles completas en C++. Visual C++ contiene todas las herramientas para editar, compilar, implementar y depurar el código multiplataforma. Además de las plantillas para aplicaciones de Windows, puede crear proyectos a partir de plantillas de aplicaciones Android Native Activity, aplicaciones de iOS o proyectos de biblioteca de código compartido multiplataforma, entre las que se incluyen las aplicaciones híbridas de Xamarin. Gracias a su especificidad de plataforma, la característica Intellisense le permite explorar las API y generar el código correspondiente para Android, iOS o Windows. Puede configurar la compilación para las plataformas nativas x86 o ARM. Para la realización de pruebas, implemente el código en un simulador de iOS, en dispositivos iOS de un Mac conectado a la red, en dispositivos Android con conexión directa o use el emulador de Microsoft Visual Studio para Android. Puede establecer puntos de interrupción, ver las variables y la pila, y revisar el código de C++ en el depurador de Visual Studio. El código se puede compartir entre varias plataformas de aplicación (excepto el más específico), y con una única solución en Visual Studio se puede compilar para todas esas plataformas.
 
- Para empezar a trabajar con multiplataforma C++, consulte [compilar aplicaciones móviles multiplataforma con C++ visual](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ Para empezar a trabajar en C++ multiplataforma, consulte [compilar aplicaciones móviles multiplataforma con Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>Aplicaciones Windows universales para cualquier dispositivo con Windows 10
  Con la Plataforma universal de Windows y nuestro núcleo de Windows, puede ejecutar la misma aplicación de Windows 10 en cualquier dispositivo, desde teléfonos a equipos de escritorio. Cree estas aplicaciones con Visual Studio 2015 y las herramientas de desarrollo de aplicaciones Windows universales.
@@ -92,7 +92,7 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 #### <a name="c"></a>C++
  Visual C++ proporciona importantes avances en compatibilidad con lenguaje C++11/14, compatibilidad con desarrollo multiplataforma de dispositivos móviles, compatibilidad con funciones reanudables y await (actualmente planeado para la estandarización en C++17), mejoras y correcciones de errores en la Biblioteca en tiempo de ejecución de C (CRT) e implementaciones de la Biblioteca estándar de C++ (STL), cuadros de diálogo de tamaño modificable en MFC, nuevas optimizaciones del compilador, mejor rendimiento de la compilación, nuevas capacidades de diagnóstico y nuevas herramientas de productividad en el editor de código.
 
- Para obtener más información, vea [novedades de Visual C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) y el [blog visual C++ ](https://devblogs.microsoft.com/cppblog/).
+ Para obtener más información, consulte [novedades de Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) y el [blog de Visual C++](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Barra de menús de la Vista previa del dispositivo
  En los proyectos de la Plataforma universal de Windows, la barra de menús de la vista previa del dispositivo permite comprobar cómo se verá la interfaz de usuario XAML en diversos tamaños de pantalla.
@@ -105,9 +105,9 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 ## <a name="connect-to-services"></a>Conectarse a los servicios
  Con Visual Studio 2015 es más fácil que nunca conectar su aplicación a los servicios.  El nuevo asistente Agregar servicio conectado configura su proyecto, agrega la compatibilidad de autenticación requerida y descarga los paquetes NuGet necesarios para que pueda empezar a codificar en su servicio rápidamente y sin problemas. El asistente Agregar servicio conectado también se integra con el nuevo Administrador de cuentas para que sea más fácil trabajar con varias suscripciones y cuentas de usuario. Visual Studio 2015 incluye compatibilidad de fábrica con los siguientes servicios (si tiene una cuenta):
 
-1. Servicios móviles de Azure
+1. Azure Mobile Services
 
-2. Almacenamiento de Azure
+2. Azure Storage
 
 3. Office 365 (correo, contactos, calendarios, archivos, usuarios y grupos)
 
@@ -115,7 +115,7 @@ Para obtener más información sobre las numerosas mejoras y las nuevas caracter
 
    Se agregarán servicios nuevos continuamente. Estos se pueden consultar haciendo clic en el vínculo "Buscar servicios nuevos" del asistente.
 
-   ![Cuadro de diálogo Agregar Servicios conectados](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
+   ![Cuadro de diálogo Agregar servicios conectados](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
 
 ## <a name="design-your-ui"></a>Diseñar su UI
  La experiencia de Blend para diseñar interfaces de usuario de XAML se ha mejorado de forma notable. Blend se ha rediseñado totalmente para ofrecer una IU más intuitiva, capacidades de edición de XAML más potentes (incluido IntelliSense) y una mejor integración con Visual Studio. Para obtener más información, vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](./designers/designing-xaml-in-visual-studio.md).
@@ -151,7 +151,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 ## <a name="live-code-analysis-light-bulbs"></a>Análisis de código activo (bombillas)
  El nuevo compilador Roslyn para C# y Visual Basic no solo ofrece tiempos de compilación más rápidos, sino que también genera escenarios totalmente nuevos, como el análisis de código activo, que ofrece comentarios y sugerencias enriquecidos y personalizables directamente dentro del editor de código al escribir. En Visual Studio 2015, las bombillas aparecen en el margen izquierdo (al usar el teclado) o muestran información sobre herramientas (al mantener el puntero del mouse sobre un error). La bombilla dice en tiempo real que el compilador (posiblemente usando un conjunto de reglas personalizado) detectó un problema en el código y tiene una sugerencia para corregirlo. Cuando vea una bombilla, haga clic en ella para ver las sugerencias que puede llevar a cabo.
 
- ![Bombillas en el editor de Visual Studio Code](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
+ ![Bombillas en el Editor de Visual Studio Code](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
 
 ## <a name="enjoy-these-additional-ide-improvements"></a>Disfrute de estas mejoras adicionales del IDE
 
@@ -164,7 +164,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 ### <a name="title-case-menus"></a>Menús Tipo título
  Sus deseos son órdenes. Los menús de Visual Studio vuelven a ser tipo título de manera predeterminada. Sin embargo, si le gusta el estilo de TODO EN MAYÚSCULAS, puede establecerlo al inicio o en la página de propiedades **Herramientas > Opciones > General**:
 
- ![Comandos del menú principal del caso de título de Visual Studio 2015](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
+ ![Comandos de menú tipo título principal Visual Studio 2015](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
 ### <a name="high-resolution-images-and-touch-support"></a>Imágenes de alta resolución y compatibilidad táctil
  Ahora, el IDE de Visual Studio tiene imágenes de verdadera alta resolución en pantallas más densas (en áreas como menús, menús contextuales, barras de comando de ventanas de herramientas y en algunos proyectos del Explorador de soluciones). Y en una pantalla táctil de la ventana del editor de código de Visual Studio, ahora puede usar gestos, como tocar y mantener presionado, reducir, puntear, etc., para acercarse, desplazarse, seleccionar texto e invocar menús contextuales.
@@ -174,7 +174,7 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 ### <a name="custom-layouts"></a>Diseños personalizados
  Puede crear, almacenar y transmitir diseños de ventana personalizados. Por ejemplo, puede definir un diseño preferido para usarlo en su máquina de escritorio y un diseño diferente para usarlo en un equipo portátil o un dispositivo de pantalla pequeña. O quizás prefiera un diseño para un proyecto de UI y otro para un proyecto de base de datos. Los enlaces de teclado le permiten cambiar rápidamente entre distintos diseños. Estos diseños están disponibles en cualquier instancia de Visual Studio cuando tiene iniciada la sesión. Para obtener más información, consulte [Crear diseños de ventana personalizados](./misc/create-custom-window-layouts.md).
 
- ![Elemento de menú de diseño personalizado de Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
+ ![Elemento de menú del diseño personalizado de Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>Centro de notificaciones
  La interfaz de usuario del centro de notificaciones se optimizó para que resulte más fácil analizar rápidamente. Se agregaron otros tipos de notificaciones, incluidos problemas de rendimiento, problemas de representación y bloqueos, y ahora se le puede indicar a Visual Studio que deje de mostrar una notificación. Para obtener más información, vea [Notificaciones de Visual Studio](./ide/visual-studio-notifications.md).
@@ -186,11 +186,11 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 
 - Obtener el historial de un archivo de código completo en el editor de Visual Studio.
 
-   ![Codelens: obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver un gráfico que muestra las personas que cambiaron el código. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.
 
-   ![Codelens: ver el historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Ver el historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")
 
 - Ver fácilmente cuándo se cambió el código por última vez.
 
@@ -252,19 +252,19 @@ Las herramientas siguientes se han introducido o mejorado para realizar diferent
 
  Solo haga clic en la cara sonriente amarilla en la barra de título, díganos qué le gustó y luego haga clic en el botón **Enviar una sonrisa** .
 
- ¡Eso es todo! Enviaremos su comentario al equipo correcto, donde se felicitarán entre ellos y rápidamente comenzarán a pensar en diferentes maneras de deleitarlo aún más.
+ ¡Ya está! Enviaremos su comentario al equipo correcto, donde se felicitarán entre ellos y rápidamente comenzarán a pensar en diferentes maneras de deleitarlo aún más.
 
-### <a name="send-a-frown"></a>Enviar un ceño fruncido
+### <a name="send-a-frown"></a>Envíe una desaprobación
  Sus comentarios acerca de todo lo que necesitamos mejorar en los productos nos ayuda a administrar nuestro trabajo, al enfocarnos principalmente en aquellas cosas que son más importantes para nuestros clientes. Si hay algo que le molesta, cuéntenos a través de la función **Enviar una desaprobación** directamente desde el IDE. También hemos hecho que este proceso sea muy sencillo:
 
- Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar un ceño fruncido. Para obtener más información, consulta [Talk to Us](./ide/talk-to-us.md).
+ Haga clic en la cara sonriente amarilla en la barra de título y luego haga clic en **Enviar una desaprobación**. Cuéntenos qué no le gusta y luego haga clic en el botón Enviar una desaprobación. Para obtener más información, vea [Hable con nosotros](./ide/talk-to-us.md).
 
-### <a name="report-crashes-hangs-and-performance-issues"></a>Informe bloqueos, caídas y problemas de rendimiento.
- En ocasiones, solo una nota rápida en una desaprobación no es suficiente para describir el impacto total de algo que no le gusta. En aquellos casos en los que experimenta un bloqueo, una caída o algún problema de rendimiento, puede compartir fácilmente pasos de reproducción, volcados de memoria y archivos de seguimiento, al usar el cuadro de diálogo que aparece luego de que envía un ceño fruncido.
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>Informes de bloqueos, sin respuesta y problemas de rendimiento
+ En ocasiones, solo una nota rápida en una desaprobación no es suficiente para describir el impacto total de algo que no le gusta. En el momento en que Visual Studio deja de responder, se bloquea o experimenta otro problema de rendimiento, puede compartir fácilmente pasos de reproducción, volcados de memoria y archivos de seguimiento mediante el cuadro de diálogo que aparece después de enviar una desaprobación.
 
- Primero, envíe un ceño fruncido tal como se describió anteriormente. En el cuadro de diálogo que aparece, puede etiquetar su comentario con una de las etiquetas predeterminadas o puede crear su propia etiqueta. Las etiquetas nos ayudan a enviar su comentario al equipo de características correspondiente. En la lista desplegable **Elegir una categoría** , seleccione la opción que representa el problema que está informando y luego siga los pasos para reproducir el problema. También se encuentran disponibles los pasos detallados sobre cómo usar Visual Studio para enviar comentarios. Para obtener más información, vea [instrucciones para enviar una sonrisa de Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ Primero, envíe una desaprobación tal como se describió anteriormente. En el cuadro de diálogo que aparece, puede etiquetar su comentario con una de las etiquetas predeterminadas o puede crear su propia etiqueta. Las etiquetas nos ayudan a enviar su comentario al equipo de características correspondiente. En la lista desplegable **Elegir una categoría** , seleccione la opción que representa el problema que está informando y luego siga los pasos para reproducir el problema. También se encuentran disponibles los pasos detallados sobre cómo usar Visual Studio para enviar comentarios. Para obtener más información, vea [instrucciones para enviar una sonrisa de Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Compilar aplicaciones multiplataforma con Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
