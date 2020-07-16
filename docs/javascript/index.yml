@@ -5,18 +5,19 @@ metadata:
   title: JavaScript y TypeScript en Visual Studio
   description: Aprenda a usar Visual Studio para crear aplicaciones JavaScript y TypeScript.
   ms.topic: landing-page
+  ms.technology: vs-javascript
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 01b4232b4933197f06bb77793fb638281e5b5748
+  ms.sourcegitcommit: ad13d7b427303b0e801d54dc521dfb3c1e2bf6e4
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75678953"
+  ms.lasthandoff: 07/15/2020
+  ms.locfileid: "86405386"
 landingContent:
-- title: Introducción
+- title: Primeros pasos
   linkLists:
   - linkListType: overview
     links:
@@ -24,7 +25,7 @@ landingContent:
       url: javascript-in-vs-2019.md
   - linkListType: how-to-guide
     links:
-    - text: Instalación de Visual Studio
+    - text: Instalar Visual Studio
       url: ../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -52,7 +53,7 @@ landingContent:
       url: npm-package-management.md
     - text: Uso de REPL interactivo de Node.js
       url: nodejs-interactive-repl.md
-    - text: Depuración del código
+    - text: Depurar el código
       url: debug-nodejs.md
     - text: Desarrollo de código sin proyectos o soluciones
       url: develop-javascript-code-without-solutions-projects.md
