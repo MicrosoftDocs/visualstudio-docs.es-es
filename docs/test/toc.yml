@@ -42,6 +42,8 @@
       items:
         - name: Ejecutar pruebas unitarias con el Explorador de pruebas
           href: run-unit-tests-with-test-explorer.md
+        - name: Depurar pruebas unitarias con el Explorador de pruebas
+          href: debug-unit-tests-with-test-explorer.md
         - name: Preguntas más frecuentes sobre el Explorador de pruebas
           href: test-explorer-faq.md
     - name: Ejecutar pruebas desde la línea de comandos
@@ -103,7 +105,7 @@
       items:
         - name: Prueba unitaria de un archivo DLL de C++ en UWP
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Prueba unitaria de código de Visual C# en aplicaciones UWP'
+        - name: Prueba unitaria de código de Visual C# en aplicaciones UWP
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md

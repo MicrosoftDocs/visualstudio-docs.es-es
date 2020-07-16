@@ -730,6 +730,20 @@
                   href: ca2328.md
                 - name: 'CA2329: No deserializar con JsonSerializer y una configuración no segura'
                   href: ca2329.md
+                - name: 'CA2350: Asegurarse de que la entrada de DataTable.ReadXml() sea de confianza'
+                  href: ca2350.md
+                - name: 'CA2351: Asegúrese de que la entrada de DataSet.ReadXml() sea de confianza'
+                  href: ca2351.md
+                - name: 'CA2352: Un objeto DataSet o DataTable no seguro en un tipo serializable puede ser vulnerable a ataques de ejecución de código remoto'
+                  href: ca2352.md
+                - name: 'CA2353: Objeto DataSet o DataTable no seguro en un tipo serializable'
+                  href: ca2353.md
+                - name: 'CA2354: Un objeto DataSet o DataTable no seguro en un gráfico de objetos deserializado puede ser vulnerable a ataques de ejecución de código remoto'
+                  href: ca2354.md
+                - name: 'CA2355: Objeto DataSet o DataTable no seguro en un gráfico de objetos deserializado'
+                  href: ca2355.md
+                - name: 'CA2356: Tipo DataTable o DataSet no seguro en un gráfico de objetos deserializado web'
+                  href: ca2356.md
                 - name: 'CA2330: Asegurarse de que la configuración de JsonSerializer es segura al deserializar'
                   href: ca2330.md
                 - name: 'CA3001: Revisión de código en busca de vulnerabilidades de inyección de SQL'
