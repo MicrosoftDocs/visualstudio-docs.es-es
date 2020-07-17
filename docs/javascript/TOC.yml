@@ -1,6 +1,6 @@
 - name: JavaScript y TypeScript
   href: index.yml
-- name: Información general
+- name: Introducción
   items:
     - name: JavaScript en Visual Studio 2019
       href: javascript-in-vs-2019.md

@@ -10,12 +10,12 @@
       href: tutorial-projects-solutions.md
     - name: Más características de Visual Studio
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-- name: Creación de una aplicación
+- name: Cree una aplicación
   expanded: true
   items:
-    - name: Creación de una aplicación de consola
+    - name: Crear una aplicación de consola
       href: tutorial-console.md
-    - name: Creación de una aplicación para UWP
+    - name: Creación de una aplicación UWP
       href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Crear una aplicación WPF
       href: tutorial-wpf.md
@@ -30,13 +30,13 @@
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Escribir y editar código
       href: tutorial-editor.md
-    - name: Compilación y creación
+    - name: Compilar y generar
       href: ../../ide/compiling-and-building-in-visual-studio.md
-    - name: Depuración del código
+    - name: Depurar el código
       href: ../visual-basic/tutorial-debugger.md
     - name: Pruebas unitarias
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Implementación del proyecto
+    - name: Implementar el proyecto
       href: ../../deployment/index.yml
-    - name: Acceso a los datos
+    - name: Acceder a datos
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

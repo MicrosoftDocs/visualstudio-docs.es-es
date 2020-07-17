@@ -16,7 +16,7 @@
       href: installing-python-interpreters.md
 - name: Guías de inicio rápido
   items:
-    - name: Crear una aplicación web con Flask
+    - name: Creación de una aplicación web con Flask
       href: ../ide/quickstart-python.md
       maintainContext: true
     - name: Creación de un proyecto a partir de una plantilla
@@ -57,7 +57,7 @@
           href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
         - name: 4. Usar la plantilla de proyecto web de Django
           href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-        - name: 5 - Autenticación de usuarios
+        - name: 5. Autenticar usuarios
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6. Usar la plantilla de proyecto web de Django de sondeos
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
@@ -87,7 +87,7 @@
           href: python-azure-cloud-service-project-template.md
     - name: SDK de Azure para Python
       href: /python/azure/?view=azure-python
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Administración de entornos de Python
       items:

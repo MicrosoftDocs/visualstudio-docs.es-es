@@ -25,7 +25,7 @@
 #### [BaseClass](baseclass.md)
 #### [BaseType](basetype.md)
 #### [CustomType](customtype.md)
-#### [Dimension](dimension.md)
+#### [Dimensión](dimension.md)
 #### [Enumeración (Debug Interface Access SDK)](enum-debug-interface-access-sdk.md)
 #### [Friend (Debug Interface Access SDK)](friend-debug-interface-access-sdk.md)
 #### [FunctionArgType](functionargtype.md)
