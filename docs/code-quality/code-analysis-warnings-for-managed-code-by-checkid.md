@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,12 +291,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835438"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454194"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -460,6 +461,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1832 |[CA1832: Usar AsSpan o AsMemory en lugar de indizadores basados en intervalos para obtener la parte ReadOnlySpan o ReadOnlyMemory de una matriz](../code-quality/ca1832.md) | Cuando se usa un indexador de intervalo en una matriz y se asigna implícitamente el valor a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, se utilizará el método en <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> lugar de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que genera una copia de la parte solicitada de la matriz. |
 | CA1833 |[CA1833: Usar AsSpan o AsMemory en lugar de indizadores basados en intervalos para obtener la parte Span o Memory de una matriz](../code-quality/ca1833.md) | Cuando se usa un indexador de intervalo en una matriz y se asigna implícitamente el valor a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, se utilizará el método en <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> lugar de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que genera una copia de la parte solicitada de la matriz. |
 | CA1835 |[CA1835: preferir las sobrecargas basadas en Memory' para ' ReadAsync ' y ' WriteAsync '](../code-quality/ca1835.md) | ' Stream ' tiene una sobrecarga ' ReadAsync ' que toma un ' byte de memoria &lt; &gt; ' como primer argumento y una sobrecarga ' WriteAsync ' que toma un ' ReadOnlyMemory &lt; byte &gt; ' como primer argumento. Prefiera llamar a las sobrecargas basadas en memoria, que son más eficaces. |
+| CA1836 |[CA1836: preferir `IsEmpty` `Count` cuando esté disponible](../code-quality/ca1836.md) | Propiedad preferida `IsEmpty` que es más eficaz `Count` que `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> para determinar si el objeto contiene o no elementos. |
 | CA1900 | [CA1900: Los campos de tipo de valor deben ser portátiles](../code-quality/ca1900.md) | Esta regla comprueba que las estructuras declaradas mediante un atributo de diseño explícito se alinearán correctamente cuando se calculen las referencias al código no administrado en sistemas operativos de 64 bits. |
 | CA1901 | [CA1901: las declaraciones P/Invoke deben ser portátiles](../code-quality/ca1901.md) | Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke, y comprueba que el tamaño del parámetro sea correcto al serializar para su conversión en código no administrado en sistemas operativos de 32 y 64 bits. |
 | CA1903 | [CA1903: Usar solo API de la versión de .NET Framework de destino](../code-quality/ca1903.md) | Un miembro o tipo utiliza un miembro o tipo que se introdujo en un Service Pack no incluido junto con la versión de .NET Framework de destino del proyecto. |

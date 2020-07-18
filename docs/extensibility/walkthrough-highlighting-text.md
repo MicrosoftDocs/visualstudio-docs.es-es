@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904723"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418060"
 ---
 # <a name="walkthrough-highlight-text"></a>Tutorial: resaltar texto
 Puede agregar diferentes efectos visuales al editor creando partes de componentes Managed Extensibility Framework (MEF). En este tutorial se muestra cómo resaltar cada aparición de la palabra actual en un archivo de texto. Si una palabra se produce más de una vez en un archivo de texto y coloca el símbolo de intercalación en una aparición, se resalta cada aparición.
@@ -104,7 +104,7 @@ Puede agregar diferentes efectos visuales al editor creando partes de componente
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;
@@ -405,5 +405,5 @@ Puede agregar diferentes efectos visuales al editor creando partes de componente
 
 4. Coloque el cursor en una de las apariciones de "Hello". Cada aparición debe aparecer resaltada en azul.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Tutorial: vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

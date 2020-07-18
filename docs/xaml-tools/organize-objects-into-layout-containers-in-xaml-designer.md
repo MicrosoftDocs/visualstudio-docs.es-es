@@ -1,17 +1,17 @@
 ---
 title: Organizar objetos en contenedores de diseño en el Diseñador XAML
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921110"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459299"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 
@@ -98,8 +98,6 @@ Permita que los usuarios se desplacen hacia abajo en una página o parte de una 
 ### <a name="viewbox"></a>Viewbox
 
 Escale objetos igual que haría con un control de zoom. Solo puede agregar un objeto a un elemento **Viewbox**. Si quiere aplicar ese efecto a más de un objeto, agregue un panel de diseño al control **ViewBox** y, después, agregue los controles a dicho panel de diseño.
-
-(Disponible solo para proyectos de WPF).
 
 ![Control de diseño ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
