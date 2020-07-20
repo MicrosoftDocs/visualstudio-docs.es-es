@@ -1,18 +1,18 @@
 ---
 title: Instalar marcos de prueba unitaria de terceros
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286978"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387192"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalación de marcos de pruebas unitarias
 
@@ -20,7 +20,12 @@ El Explorador de pruebas de Visual Studio puede ejecutar pruebas de cualquier m
 
 Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas.
 
+::: moniker range=">=vs-2019"
+En .NET, [MSTest, NUnit y xUnit](getting-started-with-unit-testing.md) son los marcos de pruebas proporcionados por Visual Studio que se instalan de forma predeterminada.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) es el marco de pruebas que ofrece Visual Studio y está instalado de forma predeterminada.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Adquisición de marcos de trabajo
 

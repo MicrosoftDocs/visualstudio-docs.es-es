@@ -6,13 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
+no-loc:
+- Blazor
+- Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 5e9eb15ee006ba23328c53511263724140bca1f9
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939030"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211652"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -36,8 +39,8 @@ Hay una serie de proyectos que le proporcionarán una plantilla predefinida para
 - **.NET Core > API**
 - **.NET Core > Aplicación web**
 - **.NET Core > Aplicación web (Modelo-Vista-Controlador)**
-- **.NET Core > Aplicación de servidor Blazor**
-- **.NET Core > Aplicación WebAssembly de Blazor**
+- **.NET Core > Aplicación de servidor Blazor**
+- **.NET Core > Aplicación Blazor WebAssembly**
 
 ![Opciones de proyecto de ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 

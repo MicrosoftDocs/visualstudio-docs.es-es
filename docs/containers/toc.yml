@@ -4,23 +4,21 @@
   items:
     - name: Información general
       href: overview.md
-    - name: Guía de inicio rápido
+    - name: Inicio rápido
       expanded: true
       items:
         - name: Aplicación ASP.NET en un contenedor
           href: container-tools.md
         - name: Aplicación React.js de página única en un contenedor
           href: container-tools-react.md
-        - name: "Desarrollo de Kubernetes con Azure\_Dev\_Spaces >>"
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Desarrollo de Kubernetes
+          href: local-process-kubernetes.md
     - name: Tutoriales
       expanded: true
       items:
         - name: Aplicación de varios contenedor con Docker Compose
           href: tutorial-multicontainer.md
-        - name: Kubernetes en Visual Studio
-          href: tutorial-kubernetes-tools.md
-    - name: Procedimientos
+    - name: Cómo
       items:
         - name: Depuración de aplicaciones en un contenedor de Docker local
           href: edit-and-refresh.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: Configuración de inicio
           href: container-launch-settings.md
+- name: Desarrollo con Kubernetes
+  items:
+    - name: Kubernetes en Visual Studio
+      href: tutorial-kubernetes-tools.md
+    - name: Proceso local con Kubernetes (versión preliminar)
+      href: local-process-kubernetes.md
+    - name: Funcionamiento de Proceso local con Kubernetes (versión preliminar)
+      href: overview-local-process-kubernetes.md

@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74955041"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386854"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -108,11 +108,11 @@ Roaming Extension Manager realiza un seguimiento de todas las extensiones que in
 
 Cuando use Roaming Extension Manager, verá tres tipos de icono en la lista:
 
-* ![Icono de extensión con perfil itinerante](media/vs2017ide-roamedicon.png) **_Extensión con perfil itinerante_** : una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
+* ![Icono de extensión con perfil itinerante](media/vs2017ide-roamedicon.png) **_Extensión con perfil itinerante_**: una extensión que forma parte de esta lista de itinerancia, pero que no está instalada en el equipo.
   (Puede instalarlas mediante el botón **Descargar**).
-* ![Icono de extensión con perfil itinerante e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión con perfil itinerante e instalada_** : todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
+* ![Icono de extensión con perfil itinerante e instalada](media/vs2017ide-roamedinstalledicon.png) **_Extensión con perfil itinerante e instalada_**: todas las extensiones que forman parte de la lista Itinerancia y están instaladas en el entorno de desarrollo.
   (Si decide que no quiere usar un perfil itinerante, puede quitarlas mediante el botón **Detener itinerancia**).
-* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_** : todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
+* ![Icono de extensión instalada](media/vs2017ide-installedicon.png) **_Extensión instalada_**: todas las extensiones que están instaladas en este entorno, pero que no forman parte de la lista Itinerancia.
   (Puede agregar extensiones a la lista de itinerancia mediante el botón **Iniciar itinerancia**).
 
 Todas las extensiones que descargue con la sesión iniciada se agregan a la lista como **Extensión con perfil itinerante e instalada**. La extensión pasa a formar parte de la lista Itinerancia, que le proporciona acceso a ella desde cualquier equipo.
@@ -381,7 +381,7 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obte
 
 ### <a name="report-a-problem"></a>Notificar un problema
 
-A veces, un mensaje no es suficiente para transmitir el impacto completo de un problema que ha detectado. Si experimenta un bloqueo u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares (como capturas de pantalla y archivos de seguimiento y volcado del montón) con nosotros mediante la herramienta **Notificar un problema**. Para obtener más información sobre cómo usar esta herramienta, vea la página [Cómo notificar un problema](how-to-report-a-problem-with-visual-studio.md).
+A veces, un mensaje no es suficiente para transmitir el impacto completo de un problema que ha detectado. Si experimenta un problema por el cual Visual Studio deja de responder o se bloquea, u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares (como capturas de pantalla y archivos de seguimiento y volcado del montón) con nosotros por medio de la herramienta **Notificar un problema**. Para obtener más información sobre cómo usar esta herramienta, vea la página [Cómo notificar un problema](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

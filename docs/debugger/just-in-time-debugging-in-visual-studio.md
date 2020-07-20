@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903870"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386126"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Deshabilitar el depurador Just-In-Time
 
@@ -43,4 +43,4 @@ Si no tiene instalado Visual Studio, puede impedir la depuración Just-in-Time 
 
 Después de deshabilitar la depuración Just-in-Time, la aplicación puede ser capaz de controlar el error y ejecutarse con normalidad.
 
-Si la aplicación todavía presenta un error no controlado, puede ser que vea un mensaje de error o que la aplicación se bloquee o no responda. La aplicación no se ejecutará con normalidad hasta que se corrija el error. Puede intentar contactar con el propietario de la aplicación y pedirle que la corrija.
+Si la aplicación todavía presenta un error no controlado, puede ser que vea un mensaje de error o que la aplicación se bloquee o deje de responder. La aplicación no se ejecutará con normalidad hasta que se corrija el error. Puede intentar contactar con el propietario de la aplicación y pedirle que la corrija.

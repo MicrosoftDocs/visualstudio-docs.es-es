@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815063"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386269"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -50,7 +50,7 @@ Esto debería resolver el problema. En caso de que siga experimentando el proble
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio deja de responder
+## <a name="visual-studio-stops-responding"></a>Visual Studio deja de responder
 
 Varios complementos de Unity, por ejemplo, Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usan subprocesos nativos. Resulta problemático cuando un complemento acaba de asociar un subproceso nativo al runtime, que luego realiza llamadas de bloqueo al sistema operativo. Esto significa que Unity no puede interrumpir ese subproceso del depurador (o recarga del dominio) y deja de responder.
 

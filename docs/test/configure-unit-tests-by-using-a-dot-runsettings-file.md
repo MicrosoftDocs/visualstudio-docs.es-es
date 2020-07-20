@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288772"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211602"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -67,7 +67,7 @@ Hay tres formas de especificar un archivo de parámetros de ejecución en la ver
     </Project>
     ```
 
-- Coloque un archivo de parámetros de ejecución denominado ".runsettings" en la raíz de la solución.
+- Coloque un archivo de parámetros de ejecución denominado *.runsettings* en la raíz de la solución.
 
   Si está habilitada la detección automática de archivos de parámetros de ejecución, la configuración de este archivo se aplica a todas las pruebas ejecutadas. Puede activar la detección automática de archivos runsettings desde dos lugares:
   
@@ -205,6 +205,11 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ El recopilador de datos de vídeo captura una grabación de pantalla cuando se e
 
 Para personalizar cualquier otro tipo de adaptador de datos de diagnóstico, use un [archivo de configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Recopilador de datos de Blame
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Esta opción puede ayudarle a aislar una prueba problemática que hace que el host de prueba se bloquee. Al ejecutar el recopilador, se crea un archivo de salida (*Sequence.xml*) en *TestResults*, donde se captura el orden de ejecución de la prueba antes del bloqueo. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ Para usar parámetros de serie de pruebas, agregue un campo <xref:Microsoft.Visu
   </LoggerRunSettings>
 ```
 
-En la sección `LoggerRunSettings` se define uno o varios registradores para la ejecución de pruebas. Los registradores más comunes son console, trx y html. 
+En la sección `LoggerRunSettings` se definen uno o varios registradores para la ejecución de pruebas. Los registradores más comunes son console, trx y html. 
 
 ### <a name="mstest-run-settings"></a>Parámetros de ejecución de MSTest
 
@@ -386,6 +402,33 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
 |**MapInconclusiveToFailed**|False|Si una prueba finaliza un estado no concluyente, se le asigna el estado Omitido en el **Explorador de pruebas**. Si quiere que las pruebas no concluyentes se muestren como Error, establezca el valor en **true**.|
 |**InProcMode**|False|Si quiere que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en **true**. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no se ejecutarán.|
 |**AssemblyResolution**|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias. Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no estén en el mismo directorio que el ensamblado de pruebas. Para especificar una ruta de acceso, use un elemento **Directory Path**. Las rutas de acceso pueden incluir variables de entorno.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Especificación de variables de entorno en el archivo *.runsettings*
+
+Las variables de entorno se pueden establecer en el archivo *.runsettings*, que puede interactuar directamente con el host de prueba. Especificar variables de entorno en el archivo *.runsettings* es necesario para admitir proyectos no triviales que requieren configurar variables de entorno como, por ejemplo, *DOTNET_ROOT*. Estas variables se establecen al generar el proceso del host de prueba, y están disponibles en el host.
+
+### <a name="example"></a>Ejemplo
+
+El siguiente código es un archivo *.runsettings* de ejemplo que pasa variables de entorno:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+El nodo **RunConfiguration** debe contener un nodo **EnvironmentVariables**. Una variable de entorno se puede especificar como un nombre de elemento y su valor.
+
+> [!NOTE]
+> Dado que estas variables de entorno siempre deben estar establecidas cuando el host de prueba se inicia, las pruebas siempre deben ejecutarse en un proceso independiente. Para ello, se establecerá la marca */InIsolation* cuando haya variables de entorno, para que el host de prueba siempre se invoque.
 
 ## <a name="see-also"></a>Vea también
 

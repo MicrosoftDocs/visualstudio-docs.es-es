@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540873"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386990"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para proyectos de Python
 
@@ -384,7 +384,7 @@ Indica que el contenido de los elementos `<Target>` o `<CreatePythonCommandItem>
 
 Los valores de atributo pueden estar vacíos si se hace referencia a una propiedad que no está definida. Por ejemplo, si usa el token `$(StartupFile)`, pero no ha definido ningún archivo de inicio en el proyecto, el token se resuelve como una cadena vacía. En tales casos, conviene definir un valor predeterminado. Por ejemplo, los comandos **Iniciar servidor** e **Iniciar el servidor de depuración** definidos en las plantillas de proyecto de Bottle, Flask y Django se establecen de forma predeterminada en *manage.py* si no se ha especificado un archivo de inicio del servidor en las propiedades del proyecto.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Visual Studio se bloquea cuando el comando se ejecuta
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio deja de responder cuando el comando se ejecuta
 
 Probablemente esté intentando ejecutar un comando de consola con `ExecuteIn="output"`, en cuyo caso Visual Studio se puede bloquear al intentar analizar la salida. Utilice `ExecuteIn="console"` en su lugar. (Vea el [problema 3682](https://github.com/Microsoft/PTVS/issues/3681)).
 

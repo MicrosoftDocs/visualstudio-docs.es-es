@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183059"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387153"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 
@@ -44,7 +44,7 @@ Independientemente de cuántas competencias obtenga un asociado, el número de s
 
 | Ventaja máxima para partners con competencias solo Silver                   | Ventaja máxima para partners con al menos una competencia Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 suscripciones de Visual Studio Enterprise por país; 75 en todo el mundo          | 50 suscripciones de Visual Studio Enterprise por país; 150 en todo el mundo         |
+| 25 suscripciones de Visual Studio Enterprise por país o región; 75 en todo el mundo          | 50 suscripciones de Visual Studio Enterprise por país o región; 150 en todo el mundo         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Suscripciones para partners que adquieren el Action Pack
 

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906031"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211613"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -40,7 +40,7 @@ Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/r
 
 4. Seleccione el número de suscripciones que va a comprar.
     > [!div class="mx-imgBorder"]
-    > ![Seleccionar número de suscripciones](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Seleccionar número de suscripciones](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Seleccione del número de suscripciones que comprar.")
 
     Si no quiere que se le asignen las suscripciones, desactive **Asignarme esta suscripción**.
 
@@ -62,12 +62,18 @@ Si ha adquirido varias suscripciones, vaya al [portal de administración de susc
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Cancelar la renovación de las suscripciones de nube adquiridas
 
-* Para cambiar el número de suscripciones compradas:
+Para cancelar suscripciones, solo tiene que establecer el número de suscripciones de su acuerdo en cero (0).  Siga estos pasos para reducir el número de suscripciones:
+1. Inicie sesión en <https://manage.visualstudio.com>.
+1. Si tiene más de un acuerdo, elija el que quiera de la lista desplegable.
+1. Haga clic en el icono de **información general** en la parte superior izquierda para ver información sobre las suscripciones.  
+> [!div class="mx-imgBorder"]
+> ![Visualización de la información general de la suscripción](_img/buy-vs-subscriptions/overview-button.png "Haga clic en el botón de información general para ver los detalles de la suscripción.")
+
+4. Busque la entrada de las suscripciones que quiera cancelar y haga clic en **Cambiar cantidad**.
+1. Establezca la cantidad en cero (0). Las suscripciones seguirán existiendo hasta la fecha de facturación prevista, pero cuando se alcance esa fecha, no se renovarán.   
 
 > [!div class="mx-imgBorder"]
-> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Para cancelar estas suscripciones, reduzca el número de suscripciones a cero (0). No se renovarán al principio del siguiente período de facturación (el primer día del siguiente mes en el caso de las suscripciones de nube mensuales; 12 meses más adelante en el caso de las suscripciones anuales de nube).
+> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png "Haga clic en "Cambiar cantidad" para cancelar suscripciones.")
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

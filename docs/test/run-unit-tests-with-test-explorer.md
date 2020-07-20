@@ -1,7 +1,7 @@
 ---
-title: Ejecución y depuración de pruebas unitarias con el Explorador de pruebas
-description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción, depurar las pruebas y usar métodos abreviados de pruebas.
-ms.date: 07/29/2019
+title: Ejecutar pruebas unitarias con el Explorador de pruebas
+description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción y usar métodos abreviados de pruebas.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285639"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386646"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
-Use el Explorador de pruebas para ejecutar pruebas unitarias en proyectos de Visual Studio o de terceros. También puede usar el Explorador de pruebas para agrupar las pruebas en categorías, filtrar la lista de pruebas y crear, guardar y ejecutar listas de reproducción de pruebas. Puede depurar las pruebas y analizar la cobertura de código y el rendimiento de la prueba.
+Use el Explorador de pruebas para ejecutar pruebas unitarias en proyectos de Visual Studio o de terceros. También puede usar el Explorador de pruebas para agrupar las pruebas en categorías, filtrar la lista de pruebas y crear, guardar y ejecutar listas de reproducción de pruebas. También puede analizar la cobertura de código y [depurar pruebas unitarias](../test/debug-unit-tests-with-test-explorer.md).
+
+El **Explorador de pruebas** puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. En los proyectos de prueba pueden usarse marcos de pruebas unitarias diferentes. Cuando el código sometido a prueba está escrito para .NET, el proyecto de prueba puede escribirse en cualquier lenguaje que también tenga .NET como destino, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++.
+
+## <a name="build-your-test-project"></a>Compilación del proyecto de prueba
+
+Si aún no tiene un proyecto de prueba configurado en la solución de Visual Studio, deberá crearlo y compilarlo en primer lugar.
+
+- [Introducción a las pruebas unitarias (.NET)](../test/getting-started-with-unit-testing.md)
+- [Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio incluye los marcos de pruebas unitarias de Microsoft para código administrado y nativo. No obstante, el Explorador de pruebas también puede ejecutar cualquier marco de pruebas unitarias que haya implementado un adaptador de este explorador. Para más información sobre cómo instalar los marcos de pruebas unitarias de terceros, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
-El **Explorador de pruebas** puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. En los proyectos de prueba pueden usarse marcos de pruebas unitarias diferentes. Cuando el código sometido a prueba está escrito para .NET, el proyecto de prueba puede escribirse en cualquier lenguaje que también tenga .NET como destino, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++. Para más información, vea [Escribir pruebas unitarias para C/C++ en Visual Studio](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Ejecutar pruebas en Explorador de pruebas
 
-Al [compilar el proyecto de prueba](../test/getting-started-with-unit-testing.md), las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
+Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
 ::: moniker range="vs-2017"
 ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
@@ -211,11 +218,21 @@ Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. 
 
 La lista de reproducción en una nueva pestaña del Explorador de pruebas. Puede usar esta lista de reproducción una vez y luego descartarla, o bien puede hacer clic en el botón **Guardar** en la barra de herramientas de la ventana de la lista de reproducción y, luego, seleccione un nombre y una ubicación para guardar la lista de reproducción.
 
-![La lista de reproducción se abre en una nueva pestaña del Explorador de pruebas](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![La lista de reproducción se abre en una nueva pestaña del Explorador de pruebas](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 **Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. Haga clic con el botón derecho y elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**.
 
 **Para abrir una lista de reproducción**, elija el icono de lista de reproducción en la barra de herramientas de Visual Studio y seleccione un archivo de lista de reproducción guardado anteriormente desde el menú.
+
+**Para editar una lista de reproducción**, puede hacer clic con el botón derecho en cualquier prueba y usar las opciones de menú para agregar o quitar esa prueba de una lista de reproducción.
+
+A partir de la versión 16.7 de Visual Studio 2019, puede elegir el botón **Editar** en la barra de herramientas. Aparecerán casillas junto a las pruebas para reflejar qué pruebas están incluidas y excluidas en la lista de reproducción. Edite los grupos según sea necesario.
+
+![Botón Editar lista de reproducción](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+También puede activar o desactivar las casillas de los grupos primarios de la jerarquía. Esta acción crea una lista de reproducción dinámica que siempre actualiza la lista de reproducción en función de las pruebas que haya en ese grupo. Por ejemplo, si coloca una marca de verificación junto a una clase, cualquier prueba que se agregue desde esa clase pasará a formar parte de esta lista de reproducción. Si elimina una prueba de esa clase, se quitará de la lista de reproducción. Para obtener más información sobre las reglas, guarde la lista de reproducción con el botón Guardar de la barra de herramientas y abra el archivo *.playlist* que se ha creado en el disco. En este archivo se enumeran todas las reglas y pruebas individuales que componen una lista de reproducción.
+
+![Archivo XML de lista de reproducción](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -294,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Por ejemplo, `FullName:"MyClass" - FullName:"PerfTest"` devuelve todas las pruebas que incluyen "MyClass" en el nombre, excepto las que también incluyan "PerfTest".
 
-## <a name="debug-and-analyze-unit-tests"></a>Depurar y analizar pruebas unitarias
-
-Se puede usar el Explorador de pruebas para iniciar una sesión de depuración para las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
-
-1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
-
-    > [!NOTE]
-    > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
-
-2. En el Explorador de pruebas, seleccione los métodos de prueba y seleccione **Depurar pruebas seleccionadas** en el menú contextual.
-
-   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de rendimiento del método de prueba
-
-Para diagnosticar por qué tarda demasiado un método de prueba, selecciónelo en el Explorador de pruebas y, luego, elija **Profile Selected Test** (Prueba seleccionada de perfil) en el menú contextual. Vea [Informe de generación de perfiles de instrumentación](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analizar la cobertura de código de prueba unitaria
 
 Es posible determinar la cantidad de código de producto que las pruebas unitarias están probando realmente con la herramienta de cobertura de código de Visual Studio, disponible en la edición Visual Studio Enterprise. La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución.
@@ -341,7 +341,7 @@ Para obtener más información, vea [Usar cobertura de código para determinar l
 
 ## <a name="test-shortcuts"></a>Métodos abreviados de pruebas
 
-Para ejecutar las pruebas desde el Explorador de pruebas, haga clic con el botón derecho en una prueba en el editor de código y seleccione **Ejecutar prueba**; o use los [métodos abreviados del Explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predeterminados en Visual Studio. Algunos de los métodos abreviados dependen del contexto. Esto significa que ejecutan o depuran las pruebas en función de la posición del cursor en el editor de código. Si el cursor está dentro de un método de prueba, se ejecuta ese método de prueba. Si el cursor está en el nivel de clase, se ejecutan todas las pruebas de esa clase. Lo mismo sucede en el nivel de espacio de nombres.
+Para ejecutar las pruebas desde el Explorador de pruebas, haga clic con el botón derecho en una prueba en el editor de código y seleccione **Ejecutar prueba**; o use los [métodos abreviados del Explorador de pruebas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predeterminados en Visual Studio. Algunos de los métodos abreviados dependen del contexto. Esto significa que ejecutan o [depuran pruebas](../test/debug-unit-tests-with-test-explorer.md) en función de la posición del cursor en el editor de código. Si el cursor está dentro de un método de prueba, se ejecuta ese método de prueba. Si el cursor está en el nivel de clase, se ejecutan todas las pruebas de esa clase. Lo mismo sucede en el nivel de espacio de nombres.
 
 |Comandos más frecuentes| Métodos abreviados de teclado|
 |-|------------------------|
@@ -356,5 +356,6 @@ Para ejecutar las pruebas desde el Explorador de pruebas, haga clic con el botó
 ## <a name="see-also"></a>Vea también
 
 - [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+- [Depurar pruebas unitarias con el Explorador de pruebas](../test/debug-unit-tests-with-test-explorer.md)
 - [Ejecutar una prueba unitaria como un proceso de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Preguntas más frecuentes sobre el Explorador de pruebas](test-explorer-faq.md)

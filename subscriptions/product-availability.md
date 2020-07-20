@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtenga más información sobre la disponibilidad de productos en descargas de software para suscripciones de Visual Studio
-ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232301"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387218"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidad de productos para descargas de software en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -27,7 +27,7 @@ Son varios los motivos por los que algunos productos no pueden estar disponibles
 - **El producto no está incluido en suscripciones.** Algunos productos de Microsoft no están incluidos en suscripciones debido a términos especiales de licencias, restricciones técnicas o relevancia del desarrollador. Si quiere sugerir que un producto se agregue a la suscripción, envíe un correo electrónico al Centro de [atención al cliente](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 - **El producto se encuentra disponible al público.** Algunas herramientas, SDK, DDK y Service Pack están disponibles para el público en el [Centro de descarga de Microsoft](https://www.microsoft.com/download). Es posible que algunos productos de este tipo no se publiquen en Descargas.
 - **El producto aún no se ha lanzado.**  Muchas versiones preliminares (beta) y candidatos de versión comercial están disponibles en Descargas, pero no se pueden incluir todas las versiones beta, ya que algunas de ellas tienen requisitos especiales de registro o elegibilidad. Para más información sobre programas técnicos beta, visite [Microsoft Connect](https://connect.microsoft.com/).
-- **Este producto no está disponible en su país.** Algunos productos de Microsoft no están disponibles debido a restricciones regionales.
+- **Este producto no está disponible en su país o región.** Algunos productos de Microsoft no están disponibles debido a restricciones regionales.
 - **Software redundante.** Las claves de producto y descargas del conjunto de aplicaciones de Office seleccionado y de los productos independientes de Office ya no están disponibles en las suscripciones que incluyen Office. Las claves de producto y descargas están disponibles para la misma versión de la serie Office más actualizada correspondiente.  Por ejemplo, si busca PowerPoint 2010, la búsqueda no arrojará ningún resultado.  Sin embargo, puede buscar Office 2010 (que es el conjunto de Office que contenía PowerPoint 2010) y descargar el conjunto.
 
 ## <a name="what-do-i-get"></a>¿Qué se obtiene?
@@ -38,7 +38,7 @@ El número y tipo de descargas dependen del nivel de la suscripción y las inscr
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)

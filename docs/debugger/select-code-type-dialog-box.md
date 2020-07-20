@@ -15,18 +15,20 @@ helpviewer_keywords:
 - debugging [Visual Studio], engine selection
 - debugger, engine selection
 - debugging engine selection dialog box
+no-loc:
+- Blazor WebAssembly
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285431"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211583"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
 
@@ -37,7 +39,7 @@ Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proc
 **Depurar estos tipos de código:** En la lista proporcionada, elija el tipo de código que desee depurar. Esto puede ser útil cuando se [soluciona un error al asociar](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Esta opción restringe la detección solo a los tipos de código que desea depurar.
 
    ::: moniker range=">=vs-2019"
-   - WebAssembly de Blazor: WebAssembly de Blazor del lado cliente
+   - Blazor WebAssembly: Blazor WebAssembly del lado cliente
    - GPU (emulador de software): código de C++ que se ejecuta en un emulador de software de GPU
    - JavaScript (Chrome): JavaScript que se ejecuta en Chrome
    - JavaScript (Microsoft Edge - Chromium): JavaScript que se ejecuta en Microsoft Edge basado en Chromium para Windows 10

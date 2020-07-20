@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769931"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387322"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Cómo notificar un problema con Visual Studio o con el Instalador de Visual Studio
 
@@ -69,7 +69,7 @@ Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a dia
 
 1. Haga clic en la pestaña **Grabar**.
 
-1. Si puede reproducir el problema en Visual Studio, seleccione la instancia actual en **Grabar sus acciones**. Si no puede, por ejemplo, en el caso de que Visual Studio esté bloqueado, seleccione **\<Create a new instance>** para grabar las acciones en una instancia nueva de Visual Studio.
+1. Si puede reproducir el problema en Visual Studio, seleccione la instancia actual en **Grabar sus acciones**. Si no puede (por ejemplo, porque Visual Studio haya dejado de responder), seleccione **\<Create a new instance>** para grabar las acciones en una instancia nueva de Visual Studio.
 
 1. Seleccione **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 

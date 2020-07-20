@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 611e723edbf1abf46d6b4466e3f8f163058ada47
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 43583c3e147c7c036e28670c153c9520e02ef232
+  ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "75400730"
+  ms.lasthandoff: 07/17/2020
+  ms.locfileid: "86454207"
 landingContent:
 - title: Herramientas de contenedor
   linkLists:
@@ -75,3 +75,17 @@ landingContent:
       url: docker-compose-properties.md
     - text: Configuración de las herramientas de contenedor
       url: container-tools-configure.md
+- title: Desarrollo de Kubernetes
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio Tools para Kubernetes
+      url: tutorial-kubernetes-tools.md
+  - linkListType: quickstart
+    links:
+    - text: Uso de Proceso local con Kubernetes con Visual Studio
+      url: local-process-kubernetes.md
+  - linkListType: overview
+    links:
+    - text: Funcionamiento de Proceso local con Kubernetes
+      url: overview-local-process-kubernetes.md

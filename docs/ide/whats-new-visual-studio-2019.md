@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5058e0f1fabbf834a1adfb20d4f3a9a11094f5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283598"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387049"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -220,7 +220,7 @@ Actualizamos Visual Studio 2019 a menudo con nuevas características que pueden 
 
 * Si quiere hacer una sugerencia sobre cómo se puede mejorar Visual Studio, puede hacerlo mediante la herramienta [Sugerir una característica](suggest-a-feature.md).
 
-* Si experimenta un bloqueo u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares con nosotros mediante la herramienta [Notificar un problema](how-to-report-a-problem-with-visual-studio.md).
+* Si experimenta un problema por el cual Visual Studio deja de responder o se bloquea, u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares con nosotros por medio de la herramienta [Notificar un problema](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

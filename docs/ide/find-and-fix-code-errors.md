@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77476870"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386737"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -120,7 +120,7 @@ Ahora que ha compilado el código correctamente y ha realizado un poco de limpie
 
 Detenga la aplicación presionando **Mayús**+**F5** o haciendo clic en el botón **Detener**. O bien, simplemente cierre la ventana principal de la aplicación (o el cuadro de diálogo de línea de comandos).
 
-Si el código se ejecuta perfectamente y tal y como se esperaba, ¡enhorabuena! En cambio, si ha dejado de responder o se ha bloqueado, o dio resultados extraños, necesitará encontrar el origen de esos problemas y corregir los errores.
+Si el código se ejecuta perfectamente y tal y como se esperaba, ¡enhorabuena! En cambio, si ha dejado de responder, se ha bloqueado o dio resultados extraños, necesitará encontrar el origen de esos problemas y corregir los errores.
 
 ### <a name="set-simple-breakpoints"></a>Establecer puntos de interrupción simples
 
@@ -132,7 +132,7 @@ Para establecer un punto de interrupción, haga clic en el margen más alejado d
 
 Entre los usos habituales de los puntos de interrupción se incluyen:
 
-- Para reducir el origen de un bloqueo, disperse los puntos de interrupción por todo el código de la llamada a métodos que crea que está causando el error. Mientras ejecuta el código en el depurador, quite y restablezca los puntos de interrupción más próximos entre sí hasta que encuentre la línea de código incorrecta. Vea la sección siguiente para obtener información sobre cómo ejecutar código en el depurador.
+- Para acotar el origen de un bloqueo o de un programa que no responde, disperse los puntos de interrupción por todo el código de la llamada a métodos que crea que está causando el error. Mientras ejecuta el código en el depurador, quite y restablezca los puntos de interrupción más próximos entre sí hasta que encuentre la línea de código incorrecta. Vea la sección siguiente para obtener información sobre cómo ejecutar código en el depurador.
 
 - Cuando introduzca código nuevo, establezca un punto de interrupción al inicio del mismo y ejecute el código para asegurarse de que se comporta tal y como se espera.
 

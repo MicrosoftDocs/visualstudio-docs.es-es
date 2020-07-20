@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541159"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387036"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -253,7 +253,7 @@ Los pasos siguientes habilitan la depuración en la sesión actual de Visual Stu
 
     ![Salida de registro del depurador en la ventana Salida](media/debugger-logging-output.png)
 
-1. Si Visual Studio se bloquea o usted no es capaz de acceder a la ventana **Salida**, reinicie Visual Studio, abra una ventana de comandos y escriba el siguiente comando:
+1. Si Visual Studio deja de responder o le resulta imposible acceder a la ventana **Salida**, reinicie Visual Studio, abra una ventana de comandos y escriba el siguiente comando:
 
     ```ps
     DebugAdapterHost.Logging /On

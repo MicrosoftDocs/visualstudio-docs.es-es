@@ -1,18 +1,18 @@
 ---
 title: Acción rápida Generación de un constructor
-ms.date: 01/26/2018
+ms.date: 07/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306792"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285423"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -22,21 +22,22 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar el código de inmediato para un nuevo constructor en una clase.
+**Qué:** Permite generar el código de inmediato para un nuevo constructor en una clase.
 
-**Cuándo:** Introduce un nuevo constructor y desea declararlo adecuadamente de manera automática, o modifica un constructor existente.
+**Cuándo:** Se inserta un nuevo constructor y se quiere declarar adecuadamente de manera automática, o se modifica un constructor existente.
 
-**Por qué:** Podría declarar el constructor antes de usarlo; sin embargo, esta característica lo generará, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
+**Por qué:** Se podría declarar el constructor antes de usarlo, aunque esta característica lo genera, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
 
-**Cómo:** Hay varias maneras de generar un constructor:
+**Cómo**: Hay varias maneras de generar un constructor:
 
 - [Generación de constructor y selección de miembros](#pick)
+- [Generación de un constructor con propiedades](#with)
 - [Generación de constructor a partir de campos seleccionados](#selection)
 - [Generación de constructor a partir de nuevo uso](#usage)
 - [Adición de parámetro a constructor existente](#addparameter)
 - [Creación e inicialización de campo/propiedad a partir de un parámetro de constructor](#create)
 
-## <a id = "pick"></a> Generación de constructor y selección de miembros (solo C#)
+## <a name="generate-constructor-and-pick-members-c-only"></a><a id = "pick"></a> Generación de constructor y selección de miembros (solo C#)
 
 1. Coloque el cursor en cualquier línea vacía de una clase:
 
@@ -67,7 +68,17 @@ Esta generación de código se aplica a:
 
    ![Resultado de la generación de constructor](media/constructor1-result-cs.png)
 
-## <a id="selection"></a> Generación de constructor a partir de campos seleccionados (solo C#)
+## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> Generación de un constructor con propiedades (solo C#)
+
+1. Coloque el cursor sobre la instancia.
+
+2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
+
+3. Seleccione **Generar constructor en `<QualifiedName>` (con propiedades)** .
+
+   ![Vista previa de generación de constructor](media/generate-constructor-with-properties.png)
+
+## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> Generación de constructor a partir de campos seleccionados (solo C#)
 
 1. Resalte los miembros que quiera tener en su constructor generado:
 
@@ -89,7 +100,7 @@ Esta generación de código se aplica a:
 
    ![Resultado de la generación de constructor](media/constructor2-result-cs.png)
 
-## <a id="usage"></a> Generación de constructor a partir de nuevo uso (C# y Visual Basic)
+## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> Generación de constructor a partir de nuevo uso (C# y Visual Basic)
 
 1. Coloque el cursor en la línea donde haya un subrayado ondulado de color rojo. El subrayado ondulado de color rojo señala una llamada a un constructor que aún no existe.
 
@@ -127,7 +138,7 @@ Esta generación de código se aplica a:
 
        ![Resultado de la generación de método (VB)](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a> Adición de parámetro a constructor existente (solo C#)
+## <a name="add-parameter-to-existing-constructor-c-only"></a><a id="addparameter"></a> Adición de parámetro a constructor existente (solo C#)
 
 1. Agregue un parámetro a una llamada de constructor existente.
 
@@ -154,7 +165,7 @@ Esta generación de código se aplica a:
 
 También puede agregar un parámetro a un método existente. Para más información, consulte [Incorporación de un parámetro a un método](add-parameter.md).
 
-## <a id="create"></a> Creación e inicialización de campo o propiedad a partir de un parámetro de constructor (solo C#)
+## <a name="create-and-initialize-a-field-or-property-from-a-constructor-parameter-c-only"></a><a id="create"></a> Creación e inicialización de campo o propiedad a partir de un parámetro de constructor (solo C#)
 
 1. Busque un constructor existente y agregue un parámetro:
 

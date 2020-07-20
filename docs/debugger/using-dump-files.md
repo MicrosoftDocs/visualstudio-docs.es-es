@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676371"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386958"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio.
 
@@ -35,7 +35,7 @@ ms.locfileid: "65676371"
 
 Abrir un archivo de volcado de memoria con un montón en Visual Studio es como detenerse en un punto de interrupción en una sesión de depuración. Aunque no puede continuar la ejecución, puede examinar las pilas, los subprocesos y los valores de las variables de la aplicación en el momento del volcado de memoria.
 
-Los volcados de memoria se usan principalmente para depurar problemas de máquinas a las que los desarrolladores no tienen acceso. Por ejemplo, puede usar un archivo de volcado de memoria desde la máquina de un cliente cuando no pueda reproducir el bloqueo del cliente en su propia máquina. Los evaluadores también crean volcados de memoria para guardar los datos de bloqueo que se van a usar para realizar más pruebas.
+Los volcados de memoria se usan principalmente para depurar problemas de máquinas a las que los desarrolladores no tienen acceso. Por ejemplo, puede usar un archivo de volcado de memoria desde la máquina de un cliente cuando no pueda reproducir el bloqueo o el programa que no responde en su propia máquina. Los evaluadores también crean volcados de memoria para guardar los datos del bloqueo o del programa que no responde que se van a usar para realizar más pruebas.
 
 El depurador de Visual Studio puede guardar archivos de volcado de memoria de código administrado o nativo. Puede depurar archivos de volcados de memoria creados por Visual Studio o por otras aplicaciones que guardan archivos en el formato de *minivolcado*.
 
@@ -84,7 +84,7 @@ Con la [depuración Just-in-Time](../debugger/just-in-time-debugging-in-visual-s
 
    La ventana **Resumen del archivo de minivolcado** muestra información de resumen y de los módulos del archivo de volcado de memoria y las acciones que se pueden realizar.
 
-   ![Página de resumen del minivolcado](../debugger/media/dbg_dump_summarypage.png "Minidump summary page")
+   ![Página de resumen de minivolcado](../debugger/media/dbg_dump_summarypage.png "Página de resumen de minivolcado")
 
 1. En **Acciones**, haga lo siguiente:
    - Para establecer las ubicaciones de carga de los símbolos, seleccione **Establecer la ruta de acceso de símbolos**.

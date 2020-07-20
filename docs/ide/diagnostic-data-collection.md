@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652475"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387257"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Registros generados por el sistema recopilados por Visual Studio
 
@@ -20,11 +20,11 @@ Visual Studio recopila registros generados por el sistema para solucionar proble
 
 ## <a name="types-of-collected-data"></a>Tipos de datos recopilados
 
-Visual Studio recopila registros generados por el sistema en relación con bloqueos, falta de respuesta de la interfaz de usuario y uso elevado de la CPU o la memoria. También recopilamos información sobre los errores producidos durante la instalación del producto o su uso. Los datos recopilados varían en función del error y pueden incluir información de excepciones, seguimientos de la pila y volcados de memoria:
+Visual Studio recopila registros generados por el sistema en relación con bloqueos, falta de respuesta de la interfaz de usuario y uso elevado de la CPU o la memoria. También recopilamos información sobre los errores producidos durante la instalación del producto o su uso. Los datos recopilados varían en función del error y pueden incluir información de excepciones, seguimientos de la pila y volcados de memoria:
 
 - Para los casos de falta de respuesta y uso elevado de la CPU, se recopilan seguimientos de pila de los subprocesos de Visual Studio pertinentes.
 
-- En los casos donde los seguimientos de la pila de algunos subprocesos no son suficientes para determinar la causa del problema (por ejemplo, bloqueos o uso de memoria elevado), recopilamos un *volcado* de memoria. El volcado de memoria representa el estado del proceso en el momento en que se produjo el error.
+- En los casos donde los seguimientos de la pila de algunos subprocesos no son suficientes para determinar la causa del problema (por ejemplo, bloqueos, falta de respuesta o uso de memoria elevado), recopilamos un *volcado* de memoria. El volcado de memoria representa el estado del proceso en el momento en que se produjo el error.
 
 - En errores inesperados (por ejemplo, una excepción al intentar escribir en un archivo en disco), Microsoft recopila información sobre la excepción. La información incluye el nombre de la excepción, el seguimiento de pila del subproceso donde se produjo la excepción, el mensaje asociado a la excepción y otra información de utilidad relativa a la excepción.
 
@@ -52,7 +52,7 @@ El flujo de trabajo que determina la causa del error varía en función del tipo
 
 ### <a name="error-classification"></a>Clasificación de errores
 
-Basándose en los registros, los errores se clasifican y contabilizan para priorizar su investigación. Por ejemplo, podemos detectar que "System.IO.\__Error.WinIOError" en "System.IO.FileStream.Init" se ha producido 500 veces en la versión \<x> del producto, y tiene la mayor tasa de incidencia en esa versión.
+Basándose en los registros, los errores se clasifican y contabilizan para priorizar su investigación. Por ejemplo, podemos detectar que el error "System.IO.\__Error.WinIOError" en "System.IO.FileStream.Init" se ha producido 500 veces en la versión \<x> del producto, y tiene la mayor tasa de incidencia en esa versión.
 
 ### <a name="work-items-for-tracking"></a>Elementos de trabajo para seguimiento
 
