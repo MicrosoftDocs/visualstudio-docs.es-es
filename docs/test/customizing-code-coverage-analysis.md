@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880317"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475996"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 
@@ -34,13 +34,13 @@ Para personalizar la cobertura de código, siga estos pasos:
 
 ::: moniker range="vs-2017"
 
-3. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos, vea [Configuración de pruebas unitarias](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos, vea [Configuración de pruebas unitarias](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Seleccionar archivo de configuración**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos, vea [Configuración de pruebas unitarias](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Para seleccionar el archivo de parámetros de ejecución, en el menú **Prueba**, elija **Seleccionar archivo de configuración**. Para especificar un archivo de parámetros de ejecución para ejecutar pruebas desde la línea de comandos, vea [Configuración de pruebas unitarias](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
 
 ::: moniker-end
 
