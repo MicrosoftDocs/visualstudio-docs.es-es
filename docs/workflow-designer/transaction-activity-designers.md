@@ -3,17 +3,17 @@ title: Diseñadores de actividad de Diseñador de flujo de trabajo-Transaction
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265fef3cd03fe5b5a4af71b6a72e01ceb13c0477
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d65f68f783e7a1240089b1393089f85369a0ce35
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649844"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875506"
 ---
 # <a name="transaction-activity-designers"></a>Diseñadores de actividades de transacciones
 
