@@ -1,6 +1,6 @@
 ---
 title: Recursos de solución de problemas de errores
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593621"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459286"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 
@@ -109,7 +109,7 @@ No todos los mensajes de error tienen un tema de ayuda específico asociado. Si 
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
-En Knowledge Base (KB), puede buscar en línea artículos sobre problemas con productos. No todos los problemas tienen su correspondiente artículo de Knowledge Base, pero normalmente están documentados aquellos que han detectado un número significativo de clientes. Puede acceder a los artículos de Knowledge Base en el sitio web de [Soporte técnico de Microsoft](https://support.microsoft.com).
+En Knowledge Base (KB), puede buscar en línea artículos sobre problemas con productos. No todos los problemas tienen su correspondiente artículo de Knowledge Base, pero normalmente están documentados aquellos que han detectado un número significativo de clientes. Puede acceder a los artículos de Knowledge Base en el sitio web de [Soporte técnico de Microsoft](https://support.microsoft.com). También puede ver una colección de artículos de KB para Visual Studio en la página [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/).
 
 ## <a name="developer-forums"></a>Foros para desarrolladores
 
