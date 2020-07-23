@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39dee051991efe05b9a661ce1d213e71b456590b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904260"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972353"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Agregar un menú a la barra de menús de Visual Studio
 
@@ -26,7 +26,7 @@ Antes de agregar un nuevo menú a la barra de menús de Visual Studio, tenga en 
 
 Los menús se declaran en el archivo *. Vsct* del proyecto. Para obtener más información sobre los menús y los archivos *. Vsct* , vea [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).
 
-Al completar este tutorial, puede crear un menú denominado **TestMenu** que contenga un comando.
+Al completar este tutorial, puede crear un menú denominado **menú prueba** que contiene un comando.
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
@@ -41,7 +41,17 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 1. Cree un proyecto VSIX denominado `TopLevelMenu` . Para buscar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , busque "VSIX".  Para obtener más información, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).
 
+::: moniker range="vs-2017"
+
 2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando personalizado**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *TestCommand.CS*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizada denominada **prueba**. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >   **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a **Visual C#/extensibilidad** y seleccione **comando**. En el campo **nombre** situado en la parte inferior de la ventana, cambie el nombre del archivo de comandos a *TestCommand.CS*.
+
+::: moniker-end
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Crear un menú en la barra de menús del IDE
 
@@ -49,13 +59,13 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 1. En **Explorador de soluciones**, Abra *TestCommandPackage. Vsct*.
 
-    Al final del archivo, hay un \<Symbols> nodo que contiene varios \<GuidSymbol> nodos. En el nodo denominado guidTestCommandPackageCmdSet, agregue un nuevo símbolo, como se indica a continuación:
+    Al final del archivo, hay un `<Symbols>` nodo que contiene varios `<GuidSymbol>` nodos. En el nodo denominado `guidTestCommandPackageCmdSet` , agregue un nuevo símbolo, como se indica a continuación:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Cree un \<Menus> nodo vacío en el \<Commands> nodo, justo antes de \<Groups> . En el \<Menus> nodo, agregue un \<Menu> nodo, como se indica a continuación:
+2. Cree un `<Menus>` nodo vacío en el `<Commands>` nodo, justo antes de `<Groups>` . En el `<Menus>` nodo, agregue un `<Menu>` nodo, como se indica a continuación:
 
    ```xml
    <Menus>
@@ -63,8 +73,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -74,9 +83,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     Los `guid` `id` valores y del elemento primario sitúan el menú en la sección de la barra de menús de Visual Studio que contiene los menús herramientas y complementos.
 
-    El valor de la `CommandName` cadena especifica que el texto debe aparecer en el elemento de menú.
+    El `<ButtonText>` elemento especifica que el texto debe aparecer en el elemento de menú.
 
-3. En la \<Groups> sección, busque \<Group> y cambie el \<Parent> elemento para que apunte al menú que acabamos de agregar:
+3. En la `<Groups>` sección, busque `<Group>` y cambie el `<Parent>` elemento para que apunte al menú que acabamos de agregar:
 
    ```xml
    <Groups>
@@ -94,13 +103,13 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 1. En **Explorador de soluciones**, Abra *TopLevelMenuPackage. Vsct*.
 
-    Al final del archivo, hay un \<Symbols> nodo que contiene varios \<GuidSymbol> nodos. En el nodo denominado guidTopLevelMenuPackageCmdSet, agregue un nuevo símbolo, como se indica a continuación:
+    Al final del archivo, hay un `<Symbols>` nodo que contiene varios `<GuidSymbol>` nodos. En el nodo denominado `guidTopLevelMenuPackageCmdSet` , agregue un nuevo símbolo, como se indica a continuación:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Cree un \<Menus> nodo vacío en el \<Commands> nodo, justo antes de \<Groups> . En el \<Menus> nodo, agregue un \<Menu> nodo, como se indica a continuación:
+2. Cree un `<Menus>` nodo vacío en el `<Commands>` nodo, justo antes de `<Groups>` . En el `<Menus>` nodo, agregue un `<Menu>` nodo, como se indica a continuación:
 
    ```xml
    <Menus>
@@ -108,8 +117,7 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
            <Parent guid="guidSHLMainMenu"
                    id="IDG_VS_MM_TOOLSADDINS" />
            <Strings>
-             <ButtonText>TestMenu</ButtonText>
-             <CommandName>TestMenu</CommandName>
+             <ButtonText>Test Menu</ButtonText>
            </Strings>
        </Menu>
    </Menus>
@@ -119,9 +127,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
     Los `guid` `id` valores y del elemento primario sitúan el menú en la sección de la barra de menús de Visual Studio que contiene los menús herramientas y complementos.
 
-    El valor de la `CommandName` cadena especifica que el texto debe aparecer en el elemento de menú.
+    El `<ButtonText>` elemento especifica que el texto debe aparecer en el elemento de menú.
 
-3. En la \<Groups> sección, busque \<Group> y cambie el \<Parent> elemento para que apunte al menú que acabamos de agregar:
+3. En la `<Groups>` sección, busque `<Group>` y cambie el `<Parent>` elemento para que apunte al menú que acabamos de agregar:
 
    ```xml
    <Groups>
@@ -135,7 +143,9 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 ::: moniker-end
 
-4. Busque la sección `Buttons`. Observe que la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de paquete ha generado un `Button` elemento que tiene su elemento primario establecido en `MyMenuGroup` . Como resultado, este comando aparece en el menú.
+4. En la `<Buttons>` sección, busque el `<Button>` nodo. A continuación, en el `<Strings>` nodo, cambie el `<ButtonText>` elemento a `Test Command` .
+
+    Observe que la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de paquete ha generado un `Button` elemento que tiene su elemento primario establecido en `MyMenuGroup` . Como resultado, este comando aparece en el menú.
 
 ## <a name="build-and-test-the-extension"></a>Compilar y probar la extensión
 
@@ -143,20 +153,20 @@ A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el c
 
 ::: moniker range="vs-2017"
 
-2. La barra de menús de la instancia experimental debe contener un menú **TestMenu** .
+2. La barra de menús de la instancia experimental debe contener un menú de **menú de prueba** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. El menú **extensiones** en la instancia experimental debe contener un menú **TestMenu** .
+2. El menú **extensiones** en la instancia experimental debe contener un menú de **menú de prueba** .
 
 ::: moniker-end
 
-3. En el menú **TestMenu** , haga clic en **invocar comando de prueba**.
+3. En el menú de **menú prueba** , haga clic en **comando de prueba**.
 
-     Debe aparecer un cuadro de mensaje y mostrar el mensaje "prueba Package Inside TopLevelMenu. prueba. MenuItemCallback ()".
+    Debería aparecer un cuadro de mensaje y mostrar el mensaje "prueba Inside TopLevelMenu. prueba. MenuItemCallback ()".
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

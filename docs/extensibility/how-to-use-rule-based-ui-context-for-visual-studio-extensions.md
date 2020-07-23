@@ -7,12 +7,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1457b8178a48ac867ee8407df9501dee56afd45b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905566"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972314"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Cómo: usar el contexto de la interfaz de usuario basada en reglas para las extensiones de Visual Studio
 
@@ -105,7 +105,7 @@ El contexto de la interfaz de usuario basada en reglas se puede usar de varias m
     name: "Test auto load",
     expression: "(SingleProject | MultipleProjects) & DotConfig",
     termNames: new[] { "SingleProject", "MultipleProjects","DotConfig" },
-    termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
+    termValues: new[] { VSConstants.UICONTEXT.SolutionHasSingleProject_string , VSConstants.UICONTEXT.SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
  Ahora la expresión hace referencia a tres términos. Los dos primeros términos, "SingleProject" y "MultipleProjects", hacen referencia a otros contextos conocidos de la interfaz de usuario (por sus GUID). El tercer término, "DotConfig", es el contexto de la interfaz de usuario basado en reglas que se definió anteriormente en este artículo.
