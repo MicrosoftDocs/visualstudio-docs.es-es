@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 07/14/2020
+ms.date: 07/21/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 2b63d8e269d88b15d4ca057282ebad061f6ea04d
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386191"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876026"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Versión preliminar 5 | 21 de julio de 2020 | 16.7.30317.65 |
+| 16.6.5 | Release | 21 de julio de 2020 | 16.6.30320.27 |
 | 16.7.0 | Versión preliminar 4 | 14 de julio de 2020 | 16.7.30310.162 |
 | 16.6.4 | Release | 14 de julio de 2020 | 16.6.30309.148 |
 | 16.4.11 | Release | 14 de julio de 2020 | 16.4.30308.118 |
@@ -339,7 +341,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 ## <a name="see-also"></a>Vea también
 
-* [Progresión de la versión de Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Guía básica de Visual Studio](/visualstudio/productinfo/vs-roadmap)
+* [Progresión de la versión de Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Herramientas para detectar y administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)

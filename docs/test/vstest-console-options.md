@@ -1,6 +1,6 @@
 ---
 title: Opciones de la línea de comandos para VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211571"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869599"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -35,7 +35,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 | Opción | Descripción |
 |---|---|
 |**[*nombres de archivos de prueba*]**|Ejecuta pruebas desde los archivos especificados. Separe varios nombres de archivos de prueba con espacios.<br />Ejemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*nombre de archivo*]**|Ejecuta pruebas con opciones adicionales, como recolectores de datos.<br />Ejemplo: `/Settings:Local.RunSettings`|
+|**/Settings:[*nombre de archivo*]**|Ejecuta pruebas con opciones adicionales, como recolectores de datos. Para obtener más información, vea [Configuración de pruebas unitarias con un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).<br />Ejemplo: `/Settings:local.runsettings`|
 |**/Tests:[*nombre de prueba*]**|Ejecuta pruebas con nombres que incluyen los valores proporcionados. Para proporcionar varios valores, deberá separarlos por comas.<br />Ejemplo: `/Tests:TestMethod1,testMethod2`<br />La opción de línea de comandos **/Tests** no se puede usar con la opción de línea de comandos **/TestCaseFilter**.|
 |**/Parallel**|Especifica que las pruebas se ejecutan en paralelo. De forma predeterminada, se pueden usar todos los núcleos disponibles en la máquina. Puede configurar el número de núcleos que se van a usar en un archivo de configuración.|
 |**/Enablecodecoverage**|Habilita el adaptador de diagnóstico de datos CodeCoverage en la serie de pruebas.<br />Se usa la configuración predeterminada si no se especifica mediante un archivo de configuración.|

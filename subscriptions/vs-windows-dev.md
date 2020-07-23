@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
-ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
-ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
+ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86301465"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875480"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Visual Studio, permite enviar a Microsoft Store aplicaciones Windows tanto gratuitas como de pago.
@@ -52,7 +52,7 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excluye:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, Most Valuable Professional (MVP) y Regional Director (RD). Excluye:  Microsoft Partner Network (MPN), Imagine y MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
