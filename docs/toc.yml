@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
               href: install/update-servicing-baseline.md
+            - name: "Actualización de Visual\_Studio con un diseño sin conexión mínimo"
+              href: install/update-minimal-layout.md
             - name: Controlar las actualizaciones a implementaciones de Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: Administración de cambios de carga de paquete
