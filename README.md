@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62422090"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115298"
 ---
 # <a name="visual-studio-documentation"></a>Documentación de Visual Studio
 
@@ -12,7 +12,7 @@ Inicio Este repositorio contiene archivos de origen para la documentación técn
 
 Este repositorio se migró el 23 de junio de 2017 desde https://github.com/Microsoft/vsdocs. El tráfico a las direcciones URL anteriores se redirige aquí.
 
-La documentación de Visual Basic y Visual C# está ubicada en el [repositorio de documentos de dotnet](https://github.com/dotnet/docs/tree/master/docs) y la documentación de Visual C++, en el [repositorio de documentos de C++](http://github.com/MicrosoftDocs/cpp-docs).
+La documentación de Visual Basic y Visual C# está ubicada en el [repositorio de documentos de dotnet](https://github.com/dotnet/docs/tree/master/docs) y la documentación de Visual C++, en el [repositorio de documentos de C++](https://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contribute-to-the-documentation"></a>Contribuir a la documentación
 
@@ -24,4 +24,4 @@ Para más información sobre cómo colaborar, consulte la [guía de colaboració
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del código abierto de Microsoft
 
-Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para más información, consulte las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene preguntas o comentarios.
+El proyecto ha adoptado el [Código de conducta de código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para más información, consulte las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene preguntas o comentarios.
