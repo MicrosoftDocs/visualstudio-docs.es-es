@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537324"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234697"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar errores en soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:
@@ -36,7 +36,7 @@ ms.locfileid: "85537324"
 
 - [Escribir código](#code)
 
-- [Proyectos de compilación](#building)
+- [Compilar proyectos](#building)
 
 - [Depurar proyectos](#debugging)
 
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Aunque haya importado el espacio de nombres de Word o Excel y tenga acceso a todas las clases que contiene, debe calificar totalmente todos los tipos con Word o Excel para quitar la ambigüedad de los espacios de nombres.
 
-## <a name="build-projects"></a><a name="building"></a> Compilar proyectos
+## <a name="build-projects"></a><a name="building"></a>Proyectos de compilación
  Pueden producirse los siguientes errores al compilar proyectos de Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento basado en un documento con permisos restringidos
@@ -213,7 +213,8 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Si hace clic en **sí** o en **no** en el cuadro de diálogo, Visual Studio finaliza el proceso de Excel o de Word y detiene el depurador. Para detener la depuración del proyecto sin mostrar este cuadro de diálogo, salga de Excel o Word directamente en lugar de detener el depurador en Visual Studio.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Solucionar problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)
 - [Solucionar problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)
 - [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

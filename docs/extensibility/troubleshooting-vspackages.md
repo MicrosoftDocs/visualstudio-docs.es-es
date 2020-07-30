@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2141d2fd7d046f61ba6febecc427066d7a09ba18
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904481"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235035"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 A continuación se indican los problemas comunes que podría tener con el VSPackage y sugerencias para resolverlos.
@@ -123,5 +123,6 @@ A continuación se indican los problemas comunes que podría tener con el VSPack
 
    Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [VSPackages](../extensibility/internals/vspackages.md)
+- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

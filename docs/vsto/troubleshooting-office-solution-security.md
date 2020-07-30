@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76cd454cd66e31db8c521d71183aa479da1fe2a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537415"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234814"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Solucionar problemas de seguridad de soluciones de Office
   Este tema contiene sugerencias para solucionar problemas comunes que pueden surgir al trabajar con la protección de soluciones de Office.
@@ -48,5 +48,6 @@ ms.locfileid: "85537415"
 
  Para administrar el efecto de IEESC e Internet Explorer 7 y versiones posteriores, identifique los sitios web y las rutas de acceso UNC (Convención de nomenclatura universal) en las que confía y agréguelos a una de las zonas de seguridad de confianza (Intranet local o sitios de confianza). Para obtener información sobre cómo administrar las zonas, vea [configurar editores de confianza de ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
+- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

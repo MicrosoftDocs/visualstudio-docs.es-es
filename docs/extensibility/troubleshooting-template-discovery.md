@@ -7,12 +7,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5225c741206e6a43ff024a5f184404f1ac2bc63
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904487"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235048"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de plantillas
 
@@ -70,6 +70,7 @@ El archivo de registro contiene las siguientes columnas:
 > [!NOTE]
 > Para deshabilitar el registro, quite el archivo pkgdef o cambie el valor de `EnableTemplateDiscoveryLog` a `dword:00000000` y, a continuación, vuelva a ejecutar `devenv /updateConfiguration` .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Crear plantillas de proyecto y de elemento personalizadas](creating-custom-project-and-item-templates.md)
+- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

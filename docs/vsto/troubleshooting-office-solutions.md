@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7bc8db3478f6856b5d3b511e53656c65d762446c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 82fbb41bb1bf0d7ba3da046eb7d22eb8606a7529
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537221"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234723"
 ---
 # <a name="troubleshoot-office-solutions"></a>Solucionar problemas de soluciones de Office
   En esta sección se ofrecen sugerencias para resolver problemas comunes que pudieran surgir al crear soluciones mediante las herramientas de desarrollo de Office en Visual Studio.
@@ -57,3 +57,7 @@ ms.locfileid: "85537221"
 - [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)
 
  Muestra preguntas frecuentes sobre la programación de soluciones de Office y proporciona vínculos a temas que pueden ayudar a resolver problemas habituales.
+
+## <a name="see-also"></a>Consulte también
+
+- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
