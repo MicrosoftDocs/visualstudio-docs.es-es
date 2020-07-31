@@ -42,6 +42,8 @@
       items:
         - name: Información general
           href: install/visual-studio-administrator-guide.md
+        - name: Guía de Visual Studio Enterprise
+          href: install/visual-studio-enterprise-guide.md
         - name: Usar la línea de comandos
           items:
             - name: Usar parámetros de la línea de comandos para instalar Visual Studio
