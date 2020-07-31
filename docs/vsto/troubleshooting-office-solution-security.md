@@ -48,6 +48,6 @@ ms.locfileid: "87234814"
 
  Para administrar el efecto de IEESC e Internet Explorer 7 y versiones posteriores, identifique los sitios web y las rutas de acceso UNC (Convención de nomenclatura universal) en las que confía y agréguelos a una de las zonas de seguridad de confianza (Intranet local o sitios de confianza). Para obtener información sobre cómo administrar las zonas, vea [configurar editores de confianza de ClickOnce](/previous-versions/dotnet/articles/ms996418(v=msdn.10)).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

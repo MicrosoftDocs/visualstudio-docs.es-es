@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371877"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453639"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 
@@ -266,12 +266,12 @@ Los términos del nodo Dictionary/acrónimos/CasingExceptions se aplican a las s
 
 1. En **Explorador de soluciones**, use uno de los procedimientos siguientes:
 
-2. Para agregar un diccionario a un solo proyecto, haga clic con el botón secundario en el nombre del proyecto y, a continuación, haga clic en **Agregar elemento existente**. Especifique el archivo en el cuadro de diálogo **Agregar elemento existente** .
+    - Para agregar un diccionario a un solo proyecto, haga clic con el botón secundario en el nombre del proyecto y, a continuación, haga clic en **Agregar elemento existente**. Especifique el archivo en el cuadro de diálogo **Agregar elemento existente** .
+  
+    - Para agregar un diccionario compartido entre dos o más proyectos, busque el archivo que desea compartir en el cuadro de diálogo **Agregar elemento existente** , haga clic en la flecha hacia abajo del botón **Agregar** y, a continuación, haga clic en **Agregar como vínculo**.
 
-3. Para agregar un diccionario compartido entre dos o más proyectos, busque el archivo que desea compartir en el cuadro de diálogo **Agregar elemento existente** , haga clic en la flecha hacia abajo del botón **Agregar** y, a continuación, haga clic en **Agregar como vínculo**.
+2. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre de archivo **CustomDictionary.xml** y haga clic en **propiedades**.
 
-4. En **Explorador de soluciones**, haga clic con el botón secundario en el nombre de archivo **CustomDictionary.xml** y haga clic en **propiedades**.
+3. En la lista **acción de compilación** , seleccione **CodeAnalysisDictionary**.
 
-5. En la lista **acción de compilación** , seleccione **CodeAnalysisDictionary**.
-
-6. En la lista **Copiar en el directorio de salida** , seleccione **no copiar**.
+4. En la lista **Copiar en el directorio de salida** , seleccione **no copiar**.

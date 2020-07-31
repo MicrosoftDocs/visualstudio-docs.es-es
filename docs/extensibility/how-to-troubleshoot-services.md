@@ -66,8 +66,8 @@ if (log == null) return;
 
     Si una ventana de herramientas hospeda un control de usuario o cualquier otro contenedor de control, el contenedor se colocará en el modelo de componentes de Windows y no tendrá acceso a ningún [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] servicio. Puede llamar <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> a para obtener un proveedor de servicios de VSPackage desde un contenedor de control.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 - [Lista de servicios disponibles](../extensibility/internals/list-of-available-services.md)
 - [Usar y proporcionar servicios](../extensibility/using-and-providing-services.md)
 - [Aspectos básicos del servicio](../extensibility/internals/service-essentials.md)
-- [Solución de problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Solucionar problemas de Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

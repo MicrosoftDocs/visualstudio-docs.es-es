@@ -1,5 +1,5 @@
 ---
-title: Elemento de menú ???????? Microsoft Docs
+title: Elemento menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc4731f95e31781f6b10704d7cb14dc83e96d7a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80702596"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453656"
 ---
-# <a name="menu-element"></a>Elemento de menú
-Define un elemento de menú. Estos son los seis tipos de menús: Contexto, Menu, MenuController, MenuControllerLatched, Toolbar y ToolWindowToolbar.
+# <a name="menu-element"></a>Elemento menu
+Define un elemento de menú. Estos son los seis tipos de menús: context, MENU, MenuController, MenuControllerLatched, Toolbar y ToolWindowToolbar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,41 +38,40 @@ Define un elemento de menú. Estos son los seis tipos de menús: Contexto, Menu,
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|guid|Necesario. GUID del identificador de comando GUID/ID.|
-|id|Necesario. ID del identificador de comando GUID/ID.|
+|guid|Necesario. GUID del identificador del comando GUID/ID.|
+|id|Necesario. IDENTIFICADOR del identificador del comando GUID/ID.|
 |priority|Opcional. Valor numérico que especifica la posición relativa de un menú en un grupo de menús.|
-|ToolbarPriorityInband|Opcional. Valor numérico que especifica la posición relativa de una barra de herramientas en una banda cuando se acopla la ventana.|
-|type|Opcional. Un valor enumerado que especifica el tipo de elemento.<br /><br /> Si no está presente, el tipo predeterminado es Menú.<br /><br /> Context<br /> Un menú contextual que se muestra cuando un usuario hace clic con el botón derecho en una ventana. Un menú contextual tiene las siguientes características:<br /><br /> - No utiliza los campos **Padre** y **Prioridad** cuando el menú se va a mostrar como un menú contextual.<br />- Se puede utilizar como un submenú y también como un menú contextual. En este caso, se respetan los campos ID de **grupo** y **Prioridad.**<br />- No siempre está disponible.<br /><br /> Solo se muestra un menú contextual cuando se cumplen las siguientes condiciones:<br /><br /> - Se muestra la ventana que lo aloja.<br />- Un controlador de mouse en el VSPackage detecta un clic derecho en la ventana y, a continuación, llama a un método que controla el comando.<br />- El menú contextual se <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> muestra llamando al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> (el enfoque recomendado) o al método.<br /><br /> Menú<br /> Proporciona un menú desplegable. Un menú desplegable tiene las siguientes características:<br /><br /> - Respeta al Padre en su definición.<br />- Debe tener un grupo Padre o un CommandPlacement en un grupo.<br />- Puede ser un submenú en cualquier otro tipo de menú.<br />- Se muestra automáticamente cada vez que se muestra su menú principal.<br />- No requiere la implementación de ningún código VSPackage para que se muestre.<br /><br /> MenuController<br /> Proporciona un menú desplegable de botones divididos, que normalmente se utiliza en las barras de herramientas. Un menú MenuController tiene las siguientes características:<br /><br /> - Debe estar contenido en otro menú a través de Parent o CommandPlacement.<br />- Respeta al Padre en su definición.<br />- Puede tener cualquier tipo de menú como su padre.<br />- Se hace automáticamente disponible cada vez que se muestra su menú principal.<br />- No requiere soporte programático para que se muestre el menú.<br /><br /> En el botón de menú se muestra un comando del menú de botones divididos. El comando mostrado tiene una de las siguientes características:<br /><br /> - Es el último comando que se utilizó si el comando todavía se muestra y se habilita.<br />- Es el primer comando mostrado.<br /><br /> MenuControllerLatched<br /> Proporciona un menú desplegable de botones divididos para el que se puede especificar un comando como la selección predeterminada marcando el comando como bloqueado.<br /><br /> Un comando bloqueado es un comando que se marca en el menú como seleccionado, normalmente mostrando una marca de verificación. Un comando se puede marcar como bloqueado si tiene el indicador `QueryStatus` OLECMDF_LATCHED establecido <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> en él en una implementación del método de la interfaz. Un menú MenuControllerLatched tiene las siguientes características:<br /><br /> - Debe estar contenido en otro menú a través de un grupo Padre o CommandPlacement.<br />- Respeta al Padre en su definición.<br />- Puede tener cualquier tipo de menú como su padre.<br />- Se hace disponible cada vez que se muestra su menú principal.<br />- No requiere soporte programático para que se muestre el menú.<br /><br /> En el botón de menú se muestra un comando del menú de botones divididos. El comando mostrado tiene una de las siguientes características:<br /><br /> - Es el primer comando mostrado que está bloqueado.<br />- Es el primer comando mostrado.<br /><br /> Barra de herramientas<br /> Proporciona una barra de herramientas. Una barra de herramientas tiene las siguientes características:<br /><br /> - Ignora al padre en su definición.<br />- No se puede hacer un submenú de ningún grupo, ni siquiera mediante CommandPlacement.<br />- Siempre se puede mostrar haciendo clic en Barras de **herramientas** en el menú **Ver.**<br />- Se puede mostrar mediante un [VisibilityItem](../extensibility/visibilityitem-element.md).<br />- No requiere ningún código para crearlo. Para obtener un ejemplo sobre cómo crear una barra de herramientas, consulte [Agregar una barra](../extensibility/adding-a-toolbar.md)de herramientas .<br /><br /> ToolWindowToolbar<br /> Proporciona una barra de herramientas que se adjunta a una ventana de herramientas específica, al igual que una barra de herramientas se adjunta al entorno de desarrollo.<br /><br /> - Ignora al padre en su definición.<br />- No se puede hacer un submenú de ningún grupo, ni siquiera mediante CommandPlacement.<br />- Se muestra solo cuando se muestra la ventana de herramientas que hospeda la barra de herramientas y el VSPackage agrega explícitamente la barra de herramientas a la ventana de herramientas. Esto se realiza normalmente cuando se crea la ventana de herramientas obteniendo la propiedad host de la barra de herramientas (representada por la <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> interfaz) desde el marco de la ventana de herramientas y, a continuación, llamando al <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> método.|
-|Condición|Opcional. Consulte [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|ToolbarPriorityInBand|Opcional. Valor numérico que especifica la posición relativa de una barra de herramientas en una banda cuando la ventana está acoplada.|
+|type|Opcional. Valor enumerado que especifica el tipo de elemento.<br /><br /> Si no está presente, el tipo predeterminado es menú.<br /><br /> Contexto<br /> Un menú contextual que se muestra cuando un usuario hace clic con el botón secundario en una ventana. Un menú contextual tiene las siguientes características:<br /><br /> : No usa los campos **primario** y de **prioridad** cuando el menú se va a mostrar como menú contextual.<br />-Se puede usar como un submenú y también como un menú contextual. En este caso, se respetan los campos ID. de **Grupo** y **prioridad** .<br />-No siempre está disponible.<br /><br /> Solo se muestra un menú contextual cuando se cumplen las condiciones siguientes:<br /><br /> -Se muestra la ventana que la hospeda.<br />-Un controlador de mouse en el VSPackage detecta un clic con el botón secundario en la ventana y, a continuación, llama a un método que controla el comando.<br />: El menú contextual se muestra mediante una llamada al <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> método (el enfoque recomendado) o el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> método.<br /><br /> Menú<br /> Proporciona un menú desplegable. Un menú desplegable tiene las siguientes características:<br /><br /> : Respeta el elemento primario en su definición.<br />-Debe tener un grupo primario o un CommandPlacement a un grupo.<br />: Puede ser un submenú de cualquier otro tipo de menú.<br />-Se muestra automáticamente cuando se muestra el menú primario.<br />: No requiere la implementación de ningún código VSPackage para que se muestre.<br /><br /> MenuController<br /> Proporciona un menú desplegable de botón de expansión, que se utiliza normalmente en las barras de herramientas. Un menú MenuController tiene las siguientes características:<br /><br /> : Debe estar incluido en otro menú a través de los elementos primarios o CommandPlacement.<br />: Respeta el elemento primario en su definición.<br />: Puede tener cualquier tipo de menú como elemento primario.<br />-Está disponible automáticamente cada vez que se muestra el menú primario.<br />: No requiere compatibilidad mediante programación para que se muestre el menú.<br /><br /> Un comando del menú de botón de expansión se muestra en el botón de menú. El comando que se muestra tiene una de las siguientes características:<br /><br /> -Es el último comando que se usó si el comando sigue mostrándose y habilitado.<br />-Es el primer comando que se muestra.<br /><br /> MenuControllerLatched<br /> Proporciona un menú desplegable de botón de expansión para el que se puede especificar un comando como selección predeterminada marcando el comando como bloqueado.<br /><br /> Un comando bloqueado es un comando que se marca en el menú como seleccionado, normalmente mostrando una marca de verificación. Un comando se puede marcar como bloqueado si tiene la marca OLECMDF_LATCHED establecida en él en una implementación del `QueryStatus` método de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Un menú MenuControllerLatched tiene las siguientes características:<br /><br /> -Debe estar incluido en otro menú a través de un grupo primario o CommandPlacement.<br />: Respeta el elemento primario en su definición.<br />: Puede tener cualquier tipo de menú como elemento primario.<br />-Está disponible cada vez que se muestra el menú primario.<br />: No requiere compatibilidad mediante programación para que se muestre el menú.<br /><br /> Un comando del menú de botón de expansión se muestra en el botón de menú. El comando que se muestra tiene una de las siguientes características:<br /><br /> -Es el primer comando que se muestra que está bloqueado.<br />-Es el primer comando que se muestra.<br /><br /> Barra de herramientas<br /> Proporciona una barra de herramientas. Una barra de herramientas tiene las siguientes características:<br /><br /> -Omite el elemento primario en su definición.<br />-No se puede convertir en un submenú de ningún grupo, ni siquiera mediante CommandPlacement.<br />-Siempre se puede mostrar haciendo clic en **barras de herramientas** en el menú **Ver** .<br />-Se puede mostrar mediante un [VisibilityItem](../extensibility/visibilityitem-element.md).<br />-No requiere código para crearlo. Para obtener un ejemplo sobre cómo crear una barra de herramientas, vea [Agregar una barra de herramientas](../extensibility/adding-a-toolbar.md).<br /><br /> ToolWindowToolbar<br /> Proporciona una barra de herramientas que se adjunta a una ventana de herramientas específica, al igual que una barra de herramientas se adjunta al entorno de desarrollo.<br /><br /> -Omite el elemento primario en su definición.<br />-No se puede convertir en un submenú de ningún grupo, ni siquiera mediante CommandPlacement.<br />-Solo se muestra cuando se muestra la ventana de herramientas que hospeda la barra de herramientas y el VSPackage agrega explícitamente la barra de herramientas a la ventana de herramientas. Normalmente, esto se hace cuando se crea la ventana de herramientas mediante la obtención de la propiedad de host de barra de herramientas (tal y como se representa en la <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> interfaz) desde el marco de la ventana de herramientas y, después, llamando al <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> método.|
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos secundarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|Parent|Opcional. El elemento primario del elemento de menú.|
-|CommandFlag|Necesario. Consulte [Elemento de indicador de comando](../extensibility/command-flag-element.md). Los valores commandFlag válidos para un menú son los siguientes:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible:** esta marca no afecta a la visualización de las barras de herramientas.<br />-   **DontCache**<br />-   **DynamicVisibility:** esta marca no afecta a la visualización de barras de herramientas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|
-|Cadenas|Necesario. Consulte [Elemento Cadenas](../extensibility/strings-element.md). El `ButtonText` elemento secundario debe definirse.|
+|Parent|Opcional. Elemento primario del elemento de menú.|
+|CommandFlag|Necesario. Vea [elemento de marca de comando](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un menú son los siguientes:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** : esta marca no afecta a la presentación de barras de herramientas.<br />-   **DontCache**<br />-   **DynamicVisibility** : esta marca no afecta a la presentación de barras de herramientas.<br />-   **IconAndText**<br />-   **Nocustomizate**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **Textchanges al**<br />-   **TextIsAnchorCommand**|
+|Cadenas|Necesario. Vea el [elemento Strings](../extensibility/strings-element.md). `ButtonText`Se debe definir el elemento secundario.|
 |Anotación|Comentario opcional.|
 
 ### <a name="parent-elements"></a>Elementos primarios
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[Elemento Menús](../extensibility/menus-element.md)|Define todos los menús que implementa un VSPackage.|
+|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un VSPackage.|
 
 ## <a name="example"></a>Ejemplo
 
 ```
 <Menu guid="cmdGuidWidgetCommands" id="menuIDEditWidget"
   priority="0x0002" type="Menu">
-  <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">
-    <CommandFlag>AlwaysCreate</CommandFlag>
-    <Strings>
-      <ButtonText>Edit Widget</ButtonText>
-    </Strings>
-    </Parent>
+  <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit"/>
+  <CommandFlag>AlwaysCreate</CommandFlag>
+  <Strings>
+    <ButtonText>Edit Widget</ButtonText>
+  </Strings>
 </Menu>
 ```
 
-## <a name="see-also"></a>Consulte también
-- [Archivos de tabla de comandos de Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vea también
+- [Archivos de tabla de comandos de Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
