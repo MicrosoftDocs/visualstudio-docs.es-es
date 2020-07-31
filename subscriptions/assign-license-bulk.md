@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903287"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235139"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -30,7 +30,7 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 
 1. En la adición en masa se usa una plantilla de Microsoft Excel para cargar información de los suscriptores. En el cuadro de diálogo para cargar varios suscriptores, haga clic en **Descargar** para descargar la plantilla.
    > [!div class="mx-imgBorder"]
-   > ![Descarga de la plantilla de Excel para cargar varios suscriptores](media/download-template-upload-subscribers.png)
+   > ![Descarga de la plantilla de Excel para cargar varios suscriptores](media/download-template-upload-subscribers.png "Descargue la plantilla de Excel en blanco para iniciar el proceso de asignación en masa.")
    >
    > [!NOTE]
    > Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
@@ -50,17 +50,17 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 
 1. Vuelva al portal de administración de suscripciones de Visual Studio. En el cuadro de diálogo **Cargar varios suscriptores**, haga clic en **Examinar**.
    > [!div class="mx-imgBorder"]
-   > ![Examen de la plantilla guardada para cargar varios suscriptores](media/bulk-add-browse-saved-template.png)
+   > ![Examen de la plantilla guardada para cargar varios suscriptores](media/bulk-add-browse-saved-template.png "Puede desplazarse hasta la ubicación del archivo, o bien arrastrarlo y colocarlo en este cuadro de diálogo.")
 
 1. Vaya al archivo de Excel que ha guardado y haga clic en **Aceptar**.
    > [!div class="mx-imgBorder"]
-   > ![Carga de la plantilla de Excel para cargar varios suscriptores](media/bulk-upload-subscribers.png)
+   > ![Carga de la plantilla de Excel para cargar varios suscriptores](media/bulk-upload-subscribers.png "La plantilla con los datos aparecerá aquí.  Haga clic en Aceptar para iniciar la carga.")
 
     Aparece un cuadro de diálogo de progreso de carga.
 
     Si la plantilla contiene errores, se produce un error en la carga y se muestran los errores para que pueda corregir la plantilla e intentar de nuevo la carga en masa.
    > [!div class="mx-imgBorder"]
-   > ![Mensaje de error si se produce un error en la carga de varios suscriptores](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Mensaje de error si se produce un error en la carga de varios suscriptores](_img/assign-license-bulk/bulk-add-upload-failure.png "Este mensaje aparecerá si el archivo que ha cargado contenía errores.  Resuelva los errores y vuelva a realizar el proceso de adición en masa.")
 
    Si se produce un error, siga estos pasos:
    1. Abra el archivo de Excel que ha creado, corrija los problemas y guarde el archivo.
@@ -72,7 +72,7 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 
     Cuando la carga se realice correctamente, verá la lista de suscriptores y un mensaje de confirmación.
    > [!div class="mx-imgBorder"]
-   > ![Mensaje de confirmación si la carga de varios suscriptores se realiza correctamente](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Mensaje de confirmación si la carga de varios suscriptores se realiza correctamente](_img/assign-license-bulk/bulk-add-upload-success.png "Cuando la carga se complete correctamente, recibirá un mensaje de confirmación.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Uso de grupos de Azure Active Directory para asignar suscripciones 
 Con esta característica, resulta más sencillo mantenerse al tanto de las asignaciones de suscripciones. Puede agregar grupos de Azure Active Directory en el Portal de administración de suscripciones, lo que garantizará que todas las personas del grupo tengan asignada una suscripción. Además, para que sea más fácil, cuando los usuarios dejen la organización y se quiten de Azure Active Directory, también se quitará el acceso a las suscripciones. 
@@ -100,14 +100,14 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
 3. Elija la pestaña **Agregar** y, después, seleccione **Grupo de Azure Active Directory** en el menú desplegable.  
 
    > [!div class="mx-imgBorder"]
-   > ![Selección de adición masiva mediante Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Selección de adición masiva mediante Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Elija la característica Adición en masa mediante Azure AD para extraer suscriptores del grupo de Azure Active Directory.")
 
 4. En el campo de formulario, comience a escribir el nombre del grupo de Azure AD que quiera agregar. De este modo, se buscarán los grupos de Azure AD disponibles dentro de la organización. 
 
 5. Al seleccionar el grupo, el campo se rellenará automáticamente con el nombre del grupo. Tendrá la opción de ver los usuarios de ese grupo antes de agregarlos. A continuación, puede elegir el nivel de suscripción, los derechos de descarga y las preferencias de comunicación para el grupo. Si lo desea, puede agregar detalles en el campo de referencia. 
 
    > [!div class="mx-imgBorder"]
-   > ![Selección de adición masiva mediante Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Selección del grupo de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Elija el nombre del grupo de Azure AD para agregar suscriptores de ese grupo.")
 
 6. Haga clic en **Agregar** y, luego, en **Confirmar**. 
 

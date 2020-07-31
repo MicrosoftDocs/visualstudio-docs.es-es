@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Aprenda a establecer las preferencias de idioma, contactos, nivel de suscripción y demás en el portal de administración.
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183501"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234619"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Establecimiento de las preferencias de los contratos en el portal de administración
 Los superadministradores pueden establecer determinadas preferencias en el portal de administración que se aplicarán globalmente para cada contrato.  Estas preferencias rellenarán automáticamente los detalles de suscripción para los administradores al agregar suscriptores. Solo las pueden modificar de forma global los propios superadministradores.  
@@ -24,13 +24,13 @@ Para establecer las preferencias:
 1. Inicie sesión en el portal de administración con un identificador que tenga privilegios de superadministrador.
 2. Haga clic en la pestaña **Administrar administradores**.
    > [!div class="mx-imgBorder"]
-   > ![Botón de preferencias de administración](_img/admin-prefs/admin-prefs-button.png)
+   > ![Botón de preferencias de administración](_img/admin-prefs/admin-prefs-button.png "Haga clic en Administrar administradores y en Agreement Preferences (Preferencias del contrato) para mostrar las preferencias.")
 
 3. Haga clic en **Agreement Preferences** (Preferencias de contratos).
 Se abrirá un panel a la derecha y se mostrarán las preferencias disponibles. 
 
    > [!div class="mx-imgBorder"]
-   > ![Cuadro de diálogo de control flotante con las preferencias de administración](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Cuadro de diálogo de control flotante con las preferencias de administración](_img/admin-prefs/admin-prefs-flyout.png "Establezca sus preferencias y haga clic en Guardar.")
 
 ## <a name="set-your-preferences"></a>Establecimiento de las preferencias
 Veamos cada una de las preferencias disponibles y sus efectos. 
@@ -86,6 +86,3 @@ Obtenga más información sobre la administración de suscripciones de Visual S
 - [Asignación de varias suscripciones](assign-license-bulk.md)
 - [Editar suscripciones](edit-license.md)
 - [Determinación del uso máximo](maximum-usage.md)
-
-
-

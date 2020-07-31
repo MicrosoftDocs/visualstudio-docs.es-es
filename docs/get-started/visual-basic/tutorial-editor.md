@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75584613"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235152"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Información sobre cómo usar el editor de código con Visual Basic
 
-En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
+En esta introducción de 10 minutos al editor de código de Visual Studio, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código de Visual Basic (así como desplazarse por él) sea más fácil.
 
 ::: moniker range="vs-2017"
 

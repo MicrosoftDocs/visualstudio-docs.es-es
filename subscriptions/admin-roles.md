@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: Obtenga información sobre los roles de administrador y superadministrador y sobre la asignación de administradores.
-ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808380"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234632"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Administradores y superadministradores para contratos de suscripción de Visual Studio
 
@@ -30,10 +30,10 @@ Para asignar nuevos administradores:
 2. Haga clic en la pestaña etiquetada como **Administrar administradores**.
 3. Haga clic en **Agregar**.
    > [!div class="mx-imgBorder"]
-   > ![Adición de administradores](_img/admin-roles/add-admins.png)
+   > ![Adición de administradores](_img/admin-roles/add-admins.png "Haga clic en la hoja Administrar administradores y en Agregar para asignar nuevos administradores.")
 4. Rellene el formulario con la información del nuevo administrador.  
    > [!div class="mx-imgBorder"]
-   > ![Formulario para agregar un administrador](_img/admin-roles/add-form.png)
+   > ![Formulario para agregar un administrador](_img/admin-roles/add-form.png "Especifique la información de inicio de sesión del nuevo administrador y decida si quiere convertirlo en superadministrador.  Luego, haga clic en Agregar.")
 
    > [!NOTE]
    > Si quiere que este administrador pueda asignar otros administradores, recuerde activar la casilla **Superadministrador**.

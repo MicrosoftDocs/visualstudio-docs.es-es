@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Describe los procesos para usar Proceso local con Kubernetes para conectar el equipo de desarrollo con el clúster de Kubernetes.
 keywords: Proceso local con Kubernetes, Docker, Kubernetes, Azure y contenedores
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454387"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133986"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Funcionamiento de Proceso local con Kubernetes
 
@@ -40,6 +40,44 @@ Cuando Proceso local con Kubernetes establece una conexión con el clúster, hac
 
 Después de establecer una conexión con el clúster, puede ejecutar y depurar el código de forma nativa en el equipo, sin contenedores, y el código puede interactuar directamente con el resto del clúster. Cualquier tráfico que reciba el agente remoto se redirige al puerto local especificado durante la conexión para que el código que se ejecuta de forma nativa pueda aceptar y procesar ese tráfico. Las variables de entorno, los volúmenes y los secretos del clúster se ponen a disposición del código que se ejecuta en el equipo de desarrollo. Además, debido a que las entradas de archivo de host y el reenvío de puerto que Proceso local con Kubernetes agregó al equipo del desarrollador, el código puede enviar tráfico de red a los servicios que se ejecutan en el clúster mediante los nombres de servicio del clúster, y ese tráfico se reenvía a los servicios que se ejecutan en el clúster. El tráfico se enruta entre el equipo de desarrollo y el clúster todo el tiempo que está conectado.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Uso de funciones de enrutamiento para desarrollar de forma aislada
+
+De forma predeterminada, Proceso local con Kubernetes redirige todo el tráfico para un servicio al equipo de desarrollo. También tiene la opción de usar funciones de enrutamiento para redirigir únicamente las solicitudes a un servicio que se originen en un subdominio del equipo de desarrollo. Estas funciones de enrutamiento permiten usar Proceso local con Kubernetes para desarrollar de forma aislada y evitar interrumpir el resto del tráfico del clúster.
+
+En la siguiente animación se muestran dos desarrolladores que trabajan en el mismo clúster de forma aislada:
+
+![GIF animado que ilustra el aislamiento](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Cuando se habilita el trabajo de forma aislada, además de conectarse al clúster de Kubernetes, Proceso local con Kubernetes hace lo siguiente:
+
+* Comprueba que el clúster de Kubernetes no tiene habilitado Azure Dev Spaces.
+* Replica el servicio seleccionado en el clúster en el mismo espacio de nombres y agrega una etiqueta *routing.visualstudio.io/route-from=SERVICE_NAME* y una anotación *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME*.
+* Configura e inicia el administrador de enrutamiento en el mismo espacio de nombres en el clúster de Kubernetes. El administrador de enrutamiento usa un selector de etiquetas para buscar la etiqueta *routing.visualstudio.io/route-from=SERVICE_NAME* y la anotación *routing.visualstudio.io/route-on-header=kubernetes-route-as: GENERATED_NAME* al configurar el enrutamiento en el espacio de nombres.
+
+Si Proceso local con Kubernetes detecta que Azure Dev Spaces está habilitado en el clúster de Kubernetes, se le pedirá que deshabilite Azure Dev Spaces para poder usar Proceso local con Kubernetes.
+
+El administrador de enrutamiento hace lo siguiente cuando se inicia:
+* Duplica todas las entradas que se encuentran en el espacio de nombres, para lo que usa *GENERATED_NAME* para el subdominio. 
+* Crea un pod de envío para cada servicio asociado a las entradas duplicadas con el subdominio *GENERATED_NAME*.
+* Crea un pod de envío adicional para el servicio en el que se trabaja de forma aislada. Esto permite que las solicitudes con el subdominio se enruten al equipo de desarrollo.
+* Configura reglas de enrutamiento para que cada pod de envío controle el enrutamiento de servicios con el subdominio.
+
+Cuando se recibe en el clúster una solicitud con el subdominio *GENERATED_NAME*, se agrega un encabezado *kubernetes-route-as=GENERATED_NAME* a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio en el que se trabaja de forma aislada, el agente remoto redirige esa solicitud al equipo de desarrollo.
+
+Cuando se recibe en el clúster una solicitud sin el subdominio *GENERATED_NAME*, no se agrega ningún encabezado a la solicitud. Los pods de envío controlan el enrutamiento de la solicitud al servicio adecuado en el clúster. Si la solicitud se enruta al servicio que se va a reemplazar, se enrutará al servicio original en lugar de al agente remoto.
+
+> [!IMPORTANT]
+> Cada servicio del clúster debe reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* al realizar solicitudes adicionales. Por ejemplo, cuando *serviceA* recibe una solicitud, realiza una solicitud a *serviceB* antes de devolver una respuesta. En este ejemplo, *serviceA* tiene que reenviar el encabezado *kubernetes-route-as=GENERATED_NAME* de su solicitud a *serviceB*. Algunos lenguajes, como [ASP.NET][asp-net-header], pueden tener métodos para controlar la propagación de encabezados.
+
+Cuando se desconecta del clúster, de forma predeterminada, Proceso local con Kubernetes quitará todos los pods de envío y el servicio duplicado. 
+
+> [NOTA] La implementación y el servicio del administrador de enrutamiento seguirán ejecutándose en el espacio de nombres. Para quitar la implementación y el servicio, ejecute los siguientes comandos para el espacio de nombres.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnósticos y registro
 
 Al usar Proceso local con Kubernetes para conectarse al clúster, los registros de diagnóstico del clúster se registran en el [directorio temporal][azds-tmp-dir] del equipo de desarrollo.
@@ -52,11 +90,17 @@ El proceso local con Kubernetes tiene las siguientes limitaciones:
 * Un servicio debe estar respaldado por un único pod para poder conectarse a ese servicio. No se puede conectar a un servicio con varios pods, como un servicio con réplicas.
 * Un pod solo puede tener un único contenedor que se ejecute en ese pod para el proceso local con Kubernetes para conectarse correctamente. El proceso local con Kubernetes no se puede conectar a los servicios con pods que tienen contenedores adicionales, como los contenedores sidecar inyectados por las mallas de servicios.
 * El proceso local con Kubernetes necesita permisos elevados para ejecutarse en el equipo de desarrollo con el fin de editar el archivo de hosts.
+* Proceso local con Kubernetes no se puede usar en clústeres que tengan habilitado Azure Dev Spaces.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Proceso local con Kubernetes y clústeres con Azure Dev Spaces habilitado
+
+No se puede usar Proceso local con Kubernetes en un clúster que tenga habilitado Azure Dev Spaces. Si quiere usar Proceso local con Kubernetes en un clúster con Azure Dev Spaces habilitado, debe deshabilitar Azure Dev Spaces antes de conectarse al clúster.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para empezar a usar Proceso local con Kubernetes a fin de conectarse al equipo de desarrollo local en el clúster, consulte [Uso de Proceso local con Kubernetes](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

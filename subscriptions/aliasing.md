@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
-ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509062"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234645"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
@@ -36,7 +36,7 @@ Un error de coincidencia de nombre principal de usuario (UPN) puede producirse c
 2. Compruebe que la dirección de correo electrónico de inicio de sesión que aparece en la parte superior derecha de la página coincide con la que usó para iniciar sesión.  Si no es así, el UPN no coincide y no podrá ver la suscripción. 
 
 > [!div class="mx-imgBorder"]
-> ![Dirección de correo electrónico de inicio de sesión](_img//aliasing/sign-in-email.png)
+> ![Dirección de correo electrónico de inicio de sesión](_img//aliasing/sign-in-email.png "Asegúrese de que la dirección de correo electrónico que se muestra en la parte superior derecha coincide con la que usa para iniciar sesión.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Corrección de un error de coincidencia de UPN
 
@@ -69,7 +69,7 @@ La plataforma de Visual Studio da prioridad al alias principal para mostrar los
 2. En Alias de cuenta, seleccione **Convertir en principal** junto a la dirección de correo electrónico utilizada para asignar la suscripción. 
 
 > [!div class="mx-imgBorder"]
-> ![Establecimiento de la dirección de correo electrónico principal](_img//aliasing/account-aliases.png)
+> ![Establecimiento de la dirección de correo electrónico principal](_img//aliasing/account-aliases.png "Use el vínculo Convertir en principal para elegir el alias principal de las suscripciones.")
 
 3. Cierre sesión en el portal de suscripciones de Visual Studio (https://my.visualstudio.com) 
 

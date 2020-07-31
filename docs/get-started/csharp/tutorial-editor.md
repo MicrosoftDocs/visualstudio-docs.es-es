@@ -12,16 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75590441"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234970"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
+# <a name="learn-to-use-the-code-editor-with-c"></a>Información sobre cómo usar el editor de código con C#
 
-En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
+En esta introducción de 10 minutos al editor de código en Visual Studio, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código de C# (así como desplazarse por él) sea más fácil.
 
 ::: moniker range="vs-2017"
 

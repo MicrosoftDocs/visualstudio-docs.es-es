@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 03/24/2020
+ms.date: 07/22/2020
 ms.topic: conceptual
 description: Descubra cómo puede usar Azure DevOps como un suscriptor de Visual Studio.
-ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444834"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115318"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Ventajas de Azure DevOps para suscriptores de Visual Studio
 Como suscriptor activo de Visual Studio, puede usar una serie de características de Azure DevOps que se incluyen como ventaja en la suscripción. Podrá usar estas mismas características en cada organización de Azure DevOps de la que sea miembro (porque haya creado la organización usted mismo o porque otra persona le ha agregado).
@@ -30,22 +30,27 @@ Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup>  | Azure Boards y Repos (básico), Azure Test Plans, Azure Pipelines (autohospedado)       |  Sí          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards y Repos (básico), Azure Test Plans, Azure Pipelines (autohospedado)       |  Sí          |
-| Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                        | Azure Boards y Repos (básico)                                                            |  Sí          |
-| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards y Repos (básico)                                                            |  Sí          |
-| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Azure Boards y Repos (básico), Azure Test Plans                                              |  Sí          |
-| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Azure Boards y Repos (básico), Azure Test Plans                                              |  Sí          |
+| Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup>  | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans, trabajos paralelos autohospedados [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Sí          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans, trabajos paralelos autohospedados [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Sí          |
+| Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                        | Azure Boards y Azure Repos (básico<sup>2</sup>) [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sí          |
+| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards y Azure Repos (básico<sup>2</sup>) [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sí          |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sí          |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Azure Boards y Azure Repos (básico<sup>2</sup>), Azure Test Plans [Más información](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sí          |
 ||
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Excluye: MCT Software & Services, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Excluye: MCT Software & Services, Imagine.*
 
+<sup>2</sup> *El plan básico incluye la definición de canalizaciones de versión y canalizaciones de implementación continua (CD) de varias fases, así como el uso de aprobaciones y puertas para controlar las implementaciones. Cuando se habilita la característica de versión preliminar Acceso gratuito a las canalizaciones, las partes interesadas obtienen acceso a todas las características de Azure Pipelines. Para obtener más información sobre las características incluidas en los planes, visite la página [Acerca de los niveles de acceso](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) de Azure.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones de Visual Studio que tiene asignadas.
 Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+### <a name="q-as-a-visual-studio-enterprise-subscriber-do-i-get-additional-parallel-jobs-for-tfs-and-azure-pipelines"></a>P: Como suscriptor de Visual Studio Enterprise, ¿obtengo trabajos paralelos adicionales para TFS y Azure Pipelines?
+R:  Sí. Los suscriptores de Visual Studio Enterprise obtienen un trabajo paralelo en Team Foundation Server 2017 o versiones posteriores y un trabajo paralelo autohospedado en cada organización de Azure DevOps Services de la que sean miembros.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 - Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte técnico para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.

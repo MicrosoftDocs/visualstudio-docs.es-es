@@ -2,7 +2,7 @@
 title: Iniciar sesión en Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285301"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235204"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -38,7 +38,7 @@ Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 - **Extensión del período de prueba de Visual Studio**: puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días. Para ver más información, consulte [Ampliar una versión de prueba o actualizar una licencia](../ide/how-to-unlock-visual-studio.md).
 
-- **Desbloqueo de Visual Studio Community**: si la instalación de la edición Community solicita una licencia, inicie sesión en el IDE para desbloquearse a sí mismo.
+- **Continuación del uso de Visual Studio Community**: si la instalación de la edición Community solicita una licencia, inicie sesión en el IDE para seguir usando Visual Studio Community **gratis**. 
 
 - **Desbloqueo de Visual Studio si usa una cuenta asociada con una suscripción de Visual Studio o una organización de Azure DevOps**. Para ver instrucciones detalladas, consulte [Ampliar una versión de prueba o actualizar una licencia](../ide/how-to-unlock-visual-studio.md).
 
