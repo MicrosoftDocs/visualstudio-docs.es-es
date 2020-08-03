@@ -8,16 +8,17 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82921356"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507968"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Crear una IU con el Diseñador XAML
 
@@ -122,8 +123,8 @@ La ventana Esquema del documento de Visual Studio es similar a la ventana [Obje
 
 - [Crear animaciones](animate-objects-in-xaml-designer.md) (solo en Blend para Visual Studio).
 
-Para ver la ventana esquema del documento en Visual Studio, en la barra de menús, seleccione **Ver** > **otro** > **esquema del documento**de Windows.
-Para ver la ventana de objetos y escala de tiempo en Blend para Visual Studio, en la barra de menús, seleccione **Ver** > **esquema del documento**.
+Para ver la ventana esquema del documento en Visual Studio, en la barra de menús, seleccione **Ver**  >  **otro**  >  **esquema del documento**de Windows.
+Para ver la ventana de objetos y escala de tiempo en Blend para Visual Studio, en la barra de menús, seleccione **Ver**  >  **esquema del documento**.
 
 ![Ventana Esquema del documento en Visual Studio](media/document-outline-window.png)
 
@@ -131,11 +132,11 @@ La vista principal de la ventana Esquema del documento/Objetos y escala de tiemp
 
 **Mostrar u ocultar**
 
-Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl**+**h** para ocultar un elemento y **desplazar**+**Ctrl**+**h** para mostrarlo.
+Muestra u oculta los elementos de la mesa de trabajo. Cuando se muestra, aparece como el símbolo de un ojo. También puede presionar **Ctrl** + **h** para ocultar un elemento y **desplazar** + **Ctrl** + **h** para mostrarlo.
 
 **Bloquear o desbloquear**
 
-Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl**+**l** para bloquear un elemento y **MAYÚS**+**Ctrl**+**l** para desbloquearlo.
+Bloquea o desbloquea los elementos de la mesa de trabajo. Los elementos bloqueados no se pueden modificar. Cuando se bloquea un elemento, aparece un símbolo de candado. También puede presionar **Ctrl** + **l** para bloquear un elemento y **MAYÚS** + **Ctrl** + **l** para desbloquearlo.
 
 **Devolver ámbito a pageRoot**
 
@@ -161,7 +162,7 @@ A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* 
 
 Para más información sobre cómo usar las propiedades y controlar los eventos, consulte [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Trabajo con elementos en el Diseñador XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Cómo crear y aplicar un recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)
