@@ -97,6 +97,6 @@ De forma predeterminada, todos los proyectos administrados de una solución tien
 
 5. Seleccione el campo **conjunto de reglas** de un proyecto y, a continuación, seleccione el nombre del conjunto de reglas que desea aplicar.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también:
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)
