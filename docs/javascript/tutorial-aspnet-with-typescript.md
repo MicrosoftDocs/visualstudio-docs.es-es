@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283572"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453698"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Crear una aplicación ASP.NET Core con TypeScript en Visual Studio
 
@@ -91,9 +91,6 @@ En este tutorial, empezará con un proyecto simple que contiene el código de un
    ![Adición del paquete NuGet](../javascript/media/aspnet-core-ts-nuget.png)
 
    Visual Studio agrega el paquete NuGet en el nodo **Dependencias** del Explorador de soluciones.
-
-   > [!NOTE]
-   > Este tutorial requiere el paquete NuGet. Como alternativa, en sus propias aplicaciones, es posible que desee usar el [paquete npm de TypeScript](https://www.npmjs.com/package/typescript).
 
 1. Haga clic con el botón derecho en el nodo de proyecto y elija **Agregar > Nuevo elemento**. Elija el **archivo de configuración JSON de TypeScript** y, a continuación, haga clic en **Agregar**.
 
