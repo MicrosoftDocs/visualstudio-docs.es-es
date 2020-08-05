@@ -1,6 +1,6 @@
 - name: JavaScript y TypeScript
   href: index.yml
-- name: Introducción
+- name: Información general
   items:
     - name: JavaScript en Visual Studio 2019
       href: javascript-in-vs-2019.md
@@ -26,18 +26,26 @@
       href: publish-nodejs-app-azure.md
 - name: Guías de procedimientos
   items:
-    - name: Escribir y editar código
-      href: write-and-edit-code.md
-    - name: Crear una aplicación Vue.js
-      href: create-application-with-vuejs.md
+    - name: Editor
+      items:
+        - name: Escribir y editar código
+          href: write-and-edit-code.md
+        - name: IntelliSense para JavaScript
+          href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: Compilar
+      items:
+        - name: Compilar código TypeScript con tsc
+          href: compile-typescript-code-npm.md
+        - name: Compilar código TypeScript con NuGet
+          href: compile-typescript-code-nuget.md
     - name: Administrar paquetes de npm
       href: npm-package-management.md
     - name: Desarrollar sin proyectos o soluciones ("Abrir carpeta")
       href: develop-javascript-code-without-solutions-projects.md
+    - name: Crear una aplicación Vue.js
+      href: create-application-with-vuejs.md
     - name: Uso de REPL interactivo de Node.js
       href: nodejs-interactive-repl.md
-    - name: IntelliSense para JavaScript
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
     - name: Depuración
       href: debug-nodejs.md
     - name: Pruebas unitarias
