@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Configuración de los administradores de suscripciones mensuales
-ms.openlocfilehash: ef1536eb27beb501fc278d1a95521905c9d9485a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903117"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434307"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configuración de los administradores de suscripciones mensuales de Visual Studio
 
@@ -36,19 +36,19 @@ Para agregar administradores:
 2. Inicie sesión con la cuenta que utilizó para comprar las suscripciones mensuales de Visual Studio.
 3. En **Servicios de Azure**, seleccione **Administración de costos + facturación**.
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar Administración de costos + facturación en Servicios de Azure](_img/cloud-admin/azure-cost-billing.png)
+   > ![Seleccionar Administración de costos + facturación en Servicios de Azure](_img/cloud-admin/azure-cost-billing.png "Elija Cost Management en el grupo de servicios de Azure.")
 4. En la lista **Mis suscripciones**, elija la suscripción de Azure que utilizó para realizar la compra.
    > [!div class="mx-imgBorder"]
-   > ![Elección de la suscripción](_img/cloud-admin/subscription-list.png)
+   > ![Elección de la suscripción](_img/cloud-admin/subscription-list.png "Elija la suscripción de Azure que desea usar para realizar la compra.")
 5. Haga clic en **Control de acceso (IAM)** , que se encuentra cerca de la parte superior de la lista en el panel de navegación izquierdo.
 6. Haga clic en la pestaña **Agregar** en la parte superior de la página.
 7. Haga clic en **Agregar asignación de roles**.
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar Control de acceso, Agregar, Agregar asignación de roles](_img/cloud-admin/access-control-add.png)
+   > ![Seleccionar Control de acceso, Agregar, Agregar asignación de roles](_img/cloud-admin/access-control-add.png "Elija Control de acceso en la lista de la izquierda y, a continuación, elija Agregar.")
 8. En el panel de la derecha, haga clic en el menú desplegable **Rol** de la parte superior, desplácese hacia abajo y seleccione **Administrador de acceso de usuarios**.
 9. En la lista de usuarios, desplácese hasta el usuario que quiere convertir en administrador y selecciónelo. 
    > [!div class="mx-imgBorder"]
-   > ![Seleccionar Rol, Administrador de acceso de usuarios](_img/cloud-admin/add-role-user-access-admin.png)
+   > ![Seleccionar Rol, Administrador de acceso de usuarios](_img/cloud-admin/add-role-user-access-admin.png "Elija Rol, seleccione Administrador de acceso de usuario y, a continuación, seleccione el nombre del usuario para que sea administrador.")
 10. Haga clic en **Guardar**.
 11. Haga clic en la pestaña **Asignaciones de roles** para comprobar que el usuario seleccionado aparece ahora como Administrador de acceso de usuario.
 

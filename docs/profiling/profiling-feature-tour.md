@@ -3,7 +3,11 @@ title: Medición del rendimiento con herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816701"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507994"
 ---
 # <a name="first-look-at-profiling-tools"></a>Un primer vistazo a las herramientas de generación de perfiles
 
@@ -168,7 +172,7 @@ Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Análisis del uso de la red (UWP)
 
-En las aplicaciones UWP, puede analizar las operaciones de red realizadas mediante la API `Windows.Web.Http`. Esta herramienta puede ayudarle a resolver cuestiones como problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga. Para usar la herramienta, seleccione **Red** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones para UWP, puede analizar las operaciones de red realizadas mediante la API `Windows.Web.Http`. Esta herramienta puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga. Para usar la herramienta, seleccione **Red** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario que use `Windows.Web.Http` y, después, seleccione **Detener recolección** para generar el informe.
 
 ![Herramienta de generación de perfiles de uso de red](../profiling/media/prof-tour-network-usage.png "Diagrama de Uso de red")
 
@@ -198,13 +202,13 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 ::: moniker range=">=vs-2019"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí|sí|
-|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
-|[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|sí|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
-|[Visor de eventos](../profiling/events-viewer.md)|sí|sí|sí|
+|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí|Sí|
+|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|Sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|Sí|
+|[Asignación de objetos .NET](../profiling/dotnet-alloc-tool.md)|sí (solo .NET)|sí|Sí|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|Sí|no|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|Sí|No|
+|[Visor de eventos](../profiling/events-viewer.md)|sí|sí|Sí|
 |[.NET Async](../profiling/analyze-async.md)|sí (solo .NET)|sí|sí|
 |[Base de datos](../profiling/analyze-database.md)|sí (solo .NET Core)|No|sí (solo ASP.NET Core)|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|No|No|No|
@@ -214,10 +218,10 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 ::: moniker range="vs-2017"
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|sí|no|
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
+|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|Sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|Sí|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sí|Sí|no|
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|Sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|

@@ -1,6 +1,6 @@
 ---
 title: Personalizar los diseños de ventana
-ms.date: 01/23/2017
+ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -23,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
+ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596715"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87546082"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 
@@ -36,33 +36,55 @@ En Visual Studio, puede personalizar la posición, el tamaño y el comportamien
 
 También puede asignar un nombre al diseño personalizado, guardarlo y luego cambiar de un diseño a otro con un solo comando. Por ejemplo, puede crear un diseño para la edición y otro para la depuración, y cambiar de un diseño a otro mediante el comando de menú **Ventana** > **Aplicar diseño de ventana**.
 
-## <a name="kinds-of-windows"></a>Tipos de ventanas
-
-### <a name="tool-and-document-windows"></a>Ventanas de herramientas y documentos
+## <a name="tool-and-document-windows"></a>Ventanas de herramientas y documentos
 
 El IDE incluye dos tipos básicos de ventanas, las *ventanas de herramientas* y las *ventanas de documento*. Entre las ventanas de herramientas están el **Explorador de soluciones**, el **Explorador de servidores**, la **Ventana de salida**, la **Lista de errores**, los diseñadores, las ventanas del depurador, etc. Las ventanas de documento contienen archivos de código fuente, archivos de texto arbitrarios, archivos de configuración, etc. Las ventanas de herramientas se pueden cambiar de tamaño y arrastrar por la barra de título. Las ventanas de documento se pueden arrastrar mediante la pestaña. Haga clic con el botón derecho en la barra de título o pestaña para establecer otras opciones en la ventana.
 
 El menú **Ventana** muestra las opciones para acoplar, hacer flotante y ocultar ventanas en el IDE. Haga clic con el botón derecho en una pestaña de ventana o en la barra de título para ver las opciones adicionales de esa ventana concreta. Puede mostrar más de una instancia de determinadas ventanas de herramientas a la vez. Por ejemplo, puede mostrar más de una ventana del explorador web y crear instancias adicionales de algunas ventanas de herramientas eligiendo **Nueva ventana** en el menú **Ventana** .
 
-### <a name="preview-tab-document-windows"></a>Ficha Vista previa (ventanas de documento)
-
-En la pestaña **Vista previa**, puede ver los archivos en el editor sin abrirlos. Puede obtener una vista previa de los archivos eligiéndolos en el **Explorador de soluciones**, al depurar los archivos paso a paso por instrucciones, con **Ir a definición** y cuando se desplaza por los resultados de la búsqueda. La vista previa de los archivos aparece en una ficha en el lado derecho de la ficha de documento. El archivo se abre para su edición si lo modifica o elige la opción **Abrir**.
-
-### <a name="tab-groups"></a>Grupos de pestañas
-
-Los grupos de pestañas mejoran su capacidad de administrar un área de trabajo reducida mientras trabaja con dos o más documentos abiertos en el IDE. Puede organizar varias ventanas de documento y ventanas de herramientas en grupos de pestañas horizontales o verticales e intercambiar documentos de un grupo a otro.
-
 ### <a name="split-windows"></a>Ventanas divisoras
 
 Cuando tiene que ver o editar dos ubicaciones a la vez en un documento, puede dividir las ventanas. Para dividir el documento en dos secciones con desplazamiento independiente, haga clic en **Dividir** en el menú **Ventana** . Haga clic en **Quitar división** en el menú **Ventana** para restaurar la vista única.
 
+### <a name="tabs"></a>Tabulaciones
+
+Puede usar pestañas para organizar el diseño de varias maneras diferentes. Por ejemplo, puede ver una vista previa de un archivo en el editor sin abrir el archivo, agrupar las pestañas, etc.
+
+#### <a name="preview-tab-document-windows"></a>Ficha Vista previa (ventanas de documento)
+
+En la pestaña **Vista previa**, puede ver los archivos en el editor sin abrirlos. Puede obtener una vista previa de los archivos eligiéndolos en el **Explorador de soluciones**, al depurar los archivos paso a paso por instrucciones, con **Ir a definición** y cuando se desplaza por los resultados de la búsqueda. La vista previa de los archivos aparece en una ficha en el lado derecho de la ficha de documento. El archivo se abre para su edición si lo modifica o elige la opción **Abrir**.
+
+::: moniker range="vs-2019"
+
+#### <a name="vertical-document-tabs"></a>Pestañas de documentos verticales
+
+**[Nuevo en la versión 16.4](/visualstudio/releases/2019/release-notes-v16.4/)** : hemos agregado una de las principales solicitudes de características, [pestañas de documentos verticales](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html), en Visual Studio 2019 versión 16.4. Ahora puede administrar las pestañas de documentos en una lista vertical en el lado izquierdo o derecho del editor.
+
+Puede aplicar pestañas de documentos verticales de las siguientes formas:
+
+- Elija **Herramientas** > **Opciones** > **Entorno** > **Pestañas y Windows** en la barra de menús. A continuación, en el control **Establecer diseño de pestaña**, elija **Superior**, **Izquierda** o **Derecha** en la lista desplegable.
+
+- Haga clic con el botón derecho en una pestaña, elija **Establecer diseño de pestaña** y, a continuación, elija **Izquierda** o **Derecha** (para devolver las pestañas a su posición predeterminada, elija **Superior**).
+
+    :::image type="content" source="./media/vs-2019/vertical-tabs.gif" alt-text="Animación que muestra las pestañas de documentos verticales en acción":::
+
+::: moniker-end
+
+#### <a name="tab-groups"></a>Grupos de pestañas
+
+Los grupos de pestañas mejoran su capacidad de administrar un área de trabajo reducida mientras trabaja con dos o más documentos abiertos en el IDE. Puede organizar varias ventanas de documento y ventanas de herramientas en grupos de pestañas horizontales o verticales e intercambiar documentos de un grupo a otro.
+
 ### <a name="toolbars"></a>Barras de herramientas
 
-Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo ubicar y personalizar barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Puede organizar las barras de herramientas arrastrándolas hasta el lugar donde desea que estén, o bien mediante el cuadro de diálogo **Personalizar**. Para obtener más información sobre cómo ubicar y personalizar barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Ordenar y acoplar las ventanas
 
-Las ventanas de documento y las ventanas de herramientas se pueden *acoplar* para que ocupen una posición dentro del marco de ventana del IDE o floten como una ventana independiente del IDE. Las ventanas de herramientas se pueden acoplar en cualquier lugar dentro del marco del IDE; algunas ventanas de herramientas se pueden acoplar como ventanas con fichas en el marco del editor. Las ventanas de documento se pueden acoplar dentro del marco del editor y se pueden anclar en su posición actual en el orden de tabulación. Puede acoplar varias ventanas flotantes juntas para que compartan *espacio* sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.
+Las ventanas de documento y las ventanas de herramientas se pueden *acoplar* para que tengan un tamaño y ocupen una posición dentro del marco de ventana del IDE. También puede colocarlas como ventanas flotantes independientes situadas fuera del IDE.
+
+Puede acoplar una ventana de herramientas en cualquier lugar dentro del marco del IDE. También puede acoplar algunas ventanas de herramientas como ventanas con pestañas en el marco del editor. Además, puede acoplar las ventanas de documento dentro del marco del editor y las puede anclar en su posición actual en el orden de tabulación.
+
+También puede acoplar varias ventanas flotantes juntas para que compartan *espacio* sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.
 
 Puede organizar las ventanas de la siguiente manera:
 
@@ -80,7 +102,7 @@ Puede organizar las ventanas de la siguiente manera:
 
 - Restablezca el diseño predeterminado de ubicación de las ventana o un diseño personalizado que haya guardado.
 
-Organice las ventanas de herramientas y de documento arrastrándolas, utilizando comandos del menú **Ventana** o haciendo clic con el botón derecho en la barra de título de la ventana que quiere organizar.
+Para organizar las ventanas de herramientas y de documento, puede colocar el cursor en la barra de título de una ventana y, a continuación, arrastrarla hasta el lugar donde desea que esté. También puede hacer clic con el botón derecho en la barra de título de la ventana para usar su menú contextual, o bien puede usar los comandos del menú **Ventana**.
 
 ### <a name="dock-windows"></a>Acoplar ventanas
 
@@ -114,7 +136,7 @@ Puede cerrar una ventana de herramientas haciendo clic en la **X** de la esquina
 > [!NOTE]
 > Las ventanas de herramientas que tienen habilitada la opción Ocultar automáticamente pueden deslizarse temporalmente en la vista cuando la ventana tiene el foco. Para volver a ocultar la ventana, seleccione un elemento fuera de la ventana actual. Cuando la ventana pierde el foco, vuelve a desaparecer.
 
-### <a name="specifying-a-second-monitor"></a>Especificar un segundo monitor
+### <a name="use-a-second-monitor"></a>Usar un segundo monitor
 
 Si tiene un segundo monitor y su sistema operativo lo admite, puede elegir qué monitor muestra una ventana. Incluso puede agrupar varias ventanas en *espacios compartidos* en otros monitores.
 
@@ -182,6 +204,6 @@ Para recordar el método abreviado de teclado que está asignado a cada diseño,
 
 Estos diseños se transmiten automáticamente entre las ediciones de Visual Studio, entre las instancias de Blend que hay en máquinas independientes y de cualquier edición de Express a cualquier otra organización de Express. Sin embargo, los diseños no se transmiten entre Visual Studio, Blend y Express.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

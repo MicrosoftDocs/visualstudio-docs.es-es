@@ -2,7 +2,7 @@
 title: Guía del administrador de Visual Studio
 titleSuffix: ''
 description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419268"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425412"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -40,13 +40,17 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), así como la página [Procedimiento: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 
 * Decida sobre el modelo de actualización.
 
   ¿Dónde quiere que los equipos cliente individuales obtengan las actualizaciones? En concreto, decida si quiere obtener actualizaciones desde Internet o desde un recurso compartido local de la empresa. Luego, si opta por usar un recurso compartido local, decida si los usuarios individuales pueden actualizar sus propios clientes o si quiere que un administrador actualice los clientes mediante programación.
+
+  Se puede actualizar un diseño de instalación de red de Visual Studio con las actualizaciones de producto más recientes, de manera que se puede usar tanto como punto de instalación de la actualización más reciente de Visual Studio como para mantener instalaciones que ya están implementadas en estaciones de trabajo cliente. Para obtener más información, consulte [Actualización de una instalación basada en red de Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  En el caso de los equipos que no están conectados a Internet, la creación de un diseño mínimo es la manera más fácil y rápida de actualizar las instancias de Visual Studio sin conexión. Para obtener más información, consulte [Actualización de Visual Studio con un diseño sin conexión mínimo](update-minimal-layout.md).
 
 * Decida qué [cargas de trabajo y componentes](workload-and-component-ids.md?view=vs-2019) necesita la empresa.
 
@@ -62,13 +66,17 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Soporte técnico de versiones anteriores de Visual Studio*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), así como la página [Procedimiento: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Soporte técnico de versiones anteriores de Visual Studio*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), así como la página [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 
 * Decida sobre el modelo de actualización.
 
   ¿Dónde quiere que los equipos cliente individuales obtengan las actualizaciones? En concreto, decida si quiere obtener actualizaciones desde Internet o desde un recurso compartido local de la empresa. Luego, si opta por usar un recurso compartido local, decida si los usuarios individuales pueden actualizar sus propios clientes o si quiere que un administrador actualice los clientes mediante programación.
+
+  Se puede actualizar un diseño de instalación de red de Visual Studio con las actualizaciones de producto más recientes, de manera que se puede usar tanto como punto de instalación de la actualización más reciente de Visual Studio como para mantener instalaciones que ya están implementadas en estaciones de trabajo cliente. Para obtener más información, consulte [Actualización de una instalación basada en red de Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  En el caso de los equipos que no están conectados a Internet, la creación de un diseño mínimo es la manera más fácil y rápida de actualizar las instancias de Visual Studio sin conexión. Para obtener más información, consulte [Actualización de Visual Studio con un diseño sin conexión mínimo](update-minimal-layout.md).
 
 * Decida qué [cargas de trabajo y componentes](workload-and-component-ids.md?view=vs-2017) necesita la empresa.
 
@@ -174,7 +182,7 @@ El registro se encuentra en el directorio *Software\Microsoft\VisualStudio\15.0_
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
 * [Instalar los certificados necesarios para la instalación sin conexión de Visual Studio](install-certificates-for-visual-studio-offline.md)

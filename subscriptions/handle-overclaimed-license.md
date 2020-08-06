@@ -7,14 +7,14 @@ ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Conozca cómo los administradores pueden resolver suscripciones sobreasignadas
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232449"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453722"
 ---
-# <a name="overallocated-subscriptions"></a>Suscripciones con exceso de asignación
+# <a name="over-allocated-subscriptions"></a>Suscripciones con exceso de asignación
 A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Este hecho se conoce como "sobreasignación".  
 
 Para ver las asignaciones de suscripción, haga clic en el icono superior de la izquierda para abrir el panel Asignaciones.  
@@ -23,11 +23,11 @@ Para ver las asignaciones de suscripción, haga clic en el icono superior de la 
 > No se permiten sobreasignaciones en programas de licencia abierta.  Además, otros programas pueden mostrar esta información en el portal de forma diferente.
 >
 > [!div class="mx-imgBorder"]
-> ![Aviso de exceso de asignación de suscripciones](_img/over-claimed/over-claimed-alert.png)
+> ![Aviso de exceso de asignación de suscripciones](_img/over-claimed/over-claimed-alert.png "El número de sobreasignaciones se muestra en la información general y la barra con hash lo representa en el gráfico para cada tipo de suscripción.")
 
 Observe que las suscripciones sobreasignadas se muestran con una barra desteñida.  En la sección de información general de la parte superior se indica el número de sobreasignaciones para todos los tipos de suscripción, y cada nivel de suscripción también muestra su propio estado de asignación.  
 
-## <a name="resolve-overallocated-subscriptions"></a>Resolución de las suscripciones sobreasignadas
+## <a name="resolve-over-allocated-subscriptions"></a>Resolución de las suscripciones sobreasignadas
 Hay varias maneras de resolver las sobreasignaciones:
 - Póngase en contacto con su revendedor para adquirir suscripciones adicionales.
 - Espere a su período anual de true-up y pague las suscripciones sobreasignadas en ese momento. 

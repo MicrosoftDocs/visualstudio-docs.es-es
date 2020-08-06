@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904567"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434250"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
 Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escuela, lo más probable es que se la haya asignado un administrador de suscripciones.  Los administradores pueden asignar o eliminar suscripciones, cambiar las direcciones de correo electrónico de inicio de sesión, determinar si puede descargar software y realizar otras funciones relacionadas con la suscripción.
@@ -24,7 +24,7 @@ Dados el tamaño y la complejidad de muchas organizaciones, es posible que desco
 2. Haga clic en la pestaña **Suscripciones**. 
 3. Haga clic en el botón **Contact my Admin** (Contacto con el administrador) en la parte superior derecha. 
    > [!div class="mx-imgBorder"]
-   > ![Contacto con el administrador](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![Contacto con el administrador](_img/contact-my-admin/contact-my-admin-button.png "Haga clic en el botón Contacto con el administrador, escriba su mensaje y haga clic en Enviar.")
 4. Escriba el mensaje para el administrador.
 5. Si quiere recibir una copia del mensaje enviado al administrador, haga clic en la casilla **Send me a copy** (Enviarme una copia). 
 6. Por último, haga clic en **Enviar**.

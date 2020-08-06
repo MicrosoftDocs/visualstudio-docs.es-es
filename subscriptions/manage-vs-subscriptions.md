@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444885"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453685"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -26,14 +26,14 @@ En el portal de suscripciones de Visual Studio se reúnen todos los programas y 
 
 En la página de beneficios, se mostrará la suscripción que está usando en un lugar destacado del banner azul. También se muestra en la esquina superior derecha de la página.
 > [!div class="mx-imgBorder"]
-> ![Suscripción activa](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![Suscripción activa](_img/manage-vs-subscriptions/current-subscription-cropped.png "Su suscripción actual se muestra en la parte superior de la página y en la lista desplegable de suscripciones.")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para cambiar entre suscripciones, use una de las opciones siguientes:
 
 - Haga clic en la lista desplegable de la parte superior derecha y elija la suscripción de la lista.
 - Haga clic en la pestaña Suscripciones y en la suscripción que prefiera.
   > [!div class="mx-imgBorder"]
-  > ![Cambiar entre suscripciones](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![Cambiar entre suscripciones](_img/manage-vs-subscriptions/change-subscription-resized.png "Haga clic en la pestaña Suscripciones para ver información detallada sobre todas sus suscripciones y cambiar entre ellas.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si la suscripción no está visible...
 
@@ -78,7 +78,7 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
 Si desea recibir actualizaciones periódicas sobre su suscripción y ventajas, incluido el boletín de instancias de Visual Studio Subscription mensual, [actualice sus preferencias](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) marcando la casilla para instancias de Visual Studio Subscription en su perfil de Visual Studio. Puede cambiar estas preferencias y anular la suscripción en cualquier momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Establecimiento de preferencias](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![Establecimiento de preferencias](_img/manage-vs-subscriptions/change-prefs.png "Haga clic en la casilla de correos electrónicos del programa de suscripciones a Visual Studio para recibir actualizaciones.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de Azure DevOps Services o Azure
 Si inicia sesión en su suscripción mediante una cuenta de Microsoft (MSA) personal y tiene una suscripción que incluye Azure DevOps Services o Microsoft Azure mediante una cuenta profesional o educativa administrada por Azure, puede vincular las dos suscripciones. Esto es lo que se denomina una "cuenta alternativa", que permite seguir usando la MSA para iniciar sesión en su suscripción, así como obtener acceso a los recursos existentes de Azure, Azure DevOps Services o IDE asociados a las cuentas profesionales o educativas.

@@ -2,17 +2,17 @@
 title: Edición de suscripciones en el Portal de administración | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: Obtenga más información sobre cómo los administradores pueden editar asignaciones de suscripción.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902933"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453738"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Edición de asignaciones de suscripciones de Visual Studio
 Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios.
@@ -25,7 +25,7 @@ Puede editar la información del suscriptor para corregir los errores o actualiz
 
 Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen junto a la dirección de correo electrónico del suscriptor al mantener el mouse sobre él. Aparecerá una lista desplegable.  Seleccione **Editar** para modificar los detalles del suscriptor. 
 > [!div class="mx-imgBorder"]
-> ![Selección de un suscriptor para editarlo](_img/edit-license/select-subscriber.png)
+> ![Selección de un suscriptor para editarlo](_img/edit-license/select-subscriber.png "Haga clic en el botón de puntos suspensivos y elija Editar.")
 
 Puede actualizar el nombre del suscriptor, el apellido, el nivel de suscripción, la dirección de correo electrónico, el país o región, el idioma, las descargas y el campo de referencia. Edite la información del suscriptor y haga clic en **Guardar**.
 
@@ -45,13 +45,13 @@ Puede editar varios suscriptores a la vez mediante el proceso de edición en mas
 
 2. La edición en masa usa una plantilla de Excel para realizar modificaciones en la información de los suscriptores. En el cuadro Edición en masa, haga clic en **Export this Excel** (Exportar este Excel) para descargar la lista actual de los suscriptores con toda su información.
    > [!div class="mx-imgBorder"]
-   > ![Edición de una licencia: exportación en masa de la lista de ediciones](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![Edición de una licencia: exportación en masa de la lista de ediciones](_img/edit-license/edit-license-bulk-edit-export.png "Haga clic en Exportar este Excel para crear una lista de sus suscripciones actuales.")
 
 3. Después, guarde el archivo localmente de modo que pueda encontrarlo fácilmente y realizar los cambios necesarios antes de cargarlo. Para garantizar una carga correcta, **no edite el nivel de suscripción ni el GUID de suscripción** en el archivo de edición masiva, ya que si lo hace la carga no se podrá efectuar.
 
 4. Vuelva al Portal de administradores de suscripciones de Visual Studio y, en el cuadro de diálogo Edición en masa, haga clic en **Examinar**. Seleccione el archivo de Excel que ha guardado y haga clic en **Aceptar**. Verá el progreso de la carga en la pantalla.
    > [!div class="mx-imgBorder"]
-   > ![Edición de una licencia: carga de archivos de ediciones en masa](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![Edición de una licencia: carga de archivos de ediciones en masa](_img/edit-license/edit-license-bulk-file-upload1.png "Vaya a la ubicación del archivo de Excel completado, selecciónelo y haga clic en Aceptar.")
 
 5. Cuando haya cargado el archivo, verá una notificación en la que se le indicará que se ha realizado correctamente. En este momento, los cambios se reflejarán en la información del suscriptor.
 
@@ -65,5 +65,3 @@ Puede editar varios suscriptores a la vez mediante el proceso de edición en mas
 - ¿Necesita asignar un identificador de suscripción específico? Consulte la asignación de un identificador de suscripción. 
 - Si necesita ayuda para encontrar una suscripción determinada, consulte [Búsqueda de suscripciones](search-license.md).
 - ¿Necesita crear una lista de todas las suscripciones?  Consulte [Exportar suscripciones](exporting-subscriptions.md).
-
-

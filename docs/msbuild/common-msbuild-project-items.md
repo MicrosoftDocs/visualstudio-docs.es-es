@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182916"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425399"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 
@@ -170,3 +170,4 @@ Representa los ensamblados cuyos espacios de nombres debe importar el compilador
 
 - [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propiedades de MSBuild para proyectos del SDK de .NET Core](/dotnet/core/project-sdk/msbuild-props)
+- [Metadatos de elementos MSBuild comunes](common-msbuild-item-metadata.md)

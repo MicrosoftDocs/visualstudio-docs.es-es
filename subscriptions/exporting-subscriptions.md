@@ -2,17 +2,17 @@
 title: Exportación de la información de suscripción | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
-ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232505"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453572"
 ---
 # <a name="export-subscription-information"></a>Información sobre la exportación de suscripciones
 En el [Portal de administración](https://manage.visualstudio.com) de Suscripciones de Visual Studio, puede exportar una lista de los suscriptores y detalles sobre sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha de asignación, estado de activación, fecha de expiración, campo de referencia, si están habilitadas las descargas, país, idioma, estado de la suscripción y GUID de la suscripción.  La lista se exporta como un archivo CSV, que se puede abrir fácilmente en Microsoft Excel para la creación de gráficos, tablas dinámicas y otros artefactos.
@@ -30,7 +30,7 @@ Para realizar la exportación, siga estos pasos:
 1. Inicie sesión en el [Portal de administración](https://manage.visualstudio.com).
 2. Seleccione la pestaña **Exportar** y el archivo se descargará en la máquina local. El archivo incluirá el nombre del acuerdo que contiene las suscripciones de los usuarios, así como la fecha de la exportación.
 > [!div class="mx-imgBorder"]
-> ![Exportar suscriptores](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![Exportar suscriptores](_img/exporting-subscriptions/exporting-subscriptions.png "Haga clic en Exportar para descargar una lista completa de las suscripciones asignadas.")
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)

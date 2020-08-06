@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: Descubra cómo pueden los administradores eliminar asignaciones de suscripción
-ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902900"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434274"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminación de asignaciones de suscripciones de Visual Studio
 Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemplo, cuando deje la empresa, complete un proyecto o cambie a una nueva función, puede quitar su suscripción y asignarla a otra persona. Tenga en cuenta que al reasignar una suscripción, no todas las ventajas del suscriptor se restablecerán.  El nuevo usuario podrá solicitar cualquier clave no solicitada y ver las claves solicitadas previamente, pero los límites de solicitud **no** se restablecen.  Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight. 
@@ -24,7 +24,7 @@ Cuando un suscriptor ya no requiera una suscripción de Visual Studio, por ejemp
 2. Para eliminar los suscriptores seleccionados, haga clic en **Eliminar**.
 3. Cuando aparezca el mensaje que le pide que confirme la eliminación, haga clic en **Aceptar**.
    > [!div class="mx-imgBorder"]
-   > ![Eliminar suscriptores](_img/delete-license/delete-subscribers.png)
+   > ![Eliminar suscriptores](_img/delete-license/delete-subscribers.png "Elija los usuarios que desea eliminar y haga clic en Eliminar. Puede usar las teclas CTRL y Mayús para seleccionar varios suscriptores.")
 
    > [!NOTE]
    > La eliminación masiva con una plantilla no está disponible. Para las organizaciones que administran las asignaciones de suscripciones a través de grupos de seguridad de Azure Active Directory, consulte [nuestro artículo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para obtener más información sobre cómo se realizan las eliminaciones.  
