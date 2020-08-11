@@ -16,6 +16,7 @@
 ### [Inicio de sesión con cuentas de Microsoft](sign-in-msa.md)
 ### [Inicio de sesión con una cuenta profesional o educativa](sign-in-work.md)
 ### [Inicio de sesión con GitHub](sign-in-github.md)
+### [Identidades conectadas](use-connected-identities.md)
 ### [Identidades alternativas](vs-alternate-identity.md)
 ### [Problemas de inicio de sesión](sign-in-issues.md)
 ### [Anonimización de los datos de suscriptor](anonymization.md)
