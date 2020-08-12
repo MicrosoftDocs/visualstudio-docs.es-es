@@ -10,12 +10,12 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 9fd497dcda7e40cf0dbe6409193019ddae84c80b
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835373"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144407"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analiza el Scriptlet de código determinado, agregando declaraciones en el espacio de nombres y evaluando el código según corresponda.  
@@ -38,7 +38,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parámetros  
   
-|||  
+| Parámetro | Descripción |  
 |-|-|  
 |`pstrCode`|de Dirección del texto de Scriptlet que se va a evaluar. La interpretación de esta cadena depende del lenguaje de scripting.|  
 |`pstrItemName`|de Dirección del nombre de elemento que proporciona el contexto en el que se va a evaluar el Scriptlet. Si este parámetro es NULL, el código se evalúa en el contexto global del motor de scripting.|  
@@ -48,13 +48,13 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|de Valor basado en cero que especifica en qué línea comenzará el análisis.|  
 |`dwFlags`|de Marcas asociadas al Scriptlet. Puede ser una combinación de estos valores:|  
   
-|Valor|Significado|  
+|Value|Significado|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|Si la distinción entre una expresión de cálculo y una instrucción es importante, pero sintácticamente ambigua en el lenguaje de script, este marcador especifica que el Scriptlet debe interpretarse como una expresión, en lugar de como una instrucción o lista de instrucciones. De forma predeterminada, las instrucciones se suponen a menos que se pueda determinar la opción correcta a partir de la sintaxis del texto de Scriptlet.|  
 |SCRIPTTEXT_ISPERSISTENT|Indica que el código agregado durante esta llamada debe guardarse si se guarda el motor de scripting (por ejemplo, a través de una llamada a `IPersist*::Save` ) o si el motor de scripting se restablece por medio de una transición de vuelta al estado inicializado.|  
 |SCRIPTTEXT_ISVISIBLE|Indica que el texto del script debe ser visible (y, por lo tanto, puede ser invocable por nombre) como un método global en el espacio de nombres del script.|  
   
-|||  
+| Parámetro | Descripción |  
 |-|-|  
 |`pvarResult`|enuncia Dirección de un búfer que recibe los resultados del procesamiento de Scriptlet o `NULL` si el llamador no espera ningún resultado (es decir, no se establece el valor SCRIPTTEXT_ISEXPRESSION).|  
 |`pexcepinfo`|enuncia Dirección de una estructura que recibe información de excepción. Esta estructura se rellena si `IActiveScriptParse::ParseScriptText` devuelve DISP_E_EXCEPTION.|  
@@ -72,7 +72,7 @@ HRESULT ParseScriptText(
 |`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting está en estado no inicializado o cerrado, o bien se ha establecido la marca de SCRIPTTEXT_ISEXPRESSION y el motor de scripting está en el estado inicializado).|  
 |`OLESCRIPT_E_SYNTAX`|Se produjo un error de sintaxis no especificado en el Scriptlet.|  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
  Si el motor de scripting está en el estado inicializado, no se evaluará realmente ningún código durante esta llamada; en su lugar, ese código se pone en cola y se ejecuta cuando el motor de scripting pasa al estado Iniciado (o a través de él). Dado que la ejecución no se permite en el estado inicializado, es un error llamar a este método con la marca SCRIPTTEXT_ISEXPRESSION cuando está en el estado inicializado.  
   
  Scriptlet puede ser una expresión, una lista de instrucciones o cualquier elemento permitido por el lenguaje de script. Por ejemplo, este método se usa en la evaluación de la \<SCRIPT> etiqueta HTML, que permite que las instrucciones se ejecuten cuando se está construyendo la página HTML, en lugar de simplemente compilarlas en el estado del script.  
@@ -81,5 +81,5 @@ HRESULT ParseScriptText(
   
  Para obtener más información sobre los Estados de script, consulte la sección Estados del motor de scripts de [Windows Script engines](../../winscript/windows-script-engines.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

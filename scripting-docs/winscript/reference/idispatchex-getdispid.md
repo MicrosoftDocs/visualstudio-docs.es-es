@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 81bb33a1e793f38e15dc51b37c4fa062eb54e7fa
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576598"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144538"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Asigna un nombre de un solo miembro al DISPID correspondiente, que se puede usar en las llamadas subsiguientes a `IDispatchEx::InvokeEx`.  
+Asigna un nombre de un solo miembro a su DISPID correspondiente, que se puede usar en las llamadas subsiguientes a `IDispatchEx::InvokeEx` .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,10 +44,10 @@ HRESULT GetDispID(
  `grfdex`  
  Determina las opciones para obtener el identificador de miembro. Puede ser una combinación de los siguientes valores:  
   
-|Valor|Significado|  
+|Value|Significado|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Solicita que la búsqueda de nombre se realice de forma que distinga entre mayúsculas y minúsculas. Puede ser omitido por un objeto que no admite la búsqueda que distingue entre mayúsculas y minúsculas.|  
-|fdexNameEnsure|Solicita que se cree el miembro si aún no existe. El nuevo miembro debe crearse con el valor `VT_EMPTY`.|  
+|fdexNameEnsure|Solicita que se cree el miembro si aún no existe. El nuevo miembro debe crearse con el valor `VT_EMPTY` .|  
 |fdexNameImplicit|Indica que el llamador está buscando objetos para un miembro de un nombre determinado cuando el objeto base no se especifica explícitamente.|  
 |fdexNameCaseInsensitive|Solicita que la búsqueda de nombre se realice de forma que no distinga entre mayúsculas y minúsculas. Puede ser omitido por un objeto que no admite búsquedas sin distinción entre mayúsculas y minúsculas.|  
   
@@ -57,18 +57,18 @@ HRESULT GetDispID(
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los valores siguientes:  
   
-|||  
+|Value|Significado|
 |-|-|  
 |`S_OK`|Correcto.|  
 |`E_OUTOFMEMORY`|Memoria insuficiente.|  
 |`DISP_E_UNKNOWNNAME`|No se conocía el nombre.|  
   
-## <a name="remarks"></a>Comentarios  
- `GetDispID` se puede utilizar en lugar de `GetIDsOfNames` para obtener el DISPID de un miembro determinado.  
+## <a name="remarks"></a>Observaciones  
+ `GetDispID`se puede utilizar en lugar de `GetIDsOfNames` para obtener el DISPID de un miembro determinado.  
   
- Dado que `IDispatchEx` permite agregar y eliminar miembros, el conjunto de DISPID no permanece constante durante la vigencia de un objeto.  
+ Dado que `IDispatchEx` permite agregar y eliminar miembros, el conjunto de DIspid no permanece constante durante la vigencia de un objeto.  
   
- Se ha quitado el parámetro `riid` sin usar de `IDispatch::GetIDsOfNames`.  
+ Se `riid` ha quitado el parámetro no utilizado en `IDispatch::GetIDsOfNames` .  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -82,5 +82,5 @@ BSTR bstrName;
    // Use dispid  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDispatchEx (Interfaz)](../../winscript/reference/idispatchex-interface.md)

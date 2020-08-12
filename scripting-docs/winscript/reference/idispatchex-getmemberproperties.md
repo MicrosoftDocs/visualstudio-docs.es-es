@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 488f8790ec25532fb611f18e8b24e7e7dba2e2f4
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574097"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144556"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Recupera las propiedades de un miembro.  
@@ -39,12 +39,12 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parámetros  
  `id`  
- Identifica el miembro. Utiliza `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
+ Identifica el miembro. Usa `GetDispID` o `GetNextDispID` para obtener el identificador de envío.  
   
  `grfdexFetch`  
  Determina las propiedades que se van a recuperar. Puede ser una combinación de los valores enumerados en `pgrfdex` y/o una combinación de los siguientes valores:  
   
-|Valor|Significado|  
+|Value|Significado|  
 |-----------|-------------|  
 |grfdexPropCanAll|Combina fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct y fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Combina fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct y fdexPropCannotSourceEvents.|  
@@ -54,7 +54,7 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Dirección de un `DWORD` que recibe las propiedades solicitadas. Puede ser una combinación de los siguientes valores:  
   
-|Valor|Significado|  
+|Value|Significado|  
 |-----------|-------------|  
 |fdexPropCanGet|El miembro se puede obtener mediante DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|No se puede obtener el miembro mediante DISPATCH_PROPERTYGET.|  
@@ -74,7 +74,7 @@ HRESULT GetMemberProperties(
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los valores siguientes:  
   
-|||  
+|Value|Significado|
 |-|-|  
 |`S_OK`|Correcto.|  
 |`DISP_E_UNKNOWNNAME`|No se conocía el nombre.|  
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [IDispatchEx (interfaz](../../winscript/reference/idispatchex-interface.md) )   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+## <a name="see-also"></a>Consulte también  
+ [IDispatchEx (interfaz)](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
