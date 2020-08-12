@@ -8,14 +8,14 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49bf12f3056eb7ddb0e0afb8333a1f1893c7b954
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 3b4eb077ba8c957466568967804487929254117e
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477019"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114229"
 ---
-# <a name="localizeddescription-element-vsix-language-pack-schema"></a>Elemento LocalizedDescription (esquema del paquete de idioma VSIX)
+# <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription (Elemento, Esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Necesario. Proporciona una descripción localizada de la extensión.  
@@ -51,13 +51,39 @@ Necesario. Proporciona una descripción localizada de la extensión.
  Necesario. Una descripción de texto de la extensión en el lenguaje de destino.  
   
 ## <a name="element-information"></a>Información de elemento  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    Espacio de nombres    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   Nombre del esquema   |                 Esquema del paquete de idioma VSIX                 |
-| Archivo de validación |                VSIXLanguagePackSchema.xsd                 |
-|  Puede estar vacío   |                      No aplicable                       |
+
+:::row:::
+    :::column:::
+        Espacio de nombres
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Nombre del esquema
+    :::column-end:::
+    :::column:::
+        Esquema del paquete de idioma VSIX
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Archivo de validación
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema. xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Puede estar vacío
+    :::column-end:::
+    :::column:::
+        No aplicable
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>Consulte también  
  [Referencia del esquema del paquete de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

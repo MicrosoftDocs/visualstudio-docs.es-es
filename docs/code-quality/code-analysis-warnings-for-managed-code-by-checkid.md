@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235100"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114154"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -603,3 +604,4 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA5400 | [CA5400 asegurarse de que la lista de revocación de certificados HttpClient no está deshabilitada](../code-quality/ca5400.md) | Un certificado revocado ya no es de confianza. Podría ser utilizado por los atacantes para pasar algunos datos malintencionados o robar datos confidenciales en la comunicación HTTPS. |
 | CA5401 | [CA5401 no usar CreateEncryptor con un IV no predeterminado](../code-quality/ca5401.md) | El cifrado simétrico siempre debe usar un vector de inicialización no repetible para evitar ataques de diccionario. |
 | CA5402 | [CA5402 usar CreateEncryptor con el valor de IV predeterminado](../code-quality/ca5402.md) | El cifrado simétrico siempre debe usar un vector de inicialización no repetible para evitar ataques de diccionario. |
+| IL3000 | [IL3000 evitar el uso de la ruta de acceso del archivo de ensamblado al publicar como un solo archivo](../code-quality/il3000.md) | Evite el uso de la ruta de acceso del archivo de ensamblado al publicar como un solo archivo |

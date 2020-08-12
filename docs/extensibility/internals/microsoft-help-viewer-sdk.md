@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536193"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114263"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -445,7 +445,7 @@ Nota: las variables indicadas por "{n}" tienen dependencias de código. Si se qu
 
 **Branding.xml**
 
-| | |
+| Característica | Descripción |
 | - | - |
 | Característica: | **CollapsibleArea** |
 | Uso: | Expandir contrae el texto del control de contenido |
@@ -704,7 +704,7 @@ En este tutorial se muestra cómo incorporar el contenido de la ayuda en una apl
 
 2. [Visual Studio 2013 Redist. de Shell aislado](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Introducción**
+**Información general**
 
 El [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell es una versión del [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE en el que puede basar una aplicación. Estas aplicaciones contienen el shell aislado junto con las extensiones que se crean. Use plantillas de proyecto de Shell aislado, que se incluyen en el [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] SDK, para compilar extensiones.
 
