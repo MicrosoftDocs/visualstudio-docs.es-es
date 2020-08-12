@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093943"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041043"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 
@@ -31,7 +31,6 @@ El proceso de compilación de Visual Studio se define mediante una serie de arc
 
 ## <a name="override-predefined-targets"></a>Reemplazar destinos predefinidos
 
-Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, MSBuild llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de MSBuild para tener más control sobre el proceso de compilación.
 Los destinos comunes contienen un conjunto de destinos vacíos predefinidos al que se llama antes y después de algunos de los destinos principales del proceso de compilación. Por ejemplo, MSBuild llama al destino `BeforeBuild` antes del destino `CoreBuild` principal y al destino `AfterBuild` después del destino `CoreBuild`. De forma predeterminada, los destinos vacíos de los destinos comunes no hacen nada, pero puede reemplazar su comportamiento predeterminado si define los destinos que quiere en un archivo de proyecto que importa los destinos comunes. Al reemplazar los destinos predefinidos, puede usar tareas de MSBuild para tener más control sobre el proceso de compilación.
 
 > [!NOTE]
@@ -62,7 +61,7 @@ En la tabla siguiente se muestran todos los destinos incluidos en los destinos c
 |Nombre de destino|Descripción|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de que se realice la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
-|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:**  Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|
+|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:** Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|
 |`BeforeRebuild`, `AfterRebuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de recompilación básica. El orden de ejecución de destino en *Microsoft.Common.targets* es: `BeforeRebuild`, `Clean`, `Build` y luego `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de limpieza básica.|
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de publicación de limpieza básica.|
@@ -112,7 +111,7 @@ En el ejemplo siguiente se muestra cómo usar el atributo `AfterTargets` para ag
 
 Reemplazar destinos predefinidos es una manera sencilla de extender el proceso de compilación, pero, dado que MSBuild evalúa la definición de destinos secuencialmente, no hay manera de evitar que otro proyecto que importe su proyecto reemplace los destinos que ya ha reemplazado. Por lo tanto, por ejemplo, el último destino `AfterBuild` definido en el archivo del proyecto, después de que se hayan importado todos los demás proyectos, será el que se utiliza durante la compilación.
 
-Para protegerse de reemplazos de destinos imprevistos, puede reemplazar las propiedades DependsOn que se usan en los atributos `DependsOnTargets` en los destinos comunes. Por ejemplo, el valor del atributo `DependsOnTargets` del destino `Build` es `"$(BuildDependsOn)"`. Tenga en cuenta que:
+Para protegerse de reemplazos de destinos imprevistos, puede reemplazar las propiedades DependsOn que se usan en los atributos `DependsOnTargets` en los destinos comunes. Por ejemplo, el valor del atributo `DependsOnTargets` del destino `Build` es `"$(BuildDependsOn)"`. Tenga en cuenta lo siguiente:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -163,7 +162,7 @@ Los proyectos que importan los archivos del proyecto pueden reemplazar estas pro
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propiedades DependsOn que normalmente se reemplazan
 
-|Nombre de la propiedad|Descripción|
+|Nombre de propiedad|Descripción|
 |-------------------|-----------------|
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|
@@ -223,7 +222,7 @@ En este ejemplo, se trata de un proyecto tipo SDK. Como se ha mencionado anterio
 
 El orden de los elementos es importante. Los elementos `BuildDependsOn` y `CleanDependsOn` deben aparecer después de importar el archivo de destinos SDK estándar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)

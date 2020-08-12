@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275257"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114250"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio
 
@@ -72,7 +72,8 @@ Para obtener listas de las cargas de trabajo y los componentes que puede instala
    ```
 
    ```powershell
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   $process = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   Write-Output $process.ExitCode 
    ```
 
    o
