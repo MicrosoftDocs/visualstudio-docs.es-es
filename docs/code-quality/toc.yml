@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Suspensión automática de la característica
               href: automatic-feature-suspension.md
+            - name: Publicación de advertencias
+              items:
+                - name: Información general
+                  displayName: publish warnings
+                - name: 'IL3000: Evite usar la ruta de acceso al archivo de ensamblado al publicar como único archivo'
+                  href: il3000.md
