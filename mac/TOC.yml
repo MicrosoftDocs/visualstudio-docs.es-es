@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: Depuración de paquetes NuGet con vínculo de origen
       href: source-link.md
+- name: Pruebas
+  items:
+    - name: Información general
+      href: testing.md
 - name: Compilar y generar
   items:
     - name: Información general
