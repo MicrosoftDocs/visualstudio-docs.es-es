@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabcd99e4807d60db53487527d9b3a554169c8c4
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 98aa80618f5dd9f7d74d79a5d0dcce0c478cc606
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454155"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214583"
 ---
 # <a name="performance-warnings"></a>advertencias de rendimiento
 Las advertencias de rendimiento admiten aplicaciones y bibliotecas de alto rendimiento.
@@ -50,13 +50,14 @@ Las advertencias de rendimiento admiten aplicaciones y bibliotecas de alto rendi
 | [CA1823: Evitar los campos privados sin utilizar](../code-quality/ca1823.md) | Se detectaron campos privados a los que no parece que se tenga acceso en el ensamblado. |
 | [CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | El atributo NeutralResourcesLanguage informa a ResourceManager del idioma utilizado para mostrar los recursos de la referencia cultural neutral de un ensamblado. Esto mejora el rendimiento de la búsqueda del primer recurso que se carga y puede reducir el espacio de trabajo. |
 | [CA1825: Evitar asignaciones de matrices de longitud cero](../code-quality/ca1825.md) | Al inicializar una matriz de longitud cero, se produce una asignación de memoria innecesaria. En su lugar, use la instancia de matriz vacía asignada estáticamente mediante una llamada a <xref:System.Array.Empty%2A?displayProperty=nameWithType> . La asignación de memoria se comparte entre todas las invocaciones de este método. |
-| [CA1826: Usar la propiedad en lugar del método Linq Enumerable](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>El método LINQ se usó en un tipo que admite una propiedad equivalente y más eficaz. |
+| [CA1826: Usar la propiedad en lugar del método Linq Enumerable](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable> El método LINQ se usó en un tipo que admite una propiedad equivalente y más eficaz. |
 | [CA1827: No usar Count/LongCount si se puede usar Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>se usó el método o, donde el <xref:System.Linq.Enumerable.Any%2A> método sería más eficaz. |
 | [CA1828: No usar CountAsync/LongCountAsync si se puede usar AnyAsync](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A><xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A>se usó el método o, donde el <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> método sería más eficaz. |
-| [CA1829: Usar la propiedad Length/Count en lugar del método Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>El método LINQ se usó en un tipo que admite una propiedad equivalente, más eficaz `Length` o `Count` . |
-| [CA1830: Preferir las sobrecargas de método Append e Insert fuertemente tipadas en StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>y <xref:System.Text.StringBuilder.Insert%2A> proporcionan sobrecargas para varios tipos más allá de System. String.  Siempre que sea posible, prefiera las sobrecargas fuertemente tipadas sobre el uso de ToString () y la sobrecarga basada en cadena. |
+| [CA1829: Usar la propiedad Length/Count en lugar del método Enumerable.Count](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A> El método LINQ se usó en un tipo que admite una propiedad equivalente, más eficaz `Length` o `Count` . |
+| [CA1830: Preferir las sobrecargas de método Append e Insert fuertemente tipadas en StringBuilder](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A> y <xref:System.Text.StringBuilder.Insert%2A> proporcionan sobrecargas para varios tipos más allá de System. String.  Siempre que sea posible, prefiera las sobrecargas fuertemente tipadas sobre el uso de ToString () y la sobrecarga basada en cadena. |
 | [CA1831: Usar AsSpan en lugar de indizadores basados en intervalos para una cadena cuando proceda](../code-quality/ca1831.md) | Cuando se usa un indexador de intervalo en una cadena y se asigna implícitamente el valor a un &lt; tipo char ReadOnlySpan &gt; , se utilizará el método en <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> lugar de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que genera una copia de la parte solicitada de la cadena. |
 | [CA1832: Usar AsSpan o AsMemory en lugar de indizadores basados en intervalos para obtener la parte ReadOnlySpan o ReadOnlyMemory de una matriz](../code-quality/ca1832.md) | Cuando se usa un indexador de intervalo en una matriz y se asigna implícitamente el valor a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, se utilizará el método en <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> lugar de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que genera una copia de la parte solicitada de la matriz. |
 | [CA1833: Usar AsSpan o AsMemory en lugar de indizadores basados en intervalos para obtener la parte Span o Memory de una matriz](../code-quality/ca1833.md) | Cuando se usa un indexador de intervalo en una matriz y se asigna implícitamente el valor a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, se utilizará el método en <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> lugar de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que genera una copia de la parte solicitada de la matriz. |
 | [CA1835: preferir las sobrecargas basadas en Memory' para ' ReadAsync ' y ' WriteAsync '](../code-quality/ca1835.md) | ' Stream ' tiene una sobrecarga ' ReadAsync ' que toma un ' byte de memoria &lt; &gt; ' como primer argumento y una sobrecarga ' WriteAsync ' que toma un ' ReadOnlyMemory &lt; byte &gt; ' como primer argumento. Prefiera llamar a las sobrecargas basadas en memoria, que son más eficaces. |
 | [CA1836: preferir `IsEmpty` `Count` cuando esté disponible](../code-quality/ca1836.md) | Propiedad preferida `IsEmpty` que es más eficaz `Count` que `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> para determinar si el objeto contiene o no elementos. |
+| [CA1838: evitar `StringBuilder` parámetros para P/Invoke](../code-quality/ca1838.md) | La serialización de ' StringBuilder ' siempre crea una copia de búfer nativo, lo que da lugar a varias asignaciones para una operación de serialización. |
