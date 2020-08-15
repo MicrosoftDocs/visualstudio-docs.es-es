@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078bce0778122b296dcd918d4a9074eed5397f54
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371851"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250535"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
 
@@ -163,6 +163,7 @@ Build succeeded.
 La salida XML generada tiene el siguiente formato:
 
 ::: moniker range=">=vs-2019"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -217,8 +218,10 @@ La salida XML generada tiene el siguiente formato:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 ::: moniker range="vs-2017"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -269,6 +272,7 @@ La salida XML generada tiene el siguiente formato:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 
 ### <a name="metricsexe"></a>Metrics.exe
@@ -277,7 +281,7 @@ Si no desea instalar el paquete de NuGet, puede generar y usar el ejecutable de 
 
 1. Clone el repositorio [dotnet/Roslyn-analizadores](https://github.com/dotnet/roslyn-analyzers) .
 2. Abra Símbolo del sistema para desarrolladores para Visual Studio como administrador.
-3. En la raíz del repositorio **Roslyn-analizadores** , ejecute el siguiente comando:`Restore.cmd`
+3. En la raíz del repositorio **Roslyn-analizadores** , ejecute el siguiente comando: `Restore.cmd`
 4. Cambie el directorio a *src\Tools*.
 5. Ejecute el siguiente comando para compilar el proyecto **Metrics. csproj** :
 

@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014584"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247650"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: crear un elemento Web para SharePoint
 
@@ -41,7 +42,7 @@ En este tutorial se muestran las tareas siguientes:
     > [!NOTE]
     > Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 - Ediciones compatibles de Microsoft Windows y SharePoint.
 
@@ -203,7 +204,7 @@ Para rellenar la cuadrícula de datos que aparece en el elemento web, especifiqu
 
 ## <a name="test-the-web-part-verb"></a>Prueba del verbo del elemento Web
 
-Muestra y oculta a los empleados que no son administradores cuando se hace clic en un elemento que aparece en el menú de verbos del elemento web.
+Muestre y oculte los empleados que no son administradores seleccionando un elemento que aparece en el menú de verbos del elemento Web.
 
 1. Elija la flecha que aparece en el lado derecho del elemento Web y, a continuación, elija **Mostrar solo administradores** en el menú que aparece.
 
@@ -213,7 +214,7 @@ Muestra y oculta a los empleados que no son administradores cuando se hace clic 
 
      Todos los empleados aparecen en el elemento web.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Cómo: crear un elemento](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

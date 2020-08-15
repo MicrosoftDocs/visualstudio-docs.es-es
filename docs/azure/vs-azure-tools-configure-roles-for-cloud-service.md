@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280868"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250850"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -112,7 +112,7 @@ Si usa un valor diferente para cada configuración de servicio, no tendrá que u
 
 1. En el cuadro de diálogo **Crear cadena de conexión de almacenamiento**, seleccione una opción en **Conectar utilizando**. A continuación, siga las instrucciones para la opción que seleccione:
 
-    - **Emulador de Microsoft Azure Storage**: si selecciona esta opción, las demás opciones del cuadro de diálogo están deshabilitadas cuando afectan solo a Azure. Seleccione **Aceptar**.
+    - **Emulador de Microsoft Azure Storage** : Si selecciona esta opción, el resto de la configuración del cuadro de diálogo está deshabilitada, ya que solo se aplica a Azure. Seleccione **Aceptar**.
     - **Su suscripción**: si selecciona esta opción, utilice la lista desplegable para seleccionar e iniciar sesión en una cuenta de Microsoft, o bien agregue una cuenta de Microsoft. Seleccione una suscripción de Azure y una cuenta de almacenamiento. Seleccione **Aceptar**.
     - **Credenciales especificadas manualmente**: escriba el nombre de la cuenta de almacenamiento y la clave principal o secundaria. Seleccione una opción para la **conexión** (se recomienda HTTPS en la mayoría de los escenarios). Seleccione **Aceptar**.
 
