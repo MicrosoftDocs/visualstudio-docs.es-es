@@ -12,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7c4d14f2970f9d77e78fd90dd58efcdac100e4c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903959"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248597"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un control de cuadro de herramientas de Windows Forms
 
 La plantilla de elemento de control de cuadro de herramientas Windows Forms que se incluye en el Herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control de **cuadro de herramientas** que se agrega automáticamente cuando se instala la extensión. En este tutorial se muestra cómo usar la plantilla para crear un control de contador simple que se puede distribuir a otros usuarios.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 A partir de Visual Studio 2015, no se instala el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, vea [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -35,7 +35,7 @@ La plantilla de control de cuadro de herramientas de Windows Forms crea un contr
 
 1. Cree un proyecto VSIX denominado `MyWinFormsControl` . Puede encontrar la plantilla de Proyecto VSIX en el cuadro de diálogo **nuevo proyecto** , mediante la búsqueda de "VSIX".
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de **control de cuadro de herramientas Windows Forms** denominada `Counter` . En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **Windows Forms control Toolbox**
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de **control de cuadro de herramientas Windows Forms** denominada `Counter` . En el **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el nodo del proyecto y seleccione **Agregar**  >  **nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento** , vaya a extensibilidad de **Visual C#**  >  **Extensibility** y seleccione **Windows Forms control Toolbox**
 
 3. Esto agrega un control de usuario, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para colocar el control en el **cuadro de herramientas**y una entrada de recurso **Microsoft. VisualStudio. TOOLBOXCONTROL** en el manifiesto de VSIX para la implementación.
 
@@ -45,7 +45,7 @@ El `Counter` control requiere dos controles secundarios: un <xref:System.Windows
 
 #### <a name="to-build-the-user-interface"></a>Para crear la interfaz de usuario
 
-1. En **Explorador de soluciones**, haga doble clic en *Counter.CS* para abrirlo en el diseñador.
+1. En **Explorador de soluciones**, pulse o haga doble clic en *Counter.CS* para abrirlo en el diseñador.
 
 2. Quite el **clic aquí.** que se incluye de forma predeterminada al agregar la plantilla de elemento de control de cuadro de herramientas Windows Forms.
 
@@ -55,10 +55,10 @@ El `Counter` control requiere dos controles secundarios: un <xref:System.Windows
 
 5. En la ventana **propiedades** , establezca los siguientes valores para los controles en la superficie de diseño.
 
-    |Control|Propiedad.|Valor|
+    |Control|Propiedad|Valor|
     |-------------|--------------|-----------|
     |`Label1`|**Texto**|""|
-    |`Button1`|**Name**|btnReset|
+    |`Button1`|**Nombre**|btnReset|
     |`Button1`|**Texto**|Reset|
 
 ### <a name="code-the-user-control"></a>Codificar el control de usuario
@@ -67,7 +67,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 #### <a name="to-code-the-user-control"></a>Para codificar el control de usuario
 
-1. Haga doble clic en el formulario para abrir el controlador de eventos de carga en la ventana de código.
+1. Pulse o haga doble clic en el formulario para abrir el controlador de eventos de carga en la ventana de código.
 
 2. Encima del método de controlador de eventos, en la clase control, cree un entero para almacenar el valor del contador y una cadena para almacenar el texto para mostrar como se muestra en el ejemplo siguiente.
 
@@ -130,7 +130,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
     Los llamadores pueden agregar controladores a este evento para responder a los cambios en el valor del contador.
 
-7. Vuelva a la vista de diseño y haga doble clic en el botón **restablecer** para generar el `btnReset_Click` controlador de eventos y, a continuación, rellénelo como se muestra en el ejemplo siguiente.
+7. Vuelva a la vista Diseño y pulse o haga doble clic en el botón **restablecer** para generar el `btnReset_Click` controlador de eventos. A continuación, rellénelo como se muestra en el ejemplo siguiente.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +162,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 2. En la instancia experimental de Visual Studio, cree un proyecto de **aplicación de Windows Forms** .
 
-3. En **Explorador de soluciones**, haga doble clic en *Form1.CS* para abrirlo en el diseñador si aún no está abierto.
+3. En **Explorador de soluciones**, pulse o haga doble clic en *Form1.CS* para abrirlo en el diseñador si aún no está abierto.
 
 4. En el **cuadro de herramientas**, el `Counter` control debe mostrarse en la sección **General** .
 
@@ -172,7 +172,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
 7. Arrastre un <xref:System.Windows.Forms.Button> control al formulario y, a continuación, establezca las propiedades de nombre y texto del botón en `Test` .
 
-8. Haga doble clic en el botón para abrir *Form1.CS* en la vista de código y crear un controlador de clic.
+8. Pulse o haga doble clic en el botón para abrir *Form1.CS* en la vista de código y crear un controlador de clic.
 
 9. En el controlador de clics, llame a `counter1.Increment()` .
 
@@ -195,7 +195,7 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
     **Recuento: 0**
 
-14. Haga clic en **Probar**.
+14. Seleccione **Probar**.
 
     El contador se incrementa y Visual Studio muestra un cuadro de mensaje.
 
@@ -203,11 +203,11 @@ El `Counter` control expondrá un método para incrementar el contador, un event
 
     Desaparece el botón **restablecer** .
 
-16. Haga clic en **probar** hasta que el contador llegue a **5** cerrando los cuadros de mensaje cada vez.
+16. Seleccione **prueba** hasta que el contador llegue a **5** cerrando los cuadros de mensaje cada vez.
 
     Vuelve a aparecer el botón **restablecer** .
 
-17. Haga clic en **Restablecer**.
+17. Seleccione **Restablecer**.
 
     El contador se restablece en **0**.
 
