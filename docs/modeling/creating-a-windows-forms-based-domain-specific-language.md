@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547321"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238366"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en Windows Forms
 
@@ -30,10 +30,8 @@ La plantilla DSL del **Diseñador de WinForm mínima** crea un DSL mínimo que p
 
     En este tutorial se asumen los nombres siguientes:
 
-   | | |
-   |-|-|
-   | Nombre de solución y DSL | FarmApp |
-   | Espacio de nombres | Company. FarmApp |
+    - Nombre de solución y DSL: `FarmApp`
+    - Espacio de nombres: `Company.FarmApp`
 
 2. Experimente con el ejemplo inicial que proporciona la plantilla:
 
@@ -51,9 +49,9 @@ La plantilla DSL del **Diseñador de WinForm mínima** crea un DSL mínimo que p
 
    En la instancia principal de Visual Studio, tenga en cuenta los siguientes puntos acerca de la solución DSL:
 
-- `DslDefinition.dsl`no contiene elementos de diagrama. Esto se debe a que no usará diagramas DSL para ver modelos de instancia de este DSL. En su lugar, enlazará un Windows Form al modelo y los elementos del formulario mostrarán el modelo.
+- `DslDefinition.dsl` no contiene elementos de diagrama. Esto se debe a que no usará diagramas DSL para ver modelos de instancia de este DSL. En su lugar, enlazará un Windows Form al modelo y los elementos del formulario mostrarán el modelo.
 
-- Además de los `Dsl` proyectos de y `DslPackage` , la solución contiene un tercer proyecto denominado `UI.` **UI** Project que contiene la definición de un control de Windows Forms. `DslPackage`depende de `UI` y `UI` depende de `Dsl` .
+- Además de los `Dsl` proyectos de y `DslPackage` , la solución contiene un tercer proyecto denominado `UI.` **UI** Project que contiene la definición de un control de Windows Forms. `DslPackage` depende de `UI` y `UI` depende de `Dsl` .
 
 - En el `DslPackage` proyecto, `UI\DocView.cs` contiene el código que muestra el control Windows Forms que se define en el `UI` proyecto.
 
@@ -86,9 +84,9 @@ En este tutorial se usa la definición de DSL siguiente.
 
 4. Use la herramienta de **clase de dominio con nombre** para crear las clases de dominio siguientes:
 
-    - `Field`: Proporcione una propiedad de dominio adicional denominada `Size` .
+    - `Field` : Proporcione una propiedad de dominio adicional denominada `Size` .
 
-    - `Animal`-En el ventana Propiedades, establezca el **modificador de herencia** en **abstract**.
+    - `Animal` -En el ventana Propiedades, establezca el **modificador de herencia** en **abstract**.
 
 5. Use la herramienta de **clase de dominio** para crear las clases siguientes:
 
@@ -162,7 +160,7 @@ Ahora puede crear un nuevo control de usuario que mostrará la información que 
 
      Establezca la propiedad **DataMember** en **animales** o **campos**.
 
-10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding` y de `FieldGridView` en `FieldBinding` .
+10. Establezca las propiedades **DataSource** de `AnimalGridView` en `AnimalBinding` y de  `FieldGridView` en `FieldBinding` .
 
 11. Ajuste el diseño del control de la granja de servidores a su gusto.
 
@@ -220,7 +218,7 @@ La solución DSL ahora se puede compilar y ejecutar, aunque es posible que desee
 
 3. En el **Explorador de FarmApp**, abra el menú contextual en el nodo raíz de la **granja de servidores** y elija **Agregar nuevo caprino**.
 
-     `Goat1`aparece en la vista **animales** .
+     `Goat1` aparece en la vista **animales** .
 
     > [!WARNING]
     > Debe utilizar el menú contextual en el nodo de la **granja** , no en el nodo **animales** .
@@ -321,7 +319,7 @@ Sin embargo, este código no establece un nombre predeterminado para el nuevo el
 
 Por lo tanto, se recomienda utilizar <xref:Microsoft.VisualStudio.Modeling.ElementOperations> para crear nuevos elementos. Para obtener más información, vea [personalizar la creación y el movimiento](../modeling/customizing-element-creation-and-movement.md)de los elementos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

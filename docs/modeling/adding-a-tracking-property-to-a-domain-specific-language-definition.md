@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544253"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238249"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -42,19 +42,19 @@ En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una
 
 - En la ventana **propiedades** , cuando la propiedad Tracking está en el estado de usuario actualizado por, su valor se muestra en negrita.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para poder iniciar este tutorial, primero debe instalar estos componentes:
 
-| | |
+| Componente | Vínculo |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
 | [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
-1. Cree un proyecto de Diseñador de lenguaje específico de dominio. Asígnale el nombre `TrackingPropertyDSL`.
+1. Cree un proyecto de Diseñador de lenguaje específico de dominio. Asígnele el nombre `TrackingPropertyDSL`.
 
 2. En el **Asistente para diseñador de lenguaje específico de dominio**, establezca las siguientes opciones:
 
@@ -718,7 +718,7 @@ El paso siguiente consiste en compilar y ejecutar el diseñador de DSL en una nu
 
 1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
-2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
+2. En el menú **Depurar** , haga clic en **Iniciar depuración**.
 
     La compilación experimental de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre la solución de **depuración** , que contiene un archivo de prueba vacío.
 

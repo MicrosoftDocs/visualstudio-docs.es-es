@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535868"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238002"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
@@ -37,11 +37,11 @@ En este tutorial se incluyen las tareas siguientes:
 
 - Probar el host personalizado con el procesador de directivas generado.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
 
-| | |
+| Componente | Vínculo |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -67,12 +67,12 @@ En este tutorial, usará el Asistente para Diseñador de lenguaje específico de
 
    Para obtener más información sobre cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. En el menú **Compilar** , haga clic en **Compilar solución**.
+2. En el menú **Compilar**, haga clic en **Compilar solución**.
 
    > [!IMPORTANT]
    > Este paso genera el procesador de directivas y agrega la clave para él en el registro.
 
-3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
+3. En el menú **Depurar** , haga clic en **Iniciar depuración**.
 
     Se abre una segunda instancia de Visual Studio.
 
@@ -228,9 +228,9 @@ Después de generar el procesador de directivas, conecte el procesador de direct
             }
     ```
 
-7. En el menú **Archivo**, haga clic en **Guardar todo**.
+7. En el menú **Archivo** , haga clic en **Guardar todo**.
 
-8. En el menú **Compilar** , haga clic en **Compilar solución**.
+8. En el menú **Compilar**, haga clic en **Compilar solución**.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>Probar el host personalizado con el procesador de directivas
 

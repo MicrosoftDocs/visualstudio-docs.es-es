@@ -1,5 +1,5 @@
 ---
-title: Análisis de código para código administrado
+title: Análisis heredado para código administrado
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974935"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238379"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Información general sobre el análisis de código para código administrado en Visual Studio
+# <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Información general sobre el análisis heredado para código administrado en Visual Studio
 
 Visual Studio puede realizar análisis de código de código administrado de dos maneras: con el [análisis heredado](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), también conocido como análisis estático de FxCop de ensamblados administrados, y con los [analizadores de código](../code-quality/roslyn-analyzers-overview.md)más modernos basados en .net Compiler Platform. En este tema se trata el análisis heredado. Para obtener más información sobre el análisis de código basado en .NET Compiler Platform, consulte [información general de los analizadores basados en .net Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
 
@@ -26,7 +26,7 @@ El análisis de código para código administrado analiza los ensamblados admini
 La herramienta de análisis representa las comprobaciones que realiza durante un análisis como mensajes de advertencias. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
 > [!NOTE]
-> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar al **siguiente: CA0055: no se pudo identificar la plataforma para \<la >. dll**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
+> Los proyectos de .NET Core y .NET Standard de Visual Studio no admiten el análisis heredado (análisis de código estático). Si ejecuta el análisis de código en un proyecto de .NET Core o .NET Standard como parte de MSBuild, verá un error similar al **siguiente: CA0055: no se pudo identificar la \<your.dll> plataforma para **. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de código](../code-quality/roslyn-analyzers-overview.md) en su lugar.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
@@ -34,7 +34,7 @@ Puede ejecutar el análisis de código en el proyecto de forma manual o automát
 
 Para ejecutar el análisis de código cada vez que compile un proyecto, seleccione la opción en la página de propiedades **análisis de código** del proyecto. Para obtener más información, vea [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<proyecto >** .
+Para ejecutar el análisis de código manualmente en un proyecto, en la barra de menús, elija **analizar**  >  **Ejecutar**análisis  >  **de \<project> código ejecutar análisis de código en **.
 
 ## <a name="rule-sets"></a>Conjuntos de reglas
 
@@ -59,7 +59,7 @@ Para obtener más información, vea [suprimir advertencias](../code-quality/in-s
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **Ejecutar Análisis de código y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos**.
 >
 > ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Para obtener más información, vea [suprimir advertencias](../code-quality/in-s
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **compilar y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **compilación y suprimir problemas activos**.
 
 ::: moniker-end
 
