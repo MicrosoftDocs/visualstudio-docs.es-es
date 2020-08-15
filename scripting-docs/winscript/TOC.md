@@ -1,7 +1,0 @@
-# [Windows Script (Interfaces)](windows-script-interfaces.md)
-# [Windows Script (Hosts)](windows-script-hosts.md)
-# [Windows Script (Motores)](windows-script-engines.md)
-# [Información general acerca de la depuración de Active Script](active-script-debugging-overview.md)
-## [Implementación de interfaces Smart Host Helper](implementing-smart-host-helper-interfaces.md)
-# [Información general acerca de la generación de perfiles de Active Script](active-script-profiling-overview.md)
-# [Referencia de interfaces de Windows Script](reference/TOC.md)
