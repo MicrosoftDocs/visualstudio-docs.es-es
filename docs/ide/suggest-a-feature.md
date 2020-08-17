@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276493"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114221"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Sugerir una característica para Visual Studio
 
@@ -86,6 +86,13 @@ Una sugerencia de característica marcada como **Need More Info** (Se necesita m
 **Cerrado, no hay información suficiente** indica que tras varios intentos, no se ha recibido suficiente información para entender completamente la sugerencia de característica. Tenemos que cerrar la sugerencia de característica nueva, ya que no podemos realizar ninguna otra acción en esta fase.
 
 ¿Encontró la información que buscábamos? Puede solicitar la reactivación del vale cuando tenga información adicional.
+
+- - -
+
+![Estado Closed - Out of Scope (Cerrada: fuera de ámbito) para las sugerencias de Developer Community](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**Closed - Out of Scope** (Cerrada: fuera de ámbito) Si una sugerencia no coincide con nuestra dirección general del producto, la cerraremos como *Fuera de ámbito*. Por ejemplo, es posible que podamos tener inversiones similares en otros miembros de la familia de productos de Visual Studio. O bien la característica sugerida puede ser pertinente solo para algunas personas, lo que hace que para una extensión sea más sencillo proporcionarla.
+
 
 - - -
 

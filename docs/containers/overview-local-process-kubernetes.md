@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507890"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913257"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Funcionamiento de Proceso local con Kubernetes
 
@@ -47,6 +47,9 @@ Cuando Proceso local con Kubernetes establece una conexión con el clúster, hac
 Después de establecer una conexión con el clúster, puede ejecutar y depurar el código de forma nativa en el equipo, sin contenedores, y el código puede interactuar directamente con el resto del clúster. Cualquier tráfico que reciba el agente remoto se redirige al puerto local especificado durante la conexión para que el código que se ejecuta de forma nativa pueda aceptar y procesar ese tráfico. Las variables de entorno, los volúmenes y los secretos del clúster se ponen a disposición del código que se ejecuta en el equipo de desarrollo. Además, debido a que las entradas de archivo de host y el reenvío de puerto que Proceso local con Kubernetes agregó al equipo del desarrollador, el código puede enviar tráfico de red a los servicios que se ejecutan en el clúster mediante los nombres de servicio del clúster, y ese tráfico se reenvía a los servicios que se ejecutan en el clúster. El tráfico se enruta entre el equipo de desarrollo y el clúster todo el tiempo que está conectado.
 
 Además, Proceso local con Kubernetes proporciona una manera de replicar variables de entorno y archivos montados disponibles para pods en el clúster en el equipo de desarrollo mediante el archivo `KubernetesLocalProcessConfig.yaml`. También puede usar este archivo para crear nuevas variables de entorno y montajes de volúmenes.
+
+> [!NOTE]
+> Durante toda la conexión al clúster (más unos 15 minutos adicionales), el Proceso local con Kubernetes ejecuta un proceso llamado *EndpointManager* con permisos de administrador en el equipo local.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configuración adicional con KubernetesLocalProcessConfig.yaml
 
@@ -92,7 +95,7 @@ Cuando se desconecta del clúster, de forma predeterminada, Proceso local con Ku
 
 ## <a name="diagnostics-and-logging"></a>Diagnósticos y registro
 
-Al usar Proceso local con Kubernetes para conectarse al clúster, los registros de diagnóstico del clúster se registran en el [directorio temporal][azds-tmp-dir] del equipo de desarrollo.
+Al usar el Proceso local con Kubernetes para conectarse al clúster, los registros de diagnóstico del clúster se registran en el directorio *TEMP* del equipo de desarrollo en la carpeta *Proceso local con Kubernetes*.
 
 ## <a name="limitations"></a>Limitaciones
 

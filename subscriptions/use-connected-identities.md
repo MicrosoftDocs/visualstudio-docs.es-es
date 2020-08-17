@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Aprenda a trabajar con identidades conectadas de la cuenta Microsoft y Azure Active Directory.
-ms.openlocfilehash: b88c978f330520af62f51e372db93475b71caa36
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233171"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805622"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Uso de identidades conectadas en suscripciones de Visual Studio
 Si recibe una suscripción a Visual Studio por medio de su trabajo o escuela, y usa la cuenta Microsoft (MSA) para iniciar sesión, el administrador de suscripciones puede conectar su MSA a su identidad en la instancia de Azure Active Directory de la organización (Azure AD).  Esto cambiará el modo de acceder a algunas de las ventajas que se incluyen en la suscripción. 
@@ -38,6 +38,9 @@ La adición de una cuenta alternativa a la suscripción de Visual Studio permite
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>P: ¿Cómo puedo ponerme en contacto con el administrador sobre esta asunto?
 R:  Para información sobre cómo ponerse en contacto con el administrador, consulte el artículo [Cómo ponerse en contacto con el administrador de suscripciones](contact-my-admin.md).  
+
+### <a name="q-im-an-admin--how-do-i-use-this"></a>P: Soy administración.  ¿Cómo se usa esto?
+R:  La implementación de identidades conectadas es sencilla.  Consulta [este artículo](personal-email-sign-ins.md) para obtener más información. 
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)

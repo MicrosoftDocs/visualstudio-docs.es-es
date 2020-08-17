@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283195"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913303"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools para Kubernetes
 
@@ -123,7 +123,7 @@ Los archivos agregados son:
 
 - *azds.yaml*. Contiene la configuración de Azure Dev Spaces, que proporciona una experiencia de depuración rápida e iterativa en Azure Kubernetes Service. Para obtener más información, vea la [documentación de Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publicación en Azure Kubernetes Service (AKS)
 
@@ -166,6 +166,16 @@ Para ello, primero debe comprobar que ha instalado todo lo indicado en la secci�
 ::: moniker-end
 
 ¡Enhorabuena! Ahora puede usar todo el potencial de Visual Studio para el desarrollo de aplicaciones de Kubernetes.
+
+## <a name="remove-kubernetes-support"></a>Eliminación de la compatibilidad con Kubernetes
+
+1. En el **Explorador de soluciones**, en **Propiedades**, abra *launchSettings.json*.
+
+1. Elimine la sección **Contenedor en Kubernetes**.
+
+1. Si va a volver a Docker Compose, seleccione ese proyecto en el **Explorador de soluciones**, haga clic con el botón derecho y elija **Establecer como proyecto de inicio**.
+
+1. (Opcional) También puede eliminar otros artefactos nombrados tal como se mencionó anteriormente en el artículo, como la carpeta **charts** y *azds.yaml*.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

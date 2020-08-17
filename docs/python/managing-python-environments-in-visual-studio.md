@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543850"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913321"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -262,7 +262,7 @@ Para corregir un entorno que quiera mantener, en primer lugar intente usar el pr
 Para corregir un entorno sin opción de reparación o quitar un entorno no válido, siga estos pasos para modificar el Registro directamente. Visual Studio actualiza automáticamente la ventana **Entornos de Python** al realizar cambios en el Registro.
 
 1. Ejecute *regedit.exe*.
-1. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Para IronPython, busque **IronPython**.
+1. Vaya a **HKEY_LOCAL_MACHINE\SOFTWARE\Python** o a **HKEY_CURRENT_USER\SOFTWARE\Python**. Para IronPython, busque **IronPython**.
 1. Expanda el nodo que coincida con la distribución, como **Python Core** para CPython o **ContinuumAnalytics** para Anaconda. Para IronPython, expanda el nodo de número de versión.
 1. Inspeccione los valores del nodo **InstallPath**:
 
@@ -270,7 +270,8 @@ Para corregir un entorno sin opción de reparación o quitar un entorno no váli
 
     - Si el entorno todavía figura en el equipo, cambie el valor de **ExecutablePath** a la ubicación adecuada. Corrija también los valores **(Predeterminado)** y **WindowedExecutablePath** según sea necesario.
     - Si el entorno ya no figura en el equipo y quiere eliminarlo de la ventana **Entornos de Python**, elimine el nodo primario de **InstallPath**, como, por ejemplo, **3.6** en la imagen anterior.
-
+    - La configuración no válida en **HKEY_CURRENT_USER\SOFTWARE\Python** reemplaza la configuración en **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
+    
 ## <a name="see-also"></a>Vea también
 
 - [Instalación de intérpretes de Python](installing-python-interpreters.md)

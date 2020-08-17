@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e30b904fae9bd0de3985c4ec6a2b6809add58032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: abcffcfe6a7a22b2001ff38852d9bef916d2d119
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183162"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805856"
 ---
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
@@ -27,7 +27,7 @@ ms.locfileid: "84183162"
 
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.6.30027.131 | Obligatorio
+Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.7.30310.162 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 16.0.28625.61 | Obligatorio
@@ -35,7 +35,7 @@ Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .N
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Herramientas de compilación para Azure Cloud Services | 16.3.29207.166 | Obligatorio
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 16.0.28625.61 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
-Microsoft.VisualStudio.Component.TypeScript.3.8 | SDK de TypeScript 3.8 | 16.0.29813.82 | Obligatorio
+Microsoft.VisualStudio.Component.TypeScript.3.9 | SDK de TypeScript 3.9 | 16.0.30310.162 | Obligatorio
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Herramientas de compilación de Windows Communication Foundation | 16.0.28516.191 | Obligatorio
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Herramientas de compilación de desarrollo web | 16.0.28516.191 | Obligatorio
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 16.0.28517.75 | Se recomienda
@@ -49,17 +49,17 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Se rec
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | Paquete de compatibilidad de .NET Framework 4.8 | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.1 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.8.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.8 | 16.4.29318.151 | Optional
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS Runtime | 16.6.30107.105 | Optional
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.6.30107.105 | Optional
-Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.6.30107.105 | Optional
+Microsoft.Net.Core.Component.SDK.2.1 | Runtime de .NET Core 2.1 (LTS) | 16.7.30310.162 | Optional
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.7.30310.162 | Optional
+Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.7.30310.162 | Optional
 
 ## <a name="data-storage-and-processing-build-tools"></a>Herramientas de procesamiento de compilación y almacenamiento de datos
 
@@ -78,7 +78,7 @@ Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 16.0.28516.191 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 16.0.28714.129 | Se recomienda
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 16.6.30013.169 | Se recomienda
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 16.7.30310.162 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools: herramientas de compilación | 16.0.28315.86 | Se recomienda
 
 ## <a name="net-desktop-build-tools"></a>Herramientas de compilación para escritorio de .NET
@@ -103,15 +103,15 @@ Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 16.0.28516.191 | Se recomienda
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS Runtime | 16.6.30107.105 | Se recomienda
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.6.30107.105 | Se recomienda
-Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.6.30107.105 | Se recomienda
+Microsoft.Net.Core.Component.SDK.2.1 | Runtime de .NET Core 2.1 (LTS) | 16.7.30310.162 | Se recomienda
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.7.30310.162 | Se recomienda
+Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.7.30310.162 | Se recomienda
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Características principales de las herramientas de pruebas - herramientas de compilación | 16.4.29409.204 | Se recomienda
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Herramientas de compilación de Windows Communication Foundation | 16.0.28516.191 | Se recomienda
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | Paquete de compatibilidad de .NET Framework 4.8 | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.1 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 16.3.29207.166 | Optional
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | compilador de F# | 16.0.28528.
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatorio
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 16.6.30013.169 | Obligatorio
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 16.7.30310.162 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 16.0.28714.129 | Obligatorio
 
 ## <a name="net-core-build-tools"></a>Herramientas de compilación de .NET Core
@@ -145,10 +145,10 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.NetCore.BuildTools.ComponentGroup | Herramientas de compilación de .NET Core | 16.3.29102.218 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.6.30107.105 | Obligatorio
-Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.6.30107.105 | Obligatorio
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.7.30310.162 | Obligatorio
+Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.7.30310.162 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS Runtime | 16.6.30107.105 | Se recomienda
+Microsoft.Net.Core.Component.SDK.2.1 | Runtime de .NET Core 2.1 (LTS) | 16.7.30310.162 | Se recomienda
 
 ## <a name="nodejs-build-tools"></a>Herramientas de compilación de Node.js
 
@@ -161,7 +161,7 @@ Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS Runtime | 16.6.30107.10
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Soporte de MSBuild para Node.js | 16.0.28517.75 | Obligatorio
-Microsoft.VisualStudio.Component.TypeScript.3.8 | SDK de TypeScript 3.8 | 16.0.29813.82 | Obligatorio
+Microsoft.VisualStudio.Component.TypeScript.3.9 | SDK de TypeScript 3.9 | 16.0.30310.162 | Obligatorio
 
 ## <a name="officesharepoint-build-tools"></a>Herramientas de compilación para Office o SharePoint
 
@@ -178,7 +178,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatorio
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 16.0.28517.75 | Obligatorio
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 16.0.28517.75 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 16.0.28517.75 | Obligatorio
-Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.6.30027.131 | Obligatorio
+Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.7.30310.162 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
@@ -192,8 +192,8 @@ Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Herramientas de compilaci
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Herramientas de compilación de Visual Studio Tools para Office (VSTO) | 16.0.28625.61 | Se recomienda
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Se recomienda
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | Paquete de compatibilidad de .NET Framework 4.8 | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.1 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 16.3.29207.166 | Optional
@@ -214,22 +214,22 @@ Id. de componente | NOMBRE | Versión | Tipo de dependencia
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatorio
 Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.6.30107.105 | Obligatorio
-Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.6.30107.105 | Obligatorio
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.7.30310.162 | Obligatorio
+Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.7.30310.162 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 16.0.28714.129 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Requisitos previos de compilación de la Plataforma universal de Windows | 16.3.29207.166 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK de Windows 10 (10.0.18362.0) | 16.1.28829.92 | Se recomienda
 Microsoft.Net.Component.4.7.2.SDK | SDK de .NET Framework 4.7.2 | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Compatibilidad con la Plataforma universal de Windows de C++ para las herramientas de compilación de v142 (ARM64) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM64 (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – VS 2017 C++ Build Tools para ARM (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – VS 2017 C++ Build Tools para ARM64 (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ Build Tools para x64/x86 (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 16.6.30027.131 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM64 (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – VS 2017 C++ Build Tools para ARM (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – VS 2017 C++ Build Tools para ARM64 (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ Build Tools para x64/x86 (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC.BuildTools | Herramientas de la Plataforma universal de Windows para C++ (v142) | 16.3.29207.166 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | Herramientas de la Plataforma universal de Windows para C++ (v141) | 16.3.29207.166 | Optional
@@ -250,23 +250,23 @@ Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución 
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Características principales de las herramientas de pruebas - herramientas de compilación | 16.4.29409.204 | Se recomienda
 Microsoft.VisualStudio.Component.VC.ASAN | AddressSanitizer para C++ (experimental) | 16.5.29515.121 | Se recomienda
 Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de CMake en C++ para Windows | 16.3.29103.31 | Se recomienda
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.26) | 16.6.30013.169 | Se recomienda
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.27) | 16.7.30310.162 | Se recomienda
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK de Windows 10 (10.0.18362.0) | 16.1.28829.92 | Se recomienda
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ Build Tools (v14.00) | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ Build Tools (v14.00) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | Últimas herramientas de compilación de ATL de C++ para v142 (x86 y x64) | 16.4.29313.120 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | Últimas herramientas de compilación MFC de C++ para v142 (x86 y x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad de C++/CLI con las herramientas de compilación de v142 (14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilador de Clang en C++ para Windows (10.0.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad de C++/CLI con las herramientas de compilación de v142 (14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilador de Clang en C++ para Windows (10.0.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | Herramientas de compilación de C++ Clang-cl para v142 (x64/x86) | 16.3.29207.166 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Módulos de C++ para las herramientas de compilación de v142 (x64/x86: experimental) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ Build Tools para x64/x86 (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 16.6.30027.131 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ Build Tools para x64/x86 (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK de Windows 10 (10.0.16299.0) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK de Windows 10 (10.0.17763.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Herramientas de Clang en C++ para Windows (10.0.0 - x64/x86) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Herramientas de Clang en C++ para Windows (10.0.0 - x64/x86) | 16.7.30310.162 | Optional
 
 ## <a name="visual-studio-extension-development"></a>Desarrollo de extensiones de Visual Studio
 
@@ -280,7 +280,7 @@ Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatorio
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 16.0.28517.75 | Obligatorio
-Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.6.30027.131 | Obligatorio
+Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.7.30310.162 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
@@ -291,7 +291,7 @@ Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Op
 Microsoft.Component.VC.Runtime.OSSupport | Entorno de ejecución de la Plataforma universal de Windows de C++ para las herramientas de compilación de v142 | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | Últimas herramientas de compilación de ATL de C++ para v142 (x86 y x64) | 16.4.29313.120 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | Últimas herramientas de compilación MFC de C++ para v142 (x86 y x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.26) | 16.6.30013.169 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.27) | 16.7.30310.162 | Optional
 
 ## <a name="web-development-build-tools"></a>Herramientas de compilación de desarrollo web
 
@@ -303,11 +303,11 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Herramientas de compilación
 
 Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.6.30027.131 | Obligatorio
+Microsoft.Net.Component.4.7.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.2 | 16.7.30310.162 | Obligatorio
 Microsoft.Net.Component.4.8.SDK | SDK de .NET Framework 4.8 | 16.4.29313.120 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo para .NET Framework 4.7.2 | 16.3.29207.166 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Destinos y tareas de compilación de NuGet | 16.1.28829.92 | Obligatorio
-Microsoft.VisualStudio.Component.TypeScript.3.8 | SDK de TypeScript 3.8 | 16.0.29813.82 | Obligatorio
+Microsoft.VisualStudio.Component.TypeScript.3.9 | SDK de TypeScript 3.9 | 16.0.30310.162 | Obligatorio
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Herramientas de compilación de desarrollo web | 16.0.28516.191 | Obligatorio
 Microsoft.Component.ClickOnce.MSBuild | Herramientas de compilación de ClickOnce | 16.0.28625.61 | Se recomienda
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 16.0.28517.75 | Se recomienda
@@ -316,9 +316,9 @@ Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 16.0.28517.75 | Se recomienda
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 16.0.28516.191 | Se recomienda
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS Runtime | 16.6.30107.105 | Se recomienda
-Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.6.30107.105 | Se recomienda
-Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.6.30107.105 | Se recomienda
+Microsoft.Net.Core.Component.SDK.2.1 | Runtime de .NET Core 2.1 (LTS) | 16.7.30310.162 | Se recomienda
+Microsoft.NetCore.Component.Runtime.3.1 | Entorno de ejecución de .NET Core 3.1 LTS | 16.7.30310.162 | Se recomienda
+Microsoft.NetCore.Component.SDK | SDK de .NET Core | 16.7.30310.162 | Se recomienda
 Microsoft.VisualStudio.Component.AspNet45 | Características avanzadas de ASP.NET | 16.0.28315.86 | Se recomienda
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 16.0.28625.61 | Se recomienda
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Características principales de las herramientas de pruebas - herramientas de compilación | 16.4.29409.204 | Se recomienda
@@ -327,8 +327,8 @@ Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Herramientas de compilaci
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | Paquete de compatibilidad de .NET Framework 4.8 | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.1 | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 16.3.29207.166 | Optional
@@ -360,11 +360,11 @@ Estos son componentes que no están incluidos en ninguna carga de trabajo, pero 
 
 Id. de componente | NOMBRE | Versión
 --- | --- | ---
-Microsoft.Net.Core.Component.SDK.2.2 | Entorno de ejecución de .NET Core 2.2 (EOL) | 16.6.30013.169
-Microsoft.Net.Core.Component.SDK.3.0 | Entorno de ejecución de .NET Core 3.0 (EOL) | 16.6.30107.105
-Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM Build Tools (v14.20) | 16.6.30013.169
+Microsoft.Net.Core.Component.SDK.2.2 | Runtime de .NET Core 2.2 (sin soporte) | 16.7.30310.162
+Microsoft.Net.Core.Component.SDK.3.0 | Runtime de .NET Core 3.0 (sin soporte) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM Build Tools (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para ARM (v14.20) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.20) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para ARM64 (v14.20) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.ATL | ATL de C++ v14.20 para v142 Build Tools (x86 y x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | ATL de C++ v14.20 para v142 Build Tools (ARM) | 16.5.29515.121
@@ -379,11 +379,11 @@ Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | MFC de C++ v14.20 pa
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | MFC de C++ v14.20 para v142 Build Tools (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | MFC de C++ v14.20 para v142 Build Tools con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | MFC de C++ v14.20 para v142 Build Tools con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 – VS 2019 C++ Build Tools para x64/x86 (v14.20) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 – VS 2019 C++ Build Tools para x64/x86 (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para x64/x86 (v14.20) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 - VS 2019 C++ ARM Build Tools (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 - VS 2019 C++ ARM Build Tools (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para ARM (v14.21) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para ARM64 (v14.21) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.ATL | Herramientas de compilación de ATL v14.21 en C++ para v142 (x86 y x64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM | Herramientas de compilación de ATL v14.21 en C++ para v142 (ARM) | 16.2.29019.55
@@ -398,11 +398,11 @@ Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | Herramientas de comp
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64 | Herramientas de compilación de MFC v14.21 en C++ para v142 (ARM64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | Herramientas de compilación de MFC v14.21 en C++ para v142 con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | Herramientas de compilación de MFC v14.21 en C++ para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 Build Tools (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 Build Tools (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC v142 – Bibliotecas con mitigaciones de Spectre de VS 2019 C++ para x64/x86 (v14.21) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.ARM | MSVC v142 - VS 2019 C++ Build Tools para ARM (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.ARM | MSVC v142 - VS 2019 C++ Build Tools para ARM (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM (v14.22) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM64 (v14.22) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ATL | Herramientas de compilación de ATL de C++ v14.22 para v142 (x86 y x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM | Herramientas de compilación de ATL de C++ v14.22 para v142 (ARM) | 16.4.29313.120
@@ -410,18 +410,18 @@ Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM.Spectre | Herramientas de comp
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.22 para v142 (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.22 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.22 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.22) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.22.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.MFC | Herramientas de compilación MFC de C++ v14.22 para v142 (x86 y x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM | Herramientas de compilación de MFC de C++ v14.22 para v142 (ARM) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.22 para v142 con mitigaciones de Spectre (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.22 para v142 (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.22 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.22 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.22) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC v142 - VS 2019 C++ Build Tools para ARM (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC v142 - VS 2019 C++ Build Tools para ARM (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM (v14.23) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC v142 – VS 2019 C++ Build Tools para ARM64 (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM64 (v14.23) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL | Herramientas de compilación de ATL de C++ v14.23 para v142 (x86 y x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM | Herramientas de compilación de ATL de C++ v14.23 para v142 (ARM) | 16.5.29515.121
@@ -429,18 +429,18 @@ Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM.Spectre | Herramientas de comp
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.23 para v142 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.23 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.23 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.23) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.23.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.MFC | Herramientas de compilación de MFC de C++ v14.23 para v142 (x86 y x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM | Herramientas de compilación de MFC de C++ v14.23 para v142 (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.23 para v142 con mitigaciones de Spectre (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.23 para v142 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.23 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.23 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.23) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.24.ARM | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para ARM (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.ARM | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para ARM (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM (v14.24) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.ARM64 | Herramientas de compilación de MSVC v142 – VS 2019 de C++ para ARM64 (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.ARM64 | Herramientas de compilación de MSVC v142 – VS 2019 de C++ para ARM64 (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para ARM64 (v14.24) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL | Herramientas de compilación de ATL de C++ v14.24 para v142 (x86 y x64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM | Herramientas de compilación de ATL de C++ v14.24 para v142 (ARM) | 16.5.29721.120
@@ -448,34 +448,53 @@ Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM.Spectre | Herramientas de comp
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.24 para v142 (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.24 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.24 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.24) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.24.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.MFC | Herramientas de compilación de MFC de C++ v14.24 para v142 (x86 y x64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM | Herramientas de compilación de MFC de C++ v14.24 para v142 (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.24 para v142 con mitigaciones de Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.24 para v142 (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.24 para v142 con mitigaciones de Spectre (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.24 para v142 con mitigaciones de Spectre (x86 y x64) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para x64/x86 (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.x86.x64 | Herramientas de compilación de MSVC v142 - VS 2019 de C++ para x64/x86 (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142 - VS 2019 en C++ para x64/x86 (v14.24) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.25.ARM | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM64 (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM64 (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL | Herramientas de compilación de ATL de C++ v14.25 para v142 (x86 y x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM | Herramientas de compilación de ATL de C++ v14.25 para v142 (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.25 para v142 (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (x86 y x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC | Herramientas de compilación de MFC de C++ v14.25 para v142 (x86 y x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM | Herramientas de compilación de MFC de C++ v14.25 para v142 (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.25 para v142 (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (x86 y x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para x64/x86 (v14.25) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.25.ARM | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM64 (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM64 (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL | Herramientas de compilación de ATL de C++ v14.25 para v142 (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM | Herramientas de compilación de ATL de C++ v14.25 para v142 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.25 para v142 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.25 para v142 con mitigaciones de Spectre (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.CLI.Support | Herramientas de compilación para la compatibilidad de C++/CLI con v142 (14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC | Herramientas de compilación de MFC de C++ v14.25 para v142 (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM | Herramientas de compilación de MFC de C++ v14.25 para v142 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.25 para v142 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.25 para v142 con mitigaciones de Spectre (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para x64/x86 (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para ARM64 (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM64 (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL | Herramientas de compilación de ATL de C++ v14.26 para v142 (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM | Herramientas de compilación de ATL de C++ v14.26 para v142 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM.Spectre | Herramientas de compilación de ATL de C++ v14.26 para v142 con mitigaciones de Spectre (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM64 | Herramientas de compilación de ATL de C++ v14.26 para v142 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM64.Spectre | Herramientas de compilación de ATL de C++ v14.26 para v142 con mitigaciones de Spectre (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.Spectre | Herramientas de compilación de ATL de C++ v14.26 para v142 con mitigaciones de Spectre (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.CLI.Support | Compatibilidad de C++/CLI con las herramientas de compilación de v142 (14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC | Herramientas de compilación de MFC de C++ v14.26 para v142 (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM | Herramientas de compilación de MFC de C++ v14.26 para v142 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM.Spectre | Herramientas de compilación de MFC de C++ v14.26 para v142 con mitigaciones de Spectre (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM64 | Herramientas de compilación de MFC de C++ v14.26 para v142 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM64.Spectre | Herramientas de compilación de MFC de C++ v14.26 para v142 con mitigaciones de Spectre (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.Spectre | Herramientas de compilación de MFC de C++ v14.26 para v142 con mitigaciones de Spectre (x86 y x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.x86.x64 | Herramientas de compilación de MSVC v142: VS 2019 de C++ para x64/x86 (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para x64/x86 (v14.26) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.ATL.ARM | Últimas herramientas de compilación de ATL de C++ para v142 (ARM) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | Últimas herramientas de compilación de ATL de C++ para v142 con mitigaciones de Spectre (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | Últimas herramientas de compilación de ATL de C++ para v142 (ARM64) | 16.4.29313.120
@@ -487,9 +506,9 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | Últimas herramientas de c
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | Últimas herramientas de compilación MFC de C++ para v142 (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | Últimas herramientas de compilación MFC de C++ para v142 con mitigaciones de Spectre (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.Redist.MSM | MSM de C++ 2019 Redistributable | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM (v14.26) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM64 (v14.26) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para x64/x86 (v14.26)  | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM (v14.27) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para ARM64 (v14.27) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | Bibliotecas con mitigaciones de Spectre de MSVC v142: VS 2019 en C++ para x64/x86 (v14.27)  | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – Bibliotecas con mitigaciones de Spectre de VS 2017 C++ para ARM (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – Bibliotecas con mitigaciones de Spectre de VS 2017 C++ para ARM64 (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ATL | Herramientas de compilación de ATL de C++ para v141 (x86 y x64) | 16.0.28625.61

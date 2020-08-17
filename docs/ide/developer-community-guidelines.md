@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137557"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972478"
 ---
 # <a name="developer-community-guidelines"></a>Guía sobre la Comunidad de desarrolladores
 
@@ -89,12 +89,15 @@ Si ha sugerido una característica, es posible que le decepcione que no tengamos
 
 En nuestro proceso de toma de decisiones, tenemos en cuenta los siguientes aspectos en lo que respecta a las sugerencias de características:
 
+- ¿Coincide con nuestra dirección general del producto?
 - ¿Nos podemos permitir crearla y mantenerla?
 - ¿Se alinea con la estrategia general de nuestra [hoja de ruta](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)?
 - ¿Cuenta con el apoyo de la comunidad según los votos y los comentarios?
 - ¿Nos encanta a pesar de que no haya tenido mucho éxito en la comunidad?
 
 Si no respondemos afirmativamente a alguna de estas preguntas, la sugerencia se cerrará. No obstante, las sugerencias suelen permanecer abiertas como _En revisión_ para recopilar más comentarios de la comunidad.
+
+Si una sugerencia no coincide con nuestra dirección general del producto, la cerraremos como *Fuera de ámbito*. Por ejemplo, es posible que podamos tener inversiones similares en otros miembros de la familia de productos de Visual Studio. O bien la característica sugerida puede ser pertinente solo para algunas personas, lo que hace que para una extensión sea más sencillo proporcionarla.
 
 Realice un seguimiento del progreso de su sugerencia de característica consultando los [estados de las sugerencias y las preguntas más frecuentes](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 
