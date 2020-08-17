@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "73189241"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238717"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Trabajar con R en Visual Studio
 
@@ -35,7 +35,7 @@ A continuación, siga los vínculos que aparecen a continuación para obtener m�
 | --- | --- | --- |
 | [Sistema de proyectos de Visual Studio](r-projects-in-visual-studio.md) | Organice y administre archivos relacionados en una estructura práctica y aproveche plantillas útiles para elementos como código de R, documentación de R, R Markdown, consultas de SQL y procedimientos almacenados. Disfrute también del [administrador de paquetes](r-package-manager-in-visual-studio.md) y de la [integración de SQL Server](integrating-sql-server-with-r.md).  | [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Área de trabajo](r-workspaces-in-visual-studio.md) | RTVS se puede enlazar a áreas de trabajo locales y remotas, lo que le permite desarrollar código de R localmente con conjuntos de datos más pequeños para después ejecutarlo en equipos basados en la nube más eficaces con conjuntos de datos mucho más grandes. | N/D |
-| [Opciones de R Tools](options-for-r-tools-in-visual-studio.md) | Controlan diferentes aspectos de RTVS. | [Cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Opciones de R Tools](options-for-r-tools-in-visual-studio.md) | Controlan diferentes aspectos de RTVS. | [Opciones (cuadro de diálogo)](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Edición enriquecida, IntelliSense y fragmentos de código](editing-r-code-in-visual-studio.md) | Incluye colores de sintaxis, [IntelliSense](r-intellisense.md) en todo el código y las bibliotecas, formateo de código, ayuda para las firmas, Ir a definición, Buscar todas las referencias, [fragmentos de código](code-snippets-for-r.md) y mucho más. | [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | Los documentos de R Markdown ayudan a compartir los resultados de datos con código de R integrado dentro de bloques de código de Markdown. | N/D |
 | [Ventana interactiva](interactive-repl-for-r-in-visual-studio.md) | Proporciona una experiencia completa de REPL para R con la capacidad de ejecutar código fácilmente en un archivo de origen en la ventana interactiva. | N/D |
@@ -45,14 +45,12 @@ A continuación, siga los vínculos que aparecen a continuación para obtener m�
 
 Vea también las [preguntas más frecuentes](faq.md).
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) de una introducción a Herramientas de R para Visual Studio (12m 36s). Vea también [más vídeos sobre Herramientas de R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
+![icono de cámara de vídeo](../install/media/video-icon.png "Ver un vídeo") [Vea un vídeo (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) de una introducción a Herramientas de R para Visual Studio (12 min 36 s). Vea también [más vídeos sobre Herramientas de R](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio).
 
 ## <a name="send-us-your-feedback"></a>Envíenos sus comentarios.
 
-1. **Problemas de GitHub**: la mejor forma de ponerse en contacto con el equipo de RTVS es [registrando un problema en GitHub](https://github.com/Microsoft/RTVS/issues) o usando el menú **Herramientas de R** > **Comentarios**.
+1. **Problemas de GitHub**: la mejor forma de ponerse en contacto con el equipo de RTVS es [archivar un problema en GitHub](https://github.com/Microsoft/RTVS/issues), o mediante el menú **R Tools** > **Comentarios**.
 
-1. **Enviar una sonrisa/desaprobación**: el menú **Herramientas de R** > **Comentarios** es una forma rápida de enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en *%temp%/RTVSlogs.zip*, en caso de que quiera enviarlos por separado). Si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda** > **Comentarios** > **Configuración** o durante la instalación, el registro está deshabilitado.
+1. **Enviar una sonrisa o una desaprobación**: el menú **R Tools** > **Comentarios** es una manera rápida de enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en *%temp%/RTVSlogs.zip*, en caso de que quiera enviarlos por separado). Si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda** > **Comentarios** > **Configuración** o durante la instalación, el registro está deshabilitado.
 
-1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (at) microsoft.com*.
+1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (arroba) microsoft.com*.

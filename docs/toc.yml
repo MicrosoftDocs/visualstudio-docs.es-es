@@ -390,6 +390,8 @@
                   href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Convertir una consulta LINQ en una instrucción foreach
                   href: ide/reference/convert-linq-to-foreach.md
+                - name: Conversión de typeof en nameof
+                  href: ide/reference/convert-typeof-to-nameof.md
                 - name: Convertir una instrucción switch en una expresión switch
                   href: ide/reference/convert-switch-statement-to-switch-expression.md
                 - name: Finalización de DateTime y TimeSpan
@@ -430,6 +432,8 @@
                   href: ide/reference/rename.md
                 - name: Simplificar una expresión condicional
                   href: ide/reference/simplify-conditional-expression.md
+                - name: Simplificación de la expresión LINQ
+                  href: ide/reference/simplify-linq-expression.md
                 - name: Introducción a la interpolación de cadenas
                   href: ide/reference/simplify-string-interpolation.md
                 - name: Ordenar instrucciones Using
