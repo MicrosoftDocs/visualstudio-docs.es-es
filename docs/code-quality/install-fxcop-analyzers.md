@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 105583486a9f1420f1670a16abcb28e8268b293d
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
+ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371799"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88286658"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
 
@@ -22,7 +22,7 @@ Microsoft creó un conjunto de analizadores, denominado [Microsoft. CodeAnalysis
 
 Puede instalar estos analizadores FxCop como un paquete NuGet o como una extensión VSIX en Visual Studio. Para obtener información sobre las ventajas y desventajas de cada uno, vea [paquete NuGet frente a extensión VSIX](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension).
 
-## <a name="nuget-package"></a>Paquete de NuGet
+## <a name="nuget-package"></a>Detección de
 
 ::: moniker range=">=vs-2019"
 
@@ -70,10 +70,10 @@ Para la instalación personalizada, por ejemplo, para especificar una versión d
 
 Utilice las siguientes directrices para determinar qué versión del paquete de analizadores de FxCop instalar para su versión de Visual Studio:
 
-| Versión de Visual Studio | Versión del paquete de analizador de FxCop |
+| Versión de Visual Studio | Versión del paquete de analizador de FxCop |
 | - | - |
 | Visual Studio 2019 (todas las versiones) | [más reciente](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
-| Visual Studio 2017, versión 15.9 | [2.9.9](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.9) |
+| Visual Studio 2017, versión 15.9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 versión 15,5 a 15,8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 versión 15,3 a 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 versión 15,0 a 15,2 | [2.0.0: beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -153,7 +153,7 @@ Si desea comprobar si la extensión está instalada, seleccione **extensiones** 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general de los analizadores de código en Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Uso de analizadores de código en Visual Studio](../code-quality/use-roslyn-analyzers.md)
