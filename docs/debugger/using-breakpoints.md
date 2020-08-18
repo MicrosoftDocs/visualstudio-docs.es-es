@@ -103,11 +103,11 @@ Al seleccionar **Expresión condicional**, puede elegir entre dos condiciones: *
 
 En el siguiente ejemplo, el punto de interrupción se visita únicamente cuando el valor de `testInt` es **4**:
 
-![Condición "Es true" del punto de interrupción](../debugger/media/breakpointconditionistrue.png "Condición "Es true" del punto de interrupción")
+![Condición "Es true" del punto de interrupción](../debugger/media/breakpointconditionistrue.png "Condición Es true del punto de interrupción")
 
 En el siguiente ejemplo, el punto de interrupción se visita únicamente cuando el valor de `testInt` cambia:
 
-![Condición "Cuando cambie" del punto de interrupción](../debugger/media/breakpointwhenchanged.png "Condición "Cuando cambie" del punto de interrupción")
+![Condición "Cuando cambie" del punto de interrupción](../debugger/media/breakpointwhenchanged.png "Condición Cuando cambie del punto de interrupción")
 
 Si se establece una condición de punto de interrupción con una sintaxis no válida, aparecerá un mensaje de advertencia. Si se especifica una condición de punto de interrupción con una sintaxis válida pero una semántica no válida, aparecerá un mensaje de advertencia la primera vez que se visite el punto de interrupción. En ambos casos, el depurador se detendrá cuando se alcance el punto de interrupción no válido. El punto de interrupción se omitirá únicamente si la condición es válida y se evalúa como `false`.
 
