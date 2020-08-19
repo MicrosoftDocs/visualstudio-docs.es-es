@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182798"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249202"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Inicio rápido: Uso de Docker con una aplicación de página única de React en Visual Studio
 
@@ -177,7 +177,7 @@ Actualice Dockerfile agregando las líneas siguientes. Esta acción copiará nod
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Actualice el archivo .dockerignore quitando `**/bin`.
+   1. Actualice el archivo .dockerignore quitando `**/bin`.
 
 ## <a name="debug"></a>Depuración
 

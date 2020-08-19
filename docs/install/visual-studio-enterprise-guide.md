@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d223d6e1e6ed3bf4b75b1c66bcc0f9dc897cfed
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434322"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247646"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guía de Visual Studio Enterprise
 Si desea ahorrar tiempo mientras su empresa se ejecuta en Visual Studio, comience aquí. En esta guía empresarial se incluyen sugerencias que pueden ayudarle a instalar y actualizar Visual Studio en escenarios empresariales comunes, desbloquearle si tiene problemas y obtener información sobre cómo informar de un problema si necesita más ayuda. 
@@ -70,6 +70,3 @@ Obtenga información sobre cómo actualizar Visual Studio correctamente y correg
 ## <a name="see-also"></a>Consulte también 
 
 - [Guía de productividad para Visual Studio](../ide/productivity-features.md)
-
-
-

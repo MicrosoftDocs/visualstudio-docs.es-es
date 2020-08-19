@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350711"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248055"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creación de vistas personalizadas de objetos C++ en el depurador mediante el marco Natvis
 
@@ -99,6 +99,7 @@ El depurador de Visual Studio carga automáticamente los archivos *.natvis* en 
 Un paquete VSIX puede instalar y registrar archivos *.natvis*. Independientemente de dónde se instalen, todos los archivos *.natvis* registrados se seleccionan automáticamente durante la depuración.
 
 1. Incluya el archivo *.natvis* en el paquete VSIX. Por ejemplo, para el siguiente archivo del proyecto:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ Un paquete VSIX puede instalar y registrar archivos *.natvis*. Independientement
    ```
 
 2. Registre el archivo *.natvis* en el archivo *source.extension.vsixmanifest*:
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -702,7 +704,7 @@ Escribir un visualizador personalizado comporta mucho más trabajo que escribir 
 
  Puede usar los atributos `Condition`, `IncludeView` y `ExcludeView` en elementos `CustomVisualizer`.
 
- ## <a name="limitations"></a>Limitaciones
+## <a name="limitations"></a>Limitaciones
 
 Las personalizaciones de Natvis funcionan con clases y estructuras, pero no con definiciones de tipo.
 

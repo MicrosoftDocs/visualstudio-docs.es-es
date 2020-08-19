@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281011"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249211"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 
@@ -199,15 +199,13 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
         ![Conectar con el sistema remoto](../debugger/media/connect-remote-system.png "Conexión con el sistema remoto")
         1. Seleccione un contenedor en ejecución al que asociarse después de conectarse correctamente al SSH o el demonio y haga clic en **Aceptar**.
 
-    
     1. ***Para establecer el destino en un contenedor remoto que ejecuta un proceso a través de un [demonio de Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Especifique la dirección del demonio (es decir, a través de TCP, IP, etc.) en **Docker host (Optional)** (Host de Docker [opcional]) y haga clic en el vínculo para actualizar.
         1. Seleccione un contenedor en ejecución al que asociarse después de conectarse al demonio correctamente y haga clic en **Aceptar**.
 
 4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C# en Visual Studio.
 
-    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete.png "Menú de conexión de Docker de Linux completado")
-    
+    ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete.png "Menú de conexión de Docker de Linux completado")    
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Asociación a un proceso que se ejecuta en un contenedor de Docker de Windows
 
@@ -238,10 +236,8 @@ Puede asociar el depurador de Visual Studio a un proceso que se ejecuta en un c
 4. Elija el proceso de contenedor correspondiente en la lista **Procesos disponibles** y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
 
     ![Menú para asociar Docker completado](../debugger/media/docker-attach-complete-windows.png "Menú de conexión de Docker de Windows completado")
-    
 
 5.  Elija el proceso de contenedor correspondiente en la lista de procesos disponibles y seleccione **Asociar** para empezar a depurar el proceso de contenedor de C#.
-
 
 ::: moniker-end
 

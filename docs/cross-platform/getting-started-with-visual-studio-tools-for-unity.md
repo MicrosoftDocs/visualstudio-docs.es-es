@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 32766fdf69136f3882186bbcad08aaf83d2e573e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815752"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250091"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introducción a Visual Studio Tools para Unity
 
@@ -66,13 +66,11 @@ Si ya tiene instalado Visual Studio, o prefiere instalarlo manualmente, ejecute
 
 1. Haga clic en **Modificar** (si ya está instalada) o en **Instalar** (si es una nueva instalación) en la esquina inferior derecha de la ventana del instalador.
 
-
 #### <a name="check-for-updates-to-visual-studio"></a>Búsqueda de actualizaciones para Visual Studio
 
 Se recomienda comprobar las actualizaciones en Visual Studio para asegurarse de que tiene acceso a las herramientas y características más recientes. Esto no interrumpirá el proyecto de Unity.
 
 - [Actualizar Visual Studio](../install/update-visual-studio.md)
-
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Configuración de Unity para su uso con Visual Studio
 
@@ -98,7 +96,6 @@ A partir de Unity 2018.1, Visual Studio debe ser el editor de scripts externos p
    ![Selección de Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-
 4. Si **Examinar...** estaba seleccionado, vaya al directorio **Common7/IDE** dentro del directorio de instalación de Visual Studio y seleccione **devenv.exe**. A continuación, haga clic en **Abrir**.
 
    :::moniker range="vs-2017"
@@ -123,7 +120,6 @@ Descargue e instale Visual Studio Tools para Unity desde Visual Studio Marketpla
 > [!NOTE]
 > Visual Studio Tools para Unity requiere Unity 5.2 y posterior, así como una versión de Visual Studio que admita extensiones, como Visual Studio Community, Professional, Premium o Enterprise. Para comprobar que Visual Studio Tools para Unity está habilitado en la instalación de Unity, seleccione **About Unity** (Acerca de Unity) en el menú **Ayuda** y busque el texto "Microsoft Visual Studio Tools para Unity habilitado" en la parte inferior izquierda del cuadro de diálogo.
 > ![Acerca de Unity](media/vs-2019/vstu-about-unity.png)
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 

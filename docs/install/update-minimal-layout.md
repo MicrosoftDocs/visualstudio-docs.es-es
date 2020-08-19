@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869915"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168754"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Actualización de Visual Studio con un diseño sin conexión mínimo
 
@@ -56,12 +56,13 @@ Esta herramienta permite crear diseños de actualización para Visual Studio 2
 #### <a name="commands"></a>Comandos
 * **Vista previa**: use este comando para obtener una vista previa de cuántos paquetes se descargarán y el espacio total que se usará para crear el diseño. 
 * **Generar**: use este comando para generar el diseño mínimo a fin de actualizar Visual Studio.
-* **Regenerar**: use este comando para volver a generar un diseño mediante un archivo de respuesta de diseño mínimo existente. Cada diseño mínimo genera un archivo de respuesta `MinimalLayout.json` que contiene los parámetros de entrada de diseño mínimo originales. Puede usar el comando **Regenerar** y un archivo de respuesta `MinimalLayout.json` para volver a generar el diseño mínimo. Esto resulta útil si quiere crear un diseño mínimo para una nueva actualización de Visual Studio que se base en el archivo de respuesta de diseño mínimo anterior. 
-   - Para este comando, se requiere una ruta de acceso de archivo `MinimalLayout.json` de un diseño ya generado. 
+* **Regenerar**: use este comando para volver a generar un diseño mediante un archivo de respuesta de diseño mínimo existente. Cada diseño mínimo genera un archivo de respuesta `MinimalLayout.json` que contiene los parámetros de entrada de diseño mínimo originales. Puede usar el comando **Regenerar** y un archivo de respuesta `MinimalLayout.json` para volver a generar el diseño mínimo. Esto resulta útil si quiere crear un diseño mínimo para una nueva actualización de Visual Studio que se base en el archivo de respuesta de diseño mínimo anterior.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Para este comando, se requiere una ruta de acceso de archivo `MinimalLayout.json` de un diseño ya generado. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Comprobar**: use este comando para determinar si la carpeta de diseño está dañada.
 * **Corregir**: use este comando para corregir una carpeta de diseño dañada, lo cual incluye el reemplazo de los paquetes que falten en la carpeta del diseño.

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888453"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144719"
 ---
 # <a name="work-with-sql-server-and-r"></a>Trabajar con SQL Server y R
 
@@ -24,9 +24,14 @@ La excelente compatibilidad de Visual Studio con SQL Server ayuda a los científ
 > - Visual Studio 2017: ejecute el instalador de Visual Studio y seleccione el almacenamiento de datos y la carga de trabajo de procesamiento, que incluye SQL Server Data Tools.
 > - Visual Studio 2015: siga las instrucciones de [Descargar SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) de introducción a SQL Server y R (3m 03s). |
+:::row:::
+    :::column:::
+        ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo")
+    :::column-end:::
+    :::column:::
+        [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) de introducción a SQL Server y R (3m 03s).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="create-and-run-sql-queries"></a>Crear y ejecutar consultas SQL
 
@@ -57,9 +62,14 @@ En cambio, RTVS simplifica el difícil proceso propenso a errores de combinar c�
 - [Escribir y probar un procedimiento almacenado de SQL](#write-and-test-a-sql-stored-procedure)
 - [Publicar un procedimiento almacenado de SQL](#publish-a-sql-stored-procedure)
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) de introducción a los procedimientos recomendados de SQL y R (6m 09s). |
+:::row:::
+    :::column:::
+        ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo")
+    :::column-end:::
+    :::column:::
+        [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) de introducción a los procedimientos recomendados de SQL y R (6m 09s).
+    :::column-end:::
+:::row-end:::
 
 ### <a name="add-a-database-connection"></a>Agregar una conexión de base de datos
 

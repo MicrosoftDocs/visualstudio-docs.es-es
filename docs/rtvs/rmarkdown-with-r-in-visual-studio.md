@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: edcea12eee28a4f3fa918b90311c9f4c4b2c2792
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888571"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250660"
 ---
 # <a name="create-r-markdown-documents"></a>Crear documentos de R Markdown
 
@@ -38,6 +38,7 @@ Herramientas de R para Visual Studio (RTVS) proporciona una plantilla de element
 
 1. El contenido predeterminado del archivo nuevo es de la manera siguiente:
 
+    <!-- markdownlint-disable MD048 -->
     ~~~markdown
     ---
     title: "Untitled"
@@ -61,6 +62,7 @@ Herramientas de R para Visual Studio (RTVS) proporciona una plantilla de element
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
     ~~~
+    <!-- markdownlint-disable MD048 -->
 
 ## <a name="previews"></a>Vistas previas
 

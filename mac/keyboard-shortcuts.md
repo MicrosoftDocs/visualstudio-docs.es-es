@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 2877f50528c5f93d6f764cc0dbde12a5bdf06a49
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77567977"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247385"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
@@ -25,10 +25,10 @@ Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el mé
 
 Se han compilado los métodos abreviados de teclado más usados y prácticos en un archivo PDF descargable. Hay dos versiones: una que muestra accesos directos de Visual Studio para Mac y otra que muestra accesos directos de Visual Studio en paralelo para los usuarios que cuentan con experiencia previa con Visual Studio al usar Windows.
 
- - [Referencia rápida de métodos abreviados de teclado de Visual Studio para Mac](https://aka.ms/vsm-keys)
- - [Referencia rápida de métodos abreviados de teclado de Visual Studio y Visual Studio para Mac](https://aka.ms/vsm-vs-keys)
+- [Referencia rápida de métodos abreviados de teclado de Visual Studio para Mac](https://aka.ms/vsm-keys)
+- [Referencia rápida de métodos abreviados de teclado de Visual Studio y Visual Studio para Mac](https://aka.ms/vsm-vs-keys)
 
-## <a name="code-navigation"></a>Navegación por el código
+## <a name="code-navigation"></a>Navegación por código
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
@@ -39,20 +39,20 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Error anterior|**⌥⇧⇞**|
 |Problema anterior del archivo|**⌥⇞**|
 
-## <a name="debug"></a>Depuración
+## <a name="debug"></a>Depurar
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
 |Habilitar o deshabilitar punto de interrupción|**⌥⌘/** , **⌘F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
-|Quitar|**⇧⌘F9**|
+|Quitar todos los puntos de interrupción|**⇧⌘F9**|
 |Ejecutar hasta el cursor|**⌘F10**|
 |Establecer instrucción siguiente|**⇧⌘F10**|
 |Mostrar la instrucción siguiente|**⌥\***|
 |Paso a paso por instrucciones|**⇧⌘I**, **⌘F11**|
-|Paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
+|Depurar paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
 |Paso a paso por procedimientos|**⇧⌘O**, **F10**|
-|Alternar punto de interrupción|**⌘\\** , **F9**|
+|Alternar puntos de interrupción|**⌘\\**, **F9**|
 |Ver puntos de interrupción|**⌥⌘B**|
 
 ## <a name="designer"></a>Diseñador
@@ -67,13 +67,13 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |-|-|
 |Modo de edición de restricciones|**⌘E**|
 |Copiar|**⌘C**|
-|Cut|**⌘X**|
+|Cortar|**⌘X**|
 |Eliminar|**⌘⌫**|
 |Dar formato al documento|**⌃I**|
 |Aplicar sangría a la selección|**⌘]**|
-|Paste|**⌘V**|
+|Pegar|**⌘V**|
 |Preferencias|**⌘,**|
-|Redo|**⇧⌘Z**|
+|Rehacer|**⇧⌘Z**|
 |Cambiar nombre|**⌘R**, **F2**|
 |Seleccionar todo|**⌘A**|
 |Mostrar generación de código|**⌘I**|
@@ -81,7 +81,7 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Alternar definiciones|**⌥⇧⌘↓**|
 |Alternar plegado|**⌥⇧⌘←**|
 |Alternar comentario de línea|**⌘/**|
-|Undo|**⌘Z**|
+|Deshacer|**⌘Z**|
 |Quitar sangría a la selección|**⌘[**|
 |Actualizar marco desde restricciones|**⇧⌘R**|
 
@@ -90,7 +90,7 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
 |Borrar F# interactivo|**⌃⌥C**|
-|F# interactivo|**⌃⌥F**|
+|F# Interactive|**⌃⌥F**|
 |Reiniciar F# interactivo|**⌃⌥R**|
 |Enviar línea a F# interactivo|**⌃⌥L**|
 |Enviar referencias a F# interactivo|**⌃⌥P**|
@@ -106,8 +106,8 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Nuevo archivo|**⌘N**|
 |Nueva solución|**⇧⌘N**|
 |Abrir|**⌘O**|
-|Imprimir|**⌘P**|
-|Salir|**⌘Q**|
+|Impresión|**⌘P**|
+|Salga.|**⌘Q**|
 |Reversión|**⌘U**|
 |Guardar|**⌘S**|
 |Guardar todo|**⇧⌘S**|
@@ -126,19 +126,19 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Implementar mensajes de Unity|**⇧⌘M**|
 |Inspeccionar|**⌥⌘I**|
 
-## <a name="project"></a>Proyecto
+## <a name="project"></a>Project
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
 |Agregar archivos|**⌥⌘A**|
-|Compilar|**⌘K**, **⇧F6**|
+|Build|**⌘K**, **⇧F6**|
 |Compilar todo|**⌘B**, **F6**|
-|Limpiar|**⇧⌘K**|
-|Volver a compilar|**⌃⌘K**|
+|Clean|**⇧⌘K**|
+|Volver a generar|**⌃⌘K**|
 |Recompilar todo|**⌃⌘B**|
 |Iniciar depuración|**⌘⏎**, **F5**|
 |Iniciar sin depurar|**⌥⌘⏎**, **⌃F5**|
-|Detener|**⇧⌘⏎**, **⇧F5**|
+|Stop|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>Refactorización
 
@@ -147,23 +147,23 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Importar símbolo|**⌃⌥␣**|
 |Corrección rápida|**⌥⏎**|
 
-## <a name="search"></a>Buscar
+## <a name="search"></a>Search
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
-|Comando|**⇧⌘P**|
+|Get-Help|**⇧⌘P**|
 |Buscar en archivos|**⇧⌘F**|
 |Buscar siguiente|**⌘G**, **F3**|
 |Buscar siguiente coincidencia con la selección|**⌘E**, **⌘F3**|
 |Buscar anterior|**⇧⌘G**, **⇧F3**|
 |Buscar anterior coincidencia con la selección|**⇧⌘F3**|
-|Find|**⌘F**|
+|Buscar|**⌘F**|
 |Ir al archivo|**⇧⌘D**|
 |Ir a la línea|**⌘L**|
 |Ir al tipo|**⇧⌘T**|
 |Navegar a|**⌘.**|
 |Reemplazar en archivos|**⌥⇧⌘F**|
-|Sustituya|**⌥⌘F**|
+|Replace|**⌥⌘F**|
 
 ## <a name="text-editor"></a>Editor de texto
 
@@ -178,8 +178,8 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Eliminar carácter de la derecha|**⌃D**|
 |Eliminar hasta el final de la línea|**⌃K**|
 |Abreviatura dinámica|**⌃/**|
-|Expandir selección|**⌥⇧↓**|
-|Expandir selección|**⌥⇧↑**|
+|Ampliar selección|**⌥⇧↓**|
+|Ampliar selección|**⌥⇧↑**|
 |Expandir selección hasta el final del documento|**⇧⌘↓**, **⇧⌘↘**|
 |Expandir selección hasta el principio del documento|**⇧⌘↑**, **⇧⌘↖**|
 |Expandir selección hasta el final de la línea|**⇧↘**, **⇧⌘→**|
@@ -235,7 +235,7 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Acercar|**⌘+** , **⌘=**|
 |Alejar|**⌘-** , **⌘_**|
 
-## <a name="window"></a>Ventana
+## <a name="window"></a>Periodo
 
 |Comandos|Métodos abreviados de teclado|
 |-|-|
@@ -252,7 +252,7 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |Ocultar Visual Studio|**⌘H**|
 |Minimizar|**⌘M**|
 |Documento siguiente|**⌘}** , **⌘F6**|
-|Documento anterior|**⌘{** , **⇧⌘F6**|
+|Documento anterior|**⌘{**, **⇧⌘F6**|
 |Cambiar al documento siguiente|**⌃⇥**|
 |Cambiar al relleno siguiente|**⌃⌥⇥**|
 |Cambiar al documento anterior|**⌃⇧⇥**|
@@ -260,14 +260,14 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 
 ## <a name="macos-key-symbols-lookup"></a>Búsqueda de los símbolos de teclas de macOS
 
-|Símbolo|Key|
+|Símbolo|Clave|
 |-|-|
 |⌘|**Comando** (**cmd**)|
 |⌥|**Opción** (**alt**)|
-|⇧|**Mayús**|
+|⇧|**Shift**|
 |⌃|**Control** (**ctrl**)
-|⇞|**Retroceder página** (**Re. pág.** )|
-|⇟|**Avanzar página** (**Av. pág.** )|
+|⇞|**Retroceder página** (**Re. pág.**)|
+|⇟|**Avanzar página** (**Av. pág.**)|
 |⌫|**Borrar** (**Retroceso**)|
 |⌦|**Borrar hacia adelante**|
 |⏎|**Return**|
@@ -275,8 +275,8 @@ Se han compilado los métodos abreviados de teclado más usados y prácticos en 
 |↖|**Página principal**|
 |↘|**Fin**|
 |␣|**Barra espaciadora**|
-|⇥|**Tabulación**|
+|⇥|**Pestaña**|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Métodos abreviados de teclado predeterminados de Visual Studio (en Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285756"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250769"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 
@@ -86,21 +86,21 @@ Con el método de instrumentación también puede recopilar contadores de rendim
 
 La generación de perfiles de simultaneidad recopila información sobre las aplicaciones multiproceso. La generación de perfiles de contención de recursos recopila información detallada de la pila de llamadas cada vez que subprocesos competidores esperan el acceso a un recurso compartido. La visualización de simultaneidad también recopila información más general sobre cómo interactúa la aplicación multiproceso con:
 
-  - Ella misma.
-  - El hardware.
-  - Sistema operativo.
-  - Otros procesos del equipo host.
+- Ella misma.
+- El hardware.
+- Sistema operativo.
+- Otros procesos del equipo host.
 
 Los informes de contención de recursos muestran el número total de contenciones. También notifican el tiempo total que los módulos, las funciones, las líneas de código fuente y las instrucciones han esperado un recurso. Los gráficos de escala de tiempo muestran las contenciones a medida que se producen.
 
 El visualizador de simultaneidad muestra información gráfica para ayudarlo a localizar:
 
-  - Los cuellos de botella de rendimiento.
-  - La infrautilización de la CPU.
-  - La contención de los subprocesos.
-  - La migración de los subprocesos.
-  - Los retrasos en la sincronización.
-  - Las áreas de E/S superpuestas.
+- Los cuellos de botella de rendimiento.
+- La infrautilización de la CPU.
+- La contención de los subprocesos.
+- La migración de los subprocesos.
+- Los retrasos en la sincronización.
+- Las áreas de E/S superpuestas.
 
   Cuando es posible, la salida del gráfico crea un vínculo a los datos desde la pila de llamadas y el código fuente. Solo se pueden recopilar datos de visualización de simultaneidad de las aplicaciones de línea de comandos y de las aplicaciones Windows.
 

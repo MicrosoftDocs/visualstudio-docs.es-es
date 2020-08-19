@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811187"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144706"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -21,9 +21,14 @@ El trazado es una parte fundamental del flujo de trabajo de un científico de da
 
 ![Imagen prominente del trazado](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sobre el trazado con R (2m 02s). |
+:::row:::
+    :::column:::
+        ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo")
+    :::column-end:::
+    :::column:::
+        [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sobre el trazado con R (2m 02s).
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>La ventana de trazado
 
