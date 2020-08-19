@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214607"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612882"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -375,7 +376,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1070 | [CA1070: No declarar los campos de eventos como virtuales](../code-quality/ca1070.md) | Un [evento similar](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) a un campo se declaró como virtual. |
 | CA1200 | [CA1200: Evitar el uso de etiquetas cref con un prefijo](../code-quality/ca1200.md) | El atributo [CREF](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) de una etiqueta de documentación XML significa "referencia de código". Especifica que el texto interno de la etiqueta es un elemento de código, como un tipo, un método o una propiedad. Evite el uso de `cref` etiquetas con prefijos, ya que impide que el compilador Compruebe las referencias. También impide que el entorno de desarrollo integrado (IDE) de Visual Studio busque y actualice estas referencias de símbolos durante las refactorizaciones. |
 | CA1300 | [CA1300: Especificar MessageBoxOptions](../code-quality/ca1300.md) | Para mostrar correctamente un cuadro de mensaje para las referencias culturales con escritura de derecha a izquierda, se deben pasar al método Show los miembros RightAlign y RtlReading de la enumeración MessageBoxOptions. |
-| CA1301 | [CA1301: Evitar los aceleradores duplicados](../code-quality/ca1301.md) | Una tecla de acceso, también denominada acelerador, permite el acceso mediante teclado a un control utilizando la tecla ALT. Cuando varios controles tienen claves de acceso duplicadas, el comportamiento de la tecla de acceso no está bien definido. |
+| CA1301 | [CA1301: Evitar los aceleradores duplicados](../code-quality/ca1301.md) | Una tecla de acceso, también denominada acelerador, permite el acceso mediante teclado a un control utilizando la tecla ALT. Cuando varios controles tienen las teclas de acceso duplicadas, no se define correctamente el comportamiento de la tecla de acceso. |
 | CA1302 | [CA1302: No codificar las cadenas específicas de configuración regional](../code-quality/ca1302.md) | La enumeración System.Environment.SpecialFolder contiene miembros que hacen referencia a carpetas del sistema especiales. La ubicación de estas carpetas puede tener diferentes valores en sistemas operativos distintos, el usuario puede cambiar alguna de estas ubicaciones y además, están adaptadas. El método Environment.GetFolderPath devuelve las ubicaciones asociadas a la enumeración Environment.SpecialFolder, adaptadas y adecuadas al equipo actualmente en ejecución. |
 | CA1303 | [CA1303: No pasar literales como parámetros localizados](../code-quality/ca1303.md) | Un método visible externamente pasa un literal de cadena como un parámetro a un constructor o método .NET, y esa cadena debe ser localizable. |
 | CA1304 | [CA1304: Especificar CultureInfo](../code-quality/ca1304.md) | Un método o constructor llama a un miembro que tiene una sobrecarga que acepta un parámetro System.Globalization.CultureInfo, y el método o constructor no llama a la sobrecarga que toma el parámetro CultureInfo. Si no se proporciona un objeto CultureInfo o System.IFormatProvider, el valor predeterminado proporcionado por el miembro sobrecargado podría no surtir el efecto deseado en todas las configuraciones regionales. |
@@ -606,4 +607,5 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA5400 | [CA5400 asegurarse de que la lista de revocación de certificados HttpClient no está deshabilitada](../code-quality/ca5400.md) | Un certificado revocado ya no es de confianza. Podría ser utilizado por los atacantes para pasar algunos datos malintencionados o robar datos confidenciales en la comunicación HTTPS. |
 | CA5401 | [CA5401 no usar CreateEncryptor con un IV no predeterminado](../code-quality/ca5401.md) | El cifrado simétrico siempre debe usar un vector de inicialización no repetible para evitar ataques de diccionario. |
 | CA5402 | [CA5402 usar CreateEncryptor con el valor de IV predeterminado](../code-quality/ca5402.md) | El cifrado simétrico siempre debe usar un vector de inicialización no repetible para evitar ataques de diccionario. |
-| IL3000 | [IL3000 evitar el uso de la ruta de acceso del archivo de ensamblado al publicar como un solo archivo](../code-quality/il3000.md) | Evite el uso de la ruta de acceso del archivo de ensamblado al publicar como un solo archivo |
+| IL3000 | [IL3000 evitar el acceso a la ruta de acceso del archivo de ensamblado al publicar como un solo archivo](../code-quality/il3000.md) | Evite el uso de la ruta de acceso del archivo de ensamblado al publicar como un solo archivo |
+| IL3001 | [IL3001 evitar el acceso a la ruta de acceso del archivo de ensamblado al publicar como un solo archivo](../code-quality/il3001.md) | Evitar el acceso a la ruta de acceso del archivo de ensamblado al publicar como un solo archivo |
