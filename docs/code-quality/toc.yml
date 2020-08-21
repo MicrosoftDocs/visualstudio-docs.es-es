@@ -989,5 +989,7 @@
               items:
                 - name: Información general
                   displayName: publish warnings
-                - name: 'IL3000: Evite usar la ruta de acceso al archivo de ensamblado al publicar como único archivo'
+                - name: 'IL3000: Evite acceder a la ruta de acceso al archivo de ensamblado al publicar como único archivo'
                   href: il3000.md
+                - name: 'IL3001: Evite acceder a la ruta de acceso al archivo de ensamblado al publicar como único archivo'
+                  href: il3001.md
