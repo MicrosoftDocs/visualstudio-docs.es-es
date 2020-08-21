@@ -1,5 +1,5 @@
 ---
-title: Diseñador de actividades Diseñador de flujo de trabajo-ClearCollection <T>
+title: Diseñador de flujo de trabajo el &lt; Diseñador de &gt; actividades ClearCollection T
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86876182"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711630"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Diseñador de actividad ClearCollection\<T>
 
@@ -41,7 +41,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statem
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Especifica la recopilación que se va a borrar de los elementos. Esta colección es de tipo **ICollection \<TypeArgument> .** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 |*TypeArgument*|True|Especifica el tipo T de los elementos contenidos en <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, este tipo *TypeArgument* se establece en **Int32**. Para cambiar el tipo, cambie el valor de *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
