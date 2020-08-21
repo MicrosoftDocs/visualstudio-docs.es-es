@@ -14,20 +14,20 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408725"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706495"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
-A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica a los miembros del equipo que el código se ha revisado y que se puede suprimir la advertencia. La supresión en el código fuente (ISS) utiliza el atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> para suprimir una advertencia. El atributo se puede colocar cerca del segmento de código que generó la advertencia. Puede Agregar el atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> al archivo de código fuente escribiéndolo en, o puede usar el menú contextual de una advertencia en el **lista de errores** para agregarlo automáticamente.
+A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica a los miembros del equipo que el código se ha revisado y que se puede suprimir la advertencia. La supresión en el código fuente (ISS) utiliza el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir una advertencia. El atributo se puede colocar cerca del segmento de código que generó la advertencia. Puede Agregar el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo al archivo de código fuente escribiéndolo en, o bien puede utilizar el menú contextual de una advertencia en el **lista de errores** para agregarlo automáticamente.
 
-El atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> es un atributo condicional, que se incluye en los metadatos de IL del ensamblado de código administrado, solo si el símbolo de compilación CODE_ANALYSIS se define en tiempo de compilación.
+El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo es un atributo condicional, que se incluye en los metadatos de Il del ensamblado de código administrado, solo si el símbolo de compilación CODE_ANALYSIS se define en tiempo de compilación.
 
-En C++/CLI, use las macros CA\_suprimir\_mensaje o ca\_\_global SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.
+En C++/CLI, use el SUPPRESS_MESSAGE de macros CA \_ Suppress \_ Message o CA \_ global \_ en el archivo de encabezado para agregar el atributo.
 
 > [!NOTE]
 > No debe usar supresiones en el origen en las compilaciones de versión para evitar que se envíen accidentalmente los metadatos de supresión en el código fuente. Además, debido al costo de procesamiento de la supresión en el código fuente, se puede degradar el rendimiento de la aplicación.
@@ -35,7 +35,7 @@ En C++/CLI, use las macros CA\_suprimir\_mensaje o ca\_\_global SUPPRESS_MESSAGE
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **Ejecutar Análisis de código y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos**.
 >
 > ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ En C++/CLI, use las macros CA\_suprimir\_mensaje o ca\_\_global SUPPRESS_MESSAGE
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar** > **compilar y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **compilación y suprimir problemas activos**.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (atributo)
 
-Al elegir **suprimir** en el menú contextual o de clic con el botón derecho de una advertencia de análisis de código en el **lista de errores**, se agrega un atributo de <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> en el código o en el archivo de supresión global del proyecto.
+Al elegir **suprimir** en el menú contextual o de clic con el botón derecho de una advertencia de análisis de código en el **lista de errores**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se agrega un atributo en el código o en el archivo de supresión global del proyecto.
 
 El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo tiene el formato siguiente:
 
@@ -78,17 +78,17 @@ Las propiedades del atributo incluyen:
 
 - **Ámbito** : el destino en el que se va a suprimir la advertencia. Si no se especifica el destino, se establece en el destino del atributo. Entre los [ámbitos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) admitidos se incluyen los siguientes:
 
-  - [`module`](#module-suppression-scope) : este ámbito suprime las advertencias de un ensamblado. Se trata de una supresión global que se aplica a todo el proyecto.
+  - [`module`](#module-suppression-scope) : Este ámbito suprime las advertencias de un ensamblado. Se trata de una supresión global que se aplica a todo el proyecto.
 
-  - `resource` (solo[FxCop heredado](../code-quality/static-code-analysis-for-managed-code-overview.md) ) este ámbito suprime las advertencias en la información de diagnóstico escrita en los archivos de recursos que forman parte del módulo (ensamblado). Este ámbito no se lee ni respeta en C#los compiladores de/VB para el diagnóstico de Roslyn Analyzer, que solo analiza los archivos de código fuente.
+  - `resource` -(solo[FxCop heredado](../code-quality/static-code-analysis-for-managed-code-overview.md) ) este ámbito suprime las advertencias en la información de diagnóstico escrita en los archivos de recursos que forman parte del módulo (ensamblado). Este ámbito no se lee ni respeta en los compiladores de C#/VB para el diagnóstico de Roslyn Analyzer, que solo analiza los archivos de código fuente.
 
-  - `type`: este ámbito suprime las advertencias de un tipo.
+  - `type` : Este ámbito suprime las advertencias de un tipo.
 
-  - `member`: este ámbito suprime las advertencias de un miembro.
+  - `member` : Este ámbito suprime las advertencias de un miembro.
 
-  - `namespace`: este ámbito suprime las advertencias en el espacio de nombres. No suprime las advertencias de los tipos dentro del espacio de nombres.
+  - `namespace` : Este ámbito suprime las advertencias en el espacio de nombres. No suprime las advertencias de los tipos dentro del espacio de nombres.
 
-  - `namespaceanddescendants`-(requiere la versión 3. x del compilador o posterior y Visual Studio 2019) este ámbito suprime las advertencias en un espacio de nombres y todos sus símbolos descendientes. El análisis heredado omite el valor `namespaceanddescendants`.
+  - `namespaceanddescendants` -(Requiere la versión 3. x del compilador o posterior y Visual Studio 2019) este ámbito suprime las advertencias en un espacio de nombres y todos sus símbolos descendientes. El `namespaceanddescendants` análisis heredado omite el valor.
 
 - **Target** : un identificador que se usa para especificar el destino en el que se va a suprimir la advertencia. Debe contener un nombre de elemento completo.
 
@@ -96,7 +96,7 @@ Cuando vea advertencias en Visual Studio, puede ver ejemplos de `SuppressMessage
 
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage
 
-Las advertencias de análisis de código se suprimen en el nivel al que se aplica el atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Por ejemplo, el atributo se puede aplicar en el nivel de ensamblado, módulo, tipo, miembro o parámetro. La finalidad de esto es acoplar estrechamente la información de supresión en el código donde se produce la infracción.
+Las advertencias de análisis de código se suprimen en el nivel al que <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se aplica el atributo. Por ejemplo, el atributo se puede aplicar en el nivel de ensamblado, módulo, tipo, miembro o parámetro. La finalidad de esto es acoplar estrechamente la información de supresión en el código donde se produce la infracción.
 
 La forma general de supresión incluye la categoría de regla y un identificador de regla, que contiene una representación opcional inteligible del nombre de la regla. Por ejemplo:
 
@@ -110,11 +110,11 @@ Por motivos de mantenimiento, no se recomienda omitir el nombre de la regla.
 
 ## <a name="suppress-selective-violations-within-a-method-body"></a>Suprimir infracciones selectivas dentro de un cuerpo de método
 
-Los atributos de supresión se pueden aplicar a un método, pero no se pueden incrustar dentro de un cuerpo de método. Esto significa que todas las infracciones de una regla determinada se suprimen si agrega el atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> al método.
+Los atributos de supresión se pueden aplicar a un método, pero no se pueden incrustar dentro de un cuerpo de método. Esto significa que todas las infracciones de una regla determinada se suprimen si agrega el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo al método.
 
-En algunos casos, puede que desee suprimir una instancia determinada de la infracción, por ejemplo, para que el código futuro no se excluya automáticamente de la regla de análisis de código. Ciertas reglas de análisis de código permiten hacer esto mediante el `MessageId` propiedad del atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. En general, las reglas heredadas para las infracciones de un símbolo determinado (una variable local o un parámetro) respetan la propiedad `MessageId`. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) es un ejemplo de este tipo de regla. Sin embargo, las reglas heredadas para las infracciones en código ejecutable (sin símbolo) no respetan la propiedad `MessageId`. Además, los analizadores de .NET Compiler Platform ("Roslyn") no respetan la propiedad `MessageId`.
+En algunos casos, puede que desee suprimir una instancia determinada de la infracción, por ejemplo, para que el código futuro no se excluya automáticamente de la regla de análisis de código. Ciertas reglas de análisis de código permiten hacer esto mediante el uso `MessageId` de la propiedad del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. En general, las reglas heredadas para las infracciones en un símbolo determinado (una variable local o un parámetro) respetan la `MessageId` propiedad. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) es un ejemplo de este tipo de regla. Sin embargo, las reglas heredadas para las infracciones en código ejecutable (sin símbolo) no respetan la `MessageId` propiedad. Además, los analizadores de .NET Compiler Platform ("Roslyn") no respetan la `MessageId` propiedad.
 
-Para suprimir una infracción de símbolo en particular de una regla, especifique el nombre del símbolo para la propiedad `MessageId` del atributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. En el ejemplo siguiente se muestra código con dos infracciones de [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)&mdash;una para la variable `name` y otra para la variable `age`. Solo se suprime la infracción del símbolo `age`.
+Para suprimir una infracción de símbolo en particular de una regla, especifique el nombre del símbolo para la `MessageId` propiedad del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. En el ejemplo siguiente se muestra código con dos infracciones de [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) &mdash; una para la `name` variable y otra para la `age` variable. Solo se suprime la infracción del `age` símbolo.
 
 ```vb
 Public Class Animal
@@ -151,12 +151,12 @@ public class Animal
 
 ## <a name="global-level-suppressions"></a>Supresiones de nivel global
 
-La herramienta de análisis de código administrado examina `SuppressMessage` atributos que se aplican en el nivel de ensamblado, módulo, tipo, miembro o parámetro. También activa las infracciones en los recursos y espacios de nombres. Estas infracciones deben aplicarse en el nivel global y tienen el ámbito y el destino. Por ejemplo, el siguiente mensaje suprime una infracción del espacio de nombres:
+La herramienta de análisis de código administrado examina `SuppressMessage` los atributos que se aplican en el nivel de ensamblado, módulo, tipo, miembro o parámetro. También activa las infracciones en los recursos y espacios de nombres. Estas infracciones deben aplicarse en el nivel global y tienen el ámbito y el destino. Por ejemplo, el siguiente mensaje suprime una infracción del espacio de nombres:
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Cuando se suprime una advertencia con `namespace` ámbito, se suprime la advertencia en el espacio de nombres en sí. No suprime la advertencia en los tipos del espacio de nombres.
+> Al suprimir una advertencia con `namespace` el ámbito, se suprime la advertencia en el espacio de nombres en sí. No suprime la advertencia en los tipos del espacio de nombres.
 
 Cualquier supresión se puede expresar especificando un ámbito explícito. Estas supresiones deben residir en el nivel global. No se puede especificar la supresión de nivel de miembro decorando un tipo.
 
@@ -181,9 +181,9 @@ Por ejemplo, el siguiente atributo en el archivo de proyecto de _GlobalSuppressi
 
 ## <a name="generated-code"></a>Código generado
 
-Los compiladores de código administrado y algunas herramientas de terceros generan código para facilitar el desarrollo rápido de código. El código generado por el compilador que aparece en los archivos de código fuente normalmente se marca con el atributo `GeneratedCodeAttribute`.
+Los compiladores de código administrado y algunas herramientas de terceros generan código para facilitar el desarrollo rápido de código. El código generado por el compilador que aparece en los archivos de código fuente normalmente se marca con el `GeneratedCodeAttribute` atributo.
 
-En el caso del análisis de código fuente (analizadores de FxCop), puede suprimir los mensajes en el código generado mediante el archivo [. editorconfig](../code-quality/configure-fxcop-analyzers.md) en la raíz del proyecto o la solución. Use un patrón de archivo para que coincida con el código generado. Por ejemplo, para excluir las advertencias de CS1591 en los archivos * *. Designer.CS* , use esto en el archivo de configuración.
+En el análisis de código fuente, puede suprimir los mensajes en el código generado mediante el archivo [. editorconfig](../code-quality/configure-fxcop-analyzers.md) en la raíz del proyecto o la solución. Use un patrón de archivo para que coincida con el código generado. Por ejemplo, para excluir las advertencias de CS1591 en los archivos **. Designer.CS* , use esto en el archivo de configuración.
 
 ``` cmd
 [*.designer.cs]
@@ -193,7 +193,7 @@ dotnet_diagnostic.CS1591.severity = none
 En el análisis de código heredado, puede elegir si desea suprimir los errores y advertencias de análisis de código para el código generado. Para obtener información sobre cómo suprimir estas advertencias y errores, consulte [Cómo: suprimir advertencias para el código generado](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
-> El análisis de código omite `GeneratedCodeAttribute` cuando se aplica a un ensamblado completo o a un solo parámetro.
+> El análisis de código `GeneratedCodeAttribute` se omite cuando se aplica a un ensamblado completo o a un solo parámetro.
 
 ## <a name="see-also"></a>Consulte también
 
