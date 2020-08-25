@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453765"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238185"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>Información sobre cómo usar el editor de código para JavaScript
 
 En esta breve introducción al editor de código de Visual Studio veremos algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 

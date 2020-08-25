@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950454"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238561"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -55,7 +55,7 @@ Si dispone de un proyecto que _aún no está_ en control de versiones, siga esto
 
 3. Elija la pestaña **Repositorios registrados** y haga clic en el botón **Agregar**:
 
-    ![](media/version-control-git5.png)
+    ![La pestaña Repositorios registrados del cuadro de diálogo Seleccionar repositorio tiene botones Agregar, Quitar y Editar, y cuadros para Nombre del módulo y Mensaje.](media/version-control-git5.png)
 
 4. Escriba el nombre del repositorio tal y como quiera que se muestre localmente y pegue la dirección URL del paso 3. El cuadro de diálogo Configuración del repositorio debería tener un aspecto similar al siguiente. Haga clic en Aceptar:
 

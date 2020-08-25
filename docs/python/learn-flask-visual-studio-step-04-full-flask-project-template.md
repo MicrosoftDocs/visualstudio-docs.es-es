@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957322"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250571"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4. Usar la plantilla de proyecto web completa de Flask
 
@@ -235,5 +235,5 @@ No dude en experimentar con la sintaxis de Jinja y de Jade para ver cuál le con
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Escribir su primera aplicación de Flask, parte 4 (formas y vistas genéricas)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- [Jade en GitHib (documentación)](https://github.com/liuliqiang/pyjade) (github.com)
+- [Jade en GitHub (documentación)](https://github.com/liuliqiang/pyjade) (github.com)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

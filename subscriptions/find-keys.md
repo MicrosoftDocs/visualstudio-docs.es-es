@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Aprenda a buscar, reclamar y exportar claves de producto en suscripciones de Visual Studio
-ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453742"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250729"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Búsqueda y reclamación de claves de producto en suscripciones de Visual Studio
 En este artículo se explica cómo buscar, reclamar y exportar claves de producto desde https://my.visualstudio.com/productkeys.  Para obtener más información sobre la activación de un producto con una clave, las versiones de licencia de minorista y por volumen de claves y los límites diarios de reclamación de claves de producto, visite la [introducción a las claves de producto](product-keys.md).
@@ -20,7 +20,7 @@ En este artículo se explica cómo buscar, reclamar y exportar claves de product
 ## <a name="locating-and-claiming-product-keys"></a>Búsqueda y reclamación de claves de producto
 Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de producto. Encontrará las claves de producto individuales si selecciona el vínculo azul **Obtener clave** de un determinado producto en la página [Descargas](https://my.visualstudio.com/downloads).  Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Si hay varias claves para un solo producto, en la columna Notas de la descarga aparecerán unas notas para ayudarle a identificar qué clave se debe usar.
 > [!div class="mx-imgBorder"]
-> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png "Haga clic en Obtener clave en la página de información de cualquier descarga a fin de obtener una clave para ese producto.")
+> ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png "Seleccione Obtener clave en la página de información de una descarga a fin de obtener una clave para ese producto.")
 
 A veces se unen varias ediciones del producto en una sola descarga. En estos casos, la clave del producto que se introduce determina la edición del producto que se instalará.
 Algunas claves se proporcionan de manera automática, como las claves "estáticas", que puede usar todas las veces necesarias, ya que la activación no es obligatoria. Para reclamar otras claves, seleccione el vínculo **Obtener clave** del producto en cuestión.
@@ -50,7 +50,7 @@ Solo los suscriptores con suscripciones activas pueden descargar productos y rec
 
 Para reclamar una clave de producto:
 1. Inicie sesión en su suscripción de Visual Studio.  Debe iniciar sesión para descargar productos o reclamar claves de producto.
-2. Haga clic en la pestaña [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
+2. Seleccione la pestaña [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3. Las claves de producto aparecen ordenadas alfabéticamente por nombre de producto.  Puede ir al nombre del producto que quiera o buscarlo con la barra de búsqueda que hay en la parte superior de la página.
 > [!div class="mx-imgBorder"]
 > ![Búsqueda de la clave de producto](_img/product-keys/search-keys.png "Desplácese hasta el producto deseado o use el cuadro de búsqueda para localizar rápidamente cualquier producto.")
@@ -64,7 +64,7 @@ Puede exportar una lista de todas las claves que ha reclamado, junto con una amp
 > [!IMPORTANT]
 > Si la suscripción expira, ya no podrá reclamar claves nuevas ni exportar las claves que ya haya reclamado.
 
-Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
+Para exportar las claves, basta con seleccionar el vínculo **Exportar todas las claves** situado en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)

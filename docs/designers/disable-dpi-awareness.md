@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589570"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249972"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Deshabilitación del reconocimiento de PPP en Visual Studio
 
@@ -54,7 +54,7 @@ Cuando Visual Studio se ejecuta como un proceso sin reconocimiento de PPP, se re
 > - Si al seleccionar la opción para reiniciar como un proceso sin reconocimiento de PPP había ventanas de herramientas desacopladas en Visual Studio, puede que la posición de esas ventanas de herramientas cambie.
 > - Si usa el perfil de Visual Basic predeterminado, o si no tiene seleccionada la opción **Guardar nuevos proyectos al crearlos** en **Herramientas** > **Opciones** > **Proyectos y soluciones**, Visual Studio no podrá volver a abrir el proyecto cuando se reinicie como un proceso sin reconocimiento de PPP. Sin embargo, puede abrir el proyecto si lo selecciona en **Archivo** > **Proyectos y soluciones recientes**.
 
-Cuando termine de trabajar en el **Diseñador de Windows Forms**, es importante reiniciar Visual Studio como un proceso con reconocimiento de PPP. Cuando se ejecuta como un proceso sin reconocimiento de PPP, las fuentes pueden parecer borrosas y es posible que surjan problemas en otros diseñadores, como el **Diseñador XAML**. Si cierra y vuelve a abrir Visual Studio cuando se está ejecutando en modo sin reconocimiento de PPP, volverá al modo con reconocimiento de PPP. También puede hacer clic en la opción **Reiniciar Visual Studio como un proceso sin reconocimiento de PPP** en la barra de información.
+Cuando termine de trabajar en el **Diseñador de Windows Forms**, es importante reiniciar Visual Studio como un proceso con reconocimiento de PPP. Cuando se ejecuta como un proceso sin reconocimiento de PPP, las fuentes pueden parecer borrosas y es posible que surjan problemas en otros diseñadores, como el **Diseñador XAML**. Si cierra y vuelve a abrir Visual Studio cuando se está ejecutando en modo sin reconocimiento de PPP, volverá al modo con reconocimiento de PPP. También puede seleccionar la opción **Reiniciar Visual Studio como un proceso sin reconocimiento de PPP** en la barra de información.
 
 ### <a name="add-a-registry-entry"></a>Agregar una entrada del Registro
 

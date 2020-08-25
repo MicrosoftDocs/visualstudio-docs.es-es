@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc87c4690978d33f6fdc8e0f5bc937cb16e6e915
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279814"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238535"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3: Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Paso 3: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla con la aplicación Django
 
 **Paso anterior: [Creación de una aplicación de Django con vistas y plantillas de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
 

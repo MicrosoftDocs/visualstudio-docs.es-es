@@ -1,6 +1,6 @@
 ---
 title: Opciones, Editor de texto, Básico (VB), Avanzado
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431480"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214655"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opciones, Editor de texto, Básico (Visual Basic), Avanzado
 La página de propiedades **Opciones específicas de VB**, en la carpeta **Básico** de la carpeta **Editor de texto** del cuadro de diálogo **Opciones** (menú **Herramientas**) incluye las propiedades siguientes:
@@ -78,6 +78,13 @@ El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una
 Cuando se selecciona esta opción, aparecen líneas verticales en el editor que se alinean con bloques de código estructurado, lo que permite identificar fácilmente los bloques de código individuales. Por ejemplo, verá una línea entre `Sub` y `EndSub` en una instrucción `Sub`.
 
 ## <a name="editor-help"></a>Ayuda del editor
+
+::: moniker range=">=vs-2019"
+**Sugerencias de nombre de parámetro insertado**    
+Al seleccionarlo, se insertan sugerencias de nombre de parámetro para literales, literales convertidos e instancias de objeto antes de cada argumento en las llamadas de función.  
+
+![Sugerencias de nombre de parámetro insertado para Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **Lista descriptiva (nuevo formato) de código** El editor de texto vuelve a dar formato al código según corresponda. Cuando se selecciona esta opción, el editor de código hará lo siguiente:
 

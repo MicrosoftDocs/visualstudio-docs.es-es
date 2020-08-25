@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184060"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238613"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 En la siguiente tabla se muestra cómo el nivel de detalle de registro (valores de columna) afecta a qué tipos de mensaje (valores de fila) se registran.
 
-|                                       | Quiet | Minimal | Normal | Detallado | Diagnóstico |
+| Tipo de mensaje/Nivel de detalle              | Quiet | Minimal | Normal | Detallado | Diagnóstico |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errores                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Advertencias                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |

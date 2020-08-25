@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536895"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168665"
 ---
 # <a name="deploy-to-docker-hub"></a>Implementación en Docker Hub
 
@@ -29,9 +30,13 @@ Si no tiene un repositorio de Docker Hub, cree uno en [Docker Hub](https://hub.d
 
 1. Haga clic con el botón derecho en el nodo de proyecto y elija **Publicar**. Aparece una pantalla que muestra las opciones de implementación.
 
-   ![Captura de pantalla de las opciones de implementación](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Captura de pantalla de las opciones de implementación](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. En **Elegir un destino de publicación**, elija **Container Registry** y luego elija **Docker Hub**. Aparece el cuadro de diálogo **Docker Hub**.
+1. Elija **Container Registry para Docker**  y luego **Docker Hub**.
+
+   ![Captura de pantalla del cuadro de diálogo Publicar - Elegir Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Escriba las credenciales de Docker.
 
    ![Captura de pantalla del cuadro de diálogo Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 

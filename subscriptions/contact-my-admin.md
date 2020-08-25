@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Obtenga información sobre cómo ponerse en contacto con el administrador de suscripciones para obtener ayuda con preguntas o problemas.
-ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434250"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247438"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtención de ayuda del administrador de suscripciones
 Si le han proporcionado su suscripción a Visual Studio en el trabajo o la escuela, lo más probable es que se la haya asignado un administrador de suscripciones.  Los administradores pueden asignar o eliminar suscripciones, cambiar las direcciones de correo electrónico de inicio de sesión, determinar si puede descargar software y realizar otras funciones relacionadas con la suscripción.
@@ -21,13 +21,13 @@ Dados el tamaño y la complejidad de muchas organizaciones, es posible que desco
 
 ## <a name="how-to-contact-your-admin"></a>Cómo ponerse en contacto con el administrador
 1. Inicie sesión en el portal de suscriptor en <https://my.visualstudio.com>.
-2. Haga clic en la pestaña **Suscripciones**. 
-3. Haga clic en el botón **Contact my Admin** (Contacto con el administrador) en la parte superior derecha. 
+2. Seleccione la pestaña **Suscripciones** . 
+3. Seleccione el botón **Contact my Admin** (Contacto con el administrador) en la parte superior derecha. 
    > [!div class="mx-imgBorder"]
-   > ![Contacto con el administrador](_img/contact-my-admin/contact-my-admin-button.png "Haga clic en el botón Contacto con el administrador, escriba su mensaje y haga clic en Enviar.")
+   > ![Contacto con el administrador](_img/contact-my-admin/contact-my-admin-button.png "Seleccione el botón Contacto con el administrador, escriba su mensaje y seleccione Enviar.")
 4. Escriba el mensaje para el administrador.
-5. Si quiere recibir una copia del mensaje enviado al administrador, haga clic en la casilla **Send me a copy** (Enviarme una copia). 
-6. Por último, haga clic en **Enviar**.
+5. Si quiere recibir una copia del mensaje enviado al administrador, elija la casilla **Send me a copy** (Enviarme una copia). 
+6. Por último, seleccione **Enviar**.
 
 > [!NOTE]
 > **Superadministradores:**  Para establecer la dirección de correo electrónico a la que se envían las solicitudes "Contacto con el administrador", especifíquela en las [Preferencias del contrato](admin-prefs.md#contact-email-address).

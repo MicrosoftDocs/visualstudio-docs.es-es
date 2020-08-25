@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950527"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249540"
 ---
 # <a name="create-razor-web-apps"></a>Creación de aplicaciones web de Razor
 
@@ -48,10 +48,10 @@ Las aplicaciones web de Razor incluyen los componentes siguientes.
 ### <a name="pages-folder"></a>Carpeta Pages
 
 Esta carpeta contiene las páginas web de un proyecto, junto con el código subyacente de cada una:
-   - Un archivo *\*.cshtml* para el marcado HTML y la sintaxis Razor.
-   - Un archivo *\*.cshtml.cs* para el código subyacente de C# para controlar los eventos de la página.
+- Un archivo *\*.cshtml* para el marcado HTML y la sintaxis Razor.
+- Un archivo *\*.cshtml.cs* para el código subyacente de C# para controlar los eventos de la página.
 
-Los archivos auxiliares tienen nombres que comienzan con un carácter de subrayado. Por ejemplo, el archivo _Layout.cshtml configura los elementos de la interfaz de usuario comunes a todas las páginas. Este archivo configura el menú de navegación de la parte superior de la página y el aviso de copyright de la parte inferior. Para obtener más información, consulte [Diseño en ASP.NET Core](/aspnet/core/mvc/views/layout).
+Los archivos auxiliares tienen nombres que comienzan con un carácter de subrayado. Por ejemplo, el archivo *\_Layout.cshtml* configura los elementos de interfaz de usuario comunes para todas las páginas. Este archivo configura el menú de navegación de la parte superior de la página y el aviso de copyright de la parte inferior. Para obtener más información, consulte [Diseño en ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Configuración de inicio
 

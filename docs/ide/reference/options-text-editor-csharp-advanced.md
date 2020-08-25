@@ -1,21 +1,21 @@
 ---
 title: Opciones, editor de texto, C#, avanzado
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181071"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214680"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -128,7 +128,13 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 Active estas casillas de verificación para mostrar líneas punteadas verticales las llaves ( **{}** ) en el código. De este modo, puede ver con facilidad los bloques individuales de código para las construcciones de nivel de declaración y de nivel de código.
 
 ## <a name="editor-help"></a>Ayuda del editor
-
+::: moniker range=">=vs-2019"
+- Sugerencias de nombre de parámetro insertado 
+    
+    Al seleccionarlo, se insertan sugerencias de nombre de parámetro para literales, literales convertidos e instancias de objeto antes de cada argumento en las llamadas de función.  
+    
+    ![Sugerencias de nombre de parámetro insertado para CSharp](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - Generar comentarios de documentación XML para ///
 
    Cuando se selecciona, inserta los elementos XML de los comentarios de documentación XML después de escribir la introducción de comentario `///`. Para más información sobre la documentación XML, vea [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).

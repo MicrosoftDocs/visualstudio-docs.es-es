@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.openlocfilehash: e8eba6ad97d0f5e7e1da0e75093c33658f26a56a
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235022"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249470"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Asignación de licencias en el Portal de administración de suscripciones de Visual Studio
 Como administrador de suscripciones de Visual Studio, puede usar el Portal de administración para asignar suscripciones a usuarios y grupos de usuarios.
@@ -34,7 +34,7 @@ Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usu
 1. Inicie sesión en el [Portal de administración](https://manage.visualstudio.com).
 2. Para asignar una licencia a un solo suscriptor de Visual Studio, seleccione **Agregar** en la parte superior de la tabla y, a continuación, seleccione **Suscriptor individual**.
    > [!div class="mx-imgBorder"]
-   > ![Adición de un solo suscriptor](_img/assign-license-add/add-subscriber-individual.png "Haga clic en Agregar y seleccione Suscriptor individual para asignar una sola suscripción.")
+   > ![Adición de un solo suscriptor](_img/assign-license-add/add-subscriber-individual.png "Seleccione Agregar y luego Suscriptor individual para asignar una sola suscripción.")
 3. Escriba la información en los campos del formulario para el nuevo suscriptor. Si su organización usa Azure Active Directory, el campo **Nombre** actúa como una función de búsqueda para buscar personas en el directorio actual, por lo que puede seleccionar el usuario de los resultados de la búsqueda. Después de seleccionar a esa persona, se rellenan automáticamente el correo electrónico de inicio de sesión y de notificación.
    > [!div class="mx-imgBorder"]
    > ![Detalles del suscriptor](_img/assign-license-add/subscriber-details.png "Escriba el nombre del suscriptor y otros detalles, o elija entre los miembros del inquilino.")
@@ -53,10 +53,10 @@ Aquí se muestra cómo asignar una suscripción de Visual Studio a un nuevo usu
 
     Cuando haya terminado de seleccionar opciones y de especificar datos para el suscriptor, elija **Agregar** en la parte inferior de la ventana emergente **Agregar suscriptor**.
    > [!div class="mx-imgBorder"]
-   > ![Elección del botón Agregar](media/add-button.png "Haga clic en Agregar para guardar la información y asignar la suscripción al suscriptor.")
+   > ![Elección del botón Agregar](media/add-button.png "Seleccione Agregar para guardar la información y asignar la suscripción al suscriptor.")
 
 ## <a name="resend-assignment-emails"></a>Reenvío de correos electrónicos de asignación
-Después de agregar un suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento si selecciona el suscriptor y hace clic en el botón **Reenviar** en el menú superior.  Para reenviar correos electrónicos a varios usuarios, mantenga presionada la tecla **Ctrl** mientras selecciona los suscriptores.  Al hacer clic en el botón **Reenviar**, verá un cuadro de diálogo que le pedirá que confirme que desea volver a enviar a los suscriptores.  
+Después de agregar un suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento. Para ello, seleccione el suscriptor y el botón **Reenviar** en el menú superior.  Para reenviar correos electrónicos a varios usuarios, mantenga presionada la tecla **Ctrl** mientras selecciona los suscriptores.  Al seleccionar **Reenviar**, verá un cuadro de diálogo que le pedirá que confirme que quiere volver a enviar a los suscriptores.  
 
 ## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)

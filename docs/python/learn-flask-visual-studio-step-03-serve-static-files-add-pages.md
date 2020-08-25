@@ -11,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 69fd704976ee941cb053d75040a3d3ec7871a380
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72985182"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238747"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Paso 3: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla con la aplicación Flask
 
 **Paso anterior: [Crear una aplicación de Flask con vistas y plantillas de página](learn-flask-visual-studio-step-02-create-app.md)**
 

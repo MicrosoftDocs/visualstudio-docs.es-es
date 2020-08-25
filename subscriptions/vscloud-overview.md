@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
-ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211613"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248348"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
@@ -65,15 +65,15 @@ Si ha adquirido varias suscripciones, vaya al [portal de administración de susc
 Para cancelar suscripciones, solo tiene que establecer el número de suscripciones de su acuerdo en cero (0).  Siga estos pasos para reducir el número de suscripciones:
 1. Inicie sesión en <https://manage.visualstudio.com>.
 1. Si tiene más de un acuerdo, elija el que quiera de la lista desplegable.
-1. Haga clic en el icono de **información general** en la parte superior izquierda para ver información sobre las suscripciones.  
+1. Seleccione el icono de **información general** en la parte superior izquierda para ver información sobre las suscripciones.  
 > [!div class="mx-imgBorder"]
-> ![Visualización de la información general de la suscripción](_img/buy-vs-subscriptions/overview-button.png "Haga clic en el botón de información general para ver los detalles de la suscripción.")
+> ![Visualización de la información general de la suscripción](_img/buy-vs-subscriptions/overview-button.png "Seleccione el botón de información general para ver los detalles de la suscripción.")
 
-4. Busque la entrada de las suscripciones que quiera cancelar y haga clic en **Cambiar cantidad**.
+4. Busque la entrada de las suscripciones que quiera cancelar y seleccione **Cambiar cantidad**.
 1. Establezca la cantidad en cero (0). Las suscripciones seguirán existiendo hasta la fecha de facturación prevista, pero cuando se alcance esa fecha, no se renovarán.   
 
 > [!div class="mx-imgBorder"]
-> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png "Haga clic en "Cambiar cantidad" para cancelar suscripciones.")
+> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png "Seleccione "Cambiar cantidad" para cancelar suscripciones.")
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

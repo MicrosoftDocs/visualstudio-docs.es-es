@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533567"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238665"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
 
@@ -36,9 +36,8 @@ Las características de depuración en modo mixto incluyen las siguientes opcion
 
 ![Depuración en modo mixto para Python en Visual Studio](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 m 09 s). El vídeo se aplica a Visual Studio 2015 y 2017. |
+![icono de cámara de vídeo](../install/media/video-icon.png "Ver un vídeo") Para obtener una introducción a la compilación, las pruebas y la depuración de módulos de C nativos con Visual Studio, vea [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos) (youtube.com, 9 minutos 09 segundos). El vídeo se aplica a Visual Studio 2015 y 2017.
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitación de la depuración en modo mixto en un proyecto de Python
 
@@ -89,7 +88,7 @@ En todas las versiones anteriores de Visual Studio, la depuración en modo mixto
 
 ## <a name="mixed-mode-specific-features"></a>Características específicas del modo mixto
 
-- [Pilas de llamadas combinadas](#combined-call-stack)
+- [Pila de llamadas combinada](#combined-call-stack)
 - [Transición entre código de Python y nativo](#step-between-python-and-native-code)
 - [Vista de valores PyObject en código nativo](#pyobject-values-view-in-native-code)
 - [Vista de valores nativos en el código de Python](#native-values-view-in-python-code)
@@ -100,7 +99,7 @@ La ventana **Pila de llamadas** muestra marcos de pila nativos y de Python inter
 
 ![Pila de llamadas combinadas con depuración en modo mixto](media/mixed-mode-debugging-call-stack.png)
 
-Las transiciones aparecen como **[Código externo]** , sin especificar la dirección de la transición, siempre que la opción **Herramientas** > **Opciones** > **Depuración** > **General** > **Habilitar Solo mi código** esté establecida.
+Las transiciones aparecen como **[Código externo]**, sin especificar la dirección de la transición, siempre que la opción **Herramientas** > **Opciones** > **Depuración** > **General** > **Habilitar Solo mi código** esté establecida.
 
 Al hacer doble clic en cualquier marco de llamada se vuelve activo y se abre el código fuente adecuado, si está disponible. Si el código fuente no está disponible, el marco sigue activo y se pueden inspeccionar las variables locales.
 
@@ -143,7 +142,7 @@ Una opción alternativa (y mejor) es seguir [PEP 3123](https://www.python.org/de
 
 ### <a name="native-values-view-in-python-code"></a>Vista de valores nativos en el código de Python
 
-Al igual que en la sección anterior, puede habilitar una **[Vista de C++]** para valores nativos en la ventana **Variables locales** cuando un marco de Python está activo. Esta característica no está habilitada de forma predeterminada; para activarla, es necesario hacer clic con el botón derecho en la ventana **Variables locales** y cambiar la opción de menú **Python** > **Mostrar nodos de vista de C++** .
+Al igual que en la sección anterior, puede habilitar una **[Vista de C++]** para valores nativos en la ventana **Variables locales** cuando un marco de Python está activo. Esta característica no está habilitada de forma predeterminada; para activarla, es necesario hacer clic con el botón derecho en la ventana **Variables locales** y cambiar la opción de menú **Python** > **Mostrar nodos de vista de C++**.
 
 ![Habilitación de la vista de C++ en la ventana Expresiones locales](media/mixed-mode-debugging-enable-cpp-view.png)
 

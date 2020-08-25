@@ -13,14 +13,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c798640ea80900c633b5b7d0817cc278a772a51
-ms.sourcegitcommit: b4e0cc76d94fe8cf6d238c4cc09512d17131a195
+ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81224542"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248732"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creación de una aplicación de Windows Forms en Visual Studio con C#
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creación de una aplicación de Windows Forms en Visual Studio con C\#
 
 En esta breve introducción al entorno de desarrollo integrado (IDE) de Visual Studio, creará una sencilla aplicación de C# que tiene una interfaz de usuario (IU) basada en Windows.
 

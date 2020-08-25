@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
-ms.openlocfilehash: 61b75f1863ba490a610edf63c330661d1c4baf52
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ff849bbaa1a301979228c558565dc3f2ed0125ad
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232721"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238834"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, puede administrar suscripciones de la organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -28,7 +28,7 @@ Un administrador de Visual Studio tiene cuatro responsabilidades esenciales:
 ## <a name="benefits-and-limitations"></a>Beneficios y limitaciones
 Las suscripciones de Visual Studio permiten a los miembros del equipo de desarrollo instalar y usar software para diseñar, desarrollar, probar, evaluar y demostrar otro software. Las licencias de software otorgadas mediante suscripciones de Visual Studio no son válidas para entornos de producción.
 
-|                                          |                         |
+| Category                                 | Beneficios o limitaciones |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Licencias por usuario                     | Las licencias de Plataformas de MSDN y de todos los niveles de suscripciones de Visual Studio se conceden por usuario. Cada miembro del equipo de desarrollo que interaccione (instale, configure o acceda) con el software incluido con estos productos y servicios necesitará su propia suscripción de Visual Studio.                                                                                                                                                                                                                                                                                                                                  |
 | Instalaciones ilimitadas                  | Cada usuario con licencia podrá instalar y usar el software en cualquier número de dispositivos para diseñar, desarrollar, probar, evaluar y demostrar el software. La excepción es Microsoft Office, cuya licencia se otorga para un escritorio. El software de Visual Studio con licencia se puede instalar y usar en el trabajo, el hogar, el centro educativo y en dispositivos de la oficina de un cliente o en un hardware dedicado hospedado por terceros.                                                                                                                                                                                                                                  |
@@ -36,7 +36,7 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 | Reasignación de licencias                     | Cuando un usuario abandona un equipo y ya no requiere una licencia, puede volver a asignar esa licencia transcurridos 90 días. Al reasignar una licencia, las claves de producto que ya se hayan usado seguirán estando disponibles y no se reemplazarán. Para las organizaciones que tengan Contratos Enterprise (EA), se restablecerá cualquier ventaja que el usuario original haya usado, como el aprendizaje de Pluralsight.                                                                                                                                                                                                                                                 |
 | Excepción para usuarios finales                  | Al final de un proyecto de desarrollo de software, los usuarios finales normalmente revisan una aplicación y determinan si cumple los criterios necesarios para su lanzamiento. Este proceso se denomina pruebas de aceptación de usuario (UAT). Los miembros del equipo, como un patrocinador o un jefe de producto o de negocio, pueden actuar como representantes de los usuarios finales. Los usuarios finales que no tienen una suscripción de Visual Studio podrían acceder al software para UAT si el uso del software cumple en todo caso con los términos de licencia de Visual Studio. Es raro que un usuario cuyo rol principal es diseñar, desarrollar o probar el software se califique también como “usuario final”. |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Documentación de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentación de Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentación de Azure](https://docs.microsoft.com/azure/)
@@ -46,5 +46,5 @@ Las suscripciones de Visual Studio permiten a los miembros del equipo de desarro
 Obtenga más información sobre las responsabilidades de los administradores:
 - [Inventario de entorno de preproducción](admin-inventory.md)
 - [Administración de equipos grandes y contratistas externos](manage-teams.md)
-- [Seguimiento de las asignaciones de usuarios y tramitación de pedidos](assignments-orders.md)
+- [Seguimiento de la asignación de usuarios y tramitación de pedidos](assignments-orders.md)
 - Emplee [Uso máximo](maximum-usage.md) para realizar el seguimiento de los compromisos de compra

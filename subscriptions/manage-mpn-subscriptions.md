@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902863"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250722"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administración de suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -29,7 +29,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 6. Seleccionar **Privilegios**
 7. Seleccionar **Suscripciones de Visual Studio** (Nota: Actualización de la suscripción de Visual Studio pendiente)
 8. Seleccionar el **Individuo** deseado
-9. Hacer clic en **Enviar**
+9. Seleccionar **Enviar**
 10. El usuario recibirá un correo electrónico
 11. El usuario tendrá acceso a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para iniciar sesión
 12. Puede aparecer una página de perfiles de Visual Studio, que incluye lo siguiente:
@@ -43,7 +43,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 2. Seleccionar **Privilegios**
 3. Seleccione **Suscripciones de MSDN**. (Nota: En breve, esto aparecerá como "Suscripciones de Visual Studio").
 4. Buscar el **Individuo** deseado
-5. Hacer clic en **Enviar**
+5. Seleccionar **Enviar**
 6. El usuario recibirá un correo electrónico
 7. El usuario tendrá acceso a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para iniciar sesión
 8. Puede aparecer una página de perfiles de Visual Studio

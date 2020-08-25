@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d7bd89f8e7840db8615c74170bb5cb9998aeb678
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454629"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250181"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
 
@@ -109,7 +109,7 @@ El [paquete npm de TypeScript](https://www.npmjs.com/package/typescript) agrega 
 
    Aunque la aplicación se compila automáticamente cuando la ejecuta, queremos fijarnos en algo que ocurre durante el proceso de compilación:
 
-   Si ha generado mapas de origen, abra la carpeta especificada en la opción *outDir* y encontrará los archivos *.js generados junto con los archivos *js.map generados.
+   Si ha generado mapas de origen, abra la carpeta especificada en la opción *outDir* y encontrará los archivos \*.js generados junto con los archivos \*js.map generados.
 
    Los archivos de asignación de origen son necesarios para la [depuración](../javascript/debug-nodejs.md).
 

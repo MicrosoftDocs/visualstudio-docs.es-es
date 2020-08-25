@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284313"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250515"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Cómo aumentar la probabilidad de resolución de un problema de rendimiento
 
@@ -32,15 +32,15 @@ Muchos problemas pueden no tener ninguna firma ni pasos distintivos que reproduc
 
 A continuación se describen los problemas que resultan difíciles de diagnosticar sin buenos archivos de diagnóstico. Después de identificar el caso que mejor describe un problema, siga los pasos de comentarios específicos de ese caso.
 
--   [Bloqueos:](#crashes) un bloqueo se produce cuando el proceso (Visual Studio) finaliza de forma inesperada.
+- [Bloqueos:](#crashes) un bloqueo se produce cuando el proceso (Visual Studio) finaliza de forma inesperada.
 
--   [Falta de respuesta:](#unresponsiveness) VS deja de responder durante un largo período de tiempo.
+- [Falta de respuesta:](#unresponsiveness) VS deja de responder durante un largo período de tiempo.
 
--   [Problemas de lentitud:](#slowness-and-high-cpu-issues) cualquier acción específica en VS es más lenta de lo deseado.
+- [Problemas de lentitud:](#slowness-and-high-cpu-issues) cualquier acción específica en VS es más lenta de lo deseado.
 
--   [Uso de CPU elevado:](#slowness-and-high-cpu-issues) periodos prolongados de uso de CPU inesperadamente elevado.
+- [Uso de CPU elevado:](#slowness-and-high-cpu-issues) periodos prolongados de uso de CPU inesperadamente elevado.
 
--   [Problemas de fuera de proceso:](#out-of-process-issues) Un problema causado por un proceso satélite de Visual Studio
+- [Problemas de fuera de proceso:](#out-of-process-issues) Un problema causado por un proceso satélite de Visual Studio
 
 ## <a name="crashes"></a>Bloqueos
 Un bloqueo se produce cuando el proceso (Visual Studio) finaliza de forma inesperada.
@@ -57,14 +57,13 @@ Los bloqueos reproducibles directamente son casos que tienen todas las caracter�
 
 En el caso de estos problemas, siga los pasos de "[Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" y asegúrese de incluir:
 
--   Los pasos para reproducir el problema
+- Los pasos para reproducir el problema
 
--   Un proyecto de reproducción independiente, como se ha descrito anteriormente. Si la reproducción independiente no es posible, incluya:
+- Un proyecto de reproducción independiente, como se ha descrito anteriormente. Si la reproducción independiente no es posible, incluya:
 
-    -   El lenguaje de los proyectos abiertos (C\#, C++, etc.)
+  - El lenguaje de los proyectos abiertos (C\#, C++, etc.)
 
-    -   El tipo de proyecto (aplicación de consola, ASP.NET, etc.)
-
+  - El tipo de proyecto (aplicación de consola, ASP.NET, etc.)
 
 > [!NOTE]
 > **Comentarios más valiosos:** en este caso, los comentarios más valiosos son el conjunto de pasos para reproducir el problema junto con el código fuente de ejemplo.
@@ -99,11 +98,11 @@ Cada vez que Visual Studio se bloquea, se crea un archivo de volcado **devenv.ex
 
 Luego use la característica "Notificar un problema..." de Visual Studio. Esta le permite adjuntar el volcado adecuado.
 
-1.  Busque el archivo de volcado del bloqueo que está notificando (busque un archivo con la hora de creación correcta).
+1. Busque el archivo de volcado del bloqueo que está notificando (busque un archivo con la hora de creación correcta).
 
-2.  Si es posible, comprima el archivo (\*.zip) para reducir su tamaño antes de enviar los comentarios.
+2. Si es posible, comprima el archivo (\*.zip) para reducir su tamaño antes de enviar los comentarios.
 
-3.  Siga los pasos de "[Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" y adjunte el volcado del montón a un nuevo elemento de comentarios.
+3. Siga los pasos de "[Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" y adjunte el volcado del montón a un nuevo elemento de comentarios.
 
 > [!NOTE] 
 > **Comentarios más valiosos:** en este caso, la información más valiosa es el volcado del montón capturado en el momento del bloqueo.
@@ -135,33 +134,33 @@ Por ejemplo, si la escritura y la navegación son lentos, siga los pasos siguien
 
 Para obtener los mejores resultados posibles al capturar el rendimiento, siga estos pasos:
 
-1.  Si aún no se está ejecutando, tenga abierta una copia de Visual Studio en la que va a reproducir el problema.
+1. Si aún no se está ejecutando, tenga abierta una copia de Visual Studio en la que va a reproducir el problema.
 
-    -   Tenga todo configurado para reproducir el problema. Por ejemplo, si necesita que haya un proyecto determinado cargado con un archivo específico abierto, asegúrese de que ambos pasos se hayan completado antes de continuar.
+    - Tenga todo configurado para reproducir el problema. Por ejemplo, si necesita que haya un proyecto determinado cargado con un archivo específico abierto, asegúrese de que ambos pasos se hayan completado antes de continuar.
 
-    -   Si *no* está notificando un problema específico de la carga de una solución, intente esperar entre 5 y 10 minutos (o más, según el tamaño de la solución) después de abrirla antes de grabar el seguimiento de rendimiento. El proceso de carga de una solución produce una gran cantidad de datos, por lo que esperar unos minutos ayuda al equipo a centrarse en el problema concreto que está notificando.
+    - Si *no* está notificando un problema específico de la carga de una solución, intente esperar entre 5 y 10 minutos (o más, según el tamaño de la solución) después de abrirla antes de grabar el seguimiento de rendimiento. El proceso de carga de una solución produce una gran cantidad de datos, por lo que esperar unos minutos ayuda al equipo a centrarse en el problema concreto que está notificando.
 
-2.  Inicie una segunda copia de Visual Studio *sin ninguna solución abierta*.
+2. Inicie una segunda copia de Visual Studio *sin ninguna solución abierta*.
 
-3.  En la nueva copia de Visual Studio, abra la herramienta **Notificar un problema**.
+3. En la nueva copia de Visual Studio, abra la herramienta **Notificar un problema**.
 
-4.  Siga los pasos de [Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) hasta que llegue al paso "Proporcionar un seguimiento y un volcado del montón (opcional)".
+4. Siga los pasos de [Cómo notificar un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) hasta que llegue al paso "Proporcionar un seguimiento y un volcado del montón (opcional)".
 
-5.  Elija grabar la primera copia de Visual Studio (la del problema de rendimiento) e inicie la grabación.
+5. Elija grabar la primera copia de Visual Studio (la del problema de rendimiento) e inicie la grabación.
 
-    -   Aparece la aplicación Grabación de acciones de usuario y comienza la grabación.
+    - Aparece la aplicación Grabación de acciones de usuario y comienza la grabación.
 
-    -   **Durante la grabación**, realice la acción problemática en la primera copia de Visual Studio. Para el equipo resulta difícil corregir problemas de rendimiento específicos si no aparecen dentro del tiempo grabado.
+    - **Durante la grabación**, realice la acción problemática en la primera copia de Visual Studio. Para el equipo resulta difícil corregir problemas de rendimiento específicos si no aparecen dentro del tiempo grabado.
 
-    -   Si la acción es inferior a 30 segundos y se puede repetir con facilidad, repita la acción para mostrar más el problema.
+    - Si la acción es inferior a 30 segundos y se puede repetir con facilidad, repita la acción para mostrar más el problema.
 
-    -   En la mayoría de los casos, un seguimiento de 60 segundos es suficiente para mostrar los problemas, especialmente si la acción problemática ha durado (o se ha repetido) durante más de 30 segundos. La duración se puede ajustar según sea necesario para capturar el comportamiento que se quiere corregir.
+    - En la mayoría de los casos, un seguimiento de 60 segundos es suficiente para mostrar los problemas, especialmente si la acción problemática ha durado (o se ha repetido) durante más de 30 segundos. La duración se puede ajustar según sea necesario para capturar el comportamiento que se quiere corregir.
 
-6.  Haga clic en "Detener grabación" en la Grabadora de acciones de usuario en cuanto finalice la operación lenta o el evento de uso de CPU elevado que quiere notificar. El procesamiento del seguimiento de rendimiento puede tardar unos minutos.
+6. Haga clic en "Detener grabación" en la Grabadora de acciones de usuario en cuanto finalice la operación lenta o el evento de uso de CPU elevado que quiere notificar. El procesamiento del seguimiento de rendimiento puede tardar unos minutos.
 
-7.  Una vez terminado, hay varios adjuntos para los comentarios. Adjunte cualquier archivo adicional que pueda ayudar a reproducir el problema (un proyecto de ejemplo, capturas de pantallas, vídeos, etc.).
+7. Una vez terminado, hay varios adjuntos para los comentarios. Adjunte cualquier archivo adicional que pueda ayudar a reproducir el problema (un proyecto de ejemplo, capturas de pantallas, vídeos, etc.).
 
-8.  Envíe los comentarios.
+8. Envíe los comentarios.
 
 Al grabar un seguimiento de rendimiento, si la operación lenta o el uso de CPU elevado que notifica termina, detenga inmediatamente la grabación. Si se recopila demasiada información, se sobrescribe la información más antigua. Si el seguimiento no se detiene pronto (en unos segundos) tras la operación interesante, se sobrescriben datos de seguimiento de utilidad.
 
@@ -183,13 +182,13 @@ Hay una serie de procesos satélite que se ejecutan en paralelo con Visual Stud
 
 Lo que hace que estos tipos de problemas sean más útiles es proporcionar registros adicionales que se pueden recopilar siguiendo estos pasos:
 
-1.  Si se trata de un problema reproducible directamente, empiece por eliminar la carpeta **%Temp%/servicehub/logs**. Si no puede reproducir este problema, mantenga esta carpeta intacta y omita las siguientes viñetas:
+1. Si se trata de un problema reproducible directamente, empiece por eliminar la carpeta **%Temp%/servicehub/logs**. Si no puede reproducir este problema, mantenga esta carpeta intacta y omita las siguientes viñetas:
 
-    -   Establezca la variable de entorno global **ServiceHubTraceLevel** en **All** (Todo).
-    -   Reproduzca el problema.
+    - Establezca la variable de entorno global **ServiceHubTraceLevel** en **All** (Todo).
+    - Reproduzca el problema.
 
-2.  Descargue [aquí](https://www.microsoft.com/download/details.aspx?id=12493) la herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework.
-3.  Ejecute la herramienta. Esto genera un archivo zip en **%temp%/vslogs.zip**. Adjunte el archivo a sus comentarios.
+2. Descargue [aquí](https://www.microsoft.com/download/details.aspx?id=12493) la herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework.
+3. Ejecute la herramienta. Esto genera un archivo zip en **%temp%/vslogs.zip**. Adjunte el archivo a sus comentarios.
 
 ## <a name="see-also"></a>Vea también
 

@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Busque una lista de las descargas de software incluidas con la suscripción de Visual Studio.
-ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906107"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250693"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponible para descargar
 
@@ -23,10 +23,10 @@ Si ya tiene una suscripción de Visual Studio:
 2. Inicie sesión en su suscripción. (Obtenga más información sobre cómo iniciar sesión con la [cuenta Microsoft](sign-in-msa.md), la [cuenta profesional o educativa](sign-in-work.md) o las credenciales de [GitHub](sign-in-github.md)).
 3. Tras el inicio de sesión correcto, podrá buscar las descargas que desee.  También puede ver una lista de las descargas más populares, que se pueden ordenar por cualquier criterio de una amplia gama.
 
-Para buscar rápidamente los productos, utilice las funciones de "Búsqueda" de la parte superior de la página o haga clic en los distintos tipos de productos a la izquierda.
+Para buscar rápidamente los productos, use las funciones de búsqueda de la parte superior de la página o seleccione los distintos tipos de productos a la izquierda.
 
 > [!TIP]
-> Si desea obtener las claves de producto, haga clic en la pestaña **Claves de producto** en la parte superior de la página.
+> Si quiere obtener las claves de producto, seleccione la pestaña **Claves de producto** en la parte superior de la página.
 
 También puede descargar una hoja de cálculo de Excel que contiene una lista completa de [títulos de software disponibles](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de suscripción.
 

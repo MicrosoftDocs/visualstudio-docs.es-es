@@ -5,19 +5,19 @@ description: Una lista de las versiones de lanzamiento y los números de compila
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/11/2020
+ms.date: 08/18/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 263df4e98053eea6ee0ee447f2f0e12e0f32226f
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 284237edf805ba4d41bbeb17b3675d662efcbd89
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114289"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584520"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -29,6 +29,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.2 | Release | 18 de agosto de 2020 | 16.7.30413.136 |
 | 16.7.1 | Release | 11 de agosto de 2020 | 16.7.30406.217 |
 | 16.4.12 | Release | 11 de agosto de 2020 | 16.4.30406.169 |
 | 16.0.17 | Release | 11 de agosto de 2020 | 16.0.28803.806 |

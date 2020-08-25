@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183293"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508183"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -600,10 +600,10 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Enhorabuena por completar este tutorial. Para más información, continúe con los tutoriales siguientes.
+Continúe con la segunda parte de este tutorial:
 
 > [!div class="nextstepaction"]
-> [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
+> [Continuar con la parte 2](tutorial-console-part-2.md)
 
 ## <a name="see-also"></a>Vea también
 

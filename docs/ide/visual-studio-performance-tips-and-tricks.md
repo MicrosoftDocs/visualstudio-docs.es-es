@@ -1,18 +1,18 @@
 ---
 title: Consejos para mejorar el rendimiento
-ms.date: 08/14/2018
+ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307254"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214589"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -117,11 +117,25 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
    ::: moniker-end
 
+- **Deshabilitar el modo de mapa**
+
+    El [**modo de mapa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) muestra líneas de código en miniatura en la barra de desplazamiento. El modo de mapa está habilitado de forma predeterminada.
+
+    Para deshabilitar el modo de mapa, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Todos los idiomas** > **Barras de desplazamiento** y, en la sección **Comportamiento**, desactive la opción **Usar el modo Mapa para la barra de desplazamiento vertical**.
+
+- **Deshabilitar el ajuste de línea**
+
+    El [**ajuste de línea**](./reference/how-to-manage-word-wrap-in-the-editor.md) muestra la parte de una línea de código larga que se extiende más allá del ancho actual de la ventana del editor de código. El ajuste de línea está habilitado de manera predeterminada.
+
+    Para deshabilitar el ajuste de línea para un proyecto en el que está trabajando actualmente, vaya a **Editar** > **Avanzadas** > **Ajuste de línea**. (Use los mismos comandos de menú para cambiar esta configuración).
+
+    Para deshabilitar el ajuste de línea en todos los proyectos, vaya a **Herramientas** > **Opciones** > **General** > **Editor de texto** > **Todos los idiomas** > **General** y, en la sección **Configuración**, deshabilite la opción **Ajuste de línea**.
+
 - **Deshabilite el diseñador XAML**
 
     El diseñador XAML está habilitado de forma predeterminada, pero solo consume recursos si se abre un archivo *.xaml*. Si trabaja con archivos XAML pero no quiere usar la funcionalidad del diseñador, deshabilite esta característica para liberar memoria.
 
-    Para deshabilitar el **diseñador XAML**, vaya a **Herramientas** > **Opciones** > **Diseñador XAML** > **Habilitar diseñador XAML** y anule la selección de la opción.
+    Para deshabilitar el diseñador XAML, vaya a **Herramientas** > **Opciones** > **Diseñador XAML** > **Habilitar diseñador XAML** y anule la selección de la opción.
 
 - **Quite cargas de trabajo**
 
@@ -131,13 +145,13 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
 CLR usa un sistema de administración de memoria de recopilación de elementos no utilizados. En este sistema, a veces hay objetos que ya no son necesarios pero que usan memoria. Este estado es temporal; el recolector de elementos no utilizados libera esta memoria en función de su rendimiento y heurística de uso de recursos. Puede forzar a CLR a que recopile la memoria sin usar mediante una tecla de acceso rápido en Visual Studio. Si hay una cantidad considerable de elementos no utilizados en espera de recolección y se fuerza esta, debería ver cómo se reduce el uso de memoria del proceso *devenv.exe* en el **Administrador de tareas**. Es raro tener que recurrir a este método. Pero después de que se haya completado una operación costosa (por ejemplo, una compilación completa, una sesión de depuración o un evento de apertura de solución), puede ayudar a determinar cuánta memoria está usando realmente el proceso. Dado que Visual Studio es mixto (administrado y nativo), a veces es posible que el asignador nativo y el recolector de elementos no utilizados compitan por recursos de memoria limitados. En condiciones de elevado uso de memoria, puede ser útil forzar la ejecución del recolector de elementos no utilizados.
 
-Para forzar una recolección de elementos no utilizados, use este atajo de teclado: **CTRL**+**Alt**+**Mayús**+**F12**, **CTRL**+**Alt**+**Mayús**+**F12** (presione dos veces).
+Para forzar una recolección de elementos no utilizados, use la tecla de acceso rápido: **Ctrl**+**Alt**+**Mayús**+**F12**, **Ctrl**+**Alt**+**Mayús**+**F12** (presionar dos veces).
 
 Si la aplicación de la recolección de elementos no utilizados hace que el escenario funcione mejor, rellene un informe a través de la herramienta de comentarios de Visual Studio, ya que este comportamiento probablemente sea un error.
 
 Para obtener una descripción detallada del recolector de elementos no utilizados de CLR, vea [Fundamentals of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (Aspectos básicos de la recolección de elementos no utilizados).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Optimización del rendimiento de Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) [Carga más rápida de las soluciones (blog de Visual Studio)]

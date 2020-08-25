@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Aprenda cómo empezar a administrar las suscripciones de Visual Studio de su organización con el Portal de administración de suscripciones.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902941"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249867"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Introducción al portal del administrador de suscripciones de Visual Studio
 
@@ -42,7 +42,7 @@ Una vez que haya asignado las suscripciones, la pestaña Administrar suscriptore
 
 En el lado izquierdo de la página hay varios iconos que puede seleccionar para mostrar información general sobre la asignación de suscripciones, los detalles del contrato y el informe de uso máximo.
 
-Para ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato, haga clic en el icono superior para abrir el panel.
+Para ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato, seleccione el icono superior para abrir el panel.
 > [!div class="mx-imgBorder"]
 > ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

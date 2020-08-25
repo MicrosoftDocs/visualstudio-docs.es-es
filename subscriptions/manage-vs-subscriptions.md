@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453685"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248434"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -30,10 +30,10 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para cambiar entre suscripciones, use una de las opciones siguientes:
 
-- Haga clic en la lista desplegable de la parte superior derecha y elija la suscripción de la lista.
-- Haga clic en la pestaña Suscripciones y en la suscripción que prefiera.
+- Seleccione la lista desplegable de la parte superior derecha y elija la suscripción de la lista.
+- Seleccione la pestaña Suscripciones y la suscripción que prefiera.
   > [!div class="mx-imgBorder"]
-  > ![Cambiar entre suscripciones](_img/manage-vs-subscriptions/change-subscription-resized.png "Haga clic en la pestaña Suscripciones para ver información detallada sobre todas sus suscripciones y cambiar entre ellas.")
+  > ![Cambiar entre suscripciones](_img/manage-vs-subscriptions/change-subscription-resized.png "Seleccione la pestaña Suscripciones para ver información detallada sobre todas sus suscripciones y cambiar entre ellas.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si la suscripción no está visible...
 
@@ -68,17 +68,17 @@ El portal de suscripciones le permite crear y administrar un perfil, lo que faci
 
 Puede cambiar fácilmente la información de contacto y las preferencias en el perfil.
 
-1. Haga clic en su nombre en la esquina superior derecha del portal de suscriptores.
-2. Haga clic en el botón **Editar perfil**.
+1. Seleccione su nombre en la esquina superior derecha del portal de suscriptores.
+2. Seleccione el botón **Editar perfil**.
 3. En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto. En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.
-4. Cuando haya acabado de realizar los cambios, haga clic en **Guardar**.
-5. Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios.
+4. Cuando haya acabado de realizar los cambios, seleccione **Guardar**.
+5. Seleccione el botón **Atrás** del explorador para volver a la página de beneficios.
 
 ### <a name="setting-communications-preferences"></a>Establecimiento de preferencias de comunicaciones
 Si desea recibir actualizaciones periódicas sobre su suscripción y ventajas, incluido el boletín de instancias de Visual Studio Subscription mensual, [actualice sus preferencias](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) marcando la casilla para instancias de Visual Studio Subscription en su perfil de Visual Studio. Puede cambiar estas preferencias y anular la suscripción en cualquier momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Establecimiento de preferencias](_img/manage-vs-subscriptions/change-prefs.png "Haga clic en la casilla de correos electrónicos del programa de suscripciones a Visual Studio para recibir actualizaciones.")
+   > ![Establecimiento de preferencias](_img/manage-vs-subscriptions/change-prefs.png "Seleccione la casilla de correos electrónicos del programa de suscripciones a Visual Studio para recibir actualizaciones.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de Azure DevOps Services o Azure
 Si inicia sesión en su suscripción mediante una cuenta de Microsoft (MSA) personal y tiene una suscripción que incluye Azure DevOps Services o Microsoft Azure mediante una cuenta profesional o educativa administrada por Azure, puede vincular las dos suscripciones. Esto es lo que se denomina una "cuenta alternativa", que permite seguir usando la MSA para iniciar sesión en su suscripción, así como obtener acceso a los recursos existentes de Azure, Azure DevOps Services o IDE asociados a las cuentas profesionales o educativas.
@@ -88,11 +88,11 @@ Aunque las dos cuentas usen la misma dirección de correo electrónico, debe agr
 Para agregar una cuenta alternativa:
 
 1. Inicie sesión en el [portal de suscriptores](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con su cuenta de Microsoft (MSA).
-2. Haga clic en la pestaña **Suscripciones**.
+2. Seleccione la pestaña **Suscripciones** .
 3. En **Vínculos relacionados**, seleccione **Add alternate account** (Agregar cuenta alternativa).
-4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y haga clic en **Agregar**.
+4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y seleccione **Agregar**.
 
-Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, haga clic en la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.
+Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, seleccione la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

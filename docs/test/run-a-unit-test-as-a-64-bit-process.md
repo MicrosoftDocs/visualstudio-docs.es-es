@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 04895e3dd72a7cb4f0373c970db0f12582506ef9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285561"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507991"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ejecutar una prueba unitaria como un proceso de 64 bits
 
@@ -30,7 +30,7 @@ Si tiene un equipo de 64 bits, puede ejecutar pruebas unitarias y capturar infor
    ::: moniker-end
 
     > [!TIP]
-    > Para tener una flexibilidad máxima, compile los proyectos de prueba con la configuración **Cualquier CPU**. Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. No supone ninguna ventaja compilar los proyectos de prueba con la configuración de **64 bits**.
+    > Para tener una flexibilidad máxima, compile los proyectos de prueba con la configuración **Cualquier CPU**. Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. No hay ninguna ventaja por compilar los proyectos de prueba con la configuración de **64 bits**, a menos que se llame a código que solo se admite en 64 bits.
 
 2. Establezca las pruebas unitarias para que se ejecuten como un proceso de 64 bits.
 

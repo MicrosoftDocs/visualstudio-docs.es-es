@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285849"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508004"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir el rendimiento de la aplicación desde la línea de comandos
 
@@ -41,9 +41,9 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
 
 1. Inicie Bloc de notas y luego abra el Administrador de tareas para obtener su identificador de proceso (PID). En el Administrador de tareas, busque el PID en la pestaña **Detalles**.
 
-1. Abra un símbolo del sistema y cambie al directorio con el ejecutable del agente recopilador, normalmente aquí.
+1. Abra un símbolo del sistema y cambie al directorio con el ejecutable del agente recopilador, normalmente aquí (para Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Inicie *VSDiagnostics.exe* al escribir el siguiente comando.
 
@@ -54,8 +54,14 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
    Los argumentos que se deben incluir son:
 
    * \<*id*>, identifica la sesión de recopilación. El identificador debe ser un número entre 1 y 255.
-   * \<*pid*>, PID del proceso cuyo perfil se quiere generar, en este caso el PID del paso 1.
+   * \<*pid*>, PID del proceso del que quiere crear el perfil; en este caso, el PID que encontró en el paso 1.
    * \<*configFile*>, archivo de configuración del agente recopilador que quiere iniciar. Para obtener más información, vea [Archivos de configuración de agentes](#config_file).
+
+   Por ejemplo, podría usar este comando para el agente CPUUsageBase si reemplaza el *PID* como se describió anteriormente.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Cambie el tamaño de Bloc de notas o escriba algo en él con el fin de asegurarse de que se recopile alguna información interesante de generación de perfiles.
 
@@ -65,7 +71,9 @@ La generación de perfiles mediante las herramientas de la CLI de diagnósticos 
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Vaya a la salida del archivo desde el comando anterior y ábrala en Visual Studio para examinar la información recopilada.
+1. Busque el resultado del archivo *.diagsession* del comando anterior y ábralo en Visual Studio (**Archivo** > **Abrir**) para examinar la información recopilada.
+
+   Para analizar los resultados, vea la documentación de la herramienta de rendimiento correspondiente. Por ejemplo, podría tratarse de la [herramienta de uso de CPU](../profiling/cpu-usage.md), la [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md) o la herramienta de [base de datos](../profiling/analyze-database.md).
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> Archivos de configuración de agentes
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285930"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508085"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -89,88 +89,4 @@ Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recient
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Recopilación de datos de generación de perfiles desde la línea de comandos
 
-Para medir los datos de rendimiento desde la línea de comandos, puede usar VSDiagnostics.exe, que se incluye en Visual Studio o en las Herramientas remotas. Esta herramienta resulta útil para capturar seguimientos de rendimiento en sistemas en los que no está instalado Visual Studio, o para generar scripts de la colección de seguimientos de rendimiento. Cuando se usa VSDiagnostics.exe, se inicia una sesión de diagnóstico en la que se capturan y almacenan los datos de generación de perfiles hasta que se detiene la herramienta. En ese momento, esos datos se exportan a un archivo .diagsession, que puede abrir en Visual Studio para analizar los resultados.
-
-### <a name="launch-an-application"></a>Inicio de una aplicación
-
-1. Abra un símbolo del sistema y cambie al directorio con VSDiagnostics.exe:
-
-   ```
-   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-2. Inicie VSDiagnostics.exe con el siguiente comando:
-
-   ```
-   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
-   ```
-
-   Debe incluir los siguientes argumentos:
-
-   - \<id\>: identifica la sesión de recopilación. El identificador debe ser un número entre 1 y 255.
-   - \<appToLaunch\>: el archivo ejecutable que se va a iniciar y para el que se van a generar perfiles.
-   - \<configFile\>: el archivo de configuración del agente de recopilación que quiere iniciar.
-
-3. Para detener la recopilación y ver los resultados, siga los pasos de la sección "Detención de la recopilación" más adelante en este artículo.
-
-### <a name="attach-to-an-existing-application"></a>Asociación a una aplicación existente
-
-1. Abra una aplicación, como Bloc de notas, y, luego, abra el **Administrador de tareas** para obtener su identificador de proceso (PID). En el Administrador de tareas, busque el PID en la pestaña  **Detalles** .
-2. Abra un símbolo del sistema y cambie al directorio con el ejecutable del agente de recopilación. Normalmente, está aquí:
-
-   ```
-   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-3. Inicie el archivo VSDiagnostics.exe con el siguiente comando.
-
-   ```
-   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
-   ```
-
-   Debe incluir los siguientes argumentos:
-
-   - \<id\>: identifica la sesión de recopilación. El identificador debe ser un número entre 1 y 255.
-   - \<pid\>: el PID del proceso para el que quiere generar el perfil que, en este caso, es el PID del paso 1.
-   - \<configFile\>: el archivo de configuración del agente de recopilación que quiere iniciar. Para más información, consulte  [Archivos de configuración de agentes](../profiling/profile-apps-from-command-line.md).
-
-4. Para detener la recopilación y ver los resultados, siga los pasos de la sección siguiente.
-
-### <a name="stop-collection"></a>Detención de la recopilación
-
-1. Detenga la sesión de recopilación y envíe la salida a un archivo con el siguiente comando.
-
-   ```
-   VSDiagnostics.exe stop <id> /output:<path to file>
-   ```
-
-2. Vaya a la salida del archivo desde el comando anterior y ábrala en Visual Studio para examinar la información recopilada.
-
-## <a name="agent-configuration-files"></a>Archivos de configuración de agentes
-
-Los agentes de recopilación son componentes intercambiables que recopilan diferentes tipos de datos, según lo que se intente medir.
-Por comodidad, puede almacenar esa información en un archivo de configuración de agente. El archivo de configuración es un archivo .json que contiene, como mínimo, el nombre del archivo .dll y su CLSID COM. Estos son los archivos de configuración de ejemplo que se pueden encontrar en la siguiente carpeta:
-
-```
-<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
-```
-
-Consulte los vínculos siguientes para descargar y ver los archivos de configuración del agente:
-
-- https://aka.ms/vs/diaghub/agentconfig/cpubase
-- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
-- https://aka.ms/vs/diaghub/agentconfig/cpulow
-- https://aka.ms/vs/diaghub/agentconfig/database
-- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
-
-Las configuraciones de CpuUsage (base/alta/baja) corresponden a los datos recopilados de la herramienta de generación de perfiles  [Uso de CPU](../profiling/cpu-usage.md).
-Las configuraciones de DotNetObjectAlloc (base/baja) corresponden a los datos recopilados de la  [herramienta de asignación de objetos .NET](../profiling/dotnet-alloc-tool.md).
-
-Las configuraciones Base/Baja/Alta hacen referencia a la velocidad de muestreo. Por ejemplo, Baja es 100 muestras por segundo y Alta es 4000 muestras por segundo.
-Para que la herramienta VSDiagnostics.exe funcione con un agente de recopilación, se necesita un archivo DLL y un CLSID COM para el agente adecuado. El agente también puede tener opciones de configuración adicionales. Si usa un agente sin un archivo de configuración, utilice el formato del siguiente comando:
-
-```
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+Para medir los datos de rendimiento desde la línea de comandos, puede usar VSDiagnostics.exe, que se incluye en Visual Studio o en las Herramientas remotas. Esta herramienta resulta útil para capturar seguimientos de rendimiento en sistemas en los que no está instalado Visual Studio, o para generar scripts de la colección de seguimientos de rendimiento. Para obtener instrucciones detalladas, vea [Medir el rendimiento de la aplicación desde la línea de comandos](../profiling/profile-apps-from-command-line.md).

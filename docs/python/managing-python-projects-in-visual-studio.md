@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9031b0107babf3d31b6e3b70bb7952cd83467d7d
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307152"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238795"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -39,9 +39,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 >
 > Se puede crear fácilmente un proyecto de Visual Studio a partir de código existente, como se describe en [Creación de un proyecto a partir de archivos existentes](#create-project-from-existing-files).
 
-|   |   |
-|---|---|
-| ![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Profundización: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
+![icono de cámara de cine para vídeo](../install/media/video-icon.png "Ver un vídeo") [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python).
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 

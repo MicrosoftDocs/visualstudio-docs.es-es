@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Obtenga información acerca de cómo los administradores pueden asignar licencias a varios suscriptores mediante la característica de adición masiva o los grupos de Microsoft Azure Active Directory.
-ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235139"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249615"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Asignación de suscripciones a varios usuarios
 El Portal de administración de suscripciones permite agregar usuarios de uno en uno o en grupos grandes.  Para agregar usuarios individuales, consulte [Agregar usuarios individuales](assign-license.md).
@@ -28,7 +28,7 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
 
 1. Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores**. Elija la pestaña **Agregar** y, a continuación, elija **Agregar en masa** en el menú desplegable.  
 
-1. En la adición en masa se usa una plantilla de Microsoft Excel para cargar información de los suscriptores. En el cuadro de diálogo para cargar varios suscriptores, haga clic en **Descargar** para descargar la plantilla.
+1. En la adición en masa se usa una plantilla de Microsoft Excel para cargar información de los suscriptores. En el cuadro de diálogo Upload Multiple Subscribers (Cargar varios suscriptores), seleccione **Descargar** para descargar la plantilla.
    > [!div class="mx-imgBorder"]
    > ![Descarga de la plantilla de Excel para cargar varios suscriptores](media/download-template-upload-subscribers.png "Descargue la plantilla de Excel en blanco para iniciar el proceso de asignación en masa.")
    >
@@ -48,13 +48,13 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
     - Asegúrese de que se han completado todos los campos obligatorios. 
     - Compruebe la columna **Mensaje de error**.  Si aparece algún error, resuélvalo antes de intentar cargar el archivo. 
 
-1. Vuelva al portal de administración de suscripciones de Visual Studio. En el cuadro de diálogo **Cargar varios suscriptores**, haga clic en **Examinar**.
+1. Vuelva al portal de administración de suscripciones de Visual Studio. En el cuadro de diálogo **Upload Multiple Subscribers** (Cargar varios suscriptores), haga clic en **Examinar**.
    > [!div class="mx-imgBorder"]
    > ![Examen de la plantilla guardada para cargar varios suscriptores](media/bulk-add-browse-saved-template.png "Puede desplazarse hasta la ubicación del archivo, o bien arrastrarlo y colocarlo en este cuadro de diálogo.")
 
-1. Vaya al archivo de Excel que ha guardado y haga clic en **Aceptar**.
+1. Vaya al archivo de Excel que ha guardado y seleccione **Aceptar**.
    > [!div class="mx-imgBorder"]
-   > ![Carga de la plantilla de Excel para cargar varios suscriptores](media/bulk-upload-subscribers.png "La plantilla con los datos aparecerá aquí.  Haga clic en Aceptar para iniciar la carga.")
+   > ![Carga de la plantilla de Excel para cargar varios suscriptores](media/bulk-upload-subscribers.png "La plantilla con los datos aparecerá aquí.  Seleccione Aceptar para iniciar la carga.")
 
     Aparece un cuadro de diálogo de progreso de carga.
 
@@ -66,8 +66,8 @@ Para agregar grandes grupos de usuarios, puede usar la característica Agregar e
    1. Abra el archivo de Excel que ha creado, corrija los problemas y guarde el archivo.
    0. Vuelva al Portal de administración y elija **Agregar**.
    0. Seleccione **Agregar en masa**.
-   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Haga clic en **Examinar**, busque el archivo que acaba de guardar y haga clic en **Abrir**.
-   0. Haga clic en **Aceptar**.
+   0. Como ya se ha guardado el archivo de Excel, no es necesario descargar la plantilla.  Seleccione **Examinar**, busque el archivo que acaba de guardar y seleccione **Abrir**.
+   0. Seleccione **Aceptar**.
 
 
     Cuando la carga se realice correctamente, verá la lista de suscriptores y un mensaje de confirmación.
@@ -109,7 +109,7 @@ Con esta característica, resulta más sencillo mantenerse al tanto de las asign
    > [!div class="mx-imgBorder"]
    > ![Selección del grupo de Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Elija el nombre del grupo de Azure AD para agregar suscriptores de ese grupo.")
 
-6. Haga clic en **Agregar** y, luego, en **Confirmar**. 
+6. Seleccione **Agregar** y, luego, **Confirmar**. 
 
 7. Para ver el grupo agregado, desplácese a la parte inferior de la lista de usuarios.  
 

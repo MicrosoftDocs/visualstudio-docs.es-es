@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906216"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249900"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Configuración y uso de Live Unit Testing
 
@@ -191,16 +191,16 @@ Para soluciones con muchos proyectos de prueba, puede controlar qué proyectos y
 
 Para seleccionar proyectos individuales en pruebas unitarias, haga lo siguiente después de iniciar Live Unit Testing:
 
-1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Live Tests**(Pruebas en vivo)  > **Excluir** para excluir toda la solución.
-1. Haga clic con el botón derecho en cada proyecto de prueba que le gustaría incluir en las pruebas y elija **Live Tests** (Pruebas en vivo)  > **Incluir**.
+1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Live Unit Testing** > **Excluir** para excluir toda la solución.
+1. Haga clic con el botón derecho en cada proyecto de prueba que le gustaría incluir en las pruebas y elija **Live Unit Testing** > **Incluir**.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Exclusión de pruebas individuales de la ventana del editor de código
 
 Puede usar la ventana del editor de código para incluir o excluir métodos de prueba individuales. Haga clic con el botón derecho en la firma del método de prueba en la ventana del editor de código y seleccione una de las opciones siguientes:
 
-- **Live Tests (Pruebas en vivo)**  > **Incluir \<selected method>**
-- **Live Tests (Pruebas en vivo)**  > **Excluir \<selected method>**
-- **Live Tests (Pruebas en vivo)**  > **Excluir todas menos \<selected method>**
+- **Live Unit Testing** > **Incluir \<selected method>**
+- **Live Unit Testing** > **Excluir\<selected method>**
+- **Live Unit Testing** > **Excluir todas menos\<selected method>**
 
 ### <a name="exclude-tests-programmatically"></a>Exclusión de pruebas mediante programación
 

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Preguntas sobre facturación para suscripciones de nube.
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273834"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249382"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
@@ -34,7 +34,7 @@ R: No, en absoluto. Si solamente quiere adquirir suscripciones de nube de Visual
 R: Sí, puede hacerlo. Debe ser propietario o colaborador de una suscripción de Azure que se haya creado para su Contrato Enterprise. Asegúrese de realizar cualquier compra relacionada con las suscripciones de nube de Visual Studio directamente en Visual Studio Marketplace. No se pueden adquirir suscripciones de nube de Visual Studio con un pedido de compra.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: ¿Cómo puedo saber si poseo los privilegios necesarios para adquirir servicios en Visual Studio Marketplace por medio del Contrato Enterprise de mi empresa?
-R: La forma más sencilla de saber si tiene los privilegios adecuados consiste en hacer clic en el botón de **compra** de un servicio que se ofrezca en Visual Studio Marketplace.
+R: La forma más sencilla de saber si tiene los privilegios adecuados consiste en hacer clic en el botón de **compra** de un servicio que se ofrezca en Visual Studio Marketplace.
 Deberá seleccionar una suscripción de Azure (que es una cuenta de facturación) de una lista que se abre con las suscripciones de Azure que están vinculadas actualmente a su nombre de usuario.
 Dado que el nombre de la suscripción de Azure se establece de forma predeterminada en el tipo de cuenta de facturación que se posea ("Pago por uso", "Contrato Enterprise", etc.), suele quedar claro si la suscripción de Azure forma parte de su Contrato Enterprise.
 

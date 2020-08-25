@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817208"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249511"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedimiento Edición de archivos XML
 
@@ -22,7 +22,7 @@ El editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archiv
 > [!NOTE]
 > Los documentos XHTML son manejados con el Editor HTML.
 
-Para editar un archivo XML, haga doble clic en el archivo que desea editar.
+Para editar un archivo XML, abra el archivo que quiera editar.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Incorporación de un nuevo archivo XML a un proyecto
 
@@ -50,7 +50,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 2. Seleccione **Archivo XML** para crear un nuevo archivo XML; o bien, seleccione **Archivo XSLT** para crear una nueva hoja de estilos XSLT.
 
-3. Haga clic en **Abrir**.
+3. seleccione **Open**(Abrir).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Creación de un proyecto vacío para archivos XML
 
@@ -62,7 +62,7 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 2. Seleccione el lenguaje de código que desee y luego seleccione la plantilla **Proyecto vacío (.NET Framework)** .
 
-3. Haga clic en **Aceptar**.
+3. Seleccione **Aceptar**.
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ Para editar un archivo XML, haga doble clic en el archivo que desea editar.
 
 1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. Escriba **Proyecto vacío** en el cuadro de búsqueda de plantillas, seleccione la plantilla **Proyecto vacío (.NET Framework)** y haga clic en **Siguiente**.
+2. Escriba **Proyecto vacío** en el cuadro de búsqueda de plantillas, seleccione la plantilla **Proyecto vacío (.NET Framework)** y, después, **Siguiente**.
 
-3. Haga clic en **Crear**.
+3. Seleccione **Crear**.
 
 ::: moniker-end
 

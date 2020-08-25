@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Obtenga más información sobre la nueva oferta de Visual Studio + GitHub
-ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232781"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248188"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introducción a las suscripciones de Visual Studio con GitHub Enterprise  
 
@@ -66,7 +66,7 @@ Si no está familiarizado con GitHub, aquí tiene algunos recursos que pueden re
 R:  El proceso para configurar la suscripción de GitHub puede tardar un rato.  Si lleva tiempo esperando y no ha ocurrido nada, puede ponerse en contacto con el administrador de GitHub.  Es posible que el administrador todavía esté trabajando en ello o haya optado por no asignarle una suscripción de GitHub. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>P:  ¿Cómo puedo ponerme en contacto con el administrador de GitHub?
-R:  Si usa el servidor de GitHub Enterprise, puede hacer clic en el vínculo **Soporte** situado en la parte inferior del cliente para contactar con el administrador.
+R:  Si usa el servidor de GitHub Enterprise, puede seleccionar el vínculo **Soporte** situado en la parte inferior del cliente para contactar con el administrador.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>P: Con esta oferta, ¿obtengo la suscripción completa de Visual Studio (Professional o Enterprise) o simplemente obtengo el entorno de desarrollo integrado?
 R:  Junto con una suscripción de GitHub Enterprise, recibirá una suscripción de Visual Studio completa.  Recibirá todas las ventajas, como las descargas de software, los servicios en la nube, el soporte técnico y las ventajas para socios, incluidas en esas suscripciones, como si hubiera adquirido la suscripción por separado.
