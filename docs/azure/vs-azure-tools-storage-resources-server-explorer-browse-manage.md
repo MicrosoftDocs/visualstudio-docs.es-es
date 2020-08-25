@@ -9,28 +9,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911716"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800481"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Introducción
 
-Si ha instalado Azure Tools para Microsoft Visual Studio, puede ver datos de blob, cola y tabla desde las cuentas de almacenamiento de Azure. El nodo de Azure **Storage** en el Explorador de servidores muestra datos que están en la cuenta del emulador de almacenamiento local y las otras cuentas de Azure Storage.
+Si ha instalado Azure Tools para Microsoft Visual Studio, puede ver datos de blob, cola y tabla desde las cuentas de almacenamiento de Azure. El nodo **almacenamiento** de azure en explorador de servidores muestra los datos de la cuenta del emulador de almacenamiento local y las demás cuentas de Azure Storage.
 
-Para ver el Explorador de servidores en Visual Studio, en la barra de menús, elija **Ver** > **Explorador de servidores**. El nodo **Storage** muestra todas las cuentas de almacenamiento que existen en cada suscripción o certificado de Azure a los que está conectado. Si no aparece la cuenta de almacenamiento, puede agregarla siguiendo las instrucciones proporcionadas [más adelante en este artículo](#add-storage-accounts-by-using-server-explorer).
+Para ver explorador de servidores en Visual Studio, en la barra de menús, seleccione **Ver**  >  **Explorador de servidores**. El nodo **Storage** muestra todas las cuentas de almacenamiento que existen en cada suscripción o certificado de Azure a los que está conectado. Si no aparece la cuenta de almacenamiento, puede agregarla siguiendo las instrucciones proporcionadas [más adelante en este artículo](#add-storage-accounts-by-using-server-explorer).
 
-A partir del SDK de Azure 2.7, también puede usar Cloud Explorer para ver y administrar los recursos de Azure. Para más información, consulte [Administración de recursos de Azure con Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
+A partir del SDK de Azure 2.7, también puede usar Cloud Explorer para ver y administrar los recursos de Azure. Para obtener más información, consulte [Administración de recursos de Azure con Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visualización y administración de recursos de almacenamiento en Visual Studio
 
-El Explorador de servidores muestra automáticamente una lista de blobs, colas y tablas en la cuenta del emulador de almacenamiento. La cuenta del emulador de almacenamiento aparece en el Explorador de servidores bajo el nodo **Storage** como el nodo **Desarrollo**.
+El Explorador de servidores muestra automáticamente una lista de blobs, colas y tablas en la cuenta del emulador de almacenamiento. La cuenta del emulador de almacenamiento aparece en Explorador de servidores en el nodo **almacenamiento** como el nodo **desarrollo** .
 
 Para ver los recursos de la cuenta del emulador de almacenamiento, expanda el nodo **Desarrollo** . Si el emulador de almacenamiento aún no está iniciado cuando expanda el nodo **Desarrollo**, se inicia automáticamente. Este proceso puede tardar varios segundos. Puede continuar trabajando en otras zonas de Visual Studio mientras se inicia el emulador de almacenamiento.
 
@@ -72,9 +72,9 @@ Puede realizar las siguientes operaciones en blobs mediante los botones de la es
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Para crear una carpeta o una subcarpeta en un contenedor de blobs
 
-1. Elija el contenedor de blobs en Cloud Explorer. En la ventana del contenedor, seleccione el botón **Cargar blob**.
+1. Elija el contenedor de blobs en **Cloud Explorer**. En la ventana del contenedor, seleccione el botón **Cargar blob**.
 
-1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)** .
+1. En el cuadro de diálogo **Cargar nuevo archivo**, seleccione el botón **Examinar** para especificar el archivo que quiere cargar y escriba luego un nombre de carpeta en el cuadro **Carpeta (opcional)**.
 
    ![Cargar un archivo en una carpeta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Dado que las carpetas de los contenedores de blobs son carpetas virtuales, no se
 
 Puede filtrar los blobs que se muestran especificando un prefijo común.
 
-Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** ( **!** ), solo aparecen los blobs que comienzan con "hello".
+Por ejemplo, si escribe el prefijo **hello** en el cuadro de texto del filtro y hace clic en el botón **Ejecutar** (**!**), solo aparecen los blobs que comienzan con "hello".
 
 ![Cuadro de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,13 +102,13 @@ El cuadro de texto de filtro distingue mayúsculas de minúsculas y no admite el
 
 ### <a name="to-download-blob-data"></a>Para descargar datos de blob
 
-En Cloud Explorer, use cualquiera de los métodos siguientes:
+En **Cloud Explorer**, use cualquiera de los métodos siguientes:
 
 * Abra el menú contextual de uno o varios blobs y, luego, seleccione **Abrir**.
 * Elija el nombre del blob y luego seleccione el botón **Abrir**.
 * Haga doble clic en el nombre del blob.
 
-Puede ver el progreso de la descarga del blob en la ventana **Registro de actividad de Microsoft Azure** .
+El progreso de descarga de un blob se muestra en la ventana **Registro de actividad de Azure**.
 
 El blob se abre en el editor predeterminado para ese tipo de archivo. Si el sistema operativo reconoce el tipo de archivo, el archivo se abre en una aplicación instalada localmente. En caso contrario, se le pedirá que elija una aplicación que sea adecuada para el tipo de archivo del blob. El archivo local que se crea cuando descarga un blob está marcado como de solo lectura.
 
@@ -134,7 +134,7 @@ Abra el menú contextual del blob y después seleccione **Copiar dirección URL*
 
 ### <a name="to-edit-a-blob"></a>Para editar un blob
 
-Seleccione el blob y después elija el botón **Abrir blob**.
+Elija el BLOB y, a continuación, seleccione el botón **abrir BLOB** .
 
 El archivo se descarga en una ubicación temporal y se abre en el equipo local. Vuelva a cargar el blob después de realizar cambios.
 
@@ -158,7 +158,7 @@ En la siguiente imagen se muestra una cola que contiene dos mensajes:
 Para más información sobre las colas de servicios de almacenamiento, consulte [Introducción a Azure Queue Storage mediante .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Para obtener información sobre el servicio web para colas de servicios de almacenamiento, vea [Conceptos del servicio Cola](/rest/api/storageservices/Queue-Service-Concepts). Para obtener información acerca de cómo enviar mensajes a una cola de servicios de almacenamiento mediante Visual Studio, vea [Enviar mensajes a una cola de servicios de almacenamiento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Las colas de servicios de almacenamiento son distintas de las colas de Azure Service Bus. Para más información sobre las colas de Service Bus, consulte [Colas, temas y suscripciones de Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Las colas de servicios de almacenamiento son distintas de las colas de Azure Service Bus. Para obtener más información acerca de las colas de Service Bus, vea [Service Bus colas, temas y suscripciones](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Uso de recursos de tabla
 
@@ -166,12 +166,12 @@ Azure Table Storage permite almacenar una gran cantidad de datos estructurados. 
 
 ### <a name="to-create-a-table"></a>Para crear una tabla
 
-1. En Cloud Explorer, seleccione el nodo **Tablas** de la cuenta de almacenamiento y, luego, seleccione **Crear tabla**.
+1. En **Cloud Explorer**, seleccione el nodo **tablas** de la cuenta de almacenamiento y, a continuación, seleccione **crear tabla**.
 1. En el cuadro de diálogo **Crear tabla** , escriba un nombre para la tabla.
 
 ### <a name="to-view-table-data"></a>Para ver los datos de tabla
 
-1. En Cloud Explorer, abra el nodo **Azure** y después el nodo **Almacenamiento**.
+1. En **Cloud Explorer**, abra el nodo **Azure** y, a continuación, abra el nodo **almacenamiento** .
 1. Abra el nodo de la cuenta de almacenamiento que le interese y después abra el nodo **Tablas** para ver una lista de tablas para la cuenta de almacenamiento.
 1. Abra el menú contextual de una tabla y después elija **Ver tabla**.
 
@@ -181,24 +181,24 @@ La tabla se organiza por entidades (mostradas en filas) y propiedades (mostradas
 
 ### <a name="to-edit-table-data"></a>Para editar los datos de tabla
 
-En el Diseñador de tablas, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y seleccione **Editar**.
+En **Diseñador de tablas**, abra el menú contextual de una entidad (una sola fila) o una propiedad (una sola celda) y, a continuación, seleccione **Editar**.
 
-![Agregar o editar una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Adición o edición de una entidad de tabla](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 No es necesario que las entidades de una sola tabla compartan el mismo conjunto de propiedades (columnas). Tenga en cuenta las siguientes restricciones sobre la visualización y la edición de los datos de tabla:
 
 * No se pueden ver ni editar datos binarios (`type byte[]`), pero se pueden almacenar en una tabla.
-* No se pueden editar los valores **PartitionKey** ni **RowKey**, porque el servicio Table Storage de Azure no admite esa operación.
+* No se pueden editar los valores **PartitionKey** o **RowKey** , ya que Azure Table Storage no admite esa operación.
 * No se puede crear una propiedad denominada **Timestamp**. Los servicios de almacenamiento de Azure usan una propiedad con ese nombre.
-* Si escribe un valor **DateTime**, debe seguir un formato que sea adecuado para la configuración regional y de idioma del equipo (por ejemplo, MM/DD/AAAA HH:MM:SS [AM|PM] en el caso de Inglés de Estados Unidos).
+* Si escribe un valor **DateTime** , debe seguir un formato adecuado para la configuración regional y de idioma del equipo (por ejemplo, mm/dd/aaaa HH: mm: SS [AM | PM] para Inglés de EE. UU.).
 
 ### <a name="to-add-entities"></a>Para agregar entidades
 
-1. En el Diseñador de tablas, seleccione el botón **Agregar entidad**.
+1. En **Diseñador de tablas**, seleccione el botón **Agregar entidad** .
 
     ![Botón Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. En el cuadro de diálogo **Agregar entidad**, escriba los valores de las propiedades **PartitionKey** y **RowKey**.
+1. En el cuadro de diálogo **Agregar entidad**, introduzca los valores de las propiedades **PartitionKey** y **RowKey**.
 
     ![Cuadro de diálogo Agregar entidad](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -211,13 +211,13 @@ Puede personalizar el conjunto de entidades que aparecen en una tabla si usa el 
 1. Para abrir el generador de consultas, abra una tabla para su visualización.
 1. Seleccione el botón **Generador de consultas** en la barra de herramientas de la vista de tabla.
 
-    Aparece el cuadro de diálogo **Generador de consultas** . En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
+    Aparece el cuadro de diálogo **Generador de consultas**. En la siguiente ilustración, se muestra una consulta que se está generando en el generador de consultas.
 
     ![Generador de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Cuando haya terminado de generar la consulta, cierre el cuadro de diálogo. El formato de texto de la consulta resultante aparece en un cuadro de texto como un filtro de WCF Data Services.
 1. Para ejecutar la consulta, seleccione el icono de triángulo verde.
 
-También puede filtrar los datos de la entidad que aparece en el Diseñador de tablas si escribe una cadena de filtro de WCF Data Services directamente en el cuadro de texto de filtro. Este tipo de cadena es similar a una cláusula WHERE de SQL, pero se envía al servidor como solicitud HTTP. Para obtener información acerca de cómo construir cadenas de filtro, consulte [Crear cadenas de filtro para el Diseñador de tablas](vs-azure-tools-table-designer-construct-filter-strings.md).
+También puede filtrar los datos de la entidad que aparece en el Diseñador de tablas si escribe una cadena de filtro de WCF Data Services directamente en el cuadro de texto de filtro. Este tipo de cadena es similar a una cláusula WHERE de SQL, pero se envía al servidor como solicitud HTTP. Para obtener información sobre cómo construir cadenas de filtro, vea [crear cadenas de filtro para el diseñador de tablas](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 En la siguiente ilustración se muestra un ejemplo de una cadena de filtro válida:
 
@@ -235,7 +235,7 @@ Cuando el Explorador de servidores se conecta a una cuenta de almacenamiento u o
 ### <a name="to-refresh-table-data"></a>Para actualizar los datos de tabla
 
 * Seleccione el nodo **Blobs** bajo **Storage** y luego seleccione el botón **Actualizar** en la barra de herramientas del Explorador de servidores.
-* Para actualizar la lista de entidades que se muestra en el Diseñador de tablas, seleccione el botón **Ejecutar** en el Diseñador de tablas.
+* Para actualizar la lista de entidades que se muestra en **Diseñador de tablas**, seleccione el botón **Ejecutar** en diseñador de tablas.
 
 ### <a name="to-refresh-queue-data"></a>Para actualizar los datos de cola
 

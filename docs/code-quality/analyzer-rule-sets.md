@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573292"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800221"
 ---
 # <a name="enable-a-category-of-rules"></a>Habilitar una categoría de reglas
 
@@ -28,8 +28,8 @@ El paquete de NuGet del analizador de FxCop incluye conjuntos de reglas predefin
 
 - Todas las reglas
 - Flujo de datos
-- Design
-- Documentation
+- Diseño
+- Documentación
 - Globalización
 - Interoperabilidad
 - Capacidad de mantenimiento
@@ -37,8 +37,8 @@ El paquete de NuGet del analizador de FxCop incluye conjuntos de reglas predefin
 - Rendimiento
 - Trasladado desde FxCop
 - Confiabilidad
-- de seguridad
-- Usage
+- Seguridad
+- Uso
 
 Cada una de esas categorías de reglas tiene un EditorConfig o un archivo de conjunto de reglas para:
 
@@ -53,13 +53,13 @@ Cada una de esas categorías de reglas tiene un EditorConfig o un archivo de con
 
 ## <a name="predefined-editorconfig-files"></a>Archivos EditorConfig predefinidos
 
-Los archivos EditorConfig predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en el directorio *% userprofile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión\>\editorconfig* . Por ejemplo, el archivo EditorConfig para habilitar todas las reglas de seguridad se encuentra en *% userprofile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
+Los archivos EditorConfig predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en el directorio *% userprofile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig* . Por ejemplo, el archivo EditorConfig para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig\SecurityRulesEnabled \\ . EditorConfig*.
 
 Copie el archivo. editorconfig elegido en el directorio raíz del proyecto.
 
 ## <a name="predefined-rule-sets"></a>Conjunto de reglas predefinidas
 
-Los archivos de conjunto de reglas predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en el directorio *% userprofile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión\>\rulesets* . Por ejemplo, el archivo de conjunto de reglas para habilitar todas las reglas de seguridad se encuentra en *% userprofile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión\>\rulesets\SecurityRulesEnabled.ruleset*.
+Los archivos de conjunto de reglas predefinidos para el paquete Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer se encuentran en el directorio *% userprofile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets* . Por ejemplo, el archivo de conjunto de reglas para habilitar todas las reglas de seguridad se encuentra en *% userprofile% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets\SecurityRulesEnabled.ruleset*.
 
 Copie uno o más conjuntos de reglas y péguelos en el directorio que contiene el proyecto de Visual Studio o directamente en **Explorador de soluciones**.
 
@@ -69,9 +69,9 @@ También puede [personalizar un conjunto de reglas predefinidas según](how-to-c
 
 El proceso para establecer el conjunto de reglas activo es un poco diferente en función de si tiene un proyecto .NET Core/. NET Standard o un proyecto .NET Framework.
 
-#### <a name="net-core"></a>Núcleo de .NET
+#### <a name="net-core"></a>.NET Core
 
-Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Core o en proyectos de .NET Standard, agregue manualmente la propiedad **CodeAnalysisRuleSet** al archivo de proyecto. Por ejemplo, el siguiente fragmento de código establece `HelloWorld.ruleset` como el conjunto de reglas activo.
+Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Core o en proyectos de .NET Standard, agregue manualmente la propiedad **CodeAnalysisRuleSet** al archivo de proyecto. Por ejemplo, el fragmento de código siguiente establece `HelloWorld.ruleset` como el conjunto de reglas activo.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -84,25 +84,25 @@ Para que un conjunto de reglas establezca el conjunto de reglas activo para el a
 
 Para que un conjunto de reglas establezca el conjunto de reglas activo para el análisis en .NET Framework proyectos:
 
-- Haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y elija **propiedades**.
+- Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**.
 
 - En las páginas de propiedades del proyecto, seleccione la pestaña **análisis de código** .
 
 ::: moniker range="vs-2017"
 
-- En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que desea copiar en el directorio del proyecto.
+- En **ejecutar este conjunto de reglas**, seleccione **examinar**y elija el conjunto de reglas que desea copiar en el directorio del proyecto.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- En **reglas activas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que desea copiar en el directorio del proyecto.
+- En **reglas activas**, seleccione **examinar**y elija el conjunto de reglas que desea copiar en el directorio del proyecto.
 
 ::: moniker-end
 
    Ahora solo verá infracciones de reglas para las reglas que están habilitadas en el conjunto de reglas seleccionado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Preguntas más frecuentes sobre analizadores](analyzers-faq.md)
 - [Introducción a los analizadores de .NET Compiler Platform](roslyn-analyzers-overview.md)

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c92476e8083106a0d301655be3a1779709c1c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282740"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800637"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar a datos de una base de datos de Access
 
@@ -29,7 +29,7 @@ Para usar estos procedimientos, necesita un proyecto Windows Forms o WPF y una b
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Crear un conjunto de información para un archivo. accdb
 
-Conéctese a las bases de datos creadas con Office 365, Access 2013, Access 2010 o Access 2007 mediante el procedimiento siguiente.
+Conéctese a las bases de datos creadas con Microsoft 365, Access 2013, Access 2010 o Access 2007 mediante el procedimiento siguiente.
 
 1. Abra un proyecto de aplicación de Windows Forms o WPF en Visual Studio.
 
@@ -115,7 +115,7 @@ El conjunto de datos que acaba de crear está disponible en la ventana **orígen
 
 - Agregue la lógica de validación <xref:System.Data.DataTable.ColumnChanging> al <xref:System.Data.DataTable.RowChanging> evento o de las tablas de datos en el conjunto de datos (vea [Validate Data in](../data-tools/validate-data-in-datasets.md)datasets).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Adición de conexiones](../data-tools/add-new-connections.md)
 - [Información general sobre el enlace de datos de WPF](/dotnet/framework/wpf/data/data-binding-overview)

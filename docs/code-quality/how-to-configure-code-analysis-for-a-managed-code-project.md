@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507864"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801053"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Cómo: configurar el análisis heredado para código administrado
 
@@ -36,11 +36,11 @@ En Visual Studio, puede elegir en una lista de [conjuntos de reglas](../code-qua
 
 1. Abra la pestaña **análisis de código** en las páginas de propiedades del proyecto. Esto se puede lograr de una de las siguientes maneras:
 
-   - En **Explorador de soluciones**, seleccione el proyecto. En la barra de menús, seleccione **analizar**  >  **configurar análisis**  >  **de \<projectname> código para **.
+   - En **Explorador de soluciones**, elija el proyecto. En la barra de menús, seleccione **analizar**  >  **configurar análisis**  >  **de \<projectname> código para **.
 
    - Haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccione **propiedades**y, a continuación, seleccione la pestaña **análisis de código** .
 
-2. En las listas **configuración** y **plataforma** , seleccione la configuración de compilación y la plataforma de destino.
+2. En las listas **configuración** y **plataforma** , elija la configuración de compilación y la plataforma de destino.
 
 ::: moniker range="vs-2017"
 
@@ -89,14 +89,14 @@ De forma predeterminada, todos los proyectos administrados de una solución tien
 
 4. Puede especificar un conjunto de reglas para uno o varios proyectos:
 
-    - Para especificar un conjunto de reglas para un proyecto individual, seleccione el nombre del proyecto.
+    - Para especificar un conjunto de reglas para un proyecto individual, elija el nombre del proyecto.
 
-    - Para especificar un conjunto de reglas para varios proyectos, mantenga presionada la **tecla Ctrl** y seleccione los nombres de proyecto.
+    - Para especificar un conjunto de reglas para varios proyectos, seleccione **Ctrl** y los nombres de proyecto.
 
-    - Para especificar todos los proyectos de la solución, mantenga presionada la **tecla Mayús** y haga clic en la lista de proyectos.
+    - Para especificar todos los proyectos de la solución, seleccione **MAYÚS** y la lista de proyectos.
 
 5. Seleccione el campo **conjunto de reglas** de un proyecto y, a continuación, seleccione el nombre del conjunto de reglas que desea aplicar.
 
-## <a name="see-also"></a>Consulte también:
+## <a name="see-also"></a>Consulte también
 
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

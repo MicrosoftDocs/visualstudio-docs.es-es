@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 163b925423ba5afc62b84866e839c5d86a6444e0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371942"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800703"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Cómo deshabilitar el análisis de código fuente para código administrado
 
@@ -41,19 +41,19 @@ Para abrir esta página, haga clic con el botón secundario en el nodo del proye
 - Para deshabilitar el análisis de código fuente en directo, desactive la opción **ejecutar análisis en vivo** .
 
 > [!NOTE]
-> A partir de la versión 16,5 de Visual Studio 2019, si prefiere el flujo de trabajo de ejecución del análisis de código a petición, puede deshabilitar la ejecución del analizador durante el análisis en vivo o compilar y desencadenar manualmente el análisis de código una vez en un proyecto o una solución a petición. Para obtener información sobre cómo ejecutar el análisis de código manualmente, vea [Cómo: ejecutar el análisis de código manualmente para código administrado](how-to-run-code-analysis-manually-for-managed-code.md).  
+> A partir de la versión 16,5 de Visual Studio 2019, si prefiere el flujo de trabajo de ejecución del análisis de código a petición, puede deshabilitar la ejecución del analizador durante el análisis en vivo o compilar y desencadenar manualmente el análisis de código una vez en un proyecto o una solución a petición. Para obtener información sobre cómo ejecutar el análisis de código manualmente, vea [Cómo: ejecutar el análisis de código manualmente para código administrado](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="net-framework-projects"></a>Proyectos de .NET Framework
 
 Para desactivar el análisis de código fuente de los analizadores, agregue una o varias de las siguientes propiedades de MSBuild al [archivo de proyecto](../ide/solutions-and-projects-in-visual-studio.md#project-file).
 
-| Propiedad de MSBuild | Descripción | Default |
+| Propiedad de MSBuild | Descripción | Valor predeterminado |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | Controla si los analizadores se ejecutan en tiempo de compilación. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | Controla si los analizadores analizan el código en tiempo de diseño. | `true` |
 | `RunAnalyzers` | Deshabilita los analizadores en tiempo de compilación y de diseño. Esta propiedad tiene prioridad sobre `RunAnalyzersDuringBuild` y `RunAnalyzersDuringLiveAnalysis` . | `true` |
 
-Ejemplos:
+Ejemplo:
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -67,7 +67,7 @@ Ejemplos:
 
 ## <a name="source-analysis"></a>Análisis de código fuente
 
-No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del lista de errores, puede suprimir todas las infracciones actuales eligiendo **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
+No se puede desactivar el [análisis de código fuente](roslyn-analyzers-overview.md) en Visual Studio 2017. Si desea borrar los errores del analizador del **lista de errores**, puede suprimir todas las infracciones actuales seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos** en la barra de menús. Para obtener más información, vea [suprimir infracciones](use-roslyn-analyzers.md#suppress-violations).
 
 A partir de la versión 16,3 de Visual Studio 2019, puede desactivar el análisis de código fuente o ejecutarlo a petición. Considere la posibilidad de actualizar a Visual Studio 2019.
 
@@ -77,7 +77,7 @@ Puede deshabilitar el análisis heredado en tiempo de compilación en la página
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Suprimir infracciones](use-roslyn-analyzers.md#suppress-violations)
 - [Cómo: habilitar y deshabilitar el análisis de código heredado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

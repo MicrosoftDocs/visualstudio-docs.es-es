@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706495"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800858"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -35,7 +35,7 @@ En C++/CLI, use el SUPPRESS_MESSAGE de macros CA \_ Suppress \_ Message o CA \_ 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2017, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas seleccionando **analizar**  >  **Ejecutar Análisis de código y suprimir problemas activos**.
 >
 > ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ En C++/CLI, use el SUPPRESS_MESSAGE de macros CA \_ Suppress \_ Message o CA \_ 
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas eligiendo **analizar**  >  **compilación y suprimir problemas activos**.
+> Si migra un proyecto a Visual Studio 2019, es posible que se enfrente a un gran número de advertencias de análisis de código. Si no está listo para corregir las advertencias, puede suprimir todas ellas seleccionando **analizar**  >  **compilación y suprimir problemas activos**.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (atributo)
 
-Al elegir **suprimir** en el menú contextual o de clic con el botón derecho de una advertencia de análisis de código en el **lista de errores**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se agrega un atributo en el código o en el archivo de supresión global del proyecto.
+Al seleccionar **suprimir** en el menú contextual o hacer clic con el botón derecho (o seleccionar y mantener) de una advertencia de análisis de código en el **lista de errores**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> se agrega un atributo en el código o en el archivo de supresión global del proyecto.
 
 El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo tiene el formato siguiente:
 

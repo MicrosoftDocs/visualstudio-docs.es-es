@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 06344d536f0bb6db5f13329ece2c5202205bcefb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280718"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800494"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depuración de una máquina virtual o un servicio en la nube de Azure en Visual Studio
 
@@ -29,7 +29,7 @@ El emulador simula el servicio Azure Compute y se ejecuta en el entorno local pa
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>Para depurar el servicio en la nube en el equipo local
 
-1. En la barra de menús, elija **Depurar**, **Iniciar depuración** para ejecutar el proyecto de servicio en la nube de Azure. Como alternativa, puede presionar F5. Verá un mensaje que indica que el emulador de proceso se está iniciando. Cuando se inicia el emulador, el icono de bandeja del sistema lo confirma.
+1. En la barra de menús, seleccione **depurar**  >  **iniciar depuración** para ejecutar el proyecto de servicio en la nube de Azure. Como alternativa, puede presionar F5. Verá un mensaje que indica que el emulador de proceso se está iniciando. Cuando se inicia el emulador, el icono de bandeja del sistema lo confirma.
 
     ![Emulador de Azure en la bandeja del sistema](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -37,7 +37,7 @@ El emulador simula el servicio Azure Compute y se ejecuta en el entorno local pa
 
     El panel izquierdo de la interfaz de usuario muestra los servicios implementados actualmente en el emulador de proceso y las instancias de rol que cada servicio ejecuta. Puede elegir el servicio o los roles para mostrar información sobre el ciclo de vida, el registro y el diagnóstico en el panel derecho. Si coloca el foco en el margen superior de una ventana incluida, se expande para rellenar el recuadro derecho.
 
-3. Recorra la aplicación: seleccione los comandos del menú **Depurar** y establezca puntos de interrupción en el código. A medida que recorre la aplicación en el depurador, los paneles se actualizan con el estado actual de la aplicación. Cuando se detiene la depuración, se elimina la implementación de aplicaciones. Si la aplicación incluye un rol web y ha establecido la propiedad acción de inicio para iniciar el explorador web, Visual Studio inicia la aplicación web en el explorador. Si cambia el número de instancias de un rol en la configuración del servicio, debe detener el servicio en la nube y, luego, reinicie la depuración para que pueda depurar estas nuevas instancias del rol.
+3. Para recorrer la aplicación, elija comandos en el menú **depurar** y establezca puntos de interrupción en el código. A medida que recorre la aplicación en el depurador, los paneles se actualizan con el estado actual de la aplicación. Cuando se detiene la depuración, se elimina la implementación de aplicaciones. Si la aplicación incluye un rol web y ha establecido la propiedad acción de inicio para iniciar el explorador web, Visual Studio inicia la aplicación web en el explorador. Si cambia el número de instancias de un rol en la configuración del servicio, debe detener el servicio en la nube y, luego, reinicie la depuración para que pueda depurar estas nuevas instancias del rol.
 
     > [!NOTE]
     > cuando se deja de ejecutar o depurar el servicio, el emulador de proceso y el emulador de almacenamiento locales no se detienen. Debe detenerlos explícitamente en el área de notificación.
@@ -79,7 +79,7 @@ Si habilita la depuración remota para un servicio en la nube, este no mostrará
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Para identificar los procesos a los que se ha adjuntado el depurador, abra el cuadro de diálogo Procesos. Para ello, en la barra de menús, seleccione Depurar, Windows, Procesos. (Teclado: Ctrl + Alt + Z) Para desasociar un proceso específico, abra su menú contextual y, a continuación, seleccione **Desasociar proceso**. También puede localizar el nodo de la instancia en el Explorador de servidores, buscar el proceso, abrir su menú contextual y seleccione **Desasociar proceso**.
+4. Para identificar los procesos a los que está asociado el depurador, en la barra de menús, seleccione **depurar**  >  **Windows**  >  **procesos**de Windows y abra el cuadro de diálogo **procesos** . (Teclado: Ctrl + Alt + Z) Para desasociar un proceso específico, abra su menú contextual y, a continuación, seleccione **Desasociar proceso**. También puede localizar el nodo de la instancia en el Explorador de servidores, buscar el proceso, abrir su menú contextual y seleccione **Desasociar proceso**.
 
     ![Depurar procesos](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -120,7 +120,7 @@ Puede depurar programas que se ejecuten en máquinas virtuales de Azure usando e
 
 3. Cuando la extensión de depuración remota finalice la instalación, abra el menú contextual de la máquina virtual y seleccione **Asociar depurador...**
 
-    Azure obtiene una lista de los procesos presentes en la máquina virtual y los muestra en el cuadro de diálogo Asociar al proceso.
+    Azure obtiene una lista de los procesos en la máquina virtual y los muestra en el cuadro de diálogo **Asociar al proceso**.
 
     ![Comando Asociar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -128,7 +128,7 @@ Puede depurar programas que se ejecuten en máquinas virtuales de Azure usando e
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Haga clic en los procesos que quiere depurar en la máquina virtual y después seleccione **Asociar**. Por ejemplo, puede seleccionar el proceso w3wp.exe si desea depurar una aplicación web en la máquina virtual. Consulte [Depuración de uno o varios procesos en Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) y [Arquitectura de roles de Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) para más información.
+5. Elija los procesos que desea depurar en la máquina virtual y, a continuación, seleccione **adjuntar**. Por ejemplo, puede seleccionar el proceso w3wp.exe si desea depurar una aplicación web en la máquina virtual. Consulte [Depuración de uno o varios procesos en Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) y [Arquitectura de roles de Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) para más información.
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Creación de un proyecto web y una máquina virtual para la depuración
 
@@ -140,7 +140,7 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
 1. En Visual Studio, cree una nueva aplicación web ASP.NET.
 
-2. En el cuadro de diálogo Nuevo proyecto ASP.NET, en la sección Azure, elija **Máquina virtual** del cuadro de lista desplegable. Deje la casilla **Crear recursos remotos** activada. Seleccione **Aceptar** para continuar.
+2. En el cuadro de diálogo nuevo proyecto de ASP.NET, en la sección Azure, seleccione **máquina virtual** en el cuadro de lista desplegable. Deje la casilla **Crear recursos remotos** activada. Seleccione **Aceptar** para continuar.
 
     Aparece el cuadro de diálogo **Crear máquina virtual en Azure**.
 
@@ -149,13 +149,13 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
     > [!NOTE]
     > se le pedirá que inicie sesión en la cuenta de Azure si todavía no lo ha hecho.
 
-3. Seleccione los distintos valores de configuración de la máquina virtual y después seleccione **Aceptar**. Consulte [Máquinas virtuales](/azure/virtual-machines/) para obtener más información.
+3. Elija las distintas configuraciones de la máquina virtual y, a continuación, seleccione **Aceptar**. Consulte [Máquinas virtuales](/azure/virtual-machines/) para obtener más información.
 
     El nombre que escriba como nombre DNS será el nombre de la máquina virtual.
 
     ![Cuadro de diálogo Crear máquina virtual en Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure crea la máquina virtual y, a continuación, aprovisiona y configura los extremos, como Escritorio remoto y Web Deploy.
+    Azure crea la máquina virtual y, a continuación, aprovisiona y configura los puntos de conexión, como Escritorio remoto y Web Deploy.
 
 4. Cuando la máquina virtual esté completamente configurada, seleccione el nodo de la máquina virtual en el Explorador de servidores.
 
@@ -175,7 +175,7 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
 8. Después de publicar el proyecto, en el menú contextual de la máquina virtual en el Explorador de servidores, seleccione **Asociar depurador...**
 
-    Azure obtiene una lista de los procesos presentes en la máquina virtual y los muestra en el cuadro de diálogo Asociar al proceso.
+    Azure obtiene una lista de los procesos en la máquina virtual y los muestra en el cuadro de diálogo **Asociar al proceso**.
 
     ![Comando Asociar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
@@ -183,7 +183,7 @@ Los proyectos ASP.NET de Visual Studio ofrecen una opción para crear una práct
 
     ![Seleccionar el cuadro de diálogo de tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Haga clic en los procesos que quiere depurar en la máquina virtual y después seleccione **Asociar**. Por ejemplo, puede seleccionar el proceso w3wp.exe si desea depurar una aplicación web en la máquina virtual. Consulte [Depuración de uno o varios procesos en Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) para obtener más información.
+10. Elija los procesos que desea depurar en la máquina virtual y, a continuación, seleccione **adjuntar**. Por ejemplo, puede seleccionar el proceso w3wp.exe si desea depurar una aplicación web en la máquina virtual. Consulte [Depuración de uno o varios procesos en Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) para obtener más información.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

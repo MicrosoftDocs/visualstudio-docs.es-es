@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918627"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801508"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Prácticas recomendadas de desarrollo para complementos COM, VSTO y VBA en Office
   Si va a desarrollar complementos COM, VSTO o VBA para Office, siga las prácticas recomendadas de desarrollo descritas en este artículo.   Esto le ayudará a garantizar:
@@ -57,7 +57,7 @@ Si la solución está formada por un complemento y un proceso externo a Office, 
 Establezca el número de versión de los archivos binarios de la solución y péguelo en cada actualización. Esto facilitará a los usuarios la identificación de los cambios entre las versiones y la evaluación de la compatibilidad.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Proporcionar instrucciones de soporte técnico para las versiones más recientes de Office
-Los clientes están pidiendo a los ISV que proporcionen instrucciones de soporte técnico para los complementos COM, VSTO y VBA que se ejecutan en Office. La lista de las instrucciones de soporte explícito ayuda a los clientes que usan las herramientas de preparación de Office 365 ProPlus a comprender su soporte técnico.
+Los clientes están pidiendo a los ISV que proporcionen instrucciones de soporte técnico para los complementos COM, VSTO y VBA que se ejecutan en Office. La lista de las instrucciones de soporte explícito ayuda a los clientes que usan Microsoft 365 aplicaciones para herramientas de preparación empresarial a comprender su soporte técnico.
 
 Para proporcionar instrucciones de soporte técnico para las aplicaciones cliente de Office (por ejemplo, Word o Excel), compruebe primero que los complementos se ejecutan en la versión actual de Office y, a continuación, confirme para proporcionar actualizaciones si el complemento se interrumpe en una versión futura. No es necesario probar los complementos cuando Microsoft publica una nueva compilación o una actualización de Office. Microsoft no suele cambiar la plataforma de extensibilidad COM, VSTO y VBA en Office, y estos cambios se documentan bien.
 

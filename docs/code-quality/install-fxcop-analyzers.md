@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286658"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800975"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
 
@@ -22,13 +22,13 @@ Microsoft creó un conjunto de analizadores, denominado [Microsoft. CodeAnalysis
 
 Puede instalar estos analizadores FxCop como un paquete NuGet o como una extensión VSIX en Visual Studio. Para obtener información sobre las ventajas y desventajas de cada uno, vea [paquete NuGet frente a extensión VSIX](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension).
 
-## <a name="nuget-package"></a>Detección de
+## <a name="nuget-package"></a>Paquete de NuGet
 
 ::: moniker range=">=vs-2019"
 
 En la versión 16,3 de Visual Studio 2019 y versiones posteriores, puede instalar el paquete NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) directamente desde la página Propiedades de análisis de código del proyecto:
 
-1. Haga clic con el botón secundario en el nodo del proyecto en **Explorador de soluciones**, seleccione **propiedades**y, a continuación, seleccione la pestaña **análisis de código** .
+1. Haga clic con el botón derecho (o seleccione y mantenga presionado) en el nodo del proyecto en **Explorador de soluciones**, seleccione **propiedades**y, a continuación, vaya a la pestaña **análisis de código** .
 
    ![Instalar el paquete de analizadores de FxCop desde la página Propiedades de Visual Studio](media/install-fxcop-properties-page.png)
 

@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a131b7d69eec61f9b9106f7a4274b3882c51f0ff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706586"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800741"
 ---
 # <a name="configure-net-code-quality-analyzers"></a>Configurar analizadores de calidad de código de .NET
 
 Para determinados analizadores de calidad de código de .NET (aquellos cuyos identificadores de regla comienzan con `CA` ), puede refinar qué partes del código base deben aplicarse a través de [las opciones configurables](fxcop-analyzer-options.md). Cada opción se especifica agregando un par clave-valor a un archivo [EditorConfig](https://editorconfig.org) . Un archivo de configuración puede ser específico de un archivo, proyecto, solución o todo el repositorio.
 
 > [!TIP]
-> Agregue un archivo. editorconfig al proyecto; para ello, haga clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccione **Agregar**  >  **nuevo elemento**. En la ventana **Agregar nuevo elemento** , escriba **editorconfig** en el cuadro de búsqueda. Seleccione la plantilla **archivo editorconfig (valor predeterminado)** y elija **Agregar**.
+> Agregue un archivo. editorconfig al proyecto haciendo clic con el botón derecho en el proyecto en **Explorador de soluciones** y seleccionando **Agregar**  >  **nuevo elemento**. En la ventana **Agregar nuevo elemento** , escriba **editorconfig** en el cuadro de búsqueda. Seleccione la plantilla **archivo editorconfig (valor predeterminado)** y elija **Agregar**.
 >
 > ![Agregar archivo editorconfig al proyecto en Visual Studio](media/add-editorconfig-file.png)
 

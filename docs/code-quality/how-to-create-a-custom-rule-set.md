@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371916"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801040"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -26,9 +26,9 @@ Puede crear un conjunto de reglas personalizado para satisfacer las necesidades 
 
 Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas, y puede cambiar la acción que se produce cuando se infringe una regla; &mdash; por ejemplo, mostrar una advertencia o un error.
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
+1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
 
-2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
+2. En las páginas de **propiedades** , vaya a la pestaña **análisis de código** .
 
 ::: moniker range="vs-2017"
 
@@ -42,9 +42,9 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 ::: moniker-end
 
-   - Seleccione el conjunto de reglas que desee personalizar.
+   - Elija el conjunto de reglas que desea personalizar.
 
-     \- o -
+     \- O bien
 
    - Seleccione esta **\<Browse>** configuración para especificar un conjunto de reglas existente que no esté en la lista.
 
@@ -57,7 +57,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o presione **Ctrl** + **N**.
+1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o seleccione **Ctrl** + **N**.
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
@@ -70,9 +70,9 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 > [!NOTE]
 > El procedimiento siguiente no se aplica a los proyectos de .NET Core, que no tienen una pestaña de propiedades de **análisis de código** .
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
+1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
 
-2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
+2. En las páginas de **propiedades** , vaya a la pestaña **análisis de código** .
 
 ::: moniker range="vs-2017"
 
@@ -86,7 +86,7 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 
 ::: moniker-end
 
-4. En el cuadro de diálogo **Agregar o quitar conjuntos de reglas** , seleccione los conjuntos de reglas que desea incluir en el nuevo conjunto de reglas.
+4. En el cuadro de diálogo **Agregar o quitar conjuntos de reglas** , elija los conjuntos de reglas que desea incluir en el nuevo conjunto de reglas.
 
    ![Cuadro de diálogo Agregar o quitar conjuntos de reglas](media/add-remove-rule-sets.png)
 
@@ -145,7 +145,7 @@ Ahora que tiene un conjunto de reglas, el siguiente paso es personalizar las reg
 > [!div class="nextstepaction"]
 > [Modificar reglas en el editor de conjuntos de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371890"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801027"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de código binario para código administrado
 
@@ -21,9 +21,9 @@ Puede configurar el análisis de código heredado (análisis binario) para que s
 
 Para habilitar o deshabilitar el análisis de código heredado:
 
-1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y elija **propiedades**.
+1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
 
-2. En el cuadro de diálogo Propiedades del proyecto, elija la pestaña **análisis de código** .
+2. En el cuadro de diálogo Propiedades del proyecto, vaya a la pestaña **análisis de código** .
 
 3. Especifique el tipo de compilación en la **configuración** y la plataforma de destino en **plataforma**. (Solo para proyectos de Non-.NET Core/.net Standard).
 
