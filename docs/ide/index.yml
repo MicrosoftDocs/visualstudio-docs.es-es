@@ -11,12 +11,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: fe306d007c836ce6ac2e87361d0a6592197cf7cc
+  ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74316420"
+  ms.lasthandoff: 08/21/2020
+  ms.locfileid: "88711747"
 landingContent:
 - title: Introducción
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
       url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
   - linkListType: get-started
     links:
-    - text: Instalación de Visual Studio
+    - text: Instalar Visual Studio
       url: ../install/install-visual-studio.md
   - linkListType: overview
     links:
@@ -38,7 +38,7 @@ landingContent:
     links:
     - text: Usar el editor de código
       url: ../get-started/tutorial-editor.md
-    - text: Compilación y creación
+    - text: Compilar y generar
       url: ../ide/compiling-and-building-in-visual-studio.md
     - text: Depurar código
       url: ../debugger/debugger-feature-tour.md
@@ -78,3 +78,5 @@ landingContent:
       url: ../ide/whats-new-visual-studio-2019.md
     - text: Novedades de Visual Studio 2017
       url: ../ide/whats-new-visual-studio-2017.md
+    - text: Novedades de la documentación de Visual Studio
+      url: ../ide/whats-new-visual-studio-docs.md
