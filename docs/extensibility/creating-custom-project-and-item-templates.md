@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248571"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801261"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creación de plantillas de proyecto y de elemento personalizadas
 
@@ -72,7 +72,7 @@ Para los escenarios de creación de plantillas básicas, debe usar el asistente 
 
 1. Crear un proyecto de VSIX. Para obtener más información, consulte [Plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
 
-2. Establezca el proyecto VSIX como proyecto de inicio. En el **Explorador de soluciones**, seleccione el nodo del proyecto VSIX, seleccione y mantenga presionado (o haga clic con el botón derecho) y seleccione **Establecer como proyecto de inicio**.
+2. Establezca el proyecto VSIX como proyecto de inicio. En el **Explorador de soluciones**, seleccione el nodo del proyecto VSIX, haga clic con el botón derecho y, después, seleccione **Establecer como proyecto de inicio**.
 
 3. Establezca el proyecto de plantilla de proyecto como un recurso del proyecto VSIX. Abra el archivo *.vsixmanifest*. Cambie a la pestaña **Recursos** y haga clic en **Nuevo**.
 
