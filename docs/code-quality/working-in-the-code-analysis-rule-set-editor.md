@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801547"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893312"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjuntos de reglas de análisis de código
 
@@ -38,7 +38,7 @@ El editor muestra las reglas en una estructura de árbol que agrupa las reglas p
    > [!TIP]
    > Puede cambiar la forma en que se agrupan las reglas en la lista desplegable **Agrupar por** .
 
-- En el campo **acción** de un grupo, especifique la acción que se aplicará a todas las reglas del grupo.
+- Haga clic en el campo **acción** de un grupo y especifique la acción que se aplicará a todas las reglas del grupo.
 
 - Active o desactive la casilla de una regla individual. Al activar la casilla de una regla, la regla se establece en la acción **ADVERTENCIA** .
 
@@ -71,7 +71,7 @@ En la tabla siguiente se describen los campos de un conjunto de reglas:
 |-----------|-----------------|
 |**Id**|El identificador de la regla.|
 |**Categoría**|Además de su pertenencia en conjuntos de reglas, las reglas de análisis de código también se agrupan por categoría. Para obtener más información, vea [advertencias de análisis de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Name**: nombre|Título de la regla.|
+|**Nombre**|Título de la regla.|
 |**Espacio de nombres**|Espacio de nombres de la regla.|
 |**Tipo de destino**|Indica si la regla es para el código nativo, administrado o de base de datos.|
 |**Acción**|Acción que se realiza cuando se infringe la regla en una ejecución de análisis de código. Puede editar el campo de **acción** .|

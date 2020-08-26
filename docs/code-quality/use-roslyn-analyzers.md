@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801612"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893429"
 ---
 # <a name="use-code-analyzers"></a>Usar analizadores de código
 
@@ -28,11 +28,11 @@ Puede realizar gran parte de la personalización de diagnósticos de analizador 
 
 ![Nodo analizadores en Explorador de soluciones](media/analyzers-expanded-in-solution-explorer.png)
 
-Puede ver las propiedades de un diagnóstico, incluida su descripción y gravedad predeterminada, en la ventana **propiedades** . Para ver las propiedades, haga clic con el botón derecho (o seleccione y mantenga presionado) en la regla y seleccione **propiedades**, o seleccione la regla y, a continuación, seleccione **Alt** + **entrar**.
+Puede ver las propiedades de un diagnóstico, incluida su descripción y gravedad predeterminada, en la ventana **propiedades** . Para ver las propiedades, haga clic con el botón secundario en la regla y seleccione **propiedades**, o seleccione la regla y, a continuación, presione **Alt** + **entrar**.
 
 ![Propiedades de diagnóstico en ventana Propiedades](media/analyzer-diagnostic-properties.png)
 
-Para ver la documentación en línea de un diagnóstico, haga clic con el botón derecho (o seleccione y mantenga presionado) en el diagnóstico y seleccione **Ver ayuda**.
+Para ver la documentación en línea de un diagnóstico, haga clic con el botón derecho en el diagnóstico y seleccione **Ver ayuda**.
 
 Los iconos situados junto a cada diagnóstico en **Explorador de soluciones** corresponden a los iconos que aparecen en el conjunto de reglas cuando se abre en el editor:
 
@@ -66,7 +66,7 @@ En la tabla siguiente se muestran las diferentes opciones de gravedad:
 | Advertencia | `warning` | Las infracciones aparecen como *advertencias* en el lista de errores y en la salida de la compilación de línea de comandos, pero no provocan errores en las compilaciones. | El código infractor se subraya con un subrayado ondulado de color verde y se marca con un pequeño cuadro verde en la barra de desplazamiento. |
 | Información | `suggestion` | Las infracciones aparecen como *mensajes* en el lista de errores y no en todos los resultados de la compilación de línea de comandos. | El código infractor se subraya con un subrayado ondulado de color gris y se marca con un pequeño cuadro gris en la barra de desplazamiento. |
 | Hidden | `silent` | No es visible para el usuario. | No es visible para el usuario. Sin embargo, el diagnóstico se envía al motor de diagnóstico del IDE. |
-| None | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
+| Ninguno | `none` | Se han suprimido por completo. | Se han suprimido por completo. |
 | Valor predeterminado | `default` | Corresponde a la gravedad predeterminada de la regla. Para determinar cuál es el valor predeterminado de una regla, mire en el ventana Propiedades. | Corresponde a la gravedad predeterminada de la regla. |
 
 La siguiente captura de pantalla del editor de código muestra tres infracciones diferentes con diferentes niveles de gravedad. Observe el color de la línea ondulada y el cuadrado pequeño coloreado en la barra de desplazamiento de la derecha.
@@ -225,7 +225,7 @@ Visual Studio proporciona una manera cómoda de configurar la gravedad de una re
 
 Visual Studio también proporciona una forma cómoda de configurar la gravedad de una regla en el menú contextual de la lista de errores.
 
-1. Después de producirse una infracción, haga clic con el botón derecho (o seleccione y mantenga presionado) la entrada de diagnóstico en la lista de errores.
+1. Después de producirse una infracción, haga clic con el botón derecho en la entrada de diagnóstico en la lista de errores.
 
 2. En el menú contextual, seleccione **establecer gravedad**.
 
@@ -242,12 +242,12 @@ Visual Studio también proporciona una forma cómoda de configurar la gravedad d
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Establecer la gravedad de la regla desde Explorador de soluciones
 
-1. En explorador de soluciones, seleccione **References**  >  **analizadores** de referencias (o **Dependencies**  >  **analizadores** de dependencias para proyectos de .net Core).
+1. En explorador de soluciones, expanda los analizadores de **referencias**  >  **Analyzers** (o los **Dependencies**  >  **analizadores** de dependencias para proyectos de .net Core).
 
 2. Expanda el ensamblado que contiene la regla para la que desea establecer la gravedad.
 
 ::: moniker range=">=vs-2019"
-3. Haga clic con el botón derecho (o seleccione y mantenga presionado) la regla y seleccione **establecer gravedad**. En el menú contextual, elija una de las opciones de gravedad.
+3. Haga clic con el botón secundario en la regla y seleccione **establecer gravedad**. En el menú contextual, elija una de las opciones de gravedad.
 
    Visual Studio agrega una entrada al archivo EditorConfig para configurar la regla en el nivel solicitado. Si el proyecto usa un archivo ruleset en lugar de un archivo EditorConfig, se agrega la entrada Severity al archivo ruleset.
 
@@ -256,7 +256,7 @@ Visual Studio también proporciona una forma cómoda de configurar la gravedad d
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Haga clic con el botón derecho (o seleccione y mantenga presionado) la regla y seleccione **establecer gravedad del conjunto de reglas**. En el menú contextual, elija una de las opciones de gravedad.
+3. Haga clic con el botón secundario en la regla y seleccione **establecer gravedad del conjunto de reglas**. En el menú contextual, elija una de las opciones de gravedad.
 
    La gravedad de la regla se guarda en el archivo de conjunto de reglas activo.
 ::: moniker-end
@@ -267,7 +267,7 @@ Visual Studio también proporciona una forma cómoda de configurar la gravedad d
 
 1. Abra el archivo del conjunto de reglas activo de una de las siguientes maneras:
 
-- En **Explorador de soluciones**, haga doble clic en el archivo, haga clic con el botón derecho en **References**(o seleccione y mantenga presionado) el  >  nodo**analizadores** de referencias y seleccione **abrir conjunto de reglas activo**.
+- En **Explorador de soluciones**, haga doble clic en el archivo, haga clic con el botón secundario en el nodo **referencias**  >  **analizadores** y seleccione **abrir conjunto de reglas activo**.
 - En la página de propiedades **análisis de código** del proyecto, seleccione **abrir** .
 
   Si es la primera vez que está editando el conjunto de reglas, Visual Studio realiza una copia del archivo de conjunto de reglas predeterminado, le asigna el nombre * \<projectname> . ruleset*y lo agrega al proyecto. Este conjunto de reglas personalizado también se convierte en el conjunto de reglas activo para el proyecto.
@@ -336,13 +336,13 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 - Desde el **Editor de código**
 
-  Coloque el cursor en la línea de código con la infracción y seleccione **Ctrl** + **period (.)** para abrir el menú **acciones rápidas** . Seleccione **suprimir CAXXXX**  >  **en origen/en archivo de supresión**.
+  Coloque el cursor en la línea de código con la infracción y presione **Ctrl** + **(.)** para abrir el menú **acciones rápidas** . Seleccione **suprimir CAXXXX**  >  **en origen/en archivo de supresión**.
 
   ![Suprimir diagnóstico del menú acciones rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Desde el **lista de errores**
 
-  Elija las reglas que desea suprimir y, a continuación, haga clic con el botón derecho (o seleccione y mantenga presionado) y seleccione **suprimir**  >  **en origen/en archivo de supresión**.
+  Seleccione las reglas que desea suprimir y, a continuación, haga clic con el botón derecho y seleccione **suprimir**  >  **en origen/en archivo de supresión**.
 
   - Si se suprime **en origen**, se abre el cuadro de diálogo **vista previa de los cambios** y se muestra una vista previa de la [Advertencia de #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) de C# o Visual Basic #Disable Directiva de [ADVERTENCIA](/dotnet/visual-basic/language-reference/directives/directives) que se agrega al código fuente.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801040"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893273"
 ---
 # <a name="customize-a-rule-set"></a>Personalización de un conjunto de reglas
 
@@ -26,9 +26,9 @@ Puede crear un conjunto de reglas personalizado para satisfacer las necesidades 
 
 Para crear un conjunto de reglas personalizado, puede abrir un conjunto de reglas integrado en el **Editor de conjuntos de reglas**. Desde allí, puede Agregar o quitar reglas específicas, y puede cambiar la acción que se produce cuando se infringe una regla; &mdash; por ejemplo, mostrar una advertencia o un error.
 
-1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
-2. En las páginas de **propiedades** , vaya a la pestaña **análisis de código** .
+2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
 ::: moniker range="vs-2017"
 
@@ -44,7 +44,7 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
    - Elija el conjunto de reglas que desea personalizar.
 
-     \- O bien
+     \- o -
 
    - Seleccione esta **\<Browse>** configuración para especificar un conjunto de reglas existente que no esté en la lista.
 
@@ -57,11 +57,11 @@ Para crear un conjunto de reglas personalizado, puede abrir un conjunto de regla
 
 Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo **nuevo archivo** :
 
-1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o seleccione **Ctrl** + **N**.
+1. Seleccione **archivo**  >  **nuevo**  >  **archivo**o presione **Ctrl** + **N**.
 
 2. En el cuadro de diálogo **nuevo archivo** , seleccione la categoría **General** de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. seleccione **Open**(Abrir).
+3. Selecciona **Open** (Abrir).
 
    El nuevo archivo *. ruleset* se abre en el editor de conjuntos de reglas.
 
@@ -70,9 +70,9 @@ Puede crear un nuevo archivo de conjunto de reglas desde el cuadro de diálogo *
 > [!NOTE]
 > El procedimiento siguiente no se aplica a los proyectos de .NET Core, que no tienen una pestaña de propiedades de **análisis de código** .
 
-1. En **Explorador de soluciones**, seleccione y mantenga presionado (o haga clic con el botón derecho) en el proyecto y, a continuación, seleccione **propiedades**.
+1. En **Explorador de soluciones**, haga clic con el botón secundario en el proyecto y seleccione **propiedades**.
 
-2. En las páginas de **propiedades** , vaya a la pestaña **análisis de código** .
+2. En las páginas de **propiedades** , seleccione la pestaña **análisis de código** .
 
 ::: moniker range="vs-2017"
 
