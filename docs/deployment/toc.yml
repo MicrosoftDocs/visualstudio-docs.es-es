@@ -2,12 +2,12 @@
   href: index.yml
 - name: Información general
   items:
-    - name: Información general sobre la implementación
+    - name: Primer vistazo a la implementación
+      href: deploying-applications-services-and-components.md
+    - name: 'Implementación en una carpeta, IIS o Azure'
       href: deploying-applications-services-and-components-resources.md
 - name: Guías de inicio rápido
   items:
-    - name: Primer vistazo a la implementación
-      href: deploying-applications-services-and-components.md
     - name: Implementación en Azure App Service
       href: quickstart-deploy-to-azure.md
     - name: Implementación en App Service para Linux
