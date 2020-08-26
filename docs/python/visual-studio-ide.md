@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b97655efac3fc42f5e5790e32c97de169e61a6b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520593"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801651"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenida al IDE de Visual Studio | Python
 
@@ -35,7 +35,7 @@ En esta imagen se muestra Visual Studio con un proyecto de Python abierto y vari
 
 - La [ventana del editor](../ide/writing-code-in-the-code-and-text-editor.md) (centro), donde es probable que pase la mayor parte del tiempo, muestra el contenido del archivo. Aquí es donde se [edita código de Python](editing-python-code-in-visual-studio.md), se navega por la estructura del código y se establecen puntos de interrupción durante las sesiones de depuración. Con Python, también puede seleccionar código y presionar Ctrl+ENTRAR para ejecutar ese código en una [ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md).
 
-- La [ventana Resultados](../ide/reference/output-window.md) (parte inferior central) es donde Visual Studio envía notificaciones, como mensajes de error y de depuración, advertencias, mensajes de estado de publicación, etc. Cada código fuente de mensaje tiene su propia pestaña.
+- La [ventana Resultados](../ide/reference/output-window.md) (parte inferior central) es donde Visual Studio envía notificaciones, como mensajes de error y de depuración, advertencias, mensajes de estado de publicación, etc. Cada fuente del mensaje tiene su propia pestaña.
   - Una [ventana de REPL interactiva de Python](python-interactive-repl-in-visual-studio.md) aparece en la misma área que la ventana Resultados.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (parte inferior derecha) permite realizar el seguimiento de los elementos de trabajo y compartir código con otros usuarios mediante tecnologías de control de versiones como [Git](https://git-scm.com/) y [Control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
@@ -62,7 +62,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 
    ![Refactorización en Visual Studio](media/tour-ide-refactor-extract-method.png)
 
-- [Detección de errores](refactoring-python-code.md)
+- [Búsqueda de errores](refactoring-python-code.md)
 
    La detección de errores comprueba si hay errores y problemas comunes en el código de Python, lo cual fomenta un uso adecuado de patrones de codificación de Python.
 
@@ -72,7 +72,7 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 
    Visual Studio puede parecer abrumador a veces con tantas propiedades, opciones y menús. El cuadro de búsqueda supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Al empezar a escribir el nombre de lo que está buscando, Visual Studio muestra resultados que llevan exactamente a donde necesita ir. Si necesita agregar funcionalidad a Visual Studio, por ejemplo, agregar compatibilidad con otro lenguaje de programación, el cuadro de búsqueda proporciona resultados que abren el Instalador de Visual Studio para instalar un componente individual o una carga de trabajo.
 
-   ![Cuadro de búsqueda de Visual Studio](media/tour-ide-quick-launch.png)
+   ![Cuadro de búsqueda de Visual Studio](media/tour-ide-quick-launch.png)
 
 - Subrayados ondulados y [Acciones rápidas](../ide/quick-actions.md)
 
@@ -95,8 +95,8 @@ Algunas de las características populares de Visual Studio que ayudan a ser más
 ::: moniker-end
 
 - [Colaboración mediante Visual Studio](/visualstudio/liveshare/)
-  
-    Visual Studio Live Share permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. 
+
+    Visual Studio Live Share permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile.
 
 - [Ventana de REPL interactiva](python-interactive-repl-in-visual-studio.md)
 

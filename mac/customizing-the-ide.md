@@ -1,17 +1,17 @@
 ---
 title: Personalización del IDE
 description: Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306684"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801781"
 ---
 # <a name="customizing-the-ide"></a>Personalización del IDE
 

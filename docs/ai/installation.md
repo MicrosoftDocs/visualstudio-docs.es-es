@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638571"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800208"
 ---
 # <a name="installation"></a>Instalación
 
@@ -34,10 +34,9 @@ Puede descargar las herramientas desde [Visual Studio Marketplace](https://marke
 2. En el cuadro de diálogo **Extensiones y actualizaciones**, seleccione **En línea** en el lado izquierdo.
 3. En el cuadro de búsqueda que se encuentra en la esquina superior derecha, escriba "tools for ai".
 4. En los resultados, seleccione **Visual Studio Tools for AI**.
-5. Haga clic en **Descargar**.
+5. Seleccione **Descargar**.
 
 ## <a name="prepare-your-local-machine"></a>Preparar el equipo local
-
 Antes de entrenar modelos de aprendizaje profundo en el equipo local, asegúrese de tener instalados los requisitos previos aplicables. Asimismo, debe confirmar que tiene la versión más reciente de los controladores y las bibliotecas de la GPU NVIDIA (si tiene una). Asegúrese también de que tiene instalado Python y las bibliotecas de Python, como NumPy y SciPy, y los marcos de aprendizaje profundo adecuados, como Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch y Chainer, que tenga previsto usar en el proyecto.
 
 > [!NOTE]
