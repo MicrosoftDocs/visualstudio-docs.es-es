@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Aprenda a encontrar y descargar títulos de software de Microsoft en suscripciones de Visual Studio
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248222"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801833"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Descarga de títulos de software en suscripciones de Visual Studio
 En función de la suscripción de Visual Studio con la que cuente, puede tener a su disposición una amplia variedad de títulos de software de Microsoft.  En este artículo se explica cómo buscar y descargar el software necesario para sacar el máximo partido de la suscripción. 
@@ -22,7 +22,7 @@ En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo v
 Si su suscripción proviene de su empresa o centro educativo, el administrador de la suscripción controla si tiene acceso a las descargas. Al deshabilitar el acceso a las descargas también se deshabilita el acceso a las claves de producto. Si no tiene acceso a las descargas y a las claves de producto y las necesita, [póngase en contacto con el administrador](contact-my-admin.md).
 
 > [!NOTE]
-> Tenemos constancia de un problema relacionado con la disponibilidad de claves de producto de Office 365.  Estamos investigando la causa y, una vez resuelto el problema, se actualizará este artículo. 
+> Tenemos constancia de un problema relacionado con la disponibilidad de claves de producto de Microsoft 365.  Estamos investigando la causa y, una vez resuelto el problema, se actualizará este artículo. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>¿Cómo se pueden encontrar descargas en el portal de suscriptor?
 Cuando visite la página [Descargas](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), verá las descargas populares organizadas en grupos por tipo de producto.  Puede seleccionar una de las descargas populares que aparecen o buscar un producto usando la barra de búsqueda en la parte superior de la página.

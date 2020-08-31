@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144706"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801625"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -71,7 +71,7 @@ Cree una ventana de trazado con el botón de la barra de herramientas o **Herram
 
 Además, los trazados son objetos independientes, lo que significa que puede copiar o moverlos entre ventanas de trazado con la opción de arrastrar y soltar del mouse o con los comandos **Copiar**, **Cortar** y **Pegar** en el contexto del botón derecho y con los menús **Editar**.
 
-El comportamiento predeterminado de arrastrar y soltar es copiar; para mover, arrastre y suelte mientras mantiene presionada la tecla **Mayús**.
+El comportamiento predeterminado de arrastrar y colocar es copiar; para mover, arrastre y coloque mientras presiona la tecla **Mayús**.
 
 ## <a name="plot-history"></a>Historial de trazados
 
@@ -82,7 +82,7 @@ El historial le proporciona una lista de miniaturas para los trazados que se han
 
 ![Ventana del historial de trazado](media/plotting-plot-history-window.png)
 
-Para abrir un trazado en su ventana asociada, haga doble clic en ese trazado, selecciónelo y, después, seleccione el botón de la barra de herramientas **Mostrar trazado**, o haga doble clic con el botón derecho y seleccione **Mostrar trazado**. También puede seleccionar un trazado individual y copiar, cortar o eliminar desde el menú contextual o desde los menús **Editar**.
+Para abrir un trazado en su ventana asociada, haga doble clic en ese trazado, selecciónelo y, después, seleccione el botón de la barra de herramientas **Mostrar trazado**. Como alternativa, puede hacer clic con el botón derecho en el trazado y seleccionar **Mostrar trazado**. También puede seleccionar un trazado individual y copiar, cortar o eliminar desde el menú contextual o desde el menú **Editar**.
 
 La duración de su historial de trazado en todas las ventanas está vinculado a la duración de su sesión de R interactiva. Si restablece la sesión de R, o sale y reinicia Visual Studio, su historial de trazados se restablece.
 

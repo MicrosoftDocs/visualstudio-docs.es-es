@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Obtenga información sobre la suscripción de Power BI Pro incluida en la suscripción de Visual Studio seleccionada.
-ms.openlocfilehash: dd16d8f28f78a7496ad3c93ab1db8eb51ebcf43b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902991"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801690"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -29,7 +29,7 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de Power BI Pro](_img/vs-pbi/vs-pbi-tile.png)
 
-3. Es posible que ya tenga una cuenta si ha activado otras ventajas de suscripción, como la suscripción a Office 365 Developer o Enterprise Mobility + Security.  Si se encuentra una cuenta existente, tendrá la opción de agregar la suscripción de Power BI Pro o registrarse para obtener una cuenta nueva.  Es muy recomendable agregarla a su cuenta para poder acceder a sus ventajas con un id. de usuario único.
+3. Es posible que ya tenga una cuenta si ha activado otras ventajas de suscripción, como la suscripción a Microsoft 365 Developer o Enterprise Mobility + Security.  Si se encuentra una cuenta existente, tendrá la opción de agregar la suscripción de Power BI Pro o registrarse para obtener una cuenta nueva.  Es muy recomendable agregarla a su cuenta para poder acceder a sus ventajas con un id. de usuario único.
    > [!div class="mx-imgBorder"]
    > ![Cuenta existente de la ventaja de Power BI Pro](_img/vs-pbi/vs-pbi-existing-account.png)
 
@@ -55,9 +55,9 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
     > [!div class="mx-imgBorder"]
     > ![Información de contacto de la ventaja de Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
-11. En la página siguiente se confirma que todo está listo para comenzar a usar Power BI Pro.  Esta página incluye un vínculo a la página de inicio de sesión.  Se recomienda registrar el vínculo a la página de inicio de sesión, así como el id. de usuario.  También recibirá un correo de bienvenida en la dirección proporcionada al configurar la cuenta.  Además, es posible que vea una ventana automatizada del asistente de Office 365, que puede utilizar si tiene alguna pregunta.  Haga clic en **Empecemos** para continuar.
+11. En la página siguiente se confirma que todo está listo para comenzar a usar Power BI Pro.  Esta página incluye un vínculo a la página de inicio de sesión.  Se recomienda registrar el vínculo a la página de inicio de sesión, así como el id. de usuario.  También recibirá un correo de bienvenida en la dirección proporcionada al configurar la cuenta.  Además, es posible que vea una ventana automatizada del asistente de Microsoft 365, que puede utilizar si tiene alguna pregunta.  Haga clic en **Empecemos** para continuar.
 
-12. Ahora que se ha configurado su cuenta de Power BI Pro, podrá ver el Centro de administración de Office 365, donde puede administrar usuarios y dominios, instalar el software de Office y obtener información sobre Office 365.  ¡Eso es todo!  Ya está a punto.
+12. Ahora que se ha configurado su cuenta de Power BI Pro, podrá ver el Centro de administración de Microsoft 365, donde puede administrar usuarios y dominios, instalar el software de Office y obtener información sobre Microsoft 365.  ¡Eso es todo!  Ya está a punto.
 
 ## <a name="eligibility"></a>Elegibilidad
 
@@ -91,7 +91,7 @@ R:  Sí, puede usarla en un entorno de producción, pero con dos advertencias im
 - Esta ventaja de Power BI Pro no se puede usar en inquilinos gubernamentales.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P:  Al intentar activar Power BI Pro, aparece el mensaje “Ya tiene una cuenta a través del trabajo”.  ¿Puedo seguir usando la ventaja?
-R:  Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquilinos de Office 365 activos en el que no es un administrador.  Para agregar Power BI Pro a un inquilino, debe ser administrador en dicho inquilino.  Para resolver este problema, siga estos pasos para crear a su propio inquilino.
+R:  Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquilinos de Microsoft 365 activos en el que no es un administrador.  Para agregar Power BI Pro a un inquilino, debe ser administrador en dicho inquilino.  Para resolver este problema, siga estos pasos para crear a su propio inquilino.
 1. Cuando aparezca el mensaje que le indica que ya tiene una cuenta a través del trabajo, haga clic en **Crear una cuenta nueva**.
 
 2. En la siguiente pantalla, indique su información de contacto y haga clic en **Siguiente**.

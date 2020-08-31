@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000514"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801183"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introducción a Herramientas de R para Visual Studio
 
@@ -137,7 +137,7 @@ Una de las principales ventajas de Visual Studio es su interfaz de usuario de de
 
 1. Para empezar, restablezca el área de trabajo actual para borrar todo lo que ha hecho hasta ahora mediante el comando de menú **Herramientas de R** > **Sesión** > **Restablecer**. De forma predeterminada, todo lo que se hace en la ventana R interactivo se acumula a la sesión actual, que luego además usa el depurador. Al restablecer la sesión se garantiza que la sesión de depuración se inicia sin datos preexistentes. Pero el comando **Restablecer** no afecta al archivo de origen *script.R*, ya que se ha administrado y guardado fuera del área de trabajo.
 
-1. Con el archivo *script.R* creado en la sección anterior, establezca un punto de interrupción en la línea que comienza con `pop <-` colocando el símbolo de inserción en esa línea y luego presionando **F9**, o bien seleccionando el comando de menú **Depurar** > **Alternar punto de interrupción**. De manera alternativa, simplemente haga clic en el margen izquierdo (o medianil) de esa línea donde aparece el punto de interrupción rojo:
+1. Con el archivo *script.R* creado en la sección anterior, establezca un punto de interrupción en la línea que comienza con `pop <-` colocando el símbolo de inserción en esa línea y luego presionando **F9**, o bien seleccionando el comando de menú **Depurar** > **Alternar punto de interrupción**. De manera alternativa, haga clic en el margen izquierdo (o medianil) de esa línea donde aparece el punto de interrupción rojo:
 
     ![Establecimiento de un punto de interrupción en el editor](media/getting-started-11-debug1.png)
 

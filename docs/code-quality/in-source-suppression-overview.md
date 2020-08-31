@@ -1,12 +1,12 @@
 ---
-title: Suprimir advertencias de análisis de código
-ms.date: 12/01/2018
+title: Suprimir infracciones de análisis de código
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893377"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091443"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
+# <a name="suppress-code-analysis-violations"></a>Suprimir infracciones de análisis de código
 
 A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica a los miembros del equipo que el código se ha revisado y que se puede suprimir la advertencia. La supresión en el código fuente (ISS) utiliza el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir una advertencia. El atributo se puede colocar cerca del segmento de código que generó la advertencia. Puede Agregar el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo al archivo de código fuente escribiéndolo en, o bien puede utilizar el menú contextual de una advertencia en el **lista de errores** para agregarlo automáticamente.
 

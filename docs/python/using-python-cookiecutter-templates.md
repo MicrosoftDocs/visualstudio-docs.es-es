@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535153"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801586"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) proporciona una interfaz gráfica de usuario para descubrir plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Se incluye con Visual Studio 2017 y versiones posteriores y puede instalarse por separado en versiones anteriores de Visual Studio.
 
-Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o posterior (32 o 64 bits). Si no se dispone de un intérprete de Python adecuado, Visual Studio mostrará una advertencia. Si instala un intérprete de Python mientras se está ejecutando Visual Studio, haga clic en el botón de **inicio** en la barra de herramientas de Cookiecutter para detectar el intérprete recién instalado. (Vea [Entornos de Python](managing-python-environments-in-visual-studio.md) para obtener más información sobre los entornos en general).
+Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o posterior (32 o 64 bits). Si no se dispone de un intérprete de Python adecuado, Visual Studio mostrará una advertencia. Si instala un intérprete de Python mientras se está ejecutando Visual Studio, seleccione el botón de **inicio** en la barra de herramientas de Cookiecutter para detectar el intérprete recién instalado. (Vea [Entornos de Python](managing-python-environments-in-visual-studio.md) para obtener más información sobre los entornos en general).
 
 Una vez instalado, seleccione **View** > **Cookiecutter Explorer** (Ver > Explorador de Cookiecutter) para abrir la ventana:
 
@@ -99,7 +99,7 @@ Se pueden realizar mejoras adicionales en esta representación mediante la espec
 | --- | --- |
 | Etiqueta | Especifica lo que aparece encima del editor para la variable, en lugar del nombre de la variable. |
 | Description | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
-| Resolución | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
+| Resolución | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al seleccionar el hipervínculo se abrirá el explorador predeterminado del usuario con esa dirección URL. |
 | Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, de forma predeterminada para las cadenas.</li><li>`list`: cuadro combinado estándar, de forma predeterminada para las listas.</li><li>`yesno`: cuadro combinado elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón **...** que hace que muestra cuadro de diálogo de conexión de base de datos.</li></ul> |
 
 Ejemplo:

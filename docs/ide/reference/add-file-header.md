@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374174"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801326"
 ---
 # <a name="add-file-header"></a>Agregar encabezado de archivo
 
@@ -34,12 +34,12 @@ Esta generación de código se aplica a:
 
 2. Agregue la regla siguiente al archivo EditorConfig: *file_header_template*.
 
-3. Establezca el valor de la regla para que sea igual al texto de encabezado que quiere aplicar.
+3. Establezca el valor de la regla para que sea igual al texto de encabezado que quiere aplicar. Puede usar `{fileName}` como un marcador de posición para el nombre de archivo.
 
     ![Regla de encabezado de archivo de EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> No puede tener multilíneas explícitas en un archivo EditorConfig, y deberá usar el carácter de nueva línea de Unix para insertar nuevas líneas.
+    > [!NOTE]
+    > No puede tener multilíneas explícitas en un archivo EditorConfig, y deberá usar el carácter de nueva línea de Unix para insertar nuevas líneas.
 
 4. Coloque el símbolo de intercalación en la primera línea de cualquier archivo de C# o de Visual Basic.
 

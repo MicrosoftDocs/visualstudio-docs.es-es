@@ -7,17 +7,17 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Más información e instalación de Aplicaciones de Microsoft 365 para empresas
-ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250742"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800819"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Aplicaciones de Microsoft 365 para empresas en suscripciones de Visual Studio
 Aplicaciones de Microsoft 365 para empresas (anteriormente, Office 365 Pro Plus) está disponible en suscripciones concretas de Visual Studio. 
 
-Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 Pro Plus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
+Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Aplicaciones de Microsoft 365 para empresas es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
 
 > [!NOTE]
 > Cuando se incluyen en la suscripción de Visual Studio, tiene licencia para usar Aplicaciones de Microsoft 365 para empresas en producción.  

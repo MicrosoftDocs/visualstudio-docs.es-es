@@ -1,16 +1,16 @@
 ---
-title: 'Tutorial: Creación de una aplicación de varios contenedores con Docker Compose'
+title: Aplicación de varios contenedor con Docker Compose
 description: Aprenda a administrar más de un contenedor y a comunicarse entre ellos en Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: b15ba0200520d8a04abc30b606b5b10215e3c22e
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 4dd8695ccf8f1fcf13b9b52387d28c68f8812aec
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425436"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800728"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Creación de una aplicación de varios contenedores con Docker Compose
 

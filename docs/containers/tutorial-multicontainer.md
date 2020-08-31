@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027327"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711669"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Creación de una aplicación de varios contenedores con Docker Compose
 
@@ -55,7 +55,7 @@ No seleccione **Habilitar compatibilidad con Docker**. Esta se agrega más adela
 
 ## <a name="create-a-web-api-project"></a>Creación de un proyecto de API web
 
-Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Seleccione **API** como tipo de proyecto y desactive la casilla de **Configure for HTTPS** (Configurar para HTTPS). En este diseño solo se usa SSL para la comunicación con el cliente, no para la comunicación entre contenedores de la misma aplicación web. Solo `WebFrontEnd` necesita HTTPS y en el código de los ejemplos se supone que ha desactivado esa casilla.
+Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Seleccione **API** como tipo de proyecto y desactive la casilla de **Configure for HTTPS** (Configurar para HTTPS). En este diseño solo se usa SSL para la comunicación con el cliente, no para la comunicación entre contenedores de la misma aplicación web. Solo `WebFrontEnd` necesita HTTPS y en el código de los ejemplos se supone que ha desactivado esa casilla. En general, los certificados de desarrollador de .NET que usa Visual Studio solo se admiten para las solicitudes externas a contenedores, no para las solicitudes de contenedor a contenedor.
 
 ::: moniker range="vs-2017"
    ![Captura de pantalla de la creación del proyecto de API web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -192,7 +192,7 @@ Agregue un proyecto a la misma solución y asígnele el nombre *MyWebAPI*. Selec
 
 Vea las opciones para implementar [contenedores en Azure](/azure/containers).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Herramientas de contenedor](/visualstudio/containers/)

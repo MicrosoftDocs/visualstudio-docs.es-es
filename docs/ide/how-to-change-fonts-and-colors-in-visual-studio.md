@@ -1,7 +1,9 @@
 ---
-title: Cambiar fuentes y colores
-ms.date: 06/01/2020
+title: Cambio de temas, fuentes, texto y contraste para mejorar la accesibilidad
+description: Aprenda a cambiar los temas de color, los colores de fuentes, los tamaños de texto y los colores de contraste adicional de Visual Studio para facilitar el uso y permitir una mejor accesibilidad.
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284699"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801443"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento para cambiar fuentes y colores en Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedimiento Cambio de fuentes, colores y temas en Visual Studio
 
-Puede cambiar las fuentes y los colores en Visual Studio de muchas maneras. Por ejemplo, puede cambiar el tema de color azul predeterminado al tema oscuro (también conocido como "modo oscuro"). Además, puede cambiar la fuente y el tamaño de texto predeterminados a una fuente y un tamaño diferentes.
+Puede cambiar las fuentes y los colores en Visual Studio de muchas maneras. Por ejemplo, puede cambiar el tema azul predeterminado a un tema oscuro (conocido también como "modo oscuro"). También puede seleccionar un tema de contraste adicional si es lo mejor para sus necesidades. También puede cambiar la fuente y el tamaño de texto predeterminados tanto en el IDE como en el editor de código.
 
 ## <a name="change-the-color-theme"></a>Cambio del tema de color
 
@@ -122,5 +124,6 @@ Para obtener más detalles sobre todos los elementos de la interfaz de usuario (
 
 ## <a name="see-also"></a>Vea también
 
-- [Cambiar las fuentes y los colores del editor de Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Características del editor de código de Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalización del IDE y el editor de Visual Studio](../ide/quickstart-personalize-the-ide.md)

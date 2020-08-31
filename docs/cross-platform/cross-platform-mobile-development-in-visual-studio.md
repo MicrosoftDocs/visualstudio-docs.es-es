@@ -10,16 +10,16 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0e0f589ae3c6daa48a9bea6d8a0b561d7b8de337
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78234987"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801599"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
-Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Studio.  Al diseñar la aplicación, use las herramientas de Visual Studio para agregar fácilmente servicios conectados, como Office 365, Azure App Service y Application Insights.
+Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Studio.  Al diseñar la aplicación, use las herramientas de Visual Studio para agregar fácilmente servicios conectados, como Microsoft 365, Azure App Service y Application Insights.
 
 Crear aplicaciones mediante C# y .NET Framework, HTML y JavaScript o C++. Comparta código, cadenas, imágenes y, en algunos casos, incluso la interfaz de usuario.
 
@@ -40,7 +40,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Obtener información acerca de las aplicaciones de Windows universales en Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Obtener información acerca de las similitudes entre Swift y C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-### <a name="AndroidHTML"></a> Tener como destino Android, iOS y Windows desde una sola base de código
+### <a name="target-android-ios-and-windows-from-a-single-code-base"></a><a name="AndroidHTML"></a> Tener como destino Android, iOS y Windows desde una sola base de código
 
  Puede compilar aplicaciones nativas para Android, iOS y Windows usando C# o F# (Visual Basic no se admite en este momento).  Para empezar, instale Visual Studio y seleccione la opción **Desarrollo para dispositivos móviles con .NET** en el programa de instalación.
 
@@ -56,7 +56,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  Según la complejidad del diseño de las aplicaciones, puede considerar la posibilidad de compilarlas usando plantillas *Xamarin.Forms* en el grupo **Aplicaciones móviles** de plantillas de proyecto. Xamarin.Forms es un kit de herramientas de interfaz de usuario que permite crear una única interfaz de usuario que puede compartir entre Android, iOS y Windows.  Al compilar una solución Xamarin.Forms, obtendrá una aplicación Android, una aplicación iOS y una aplicación Windows. Para obtener más detalles, vea [Más información sobre el desarrollo móvil con Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) y la [Documentación de Xamarin.Forms](/xamarin/xamarin-forms/).
 
-#### <a name="ShareHTML"></a> Compartir código entre aplicaciones de Android, iOS y Windows
+#### <a name="share-code-between-android-ios-and-windows-apps"></a><a name="ShareHTML"></a> Compartir código entre aplicaciones de Android, iOS y Windows
 
  Si no está usando Xamarin.Forms y opta por un diseño individual para cada plataforma, puede compartir la mayor parte del código que no sea de interfaz de usuario entre los proyectos de plataforma (Windows, iOS y Android). Esto incluye cualquier lógica de negocios, la integración en la nube, el acceso a bases de datos o cualquier otro código que tenga como destino .NET Framework. El único código que no se puede compartir es el código que tiene como destino una plataforma específica.
 
@@ -69,7 +69,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Sharing Code Options (Opciones de uso compartido de código)](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opciones de uso compartido de código con .NET](/dotnet/standard/cross-platform/) |
 
-### <a name="WindowsHTML"></a> Tener como destino dispositivos Windows 10
+### <a name="target-windows-10-devices"></a><a name="WindowsHTML"></a> Tener como destino dispositivos Windows 10
 
  ![Dispositivos Windows](../cross-platform/media/windowsdevices.png "Dispositivos Windows")
 
@@ -86,7 +86,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
 ::: moniker range="vs-2017"
 
-## <a name="HTML"></a> Compilar una aplicación para Android, iOS y Windows (HTML/JavaScript)
+## <a name="build-an-app-for-android-ios-and-windows-htmljavascript"></a><a name="HTML"></a> Compilar una aplicación para Android, iOS y Windows (HTML/JavaScript)
 
  ![Dispositivos Windows, iOS y Android](../cross-platform/media/homedevices.png "Dispositivos Windows, iOS y Android")
 
@@ -168,6 +168,6 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
 ## <a name="see-also"></a>Vea también
 
-- [Agregar las API de Office 365 a un proyecto de Visual Studio](/office/developer-program/office-365-developer-program)
+- [Incorporación de las API de Microsoft 365 a un proyecto de Visual Studio](/office/developer-program/office-365-developer-program)
 - [Azure App Services: aplicaciones móviles](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](/appcenter)

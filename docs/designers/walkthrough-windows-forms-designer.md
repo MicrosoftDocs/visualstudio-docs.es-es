@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816467"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801300"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: Introducción a Diseñador de Windows Forms
 
@@ -111,7 +111,7 @@ El control DemoCalculator contiene varios controles de Windows Forms. En este pr
 
 Ahora que se configuró el diseño del control, puede rellenar el control DemoCalculator con botones y una pantalla.
 
-1. En **Cuadro de herramientas**, haga doble clic en el icono del control `TextBox`.
+1. En **Cuadro de herramientas**, seleccione el icono de control `TextBox`.
 
    Un control `TextBox` se coloca en la primera celda del control `TableLayoutPanel`.
 
@@ -129,11 +129,11 @@ Ahora que se configuró el diseño del control, puede rellenar el control DemoCa
 
 6. Seleccione el control `TableLayoutPanel`.
 
-7. En **Cuadro de herramientas**, haga doble clic en el icono `Button`.
+7. En **Cuadro de herramientas**, seleccione el icono `Button`.
 
    Un control `Button` se coloca en la celda abierta siguiente del control `TableLayoutPanel`.
 
-8. En **Cuadro de herramientas**, haga doble clic en el icono `Button` cuatro veces más para rellenar la segunda fila del control `TableLayoutPanel`.
+8. En **Cuadro de herramientas**, seleccione el icono `Button` cuatro veces más para rellenar la segunda fila del control `TableLayoutPanel`.
 
 9. Para seleccionar los cinco controles `Button`, mantenga presionada la tecla **Mayús** y selecciónelos. Presione **Ctrl**+**C** para copiar los controles `Button` en el Portapapeles.
 
@@ -247,11 +247,11 @@ Esto completa el diseño del control DemoCalculator. Todo lo que queda es propor
 
 ## <a name="implement-event-handlers"></a>Implementación de controladores de eventos
 
-Los botones del control DemoCalculator tienen controladores de eventos que se pueden usar para implementar gran parte de la lógica de calculadora. El Diseñador de Windows Forms le permite implementar los códigos auxiliares de todos los controladores de eventos para todos los botones con un solo doble clic.
+Los botones del control DemoCalculator tienen controladores de eventos que se pueden usar para implementar gran parte de la lógica de calculadora. El Diseñador de Windows Forms le permite implementar los códigos auxiliares de todos los controladores de eventos para todos los botones con una selección.
 
 1. En la superficie del diseñador, seleccione todos los controles `Button` mientras mantiene presionada la tecla **Mayús**.
 
-2. Haga doble clic en uno de los controles `Button`.
+2. Seleccione uno de los controles `Button`.
 
    El Editor de código se abre en los controladores de eventos que genera el diseñador.
 
@@ -277,7 +277,7 @@ El primer paso es crear el proyecto de la aplicación. Usará este proyecto para
 
 2. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **DemoCalculatorTest** y, luego, seleccione **Agregar referencia** para abrir el cuadro de diálogo **Agregar referencia**.
 
-3. Seleccione la pestaña **Proyectos** y, luego, haga doble clic con el proyecto DemoCalculatorLib para agregar la referencia al proyecto de prueba.
+3. Vaya a la pestaña **Proyectos** y, luego, seleccione el proyecto DemoCalculatorLib para agregar la referencia al proyecto de prueba.
 
 4. En el **Explorador de soluciones**, haga clic con el botón derecho en **DemoCalculatorTest** y, luego, seleccione **Establecer como proyecto de inicio**.
 

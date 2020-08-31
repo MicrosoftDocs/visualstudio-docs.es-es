@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Descubra cómo puede usar Azure DevOps como un suscriptor de Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115318"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801079"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Ventajas de Azure DevOps para suscriptores de Visual Studio
 Como suscriptor activo de Visual Studio, puede usar una serie de características de Azure DevOps que se incluyen como ventaja en la suscripción. Podrá usar estas mismas características en cada organización de Azure DevOps de la que sea miembro (porque haya creado la organización usted mismo o porque otra persona le ha agregado).
@@ -23,7 +23,7 @@ Como suscriptor activo de Visual Studio, puede usar una serie de característica
    > ![Icono Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para activar la suscripción de Visual Studio o con su [identidad alternativa](vs-alternate-identity.md)), se reconocerá automáticamente.  De este modo, puede agregar también una cuenta profesional o educativa (que use para iniciar sesión en Visual Studio, en Office 365 o en la red de la empresa o del centro educativo), lo que le permitirá tener acceso a Azure DevOps tanto a través de su cuenta personal como de su cuenta profesional o educativa.
+Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para activar la suscripción de Visual Studio o con su [identidad alternativa](vs-alternate-identity.md)), se reconocerá automáticamente.  De este modo, puede agregar también una cuenta profesional o educativa (que use para iniciar sesión en Visual Studio, en Microsoft 365 o en la red de la empresa o del centro educativo), lo que le permitirá tener acceso a Azure DevOps tanto a través de su cuenta personal como de su cuenta profesional o educativa.
 
 [Registrarse para obtener una organización de Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 

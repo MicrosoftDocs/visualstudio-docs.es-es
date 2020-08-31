@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027604"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800234"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
-Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, puede agregarlas todas a Visual Studio para que pueda acceder a los recursos desde cualquier cuenta sin tener que iniciar sesión separadamente. Los servicios de Azure, Application Insights, Azure DevOps y Office 365 admiten todos la experiencia de inicio de sesión simplificada.
+Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, puede agregarlas todas a Visual Studio para que pueda acceder a los recursos desde cualquier cuenta sin tener que iniciar sesión separadamente. Los servicios de Azure, Application Insights, Azure DevOps y Microsoft 365 admiten todos la experiencia de inicio de sesión simplificada.
 
 Después de agregar varias cuentas en un equipo, el conjunto de cuentas lo acompañará si inicia sesión en Visual Studio desde otro equipo.
 
@@ -53,7 +53,7 @@ La próxima vez que abra el **Explorador de servidores**, se mostrarán los recu
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Obtener acceso a Azure Active Directory en un proyecto web
 
-Azure Active Directory (AAD) ofrece compatibilidad con el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios de API web. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar las cuentas de AAD que poseen para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio.
+Azure Active Directory (AAD) ofrece compatibilidad con el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios de API web. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar las cuentas de AAD que poseen para conectarse a sus aplicaciones web. Las aplicaciones de Microsoft 365 también pueden utilizar la autenticación de dominio.
 
 ::: moniker range="vs-2017"
 

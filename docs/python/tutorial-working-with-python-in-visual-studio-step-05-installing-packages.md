@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372946"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801664"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en el entorno de Python
 
@@ -31,11 +31,11 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
    ![Ventana Python Environments (Entornos de Python)](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > Otra manera de abrir la ventana Entornos de Python es hacer clic en la ventana Explorador de soluciones y usar el método abreviado de teclado Ctrl + K, Ctrl + '. Si el acceso directo no funciona y no encuentra la ventana Entornos de Python en el menú, es posible que no haya instalado la carga de trabajo de Python. Vea [Instalación de la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) para obtener instrucciones sobre cómo instalar Python.
+   > Otra manera de abrir la ventana Entornos de Python es seleccionar la ventana Explorador de soluciones y usar el método abreviado de teclado **Ctrl + K, Ctrl + '** . Si el acceso directo no funciona y no encuentra la ventana Entornos de Python en el menú, es posible que no haya instalado la carga de trabajo de Python. Vea [Instalación de la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) para obtener instrucciones sobre cómo instalar Python.
 
 2. La pestaña **Introducción** del entorno proporciona acceso rápido a una ventana **interactiva** para ese entorno junto con la carpeta de instalación y los intérpretes del entorno. Por ejemplo, al seleccionar **Abrir ventana interactiva** se muestra una ventana **interactiva** para ese entorno específico en Visual Studio.
 
-3. Ahora, cree un proyecto con **Archivo** > **Nuevo** > **Proyecto** y seleccione la plantilla **Aplicación Python**. En el archivo de código que aparece, pegue el código siguiente, que crea una onda de coseno como en los pasos del tutorial anteriores, pero esta vez trazada en un gráfico. Como alternativa, puede usar el proyecto que creó anteriormente y reemplazar el código. 
+3. Ahora, cree un proyecto con **Archivo** > **Nuevo** > **Proyecto** y seleccione la plantilla **Aplicación Python**. En el archivo de código que aparece, pegue el código siguiente, que crea una onda de coseno como en los pasos del tutorial anteriores, pero esta vez trazada en un gráfico. Como alternativa, puede usar el proyecto que creó anteriormente y reemplazar el código.
 
     ```python
     from math import radians
@@ -50,7 +50,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
     main()
     ```
 
-4. Con un proyecto de Python abierto, también puede abrir la ventana Entornos de Python desde Explorador de soluciones. Basta con hacer clic con el botón derecho en Entornos de Python y seleccionar **Ver todos los entornos de Python**.
+4. Con un proyecto de Python abierto, también puede abrir la ventana Entornos de Python desde Explorador de soluciones. Basta con hacer clic con el botón derecho en **Entornos de Python** y seleccionar **Ver todos los entornos de Python**.
 
    ![Entorno](media/environments/environments-view-all-2019.png)
 
@@ -60,7 +60,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
 ## <a name="install-packages-using-the-python-environments-window"></a>Instalación de paquetes con la ventana Entornos de Python
 
-1. En la ventana Entornos de Python, haga clic en el entorno predeterminado para los nuevos proyectos de Python y seleccione la pestaña **Paquetes**. Verá una lista de los paquetes que están instalados actualmente en el entorno.
+1. En la ventana Entornos de Python, seleccione el entorno predeterminado para los nuevos proyectos de Python y elija la pestaña **Paquetes**. Verá una lista de los paquetes que están instalados actualmente en el entorno.
 
    ![Paquetes instalados en un entorno](media/environments/environments-installed-packages-2019.png)
 
@@ -76,7 +76,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
    > [!NOTE]
    > Una barra de progreso pequeña podría aparecer debajo del entorno para indicar que Visual Studio está compilando la base de datos de IntelliSense para el paquete recién instalado. La pestaña **IntelliSense** también muestra información más detallada. Tenga en cuenta que hasta que se complete la base de datos, las características de IntelliSense, como la finalización automática y la comprobación de sintaxis, no estarán activas en el editor de ese paquete.
-   > 
+   >
    > Visual Studio 2017, versión 15.6 y versiones posteriores, utiliza otro método más rápido para trabajar con IntelliSense y muestra un mensaje a tal efecto en la pestaña **IntelliSense**.
 
 ## <a name="run-the-program"></a>Ejecutar el programa

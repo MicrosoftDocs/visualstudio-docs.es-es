@@ -10,12 +10,12 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 2bafba53a131ca440b7d1e9cb68d18ac0ac833dd
-  ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+  ms.openlocfilehash: 94dcd1cf66ed1893a8cdfd069314d689cb1e9329
+  ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "85462101"
+  ms.lasthandoff: 08/29/2020
+  ms.locfileid: "89091412"
 landingContent:
 - title: Análisis del código de C y C++
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: Advertencias de análisis de código de C++
       url: code-analysis-for-c-cpp-warnings.md
-- title: Analizar la calidad del código administrado
+- title: Análisis de calidad del código .NET
   linkLists:
   - linkListType: overview
     links:
@@ -41,17 +41,17 @@ landingContent:
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: Instalar analizadores de FxCop
+    - text: Configuración del análisis de calidad del código
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: Advertencias de análisis de código administrado
+    - text: Reglas de calidad del código .NET
       url: code-analysis-for-managed-code-warnings.md
-- title: Análisis del estilo del código administrado
+- title: Análisis del estilo del código .NET
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Análisis del estilo del código
+    - text: Configuración del análisis del estilo del código
       url: ../ide/create-portable-custom-editor-options.md
 - title: Medición de la complejidad del código
   linkLists:

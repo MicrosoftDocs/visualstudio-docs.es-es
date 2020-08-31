@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcb349f8ff99d1567bf94b83a96be6b2824c208
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520476"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801209"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Cómo seleccionar un entorno de Python para un proyecto
 
@@ -46,7 +46,7 @@ El menú contextual del nodo **Entornos de Python** también proporciona comando
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Para cambiar el entorno de un proyecto, haga clic con el botón derecho en el nodo **Entornos de Python** y seleccione **Agregar entorno**, o bien seleccione **Agregar entorno** en el menú desplegable de entornos de la barra de herramientas de Python.
+Para cambiar el entorno de un proyecto, haga clic con el botón derecho en el nodo **Entornos de Python** y seleccione **Agregar entorno**. También puede seleccionar **Agregar entorno** en la lista desplegable de entornos de la barra de herramientas de Python.
 
 Una vez en el cuadro de diálogo **Agregar entorno**, seleccione la pestaña **Entorno existente** y elija un entorno nuevo en la lista desplegable **Entorno**:
 
@@ -86,7 +86,7 @@ Puede crear un entorno virtual directamente en Visual Studio como se indica a co
 
 1. Seleccione un entorno como el intérprete base y seleccione **Crear**. Visual Studio muestra una barra de progreso mientras se configura el entorno y descarga los paquetes necesarios. Una vez finalizado, el entorno virtual aparece en la ventana **Entornos de Python** para el proyecto contenedor.
 
-1. El entorno virtual no se activa de manera predeterminada. Si desea activarlo para el proyecto, haga clic con el botón derecho en él y seleccione **Activar entorno**.
+1. El entorno virtual no se activa de manera predeterminada. Para activar el entorno virtual del proyecto, haga clic con el botón derecho en él y seleccione **Activar entorno**.
 
 > [!Note]
 > Si la ruta de acceso de la ubicación identifica un entorno virtual existente, Visual Studio detecta de manera automática el intérprete básico (con el archivo *orig-prefix.txt* en el directorio *lib* del entorno) y cambia el botón **Crear** a **Agregar**.
@@ -169,7 +169,7 @@ Tenga en cuenta que las entradas mostradas puede que no sean siempre precisas, y
 Tenga en cuenta también que Visual Studio no admite actualmente el uso de `conda` para instalar paquetes en un entorno de conda. En su lugar, use `conda` desde la línea de comandos.
 
 > [!Tip]
-> Una situación común donde pip no puede instalar un paquete es cuando este incluye código fuente para componentes nativos en archivos *\*.pyd*. Sin la versión necesaria de Visual Studio instalada, pip no puede compilar estos componentes. El mensaje de error que se muestra en esta situación es **error: Unable to find vcvarsall.bat** (Error: no se encuentra vcvarsall.bat). `easy_install` suele poder descargar los binarios previamente compilados, y el usuario puede descargar un compilador adecuado para versiones anteriores de Python de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266). Para más información, consulte [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Cómo afrontar la dificultad de "no poder encontrar vcvarsallbat") en el blog del equipo de herramientas de Python.
+> Una situación común donde pip no puede instalar un paquete es cuando este incluye código fuente para componentes nativos en archivos *\*.pyd*. Sin la versión necesaria de Visual Studio instalada, pip no puede compilar estos componentes. El mensaje de error que aparece en esta situación es **error: Unable to find vcvarsall.bat** (Error: no se encuentra vcvarsall.bat). `easy_install` suele poder descargar los binarios previamente compilados, y el usuario puede descargar un compilador adecuado para versiones anteriores de Python de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266). Para más información, consulte [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Cómo afrontar la dificultad de "no poder encontrar vcvarsallbat") en el blog del equipo de herramientas de Python.
 
 ## <a name="see-also"></a>Vea también
 

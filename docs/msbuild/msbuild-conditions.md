@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289240"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711708"
 ---
 # <a name="msbuild-conditions"></a>Condiciones de MSBuild
 
@@ -57,6 +57,12 @@ En las condiciones se pueden usar métodos de cadena, como se muestra en el ejem
 
 </Project>
 ```
+
+En los archivos del proyecto MSBuild, no hay ningún tipo booleano true. Los datos booleanos se representan en propiedades que podrían estar vacías o establecerse en cualquier valor. Por lo tanto, `'$(Prop)' == 'true'` significa "si Prop es `true`", pero `'$(Prop)' != 'false'` significa "si Prop es `true` o anular o establecer en otra cosa".
+
+La lógica booleana solo se evalúa en el contexto de las condiciones, por lo que los valores de propiedad como `<Prop2>'$(Prop1)' == 'true'</Prop>` se representan como una cadena (después de la expansión de variables), no se evalúan como valores booleanos.  
+
+MSBuild implementa algunas reglas de procesamiento especiales para facilitar el trabajo con propiedades de cadena que se usan como valores booleanos. Los literales booleanos se aceptan, por lo que `Condition="true"` y `Condition="false"` funcionan según lo previsto. MSBuild también incluye reglas especiales para admitir el operador booleano de negación. Por lo tanto, si `$(Prop)` es "true", `!$(Prop)` se expande a `!true` y se compara igual que `false`, como cabría esperar.
 
 ## <a name="see-also"></a>Vea también
 

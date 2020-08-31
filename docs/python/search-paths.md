@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520385"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801170"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Cómo usa Visual Studio las rutas de acceso de búsqueda de Python
 
@@ -29,7 +29,7 @@ Sin embargo, Visual Studio omite la variable de entorno de ruta de acceso de bú
 
 Visual Studio proporciona así un medio para especificar rutas de acceso de búsqueda directamente tanto en entornos como en proyectos. El código que ejecuta o depura en Visual Studio recibe rutas de acceso de búsqueda en el valor de `PYTHONPATH` (y otras variables equivalente). Mediante la incorporación de rutas de acceso de búsqueda, Visual Studio inspecciona las bibliotecas en estas ubicaciones y crea bases de datos de IntelliSense para ellas cuando sea necesario (Visual Studio 2017, versión 15.5 y anteriores; crear la base de datos puede tardar algún tiempo dependiendo del número de bibliotecas).
 
-Para agregar una ruta de búsqueda, vaya al **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Rutas de búsqueda**, seleccione **Add Folder to Search Path** (Agregar carpeta a ruta de búsqueda):
+Para agregar una ruta de búsqueda, vaya al **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Rutas de búsqueda** y seleccione **Agregar carpeta a ruta de búsqueda**:
 
 ::: moniker range="vs-2017"
 ![Comando Agregar carpeta a ruta de búsqueda de Rutas de búsqueda en el Explorador de soluciones](media/search-paths-command.png)

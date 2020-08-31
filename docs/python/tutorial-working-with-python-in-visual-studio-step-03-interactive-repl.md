@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72986226"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801573"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Usar la ventana interactiva de REPL
 
@@ -54,7 +54,7 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Seleccione solo las instrucciones de función `import`, `from` y `make_dot_string` en el archivo *.py*, haga clic con el botón derecho y seleccione **Enviar a interactivo** (o presione **Ctrl**+**Entrar**). El fragmento de código se pega inmediatamente en la ventana **interactiva** y se ejecuta. Dado que el código ha definido una función, puede probarla rápidamente si la invoca varias veces:
+1. Seleccione las instrucciones de función `import`, `from` y `make_dot_string` en el archivo *.py*. Haga clic con el botón derecho del texto seleccionado y elija **Enviar a interactivo** (o presione **Ctrl**+**ENTRAR**). El fragmento de código se pega inmediatamente en la ventana **interactiva** y se ejecuta. Dado que el código ha definido una función, puede probarla rápidamente si la invoca varias veces:
 
     ![Envío y prueba del código en la ventana interactiva](media/vs-getting-started-python-14-interactive4.png)
 
@@ -77,7 +77,7 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 
 1. Repita el proceso para experimentar con valores de paso diferentes hasta que encuentre el que más le guste. También puede hacer que se repita la onda si amplía el intervalo, por ejemplo, `range(0, 1800, 12)`.
 
-1. Cuando esté satisfecho con el código escrito en la ventana **interactiva**, selecciónelo, haga clic con el botón derecho, seleccione **Copiar código** (**Ctrl**+**Mayús**+**C**) y péguelo en el editor. Observe que esta característica especial de Visual Studio omite automáticamente cualquier salida y los símbolos `>>>` y `...`. Por ejemplo, en la imagen siguiente se muestra el uso del comando **Copiar código** en una selección que incluye los símbolos y la salida:
+1. Cuando esté satisfecho con el código que escribió en la ventana **Interactiva**, selecciónelo. A continuación, haga clic con el botón derecho en el código y elija **Copiar código** (**Ctrl**+**Mayús**+**C**). Por último, pegue el código seleccionado en el editor. Observe que esta característica especial de Visual Studio omite automáticamente cualquier salida y los símbolos `>>>` y `...`. Por ejemplo, en la imagen siguiente se muestra el uso del comando **Copiar código** en una selección que incluye los símbolos y la salida:
 
     ![Comando Copiar código de la ventana interactiva en una selección con símbolos y salida](media/vs-getting-started-python-17-interactive7.png)
 
@@ -96,9 +96,9 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Ejecutar código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+> [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Uso de la ventana interactiva](python-interactive-repl-in-visual-studio.md)
-- [Uso de IPython en la ventana interactiva](interactive-repl-ipython.md)
+- [Uso de IPython en la ventana interactiva (REPL)](interactive-repl-ipython.md)

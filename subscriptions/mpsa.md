@@ -7,23 +7,23 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
-ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247316"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801469"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 Si ha comprado suscripciones de Visual Studio a través del programa MPSA, debe tener en cuenta algunos aspectos antes de poder convertirse en un administrador de suscripciones de Visual Studio y asignar las suscripciones a los usuarios. Si ya lo han configurado como administrador, puede ir directamente al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).
 
-Los clientes de MPSA ahora administran los recursos comprados a través de MPSA en un nuevo portal denominado [Business Center](https://businessaccount.microsoft.com/Customer), que admite funcionalidades similares a las de Microsoft Business Center. Estas incluyen ver el resumen de licencias, los pedidos, las descargas, las claves, los usuarios, etcétera. Sin embargo, las suscripciones de Visual Studio en MPSA tienen un comportamiento muy parecido al de Cloud Services. Business Center también usa las cuentas profesionales para iniciar sesión, en lugar de las cuentas Microsoft (MSA). Si en su organización se usan servicios en la nube, como Office 365 o Azure Active Directory, y el correo electrónico forma parte de cualquiera de estos dos servicios, la cuenta ya es una cuenta profesional. Esta cuenta le permite registrarse en Business Center con la contraseña existente. Si en su organización no se usan los servicios en la nube y el correo electrónico no es una cuenta profesional, que puede usarla para registrarse en Business Center.
+Los clientes de MPSA ahora administran los recursos comprados a través de MPSA en un nuevo portal denominado [Business Center](https://businessaccount.microsoft.com/Customer), que admite funcionalidades similares a las de Microsoft Business Center. Estas incluyen ver el resumen de licencias, los pedidos, las descargas, las claves, los usuarios, etcétera. Sin embargo, las suscripciones de Visual Studio en MPSA tienen un comportamiento muy parecido al de Cloud Services. Business Center también usa las cuentas profesionales para iniciar sesión, en lugar de las cuentas Microsoft (MSA). Si en su organización se usan servicios en la nube, como Microsoft 365 o Azure Active Directory, y el correo electrónico forma parte de cualquiera de estos dos servicios, la cuenta ya es una cuenta profesional. Esta cuenta le permite registrarse en Business Center con la contraseña existente. Si en su organización no se usan los servicios en la nube y el correo electrónico no es una cuenta profesional, que puede usarla para registrarse en Business Center.
 
 Además, el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/) es el lugar donde se asignarán las suscripciones a los suscriptores cuando se convierta en administrador de Visual Studio. En MPSA, las suscripciones de Visual Studio deben proporcionarse al portal de administración correspondiente, que es el Portal de administración de suscripciones de Visual Studio. Para ello, debe asociar la cuenta de compra a un inquilino (por ejemplo, contoso.onmicrosoft.com).
 
 Tenga en cuenta que hay dos tipos de inquilinos: administrados y sin administrar. Un inquilino administrado se refiere a un inquilino que ya están administrando los administradores de la organización.
 
-Un inquilino sin administrar es un inquilino que no tiene ningún administrador asignado y no se puede usar para servicios en línea, como Office 365. Los inquilinos sin administrar también se crean al registrarse en Business Center con un correo electrónico que no es una cuenta profesional. Si le solicitan que cree una contraseña al registrarse en Business Center, significa que el correo electrónico no era una cuenta profesional y que se creó un inquilino sin administrar.
+Un inquilino sin administrar es un inquilino que no tiene ningún administrador asignado y no se puede usar para servicios en línea, como Microsoft 365. Los inquilinos sin administrar también se crean al registrarse en Business Center con un correo electrónico que no es una cuenta profesional. Si le solicitan que cree una contraseña al registrarse en Business Center, significa que el correo electrónico no era una cuenta profesional y que se creó un inquilino sin administrar.
 
 Antes de completar la asociación del inquilino, presentamos unos requisitos y pasos necesarios para convertirse en administrador de suscripciones de Visual Studio.
 

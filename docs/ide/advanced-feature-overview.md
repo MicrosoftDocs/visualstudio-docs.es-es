@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235204"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800767"
 ---
 # <a name="features-of-visual-studio"></a>Características de Visual Studio
 
@@ -90,7 +90,7 @@ Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Wi
 
 ## <a name="connect-to-databases"></a>Conectarse a bases de datos
 
-El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Office 365 y sitios web. Para abrir el **Explorador de servidores**, en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
+El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Microsoft 365 y sitios web. Para abrir el **Explorador de servidores**, en el menú principal, elija **Ver** > **Explorador de servidores**. Para obtener más información sobre el uso del Explorador de servidores, vea [Adición de nuevas conexiones](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) es un eficaz entorno de desarrollo para SQL Server, Azure SQL Database y Azure SQL Data Warehouse. Le permite compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 

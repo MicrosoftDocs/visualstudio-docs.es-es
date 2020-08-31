@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2074c4f15daf6a5ee5986a473ad98d7868409a3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a393afa3346b42786ff352dc0c2d48ea6c8b1152
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289266"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639385"
 ---
 # <a name="msbuild-command-line-reference"></a>Referencia de la línea de comandos de MSBuild
 
@@ -47,7 +47,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |Modificador|Forma abreviada|Descripción|
 |------------|----------------|-----------------|
 |-detailedSummary|-ds|Muestra información detallada al final del registro de compilación sobre las configuraciones que se compilaron y cómo se programaron en los nodos.|
-|-graphBuild[:`True` o `False`]|-graph[:`True` o `False`]|Hace que MSBuild construya y compile un gráfico de proyecto. La construcción de un gráfico implica la identificación de las referencias de proyecto para formar las dependencias. La compilación del gráfico implica el intento de compilar referencias de proyecto antes que los proyectos que hacen referencia a ellas, lo que supone una diferencia con respecto a la programación tradicional de MSBuild.|
+|-graphBuild[:`True` o `False`]|-graph[:`True` o `False`]|Hace que MSBuild construya y compile un gráfico de proyecto. La construcción de un gráfico implica la identificación de las referencias de proyecto para formar las dependencias. La compilación del gráfico implica el intento de compilar referencias de proyecto antes que los proyectos que hacen referencia a ellas, lo que supone una diferencia con respecto a la programación tradicional de MSBuild. Requiere MSBuild 16 o una versión posterior.|
 |-help|/? o -h|Muestra información de uso. El comando siguiente muestra un ejemplo:<br /><br /> `msbuild.exe -?`|
 |-ignoreProjectExtensions: `extensions`|-ignore: `extensions`|Omite las extensiones especificadas al determinar qué archivo de proyecto se va a compilar. Use un punto y coma o una coma para separar varias extensiones, como se muestra en el ejemplo siguiente:<br /><br /> `-ignoreprojectextensions:.vcproj,.sln`|
 |-interactive[:`True` o `False`]|-|Indica que las acciones de la compilación pueden interactuar con el usuario.  No use este argumento en un escenario automatizado en el que no se espere que haya interactividad. Especificar -interactive equivale a especificar -interactive:true.  Use el parámetro para invalidar un valor que proceda de un archivo de respuesta.

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431157"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801677"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
 
@@ -77,7 +77,7 @@ En tales casos, también debe agregar una línea al archivo JSON de configuraci�
     ![Comando Configuración de depuración e inicio de un archivo de Python](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Si **Valor predeterminado** no aparece como opción, asegúrese de haber hecho clic con el botón derecho en un archivo Python *.py* cuando seleccionó el comando **Configuración de depuración e inicio**. Visual Studio usa el tipo de archivo para determinar las opciones de depurador que se van a mostrar.
+    > Si **Valor predeterminado** no aparece como opción, asegúrese de haber elegido un archivo Python *.py* cuando seleccionó el comando **Configuración de depuración e inicio**. Visual Studio usa el tipo de archivo para determinar las opciones de depurador que se van a mostrar.
 
 1. Visual Studio abre un archivo denominado *launch.vs.json*, que se encuentra en la carpeta oculta *.vs*. En este archivo se describe el contexto de depuración del proyecto. Para especificar un directorio de trabajo, agregue un valor para `"workingDirectory"`, como en `"workingDirectory": "python3"` en el ejemplo de python-koans:
 

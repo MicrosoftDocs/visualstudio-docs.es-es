@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Obtenga información sobre cómo puede aprovechar Microsoft Windows Virtual Desktop a través de la suscripción de Visual Studio
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183592"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800611"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acceso a Windows Virtual Desktop en las suscripciones 
 Ahora los suscriptores de Visual Studio pueden usar sus créditos individuales de desarrollo y pruebas de Azure para los servicios de Microsoft Windows Virtual Desktop.  
-Windows Virtual Desktop es un servicio completo de virtualización de escritorio y de aplicaciones que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, Windows 10 de sesión múltiple, optimizaciones para Office 365 ProPlus y compatibilidad con entornos de Servicios de Escritorio remoto (RDS). Implemente y escale los escritorios y las aplicaciones Windows en Azure en cuestión de minutos y obtenga características integradas de cumplimiento y seguridad.
+Windows Virtual Desktop es un servicio completo de virtualización de escritorio y de aplicaciones que se ejecuta en la nube. Es la única Infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, multisesión de Windows 10, optimizaciones para aplicaciones de Microsoft 365 para empresas y compatibilidad con entornos de Servicios de Escritorio remoto (RDS). Implemente y escale los escritorios y las aplicaciones Windows en Azure en cuestión de minutos y obtenga características integradas de cumplimiento y seguridad.
 A continuación se indica lo que se puede hacer al ejecutar Windows Virtual Desktop en Azure:
 - Configurar una implementación de Windows 10 de sesión múltiple que ofrezca toda la funcionalidad de Windows 10 con escalabilidad
-- Virtualizar Office 365 ProPlus y optimizarlo para ejecutarse en escenarios virtuales multiusuario
+- Virtualizar las aplicaciones de Microsoft 365 para la empresa y optimizarlo para ejecutarse en escenarios virtuales multiusuario
 - Proporcionar escritorios virtuales de Windows 7 con actualizaciones gratuitas de seguridad ampliada
 - Llevar sus aplicaciones y escritorios existentes de Servicios de Escritorio remoto (RDS) y Windows Server a cualquier equipo
 - Virtualizar escritorios y aplicaciones

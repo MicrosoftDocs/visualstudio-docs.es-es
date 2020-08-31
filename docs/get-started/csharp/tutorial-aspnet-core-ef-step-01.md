@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580090"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801807"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Creación de la primera aplicación de ASP.NET Core mediante Entity Framework con Visual Studio 2019
 
@@ -85,7 +85,7 @@ Tenga en cuenta que para la mayoría de las plantillas de proyecto también pued
 
 - Sin autenticación.
 - Cuentas de usuario individuales. Se almacenan en una base de datos local o basada en Azure.
-- Cuentas profesionales o educativas. Esta opción usa Active Directory, Azure AD u Office 365 para la autenticación.
+- Cuentas profesionales o educativas. Esta opción usa Active Directory, Azure AD o Microsoft 365 para la autenticación.
 - Autenticación de Windows. Conveniente para las aplicaciones de intranet.
 
 Seleccione la plantilla de aplicación web estándar sin autenticación y haga clic en **Crear**.

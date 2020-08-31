@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63002816"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801729"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -79,7 +79,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 
 1. Continúe ejecutando paso a paso por procedimientos el código varias veces y observe cómo cambian los valores de las ventanas **Variables locales** o **Automático**.
 
-1. En la ventana **Variables locales** o **Automático**, haga doble clic en la columna **Valor** para las variables `i` o `s` a fin de editar el valor. Presione **Entrar** o haga clic fuera de ese valor para aplicar los cambios.
+1. En la ventana **Variables locales** o **Automático**, haga doble clic en la columna **Valor** para las variables `i` o `s` a fin de editar el valor. Presione **ENTRAR** o haga clic en cualquier área fuera de ese valor para aplicar los cambios.
 
 1. Continúe ejecutando paso a paso el código usando **Paso a paso por instrucciones**. **Depurar paso a paso por instrucciones** significa que el depurador entra dentro de cualquier llamada de función para la que tenga información de depuración, como `make_dot_string`. Una vez dentro de `make_dot_string` puede examinar sus variables locales y recorrer su código en concreto.
 
@@ -93,7 +93,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 
     ![Definición de una condición de punto de interrupción](media/vs-getting-started-python-21-debugging4.png)
 
-1. Para ejecutar el programa hasta su finalización, deshabilite el punto de interrupción haciendo clic con el botón derecho y seleccionando **Deshabilitar punto de interrupción** (**Ctrl**+**F9**). Luego, seleccione **Continuar** (o presione **F5**) para ejecutar el programa. Cuando se finalice el programa, Visual Studio detiene la sesión de depuración y vuelve a su modo de edición. Tenga en cuenta que también puede eliminar el punto de interrupción haciendo clic en su punto, pero esto también elimina cualquier condición que haya establecido.
+1. Para ejecutar el programa hasta su finalización, deshabilite el punto de interrupción haciendo clic con el botón derecho en el punto del margen y seleccionando **Deshabilitar punto de interrupción** (**Ctrl**+**F9**). Luego, seleccione **Continuar** (o presione **F5**) para ejecutar el programa. Cuando se finalice el programa, Visual Studio detiene la sesión de depuración y vuelve a su modo de edición. Tenga en cuenta que también puede eliminar el punto de interrupción si selecciona su punto o hace clic con el botón derecho en el punto y selecciona **Eliminar punto de interrupción**, pero eso también elimina cualquier condición que haya establecido.
 
 > [!Tip]
 > En algunas situaciones, como un error al iniciar el intérprete de Python, la ventana de salida puede aparecer solo brevemente y luego cerrarse de forma automática sin darle la oportunidad de ver los mensajes de error. Si esto ocurre, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones**, seleccione **Propiedades**, la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que se haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse **Ctrl**+**Z** > **Entrar** para salir.

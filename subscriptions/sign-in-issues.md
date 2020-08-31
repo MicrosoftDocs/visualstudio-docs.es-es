@@ -7,18 +7,18 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
-ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233240"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801885"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>No se pueden crear cuentas Microsoft (MSA) con direcciones de correo electrónico profesionales o educativas
-Ya no se permite crear una nueva cuenta Microsoft (MSA) personal con una dirección de correo electrónico profesional o educativa cuando se configura el dominio de correo electrónico en Azure AD. ¿Qué significa? Si la organización usa Office 365 u otros servicios empresariales de Microsoft que se basan en Azure AD y si ha agregado un nombre de dominio al inquilino de Azure AD, los usuarios ya no podrán crear una cuenta personal de Microsoft con una dirección de correo electrónico en su dominio.
+Ya no se permite crear una nueva cuenta Microsoft (MSA) personal con una dirección de correo electrónico profesional o educativa cuando se configura el dominio de correo electrónico en Azure AD. ¿Qué significa? Si la organización usa Microsoft 365 u otros servicios empresariales de Microsoft que se basan en Azure AD y si ha agregado un nombre de dominio al inquilino de Azure AD, los usuarios ya no podrán crear una cuenta personal de Microsoft con una dirección de correo electrónico en su dominio.
 
 ### <a name="why-was-this-change-made"></a>¿Por qué se realizó este cambio?
 Tener una cuenta Microsoft personal con una dirección profesional como nombre de usuario causa muchos problemas a los usuarios finales y departamentos de TI por igual. Por ejemplo:
@@ -40,7 +40,7 @@ Pero si intenta registrarse en una aplicación de Microsoft que admite cuentas p
    > ![Se admiten cuentas profesionales o educativas](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>¿Se ven afectadas las cuentas existentes?
-El bloqueo de registro descrito aquí solo impide la creación de nuevas cuentas. No tiene ningún impacto en los usuarios que ya tienen una cuenta Microsoft con una dirección de correo electrónico profesional o educativa. Si ya están en esta situación, hemos facilitado el proceso de cambiar el nombre de una cuenta Microsoft personal. Este [artículo de soporte técnico](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) proporciona instrucciones paso a paso sencillas. Cambiar el nombre de la cuenta Microsoft personal implica cambiar el nombre de usuario y no afecta a su correo electrónico profesional o a cómo inicia sesión en servicios para la empresa, como Office 365. Tampoco afecta a su información personal, solo cambia la manera de iniciar sesión en ella. Puede usar otra dirección de correo electrónico (personal), obtener una nueva dirección de correo electrónico de @outlook.com de Microsoft, o usar su número de teléfono como un nuevo nombre de usuario.
+El bloqueo de registro descrito aquí solo impide la creación de nuevas cuentas. No tiene ningún impacto en los usuarios que ya tienen una cuenta Microsoft con una dirección de correo electrónico profesional o educativa. Si ya están en esta situación, hemos facilitado el proceso de cambiar el nombre de una cuenta Microsoft personal. Este [artículo de soporte técnico](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) proporciona instrucciones paso a paso sencillas. Cambiar el nombre de la cuenta Microsoft personal implica cambiar el nombre de usuario y no afecta a su correo electrónico profesional o a cómo inicia sesión en servicios para la empresa, como Microsoft 365. Tampoco afecta a su información personal, solo cambia la manera de iniciar sesión en ella. Puede usar otra dirección de correo electrónico (personal), obtener una nueva dirección de correo electrónico de @outlook.com de Microsoft, o usar su número de teléfono como un nuevo nombre de usuario.
 
 > [!NOTE]
 > Si el departamento de TI le pide que cree una cuenta Microsoft personal con su correo electrónico profesional o educativo, por ejemplo, para obtener acceso a servicios para la empresa de Microsoft como soporte técnico Premier, hable con su equipo de administración antes de cambiar el nombre de su cuenta.

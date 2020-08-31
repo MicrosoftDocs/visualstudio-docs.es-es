@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 649d40a3b95f9e3d4df51cc4ab22a3fb79ac1498
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531851"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801313"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publicación en Azure App Service en Windows
 
@@ -34,7 +34,7 @@ El proceso de publicación difiere entre Visual Studio 2017 y Visual Studio 
 
 Para este tutorial, necesita un proyecto de aplicación web basado en las plataformas Bottle, Flask o Django. Si aún no tiene un proyecto y le gustaría probar el proceso de publicación, cree un proyecto de prueba sencillo de la siguiente forma:
 
-1. En Visual Studio, seleccione **Archivo > Nuevo > Proyecto**, busque "Bottle", seleccione **Proyecto web de Bottle**, especifique y asigne una ruta de acceso para el proyecto y haga clic en **Aceptar**. (La plantilla de Bottle se incluye con la carga de trabajo de desarrollo de Python; consulte [Instalación](installing-python-support-in-visual-studio.md)).
+1. En Visual Studio, seleccione **Archivo > Nuevo > Proyecto**, busque "Bottle", seleccione **Proyecto web de Bottle**, especifique y asigne una ruta de acceso para el proyecto y seleccione **Aceptar**. (La plantilla de Bottle se incluye con la carga de trabajo de desarrollo de Python; consulte [Instalación](installing-python-support-in-visual-studio.md)).
 
 1. Siga las indicaciones para instalar los paquetes externos, y seleccione **Instalar en un entorno virtual** y el intérprete base que prefiera para el entorno virtual. Por lo general, coincide con la versión de Python instalada en App Service.
 
