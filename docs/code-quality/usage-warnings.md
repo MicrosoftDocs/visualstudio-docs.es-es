@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ff6ba1f654f3a9b909012f159cd3daaf2892f3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85382632"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176083"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 
@@ -77,3 +77,4 @@ Las advertencias de uso admiten el uso correcto de .NET.
 |[CA2246: No asignar un símbolo y su miembro en la misma instrucción](../code-quality/ca2246.md)|No se recomienda asignar un símbolo y su miembro, es decir, un campo o una propiedad, en la misma instrucción. No está claro si el acceso a miembros debía usar el valor anterior del símbolo antes de la asignación o el nuevo valor de la asignación en esta instrucción.|
 |[CA2247: El argumento pasado al constructor TaskCompletionSource debe ser una enumeración TaskCreationOptions en lugar de TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource tiene constructores que toman un TaskCreationOptions que controla la tarea subyacente y constructores que toman el estado del objeto almacenado en la tarea.  Pasar accidentalmente un TaskContinuationOptions en lugar de un TaskCreationOptions dará lugar a que la llamada trate las opciones como estado.|
 |[CA2248: proporcione el argumento ' ENUM ' correcto a ' enum. HasFlag '](../code-quality/ca2248.md)|El tipo de enumeración que se pasa como argumento a la `HasFlag` llamada al método es diferente del tipo de enumeración que realiza la llamada.|
+|[CA2249: considere la posibilidad de usar String. Contains en lugar de String. IndexOf](../code-quality/ca2249.md)|Las llamadas a `string.IndexOf` donde se utiliza el resultado para comprobar la presencia o la ausencia de una subcadena se pueden reemplazar por `string.Contains` .|

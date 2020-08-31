@@ -1,5 +1,5 @@
 ---
-title: Información general sobre las reglas de calidad de código
+title: Información general sobre las reglas de calidad del código
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091491"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176070"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -577,6 +577,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA2245 | [CA2245: No asignar una propiedad a sí misma](../code-quality/ca2245.md) | Una propiedad se asignó accidentalmente a sí misma. |
 | CA2246 | [CA2246: No asignar un símbolo y su miembro en la misma instrucción](../code-quality/ca2246.md) | No se recomienda asignar un símbolo y su miembro, es decir, un campo o una propiedad, en la misma instrucción. No está claro si el acceso a miembros debía usar el valor anterior del símbolo antes de la asignación o el nuevo valor de la asignación en esta instrucción. |
 | CA2247 | [CA2247: el argumento pasado al constructor TaskCompletionSource debe ser una enumeración TaskCreationOptions en lugar de TaskContinuationOptions enum.](../code-quality/ca2247.md) | TaskCompletionSource tiene constructores que toman un TaskCreationOptions que controla la tarea subyacente y constructores que toman el estado del objeto almacenado en la tarea.  Pasar accidentalmente un TaskContinuationOptions en lugar de un TaskCreationOptions dará lugar a que la llamada trate las opciones como estado. |
+| CA2249 | [CA2249: CA2249: considere la posibilidad de usar String. Contains en lugar de String. IndexOf](../code-quality/ca2249.md) | Las llamadas a `string.IndexOf` donde se utiliza el resultado para comprobar la presencia o ausencia de una subcadena se pueden reemplazar por `string.Contains` . |
 | CA5122 | [Las declaraciones de CA5122: P/Invoke no deben ser críticas para la seguridad](../code-quality/ca5122.md) | Los métodos se marcan como SecuritySafeCritical cuando realizan una operación que afecta a la seguridad pero también son seguros para su uso en código transparente. El código transparente nunca puede llamar a código nativo a través de P/Invoke. Por consiguiente, aunque se marque P/Invoke como crítico para la seguridad y disponible desde código transparente no permitirá que se llame desde código transparente llamarlo, y es erróneo para los análisis de seguridad. |
 | CA5359 | [CA5359 no deshabilitar la validación de certificados](../code-quality/ca5359.md) | Un certificado puede ayudar a autenticar la identidad del servidor. Los clientes deben validar el certificado de servidor para asegurarse de que las solicitudes se envían al servidor previsto. Si ServerCertificateValidationCallback (siempre devuelve `true` , cualquier certificado pasará la validación. |
 | CA5360 | [CA5360 no llama a métodos peligrosos en la deserialización](../code-quality/ca5360.md) | La deserialización no segura es una vulnerabilidad que se produce cuando los datos que no son de confianza se usan para abusar la lógica de una aplicación, provocar un ataque de denegación de servicio (DoS) o incluso ejecutar código arbitrario cuando se deserializa. A menudo, es posible que los usuarios malintencionados abusan estas características de deserialización cuando la aplicación está deserializando datos que no son de confianza y están bajo su control. En concreto, invoque métodos peligrosos en el proceso de deserialización. Los ataques de deserialización inseguros que se han realizado correctamente podrían permitir que un atacante lleve a cabo ataques como ataques de DoS, omisiones de autenticación y ejecución remota de código. |
