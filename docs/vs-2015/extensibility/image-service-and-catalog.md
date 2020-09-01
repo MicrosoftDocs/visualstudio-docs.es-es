@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114131"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284374"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </ImageManifest>  
 ```  
 
- **Euro**  
+ **Symbols**  
 
  Como ayuda para la lectura y el mantenimiento, el manifiesto de imagen puede usar símbolos para los valores de atributo. Los símbolos se definen de la siguiente manera:  
 
@@ -103,9 +103,9 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 
 |**Subelemento**|**Definición**|  
 |-|-|  
-|Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
-|GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID|  
-|ID|El símbolo representa un identificador y debe ser un entero no negativo|  
+|Importación|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
+|Guid|El símbolo representa un GUID y debe coincidir con el formato de GUID|  
+|Id.|El símbolo representa un identificador y debe ser un entero no negativo|  
 |String|El símbolo representa un valor de cadena arbitrario|  
 
  Los símbolos distinguen mayúsculas de minúsculas y se hace referencia a ellos mediante la sintaxis $ (nombre de símbolo):  
@@ -128,7 +128,7 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 |Sistema|La carpeta Windows\System32|  
 |DirWin|El valor de la variable de entorno% WinDir%|  
 
- **Image**  
+ **Imagen**  
 
  El \<Image> elemento define una imagen a la que se puede hacer referencia mediante un moniker. El GUID y el identificador se han tomado juntos en el moniker de la imagen. El moniker de la imagen debe ser único en toda la biblioteca de imágenes. Si hay más de una imagen con un moniker determinado, la primera que se encuentre al compilar la biblioteca es la que se conserva.  
 
@@ -141,10 +141,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 </Image>  
 ```  
 
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definición**|  
 |-|-|  
-|GUID|Desee Parte del GUID del moniker de la imagen|  
-|ID|Desee La parte de identificador del moniker de imagen|  
+|Guid|Desee Parte del GUID del moniker de la imagen|  
+|Id.|Desee La parte de identificador del moniker de imagen|  
 |AllowColorInversion|[Opcional, valor predeterminado True] Indica si la imagen puede tener sus colores inversos mediante programación cuando se usa en un fondo oscuro.|  
 
  **Origen**  
@@ -157,10 +157,12 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
  </Source>  
 ```  
 
-|**Attribute**|**Definición**|  
-|-|-|  
-| Identificador URI | Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo |
-| Segundo plano  | Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> <em>Oscuro:</em> El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Atributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definición**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Identificador URI      |                                                                                                                                                                                                                                                                                                               Desee URI que define dónde se puede cargar la imagen. Puede tener uno de los valores siguientes:<br /><br /> -Un [pack uri](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mediante la autoridad Application:///<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo                                                                                                                                                                                                                                                                                                               |
+|  Información previa   | Opta Indica qué tipo de fondo está previsto usar el origen.<br /><br /> Puede tener uno de los valores siguientes:<br /><br /> *Claro:* El origen se puede usar en un fondo claro.<br /><br /> <em>Oscuro:</em> El origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* El origen se puede usar en cualquier fondo del modo contraste alto.<br /><br /> *HighContrastLight:* El origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen puede usarse en cualquier fondo.<br /><br /> Si background es *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, los colores del origen nunca se invierten. Si se omite Background o se establece en *HighContrast*, el atributo **AllowColorInversion** de la imagen controla la inversión de los colores del origen. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un \<Source> elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
 
@@ -177,10 +179,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
 <NativeResource Type="type" ID="int" />  
 ```  
 
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definición**|  
 |-|-|  
 |Tipo|Desee El tipo del recurso nativo, ya sea XAML o PNG|  
-|ID|Desee La parte del identificador entero del recurso nativo|  
+|Id.|Desee La parte del identificador entero del recurso nativo|  
 
  **ImageList**  
 
@@ -193,10 +195,10 @@ Este manual contiene instrucciones y procedimientos recomendados para adoptar el
  </ImageList>  
 ```  
 
-|**Attribute**|**Definición**|  
+|**Atributo**|**Definición**|  
 |-|-|  
-|GUID|Desee Parte del GUID del moniker de la imagen|  
-|ID|Desee La parte de identificador del moniker de imagen|  
+|Guid|Desee Parte del GUID del moniker de la imagen|  
+|Id.|Desee La parte de identificador del moniker de imagen|  
 |Externo|[Opcional, valor predeterminado False] Indica si el moniker de imagen hace referencia a una imagen del manifiesto actual.|  
 
  No es necesario que el moniker de la imagen contenida haga referencia a una imagen definida en el manifiesto actual. Si no se encuentra la imagen contenida en la biblioteca de imágenes, se usará una imagen de marcador de posición en blanco en su lugar.  
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Reemplace el GUID de cada **ContainedImage**por $ (ImageCatalogGuid), reemplace el identificador de cada **ContainedImage**por $ ( \<moniker> ) y agregue el atributo external = "true" a cada **ContainedImage**  
 
-       - \<moniker>debe reemplazarse por el **KnownMoniker** que coincide con la imagen, pero con el "KnownMonikers". se ha quitado del nombre.  
+       - \<moniker> debe reemplazarse por el **KnownMoniker** que coincide con la imagen, pero con el "KnownMonikers". se ha quitado del nombre.  
 
    - Agregue <Import manifest = "$ (ManifestFolder) \\<ruta de acceso del directorio de instalación relativa a \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \> a la parte superior de la \<Symbols> sección.  
 

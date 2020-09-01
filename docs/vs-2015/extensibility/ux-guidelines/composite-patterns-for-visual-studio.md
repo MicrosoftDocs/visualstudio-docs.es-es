@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 983a5d91fee40245f6a7d6877ccf38e666fa586e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114159"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284426"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 - [Entrada táctil](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Visualización de datos
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Visualización de datos
 
 ### <a name="overview"></a>Información general
  Los gráficos son un método visual para agregar y visualizar datos con el fin de mejorar la toma de decisiones. Pueden ayudar a los usuarios a tener una gran cantidad de datos, pero poco significado ven qué merece la atención y lo que podría necesitar una acción.
@@ -83,7 +83,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 |![Muestra 79D7F2](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121.215.242|
 |![Muestra B5B5B5](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181.181.181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interfaz de usuario y inspección de objetos en el objeto
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> Interfaz de usuario y inspección de objetos en el objeto
  En esta sección se proporciona un contexto para la inspección, también conocido como vista de código PEEK, un tipo de interfaz de usuario en el objeto única de Visual Studio.
 
 ### <a name="overview"></a>Información general
@@ -249,7 +249,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 - **Nunca** muestre el contenido en el mantener el mouse que parezca ser editable o invite a la interacción del usuario. Este comportamiento puede frustrar a los usuarios si intentan trasladar el cursor sobre el contenido de detalle, ya que el comportamiento estándar para una información sobre herramientas es descartar inmediatamente cuando el cursor ya no está sobre el contenido maestro que lo generó.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modelos de selección
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Modelos de selección
 
 ### <a name="overview"></a>Información general
  Un modelo de selección es el mecanismo que se usa para indicar y confirmar las operaciones en uno o varios objetos de interés dentro de la interfaz de usuario. En este tema se describen los patrones de interacción de selección en los editores de documentos de Visual Studio: editores de texto, superficies de diseño y superficies de modelado.
@@ -392,19 +392,19 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
  **Selección principal con dos selecciones secundarias**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apariencia de selección de objetos gráficos
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de selección de objetos gráficos
  Los controladores de selección son los cuadrados dibujados en un patrón rectangular alrededor del rectángulo de selección del objeto. En el gráfico siguiente se muestran ejemplos de los distintos Estados que un objeto gráfico puede tener con el control, el ajuste de tamaño y la apariencia de edición en contexto. El tamaño de los identificadores debe estar vinculado a las métricas de borde y borde de la ventana mediante la API de **GetSystemMetrics** .
 
 |          State          |  Aspecto   |                                                                  Detalles visuales                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|     **No seleccionado**      |    Default    |                 ![Estado de botón predeterminado](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
+|     **No seleccionado**      |    Valor predeterminado    |                 ![Estado de botón predeterminado](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
 |  **Selección principal**  |   Tamaño   |       ![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11-primaryresize.png "0713-11_PrimaryResize")        |
 |  **Selección principal**  | No redimensionable |    ![Selección primaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-13-primarynoresize.png "0713-13_PrimaryNoResize")    |
 |  **Selección principal**  |    Bloqueado     |              ![Selección primaria bloqueada](../../extensibility/ux-guidelines/media/0713-15-primarylocked.png "0713-15_PrimaryLocked")              |
 | **Selección secundaria** |   Tamaño   |    ![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-17-secondaryresize.png "0713-17_SecondaryResize")     |
 | **Selección secundaria** | No redimensionable | ![Selección secundaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-19-secondarynoresize.png "0713-19_SecondaryNoResize") |
 | **Selección secundaria** |    Bloqueado     |           ![Selección secundaria bloqueada](../../extensibility/ux-guidelines/media/0713-21-secondarylocked.png "0713-21_SecondaryLocked")           |
-|      **Interfaz de usuario activa**      |    Default    |                       ![Estado activo de interfaz de usuario](../../extensibility/ux-guidelines/media/0713-23-uiactive.png "0713-23_UIActive")                        |
+|      **Interfaz de usuario activa**      |    Valor predeterminado    |                       ![Estado activo de interfaz de usuario](../../extensibility/ux-guidelines/media/0713-23-uiactive.png "0713-23_UIActive")                        |
 
 ### <a name="view-selection-models"></a>Ver modelos de selección
 
@@ -439,9 +439,9 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 | Object | Selección  |
 |--------|------------|
-|  List  | Contiguo |
-|  List  |  Separado  |
-|  List  |   Region   |
+|  Lista  | Contiguo |
+|  Lista  |  Separado  |
+|  Lista  |   Region   |
 
  Al hacer clic en una vez en una lista, se selecciona la fila en la que se hizo clic. Si el usuario hace clic en una celda de la lista que admite la edición en contexto, la celda también se activa inmediatamente para la edición en contexto. De lo contrario, se selecciona la fila completa de inmediato y se muestra un resaltado.
 
@@ -473,7 +473,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 - La tecla F2 activa la edición en contexto para la celda seleccionada actualmente.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Persistencia y guardado de la configuración
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Persistencia y guardado de la configuración
 
 ### <a name="overview"></a>Información general
  Aunque cada componente de software de Visual Studio suele ser responsable de su propio estado y persistencia, Visual Studio guarda automáticamente la configuración en algunos casos, como los tamaños y las posiciones de las ventanas. La tabla siguiente es una combinación de opciones de configuración guardadas automáticamente y configuraciones que requieren que se lleve a cabo un usuario explícito o una acción programada.
@@ -508,7 +508,7 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 #### <a name="profile-specific-layouts"></a>Diseños específicos de perfiles
  Cada perfil incluye diseños de ventanas de herramientas, organizados de una forma familiar para los roles de desarrollador específicos (Visual C++ los desarrolladores esperan ver el **Explorador de soluciones** en el lado izquierdo del IDE, mientras que los desarrolladores de C# esperan ver el **Explorador de soluciones** a la derecha). Los diseños de ventana específicos del perfil se cargan después de que el usuario elija un perfil en el inicio. El autor de un paquete debe determinar el diseño de la ventana que sea más adecuado para la experiencia del cliente, sabiendo que los cambios que realice el usuario en la configuración de la ventana se conservarán.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Entrada táctil
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Entrada táctil
  Los usuarios utilizan cada vez más productos de desarrollo de Microsoft en dispositivos táctiles. Sin embargo, existen barreras que dificultan el uso de las herramientas de desarrollo en dispositivos táctiles. Los usuarios esperarán que nuestros productos proporcionen una experiencia táctil confiable y precisa. La intención de estas instrucciones es informar de las decisiones sobre qué capacidades táctiles incorporar y para fomentar una experiencia de toque coherente en Visual Studio y en los productos relacionados.
 
 ### <a name="levels-of-experience"></a>Niveles de experiencia
@@ -522,13 +522,13 @@ Los patrones compuestos combinan elementos de interacción y diseño en configur
 
 ||Experiencia básica|Experiencia optimizada|Experiencia elevada|
 |-|----------------------|--------------------------|-------------------------|
-|**Permite a los usuarios...**|Corrección del código y la lectura de soluciones/proyectos sin extremos inactivos|Realizar tareas de mantenimiento, refactorización y navegación|Trabaje en una experiencia coherente, intuitiva y fluida con confianza|
-|**Editor**|Movimiento y selección táctiles<br /><br /> Touch ScrollBar para saltar y presionar + arrastrar|Zoom de alejar<br /><br /> Desplazamiento rápido<br /><br /> Selección<br /><br /> Uso sencillo del menú contextual||
-|**Principales ventanas de herramientas**|Mostrar panorámica<br /><br /> Selección de elementos<br /><br /> Touch ScrollBar para saltar y presionar + arrastrar|Desplazamiento y selección de elementos fáciles||
-|**Basado en ventanas**||Cambiar el tamaño de la ventana<br /><br /> Acceso rápido||
-|**Cuadro de documento**||Navegación sencilla entre archivos abiertos||
-|**Gestos**||Asegurarse de que los gestos comunes funcionan en el IDE|Acciones basadas en gestos<br /><br /> Compatibilidad con arrastrar y colocar y diseñadores|
-|**Otras consideraciones**|||Teclado en pantalla personalizado|
+|Permite a los usuarios...|Corrección del código y la lectura de soluciones/proyectos sin extremos inactivos|Realizar tareas de mantenimiento, refactorización y navegación|Trabaje en una experiencia coherente, intuitiva y fluida con confianza|
+|Editor|Movimiento y selección táctiles<br /><br /> Touch ScrollBar para saltar y presionar + arrastrar|Zoom de alejar<br /><br /> Desplazamiento rápido<br /><br /> Selección<br /><br /> Uso sencillo del menú contextual||
+|Principales ventanas de herramientas|Mostrar panorámica<br /><br /> Selección de elementos<br /><br /> Touch ScrollBar para saltar y presionar + arrastrar|Desplazamiento y selección de elementos fáciles||
+|Basado en ventanas||Cambiar el tamaño de la ventana<br /><br /> Acceso rápido||
+|Cuadro de documento||Navegación sencilla entre archivos abiertos||
+|Gestos||Asegurarse de que los gestos comunes funcionan en el IDE|Acciones basadas en gestos<br /><br /> Compatibilidad con arrastrar y colocar y diseñadores|
+|Otras consideraciones|||Teclado en pantalla personalizado|
 
 #### <a name="gestures"></a>Gestos
  Los gestos proporcionan a los usuarios un acceso directo a los comandos que, de otro modo, podrían requerir una interacción más complicada. Consulte las instrucciones de Windows sobre los [gestos táctiles comunes de las aplicaciones de escritorio](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)y siga estas instrucciones para la mayoría de los gestos, incluidos gestos simples como la panorámica y el zoom.

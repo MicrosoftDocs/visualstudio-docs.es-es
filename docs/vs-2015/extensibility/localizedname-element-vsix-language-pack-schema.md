@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114195"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284367"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName (Elemento, Esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,39 +51,13 @@ Necesario. Nombre localizado de la extensión que se va a instalar.
  Necesario. Nombre del paquete de idioma en el idioma de destino.  
   
 ## <a name="element-information"></a>Información de elemento  
-
-:::row:::
-    :::column:::
-        Espacio de nombres
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Nombre del esquema
-    :::column-end:::
-    :::column:::
-        Esquema del paquete de idioma VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Archivo de validación
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Puede estar vacío
-    :::column-end:::
-    :::column:::
-        No aplicable
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espacio de nombres    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nombre del esquema   |                 Esquema del paquete de idioma VSIX                 |
+| Archivo de validación |                VSIXLanguagePackSchema. xsd                 |
+|  Puede estar vacío   |                      No aplicable                       |
   
 ## <a name="see-also"></a>Consulte también  
  [Referencia del esquema del paquete de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

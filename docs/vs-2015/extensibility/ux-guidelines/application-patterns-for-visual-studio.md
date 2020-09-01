@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114133"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284423"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicaciones para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interacciones de ventanas
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interacciones de ventanas
 
 ### <a name="overview"></a>Información general
  Los dos tipos de ventana principales que se usan en Visual Studio son los editores de documentos y las ventanas de herramientas. Poco frecuente, pero posible, son cuadros de diálogo no modales de gran tamaño. Aunque son todos los modelos no modales en el Shell, sus patrones son fundamentalmente diferentes. En este tema se trata la diferencia entre las ventanas de documento, las ventanas de herramientas y los cuadros de diálogo no modales. Los patrones de diálogo modales se describen en los [cuadros de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -34,13 +34,13 @@ ms.locfileid: "88114133"
 
 ||Ventana de documento|Ventana de herramientas|Cuadro de diálogo no modal|
 |-|---------------------|-----------------|---------------------|
-|**Position**|Siempre se coloca dentro del área del documento y no se acopla alrededor de los bordes del IDE. Se puede "extraer" para que flote por separado del shell principal.|Normalmente acoplado con tabulación alrededor de los bordes del IDE, pero se puede personalizar para que sea flotante, oculto automáticamente (desanclado) o acoplado dentro del área del documento.|Ventana flotante grande independiente del IDE.|
+|**Posición**|Siempre se coloca dentro del área del documento y no se acopla alrededor de los bordes del IDE. Se puede "extraer" para que flote por separado del shell principal.|Normalmente acoplado con tabulación alrededor de los bordes del IDE, pero se puede personalizar para que sea flotante, oculto automáticamente (desanclado) o acoplado dentro del área del documento.|Ventana flotante grande independiente del IDE.|
 |**Modelo de confirmación**|*Confirmación diferida*<br /><br /> Para guardar los datos en un documento, el usuario debe emitir el comando archivo/guardar, guardar como o guardar todo. Una ventana de documento tiene el concepto de los datos que contiene y se confirma en uno de los comandos de guardar. Al cerrar una ventana de documento, todo el contenido se guarda en el disco o se pierde.|*Confirmación inmediata*<br /><br /> No hay ningún modelo de guardado. En el caso de las ventanas de herramientas de inspector que ayudan a editar un archivo, el archivo debe estar abierto en el editor o diseñador activo y el editor o el diseñador posee el guardado.|*Confirmación retrasada o inmediata*<br /><br /> A menudo, un cuadro de diálogo no modal de gran tamaño requiere una acción para confirmar los cambios y permite una operación de "cancelación", que revierte los cambios realizados en la sesión de diálogo.  Esto diferencia un cuadro de diálogo no modal de una ventana de herramientas en que las ventanas de herramientas siempre tienen un modelo de confirmación inmediato.|
 |**Visibilidad**|*Abrir/crear (archivo) y cerrar*<br /><br /> Para abrir una ventana de documento, se puede abrir un documento existente o usar una plantilla para crear un nuevo documento. No hay ningún comando "abrir \<specific editor> ".|*Ocultar y mostrar*<br /><br /> Las ventanas de herramientas de una sola instancia se pueden ocultar o mostrar. El contenido y los Estados de la ventana de herramientas se conservarán en la vista u ocultarse. Las ventanas de herramientas de varias instancias se pueden cerrar y ocultar. Cuando se cierra una ventana de herramientas de varias instancias, se descartan el contenido y el estado de la ventana de herramientas.|*Iniciado desde un comando*<br /><br /> Los cuadros de diálogo se inician desde un comando basado en tareas.|
 |**Stance**|*Instancias múltiples*<br /><br /> Varios editores pueden abrirse al mismo tiempo y editar distintos archivos, mientras que algunos editores también permiten que el mismo archivo se abra en más de un editor (mediante la **ventana > comando nueva ventana** ).<br /><br /> Un solo editor puede estar editando uno o varios archivos al mismo tiempo (diseñador de proyectos).|*Una o varias instancias*<br /><br /> Cambio de contenido para reflejar el contexto (como en el explorador de propiedades) o el foco o el contexto de la extracción en otras ventanas (Lista de tareas, Explorador de soluciones).<br /><br /> Las ventanas de herramientas de instancia única y de varias instancias deben estar asociadas a la ventana de documento activa, a menos que haya una buena razón para no hacerlo.|*Instancia única*|
 |**Ejemplos**|**Editores de texto**, como el editor de código<br /><br /> **Superficies de diseño**, como un diseñador de formularios o una superficie de modelado<br /><br /> **Diseños de controles similares a los cuadros de diálogo**, como el diseñador de manifiestos|El **Explorador de soluciones** proporciona una solución y proyectos incluidos en la solución.<br /><br /> El **Explorador de servidores** proporciona una vista jerárquica de los servidores y las conexiones de datos que el usuario elige abrir en la ventana de. Al abrir un objeto de la jerarquía de la base de datos, como una consulta, se abre una ventana de documento y se permite al usuario editar la consulta.<br /><br /> El **Explorador de propiedades** muestra las propiedades del objeto seleccionado en una ventana de documento o en otra ventana de herramientas. Las propiedades se presentan en una vista de cuadrícula jerárquica o en controles complejos de cuadro de diálogo y permiten que el usuario establezca los valores de esas propiedades.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Ventanas de herramientas
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Ventanas de herramientas
 
 ### <a name="overview"></a>Información general
  Las ventanas de herramientas admiten el trabajo del usuario que se produce en las ventanas de documento. Se pueden usar para mostrar una jerarquía que representa un objeto raíz fundamental que Visual Studio proporciona y puede manipular.
@@ -118,9 +118,9 @@ ms.locfileid: "88114133"
 |**Otros**|Cuadro de herramientas|La ventana de herramientas que se usa para almacenar los elementos que se colocarán en las superficies de diseño, lo que proporciona un código de arrastre coherente para todos los diseñadores.|
 |**Otros**|Página de inicio|El portal del usuario a Visual Studio, con acceso a las fuentes de noticias para desarrolladores, la ayuda de Visual Studio y los proyectos recientes. Los usuarios también pueden crear páginas de inicio personalizadas mediante la copia del archivo StartPage. Xaml desde el directorio de archivos de programa de Visual Studio "Common7\IDE\StartPages\" en la carpeta StartPages del directorio de documentos de Visual Studio y, a continuación, editar el código XAML manualmente o abrirlo en Visual Studio o en otro editor de código.|
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Autos||
-|**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Inmediato||
+|**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Inmediata||
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Resultados|La ventana de salida se puede usar siempre que se tenga el estado o los eventos de texto que se van a declarar.|
-|**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Memory||
+|**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Memoria||
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Puntos de interrupción||
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|En ejecución||
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Documentos||
@@ -131,7 +131,7 @@ ms.locfileid: "88114133"
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Registros||
 |**Depurador:** grupo de ventanas específico para la depuración de tareas y actividades de supervisión|Subprocesos||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Convenciones del editor de documentos
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Convenciones del editor de documentos
 
 ### <a name="document-interactions"></a>Interacciones de documentos
  El "documento bien" es el espacio más grande dentro del IDE y es donde el usuario ha centrado su atención con el fin de completar sus tareas, asistida por ventanas de herramientas adicionales. Los editores de documentos representan las unidades fundamentales de trabajo que el usuario abre y guarda en Visual Studio. Conservan una gran sensación de selección ligada a Explorador de soluciones u otras ventanas de jerarquía activas. El usuario debe poder apuntar a una de esas ventanas de jerarquía y saber dónde se encuentra el documento y su relación con la solución, el proyecto u otro objeto raíz proporcionado por un paquete de Visual Studio.
@@ -239,7 +239,7 @@ ms.locfileid: "88114133"
 
 - Los usuarios deben poder interactuar con los controles usando solo el teclado, ya sea activando el editor y haciendo tabulador a través de los controles o usando teclas de acceso estándar.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Cuadros
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Cuadros
 
 ### <a name="introduction"></a>Introducción
  Los cuadros de diálogo de Visual Studio normalmente deben admitir una unidad discreta del trabajo del usuario y, a continuación, descartarse.
@@ -295,14 +295,14 @@ ms.locfileid: "88114133"
 
 - Los [asistentes](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) son útiles para dirigir al usuario a través de una secuencia lógica de pasos hacia la finalización de una tarea. En los paneles secuenciales se ofrecen una serie de opciones que, a veces, introducen flujos de trabajo diferentes ("ramas") en función de la elección realizada en el panel anterior.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Cuadros de diálogo simples
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Cuadros de diálogo simples
  Un cuadro de diálogo simple es una presentación de controles en una sola ventana modal. Esta presentación podría incluir variaciones de patrones de control complejos, como un selector de campos. Para los cuadros de diálogo sencillos, siga el diseño general estándar, así como cualquier diseño específico necesario para las agrupaciones de controles complejos.
 
  ![Cuadro de diálogo sencillo en Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Crear clave de nombre seguro es un ejemplo de un cuadro de diálogo simple en Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Cuadros de diálogo en capas
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Cuadros de diálogo en capas
  Los cuadros de diálogo en capas incluyen pestañas, paneles y árboles incrustados. Se usan para maximizar el estado real cuando hay varios grupos de controles ofrecidos en una sola parte de la interfaz de usuario. Las agrupaciones se superponen para que el usuario pueda elegir la agrupación que se va a ver al mismo tiempo.
 
  En el caso más sencillo, el mecanismo para cambiar entre agrupaciones es un control de ficha. Hay varias alternativas disponibles. Consulte priorización y disposición en capas para elegir el estilo más apropiado.
@@ -313,7 +313,7 @@ ms.locfileid: "88114133"
 
  **Herramientas > opciones es un ejemplo de un cuadro de diálogo en capas en Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>Asistentes
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> Asistentes
  Los asistentes son útiles para dirigir al usuario a través de una secuencia lógica de pasos en la finalización de una tarea. En los paneles secuenciales se ofrecen una serie de opciones y el usuario debe continuar cada paso antes de continuar con el siguiente. Una vez que haya suficientes valores predeterminados disponibles, se habilitará el botón **Finalizar** .
 
  Los asistentes modales se utilizan para tareas que:
@@ -394,7 +394,7 @@ ms.locfileid: "88114133"
 #### <a name="imagery"></a>Imágenes
  Use imágenes con moderación en los cuadros de diálogo. No utilice iconos grandes en los cuadros de diálogo simplemente para usar el espacio. Use imágenes solo si son una parte importante de transmitir el mensaje al usuario, como iconos de advertencia o animaciones de estado.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Establecimiento de prioridades y disposición en capas
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Establecimiento de prioridades y disposición en capas
 
 #### <a name="prioritizing-your-ui"></a>Priorizar la interfaz de usuario
  Es posible que sea necesario poner determinados elementos de la interfaz de usuario en Forefront y colocar opciones y comportamientos más avanzados (incluidos los comandos ocultos) en los cuadros de diálogo. Incorpore la funcionalidad de uso común a la de Forefront haciendo espacio en él y haciéndolo visible de forma predeterminada en la interfaz de usuario con una etiqueta de texto cuando se muestre el cuadro de diálogo.
@@ -425,7 +425,7 @@ ms.locfileid: "88114133"
 ##### <a name="adaptive-ui"></a>Interfaz de usuario adaptativa
  La visualización u ocultación de la interfaz de usuario en función del uso o de la experiencia de notificación automática de un usuario es otra manera de presentar la interfaz de usuario necesaria mientras se ocultan otras partes. Esto no se recomienda en Visual Studio, ya que los algoritmos para decidir cuándo Mostrar u ocultar la interfaz de usuario pueden ser complicados, y las reglas siempre serán erróneas para algún conjunto de casos.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Proyecto
+## <a name="projects"></a><a name="BKMK_Projects"></a> Proyecto
 
 ### <a name="projects-in-the-solution-explorer"></a>Proyectos en el Explorador de soluciones
  La mayoría de los proyectos se clasifican como basados en referencias, basados en directorios o mixtos. Los tres tipos de proyectos se admiten simultáneamente en el Explorador de soluciones. La raíz de la experiencia del usuario en trabajar con proyectos tiene lugar dentro de esta ventana. Aunque los distintos nodos del proyecto son proyectos de tipo de referencia, de directorio o de modo mixto, hay un patrón de interacción común que se debe aplicar como punto de partida antes de que sea divergente a patrones de usuario específicos del proyecto.
@@ -485,19 +485,19 @@ ms.locfileid: "88114133"
 |-------------------|-------------|-----------------|
 |![Icono de mouse "No colocar"](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706-01_MouseNoDrop")|No eliminar|No se puede quitar el elemento de la ubicación especificada.|
 |![Icono de mouse "Copiar"](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Copiar|El elemento se copiará en la ubicación de destino.|
-|![Icono de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Move|El elemento se mueve a la ubicación de destino.|
+|![Icono de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Mover|El elemento se mueve a la ubicación de destino.|
 |![Icono de mouse "Agregar referencia"](../../extensibility/ux-guidelines/media/0706-04-mouseaddref.png "0706-04_MouseAddRef")|Agregar referencia|Se agregará una referencia al elemento seleccionado en la ubicación de destino.|
 
 #### <a name="reference-based-projects"></a>Proyectos basados en referencia
  En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así como las operaciones de cortar, copiar y pegar) que deben realizarse en función de la naturaleza del elemento de origen y las teclas modificadoras presionadas para los proyectos de destino basados en referencia:
 
-|Modificador|Operación|Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
+|||Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Sin modificador|Acción|Move|Vínculo|
+|Sin modificador|Acción|Mover|Vínculo|
 |Sin modificador|Destino|Agrega una referencia al elemento original|Agrega una referencia al elemento original|
 |Sin modificador|Source|Elimina la referencia al elemento original|Conserva el elemento original|
 |Sin modificador|Resultado|**DROPEFFECT_MOVE** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_LINK** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Move|No eliminar|
+|Mayús + arrastrar|Acción|Mover|No eliminar|
 |Mayús + arrastrar|Destino|Agrega una referencia al elemento original|No eliminar|
 |Mayús + arrastrar|Source|Elimina la referencia al elemento original|No eliminar|
 |Mayús + arrastrar|Resultado|**DROPEFFECT_MOVE** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|No eliminar|
@@ -510,7 +510,7 @@ ms.locfileid: "88114133"
 |Ctrl + Mayús + arrastrar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Ctrl + Mayús + arrastrar|Resultado|**DROPEFFECT_LINK** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_LINK** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
 |Ctrl + Mayús + arrastrar|Nota|Igual que el comportamiento de arrastrar y colocar para los accesos directos en el explorador de Windows.||
-|Cortar y pegar|Acción|Move|Vínculo|
+|Cortar y pegar|Acción|Mover|Vínculo|
 |Cortar y pegar|Destino|Agrega una referencia al elemento original|Agrega una referencia al elemento original|
 |Cortar y pegar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Cortar y pegar|Resultado|El elemento permanece en la ubicación original en el almacenamiento|El elemento permanece en la ubicación original en el almacenamiento|
@@ -522,13 +522,13 @@ ms.locfileid: "88114133"
 #### <a name="directory-based-projects"></a>Proyectos basados en directorios
  En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así como las operaciones de cortar, copiar y pegar) que deben realizarse en función de la naturaleza del elemento de origen y las teclas modificadoras presionadas para los proyectos de destino basados en directorios:
 
-|Modificador|Operación|Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
+|||Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Sin modificador|Acción|Move|Move|
+|Sin modificador|Acción|Mover|Mover|
 |Sin modificador|Destino|Copia el elemento en la ubicación de destino|Copia el elemento en la ubicación de destino|
 |Sin modificador|Source|Elimina la referencia al elemento original|Elimina la referencia al elemento original|
 |Sin modificador|Resultado|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Move|Move|
+|Mayús + arrastrar|Acción|Mover|Mover|
 |Mayús + arrastrar|Destino|Copia el elemento en la ubicación de destino|Copia el elemento en la ubicación de destino|
 |Mayús + arrastrar|Source|Elimina la referencia al elemento original|Elimina un elemento de la ubicación original|
 |Mayús + arrastrar|Resultado|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
@@ -537,7 +537,7 @@ ms.locfileid: "88114133"
 |Ctrl + arrastrar|Source|Conserva la referencia al elemento original|Conserva la referencia al elemento original|
 |Ctrl + arrastrar|Resultado|**DROPEFFECT_ copia** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ copia** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
 |Ctrl + Mayús + arrastrar||No eliminar|No eliminar|
-|Cortar y pegar|Acción|Move|Move|
+|Cortar y pegar|Acción|Mover|Mover|
 |Cortar y pegar|Destino|Copia el elemento en la ubicación de destino|Copia el elemento en la ubicación de destino|
 |Cortar y pegar|Source|Elimina la referencia al elemento original|Elimina un elemento de la ubicación original|
 |Cortar y pegar|Resultado|El elemento permanece en la ubicación original en el almacenamiento|El elemento se elimina de la ubicación original en el almacenamiento|
@@ -549,13 +549,13 @@ ms.locfileid: "88114133"
 #### <a name="mixed-target-projects"></a>Proyectos de destino mixto
  En la tabla siguiente se resumen las operaciones de arrastrar y colocar (así como las operaciones de cortar, copiar y pegar) que deben realizarse en función de la naturaleza del elemento de origen y las teclas modificadoras presionadas para los proyectos de destino mixto:
 
-|Modificador|Operación|Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
+|||Elemento de origen: referencia/vínculo|Elemento de origen: elemento físico o sistema de archivos (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Sin modificador|Acción|Move|Move|
+|Sin modificador|Acción|Mover|Mover|
 |Sin modificador|Destino|Agrega una referencia al elemento original|Copia el elemento en la ubicación de destino|
 |Sin modificador|Source|Elimina la referencia al elemento original|Elimina la referencia al elemento original|
 |Sin modificador|Resultado|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento se elimina de la ubicación original en el almacenamiento|
-|Mayús + arrastrar|Acción|Move|Move|
+|Mayús + arrastrar|Acción|Mover|Mover|
 |Mayús + arrastrar|Destino|Agrega una referencia al elemento original|Copia el elemento en la ubicación de destino|
 |Mayús + arrastrar|Source|Elimina la referencia al elemento original|Elimina un elemento de la ubicación original|
 |Mayús + arrastrar|Resultado|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ movimiento** se devuelve como acción de **::D ROP** y el elemento se elimina de la ubicación original en el almacenamiento|
@@ -567,7 +567,7 @@ ms.locfileid: "88114133"
 |Ctrl + Mayús + arrastrar|Destino|Agrega una referencia al elemento original|Agrega una referencia al elemento de origen original.|
 |Ctrl + Mayús + arrastrar|Source|Conserva la referencia al elemento original|Conserva el elemento original|
 |Ctrl + Mayús + arrastrar|Resultado|**DROPEFFECT_ vínculo** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|**DROPEFFECT_ vínculo** se devuelve como acción de **::D ROP** y el elemento permanece en la ubicación original en el almacenamiento|
-|Cortar y pegar|Acción|Move|Move|
+|Cortar y pegar|Acción|Mover|Mover|
 |Cortar y pegar|Destino|Copia el elemento en la ubicación de destino|Copia el elemento en la ubicación de destino|
 |Cortar y pegar|Source|Elimina la referencia al elemento original|Elimina un elemento de la ubicación original|
 |Cortar y pegar|Resultado|El elemento permanece en la ubicación original en el almacenamiento|El elemento se elimina de la ubicación original en el almacenamiento|
