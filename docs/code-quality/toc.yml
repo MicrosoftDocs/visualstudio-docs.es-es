@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: 'CA1306: Establecer configuración regional de tipos de datos'
                   href: ca1306.md
-                - name: 'CA1307: Especificar StringComparison'
+                - name: 'CA1307: Especificar StringComparison para mayor claridad'
                   href: ca1307.md
                 - name: 'CA1308: Normalizar cadenas en mayúsculas'
                   href: ca1308.md
                 - name: 'CA1309: Utilizar StringComparison ordinal'
                   href: ca1309.md
+                - name: 'CA1310: Especificar StringComparison para mayor corrección'
+                  href: ca1310.md
                 - name: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
                   href: ca2101.md
             - name: Advertencias de interoperabilidad
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: 'CA1836: Preferencia de IsEmpty sobre Count si está disponible'
                   href: ca1836.md
+                - name: 'CA1837: Usar Environment.ProcessId en lugar de Process.GetCurrentProcess().Id'
+                  href: ca1837.md
                 - name: 'CA1838: Evitar los parámetros StringBuilder para los elementos P/Invoke'
                   href: ca1838.md
             - name: Advertencias de portabilidad
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: 'CA2007: No esperar una tarea directamente'
                   href: ca2007.md
+                - name: 'CA2008: No crear tareas sin pasar un elemento TaskScheduler'
+                  href: ca2008.md
                 - name: 'CA2009: No llame a ToImmutableCollection en un valor ImmutableCollection'
                   href: ca2009.md
                 - name: 'CA2011: No asignar la propiedad dentro de su establecedor'
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: 'CA2248: Proporcionar el argumento enum correcto para Enum.HasFlag'
                   href: ca2248.md
+                - name: 'CA2249: Valorar la posibilidad de usar String.Contains en lugar de String.IndexOf'
+                  href: ca2249.md
             - name: Suspensión automática de la característica
               href: automatic-feature-suspension.md
             - name: Publicación de advertencias
