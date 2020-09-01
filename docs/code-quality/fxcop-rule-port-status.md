@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189481"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219730"
 ---
 # <a name="fxcop-rule-port-status"></a>Estado del puerto de la regla de FxCop
 
@@ -27,7 +27,7 @@ La [Página de documentación autogenerada](https://github.com/dotnet/roslyn-ana
 
 A partir de la fecha de esta página, la lista de reglas de FxCop que se han trasladado a los [analizadores de FxCop](install-fxcop-analyzers.md) incluye:
 
-Identificador de la regla | Título
+Id. de regla | Title
 --------|---------
 [CA1000](ca1000.md) | No declarar miembros estáticos en tipos genéricos
 [CA1001](ca1001.md) | Los tipos que poseen campos descartables deben ser descartables
@@ -68,14 +68,14 @@ Identificador de la regla | Título
 [CA1063](ca1063.md) | Implementar IDisposable correctamente
 [CA1064](ca1064.md) | Las excepciones deben ser públicas
 [CA1065](ca1065.md) | No producir excepciones en ubicaciones inesperadas
-[CA1066](ca1066.md) | El {0} tipo debe implementar\<IEquatable T> porque invalida Equals
-[CA1067](ca1067.md) | Invalide Object. Equals (Object) al\<implementar IEquatable T>
+[CA1066](ca1066.md) | El tipo {0} debe implementar IEquatable \<T> porque invalida Equals
+[CA1067](ca1067.md) | Invalidar Object. Equals (Object) al implementar IEquatable\<T>
 [CA1068](ca1068.md) | Los parámetros CancellationToken deben aparecer en último lugar
 CA1200 | Evitar el uso de etiquetas cref con un prefijo
 [CA1303](ca1303.md) | No pasar literales como parámetros localizados
 [CA1304](ca1304.md) | Especificar CultureInfo
 [CA1305](ca1305.md) | Especificar IFormatProvider
-[CA1307](ca1307.md) | Especificar StringComparison
+[CA1307](ca1307.md) | Especificar StringComparison para mayor claridad
 [CA1308](ca1308.md) | Normalizar cadenas en mayúsculas
 [CA1309](ca1309.md) | Usar comparación de cadenas ordinales
 [CA1401](ca1401.md) | Los elementos P/Invoke no deben estar visibles
@@ -119,7 +119,7 @@ CA1826 | No use métodos enumerables en colecciones indizables. En su lugar, use
 [CA2000](ca2000.md) | Desechar objetos antes de perder el ámbito
 [CA2002](ca2002.md) | No bloquear objetos con identidad débil
 [CA2007](ca2007.md) | Considere la posibilidad de llamar a ConfigureAwait en la tarea esperada
-CA2008 | No crear tareas sin pasar un TaskScheduler
+[CA2008](ca2008.md) | No crear tareas sin pasar un TaskScheduler
 CA2009 | No llamar a ToImmutableCollection en un valor de ImmutableCollection
 CA2010 | Usar siempre el valor devuelto por los métodos marcados con PreserveSigAttribute
 [CA2100](ca2100.md) | Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad
@@ -211,7 +211,7 @@ El conjunto de reglas que no se han migrado a los [analizadores de FxCop](instal
 
 Las siguientes reglas de análisis heredado de FxCop todavía no se han implementado como analizadores, pero todavía pueden ser. Esto puede deberse a una razón técnica de bloqueo o simplemente a que la regla tiene una prioridad más baja. Para obtener más información acerca del estado de portabilidad de cada regla, haga clic en el vínculo de la columna **problema de seguimiento** .
 
-Identificador de la regla | Problema de seguimiento
+Id. de regla | Problema de seguimiento
 --- | ---
 [CA1002](ca1002.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
@@ -345,6 +345,6 @@ Las siguientes reglas de análisis heredado de FxCop están desusadas y no se im
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Reglas de Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
