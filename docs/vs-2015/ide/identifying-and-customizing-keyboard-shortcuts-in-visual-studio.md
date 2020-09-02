@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670492"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
@@ -52,13 +52,13 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 > [!NOTE]
 > La configuración y edición de Visual Studio podría cambiar los nombres y las ubicaciones de los comandos de menú y las opciones que aparecen en los cuadros de diálogo. Este tema se basa en la **configuración general de desarrollo**.
 
-## <a name="bkmk_identify"></a> Identificar un método abreviado de teclado
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> Identificar un método abreviado de teclado
 
-1. En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **herramientas**, **Opciones**.
 
 2. Expanda **Entorno** y elija **Teclado**.
 
-     ![Muestra de métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
@@ -70,15 +70,15 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 5. Si el comando tiene un método abreviado de teclado, aparece en la lista **Métodos abreviados para el comando seleccionado**.
 
-     ![Vista de un acceso directo para un comando especificado](../ide/media/viewshortcut.png "|::ref2::|")
+     ![Ver un acceso directo diferente para un comando especificado](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a> Personalizar un método abreviado de teclado
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> Personalizar un método abreviado de teclado
 
-1. En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **herramientas**, **Opciones**.
 
 2. Expanda la carpeta **Entorno** y elija **Teclado**.
 
-     ![Muestra de métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
@@ -100,14 +100,14 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
      Si un método abreviado ya está asignado a otro comando, aparece en el cuadro **El método abreviado lo utiliza actualmente**. En ese caso, elija la tecla Retroceso para eliminar ese método abreviado antes de probar con otro.
 
-     ![Especificación de un acceso directo diferente para un comando](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![Especificar un acceso directo diferente para un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
 7. Elija el botón **Asignar**.
 
     > [!NOTE]
     > Si especifica un método abreviado diferente para un comando, elija el botón **Asignar** y luego el botón **Cancelar**. El cuadro de diálogo se cierra, pero el cambio no se revierte.
 
-## <a name="bkmk_transfer"></a> Compartir métodos abreviados de teclado personalizados
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> Compartir métodos abreviados de teclado personalizados
  Puede compartir los métodos abreviados de teclado personalizados exportándolos a un archivo y proporcionando el archivo a otras personas para que puedan importar los datos.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Para exportar solo métodos abreviados de teclado
@@ -116,11 +116,11 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 2. Seleccione **Exportar la configuración de entorno seleccionada** y elija el botón **Siguiente**.
 
-3. En **¿Qué configuración desea exportar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+3. En **¿Qué configuración desea exportar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
-     ![Exportación de solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
 
 5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
@@ -138,11 +138,11 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 
 5. Elija el botón **Siguiente**.
 
-6. En **¿Qué configuración desea importar?** , desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
+6. En **¿Qué configuración desea importar?**, desactive la casilla **Todas las configuraciones**, expanda **Opciones** y, después, expanda **Entorno**.
 
 7. Active la casilla **Teclado** y elija el botón **Finalizar**.
 
-     ![Importación de solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "|::ref6::|")
+     ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>Otras referencias
+## <a name="see-also"></a>Consulte también
  [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

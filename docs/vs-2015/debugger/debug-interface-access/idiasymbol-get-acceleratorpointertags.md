@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149841"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Devuelve todos los valores de etiqueta de puntero acelerador que corresponden a una función de código auxiliar del Acelerador C++ AMP.  
+Devuelve todos los valores de etiqueta de puntero de acelerador que corresponden a una función de código auxiliar de acelerador de C++ AMP.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,19 +34,19 @@ HRESULT get_acceleratorPointerTags(
   
 #### <a name="parameters"></a>Parámetros  
  `cnt`  
- [in] El tamaño de la matriz de salida `pPointerTags`.  
+ de Tamaño de la matriz de salida `pPointerTags` .  
   
  `pcnt`  
- [out] El recuento de etiquetas de puntero de Acelerador de la C++ función de código auxiliar del Acelerador de AMP.  
+ enuncia Recuento de etiquetas de puntero de acelerador en la función de código auxiliar del acelerador C++ AMP.  
   
  `pPointerTags`  
- [out] Un `DWORD` puntero de matriz que se rellena con los valores de etiqueta del puntero de acelerador en el C++ función de código auxiliar del Acelerador de AMP.  
+ enuncia `DWORD` Puntero de matriz que se rellena con los valores de la etiqueta de puntero de acelerador en la función de código auxiliar del acelerador C++ amp.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Se llama a este método en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar del Acelerador C++ AMP.  
+ Se llama a este método en una `IDiaSymbol` interfaz que corresponde a una función de código auxiliar de acelerador de C++ amp.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

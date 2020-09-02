@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL Microsoft Docs
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714486"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
-Esta estructura representa la dirección de una variable local dentro de un ámbito (normalmente una función o método).
+Esta estructura representa la dirección de una variable local dentro de un ámbito (normalmente una función o un método).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,22 +47,22 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Miembros
 
 `tokMethod`\
-El identificador del método o función de la que forma parte la variable local.
+IDENTIFICADOR del método o función del que forma parte la variable local.
 
-[C++] `_mdToken` es `typedef` un para un `int`32-bit .
+[C++] `_mdToken` es un `typedef` para un 32 bits `int` .
 
 `pLocal`\
-El token cuya dirección representa esta estructura.
+Token cuya dirección representa esta estructura.
 
 `dwIndex`\
-Puede ser el índice de esta variable local en el método o función, o algún otro valor (específico del idioma).
+Puede ser el índice de esta variable local en el método o la función, o algún otro valor (específico del idioma).
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura `ADDRESS_KIND_LOCAL` [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando se establece el `dwKind` campo de la estructura en (un valor de la [enumeración ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+Esta estructura forma parte de la Unión de la estructura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) cuando el `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura se establece en `ADDRESS_KIND_LOCAL` (un valor de la enumeración [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 > [!WARNING]
-> [Sólo C++] Si `pLocal` no es null, `Release` debe llamar al`addr` puntero de token ( es un campo en la estructura [DEBUG_ADDRESS):](../../../extensibility/debugger/reference/debug-address.md)
+> [Solo C++] Si `pLocal` no es null, debe llamar a `Release` en el puntero de token ( `addr` es un campo de la estructura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) ):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -73,9 +73,9 @@ Esta estructura forma parte de la unión en `DEBUG_ADDRESS_UNION` la estructura 
 
 ## <a name="requirements"></a>Requisitos
 
-Encabezado: sh.h
+Encabezado: SH. h
 
-Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop
+Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop
 
 Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
 

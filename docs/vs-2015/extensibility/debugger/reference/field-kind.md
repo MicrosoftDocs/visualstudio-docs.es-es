@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692875"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
+# <a name="field_kind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica el tipo de campo incluido en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
+Especifica el tipo de campo contenido en un objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -128,7 +128,7 @@ public enum enum_FIELD_KIND {
  Indica que el campo es solo un tipo.  
   
  FIELD_KIND_SYMBOL  
- Indica que el campo es un símbolo con tipo, nombre y otra información.  
+ Indica que el campo es un símbolo, con el tipo, el nombre y otra información.  
   
  FIELD_TYPE_PRIMITIVE  
  Indica que el campo es un tipo de datos primitivo.  
@@ -143,7 +143,7 @@ public enum enum_FIELD_KIND {
  Indica que el campo es una interfaz.  
   
  FIELD_TYPE_UNION  
- Indica que el campo es una unión.  
+ Indica que el campo es una Unión.  
   
  FIELD_TYPE_ARRAY  
  Indica que el campo es una matriz.  
@@ -206,10 +206,10 @@ public enum enum_FIELD_KIND {
  Indica que el campo es global.  
   
  FIELD_SYM_PROP_GETTER  
- Indica que el campo recupera las propiedades.  
+ Indica que el campo recupera propiedades.  
   
  FIELD_SYM_PROP_SETTER  
- Indica que el campo de conjuntos de propiedades.  
+ Indica que el campo establece propiedades.  
   
  FIELD_SYM_EXTENDED  
  Reservado para un uso futuro.  
@@ -218,24 +218,24 @@ public enum enum_FIELD_KIND {
  Indica una máscara para los tipos de campo.  
   
  FIELD_TYPE_MASK  
- Indica una máscara para tipos de campo.  
+ Indica una máscara para los tipos de campo.  
   
  FIELD_SYM_MASK  
  Indica una máscara para la información de símbolos.  
   
-## <a name="remarks"></a>Comentarios  
- Devuelve una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.  
+## <a name="remarks"></a>Observaciones  
+ Se devuelve de una llamada al método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .  
   
- Según el tipo de campo, [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) puede llamarse en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, a continuación, puede llamar a `QueryInterface` en puedo`DebugField` para obtener el [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.  
+ En función del tipo de campo, se puede llamar a [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) en la interfaz [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para obtener una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD` , puede llamar a `QueryInterface` en I `DebugField` para obtener la interfaz [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: sh.h  
+ Encabezado: SH. h  
   
- Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft. VisualStudio. Debugger. Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   

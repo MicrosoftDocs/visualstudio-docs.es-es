@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656859"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurar flujos de trabajo heredados
@@ -27,7 +27,7 @@ Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_curr
 > Si varias versiones de Visual Studio se han instalado y desinstalado en el equipo, la depuración de WF3 puede provocar un error con una de las dos posibilidades siguientes:
 >
 > - No se alcanzan los puntos de interrupción.
->   - Se mostrará el mensaje siguiente:
+>   - Se muestra el mensaje siguiente:
 >
 >   **No se puede iniciar la depuración en el servidor Web. El depurador no está instalado correctamente.  No se puede depurar el tipo de código solicitado.  Ejecute el programa de instalación para instalar o reparar el depurador.**
 >
@@ -45,7 +45,7 @@ Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_curr
 
 - Puntos de interrupción condicionales en la superficie del diseñador
 
-- Inspección rápida
+- Inspección rápida.
 
 - Establecer instrucción siguiente.
 
@@ -58,16 +58,16 @@ Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_curr
 - Depuración en modo mixto
 
 ## <a name="in-this-section"></a>En esta sección
- [Invocar el Depurador de Visual Studio para Windows Workflow Foundation (heredado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Invocar el Depurador de Microsoft Visual Studio para Windows Workflow Foundation (Heredado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
- [Deshabilitar el Depurador de Visual Studio para Windows Workflow Foundation (heredado)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
+ [Deshabilitar el Depurador de Microsoft Visual Studio para Windows Workflow Foundation (Heredado)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)
 
- [Cómo: Depurar los flujos de trabajo basados en ASP.NET (heredado)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
+ [Cómo: Depurar los flujos de trabajo basados en ASP.NET (Heredado)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)
 
  [Cómo: Establecer puntos de interrupción en los flujos de trabajo (heredado)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)
 
- [Depurar flujos de trabajo desde un equipo remoto (heredado)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
+ [Depurar flujos de trabajo desde un equipo remoto (Heredado)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)
 
  [Depurar opciones de ejecución paso a paso (heredado)](../workflow-designer/debug-stepping-options-legacy.md)
 
- [Cómo: Cambiar la opción de ejecución paso a paso de depuración (heredado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Cómo: Cambiar la opción de ejecución paso a paso de depuración (Heredado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

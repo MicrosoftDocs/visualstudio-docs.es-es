@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad con la configuración de usuario | Documentos de Microsoft
+title: Compatibilidad con la configuración de usuario | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,49 +13,49 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691808"
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un VSPackage puede definir uno o más categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el **importar y exportar configuraciones** comando el **herramientas** menú. Para habilitar esta persistencia, se usa las API de configuración en el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+Un VSPackage puede definir una o varias categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el comando **importar o exportar configuraciones** en el menú **herramientas** . Para habilitar esta persistencia, se usan las API de configuración de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] .  
   
- Una entrada del registro que se conoce como un punto de configuración personalizado y un GUID que define la categoría de configuración de un VSPackage. Un VSPackage puede admitir varias categorías de configuración, cada uno definido por un punto de configuración personalizado.  
+ Una entrada del registro a la que se hace referencia como un punto de configuración personalizado y un GUID define la categoría de configuración de un VSPackage. Un VSPackage puede admitir varias categorías de configuración, cada una definida por un punto de configuración personalizado.  
   
-- Las implementaciones de configuración que se basa en los ensamblados de interoperabilidad (mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) debe crear un punto de configuración personalizado mediante la edición del registro o mediante un script de registrador (archivo .rgs). Para obtener más información, consulta [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Las implementaciones de valores que se basan en ensamblados de interoperabilidad (mediante la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) deben crear un punto de configuración personalizado editando el registro o usando un script de registrador (archivo. RGS). Para obtener más información, consulta [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
-- Código que utiliza Managed Package Framework (MPF) debe crear puntos de valores personalizados adjuntando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage para cada punto de configuración personalizado.  
+- El código que usa Managed Package Framework (MPF) debe crear puntos de configuración personalizados adjuntando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> al VSPackage para cada punto de configuración personalizado.  
   
-     Si un VSPackage solo es compatible con varios puntos de valores personalizados, cada punto de configuración personalizado se implementa mediante una clase independiente y cada uno está registrado mediante una instancia única de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase. Por lo tanto, una configuración de implementación de clase puede admitir más de una categoría de configuración.  
+     Si un único VSPackage admite varios puntos de configuración personalizados, cada punto de configuración personalizado se implementa mediante una clase independiente, y cada uno de ellos se registra mediante una instancia única de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase. Por consiguiente, una configuración que implementa la clase puede admitir más de una categoría de configuración.  
   
-## <a name="custom-settings-point-registry-entry-details"></a>Detalles de la entrada de configuración personalizada del registro de punto  
- Puntos de valores personalizados se crean en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\ *\<versión >* \UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizado admita el VSPackage y  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por ejemplo 8.0.  
+## <a name="custom-settings-point-registry-entry-details"></a>Detalles de la entrada del registro de punto de configuración personalizada  
+ Los puntos de configuración personalizados se crean en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` , donde `<CSPName>` es el nombre del punto de configuración personalizado que el VSPackage admite y *\<Version>* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , por ejemplo 8,0.  
   
 > [!NOTE]
-> La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* puede reemplazarse por una alternativa raíz cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es el entorno de desarrollo integrado (IDE) inicializar. Para obtener más información, consulte [modificadores de línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> La ruta de acceso raíz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* se puede invalidar con una raíz alternativa cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se inicializa el entorno de desarrollo integrado (IDE). Para obtener más información, vea [modificadores de la línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
- Se muestra la estructura de la entrada del registro:  
+ La estructura de la entrada del registro se ilustra a continuación:  
   
- HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings\  
   
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s ' #12345 '  
   
- Paquete = '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}'  
+ Paquete = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX} '  
   
- Categoría = '{aaaa AAAAAA aaaa aaaa YYYYYYYYY}'  
+ Category = ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY} '  
   
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ} '  
   
- AlternateParent = CategoryName  
+ AlternateParent = NombreCategoría  
   
-|Name|Tipo|Datos|Descripción|  
+|Nombre|Tipo|data|Descripción|  
 |----------|----------|----------|-----------------|  
-|(Predeterminado)|REG_SZ|Nombre del punto de configuración personalizada|Nombre de la clave, `<CSPName`>, es el nombre no traducido del punto de configuración personalizada.<br /><br /> Para implementaciones basadas en MPF, nombre de la clave se obtiene mediante la combinación del `categoryName` y `objectName` argumentos de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor en `categoryName_objectName`.<br /><br /> La clave puede estar vacía o puede contener el identificador de referencia a la cadena localizada en un archivo DLL satélite. Este valor se obtiene de la `objectNameResourceID` argumento para el <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor.|  
-|Paquete|REG_SZ|GUID|El GUID del VSPackage que implemente el punto de configuración personalizado.<br /><br /> Las implementaciones en función de MPF usando el <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase, use el constructor `objectType` argumento que contiene el VSPackage <xref:System.Type> y reflexión para obtener este valor.|  
-|Categoría|REG_SZ|GUID|GUID que identifica la categoría de configuración.<br /><br /> Para implementaciones basadas en ensamblados de interoperabilidad, este valor puede ser un elegido arbitrariamente GUID, que el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE pasa a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> métodos. Todas las implementaciones de estos dos métodos deben comprobar sus argumentos GUID.<br /><br /> Para implementaciones basadas en MPF, este GUID se obtiene mediante la <xref:System.Type> de la clase que implementa el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo de configuración.|  
-|ResourcePackage|REG_SZ|GUID|Opcional.<br /><br /> Ruta de acceso a satélite DLL que contiene cadenas traducidas si la implementación de VSPackage no los proporciona.<br /><br /> MPF usa la reflexión para obtener el recurso correcto de VSPackage, por lo que la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase no establece este argumento.|  
-|AlternateParent|REG_SZ|Nombre de la carpeta en la página de opciones de herramientas que contiene este punto de configuración personalizado.|Opcional.<br /><br /> Debe establecer este valor solo si una implementación de configuración admite **herramientas-opciones** las páginas que usan el mecanismo de persistencia en el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] en lugar del mecanismo del modelo de automatización para guardar el estado.<br /><br /> En estos casos, el valor de la clave AlternateParent es el `topic` sección de la `topic.sub-topic` cadena usada para identificar la instancia concreta **ToolsOptions** página. Por ejemplo, para el **ToolsOptions** página `"TextEditor.Basic"` sería el valor de AlternateParent `"TextEditor"`.<br /><br /> Cuando <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> genera el punto de configuración personalizado, es el mismo que el nombre de categoría.|
+|(Es el valor predeterminado).|REG_SZ|Nombre del punto de configuración personalizado|El nombre de la clave, `<CSPName`>, es el nombre no traducido del punto de configuración personalizado.<br /><br /> Para las implementaciones basadas en MPF, el nombre de la clave se obtiene mediante la combinación `categoryName` `objectName` de los argumentos y del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor en `categoryName_objectName` .<br /><br /> La clave puede estar vacía o puede contener el ID. de referencia de la cadena traducida en un archivo DLL satélite. Este valor se obtiene del `objectNameResourceID` argumento en el <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor.|  
+|Paquete|REG_SZ|GUID|GUID del VSPackage que implementa el punto de configuración personalizado.<br /><br /> Las implementaciones basadas en MPF mediante la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase, usan el argumento del constructor `objectType` que contiene el VSPackage <xref:System.Type> y la reflexión para obtener este valor.|  
+|Category|REG_SZ|GUID|GUID que identifica la categoría de configuración.<br /><br /> Para las implementaciones basadas en ensamblados de interoperabilidad, este valor puede ser un GUID elegido arbitrariamente, que el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE pasa a los <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> métodos y. Todas las implementaciones de estos dos métodos deben comprobar sus argumentos GUID.<br /><br /> Para las implementaciones basadas en MPF, este GUID lo obtiene el <xref:System.Type> de la clase que implementa el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo de configuración.|  
+|ResourcePackage|REG_SZ|GUID|Opcional.<br /><br /> Ruta de acceso al archivo DLL satélite que contiene cadenas traducidas si el VSPackage de implementación no las proporciona.<br /><br /> MPF utiliza la reflexión para obtener el VSPackage de recursos correcto, por lo que la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase no establece este argumento.|  
+|AlternateParent|REG_SZ|Nombre de la carpeta en la página Opciones de herramientas que contiene este punto de configuración personalizado.|Opcional.<br /><br /> Debe establecer este valor solo si una implementación de configuración admite páginas de **Opciones de herramientas** que usan el mecanismo de persistencia en [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] , en lugar del mecanismo del modelo de automatización, para guardar el estado.<br /><br /> En estos casos, el valor de la clave AlternateParent es la `topic` sección de la `topic.sub-topic` cadena que se usa para identificar la página **ToolsOptions** determinada. Por ejemplo, para la página **ToolsOptions** , `"TextEditor.Basic"` el valor de AlternateParent sería `"TextEditor"` .<br /><br /> Cuando <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> genera el punto de configuración personalizado, es el mismo que el nombre de categoría.|

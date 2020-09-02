@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset ? Microsoft Docs
+title: 'IDebugFunctionPosition2:: GetOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aaa5c13822322084c68aaf0453cb2707f79ddc05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728364"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
@@ -41,7 +41,7 @@ int GetOffset(
 
 ## <a name="parameters"></a>Parámetros
 `pPosition`\
-[adentro, fuera] Estructura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que se rellena con la posición de la función en un documento.
+[in, out] [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición de la función en un documento.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.

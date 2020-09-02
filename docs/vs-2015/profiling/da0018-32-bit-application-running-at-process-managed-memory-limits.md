@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844731"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identificador de regla | DA0018 |  
@@ -54,13 +54,13 @@ Identificador de regla | DA0018 |
   
 - optimizar el uso de la aplicación de recursos de memoria administrada  
   
-   O bien,  
+   o bien  
   
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
   
-  Para optimizar el uso de recursos de memoria administrada de la aplicación, recopile datos de asignación de memoria administrada en una ejecución de generación de perfiles de asignación de memoria de .NET. Revise los informes [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación.  
+  Para optimizar el uso de recursos de memoria administrada de la aplicación, recopile datos de asignación de memoria administrada en una ejecución de generación de perfiles de asignación de memoria de .NET. Revise los informes [vistas de datos de memoria de .net](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación.  
   
-  Utilice la [vista Duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa sobreviven a la generación y, después, se recuperan desde allí.  
+  Use la [vista duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa están supervivientes en la generación y, a continuación, se recuperan desde allí.  
   
   Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
   

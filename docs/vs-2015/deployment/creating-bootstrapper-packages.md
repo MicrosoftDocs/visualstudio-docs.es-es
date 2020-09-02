@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845521"
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
@@ -76,7 +76,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- o  
+ or  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.  
   
-|La propiedad|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
-|ApplicationName|El nombre de la aplicación.|  
+|ApplicationName|Nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Número de versión de los sistemas operativos Microsoft Windows 95, Windows 98 o Windows ME. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Número de versión de los sistemas operativos Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *Nombre de la compañía*.*Nombre del componente*.RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
+ La lista redistribuible es un archivo XML al que debe asignar el nombre con el siguiente formato: nombre de la *compañía*. *Nombre del componente*.RedistList.xml. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use Acme.DataWidgets.RedistList.xml. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -124,8 +124,8 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Cuadro de diálogo Requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
+## <a name="see-also"></a>Consulte también  
+ [Cómo: instalar los requisitos previos con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Cuadro de diálogo requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)   
- [Usar el programa previo de Visual Studio 2005 para poner en marcha su instalación](https://msdn.microsoft.com/magazine/cc163899.aspx)
+ [Usar el programa previo de Visual Studio 2005 para iniciar la instalación](https://msdn.microsoft.com/magazine/cc163899.aspx)

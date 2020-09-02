@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9458f4e848f750d4a7eb11a866a2730f331e7244
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149799"
 ---
-# <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
+# <a name="idiasymbolget_basesymbol"></a>IDiaSymbol::get_baseSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera el símbolo desde el que se basa el puntero.  
+Recupera el símbolo del que se basa el puntero.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,11 +32,11 @@ HRESULT get_baseSymbol(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero al símbolo desde el que se basa el puntero.  
+ enuncia Puntero al símbolo desde el que se basa el puntero.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK` ; de lo contrario, devuelve `S_FALSE` o un código de error.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_baseSymbolId](../../debugger/debug-interface-access/idiasymbol-get-basesymbolid.md)

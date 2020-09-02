@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845189"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
@@ -40,7 +40,7 @@ ms.locfileid: "75845189"
 Encapsula la herramienta compilador de lenguaje de definición de interfaz de Microsoft (MIDL), midl.exe. Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
+ En la siguiente tabla se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tareas, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
 - **AdditionalIncludeDirectories**  
   
@@ -54,7 +54,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Parámetro **String** opcional.  
   
-     Una lista de opciones de la línea de comandos. Por ejemplo, **"** _/option1 /option2 /option#_ ". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
+     Una lista de opciones de la línea de comandos. Por ejemplo, **"**_/option1/Option2/Option #_". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
   
      Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
@@ -144,7 +144,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, comprueba que los valores de enumeración están en un intervalo permitido.  
   
-     Para obtener más información, consulte la opción **/error enum** en la Ayuda de la línea de comandos ( **/?** ) de midl.exe.  
+     Para obtener más información, consulte la opción **/error enum** en la ayuda de la línea de comandos (**/?**) para obtener midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -314,7 +314,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 - **SuppressCompilerWarnings**  
   
-     Parámetro **Boolean** opcional.  
+     Parámetro **booleano** opcional.  
   
      Si `true`, suprime los mensajes de advertencia de la tarea MIDL.  
   
@@ -324,24 +324,24 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Parámetro `Boolean` opcional.  
   
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.  
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
   
      Para obtener más información, consulte la opción **/nologo** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
 - **TargetEnvironment**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el entorno en el que se ejecuta la aplicación.  
   
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-    |Valor|Opción de la línea de comandos|  
+    |Value|Opción de línea de comandos|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
     |**Itanium**|**/env ia64**|  
-    |**X64**|**/env x64**|  
+    |**Bits**|**/env x64**|  
   
      Para obtener más información, consulte la opción **/env** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](https://msdn.microsoft.com/).  
   
@@ -353,13 +353,13 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 - **TypeLibFormat**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el formato de archivo de biblioteca de tipos.  
   
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-    |Valor|Opción de la línea de comandos|  
+    |Value|Opción de línea de comandos|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -368,7 +368,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 - **TypeLibraryName**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica el nombre del archivo de biblioteca de tipos.  
   
@@ -376,7 +376,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 - **UndefinePreprocessorDefinitions**  
   
-     Parámetro **String[]** opcional.  
+     Parámetro **String []** opcional.  
   
      Quita cualquier definición anterior de un nombre, pasando el nombre al preprocesador de C como si lo hiciera una directiva de `#undefine`. Especifique uno o más nombres definidos previamente.  
   
@@ -402,13 +402,13 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
 - **WarningLevel**  
   
-     Parámetro **String** opcional.  
+     Parámetro de **cadena** opcional.  
   
      Especifica la gravedad (*nivel de advertencia*) de las advertencias que se emiten. Para un valor de 0 no se emite ninguna advertencia. En cambio, se emite una advertencia si su nivel de advertencia es numéricamente menor o igual que el valor especificado.  
   
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
-    |Valor|Opción de la línea de comandos|  
+    |Value|Opción de línea de comandos|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -418,7 +418,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Para obtener más información, consulte la opción **/W** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](https://msdn.microsoft.com/). Consulte también el parámetro **WarnAsError** en esta tabla.  
   
-## <a name="remarks"></a>Comentarios  
+## <a name="remarks"></a>Observaciones  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulte también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

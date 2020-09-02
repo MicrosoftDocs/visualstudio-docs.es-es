@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 443cbac0ea9d74c61f24d6714162ec08e2906a62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656876"
 ---
 # <a name="debug-stepping-options-legacy"></a>Depurar opciones de ejecución paso a paso (Heredado)
@@ -35,5 +35,5 @@ En este tema se describe cómo depurar aplicaciones [!INCLUDE[wf](../includes/wf
 
   Debe seleccionar la opción de ejecución paso a paso por instancias cuando depure flujos de trabajo de máquina de estados heredados.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
  [Depurar flujos de trabajo heredados](../workflow-designer/debugging-legacy-workflows.md) [Cómo: cambiar la opción de versión de depuración (heredado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
